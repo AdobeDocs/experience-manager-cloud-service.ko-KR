@@ -1,11 +1,11 @@
 ---
-title: Content Hub 자주 묻는 질문(FAQ)
+title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 >[!AVAILABILITY]
 >
->이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## Content Hub란 무엇입니까? {#what-is-content-hub}
 
@@ -30,7 +30,7 @@ Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 �
 
 ## Cloud Manager 프로그램/환경에서 Content Hub를 활성화할 수 없는 이유는 무엇입니까? {#cannot-enable-content-hub}
 
-현재 Content Hub은 Assets 라이선스(Assets Cloud Service, Assets Ultimate, Assets Prime)가 포함된 AEM Cloud Manager 프로덕션 프로그램에서만 사용할 수 있습니다. [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub)를 클릭하여 활성화하면 Content Hub가 배포되고 해당 프로그램의 AEM 작성 프로덕션 환경과 연결됩니다. 자세한 내용과 전제 조건은 [Content Hub 배포](/help/assets/deploy-content-hub.md)를 참조하십시오.
+현재 Content Hub는 자산 라이선스(Assets Cloud Service, Assets Ultimate, Assets Prime)를 포함한 AEM Cloud Manager 프로덕션 프로그램에서만 사용할 수 있습니다. [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub)를 클릭하여 활성화하면 Content Hub가 배포되고 해당 프로그램의 AEM 작성 프로덕션 환경과 연결됩니다. 자세한 내용과 전제 조건은 [Content Hub 배포](/help/assets/deploy-content-hub.md)를 참조하십시오.
 
 ## 프로덕션 프로그램/환경에서 Content Hub를 활성화했는데, 비활성화할 수 있습니까? {#can-i-disable-content-hub}
 
@@ -51,9 +51,9 @@ AEM as a Cloud Service Assets에서 관리되는 사용자/프로덕션 콘텐�
 * Admin Console 관리자가 [일부 사용자를 선택해](/help/assets/deploy-content-hub.md#onboard-content-hub-users) Content Hub 제품 프로필에 추가하여 평가를 시작하도록 할 수 있습니다.
 * 평가가 완료되면 작성자 인스턴스의 AEM 사용자가 테스트 자산에서 승인을 제거하고, Content Hub의 프로덕션 자산을 승인하면 Admin Console 관리자가 Content Hub 및 승인된 콘텐츠에 액세스해야 하는 모든 사용자를 추가할 수 있습니다. 축하합니다. 이제 Content Hub가 활성화되었습니다.
 
-샌드박스 프로그램 및 작성자 프로덕션 환경에 대한 Content Hub의 조기 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 얼리 액세스 프로그램에 대해 자세히 알아보려면 Adobe 계정 팀에 문의하십시오.
+샌드박스 프로그램 및 해당 작성 프로덕션 환경에 Content Hub에 대한 얼리 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 얼리 액세스 프로그램에 대해 자세히 알아보려면 Adobe 계정 팀에 문의하십시오.
 
-Content Hub은 아직 비프로덕션 환경(단계 및 개발)에서 사용할 수 없습니다. 2025년 3월 Assets Ultimate의 스테이지/개발 환경에서 사용할 수 있을 것으로 예상됩니다.
+Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 스테이징/개발 환경은 2025년 3월에 출시될 예정입니다.
 
 ## Content Hub에 로그인한 후 자산이 표시되지 않는 이유는 무엇입니까? {#no-assets-in-content-hub}
 

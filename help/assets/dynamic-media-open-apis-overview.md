@@ -4,9 +4,9 @@ description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 �
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1109'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 96%
 
 >[!AVAILABILITY]
 >
->이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>OpenAPI 기능이 포함된 Dynamic Media 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 빠르게 변화하는 오늘날의 디지털 세계에서 브랜드 디지털 자산의 잠재력을 최대한 활용하는 것은 경쟁에서 앞서 나가기 위해 매우 중요합니다. 총체적인 디지털 자산 관리(DAM) 솔루션은 자산 거버넌스를 촉진하고, 브랜드 일관성을 촉진하며, 콘텐츠 게재를 가속화하는 동시에 브랜드 무결성과 탁월한 고객 경험을 보장합니다.
 
@@ -183,16 +183,16 @@ OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해
       </a>
    </div>
    <p>
-      <em>원격 AEM Assets을 AEM Sites 환경과 통합하는 방법을 알아봅니다. </em>
+      <em>원격 AEM Assets를 AEM Sites 환경과 통합하는 방법을 알아봅니다. </em>
    </p>
 </td>
 <td>
    <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-   <img alt="OpenAPI 기능 포함 Dynamic Media에 대한 자주 묻는 질문" src="./assets/dynamic-media-faqs.jpeg" />
+   <img alt="OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문" src="./assets/dynamic-media-faqs.jpeg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-      <strong>OpenAPI 기능 포함 Dynamic Media에 대한 자주 묻는 질문</strong>
+      <strong>OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문</strong>
       </a>
    </div>
    <p>
@@ -209,7 +209,7 @@ OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해
       </a>
    </div>
    <p>
-      <em>AEM as a Cloud Service에는 기본 도메인이 제공되지만, 사용자의 필요에 따라 사용자 정의할 수 있습니다.</em>
+      <em>AEM as a Cloud Service에는 기본 도메인이 제공되지만 사용자의 필요에 따라 사용자 정의할 수 있습니다.</em>
    </p>
 </td>
 

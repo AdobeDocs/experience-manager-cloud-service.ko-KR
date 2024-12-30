@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: db661281831dcb07491dca16e73e835b487814a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
    | - | --- |
    | 사이트 이름 | 추가하려는 Edge Delivery 사이트의 이름을 입력합니다.<br>이 이름은 Cloud Manager 내 사이트의 고유 식별자 역할을 합니다. |
    | 저장소 URL | 웹 사이트 코드가 저장된 Git 저장소를 입력합니다.<br>이 필드를 통해 Cloud Manager는 배포 프로세스 중에 해당 저장소에서 코드를 가져올 수 있습니다. |
-   | 사이트 설명(선택 사항) | 추가하려는 Edge Delivery 사이트에 대한 간략한 설명을 입력합니다.<br>설명은 사이트를 식별하고 차별화하는 데 도움이 되며, 추가한 다른 사이트 간에 관리하고 인식하는 것이 더 쉬워집니다. |
+   | 사이트 설명 (선택 사항) | 추가하려는 Edge Delivery 사이트에 대한 간략한 설명을 입력합니다.<br>설명은 사이트를 식별하고 차별화하는 데 도움이 되며, 추가한 다른 사이트 간에 관리하고 인식하는 것이 더 쉬워집니다. |
 
 1. 대화 상자의 오른쪽 하단에 있는 **추가**&#x200B;를 클릭합니다.
 
@@ -54,6 +54,6 @@ ht-degree: 96%
 
 1. **확인**&#x200B;을 클릭합니다.
 
-저장소가 확인되면 Edge Delivery 사이트 테이블의 상태가 업데이트됩니다. 내부에 흰색 확인 표시가 있는 녹색 원은 상태를 나타냅니다.
+저장소가 검증되면 Edge Delivery 사이트 테이블의 상태가 업데이트됩니다. 내부에 흰색 확인 표시가 있는 녹색 원은 상태를 나타냅니다.
 
 같은 테이블에서 ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)를 클릭하여 사이트 세부 정보를 확인합니다. 이 정보에는 검증된 저장소 URL과 미리보기 및 프로덕션 웹 사이트 URL이 포함됩니다.

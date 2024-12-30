@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 ### 블록 정의 및 모델 만들기 {#create-block-model}
 
-1\. [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 만든 GitHub 프로젝트를 로컬로 복제하고 선택한 편집기에서 엽니다.
+1\. [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서에서 만든 GitHub 프로젝트를 로컬로 복제하고 원하는 편집기에서 엽니다.
 
 * 여기에서 Microsoft 코드는 설명 목적으로 사용되었습니다.
 
@@ -165,7 +165,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
    * 페이지를 로드하려면 **Adobe에 로그인**&#x200B;을 탭하거나 클릭하여 범용 편집기에서 AEM에 인증해야 할 수도 있습니다.
 
-1. 범용 편집기에서 섹션을 선택합니다. 속성 패널에서 **추가** 아이콘을 탭하거나 클릭한 다음 메뉴에서 새 **견적** 블록을 선택합니다.
+1. 범용 편집기에서 섹션을 선택합니다. 속성 패널에서 **추가** 아이콘을 탭하거나 클릭한 다음, 메뉴에서 새 **인용** 블록을 선택합니다.
 
    * **추가** 아이콘은 더하기 기호입니다.
    * 선택한 오브젝트의 파란색 윤곽선에 **섹션**&#x200B;이라는 레이블이 지정된 탭이 있으면 섹션이 선택된 것입니다.
@@ -175,7 +175,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 1. 페이지가 다시 로드되고 `component-definitions.json` 파일에 지정된 기본 콘텐츠와 함께 선택한 섹션의 아래쪽에 인용 블록이 추가됩니다.
 
-   * 따옴표 블록은 즉석 또는 속성 패널에서 다른 블록으로 선택하고 편집할 수 있습니다.
+   * 인용 블록은 내부 또는 속성 패널에서 다른 블록처럼 선택하고 편집할 수 있습니다.
    * 추가 단계에서 스타일링이 적용됩니다.
 
    ![선택한 섹션에 새 인용 블록이 있는 페이지](assets/create-block/quote-added.png)
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4\. `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가고 블록 스타일링을 정의한 다음 파일을 저장합니다.
+4\. `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가하고 블록 스타일링을 정의한 다음 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -267,11 +267,11 @@ export default function decorate(block) {
 
 * `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
 
-6\. 프로젝트 페이지를 편집하던 Universal Editor의 브라우저 탭으로 돌아가 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
+6\. 프로젝트 페이지를 편집하던 범용 편집기의 브라우저 탭으로 돌아가 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
 
 7\. 페이지에서 현재 스타일이 지정된 인용 블록을 확인합니다.
 
-![Universal Editor의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
+![범용 편집기의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
 
 8\. 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.aem.page`와 유사합니다.
 
@@ -281,7 +281,7 @@ export default function decorate(block) {
 
 ### 블록 옵션 {#block-options}
 
-특정 상황에 따라 블록의 모양이나 동작이 약간 달라야 하지만, 그 자체로 새로운 블록이 될 만큼은 다르지 않아야 하는 경우 작성자가 [블록 옵션](content-modeling.md#type-inference) 중에서 선택하도록 할 수 있습니다.
+특정 상황에 따라 블록의 모양이나 동작이 약간 달라야 하지만 그 자체로 새로운 블록이 될 만큼은 다르지 않아야 하는 경우 작성자가 [블록 옵션](content-modeling.md#type-inference) 중에서 선택하도록 할 수 있습니다.
 
 블록에 `classes` 속성을 추가하면 간단한 블록의 경우 테이블 헤더에 렌더링되거나 컨테이너 블록의 항목에 대한 값 목록으로 렌더링되는 속성이 표시됩니다.
 

@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service의 Cloud Manager를 사용하면 프로젝트에 Edge Del
 
 Adobe Experience Manager Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, Cloud Manager에서 Edge Delivery Services를 통해 사이트를 직접 온보딩하고 [안내식 셀프서비스 경험을 사용하여](/help/implementing/cloud-manager/managing-code/private-repositories.md) 라이브로 전환할 수 있습니다.
 
-또한 모든 AEM 속성을 관리하는 동시에 주요 워크플로 간에 일관성을 보장하는 통합 환경에 액세스할 수 있습니다. 이러한 워크플로에는 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑이 포함됩니다.
+또한 모든 AEM 속성을 관리하는 동시에 주요 워크플로 간에 일관성을 보장하는 통합 환경에 액세스할 수 있습니다. 이 워크플로에는 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑이 포함됩니다.
 
 ## Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점 {#recommended-path-eds}
 
@@ -40,7 +40,7 @@ Cloud Manager를 통해 Edge Delivery Services 라이선스에 액세스하고 �
 
 * [선택한 프로그램에서 라이선스를 사용하거나](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) [다른 프로그램을 업데이트하거나](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md), 두 가지 모두를 수행할 수 있습니다.
 * CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 때 [API 우선](https://developer.adobe.com/experience-cloud/experience-manager-apis/)의 이점을 활용할 수 있습니다.
-* [SLA 보고 액세스](/help/implementing/cloud-manager/sla-reporting.md)(*곧 제공 예정*)
+* [SLA 보고 액세스](/help/implementing/cloud-manager/sla-reporting.md) (*곧 제공 예정*)
 * 등록된 프로덕션 프로그램에 대한 [Adobe 지원에 액세스합니다.](/help/edge/overview.md#support-ticket)
 
 또한 Cloud Manager를 사용하면 Edge Delivery 사이트에 [Adobe에서 관리하는 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 인증서의 구성 및 추가를 포함한 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. 또한 DV 인증서가 생성된 후 삭제되지 않는 한 Adobe는 3개월마다 자동으로 인증서를 갱신합니다. Adobe에 Edge Delivery Services 라이선스가 없고 이러한 이점을 사용하지 않으려는 경우 사용자 관리 CDN만 사용할 수 있습니다. 이 설정은 [`aem.live`플랫폼](https://www.aem.live/docs/go-live-checklist#cdn-configuration)에 있어야 합니다.
@@ -63,24 +63,24 @@ Edge Delivery Services는 프로젝트를 시작한 방식에 따라 다양한 �
 >* Edge Delivery Services 라이선스가 프로그램에 적용되거나 프로그램에서 제거되면 파이프라인을 실행할 필요 없이 변경 사항이 즉시 적용됩니다.
 
 
-## Cloud Manager의 Edge Delivery 할 일 목록 {#ed-todo-list}
+## Cloud Manager에서의 Edge Delivery 할 일 목록 정보 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-Cloud Manager의 **Edge Delivery 할 일 목록**&#x200B;은(는) 온보딩을 안내하고 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 Edge Delivery 사이트를 관리하는 온보딩 작업 확인 목록입니다.
+**Cloud Manager에서의 Edge Delivery 할 일 목록**&#x200B;은 온보딩 작업 체크리스트로, Edge Delivery 사이트를 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩하고 관리할 수 있도록 안내합니다.
 
-![Cloud Manager의 Edge Delivery 사이트 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager의 Edge Delivery 사이트에서 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |
 | 1 | 제품 공동 작업 채널 가입 | **요청 제출하기**&#x200B;를 클릭하면 Adobe에 귀사를 위한 채널을 만들기 위한 요청이 제출됩니다. 채널이 이미 존재하는 경우 귀사 채널로 연결됩니다. |
-| 2 | 전제 조건 완료 | [시작 자습서 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
+| 2 | 전제 조건 완료 | [시작하기 튜토리얼 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
 | 3 | Edge Delivery 사이트 추가 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오. |
 | 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오. |
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
-| 8 | 실행 | [Go-Live 확인 목록](/help/edge/docs/go-live-checklist.md)을 참조하세요. |
+| 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

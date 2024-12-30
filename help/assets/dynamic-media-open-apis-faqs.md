@@ -1,25 +1,25 @@
 ---
-title: OpenAPI 기능이 포함된 Dynamic Media에 대한 자주 묻는 질문
-description: OpenAPI 기능이 포함된 Dynamic Media에 대한 자주 묻는 질문
+title: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
+description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1546'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# OpenAPI 기능이 포함된 Dynamic Media에 대한 자주 묻는 질문 {#new-dynaminc-media-apis-frequently-asked-questions}
+# OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문 {#new-dynaminc-media-apis-frequently-asked-questions}
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!AVAILABILITY]
 >
->이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>OpenAPI 기능이 포함된 Dynamic Media 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 +++**Experience Manager Assets as a Cloud Service 저장소의 모든 자산을 OpenAPI 기능이 포함된 Dynamic Media를 사용하여 검색하고 게재할 수 있습니까?**
 
@@ -139,7 +139,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | 원격 DAM 배포의 자산을 AEM Sites 인스턴스에서 사용할 수 있는 경우 자산 바이너리는 복사되지 않습니다. | 원격 DAM 배포의 자산을 AEM Sites 인스턴스에서 사용할 수 있는 경우 자산 바이너리가 복사됩니다. |
 | AEM Assets에서 지원하는 모든 자산 형식 유형을 지원합니다. | 비디오는 지원되지 않습니다. |
 | 원격 DAM 배포에서 자산을 가져오는 동안 로컬 Sites 배포에서 Dynamic Media를 사용할 수 있습니다. | 로컬 Sites 배포의 Dynamic Media는 읽기 전용입니다. |
-| 원격 DAM 배포에 연결된 AEM Sites 인스턴스 수에는 제한이 없습니다. 원격 DAM에서 승인된 자산의 [역할을 구성하여 Sites 인스턴스의 자산에 대한 액세스를 제한](/help/assets/restrict-assets-delivery.md)할 수 있습니다. | 원격 DAM 배포에는 최대 4개의 AEM Sites 인스턴스를 연결할 수 있도록 제한됩니다. 개수를 증가시려면 추가 테스트가 필요합니다. |
+| 원격 DAM 배포에 연결된 AEM Sites 인스턴스 수에는 제한이 없습니다. 원격 DAM에서 승인된 자산의 [역할을 구성하여 Sites 인스턴스의 자산에 대한 액세스를 제한](/help/assets/restrict-assets-delivery.md)할 수 있습니다. | 원격 DAM 배포에는 최대 4개의 AEM Sites 인스턴스를 연결할 수 있도록 제한됩니다. 이 한도를 늘리려면 추가적인 테스트가 요구됩니다. |
 | 자산 선택기와 OpenAPI 기능 포함 Dynamic Media는 모두 사용자 정의 통합이 가능하도록 확장할 수 있습니다. | 연결된 자산 API는 사용자 정의 통합이 가능하도록 확장할 수 없습니다. |
 | 버전 업데이트 및 메타데이터 수정을 포함하여 원격 DAM 배포에서 사용 가능한 승인된 자산에 대한 변경 사항은 10분의 짧은 TTL(수명) 값 내에 Sites 인스턴스로 자동 반영됩니다. | 원격 DAM 배포에 대한 자산 업데이트는 라이프사이클 이벤트를 통해 자동으로 처리되지만 OpenAPI 기능 포함 Dynamic Media에 비해 훨씬 더 많은 시간이 걸립니다. |
 | 원격 DAM의 자산 메타데이터도 AEM Sites 인스턴스에서 사용할 수 있습니다. | 원격 DAM의 자산 메타데이터를 AEM Sites 인스턴스에서 사용할 수 없습니다. |

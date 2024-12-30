@@ -5,9 +5,9 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2196'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,10 +34,10 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용한 프로젝트는 콘
 
 AEM에서 이 콘텐츠는 Markdown 및 HTML로 직렬화할 수 있는 모든 것을 포함하는 매우 간단하고 사전 정의된 모델이 있는 구성 요소로 구현됩니다.
 
-* **텍스트**: 서식 있는 텍스트(목록 요소 및 강조 텍스트 또는 기울임체 텍스트 포함)
-* **제목**: 텍스트, 유형(h1~h6)
+* **텍스트**: 서식 있는 텍스트 (목록 요소 및 강조 텍스트 또는 기울임체 텍스트 포함)
+* **제목**: 텍스트, 유형 (h1~h6)
 * **이미지**: 소스, 설명
-* **버튼**: 텍스트, 제목, URL, 유형(기본, 주, 보조)
+* **버튼**: 텍스트, 제목, URL, 유형 (기본, 주, 보조)
 
 이러한 구성 요소의 모델은 [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)의 일부입니다.
 
@@ -112,7 +112,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 * 블록의 테이블 헤더에 렌더링될 블록 이름을 정의해야 합니다.
    * 블록 이름은 블록을 장식하는 데 적합한 스타일과 스크립트를 가져오는 데 사용됩니다.
 * [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)를 정의할 수 있습니다.
-   * 모델 ID는 구성 요소의 모델에 대한 참조로서, 속성 패널에서 작성자가 사용할 수 있는 필드를 정의합니다.
+   * 모델 ID는 속성 패널에서 작성자가 사용할 수 있는 필드를 정의하는 구성 요소 모델에 대한 참조입니다.
 * [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)를 정의할 수 있습니다.
    * 필터 ID는 구성 요소 필터에 대한 참조이며, 이를 통해 작성 동작을 변경할 수 있습니다(예: 블록이나 섹션에 추가할 수 있는 하위 요소 또는 활성화되는 RTE 기능 제한).
 
@@ -324,7 +324,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 [블록 구조의 메커니즘이 설명되었으므로](#block-structure) AEM에 유지된 콘텐츠를 일대일로 게재 계층에 매핑하는 콘텐츠 모델을 만들 수 있습니다.
 
-모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용 및 일반 지침은 [David&#39;s Model(2번)](https://www.aem.live/docs/davidsmodel)에서 확인할 수 있습니다. 보다 구체적으로 [블록 컬렉션](/help/edge/developer/block-collection.md)에는 일반적인 사용자 인터페이스 패턴의 특정 사용 사례에 대한 광범위한 콘텐츠 모델 세트가 포함되어 있습니다.
+모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용 및 일반 지침은 [David&#39;s Model (2번)](https://www.aem.live/docs/davidsmodel)에서 확인할 수 있습니다. 보다 구체적으로 [블록 컬렉션](/help/edge/developer/block-collection.md)에는 일반적인 사용자 인터페이스 패턴의 특정 사용 사례에 대한 광범위한 콘텐츠 모델 세트가 포함되어 있습니다.
 
 Edge Delivery Services를 사용한 WYSIWYG 작성의 경우, 서식 있는 텍스트와 같이 컨텍스트 내에서 의미 체계 마크업을 편집하는 대신 여러 필드로 구성된 양식으로 정보를 작성할 때 강력한 의미 체계 콘텐츠 모델을 제공하는 방법에 대해 의문을 제기합니다.
 
@@ -461,7 +461,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### 요소 그룹화 {#element-grouping}
 
-[필드 축소](#field-collapse)가 여러 속성을 하나의 의미 체계 요소로 결합하는 것이라면, 요소 그룹화는 여러 의미 체계 요소를 단일 셀로 연결하는 것입니다. 이는 특히 작성자가 만들 수 있는 요소의 유형과 수를 제한해야 하는 사용 사례에 유용합니다.
+[필드 축소](#field-collapse)는 여러 속성을 하나의 의미 체계 요소로 결합하는 것인 반면, 요소 그룹화는 여러 의미 체계 요소를 단일 셀로 연결하는 것입니다. 이는 특히 작성자가 만들 수 있는 요소의 유형과 수를 제한해야 하는 사용 사례에 유용합니다.
 
 예를 들어 티저 구성 요소는 작성자는 최대 두 개의 클릭 유도 버튼과 결합된 부제, 제목, 단일 단락 설명만 만들도록 허용할 수 있습니다. 이러한 요소를 함께 그룹화하면 추가 작업 없이 스타일을 지정할 수 있는 의미 체계 마크업이 생성됩니다.
 
@@ -536,7 +536,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐츠 또는 블록인 단일 수준의 중첩만 의도적으로 허용합니다. 즉, 다른 구성 요소를 포함할 수 있는 보다 복잡한 시각적 구성 요소를 가지려면 섹션으로 모델링하고 자동 차단 클라이언트측을 사용하여 함께 결합해야 합니다. 이에 대한 일반적인 예로는 탭과 아코디언과 같이 접을 수 있는 섹션이 있습니다.
 
-섹션은 블록과 동일한 방식으로 정의할 수 있지만, `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 이름과 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용하는 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 및 섹션 메타데이터를 렌더링하는 데 사용하는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
+섹션은 블록과 동일한 방식으로 정의할 수 있지만 `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 이름과 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용하는 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 및 섹션 메타데이터를 렌더링하는 데 사용하는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
 
 기본 섹션의 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure) 및 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)는 `section`입니다. 기본 섹션의 비헤이비어를 변경하는 데 사용할 수 있습니다. 다음 예에서는 섹션 메타데이터 모델에 일부 스타일과 배경 이미지를 추가합니다.
 
@@ -614,9 +614,9 @@ AEM as a Cloud Service에서 테이블과 같은 방식의 경로별 또는 경�
 
 AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 해당 페이지 메타데이터에 매핑됩니다. 여기에는 예를 들어 `title`, `description`, `robots` `canonical url` 또는 `keywords`가 포함됩니다. 일부 AEM 관련 속성도 사용할 수 있습니다.
 
-* `cq:lastModified` - `modified-time`(ISO8601 형식)
-* 문서가 마지막으로 게시된 시간 - `published-time`(ISO8601 형식)
-* `cq:tags` - `cq-tags`(태그 ID를 쉼표로 구분한 목록)
+* `cq:lastModified` - `modified-time` (ISO8601 형식)
+* 문서가 마지막으로 게시된 시간 - `published-time` (ISO8601 형식)
+* `cq:tags` - `cq-tags` (태그 ID를 쉼표로 구분한 목록)
 
 사용자 정의 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수도 있으며, 이 모델은 범용 편집기에서 작성자가 사용할 수 있도록 제공됩니다.
 

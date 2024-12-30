@@ -1,13 +1,13 @@
 ---
-title: 스프레드시트를 사용한 표 형식 데이터 관리
+title: 스프레드시트를 사용하여 표 형식 데이터 관리
 description: 스프레드시트를 사용하여 Edge Delivery Services 사이트를 통해 AEM에 대한 메타데이터 및 리디렉션과 같은 다양한 값에 대한 표 형식 데이터를 관리하는 방법을 알아봅니다.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -83,24 +83,24 @@ Edge Delivery Services 프로젝트가 포함된 AEM에서 스프레드시트를
 
 ## 스프레드시트 데이터 가져오기 {#importing}
 
-AEM 페이지 편집기에서 스프레드시트를 편집할 수 있을 뿐만 아니라 CSV 파일에서 데이터를 가져올 수도 있습니다.
+AEM 페이지 편집기에서 스프레드시트를 편집하는 것 외에도 CSV 파일에서 데이터를 가져올 수 있습니다.
 
-1. AEM에서 스프레드시트를 편집할 때 화면 왼쪽 상단의 **업로드** 버튼을 탭하거나 클릭합니다.
+1. AEM에서 스프레드시트를 편집할 때 화면의 왼쪽 상단에 있는 **업로드** 버튼을 탭하거나 클릭합니다.
 1. 드롭다운에서 데이터를 가져오는 방법을 선택합니다.
-   * **문서 바꾸기** - 전체 스프레드시트의 내용을 업로드할 CSV 파일의 내용으로 바꿉니다.
-   * **문서에 추가**&#x200B;하여 업로드할 CSV 파일의 데이터를 기존 스프레드시트 콘텐츠에 추가합니다.
+   * **문서 바꾸기**&#x200B;를 클릭하여 전체 스프레드시트 콘텐츠를 업로드할 CSV 파일 콘텐츠로 대체합니다.
+   * **문서에 추가**&#x200B;를 클릭하여 업로드할 CSV 파일의 데이터를 기존 스프레드시트 콘텐츠에 추가합니다.
 1. 대화 상자가 열리면 CSV 파일을 선택한 다음 **열기**&#x200B;를 탭하거나 클릭합니다.
 
-가져오기가 처리되면 대화 상자가 열립니다. 완료되면 CSV 파일의 데이터가 스프레드시트의 콘텐츠에 추가되거나 이 데이터를 대체합니다. 열이 일치하지 않는 등의 오류가 발생하면 보고되므로 CSV 파일을 수정할 수 있습니다.
+가져오기가 처리되면 대화 상자가 열립니다. 완료되면 CSV 파일의 데이터가 스프레드시트 콘텐츠에 추가되거나 해당 콘텐츠를 대체합니다. 열 불일치와 같은 오류가 발생하면 이를 보고하여 CSV 파일을 수정할 수 있습니다.
 
 >[!NOTE]
 >
 >* CSV 파일의 머리글은 스프레드시트의 열과 정확히 일치해야 합니다.
->* 전체 CSV를 가져오면 열 제목은 수정되지 않고 컨텐츠 행만 수정됩니다.
->* 열을 업데이트해야 하는 경우 CSV 가져오기를 수행하기 전에 AEM 페이지 편집기에서 이 작업을 수행해야 합니다.
->* CSV 파일은 가져오기에 10MB를 초과할 수 없습니다.
+>* 전체 CSV를 가져와도 열 머리글은 수정되지 않고 콘텐츠 행만 수정됩니다.
+>* 열을 업데이트해야 할 경우 CSV 가져오기를 수행하기 전에 AEM 페이지 편집기에서 업데이트해야 합니다.
+>* 가져오기 할 때 CSV 파일은 10MB보다 클 수 없습니다.
 
-선택한 `mode`에 따라 다음과 유사한 CSV 및 cURL 명령을 사용하여 스프레드시트에 `create`, `replace` 또는 `append`할 수도 있습니다.
+`mode`의 선택 내용에 따라 다음과 유사한 CSV 및 cURL 명령을 사용하여 스프레드시트를 `create`, `replace`하거나 스프레드시트에 `append`할 수도 있습니다.
 
 ```text
 curl --request POST \
@@ -115,13 +115,13 @@ curl --request POST \
   --form mode=append
 ```
 
-이 호출은 작업 ID에 대한 정보가 포함된 HTML 페이지를 반환합니다.
+작업 ID에 대한 정보가 제공되면 호출에서 HTML 페이지를 반환합니다.
 
 ```text
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[**작업** 콘솔](/help/operations/asynchronous-jobs.md)을 사용하여 작업의 상태를 보거나 반환된 ID를 사용하여 작업을 쿼리할 수 있습니다.
+[**작업** 콘솔](/help/operations/asynchronous-jobs.md)을 사용하여 작업 상태를 보거나 반환된 ID를 사용하여 작업을 쿼리할 수 있습니다.
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1

@@ -1,15 +1,15 @@
 ---
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
 
 ## Headless 체험판 프로모션 {#headless-trials-promotion}
 
-[![Headless CMS를 30일 체험판으로 경험해 보세요](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![30일 체험판을 통해 Headless CMS 살펴보기](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ko)
 
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
-* [Adobe Marketo Engage에 적응형 양식 연결](/help/forms/integrate-form-to-marketo-engage.md)
+* [적응형 양식을 Adobe Marketo Engage에 연결](/help/forms/integrate-form-to-marketo-engage.md)
 * [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 추가 참조 {#see-more-forms-eds}
@@ -133,7 +133,7 @@ ht-degree: 95%
 * [핵심 구성 요소 기반 적응형 양식의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
 * [적응형 양식에서 비동기 함수 사용](/help/forms/using-async-funct-in-rule-editor.md)
-* [핵심 구성 요소를 기반으로 하는 양식의 시각적 규칙 편집기에서 서비스 개선 사항 호출](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [핵심 구성 요소 기반 양식의 시각적 규칙 편집기에서 Service 개선 사항 호출](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
 * [사용자 정의 함수의 범위 오브젝트](/help/forms/custom-function-core-component-scope-function.md)
@@ -149,10 +149,10 @@ ht-degree: 95%
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [AEM Forms과 Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)
-* [Marketo Engage과 통합할 새 양식 구성](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [기존 적응형 Forms에 대한 Marketo Engage 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [AEM Forms와 Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)
+* [새 양식을 구성하여 Marketo Engage와 통합](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [기존 적응형 양식의 Marketo Engage 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [기존 양식의 Marketo Engage에 대한 제출 액션 구성](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
 
@@ -171,7 +171,7 @@ ht-degree: 95%
 >[!IMPORTANT]
 >
 >프론트엔드 파이프라인을 사용하여 사이트를 개발하거나 사용하려는 경우 사전에 Cloud Manager IP 허용 목록을 추가해야 합니다.
->[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하시기 바랍니다.
+>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하십시오.
 
 ## IP 허용 목록 및 범용 편집기 {#ip-allow-lists-ue}
 
@@ -192,17 +192,17 @@ ht-degree: 95%
 >* IP 허용 목록을 활성화하지 않습니다.
 >* [범용 편집기 서비스의 자체 인스턴스를 실행합니다.](/help/implementing/universal-editor/local-dev.md)
 
-## Dynamic Media로 작업 {#work-with-dynamic-media}
+## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
+>Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보려면 [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
 
 ## Dynamic Media도 참조할 수 있습니다. {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
+>* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보려면 [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
 >
 >* 기능을 최대로 활용하려면 [Dynamic Media 모범 사례](/help/assets/dynamic-media/dm-best-practices.md)를 참조하십시오.
 >
@@ -223,7 +223,7 @@ ht-degree: 95%
 
 지원 티켓을 로그하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. 모든 AEM as a Cloud Service 사용자는 Cloud Manager에 웹 사이트를 등록하는 것이 좋으며, [이를 통해 여러 이점을 얻을 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 자세히 알아보십시오.
 
-**지원 티켓을 기록하려면:**
+**지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
 1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.

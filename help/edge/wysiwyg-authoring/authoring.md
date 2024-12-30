@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
    * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
 1. [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
    * 범용 편집기는 콘텐츠 작성을 위한 새로운 최신 UI를 제공합니다.
-   * AEM은 작성을 위해 HTML을 렌더링하지만, Edge Delivery Services의 스크립트, 스타일, 아이콘 및 기타 리소스를 포함합니다.
+   * AEM은 작성을 위해 HTML을 렌더링하지만 Edge Delivery Services의 스크립트, 스타일, 아이콘 및 기타 리소스를 포함합니다.
    * 범용 편집기를 사용하더라도, 모든 변경 사항은 AEM에 유지됩니다.
    * 범용 편집기는 아직 AEM 페이지 편집기가 있는 기능 패리티에 없으며, 일부 AEM 기능은 범용 편집기에서 사용하지 못할 수도 있습니다.
 1. 범용 편집기로 작성하고 AEM에 저장된 콘텐츠는 Edge Delivery Services에 게시됩니다.
@@ -44,7 +44,7 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
 
 ![범용 편집기에서 블록 추가 및 배열](assets/blocks.png)
 
-그런 다음 [속성] 패널에서 블록의 세부 사항을 구성할 수 있습니다.
+그런 다음 속성 패널에서 블록의 세부 정보를 구성할 수 있습니다.
 
 ![블록 속성 구성](assets/block-properties.png)
 
@@ -56,4 +56,4 @@ AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성�
 
 WYSIWYG 작성은 콘텐츠 작성자를 위한 강력하고 직관적인 도구입니다. 그러나 작성 사용 사례가 다양하기 때문에 AEM은 추가 작성 솔루션을 제공합니다.
 
-AEM이 제공하는 문서 기반 작성 및 헤드리스를 포함한 작성 솔루션에 대해 자세히 알아보려면 [작성 방법 선택](/help/edge/authoring-methods.md) 문서를 참조하십시오.
+AEM이 제공하는 문서 기반 작성 및 Headless를 포함한 작성 솔루션에 대해 자세히 알아보려면 [작성 방법 선택](/help/edge/authoring-methods.md) 문서를 참조하십시오.
