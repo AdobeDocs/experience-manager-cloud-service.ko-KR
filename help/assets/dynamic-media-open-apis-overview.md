@@ -71,7 +71,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
 
   >[!NOTE]
   >
-  Adobe 이외의 애플리케이션과 통합하려면 애플리케이션이 호스팅되는 허용 목록에 도메인 이름을 입력합니다.
+  >Adobe 이외의 애플리케이션과 통합하려면 애플리케이션이 호스팅되는 허용 목록에 도메인 이름을 입력합니다.
 
 * 통합 프로젝트에 참여한 주요 고객 연락처의 세부 정보.
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
 
 >[!NOTE]
 >
-OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`를 제외합니다.
+>OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`를 제외합니다.
 
 ## 주요 기능에 대해 자세히 알아보기 {#learn-more-key-capabilities}
 
