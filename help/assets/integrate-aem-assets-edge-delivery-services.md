@@ -1,15 +1,15 @@
 ---
-title: Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합
+title: AEM Assets를 통합하면서 Edge Delivery Services용 콘텐츠 작성
 description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
+source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
 workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# AEM Assets를 통합하면서 Edge Delivery Services용 콘텐츠 작성 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
@@ -84,3 +84,4 @@ AEM Assets과 통합하도록 범용 편집기를 설정합니다. 이 통합을
 
 * 범용 편집기에서 사용자 지정 자산 선택기 함수를 추가하려면 [Edge Delivery 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 지정 에셋 선택기를 사용하면 에셋을 유니버설 편집기 콘텐츠에 직접 삽입할 수 있습니다.
 * 범용 편집기에서 작성하는 동안 AEM Assets에 액세스하고 자산을 삽입하는 방법을 알아보려면 [확장 개요](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
+
