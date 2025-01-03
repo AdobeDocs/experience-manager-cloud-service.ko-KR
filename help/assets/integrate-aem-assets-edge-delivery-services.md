@@ -2,9 +2,9 @@
 title: AEM Assets를 통합하면서 Edge Delivery Services용 콘텐츠 작성
 description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
+source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '698'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
-Edge Delivery Services은 웹 사이트에서 컨텐츠를 작성하고 제공하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. 범용 편집기와 문서 기반 작성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)을 사용하여 [AEM 콘텐츠 관리](/help/sites-cloud/authoring/author-publish.md) 및 [WYSIWYG 작성을 모두 사용할 수 있습니다.
+[Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)은(는) 구성 가능한 서비스 집합으로, 웹 사이트에서 콘텐츠를 작성하고 전달하는 방법에 대해 높은 수준의 유연성을 제공합니다. 범용 편집기와 문서 기반 작성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)을 사용하여 [AEM 콘텐츠 관리](/help/sites-cloud/authoring/author-publish.md) 및 [WYSIWYG 작성을 모두 사용할 수 있습니다.
 
 다음 위치에서 콘텐츠를 편집할 수 있습니다.
 
