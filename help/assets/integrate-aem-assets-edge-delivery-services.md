@@ -2,7 +2,7 @@
 title: AEM Assets를 통합하면서 Edge Delivery Services용 콘텐츠 작성
 description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ OpenAPI 기능과 함께 Dynamic Media을 사용하여 에셋을 제공하는 �
 
 ## 샘플 Edge Delivery Services 사이트{#example-of-an-Edge-Delivery-Services-site}
 
-[WKND 여행](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home)을 참조하세요. 이 사이트는 Edge Delivery Services의 문서 기반 작성 기능을 사용하여 빌드됩니다. 자산 전달을 위해 Dynamic Media과 함께 OpenAPI 기능을 사용하여 사이트의 콘텐츠를 [Google 문서](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성합니다. 작성된 콘텐츠는 문서에서 직접 게시됩니다. 이 문서 기반 작성 설정의 경우 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드가 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)에 저장됩니다.
+[WKND 여행](http://bit.ly/3DExLnf)을 참조하세요. 이 사이트는 Edge Delivery Services의 문서 기반 작성 기능을 사용하여 빌드됩니다. 자산 전달을 위해 Dynamic Media과 함께 OpenAPI 기능을 사용하여 사이트의 콘텐츠를 [Google 문서](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성합니다. 작성된 콘텐츠는 문서에서 직접 게시됩니다. 이 문서 기반 작성 설정의 경우 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드가 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)에 저장됩니다.
 
 ## AEM Assets과 Edge Delivery Services의 범용 편집기 기반 작성 플로우 통합 {#integrate-aem-assets-with-universal-editor}
 
