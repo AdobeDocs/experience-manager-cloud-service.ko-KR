@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -28,9 +28,11 @@ Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일�
 
 AEM as a Cloud Service의 [CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 페이지에 설명된 대로 고객은 자체 CDN(Customer CDN(BYOCDN이라고도 함)을 통해 트래픽을 라우팅하도록 선택할 수 있습니다.
 
-설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 Adobe CDN으로 라우팅되기 전에 고객 CDN의 각 요청에 대해 설정되고, 이 값은 값이 예상대로 맞는지 검증하므로 요청을 적절한 AEM 소스로 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
+설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 고객 CDN의 각 요청에 대해 설정되며, Adobe CDN으로 라우팅되기 전에 해당 값이 예상대로인지 확인한 다음 해당 AEM 원본으로 요청을 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
 
 *X-AEM-Edge-Key* 값은 `cdn.yaml` 또는 유사한 파일의 `edgeKey1` 및 `edgeKey2` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.  구문은 아래 예에 설명되어 있습니다.
+
+추가 디버깅 정보와 일반적인 오류에 대해서는 [일반적인 오류](/help/implementing/dispatcher/cdn.md#common-errors)를 확인하십시오.
 
 >[!WARNING]
 >올바른 X-AEM-Edge-Key 없이 직접 액세스가 해당 조건과 일치하는 모든 요청(아래 샘플에서 게시 계층에 대한 모든 요청을 의미)에 대해 거부됩니다. 인증을 점진적으로 도입해야 하는 경우 [트래픽 차단 위험을 줄이기 위해 안전하게 마이그레이션](#migrating-safely) 섹션을 참조하십시오.
@@ -147,7 +149,7 @@ data:
    * name - 설명 문자열입니다.
    * 유형 - 은(는) 삭제여야 합니다.
    * purgeKey1 - 해당 값은 [Cloud Manager 비밀 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)을(를) 참조해야 합니다. 서비스 적용 필드에서 모두를 선택합니다. 값(예: `${{CDN_PURGEKEY_031224}}`)은 추가된 날짜를 반영하는 것이 좋습니다.
-   * purgeKey2 - 아래 [회전 비밀 섹션](#rotating-secrets) 섹션에 설명된 대로 비밀 회전에 사용됩니다. `purgeKey1` 및 `purgeKey2` 중 하나 이상을 선언해야 합니다.
+   * purgeKey2 - 아래 [암호 회전](#rotating-secrets) 섹션에 설명된 대로 암호 회전에 사용됩니다. `purgeKey1` 및 `purgeKey2` 중 하나 이상을 선언해야 합니다.
 * 규칙: 사용해야 하는 인증자와 게시 및/또는 미리보기 계층 여부를 선언할 수 있습니다.  여기에는 다음이 포함됩니다.
    * name - 설명 문자열
    * when - [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 문서의 구문에 따라 규칙을 평가할 시기를 결정하는 조건입니다. 일반적으로 현재 계층의 비교(예: 게시)가 포함됩니다.
@@ -202,7 +204,7 @@ data:
    * name - 설명 문자열
    * 형식은 `basic`이어야 합니다.
    * 최종 사용자가 기본 인증 대화 상자에 입력할 수 있는 다음 이름/값 쌍을 각각 포함하는 최대 10개의 자격 증명 배열입니다.
-      * user - 사용자 이름
+      * user - 사용자의 이름입니다.
       * 암호 - 해당 값은 **모두**&#x200B;이(가) 서비스 필드로 선택된 [Cloud Manager 비밀 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)을(를) 참조해야 합니다.
 * 규칙: 사용해야 하는 인증자와 보호해야 하는 리소스를 선언할 수 있습니다. 각 규칙에는 다음이 포함됩니다.
    * name - 설명 문자열

@@ -4,10 +4,10 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 12%
+source-wordcount: '1745'
+ht-degree: 11%
 
 ---
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->자체 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을(를) 사용하여 수행되며, 이는 요청 `Host` 헤더에서 전송되어야 합니다. 요청 `Host` 헤더를 사용자 지정 도메인 이름으로 덮어쓰면 Adobe CDN을 통해 요청이 잘못 라우팅될 수 있습니다.
+>자체 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을(를) 사용하여 수행되며, 이는 요청 `Host` 헤더에서 전송되어야 합니다. 요청 `Host` 헤더를 사용자 지정 도메인 이름으로 덮어쓰면 Adobe CDN을 통해 요청이 잘못 라우팅되거나 421 오류가 발생할 수 있습니다.
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 고객 CDN과 AEM CDN 간의 추가 홉은 캐시 누락이 있는 경우에만 필요합니다. 이 문서에 설명된 캐시 최적화 전략을 사용하면 고객 CDN을 추가하면 무시할 수 있는 지연만 발생합니다.
 
 이 고객 CDN 구성은 게시 계층에 대해 지원되지만 작성자 계층 앞에서는 지원되지 않습니다.
+
+### 디버깅 구성
+
+BYOCDN 구성을 디버깅하려면 값이 `edge=true`인 `x-aem-debug` 헤더를 사용하십시오. 예:
+
+Linux®:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+Windows에서는:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+`x-aem-debug` 응답 헤더의 요청에 사용된 특정 속성을 반영합니다. 예:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+이를 사용하면 예: 에지 인증이 구성된 경우 호스트 값과 에지 키가 설정되어 있고 사용되는 키(하나의 키가 일치하는 경우)인 x-forwarded-host 헤더 값을 확인할 수 있습니다.
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
@@ -160,6 +184,11 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 **게시 서비스 끝점으로 리디렉션**
 
 요청이 403 금지된 응답을 수신하면 요청에 일부 필수 헤더가 누락되었음을 의미합니다. CDN이 Apex 및 `www` 도메인 트래픽을 모두 관리하고 있지만 `www` 도메인에 대한 올바른 헤더를 추가하지 않는 것이 일반적인 원인입니다. 이 문제는 AEM as a Cloud Service CDN 로그를 확인하고 필요한 요청 헤더를 확인하여 트리거할 수 있습니다.
+
+**잘못된 리디렉션 오류 421**
+
+요청에서 `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` 주변의 본문으로 421 오류를 받으면 HTTP `Host` 집합이 호스트에 대한 인증서의 호스트와 일치하지 않음을 나타냅니다. 이는 일반적으로 `Host` 또는 SNI 설정이 잘못되었음을 나타냅니다. `Host`과(와) SNI 설정이 모두 publish-p&lt;PROGRAM_ID>-e를 가리키는지 확인하십시오.<ENV-ID>.adobeaemcloud.com 호스트.
+
 
 **리디렉션 루프가 너무 많음**
 
