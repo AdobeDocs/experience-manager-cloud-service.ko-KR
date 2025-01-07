@@ -4,10 +4,10 @@ description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: ht
-source-wordcount: '770'
-ht-degree: 100%
+source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >AEM 6.5 고객은 자세한 내용을 확인하려면 [AEM 6.5에 대한 비교 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console)를 참조해야 합니다.
 
-Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이러한 자격 증명 유형 중 하나인 서비스 계정(JWT) 자격 증명은 OAuth 서버 간 자격 증명이 마련되어 더 이상 사용되지 않습니다. 2024년 6월 3일 이후로 새 서비스 계정(JWT) 사용자 인증 정보를 생성할 수 없으며 기존 JWT 사용자 인증 정보는 2025년 1월 27일 이후에는 작동하지 않습니다. [사용 중단 관련 정보](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)를 살펴보십시오.
+Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이러한 자격 증명 유형 중 하나인 서비스 계정(JWT) 자격 증명은 OAuth 서버 간 자격 증명이 마련되어 더 이상 사용되지 않습니다. 2024년 6월 3일 이후 새 서비스 계정(JWT) 자격 증명을 만들 수 없으며 기존 JWT 자격 증명은 2025년 6월 30일 이후 작동하지 않습니다. [사용 중단 관련 정보](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)를 살펴보십시오.
 
 이 문서에서는 AEM as a Cloud Service 고객이 사용 중단을 처리하는 방법에 대한 몇 가지 추가 컨텍스트를 제공합니다.
 
@@ -48,7 +48,7 @@ AEM 고객은 AEM을 사용하여 다른 여러 Adobe 솔루션과의 통합을 
 
 **관련 AEM 버전**: AEM as a Cloud Service
 
-고객은 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 호출할 수 있도록 Adobe Developer Console 프로젝트를 만듭니다. Adobe Developer 프로젝트의 자격 증명은 사용 중단된 JWT 자격 증명이 만료되는 2025년 1월 전에 OAuth 서버 간 자격 증명 유형으로 마이그레이션해야 합니다.
+고객은 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 호출할 수 있도록 Adobe Developer Console 프로젝트를 만듭니다. 더 이상 사용되지 않는 JWT 자격 증명이 2025년 6월에 만료되기 전에 Adobe Developer 프로젝트의 자격 증명을 OAuth 서버 간 자격 증명 유형으로 마이그레이션해야 합니다.
 
 ## 자동 생성된 프로젝트 {#autogen-projects}
 
