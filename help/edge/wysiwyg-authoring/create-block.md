@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: ht
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 ![프로젝트 복제](assets/create-block/clone.png)
 
-2\. 프로젝트 루트에 있는 `component-definition.json` 파일을 편집하고 새 인용 블록에 대해 다음 정의를 추가한 후 파일을 저장합니다.
+2\. 프로젝트 루트에서 [`component-definition.json` 파일](/help/implementing/universal-editor/component-definition.md)을(를) 편집하고 새 견적 블록에 대해 다음 정의를 추가하고 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-4\. 프로젝트 루트에 있는 `component-filters.json` 파일을 편집하고 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 인용 블록을 추가하여 해당 블록이 모든 섹션에 추가되도록 허용하고 파일을 저장합니다.
+4\. 프로젝트 루트에서 [`component-filters.json` 파일](/help/implementing/universal-editor/customizing.md#filtering-components)을(를) 편집하고 견적 블록을 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 추가하여 블록을 모든 섹션에 추가하고 파일을 저장합니다.
 
 >[!BEGINTABS]
 

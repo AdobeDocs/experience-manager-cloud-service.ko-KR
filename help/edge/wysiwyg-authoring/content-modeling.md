@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트에서 WYSIWYG 작성을 위한 
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
-workflow-type: ht
-source-wordcount: '2196'
-ht-degree: 100%
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 모든 블록에 모델이 있어야 하는 것은 아닙니다. 일부 블록은 단순히 하위 목록을 위한 [컨테이너](#container)이며, 각 하위 항목에는 자체 모델이 있습니다.
 
-또한 범용 편집기를 사용하여 어떤 블록이 존재하고 페이지에 추가될 수 있는지를 정의해야 합니다. [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) 파일에는 범용 편집기에서 사용할 수 있는 구성 요소가 나열되어 있습니다.
+또한 범용 편집기를 사용하여 어떤 블록이 존재하고 페이지에 추가될 수 있는지를 정의해야 합니다. [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) 파일에는 유니버설 편집기에서 사용할 수 있는 구성 요소가 나열됩니다.
 
 ```json
 {

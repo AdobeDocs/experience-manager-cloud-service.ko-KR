@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 36%
+source-wordcount: '1378'
+ht-degree: 37%
 
 ---
 
@@ -118,14 +118,17 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >
 >유니버설 편집기 [모델에 따라 콘텐츠 조각 필드의 유효성을 검사합니다](/help/assets/content-fragments/content-fragments-models.md#validation). 정규식 패턴 및 고유성 제약 조건과 같은 데이터 무결성 규칙을 적용할 수 있습니다.
 >
->이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족하게 됩니다.
+>이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족할 수 있습니다.
 
 ### 컨테이너에 구성 요소 추가 {#adding-components}
 
 1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기에서 컨테이너 구성 요소를 선택하십시오.
-1. 그런 다음 속성 패널에서 추가 아이콘을 선택합니다.
 
    ![컨테이너에 추가할 구성 요소 선택](assets/ue-add-component.png)
+
+1. 그런 다음 속성 패널에서 추가 아이콘을 선택합니다.
+
+   ![추가 아이콘 선택](assets/add-icon.png)
 
 구성 요소가 컨테이너에 삽입되며 편집기에서 편집할 수 있습니다.
 
