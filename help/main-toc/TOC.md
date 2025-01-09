@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f971857e10cbed5f7c64870c53fa7409e39493bc
+source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
 workflow-type: tm+mt
-source-wordcount: '5940'
+source-wordcount: '5948'
 ht-degree: 99%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
    + [AEM as a Cloud Service에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
+   + [사용자 그룹 및 제품 프로필 동기화 변경 사항](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
    + [WAF 규칙이 포함된 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
