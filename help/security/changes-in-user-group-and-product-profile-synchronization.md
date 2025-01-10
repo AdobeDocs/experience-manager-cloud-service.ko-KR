@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 그룹 및 제품 프로필 동기화 변경 사항 {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ Cloud Manager의 환경 작업 메뉴에서 **액세스 - 작성자 프로필**(
 ![Admin Console의 접미사](/help/security/assets/admin-console-profile-suffixes.png)
 
 AEM 애플리케이션이 AEM에 더 이상 표시되지 않는 그룹을 참조하는 경우에는 대신 i) 올바른 AEM 인스턴스의 제품 프로필 또는 ii) Adobe Admin Console 사용자 그룹을 사용해야 합니다.
+
