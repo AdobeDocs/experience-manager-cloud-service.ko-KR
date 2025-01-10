@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
+source-wordcount: '10564'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,8 @@ ht-degree: 2%
 
    * 나만의 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
-      * [비디오 인코딩 프로필을 만듭니다](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [비디오 인코딩 프로필 만들기](/help/assets/dynamic-media/video-profiles
+      * 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)입니다.
       * [비디오 인코딩 모범 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보세요.
 
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
@@ -41,7 +42,8 @@ ht-degree: 2%
 
    * 기본 소스 비디오를 지정된 폴더에 업로드합니다. 추가되면 비디오가 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
 
-      * Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25 x 25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
+      * Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25×25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
+      * 지원되는 최대 입력 비디오 해상도는 16,384 × 16,384입니다.
       * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
       * [비디오를 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * [지원되는 입력 파일 형식](/help/assets/file-format-support.md)에 대해 자세히 알아보세요.
@@ -153,7 +155,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 비디오 플레이어의 기능을 디자인할 수 있습니다. 예를 들어 HTML 5와 CSS를 사용하여 단추, 컨트롤 및 사용자 지정 포스터 이미지 배경을 디자인하여 사용자 지정된 모양으로 고객에게 다가갈 수 있습니다.
 
-뷰어의 재생 측에서는 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 HLS 또는 DASH(적응형 비디오 스트리밍이라고도 함)를 사용하여 비디오를 서비스한다. 또는 이러한 전달 방법이 없는 경우 대신 HTML5 progressive가 사용됩니다.
+뷰어의 재생 측에서는 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 적응형 비디오 스트리밍이라고도 하는 HLS 또는 DASH를 사용하여 비디오를 제공합니다. 또는 이러한 전달 방법이 없는 경우 대신 HTML5 progressive가 사용됩니다.
 
 >[!NOTE]
 >
@@ -177,7 +179,7 @@ HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 
 * HTTPS 비디오 스트리밍이 있는 HTTPS 웹 사이트가 있는 경우 스트리밍이 좋습니다.
 * HTTPS 비디오 스트리밍이 있는 HTTP 웹 사이트가 있는 경우 스트리밍은 문제가 없으며 웹 브라우저에서 혼합 콘텐츠 문제가 발생하지 않습니다.
 
-DASH는 국제 표준이고 HLS는 Apple 표준입니다. 둘 다 응용 비디오 스트리밍에 사용됩니다. 또한 두 기술 모두 네트워크 대역폭 용량에 따라 자동으로 재생을 조정합니다. 또한 고객이 나머지 비디오가 다운로드될 때까지 기다릴 필요 없이 비디오의 어느 지점으로든 &quot;검색&quot;할 수 있습니다.
+DASH는 국제 표준이고 HLS은 Apple 표준입니다. 둘 다 응용 비디오 스트리밍에 사용됩니다. 또한 두 기술 모두 네트워크 대역폭 용량에 따라 자동으로 재생을 조정합니다. 또한 고객이 나머지 비디오가 다운로드될 때까지 기다릴 필요 없이 비디오의 어느 지점으로든 &quot;검색&quot;할 수 있습니다.
 
 점진적 비디오는 사용자의 데스크탑 시스템 또는 모바일 디바이스에 로컬로 비디오를 다운로드 및 저장하여 전달됩니다.
 
@@ -198,7 +200,7 @@ DASH는 국제 표준이고 HLS는 Apple 표준입니다. 둘 다 응용 비디�
   <tr>
    <td>데스크탑</td>
    <td>Internet Explorer 11+</td>
-   <td>Windows® 8 및 Windows® 10의 경우 - DASH 또는 HLS가 요청될 때마다 HTTPS를 강제 사용합니다. 알려진 제한 사항: DASH 또는 HLS의 HTTP가 이 브라우저/운영 체제 조합에서 작동하지 않습니다.<br /> <br /> Windows® 7 - 점진적 다운로드. HTTP와 HTTPS 프로토콜에 표준 논리를 사용합니다.</td>
+   <td>Windows® 8 및 Windows® 10의 경우 - DASH 또는 HLS이 요청될 때마다 HTTPS를 강제 사용합니다. 알려진 제한 사항: DASH 또는 HLS의 HTTP는 이 브라우저/운영 체제 조합에서 작동하지 않습니다.<br /> <br /> Windows® 7 - 점진적 다운로드. HTTP와 HTTPS 프로토콜에 표준 논리를 사용합니다.</td>
   </tr>
   <tr>
    <td>데스크탑</td>
@@ -284,16 +286,16 @@ Dynamic Media을 사용하도록 설정하고 비디오 Cloud Service을 설정�
 
 비디오 파일을 인코딩할 때 가능한 한 높은 품질의 소스 비디오 파일을 사용하십시오. 이전에 인코딩된 비디오 파일은 이미 압축되어 있으므로 이 파일을 사용하지 마십시오. 이후에 인코딩하면 품질이 낮은 비디오가 만들어집니다.
 
-* Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25 x 25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
+* Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25×25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
 * 각각 최대 15GB인 기본 소스 비디오 파일을 업로드할 수 있습니다.
 
 다음 표에서는 소스 비디오 파일을 인코딩하기 전에 권장되는 크기, 종횡비 및 최소 비트율에 대해 설명합니다.
 
 | 크기 | 종횡비 | 최소 비트 전송률 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 대부분의 비디오에 대해 4,500kbps입니다. |
-| 1280 X 720 | 16:9 | 비디오의 움직임 양에 따라 3000 - 6000kbps입니다. |
-| 1920 X 1080 | 16:9 | 비디오의 움직임 양에 따라 6000 - 8000kbps입니다. |
+| 1024×768 | 4:3 | 대부분의 비디오에 대해 4,500kbps입니다. |
+| 1280×720 | 16:9 | 비디오의 움직임 양에 따라 3000 - 6000kbps입니다. |
+| 1920년 × 1080년 | 16:9 | 비디오의 움직임 양에 따라 6000 - 8000kbps입니다. |
 
 ### 파일의 메타데이터 가져오기 {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ width/height = 종횡비
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-예를 들어 1440 너비 x 1080 높이의 비디오에는 1440/1080 또는 1.33의 종횡비가 있습니다. 이 경우 비디오 파일을 인코딩할 종횡비가 4:3인 비디오 인코딩 사전 설정을 선택합니다.
+예를 들어 1440 너비×1080 높이인 비디오의 종횡비는 1440/1080 또는 1.33입니다. 이 경우 비디오 파일을 인코딩할 종횡비가 4:3인 비디오 인코딩 사전 설정을 선택합니다.
 
 ### 비트율 {#bitrate}
 
@@ -354,16 +356,16 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 
 ### 해결 방법 {#resolution}
 
-**해상도**&#x200B;에서는 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도로 저장됩니다(예: 1920 x 1080). 스트리밍을 위해 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축된다.
+**해상도**&#x200B;에서는 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도로 저장된다(예를 들어, 1920 × 1080). 스트리밍 목적을 위해, 소스 비디오는 더 작은 해상도(640 × 480 이하)로 압축된다.
 
-해상도 및 데이터 속도는 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록(해상도가 높을수록) 데이터 전송률이 높아야 합니다. 예를 들어 320 x 240 해상도 및 640 x 480 해상도 비디오 파일의 프레임당 픽셀 수를 생각해 보십시오.
+해상도 및 데이터 속도는 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록(해상도가 높을수록) 데이터 전송률이 높아야 합니다. 예를 들어 320 × 240 해상도 및 640 × 480 해상도 비디오 파일의 프레임당 픽셀 수를 생각해 보십시오.
 
 | 해결 방법 | 프레임당 픽셀 |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320×240 | 76,800 |
+| 640×480 | 307,200 |
 
-640 x 480 파일은 프레임당 픽셀 수가 4배 더 많습니다. 이러한 두 가지 예제 해상도에 대해 동일한 데이터 전송률을 달성하려면 640 x 480 파일에 4배의 압축을 적용하여 비디오의 품질을 낮출 수 있습니다. 따라서 비디오 데이터 속도가 250Kbps이면 320x240 해상도에서는 고화질을 볼 수 있지만 640x480 해상도에서는 고화질을 볼 수 없습니다.
+640 × 480 파일은 프레임당 4배 더 많은 픽셀을 갖습니다. 이러한 두 가지 예제 해상도에 대해 동일한 데이터 전송률을 달성하려면 640 × 480 파일에 4배의 압축을 적용하여 비디오의 품질을 낮출 수 있습니다. 따라서 250Kbps의 비디오 데이터 속도는 640×480 해상도가 아닌 320×240 해상도로 고품질 시청 환경을 만듭니다.
 
 일반적으로 높은 데이터 전송률을 사용할수록 비디오가 더 잘 나타나며, 높은 해상도를 사용할수록 낮은 해상도와 비교하여 보기 품질을 유지해야 하는 데이터 전송률이 높아집니다.
 
@@ -383,6 +385,8 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 | 720p | 720 | 대형 화면 |
 | 1080p | 1080 | HD 대형 화면 |
 
+지원되는 최대 입력 비디오 해상도는 16,384 × 16,384입니다. 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192이다.
+
 ### Fps(초당 프레임) {#fps-frames-per-second}
 
 미국과 일본에서는 대부분의 비디오가 29.97fps로 촬영되며, 유럽에서는 대부분의 비디오가 25fps로 촬영됩니다. 필름은 24fps로 촬영됩니다.
@@ -397,14 +401,14 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 
 결과 비율이 전체 정수인 경우 비디오의 크기가 최적으로 조정됨을 의미합니다. 결과 비율이 전체 정수가 아닌 경우 남은 픽셀 아티팩트를 디스플레이에 남겨 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 두드러집니다.
 
-예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
+예를 들어 소스 비디오가 1920 × 1080이라고 가정합시다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
-| 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
+| 비디오 유형 | 폭 × 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920 x 1080 | 1 | 1 |
-| 인코딩됨 | 960 x 540 | 2 | 2 |
-| 인코딩됨 | 640 x 360 | 3 | 3 |
-| 인코딩됨 | 480 x 270 | 4 | 4 |
+| 소스 | 1920년 × 1080년 | 1 | 1 |
+| 인코딩됨 | 960×540 | 2 | 2 |
+| 인코딩됨 | 640×360 | 3 | 3 |
+| 인코딩됨 | 480×270 | 4 | 4 |
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ Adobe 고객 지원 사례를 만들고 제출하여.
 
 | 기능 | 설명 |
 | --- | --- |
-| 대시 | DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.<br>계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.<ul><li>적응형 비트율 스트리밍을 위한 DASH 스트림 비디오 패키지 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.</li><li>브라우저가 HLS와 DASH 스트리밍 간 전환된 Dynamic Media 플레이어로 스트리밍을 최적화하여 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS로 자동 전환됩니다.</li><li>비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.</li><li>최적화된 비디오 인코딩은 DASH 기능을 활성화하는 동안 추가 저장소가 사용되지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 둘 모두에 대해 단일 비디오 인코딩 세트가 생성된다.</li><li>고객이 보다 쉽게 비디오 게재를 이용할 수 있도록 지원합니다.</li><li>API를 통해 스트리밍 URL도 가져옵니다.</li></ul> |
+| 대시 | DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.<br>계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.<ul><li>적응형 비트율 스트리밍을 위한 DASH 스트림 비디오 패키지 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.</li><li>브라우저가 HLS과 DASH 스트리밍 간 전환되는 Dynamic Media 플레이어로 스트리밍을 최적화하여 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS으로 자동 전환됩니다.</li><li>비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.</li><li>최적화된 비디오 인코딩은 DASH 기능을 활성화하는 동안 추가 저장소가 사용되지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 모두에 대해 단일 비디오 인코딩 세트가 생성된다.</li><li>고객이 보다 쉽게 비디오 게재를 이용할 수 있도록 지원합니다.</li><li>API를 통해 스트리밍 URL도 가져옵니다.</li></ul> |
 | 다중 캡션 및 오디오 트랙 | 여러 캡션 및 오디오 트랙 지원을 자동으로 활성화할 수 있습니다. 활성화한 후 업로드하는 모든 후속 비디오는 비디오에 다중 캡션 및 오디오 트랙을 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다. |
 | AI 생성 캡션(제한된 가용성) | AI에서 제공하는 비디오의 캡션을 만듭니다. AI를 사용하여 비디오 트랜스크립트를 만들고 캡션으로 변환합니다. 타임라인도 정의되었습니다. |
 
@@ -1097,7 +1101,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
 >[!NOTE]
 >
->사용되는 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
+>사용된 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
