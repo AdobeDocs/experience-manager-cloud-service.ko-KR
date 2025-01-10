@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 45%
+source-wordcount: '1812'
+ht-degree: 42%
 
 ---
 
@@ -174,7 +174,7 @@ New Relic에서 이메일을 받지 못한 경우 다음을 수행하십시오.
 New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우, 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
-* New Relic에 추가된 사용자의 유형은 **제한됨**&#x200B;입니다. 자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)를 참조하세요.
+* New Relic에 추가된 사용자의 유형은 **제한됨**&#x200B;입니다. 자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)를 참조하세요.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
 >[!NOTE]
@@ -193,15 +193,15 @@ Adobe는 New Relic One의 Java 플러그인을 통해 AEM as a Cloud Service, �
 
 New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있으며 여러 애플리케이션에서 보고를 받습니다(AEM as a Cloud Service 환경당 3개).
 
-* 환경당 작성자 서비스용 애플리케이션 1개
-* 환경당 게시 서비스용 애플리케이션 1개 (Golden Publish 포함)
+* 환경당 Author 서비스용 애플리케이션 1개
+* 환경당 `Publish` 서비스에 대한 응용 프로그램 1개(Golden Publish 포함)
 * 환경당 미리보기 서비스용 애플리케이션 1개
 
 메모:
 
 * 각 애플리케이션은 하나의 라이선스 키를 사용합니다.
 * AEM as a Cloud Service 환경은 하나의 New Relic One 계정에만 보고합니다.
-* New Relic One에 대한 전체 모니터링 지표 및 이벤트는 7일 동안 유지됩니다.
+* 두 New Relic One에 대한 전체 모니터링 지표 및 이벤트는 3개월 동안 유지됩니다. &lt;!— CQDOC-22238 - 7일에서 3개월로 업데이트됨. >
 +++
 
 +++**Adobe이 New Relic One에서 경고 알림을 전송합니까?** {#alerting-new-relic}
