@@ -4,16 +4,16 @@ description: Assets 보기의 빠른 Publish을 사용하면 자산을 AEM 및 D
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
 
 # AEM 및 Dynamic Media에 자산 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets을 사용하면 Assets 보기를 사용하여 자산을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음 관리 보기](/help/assets/overview.md##persona-based-experiences)(으)로 전환하지 않고 [Assets 보기를 사용하여 게시할 수 있습니다.
@@ -29,11 +29,11 @@ AEM 및 Dynamic Media에 대한 게시 옵션을 보려면 다음 설정을 구�
    * [Dynamic Media 클라우드 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
    * 폴더 수준에서 Dynamic Media Publish 모드를 설정합니다. Dynamic Media Cloud 구성을 만드는 동안 이러한 설정을 구성할 수도 있습니다. 폴더 수준에서 이러한 설정을 덮어쓰려면 [Dynamic Media의 폴더 수준에서 선택적 Publish 구성](/help/assets/dynamic-media/selective-publishing.md)을 참조하십시오.
 
-* AEM용 게시 옵션을 보려면 환경에 대해 AEM 게시 끝점을 구성해야 합니다.
+* AEM에 대한 게시 옵션을 보려면 환경에 대한 AEM 게시 끝점을 구성해야 합니다.
 
 ## 업로드 중 Publish Assets {#piblish-assets-during-upload}
 
-폴더에 자산을 업로드하는 동안 AEM 및 Dynamic Media에 자산을 게시할 수 있습니다. 표시되는 게시 옵션은 에셋이 업로드되는 폴더에 설정된 Dynamic Media 게시 모드에 따라 다릅니다. Dynamic Media 게시 모드는 다음과 같이 설정할 수 있습니다.
+폴더에 자산을 업로드하는 동안 AEM 및 Dynamic Media에 자산을 게시할 수 있습니다. 표시되는 게시 옵션은 에셋을 업로드하는 폴더의 Dynamic Media 게시 모드 설정에 따라 다릅니다. Dynamic Media 게시 모드는 다음과 같이 설정할 수 있습니다.
 
 * **활성화 시:** 자산이 이 폴더에 업로드되면 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.
 
@@ -42,7 +42,7 @@ AEM 및 Dynamic Media에 대한 게시 옵션을 보려면 다음 설정을 구�
 
 ### 활성화 시 Dynamic Media Publish 모드로 설정됨 {#dynamic-media-publish-mode-set-to-upon-activation}
 
-Dynamic Media Publish 모드가 **활성화 시**(으)로 설정된 폴더에 업로드하는 동안 자산을 게시하려면:
+Dynamic Media Publish 모드가 **활성화 시**(으)로 설정된 폴더에 자산을 업로드하는 동안 자산을 게시하려면 다음을 수행하십시오.
 
 1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. **Publish 옵션** 섹션에는 **DM Publish 모드**&#x200B;가 **활성화 시**(으)로 표시됩니다.
    ![활성화 시 이미지 업로드](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Dynamic Media Publish 모드가 **활성화 시**(으)로 설정된 폴더에 �
 
 ### Dynamic Media Publish 모드가 즉시 로 설정됨 {#dynamic-media-publish-mode-set-to-immediate}
 
-Dynamic Media Publish 모드가 **즉시**(으)로 설정된 폴더에 업로드하는 동안 자산을 게시하려면:
+Dynamic Media Publish 모드가 **즉시**(으)로 설정된 폴더에 자산을 업로드하는 동안 자산을 게시하려면:
 
-1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. Publish 옵션 섹션에 **DM Publish 모드**&#x200B;가 **즉시**(으)로 표시됩니다.
+1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. **Publish 옵션** 섹션에는 **DM Publish 모드**&#x200B;가 **즉시**(으)로 표시됩니다.
    ![파일 업로드 이미지 - 즉시 모드](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Dynamic Media Publish 모드가 **즉시**&#x200B;이므로 **업로드**&#x200B;를 클릭하면 업로드된 자산이 자동으로 Dynamic Media에 게시됩니다.
 
-2. Publish을 선택하여 **AEMAEM 에 게시**&#x200B;하고 [업로드]를 클릭합니다.
+2. **AEM에 Publish**&#x200B;을(를) 선택하여 업로드된 자산을 AEM에 게시하고 [업로드]를 클릭합니다.
 
    **Publish to AEM**&#x200B;을(를) 선택하면 자산이 AEM 및 Dynamic Media에 게시되고 그렇지 않으면 자산이 Dynamic Media에 게시됩니다.
 
@@ -68,7 +68,7 @@ Dynamic Media Publish 모드가 **즉시**(으)로 설정된 폴더에 업로드
 
 Dynamic Media Publish 모드가 **선택적 Publish**(으)로 설정된 폴더에 업로드하는 동안 자산을 게시하려면:
 
-1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. Publish 옵션 섹션에 **DM Publish 모드**&#x200B;가 **선택적 Publish**(으)로 표시됩니다.
+1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. **Publish 옵션** 섹션에는 **DM Publish 모드**&#x200B;가 **선택적 Publish**(으)로 표시됩니다.
    ![이미지 선택적 게시 모드 업로드](/help/assets/assets/upload-selective.svg)
 
 2. 요구 사항에 따라 **Publish에서 AEM으로**, **Publish에서 Dynamic Media으로** 또는 두 가지 모두를 선택하고 **업로드**&#x200B;를 클릭합니다.
