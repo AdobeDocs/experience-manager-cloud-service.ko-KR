@@ -1,17 +1,17 @@
 ---
-title: 스테이징 및 프로덕션 환경 무시
+title: 저장소 없는 스테이징 및 프로덕션 환경
 description: 리디렉션 방식으로 단일 코드 베이스를 활용하는 스테이징 및 프로덕션 환경에 대해 별도의 사이트를 설정하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 스테이징 및 프로덕션 환경 무시 {#repoless-stage-prod}
+# 저장소 없는 스테이징 및 프로덕션 환경 {#repoless-stage-prod}
 
 리디렉션 방식으로 단일 코드 베이스를 활용하는 스테이징 및 프로덕션 환경에 대해 별도의 사이트를 설정하는 방법에 대해 알아봅니다.
 
@@ -73,7 +73,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

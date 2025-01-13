@@ -1,17 +1,17 @@
 ---
-title: 복수 사이트 관리 무시
+title: 저장소 없는 다중 사이트 관리
 description: Edge Delivery Services이 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 리디렉션 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 복수 사이트 관리 무시 {#repoless-msm}
+# 저장소 없는 다중 사이트 관리 {#repoless-msm}
 
 Edge Delivery Services이 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 리디렉션 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
 
@@ -140,7 +140,7 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
