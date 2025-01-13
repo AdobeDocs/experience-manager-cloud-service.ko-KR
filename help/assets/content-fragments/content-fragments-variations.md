@@ -5,14 +5,14 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2518'
 ht-degree: 52%
 
 ---
 
-# 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
+# 베리에이션 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) Adobe Experience Manager(AEM as a Cloud Service) 콘텐츠 조각의 중요한 기능입니다. 특정 채널 및 시나리오에서 사용할 **기본** 컨텐츠의 복사본을 만들고 편집할 수 있기 때문입니다. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
 
@@ -138,7 +138,7 @@ ht-degree: 52%
 * 들여쓰기: 증가, 감소
 * 하이퍼링크 만들기/제거
 * 텍스트/Word에서 붙여넣기
-* 표 삽입
+* 테이블 삽입
 * 단락 스타일: 단락, 제목 1/2/3
 * [자산 삽입](#inserting-assets-into-your-fragment)
 * 전체 화면 편집기를 엽니다. 여기에서 다음 형식 옵션을 사용할 수 있습니다.
@@ -314,6 +314,10 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 1. 전체 화면 편집기를 닫아도 주석은 여전히 강조 표시됩니다. 선택하면 주석을 추가로 편집할 수 있는 대화 상자가 열립니다.
 
    ![주석](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>주석 기능은 새 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)에 입력한 주석을 표시하지 않습니다.
 
 ### 주석 보기, 편집, 삭제 {#viewing-editing-deleting-annotations}
 

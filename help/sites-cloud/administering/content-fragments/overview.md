@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1857'
+ht-degree: 90%
 
 ---
 
 # 콘텐츠 조각 작업 개요 {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>얼리어답터 프로그램을 통해 콘텐츠 조각 및 콘텐츠 조각 모델의 다양한 기능을 사용할 수 있습니다.
+>
+>상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 [Headless 게재](/help/headless/what-is-headless.md) 및 [페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 
@@ -91,8 +97,11 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 조각이 만들어지면 다음과 같은 작업을 수행할 수 있습니다.
 
-* [콘텐츠 조각 콘솔 사용](/help/sites-cloud/administering/content-fragments/managing.md) - 조각 액세스, (미리보기 또는 프로덕션에) 게시 및 참조
-* [콘텐츠 조각 편집기 사용](/help/sites-cloud/administering/content-fragments/authoring.md) - 조각 편집, (미리보기 또는 프로덕션에) 게시 및 참조
+* [콘텐츠 조각 콘솔 사용](/help/sites-cloud/administering/content-fragments/managing.md) - 방법:
+   * 조각 액세스, 게시(미리보기 또는 프로덕션) 및 참조
+* [콘텐츠 조각 편집기를 사용](/help/sites-cloud/administering/content-fragments/authoring.md) - 다음을 수행할 수 있습니다.
+   * 조각 편집, 게시(미리보기 또는 프로덕션) 및 참조
+   * 주석을 사용하여 다른 작성자와 공동 작업
 * 편집기를 사용하여 콘텐츠 조각의 구조 [분석](/help/sites-cloud/administering/content-fragments/analysis.md)
 * [Headless 방식으로 애플리케이션에 게재하기 위해 GraphQL을 사용하여 조각에 액세스합니다](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [또는 페이지를 작성하는 데 조각을 사용합니다.](/help/sites-cloud/authoring/fragments/content-fragments.md)

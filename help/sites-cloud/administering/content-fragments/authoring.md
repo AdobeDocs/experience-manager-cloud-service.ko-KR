@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 76%
+source-wordcount: '2841'
+ht-degree: 72%
 
 ---
 
 # 콘텐츠 조각 작성 {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>콘텐츠 조각 편집기의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
+>
+>상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 콘텐츠 조각 작성은 Headless 게재와 페이지 작성 모두에 중점을 두고 있습니다.
 
@@ -58,6 +64,7 @@ ht-degree: 76%
    * 이 링크를 사용하여 [콘텐츠 조각 구조 탐색](#navigate-structure)
 * 오른쪽 패널: [속성(메타데이터) 및 태그](#view-properties-tags), [버전 내력](#view-version-history)에 대한 정보와 모든 [언어 사본](#view-language-copies)과 관련된 정보를 표시하는 탭 제공
    * **속성** 탭에서 조각 또는 **변형**&#x200B;에 대한 **제목** 및 **설명**&#x200B;을 업데이트할 수 있습니다.
+   * **댓글** 탭에서 다른 작성자와 공동 작업하는 데 도움이 되는 댓글을 추가하고 읽을 수 있습니다
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
       * 모델에 복수로 구성된 경우 다양한 데이터 형식을 사용하면 관련 필드의 인스턴스를 **추가**&#x200B;할 수 있습니다
@@ -466,6 +473,25 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 >
 >콘텐츠 조각 번역과 언어 사본 만들기에 대한 자세한 내용은 [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md)을 참조하십시오.
 
+## 조각에 대한 댓글 달기 {#commenting-on-your-fragment}
+
+오른쪽 패널의 **설명** 탭은 다음 기능을 제공합니다.
+
+* 새 댓글 추가
+* 댓글에 특정 사용자에 태그 지정
+   * 방문자는 조각을 직접 열 수 있는 링크가 포함된 알림을 받게 됩니다
+* 기존 댓글과 유사
+* 댓글에 회신
+* 주석의 서식을 지정합니다. 기본 서식을 사용할 수 있습니다.
+* 기존 주석을 통해 텍스트 검색 수행
+* 기존 주석 편집
+* 댓글 삭제
+
+![콘텐츠 조각 편집기 - 댓글 탭](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>이러한 주석은 원래 편집기에서 [주석](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) 또는 Assets 콘솔의 [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에 표시되지 않습니다.
 
 ## 조각 미리보기 {#preview-content-fragment}
 

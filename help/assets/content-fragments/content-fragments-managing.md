@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 75%
+source-wordcount: '1907'
+ht-degree: 74%
 
 ---
 
@@ -313,6 +313,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >* 조각 편집기에서 입력됩니다.
 >* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
+>새 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)에 입력한 댓글을 표시하지 않습니다.
 
 예:
 
