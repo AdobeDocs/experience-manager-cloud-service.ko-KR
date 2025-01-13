@@ -6,7 +6,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
+source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 사용자가 AEM as a Cloud Service에 로그인하거나 액세스 토큰을 사용할 때마다 Adobe Admin Console 사용자 그룹, 제품 프로필 및 제품 프로필 서비스는 그룹으로 AEM 저장소에 동기화됩니다.
 
-1월 28일에 UI가 복잡해지고 성능이 최적화되기 위해 동기화 동작이 일부 변경되어 AEM에 표시되는 그룹이 줄어듭니다. AEM 그룹의 두 가지 카테고리가 제거됩니다.
+1월 27일에 UI가 복잡해지고 성능이 최적화되기 위해 동기화 동작이 일부 변경되어 AEM에 표시되는 그룹이 줄어듭니다. AEM 그룹의 두 가지 카테고리가 제거됩니다.
 
 1. 접미사가 `GROUP_NAME_SUFFIX`인 AEM 그룹. 이러한 그룹은 Adobe Developer Console에는 표시되지 않지만 아래와 같이 AEM 그룹 관리 화면에는 표시됩니다. AEM 애플리케이션이 이러한 그룹을 참조하는 경우에는 대신 해당 접미사 없이 Adobe Admin Console 사용자 그룹을 참조해야 합니다.
 
