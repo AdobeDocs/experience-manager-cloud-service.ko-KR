@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
+source-wordcount: '10560'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 2%
 
    * 나만의 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
-      * [비디오 인코딩 프로필 만들기](/help/assets/dynamic-media/video-profiles
-      * 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)입니다.
+      * [비디오 인코딩 프로필을 만듭니다](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192.md입니다.
       * [비디오 인코딩 모범 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보세요.
 
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.

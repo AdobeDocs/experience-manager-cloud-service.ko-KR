@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 80%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 79%
 
 ## 코드 품질 규칙 {#understanding-code-quality-rules}
 
-코드 품질 테스트는 소스 코드를 스캔하여 특정 품질 기준을 충족하는지 확인합니다. SonarQube와 OakPAL을 사용한 콘텐츠 패키지 수준 검사의 조합은 이 단계를 구현합니다. 일반적인 Java 규칙과 AEM별 규칙을 결합한 100개 이상의 규칙이 있습니다. AEM 관련 규칙 중 일부는 AEM 엔지니어링의 모범 사례를 기반으로 생성되며 [사용자 정의 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)이라고 합니다.
+코드 품질 테스트는 소스 코드를 스캔하여 특정 품질 기준을 충족하는지 확인합니다. SonarQube와 OakPAL을 사용한 콘텐츠 패키지 수준 검사의 조합은 이 단계를 구현합니다. 일반적인 Java 규칙과 AEM 관련 규칙을 결합한 100개 이상의 규칙이 있습니다. 일부 AEM 관련 규칙은 AEM 엔지니어링의 모범 사례를 기반으로 하며 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)이라고 합니다.
 
-[이 링크를 사용하여](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)현재 전체 규칙 목록을 다운로드할 수 있습니다.
+[이 링크](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)를 사용하여 규칙의 최신 전체 목록을 다운로드할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -55,7 +55,7 @@ ht-degree: 79%
 
 이 단계의 결과는 **등급**&#x200B;으로 전달됩니다.
 
-다음 표에는 심각, 중요 및 정보 범주 각각에 대한 등급 및 오류 임계값이 요약되어 있습니다.
+다음 테이블에는 심각, 중요 및 정보 범주 각각에 대한 등급 및 오류 임계값이 요약되어 있습니다.
 
 | 이름 | 정의 | 범주 | 오류 임계값 |
 |--- |--- |--- |--- |
