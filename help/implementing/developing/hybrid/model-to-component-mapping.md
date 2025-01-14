@@ -1,10 +1,10 @@
 ---
 title: SPA용 동적 모델과 구성 요소 간 매핑
-description: 이 문서에서는 AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법에 대해 설명합니다.
+description: 이 문서에서는 JavaScript SPA SDK for AEM에서 동적 모델과 구성 요소 간 매핑이 발생하는 방식을 설명합니다.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # SPA용 동적 모델과 구성 요소 간 매핑 {#dynamic-model-to-component-mapping-for-spas}
 
-이 문서에서는 AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방식을 설명합니다.
+이 문서에서는 JavaScript SPA SDK for AEM에서 동적 모델과 구성 요소 간 매핑이 발생하는 방식을 설명합니다.
+
+{{ue-over-spa}}
 
 ## ComponentMapping 모듈 {#componentmapping-module}
 
@@ -27,7 +29,7 @@ npm 패키지 [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@
 
 ## 모델 기반 단일 페이지 애플리케이션 {#model-driven-single-page-application}
 
-AEM용 JavaScript SPA SDK를 사용하는 단일 페이지 애플리케이션은 모델 기반의 애플리케이션입니다.
+JavaScript SPA SDK for AEM을 사용하는 단일 페이지 애플리케이션은 모델 기반의 애플리케이션입니다.
 
 1. 프론트엔드 구성 요소가 [구성 요소 매핑 저장소](#componentmapping-module)에 등록됩니다.
 1. [모델 공급자](blueprint.md#the-model-provider)에서 모델을 제공하면 [컨테이너](blueprint.md#container)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.

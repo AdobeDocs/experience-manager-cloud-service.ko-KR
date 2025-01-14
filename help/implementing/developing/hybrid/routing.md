@@ -4,7 +4,7 @@ description: AEM의 단일 페이지 애플리케이션의 경우 앱이 라우�
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA 모델 라우팅{#spa-model-routing}
 
 AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당합니다. 이 문서에서는 경로지정 메커니즘, 계약 및 사용 가능한 옵션에 대해 설명합니다.
+
+{{ue-over-spa}}
 
 ## 프로젝트 라우팅 {#project-routing}
 

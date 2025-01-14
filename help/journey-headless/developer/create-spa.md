@@ -5,9 +5,9 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1250'
 ht-degree: 100%
 
 ---
@@ -127,7 +127,6 @@ AEM에서 SPA 주제에 대해 자세히 살펴볼 수 있는 [추가 리소스]
 * [SPA 소개 및 워크스루](/help/implementing/developing/hybrid/introduction.md) - AEM의 SPA에 대한 소개
 * [AEM용 SPA 개발](/help/implementing/developing/hybrid/developing.md) - AEM용 SPA를 개발하는 방법에 대한 지침
 * [SPA 편집기 개요](/help/implementing/developing/hybrid/editor-overview.md) - SPA 편집기의 작동 방식에 대한 세부 정보
-* [서버측 렌더링](/help/implementing/developing/hybrid/ssr.md) - AEM SPA용 SSR을 구성하는 방법
 * [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md) - 오픈 소스 AEM SPA GitHub 프로젝트에 대한 JavaScript API 참조 및 링크
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 콘텐츠 조각을 만드는 방법
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿

@@ -4,7 +4,7 @@ description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -16,6 +16,8 @@ ht-degree: 93%
 SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합한 멋진 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 작성하려고 하며 작성자는 해당 프레임워크를 통해 빌드된 사이트의 AEM 내에서 콘텐츠를 원활하게 편집하려고 합니다.
 
 SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합니다. 이 페이지에서는 AEM에서 SPA 지원이 구조화되는 방식, SPA 편집기가 작동하는 방식, SPA 프레임워크와 AEM이 동기화되는 방식에 대한 개요를 제공합니다.
+
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 

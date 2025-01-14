@@ -4,7 +4,7 @@ description: 프로젝트 설정, 구성 요소 매핑, 프론트엔드 개발 �
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # WKND SPA 프로젝트 {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 프로젝트 설정, 구성 요소 매핑, 프론트엔드 개발 도구 및 애플리케이션 라우팅을 안내하는 이 멀티 파트 튜토리얼을 통해 SPA 개발에 몰두하여 고유한 SPA을 구현할 수 있습니다.
 

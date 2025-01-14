@@ -4,7 +4,7 @@ description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 6%
@@ -20,6 +20,8 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 >[!NOTE]
 >
 >이 문서는 Angular 프레임워크를 기반으로 합니다. React 프레임워크에 대한 해당 문서는 AEM - React에서 [SPA 시작하기](getting-started-react.md)를 참조하십시오.
+
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 
@@ -278,4 +280,4 @@ AEM에서 SPA의 핵심 아이디어는 SPA 구성 요소를 AEM 구성 요소�
 * [SPA 편집기 개요](editor-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
 * [WKND SPA 프로젝트](wknd-tutorial.md)는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
 * [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md)은(는) 동적 모델과 구성 요소 간 매핑과 AEM의 SPA 내에서 작동하는 방식을 설명합니다.
-* [SPA 블루프린트](blueprint.md)에서는 React 또는 Angular 이외의 프레임워크에 대해 SPAAEM 를 구현하거나 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK의 작동 방식에 대해 자세히 알아봅니다.
+* [SPA 블루프린트](blueprint.md)에서는 React 또는 Angular 이외의 프레임워크에 대해 AEM에서 SPA을 구현하거나 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK의 작동 방식에 대해 자세히 알아봅니다.

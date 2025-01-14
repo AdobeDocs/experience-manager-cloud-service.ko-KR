@@ -4,7 +4,7 @@ description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요�
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 # SPA 블루프린트 {#spa-blueprint}
 
 작성자가 AEM SPA Editor를 사용하여 SPA의 콘텐츠를 편집할 수 있도록 SPA이 충족해야 하는 요구 사항이 있습니다.
+
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 

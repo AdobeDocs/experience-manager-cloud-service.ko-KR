@@ -4,7 +4,7 @@ description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML �
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 # SPA 페이지 구성 요소 {#spa-page-component}
 
 SPA에 대한 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 오브젝트를 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소의 표현은 JSON 데이터 구조(즉, 모델)로 가져옵니다. 그런 다음 제공된 JSON 모델에 따라 SPA 구성 요소가 페이지에 추가됩니다. 따라서 페이지 구성 요소의 초기 본문 컴포지션은 사전 렌더링된 HTML 구성 요소와 다릅니다.
+
+{{ue-over-spa}}
 
 ## 페이지 모델 관리 {#page-model-management}
 

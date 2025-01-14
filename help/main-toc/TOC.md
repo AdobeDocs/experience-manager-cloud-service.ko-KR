@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '5957'
+source-wordcount: '5954'
 ht-degree: 99%
 
 ---
@@ -1214,6 +1214,7 @@ ht-degree: 99%
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
+      + [Sling 모델 내보내기 도구를 통한 ResourceResolver 직렬화 비활성화](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + 전체 스택 AEM 개발 {#full-stack}
          + [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 구조](/help/implementing/developing/introduction/ui-structure.md)
@@ -1278,11 +1279,9 @@ ht-degree: 99%
          + [RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md)
          + [AEM에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA의 복합 구성 요소](/help/implementing/developing/hybrid/composite-components.md)
-         + [서버측 렌더링](/help/implementing/developing/hybrid/ssr.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [실행 통합](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Sling 모델 내보내기 도구를 통한 ResourceResolver 직렬화 비활성화](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 개발자 도구 {#developer-tools}
       + [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)

@@ -4,7 +4,7 @@ description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -15,9 +15,11 @@ ht-degree: 1%
 
 Adobe Experience Platform Launch은 단일 페이지 애플리케이션(SPA) 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 
+{{ue-over-spa}}
+
 ## 튜토리얼 {#tutorial}
 
-SPA을 Adobe Experience Platform Launch과 통합하는 방법을 이해하려면 이 [기술 자료 문서 및 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)을 참조하세요. Launch 설정 및 Angular 또는 React로 빌드된 Experience Cloud 구현에 대해 안내할 수 있습니다.
+SPA을 Adobe Experience Platform Launch과 통합하는 방법을 이해하려면 이 [기술 자료 문서 및 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)을 참조하세요. Launch 설정 및 Angular 또는 React로 빌드된 Experience Cloud 구현에 대해 안내할 수 있습니다.
 
 >[!NOTE]
 >

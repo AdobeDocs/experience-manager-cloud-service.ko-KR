@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: ht
-source-wordcount: '1323'
-ht-degree: 100%
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # 스니펫 {#snippets}
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 ## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간 차이점 {#rule-editor-diff}
 
-다음 표에서는 규칙 편집기의 핵심 구성 요소와 규칙 편집기의 기본 구성 요소에서 사용할 수 있는 기능 간의 차이점을 보여 줍니다.
+다음 테이블에서는 규칙 편집기의 핵심 구성 요소와 규칙 편집기의 기본 구성 요소에서 사용할 수 있는 기능 간의 차이점을 보여 줍니다.
 
 <table>
   <tbody>
@@ -232,3 +232,11 @@ ht-degree: 100%
    * 라이브 웹 사이트의 URL. 예: `www.mydomain.com`.
    * 원본 웹 사이트의 URL(`.hlx` URL).
 
+## 범용 편집기가 SPA 편집기보다 선호됩니다. {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>SPA 편집기는 Adobe에서 계속 지원되지만 AEM에서 headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
+>
+>* Headless 콘텐츠를 시각적으로 편집하기 위한 [유니버설 편집기](/help/edge/wysiwyg-authoring/authoring.md).
+>* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md).

@@ -4,9 +4,9 @@ description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # AEM에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
 외부 SPA과 AEM 간에 [어떤 수준의 통합을 원할지](/help/implementing/developing/headful-headless.md)을 결정할 때 AEM 내에서 SPA을 자주 편집하고 볼 수 있어야 한다고 생각하십시오.
+
+{{ue-over-spa}}
 
 ## 개요 {#overview}
 
@@ -79,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 * `path` - 초기화 시 정의된 경로의 모델을 가져와서 `ModelStore`에 저장합니다. 필요한 경우 이 경로를 사용하여 초기화 시 `rootModel`을(를) 가져올 수 있습니다.
 * `modelClient` - 모델 가져오기를 담당하는 사용자 지정 클라이언트를 제공할 수 있습니다.
-* `model` - `model` 개체가 일반적으로 [SSR을 사용](/help/implementing/developing/hybrid/ssr.md)할 때 채워진 매개 변수로 전달됩니다.
+* `model` - SSR을 사용할 때 일반적으로 채워지는 매개 변수로 전달된 `model` 개체입니다.
 
 ### AEM Authorable Leaf 구성 요소 {#authorable-leaf-components}
 
@@ -370,9 +372,8 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)
+* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA 블루프린트 및 PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA 모델 라우팅](/help/implementing/developing/hybrid/routing.md)
-* [SPA 및 서버측 렌더링](/help/implementing/developing/hybrid/ssr.md)

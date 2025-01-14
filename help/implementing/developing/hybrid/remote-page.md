@@ -4,7 +4,7 @@ description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편�
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 # RemotePage 구성 요소 {#remote-page-component}
 
 외부 SPA과 AEM 간에 [어떤 수준의 통합을 원할지](/help/implementing/developing/headful-headless.md)를 결정할 때 AEM 내에서 SPA을 보고 편집할 수 있어야 하는 경우가 많습니다. RemotePage 구성 요소는 이를 위한 사용자 지정 페이지 구성 요소입니다.
+
+{{ue-over-spa}}
 
 ## 개요 {#overview}
 
