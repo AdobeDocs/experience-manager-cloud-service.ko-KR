@@ -4,15 +4,15 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# AEM Forms과 Marketo Engage 통합
+# AEM Forms와 Marketo Engage 통합
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
@@ -66,24 +66,26 @@ AEM Forms과 Marketo Engage을 연결하기 위한 사전 요구 사항은 다�
 
 ![워크플로](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 클라우드 구성은 Experience Manager 인스턴스를 Adobe Marketo Engage 인스턴스에 연결합니다. Marketo Engage 클라우드 구성을 만들려면 다음 단계를 수행하십시오.
 
 1. **도구** > **Cloud Service** > **Marketo Engage**(으)로 이동합니다.
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. 구성을 호스팅할 폴더를 열고 **만들기**&#x200B;를 클릭합니다. **Marketo Engage 구성 만들기** 창이 나타납니다.
+2. 구성을 호스팅할 폴더를 열고 **만들기**&#x200B;를 클릭합니다. **Marketo Engage 구성 만들기** 창이 나타납니다.
 
    >[!NOTE]
    >
    > [클라우드 서비스 구성에 대한 폴더를 구성](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations)할 수도 있습니다.
 
-1. 서비스에 연결할 구성 및 자격 증명의 **제목**&#x200B;을 지정하십시오. Adobe Marketo Engage 대시보드에서 인증 자격 증명을 검색할 수 있습니다.
+3. 서비스에 연결할 구성 및 자격 증명의 **제목**&#x200B;을 지정하십시오. Adobe Marketo Engage 대시보드에서 인증 자격 증명을 검색할 수 있습니다.
    * **클라이언트 ID** 및 **클라이언트 암호**&#x200B;은(는) 사용자 지정 서비스를 선택하고 **세부 정보 보기**&#x200B;를 클릭하여 **관리자** > **통합** > **LaunchPoint**&#x200B;에서 사용할 수 있습니다.
    * **ID URL**&#x200B;은(는) **관리자** > **통합** > **웹 서비스**&#x200B;에서 **REST API** 섹션의 **ID**(으)로 사용할 수 있습니다.
 
-1. **연결**&#x200B;을 클릭합니다.  연결이 완료되면 `Authentication Successful` 메시지가 나타납니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭하여 클라우드 구성 설정을 저장합니다.
+4. **연결**&#x200B;을 클릭합니다.  연결이 완료되면 `Authentication Successful` 메시지가 나타납니다.
+5. **[!UICONTROL 만들기]**&#x200B;를 클릭하여 클라우드 구성 설정을 저장합니다.
 
 ![Marketo Engage 클라우드 구성](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -102,6 +104,3 @@ Adobe Marketo Engage을 AEM Forms과 통합하기 위한 클라우드 서비스 
 ## 추가 참조
 
 {{marketo-engage-see-also}}
-
-
-

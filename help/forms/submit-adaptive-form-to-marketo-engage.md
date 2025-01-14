@@ -4,15 +4,15 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
-
-# Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.
+# 기존 양식의 Marketo Engage에 대한 제출 액션 구성
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
@@ -34,13 +34,15 @@ ht-degree: 7%
 
 ## 기존 양식의 Marketo Engage에 제출 액션을 구성하는 방법
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 적응형 양식의 제출 액션을 구성하여 Adobe Marketo Engage에 데이터를 제출할 수 있습니다. 제출 액션을 Marketo Engage으로 구성하려면 다음 단계를 수행하십시오.
 
 1. 편집할 적응형 양식을 엽니다.
-1. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
-1. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 제출 액션을 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
-1. **[!UICONTROL 제출]** 탭을 열고 제출 액션을 **Marketo Engage에 제출**(으)로 선택합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+2. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
+3. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 제출 액션을 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
+4. **[!UICONTROL 제출]** 탭을 열고 제출 액션을 **Marketo Engage에 제출**(으)로 선택합니다.
+5. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ![Marketo 제출 액션](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 

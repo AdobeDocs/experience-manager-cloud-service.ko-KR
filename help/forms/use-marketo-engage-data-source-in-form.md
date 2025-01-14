@@ -4,15 +4,15 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-# 기존 적응형 Forms에 대한 Marketo Engage 데이터 소스 구성
+# 기존 적응형 양식의 Marketo Engage 데이터 소스 구성
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
@@ -36,16 +36,18 @@ Marketo Engage을 기존 AEM Forms과 통합하기 위한 클라우드 서비스
 
 ## Marketo Engage 데이터 소스에 대해 기존 적응형 양식을 구성하는 방법
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 Marketo Engage 데이터 소스로 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다.
 
-1. 편집할 적응형 양식을 엽니다.
-1. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
-1. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 데이터 소스를 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
-1. **[!UICONTROL 데이터 모델]** 탭을 열고 양식 모델을 **커넥터**(으)로 선택합니다.
-1. 드롭다운 목록에서 **[!UICONTROL 커넥터]**&#x200B;를 선택합니다.
+2. 편집할 적응형 양식을 엽니다.
+3. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
+4. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 데이터 소스를 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
+5. **[!UICONTROL 데이터 모델]** 탭을 열고 양식 모델을 **커넥터**(으)로 선택합니다.
+6. 드롭다운 목록에서 **[!UICONTROL 커넥터]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 커넥터]**&#x200B;를 선택한 후 클라우드 구성을 선택할 수 있습니다.
+7. **[!UICONTROL 커넥터]**&#x200B;를 선택한 후 클라우드 구성을 선택할 수 있습니다.
 
    ![Marketo 커넥터 선택](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ Marketo Engage 데이터 소스로 적응형 양식을 구성하려면 다음 �
 
    ![Marketo 데이터 Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+8. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 또는 적응형 양식 속성을 편집하여 관련 구성을 변경할 수도 있습니다.
 
@@ -81,5 +83,3 @@ Marketo Engage 데이터 소스로 적응형 양식을 구성하려면 다음 �
 ## 추가 참조
 
 {{marketo-engage-see-also}}
-
-
