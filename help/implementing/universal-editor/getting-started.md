@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 62%
+source-wordcount: '956'
+ht-degree: 41%
 
 ---
 
@@ -119,6 +119,51 @@ Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## 범용 편집기를 열 컨텐츠 경로 또는 `sling:resourceType`을(를) 정의합니다. (선택 사항) {#content-paths}
+
+콘텐츠 작성자가 페이지를 편집할 때 [페이지 편집기,](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열려야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업할 수 있습니다.
+
+1. 구성 관리자를 엽니다.
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. 목록에서 **유니버설 편집기 URL 서비스**&#x200B;를 찾은 다음 **구성 값 편집**&#x200B;을 클릭합니다.
+
+1. 범용 편집기를 열 컨텐츠 경로 또는 `sling:resourceType`을(를) 정의합니다.
+
+   * **유니버설 편집기 열기 매핑** 필드에서 유니버설 편집기를 열 경로를 제공합니다.
+   * **범용 편집기에서 여는 Sling:resourceTypes** 필드에 유니버설 편집기에서 직접 여는 리소스 목록을 제공합니다.
+
+1. **저장**&#x200B;을 클릭합니다.
+
+AEM은 이 구성을 기반으로 하는 페이지용 범용 편집기를 다음 순서로 엽니다.
+
+1. AEM이 `Universal Editor Opening Mapping`에서 매핑을 확인하고 콘텐츠가 정의된 경로에 있는 경우 유니버설 편집기가 열립니다.
+1. `Universal Editor Opening Mapping`에 정의된 경로에 없는 콘텐츠의 경우, AEM은 콘텐츠의 `resourceType`이(가) 유니버설 편집기에서 열어야 하는 **Sling:resourceTypes에 정의된 유형과 일치하는지 확인**&#x200B;하고, 콘텐츠가 그러한 유형 중 하나와 일치하면 `${author}${path}.html`에 유니버설 편집기가 열립니다.
+1. 그렇지 않으면 AEM에서 페이지 편집기를 엽니다.
+
+**범용 편집기 열기 매핑** 필드에서 매핑을 정의하는 데 다음 변수를 사용할 수 있습니다.
+
+* `path`: 열 리소스의 콘텐츠 경로
+* `localhost`: 스키마 없이 `localhost`에 대한 외부화 항목(예: `localhost:4502`)
+* `author`: 스키마 없는 작성자에 대한 외부화 항목(예: `localhost:4502`)
+* `publish`: 스키마 없이 게시하기 위한 외부화 항목(예: `localhost:4503`)
+* `preview`: 스키마 없이 미리 보기하기 위한 외부화 항목(예: `localhost:4504`)
+* `env`: 정의된 Sling 실행 모드를 기반으로 하는 `prod`, `stage`, `dev`
+* `token`: `QueryTokenAuthenticationHandler`에 필요한 쿼리 토큰
+
+### 예제 매핑 {#example-mappings}
+
+* AEM 작성자의 `/content/foo`에서 모든 페이지를 엽니다.
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * `https://localhost:4502/content/foo/x.html?login-token=<token>`을(를) 엽니다.
+
+* 원격 NextJS 서버에서 `/content/bar`의 모든 페이지를 열고 모든 변수를 정보로 제공합니다.
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`을(를) 엽니다.
 
 ## Universal Editor를 사용할 준비 완료 {#youre-ready}
 
