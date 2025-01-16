@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -41,39 +41,7 @@ ht-degree: 1%
 
 ### 구성 요소 필터링 {#filtering-components}
 
-유니버설 편집기를 사용하는 경우 컨테이너 구성 요소별로 허용된 구성 요소를 제한할 수 있습니다. 이렇게 하려면 필터 정의를 가리키는 추가 스크립트 태그를 도입해야 합니다.
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-필터 정의는 다음과 같을 수 있으며, 이렇게 하면 텍스트 및 이미지 추가만 허용하도록 컨테이너가 제한됩니다.
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-그런 다음 `data-aue-filter` 속성을 추가하고 이전에 정의한 필터의 ID를 전달하여 컨테이너 구성 요소에서 필터 정의를 참조할 수 있습니다.
-
-```html
-data-aue-filter="container-filter"
-```
-
-필터 정의의 `components` 특성을 `null`(으)로 설정하면 필터가 없는 것처럼 모든 구성 요소가 허용됩니다.
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+구성 요소 필터를 사용하여 유니버설 편집기에서 컨테이너당 허용된 구성 요소를 제한할 수 있습니다. 자세한 내용은 [구성 요소 필터링](/help/implementing/universal-editor/filtering.md) 문서를 참조하십시오.
 
 ### [속성] 패널에서 구성 요소를 조건부로 표시 및 숨기기 {#conditionally-hide}
 
@@ -120,7 +88,7 @@ data-aue-filter="container-filter"
 
 [편집기의 오른쪽 상단 도구 모음에서 **페이지 열기** 단추를 클릭하면 열리는 `urn:adobe:aue:config:preview` 메타 구성을 통해 사용자 지정 미리 보기 URL을 지정할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-이 기능은 [WYSIWYG 작성에 Edge Delivery Services 사용](/help/edge/wysiwyg-authoring/authoring.md)과 같이 특정 미리 보기 요구 사항이 있는 응용 프로그램에 특히 유용합니다.
+이 기능은 [WYSIWYG 작성 시 Edge Delivery Services를 사용하는](/help/edge/wysiwyg-authoring/authoring.md) 애플리케이션과 같이 특정 미리보기 요구 사항이 있는 애플리케이션에 특히 유용합니다.
 
 이렇게 하려면 다음 예제와 같이 원하는 미리보기 URL을 계측된 앱의 메타 태그에 포함하기만 하면 됩니다.
 

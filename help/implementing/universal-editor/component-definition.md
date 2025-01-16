@@ -3,13 +3,13 @@ title: 구성 요소 정의
 description: 구성 요소 정의와 유니버설 편집기 간의 JSON 계약에 대해 자세히 알아봅니다.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 구성 요소 정의 {#component-definition}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 * `title`은(는) UI에 표시되는 구성 요소의 텍스트 설명을 정의합니다.
 * `id`은(는) 구성 요소를 고유하게 식별합니다.
    * 같은 `id`의 [구성 요소 모델](/help/implementing/universal-editor/field-types.md#model-structure)은(는) 구성 요소의 필드를 정의합니다.
-   * 이는 고유하므로 예를 들어 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에서 컨테이너에 추가할 수 있는 구성 요소를 결정하는 데 사용할 수 있습니다.
+   * 이는 고유하므로 예를 들어 [필터 정의](/help/implementing/universal-editor/filtering.md)에서 컨테이너에 추가할 수 있는 구성 요소를 결정하는 데 사용할 수 있습니다.
 
 ## `plugins` {#plugins}
 

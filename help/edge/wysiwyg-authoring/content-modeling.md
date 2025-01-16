@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트에서 WYSIWYG 작성을 위한 
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 모든 블록에 모델이 있어야 하는 것은 아닙니다. 일부 블록은 단순히 하위 목록을 위한 [컨테이너](#container)이며, 각 하위 항목에는 자체 모델이 있습니다.
 
-또한 범용 편집기를 사용하여 어떤 블록이 존재하고 페이지에 추가될 수 있는지를 정의해야 합니다. [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) 파일에는 유니버설 편집기에서 사용할 수 있는 구성 요소가 나열됩니다.
+또한 범용 편집기를 사용하여 어떤 블록이 존재하고 페이지에 추가될 수 있는지를 정의해야 합니다. [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) 파일에는 범용 편집기에서 사용할 수 있는 구성 요소가 나열되어 있습니다.
 
 ```json
 {
@@ -113,7 +113,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
    * 블록 이름은 블록을 장식하는 데 적합한 스타일과 스크립트를 가져오는 데 사용됩니다.
 * [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)를 정의할 수 있습니다.
    * 모델 ID는 속성 패널에서 작성자가 사용할 수 있는 필드를 정의하는 구성 요소 모델에 대한 참조입니다.
-* [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)를 정의할 수 있습니다.
+* [필터 ID](/help/implementing/universal-editor/filtering.md)를 정의할 수 있습니다.
    * 필터 ID는 구성 요소 필터에 대한 참조이며, 이를 통해 작성 동작을 변경할 수 있습니다(예: 블록이나 섹션에 추가할 수 있는 하위 요소 또는 활성화되는 RTE 기능 제한).
 
 페이지에 블록이 추가되면 이 모든 정보가 AEM에 저장됩니다. 리소스 유형이나 블록 이름이 누락되면 해당 블록이 페이지에 렌더링되지 않습니다.
@@ -167,7 +167,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 </div>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 +---------------------------------------------+
@@ -225,7 +225,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 </div>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 +-----------------------------------------------------------------------+
@@ -245,7 +245,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 이전 구조에는 모두 속성 목록이라는 단일 차원이 있습니다. 컨테이너 블록을 사용하면 하위 항목(일반적으로 동일한 유형 또는 모델)를 추가할 수 있으므로 2차원이 됩니다. 이 블록은 먼저 단일 열이 있는 행으로 렌더링되는 자체 속성을 계속 지원합니다. 단, 각 항목이 행으로 렌더링되고 각 속성이 해당 행 내의 열로 렌더링되는 하위 항목 추가도 허용됩니다.
 
-다음 예에서 블록은 연결된 아이콘 목록을 하위 항목으로 허용하며, 연결된 각 아이콘에는 이미지와 링크가 있습니다. 필터 구성을 참조하도록 블록 데이터에 설정된 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)를 확인하십시오.
+다음 예에서 블록은 연결된 아이콘 목록을 하위 항목으로 허용하며, 연결된 각 아이콘에는 이미지와 링크가 있습니다. 필터 구성을 참조하도록 블록 데이터에 설정된 [필터 ID](/help/implementing/universal-editor/filtering.md)를 확인하십시오.
 
 >[!BEGINTABS]
 
@@ -304,7 +304,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 </div>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 +------------------------------------------------------------ +
@@ -375,7 +375,7 @@ Edge Delivery Services를 사용한 WYSIWYG 작성의 경우, 서식 있는 텍�
 </picture>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 ![A red car on a road][image0]
@@ -422,7 +422,7 @@ Edge Delivery Services를 사용한 WYSIWYG 작성의 경우, 서식 있는 텍�
 </em>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 [adobe.com](https://www.adobe.com "Navigate to adobe.com")
@@ -451,7 +451,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 <h2>Getting started</h2>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 ## Getting started
@@ -512,7 +512,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 </div>
 ```
 
->[!TAB 표]
+>[!TAB 테이블]
 
 ```text
 +-------------------------------------------------+
@@ -536,9 +536,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐츠 또는 블록인 단일 수준의 중첩만 의도적으로 허용합니다. 즉, 다른 구성 요소를 포함할 수 있는 보다 복잡한 시각적 구성 요소를 가지려면 섹션으로 모델링하고 자동 차단 클라이언트측을 사용하여 함께 결합해야 합니다. 이에 대한 일반적인 예로는 탭과 아코디언과 같이 접을 수 있는 섹션이 있습니다.
 
-섹션은 블록과 동일한 방식으로 정의할 수 있지만 `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 이름과 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용하는 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 및 섹션 메타데이터를 렌더링하는 데 사용하는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
+섹션은 블록과 동일한 방식으로 정의할 수 있지만 `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 이름과 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용하는 [필터 ID](/help/implementing/universal-editor/filtering.md) 및 섹션 메타데이터를 렌더링하는 데 사용하는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
 
-기본 섹션의 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure) 및 [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)는 `section`입니다. 기본 섹션의 비헤이비어를 변경하는 데 사용할 수 있습니다. 다음 예에서는 섹션 메타데이터 모델에 일부 스타일과 배경 이미지를 추가합니다.
+기본 섹션의 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure) 및 [필터 ID](/help/implementing/universal-editor/filtering.md)는 `section`입니다. 기본 섹션의 비헤이비어를 변경하는 데 사용할 수 있습니다. 다음 예에서는 섹션 메타데이터 모델에 일부 스타일과 배경 이미지를 추가합니다.
 
 ```json
 {

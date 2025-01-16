@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 37%
@@ -176,7 +176,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->원본 컨테이너와 대상 컨테이너 사이에 다른 [구성 요소 필터](/help/implementing/universal-editor/customizing.md#filtering-components)가 설정된 경우 컨테이너 간에 구성 요소를 이동할 수 없습니다.
+>원본 컨테이너와 대상 컨테이너 사이에 다른 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)가 설정된 경우 컨테이너 간에 구성 요소를 이동할 수 없습니다.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
