@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2024.12.02 릴리스 정보
-description: 다음은 범용 편집기 2024.12.02 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2054.01.16 릴리스 정보
+description: 다음은 범용 편집기 2025.01.16 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
-workflow-type: ht
-source-wordcount: '300'
-ht-degree: 100%
+source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 19%
 
 ---
 
 
-# 범용 편집기 2024.12.02 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.01.16 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기 2024년 12월 2일 릴리스에 대한 릴리스 정보입니다.
+다음은 범용 편집기 2025년 1월 16일 릴리스의 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ ht-degree: 100%
 
 ## 새로운 기능 {#what-is-new}
 
-* **콘텐츠 트리의 키보드 탐색**: 이제 키보드를 통해 사이드 패널에서 제공되는 [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 완전히 접근할 수 있습니다.
-   * 작성자는 표준 키보드 컨트롤을 사용하여 트리 보기 항목을 탐색하고 상호 작용할 수 있으며, [WCAG 2.1 지침](/help/sites-cloud/authoring/page-editor/accessible-content.md)의 접근성 기준을 준수합니다.
-   * 이러한 개선을 통해 트리 내의 모든 대화형 요소를 키보드로 조작할 수 있게 되어 키보드 탐색에 의존하는 사용자에게 더 나은 포용성을 제공합니다.
-* **편집 가능한 요소 선택 해제**: 이제 작성자는 페이지에서 이전에 선택한 편집 가능한 요소의 선택을 해제할 수 있습니다.
-   * 이렇게 하면 작성자가 활성 선택 테두리 없이 페이지를 보고자 할 때 방해가 되는 요소를 제거할 수 있습니다.
-* **조각 선택기**: AEM as a Cloud Service 인스턴스에서 이제 조각 참조를 통해 콘텐츠 선택기로서 조각 선택기를 열 수 있습니다. 이를 통해 허용된 콘텐츠 조각 모델을 준수하고, 콘텐츠 조각을 검색할 수 있으며, 전반적으로 개선된 사용자 경험을 제공합니다.
-   * 이는 다른 Adobe UI와의 일관성을 강화합니다.
-   * [AEM 6.5 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)에서는 기존 콘텐츠 선택기가 계속 사용됩니다.
-* **컨테이너 설명**: [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)에서 콘텐츠를 참조하는 데 사용되는 [컨테이너 구성 요소](/help/implementing/universal-editor/field-types.md#container)는 이제 컨테이너 필드 위에 표시되는 설명 속성을 지원합니다.
-   * 이 추가 기능은 작성자가 편집 중인 그룹화된 필드에 대한 맥락을 제공하여 명확성을 높여줍니다.
+* **CORS 라이브러리 사용 중단 &lt; 3.0.0** - 향후 호환성을 보장하고 보안을 강화하기 위해 이제 유니버설 편집기에서 버전 3.0.0 이상을 독점적으로 지원합니다.
+  `@Adobe Express/universal-editor-cors` 라이브러리입니다.
+   * 라이브러리는 이제 [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)을(를) 통해서만 전달됩니다.
+   * 이전 버전의 CORS 라이브러리를 사용하는 페이지를 열면 사용자에 대한 사용 중단 알림이 표시되어 업데이트할 것인지 묻는 메시지가 표시됩니다.
+* **랜딩 페이지의 확장 지점** - [새 확장 지점](/help/implementing/universal-editor/customizing.md#extending)이 도입되어 유니버설 편집기의 랜딩 페이지의 측면 레일에 확장이 표시됩니다.
+   * 이제 개발자는 확장이 편집기나 랜딩 페이지 또는 두 페이지 모두에 적용할 수 있는지 여부를 지정하여 더 나은 사용자 지정 및 유용성을 제공할 수 있습니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* **리치 텍스트 필드 동기화**: 속성 패널 내 서식 있는 텍스트 필드에서 원시 콘텐츠와 렌더링된 콘텐츠의 동기화가 개선되었습니다. 이를 통해 Edge Delivery Services 프로젝트에서 서식 있는 텍스트 콘텐츠와 렌더링된 표현 간의 불일치 문제가 해결되었습니다.
-* **편집 모드 이벤트**: 범용 편집기는 이제 원격 앱을 다시 로드한 후에도 편집 모드 이벤트를 안정적으로 내보냅니다.
+* **랜딩 페이지의 최근 항목에 잘못된 URL이 수정됨** - 유니버설 편집기의 랜딩 페이지에 있는 &quot;최근 항목&quot; 목록에 표시된 URL이 끊어진 문제가 해결되었습니다.
+* **통합 셸의 테마 동기화** - 이제 유니버설 편집기에서 테마를 시스템의 통합 셸 설정과 동적으로 동기화하여 밝은 모드와 어두운 모드 간에 자동으로 조정됩니다.
+   * 이렇게 하면 조각 및 자산 선택기를 포함하여 마이크로 프론트엔드에서 일관되게 시각적 모양을 유지할 수 있습니다.

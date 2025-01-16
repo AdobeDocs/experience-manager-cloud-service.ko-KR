@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+source-git-commit: bd2162d7b2187637d76a5182a0cae39b5bac8791
 workflow-type: tm+mt
-source-wordcount: '5954'
+source-wordcount: '5958'
 ht-degree: 99%
 
 ---
@@ -206,6 +206,7 @@ ht-degree: 99%
    + 범용 편집기 릴리스 정보 {#univeral-editor}
       + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [2024.12.02 릴리스 정보](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [2024.11.13 릴리스 정보](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05 릴리스 정보](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29 릴리스 정보](/help/release-notes/universal-editor/2024/2024-10-29.md)
@@ -224,7 +225,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
    + [AEM as a Cloud Service에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
-   + [사용자 그룹 및 제품 프로필 동기화 변경 사항](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + [사용자 그룹 및 제품 프로필 동기화의 변경 사항](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
    + [WAF 규칙이 포함된 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
