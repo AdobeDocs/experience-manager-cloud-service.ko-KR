@@ -1,10 +1,10 @@
 ---
 title: Assets 보기에서 벌크 메타데이터 편집
-description: Assets 보기에서 사용 가능한 여러 에셋의 메타데이터를 동시에 편집하는 방법에 대해 알아봅니다.
+description: Assets 보기에서 동시에 사용할 수 있는 여러 에셋에 대해 사전 정의된 표준 메타데이터 필드 세트를 업데이트하는 방법을 알아봅니다.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 55cb3bb5771c154191fe5b59e56cf9f077590169
+source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
