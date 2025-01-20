@@ -4,7 +4,7 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndform`인 경우 웹 사이트가 [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)에 실행되고 실행됩니다.
+   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndform`인 경우 웹 사이트가 [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)에 실행되고 실행됩니다.
 
 
 
