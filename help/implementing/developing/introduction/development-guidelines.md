@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Pre
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 3%
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 로컬 개발의 경우 개발자는 CRXDE Lite(`/crx/de`) 및 AEM 웹 콘솔(`/system/console`)에 액세스할 수 있습니다.
 
-로컬 개발(SDK 사용)에서 `/apps` 및 `/libs`을(를) 직접 쓸 수 있습니다. 이는 최상위 수준의 폴더를 변경할 수 없는 클라우드 환경과는 다릅니다.
+로컬 개발(SDK 사용)에서 `/apps` 및 `/libs`을(를) 직접 쓸 수 있습니다. 이는 상위 수준 폴더를 변경할 수 없는 클라우드 환경과는 다릅니다.
 
 ### AEM as a Cloud Service 개발 도구 {#aem-as-a-cloud-service-development-tools}
 
@@ -191,7 +191,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경용 AEM as a Cloud Service Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 바로 가기로는 다음 Cloud Manager CLI 명령을 사용하여 아래에 설명된 환경 매개 변수를 기반으로 AEM as a Cloud Service Developer Console을 시작할 수 있습니다.
 
