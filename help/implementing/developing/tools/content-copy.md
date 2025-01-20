@@ -4,10 +4,10 @@ description: 콘텐츠 복사 도구를 통해 사용자는 필요할 때 AEM as
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 36%
 
 ---
 
@@ -200,10 +200,3 @@ ht-degree: 34%
 * 콘텐츠 복사 도구는 버전 관리 기능이 없으며 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트의 소스 환경에서 수정된 콘텐츠 또는 작성된 콘텐츠를 자동으로 감지할 수 없습니다.
    * 콘텐츠 변경 사항으로만 대상 환경을 업데이트하려면 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트를 만들어야 합니다. 그런 다음 마지막 콘텐츠 복사 작업 이후 변경된 소스 인스턴스의 경로를 지정합니다.
 * 버전 정보는 콘텐츠 사본에 포함되지 않습니다.
-
-## 알려진 문제 {#known-issues}
-
-[콘텐츠 복사 기능을 사용할 때 다음 알려진 문제에 유의하십시오.](/help/implementing/developing/tools/content-copy.md)
-
-* 소스 환경의 리소스 이름이 변경된 경우, 타겟 환경의 UUID가 충돌하여 컨텐츠 복사 작업이 실패할 수 있습니다.
-   * 이 오류를 방지하려면 리소스의 이름을 바꾸는 대신 먼저 리소스를 삭제한 다음 원하는 새 리소스 이름으로 다시 만듭니다.
