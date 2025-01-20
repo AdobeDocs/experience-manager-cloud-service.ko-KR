@@ -4,10 +4,10 @@ description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '472'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,6 @@ ht-degree: 100%
 
 * 단순화된 관리: 중앙 관리식으로 드롭다운 옵션을 유지하여 업데이트 및 추가를 쉽게 할 수 있습니다.
 * 향상된 효율성: 양식 정의 내에서 긴 옵션 목록을 수동으로 추가할 필요가 없습니다.
-
-
-
 
 ![드롭다운 옵션](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ ht-degree: 100%
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 `shared-country` 시트를 미리 보고 게시합니다.
 
-   `shared-country` 시트를 보여 주는 URL(
-https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country)을 참조하십시오.
+   예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;인 경우 계정 소유자 &quot;wkndform&quot; 아래에 있으며 `shared-country` 시트를 표시하는 URL인 &quot;main&quot; 분기를 사용합니다.
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country)을 참�
 
    ![국가별 드롭다운](/help/forms/assets/load-dropdown-options-form.png)
 
-드롭다운 목록 옵션을 로드하기 위해 URL을 추가하려면 [문의 스프레드시트](/help/forms/assets/enquiry-options.xlsx)를 참조하시기 바랍니다.
+드롭다운 목록 옵션을 로드하기 위해 URL을 추가하려면 [문의 스프레드시트](/help/edge/assets/enquiry.xlsx)를 참조하시기 바랍니다.
 
 드롭다운 목록 옵션을 로드하기 위해 URL을 양식 정의에 통합한 후 `Destination` 드롭다운이 URL에 표시되기 시작합니다.
 
-별도 시트에 저장된 옵션을 표시하는 `enquiry` 양식을 표시하려면 아래 URL을 참조하십시오.
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## 추가 참조
 

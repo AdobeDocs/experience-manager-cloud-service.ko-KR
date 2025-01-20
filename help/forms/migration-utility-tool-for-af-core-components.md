@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 4%
+source-wordcount: '1060'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,18 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 
 * 성공적으로 전환되면 양식에 적용된 모든 규칙이 제거됩니다. 규칙은 자동으로 마이그레이션되지 않습니다. 이러한 규칙을 수동으로 다시 만들어 변환된 양식에 적용해야 합니다.
 * 원본 양식에 사용된 번역 설정은 이전되지 않습니다. 변환된 양식의 번역을 다시 구성합니다.
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* 기초 구성 요소에 빌드된 양식에 스크립트 또는 사용자 지정 함수 규칙이 포함되어 있는 경우 핵심 구성 요소를 기반으로 변환된 양식에 대해 이러한 규칙을 다시 작성해야 합니다.
+* 다음 OOTB 기초 구성 요소는 아직 핵심 구성 요소에서 지원되지 않으므로 변환된 양식에서 삭제됩니다.
+   * Adobe Sign 차단
+   * 차트
+   * 첨부 파일 나열
+   * 각주 플레이스홀더
+   * 이미지 선택
+   * 다음 버튼
+   * 이전 단추
+   * 낙서 서명
+   * 요약 단계
+   * 도구 모음
 
 ## AEM 현대화 도구 사용을 위한 전제 조건
 
@@ -68,7 +79,7 @@ AEM 현대화 도구 설치 및 구성 방법:
 
    `java -jar aem-author-p4502.jar`
 
-1. 로컬 시스템에서 [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) 리포지토리를 복제합니다.
+1. 로컬 시스템에서 [AEM 현대화 도구](https://github.com/adobe/forms-modernizer) 리포지토리를 복제합니다.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -97,7 +108,7 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 1. `http://[host]:[port]/system/console/configMgr`(으)로 이동
 1. `AEM Modernize Tools - Component Rewrite Rule Service`을(를) 찾아 편집합니다.
 1. `Component Rule Paths`을(를) `/apps/forms-modernizer/rules`(으)로 추가합니다.
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ![AEM 현대화 구성 요소 규칙](/help/forms/assets/aem-modernize-tools-component-rule.png)
 

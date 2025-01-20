@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    >
    > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 IP 3.227.118.73을 추가할 수 있습니다.
 
-   축하합니다! `https://<branch>--<repo>--<owner>.hlx.page/`에서 새 웹 사이트가 실행되고 있습니다.
+   축하합니다! `https://<branch>--<repo>--<owner>.aem.page/`에서 새 웹 사이트가 실행되고 있습니다.
 
    * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 분기 이름이 `main`이고 저장소가 `wefinance`이며 소유자가 `wkndforms`인 경우 웹 사이트는 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/)에서 실행됩니다.
+   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndform`인 경우 웹 사이트가 [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)에 실행되고 실행됩니다.
 
 
 
 ### 자체 콘텐츠 소스 연결
 
-새로 만든 GitHub 저장소는 [Google Drive 폴더에 저장된 예시 콘텐츠](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ)를 가리킵니다. 이 읽기 전용 콘텐츠는 양식을 위한 훌륭한 시작점에 해당합니다. 자유롭게 사용자의 Google Drive에 복사하고 필요에 맞게 사용자 정의할 수 있습니다.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Google Drive의 샘플 콘텐츠](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 샘플 콘텐츠를 자체 콘텐츠 폴더에 복사하고 GitHub 저장소를 자체 콘텐츠 폴더로 지정하는 방법은 다음과 같습니다.
 
 1. Google Drive 또는 Microsoft SharePoint에서 AEM 콘텐츠를 위한 전용 폴더를 새로 만듭니다. 이 문서에서는 Microsoft SharePoint에서 만든 폴더를 사용합니다.
 
-1. Adobe Experience Manager 사용자(helix@adobe.com)와 폴더를 공유합니다.
+1. Adobe Experience Manager 사용자(forms@adobe.com)와 폴더를 공유합니다.
 
    ![액세스 관리 옵션을 사용하여 AEM 사용자와 폴더 공유 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    Adobe Experience Manager 사용자에게 폴더에 대한 편집 권한을 제공해야 합니다.
 
-   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 -SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![AEM 사용자와 폴더 공유, 편집 권한 제공-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+   ![AEM 사용자와 폴더 공유, 편집 권한 제공- Google 드라이브](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. [Google Drive 폴더에 저장된 예시 콘텐츠](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_)를 폴더에 복사합니다. 복사하는 방법은 다음과 같습니다.
+1. [예제 콘텐츠](/help/edge/assets/wefinance1.zip)를 폴더에 복사합니다. 복사하는 방법은 다음과 같습니다.
 
-   1. 파일을 함께 다운로드하거나 개별 파일을 다운로드합니다.
+   1. 다운로드한 폴더의 압축을 풀고 콘텐츠를 복사합니다.
 
       ![샘플 콘텐츠 다운로드](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    1. 앞서 AEM Forms 상용구를 사용하여 만든 GitHub 저장소로 이동합니다.
    1. 편집할 `fstab.yaml`을 엽니다.
-   1. 기존 참조를 AEM 사용자(helix@adobe.com)와 공유한 폴더 경로로 바꿉니다.
+   1. 기존 참조를 AEM 사용자와 공유한 폴더의 경로로 바꿉니다(forms@adobe.com).
 
       ![Google Drive의 샘플 콘텐츠](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
@@ -183,11 +183,9 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
+   `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndforms” 계정 아래에서 “main” 분기를 사용하는 경우 URL은 다음과 같습니다.
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page)
+   예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식 이름을 `enquiry`(으)로 사용하는 경우 URL은 [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)입니다.
 
 ### 양식 만들기
 
@@ -195,11 +193,11 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 ![문의 양식](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-필드 레이블 업데이트부터 시작해 보겠습니다. 편집을 위해 ‘enquiry’ 시트를 열고 제출 버튼 레이블을 `Let's Chat`으로 변경한 다음 AEM Sidekick을 사용하여 파일을 미리 보고 게시합니다.
+필드 레이블 업데이트부터 시작해 보겠습니다. 편집을 위해 ‘enquiry’ 시트를 열고 제출 버튼 레이블을 `Let's Talk`으로 변경한 다음 AEM Sidekick을 사용하여 파일을 미리 보고 게시합니다.
 
 ![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
 
-파일을 미리 보거나 게시하면 파일의 JSON 버전이 새 탭에 나타납니다. 파일의 미리보기(.hlx.page) 또는 게시(.hlx.live) URL을 복사합니다.
+파일을 미리 보거나 게시하면 파일의 JSON 버전이 새 탭에 나타납니다. 파일의 미리보기(.aem.page) 또는 게시(.aem.live) URL을 복사합니다.
 
 ![양식 스프레드시트의 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ AEM Sidekick을 사용하여 문의 문서를 미리 보고 게시합니다.
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-제출 버튼의 레이블이 `Let's Chat`으로 업데이트됩니다.
+제출 버튼의 레이블이 `Let's Talk`으로 업데이트됩니다.
 
-![문의 양식](/help/edge/assets/updated-form.png)
+[![조회 양식](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 새 양식 만들기 및 게시에 대한 자세한 내용은 [양식 만들기](/help/edge/docs/forms/create-forms.md) 안내서를 참조하십시오.
 
@@ -254,8 +255,8 @@ AEM Sidekick을 사용하여 문의 문서를 미리 보고 게시합니다.
 
 작성 콘텐츠를 선보일 준비가 되셨습니까? Git을 사용하여 변경 사항을 커밋하고 푸시합니다. 이렇게 하면 다음 URL에서 액세스할 수 있는 미리보기 및 프로덕션 환경이 업데이트됩니다(플레이스홀더를 프로젝트 세부 정보로 교체).
 
-미리보기: `https://<branch>--<repo>--<owner>.hlx.page/`
-프로덕션: `https://<branch>--<repo>--<owner>.hlx.live/`
+미리보기: `https://<branch>--<repo>--<owner>.aem.page/`
+프로덕션: `https://<branch>--<repo>--<owner>.aem.live/`
 
 축하합니다! 로컬 개발 환경을 성공적으로 설정하고 변경 사항을 배포했습니다.
 

@@ -4,10 +4,10 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '806'
-ht-degree: 100%
+source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 88%
 
 ---
 
@@ -26,25 +26,24 @@ AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저�
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* [AEM Forms 상용구를 사용하여 AEM 프로젝트를 설정](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)하거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고 로컬 컴퓨터의 해당 GitHub 저장소를 복제합니다.
-이 문서에서 Edge Delivery Services(EDS) 프로젝트의 로컬 폴더란 `[EDS Project repository]`를 말합니다.
+* [AEM Forms 보일러판을 사용하여 AEM 프로젝트를 설정합니다](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 Forms 블록을 추가했습니다](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project). 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
+<!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
 
 
 
 ## 양식 만들기
 
-<!-- 
-
+<!--
 +++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
 The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
 1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
-1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
+2. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
-1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+3. on your local machine and copy the `form` folder. 
+4. **Paste the Adaptive Forms Block's code into your EDS Project:**
 Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
@@ -59,17 +58,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++
-
--->
 
 +++ 1단계: Microsoft Excel 또는 Google 시트를 사용하여 양식을 작성합니다.
 
 복잡한 프로세스를 탐색하는 대신 스프레드시트를 사용하여 쉽게 양식을 만들 수 있습니다. 양식 구조를 구성할 행과 열을 정의할 수 있습니다. 각 행은 개별 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내며, 열 헤더는 해당 [필드 속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의합니다.
 
-예를 들어 행이 `enquiry` 양식의 필드를 간략하게 설명하고 열 헤더가 해당 속성을 정의하는 다음 스프레드시트를 고려하십시오.
+예를 들어 행이 [조회](/help/edge/assets/enquiry.xlsx) 스프레드시트 및 열 헤더에 대한 필드를 아웃라인하는 다음 스프레드시트를 고려해 보십시오.
 
 ![문의 스프레드시트](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -81,7 +78,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive의 샘플 콘텐츠](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
+1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `forms@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
 
 1. 작성된 스프레드시트를 연 다음 기본 시트 이름을 “shared-default”로 바꿉니다.
 
@@ -90,7 +87,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. 양식 필드를 추가하려면 “shared-default” 시트에 행과 열 헤더를 삽입합니다. 각 행은 해당 필드 [속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의하는 열 헤더로 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내야 합니다.
 
 
-   빠른 시작을 하려면 [문의 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 콘텐츠를 스프레드시트에 복사하는 것이 좋습니다. 콘텐츠를 복사하면 스프레드시트를 저장합니다.
+   빠른 시작을 하려면 [문의 스프레드시트](/help/edge/assets/enquiry.xlsx) 콘텐츠를 스프레드시트에 복사하는 것이 좋습니다. 콘텐츠를 복사하면 스프레드시트를 저장합니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
@@ -103,16 +100,16 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 프로젝트 저장소의 이름이 “portal”이고 “wkndforms” 계정 아래에서 “main” 분기를 사용하는 경우 URL은 다음과 같습니다.
+   예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;이고 계정 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용하는 경우 URL은 다음과 같습니다.
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
 
 
 +++
@@ -126,18 +123,18 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
 
-1. 양식을 임베드할 문서 파일(예: index 파일)을 엽니다. 또는 새 문서를 만들 수 있습니다.
+1. 양식을 임베드할 문서 파일(예: index 파일)을 엽니다. 또는 [새 문서를 만들](/help/edge/assets/enquiry-form.docx)수 있습니다.
 
 1. 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
 
-1. 양식을 렌더링하기 위해 양식 블록을 작성합니다. 삽입 > 표를 선택하고 열 1개 및 행 2개가 있는 표를 만듭니다. 표의 이름을 “Form”으로 지정하고 두 번째 행에 미리보기 URL을 붙여넣습니다. 아래 그림과 같이 URL이 일반 텍스트가 아닌 하이퍼링크 형식이어야 합니다.
+1. 양식을 렌더링하기 위해 양식 블록을 작성합니다. 삽입 > 테이블을 선택하고 열 1개 및 행 2개가 있는 테이블을 만듭니다. 테이블의 이름을 “Form”으로 지정하고 두 번째 행에 미리보기 URL을 붙여넣습니다. 아래 그림과 같이 URL이 일반 텍스트가 아닌 하이퍼링크 형식이어야 합니다.
 
    | 양식 |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
-   ![웹 페이지에 적응형 양식 블록 추가](/help/edge/assets/add-adaptive-forms-block.png)
+   ![웹 페이지에 적응형 양식 블록 추가](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    이 블록은 양식이 임베드된 플레이스홀더 역할을 합니다. 블록의 두 번째 행에서 `<form>.json` 파일의 미리보기 URL을 하이퍼링크로 추가합니다.
 
@@ -147,10 +144,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
    > URL 형식이 일반 텍스트로 표시되지 않고 하이퍼링크로 지정되었는지 확인합니다.
 
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 문서를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)를 기반으로 한 양식입니다.
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 문서를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](/help/edge/assets/enquiry-form.docx)를 기반으로 한 양식입니다.
 
 
-   [![샘플 EDS 양식](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![샘플 EDS 양식](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)
 
    이제 양식을 작성하고 제출 버튼을 클릭하면 스프레드시트가 아직 데이터를 허용하도록 설정되지 않았기 때문에 다음과 유사한 오류가 발생합니다.
 
