@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 0%
+source-wordcount: '1975'
+ht-degree: 1%
 
 ---
 
@@ -31,23 +31,21 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
 
-
 ## 이 문서를 구성하는 방식 {#how-organized}
 
 이 문서는 다음 방법으로 구성됩니다.
 
 * 설정 - 모든 로깅 대상에 대해 공통입니다.
+* 전송 및 고급 네트워킹 - 로깅 구성을 만들기 전에 네트워크 설정을 고려해야 합니다.
 * 대상 구성 로깅 - 각 대상의 형식이 약간 다릅니다.
 * 로그 항목 형식 - 로그 항목 형식에 대한 정보
-* 고급 네트워킹 - 전용 이그레스 또는 VPN을 통해 AEM 및 Apache/Dispatcher 로그 전송
 * 이전 로그 전달에서 마이그레이션 - 이전에 Adobe으로 설정했던 로그 전달에서 셀프 서비스 접근 방식으로 이동하는 방법
-
 
 ## 설정 {#setup}
 
 1. 이름이 `logForwarding.yaml`인 파일을 만듭니다. [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 
 **default** 블록 뒤에 추가 **cdn** 및/또는 **aem** 블록을 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다. 여기서 속성은 **default** 블록에 정의된 값을 무시할 수 있습니다. 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 
 또 다른 시나리오는 CDN 로그 또는 AEM 로그(Apache/Dispatcher 포함)의 전달을 비활성화하는 것입니다. 예를 들어 CDN 로그만 전달하려면 다음을 구성할 수 있습니다.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
          enabled: false
 ```
 
+## 전송 및 고급 네트워킹 {#transport-advancednetworking}
+
+일부 조직에서는 로깅 대상에 의해 수신될 수 있는 트래픽을 제한하도록 선택하고, 다른 조직에서는 HTTPS(443) 이외의 포트를 사용해야 할 수 있습니다.  이 경우 로그 전달 구성을 배포하기 전에 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성해야 합니다.
+
+아래 표를 사용하여 포트 443을 사용하는지 여부와 고정 IP 주소에서 로그를 표시해야 하는지 여부를 기준으로 고급 네트워킹 및 로깅 구성에 대한 요구 사항을 확인할 수 있습니다.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>대상 포트</th>
+      <th>고정 IP에서 로그가 나타나도록 요구 사항</th>
+      <th>고급 네트워킹 필요</th>
+      <th>LogForwarding.yaml 포트 정의 필요</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS(443)</td>
+      <td>아니요</td>
+      <td>아니요</td>
+      <td>아니요</td>
+    </tr>
+    <tr>
+      <td>예</td>
+      <td>예, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">전용 이그레스</a></td>
+      <td>아니요</td>
+    <tr>
+    <tr>
+      <td rowspan="2">비표준 포트(예: 8088)</td>
+      <td>아니요</td>
+      <td>예, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">유연한 이그레스</a></td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>예</td>
+      <td>예, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">전용 이그레스</a></td>
+      <td>예</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>단일 IP 주소에서 로그가 표시되는지 여부는 고급 네트워킹 구성 선택에 따라 결정됩니다.  이 작업을 용이하게 하려면 전용 이그레스를 사용해야 합니다.
+>
+> 고급 네트워킹 구성은 프로그램 및 환경 수준에서 활성화가 필요한 [2단계 프로세스](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)입니다.
+
+AEM 로그(Apache/Dispatcher 포함)의 경우 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성한 경우 `aem.advancedNetworking` 속성을 사용하여 전용 이그레스 IP 주소 또는 VPN을 통해 해당 로그를 전달할 수 있습니다.
+
+아래 예는 고급 네트워킹을 사용하여 표준 HTTPS 포트에서 로깅을 구성하는 방법을 보여줍니다.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 Adobe이 아닌 https 서버 또는 Azure Blob Store로 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 알려진 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
+
+>[!NOTE]
+>AEM 로그가 표시되는 IP 주소와 동일한 IP 주소에서 CDN 로그가 표시될 수 없습니다. 이는 로그가 AEM Cloud Service이 아닌 Fastly에서 직접 전송되기 때문입니다.
+
 ## 대상 구성 로깅 중 {#logging-destinations}
 
 특정 고려 사항과 함께 지원되는 로깅 대상에 대한 구성이 아래에 나와 있습니다.
 
 ### Azure Blob 저장소 {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ data:
 
 예를 들어, 특정 시점에서 다음과 같은 작업을 수행할 수 있습니다.
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 30초 후:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명되어 있으며 각 로그 항목에는 아래 [로그 항목 형식](#log-format) 섹션에 언급된 추가 속성도 포함되어 있습니다.
+각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명되어 있으며 각 로그 항목에는 아래 [로그 항목 형식](#log-formats) 섹션에 언급된 추가 속성도 포함되어 있습니다.
 
 #### Azure Blob 저장소 AEM 로그 {#azureblob-aem}
 
@@ -181,10 +256,9 @@ AEM 로그(Apache/Dispatcher 포함)는 다음 명명 규칙을 사용하여 폴
 
 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에서 로그 항목 형식을 참조하십시오. 로그 항목에는 아래의 [로그 항목 형식](#log-formats) 섹션에서 언급한 추가 속성도 포함됩니다.
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ data:
 * Datadog 서비스 태그가 `adobeaemcloud`(으)로 설정되어 있지만 태그 섹션에서 덮어쓸 수 있습니다
 * 수집 파이프라인이 Datadog 태그를 사용하여 전달 로그에 대한 적절한 인덱스를 결정하는 경우 이러한 태그가 로그 전달 YAML 파일에 올바르게 구성되어 있는지 확인하십시오. 태그가 누락되면 파이프라인이 종속된 경우 성공적인 로그 수집이 방해될 수 있습니다.
 
-
-
 ### Elasticsearch 및 OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ data:
 * AEM 로그의 경우 `index`이(가) `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` 또는 `aemhttpderror` 중 하나로 설정되어 있습니다.
 * 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정되어야 합니다. 파이프라인의 프로세서 유형을 *script*(으)로 설정하고 스크립트 언어를 *painless*(으)로 설정해야 합니다. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ data:
 
 #### HTTPS AEM 로그 {#https-aem}
 
-AEM 로그(apache/dispatcher 포함)의 경우 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명된 대로 다양한 로그 항목 형식이 포함된 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-format) 섹션에 설명되어 있습니다.
+AEM 로그(apache/dispatcher 포함)의 경우 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명된 대로 다양한 로그 항목 형식이 포함된 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
 
 다음 값 중 하나로 설정된 `Source-Type` 속성도 있습니다.
 
@@ -292,7 +364,7 @@ AEM 로그(apache/dispatcher 포함)의 경우 [AEM as a Cloud Service에 대한
 
 ### 스플렁크 {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ data:
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
 * 필요한 IP가 허용 목록에추가된으로 제공되었지만 로그가 계속 전달되지 않는 경우 Splunk 토큰 유효성 검사를 적용하는 방화벽 규칙이 없는지 확인하십시오. Fastly는 잘못된 Splunk 토큰이 의도적으로 전송되는 초기 유효성 검사 단계를 수행합니다. 방화벽이 잘못된 Splunk 토큰으로 연결을 종료하도록 설정된 경우 유효성 검사 프로세스가 실패하여 Fastly가 로그를 Splunk 인스턴스에 전달할 수 없습니다.
 
-
 >[!NOTE]
 >
 > [이전 로그 전달에서 이 셀프 서비스 모델로 마이그레이션](#legacy-migration)하는 경우 Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ data:
 
 예를 들어 속성은 다음 값을 가질 수 있습니다.
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## 고급 네트워킹 {#advanced-networking}
-
-일부 조직에서는 로깅 대상에서 수신할 수 있는 트래픽을 제한하도록 선택합니다.
-
-CDN 로그의 경우 [fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 Adobe이 아닌 https 서버 또는 Azure Blob Store로 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 알려진 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
-
-AEM 로그(Apache/Dispatcher 포함)의 경우 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성한 경우 advancedNetworking 속성을 사용하여 전용 이그레스 IP 주소 또는 VPN을 통해 해당 로그를 전달할 수 있습니다.
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## 이전 로그 전달에서 마이그레이션 {#legacy-migration}
@@ -399,10 +444,6 @@ Adobe에서 이러한 방식으로 설정했던 고객은 편리하게 셀프서
 구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 그렇지 않으면 Adobe으로 구성된 환경과 셀프 서비스 방식으로 구성된 환경을 구분할 수 없습니다.
 
 >[!NOTE]
->
 >Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
-
->[!NOTE]
 >
 >이전에 Adobe 지원으로 구성한 환경에 로그 전달이 배포되면 최대 몇 시간 동안 중복 로그를 받을 수 있습니다. 이 문제는 결국 자동으로 해결됩니다.
-
