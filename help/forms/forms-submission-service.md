@@ -4,13 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
+source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
-
 
 # Edge Delivery Services Forms이 있는 Forms 제출 서비스
 
@@ -31,7 +31,7 @@ Forms 제출 서비스를 사용하면 양식 제출의 데이터를 OneDrive, S
 Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 같습니다.
 
 * AEM 프로젝트에 최신 적응형 양식 블록이 있는지 확인합니다.
-* Forms 제출 서비스를 사용하기 위해 Git 저장소가 허용 목록에 추가하다에 추가되었는지 확인합니다. Forms 제출 서비스를 요청하려면 [양식](https://main--afb--adobe.hlx.page/docs/docbased/submit#feature-enablement-request)을(를) 작성하십시오.
+* Forms 제출 서비스를 사용하기 위해 Git 저장소가 허용 목록에 추가하다에 추가되었는지 확인합니다. Forms 제출 서비스를 사용하려면 mailto:aem-forms-ea@adobe.com에 GitHub 조직 이름 및 저장소 이름을 추가하여 허용 목록에 추가하다에 추가하십시오.
 
 ## Forms 제출 서비스 구성
 

@@ -4,10 +4,10 @@ description: AEM Forms용 Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 80%
+source-wordcount: '587'
+ht-degree: 81%
 
 ---
 
@@ -53,7 +53,8 @@ ht-degree: 80%
 
    예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식을 &quot;inquiry&quot;로 사용하는 경우 URL은 다음과 같습니다.
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ ht-degree: 80%
 
    | 양식 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![파일에 ‘Form’이라는 블록 추가](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ ht-degree: 80%
 
    | 양식 |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **게시 URL**
 
    | 양식 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 웹 페이지를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](/help/edge/assets/enquiry.xlsx)를 기반으로 한 양식입니다.
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 웹 페이지를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](/help/edge/assets/enquiry-form.docx)를 기반으로 한 양식입니다.
 
 
    ![샘플 EDS 양식](/help/edge/assets/updated-form.png)

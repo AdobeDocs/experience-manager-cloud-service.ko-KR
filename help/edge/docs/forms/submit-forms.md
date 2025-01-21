@@ -4,17 +4,17 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작
 
 
-[양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다. 스프레드시트가 데이터를 수신하도록 수동으로 활성화하거나, 관리 API를 사용하여 스프레드시트가 데이터를 수신하도록 활성화할 수 있습니다.
+[양식을 만들고 미리 보기](/help/edge/docs/forms/create-forms.md)했으면 해당 스프레드시트가 데이터 수신을 시작할 수 있도록 설정해야 합니다. 스프레드시트가 데이터를 수신하도록 수동으로 활성화하거나, 관리 API를 사용하여 스프레드시트가 데이터를 수신하도록 활성화할 수 있습니다.
 
 ![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ ht-degree: 84%
    >
    > `incoming` 시트가 없는 경우 AEM은 스프레드시트에 데이터를 보내지 않습니다.
 
-2. 이 시트에 “intake_form”이라는 테이블을 삽입합니다. 양식 필드 이름과 일치하는 데 필요한 열 수를 선택합니다. 그런 다음 도구 모음에서 삽입 > 테이블로 이동하고 ‘확인’을 클릭합니다.
+1. 이 시트에 “intake_form”이라는 테이블을 삽입합니다. 양식 필드 이름과 일치하는 데 필요한 열 수를 선택합니다. 그런 다음 도구 모음에서 삽입 > 테이블로 이동하고 ‘확인’을 클릭합니다.
 
-3. 테이블 이름을 “intake_form”으로 변경합니다. Microsoft Excel에서 테이블 이름을 변경하려면 테이블을 선택하고 테이블 디자인을 클릭합니다.
+1. 테이블 이름을 “intake_form”으로 변경합니다. Microsoft Excel에서 테이블 이름을 변경하려면 테이블을 선택하고 테이블 디자인을 클릭합니다.
 
-4. 다음으로 양식 필드 이름을 테이블 헤더로 추가합니다. 필드가 정확히 동일한지 확인하려면 “shared-default” 시트에서 필드를 복사하여 붙여넣으면 됩니다. “shared-default” 시트에서 제출 필드를 제외하고 “이름” 열 아래에 나열된 양식 ID를 선택하고 복사합니다.
+1. 다음으로 양식 필드 이름을 테이블 헤더로 추가합니다. 필드가 정확하게 동일한지 확인하기 위해 &quot;shared-aem&quot; 시트에서 필드를 복사하여 붙여넣을 수 있습니다.  &quot;shared-aem&quot; 시트에서 &quot;Name&quot; 열 아래에 나열된 양식 ID를 선택하고 복사합니다. 단, 제출 필드는 예외입니다.
 
-5. “incoming” 시트에서 선택하여 붙여넣기 > 행을 열로 바꾸기를 선택하여 필드 ID를 이 새 시트의 열 헤더로 복사합니다. 데이터를 캡처해야 하는 필드만 유지합니다. 다른 필드는 무시할 수 있습니다.
+1. “incoming” 시트에서 선택하여 붙여넣기 > 행을 열로 바꾸기를 선택하여 필드 ID를 이 새 시트의 열 헤더로 복사합니다. 데이터를 캡처해야 하는 필드만 유지합니다. 다른 필드는 무시할 수 있습니다.
 
-   제출 버튼을 제외한 `shared-default` 시트의 각 `Name` 열 값은 `incoming` 시트에서 헤더 역할을 할 수 있습니다. 예를 들어 &quot;조회&quot; 양식의 헤더를 보여 주는 다음 이미지를 생각해 보십시오.
+   제출 버튼을 제외한 `shared-aem` 시트의 각 `Name` 열 값은 `incoming` 시트에서 헤더 역할을 할 수 있습니다. 예를 들어 &quot;조회&quot; 양식의 헤더를 보여 주는 다음 이미지를 생각해 보십시오.
 
    ![문의 양식의 필드](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 확장을 사용하여 양식 업데이트를 미리 봅니다. 이제 시트가 수신 양식 제출을 수락할 준비가 되었습니다.
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 확장을 사용하여 양식 업데이트를 미리 봅니다. 이제 시트가 수신 양식 제출을 수락할 준비가 되었습니다.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
->  “shared-default” 시트에는 공개적으로 액세스 가능해서는 안 되는 개인 식별 정보나 민감한 데이터가 포함되어서는 안 됩니다.
+>  &quot;공유 aem&quot; 시트에는 공개적으로 액세스하는 데 익숙하지 않은 개인 식별 정보나 중요한 데이터가 포함되어서는 안 됩니다.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

@@ -4,10 +4,10 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ 1단계: Microsoft Excel 또는 Google 시트를 사용하여 양식을 작성합니다.
 
 복잡한 프로세스를 탐색하는 대신 스프레드시트를 사용하여 쉽게 양식을 만들 수 있습니다. 양식 구조를 구성할 행과 열을 정의할 수 있습니다. 각 행은 개별 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내며, 열 헤더는 해당 [필드 속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의합니다.
@@ -76,15 +74,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. AEM Edge Delivery 프로젝트 디렉터리 내의 어느 곳에나 Microsoft Excel 통합 문서 또는 Google 시트를 만듭니다. 예를 들어 Google Drive의 AEM Edge Delivery 프로젝트 디렉터리에 `enquiry`라는 스프레드시트를 만듭니다.
 
-   ![Google Drive의 샘플 콘텐츠](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `forms@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
 
-1. 작성된 스프레드시트를 연 다음 기본 시트 이름을 “shared-default”로 바꿉니다.
+1. 생성된 스프레드시트를 열고 기본 시트의 이름을 &quot;shared-aem&quot;으로 변경합니다.
 
    ![기본 시트의 이름을 “shared-default”로 바꾸기](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 양식 필드를 추가하려면 “shared-default” 시트에 행과 열 헤더를 삽입합니다. 각 행은 해당 필드 [속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의하는 열 헤더로 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내야 합니다.
+1. 양식 필드를 추가하려면 &#39;shared-aem&#39; 시트에 행과 열 헤더를 삽입합니다. 각 행은 해당 필드 [속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의하는 열 헤더로 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내야 합니다.
 
 
    빠른 시작을 하려면 [문의 스프레드시트](/help/edge/assets/enquiry.xlsx) 콘텐츠를 스프레드시트에 복사하는 것이 좋습니다. 콘텐츠를 복사하면 스프레드시트를 저장합니다.
@@ -109,7 +107,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;이고 계정 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용하는 경우 URL은 다음과 같습니다.
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    | 양식 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![웹 페이지에 적응형 양식 블록 추가](/help/edge/assets/enquiry-doc-to-embed-form.png)

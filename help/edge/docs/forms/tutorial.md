@@ -4,9 +4,9 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndform`인 경우 웹 사이트가 [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)에 실행되고 실행됩니다.
-
-
+   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndforms`인 경우 웹 사이트가 `https://main--wefinance--wkndforms.aem.page`에 실행되고 실행됩니다
+&lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### 자체 콘텐츠 소스 연결
 
@@ -135,8 +134,6 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    1. 참조를 업데이트했고 모든 항목에 문제가 없으면 업데이트된 `fsatb.yaml` 파일을 커밋합니다. 빌드 문제가 발생하면 [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
 
-
-
       ![업데이트된 fsatab.yaml 파일 커밋](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       그러면 콘텐츠 폴더가 웹 사이트에 연결됩니다. 참조를 업데이트한 후 처음에는 “404 Not Found” 오류가 발생할 수 있습니다. 이는 콘텐츠의 미리보기를 아직 완료하지 않았기 때문입니다. 다음 섹션에서는 콘텐츠 작성 및 미리보기를 시작하는 방법을 설명합니다.
@@ -185,7 +182,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식 이름을 `enquiry`(으)로 사용하는 경우 URL은 [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)입니다.
+   예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식 이름을 `enquiry`(으)로 사용하는 경우 URL은 `https://main--wefinance--wkndform.aem.live/enquiry`입니다.
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### 양식 만들기
 
@@ -199,7 +197,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 파일을 미리 보거나 게시하면 파일의 JSON 버전이 새 탭에 나타납니다. 파일의 미리보기(.aem.page) 또는 게시(.aem.live) URL을 복사합니다.
 
-![양식 스프레드시트의 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![양식 스프레드시트의 JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 `enquiry` 파일을 열고 양식 블록의 URL을 이전 단계에서 복사한 파일의 URL로 바꿉니다. URL은 하이퍼링크여야 합니다.
 
@@ -220,9 +218,12 @@ AEM Sidekick을 사용하여 문의 문서를 미리 보고 게시합니다.
 
 제출 버튼의 레이블이 `Let's Talk`으로 업데이트됩니다.
 
-[![조회 양식](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![문의 양식](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 새 양식 만들기 및 게시에 대한 자세한 내용은 [양식 만들기](/help/edge/docs/forms/create-forms.md) 안내서를 참조하십시오.

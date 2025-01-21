@@ -4,10 +4,10 @@ description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 93%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,8 @@ ht-degree: 93%
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 `shared-country` 시트를 미리 보고 게시합니다.
 
    예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;인 경우 계정 소유자 &quot;wkndform&quot; 아래에 있으며 `shared-country` 시트를 표시하는 URL인 &quot;main&quot; 분기를 사용합니다.
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ ht-degree: 93%
 
 드롭다운 목록 옵션을 로드하기 위해 URL을 양식 정의에 통합한 후 `Destination` 드롭다운이 URL에 표시되기 시작합니다.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용하는 경우 아래 URL에는 별도의 시트에 저장된 옵션을 표시하는 `enquiry` 양식이 표시됩니다.
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## 추가 참조
