@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 
 >[!NOTE]
 > 
-> 로컬 AEM 설정에 AEM 현대화 도구 를 설치하는 것이 좋습니다. 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 마이그레이션합니다. 에셋과 함께 양식을 다운로드합니다. 그런 다음 양식과 해당 에셋을 필요한 환경에 업로드합니다.
+>로컬 AEM 설정에 AEM 현대화 도구 를 설치하는 것이 좋습니다. 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 마이그레이션합니다. 에셋과 함께 양식을 다운로드합니다. 그런 다음 양식과 해당 에셋을 필요한 환경에 업로드합니다.
 
 ## AEM 현대화 도구 사용 시 고려 사항 {#considerations}
 
@@ -39,6 +39,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 * 원본 양식에 사용된 번역 설정은 이전되지 않습니다. 변환된 양식의 번역을 다시 구성합니다.
 * 기초 구성 요소에 빌드된 양식에 스크립트 또는 사용자 지정 함수 규칙이 포함되어 있는 경우 핵심 구성 요소를 기반으로 변환된 양식에 대해 이러한 규칙을 다시 작성해야 합니다.
 * 다음 OOTB 기초 구성 요소는 아직 핵심 구성 요소에서 지원되지 않으므로 변환된 양식에서 삭제됩니다.
+
    * Adobe Sign 차단
    * 차트
    * 첨부 파일 나열
@@ -54,10 +55,9 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 
 * [AEM Forms을 위한 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
 * [환경에 대한 적응형 Forms 핵심 구성 요소 를 활성화합니다.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 구성원은 적응형 양식을 만들 수 있는 권한이 있습니다.
-
 * 다음 역할이 있는 사용자는 AEM 환경 내에 AEM 현대화 도구 를 설치할 수 있는 권한이 있습니다.
+
    * 개발자 역할
    * 책임자 역할
 
@@ -68,7 +68,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 AEM 현대화 도구 설치 및 구성 방법:
 
 1. [로컬 AEM Forms 환경에 AEM 현대화 도구 설치](#install-aem-modernize-Tools)
-2. [로컬 AEM Forms 환경을 위해 AEM 현대화 도구 활성화](#enable-aem-modernize-Tools)
+1. [로컬 AEM Forms 환경을 위해 AEM 현대화 도구 활성화](#enable-aem-modernize-Tools)
 
 ### 로컬 AEM Forms 환경에 AEM 현대화 도구 설치 {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ AEM 현대화 도구 설치 및 구성 방법:
    ```Shell
        mvn clean install 
    ```
+
 ![설치 이미지](/help/forms/assets/aem-modernize-install-steps.png)
 
 성공적으로 설치하면 AEM 현대화 도구 를 해당 환경에서 사용할 수 있게 됩니다.
@@ -128,10 +129,12 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
 1. **[!UICONTROL 작업 이름]**&#x200B;을(를) 지정하십시오.
 1. **[!UICONTROL 양식]** 탭에서 다음 옵션 중 하나를 선택할 수 있습니다.
+
    * **없음** : 양식 전환을 시작하기 전에 기초 구성 요소 기반 양식의 복사본을 만들지 않으려면 옵션을 선택합니다.
    * **복원** : 양식 전환을 시작하기 전의 상태로 양식을 복원하려면 옵션을 선택합니다.
    * **Target에 복사**: 양식 전환을 시작하기 전에 기초 구성 요소 기반 양식의 복사본을 만들려면 옵션을 선택하십시오.
-이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. **대상에 복사** 옵션을 선택하면 **[!UICONTROL Source 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
+
+   이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. **대상에 복사** 옵션을 선택하면 **[!UICONTROL Source 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
 
 1. **[!UICONTROL Source 경로]**&#x200B;에서 `source folder` 이름을 지정하십시오.
 1. **[!UICONTROL 대상 경로]**&#x200B;에서 `target folder` 이름을 지정하십시오.
@@ -151,7 +154,8 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
    ![AEM 현대화 도구 성공](/help/forms/assets/aem-modernize-tools-success.png)
 
-1. 적응형 양식을 선택하고 > **[!UICONTROL 속성]**을 선택합니다. 양식 속성 페이지가 열립니다.
+1. 적응형 양식을 선택하고 > **[!UICONTROL 속성]**&#x200B;을 선택합니다. 양식 속성 페이지가 열립니다.
+
    ![AEM 현대화 도구 대상 폴더](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. **[!UICONTROL 저장 후 닫기]**를 선택하여 변환된 양식의 속성을 다시 저장합니다.
