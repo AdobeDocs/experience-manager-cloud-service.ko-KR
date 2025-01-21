@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 268c7357e77412d177aa29dfd22ce381192f13d6
 workflow-type: tm+mt
-source-wordcount: '5971'
+source-wordcount: '5978'
 ht-degree: 99%
 
 ---
@@ -87,6 +87,8 @@ ht-degree: 99%
          + [2020.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
+      + 2025년 {#2025}
+         + [2025.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [2024.11.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-11-0.md)
          + [2024.10.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-10-0.md)
@@ -649,7 +651,7 @@ ht-degree: 99%
       + [컬렉션 관리](/help/assets/manage-collections-assets-view.md)
       + [자산, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
-      + [재처리 중](/help/assets/reprocessing-assets-view.md)
+      + [재처리](/help/assets/reprocessing-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
@@ -1258,7 +1260,7 @@ ht-degree: 99%
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
          + [SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
          + [이벤트](/help/implementing/universal-editor/events.md)
-         + [구성 요소 필터링](/help/implementing/universal-editor/filtering.md)
+         + [필터링 구성 요소](/help/implementing/universal-editor/filtering.md)
          + [맞춤화](/help/implementing/universal-editor/customizing.md)
          + [아키텍처](/help/implementing/universal-editor/architecture.md)
          + [인증](/help/implementing/universal-editor/authentication.md)

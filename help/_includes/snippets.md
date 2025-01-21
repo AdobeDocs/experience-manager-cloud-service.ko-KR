@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # 스니펫 {#snippets}
@@ -233,11 +233,11 @@ ht-degree: 96%
    * 라이브 웹 사이트의 URL. 예: `www.mydomain.com`.
    * 원본 웹 사이트의 URL(`.hlx` URL).
 
-## 범용 편집기가 SPA 편집기보다 선호됩니다. {#ue-over-spa}
+## SPA 편집기보다는 범용 편집기가 더 선호됩니다. {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->SPA 편집기는 Adobe에서 계속 지원되지만 AEM에서 headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
+>SPA 편집기는 Adobe에서 계속 지원하지만 AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
 >
->* Headless 콘텐츠를 시각적으로 편집하기 위한 [유니버설 편집기](/help/edge/wysiwyg-authoring/authoring.md).
->* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md).
+>* Headless 콘텐츠를 시각적으로 편집하기 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
+>* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)
