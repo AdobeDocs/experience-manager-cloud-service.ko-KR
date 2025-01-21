@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4990'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ retrieving programs of your organization ...
 
 Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니다.
 
-* AEM as a Cloud Service SDK를 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 검증되면 코드를 git 기능 분기에 커밋합니다. git에 커밋은 선택 사항이지만 분기는 아직 주 라인에 포함되지 않아야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
+* AEM as a Cloud Service SDK을 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 검증되면 코드를 git 기능 분기에 커밋합니다. git에 커밋은 선택 사항이지만 분기는 아직 주 라인에 포함되지 않아야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
 
 * 다른 기능에서 RDE를 사용했으며 [기본 상태로 재설정](#reset-rde)하려는 경우 RDE를 재설정하십시오. <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->다시 설정하는 데 몇 분 정도 소요되며 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
 
@@ -548,23 +548,23 @@ RDE를 재설정하면 작성자 및 게시 인스턴스 모두에서 모든 사
 
 재설정하면 RDE가 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다.
 
-<!-- Alexandru: hiding for now, do not delete
+재설정은 [Cloud Manager](#reset-the-rde-cloud-manager) 또는 [명령줄](#reset-the-rde-command-line)을 통해 수행할 수 있습니다. 재설정하는 데 몇 분이 소요되며 기존 콘텐츠와 코드가 모두 RDE에서 삭제됩니다.
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[참고!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>재설정 기능을 사용하려면 Cloud Manager 개발자 역할을 할당해야 합니다. 그렇지 않은 경우 재설정 작업을 수행하면 오류가 발생합니다.
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### 명령줄을 통해 RDE 재설정 {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+다음을 실행하여 RDE를 재설정하고 기본 상태로 되돌릴 수 있습니다.
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+이 작업은 보통 몇 분 정도 소요되며, 성공할 경우 ```Environment reset.```을(를) 보고하거나 오류가 발생하면 ```Failed to reset the environment.```을(를) 보고합니다. 구조화된 출력의 경우 아래 ```--json``` 출력에 대한 장을 참조하십시오.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+[status 명령](#checking-rde-status)을(를) 사용하여 환경이 다시 준비되었는지 확인하십시오.
+
+### Cloud Manager에서 RDE 재설정 {#reset-the-rde-cloud-manager}
 
 Cloud Manager을 사용하여 아래 단계를 수행하여 RDE를 재설정할 수 있습니다.
 
@@ -942,7 +942,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
 }
 ```
 
-#### 완료 대기 {#wait}
+#### 완료 대기, 재설정되었습니다. {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### 완료 대기, 재설정 실패 {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
