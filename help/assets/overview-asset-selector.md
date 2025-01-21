@@ -3,16 +3,16 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 마이크로 프론트엔드 자산 선택기 {#Overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 마이크로 프론트엔드 자산 선택기는 [!DNL Experience Manager Assets] 저장소와 간편하게 통합하는 사용자 인터페이스를 제공하므로 사용자는 해당 저장소에서 사용 가능한 디지털 자산을 탐색 또는 검색하고 애플리케이션 작성 경험에 사용할 수 있습니다.
@@ -159,10 +159,10 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 자산 선택기를 사용하면 네 가지 다른 보기에서 자산을 볼 수 있습니다.
 
-* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]** 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
-* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]** 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
-* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]** 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
-* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL 워터폴 보기]** 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
+* ![list view](assets/do-not-localize/list-view.png) [!UICONTROL **목록 보기**] 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
+* ![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL **격자 보기**] 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
+* ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **갤러리 보기**] 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
+* ![폭포 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **폭포** 보기] 폭포 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
 **개요 그래픽**
 

@@ -5,16 +5,16 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
 # 마이크로 프론트엔드 대상 선택기 {#Overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 마이크로 프론트엔드 대상 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 저장소와 간편하게 통합되는 애플리케이션 내에서 사용자 인터페이스를 제공합니다. [!DNL Experience Manager Assets as a Cloud Service] 저장소 내에서 적절한 폴더를 찾아보거나 검색하고, 애플리케이션에서 자산을 업로드할 수 있습니다.
@@ -127,7 +127,7 @@ interface SelectedDestination {
 }
 ```
 
-다음 표에서는 선택한 대상의 몇 가지 중요한 속성에 대해 설명합니다.
+다음 테이블에서는 선택한 대상의 몇 가지 중요한 속성에 대해 설명합니다.
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
@@ -189,7 +189,7 @@ interface SelectedDestination {
 
 ## 대상 선택기 속성 사용 {#destination-selector-properties}
 
-대상 선택기 속성을 사용하여 대상 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 표에는 대상 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
+대상 선택기 속성을 사용하여 대상 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 테이블에는 대상 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |---|---|---|---|---|
@@ -271,10 +271,10 @@ interface SelectedDestination {
 
 대상 선택기 를 사용하면 에셋을 다음 네 가지 보기로 볼 수 있습니다.
 
-* **![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]**: 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
-* **![격자 보기](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]**: 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
-* **![갤러리 보기](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]**: 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
-* **![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL 워터폴 보기]**: 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
+* ![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL **목록 보기**]: 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
+* ![격자 보기](assets/do-not-localize/grid-view.png) [!UICONTROL **격자 보기**]: 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
+* ![갤러리 보기](assets/do-not-localize/gallery-view.png) [!UICONTROL **갤러리 보기**]: 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
+* ![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **워터폴 보기**]: 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
 ### 정보 {#info}
 

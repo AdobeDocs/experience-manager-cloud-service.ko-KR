@@ -4,28 +4,29 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 P
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '853'
+ht-degree: 6%
 
 ---
 
 # Experience Manager Assetsas a Cloud Service 에서 PDF 문서 관리 {#add-assets-to-experience-manager}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets은 Document Cloud PDF 뷰어와 원활하게 통합되므로 PDF 문서의 여러 페이지를 미리 볼 수 있습니다. 또한 주석, 검색 텍스트, 책갈피 및 썸네일을 사용하여 PDF 문서를 탐색하는 등의 고급 Document Cloud PDF 뷰어 기능을 동일한 지붕 아래에서 사용할 수도 있습니다. 또한 Experience Manager Assets을 사용하면 지원되는 다른 형식의 문서를 업로드하고 PDF 형식으로 미리 볼 수 있습니다.
 
 Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점을 제공합니다.
+
 * [PDF Document Cloud 뷰어 구성 요소 지원](#pdf-doc-cloud)
 * [PDF 자산에 대한 여러 페이지 미리보기 및 주석 지원](#multi-page)
 * [다른 형식의 문서에 대한 여러 페이지 미리보기 지원](#multi-format)
 
-> 팁
-> 이전에 업로드한 PDF 문서의 여러 PDF 미리 보기를 가져올 수 없는 경우 페이지를 선택하고 **![재처리](/help/assets/assets/Reprocess.svg) Assets 재처리**&#x200B;를 클릭합니다.
+>[!TIP]
 >
+> 이전에 업로드한 PDF 문서의 여러 PDF 미리 보기를 가져올 수 없는 경우 페이지를 선택하고 ![재처리](/help/assets/assets/Reprocess.svg) **Assets 재처리**&#x200B;를 클릭합니다.
 
 ## PDF Document Cloud 뷰어 구성 요소 지원 {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PD
 
 여러 페이지를 미리 볼 때 PDF 문서에 [주석](#pdf-annotations)을 적용할 수도 있습니다.
 
-> 메모
-> 미리 볼 수 있는 에셋의 최대 크기는 최대 100MB입니다.
+>[!NOTE]
 >
+> 미리 볼 수 있는 에셋의 최대 크기는 최대 100MB입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PD
 Experience Manager Assets을 사용하면 PDF 문서에 주석을 추가할 수 있습니다. PDF 문서에는 여러 개의 주석이 있을 수 있습니다.
 
 PDF 문서에 주석을 달려면 다음 단계를 수행하십시오.
+
 1. Assets 인터페이스로 이동하여 주석을 추가할 PDF 문서로 이동합니다. 기본 PDF 뷰어가 오른쪽에 열리고 선택한 PDF 문서의 미리보기가 표시됩니다.
 1. 상단 메뉴에서 **주석 달기**를 클릭합니다.
 다음은 PDF 문서에 적용할 수 있는 주석입니다.
@@ -126,15 +128,16 @@ PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지�
 ![다른 형식의 문서를 여러 페이지로 미리 봅니다](/help/assets/assets/multi-page-other-formats.png)
 
 지원되는 다른 문서 형식의 여러 페이지를 미리 보려면 다음 단계를 수행하십시오.
+
 1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
 1. 업로드할 문서를 검색하고 미리 봅니다.
 1. 문서를 엽니다.
 1. 왼쪽 패널의 정적 섹션 아래에서 PDF 를 선택합니다. 오른쪽 패널에는 에셋의 여러 페이지 미리보기가 표시됩니다. 미리 보려는 페이지를 선택하려면 왼쪽 패널에서 축소판을 선택합니다.
 
-> 메모
+>[!NOTE]
+>
 > * 미리 볼 수 있는 에셋의 최대 크기는 최대 100MB입니다.
 > * 미리 볼 XLS 또는 XLSX 파일의 최대 크기는 20MB입니다.
->
 
 **추가 참조**
 
