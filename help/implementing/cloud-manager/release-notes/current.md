@@ -3,9 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.1.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 22%
 
 ---
@@ -54,7 +55,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
    * **Java 21 런타임 배포**
       * Java 21 런타임은 Java 17 또는 Java 21을 사용하여 빌드할 때 배포됩니다.
       * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 샌드박스 및 개발 환경의 경우 2월에 시작되며 4월에 프로덕션 환경으로 확장됩니다.
-      * Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 고객은 Adobe([aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com))에 문의할 수 있습니다.
+      * Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 Java 11을 사용하여 빌드하는 고객은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에서 Adobe에 문의할 수 있습니다.
 
 
 <!-- ## Early adoption program {#early-adoption}
