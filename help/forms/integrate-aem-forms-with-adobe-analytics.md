@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -118,7 +118,7 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. 데이터 요소를 저장하려면 **[!UICONTROL 저장]**&#x200B;을(를) 선택하십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### 규칙 구성 {#configure-rules}
 
@@ -180,7 +180,7 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
    중단, 오류, 필드 방문, 도움말, 렌더링, 저장 및 제출과 같은 모든 이벤트 유형에 대한 규칙을 만들 수 있습니다.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Publish 흐름 {#publish-flow}
