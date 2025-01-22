@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,7 @@ data:
 | **설정 해제** | reqProperty | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 문자열 리터럴 또는 요청 매개 변수일 수 있는 지정된 값으로 제거합니다. |
 |         | var | 지정된 변수를 제거합니다. |
 |         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
+|         | queryParamDoesNotMatch | 지정된 정규 표현식과 일치하지 않는 모든 쿼리 매개 변수를 제거합니다. |
 | **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨), 요청 헤더 또는 쿼리 매개 변수, 쿠키 또는 변수의 일부를 새 값으로 바꿉니다. |
 |              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수, 쿠키 또는 변수를 해당 소문자 값으로 설정합니다. |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
