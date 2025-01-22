@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.12.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2024.12.0 릴리스에 대해 알아봅니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.12.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 정보 {#release-notes}
 
-AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2024.12.0 릴리스에 대해 알아봅니다.
+AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대해 알아봅니다.
 
 >[!NOTE]
 >
@@ -21,64 +20,50 @@ AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2024.12.0 릴
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.12.0 릴리스 일자는 2024년 12월 5일 목요일입니다.
+AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1월 22일 수요일입니다.
 
-다음 릴리스는 2025년 1월 23일에 예정되어 있습니다.
+다음 릴리스는 2025년 2월 13일 금요일에 예정되어 있습니다.
 
 
 ## 새로운 기능 {#what-is-new}
 
-* **코드 품질 규칙:** 2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계에서 이제 업그레이드된 SonarQube 버전 9.9.5.90363이 사용됩니다.
+* **코드 품질 규칙:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일에 예정된 Cloud Manager 2025.2.0 릴리스에서 SonarQube Server 9.9를 사용하여 시작됩니다.
 
-  [이 링크](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)의 AEM as a Cloud Service에서 Cloud Manager에 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인에 대한 보안 점수 및 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미쳐 배포를 잠재적으로 차단할 수 있습니다.
+준비를 위해 업데이트된 SonarQube 규칙을 [코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 사용할 수 있습니다.
 
-<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+다음 파이프라인 텍스트 변수를 설정하여 새 규칙을 &quot;조기 확인&quot;할 수 있습니다.
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-* **A 레코드 유형:** AEM Cloud Manager의 CDN 구성을 사용하는 도메인의 라이브 준비 상태를 개선하기 위해 A 레코드 유형에 대한 지원이 추가되었습니다. 이제 Fastly의 IP를 나타내는 CNAME 레코드 유형 또는 A 레코드 유형을 추가하여 실행할 수 있는 옵션이 제공되어 도메인 라우팅이 간소화됩니다. 이러한 개선을 통해 Fastly에서 도메인을 설정할 때 CNAME 레코드에만 의존해야 하는 제한이 해소됩니다.
+또한 다음 변수를 설정하여 동일한 커밋에 대해 코드 품질 단계가 실행되도록 합니다(일반적으로 동일한 `commitId`에 대해 건너뜀).
 
-  [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. <!-- CMGR-63076 -->
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
-
-* **Edge Delivery 사이트에 여러 도메인 추가:** 이제 apex 및 비apex 도메인을 포함하여 여러 도메인을 AEM Cloud Manager의 EDS(Edge Delivery 사이트)에 추가할 수 있습니다. 이러한 개선을 통해 EDS 원본과 여러 도메인을 연결하는 데 있었던 기존 제한 사항이 해결됩니다. 이 업데이트를 통해 도메인 구성 관리가 더욱 유연해지고 복잡한 도메인 설정이 있는 사이트의 실행 프로세스가 간소화됩니다. <!-- CMGR-63007 -->
-
-* **고급 필터링 옵션:** AEM Cloud Manager의 파이프라인 실행 페이지와 SSL 인증서 페이지에 고급 필터링 옵션이 도입되었습니다. 이제 여러 기준으로 필터링할 수 있으므로 관련 데이터에 더 빠르게 액세스하고 배포 효율성을 개선할 수 있습니다. <!-- CMGR-26263 -->
-
-   * **파이프라인 활동 필터링:** 파이프라인 활동 필터링이 포함되어 특정 파이프라인 활동에 대한 검색 결과를 구체화할 수 있습니다. 사용 가능한 필터로는 파이프라인, 액션, 상태가 있습니다.
-     ![파이프라인 활동 필터링](/help/implementing/cloud-manager/assets/filters-pipeline.png)
-
-
-   * **SSL 인증서 필터링:** SSL 인증서 필터링이 포함되어 특정 인증서에 대한 검색 결과를 구체화할 수 있습니다. 사용 가능한 필터로는 SSL 인증서 이름, 소유권, 상태가 있습니다.
-     ![SSL 인증서 필터링](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
-
-## 얼리 어답터 프로그램 {#early-adoption}
-
-Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
-
-### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
-
-<!-- BOTH CS & AMS -->
-
-**자체 Git 가져오기** 기능이 확장되어 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원이 포함되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
-
-이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
-
-[Cloud Manager에서 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
-
-![저장소 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![변수 구성 페이지](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만, 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
+>Adobe은 기본 프로덕션 파이프라인과 동일한 분기로 구성된 새 CI/CD 코드 품질 파이프라인을 만들 것을 권장합니다. 2025년 2월 13일 릴리스에서 적절한 변수를 *이전*&#x200B;으로 설정하여 새로 적용된 규칙이 차단기를 도입하지 않는지 확인하십시오.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+* **Java 17 및 Java 21 빌드 지원:** 고객은 이제 Java 17 또는 Java 21을 사용하여 빌드할 수 있으므로 성능 향상 및 새로운 언어 기능에 액세스할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)을 참조하십시오. 빌드 버전이 Java 17 또는 Java 21로 설정된 경우 배포되는 런타임은 Java 21입니다.
 
-## 버그 수정
+   * **기능 활성화**
+      * 이 기능은 2025년 2월 13일 목요일에 모든 고객에 대해 활성화되고 새로운 SonarQube 버전의 기본 롤아웃이 시작됩니다.
+      * 고객은 SonarQube 9.9 버전을 업그레이드하기 위해 위에 설명된 두 가지 변수 구성을 설정하여 *즉시*&#x200B;이 기능을 사용할 수 있습니다.
 
-* AEM Cloud Manager에서 활성 도메인 매핑이 있는 도메인이 삭제되는 것을 방지하기 위한 보호 장치가 추가되었습니다. 이제 이러한 도메인을 삭제하려고 시도하는 사용자는 도메인 삭제를 진행하기 전에 먼저 도메인 매핑을 삭제하라는 오류 메시지를 받게 됩니다. 이 워크플로를 통해 도메인 무결성이 보장되며 실수로 인한 구성 오류가 방지됩니다. <!-- CMGR-63033 -->
-* 드물게는 사용자가 각각의 사례에서 잘못된 상태가 연결되어 도메인 이름을 추가하거나 SSL 인증서를 업데이트하지 못하는 경우가 있었습니다. <!-- CMGR-62816 -->
+   * **Java 21 런타임 배포**
+      * Java 21 런타임은 Java 17 또는 Java 21을 사용하여 빌드할 때 배포됩니다.
+      * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 샌드박스 및 개발 환경의 경우 2월에 시작되며 4월에 프로덕션 환경으로 확장됩니다.
+      * Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 고객은 Adobe([aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com))에 문의할 수 있습니다.
+
+
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+
+<!-- ## Bug fixes -->
+
+
 
 
 <!-- ## Known issues {#known-issues} -->

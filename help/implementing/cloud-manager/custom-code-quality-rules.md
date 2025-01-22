@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
 workflow-type: tm+mt
-source-wordcount: '4421'
-ht-degree: 67%
+source-wordcount: '4384'
+ht-degree: 66%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 67%
 
 철저한 테스트를 통해 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 지정 코드 품질 규칙에 대해 알아봅니다. [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)도 참조하세요.
 
->[!NOTE]
+전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. *현재* 규칙 전체 목록을 [이 링크를 사용하여](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)다운로드할 수 있습니다. 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
+
+>[!IMPORTANT]
 >
->전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
+>2025년 2월 13일 목요일(Cloud Manager 2025.2.0)부터 Cloud Manager 코드 품질은 업데이트된 SonarQube 9.9 버전과 [여기에서 다운로드](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)할 수 있는 업데이트된 규칙 목록을 사용합니다.
 
 >[!NOTE]
 >
@@ -187,7 +189,7 @@ public void orDoThis () {
 ### 항상 ResourceResolver 오브젝트를 닫아야 함 {#resourceresolver-objects-should-always-be-closed}
 
 * **키**: CQRules:CQBP-72
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
@@ -229,7 +231,7 @@ public void orDoThis(Session session) throws Exception {
 ### Sling 서블릿 경로를 사용하여 서블릿을 등록하지 않음 {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **키**: CQRules:CQBP-75
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
@@ -249,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### 발견된 예외를 기록하거나 표시하되 둘 다 해서는 안 됨 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **키**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -291,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### Throw 문 바로 뒤에 Log 문을 사용하지 않음 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **키**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -317,7 +319,7 @@ public void doThis() throws Exception {
 ### GET 또는 HEAD 요청을 처리할 때 INFO에서 로깅하지 않음 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **키**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 
 일반적으로 INFO 로그 수준은 중요한 작업을 구분하는 데 사용되어야 하며 기본적으로 Experience Manager는 INFO 수준 또는 그 이상에서 기록되도록 구성됩니다. GET 및 HEAD 메서드는 읽기 전용 작업이어야 하므로 중요한 작업을 구성하지 않습니다. GET 또는 HEAD 요청에 대한 응답으로 INFO 수준에서 로깅하면 상당한 로그 노이즈가 발생하여 로그 파일에서 유용한 정보를 식별하기가 더 어려워질 수 있습니다. GET 또는 HEAD 요청을 처리할 때 문제가 발생하면 WARN 또는 ERROR 수준에서 기록합니다. 자세한 문제 해결 정보가 필요한 경우 디버그 또는 TRACE 수준을 사용합니다.
@@ -345,7 +347,7 @@ public void doGet() throws Exception {
 ### Logging 문의 첫 번째 매개변수로 Exception.getMessage()를 사용하지 않음 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **키**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -378,7 +380,7 @@ public void doThis() {
 ### Catch 블록에 로그인할 때 WARN 또는 ERROR 수준을 유지해야 함 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **키**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -411,7 +413,7 @@ public void doThis() {
 ### 콘솔에 스택 추적을 인쇄하지 않음 {#do-not-print-stack-traces-to-the-console}
 
 * **키**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -444,7 +446,7 @@ public void doThis() {
 ### 표준 출력 또는 표준 오류로 출력하지 않음 {#do-not-output-to-standard-output-or-standard-error}
 
 * **키**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -477,7 +479,7 @@ public void doThis() {
 ### 하드 코딩된 앱 및 라이브러리 경로 방지 {#avoid-hardcoded-apps-and-libs-paths}
 
 * **키**: CQRules:CQBP-71
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -502,7 +504,7 @@ public void doThis(Resource resource) {
 ### Sling 스케줄러를 사용하지 않음 {#sonarqube-sling-scheduler}
 
 * **키**: CQRules:AMSCORE-554
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -513,7 +515,7 @@ public void doThis(Resource resource) {
 ### 더 이상 사용되지 않는 Experience Manager API를 사용하지 않음 {#sonarqube-aem-deprecated}
 
 * **키**: AMSCORE-553
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -800,7 +802,7 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 ### 기본 작성 모드는 클래식 UI가 아니어야 합니다. {#oakpal-default-authoring}
 
 * **키**: ClassicUIAuthoringMode
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -809,7 +811,7 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 ### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 함 {#oakpal-components-dialogs}
 
 * **키**: ComponentWithOnlyClassicUIDialog
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -824,7 +826,7 @@ Experience Manager 현대화 도구 설명서는 구성 요소를 Classic UI에�
 ### 패키지에 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠를 혼합하지 않음 {#oakpal-packages-immutable}
 
 * **키**: ImmutableMutableMixedPackage
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -839,7 +841,7 @@ Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저
 ### 역방향 복제 에이전트를 사용하지 않음 {#oakpal-reverse-replication}
 
 * **키**: ReverseReplication
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell`/Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -892,7 +894,7 @@ Adobe Experience Manager as a Cloud Service의 에셋 처리를 위해 에셋 �
 ### 편집 가능한 템플릿을 위해 정적 템플릿을 사용하지 않음 {#oakpal-static-template}
 
 * **키**: StaticTemplateUsage
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -903,7 +905,7 @@ Adobe Experience Manager as a Cloud Service의 에셋 처리를 위해 에셋 �
 ### 기존 기초 구성 요소를 사용하지 않음 {#oakpal-usage-legacy}
 
 * **키**: LegacyFoundationComponentUsage
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -914,7 +916,7 @@ Adobe Experience Manager as a Cloud Service의 에셋 처리를 위해 에셋 �
 ### 지원되는 실행 모드 이름 및 순서만 사용해야 함 {#oakpal-supported-runmodes}
 
 * **키**: SupportedRunmode
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -923,7 +925,7 @@ Experience Manager as a Cloud Service는 실행 모드 이름에 대해 엄격�
 ### 사용자 정의 검색 인덱스 정의 노드는 `/oak:index`의 직접 하위 노드여야 함 {#oakpal-custom-search}
 
 * **키**: OakIndexLocation
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -932,7 +934,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 ### 사용자 정의 검색 인덱스 정의 노드의 compatVersion을 2로 설정해야 함 {#oakpal-custom-search-compatVersion}
 
 * **키**: IndexCompatVersion
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -941,7 +943,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 ### 사용자 정의 검색 인덱스 정의 노드의 하위 노드 유형은 `nt:unstructured `여야 함{#oakpal-descendent-nodes}
 
 * **키**: IndexDescendantNodeType
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -950,7 +952,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 ### 사용자 정의 검색 인덱스 정의 노드에 하위 노드가 있는 “indexRules” 하위 노드를 포함해야 함 {#oakpal-custom-search-index}
 
 * **키**: IndexRulesNode
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -959,7 +961,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 ### 사용자 정의 검색 인덱스 정의 노드는 명명 규칙을 준수해야 함 {#oakpal-custom-search-definitions}
 
 * **키**: IndexName
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -977,7 +979,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 ### 사용자 정의 검색 인덱스 정의 노드에 “seed” 속성을 포함하지 않음 {#oakpal-property-name-seed}
 
 * **키**: IndexSeedProperty
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -986,7 +988,7 @@ Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스
 ### 사용자 정의 검색 인덱스 정의 노드에 “reindex” 속성을 포함하지 않음 {#oakpal-reindex-property}
 
 * **키**: IndexReindexProperty
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -1031,7 +1033,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 사용자 지정 검색 인덱스 정의에 `compatVersion`이(가) 포함된 경우 2로 설정해야 합니다. {#oakpal-compatVersion}
 
 * **키**: IndexCompatVersion
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 주요
 * **이후**: 버전 2022.1.0
 
@@ -1039,7 +1041,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### `includedPaths`을(를) 지정하는 인덱스 노드는 같은 값으로 `queryPaths`도 지정해야 합니다. {#oakpal-included-paths-without-query-paths}
 
 * **키**: IndexIncludedPathsWithoutQueryPaths
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
@@ -1048,7 +1050,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 일반 노드 형식에 `nodeScopeIndex`을(를) 지정하는 인덱스 노드는 `includedPaths` 및 `queryPaths`도 지정해야 합니다. {#oakpal-full-text-on-generic-node-type}
 
 * **키**: IndexFulltextOnGenericType
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
@@ -1094,7 +1096,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 쿼리 엔진의 queryLimitReads 속성을 재정의하면 안 됩니다. {#oakpal-query-limit-reads}
 
 * **키**: OverrideOfQueryLimitReads
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
@@ -1103,7 +1105,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 동일한 색인의 여러 활성 버전 {#oakpal-multiple-active-versions}
 
 * **키**: IndexDetectMultipleActiveVersionsOfSameIndex
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
@@ -1130,7 +1132,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 완전히 맞춤화된 색인 정의의 이름은 공식 지침을 준수해야 합니다 {#oakpal-fully-custom-index-name}
 
 * **키**: IndexValidFullyCustomName
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
@@ -1191,7 +1193,7 @@ Cloud Service. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operat
 ### 태그 속성 {#tags-property}
 
 * **키**: IndexHasValidTagsProperty
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2023.1.0
 
