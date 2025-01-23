@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅�
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 전용으로 설정된 HTML 콘텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR)이 구성된 경우 Dispatcher에서 캐시될 수 있으므로 승인된 사용자만 콘텐츠를 제공할 수 있습니다.
+* 전용으로 설정된 HTML 콘텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)이 구성된 경우 Dispatcher에서 캐시될 수 있으므로 승인된 사용자만 콘텐츠를 제공할 수 있습니다.
 
   >[!NOTE]
   >[Dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 포함한 다른 메서드가 값을 재정의하지 않습니다.
@@ -147,7 +147,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 >[!NOTE]
 >Cloud Manager 환경 변수 AEM_BLOB_ENABLE_CACHING_HEADERS를 true로 설정하여 이전 기본 동작을 새 동작(65000보다 높은 프로그램 ID)과 일치하도록 변경합니다. 프로그램이 이미 라이브 상태인 경우 변경 후 컨텐츠가 예상대로 작동하는지 확인하십시오.
 
-이제 비공개로 표시된 Blob 저장소의 이미지는 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR)을 사용하여 Dispatcher에서 캐시할 수 없습니다. 이 이미지는 항상 AEM 원본에서 요청되며 사용자에게 권한이 부여된 경우 제공됩니다.
+이제 비공개로 표시된 Blob 저장소의 이미지는 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)을 사용하여 Dispatcher에서 캐시할 수 없습니다. 이 이미지는 항상 AEM 원본에서 요청되며 사용자에게 권한이 부여된 경우 제공됩니다.
 
 >[!NOTE]
 >[dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 포함한 다른 메서드가 값을 재정의하지 않습니다.
@@ -240,12 +240,24 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 2023년 10월 이후에 생성된 환경의 경우, CDN은 더 나은 캐시 요청을 위해 일반적인 마케팅 관련 쿼리 매개 변수, 특히 다음 정규 표현식 패턴과 일치하는 매개 변수를 제거합니다.
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-이 동작을 비활성화하려면 지원 티켓을 제출하십시오.
+이 기능은 [CDN 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)에서 `requestTransformations` 플래그를 사용하여 켜거나 끌 수 있습니다.
 
-2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성의 `ignoreUrlParams` 속성을 구성하는 것이 좋습니다. [Dispatcher 구성 - URL 매개 변수 무시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)를 참조하십시오.
+예를 들어 CDN 수준에서 마케팅 매개 변수 제거를 중지하려면 다음 섹션이 포함된 구성을 사용하여 `removeMarketingParams: false`을(를) 배포해야 합니다.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+CDN 수준에서 `removeMarketingParams` 기능이 비활성화된 경우에도 Dispatcher 구성의 `ignoreUrlParams` 속성을 구성하는 것이 좋습니다. [Dispatcher 구성 - URL 매개 변수 무시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)를 참조하십시오.
 
 마케팅 매개 변수를 무시할 수 있는 방법에는 두 가지가 있습니다. (첫 번째 플러그인이 쿼리 매개 변수를 통해 캐시 무효화를 무시하는 것이 좋습니다.)
 
@@ -518,7 +530,7 @@ clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개�
 
 이 기능의 메커니즘은 클라이언트 라이브러리 링크에 추가되는 직렬화된 해시입니다. 브라우저가 CSS/JS를 캐시할 수 있는 고유한 버전 URL을 보장합니다. 직렬화된 해시는 클라이언트 라이브러리의 내용이 변경될 때만 업데이트됩니다. 즉, 새 배포가 있더라도 관련되지 않은 업데이트가 발생하는 경우(즉, 클라이언트 라이브러리의 기본 css/js가 변경되지 않는 경우) 참조는 동일하게 유지됩니다. 결과적으로 브라우저 캐시의 중단을 줄입니다.
 
-### 클라이언트측 라이브러리의 Longcache 버전 사용 - AEM as a Cloud Service SDK 빠른 시작 {#enabling-longcache}
+### 클라이언트측 라이브러리의 Longcache 버전 활성화 - AEM as a Cloud Service SDK 빠른 시작 {#enabling-longcache}
 
 기본 clientlib은 다음 예제와 같이 HTML 페이지에 포함됩니다.
 
@@ -534,7 +546,7 @@ clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개�
 
 모든 AEM as a Cloud Service 환경에서 엄격한 clientlib 버전 관리가 기본적으로 활성화됩니다.
 
-로컬 SDK 빠른 시작에서 엄격한 clientlib 버전 관리를 활성화하려면 다음을 수행하십시오.
+로컬 SDK 빠른 시작에서 엄격한 clientlib 버전 관리를 활성화하려면 다음을 수행합니다.
 
 1. OSGi 구성 관리자 `<host>/system/console/configMgr`(으)로 이동
 1. Adobe Granite HTML 라이브러리 관리자에 대한 OSGi 구성을 찾습니다.
