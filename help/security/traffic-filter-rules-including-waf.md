@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
-ht-degree: 99%
+source-wordcount: '4053'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개 변수 없이 URL의 전체 경로를 반환합니다. (이스케이프 처리되지 않은 변형에 `pathRaw` 사용)</li><li>`url`: 쿼리 매개 변수를 포함하는 전체 URL을 반환합니다. (이스케이프 처리되지 않은 변형에 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개 변수 없이 URL의 전체 경로를 반환합니다. (이스케이프 처리되지 않은 변형에 `pathRaw` 사용)</li><li>`url`: 쿼리 매개 변수를 포함하는 전체 URL을 반환합니다. (이스케이프 처리되지 않은 변형에 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더의 첫 번째 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
