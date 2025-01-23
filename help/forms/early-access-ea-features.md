@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
+source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1779'
 ht-degree: 30%
 
 ---
@@ -90,7 +90,7 @@ WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms �
 
 ### AEM Forms-Marketo 커넥터
 
-[AEM Forms to Marketo 커넥터](/help/forms/integrate-adaptive-form-with-marketo-engage.md)는 Adobe Experience Manager(AEM)로 빌드된 웹 양식(적응형 Forms)과 마케팅 자동화 플랫폼인 Marketo 간의 차이를 메웁니다.
+[AEM Forms to Marketo 커넥터](/help/forms/integrate-form-to-marketo-engage.md)는 Adobe Experience Manager(AEM)로 빌드된 웹 양식(적응형 Forms)과 마케팅 자동화 플랫폼인 Marketo 간의 차이를 메웁니다.
 
 누군가가 AEM Adaptive Forms으로 만든 양식을 웹 사이트에서 제출하면 커넥터는 제출된 데이터를 자동으로 Marketo으로 보내게 합니다. 따라서 수동으로 데이터를 입력할 필요가 없어지고 오류 위험이 줄어듭니다.
 
@@ -100,6 +100,12 @@ WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms �
 
 본질적으로 AEM Forms-Marketo 커넥터는 두 플랫폼의 장점을 활용하여 보다 효율적이고 효과적인 마케팅 단계를 만들 수 있도록 지원합니다.
 
+시작할 준비가 되셨습니까? 다음 문서는 혁신을 사용하기 위한 자세한 지침을 제공합니다.
+
+* [AEM Forms와 Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)
+* [Marketo Engage과 적응형 양식 통합](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [기존 적응형 Forms에 대한 Marketo Engage 광고 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Marketo Engage에 기존 적응형 양식 제출](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## 추가적인 조기 액세스 혁신
 
