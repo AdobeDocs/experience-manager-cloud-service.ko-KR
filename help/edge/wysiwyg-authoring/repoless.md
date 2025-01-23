@@ -1,17 +1,17 @@
 ---
-title: 사이트 간 코드 재사용
+title: 여러 사이트에서 코드 재사용
 description: 대부분 동일하게 보이고 동작하지만 콘텐츠가 다른 유사한 사이트가 많은 경우, 무시 모델의 여러 사이트에서 코드를 공유하는 방법을 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 2%
 
 ---
 
-# 사이트 간 코드 재사용 {#repoless}
+# 여러 사이트에서 코드 재사용 {#repoless}
 
 대부분 동일하게 보이고 동작하지만 콘텐츠가 다른 유사한 사이트가 많은 경우, 무시 모델의 여러 사이트에서 코드를 공유하는 방법을 알아봅니다.
 
@@ -34,10 +34,11 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 * 문서 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 따라 사이트가 이미 완전히 설정되었습니다.
 * 최소한 AEM as a Cloud Service 2024.08을 실행하고 있습니다.
 
-또한 Adobe에게 두 항목을 구성하도록 요청해야 합니다. 이러한 요청을 수행하려면 Slack 채널을 통해 Adobe에 연락하거나 지원 문제를 제기하십시오.
+또한 Adobe에게 다음 항목을 구성하도록 요청해야 합니다. 다음 변경 사항을 적용하기 위해 Slack 채널을 통해 연락하거나 지원 문제를 제기하여 Adobe을 요청하십시오.
 
-* [aem.live 구성 서비스](https://www.aem.live/docs/config-service-setup#prerequisites)이(가) 사용자 환경에 대해 활성 상태이므로 관리자로 구성되었습니다.
-* 프로그램에 대해 Adobe 기능을 활성화해야 합니다.
+* 사용자의 환경에 대해 [aem.live 구성 서비스](https://www.aem.live/docs/config-service-setup#prerequisites)를 활성화하도록 요청하여 관리자로 구성되었는지 확인하십시오.
+* Adobe을 기준으로 프로그램에 대해 무시 기능을 활성화하도록 요청합니다.
+* Adobe에게 조직을 생성해 달라고 요청합니다.
 
 ## 재생 기능 활성화 {#activate}
 
@@ -64,67 +65,6 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### 구성 서비스 구성 {#config-service}
-
-[필수 구성 요소 ](#prerequisites)에서 설명한 대로 환경에 대해 구성 서비스를 사용하도록 설정해야 합니다. 이 cURL 명령을 사용하여 구성 서비스 설정을 확인할 수 있습니다.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-구성 서비스가 제대로 설정되면 다음과 유사한 JSON이 반환됩니다.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-구성 서비스가 활성화되지 않은 경우 프로젝트 Slack 채널을 통해 Adobe에게 연락하거나 지원 문제를 제기하십시오. 토큰을 가지고 구성 서비스가 활성화되어 있는지 확인하면 구성을 계속할 수 있습니다.
-
-1. 콘텐츠 소스가 제대로 설정되었는지 확인합니다.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. 공개 구성에 경로 매핑을 추가합니다.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-공개 구성이 만들어지면 `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`과(와) 유사한 URL을 통해 액세스하여 확인할 수 있습니다.
 
 ### 사이트 구성에 대한 경로 매핑 추가 및 기술 계정 설정 {#access-control}
 
@@ -184,6 +124,11 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 1. 다음과 유사한 cURL 명령을 사용하여 구성에서 기술 계정을 설정합니다.
 
+   * `admin` 블록을 조정하여 사이트에 대한 전체 관리 액세스 권한을 가져야 하는 사용자를 정의합니다.
+      * 이메일 주소 배열입니다.
+      * 와일드카드 `*`을(를) 사용할 수 있습니다.
+      * 자세한 내용은 [작성자에 대한 인증 구성](https://www.aem.live/docs/authentication-setup-authoring#default-roles) 문서를 참조하십시오.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
@@ -229,8 +174,8 @@ AEM이 다시 사용되지 않도록 구성되면 구성 서비스를 사용하�
 
 이제 기본 사이트가 무차별 사용을 위해 구성되었으므로 동일한 코드 베이스를 활용하는 추가 사이트를 만들 수 있습니다. 사용 사례에 따라 다음 설명서를 참조하십시오.
 
-* [복수 사이트 관리 무시](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [스테이징 및 프로덕션 환경 무시](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [저장소 없는 다중 사이트 관리](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [저장소 없는 스테이징 및 프로덕션 환경](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## 문제 해결 {#troubleshooting}
 

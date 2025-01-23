@@ -4,9 +4,9 @@ description: Edge Delivery Services이 각각 제공하는 단일 코드 베이�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 2%
 
 ---
@@ -112,6 +112,10 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
    * `code` 구성은 초기 프로젝트 만들기에 사용한 구성과 같아야 합니다.
    * `content` > `source` > `url`은(는) 만들고 있는 새 사이트의 이름에 맞게 조정해야 합니다. 이 예제에서는 `wknd-ch`입니다.
    * 즉, POST URL의 사이트 이름과 `content` > `source` > `url`이(가) 같아야 합니다.
+   * `admin` 블록을 조정하여 사이트에 대한 전체 관리 액세스 권한을 가져야 하는 사용자를 정의합니다.
+      * 이메일 주소 배열입니다.
+      * 와일드카드 `*`을(를) 사용할 수 있습니다.
+      * 자세한 내용은 [작성자에 대한 인증 구성](https://www.aem.live/docs/authentication-setup-authoring#default-roles) 문서를 참조하십시오.
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
