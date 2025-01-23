@@ -5,16 +5,16 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '984'
 ht-degree: 68%
 
 ---
 
 # Assets 보기 소개 {#assets-view}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Assets Essentials 배포](assets/banner-image.jpg)
@@ -68,7 +68,7 @@ Assets 보기는 관리 보기에서 사용할 수 없는 다음과 같은 주�
 
 ![내 작업 영역 개요](assets/my-workspace-demo.gif)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### 데이터 기반 의사 결정을 위한 인사이트 {#insights-data}
 
@@ -76,7 +76,7 @@ Assets 보기는 관리 보기에서 사용할 수 없는 다음과 같은 주�
 
 ![인사이트 개요](assets/insights-overview.gif)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![안내서 보기](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### 공동 작업을 가속화하는 Adobe Photoshop Express 통합 {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Assetsas a Cloud Service 용 향후 릴리스에는 [Adobe Express을 통한 Adobe Firefly 통합](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)도 포함됩니다.
 
@@ -96,7 +96,7 @@ Assetsas a Cloud Service 용 향후 릴리스에는 [Adobe Express을 통한 Ado
 
 ![폴더 업로드](assets/folder-uploads.gif)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 효율성 향상을 위한 검색 중심 접근 방식 {#search-first}
 
@@ -110,7 +110,7 @@ Assets 보기는 저장소에서 사용할 수 있는 에셋, 폴더 또는 컬�
 
 ![알림 수신](assets/notifications.gif)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### 관리자에게 더 나은 제어 기능을 제공하기 위한 자산 소프트 삭제 {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ Assets 보기는 저장소에서 사용할 수 있는 에셋, 폴더 또는 컬�
 
 ![소프트 삭제](assets/soft-delete.gif)
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 이러한 기능 외에도 자산 보기에서는 관리자 보기에서 사용할 수 없는 다음 기능을 수행할 수 있습니다.
 
