@@ -4,10 +4,10 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
+source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -316,7 +316,7 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 >
 >유니버설 편집기 [모델에 따라 콘텐츠 조각 필드의 유효성을 검사합니다](/help/assets/content-fragments/content-fragments-models.md#validation). 정규식 패턴 및 고유성 제약 조건과 같은 데이터 무결성 규칙을 적용할 수 있습니다.
 >
->이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족하게 됩니다.
+>이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족할 수 있습니다.
 
 >[!BEGINTABS]
 
@@ -455,14 +455,17 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
