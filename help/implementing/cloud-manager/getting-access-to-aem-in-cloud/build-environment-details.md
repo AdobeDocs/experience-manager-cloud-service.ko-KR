@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 36%
@@ -117,7 +117,7 @@ Java 21을 사용하여 로컬로 AEM을 실행하는 경우 `MaxPermSize` 매�
 >`.cloudmanager/java-version`을(를) `21` 또는 `17`(으)로 설정하면 Java 21 런타임이 배포됩니다. Java 21 런타임은 2025년 2월 13일 목요일부터 모든 환경(코드가 Java 11로 빌드된 환경뿐만 아니라)에 대한 점진적 롤아웃이 예약되어 있습니다. 롤아웃은 샌드박스 및 개발 환경에서 시작된 다음 2025년 4월에 모든 프로덕션 환경으로 롤아웃됩니다. Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 고객은 Adobe([aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com))에 문의할 수 있습니다.
 
 
-#### 빌드 시간 요구 사항
+#### 빌드 시간 요구 사항 {#build-time-reqs}
 
 Java 21 및 Java 17을 사용하여 프로젝트를 작성할 수 있으려면 다음 조정이 필요합니다. 이전 Java 버전과 호환되므로 Java 21 및 Java 17을 실행하기 전이라도 업데이트할 수 있습니다.
 

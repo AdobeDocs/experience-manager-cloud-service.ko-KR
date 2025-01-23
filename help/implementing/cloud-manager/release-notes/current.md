@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 19%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -32,15 +32,15 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 
 * **코드 품질 규칙 - SonarQube 서버 업그레이드:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일로 예정된 Cloud Manager 2025.2.0 릴리스에서 SonarQube Server 9.9를 사용하여 시작됩니다.
 
-준비를 위해 업데이트된 SonarQube 규칙을 [코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 사용할 수 있습니다.
+  준비를 위해 업데이트된 SonarQube 규칙을 [코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 사용할 수 있습니다.
 
-다음 파이프라인 텍스트 변수를 설정하여 새 규칙을 &quot;조기 확인&quot;할 수 있습니다.
+  다음 파이프라인 텍스트 변수를 설정하여 새 규칙을 &quot;조기 확인&quot;할 수 있습니다.
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-또한 다음 변수를 설정하여 동일한 커밋에 대해 코드 품질 단계가 실행되도록 합니다(일반적으로 동일한 `commitId`에 대해 건너뜀).
+  또한 다음 변수를 설정하여 동일한 커밋에 대해 코드 품질 단계가 실행되도록 합니다(일반적으로 동일한 `commitId`에 대해 건너뜀).
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![변수 구성 페이지](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
       * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 샌드박스 및 개발 환경의 경우 2월에 시작되며 4월에 프로덕션 환경으로 확장됩니다.
       * Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 Java 11을 사용하여 빌드하는 고객은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에서 Adobe에 문의할 수 있습니다.
 
-* **&quot;CDN 구성&quot;이 &quot;도메인 매핑&quot;으로 이름이 변경되었습니다.** AEM Cloud Manager의 사용자 인터페이스 개선 사항의 일부로 이제 &quot;CDN 구성&quot; 레이블의 이름이 &quot;도메인 매핑&quot;으로 바뀌어 기능에 대한 용어 정렬이 개선되었습니다. <!-- CMGR-64738 -->
+* **&quot;CDN 구성&quot;이 &quot;도메인 매핑&quot;으로 이름이 변경됨:** AEM Cloud Manager의 사용자 인터페이스 개선 사항의 일부로 이제 &quot;CDN 구성&quot; 레이블의 이름이 &quot;도메인 매핑&quot;으로 변경됩니다. 이 변경 사항은 기능과 함께 용어 정렬을 향상시킵니다. <!-- CMGR-64738 -->
 
   ![&quot;CDN 구성&quot;이 사용자 인터페이스에서 &quot;도메인 매핑&quot;으로 이름이 변경됨](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **한 번의 클릭으로 Edge Delivery 사이트 프로비저닝:** 이제 Cloud Manager을 통해 적절한 권한과 라이선스가 있는 사용자가 한 번의 클릭으로 샘플 Edge Delivery Services 사이트를 만들 수 있습니다. 이렇게 간소화된 프로세스는 다음과 같은 자동화된 기능을 제공합니다.
+
+   * **GitHub 통합** - 기존 조직 내에 GitHub 리포지토리를 자동으로 만들고, Edge Delivery Services을 위한 표준 템플릿으로 사전 구성합니다.
+   * **AEM 코드 동기화 앱 설치** - 저장소에 AEM 코드 동기화 응용 프로그램을 설치하여 원활한 동기화 및 배포를 보장합니다.
+   * **컨텐츠 Collaboration 설정** - 컨텐츠 저장소에 대해 지정된 Google 드라이브 폴더를 연결하여 컨텐츠 관리를 위한 공동 작업 환경을 제공합니다.
+   * **콘텐츠 게시** - 이제 사용자는 Cloud Manager 사용자 인터페이스에서 직접 프로비저닝된 사이트의 콘텐츠를 게시하여 워크플로를 단순화하고 효율성을 향상시킬 수 있습니다.
+   * **향상된 Collaboration** - 이 플랫폼을 통해 사용자는 Google Drive 콘텐츠 저장소 폴더에 여러 공동 작업자를 추가할 수 있으므로 팀워크와 콘텐츠 기여가 향상됩니다.
+
+  이러한 개선 사항은 자동화를 개선하고, 설정 프로세스를 간소화하며, Edge Delivery Services 사용자의 공동 작업을 향상시키는 것을 목표로 합니다. <!-- CMGR-59362 -->
+
+  ![Edge Delivery 사이트 프로비저닝](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Edge Delivery 사이트 프로비저닝 대화 상자](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Edge Delivery Services 사이트에 대한 향상된 지원:** Cloud Manager은 이제 최신 Edge Delivery Services 사이트에 대한 온보딩을 지원합니다. 이 업데이트에는 CDN 및 게재 스택에 대한 포괄적인 리팩터링이 포함되어 있어 견고성 및 유지 관리성이 향상됩니다.
+
+* **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
 
 
 <!-- ## Early adoption program {#early-adoption}
