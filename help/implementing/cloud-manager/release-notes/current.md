@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 11%
+source-wordcount: '811'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,17 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 * **Edge Delivery Services 사이트에 대한 향상된 지원:** Cloud Manager은 이제 최신 Edge Delivery Services 사이트에 대한 온보딩을 지원합니다. 이 업데이트에는 CDN 및 게재 스택에 대한 포괄적인 리팩터링이 포함되어 있어 견고성 및 유지 관리성이 향상됩니다.
 
 * **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
+
+* **파이프라인에 대한 고급 필터링 옵션:** 이제 Cloud Manager에는 파이프라인 페이지의 고급 필터링 옵션이 있으므로 관련 데이터에 빠르게 액세스하고 배포 효율성을 향상시킬 수 있습니다. 몇 가지 주요 기능은 다음과 같습니다.
+
+   * **다중 기준 필터링:** 파이프라인 이름, 환경 및 배포 코드와 같은 필터를 사용하여 검색 결과를 구체화합니다.
+   * **파이프라인 검색 간소화:** 더 빠른 탐색과 향상된 워크플로 관리를 위해 특정 파이프라인을 쉽게 찾을 수 있습니다.
+
+  이러한 향상된 기능을 통해 보다 효율적이고 사용자 친화적으로 파이프라인을 관리하고 배포할 수 있습니다.
+
+  ![파이프라인 필터 기능](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* Edge Delivery 서비스에 대한 **셀프 서비스 CDN 구성:** 이제 Edge Delivery 서비스의 새 채택자가 Cloud Manager을 통해 독립적으로 CDN을 구성할 수 있습니다. 이 업데이트는 `.hlx.page/live`에서 새 `.aem.page/live`(으)로 지원을 확장하여 사용자에게 보다 유연하고 능률적인 설정을 제공합니다.
 
 
 <!-- ## Early adoption program {#early-adoption}
