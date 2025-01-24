@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 22%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -73,20 +73,47 @@ OV 및 EV는 Cloud Manager의 DV 인증서에 대해 이러한 기능을 추가�
 >
 >사용자 정의 도메인이 여러 개인 경우 새 도메인을 추가할 때마다 인증서를 업로드하지 않을 수 있습니다. 이 경우 여러 도메인을 포함하는 단일 인증서를 얻을 수 있습니다.
 
->[!NOTE]
->
->동일한 도메인에 두 개의 인증서가 설치된 경우 더 정확한 인증서가 적용됩니다.
->
->예를 들어 도메인이 `dev.adobe.com`이고 `*.adobe.com`에 대한 인증서 하나와 `dev.adobe.com`에 대한 인증서 하나가 있는 경우 보다 구체적인 인증서(`dev.adobe.com`)가 사용됩니다.
-
 #### 고객 관리 OV/EV SSL 인증서 요구 사항 {#requirements}
 
 자체 고객 관리 OV/EV SSL 인증서를 추가하도록 선택하는 경우 다음 요구 사항을 충족해야 합니다.
 
-* AEM as a Cloud Service은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 정책을 준수하는 인증서를 수락합니다.
+* 인증서는 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 정책을 준수해야 합니다.
    * Cloud Manager에서는 고유한 DV(도메인 유효성 검사) 인증서 추가를 지원하지 않습니다.
+* 자체 서명된 인증서는 지원되지 않습니다.
 * 모든 인증서는 일치하는 2048비트 RSA 개인 키가 있는 신뢰할 수 있는 인증 기관의 X.509 TLS 인증서여야 합니다.
-* 자체 서명된 인증서는 허용되지 않습니다.
+
+#### 인증서 관리 우수 사례
+
+* **겹치는 인증서 방지:**
+
+   * 원활한 인증서 관리를 위해 동일한 도메인과 일치하는 중복 인증서를 배포하지 마십시오. 예를 들어 특정 인증서(*.example.com)와 함께 와일드카드 인증서(*dev.example.com)가 있으면 혼동이 발생할 수 있습니다.
+   * TLS 계층은 가장 구체적이고 최근에 배포된 인증서의 우선 순위를 지정합니다.
+
+  예제 시나리오:
+
+   * &quot;개발 인증서&quot;는 `dev.example.com`을(를) 포함하며 `dev.example.com`에 대한 도메인 매핑으로 배포됩니다.
+   * &quot;단계 인증서&quot;는 `stage.example.com`을(를) 포함하며 `stage.example.com`에 대한 도메인 매핑으로 배포됩니다.
+   * &quot;스테이지 인증서&quot;가 *이후* &quot;개발 인증서&quot;에 배포/업데이트되면 `dev.example.com`에 대한 요청도 제공됩니다.
+
+     이러한 충돌을 방지하려면 인증서의 범위가 의도한 도메인으로 지정되어 있는지 확인하십시오.
+
+* **와일드카드 인증서:**
+
+  와일드카드 인증서(예: `*.example.com`)는 지원되지만 필요한 경우에만 사용해야 합니다. 중복될 경우에는 보다 구체적인 인증서가 우선됩니다. 예를 들어 특정 인증서는 와일드카드(`*.example.com`) 대신 `dev.example.com`을(를) 제공합니다.
+
+* **확인 및 문제 해결:**
+Cloud ManagerAdobe 을 사용하여 인증서를 설치하기 전에 `openssl`과 같은 도구를 사용하여 로컬에서 인증서의 무결성을 확인하는 것이 좋습니다. 예:
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### 고객 관리 인증서 형식 {#certificate-format}
 
@@ -112,13 +139,9 @@ Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->Adobe은 Cloud Manager을 사용하여 설치하기 전에 `openssl verify -untrusted intermediate.pem certificate.pem`과(와) 같은 도구를 사용하여 인증서의 무결성을 로컬에서 확인하는 것을 권장합니다.
-
 ## 설치된 SSL 인증서 수 제한 {#limitations}
 
-언제든지 Cloud Manager에서 설치된 SSL 인증서를 최대 50개까지 허용합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
+Cloud Manager은 설치된 인증서를 최대 50개까지 지원합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
 
 한도에 도달한 경우 인증서를 검토하고 만료된 인증서를 삭제하는 것을 고려하십시오. 또는 인증서에 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에서 여러 도메인을 그룹화합니다.
 
