@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 Forms 제출 서비스를 �
 > * `forms@adobe.com`을(를) 통해 Adobe Experience Manager과 `incoming` 시트를 공유하고 편집 액세스 권한을 부여합니다.
 > * 사이드 킥에서 `incoming` 시트를 미리 보고 게시합니다.
 
-시트 설정에 대한 POST 요청의 형식을 지정하는 방법을 이해하려면 [API 설명서](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post)를 참조하세요. 아래 제공된 예를 살펴볼 수도 있습니다.
+시트 설정에 대한 POST 요청의 형식을 지정하는 방법을 이해하려면 [API 설명서](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)를 참조하세요. 아래 제공된 예를 살펴볼 수도 있습니다.
 
 아래에서 보듯이 curl 또는 Postman과 같은 도구를 사용하여 이 POST 요청을 실행할 수 있습니다.
 
