@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
+source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 14%
+source-wordcount: '939'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,15 @@ ht-degree: 14%
 
 범용 편집기는 콘텐츠 작성자와 양식 작성자가 양식을 쉽게 작성, 관리 및 편집할 수 있도록 설계되었습니다. EDS(Edge Delivery Services)에 초점을 맞춘 간단하고, 시각적이며, 효율적인 편집 환경을 제공합니다.
 
-범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 양식 요소를 사용하여 What You See Is What You Get(WYSIWYG) 인터페이스에서 양식을 만들 수 있습니다. 이 접근 방식은 기술 전문 지식이 없는 사람도 양식 작성을 직관적이고 액세스할 수 있게 합니다.
+범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 양식 요소를 사용하여 What You See Is What You Get(WYSIWYG) 인터페이스에서 양식을 만들 수 있습니다. WYSIWYG 접근 방식을 사용하면 기술 전문 지식이 없는 사람도 양식 만들기를 직관적이고 쉽게 수행할 수 있습니다.
+
+유니버설 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다. 유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다.
 
 ![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
 
-범용 편집기를 사용하면 콘텐츠 작성자와 양식 작성자가 능률적이고 효율적인 방식으로 양식을 작성, 관리 및 편집할 수 있습니다. 이 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다.
 
-유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다. 이러한 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격히 준수하도록 신중하게 설계되었습니다.
+
+Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격하게 준수하도록 신중하게 설계되었습니다.
 
 ## EDS Forms 유니버설 편집기의 주요 기능
 
@@ -36,7 +38,7 @@ ht-degree: 14%
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
     <p>장치 간에 원활하게 적응하는 반응형 양식을 디자인합니다. 응답형 모드를 사용하여 데스크탑, 태블릿 및 모바일의 디자인을 미리 보고 테스트합니다.</p>
   </div>
@@ -53,12 +55,12 @@ ht-degree: 14%
     <p>Personalization은 사용자 데이터를 사용하여 사용자 환경 설정에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정하면서 맞춤 양식 경험을 제공합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
     <h3>A/B 테스트</h3>
     <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
     <h3> 작업 관리 </h3>
     <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 원활한 공동 작업과 간소화된 워크플로를 수행할 수 있습니다.</p>
   </div>
@@ -76,7 +78,7 @@ ht-degree: 14%
     <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
+    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
     <h3>게시/게시 취소</h3>
     <p>몇 번의 클릭만으로 양식을 게시 또는 게시 취소하여 가용성, 사용자 액세스 및 컨텐츠 업데이트를 동적으로 관리할 수 있으므로 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
   </div>
@@ -84,7 +86,7 @@ ht-degree: 14%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="분석 및 추적">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="WYSIWYG 인터페이스" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
     <p>데이터 기반의 양식 최적화를 가능하게 하는 내장된 분석 및 추적을 통해 사용자 동작, 양식 상호 작용 및 제출률에 대한 통찰력을 얻으십시오.</p>
   </div>
@@ -113,23 +115,11 @@ ht-degree: 14%
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="사용자 정의 구성 요소">
-    <h3>사용자 정의 구성 요소</h3>
-    <p>사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.
+    <h3>감사 인사 구성</h3>
+    <p>양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다.
     </p>
   </div>
 </div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="감사 인사 구성">
-    <h3>감사 인사 구성</h3>
-    <p>양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다.</p>
-  </div>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
-    <h3>동작 제출</h3>
-    <p>제출 액션을 사용하면 백엔드 통합 및 보안 엔드포인트 연결을 통해 양식 제출 워크플로우가 용이해집니다.</p>
-  </div>
 </div>
 
 
