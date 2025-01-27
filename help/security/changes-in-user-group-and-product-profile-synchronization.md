@@ -38,7 +38,7 @@ Cloud Manager의 환경 동작 메뉴에서 **액세스 관리 - 작성자 프�
 
 ![접미사 확인](/help/security/assets/suffix-check.png)
 
-아래 스크린샷에 표시된 것처럼 Adobe Admin Console로 이동됩니다. `<suffix>`은(는) 무작위 문자 집합이거나 계층, 프로그램 및 환경 ID(예: `author - Program 12345 - Environment 45678`)일 수 있습니다.
+아래 스크린샷에 표시된 것처럼 Adobe Admin Console로 이동됩니다. `<suffix>`는 무작위 문자 집합이거나 계층, 프로그램 및 환경 ID(예: `author - Program 12345 - Environment 45678`)일 수 있습니다.
 
 ![Admin Console의 접미사](/help/security/assets/admin-console-profile-suffixes.png)
 
