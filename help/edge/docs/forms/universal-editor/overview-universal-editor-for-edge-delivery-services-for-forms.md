@@ -1,14 +1,14 @@
 ---
-title: AEM Forms용 Edge Delivery Services 개요
-description: 최고 성능을 위해 구축된 AEM Forms용 Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다.
+title: Forms(EDS Forms 블록)용 Edge Delivery Services 유니버설 편집기
+description: Forms Edge Delivery Services(EDS Forms 블록)용 범용 편집기를 사용하여 적응형 Forms을 만듭니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
+source-git-commit: 9d5950793f5b3e3c3d6229b9de9d5c020a164dd7
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 14%
+source-wordcount: '959'
+ht-degree: 13%
 
 ---
 
@@ -21,9 +21,7 @@ ht-degree: 14%
 
 유니버설 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다. 유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다.
 
-![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
-
-
+![유니버설 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
 
 Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격하게 준수하도록 신중하게 설계되었습니다.
 
@@ -40,17 +38,17 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
-    <p>장치 간에 원활하게 적응하는 반응형 양식을 디자인합니다. 응답형 모드를 사용하여 데스크탑, 태블릿 및 모바일의 디자인을 미리 보고 테스트합니다.</p>
+    <p>규칙 편집기를 사용하면 이벤트 기반 규칙, 즉각적인 유효성 검사 및 경량 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="WYSIWYG 인터페이스" alt="반응형 모드">
     <h3>반응형 모드 </h3>
-    <p>장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 볼 수 있습니다.</p>
+    <p>장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 보고 테스트할 수 있습니다.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스 alt=" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG 인터페이스 alt=" WYSIWYG Interface"> 
     <h3>개인화</h3>
     <p>Personalization은 사용자 데이터를 사용하여 사용자 환경 설정에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정하면서 맞춤 양식 경험을 제공합니다.</p>
   </div>
@@ -60,9 +58,9 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
     <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="WYSIWYG 인터페이스" alt="Adobe Workfront과 통합">
     <h3> 작업 관리 </h3>
-    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 원활한 공동 작업과 간소화된 워크플로를 수행할 수 있습니다.</p>
+    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 간소화된 워크플로가 보장됩니다.</p>
   </div>
 </div>
 
@@ -75,12 +73,12 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG 인터페이스" alt="데이터 바인딩">
     <h3>데이터 바인딩</h3>
-    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
+    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 구조화된 컴플레인 데이터 스토리지에 대한 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
     <h3>게시/게시 취소</h3>
-    <p>몇 번의 클릭만으로 양식을 게시 또는 게시 취소하여 가용성, 사용자 액세스 및 컨텐츠 업데이트를 동적으로 관리할 수 있으므로 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
+    <p>몇 번의 클릭만으로 양식을 게시 또는 게시 취소하여 가용성과 컨텐츠 업데이트를 동적으로 관리할 수 있으므로 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
   </div>
 </div>
 
@@ -91,7 +89,7 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
     <p>데이터 기반의 양식 최적화를 가능하게 하는 내장된 분석 및 추적을 통해 사용자 동작, 양식 상호 작용 및 제출률에 대한 통찰력을 얻으십시오.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="실험(A/B 테스트)">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
     <h3>동작 제출</h3>
     <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 끝점 및 사전 프로세서를 지원하여 제출 워크플로우를 간소화합니다.</p>
   </div>
@@ -286,7 +284,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 온보딩
 
-사용자 환경에 범용 편집기 및 규칙 편집기를 활성화하거나 Forms 포털, 기록 문서, Adobe Sign 통합 또는 오른쪽에서 왼쪽 쓰기 언어 지원과 같은 추가 기능을 요청하려면 공식 주소에서 mailto:aem-forms-ea@adobe.com으로 이메일을 보내어 요청하면 됩니다.
+사용자 환경에 범용 편집기 및 규칙 편집기를 사용하거나 Forms 포털, 기록 문서, Adobe Sign 통합 또는 오른쪽에서 왼쪽 쓰기 언어 지원과 같은 추가 기능을 요청하려면 공식 주소로 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)에 전자 메일을 보내 요청하면 됩니다.
 
 
 
