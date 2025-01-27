@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
+source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1000'
 ht-degree: 14%
 
 ---
@@ -32,12 +32,13 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스"> 
     <h3>WYSIWYG 인터페이스</h3>
-    <p>유니버설 편집기는 양식 디자인을 위한 WYSIWYG 인터페이스를 제공합니다. 사전 빌드된 구성 요소 라이브러리, 반응형 디자인 지원 및 템플릿 기반 양식 생성을 제공합니다. 양식 필드를 즉시 추가 또는 제거하고 필드 속성(예: 레이블, 데이터 바인딩, 유효성 검사)을 수정할 수 있습니다. 사용자 정의 양식 구성 요소를 범용 편집기에 플러그인할 수도 있습니다.</p>
+    <p>유니버설 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성 및 실시간 필드 수정이 포함된 양식 디자인을 위한 WYSIWYG 인터페이스를 제공합니다.
+ </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
-    <p>규칙 편집기를 사용하면 가벼운 JavaScript 및 JSON 기반 정의를 통해 이벤트 기반 규칙, 즉각적인 유효성 검사 및 오류 처리와 함께 정교한 양식 상호 작용을 만들 수 있습니다.</p>
+    <p>장치 간에 원활하게 적응하는 반응형 양식을 디자인합니다. 응답형 모드를 사용하여 데스크탑, 태블릿 및 모바일의 디자인을 미리 보고 테스트합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
@@ -49,17 +50,17 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스 alt=" WYSIWYG Interface"> 
     <h3>개인화</h3>
-    <p>개인화</p>
+    <p>Personalization은 사용자 데이터를 사용하여 사용자 환경 설정에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정하면서 맞춤 양식 경험을 제공합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
-    <h3>인증 헤더</h3>
-    <p>규칙 편집기를 사용하면 가벼운 JavaScript 및 JSON 기반 정의를 통해 이벤트 기반 규칙, 즉각적인 유효성 검사 및 오류 처리와 함께 정교한 양식 상호 작용을 만들 수 있습니다.</p>
+    <h3>A/B 테스트</h3>
+    <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
-    <h3> 게시/게시 취소 </h3>
-    <p>몇 번의 클릭으로 양식을 게시하고 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
+    <h3> 작업 관리 </h3>
+    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 원활한 공동 작업과 간소화된 워크플로를 수행할 수 있습니다.</p>
   </div>
 </div>
 
@@ -67,17 +68,17 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="사전 채우기 서비스">
     <h3>사전 채우기 서비스</h3>
-    <p>미리 채우기 서비스는 다양한 소스의 관련 데이터로 양식 필드를 지능적으로 채워 사용자 경험을 향상하고 수동 데이터 입력을 줄입니다.</p>
+    <p>미리 채우기 서비스는 자동으로 양식 필드를 다양한 소스의 관련 사용자 데이터로 채워 수동 입력을 줄이고 사용자 경험을 향상시킵니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="데이터 바인딩">
     <h3>데이터 바인딩</h3>
-    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 동적 연결이 가능하며 실시간 동기화와 복잡한 데이터 매핑을 지원합니다.</p>
+    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
-    <h3>현지화</h3>
-    <p>다국어화 지원을 통해 다국어 렌더링, 오른쪽에서 왼쪽 쓰기 언어 호환성 및 로케일별 서식을 지정하여 글로벌 접근성을 보장할 수 있습니다.</p>
+    <h3>게시/게시 취소</h3>
+    <p>몇 번의 클릭만으로 양식을 게시 또는 게시 취소하여 가용성, 사용자 액세스 및 컨텐츠 업데이트를 동적으로 관리할 수 있으므로 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
   </div>
 </div>
 
@@ -85,17 +86,17 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
-    <p>내장된 분석 및 추적 메커니즘은 양식 상호 작용, 제출률 및 사용자 동작에 대한 통찰력을 제공하여 지속적인 최적화를 가능하게 합니다.</p>
+    <p>데이터 기반의 양식 최적화를 가능하게 하는 내장된 분석 및 추적을 통해 사용자 동작, 양식 상호 작용 및 제출률에 대한 통찰력을 얻으십시오.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="실험(A/B 테스트)">
-    <h3>실험(A/B 테스트)</h3>
-    <p>실험을 통해 조직에서는 양식 디자인에 대한 A/B 테스트를 실행하여 가장 성과가 좋은 레이아웃이나 기능을 식별할 수 있습니다.</p>
+    <h3>동작 제출</h3>
+    <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 끝점 및 사전 프로세서를 지원하여 제출 워크플로우를 간소화합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="작업 관리">
-    <h3>작업 관리</h3>
-    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리와 관련된 작업을 관리할 수 있으므로 공동 작업이 간소화됩니다.</p>
+    <h3>사용자 정의 구성 요소</h3>
+    <p>사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
   </div>
 </div>
 
@@ -108,12 +109,12 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="Forms 포함">
     <h3>Forms 포함</h3>
-    <p>범용 편집기는 Edge Deliver Services Sites 페이지에 양식을 직접 포함할 수 있도록 지원합니다. 기본 제공되는 임베디드 구성 요소를 사용하여 이 작업을 수행할 수 있습니다.</p>
+    <p>원활한 사용자 경험을 위해 유니버설 편집기의 내장 포함 구성 요소를 사용하여 양식을 Edge Delivery Services 사이트 페이지에 직접 임베드할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="사용자 정의 구성 요소">
     <h3>사용자 정의 구성 요소</h3>
-    <p>사용자 지정 구성 요소를 사용하면 개발자가 특정 사용 사례에 맞게 조정된 고유한 양식 요소를 만들어 양식의 기능을 확장할 수 있습니다 
+    <p>사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.
     </p>
   </div>
 </div>
@@ -122,12 +123,12 @@ ht-degree: 14%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="감사 인사 구성">
     <h3>감사 인사 구성</h3>
-    <p>양식 제출 후 표시되는 승인 메시지 또는 페이지를 사용자 지정합니다.</p>
+    <p>양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
     <h3>동작 제출</h3>
-    <p>제출 액션을 사용하면 백엔드 통합 옵션, 데이터 사전 프로세서, 조건부 제출 논리 및 보안 엔드포인트 연결을 사용하여 양식 제출 워크플로우를 지원할 수 있습니다.</p>
+    <p>제출 액션을 사용하면 백엔드 통합 및 보안 엔드포인트 연결을 통해 양식 제출 워크플로우가 용이해집니다.</p>
   </div>
 </div>
 
