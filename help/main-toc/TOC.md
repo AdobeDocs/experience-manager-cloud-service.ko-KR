@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5998'
 ht-degree: 99%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 99%
          + [2020.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
-      + 2025년 {#2025}
+      + 2025 {#2025}
          + [2025.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [2024.11.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-11-0.md)
@@ -771,6 +771,7 @@ ht-degree: 99%
             + [적응형 양식 비교](/help/forms/compare-forms.md)
             + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 Forms으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [적응형 Forms의 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1016,7 +1017,7 @@ ht-degree: 99%
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [유효성 검사를 위한 정규 표현 표현식](/help/edge/docs/forms/regex-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Forms 제출 서비스 사용](/help/forms/forms-submission-service.md)
+         + [양식 제출 서비스 사용](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [개요 - Forms용 Edge Delivery Services 유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
@@ -1026,7 +1027,7 @@ ht-degree: 99%
          + [reCAPTCHA를 사용하여 양식 보호](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
          + [양식에 대한 실제 사용 모니터링](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Edge Delivery Services을 위한 Forms 게시](/help/edge/docs/forms/publishing-forms.md)
+         + [Edge Delivery Services용 양식 게시](/help/edge/docs/forms/publishing-forms.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 리소스 {#resources}
