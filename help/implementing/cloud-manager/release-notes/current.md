@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 10%
+source-wordcount: '841'
+ht-degree: 9%
 
 ---
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
       * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 샌드박스 및 개발 환경의 경우 2월에 시작되며 4월에 프로덕션 환경으로 확장됩니다.
       * Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 Java 11을 사용하여 빌드하는 고객은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에서 Adobe에 문의할 수 있습니다.
 
-* **&quot;CDN 구성&quot;이 &quot;도메인 매핑&quot;으로 이름이 변경됨:** AEM Cloud Manager의 사용자 인터페이스 개선 사항의 일부로 이제 &quot;CDN 구성&quot; 레이블의 이름이 &quot;도메인 매핑&quot;으로 변경됩니다. 이 변경 사항은 기능과 함께 용어 정렬을 향상시킵니다. <!-- CMGR-64738 -->
+* **&quot;CDN 구성&quot;이 &quot;도메인 매핑&quot;으로 이름이 변경됨 :** AEM Cloud Manager의 사용자 인터페이스 개선 사항의 일부로 이제 &quot;CDN 구성&quot; 레이블의 이름이 &quot;도메인 매핑&quot;으로 변경됩니다. 이 변경 사항은 기능과 함께 용어 정렬을 향상시킵니다. <!-- CMGR-64738 -->
 
   ![&quot;CDN 구성&quot;이 사용자 인터페이스에서 &quot;도메인 매핑&quot;으로 이름이 변경됨](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -80,6 +80,8 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 * **Edge Delivery Services 사이트에 대한 향상된 지원:** Cloud Manager은 이제 최신 Edge Delivery Services 사이트에 대한 온보딩을 지원합니다. 이 업데이트에는 CDN 및 게재 스택에 대한 포괄적인 리팩터링이 포함되어 있어 견고성 및 유지 관리성이 향상됩니다.
 
 * **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
+
+이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
 
 * **파이프라인에 대한 고급 필터링 옵션:** 이제 Cloud Manager에는 파이프라인 페이지의 고급 필터링 옵션이 있으므로 관련 데이터에 빠르게 액세스하고 배포 효율성을 향상시킬 수 있습니다. 몇 가지 주요 기능은 다음과 같습니다.
 

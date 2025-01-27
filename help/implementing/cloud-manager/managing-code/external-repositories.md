@@ -4,10 +4,10 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '740'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. 
 
 >[!NOTE]
 >
->이 기능은 [조기 채택 프로그램](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)에서만 사용할 수 있습니다.
+>이 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 얼리 어답터로 등록하려면 [GitLab 및 Bitbucket에 대한 지원을 통해 지금 자신의 Git을 가져오세요](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)를 참조하세요.
 
 ## 외부 저장소 구성
 
