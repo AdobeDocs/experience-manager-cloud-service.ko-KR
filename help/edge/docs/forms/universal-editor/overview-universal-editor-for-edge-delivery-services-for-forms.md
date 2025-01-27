@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9d5950793f5b3e3c3d6229b9de9d5c020a164dd7
+source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '958'
 ht-degree: 13%
 
 ---
@@ -149,7 +149,7 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
 <table>
   <thead>
     <tr>
-      <th>러블리</th> 
+      <th></th> 
       <th>양식 구성 요소</th>
       <th>설명</th>
     </tr>
