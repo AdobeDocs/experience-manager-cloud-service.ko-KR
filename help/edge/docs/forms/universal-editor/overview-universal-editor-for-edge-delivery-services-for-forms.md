@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 11%
+source-wordcount: '1009'
+ht-degree: 14%
 
 ---
 
@@ -17,78 +17,117 @@ ht-degree: 11%
 
 범용 편집기는 콘텐츠 작성자와 양식 작성자가 양식을 쉽게 작성, 관리 및 편집할 수 있도록 설계되었습니다. EDS(Edge Delivery Services)에 초점을 맞춘 간단하고, 시각적이며, 효율적인 편집 환경을 제공합니다.
 
-범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 양식 요소를 드래그하여 놓아 What You See Is What You Get(WYSIWYG) 인터페이스에서 양식을 만들 수 있습니다. 이 접근 방식은 기술 전문 지식이 없는 사람도 양식 작성을 직관적이고 액세스할 수 있게 합니다.
+범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 양식 요소를 사용하여 What You See Is What You Get(WYSIWYG) 인터페이스에서 양식을 만들 수 있습니다. 이 접근 방식은 기술 전문 지식이 없는 사람도 양식 작성을 직관적이고 액세스할 수 있게 합니다.
 
 ![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
 
-범용 편집기를 사용하면 콘텐츠 작성자와 양식 작성자가 능률적이고 효율적인 방식으로 양식을 작성, 관리 및 편집할 수 있습니다. 이 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다. 범용 편집기는 양식을 만들기 위한 사용자 친화적인 시각적 편집 환경을 제공합니다. 텍스트 필드, 확인란, 라디오 버튼 등과 같은 양식 요소를 쉽게 끌어다 놓고 WYSIWYG(What You See Is What You Get) 스타일 인터페이스에서 구성할 수 있습니다.
+범용 편집기를 사용하면 콘텐츠 작성자와 양식 작성자가 능률적이고 효율적인 방식으로 양식을 작성, 관리 및 편집할 수 있습니다. 이 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다.
 
-유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다.
-
-기술적인 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격하게 준수하도록 신중하게 설계되었습니다. EDS Forms 블록용 유니버설 에디터는 민첩하고 강력한 양식 생성 및 관리 플랫폼을 원하는 조직을 위한 포괄적인 솔루션을 나타냅니다.
+유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다. 이러한 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격히 준수하도록 신중하게 설계되었습니다.
 
 ## EDS Forms 유니버설 편집기의 주요 기능
 
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/universal-editor.png" alt="WYSIWYG 인터페이스"> 
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스"> 
     <h3>WYSIWYG 인터페이스</h3>
     <p>유니버설 편집기는 양식 디자인을 위한 WYSIWYG 인터페이스를 제공합니다. 사전 빌드된 구성 요소 라이브러리, 반응형 디자인 지원 및 템플릿 기반 양식 생성을 제공합니다. 양식 필드를 즉시 추가 또는 제거하고 필드 속성(예: 레이블, 데이터 바인딩, 유효성 검사)을 수정할 수 있습니다. 사용자 정의 양식 구성 요소를 범용 편집기에 플러그인할 수도 있습니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="규칙 편집기">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
     <p>규칙 편집기를 사용하면 가벼운 JavaScript 및 JSON 기반 정의를 통해 이벤트 기반 규칙, 즉각적인 유효성 검사 및 오류 처리와 함께 정교한 양식 상호 작용을 만들 수 있습니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="동작 제출">
-    <h3>동작 제출</h3>
-    <p>제출 액션을 사용하면 백엔드 통합 옵션, 데이터 사전 프로세서, 조건부 제출 논리 및 보안 엔드포인트 연결을 사용하여 양식 제출 워크플로우를 지원할 수 있습니다.</p>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <h3>반응형 모드 </h3>
+    <p>장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 볼 수 있습니다.</p>
+  </div>
+</div>
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스 alt=" WYSIWYG Interface"> 
+    <h3>개인화</h3>
+    <p>개인화</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
+    <h3>인증 헤더</h3>
+    <p>규칙 편집기를 사용하면 가벼운 JavaScript 및 JSON 기반 정의를 통해 이벤트 기반 규칙, 즉각적인 유효성 검사 및 오류 처리와 함께 정교한 양식 상호 작용을 만들 수 있습니다.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <h3> 게시/게시 취소 </h3>
+    <p>몇 번의 클릭으로 양식을 게시하고 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="사전 채우기 서비스">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="사전 채우기 서비스">
     <h3>사전 채우기 서비스</h3>
     <p>미리 채우기 서비스는 다양한 소스의 관련 데이터로 양식 필드를 지능적으로 채워 사용자 경험을 향상하고 수동 데이터 입력을 줄입니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="데이터 바인딩">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="데이터 바인딩">
     <h3>데이터 바인딩</h3>
     <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 동적 연결이 가능하며 실시간 동기화와 복잡한 데이터 매핑을 지원합니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="다국어화/로컬라이제이션">
-    <h3>다국어화/로컬라이제이션</h3>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
+    <h3>현지화</h3>
     <p>다국어화 지원을 통해 다국어 렌더링, 오른쪽에서 왼쪽 쓰기 언어 호환성 및 로케일별 서식을 지정하여 글로벌 접근성을 보장할 수 있습니다.</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="분석 및 추적">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
     <p>내장된 분석 및 추적 메커니즘은 양식 상호 작용, 제출률 및 사용자 동작에 대한 통찰력을 제공하여 지속적인 최적화를 가능하게 합니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="실험(A/B 테스트)">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="실험(A/B 테스트)">
     <h3>실험(A/B 테스트)</h3>
     <p>실험을 통해 조직에서는 양식 디자인에 대한 A/B 테스트를 실행하여 가장 성과가 좋은 레이아웃이나 기능을 식별할 수 있습니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="작업 관리">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="작업 관리">
     <h3>작업 관리</h3>
     <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리와 관련된 작업을 관리할 수 있으므로 공동 작업이 간소화됩니다.</p>
   </div>
 </div>
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(33.33% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="편집기 사용자 지정">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="편집기 사용자 지정">
     <h3>편집기 사용자 지정</h3>
     <p>개발자는 UI 확장을 통해 유니버설 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 제공할 수 있습니다.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="Forms 포함">
+    <h3>Forms 포함</h3>
+    <p>범용 편집기는 Edge Deliver Services Sites 페이지에 양식을 직접 포함할 수 있도록 지원합니다. 기본 제공되는 임베디드 구성 요소를 사용하여 이 작업을 수행할 수 있습니다.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="사용자 정의 구성 요소">
+    <h3>사용자 정의 구성 요소</h3>
+    <p>사용자 지정 구성 요소를 사용하면 개발자가 특정 사용 사례에 맞게 조정된 고유한 양식 요소를 만들어 양식의 기능을 확장할 수 있습니다 
+    </p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="감사 인사 구성">
+    <h3>감사 인사 구성</h3>
+    <p>양식 제출 후 표시되는 승인 메시지 또는 페이지를 사용자 지정합니다.</p>
+  </div>
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <h3>동작 제출</h3>
+    <p>제출 액션을 사용하면 백엔드 통합 옵션, 데이터 사전 프로세서, 조건부 제출 논리 및 보안 엔드포인트 연결을 사용하여 양식 제출 워크플로우를 지원할 수 있습니다.</p>
   </div>
 </div>
 
@@ -230,28 +269,29 @@ ht-degree: 11%
 
 * Title: Adds a text-based heading or label to improve form clarity and organization.
 
+
+In-addtion to pre-built form components, the Universal editor also provides support for:
+
+* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
+
+* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
+    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
+    * Customizable Messages: Allows form authors to define user-friendly error texts.
+    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
+
+* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
+    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
+    * Capturing metadata like timestamps or tracking IDs.
+    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
+
+* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
+    * Flexibility: Developers can design unique form elements tailored to specific use cases.
+    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
+    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
+
+* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
 -->
 
-유니버설 편집기는 사전 빌드된 양식 구성 요소 외에 다음에 대한 지원도 제공합니다.
-
-* **다른 웹 페이지에 Forms 포함**: 유니버설 편집기에서 양식을 Edge Deliver Services Sites 페이지에 직접 포함할 수 있습니다. 기본 제공되는 임베디드 구성 요소를 사용하여 이 작업을 수행할 수 있습니다.
-
-* **유효성 검사 메시지**: 유효성 검사 메시지는 사용자가 잘못되거나 불완전한 데이터를 입력할 때 실시간 피드백을 제공합니다. 기능은 다음과 같습니다.
-   * 동적 오류 표시: 잘못된 이메일 주소 또는 누락된 필수 필드와 같은 오류를 즉시 사용자에게 알립니다.
-   * 사용자 정의 가능한 메시지: 양식 작성자가 사용자에게 친숙한 오류 텍스트를 정의할 수 있습니다.
-   * 규칙 기반 유효성 검사: 필드 간 종속성 확인 또는 조건부 규칙 구현과 같은 고급 유효성 검사 논리를 지원합니다.
-
-* **숨겨진 필드**: 숨겨진 필드는 종종 백엔드 처리 또는 미리 채워진 값을 위해 양식 내에 데이터를 보이지 않게 저장합니다. 사용 사례는 다음과 같습니다.
-   * 컨텍스트 정보(예: 사용자 ID 또는 세션 데이터)를 사용자에게 표시하지 않고 백엔드에 전달.
-   * 타임스탬프 또는 추적 ID와 같은 메타데이터 캡처
-   * 숨겨진 필드는 최종 사용자에게 표시되지 않지만 미리 채우거나 동적으로 업데이트하거나 워크플로우에서 사용할 수 있습니다.
-
-* **사용자 지정 구성 요소**: 사용자 지정 구성 요소를 사용하면 개발자는 특수 또는 서드파티 통합을 만들어 양식의 기능을 확장할 수 있습니다. 기능은 다음과 같습니다.
-   * 유연성: 개발자는 특정 사용 사례에 맞게 고유한 양식 요소를 디자인할 수 있습니다.
-   * 서드파티 통합: 결제 게이트웨이, 분석 추적기 또는 AI 기반 입력 필드와 같은 위젯 또는 도구를 포함합니다.
-   * 매끄러운 호환성: 사용자 지정 구성 요소는 범용 편집기의 드래그 앤 드롭 인터페이스 및 데이터 바인딩 또는 유효성 검사와 같은 기존 기능과 통합할 수 있습니다.
-
-* **감사 구성**: 양식을 제출한 후 표시되는 승인 메시지 또는 페이지를 사용자 지정합니다.
 
 ## 온보딩
 
@@ -279,7 +319,7 @@ ht-degree: 11%
 
   <style>
     .card-container {
-        width: calc(33.33% - 10px);;
+        width: calc(30% - 10px);;
         margin: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
