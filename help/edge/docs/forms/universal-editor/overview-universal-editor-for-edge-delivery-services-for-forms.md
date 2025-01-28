@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 13%
+source-wordcount: '980'
+ht-degree: 12%
 
 ---
 
@@ -78,7 +78,7 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
     <h3>게시/게시 취소</h3>
-    <p>몇 번의 클릭만으로 양식을 게시 또는 게시 취소하여 가용성과 컨텐츠 업데이트를 동적으로 관리할 수 있으므로 양식의 가시성을 쉽게 제어할 수 있습니다.</p>
+    <p>몇 번의 클릭만으로 양식을 편집기에서 바로 게시 또는 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있으므로 가용성, 사용자 액세스 및 콘텐츠 업데이트를 실시간으로 동적으로 관리할 수 있으며, 양식을 항상 최신 상태로 유지하고 필요에 따라 액세스할 수 있습니다.</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG 인터페이스" alt="편집기 사용자 지정">
     <h3>편집기 사용자 지정</h3>
-    <p>개발자는 UI 확장을 통해 유니버설 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 제공할 수 있습니다.</p>
+    <p>개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 가능하게 할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG 인터페이스" alt="Forms 포함">

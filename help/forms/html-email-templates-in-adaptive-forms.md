@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -43,10 +43,13 @@ ht-degree: 0%
 1. 편집할 적응형 양식을 엽니다.
 1. **콘텐츠 브라우저**(으)로 이동하여 **안내서 컨테이너**&#x200B;를 선택하고 속성 아이콘을 탭합니다. 제목이 `Adaptive Form Container`인 대화 상자가 나타납니다.
 1. **제출** 탭으로 이동하여 **전자 메일 보내기** 제출 액션을 선택하십시오.
+
+   ![전자 메일 제출 액션 보내기](/help/forms/assets/send-email-action.png)
+
 1. **외부 템플릿 사용** 옵션을 사용하도록 설정합니다.
 1. **HTML 템플릿 사용** 옵션을 사용하도록 설정합니다.
 1. 외부 템플릿 경로 옵션에 대한 폴더 아이콘을 클릭하고 HTML 템플릿을 찾아 선택합니다.
-1. 완료 를 클릭하여 구성을 저장합니다.
+1. 구성을 저장하려면 **완료**&#x200B;를 클릭하세요.
 
 이제 HTML 템플릿이 적응형 양식에 대해 구성되었습니다.
 
@@ -55,7 +58,6 @@ ht-degree: 0%
 1. 편집할 적응형 양식을 엽니다.
 1. **콘텐츠 브라우저**(으)로 이동하여 **안내서 컨테이너**&#x200B;를 선택하고 속성 아이콘을 탭합니다. 제목이 `Adaptive Form Container`인 대화 상자가 나타납니다.
 1. **제출** 탭으로 이동하여 **전자 메일 보내기** 제출 액션을 선택하십시오.
-1. **외부 템플릿 사용** 옵션을 사용하도록 설정합니다.
 1. **HTML 템플릿 사용** 옵션을 사용하도록 설정합니다.
 1. 입력한 **전자 메일 서식 파일** 상자에 HTML 코드를 직접 입력하거나 붙여 넣으십시오.
 
@@ -149,8 +151,6 @@ ht-degree: 0%
     Best regards,
     Your Team
 ```
-
-자리 표시자(${name}, ${email} 등)를 적응형 양식의 해당 양식 필드 이름으로 바꾸십시오.
 
 ## 이메일 템플릿 HTML 우수 사례
 
