@@ -5,14 +5,14 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 68%
+ht-degree: 66%
 
 ---
 
-# 적응형 양식 만들기(기초 구성 요소) {#creating-an-adaptive-form}
+# 적응형 양식(기초 구성 요소) 만들기 {#creating-an-adaptive-form}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -20,7 +20,9 @@ ht-degree: 68%
 | AEM as a Cloud Service | 이 문서 |
 
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+>[!NOTE]
+>
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 적응형 양식을 사용하면 멋지고, 반응이 빠르고, 동적이고, 적응력이 뛰어난 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 작성할 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다.
 
@@ -72,7 +74,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 
 
-## 적응형 양식 만들기(기초 구성 요소) {#create-an-adaptive-form-foundation-components}
+## 적응형 양식(기초 구성 요소) 만들기 {#create-an-adaptive-form-foundation-components}
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스 액세스. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 

@@ -5,16 +5,18 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+>[!NOTE]
+>
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -247,7 +249,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
   }
 ```
 
-구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)하여 Cloud Service 인스턴스에 설정하십시오.
+구성의 값을 설정하려면 [AEM SDK을 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart) 및 [구성을 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)하십시오.
 
 >[!NOTE]
 >
@@ -344,7 +346,7 @@ prefill-page component.zip
 
 프리필 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징된다. OSGi 번들을 만들고 업로드한 후 [!DNL AEM Forms] 번들에 설치합니다. 번들 만들기를 시작하기 전에 다음을 수행하십시오.
 
-- [클라이언트 SDK [!DNL AEM Forms] 다운로드](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+- [클라이언트 SDK 다운로드 [!DNL AEM Forms] 2}](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
 - 보일러 플레이트 패키지 다운로드
 
 - crx-repository에 데이터(데이터 미리 채우기) 파일을 넣습니다. crx-repository의 \contents 폴더에 있는 임의의 위치에 파일을 배치할 수 있습니다.

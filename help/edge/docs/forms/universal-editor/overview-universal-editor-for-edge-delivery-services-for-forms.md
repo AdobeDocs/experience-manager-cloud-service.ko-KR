@@ -5,25 +5,22 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 12%
+source-wordcount: '1114'
+ht-degree: 11%
 
 ---
 
 # Forms(EDS Forms 블록)용 Edge Delivery Services 유니버설 편집기
 
+범용 편집기는 간단하고, 시각적이며, 직관적인 Adobe Edge(WYSIWYG) 인터페이스를 제공하여 EDS(What You See Is What You Get Delivery Services)를 위한 양식 작성에 혁신을 줍니다. 콘텐츠 작성자 및 양식 작성자를 위해 설계된 이 솔루션은 기존의 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 액세스할 수 있도록 합니다.
 
-범용 편집기는 콘텐츠 작성자와 양식 작성자가 양식을 쉽게 작성, 관리 및 편집할 수 있도록 설계되었습니다. EDS(Edge Delivery Services)에 초점을 맞춘 간단하고, 시각적이며, 효율적인 편집 환경을 제공합니다.
+범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 미리 작성된 구성 요소를 사용하여 응답형 대화형 양식을 빠르게 디자인할 수 있습니다. 강력한 기능 세트는 동적 규칙, 매끄러운 데이터 통합 및 고급 개인화를 지원하여 모든 양식을 사용자의 요구 사항에 맞게 조정할 수 있습니다.
 
-범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 양식 요소를 사용하여 What You See Is What You Get(WYSIWYG) 인터페이스에서 양식을 만들 수 있습니다. WYSIWYG 접근 방식을 사용하면 기술 전문 지식이 없는 사람도 양식 만들기를 직관적이고 쉽게 수행할 수 있습니다.
+간단한 클라이언트측 렌더링을 관리하든, 브라우저 간 호환성을 보장하든, 엄격한 접근성 표준을 준수하든 관계없이 유니버설 편집기는 양식을 만들고 관리할 수 있는 간소화된 솔루션을 제공합니다.
 
-유니버설 편집기는 특히 EDS(Edge Delivery Services)에 중점을 둡니다. 유니버설 편집기의 핵심 강점은 고급 양식 작성 기능, 동적 규칙 편집 및 다양한 데이터 소스와의 원활한 통합을 포함하는 강력한 기능 세트에 있습니다. 사용자는 사전 빌드된 구성 요소, 사용자 정의 가능한 템플릿 및 광범위한 양식 요소 라이브러리를 사용하여 응답형 양식을 신속하게 디자인할 수 있습니다.
-
-![유니버설 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
-
-Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우저 간 호환성 및 접근성 표준을 엄격하게 준수하도록 신중하게 설계되었습니다.
+![유니버설 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
 ## EDS Forms 유니버설 편집기의 주요 기능
 
@@ -36,65 +33,65 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
     <p>규칙 편집기를 사용하면 이벤트 기반 규칙, 즉각적인 유효성 검사 및 경량 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="WYSIWYG 인터페이스" alt="반응형 모드">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="반응형 모드">
     <h3>반응형 모드 </h3>
     <p>장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 보고 테스트할 수 있습니다.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG 인터페이스 alt=" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="개인화"> 
     <h3>개인화</h3>
     <p>Personalization은 사용자 데이터를 사용하여 사용자 환경 설정에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정하면서 맞춤 양식 경험을 제공합니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="WYSIWYG 인터페이스" alt="규칙 편집기">
-    <h3>A/B 테스트</h3>
-    <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="WYSIWYG 인터페이스" alt="Adobe Workfront과 통합">
-    <h3> 작업 관리 </h3>
-    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 간소화된 워크플로가 보장됩니다.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG 인터페이스" alt="사전 채우기 서비스">
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="사전 채우기 서비스">
     <h3>사전 채우기 서비스</h3>
     <p>미리 채우기 서비스는 자동으로 양식 필드를 다양한 소스의 관련 사용자 데이터로 채워 수동 입력을 줄이고 사용자 경험을 향상시킵니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG 인터페이스" alt="데이터 바인딩">
-    <h3>데이터 바인딩</h3>
-    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 구조화된 컴플레인 데이터 스토리지에 대한 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG 인터페이스" alt="다국어화/로컬라이제이션">
-    <h3>게시/게시 취소</h3>
-    <p>몇 번의 클릭만으로 양식을 편집기에서 바로 게시 또는 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있으므로 가용성, 사용자 액세스 및 콘텐츠 업데이트를 실시간으로 동적으로 관리할 수 있으며, 양식을 항상 최신 상태로 유지하고 필요에 따라 액세스할 수 있습니다.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="규칙 편집기">
+    <h3>A/B 테스트</h3>
+    <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="WYSIWYG 인터페이스" alt="분석 및 추적">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
     <p>데이터 기반의 양식 최적화를 가능하게 하는 내장된 분석 및 추적을 통해 사용자 동작, 양식 상호 작용 및 제출률에 대한 통찰력을 얻으십시오.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG 인터페이스" alt="동작 제출">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfront과 통합">
+    <h3> 작업 관리 </h3>
+    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 간소화된 워크플로가 보장됩니다.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="데이터 바인딩">
+    <h3>데이터 바인딩</h3>
+    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 구조화된 컴플레인 데이터 스토리지에 대한 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="다국어화/로컬라이제이션">
+    <h3>게시/게시 취소</h3>
+    <p>몇 번의 클릭만으로 양식을 편집기에서 바로 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있으므로 가용성과 콘텐츠 업데이트를 실시간으로 동적으로 관리할 수 있습니다.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="동작 제출">
     <h3>동작 제출</h3>
     <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 끝점 및 사전 프로세서를 지원하여 제출 워크플로우를 간소화합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG 인터페이스" alt="작업 관리">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="작업 관리">
     <h3>사용자 정의 구성 요소</h3>
     <p>사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
   </div>
@@ -102,17 +99,17 @@ Universal Editor의 기능은 가벼운 클라이언트측 렌더링, 브라우�
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG 인터페이스" alt="편집기 사용자 지정">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="편집기 사용자 지정">
     <h3>편집기 사용자 지정</h3>
     <p>개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 가능하게 할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG 인터페이스" alt="Forms 포함">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Forms 포함">
     <h3>Forms 포함</h3>
     <p>원활한 사용자 경험을 위해 유니버설 편집기의 내장 포함 구성 요소를 사용하여 양식을 Edge Delivery Services 사이트 페이지에 직접 임베드할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG 인터페이스" alt="사용자 정의 구성 요소">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="사용자 정의 구성 요소">
     <h3>감사 인사 구성</h3>
     <p>양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다.
     </p>
@@ -284,8 +281,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 온보딩
 
-사용자 환경에 범용 편집기 및 규칙 편집기를 사용하거나 Forms 포털, 기록 문서, Adobe Sign 통합 또는 오른쪽에서 왼쪽 쓰기 언어 지원과 같은 추가 기능을 요청하려면 공식 주소로 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)에 전자 메일을 보내 요청하면 됩니다.
+범용 편집기 및 규칙 편집기와 같은 고급 기능을 활성화하려면 공식 이메일 ID에서 aem-forms-ea@adobe.com으로 전자 메일을 보내십시오. Adobe 팀은 양식 구축 경험을 혁신하는 데 도움을 주기 위해 마련되었습니다.
 
+## 자주 묻는 질문(FAQ)
+
+**Q. 유니버설 편집기를 사용할 수 있는 사용자는 누구입니까?**
+유니버설 편집기는 다음과 같은 광범위한 대상을 위해 설계되었습니다.
+
+* 시각적으로 호소력 있는 양식을 작성하고자 하는 콘텐츠 작성자입니다.
+* 고급 사용자 지정 및 통합 기능이 필요한 개발자.
+* 확장 가능하고 안전하며 규정을 준수하는 양식 솔루션을 원하는 기업
+
+**Q: 범용 편집기로 만든 양식을 기존 시스템에 통합할 수 있습니까?**
+당연하지 유니버설 편집기는 백엔드 시스템과의 원활한 데이터 바인딩을 지원하여 실시간 업데이트와 고급 데이터 매핑을 가능하게 합니다. 또한 작업 관리를 위한 Adobe Workfront과 같은 도구와 통합되고 데이터 제출 워크플로우에 대한 보안 끝점을 지원합니다.
+
+**Q: 양식 구성 요소를 사용자 지정할 수 있습니까?**
+예. 유니버설 편집기를 사용하면 개발자가 특정 조직의 요구 사항에 맞게 사용자 지정 구성 요소를 만들 수 있습니다. 또한 UI 확장 및 사용자 지정 워크플로우를 통해 편집기의 기능을 확장할 수 있습니다.
+
+**Q: 유니버설 편집기에서 접근성을 어떻게 처리합니까?**
+범용 편집기는 WCAG(Web Content Accessibility Guidelines)를 비롯한 접근성 표준을 엄격하게 준수하도록 설계되었습니다. 이렇게 하면 장애가 있는 개인이 양식을 사용할 수 있으므로 포괄적인 경험을 제공할 수 있습니다.
+
+**Q: 양식에서 어떤 종류의 분석을 얻을 수 있습니까?**
+범용 편집기에는 사용자 상호 작용, 양식 제출률 및 전환 지표를 모니터링하는 내장된 분석 및 추적 도구가 포함되어 있습니다. 이러한 통찰력은 더 나은 성능을 위해 양식을 최적화하는 데 도움이 됩니다.
 
 
 ## 양식 만들기 시작

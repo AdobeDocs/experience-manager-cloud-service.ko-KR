@@ -7,16 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: bcd3a2a813833d7c1705e45829bcf769645cd154
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2468'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
 # 적응형 양식 편집기 {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+>[!NOTE]
+>
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -105,7 +107,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 * **구성 요소 브라우저**
 
-  적응형 양식을 빌드하는 데 사용할 수 있는 구성 요소를 포함합니다. 구성 요소를 적응형 양식으로 드래그하여 양식 요소를 추가하고 요구 사항에 따라 추가된 요소를 구성할 수 있습니다. 다음 표에서는 구성 요소 브라우저에 나열된 구성 요소에 대해 설명합니다.
+  적응형 양식을 빌드하는 데 사용할 수 있는 구성 요소를 포함합니다. 구성 요소를 적응형 양식으로 드래그하여 양식 요소를 추가하고 요구 사항에 따라 추가된 요소를 구성할 수 있습니다. 다음 테이블에서는 구성 요소 브라우저에 나열된 구성 요소에 대해 설명합니다.
 
 <table>
  <tbody>
@@ -246,8 +248,8 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
    <td>전환 또는 활성화/비활성화 액션을 수행하는 스위치를 추가합니다. 전환 구성 요소에서는 두 개 이상의 옵션을 추가할 수 없습니다. 스위치에는 켜기 또는 끄기 등 두 가지 값만 있을 수 있으므로 필수 항목은 적용되지 않습니다. 사용자 입력에 상관없이 적어도 한 개의 값이 저장됩니다. <br /> </td>
   </tr>
   <tr>
-   <td>표</td>
-   <td>행 및 열에 데이터를 구성할 수 있는 표를 추가합니다. </td>
+   <td>테이블</td>
+   <td>행 및 열에 데이터를 구성할 수 있는 테이블을 추가합니다. </td>
   </tr>
   <tr>
    <td>전화 번호</td>

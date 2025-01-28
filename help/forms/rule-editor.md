@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 # 적응형 양식에 규칙 추가 {#adaptive-forms-rule-editor}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+>[!NOTE]
+>
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -54,11 +56,11 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 **조건-작업** 이 구문에서 규칙 먼저 조건을 정의한 다음 트리거할 작업을 정의합니다. 이 구문은 프로그래밍 언어의 if-then 문과 비슷합니다.
 
-규칙 편집기에서 **When** 규칙 형식은 조건-작업 구문을 적용합니다.
+규칙 편집기 **에서 When** 규칙 형식은 조건-작업 구문을 적용합니다.
 
 **Action-Condition** 이 구문에서 규칙 먼저 트리거할 작업을 정의한 다음 평가 조건을 정의합니다. 이 구문의 또 다른 변형은 action-condition-alternate action으로, 조건이 False를 반환하는 경우 트리거할 대체 작업도 정의합니다.
 
-규칙 편집기의 보기, Hide, Enable, Disable, Set 값 및 Validate 규칙 유형은 작업 조건 규칙 구문을 적용합니다. 기본적으로 보기(Look)의 대체 작업은 숨기기(Hide)이고 사용(Enable)의 대체 작업은 사용 안 함(Disable)이며, 그 반대입니다. 기본 대체 작업은 변경할 수 없습니다.
+규칙 편집기의 보기, 숨기기, 활성화, 비활성화, 값 설정 및 규칙 유형 유효성 검사는 작업 조건 규칙 구문을 적용합니다. 기본적으로 보기(Look)의 대체 작업은 숨기기(Hide)이고 사용(Enable)의 대체 작업은 사용 안 함(Disable)이며, 그 반대입니다. 기본 대체 작업은 변경할 수 없습니다.
 
 >[!NOTE]
 >
