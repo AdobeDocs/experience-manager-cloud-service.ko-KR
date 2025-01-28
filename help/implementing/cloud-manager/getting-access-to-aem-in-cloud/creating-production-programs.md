@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 13%
+source-wordcount: '1045'
+ht-degree: 12%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 13%
 
 1. *프로그램을 만들어 보세요* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
 
-1. **프로그램 목표**&#x200B;에서 **`Set up for production`**&#x200B;을(를) 선택합니다.
+1. **프로그램 목표**&#x200B;에서 ![구 모양 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**프로덕션 설정**&#x200B;을 선택합니다.
 
    ![프로그램 만들기 마법사](assets/create-production-program.png)
 
 1. (선택 사항) 마법사 대화 상자의 오른쪽 아래 모서리에서 다음 중 하나를 수행합니다.
 
-   * 이미지 파일을 **프로그램 이미지 추가** 대상으로 끌어서 놓습니다.
-   * **프로그램 이미지 추가**&#x200B;를 클릭한 다음 파일 브라우저에서 이미지를 선택합니다.
-   * 추가한 이미지를 삭제하려면 휴지통 아이콘을 클릭합니다.
+   * 이미지 파일을 ![이미지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **프로그램 이미지 추가** 대상으로 끌어다 놓습니다.
+   * ![이미지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **프로그램 이미지 추가**&#x200B;를 클릭한 다음 파일 브라우저에서 이미지를 선택합니다.
+   * 추가한 이미지를 제거하려면 ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)을 클릭하세요.
 
 1. **계속**&#x200B;을 클릭합니다.
 
@@ -52,13 +52,13 @@ ht-degree: 13%
    * 디지털 환경을 최적화하는 전체 관리 CDN 솔루션으로 **Edge Deliver Services**&#x200B;를 선택하십시오. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](#edge-overview)를 참조하세요.
    * **[향상된 보안 사용](#security)** 옵션을 선택한 경우 HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있습니다.
 
-   ![솔루션 선택](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![솔루션 선택](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. 솔루션 이름 왼쪽의 V자형 화살표를 클릭하면 **Sites**&#x200B;에서 **Commerce** 추가 기능 옵션과 같은 선택적 추가 기능이 표시됩니다.
+   * 솔루션 이름 왼쪽의 ![V자 크기 300 아이콘](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)을 클릭하여 **Sites**&#x200B;에서 **Commerce** 추가 기능 옵션과 같은 선택적 추가 기능을 표시합니다.
 
    ![추가 기능 선택](assets/setup-prod-commerce.png)
 
-1. 솔루션 및 추가 기능을 선택한 상태에서 **계속**&#x200B;을 클릭합니다.
+1. 솔루션 및 추가 기능을 모두 선택했으면 **계속**&#x200B;을 클릭합니다.
 
 1. **Go-Live 날짜** 탭에서 프로덕션 프로그램을 실행하기로 계획한 날짜를 입력합니다.
 
@@ -69,7 +69,7 @@ ht-degree: 13%
 
 1. **만들기**&#x200B;를 클릭합니다. Cloud Manager은 프로그램을 만들고 선택 항목을 위한 랜딩 페이지에 표시합니다.
 
-![Cloud Manager 개요](assets/navigate-cm.png)
+   ![Cloud Manager 개요](assets/navigate-cm.png)
 
 ## 추가 프로덕션 프로그램 옵션 {#options}
 
@@ -98,7 +98,7 @@ Adobe HIPAA 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of
 
 ![SLA 옵션](assets/create-production-program-sla.png)
 
-AEM Sites과 Forms은 표준 99.9% 서비스 수준 계약(SLA)을 제공합니다. **99.99% 서비스 수준 계약** 옵션을 사용하면 사이트 및/또는 Forms의 프로덕션 환경에서 99.99%의 최소 가동 시간 비율을 사용할 수 있습니다.
+AEM Sites 및 Forms은 표준 99.9% service level agreement(SLA)를 제공합니다. **99.99% Service level agreement** 옵션을 사용하면 사이트 및/또는 Forms의 프로덕션 환경에서 99.99%의 최소 가동 시간 비율을 사용할 수 있습니다.
 
 99.99% SLA은 가용성 향상, 지연 시간 단축 등의 이점을 제공하며 [추가 게시 영역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)을 프로그램의 프로덕션 환경에 적용해야 합니다.
 
