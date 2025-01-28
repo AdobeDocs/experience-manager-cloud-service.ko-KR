@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 34%
+source-wordcount: '1489'
+ht-degree: 31%
 
 ---
 
@@ -84,6 +84,12 @@ Java 21 또는 Java 17을 사용하여 빌드로 마이그레이션하려면 먼
 
 응용 프로그램을 새 Java 빌드 버전 및 런타임 버전으로 마이그레이션할 때 프로덕션에 배포하기 전에 개발 및 스테이지 환경에서 철저하게 테스트하십시오.
 
+다음 배포 전략을 권장합니다.
+
+1. https://experience.adobe.com/#/downloads에서 다운로드할 수 있는 Java 21로 로컬 SDK을 실행하고 애플리케이션을 배포하고 기능을 확인합니다. 로그에서 클래스 로딩 또는 바이트코드 직조 문제를 나타내는 오류가 없는지 확인합니다.
+1. Java 21을 buildtime Java 버전으로 사용하도록 Cloud Manager 저장소에서 분기를 구성하고 이 분기를 사용하도록 DEV 파이프라인을 구성하고 파이프라인을 실행합니다. 유효성 검사 테스트를 실행합니다.
+1. Java 21을 buildtime Java 버전으로 사용하도록 스테이지/프로덕션 파이프라인을 구성하고 파이프라인을 실행합니다.
+
 ##### 일부 번역 기능 {#translation-features}
 
 다음 기능은 Java 21 또는 Java 17을 사용하여 빌드할 때 올바르게 작동하지 않을 수 있으며 Adobe은 2025년 초까지 이러한 문제를 해결할 것으로 예상합니다.
@@ -93,7 +99,7 @@ Java 21 또는 Java 17을 사용하여 빌드로 마이그레이션하려면 먼
 
 #### 런타임 요구 사항 {#runtime-requirements}
 
-Java 21 런타임은 Java 21 및 Java 17을 사용하는 빌드에 사용되며 점차적으로 Java 11 빌드에도 적용됩니다(아래 참고 사항 참조). 호환성을 보장하려면 다음 조정이 필요합니다.
+Java 21 런타임은 Java 21 및 Java 17을 사용하는 빌드에 사용되며 점차적으로 Java 11 빌드에도 적용됩니다(아래 참고 사항 참조). Java 21 업데이트를 수신하려면 환경이 AEM 릴리스 17098 이상 최신이어야 합니다. 호환성을 보장하려면 다음 조정이 필요합니다.
 
 라이브러리 업데이트는 이전 Java 버전과 호환되는 상태로 유지되므로 언제든지 적용할 수 있습니다.
 
