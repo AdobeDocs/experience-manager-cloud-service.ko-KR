@@ -4,9 +4,9 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
+source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4049'
 ht-degree: 98%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 98%
 
 트래픽 필터 규칙의 하위 범주는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
-Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 개발, 스테이징 및 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
+트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 명령줄 도구를 사용하여 RDE(Rapid Development Environment)에 구성 파일을 배포할 수 있습니다.
 
 [튜토리얼을 따라](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 

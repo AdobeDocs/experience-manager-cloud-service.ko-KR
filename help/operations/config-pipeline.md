@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파일을 대상 환경에 배포합니다. 로그 전달, 제거 관련 유지 관리 작업 및 여러 CDN 기능을 포함하여 AEM as a Cloud Service의 다양한 기능을 이러한 방식으로 구성할 수 있습니다.
 
-구성 파이프라인은 Cloud Manager을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다.
+구성 파이프라인은 Cloud Manager을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다.
 
 이 문서의 다음 섹션에서는 구성 파이프라인을 사용하는 방법 및 그에 대한 구성을 구성하는 방법에 대한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
 

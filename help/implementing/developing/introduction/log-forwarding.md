@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 * HTTPS
 * 스플렁크
 
-로그 전달은 Git에서 구성을 선언하고 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 RDE, 개발, 스테이지 및 프로덕션 환경 유형에 배포하여 셀프서비스 방식으로 구성됩니다.
+로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 명령줄 도구를 사용하여 RDE(Rapid Development Environment)에 구성 파일을 배포할 수 있습니다.
 
 AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
 

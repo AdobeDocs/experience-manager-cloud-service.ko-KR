@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 30%
+source-wordcount: '2043'
+ht-degree: 31%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 30%
 
 ## 유지 관리 작업 구성 {#maintenance-tasks-configuring}
 
-이전의 AEM 버전에서는 유지 관리 카드(도구 > 운영 > 유지 관리)를 사용해 유지 관리 작업을 구성할 수 있었습니다. AEM as a Cloud Service의 경우 유지 관리 카드가 더 이상 이용 가능하지 않기 때문에 Cloud Manager를 사용해 소스 제어에 구성을 커밋하고 배포해야 합니다. Adobe은 고객이 구성할 수 없는 설정(예: 데이터스토어 가비지 수집)이 있는 유지 관리 작업을 관리합니다. 기타 유지 관리 작업은 아래 표에 설명한 대로 고객이 구성할 수 있습니다.
+이전의 AEM 버전에서는 유지 관리 카드(도구 > 운영 > 유지 관리)를 사용해 유지 관리 작업을 구성할 수 있었습니다. AEM as a Cloud Service의 경우 유지 관리 카드가 더 이상 이용 가능하지 않기 때문에 Cloud Manager를 사용해 소스 제어에 구성을 커밋하고 배포해야 합니다. Adobe은 고객이 구성할 수 없는 설정(예: 데이터스토어 가비지 수집)이 있는 유지 관리 작업을 관리합니다. 기타 유지 관리 작업은 아래 테이블에 설명한 대로 고객이 구성할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -69,14 +69,14 @@ ht-degree: 30%
     <td>고객</td>
     <td>
     <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
-    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>sling:resourceType</code> 특성이 <code>granite/operations/components/maintenance/task</code>(으)로 설정되고 <code>granite.maintenance.name</code> 특성이 <code>TaskPurge</code>(으)로 설정된 <code>granite_TaskPurgeTask</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
+    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>sling:resourceType</code> 특성이 <code>granite/operations/components/maintenance/task</code>(으)로 설정되고 <code>granite.maintenance.name</code> 특성이 <code>TaskPurge</code>(으)로 설정된 <code>granite_TaskPurgeTask</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
   </td>
   </tr>
     <tr>
     <td>워크플로 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다. <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 유지 관리 작업 문서</a>를 참조하십시오.</p>
   </td>
   </tr>
@@ -84,7 +84,7 @@ ht-degree: 30%
     <td>프로젝트 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <b>Adobe 프로젝트 제거 구성</b>에 대한 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi 속성</a> 목록을 참조하십시오.</p>
   </td>
   </tr>
@@ -267,7 +267,7 @@ data:
 * 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
 * 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
 
-**4** - [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 샌드박스 및 RDE(신속한 개발 환경)는 제거를 지원하지 않습니다.
+**4** - [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### 버전 삭제 {#version-purge}
 
