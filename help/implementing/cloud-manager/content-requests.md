@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
+source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1250'
 ht-degree: 9%
 
 ---
@@ -75,7 +75,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | Adobe은 URL을 사용하여 외부에서 가용성 또는 상태 검사를 모니터링할 것을 권장합니다.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod 준비 서비스 | 제외됨 |
 | 요원: 스카이라인-서비스-웜업/1* |
-| 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· Claudebot<br> |
+| 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot<br> |
 | Commerce integration framework 호출 제외 | 제외됨 | Commerce integration framework에 전달되는 AEM에 대한 요청(URL은 `/api/graphql`(으)로 시작)은 두 번 계산되지 않도록 하기 위해 Cloud Service에 대해 청구할 수 없습니다. |
 | `manifest.json` 제외 | 제외됨 | 매니페스트가 API 호출이 아닙니다. 데스크탑 또는 휴대 전화에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 `/etc.clientlibs/*/manifest.json`에 대한 JSON 요청을 계산해서는 안 됩니다. |
 | `favicon.ico` 제외 | 제외됨 | 반환된 컨텐츠가 HTML 또는 JSON이 아니어야 하지만, SAML 인증 흐름과 같은 특정 시나리오에서는 favicons를 HTML으로 반환하는 것이 관찰되었습니다. 따라서 favicons는 카운트에서 명시적으로 제외됩니다. |
