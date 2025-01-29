@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 45%
+source-wordcount: '720'
+ht-degree: 44%
 
 ---
 
@@ -75,6 +75,7 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 몇 �
 * 한 번에 하나의 도메인 이름만 추가할 수 있습니다.
 * AEM as a Cloud Service는 `*.example.com`와 같은 와일드카드 도메인을 지원하지 않습니다.
 * 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름(와일드카드 인증서가 유효함)이 포함된 유효한 SSL 인증서가 프로그램에 설치되어 있어야 합니다.
+* [프론트엔드 파이프라인 기능](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)과(와) 함께 사용자 지정 도메인 이름을 사용하려면 추가 구성 단계가 필요합니다.
 
 ## 시작하기 {#get-started}
 

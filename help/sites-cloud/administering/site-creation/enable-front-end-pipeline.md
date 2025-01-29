@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 45%
+source-wordcount: '625'
+ht-degree: 39%
 
 ---
 
@@ -66,3 +66,14 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 * [사이트 레일을 사용하여 사이트 테마 관리](site-rail.md)
 * [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md) - 이 설명서 여정은 프론트엔드 파이프라인 및 빠른 사이트 생성 도구를 사용하여 간편하게 사이트를 배포하는 프로세스에 대한 전체적인 개요를 제공합니다.
 * [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - 이 문서에서는 전체 스택 및 웹 계층 파이프라인의 컨텍스트 내 프론트엔드 파이프라인에 대해 설명합니다.
+
+## 프론트엔드 파이프라인 및 사용자 정의 도메인 {#custom-domains}
+
+[기술 정보](#technical-details) 섹션에 설명된 대로 사이트에 대해 프론트엔드 파이프라인 기능을 활성화하면 `/conf/<site-name>/sling:configs` 아래에 `SiteConfig` 및 `HtmlPageItemsConfig` 노드가 만들어집니다.
+
+프론트엔드 파이프라인과 함께 사이트에 대해 [Cloud Manager의 사용자 지정 도메인 기능](/help/implementing/cloud-manager/custom-domain-names/introduction.md)을 사용하려면 이러한 노드에 추가 속성을 추가해야 합니다.
+
+1. 사이트에 대해 `SiteConfig`에서 `customFrontendPrefix` 속성을 설정합니다.
+1. `HtmlPageItemsConfig`의 `prefixPath` 값을 사용자 지정 도메인으로 업데이트합니다.
+
+사이트 페이지는 해당 업데이트된 URL의 테마 아티팩트를 참조합니다.
