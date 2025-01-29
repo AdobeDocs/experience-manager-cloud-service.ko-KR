@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -25,20 +25,20 @@ AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.1.0 릴�
 
 AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1월 22일 수요일입니다.
 
-다음 릴리스는 2025년 2월 13일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 2월 13일에 예정되어 있습니다.
 
 
 ## 새로운 기능 {#what-is-new}
 
 * **코드 품질 규칙 - SonarQube 서버 업그레이드:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일로 예정된 Cloud Manager 2025.2.0 릴리스에서 SonarQube Server 9.9를 사용하여 시작됩니다.
 
-  준비를 위해 업데이트된 SonarQube 규칙을 [코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 사용할 수 있습니다.
+  준비를 위해, 업데이트된 SonarQube 규칙이 이제 [코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 제공됩니다.
 
   다음 파이프라인 텍스트 변수를 설정하여 새 규칙을 &quot;조기 확인&quot;할 수 있습니다.
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  또한 다음 변수를 설정하여 동일한 커밋에 대해 코드 품질 단계가 실행되도록 합니다(일반적으로 동일한 `commitId`에 대해 건너뜀).
+  또한 다음 변수를 설정하여 코드 품질 단계가 동일한 커밋에 대해 실행되도록 하십시오(일반적으로 동일한 `commitId`에 대해 건너뜀).
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 
 >[!NOTE]
 >
->Adobe은 기본 프로덕션 파이프라인과 동일한 분기로 구성된 새 CI/CD 코드 품질 파이프라인을 만들 것을 권장합니다. 2025년 2월 13일 릴리스에서 적절한 변수를 *이전*&#x200B;으로 설정하여 새로 적용된 규칙이 차단기를 도입하지 않는지 확인하십시오.
+>Adobe에서는 주요 프로덕션 파이프라인과 동일한 브랜치로 구성된 새로운 CI/CD 코드 품질 파이프라인을 만드는 것을 권장합니다. 2025년 2월 13일 릴리스에 *앞서* 적절한 변수를 설정하여 새로 적용된 규칙이 차단 요소를 도입하지 않는지 확인하십시오.
 
 * **Java 17 및 Java 21 빌드 지원:** 고객은 이제 Java 17 또는 Java 21을 사용하여 빌드할 수 있으므로 성능 향상 및 새로운 언어 기능에 액세스할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)을 참조하십시오. 빌드 버전이 Java 17 또는 Java 21로 설정된 경우 배포되는 런타임은 Java 21입니다.
 
@@ -100,7 +100,7 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 
 * **고급 테스트 환경:** 개발 및 프로덕션 사이의 간극을 메우기 위해 특별히 빌드된 솔루션입니다. 엔터프라이즈 요구 사항에 맞게 설계된 이 환경은 정확한 사용자 승인 테스트(UAT) 및 철저한 성능 평가를 지원하기 위해 프로덕션 수준 사양을 복제합니다.
 
-얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)한 후 `OrgID`에게 전자 메일(자세한 내용은 다음)로 보내주십시오.
+얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)하고 `OrgID`과(와) 함께 [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)에 전자 메일을 보내십시오.
 
 
 
