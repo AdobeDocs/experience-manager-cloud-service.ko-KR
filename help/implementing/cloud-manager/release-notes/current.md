@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
+source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 19%
@@ -96,11 +96,11 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 
 * **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
 
-이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
+  이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
 
 * **고급 테스트 환경:** 개발 및 프로덕션 사이의 간극을 메우기 위해 특별히 빌드된 솔루션입니다. 엔터프라이즈 요구 사항에 맞게 설계된 이 환경은 정확한 사용자 승인 테스트(UAT) 및 철저한 성능 평가를 지원하기 위해 프로덕션 수준 사양을 복제합니다.
 
-얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)하고 `OrgID`과(와) 함께 [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)에 전자 메일을 보내십시오.
+  얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)하고 `OrgID`과(와) 함께 [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)에 전자 메일을 보내십시오.
 
 
 
