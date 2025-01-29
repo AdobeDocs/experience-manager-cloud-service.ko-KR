@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 9%
+source-wordcount: '923'
+ht-degree: 11%
 
 ---
 
@@ -79,10 +79,6 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 
 * **Edge Delivery Services 사이트에 대한 향상된 지원:** Cloud Manager은 이제 최신 Edge Delivery Services 사이트에 대한 온보딩을 지원합니다. 이 업데이트에는 CDN 및 게재 스택에 대한 포괄적인 리팩터링이 포함되어 있어 견고성 및 유지 관리성이 향상됩니다.
 
-* **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
-
-이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
-
 * **파이프라인에 대한 고급 필터링 옵션:** 이제 Cloud Manager에는 파이프라인 페이지의 고급 필터링 옵션이 있으므로 관련 데이터에 빠르게 액세스하고 배포 효율성을 향상시킬 수 있습니다. 몇 가지 주요 기능은 다음과 같습니다.
 
    * **다중 기준 필터링:** 파이프라인 이름, 환경 및 배포 코드와 같은 필터를 사용하여 검색 결과를 구체화합니다.
@@ -94,10 +90,19 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 날짜는 2025년 1�
 
 * Edge Delivery 서비스에 대한 **셀프 서비스 CDN 구성:** 이제 Edge Delivery 서비스의 새 채택자가 Cloud Manager을 통해 독립적으로 CDN을 구성할 수 있습니다. 이 업데이트는 `.hlx.page/live`에서 새 `.aem.page/live`(으)로 지원을 확장하여 사용자에게 보다 유연하고 능률적인 설정을 제공합니다.
 
+## 얼리 어답터 프로그램 {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검사 지원:** Cloud Manager은 이제 Bitbucket 및 GitLab의 클라우드 및 자체 호스팅 버전에 대한 PR(가져오기 요청) 유효성 검사를 지원합니다. 이 기능을 사용하면 고객이 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 대해 코드 변경 사항을 테스트할 수 있습니다. 이 향상된 기능은 병합 전에 더 높은 코드 품질을 보장함으로써 프로덕션 파이프라인의 코드 변경 성공률을 크게 향상시켜 마켓 출시 시간을 단축하고 개발 워크플로우를 간소화합니다.
+
+이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
+
+* **고급 테스트 환경:** 개발 및 프로덕션 사이의 간극을 메우기 위해 특별히 빌드된 솔루션입니다. 엔터프라이즈 요구 사항에 맞게 설계된 이 환경은 정확한 사용자 승인 테스트(UAT) 및 철저한 성능 평가를 지원하기 위해 프로덕션 수준 사양을 복제합니다.
+
+얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)한 후 `OrgID`에게 전자 메일(자세한 내용은 다음)로 보내주십시오.
+
+
 
 <!-- ## Bug fixes -->
 
