@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1633'
+ht-degree: 73%
 
 ---
 
 # 자산 관리 {#manage-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view]의 사용자 친화적인 인터페이스를 사용하여 다양한 디지털 자산 관리(DAM) 작업을 간편하게 수행할 수 있습니다. 자산을 추가한 후 자산을 검색, 다운로드, 이동, 복사, 이름 변경, 삭제, 업데이트 및 편집할 수 있습니다.
@@ -138,6 +138,53 @@ Assets 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태�
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
+
+
+### 승인 대상 설정 {#set-approval-target}
+
+Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수 있는 **승인 대상** 필드에 설정한 값을 기반으로 OpenAPI 기능을 사용하여 Dynamic Media이나 Content Hub 또는 둘 다에 승인된 자산을 게시할 수 있습니다.
+
+승인 대상을 설정하려면:
+
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
+
+1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
+
+1. 2단계에서 **승인됨**&#x200B;을(를) 선택한 경우 승인 대상을 선택하십시오. 가능한 값은 게재 및 Content Hub을 포함합니다.
+
+   * **배달**&#x200B;은(는) 드롭다운 메뉴에서 선택한 기본 옵션이며, Experience Manager Assets에 대해 둘 다 활성화된 경우 자산을 [OpenAPI가 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Content Hub](/help/assets/product-overview.md) 모두에 게시합니다.
+
+   * **Content Hub**&#x200B;을(를) 선택하면 자산이 Content Hub에만 게시됩니다. Content Hub은 Experience Manager Assets에 대해 활성화된 경우에만 옵션으로 표시됩니다.
+
+   * 드롭다운 목록에서 옵션을 선택하지 않으면 AEM as a Cloud Service 환경에 대해 활성화된 기본 옵션이 자산에 자동으로 적용됩니다.
+
+
+   사용 가능한 옵션에 대한 자세한 내용은 [승인된 자산의 기본 승인 대상 및 게시 대상](#default-approval-target-options-publish-destinations)을 참조하십시오.
+
+   >[!NOTE]
+   >
+   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI와 함께 Dynamic Media이 활성화되어 있으면 기본적으로 활성화되어 있습니다.
+
+   ![승인 상태](/help/assets/assets/approval-status-delivery.png)
+
+1. 다른 자산 속성을 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+참고할 몇 가지 추가 사항은 다음과 같습니다.
+
+* 기본 메타데이터 양식을 사용하지 않고 **[!UICONTROL 승인 대상]** 필드를 볼 수 없는 경우 [메타데이터 양식을 편집](/help/assets/metadata-assets-view.md#metadata-forms)하여 **[!UICONTROL 승인 대상]** 필드를 사용 가능한 구성 요소에서 메타데이터 양식으로 드래그하고 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
+
+* Assets 보기를 사용하여 승인 대상을 `Content Hub`(으)로 선택하면 Content Hub의 자산을 동일한 조직에 속한 사용자가 사용할 수 있습니다.
+
+#### 승인된 에셋의 기본 승인 대상 및 게시 대상 {#default-approval-target-options-publish-destinations}
+
+다음 표에서는 AEM as a Cloud Service 환경에서 OpenAPI 및 Content Hub을 통한 DM 활성화를 기반으로 `Approval Target` 드롭다운 목록과 기본 승인 대상을 표시하기 위한 사전 요구 사항을 보여 줍니다.
+
+| OpenAPI를 사용한 Dynamic Media | Content Hub | 승인 대상 드롭다운 목록이 표시됩니까? | 승인된 자산의 기본 승인 대상 | Publish 대상 |
+| --- | --- | --- | --- |---|
+| 활성화됨 | 활성화됨 | 예 | 제공 | OpenAPI 및 Content Hub이 포함된 Dynamic Media |
+| 활성화되지 않음 | 활성화됨 | 예 | Content Hub | Content Hub |
+| 활성화됨 | 활성화되지 않음 | 예 | 제공 | OpenAPI를 사용한 Dynamic Media |
+| 활성화되지 않음 | 활성화되지 않음 | 아니요 | N/A | N/A |
 
 ### 자산 만료 날짜 설정 {#set-asset-expiration-date}
 
