@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 44%
+source-wordcount: '1812'
+ht-degree: 42%
 
 ---
 
@@ -59,7 +59,7 @@ AEM 콘텐츠 조각 편집기의 새롭고 현대화된 댓글 달기 서비스
 
 **향상된 콘텐츠 조각**
 
-[고유 ID 기반 참조와 함께 콘텐츠 조각을 참조](/help/headless/graphql-api/uuid-reference-upgrade.md)하여 에셋 또는 조각을 이동할 때에도 유효한 링크를 유지할 수 있으므로 업데이트나 다시 게시할 필요가 없습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다.
+[콘텐츠 조각이 고유 ID 기반 참조와 함께 참조](/help/headless/graphql-api/uuid-reference-upgrade.md)되도록 개선되어 조각을 다른 위치로 이동하더라도 개별 콘텐츠 조각에 대한 GraphQL 쿼리가 안정적으로 유지될 수 있습니다. 이제 &quot;ByID&quot; 쿼리로 가능합니다. 경로가 변경될 수 있지만 &quot;ByPath&quot; 쿼리가 손상될 수 있으므로 UUID는 안정적입니다. 새 ID는 모든 쿼리 또는 기타 적용 가능한 API 요청에서 속성으로 반환될 수도 있습니다. 현재 제한(2025.1): 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 페이지가 콘텐츠 조각에서 참조되는 경우 이 기능을 사용해서는 안 됩니다. 이 제한은 다음 AEM as a Cloud Service 릴리스에서 제거될 예정입니다.
 
 **콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
