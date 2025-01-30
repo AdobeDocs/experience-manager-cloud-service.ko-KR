@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
+source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 98%
+source-wordcount: '1759'
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->여기에서 2022년 또는 2023년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
+>여기에서 2023 또는 2024와 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
 >[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 살펴보십시오.
 
@@ -28,77 +28,109 @@ ht-degree: 98%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2024.11.0) 날짜는 2024년 11월 21일입니다. 다음 기능 릴리스(2025.1.0)는 2024년 1월 30일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.1.0) 날짜는 2025년 1월 30일 금요일입니다. 다음 기능 릴리스(2025.2.0)는 2025년 2월 27일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-## 릴리스 비디오 {#release-video}
+<!-- 
 
-2024년 11월 릴리스 개요 비디오를 통해 2024.11.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+## Release Video {#release-video}
+
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
+-->
+
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**[!DNL Edge Delivery Services]범용 편집기 작성 기능을 갖춘 페이지 템플릿**
+**콘텐츠 조각 편집기 주석 달기를 일반적으로 사용할 수 있습니다.**
 
-모든 Edge Delivery 페이지를 빠르게 페이지 템플릿으로 전환하십시오. 이를 통해 빈 페이지 대신 미리 정의된 구조와 콘텐츠로 새 페이지를 시작할 수 있습니다. [자세히 보기](/help/sites-cloud/authoring/universal-editor/templates.md)
+AEM 콘텐츠 조각 편집기의 새롭고 현대화된 댓글 달기 서비스를 사용하여 AEM 콘텐츠 조각을 작성할 때 동료와 쉽게 공동 작업을 수행할 수 있습니다.
+[자세히 보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment)
 
-**[!DNL Edge Delivery Services]CSV 가져오기 도구를 통해 AEM 인스턴스로 게시**
+**콘텐츠 조각 편집기 및 관리 사용자 인터페이스, 업데이트된 AEM as a Cloud Service 버전 지원**
 
-자주 사용하는 스프레드시트 도구에서 Edge Delivery 스프레드시트 데이터(예: 리디렉션)를 효율적으로 관리하고 새로운 CSV 가져오기 도구를 통해 AEM에 업로드합니다. [자세히 보기](/help/edge/wysiwyg-authoring/tabular-data.md#importing)
-
-### AEM Sites의 프리릴리스 기능
-
-[고유 ID 기반 참조를 참조하는 콘텐츠 조각](/help/headless/graphql-api/uuid-reference-upgrade.md)이 개선되었습니다. 자산이나 조각을 이동해도 유효하고 안정적인 링크를 보장하여 업데이트나 재게시가 필요하지 않습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다.
+새 콘텐츠 조각 관리 및 편집기 사용자 인터페이스에 대해 지원되는 최소 AEM as a Cloud Service 버전은 이제 2023.8.13099입니다. 새 사용자 인터페이스의 일반 공급 릴리스 이전의 이전 버전은 더 이상 지원되지 않습니다
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
+**향상된 콘텐츠 조각**
+
+[고유 ID 기반 참조와 함께 콘텐츠 조각을 참조](/help/headless/graphql-api/uuid-reference-upgrade.md)하여 에셋 또는 조각을 이동할 때에도 유효한 링크를 유지할 수 있으므로 업데이트나 다시 게시할 필요가 없습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다.
+
 **콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
-[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
+이제 AEM as a Cloud Service에서 [콘텐츠 조각 배달용 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)를 사용할 수 있습니다.
+
+### 더 이상 사용되지 않는 기능 {#sites-deprecated}
+
+#### SPA 편집기 {#spa-editor}
+
+[SPA 편집기](/help/implementing/developing/hybrid/introduction.md)는 릴리스 2025.1.0부터 새 프로젝트에 대해 더 이상 사용되지 않습니다. SPA 편집기는 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
+
+AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
+
+* 비주얼 편집용 [유니버설 편집기](/help/edge/wysiwyg-authoring/authoring.md).
+* 양식 기반 편집용 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md).
+
+#### PWA 기능 {#pwa-features}
+
+[AEM Sites용 점진적 웹 앱(PWA) 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md)이 이제 릴리스 2025.1.0부터 새 프로젝트에서 더 이상 사용되지 않습니다. 이 기능은 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media의 얼리 액세스 기능 {#dm-early-access}
+### AEM Assets의 새로운 기능 {#new-features-assets}
 
-**AI 생성 비디오 캡션**
+**Dynamic Media 템플릿**
 
-Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비디오 콘텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 개선하고 사용자 경험을 향상시킬 수 있도록 설계되었습니다. AI는 비디오의 오디오 트랙을 분석하여 음성을 기록하고 캡션을 생성하며, 정확성이나 사용자 정의를 위해 해당 캡션을 편집할 수 있습니다. 이러한 캡션은 접근성 요구 사항을 충족하며, 텍스트 기반 비디오 지원에 의존하거나 이를 선호하는 대상자의 비디오 참여를 개선하는 데 도움이 됩니다.
+모든 자사 또는 서드파티 애플리케이션에 URL을 포함시켜 사용하기 쉬운 WYSIWYG Dynamic Media 템플릿 편집기로 이미지 및 텍스트 배너를 즉시 개인화하여 실시간 배너 콘텐츠 업데이트를 통해 흥미로운 경험을 제공합니다.
 
-Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 [Adobe 고객 지원 사례를 작성하고 제출](/help/assets/dynamic-media/video.md##enable-dash)하십시오.
+![동적 렌디션](/help/assets/assets/dm-templates-smart-text-resize.png)
 
 **Dynamic Media 게재 보고서**
 
-자산 수준 게재 카운트, 레퍼러 정보, AEM Assets의 자산 경로 및 고유 자산 ID와 함께 Dynamic Media를 통해 게재된 자산에 대한 게재 인사이트를 확인할 수 있습니다. Dynamic Media를 통해 게재된 AEM Assets 저장소의 모든 자산 또는 AEM Assets 내 특정 폴더 계층 구조의 모든 자산에 대한 보고서를 생성할 수 있습니다. 인사이트는 게재된 자산의 ROI를 측정하고, 채널 성과를 측정하고, 자산에 대해 정보에 입각한 자산 관리 작업을 수행하는 데 도움이 됩니다.
+에셋 수준 게재 카운트, 레퍼러 세부 사항, AEM Assets의 에셋 경로 및 고유 에셋 ID를 포함하여 Dynamic Media을 통해 전달된 에셋에 대한 게재 인사이트를 얻을 수 있습니다. AEM Assets 저장소 또는 특정 폴더 계층의 모든 에셋에 대한 보고서를 생성합니다. 이러한 통찰력을 통해 제공된 에셋의 ROI를 측정하고, 채널 성과를 평가하고, 에셋 관리에 대한 정보에 입각한 결정을 내릴 수 있습니다.
 
-Dynamic Media 계정에서 Dynamic Media 게재 보고서에 얼리 액세스하려면 [Adobe 고객 지원 사례를 작성하고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
+![동적 렌디션](/help/assets/assets/referrer.png)
 
-### Assets 보기의 새로운 기능 {#assets-view-new-features}
+**Dynamic Media 다중 오디오 및 캡션**
 
-**Dynamic Media 패널**
+[Dynamic Media의 비디오에 대한 다중 캡션 및 다중 오디오 트랙 지원](/help/assets/dynamic-media/video.md#about-msma) - 이제 기본 비디오에 여러 캡션 및 다중 오디오 트랙을 쉽게 추가할 수 있습니다. 이 기능은 비디오를 전역 대상자가 액세스할 수 있음을 의미합니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
 
-이제 자산 보기를 통해 별도의 패널에서 Dynamic Media와 OpenAPI 포함 Dynamic Media 렌디션에 액세스할 수 있습니다. 자산 및 렌디션 유형에 따라 게재 URL을 복사하거나 렌디션을 다운로드할 수 있습니다. 자세한 내용은 [Dynamic Media 렌디션](/help/assets/renditions.md#dynamic-media-renditions) 및 [OpenAPI 기능 포함 Dynamic Media 렌디션](/help/assets/renditions.md#dm-with-openapi-renditions)을 참조하십시오.
+**HTTP를 통한 동적 적응형 스트리밍 지원**
 
-![동적 렌디션](/help/assets/assets/dm-scene7-renditions.png)
+새로운 프로토콜(DASH - Dynamic Adaptive Streaming over HTTP)이 Dynamic Media 비디오 게재(CMAF 활성화)에서 적응형 스트리밍을 위해 시작되었습니다.
+
+* 적응형 스트리밍(DASH/HLS)은 비디오에 대한 사용자 시청 환경을 향상시킵니다.
+
+* DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있음
+
+**자산 관계**
+
+이제 Assets 보기에서 간소화된 에셋 세부 사항 패널에서 에셋 관계를 보고 편집할 수 있습니다. 가 관련 히어로 콘텐츠를 더 효과적으로 찾을 수 있도록 콘텐츠에 Source 및 파생 제품과 같은 관계를 쉽게 추가할 수 있습니다.
+
+**자산 재처리**
+
+이제 Assets 보기에서 폴더에서 사용할 수 있는 자산 재처리를 지원합니다. **전체 프로세스** 옵션을 사용하거나 기본 미리 보기 렌디션, 메타데이터, 사후 처리 워크플로 및 처리 프로필과 같은 고급 옵션을 사용하도록 선택할 수 있습니다.
+
+### AEM Assets의 조기 액세스 기능 {#early-access-features-assets}
+
+**AI 생성 비디오 캡션**
+
+Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비디오 콘텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 개선하고 사용자 경험을 향상시킬 수 있도록 설계되었습니다. 캡션은 비디오 속성 페이지의 &quot;캡션 및 오디오&quot; 탭에 제공된 원본 오디오, 추가 오디오 트랙 또는 추가 캡션에서 생성됩니다. 60개 이상의 언어를 지원하므로 비디오를 게시하기 전에 캡션을 검토하고 미리 볼 수 있습니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms의 새로운 기능 {#forms-new-features}
 
-* **[Adobe Sign 범위 쉽게 업데이트](/help/forms/adobe-sign-integration-adaptive-forms.md)**: Adobe Sign 구성의 범위를 AEM 클라우드 구성 페이지에서 직접 수정할 수 있습니다. 이를 통해 기존 구성을 더 빠르고 쉽게 업데이트할 수 있습니다.
-
-* **[적응형 양식에 대한 비동기 기능 지원](/help/forms/using-async-funct-in-rule-editor.md)**: 적응형 양식에 외부 프로세스나 데이터 검색을 기다리는 등의 비동기 작업이 필요한 경우, 이러한 작업을 사용자 정의 함수로 구현하고 규칙 편집기에서 구성할 수 있습니다.
-
-### AEM Forms의 프리릴리스 기능 {#forms-new-prerelease-features}
-
-* **게시 관리**: 게시 관리 워크플로를 사용하여 작성자 인스턴스에서 게시 및 미리보기 인스턴스에 이르기까지 여러 환경에서 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
+* **게시 관리**: &quot;게시 관리&quot; 워크플로를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스로 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
 
 * **[핵심 구성 요소 기반 적응형 양식의 초안 자동 저장](/help/forms/save-core-component-based-form-as-draft.md)**: 사용자는 이제 자동 저장 기능을 통해 작성 중인 양식을 초안으로 자동 저장할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 사용하면 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
 
-* **[규칙 편집기 개선 사항](/help/forms/invoke-service-enhancements-rule-editor.md)**: 핵심 구성 요소를 기반으로 하는 적응형 양식의 경우 이제 호출 서비스의 출력을 사용하여 드롭다운 옵션을 채우고, 반복 가능한 패널을 설정하고, 개별 패널을 설정하고, 호출 서비스의 출력 매개변수를 사용하여 다른 필드의 유효성을 검사할 수 있습니다.
+* **[규칙 편집기 개선 사항](/help/forms/invoke-service-enhancements-rule-editor.md)**: 핵심 구성 요소를 기반으로 하는 적응형 Forms의 경우 서비스 호출 출력을 사용하여 드롭다운 옵션을 채우고 반복 가능한 패널 또는 개별 패널을 설정할 수 있습니다. 또한 이 출력을 사용하여 다른 필드의 유효성을 검사할 수 있습니다.
 
 * **[사용자 경험 향상을 위한 패널 레이아웃 내 탐색 버튼 추가](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 버튼을 패널 레이아웃에 추가할 수 있습니다. 이러한 버튼은 패널 간 전환을 간소화하고 선택된 패널에 초점을 맞춤으로써 사용자 경험을 향상시킵니다.
 
@@ -109,73 +141,48 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### 통합
+#### [적응형 Forms에서 전자 메일 템플릿 HTML](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-* **[적응형 양식과 Adobe Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)**: 이제 AEM Forms as a Cloud Service에서는 적응형 양식을 Adobe Marketo Engage와 간단하게 연결할 수 있습니다. 이 통합을 통해 Marketo Engage의 리드 캡처와 관련 사용자 정의 오브젝트를 사용하여 직접 적응형 양식을 만들 수 있습니다. 이제 Marketo Engage의 데이터로 양식 필드를 미리 채우고 데이터를 다시 제출하여 스마트 캠페인 및 이메일 자동화와 같이 워크플로를 자동화할 수 있습니다. 적응형 양식을 Munchkin 라이브러리에 연결하여 방문 횟수, 클릭 수 및 양식 제출 수를 추적할 수도 있습니다.
+적응형 Forms을 사용하면 HTML 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
 
-#### 적응형 양식 및 HTML5 양식
+![HTML 전자 메일 템플릿](/help/forms/assets/html-email.png)
 
-* **[기존 XFA 템플릿 기반 적응형 양식 만들기](/help/forms/create-adaptive-form-using-xfa-templates.md)**: 이제 XFA 양식 템플릿(*.XDP 파일)을 사용하여 핵심 구성 요소 기반의 적응형 양식을 만들 수 있습니다. 이 기능을 통해 기존 XFA 기술에 투자한 AEM Forms On-Premise 고객도 AEM Forms as a Cloud Service를 채택할 수 있습니다.
+#### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
 
-* **HTML5 양식(XFA 기반 웹 양식)**: 이제 XFA 기술을 사용하는 AEM Forms On-Premise 고객은 HTML5 양식(XFA 기반 웹 양식)을 통한 기존 사용자 경험을 유지하면서 AEM Forms as a Cloud Service로 손쉽게 전환할 수 있습니다. 이 기능을 통해 XFA 양식 템플릿을 HTML5 포맷으로 렌더링할 수 있으므로 XFA 기반 PDF 양식을 지원하지 않는 디바이스에서도 양식에 액세스할 수 있습니다.
-
-  ![HTML 양식(XFA 기반 웹 양식)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
-
+이제 AEM Forms Document Generation API는 생성된 PDF 문서를 Azure Blob Storage에 직접 업로드할 수 있습니다. 이 향상된 기능을 통해 저장 및 검색이 간소화되어 효율성이 향상되고 클라우드 워크플로우와의 통합이 가능합니다.
 
 * **[첨부 파일을 위한 Base64 인코딩 문자열 지원](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: 이제 핵심 구성 요소 기반 적응형 양식의 첨부 파일 구성 요소에 첨부 파일을 Base64 인코딩 문자열로 제출하는 옵션이 포함됩니다.
-
-#### 인터랙티브 커뮤니케이션 및 커뮤니케이션 API
-
-* **인터랙티브 커뮤니케이션 편집기**: 인터랙티브 커뮤니케이션 편집기는 사용자 친화적인 그래픽 커뮤니케이션 디자인 도구로, 모든 최신 브라우저에서 실행되어 개인화된 데이터 기반 서신 작성 과정을 간소화할 수 있습니다. 원활한 데이터 통합, 복잡한 논리 정의, 리치 미디어 통합을 지원하며, 이를 통해 다양한 비즈니스 요구 사항에 맞는 전문적이고 규정을 준수하는 문서, 커뮤니케이션 및 템플릿을 생성할 수 있습니다.
-
-  ![인터랙티브 커뮤니케이션 편집기](/help/forms/assets/ic-editor.png)
-
-
-* **[PDF/A 규정 준수 개선](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: 이제 커뮤니케이션 API를 사용하여 보관 목적으로 PDF 문서를 PDF/A 포맷(1a, 2a, 3a)으로 변환하는 동시에, 접근성을 확보하고 이러한 표준을 준수하는지 확인할 수 있습니다.
-
-
-* **[서명 API(Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: 커뮤니케이션 API의 새로운 RESTful API를 통해 PDF 서명을 쉽게 관리할 수 있습니다. 다음과 같은 작업이 지원됩니다.
-   * 서명 지우기: 지정된 필드에서 서명을 제거합니다.
-   * 서명 필드 제거: 지정된 서명 필드를 삭제합니다.
-
-
-<!-- 
-* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
-intuitive and improving the mobile form-filling experience.
-
-* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
-
--->
-
-## 자동화된 양식 변환 서비스
-
-* **[PDF 양식을 핵심 구성 요소 기반 적응형 양식으로 변환](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: 이제 자동화된 양식 변환 서비스를 사용하여 PDF 양식, AcroForms 또는 XFA 기반 양식을 핵심 구성 요소 기반 적응형 양식으로 변환할 수 있습니다.
-
 
 >[!IMPORTANT]
 >
 > Forms 혁신을 위한 얼리 액세스 프로그램에 참여하는 데 관심이 있으십니까? 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 관심 있는 기능 목록을 포함하여 이메일을 보내 주십시오.## CIF 추가 기능 {#cloud-services-cif}
 
-## CIF 추가 기능 {#cif}
-
-### 버그 수정 {#bug-fixes-cif}
-
-* 코어 CIF 구성 요소에서 제대로 작동하도록 UI 테스트를 수정했습니다.
-* 카테고리 URL 형식이 클라우드 인스턴스에서 예상대로 작동하지 않는 문제가 해결되었습니다.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 트리 복제 성능 개선 (게시 콘텐츠 트리 워크플로 사용 중단) {#tree-replication-performance}
+### Java 21 지원 {#java21}
 
-[트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)는 심층적인 콘텐츠 계층 구조를 복제하는 데 권장되는 새로운 워크플로 모델 단계입니다. 주목할 점은 진행 중인 트리 복제 워크플로와 독립적인 복제(예: 빠른 게시 또는 게시 관리를 통한 복제)를 동시에 진행할 수 있다는 것입니다. 이는 대량 복제가 진행되는 도중 긴급한 콘텐츠를 게시해야 하는 경우에 특히 유용합니다. 트리 복제 단계는 이제 더 이상 사용되지 않는 콘텐츠 트리 게시 워크플로 및 관련 워크플로 단계를 대체합니다.
+이제 새로운 기능(예: switch 문에 대한 패턴 일치, 봉인된 클래스) 및 성능 향상을 포함하는 코드를 Java 21로 작성할 수 있습니다. Java 17 빌드도 새로 지원됩니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
+
+Java 17 또는 21 빌드가 검색되면 더 성능이 좋은 Java 21 **runtime**&#x200B;이(가) 자동으로 배포됩니다. 그러나 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내어 Java 11로 빌드된 환경에 대해 Java 21 런타임을 선택하는 것이 좋습니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아봅니다.
+
+>[!IMPORTANT]
+>
+> Java 21 **runtime**&#x200B;은(는) 2월에 샌드박스 및 개발/RDE로 시작하여 **모든** 환경(이미 Java 21 런타임이 있는 Java 17 또는 21로 이미 빌드된 환경 제외)에 점진적으로 배포된 다음 4월에 스테이지/프로덕션으로 배포됩니다.
+
+### 샌드박스 프로그램은 구성 파이프라인을 지원합니다. {#sandbox-config-pipelines}
+
+이제 샌드박스 프로그램은 구성 파이프라인을 지원하며, 이 파이프라인은 Cloud Manager에서 구성하여 git에서 지속되는 yaml 파일을 배포할 수 있습니다.
+
+CDN 구성, 로그 전달 및 버전 제거/감사 로그 제거 유지 관리 작업을 허용하는 구성 파이프라인에 대해 [자세히 알아보세요](/help/operations/config-pipeline.md).
 
 ### OpenAPI 기반 API - 얼리 어답터 프로그램 {#open-apis-earlyadopter}
 
-개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새 AEM as a Cloud Service API는 OpenAPI 사양을 따르며, 일관되고 문서화가 잘 되며 사용자 친화적인 것을 목표로 합니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 만드는 방식으로 생성됩니다.
+개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새로운 AEM as a Cloud Service API는 일관되고, 잘 문서화되고, 사용자 친화적인 목표를 가지고 OpenAPI 사양을 따릅니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 생성하여 생성됩니다.
 
 [OpenAPI 기반 AEM API](/help/implementing/developing/open-api-based-apis.md)에 대해 자세히 알아보고 구성 및 사용 방법을 안내하는 [전체 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)을 살펴보십시오.
 
 구체적으로, 아래에 나열된 API 엔드포인트가 얼리 어답터 프로그램의 일부로 제공됩니다. 관심이 있는 경우 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 이메일로 문의하여 사용 계획을 설명해 주십시오.
+
 * [Sites 콘텐츠 조각 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
@@ -183,7 +190,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
-에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. 로드맵에 반영하기 위한 목적으로, 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지, 이를 어떻게 활용할 계획인지에 대한 귀하의 의견을 듣고 싶습니다. 질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
+에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe은 이 기술이 AEM Publish 전달 및 Edge Delivery Services 프로젝트에 유용한지 알고 싶습니다. 또한 제품 로드맵 입력에 입력용으로 사용할 계획을 알려 주십시오. 질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
 

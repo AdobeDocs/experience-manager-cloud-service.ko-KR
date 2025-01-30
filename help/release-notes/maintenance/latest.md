@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a091dd6b1b69d77f9eeb50065e8946af0133f4f9
+source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 37%
+source-wordcount: '541'
+ht-degree: 34%
 
 ---
 
@@ -55,14 +55,24 @@ ht-degree: 37%
 
 ### 사용 중단된 기능 및 API {#deprecated-19149}
 
+AEM as a Cloud Service에서 더이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
+
+#### 사용자 그룹 및 제품 프로필 동기화의 변경 사항
+
 권한 관리에 Adobe Admin Console을 사용하는 경우 다음 그룹은 더 이상 AEM에 동기화되지 않으므로 사용해서는 안 됩니다.
 * _GROUP_NAME_SUFFIX로 끝나는 AEM 그룹.
 * 다른 환경, 프로그램 또는 제품의 제품 프로필.
 
 자세한 내용은 [사용자 그룹 및 제품 프로필 동기화의 변경](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)을 확인하세요.
 
+#### SPA 편집기 사용 중단 {#deprecate-spa-editor}
 
-AEM as a Cloud Service에서 더이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
+[SPA 편집기](/help/implementing/developing/hybrid/introduction.md)는 릴리스 2025.1.0부터 새 프로젝트에 대해 더 이상 사용되지 않습니다. SPA 편집기는 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
+
+AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 다음과 같습니다.
+
+* 비주얼 편집용 [유니버설 편집기](/help/edge/wysiwyg-authoring/authoring.md).
+* 양식 기반 편집용 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md).
 
 ### 보안 수정 {#security-19149}
 

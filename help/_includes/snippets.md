@@ -1,15 +1,15 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 99%
+source-wordcount: '1388'
+ht-degree: 97%
 
 ---
 # 스니펫 {#snippets}
 
 ## Headless 체험판 프로모션 {#headless-trials-promotion}
 
-[![30일 체험판을 통해 Headless CMS 살펴보기](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ko)
+[![30일 체험판을 통해 Headless CMS 살펴보기](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
@@ -237,7 +237,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->SPA 편집기는 Adobe에서 계속 지원하지만 AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
+>SPA 편집기 [이(가) 새 프로젝트에 대해 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated). 기존 프로젝트에 대해서는 Adobe에서 계속 지원하지만 새 프로젝트에 사용해서는 안 됩니다. AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 다음과 같습니다.
 >
 >* Headless 콘텐츠를 시각적으로 편집하기 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
 >* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)

@@ -4,12 +4,13 @@ description: Edge Delivery Services 사이트에서 AEM과 함께 태그를 사�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # 분류 체계 데이터 관리 {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 분류 체계의 내용이 선택한 태그 및 네임스페이스에서 자동으로 생성되므로 페이지 편집기에 표시되는 페이지는 읽기 전용입니다. 분류 체계의 내용을 자동으로 생성하는 일종의 필터 역할을 합니다. 따라서 편집기에서 페이지를 직접 편집할 이유가 없습니다.
 
-기본 태그 및 네임스페이스를 업데이트하면 AEM이 분류 체계 페이지의 내용을 자동으로 업데이트합니다. 그러나 이러한 변경 사항을 사용자가 사용할 수 있도록 하려면 변경 후 [분류 체계를 다시 게시](#publishing)해야 합니다.
+기본 태그 및 네임스페이스를 업데이트하면 AEM이 분류 체계 페이지의 내용을 자동으로 업데이트합니다. 그러나 변경 내용을 사용자가 사용할 수 있도록 하려면 변경 후 [분류를 다시 게시](#publishing)해야 합니다.
 
 ## 분류 체계 게시를 위한 paths.json 업데이트 {#paths-json}
 
@@ -155,6 +156,10 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 이 JSON 데이터는 분류 체계를 업데이트하고 다시 게시할 때 자동으로 업데이트됩니다. 앱은 사용자를 위해 이 정보에 프로그래밍 방식으로 액세스할 수 있습니다.
 
 [여러 언어로 태그를 유지 관리하는 경우](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) ISO2 언어 코드를 `sheet=` 매개변수의 값으로 전달하여 해당 언어에 액세스할 수 있습니다.
+
+## 추가 태그 속성 노출 {#additional-properties}
+
+기본적으로 분류법에는 이전 예제의 [과(와) 같이 `tag` 및 `title` 값이 포함됩니다.](#accessing) 추가 태그 속성을 노출하도록 분류를 구성할 수 있습니다. 이 예제에서는 태그 설명을 노출합니다.
+
+1. 사이트 콘솔을 사용하여 생성한 분류법을 선택합니다.
+1. 도구 모음에서 **속성** 아이콘을 탭하거나 클릭합니다.
+1. **추가 속성** 섹션에서 **추가**&#x200B;를 탭하거나 클릭하여 필드를 추가합니다.
+1. 새 필드에 노출할 JRC 속성 이름을 입력합니다. 이 경우 태그 설명에 `jcr:description`을(를) 입력하십시오.
+1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
+1. 분류법을 선택한 상태에서 도구 모음에서 **빠른 Publish**&#x200B;을 탭하거나 클릭합니다.
+
+이제 [분류법에 액세스하면 ](#accessing) 태그 설명(또는 노출하도록 선택한 모든 속성)이 JSON에 포함됩니다.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

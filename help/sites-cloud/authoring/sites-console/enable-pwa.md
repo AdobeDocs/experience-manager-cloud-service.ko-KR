@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 99%
+source-wordcount: '1926'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 99%
 >* 개발 팀의 지원
 >
 >이 기능을 사용하기 전에 Adobe는 개발 팀과 논의하여 이를 프로젝트에 사용할 수 있는 최적의 방법을 정의하는 것을 권장합니다.
+
+>[!IMPORTANT]
+>
+>AEM Sites용 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다.
+>
+>이 기능을 사용하는 기존 프로젝트는 계속 지원되지만 새 프로젝트는 이 기능을 사용하지 않아야 합니다.
 
 ## 소개 {#introduction}
 
