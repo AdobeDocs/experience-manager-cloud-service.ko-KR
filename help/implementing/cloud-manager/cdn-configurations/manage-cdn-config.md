@@ -1,22 +1,22 @@
 ---
-title: CDN 구성 관리
+title: 도메인 매핑 관리
 description: Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집 및 업데이트하거나 삭제하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '783'
 ht-degree: 8%
 
 ---
 
-# CDN 구성 관리 {#manage-cdn-configurations}
+# 도메인 매핑 관리 {#manage-cdn-configurations}
 
 Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집하거나 삭제하는 방법에 대해 알아봅니다.
 
-## CDN 구성 페이지에서 CDN 구성 편집 {#edit-cdn}
+## 도메인 매핑 페이지에서 CDN 구성 편집 {#edit-cdn}
 
 Cloud Manager Adobe에서 여러 가지 이유로 환경 계층(Publish 또는 미리보기)과 SSL 인증서를 포함한 CDN(Content Delivery Network) 구성을 편집할 수 있습니다.
 
@@ -28,11 +28,11 @@ Cloud Manager Adobe에서 여러 가지 이유로 환경 계층(Publish 또는 �
 
 이 작업을 완료하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
 
-**CDN 구성 페이지에서 CDN 구성을 편집하려면:**
+**도메인 매핑 페이지에서 CDN 구성을 편집하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
-1. 왼쪽 메뉴에서 **서비스** 아래의 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN 구성**&#x200B;을 클릭합니다.
-1. **CDN 구성** 테이블에서 업데이트하려는 CDN 구성이 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. 왼쪽 메뉴에서 **서비스** 아래의 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.
+1. **도메인 매핑** 테이블에서 업데이트하려는 CDN 구성이 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
 1. 드롭다운 메뉴에서 **편집**&#x200B;을 클릭합니다.
 
@@ -42,22 +42,22 @@ Cloud Manager Adobe에서 여러 가지 이유로 환경 계층(Publish 또는 �
 
 1. **업데이트**&#x200B;를 클릭합니다.
 
-   편집된 CDN의 상태가 변경 사항을 반영하도록 **CDN 구성** 표에 업데이트됩니다.
+   편집된 CDN의 상태가 변경 사항을 반영하도록 **도메인 매핑** 테이블에서 업데이트됩니다.
 
 
 ## 환경 페이지에서 CDN 구성 편집
 
-**환경** 페이지에서 CDN 구성을 편집하는 단계는 [CDN 구성 페이지](#edit-cdn)에서 CDN 구성을 편집하는 단계와 거의 동일하지만 시작 지점이 다릅니다.
+**환경** 페이지에서 CDN 구성을 편집하는 단계는 [도메인 매핑 페이지에서 CDN 구성을 편집](#edit-cdn)하는 단계와 거의 동일하지만 시작 지점이 다릅니다.
 
 **환경 페이지에서 CDN 구성을 편집하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 왼쪽 메뉴에서 **환경**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다.
 
 1. **환경** 페이지에서 원하는 환경을 선택하십시오.
 
-1. 환경 세부 정보 페이지의 CDN 구성 그룹화에서 편집할 CDN 구성에 해당하는 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. 환경 세부 정보 페이지의 도메인 매핑 그룹에서 편집할 CDN 구성에 해당하는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
 1. 팝업 메뉴에서 **편집**&#x200B;을 클릭합니다.
 
@@ -83,9 +83,9 @@ Cloud Manager에서 Adobe 관리 CDN 또는 고객 관리 CDN 구성을 삭제�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 왼쪽 메뉴에서 **서비스** 아래의 **CDN 구성**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 **서비스** 아래의 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.
 
-1. CDN 구성 테이블에서 제거할 CDN에 해당하는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
+1. 도메인 매핑 테이블에서 제거할 CDN에 해당하는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
 
 1. **CDN 구성 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
 
@@ -94,17 +94,17 @@ Cloud Manager에서 Adobe 관리 CDN 또는 고객 관리 CDN 구성을 삭제�
 
 ## 환경 페이지에서 CDN 구성 삭제
 
-**환경** 페이지에서 CDN 구성을 삭제하는 단계는 [CDN 구성 페이지](#edit-cdn)에서 CDN 구성을 삭제하는 단계와 거의 동일하지만 시작 지점이 다릅니다.
+**환경** 페이지에서 CDN 구성을 삭제하는 단계는 [도메인 매핑 페이지](#edit-cdn)에서 CDN 구성을 삭제하는 단계와 거의 동일하지만 시작 지점이 다릅니다.
 
 **환경 페이지에서 CDN 구성을 삭제하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 왼쪽 메뉴에서 **환경**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다.
 
 1. **환경** 페이지에서 원하는 환경을 선택하십시오.
 
-1. 환경 세부 정보 페이지의 **CDN 구성** 그룹화에서 제거할 CDN 구성에 해당하는 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
+1. 환경 세부 정보 페이지의 **도메인 매핑** 그룹화에서 제거할 CDN 구성에 해당하는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
 
 1. **CDN 구성 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
 

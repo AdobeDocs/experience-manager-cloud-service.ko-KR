@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 44%
 
 ---
@@ -194,9 +194,9 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 또는 **환경** 탭에서 동일한 정보에 액세스할 수 있습니다.
 
-1. **개요** 페이지에서&#x200B;**환경** 탭을 선택합니다.
+1. **개요** 페이지에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다.
 
-1. **환경** 탭의 왼쪽 메뉴에서 쿼리할 환경을 선택합니다.
+1. **환경** 페이지의 왼쪽 메뉴에서 쿼리할 환경을 선택합니다.
 
 1. 환경을 선택한 후:
 
@@ -306,7 +306,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
      ![로컬 로그인](assets/environ-login-locally.png)
 
-   * 왼쪽 패널에서 **환경**&#x200B;을 클릭합니다. **환경** 페이지에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **로컬 로그인**&#x200B;을 클릭합니다.
+   * 왼쪽 패널에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다. **환경** 페이지에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **로컬 로그인**&#x200B;을 클릭합니다.
 
      ![환경 탭의 로컬 로그인](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 IP 허용 목록은 Cloud Manager에서 Sites 프로그램의 작성자, 게시 및 미리보기 서비스를 위해 지원됩니다.
 
-IP 허용 목록을 관리하려면 프로그램의 **개요** 페이지에서 **환경** 탭으로 이동합니다. 세부 정보를 관리하려면 개별 환경을 클릭합니다.
+IP 허용 목록을 관리하려면 프로그램의 **개요** 페이지에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경** 페이지로 이동합니다. 세부 정보를 관리하려면 개별 환경을 클릭합니다.
 
 ### IP 허용 목록 적용 {#apply-ip-allow-list}
 

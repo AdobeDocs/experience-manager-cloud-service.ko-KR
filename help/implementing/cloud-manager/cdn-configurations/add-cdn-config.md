@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 10%
+source-wordcount: '447'
+ht-degree: 11%
 
 ---
 
@@ -31,8 +31,8 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
 
    | 사용 사례 | 단계 |
    | --- | --- |
-   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연결된 도메인이 없는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다. |
-   | Cloud Manager에 CDN 구성을 추가하려고 합니다. | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.<br>b. CDN 구성 페이지의 오른쪽 상단 모서리에서 **추가**&#x200B;를 클릭합니다. |
+   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 ![웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연결된 도메인이 없는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다. |
+   | Cloud Manager에 CDN 구성을 추가하려고 합니다. | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.<br>b. 도메인 매핑 페이지의 오른쪽 상단 모서리에서 **추가**&#x200B;를 클릭합니다. |
 
 1. **CDN 구성** 대화 상자의 **원본** 드롭다운 목록에서 다음 중 하나를 선택합니다.
 

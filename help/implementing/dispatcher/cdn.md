@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1729'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,7 @@ Cloud Manager의 셀프서비스 UI를 통해 AEM의 기본 제공 CDN을 사용
 * [Cloud Manager의 Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [CDN 구성](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **트래픽 제한**
 
@@ -136,7 +136,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 디버깅 구성
 
-BYOCDN 구성을 디버깅하려면 값이 `edge=true`인 `x-aem-debug` 헤더를 사용하십시오. 예:
+BYOCDN 구성을 디버깅하려면 값이 `edge=true`인 `x-aem-debug` 헤더를 사용합니다. 예:
 
 Linux®:
 
@@ -150,13 +150,13 @@ Windows에서는:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-`x-aem-debug` 응답 헤더의 요청에 사용된 특정 속성을 반영합니다. 예:
+이 프로세스는 `x-aem-debug` 응답 헤더의 요청에 사용된 특정 속성을 반영합니다. 예:
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-이를 사용하면 예: 에지 인증이 구성된 경우 호스트 값과 에지 키가 설정되어 있고 사용되는 키(하나의 키가 일치하는 경우)인 x-forwarded-host 헤더 값을 확인할 수 있습니다.
+이 프로세스에서는 호스트 값, 에지 인증 구성 및 x-forwarded-host 헤더 값과 같은 세부 정보를 확인할 수 있습니다. 또한 일치 항목이 존재하는 경우 에지 키가 설정되었는지 여부와 사용되는 키도 식별합니다.
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
@@ -187,8 +187,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 **잘못된 리디렉션 오류 421**
 
-요청에서 `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` 주변의 본문으로 421 오류를 받으면 HTTP `Host` 집합이 호스트에 대한 인증서의 호스트와 일치하지 않음을 나타냅니다. 이는 일반적으로 `Host` 또는 SNI 설정이 잘못되었음을 나타냅니다. `Host`과(와) SNI 설정이 모두 publish-p&lt;PROGRAM_ID>-e를 가리키는지 확인하십시오.<ENV-ID>.adobeaemcloud.com 호스트.
-
+`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` 메시지와 함께 421 오류가 발생하면 HTTP `Host`이(가) 인증서에 나열된 호스트와 일치하지 않습니다. 이 문제는 일반적으로 `Host` 또는 SNI 설정이 잘못되었음을 나타냅니다. `Host`과(와) SNI 설정이 모두 publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com 호스트를 가리켜야 합니다.
 
 **리디렉션 루프가 너무 많음**
 

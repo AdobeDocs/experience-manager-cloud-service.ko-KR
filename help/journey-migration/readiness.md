@@ -4,9 +4,9 @@ description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 6%
 
 ---
@@ -196,7 +196,7 @@ AEM as a Cloud Service에 도입된 변경 사항을 숙지한 후에는 기존 
 * 특정 AEM 설치의 기능 세트를 자세히 설명하는 설명서
 * AEM 사용자 지정 구성 및 코드에 대한 세부 사항
 * 프로덕션 Dispatcher 구성
-* CDN 구성 (있는 경우)
+* 도메인 매핑 (CDN 구성) (있는 경우)
 
 **보고서 연결**
 

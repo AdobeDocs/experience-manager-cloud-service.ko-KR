@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 39%
+source-wordcount: '1665'
+ht-degree: 38%
 
 ---
 
@@ -133,7 +133,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 * ![WAF-DDOS 배지](assets/waf-ddos-protection.png) [WAF-DDOS 보호](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [99.99% SLA(서비스 수준 계약)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+* [99.99% SLA (Service level agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 정보 아이콘을 사용하면 프로그램에 대한 추가 정보에 빠르게 액세스할 수 있습니다(목록 보기에서 유용함).
 
@@ -215,7 +215,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 * ![웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery 사이트](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery 사이트 관리
 * ![설정 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [도메인 설정](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - 프로그램의 사용자 지정 도메인 이름 관리
 * ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - 프로그램에 대한 SSL 인증서 관리
-* ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN 구성](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 구성 관리
+* ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [도메인 매핑](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - 도메인 매핑 관리
 * ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 특정 IP 주소에 대한 허용 목록 정의
 * ![상자 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [콘텐츠 세트](/help/implementing/developing/tools/content-copy.md) - 복사 목적으로 만들어진 콘텐츠 세트
 * ![내역 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [콘텐츠 복사 활동](/help/implementing/developing/tools/content-copy.md) - 콘텐츠 복사 활동
@@ -243,7 +243,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 **환경** 카드는 환경에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
 
-**환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 **모두 표시**&#x200B;를 클릭합니다.
+**환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 ![워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **모두 표시**&#x200B;를 클릭하십시오.
 
 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)도 참조하세요.
 
@@ -251,7 +251,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 **파이프라인** 카드는 파이프라인에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
 
-**파이프라인** 카드에는 세 가지 파이프라인만 나열됩니다. 프로그램의 모든 파이프라인을 보려면 **모두 표시**&#x200B;를 클릭합니다.
+**파이프라인** 카드에는 세 가지 파이프라인만 나열됩니다. 프로그램의 모든 파이프라인을 보려면 ![워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **모두 표시**&#x200B;를 클릭하십시오.
 
 파이프라인 관리 방법에 대한 자세한 내용은 [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)를 참조하십시오.
 

@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 19%
+source-wordcount: '795'
+ht-degree: 20%
 
 ---
 
@@ -33,9 +33,9 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 왼쪽 메뉴를 표시합니다.
 
-1. **서비스** 제목에서 **CDN 구성**&#x200B;을 클릭합니다.
+1. **서비스** 제목에서 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.
 
-1. **CDN 구성** 페이지에서 편집할 CDN이 있는 행 끝에 있는 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭합니다.
+1. **도메인 매핑** 페이지에서 CDN을 편집할 행 끝에 있는 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭합니다.
 
 1. **편집**&#x200B;을 클릭합니다.
 
