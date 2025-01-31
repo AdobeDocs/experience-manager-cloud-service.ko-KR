@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 40%
+source-wordcount: '1750'
+ht-degree: 36%
 
 ---
 
@@ -126,13 +126,21 @@ Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비
 
 ### AEM Forms의 새로운 기능 {#forms-new-features}
 
-* **게시 관리**: &quot;게시 관리&quot; 워크플로를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스로 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
+#### 게시 관리
 
-* **[핵심 구성 요소 기반 적응형 양식의 초안 자동 저장](/help/forms/save-core-component-based-form-as-draft.md)**: 사용자는 이제 자동 저장 기능을 통해 작성 중인 양식을 초안으로 자동 저장할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 사용하면 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
+&quot;게시 관리&quot; 워크플로를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스에 이르기까지 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
 
-* **[규칙 편집기 개선 사항](/help/forms/invoke-service-enhancements-rule-editor.md)**: 핵심 구성 요소를 기반으로 하는 적응형 Forms의 경우 서비스 호출 출력을 사용하여 드롭다운 옵션을 채우고 반복 가능한 패널 또는 개별 패널을 설정할 수 있습니다. 또한 이 출력을 사용하여 다른 필드의 유효성을 검사할 수 있습니다.
+#### 핵심 구성 요소 기반 적응형 양식의 초안 자동 저장
 
-* **[사용자 경험 향상을 위한 패널 레이아웃 내 탐색 버튼 추가](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 버튼을 패널 레이아웃에 추가할 수 있습니다. 이러한 버튼은 패널 간 전환을 간소화하고 선택된 패널에 초점을 맞춤으로써 사용자 경험을 향상시킵니다.
+이제 사용자는 부분적으로 완료된 양식을 초안으로 자동으로 저장하는 [자동 저장 기능](/help/forms/save-core-component-based-form-as-draft.md)을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 사용하면 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
+
+#### 규칙 편집기 개선 사항
+
+핵심 구성 요소를 기반으로 하는 적응형 Forms의 경우 서비스 호출의 [출력을 사용하여 드롭다운 옵션을 채우고 반복 가능한 패널 또는 개별 패널을 설정할 수 있습니다](/help/forms/invoke-service-enhancements-rule-editor.md). 또한 이 출력을 사용하여 다른 필드의 유효성을 검사할 수 있습니다.
+
+#### 패널 레이아웃의 탐색 버튼을 사용하여 사용자 경험 향상
+
+이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 단추를 패널 레이아웃에 추가할 수 있습니다. [선택한 패널에 초점을 맞춰 패널 간 전환을 단순화하여 사용자 경험을 향상시킵니다](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### [적응형 Forms에서 전자 메일 템플릿 HTML](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 적응형 Forms에서 이메일 템플릿 HTML
 
-적응형 Forms을 사용하면 HTML 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+적응형 Forms을 사용하면 [HTML 전자 메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
 
 ![HTML 전자 메일 템플릿](/help/forms/assets/html-email.png)
 
 #### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
 
-이제 AEM Forms Document Generation API는 생성된 PDF 문서를 Azure Blob Storage에 직접 업로드할 수 있습니다. 이 향상된 기능을 통해 저장 및 검색이 간소화되어 효율성이 향상되고 클라우드 워크플로우와의 통합이 가능합니다.
+이제 AEM Forms Document Generation API를 통해 [생성된 PDF 문서를 Azure Blob Storage에 직접 업로드](/help/forms/early-access-ea-features.md#doc-generation-api)할 수 있습니다. 이 향상된 기능을 통해 저장 및 검색이 간소화되어 효율성이 향상되고 클라우드 워크플로우와의 통합이 가능합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
