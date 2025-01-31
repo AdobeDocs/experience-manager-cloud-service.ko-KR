@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
 workflow-type: tm+mt
-source-wordcount: '6003'
+source-wordcount: '6006'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
       + [Experience League의 Dynamic Media 뉴스레터 아카이브](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)
+      + [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)
       + [옵션 - Dynamic Media, 일반 설정 구성](/help/assets/dynamic-media/dm-general-settings.md)
       + [옵션 - Dynamic Media, 게시 설정 구성](/help/assets/dynamic-media/dm-publish-settings.md)
