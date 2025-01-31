@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1749'
 ht-degree: 40%
 
 ---
@@ -78,7 +78,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 이제 �
 
 #### PWA 기능 {#pwa-features}
 
-[AEM Sites용 점진적 웹 앱(PWA) 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md)이 이제 릴리스 2025.1.0부터 새 프로젝트에서 더 이상 사용되지 않습니다. 이 기능은 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
+[AEM Sites용 점진적 웹 앱(PWA) 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md)은(는) 릴리스 2025.1.0부터 새 프로젝트에서 더 이상 사용되지 않습니다. 이 기능은 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
