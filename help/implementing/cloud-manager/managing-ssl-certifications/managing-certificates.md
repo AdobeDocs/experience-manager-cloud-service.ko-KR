@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 9%
+source-wordcount: '1023'
+ht-degree: 14%
 
 ---
 
@@ -46,7 +46,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
-1. 업데이트하려는 만료된 고객 관리 인증서 행에서 맨 오른쪽에 있는 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭한 다음 **보기 및 업데이트**&#x200B;를 클릭합니다.
+1. 업데이트하려는 만료된 고객 관리 인증서 행에서 맨 오른쪽에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **보기 및 업데이트**&#x200B;를 클릭합니다.
 
    ![만료된 고객 관리 SSL 인증 업데이트](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 >[!NOTE]
 >
->동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우, 해당 도메인에 한 개의 인증서가 포함되고 다른 인증서가 업데이트되면 도메인에 대해 두 인증서가 설치됩니다.
+>둘 이상의 SAN 인증서가 동일한 SAN 도메인 항목을 포함하고 그 중 하나가 업데이트된 경우 시스템에 도메인에 대해 업데이트된 인증서가 설치됩니다.
 >
 >자세한 내용은 [SSL 인증서 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)을 참조하십시오.
 
@@ -94,7 +94,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 1. **DV 인증서 이름 바꾸기** 대화 상자의 **인증서 이름** 텍스트 필드에 새 인증서 이름을 입력합니다.
 
-1. **이름 바꾸기**&#x200B;를 클릭합니다.
+1. **이름 변경**&#x200B;을 클릭합니다.
 
 
 ## SSL 인증서 삭제 {#deleting-an-ssl-certificate}

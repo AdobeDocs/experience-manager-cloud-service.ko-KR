@@ -4,10 +4,10 @@ description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
-workflow-type: ht
-source-wordcount: '495'
-ht-degree: 100%
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 92%
 
 ---
 
@@ -48,12 +48,12 @@ ht-degree: 100%
 
    | 단계 번호 | 설명 |
    | - | - |
-   | **1** | 경로가 있는 파일과 이름이 `well-known/adobe/cloudmanager-challenge.txt`인 파일을 **저장소 URL** 필드에 나열된 Git 저장소의 `main` 분기에 추가합니다. 위치 경로의 시작 부분에 마침표를 추가하지 *마십시오*.<br>필요한 경우 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 경로를 클립보드에 복사합니다. |
-   | **2** | 2단계의 텍스트 필드에 표시된 코드를 1단계에서 방금 만든 파일에 추가합니다.<br>필요한 경우 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 코드를 클립보드에 복사합니다. |
+   | **1** | 경로가 있는 파일과 이름이 `well-known/adobe/cloudmanager-challenge.txt`인 파일을 **저장소 URL** 필드에 나열된 Git 저장소의 `main` 분기에 추가합니다. 위치 경로의 시작 부분에 마침표를 추가하지 *마십시오*.<br>필요한 경우 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭하여 클립보드에 경로를 복사합니다. |
+   | **2** | 2단계의 텍스트 필드에 표시된 코드를 1단계에서 방금 만든 파일에 추가합니다.<br>필요한 경우 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭하여 코드를 클립보드에 복사합니다. |
    | **3** | 방금 만든 변경 사항의 가져오기 요청을 Git 저장소에 만든 다음 `main`에 병합하여 코드를 커밋합니다. |
 
 1. **확인**&#x200B;을 클릭합니다.
 
 저장소가 검증되면 Edge Delivery 사이트 테이블의 상태가 업데이트됩니다. 내부에 흰색 확인 표시가 있는 녹색 원은 상태를 나타냅니다.
 
-같은 테이블에서 ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)를 클릭하여 사이트 세부 정보를 확인합니다. 이 정보에는 검증된 저장소 URL과 미리보기 및 프로덕션 웹 사이트 URL이 포함됩니다.
+같은 테이블에서 ![Edge Delivery 사이트 정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)을 클릭하여 사이트 세부 정보를 봅니다. 이 정보에는 검증된 저장소 URL과 미리보기 및 프로덕션 웹 사이트 URL이 포함됩니다.

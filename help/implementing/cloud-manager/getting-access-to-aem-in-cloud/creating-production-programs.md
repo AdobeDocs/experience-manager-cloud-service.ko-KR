@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1047'
 ht-degree: 12%
 
 ---
@@ -119,7 +119,7 @@ AEM Sites 및 Forms은 표준 99.9% service level agreement(SLA)를 제공합니
 
 ## 프로그램 액세스 {#accessing}
 
-1. 랜딩 페이지에 프로그램 카드가 표시되면 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg 을 클릭하여 사용 가능한 메뉴 옵션을 확인합니다.
+1. 랜딩 페이지에 프로그램 카드가 표시되면 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 사용 가능한 메뉴 옵션을 확인합니다.
 
    ![프로그램 개요](assets/program-overview.png)
 

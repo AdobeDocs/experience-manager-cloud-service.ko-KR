@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 42%
 
 샌드박스 프로그램 환경이 최대 절전 모드로 전환되는 데는 몇 분 정도 걸릴 수 있습니다. 데이터는 최대 절전 모드 동안 보존됩니다.
 
-### 샌드박스 프로그램 환경을 수동으로 최대 절전 모드로 설정 {#using-manual-hibernation}
+### 샌드박스 프로그램 환경을 수동으로 최대 절전 모드 설정 {#using-manual-hibernation}
 
 Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 모드로 전환할 수 있습니다. Developer Console for a sandbox 프로그램에 대한 액세스는 Cloud Manager의 모든 사용자가 사용할 수 있습니다.
 
@@ -74,7 +74,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 최대 절전 모드를 해제할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
-1. **환경** 카드에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **Developer Console**&#x200B;을 클릭합니다.
+1. **환경** 카드에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **Developer Console**&#x200B;을 클릭합니다.
 
    * Developer Console에 대한 자세한 내용은 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)를 참조하십시오.
 

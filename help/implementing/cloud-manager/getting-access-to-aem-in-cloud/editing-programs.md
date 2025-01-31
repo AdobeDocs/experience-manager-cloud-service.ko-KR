@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 45%
+source-wordcount: '420'
+ht-degree: 42%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 45%
 
 * Assets가 있는 기존 프로그램에 Sites 솔루션을 추가하며, 이와 반대도 마찬가지입니다.
 * Sites와 Assets가 모두 있는 기존 프로그램에서 Sites 또는 Assets를 제거할 수 있습니다.
-* 두 번째 미사용 솔루션 권한을 기존 프로그램에 추가하거나 새 프로그램으로 추가합니다.
+* 기존 프로그램에 미사용 솔루션 권한을 추가하거나 새 프로그램을 만듭니다.
 * 샌드박스 프로그램을 삭제합니다.
 
 ## 권한 {#permissions}
 
-프로그램을 편집하거나 샌드박스 프로그램을 삭제하고 라이선스 대시보드에 액세스하려면 **비즈니스 소유자** 역할의 멤버여야 합니다.
+프로그램을 편집하고 샌드박스 프로그램을 삭제하고 라이선스 대시보드에 액세스하려면 **비즈니스 소유자** 역할이 있어야 합니다.
 
 ## 프로그램 편집 {#editing}
 
@@ -46,7 +46,7 @@ ht-degree: 45%
 
    ![일반 탭](assets/edit-program-prod1.png)
 
-1. 프로그램 편집에 사용할 수 있는 옵션은 프로그램을 만들 때와 동일합니다.
+1. 프로그램 편집에 사용할 수 있는 옵션은 프로그램 만들기에 사용할 수 있는 옵션과 동일합니다.
    * 개별 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 및 [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)를 참조하십시오.
    * 조직의 권한에 따라 프로덕션 프로그램에 [추가 옵션](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)을 사용할 수 있습니다.
 
@@ -70,7 +70,7 @@ ht-degree: 45%
 
    ![프로그램 삭제 옵션](assets/delete-sandbox1.png)
 
-또는 Cloud Manager 개요 페이지에서 프로그램 카드의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **프로그램 삭제**&#x200B;를 선택할 수 있습니다.
+또는 Cloud Manager 개요 페이지에서 프로그램 카드의 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **프로그램 삭제**&#x200B;를 선택할 수 있습니다.
 
 ![프로그램 카드의 샌드박스 삭제](assets/delete-sandbox2.png)
 

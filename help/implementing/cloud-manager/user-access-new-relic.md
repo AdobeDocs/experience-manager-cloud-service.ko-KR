@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 42%
 
 ---
@@ -49,7 +49,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **사용자 관리**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **사용자 관리**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](
 
 1. New Relic One에 액세스할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **New Relic 열기**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **New Relic 열기**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-access.png)
 
