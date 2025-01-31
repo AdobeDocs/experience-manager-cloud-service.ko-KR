@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 42%
+source-wordcount: '1750'
+ht-degree: 40%
 
 ---
 
@@ -150,12 +150,6 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 #### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
 
 이제 AEM Forms Document Generation API는 생성된 PDF 문서를 Azure Blob Storage에 직접 업로드할 수 있습니다. 이 향상된 기능을 통해 저장 및 검색이 간소화되어 효율성이 향상되고 클라우드 워크플로우와의 통합이 가능합니다.
-
-* **[첨부 파일을 위한 Base64 인코딩 문자열 지원](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: 이제 핵심 구성 요소 기반 적응형 양식의 첨부 파일 구성 요소에 첨부 파일을 Base64 인코딩 문자열로 제출하는 옵션이 포함됩니다.
-
->[!IMPORTANT]
->
-> Forms 혁신을 위한 얼리 액세스 프로그램에 참여하는 데 관심이 있으십니까? 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 관심 있는 기능 목록을 포함하여 이메일을 보내 주십시오.## CIF 추가 기능 {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
