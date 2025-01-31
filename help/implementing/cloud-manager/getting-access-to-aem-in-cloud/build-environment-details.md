@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
+source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1488'
 ht-degree: 31%
 
 ---
@@ -92,7 +92,7 @@ Java 21 또는 Java 17을 사용하여 빌드로 마이그레이션하려면 먼
 
 ##### 일부 번역 기능 {#translation-features}
 
-다음 기능은 Java 21 또는 Java 17을 사용하여 빌드할 때 올바르게 작동하지 않을 수 있으며 Adobe은 2025년 초까지 이러한 문제를 해결할 것으로 예상합니다.
+다음 기능은 Java 21 런타임에 배포될 때 올바르게 작동하지 않을 수 있으며 Adobe은 이러한 문제를 2025년 초까지 해결할 것으로 예상합니다.
 
 * 사람 번역을 사용할 때 `XLIFF`(XML 로컬라이제이션 교환 파일 형식)이(가) 실패합니다.
 * 최신 Java 버전의 Locale 생성자가 변경되어 `I18n`(국제화)에서 언어 로케일 히브리어(`he`), 인도네시아어(`in`) 및 이디시(`yi`)를 제대로 처리하지 못합니다.
