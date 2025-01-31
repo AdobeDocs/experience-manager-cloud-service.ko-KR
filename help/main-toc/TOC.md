@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 99%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 99%
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
+      + [게시 관리를 사용하는 Publish 적응형 Forms](/help/forms/manage-publication.md)
    + 시작하기 {#getting-started-forms}
       + [사용 사례 및 개발 환경 설정](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [대출 신청서 양식 만들기](/help/forms/create-adaptive-form-tutorial.md)
@@ -772,8 +773,8 @@ ht-degree: 99%
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
             + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 Forms으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [적응형 Forms의 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [적응형 양식의 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1021,7 +1022,9 @@ ht-degree: 99%
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
          + [양식 제출 서비스 사용](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [개요 - Forms용 Edge Delivery Services 유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [개요 - Forms용 Edge Delivery Services용 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [규칙 편집기를 사용하여 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
