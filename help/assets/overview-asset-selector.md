@@ -4,9 +4,9 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -162,7 +162,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![list view](assets/do-not-localize/list-view.png) [!UICONTROL **목록 보기**] 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
 * ![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL **격자 보기**] 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **갤러리 보기**] 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
-* ![폭포 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **폭포** 보기] 폭포 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
+* ![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **워터폴** 보기] 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
 **개요 그래픽**
 
