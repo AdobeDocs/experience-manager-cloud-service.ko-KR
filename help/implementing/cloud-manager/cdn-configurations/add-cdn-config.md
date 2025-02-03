@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '453'
 ht-degree: 11%
 
 ---
@@ -22,6 +22,8 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
 >[!IMPORTANT]
 >
 >각각 [사용자 정의 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)하고 [SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)했습니까? 그렇지 않은 경우 CDN 구성을 추가하려면 먼저 이 두 작업을 완료해야 합니다.
+
+[Adobe 관리 CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)도 참조하세요.
 
 **CDN 구성을 추가하려면:**
 
