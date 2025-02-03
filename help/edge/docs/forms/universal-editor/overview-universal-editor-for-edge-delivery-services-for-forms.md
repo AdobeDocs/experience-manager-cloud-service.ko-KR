@@ -1,18 +1,19 @@
 ---
-title: Forms(EDS Forms 블록)용 Edge Delivery Services 유니버설 편집기
-description: Forms Edge Delivery Services(EDS Forms 블록)용 범용 편집기를 사용하여 적응형 Forms을 만듭니다.
+title: Forms용 Edge Delivery Services용 범용 편집기 (EDS Forms Block)
+description: Forms용 Edge Delivery Services용 범용 편집기(EDS Forms Block)를 사용하여 적응형 양식을 만듭니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
+source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 11%
+ht-degree: 63%
 
 ---
 
-# Forms(EDS Forms 블록)용 Edge Delivery Services 유니버설 편집기
+# Forms용 Edge Delivery Services용 범용 편집기 (EDS Forms Block)
 
 범용 편집기는 간단하고, 시각적이며, 직관적인 Adobe Edge(WYSIWYG) 인터페이스를 제공하여 EDS(What You See Is What You Get Delivery Services)를 위한 양식 작성에 혁신을 줍니다. 콘텐츠 작성자 및 양식 작성자를 위해 설계된 이 솔루션은 기존의 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 액세스할 수 있도록 합니다.
 
@@ -22,42 +23,42 @@ ht-degree: 11%
 
 ![유니버설 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
-## EDS Forms 유니버설 편집기의 주요 기능
+## EDS Forms용 범용 편집기의 주요 기능
 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스"> 
     <h3>WYSIWYG 인터페이스</h3>
-    <p>유니버설 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성 및 실시간 필드 수정이 포함된 양식 디자인을 위한 WYSIWYG 인터페이스를 제공합니다.
+    <p>범용 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성, 실시간 필드 수정 기능을 갖춘 WYSIWYG 인터페이스를 통해 양식 디자인을 제공합니다.
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
-    <p>규칙 편집기를 사용하면 이벤트 기반 규칙, 즉각적인 유효성 검사 및 경량 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다.</p>
+    <p>규칙 편집기를 사용하면 사용자는 이벤트 기반 규칙, 즉각적인 유효성 검사, 간단한 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="반응형 모드">
     <h3>반응형 모드 </h3>
-    <p>장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 보고 테스트할 수 있습니다.</p>
+    <p>다양한 디바이스(데스크탑, 태블릿 및 모바일)에서 원활하게 적응되는 양식을 디자인합니다. 반응형 모드를 사용하면 다양한 화면 크기에 맞게 양식을 미리 보고 테스트할 수 있습니다.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="개인화"> 
     <h3>개인화</h3>
-    <p>Personalization은 사용자 데이터를 사용하여 사용자 환경 설정에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정하면서 맞춤 양식 경험을 제공합니다.</p>
+    <p>개인화는 사용자 데이터를 사용하여 맞춤형 양식 경험을 제공하고 사용자 선호도에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정합니다.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="사전 채우기 서비스">
-    <h3>사전 채우기 서비스</h3>
-    <p>미리 채우기 서비스는 자동으로 양식 필드를 다양한 소스의 관련 사용자 데이터로 채워 수동 입력을 줄이고 사용자 경험을 향상시킵니다.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="미리 채우기 서비스">
+    <h3>미리 채우기 서비스</h3>
+    <p>미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로, 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="규칙 편집기">
     <h3>A/B 테스트</h3>
-    <p>A/B 테스트(실험)를 통해 조직에서는 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다.</p>
+    <p>A/B 테스트(실험)를 통해 조직은 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 효과적인 변형을 파악할 수 있습니다.</p>
   </div>
 </div>
 
@@ -65,53 +66,53 @@ ht-degree: 11%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
-    <p>데이터 기반의 양식 최적화를 가능하게 하는 내장된 분석 및 추적을 통해 사용자 동작, 양식 상호 작용 및 제출률에 대한 통찰력을 얻으십시오.</p>
+    <p>기본 제공 분석 및 추적 기능을 통해 사용자 행동, 양식 상호 작용 및 제출률에 대한 인사이트를 얻고 데이터 기반 양식 최적화를 실현할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfront과 통합">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfront와 통합">
     <h3> 작업 관리 </h3>
-    <p>Adobe Workfront과의 통합을 통해 팀이 양식 생성 및 유지 관리를 위한 작업을 관리할 수 있으므로 간소화된 워크플로가 보장됩니다.</p>
+    <p>Adobe Workfront와 통합하면 팀에서 양식 작성 및 유지 관리 작업을 관리하여 워크플로를 간소화할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="데이터 바인딩">
     <h3>데이터 바인딩</h3>
-    <p>데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 구조화된 컴플레인 데이터 스토리지에 대한 실시간 업데이트와 고급 데이터 매핑을 지원합니다.</p>
+    <p>데이터 바인딩을 통해 양식 필드와 백엔드 데이터 소스를 직접 연결할 수 있으며, 이를 통해 구조화된 불만 데이터 저장을 위한 실시간 업데이트와 고급 데이터 매핑이 지원됩니다.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="다국어화/로컬라이제이션">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="국제화/현지화">
     <h3>게시/게시 취소</h3>
     <p>몇 번의 클릭만으로 양식을 편집기에서 바로 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있으므로 가용성과 콘텐츠 업데이트를 실시간으로 동적으로 관리할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="동작 제출">
-    <h3>동작 제출</h3>
-    <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 끝점 및 사전 프로세서를 지원하여 제출 워크플로우를 간소화합니다.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="제출 액션">
+    <h3>제출 액션</h3>
+    <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 엔드포인트 및 전처리기를 지원하여 제출 워크플로를 간소화합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="작업 관리">
     <h3>사용자 정의 구성 요소</h3>
-    <p>사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
+    <p>사용자 정의 구성 요소를 사용하면 개발자는 특정 조직의 사용 사례에 맞는 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="편집기 사용자 지정">
-    <h3>편집기 사용자 지정</h3>
-    <p>개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 가능하게 할 수 있습니다.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="편집기 사용자 정의">
+    <h3>편집기 사용자 정의</h3>
+    <p>개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구에 맞는 맞춤형 솔루션을 구축할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Forms 포함">
-    <h3>Forms 포함</h3>
-    <p>원활한 사용자 경험을 위해 유니버설 편집기의 내장 포함 구성 요소를 사용하여 양식을 Edge Delivery Services 사이트 페이지에 직접 임베드할 수 있습니다.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="양식 임베드">
+    <h3>양식 임베드</h3>
+    <p>범용 편집기의 기본 제공 임베드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드하여 원활한 사용자 경험을 제공합니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="사용자 정의 구성 요소">
-    <h3>감사 인사 구성</h3>
-    <p>양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다.
+    <h3>감사 구성</h3>
+    <p>양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다.
     </p>
   </div>
 </div>
@@ -139,9 +140,9 @@ ht-degree: 11%
 
 * **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
-## 사전 빌드된 양식 구성 요소
+## 사전 설치된 양식 구성 요소
 
-유니버설 편집기는 다음과 같은 양식 구성 요소를 즉시 제공합니다.
+범용 편집기는 기본적으로 다음과 같은 양식 구성 요소를 제공합니다.
 
 <table>
   <thead>
@@ -155,47 +156,47 @@ ht-degree: 11%
     <tr>
       <td rowspan="22"><img src="/help/edge/docs/forms/universal-editor/assets/adaptive-forms-components.png" alt="양식 구성 요소" style="width: 100%;"></td> 
       <td><b>아코디언</b></td>
-      <td>컨텐츠 구성을 위한 축소 가능한 패널 구조</td>
+      <td>콘텐츠 구성을 위한 축소 가능한 패널 구조</td>
     </tr>
     <tr>
       <td><b>버튼</b></td>
-      <td>탐색 또는 사용자 지정 논리와 같은 작업에 대화형 요소를 추가합니다.</td>
+      <td>탐색 또는 사용자 정의 논리와 같은 액션에 대한 대화형 요소를 추가합니다.</td>
     </tr>
     <tr>
       <td><b>Captcha</b></td>
-      <td>사용자가 Google reCaptcha 또는 HCaptcha를 사용하여 사람 확인 작업을 완료하도록 하여 스팸을 방지합니다.</td>
+      <td>Google reCaptcha 또는 HCaptcha를 사용하여 사용자가 사람임을 확인하는 작업을 완료하도록 요구함으로써 스팸을 방지할 수 있습니다.</td>
     </tr>
     <tr>
       <td><b>확인란</b></td>
-      <td>사용자가 확인란을 구성할 수 있습니다.</td>
+      <td>사용자가 체크박스를 구성할 수 있도록 허용합니다.</td>
     </tr>
     <tr>
-      <td><b>확인란 그룹</b></td>
-      <td>사용자가 그룹에서 여러 옵션을 선택할 수 있습니다.</td>
+      <td><b>체크박스 그룹</b></td>
+      <td>사용자가 그룹에서 여러 옵션을 선택할 수 있도록 허용합니다.</td>
     </tr>
     <tr>
       <td><b>날짜 선택기</b></td>
-      <td>사용자가 달력 인터페이스를 사용하여 날짜를 선택할 수 있습니다.</td>
+      <td>사용자가 캘린더 인터페이스를 사용하여 날짜를 선택할 수 있도록 허용합니다.</td>
     </tr>
     <tr>
       <td><b>드롭다운 목록</b></td>
-      <td>사전 정의된 목록에서 단일 또는 다중 선택 옵션을 제공합니다.</td>
+      <td>미리 정의된 목록에서 단일 또는 다중 선택 옵션을 제공합니다.</td>
     </tr>
     <tr>
       <td><b>이메일</b></td>
-      <td>기본 형식 유효성 검사로 이메일 주소를 캡처합니다.</td>
+      <td>기본 포맷 유효성 검사를 통해 이메일 주소를 캡처합니다.</td>
     </tr>
     <tr>
       <td><b>첨부 파일</b></td>
-      <td>문서, 이미지 또는 기타 파일 형식을 업로드할 수 있습니다.</td>
+      <td>문서, 이미지 또는 기타 파일 유형을 업로드할 수 있습니다.</td>
     </tr>
     <tr>
       <td><b>양식 조각</b></td>
-      <td>주소 필드 또는 연락처 세부 정보와 같은 섹션에 재사용 가능한 양식 구성 요소.</td>
+      <td>주소 필드나 연락처 세부 정보와 같은 섹션을 위한 재사용 가능한 양식 구성 요소입니다.</td>
     </tr>
     <tr>
       <td><b>이미지</b></td>
-      <td>양식 내에서 이미지 업로드 및 표시를 지원합니다.</td>
+      <td>양식 내 이미지 업로드 및 표시를 지원합니다.</td>
     </tr>
     <tr>
       <td><b>양식</b></td>
@@ -203,19 +204,19 @@ ht-degree: 11%
     </tr>
     <tr>
       <td><b>숫자 필드</b></td>
-      <td>숫자 입력을 캡처하여 숫자 또는 범위의 유효성 검사를 허용합니다.</td>
+      <td>숫자 입력을 캡처하여 숫자나 범위의 유효성을 검사할 수 있습니다.</td>
     </tr>
     <tr>
       <td><b>패널</b></td>
       <td>확장/축소 가능한 패널로 양식 섹션을 구성합니다.</td>
     </tr>
     <tr>
-      <td><b>라디오 단추</b></td>
-      <td>옵션 그룹에서 한 항목을 선택할 수 있습니다.</td>
+      <td><b>라디오 버튼</b></td>
+      <td>옵션 그룹에서 단일 선택이 가능하도록 합니다.</td>
     </tr>
     <tr>
       <td><b>등급</b></td>
-      <td>사용자가 별 기반 등급을 제공할 수 있습니다.</td>
+      <td>사용자가 별점을 매길 수 있도록 허용합니다.</td>
     </tr>
     <tr>
       <td><b>재설정 버튼</b></td>
@@ -223,23 +224,23 @@ ht-degree: 11%
     </tr>
     <tr>
       <td><b>제출 버튼</b></td>
-      <td>양식 제출을 트리거하고 정의된 워크플로우를 시작합니다.</td>
+      <td>양식 제출을 트리거하고 정의된 워크플로를 시작합니다.</td>
     </tr>
     <tr>
-      <td><b>전화 번호 필드</b></td>
-      <td>국가를 기반으로 한 포맷으로 전화번호를 캡처합니다.</td>
+      <td><b>전화번호 필드</b></td>
+      <td>국가별 서식으로 전화번호를 캡처합니다.</td>
     </tr>
     <tr>
       <td><b>텍스트</b></td>
-      <td>확인란을 통해 약관을 표시하고 사용자 계약을 수집하는 전용 섹션을 제공합니다.</td>
+      <td>체크박스를 통해 법적 약관을 표시하고 사용자 동의를 수집하는 전용 섹션을 제공합니다.</td>
     </tr>
     <tr>
       <td><b>텍스트 필드</b></td>
-      <td>DCapps 한 줄 입력 (예: 이름 또는 이메일 주소).</td>
+      <td>이름이나 이메일 주소와 같은 한 줄 입력을 캡처합니다.</td>
     </tr>
     <tr>
       <td><b>마법사</b></td>
-      <td>여러 부분으로 구성된 양식 프로세스를 단계별로 안내합니다.</td>
+      <td>여러 부분으로 구성된 양식 작성 과정을 단계별로 안내합니다.</td>
     </tr>
   </tbody>
 </table>
