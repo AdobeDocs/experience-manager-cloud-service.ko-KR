@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 대부분의 트래픽 필터 규칙은 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. 이 규칙은 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함하여 요청 속성과 요청 헤더에서 주로 작동합니다.
 
-트래픽 필터 규칙의 하위 범주는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
+트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
 트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 명령줄 도구를 사용하여 RDE(Rapid Development Environment)에 구성 파일을 배포할 수 있습니다.
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 * **트래픽 보호 개요:** 악성 트래픽으로부터 사용자를 보호하는 방법에 대해 알아보십시오.
 * **규칙을 구성하는 프로세스 제안:** 웹 사이트 보호를 위한 높은 수준의 방법론을 읽어 보십시오.
 * **설정:** 고급 WAF 규칙을 포함하여 트래픽 필터 규칙을 설정, 구성 및 배포하는 방법에 대해 알아보십시오.
-* **규칙 구문:** `cdn.yaml` 구성 파일에서 트래픽 필터 규칙을 선언하는 방법에 대해 알아보십시오. 여기에는 모든 Sites 및 Forms 고객이 사용할 수 있는 트래픽 필터 규칙과 함께 해당 기능에 라이선스를 부여하는 고객을 위한 WAF 규칙의 하위 범주가 모두 포함되어 있습니다.
+* **규칙 구문:** `cdn.yaml` 구성 파일에서 트래픽 필터 규칙을 선언하는 방법에 대해 알아보십시오. 여기에는 모든 Sites 및 Forms 고객이 사용할 수 있는 트래픽 필터 규칙과 함께 해당 기능에 라이선스를 부여하는 고객을 위한 WAF 규칙의 하위 카테고리가 모두 포함되어 있습니다.
 * **규칙 예:** 진행 과정을 알아보려면 선언된 규칙의 예를 참조하십시오.
 * **속도 제한 규칙:** 대규모 공격으로부터 사이트를 보호하려면 속도 제한 규칙을 사용하는 방법에 대해 알아보십시오
 * **트래픽 필터 규칙 경고** 규칙이 실행될 때 알림을 받도록 경고를 구성합니다.
@@ -63,14 +63,14 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다.](/help/operations/config-pipeline.md) IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
+이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다.](/help/operations/config-pipeline.md) IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 카테고리에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
 다음 프로세스는 올바른 트래픽 필터 규칙을 권장하는 높은 수준의 엔드 투 엔드 프로세스입니다.
 
 1. [설정](#setup) 섹션의 설명에 따라 비프로덕션 및 프로덕션 구성 파이프라인을 구성하십시오.
-1. WAF 트래픽 필터 규칙의 하위 범주에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
+1. WAF 트래픽 필터 규칙의 하위 카테고리에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
 1. 라이선스가 부여된 경우, WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
 1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
 1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
@@ -115,7 +115,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
 
-향상된 보안 또는 WAF-DDoS 보호 보안 제품에 라이선스를 부여한 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(이하 WAF 규칙)의 특수 범주를 구성할 수도 있습니다.
+향상된 보안 또는 WAF-DDoS 보호 보안 제품에 라이선스를 부여한 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(이하 WAF 규칙)의 특수 카테고리를 구성할 수도 있습니다.
 
 다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
@@ -184,7 +184,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개 변수 없이 URL의 전체 경로를 반환합니다. (이스케이프 처리되지 않은 변형에 `pathRaw` 사용)</li><li>`url`: 쿼리 매개 변수를 포함하는 전체 URL을 반환합니다. (이스케이프 처리되지 않은 변형에 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더의 첫 번째 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다. (이스케이프되지 않은 변형의 경우 `pathRaw` 사용)</li><li>`url`: 쿼리 매개변수를 포함한 전체 URL을 반환합니다. (이스케이프되지 않은 변형의 경우 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인 속성을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더에 첫 번째 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
@@ -322,7 +322,7 @@ data:
 
 **예 3**
 
-다음 규칙은 쿼리 매개변수 `foo`가 포함된 게시 중인 요청을 차단하지만, IP 192.168.1.1에서 오는 모든 요청은 허용합니다.
+다음 규칙은 쿼리 매개변수 `foo`가 포함된 게시 중인 요청을 차단하지만 IP 192.168.1.1에서 오는 모든 요청은 허용합니다.
 
 ```
 kind: "CDN"
@@ -516,7 +516,7 @@ data:
 
 원본으로 상당한 양의 트래픽이 전송되며 임계값이 높은 요청이 동일한 IP 주소에서 들어와 DDoS 공격이 의심되는 경우 [액션 센터](/help/operations/actions-center.md) 이메일 알림이 전송됩니다.
 
-이 임계값이 충족되면 Adobe에서 해당 IP 주소의 트래픽을 차단하지만, 더 낮은 임계값에서 트래픽 스파이크를 차단하도록 속도 제한 트래픽 필터 규칙을 구성하는 등 원본을 보호하기 위한 추가 조치를 취하는 것이 좋습니다. 단계별 안내는 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단 튜토리얼](#tutorial-blocking-DDoS-with-rules)을 참조하십시오.
+이 임계값이 충족되면 Adobe에서 해당 IP 주소의 트래픽을 차단하지만 더 낮은 임계값에서 트래픽 스파이크를 차단하도록 속도 제한 트래픽 필터 규칙을 구성하는 등 원본을 보호하기 위한 추가 조치를 취하는 것이 좋습니다. 단계별 안내는 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단 튜토리얼](#tutorial-blocking-DDoS-with-rules)을 참조하십시오.
 
 이 경고는 기본적으로 활성화되어 있지만 *defaultTrafficAlerts* 속성을 사용, false로 설정하여 비활성화할 수 있습니다. 경고가 트리거되면 다음 날(UTC)이 되기 전까지 다시 실행되지 않습니다.
 

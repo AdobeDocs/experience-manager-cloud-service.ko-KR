@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 34%
+ht-degree: 89%
 
 ---
 
@@ -18,35 +18,35 @@ ht-degree: 34%
 
 ## 릴리스 19149 {#19149}
 
-2025년 1월 21일에 공개적으로 릴리스된 유지 보수 릴리스 19149에 대한 지속적인 개선 사항을 요약하면 다음과 같습니다. 이전 유지 관리 릴리스는 릴리스 18751.
+2025년 1월 21일에 릴리스된 유지 관리 릴리스 19149의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 18751이었습니다.
 
 이 유지 관리 릴리스(2025.1.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-19149}
 
-* ASSETS-45286: 다운로드 보관 비동기 작업에 대한 세부 진행 상황을 표시합니다.
-* ASSETS-46296: 에셋 선택기에서 Dynamic Media 템플릿 지원
-* ASSETS-44796: DAM 비동기 자산 작업에 대해 Assets 이벤트를 실행합니다.
+* ASSETS-45286: 다운로드 보관 비동기 작업에 대한 세부적인 진행 상황 표시.
+* ASSETS-46296: 자산 선택기에서 Dynamic Media 템플릿 지원.
+* ASSETS-44796: DAM 비동기 자산 작업에 대한 자산 이벤트 발생.
 
 ### 해결된 문제 {#fixed-issues-19149}
 
-* GRANITE-55074: 오류 응답에 CORS 응답 헤더가 설정되어 있는지 확인합니다.
-* ASSETS-43755: 벌크 에셋과 관련되도록 확장성이 개선되었습니다.
-* ASSETS-45399: 에셋 라이브 카피를 만든 후 Assets 콘솔로 리디렉션합니다.
-* ASSETS-45462: 사용자 지정 폴더 썸네일과 관련된 브라우저 캐싱 문제.
-* ASSETS-46398: DM 템플릿에 대한 다운로드 및 재처리 작업을 숨깁니다.
-* ASSETS-44484: 연결된 Assets 구성을 다시 저장하는 데 문제가 있습니다.
-* ASSETS-44122: 비동기 자산 복사 작업은 현재 폴더에 복사할 때 대상 폴더의 이름을 변경하지 않습니다.
-* ASSETS-44463: 성공적인 메타데이터 내보내기 시 CSV 다운로드 버튼이 표시되지 않습니다.
-* ASSETS-45134: 대상 제목을 가진 이동 작업은 모든 폴더 제목을 무시합니다.
-* ASSETS-45137: Assets 보기를 통한 벌크 업로드와 충돌합니다.
-* ASSETS-45758: 관계를 추가한 후 에셋 관계가 무한 사용/로드 애니메이션을 받습니다.
-* ASSETS-44148: AEM의 NODE_MOVED 이벤트로 인해 로그에 불필요한 NPE가 발생할 수 있습니다.
-* ASSETS-28607: 사용자 지정 비디오 썸네일을 설정할 때 JS 오류가 발생합니다.
-* GRANITE-55781: Adobe Developer Console과 AEM 간의 그룹 동기화를 개선합니다. [사용자 그룹 및 제품 프로필 동기화의 변경 내용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)에 자세히 설명되어 있습니다.
-* GRANITE-55754: SDK 시작 스크립트가 Java 21을 지원하는지 확인합니다.
-* GRANITE-54248: 큰 에셋 폴더의 모든 항목을 스크롤할 수 없습니다.
-* SCRNS-4597: 검색 결과 목록 보기 개선 사항.
+* GRANITE-55074: 오류 응답에 CORS 응답 헤더가 설정되어 있는지 확인 가능.
+* ASSETS-43755: 대량 자산 관계에 대한 확장성 개선.
+* ASSETS-45399: 자산 Live Copy 생성 후 Assets 콘솔로 리디렉션.
+* ASSETS-45462: 사용자 정의 폴더 썸네일의 브라우저 캐싱 문제.
+* ASSETS-46398: DM 템플릿에 대한 다운로드 및 재처리 작업 숨기기.
+* ASSETS-44484: 연결된 자산 구성을 다시 저장하는 문제.
+* ASSETS-44122: 비동기 복사 자산 작업이 현재 폴더로 복사될 때 대상 폴더의 이름이 바뀌지 않음.
+* ASSETS-44463: 메타데이터 내보내기가 성공적으로 완료되어도 CSV 다운로드 버튼이 표시되지 않음.
+* ASSETS-45134: 대상 제목으로 작업을 이동하면 모든 폴더 제목을 덮어씀.
+* ASSETS-45137: 자산 보기를 통한 일괄 업로드와 충돌.
+* ASSETS-45758: 자산 관계를 추가한 후 자산 관계에 바쁨/로딩 애니메이션이 무한 표시.
+* ASSETS-44148: AEM에서 NODE_MOVED 이벤트로 인해 로그에 잘못된 NPE 발생.
+* ASSETS-28607: 사용자 정의 비디오 썸네일을 설정하는 도중 JS 오류 발생.
+* GRANITE-55781: Adobe Developer Console과 AEM 간의 그룹 동기화 개선. [사용자 그룹 및 제품 프로필 동기화의 변경 사항](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)에 대한 추가 세부 정보.
+* GRANITE-55754: SDK 시작 스크립트가 Java 21 지원 가능.
+* GRANITE-54248: 대용량 자산 폴더의 모든 항목을 스크롤할 수 없음.
+* SCRNS-4597: 검색 결과 목록 보기 개선.
 
 
 ### 알려진 문제 {#known-issues-19149}
@@ -59,11 +59,11 @@ AEM as a Cloud Service에서 더이상 사용되지 않는 기능과 API는 [사
 
 #### 사용자 그룹 및 제품 프로필 동기화의 변경 사항
 
-권한 관리에 Adobe Admin Console을 사용하는 경우 다음 그룹은 더 이상 AEM에 동기화되지 않으므로 사용해서는 안 됩니다.
+권한 관리를 위해 Adobe Admin Console을 사용할 때는 더 이상 AEM과 동기화되지 않으므로 다음 그룹을 사용해서는 안 됩니다.
 * _GROUP_NAME_SUFFIX로 끝나는 AEM 그룹.
 * 다른 환경, 프로그램 또는 제품의 제품 프로필.
 
-자세한 내용은 [사용자 그룹 및 제품 프로필 동기화의 변경](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)을 확인하세요.
+자세한 내용은 [사용자 그룹 및 제품 프로필 동기화의 변경 사항](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)을 확인해 주십시오.
 
 #### SPA 편집기 사용 중단 {#deprecate-spa-editor}
 
