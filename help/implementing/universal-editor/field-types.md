@@ -4,7 +4,7 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
+source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -158,7 +158,10 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -221,7 +224,7 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 
 >[!ENDTABS]
 
-#### 확인란 그룹 {#checkbox-group}
+#### 체크박스 그룹 {#checkbox-group}
 
 부울과 유사하게 확인란 그룹 구성 요소 유형을 사용하면 여러 개의 확인란으로 렌더링된 참/거짓 항목을 선택할 수 있습니다.
 
@@ -332,7 +335,10 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
