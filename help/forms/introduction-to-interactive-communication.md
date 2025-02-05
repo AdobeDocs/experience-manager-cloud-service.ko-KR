@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 3%
 
 ---
-
 
 # 대화형 통신
 
@@ -45,11 +45,22 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 | **클라우드 통합** | AEM Formsas a Cloud Service 에서 직접 문서 편집 |
 
 
-## 시작하기
+## 온보딩
 
 1. **액세스 요청**: 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 전자 메일
 2. **관리자 설정**: Adobe이 액세스를 활성화하고 관리자 권한을 제공합니다.
 3. **만들기 시작**: [직관적인 편집기](https://video.tv.adobe.com/v/3444094/)를 사용하여 첫 번째 서신으로 시작합니다.
+
+## 자주 묻는 질문
+
+**Q: 대화형 통신 편집기로 기존 XDP를 가져올 수 있습니까?**
+예. 기존 XDP를 가져와서 시작점으로 사용할 수 있습니다. 가져오기 프로세스 중에 지원되지 않는 기능이 강조 표시됩니다.
+
+**Q: 대화형 통신 편집기를 온-프레미스 배포에 사용할 수 있습니까?**
+아니요. 편집기는 Forms as a Cloud Service 배포에만 사용할 수 있습니다.
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * 대화형 통신 편집기 연습
 * 조각 만들기
 * 서신 미리 보기 및 테스트
-
