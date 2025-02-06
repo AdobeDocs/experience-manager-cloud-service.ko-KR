@@ -3,15 +3,12 @@ title: 대화형 통신 소개
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 2%
 
 ---
-
 
 # 대화형 통신
 
@@ -21,8 +18,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 금융 기관에서 계좌 명세서를 생성하고 정부 기관에서 혜택 공지를 간소화하는 Interactive Communications는 쉽고 효율적으로 고품질, 보안 및 법적 규정을 준수하는 서신을 작성하는 데 유용한 도구입니다.
 
-![인터랙티브 커뮤니케이션 편집기](/help/forms/assets/ic-editor.png)
 
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
 ## 핵심 기능
 
 대화형 통신 편집기의 핵심 기능은 다음과 같습니다.
@@ -41,14 +42,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 | **클라우드 통합** | AEM Formsas a Cloud Service 에서 직접 문서 편집 |
 
 
-## 온보딩
+## 시작하기
 
-Forms as a Cloud Service 초기 배포를 위한 액세스 프로그램(Early Access program)에서 대화형 통신 편집기를 사용할 수 있습니다. 조직 ID에 대한 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)로 Forms as a Cloud Service 배포에 대한 프로그램 세부 정보를 전자 메일로 보내십시오. 액세스 권한이 제공되면 [첫 번째 서신 만들기](/help/forms/create-your-first-communication.md)를 시작합니다.
-
-
-
-
-
+1. **액세스 요청**: 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 전자 메일
+2. **관리자 설정**: Adobe이 액세스를 활성화하고 관리자 권한을 제공합니다.
+3. **만들기 시작**: [직관적인 편집기](https://video.tv.adobe.com/v/3444094/)를 사용하여 첫 번째 서신으로 시작합니다.
 
 
 
@@ -122,10 +120,8 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## 다음
 
-* [첫 번째 서신 만들기](/help/forms/create-your-first-communication.md)
-* [자주 묻는 문제](/help/forms/interactive-communications-faq.md)
+* 첫 번째 서신 만들기
 * 용어 및 개념 숙지
 * 대화형 통신 편집기 연습
 * 조각 만들기
 * 서신 미리 보기 및 테스트
-
