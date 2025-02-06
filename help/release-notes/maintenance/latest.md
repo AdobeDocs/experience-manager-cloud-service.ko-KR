@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '919'
 ht-degree: 16%
 
 ---
@@ -85,6 +85,8 @@ ht-degree: 16%
 * SITES-26660: 가 &quot;문자열&quot; 유형인 경우 콘텐츠 조각 버전 @ContentType이 중단될 수 있습니다.
 * SITES-26626: 숫자 및 부울 필드에 customErrorMessage가 누락되었습니다.
 * SITES-26268: 조각을 만들 때 참조가 잘못된 경우 잘못된 상태 코드가 반환되었습니다.
+* FORMS-18098, FORMS-17954: 적응형 Forms이 Microsoft Edge 브라우저의 Internet Explorer 모드에서 로드되지 않습니다.
+* FORMS-17162: 에셋을 게시하면 OOTB 쿼리가 실행되어 게시 성능이 저하됩니다.
 
 ### 알려진 문제 {#known-issues-19352}
 

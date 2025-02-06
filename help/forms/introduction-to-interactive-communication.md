@@ -3,7 +3,7 @@ title: 대화형 통신 소개
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 2%
@@ -18,12 +18,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 금융 기관에서 계좌 명세서를 생성하고 정부 기관에서 혜택 공지를 간소화하는 Interactive Communications는 쉽고 효율적으로 고품질, 보안 및 법적 규정을 준수하는 서신을 작성하는 데 유용한 도구입니다.
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## 핵심 기능
 
 대화형 통신 편집기의 핵심 기능은 다음과 같습니다.
