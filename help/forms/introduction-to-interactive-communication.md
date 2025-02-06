@@ -3,12 +3,13 @@ title: 대화형 통신 소개
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
+
 
 # 대화형 통신
 
@@ -18,11 +19,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 금융 기관에서 계좌 명세서를 생성하고 정부 기관에서 혜택 공지를 간소화하는 Interactive Communications는 쉽고 효율적으로 고품질, 보안 및 법적 규정을 준수하는 서신을 작성하는 데 유용한 도구입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444094/)
-
-<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
-
--->
+![인터랙티브 커뮤니케이션 편집기](/help/forms/assets/ic-editor.png)
 
 ## 핵심 기능
 
@@ -42,86 +39,20 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 | **클라우드 통합** | AEM Formsas a Cloud Service 에서 직접 문서 편집 |
 
 
-## 시작하기
+## 온보딩
 
-1. **액세스 요청**: 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 전자 메일
-2. **관리자 설정**: Adobe이 액세스를 활성화하고 관리자 권한을 제공합니다.
-3. **만들기 시작**: [직관적인 편집기](https://video.tv.adobe.com/v/3444094/)를 사용하여 첫 번째 서신으로 시작합니다.
+Forms as a Cloud Service 초기 배포를 위한 액세스 프로그램(Early Access program)에서 대화형 통신 편집기를 사용할 수 있습니다. 조직 ID에 대한 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)로 Forms as a Cloud Service 배포에 대한 프로그램 세부 정보를 전자 메일로 보내십시오. 액세스 권한이 제공되면 [첫 번째 서신 만들기](https://video.tv.adobe.com/v/3444094/)를 시작합니다.
 
-
-
-<!-- 
-
-
-The Interactive Communication editor runs in any modern browser. It can be used to: 
-
-* generate dynamic data-driven documents or correspondences and customized business documents or correspondences for print, web, or archival. 
-
-* develop PDF documents for integration into existing workflows by binding communications to adaptive forms, XML schemas, XML sample files, databases, and web services. 
-
-* integrate business data and render communications as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers.
-
-* create interactive data capture applications by leading users through a series of visually appealing and streamlined panels, improving usability and reducing data entry errors.
-
-## Key Features of the editor 
-
-* **User-Friendly Interface**: The Interactive Communication editor features a point-and-click design tool that is easy to use, allowing designers to create professional communications without extensive technical knowledge.
-
-* **Design Flexibility**: Users can design communications that match both paper and digital formats, ensuring consistency and compliance with legislative requirements.
-
-* **Data Integration**: The tool seamlessly connects communication fields to various data sources, including XML schemas, sample files, databases, and web services.
-
-* **Logic Definition**: Designers can define intricate logic within their communications, enhancing functionality and interactivity. 
-
-* **Communication Creation**: Create a communication from scratch or from a template, offering flexibility and efficiency in document generation.
-
-* **Rich Media Integration**: Add text, images, and art to your communications, creating visually appealing and engaging communication.
-
-* **Seamless Editing**: Edit your communication documents saved in AEM Forms as a Cloud Service, ensuring easy access and continuous updates.
-
-* **Change Tracking**: Track and review changes, maintaining a clear record of document modifications and ensuring version control.
-
-
-![Output Formats and Usages](/help/assets/interactive-communication.png){align="center"}
-
-## Usage across AEM Forms
-
-Documents, templates, or designs created in Interactive Communication editor offer several key applications:
-
-| **Usage**                                      | **Description**                                                                 |
-|-------------------------------------------------|---------------------------------------------------------------------------------|
-| PDF Document or Correspondence Creation                          | Used to generate PDF documents or correspondence for various business needs.                      |
-| Document of Record Templates                   | Serves as custom templates for Documents of Record.                    |
-| AEM Forms Communication APIs                   | Used as a template for various AEM Forms Communication APIs for seamless integration and automation. |
-
-
-## Onboarding
-
-The Interactive Communication editor is available for free to AEM Forms as a Cloud Service customers. You can write to mailto:aem-forms-ea@adobe.com from your official address to request access.
-
-Adobe enables access for your organization and provide required privileges to the person designated as administrator in your organization. 
-
-## Supported languages 
-
-You can use the editor to create communication in languages of your choice. You can also use custom fonts in a communication. 
-
-
-<!-- Communications that are created in Interactive Communication Editor can be merged with business data and rendered as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers.
-
-Communication author can fill fields of a communication to personalize it for a reciever and print it, or print and fill the communication by hand. 
-
-Communication developers can also use Interactive Communication Editor to create applications that generate dynamic, data-driven documents and produce customized business documents for print, web, or archival. 
-
-Using communication designs, developers can create, interactive data capture applications by leading users through a series of visually appealing and streamlined panels, improving usability and reducing data entry errors. 
-
-You can also build and maintain data capture solutions that read from, validate against, and add to corporate data sources. 
-
-With Interactive Communication, you can integrate PDF documents into existing workflows by binding forms to XML schemas, XML sample files, databases, and web services. Forms and documents that are created in Designer can be merged with business data and rendered as a number of file types, including Adobe PDF, HTML, and printing for PCL, Adobe PostScript&reg; and Zebra (ZPL) printers. -->
 
 ## 다음
 
 * 첫 번째 서신 만들기
-* 용어 및 개념 숙지
-* 대화형 통신 편집기 연습
-* 조각 만들기
-* 서신 미리 보기 및 테스트
+* 자주 묻는 문제
+
+<!-- 
+* Familiarize yourself with terminology and concepts
+* Walkthrough of interactive communications editor
+* Create a fragment
+* Preview and test a correspondence
+
+-->

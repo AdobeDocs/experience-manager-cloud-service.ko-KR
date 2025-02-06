@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 26%
 
 ---
@@ -111,7 +111,19 @@ WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms �
 
 ### 적응형 Forms에서 이메일 템플릿 HTML
 
-적응형 Forms을 사용하면 HTML 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+
+적응형 Forms을 사용하면 [HTML 전자 메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+
+![HTML 전자 메일 템플릿](/help/forms/assets/html-email.png)
+
+### RESTful 웹 서비스 제출 액션
+
+이제 응용 Forms에서 새로운 RESTful 웹 서비스 제출 액션을 사용하여 캡처된 데이터를 인증된 외부 REST 끝점으로 원활하게 보낼 수 있습니다.
+
+* 지원되는 표준: 간편한 API 통합을 위한 Swagger 2.0 및 3.0
+* 보안 인증: OAuth 2.0, 기본 인증, API 키 및 사용자 지정 인증
+* 유연한 데이터 형식: 다중 파트 양식 데이터, JSON 및 URL 인코딩(키-값 쌍)
+
 
 
 ### RTL(오른쪽에서 왼쪽) 언어 지원
