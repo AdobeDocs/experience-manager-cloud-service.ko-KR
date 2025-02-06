@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
@@ -54,8 +54,8 @@ AEM 페이지 편집기는 고급 기능에 대한 액세스 권한뿐만 아니
 
 [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 자리 표시자](#component-placeholder)은 구성 요소를 배치할 위치를 보여 줍니다.
 
-1. 페이지 편집기가 [**편집** 모드에 있는지 확인하십시오.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. [구성 요소 브라우저를 엽니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. 페이지 편집기가 [**편집** 모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)에 있는지 확인하십시오.
+1. [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)를 엽니다.
 1. 필요한 구성 요소를 [필요한 위치](#component-placeholder) 및 릴리스로 드래그합니다.
 1. 새로 배치된 구성 요소를 [편집](#edit-content)합니다.
 
@@ -67,7 +67,7 @@ AEM 페이지 편집기는 고급 기능에 대한 액세스 권한뿐만 아니
 
 단락 시스템의 **구성 요소를 여기로 드래그하십시오** 자리 표시자를 사용하여 새 구성 요소를 추가할 수 있습니다.
 
-1. 페이지 편집기가 [**편집** 모드에 있는지 확인하십시오.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 페이지 편집기가 [**편집** 모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)에 있는지 확인하십시오.
 1. 단락 시스템에서 새 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
 
    * 기존 구성 요소의 도구 모음 또는 **구성 요소를 여기로 드래그하십시오** 상자에서 **구성 요소 삽입** 옵션(+)을 선택합니다.
@@ -87,13 +87,13 @@ AEM 페이지 편집기는 고급 기능에 대한 액세스 권한뿐만 아니
 
 ## 자산 추가 {#adding-asset}
 
-[자산 브라우저에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) 적절한 형식의 구성 요소를 자동으로 만듭니다(에셋이 들어 있음).
+[자산 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 구성 요소가 자동으로 만들어집니다(에셋이 들어 있음).
 
 이 동작은 설치에 대해 구성할 수 있습니다. 자세한 내용은 [구성 요소 참조 안내서](/help/implementing/developing/components/reference.md#component-placeholders) 문서를 참조하십시오.
 
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면
 
-1. 페이지가 [**편집** 모드에 있는지 확인하십시오.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)인지 확인합니다.
 1. [자산 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)를 엽니다.
 1. 필요한 자산을 필요한 위치로 드래그합니다. [구성 요소 자리 표시자](#component-placeholder)은 구성 요소가 위치한 위치를 보여 주며 해당 구성 요소가 삽입된 위치를 보여 줍니다.
 1. 자산을 대상으로 릴리스합니다. 에셋 유형에 적절한 구성 요소가 선택한 에셋이 포함된 필요한 위치에 만들어집니다.
@@ -133,7 +133,7 @@ AEM 페이지 편집기는 고급 기능에 대한 액세스 권한뿐만 아니
 
   ![삭제 버튼](assets/edit-content-delete.png)
 
-* **구성 요소 삽입**&#x200B;에서 대화 상자를 열어 [새 구성 요소를 추가합니다.](#adding-a-component-from-the-paragraph-system)
+* **구성 요소 삽입**&#x200B;에서 대화 상자를 열어 [새 구성 요소를 추가](#adding-a-component-from-the-paragraph-system)합니다.
 
   ![삽입 버튼](assets/edit-content-insert-component.png)
 

@@ -4,10 +4,10 @@ description: 내 데모 사이트를 관리하는 데 도움이 되는 도구 �
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 참조 데모 추가 기능 여정의 이전 문서인 [사이트 생성](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 새 데모 사이트를 제작해 보았습니다. 이제
+AEM 참조 데모 추가 기능 여정의 이전 문서인 [사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 새 데모 사이트를 만들었습니다. 이제
 
 * AEM 작성 환경 액세스 방법을 이해할 수 있습니다.
 * 템플릿을 기반으로 사이트를 만드는 방법을 이해할 수 있습니다.
 * 사이트 구조 탐색 및 페이지 편집에 대한 기본 사항을 이해할 수 있습니다.
 
-또한 [데모 사이트에 대해 AEM Screens를 활성화했다면](screens.md)
+또한 [데모 사이트에 대해 AEM Screens을 사용하도록 설정](screens.md)한 경우 다음 작업도 수행해야 합니다.
 
 * AEM Screens 기본 사항을 이해할 수 있습니다.
 * We.Cafe 데모 콘텐츠를 이해할 수 있습니다.

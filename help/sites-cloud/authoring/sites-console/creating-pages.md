@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 27%
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 >[!TIP]
 >
->새 페이지를 만들기 전에 [페이지가 AEM에서 어떻게 구성되어 있는지 알아보세요.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>새 페이지를 만들기 전에 [페이지가 AEM에서 어떻게 구성되는지](/help/sites-cloud/authoring/sites-console/organizing-pages.md)에 대해 알아보세요.
 
 ## 액세스 권한 {#access-privileges}
 
@@ -31,7 +31,7 @@ ht-degree: 27%
 
 모든 페이지가 미리 만들어져 있지 않다면 콘텐츠를 만들기 전에 먼저 페이지를 만들어야 합니다.
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 새 페이지를 만들 위치로 이동합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 사용하여 드롭다운 선택기를 연 다음, 목록에서 **페이지**&#x200B;를 선택합니다.
 
@@ -76,7 +76,7 @@ ht-degree: 27%
 
    * **열기**&#x200B;를 선택하면 **사이트** 콘솔이 새 페이지의 템플릿을 기반으로 적절한 편집기를 엽니다.
       * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)
-      * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      * [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 콘솔로 돌아오면 새 페이지를 볼 수 있습니다.
 

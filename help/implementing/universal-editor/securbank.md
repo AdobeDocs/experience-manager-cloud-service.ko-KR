@@ -4,7 +4,7 @@ description: 콘텐츠 제작 시간을 단축할 수 있는 범용 편집기의
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 SecurBank 앱의 설치는 앞으로 쭉 진행되지만, AEM as a Cloud Service의 많은 영역에 닿기 때문에 여러 단계가 관련되어 있습니다. 다음은 주요 단계에 대한 개요입니다.
 
-1. [Cloud Manager에서 샌드박스 프로그램을 만듭니다.](#create-sandbox-program)
-1. [프로그램의 git 저장소를 복제하고 SecurBank AEM 프로젝트 콘텐츠로 업데이트합니다.](#clone-and-update)
-1. [파이프라인을 실행하여 SecurBank AEM 프로젝트를 배포합니다.](#run-pipeline)
-1. [로컬 웹 앱 개발을 위한 Cloud Manager 자격 증명을 검색합니다.](#retrieve-credentials)
-1. [SecurBank 웹 앱을 다운로드하여 구성합니다.](#download-web-app)
-1. [SecurBank 웹 앱을 실행합니다.](#run-web-app)
+1. [Cloud Manager에서 샌드박스 프로그램을 만듭니다](#create-sandbox-program).
+1. [프로그램의 git 저장소를 복제하고 SecurBank AEM 프로젝트 콘텐츠로 업데이트합니다](#clone-and-update).
+1. [파이프라인을 실행하여 SecurBank AEM 프로젝트를 배포합니다](#run-pipeline).
+1. [로컬 웹 앱 개발을 위한 Cloud Manager 자격 증명을 검색합니다](#retrieve-credentials).
+1. [SecurBank 웹 앱 다운로드 및 구성](#download-web-app).
+1. [SecurBank 웹 앱 실행](#run-web-app).
 
 다음 섹션에서는 필요한 개별 작업에 대해 자세히 설명합니다.
 

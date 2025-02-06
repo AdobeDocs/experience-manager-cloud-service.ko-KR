@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 레이아웃 컨테이너 및 레이아웃 모드 구성 {#configuring-layout-container-and-layout-mode}
 
-[응답형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)은(는) [응답형 웹 디자인을 구현하기 위한 메커니즘입니다.](https://en.wikipedia.org/wiki/Responsive_web_design) 이를 통해 콘텐츠 작성자는 사용자가 사용하는 장치에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
+[응답형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)은(는) [응답형 웹 디자인](https://en.wikipedia.org/wiki/Responsive_web_design)을 구현하기 위한 메커니즘입니다. 이를 통해 콘텐츠 작성자는 사용자가 사용하는 디바이스에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
@@ -228,4 +228,4 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 ### 레이아웃 컨테이너의 그리드 구성 {#configure-the-grid-of-the-layout-container}
 
-페이지 템플릿을 편집하여 레이아웃 컨테이너 [의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다.](/help/sites-cloud/authoring/page-editor/templates.md)
+페이지 템플릿을 편집하여 [레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성](/help/sites-cloud/authoring/page-editor/templates.md)할 수 있습니다.

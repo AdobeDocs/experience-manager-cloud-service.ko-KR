@@ -5,16 +5,16 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
 # 프로젝트 {#projects}
 
-프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 프로젝트 및 팀 정보, 자산, 워크플로 및 [프로젝트 타일](#project-tiles)에 설명된 세부 정보와 같은 기타 유형의 정보가 포함될 수 있습니다.
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 프로젝트 및 팀 정보, 에셋, 워크플로 및 [프로젝트 타일](#project-tiles)에 자세히 설명된 대로 기타 유형의 정보가 포함될 수 있습니다.
 
 >[!CAUTION]
 >
@@ -30,7 +30,7 @@ ht-degree: 98%
 다음 추가 항목을 참조하십시오.
 
 * [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
-* [작업](/help/sites-cloud/authoring/projects/tasks.md)
+* [작업 처리](/help/sites-cloud/authoring/projects/tasks.md)
 * [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## 프로젝트 콘솔 {#projects-console}

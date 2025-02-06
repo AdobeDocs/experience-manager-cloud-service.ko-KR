@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트에서 WYSIWYG 작성을 위한 
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Services 프로젝트에서 WYSIWYG 작성을 위한 콘텐츠 모
 
 ## 전제 조건 {#prerequisites}
 
-Edge Delivery Services를 통해 WYSIWYG 작성을 사용한 프로젝트는 콘텐츠 소스 또는 [작성 방법](/help/edge/wysiwyg-authoring/authoring.md)에 관계없이 기타 Edge Delivery Services 프로젝트의 메커니즘 대부분을 상속합니다.
+Edge Delivery Services과 함께 WYSIWYG 작성을 사용하는 프로젝트는 컨텐츠 소스나 [작성 방법](/help/edge/wysiwyg-authoring/authoring.md)과 관계없이 다른 Edge Delivery Services 프로젝트의 대부분의 메커니즘을 상속합니다.
 
 프로젝트의 콘텐츠 모델링을 시작하기 전에 먼저 다음 문서를 읽어보십시오.
 
@@ -39,7 +39,7 @@ AEM에서 이 콘텐츠는 Markdown 및 HTML로 직렬화할 수 있는 모든 �
 * **이미지**: 소스, 설명
 * **버튼**: 텍스트, 제목, URL, 유형 (기본, 주, 보조)
 
-이러한 구성 요소의 모델은 [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)의 일부입니다.
+이러한 구성 요소의 모델은 [Edge Delivery Services을 사용하여 WYSIWYG을 작성할 수 있는 빌러플레이트](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)의 일부입니다.
 
 ## 블록 {#blocks}
 
@@ -111,7 +111,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 * AEM에서 블록 논리의 일반 구현인 `core/franklin/components/block/v1/block` 리소스 유형을 사용해야 합니다.
 * 블록의 테이블 헤더에 렌더링될 블록 이름을 정의해야 합니다.
    * 블록 이름은 블록을 장식하는 데 적합한 스타일과 스크립트를 가져오는 데 사용됩니다.
-* [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)를 정의할 수 있습니다.
+* [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)을(를) 정의할 수 있습니다.
    * 모델 ID는 속성 패널에서 작성자가 사용할 수 있는 필드를 정의하는 구성 요소 모델에 대한 참조입니다.
 * [필터 ID](/help/implementing/universal-editor/filtering.md)를 정의할 수 있습니다.
    * 필터 ID는 구성 요소 필터에 대한 참조이며, 이를 통해 작성 동작을 변경할 수 있습니다(예: 블록이나 섹션에 추가할 수 있는 하위 요소 또는 활성화되는 RTE 기능 제한).
@@ -181,7 +181,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 >[!ENDTABS]
 
-일부 값 유형을 통해 마크업의 의미 체계를 유추할 수 있으며 속성은 단일 셀에 결합된다는 것을 알 수 있습니다. 이 비헤이비어는 [유형 추론](#type-inference) 섹션에 설명되어 있습니다.
+일부 값 유형을 통해 마크업의 의미 체계를 유추할 수 있으며 속성은 단일 셀에 결합된다는 것을 알 수 있습니다. 이 동작은 [형식 유추](#type-inference) 섹션에 설명되어 있습니다.
 
 #### 키-값 블록 {#key-value}
 
@@ -189,7 +189,7 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 다른 경우에는 블록이 키-값 쌍과 같은 구성으로 읽혀집니다.
 
-이에 대한 예는 [섹션 메타데이터입니다.](/help/edge/developer/markup-sections-blocks.md#sections) 이 사용 사례에서는 블록을 키-값 쌍 테이블로 렌더링하도록 구성할 수 있습니다. 자세한 내용은 [섹션 및 섹션 메타데이터](#sections-metadata) 섹션을 참조하십시오.
+그 예로 [섹션 메타데이터](/help/edge/developer/markup-sections-blocks.md#sections)을 들 수 있습니다. 이 사용 사례에서 블록은 키-값 쌍 테이블로 렌더링하도록 구성될 수 있다. 자세한 내용은 [섹션 및 섹션 메타데이터](#sections-metadata) 섹션을 참조하십시오.
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ Edge Delivery Services를 통해 WYSIWYG 작성을 사용하는 경우 작성자
 
 ### 블록의 의미 체계 콘텐츠 모델 만들기 {#creating-content-models}
 
-[블록 구조의 메커니즘이 설명되었으므로](#block-structure) AEM에 유지된 콘텐츠를 일대일로 게재 계층에 매핑하는 콘텐츠 모델을 만들 수 있습니다.
+[블록 구조의 역학 설명](#block-structure)을 통해 AEM에서 지속되는 콘텐츠를 게재 계층에 일대일로 매핑하는 콘텐츠 모델을 만들 수 있습니다.
 
-모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용 및 일반 지침은 [David&#39;s Model (2번)](https://www.aem.live/docs/davidsmodel)에서 확인할 수 있습니다. 보다 구체적으로 [블록 컬렉션](/help/edge/developer/block-collection.md)에는 일반적인 사용자 인터페이스 패턴의 특정 사용 사례에 대한 광범위한 콘텐츠 모델 세트가 포함되어 있습니다.
+모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용과 일반적인 지침은 [David의 모델(테이크 2)](https://www.aem.live/docs/davidsmodel)에서 찾을 수 있습니다. 특히 [블록 컬렉션](/help/edge/developer/block-collection.md)에는 일반적인 사용자 인터페이스 패턴의 특정 사용 사례를 위한 광범위한 콘텐츠 모델 집합이 포함되어 있습니다.
 
 Edge Delivery Services를 사용한 WYSIWYG 작성의 경우, 서식 있는 텍스트와 같이 컨텍스트 내에서 의미 체계 마크업을 편집하는 대신 여러 필드로 구성된 양식으로 정보를 작성할 때 강력한 의미 체계 콘텐츠 모델을 제공하는 방법에 대해 의문을 제기합니다.
 
@@ -345,7 +345,7 @@ Edge Delivery Services를 사용한 WYSIWYG 작성의 경우, 서식 있는 텍�
 * **이미지** - AEM의 리소스에 대한 참조가 `image/`로 시작되는 MIME 유형이 있는 자산인 경우, 참조는 `<picture><img src="${reference}"></picture>`로 렌더링됩니다.
 * **링크** - 참조가 AEM에 있고 이미지가 아닌 경우나 값이 `https?://` 또는 `#`으로 시작하는 경우, 참조는 `<a href="${reference}">${reference}</a>`로 렌더링됩니다.
 * **서식 있는 텍스트** - 트리밍된 값이 단락으로 시작되는 경우(`p`, `ul`, `ol`, `h1`~`h6` 등), 값은 서식 있는 텍스트로 렌더링됩니다.
-* **Class Names** - `classes` 속성은 [블록 옵션](/help/edge/developer/markup-sections-blocks.md#block-options)으로 처리되고 [단순 블록](#simple)의 경우 테이블 헤더에 렌더링되거나 [컨테이너 블록의 항목에 대한 값 목록으로 렌더링됩니다.](#container) [블록 스타일을 다르게](/help/edge/wysiwyg-authoring/create-block.md#block-options) 설정하고 싶지만 완전히 새로운 블록을 만들 필요는 없는 경우 유용합니다.
+* **클래스 이름** - `classes` 속성이 [블록 옵션](/help/edge/developer/markup-sections-blocks.md#block-options)(으)로 처리되고 [단순 블록](#simple)에 대한 테이블 헤더나 [컨테이너 블록](#container)에 있는 항목에 대한 값 목록으로 렌더링됩니다. 이 방법은 [블록을 다르게 스타일링](/help/edge/wysiwyg-authoring/create-block.md#block-options)하려는 경우 유용하지만 완전히 새로운 블록을 만들 필요는 없습니다.
 * **값 목록** - 값이 다중 값 속성이고 첫 번째 값이 이전 값이 아닌 경우, 모든 값은 쉼표로 구분된 목록으로 연결됩니다.
 
 다른 모든 내용은 일반 텍스트로 렌더링됩니다.
@@ -532,11 +532,11 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 ## 섹션 및 섹션 메타데이터 {#sections-metadata}
 
-개발자가 여러 [블록](#blocks)을 정의하고 모델링할 수 있는 것과 동일한 방식으로 서로 다른 섹션을 정의할 수 있습니다.
+개발자가 여러 [블록](#blocks)을(를) 정의하고 모델링하는 것과 같은 방식으로 서로 다른 섹션을 정의할 수 있습니다.
 
 Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐츠 또는 블록인 단일 수준의 중첩만 의도적으로 허용합니다. 즉, 다른 구성 요소를 포함할 수 있는 보다 복잡한 시각적 구성 요소를 가지려면 섹션으로 모델링하고 자동 차단 클라이언트측을 사용하여 함께 결합해야 합니다. 이에 대한 일반적인 예로는 탭과 아코디언과 같이 접을 수 있는 섹션이 있습니다.
 
-섹션은 블록과 동일한 방식으로 정의할 수 있지만 `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 이름과 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용하는 [필터 ID](/help/implementing/universal-editor/filtering.md) 및 섹션 메타데이터를 렌더링하는 데 사용하는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
+섹션은 블록과 동일한 방식으로 정의할 수 있지만 `core/franklin/components/section/v1/section`의 리소스 유형을 사용합니다. 섹션에는 [범용 편집기](/help/implementing/universal-editor/introduction.md)에서만 사용되는 이름과 [필터 ID](/help/implementing/universal-editor/filtering.md)와 섹션 메타데이터를 렌더링하는 데 사용되는 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)가 있을 수 있습니다. 모델은 이러한 방식으로 섹션 메타데이터 블록의 모델이며, 비어 있지 않은 경우 키-값 블록으로 섹션에 자동 추가됩니다.
 
 기본 섹션의 [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure) 및 [필터 ID](/help/implementing/universal-editor/filtering.md)는 `section`입니다. 기본 섹션의 비헤이비어를 변경하는 데 사용할 수 있습니다. 다음 예에서는 섹션 메타데이터 모델에 일부 스타일과 배경 이미지를 추가합니다.
 
@@ -595,7 +595,7 @@ Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐�
 
 ## 페이지 메타데이터 {#page-metadata}
 
-문서에는 페이지 [메타데이터 블록이 있는데,](https://www.aem.live/developer/block-collection/metadata) 이를 사용하여 페이지의 `<head>`에서 `<meta>` 렌더링된 요소를 정의합니다. AEM as a Cloud Service 페이지의 페이지 속성은 Edge Delivery Services에 기본 제공되는 페이지 속성에 매핑됩니다(예: `title`, `description`, `keywords` 등).
+문서에는 페이지의 `<head>`에서 렌더링되는 `<meta>` 요소를 정의하는 데 사용되는 [메타데이터 블록](https://www.aem.live/developer/block-collection/metadata) 페이지가 있을 수 있습니다. AEM as a Cloud Service 페이지의 페이지 속성은 Edge Delivery Services에 기본 제공되는 페이지 속성에 매핑됩니다(예: `title`, `description`, `keywords` 등).
 
 자체 메타데이터를 정의하는 방법을 자세히 살펴보기 전에 다음 문서를 검토하여 페이지 메타데이터의 개념을 먼저 이해하시기 바랍니다.
 
@@ -645,5 +645,5 @@ Edge Delivery Services 프로젝트를 통한 WYSIWYG 작성 시 범용 편집�
 
 >[!TIP]
 >
->AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)를 시청하십시오.
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)를 참조하십시오.
 

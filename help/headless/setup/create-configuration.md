@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에서 Headless를 시작하기 위한 첫 �
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ AEM as a Cloud Service에서 Headless를 시작하는 첫 번째 단계로 구�
 
 AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 및 콘텐츠 조각의 구조를 정의하는 콘텐츠 모델을 만들 수 있는 AEM 내 작업 영역으로 생각하십시오. 이러한 모델들을 분리하기 위해 구성을 여러 개 가질 수 있습니다.
 
-[전체 스택 AEM 구현의 페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 익숙하다면 콘텐츠 모델 관리를 위한 구성 사용법도 유사합니다.
+전체 스택 AEM 구현의 [페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 익숙하다면 콘텐츠 모델 관리를 위한 구성 사용법도 유사합니다.
 
 ## 구성을 만드는 방법 {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 ## 다음 단계 {#next-steps}
 
-이제 시작 안내서의 두 번째 부분으로 이동하여 이 구성을 사용해서 [콘텐츠 조각 모델을 만들 수 있습니다.](create-content-model.md)
+이제 시작 안내서의 두 번째 부분으로 이동하여 이 구성을 사용하여 [콘텐츠 조각 모델을 만들기](create-content-model.md)할 수 있습니다.
 
 >[!TIP]
 >
->구성 브라우저에 대한 자세한 내용은 [구성 브라우저 설명서를 참조하십시오](/help/implementing/developing/introduction/configurations.md).
+>구성 브라우저에 대한 자세한 내용은 [구성 브라우저 설명서](/help/implementing/developing/introduction/configurations.md)를 참조하세요.

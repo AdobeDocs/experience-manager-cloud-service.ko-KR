@@ -5,10 +5,10 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 73%
+ht-degree: 68%
 
 ---
 
@@ -75,8 +75,8 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 태그를 만들고 사용하여 콘텐츠를 구성하는 몇 가지 단계가 있습니다.
 
 1. [태그에 대한 네임스페이스를 만듭니다](#creating-namespaces)(또는 재사용할 기존 네임스페이스 선택).
-1. [새 태그를 만듭니다.](#creating-tags)
-1. [태그를 게시합니다.](#publishing-tags)
+1. [새 태그를 만듭니다](#creating-tags).
+1. [태그 Publish](#publishing-tags).
 
 ### 네임스페이스 만들기 {#creating-namespaces}
 
@@ -96,7 +96,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 네임스페이스가 만들어집니다. 태깅 콘솔에서 네임스페이스는 가장 낮은 수준(콘솔의 맨 왼쪽 열)에 있으며 폴더 아이콘으로 표시되며, 이는 해당 특성을 &quot;컨테이너&quot; 또는 다른 태그 그룹화로 반영합니다.
 
-이제 이 네임스페이스에서 [새 태그를 만들거나](#creating-tags), [기존 태그를 관리](#managing-tags)할 수 있습니다.
+이제 이 네임스페이스에서 [새 태그를 만들거나](#creating-tags) [기존 태그를 관리](#managing-tags)할 수 있습니다.
 
 네임스페이스는 하위 태그를 포함할 필요가 없습니다. 네임스페이스 자체가 태그이기 때문에 다른 태그처럼 콘텐츠를 정리하는 데 사용할 수 있습니다. 그러나 구조화된 태그 지정 분류 체계를 계속 만들려면 해당 네임스페이스 내에서 프로젝트 요구 사항에 따라 [하위 태그를 만들면](#creating-tags) 됩니다.
 
@@ -104,7 +104,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 태그는 일반적으로 네임스페이스에 추가됩니다.
 
-1. 태그를 만들려면 [태그 지정 콘솔을 엽니다.](#tagging-console)
+1. 태그를 만들려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 태그를 만들 네임스페이스를 선택합니다. 또는 다른 태그를 선택하여 그 아래에 하위 태그를 만듭니다.
 
@@ -132,7 +132,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 AEM에서 다른 콘텐츠를 만들 때와 마찬가지로 태그(또는 네임스페이스)를 만든 후에는 작성 환경에만 존재합니다. 사용자가 태그를 사용할 수 있으려면 태그를 게시해야 합니다.
 
-1. 태그를 게시하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그를 게시하려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 게시할 태그를 선택하고 도구 모음에서 **Publish**&#x200B;을 선택합니다.
 
@@ -176,7 +176,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 콘솔을 **속성** 보기로 전환하면 마지막 게시자, 마지막 게시 날짜 등 태그에 대한 추가 세부 정보를 볼 수 있습니다.
 
-1. 태그의 속성을 보려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그의 속성을 보려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 속성을 보려는 태그를 선택하고 왼쪽 레일에서 **속성**&#x200B;을 선택합니다.
 
@@ -192,7 +192,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 태그 및 네임스페이스는 만든 후 편집할 수 있습니다.
 
-1. 태그를 편집하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그를 편집하려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 편집할 태그를 선택하고 도구 모음에서 **편집**&#x200B;을 선택합니다.
 
@@ -206,13 +206,13 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 언어 번역 추가에 대한 자세한 내용은 [다양한 언어로 태그 관리](#managing-tags-in-different-languages)의 섹션을 참조하십시오.
 
-변경 사항이 이미 게시된 태그에 대한 것이라면 [다시 게시](#publishing-tags)할 수 있습니다.
+이미 게시한 태그에 대한 변경 사항이 있는 경우 [다시 게시](#publishing-tags)할 수 있습니다.
 
 ### 태그 게시 취소 {#unpublishing-tags}
 
 작성자 인스턴스에서 태그를 비활성화하고 게시 인스턴스에서 제거하려면 게시를 취소할 수 있습니다.
 
-1. 태그를 게시 취소하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그 게시를 취소하려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 게시를 취소할 태그를 선택하고 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
 
@@ -232,7 +232,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 특정 태그가 적용된 콘텐츠를 확인하는 것이 유용할 수 있습니다. 태그 지정 콘솔의 **참조** 보기를 사용하여 이 작업을 수행할 수 있습니다.
 
-1. 태그의 참조를 보려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그 참조를 보려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 보려는 참조가 있는 태그를 선택하고 왼쪽 레일에서 **참조**&#x200B;를 선택합니다.
 
@@ -258,7 +258,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 >
 >관리자만 태그를 이동하고 태그의 이름을 바꿀 수 있도록 허용하는 것이 가장 좋습니다.
 
-1. 태그를 이동하거나 태그의 이름을 변경하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그를 이동하거나 이름을 바꾸려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 이동하거나 이름을 바꿀 태그를 선택하고 도구 모음에서 **이동**&#x200B;을 선택합니다.
 
@@ -281,7 +281,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 태그 분류 체계에 중복 요소나 유사한 태그가 있는 경우 이러한 태그를 병합하는 것이 유용할 수 있습니다. 태그 `A`를 태그 `B`에 병합하면 태그 `A`가 지정된 모든 페이지에 태그 `B`가 지정되며 작성자는 태그 `A`를 더 이상 사용할 수 없습니다.
 
-1. 두 태그를 병합하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 두 개의 태그를 병합하려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 다른 태그로 병합할 태그를 선택한 다음 도구 모음에서 **병합**&#x200B;을 선택합니다.
 
@@ -297,7 +297,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 태그 지정 분류 체계가 변경되어 태그 또는 네임스페이스가 불필요해지면 삭제할 수 있습니다.
 
-1. 태그를 삭제하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
+1. 태그를 삭제하려면 [태그 지정 콘솔](#tagging-console)을 여십시오.
 
 1. 삭제할 태그를 선택한 다음 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 

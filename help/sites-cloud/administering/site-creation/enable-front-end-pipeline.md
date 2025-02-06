@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 39%
+ht-degree: 35%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 ## 개요 {#overview}
 
-프론트엔드 파이프라인은 [사이트 테마](site-themes.md) 및 [사이트 템플릿](site-templates.md)을 기반으로 웹 사이트의 프론트엔드 코드를 빠르게 배포할 수 있는 메커니즘입니다.
+프론트엔드 파이프라인은 [사이트 테마](site-themes.md) 및 [사이트 템플릿](site-templates.md)을 기반으로 웹 사이트의 프론트엔드 코드만 빠르게 배포할 수 있는 메커니즘입니다.
 
 이 파이프라인은 프론트엔드 코드만 처리하므로 전체 스택 배포보다 배포 프로세스가 더 빠릅니다. 따라서 프론트엔드 개발자는 AEM에 대한 지식 없이도 사이트를 손쉽게 맞춤화할 수 있습니다.
 
@@ -44,7 +44,7 @@ AEM은 사이트 템플릿 및 테마를 사용하여 사이트가 만들어지�
 
 ## 요구 사항 {#requirements}
 
-AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 핵심 구성 요소의 페이지 구성 요소 중 [v2 이상을 사용해야 합니다.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
+AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 

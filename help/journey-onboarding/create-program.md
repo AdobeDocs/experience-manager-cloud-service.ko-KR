@@ -4,16 +4,16 @@ description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # 프로그램 제작 {#create-program}
 
-이 [온보딩 여정](overview.md) 부분에서는 Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법에 대해 알아봅니다.
+이 [온보딩 여정](overview.md) 부분에서는 Cloud Manager을 사용하여 첫 번째 프로그램을 만드는 방법을 배웁니다.
 
 ## 목표 {#objective}
 
@@ -68,7 +68,7 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 첫 번째 프로그램이 만들어졌으므로 이를 위한 환경을 만들 수 있습니다. 다음은 [환경 만들기](create-environments.md) 문서를 검토하여 온보딩 여정을 계속할 수 있습니다.
+이제 첫 번째 프로그램이 만들어졌으므로 이를 위한 환경을 만들 수 있습니다. 다음은 [환경 만들기](create-environments.md) 문서를 검토하여 온보딩 여정을 계속하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

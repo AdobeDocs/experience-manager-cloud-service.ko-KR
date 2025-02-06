@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 구현은 전체 스택 솔루션의 기존 방식과 마찬가지로 �
 
 목표는 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법에 대한 폭넓은 이해를 제공하는 것입니다. 해당 주제에 익숙하지 않은 경우 이 목표를 시작하는 것이 좋습니다.
 
-AEM, Headless 및 번역에 대해 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. [아래 추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
+AEM, Headless 및 번역에 대해 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. 아래의 [추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 

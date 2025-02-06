@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 38%
+ht-degree: 31%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 38%
 
 ## 템플릿 리소스 다운로드 {#downloading-template-resources}
 
-[사이트 템플릿](site-templates.md)에는 사이트 콘텐츠 구조 및 [사이트 테마 외에도 다른 정보가 포함될 수 있습니다.](site-themes.md) 사이트 템플릿에는 와이어프레임 디자인 또는 기타 사이트 관련 파일 등이 포함될 수 있습니다.
+[사이트 템플릿](site-templates.md)에는 사이트 콘텐츠 구조 및 [사이트 테마](site-themes.md) 이외의 정보가 포함될 수 있습니다. 사이트 템플릿에는 와이어프레임 디자인 또는 기타 사이트 관련 파일 등이 포함될 수 있습니다.
 
 사이트가 사이트 템플릿을 기반으로 하는 경우 사이트 콘솔에 표시되는 사이트 패널을 사용하여 사이트 루트를 선택해 추가 사이트 리소스를 포함하여 사이트에 대한 테마 정보를 표시할 수 있습니다.
 
@@ -84,4 +84,4 @@ AEM에서 새 테마 버전이 프론트엔드 파이프라인을 통해 배포�
 
 ![프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/assets/enable-fep.png)
 
-자세한 내용은 [프론트엔드 파이프라인 활성화](enable-front-end-pipeline.md) 문서를 참조하십시오.
+자세한 내용은 문서 [프론트엔드 파이프라인 활성화](enable-front-end-pipeline.md)를 참조하십시오.

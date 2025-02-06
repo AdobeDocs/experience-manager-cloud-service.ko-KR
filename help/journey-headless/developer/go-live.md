@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 �
 
 하지만 AEM의 Headless 스토어는 여기서 멈추지 않습니다. [여정의 일부 시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 게재 및 기존 전체 스택 모델뿐만 아니라 두 가지 장점을 결합한 하이브리드 모델을 지원하는 방법에 대해 간략하게 논의했던 것으로 기억할지 모릅니다.
 
-프로젝트에 이러한 종류의 유연성이 필요한 경우 부가적인 여정인 [AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법](create-spa.md)(옵션)을 계속 진행합니다.
+이러한 유연성이 프로젝트에 필요한 것이라면 여정의 선택적 추가 부분인 [AEM을 사용하여 SPA(단일 페이지 애플리케이션)를 만드는 방법](create-spa.md)을 계속 진행하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

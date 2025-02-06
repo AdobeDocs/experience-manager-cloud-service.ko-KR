@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # AEM 페이지 편집기 {#editing-page-content}
 
-페이지가 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)에서 만들어지면 콘텐츠를 작성하는 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지의 콘텐츠를 편집할 수 있습니다.
+[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지가 만들어지면 콘텐츠 작성을 위한 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
 
 >[!NOTE]
 >
->[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 페이지 편집기 또는 [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### 사이드 패널 {#side-panel-button}
 
-에셋 브라우저, 구성 요소 브라우저 및 콘텐츠 트리를 보유하는 [사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)을 열거나 닫습니다.
+자산 브라우저, 구성 요소 브라우저 및 콘텐츠 트리를 보유하는 [사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)을 여닫습니다.
 
 ![사이드 패널 전환](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### ContextHub {#context-hub}
 
-[ContextHub가 열립니다.](/help/sites-cloud/authoring/personalization/contexthub.md) **미리 보기** 모드에서만 사용할 수 있습니다.
+[ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)가 열립니다. **미리 보기** 모드에서만 사용할 수 있습니다.
 
 ![Context Hub 버튼](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### 미리보기 {#preview}
 
-**미리 보기** 단추를 사용하면 [미리 보기 모드가 활성화됩니다.](#preview-mode), 게시할 때 표시되는 대로 페이지를 표시합니다.
+**미리 보기** 단추를 사용하면 [미리 보기 모드](#preview-mode)를 사용할 수 있으며 게시할 때 표시되는 대로 페이지가 표시됩니다.
 
 ![미리보기 버튼](assets/page-editor-preview.png)
 

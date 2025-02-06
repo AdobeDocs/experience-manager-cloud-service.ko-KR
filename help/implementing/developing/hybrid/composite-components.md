@@ -4,7 +4,7 @@ description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 �
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -30,16 +30,16 @@ ht-degree: 1%
 복합 구성 요소 사용 사례를 지원하기 위한 다음 모델에는 다음과 같은 사전 요구 사항이 필요합니다.
 
 * AEM 개발 인스턴스는 샘플 프로젝트로 포트 4502에서 로컬로 실행됩니다.
-* 작업 중인 외부 React 앱 [이(가) AEM에서 편집할 수 있도록 설정되어 있습니다.](editing-external-spa.md)
-* React 앱이 RemotePage 구성 요소를 사용하여 AEM 편집기 [에 로드되었습니다.](remote-page.md)
+* 작업 중인 외부 React 앱 [을(를) AEM에서 편집할 수 있도록 설정](editing-external-spa.md)했습니다.
+* React 앱이 AEM 편집기 [RemotePage 구성 요소](remote-page.md)를 사용하여 로드되었습니다.
 
 ## SPA에 복합 구성 요소 추가 {#adding-composite-components}
 
 AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 가지 모델이 있습니다.
 
-* [구성 요소가 AEM 프로젝트에 없습니다.](#component-does-not-exist)
-* [구성 요소는 AEM 프로젝트에 존재하지만 필수 콘텐츠는 존재하지 않습니다.](#content-does-not-exist)
-* [구성 요소와 필수 콘텐츠는 모두 AEM 프로젝트에 있습니다.](#both-exist)
+* [구성 요소가 AEM 프로젝트에 없습니다](#component-does-not-exist).
+* [구성 요소가 AEM 프로젝트에 있지만 필수 콘텐츠는 ](#content-does-not-exist)이(가) 아닙니다.
+* [구성 요소와 필수 콘텐츠가 모두 AEM 프로젝트에 있습니다](#both-exist).
 
 다음 섹션에서는 카드 구성 요소를 예로 사용하여 각 사례를 구현하는 예를 제공합니다.
 
@@ -134,7 +134,7 @@ function Home() {
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. 이에 대한 해당 구성 요소를 SPA에서 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다.](#component-does-not-exist)
+1. 이에 대한 해당 구성 요소를 SPA에서 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함되어 있습니다.
+`AEMCard` 구성 요소는 이전 사용 사례](#content-does-not-exist)에서 정의된 [과(와) 동일합니다. 여기에서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.

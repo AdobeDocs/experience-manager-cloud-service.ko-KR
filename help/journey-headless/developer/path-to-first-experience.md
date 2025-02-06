@@ -5,16 +5,16 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # AEM Headless를 사용한 첫 번째 경험으로의 경로 {#path-to-first-experience}
 
-이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 계획 고려 사항을 비롯해 AEM에서 첫 번째 Headless 경험을 구현하는 단계를 이해하고, 경로를 최대한 원활하게 만드는 모범 사례에 대해 알아보기도 합니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서는 계획 고려 사항을 포함하여 AEM에서 첫 번째 Headless 경험을 구현하는 단계를 이해하고 가능한 한 원활한 경로를 만들기 위한 모범 사례에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -77,7 +77,7 @@ Headless 프로젝트의 스테이징 환경은 프로덕션으로 배포되기 
 
 ## 설정 {#setup}
 
-AEM에서 Headless를 시작하기 전에 필요한 모든 기능이 활성화되어 있는지 확인해야 합니다. 이 섹션에서는 필요한 사항에 대해 간략히 소개합니다. 다음 단계를 수행하기 위한 실제 단계는 [AEM Headless 개발자 여정](#overview.md) 후반부에 자세히 설명되어 있습니다.
+AEM에서 Headless를 시작하기 전에 필요한 모든 기능이 활성화되어 있는지 확인해야 합니다. 이 섹션에서는 필요한 사항에 대해 간략히 소개합니다. 이러한 단계를 수행하는 실제 단계는 나중에 [AEM Headless 개발자 여정](#overview.md)에 자세히 설명되어 있습니다.
 
 개별 주제에 대한 자세한 내용은 필요에 따라 [추가 리소스](#additional-resources)를 참조하십시오.
 

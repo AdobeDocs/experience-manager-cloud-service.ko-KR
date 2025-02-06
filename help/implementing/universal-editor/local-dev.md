@@ -4,10 +4,10 @@ description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 40%
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 Universal Editor Service는 Universal Editor와 백엔드 시스템을 바인딩하는 서비스입니다. 범용 편집기에서 로컬로 개발하려면 범용 편집기 서비스의 로컬 복사본을 실행해야 합니다. 이유는 다음과 같습니다.
 
 * Adobe의 공식 범용 편집기 서비스는 전 세계적으로 호스팅되며 로컬 AEM 인스턴스를 인터넷에 노출해야 합니다.
-* 로컬 AEM SDK를 사용하여 개발하는 동안 인터넷에서 Adobe의 Universal Editor 서비스에 액세스할 수 없습니다.
+* 로컬 AEM SDK을 사용하여 개발하는 동안 Adobe의 Universal Editor Service는 인터넷에서 액세스할 수 없습니다.
 * AEM 인스턴스에 IP 제한이 있고 Adobe의 Universal Editor 서비스가 정의된 IP 범위에 있지 않은 경우 직접 호스팅할 수 있습니다.
 
 ## 사용 사례 {#use-cases}
@@ -101,7 +101,7 @@ UES_CORS_PRIVATE_NETWORK=true
 | `UES_SPLUNK_TOKEN` | 예 | 없음 | Splunk 토큰 |
 | `UES_SPLUNK_INDEX` | 예 | 없음 | 로그를 기록할 인덱스 |
 | `UES_SPLUNK_SOURCE` | 예 | `universal-editor-service` | splunk 로그의 소스 이름 |
-| `UES_CORS_PRIVATE_NETWORK` | 예 | `false` | [개인 네트워크를 허용하도록 CORS 헤더 전송을 활성화하십시오.Chrome 버전 130+의 사용자에게 ](https://wicg.github.io/private-network-access/#private-network-request) 필요 |
+| `UES_CORS_PRIVATE_NETWORK` | 예 | `false` | [개인 네트워크](https://wicg.github.io/private-network-access/#private-network-request)를 허용하도록 CORS 헤더 전송을 활성화하십시오. Chrome 버전 130+ 사용자에 필요 |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 
 ## 로컬 Universal Editor Service를 사용하여 페이지 편집 {#editing}
 
-[Universal Editor Service가 로컬에서 실행](#running-ue)하고 [콘텐츠 페이지를 구성하여 로컬 서비스를 사용](#using-loca-ue)하면 편집기를 시작할 수 있습니다.
+[로컬에서 실행되는 범용 편집기 서비스](#running-ue)와(과) 로컬 서비스를 사용하도록 계측된 [콘텐츠 페이지](#using-loca-ue)를 사용하면 이제 편집기를 시작할 수 있습니다.
 
 1. 브라우저를 열고 `https://localhost:8000/ping`으로 이동합니다.
-1. [자체 서명된 인증서](#ue-https)를 허용하도록 브라우저를 내보냅니다.
+1. 브라우저에서 [자체 서명된 인증서](#ue-https)를 수락하도록 지시합니다.
 1. 자체 서명된 인증서를 신뢰하는 경우 로컬 Universal Editor Service를 사용하여 페이지를 편집할 수 있습니다.
 

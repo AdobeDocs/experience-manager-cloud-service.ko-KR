@@ -4,16 +4,16 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 50%
 
 ---
 
 # 액션 센터 {#actions-center}
 
-AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
+AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 테이블](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
 작업 센터 이메일 알림이 수신되면 을 클릭하여 AEM as a Cloud Service의 작업 센터를 열 수 있습니다. 이 페이지에는 고객이 수행할 작업을 설명하는 추가 컨텍스트가 표시됩니다.
 
@@ -24,7 +24,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 1. 운영 인시던트 - 일반적으로 신속한 해결이 필요한 이벤트가 발생했습니다. 예: 차단된 대기열 해결.
 1. 사전 알림 추천 - Adobe는 가까운 미래에 고객이 취해야 할 조치에 대한 추천을 제시합니다. 예: 더 이상 사용되지 않는 UI 참조를 중지합니다.
 
-액션 센터에서 현재 지원되는 알림은 [아래 표](#supported-notification-types)를 참조하십시오.
+액션 센터에서 현재 지원되는 알림은 [아래 테이블](#supported-notification-types)을 참조하십시오.
 
 액션 센터에서 해당 범위에 대한 필터링 효과가 있는 특정 프로그램 및 환경을 선택할 수 있습니다.
 
@@ -41,7 +41,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ![인시던트 세부 정보](/help/operations/assets/incident-details.png)
 
-사용자는 **자세히 알아보기** 링크를 클릭하여 이 문서로 이동합니다. 아래에서 [지원되는 알림 유형 표](#supported-notification-types)와 같이 알림 유형을 참조할 수 있으며, 이 표는 어떤 조치를 취해야 하는지 지침을 제공합니다.
+사용자는 **자세히 알아보기** 링크를 클릭하여 이 문서로 이동합니다. 아래에서 [지원되는 알림 유형 테이블](#supported-notification-types)과 같이 알림 유형을 참조할 수 있으며, 이 테이블은 어떤 조치를 취해야 하는지 지침을 제공합니다.
 
 액션 센터에서 다른 최근 알림 목록을 볼 수 있습니다. 조직이 작업을 인식하고 있음을 Adobe에 알리고 나중에 수정 조치가 취해졌을 때 알림을 해결하기 위해 작업 목록을 사용하여 알림을 확인하는 것이 좋습니다.
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
-다음 표는 액션 센터에서 현재 지원되는 알림 유형 목록입니다. 알림은 현재 프로덕션 환경으로 제한됩니다.
+다음 테이블은 액션 센터에서 현재 지원되는 알림 유형 목록입니다. 알림은 현재 프로덕션 환경으로 제한됩니다.
 
 | 알림 유형 | 관련 제품 프로필 | 수정 조치 |
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 잘못된 지속 GraphQL 쿼리 | 인시던트 | [지속된 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)를 참조하여 잘못된 GraphQL 쿼리를 수정하십시오. |
 | 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 섹션을 참조하십시오. |
 | CDN 트래픽 필터 규칙 트리거됨 | 인시던트 | 일치하는 트래픽 필터 규칙이 공격을 반영하지만 사이트에서 해당 트래픽을 차단하지 않는 경우 차단 모드에서 트래픽 필터 규칙을 구성하여 사이트를 보호하십시오. 자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 필터 규칙으로 웹 사이트 보호(WAF 규칙 포함)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) 섹션을 참조하십시오. |
-| Splunk 로그 전달 오류 | 인시던트 | Splunk 끝점이 작동하며 AEM Cloud Service 환경에서 접근 가능한지 확인하십시오. 로그 전달에 대한 자세한 내용은 [Splunk 로그 전달 설명서](/help/implementing/developing/introduction/logging.md#splunk-logs)를 참조하십시오. 문제 해결에 도움이 필요하거나 로깅 구성을 변경해야 하는 경우 Adobe으로 지원 티켓을 제공하십시오. |
+| Splunk 로그 전달 오류 | 인시던트 | Splunk 끝점이 작동하며 AEM Cloud Service 환경에서 접근 가능한지 확인하십시오. 로그 전달에 대한 자세한 내용은 [Splunk 로그 전달 설명서](/help/implementing/developing/introduction/logging.md#splunk-logs)를 참조하십시오. 문제 해결에 도움이 필요하거나 로깅 구성을 변경해야 하는 경우 Adobe으로 지원 티켓을 높입니다. |
 | 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx)를 참조하세요. | |
 | 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. [제거 작업을 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) 알아보기 |               |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | [고급 네트워킹 설명서와 함께 연결 풀링에 대해 알아봅니다](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

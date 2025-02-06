@@ -4,10 +4,10 @@ description: AEM as a Cloud Service가 페이지 작성 기능을 사용자 정�
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 94%
+ht-degree: 88%
 
 ---
 
@@ -54,7 +54,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 
 MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘플 패키지입니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)에서 확인할 수 있습니다.
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)에서 이 페이지의 코드를 찾을 수 있습니다.
 
 ## 자산 브라우저에 새 선택 카테고리 추가 {#add-new-selection-category-to-asset-browser}
 
@@ -64,7 +64,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 `aem-authoring-extension-assetfinder-flickr`는 자산 파인더에 그룹을 추가하는 방법을 보여 주는 샘플 패키지입니다. 이 예는 [Flickr](https://www.flickr.com)의 공개 스트림에 연결하며 이러한 스트림을 측면 패널에 표시합니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)에서 확인할 수 있습니다.
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)에서 이 페이지의 코드를 찾을 수 있습니다.
 
 ## 리소스 필터링 {#filtering-resources}
 
@@ -75,7 +75,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 * [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
 
-사용자 정의 조건자 만들기에 대한 자세한 내용은 [이 문서](/help/implementing/developing/introduction/query-builder-custom-predicate.md)를 참조하십시오.
+사용자 지정 조건자 만들기에 대한 자세한 내용은 [이 문서](/help/implementing/developing/introduction/query-builder-custom-predicate.md)를 참조하십시오.
 
 ## 구성 요소 도구 모음에 새 작업 추가 {#add-new-action-to-a-component-toolbar}
 
@@ -85,7 +85,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 `aem-authoring-extension-toolbar-screenshot`은 구성 요소를 렌더링하는 사용자 정의 도구 모음 작업을 만드는 방법을 보여 주는 샘플 패키지입니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)에서 확인할 수 있습니다.
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)에서 이 페이지의 코드를 찾을 수 있습니다.
 
 ## 새 바로 편집기 추가 {#add-new-in-place-editor}
 
@@ -156,7 +156,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 `aem-authoring-extension-inplace-editor`는 AEM에서 바로 편집기를 만드는 방법을 보여 주는 샘플 패키지입니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)에서 확인할 수 있습니다.
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)에서 이 페이지의 코드를 찾을 수 있습니다.
 
 ## 새 페이지 작업 추가 {#add-a-new-page-action}
 
@@ -166,7 +166,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 `aem-authoring-extension-header-backtosites`는 사이트 콘솔로 돌아가기 위한 사용자 정의 헤더 표시줄 작업을 만드는 방법을 보여 주는 샘플 패키지입니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)에서 확인할 수 있습니다.
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)에서 이 페이지의 코드를 찾을 수 있습니다.
 
 ## 활성화 요청 워크플로 사용자 정의 {#customizing-the-request-for-activation-workflow}
 

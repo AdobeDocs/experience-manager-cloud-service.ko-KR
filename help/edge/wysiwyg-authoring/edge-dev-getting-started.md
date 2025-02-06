@@ -4,10 +4,10 @@ description: 이 안내서는 WYSIWYG 콘텐츠 작성을 위한 Edge Delivery S
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '1223'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 이 안내서를 시작하기 전에 다음을 포함한 Edge Delivery Services의 기본 사항을 숙지하고 액세스할 수 있어야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)을 완료했습니다.
+* [Edge Delivery 서비스 자습서](/help/edge/developer/tutorial.md)를 완료했습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
-* [동일한 샌드박스 환경에서 범용 편집기를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
+* 동일한 샌드박스 환경에서 [유니버설 편집기를 사용하도록 설정](/help/implementing/universal-editor/getting-started.md)했습니다.
 
 ## Edge Delivery Services 개발 시 핵심 개념 {#core-concepts}
 
@@ -52,7 +52,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 ## WYSIWYG 작성 및 Edge Delivery Services 시작하기 {#getting-started}
 
-[전제 조건](#prerequisites)을 충족하고 [범용 편집기를 사용](#editor-choice)하기로 했다면 이제 나만의 프로젝트를 시작할 수 있습니다.
+[필수 구성 요소](#prerequisites)를 이행하고 [유니버설 편집기를 사용하도록 선택](#editor-choice)하면 프로젝트를 시작할 수 있습니다.
 
 ### GitHub 프로젝트 만들기 {#create-github-project}
 
@@ -116,7 +116,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 >[!TIP]
 >
->경로 매핑에 대한 자세한 내용은 [Edge Delivery Services용 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services에 대한 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ### 새 AEM 사이트 만들기 및 편집 {#create-aem-site}
 
@@ -128,7 +128,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)의 GitHub에서 Edge Delivery Services와 WYSIWYG 작성 기능을 지원하는 최신 사이트 템플릿을 다운로드하십시오.
 
-1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 사이트 콘솔로 이동하여 **만들기** -> **템플릿으로 사이트 생성**&#x200B;을 탭하거나 클릭합니다.
+1. AEM as a Cloud Service 제작 인스턴스에 로그인하고 사이트 콘솔로 이동한 다음 **만들기** > **템플릿의 사이트**&#x200B;를 클릭합니다.
 
    ![콘솔에서 새 사이트 만들기](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,7 +140,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    * 템플릿은 한 번만 업로드해야 합니다. 업로드한 후에는 추가 사이트를 만드는 데 다시 사용할 수 있습니다.
 
-1. 템플릿을 가져오면 마법사에 표시됩니다. 탭하거나 클릭하여 선택한 후 **다음**&#x200B;을 탭하거나 클릭합니다.
+1. 템플릿을 가져오면 마법사에 표시됩니다. 클릭하여 선택한 다음 **다음**&#x200B;을 클릭합니다.
 
    ![템플릿 선택](assets/edge-dev-getting-started/select-template.png)
 
@@ -152,11 +152,11 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![사이트 세부 정보](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM은 대화 상자를 통해 사이트 생성을 확인합니다. **확인**&#x200B;을 탭하거나 클릭하여 닫습니다.
+1. AEM은 대화 상자를 통해 사이트 생성을 확인합니다. 닫으려면 **확인**&#x200B;을 클릭하세요.
 
    ![사이트 생성 확인](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. 사이트 콘솔에서 새로 생성된 사이트의 `index.html`로 이동하고 도구 모음에서 **편집**&#x200B;을 탭하거나 클릭합니다.
+1. 사이트 콘솔에서 새로 만든 사이트의 `index.html`(으)로 이동한 다음 도구 모음에서 **편집**&#x200B;을 클릭합니다.
 
    ![새 사이트 편집](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 >[!TIP]
 >
->AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 참조하십시오.

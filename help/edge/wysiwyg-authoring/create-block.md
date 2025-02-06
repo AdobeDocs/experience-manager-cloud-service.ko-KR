@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,9 +22,9 @@ Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 범용 편집�
 
 이 안내서에는 Edge Delivery Services 프로젝트 및 범용 편집기를 사용한 WYSIWYG 작성에 대한 기존 지식이 필요합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)을 완료했습니다.
+* [Edge Delivery 서비스 자습서](/help/edge/developer/tutorial.md)를 완료했습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
-* [동일한 샌드박스 환경에서 범용 편집기를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
+* 동일한 샌드박스 환경에서 [유니버설 편집기를 사용하도록 설정](/help/implementing/universal-editor/getting-started.md)했습니다.
 * [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서를 완료하셨습니다.
 
 이 안내서는 [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서에서 수행한 작업을 기반으로 합니다.
@@ -155,7 +155,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 이제 기본 인용 블록이 정의되어 샘플 프로젝트에 커밋되었기 때문에 기존 페이지에 인용 블록을 추가할 수 있습니다.
 
-1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [Sites 콘솔을 사용하여](/help/sites-cloud/authoring/basic-handling.md) [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서에서 만든 사이트로 이동하고 페이지를 선택합니다.
+1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [사이트 콘솔을 사용하여](/help/sites-cloud/authoring/basic-handling.md) [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 만든 사이트로 이동하여 페이지를 선택합니다.
 
    * 이 경우 `index`는 설명 목적으로 사용됩니다.
 
@@ -281,7 +281,7 @@ export default function decorate(block) {
 
 ### 블록 옵션 {#block-options}
 
-특정 상황에 따라 블록의 모양이나 동작이 약간 달라야 하지만 그 자체로 새로운 블록이 될 만큼은 다르지 않아야 하는 경우 작성자가 [블록 옵션](content-modeling.md#type-inference) 중에서 선택하도록 할 수 있습니다.
+특정 상황에 따라 블록이 약간 다르게 보이거나 동작해야 하지만 그 자체로는 새 블록이 될 만큼 차이가 없으면 작성자가 [블록 옵션](content-modeling.md#type-inference)에서 선택하도록 할 수 있습니다.
 
 블록에 `classes` 속성을 추가하면 간단한 블록의 경우 테이블 헤더에 렌더링되거나 컨테이너 블록의 항목에 대한 값 목록으로 렌더링되는 속성이 표시됩니다.
 
@@ -343,4 +343,4 @@ Edge Delivery Services 프로젝트를 사용한 WYSIWYG 작성을 위한 콘텐
 
 >[!TIP]
 >
->AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 참조하십시오.

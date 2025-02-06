@@ -4,10 +4,10 @@ description: AEM에서 콘텐츠 작성자를 위한 최선의 결정을 내리�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: ceaedd8ee76b6a5008e0310cf7677660d84c1e44
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe는 이를 이해하므로 획일적인 접근 방식을 제공하지 않�
 다음이 필요한지 여부를 결정하는 데 도움이 될 수 있습니다.
 
 * 콘텐츠 조각 편집기 및/또는 범용 편집기를 사용한 [AEM as a headless CMS](/help/headless/introduction.md).
-* [문서 기반 편집](/help/edge/docs/authoring.md) 또는 [범용 편집기가 포함된 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md)을 사용한 AEM Edge Delivery Services.
+* [문서 기반 편집](/help/edge/docs/authoring.md) 또는 [범용 편집기로 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md)을 사용하는 AEM Edge Delivery Services.
 
 ## 콘텐츠 작성 환경 설정 {#content-authoring}
 
@@ -64,8 +64,8 @@ Adobe는 이를 이해하므로 획일적인 접근 방식을 제공하지 않�
 
 다음이 필요한지 여부를 결정하는 데 도움이 될 수 있습니다.
 
-* [문서 기반 편집](/help/edge/docs/authoring.md)을 사용한 AEM Edge Delivery Services.
-* [범용 편집기가 포함된 WYSIWYG 작성.](/help/edge/wysiwyg-authoring/authoring.md)
+* [문서 기반 편집](/help/edge/docs/authoring.md)을 사용하는 AEM Edge Delivery Services.
+* [범용 편집기로 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## 프로젝트 목표 {#project-goals}
 

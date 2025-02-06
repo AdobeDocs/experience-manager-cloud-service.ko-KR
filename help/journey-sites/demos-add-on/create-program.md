@@ -4,10 +4,10 @@ description: 새 프로그램 및 파이프라인을 설정하여 추가 기능�
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Manager에 로그인한 후 테스트 및 데모용으로 샌드박스 프
 
    ![프로그램 제작 대화 상자](assets/create-program.png)
 
-1. **솔루션 및 추가 기능** 표의 **샌드박스 설정** 대화 상자에서 목록의 **Sites** 항목을 탭하거나 클릭하여 확장한 다음 **참조 데모**&#x200B;를 확인합니다.
+1. **솔루션 및 추가 기능** 테이블의 **샌드박스 설정** 대화 상자에서 목록의 **Sites** 항목을 탭하거나 클릭하여 확장한 다음 **참조 데모**&#x200B;를 확인합니다.
 
    * AEM Screens에 대한 데모도 제작하려면 목록에서 **Screens** 옵션을 선택합니다. **업데이트**&#x200B;를 선택합니다.
 

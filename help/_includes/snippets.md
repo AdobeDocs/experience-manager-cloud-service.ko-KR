@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 # 스니펫 {#snippets}
@@ -186,12 +186,12 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->범용 편집기는 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)과 호환되지 않습니다.
+>유니버설 편집기가 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)과(와) 호환되지 않습니다.
 >
 >범용 편집기를 사용하려면 다음 중 하나를 수행해야 합니다.
 >
 >* IP 허용 목록을 활성화하지 않습니다.
->* [범용 편집기 서비스의 자체 인스턴스를 실행합니다.](/help/implementing/universal-editor/local-dev.md)
+>* [유니버설 편집기 서비스의 자체 인스턴스 실행](/help/implementing/universal-editor/local-dev.md).
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 

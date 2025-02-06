@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 72%
+ht-degree: 69%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 72%
 
 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하여 AEM 콘텐츠 번역을 조정합니다. 여기에는 세 가지 기본 단계가 포함됩니다.
 
-1. [번역 서비스 공급업체에 연결합니다.](#connecting-to-a-translation-service-provider)
-1. [번역 통합 프레임워크 구성을 만듭니다.](#creating-a-translation-integration-configuration)
-1. [클라우드 구성을 페이지에 연결합니다.](#configuring-pages-for-translation)
+1. [번역 서비스 공급업체에 연결](#connecting-to-a-translation-service-provider).
+1. [번역 통합 프레임워크 구성을 만듭니다](#creating-a-translation-integration-configuration).
+1. [클라우드 구성을 페이지와 연결](#configuring-pages-for-translation).
 
 AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를 위한 콘텐츠 번역](overview.md)을 살펴보십시오.
 
 >[!TIP]
 >
->콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 ## 번역 서비스 공급업체에 연결 {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](connect-ms-translat
 
 프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 번역 구성을 만들려면:
 
-1. [전역 탐색 메뉴에서 ](/help/sites-cloud/authoring/basic-handling.md#global-navigation)도구 > Cloud Service 및 번역 Cloud Service **을 선택합니다.**
+1. [전역 탐색 메뉴](/help/sites-cloud/authoring/basic-handling.md#global-navigation)에서 **도구 > Cloud Service 및 번역 Cloud Service**&#x200B;을 선택합니다.
 1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.
 1. 필드에 다음 정보를 입력한 다음 **만들기**&#x200B;를 선택합니다.
    1. 드롭다운 메뉴에서 **구성 유형**&#x200B;을 선택합니다.

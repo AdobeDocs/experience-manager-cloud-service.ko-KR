@@ -4,7 +4,7 @@ description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 71%
@@ -24,7 +24,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 >[!NOTE]
 >
 >* 이 기능은 Sites 및 Forms 솔루션에 사용할 수 있습니다.
->* 이 기능은 [샌드박스 프로그램에 적용할 수 없습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* 이 기능은 [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 적용할 수 없습니다.
 >* 이 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
 
 ## 사용 사례 {#use-cases}

@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 66%
@@ -18,7 +18,7 @@ ht-degree: 66%
 
 >[!TIP]
 >
->페이지 관리를 시작하기 전에 [페이지가 AEM에서 어떻게 구성되어 있는지 알아보세요.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>페이지 관리를 시작하기 전에 [페이지가 AEM에서 어떻게 구성되는지](/help/sites-cloud/authoring/sites-console/organizing-pages.md)에 대해 알아보세요.
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ ht-degree: 66%
 
 ## 편집할 페이지 열기 {#opening-a-page-for-editing}
 
-[페이지를 만들거나](/help/sites-cloud/authoring/sites-console/creating-pages.md) [사이트&#x200B;**콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)을 사용하여 기존 페이지로 이동한 후 편집을 위해 열 수 있습니다.**
+[페이지를 만들거나](/help/sites-cloud/authoring/sites-console/creating-pages.md) [사이트&#x200B;**콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 사용하여 기존 페이지로 이동한 후 편집할 수 있도록 열 수 있습니다.**
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 편집할 페이지로 이동합니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
@@ -53,7 +53,7 @@ ht-degree: 66%
 
 페이지 및 모든 하위 페이지를 새 위치에 복사할 수 있습니다.
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 복사할 페이지로 이동하여 찾습니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
@@ -95,7 +95,7 @@ ht-degree: 66%
 
 AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모든 내부 링크를 업데이트하는 기능을 제공합니다. 페이지별로 다른 기준을 적용할 수 있으므로 완벽한 유연성이 발휘됩니다.
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 이동할 페이지를 찾습니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
@@ -181,7 +181,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 ### 페이지 삭제 {#deleting-a-page}
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 삭제할 페이지로 이동합니다.
 1. [선택 모드](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)를 사용하여 필요한 페이지를 선택한 다음, 도구 모음에서&#x200B;**삭제**&#x200B;를 사용합니다.
 
@@ -213,7 +213,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 파일 및 페이지 구성에 도움이 되도록 폴더를 만들 수 있습니다.
 
-1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 엽니다.
 1. 필요한 위치로 이동합니다.
 1. 옵션 목록을 열려면 도구 모음에서 **만들기**&#x200B;를 선택합니다.
 1. 폴더 대화 상자를 열려면 **폴더**&#x200B;를 선택합니다. 여기에서 **이름** 및 **제목**&#x200B;을 입력할 수 있습니다.

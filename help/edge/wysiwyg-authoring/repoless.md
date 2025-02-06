@@ -4,7 +4,7 @@ description: 대부분 동일하게 보이고 동작하지만 콘텐츠가 다�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 전용 GitHub 저장소에서 각 사이트를 실행하는 대신 동일한 코드 베이스에서 여러 사이트 실행을 지원합니다.
 
-첫 번째 사이트를 제외한 모든 사이트에는 자체 GitHub 저장소가 필요하지 않으므로 코드 복제를 수행할 필요가 없는 간소화된 설정을 [&quot;repoless&quot;,](https://www.aem.live/docs/repoless)라고도 합니다.
+첫 번째 사이트를 제외한 모든 사이트에는 자체 GitHub 저장소가 필요하지 않으므로 이렇게 간소화된 설정을 사용하면 코드 복제를 [&quot;repolless&quot;](https://www.aem.live/docs/repoless)라고도 합니다.
 
 프로젝트에서 사이트 간 코드 재사용의 무한한 유연성이 필요한 경우 기능을 활성화할 수 있습니다.
 
@@ -70,7 +70,7 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 
 사이트 구성을 만들고 경로 매핑에 추가해야 합니다.
 
-1. 사이트의 루트에 새 페이지를 만들고 [**구성** 템플릿을 선택합니다.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. 사이트 루트에 새 페이지를 만들고 [**구성** 템플릿](/help/edge/wysiwyg-authoring/tabular-data.md#other)을(를) 선택합니다.
    * 미리 정의된 `key` 및 `value` 열만 있는 구성을 비워 둘 수 있습니다. 만들기만 하면 됩니다.
 1. 다음과 유사한 cURL 명령을 사용하여 공개 구성에서 사이트 구성에 대한 매핑을 만듭니다.
 

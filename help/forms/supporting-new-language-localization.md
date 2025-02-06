@@ -4,7 +4,7 @@ description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 3%
@@ -56,7 +56,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 #### 1. 저장소 복제 {#clone-the-repository}
 
 1. 명령줄에서 Forms Cloud Service 저장소를 복제하려는 위치로 이동합니다.
-1. Cloud Manager에서 [검색한 명령을 실행합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과(와) 비슷합니다.
+1. [Cloud Manager에서 가져온](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 명령을 실행합니다. `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과(와) 비슷합니다.
 1. git 사용자 이름 및 암호를 사용하여 저장소를 복제합니다.
 1. 원하는 편집기에서 복제된 Forms Cloud Service 저장소 폴더를 엽니다.
 

@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 6%
@@ -53,8 +53,8 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 
 ## AEM 현대화 도구 사용을 위한 전제 조건
 
-* [AEM Forms을 위한 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
-* [환경에 대한 적응형 Forms 핵심 구성 요소 를 활성화합니다.](/help/forms/enable-adaptive-forms-core-components.md)
+* [AEM Forms에 대한 로컬 개발 환경을 설정합니다](/help/forms/setup-local-development-environment.md).
+* [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](/help/forms/enable-adaptive-forms-core-components.md).
 * 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 구성원은 적응형 양식을 만들 수 있는 권한이 있습니다.
 * 다음 역할이 있는 사용자는 AEM 환경 내에 AEM 현대화 도구 를 설치할 수 있는 권한이 있습니다.
 

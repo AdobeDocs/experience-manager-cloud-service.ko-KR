@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 1%
@@ -93,7 +93,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    * 사용자 지정 양식 서식 파일이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택하십시오. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. **[!UICONTROL 만들기를 선택합니다.]** 기호가 활성화된 적응형 양식이 만들어집니다. [!DNL Adobe Sign] 필드를 양식에 추가하고 서명을 위해 보낼 수 있습니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 서명이 활성화된 적응형 양식이 만들어집니다. [!DNL Adobe Sign] 필드를 양식에 추가하고 서명을 위해 보낼 수 있습니다.
 
 #### 적응형 양식에 [!DNL Adobe Sign] 사용 {#editafsign}
 

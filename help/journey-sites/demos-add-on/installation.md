@@ -4,10 +4,10 @@ description: Cloud Manager 및 이를 사용하여 추가 기능을 설치하는
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로
 * 파이프라인이 AEM에 콘텐츠와 구성을 전달하는 방법을 이해할 수 있습니다.
 * 몇 번의 클릭만으로 템플릿을 통해 데모 콘텐츠로 미리 채워진 사이트를 제작하는 방법을 파악할 수 있습니다.
 
-이 지식을 기반으로 [프로그램 및 파이프라인 제작](create-program.md)을 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 [프로그램 및 파이프라인 만들기](create-program.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 

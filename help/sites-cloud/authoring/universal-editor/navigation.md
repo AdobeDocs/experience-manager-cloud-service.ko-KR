@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 38%
+source-wordcount: '1613'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >[!TIP]
 >
 >* 유니버설 편집기를 사용하여 작성하는 방법에 대한 자세한 내용은 문서 [유니버설 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)을 참조하십시오.
->* Universal Editor에 대한 자세한 소개는 [Universal Editor 소개](/help/implementing/universal-editor/introduction.md) 문서를 참조하십시오.
+>* 유니버설 편집기에 대한 자세한 소개는 [유니버설 편집기 소개](/help/implementing/universal-editor/introduction.md)를 참조하십시오.
 
 ## 앱 준비 {#prepare-app}
 
@@ -48,13 +48,13 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 >[!NOTE]
 >
->[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 범용 편집기 또는 [페이지 편집기.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 범용 편집기 또는 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다.
 
 ### 직접 액세스 {#accessing-directly}
 
-1. 범용 편집기에 로그인합니다. 로그인하려면 Adobe ID이 필요하며 [유니버설 편집기에 액세스할 수 있습니다.](/help/implementing/universal-editor/getting-started.md#request-access)
+1. 범용 편집기에 로그인합니다. 로그인하려면 Adobe ID이 필요하며 [유니버설 편집기에 액세스할 수 있습니다](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. 로그인한 후에 [위치 표시줄에 편집하려는 페이지의 URL을 입력하여텍스트 콘텐츠 또는 미디어 콘텐츠와 같은 콘텐츠 편집을 시작할 수 있도록 ](#location-bar).
+1. 로그인한 후 [위치 표시줄](#location-bar)에 편집할 페이지의 URL을 입력하여 텍스트 콘텐츠 또는 미디어 콘텐츠와 같은 콘텐츠 편집을 시작할 수 있습니다.
 
 ## UI 이해 {#ui}
 
@@ -75,7 +75,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택해 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager,](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 등의 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ### 범용 편집기 도구 모음 {#universal-editor-toolbar}
 
-범용 편집기 도구 모음은 항상 [Experience Cloud 헤더 바로 아래 화면 맨 위에 있습니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
+범용 편집기 도구 모음은 항상 [Experience Cloud 헤더](#experience-cloud-header) 바로 아래 화면 맨 위에 있습니다. 빠른 액세스를 통해 편집할 다른 페이지로 이동하고 현재 페이지를 게시할 수 있습니다.
 
 ![유니버설 편집기 도구 모음](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 >[!NOTE]
 >
->유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다.](/help/implementing/universal-editor/getting-started.md)
+>유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다](/help/implementing/universal-editor/getting-started.md).
 
 #### 위치 표시줄 {#location-bar}
 
@@ -141,11 +141,11 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 >[!NOTE]
 >
->유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다.](/help/implementing/universal-editor/getting-started.md)
+>유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다](/help/implementing/universal-editor/getting-started.md).
 
 #### 인증 헤더 설정 {#authentication-settings}
 
-[로컬 개발을 위해 사용자 지정 인증 헤더를 설정해야 하는 경우 인증 헤더 설정 아이콘을 선택하십시오.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+[로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 설정 아이콘을 선택합니다.
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->[앱의 미리 보기 URL을 사용자 지정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>[앱의 미리 보기 URL을 사용자 지정할 수 있습니다](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 #### 게시 {#publish}
 
@@ -213,8 +213,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 도구 모음에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
-* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장을 참조하십시오.](/help/implementing/universal-editor/customizing.md)
-* 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md)을 참조하십시오.
+* 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.
 
 ### 편집기 {#editor}
 
@@ -222,7 +222,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![편집기](assets/editor.png)
 
-편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
+편집기가 [미리 보기 모드](#preview-mode)에 있으면 콘텐츠를 탐색할 수 있고 링크를 따라갈 수 있지만 콘텐츠를 편집할 수는 없습니다.
 
 ### 속성 패널 {#properties-rail}
 
@@ -294,7 +294,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![중복 아이콘](assets/duplicate.png)
 
-복제 단추 [을(를) 탭하거나 클릭하면 선택한 구성 요소가 복제됩니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+복제 단추 [을(를) 탭하거나 클릭하면 선택한 구성 요소가 복제됩니다](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### 삭제 {#delete}
 
@@ -302,7 +302,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![삭제 아이콘](assets/ue-delete-component-icon.png)
 
-삭제 버튼을 탭하거나 클릭하면 [구성 요소가 삭제됩니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+삭제 단추 [을(를) 탭하거나 클릭하면 구성 요소가 삭제됩니다](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
-* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장을 참조하십시오.](/help/implementing/universal-editor/customizing.md)
-* 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md)을 참조하십시오.
+* 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.
 
 ## 다음 단계 {#next-steps}
 
-이제 범용 편집기에 액세스하고 탐색하는 방법을 알았으므로 [이를 사용하여 콘텐츠를 작성할 준비가 되었습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+이제 유니버설 편집기에 액세스하고 탐색하는 방법을 알았으므로 [이를 사용하여 콘텐츠를 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)할 준비가 되었습니다.

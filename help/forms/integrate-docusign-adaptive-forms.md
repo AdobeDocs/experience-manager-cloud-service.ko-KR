@@ -4,7 +4,7 @@ description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명�
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -185,7 +185,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    - 사용자 지정 양식 서식 파일이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택하십시오. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. **[!UICONTROL 만들기를 선택합니다.]** 기호가 활성화된 적응형 양식이 만들어집니다. [!DNL DocuSign] 필드를 양식에 추가하고 서명을 위해 보낼 수 있습니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 서명이 활성화된 적응형 양식이 만들어집니다. [!DNL DocuSign] 필드를 양식에 추가하고 서명을 위해 보낼 수 있습니다.
 1. 편집 모드에서 적응형 양식을 엽니다. **[!UICONTROL 콘텐츠]** 탭에서 **[!UICONTROL 양식 컨테이너]**&#x200B;를 선택하고 ![구성](assets/configure-icon.svg)을 선택합니다.
 
 1. **[!UICONTROL 제출]** 섹션의 **[!UICONTROL 제출 액션]** 드롭다운 목록에서 **[!UICONTROL DocuSign 전자 서명으로 제출]**&#x200B;을 선택합니다.

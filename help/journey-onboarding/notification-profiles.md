@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 * **문제 알림** - 이러한 알림은 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경의 잠재적 가용성 문제를 식별한 경우 전송됩니다.
 * **사전 알림** - 이러한 알림은 Adobe 지원 팀원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 전송됩니다.
 
-사용자는 [사용자 지정 그룹 권한](/help/implementing/cloud-manager/custom-permissions.md)에 따라 특정 프로그램에 대한 알림을 받을 수도 있습니다.
+사용자는 [사용자 지정 그룹 권한](/help/implementing/cloud-manager/custom-permissions.md)에 따라 특정 프로그램에 대한 이러한 알림을 받을 수도 있습니다.
 
 또한 사전 알림에 그룹을 할당하는 기능이 지원되며 사용자와 그룹을 제품 프로필에 직접 할당할 수 있습니다.
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 알림 수신을 올바르게 설정하려면 두 개의 사용자 프로필을 만듭니다. 이 단계는 한 번만 수행됩니다.
 
-1. Admin Console([`https://adminconsole.adobe.com`)에 로그인합니다.](https://adminconsole.adobe.com)
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에 Admin Console에 로그인합니다.
 
 1. 올바른 조직에 속해 있는지 확인합니다.
 
@@ -103,7 +103,7 @@ Federated ID가 아직 설정되지 않은 사용자를 추가하려면 다음 �
 
    ![사용자](assets/product_services.png)
 
-1. 팀원의 Federated ID가 아직 설정되지 않은 경우 상단 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다. 그렇지 않은 경우 [프로필에 기존 사용자 추가](#existing-users) 섹션으로 건너뜁니다.
+1. 팀원의 Federated ID가 아직 설정되지 않은 경우 상단 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다. 그렇지 않으면 [프로필에 기존 사용자 추가](#existing-users) 섹션으로 건너뜁니다.
 
    ![사용자](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계�
 
 1. 상단 탐색에서 **사용자** 탭을 선택합니다.
 
-1. 알림 프로필에 추가하려는 팀원의 Federated ID가 이미 있는 경우 목록에서 해당 사용자를 찾아 클릭합니다. 그렇지 않은 경우 [프로필에 신규 사용자 추가](#add-user) 섹션으로 건너뜁니다.
+1. 알림 프로필에 추가하려는 팀원의 Federated ID가 이미 있는 경우 목록에서 해당 사용자를 찾아 클릭합니다. 또는 섹션 [프로필에 새 사용자 추가](#add-user)(으)로 건너뜁니다.
 
 1. 사용자 세부 정보 창의 **제품** 섹션에서 줄임표 버튼을 클릭한 다음 **편집**&#x200B;을 선택합니다.
 

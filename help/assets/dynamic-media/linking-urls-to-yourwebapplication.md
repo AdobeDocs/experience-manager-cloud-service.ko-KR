@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 웹 사이트 및 애플리케이션은 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 에셋을 게시하면 Dynamic Media이 에셋을 참조하는 URL 문자열을 활성화합니다. 테스트를 위해 이러한 URL을 웹 브라우저에 붙여넣을 수 있습니다.
 
-Adobe Experience Manager을 WCM으로 사용하여 *not*&#x200B;하는 경우에만 URL에 연결합니다. 링크 - 대 포함 - 은 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우에 사용됩니다. Experience Manager을 WCM으로 사용하는 경우 [에셋을 페이지에서 바로 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+Adobe Experience Manager을 WCM으로 사용하여 *not*&#x200B;하는 경우에만 URL에 연결합니다. 링크 - 대 포함 - 은 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우에 사용됩니다. Experience Manager을 WCM으로 사용하는 경우 [에셋을 페이지에서 바로 추가](adding-dynamic-media-assets-to-pages.md)합니다.
 
 이러한 URL 문자열을 웹 페이지 및 애플리케이션에 배치하려면 Dynamic Media에서 복사하십시오.
 
@@ -153,7 +153,7 @@ Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에�
 
    이 경로는 게시된 비디오 렌디션의 전체 비디오 URL입니다.
 
-## 적응형 비트율 스트리밍(HLS)을 위한 비디오 URL 얻기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 적응형 비트율 스트리밍을 위한 비디오 URL 얻기(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Service]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Service]** 제목까지 아래로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.

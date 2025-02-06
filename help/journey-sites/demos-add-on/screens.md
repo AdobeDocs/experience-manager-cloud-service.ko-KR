@@ -4,10 +4,10 @@ description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Serv
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2666'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 참조 데모 추가 기능 여정의 이전 문서인 [데모 사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 데모 사이트를 제작해 보았습니다. 이제
+AEM 참조 데모 추가 기능 여정의 이전 문서인 [데모 사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 데모 사이트를 만들었습니다. 이제
 
 * AEM 작성 환경 액세스 방법을 이해할 수 있습니다.
 * 템플릿을 기반으로 사이트를 만드는 방법을 이해할 수 있습니다.
@@ -104,8 +104,8 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 We.Cafe 데모 콘텐츠를 준비했으므로 AEM Screens를 테스트하는 방법을 선택할 수 있습니다.
 
-* AEM Sites 콘솔 내에 있는 콘텐츠만 탐색하고자 하는 경우 [추가 리소스](#additional-resources) 섹션에서 더 많은 콘텐츠를 살펴보고 검색해 보십시오! 추가로 작업을 수행할 필요는 없습니다.
-* AEM Screens의 모든 동적 기능을 경험하고자 하는 경우 다음 섹션인 [Screens 콘텐츠를 동적으로 변경](#dynamically-change)으로 계속 진행하십시오.
+* AEM Sites 콘솔 내의 콘텐츠만 탐색하려면 [추가 리소스](#additional-resources) 섹션에서 더 많은 콘텐츠를 살펴보고 검색하면 됩니다. 추가 작업은 필요하지 않습니다.
+* AEM Screens의 모든 동적 기능을 경험하려면 다음 섹션인 [Screens 콘텐츠를 동적으로 변경](#dynamically-change)으로 계속 진행하십시오.
 
 ## Screens 콘텐츠를 동적으로 변경 {#dynamically-change}
 

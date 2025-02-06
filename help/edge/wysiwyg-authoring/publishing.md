@@ -4,10 +4,10 @@ description: Edge Delivery Services를 통한 콘텐츠 게시 방법과 Edge De
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Edge Delivery Services를 사용하여 콘텐츠 소스에 관계없이 원활�
 
 ## AEM에서 흐름 게시 {#publishing-flow}
 
-Universal Editor를 사용하여 AEM 콘텐츠를 작성하는 경우, Universal Editor의 **게시** 버튼을 클릭하기만 하면 간단하게 게시할 수 있습니다. [Universal Editor를 사용하여 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md) 문서를 참조하십시오.
+Universal Editor를 사용하여 AEM 콘텐츠를 작성하는 경우, Universal Editor의 **게시** 버튼을 클릭하기만 하면 간단하게 게시할 수 있습니다. [유니버설 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md) 문서를 참조하십시오.
 
 게시할 때 정보 흐름은 다음과 같습니다. 작성자가 게시를 시작하면 이 흐름은 자동으로 이루어지며, 여기에 정보 제공 목적으로 설명되어 있습니다.
 

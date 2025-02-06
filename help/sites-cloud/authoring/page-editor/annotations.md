@@ -5,10 +5,10 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 83%
 
 1. 특정 주석의 편집이 끝나면 다음 작업을 수행할 수 있습니다.
 
-   * 텍스트 표시자를 선택하여 주석을 엽니다. 열면 전체 텍스트를 보고, 변경 내용을 적용하거나 [주석을 삭제](#deleting-annotations)할 수 있습니다.
+   * 텍스트 표시자를 선택하여 주석을 엽니다. 열면 전체 텍스트를 보고 변경하거나 [주석을 삭제](#deleting-annotations)할 수 있습니다.
    * 텍스트 표시자의 위치를 변경합니다.
    * 스케치 선을 선택하여 해당 스케치를 선택하고 원하는 위치로 드래그합니다.
    * 구성 요소 이동 또는 복사

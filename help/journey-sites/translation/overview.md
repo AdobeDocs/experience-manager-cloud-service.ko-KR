@@ -8,10 +8,10 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites는 디지털 환경 제작 및 관리를 위한 강력한 도구 세�
 
 AEM은 콘텐츠 번역을 위한 강력한 도구를 제공하므로 다른 지역 또는 로케일의 대상자에게 번역된 콘텐츠를 최대한 신속하게 전달할 수 있습니다. 이 설명서 여정에서는 AEM에서 콘텐츠를 만들고 관리하는 방법을 이해할 수 있는 작성 도구를 소개하고 나만의 번역 프로젝트를 관리하기 위해 알아야 할 사항을 안내합니다.
 
-AEM Sites 및 번역 요구 사항을 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. 그렇다면 [아래 추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
+AEM Sites 및 번역 요구 사항을 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. 그렇다면 아래 [추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 

@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 사이트 테마의 맞춤화만 담당하는 프론트엔드 개발자는 AEM의 설정 방법에 대한 지식이 필요하지 않으므로 이 문서의 [목표](#objective) 섹션으로 건너뛸 수 있습니다.
 
-프론트엔드 개발자와 더불어 Cloud Manager나 AEM 관리자 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md)에서 프론트엔드 개발자가 git 저장소에 액세스할 수 있도록 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+Cloud Manager 또는 AEM 관리자 및 프론트엔드 개발자의 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md)에서 프론트엔드 개발자가 git 저장소에 액세스할 수 있도록 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * 프론트엔드 개발자를 사용자로 추가하는 방법
 * 프론트엔드 개발자에게 필요한 역할을 부여하는 방법

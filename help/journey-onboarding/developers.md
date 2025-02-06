@@ -4,10 +4,10 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1397'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-온보딩 여정의 먼 길을 진행하시느라 수고하셨습니다. 축하합니다! 시스템 관리자가 [AEM 제품 프로필](assign-profiles-aem.md) 할당 문서를 통해 필요한 클라우드 리소스를 설정하고 액세스 권한을 부여하는 온보딩 여정을 완료했습니다.
+온보딩 여정의 먼 길을 진행하시느라 수고하셨습니다. 축하합니다! 시스템 관리자가 [AEM 제품 프로필 할당](assign-profiles-aem.md) 문서에서 필요한 클라우드 리소스를 설정하고 액세스 권한을 부여하는 온보딩 여정을 완료했습니다.
 
 이 시점에서 개발자와 배포 관리자는 고유한 애플리케이션 만들기를 시작할 수 있고 AEM 사용자는 콘텐츠 만들기를 시작할 수 있습니다. 이러한 의미에서 온보딩이 완료되었으며 이제 이 문서에서 설명하는 새 AEM as a Cloud Service 시스템을 사용할 수 있습니다.
 

@@ -5,10 +5,10 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 빠른 사이트 생성 여정의 이전 문서인 [git 저장소 액세스 정보 가져오기](retrieve-access.md)에서는 프론트엔드 개발자가 Cloud Manager를 사용하여 git 저장소 정보에 액세스하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+AEM 빠른 사이트 생성 여정의 이전 문서인 [Git 저장소 액세스 정보 가져오기](retrieve-access.md)에서는 프론트엔드 개발자가 Cloud Manager을 사용하여 git 저장소 정보에 액세스하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * Cloud Manager에 대한 대략적인 내용을 이해할 수 있습니다.
 * 맞춤화를 커밋할 수 있도록 AEM git에 액세스할 수 있는 자격 증명을 가져올 수 있습니다.
@@ -111,7 +111,7 @@ AEM 관리자가 제공한 요구 사항을 기반으로 테마를 계속 맞춤
 맞춤화가 완료되면 이를 AEM git 저장소에 커밋할 수 있습니다. 먼저 로컬 컴퓨터에 저장소를 복제해야 합니다.
 
 1. 명령줄에서 저장소를 복제하고자 하는 위치로 이동합니다.
-1. [이전에 Cloud Manager에서 가져온 명령을 실행합니다.](retrieve-access.md) 이는 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과 유사해야 합니다. [이 여정의 이전 부분에서 가져온](retrieve-access.md) git 사용자 이름 및 암호를 사용합니다.
+1. [이전에 Cloud Manager에서 가져온](retrieve-access.md) 명령을 실행합니다. `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과(와) 유사해야 합니다. [이 여정의 이전 부분에서 가져온](retrieve-access.md)git 사용자 이름과 암호를 사용합니다.
 
    ![저장소 복제](assets/clone-repo.png)
 

@@ -5,16 +5,16 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3120'
+ht-degree: 84%
 
 ---
 
 # 콘텐츠 조각 모델 {#content-fragment-models}
 
-AEM의 콘텐츠 조각 모델은 Headless 콘텐츠의 기반 역할을 하는 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대한 콘텐츠 구조를 정의합니다.
+AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대한 콘텐츠 구조를 정의하며 Headless 콘텐츠의 기반으로 사용됩니다.
 
 콘텐츠 조각 모델을 사용하려면 다음 작업을 수행하십시오.
 

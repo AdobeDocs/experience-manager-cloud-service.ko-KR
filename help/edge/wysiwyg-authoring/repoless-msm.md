@@ -4,7 +4,7 @@ description: Edge Delivery Services이 각각 제공하는 단일 코드 베이�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ MSM을 사용하여 로케일과 언어에 걸쳐 브랜드의 전체 콘텐츠 
 무응답 사용 사례에서 MSM을 구성하려면 먼저 여러 작업을 완료해야 합니다.
 
 * 이 문서에서는 사용자가 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서를 기반으로 프로젝트용 사이트를 이미 만들었다고 가정합니다.
-* 이미 [프로젝트에 대해 리디렉션 기능을 활성화한 상태여야 합니다.](/help/edge/wysiwyg-authoring/repoless.md)
+* [프로젝트에 대해 리디렉션 기능을 이미 사용하도록 설정](/help/edge/wysiwyg-authoring/repoless.md)한 상태여야 합니다.
 
 ## 사용 사례 {#use-case}
 
@@ -55,9 +55,9 @@ MSM을 사용하여 로케일과 언어에 걸쳐 브랜드의 전체 콘텐츠 
 
 MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다.
 
-1. [AEM 사이트 구성을 업데이트합니다.](#update-aem-configurations)
-1. [현지화된 페이지에 대한 새 Edge Delivery Services 사이트를 만듭니다.](#create-edge-sites)
-1. [현지화된 사이트에 대해 AEM의 클라우드 구성을 업데이트합니다.](#update-cloud-configurations)
+1. [AEM 사이트 구성 업데이트](#update-aem-configurations).
+1. [지역화된 페이지에 대한 새 Edge Delivery Services 사이트를 만듭니다](#create-edge-sites).
+1. [지역화된 사이트에 대한 AEM의 클라우드 구성 업데이트](#update-cloud-configurations).
 
 ### AEM 사이트 구성 업데이트 {#update-aem-configurations}
 

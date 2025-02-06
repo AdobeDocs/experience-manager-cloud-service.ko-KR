@@ -4,7 +4,7 @@ description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시�
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ContextHub를 사용하여 다음을 수행할 수 있습니다.
 
 ## 프레젠테이션 {#presentation}
 
-[ContextHub 도구 모음](/help/sites-cloud/authoring/personalization/contexthub.md)을(를) 사용하면 마케터와 작성자가 페이지를 작성할 때 사용자 환경을 시뮬레이션하기 위해 저장소 데이터를 보고 조작할 수 있습니다. 도구 모음은 클라이언트에서 ContextHub 데이터를 유지하는 [ContextHub 저장소,](#persistence)에 대한 액세스를 제공하는 UI 모듈 그룹으로 구성됩니다.
+[ContextHub 도구 모음](/help/sites-cloud/authoring/personalization/contexthub.md)을(를) 사용하면 마케터와 작성자가 페이지를 작성할 때 사용자 환경을 시뮬레이션하기 위해 저장소 데이터를 보고 조작할 수 있습니다. 도구 모음은 클라이언트에서 ContextHub 데이터를 유지하는 [ContextHub 저장소](#persistence)에 대한 액세스를 제공하는 UI 모듈 그룹으로 구성됩니다.
 
 각 ContextHub UI 모듈은 사전 정의된 모듈 유형의 인스턴스입니다.
 

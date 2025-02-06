@@ -4,7 +4,7 @@ description: 외부화는 프로그래밍 방식으로 리소스 경로를 외�
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 >[!NOTE]
 >
->AEM as a Cloud Service에 대해 [OSGi 구성을 적용할 때와 마찬가지로](/help/implementing/deploying/overview.md#osgi-configuration) 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
+>AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration)에 대해 [OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
 
 외부화 서비스에 대한 도메인 매핑을 정의하려면
 

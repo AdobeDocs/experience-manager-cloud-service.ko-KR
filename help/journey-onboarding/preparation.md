@@ -4,16 +4,16 @@ description: 온보딩 프로세스가 시작되기 전에 시스템 관리자�
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # 온보딩 준비 {#onboarding-preparation}
 
-이제 [AEM as a Cloud Service 온보딩 여정 소개](overview.md) 문서를 읽고 온보딩 프로세스에서 어떤 준비가 되어 있는지 알았으므로 바로 시작할 수 있습니다. 그러나 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 위해 이해해야 하는 몇 가지 준비 단계가 있습니다.
+[AEM as a Cloud Service 온보딩 여정 소개](overview.md) 문서를 읽고 온보딩 프로세스에서 어떤 준비가 되어 있는지 알았으므로 바로 시작할 수 있습니다. 그러나 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 위해 이해해야 하는 몇 가지 준비 단계가 있습니다.
 
 ## 목표 {#objective}
 

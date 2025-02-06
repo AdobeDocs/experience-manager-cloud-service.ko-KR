@@ -4,10 +4,10 @@ description: AEM 작성 인스턴스에서 사용되는 페이지 경로를 웹 
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ AEM을 사용하여 WYSIWYG 콘텐츠를 작성하고 Edge Delivery Services에 
 * AEM 작성 인스턴스에 사용되는 페이지 경로와 웹 사이트에 사용되는 공개 페이지 경로 간의 관계를 매핑하고 생성합니다.
 * Edge Delivery Services에 게시되는 콘텐츠(페이지, 시트, 자산 등)를 제어합니다.
 
-경로 매핑은 각 프로젝트에 대해 개별적으로, 프로젝트의 콘텐츠 및 URL 구조에 따라 구성되어야 합니다. 콘텐츠 게시 중 및 [범용 편집기](/help/sites-cloud/authoring/universal-editor/navigation.md)에서 콘텐츠를 편집할 때 AEM에서 사용합니다.
+경로 매핑은 각 프로젝트에 대해 개별적으로, 프로젝트의 콘텐츠 및 URL 구조에 따라 구성되어야 합니다. [범용 편집기](/help/sites-cloud/authoring/universal-editor/navigation.md)에서 콘텐츠를 편집하는 동안 AEM에서 사용됩니다.
 
 ## 구성 형식 {#configuration-format}
 

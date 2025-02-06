@@ -5,7 +5,7 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 38%
@@ -79,7 +79,7 @@ AEM Sites 편집기의 사이드 패널을 사용하여 페이지에 구성 요�
 
 ![구성 요소 브라우저 정보](assets/editor-side-panel-component-description.png)
 
-사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)을 참조하십시오.
+사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)을 참조하세요.
 
 ## 자산 브라우저 {#assets-browser}
 
@@ -182,4 +182,4 @@ AEM Sites 편집기의 사이드 패널을 사용하여 페이지에 구성 요�
 
 ## 관련 컨텐츠 브라우저 {#associated-content-browser}
 
-페이지에 콘텐츠 조각이 포함되어 있으면 관련 콘텐츠의 [브라우저에 액세스할 수도 있습니다.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+페이지에 콘텐츠 조각이 포함되어 있으면 관련 콘텐츠의 [브라우저](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)에도 액세스할 수 있습니다.

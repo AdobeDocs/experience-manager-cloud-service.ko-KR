@@ -4,7 +4,7 @@ description: Content Package Maven 플러그인을 사용하여 AEM 애플리케
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 관리 작업을 Maven 프로젝트에 통합합니다.
 
-빌드된 패키지를 AEM에 배포하는 작업은 Adobe Content Package Maven 플러그인에 의해 수행되며, AEM [패키지 관리자:](/help/implementing/developing/tools/package-manager.md)를 사용하여 일반적으로 수행되는 작업을 자동화할 수 있습니다.
+빌드된 패키지를 AEM에 배포하는 작업은 Adobe Content Package Maven 플러그인에 의해 수행되며, AEM [Package Manager](/help/implementing/developing/tools/package-manager.md)을(를) 사용하여 일반적으로 수행되는 작업을 자동화할 수 있습니다.
 
 * 파일 시스템의 파일에서 새 패키지를 만듭니다.
 * AEM에서 패키지를 설치 및 제거합니다.
@@ -23,7 +23,7 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 * AEM에 설치된 패키지 목록을 가져옵니다.
 * AEM에서 패키지를 제거합니다.
 
-이 문서에서는 Maven을 사용하여 이러한 작업을 관리하는 방법을 자세히 설명합니다. 그러나 [AEM 프로젝트와 패키지의 구성 방식을 이해하는 것도 중요합니다.](#aem-project-structure)
+이 문서에서는 Maven을 사용하여 이러한 작업을 관리하는 방법을 자세히 설명합니다. 그러나 [AEM 프로젝트와 패키지의 구성 방식](#aem-project-structure)을 이해하는 것도 중요합니다.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 
 >[!NOTE]
 >
->**만들기** 패키지는 이제 [Apache Jackrabbit FileVault 패키지 Maven 플러그인이 소유합니다.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>**만들기** 패키지는 이제 [Apache Jackrabbit FileVault 패키지 Maven 플러그인](https://jackrabbit.apache.org/filevault-package-maven-plugin/)에서 소유합니다.
 >
 >이 문서에서는 Adobe Content Package Maven 플러그인이 수행한 AEM에 대한 구성된 패키지의 **deployment**&#x200B;에 대해 설명합니다.
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service은 최신 AEM Project Archetype에 의해 구현된 패�
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
-플러그인은 [Maven 중앙 리포지토리에서 사용할 수 있습니다.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+플러그인은 [Maven 중앙 저장소](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)에서 사용할 수 있습니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 목표 및 매개 변수
 

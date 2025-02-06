@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 95%
+source-wordcount: '1414'
+ht-degree: 94%
 
 ---
 
@@ -99,7 +99,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 * 블루프린트에서 새 페이지를 **이동**&#x200B;해도 표준 롤아웃 구성을 통한 롤아웃 이후 해당하는 페이지가 Live Copy에서 이동하지 **않습니다**.
    * 이 비헤이비어의 이유는 페이지 이동이 페이지 삭제를 묵시적으로 포함하기 때문입니다. 작성자의 페이지를 삭제하면 게시 시 해당 콘텐츠가 자동으로 비활성화되므로 예기치 않은 비헤이비어가 발생할 수 있습니다. 링크, 책갈피 등과 같은 관련 항목에도 추가적인 영향을 미칠 수 있습니다.
       * 각 Live Copy 페이지의 콘텐츠 상속이 업데이트되어 블루프린트에 해당 소스의 새 위치가 반영됩니다.
-      * 블루프린트에서 Live Copy로의 페이지 이동을 완전히 실현하려면 [페이지 이동 모범 사례](#page-move)를 참고하십시오.
+      * 블루프린트에서 라이브 카피로의 페이지 이동을 완전히 실현하려면 [페이지 이동 모범 사례]를 참고하십시오.(#page-move)
 
 ### 페이지 이동 모범 사례 {#page-move}
 

@@ -4,10 +4,10 @@ description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 �
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
+Adobe Experience Manager as a Cloud Service은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
 다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM 사용자 인터페이스를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 ## 캘린더 표시 {#mark-calendars}
 
-기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
+기능 릴리스는 미리 예약되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
 
 예정된 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 일자를 기록해 두십시오.
 
@@ -83,7 +83,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 1. 프리릴리스를 활성화하고자 하는 환경을 선택한 다음 **프로그램** > **환경** > **환경 구성**&#x200B;을 통해 해당 구성에 액세스합니다.
 
-1. 새 [환경 변수](../implementing/cloud-manager/environment-variables.md)를 추가합니다.
+1. 새 [환경 변수 추가](../implementing/cloud-manager/environment-variables.md)
 
    | 이름 | 값 | 적용된 서비스 | 유형 |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 Cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수도 있습니다.
 
-* [Cloud Manager API의 환경 변수 엔드포인트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)를 사용하여 `AEM_RELEASE_CHANNEL` 환경 변수를 `prerelease` 값으로 설정합니다.
+* [Cloud Manager API의 환경 변수 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)을 사용하여 `AEM_RELEASE_CHANNEL` 환경 변수를 `prerelease` 값으로 설정합니다.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

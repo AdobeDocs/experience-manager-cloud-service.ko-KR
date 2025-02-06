@@ -4,7 +4,7 @@ description: Sling 모델 내보내기 도구를 통한 ResourceResolver 직렬�
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 슬링 모델 내보내기 기능을 사용하면 슬링 모델 개체를 JSON 형식으로 serialize할 수 있습니다. 이 기능은 SPA(단일 페이지 애플리케이션)가 AEM의 데이터에 쉽게 액세스할 수 있도록 하므로 널리 사용됩니다. 구현 측면에서는 Jackson Databind 라이브러리를 사용하여 이러한 개체를 serialize합니다.
 
-직렬화는 재귀 연산입니다. &quot;루트 오브젝트&quot;에서 시작하여 적합한 모든 오브젝트를 재귀적으로 반복하고 오브젝트 및 해당 하위 오브젝트를 직렬화합니다. [Jackson 문서에서 직렬화된 필드에 대한 설명을 찾을 수 있습니다. 직렬화/역직렬화할 필드를 결정하십시오.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)
+직렬화는 재귀 연산입니다. &quot;루트 오브젝트&quot;에서 시작하여 적합한 모든 오브젝트를 재귀적으로 반복하고 오브젝트 및 해당 하위 오브젝트를 직렬화합니다. [Jackson 문서에서 직렬화된 필드에 대한 설명을 찾을 수 있습니다. 직렬화/역직렬화할 필드 결정](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 이 접근 방식은 모든 유형의 개체를 JSON으로 정리합니다. Sling `ResourceResolver` 개체가 serialization 규칙에 포함되어 있으면 serialize할 수도 있습니다. `ResourceResolver` 서비스(및 이를 나타내는 서비스 개체)에는 잠재적으로 중요한 정보가 포함되어 있으므로 공개해서는 안 되므로 문제가 됩니다. 예:
 
@@ -43,7 +43,7 @@ WARN 메시지는 AEM as a Cloud Service 및 로컬 AEM SDK 인스턴스에 모�
 
 >[!NOTE]
 >
->[AEM 핵심 구성 요소](https://experienceleague.adobe.com/kr/docs/experience-manager-core-components/using/introduction)는 이 문제의 영향을 받지 않습니다.
+>[AEM 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)는 이 문제의 영향을 받지 않습니다.
 
 ## 요청된 작업 {#requested-action}
 

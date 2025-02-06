@@ -4,7 +4,7 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.m
 
 또한 CDN이 해당 원본에 연결할 수 없는 경우 자체 호스팅된 사용자 지정 오류 페이지를 참조하는 규칙을 작성할 수 있습니다(그런 다음 렌더링됨). [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md) 문서를 읽고 이에 대해 자세히 알아보십시오.
 
-소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 Cloud Manager [구성 파이프라인을 사용하여 배포됩니다.](/help/operations/config-pipeline.md) 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
+소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포됩니다. 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
 
 ## 평가 순서 {#order-of-evaluation}
 

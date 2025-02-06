@@ -4,9 +4,9 @@ description: 범용 편집기의 작동 방식과 프로젝트에서 사용하�
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3179'
 ht-degree: 1%
 
 ---
@@ -33,17 +33,17 @@ ht-degree: 1%
 이 개요를 따라 진행하려면 다음을 사용할 수 있어야 합니다.
 
 * [AEM as a Cloud Service의 로컬 개발 인스턴스](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 로컬 개발 인스턴스는 `localhost`에서 개발 목적으로 HTTPS로 [구성되어 있어야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
-   * [WKND 데모 사이트를 설치해야 합니다.](https://github.com/adobe/aem-guides-wknd)
-* [유니버설 편집기에 액세스](/help/implementing/universal-editor/getting-started.md#onboarding)
-* 개발 목적으로 실행 중인 [로컬 유니버설 편집기 서비스](/help/implementing/universal-editor/local-dev.md)
-   * [자체 서명된 로컬 서비스 인증서를 수락하도록 브라우저를 지시해야 합니다.](/help/implementing/universal-editor/local-dev.md#editing)
+   * 로컬 개발 인스턴스는 `localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)에서 개발 목적으로 HTTPS로 [구성되어 있어야 합니다.
+   * [WKND 데모 사이트를 설치해야 합니다](https://github.com/adobe/aem-guides-wknd).
+* [유니버설 편집기에 액세스](/help/implementing/universal-editor/getting-started.md#onboarding).
+* 개발 목적으로 실행 중인 [로컬 유니버설 편집기 서비스](/help/implementing/universal-editor/local-dev.md).
+   * [로컬 서비스 자체 서명 인증서를 수락](/help/implementing/universal-editor/local-dev.md#editing)하도록 브라우저를 지시해야 합니다.
 
-웹 개발에 대한 일반적인 익숙함을 넘어, 이 문서는 AEM 개발에 대한 기본적인 익숙함을 전제로 합니다. AEM 개발에 익숙하지 않은 경우 [WKND 튜토리얼을 검토한 후 계속하십시오.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+웹 개발에 대한 일반적인 익숙함을 넘어, 이 문서는 AEM 개발에 대한 기본적인 익숙함을 전제로 합니다. AEM 개발에 익숙하지 않은 경우 [계속하기 전에 WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)을 검토하는 것이 좋습니다.
 
 ## AEM을 시작하고 유니버설 편집기에 로그인 {#sign-in}
 
-아직 실행되지 않은 경우 로컬 AEM 개발 인스턴스가 WKND를 설치하고 HTTPS를 [(으)로 사용하도록 설정해야 합니다. 자세한 내용은 사전 요구 사항을 참조하십시오.](#prerequisites) 이 개요에서는 인스턴스가 `https://localhost:8443`에서 실행 중이라고 가정합니다.
+아직 실행되지 않은 경우 WKND를 설치하고 HTTPS를 사용하도록 설정한 로컬 AEM 개발 인스턴스가 [사전 요구 사항에 자세히](#prerequisites)되어 있어야 합니다. 이 개요에서는 인스턴스가 `https://localhost:8443`에서 실행되고 있다고 가정합니다.
 
 1. AEM 편집기에서 기본 WKND 영어 언어 마스터 페이지를 엽니다.
 
@@ -572,21 +572,21 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 나만의 앱 측정을 시작할 때 이 예에서 수행한 기본 단계를 염두에 두십시오.
 
-1. [개발 환경을 설정합니다.](#prerequisites)
+1. [개발 환경을 설정했습니다](#prerequisites).
    * WKND가 설치된 HTTPS에서 로컬로 실행되는 AEM
    * HTTPS에서 로컬로 실행되는 유니버설 편집기 서비스
 1. 콘텐츠를 원격으로 로드할 수 있도록 AEM의 OSGi 설정을 업데이트했습니다.
    * [&#39;org.apache.sling.engine.impl.SlingMainServlet&#39;](#sameorigin)
    * [&#39;com.day.crx.security.token.impl.impl.TokenAuthenticationHandler&#39;](#samesite-cookies)
-1. [을(를) 추가했습니다. ](#ue-connect-remote-frame)
-1. [의 변경 사항을 지속하기 위해 연결을 정의했습니다. ](#connection)
+1. [앱의 페이지 구성 요소의 `customheaderlibs.html` 파일에 `universal-editor-embedded.js` 라이브러리를 추가했습니다](#ue-connect-remote-frame).
+1. [연결을 정의하여 앱의 페이지 구성 요소에 있는 `customheaderlibs.html` 파일의 변경 내용을 유지합니다](#connection).
    * 로컬 AEM 개발 인스턴스에 대한 연결을 정의했습니다.
    * 또한 로컬 유니버설 편집기 서비스에 대한 연결을 정의했습니다.
-1. [티저 구성 요소를 계측했습니다.](#instrumenting-components)
-1. [티저의 하위 구성 요소를 계측했습니다.](#subcomponents)
-1. [로컬 범용 편집기 서비스를 사용하여 변경 사항을 저장할 수 있도록 사용자 지정 인증 헤더를 정의했습니다.](#auth-header)
-1. [속성 패널을 사용하도록 앱을 계측했습니다.](#properties-rail)
-1. [속성 패널을 사용하도록 티저 구성 요소를 계측했습니다.](#properties-rail-component)
+1. [티저 구성 요소를 계측했습니다](#instrumenting-components).
+1. [티저의 하위 구성 요소를 계측했습니다](#subcomponents).
+1. [로컬 유니버설 편집기 서비스를 사용하여 변경 내용을 저장할 수 있도록 사용자 지정 인증 헤더를 정의했습니다](#auth-header).
+1. [속성 패널을 사용하도록 앱을 계측했습니다](#properties-rail).
+1. [속성 패널을 사용하도록 티저 구성 요소를 계측했습니다](#properties-rail-component).
 
 동일한 단계에 따라 유니버설 편집기에서 사용할 나만의 앱을 계측할 수 있습니다. JCR의 모든 속성은 범용 편집기에 노출될 수 있습니다.
 

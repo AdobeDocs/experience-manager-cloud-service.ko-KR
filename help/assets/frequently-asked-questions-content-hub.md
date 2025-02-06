@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
-workflow-type: ht
-source-wordcount: '1113'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service Assets에서 관리되는 사용자/프로덕션 콘텐�
 * Admin Console 관리자가 [일부 사용자를 선택해](/help/assets/deploy-content-hub.md#onboard-content-hub-users) Content Hub 제품 프로필에 추가하여 평가를 시작하도록 할 수 있습니다.
 * 평가가 완료되면 작성자 인스턴스의 AEM 사용자가 테스트 자산에서 승인을 제거하고, Content Hub의 프로덕션 자산을 승인하면 Admin Console 관리자가 Content Hub 및 승인된 콘텐츠에 액세스해야 하는 모든 사용자를 추가할 수 있습니다. 축하합니다. 이제 Content Hub가 활성화되었습니다.
 
-샌드박스 프로그램 및 해당 작성 프로덕션 환경에 Content Hub에 대한 얼리 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 얼리 액세스 프로그램에 대해 자세히 알아보려면 Adobe 계정 팀에 문의하십시오.
+샌드박스 프로그램 및 해당 작성 프로덕션 환경에 Content Hub에 대한 얼리 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 조기 액세스 프로그램에 대한 자세한 내용은 Adobe 계정 팀에 문의하십시오.
 
 Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 스테이징/개발 환경은 2025년 3월에 출시될 예정입니다.
 

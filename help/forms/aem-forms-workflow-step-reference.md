@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
 ht-degree: 0%
@@ -554,7 +554,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 로케일]**: PDF 문서 생성에 사용되는 언어를 지정합니다. 리터럴 값을 제공하는 경우 목록에서 언어를 선택하거나 다음 값 중 하나를 선택합니다.
    * **[!UICONTROL 서버 기본값을 사용하려면]**:
-(기본값) [!DNL AEM Forms] 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. ([Designer 도움말](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)을 참조하세요.)
+(기본값) [!DNL AEM Forms] 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. ([Designer 도움말](https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)을 참조하세요.)
 
    * **[!UICONTROL 사용자 지정 값을 사용하려면]**:
 리터럴 상자에 로케일 코드를 입력하거나 로케일 코드를 포함하는 문자열 변수를 선택합니다. 지원되는 로케일 코드의 전체 목록은 https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html 을 참조하십시오.

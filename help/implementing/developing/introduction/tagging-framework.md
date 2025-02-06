@@ -4,7 +4,7 @@ description: 콘텐츠에 태그를 지정하고 AEM 태깅 인프라를 사용�
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 콘텐츠에 태그를 지정하고 AEM 태그 지정 인프라를 사용하려면 다음을 수행하십시오.
 
-* 태그는 [분류 루트 노드 아래에 [`cq:Tag`](#cq-tag-node-type) 유형의 노드로 있어야 합니다.](#taxonomy-root-node)
+* 태그는 [분류 루트 노드](#taxonomy-root-node) 아래에 [`cq:Tag`](#cq-tag-node-type) 유형의 노드로 있어야 합니다.
 * 태그가 지정된 콘텐츠 노드 `NodeType`에 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin이 포함되어야 합니다.
-* [`TagID`](#tagid)이(가) 콘텐츠 노드의 [`cq:tags`](#cq-tags-property) 속성에 추가되고 [`cq:Tag`.](#cq-tag-node-type) 유형의 노드로 확인됩니다.
+* [`TagID`](#tagid)이(가) 콘텐츠 노드의 [`cq:tags`](#cq-tags-property) 속성에 추가되고 [`cq:Tag`](#cq-tag-node-type) 유형의 노드로 확인됩니다.
 
 ## cq:태그 노드 유형 {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ ht-degree: 0%
 ### 태그 특성 {#tag-characteristics}
 
 * 노드 형식은 `cq:Tag`입니다.
-* 노드 이름은 [`TagID`.](#tagid)의 구성 요소입니다.
-* [`TagID`](#tagid)은(는) 항상 [네임스페이스를 포함합니다.](#tag-namespace)
+* 노드 이름이 [`TagID`](#tagid)의 구성 요소입니다.
+* [`TagID`](#tagid)에는 항상 [네임스페이스](#tag-namespace)가 포함됩니다.
 * `jcr:title` 속성(UI에 표시할 제목)은 선택 사항입니다.
 * `jcr:description` 속성은 선택 사항입니다.
-* 자식 노드를 포함하는 경우 [컨테이너 태그라고 합니다.](#container-tags)
-* 태그는 [분류법 루트 노드라는 기본 경로 아래의 저장소에 저장됩니다.](#taxonomy-root-node)
+* 자식 노드를 포함하는 경우 [컨테이너 태그](#container-tags)라고 합니다.
+* 태그는 [분류법 루트 노드](#taxonomy-root-node)라는 기본 경로 아래의 저장소에 저장됩니다.
 
 ### 태그 ID {#tagid}
 
 `TagID`은(는) 저장소의 태그 노드로 확인되는 경로를 식별합니다.
 
-일반적으로 `TagID`은(는) 네임스페이스로 시작하는 축약 `TagID`이거나 [분류법 루트 노드에서 시작하는 절대 `TagID`일 수 있습니다.](#taxonomy-root-node)
+일반적으로 `TagID`은(는) 네임스페이스로 시작하는 축약 `TagID`이거나 [분류 루트 노드](#taxonomy-root-node)에서 시작하는 절대 `TagID`일 수 있습니다.
 
 컨텐츠에 태그를 지정할 때 아직 없으면 [`cq:tags`](#cq-tags-property) 속성이 컨텐츠 노드에 추가되고 `TagID`이(가) 속성의 `String` 배열 값에 추가됩니다.
 
@@ -68,7 +68,7 @@ AEM에서 기본 경로는 `/content/cq:tags`이고 루트 노드는 `cq:Folder`
 
 네임스페이스를 사용하면 항목을 그룹화할 수 있습니다. 가장 일반적인 사용 사례는 사이트당(예: 공개 및 내부) 또는 더 큰 애플리케이션당(예: 사이트 또는 Assets)의 네임스페이스를 사용하는 것이지만 다양한 다른 요구 사항에 맞게 네임스페이스를 사용할 수 있습니다. 네임스페이스는 사용자 인터페이스에서 현재 콘텐츠에 적용할 수 있는 태그의 하위 집합(즉, 특정 네임스페이스의 태그)만 표시하는 데 사용됩니다.
 
-태그의 네임스페이스는 분류법 하위 트리의 첫 번째 수준이며 [분류법 루트 노드 바로 아래에 있는 노드입니다.](#taxonomy-root-node) 네임스페이스는 부모 노드가 `cq:Tag` 노드 유형이 아닌 `cq:Tag` 유형의 노드입니다.
+태그의 네임스페이스는 분류법 하위 트리의 첫 번째 수준이며, [분류법 루트 노드](#taxonomy-root-node) 바로 아래에 있는 노드입니다. 네임스페이스는 부모 노드가 `cq:Tag` 노드 유형이 아닌 `cq:Tag` 유형의 노드입니다.
 
 모든 태그에는 네임스페이스가 있습니다. 네임스페이스를 지정하지 않으면 태그는 기본 네임스페이스인 `TagID` `default`, 즉 `/content/cq:tags/default`에 할당됩니다. 이 경우 Title의 기본값은 `Standard Tags`입니다.
 
@@ -107,7 +107,7 @@ AEM에서 기본 경로는 `/content/cq:tags`이고 루트 노드는 `cq:Folder`
 
 ### 액세스 제어 {#access-control}
 
-태그는 [분류 루트 노드 아래의 저장소에 노드로 존재합니다.](#taxonomy-root-node) 작성자 및 사이트 방문자가 지정된 네임스페이스에서 태그를 만들 수 있도록 허용하거나 거부하는 작업은 저장소에서 적절한 ACL을 설정하여 수행할 수 있습니다.
+태그는 [분류법 루트 노드](#taxonomy-root-node) 아래의 저장소에 노드로 존재합니다. 저장소에서 적절한 ACL을 설정하여 작성자 및 사이트 방문자가 주어진 네임스페이스에서 태그를 만들 수 있도록 허용하거나 거부할 수 있습니다.
 
 특정 태그 또는 네임스페이스에 대한 읽기 권한을 거부하면 특정 콘텐츠에 태그를 적용하는 기능이 제어됩니다.
 

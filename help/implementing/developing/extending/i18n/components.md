@@ -1,18 +1,19 @@
 ---
-title: 구성 요소 다국어화
+title: 구성 요소 국제화
 description: 구성 요소 및 대화 상자의 UI 문자열이 다른 언어로 표시될 수 있도록 다국어화
 topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 구성 요소 다국어화{#internationalizing-components}
+# 구성 요소 국제화{#internationalizing-components}
 
 구성 요소 및 대화 상자의 UI 문자열을 다른 언어로 표시할 수 있도록 국제화합니다. 국제화를 위해 설계된 구성 요소를 사용하면 UI 문자열을 외부화하고, 번역한 다음 저장소로 가져올 수 있습니다. 런타임 시 사용자의 언어 환경 설정 또는 페이지 로케일에 따라 UI에 표시되는 언어가 결정됩니다.
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 다음 프로세스를 사용하여 구성 요소를 국제화하고 UI를 다양한 언어로 제공합니다.
 
-1. [문자열을 국제화하는 코드를 사용하여 구성 요소를 구현합니다.](/help/implementing/developing/extending/i18n/dev.md) 코드가 번역할 문자열을 식별하고 런타임 시 표시할 언어를 선택합니다.
+1. [문자열을 국제화하는 코드를 사용하여 구성 요소를 구현합니다](/help/implementing/developing/extending/i18n/dev.md). 코드는 번역할 문자열을 식별하고 런타임 시 표시할 언어를 선택합니다.
 1. 사전을 만들고 번역할 영어 문자열을 추가합니다.
 1. 사전을 XLIFF 형식으로 내보내고 문자열을 번역한 다음 XLIFF 파일을 다시 AEM으로 가져옵니다.
 1. 사전을 애플리케이션의 릴리스 관리 프로세스에 통합합니다.

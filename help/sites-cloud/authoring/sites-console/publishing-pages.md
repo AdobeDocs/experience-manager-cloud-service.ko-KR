@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 83%
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # 페이지 게시 {#publishing-pages}
 
-작성 환경에서 콘텐츠를 작성 및 검토한 후에는 [공개 웹 사이트(게시 환경)에서 사용할 수 있도록](/help/sites-cloud/authoring/author-publish.md) 만들어야 합니다.
+작성 환경에서 콘텐츠를 작성 및 검토한 다음, 목표는 [콘텐츠를 공개 웹 사이트(게시 환경)에서 사용할 수 있도록](/help/sites-cloud/authoring/author-publish.md) 만드는 것입니다.
 
 이를 페이지 게시라고도 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 게시 및 게시 취소할 때 작성 환경에서 페이지를 삭제할 때까지 계속 변경할 수 있습니다.
 
@@ -68,7 +68,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ### 페이지 편집기에서 게시 {#publishing-from-the-page-editor}
 
-[페이지 편집기에서 페이지를 편집하는 경우](/help/sites-cloud/authoring/page-editor/introduction.md) 편집기에서 직접 게시할 수 있습니다.
+[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)에서 페이지를 편집하는 경우 편집기에서 직접 게시할 수 있습니다.
 
 1. **페이지 정보** 아이콘을 선택하여 메뉴를 열고 **페이지 게시** 옵션을 엽니다.
 

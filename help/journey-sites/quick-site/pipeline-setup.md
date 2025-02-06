@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이트 생성](create-site.md)에서는 사이트 템플릿을 사용하여 나중에 프론트엔드 도구를 사용하여 맞춤화할 수 있는 AEM 사이트를 간단하게 만드는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이트 생성](create-site.md)에서는 사이트 템플릿을 사용하여 나중에 프론트엔드 도구를 사용하여 맞춤화할 수 있는 AEM 사이트를 빠르게 만드는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * AEM 사이트 템플릿을 얻는 방법을 이해할 수 있습니다.
 * 템플릿을 사용하여 사이트를 만드는 방법을 이해할 수 있습니다.

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Query Builder API에 대한 설명 참조
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-이 조건자는 현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+이 조건자는 현재 세션에 지정된 [JCR 권한](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)이 있는 항목으로 결과를 제한합니다.
 
 필터링 전용 조건자이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 

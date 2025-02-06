@@ -4,13 +4,13 @@ description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요�
 keywords: 적응형 양식 스타일 지정 핵심 구성 요소. 핵심 구성 요소에서 테마 사용, 적응형 양식 스타일 지정, 테마 맞춤화
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 5%
 
 ---
-
 
 # 테마를 사용하여 적응형 Forms 기반의 핵심 구성 요소 스타일 지정{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대한 
 
 * [Cloud Manager에서 파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)에 대해 잘 알고 있으며 파이프라인 설정 방법에 대한 기본 지식이 있으면 테마 맞춤화를 효율적으로 관리하고 배포하는 데 도움이 됩니다.
 * [기여자 역할로 사용자를 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)하는 방법을 알아봅니다. 기여자 역할이 있는 사용자를 구성하는 방법을 이해하면 테마 맞춤화에 필요한 권한을 부여할 수 있습니다.
-* [Apache Maven의 최신 릴리스를 설치하십시오.](https://maven.apache.org/download.cgi) Apache Maven은 일반적으로 Java™ 프로젝트에 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
+* [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오. Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 * 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 
 ### 환경 설정
@@ -373,7 +373,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 ##### 5.3 프론트엔드 파이프라인 실행 {#run-a-frontend-pipeline}
 
-테마는 [프론트엔드 파이프라인을 사용하여 배포됩니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 테마를 배포하려면 다음 단계를 수행하십시오.
+테마는 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 사용하여 배포됩니다. 테마를 배포하려면 다음 단계를 수행하십시오.
 
 1. AEM Cloud Manager 저장소에 로그인합니다.
 1. **[!UICONTROL 파이프라인]** 섹션에서 **[!UICONTROL 추가]** 단추를 클릭합니다.

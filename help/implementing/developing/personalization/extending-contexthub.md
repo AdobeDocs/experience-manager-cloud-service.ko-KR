@@ -4,7 +4,7 @@ description: 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사�
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-대부분의 경우 한 개의 후보만 필요하며 우선 순위를 `0`(으)로 설정할 수 있지만, 관심이 있는 경우 [추가 고급 등록,](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)에 대해 배울 수 있습니다. 이렇게 하면 JavaScript 조건(`applies`) 및 후보 우선 순위를 기준으로 몇 개의 스토어 구현 중 하나를 선택할 수 있습니다.
+대부분의 경우 한 개의 후보만 필요하며 우선 순위를 `0`(으)로 설정할 수 있지만, 관심이 있는 경우 [추가 등록](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)에 대해 배울 수 있습니다. 이렇게 하면 JavaScript 조건(`applies`) 및 후보 우선 순위를 기준으로 몇 개의 스토어 구현 중 하나를 선택할 수 있습니다.
 
 ## ContextHub UI 모듈 유형 작성 {#creating-contexthub-ui-module-types}
 

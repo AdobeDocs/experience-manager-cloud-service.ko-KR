@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 90%
@@ -129,8 +129,8 @@ Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각은 [페이�
 
 중간 콘텐츠에서 다음 작업을 수행할 수 있습니다.
 
-* [구성 요소 브라우저에서 구성 요소를 추가합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* [Assets 브라우저에서 자산을 추가합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)에서 구성 요소 추가
+* [Assets 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)에서 에셋 추가
 * 중간 콘텐츠 소스로 [연결된 콘텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]

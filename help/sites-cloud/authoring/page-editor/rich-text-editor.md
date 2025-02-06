@@ -5,10 +5,10 @@ exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## 바로 편집 {#in-place-editing}
 
-한 번의 클릭으로 텍스트 기반 구성 요소를 선택하여 [구성 요소 도구 모음을 표시합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+한 번의 클릭으로 텍스트 기반 구성 요소를 선택하여 [구성 요소 도구 모음](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)을 표시합니다.
 
 ![구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

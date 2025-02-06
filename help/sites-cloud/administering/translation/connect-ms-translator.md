@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 65%
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ AEM은 [Microsoft Translator](https://www.microsoft.com/en-us/translator/busines
 
 >[!TIP]
 >
->콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 | 속성 | 설명 |
 |---|---|
@@ -29,7 +29,7 @@ AEM은 [Microsoft Translator](https://www.microsoft.com/en-us/translator/busines
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
-1. [탐색 패널에서 ](/help/sites-cloud/authoring/basic-handling.md#first-steps)을(를) 선택합니다. **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. [탐색 패널](/help/sites-cloud/authoring/basic-handling.md#first-steps)에서 **도구** > **Cloud Service** > **번역 Cloud Service**&#x200B;을 선택합니다.
 1. 구성을 만들 위치로 이동합니다. 일반적으로 이는 사이트 루트에 있거나 전역 기본 구성일 수 있습니다.
 1. **만들기** 버튼을 선택합니다.
 1. 구성을 정의합니다.
@@ -40,7 +40,7 @@ AEM은 [Microsoft Translator](https://www.microsoft.com/en-us/translator/busines
    ![번역 구성 만들기](../assets/create-translation-config.png)
 
 1. **만들기**&#x200B;를 클릭합니다.
-1. **구성 편집** 창에서 이전 표에서 설명된 번역 서비스에 대한 값을 입력합니다.
+1. **구성 편집** 창에서 이전 테이블에서 설명된 번역 서비스에 대한 값을 입력합니다.
 
    ![번역 구성 편집](../assets/msft-config-ui.png)
 

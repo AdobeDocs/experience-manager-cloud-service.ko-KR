@@ -4,7 +4,7 @@ description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -55,7 +55,7 @@ XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA �
 1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **양식 템플릿을 기록 문서 템플릿으로 연결**&#x200B;을 선택합니다. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 XFA 템플릿(XDP 파일)이 표시됩니다. 적절한 파일을 선택합니다. 또한 적응형 양식 및 선택한 XFA 템플릿(XDP 파일)에 동일한 스키마(데이터 스키마)를 사용해야 합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 완료]** 클릭
 
 이제 적응형 양식이 XDP 파일을 기록 문서의 템플릿으로 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields)하는 것입니다.
 
@@ -68,7 +68,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **양식 템플릿을 기록 문서 템플릿으로 연결**&#x200B;을 선택합니다. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 Acrobat PDF(Acroform)가 표시됩니다. 적절한 파일을 선택합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 완료]** 클릭
 
 이제 적응형 양식이 기록 문서의 템플릿으로 Acroform을 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields)하는 것입니다.
 
@@ -89,7 +89,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **기록 문서 생성**&#x200B;을 선택합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 완료]** 클릭
 
 ## 템플릿 필드와 적응형 양식 구성 요소 바인딩 {#bind-adaptive-form-components-with-template-fields}
 

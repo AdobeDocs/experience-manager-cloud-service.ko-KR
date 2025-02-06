@@ -4,10 +4,10 @@ description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 15%
+source-wordcount: '1827'
+ht-degree: 14%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Asse
 
 >[!NOTE]
 >
->Experience Manager API에 대한 최신 정보는 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)에서도 확인할 수 있습니다.
+>Experience Manager API에 대한 최신 정보를 보려면 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)를 방문하세요.
 
 [Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager as a Cloud Service의 개발자가 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API를 통해 직접 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
@@ -47,7 +47,7 @@ API를 사용하면 Adobe Experience Manager as a Cloud Service 프론트엔드 
 
 예를 들어 프레임워크 기반 또는 사용자 지정 [SPA(단일 페이지 애플리케이션)](/help/implementing/developing/hybrid/introduction.md)은(는) HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 이 용도로 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공하지만, 구현을 위해 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 이 용도로 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공하지만, 구현을 위해 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 

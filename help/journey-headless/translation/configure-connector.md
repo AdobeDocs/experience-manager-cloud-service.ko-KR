@@ -5,10 +5,10 @@ exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -59,7 +59,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 >
 >AEM의 기본 Microsoft Translator를 사용하면 추가 설정이 필요하지 않으며 추가적인 커넥터 구성 없이 그대로 작동합니다.
 >
->테스트 목적으로 Microsoft Translator를 사용하는 경우 다음 두 섹션의 단계를 수행하지 않아도 됩니다. [번역 통합 구성 만들기](#create-config) 및 [구성과 콘텐츠 연결](#associate) 그러나 원하는 커넥터를 구성해야 하는 단계를 익숙하게 수행할 수 있도록 이들 단계를 읽어보는 것이 좋습니다.
+>테스트 목적으로 Microsoft Translator 커넥터를 사용하는 경우 다음 두 섹션의 단계를 수행하지 않아도 됩니다. [번역 통합 구성 만들기](#create-config) 및 [구성과 콘텐츠 연결](#associate). 그러나 원하는 커넥터를 구성해야 하는 단계를 익숙하게 수행할 수 있도록 이들 단계를 읽어보는 것이 좋습니다.
 >
 >Microsoft Translator 커넥터의 체험판 라이선스는 프로덕션 목적으로 고안된 것이 아니며, 라이선스를 부여하려면 시스템 관리자가 이 문서 끝의 [추가 리소스](#additional-resources) 섹션에 자세히 설명된 단계에 따라 해당 라이선스를 구성해야 합니다.
 
@@ -122,7 +122,7 @@ AEM은 유연하고 강력한 도구이며 여러 커넥터 및 구성을 통해
 1. 전역 탐색으로 이동한 다음 **탐색** > **자산** > **파일**&#x200B;로 이동합니다.
 1. 자산 콘솔에서 언어 루트를 선택해 구성하고 **속성**&#x200B;을 선택합니다.
 1. **클라우드 서비스** 탭을 선택합니다.
-1. **구성 추가** 드롭다운 목록의 **클라우드 서비스 구성**&#x200B;에서 커넥터를 선택합니다. 커넥터는 [이전에 설명한](#connect-translation-provider) 대로 패키지를 설치하면 드롭다운 목록에 표시됩니다.
+1. **구성 추가** 드롭다운 목록의 **클라우드 서비스 구성**&#x200B;에서 커넥터를 선택합니다. 해당 패키지를 설치하면 [이전에 설명](#connect-translation-provider)한 대로 드롭다운 목록에 표시됩니다.
 1. 또한 **구성 추가** 드롭다운 목록의 **클라우드 서비스 구성**&#x200B;에서 구성도 선택합니다.
 1. **저장 후 닫기**&#x200B;를 선택합니다.
 
@@ -135,7 +135,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * AEM 번역 통합 프레임워크의 중요한 매개변수를 이해할 수 있습니다.
 * 번역 서비스에 대해 나만의 연결을 설정할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [콘텐츠 번역](translation-rules.md)을 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 지금까지의 구성을 사용하여 실제로 콘텐츠를 번역하는 방법에 대해 알아봅니다.
+이 지식을 기반으로 다음 문서인 [콘텐츠 번역](translation-rules.md)을 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 지금까지 구성을 사용하여 콘텐츠를 실제로 번역하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 

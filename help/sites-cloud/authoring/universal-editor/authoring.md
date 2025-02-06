@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 37%
+source-wordcount: '1370'
+ht-degree: 35%
 
 ---
 
@@ -25,11 +25,11 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이미 유니버설 편집기에 액세스하고 탐색하는 방법을 잘 알고 있다고 가정합니다. 그렇지 않은 경우 [범용 편집기 액세스 및 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md) 문서를 참조하십시오.
+>이 문서에서는 사용자가 이미 유니버설 편집기에 액세스하고 탐색하는 방법을 잘 알고 있다고 가정합니다. 그렇지 않은 경우 [범용 편집기 액세스 및 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)을 참조하십시오.
 
 >[!TIP]
 >
->Universal Editor에 대한 자세한 소개는 [Universal Editor 소개](/help/implementing/universal-editor/introduction.md) 문서를 참조하십시오.
+>유니버설 편집기에 대한 자세한 소개는 [유니버설 편집기 소개](/help/implementing/universal-editor/introduction.md)를 참조하십시오.
 
 ## 콘텐츠 편집 {#editing-content}
 
@@ -39,9 +39,9 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!TIP]
 >
->기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드로 전환하세요.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)(으)로 전환하세요.
 
-선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 콘텐츠에 대한 추가 정보 및 옵션을 사용할 수 있습니다.
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
@@ -51,7 +51,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 얇은 파란색 윤곽선이 짙은 파란색 윤곽선으로 바뀌면 선택 표시가 나타나고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
-텍스트 구성 요소를 선택하기로 선택하면 해당 구성 요소의 세부 정보가 [속성 패널에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 패널에서 텍스트를 편집할 수도 있습니다.
+텍스트 구성 요소를 선택하면 자세한 정보가 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 표시됩니다. 패널에서 텍스트를 편집할 수도 있습니다.
 
 ![속성 패널에서 텍스트 편집](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ### 미디어 편집 {#edit-media}
 
-[속성 패널에서 자세한 내용을 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+[속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 자세한 내용을 볼 수 있습니다.
 
 ![미디어 편집](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-[콘텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택한 경우 [속성 패널에서 세부 정보를 편집할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택하면 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 세부 정보를 편집할 수 있습니다.
 
 ![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ### 컨테이너의 구성 요소 재정렬 {#reordering-components}
 
-1. 아직 [콘텐츠 트리 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)가 아닌 경우 전환합니다.
+1. [콘텐츠 트리 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 있지 않은 경우 전환하십시오.
 1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
 1. 컨테이너의 V자형 아이콘을 선택하여 콘텐츠 트리에서 해당 콘텐츠를 확장합니다.
 1. 컨테이너 내의 구성 요소 옆에 있는 드래그 핸들 아이콘은 구성 요소를 재정렬할 수 있음을 나타냅니다. 구성 요소를 드래그하여 컨테이너 내에서 재정렬합니다.
@@ -182,7 +182,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드에서 전환하십시오.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 나가십시오.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -204,4 +204,4 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 범용 편집기를 사용하면 콘텐츠를 업데이트하여 콘텐츠의 상속을 취소할 수 있습니다. 편집기는 해당 페이지에서 작성자가 변경한 모든 사항에 대한 상속을 자동으로 비활성화하여 블루프린트에서 업데이트가 동기화될 때 수정된 콘텐츠가 유지되도록 합니다.
 
-유니버설 편집기를 사용하여 상속이 작동하는 방법에 대한 자세한 내용은 [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) 문서를 참조하십시오.
+유니버설 편집기를 사용하여 상속이 작동하는 방법에 대한 자세한 내용은 [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)을 참조하십시오.

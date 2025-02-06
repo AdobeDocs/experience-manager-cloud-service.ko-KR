@@ -4,7 +4,7 @@ description: 구성 요소 정의와 유니버설 편집기 간의 JSON 계약�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ## `groups` {#groups}
 
-`groups`은(는) 편집기의 속성 패널에서 **추가** 아이콘을 클릭하여 [페이지에 새 구성 요소를 추가할 때 작성자가 유니버설 편집기에서 볼 수 있는 구성 요소 그룹을 정의합니다.구성 요소를 구성하는 데 도움이 되는 그룹이 ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)개 있습니다. 일반 그룹은 **일반 구성 요소** 및 **고급 구성 요소**&#x200B;일 수 있습니다.
+`groups`은(는) 편집기의 속성 패널에서 **추가** 아이콘을 클릭하여 [페이지에 새 구성 요소를 추가](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)할 때 작성자가 유니버설 편집기에서 볼 수 있는 구성 요소 그룹을 정의합니다. 그룹 은 구성 요소를 구성하는 데 도움이 됩니다. 일반 그룹은 **일반 구성 요소** 및 **고급 구성 요소**&#x200B;일 수 있습니다.
 
 * `title`은(는) 편집기 UI에 표시되는 그룹의 텍스트 설명을 정의합니다.
 * `id`은(는) 그룹을 고유하게 식별합니다.
@@ -94,7 +94,7 @@ ht-degree: 1%
 `plugin`이(가) 정의되면 페이지 관련 항목인지 조각 관련 항목인지 표시해야 합니다.
 
 * `page`은(는) 구성 요소가 현재 페이지의 콘텐츠임을 나타냅니다.
-* `cf`은(는) 구성 요소가 [콘텐츠 조각 내의 콘텐츠와 관련되어 있음을 나타냅니다.](/help/assets/content-fragments/content-fragments.md)
+* `cf`은(는) 구성 요소가 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 내의 콘텐츠와 관련되어 있음을 나타냅니다.
 
 ### `page` {#page}
 

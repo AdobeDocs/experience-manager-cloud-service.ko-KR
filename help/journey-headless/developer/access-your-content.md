@@ -5,16 +5,16 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # AEM 게재 API를 통해 콘텐츠에 액세스하는 방법 {#access-your-content}
 
-이 [AEM Headless 개발자 여정](overview.md)의 부분에서 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 앱에 피드하는 방법(Headless 게재)에 대해 알아볼 수 있습니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서는 GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 앱에 피드(Headless 게재)하는 방법을 배울 수 있습니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 

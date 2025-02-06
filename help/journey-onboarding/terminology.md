@@ -4,10 +4,10 @@ description: AEMaaCS에 로그인하기 전에 시스템 용어와 기본 구조
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 목표 {#objective}
 
-이제 [온보딩 준비](preparation.md) 문서를 읽고 온보딩 프로세스로 이어지는 과정을 이해했으므로 로그인하기 전에 시스템의 일부 용어와 기본 구조를 이해하는 것이 좋습니다.
+[온보딩 준비](preparation.md) 문서를 읽고 온보딩 프로세스로 이어지는 과정을 이해했으므로 로그인하기 전에 시스템의 일부 용어와 기본 구조를 이해하는 것이 좋습니다.
 
 AEM as a Cloud Service는 강력하고 유연한 도구이며, 도구를 사용하려면 해당 조직과 해당 도구를 설명하는 데 사용되는 용어 및 언어에 익숙해야 합니다. 이 문서에는 시스템 사용을 시작하기 전에 이해해야 하는 몇 가지 주요 용어가 요약되어 있습니다.
 

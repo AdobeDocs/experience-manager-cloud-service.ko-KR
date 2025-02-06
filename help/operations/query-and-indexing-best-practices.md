@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 43%
+ht-degree: 40%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service에서는 색인화와 관련된 모든 운영 측면이 �
 
 ### 구성 요소에서의 쿼리 {#queries-in-components}
 
-쿼리는 AEM 시스템에서 수행하는 비교적 더 까다로운 작업들 중 하나일 수 있기 때문에 구성 요소에서는 이를 피하는 것이 좋습니다. 페이지가 렌더링될 때마다 여러 쿼리가 실행되도록 할 경우 종종 시스템 성능이 저하될 수 있습니다. 구성 요소 렌더링 시 쿼리 실행을 피하는 데 이용할 수 있는 전략은 두 가지로, **[노드 트래버스](#traversing-nodes)** 전략과 **[결과 프리페치](#prefetching-results)** 전략입니다.
+쿼리는 AEM 시스템에서 수행하는 비교적 더 까다로운 작업들 중 하나일 수 있기 때문에 구성 요소에서는 이를 피하는 것이 좋습니다. 페이지가 렌더링될 때마다 여러 쿼리가 실행되도록 할 경우 종종 시스템 성능이 저하될 수 있습니다. 구성 요소 렌더링 시 쿼리 실행을 피하는 데 사용할 수 있는 전략은 두 가지가 있습니다. **[노드 트래버스](#traversing-nodes)** 및 **[결과 프리페치](#prefetching-results)**.
 
 ### 노드 트래버스 {#traversing-nodes}
 
@@ -62,14 +62,14 @@ AEM as a Cloud Service에서는 색인화와 관련된 모든 운영 측면이 �
 
 ## 쿼리 최적화 {#optimizing-queries}
 
-Oak 문서는 [쿼리 실행 방식에 대한 높은 수준의 개요를 제공합니다.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) 이는 본 문서에서 설명하는 모든 최적화 활동의 기반을 구성합니다.
+Oak 설명서는 [쿼리 실행 방법](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)에 대한 높은 수준의 개요를 제공합니다. 이는 본 문서에서 설명하는 모든 최적화 활동의 기반을 구성합니다.
 
 AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계된 [쿼리 성능 도구](#query-performance-tool)를 제공합니다.
 
 * 이 도구는 이미 실행된 쿼리를 그 관련 성능 특성 및 쿼리 계획과 함께 표시합니다.
 * 이 도구를 사용하면 단순히 쿼리 플랜을 표시하는 것부터 전체 쿼리를 실행하는 것까지 다양한 수준에서 애드혹 쿼리를 수행할 수 있습니다.
 
-쿼리 성능 도구는 [Cloud Manager의 개발자 콘솔을 통해 접근 가능합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
+쿼리 성능 도구는 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)을 통해 연결할 수 있습니다. AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
 
 이 차트는 쿼리 최적화를 위해 쿼리 성능 도구를 사용하는 일반적인 흐름을 설명합니다.
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 
 ### 결과 크기 제한 {#restrict-result-size}
 
-쿼리 결과를 가져온 크기는 쿼리 수행에 있어 중요한 요인입니다. 결과는 소극적 방식으로 가져오게 되기 때문에, 단순히 첫 20개 결과를 가져오는 것과 10,000개 결과를 가져오는 것은 런타임과 메모리 사용량 모두의 측면에서 차이가 있습니다.
+쿼리 결과를 가져온 크기는 쿼리 성능에 중요한 요인입니다. 결과는 소극적 방식으로 가져오게 되기 때문에, 단순히 첫 20개 결과를 가져오는 것과 10,000개 결과를 가져오는 것은 런타임과 메모리 사용량 모두의 측면에서 차이가 있습니다.
 
 이는 또한 모든 결과를 가져오는 경우에만 결과 세트의 크기를 정확하게 측정할 수 있다는 의미입니다. 이러한 이유로 인해, 쿼리를 보강(자세한 내용은 본 문서의 [JCR 쿼리 치트시트](#jcr-query-cheatsheet) 섹션 참조)하거나 결과 읽기를 제한하여, 가져온 결과 세트는 항상 제한해야 합니다.
 

@@ -4,10 +4,10 @@ description: 다중 사이트 관리자의 기능을 확장하는 방법에 대�
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->이 페이지는 [콘텐츠 재사용: 다중 사이트 관리자](/help/sites-cloud/administering/msm/overview.md) 문서의 맥락에서 더 쉽게 이해할 수 있습니다.
+>이 페이지는 [콘텐츠 재사용: 다중 사이트 관리자](/help/sites-cloud/administering/msm/overview.md) 문서의 컨텍스트에서 보다 쉽게 이해할 수 있습니다.
 
 >[!CAUTION]
 >

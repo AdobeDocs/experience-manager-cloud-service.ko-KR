@@ -1,17 +1,17 @@
 ---
-title: 콘텐츠 서비스에 대한 JSON 내보내기
+title: 콘텐츠 서비스를 위한 JSON 내보내기 도구
 description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
 
 ---
 
-# 콘텐츠 서비스에 대한 JSON 내보내기 {#json-exporter-for-content-services}
+# 콘텐츠 서비스를 위한 JSON 내보내기 도구 {#json-exporter-for-content-services}
 
 AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다.
 
@@ -65,7 +65,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 게재를 수
 
   >[!NOTE]
   >
-  >표준 구현은 아니지만 [여러 선택기가 지원됩니다.](enabling-json-exporter.md#multiple-selectors) 그러나 `model`은(는) 첫 번째 선택기여야 합니다.
+  >표준 구현은 아니지만 [여러 선택기가 지원됩니다](enabling-json-exporter.md#multiple-selectors). `model`이(가) 첫 번째 선택기여야 합니다.
 
 ### 추가 정보 {#further-information}
 
@@ -81,4 +81,4 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 게재를 수
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

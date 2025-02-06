@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 31%
@@ -267,7 +267,7 @@ data:
 * 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
 * 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
 
-**4** - [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4** - [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
 ### 버전 삭제 {#version-purge}
 

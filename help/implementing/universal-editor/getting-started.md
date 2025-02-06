@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -18,7 +18,7 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 
 >[!TIP]
 >
->예를 바로 살펴보고 싶다면 [GitHub의 Universal Editor 샘플 앱](https://github.com/adobe/universal-editor-sample-editable-app)을 검토할 수 있습니다.
+>예제를 자세히 살펴보려면 GitHub의 [범용 편집기 샘플 앱](https://github.com/adobe/universal-editor-sample-editable-app)을 검토할 수 있습니다.
 
 범용 편집기는 모든 소스에서 콘텐츠를 편집할 수 있지만 이 문서에서는 AEM 앱을 예로 사용합니다. 이 문서에서는 이러한 단계를 안내합니다.
 
@@ -122,7 +122,7 @@ Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고
 
 ## 범용 편집기를 열 컨텐츠 경로 또는 `sling:resourceType`을(를) 정의합니다. (선택 사항) {#content-paths}
 
-콘텐츠 작성자가 페이지를 편집할 때 [페이지 편집기,](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열려야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업할 수 있습니다.
+[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 콘텐츠 작성자가 페이지를 편집할 때 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열려야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업할 수 있습니다.
 
 1. 구성 관리자를 엽니다.
 

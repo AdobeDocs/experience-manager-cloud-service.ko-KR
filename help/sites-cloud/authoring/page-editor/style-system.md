@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ ht-degree: 87%
 
 핵심 구성 요소 버전 2 이상은 스타일 시스템을 활용할 수 있도록 전체적으로 활성화되며 추가 구성이 필요 없습니다.
 
-다음 단계는 사용자 정의 구성 요소에 대해 스타일 시스템을 활성화하거나 [편집 대화 상자에서 옵션 스타일 탭을 활성화](#enable-styles-tab-edit)하기만 하면 됩니다.
+다음 단계는 사용자 지정 구성 요소에 대해 스타일 시스템을 활성화하거나 [편집 대화 상자에서 선택적 스타일 탭을 활성화](#enable-styles-tab-edit)하는 데만 필요합니다.
 
 ### 디자인 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-design}
 

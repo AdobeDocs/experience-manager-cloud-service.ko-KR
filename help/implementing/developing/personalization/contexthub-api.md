@@ -4,7 +4,7 @@ description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지�
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -483,7 +483,7 @@ JSONP 서비스의 URL을 검색합니다.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore`은(는) [ContextHub.Store.JSONPtore](#contexthub-store-jsonpstore)을(를) 확장하므로 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색하는 데이터는 ContextHub 지속성 구성에 따라 지속됩니다. ([지속성 모드:](adding-contexthub.md#persistence-modes) 참조)
+`ContextHub.Store.PersistedJSONPStore`은(는) [ContextHub.Store.JSONPtore](#contexthub-store-jsonpstore)을(를) 확장하므로 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색하는 데이터는 ContextHub 지속성 구성에 따라 지속됩니다. [지속성 모드](adding-contexthub.md#persistence-modes) 참조
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 

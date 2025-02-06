@@ -4,10 +4,10 @@ description: Cloud Manager가 프로그램, 환경 및 파이프라인을 통해
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 다음 단계에 따라 Cloud Manager로 이동합니다.
 
-1. Cloud Manager의 로그인 페이지([`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/))로 이동합니다.
+1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)에 있는 Cloud Manager 로그인 페이지로 이동합니다.
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지에서 프로그램을 선택하여 **개요** 페이지를 시작합니다.
 

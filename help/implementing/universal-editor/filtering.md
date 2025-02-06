@@ -1,17 +1,17 @@
 ---
-title: 구성 요소 필터링
+title: 필터링 구성 요소
 description: 구성 요소 필터를 사용하여 유니버설 편집기에서 컨테이너당 허용된 구성 요소를 제한하는 방법에 대해 알아봅니다.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-
-# 구성 요소 필터링 {#filtering-components}
+# 필터링 구성 요소 {#filtering-components}
 
 구성 요소 필터를 사용하여 유니버설 편집기에서 컨테이너당 허용된 구성 요소를 제한하는 방법에 대해 알아봅니다.
 

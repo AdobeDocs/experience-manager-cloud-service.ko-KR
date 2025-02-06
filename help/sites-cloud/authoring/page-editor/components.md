@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 79%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 79%
 
 ## 일반 사용법 {#general-usage}
 
-구성 요소는 [페이지를 편집할 때 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+구성 요소는 [페이지를 편집할 때](/help/sites-cloud/authoring/page-editor/edit-content.md) 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.
 
 구성 요소를 선택한 다음 페이지에서 필요한 위치로 끌어올 수 있습니다. 그런 뒤에, 다음을 사용하여 편집할 수 있습니다.
 
@@ -42,7 +42,7 @@ ht-degree: 79%
 
 ## 핵심 구성 요소 {#core-components}
 
-[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 이 구성 요소는 AEM 모범 사례를 사용하여 빌드되었으며 AEM 작성 환경의 기초입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 

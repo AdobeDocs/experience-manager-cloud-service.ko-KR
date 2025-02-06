@@ -4,7 +4,7 @@ description: 페이지를 만들고, 초기 컨텐츠, 구조화된 컨텐츠, �
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 4%
@@ -225,7 +225,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->[구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)에서 전역 폴더를 편집하고 **편집 가능한 템플릿** 옵션을 활성화하면 이 폴더 내에 템플릿을 만들 수 있지만 권장되는 방법은 아닙니다.
+>[구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)에서 전역 폴더를 편집하고 이 폴더 내에 템플릿을 만들려면 **편집 가능한 템플릿** 옵션을 활성화할 수 있습니다. 그러나 이 방법은 권장되지 않습니다.
 
 ### ACL 및 그룹 {#acls-and-groups}
 
@@ -467,7 +467,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ### 레이아웃 {#layout}
 
-[템플릿을 편집할 때 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/page-editor/templates.md). 이 레이아웃은 [표준 반응형 레이아웃](/help/sites-cloud/administering/responsive-layout.md)을 사용합니다. [콘텐츠 작성자가 페이지에서 구성할 수 있습니다.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+[템플릿을 편집할 때 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/page-editor/templates.md). 이 레이아웃은 [표준 반응형 레이아웃](/help/sites-cloud/administering/responsive-layout.md)을 사용합니다. [콘텐츠 작성자가 페이지에서 구성](/help/sites-cloud/authoring/page-editor/responsive-layout.md)할 수 있습니다.
 
 ### 컨텐츠 정책 {#content-policies}
 

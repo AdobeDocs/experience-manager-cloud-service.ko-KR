@@ -4,7 +4,7 @@ description: Asset Share 쿼리 빌더의 기능은 Java&trade; API 및 REST API
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -487,7 +487,7 @@ AEM Query Builder 디버거를 사용하여 설명 가능한 XPath 쿼리를 생
 >
 >로거의 구성은 [로깅](/help/implementing/developing/introduction/logging.md) 문서에 설명되어 있습니다.
 
-이전 섹션 [테스트 및 디버깅:](#testing-and-debugging)에서 설명한 쿼리를 실행할 때 쿼리 빌더 구현의 로그 출력(INFO 수준)
+이전 섹션 [테스트 및 디버깅](#testing-and-debugging)에서 설명한 쿼리를 실행할 때 쿼리 빌더 구현의 로그 출력(INFO 수준)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

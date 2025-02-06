@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -44,9 +44,9 @@ Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니�
 
 ### 롤아웃 구성 {#rollout-configurations}
 
-다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다.
+다음 테이블에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 롤아웃 구성이 나열되어 있습니다. 테이블에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다.
 
-설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다.](#creating-a-rollout-configuration)
+설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
 
 | 이름 | 설명 | 트리거 | [동기화 작업](#synchronization-actions) |
 |---|---|---|---|
@@ -59,9 +59,9 @@ Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니�
 
 ### 동기화 작업 {#synchronization-actions}
 
-다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 동기화 작업이 나열되어 있습니다.
+다음 테이블에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 동기화 작업이 나열되어 있습니다.
 
-설치된 작업이 요구 사항을 충족하지 않는 경우 [새 동기화 작업을 만들 수 있습니다](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
+설치된 작업이 요구 사항에 맞지 않으면 [새 동기화 작업을 만들 수 있습니다](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 | 작업 이름 | 설명 | 속성 |
 |---|---|---|
@@ -88,7 +88,7 @@ Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니�
 설치된 롤아웃 구성이 애플리케이션 요구 사항을 충족하지 않을 경우 다음 단계를 수행하여 [롤아웃 구성을 만들 수 있습니다](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration).
 
 1. [롤아웃 구성 만들기 -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [롤아웃 구성에 동기화 작업을 추가합니다.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [롤아웃 구성에 동기화 작업을 추가](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)합니다.
 
 새 롤아웃 구성을 만들었다면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 구성할 때 사용할 수 있습니다.
 
@@ -98,7 +98,7 @@ Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니�
 
 AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
 
-다음 표에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
+다음 테이블에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 테이블은 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
 | 동기화 작업 | 웹 콘솔의 서비스 이름 | 서비스 PID |
 |---|---|---|
@@ -108,7 +108,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 | `PageMoveAction` | CQ MSM 페이지 이동 작업 | `com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory` |
 | `referencesUpdate` | CQ MSM 참조 업데이트 작업 | `com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory` |
 
-다음 표는 구성할 수 있는 속성을 설명합니다.
+다음 테이블은 구성할 수 있는 속성을 설명합니다.
 
 | 웹 콘솔 속성 | OSGi 속성 | 설명 |
 |---|---|---|
@@ -137,7 +137,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
 
-다음 표에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
+다음 테이블에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 테이블은 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
 | 웹 콘솔 속성 | OSGi 속성 | 설명 |
 |---|---|---|

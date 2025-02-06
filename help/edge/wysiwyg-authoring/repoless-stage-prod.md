@@ -4,7 +4,7 @@ description: 리디렉션 방식으로 단일 코드 베이스를 활용하는 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 개요 {#overview}
 
-스테이징 환경과 별도로 프로덕션 환경에 대한 사이트를 설정할 수 있습니다. 별도의 스테이징 및 프로덕션 설정에 대한 두 번째 사이트를 설정하는 것은 다중 사이트 관리에 필요한 [설정과 비슷합니다.](/help/edge/wysiwyg-authoring/repoless-msm.md) 필요한 경우 MSM 사이트 구조와 결합할 수 있습니다.
+스테이징 환경과 별도로 프로덕션 환경에 대한 사이트를 설정할 수 있습니다. 별도의 스테이징 및 프로덕션 설정에 대한 두 번째 사이트를 설정하는 것은 다중 사이트 관리에 필요한 [설정](/help/edge/wysiwyg-authoring/repoless-msm.md)과 비슷합니다. 실제로 필요한 경우 MSM 사이트 구조와 결합할 수 있습니다.
 
 이 문서에서는 별도의 스테이징 및 프로덕션 환경의 일반적인 예를 사용합니다. 원하는 환경에 대해 별도의 환경을 만들 수 있습니다.
 
@@ -33,8 +33,8 @@ ht-degree: 2%
 
 별도의 프로덕션 사이트를 구성하는 두 가지 단계가 있습니다.
 
-1. [프로덕션 환경을 위한 새 Edge Delivery Services 사이트를 만듭니다.](#create-edge-site)
-1. [프로덕션 사이트에 대해 AEM의 클라우드 구성을 업데이트합니다.](#update-cloud-configuration)
+1. [프로덕션 환경에 대한 새 Edge Delivery Services 사이트를 만듭니다](#create-edge-site).
+1. [프로덕션 사이트에 대한 AEM의 클라우드 구성 업데이트](#update-cloud-configuration).
 
 ### 프로덕션 환경을 위한 새 Edge Delivery Services 사이트 만들기 {#create-edge-site}
 

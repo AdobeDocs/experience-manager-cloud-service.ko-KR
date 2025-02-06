@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 1%
@@ -67,7 +67,7 @@ AEM Forms 6.5에서 AEM as a Cloud Service 환경으로 원활하게 전환하�
 * Cloud Service 환경에서 마이그레이션 유틸리티는 컨텐츠 전송 도구와 함께 작동합니다. 마이그레이션 유틸리티는 [!DNL AEM Forms]을(를) Cloud Serviceas a Cloud Service 과 호환되도록 만들고, 콘텐츠 전송 도구는 콘텐츠를 [!DNL AEM Forms] 환경에서 [!DNL AEM] 환경으로 마이그레이션합니다. 마이그레이션 유틸리티를 사용하기 전에 [AEM as a Cloud Service으로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)하는 프로세스를 알아보십시오. 이 프로세스에서는 다음 도구를 사용합니다.
    * [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): 컨텐츠 전송 도구를 사용하여 기존 환경에서 Cloud Service 환경으로 컨텐츠를 준비하고 전송할 수 있습니다. 사용자가 AEM Forms에서 클라우드 환경으로 쉽게 업그레이드할 수 있도록 지원합니다.
 * as a Cloud Service [!DNL AEM Forms] 및 로컬 [!DNL AEM Forms] 환경에 대한 관리자 권한이 있는 계정입니다.
-* [소프트웨어 배포 포털에서 모범 사례 분석기, 콘텐츠 전송 도구 및 [!DNL AEM Forms] 마이그레이션 유틸리티를 다운로드하여 설치하십시오.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 모범 사례 분석기, 콘텐츠 전송 도구 및 [!DNL AEM Forms] 마이그레이션 유틸리티를 다운로드하여 설치하십시오.
 
 * [모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) 도구를 실행하고 보고된 문제를 해결합니다. Adobe Experience Manager Forms에서 Adobe Experience Manager Formsas a Cloud Service 로 마이그레이션하는 것과 관련된 가능한 문제에 대해서는 [Formsas a Cloud Service 에 대한 AEM 패턴 감지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report)를 참조하십시오.
 

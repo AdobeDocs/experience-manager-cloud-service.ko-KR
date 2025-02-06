@@ -1,17 +1,17 @@
 ---
-title: AEM 기술 재단
+title: AEM 기술 기초
 description: AEM이 구조화되고 JCR, Sling 및 OSGi와 같은 기본 기술이 포함된 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
 
 ---
 
-# AEM 기술 재단 {#aem-technical-foundations}
+# AEM 기술 기초 {#aem-technical-foundations}
 
 AEM은 입증되고 확장 가능하며 유연한 기술을 기반으로 구축된 강력한 플랫폼입니다. 이 문서는 AEM을 구성하는 다양한 부분에 대한 자세한 개요를 제공하며 전체 스택 AEM 개발자를 위한 기술 부록으로 작성되었습니다. 이 안내서는 시작 안내서가 아닙니다. AEM 개발을 처음 사용하는 경우 첫 번째 단계로 [AEM Sites 개발 시작 - WKND 자습서](develop-wknd-tutorial.md)를 참조하십시오.
 

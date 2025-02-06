@@ -5,10 +5,10 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '13685'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 97%
 
 ## 원칙 1: 인지 가능 {#principle-perceivable}
 
-[원칙 1: 인지 가능 - 정보 및 사용자 인터페이스 구성 요소는 사용자가 인지할 수 있는 방식으로 사용자에게 표시될 수 있어야 합니다.](https://www.w3.org/TR/WCAG/#perceivable)
+[원칙 1: 인지 가능 - 정보 및 사용자 인터페이스 구성 요소는 사용자가 인지할 수 있는 방식으로 사용자에게 표시될 수 있어야 합니다](https://www.w3.org/TR/WCAG/#perceivable).
 
 ### 텍스트 대체 요소 (1.1) {#text-alternatives}
 
-[지침 1.1 텍스트 대체 요소: 대형 인쇄물, 점자, 음성, 기호 또는 더 간결한 언어와 같이, 사람들이 필요로 하는 다른 형식으로 변경시킬 수 있도록 텍스트가 아닌 콘텐츠에 대해 텍스트 대체 요소를 제공하십시오.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[지침 1.1 텍스트 대체 요소: 대형 인쇄물, 점자, 음성, 기호 또는 더 간결한 언어와 같이, 사람들이 필요로 하는 다른 형식으로 변경시킬 수 있도록 텍스트가 아닌 콘텐츠에 대해 텍스트 대체 요소를 제공하십시오](https://www.w3.org/TR/WCAG/#text-alternatives).
 
 ### 텍스트가 아닌 콘텐츠 (1.1.1) {#non-text-content}
 
@@ -117,9 +117,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 추가 정보 - 텍스트가 아닌 콘텐츠 (1.1.1) {#more-information-non-text-content}
 
-* [성공 기준 이해 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-* [성공 기준을 충족하는 방법 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [CAPTCHA에 대한 W3C 설명 및 대체 요소](https://www.w3.org/TR/turingtest/)
+* [성공 기준 이해 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
+* [성공 기준을 충족하는 방법 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content).
+* CAPTCHA에 대한 [W3C 설명 및 대체 요소](https://www.w3.org/TR/turingtest/).
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -127,7 +127,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ### 시간 기반 미디어 (1.2) {#time-based-media}
 
-[지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소를 제공합니다.](https://www.w3.org/TR/WCAG/#time-based-media)
+[지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소 제공](https://www.w3.org/TR/WCAG/#time-based-media).
 
 여기서는 *시간 기반*&#x200B;의 웹 콘텐츠를 다룹니다.사용자가 재생할 수 있고(예: 비디오, 오디오 및 애니메이션 콘텐츠) 사전 녹화된 스트림이나 라이브 스트림일 수 있는 콘텐츠가 여기에 포함됩니다.
 
@@ -173,8 +173,8 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 #### 추가 정보 - 오디오 전용 및 비디오 전용 (사전 녹화) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
-* [성공 기준 이해 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
-* [성공 기준을 충족하는 방법 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
+* [성공 기준 이해 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html).
+* [성공 기준을 충족하는 방법 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded).
 
 ### 캡션 (사전 기록됨) (1.2.2) {#captions-prerecorded}
 
@@ -195,19 +195,19 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 캡션을 볼지 여부를 사용자가 선택할 수 있도록, 가능할 때마다 닫힘 캡션 기능을 사용하십시오.
 
-닫힘 캡션의 경우, 비디오 파일과 함께 동기화된 캡션 파일을 적절한 형식(예: [SMIL](https://www.w3.org/AudioVideo/))으로 만들어 제공해야 합니다. 이 안내서에서는 이러한 방법에 대해 자세히 설명하지 않지만, [추가 정보 - 캡션(사전 기록됨)(1.2.2)](#more-information-captions-prerecorded)의 몇 가지 튜토리얼 링크를 통해 알아볼 수 있습니다. 사용자에게 비디오에 캡션을 사용할 수 있다는 것을 알리기 위해 메모를 제공하거나 비디오 플레이어에서 캡션 기능을 활성화해야 합니다.
+닫힘 캡션의 경우, 비디오 파일과 함께 동기화된 캡션 파일을 적절한 형식(예: [SMIL](https://www.w3.org/AudioVideo/))으로 만들어 제공해야 합니다(이렇게 하는 방법에 대한 자세한 설명은 이 안내서의 범위를 벗어나지만, [추가 정보 - 캡션(사전 기록된)(1.2.2)](#more-information-captions-prerecorded)에 일부 튜토리얼 링크가 있음). 사용자에게 비디오에 캡션을 사용할 수 있다는 것을 알리기 위해 메모를 제공하거나 비디오 플레이어에서 캡션 기능을 활성화해야 합니다.
 
 열림 캡션을 사용해야 하는 경우 텍스트를 비디오 트랙에 임베드하십시오. 비디오에 제목을 오버레이할 수 있도록 해 주는 비디오 편집 애플리케이션을 사용하면 됩니다.
 
 #### 추가 정보 - 캡션 (사전 기록됨) (1.2.2) {#more-information-captions-prerecorded}
 
-* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
-* [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
+* [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
 
 c
-* [W3C: 동기화된 멀티미디어](https://www.w3.org/AudioVideo/)
-* [캡션, 텍스트 스크립트 및 오디오 설명 - WebAIM 사용](https://webaim.org/techniques/captions/)
--->
+* [W3C: 동기화된 멀티미디어](https://www.w3.org/AudioVideo/).
+* [캡션, 트랜스크립트 및 오디오 설명 - WebAIM별](https://webaim.org/techniques/captions/).
+—>
 
 ### 오디오 설명 또는 미디어 대체 요소 (사전 기록됨) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -235,8 +235,8 @@ c
 
 #### 추가 정보 - 오디오 설명 또는 미디어 대체 요소 (사전 기록됨) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [성공 기준 이해 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
-* [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+* [성공 기준 이해 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html).
+* [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded).
 
 <!--
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
@@ -288,7 +288,7 @@ c
 
 ### 적응성 (1.3) {#adaptable}
 
-[지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 표시할 수 있는 콘텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG/#adaptable)
+[지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 표시할 수 있는 콘텐츠(예: 간단한 레이아웃)를 만듭니다](https://www.w3.org/TR/WCAG/#adaptable).
 
 이 지침에는 다음과 같은 사람을 지원하는 데 필요한 요구 사항이 포함됩니다.
 
@@ -304,7 +304,7 @@ c
 
 #### 목적 - 정보 및 관계 (1.3.1) {#purpose-info-and-relationships}
 
-장애를 가진 사람이 사용하는 많은 보조 기술은 콘텐츠를 효과적으로 표시하거나 *이해*&#x200B;하기 위해 구조적 정보에 의존합니다. 이러한 구조적 정보는 페이지 머리글, 표 행 및 열 머리글과 목록 유형의 형식을 취할 수 있습니다. 예를 들어 스크린 리더를 사용하는 사용자는 머리글에서 머리글까지 페이지를 탐색할 수 있습니다. 하지만 페이지 콘텐츠가 기본 HTML이 아니라 시각적 스타일링을 통해서만 구조를 갖는 것으로 나타나면 보조 기술에 사용할 수 있는 구조적 정보가 없어서 더 쉬운 탐색을 지원하는 것으로 기능이 제한됩니다.
+장애를 가진 사람이 사용하는 많은 보조 기술은 콘텐츠를 효과적으로 표시하거나 *이해*&#x200B;하기 위해 구조적 정보에 의존합니다. 이러한 구조적 정보는 페이지 머리글, 테이블 행 및 열 머리글과 목록 유형의 형식을 취할 수 있습니다. 예를 들어 스크린 리더를 사용하는 사용자는 머리글에서 머리글까지 페이지를 탐색할 수 있습니다. 하지만 페이지 콘텐츠가 기본 HTML이 아니라 시각적 스타일링을 통해서만 구조를 갖는 것으로 나타나면 보조 기술에 사용할 수 있는 구조적 정보가 없어서 더 쉬운 탐색을 지원하는 것으로 기능이 제한됩니다.
 
 이 성공 기준은 그와 같은 구조적 정보가 HTML을 통해 프로그래밍 방식으로 제공됨으로써 브라우저와 보조 기술이 정보에 액세스하여 이용할 수 있도록 하기 위한 것입니다.
 
@@ -324,23 +324,23 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
   전체 화면 모드에서는 개별 **글머리 기호 목록** 및 **번호 목록** 아이콘이 표시됩니다. 전체 화면 모드가 아닌 경우, 단일 **목록** 아이콘 뒤에 두 가지 옵션을 사용할 수 있습니다.
 
-* **표**: 데이터 표는 HTML 표 요소를 사용하여 식별해야 합니다.
+* **테이블**: 데이터 테이블은 HTML 테이블 요소를 사용하여 식별해야 합니다.
    * 하나의 `<table>` 요소
-   * 표의 각 행에 대한 `<tr>` 요소
+   * 테이블의 각 행에 대한 `<tr>` 요소
    * 각 행 및 열 머리글에 대한 `<th>` 요소
    * 모든 데이터 셀에 대한 `<td>` 요소
 
-  또한 액세스 가능한 표에서는 다음 요소와 속성을 사용합니다.
+  또한 액세스 가능한 테이블에서는 다음 요소와 속성을 사용합니다.
 
-   * `<caption>` 요소를 사용하여 표에 보이는 캡션을 제공할 수 있습니다. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 콘텐츠에 소개를 제공하는 데 유용한 방법입니다.
-   * `<summary>` 요소는 시력이 정상인 사용자가 볼 수 있는 내용에 대한 개요를 제공함으로써, 안 보이는 사용자가 표 내에 제시된 정보를 더 쉽게 이해할 수 있도록 도와줍니다. 이 워크플로는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용하며, 이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됩니다.
-   * `<th>` 요소의 `scope` 속성은 셀이 특정 행 또는 특정 열에 대한 헤더를 표현하는지 여부를 나타내기 위해 사용됩니다. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
+   * `<caption>` 요소를 사용하여 테이블에 보이는 캡션을 제공할 수 있습니다. 캡션은 기본적으로 테이블의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 테이블과 프로그래밍 방식으로 연결되어 있으므로 콘텐츠에 소개를 제공하는 데 유용한 방법입니다.
+   * `<summary>` 요소는 시력이 정상인 사용자가 볼 수 있는 내용에 대한 개요를 제공함으로써, 안 보이는 사용자가 테이블 내에 제시된 정보를 더 쉽게 이해할 수 있도록 도와줍니다. 이 워크플로는 복잡하거나 색다른 테이블 레이아웃을 사용할 때 유용하며, 이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됩니다.
+   * `<th>` 요소의 `scope` 속성은 셀이 특정 행 또는 특정 열에 대한 헤더를 표현하는지 여부를 나타내기 위해 사용됩니다. 유사한 접근 방법은 복잡한 테이블에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
 
   >[!NOTE]
   >
-  >시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >시스템 관리자가 **테이블 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-  **표 속성** 탭을 선택할 수 있는 **표** 대화 상자를 열려면:
+  **테이블 속성** 탭을 선택할 수 있는 **테이블** 대화 상자를 열려면:
 
    * 적합한 **캡션**&#x200B;을 정의합니다.
    * 가장 좋은 방법은 **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격**&#x200B;에 대한 기본 값을 제거하는 것입니다. 이 속성은 글로벌 스타일 시트에서 설정할 수 있습니다.
@@ -360,13 +360,13 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
      >
      >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
-* **복잡한 데이터 표**: 때에 따라 두 개 이상의 헤더 수준이 있는 복잡한 표가 있을 때 기본 표 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 표의 경우, **header** 및 **id** 속성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다.
+* **복잡한 데이터 테이블**: 때에 따라 두 개 이상의 헤더 수준이 있는 복잡한 테이블이 있을 때 기본 테이블 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 테이블의 경우, **header** 및 **id** 속성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다.
 
   >[!NOTE]
   >
   >기본적으로 제공되는 설치에서는 id 속성을 사용할 수 없습니다. RTE에서 HTML 규칙과 직렬 변환기를 구성하여 사용하도록 만들 수 있습니다.
 
-  예를 들어 아래 표에서 headers와 id는 보조 기술 사용자를 위해 프로그램 방식으로 연계되도록 일치됩니다.
+  예를 들어 아래 테이블에서 headers와 id는 보조 기술 사용자를 위해 프로그램 방식으로 연계되도록 일치됩니다.
 
   ```xml
     <table>
@@ -454,12 +454,12 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 감각 특성 (1.3.3) {#more-information-sensory-characteristics}
 
-* [성공 기준 이해 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
-* [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
+* [성공 기준 이해 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html).
+* [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics).
 
 ### 구별 가능성 (1.4) {#distinguishable}
 
-[지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 콘텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG/#distinguishable)
+[지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 콘텐츠를 더 쉽게 보고 들을 수 있도록 하십시오](https://www.w3.org/TR/WCAG/#distinguishable).
 
 ### 색상 사용 (1.4.1)  {#use-of-color}
 
@@ -491,8 +491,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 색상 사용 (1.4.1) {#more-information-use-of-color}
 
-* [성공 기준 이해 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-* [성공 기준을 충족하는 방법 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+* [성공 기준 이해 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html).
+* [성공 기준을 충족하는 방법 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color).
 
 ### 오디오 제어 (1.4.2)  {#audio-control}
 
@@ -516,8 +516,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 오디오 제어 (1.4.2) {#more-information-audio-control}
 
-* [성공 기준 이해 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
-* [성공 기준을 충족하는 방법 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+* [성공 기준 이해 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html).
+* [성공 기준을 충족하는 방법 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
 ### 대비 (최소) (1.4.3) {#contrast-minimum}
 
@@ -573,8 +573,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 대비 (최소) (1.4.3) {#more-information-contrast-minimum}
 
-* [성공 기준 이해 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [성공 기준을 충족하는 방법 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [성공 기준 이해 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+* [성공 기준을 충족하는 방법 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).
 
 ### 텍스트 크기 조정(1.4.4)  {#resize-text}
 
@@ -592,8 +592,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 텍스트 크기 조정(1.4.4) {#more-information-resize-text}
 
-* [성공 기준 이해 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-* [성공 기준을 충족하는 방법 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
+* [성공 기준 이해 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html).
+* [성공 기준을 충족하는 방법 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
 
 ### 텍스트 이미지 (1.4.5) {#images-of-text}
 
@@ -617,16 +617,16 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 텍스트 이미지 (1.4.5) {#more-information-images-of-text}
 
-* [성공 기준 이해 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
-* [성공 기준을 충족하는 방법 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
+* [성공 기준 이해 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html).
+* [성공 기준을 충족하는 방법 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text).
 
 ## 원칙 2: 작동 가능 {#principle-operable}
 
-[원칙 2: 작동 가능 - 사용자 인터페이스 구성 요소와 탐색 기능은 작동 가능해야 합니다.](https://www.w3.org/TR/WCAG/#operable)
+[원칙 2: 작동 가능 - 사용자 인터페이스 구성 요소와 탐색 기능은 작동 가능해야 합니다](https://www.w3.org/TR/WCAG/#operable).
 
 ### 키보드 액세스 가능 (2.1) {#keyboard-accessible}
 
-[지침 2.1 키보드 액세스 가능: 키보드에서 모든 기능을 사용할 수 있도록 합니다.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[지침 2.1 키보드 액세스 가능: 키보드에서 모든 기능을 사용할 수 있도록 설정](https://www.w3.org/TR/WCAG/#keyboard-accessible).
 
 이는 사용자가 키보드를 사용하여 모든 기능에 액세스할 수 있도록 하는 것입니다.
 
@@ -646,8 +646,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 키보드(2.1.1) {#more-information-keyboard}
 
-* [성공 기준 이해 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [성공 기준을 충족하는 방법 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+* [성공 기준 이해 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html).
+* [성공 기준을 충족하는 방법 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
 
 ### 키보드 트랩 없음(2.1.2)  {#no-keyboard-trap}
 
@@ -667,12 +667,12 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 키보드 트랩 없음(2.1.2) {#more-information-no-keyboard-trap}
 
-* [성공 기준 이해 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [성공 기준을 충족하는 방법 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+* [성공 기준 이해 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html).
+* [성공 기준을 충족하는 방법 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
 
 ### 충분한 시간(2.2) {#enough-time}
 
-[지침 2.2 충분한 시간: 사용자에게 콘텐츠를 읽고 사용할 충분한 시간을 제공합니다.](https://www.w3.org/TR/WCAG/#enough-time)
+[지침 2.2 충분한 시간: 사용자에게 콘텐츠를 읽고 사용할 충분한 시간을 제공](https://www.w3.org/TR/WCAG/#enough-time).
 
 이는 사용자가 읽고 행동할 시간이 충분하도록 보장하는 것입니다.
 
@@ -692,8 +692,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 시간 조정 가능 (2.2.1) {#more-information-timing-adjustable}
 
-* [성공 기준 이해 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
-* [성공 기준을 충족하는 방법 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+* [성공 기준 이해 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html).
+* [성공 기준을 충족하는 방법 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
 
 ### 일시 중단, 중지, 숨기기 (2.2.2)  {#pause-stop-hide}
 
@@ -727,11 +727,11 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 #### 추가 정보 - 일시 중단, 중지, 숨기기 (2.2.2) {#more-information-pause-stop-hide}
 
 * [성공 기준 이해 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [충족하는 방법 - 성공 기준 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [성공 기준을 충족하는 방법 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide).
 
 ### 발작 및 물리적 반응(2.3) {#seizures-and-physcial-reactions}
 
-[지침 2.3 발작: 발작 또는 물리적 반응을 초래하는 것으로 알려진 방법으로 콘텐츠를 디자인하지 않기](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[지침 2.3 발작: 발작 또는 물리적 반응을 초래하는 것으로 알려진 방법으로 콘텐츠를 디자인하지 마십시오](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions).
 
 ### 세 번 발광 또는 임계값 미만 (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -756,12 +756,12 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 세 번 발광 또는 임계값 미만 (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [성공 기준 이해 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
-* [충족하는 방법 - 성공 기준 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+* [성공 기준 이해 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html).
+* [성공 기준을 충족하는 방법 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold).
 
 ### 탐색 가능 (2.4) {#navigable}
 
-[지침 2.4 탐색 가능: 사용자가 콘텐츠를 탐색하고 찾고 위치를 확인할 수 있는 방법을 제공합니다.](https://www.w3.org/TR/WCAG/#navigable)
+[지침 2.4 탐색 가능: 사용자가 콘텐츠를 탐색하고 찾고 위치를 확인할 수 있는 방법을 제공합니다](https://www.w3.org/TR/WCAG/#navigable).
 
 이는 사용자가 콘텐츠를 쉽고 간단하게 탐색하도록 하기 위함입니다.
 
@@ -781,8 +781,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 블록 우회 (2.4.1) {#more-information-bypass-blocks}
 
-* [성공 기준 이해 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
-* [성공 기준을 충족하는 방법 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
+* [성공 기준 이해 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html).
+* [성공 기준을 충족하는 방법 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
 ### 제목이 있는 페이지 (2.4.2)  {#page-titled}
 
@@ -802,8 +802,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 제목이 있는 페이지 (2.4.2) {#more-information-page-titled}
 
-* [성공 기준 이해 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [충족하는 방법 - 성공 기준 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [성공 기준 이해 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html).
+* [성공 기준을 충족하는 방법 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled).
 
 ### 포커스 순서 (2.4.3)  {#focus-order}
 
@@ -821,8 +821,8 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 추가 정보 - 포커스 순서 (2.4.3) {#more-information-focus-order}
 
-* [성공 기준 이해 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
-* [성공 기준을 충족하는 방법 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
+* [성공 기준 이해 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html).
+* [성공 기준을 충족하는 방법 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
 
 ### 링크 목적 (컨텍스트 내) (2.4.4)  {#link-purpose-in-context}
 
@@ -874,7 +874,7 @@ John Smith's publications
 
 * 링크 텍스트가 밀접히 관련된 링크의 일부이고 이 링크를 둘러싼 목록 항목에서 컨텍스트를 충분히 제공하는 경우
 * 링크의 목적을 *이전*(이후가 아닌) 단락 텍스트에서 명확히 식별할 수 있는 경우
-* 링크가 데이터 표 내에 들어 있어서 연결된 머리글에서 해당 목적을 명확히 식별할 수 있는 경우
+* 링크가 데이터 테이블 내에 들어 있어서 연결된 머리글에서 해당 목적을 명확히 식별할 수 있는 경우
 * 링크 목록이 일련의 머리글 내에 있고 머리글 자체에서 적절한 컨텍스트를 제공하는 경우
 * 링크 목록이 중첩된 링크 내에 있고 중첩된 목록의 위에 있는 상위 목록 항목이 적절한 컨텍스트를 제공하는 경우
 
@@ -884,8 +884,8 @@ John Smith's publications
 
 #### 추가 정보 - 링크 목적 (컨텍스트 내) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [성공 기준 이해 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
-* [충족하는 방법 - 성공 기준 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
+* [성공 기준 이해 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
+* [성공 기준을 충족하는 방법 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 <!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
@@ -909,8 +909,8 @@ John Smith's publications
 
 #### 추가 정보 - 다양한 방법 (2.4.5) {#more-information-multiple-ways}
 
-* [성공 기준 이해 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [성공 기준을 충족하는 방법 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [성공 기준 이해 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html).
+* [성공 기준을 충족하는 방법 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
 
 ### 제목 및 레이블 (2.4.6)  {#headings-and-labels}
 
@@ -928,8 +928,8 @@ John Smith's publications
 
 #### 추가 정보 - 제목 및 레이블 (2.4.6) {#more-information-headings-and-labels}
 
-* [성공 기준 이해 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
-* [성공 기준을 충족하는 방법 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+* [성공 기준 이해 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html).
+* [성공 기준을 충족하는 방법 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
 ### 포커스 표시 (2.4.7)  {#focus-visible}
 
@@ -956,11 +956,11 @@ John Smith's publications
 
 ## 원칙 3: 이해 가능 {#principle-understandable}
 
-[원칙 3: 이해 가능 - 사용자 인터페이스의 정보 및 작업은 이해가 가능해야 합니다.](https://www.w3.org/TR/WCAG/#understandable)
+[원칙 3: 이해 가능 - 정보 및 사용자 인터페이스 작업을 이해 가능해야 합니다](https://www.w3.org/TR/WCAG/#understandable).
 
 ### 텍스트 콘텐츠를 읽기 가능하고 이해 가능하도록 만들기 (3.1) {#make-text-content-readable-and-understandable}
 
-[지침 3.1 읽기 가능: 텍스트 콘텐츠를 읽기 가능하고 이해 가능하도록 만들기](https://www.w3.org/TR/WCAG/#readable)
+[지침 3.1 읽기 가능: 텍스트 콘텐츠를 읽기 가능하고 이해 가능하도록 만들기](https://www.w3.org/TR/WCAG/#readable).
 
 ### 페이지 언어 (3.1.1) {#language-of-page}
 
@@ -1043,7 +1043,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 
 ### 예측 가능 (3.2) {#predictable}
 
-[지침 3.2 예측 가능: 웹 페이지를 예측 가능한 방식으로 표시 및 운영할 수 있습니다.](https://www.w3.org/TR/WCAG/#predictable)
+[지침 3.2 예측 가능: 웹 페이지를 예측 가능한 방식으로 표시 및 운영할 수 있도록 설정](https://www.w3.org/TR/WCAG/#predictable).
 
 이는 웹 페이지가 표시되고 운영되는 방식을 일관되게 유지하는 것을 의미합니다.
 
@@ -1141,7 +1141,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 
 ### 입력 지원 (3.3) {#input-assistance}
 
-[지침 3.3 입력 지원: 사용자가 실수를 하지 않고 실수를 수정하도록 돕기](https://www.w3.org/TR/WCAG/#input-assistance)
+[지침 3.3 입력 지원: 사용자가 실수를 하지 않고 실수를 수정하도록 지원](https://www.w3.org/TR/WCAG/#input-assistance).
 
 ### 오류 식별 (3.3.1)  {#error-identification}
 
@@ -1275,11 +1275,11 @@ WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 
 
 ## 원칙 4: 강력함 {#principle-robust}
 
-[원칙 4: 강력함 - 콘텐츠는 보조 기술을 비롯한 다양한 사용자 에이전트가 해석할 수 있을 만큼 강력해야 합니다.](https://www.w3.org/TR/WCAG/#robust)
+[원칙 4: 강력함 - 보조 기술을 비롯한 다양한 사용자 에이전트가 해석할 수 있을 만큼 컨텐츠가 강력해야 함](https://www.w3.org/TR/WCAG/#robust).
 
 ### 호환 가능 (4.1) {#compatible}
 
-[지침 4.1 호환 가능: 보조 기술 등 현재 및 향후 사용자 에이전트와의 호환성을 극대화합니다.](https://www.w3.org/TR/WCAG/#compatible)
+[지침 4.1 호환 가능: 보조 기술을 포함하여 현재 및 향후 사용자 에이전트와의 호환성을 극대화합니다](https://www.w3.org/TR/WCAG/#compatible).
 
 보조 기술 등 현재 및 향후 사용자 에이전트와의 호환성을 극대화합니다.
 

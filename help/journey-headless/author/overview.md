@@ -5,10 +5,10 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 
 ## 다음 단계 {#what-is-next}
 
-이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 단계로 넘어가 다음 문서인 [AEM Headless as a Cloud Service 작성 - 소개](introduction.md)를 읽어보시기 바랍니다.
+이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 [AEM as a Cloud Service Headless용 작성 - 소개](introduction.md) 문서를 읽어보시기 바랍니다.
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

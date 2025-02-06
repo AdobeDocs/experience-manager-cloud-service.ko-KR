@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Adobe Experience Manager(AEM)의 기본 비헤이비어는 게시된 콘텐츠�
 
 이는 **일별 CQ WCM 롤아웃 관리자**&#x200B;의 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 사용하여 수행됩니다. 롤아웃 관리자가 블루프린트에 존재하는 이름으로 Live Copy에 생성된 페이지의 충돌을 처리해야 하는 경우 **수동으로 생성된 페이지와의 충돌 해결**(`rolloutmgr.conflicthandling.enabled`) 값을 true로 설정합니다.
 
-AEM에는 [충돌 관리가 비활성화되었을 때 실행되는 사전 정의된 비헤이비어](#behavior-when-conflict-handling-deactivated)가 있습니다.
+충돌 관리가 비활성화되었을 때 AEM에 [사전 정의된 동작이 있습니다](#behavior-when-conflict-handling-deactivated).
 
 ## 충돌 핸들러 {#conflict-handlers}
 
@@ -118,7 +118,7 @@ AEM은 다음을 제공합니다.
 
 ### 충돌 처리가 비활성화되었을 때 실행되는 비헤이비어 {#behavior-when-conflict-handling-deactivated}
 
-수동으로 [충돌 처리를 비활성화](#rollout-manager-and-conflict-handling)하면 AEM은 충돌이 발생한 페이지에 어떤 조치도 취하지 않습니다. 충돌이 발생하지 않은 페이지는 정상적으로 롤아웃됩니다.
+수동으로 [충돌 처리를 비활성화](#rollout-manager-and-conflict-handling)하는 경우 AEM은 충돌이 발생한 페이지에 어떤 조치도 취하지 않습니다. 충돌이 발생하지 않은 페이지는 정상적으로 롤아웃됩니다.
 
 >[!CAUTION]
 >

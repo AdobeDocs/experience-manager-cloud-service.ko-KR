@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식에 따라 다양한 �
 
 **Cloud Manager에서의 Edge Delivery 할 일 목록**&#x200B;은 온보딩 작업 체크리스트로, Edge Delivery 사이트를 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩하고 관리할 수 있도록 안내합니다.
 
-![Cloud Manager의 Edge Delivery 사이트에서 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager의 Edge Delivery 사이트 할 일 목록.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |

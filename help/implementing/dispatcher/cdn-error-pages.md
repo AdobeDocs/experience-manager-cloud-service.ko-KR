@@ -4,7 +4,7 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # CDN 오류 페이지 구성 {#cdn-error-pages}
 
-[Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)이(가) AEM 원본에 도달할 수 없는 경우에는 기본적으로 CDN에 서버에 도달할 수 없음을 나타내는 브랜드가 없는 일반 오류 페이지가 표시됩니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 Cloud Manager [구성 파이프라인을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의할 수 있습니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+[Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)이(가) AEM 원본에 도달할 수 없는 경우에는 기본적으로 CDN에 서버에 도달할 수 없음을 나타내는 브랜드가 없는 일반 오류 페이지가 표시됩니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md#managing-in-cloud-manager)을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의할 수 있습니다.
 
 ## 설정 {#setup}
 

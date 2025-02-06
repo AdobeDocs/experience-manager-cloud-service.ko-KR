@@ -4,7 +4,7 @@ description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 �
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자가 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
+구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자가 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 컴포넌트의 정의는 다음과 같이 나눌 수 있습니다.
 
-* AEM 구성 요소는 [Sling.](https://sling.apache.org/documentation.html)을 기반으로 합니다.
+* AEM 구성 요소는 [Sling](https://sling.apache.org/documentation.html)을(를) 기반으로 합니다.
 * AEM 구성 요소는 `/libs/core/wcm/components`에 있습니다.
 * 프로젝트/사이트별 구성 요소는 `/apps/<myApp>/components` 아래에 있습니다.
 * AEM 표준 구성 요소는 `cq:Component`(으)로 정의되어 있으며 다음과 같은 주요 요소를 가지고 있습니다.
@@ -105,29 +105,29 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 * **루트 노드**:
    * `<mycomponent> (cq:Component)` - 구성 요소의 계층 노드.
 * **중요 속성**:
-   * `jcr:title` - 구성 요소 제목. 예를 들어 구성 요소가 [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) 및 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)에 나열될 때 레이블로 사용됩니다.
+   * `jcr:title` - 구성 요소 제목입니다. 예를 들어 구성 요소가 [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) 및 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)에 나열되면 레이블로 사용됩니다.
    * `jcr:description` - 구성 요소에 대한 설명. 구성 요소 브라우저 및 구성 요소 콘솔에서 마우스 오버 힌트로 사용됩니다.
-   * 자세한 내용은 [구성 요소 아이콘](#component-icon) 섹션을 참조하십시오
+   * 자세한 내용은 [구성 요소 아이콘](#component-icon) 섹션을 참조하십시오.
 * **중요한 하위 노드**:
    * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소를 구성 요소 브라우저에 표시할 수 있도록 합니다.
       * 구성 요소에 대화 상자가 있으면 cq:editConfig가 없어도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
    * `cq:childEditConfig (cq:EditConfig)` - 자체 `cq:editConfig`을(를) 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다.
    * `cq:dialog (nt:unstructured)` - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성 및/또는 콘텐츠를 편집할 수 있는 인터페이스를 정의합니다.
-   * `cq:design_dialog (nt:unstructured)` - 이 구성 요소의 디자인 편집
+   * `cq:design_dialog (nt:unstructured)` - 이 구성 요소에 대한 디자인 편집 중
 
 #### 구성 요소 아이콘 {#component-icon}
 
 구성 요소의 아이콘 또는 약어는 개발자가 구성 요소를 만들 때 구성 요소의 JCR 속성을 통해 정의됩니다. 이러한 속성은 다음 순서로 평가되며 발견된 첫 번째 유효한 속성이 사용됩니다.
 
-1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://opensource.adobe.com/coral-spectrum/examples/#icon)의 표준 아이콘을 가리키는 문자열 속성
+1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://opensource.adobe.com/coral-spectrum/examples/#icon)의 표준 아이콘을 가리키는 문자열 속성입니다.
    * Coral 아이콘의 HTML 속성 값을 사용합니다.
-1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성
+1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성입니다.
    * 약어는 두 문자로 제한해야 합니다.
    * 빈 문자열을 제공하면 `jcr:title` 속성의 처음 두 문자에서 약어가 만들어집니다.
-      * 예: &quot;Image&quot;의 &quot;Im&quot;
+      * 예를 들어 &quot;Image&quot;의 경우 &quot;Im&quot;입니다.
       * 지역화된 제목은 약어를 작성하는 데 사용됩니다.
    * 구성 요소에 `abbreviation_commentI18n` 속성이 있는 경우에만 약어가 번역되며, 이 속성은 번역 힌트로 사용됩니다.
-1. `cq:icon.png` 또는 `cq:icon.svg` - 구성 요소 브라우저에 표시되는 이 구성 요소의 아이콘
+1. `cq:icon.png` 또는 `cq:icon.svg` - 구성 요소 브라우저에 표시되는 이 구성 요소의 아이콘입니다.
    * 20 x 20 픽셀은 표준 구성 요소의 아이콘 크기입니다.
       * 더 큰 아이콘은 크기가 줄어듭니다(클라이언트측).
    * 권장 색상은 rgb(112, 112, 112) > #707070입니다.
@@ -172,7 +172,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 | `cq:isContainer` | `Boolean` | 이는 구성 요소가 컨테이너 구성 요소이므로 단락 시스템과 같은 다른 구성 요소를 포함할 수 있는지 여부를 나타냅니다. |
 | `cq:dialog` | `nt:unstructured` | 구성 요소에 대한 편집 대화 상자 정의입니다. |
 | `cq:design_dialog` | `nt:unstructured` | 구성 요소에 대한 디자인 대화 상자의 정의입니다. |
-| `cq:editConfig` | `cq:EditConfig` | 구성 요소의 [편집 구성을 정의합니다.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | 구성 요소의 [구성 편집](#edit-behavior)을 정의합니다. |
 | `cq:htmlTag` | `nt:unstructured` | 주변 HTML 태그에 추가된 추가 태그 속성을 반환합니다. 자동으로 생성된 div에 속성을 추가할 수 있습니다. |
 | `cq:noDecoration` | `Boolean` | true인 경우 구성 요소는 자동으로 생성된 div 및 css 클래스로 렌더링되지 않습니다. |
 | `cq:template` | `nt:unstructured` | 이 노드가 검색되면 구성 요소 브라우저에서 구성 요소를 추가할 때 컨텐츠 템플릿으로 사용됩니다. |
@@ -256,7 +256,7 @@ Content not found
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-특히 Granite UI는 대화 상자 또는 일반적으로 [양식으로 말하는 데 적합한 다양한 필드 구성 요소를 제공합니다.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+특히 Granite UI는 대화 상자에 사용하거나 일반적으로 [양식](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)으로 말하는 데 적합한 다양한 필드 구성 요소를 제공합니다.
 
 리소스 유형을 만든 후에는 대화 상자에서 새 노드를 추가하여 필드를 인스턴스화할 수 있습니다. 속성 `sling:resourceType`은(는) 방금 도입한 리소스 유형을 참조합니다.
 
@@ -339,7 +339,7 @@ AEM에는 많은 기존 구성이 있습니다. **CRXDE Lite**&#x200B;에서 쿼
 
 앞의 예에서 `isEmpty`은(는) 구성 요소에 콘텐츠가 없고 작성자에게 보이지 않는 경우에만 true인 변수입니다.
 
-Adobe 반복을 방지하기 위해 구성 요소 구현자는 핵심 구성 요소에서 제공하는 것과 같은 [자리 표시자에 HTL 템플릿을 사용하는 것이 좋습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Adobe 반복을 방지하기 위해 구성 요소 구현자는 [핵심 구성 요소에서 제공하는 것과 같은 자리 표시자에 HTL 템플릿을 사용하는 것이 좋습니다](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 그런 다음 이전 링크에서 템플릿 사용은 다음 HTL 행을 통해 수행됩니다.
 
@@ -350,7 +350,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 핵심 구성 요
 
 앞의 예에서 `model.text`은(는) 콘텐츠에 콘텐츠가 있고 표시되는 경우에만 true인 변수입니다.
 
-이 템플릿의 사용 예는 제목 구성 요소와 같은 핵심 구성 요소 [에서 볼 수 있습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+이 템플릿의 사용 예는 제목 구성 요소 ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)에서와 같이 핵심 구성 요소 [에서 볼 수 있습니다.
 
 ### cq:EditConfig 하위 노드로 구성 {#configuring-with-cq-editconfig-child-nodes}
 

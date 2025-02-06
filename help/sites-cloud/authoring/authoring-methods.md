@@ -5,9 +5,9 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ AEM에서 콘텐츠를 작성하는 다양한 방법, 차이점 및 두 방법 �
 AEM as a Cloud Service은 다양한 유형의 콘텐츠를 편집하고 다양한 작성 사용 사례를 지원할 수 있는 여러 가지 편집기를 제공합니다.
 
 * [페이지 편집기를 사용하여 WYSIWYG 작성](#page-editor) - 페이지 편집기는 수천 개의 웹 사이트에서 시도하고 신뢰할 수 있는 AEM의 콘텐츠를 작성하는 데 사용되는 클래식 편집기입니다.
-* [범용 편집기를 사용하여 WYSIWYG 작성](#universal-editor) - 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며 AEM 프로젝트에서 Edge Delivery Services을 활용하는 데 사용할 수 있습니다.
-* [문서 기반 작성](#document-based) - Edge Delivery 서비스를 사용하는 경우 콘텐츠를 AEM 콘솔 외부에서 Microsoft Word 또는 Google 문서와 같은 일반 문서로 작성하도록 선택할 수 있습니다.
+* [범용 편집기를 사용하여 WYSIWYG 작성](#universal-editor) - 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며 Edge Delivery Services을 활용하는 AEM 프로젝트에 사용할 수 있습니다.
+* [문서 기반 작성](#document-based) - Edge Delivery 서비스를 사용하는 경우 AEM 콘솔 외부에서 Microsoft Word 또는 Google Docs과 같은 일반 문서로 콘텐츠를 작성할 수 있습니다.
 * [AEM 콘텐츠 조각 편집기](#cf-editor) - headless 콘텐츠를 만들기 위해 선택한 편집기입니다.
 
 AEM의 통합적이고 확장 가능한 특성으로 인해 이 메서드는 프로젝트의 요구 사항에 따라 배타적으로 또는 서로 함께 사용할 수 있습니다.
@@ -39,7 +39,7 @@ AEM 페이지 편집기는 WYSIWYG(보이는 것) 인터페이스를 사용하�
 
 AEM 페이지 편집기에 대한 자세한 내용은 [AEM 페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) 문서를 참조하십시오.
 
-## 유니버설 편집기를 사용한 WYSIWYG 작성 {#universal-editor}
+## 범용 편집기를 사용한 WYSIWYG 작성 {#universal-editor}
 
 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며 Edge Delivery Services을 활용하는 AEM 프로젝트의 첫 번째 선택 항목입니다.
 
@@ -51,13 +51,13 @@ AEM 페이지 편집기에 대한 자세한 내용은 [AEM 페이지 편집기](
 
 ## 문서 기반 작성  {#document-based}
 
-Edge Delivery 서비스를 사용하는 경우 콘텐츠를 [AEM **사이트** 콘솔 외부에서 Microsoft Word 또는 Google 문서와 같은 일반 문서로 작성하도록 선택할 수 있습니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+Edge Delivery 서비스를 사용하는 경우 콘텐츠를 [AEM **사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md) 외부에서 Microsoft Word 또는 Google Docs과 같은 일반 문서로 작성하도록 선택할 수 있습니다.
 
 ![문서 기반 콘텐츠 편집](assets/authoring-methods-document.jpg)
 
 문서 기반 작성을 통해 작성자는 이미 알고 있는 도구를 사용할 수 있으며, 콘텐츠를 게시하기 위한 AEM Edge Delivery Services의 속도와 성능을 활용할 수 있습니다. 문서 기반 작성에는 AEM 콘솔을 사용할 필요가 없습니다.
 
-문서 기반 작성에 대한 자세한 내용은 문서 [콘텐츠 작성 및 게시](/help/edge/docs/authoring.md)를 참조하십시오.
+문서 기반 작성에 대한 자세한 내용은 [콘텐츠 작성 및 게시](/help/edge/docs/authoring.md)를 참조하십시오.
 
 ## AEM 콘텐츠 조각 편집기 {#cf-editor}
 

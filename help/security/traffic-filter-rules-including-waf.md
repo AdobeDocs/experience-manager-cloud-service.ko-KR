@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다.](/help/operations/config-pipeline.md) IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 카테고리에 라이선스를 부여할 수도 있습니다.
+이 문서에서 설명하는 대로 트래픽 필터 규칙은 Cloud Manager의 [config 파이프라인](/help/operations/config-pipeline.md)을 사용하여 Adobe 관리 CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
@@ -105,11 +105,11 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 1. WAF 규칙에 라이선스가 부여된 경우, 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
 
-   1. 새 프로그램에서 WAF를 구성하려면 [프로덕션 프로그램 추가 시 **보안 탭**&#x200B;의 **WAF-DDOS 보호** 확인란을 선택하십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. 새 프로그램에서 WAF을 구성하려면 [프로덕션 프로그램을 추가](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)할 때 **보안** 탭에서 **WAF-DDOS 보호** 확인란을 선택하십시오.
 
    1. 기존 프로그램에서 WAF를 구성하려면 **보안** 탭에서 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 언제든지 **WAF-DDOS** 옵션을 선택 취소하거나 선택하십시오.
 
-1. [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 파이프라인은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다.
+1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다. 파이프라인이 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을(를) 참조하십시오.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 

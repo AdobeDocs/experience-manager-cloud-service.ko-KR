@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 75%
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 75%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 [WKND 튜토리얼 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md)는 몇 가지 언어 분기를 포함하며 다음과 같은 구조를 사용합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 75%
 1. 언어 마스터의 콘텐츠를 작성합니다.
 1. 사이트에 대한 각 언어 사본의 언어 루트를 만듭니다. 예를 들어 WKND 샘플 사이트의 프랑스어 언어 사본은 `/content/wknd/language-masters/fr`입니다.
 
-번역을 위한 콘텐츠를 준비한 다음에는 언어 사본 및 관련 번역 프로젝트에서 누락된 페이지를 자동으로 만들 수 있습니다. ([번역 프로젝트 만들기](managing-projects.md)를 참조하십시오.) AEM 콘텐츠 번역 프로세스의 개요를 확인하려면 [다국어 웹 사이트를 위한 콘텐츠 번역](overview.md)을 살펴보십시오.
+번역을 위한 콘텐츠를 준비한 다음에는 언어 사본 및 관련 번역 프로젝트에서 누락된 페이지를 자동으로 만들 수 있습니다. ([번역 프로젝트 만들기](managing-projects.md)를 참조하십시오.) AEM의 콘텐츠 번역 프로세스에 대한 개요는 [다국어 웹 사이트를 위한 콘텐츠 번역](overview.md)을 참조하십시오.
 
 ## 언어 루트 만들기 {#creating-a-language-root}
 

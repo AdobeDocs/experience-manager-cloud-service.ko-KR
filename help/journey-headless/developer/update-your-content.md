@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
 
-이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서 REST API를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 알아보세요.
 
 ## 지금까지의 스토리 {#story-so-far}
 

@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 1%
 
 ---
-
 
 # OSGi의 Forms 중심 워크플로우 {#forms-centric-workflow-on-osgi}
 
@@ -78,7 +78,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 1. 이메일 알림을 활성화합니다. OSGi에서 Forms 중심 워크플로우를 구성하여 사용자 또는 피할당자에게 이메일 알림을 전송할 수 있습니다. 이메일 알림을 활성화하려면 다음 구성을 수행하십시오.
 
    1. `https://[server]:[port]/system/console/configMgr`의 AEM 구성 관리자로 이동합니다.
-   1. **[!UICONTROL 일 CQ 메일 서비스]** 구성을 엽니다. **[!UICONTROL SMTP 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트,]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드의 값을 지정하십시오. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. **[!UICONTROL 일 CQ 메일 서비스]** 구성을 엽니다. **[!UICONTROL SMTP 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드의 값을 지정하십시오. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
    1. **[!UICONTROL 일 CQ 링크 외부화]** 구성을 엽니다. **[!UICONTROL 도메인]** 필드에 로컬, 작성자 및 게시 인스턴스의 실제 호스트 이름/IP 주소 및 포트 번호를 지정하십시오. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 1. 워크플로우 단계를 만듭니다. 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시되며 워크플로우의 진행 상황을 보고합니다.
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### 워크플로 인스턴스 제거 {#purge-workflow-instances}

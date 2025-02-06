@@ -4,10 +4,10 @@ description: 적절한 사람을 선택하고 프로젝트에 적합한 역할�
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 이제 Adobe Experience Manager 배포 구축에 도움이 되는 적합한 인력을 배치하는 데 집중하겠습니다. Adobe는 각 핵심 제품(Experience Manager Sites 및 Experience Manager Assets)에 대해 사용자가 수행해야 할 역할 목록과 함께 다양한 역할을 효율적으로 수행할 수 있는 기술, 전문 지식 수준 및 속성을 제공했습니다.
 
-이번 주 귀하의 과제는 구현 팀과 함께 두 목록을 검토하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하는 것입니다.
+이번 주 귀하의 과제는 구현 팀과 함께 두 목록을 검토하고 각 역할에 대해 관련 자격 요건을 갖춘 인력이 있는지 확인하는 것입니다.
 
 ## **AEM Experience Manager Sites에 대한 주요 역할**
 
@@ -75,7 +75,7 @@ Adobe Experience Manager Assets 구현을 정상적으로 실행하기 위해 �
 
 <br>
 
-![가상 역할과 AEM Assets 팀에 대한 참여 수준을 보여 주는 수평 막대 차트.](/help/overview/assets/team_involvement2.png)
+![AEM Assets 팀에 대한 가상 역할과 참여 수준을 보여 주는 가로 막대형 차트](/help/overview/assets/team_involvement2.png).
 
 >[!TIP]
 >

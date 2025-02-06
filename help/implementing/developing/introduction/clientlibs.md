@@ -4,7 +4,7 @@ description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장�
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # AEM as a Cloud Service에서 클라이언트측 라이브러리 사용 {#using-client-side-libraries}
 
-디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트 측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트 측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스와 함께 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
+디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트 측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트 측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)와 함께 사용하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
 
 AEM에서 clientlib을 사용할 때의 장점은 다음과 같습니다.
 
@@ -27,7 +27,7 @@ Clientlib은 AEM에서 CSS 및 JavaScript을 제공하는 기본 제공 솔루�
 
 >[!TIP]
 >
->AEM 프로젝트용 CSS 및 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스를 숙지해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>AEM 프로젝트용 CSS 및 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)를 숙지해야 합니다.
 
 ## 클라이언트측 라이브러리란 무엇입니까? {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 
 ## AEM as a Cloud Service용 프론트엔드 개발 {#fed-for-aemaacs}
 
-모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype의 [ui.frontend 모듈에서 유지 관리되어야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Archetype의 유연성을 통해 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
+모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 [ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
 
 그런 다음 Archetype은 리소스를 단일 CSS 및 JS 파일로 컴파일하여 리포지토리의 `cq:clientLibraryFolder`에 자동으로 포함할 수 있습니다.
 
@@ -92,7 +92,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 1. 정적 리소스를 관리해야 하는 경우 클라이언트 라이브러리 폴더 아래에 `resources`(이)라는 하위 폴더를 만듭니다.
    * `resources` 폴더 아래 이외의 위치에 정적 리소스를 저장하는 경우 게시 인스턴스에서 참조할 수 없습니다.
 1. 라이브러리 폴더에 소스 파일을 추가합니다.
-   * 이 작업은 일반적으로 [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 프론트엔드 빌드 프로세스에서 수행됩니다.
+   * 이 작업은 일반적으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 프론트엔드 빌드 프로세스에서 수행됩니다.
    * 원하는 경우 하위 폴더에 소스 파일을 구성할 수 있습니다.
 1. 클라이언트 라이브러리 폴더를 선택하고 **만들기 > 파일 만들기**&#x200B;를 클릭합니다.
 1. 파일 이름 상자에 다음 파일 이름 중 하나를 입력하고 확인을 클릭합니다.
@@ -109,7 +109,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 
 ## 클라이언트측 라이브러리 제공 {#serving-clientlibs}
 
-클라이언트 라이브러리 폴더가 [필요에 따라 구성되면](#creating-clientlib-folders) 프록시를 통해 클라이언트 라이브러리를 요청할 수 있습니다. 예:
+클라이언트 라이브러리 폴더가 [필요에 따라 구성](#creating-clientlib-folders)되면 프록시를 통해 clientlib을 요청할 수 있습니다. 예:
 
 * `/apps/myproject/clientlibs/foo`에 clientlib이 있습니다.
 * `/apps/myprojects/clientlibs/foo/resources/icon.png`에 정적 이미지가 있습니다.
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## 작성자의 클라이언트 라이브러리와 Publish 비교 {#clientlibs-author-publish}
 
-대부분의 clientlib은 AEM 게시 인스턴스에 필요합니다. 즉, 대부분의 clientlib의 목적은 컨텐츠의 최종 사용자 경험을 생성하는 것입니다. 게시 인스턴스의 clientlib에 대해 위에서 설명한 대로 [클라이언트 라이브러리 폴더를 통해 [프론트엔드 빌드 도구](#fed-for-aemaacs)를 사용하고 배포할 수 있습니다.](#creating-clientlib-folders)
+대부분의 clientlib은 AEM 게시 인스턴스에 필요합니다. 즉, 대부분의 clientlib의 목적은 컨텐츠의 최종 사용자 경험을 생성하는 것입니다. 게시 인스턴스에 대한 clientlib의 경우 [프론트엔드 빌드 도구](#fed-for-aemaacs)는 위에서 설명한 대로 [클라이언트 라이브러리 폴더를 통해 사용 및 배포할 수 있습니다](#creating-clientlib-folders).
 
 그러나 작성 환경을 사용자 지정하는 데 클라이언트 라이브러리가 필요한 경우가 있습니다. 예를 들어 대화 상자를 사용자 정의하려면 AEM 작성 인스턴스에 CSS 또는 JS의 작은 비트를 배포해야 할 수 있습니다.
 
@@ -352,4 +352,4 @@ AEM에서 YUI가 기본 축소기로 설정됩니다. GCC로 변경하려면 다
 1. **축소** 옵션을 활성화합니다(아직 활성화되지 않은 경우).
 1. 값 **JS 프로세서 기본 구성**&#x200B;을(를) `min:gcc`(으)로 설정합니다.
    * 옵션을 세미콜론으로 구분하면 전달할 수 있습니다(예: `min:gcc;obfuscate=true`).
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.

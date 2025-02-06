@@ -5,16 +5,16 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # AEM Headless as a Cloud Service 시작하기 {#getting-started}
 
-이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 AEM Headless로 자체 프로젝트 시작하기에 필요한 사항에 대해 알아봅니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서 AEM Headless로 프로젝트를 시작하는 데 필요한 사항에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -65,7 +65,7 @@ AEM 내에서 Headless 프로젝트를 정의하기 전에 몇 가지 기본 AEM
 1. 이 콘텐츠가 준비되면 게시 인스턴스에 복제됩니다.
 1. 그런 다음 API를 호출하여 이 콘텐츠를 검색할 수 있습니다.
 
-AEM Headless는 [다음 섹션에서 설명하는](#aem-headless-basics) Headless 콘텐츠를 관리하는 강력한 도구를 제공하여 이 기술적 토대를 기반으로 만들어집니다.
+AEM Headless는 Headless 콘텐츠를 관리할 수 있는 강력한 도구를 제공하여 이 기술적 토대를 구축합니다. [다음 섹션에서 설명](#aem-headless-basics)됩니다.
 
 ## AEM Headless 기본 사항 {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 �
 * [번역](#translation) - AEM은 로케일별 폴더에서 콘텐츠 사본을 유지 관리하면서 콘텐츠 번역을 관리합니다.
 * 조직 - 폴더를 사용하여 번역 요구 사항을 지원하고 콘텐츠 조각을 논리적으로 관리하는 데 필요한 콘텐츠 계층을 정의합니다.
 
-AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으로 커질 수 있습니다. 단, 폴더 구조의 모든 변경 사항이 콘텐츠 경로를 [사용하는 기존 쿼리에 의도하지 않은 결과를 초래할 수 있음을 인식해야 합니다.](#developer)따라서 사전에 명확하게 설정 및 정의된 계층은 콘텐츠 작성자에게 도움이 될 수 있습니다.
+AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으로 커질 수 있습니다. 그러나 폴더 구조를 변경하면 [콘텐츠 경로에 의존](#developer)하는 기존 쿼리에 의도하지 않은 결과가 발생할 수 있음을 인식하는 것이 중요합니다. 따라서 사전에 명확하게 설정된 잘 정의된 계층 구조를 콘텐츠 작성자에게 유용할 수 있습니다.
 
 특정 유형의 콘텐츠만 허용하도록 폴더를 제한할 수도 있습니다(콘텐츠 조각 모델 기반). 계층의 모든 폴더에 허용되는 모델을 항상 명시적으로 지정하는 것이 좋습니다. 지정된 폴더에 허용된 콘텐츠 지정:
 
@@ -238,10 +238,10 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 * 쿼리는 콘텐츠 조각 검색에 고정 경로(`ByPath`)를 사용해서는 안 됩니다.
    * [콘텐츠 작성자는 콘텐츠 조각 계층을 완전히 제어하고](#content-hierarchy) 해당 쿼리를 중단시키는 변경 내용을 적용할 수 있습니다.
    * 대신 쿼리는 동적 쿼리 매개변수가 있는 콘텐츠 조각 모델 참조를 선택하여 원하는 페이로드를 생성하도록 결과를 필터링해야 합니다.
-* 최상의 쿼리를 수행하려면 항상 AEM에서 지속 쿼리를 사용합니다. 여정 후반부에서 자세히 설명합니다.
+* 최상의 쿼리 성능을 위해 항상 AEM에서 지속 쿼리를 사용합니다. 여정 후반부에서 자세히 설명합니다.
 * GraphQL은 “필요한 것은 정확히 요청하고 제대로 얻습니다.”라는 모토에 따라 선언적입니다. 즉, GraphQL 쿼리를 만드는 도중 관계형 데이터베이스에서 만들 수 있는 `select *`유형 쿼리는 항상 피해야 합니다.
 
-[AEM을 사용하여 일반적으로 Headless를 구현하는 경우 ](#level-1) 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
+AEM을 사용하는 [일반적인 Headless 구현](#level-1)의 경우 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
 
 ### 성능 요구 사항 {#performance-requirements}
 

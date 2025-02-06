@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -348,7 +348,7 @@ Live Copy 콘텐츠를 변경하기 위해 다음과 같은 작업을 수행할 
 
 언제든지 Live Copy 페이지에 구성 요소를 추가할 수 있습니다. Live Copy 및 그 단락 시스템의 상속 상태는 구성 요소를 추가하는 작업에 영향을 미치지 않습니다.
 
-Live Copy 페이지를 소스 페이지와 동기화하면 추가된 구성 요소는 변경되지 않습니다. [Live Copy 페이지에서 구성 요소 순서 변경](#changing-the-order-of-components-on-a-live-copy-page)을 참조하십시오.
+Live Copy 페이지를 소스 페이지와 동기화하면 추가된 구성 요소는 변경되지 않습니다. [Live Copy 페이지에서 구성 요소 순서 변경](#changing-the-order-of-components-on-a-live-copy-page)도 참조하세요.
 
 >[!TIP]
 >

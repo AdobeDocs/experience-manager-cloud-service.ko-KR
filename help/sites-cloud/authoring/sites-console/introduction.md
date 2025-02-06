@@ -5,10 +5,10 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 46%
+source-wordcount: '1625'
+ht-degree: 47%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 46%
 
 ![사이드 패널 선택기의 예](assets/sites-console-side-panel-selector.png)
 
-사이드 패널에 대한 자세한 내용은 [사이트 콘솔 사이드 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md) 문서를 참조하십시오.
+사이드 패널에 대한 자세한 내용은 [사이트 콘솔 사이드 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md)을 참조하십시오.
 
 ### 이동 경로 {#breadcrumbs}
 
@@ -194,7 +194,7 @@ AEM 도구 모음의 맨 오른쪽에 있는 **보기** 아이콘은 선택한 �
 ![목록 보기](assets/sites-console-list-view.png)
 
 * 리소스 이름을 탭/클릭하여 트리를 탐색하고 [헤더에서 [이동 경로]](#the-header)를 사용하여 백업할 수 있습니다.
-* 목록의 모든 항목을 쉽게 선택하려면 도구 모음의 [**모두 선택** 확인란을 사용합니다.](#select-all)
+* 목록의 모든 항목을 쉽게 선택하려면 도구 모음의 [**모두 선택** 확인란을 사용합니다](#select-all).
 
 * [보기] 버튼 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 

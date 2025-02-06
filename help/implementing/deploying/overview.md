@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 배포할 때의 기본 사항 및 모범
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -112,7 +112,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
    * 컨텍스트 인식 구성 (`/conf` 아래의 모든 항목) (추가, 수정, 제거)
    * 스크립트 (패키지는 패키지 설치의 여러 설치 프로세스 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대한 내용은 [Jackrabbit filevault 설명서](https://jackrabbit.apache.org/filevault/installhooks.html)를 참조하십시오. 현재 AEM CS는 Filevault 버전 3.4.0을 사용합니다. 이 버전은 설치 후크를 관리 사용자, 시스템 사용자 및 관리자 그룹의 멤버로 제한합니다.
 
-`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 임베드하여 변경 가능한 콘텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. AEM 6.5에서 재구성을 수행하여 이 분리를 반영합니다. 권장되는 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에서 확인할 수 있습니다.
+`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 임베드하여 변경 가능한 콘텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하기 위한 재구성은 AEM 6.5에서 수행되었으며 권장 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)를 참조하십시오.
 
 >[!NOTE]
 >모든 환경 유형(개발/단계/프로덕션)에 콘텐츠 패키지를 배포합니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동화된 실행의 테스트 실행 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 콘텐츠는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 사용하여 수동으로 설치해야 합니다.
@@ -121,7 +121,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
 
 포함된 모든 서드파티 패키지는 호환 가능한 AEM as a Cloud Service로 유효성을 확인해야 하며, 그렇지 않으면 해당 패키지가 포함되어 결국 배포가 실패할 수 있습니다.
 
-위에서 언급했듯이 기존 코드 베이스를 보유한 고객은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에 나온 6.5 저장소 변경에 필요한 저장소 재구성 연습을 준수해야 합니다.
+위에서 언급했듯이 기존 코드 베이스를 사용하는 고객은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에 설명된 6.5 저장소 변경 사항에 필요한 저장소 재구성 연습을 따라야 합니다.
 
 ## Repoinit {#repoinit}
 

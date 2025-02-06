@@ -4,7 +4,7 @@ description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하�
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 �
 
 >[!TIP]
 >
->AEM은 Apache Sling을 기반으로 하므로 [Apache 오류 처리 설명서에서 자세한 정보를 확인할 수 있습니다.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>AEM은 Apache Sling을 기반으로 하므로 [Apache 오류 처리 설명서](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)에서 자세한 정보를 사용할 수 있습니다.
 
 >[!NOTE]
 >

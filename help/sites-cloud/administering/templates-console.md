@@ -4,13 +4,13 @@ description: 템플릿 콘솔이 페이지 템플릿을 보고 관리하는 중�
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 템플릿 콘솔 {#templates-console}
 
@@ -20,10 +20,10 @@ ht-degree: 1%
 
 페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기반으로 사용됩니다. [AEM의 편집 가능한 템플릿](/help/implementing/developing/components/templates.md)은(는) 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의할 수 있습니다.
 
-콘텐츠 작성자는 [사이트 콘솔에서 새 페이지를 만들 때 사용 가능한 템플릿 선택을 제공합니다.](/help/sites-cloud/authoring/sites-console/creating-pages.md) 템플릿은 다음 템플릿으로 편집할 수 있는 페이지를 만드는 데 사용할 수 있습니다.
+콘텐츠 작성자는 [사이트 콘솔에서 새 페이지를 만들](/help/sites-cloud/authoring/sites-console/creating-pages.md)때 사용 가능한 템플릿을 선택할 수 있습니다. 템플릿을 사용하여 다음과 같이 편집할 수 있는 페이지를 만들 수 있습니다.
 
 * [페이지 편집기](/help/sites-cloud/authoring/page-editor/templates.md) 또는
-* [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [범용 편집기](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 관리자는 템플릿 콘솔을 사용하여 모든 페이지 템플릿을 중앙 위치에서 보고 관리할 수 있습니다.
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 템플릿을 편집하면 템플릿을 만드는 데 사용한 편집기가 열립니다. 다음 중 하나를 선택합니다.
 
 * [템플릿 편집기](/help/sites-cloud/authoring/page-editor/templates.md)
-* [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [범용 편집기](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 어느 편집기든 사용하여 템플릿에 필요한 사항을 변경할 수 있습니다. 사용 중인 템플릿을 편집하면 작성자에게 영향을 줄 수 있습니다.
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 ## 속성 {#properties}
 
-[페이지 속성을 편집할 수 있는 것과 같은 방법으로 [템플릿의 속성](/help/sites-cloud/authoring/page-editor/templates.md)을 편집할 수 있습니다.](/help/sites-cloud/authoring/sites-console/page-properties.md) 템플릿 속성은 다음과 같습니다.
+[페이지 속성을 편집](/help/sites-cloud/authoring/sites-console/page-properties.md)할 수 있는 것과 같은 방법으로 [템플릿의 속성](/help/sites-cloud/authoring/page-editor/templates.md)을 편집할 수 있습니다.템플릿 속성은 다음과 같습니다.
 
 * 템플릿 제목
 * 설명
@@ -135,6 +135,6 @@ ht-degree: 1%
 
 ## 템플릿 만들기 {#create}
 
-콘솔의 **만들기** 단추를 사용하여 현재 위치에 새 템플릿을 만듭니다. 템플릿 만들기에 대한 자세한 내용은 문서 [페이지 편집기로 편집할 수 있는 페이지 만들기에 대한 템플릿을 참조하십시오.](/help/sites-cloud/authoring/page-editor/templates.md)
+콘솔의 **만들기** 단추를 사용하여 현재 위치에 새 템플릿을 만듭니다. 템플릿 만들기에 대한 자세한 내용은 문서 [페이지 편집기로 편집할 수 있는 페이지 만들기에 대한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)을 참조하십시오.
 
 **만들기** 단추는 페이지 편집기로 편집할 수 있는 템플릿을 만드는 데만 사용됩니다. 유니버설 편집기로 만든 페이지를 기반으로 템플릿을 만드는 방법에 대한 자세한 내용은 문서 [유니버설 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/universal-editor/templates.md)을 참조하십시오.

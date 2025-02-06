@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 85%
@@ -137,7 +137,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
 >[!NOTE]
 >
->아직 사용할 수 없는 경우 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 명시적으로 [활성화해야 합니다.](/help/sites-cloud/administering/responsive-layout.md)
+>아직 사용할 수 없는 경우 **레이아웃 컨테이너**&#x200B;는 단락 시스템/페이지에 대해 명시적으로 [활성화됨](/help/sites-cloud/administering/responsive-layout.md)이어야 합니다.
 
 1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 페이지의 필요한 위치로 드래그하면 **구성 요소를 여기로 드래그** 자리 표시자가 표시됩니다.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
@@ -185,7 +185,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
    * **편집** 모드나 **타겟팅** 모드로 전환하는 것처럼 **레이아웃** 모드 선택
    * **레이아웃** 모드가 지속적으로 유지되며 모드 선택기를 통해 다른 모드를 선택할 때까지 **레이아웃** 모드를 벗어나지 않습니다.
 * [개별 구성 요소를 편집](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)하는 경우
-   * 구성 요소의 빠른 작업 메뉴에서 **레이아웃** 선택 사항을 사용하여 **레이아웃** 모드로 전환할 수 있습니다.
+   * 구성 요소의 빠른 작업 메뉴에서 **레이아웃** 옵션을 사용하여 **레이아웃** 모드로 전환할 수 있습니다.
    * 구성 요소를 편집하는 동안 **레이아웃** 모드가 지속되며 초점이 다른 구성 요소로 변경되면 **편집** 모드로 되돌아갑니다.
 
 레이아웃 모드에 있는 경우 격자에서 다양한 작업을 수행할 수 있습니다.

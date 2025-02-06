@@ -6,10 +6,10 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ AEM의 Headless에 대한 기본 지식을 제공하는 다양한 주제는 이 
 
 ## 다음 단계 {#what-is-next}
 
-다음 문서 확인으로 시작: [CMS Headless 개발에 대해 알아보기.](learn-about.md)
+다음 문서인 [CMS Headless 개발에 대해 알아보기](learn-about.md)를 확인하여 시작하십시오.
 
 ### 나만의 어드벤처 선택 {#choose-your-path}
 

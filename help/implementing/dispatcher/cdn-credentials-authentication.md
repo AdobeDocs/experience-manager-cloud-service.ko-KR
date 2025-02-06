@@ -4,7 +4,7 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # CDN 자격 증명 및 인증 구성 {#cdn-credentials-authentication}
 
-Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일부는 적절한 수준의 엔터프라이즈 보안을 보장하기 위해 자격 증명과 인증에 의존합니다. Cloud Manager [config 파이프라인을 사용하여 배포된 구성 파일에서 규칙을 선언하여 ](/help/operations/config-pipeline.md) 고객은 셀프서비스 방식으로 다음을 구성할 수 있습니다.
+Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일부는 적절한 수준의 엔터프라이즈 보안을 보장하기 위해 자격 증명과 인증에 의존합니다. Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포된 구성 파일에서 규칙을 선언하면 고객은 셀프서비스 방식으로 다음을 구성할 수 있습니다.
 
 * Adobe CDN이 고객 관리 CDN에서 발생하는 요청의 유효성을 검사하는 데 사용하는 X-AEM-Edge-Key HTTP 헤더 값입니다.
 * CDN 캐시에서 리소스를 제거하는 데 사용되는 API 토큰입니다.

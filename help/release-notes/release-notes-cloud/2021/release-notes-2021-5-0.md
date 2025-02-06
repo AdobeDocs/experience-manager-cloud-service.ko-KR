@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 �
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 45%
@@ -70,7 +70,7 @@ as a Cloud Service [!DNL Adobe Experience Manager]의 릴리스 일자 2021년 5
 
 #### Dynamic Media의 새로운 기능 {#what-is-new-dm}
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭이 있는 장치에서 최상의 품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md) 및 [차세대 이미지 형식 WebP 및 AVIF를 사용한 이미지 최적화](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)를 참조하십시오.
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭이 있는 장치에서 최상의 품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md) 및 [차세대 이미지 형식을 사용한 이미지 최적화 WebP 및 AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)를 참조하십시오.
 * Dynamic Media 게재(fmt URL 수정자)에서 차세대 이미지 형식 AVIF에 대한 지원을 도입했습니다.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -142,7 +142,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 날짜는 2021년 5�
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
-### 릴리스 날짜 {#release-date-ctt-latest}
+### 릴리스 일자 {#release-date-ctt-latest}
 
 콘텐츠 전송 도구 v1.4.6의 릴리스 날짜는 2021년 5월 27일입니다.
 

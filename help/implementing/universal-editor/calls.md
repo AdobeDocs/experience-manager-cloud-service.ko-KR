@@ -4,7 +4,7 @@ description: 범용 편집기에서 디버깅할 때 유용하게 사용할 수 
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -150,7 +150,7 @@ ht-degree: 2%
 
 페이로드에는 콘텐츠를 추가해야 하는 `path` 개체가 포함되어 있습니다.
 
-또한 각 플러그인에 대해 [을(를) 저장할 콘텐츠의 끝점별 세부 정보에 대한 추가 개체가 있는 `content` 개체도 포함됩니다.](/help/implementing/universal-editor/architecture.md) 예를 들어 앱이 AEM 및 Magento의 콘텐츠를 기반으로 하는 경우 페이로드에는 각 시스템의 데이터 개체가 포함됩니다.
+또한 각 플러그인에 대해 [저장될 콘텐츠의 끝점별 세부 정보에 대한 추가 개체가 포함된 `content` 개체가 ](/help/implementing/universal-editor/architecture.md)에 포함됩니다. 예를 들어 앱이 AEM 및 Magento의 콘텐츠를 기반으로 하는 경우 페이로드에는 각 시스템에 대한 데이터 개체가 포함됩니다.
 
 >[!BEGINTABS]
 

@@ -4,10 +4,10 @@ description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 �
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -44,4 +44,4 @@ ht-degree: 100%
 
 ## 다음 단계 {#next-step}
 
-자세히 알아볼 준비가 되셨습니까? 그렇다면 Headless 설정의 첫 번째 부분인 [구성 만들기](create-configuration.md)를 읽는 것에서부터 시작하십시오.
+자세히 알아볼 준비가 되셨습니까? 그런 다음 Headless 설정의 첫 번째 부분인 [구성 만들기](create-configuration.md)를 읽어 시작하십시오.

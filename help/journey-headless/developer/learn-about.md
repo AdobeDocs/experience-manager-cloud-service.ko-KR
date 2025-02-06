@@ -5,16 +5,16 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # CMS Headless 개발에 대해 알아보기 {#learn-about}
 
-이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서는 Headless 기술 및 이 기술을 사용하는 이유에 대해 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -127,7 +127,7 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 지금까지 이 문
 
 ## 추가 리소스 {#additional-resources}
 
-다음 문서인 [AEM Headless as a Cloud Service 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [AEM as a Cloud Service Headless 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM as a Cloud Service의 아키텍처 이해
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)

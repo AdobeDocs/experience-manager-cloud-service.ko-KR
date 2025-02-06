@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1926'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
+>AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
 >
 >이 기능을 사용하는 기존 프로젝트는 계속 지원되지만 새 프로젝트는 이 기능을 사용하지 않아야 합니다.
 
@@ -46,7 +46,7 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 >[!NOTE]
 >
->점진적 웹 앱은 진화하는 기술이며, 로컬 앱 설치 및 기타 기능에 대한 지원은 [사용 중인 브라우저에 따라 다릅니다.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>점진적 웹 앱은 진화하는 기술이며, 로컬 앱 설치 및 기타 기능에 대한 지원 [은(는) 사용 중인 브라우저에 따라 다릅니다](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -63,9 +63,9 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 >[!NOTE]
 >
->사용자 정의 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에는 PWA 기능을 사용하지 않는 것이 좋습니다.
+>Adobe 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
 <!--
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
  To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
@@ -108,7 +108,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 사이트에 대해 PWA 활성화 {#enabling-pwa-for-your-site}
 
-[사전 요구 사항](#prerequisites)을 충족하면 콘텐츠 작성자는 간단하게 사이트에 대해 PWA 기능을 활성화할 수 있습니다. 다음은 이를 수행하는 방법에 대한 간략한 소개입니다. 개별 옵션은 [상세 옵션](#detailed-options) 섹션에 자세히 기재되어 있습니다.
+[사전 요구 사항](#prerequisites)을 충족하면 콘텐츠 작성자는 간단하게 사이트에 대해 PWA 기능을 활성화할 수 있습니다. 다음은 이를 수행하는 방법에 대한 간략한 소개입니다. 개별 옵션은 [자세한 옵션](#detailed-options) 섹션에 자세히 설명되어 있습니다.
 
 1. AEM에 로그인합니다.
 1. 메인 메뉴에서 **탐색** > **사이트**&#x200B;를 선택합니다.
@@ -134,11 +134,11 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 1. **저장 후 닫기**&#x200B;를 선택합니다.
 
-이제 사이트가 구성되며 [이를 로컬 앱으로 설치](#using-pwa-enabled-site)할 수 있습니다.
+이제 사이트가 구성되었으며 [로컬 앱으로 설치](#using-pwa-enabled-site)할 수 있습니다.
 
 ## PWA 지원 사이트 사용 {#using-pwa-enabled-site}
 
-이제 [PWA를 지원하도록 사이트를 구성](#enabling-pwa-for-your-site)했으므로 이를 직접 체험해 볼 수 있습니다.
+이제 [PWA을 지원하도록 사이트를 구성](#enabling-pwa-for-your-site)했으므로 이를 직접 체험해 볼 수 있습니다.
 
 1. [지원되는 브라우저](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)에서 사이트에 액세스합니다.
 1. 브라우저의 주소창에 사이트를 로컬 앱으로 설치할 수 있음을 나타내는 새 아이콘이 표시됩니다.
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 상세 옵션 {#detailed-options}
 
-다음 섹션은 [PWA에 대해 사이트를 구성](#enabling-pwa-for-your-site)할 때 사용할 수 있는 옵션에 대한 세부 정보를 제공합니다.
+다음 섹션에서는 [PWA을 위해 사이트를 구성](#enabling-pwa-for-your-site)할 때 사용할 수 있는 옵션에 대해 자세히 설명합니다.
 
 ### 설치 가능한 경험 구성 {#configure-installable-experience}
 

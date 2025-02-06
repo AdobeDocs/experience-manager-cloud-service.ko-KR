@@ -4,7 +4,7 @@ description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -195,7 +195,7 @@ AEM SDK Quickstart Jar의 AEM 웹 콘솔 을 사용하여 OSGi 구성 요소를 
 >
 >AEM 웹 콘솔의 구성 UI가 저장소에 `.cfg.json`개의 파일을 기록합니다. 따라서 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 발생할 수 있는 예기치 않은 동작을 방지하기 위해 이 워크플로우를 알고 있어야 합니다.
 
-1. `https://<host>:<port>/system/console`에 있는 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. 구성하려면 OSGi 구성 요소를 찾아 편집할 제목을 선택합니다
    ![OSGi 구성](./assets/configuring-osgi/configuration.png)

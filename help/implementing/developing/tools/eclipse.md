@@ -4,7 +4,7 @@ description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -62,7 +62,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 ## AEM 관점 {#the-aem-perspective}
 
-Eclipse에서 관점은 창 내에서 사용할 수 있는 작업 및 보기를 결정하고 Eclipse의 리소스와 작업 지향 상호 작용을 가능하게 합니다. 큐브 뷰에 대한 자세한 내용은 [Eclipse 설명서를 참조하십시오.](https://help.eclipse.org/latest/index.jsp)
+Eclipse에서 관점은 창 내에서 사용할 수 있는 작업 및 보기를 결정하고 Eclipse의 리소스와 작업 지향 상호 작용을 가능하게 합니다. Perspective에 대한 자세한 내용은 [Eclipse 설명서](https://help.eclipse.org/latest/index.jsp)를 참조하십시오.
 
 _Eclipse용 Experience Manager 개발 도구_&#x200B;는 AEM 프로젝트 및 인스턴스를 완벽하게 제어할 수 있는 AEM 관점을 제공합니다. AEM Perspective를 열려면
 

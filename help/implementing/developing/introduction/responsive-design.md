@@ -4,7 +4,7 @@ description: 반응형 설계를 통해 동일한 경험을 여러 방향의 여
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 1%
@@ -126,7 +126,7 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 [핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) 기능(예: 응용 이미지 선택)입니다.
 
 * 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)을(를) 사용하여 적절한 렌디션을 전달합니다.
-* [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)은(는) DAM의 이미지 에셋을 WebP 형식으로 제공하고 이미지의 다운로드 크기를 평균적으로 약 25% 줄일 수 있는 정책의 간단한 확인란을 통해서도 사용할 수 있습니다.
+* [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko-KR)은(는) DAM의 이미지 에셋을 WebP 형식으로 제공하고 이미지의 다운로드 크기를 평균적으로 약 25% 줄일 수 있는 정책의 간단한 확인란을 통해서도 사용할 수 있습니다.
 
 ## 레이아웃 컨테이너 {#layout-container}
 

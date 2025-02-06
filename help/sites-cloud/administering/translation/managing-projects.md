@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 리소스가 번역 프로젝트에 추가되면 해당 리소스에 대한 번역 작업이 생성됩니다. 작업은 리소스에서 실행되는 인간 번역 및 기계 번역 워크플로 관리에 사용하는 명령 및 상태 정보를 제공합니다.
 
@@ -308,7 +308,7 @@ Sites 콘솔이 아닌 프로젝트 콘솔을 사용하고자 하는 경우 번�
 
 ![번역 작업](../assets/translation-job.png)
 
-다음 표는 작업 또는 작업 내 항목이 가질 수 있는 각각의 속성에 대해 설명합니다.
+다음 테이블은 작업 또는 작업 내 항목이 가질 수 있는 각각의 속성에 대해 설명합니다.
 
 | 상태 | 설명 |
 |---|---|

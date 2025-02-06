@@ -4,10 +4,10 @@ description: Adobe Experience Manager은 리소스 집약적인 일부 작업을
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -85,7 +85,7 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 삭제 작업에 대한 일정 및 완료된 작업의 세부 사항이 삭제되기 전에 보존 기간을 수정할 수 있습니다. 특정 시점에 세부 사항이 유지되도록 완료된 작업의 최대 수를 구성할 수도 있습니다.
 
-1. `https://<host>:<port>/system/console`에 있는 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. **[!UICONTROL Adobe Granite 비동기 작업 제거 예약 작업]** 작업을 엽니다.
 1. 지정:
@@ -101,7 +101,7 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 삭제할 자산 또는 폴더의 수가 임계값 수를 초과하는 경우 삭제 작업이 비동기적으로 수행됩니다.
 
-1. `https://<host>:<port>/system/console`에 있는 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. 웹 콘솔에서 **[!UICONTROL 비동기 프로세스 기본 큐 구성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 자산 임계값 수]** 상자에서 삭제 작업의 비동기 처리를 위한 자산/폴더의 임계값 수를 지정합니다.
@@ -115,7 +115,7 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 이동할 자산/폴더 또는 참조 수가 임계값 수를 초과하는 경우 이동 작업이 비동기식으로 수행됩니다.
 
-1. `https://<host>:<port>/system/console`에 있는 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. 웹 콘솔에서 **[!UICONTROL 비동기 이동 작업 처리 구성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 자산/참조 임계값 수]** 상자에서 이동 작업의 비동기 처리를 위한 자산/폴더 또는 참조의 임계값 수를 지정합니다.
@@ -127,7 +127,7 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 ### 비동기 MSM 작업 구성 {#configuring-asynchronous-msm-operations}
 
-1. `https://<host>:<port>/system/console`에 있는 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. 웹 콘솔에서 **[!UICONTROL 비동기 페이지 이동 작업 처리 구성]**&#x200B;을 엽니다.
 1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예를 들어, 성공, 실패 입니다.

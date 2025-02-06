@@ -5,10 +5,10 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 �
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 빠른 사이트 생성 여정의 이전 문서인 [파이프 라인 설정](pipeline-setup.md)에서는 프론트엔드 파이프라인을 제작하여 사이트 테마 맞춤화를 관리하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+AEM 빠른 사이트 생성 여정의 이전 문서인 [파이프라인 설정](pipeline-setup.md)에서는 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * 프론트엔드 파이프라인에 대해 이해할 수 있습니다.
 * Cloud Manager에서 프론트엔드 파이프라인을 설정하는 방법을 이해할 수 있습니다.
@@ -101,7 +101,7 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로 이제 �
 * 프론트엔드 개발자를 사용자로 추가하는 방법
 * 프론트엔드 개발자에게 필요한 역할을 부여하는 방법
 
-이 지식을 기반으로 다음 문서인 [git 저장소 액세스 정보 가져오기](retrieve-access.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 프론트엔드 개발자의 관점으로 전환하여 프론트엔드 개발자가 Cloud Manager를 사용하여 git 저장소 정보에 액세스하는 방법을 살펴보게 됩니다.
+이 지식을 기반으로 다음 문서인 [Git 저장소 액세스 정보 가져오기](retrieve-access.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 프론트엔드 개발자의 관점으로 전환하여 프론트엔드 개발자가 Cloud Manager을 사용하여 git 저장소 정보에 액세스하는 방법을 살펴보게 됩니다.
 
 ## 추가 리소스 {#additional-resources}
 

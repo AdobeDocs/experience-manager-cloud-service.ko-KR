@@ -3,13 +3,13 @@ title: Edge Delivery Services을 사용하여 DAM Assets으로 페이지 게시
 description: 페이지의 DAM 에셋이 Edge Delivery Services에 원활하게 게시되도록 하는 데 필요한 설정을 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 65a3b4d923a91702e7ea9b13356802836fa4ce0b
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
 
 ---
-
 
 # Edge Delivery Services을 사용하여 DAM Assets으로 페이지 게시 {#dam-assets}
 
@@ -21,8 +21,8 @@ ht-degree: 2%
 
 이 원활한 동작을 보장하려면 AEM 및 Edge Delivery Services이 게시하기 위해 DAM에 적절하게 액세스할 수 있어야 합니다. 여기에는 다음이 포함됩니다.
 
-* [에셋 폴더에 액세스할 수 있는지 확인합니다.](#accessible)
-* [에셋 폴더에 적절한 구성이 할당되었는지 확인합니다(필요한 경우).](#configuration)
+* [자산 폴더에 액세스할 수 있는지 확인](#accessible).
+* [에셋 폴더에 적절한 구성이 할당되었는지 확인](#configuration).
 
 ## Assets 폴더에 액세스할 수 있는지 확인 {#accessible}
 

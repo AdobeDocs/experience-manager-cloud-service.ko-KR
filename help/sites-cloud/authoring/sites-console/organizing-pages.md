@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # 페이지 구성 {#creating-and-organizing-pages}
 
-AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다. 페이지를 구성하는 방법을 이해하면 [새 페이지를 만들고](/help/sites-cloud/authoring/sites-console/creating-pages.md) [기존 페이지를 관리합니다](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다. 페이지를 구성하는 방법을 이해하면 [새 페이지를 만들고](/help/sites-cloud/authoring/sites-console/creating-pages.md) [기존 페이지를 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md)할 수 있습니다.
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
    /...
 ```
 
-이 구조는 웹 사이트의 페이지를 탐색하고 페이지에서 작업을 수행할 수 있는 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)에서 볼 수 있습니다.
+이 구조는 [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 볼 수 있으며, 이 콘솔에서 웹 사이트의 페이지를 탐색하고 페이지에서 작업을 수행할 수 있습니다.
 
 ## 페이지 이름 지정 규칙 {#page-naming-conventions}
 

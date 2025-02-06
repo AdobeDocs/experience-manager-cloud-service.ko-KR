@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -122,7 +122,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 * **Live Copy 만들기** (**Sites**)
 
-   * MSM을 사용하면 [웹 사이트의 개별 페이지 또는 하위 분기에 대한 애드혹(일회성) Live Copy를 만들 수 있습니다.](creating-live-copies.md#creating-a-live-copy-of-a-page) 예를 들어 하위 분기를 복제하여 제품의 새/업데이트 버전에 대한 정보를 제공할 수 있습니다. 이러한 방식으로 Live Copy를 만들면:
+   * MSM을 사용하면 [웹 사이트의 개별 페이지 또는 하위 분기에 대한 애드혹(일회성) 라이브 카피를 만들 수 있습니다](creating-live-copies.md#creating-a-live-copy-of-a-page). 예를 들어 하위 분기를 복제하여 제품의 새/업데이트 버전에 대한 정보를 제공할 수 있습니다. 이러한 방식으로 Live Copy를 만들면:
       * 애드혹 Live Copy가 생성됩니다(블루프린트 구성은 필요하지 않음).
       * 페이지/분기의 Live Copy를 만드는 데 (즉시) 사용할 수 있습니다.
       * **동기화**&#x200B;가 필요합니다(**롤아웃** 버튼은 제공되지 않음).
@@ -137,7 +137,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 * **Live Copy 개요** (**Sites**)
 
-   * 이 콘솔을 통해 [블루프린트 및 해당 Live Copy를 확인하고 관리](live-copy-overview.md)할 수 있습니다.
+   * 이 콘솔을 통해 [블루프린트 및 해당 라이브 카피를 보고 관리](live-copy-overview.md)할 수 있습니다.
 
 * **블루프린트** (**도구** - **Sites**)
 
@@ -153,7 +153,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 ### 사용된 용어 {#terms-used}
 
-다음 표에서는 MSM에서 사용되는 주요 용어에 대한 개요를 제공합니다. 이에 대한 자세한 내용은 이후 섹션 및 페이지에 나와 있습니다.
+다음 테이블에서는 MSM에서 사용되는 주요 용어에 대한 개요를 제공합니다. 이에 대한 자세한 내용은 이후 섹션 및 페이지에 나와 있습니다.
 
 | 용어 | 정의 | 자세한 내용 |
 |---|---|---|
@@ -293,7 +293,7 @@ Live Copy의 소스는 일반 페이지이거나 블루프린트 구성으로 �
 
 ### 롤아웃 충돌 {#rollout-conflicts}
 
-특히 작성자가 소스와 Live Copy의 콘텐츠를 모두 편집할 경우 롤아웃이 복잡해질 수 있습니다. 따라서 AEM을 사용하여 [롤아웃 중에 발생할 수 있는 충돌](rollout-conflicts.md)을 처리하는 방법을 알아두는 것이 유용합니다.
+특히 작성자가 소스와 Live Copy의 콘텐츠를 모두 편집할 경우 롤아웃이 복잡해질 수 있습니다. 따라서 AEM에서 롤아웃 중에 발생할 수 있는 [충돌을 처리하는 방법](rollout-conflicts.md)을 알아두는 것이 유용합니다.
 
 ### 상속 및 동기화 일시 중단 및 취소 {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하�
 
 1. [사용할 롤아웃 구성을 지정](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)해야 하는 위치를 결정하고 필요에 따라 구성합니다.
 1. 필요한 경우 Live Copy의 소스 콘텐츠를 식별하는 [블루프린트 구성을 만듭니다](creating-live-copies.md#creating-a-blueprint-configuration).
-1. [Live Copy를 만듭니다.](creating-live-copies.md#creating-a-live-copy)
+1. [Live Copy 만들기](creating-live-copies.md#creating-a-live-copy).
 1. 필요에 따라 소스 콘텐츠를 변경합니다. 귀사에서 수립한 일반 콘텐츠 검토 및 승인 프로세스를 사용해야 합니다.
 1. 블루프린트를 [롤아웃](creating-live-copies.md#rolling-out-a-blueprint)하거나 변경 내용으로 [Live Copy를 동기화](creating-live-copies.md#synchronizing-a-live-copy)합니다.
 

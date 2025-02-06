@@ -4,7 +4,7 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -24,7 +24,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서 [AEM 개발자를 위한 범용 편집기 개요](/help/implementing/universal-editor/developer-overview.md)를 참조하십시오.
+>범용 편집기용 앱을 계측하는 방법에 익숙하지 않은 경우 문서 [AEM 개발자를 위한 범용 편집기 개요](/help/implementing/universal-editor/developer-overview.md)를 참조하십시오.
 
 ## 모델 정의 구조 {#model-structure}
 

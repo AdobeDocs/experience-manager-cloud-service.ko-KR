@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 52%
@@ -105,7 +105,7 @@ ht-degree: 52%
 
 전체 화면 편집기(즉, 여러 줄 텍스트)가 열려 있는 경우 다음 작업도(모든 [형식](#formats)) 사용할 수 있습니다.
 
-* [형식](#formats) 선택([리치 텍스트](#rich-text), [일반 텍스트](#plain-text), [Markdown](#markdown))
+* [형식](#formats)([서식 있는 텍스트](#rich-text), [일반 텍스트](#plain-text), [Markdown](#markdown)) 선택
 
 * [콘텐츠 업로드](#uploading-content)
 

@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘텐츠를 미�
 
 기존 표준 세트에 따라 새 사이트를 신속하게 배포할 수 있는 사전 정의된 구조를 갖추는 것이 편리합니다. 사이트 템플릿은 기본 사이트 콘텐츠를 편리하며 재사용 가능한 패키지로 결합하는 방법입니다.
 
-일반적으로 사이트 템플릿에는 기본 사이트 콘텐츠와 구조 및 새 사이트를 빠르게 시작할 수 있도록 [사이트 테마](site-themes.md)라고 하는 사이트 스타일 지정 정보가 포함됩니다. 관리자는 [사이트 생성 프로세스](create-site.md)에서 사이트의 기반이 되는 사이트 템플릿을 선택합니다.
+일반적으로 사이트 템플릿에는 새 사이트를 빠르게 시작할 수 있도록 기본 사이트 콘텐츠 및 구조, 사이트 스타일 정보([사이트 테마](site-themes.md))가 포함됩니다. 관리자는 사이트 생성 프로세스](create-site.md)에서 사이트 [의 기반이 되는 사이트 템플릿을 선택합니다.
 
 템플릿은 재사용 및 맞춤화가 가능한 강력한 도구입니다. 또한 AEM 설치에서 여러 템플릿을 사용할 수 있으므로 서로 다른 사이트를 만들어 다양한 비즈니스 요구 사항을 유연하게 충족할 수 있습니다.
 
@@ -67,7 +67,7 @@ AEM에 여러 템플릿을 추가한 다음, [사이트를 만드는](create-sit
 
 ## 표준 사이트 템플릿 {#standard-site-template}
 
-Adobe는 나만의 템플릿을 만들 때 기준으로 사용할 수 있는 모범 참조 템플릿을 제공합니다. [표준 사이트 템플릿은 GitHub에서 사용할 수 있습니다.](https://github.com/adobe/aem-site-template-standard)
+Adobe는 나만의 템플릿을 만들 때 기준으로 사용할 수 있는 모범 참조 템플릿을 제공합니다. [표준 사이트 서식 파일은 GitHub에서 사용할 수 있습니다](https://github.com/adobe/aem-site-template-standard).
 
 [표준 사이트 템플릿의 최신 릴리스](https://github.com/adobe/aem-site-template-standard/releases)를 다운로드하여 [새 사이트를 생성](create-site.md)하는 데 바로 사용할 수 있습니다.
 

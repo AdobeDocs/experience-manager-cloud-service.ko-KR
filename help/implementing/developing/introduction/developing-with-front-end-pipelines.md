@@ -4,7 +4,7 @@ description: 프론트엔드 파이프라인을 사용하면 프론트엔드 개
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 프론트엔드 파이프라인으로 Sites 개발 {#developing-site-with-front-end-pipeline}
 
-[프론트엔드 파이프라인을 사용하면](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 프론트엔드 개발자에게 더 많은 독립성이 주어지고 개발 프로세스가 상당한 속도를 얻을 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용할 수 있도록 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식을 설명합니다.
+[프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)을 사용하면 프론트엔드 개발자에게 더 많은 독립성이 부여되고 개발 프로세스가 상당한 속도를 얻을 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용할 수 있도록 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식을 설명합니다.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 프론트엔드 빌드 계약 {#front-end-build-contract}
 
-[전체 스택 빌드 환경과 마찬가지로](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 프론트엔드 파이프라인에도 고유한 환경이 있습니다. 개발자는 다음 프론트엔드 빌드 계약이 준수되는 한 이 파이프라인을 유연하게 사용할 수 있습니다.
+[전체 스택 빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)과 마찬가지로 프론트엔드 파이프라인에도 고유한 환경이 있습니다. 개발자는 다음 프론트엔드 빌드 계약이 준수되는 한 이 파이프라인을 유연하게 사용할 수 있습니다.
 
 프론트엔드 파이프라인을 사용하려면 프론트엔드 Node.js 프로젝트가 `build` script 지시문을 사용하여 배포하는 빌드를 생성해야 합니다. 이는 Cloud Manager이 `npm run build` 명령을 사용하여 프론트엔드 빌드에 대한 배포 가능한 프로젝트를 생성하기 때문입니다.
 

@@ -4,7 +4,7 @@ description: Adobe Experience Manager(AEM as a Cloud Service)가 CI/CD(지속적
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -55,7 +55,7 @@ AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다
 
 >[!NOTE]
 >
-> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
+> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
 
 ## 업데이트 실패 {#update-failure}
 
@@ -97,7 +97,7 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 ## 복합 노드 저장소 {#composite-node-store}
 
-일반적으로 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 가동 중지 시간 없이 발생합니다. [Oak의 복합 노드 저장소 기능으로 인해 연속 업데이트가 가능합니다.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+일반적으로 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 가동 중지 시간 없이 발생합니다. [Oak의 복합 노드 저장소 기능](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)(으)로 인해 연속 업데이트가 가능합니다.
 
 이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. [롤링 배포](/help/implementing/deploying/overview.md#how-rolling-deployments-work)에서 새 AEM 버전에는 고유한 `/libs`(TarMK 기반 변경 불가능한 저장소)이 포함되어 있습니다. 둘 다 `/content` , `/conf` , `/etc` 등과 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능한 리포지토리를 참조하지만, 이전 AEM 버전과 구별됩니다.
 

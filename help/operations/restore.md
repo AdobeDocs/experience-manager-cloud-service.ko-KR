@@ -4,10 +4,10 @@ description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service �
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 64%
+source-wordcount: '1338'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 >[!TIP]
 >
->[공개 API를 사용](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)하여 백업을 복원할 수도 있습니다.
+>공개 API를 사용하여 [백업을 복원](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)할 수도 있습니다.
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 전체 콘텐츠 복원으로 복원하기 전에 이러한 옵션을 사용하여 콘텐츠를 보다 쉽게 복원할 수 있습니다.
 
-* 삭제된 경로에 대한 패키지를 사용할 수 있는 경우 [패키지 관리자를 사용하여 패키지를 다시 설치하십시오.](/help/implementing/developing/tools/package-manager.md)
-* 삭제된 경로가 Sites의 페이지인 경우 [트리 복원 기능을 사용하십시오.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* 삭제된 경로가 에셋 폴더이고 원본 파일을 사용할 수 있는 경우 [Assets 콘솔을 통해 다시 업로드하십시오.](/help/assets/add-assets.md)
-* 삭제 콘텐츠가 자산인 경우 [이전 버전의 자산을 복원하는 것이 좋습니다.](/help/assets/manage-digital-assets.md)
+* 삭제된 경로에 대한 패키지를 사용할 수 있는 경우 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 사용하여 패키지를 다시 설치하십시오.
+* 삭제된 경로가 Sites의 페이지인 경우 [트리 복원 함수](/help/sites-cloud/authoring/sites-console/page-versions.md)를 사용하십시오.
+* 삭제된 경로가 에셋 폴더이고 원본 파일을 사용할 수 있는 경우 [Assets 콘솔](/help/assets/add-assets.md)을 통해 다시 업로드하십시오.
+* 삭제 콘텐츠가 자산인 경우 [이전 버전의 자산을 복원](/help/assets/manage-digital-assets.md)하는 것이 좋습니다.
 
 위의 옵션 중 어느 것도 작동하지 않고 삭제된 경로의 내용이 중요한 경우 다음 섹션에 설명된 대로 콘텐츠 복원을 수행합니다.
 
@@ -93,7 +93,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
    ![사용 가능한 백업](assets/backup-available.png)
 
-1. 정보 아이콘을 사용하여 복원할 백업을 찾아 해당 백업에 포함된 코드 및 AEM 릴리스 버전과 관련된 정보를 확인하고 [백업을 선택할 때 복원이 미치는 영향을 고려합니다.](#choosing-the-right-backup)
+1. 정보 아이콘을 사용하여 복원할 백업을 찾아 해당 백업에 포함된 코드 및 AEM 릴리스 버전과 관련된 정보를 확인하고 [백업을 선택](#choosing-the-right-backup)할 때 복원이 미치는 영향을 고려합니다.
 
    ![백업 정보](assets/backup-info.png)
 

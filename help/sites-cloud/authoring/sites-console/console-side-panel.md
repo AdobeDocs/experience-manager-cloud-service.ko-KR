@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 26%
@@ -108,11 +108,11 @@ AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더
 
 ## Site {#site}
 
-사이드 패널의 **사이트** 보기에는 사이트 템플릿을 사용하여 만든 사이트 [의 세부 정보가 표시됩니다.](/help/sites-cloud/administering/site-creation/create-site.md)
+사이드 패널의 **사이트** 보기에는 사이트 템플릿을 사용하여 만든 [사이트](/help/sites-cloud/administering/site-creation/create-site.md)의 세부 정보가 표시됩니다.
 
 ![사이트 패널](assets/console-side-panel-site-paenl.png)
 
-패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오.](/help/sites-cloud/administering/site-creation/site-themes.md)
+패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 테마 기반 사이트 생성을 활성화하도록 프론트엔드 파이프라인을 아직 설정하지 않은 경우 사이드 패널에서 해당 옵션을 제공합니다.
 

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 �
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 95%
@@ -58,7 +58,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### 관리자 보기의 새로운 기능 {#admin-view-features}
 
-* **Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets as a Cloud Service 통합**: Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets을 통합하여 [웹 사이트 작성자가 Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 리포지토리에서 사용할 수 있는 이미지를 사용](/help/edge/using.md#integrate-assets-edge)할 수 있도록 합니다.
+* **Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets as a Cloud Service 통합**: Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets을 통합하여 웹 사이트 작성자가 [Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 리포지토리에서 사용할 수 있는 이미지를 사용](/help/edge/using.md#integrate-assets-edge)할 수 있도록 합니다.
 
 * **ZIP 아카이브 추출**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
 
@@ -118,7 +118,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### 캠페인 관련 URL 매개변수에 대한 새로운 CDN 캐싱 비헤이비어 {#cache-url-params}
 
-새 환경의 경우, CDN은 기본적으로 마케팅 캠페인 성능과 캐시 적중률을 높이기 위해 마케팅 관련 쿼리 매개 변수를 제거합니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+새 환경의 경우, CDN은 기본적으로 마케팅 캠페인 성능과 캐시 적중률을 높이기 위해 마케팅 관련 쿼리 매개 변수를 제거합니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
 ### 트래픽 필터 규칙(WAF 규칙 포함) 얼리 어답터 프로그램 {#waf-early-adopter}
 
@@ -133,7 +133,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 

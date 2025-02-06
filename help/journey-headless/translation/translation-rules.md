@@ -5,10 +5,10 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
 1. 방금 만든 컨텍스트를 선택한 다음, **편집**&#x200B;을 선택합니다. 이렇게 하면 **번역 규칙 편집기**가 열려 속성을 구성할 수 있습니다.
    ![번역 규칙 편집기](assets/translation-rules-editor.png)
 1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 추가 필드를 구성에 추가하려면 `/content/dam`**에서**&#x200B;상속 옵션을 선택 취소합니다.
-1. 선택 취소되면 목록의 **일반** 섹션에서 [이전에 번역 필드로 식별된 콘텐츠 조각 모델의 속성 이름을 추가합니다.](getting-started.md#content-models)
+1. 선택하지 않으면 목록의 **일반** 섹션 아래에 [이전에 번역을 위한 필드로 식별한](getting-started.md#content-models) 콘텐츠 조각 모델의 속성 이름을 추가합니다.
    1. **새 속성** 필드에 속성 이름을 입력합니다. **번역** 및 **상속** 옵션은 자동으로 선택되어 있습니다.
    1. **추가**&#x200B;를 선택합니다.
    1. 번역해야 하는 모든 필드에 대해 이들 단계를 반복합니다.
@@ -105,6 +105,6 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 
 ## 추가 리소스 {#additional-resources}
 
-다음 문서인 [번역 콘텐츠](translate-content.md)를 검토하여 Headless 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [콘텐츠 번역](translate-content.md)을 검토하여 Headless 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [번역할 콘텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.

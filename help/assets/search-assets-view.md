@@ -4,7 +4,7 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 94%
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 # [!DNL Assets view]에서 자산 검색 {#search-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -142,7 +142,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
    ![Firefly 통합](assets/firefly-integration.png)
 
-   새 자산이 정상적으로 생성되었습니다. 또한 설명 상자에 새 텍스트 프롬프트를 입력하여 이미지 설명을 변경할 수도 있습니다. [뛰어나고 관련성 높은 콘텐츠를 생성하는 효율적인 AI 프롬프트를 작성하는 방법을 알아보십시오.](https://helpx.adobe.com/kr/firefly/using/tips-and-tricks.html) 또는 [스타일 변경, 이미지 차원 등 다양한 다른 기능으로 이미지를 편집](https://helpx.adobe.com/kr/firefly/using/text-to-image.html)할 수 있습니다.
+   새 자산이 정상적으로 생성되었습니다. 또한 설명 상자에 새 텍스트 프롬프트를 입력하여 이미지 설명을 변경할 수도 있습니다. [특수 콘텐츠 및 관련 콘텐츠를 생성하기 위해 좋은 AI 프롬프트를 작성하는 방법에 대해 알아봅니다](https://helpx.adobe.com/kr/firefly/using/tips-and-tricks.html). 또는 스타일, 이미지 크기 변경 등 다양한 기능을 사용하여 [이미지를 편집할 수 있습니다](https://helpx.adobe.com/kr/firefly/using/text-to-image.html).
 
    ![Firefly 통합](assets/bugatti-type-57.png)
 

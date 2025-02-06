@@ -4,7 +4,7 @@ description: AEM의 Query Builder는 사용자 정의가 가능한 간편한 방
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -101,7 +101,7 @@ replic.action=Activate
 
 >[!TIP]
 >
->Maven 사용을 포함한 새 AEM 프로젝트 설정에 대해서는 [WKND 튜토리얼](develop-wknd-tutorial.md)에서 자세히 설명합니다.
+>Maven 사용을 포함한 새 AEM 프로젝트 설정에 대해서는 [WKND 자습서](develop-wknd-tutorial.md)에서 자세히 설명합니다.
 
 먼저 프로젝트의 Maven 종속성을 업데이트해야 합니다. `PredicateEvaluator`은(는) `cq-search` 아티팩트의 일부이므로 Maven pom 파일에 추가해야 합니다.
 

@@ -2,7 +2,8 @@
 title: 디지털 자산 재처리
 description: 디지털 에셋을 재처리하는 다양한 방법에 대해 알아봅니다
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%

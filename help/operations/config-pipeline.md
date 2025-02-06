@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 
 ## 구성 파이프라인 생성 및 관리 {#creating-and-managing}
 
-파이프라인을 만들고 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 문서를 참조하십시오.
+파이프라인을 만들고 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 참조하십시오.
 
 Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구성할 때 **전체 스택 코드**&#x200B;이 아닌 **대상 배포**&#x200B;를 선택해야 합니다.
 
@@ -95,7 +95,7 @@ Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구�
     cdn.yaml
 ```
 
-`/config` 아래의 폴더 이름 및 파일 이름은 임의의 이름입니다. 그러나 YAML 파일에는 유효한 [`kind` 속성 값이 있어야 합니다.](#configurations)
+`/config` 아래의 폴더 이름 및 파일 이름은 임의의 이름입니다. 그러나 YAML 파일에는 올바른 [`kind` 속성 값](#configurations)이(가) 포함되어야 합니다.
 
 일반적으로 구성은 모든 환경에 배포됩니다. 각 환경에 대해 모든 속성 값이 동일하면 단일 YAML 파일로 충분합니다. 하지만 낮은 환경을 테스트하는 등의 경우에는 환경마다 속성 값이 다른 것이 일반적입니다.
 

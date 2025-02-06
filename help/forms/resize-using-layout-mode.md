@@ -5,7 +5,7 @@ role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -127,7 +127,7 @@ ht-degree: 2%
 레이아웃 모드를 비활성화하려면 다음 단계를 수행하십시오.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 서식 파일]**&#x200B;을 선택하고 **[!UICONTROL 편집]** 모드에서 양식에 사용된 서식 파일을 엽니다.
-1. 왼쪽 창에서 양식 컨테이너를 선택하고 **[!UICONTROL 정책을 선택합니다.]**
+1. 왼쪽 창에서 양식 컨테이너를 선택하고 **[!UICONTROL 정책]**&#x200B;을(를) 선택합니다.
 
    ![레이아웃 모드 비활성화](assets/policy_disable_layout_mode.png)
 
