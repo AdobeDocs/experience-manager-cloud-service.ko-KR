@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 401685af02c720994d72cd95d36f0cfcdf15d198
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 다음 프로세스를 사용하여 구성 요소를 국제화하고 UI를 다양한 언어로 제공합니다.
 
-1. [문자열을 국제화하는 코드를 사용하여 구성 요소를 구현합니다](/help/implementing/developing/extending/i18n/dev.md). 코드는 번역할 문자열을 식별하고 런타임 시 표시할 언어를 선택합니다.
-1. 사전을 만들고 번역할 영어 문자열을 추가합니다.
-1. 사전을 XLIFF 형식으로 내보내고 문자열을 번역한 다음 XLIFF 파일을 다시 AEM으로 가져옵니다.
+1. [문자열을 국제화하는 코드를 사용하여 구성 요소를 구현합니다.](/help/implementing/developing/extending/i18n/dev.md) 코드가 번역할 문자열을 식별하고 런타임 시 표시할 언어를 선택합니다.
+1. [사전 만들기](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
+1. 사전을 XLIFF 형식으로 [내보내기](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary)하고, 문자열을 번역한 다음 XLIFF 파일을 다시 AEM으로 가져옵니다.
 1. 사전을 애플리케이션의 릴리스 관리 프로세스에 통합합니다.
 
 >[!NOTE]
@@ -37,10 +37,11 @@ AEM 국제화 프레임워크는 저장소의 사전을 사용하여 영어 문�
 * 코드는 읽기 쉽습니다.
 * 기본 언어는 항상 사용할 수 있습니다.
 
-번역 변경 사항은 AEM as a cloud service의 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 통해 Git에서 가져와야 합니다.
+[번역 도구](/help/implementing/developing/extending/i18n/translator.md)를 사용하면 한 곳에서 모든 사전을 관리할 수 있습니다.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+번역 변경 사항은 AEM as a cloud service의 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 통해 Git에서 가져와야 합니다.
 
 ### 시스템 사전의 문자열 오버레이 {#overlaying-strings-in-system-dictionaries}
 
