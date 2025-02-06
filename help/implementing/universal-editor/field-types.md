@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 13%
 
 ---
@@ -305,11 +305,13 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 
 #### 콘텐츠 조각 {#content-fragment}
 
-콘텐츠 조각 선택기를 사용하여 [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가적인 구성 및 유효성 검사를 제공합니다.
+콘텐츠 조각 선택기를 사용하여 [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가 구성을 제공합니다.
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
 | `variationName` | `string` | 선택한 변형을 저장할 변수 이름입니다. 정의되지 않은 경우 변형 선택기가 표시되지 않습니다 | 아니요 |
+
+또한 추가 유효성 검사 유형을 제공합니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -444,11 +446,13 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 
 #### 경험 조각 {#experience-fragment}
 
-경험 조각 선택기를 사용하여 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가적인 구성 및 유효성 검사를 제공합니다.
+경험 조각 선택기를 사용하여 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가 구성을 제공합니다.
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
 | `variationName` | `string` | 선택한 변형을 저장할 변수 이름입니다. 정의되지 않은 경우 변형 선택기가 표시되지 않습니다 | 아니요 |
+
+또한 추가 유효성 검사 유형을 제공합니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
