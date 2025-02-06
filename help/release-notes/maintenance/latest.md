@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 16%
+source-wordcount: '950'
+ht-degree: 15%
 
 ---
 
@@ -56,6 +56,11 @@ ht-degree: 16%
 
 ### 해결된 문제 {#fixed-issues-19352}
 
+* CQ-4356756: 관련 자산에 대한 지원을 번역하지 마십시오.
+* CQ-4358206: 반복 번역 스케줄러가 번역 프로젝트에 대해 작동하지 않습니다.
+* CQ-4358126: 번역 클라우드 서비스에서 구성 하위 폴더를 선택할 수 없습니다.
+* FORMS-18098, FORMS-17954: 적응형 Forms이 Microsoft Edge 브라우저의 Internet Explorer 모드에서 로드되지 않습니다.
+* FORMS-17162: 에셋을 게시하면 OOTB 쿼리가 실행되어 게시 성능이 저하됩니다.
 * SITES-28415: 범용 편집기가 있는 Edge Delivery: 스프레드시트의 열린 속성 수정 단추.
 * SITES-26669: 범용 편집기가 있는 Edge Delivery: BOM을 스프레드시트로 사용하여 UTF-8로 인코딩된 CSV 파일을 업로드할 때 발생하는 문제를 해결합니다.
 * SITES-26543: 범용 편집기가 있는 Edge Delivery: 잘못된 마크업을 렌더링하는 모델 없이 빈 블록을 수정합니다.
@@ -85,8 +90,6 @@ ht-degree: 16%
 * SITES-26660: 가 &quot;문자열&quot; 유형인 경우 콘텐츠 조각 버전 @ContentType이 중단될 수 있습니다.
 * SITES-26626: 숫자 및 부울 필드에 customErrorMessage가 누락되었습니다.
 * SITES-26268: 조각을 만들 때 참조가 잘못된 경우 잘못된 상태 코드가 반환되었습니다.
-* FORMS-18098, FORMS-17954: 적응형 Forms이 Microsoft Edge 브라우저의 Internet Explorer 모드에서 로드되지 않습니다.
-* FORMS-17162: 에셋을 게시하면 OOTB 쿼리가 실행되어 게시 성능이 저하됩니다.
 
 ### 알려진 문제 {#known-issues-19352}
 
