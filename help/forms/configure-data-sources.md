@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 2%
+source-wordcount: '2339'
+ht-degree: 3%
 
 ---
 
@@ -123,7 +123,10 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [!DNL Swagger] 정의 파일에서 JSON 또는 YAML 형식의 [Swagger 사양](https://swagger.io/specification/v2/)을 사용하여 설명할 수 있습니다. as a Cloud Service [!DNL Experience Manager]에서 RESTful 웹 서비스를 구성하려면 [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))이 파일 시스템 또는 파일이 호스팅된 URL에 있는지 확인하십시오.
+RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에서 JSON 또는 YAML 형식의 [Swagger 사양](https://swagger.io/specification/v2/)을 사용하여 설명할 수 있습니다.
+
+>[!NOTE]
+> as a Cloud Service [!DNL Experience Manager]에서 RESTful 웹 서비스를 구성하려면 [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))이 파일 시스템 또는 파일이 호스팅된 URL에 있는지 확인하십시오.
 
 ### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 * 단일 작업에 대해 서로 다른 MIME 유형에 대해 서로 다른 요청 본문
 
 자세한 내용은 [OpenAPI 3.0 사양](https://swagger.io/specification/v3/)을 참조하십시오.
+
+### 서비스 끝점을 사용하여 RESTful 서비스 구성 {#configure-restful-services-service-endpoint}
+
+<span class="preview"> 서비스 끝점 기능은 얼리어답터 프로그램 아래에 있으며 핵심 구성 요소에만 적용됩니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+
+1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+
+   클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder)을 참조하십시오.
+
+1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다.
+
+1. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL RESTful 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 검색하여 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+
+1. 다음 페이지의 **[!UICONTROL RESTful 서비스 드롭다운]**&#x200B;에서 **[!UICONTROL 서비스 끝점]**&#x200B;을 선택합니다.
+
+   ![서비스 끝점](/help/forms/assets/select-service-endpoint.png)
+
+1. **[!UICONTROL 서비스 끝점 URL]**&#x200B;을 지정하십시오.
+
+   >[!NOTE]
+   > 기본적으로 메서드 유형은 POST 입니다.
+1. 드롭다운 목록에서 선택하려는 컨텐츠 유형 중 하나를 선택합니다. 콘텐츠 유형은 다중 부분 양식 데이터, JSON 및 URL로 인코딩된(키-값 쌍)입니다.
+1. 이제 드롭다운 목록에서 OAuth 2.0, 기본 인증, API 키, 사용자 지정 인증과 같은 인증 유형 중 하나를 선택합니다.
+   ![서비스 끝점 인증 형식](/help/forms/assets/service-endpoint-authtype.png)
+1. 만들기 를 클릭합니다.
 
 ### 성능을 최적화하기 위한 양식 데이터 모델(FDM) HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 

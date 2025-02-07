@@ -3,13 +3,12 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: AEM Forms REST 끝점, REST 끝점에 제출, REST URL에 데이터 게시, REST 끝점 작업 구성
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 60%
+source-wordcount: '703'
+ht-degree: 56%
 
 ---
 
@@ -30,7 +29,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
 ## REST 끝점에 제출 작업 구성 {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-제출 액션을 구성하려면 다음 작업을 수행하십시오.
+Swagger Open API 사양을 기반으로 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
@@ -68,6 +67,20 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
    또한 **[!UICONTROL POST 요청을 활성화]**&#x200B;하고 요청을 게시하는 URL을 제공할 수 있습니다. 양식을 호스팅하는 AEM 서버에 데이터를 제출하려면 AEM 서버 루트 경로에 해당되는 상대 경로를 사용합니다. 예, `/content/forms/af/SampleForm.html`. 데이터를 다른 서버에 제출하려면 절대 경로를 사용합니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+
+### 서비스 나머지 끝점을 기반으로 제출 액션 구성 {#config-service-endpoint-auth}
+
+<span class="preview"> 서비스 끝점 기능은 얼리어답터 프로그램 아래에 있으며 핵심 구성 요소에만 적용됩니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. **[!UICONTROL 제출]** 탭을 클릭합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Rest 끝점에 제출]**&#x200B;을 선택합니다.
+1. POST 요청을 활성화합니다.
+1. REST 끝점 URL을 지정합니다.
+1. 서비스 나머지 끝점 인증 유형 및 콘텐츠 유형에 대해 만든 구성을 선택합니다. 인증 유형 및 콘텐츠 유형에 대한 자세한 내용은 [데이터 원본 구성](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)을 참조하세요.
+   ![Rest 끝점 구성](assets/rest-service-endpoint-config.png)
+1. 완료를 클릭합니다.
 
 ## 모범 사례
 
