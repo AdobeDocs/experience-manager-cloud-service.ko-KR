@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
+source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 19%
+source-wordcount: '1088'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager에서 SSL(Secure Socket Layer) 인증서를 설치하고 관리하
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL 인증서 관리"
->abstract="Cloud Manager가 SSL 인증서를 설치하고 관리하는 셀프서비스 도구를 제공하여 사용자의 사이트를 보호하는 방법에 대해 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
+>abstract="Cloud Manager에 SSL 인증서를 설치하고 관리하여 사용자의 사이트를 보호하는 셀프서비스 도구가 있는 방법을 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
 
@@ -59,7 +59,7 @@ DV 인증서는 가장 기본적인 수준의 SSL 인증서이며 테스트 목�
 
 DV 인증서가 만들어지면 Adobe은 삭제하지 않는 한 3개월마다 자동으로 갱신합니다.
 
-### 고객 관리 OV/EV SSL 인증서 {#customer-managed}
+### 고객 관리(OV/EV) SSL 인증서 {#customer-managed}
 
 OV 및 EV 인증서는 CA 검증 정보를 제공합니다. 이러한 정보는 사용자가 웹 사이트 소유자, 이메일 발신자 또는 코드 또는 PDF 문서의 디지털 서명자를 신뢰할 수 있는지 평가하는 데 도움이 됩니다. DV 인증서는 이러한 소유권 확인을 허용하지 않습니다.
 
@@ -75,12 +75,23 @@ OV 및 EV는 Cloud Manager의 DV 인증서에 대해 이러한 기능을 추가�
 
 #### 고객 관리 OV/EV SSL 인증서 요구 사항 {#requirements}
 
-자체 고객 관리 OV/EV SSL 인증서를 추가하도록 선택하는 경우 다음 요구 사항을 충족해야 합니다.
+자체 고객 관리 SSL 인증서를 추가하도록 선택하는 경우 이 인증서는 다음과 같은 업데이트된 요구 사항을 충족해야 합니다.
 
+* DV(도메인 유효성 검사) 인증서 및 자체 서명된 인증서는 지원되지 않습니다.
 * 인증서는 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 정책을 준수해야 합니다.
-   * Cloud Manager에서는 고유한 DV(도메인 유효성 검사) 인증서 추가를 지원하지 않습니다.
-* 자체 서명된 인증서는 지원되지 않습니다.
-* 모든 인증서는 일치하는 2048비트 RSA 개인 키가 있는 신뢰할 수 있는 인증 기관의 X.509 TLS 인증서여야 합니다.
+* 인증서는 신뢰할 수 있는 CA(인증 기관)에서 발급한 X.509 TLS 인증서여야 합니다.
+* 지원되는 암호화 키 유형은 다음과 같습니다.
+
+   * RSA 2048비트 표준 지원
+2048비트보다 큰 RSA 키(예: 3072비트 또는 4096비트 RSA 키)는 현재 지원되지 않습니다.
+   * 타원 곡선(EC) 키 `prime256v1`(`secp256r1`) 및 `secp384r1`
+   * 타원 곡선 ECDSA(디지털 서명 알고리즘) 인증서. 이러한 인증서는 성능, 보안 및 효율성 향상을 위해 RSA보다 Adobe이 권장됩니다.
+
+* 유효성 검사를 통과하려면 인증서의 형식이 올바르게 지정되어야 합니다. 개인 키는 `PKCS#8` 형식이어야 합니다.
+
+>[!NOTE]
+>조직에서 3072비트 RSA 키를 사용하여 준수해야 하는 경우 Adobe이 권장하는 방법은 ECDSA 인증서(`secp256r1` 또는 `secp384r1`)를 사용하는 것입니다.
+
 
 #### 인증서 관리 우수 사례
 
