@@ -669,7 +669,7 @@ ht-degree: 99%
       + [자산 속성](/help/assets/asset-properties-content-hub.md)
       + [Content Hub에서 자산 공유](/help/assets/share-assets-content-hub.md)
       + [Content Hub를 사용하여 자산 다운로드](/help/assets/download-assets-content-hub.md)
-      + [Content Hub에서 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Content Hub에서 라이선스가 부여된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md)
       + [Content Hub에서 Adobe Express를 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
       + [Content Hub의 Asset Insights](/help/assets/insights-content-hub.md)
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
-      + [게시 관리를 사용하는 Publish 적응형 Forms](/help/forms/manage-publication.md)
+      + [게시 관리를 사용하여 적응형 양식 게시](/help/forms/manage-publication.md)
    + 시작하기 {#getting-started-forms}
       + [사용 사례 및 개발 환경 설정](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [대출 신청서 양식 만들기](/help/forms/create-adaptive-form-tutorial.md)
@@ -1203,7 +1203,7 @@ ht-degree: 99%
          + [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 도메인 매핑 {#cdn-configurations}
-         + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [콘텐츠 전송 네트워크 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [도메인 매핑 관리](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
@@ -1349,7 +1349,7 @@ ht-degree: 99%
       + [페이지 작성 확장](/help/implementing/developing/extending/page-authoring.md)
       + [콘솔 확장](/help/implementing/developing/extending/consoles.md)
       + [페이지 속성 확장](/help/implementing/developing/extending/page-properties.md)
-      + [벌크 편집기 확장](/help/implementing/developing/extending/bulk-editor.md)
+      + [일괄 편집기 확장](/help/implementing/developing/extending/bulk-editor.md)
       + [MSM 확장](/help/implementing/developing/extending/msm.md)
       + 국제화{#internationalization}
          + [구성 요소 국제화](/help/implementing/developing/extending/i18n/components.md)

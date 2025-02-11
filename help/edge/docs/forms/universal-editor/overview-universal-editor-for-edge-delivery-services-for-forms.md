@@ -8,20 +8,20 @@ hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 63%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Forms용 Edge Delivery Services용 범용 편집기 (EDS Forms Block)
 
-범용 편집기는 간단하고, 시각적이며, 직관적인 Adobe Edge(WYSIWYG) 인터페이스를 제공하여 EDS(What You See Is What You Get Delivery Services)를 위한 양식 작성에 혁신을 줍니다. 콘텐츠 작성자 및 양식 작성자를 위해 설계된 이 솔루션은 기존의 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 액세스할 수 있도록 합니다.
+범용 편집기는 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공함으로써 EDS(Adobe Edge Delivery Services)용 양식 만들기에 혁신을 일으켰습니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
 
-범용 편집기를 사용하면 텍스트 필드, 확인란 및 라디오 버튼과 같은 미리 작성된 구성 요소를 사용하여 응답형 대화형 양식을 빠르게 디자인할 수 있습니다. 강력한 기능 세트는 동적 규칙, 매끄러운 데이터 통합 및 고급 개인화를 지원하여 모든 양식을 사용자의 요구 사항에 맞게 조정할 수 있습니다.
+범용 편집기를 사용하면 텍스트 필드, 체크박스, 라디오 버튼과 같은 사전 설치된 구성 요소를 활용하여 반응형 및 대화형 양식을 빠르게 디자인할 수 있습니다. 강력한 기능 세트는 동적 규칙, 원활한 데이터 통합, 고급 개인화를 지원하여 모든 양식을 필요에 맞게 조정할 수 있도록 해 줍니다.
 
-간단한 클라이언트측 렌더링을 관리하든, 브라우저 간 호환성을 보장하든, 엄격한 접근성 표준을 준수하든 관계없이 유니버설 편집기는 양식을 만들고 관리할 수 있는 간소화된 솔루션을 제공합니다.
+가벼운 클라이언트측 렌더링을 관리하든, 브라우저 간 호환성을 보장하든, 엄격한 접근성 표준을 준수하든, 범용 편집기는 양식을 만들고 관리하기 위한 간소화된 솔루션을 제공합니다.
 
-![유니버설 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
+![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
 ## EDS Forms용 범용 편집기의 주요 기능
 
@@ -53,7 +53,7 @@ ht-degree: 63%
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="미리 채우기 서비스">
     <h3>미리 채우기 서비스</h3>
-    <p>미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로, 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다.</p>
+    <p>미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="규칙 편집기">
@@ -84,7 +84,7 @@ ht-degree: 63%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="국제화/현지화">
     <h3>게시/게시 취소</h3>
-    <p>몇 번의 클릭만으로 양식을 편집기에서 바로 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있으므로 가용성과 콘텐츠 업데이트를 실시간으로 동적으로 관리할 수 있습니다.</p>
+    <p>양식의 가시성을 쉽게 제어하십시오. 편집기에서 몇 번의 클릭만으로 양식을 바로 게시하거나 게시 취소할 수 있어 실시간으로 가용성과 콘텐츠 업데이트를 동적으로 관리할 수 있습니다.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="제출 액션">
@@ -282,28 +282,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 온보딩
 
-범용 편집기 및 규칙 편집기와 같은 고급 기능을 활성화하려면 공식 이메일 ID에서 aem-forms-ea@adobe.com으로 전자 메일을 보내십시오. Adobe 팀은 양식 구축 경험을 혁신하는 데 도움을 주기 위해 마련되었습니다.
+범용 편집기와 규칙 편집기 같은 고급 기능을 활성화하려면 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 문의하십시오. Adobe 팀은 귀하가 양식 작성 경험을 혁신하도록 지원하고 있습니다.
 
-## 자주 묻는 질문(FAQ)
+## 자주 묻는 질문 (FAQ)
 
-**Q. 유니버설 편집기를 사용할 수 있는 사용자는 누구입니까?**
-유니버설 편집기는 다음과 같은 광범위한 대상을 위해 설계되었습니다.
+**Q. 누가 범용 편집기를 사용할 수 있습니까?**
+범용 편집기는 다음을 포함한 광범위한 대상자를 위해 설계되었습니다.
 
-* 시각적으로 호소력 있는 양식을 작성하고자 하는 콘텐츠 작성자입니다.
-* 고급 사용자 지정 및 통합 기능이 필요한 개발자.
-* 확장 가능하고 안전하며 규정을 준수하는 양식 솔루션을 원하는 기업
+* 시각적으로 매력적인 양식을 작성하고자 하는 콘텐츠 제작자
+* 고급 사용자 정의 및 통합 기능이 필요한 개발자
+* 확장 가능하고 안전하며 규정을 준수하는 양식 솔루션을 원하는 조직
 
 **Q: 범용 편집기로 만든 양식을 기존 시스템에 통합할 수 있습니까?**
-당연하지 유니버설 편집기는 백엔드 시스템과의 원활한 데이터 바인딩을 지원하여 실시간 업데이트와 고급 데이터 매핑을 가능하게 합니다. 또한 작업 관리를 위한 Adobe Workfront과 같은 도구와 통합되고 데이터 제출 워크플로우에 대한 보안 끝점을 지원합니다.
+예. 범용 편집기는 백엔드 시스템과의 원활한 데이터 바인딩을 지원하여 실시간 업데이트와 고급 데이터 매핑을 가능하게 합니다. 작업 관리를 위한 Adobe Workfront와 같은 도구와도 통합되며 데이터 제출 워크플로를 위한 안전한 엔드포인트를 지원합니다.
 
-**Q: 양식 구성 요소를 사용자 지정할 수 있습니까?**
-예. 유니버설 편집기를 사용하면 개발자가 특정 조직의 요구 사항에 맞게 사용자 지정 구성 요소를 만들 수 있습니다. 또한 UI 확장 및 사용자 지정 워크플로우를 통해 편집기의 기능을 확장할 수 있습니다.
+**Q: 양식 구성요소를 사용자 정의할 수 있습니까?**
+예. 범용 편집기를 사용하면 개발자가 조직의 특정 요구 사항에 맞는 사용자 정의 구성 요소를 만들 수 있습니다. 또한 UI 확장 기능 및 사용자 정의 워크플로를 통해 편집기의 기능을 확장할 수도 있습니다.
 
-**Q: 유니버설 편집기에서 접근성을 어떻게 처리합니까?**
-범용 편집기는 WCAG(Web Content Accessibility Guidelines)를 비롯한 접근성 표준을 엄격하게 준수하도록 설계되었습니다. 이렇게 하면 장애가 있는 개인이 양식을 사용할 수 있으므로 포괄적인 경험을 제공할 수 있습니다.
+**Q: 범용 편집기는 접근성을 어떻게 처리합니까?**
+범용 편집기는 WCAG(웹 콘텐츠 접근성 지침)를 포함한 접근성 표준을 엄격히 준수하여 설계되었습니다. 이를 통해 장애가 있는 사용자도 양식을 사용할 수 있어 포괄적인 경험이 가능합니다.
 
 **Q: 양식에서 어떤 종류의 분석을 얻을 수 있습니까?**
-범용 편집기에는 사용자 상호 작용, 양식 제출률 및 전환 지표를 모니터링하는 내장된 분석 및 추적 도구가 포함되어 있습니다. 이러한 통찰력은 더 나은 성능을 위해 양식을 최적화하는 데 도움이 됩니다.
+범용 편집기에는 사용자 상호 작용, 양식 제출률, 전환 지표를 모니터링하는 기본 제공 분석 및 추적 도구가 포함되어 있습니다. 이러한 인사이트는 양식을 최적화하여 더 나은 성과를 얻는 데 도움이 됩니다.
 
 
 ## 양식 만들기 시작

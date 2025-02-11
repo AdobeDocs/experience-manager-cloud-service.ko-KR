@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 
 ## 분류 체계 페이지 만들기 {#creating}
 
-[AEM의 다른 페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md)와 같이 분류법이 만들어집니다.
+[AEM의 다른 모든 페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md)와 같이 분류법이 만들어집니다.
 
 1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)(으)로 이동합니다.
 
@@ -78,7 +78,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 분류 체계의 내용이 선택한 태그 및 네임스페이스에서 자동으로 생성되므로 페이지 편집기에 표시되는 페이지는 읽기 전용입니다. 분류 체계의 내용을 자동으로 생성하는 일종의 필터 역할을 합니다. 따라서 편집기에서 페이지를 직접 편집할 이유가 없습니다.
 
-기본 태그 및 네임스페이스를 업데이트하면 AEM이 분류 체계 페이지의 내용을 자동으로 업데이트합니다. 그러나 변경 내용을 사용자가 사용할 수 있도록 하려면 변경 후 [분류를 다시 게시](#publishing)해야 합니다.
+기본 태그 및 네임스페이스를 업데이트하면 AEM이 분류 체계 페이지의 내용을 자동으로 업데이트합니다. 그러나 이러한 변경 사항을 사용자가 사용할 수 있도록 하려면 변경 후 [분류 체계를 다시 게시](#publishing)해야 합니다.
 
 ## 분류 체계 게시를 위한 paths.json 업데이트 {#paths-json}
 
@@ -112,13 +112,13 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 >[!TIP]
 >
->경로 매핑에 대한 자세한 내용은 [Edge Delivery Services에 대한 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ## 분류 체계 게시 {#publishing}
 
 분류 체계는 게시될 때까지 범용 편집기에서 또는 사용자가 사용할 수 없습니다.
 
-분류 페이지는 [도구 모음의 **빠른 Publish** 또는 **게시 관리** 아이콘을 사용하여](/help/sites-cloud/authoring/sites-console/publishing-pages.md)하여 다른 페이지와 같이 게시됩니다.
+분류 페이지는 [도구 모음의 **빠른 게시** 또는 **게시 관리** 아이콘을 사용하여](/help/sites-cloud/authoring/sites-console/publishing-pages.md)하여 다른 페이지와 같이 게시됩니다.
 
 매번 분류 체계 페이지를 다시 게시해야 합니다.
 
@@ -170,14 +170,14 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 ## 추가 태그 속성 노출 {#additional-properties}
 
-기본적으로 분류법에는 이전 [의 ](#accessing)과(와) 같이 `tag` 및 `title` 값이 포함됩니다. 추가 태그 속성을 노출하도록 분류를 구성할 수 있습니다. 이 예제에서는 태그 설명을 노출합니다.
+기본적으로 분류법에는 이전 [의 ](#accessing)과(와) 같이 `tag` 및 `title` 값이 포함됩니다. 추가 태그 속성을 노출하도록 분류를 구성할 수 있습니다. 이 예제에서는 태그 설명을 노출하겠습니다.
 
-1. 사이트 콘솔을 사용하여 생성한 분류법을 선택합니다.
+1. Sites 콘솔을 사용하여 만든 분류 체계를 선택합니다.
 1. 도구 모음에서 **속성** 아이콘을 탭하거나 클릭합니다.
 1. **추가 속성** 섹션에서 **추가**&#x200B;를 탭하거나 클릭하여 필드를 추가합니다.
-1. 새 필드에 노출할 JRC 속성 이름을 입력합니다. 이 경우 태그 설명에 `jcr:description`을(를) 입력하십시오.
+1. 새 필드에 노출할 JRC 속성 이름을 입력합니다. 이 경우에는 태그 설명을 위해 `jcr:description`을 입력합니다.
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
-1. 분류법을 선택한 상태에서 도구 모음에서 **빠른 Publish**&#x200B;을 탭하거나 클릭합니다.
+1. 분류 체계를 선택한 상태로 도구 모음에서 **빠른 게시**&#x200B;를 탭하거나 클릭합니다.
 
 이제 [분류법에 액세스하면](#accessing)태그 설명(또는 노출하도록 선택한 모든 속성)이 JSON에 포함됩니다.
 
