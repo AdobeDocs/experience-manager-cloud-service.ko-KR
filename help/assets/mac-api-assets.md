@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] HTTP API를 사용하여 디지털 자산 관리{#assets-http-api}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## 개요 {#overview}
 
-[!DNL Assets] HTTP API를 사용하면 [!DNL Experience Manager] 콘텐츠 조각을 사용하여 구조화된 콘텐츠와 함께 메타데이터, 렌디션 및 댓글을 포함하여 디지털 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. `/api/assets`에서 노출되며 REST API로 구현됩니다. 여기에는 [콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이 포함됩니다.
+AEM [!DNL Assets] HTTP API는 /`api/assets`의 REST 인터페이스를 통해 디지털 에셋에서 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 활성화합니다. 이러한 작업은 에셋 메타데이터, 렌디션 및 주석에 적용됩니다. 여기에는 [콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이 포함됩니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 콘텐츠 조각 {#content-fragments}
 
-[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)은(는) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. `standard`개의 자산(예: 이미지 또는 문서)에 몇 가지 차이점이 있으므로 콘텐츠 조각 처리에 몇 가지 추가 규칙이 적용됩니다.
+[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)은(는) 텍스트, 숫자 및 날짜를 저장하는 구조화된 자산입니다. `standard`개의 자산(예: 이미지 또는 문서)에 몇 가지 차이점이 있으므로 콘텐츠 조각 처리에 몇 가지 추가 규칙이 적용됩니다.
 
 자세한 내용은  [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)에서 [콘텐츠 조각 지원을 참조하십시오.
 
@@ -55,7 +55,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 데이터 모델 {#data-model}
 
-[!DNL Assets] HTTP API는 표준 자산의 경우 두 개의 주요 요소, 폴더 및 자산을 노출합니다. 또한 콘텐츠 조각의 구조화된 콘텐츠를 설명하는 사용자 지정 데이터 모델에 대해 보다 자세한 요소를 노출합니다. 자세한 내용은 [콘텐츠 조각 데이터 모델](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)을 참조하세요.
+[!DNL Assets] HTTP API는 주로 폴더와 표준 자산의 두 요소를 노출합니다. 또한 콘텐츠 조각에 사용되는 사용자 지정 데이터 모델에 대한 세부 요소를 제공합니다. 자세한 내용은 콘텐츠 조각 데이터 모델 을 참조하십시오. 자세한 내용은 [콘텐츠 조각 데이터 모델](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)을 참조하세요.
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ### 폴더 {#folders}
 
-폴더는 기존 파일 시스템에서처럼 디렉토리와 같습니다. 폴더에는 에셋, 폴더 또는 폴더와 에셋만 포함될 수 있습니다. 폴더에는 다음과 같은 구성 요소가 있습니다.
+폴더는 기존 파일 시스템에서처럼 디렉토리와 같습니다. 폴더에는 에셋, 하위 폴더 또는 둘 다 포함될 수 있습니다. 폴더에는 다음과 같은 구성 요소가 있습니다.
 
 **엔터티**: 폴더의 엔터티는 폴더 및 에셋일 수 있는 하위 요소입니다.
 
 **속성**:
 
-* `name`은(는) 폴더 이름입니다. 확장이 없는 URL 경로의 마지막 세그먼트와 동일합니다.
-* `title`은(는) 이름 대신 표시할 수 있는 폴더의 선택적 제목입니다.
+* `name`: 폴더 이름(확장명이 없는 URL 경로의 마지막 세그먼트)입니다.
+* `title`: 폴더 이름 대신 표시되는 선택적 제목입니다.
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 **링크** 폴더에는 세 개의 링크가 있습니다.
 
-* `self`: 자체에 연결합니다.
-* `parent`: 상위 폴더에 연결합니다.
-* `thumbnail`: (선택 사항) 폴더 썸네일 이미지에 연결된 링크입니다.
+* `self`: 폴더 자체에 대한 링크입니다.
+* `parent`: 상위 폴더에 대한 링크입니다.
+* `thumbnail`(선택 사항): 폴더 썸네일 이미지에 대한 링크입니다.
 
 ### 자산 {#assets}
 
 [!DNL Experience Manager]에서 자산에 다음 요소가 포함되어 있습니다.
 
-* 에셋의 속성 및 메타데이터.
-* 원래 자산의 바이너리 파일입니다.
-* 구성된 여러 렌디션. 크기가 다른 이미지, 인코딩이 다른 비디오 또는 PDF 또는 [!DNL Adobe InDesign] 파일에서 추출된 페이지일 수 있습니다.
-* 선택적 주석입니다.
+* **속성 및 메타데이터:** 자산에 대한 설명 정보입니다.
+* **이진 파일:** 원래 업로드된 파일입니다.
+* **렌디션:** 다양한 크기의 이미지, 다양한 비디오 인코딩 또는 PDF/Adobe InDesign 파일의 추출된 페이지 등 구성된 여러 렌디션.
+* **댓글(선택 사항):** 사용자가 입력한 설명.
 
 콘텐츠 조각의 요소에 대한 자세한 내용은 [Experience Manager Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)을 참조하십시오.
 
@@ -173,7 +173,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 에셋 만들기 {#create-an-asset}
 
-에셋을 만드는 방법에 대한 자세한 내용은 [에셋 업로드](developer-reference-material-apis.md)를 참조하십시오. HTTP API를 사용하여 에셋을 만들 수 없습니다.
+이 HTTP API를 통해서는 자산 만들기가 지원되지 않습니다. 에셋을 만들려면 [에셋 업로드](developer-reference-material-apis.md) API를 사용하십시오.
 
 ## 자산 바이너리 업데이트 {#update-asset-binary}
 
@@ -181,7 +181,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 에셋의 메타데이터 업데이트 {#update-asset-metadata}
 
-자산 메타데이터 속성을 업데이트합니다. `dc:` 네임스페이스의 속성을 업데이트하는 경우 API는 `jcr` 네임스페이스의 동일한 속성을 업데이트합니다. API가 두 네임스페이스 아래의 속성을 동기화하지 않습니다.
+이 작업은 자산의 메타데이터를 업데이트합니다. `dc:` 네임스페이스의 속성을 업데이트할 때 해당 `jcr:` 속성이 업데이트됩니다. 그러나 API는 두 네임스페이스 아래의 속성을 동기화하지 않습니다.
 
 **요청**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 에셋에 대한 렌디션을 만듭니다. 요청 매개변수 이름이 제공되지 않으면 파일 이름이 렌디션 이름으로 사용됩니다.
 
-**매개 변수**: 매개 변수는 렌디션 이름의 경우 `name`이고 파일 참조로는 `file`입니다.
+**매개 변수**: 매개 변수는 다음과 같습니다.
+
+`name`: 렌디션 이름입니다.
+`file`: 참조용 렌디션의 이진 파일입니다.
 
 **요청**
 
@@ -292,9 +295,9 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 팁, 모범 사례 및 제한 사항 {#tips-limitations}
 
-* [!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 에셋 및 해당 표현물을 사용할 수 없습니다. [!UICONTROL 설정 시간]이(가) 미래이거나 [!UICONTROL 해제 시간]이(가) 과거인 경우 API가 404 오류 메시지를 반환합니다.
+* [!UICONTROL 해제 시간]에 도달하면 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 Assets 및 해당 표현물을 사용할 수 없게 됩니다. [!UICONTROL 설정 시간]이 미래이거나 [!UICONTROL 해제 시간]이 과거인 경우 API가 404 오류를 반환합니다.
 
-* Assets HTTP API는 전체 메타데이터를 반환하지 않습니다. 네임스페이스는 하드코딩되고 해당 네임스페이스만 반환됩니다. 전체 메타데이터에 대해서는 자산 경로 `/jcr_content/metadata.json`을(를) 참조하십시오.
+* Assets HTTP API는 메타데이터의 하위 집합만 반환합니다. 네임스페이스는 하드코딩되고 해당 네임스페이스만 반환됩니다. 전체 메타데이터에 대해서는 자산 경로 `/jcr_content/metadata.json`을(를) 참조하십시오.
 
 * 폴더 또는 에셋의 일부 속성은 API를 사용하여 업데이트할 때 다른 접두사에 매핑됩니다. `jcr:title`, `jcr:description` 및 `jcr:language`의 `jcr` 접두사가 `dc` 접두사로 대체되었습니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`에는 각각 `jcr:title` 및 `jcr:description`의 값이 포함됩니다.
 

@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1377'
 ht-degree: 3%
 
 ---
 
+
 # 레이아웃 컨테이너 및 레이아웃 모드 구성 {#configuring-layout-container-and-layout-mode}
 
-[응답형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)은(는) [응답형 웹 디자인](https://en.wikipedia.org/wiki/Responsive_web_design)을 구현하기 위한 메커니즘입니다. 이를 통해 콘텐츠 작성자는 사용자가 사용하는 디바이스에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
+콘텐츠 작성자가 반응형 레이아웃을 사용할 수 있도록 레이아웃 컨테이너 및 레이아웃 모드를 구성하는 방법을 알아봅니다.
+
+>[!TIP]
+>
+>이 문서에서는 사이트 관리자가 반응형 웹 디자인을 지원하도록 레이아웃 컨테이너를 구성하는 방법에 대해 설명합니다. 추가 리소스를 사용할 수 있습니다.
+>
+>* 콘텐츠 작성자의 경우 콘텐츠 페이지에서 응답형 디자인 기능을 사용하는 방법에 대한 자세한 내용은 [응답형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md) 문서에서 확인할 수 있습니다.
+>* 개발자의 경우 레이아웃 컨테이너 및 응답형 그리드에 대한 자세한 내용은 사이트를 디자인할 때 레이아웃 컨테이너 및 응답형 그리드를 사용하는 데 필요한 팁과 정보를 제공하는 [응답형 디자인 문서](/help/implementing/developing/introduction/responsive-design.md)에 설명되어 있습니다.
+
+## 개요 {#overview}
+
+응답형 레이아웃은 [응답형 웹 디자인](https://en.wikipedia.org/wiki/Responsive_web_design)을 구현하기 위한 메커니즘입니다. 이를 통해 콘텐츠 작성자는 사용자가 사용하는 디바이스에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
@@ -229,3 +241,9 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 ### 레이아웃 컨테이너의 그리드 구성 {#configure-the-grid-of-the-layout-container}
 
 페이지 템플릿을 편집하여 [레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성](/help/sites-cloud/authoring/page-editor/templates.md)할 수 있습니다.
+
+### 중첩된 응답형 격자 {#nested-responsive-grids}
+
+Adobe이 권장하는 모범 사례는 구조를 최대한 평평하게 유지하는 것입니다.
+
+중첩된 응답형 그리드를 사용하지 않을 수 없는 경우에는 개발자 문서 [응답형 디자인](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)을 참조하십시오.
