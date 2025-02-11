@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1709'
 ht-degree: 6%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 6%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
-## 개요 {#overview}
+## AEM [!DNL Assets] HTTP API 시작 {#overview}
 
-AEM [!DNL Assets] HTTP API는 /`api/assets`의 REST 인터페이스를 통해 디지털 에셋에서 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 활성화합니다. 이러한 작업은 에셋 메타데이터, 렌디션 및 주석에 적용됩니다. 여기에는 [콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이 포함됩니다.
+AEM [!DNL Assets] HTTP API는 /`api/assets`에서 사용할 수 있는 REST 인터페이스를 통해 디지털 에셋에서 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 활성화합니다. 이러한 작업은 에셋 메타데이터, 렌디션 및 주석에 적용됩니다. 여기에는 [콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이 포함됩니다.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 >
 >일반적으로 에셋 또는 바이너리(예: 렌디션)를 업로드하거나 업데이트하는 것과 관련된 모든 API 호출은 [!DNL Experience Manager]에서 [!DNL Cloud Service] 배포로 더 이상 사용되지 않습니다. 바이너리를 업로드하려면 [직접 바이너리 업로드 API](developer-reference-material-apis.md#asset-upload)를 대신 사용하십시오.
 
-## 콘텐츠 조각 {#content-fragments}
+## 콘텐츠 조각 관리 {#content-fragments}
 
 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)은(는) 텍스트, 숫자 및 날짜를 저장하는 구조화된 자산입니다. `standard`개의 자산(예: 이미지 또는 문서)에 몇 가지 차이점이 있으므로 콘텐츠 조각 처리에 몇 가지 추가 규칙이 적용됩니다.
 
@@ -53,7 +53,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 >
 >[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
-## 데이터 모델 {#data-model}
+## 데이터 모델 검사 {#data-model}
 
 [!DNL Assets] HTTP API는 주로 폴더와 표준 자산의 두 요소를 노출합니다. 또한 콘텐츠 조각에 사용되는 사용자 지정 데이터 모델에 대한 세부 요소를 제공합니다. 자세한 내용은 콘텐츠 조각 데이터 모델 을 참조하십시오. 자세한 내용은 [콘텐츠 조각 데이터 모델](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)을 참조하세요.
 
@@ -61,7 +61,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 >
 >[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
-### 폴더 {#folders}
+### 폴더 관리 {#folders}
 
 폴더는 기존 파일 시스템에서처럼 디렉토리와 같습니다. 폴더에는 에셋, 하위 폴더 또는 둘 다 포함될 수 있습니다. 폴더에는 다음과 같은 구성 요소가 있습니다.
 
@@ -82,7 +82,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * `parent`: 상위 폴더에 대한 링크입니다.
 * `thumbnail`(선택 사항): 폴더 썸네일 이미지에 대한 링크입니다.
 
-### 자산 {#assets}
+### 자산 관리 {#assets}
 
 [!DNL Experience Manager]에서 자산에 다음 요소가 포함되어 있습니다.
 
@@ -103,7 +103,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * 속성.
 * 링크.
 
-## 사용 가능한 기능 {#available-features}
+## 사용 가능한 API 작업 탐색 {#available-features}
 
 [!DNL Assets] HTTP API에는 다음 기능이 포함되어 있습니다.
 
@@ -293,7 +293,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾거나 액세스할 수 없는 경우.
 * 500 - 내부 서버 오류 - 다른 문제가 발생한 경우.
 
-## 팁, 모범 사례 및 제한 사항 {#tips-limitations}
+## 모범 사례 및 참고 제한 사항 준수 {#tips-limitations}
 
 * [!UICONTROL 해제 시간]에 도달하면 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 Assets 및 해당 표현물을 사용할 수 없게 됩니다. [!UICONTROL 설정 시간]이 미래이거나 [!UICONTROL 해제 시간]이 과거인 경우 API가 404 오류를 반환합니다.
 
@@ -301,7 +301,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 * 폴더 또는 에셋의 일부 속성은 API를 사용하여 업데이트할 때 다른 접두사에 매핑됩니다. `jcr:title`, `jcr:description` 및 `jcr:language`의 `jcr` 접두사가 `dc` 접두사로 대체되었습니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`에는 각각 `jcr:title` 및 `jcr:description`의 값이 포함됩니다.
 
-**추가 참조**
+**관련 리소스 살펴보기**
 
 * [자산 번역](translate-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)
