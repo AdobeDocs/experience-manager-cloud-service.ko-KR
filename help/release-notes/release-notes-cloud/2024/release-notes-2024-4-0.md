@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.4.0 �
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2707'
 ht-degree: 97%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 97%
 
 **변형 생성**
 
-이제 클라우드 서비스에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
+이제 Cloud Service에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
 
 **콘텐츠 조각 콘솔에서 자산 찾아보기**
 
@@ -166,7 +166,7 @@ ht-degree: 97%
 * **[RUM(Real Use Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**를 활용하여 AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
 RUM(Real Use Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
 
-  이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 RUM을 활성화하고자 하는 각 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그런 다음 Adobe의 제품 팀이 RUM(Real Use Monitoring) 데이터 서비스를 활성화합니다.
+  이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 RUM을 활성화하고자 하는 각 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그런 다음 Adobe 제품 팀이 RUM(Real Use Monitoring) 데이터 서비스를 활성화합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -286,13 +286,11 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 관리자는 일반 REST 클라이언트, Salsify, Akeneo 및 Microsoft Azure DevOps Boards(ADO)와 같은 일부 커넥터에 대해 여러 리소스 URL을 구성할 수 있습니다.
 그런 다음 작성자는 데이터 소스에 연결하여 생성기를 사용하여 콘텐츠 스니펫이나 주제를 만듭니다. 이 기능을 사용하면 각 URL에 대한 데이터 소스를 만들 필요가 없기 때문에 유용합니다. 이는 단일 콘텐츠 스니펫 또는 주제의 특정 데이터 소스에 대한 모든 리소스에서 데이터를 빠르게 가져오는 데 도움이 됩니다. 데이터 소스 커넥터에 대한 자세한 내용과 [사용자 인터페이스에서 데이터 소스 커넥터를 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)을 확인하십시오. [데이터 소스의 데이터를 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)에 대해 알아봅니다.
 
-새로운 기능 및 개선 사항에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)을 참조하십시오.
-
-이 릴리스에서 해결된 문제 목록을 보려면 [2024.4.0 릴리스에서 해결된 문제](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)를 확인하십시오.
+새로운 기능 및 향상된 기능에 대한 자세한 내용은 [Experience Manager Guides 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)를 참조하세요.
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
