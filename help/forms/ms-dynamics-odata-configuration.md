@@ -5,7 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+hide: true
+hidefromtoc: true
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 2%
@@ -117,7 +119,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
 ## [!DNL Microsoft Dynamics] 서비스에 대한 클라우드 서비스 구성 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-OData 서비스는 서비스 루트 URL로 식별됩니다. as a Cloud Service [!DNL Experience Manager] OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
+OData 서비스는 서비스 루트 URL로 식별됩니다. [!DNL Experience Manager] as a Cloud Service에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
@@ -125,7 +127,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. as a Cloud Service [
 >
 >온라인 또는 온-프레미스에서 [!DNL Microsoft Dynamics 365]을(를) 구성하기 위한 단계별 안내서는 [[!DNL Microsoft Dynamics] OData 구성](ms-dynamics-odata-configuration.md)을 참조하십시오.
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder)을 참조하십시오.
 

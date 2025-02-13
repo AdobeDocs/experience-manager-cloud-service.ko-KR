@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 98%
+source-wordcount: '1394'
+ht-degree: 97%
 
 ---
 # 스니펫 {#snippets}
@@ -43,7 +43,8 @@ ht-degree: 98%
 ## 적응형 양식 제출 액션 {#af-submit-action}
 
 * [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
-* [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
+* [SharePoint 문서 라이브러리에 제출](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [SharePoint 목록에 제출](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Forms 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Azure Blob 스토리지에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 98%
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
-* [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Microsoft에 적응형 양식 연결](/help/forms/configure-msdynamics.md)
 * [적응형 양식을 Adobe Marketo Engage에 연결](/help/forms/integrate-form-to-marketo-engage.md)
 * [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
