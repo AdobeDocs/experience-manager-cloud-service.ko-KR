@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
       + [리디렉션](/help/edge/docs/redirects.md)
    + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
+      + [Edge Delivery Services Forms 작동 방식](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + 시작하기 {#getting-started-edge-delivery-services-forms}
          + [시작하기](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [개요 - Forms용 Edge Delivery Services용 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [규칙 편집기를 사용하여 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [규칙 편집기를 사용하여에 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)

@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1778'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,6 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 ## 사전 요구 사항
 
 * GitHub 계정이 있고 Git 기본 사항을 이해하고 있습니다.
-* Google 또는 Microsoft SharePoint 계정이 있습니다.
 * HTML, CSS 및 JavaScript의 기본 사항을 이해합니다.
 * 로컬 개발을 위해 Node/npm이 설치되어 있습니다.
 
@@ -156,14 +155,33 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 >[!NOTE]
 >
 >
-> 이 단계는 [AEM 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
+> 이 단계는 [AEM 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)을(를) 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
-통합하는 방법은 다음과 같습니다.
+통합하려면:
+1. **필요한 파일 및 폴더 추가**
+   1. [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)의 다음 폴더 및 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-1. 적응형 양식 블록 GitHub 저장소 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)를 컴퓨터에 복제합니다.
-1. 다운로드한 폴더 내에서 `blocks/form` 폴더를 찾아 복사합니다.
-1. AEM 프로젝트 GitHub 저장소를 컴퓨터에 복제합니다.
-1. 이제 로컬 AEM 프로젝트 저장소의 `blocks` 폴더로 이동하여 복사한 양식 폴더를 붙여넣습니다.
+      * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 폴더
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 폴더
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
+
+1. **구성 요소 정의 및 모델 파일 업데이트**
+   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 [_component-definition.json 파일의 변경 내용으로 업데이트합니다.
+
+   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 AEM Forms Boilerplate의 [_component-models.json 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **편집기 스크립트에 양식 편집기 추가**
+   1. AEM 프로젝트의 `../scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **ESLint 구성 파일 업데이트**
+   1. 양식 블록 규칙 엔진과 관련된 오류를 방지하려면 AEM 프로젝트의 `../.eslintignore` 파일로 이동하여 다음 코드 행을 추가하십시오.
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
 1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
 
 이번 단계가 끝났습니다! 적응형 양식 블록은 이제 AEM 프로젝트의 일부입니다. 이제 [AEM 프로젝트에 양식을 만들고 추가](#add-edge-delivery-services-forms-to-aem-site-project)할 수 있습니다.
@@ -173,14 +191,14 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프로젝트를 편집하고 AEM 프로젝트 페이지에 Edge Delivery Services 양식을 포함하도록 적응형 양식 섹션을 추가할 수 있습니다.
 
 1. AEM 프로젝트 페이지에 적응형 양식 섹션을 추가합니다. 추가 방법은 다음과 같습니다.
-   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 **편집**을 클릭합니다. AEM 프로젝트 페이지가 편집을 위해 범용 편집기에서 열립니다.
+   1. 사이트 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**을 클릭합니다. 편집할 AEM 프로젝트 페이지가 유니버설 편집기에서 열립니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
-   1. 콘텐츠 트리를 열고 적응형 양식 섹션을 추가할 위치로 이동합니다.
+   1. 콘텐츠 트리를 열고 적응형 양식 섹션을 추가할 섹션으로 이동합니다.
    1. **[!UICONTROL 추가]** 아이콘을 클릭하고 구성 요소 목록에서 **[!UICONTROL 적응형 양식]** 구성 요소를 선택합니다.
 
    ![콘텐츠 트리](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   지정된 위치에 적응형 양식 섹션이 추가됩니다. 이제 AEM 프로젝트 페이지에 양식 구성 요소를 추가할 수 있습니다.
+   적응형 양식 섹션이 추가됩니다. 이제 AEM 프로젝트 페이지에 양식 구성 요소를 추가할 수 있습니다.
 
 1. 추가된 적응형 양식 섹션에 양식 구성 요소를 추가합니다. 양식 구성 요소를 추가하는 방법은 다음과 같습니다.
    1. 콘텐츠 트리에서 추가된 적응형 양식 섹션으로 이동합니다.
@@ -198,13 +216,16 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 
       ![속성 열기](/help/edge/docs/forms/assets/component-properties.png)
 
-      아래 스크린샷에는 WYSIWYG 작성 기능을 사용하여 AEM 프로젝트에서 작성된 양식이 표시됩니다.
+   1. 양식을 미리 봅니다.
+아래 스크린샷에는 WYSIWYG 작성 기능을 사용하여 AEM 프로젝트에서 작성된 양식이 표시됩니다.
 
       ![추가된 양식](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-   >[!NOTE]
-   >
-   > 변경 사항을 적용한 후에는 AEM 프로젝트 페이지를 다시 게시하는 것이 중요합니다. 그렇지 않으면 브라우저에 업데이트 내용이 표시되지 않습니다.
+      미리보기에 만족하면 사용자는 페이지 게시를 진행할 수 있습니다.
+
+      >[!NOTE]
+      >
+      > 변경 사항을 적용한 후에는 AEM 프로젝트 페이지를 다시 게시하는 것이 중요합니다. 그렇지 않으면 브라우저에 업데이트 내용이 표시되지 않습니다.
 
 1. AEM 프로젝트 페이지를 다시 게시합니다.
 
@@ -257,7 +278,8 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 
 변경 작업을 완료한 후 Git 명령을 사용하여 변경 사항을 커밋하고 푸시합니다. 이렇게 하면 다음 URL에서 액세스할 수 있는 미리보기 및 프로덕션 환경이 업데이트됩니다(플레이스홀더를 프로젝트 세부 정보로 바꾸기).
 
-미리보기: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+미리 보기: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+
 프로덕션: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
@@ -268,5 +290,9 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
 
-<!-- * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. -->
+* **모듈 경로 오류 해결:**
+“모듈 “../../scripts/lib-franklin.js”에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
+
+## 추가 참조
+
+{{see-more-forms-eds}}

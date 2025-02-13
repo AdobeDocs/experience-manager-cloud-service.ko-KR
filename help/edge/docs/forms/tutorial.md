@@ -4,9 +4,9 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -67,8 +67,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 분기 이름이 `main`이고 저장소는 `wefinance`이고 소유자는 `wkndforms`인 경우 웹 사이트가 `https://main--wefinance--wkndforms.aem.page`에 실행되고 실행됩니다
-&lt;!—(https://main--wefinance--wkndform.aem.page)-->
+   예를 들어 분기 이름이 `main`이고 저장소가 `wefinance`이며 소유자가 `wkndforms`인 경우 웹 사이트는 `https://main--wefinance--wkndforms.aem.page`에서 실행됩니다.
+&lt;!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### 자체 콘텐츠 소스 연결
 
@@ -89,11 +89,11 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    Adobe Experience Manager 사용자에게 폴더에 대한 편집 권한을 제공해야 합니다.
 
-   ![AEM 사용자와 폴더 공유, 편집 권한 제공-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 -SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![AEM 사용자와 폴더 공유, 편집 권한 제공- Google 드라이브](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. [예제 콘텐츠](/help/edge/assets/wefinance1.zip)를 폴더에 복사합니다. 복사하는 방법은 다음과 같습니다.
+1. [예시 콘텐츠](/help/edge/assets/wefinance1.zip)를 폴더에 복사합니다. 복사하는 방법은 다음과 같습니다.
 
    1. 다운로드한 폴더의 압축을 풀고 콘텐츠를 복사합니다.
 
@@ -112,7 +112,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    1. 앞서 AEM Forms 상용구를 사용하여 만든 GitHub 저장소로 이동합니다.
    1. 편집할 `fstab.yaml`을 엽니다.
-   1. 기존 참조를 AEM 사용자와 공유한 폴더의 경로로 바꿉니다(forms@adobe.com).
+   1. 기존 참조를 AEM 사용자(forms@adobe.com)와 공유한 폴더 경로로 바꿉니다.
 
       ![Google Drive의 샘플 콘텐츠](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -182,8 +182,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식 이름을 `enquiry`(으)로 사용하는 경우 URL은 `https://main--wefinance--wkndform.aem.live/enquiry`입니다.
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
+   예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndform” 계정 아래에서 “main” 분기 및 양식 이름을 `enquiry`로 사용하는 경우 URL은 다음과 같습니다. `https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### 양식 만들기
 
@@ -220,10 +220,10 @@ AEM Sidekick을 사용하여 문의 문서를 미리 보고 게시합니다.
 
 ![문의 양식](/help/edge/assets/updated-form.png)
 
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 URL: `https://main--wefinance--wkndform.aem.live/enquiry`
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 새 양식 만들기 및 게시에 대한 자세한 내용은 [양식 만들기](/help/edge/docs/forms/create-forms.md) 안내서를 참조하십시오.
@@ -231,7 +231,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 ### 스타일 및 기능 개발 시작
 
 
-즉시 로컬 AEM 개발 환경을 시작하고 실행하려면 다음을 수행하십시오.
+로컬 AEM 개발 환경을 바로 시작하고 실행하려면 다음 작업을 수행하십시오.
 
 1. AEM CLI 설치: AEM CLI는 개발 작업을 단순화합니다. npm을 사용하여 전역적으로 설치해 보겠습니다.
 
@@ -277,12 +277,31 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 통합하는 방법은 다음과 같습니다.
 
-1. 적응형 양식 블록 저장소 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)를 컴퓨터에 복제합니다.
+1. **필요한 파일 및 폴더 추가**
+   1. [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)의 다음 폴더 및 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-1. 다운로드한 폴더 내에서 `blocks/form` 폴더를 찾습니다. 이 폴더를 복사합니다. 이제 AEM 프로젝트의 로컬 `blocks` 폴더로 이동하여 복사한 양식 폴더를 여기에 붙여넣습니다.
+      * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 폴더
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 폴더
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 
-1. GitHub의 AEM 프로젝트에 이러한 변경 사항을 커밋하고 푸시합니다.
+1. **구성 요소 정의 및 모델 파일 업데이트**
+   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 [_component-definition.json 파일의 변경 내용으로 업데이트합니다.
 
+   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 AEM Forms Boilerplate의 [_component-models.json 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **편집기 스크립트에 양식 편집기 추가**
+   1. AEM 프로젝트의 `../scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **ESLint 구성 파일 업데이트**
+   1. 양식 블록 규칙 엔진과 관련된 오류를 방지하려면 AEM 프로젝트의 `../.eslintignore` 파일로 이동하여 다음 코드 행을 추가하십시오.
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
 
 이번 단계가 끝났습니다! 적응형 양식 블록은 이제 AEM 프로젝트의 일부입니다. AEM 페이지에 양식을 만들고 추가할 수 있습니다.
 

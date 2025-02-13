@@ -4,7 +4,7 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 508265c72f458b062e1667fd42403743fa293586
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 <span class="preview"> 이 문서에는 시험판 기능인 **초안** 기능에 대한 내용이 포함되어 있습니다. 이 프리릴리스 기능은 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해서만 액세스할 수 있습니다.</span>
 
-양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM에서는 AEM Sites 페이지에 초안 및 제출을 표시하는 기본 제공 **초안 및 제출** 양식 포털 구성 요소를 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
+양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM은 AEM Sites 페이지에 초안 및 제출을 표시하는 **초안 및 제출** Forms 포털 구성 요소를 즉시 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
 ![초안 아이콘](assets/drafts-component.png)
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 **초안 및 제출** 구성 요소에는 AEM Sites 페이지에 초안을 저장하고 나열하기 위한 저장소 설정이 필요합니다. 통합 스토리지 커넥터는 AEM을 외부 스토리지와 연결하는 프레임워크를 제공합니다. 양식을 초안으로 저장하려면 Azure 저장소 계정 및 [!DNL Azure] 저장소 계정에 대한 액세스 권한을 부여하는 액세스 키가 있는지 확인하세요. Azure 스토리지 계정과 액세스 키가 있으면 다음 단계를 수행하여 Azure 스토리지 구성을 만듭니다.
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
 
    ![Azure 저장소 카드 선택](/help/forms/assets/save-form-as-draft-azure-card.png)
 

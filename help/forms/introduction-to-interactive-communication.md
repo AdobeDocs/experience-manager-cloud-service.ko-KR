@@ -3,13 +3,13 @@ title: 대화형 통신 소개
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%
 
 ---
-
 
 # 대화형 통신
 
@@ -19,7 +19,17 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 금융 기관에서 계좌 명세서를 생성하고 정부 기관에서 혜택 공지를 간소화하는 Interactive Communications는 쉽고 효율적으로 고품질, 보안 및 법적 규정을 준수하는 서신을 작성하는 데 유용한 도구입니다.
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![인터랙티브 커뮤니케이션 편집기](/help/forms/assets/ic-editor.png)
+
 
 ## 핵심 기능
 
@@ -36,12 +46,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 | **리치 미디어** | 텍스트, 이미지 및 대화형 요소를 원활하게 통합 |
 | **버전 제어** | 변경 내용 추적 및 문서 기록 유지 |
 | **템플릿 지원** | 효율적인 문서 생성을 위해 처음부터 새로 만들거나 템플릿을 사용합니다. |
-| **클라우드 통합** | AEM Formsas a Cloud Service 에서 직접 문서 편집 |
+| **클라우드 통합** | AEM Forms as a Cloud Service에서 직접 문서 편집 |
 
 
 ## 온보딩
 
-Forms as a Cloud Service 초기 배포를 위한 액세스 프로그램(Early Access program)에서 대화형 통신 편집기를 사용할 수 있습니다. 조직 ID에 대한 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)로 Forms as a Cloud Service 배포에 대한 프로그램 세부 정보를 전자 메일로 보내십시오. 액세스 권한이 제공되면 [첫 번째 서신 만들기](https://video.tv.adobe.com/v/3444094/)를 시작합니다.
+대화형 통신 편집기는 Forms as a Cloud Service 배포의 조기 액세스 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 조직 ID와 Forms as a Cloud Service 배포에 대한 프로그램 세부 정보를 전자 메일로 보내십시오. 액세스 권한이 제공되면 [첫 번째 서신 만들기](https://video.tv.adobe.com/v/3444094/)를 시작합니다.
 
 
 ## 다음
