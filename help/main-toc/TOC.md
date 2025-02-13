@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
+source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 99%
@@ -1036,7 +1036,7 @@ ht-degree: 99%
          + [개요 - Forms용 Edge Delivery Services용 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [규칙 편집기를 사용하여에 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)

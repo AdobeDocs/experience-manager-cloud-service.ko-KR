@@ -3,10 +3,10 @@ title: 적응형 Forms에 대한 기본 제공 양식 데이터 모델을 Micros
 description: Microsoft Dynamics 365를 적응형 Forms과 통합하는 방법을 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -68,7 +68,8 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
 위의 사전 요구 사항을 구성했으면 적응형 Forms과 Microsoft® Dynamics 365의 통합을 진행할 수 있습니다. 양식 제출 시 Microsoft® Dynamics 365로 데이터를 전송하려면 아래 단계를 따르십시오.
 
-[1. Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)에 대한 클라우드 서비스 구성
+[1. Microsoft Dynamics에 대한 클라우드 서비스 구성](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
 [2. 양식 데이터 모델(FDM) 만들기](#2-create-form-data-model-fdm)
 
 ### 1. Microsoft Dynamics에 대한 클라우드 서비스 구성
