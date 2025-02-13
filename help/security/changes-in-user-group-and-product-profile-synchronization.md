@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 79%
 
 AEM as a Cloud Service에 사용자가 로그인하거나 액세스 토큰이 사용될 때 Adobe Admin Console의 사용자 그룹, 제품 프로필 및 제품 프로필 서비스가 AEM 저장소에 그룹으로 동기화됩니다.
 
-AEM 유지 관리 릴리스 19149부터는 그룹 동기화 동작이 변경되어 UI가 복잡해지고 성능이 최적화됩니다. 특히 다음 두 범주의 AEM 그룹 구성원은 더 이상 동기화되지 않습니다.
+AEM 유지 관리 릴리스 19149부터 UI 혼잡을 줄이고 성능을 최적화하기 위해 그룹 동기화 동작이 변경되었습니다. 구체적으로 다음 두 가지 AEM 그룹 카테고리의 사용자 그룹 멤버십은 더 이상 동기화되지 않습니다.
 
 1. `GROUP_NAME_SUFFIX` 접미사가 포함된 AEM 그룹 이러한 그룹은 Adobe Developer Console에는 표시되지 않지만 아래와 같이 AEM 그룹 관리 화면에 표시됩니다. 예기치 않게 AEM 애플리케이션에서 이러한 그룹을 참조하는 경우, 해당 그룹 대신 접미사가 없는 Adobe Admin Console 사용자 그룹을 참조해야 합니다.
 
@@ -28,7 +28,7 @@ AEM 유지 관리 릴리스 19149부터는 그룹 동기화 동작이 변경되�
    * 다른 Adobe 제품과 관련됨
    * 다른 AEM 프로그램과 관련됨
    * 동일한 AEM 프로그램의 다른 AEM 환경과 관련됨
-   * Cloud Manager와 관련됨(예: `Business Owner - Cloud Service`)
+   * Cloud Manager와 관련됨 (예: `Business Owner - Cloud Service`)
 
    예를 들어 아래 이미지에는 접미사가 현재 환경과 관련이 없는 `AEM Administrators-<suffix>` 또는 `AEM Users-<suffix>` 패턴의 행이 많이 나타납니다.
 
@@ -44,4 +44,4 @@ Cloud Manager의 환경 동작 메뉴에서 **액세스 관리 - 작성자 프�
 
 AEM 애플리케이션이 더 이상 AEM에 표시되지 않는 그룹을 참조하는 경우에는 i) 올바른 AEM 인스턴스의 제품 프로필 또는 ii) Adobe Admin Console 사용자 그룹을 사용하도록 변경해야 합니다.
 
-사용자의 그룹 멤버십은 환경에 로그인할 때 동기화되며 현재 환경과 관련이 없는 그룹에서 제거됩니다. 그룹 자체는 유지되며 기능이 활성화된 이후 로그인하지 않은 사용자를 포함합니다.
+사용자의 그룹 멤버십은 환경에 로그인하면 동기화되고, 현재 환경과 관련이 없는 그룹에서는 제거됩니다. 그룹 자체는 그대로 유지되며, 해당 기능이 활성화된 이후 로그인하지 않은 사용자도 포함합니다.
