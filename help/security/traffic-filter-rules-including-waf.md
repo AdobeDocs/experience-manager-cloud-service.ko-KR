@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
-트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 명령줄 도구를 사용하여 RDE(Rapid Development Environment)에 구성 파일을 배포할 수 있습니다.
+트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이징, 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
 [튜토리얼을 따라](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
@@ -63,7 +63,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서에서 설명하는 대로 트래픽 필터 규칙은 Cloud Manager의 [config 파이프라인](/help/operations/config-pipeline.md)을 사용하여 Adobe 관리 CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
+이 문서에서 설명하는 대로 트래픽 필터 규칙은 Adobe의 [config 파이프라인](/help/operations/config-pipeline.md)을 사용하여 Cloud Manager Managed CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 

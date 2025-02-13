@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.1.0 릴리스 일자는 2025년 1�
       * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 2월부터 샌드박스 및 개발 환경을 대상으로 출시되고 4월에는 프로덕션 환경으로 확대됩니다.
       * Java 21 런타임 *더 일찍* 채택하고자 하는 Java 11 빌드 고객은 Adobe([aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com))로 문의할 수 있습니다.
 
-* **&quot;CDN 구성&quot;이 &quot;도메인 매핑&quot;으로 이름이 변경됨 :** AEM Cloud Manager의 사용자 인터페이스 개선 사항의 일부로 이제 &quot;CDN 구성&quot; 레이블의 이름이 &quot;도메인 매핑&quot;으로 변경됩니다. 이 변경으로 용어와 기능 간의 일치성이 개선되었습니다. <!-- CMGR-64738 -->
+* **“콘텐츠 전송 네트워크 구성”이 “도메인 매핑”으로 이름 변경:** AEM Cloud Manager의 사용자 인터페이스 개선의 일환으로 “콘텐츠 전송 네트워크 구성”이라는 레이블이 이제 “도메인 매핑”으로 이름이 변경되었습니다. 이 변경으로 용어와 기능 간의 일치성이 개선되었습니다. <!-- CMGR-64738 -->
 
   ![사용자 인터페이스에서 “CDN 구성”이 “도메인 매핑”으로 이름 변경](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -96,11 +96,11 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 
 * **얼리 어답터 프로그램 업데이트 - Bitbucket 및 GitLab에 대한 PR 유효성 검 지원:** Cloud Manager는 이제 클라우드와 자체 호스팅 버전의 Bitbucket 및 GitLab 모두에 대한 가져오기 요청 (PR) 유효성 검사를 지원합니다. 이 기능을 통해 고객은 PR을 병합하기 전에 Adobe의 코드 품질 임계값에 따라 코드 변경 사항을 테스트할 수 있습니다. 이러한 개선은 병합 전에 더 높은 코드 품질을 보장함으로써, 프로덕션 파이프라인에서 코드 변경 성공률을 크게 높이고 시장 출시 기간을 단축하며 개발 워크플로를 간소화합니다.
 
-  이제 GitLab 및 Bitbucket에 대한 지원을 통해 &quot;자신만의 Git을 가져오세요&quot;에 대한 자세한 정보와 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 노트](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
+  “자체 Git 가져오기”에 대한 자세히 알아보고(이제 GitLab 및 Bitbucket 지원 포함) 얼리 어답터로 등록하려면 [Cloud Manager 2024년 10월 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)를 참조하십시오.
 
-* **고급 테스트 환경:** 개발 및 프로덕션 사이의 간극을 메우기 위해 특별히 빌드된 솔루션입니다. 엔터프라이즈 요구 사항에 맞게 설계된 이 환경은 정확한 사용자 승인 테스트(UAT) 및 철저한 성능 평가를 지원하기 위해 프로덕션 수준 사양을 복제합니다.
+* **고급 테스트 환경:** 개발과 프로덕션 간의 격차를 메우기 위해 특별히 고안된 솔루션입니다. 기업의 요구에 맞춰 설계된 이 환경은 프로덕션 수준의 사양을 복제하여 정확한 UAT(사용자 승인 테스트)와 철저한 성능 평가를 지원합니다.
 
-  얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAaa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7A cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi6Ik1haWLCVCI6Mn0%7c%7D%7C prta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)한 다음 `OrgID`과(와) 함께 [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)에 전자 메일을 보내십시오.
+  얼리 어답터 프로그램에 참가하려면 [이 양식을 작성](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)한 다음 `OrgID`과(와) 함께 [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)에 전자 메일을 보내십시오.
 
 
 
