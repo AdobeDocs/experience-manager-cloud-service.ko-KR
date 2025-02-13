@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.2.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
+source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 35%
+source-wordcount: '639'
+ht-degree: 18%
 
 ---
 
@@ -28,45 +28,49 @@ AEM as a Cloud Service의 Cloud Manager 2025.2.0 릴리스 일자는 2025년 2�
 
 ## 새로운 기능 {#what-is-new}
 
-* **코드 품질 규칙을 업데이트합니다.**
-2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계에서 이제 업그레이드된 SonarQube 버전 9.9.5.90363이 사용됩니다.
+* **코드 품질 규칙 업데이트**
 
-  [이 링크](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에서 AEM as a Cloud Service의 Cloud Manager에 대해 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인의 보안 점수와 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미치며, 배포를 차단할 가능성이 있습니다.
+  2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계는 이제 SonarQube 9.9.5.90363을 사용합니다.
 
-* **Java 17 및 Java 21 빌드 지원.**
+  [이 링크](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)의 AEM as a Cloud Service에서 Cloud Manager에 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인에 대한 보안 점수 및 코드 품질을 결정합니다.
+
+* SonarQube 9.9는 이제 모든 고객을 위한 기본 코드 품질 검색 엔진입니다.
+
+* **Java 17 및 Java 21 빌드 지원**
 
   이제 고객은 Java 17 또는 Java 21을 사용하여 빌드할 수 있으므로 성능 향상 및 새로운 언어 기능에 액세스할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)을 참조하십시오. 빌드 버전이 Java 17 또는 Java 21로 설정된 경우 배포되는 런타임은 Java 21입니다.
 
-   * **기능 활성화**
-      * 이 기능은 새로운 SonarQube 버전의 기본 롤아웃과 동시에 2025년 2월 13일 목요일에 모든 고객에게 제공될 예정입니다.
-      * 고객은 위에 설명된 SonarQube 9.9 버전 업그레이드를 위한 두 가지 변수 구성을 설정하여 *즉시* 이 기능을 활성화할 수 있습니다.
+* Edge Delivery Services에 대한 **99.99% SLA 가동 시간 보고**
 
-   * **Java 21 런타임 배포**
-      * Java 21 런타임은 Java 17 또는 Java 21로 빌드할 때 배포됩니다.
-      * 모든 Cloud Manager 환경에 대한 점진적 롤아웃은 2월부터 샌드박스 및 개발 환경을 대상으로 출시되고 4월에는 프로덕션 환경으로 확대됩니다.
-      * Java 21 런타임 *더 일찍* 채택하고자 하는 Java 11 빌드 고객은 Adobe([aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com))로 문의할 수 있습니다.
-
-* Edge Delivery Services에 대한 **99.99% 가동 시간 보고.**
-이제 자격을 갖춘 Edge Delivery Services 프로그램에 고가용성 99.99% 가동 시간 보고를 사용할 수 있습니다. 이 기능을 활성화하려면 고객이 Edge Delivery Services 사이트를 성공적으로 온보딩하고 Cloud Manager 내에서 99.99% Service level agreement(SLA)를 적용해야 합니다.
+  이제 자격을 갖춘 Edge Delivery Services 프로그램에 고가용성 99.99% 가동 시간 보고를 사용할 수 있습니다. 이 기능을 활성화하려면 고객이 Edge Delivery Services 사이트를 성공적으로 온보딩하고 Cloud Manager 내에서 99.99% Service level agreement(SLA)를 적용해야 합니다.
 
   [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)도 참조하세요.
 
-* **Edge Delivery Services에 대한 사용자 초대 환경을 개선했습니다.**
-Edge Delivery Services과 연관된 콘텐츠 저장소로 사용자를 초대하는 기능이 개선되었습니다. <!-- CMGR-65331 -->
+* **Edge Delivery Services에 대한 사용자 초대 환경 개선**
 
-* **게시 인스턴스에 관리자 프로필을 자동으로 만듭니다.**
-이전에는 Cloud Manager에서 게시 인스턴스에 관리자 프로필을 수동으로 만들 수 있었지만 기본적으로 자동 만들기를 지원하지 않았습니다. 이 업데이트를 통해 이제 게시 인스턴스에 관리자 프로필이 자동으로 만들어져 유용성이 향상되고 고객의 설정 시간이 단축됩니다.
+  Edge Delivery Services과 연관된 콘텐츠 저장소로 사용자를 초대하는 기능이 개선되었습니다. <!-- CMGR-65331 -->
+
+* **게시 인스턴스에 관리자 프로필을 자동으로 만들기**
+
+  이전에는 Cloud Manager에서 게시 인스턴스에 관리자 프로필을 수동으로 만들 수 있었지만 기본적으로 자동 만들기를 지원하지 않았습니다. 이 업데이트를 통해 이제 게시 인스턴스에 관리자 프로필이 자동으로 만들어져 유용성이 향상되고 고객의 설정 시간이 단축됩니다.
 
   자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)을 참조하세요.
 
   ![파이프라인 활동 필터링](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Cloud Service 환경을 위한 OAuth로 전환합니다.**
-이제 새로운 Cloud Service 환경에서는 이전에 사용한 JWT 인증 방법 대신 Adobe Developer Console 통합 프로젝트에 대한 OAuth 기반 서비스 간 인증을 사용합니다. JWT 인증은 더 이상 사용되지 않으며 2025년 6월에 사용이 종료됩니다.
+* **Cloud Service 환경을 위한 OAuth로 전환**
 
-* **EC(타원 곡선) 개인 키 지원(secp384r1).**
-Cloud Manager은 이제 `secp384r1` EC(Elliptic Curve) 개인 키를 지원하여 고객 관리 OV/EV SSL 인증서에 대한 향상된 보안 및 규정 준수를 제공합니다.
+  이제 새로운 Cloud Service 환경에서는 이전에 사용한 JWT 인증 방법 대신 Adobe Developer Console 통합 프로젝트에 대한 OAuth 기반 서비스 간 인증을 사용합니다. JWT 인증은 더 이상 사용되지 않으며 2025년 6월에 사용이 종료됩니다.
+
+* **EC(Elliptic Curve) 개인 키 지원(secp384r1)**
+
+  Cloud Manager은 이제 `secp384r1` EC(Elliptic Curve) 개인 키를 지원하여 고객 관리 OV/EV SSL 인증서에 대한 향상된 보안 및 규정 준수를 제공합니다.
 자세한 내용은 [고객 관리 OV/EV SSL 인증서 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)을 참조하십시오. <!-- CMGR-63636 -->
+
+* **특수 테스트 환경**
+
+  향상된 리소스가 포함된 새로운 개발 환경은 2025년 2월 27일부터 얼리어답터가 사용할 수 있습니다.
+
 
 <!--
 ## Early adoption program {#early-adoption}
