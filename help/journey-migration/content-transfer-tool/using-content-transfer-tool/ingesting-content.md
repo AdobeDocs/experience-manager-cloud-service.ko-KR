@@ -4,9 +4,9 @@ description: Cloud Acceleration Manager을 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
       * 수집은 RDE(신속한 개발 환경) 또는 미리보기 유형의 대상을 지원하지 않으며, 사용자가 액세스할 수 있는 경우에도 가능한 대상 선택으로 표시되지 않습니다.
       * 마이그레이션 세트를 여러 대상에 동시에 수집할 수 있지만 대상은 한 번에 실행 중이거나 대기 중인 수집 하나만 대상으로 할 수 있습니다.
 
-   * **계층:** 계층을 선택합니다. (작성자/Publish).
+   * **계층:** 계층을 선택합니다. (작성자/게시).
       * 소스가 `Author`인 경우 타겟의 `Author` 계층으로 수집하는 것이 좋습니다. 마찬가지로 소스가 `Publish`인 경우 타겟도 `Publish`이어야 합니다.
 
    >[!NOTE]
@@ -104,7 +104,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 콘텐츠 전송 도구에는 마이그레이션 세트의 *추가*&#x200B;를 수행하여 차등 콘텐츠를 추출할 수 있는 기능이 있습니다. 이렇게 하면 모든 콘텐츠를 다시 추출할 필요 없이 이전 추출 후 변경된 콘텐츠만 포함하도록 마이그레이션 세트를 수정할 수 있습니다.
 
 >[!NOTE]
->초기 컨텐츠 전송 후 Cloud Service으로 시작하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 수집에 사전 복사 단계를 사용한 경우 후속 추가 수집에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
+>초기 컨텐츠 전송 후 Cloud Service에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 수집에 사전 복사 단계를 사용한 경우 후속 추가 수집에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
 
 일부 수집이 완료된 후 차등 콘텐츠를 수집하려면 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)을 실행한 다음 **지우기** 옵션 **사용 안 함**&#x200B;과 함께 수집 방법을 사용해야 합니다. 대상에 이미 있는 콘텐츠가 손실되지 않도록 위의 **지우기** 설명을 읽으십시오.
 
@@ -140,7 +140,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 
 ### 마이그레이션 서비스에 연결할 수 없음 {#unable-to-reach-migration-service}
 
-수집이 요청되면 다음과 같은 메시지가 사용자에게 표시될 수 있습니다. &quot;대상 환경의 마이그레이션 서비스에 연결할 수 없습니다. 이 경우 나중에 다시 시도하거나 Adobe 지원 센터에 문의하십시오.&quot;
+수집이 요청되면 다음과 같은 메시지가 사용자에게 표시될 수 있습니다. &quot;대상 환경의 마이그레이션 서비스에 연결할 수 없습니다. 그렇다면 나중에 다시 시도하거나 Adobe 지원 센터에 문의하십시오.&quot;
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -153,17 +153,17 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 * AEM as a Cloud Service은 환경 상태를 유지하고 있으며, 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
 * 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 [AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
 * Cloud Manager을 통해 [IP 허용 목록이 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)된 경우 Cloud Acceleration Manager이 마이그레이션 서비스에 도달하는 것이 차단됩니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재, 유일한 해결책은 수집 및 인덱싱 프로세스 동안 IP 허용 목록을 비활성화하는 것이다.
-* 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화에 계속 오류가 발생하면 Adobe 고객 지원 센터에 문의하십시오.
+* 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화가 계속 실패하는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 ### AEM 버전 업데이트 및 수집 {#aem-version-updates-and-ingestions}
 
 [AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)는 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
 
-대상 프로그램에 &quot;AEM 버전 업데이트&quot;가 온보딩되면 수집 프로세스는 시작하기 전에 해당 대기열을 비활성화하려고 시도합니다. 수집이 완료되면 버전 업데이트 프로그램 상태가 수집이 시작되기 전의 상태로 반환됩니다.
+&quot;AEM 버전 업데이트&quot;가 대상 프로그램에 온보딩되면 수집 프로세스는 시작하기 전에 해당 대기열을 비활성화하려고 시도합니다. 수집이 완료되면 버전 업데이트 프로그램 상태가 수집이 시작되기 전의 상태로 반환됩니다.
 
 >[!NOTE]
 >
-> &quot;AEM 버전 업데이트&quot;를 비활성화하기 위해 더 이상 지원 티켓을 기록할 필요가 없습니다.
+> 더 이상 &quot;AEM 버전 업데이트&quot;를 비활성화하기 위해 지원 티켓을 기록할 필요가 없습니다.
 
 &quot;AEM 버전 업데이트&quot;가 활성 상태인 경우(즉, 업데이트가 실행 중이거나 실행 대기 중인 경우) 수집이 시작되지 않고 사용자 인터페이스에 다음 메시지가 표시됩니다. 업데이트가 완료되면 수집을 시작할 수 있습니다. Cloud Manager을 사용하여 프로그램의 파이프라인의 현재 상태를 볼 수 있습니다.
 
@@ -258,6 +258,7 @@ MongoDB 제한 사항입니다.
 
 * `Atlas prescale timeout error` - 수집 단계에서 대상 클라우드 데이터베이스를 수집 중인 마이그레이션 세트 콘텐츠의 크기에 맞는 크기로 미리 조정하려고 합니다. 드물게 이 작업이 예상 기간 내에 완료되지 않습니다.
 * `Exhausted mongo restore retries` - 수집된 마이그레이션 세트 컨텐츠의 로컬 덤프를 클라우드 데이터베이스로 복원하려고 시도했습니다. 이는 MongoDB의 전반적인 상태/네트워크 문제를 나타내며 몇 분 후에 해결되는 경우가 많습니다.
+* `Mongo network error` - 때로는 MongoDB에 대한 연결을 설정하지 못해 수집 프로세스가 일찍 종료되고 실패한 것으로 보고할 수 있습니다. 수집을 간단하게 다시 시도해야 합니다.
 
 ### 수집 취소됨 {#ingestion-rescinded}
 
@@ -280,4 +281,4 @@ Assets Touch UI를 사용하여 Cloud Service 대상에서 에셋이 삭제되�
 
 수집이 성공하면 AEM 색인화가 자동으로 시작됩니다. 자세한 내용은 [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)를 참조하십시오.
 
-Cloud Service에 컨텐츠 수집을 완료하면 각 단계(추출 및 수집)의 로그를 보고 오류를 검색할 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)를 참조하십시오.
+Cloud Service으로 콘텐츠 수집을 완료하면 각 단계(추출 및 수집)의 로그를 보고 오류를 검색할 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)를 참조하십시오.
