@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 콘텐츠 검색 및 색인화에 대해 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
+source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 25%
+source-wordcount: '2767'
+ht-degree: 22%
 
 ---
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 >[!NOTE]
 >
->기본 제공 인덱스(예: `damAssetLucene-8`)를 사용자 지정하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름을 `damAssetLucene-8-custom-1` 이상으로 바꾸고 XML 파일 내에 사용자 지정을 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어, `/oak:index/damAssetLucene-8/tika` 아래의 `tika` 노드는 AEM Cloud Service 환경에 배포된 사용자 지정 색인에 필요하지만 로컬 AEM SDK에는 없습니다.
+>기본 제공 인덱스(예: `damAssetLucene-8`)를 사용자 지정하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름을 `damAssetLucene-8-custom-1` 이상으로 바꾸고 XML 파일 내에 사용자 지정을 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-8/tika` 아래의 `tika` 노드는 AEM Cloud Service 환경에 배포된 사용자 지정된 인덱스에 필요하지만 로컬 AEM SDK에는 없습니다.
 
 OOTB 인덱스의 사용자 정의를 위해 이 이름 지정 패턴을 따르는 실제 인덱스 정의가 포함된 새 패키지를 준비합니다.
 
@@ -299,7 +299,7 @@ Jackrabbit `filevault-package-maven-plugin`의 버전 >= `1.3.2`을(를) 사용�
 
 ### 기본 제공 색인 변경 {#changes-to-out-of-the-box-indexes}
 
-Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기본 제공 색인을 변경하면 `damAssetLucene-2` 또는 `cqPageLucene-2`(이)라는 이름의 새 색인이 만들어집니다. 또는 색인이 이미 맞춤화된 경우 맞춤화된 색인 정의가 아래와 같이 기본 제공 색인의 변경 사항과 병합됩니다. 변경 사항의 병합은 자동으로 진행됩니다. 즉, 기본 제공 색인이 변경되는 경우에는 아무 작업도 수행하지 않아도 됩니다. 하지만 나중에 색인을 다시 맞춤화할 수 있습니다.
+Adobe에서 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기본 제공 색인을 변경하면 `damAssetLucene-2` 또는 `cqPageLucene-2`(이)라는 이름의 새 색인이 만들어집니다. 또는 색인이 이미 맞춤화된 경우 맞춤화된 색인 정의가 아래와 같이 기본 제공 색인의 변경 사항과 병합됩니다. 변경 사항의 병합은 자동으로 진행됩니다. 즉, 기본 제공 색인이 변경되는 경우에는 아무 작업도 수행하지 않아도 됩니다. 하지만 나중에 색인을 다시 맞춤화할 수 있습니다.
 
 | 색인 | 기본 제공 색인 | 버전 2에서 사용 | 버전 3에서 사용 |
 |---|---|---|---|
@@ -308,7 +308,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 | /oak:index/cqPageLucene | 예 | 예 | 아니요 |
 | /oak:index/cqPageLucene-2 | 예 | 아니요 | 예 |
 
-환경은 서로 다른 AEM 버전에 있을 수 있습니다. 예를 들어 `dev`에 필요한 테스트를 수행한 후 스테이징 및 프로덕션이 아직 릴리스 `X`에 있고 릴리스 `X+1`(으)로 업그레이드되기를 기다리는 동안 `dev` 환경이 릴리스 `X+1`에 있습니다. 릴리스 `X+1`이(가) 사용자 지정된 새 버전의 제품 색인과 함께 제공되고 해당 색인의 새 사용자 지정이 필요한 경우 다음 표에서 AEM 릴리스를 기반으로 환경에 설정해야 하는 버전을 설명합니다.
+환경은 서로 다른 AEM 버전에 있을 수 있습니다. 예를 들어 `dev`에 필요한 테스트를 수행한 후 스테이징 및 프로덕션이 아직 릴리스 `X`에 있고 릴리스 `X+1`(으)로 업그레이드되기를 기다리는 동안 `dev` 환경이 릴리스 `X+1`에 있습니다. 릴리스 `X+1`이(가) 사용자 지정된 새 버전의 제품 색인과 함께 제공되며 해당 색인의 새 사용자 지정이 필요한 경우 다음 표에서 AEM 릴리스를 기반으로 하는 환경에 설정해야 하는 버전을 설명합니다.
 
 | 환경(AEM 릴리스 버전) | 제품 색인 버전 | 기존 사용자 지정 인덱스 버전 | 새 사용자 정의 인덱스 버전 |
 |-----------------------------------|-----------------------|-------------------------------|----------------------------|
@@ -359,9 +359,50 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 
 ### 색인 삭제 {#removing-an-index}
 
-다음은 사용자 정의에만 적용됩니다. 제품 색인은 AEM에서 사용되고 있어 삭제되지 않을 수 있습니다.
+다음은 기본 제공(OOTB) 인덱스의 사용자 지정 및 완전히 사용자 지정된 인덱스에만 적용됩니다. 원래 OOTB 인덱스는 AEM에서 사용되므로 제거할 수 없습니다.
 
-맞춤화된 색인은 고객 저장소에서 제거하여 최신 버전의 고객 애플리케이션에서 제거할 수 있습니다. 저장소에서 제거된 색인은 AEM의 쿼리에 사용되지 않지만 잠시 동안 인스턴스에 있을 수 있습니다. 정기적으로 실행되는 정리 메커니즘이 있으며 이 메커니즘은 인스턴스에서 이전 버전의 인덱스를 정리합니다.
+시스템 무결성과 안정성을 보장하기 위해 인덱스 정의는 배포되면 변경할 수 없는 것으로 처리되어야 합니다. 사용자 지정 인덱스 또는 사용자 지정을 제거하려면 인덱스 제거를 효과적으로 시뮬레이션하는 정의가 있는 새 버전의 사용자 지정 인덱스 또는 사용자 지정 인덱스를 만듭니다.
+
+색인의 새 버전이 배포되면 동일한 색인의 이전 버전은 더 이상 쿼리에서 사용되지 않습니다.
+이전 버전은 환경에서 즉시 삭제되지 않습니다.
+그러나 주기적으로 실행되는 정리 메커니즘에 의해 가비지 수집이 가능합니다.
+실수 발생 시 복구를 허용하도록 설계된 유예 기간 이후
+(현재는 색인화가 제거되었지만 변경될 수 있는 날로부터 7일 계산),
+이 정리 메커니즘은 사용되지 않은 인덱스 데이터를 삭제합니다.
+및 은 환경에서 색인의 이전 버전을 비활성화하거나 제거합니다.
+
+아래에서는 OOTB 인덱스의 사용자 지정 항목을 제거하고 완전히 사용자 지정된 인덱스를 제거하는 두 가지 가능한 경우를 설명합니다.
+
+#### 기본 제공 색인의 사용자 지정 제거
+
+OOTB 인덱스의 정의를 새 버전으로 사용하여 [변경 실행 취소](#undoing-a-change-undoing-a-change)에 설명된 단계를 따릅니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을(를) 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`을(를) 추가해야 합니다.
+
+#### 완전히 맞춤화된 색인 제거
+
+더미 인덱스를 새 버전으로 사용하여 [변경 실행 취소](#undoing-a-change-undoing-a-change)에 설명된 단계를 따릅니다. 더미 색인은 쿼리에 사용되지 않으며 데이터를 포함하지 않으므로 색인이 없는 것과 동일한 효과를 냅니다. 이 예제에서는 이름을 `/oak:index/acme.product-custom-3`로 지정할 수 있습니다. 이 이름은 인덱스 `/oak:index/acme.product-custom-2`을(를) 대체합니다. 이러한 더미 인덱스의 예는 다음과 같습니다.
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
+
 
 ## 색인 및 쿼리 최적화 {#index-query-optimizations}
 
