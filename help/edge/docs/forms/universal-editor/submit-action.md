@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
-
 
 # 적응형 양식 제출 액션
 
@@ -44,7 +44,7 @@ REST 끝점을 구성하려면 다음을 수행합니다.
 1. REST 끝점 URL을 지정합니다.
 1. **POST 요청을 활성화**&#x200B;하고 요청을 게시할 URL을 제공할 수도 있습니다.
 
-{width=50%,height=50%}![적응형 양식에 대한 사후 요청 활성화](/help/forms/assets/enable-post-request-ue.png)
+![적응형 양식에 대한 게시물 요청 활성화](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ REST 끝점을 구성하려면 다음을 수행합니다.
 1. 양식 제출을 이메일 알림에 직접 통합하여 워크플로를 간소화하는 데 도움이 됩니다.
 1. 조직이 이메일 콘텐츠를 사용자 정의할 수 있도록 지원하므로 특정 통신 요구 사항에 적합합니다.
 
-{width=50%,height=50%}![유니버설 편집기의 적응형 양식 속성](/help/forms/assets/submit-actions-ue.png)
+![범용 편집기의 적응형 양식 속성](/help/forms/assets/submit-actions-ue.png)
 
 
 양식 제출을 위해 제출 액션을 이메일로 구성하려면 다음 작업을 수행하십시오.
@@ -140,5 +140,3 @@ REST 끝점을 구성하려면 다음을 수행합니다.
 1. 클릭하면 다음 옵션이 표시됩니다.
    * **[!UICONTROL 제출 시]**: 제출 시 양식을 제출할 때 표시할 메시지를 사용자 지정할 수 있습니다. 기본적으로 양식이 성공적으로 제출되면 &quot;양식을 제출해 주셔서 감사합니다&quot;라는 사용자 정의 메시지가 사용자에게 표시됩니다.
 **[!UICONTROL 메시지 표시]** 옵션을 선택하여 양식 제출 시 감사 메시지를 사용자 지정하고 서식 있는 텍스트 **편집기**&#x200B;에서 메시지를 추가/편집할 수도 있습니다.
-
-
