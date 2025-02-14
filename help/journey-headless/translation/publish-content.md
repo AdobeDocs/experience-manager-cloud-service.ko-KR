@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 
 ## 번역된 콘텐츠 게시 {#publishing}
 
-번역된 콘텐츠 상태가 만족스럽다면 이를 게시하여 Headless 서비스가 사용할 수 있도록 해야 합니다. 이 작업은 일반적으로 번역 전문가가 담당하지 않지만, 완전한 워크플로를 설명하기 위해 여기에 기재되어 있습니다.
+번역된 콘텐츠 상태가 만족스럽다면 이를 게시하여 Headless 서비스가 사용할 수 있도록 해야 합니다. 이 작업은 일반적으로 번역 전문가가 담당하지 않지만 완전한 워크플로를 설명하기 위해 여기에 기재되어 있습니다.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 
 새 카드(자산 및 콘텐츠 조각 수)에 나열된 통계에 차이가 있을 수 있습니다. AEM은 마지막 번역 이후 번경된 내용을 인식하고 번역이 필요한 콘텐츠만 포함하기 때문입니다. 여기에는 새 콘텐츠의 최초 번역과 업데이트된 콘텐츠의 재번역이 포함됩니다.
 
-이 시점에서부터 [원본과 마찬가지로 번역 작업을 시작하고 관리합니다](translate-content.md#using-translation-project).
+이 시점에서부터 [원본과 마찬가지로 번역 작업을 시작하고 관리할 수 있습니다.](translate-content.md#using-translation-project)
 
 ### 수동으로 생성된 번역 프로젝트 업데이트 {#updating-manual-project}
 
@@ -141,7 +141,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
    ![타깃 언어 선택](assets/select-target-language.png)
 
 1. 새 번역 작업의 타깃 언어를 설정한 후 작업 카드 하단에 있는 생략 부호 버튼을 선택하여 해당 작업의 세부 정보를 확인합니다.
-1. 처음 생성 시 작업은 비어 있습니다. 처음 번역 프로젝트를 만들 때와 마찬가지로 **추가** 단추를 탭하거나 클릭하고 경로 브라우저 [을(를) 사용하여 작업에 콘텐츠를 추가합니다](translate-content.md##manually-creating).
+1. 처음 생성 시 작업은 비어 있습니다. [처음 번역 프로젝트를 생성](translate-content.md##manually-creating)할 때와 마찬가지로 **추가** 버튼을 탭하거나 클릭한 다음 경로 브라우저를 사용하여 작업에 콘텐츠를 추가합니다.
 
 >[!TIP]
 >
@@ -149,7 +149,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 >
 >[추가 리소스 섹션](#additional-resources)에서 경로 브라우저에 대해 자세히 알아볼 수 있습니다.
 
-이 시점에서부터 [원본과 마찬가지로 번역 작업을 시작하고 관리합니다](translate-content.md#using-translation-project).
+이 시점에서부터 [원본과 마찬가지로 번역 작업을 시작하고 관리할 수 있습니다.](translate-content.md#using-translation-project)
 
 ## 여정의 끝 {#end-of-journey}
 
@@ -165,6 +165,6 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 ## 추가 리소스 {#additional-resources}
 
 * [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - 인간 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
-* [작성 개념](/help/sites-cloud/authoring/author-publish.md) - AEM의 작성자 및 게시 모델에 대해 자세히 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
-* [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - 콘텐츠를 게시할 때 사용할 수 있는 추가 기능에 대해 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
+* [작성 개념](/help/sites-cloud/authoring/author-publish.md) - AEM의 작성자 및 게시 모델에 대해 자세히 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만 이론은 여전히 적용됩니다.
+* [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - 콘텐츠를 게시할 때 사용할 수 있는 추가 기능에 대해 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만 이론은 여전히 적용됩니다.
 * [작성 환경 및 도구](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.

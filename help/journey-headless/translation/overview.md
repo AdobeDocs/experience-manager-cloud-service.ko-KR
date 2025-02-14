@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 구현은 전체 스택 솔루션의 기존 방식과 마찬가지로 �
 
 목표는 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법에 대한 폭넓은 이해를 제공하는 것입니다. 해당 주제에 익숙하지 않은 경우 이 목표를 시작하는 것이 좋습니다.
 
-AEM, Headless 및 번역에 대해 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. 아래의 [추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
+AEM, Headless 및 번역에 대해 잘 알고 있다면 이 여정에 대한 기초 지식을 이미 알고 있을 것입니다. [아래 추가 리소스 섹션](#additional-resources)에 연결된 기술 설명서를 참조하는 것이 좋습니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
@@ -43,7 +43,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 
 ## 대상자 {#audience}
 
-이 여정은 번역 프로젝트 관리자 또는 TPM이라고도 하는 번역 전문가 사용자를 위해 설계되었습니다. 이 여정은 AEM의 Headless 콘텐츠를 번역하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다. 이 여정은 번역 전문가가 상호 작용해야 하는 추가 담당자를 정의할 수 있지만, 이 여정은 번역 전문가의 관점에서 전개됩니다.
+이 여정은 번역 프로젝트 관리자 또는 TPM이라고도 하는 번역 전문가 사용자를 위해 설계되었습니다. 이 여정은 AEM의 Headless 콘텐츠를 번역하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다. 이 여정은 번역 전문가가 상호 작용해야 하는 추가 담당자를 정의할 수 있지만 이 여정은 번역 전문가의 관점에서 전개됩니다.
 
 이 여정은 독자가 대형 CMS 시스템에서 콘텐츠를 번역한 경험은 있지만 Headless 기술 또는 AEM에 대한 지식은 없다고 가정합니다.
 
@@ -89,4 +89,4 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
    * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.
+* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 수행하며 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.

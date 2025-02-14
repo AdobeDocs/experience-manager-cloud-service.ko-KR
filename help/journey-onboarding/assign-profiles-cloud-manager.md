@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 목표 {#objective}
 
-이 여정의 이전 단계인 [Admin Console 액세스](admin-console.md)에서 이제 Admin Console에 로그인하고 시스템 관리자의 권한을 확인하는 방법을 배웠습니다. 이제 팀원이 Cloud Manager에 액세스하도록 허용할 준비가 되었습니다. 제품 프로필을 할당하면 됩니다.
+이 여정의 이전 단계인 [Admin Console 액세스](admin-console.md)에서 Admin Console에 로그인하고 시스템 관리자의 권한을 확인하는 방법을 배웠습니다. 이제 팀원이 Cloud Manager에 액세스하도록 허용할 준비가 되었습니다. 제품 프로필을 할당하면 됩니다.
 
 사용자에게 Adobe 솔루션에 대한 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션이 고유한 사용자 권한 집합을 가질 수 있습니다. Admin Console을 사용하여 제품 프로필을 할당합니다.
 
@@ -112,7 +112,7 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
    ![사용자 할당](/help/journey-onboarding/assets/assign-team6.png)
 
-1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다. 초대된 사용자는 시작 이메일의 링크를 클릭하고 Adobe ID를 사용하여 로그인함으로써 Cloud Manager에 액세스할 수 있습니다.
+1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 환영 이메일이 전송됩니다. 초대된 사용자는 환영 이메일의 링크를 클릭하고 Adobe ID를 사용하여 로그인함으로써 Cloud Manager에 액세스할 수 있습니다.
 
 1. 팀의 사용자에 대해 이 단계를 반복합니다.
 
@@ -177,7 +177,7 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 * Cloud Manager의 세 가지 중요한 제품 프로필인 **비즈니스 소유자**, **배포 관리자**, and **개발자**&#x200B;를 알게 됩니다.
 * Cloud Manager 제품 프로필에 팀원을 할당할 수 있습니다.
 
-이제 온보딩 여정을 계속하여 [Cloud Manager 액세스](cloud-manager.md) 문서를 검토하고 Cloud Manager에 액세스하여 프로젝트 리소스를 만드는 방법을 배울 준비가 되었습니다.
+이제 온보딩 여정을 계속하여 [Cloud Manager 액세스](cloud-manager.md) 문서를 검토하고 Cloud Manager에 액세스하여 프로젝트 리소스를 생성하는 방법을 배울 준비가 되었습니다.
 
 ## 추가 리소스 {#additional-resources}
 

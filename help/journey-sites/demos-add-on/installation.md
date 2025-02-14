@@ -5,9 +5,9 @@ exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager 및 이를 사용하여 추가 기능을 설치하는 방법에 �
 
 이 문서는 설치를 시작하는 여정의 다음 단계로 이동하기 전에 이러한 AEM 참조 데모 추가 기능 기본 사항을 이해하는 데 중점을 둡니다.
 
-이 여정을 진행하는 것이 좋지만, 숙련된 Cloud Manager 사용자이거나 추가 기능 구성 및 사용으로 바로 이동하고자 하는 경우에는 [프로그램 및 파이프라인 제작](create-program.md)으로 건너뜁니다.
+이 여정을 진행하는 것이 좋지만 숙련된 Cloud Manager 사용자이거나 추가 기능 구성 및 사용으로 바로 이동하고자 하는 경우에는 [프로그램 및 파이프라인 제작](create-program.md)으로 건너뜁니다.
 
 ## 담당 역할 {#responsible-role}
 
@@ -61,7 +61,7 @@ Cloud Manager를 사용하여 필요한 환경 및 도구 등 AEM 프로젝트�
 
 ### 프로그램 {#programs}
 
-Cloud Manager에 로그인하게 되면 하나 이상의 **프로그램**&#x200B;에 액세스할 수 있습니다. 다양한 방법으로 프로그램을 정의할 수 있지만, 프로그램을 하나의 브랜드 정체성과 관련된 사이트 및 경험과 연결하여 생각하는 것이 가장 쉽습니다.
+Cloud Manager에 로그인하게 되면 하나 이상의 **프로그램**&#x200B;에 액세스할 수 있습니다. 다양한 방법으로 프로그램을 정의할 수 있지만 프로그램을 하나의 브랜드 정체성과 관련된 사이트 및 경험과 연결하여 생각하는 것이 가장 쉽습니다.
 
 **WKND Travel 및 Adventure Enterprises**&#x200B;를 나타내는 Cloud Manager에 로그인하면 **WKND Nightlife** 프로그램 및 **WKND Backyard Projects** 프로그램을 만들 수 있습니다. 이들 프로그램은 관련 사이트를 관리하기 위한 AEM 환경을 가질 수 있습니다.
 
@@ -104,7 +104,7 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로
 * 파이프라인이 AEM에 콘텐츠와 구성을 전달하는 방법을 이해할 수 있습니다.
 * 몇 번의 클릭만으로 템플릿을 통해 데모 콘텐츠로 미리 채워진 사이트를 제작하는 방법을 파악할 수 있습니다.
 
-이 지식을 기반으로 [프로그램 및 파이프라인 만들기](create-program.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아봅니다.
+이 지식을 기반으로 [프로그램 및 파이프라인 제작](create-program.md)을 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아보게 됩니다.
 
 ## 추가 리소스 {#additional-resources}
 

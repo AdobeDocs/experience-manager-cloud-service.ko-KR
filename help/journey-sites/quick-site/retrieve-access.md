@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 사이트 테마의 맞춤화만 담당하는 프론트엔드 개발자는 AEM의 설정 방법에 대한 지식이 필요하지 않으므로 이 문서의 [목표](#objective) 섹션으로 건너뛸 수 있습니다.
 
-Cloud Manager 또는 AEM 관리자 및 프론트엔드 개발자의 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md)에서 프론트엔드 개발자가 git 저장소에 액세스할 수 있도록 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+프론트엔드 개발자와 더불어 Cloud Manager나 AEM 관리자 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md)에서 프론트엔드 개발자가 git 저장소에 액세스할 수 있도록 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * 프론트엔드 개발자를 사용자로 추가하는 방법
 * 프론트엔드 개발자에게 필요한 역할을 부여하는 방법
@@ -50,7 +50,7 @@ Cloud Manager 또는 AEM 관리자 및 프론트엔드 개발자의 역할도 �
    * 라이브 AEM 콘텐츠에 대해 맞춤화를 테스트하기 위한 프록시 사용자 자격 증명
    * 프론트엔드 디자인 요구 사항
 * Cloud Manager 관리자의 경우:
-   * 액세스를 알리는 Cloud Manager의 시작 이메일
+   * 액세스를 알리는 Cloud Manager의 환영 이메일
    * Cloud Manager 내 프로그램 이름 또는 프로그램 URL
 
 이들 중 누락된 항목이 있는 경우, AEM 관리자 또는 Cloud Manager 관리자에게 문의하십시오.
@@ -71,15 +71,15 @@ Cloud Manager를 통해 조직은 클라우드에서 AEM을 자체 관리할 수
 * AEM git 저장소 정보에 액세스하여 프론트엔드 맞춤화를 커밋할 수 있습니다.
 * 배포 파이프라인을 시작하여 맞춤화를 배포할 수 있습니다.
 
-Cloud Manager 관리자는 귀하를 Cloud Manager 사용자로 온보딩하게 됩니다. 다음과 비슷한 시작 이메일을 수신해야 합니다.
+Cloud Manager 관리자는 귀하를 Cloud Manager 사용자로 온보딩하게 됩니다. 다음과 비슷한 환영 이메일을 수신해야 합니다.
 
-![시작 이메일](assets/welcome-email.png)
+![환영 이메일](assets/welcome-email.png)
 
 이 이메일을 수신하지 못한 경우, Cloud Manager 관리자에게 문의하십시오.
 
 ## Cloud Manager 액세스 {#access-cloud-manager}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Experience Cloud에 로그인하거나 시작 이메일에 제공된 링크를 클릭합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Experience Cloud에 로그인하거나 환영 이메일에 제공된 링크를 클릭합니다.
 
 1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. Cloud Manager 관리자가 제공한 대로 액세스해야 하는 프로그램을 선택합니다. AEMaaCS용 프론트엔드 프로젝트를 처음 만드는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
 

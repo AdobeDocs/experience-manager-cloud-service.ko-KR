@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결
 
 이 문서는 구성을 시작하는 여정의 다음 단계로 이동하기 전에 이러한 빠른 사이트 생성 솔루션에 대한 기본 사항을 이해하는 데 중점을 둡니다.
 
-이 여정을 단계별로 진행하는 것이 좋지만, AEM Sites과 Cloud Manager이 함께 작동하는 방법을 알고 있으며 구성을 바로 시작하고자 하는 경우 [여정의 다음 단계로 건너뛰기](create-site.md)할 수 있습니다.
+이 여정을 단계별로 진행하는 것이 좋지만 AEM Sites 및 Cloud Manager가 함께 작동하는 방법을 알고 있으며 구성을 바로 시작하고자 하는 경우 [여정의 다음 단계로 건너뛸 수 있습니다](create-site.md).
 
 ## 담당 역할 {#responsible-role}
 
@@ -122,11 +122,11 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * AEM Sites 및 Cloud Manager를 함께 사용하여 프론트엔드 개발을 용이하게 하는 방법을 이해할 수 있습니다.
 * AEM 지식이 필요하지 않도록 프론트엔드 맞춤화 단계를 AEM에서 완전히 분리하는 방법을 파악할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [템플릿으로 사이트 만들기](create-site.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아봅니다.
+이 지식을 기반으로 다음 문서인 [템플릿으로 사이트 만들기](create-site.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아보게 됩니다.
 
 ## 추가 리소스 {#additional-resources}
 
-다음 문서인 [템플릿으로 사이트 생성](create-site.md)을 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [템플릿으로 사이트 만들기](create-site.md)를 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할 및 이를 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.

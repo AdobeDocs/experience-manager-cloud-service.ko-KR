@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2120'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 
 >[!NOTE]
 >
->번역 언어에 필요한 언어 구조는 콘텐츠 구조의 [정의](getting-started.md#content-structure)의 일부로 이미 만들어진 것으로 간주됩니다. 이 작업은 콘텐츠 설계자와 공동 작업을 통해 수행해야 합니다.
+>번역 언어에 필요한 언어 구조는 [콘텐츠 구조의 정의](getting-started.md#content-structure)의 일부로 이미 생성되었다고 간주됩니다. 이 작업은 콘텐츠 설계자와 공동 작업을 통해 수행해야 합니다.
 >
 >언어 폴더를 미리 만들지 않으면 이전 단계에 설명된 대로 언어 사본을 만들 수 없습니다.
 
@@ -151,7 +151,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 
 ![승인된 번역 작업](assets/translation-job-approved.png)
 
-기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만, 이는 이 여정에서 다루지 않습니다.
+기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만 이는 이 여정에서 다루지 않습니다.
 
 ### 수동으로 생성된 번역 프로젝트 사용 {#using-manual-project}
 
@@ -201,11 +201,11 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 
 ![승인된 번역 작업](assets/translation-job-approved.png)
 
-기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만, 이는 이 여정에서 다루지 않습니다.
+기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만 이는 이 여정에서 다루지 않습니다.
 
 ## 번역된 콘텐츠 검토 {#reviewing}
 
-[이전에 본 바와 같이](#using-translation-project)기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
+[앞에서 보았던 것처럼,](#using-translation-project) 기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
 
 완료된 번역 작업으로 이동하여 확인란을 탭하거나 클릭하여 라인 항목을 선택하십시오. 도구 모음에 **콘텐츠 조각에 표시** 아이콘이 표시됩니다.
 
@@ -215,7 +215,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 
 ![번역된 콘텐츠 조각](assets/translated-content-fragment.png)
 
-올바른 권한을 보유하고 있는 경우 필요에 따라 콘텐츠 조각을 추가로 수정할 수 있지만, 콘텐츠 조각 편집 작업은 이 여정에서 다루지 않습니다. 이 주제에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+올바른 권한을 보유하고 있는 경우 필요에 따라 콘텐츠 조각을 추가로 수정할 수 있지만 콘텐츠 조각 편집 작업은 이 여정에서 다루지 않습니다. 이 주제에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 이 프로젝트의 목적은 간편한 액세스와 명확한 개요 제공을 위해 번역과 관련된 모든 리소스를 한 곳에 수집하는 것입니다. 그러나 번역된 항목의 세부 정보에서 확인할 수 있듯이 번역 자체는 번역 언어의 자산 폴더로 다시 흐릅니다. 이 예에서 폴더의 상태는 다음과 같습니다.
 
@@ -249,7 +249,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 
 ## 추가 리소스 {#additional-resources}
 
-다음 문서인 [Publish 번역된 여정](publish-content.md)을(를) 검토하여 헤드리스 번역 콘텐츠의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 헤드리스 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [번역된 콘텐츠 게시](publish-content.md)를 검토하여 Headless 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - 인간 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
 * [작성 환경 및 도구](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.

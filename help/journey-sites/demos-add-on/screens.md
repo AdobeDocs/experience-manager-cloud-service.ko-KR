@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 참조 데모 추가 기능 여정의 이전 문서인 [데모 사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 데모 사이트를 만들었습니다. 이제
+AEM 참조 데모 추가 기능 여정의 이전 문서인 [데모 사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 데모 사이트를 제작해 보았습니다. 이제
 
 * AEM 작성 환경 액세스 방법을 이해할 수 있습니다.
 * 템플릿을 기반으로 사이트를 만드는 방법을 이해할 수 있습니다.
@@ -88,7 +88,7 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 입구 디스플레이는 시간을 구분하여 표시되며 첫 번째 이미지는 오전에서 오후로 변경됩니다. 또한 입구 디스플레이는 시퀀스의 각 패스에 대해 서로 다른 특별한 커피 재료를 광고하며, 이때 시간마다 다른 항목을 재생하기 위해 계량되고 임베드된 시퀀스를 사용합니다.
 
-입구 채널의 마지막 이미지는 외부 온도에 따라 타겟팅되며(즉, 동적으로 변경됨) 이는 [시뮬레이션된 데이터 소스 만들기](#data-source) 섹션에 설명된 대로 시뮬레이션할 수 있습니다.
+입구 채널의 마지막 이미지는 외부 온도에 따라 타기팅되며(즉, 동적으로 변경됨) 이는 [시뮬레이션된 데이터 소스 만들기](#data-source) 섹션에 설명된 대로 시뮬레이션할 수 있습니다.
 
 ## 데모 Screens 프로젝트 배포 {#deploy-project}
 
@@ -104,8 +104,8 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 We.Cafe 데모 콘텐츠를 준비했으므로 AEM Screens를 테스트하는 방법을 선택할 수 있습니다.
 
-* AEM Sites 콘솔 내의 콘텐츠만 탐색하려면 [추가 리소스](#additional-resources) 섹션에서 더 많은 콘텐츠를 살펴보고 검색하면 됩니다. 추가 작업은 필요하지 않습니다.
-* AEM Screens의 모든 동적 기능을 경험하려면 다음 섹션인 [Screens 콘텐츠를 동적으로 변경](#dynamically-change)으로 계속 진행하십시오.
+* AEM Sites 콘솔 내에 있는 콘텐츠만 탐색하고자 하는 경우 [추가 리소스](#additional-resources) 섹션에서 더 많은 콘텐츠를 살펴보고 검색해 보십시오! 추가로 작업을 수행할 필요는 없습니다.
+* AEM Screens의 모든 동적 기능을 경험하고자 하는 경우 다음 섹션인 [Screens 콘텐츠를 동적으로 변경](#dynamically-change)으로 계속 진행하십시오.
 
 ## Screens 콘텐츠를 동적으로 변경 {#dynamically-change}
 
@@ -133,7 +133,7 @@ AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐�
 
    ![프로젝트 만들기](assets/create-project.png)
 
-1. 새 프로젝트를 선택한 다음, 클라우드 콘솔의 대시보드에서 햄버거 메뉴를 사용하여 **API 및 서비스**&#x200B;를 선택합니다.
+1. 새 프로젝트를 선택한 다음 클라우드 콘솔의 대시보드에서 햄버거 메뉴를 사용하여 **API 및 서비스**&#x200B;를 선택합니다.
 
    ![API 및 서비스](assets/apis-services.png)
 
@@ -244,11 +244,11 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
 1. 도구 모음에서 **편집**&#x200B;을 클릭하거나 단축키 `e`를 입력하여 페이지를 편집합니다.
 
-1. 편집기에서 콘텐츠를 볼 수 있습니다. 한 개의 이미지가 모퉁이의 타겟팅 아이콘과 함께 파란색으로 강조 표시됩니다.
+1. 편집기에서 콘텐츠를 볼 수 있습니다. 한 개의 이미지가 모퉁이의 타기팅 아이콘과 함께 파란색으로 강조 표시됩니다.
 
    ![편집기의 Screens 콘텐츠](assets/screens-content-editor.png)
 
-1. 스프레드시트에 입력한 온도를 32에서 70으로 변경한 다음, 콘텐츠가 변경되는 것을 확인합니다.
+1. 스프레드시트에 입력한 온도를 32에서 70으로 변경한 다음 콘텐츠가 변경되는 것을 확인합니다.
 
    ![편집기의 Screens 콘텐츠](assets/screens-content-editor-2.png)
 
@@ -270,7 +270,7 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
 ### AEM Screens as a Cloud Service 구성 {#configure-screens}
 
-먼저 Screens 데모 콘텐츠를 AEM Screens as a Cloud Service에 게시한 다음, 서비스를 구성해야 합니다.
+먼저 Screens 데모 콘텐츠를 AEM Screens as a Cloud Service에 게시한 다음 서비스를 구성해야 합니다.
 
 1. 데모 Screens 프로젝트의 콘텐츠를 게시하십시오.
 1. Screens as a Cloud Service로 이동한 다음(`https://experience.adobe.com/screens`) 로그인합니다.
@@ -282,7 +282,7 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
    ![설정 편집](assets/screens-edit-settings.png)
 
-1. 데모 사이트를 만든 AEMaaCS 작성자 및 게시 인스턴스의 URL을 입력한 다음, **저장**&#x200B;을 클릭합니다.
+1. 데모 사이트를 만든 AEMaaCS 작성자 및 게시 인스턴스의 URL을 입력한 다음 **저장**&#x200B;을 클릭합니다.
 
    ![Screens 설정](assets/screens-settings.png)
 
@@ -294,7 +294,7 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
    ![디스플레이 만들기](assets/screens-displays.png)
 
-1. 대화 상자에서 **산호세**&#x200B;와 같이 폴더 이름을 입력한 다음, **만들기**&#x200B;를 클릭합니다.
+1. 대화 상자에서 **산호세**&#x200B;와 같이 폴더 이름을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
 
 1. 폴더를 클릭하여 연 다음 오른쪽 상단의 **만들기**&#x200B;를 클릭하고 **디스플레이**&#x200B;를 선택합니다.
 
@@ -370,7 +370,7 @@ AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 
    ![디스플레이에 플레이어 할당](assets/assign-to-display.png)
 
-1. 대화 상자에서 이전에 생성한 디스플레이를 선택한 다음, **선택**&#x200B;을 클릭합니다.
+1. 대화 상자에서 이전에 생성한 디스플레이를 선택한 다음 **선택**&#x200B;을 클릭합니다.
 
    ![디스플레이 할당](assets/assign-a-display.png)
 

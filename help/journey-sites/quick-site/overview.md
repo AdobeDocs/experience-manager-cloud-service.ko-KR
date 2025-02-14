@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 빠른 사이트 생성 도구는 사이트 생성을 위한 개발자 지�
 
 ## 비디오 개요 {#video-overview}
 
-작동 중인 이 기능에 대한 간략한 개요를 보려면 [이 5분 동안 소개된 내용을 볼 수 있습니다](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
+작동 중인 이 기능에 대한 간단한 개요를 살펴보려면 [이 5분 분량의 소개 비디오를 시청하십시오.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
 이 설명서 여정에서는 비디오의 모든 기능을 단계별로 자세히 안내하므로 이를 통해 워크플로를 이해하고 나만의 환경에서 프로세스를 다시 만들 수 있습니다.
 
@@ -57,7 +57,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 |---|---|---|--|
 | 0 | AEM 빠른 사이트 생성 여정 | 이 문서 | AEM 및 Cloud Manager 관리자 |
 | 1 | [Cloud Manager 및 빠른 사이트 생성 워크플로 이해](cloud-manager.md) | Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아봅니다. | AEM 관리자 |
-| 2 | [템플릿으로 사이트 생성](create-site.md) | 사이트 템플릿을 사용하여 간편하게 AEM 사이트를 만드는 방법에 대해 알아봅니다. | AEM 관리자 |
+| 2 | [템플릿으로 사이트 만들기](create-site.md) | 사이트 템플릿을 사용하여 간편하게 AEM 사이트를 만드는 방법에 대해 알아봅니다. | AEM 관리자 |
 | 3 | [파이프라인 설정](pipeline-setup.md) | 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다. | Cloud Manager 관리자 |
 | 4 | [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md) | AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다. | Cloud Manager 관리자 |
 | 5 | [git 저장소 액세스 정보 가져오기](retrieve-access.md) | 프론트엔드 개발자가 Cloud Manager를 사용하여 git 저장소 정보에 액세스하는 방법에 대해 알아봅니다. | 프론트엔드 개발자 |
@@ -70,7 +70,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 * AEM 또는 Cloud Manager 관리자이거나 프론트엔드 개발자 및 관리자 역할을 모두 수행하는 경우 또는 AEM의 전체적인 프로세스를 이해하고자 하는 경우, 아래 설명된 대로 [Cloud Manager 이해](cloud-manager.md)를 통해 여정을 처음부터 시작하십시오.
 * 프론트엔드 개발만 담당하며 AEM 및 Cloud Manager 관리자와 상호 작용해야 하는 경우, 바로 [git 저장소 액세스 정보 가져오기](retrieve-access.md)로 건너뛰어 AEM git 저장소에 대한 액세스 권한을 얻고 맞춤화를 시작할 수 있습니다.
-* AEM Sites과 Cloud Manager이 함께 작동하는 방법을 이미 알고 있으며 바로 구성을 시작하고자 하는 경우 [템플릿으로 사이트 생성으로 바로 건너뛸 수 있습니다](create-site.md).
+* AEM Sites 및 Cloud Manager가 함께 작동하는 방법에 대해 이미 알고 있으며 바로 구성을 시작하고자 하는 경우 [템플릿으로 사이트 만들기로 바로 건너뛸 수 있습니다.](create-site.md)
 
 ## 추가 리소스 {#additional-resources}
 

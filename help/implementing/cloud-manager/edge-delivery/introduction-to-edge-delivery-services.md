@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,12 +69,12 @@ Edge Delivery Services는 프로젝트를 시작한 방식에 따라 다양한 �
 
 **Cloud Manager에서의 Edge Delivery 할 일 목록**&#x200B;은 온보딩 작업 체크리스트로, Edge Delivery 사이트를 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩하고 관리할 수 있도록 안내합니다.
 
-![Cloud Manager의 Edge Delivery 사이트 할 일 목록.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager의 Edge Delivery 사이트에서 할 일 목록.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |
 | 1 | 제품 공동 작업 채널 가입 | **요청 제출하기**&#x200B;를 클릭하면 Adobe에 귀사를 위한 채널을 만들기 위한 요청이 제출됩니다. 채널이 이미 존재하는 경우 귀사 채널로 연결됩니다. |
-| 2 | 전제 조건 완료 | [시작하기 튜토리얼 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
+| 2 | 사전 요구 사항 완료 | [시작하기 튜토리얼 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
 | 3 | Edge Delivery 사이트 추가 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오. |
 | 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |

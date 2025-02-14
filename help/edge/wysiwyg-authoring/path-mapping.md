@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ AEM을 사용하여 WYSIWYG 콘텐츠를 작성하고 Edge Delivery Services에 
 * AEM 작성 인스턴스에 사용되는 페이지 경로와 웹 사이트에 사용되는 공개 페이지 경로 간의 관계를 매핑하고 생성합니다.
 * Edge Delivery Services에 게시되는 콘텐츠(페이지, 시트, 자산 등)를 제어합니다.
 
-경로 매핑은 각 프로젝트에 대해 개별적으로, 프로젝트의 콘텐츠 및 URL 구조에 따라 구성되어야 합니다. [범용 편집기](/help/sites-cloud/authoring/universal-editor/navigation.md)에서 콘텐츠를 편집하는 동안 AEM에서 사용됩니다.
+경로 매핑은 각 프로젝트에 대해 개별적으로, 프로젝트의 콘텐츠 및 URL 구조에 따라 구성되어야 합니다. 콘텐츠 게시 중 및 [범용 편집기](/help/sites-cloud/authoring/universal-editor/navigation.md)에서 콘텐츠를 편집할 때 AEM에서 사용합니다.
 
 ## 구성 형식 {#configuration-format}
 
@@ -67,7 +67,7 @@ Edge Delivery Services 페이지에서 사용되는 자산은 일반적으로 �
 >
 >Edge Delivery Services에 직접 자산을 게시하려는 사용 사례가 있는 경우(예: 페이지 컨텍스트 외부의 URL에서 이미지 또는 PDF에 직접 액세스하는 것을 원하는 경우), 구성의 `includes` 섹션에도 DAM 경로를 추가해야 합니다.
 >
->예를 들어 PDF 세트가 포함된 `/content/dam/my-site/documents`와 같은 자산 루트 폴더를 `/assets/...`를 통해 공개적으로 액세스 가능하도록 설정하려면, 구성의 `includes` 섹션에 항목을 추가해야 합니다.
+>예를 들어 PDF 세트가 포함된 `/content/dam/my-site/documents`와 같은 자산 루트 폴더를 `/assets/...`를 통해 공개적으로 액세스 가능하도록 설정하려면 구성의 `includes` 섹션에 항목을 추가해야 합니다.
 
 ## 구성하는 방법 {#how-to-configure}
 

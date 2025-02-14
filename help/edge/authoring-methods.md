@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM에서 콘텐츠 작성자를 위한 최선의 결정을 내리는 데 도움
 AEM의 유연성 덕분에 문서 기반 작성을 선택하든 WYSIWYG 작성을 선택하든 상관없이 작성 요구 사항을 충족할 수 있습니다. 고려 사항을 시작할 때 다음 사실을 명심하십시오.
 
 * **항상 콘텐츠 작성자가 의사 결정에 참여하도록 하십시오.** - 콘텐츠 작성자는 전문가이며 그 인사이트가 매우 중요합니다.
-* **여러 가지 작성 방법을 구현할 수 있습니다.** - Adobe는 필요에 따라 단순하게 시작해서 복잡성을 고려하여 높여가는 것을 권장하지만, 하나의 프로젝트에서 여러 작성 방법을 함께 사용할 수 있습니다.
+* **여러 가지 작성 방법을 구현할 수 있습니다.** - Adobe는 필요에 따라 단순하게 시작해서 복잡성을 고려하여 높여가는 것을 권장하지만 하나의 프로젝트에서 여러 작성 방법을 함께 사용할 수 있습니다.
 * **작성 방법은 나중에 언제든지 변경 가능합니다.** - 무엇을 결정하든 거기에 구속되지 않습니다. Adobe의 자동 마이그레이션 도구를 사용하면 한 방법에서 다른 방법으로 쉽게 변경할 수 있습니다.
 * **구현 전에 결정해서는 안 되며, 구현의 일부로서 결정해야 합니다.** - AEM은 하나의 통합된 제품이므로 이 중요한 결정이 계약 협상에 포함될 필요는 없습니다. AEM을 구매하면 모두 받을 수 있습니다. 오히려 이는 구현 중에 내리는 결정입니다.
 
@@ -47,14 +47,14 @@ Adobe는 이를 이해하므로 획일적인 접근 방식을 제공하지 않�
 
 ## 콘텐츠 게재 환경 설정 {#content-delivery}
 
-콘텐츠를 어떻게 게재할 것인지를 가장 먼저 고려해야 합니다. Edge Delivery Services는 번개처럼 빠른 사이트를 제공하지만, 아마도 귀하는 Headless 게재에 초점을 맞추고 있을 것입니다. 다음 의사 결정 트리는 옵션을 고려하는 데 도움이 될 수 있습니다.
+콘텐츠를 어떻게 게재할 것인지를 가장 먼저 고려해야 합니다. Edge Delivery Services는 번개처럼 빠른 사이트를 제공하지만 아마도 귀하는 Headless 게재에 초점을 맞추고 있을 것입니다. 다음 의사 결정 트리는 옵션을 고려하는 데 도움이 될 수 있습니다.
 
 ![콘텐츠 게재 결정 트리](assets/content-delivery-decision-tree.png)
 
 다음이 필요한지 여부를 결정하는 데 도움이 될 수 있습니다.
 
 * 콘텐츠 조각 편집기 및/또는 범용 편집기를 사용한 [AEM as a headless CMS](/help/headless/introduction.md).
-* [문서 기반 편집](/help/edge/docs/authoring.md) 또는 [범용 편집기로 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md)을 사용하는 AEM Edge Delivery Services.
+* [문서 기반 편집](/help/edge/docs/authoring.md) 또는 [범용 편집기가 포함된 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md)을 사용한 AEM Edge Delivery Services.
 
 ## 콘텐츠 작성 환경 설정 {#content-authoring}
 
@@ -64,8 +64,8 @@ Adobe는 이를 이해하므로 획일적인 접근 방식을 제공하지 않�
 
 다음이 필요한지 여부를 결정하는 데 도움이 될 수 있습니다.
 
-* [문서 기반 편집](/help/edge/docs/authoring.md)을 사용하는 AEM Edge Delivery Services.
-* [범용 편집기로 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md).
+* [문서 기반 편집](/help/edge/docs/authoring.md)을 사용한 AEM Edge Delivery Services.
+* [범용 편집기가 포함된 WYSIWYG 작성](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## 프로젝트 목표 {#project-goals}
 

@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 환경 만들기 {#create-environments}
 
-이 [온보딩 여정](overview.md) 부분에서는 Cloud Manager을 사용하여 첫 번째 환경을 만드는 방법을 배웁니다.
+이 [온보딩 여정](overview.md) 부분에서는 Cloud Manager를 사용하여 첫 번째 환경을 만드는 방법에 대해 알아봅니다.
 
 ## 목표 {#objective}
 
-이 온보딩 여정의 이전 문서인 [프로그램 만들기](create-program.md)를 읽고 나면 이제 고유한 Cloud Manager 프로그램이 있습니다. 이제 Cloud Manager를 사용하여 해당 프로그램에 대한 첫 번째 환경을 만드는 방법을 배울 수 있습니다.
+이 온보딩 여정의 이전 문서인 [프로그램 만들기](create-program.md) 단계를 진행하고 나면 이제 고유한 Cloud Manager 프로그램을 만들어졌을 것입니다. 이제 Cloud Manager를 사용하여 해당 프로그램에 대한 첫 번째 환경을 만드는 방법을 배울 수 있습니다.
 
 이 문서를 읽고 나면 다음과 같은 작업을 수행할 수 있습니다.
 

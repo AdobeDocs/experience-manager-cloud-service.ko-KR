@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 
 ## 분류 체계 페이지 만들기 {#creating}
 
-[AEM의 다른 모든 페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md)와 같이 분류법이 만들어집니다.
+분류 체계는 [AEM의 다른 페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md)와 마찬가지로 작성됩니다.
 
-1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)(으)로 이동합니다.
+1. [**Sites** 콘솔로 이동합니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 1. 분류 체계를 만들려는 위치를 선택합니다.
 
@@ -46,7 +46,7 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.
 
-분류 체계 페이지가 생성되었습니다. **성공** 대화 상자에서 **완료** 대화 상자를 탭하거나 클릭하여 메시지를 닫거나 **열기**&#x200B;를 클릭하여 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)에서 페이지를 편집할 수 있습니다.
+분류 체계 페이지가 생성되었습니다. **성공** 대화상자에서 **완료** 대화상자를 탭하거나 클릭하여 메시지를 삭제하거나 **열기**&#x200B;를 탭하여 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)에서 페이지를 편집합니다.
 
 다음 단계에서 사용할 분류 체계 페이지의 결과 페이지 이름을 기록해 둡니다.
 
@@ -54,7 +54,7 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 
 AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을 시작합니다.
 
-1. [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)(으)로 이동합니다.
+1. [**Sites** 콘솔로 이동합니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 1. 편집하려는 분류 체계를 선택합니다.
 
@@ -82,7 +82,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 ## 분류 체계 게시를 위한 paths.json 업데이트 {#paths-json}
 
-[Edge Delivery Services 사이트에 대한 테이블 형식 데이터를 관리 및 게시](/help/edge/wysiwyg-authoring/tabular-data.md)할 때와 마찬가지로, 분류 데이터를 게시할 수 있도록 프로젝트의 `paths.json` 파일을 업데이트해야 합니다.
+[Edge Delivery Services 사이트의 표 형식 데이터를 관리 및 게시](/help/edge/wysiwyg-authoring/tabular-data.md)할 때와 마찬가지로 분류 체계 데이터를 게시할 수 있도록 프로젝트의 `paths.json` 파일을 업데이트해야 합니다.
 
 1. GitHub에서 프로젝트의 루트를 엽니다.
 
@@ -101,7 +101,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
    }
    ```
 
-   * `<taxonomy-page-name>`은(는) 사용자가 만든 [분류 페이지의 이름과 일치해야 합니다](#creating).
+   * `<taxonomy-page-name>`은 [생성한 분류 체계 페이지](#creating)의 이름과 일치해야 합니다.
    * `<taxonomy-json-name>`은 선택한 유효한 이름일 수 있습니다.
 
 1. **변경 사항 커밋...**&#x200B;을 클릭하여 `main`에 변경 사항을 저장합니다.
@@ -112,20 +112,20 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 >[!TIP]
 >
->경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services용 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ## 분류 체계 게시 {#publishing}
 
 분류 체계는 게시될 때까지 범용 편집기에서 또는 사용자가 사용할 수 없습니다.
 
-분류 페이지는 [도구 모음의 **빠른 게시** 또는 **게시 관리** 아이콘을 사용하여](/help/sites-cloud/authoring/sites-console/publishing-pages.md)하여 다른 페이지와 같이 게시됩니다.
+분류 체계 페이지는 [도구 모음의 **빠른 게시** 또는 **발행물 관리** 아이콘을 사용하여](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 다른 페이지와 마찬가지로 게시됩니다.
 
 매번 분류 체계 페이지를 다시 게시해야 합니다.
 
 * 분류 체계 페이지를 편집합니다.
 * 분류 체계 페이지에 포함된 태그 및 네임스페이스를 편집하거나 추가합니다.
 
-새 분류 페이지를 만드는 경우 먼저 [매핑을 프로젝트의 `paths.json` 파일에 추가](#paths-json)해야 합니다.
+새 분류 체계 페이지를 만들려면 먼저 [프로젝트의 `paths.json` 파일에 매핑](#paths-json)을 추가해야 합니다.
 
 ## 분류 체계 정보 접근 {#accessing}
 
@@ -135,7 +135,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-[프로젝트의 `paths.json` 파일에 분류를 매핑](#paths-json)할 때 정의한 `<taxonomy-json-name>`을(를) 사용합니다. 분류 데이터는 다음 예제와 같이 JSON 데이터로 반환됩니다.
+[분류 체계를 프로젝트의 `paths.json` 파일에 매핑](#paths-json)할 때 정의한 `<taxonomy-json-name>`을 사용합니다. 분류 체계 데이터는 다음 예제와 같이 JSON 데이터로 반환됩니다.
 
 ```json
 {
@@ -166,11 +166,11 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 
 이 JSON 데이터는 분류 체계를 업데이트하고 다시 게시할 때 자동으로 업데이트됩니다. 앱은 사용자를 위해 이 정보에 프로그래밍 방식으로 액세스할 수 있습니다.
 
-[여러 언어로 태그를 유지 관리하는 경우](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) `sheet=` 매개 변수의 값으로 ISO2 언어 코드를 전달하여 해당 언어에 액세스할 수 있습니다.
+[여러 언어로 태그를 유지 관리하는 경우](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) ISO2 언어 코드를 `sheet=` 매개변수의 값으로 전달하여 해당 언어에 액세스할 수 있습니다.
 
 ## 추가 태그 속성 노출 {#additional-properties}
 
-기본적으로 분류법에는 이전 [의 ](#accessing)과(와) 같이 `tag` 및 `title` 값이 포함됩니다. 추가 태그 속성을 노출하도록 분류를 구성할 수 있습니다. 이 예제에서는 태그 설명을 노출하겠습니다.
+기본적으로 분류 체계에는 `tag` 및 `title` 값이 포함됩니다([이전 예제](#accessing)에서 확인할 수 있음). 추가 태그 속성을 노출하도록 분류 체계를 구성할 수 있습니다. 이 예제에서는 태그 설명을 노출하겠습니다.
 
 1. Sites 콘솔을 사용하여 만든 분류 체계를 선택합니다.
 1. 도구 모음에서 **속성** 아이콘을 탭하거나 클릭합니다.
@@ -179,7 +179,7 @@ AEM의 다른 페이지와 같은 방식으로 분류 체계 페이지 편집을
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 1. 분류 체계를 선택한 상태로 도구 모음에서 **빠른 게시**&#x200B;를 탭하거나 클릭합니다.
 
-이제 [분류법에 액세스하면](#accessing)태그 설명(또는 노출하도록 선택한 모든 속성)이 JSON에 포함됩니다.
+이제 [분류 체계에 액세스하면](#accessing) 태그 설명(또는 노출하도록 선택한 속성)이 JSON에 포함됩니다.
 
 ```json
 {

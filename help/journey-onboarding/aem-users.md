@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 81%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-온보딩 여정의 먼 길을 진행하시느라 수고하셨습니다. 축하합니다! 시스템 관리자가 [AEM 제품 프로필 할당](assign-profiles-aem.md) 문서에서 필요한 클라우드 리소스를 설정하고 액세스 권한을 부여하는 온보딩 여정을 완료했습니다.
+온보딩 여정의 먼 길을 진행하시느라 수고하셨습니다. 축하합니다! 시스템 관리자가 [AEM 제품 프로필](assign-profiles-aem.md) 할당 문서를 통해 필요한 클라우드 리소스를 설정하고 액세스 권한을 부여하는 온보딩 여정을 완료했습니다.
 
 이 시점에서 AEM 사용자는 콘텐츠 작성을 시작할 수 있습니다. 이러한 의미에서 온보딩이 완료되었으며 이제 이 문서에서 설명하는 새 AEM as a Cloud Service 시스템을 사용할 수 있습니다.
 
@@ -48,7 +48,7 @@ AEM 사용자로서 이 문서에 설명된 작업을 시작하기 전에 시스
 
 AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습니다.
 
-1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)에 있는 Cloud Manager 로그인 페이지로 이동합니다.
+1. Cloud Manager의 로그인 페이지 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)으로 이동합니다.
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지에서 적절한 프로그램을 선택하여 **개요** 페이지를 시작합니다. 액세스할 프로그램이 확실하지 않은 경우 시스템 관리자에게 문의하십시오.
 
@@ -73,7 +73,7 @@ AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습
 
 축하합니다! 이제 AEM 콘텐츠를 작성하고 게시할 준비가 되었습니다. AEM에서 콘텐츠를 작성하고 관리하는 방법에 대한 자세한 내용은 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
-개발자와 배포 관리자가 AEM as a Cloud Service에 대한 사용자 지정 애플리케이션을 만들고 관리하는 방법에 관심이 있는 경우 온보딩 여정의 두 번째 선택적 부분인 [AEM 개발자 작업](developers.md)을 계속 진행하십시오.
+개발자와 배포 관리자가 AEM as a Cloud Service에 대한 사용자 정의 애플리케이션을 만들고 관리하는 방법에 관심이 있는 경우 온보딩 여정의 두 번째 선택적 부분인 [AEM 개발자 작업](developers.md)을 계속 진행하십시오.
 
 >[!TIP]
 >

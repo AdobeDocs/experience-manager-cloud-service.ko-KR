@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
 
 * AEM 작성 계층:
 웹 콘텐츠 관리를 위한 웹 기반 인터페이스(연결된 API 포함)를 제공합니다. 이는 다음과 같은 두 가지 접근 방식 모두에 적용됩니다.
-   * Headful - 페이지 편집기 및 Universal Editor를 통해
+   * Headful - 페이지 편집기 및 범용 편집기를 통해
    * Headless - 콘텐츠 조각 편집기를 통해
 * 문서 기반 작성 계층:
 다음과 같은 표준 애플리케이션을 사용하여 콘텐츠를 작성할 수 있습니다.
@@ -154,7 +154,7 @@ AEM 작성 및 게시 계층은 표준 컨테이너 오케스트레이션 서비
 
 AEM 작성 계층은 단일 콘텐츠 저장소를 공유하는 AEM 작성자 포드의 클러스터로 운영됩니다. 유지 관리 작업이 실행 중이거나 배포 프로세스가 진행되는 동안 최소 두 개의 포드로 비즈니스 연속성을 확보합니다.
 
-AEM 게시 계층은 각각 게시된 콘텐츠의 자체 콘텐츠 저장소가 있는 AEM 게시 인스턴스의 팜으로 운영됩니다. 각 게시자는 콘텐츠의 구체화된 보기를 위해 AEM Dispatcher 모듈이 장착된 단일 Apache 인스턴스에 연결되어 Adobe 관리 CDN의 원본 역할을 합니다. 최소 두 개의 포드를 사용하면 비즈니스 연속성 또한 확보할 수 있지만, 트래픽이 많은 기간에는 이 숫자가 흔히 늘어납니다.
+AEM 게시 계층은 각각 게시된 콘텐츠의 자체 콘텐츠 저장소가 있는 AEM 게시 인스턴스의 팜으로 운영됩니다. 각 게시자는 콘텐츠의 구체화된 보기를 위해 AEM Dispatcher 모듈이 장착된 단일 Apache 인스턴스에 연결되어 Adobe 관리 CDN의 원본 역할을 합니다. 최소 두 개의 포드를 사용하면 비즈니스 연속성 또한 확보할 수 있지만 트래픽이 많은 기간에는 이 숫자가 흔히 늘어납니다.
 
 AEM 미리보기 계층은 단일 AEM 노드로 구성되어 있습니다. 게시 계층에 게시하기 전 콘텐츠의 품질 보증에 사용됩니다. 특히 배포 중에 가끔 가동 중지 시간이 미리보기 계층에서 발생할 수 있습니다.
 
@@ -180,7 +180,7 @@ AEM 프로젝트의 코드 및 구성은 변경 사항이 있을 때 배포 파�
    * AEM 작성 및 게시 계층에 대한 서버측 Java 코드 및 OSGI 구성을 저장합니다.
 * AEM 프론트엔드:
    * AEM 작성 및 게시 계층에 대한 클라이언트측 JS, CSS 및 HTML 코드를 저장합니다.
-clientlib에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
+clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
 * AEM 웹 계층:
    * AEM 게시 계층에 대한 Dispatcher 구성 파일을 저장합니다.
 * AEM 구성:

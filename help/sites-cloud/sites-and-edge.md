@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Edge Delivery Services가 콘텐츠 제작을 가속화하고 100% 성능으로 
 
 ## Edge Delivery Services는 무엇입니까? {#what-is-edge}
 
-Edge Delivery Services는 작성 및 개발 속도가 빠른 효과적인 경험을 제공하여 참여와 전환을 촉진하는 탁월한 경험을 제공합니다. 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. [Edge Delivery Services 개요](/help/edge/overview.md) 문서에서 Edge Delivery Services에 대해 자세히 알아보세요.
+Edge Delivery Services는 작성 및 개발 속도가 빠른 효과적인 경험을 제공하여 참여와 전환을 촉진하는 탁월한 경험을 제공합니다. 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. [Edge Delivery Services 개요](/help/edge/overview.md) 문서에서 Edge Delivery Services에 대해 자세히 알아보십시오.
 
 Edge Delivery Services와 AEM Sites as a Cloud Service를 사용하면 프로젝트에서 다음의 이점을 누릴 수 있습니다.
 

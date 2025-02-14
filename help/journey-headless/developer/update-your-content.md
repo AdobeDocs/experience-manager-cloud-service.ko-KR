@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
 
-[AEM Headless 개발자 여정](overview.md)의 이 부분에서 REST API를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 알아보세요.
+이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -24,7 +24,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Delivery API를 통해 콘�
 * AEM GraphQL API Target의 작동 방식을 이해할 수 있습니다.
 * 몇 가지 실용적인 샘플 쿼리를 이해할 수 있습니다.
 
-이 문서는 해당 기본 사항을 기본으로 하며, 이를 통해 REST API를 사용하여 AEM의 기존 Headless 콘텐츠를 업데이트하는 방법에 대해 살펴볼 수 있습니다.
+이 문서는 해당 기본 사항을 기본으로 하며, 이를 통해 REST API를 사용하여 AEM의 기존 Headless 콘텐츠를 업데이트하는 방법에 대해 알아볼 수 있습니다.
 
 ## 목표 {#objective}
 
@@ -304,8 +304,8 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조하십시오.
 
-* Adobe Experience Manager Assets HTTP API(추가 리소스)
-* AEM Assets HTTP API의 콘텐츠 조각 지원(추가 리소스)
+* Adobe Experience Manager Assets HTTP API (추가 리소스)
+* AEM Assets HTTP API의 콘텐츠 조각 지원 (추가 리소스)
 
 ## 다음 단계 {#whats-next}
 

@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # AEM 게재 API를 통해 콘텐츠에 액세스하는 방법 {#access-your-content}
 
-[AEM Headless 개발자 여정](overview.md)의 이 부분에서는 GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 앱에 피드(Headless 게재)하는 방법을 배울 수 있습니다.
+이 [AEM Headless 개발자 여정](overview.md)의 부분에서 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 앱에 피드하는 방법(Headless 게재)에 대해 알아볼 수 있습니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -37,7 +37,7 @@ AEM Headless 여정의 이전 문서인 [콘텐츠를 모델링하는 방법](mo
 
 이에 이 모든 콘텐츠는 (콘텐츠 조각에) 깔끔히 구조화되어 새로운 앱 피드 대기 중입니다. 질문 - 콘텐츠를 가져오는 방법은 무엇입니까?
 
-추가적인 처리가 필요하면 특정 콘텐츠를 타겟팅하고 필요한 사항을 선택한 다음 앱으로 반환해야 합니다.
+추가적인 처리가 필요하면 특정 콘텐츠를 타기팅하고 필요한 사항을 선택한 다음 앱으로 반환해야 합니다.
 
 Adobe Experience Manager(AEM) as a Cloud Service에서 AEM GraphQL API를 사용하면 콘텐츠 조각에 선택적으로 액세스하여 필요한 콘텐츠만 반환할 수 있습니다. 즉, 애플리케이션에 사용할 구조화된 콘텐츠의 Headless 게재를 실현할 수 있습니다.
 

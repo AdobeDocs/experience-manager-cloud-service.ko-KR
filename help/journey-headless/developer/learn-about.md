@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # CMS Headless 개발에 대해 알아보기 {#learn-about}
 
-[AEM Headless 개발자 여정](overview.md)의 이 부분에서는 Headless 기술 및 이 기술을 사용하는 이유에 대해 알아봅니다.
+이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 
 스택의 모든 구성 요소에 변경 사항을 조정하는 데 추가 역량을 사용하면 이 자연 사일로의 제한 사항이 표시됩니다.
 
-사용자는 플랫폼이나 터치 포인트에 관계없이 참여를 기대하므로 경험을 제공하는 방법에 민첩성을 제공합니다. 이 멀티채널 방식은 디지털 경험의 표준이고 전체 스택 접근 방식은 특정 상황에서 유연하지 않을 수 있습니다.
+사용자는 플랫폼이나 접점에 관계없이 참여를 기대하므로 경험을 제공하는 방법에 민첩성을 제공합니다. 이 멀티채널 방식은 디지털 경험의 표준이고 전체 스택 접근 방식은 특정 상황에서 유연하지 않을 수 있습니다.
 
 ## Headless의 헤드 {#the-head}
 
@@ -85,7 +85,7 @@ Headless 방식을 통해 미래의 디지털 경험 수요에 맞게 쉽고 빠
 
 지속적으로 강력한 REST API가 필요합니다. 단, REST 요청은 대량으로 세부 정보를 표시할 수 있습니다. 모든 채널의 REST를 호출하는 소비자가 여러 명일 경우 이 세부 정보 표시와 성능이 영향을 받을 수 있습니다.
 
-Headless 콘텐츠 게재 시 GraphQL API를 사용하기도 합니다. GraphQL을 통해 이와 유사한 상태를 저장하지 않는 방식으로 전송할 수 있지만, 타겟팅된 쿼리를 추가하면 총 필수 쿼리 개수를 줄이고 성능을 개선할 수 있습니다. 솔루션에서 혼합된 REST와 GraphQL을 사용하는 것이 일반적이며, 기본적으로 작업에 바로 사용할 수 있도록 가장 적합한 도구를 선택합니다.
+Headless 콘텐츠 게재 시 GraphQL API를 사용하기도 합니다. GraphQL을 통해 이와 유사한 상태를 저장하지 않는 방식으로 전송할 수 있지만 타기팅된 쿼리를 추가하면 총 필수 쿼리 개수를 줄이고 성능을 개선할 수 있습니다. 솔루션에서 혼합된 REST와 GraphQL을 사용하는 것이 일반적이며, 기본적으로 작업에 바로 사용할 수 있도록 가장 적합한 도구를 선택합니다.
 
 어떤 API를 선택했든지 공통 API 기반의 Headless 시스템을 정의하여 최신 브라우저와 점진적 웹 앱(PWA) 등 기타 웹 기술을 사용할 수 있습니다. API는 손쉽게 확장하고 조종할 수 표준 인터페이스를 생성합니다.
 
@@ -127,7 +127,7 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 지금까지 이 문
 
 ## 추가 리소스 {#additional-resources}
 
-다음 문서인 [AEM as a Cloud Service Headless 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [AEM Headless as a Cloud Service 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM as a Cloud Service의 아키텍처 이해
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)

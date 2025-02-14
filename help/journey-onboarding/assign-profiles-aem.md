@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ AEM을 사용하려면 팀원이 하나 이상의 AEM 제품 프로필에 할당
 
 Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십시오.
 
-1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에 Admin Console에 로그인합니다.
+1. Admin Console [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에 로그인합니다.
 
 1. **개요** 페이지의 **제품 및 서비스** 카드에서 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택합니다.
 

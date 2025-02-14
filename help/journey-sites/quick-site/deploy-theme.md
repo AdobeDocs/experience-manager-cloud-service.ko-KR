@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [사이트 테마 맞춤�
 파이프라인이 완료되면 관리자에게 변경 내용을 확인하라고 알릴 수 있습니다. 그런 다음 관리자는 다음 작업을 수행합니다.
 
 1. AEM 작성 환경을 엽니다.
-1. [관리자가 이전에 만든 사이트](create-site.md)(으)로 이동합니다.
+1. [관리자가 이전에 생성한 사이트](create-site.md)로 이동합니다.
 1. 콘텐츠 페이지 중 하나를 편집합니다.
 1. 변경 내용을 적용합니다.
 

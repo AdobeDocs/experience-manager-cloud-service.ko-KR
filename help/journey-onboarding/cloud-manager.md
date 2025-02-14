@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 ## 목표 {#objective}
 
-이 온보딩 여정의 이전 문서인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)에서 AEMaaCS 팀에 적절한 역할을 부여했습니다. 이제 팀에서 사용하는 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법에 대해 알아봅니다.
+이 온보딩 여정의 이전 문서인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)에서 AEMaaCS 팀에 적절한 역할을 부여했습니다 이제 팀에서 사용하는 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법에 대해 알아봅니다.
 
 이 여정의 이전 단계를 완료했으므로 팀에서 Cloud Manager에 액세스할 수 있습니다. Cloud Manager는 프로그램 및 환경과 같은 프로젝트 리소스를 생성하고 관리하는 데 사용됩니다.
 
@@ -40,7 +40,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 1. 시스템 관리자로서 **비즈니스 소유자** 역할이 할당되었는지 확인합니다.
 
-   * 시스템 관리자에게 **비즈니스 소유자** 역할을 할당하는 방법에 대한 자세한 내용을 보려면 이 여정의 이전 단계인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)으로 돌아가십시오.
+   * 이 여정의 이전 단계인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)으로 돌아가서 시스템 관리자에게 **비즈니스 소유자** 역할을 할당하는 방법에 대한 자세한 내용을 참조하십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하면 일반 랜딩 페이지가 표시됩니다.
 
@@ -50,9 +50,9 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-**비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 시작 이메일을 받습니다. 이 시작 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
+**비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 시작 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
+1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.

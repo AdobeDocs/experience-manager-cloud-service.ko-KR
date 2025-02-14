@@ -1,24 +1,24 @@
 ---
-title: 템플릿으로 사이트 생성
+title: 템플릿으로 사이트 만들기
 description: 사이트 템플릿을 사용하여 간편하게 AEM 사이트를 만드는 방법에 대해 알아봅니다.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 템플릿으로 사이트 생성 {#create-site-from-template}
+# 템플릿으로 사이트 만들기 {#create-site-from-template}
 
 사이트 템플릿을 사용하여 간편하게 AEM 사이트를 만드는 방법에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 및 빠른 사이트 생성 워크플로 이해](cloud-manager.md)에서는 Cloud Manager과 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 이해 및 빠른 사이트 생성 워크플로](cloud-manager.md)에서는 Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * AEM Sites 및 Cloud Manager를 함께 사용하여 프론트엔드 개발을 용이하게 하는 방법을 이해할 수 있습니다.
 * AEM 지식이 필요하지 않도록 프론트엔드 맞춤화 단계를 AEM에서 완전히 분리하는 방법을 파악할 수 있습니다.
@@ -31,7 +31,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 및 빠른
 
 * AEM 사이트 템플릿을 얻는 방법을 이해할 수 있습니다.
 * 템플릿을 사용하여 사이트를 만드는 방법을 이해할 수 있습니다.
-* 새 사이트에서 템플릿을 다운로드하여 프론트엔드 개발자에게 제공하는 방법을 파악할 수 있습니다.
+* 새 사이트에서 템플릿을 다운로드하여 프론트엔드 개발자에게 제공하는 방법을 살펴보십시오.
 
 ## 담당 역할 {#responsible-role}
 
@@ -54,7 +54,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 및 빠른
 
 ## 사이트 템플릿 얻기 {#obtaining-template}
 
-GitHub 저장소에서 [AEM Standard 사이트 템플릿의 최신 릴리스를 다운로드](https://github.com/adobe/aem-site-template-standard/releases)하여 가장 간단하게 시작할 수 있습니다.
+[GitHub 저장소에서 AEM 표준 사이트 템플릿의 최신 릴리스를 다운로드](https://github.com/adobe/aem-site-template-standard/releases)하여 가장 간단하게 시작할 수 있습니다.
 
 다운로드하고 나면 다른 패키지와 마찬가지로 이를 AEM 환경에 업로드할 수 있습니다. 패키지를 사용하여 작업하는 방법에 대해 자세히 알아보려면 [추가 리소스 섹션](#additional-resources)을 참조하십시오.
 
@@ -74,7 +74,7 @@ GitHub 저장소에서 [AEM Standard 사이트 템플릿의 최신 릴리스를 
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 생성**&#x200B;을 선택합니다.
+1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 만들기**&#x200B;를 선택합니다.
 
    ![템플릿으로 새 사이트 생성](assets/create-site-from-template.png)
 
@@ -175,7 +175,7 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 
 * AEM 사이트 템플릿을 얻는 방법을 이해할 수 있습니다.
 * 템플릿을 사용하여 사이트를 만드는 방법을 이해할 수 있습니다.
-* 새 사이트에서 템플릿을 다운로드하여 프론트엔드 개발자에게 제공하는 방법을 파악할 수 있습니다.
+* 새 사이트에서 템플릿을 다운로드하여 프론트엔드 개발자에게 제공하는 방법을 살펴보십시오.
 
 이 지식을 기반으로 다음 문서인 [파이프라인 설정](pipeline-setup.md)을 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 사이트 테마의 맞춤화를 관리할 수 있는 프론트엔드 파이프라인을 만들게 됩니다.
 
