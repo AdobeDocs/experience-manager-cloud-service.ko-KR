@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.2.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
+source-git-commit: aaef376b733c10643e44205e55a0921c22008990
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 18%
@@ -65,7 +65,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.2.0 릴리스 일자는 2025년 2�
 * **EC(Elliptic Curve) 개인 키 지원(secp384r1)**
 
   Cloud Manager은 이제 `secp384r1` EC(Elliptic Curve) 개인 키를 지원하여 고객 관리 OV/EV SSL 인증서에 대한 향상된 보안 및 규정 준수를 제공합니다.
-자세한 내용은 [고객 관리 OV/EV SSL 인증서 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)을 참조하십시오. <!-- CMGR-63636 -->
+자세한 내용은 [고객 관리 OV/EV SSL 인증서 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)을 참조하십시오. <!-- CMGR-63636 -->
 
 * **특수 테스트 환경**
 
