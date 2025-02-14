@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
+source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6071'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 99%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
-         + [2024.11.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [2024.10.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -578,7 +577,6 @@ ht-degree: 99%
       + [Experience League의 Dynamic Media 뉴스레터 아카이브](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)
       + [옵션 - Dynamic Media, 일반 설정 구성](/help/assets/dynamic-media/dm-general-settings.md)
       + [옵션 - Dynamic Media, 게시 설정 구성](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -710,7 +708,6 @@ ht-degree: 99%
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
-      + [게시 관리를 사용하여 적응형 양식 게시](/help/forms/manage-publication.md)
    + 시작하기 {#getting-started-forms}
       + [사용 사례 및 개발 환경 설정](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [대출 신청서 양식 만들기](/help/forms/create-adaptive-form-tutorial.md)
@@ -860,9 +857,9 @@ ht-degree: 99%
          + [적응형 양식에 대한 검토 만들기 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [적응형 양식 키워드](/help/forms/adaptive-forms-keywords.md)
       + [양식 미리보기](/help/forms/previewing-forms.md)
-   + 대화형 통신 {#interactive-communocation}
-      + [대화형 통신 소개](/help/forms/introduction-to-interactive-communication.md)
-      + [첫 번째 대화형 통신 만들기](/help/forms/create-your-first-communication.md)
+   + 인터랙티브 커뮤니케이션 {#interactive-communocation}
+      + [인터랙티브 커뮤니케이션 소개](/help/forms/introduction-to-interactive-communication.md)
+      + [첫 번째 인터랙티브 커뮤니케이션 만들기](/help/forms/create-your-first-communication.md)
       + [자주 묻는 질문](/help/forms/interactive-communications-faq.md)
    + Forms 중심 워크플로 {#create-form-centric-workflows}
       + [Forms 중심 워크플로 소개](/help/forms/aem-forms-workflow.md)
@@ -1038,6 +1035,9 @@ ht-degree: 99%
          + [규칙 편집기를 사용하여에 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Forms 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [양식 스타일 사용자 지정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
@@ -1211,9 +1211,9 @@ ht-degree: 99%
          + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 도메인 매핑 {#cdn-configurations}
-         + [콘텐츠 전송 네트워크 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [도메인 매핑 관리](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+      + CDN 구성 {#cdn-configurations}
+         + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [CDN 구성 관리](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
