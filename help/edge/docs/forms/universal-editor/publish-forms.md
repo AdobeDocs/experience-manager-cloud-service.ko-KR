@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 1. 양식의 게시 상태를 확인하려면 **게시**를 다시 클릭하세요.
    ![게시 상태](/help/forms/assets/publish-status.png)
 
-1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 세 점 메뉴를 클릭한 다음 **게시 취소**를 선택하십시오.
+1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 세 점 메뉴를 클릭한 다음 **게시 취소**를 클릭하십시오.
    ![게시 취소](/help/forms/assets/unpublish--form.png)
 
 ## Edge Delivery 게시자에 대한 레퍼러 필터를 구성하여 AEM에서 양식 제출 활성화

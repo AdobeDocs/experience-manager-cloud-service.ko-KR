@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 12%
@@ -46,7 +46,7 @@ REST 끝점을 구성하려면 다음을 수행합니다.
 
 {width=50%,height=50%}![적응형 양식에 대한 사후 요청 활성화](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * 데이터를 내부 서버에 게시하려면 리소스의 경로를 제공합니다. 데이터는 리소스의 경로에 게시됩니다. 예, `/content/restEndPoint`. 해당 게시 요청이 있는 경우 제출 요청에 대한 인증 정보가 사용됩니다.
 > * 데이터를 외부 서버에 게시하려면 URL을 제공합니다. URL 형식은 `https://host:port/path_to_rest_end_point`입니다. POST 요청을 익명으로 처리하는 경로를 구성해야 합니다.
