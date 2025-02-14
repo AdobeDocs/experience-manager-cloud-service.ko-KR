@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -46,6 +46,29 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 * [상자 모델](https://www.w3schools.com/css/css_boxmodel.asp): CSS 상자 모델은 HTML 요소의 구조를 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 기술합니다.
 * Flexbox/격자: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 및 [격자 레이아웃](https://www.w3schools.com/css/css_grid.asp)은 반응성이 뛰어나고 유연한 디자인을 만들기 위한 강력한 도구입니다.
 
+## 적응형 양식 블록의 양식 스타일 지정
+
+적응형 양식 블록은 표준화된 HTML 구조를 제공하여 양식 구성 요소 선택 및 스타일 지정 프로세스를 단순화합니다.
+
+* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. &lt;!—적응형 Forms 블록을 프로젝트에 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하세요.
+
+* **Forms용 CSS 스타일**: 스타일이 올바르게 적용되도록 하려면 `main .form form` 선택기 내에서 폼별 CSS를 감싸십시오. 이렇게 하면 스타일이 기본 콘텐츠 영역 내의 양식 요소만 타겟팅하므로 웹 사이트의 다른 부분과의 충돌을 피할 수 있습니다.
+
+  예:
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## 구성 요소 구조
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**적응형 Forms 블록을 위한 양식 스타일링**
-
-적응형 양식 블록은 표준화된 HTML 구조를 제공하여 양식 구성 요소 선택 및 스타일 지정 프로세스를 단순화합니다.
-
-* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. &lt;!—적응형 Forms 블록을 프로젝트에 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하세요.
-
-* **Forms용 CSS 스타일**: 스타일이 올바르게 적용되도록 하려면 `main .form form` 선택기 내에서 폼별 CSS를 감싸십시오. 이렇게 하면 스타일이 기본 콘텐츠 영역 내의 양식 요소만 타겟팅하므로 웹 사이트의 다른 부분과의 충돌을 피할 수 있습니다.
-
-  예:
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 

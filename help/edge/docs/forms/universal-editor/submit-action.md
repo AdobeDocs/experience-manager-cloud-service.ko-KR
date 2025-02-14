@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 12%
+source-wordcount: '735'
+ht-degree: 13%
 
 ---
 
@@ -140,3 +140,8 @@ REST 끝점을 구성하려면 다음을 수행합니다.
 1. 클릭하면 다음 옵션이 표시됩니다.
    * **[!UICONTROL 제출 시]**: 제출 시 양식을 제출할 때 표시할 메시지를 사용자 지정할 수 있습니다. 기본적으로 양식이 성공적으로 제출되면 &quot;양식을 제출해 주셔서 감사합니다&quot;라는 사용자 정의 메시지가 사용자에게 표시됩니다.
 **[!UICONTROL 메시지 표시]** 옵션을 선택하여 양식 제출 시 감사 메시지를 사용자 지정하고 서식 있는 텍스트 **편집기**&#x200B;에서 메시지를 추가/편집할 수도 있습니다.
+
+
+## 추가 참조
+
+{{see-more-forms-eds}}
