@@ -4,14 +4,14 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 P
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 1652df9e774d8212b1bcc2898ca5d57e2a0d13bc
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 6%
 
 ---
 
-# Experience Manager Assetsas a Cloud Service 에서 PDF 문서 관리 {#add-assets-to-experience-manager}
+# Experience Manager Assets as a Cloud Service에서 PDF 문서 관리 {#add-assets-to-experience-manager}
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -26,21 +26,21 @@ Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점�
 
 >[!TIP]
 >
-> 이전에 업로드한 PDF 문서의 여러 PDF 미리 보기를 가져올 수 없는 경우 페이지를 선택하고 ![재처리](/help/assets/assets/Reprocess.svg) **Assets 재처리**&#x200B;를 클릭합니다.
+> 이전에 업로드한 PDF 문서의 여러 페이지를 미리 볼 수 없는 경우 PDF을 선택하고 ![재처리](/help/assets/assets/Reprocess.svg) **Assets 재처리**&#x200B;를 클릭합니다.
 
 ## PDF Document Cloud 뷰어 구성 요소 지원 {#pdf-doc-cloud}
 
-AEM Assets의 기본 PDF Doc Cloud 뷰어에는 다음 구성 요소가 있습니다.
+기본 PDF Doc Cloud 뷰어에는 AEM Assets에서 다음과 같은 구성 요소가 있습니다.
 
 * **페이지 축소판을 사용하는 PDF 뷰어** 축소판 보기는 PDF 문서의 페이지를 미리 보는 작은 미리 보기입니다. 썸네일을 사용하여 원하는 페이지로 바로 이동할 수 있습니다. 왼쪽 창의 ![축소판](/help/assets/assets/thumbnail.svg)을 통해 선택한 PDF 문서의 축소판에 액세스할 수 있습니다.
 
-* **책갈피를 사용하여 PDF 뷰어** 책갈피는 문서의 콘텐츠로 이동하는 직접 링크입니다. 왼쪽 창의 ![책갈피](/help/assets/assets/bookmark.svg)를 통해 선택한 PDF 문서의 책갈피에 액세스할 수 있습니다.
+* **책갈피를 사용하는 PDF 뷰어** 책갈피는 문서의 콘텐츠로 이동하는 직접 링크입니다. 왼쪽 창의 ![책갈피](/help/assets/assets/bookmark.svg)를 통해 선택한 PDF 문서의 책갈피에 액세스할 수 있습니다.
 
 * **PDF에서 검색** 검색 ![검색](/help/assets/assets/Search.svg)을 사용하여 PDF 문서에서 텍스트를 조회할 수 있습니다.
 
 * **페이지 위로/페이지 아래로** 페이지 위로 ![페이지 위로](/help/assets/assets/ArrowUp.svg) 또는 페이지 아래로 ![페이지 아래로](/help/assets/assets/ArrowDown.svg)를 사용하여 문서를 스크롤합니다.
 
-* **축소/확대** 문서를 연속하려면 축소 ![축소](/help/assets/assets/ZoomOut.svg) 또는 ![확대](/help/assets/assets/ZoomIn.svg)를 사용합니다.
+* **축소/확대** 문서를 연속하려면 축소 ![축소](/help/assets/assets/Zoom-out.svg) 또는 ![확대](/help/assets/assets/zoom-in.svg)를 사용합니다.
 
 * **페이지 맞춤** 너비 또는 높이 차원을 사용하여 화면 크기에 맞게 문서를 맞추십시오.
 
@@ -51,7 +51,7 @@ AEM Assets의 기본 PDF Doc Cloud 뷰어에는 다음 구성 요소가 있습�
 Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PDF 문서를 미리 볼 수 있습니다. PDF 문서의 여러 페이지를 미리 보려면 다음 단계를 고려하십시오.
 
 1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
-1. 업로드하고 미리 보려는 PDF 문서를 찾습니다.
+1. 업로드하고 미리 보려는 PDF 문서를 찾아봅니다.
 1. 문서를 엽니다.
 1. PDF 문서 뷰어는 기본적으로 로드됩니다. 렌디션 패널에서 PDF 렌디션을 선택할 수도 있습니다.
 1. 렌디션 드롭다운에서 **모든 렌디션**&#x200B;을 선택합니다.
@@ -119,7 +119,7 @@ PDF 문서에 주석을 달려면 다음 단계를 수행하십시오.
 
 >[!NOTE]
 >
->PDF 문서에 추가하는 주석은 미리보기 모드에서 사용할 수 있습니다. 그러나 PDF 문서를 다운로드하거나 인쇄할 때는 주석이 표시되지 않습니다.
+>PDF 문서에 추가하는 주석은 미리보기 모드에서 사용할 수 있습니다. 하지만 PDF 문서를 다운로드하거나 인쇄할 때는 주석이 표시되지 않습니다.
 
 ## 다른 형식의 문서에 대한 여러 페이지 미리보기 지원 {#multi-format}
 
