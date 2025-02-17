@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 89%
 
 ---
@@ -45,6 +45,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 * [속성](https://www.w3schools.com/css/css_syntax.asp): CSS 속성은 요소의 시각적 모양을 정의합니다. 스타일 양식 필드의 일반적인 속성에는 색상, 배경색, 테두리, 패딩, 여백 등이 포함됩니다.
 * [상자 모델](https://www.w3schools.com/css/css_boxmodel.asp): CSS 상자 모델은 HTML 요소의 구조를 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 기술합니다.
 * Flexbox/격자: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 및 [격자 레이아웃](https://www.w3schools.com/css/css_grid.asp)은 반응성이 뛰어나고 유연한 디자인을 만들기 위한 강력한 도구입니다.
+
 
 ## 적응형 양식 블록의 양식 스타일 지정
 
