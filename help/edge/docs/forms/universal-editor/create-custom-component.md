@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1736'
 ht-degree: 5%
 
 ---
-
 
 # WYSIWYG 작성에서 사용자 지정 구성 요소 만들기
 
@@ -173,24 +173,25 @@ AEM 프로젝트에서 새 사용자 지정 구성 요소에 대한 새 폴더 �
 
 단계 값 사용자 지정 속성을 추가하려면 구성 요소 모델을 ` _<component>.json` 파일에 다음 코드 줄로 추가합니다.
 
-```javascript
+    &quot;javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
+    &quot;component&quot;: &quot;number&quot;,
+    &quot;name&quot;: &quot;stepValue&quot;,
+    &quot;label&quot;: &quot;Step Value&quot;,
+    &quot;valueType&quot;: &quot;number&quot;
     }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+    &quot;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+JSON 코드 조각은 **범위** 구성 요소에 대해 **단계 값**&#x200B;이라는 사용자 지정 속성을 정의합니다. 다음은 각 필드에 대한 분류입니다.
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **component**: 속성 대화 상자에 사용되는 입력 필드 형식을 지정합니다. 이 경우 `number`은(는) 필드가 숫자 값을 허용함을 나타냅니다.
+* **name**: 구성 요소의 논리에서 해당 속성을 참조하는 데 사용되는 속성의 식별자입니다. 여기서 `stepValue`은(는) 범위에 대한 단계 값 설정을 나타냅니다.
+* **label**: 속성 대화 상자에 표시되는 속성의 표시 이름입니다.
+* **valueType**: 속성에 필요한 데이터 형식을 정의합니다. `number`을(를) 사용하면 숫자 입력만 허용됩니다.
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+이제 `stepValue`을(를) `range.js`의 JSON 속성에서 사용자 지정 속성으로 사용하고 런타임 시 해당 값을 기반으로 동적 동작을 구현할 수 있습니다.
+
+따라서 구성 요소 정의, 구성 요소 모델 및 사용자 지정 속성을 추가한 후 최종 `_range.json` 파일은 다음과 같습니다.
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 위의 단계를 완료하면 사용자 지정 구성 요소가 유니버설 편집기 내의 양식 구성 요소 목록에 나타납니다. 그런 다음 양식 섹션으로 끌어다 놓을 수 있습니다.
 
 ![범위 구성 요소](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+아래 스크린샷에는 양식 작성자가 구성할 수 있는 속성을 지정하는 구성 요소 모델에 추가된 `range` 구성 요소의 속성이 표시됩니다.
+
+![범위 구성 요소의 속성](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 이제 스타일 및 기능을 추가하여 사용자 지정 구성 요소의 런타임 동작을 정의할 수 있습니다.
 
