@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 693576c9da99d3cc74b7cec8a7c7ea08120ae5bb
+source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6098'
 ht-degree: 99%
 
 ---
@@ -89,6 +89,7 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [2025.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2025/2025-2-0.md)
          + [2025.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [2024.11.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-11-0.md)
