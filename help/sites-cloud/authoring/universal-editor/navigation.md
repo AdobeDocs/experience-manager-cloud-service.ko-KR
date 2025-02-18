@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1623'
 ht-degree: 29%
 
 ---
@@ -193,7 +193,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 게시 {#publish}
 
-독자가 사용할 수 있도록 콘텐츠 라이브에 변경 사항을 게시할 수 있도록 게시 버튼을 선택합니다.
+게시를 선택하면 독자가 사용하기 위해 콘텐츠를 라이브로 게시하거나 검토할 미리보기 환경에 변경 사항을 게시할 수 있습니다.
 
 ![게시 버튼](assets/publish.png)
 

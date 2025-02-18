@@ -4,7 +4,7 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 38%
@@ -20,7 +20,7 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 >
 >예제를 자세히 살펴보려면 GitHub의 [범용 편집기 샘플 앱](https://github.com/adobe/universal-editor-sample-editable-app)을 검토할 수 있습니다.
 
-범용 편집기는 모든 소스에서 콘텐츠를 편집할 수 있지만 이 문서에서는 AEM 앱을 예로 사용합니다. 이 문서에서는 이러한 단계를 안내합니다.
+범용 편집기는 모든 소스에서 콘텐츠를 편집할 수 있지만, 이 문서에서는 AEM 앱을 예로 사용합니다. 이 문서에서는 이러한 단계를 안내합니다.
 
 ## 페이지 계측 {#instrument-page}
 
@@ -102,7 +102,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 필요한 경우 연결 URN에서 `config` 접두사를 사용하여 서비스 및 확장 끝점을 설정할 수 있습니다.
 
-Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고 호스팅된 자체 버전을 사용하려면 메타 태그에서 이를 설정할 수 있습니다. 범용 편집기에서 제공하는 기본 서비스 끝점을 덮어쓰려면 고유한 서비스 끝점을 설정합니다.
+Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않고 호스팅된 자체 버전을 사용하려면 메타 태그에서 이를 설정할 수 있습니다. 범용 편집기에서 제공하는 기본 서비스 끝점을 덮어쓰려면 고유한 서비스 끝점을 설정합니다.
 
 * 메타 이름 - `urn:adobe:aue:config:service`
 * 메타 콘텐츠 - `content="https://adobe.com"`(예)
@@ -122,7 +122,7 @@ Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고
 
 ## 범용 편집기를 열 컨텐츠 경로 또는 `sling:resourceType`을(를) 정의합니다. (선택 사항) {#content-paths}
 
-[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 콘텐츠 작성자가 페이지를 편집할 때 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열려야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업할 수 있습니다.
+[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 콘텐츠 작성자가 페이지를 편집할 때 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열어야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업을 수행할 수 있습니다.
 
 1. 구성 관리자를 엽니다.
 
@@ -141,7 +141,7 @@ AEM은 이 구성을 기반으로 하는 페이지용 범용 편집기를 다음
 
 1. AEM이 `Universal Editor Opening Mapping`에서 매핑을 확인하고 콘텐츠가 정의된 경로에 있는 경우 유니버설 편집기가 열립니다.
 1. `Universal Editor Opening Mapping`에 정의된 경로에 없는 콘텐츠의 경우, AEM은 콘텐츠의 `resourceType`이(가) 유니버설 편집기에서 열어야 하는 **Sling:resourceTypes에 정의된 유형과 일치하는지 확인**&#x200B;하고, 콘텐츠가 그러한 유형 중 하나와 일치하면 `${author}${path}.html`에 유니버설 편집기가 열립니다.
-1. 그렇지 않으면 AEM에서 페이지 편집기를 엽니다.
+1. 그렇지 않으면 AEM에서 페이지 편집기가 열립니다.
 
 **범용 편집기 열기 매핑** 필드에서 매핑을 정의하는 데 다음 변수를 사용할 수 있습니다.
 
@@ -177,7 +177,7 @@ Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하�
 
 * [Universal Editor 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
 * [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [유니버설 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+* [유니버설 편집기로 콘텐츠 게시](/help/implementing/universal-editor/publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.

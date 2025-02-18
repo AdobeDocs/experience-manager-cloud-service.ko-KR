@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 99%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 99%
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [실행 취소 다시 실행 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + 범용 편집기 {#universal-editor}
-         + [범용 편집기 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [범용 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [범용 편집기에서의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [페이지 템플릿](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 99%
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
          + [구성 요소 정의](/help/implementing/universal-editor/component-definition.md)
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
+         + [게시](/help/implementing/universal-editor/publishing.md)
          + [SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
          + [이벤트](/help/implementing/universal-editor/events.md)
          + [필터링 구성 요소](/help/implementing/universal-editor/filtering.md)

@@ -4,10 +4,10 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 13%
+source-wordcount: '1496'
+ht-degree: 11%
 
 ---
 
@@ -43,11 +43,41 @@ ht-degree: 13%
 
 `fields` 배열을 정의하는 방법에 대한 자세한 내용은 이 문서의 **[필드](#fields)** 섹션을 참조하십시오.
 
+계측을 통해 [구성 요소 정의](#component-definition) 또는 [을(를) 사용하는 두 가지 방법으로 구성 요소에 모델을 연결할 수 있습니다.](#instrumentation)
+
+### 구성 요소 정의를 사용하여 연결 {#component-definition}
+
+이 방법이 모델을 컴포넌트에 연결하는 기본 방법입니다. 이렇게 하면 구성 요소 정의에서 링크를 중앙에 유지할 수 있으며 컨테이너 간에 구성 요소를 드래그할 수 있습니다.
+
+구성 요소-정의.json 파일의 `template` 지시문에 `model` 속성을 포함하기만 하면 됩니다.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+자세한 내용은 [구성 요소 정의](/help/implementing/universal-editor/component-definition.md) 문서를 참조하십시오.
+
+### 계측을 사용한 연결 {#instrumentation}
+
 구성 요소에 모델 정의를 사용하려면 `data-aue-model` 특성을 사용할 수 있습니다.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>유니버설 편집기는 먼저 계측을 통해 모델이 연결되어 있는지 확인하고 구성 요소 정의를 확인하기 전에 모델을 사용합니다. 이것은 다음을 의미합니다.
+>
+>* 계측을 통해 모델에 대한 링크를 구현한 프로젝트는 변경할 필요 없이 그대로 계속 작동합니다.
+>* 계측과 함께 [구성 요소 정의](#component-definition)에서 모델을 정의하는 경우 계측이 항상 사용됩니다.
 
 ## 모델 정의 로드 {#loading-model}
 
@@ -93,7 +123,7 @@ ht-degree: 13%
 | 설명 | 구성 요소 유형 |
 |---|---|
 | [AEM 태그](#aem-tag) | `aem-tag` |
-| [AEM 콘텐츠](#aem-content) | `aem-content` |
+| [AEM 컨텐츠](#aem-content) | `aem-content` |
 | [부울](#boolean) | `boolean` |
 | [확인란 그룹](#checkbox-group) | `checkbox-group` |
 | [컨테이너](#container) | `container` |
@@ -139,11 +169,11 @@ AEM 태그 구성 요소 유형을 사용하면 구성 요소에 태그를 첨�
 
 #### AEM 컨텐츠 {#aem-content}
 
-AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 사용할 수 있습니다. 이 선택기는 AEM 리소스를 선택하는 데 사용할 수 있습니다. 에셋만 선택할 수 있는 [참조 구성 요소](#reference)와 달리 AEM 콘텐츠 구성 요소는 모든 AEM 콘텐츠를 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 사용할 수 있습니다. 이 선택기는 AEM 리소스를 선택하는 데 사용할 수 있습니다. 에셋만 선택할 수 있는 [참조 구성 요소](#reference)와 달리 AEM 콘텐츠 구성 요소는 모든 AEM 콘텐츠를 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
-| `rootPath` | `string` | 사용자가 AEM 콘텐츠를 선택할 수 있도록 콘텐츠 선택기가 열리는 경로로, 해당 디렉터리와 하위 디렉터리로 선택 항목을 제한합니다. | 아니요 |
+| `rootPath` | `string` | 사용자가 AEM 콘텐츠를 선택할 수 있도록 콘텐츠 선택기가 열리는 경로로, 해당 디렉터리 및 하위 디렉터리로 선택 항목을 제한합니다 | 아니요 |
 
 >[!BEGINTABS]
 
@@ -650,7 +680,7 @@ AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 �
 
 #### 참조 {#reference}
 
-참조 구성 요소 유형을 사용하면 AEM 에셋 선택기를 사용할 수 있습니다. 이 선택기는 참조할 AEM 에셋을 선택하는 데 사용할 수 있습니다. AEM 리소스를 선택할 수 있는 [AEM 콘텐츠 구성 요소](#aem-content)와 달리 참조 구성 요소는 에셋만 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+참조 구성 요소 유형을 사용하면 AEM 에셋 선택기를 사용할 수 있습니다. 이 선택기는 참조할 AEM 에셋을 선택하는 데 사용할 수 있습니다. 모든 AEM 리소스를 선택할 수 있는 [AEM 콘텐츠 구성 요소](#aem-content)와 달리 참조 구성 요소는 에셋만 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
 
 참조 구성 요소 유형을 사용하면 현재 개체에서 다른 데이터 개체를 참조할 수 있습니다.
 

@@ -4,9 +4,9 @@ description: 구성 요소 정의와 유니버설 편집기 간의 JSON 계약�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -33,35 +33,42 @@ ht-degree: 1%
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ ht-degree: 1%
 
 구성 요소가 페이지의 콘텐츠인 경우 다음 정보를 제공할 수 있습니다.
 
-* `name`은(는) 새로 만든 구성 요소에 대해 JCR에 저장된 선택적 이름을 정의합니다.
-   * 정보만 제공하며 일반적으로 `title`과(와) 같이 UI에 표시되지 않습니다.
 * `resourceType`은(는) 구성 요소를 렌더링하는 데 사용되는 [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType`을(를) 정의합니다.
-* `template`은(는) 새로 만든 구성 요소에 자동으로 쓸 선택적 키/값을 정의합니다.
+* `template`은(는) 새로 만든 구성 요소에 자동으로 쓸 선택적 키/값을 정의하고 구성 요소에 적용할 필터 및/또는 모델을 정의합니다.
    * 설명, 샘플 또는 자리 표시자 텍스트에 유용합니다.
+
+#### `template` {#template}
+
+선택적 키/값 쌍을 제공하면 `template`이(가) 자동으로 새 구성 요소에 쓸 수 있습니다. 또한 다음과 같은 선택적 값을 지정할 수도 있습니다.
+
+* `model`은(는) 구성 요소와 함께 사용되는 [모델](/help/implementing/universal-editor/field-types.md#model-structure)을(를) 정의합니다.
+   * 따라서 모델은 구성 요소 정의에서 중앙에서 유지되므로 계측을 [지정할 필요가 없습니다.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 이렇게 하면 컨테이너 간에 구성 요소를 이동할 수 있습니다.
+* `filter`은(는) 구성 요소와 함께 사용할 [filter](/help/implementing/universal-editor/filtering.md)을(를) 정의합니다.
 
 ### `cf` {#cf}
 
