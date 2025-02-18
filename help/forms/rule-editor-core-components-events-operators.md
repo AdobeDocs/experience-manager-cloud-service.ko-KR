@@ -1,13 +1,13 @@
 ---
 title: 핵심 구성 요소를 기반으로 하는 적응형 양식의 규칙 편집기에서 사용할 수 있는 다양한 연산자 유형 및 이벤트는 무엇입니까?
-description: 적응형 Forms 규칙 편집기는 다양한 연산자 유형과 이벤트를 지원합니다.
+description: 적응형 Forms 규칙 편집기는 다양한 연산자, 유형 및 이벤트를 지원합니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2171'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 
 적응형 양식의 규칙 편집기에서 사용할 수 있는 연산자 유형은 정확한 조건을 구성하는 강력한 프레임워크를 제공합니다. 이를 통해 데이터를 조작하고 계산을 수행하며 논리적이고 일관성 있는 방식으로 여러 조건을 결합할 수 있습니다. 값을 비교하든, 산술 연산을 수행하든, 문자열을 조작하든 상관없이 이러한 연산자는 규칙이 유연하고 강력한지 확인합니다.
 
-규칙 편집기의 이벤트는 규칙을 활성화하는 트리거 역할을 합니다. 특정 조건이 충족될 때 발생하는 특정 작업을 정의합니다. 다양한 유형의 이벤트를 활용함으로써 사용자 상호 작용, 예약 시간, 데이터 변경, 시스템 상태 등 다양한 시나리오에 대한 응답을 자동화할 수 있습니다. 이러한 트리거를 지정하는 기능을 통해 특정 요구 사항에 맞는 동적 및 반응형 규칙을 만들 수 있습니다.
+규칙 편집기의 이벤트는 규칙을 활성화하는 트리거 역할을 합니다. 특정 조건이 충족될 때 발생하는 특정 작업을 정의합니다. 다양한 유형의 이벤트를 활용하여 사용자 상호 작용, 예약된 시간, 데이터 변경 및 시스템 상태와 같은 광범위한 시나리오에 대한 응답을 자동화할 수 있습니다. 이러한 트리거를 지정하는 기능을 사용하면 특정 요구 사항에 맞는 동적 및 반응형 규칙을 만들 수 있습니다.
 
 사용 가능한 연산자 유형 및 이벤트를 이해하고 사용하면 규칙 편집기의 잠재력을 최대한 활용하여 고유한 요구 사항에 맞는 효율적이고 효과적인 규칙을 만들고 전반적인 시스템 기능을 개선할 수 있습니다.
 
@@ -63,11 +63,13 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`&#39;개체 C에 대한 작업 3;
+`AND`
+`개체 C에 대한 작업 3;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`_
+`Action 2 on Object C;`
+_
 
 라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
@@ -75,41 +77,41 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 
 ![다중 값에 옵션 표시](assets/multivaluefcdisplaysoptions.png)
 
-When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. 작업의 값 지우기 지정된 개체의 값을 지웁니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 더 추가할 수 있습니다
+When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 추가할 수 있습니다
 
 ![값 지우기](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> 규칙 형식이 단일 수준 then-else 문만 지원하는 경우.
+> 규칙 유형이 단일 레벨 then-else 문만 지원하는 경우.
 
-##### [!UICONTROL When]에 여러 필드가 허용됨 {#allowed-multiple-fields}
+##### 경우에 허용되는 여러 필드  {#allowed-multiple-fields}
 
-**When** 조건에서는 규칙이 적용되는 필드 외에 다른 필드를 추가할 수 있습니다.
+**When** 조건에는 규칙 적용 필드 외에 다른 필드를 추가할 수 있는 옵션이 있습니다.
 
-예를 들어 When 규칙 유형을 사용하여 서로 다른 양식 객체에 대한 조건을 평가하고 작업을 수행할 수 있습니다.
+예를 들어, When 규칙 유형을 사용하면 여러 양식 개체에서 조건을 평가하고 다음 작업을 수행할 수 있습니다.
 
-시기:
+언제:
 
-(객체 A 조건 1)
+(개체 A: 조건 1)
 
 및/또는
 
 (오브젝트 B 조건 2)
 
-그런 다음, 다음을 수행합니다.
+그런 다음 다음을 수행합니다.
 
 개체 A에 대한 작업 1
 
 _
 
-![경우에 허용되는 여러 필드](/help/forms/assets/allowed-multiple-field-when.png)
+![When](/help/forms/assets/allowed-multiple-field-when.png)에서 여러 필드 허용됨
 
 **조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항**
 
 * 규칙 편집기에서 이 기능을 사용하려면 [핵심 구성 요소가 버전 3.0.14 이상으로 설정되어 있는지 확인](https://github.com/adobe/aem-core-forms-components)하십시오.
 * When 조건 내의 다른 필드에 규칙이 적용되면 해당 필드 중 하나만 변경되더라도 규칙이 트리거됩니다.
-
+* **AND** 규칙에 대한 **When** 조건에서만 여러 필드를 추가할 수 있습니다. **OR** 규칙에는 사용할 수 없습니다.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -128,12 +130,12 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
+조건 기능의 허용된 여러 필드에 문제가 발생하는 경우 문제 해결 단계를 다음과 같이 수행하십시오.
 
 1. 양식을 편집 모드에서 엽니다.
 1. 컨텐츠 브라우저 를 열고 적응형 양식의 안내서 컨테이너&#x200B;]**구성 요소를 선택합니다**[!UICONTROL .
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
-1. 완료 를 클릭하고 대화 상자를 다시 저장합니다.
+1. 완료(Done)를 클릭하고 대화 상자를 다시 저장합니다.
 
 **[!UICONTROL 숨기기]** 지정한 개체를 숨깁니다.
 
@@ -143,7 +145,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 사용 안 함]** 지정한 개체를 사용하지 않습니다.
 
-**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)에 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 지정된 서비스에 대한 이벤트 페이로드 옵션을 통해 출력 매개 변수를 매핑할 수 있습니다. 규칙 편집기를 사용하여 서비스 호출 작업의 성공 및 실패 응답을 처리하는 규칙을 만들 수도 있습니다.
+**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)에 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 인스턴스 상의 [!DNL Experience Manager] 모든 FDM(양식 데이터 모델)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 매개 변수와 매핑할 수 있는 더 많은 필드가 표시됩니다. 지정된 서비스에 대한 event payload 옵션을 통해 출력 매개 변수를 매핑할 수 있습니다. 규칙 편집기를 사용하여 서비스 호출 작업의 성공 및 실패 응답을 처리하는 규칙을 만들 수도 있습니다.
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 * enumNames(String[])
 * chartType (String)
 
-예를 들어 버튼 클릭 시 텍스트 상자를 표시하는 규칙을 정의할 수 있습니다. 사용자 지정 함수, 양식 개체, 개체 속성 또는 서비스 출력을 사용하여 규칙을 정의할 수 있습니다.
+예를 들어, 버튼을 클릭할 때 텍스트 상자를 표시하는 규칙을 정의할 수 있습니다. 사용자 지정 함수, 양식 개체, 개체 속성 또는 서비스 출력을 사용하여 규칙을 정의할 수 있습니다.
 
 ![속성 설정](assets/set_property_rule_new.png)
 
@@ -204,13 +206,13 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 **[!UICONTROL 함수 출력]** 미리 정의된 함수 또는 사용자 지정 함수를 기반으로 규칙을 정의합니다.
 
-**[!UICONTROL 다음으로 이동]** 다른 적응형 Forms, 이미지나 문서 조각과 같은 다른 자산 또는 외부 URL로 이동합니다. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 이동]** 다른 적응형 Forms, 이미지 또는 문서 조각과 같은 기타 에셋 또는 외부 URL로 이동합니다. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL 이벤트]** 발송: 사전 정의된 조건이나 이벤트에 따라 특정 작업이나 동작을 트리거합니다.
+**[!UICONTROL 이벤트 발송]** 미리 정의된 조건이나 이벤트를 기반으로 특정 작업이나 동작을 트리거합니다.
 
 #### [!UICONTROL 값 설정] {#set-value-of}
 
-규칙 **[!UICONTROL 유형의 Set 값]** 를 사용하면 지정된 조건이 충족되는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 이 값은 다른 개체의 값, 리터럴 문자열, 수학 표현식 또는 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
+**[!UICONTROL Set Value of]** 규칙 형식을 사용하면 지정된 조건을 충족하는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 값은 다른 개체의 값, 리터럴 문자열, 수학적 식이나 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
 
 **Set Value Of** 규칙 형식은 패널 및 도구 모음 단추와 같은 모든 양식 개체에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
@@ -222,19 +224,19 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 (수학 표현식의 값) OR
 (데이터모델 서비스의 출력값)
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
 다음 예제에서는 as `True` 의 `Question2` 값을 선택하고 as`correct`의 `Result` 값을 설정합니다.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![값 웹 서비스 설정](assets/set-value-web-service.png)
 
-양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
+양식 데이터 모델 서비스를 사용한 값 설정 규칙 예.
 
-#### [!UICONTROL 표시] {#show}
+#### [!UICONTROL 보이다] {#show}
 
-**[!UICONTROL Show]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 개체를 표시하거나 숨기는 규칙을 작성할 수 있습니다. 또한 Show 규칙 유형은 조건이 충족되지 않거나 `False`을(를) 반환하는 경우 Hide 작업을 트리거합니다.
+**[!UICONTROL 보기]** 규칙 유형을 사용하면 조건이 충족되는지 여부에 따라 양식 개체를 표시하거나 숨기기 위한 규칙을 작성할 수 있습니다. 또한 Show 규칙 유형은 조건이 충족되지 않거나 `False`을(를) 반환하는 경우 Hide 작업을 트리거합니다.
 
 일반적인 표시 규칙은 다음과 같이 구성됩니다.
 
@@ -250,9 +252,9 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 #### [!UICONTROL 숨기기] {#hide}
 
-Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사용하여 조건 충족 여부에 따라 양식 개체를 표시하거나 숨길 수 있습니다. 조건이 충족되지 않거나 `False`을(를) 반환하는 경우 Hide 규칙 유형도 Show 작업을 트리거합니다.
+Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사용하여 조건 충족 여부에 따라 양식 개체를 표시하거나 숨길 수 있습니다. 또한 숨기기 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 보기 작업을 트리거합니다.
 
-일반적인 숨기기 규칙은 다음과 같이 구성됩니다.
+일반적인 숨기기 규칙 구조는 다음과 같습니다.
 
 `Hide Object A;`
 
@@ -342,7 +344,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 #### [!UICONTROL 비동기 함수 호출]
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해 액세스할 수 있습니다. </span>
 
 **[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이 함수를 사용하면 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
 

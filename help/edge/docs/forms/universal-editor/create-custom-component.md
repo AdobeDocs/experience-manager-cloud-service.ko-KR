@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 5%
 
 ---
@@ -173,14 +173,14 @@ AEM 프로젝트에서 새 사용자 지정 구성 요소에 대한 새 폴더 �
 
 단계 값 사용자 지정 속성을 추가하려면 구성 요소 모델을 ` _<component>.json` 파일에 다음 코드 줄로 추가합니다.
 
-    &quot;javascript
-    {
-    &quot;component&quot;: &quot;number&quot;,
-    &quot;name&quot;: &quot;stepValue&quot;,
-    &quot;label&quot;: &quot;Step Value&quot;,
-    &quot;valueType&quot;: &quot;number&quot;
-    }
-    &quot;
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 JSON 코드 조각은 **범위** 구성 요소에 대해 **단계 값**&#x200B;이라는 사용자 지정 속성을 정의합니다. 다음은 각 필드에 대한 분류입니다.
 
