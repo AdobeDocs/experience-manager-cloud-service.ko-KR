@@ -4,9 +4,9 @@ description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 범용 편집기는 콘텐츠 작성자가 만드는 콘텐츠의 종류에 관계없이 편리하고 직관적인 시각적 편집기를 제공합니다. 두 가지 주요 사용 사례는 다음과 같습니다.
 
-* [WYSIWYG 작성](#wysiwyg-authoring) - AEM Sites 콘솔을 사용하여 범용 편집기를 사용하여 AEM 내에서 콘텐츠 및 작성 페이지를 관리합니다.
+* [WYSIWYG 작성](#wysiwyg-authoring) - AEM Sites 콘솔을 사용하여 범용 편집기를 사용하여 AEM 내에서 콘텐츠 및 작성 페이지를 관리합니다
 * [헤드리스 작성](#headless-authoring) - 유니버설 편집기를 사용하여 사용자 지정 헤드리스 응용 프로그램에서 콘텐츠를 작성합니다.
 
 ### WYSIWYG 작성 {#wysiwyg-authoring}
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 사용 사례인 경우 바로 다음 단계로, AEM의 범용 편집기를 시작하고 실행하는 방법에 대한 전체 개요는 다음 문서를 참조하십시오.
 
-1. [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEM의 첫 번째 범용 편집기 프로젝트 시작
+1. [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEM에서 첫 번째 범용 편집기 프로젝트 시작
 1. [유니버설 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) - 유니버설 편집기에서 콘텐츠를 편집할 수 있도록 블록을 계측하는 방법에 대해 알아봅니다.
 1. [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) - 유니버설 편집기에서 사용할 콘텐츠를 효과적으로 모델링하기 위해 블록을 구성하는 방법에 대한 자세한 내용을 알아봅니다.
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ### Headless 작성 {#headless-authoring}
 
-이미 Headless 앱이 있는 경우 유니버설 편집기를 사용하여 앱에 대한 콘텐츠를 작성하고 해당 콘텐츠를 AEM의 콘텐츠 조각으로 유지할 수 있습니다. 유일한 요구 사항은 범용 편집기를 사용할 수 있도록 앱이 계측되는 것입니다.
+이미 Headless 앱이 있는 경우 유니버설 편집기를 사용하여 앱에 대한 콘텐츠를 작성하고 해당 콘텐츠를 AEM에서 콘텐츠 조각으로 유지할 수 있습니다. 유일한 요구 사항은 범용 편집기를 사용할 수 있도록 앱이 계측되는 것입니다.
 
 사용 사례인 경우 바로 다음 단계로, 범용 편집기를 사용하도록 계측된 Headless 앱의 예를 보려면 다음 문서를 참조하십시오.
 
@@ -81,4 +81,5 @@ ht-degree: 0%
 
 범용 편집기는 프로젝트 요구 사항에 맞게 조정할 수도 있습니다.
 
-* [유니버설 편집기 작성 환경 사용자 지정](/help/implementing/universal-editor/customizing.md) - 편집기의 다양한 측면을 필터링하거나 편집기 기능을 확장하여 유니버설 편집기 환경을 조정할 수 있습니다.
+* [범용 편집기 사용자 지정](/help/implementing/universal-editor/customizing.md) - 편집기의 다양한 측면을 필터링하거나 편집기 기능을 확장하여 범용 편집기 환경을 조정할 수 있습니다.
+* [유니버설 편집기 확장](/help/implementing/universal-editor/extending.md) - 유니버설 편집기의 UI를 확장하여 프로젝트 요구 사항에 맞게 기능을 확장할 수 있습니다.

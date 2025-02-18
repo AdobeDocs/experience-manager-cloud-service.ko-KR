@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 29%
 
 ---
@@ -37,7 +37,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 ## 범용 편집기 액세스 {#accessing}
 
-앱이 범용 편집기에서 작동하도록 계측되면 범용 편집기는 AEM as a Cloud Service 내에서 AEM에 액세스하지 않고 직접 액세스할 수 있습니다.
+앱이 유니버설 편집기에서 작동하도록 계측되면 유니버설 편집기는 AEM as a Cloud Service 내에서 AEM에 액세스하지 않고 직접 액세스할 수 있습니다.
 
 ### AEM as a Cloud Service 내에서 액세스 {#accessing-aem}
 
@@ -207,13 +207,13 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![생략 부호 버튼](assets/ellipsis.png)
 
-예를 들어, 줄임표 버튼을 통해 페이지 게시를 취소(즉, [**Publish** 버튼](#publish)의 동작을 되돌림)하는 기능에 액세스할 수 있습니다.
+예를 들어, 줄임표 버튼을 통해 페이지 게시를 취소(즉, [**게시** 버튼](#publish)의 작업을 취소)하는 기능에 액세스할 수 있습니다.
 
 #### 추가 단추 {#additional-toolbar-buttons}
 
 유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 도구 모음에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
-* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md)을 참조하십시오.
+* 확장 가능성에 대한 자세한 내용은 [범용 편집기 확장](/help/implementing/universal-editor/extending.md)을 참조하십시오.
 * 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.
 
 ### 편집기 {#editor}
@@ -308,9 +308,9 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >단축키 `Shift+Backspace`를 사용하여 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
-#### 추가 단추 {#additional-properties-rail-buttons}
+## 추가 기능 {#additional-features}
 
-유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
+유니버설 편집기는 사용자 정의 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널이나 도구 모음에 추가 단추나 옵션이 표시되면 범용 편집기가 확장되었습니다.
 
 * 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md)을 참조하십시오.
 * 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.

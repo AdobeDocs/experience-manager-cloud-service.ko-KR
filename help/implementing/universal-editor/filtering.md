@@ -4,9 +4,9 @@ description: 구성 요소 필터를 사용하여 유니버설 편집기에서 �
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
@@ -53,4 +53,7 @@ data-aue-filter="container-filter"
 
 >[!TIP]
 >
->[유니버설 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md) 문서에서 유니버설 편집기에서 사용할 수 있는 다른 사용자 지정 및 확장 옵션에 대해 알아봅니다.
+>문서에서 범용 편집기에서 사용할 수 있는 기타 사용자 지정 및 확장 옵션에 대해 알아봅니다.
+>
+>* [유니버설 편집기 사용자 지정](/help/implementing/universal-editor/customizing.md)
+>* [유니버설 편집기 확장](/help/implementing/universal-editor/extending.md)

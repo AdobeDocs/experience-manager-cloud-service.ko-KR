@@ -1,70 +1,84 @@
 ---
 title: Universal Editor 소개
-description: 유니버설 편집기를 통해 Headless 및 Headful 환경에서 "보이는 그대로"(WYSIWYG) 편집하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
+description: 유니버설 편집기는 마케팅 조직이 효과적인 웹 경험을 제작할 수 있도록 고안된 최신 시각적 작성 도구입니다.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
+source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 53%
+source-wordcount: '949'
+ht-degree: 13%
 
 ---
 
 
 # Universal Editor 소개 {#introduction}
 
-범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대해 원하는 대로(WYSIWYG) 편집할 수 있습니다. 콘텐츠 작성자가 탁월한 경험을 제공하는 데 어떻게 도움이 될 수 있으며 개발자에게 탁월한 자유를 제공하는 방법을 이해합니다.
+유니버설 편집기는 마케팅 조직이 효과적인 웹 경험을 제작할 수 있도록 고안된 최신 시각적 작성 도구입니다.
 
-## 배경 {#background}
+## 개요 {#overview}
 
-범용 편집기는 최소한의 교육만 필요로 하는 효율적이고 직관적인 컨텍스트 내 작성 환경을 제공합니다. 이를 통해 작성자는 웹 경험의 컨텍스트에서 직접 콘텐츠를 관리할 수 있으며, 방문자에게 표시되는 방식을 정확하게 지정할 수 있습니다. 서비스로서의 진정한 편집기이며 전체적으로 더 유연하므로 결국 페이지 편집기를 대체하려고 합니다.
+범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대한 보이는 항목(WYSIWYG) 편집을 수행할 수 있습니다. 제공되는 기능은 다음과 같습니다.
 
-작성자는 모든 형태의 AEM 콘텐츠에 대해 동일한 일관된 시각적 편집을 지원하므로 유니버설 편집기의 유연성을 활용할 수 있습니다. 콘텐츠 조각과 페이지 구성 요소 모두에 대해서도 마찬가지로 즉석 편집 및 레이아웃 구성이 가능합니다. 작성자가 컨텍스트를 전환하지 않고도 웹 경험에 나란히 표시될 때에도 두 형식의 콘텐츠를 편집할 수 있습니다. 이는 AEM의 이전 편집자들이 한 가지 유형의 콘텐츠만 지원했던 것과 비교하면 엄청난 발전입니다.
+* **즉시 편집**: 작성자가 미리 보기 환경에서 직접 콘텐츠를 편집할 수 있으므로 개별 콘텐츠 원본을 찾아 이동할 필요가 없습니다.
+* **시각적 편집**: 작성자는 변경을 수행하는 동안 실제 방문자 경험에 어떤 영향을 미치는지 즉시 확인하여 마찰을 최소화합니다.
+* **검색 가능한 옵션**: 레이블이 명확하게 지정된 옵션과 직관적인 UI를 통해 작성자는 메타데이터를 쉽게 구성하고 레이아웃을 구성할 수 있습니다.
+* **비기술적**: 편집하는 데 전문 지식이 필요하지 않지만 회사 브랜드 지침은 자동으로 적용되어 조직 전반에서 콘텐츠 작업의 크기를 용이하게 할 수 있습니다.
+* **통합 및 확장성**: AEM과 완전히 통합된 유니버설 편집기의 유연한 [확장 지점](#extensibility)을 통해 모든 필수 도구를 통합적인 단일 인터페이스 내에서 통합할 수 있습니다. AI 기반 기능에서 고유한 비즈니스 요구 사항에 맞는 맞춤형 확장에 이르기까지, 팀은 워크플로를 간소화하고 생산성을 손쉽게 향상시킬 수 있습니다.
 
-개발자는 구현의 진정한 분리를 지원하므로 유니버설 편집기의 다기능성을 활용할 수 있습니다. 이를 통해 개발자는 SDK 또는 기술의 제약 없이 원하는 프레임워크나 아키텍처를 거의 활용할 수 있습니다. 이러한 유연성으로 인해 다시 아키텍처화할 필요 없이 범용 편집기에서 기존 웹 앱을 쉽게 계측할 수 있습니다.
+요약:
 
-## 진정한 범용성 {#universal}
+* **작성자는 모든 형식의 AEM 콘텐츠에 대해 동일한 일관된 시각적 편집을 지원하므로 유니버설 편집기의 유연성이 향상됩니다**.
+* 구현의 진정한 분리를 지원하므로 **개발자는 유니버설 편집기의 다기능성을 활용할 수 있습니다**.
 
-Universal Editor는 모든 구현, 콘텐츠 및 콘텐츠의 모든 측면에 대해 계측할 수 있습니다.
+진정한 편집기로서의 서비스로서 전체적으로 더 융통성 있는 유니버설 편집기는 결국 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 대체하려고 합니다.
 
-![범용성이 가능한 이유](assets/universal.png)
+## 지원되는 아키텍처 {#supported-architectures}
 
-### 모든 구현 {#any-implementation}
+범용 편집기는 다음 두 가지 기본 AEM 설정을 지원합니다.
 
-다양한 방식으로 경험을 구축할 수 있으므로 모든 구현에서 Universal Editor를 사용하여 작성자가 상황에 맞는 편집을 수행할 수 있습니다.
+1. **[Edge Delivery Services](/help/edge/overview.md)**: 간소화, 가치 실현 시간 단축 및 성능 향상을 위해 선호되는 접근 방법입니다.
+1. **[Headless 구현](/help/headless/introduction.md)**: 기존 Headless 프로젝트 또는 분리된 렌더링에 대한 특정 요구 사항이 있는 경우 유니버설 편집기를 사용하면 전체 프로젝트를 리팩터링할 필요 없이 엔터프라이즈급 시각적 편집을 사용할 수 있습니다. 거의 모든 아키텍처(SSR, CSR), 웹 프레임워크(Next.js, React, Astro 등) 및 호스팅 모델(&quot;Bring your own app&quot;)과 호환됩니다.
 
-사용자는 흔히 Headless 구현 시에 작성자가 양식 기반 UI에서 모든 콘텐츠를 편집해야 한다는 제약이 있다고 생각하지만 Universal Editor에서는 그렇지 않습니다
+>[!TIP]
+>
+>지원되는 아키텍처에 대한 자세한 내용은 [유니버설 편집기 사용 사례 및 학습 경로](/help/implementing/universal-editor/use-cases.md) 문서를 참조하십시오.
 
-Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하며 다음을 지원합니다.
+## 지원되는 AEM 버전 {#aem-versions}
 
-* **모든 아키텍처** - 서버측 렌더링, 에지 측 렌더링, 클라이언트측 렌더링 등.
-* **모든 프레임워크** - Vanilla AEM 또는 React, Next.js, Angular 등의 타사 프레임워크.
-* **모든 호스팅** - AEM 또는 원격 도메인에서 로컬로 호스팅 가능
+유니버설 편집기는 다음에서 지원합니다.
 
-### 모든 콘텐츠 {#any-content}
+* AEM as a Cloud Service(릴리스 `2023.8.13099` 이상)
+* AEM 6.5(서비스 팩 21 또는 22 + 기능 팩 추가)
 
-콘텐츠 작성자는 이전에 AEM 페이지 편집기에서 제공한 것과 동일하게 강력한 편집 환경을 이용할 수 있어야 합니다. Universal Editor를 사용하면 콘텐츠 작성자가 **모든** 콘텐츠를 시각적으로 상황에 맞게 편집할 수 있으며 다음이 지원됩니다.
+이 설명서는 AEM as a Cloud Service과 함께 범용 편집기를 사용하기 위한 것입니다. AEM 6.5에서 유니버설 편집기를 사용하려면 [AEM 6.5 설명서를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
 
-* **AEM 페이지 구조** - 경험 조각을 포함하여 `cq:Pages`의 중첩된 `cq:Components`
-* **AEM 콘텐츠 조각** - 콘텐츠 조각이 경험의 컨텍스트에 표시될 때 콘텐츠 조각을 편집합니다.
-* **문서** - 개념 증명에 따르면 Word, Excel, Google Docs 또는 Markdown 문서도 같은 방식으로 편집할 수 있습니다(WIP).
+## 기능 {#features}
 
-### 모든 측면 {#any-aspect}
+유니버설 편집기는 효율적인 콘텐츠 관리를 위한 다양한 사용 사례를 지원하는 다양한 기능을 제공합니다.
 
-콘텐츠 작성자에게는 콘텐츠에 포함된 정보도 중요하지만 콘텐츠가 렌더링되고 수신되는 방법도 중요합니다. 콘텐츠에는 추가 메타데이터 및 계측 규칙이 들어 있는데, Universal Editor에서는 다음과 같이 이를 이해하고 편집할 수 있습니다.
+* **[WYSIWYG](/help/sites-cloud/authoring/universal-editor/authoring.md)**: 일반 텍스트, 서식 있는 텍스트, 미디어 및 메타데이터를 비롯한 모든 형식의 웹 콘텐츠를 편집합니다.
+* **[컴포지션](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)**: 다양한 유형의 콘텐츠 블록(제목, 단추, 티저, 섹션, 포함 등)을 만들거나 편집하거나, 다시 정렬하거나, 중첩하거나, 삭제합니다.
+* **[레이아웃](/help/sites-cloud/authoring/universal-editor/templates.md)**: 페이지 템플릿을 사용하고, 시각적 스타일을 적용하고, 열, 회전 메뉴 및 아코디언과 같은 블록으로 레이아웃을 구성합니다.
+* **[장치 시뮬레이션](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: 편집하는 동안 다른 방문자 장치에 대한 콘텐츠를 미리 보고 최적화합니다.
+* **옴니채널**: 여러 채널에서 정형 콘텐츠와 비정형 콘텐츠를 모두 다시 사용합니다.
+* **[지역화](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: 다중 사이트 관리자를 사용하여 콘텐츠 번역 워크플로를 간소화하고 지역화된 콘텐츠 상속을 효율적으로 처리합니다.
+* **일관성**: 브랜드 지침을 준수하고 모든 콘텐츠에 일관성을 유지합니다.
+* **보안**: [액세스 제어 적용](/help/implementing/universal-editor/authentication.md), 콘텐츠 무결성 보호, [강력한 버전 관리로 변경 내용 추적](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* **[게시](/help/sites-cloud/authoring/universal-editor/publishing.md)**: 검토, 승인 및 게시 워크플로를 편집기 내에서 직접 통합합니다.
+* **통합**: [사이트 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) [콘텐츠 조각 편집기,](/help/sites-cloud/administering/content-fragments/overview.md) 등과 같은 AEM 도구와 완전히 통합되어 일관된 작성 환경을 제공합니다.
 
-* **레이아웃 및 스타일 적용** - 마케팅 실무자와 콘텐츠 작성자는 스타일 시스템을 사용하여 콘텐츠에 다른 스타일을 적용하고 열, 회전 메뉴, 탭, 아코디언 등과 같은 콘텐츠에 다른 레이아웃을 만들 수 있습니다.
+## 확장성 {#extensibility}
 
-## 값 {#value}
+범용 편집기는 즉시 사용할 수 있을 뿐만 아니라 다양한 확장 기능을 제공합니다.
 
-특정 콘텐츠 게재 시스템에서 콘텐츠 편집 경험을 분리함으로써 진정으로 유연한 편집기로 거듭나 콘텐츠 작성자가 탁월한 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있습니다.
+* **확장**&#x200B;에는 워크플로 지원, 변형 생성, 실험 지원 등 다양한 요구 사항을 지원할 수 있는 준비된 확장이 많습니다.
+* **확장 가능한 UI**&#x200B;를 사용하면 준비된 확장이 활용하는 기본 프레임워크와 동일한 기본 프레임워크를 사용하여 고유한 확장을 만들 수 있으므로 프로젝트 요구 사항에 맞게 유연하게 조정할 수 있습니다.
+* 블록, 사용자 지정 데이터 형식 및 이벤트와 같은 **확장 지점**&#x200B;을 사용하면 UI 이상의 사용자 지정 비즈니스 요구 사항을 매끄럽게 통합할 수 있습니다.
 
-![Universal Editor의 가치](assets/value.png)
-
-* **탁월한 경험 제공** - 실무자는 방문자에게 매력적인 경험을 제공할 수 있도록 Universal Editor를 통해 미리보기 컨텍스트에서 콘텐츠를 만들고 편집할 수 있습니다. 덕분에 경험 디자인에 맞고 방문자에게 의미 있는 여정을 구성하는 콘텐츠를 만들 수 있습니다.
-* **콘텐츠 속도 증가** - 실무자의 관리 워크플로를 간소화해 주는 Universal Editor를 사용하면 미리보기 내에서 콘텐츠를 편집할 수 있습니다. 이때 해당 컨텍스트와 관련된 옵션만 표시하고 워크플로와 콘텐츠 소스를 분리하므로 실무자에게 도움이 됩니다.
-* **첨단 개발자 경험** - 실질적인 이기종 애플리케이션 환경을 지원하는 Universal Editor는 완전히 분리되고 기술에 구애받지 않으므로 개발자가 선호하는 기술 스택을 사용하여 경험을 구현할 수 있습니다.
+>[!TIP]
+>
+>유니버설 편집기의 확장성에 대한 자세한 내용은 [유니버설 편집기 확장](/help/implementing/universal-editor/extending.md) 문서를 참조하십시오.
 
 ## Universal Editor와 콘텐츠 조각 편집기 {#universal-editor-content-fragment-editor}
 
@@ -88,7 +102,7 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 
 * 단일 페이지에서 계측을 위해 AEM 리소스(콘텐츠 조각, 페이지, 경험 조각, Assets 등)를 25개 이하로 지정해야 합니다.
 * AEM as a Cloud Service 및 [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)만 지원되는 AEM 백엔드입니다.
-* AEM as a Cloud Service 릴리스 `2023.8.13099` 이상이 필요합니다.
+* AEM as a Cloud Service에는 릴리스 `2023.8.13099` 이상이 필요합니다.
 * 콘텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
 * AEM의 일부로 범용 편집기 [은(는) AEM과 동일한 데스크톱 브라우저를 지원합니다.](/help/overview/supported-platforms.md)
    * 이러한 브라우저의 모바일 버전은 지원되지 않습니다.

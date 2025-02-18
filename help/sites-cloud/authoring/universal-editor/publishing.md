@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 69%
+source-wordcount: '591'
+ht-degree: 61%
 
 ---
 
@@ -16,6 +16,16 @@ ht-degree: 69%
 # 범용 편집기로 콘텐츠 게시 {#publishing}
 
 Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐츠를 처리하는 방법에 대해 살펴보세요.
+
+## 작성자로 컨텐츠 게시 {#publishing-content}
+
+콘텐츠 작성자가 콘텐츠를 게시할 준비가 되면 범용 편집기의 도구 모음에서 [**게시** 아이콘을 탭하거나 클릭하면 됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+
+사이트 콘솔에서 [을(를) 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md)할 수도 있습니다. 이 기능은 여러 페이지의 콘텐츠를 게시하려는 경우에 유용합니다.
+
+>[!NOTE]
+>
+>유니버설 편집기는 워크플로우가 게시 프로세스를 지원하도록 [확장 및 UI 확장성](/help/implementing/universal-editor/extending.md)을 지원합니다.
 
 ## AEM과의 유사점 {#similarities}
 
