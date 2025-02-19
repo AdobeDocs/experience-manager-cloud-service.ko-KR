@@ -36,7 +36,7 @@ ht-degree: 78%
 
 ### 사용 중단된 기능 및 API {#deprecated-19586}
 
-AEM as a Cloud Service에서 더이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
+AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
 ### 보안 수정 {#security-19586}
 
