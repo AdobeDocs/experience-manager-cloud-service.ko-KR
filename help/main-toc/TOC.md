@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
+source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6083'
 ht-degree: 99%
 
 ---
@@ -1045,6 +1045,7 @@ ht-degree: 99%
          + [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Forms 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [양식 스타일 사용자 지정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [반응형 모드](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
