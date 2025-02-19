@@ -4,9 +4,9 @@ description: 이 문서에서는 작성 중에 모양과 느낌을 시각화하�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 18%
 
 ## 다른 디바이스에 대해 응답형 모드로 Forms 미리 보기
 
-유니버설 편집기는 화면 오른쪽 상단에 있는 **에뮬레이터** 아이콘 ![에뮬레이터 아이콘](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%}을 제공합니다. 이 아이콘을 사용하면 다양한 장치 크기에서 페이지를 미리 보고 반응형 디자인의 동작을 테스트하여 더 나은 사용자 환경을 제공할 수 있습니다.
+유니버설 편집기는 화면 오른쪽 맨 위에 있는 **에뮬레이터** 아이콘을 제공하므로 다양한 장치 크기에서 페이지를 미리 보고 반응형 디자인의 동작을 테스트하여 사용자 환경을 개선할 수 있습니다.
 
 유니버설 편집기에서 다양한 화면 크기에서 양식을 렌더링하는 방법을 보려면 다음 단계를 수행하십시오.
 
 1. 편집할 양식을 범용 편집기에서 엽니다.
-1. 범용 편집기 도구 모음에서 사용할 수 있는 ![에뮬레이터 아이콘](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%}을 선택하고 에뮬레이터 아이콘을 클릭하여 옵션을 표시합니다.
+2. 범용 편집기 도구 모음에서 사용할 수 있는 ![에뮬레이터 아이콘](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%}을 선택하고 에뮬레이터 아이콘을 클릭하여 옵션을 표시합니다.
 
    ![응답형 모드](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. 모바일 장치와 범용 편집기 내에서 에뮬레이션하려면 옵션을 선택합니다
+3. 모바일 장치와 범용 편집기 내에서 에뮬레이션하려면 옵션을 선택합니다
 
    ![응답형 모드](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -47,19 +47,19 @@ ht-degree: 18%
     </tr>
     <tr>
         <td>데스크탑</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="데스크톱 에뮬레이터"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="데스크톱 에뮬레이터" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>태블릿</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="태블릿 에뮬레이터"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="태블릿 에뮬레이터" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>모바일</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="모바일 에뮬레이터" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="모바일 에뮬레이터" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>사용자 지정 장치</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="사용자 지정 장치 에뮬레이터"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="사용자 지정 장치 에뮬레이터" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
