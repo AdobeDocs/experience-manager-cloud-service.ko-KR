@@ -4,7 +4,7 @@ description: 구성 요소 정의와 유니버설 편집기 간의 JSON 계약�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ ht-degree: 1%
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ ht-degree: 1%
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ ht-degree: 1%
 * `id`은(는) 구성 요소를 고유하게 식별합니다.
    * 같은 `id`의 [구성 요소 모델](/help/implementing/universal-editor/field-types.md#model-structure)은(는) 구성 요소의 필드를 정의합니다.
    * 이는 고유하므로 예를 들어 [필터 정의](/help/implementing/universal-editor/filtering.md)에서 컨테이너에 추가할 수 있는 구성 요소를 결정하는 데 사용할 수 있습니다.
+* `model`은(는) 구성 요소와 함께 사용되는 [모델](/help/implementing/universal-editor/field-types.md#model-structure)을(를) 정의합니다.
+   * 따라서 모델은 구성 요소 정의에서 중앙에서 유지되므로 계측을 [지정할 필요가 없습니다.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 이렇게 하면 컨테이너 간에 구성 요소를 이동할 수 있습니다.
+* `filter`은(는) 구성 요소와 함께 사용할 [filter](/help/implementing/universal-editor/filtering.md)을(를) 정의합니다.
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ ht-degree: 1%
 #### `template` {#template}
 
 선택적 키/값 쌍을 제공하면 `template`이(가) 자동으로 새 구성 요소에 쓸 수 있습니다. 또한 다음과 같은 선택적 값을 지정할 수도 있습니다.
-
-* `model`은(는) 구성 요소와 함께 사용되는 [모델](/help/implementing/universal-editor/field-types.md#model-structure)을(를) 정의합니다.
-   * 따라서 모델은 구성 요소 정의에서 중앙에서 유지되므로 계측을 [지정할 필요가 없습니다.](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 이렇게 하면 컨테이너 간에 구성 요소를 이동할 수 있습니다.
-* `filter`은(는) 구성 요소와 함께 사용할 [filter](/help/implementing/universal-editor/filtering.md)을(를) 정의합니다.
 
 ### `cf` {#cf}
 
