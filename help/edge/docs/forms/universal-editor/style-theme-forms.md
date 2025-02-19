@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
+source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1828'
 ht-degree: 89%
 
 ---
@@ -51,7 +51,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 적응형 양식 블록은 표준화된 HTML 구조를 제공하여 양식 구성 요소 선택 및 스타일 지정 프로세스를 단순화합니다.
 
-* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. &lt;!—적응형 Forms 블록을 프로젝트에 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하세요.
+* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 또한 사용자 정의 CSS 변수를 사용하여 간편하게 맞춤화하고, 유지 관리하고, 양식 간에 통일된 스타일을 만들 수 있다는 점을 강조합니다.
 
 * **Forms용 CSS 스타일**: 스타일이 올바르게 적용되도록 하려면 `main .form form` 선택기 내에서 폼별 CSS를 감싸십시오. 이렇게 하면 스타일이 기본 콘텐츠 영역 내의 양식 요소만 타겟팅하므로 웹 사이트의 다른 부분과의 충돌을 피할 수 있습니다.
 예:
@@ -80,14 +80,15 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 +++ 일반 구성 요소의 HTML 구조
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-   <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
-   </div>
-</div>
+  <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
+     <label for="{FieldId}" class="field-label">First   Name</label>
+     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     <div class="field-description" aria-live="polite"  id="{FieldId}-description">
+      Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
+     </div>
+  </div>
 ```
+
 * 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
    * {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
    * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
@@ -848,55 +849,3 @@ main .form form .field-otp input {
 ## 추가 참조
 
 {{see-more-forms-eds}}
-
-
-<!--
-
-## Styling a form for Adaptive Forms Block
-
-The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
-
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
-
-* **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
-
-  Example:
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
-
--->
-
-<!--
-
-**Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
-
--->
-
-<!--
-
-## Breakdown of forms.css's structure
-
-* **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
-
-* **Universal selector styles:** The `*` selector matches every element in the form, ensuring styles are applied to all components by default, including setting the `box-sizing` property to `border-box`.
-
-* **Form styling:** This section focuses on styling form components using selectors to target specific HTML elements. It defines styles for input fields, text areas, checkboxes, radio buttons, file inputs, form labels, and descriptions.
-
-* **Wizard styling (if applicable):** This section is dedicated to styling the wizard layout, a multi-step form where each step is displayed one at a time. It defines styles for the wizard container, fieldsets, legends, navigation buttons, and responsive layouts.
-
-* **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
-
-* **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
-
--->

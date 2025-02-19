@@ -3,7 +3,8 @@ title: 적응형 Forms에 대한 기본 제공 양식 데이터 모델을 Micros
 description: Microsoft Dynamics 365를 적응형 Forms과 통합하는 방법을 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
@@ -51,6 +52,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
    * Microsoft Dynamics 365 응용 프로그램 활성화
 
    비디오의 단계에 따라 Power Platform 관리 센터에서 계정을 만듭니다. 이 비디오에서는 데모용으로 체험판 계정이 생성되었습니다.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Azure Active Directory에서 [!DNL Microsoft® Dynamics 365]에 대한 응용 프로그램을 등록**
@@ -147,7 +149,7 @@ Azure Active Directory 응용 프로그램의 **끝점** 섹션에서 **[!UICONT
 * 제출된 양식 데이터를 [!DNL Microsoft Dynamics] 엔터티에 쓰기
 * 적응형 양식에 대한 양식 데이터 모델 제출 액션을 구성하여 [!DNL Microsoft Dynamics]에 데이터를 보낼 수 있습니다.
 
-그런 다음 **적응형 양식**&#x200B;에서 [FDM(양식 데이터 모델)을 사용하여 제출](/help/forms/using-form-data-model.md) 옵션을 사용하여 양식의 데이터를 구성된 [!DNL Microsoft® Dynamics 365](으)로 전송할 수 있습니다.
+그런 다음 **적응형 양식**&#x200B;에서 [FDM(양식 데이터 모델)을 사용하여 제출](/help/forms/using-form-data-model.md) 옵션을 사용하여 양식의 데이터를 구성된 [!DNL Microsoft® Dynamics 365]&#x200B;(으)로 전송할 수 있습니다.
 
 
 >[!MORELIKETHIS]

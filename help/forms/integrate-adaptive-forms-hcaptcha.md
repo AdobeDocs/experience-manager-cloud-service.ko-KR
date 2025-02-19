@@ -5,7 +5,8 @@ topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 양식 제출 보안, 양식 스팸 방지
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 19%
@@ -18,7 +19,7 @@ ht-degree: 19%
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
+AEM Forms as a Cloud Service은 다음 CAPTCHA 솔루션을 지원합니다.
 
 * [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Cloudflare 턴스타일](/help/forms/integrate-adaptive-forms-turnstile.md)
@@ -28,7 +29,7 @@ AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 hCaptcha® 서비스는 봇, 스팸 및 자동화된 남용으로부터 양식을 보호합니다. 확인란 위젯 챌린지를 제기하고 사용자의 답변을 평가하여 양식과 상호 작용하는 것이 인간인지 또는 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 활동으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Forms as a Cloud Service 지원®Captcha in Adaptive Forms 양식 제출 시 확인란 위젯 문제를 제시하는 데 사용할 수 있습니다.
+AEM Forms as a Cloud Service은 적응형 Forms에서 hCaptcha®를 지원합니다. 양식 제출 시 확인란 위젯 문제를 제시하는 데 사용할 수 있습니다.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -53,7 +54,7 @@ AEM Forms으로 hCaptcha®를 구성하려면 hCaptcha® 웹 사이트에서 [hC
          1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**(으)로 이동하여 **[!UICONTROL hCaptcha®]**을(를) 선택합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**을(를) 선택합니다.
       ui의 ![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
       ![구성 hCaptcha®](assets/config-hcaptcha.png)
@@ -91,8 +92,10 @@ hCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습�
       * 사용자 작업
    * **[!UICONTROL Captcha 서비스]:** Captcha 서비스를 선택하십시오. 여기서 hCaptcha® 서비스를 선택하십시오.
    * **[!UICONTROL Captcha 구성]:** hCaptcha®에 대해 구성된 클라우드 구성을 선택하십시오.
+
      >[!NOTE]
-     >유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [AEM Forms 환경과 hCaptcha® 연결](#connect-your-forms-environment-with-hcaptcha-service)을 참조하여 AEM Forms 환경과 hCaptcha® 서비스를 연결하는 Cloud Service을 만드는 방법을 알아보십시오.
+     >
+     > 유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [AEM Forms 환경과 hCaptcha® 연결](#connect-your-forms-environment-with-hcaptcha-service)을 참조하여 AEM Forms 환경과 hCaptcha® 서비스를 연결하는 Cloud Service을 만드는 방법에 대해 알아보십시오.
 
    * **오류 메시지:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
    * **Captcha 크기:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택합니다. 작은 크기의 확인란을 표시하려면 **[!UICONTROL 작게]** 옵션을 사용하고, 비교적 큰 크기의 hCaptcha® 과제 대화 상자를 표시하려면 **[!UICONTROL 보통]** 옵션을 사용하거나, 사용자 인터페이스에서 확인란 위젯을 명시적으로 렌더링하지 않고 hCaptcha®의 유효성을 검사하려면 **[!UICONTROL 보이지 않음]**&#x200B;을 사용하십시오.

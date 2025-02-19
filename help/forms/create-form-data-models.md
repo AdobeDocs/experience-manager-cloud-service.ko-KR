@@ -1,13 +1,13 @@
 ---
 title: 양식 데이터 모델(FDM)을 만드는 방법
-description: 적응형 양식 또는 AEM Workflow를 사용하여 양식 데이터 모델(FDM)을 만들고, 데이터를 데이터 소스로 전송하거나 검색하는 방법에 대해 알아봅니다.
+description: 적응형 양식 또는 AEM 워크플로우를 사용하여 양식 데이터 모델(FDM)을 만들고 데이터를 데이터 소스로 전송하거나 검색하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -128,9 +128,10 @@ PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`�
       1. 환경(또는 실행 모드)을 기준으로 `newURL`의 값을 변경합니다.
       1. 실행 모드에 따라 비밀 값을 변경하려면 [Cloud Manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)를 사용하여 비밀 변수를 만들 수 있습니다. 이상 버전은 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)에서 참조할 수 있습니다.
 이 Archetype 프로젝트가 CM 파이프라인을 통해 배포되면 재정의는 다른 환경(또는 실행 모드)에서 다른 값을 제공합니다.
+
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] 사용자는 암호화 지원을 사용하여 비밀 값을 암호화할 수 있습니다(자세한 내용은 [구성 속성에 대한 암호화 지원](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)을 참조하고 [서비스 팩 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)에서 컨텍스트 인식 구성을 사용할 수 있게 되면 다음 값에 암호화된 텍스트를 배치할 수 있습니다.
+      >[!DNL Adobe Managed Service]명의 사용자가 암호화 지원을 사용하여 암호 값을 암호화할 수 있습니다. 자세한 내용은 [구성 속성에 대한 암호화 지원](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)을 참조하고 [서비스 팩에서 컨텍스트 인식 구성을 사용할 수 있게 된 후 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config) 값에 암호화된 텍스트를 넣으십시오.
 
 1. [양식 데이터 모델 편집기](#data-sources)에서 데이터 소스 정의를 새로 고치는 옵션을 사용하여 데이터 소스 정의를 새로 고쳐 FDM UI를 통해 FDM 캐시를 새로 고치고 최신 구성을 가져옵니다.
 

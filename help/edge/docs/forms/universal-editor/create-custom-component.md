@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 5%
@@ -157,6 +157,7 @@ AEM 프로젝트에서 새 사용자 지정 구성 요소에 대한 새 폴더 �
    }
    ]
    ```
+
    >[!NOTE]
    >
    > 사용자 지정 구성 요소의 **속성** 대화 상자에 새 필드를 추가하려면 [정의된 스키마](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)를 준수하십시오.

@@ -4,7 +4,7 @@ description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-양식을 작성하거나 제출할 때 인쇄 또는 문서 형식으로 양식의 기록을 유지할 수 있습니다. 이 레코드를 DoR(기록 문서)이라고 합니다. 제출된 양식의 인쇄용 사본입니다. 고객이 나중에 작성한 정보에 대한 기록 문서를 참조하거나 기록 문서를 사용하여 양식과 컨텐츠를 PDF 형식으로 함께 보관할 수도 있습니다.
+양식을 작성하거나 제출할 때 인쇄 또는 문서 형식으로 양식의 기록을 유지할 수 있습니다. 이 레코드를 DoR(기록 문서)이라고 합니다. 제출된 양식의 인쇄용 사본입니다. 고객이 나중에 작성한 정보에 대한 기록 문서를 참조하거나 기록 문서를 사용하여 양식과 콘텐츠를 PDF 형식으로 함께 보관할 수도 있습니다.
 
 ![기록 문서](assets/document-of-record.png)
 
@@ -61,7 +61,7 @@ XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA �
 
 ## Acroform 기반 기록 문서 생성 {#generate-an-Acroform-based-document-of-record}
 
-Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기록 문서의 템플릿으로 Adobe Acrobat PDF(Acroform)을 사용하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
+Adobe Acrobat PDF(Acroform)를 AEM Forms 인스턴스에 업로드합니다. 기록 문서의 템플릿으로 Adobe Acrobat PDF(Acroform)를 사용하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 
 1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
@@ -110,7 +110,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-전자 메일 보내기, Experience Manager 워크플로 제출 액션을 [기록 문서 단계와 함께 사용하거나 기타 제출 액션](configuring-submit-actions.md)을 사용하여 기록 문서를 받을 수 있습니다.
+전자 메일 보내기, Experience Manager Workflow 제출 액션을 [기록 문서 단계와 함께 사용하거나 기타 제출 액션](configuring-submit-actions.md)을 사용하여 기록 문서를 받을 수 있습니다.
 
 ## 기록 문서 템플릿에 대한 증분 업데이트 {#document-of-record-template-incremental-updates}
 
@@ -131,6 +131,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![바인딩 오류](assets/we-retail-binding-error.png)
 
 양식 개발자는 적응형 Forms 필드를 해당 기록 문서 템플릿과 바인딩합니다.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 이제 적응형 양식이 제출되면 업데이트된 기록 문서가 만들어집니다.
@@ -346,8 +347,8 @@ When you select a form model, configure Document of Record using options availab
 
    1. **기본 속성**:
       * **템플릿**: 사용자 지정 템플릿을 선택하는 경우 [!DNL AEM Forms] 서버에서 XDP 선택을 검색하십시오. [!DNL AEM Forms] 서버에 아직 없는 템플릿을 사용하려면 먼저 XDP를 [!DNL AEM Forms] 서버에 업로드해야 합니다.
-      * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트와 구분 기호가 렌더링되는 색상입니다.
-      * **글꼴 모음**: 기록 문서 PDF에 있는 텍스트의 글꼴 모음.
+      * **강조 색상**: 문서 또는 기록 PDF에서 머리글 텍스트와 구분 기호가 렌더링되는 색상입니다.
+      * **글꼴 모음**: 기록 문서 PDF의 텍스트 글꼴 모음.
 
         >[!NOTE]
         >
@@ -453,7 +454,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 사용자 지정 XCI 파일 사용
 
-XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다. Forms as a Cloud Service 파일 XCI 사용자 지정 XCI 파일을 사용하여 마스터 XCI 파일에 지정된 하나 이상의 기본 속성을 재정의할 수 있습니다. 예를 들어 글꼴을 문서에 포함하거나 모든 문서에 대해 태그가 지정된 속성을 사용하도록 선택할 수 있습니다. 다음 표는 XCI 옵션을 지정합니다.
+XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다. Forms as a Cloud Service에는 마스터 XCI 파일이 있습니다. 사용자 지정 XCI 파일을 사용하여 마스터 XCI 파일에 지정된 하나 이상의 기본 속성을 재정의할 수 있습니다. 예를 들어 글꼴을 문서에 포함하거나 모든 문서에 대해 태그가 지정된 속성을 사용하도록 선택할 수 있습니다. 다음 표는 XCI 옵션을 지정합니다.
 
 | XCI 옵션 | 설명 |
 |--- |--- |
@@ -462,7 +463,7 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 | 구성/현재/레이아웃 | 출력이 단일 패널인지 또는 페이지 매김되어 있는지 여부를 제어합니다. |
 | config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
 | config/present/pdf/fontInfo/embed | 출력 문서의 글꼴 포함을 제어합니다. |
-| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보를 포함할지 여부를 제어합니다. |
+| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보가 포함되어 있는지 여부를 제어합니다. |
 | config/present/common/data/adjustData | XFA 애플리케이션이 병합 후 데이터를 조정하는지 여부를 제어합니다. |
 | config/present/pdf/renderPolicy | 페이지 컨텐츠 생성이 서버에서 수행되는지 아니면 클라이언트로 연기되는지를 제어합니다. |
 | config/present/common/locale | 출력 문서에 사용되는 기본 로케일을 지정합니다. |
@@ -473,15 +474,15 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 | config/present/common/log/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
 | config/present/output/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
 | config/present/script/currentPage | 문서를 열 때의 초기 페이지를 지정합니다. |
-| config/present/script/exclude | 무시할 Forms as a Cloud Service 이벤트를 알립니다. |
-| config/present/pdf/linearized | 출력 PDF 문서의 선형 여부를 제어합니다. |
-| config/present/script/runScripts | Formsas a Cloud Service 가 실행하는 스크립트 집합을 제어합니다. |
-| config/present/pdf/태그됨 | 출력 PDF 문서에 태그를 포함하도록 제어합니다. 태그는 PDF 컨텍스트에서 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 지원 및 서식 변경을 지원합니다. 예를 들어, 화면 판독기가 텍스트 중간에 이를 발음하지 않도록 페이지 번호를 아티팩트로 태그 지정할 수 있습니다. 태그를 사용하면 문서가 더 유용해지지만 문서 크기와 문서를 만드는 처리 시간도 늘어납니다. |
+| config/present/script/exclude | 무시할 이벤트를 Forms as a Cloud Service에 알립니다. |
+| config/present/pdf/linearized | 출력 PDF 문서가 선형화되는지 여부를 제어합니다. |
+| config/present/script/runScripts | Forms as a Cloud Service이 실행하는 스크립트 세트를 제어합니다. |
+| config/present/pdf/태그됨 | 출력 PDF 문서에 태그를 포함하도록 제어합니다. PDF의 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 지원 및 서식 변경을 지원합니다. 예를 들어, 화면 판독기가 텍스트 중간에 이를 발음하지 않도록 페이지 번호를 아티팩트로 태그 지정할 수 있습니다. 태그를 사용하면 문서가 더 유용해지지만 문서 크기와 문서를 만드는 처리 시간도 늘어납니다. |
 | config/present/pdf/fontInfo/alwaysEmbed | 출력 문서에 포함된 글꼴을 지정합니다. |
 | config/present/pdf/fontInfo/neverEmbed | 출력 문서에 포함해서는 안 되는 글꼴을 지정합니다. |
 | config/present/pdf/pdfa/part | 문서가 준수하는 PDF/A 사양의 버전 번호를 지정합니다. |
 | config/present/pdf/pdfa/amd | PDF/A 사양의 수정 수준을 지정합니다. |
-| config/present/pdf/pdfa/conformance | PDF/A 사양과 호환 레벨을 지정합니다. |
+| config/present/pdf/pdfa/conformance | PDF/A 사양으로 적합성 수준을 지정합니다. |
 | config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
 | config/present/pdf/version/map | 문서의 대체 글꼴을 지정합니다. |
 
@@ -490,7 +491,7 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭](/help/forms/supported-out-of-the-box-fonts.md)하세요.
 
 
-### Forms as a Cloud Service 환경에서 사용자 정의 XCI 파일 사용
+### Forms as a Cloud Service 환경에서 사용자 지정 XCI 파일 사용
 
 1. 사용자 지정 XCI 파일을 개발 프로젝트에 추가합니다.
 1. 다음 [인라인 속성](/help/implementing/deploying/configuring-osgi.md)을 지정하십시오.
@@ -509,9 +510,9 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
     }
    ```
 
-1. 프로젝트를 Cloud Service 환경에 배포합니다.
+1. Cloud Service 환경에 프로젝트를 배포합니다.
 
-### 로컬 Forms as a Cloud Service 개발 환경에서 사용자 정의 XCI 파일을 사용합니다.
+### 로컬 Forms as a Cloud Service 개발 환경에서 사용자 지정 XCI 파일 사용
 
 1. XCI 파일을 로컬 개발 환경에 업로드합니다.
 1. Cloud Service SDK 구성 관리자를 엽니다. 기본 URL은 <http://localhost:4502/system/console/configMgr>입니다.

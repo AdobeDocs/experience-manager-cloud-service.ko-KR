@@ -4,7 +4,7 @@ description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 3%
@@ -51,6 +51,7 @@ ht-degree: 3%
    >* 중복된 각주가 있으면 모든 중복된 각주에 대해 숫자가 동일합니다.
 
 1. 구성 요소 브라우저에서 **[!UICONTROL 각주 자리 표시자]** 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
+
    >[!NOTE]
    >
    >* 게시 인스턴스에서 각주는 **[!UICONTROL 각주 자리 표시자]** 구성 요소가 적응형 양식에 배치된 위치에 표시됩니다.

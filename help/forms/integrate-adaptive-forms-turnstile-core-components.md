@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
+AEM Forms as a Cloud Service은 다음 CAPTCHA 솔루션을 지원합니다.
 
 
 * [Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -29,7 +29,7 @@ AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 ## AEM Forms 환경과 Turnstile Captcha 통합
 
-Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. 적응형 Forms 구성 요소의 AEM Forms as a Cloud Service Capstille Cha 지원
+Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. AEM Forms as a Cloud Service은 적응형 Forms 핵심 구성 요소에서 턴스타일 Captcha를 지원합니다.
 
 ### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
@@ -54,7 +54,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
          1. 구성을 저장하고 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**(으)로 이동하여 **[!UICONTROL 회전식]**을 클릭합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**을 클릭합니다.
       ui의 ![턴스타일](assets/turnstile-in-ui.png)
    1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
       ![구성 Turnstile](assets/config-hcaptcha.png)
@@ -65,6 +65,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
       ![AEM Forms 환경을 Turnstile과 연결하도록 Cloud Service 구성](assets/config-turntstile-cc.png)
 
    >[!NOTE]
+   >
    > 이미 턴스타일 유효성 검사를 위해 미리 채워져 있으므로 사용자는 클라이언트측 JavaScript 유효성 검사 URL 및 서버측 유효성 검사 URL을 수정할 필요가 없습니다.
 
    Turnstile Captcha 서비스가 구성되면 [핵심 구성 요소를 기반으로 하는 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)에서 사용할 수 있습니다.
@@ -90,13 +91,17 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    * **[!UICONTROL 이름]:** Captcha 구성 요소의 이름을 지정하면 양식 및 규칙 편집기에서 고유한 이름을 사용하여 양식 구성 요소를 쉽게 식별할 수 있습니다.
    * **[!UICONTROL 제목]:** Captcha 구성 요소의 제목을 지정합니다. 제목에는 서식 있는 텍스트를 사용할 수 있으며 확인란을 선택하여 제목을 숨길 수도 있습니다.
    * **[!UICONTROL 구성 설정]:** Turnstile Captcha 서비스에 대해 구성된 클라우드 구성을 선택하십시오.
+
      >[!NOTE]
+     >
      >* 유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [Turnstile 구성](#steps-to-configure-hcaptcha) 섹션을 참조하여 AEM Forms 환경을 Turnstile 서비스와 연결하는 구성 컨테이너를 만드는 방법에 대해 알아보십시오.
 
    * **[!UICONTROL 유효성 검사]:** 오류 메시지 형식으로 CAPTCHA 유효성 검사를 제공합니다.
 
       * **오류 메시지:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
+
         >[!NOTE]
+        >
         >* 클라이언트측에서 CAPTCHA가 채워지는 경우에만 오류 메시지가 나타납니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.

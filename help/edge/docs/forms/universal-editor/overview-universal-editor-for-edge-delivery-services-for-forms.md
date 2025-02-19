@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
+source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1130'
+ht-degree: 97%
 
 ---
 
@@ -27,47 +27,76 @@ ht-degree: 0%
 
 
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+ <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG 인터페이스"> 
     <h3>WYSIWYG 인터페이스</h3>
-    <p>범용 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성, 실시간 필드 수정 기능을 갖춘 WYSIWYG 인터페이스를 통해 양식 디자인을 제공합니다.
- </p>
+    <p>범용 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성, 실시간 필드 수정 기능을 갖춘 WYSIWYG 인터페이스를 통해 양식 디자인을 제공합니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="규칙 편집기">
     <h3>규칙 편집기</h3>
     <p>규칙 편집기를 사용하면 사용자는 이벤트 기반 규칙, 즉각적인 유효성 검사, 간단한 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다.</p>
   </div>
+</a>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="제출 액션">
+    <h3>제출 액션</h3>
+    <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 엔드포인트 및 전처리기를 지원하여 제출 워크플로를 간소화합니다.</p>
+  </div>
+</a>
+<div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="게시/게시 취소">
+    <h3>게시/게시 취소</h3>
+    <p>양식의 가시성을 쉽게 제어하십시오. 편집기에서 몇 번의 클릭만으로 양식을 바로 게시하거나 게시 취소할 수 있어 실시간으로 가용성과 콘텐츠 업데이트를 동적으로 관리할 수 있습니다.</p>
+  </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="반응형 모드">
     <h3>반응형 모드 </h3>
     <p>다양한 디바이스(데스크탑, 태블릿 및 모바일)에서 원활하게 적응되는 양식을 디자인합니다. 반응형 모드를 사용하면 다양한 화면 크기에 맞게 양식을 미리 보고 테스트할 수 있습니다.</p>
   </div>
-</div>
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="개인화"> 
-    <h3>개인화</h3>
-    <p>개인화는 사용자 데이터를 사용하여 맞춤형 양식 경험을 제공하고 사용자 선호도에 따라 콘텐츠, 레이아웃 또는 옵션을 동적으로 조정합니다.</p>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="사용자 정의 구성 요소">
+    <h3>사용자 정의 구성 요소</h3>
+    <p>사용자 정의 구성 요소를 사용하면 개발자는 특정 조직의 사용 사례에 맞는 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
   </div>
+</a>
+</div>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="스타일링">
+    <h3>스타일링</h3>
+    <p>CSS를 사용한 스타일링을 통해 개발자는 양식 요소의 모양을 사용자 정의하고 웹 사이트 미학에 맞는 시각적으로 매력적인 디자인을 만들 수 있습니다.</p>
+  </div>
+</a>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="미리 채우기 서비스">
     <h3>미리 채우기 서비스</h3>
     <p>미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="규칙 편집기">
+  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B 테스트">
     <h3>A/B 테스트</h3>
     <p>A/B 테스트(실험)를 통해 조직은 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 효과적인 변형을 파악할 수 있습니다.</p>
   </div>
+</a>
 </div>
-
 <div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
     <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="분석 및 추적">
     <h3>분석 및 추적</h3>
     <p>기본 제공 분석 및 추적 기능을 통해 사용자 행동, 양식 상호 작용 및 제출률에 대한 인사이트를 얻고 데이터 기반 양식 최적화를 실현할 수 있습니다.</p>
   </div>
+</a>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Adobe Workfront와 통합">
     <h3> 작업 관리 </h3>
@@ -82,24 +111,6 @@ ht-degree: 0%
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="국제화/현지화">
-    <h3>게시/게시 취소</h3>
-    <p>양식의 가시성을 쉽게 제어하십시오. 편집기에서 몇 번의 클릭만으로 양식을 바로 게시하거나 게시 취소할 수 있어 실시간으로 가용성과 콘텐츠 업데이트를 동적으로 관리할 수 있습니다.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="제출 액션">
-    <h3>제출 액션</h3>
-    <p>제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 엔드포인트 및 전처리기를 지원하여 제출 워크플로를 간소화합니다.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="작업 관리">
-    <h3>사용자 정의 구성 요소</h3>
-    <p>사용자 정의 구성 요소를 사용하면 개발자는 특정 조직의 사용 사례에 맞는 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="편집기 사용자 정의">
     <h3>편집기 사용자 정의</h3>
     <p>개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구에 맞는 맞춤형 솔루션을 구축할 수 있습니다.</p>
@@ -109,12 +120,13 @@ ht-degree: 0%
     <h3>양식 임베드</h3>
     <p>범용 편집기의 기본 제공 임베드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드하여 원활한 사용자 경험을 제공합니다.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="사용자 정의 구성 요소">
+  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="감사 구성">
     <h3>감사 구성</h3>
-    <p>양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다.
-    </p>
+    <p>양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다.</p>
   </div>
+</a>
 </div>
 </div>
 

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**콘텐츠 조각 편집기 주석 기능이 이제 일반적으로 사용 가능합니다.**
+**콘텐츠 조각 편집기 댓글 기능이 이제 일반적으로 사용 가능합니다.**
 
 AEM 콘텐츠 조각 편집기의 새롭고 현대화된 댓글 달기 서비스를 사용하면 AEM 콘텐츠 조각을 작성할 때 동료와 간편하게 공동 작업을 수행할 수 있습니다.
 [자세히 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment)
@@ -128,7 +128,7 @@ Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비
 
 #### 게시 관리
 
-“게시 관리” 워크플로를 사용하여 작성자 인스턴스에서 게시 및 미리보기 인스턴스에 이르기까지 여러 환경에서 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
+[게시 관리](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) 워크플로우를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스로 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
 
 #### 핵심 구성 요소 기반 적응형 양식의 초안 자동 저장
 
@@ -202,7 +202,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
