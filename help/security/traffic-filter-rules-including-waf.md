@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서에서 설명하는 대로 트래픽 필터 규칙은 Adobe의 [config 파이프라인](/help/operations/config-pipeline.md)을 사용하여 Cloud Manager Managed CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
+이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 트래픽 필터 규칙을 Adobe에서 관리하는 콘텐츠 전송 네트워크에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 카테고리에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
@@ -71,7 +71,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 1. [설정](#setup) 섹션의 설명에 따라 비프로덕션 및 프로덕션 구성 파이프라인을 구성하십시오.
 1. WAF 트래픽 필터 규칙의 하위 카테고리에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
-1. 라이선스가 부여된 경우, WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
+1. 라이선스가 부여된 경우 WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
 1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
 1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
 1. CDN 로그 분석 기반의 사용자 정의 규칙을 추가하여 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 후 로그 모드에서 스테이지 및 프로덕션 환경에 배포한 다음 차단 모드에서 배포하십시오.
@@ -103,13 +103,13 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
    `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *콘텐츠 전송 네트워크*&#x200B;로 설정하고 버전은 `1`로 설정해야 합니다.
 
 
-1. WAF 규칙에 라이선스가 부여된 경우, 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
+1. WAF 규칙에 라이선스가 부여된 경우 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
 
-   1. 새 프로그램에서 WAF을 구성하려면 [프로덕션 프로그램을 추가](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)할 때 **보안** 탭에서 **WAF-DDOS 보호** 확인란을 선택하십시오.
+   1. 새 프로그램에서 WAF를 구성하려면 [프로덕션 프로그램 추가](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 시 **보안 탭**&#x200B;의 **WAF-DDOS 보호** 확인란을 선택하십시오.
 
    1. 기존 프로그램에서 WAF를 구성하려면 **보안** 탭에서 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 언제든지 **WAF-DDOS** 옵션을 선택 취소하거나 선택하십시오.
 
-1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다. 파이프라인이 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을(를) 참조하십시오.
+1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다. 파이프라인은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
@@ -455,7 +455,7 @@ data:
 
 **예 2**
 
-10초 기간에서 초당 원본에 대한 요청(CDN POP 기준)이 평균 100개를 초과하는 경우, 60초 동안 경로/중요/리소스에 대한 요청을 차단합니다.
+10초 기간에서 초당 원본에 대한 요청(CDN POP 기준)이 평균 100개를 초과하는 경우 60초 동안 경로/중요/리소스에 대한 요청을 차단합니다.
 
 ```
 kind: "CDN"

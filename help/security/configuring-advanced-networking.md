@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->이 설명서 외에도 이 [위치](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/advanced-networking)에서 각 고급 네트워킹 옵션에 대해 설명하기 위해 설계된 일련의 튜토리얼이 있습니다.
+>이 문서 외에도 이 [위치](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/advanced-networking)의 각 고급 네트워킹 옵션을 안내하도록 고안된 일련의 튜토리얼도 있습니다.
 
 ## 개요 {#overview}
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 * [유연한 포트 이그레스](#flexible-port-egress) - 비표준 포트에서 아웃바운드 트래픽을 허용하도록 AEM as a Cloud Service를 구성합니다.
 * [전용 이그레스 IP 주소](#dedicated-egress-ip-address) - AEM as a Cloud Service의 트래픽을 고유 IP에서 생성되도록 구성합니다.
-* [VPN (Virtual Private Network)](#vpn) - VPN이 있는 경우, 인프라와 AEM as a Cloud Service 간의 트래픽을 보호합니다.
+* [VPN (Virtual Private Network)](#vpn) - VPN이 있는 경우 인프라와 AEM as a Cloud Service 간의 트래픽을 보호합니다.
 
 이 문서에서는 Cloud Manager UI와 API를 사용하여 구성하는 방법을 설명하기에 앞서 이러한 각 옵션 및 해당 옵션을 사용하는 이유를 자세히 설명합니다. 이 문서는 몇 가지 고급 사용 사례로 마무리됩니다.
 
@@ -41,27 +41,27 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 고급 네트워킹 기능을 구성할 때는 다음 제한 사항이 적용됩니다.
 
 * 프로그램은 단일 고급 네트워킹 옵션(유연한 포트 이그레스, 전용 이그레스 IP 주소 또는 VPN)을 프로비저닝할 수 있습니다.
-* [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에는 고급 네트워킹을 사용할 수 없습니다.
+* [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서는 고급 네트워킹을 사용할 수 없습니다.
 * 사용자가 프로그램에 네트워크 인프라를 추가하고 구성하려면 **관리자** 역할을 보유하고 있어야 합니다.
 * 프로그램에 네트워크 인프라를 추가하려면 우선 프로덕션 환경을 만들어야 합니다.
 * 네트워크 인프라는 프로덕션 환경의 기본 지역과 동일한 지역에 있어야 합니다.
-   * 프로덕션 환경에 [추가 게시 지역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)이 있는 경우, 각 추가 지역을 미러링하는 다른 네트워크 인프라를 만들 수 있습니다.
+   * 프로덕션 환경에 [추가 게시 지역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)이 있는 경우 각 추가 지역을 미러링하는 다른 네트워크 인프라를 만들 수 있습니다.
    * 프로덕션 환경에서 구성된 최대 지역 수보다 더 많은 네트워크 인프라를 만들 수 없습니다.
-   * 프로덕션 환경에서 사용 가능한 지역 수만큼 네트워크 인프라를 정의할 수 있지만, 새 인프라는 이전에 만든 인프라와 동일한 유형이어야 합니다.
+   * 프로덕션 환경에서 사용 가능한 지역 수만큼 네트워크 인프라를 정의할 수 있지만 새 인프라는 이전에 만든 인프라와 동일한 유형이어야 합니다.
    * 여러 인프라를 만들 때 고급 네트워킹 인프라가 만들어지지 않은 지역에서만 선택할 수 있습니다.
 
 ### 고급 네트워킹 구성 및 활성화 {#configuring-enabling}
 
 고급 네트워킹 기능을 사용하려면 다음 두 단계가 필요합니다.
 
-1. [유연한 포트 이그레스](#flexible-port-egress), [전용 이그레스 IP 주소](#dedicated-egress-ip-address) 또는 [VPN](#vpn) 중 어느 것이든 먼저 프로그램 수준에서 고급 네트워킹 옵션을 구성해야 합니다.
-1. 고급 네트워킹 옵션을 사용하려면 환경 수준에서 [활성화되어야 합니다](#enabling).
+1. [유연한 포트 이그레스](#flexible-port-egress), [전용 이그레스 IP 주소](#dedicated-egress-ip-address) 또는 [VPN](#vpn) 여부에 관계없이 고급 네트워킹 옵션은 먼저 프로그램 수준에서 구성해야 합니다.
+1. 사용하려면 [환경 수준에서 고급 네트워킹 옵션을 활성화](#enabling)해야 합니다.
 
 두 단계 모두 Cloud Manager UI나 Cloud Manager API를 사용하여 수행할 수 있습니다.
 
 * Cloud Manager UI를 사용하는 경우에는 프로그램 수준에서 마법사를 사용하여 고급 네트워크 구성을 만든 다음 구성을 활성화하려는 각 환경을 편집하는 것을 의미합니다.
 
-* Cloud Manager API를 사용하는 경우, 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언합니다. 그런 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다.
+* Cloud Manager API를 사용하는 경우 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언합니다. 그런 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다.
 
 ## 유연한 포트 이그레스 {#flexible-port-egress}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 >[!TIP]
 >
->전체 매개 변수 집합, 정확한 구문 및 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보는 API 설명서에서 [을(를) 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### 트래픽 라우팅 {#flexible-port-egress-traffic-routing}
 
@@ -220,7 +220,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 전용 IP 주소 기능을 활성화하지 않으면 AEM as a Cloud Service의 트래픽이 다른 AEM as a Cloud Service 고객과 공유된 IP 집합을 통해 흐릅니다.
 
-전용 이그레스 IP 주소 구성은 [유연한 포트 이그레스](#flexible-port-egress)와 유사합니다. 주요 차이점은 구성 후 트래픽은 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만 변경해야 하는 경우 고급 알림이 제공됩니다.
+전용 이그레스 IP 주소의 구성은 [유연한 포트 이그레스](#flexible-port-egress)와 유사합니다. 주요 차이점은 구성한 후에 트래픽이 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만 변경해야 하는 경우 고급 알림이 제공됩니다.
 
 >[!TIP]
 >
@@ -228,7 +228,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->2021년 9월 30일 이전(즉, 2021년 9월 릴리스 이전)에 전용 이그레스 IP로 프로비저닝된 경우, 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
+>2021년 9월 30일 이전(즉, 2021년 9월 릴리스 이전)에 전용 이그레스 IP로 프로비저닝된 경우 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
 >
 >여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 이그레스 엔드포인트는 각각 포트 80/443에서 HTTP/HTTPS를 통해서만 대상과 통신할 수 있습니다.
 
@@ -242,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!TIP]
 >
->전체 매개 변수 집합, 정확한 구문 및 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보는 API 설명서에서 [을(를) 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### 트래픽 라우팅 {#dedicated-egress-ip-traffic-routing}
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-Premise 인프라 또는 데이터센터에 연결할 수 있습니다. 예를 들면 데이터베이스에 대한 액세스를 보호하는 데 유용할 수 있습니다. 또한 VPN을 지원하는 CRM 공급업체 등의 SaaS 공급업체에 연결할 수도 있습니다.
 
-대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. [이 장치 목록](https://learn.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 **RouteBased 구성 지침** 열에 있는 정보를 참조하십시오. 테이블에 설명된 대로 디바이스를 구성하십시오.
+대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. [이 디바이스 목록](https://learn.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 **RouteBased 구성 지침** 열에 기재된 정보를 참조하십시오. 테이블에 설명된 대로 디바이스를 구성하십시오.
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -463,7 +463,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 >[!TIP]
 >
->전체 매개 변수 집합, 정확한 구문 및 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보는 API 설명서에서 [을(를) 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### 트래픽 라우팅 {#vpn-traffic-routing}
 
@@ -503,7 +503,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
   </tr>
   <tr>
     <td></td>
-    <td>IP가 <i>VPN 게이트웨이 주소</i> 공간 범위에 해당하는 경우, 기본적으로 표준 Java™ HTTP 클라이언트 라이브러리를 사용하여 HTTP/S 트래픽에 대해 구성되는 HTTP 프록시 구성을 통해</td>
+    <td>IP가 <i>VPN 게이트웨이 주소</i> 공간 범위에 해당하는 경우 기본적으로 표준 Java™ HTTP 클라이언트 라이브러리를 사용하여 HTTP/S 트래픽에 대해 구성되는 HTTP 프록시 구성을 통해</td>
     <td>임의</td>
     <td>VPN을 통해</td>
     <td><code>10.0.0.1:443</code><br>호스트 이름일 수도 있습니다.</td>
@@ -600,7 +600,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 >[!NOTE]
 >
->환경이 **업데이트** 상태인 경우, 환경에 고급 네트워킹 구성을 활성화할 수 없습니다.
+>환경이 **업데이트** 상태인 경우 환경에 고급 네트워킹 구성을 활성화할 수 없습니다.
 
 ### UI를 사용하여 활성화 {#enabling-ui}
 
@@ -651,11 +651,11 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 >[!TIP]
 >
->전체 매개 변수 집합, 정확한 구문 및 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보는 API 설명서에서 [을(를) 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ## 환경의 고급 네트워킹 구성 편집 및 삭제 {#editing-deleting-environments}
 
-[환경에 고급 네트워킹 구성을 사용](#enabling)한 후 해당 구성의 세부 정보를 업데이트하거나 삭제할 수 있습니다.
+[환경에 대한 고급 네트워킹 구성을 활성화](#enabling)하면 해당 구성의 세부 정보를 업데이트하거나 삭제할 수 있습니다.
 
 >[!NOTE]
 >
@@ -673,8 +673,8 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. 줄임표 메뉴에서 **편집** 또는 **삭제**&#x200B;를 선택합니다.
 
-   * **편집**&#x200B;을 선택한 경우 이전 섹션에 설명된 단계에 따라 정보를 업데이트하고 [UI를 사용하여 활성화](#enabling-ui)한 다음 **저장**&#x200B;을 클릭합니다.
-   * **삭제**&#x200B;를 선택한 경우, **삭제**&#x200B;로 **네트워크 구성 삭제** 대화 상자에서 삭제를 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
+   * **편집**&#x200B;을 선택한 경우 이전 섹션인 [UI를 사용하여 활성화](#enabling-ui)에서 설명된 단계에 따라 정보를 업데이트한 다음 **저장**&#x200B;을 클릭합니다.
+   * **삭제**&#x200B;를 선택한 경우 **삭제**&#x200B;로 **네트워크 구성 삭제** 대화 상자에서 삭제를 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
 
 이러한 변경 사항은 **환경** 탭에 반영됩니다.
 
@@ -684,11 +684,11 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 >[!TIP]
 >
->전체 매개 변수 집합, 정확한 구문 및 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보는 API 설명서에서 [을(를) 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ## 프로그램의 네트워크 인프라 편집 및 삭제 {#editing-deleting-program}
 
-프로그램에 대한 네트워크 인프라가 생성되면 제한된 속성만 편집할 수 있습니다. 더 이상 필요하지 않은 경우, 전체 프로그램에 대한 고급 네트워킹 인프라를 삭제할 수 있습니다.
+프로그램에 대한 네트워크 인프라가 생성되면 제한된 속성만 편집할 수 있습니다. 더 이상 필요하지 않은 경우 전체 프로그램에 대한 고급 네트워킹 인프라를 삭제할 수 있습니다.
 
 >[!NOTE]
 >
@@ -705,7 +705,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라** 제목을 선택합니다. 그런 다음 삭제하려는 인프라 옆에 있는 줄임표 버튼을 클릭합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라** 제목을 선택합니다. 그런 다음 삭제하려는 인프라 옆에 있는 줄임표 버튼을 클릭합니다.
 
    ![프로그램 수준에서 고급 네트워킹 편집 또는 삭제 선택](assets/advanced-networking-ui-delete-infrastructure.png)
 
@@ -713,7 +713,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. **편집**&#x200B;을 선택하면 **네트워크 인프라 편집** 마법사가 열립니다. 인프라를 만들 때 설명된 단계대로 필요에 따라 편집합니다.
 
-1. **삭제**&#x200B;를 선택한 경우, **삭제**&#x200B;로 **네트워크 구성 삭제** 대화 상자에서 삭제를 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
+1. **삭제**&#x200B;를 선택한 경우 **삭제**&#x200B;로 **네트워크 구성 삭제** 대화 상자에서 삭제를 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
 
 이러한 변경 사항은 **환경** 탭에 반영됩니다.
 
@@ -727,10 +727,10 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 이미 구성한 유형이 아닌 다른 고급 네트워킹 인프라 유형이 필요하다고 판단되면 기존 유형을 삭제하고 다른 유형을 만듭니다. 다음 작업을 수행합니다.
 
-1. [모든 환경에서 고급 네트워킹을 삭제](#editing-deleting-environments)합니다.
-1. [고급 네트워킹 인프라를 삭제](#editing-deleting-program)합니다.
-1. 이제 필요한 고급 네트워킹 인프라 유형([유연한 포트 이그레스](#flexible-port-egress), [전용 이그레스 IP 주소](#dedicated-egress-ip-address) 또는 [VPN](#vpn))을 만드십시오.
-1. [환경 수준에서 고급 네트워킹을 다시 사용하도록 설정](#enabling).
+1. [모든 환경에서 고급 네트워킹을 삭제합니다](#editing-deleting-environments).
+1. [고급 네트워킹 인프라를 삭제합니다](#editing-deleting-program).
+1. [유연한 포트 이그레스](#flexible-port-egress), [전용 이그레스 IP 주소](#dedicated-egress-ip-address) 또는 [VPN](#vpn) 등 현재 필요한 고급 네트워킹 인프라 유형을 만듭니다.
+1. [환경 수준에서 고급 네트워킹을 다시 활성화합니다](#enabling).
 
 >[!WARNING]
 >
@@ -761,7 +761,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure)에 대한 POST 호출을 통해 모든 지역에 네트워킹 인프라를 만듭니다. 기본 지역과 비교하여 페이로드 JSON 구성의 유일한 차이점은 지역 속성입니다.
 1. 스테이징 환경의 경우 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`을 실행하여 환경에서 설정한 고급 네트워킹을 활성화하고 구성합니다. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
-1. 필요한 경우, FQDN을 통해 외부 인프라를 잠급니다(예: `p1234.external.adobeaemcloud.com`). 그렇지 않으면 IP 주소를 통해 잠글 수 있습니다.
+1. 필요한 경우 FQDN을 통해 외부 인프라를 잠급니다(예: `p1234.external.adobeaemcloud.com`). 그렇지 않으면 IP 주소를 통해 잠글 수 있습니다.
 1. 스테이징 환경이 예상대로 작동하는 경우 프로덕션의 환경에서 설정한 고급 네트워킹 구성을 활성화하고 구성합니다.
 
 #### VPN {#vpn-regions}
