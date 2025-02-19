@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 84%
@@ -261,6 +261,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 * **[조각 참조](#fragment-reference-nested-fragments)**(중첩된 조각)
    * 지정된 특정 모델에 따라 다른 조각을 참조합니다.
    * 구조화된 데이터를 포함/검색할 수 있습니다.
+
      >[!NOTE]
      >
      이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
@@ -434,6 +435,7 @@ type CompanyModel {
 1. 모든 변경 내용을 **저장**&#x200B;합니다.
 
 폴더에 대해 허용되는 콘텐츠 조각 모델은 다음과 같이 해결됩니다.
+
 * **허용되는 콘텐츠 조각 모델**&#x200B;에 대한 **정책**
 * 비어 있는 경우 상속 규칙을 사용하여 정책을 결정하십시오.
 * 상속 체인이 결과를 전달하지 않는 경우 해당 폴더에 대한 **Cloud Services** 구성을 살펴보십시오(처음에는 직접, 그 다음에는 상속을 통해).
@@ -510,7 +512,7 @@ type CompanyModel {
 
 ### 요구 사항 {#the-requirements}
 
-* 사용자가 라이브 콘텐츠 게재에 이미 사용된 모델(즉, 게시된 모델)을 편집할 때의 위험을 인식하도록 합니다.
+* 사용자가 라이브 컨텐츠 전달에 이미 사용된 모델(즉, 게시된 모델)을 편집할 때의 위험을 인식하도록 합니다.
 
 * 또한 의도하지 않은 변경을 피하도록 합니다.
 
