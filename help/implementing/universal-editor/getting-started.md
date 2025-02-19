@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 38%
+source-wordcount: '1018'
+ht-degree: 36%
 
 ---
 
@@ -124,7 +124,9 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 
 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 콘텐츠 작성자가 페이지를 편집할 때 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열어야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업을 수행할 수 있습니다.
 
-1. 구성 관리자를 엽니다.
+1. 이 구성 기능을 활용하려면 Adobe 고객 지원 센터에 연락하여 프로그램의 범용 편집기 URL 서비스에 대한 액세스를 활성화하십시오.
+
+1. 고객 지원 센터에서 범용 편집기 URL 서비스에 대한 액세스를 활성화한 후 구성 관리자를 엽니다.
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +139,15 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 
 1. **저장**&#x200B;을 클릭합니다.
 
-AEM은 이 구성을 기반으로 하는 페이지용 범용 편집기를 다음 순서로 엽니다.
+1. [외부화 구성](/help/implementing/developing/tools/externalizer.md)을 확인하고 최소한 다음 예제와 같이 로컬, 작성자 및 게시 환경이 설정되어 있는지 확인하십시오.
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+이러한 구성 단계가 완료되면 AEM에서 다음 순서로 페이지용 범용 편집기를 엽니다.
 
 1. AEM이 `Universal Editor Opening Mapping`에서 매핑을 확인하고 콘텐츠가 정의된 경로에 있는 경우 유니버설 편집기가 열립니다.
 1. `Universal Editor Opening Mapping`에 정의된 경로에 없는 콘텐츠의 경우, AEM은 콘텐츠의 `resourceType`이(가) 유니버설 편집기에서 열어야 하는 **Sling:resourceTypes에 정의된 유형과 일치하는지 확인**&#x200B;하고, 콘텐츠가 그러한 유형 중 하나와 일치하면 `${author}${path}.html`에 유니버설 편집기가 열립니다.
