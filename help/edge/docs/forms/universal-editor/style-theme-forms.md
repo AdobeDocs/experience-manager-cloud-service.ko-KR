@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -29,7 +29,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 ## 양식 필드 유형 이해
 
-스타일 지정을 시작하기 전에 양식 블록에서 지원하는 일반적인 적응형 양식 [필드 유형](/help/edge/docs/forms/form-components.md)을 검토해 보겠습니다.
+스타일 지정을 시작하기 전에 양식 블록에서 지원하는 일반적인 적응형 양식 [필드 유형](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes)을 검토해 보겠습니다.
 
 * 입력 필드: 여기에는 텍스트 입력, 이메일 입력, 암호 입력 등이 포함됩니다.
 * 확인란 그룹: 여러 옵션을 선택하는 데 사용됩니다.
@@ -57,17 +57,17 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 예:
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## 구성 요소 구조
 
@@ -90,10 +90,10 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 ```
 
 * 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
-   * {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
-   * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
-   * {FieldId}: 필드에 대한 고유 식별자로, 자동으로 생성됩니다.
-   * {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
+* {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
+* {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
+* {FieldId}: 필드에 대한 고유 식별자로, 자동으로 생성됩니다.
+* {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
 * 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 속성을 사용하여 이를 입력 요소와 연결합니다.
 * 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예를 들어 문자, 숫자, 이메일 등이 있습니다.
 * 설명(선택 사항): `field-description` 클래스가 있는 `div`는 사용자에게 추가 정보 또는 지침을 제공합니다.
