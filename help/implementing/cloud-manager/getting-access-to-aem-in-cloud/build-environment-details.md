@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
+source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1551'
 ht-degree: 30%
 
 ---
@@ -114,6 +114,9 @@ Java 21 런타임은 Java 21 및 Java 17을 사용하는 빌드에 사용되며 
 최신 JVM 런타임 지원을 위해 Java 패키지 `org.apache.groovy` 또는 `org.codehaus.groovy`의 사용을 버전 4.0.22 이상으로 업데이트합니다.
 
   이 번들은 AEM Groovy Console과 같은 서드파티 종속성을 추가함으로써 간접적으로 포함될 수 있습니다.
+
+* **Aries SPIFly의 최소 버전:**
+최신 JVM 런타임 지원을 위해 Java 패키지 `org.apache.aries.spifly.dynamic.bundle`의 사용을 버전 1.3.6 이상으로 업데이트합니다.
 
 AEM Cloud Service SDK은 Java 21과 호환되며, Cloud Manager 파이프라인을 실행하기 전에 Java 21과 프로젝트의 호환성을 확인하는 데 사용할 수 있습니다.
 
