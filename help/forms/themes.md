@@ -4,7 +4,7 @@ description: 적응형 양식 테마를 사용하여 적응형 양식에 스타�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%
@@ -149,13 +149,13 @@ Cloud Service 인스턴스에서 만든 테마:
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publish 정시</td>
+   <td>게시 시간</td>
    <td>예</td>
    <td>테마를 자동으로 게시할 시간입니다.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Publish 해제 시간</td>
+   <td>게시 해제 시간</td>
    <td>예</td>
    <td>테마를 자동으로 게시 취소하는 시간입니다.</td>
   </tr>
@@ -228,7 +228,7 @@ Cloud Service 인스턴스에서 만든 테마:
      특정 배경색으로 모든 필드 구성 요소를 사용자 지정하면 나이, 이름, 주소와 같은 모든 필드가 배경색을 상속합니다. age와 같은 숫자 상자를 선택하고 그 너비를 줄이면 age, 가족 구성원 수와 같은 모든 숫자 상자의 너비가 줄어듭니다. 텍스트 상자의 너비는 변경되지 않습니다.
 
    * **상태:** 특정 상태에서 개체의 스타일을 사용자 지정할 수 있습니다. 예를 들어, 객체가 기본값, 포커스, 비활성화됨, 마우스로 가리키거나 오류 상태인 경우 객체의 모양을 지정할 수 있습니다.
-   * **속성 범주:** 스타일 속성은 여러 범주로 나뉩니다. 예를 들어 Dimension 및 위치, 텍스트, 배경, 테두리 및 효과 등이 있습니다. 각 카테고리 아래에 스타일 정보를 제공합니다. 예를 들어 [배경]에서 [배경색]과 [이미지 및 그라디언트]를 제공할 수 있습니다.
+   * **속성 범주:** 스타일 속성은 여러 범주로 나뉩니다. 예: Dimension 및 위치, 텍스트, 배경, 테두리 및 효과 각 카테고리 아래에 스타일 정보를 제공합니다. 예를 들어 [배경]에서 [배경색]과 [이미지 및 그라디언트]를 제공할 수 있습니다.
 
    * **고급:** 개체에 사용자 지정 CSS를 추가할 수 있습니다. 이렇게 하면 겹치는 경우 비주얼 컨트롤이 정의하는 속성을 재정의합니다.
 
@@ -491,12 +491,12 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ### 테마에서 Web Fonts 사용 {#using-web-fonts-in-a-theme}
 
-이제 적응형 양식 <!-- or interactive communication -->의 웹 서비스에서 사용할 수 있는 글꼴을 사용할 수 있습니다. Adobe의 웹 글꼴 서비스인 [Adobe Fonts](https://fonts.adobe.com/)을(를) 기본 구성으로 사용할 수 있습니다. Adobe Fonts을 사용하려면 키트를 만들고 키트에 글꼴을 추가한 다음 [Adobe Fonts](https://fonts.adobe.com/)에서 키트 ID를 가져옵니다.
+이제 적응형 양식 <!-- or interactive communication -->의 웹 서비스에서 사용할 수 있는 글꼴을 사용할 수 있습니다. Adobe의 웹 글꼴 서비스인 [Adobe Fonts](https://fonts.adobe.com/)를 구성으로 사용할 수 있습니다. Adobe Fonts을 사용하려면 키트를 만들고 키트에 글꼴을 추가한 다음 [Adobe Fonts](https://fonts.adobe.com/)에서 키트 ID를 가져옵니다.
 
 Experience Manager에서 Adobe Fonts을 구성하려면 다음 단계를 수행하십시오.
 
-1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;도구&#x200B;]**![hammer](assets/hammer.png) >**[!UICONTROL &#x200B;배포&#x200B;]**>**[!UICONTROL  Cloud Service ]**을 클릭합니다.
-1. **[!UICONTROL Cloud Service]** 페이지에서 로 이동하여 **[!UICONTROL Adobe Fonts]** 옵션을 엽니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드 서비스]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 클라우드 서비스]** 페이지에서 **[!UICONTROL Adobe Fonts]** 옵션으로 이동하여 엽니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 구성의 제목을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    구성 페이지로 리디렉션됩니다.
@@ -606,7 +606,7 @@ themeOverride 매개 변수를 사용하여 런타임에 테마를 적용할 수
 
 ## 다른 적응형 양식 사용 사례에 미치는 영향 {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/양식 게시 취소:** 양식을 게시할 때 적용된 테마도 게시됩니다(아직 게시되지 않은 경우).
+* **양식 게시/게시 취소:** 양식을 게시할 때 적용된 테마도 게시됩니다(아직 게시되지 않은 경우).
 * **양식 가져오기/내보내기:** 양식을 가져오거나 내보낼 때 연결된 테마를 자동으로 가져오거나 내보냅니다.
 * **양식의 참조:** 양식 참조의 참조 섹션에 테마에 대한 추가 항목이 포함되어 있습니다.
 * **양식의 마지막 수정 시간:** 연결된 테마를 변경할 때 업데이트되었습니다.
