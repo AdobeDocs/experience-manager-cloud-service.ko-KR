@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
+source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1109'
 ht-degree: 84%
 
 ---
@@ -31,17 +31,17 @@ ht-degree: 84%
 
 | ![WYSIWYG 인터페이스](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![규칙 편집기](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![작업 제출](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**WYSIWYG 인터페이스**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**규칙 편집기**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**작업 제출**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| [**WYSIWYG 인터페이스**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**규칙 편집기**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**작업 제출**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | 범용 편집기는 사전 설치된 구성 요소 라이브러리, 반응형 디자인, 템플릿 기반 작성, 실시간 필드 수정 기능을 갖춘 WYSIWYG 인터페이스를 통해 양식 디자인을 제공합니다. | 규칙 편집기를 사용하면 사용자는 이벤트 기반 규칙, 즉각적인 유효성 검사, 간단한 JavaScript 및 JSON을 통한 오류 처리를 사용하여 동적 양식 상호 작용을 만들 수 있습니다. | 제출 액션은 백엔드 통합, 조건부 제출 논리, 보안 엔드포인트 및 전처리기를 지원하여 제출 워크플로를 간소화합니다. |
 
 | ![게시/게시 취소](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![응답형 모드](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![사용자 지정 구성 요소](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**게시/게시 취소**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **응답형 모드** | [**사용자 지정 구성 요소**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| [**게시/게시 취소**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**응답형 모드**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**사용자 지정 구성 요소**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | 몇 번의 클릭만으로 편집기에서 직접 양식을 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있습니다. | 다양한 디바이스(데스크탑, 태블릿 및 모바일)에서 원활하게 적응되는 양식을 디자인합니다. 반응형 모드를 사용하면 다양한 화면 크기에 맞게 양식을 미리 보고 테스트할 수 있습니다. | 사용자 정의 구성 요소를 사용하면 개발자는 특정 조직의 사용 사례에 맞는 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다. |
 
 | ![스타일링](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![미리 채우기 서비스](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B 테스트](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**스타일**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **미리 채우기 서비스**(준비 중) | [**A/B 테스트**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**스타일링**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **미리 채우기 서비스**(준비 중) | [**A/B 테스트**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS를 사용한 스타일링을 통해 개발자는 양식 요소의 모양을 사용자 정의하고 웹 사이트 미학에 맞는 시각적으로 매력적인 디자인을 만들 수 있습니다. | 미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다. | A/B 테스트를 통해 조직은 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다. |
 
 | ![분석 및 추적](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![작업 관리](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -51,7 +51,7 @@ ht-degree: 84%
 
 | ![편집기 사용자 지정](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Forms 포함](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![감사 인사 구성](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **편집기 사용자 지정** | **Forms 포함** | [**감사 인사 구성**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| **편집기 사용자 지정** | **Forms 포함** | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | 개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구에 맞는 맞춤형 솔루션을 구축할 수 있습니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
 
 
