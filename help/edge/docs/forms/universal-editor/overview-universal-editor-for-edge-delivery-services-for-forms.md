@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 77%
+source-wordcount: '1038'
+ht-degree: 83%
 
 ---
 
@@ -36,9 +36,8 @@ ht-degree: 77%
 
 | ![게시/게시 취소](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![응답형 모드](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![사용자 지정 구성 요소](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**게시/게시 취소**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**응답형 모드**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**사용자 지정 구성 요소**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| 몇 번의 클릭만으로 편집기에서 직접 양식을 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있습니다. | 장치(데스크탑, 태블릿 및 모바일) 간에 원활하게 적용되는 양식을 디자인합니다. 반응형 모드를 사용하여 다양한 화면 크기에 대한 양식을 미리 보고 테스트할 수 있습니다. | 사용자 지정 구성 요소를 사용하여 개발자는 특정 조직의 사용 사례에 맞게 조정된 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다. |
+| 몇 번의 클릭만으로 편집기에서 직접 양식을 게시하거나 게시 취소하여 양식의 가시성을 쉽게 제어할 수 있습니다. | 다양한 디바이스(데스크탑, 태블릿 및 모바일)에서 원활하게 적응되는 양식을 디자인합니다. 반응형 모드를 사용하면 다양한 화면 크기에 맞게 양식을 미리 보고 테스트할 수 있습니다. | 사용자 정의 구성 요소를 사용하면 개발자는 특정 조직의 사용 사례에 맞는 고유한 요소를 만들어 양식 기능을 확장할 수 있습니다. |
 
 | ![스타일링](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![미리 채우기 서비스](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B 테스트](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ ht-degree: 77%
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Forms 포함](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![감사 인사 구성](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **편집기 사용자 지정** | **Forms 포함** | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구 사항에 맞는 맞춤형 솔루션을 가능하게 할 수 있습니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식 제출 후 사용자에게 표시되는 승인 메시지 또는 페이지를 쉽게 사용자 지정할 수 있습니다. |
+| 개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구에 맞는 맞춤형 솔루션을 구축할 수 있습니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 양식 만들기 시작
 
-* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
-* [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
-* [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
-* [실제 사용 모니터링](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 6%
@@ -97,7 +97,7 @@ reCAPTCHA Enterprise에 대한 클라우드 서비스 구성을 생성하려면 
 
    ![reCaptcha Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
 
-1. 버전을 [!DNL ReCAPTCHA Enterprise](으)로 선택하고 제목, 이름, 프로젝트 ID, 사이트 키 및 API 키를 지정합니다.
+1. 버전을 [!DNL ReCAPTCHA Enterprise]&#x200B;(으)로 선택하고 제목, 이름, 프로젝트 ID, 사이트 키 및 API 키를 지정합니다.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ reCAPTCHA에 대한 클라우드 서비스 구성을 만들려면 다음 단계�
 
    ![reCaptcha Enterprise](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 
-1. 버전을 [!DNL ReCAPTCHA v2](으)로 선택하고 제목 및 이름 을 지정하십시오.
+1. 버전을 [!DNL ReCAPTCHA v2]&#x200B;(으)로 선택하고 제목 및 이름 을 지정하십시오.
 1. 사이트 키 및 암호 키를 지정합니다.
 
    >[!NOTE]
@@ -226,4 +226,5 @@ reCAPTCHA에 대한 클라우드 서비스 구성을 만들려면 다음 단계�
 
 ## 추가 참조
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

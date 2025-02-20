@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 99%
+source-wordcount: '1392'
+ht-degree: 97%
 
 ---
 # 스니펫 {#snippets}
@@ -56,6 +56,17 @@ ht-degree: 99%
 * [Microsoft에 적응형 양식 연결](/help/forms/configure-msdynamics.md)
 * [적응형 양식을 Adobe Marketo Engage에 연결](/help/forms/integrate-form-to-marketo-engage.md)
 * [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## 범용 편집기{#universal-editor-see-also}
+
+* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [양식 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [양식 제출](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [양식 모양 사용자 정의](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [양식에 대한 규칙 만들기](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [양식에 대한 사용자 지정 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [응답형 모드에서 양식 미리 보기](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 

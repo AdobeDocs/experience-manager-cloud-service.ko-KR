@@ -4,10 +4,10 @@ description: 이 문서에서는 작성 중에 모양과 느낌을 시각화하�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 18%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -67,14 +67,7 @@ ht-degree: 18%
 
 ## 추가 참조
 
-* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
-* [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
-* [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
-* [실제 사용 모니터링](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 
