@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
+source-git-commit: b51be0344d0a7bc4958aee4c99e08630aec7ce41
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -845,6 +845,9 @@ main .form form .field-otp input {
 이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따릅니다. 이는 “field-otp” 클래스로 표시된 컨테이너에 “otp”라는 이름의 필드가 있음을 의미합니다.
 
 +++
+
+
+
 
 ## 추가 참조
 
