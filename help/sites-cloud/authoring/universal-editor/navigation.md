@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 29%
+source-wordcount: '1660'
+ht-degree: 28%
 
 ---
 
@@ -66,6 +66,10 @@ UI는 이러한 기본 영역으로 나뉩니다.
 * [속성 패널](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
+
+>[!TIP]
+>
+>유니버설 편집기는 편집기의 기능을 수정하고 추가할 수 있는 [사용자 지정 옵션](/help/implementing/universal-editor/customizing.md) 및 [확장 지점](/help/implementing/universal-editor/extending.md)을 제공합니다. 따라서 여기에 설명된 표준 옵션과 다른 옵션이 표시될 수 있습니다.
 
 ### Experience Cloud 헤더 {#experience-cloud-header}
 

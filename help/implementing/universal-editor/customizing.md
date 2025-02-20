@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '334'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,16 @@ ht-degree: 10%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## 미리보기에 게시 비활성화 {#publish-preview}
+
+특정 작성 워크플로에서는 [미리보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)에 대한 게시가 금지될 수 있습니다(사용 가능한 경우).
+
+따라서 게시 창의 **미리 보기** 옵션은 다음 메타데이터를 추가하여 앱에서 완전히 억제할 수 있습니다.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## 필터링 구성 요소 {#filtering-components}
