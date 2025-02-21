@@ -3,10 +3,10 @@ title: Cloud Manager에서 Edge Delivery 사이트 만들기
 description: 버튼을 클릭하여 Cloud Manager에서 Edge Delivery 사이트를 빠르게 만드는 방법을 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e1248ee8ceb324ee44dce296135d651d28c9f97
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 31%
+source-wordcount: '1101'
+ht-degree: 30%
 
 ---
 
@@ -78,7 +78,7 @@ Cloud Manager에서 사이트 프로비저닝 및 유효성 검사를 완료하�
    | 사이트의 GitHub 저장소 | <ul><li>**Edge Delivery 사이트** 목록 상자의 **저장소** 열 머리글 아래에서 방금 만든 사이트의 URL을 클릭합니다.<br>사용자 이름 또는 전자 메일 주소와 암호를 사용하여 GitHub에 로그인해야 할 수 있습니다.</li> |
    | 사이트 게시 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![사이트 게시 확인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **사이트 게시**&#x200B;을 클릭합니다.<br>사이트 게시가 성공적으로 시작되었음을 알리는 알림 메시지가 나타납니다.</li></ul> |
    | 게시된 사이트 미리보기 | <ul><li>**Edge Delivery 사이트** 목록 상자의 **사이트 이름** 열 머리글 아래에서 방금 만들고 게시한 사이트의 URL을 클릭합니다.<br>브라우저의 URL 주소 표시줄에서 사이트 URL이 `.page`(으)로 끝나므로 사이트 미리 보기가 표시됩니다.</li><li>사이트를 실시간으로 보려면 URL 주소 표시줄에서 `.page`을(를) `.live`(으)로 수동으로 변경하십시오.</li></ul> |
-   | 사용자에게 Google 드라이브의 컨텐츠 저장소에 대한 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![사용자 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **콘텐츠 저장소에 대한 액세스 권한 얻기**&#x200B;를 클릭합니다.</li><li>**사이트에 공동 작업자 추가** 대화 상자에서 기여자의 전자 메일 주소를 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요한 경우 기여자 이메일을 계속 추가합니다.</li><li>완료되면 **공동 작업자 추가**&#x200B;를 클릭하세요.</li><li>콘텐츠 공동 작업자와 링크를 공유하려면 **Collaboration이 추가됨** 대화 상자에서 **확인**&#x200B;을 클릭합니다.<br>공동 작업자는 전자 메일에서 **열기**&#x200B;를 클릭하여 공유 Google 드라이브 폴더에 기여하기 위한 전자 메일 초대를 받습니다. 로그인할 필요가 없습니다. 위에서 설명한 대로 공유 폴더의 파일을 편집하고 업데이트한 다음 Cloud Manager에서 **사이트 게시**&#x200B;를 클릭할 수 있습니다. 위에서 설명한 대로 변경 사항을 미리 볼 수도 있습니다.</li></ul> |
-   | 사용자에게 GitHub의 기본 저장소에 대한 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![코드 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **기본 저장소에 대한 액세스 권한을 얻음**&#x200B;을 클릭합니다.</li><li>**사이트의 기본 저장소에 액세스** 대화 상자에서 공동 작업자의 GitHub 사용자 이름을 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요에 따라 GitHub 사용자 이름을 계속 추가합니다.</li><li>완료되면 **공동 작업자 추가**&#x200B;를 클릭하세요.</li> |
+   | 사용자에게 Google 드라이브의 컨텐츠 저장소에 대한 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![사용자 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **콘텐츠 저장소에 대한 액세스 권한 얻기**&#x200B;를 클릭합니다.</li><li>**사이트에 공동 작업자 추가** 대화 상자에서 기여자의 전자 메일 주소를 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요한 경우 기여자 이메일을 계속 추가합니다.</li><li>완료되면 **공동 작업자 추가**&#x200B;를 클릭하세요.</li><li>콘텐츠 공동 작업자와 링크를 공유하려면 **Collaboration이 추가됨** 대화 상자에서 **확인**&#x200B;을 클릭합니다.</li><li>Collaboration이 추가되었습니다. 대화 상자에서 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭하여 링크를 복사하고 공동 작업자와 공유합니다.<br>링크를 공유하기 전에 공동 작업자가 IMS 계정과 연결된 전자 메일 주소로 로그인되어 있는지 확인하십시오. IMS 이메일 계정을 사용할 수 없는 경우 공동 작업자로 추가된 이메일 주소를 사용해야 합니다. 이렇게 하면 공동 작업자가 링크에 액세스하여 Google 드라이브에서 편집하거나 업데이트할 콘텐츠를 볼 수 있습니다.</li><li>편집을 마치면 위에 설명된 대로 Cloud Manager에서 **사이트 게시**&#x200B;를 클릭합니다.<br>또는 위에서 설명한 대로 변경 내용을 미리 봅니다.</li></ul> |
+   | 사용자에게 GitHub의 기본 저장소에 대한 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![코드 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **기본 저장소에 대한 액세스 권한을 얻음**&#x200B;을 클릭합니다.</li><li>**사이트의 기본 저장소에 액세스** 대화 상자에서 공동 작업자의 GitHub 사용자 이름을 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요에 따라 GitHub 사용자 이름을 계속 추가합니다.</li><li>완료되면 **공동 작업자 추가**&#x200B;를 클릭하세요.</li>저장소를 보려면 사용자에게 자신의 GitHub 사용자 이름에 대한 액세스 권한을 부여해야 합니다. |
 
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6091'
 ht-degree: 99%
 
 ---
@@ -739,7 +739,7 @@ ht-degree: 99%
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
-         + [ [!DNL Microsoft Dynamics 365] 클라우드 서비스 구성](/help/forms/configure-msdynamics.md)
+         + [ [!DNL Microsoft Dynamics 365]  클라우드 서비스 구성](/help/forms/configure-msdynamics.md)
          + [Salesforce 클라우드 서비스 구성](/help/forms/configure-salesforce.md)
          + [Forms 데이터 모델 만들기](/help/forms/create-form-data-models.md)
          + [Forms 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
@@ -764,7 +764,7 @@ ht-degree: 99%
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
-            + Microsoft® SharePoint{#connect-to-sharepoint}에 적응형 양식 연결
+            + Microsoft® SharePoint에 적응형 양식 연결{#connect-to-sharepoint}
                + [Microsoft에 적응형 양식 연결](/help/forms/configure-submit-action-sharepoint.md)
                + [SharePoint 문서 라이브러리에 제출](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [SharePoint 목록에 제출](/help/forms/connect-forms-to-sharepoint-list.md)
@@ -1022,7 +1022,7 @@ ht-degree: 99%
       + [리디렉션](/help/edge/docs/redirects.md)
    + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms 작동 방식](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Edge Delivery Services 양식은 어떻게 작동합니까?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + 시작하기 {#getting-started-edge-delivery-services-forms}
          + [시작하기](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
@@ -1039,12 +1039,12 @@ ht-degree: 99%
          + [개요 - Forms용 Edge Delivery Services용 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [WYSIWYG 인터페이스 이해](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [규칙 편집기를 사용하여에 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [규칙 편집기를 사용하여 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [양식에 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Forms 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [양식 스타일 사용자 지정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [양식 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [양식 스타일링 사용자 정의](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [반응형 모드](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
@@ -1206,6 +1206,7 @@ ht-degree: 99%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager에서의 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager에 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Cloud Manager에서 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Cloud Manager에서 Edge Delivery Sites 관리](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 도메인 설정 {#custom-domain-names}
