@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager에서 SSL(Secure Socket Layer) 인증서를 설치하고 관리하
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL 인증서 관리"
->abstract="Cloud Manager에 SSL 인증서를 설치하고 관리하여 사용자의 사이트를 보호하는 셀프서비스 도구가 있는 방법을 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
+>abstract="Cloud Manager가 SSL 인증서를 설치하고 관리하기 위한 셀프서비스 도구로 사용자의 사이트를 보호하는 방법에 대해 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
 
@@ -53,11 +53,11 @@ Cloud Manager은 SSL 인증서를 설치하고 관리하는 셀프서비스 도�
 >
 >[사용자 지정 도메인을 환경에 추가 및 연결하려면](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 해당 도메인을 다루는 올바른 SSL 인증서가 있어야 합니다.
 
-### Adobe 관리(DV) SSL 인증서 {#adobe-managed}
+### DV(Adobe 관리) SSL 인증서 {#adobe-managed}
 
 DV 인증서는 가장 기본적인 수준의 SSL 인증서이며 테스트 목적이나 기본 암호화를 사용하는 웹 사이트 보호에 사용되는 경우가 많습니다. DV 인증서는 [프로덕션 프로그램 및 샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 모두 사용할 수 있습니다.
 
-DV 인증서가 만들어지면 Adobe은 삭제하지 않는 한 3개월마다 자동으로 갱신합니다.
+DV 인증서가 만들어지면 Adobe에서 삭제하지 않는 한 3개월마다 자동으로 갱신합니다.
 
 ### 고객 관리(OV/EV) SSL 인증서 {#customer-managed}
 
@@ -85,12 +85,12 @@ OV 및 EV는 Cloud Manager의 DV 인증서에 대해 이러한 기능을 추가�
    * RSA 2048비트 표준 지원
 2048비트보다 큰 RSA 키(예: 3072비트 또는 4096비트 RSA 키)는 현재 지원되지 않습니다.
    * 타원 곡선(EC) 키 `prime256v1`(`secp256r1`) 및 `secp384r1`
-   * 타원 곡선 ECDSA(디지털 서명 알고리즘) 인증서. 이러한 인증서는 성능, 보안 및 효율성 향상을 위해 RSA보다 Adobe이 권장됩니다.
+   * 타원 곡선 ECDSA(디지털 서명 알고리즘) 인증서. 이러한 인증서는 성능, 보안 및 효율성 향상을 위해 RSA보다 Adobe에서 권장됩니다.
 
 * 유효성 검사를 통과하려면 인증서의 형식이 올바르게 지정되어야 합니다. 개인 키는 `PKCS#8` 형식이어야 합니다.
 
 >[!NOTE]
->조직에서 3072비트 RSA 키를 사용하여 준수해야 하는 경우 Adobe이 권장하는 방법은 ECDSA 인증서(`secp256r1` 또는 `secp384r1`)를 사용하는 것입니다.
+>조직에서 3072비트 RSA 키를 사용하여 준수해야 하는 경우 Adobe에서 권장하는 대체 방법은 ECDSA 인증서(`secp256r1` 또는 `secp384r1`)를 사용하는 것입니다.
 
 
 #### 인증서 관리 우수 사례
