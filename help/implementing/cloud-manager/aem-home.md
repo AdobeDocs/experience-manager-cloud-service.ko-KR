@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager Launchpad(얼리 어답터)
+title: AEM Launchpad &ndash; 얼리 어답터 정보
 description: Adobe Experience Manager Launchpad 페이지에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 2c9dfbd55cbeb3f5a89388b259e5a9a280a55fb9
+source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 7%
 
 ---
 
-# Adobe Experience Manager Launchpad 정보 {#aem-launchpad}
+# AEM Launchpad 정보 - 얼리 어답터 {#aem-launchpad}
 
 AEM Launchpad에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 AEM Launchpad를 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. AEM Launchpad는 사용자 중심의 명확한 레이아웃을 통해 필수 도구에 빠르게 액세스하여 모든 AEM 기능에 걸쳐 간소화되고 효과적인 경험을 제공합니다.
 
