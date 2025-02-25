@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 42%
+source-wordcount: '1809'
+ht-degree: 40%
 
 ---
 
@@ -179,7 +179,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 
 >[!NOTE]
 >
->New Relic One 하위 계정에서 90일 이상 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
+>30일 이상 New Relic One 하위 계정에서 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
 >
 >이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
@@ -191,7 +191,7 @@ AEM as a Cloud Service 프로그램의 New Relic One 제공에 대한 추가 도
 
 Adobe는 New Relic One의 Java 플러그인을 통해 AEM as a Cloud Service, 게시 및 미리보기(사용 가능한 경우) 서비스를 모니터링합니다. Adobe는 비프로덕션 및 프로덕션 AEM as a Cloud Service 환경 전반에서 사용자 정의 New Relic One APM 원격 분석 및 모니터링을 지원합니다.
 
-New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있으며 여러 애플리케이션에서 보고를 받습니다(AEM as a Cloud Service 환경당 3개).
+New Relic One 계정은 Adobe에서 관리하는 기본 계정에 연결되어 있으며 여러 애플리케이션에서 보고를 받습니다(AEM as a Cloud Service 환경당 3개).
 
 * 환경당 Author 서비스용 애플리케이션 1개
 * 환경당 `Publish` 서비스에 대한 응용 프로그램 1개(Golden Publish 포함)
@@ -201,10 +201,11 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 
 * 각 애플리케이션은 하나의 라이선스 키를 사용합니다.
 * AEM as a Cloud Service 환경은 하나의 New Relic One 계정에만 보고합니다.
-* 두 New Relic One에 대한 전체 모니터링 지표 및 이벤트는 3개월 동안 유지됩니다. &lt;!— CQDOC-22238 - 7일에서 3개월로 업데이트됨. >
+* 두 New Relic One에 대한 전체 모니터링 지표 및 이벤트는 3개월 동안 유지됩니다.
+
 +++
 
-+++**Adobe이 New Relic One에서 경고 알림을 전송합니까?** {#alerting-new-relic}
++++**Adobe에서 New Relic One에서 경고 알림을 전송합니까?** {#alerting-new-relic}
 
 Adobe은 가시성 목적으로만 New Relic One 액세스를 제공하며 고객 경고 또는 내부 운영 경고 용도로 사용하지 않습니다. 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 사용하여 전송됩니다.
 +++
@@ -225,7 +226,7 @@ New Relic One은 New Relic의 새로운 관찰 가능성 플랫폼으로, 여기
 
 New Relic One은 액세스 권한이 있는 모든 계정을 검색하고 모든 서비스 및 호스트의 데이터를 하나의 보기에서 시각화할 수 있는 기능을 사용자에게 제공합니다.
 
-Adobe 지원은 New Relic One 및 기타 도구를 사용하여 AEM as a Cloud Service을 모니터링하는 반면, 귀하의 팀은 여전히 온프레미스 서비스 및 인프라에 New Relic을 사용할 수 있습니다. Adobe New Relic One 계정과 고객이 관리하는 New Relic 계정의 데이터를 시각화할 수 있습니다.
+Adobe은 New Relic One 및 기타 도구를 사용하여 AEM as a Cloud Service을 모니터링하는 반면, 귀하의 팀은 여전히 온프레미스 서비스 및 인프라에 New Relic을 사용할 수 있습니다. Adobe New Relic One 계정과 고객이 관리하는 New Relic 계정의 데이터를 시각화할 수 있습니다.
 
 >[!NOTE]
 >
@@ -235,5 +236,5 @@ Adobe 지원은 New Relic One 및 기타 도구를 사용하여 AEM as a Cloud S
 
 +++**내 New Relic One 계정에 대한 APM 에이전트가 중지되었습니다. 무슨 일이 있었습니까?** {#deactivated}
 
-활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
+30일 이상 활동이 검색되지 않으면 [APM 에이전트가 중지됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 +++
