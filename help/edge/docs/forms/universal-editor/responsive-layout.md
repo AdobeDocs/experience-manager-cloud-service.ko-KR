@@ -4,19 +4,20 @@ description: 이 문서에서는 작성 중에 모양과 느낌을 시각화하�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # WYSIWYG 작성의 반응형 모드
 
 [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)를 사용하면 작성 중에 양식의 모양과 느낌을 확인할 수 있도록 다양한 에뮬레이터로 Edge Delivery Services Forms을 미리 볼 수 있습니다.
 
 반응형 모드를 통해 개발자는 데스크탑, 태블릿 및 모바일 장치를 포함하여 다양한 화면 크기에 자동으로 적응하는 레이아웃을 디자인할 수 있습니다. 범용 편집기는 데스크탑, 태블릿 및 모바일 장치용 에뮬레이터를 지원합니다. 화면 크기에 따라 높이와 너비를 설정하고 다음 작업을 수행할 수 있습니다.
+
 * 방향 설정
 * 너비 및 높이 지정
 * 방향 변경
@@ -68,6 +69,3 @@ ht-degree: 2%
 ## 추가 참조
 
 {{universal-editor-see-also}}
-
-
-

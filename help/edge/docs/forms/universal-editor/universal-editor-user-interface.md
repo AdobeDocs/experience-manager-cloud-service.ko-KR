@@ -4,11 +4,12 @@ description: 이 자습서는 범용 편집기 인터페이스를 시작하고 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -107,7 +108,7 @@ Experience Cloud 헤더는 콘솔의 맨 위에 있습니다. Experience Cloud �
 
   >[!NOTE]
   >
-  > * 범용 편집기에서 규칙 편집기 확장은 기본적으로 활성화되어 있지 않습니다. 규칙 편집기 확장을 사용하려면 공식 전자 메일 ID에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)에 전자 메일을 보내십시오.
+  > * 범용 편집기에서는 규칙 편집기 확장 기능이 기본적으로 활성화되어 있지 않습니다. 규칙 편집기 확장 기능을 활성화하려면 공식 이메일 ID에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)로 문의해 주십시오.
   > * 규칙을 만드는 방법에 대해 알아보려면 문서 [WYSIWYG 작성의 규칙 편집기 소개](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 참조하십시오.
 
 * **양식 속성 편집**
