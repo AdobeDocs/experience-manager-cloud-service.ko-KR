@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
+source-git-commit: 754cb41ea59a44820c4bc283b859d660040971ab
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.1.0) 일자는 2025년 1월 30일입니다. 다음 기능 릴리스(2025.2.0)는 2025년 2월 27일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.1.0) 일자는 2025년 1월 30일입니다. 다음 기능 릴리스(2025.2.0)는 2025년 3월 4일 수요일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비
 
 #### 게시 관리
 
-[게시 관리](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) 워크플로우를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스로 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
+[게시 관리](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) 워크플로를 사용하여 작성자 인스턴스에서 게시 및 미리보기 인스턴스에 이르기까지 여러 환경에서 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
 
 #### 핵심 구성 요소 기반 적응형 양식의 초안 자동 저장
 
