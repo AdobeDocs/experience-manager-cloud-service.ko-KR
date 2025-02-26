@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 배포 및 복제 문제 해결에 대해
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
+source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1711'
 ht-degree: 31%
 
 ---
@@ -98,8 +98,8 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 | 이름 | 설명 |
 | ------------- | ------------------------------------------- |
-| only수정됨 | 마지막 게시 이후 수정된 노드(신규 및 기존) |
-| onlyActivated | 이전에 게시된 노드 |
+| only수정됨 | 노드: 마지막 게시 이후 수정된 신규 및 기존 노드 모두 |
+| onlyActivated | 노드: 마지막 게시 전에 게시된 노드 |
 
 
 **지원 다시 시작**
