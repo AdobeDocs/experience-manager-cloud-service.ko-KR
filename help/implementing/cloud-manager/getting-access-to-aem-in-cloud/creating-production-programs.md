@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 12%
+source-wordcount: '1098'
+ht-degree: 11%
 
 ---
 
 
 # 프로덕션 프로그램 만들기 {#create-production-program}
 
-프로덕션 프로그램은 AEM 및 Cloud Manager에 익숙한 사용자가 라이브 트래픽을 처리하기 위해 배포할 목적으로 코드를 작성, 빌드 및 테스트할 준비가 되었습니다.
+프로덕션 프로그램은 Adobe Experience Manager(AEM) 및 Cloud Manager에 익숙한 사용자가 라이브 트래픽을 처리하기 위해 배포할 목적으로 코드를 작성, 빌드 및 테스트할 준비가 되었습니다.
 
 프로그램 유형에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](program-types.md) 문서를 참조하십시오.
 
 ## 프로덕션 프로그램 만들기 {#create}
 
-조직의 사용 권한에 따라 프로그램을 추가할 때 [추가 옵션](#options)이 표시될 수 있습니다.
+조직의 권한에 따라 프로그램을 추가할 때 추가 프로덕션 프로그램 옵션이 표시될 수 있습니다.
+[추가 프로덕션 프로그램 옵션](#options)을 참조하세요.
 
 **프로덕션 프로그램을 만들려면:**
 
@@ -31,7 +32,7 @@ ht-degree: 12%
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
-1. *프로그램을 만들어 보세요* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
+1. *프로그램 만들기* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
 
 1. **프로그램 목표**&#x200B;에서 ![구 모양 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**프로덕션 설정**&#x200B;을 선택합니다.
 
@@ -73,7 +74,7 @@ ht-degree: 12%
 
 ## 추가 프로덕션 프로그램 옵션 {#options}
 
-조직에서 사용할 수 있는 권한에 따라 프로덕션 프로그램을 만들 때 사용할 수 있는 추가 옵션이 있을 수 있습니다.
+조직에서 사용할 수 있는 권한에 따라 프로덕션 프로그램을 만들 때 사용할 수 있는 다음과 같은 추가 옵션이 있을 수 있습니다.
 
 ### 보안 {#security}
 
@@ -83,7 +84,7 @@ ht-degree: 12%
 
 **보안** 탭은 프로덕션 프로그램에 대해 **HIPAA** 또는 **WAF-DDOS 보호** 또는 두 가지 모두를 활성화하는 옵션을 제공합니다.
 
-Adobe HIPAA 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of Service)는 취약점으로부터 보호하기 위한 다층적 접근 방식의 일환으로 클라우드 기반 보안을 용이하게 합니다.
+Adobe HIPAA 규정 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of Service)는 취약점으로부터 보호하기 위한 다층적 접근 방식의 일부로서 클라우드 기반 보안을 용이하게 합니다.
 
 * **HIPAA** - 이 옵션은 Adobe의 HIPPA 지원 솔루션 구현을 활성화합니다.
    * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/trust/compliance/hipaa-ready.html).
@@ -98,23 +99,25 @@ Adobe HIPAA 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of
 
 ![SLA 옵션](assets/create-production-program-sla.png)
 
-AEM Sites 및 Forms은 표준 99.9% service level agreement(SLA)를 제공합니다. **99.99% Service level agreement** 옵션을 사용하면 사이트 및/또는 Forms의 프로덕션 환경에서 99.99%의 최소 가동 시간 비율을 사용할 수 있습니다.
+Sites 및 Forms은 표준 99.9% service level agreement(SLA)를 제공합니다. **99.99% Service level agreement** 옵션은 Sites, Forms, Edge Delivery Services 또는 이 세 가지 모두에 관계없이 프로덕션 환경에서 99.99%의 최소 가동 시간을 보장합니다.
 
-99.99% SLA은 가용성 향상, 지연 시간 단축 등의 이점을 제공하며 [추가 게시 영역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)을 프로그램의 프로덕션 환경에 적용해야 합니다.
+99.99%의 SLA은 가용성 향상, 지연 시간 단축 등의 이점을 제공합니다.
 
-99.99% SLA을 활성화하기 위한 [요구 사항](#sla-requirements)이 충족되면 [전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 실행하여 활성화해야 합니다.
+Sites 및 Forms 프로그램의 경우 99.99% SLA을 사용하려면 [추가 게시 영역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)을 프로그램의 프로덕션 환경에 적용해야 합니다. 99.99% SLA을 활성화하기 위한 [요구 사항](#sla-requirements)이 충족되면 [전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 실행하여 활성화해야 합니다.
+
+Edge Delivery Services의 경우 프로그램에서 99.99% SLA 라이선스를 구성하는 것 외에 *no* 요구 사항이 있습니다.
 
 #### 99.99% SLA 요구 사항 {#sla-requirements}
 
-필요한 권한 외에, 99.99%의 SLA에 추가 사용 요구 사항이 있습니다.
+필요한 권한 외에도 99.99% SLA for Sites 또는 Forms 프로그램을 사용하면 다음과 같은 추가 요구 사항이 제공됩니다.
 
 * 조직에는 프로그램에 99.99% SLA을 적용할 때 사용할 수 있는 99.99% SLA 및 추가 게시 영역 권한이 있어야 합니다.
 * Cloud Manager은 프로그램에 99.99% SLA을 적용하기 전에 사용되지 않은 [추가 게시 영역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) 권한을 사용할 수 있는지 확인합니다.
 * 프로그램을 편집할 때 이미 하나 이상의 추가 게시 영역이 있는 프로덕션 환경이 포함된 경우 Cloud Manager은 99.99% SLA 권한의 가용성만 확인합니다.
 * 99.99% SLA 활성화 및 보고를 위해서는 [프로덕션/스테이징 환경](/help/implementing/cloud-manager/manage-environments.md#adding-environments)이 만들어져야 하며 프로덕션/스테이징 환경에 하나 이상의 추가 게시 영역이 적용되어야 합니다.
-   * [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 사용하는 경우 [새 환경에 여러 Publish 지역 추가](/help/implementing/cloud-manager/manage-environments.md#adding-regions) 문서에서 권장 사항을 확인하여 지역 오류가 발생할 경우 연결을 유지하십시오.
-* 최소 1개의 추가 게시 영역은 99.99% SLA 프로그램에 유지되어야 합니다. 사용자는 99.99% SLA 프로그램에서 마지막 추가 게시 영역을 삭제할 수 없습니다.
-* 사이트 또는 Forms 솔루션이 활성화된 프로덕션 프로그램에 대해서는 99.99%의 SLA이 지원됩니다.
+   * [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 사용하는 경우 [새 환경에 여러 게시 영역 추가](/help/implementing/cloud-manager/manage-environments.md#adding-regions) 문서에서 권장 사항을 확인하여 지역 오류가 발생할 경우 연결을 유지하십시오.
+* 99.99% SLA 프로그램에는 항상 하나 이상의 추가 게시 영역이 포함되어야 합니다. 사용자는 프로그램에서 마지막 남은 추가 게시 영역을 삭제할 수 없습니다.
+* 99.99% SLA은 사이트 또는 Forms 솔루션이 활성화된 프로덕션 프로그램에 대해 지원됩니다.
 * [전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 실행하여 프로그램을 활성화하거나 편집할 때 99.99% SLA을 비활성화합니다.
 
 ## 프로그램 액세스 {#accessing}
