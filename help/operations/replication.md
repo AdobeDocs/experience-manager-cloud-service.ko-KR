@@ -4,16 +4,16 @@ description: AEM as a Cloud Service의 배포 및 복제 문제 해결에 대해
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 31%
 
 ---
 
 # 복제 {#replication}
 
-Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 AEM 런타임 외부에 있는 Adobe Developer에서 실행되는 파이프라인 서비스로 복제하도록 콘텐츠를 이동합니다.
+Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 콘텐츠를 이동하여 AEM 런타임 외부에 있는 Adobe Developer에서 실행되는 파이프라인 서비스를 복제합니다.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 ### 게시 관리 {#manage-publication}
 
-게시 관리는 빠른 Publish보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 및 나중에 게시할 수 있는 옵션 제공을 가능하게 합니다.
+게시 관리는 빠른 게시보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 및 나중에 게시할 수 있는 옵션 등을 가능하게 합니다.
 
-&quot;나중에 게시&quot; 옵션에 대해 폴더의 하위 항목을 포함하면 이 문서에 설명된 Publish 콘텐츠 트리 워크플로가 호출됩니다.
+나중에 게시 옵션에 대해 폴더의 하위 항목을 포함하면 이 문서에 설명된 콘텐츠 트리 게시 워크플로가 호출됩니다.
 
 게시 관리에 대한 자세한 내용은 [게시 기본 사항 설명서](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)를 참조하십시오.
 
@@ -98,7 +98,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 | 이름 | 설명 |
 | ------------- | ------------------------------------------- |
-| only수정됨 | 마지막 게시 이후 수정된 노드 |
+| only수정됨 | 마지막 게시 이후 수정된 노드(신규 및 기존) |
 | onlyActivated | 이전에 게시된 노드 |
 
 
@@ -131,7 +131,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 **도구 - 워크플로 - 모델**&#x200B;을 선택한 다음 아래와 같이 기본 워크플로 모델의 **콘텐츠 트리 게시**&#x200B;를 복사하여 트리 복제를 트리거할 수 있습니다.
 
-![Publish 콘텐츠 트리 워크플로 카드](/help/operations/assets/publishcontenttreeworkflow.png)
+![콘텐츠 트리 게시 워크플로 카드](/help/operations/assets/publishcontenttreeworkflow.png)
 
 원래 모델을 호출하지 마십시오. 대신 먼저 모델을 복사하고 해당 복사본을 호출해야 합니다.
 
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 워크플로 단계가 모든 경로를 복제한 후 최종 INFO 문이 기록됩니다.
 
-또한 `com.day.cq.wcm.workflow.process.impl` 아래 로거의 로그 수준을 DEBUG/TRACE으로 높여 더 많은 로그 정보를 가져올 수 있습니다.
+또한 `com.day.cq.wcm.workflow.process.impl` 아래의 로거의 로그 수준을 DEBUG/TRACE으로 높여 더 많은 로그 정보를 가져올 수 있습니다.
 
 오류가 있으면 워크플로 단계가 `WorkflowException`(으)로 종료되어 기본 예외가 래핑됩니다.
 
@@ -282,6 +282,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ![로그](assets/publish-logs.png "로그")
 
-콘텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM Publish 서비스에서 되돌려집니다.
+콘텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM 게시 서비스에서 되돌려집니다.
 
 이 경우 편집 가능한 기본 대기열에 빨간색 상태가 표시되며 이를 검토하여 어떤 항목이 게시를 취소했는지 확인해야 합니다. 해당 대기열을 클릭하면 보류 중인 항목이 표시되며 필요한 경우 단일 항목 또는 모든 항목을 지울 수 있습니다.
