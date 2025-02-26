@@ -4,9 +4,9 @@ description: 대부분 동일하게 보이고 동작하지만 콘텐츠가 다�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -34,11 +34,11 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 * 문서 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 따라 사이트가 이미 완전히 설정되었습니다.
 * 최소한 AEM as a Cloud Service 2024.08을 실행하고 있습니다.
 
-또한 Adobe에게 다음 항목을 구성하도록 요청해야 합니다. 다음 변경 사항을 적용하기 위해 Slack 채널을 통해 연락하거나 지원 문제를 제기하여 Adobe을 요청하십시오.
+또한 Adobe에 다음 항목을 구성하도록 요청해야 합니다. Slack 채널을 통해 연락하거나 지원 문제를 제기하여 Adobe에 이러한 변경 작업을 요청하십시오.
 
 * 사용자의 환경에 대해 [aem.live 구성 서비스](https://www.aem.live/docs/config-service-setup#prerequisites)를 활성화하도록 요청하여 관리자로 구성되었는지 확인하십시오.
-* Adobe을 기준으로 프로그램에 대해 무시 기능을 활성화하도록 요청합니다.
-* Adobe에게 조직을 생성해 달라고 요청합니다.
+* Adobe에서 사용 중인 프로그램에 대해 무시 기능을 활성화하도록 요청합니다.
+* Adobe에 조직 만들기를 요청합니다.
 
 ## 재생 기능 활성화 {#activate}
 
@@ -161,7 +161,7 @@ AEM이 다시 사용되지 않도록 구성되면 구성 서비스를 사용하�
 
 이제 AEM에서 Edge Delivery Services에 필요한 사항을 변경할 준비가 되었습니다.
 
-1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **Cloud Service** -> **Edge Delivery Services 구성**(으)로 이동한 다음 사이트에 대해 자동으로 만들어진 구성을 선택하고 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
+1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동한 다음 사이트에 대해 자동으로 만들어진 구성을 선택하고 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
 1. **Edge Delivery Services 구성** 창에서 프로젝트 형식을 **AEM.live에 무수정 구성 설정**(으)로 변경하고 **저장 및 닫기**를 탭하거나 클릭합니다.
    ![Edge Delivery Services 구성](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. 범용 편집기를 사용하여 사이트로 돌아가서 제대로 렌더링되는지 확인하십시오.
@@ -176,13 +176,14 @@ AEM이 다시 사용되지 않도록 구성되면 구성 서비스를 사용하�
 
 * [저장소 없는 다중 사이트 관리](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [저장소 없는 스테이징 및 프로덕션 환경](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [콘텐츠 작성을 위한 사이트 인증](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## 문제 해결 {#troubleshooting}
 
 무시 사용 사례를 구성한 후 발생하는 가장 일반적인 문제는 유니버설 편집기의 페이지가 더 이상 렌더링되지 않거나 흰색 페이지 또는 일반 AEM as a Cloud Service 오류 메시지가 표시된다는 것입니다. 이 경우
 
 * 렌더링된 페이지의 소스를 봅니다.
-   * 실제로 렌더링된 항목이 있습니까? `scripts.js`, `aem.js` 및 편집기 관련 JSON 파일이 있는 올바른 HTML 헤드
+   * 실제로 렌더링된 항목이 있습니까(`scripts.js`, `aem.js` 및 편집기 관련 JSON 파일이 있는 올바른 HTML 헤드)?
 * 작성자 인스턴스의 AEM `error.log`에서 예외를 확인합니다.
    * 가장 일반적인 문제는 페이지 구성 요소가 실패하고 404 오류가 발생한다는 것입니다.
    * `config.json or paths.json`을(를) 로드할 수 없습니다.

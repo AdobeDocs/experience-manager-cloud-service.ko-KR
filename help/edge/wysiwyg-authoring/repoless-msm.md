@@ -1,31 +1,31 @@
 ---
 title: 저장소 없는 다중 사이트 관리
-description: Edge Delivery Services이 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 리디렉션 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
+description: Edge Delivery Services에서 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 재사용 가능한 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
 
 # 저장소 없는 다중 사이트 관리 {#repoless-msm}
 
-Edge Delivery Services이 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 리디렉션 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
+Edge Delivery Services에서 각각 제공하는 단일 코드 베이스를 활용하는 현지화된 사이트를 사용하여 재사용 가능한 방식으로 프로젝트를 설정하는 방법에 대한 모범 사례 권장 사항을 알아봅니다.
 
 ## 개요 {#overview}
 
 [MSM(다중 사이트 관리자)](/help/sites-cloud/administering/msm/overview.md) 및 해당 Live Copy 기능을 사용하면 변형을 허용하면서 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있습니다. 콘텐츠를 한 번 작성하고 라이브 카피를 만들 수 있습니다. MSM은 소스 콘텐츠와 해당 라이브 카피 간의 라이브 관계를 유지하여 소스 콘텐츠를 변경할 때 소스와 라이브 카피를 동기화할 수 있습니다.
 
-MSM을 사용하여 로케일과 언어에 걸쳐 브랜드의 전체 콘텐츠 구조를 만들고 중앙에서 콘텐츠를 작성할 수 있습니다. 그런 다음 중앙 코드 베이스를 활용하여 Edge Delivery Services이 현지화된 사이트를 각각 제공할 수 있습니다.
+MSM을 사용하여 로케일과 언어에 걸쳐 브랜드의 전체 콘텐츠 구조를 만들고 중앙에서 콘텐츠를 작성할 수 있습니다. 그런 다음 Edge Delivery Services에서 중앙 코드 베이스를 활용하여 현지화된 사이트를 각각 제공할 수 있습니다.
 
 ## 요구 사항 {#requirements}
 
-무응답 사용 사례에서 MSM을 구성하려면 먼저 여러 작업을 완료해야 합니다.
+무응답 사용 사례에서 MSM을 구성하려면 먼저 다음 작업을 완료해야 합니다.
 
-* 이 문서에서는 사용자가 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서를 기반으로 프로젝트용 사이트를 이미 만들었다고 가정합니다.
+* 이 문서에서는 사용자가 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서를 기반으로 이미 프로젝트용 사이트를 만들었다고 가정합니다.
 * [프로젝트에 대해 리디렉션 기능을 이미 사용하도록 설정](/help/edge/wysiwyg-authoring/repoless.md)한 상태여야 합니다.
 
 ## 사용 사례 {#use-case}
@@ -49,7 +49,7 @@ MSM을 사용하여 로케일과 언어에 걸쳐 브랜드의 전체 콘텐츠 
 /content/wknd/de/en
 ```
 
-`language-masters`의 콘텐츠는 현지화된 사이트의 라이브 카피 소스입니다. 독일(`de`) 및 스위스(`ch`). 이 문서의 목표는 현지화된 각 사이트에 대해 모두 동일한 코드 베이스를 사용하는 Edge Delivery Services 사이트를 만드는 것입니다.
+`language-masters`의 콘텐츠는 현지화된 사이트의 라이브 카피 소스입니다. 독일(`de`) 및 스위스(`ch`). 이 문서의 목표는 현지화된 각 사이트에 대해 동일한 코드 베이스를 사용하는 Edge Delivery Services 사이트를 만드는 것입니다.
 
 ## 구성 {#configuration}
 
@@ -57,11 +57,11 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
 
 1. [AEM 사이트 구성 업데이트](#update-aem-configurations).
 1. [지역화된 페이지에 대한 새 Edge Delivery Services 사이트를 만듭니다](#create-edge-sites).
-1. [지역화된 사이트에 대한 AEM의 클라우드 구성 업데이트](#update-cloud-configurations).
+1. [현지화된 사이트에 대한 AEM의 클라우드 구성 업데이트](#update-cloud-configurations).
 
 ### AEM 사이트 구성 업데이트 {#update-aem-configurations}
 
-[구성](/help/implementing/developing/introduction/configurations.md)은(는) 조직 목적으로 설정 그룹 및 관련 콘텐츠를 수집하는 데 사용할 수 있는 작업 공간으로 간주할 수 있습니다. AEM에서 사이트를 만들면 그에 대한 구성이 자동으로 생성됩니다.
+[구성](/help/implementing/developing/introduction/configurations.md)은(는) 조직 목적으로 설정 그룹 및 관련 콘텐츠를 수집하는 데 사용할 수 있는 작업 공간으로 간주할 수 있습니다. AEM에서 사이트를 만들면 그에 대한 구성이 자동으로 만들어집니다.
 
 일반적으로 다음과 같은 특정 콘텐츠를 사이트 간에 공유하려고 합니다.
 
@@ -99,7 +99,7 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
 
 현지화된 추가 사이트에 해당 구성을 할당합니다. wknd의 경우 독일 사이트에도 `/conf/wknd/de` 구성을 할당해야 합니다.
 
-### 현지화된 페이지에 대한 새 Edge Delivery Services 사이트 생성 {#create-edge-sites}
+### 현지화된 페이지를 위한 새로운 Edge Delivery Services 사이트 생성 {#create-edge-sites}
 
 다중 지역, 다국어 사이트 설정을 위해 더 많은 사이트를 Edge Delivery Services에 연결하려면 각 AEM MSM 사이트에 대해 새 aem.live 사이트를 설정해야 합니다. 공유 Git 저장소와 코드 베이스를 사용하는 AEM MSM 사이트와 aem.live 사이트 간에는 1:1 관계가 있습니다.
 
@@ -181,7 +181,7 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
 
 현지화된 현재 상태를 위해 이전 섹션에서 만든 새 Edge Delivery Sites를 사용하도록 AEM의 페이지를 구성해야 합니다. 이 예제에서 `/content/wknd/ch` 아래의 콘텐츠는 사용자가 만든 `wknd-ch` 사이트를 사용해야 합니다. 마찬가지로 `/content/wknd/de`의 콘텐츠도 `wknd-de` 사이트를 사용해야 합니다.
 
-1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **Cloud Service** -> **Edge Delivery Services 구성**(으)로 이동합니다.
+1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동합니다.
 1. 프로젝트에 대해 자동으로 생성된 구성을 선택한 다음 현지화된 페이지에 대해 생성된 폴더를 선택합니다. 이 경우 스위스(`ch`)가 됩니다.
 1. 도구 모음에서 **만들기** > **구성**&#x200B;을 탭하거나 클릭합니다.
 1. **Edge Delivery Services 구성** 창에서:
@@ -200,6 +200,6 @@ MSM 리디렉션 사용 사례를 구성하는 몇 가지 단계가 있습니다
 1. 도구 모음에서 **편집**&#x200B;을 탭하거나 클릭합니다.
 1. 페이지가 유니버설 편집기에서 제대로 렌더링되고 사이트 루트와 동일한 코드를 사용하는지 확인합니다.
 1. 페이지를 변경하고 다시 게시합니다.
-1. `https://main--wknd-ch--<your-github-org>.aem.page`에서 지역화된 페이지를 보려면 새 Edge Delivery Services 사이트를 방문하십시오.
+1. 새 Edge Delivery Services 사이트를 방문하여 `https://main--wknd-ch--<your-github-org>.aem.page`에서 해당 지역화된 페이지를 확인하십시오.
 
 변경한 사항이 표시되면 MSM 설정이 제대로 작동하는 것입니다.

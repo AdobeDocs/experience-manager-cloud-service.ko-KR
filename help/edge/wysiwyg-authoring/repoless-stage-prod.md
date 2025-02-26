@@ -4,9 +4,9 @@ description: 리디렉션 방식으로 단일 코드 베이스를 활용하는 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '747'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 2%
 스테이징 환경과 별도로 프로덕션 환경에 대한 사이트를 설정할 수 있습니다. 별도의 스테이징 및 프로덕션 설정에 대한 두 번째 사이트를 설정하는 것은 다중 사이트 관리에 필요한 [설정](/help/edge/wysiwyg-authoring/repoless-msm.md)과 비슷합니다. 실제로 필요한 경우 MSM 사이트 구조와 결합할 수 있습니다.
 
 이 문서에서는 별도의 스테이징 및 프로덕션 환경의 일반적인 예를 사용합니다. 원하는 환경에 대해 별도의 환경을 만들 수 있습니다.
+
+## 요구 사항 {#requirements}
+
+재사용 불가 스테이지 및 프로덕션 환경을 구성하려면 먼저 다음 작업을 완료해야 합니다.
+
+* 이 문서에서는 사용자가 Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 [개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 기반으로 이미 프로젝트 사이트를 만들었다고 가정합니다.
+* 이미 [프로젝트에 대해 리디렉션 기능을 활성화한 상태여야 합니다.](/help/edge/wysiwyg-authoring/repoless.md)
 
 ## 구성 {#configuration}
 
@@ -108,11 +115,11 @@ ht-degree: 2%
 
 `https://main--wknd-prod--<your-github-org>.aem.page/config.json`을(를) 호출하고 반환된 JSON의 콘텐츠를 확인하여 새 사이트의 공용 구성이 작동하는지 확인하십시오.
 
-### 프로덕션 사이트에 맞게 AEM에서 클라우드 구성 업데이트 {#update-cloud-configuration}
+### AEM에서 프로덕션 사이트에 대한 클라우드 구성 업데이트 {#update-cloud-configuration}
 
-전용 프로덕션 사이트에 대해 이전 섹션에서 만든 새 Edge Delivery Sites를 사용하도록 프로덕션 AEM을 구성해야 합니다. 이 예제에서 프로덕션 환경의 `/content/wknd` 아래에 있는 콘텐츠는 사용자가 만든 `wknd-prod` 사이트를 사용해야 합니다.
+프로덕션 AEM은 전용 프로덕션 사이트에 대해 이전 섹션에서 만든 새 Edge Delivery 사이트를 사용하도록 구성해야 합니다. 이 예제에서 프로덕션 환경의 `/content/wknd` 아래에 있는 콘텐츠는 사용자가 만든 `wknd-prod` 사이트를 사용해야 합니다.
 
-1. AEM 프로덕션 인스턴스에 로그인하고 **도구** -> **Cloud Service** -> **Edge Delivery Services 구성**(으)로 이동합니다.
+1. AEM 프로덕션 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동합니다.
 1. 프로젝트에 대해 자동으로 생성된 구성을 선택합니다.
 1. 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
 1. **Edge Delivery Services 구성** 창에서:
