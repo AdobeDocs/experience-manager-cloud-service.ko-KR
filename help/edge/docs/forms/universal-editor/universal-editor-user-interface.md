@@ -3,10 +3,8 @@ title: 범용 편집기 이해 - 개발자 자습서
 description: 이 자습서는 범용 편집기 인터페이스를 시작하고 실행하는 데 도움이 됩니다. 범용 편집기에서 나만의 Edge Delivery Services 양식을 만들 수 있는 사용자 인터페이스를 이해하는 데 도움이 됩니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 2%

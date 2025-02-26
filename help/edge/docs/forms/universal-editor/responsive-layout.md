@@ -3,16 +3,17 @@ title: 범용 편집기 이해 - 반응형 모드
 description: 이 문서에서는 작성 중에 모양과 느낌을 시각화하기 위해 유니버설 편집기에서 다양한 에뮬레이터를 사용하여 양식을 미리 보는 방법에 대해 설명합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
 # WYSIWYG 작성의 반응형 모드
+
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+
 
 [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)를 사용하면 작성 중에 양식의 모양과 느낌을 확인할 수 있도록 다양한 에뮬레이터로 Edge Delivery Services Forms을 미리 볼 수 있습니다.
 

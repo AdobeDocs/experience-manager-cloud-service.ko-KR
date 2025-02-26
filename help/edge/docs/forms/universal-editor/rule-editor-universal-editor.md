@@ -3,18 +3,19 @@ title: 규칙 편집기를 사용해 양식 필드에 규칙을 적용하여 WYS
 description: 범용 편집기의 규칙 편집기를 사용하면 코딩이나 스크립팅 없이도 양식에 동적 비헤이비어를 추가하고 복잡한 논리를 작성할 수 있습니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 76%
+source-wordcount: '2214'
+ht-degree: 96%
 
 ---
 
 
-# WYSIWYG 작성에서 규칙 편집기 소개
+# WYSIWYG 작성의 규칙 편집기 소개
+
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+
 
 규칙 편집기를 사용하여 규칙을 만들면 동적 양식 비헤이비어를 추가할 수 있습니다. 이러한 규칙을 사용하면 조건부 필드 가시성이 높아지고, 사용자 입력을 기반으로 계산이 자동화되며, 전반적인 사용자 경험이 향상됩니다. 규칙 편집기는 양식 작성 프로세스를 간소화하여 정확성과 효율성을 모두 보장하는 데 도움이 됩니다.
 
@@ -42,23 +43,23 @@ ht-degree: 76%
 
 ## 규칙 편집기 확장 기능을 활성화하는 방법
 
-범용 편집기에서 규칙 편집기 확장은 기본적으로 활성화되어 있지 않습니다. 규칙 편집기 확장을 사용하려면 공식 전자 메일 ID에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)에 전자 메일을 보내십시오.
+범용 편집기에서는 규칙 편집기 확장 기능이 기본적으로 활성화되어 있지 않습니다. 규칙 편집기 확장 기능을 활성화하려면 공식 이메일 ID에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)로 문의해 주십시오.
 
 사용자 환경에서 규칙 편집기 확장 기능을 활성화하면 편집기의 오른쪽 상단에 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘이 나타납니다.
 
 ![범용 편집기 규칙 편집기](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-규칙을 작성할 양식 구성 요소를 선택하고 ![편집-규칙](/help/forms/assets/edit-rules-icon.svg) 아이콘을 클릭합니다. 규칙 편집기 사용자 인터페이스가 나타납니다.
+규칙을 작성하고자 하는 양식 구성 요소를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 클릭합니다. 규칙 편집기 사용자 인터페이스가 나타납니다.
 
 ![규칙 편집기 사용자 인터페이스](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 
-이 문서에서 `form object`과(와) `form component`은(는) 서로 교환하여 사용됩니다.
+이 문선에서는 `form object` 및 `form component`를 서로 바꿔서 사용할 수 있습니다.
 
 이제 [규칙 편집기에서 사용 가능한 규칙 유형](#available-rule-types-in-rule-editor)을 사용하여 선택한 양식 필드에 대한 규칙이나 비즈니스 로직을 작성할 수 있습니다.
 
 ## 규칙 편집기 사용자 인터페이스 이해
 
-규칙 편집기 편집기는 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 클릭하면 열립니다.
+규칙 편집기의 편집기는 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 클릭하면 열립니다.
 
 ![규칙 편집기 사용자 인터페이스](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -72,19 +73,19 @@ ht-degree: 76%
   <tbody>
     <tr>
       <td>1. 제목</td>
-      <td>양식 구성 요소의 제목과 선택한 규칙 유형을 표시합니다. 예를 들어 '총 급여 입력'은 '언제' 규칙 유형이 선택된 텍스트 상자 구성 요소입니다. </td>
+      <td>양식 구성 요소의 제목과 선택한 규칙 유형을 표시합니다. 예를 들어 “총 급여 입력”은 “언제” 규칙 유형이 선택된 텍스트 상자 구성 요소입니다. </td>
     </tr>
     <tr>
       <td>2. 양식 오브젝트 및 함수</td>
-      <td><b>Forms 개체</b> 탭에는 양식에 포함된 모든 구성 요소의 계층 보기가 표시됩니다. <b>함수</b> 탭에는 규칙 편집기에 기본 제공된 함수 집합이 포함되어 있습니다.</td>
+      <td><b>양식 오브젝트</b> 탭에는 양식에 포함된 모든 구성 요소의 계층적 보기가 표시됩니다. <b>기능</b> 탭에는 규칙 편집기에서 기본 제공되는 기능 세트가 포함되어 있습니다.</td>
     </tr>
     <tr>
       <td>3. 양식 오브젝트 및 함수 토글</td>
-      <td>토글 단추는 양식 개체 및 함수 창을 교대로 표시하거나 숨깁니다. </td>
+      <td>토글 버튼은 양식 오브젝트와 함수 창을 번갈아 가며 표시하거나 숨깁니다. </td>
     </tr>
     <tr>
       <td>4. 시각적 규칙 편집기</td>
-      <td>시각적 규칙 편집기 는 양식 구성 요소에 대한 규칙을 만들 수 있는 인터페이스입니다.</td>
+      <td>시각적 규칙 편집기는 양식 구성 요소에 대한 규칙을 만들 수 있는 인터페이스입니다.</td>
     </tr>
     <tr>
       <td>5. 완료 및 취소 버튼</td>
@@ -93,7 +94,7 @@ ht-degree: 76%
   </tbody>
 </table>
 
-양식 구성 요소에 대한 기존 규칙은 구성 요소를 선택하면 나열됩니다. 규칙 편집기에서 제목을 보고 규칙 요약을 미리 볼 수 있습니다. 또한 규칙의 순서를 변경하고, 규칙을 편집하고, 규칙을 활성화/비활성화하고, 규칙을 삭제할 수도 있습니다.
+구성 요소를 선택하면 양식 구성 요소의 기존 규칙이 나열됩니다. 규칙 편집기에서 제목을 확인하고 규칙 요약을 미리 볼 수 있습니다. 또한 규칙의 순서를 변경하고, 규칙을 편집하고, 규칙을 활성화/비활성화하고, 규칙을 삭제할 수도 있습니다.
 
 ![사용 가능한 양식 오브젝트 규칙 표시](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -111,7 +112,7 @@ ht-degree: 76%
   <tbody>
     <tr>
       <td>값 설정</td>
-      <td>지정된 조건의 충족 여부에 따라 양식 구성 요소의 값을 설정합니다.</td>
+      <td>지정된 조건이 충족되는지 여부에 따라 양식 구성 요소의 값을 설정합니다.</td>
     </tr>
     <tr>
       <td>값 지우기</td>
@@ -119,23 +120,23 @@ ht-degree: 76%
     </tr>
     <tr>
       <td>숨기기/표시</td>
-      <td>조건 충족 여부에 따라 양식 구성 요소를 숨기거나 표시합니다.</td>
+      <td>조건이 충족되는지 여부에 따라 양식 구성 요소를 숨기거나 표시합니다.</td>
     </tr>
     <tr>
       <td>활성화/비활성화</td>
-      <td>조건의 충족 여부에 따라 양식 구성 요소를 활성화하거나 비활성화합니다.</td>
+      <td>조건이 충족되는지 여부에 따라 양식 구성 요소를 활성화하거나 비활성화합니다.</td>
     </tr>
     <tr>
       <td>유효성 검사</td>
-      <td>조건을 기반으로 양식 구성 요소를 확인하고 조건이 충족되지 않으면 오류를 표시합니다. </td>
+      <td>조건에 따라 양식 구성 요소를 확인하고 조건이 충족되지 않으면 오류를 표시합니다. </td>
     </tr>
     <tr>
-      <td>When</td>
-      <td>평가 조건을 지정하고 조건이 충족되면 트리거할 작업을 지정합니다. <i>condition-action-alternate</i> 작업 규칙 구문 또는 <i>condition-action</i> 규칙 구문을 따릅니다. </td>
+      <td>언제</td>
+      <td>평가 조건을 지정하고, 해당 조건이 충족되면 트리거되는 동작을 지정합니다. <i>condition-action-alternate</i> 액션 규칙 구성 또는 <i>condition-action</i> 규칙 구성을 따릅니다. </td>
     </tr>
     <tr>
       <td>포맷</td>
-      <td> 양식 구성 요소의 값이 변경될 때 해당 표현식을 사용하여 양식 구성 요소의 표시 값을 수정합니다.</td>
+      <td> 양식 구성 요소의 값이 변경되면 주어진 표현식을 사용하여 양식 구성 요소의 표시 값을 수정합니다.</td>
     </tr>
     <tr>
       <td>서비스 호출</td>
@@ -143,7 +144,7 @@ ht-degree: 76%
     </tr>
     <tr>
       <td>속성 설정</td>
-      <td>조건을 기반으로 지정된 양식 구성 요소의 속성 값을 설정합니다.</td>
+      <td>조건에 따라 지정된 양식 구성 요소의 속성 값을 설정합니다.</td>
     </tr>
     <tr>
       <td>포커스 설정</td>
@@ -151,7 +152,7 @@ ht-degree: 76%
     </tr>
     <tr>
       <td>양식 저장</td>
-      <td>초안 및 제출 Forms 포털 구성 요소를 사용하여 양식을 초안으로 저장할 수 있습니다. </td>
+      <td>사용자는 초안 및 제출 양식 포털 구성 요소를 사용하여 양식을 초안으로 저장할 수 있습니다. </td>
     </tr>
     <tr>
       <td>양식 제출</td>
@@ -185,7 +186,7 @@ ht-degree: 76%
 
 ## 규칙 작성
 
-시각적 규칙 편집기에서 규칙을 작성하는 방법을 이해하기 위해 세금 계산 양식이라는 간단한 예제를 살펴보겠습니다.
+시각적 규칙 편집기에서 규칙을 작성하는 방법을 이해하려면 세금 계산 양식의 간단한 예를 살펴보겠습니다.
 
 ![규칙 편집기 예제](/help/edge/docs/forms/assets/rule-editor-1.png)
 
@@ -215,10 +216,10 @@ ht-degree: 76%
 1. 편집을 위해 범용 편집기에서 양식을 엽니다.
 1. 다음 양식 구성 요소를 추가합니다.
    * 세금 계산 양식 (제목)
-   * 총 급여(숫자 입력)
-   * 추가 공제(숫자 입력)
-   * 과세 소득(숫자 입력)
-   * 납부세액(숫자 입력)
+   * 총 급여 (숫자 입력)
+   * 추가 공제 (숫자 입력)
+   * 과세 소득 (숫자 입력)
+   * 미지급 세금 (숫자 입력)
    * 제출 (제출 버튼)
 1. `Additional Deduction` 양식 필드의 `Properties`를 열어 해당 필드를 숨깁니다.
 
@@ -226,12 +227,12 @@ ht-degree: 76%
 
 ### 2. 양식 필드에 대한 조건부 규칙 추가
 
-양식을 작성했으면 총 급여가 50,000달러를 초과하는 경우에만 `Additional Deduction` 필드를 표시하도록 첫 번째 규칙을 작성합니다. 조건부 규칙을 추가하려면 다음 작업을 수행합니다.
+양식을 작성했으면 총 급여가 50,000달러를 초과하는 경우에만 `Additional Deduction` 필드를 표시하도록 첫 번째 규칙을 작성합니다. 조건부 규칙을 추가하려면 다음 작업을 수행하십시오.
 
-1. 편집할 양식을 유니버설 편집기에서 열고 콘텐츠 트리에서 **[!UICONTROL 총 급여]** 필드를 선택한 다음 ![편집-규칙](/help/forms/assets/edit-rules-icon.svg)을 선택하십시오. 또는 **[!UICONTROL Forms 개체]** 창에서 직접 **[!UICONTROL 총 급여]** 필드를 선택할 수 있습니다.
+1. 범용 편집기에서 양식을 열어 편집하고 콘텐츠 트리에서 **[!UICONTROL 총 급여]** 필드를 선택한 다음 ![edit-rules](/help/forms/assets/edit-rules-icon.svg)를 선택합니다. 또는 **[!UICONTROL 양식 오브젝트]** 창에서 직접 **[!UICONTROL 총 급여]** 필드를 선택할 수도 있습니다.
    ![규칙 편집기 예제1](/help/edge/docs/forms/assets/rule-editor3.png)
 시각적 규칙 편집기 인터페이스가 나타납니다.
-1. 규칙을 만들려면 **[!UICONTROL 만들기]**를 클릭하십시오.
+1. **[!UICONTROL 만들기]**를 클릭하여 규칙을 생성합니다.
    ![규칙 편집기 예제2](/help/edge/docs/forms/assets/rule-editor4.png)
 기본적으로 `Set Value Of` 규칙 유형이 선택되어 있습니다. 선택한 오브젝트를 변경하거나 수정할 수는 없지만 규칙 드롭다운을 사용하여 다른 규칙 유형을 선택할 수 있습니다.\
    ![규칙 편집기 예제3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -264,13 +265,13 @@ ht-degree: 76%
 
 다음으로 `Taxable Income`을 계산하는 규칙을 작성합니다. 이는 `Gross Salary`에서 `Additional Deduction`(해당되는 경우)을 뺀 값입니다. **[!UICONTROL 과세 소득]** 필드에 계산 규칙을 추가하려면 다음 단계를 수행합니다.
 
-1. 작성 모드에서 **[!UICONTROL 과세 소득]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 또는 **[!UICONTROL Forms 개체]** 창에서 직접 **[!UICONTROL 과세 소득]** 필드를 선택할 수 있습니다.
-1. 그런 다음 **[!UICONTROL 만들기]**를 선택하여 규칙을 만듭니다.
+1. 작성 모드에서 **[!UICONTROL 과세 소득]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 또는 **[!UICONTROL 양식 오브젝트]** 창에서 직접 **[!UICONTROL 과세 소득]** 필드를 선택할 수도 있습니다.
+1. 그 다음 **[!UICONTROL 만들기]**를 선택하여 규칙을 생성합니다.
    ![규칙 편집기 예제13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
    ![규칙 편집기 예제14](/help/edge/docs/forms/assets/rule-editor17.png)
 
-1. 수학 표현 필드에서 다음 작업을 수행합니다.
+1. 수학 표현 필드에서 다음 작업을 수행하십시오.
 
    * 양식 오브젝트 탭의 첫 번째 **[!UICONTROL 오브젝트 드롭 또는 여기에서 선택]** 필드에서 **[!UICONTROL 총 급여]** 필드를 선택하거나 드래그 앤 드롭합니다.
 
@@ -283,11 +284,11 @@ ht-degree: 76%
 
    이제 과세 소득에 세율을 곱하여 결정되는 `Tax Payable ` 필드에 대한 규칙을 추가합니다. 단순성을 위해 고정 세율을 `10%`로 가정합니다.
 
-1. 작성 모드에서 **[!UICONTROL 미지급 세금]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. **[!UICONTROL 만들기]**를 선택하여 규칙을 만듭니다.
+1. 작성 모드에서 **[!UICONTROL 미지급 세금]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 그 다음 **[!UICONTROL 만들기]**를 선택하여 규칙을 생성합니다.
    ![규칙 편집기 예제16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
    ![규칙 편집기 예제17](/help/edge/docs/forms/assets/rule-editor20.png)
-1. 수학 표현 필드에서 다음 작업을 수행합니다.
+1. 수학 표현 필드에서 다음 작업을 수행하십시오.
 
    * 양식 오브젝트 탭의 첫 번째 **[!UICONTROL 오브젝트 드롭 또는 여기에서 선택]** 필드에서 **[!UICONTROL 과세 소득]** 필드를 선택하거나 드래그 앤 드롭합니다.
 
@@ -371,15 +372,15 @@ export { getFullName, days };
 
    ![규칙 편집기의 사용자 정의 함수](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **양식 미리 보기**: 새로 구현된 함수를 사용하여 양식을 미리 봅니다.
+1. **양식 미리보기**: 새로 구현된 함수가 포함된 양식을 미리 봅니다.
 
 ## 추가 정보
 
 >[!NOTE]
 >
-> 범용 편집기에서 정적 및 동적 가져오기는 사용자 지정 함수 스크립트에서 지원되지 않습니다. `../[blocks]/form/functions.js` 파일에 전체 코드를 추가해야 합니다.
+> 범용 편집기에서는 사용자 정의 함수 스크립트에서 정적 및 동적 가져오기가 지원되지 않습니다. `../[blocks]/form/functions.js` 파일에 전체 코드를 추가해야 합니다.
 
-이 문서에서는 범용 편집기에서 사용할 수 있는 규칙 편집기에 대한 제한된 정보를 제공합니다. 규칙 편집기 및 사용자 지정 함수에 대한 자세한 내용은 다음 문서를 참조하십시오.
+이 문서에서는 범용 편집기에서 제공되는 규칙 편집기에 대해 일부 정보를 제공합니다. 규칙 편집기와 사용자 정의 기능에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 {{see-also-rule-editor}}
 

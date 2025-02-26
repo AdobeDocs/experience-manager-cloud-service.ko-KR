@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 99%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 99%
    + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 양식은 어떻게 작동합니까?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + 시작하기 {#getting-started-edge-delivery-services-forms}
-         + [시작하기](/help/edge/docs/forms/tutorial.md)
-         + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-         + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
-         + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-         + [URL에서 양식으로 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
-         + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-         + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
-         + [유효성 검사를 위한 정규 표현 표현식](/help/edge/docs/forms/regex-forms.md)
-         + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
-         + [양식 제출 서비스 사용](/help/forms/forms-submission-service.md)
+      + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
+         + [첫 번째 양식 작성: Google Sheets 및 Excel로 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
+         + [Google Sheets 또는 Excel을 사용하여 Forms을 만드는 방법: 단계별 안내서](/help/edge/docs/forms/create-forms.md)
+         + [양식을 Google Sheets에 연결: 데이터 수집 설정 안내서](/help/edge/docs/forms/submit-forms.md)
+         + [양식을 라이브로 만들기: 게시 및 데이터 수집 안내서](/help/edge/docs/forms/publish-forms.md)
+         + [양식 필드 유효성 검사: Forms에 오류 검사 추가](/help/edge/docs/forms/validate-forms.md)
+         + [아름다운 Forms 디자인: 스타일 및 사용자 지정 안내서](/help/edge/docs/forms/style-theme-forms.md)
+         + [성공 메시지 만들기: 양식의 감사 페이지 사용자 지정](/help/edge/docs/forms/thank-you-page-form.md)
+         + [양식 제출 안내서: Forms 제출 서비스 사용](/help/forms/forms-submission-service.md)
+         + [동적 양식 필드: URL에서 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
+         + [스마트 동작 추가: 양식 규칙 및 논리 안내서](/help/edge/docs/forms/rules-forms.md)
+         + [고급 양식 유효성 검사: 정규 표현식 안내서](/help/edge/docs/forms/regex-forms.md)
+         + [재사용 가능한 Forms 작성: 양식 단편 안내서](/help/edge/docs/forms/form-fragments.md)
+         + [동적 Forms 만들기: 반복 가능한 섹션 추가](/help/edge/docs/forms/repeatable-forms.md)
+         + [양식을 전역으로 만들기: 양식 번역 안내서](/help/edge/docs/forms/translate-forms.md)
+         + [Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/recaptacha-forms.md)
+         + [사용자 정의 양식 구성 요소 빌드: 개발자 안내서](/help/edge/docs/forms/custom-components-forms.md)
+         + [양식 성능 모니터링: 실제 사용 모니터링 안내서](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Edge에 Forms 배포: Edge Delivery Services용 게시 안내서](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [개요 - Forms용 Edge Delivery Services용 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [WYSIWYG 인터페이스 이해](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [규칙 편집기를 사용하여 규칙 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [사용자 정의 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [양식에 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [양식 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [양식 스타일링 사용자 정의](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [반응형 모드](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + 기능 {#advanced-features-edge-delivery-services-forms}
-         + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
-         + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-         + [양식 번역](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA를 사용하여 양식 보호](/help/edge/docs/forms/recaptacha-forms.md)
-         + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
-         + [양식에 대한 실제 사용 모니터링](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Edge Delivery Services용 양식 게시](/help/edge/docs/forms/publishing-forms.md)
+         + [Edge Delivery Services용 Forms Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [모바일 친화적인 Forms 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [아름다운 Forms 디자인: 범용 편집기를 위한 스타일 및 테마 지정 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Forms에 동적 동작 추가: 규칙 편집기에 대한 전체 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [양식 제출 안내서: 양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Forms 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [사용자 지정 양식 구성 요소 빌드: 유니버설 편집기에 대한 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 리소스 {#resources}

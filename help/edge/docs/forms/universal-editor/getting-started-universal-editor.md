@@ -3,18 +3,19 @@ title: 범용 편집기에서 AEM Forms용 Edge Delivery Services 시작하기 -
 description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 범용 편집기에서 나만의 Edge Delivery Services 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 86%
+source-wordcount: '1826'
+ht-degree: 97%
 
 ---
 
 
 # 범용 편집기(WYSIWYG)를 사용하여 AEM Forms용 Edge Delivery Services 시작하기
+
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services 양식은 WYSIWYG(What-You-See-Is-What-You Get) 기능을 제공하는 범용 편집기를 사용하여 작성됩니다. 범용 편집기는 효율적인 양식 작성을 위한 현대적이고 직관적인 인터페이스를 제공합니다.
 
@@ -102,7 +103,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
       ![AEM 사이트 만들기](/help/edge/docs/forms/assets/create-aem-site.png)
 
-   1. **사이트 만들기** 대화 상자가 나타나면 **확인**&#x200B;을 클릭합니다.
+   1. **사이트 만들기** 대화 상자가 표시되면 **확인**&#x200B;을 클릭합니다.
 
       ![확인 클릭](/help/edge/docs/forms/assets/click-ok-aem-site.png)
 
@@ -125,7 +126,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
       ![AEM Sites 프로젝트 게시](/help/edge/docs/forms/assets/publish-sites.png)
 
-   1. **빠른 게시** 확인 대화 상자가 나타나면 **게시** 를 클릭하여 게시 프로세스를 시작합니다.
+   1. **빠른 게시** 확인 대화 상자가 표시되면 **게시**&#x200B;를 클릭하여 게시 프로세스를 시작합니다.
 
       ![빠른 게시 확인 대화 상자](/help/edge/docs/forms/assets/quick-publish.png)
 
@@ -156,11 +157,11 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 >[!NOTE]
 >
 >
-> 이 단계는 [AEM 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)을(를) 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
+> 이 단계는 [AEM 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
-통합하려면:
-1. **필요한 파일 및 폴더 추가**
-   1. [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)의 다음 폴더 및 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
+통합하는 방법은 다음과 같습니다.
+1. **필수 파일 및 폴더 추가**
+   1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
       * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 폴더
@@ -169,14 +170,14 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 
 1. **구성 요소 정의 및 모델 파일 업데이트**
-   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 [_component-definition.json 파일의 변경 내용으로 업데이트합니다.
+   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-definition.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 변경 사항으로 업데이트합니다.
 
-   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 AEM Forms Boilerplate의 [_component-models.json 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-models.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)의 변경 사항으로 업데이트합니다.
 
 1. **편집기 스크립트에 양식 편집기 추가**
-   1. AEM 프로젝트의 `../scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일의 변경 내용으로 업데이트합니다.](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+   1. AEM Project의 `../scripts/editor-support.js` 파일로 이동하여 [AEM Forms 보일러플레이트의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)의 변경 사항으로 업데이트합니다.
 1. **ESLint 구성 파일 업데이트**
-   1. 양식 블록 규칙 엔진과 관련된 오류를 방지하려면 AEM 프로젝트의 `../.eslintignore` 파일로 이동하여 다음 코드 행을 추가하십시오.
+   1. AEM 프로젝트에서 `../.eslintignore` 파일로 이동하고 다음 코드 라인을 추가하여 폼 블록 규칙 엔진과 관련된 오류를 방지합니다.
 
       ```
           blocks/form/rules/formula/*
@@ -192,14 +193,14 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프로젝트를 편집하고 AEM 프로젝트 페이지에 Edge Delivery Services 양식을 포함하도록 적응형 양식 섹션을 추가할 수 있습니다.
 
 1. AEM 프로젝트 페이지에 적응형 양식 섹션을 추가합니다. 추가 방법은 다음과 같습니다.
-   1. 사이트 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**을 클릭합니다. 편집할 AEM 프로젝트 페이지가 유니버설 편집기에서 열립니다.
+   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**을 클릭합니다. 편집할 수 있도록 AEM 프로젝트 페이지가 범용 편집기에서 열립니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
    1. 콘텐츠 트리를 열고 적응형 양식 섹션을 추가할 섹션으로 이동합니다.
    1. **[!UICONTROL 추가]** 아이콘을 클릭하고 구성 요소 목록에서 **[!UICONTROL 적응형 양식]** 구성 요소를 선택합니다.
 
    ![콘텐츠 트리](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   적응형 양식 섹션이 추가됩니다. 이제 AEM 프로젝트 페이지에 양식 구성 요소를 추가할 수 있습니다.
+   적응형 양식 섹션이 추가되었습니다. 이제 AEM 프로젝트 페이지에 양식 구성 요소를 추가할 수 있습니다.
 
 1. 추가된 적응형 양식 섹션에 양식 구성 요소를 추가합니다. 양식 구성 요소를 추가하는 방법은 다음과 같습니다.
    1. 콘텐츠 트리에서 추가된 적응형 양식 섹션으로 이동합니다.
@@ -217,12 +218,12 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 
       ![속성 열기](/help/edge/docs/forms/assets/component-properties.png)
 
-   1. 양식을 미리 봅니다.
+   1. 양식 미리보기.
 아래 스크린샷에는 WYSIWYG 작성 기능을 사용하여 AEM 프로젝트에서 작성된 양식이 표시됩니다.
 
       ![추가된 양식](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      미리보기에 만족하면 사용자는 페이지 게시를 진행할 수 있습니다.
+      미리보기에 만족하면 사용자는 페이지를 계속 게시할 수 있습니다.
 
       >[!NOTE]
       >
@@ -234,7 +235,7 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 
       ![양식 게시](/help/edge/docs/forms/assets/publish-form.png)
 
-   1. 화면에 **게시** 확인 대화 상자가 나타나면 **게시**&#x200B;를 클릭하여 게시를 시작합니다.
+   1. 화면에 **게시** 확인 대화 상자가 표시되면 **게시**&#x200B;를 클릭하여 게시를 시작합니다.
 
       ![양식 게시1](/help/edge/docs/forms/assets/publish-form1.png)
 
@@ -279,7 +280,7 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 
 변경 작업을 완료한 후 Git 명령을 사용하여 변경 사항을 커밋하고 푸시합니다. 이렇게 하면 다음 URL에서 액세스할 수 있는 미리보기 및 프로덕션 환경이 업데이트됩니다(플레이스홀더를 프로젝트 세부 정보로 바꾸기).
 
-미리 보기: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+미리보기: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
 
 프로덕션: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
