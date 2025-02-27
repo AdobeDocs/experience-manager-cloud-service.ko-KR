@@ -4,20 +4,20 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # 시작하기 - 개발자 튜토리얼
 
-오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms용 Edge Delivery Services(EDS)를 사용하면 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 생성할 수 있습니다.
+오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services for AEM Forms을 사용하면 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다.
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트를 만들 수 있습니다](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
+AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 프로젝트](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)<!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->를 만들 수 있습니다.
 
 이 AEM Forms 튜토리얼에서는 새로운 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다.
 
@@ -59,7 +59,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    >[!NOTE]
    >
    >
-   > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 IP 3.227.118.73을 추가할 수 있습니다.
+   > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 추가하다에 다음 IP를 추가할 수 있습니다. 3.227.118.73
 
    축하합니다! `https://<branch>--<repo>--<owner>.aem.page/`에서 새 웹 사이트가 실행되고 있습니다.
 

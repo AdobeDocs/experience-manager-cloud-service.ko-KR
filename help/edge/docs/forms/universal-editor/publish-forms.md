@@ -4,10 +4,10 @@ description: Edge Delivery Services 양식을 빠르고 원활하게 게시할 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## 사전 요구 사항
 
-* **Edge Delivery Services(EDS) 템플릿**&#x200B;을 사용하여 만든 양식. EDS 기반 양식을 만드는 방법에 대해 [자세히 알아보기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+* **Edge Delivery Services 템플릿**&#x200B;을(를) 사용하여 만든 양식입니다. EDS 기반 양식을 만드는 방법에 대해 [자세히 알아보기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## 양식 게시
 

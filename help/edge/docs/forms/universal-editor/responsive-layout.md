@@ -3,10 +3,11 @@ title: 범용 편집기 이해 - 반응형 모드
 description: 이 문서에서는 작성 중에 모양과 느낌을 시각화하기 위해 유니버설 편집기에서 다양한 에뮬레이터를 사용하여 양식을 미리 보는 방법에 대해 설명합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -66,6 +67,54 @@ ht-degree: 1%
 </table>
 
 다른 장치에서 양식을 미리 볼 때 **화면 회전기** 아이콘을 사용하여 세로 방향과 가로 방향 간을 전환할 수 있습니다. 이는 개발자가 반응형 디자인이 다양한 디바이스에서 화면 회전에 어떻게 적응하는지를 테스트하는 데 도움이 됩니다.
+
+유니버설 편집기는 다양한 양식 레이아웃을 지원합니다. 다른 레이아웃을 살펴보려면 [레이아웃 기능](#layout-capabilities) 섹션을 참조하세요.
+
+## 레이아웃 기능
+
+범용 편집기를 사용하면 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 양식을 만들 수 있습니다. 양식 레이아웃은 항목이나 구성 요소가 양식에 표시되는 방식을 제어합니다.
+
+유니버설 편집기는 폼에 대해 다음 유형의 레이아웃을 지원합니다.
+* [패널 레이아웃](#panel-layout)
+* [마법사 레이아웃](#wizard-layout)
+* [어코디언 레이아웃](#accordion-layout)
+
+### 패널 레이아웃
+
+패널 레이아웃은 해당 컨텐츠를 더 쉽게 탐색하고 찾을 수 있도록 관련 필드를 구성하는 데 유용합니다. 패널 레이아웃은 양식의 개별 섹션 또는 패널 내에 양식 구성 요소를 정렬합니다.
+
+![패널 레이아웃](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+[패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)를 사용하여 양식에 패널 레이아웃을 추가할 수 있습니다. 패널 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 문서를 참조하십시오.
+
+### 마법사 레이아웃
+
+
+마법사 레이아웃은 복잡한 양식을 별도의 단계로 나누어 단순화하는 데 도움이 됩니다. 각 단계는 프로세스의 다른 부분을 나타내며 사용자는 **다음** 및 **뒤로** 단추를 사용하여 단계를 순차적으로 탐색합니다. 마법사 레이아웃을 사용하여 여러 섹션이나 단계가 포함된 양식을 만들 수 있습니다.
+
+![마법사 레이아웃](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+[마법사 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)를 사용하여 양식에 마법사 레이아웃을 추가할 수 있습니다. 마법사 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [마법사 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) 문서를 참조하십시오.
+
+### 어코디언 레이아웃
+
+아코디언 레이아웃은 적응형 양식의 축소 가능한 섹션이나 패널에 콘텐츠를 표시합니다. 섹션을 확장하면 내의 컨텐츠가 표시되고 다른 섹션은 축소된 상태로 유지됩니다. 이 레이아웃은 대량의 정보를 컴팩트한 형식으로 표시하는 데 이상적입니다.
+
+![아코디언 레이아웃](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+[아코디언 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)를 사용하여 양식에 아코디언 레이아웃을 추가할 수 있습니다. 아코디언 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [아코디언 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) 문서를 참조하십시오.
+
+### 올바른 레이아웃을 선택하는 방법
+
+사용자 경험과 양식 기능을 최적화하려면 올바른 레이아웃을 선택하는 것이 중요합니다. 이 표는 사용 가능한 다양한 레이아웃 옵션을 이해하는 데 도움이 되며 특정 요구 사항 및 사용 사례에 따라 가장 적합한 레이아웃을 선택할 수 있도록 안내합니다.
+
+| 기능 | 패널 레이아웃 | 마법사 레이아웃 | 어코디언 레이아웃 |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **목적** | 관련 콘텐츠를 개별 섹션으로 그룹화 | 여러 단계 프로세스 또는 양식을 안내합니다. | 콘텐츠를 축소 가능한 섹션으로 구성 |
+| **구조** | 개별 섹션 | 순차적 단계/페이지 | 축소 가능한 패널/섹션 |
+| **탐색** | 탐색할 패널 헤더를 클릭합니다 | - 앞으로: &quot;다음&quot; 단추<br>- 뒤로: &quot;뒤로&quot; 단추<br>- 선택적 건너뛸 단계 | 섹션을 확장/축소하려면 헤더를 클릭하십시오. |
+| **사용자 환경** | 대량의 컨텐츠를 관리 가능한 방식으로 구성 | 단계별 지침을 통해 과중한 업무 부담 감소 | 확장/축소된 단면이 있는 컴팩트한 보기 |
+| **사용 사례** | 분류된 섹션이 있는 복잡한 양식 | 프로세스 설정, 복잡한 양식 | FAQ, 설정 메뉴, 세부 콘텐츠 섹션 |
 
 ## 추가 참조
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1390'
 ht-degree: 97%
 
 ---
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## 범용 편집기{#universal-editor-see-also}
 
-* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [양식 게시](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [양식 제출](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [양식 모양 사용자 정의](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [양식에 대한 규칙 만들기](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [양식에서 reCAPTCHA 사용](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [양식에 대한 사용자 지정 구성 요소 만들기](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [응답형 모드에서 양식 미리 보기](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [범용 편집기를 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Forms에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Forms 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [디자인 아름다운 Forms: 스타일링 및 테마 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [사용자 정의 양식 구성 요소 작성](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 

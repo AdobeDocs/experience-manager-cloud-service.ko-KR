@@ -4,16 +4,16 @@ description: 이 자습서는 범용 편집기 인터페이스를 시작하고 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 2%
 
 ---
 
 # 범용 편집기(WYSIWYG) 인터페이스 살펴보기
 
-[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 Adobe EDS(Edge Delivery Services) Forms을 위한 간단하고, 시각적이며, 직관적인 What You See Is What You Get(WYSIWYG) 인터페이스를 제공합니다. 효율적인 양식 작성을 위한 드래그 앤 드롭 기능이 있는 최신 인터페이스를 제공합니다.
+[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에서는 Adobe Edge Delivery Services Forms에 대해 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공합니다. 효율적인 양식 작성을 위한 드래그 앤 드롭 기능이 있는 최신 인터페이스를 제공합니다.
 
 ![유니버설 편집기 사용자 인터페이스](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 

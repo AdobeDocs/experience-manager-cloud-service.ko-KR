@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '6193'
+source-wordcount: '6195'
 ht-degree: 95%
 
 ---
@@ -1024,6 +1024,7 @@ ht-degree: 95%
    + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 양식은 어떻게 작동합니까?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
          + [첫 번째 양식 작성: Google Sheets 및 Excel로 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Excel을 사용하여 Forms을 만드는 방법: 단계별 안내서](/help/edge/docs/forms/create-forms.md)
@@ -1043,7 +1044,7 @@ ht-degree: 95%
          + [사용자 정의 양식 구성 요소 빌드: 개발자 안내서](/help/edge/docs/forms/custom-components-forms.md)
          + [양식 성능 모니터링: 실제 사용 모니터링 안내서](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
          + [Edge에 Forms 배포: Edge Delivery Services용 게시 안내서](/help/edge/docs/forms/publishing-forms.md)
-      + WYSIWYG {#universal-editor}
+      + WYSIWYG 작성 {#universal-editor}
          + [Edge Delivery Services용 Forms Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

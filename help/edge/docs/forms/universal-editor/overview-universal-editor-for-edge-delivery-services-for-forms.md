@@ -1,24 +1,24 @@
 ---
-title: Forms용 Edge Delivery Services용 범용 편집기 (EDS Forms Block)
-description: Forms용 Edge Delivery Services용 범용 편집기(EDS Forms Block)를 사용하여 적응형 양식을 만듭니다.
+title: Forms용 Edge Delivery Services 유니버설 편집기
+description: Forms용 Edge Delivery Services 범용 편집기를 사용하여 적응형 Forms을 만듭니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 80%
+source-wordcount: '1077'
+ht-degree: 72%
 
 ---
 
 
-# Forms용 Edge Delivery Services용 범용 편집기 (EDS Forms Block)
+# Forms용 Edge Delivery Services 유니버설 편집기
 
 <span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
-범용 편집기는 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공함으로써 EDS(Adobe Edge Delivery Services)용 양식 만들기에 혁신을 일으켰습니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
+범용 편집기는 간단하고, 시각적이며, 직관적인 What You See Is What You Get(WYSIWYG) 인터페이스를 제공하여 Adobe Edge Delivery Services에 대한 양식 작성에 혁신을 줍니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
 
 범용 편집기를 사용하면 텍스트 필드, 체크박스, 라디오 버튼과 같은 사전 설치된 구성 요소를 활용하여 반응형 및 대화형 양식을 빠르게 디자인할 수 있습니다. 강력한 기능 세트는 동적 규칙, 원활한 데이터 통합, 고급 개인화를 지원하여 모든 양식을 필요에 맞게 조정할 수 있도록 해 줍니다.
 
@@ -26,7 +26,7 @@ ht-degree: 80%
 
 ![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
-## EDS Forms용 범용 편집기의 주요 기능
+## Forms용 Edge Delivery Services 유니버설 편집기의 주요 기능
 
 
 
@@ -49,13 +49,13 @@ ht-degree: 80%
 
 | ![분석 및 추적](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![작업 관리](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**분석 및 추적**](https://www.aem.live/developer/martech-integration) | **작업 관리** | **데이터 바인딩** |
+| [**분석 및 추적**](https://www.aem.live/developer/martech-integration) | **작업 관리**(준비 중) | **데이터 바인딩**(준비 중) |
 | 기본 제공 분석 및 추적 기능을 통해 사용자 행동, 양식 상호 작용 및 제출률에 대한 인사이트를 얻고 데이터 기반 양식 최적화를 실현할 수 있습니다. | Adobe Workfront와 통합하면 팀에서 양식 작성 및 유지 관리 작업을 관리하여 워크플로를 간소화할 수 있습니다. | 데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Forms 포함](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![감사 인사 구성](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **편집기 사용자 지정** | **Forms 포함** | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 개발자는 UI 확장을 통해 편집기의 기능을 확장하여 특정 조직의 요구에 맞는 맞춤형 솔루션을 구축할 수 있습니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Forms 포함** | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| reCAPTCHA를 사용하여 자동화된 봇으로부터 양식을 보호하여 안전하고 신뢰할 수 있는 데이터 수집을 보장합니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
