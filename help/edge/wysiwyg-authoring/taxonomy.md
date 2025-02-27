@@ -4,10 +4,10 @@ description: Edge Delivery Services 사이트에서 AEM과 함께 태그를 사�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 이러한 태그는 사용자와 작성자가 콘텐츠를 구성하는 데 유용할 뿐만 아니라 독자에게도 유용할 수 있습니다. 태그와 태그 분류 체계는 페이지의 구성 요소에서 사용하여 독자가 콘텐츠를 탐색하는 데 도움이 될 수 있습니다.
 
 범용 편집기는 태그의 ID로만 작동합니다. 콘텐츠에 대한 분류 체계 페이지를 만들면 모든 언어로 된 이러한 태그의 설명을 범용 편집기에 노출하여 콘텐츠 렌더링 시 해당 정보를 사용할 수 있도록 합니다.
+
+>[!TIP]
+>
+>분류법으로 작업할 수 있는 범용 편집기에서 사용할 수 있는 AEM 태그 필드에 대한 자세한 내용은 [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) 문서를 참조하십시오.
 
 ## 분류 체계 페이지 만들기 {#creating}
 
