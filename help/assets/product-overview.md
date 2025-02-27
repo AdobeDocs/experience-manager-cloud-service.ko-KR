@@ -2,7 +2,7 @@
 title: Content Hub 탐색
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Content Hub에는 Experience Manager as a Cloud Service(2024.6 릴리스 이상)
 
 1. [DAM 작성자 또는 관리자로 Experience Manager Assets에서 승인된 자산](approve-assets.md).
 
-1. [관리자 자격으로 다른 사용자를 위한 Content Hub 사용자 인터페이스를 구성합니다](configure-content-hub-ui-options.md)..
+1. [관리자 자격으로 다른 사용자를 위한 Content Hub 사용자 인터페이스를 구성합니다](configure-content-hub-ui-options.md).
 
 1. [팀의 더 많은 사용자에게 Content Hub의 액세스 권한을 부여합니다](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
