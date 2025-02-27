@@ -3,13 +3,11 @@ title: Forms용 Edge Delivery Services 유니버설 편집기
 description: Forms용 Edge Delivery Services 범용 편집기를 사용하여 적응형 Forms을 만듭니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 72%
+source-wordcount: '1087'
+ht-degree: 69%
 
 ---
 
@@ -47,14 +45,14 @@ ht-degree: 72%
 | [**스타일링**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **미리 채우기 서비스**(준비 중) | [**A/B 테스트**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS를 사용한 스타일링을 통해 개발자는 양식 요소의 모양을 사용자 정의하고 웹 사이트 미학에 맞는 시각적으로 매력적인 디자인을 만들 수 있습니다. | 미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다. | A/B 테스트를 통해 조직은 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 성과가 좋은 변형을 식별할 수 있습니다. |
 
-| ![분석 및 추적](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![작업 관리](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![분석 및 추적](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![양식 조각](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**분석 및 추적**](https://www.aem.live/developer/martech-integration) | **작업 관리**(준비 중) | **데이터 바인딩**(준비 중) |
-| 기본 제공 분석 및 추적 기능을 통해 사용자 행동, 양식 상호 작용 및 제출률에 대한 인사이트를 얻고 데이터 기반 양식 최적화를 실현할 수 있습니다. | Adobe Workfront와 통합하면 팀에서 양식 작성 및 유지 관리 작업을 관리하여 워크플로를 간소화할 수 있습니다. | 데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다. |
+| [**분석 및 추적**](https://www.aem.live/developer/martech-integration) | **양식 조각**(준비 중) | **데이터 바인딩**(준비 중) |
+| 기본 제공 분석 및 추적 기능을 통해 사용자 행동, 양식 상호 작용 및 제출률에 대한 인사이트를 얻고 데이터 기반 양식 최적화를 실현할 수 있습니다. | 양식 조각을 사용하면 일반적으로 사용되는 섹션을 한 번 만들어 여러 양식에서 재사용할 수 있으므로 일관성을 보장하고 유지 관리 노력을 줄일 수 있습니다. | 데이터 바인딩을 사용하면 양식 필드와 백엔드 데이터 소스 간에 직접 연결할 수 있으므로 실시간 업데이트와 고급 데이터 매핑을 지원합니다. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Forms 포함](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![감사 인사 구성](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Forms 포함** | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Forms 포함**(준비 중) | [**감사 인사 구성**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | reCAPTCHA를 사용하여 자동화된 봇으로부터 양식을 보호하여 안전하고 신뢰할 수 있는 데이터 수집을 보장합니다. | 범용 편집기의 내장된 임베디드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드합니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
 
 
