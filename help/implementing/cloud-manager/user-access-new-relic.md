@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
+source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 40%
+source-wordcount: '1837'
+ht-degree: 38%
 
 ---
 
@@ -175,11 +175,11 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우, 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
 * New Relic에 추가된 사용자의 유형은 **제한됨**&#x200B;입니다. 자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)를 참조하세요.
-* AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
+* AEM as a Cloud Service은 **New Relic One APM** 솔루션만 제공하며 인프라 모니터링, 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
 >[!NOTE]
 >
->30일 이상 New Relic One 하위 계정에서 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
+>New Relic One 하위 계정에서 30일 이상 **사용자 로그인** 활동이 검색되지 않으면 APM 에이전트가 중지되고 데이터가 AEM Cloud Service에서 New Relic으로 전송되지 않습니다.  **하위 계정이 다시 활성화될 때까지 데이터가 다시 전송되지 않습니다.**
 >
 >이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
@@ -187,7 +187,7 @@ AEM as a Cloud Service 프로그램의 New Relic One 제공에 대한 추가 도
 
 ## 자주 묻는 질문 {#faqs}
 
-+++**New Relic One에서 Adobe이 모니터링하는 내용은 무엇입니까?** {#adobe-monitor}
++++**New Relic One에서 Adobe이 모니터링하는 내용은 무엇입니까?**
 
 Adobe는 New Relic One의 Java 플러그인을 통해 AEM as a Cloud Service, 게시 및 미리보기(사용 가능한 경우) 서비스를 모니터링합니다. Adobe는 비프로덕션 및 프로덕션 AEM as a Cloud Service 환경 전반에서 사용자 정의 New Relic One APM 원격 분석 및 모니터링을 지원합니다.
 
@@ -205,22 +205,22 @@ New Relic One 계정은 Adobe에서 관리하는 기본 계정에 연결되어 �
 
 +++
 
-+++**Adobe에서 New Relic One에서 경고 알림을 전송합니까?** {#alerting-new-relic}
++++**Adobe에서 New Relic One에서 경고 알림을 전송합니까?**
 
 Adobe은 가시성 목적으로만 New Relic One 액세스를 제공하며 고객 경고 또는 내부 운영 경고 용도로 사용하지 않습니다. 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 사용하여 전송됩니다.
 +++
 
-+++**New Relic One 클라우드 서비스 데이터에 액세스할 수 있는 사용자** {#access-new-relic-cloud}
++++**New Relic One 클라우드 서비스 데이터에 액세스할 수 있는 사용자**
 
 최대 30명의 팀원에게 전체 읽기 액세스 권한이 부여됩니다. 읽기 액세스에는 New Relic One 에이전트가 수집한 모든 APM 지표가 포함됩니다.
 +++
 
-+++**사용자 지정 SSO 구성이 지원됩니까?** {#custom-sso}
++++**사용자 지정 SSO 구성이 지원됩니까?**
 
 Adobe에서 제공한 New Relic One 계정에 대해서는 사용자 정의 SSO 구성이 지원되지 않습니다.
 +++
 
-+++**이미 온-프레미스 New Relic 구독이 있는 경우 어떻게 해야 합니까?** {#new-relic-subscription}
++++**이미 온-프레미스 New Relic 구독이 있는 경우 어떻게 해야 합니까?**
 
 New Relic One은 New Relic의 새로운 관찰 가능성 플랫폼으로, 여기에서 Adobe 지원과 귀하의 팀이 지표와 이벤트를 모두 한 곳에서 관찰, 모니터링 및 볼 수 있습니다.
 
@@ -234,7 +234,7 @@ Adobe은 New Relic One 및 기타 도구를 사용하여 AEM as a Cloud Service�
 
 +++
 
-+++**내 New Relic One 계정에 대한 APM 에이전트가 중지되었습니다. 무슨 일이 있었습니까?** {#deactivated}
++++**내 New Relic One 계정에 대한 APM 에이전트가 중지되었습니다. 무슨 일이 있었습니까?**
 
 30일 이상 활동이 검색되지 않으면 [APM 에이전트가 중지됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 +++
