@@ -1,34 +1,26 @@
 ---
-title: 범용 편집기 2025.02.17 릴리스 정보
-description: 다음은 범용 편집기 2025.02.17 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.02.25 릴리스 정보
+description: 다음은 범용 편집기 2025.02.25 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
-workflow-type: ht
-source-wordcount: '206'
-ht-degree: 100%
+source-git-commit: ad72a4a724cd69376a936a2beb4fc8fd9d7a730e
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# 범용 편집기 2025.02.17 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.02.25 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기 2025년 2월 17일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 2월 25일 릴리스 정보입니다.
 
 >[!TIP]
 >
 >Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-## 새로운 기능 {#what-is-new}
-
-* **미리보기에 게시** - 범용 편집기를 사용하여 [콘텐츠를 게시(또는 게시 취소)](/help/sites-cloud/authoring/universal-editor/publishing.md)할 때, 게시 환경뿐만 아니라 [미리보기 환경](/help/sites-cloud/authoring/sites-console/previewing-content.md)에도 게시할지를 선택할 수 있습니다.
-   * 이를 통해 공개 게시 전에 콘텐츠를 검토할 수 있습니다.
-* **모델 및 필터를 구성 요소 정의에서 지정 가능** - 이제 [구성 요소 정의](/help/implementing/universal-editor/component-definition.md#template)에서 해당 구성 요소가 사용하는 모델과 필터를 지정할 수 있습니다.
-   * 이 정보는 정의에서 중앙 집중식으로 관리할 수 있으며, 계측에서 따로 지정할 필요가 없습니다.
-   * 이를 통해 구성 요소를 컨테이너 간에 자유롭게 이동할 수 있습니다.
-* **컨테이너의 하위 요소가 자동으로 구성 요소로 간주됨** - 컨테이너에 [`data-aue-resource`](/help/implementing/universal-editor/attributes-types.md#data-properties)이(가) 포함된 항목이 직접 하위 요소로 배치되면 자동으로 구성 요소로 인식되며, 별도로 `data-aue-behavior="component"`을(를) 지정하지 않아도 이동할 수 있습니다.
-
 ## 기타 개선 사항 {#other-improvements}
 
-* **AEM 6.5 자산 선택기** - 이제 [AEM 6.5에서 범용 편집기를 실행할 때](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) 6.5 자산 선택기가 정상적으로 열립니다.
+* **AEM 6.5용 태그 선택기** - [AEM 6.5와 함께 범용 편집기를 실행할 때 태그 선택기가 제대로 열립니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **AEM 6.5용 자산 선택기** - [AEM 6.5와 함께 범용 편집기를 실행할 때 이제 6.5 자산 선택기가 제대로 열립니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
