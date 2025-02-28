@@ -4,7 +4,7 @@ description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 콘텐츠 전송 확인 {#validating-content-transfers}
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 유효성 검사 기능은 추출 중에 포함된 모든 노드의 경로 요약과 수집 중에 포함된 모든 노드의 경로 요약을 비교하여 작동합니다. 추출 다이제스트에 포함된 노드 경로 중 수집 다이제스트에서 누락된 노드가 있는 경우 유효성 검사가 실패한 것으로 간주되며 추가 수동 유효성 검사가 필요할 수 있습니다.
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 * **추출(덮어쓰기)**
 
-  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **수집(지우기)**
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 * **추출**
 
-  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **수집**
 

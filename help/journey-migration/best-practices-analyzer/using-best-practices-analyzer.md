@@ -4,10 +4,10 @@ description: 모범 사례 분석기를 사용하여 업그레이드 준비 상�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 38%
 
 Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* BPA 보고서는 AEM(Adobe Experience Manager) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
+* BPA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
 * BPA는 **관리자** 사용자 또는 **관리자** 그룹의 사용자만 실행할 수 있습니다.
 
@@ -48,7 +48,7 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 >title="모범 사례 분석기 다운로드"
 >abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다."
 
-소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 원본 AEM(Adobe Experience Manager) 인스턴스에서 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 통해 패키지를 설치할 수 있습니다.
+소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 원본 Adobe Experience Manager(AEM) 인스턴스에서 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
 >[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 모범 사례 분석기를 다운로드합니다.
@@ -78,6 +78,20 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 1. 모범 사례 분석기를 실행하려면 **보고서 생성**&#x200B;을 클릭하세요.
 
    ![보고서 생성](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> BPA 버전 2.1.54부터 등대 점수를 얻을 수 있는 새로운 기능이 도입되었습니다.
+1. **보고서 생성**&#x200B;을 클릭하면 Lighthouse 점수에 대한 AEM 공개 사이트 URL을 요청하는 팝업이 나타납니다. 입력한 필드에 유효한 URL을 입력해야 합니다.
+
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. URL이 유효하면 성공 메시지가 표시됩니다.
+
+      ![이미지](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. URL이 올바르지 않으면 오류 메시지가 표시됩니다.
+
+      ![이미지](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. 생성된 BPA 보고서를 [CAM(Cloud Acceleration Manager)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)에 자동으로 업로드하려면 BPA 업로드 키를 제공하십시오. 업로드 키를 가져오려면 [CAM의 모범 사례 분석](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)으로 이동하십시오.
 
@@ -162,7 +176,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
    * **만료 시간**: 보고서 내용 캐시가 만료되는 시기
    * **생성 기간**: 보고서 내용 생성 프로세스의 체류 시간
    * **검색 횟수**: 보고서에 포함된 총 결과 수
-* **시스템 개요**: BPA가 실행된 AEM 시스템에 대한 정보.
+* **시스템 개요**: BPA가 실행된 AEM 시스템에 대한 정보입니다.
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션. 각 섹션에는 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보가 포함됩니다.
 
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
@@ -181,7 +195,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 
 ## 모범 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-AEM 인스턴스에서 **CSV** 옵션을 클릭하면 모범 사례 분석기 보고서의 CSV 형식이 콘텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
+AEM 인스턴스에서 **CSV** 옵션을 클릭하면 모범 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
 
 캐시가 만료된 경우 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
@@ -268,10 +282,10 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ### AEM 6.1에 설치 {#installing-on-aem61}
 
-BPA는 패턴 탐지기를 실행하기 위해 이름이 `repository-reader-service`인 시스템 서비스 사용자 계정을 사용합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정은 다음 단계를 수행하여 BPA를 *설치하기 전에*&#x200B;만들어야 합니다.
+BPA는 패턴 탐지기를 실행하기 위해 이름이 `repository-reader-service`인 시스템 서비스 사용자 계정을 사용합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 다음 단계를 수행하여 BPA를 *설치하기 전에*&#x200B;이 계정을 만들어야 합니다.
 
 1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
 2. [사용자 및 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
 
-3. 소스 AEM 인스턴스에서 패키지 관리자를 통해 BPA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)
+3. 소스 AEM 인스턴스의 패키지 관리자를 통해 BPA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)

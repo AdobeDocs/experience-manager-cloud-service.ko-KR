@@ -4,10 +4,10 @@ description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 16%
+source-wordcount: '1572'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR" text="릴리스 정보"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
 
-소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 원본 AEM(Adobe Experience Manager) 인스턴스에서 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 통해 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 참조하세요.
+소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 원본 Adobe Experience Manager(AEM) 인스턴스에서 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 통해 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 참조하세요.
 
 버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 
@@ -131,26 +131,49 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
    >
    >추출 키가 유효하고 만료 날짜가 아닌지 확인하십시오. 추출 키를 붙여 넣은 후 **마이그레이션 세트 만들기** 대화 상자에서 이 정보를 가져올 수 있습니다. 연결 오류가 발생하면 [Source 환경 연결](#source-environment-connectivity)을 참조하십시오.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. 그런 다음, 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
    1. **버전 포함**: 필요에 따라 선택합니다. 버전이 포함되면 감사 이벤트를 마이그레이션할 수 있도록 `/var/audit` 경로가 자동으로 포함됩니다.
 
-      ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >버전을 마이그레이션 세트의 일부로 포함하고 `wipe=false`을(를) 사용하여 추가 작업을 수행하는 경우 콘텐츠 전송 도구의 현재 제한으로 인해 버전 삭제를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대한 추가를 수행하는 경우 `wipe=true`(으)로 수집을 수행해야 합니다.
 
+      >[!NOTE]
+      >CTT 버전(3.0.24)부터 새로운 기능이 콘텐츠 전송 도구에 포함되어 경로 포함 및 제외 프로세스를 향상했습니다. 기존에는 경로를 일일이 선택해야 해 지루하고 시간이 많이 소요됐다. 이제 사용자는 원하는 대로 UI에서 직접 경로를 포함하거나 CSV 파일을 업로드할 수 있습니다.
 
-   1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택하십시오. 경로 선택기는 입력하거나 선택하여 입력을 허용합니다.
-
+   1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택하십시오. 경로 선택기는 입력하거나 선택하여 입력을 허용합니다. 사용자는 UI에서 또는 CSV 파일을 업로드하여 경로를 포함하는 옵션을 하나만 선택할 수 있습니다.
       >[!IMPORTANT]
       >마이그레이션 세트를 만드는 동안 다음 경로가 제한됩니다.
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc`(CTT에서 일부 `/etc` 경로를 선택할 수 있음)
+
+      ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. 경로 선택만 허용되며 경로가 하나 이상 있어야 합니다. 경로를 선택하지 않으면 서버 오류가 발생합니다.
+
+         ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. **CSV 업로드 옵션**&#x200B;을 사용하는 경우 CSV 파일에 올바른 경로가 포함되어야 합니다.
+
+         ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. 경로 선택기로 다시 전환하려면 사용자가 페이지를 새로 고치고 다시 시작해야 합니다.
+
+      1. 업로드된 CSV에 **잘못된 경로**&#x200B;이(가) 있으면 별도의 대화 상자에 잘못된 경로가 표시됩니다.
+
+         ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. 사용자는 CSV 파일을 수정하고 다시 업로드하거나 UI를 새로 고쳐 경로 선택기를 통해 경로를 선택해야 합니다.
+
+   1. **제외할 경로**: 사용자가 특정 경로를 포함하지 않으려는 경우 새로운 기능을 사용하여 제외할 수 있습니다. 예를 들어 포함 섹션의 경로가 /content/dam이면 사용자는 이제 /content/dam/catalogs와 같은 경로를 제외할 수 있습니다.
+
+      ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. **마이그레이션 세트 만들기** 세부 정보 화면에서 모든 필드를 채운 후 **저장**&#x200B;을 클릭합니다.
 
@@ -184,7 +207,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
 
 1. **크기 확인** 대화 상자가 열립니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. 프로세스를 시작하려면 **크기 확인**&#x200B;을 클릭하세요. 마이그레이션 세트 목록 보기로 돌아가면 **크기 확인**&#x200B;이 실행 중임을 나타내는 메시지가 표시됩니다.
 
@@ -192,7 +215,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
 
 1. **크기 확인** 프로세스가 완료되면 상태가 **완료됨**(으)로 변경됩니다. 동일한 마이그레이션 세트를 선택하고 **크기 확인**&#x200B;을 클릭하여 결과를 봅니다. 다음은 경고가 없는 **크기 확인** 결과의 예입니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. **크기 확인** 결과에 디스크 공간이 부족하거나 마이그레이션 세트가 제품 제한을 초과하는 경우 또는 둘 다 **WARNING** 상태가 표시됩니다.
 

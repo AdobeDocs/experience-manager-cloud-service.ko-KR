@@ -1,13 +1,13 @@
 ---
 title: 소스에서 콘텐츠 추출
-description: 소스 AEM(Adobe Experience Manager) 인스턴스에서 콘텐츠를 추출하여 나중에 Cloud Service AEM 인스턴스로 전송하는 방법을 알아봅니다.
+description: 소스 Adobe Experience Manager(AEM) 인스턴스에서 콘텐츠를 추출하여 나중에 Cloud Service AEM 인스턴스로 전송하는 방법을 알아봅니다.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 19%
+source-wordcount: '789'
+ht-degree: 17%
 
 ---
 
@@ -37,11 +37,11 @@ ht-degree: 19%
    >[!IMPORTANT]
    >
    >추출 키가 유효하고 만료 날짜가 아닌지 확인하십시오. 만료 날짜가 가까워지면 마이그레이션 세트를 선택하고 속성을 클릭하여 추출 키를 갱신할 수 있습니다. **갱신**&#x200B;을 클릭합니다. 이렇게 하면 **추출 키 복사**&#x200B;를 클릭할 수 있는 Cloud Acceleration Manager으로 이동합니다. **추출 키 복사**를 클릭할 때마다 생성 시점부터 14일 동안 유효한 새 추출 키가 생성됩니다.
-   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. 이렇게 하면 추출 대화 상자가 표시됩니다. 추출 단계를 시작하려면 **추출**&#x200B;을 클릭하세요.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >추출 단계 중에 스테이징 컨테이너를 선택적으로 덮어쓸 수 있습니다. **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하지 않도록 설정하면 콘텐츠 경로 또는 포함 버전 설정이 변경되지 않은 후속 마이그레이션에 대한 추출 속도를 높일 수 있습니다. 그러나 콘텐츠 경로 또는 포함 버전 설정이 변경된 경우 **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하도록 설정해야 합니다.
@@ -52,7 +52,7 @@ ht-degree: 19%
 
    진행 중인 추출을 자세히 보려면 **진행률 보기**&#x200B;를 클릭할 수 있습니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    콘텐츠 전송 페이지를 방문하여 Cloud Acceleration Manager에서 추출 단계 진행 상황을 모니터링하고 **...** > **세부 정보 보기**&#x200B;를 클릭하여 자세히 볼 수도 있습니다.
 
@@ -68,8 +68,14 @@ ht-degree: 19%
 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다.
 
 >[!NOTE]
->초기 컨텐츠 전송 후 Cloud Service으로 시작하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 추출에 사전 복사 단계를 사용한 경우 후속 추가 추출에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
+>초기 컨텐츠 전송 후 Cloud Service에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 추출에 사전 복사 단계를 사용한 경우 후속 추가 추출에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
 >또한, 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 수행한 시점부터 추가 추출을 실행할 때까지 변경되지 않는 것이 필수적입니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
+
+>[!NOTE]
+>컨텐츠 경로가 스테이징 컨테이너로 마이그레이션되면 해당 경로 또는 경로 내의 하위 경로를 후속 추가 마이그레이션에서 제거하거나 제외할 수 없습니다.
+>예: 초기 마이그레이션: content/dam/weRetail,
+>다음 추가 제외 시도: content/dam/weRetail/ab.
+>이 시나리오에서는 데이터가 이미 스테이징 컨테이너로 마이그레이션되었기 때문에 content/dam/weRetail/ab를 제외할 수 없습니다.
 
 추출 프로세스가 완료되면 추가 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다.
 
@@ -83,7 +89,7 @@ ht-degree: 19%
 
    >[!IMPORTANT]
    >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.
-   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## 다음 단계 {#whats-next}

@@ -4,7 +4,7 @@ description: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 �
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -33,7 +33,7 @@ ht-degree: 36%
 
 1. 마이그레이션 세트를 선택하고 작업 표시줄에서 **로그 보기**&#x200B;를 클릭합니다. 그러면 로그 대화 상자가 표시됩니다. 새 탭에서 로그를 보려면 **추출 로그**&#x200B;를 클릭하십시오.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    또는 **FINISHED** 상태를 클릭하여 새 탭에서 로그를 봅니다.
 
 1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`를 추적할 수 있습니다.
