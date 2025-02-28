@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 35%
+source-wordcount: '1410'
+ht-degree: 34%
 
 ---
 
@@ -177,6 +177,14 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >[!NOTE]
 >
 >원본 컨테이너와 대상 컨테이너 사이에 다른 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)가 설정된 경우 컨테이너 간에 구성 요소를 이동할 수 없습니다.
+
+### 변형 생성과 함께 GenAI를 사용하여 변형 생성 {#generate-variations-ai}
+
+생성 변형 을 사용하여 생성 AI를 활용하여 콘텐츠 생성을 가속화합니다.
+
+범용 편집기를 열어 변형 생성에 사용할 진입점을 찾습니다.
+
+자세한 내용은 [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)을 참조하세요.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
