@@ -4,9 +4,9 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 1. 선택한 프로그램에 [개인 GitHub 저장소를 추가](#add-repo)합니다.
 1. 그런 다음 [개인 GitHub 리포지토리의 소유권을 확인](#validate-ownership)합니다.
 
+>[!NOTE]
+>Cloud Manager은 GitHub Cloud(github.com)에서만 개인 저장소를 지원합니다. <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### 프로그램에 개인 GitHub 저장소 추가 {#add-repo}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
@@ -68,7 +71,6 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 >[!TIP]
 >
 >Cloud Manager의 저장소 관리에 대한 자세한 내용은 [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
-
 
 
 ### 개인 GitHub 저장소의 소유권 확인 {#validate-ownership}
