@@ -4,10 +4,10 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -49,8 +49,8 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | 필드 | 설명 |
    | --- | --- |
    | **저장소 이름** | 필수. 새로운 저장소의 표현적인 이름. |
-   | **저장소 URL** | 필수. 저장소의 URL.<br><br> GitHub에 호스팅된 저장소를 사용하는 경우 경로는 `.git`로 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨)<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
-   | S **저장소 유형 선택** | 필수. 다음 중 사용하는 저장소 유형을 선택합니다. **GitHub**, **GitLab** 또는 **BitBucket**. 위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
+   | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨)<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
+   | **저장소 유형 선택** | 필수. 다음 중 사용하는 저장소 유형을 선택합니다. **GitHub**, **GitLab** 또는 **BitBucket**. 위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
    | **설명** | 선택 사항. 저장소에 대한 자세한 설명. |
 
 1. **저장**&#x200B;을 선택하여 저장소를 추가합니다.
@@ -64,7 +64,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | --- | --- |
    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
    | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `Read access to metadata`.<br>  • `Read and write access to code and pull requests`.<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
-   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
+   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
    |  | **저장소 유형: Bitbucket**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `Read and write access to code and pull requests`. |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 ## 제한 사항
 
-외부 저장소는 구성 파이프라인에 연결할 수 없습니다.
+* 외부 저장소는 구성 파이프라인에 연결할 수 없습니다.
+* 외부 저장소(GitHub에서 호스팅되지 않음) 및 &quot;Git 변경 시&quot; 트리거가 있는 파이프라인은 자동으로 시작되지 않습니다. 수동으로 시작할 수만 있습니다.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
