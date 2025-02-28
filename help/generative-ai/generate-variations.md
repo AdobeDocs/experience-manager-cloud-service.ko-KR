@@ -4,10 +4,10 @@ description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >모든 경우에 베리에이션 생성을 사용하려면 [액세스 전제 조건](#access-prerequisites)이 충족되었는지 확인해야 합니다.
+
+>[!NOTE]
+>
+>[AEM 편집기에 통합된 변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)에 액세스할 수도 있습니다.
 
 그런 다음, 아래와 같은 작업을 수행할 수 있습니다.
 

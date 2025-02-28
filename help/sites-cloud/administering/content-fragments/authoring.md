@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 72%
+source-wordcount: '2657'
+ht-degree: 77%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 72%
 
 * 이 조각에 맞게 만들어진 **[변형](#variations)** 목록:
    * **기본**&#x200B;은 콘텐츠 조각을 처음 만들 때 존재하는 변형으로 나중에 다른 조각을 추가할 수 있습니다.
-   * 변형 생성(#generate-variations)을 사용하여 Adobe이 특정 사용 사례에 대해 만든 프롬프트 기반 템플릿을 사용할 수 있습니다.
+   * 변형 생성(#generate-variations)을 사용하여 Adobe이 특정 사용 사례에서 만든 프롬프트 기반 템플릿을 사용할 수 있습니다.
    * [변형을 만들](#create-variation) 수도 있습니다.
 * 조각 및 변형 내 **필드**:
    * 아이콘은 [데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)을 표시합니다.
@@ -132,7 +132,7 @@ ht-degree: 72%
 
 * **기본** 콘텐츠의 [변형 만들기](#create-variation)
 
-* [변형 AI 생성을 사용](#generate-variations-ai)하여 생성 AI를 사용하여 Adobe이 특정 사용 사례에 맞게 만든 프롬프트 기반 템플릿을 사용합니다.
+* [변형 AI 생성을 사용](#generate-variations-ai)하여 생성 AI를 사용하여 Adobe에서 특정 사용 사례에 맞게 만든 프롬프트 기반 템플릿을 사용합니다.
 
 * 콘텐츠 편집에 필요한 변형 선택
 
@@ -174,40 +174,9 @@ ht-degree: 72%
 
 생성 변형 을 사용하여 생성 AI를 활용하여 콘텐츠 생성을 가속화합니다.
 
-콘텐츠 조각 편집기에서 생성 변형을 사용하려면 다음 작업을 수행하십시오.
+콘텐츠 조각 편집기를 열어 변형을 생성할 진입점을 찾습니다.
 
-1. 콘텐츠 조각 편집기를 엽니다. 헤더에서 변형 을 생성할 진입점을 찾습니다.
-
-   ![콘텐츠 조각 편집기에서 변형 생성](assets/cfm-generate-variations1.png)
-
-1. 변형 생성이 새 탭에서 열립니다. 왼쪽 레일에서 컨텐츠를 생성 중인 AEM Cloud 인스턴스와 컨텐츠 조각을 볼 수 있습니다. 사용할 프롬프트를 선택하거나 새 프롬프트를 만듭니다.
-
-   >[!NOTE]
-   >
-   >사용 가능한 Adobe 프롬프트 템플릿은 현재 제한되어 있지만 향후 릴리스에 더 추가될 예정입니다.
-
-   ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations2.png)
-
-1. 프롬프트를 채워 콘텐츠를 생성합니다. 조각의 콘텐츠 모델은 GenAI를 사용하여 콘텐츠를 생성하는 데 자동으로 사용됩니다.
-
-   >[!NOTE]
-   >
-   >현재 텍스트 필드만 지원합니다.
-
-   ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations3.png)
-
-1. 원하는 변형 생성을 선택하고 &quot;변형 내보내기&quot;를 선택합니다. 콘텐츠 조각 변형의 이름을 확인하고 다음 중 하나를 선택합니다.
-
-   * **내보내기**: 변형을 콘텐츠 조각으로 내보내고 변형 생성 응용 프로그램에서 그대로 유지됩니다.
-   * **내보내기 및 열기**: 변형을 콘텐츠 조각으로 내보내고 GenAI의 새 변형과 함께 콘텐츠 조각을 표시하는 새 탭을 엽니다.
-
-     ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations4.png)
-
-1. 생성된 변형은 기본 콘텐츠 조각 편집기에 표시됩니다.
-
-   ![콘텐츠 조각에서 변형 생성 보기](assets/cfm-generate-variations5.png)
-
-자세한 내용은 [변형 생성](/help/generative-ai/generate-variations.md)을 참조하세요.
+자세한 내용은 [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)을 참조하세요.
 
 ### 변형 삭제 {#delete-variation}
 

@@ -4,10 +4,10 @@ description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 100%
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-현재 릴리스 버전은 2.2.0입니다.
+현재 릴리스는 버전 3.0.0입니다.
+
+### 3.0.0 {#release-notes-3-0-0}
+
+다음 편집기에서 [변형 생성에 액세스](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)할 수 있습니다([일단 구성되면](#access-generate-variations)).
+
+* [AEM Edge Delivery Services의 Sidekick 내에서, 문서 기반 작성용](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [범용 편집기 내](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [콘텐츠 조각 편집기 내](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>이전 버전의 [변형 생성에 계속 액세스할 수 있습니다](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0 {#release-notes-2-2-0}
 
