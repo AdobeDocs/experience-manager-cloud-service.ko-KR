@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 90%
+source-wordcount: '2296'
+ht-degree: 89%
 
 ---
 
@@ -119,6 +119,8 @@ ht-degree: 90%
 * **템플릿 설정**
 
    * **허용된 템플릿** - 이 하위 분기 내에서 [사용할 수 있는 템플릿 목록을 정의](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)합니다.
+   * **페이지를 템플릿으로 사용** - [현재 페이지를 기반으로 새 템플릿을 만듭니다.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Edge Delivery Services을 활용하는 범용 편집기와 함께 사용하기 위해 만들어진 페이지에만 적용됩니다.
 
 * **인증 요구 사항**
 
