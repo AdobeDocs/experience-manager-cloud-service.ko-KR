@@ -4,7 +4,7 @@ description: 모범 사례 분석기를 사용하여 업그레이드 준비 상�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -81,6 +81,8 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 >[!NOTE]
 > BPA 버전 2.1.54부터 등대 점수를 얻을 수 있는 새로운 기능이 도입되었습니다.
+
+
 1. **보고서 생성**&#x200B;을 클릭하면 Lighthouse 점수에 대한 AEM 공개 사이트 URL을 요청하는 팝업이 나타납니다. 입력한 필드에 유효한 URL을 입력해야 합니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
