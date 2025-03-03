@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1187cf7ada92d8afbe27181c372cdbf6952eb58a
+source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
 workflow-type: tm+mt
-source-wordcount: '6205'
+source-wordcount: '6208'
 ht-degree: 95%
 
 ---
@@ -649,6 +649,7 @@ ht-degree: 95%
       + [자산 업로드 및 추가](/help/assets/add-delete-assets-view.md)
       + [자산 일괄 가져오기](/help/assets/bulk-import-assets-view.md)
       + [자산 검색 및 탐색](/help/assets/search-assets-view.md)
+      + [사용자 정의 검색 필터](/help/assets/custom-search-filters.md)
       + [자산 관리 작업](/help/assets/manage-organize-assets-view.md)
       + [이미지 편집](/help/assets/edit-images-assets-view.md)
       + [비디오 편집](/help/assets/edit-videos-assets-view.md)
