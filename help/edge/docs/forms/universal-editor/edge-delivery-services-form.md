@@ -7,51 +7,51 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms
+# Edge Delivery Services 양식
 
-Adobe Edge Delivery Services Forms은 양식의 작성, 실행 및 처리 방식을 변환합니다. 조직은 Edge Delivery Services을 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 제작할 수 있으므로 빠른 개발 환경으로 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. Edge Delivery Services Forms을 사용하면 전환을 늘리고 비용을 절감하며 컨텐츠 전달을 가속화할 수 있습니다.
+Adobe Edge Delivery Services 양식은 양식 작성, 실행 및 처리 방식을 변화시킵니다. 조직은 Edge Delivery Services를 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 만들 수 있으며, 빠른 개발 환경을 통해 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. Edge Delivery Services 양식을 사용하면 전환율을 높이고 비용을 절감하며 콘텐츠 게재를 가속화할 수 있습니다.
 
-## Edge Delivery Services Forms의 이점
+## Edge Delivery Services 양식의 이점
 
-* **더 빠른 양식 만들기**: 완벽한 Lighthouse 점수로 고성능 양식을 작성하고 RUM(Real User Monitoring)을 사용하여 실제 성능을 지속적으로 모니터링합니다.
+* **더 빠른 양식 생성**: 완벽한 Lighthouse 점수로 고성능 양식을 구축하고 실제 사용자 모니터링(RUM)을 사용하여 실제 성과를 지속적으로 모니터링합니다.
 
-* **작성 프로세스 간소화**: 여러 소스의 콘텐츠를 쉽게 관리하여 유연성을 높일 수 있습니다. 기본적으로 WYSIWYG과 문서 기반 작성을 모두 사용하여 양식을 만들 수 있으므로 다양한 컨텐츠 형식을 원활하게 통합할 수 있습니다.
+* **간소화된 작성 프로세스**: 다양한 출처의 콘텐츠를 쉽게 관리하여 유연성을 높입니다. 기본적으로 WYSIWYG와 문서 기반 작성을 모두 사용하여 양식을 만들 수 있어 다양한 콘텐츠 형식을 원활하게 통합할 수 있습니다.
 
-* **기술 전문가가 아닌 사용자도 쉽게 사용할 수 있습니다**: Edge Delivery Services을 사용하면 프로그래머가 아닌 사용자가 광범위한 프로그래밍 지식 없이도 양식을 쉽게 관리하고 게시할 수 있습니다.
+* **비기술 사용자를 위한 사용 편의성**: Edge Delivery Services를 사용하면 프로그래머가 아닌 사람도 광범위한 프로그래밍 지식이 없이 쉽게 양식을 관리하고 게시할 수 있습니다.
 
-* **향상된 사용자 환경**: 빠른 로드 시간과 원활한 상호 작용을 보장하여 사용자에게 대기 시간을 최소화하고 직관적인 양식 작성 환경을 제공합니다.
+* **향상된 사용자 경험**: 빠른 로드 시간과 원활한 상호 작용을 보장하여 사용자에게 최소한의 대기 시간과 직관적인 양식 작성 환경을 제공합니다.
 
-* **서버를 사용하지 않는 실행**: Edge Delivery Services에서 양식 논리의 서버를 사용하지 않는 실행을 사용합니다. 여기에는 다음이 포함됩니다.
+* **서버리스 실행**: Edge Delivery Services를 사용하면 서버리스로 양식 논리를 실행할 수 있습니다. 여기에는 다음이 포함됩니다.
 
-   * **클라이언트측 유효성 검사**: 양식 필드 유효성 검사가 클라이언트측에서 수행되므로 왕복 지연이 줄어듭니다.
+   * **클라이언트측 유효성 검사**: 양식 필드 유효성 검사는 클라이언트측에서 수행되므로 왕복 지연이 줄어듭니다.
 
-   * **미리 채우기 및 Personalization**: 원활한 사용자 환경을 위해 양식 데이터 미리 채우기가 클라이언트측에서 처리됩니다.
+   * **미리 채우기 및 개인화**: 양식 데이터 미리 채우기는 원활한 사용자 경험을 위해 클라이언트측에서 처리됩니다.
 
-   * **제출 처리**: 양식 제출이 확인되고 중앙 서버 없이 안전하게 전달됩니다.
+   * **제출 처리**: 양식 제출은 중앙 서버 없이 검증되고 안전하게 전달됩니다.
 
-## Edge Delivery Services Forms 작동 방식
+## Edge Delivery Services 양식은 어떻게 작동합니까?
 
-사용자는 Google 드라이브, SharePoint 또는 범용 편집기(WYSIWYG 작성)와 같은 문서 기반 작성 도구를 사용하여 Edge Delivery Services Forms을 작성하는 동시에 GitHub 저장소에서 사용할 수 있는 기본 스타일, 동작 및 구성 요소를 활용할 수 있습니다. 작성되면 Edge Delivery Services Forms은 Forms 제출 서비스를 사용하여 모든 플랫폼으로 데이터를 전송할 수 있습니다.
+사용자는 GitHub 저장소에 있는 기본 스타일, 동작 및 구성 요소를 활용하면서 Google Drive, SharePoint 또는 범용 편집기(WYSIWYG 작성)와 같은 문서 기반 작성 도구를 사용하여 Edge Delivery Services 양식을 작성할 수 있습니다. Edge Delivery Services 양식은 작성되면 양식 제출 서비스를 사용하여 모든 플랫폼으로 데이터를 전송할 수 있습니다.
 
-![Edge Delivery Services Forms 작동 방식](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Edge Delivery Services 양식 작동 방식](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Edge Delivery Services Forms의 주요 구성 요소
+### Edge Delivery Services 양식의 주요 구성 요소
 
-Edge Delivery Services Forms의 주요 구성 요소는 다음과 같습니다.
+Edge Delivery Servies 양식의 주요 구성 요소는 다음과 같습니다.
 
-* **GitHub 저장소**: GitHub 저장소는 Edge Delivery Services Forms을 만드는 데 중요한 역할을 합니다. 양식은 저장소의 기본 스타일 및 기능을 활용하며 사용자가 Edge Delivery Services Forms에 사용자 지정 및 사용자 지정 구성 요소를 추가할 수 있도록 합니다.
+* **GitHub 저장소**: GitHub 저장소는 Edge Delivery Services 양식을 만드는 보일러플레이트 역할을 합니다. 이러한 양식은 저장소의 기본 스타일과 기능을 활용하여 사용자가 Edge Delivery Services 양식에 사용자 정의 및 사용자 정의 구성 요소를 추가할 수 있도록 합니다.
 
-* **양식 작성**: Edge Delivery Services Forms에서는 WYSIWYG 및 문서 기반 작성의 두 가지 작성 유형을 지원합니다. 문서 기반 작성을 통해 사용자는 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다. WYSIWYG 작성을 통해 사용자는 유니버설 편집기를 사용하여 시각적으로 양식을 디자인할 수 있으므로 기술 전문가가 아닌 사용자도 양식을 쉽게 만들고 관리할 수 있습니다. 유니버설 편집기는 직관적인 양식 작성 환경을 제공하며 다양한 양식 기능에 대한 액세스를 제공합니다.
+* **양식 작성**: Edge Delivery Services 양식은 WYSIWYG 및 문서 기반 작성이라는 두 가지 작성 유형을 지원합니다. 문서 기반 작성을 통해 사용자는 Google Docs 및 Microsoft Office와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다. WYSIWYG 작성을 통해 사용자는 범용 편집기를 사용하여 시각적으로 양식을 디자인할 수 있으므로 기술적인 지식이 없는 사용자도 쉽게 양식을 만들고 관리할 수 있습니다. 범용 편집기는 직관적인 양식 생성 경험을 제공하고 다양한 양식 기능에 대한 액세스를 제공합니다.
 
-* **Forms 제출 서비스**: Forms 제출 서비스를 사용하면 OneDrive, SharePoint 또는 Google Sheets와 같은 모든 플랫폼에서 양식 제출의 데이터를 저장할 수 있으므로 선호하는 시스템 내에서 양식 데이터에 쉽게 액세스하고 관리할 수 있습니다.
+* **양식 제출 서비스**: 양식 제출 서비스를 이용하면 OneDrive, SharePoint 또는 Google 시트 등 모든 플랫폼에서 양식 제출 데이터를 저장할 수 있으므로 원하는 시스템에서 양식 데이터에 쉽게 액세스하고 관리할 수 있습니다.
 
 ## 양식 작성
 
@@ -63,7 +63,7 @@ Adobe Experience Manager는 양식을 작성할 수 있는 여러 편집기를 �
 
 범용 편집기는 WYSIWYG(What-You-See-Is-What-You Get) 기능을 제공하는 다목적 비주얼 편집기로서 직관적인 양식 생성 경험을 지원합니다. 새 양식을 생성할 때 사용자 친화적인 최신 디자인과 편리한 드래그 앤 드롭 인터페이스를 제공하는 범용 편집기를 사용하는 것이 좋습니다.
 
-범용 편집기를 사용하여 양식을 생성하려면 AEM 환경에 제공되는 Edge Delivery Services 템플릿을 사용합니다. 이러한 양식은 Edge Delivery Services GitHub 저장소 구성의 디자인을 상속합니다. [AEM 환경과 Edge Delivery Services GitHub 저장소 간의 연결](/help/edge/docs/forms/publishing-forms.md)이 설정되어 Edge Delivery Services에서 이러한 양식을 게시할 수 있습니다.
+범용 편집기를 사용하여 양식을 생성하려면 AEM 환경에 제공되는 Edge Delivery Services 템플릿을 사용합니다. 이러한 양식은 Edge Delivery Services GitHub 저장소 구성의 디자인을 상속합니다. [AEM 환경과 Edge Delivery Services GitHub 저장소 간의 연결](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)이 설정되어 Edge Delivery Services에서 이러한 양식을 게시할 수 있습니다.
 
 범용 편집기를 사용하여 작성하는 자세한 단계는 [범용 편집기를 사용하여 콘텐츠 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring) 문서를 참조하십시오.
 

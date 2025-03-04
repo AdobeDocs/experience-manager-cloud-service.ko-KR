@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 양식 구성 요소 빌드: 개발자 안내서](/help/edge/docs/forms/custom-components-forms.md)
          + [양식 성능 모니터링: 실제 사용 모니터링 안내서](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Edge에 Forms 배포: Edge Delivery Services용 게시 안내서](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG 작성 {#universal-editor}
          + [Edge Delivery Services용 Forms Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [모바일 친화적인 Forms 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [아름다운 Forms 디자인: 범용 편집기를 위한 스타일 및 테마 지정 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

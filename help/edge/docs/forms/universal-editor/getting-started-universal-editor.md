@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '1846'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 97%
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services 양식은 WYSIWYG(What-You-See-Is-What-You Get) 기능을 제공하는 범용 편집기를 사용하여 작성됩니다. 범용 편집기는 효율적인 양식 작성을 위한 현대적이고 직관적인 인터페이스를 제공합니다.
 
 AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge Delivery Services 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
+
+![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png)
 
 이 튜토리얼에서는 범용 편집기의 WYSIWYG 작성 기능을 사용하여 새 Adobe Experience Manager 사이트 프로젝트나 기존 Adobe Experience Manager 사이트 프로젝트에서 직접 양식을 만들고, 미리 보고, 게시하는 방법을 안내합니다.
 
@@ -252,6 +254,10 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
    ![색인 페이지](/help/edge/docs/forms/assets/publish-index-page.png)
 
 적응형 양식 블록의 `.css` 및 `.js` 파일을 편집하고 [로컬 AEM 개발 환경을 설정](#set-up-local-aem-development-environment)하면 브라우저에서 변경 사항을 즉시 보고 Edge Delivery Services의 스타일을 지정할 수 있습니다.
+
+>[!NOTE]
+>
+> 또한 [유니버설 편집기에서 독립 실행형 양식을 작성하여 Edge Delivery Services에 게시할 수 있습니다](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## 로컬 AEM 개발 환경 설정
 
