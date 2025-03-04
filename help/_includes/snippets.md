@@ -1,5 +1,5 @@
 ---
-source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
+source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 97%
@@ -248,7 +248,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->SPA 편집기는 새로운 프로젝트에서는 [더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated). 기존 프로젝트에 대해서는 Adobe에서 지원하지만 새로운 프로젝트에는 사용하면 안 됩니다. AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
+>SPA 편집기는 새로운 프로젝트에서는 [더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor). 기존 프로젝트에 대해서는 Adobe에서 지원하지만 새로운 프로젝트에는 사용하면 안 됩니다. AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
 >
 >* Headless 콘텐츠를 시각적으로 편집하기 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
 >* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)

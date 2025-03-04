@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: f899398182f9d0991123828ca217379653a4e397
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 59%
+source-wordcount: '1513'
+ht-degree: 87%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2025.1.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 59%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.2.0) 일자는 2025년 3월 4일 수요일입니다. 다음 기능 릴리스(2025.3.0)는 2025년 3월 27일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.1.0) 일자는 2025년 1월 30일입니다. 다음 기능 릴리스(2025.2.0)는 2025년 3월 4일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -38,7 +36,7 @@ ht-degree: 59%
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -46,60 +44,72 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+**콘텐츠 조각 편집기 댓글 기능이 이제 일반적으로 사용 가능합니다.**
 
-### AEM Sites의 새로운 기능 {#new-features-sites}
+AEM 콘텐츠 조각 편집기의 새롭고 현대화된 댓글 달기 서비스를 사용하면 AEM 콘텐츠 조각을 작성할 때 동료와 간편하게 공동 작업을 수행할 수 있습니다.
+[자세히 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment)
 
-** 조각 자동 태그 지정 **
+**콘텐츠 조각 편집기 및 관리자 사용자 인터페이스, 업데이트된 AEM as a Cloud Service 버전 지원**
 
-이제 콘텐츠 조각을 만들 때 콘텐츠 모델에 지정된 태그를 자동으로 상속할 수 있습니다. 이를 통해 콘텐츠 조각에 저장된 콘텐츠를 자동으로 강력하게 분류할 수 있습니다.
+새로운 콘텐츠 조각 관리자 및 편집기 사용자 인터페이스에 대해 지원되는 최소 AEM as a Cloud Service 버전은 이제 2023.8.13099입니다. 새 사용자 인터페이스의 일반 가용성 릴리스 이전의 버전은 더 이상 지원되지 않습니다.
 
-** 조각 UUID 지원 **
+### 얼리 어답터 프로그램 {#sites-early-adopter}
 
-이제 콘텐츠 조각 UUID 지원이 GA됩니다. 새로운 기능은 경로가 자동으로 조정되는 이동, 이름 변경, 롤아웃과 같은 AEM 내 작업의 경로 기반 비헤이비어를 변경하지는 않지만, 특히 ByPath 쿼리로 개별 조각을 직접 타겟팅하는 GraphQL 쿼리를 사용하는 경우 콘텐츠 조각의 외부 사용을 더 쉽고 안정적으로 만들 수 있습니다. 조각 경로가 변경되면 이러한 쿼리가 중단될 수 있습니다. 새 ById 쿼리 유형을 사용할 때 이제 경로가 허용하는 경우 조각의 UUID가 변경되지 않으므로 쿼리가 안정적으로 유지됩니다.
+**향상된 콘텐츠 조각**
 
-** 조각 편집기 및 GraphQL 애플리케이션에서 OpenAPI를 지원하는 Dynamic Media **
+[고유 ID 기반 참조를 참조하는 콘텐츠 조각](/help/headless/graphql-api/uuid-reference-upgrade.md)이 개선되었습니다. 이를 통해 조각이 다른 위치로 이동한 경우에도 개별 콘텐츠 조각에 대한 GraphQL 쿼리가 안정적으로 유지될 수 있습니다. 이제 “ByID” 쿼리를 통해 가능해진 것입니다. 경로는 변경되어 잠재적으로 “ByPath” 쿼리를 중단시킬 수 있지만 UUID는 안정적입니다. 새 ID는 모든 쿼리나 기타 해당되는 API 요청에서 속성으로 반환될 수도 있습니다. 현재 제한 사항(2025.1): 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다. 이러한 제한은 다음 AEM as a Cloud Service 릴리스에서 제거될 예정입니다.
 
-컨텐츠 조각이 아닌 다른 AEM as a Cloud Service 프로그램에 저장되고 OpenAPI 기능이 있는 새 Dynamic Media로 활성화된 Assets을 이제 컨텐츠 조각에서 사용할 수 있습니다. 이제 새 콘텐츠 조각 편집기의 이미지 선택기에서 조각에서 참조할 이미지 에셋의 소스로 &quot;원격&quot; 저장소를 선택할 수 있습니다. 그리고 AEM GraphQL을 사용하여 이러한 컨텐츠 조각을 전달할 때 이제 JSON 응답에 원격 자산에 대한 필수 속성(assetId, repositoryId)이 포함되므로 클라이언트 애플리케이션은 이미지를 가져오기 위해 OpenAPI URL을 사용하여 각 Dynamic Media를 만들 수 있습니다.
+**콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
-** 번역 HTTP API **
+[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
 
-한동안 얼리어답터 모드였던 AEM 번역 HTTP REST API는 이제 GA입니다. 설명서는 [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)에서 찾을 수 있습니다. API를 사용하면 AEM의 콘텐츠에 대한 번역 관리 프로세스의 필수 단계를 자동화할 수 있습니다.
+### 더 이상 사용되지 않는 기능 {#sites-deprecated}
 
+#### SPA 편집기 {#spa-editor}
+
+[SPA 편집기](/help/implementing/developing/hybrid/introduction.md)는 릴리스 2025.1.0부터 새 프로젝트에 더 이상 사용되지 않습니다. SPA 편집기는 기존 프로젝트에서는 계속 지원되지만 새 프로젝트에는 사용해서는 안 됩니다.
+
+AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
+
+* 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
+* 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)
+
+#### PWA 기능 {#pwa-features}
+
+[AEM Sites용 점진적 웹 앱(PWA) 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md)이 이제 릴리스 2025.1.0부터 새 프로젝트에서 더 이상 사용되지 않습니다. 이 기능은 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### AEM Assets의 새로운 기능 {#new-features-assets}
-
-**Dynamic Media 새 패키징 구조**
-
-이제 시장의 기대와 지원 추적에 더 잘 부합할 수 있도록 새로워진 Dynamic Media 패키징 구조를 사용할 수 있습니다. 새로운 패키징 구조는 다음과 같이 구성된다.
-
-* Dynamic Media Prime - 게재를 향상시키기 위해 OpenAPI 및 비디오가 포함된 Dynamic Media가 포함되어 있습니다.
-
-* Dynamic Media Ultimate은 더 무거운 사용 요구 사항을 충족하기 위해 게재 및 변환 기능을 추가합니다.
-
-새로운 패키징 구조를 활용하려면 Assets as a Cloud Service Prime 또는 Ultimate이 있어야 합니다.
-
-**AI 생성 비디오 캡션**
-
-Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비디오 콘텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 캡션을 제공하여 접근성을 향상시키고 사용자 경험을 향상시키도록 설계되었습니다. 캡션은 비디오 속성 페이지의 &quot;캡션 및 오디오&quot; 탭에 원본 오디오, 추가 오디오 트랙 또는 추가 캡션에서 생성됩니다. 60개 이상의 언어를 지원하므로 비디오를 게시하기 전에 캡션을 검토하고 미리 볼 수 있습니다.
+### AEM Assets 보기의 새로운 기능 {#new-features-assets}
 
 **검색 필터 사용자 지정**
 
 사용자 정의 검색 필터는 관련 정보를 찾는 정확성과 효율성을 향상시킵니다. 이를 통해 보다 세밀하게 검색하고 브랜드, 제품, 카테고리 또는 기타 키 식별자와 같은 특정 속성에 따라 데이터를 필터링할 수 있습니다. 이를 통해 조직을 개선하고 관련 없는 결과를 찾는 데 소요되는 시간을 줄이며 보다 신속한 의사 결정을 수행할 수 있습니다. 또한 대규모 데이터 세트를 탐색하고 분석하기 쉬워지므로 확장성을 지원합니다.
 
-![검색 필터 사용자 지정](/help/assets/assets/custom-search-filters.png)
+![사용자 지정 검색 필터](/help/assets/assets/custom-search-filters.png)
 
+### Content Hub의 새로운 기능 {#new-features-content-hub}
 
-### Content Hub의 조기 액세스 기능 {#early-access-content-hub}
+설명
 
-이제 Content Hub을 사용하여 기존 정적 렌디션 외에 동적 및 스마트 자르기 렌디션을 보고 다운로드할 수 있습니다. Content Hub 관리자는 구성 사용자 인터페이스를 사용하여 사용자에게 이러한 렌디션의 가용성을 구성할 수도 있습니다.
+### AEM Assets의 얼리 액세스 기능 {#early-access-features-assets}
 
-![동적 렌디션](/help/assets/assets/download-single-asset-renditions-dynamic.png)
+**AI 생성 비디오 캡션**
 
-
+Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비디오 콘텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 개선하고 사용자 경험을 향상시킬 수 있도록 설계되었습니다. 캡션은 원본 오디오, 추가 오디오 트랙 또는 비디오 속성 페이지의 “캡션 및 오디오” 탭에서 제공된 추가 캡션에서 생성됩니다. 60개 이상의 언어를 지원하므로 비디오를 게시하기 전에 캡션을 검토하고 미리 볼 수 있습니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### AEM Forms의 새로운 기능 {#forms-new-features}
+
+* **게시 관리**: [게시 관리](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)) 워크플로우를 사용하여 일반적으로 작성자 인스턴스에서 게시 및 미리보기 인스턴스로 환경 간에 양식을 게시하거나 게시 취소할 수 있습니다. 이를 통해 사용자는 간소화된 방식으로 콘텐츠를 게시 또는 게시 취소하거나 게시 일정을 예약할 수 있습니다.
+
+* **[핵심 구성 요소 기반 적응형 양식의 초안 자동 저장](/help/forms/save-core-component-based-form-as-draft.md)**: 사용자는 이제 자동 저장 기능을 통해 작성 중인 양식을 초안으로 자동 저장할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 사용하면 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
+
+* **[규칙 편집기 개선 사항](/help/forms/invoke-service-enhancements-rule-editor.md)**: 핵심 구성 요소를 기반으로 하는 적응형 Forms의 경우 서비스 호출 출력을 사용하여 드롭다운 옵션을 채우고 반복 가능한 패널 또는 개별 패널을 설정할 수 있습니다. 이 출력은 다른 필드의 유효성을 검사하는 데 사용할 수도 있습니다.
+
+* **[사용자 경험 향상을 위한 패널 레이아웃 내 탐색 버튼 추가](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 버튼을 패널 레이아웃에 추가할 수 있습니다. 이러한 버튼은 패널 간 전환을 간소화하고 선택된 패널에 초점을 맞춤으로써 사용자 경험을 향상시킵니다.
+
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -107,16 +117,15 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### 적응형 Forms의 HTML 이메일 템플릿
+#### [적응형 Forms의 HTML 전자 메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-적응형 Forms을 사용하면 [HTML 전자 메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식을 제출할 때 내용이 풍부하고 개인화되고 시각적으로 매력적인 이메일을 보낼 수 있습니다. 이러한 이메일은 양식 데이터로 사용자 정의할 수 있으며, 이미지와 링크 등 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 양식을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+적응형 Forms을 사용하면 HTML 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식을 제출할 때 내용이 풍부하고 개인화되고 시각적으로 매력적인 이메일을 보낼 수 있습니다. 이러한 이메일은 양식 데이터로 사용자 정의할 수 있으며, 이미지와 링크 등 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 양식을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
 
 ![HTML 이메일 템플릿](/help/forms/assets/html-email.png)
 
 #### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
 
-이제 AEM Forms 문서 생성 API를 통해 [생성된 PDF 문서를 직접 업로드](/help/forms/early-access-ea-features.md#doc-generation-api)할 수 있습니다. 이러한 향상된 기능을 통해 저장 및 검색을 간소화하여 클라우드 워크플로와의 통합과 효율성이 개선됩니다.
-
+이제 AEM Forms Document Generation API는 생성된 PDF 문서를 Azure Blob Storage에 직접 업로드할 수 있습니다. 이러한 향상된 기능을 통해 저장 및 검색을 간소화하여 클라우드 워크플로와의 통합과 효율성이 개선됩니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

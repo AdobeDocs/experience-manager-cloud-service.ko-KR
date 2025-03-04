@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 92%
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
+>AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >이 기능을 사용하는 기존 프로젝트는 계속 지원되지만 새 프로젝트는 이 기능을 사용하지 않아야 합니다.
 
@@ -63,7 +63,7 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 >[!NOTE]
 >
->Adobe 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
+>Adobe에서는 사용자 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 상세 옵션 {#detailed-options}
 
-다음 섹션에서는 [PWA을 위해 사이트를 구성](#enabling-pwa-for-your-site)할 때 사용할 수 있는 옵션에 대해 자세히 설명합니다.
+다음 섹션에서는 [PWA에 대한 사이트를 구성](#enabling-pwa-for-your-site)할 때 사용할 수 있는 옵션에 대해 자세히 설명합니다.
 
 ### 설치 가능한 경험 구성 {#configure-installable-experience}
 
