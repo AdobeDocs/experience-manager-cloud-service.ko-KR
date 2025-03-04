@@ -3,10 +3,10 @@ title: Content Hub에서 에셋 다운로드
 description: Content Hub 포털에서 에셋을 다운로드하는 방법을 알아봅니다
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 >[!NOTE]
 > 
-* Dynamic Media 계정에 조기 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
+* 동적 및 스마트 자르기 렌디션 기능은 얼리 어답터 단계입니다. 기능에 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
 * [Dynamic Media Open API 서비스](/help/assets/dynamic-media-open-apis-overview.md)에서 새로 온보딩된 고객은 승인을 위해 기존 이미지 사전 설정을 수정해야 합니다.
 
 
