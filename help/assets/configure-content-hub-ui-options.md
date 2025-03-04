@@ -2,16 +2,16 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 14%
+source-wordcount: '1668'
+ht-degree: 16%
 
 ---
 
 # Content Hub 사용자 인터페이스 구성 {#configure-content-hub-user-interface}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -26,9 +26,9 @@ ht-degree: 14%
 
 >[!AVAILABILITY]
 >
->이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션은 다음과 같습니다.
 
@@ -229,19 +229,17 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지, 문서 등과 같은 디지털 에셋의 사용자 지정 버전입니다. Adobe Experience Manager Assets의 [렌디션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)에 대해 자세히 알아보세요.
 
-Content Hub을 사용하면 정적 렌디션을 다운로드할 수 있습니다. 정적 렌디션은 기본적으로 생성되는 에셋의 원본 파일을 다르게 표현한 것입니다. 예를 들면 축소판 또는 모바일에 최적화된 표현물이 있습니다. 관리자는 에셋 표현물의 가용성을 관리 및 제어하고, 원본 에셋을 다운로드할 수 있는지 여부를 관리할 수 있습니다.
-
 이렇게 하려면 다음 단계를 실행합니다.
 
 [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 표현물]**&#x200B;을(를) 클릭합니다. 다음 옵션을 사용할 수 있습니다.
 
-* [!UICONTROL 정적 렌디션의 사용 가능] 토글을 활성화하여 모든 정적 렌디션을 Content Hub에 표시할 수 있도록 합니다.
+* [!UICONTROL 렌디션의 사용 가능] 전환을 활성화하여 모든 렌디션을 Content Hub에 표시합니다.
 
 * **[!UICONTROL 사용자가 원본 에셋을 다운로드할 수 있도록 허용]** 토글을 활성화하거나 비활성화하여 원본 에셋 다운로드 가능 여부를 제어합니다.
 
   ![Content Hub에서 렌디션 구성](assets/config-renditions.png)
 
-Content Hub에서 정적 렌디션을 보고 다운로드하는 방법에 대한 자세한 내용은 [Content Hub에서 에셋 다운로드](/help/assets/download-assets-content-hub.md)를 참조하십시오.
+Content Hub에서 렌디션을 보고 다운로드하는 방법에 대한 자세한 내용은 [Content Hub에서 에셋 다운로드](/help/assets/download-assets-content-hub.md)를 참조하십시오.
 
 ### 사용자 정의 링크 {#configure-custom-links-content-hub}
 
