@@ -4,10 +4,10 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 94%
+source-wordcount: '1972'
+ht-degree: 92%
 
 ---
 
@@ -1886,6 +1886,10 @@ Dynamic Media 자산에 대한 URL 게재의 경우
 * [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
 
 * [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
+
+콘텐츠 조각 편집기에서 현재 AEM 인스턴스에 로컬이 아닌 원격 자산을 제공합니다.
+
+* [OpenAPI 자산 지원을 위한 Dynamic Media 샘플 쿼리(원격 Assets)를 참조하십시오](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## 샘플 콘텐츠 조각 구조 (GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 

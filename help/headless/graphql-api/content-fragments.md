@@ -4,10 +4,10 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 95%
+source-wordcount: '6021'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 
 >[!NOTE]
 >
->사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교가 필요하면 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
+>사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교는 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -268,7 +268,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 열거 | `String` | 모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 | 태그 | `[String]` | AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 자산에 대한 경로를 표시하는 데 사용됨 |
-| 콘텐츠 참조 (UUID) | `String`, `[String]` | AEM의 다른 에셋에 대한 UUID로 표현되는 경로 표시에 사용됩니다. |
+| 콘텐츠 참조 (UUID) | `String`, `[String]` | AEM의 다른 에셋에 대한 UUID로 표현되는 경로를 표시하는 데 사용됩니다. |
 | 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조 <br><br>하나의 참조 유형이 있는 다중 필드: `[Model]` - 유형의 배열 `Model`, 배열에서 직접 참조 <br><br>다중 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 | 조각 참조 (UUID) |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조 <br><br>하나의 참조 유형이 있는 다중 필드: `[Model]` - 유형의 배열 `Model`, 배열에서 직접 참조 <br><br>다중 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
@@ -962,15 +962,15 @@ AEM 콘텐츠 조각용 GraphQL을 사용하면 **콘텐츠 참조**&#x200B;에�
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
 * `ImageRef` 참조에 `_dmS7Url` 사용
-   * [URL별 Dynamic Media 에셋 게재용 샘플 쿼리 - 이미지 참조](#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
+   * [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 이미지 참조](#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
 * 여러 참조에 `_dmS7Url` 사용: `ImageRef`, `MultimediaRef` 및 `DocumentRef`
-   * [URL별 Dynamic Media 에셋 게재용 샘플 쿼리 - 다중 참조](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
+   * [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 다중 참조](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
 
 * 스마트 자르기 기능으로 `_dmS7Url` 사용
 
    * `_smartCrops` 속성은 특정 자산에 사용할 수 있는 스마트 자르기 구성을 노출합니다
 
-   * [URL별 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 스마트 자르기 사용](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)을 참조하십시오.
+   * [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 스마트 자르기 사용](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -1055,7 +1055,7 @@ query allTeams {
 }
 ```
 
-### URL별 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 스마트 자르기 사용 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 스마트 자르기 사용 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 다음은 샘플 쿼리입니다.
 
@@ -1084,6 +1084,110 @@ query allTeams {
   }
 } 
 ```
+
+## OpenAPI 자산 지원을 위한 Dynamic Media(원격 Assets) {#dynamic-media-for-openapi-asset-support}
+
+[원격 자산](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) 통합을 사용하면 콘텐츠 조각 편집기에서 현재 AEM 인스턴스에 로컬이 아닌 Assets을 참조할 수 있습니다. 콘텐츠 조각 편집기 및 GraphQL JSON의 Dynamic Media for OpenAPI 에셋 지원에 의해 구현됩니다.
+
+### OpenAPI 자산 지원을 위한 Dynamic Media에 대한 샘플 쿼리(원격 Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+다음은 샘플 요청입니다.
+
+* 원격 자산 참조의 개념 설명
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* 응답
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**제한 사항**
+
+현재 제한 사항은 다음과 같습니다.
+
+* GraphQL 게재는 `repositoryId` 및 `assetId`만 지원합니다(다른 에셋 메타데이터는 반환되지 않음).
+
+  >[!NOTE]
+  >
+  >그런 다음 [자산 배달 API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)를 기반으로 클라이언트측에서 전체 URL을 구성해야 합니다.
+
+* 원격 저장소에서 *승인됨* 자산만 참조할 수 있습니다.
+* 참조되는 에셋이 원격 저장소에서 제거되면 콘텐츠 조각 에셋 참조가 손상됩니다.
+* 사용자가 액세스할 수 있는 모든 게재 에셋 저장소를 선택할 수 있습니다. 사용 가능한 목록은 제한할 수 없습니다.
+* AEM 인스턴스와 원격 자산 저장소 인스턴스가 모두 동일한 버전이어야 합니다.
+* [관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) 및 [배달 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)를 통해 노출된 자산 메타데이터가 없습니다. 에셋 메타데이터 API를 사용하여 에셋 메타데이터 세부 사항을 검색해야 합니다.
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 

@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 77%
+source-wordcount: '2847'
+ht-degree: 70%
 
 ---
 
@@ -312,10 +312,11 @@ ht-degree: 77%
 
 #### 이미지 참조 {#reference-images}
 
-**콘텐츠 참조** 필드에서 다음 두 가지 작업을 수행할 수 있습니다.
+**콘텐츠 참조** 필드에서 다음을 수행할 수 있습니다.
 
-* 저장소에 이미 존재하는 자산 참조
-* 필드에 직접 업로드하면 업로드할 **자산** 콘솔을 사용할 필요가 없습니다.
+* 로컬 저장소에 이미 존재하는 에셋을 참조합니다.
+* 원격 저장소에 있는 자산 참조
+* 자산을 필드에 직접 업로드합니다. 이렇게 하면 **Assets** 콘솔을 사용하여 업로드할 필요가 없습니다
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ ht-degree: 77%
   >* ([콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)에서) **루트 경로**&#x200B;를 정의합니다. 이는 이미지를 저장할 위치를 지정합니다.
   >* 허용된 콘텐츠 유형 목록에 **이미지**&#x200B;가 포함됩니다.
 
-자산을 추가하려면 다음 중 하나를 수행할 수 있습니다.
+##### 참조 로컬 Assets {#reference-local-assets}
+
+로컬 자산을 참조하려면 다음 중 하나를 수행할 수 있습니다.
 
 * 새 자산 파일을 직접(예: 파일 시스템에서) **콘텐츠 참조** 필드에 드래그 앤 드롭합니다.
 * **자산 추가** 작업을 사용한 다음 **자산 검색**&#x200B;을 선택하거나 **업로드**&#x200B;하여 사용할 적절한 선택기를 엽니다.
 
   ![콘텐츠 조각 편집기 - 자산 추가 옵션](assets/cf-authoring-add-asset-options.png)
+
+##### 참조 원격 Assets {#reference-remote-assets}
+
+원격 자산을 참조하려면 다음 작업을 수행하십시오.
+
+1. 자산을 검색할 때 원격 **저장소**&#x200B;를 지정하십시오.
+
+   ![콘텐츠 조각 편집기 - 원격에서 에셋 선택](assets/cf-authoring-remote-asset-01.png)
+
+2. 선택 후 위치는 에셋 정보에서 볼 수 있습니다.
+
+   ![콘텐츠 조각 편집기 - 원격 저장소의 자산](assets/cf-authoring-remote-asset-02.png)
+
+###### 원격 Assets - 제한 사항 {#remote-assets-limitations}
+
+원격 자산을 참조할 때는 몇 가지 제한 사항이 있습니다.
+
+* 원격 자산 저장소에서 [승인됨](/help/assets/approve-assets.md) 자산만 참조할 수 있습니다.
+
+* 참조된 에셋이 원격 저장소에서 제거되면 콘텐츠 참조가 손상됩니다.
+
+* 사용자가 액세스할 수 있는 모든 게재 에셋 저장소를 선택할 수 있습니다. 사용 가능한 목록은 제한할 수 없습니다.
+
+* AEM 인스턴스와 원격 자산 저장소 인스턴스가 모두 동일한 버전이어야 합니다.
+
+* 관리 API 또는 게재 API를 통해 노출되는 자산 메타데이터가 없습니다. 에셋 메타데이터 API를 사용하여 에셋 메타데이터 세부 사항을 검색해야 합니다.
+
+   * 개별 자산 메타데이터: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * search API를 사용하여 대량 메타데이터 정보 가져오기(실험적 기능): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>[컨텐츠 조각에 사용할 AEM GraphQL API - OpenAPI 자산 지원용 Dynamic Media(원격 Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)도 참조하십시오.
 
 #### 참조 페이지 {#reference-pages}
 
