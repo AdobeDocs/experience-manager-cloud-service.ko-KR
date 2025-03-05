@@ -4,9 +4,9 @@ description: 유니버설 편집기는 마케팅 조직이 효과적인 웹 경�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
+source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 13%
 
 * AEM as a Cloud Service(릴리스 `2023.8.13099` 이상)
 * AEM 6.5(서비스 팩 21 또는 22 + 기능 팩 추가)
+   * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
 
 이 설명서는 AEM as a Cloud Service과 함께 범용 편집기를 사용하기 위한 것입니다. AEM 6.5에서 유니버설 편집기를 사용하려면 [AEM 6.5 설명서를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
