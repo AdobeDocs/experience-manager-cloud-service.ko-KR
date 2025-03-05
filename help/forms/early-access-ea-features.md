@@ -1,15 +1,15 @@
 ---
-title: as a Cloud Service  [!DNL Adobe Experience Manager Forms] 의 최신 초기 액세스 기능.
-description: as a Cloud Service  [!DNL Adobe Experience Manager Forms] 의 최신 초기 액세스 기능.
+title: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service의 현재 조기 액세스 기능입니다.'
+description: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service의 현재 조기 액세스 기능입니다.'
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 26%
+source-wordcount: '2155'
+ht-degree: 28%
 
 ---
 
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 대화형 Forms은 새로운 모습 그 이상입니다. 사용자 경험을 위한 획기적인 기능입니다.  참여를 확대하고, 양식 포기를 줄이고, 웹 사이트와 상호 작용하여 모든 사용자에게 보다 즐거운 경험을 선사합니다.
 
 
-### Edge Delivery Services을 위한 WYSIWYG 작성
+### Edge Delivery Services용 WYSIWYG 작성
 
-WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공하여 적응형 양식을 작성하고 Edge Delivery Services에 게시합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
+WYSIWYG 작성은 적응형 양식을 작성하고 Edge Delivery Services에 게시할 수 있는 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
@@ -92,7 +92,7 @@ WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms �
 
 [AEM Forms to Marketo 커넥터](/help/forms/integrate-form-to-marketo-engage.md)는 Adobe Experience Manager(AEM)로 빌드된 웹 양식(적응형 Forms)과 마케팅 자동화 플랫폼인 Marketo 간의 차이를 메웁니다.
 
-누군가가 AEM Adaptive Forms으로 만든 양식을 웹 사이트에서 제출하면 커넥터는 제출된 데이터를 자동으로 Marketo으로 보내게 합니다. 따라서 수동으로 데이터를 입력할 필요가 없어지고 오류 위험이 줄어듭니다.
+누군가가 AEM 적응형 Forms으로 만든 양식을 웹 사이트에서 제출하면 커넥터가 제출된 데이터를 자동으로 Marketo으로 전송합니다. 따라서 수동으로 데이터를 입력할 필요가 없어지고 오류 위험이 줄어듭니다.
 
 ![AEM 양식 - Marketo 커넥터](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
@@ -104,17 +104,39 @@ WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms �
 
 * [AEM Forms와 Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)
 * [Marketo Engage과 적응형 양식 통합](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [기존 적응형 Forms에 대한 Marketo Engage 광고 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [기존 적응형 Marketo Engage에 대한 Forms 광고 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Marketo Engage에 기존 적응형 양식 제출](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### 값 실현 대시보드
+
+값 실현 대시보드를 사용하여 양식의 성능을 추적하고 분석합니다. 이 분석 도구를 사용하면 데이터 중심의 의사 결정을 통해 양식 전략을 최적화할 수 있습니다.
+
+![Forms 사용 통찰력 대시보드](/help/forms/assets/forms-usage-insights.png)
+
+**주요 기능:**
+
+* 양식 제출, 문서 변환 및 양식 생성/게시 지표 모니터링
+* 조직 전체에서 양식 단편 사용 및 재사용 추적
+* 추세, 피크 기간 및 개선 기회 파악
+
+대시보드는 다음 두 가지 기본 섹션을 통해 인사이트를 제공합니다.
+
+* **시간이 지남에 따른 양식 및 문서 활동**: 제출, 변환 및 양식 만들기/게시를 추적합니다.
+* **조각 사용**: 조각 채택 및 재사용 모니터링
+
+자세한 내용은 다음을 참조하십시오.
+
+* [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
+* [양식 및 문서 사용 통찰력 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## 추가적인 조기 액세스 혁신
 
-### 적응형 Forms에서 이메일 템플릿 HTML
+### 적응형 양식의 HTML 이메일 템플릿
 
 
-적응형 Forms을 사용하면 [HTML 전자 메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+적응형 양식을 사용하면 [HTML 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식을 제출할 때 내용이 풍부하고 개인화되고 시각적으로 매력적인 이메일을 보낼 수 있습니다. 이러한 이메일은 양식 데이터로 사용자 정의할 수 있으며, 이미지와 링크 등 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 양식을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
 
-![HTML 전자 메일 템플릿](/help/forms/assets/html-email.png)
+![HTML 이메일 템플릿](/help/forms/assets/html-email.png)
 
 ### RESTful 웹 서비스 제출 액션
 
@@ -161,26 +183,26 @@ AEM Forms는 다양한 CAPTCHA 옵션을 제공하여 특정 요구 사항에 �
 ### 문서 Assurance API
 
 
-AEM Forms Doc Assurance API는 AEM Forms Cloud Service 통신 API 내의 도구 세트로, PDF 문서의 보안 및 사용자 상호 작용을 관리할 수 있습니다.
+AEM Forms Doc Assurance API는 AEM Forms Cloud Service Communication API 내의 도구 세트로, PDF 문서의 보안 및 사용자 상호 작용을 관리할 수 있습니다.
 
 다음은 Assurance API를 통해 수행할 수 있는 작업에 대한 분류입니다.
 
-* **문서 암호화 및 암호 해독**: 암호화로 해당 내용을 읽을 수 없도록 하여 문서를 Protect합니다. 전체 문서, 특정 컨텐츠, 메타데이터 또는 첨부 파일을 포함하여 PDF의 암호화되는 부분을 제어할 수 있습니다.
+* **문서 암호화 및 암호 해독**: 암호화를 통해 문서 내용을 읽을 수 없게 하여 문서를 보호합니다. 전체 문서, 특정 컨텐츠, 메타데이터 또는 첨부 파일을 포함하여 PDF의 암호화되는 부분을 제어할 수 있습니다.
 
 * **문서에 디지털 서명**: 유효성 검사 및 변조 불가능한 확인을 위해 문서에 디지털 서명을 추가하십시오. 이는 인증 목적 또는 문서 무결성을 보장하기 위해 사용할 수 있습니다
 
-* **Reader 문서 확장(PDF 문서의 사용 권한 적용 또는 편집)**: 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다.
+* **Reader 문서 확장(PDF 문서의 사용 권한 적용 또는 편집)**: 추가 사용 권한으로 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다.
 
-  Reader 확장(사용 권한) API는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
+  Reader 확장(사용 권한) API는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장 등과 같이 Adobe Reader를 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
 
-  PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 내에서 활성화된 활동을 수행할 수 있습니다.
+  PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader에서 활성화된 활동을 수행할 수 있습니다.
 
 전체적으로 [문서 Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)를 사용하면 추가 제어 계층을 추가하여 문서 보안 및 규정 준수를 개선할 수 있습니다.
 
 
 ### Forms 서비스 API
 
-Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터를 확인하는 데 사용할 수도 있습니다. 기능의 분류는 다음과 같습니다.
+Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터의 유효성을 검사하는 데 사용할 수도 있습니다. 기능의 분류는 다음과 같습니다.
 
 * **Forms 렌더링**: AEM Forms Designer를 사용하여 작성한 템플릿과 선택적으로 XML 데이터에서 대화형 PDF 양식을 생성합니다. 이를 통해 선택적으로 데이터를 미리 채운 채울 수 있는 PDF 양식을 기본적으로 생성합니다.
 
@@ -190,23 +212,23 @@ Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합�
 
 ### 문서 생성 API
 
-문서 생성 API에는 생성된 PDF을 Azure Blob Storage에 직접 업로드할 수 있는 선택적 기능이 포함되어 있습니다. 문서 생성 API를 사용하여 Azure Blob Storage에 직접 PDF을 업로드하면 다음과 같은 몇 가지 주요 이점이 있습니다.
+문서 생성 API에는 생성된 PDF를 Azure Blob Storage에 직접 업로드할 수 있는 선택적 기능이 포함되어 있습니다. 문서 생성 API를 사용하여 PDF를 Azure Blob Storage에 직접 업로드하면 다음과 같은 몇 가지 주요 이점이 있습니다.
 
 * **클라우드 스토리지와의 원활한 통합**:
-생성된 PDF을 Azure Blob Storage에 직접 업로드하면 파일을 전송하는 추가 수동 또는 프로그래밍 방식의 단계가 필요하지 않으므로 워크플로우를 간소화하고 효율성을 향상시킬 수 있습니다.
+생성된 PDF를 Azure Blob Storage에 직접 업로드하면 파일을 전송하는 추가 수동 또는 프로그래밍 단계가 필요하지 않으므로 워크플로우를 간소화하고 효율성을 향상시킬 수 있습니다.
 
 * **중앙 문서 관리**:
-Azure Blob Storage에 PDF을 저장하면 문서를 중앙 집중식으로 관리할 수 있으므로 다양한 사용 사례에서 생성된 파일을 쉽게 구성, 검색 및 관리할 수 있습니다.
+Azure Blob Storage에 PDF를 저장하면 문서를 중앙 집중식으로 관리할 수 있으므로 다양한 사용 사례에서 생성된 파일을 쉽게 구성, 검색 및 관리할 수 있습니다.
 
 * **향상된 보안**: 저장 시 암호화 및 역할 기반 액세스 제어(RBAC)와 같은 Azure의 기본 제공 보안 기능을 사용하므로 중요한 문서는 저장 중에 보호됩니다.
 
-* **사용자 지정 저장소 경로**: 사용자 지정 디렉터리 경로를 정의하는 기능을 사용하면 생성된 PDF이 조직화된 응용 프로그램별 위치에 저장되므로 파일 관리가 향상됩니다.
+* **사용자 지정 저장소 경로**: 사용자 지정 디렉터리 경로를 정의하는 기능을 사용하면 생성된 PDF가 조직화된 응용 프로그램별 위치에 저장되므로 파일 관리가 향상됩니다.
 
 ## 추가 참조
 
 * [AEM Forms의 최신 혁신 기능](/help/forms/latest-innovations.md)
 
-* [AEM Forms as a Cloud Service의 기능](/help/forms/home.md)
+* [AEM Forms as a Cloud Services의 기능](/help/forms/home.md)
 
-* [AEM 6.5 Forms(AMS 및 온프레미스)와 AEM Forms as a Cloud Service(AEM CS Forms)의 차이점](/help/forms/notable-changes.md)
+* [AEM 6.5 Forms(AMS 및 온프레미스)와 AEM Forms as a Cloud Services(AEM CS Forms)의 차이점](/help/forms/notable-changes.md)
 

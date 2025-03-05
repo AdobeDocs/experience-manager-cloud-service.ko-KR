@@ -5,35 +5,45 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# 가치 실현 대시보드 이해: Forms 활용 {#value-realization-dashboard}
+
+# 가치 실현 대시보드 이해
+
+![Fvalue 실현 대시보드](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview"> 이 기능은 일부 선택한 고객에게만 사용되는 베타 기능입니다. </span>
 
 양식이 제공하는 가치를 이해하기 위한 원스톱 샵에 오신 것을 환영합니다! 이 대시보드는 양식을 최적화하고 워크플로우를 간소화하며 궁극적으로 목표를 더 빨리 달성할 수 있는 중요한 통찰력을 제공합니다.
 
-## 대시보드에는 무엇이 있습니까? {#content-of-dashboard}
+이 문서에서는 가치 실현 대시보드와 그 이점에 대한 개념적인 개요를 제공합니다. 자세한 사용 지침 및 지표 해석은 [값 실현 대시보드를 사용하여 양식 사용 인사이트 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)을 참조하십시오.
+
+
+![값 실현 대시보드](/help/forms/assets/forms-usage-insights.png)
+
+## 대시보드에는 무엇이 있나요? {#content-of-dashboard}
 
 이 대시보드는 양식 사용의 세계를 보여 주는 창입니다. 다음은 주요 섹션에 대한 분류입니다.
 
-### 시간 경과에 따른 양식 활동:
+### 시간에 따른 양식 및 문서 활동
 
 * **양식 제출**: 양식이 완료되는 빈도의 추세를 확인하세요.
 * **문서 변환**: 시간이 지남에 따라 렌더링되는 문서의 수를 추적합니다.
 * **Forms 생성 및 게시**: 새 양식을 작성하고 배포하는 속도를 모니터링합니다.
 * **양식 만들기 및 게시 시간**: 양식을 만들고 게시하기 위한 평균 시간을 분석하여 개선할 영역을 파악합니다.
 
-### 조각 사용:
+### 조각 사용
 
 * **사용 중인 양식 조각 수**: 현재 활성 양식에 통합된 재사용 가능한 양식 섹션 수를 확인합니다.
-* **양식 조각 재사용 횟수**: 다른 양식에서 이러한 조각이 사용되는 빈도를 측정합니다.
+* **양식 조각 재사용**: 다른 양식에서 이러한 조각이 사용되는 빈도를 측정합니다.
+
+
 
 
 ## 이것이 당신에게 어떤 도움이 됩니까? {#benefits-to-you}
@@ -45,7 +55,7 @@ ht-degree: 0%
 * **조각 재사용 활성화**: 재사용 가능한 조각의 공동 작업 및 검색 기능을 장려합니다. 잘 구성된 조각 라이브러리는 효율성을 크게 향상시킬 수 있습니다.
 
 
-## Insights를 작업으로 만들기 {#turning-insights-into-actions}
+## 인사이트를 작업으로 만들기 {#turning-insights-into-actions}
 
 이러한 결과를 실행 가능한 단계로 변환해 보겠습니다!
 
@@ -62,3 +72,7 @@ ht-degree: 0%
 * **실험 및 세분화:** 다양한 양식 디자인 및 조각 사용으로 실험해 보십시오. 대시보드는 변경 사항의 효과를 측정하는 데 도움이 됩니다.
 
 이 대시보드는 당신의 동맹입니다! 이를 효과적으로 사용하면 양식을 간단한 데이터 수집 도구에서 비즈니스의 성공을 이끄는 전략적 자산으로 변환할 수 있습니다.
+
+## 추가 참조
+
+* [사용 인사이트 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
