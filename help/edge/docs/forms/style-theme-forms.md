@@ -1,58 +1,58 @@
 ---
-title: AEM Forms용 Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
-description: AEM Forms용 Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
+title: AEM Forms용 Edge Delivery Services 테마 및 스타일 맞춤화
+description: AEM Forms용 Edge Delivery Services 테마 및 스타일 맞춤화
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 3b6ffd391b36f2f0d09fe054140b08bca6f0c941
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 100%
+source-wordcount: '1909'
+ht-degree: 72%
 
 ---
 
 
 # 양식 모양 사용자 정의
 
-Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheets)를 사용하여 양식 필드의 스타일을 지정하고 양식의 시각적 표현을 향상시키며 사용자 경험을 향상시킬 수 있습니다.
+Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheet)를 사용하여 양식 필드의 스타일을 지정하고, 양식의 시각적 프레젠테이션을 강화하고, 사용자 경험을 개선할 수 있습니다.
 
-적응형 양식 블록은 모든 양식 필드에 대해 일관된 구조를 생성합니다. 일관된 구조를 사용하면 필드 유형 및 필드 이름을 기반으로 양식 필드를 선택하고 스타일을 지정하는 CSS 선택기를 더 쉽게 개발할 수 있습니다.
+적응형 양식 블록은 모든 양식 필드에 대해 일관된 구조를 생성합니다. 이렇게 일관된 구조를 사용하면 CSS 선택기를 개발하여 필드 유형 및 필드 이름에 따라 양식 필드를 선택하고 스타일을 지정할 수 있습니다.
 
-이 문서는 다양한 양식 구성 요소에 대한 HTML 구조를 간략하게 설명하며, 적응형 양식 블록의 양식 필드 스타일을 지정하기 위해 다양한 양식 필드의 CSS 선택기를 만드는 방법을 이해하는 데 도움이 됩니다.
+이 문서에서는 다양한 양식 구성 요소에 대한 HTML 구조에 대해 간략하게 설명하고 다양한 양식 필드에 대한 CSS 선택기를 만들어 적응형 Forms 블록의 양식 필드에 스타일을 지정하는 방법을 이해할 수 있습니다.
 
-문서의 내용을 마치면 다음이 가능합니다.
+이 문서의 끝까지 다음을 확인할 수 있습니다.
 
-* 적응형 양식 블록에 포함된 기본 CSS 파일의 구조를 이해합니다.
-* 일반 구성 요소와 드롭다운, 라디오 그룹, 확인란 그룹과 같은 특정 구성 요소를 포함하여 적응형 양식 블록에서 제공하는 양식 구성 요소의 HTML 구조를 이해합니다.
-* CSS 선택기를 사용하여 필드 유형 및 필드 이름을 기반으로 양식 필드의 스타일을 지정하여 요구 사항에 따라 일관되거나 고유한 스타일을 지정하는 방법을 습득합니다.
+* 적응형 Forms 블록에 포함된 기본 CSS 파일의 구조에 대한 이해 구축
+* 일반 구성 요소와 드롭다운, 라디오 그룹, 확인란 그룹과 같은 특정 구성 요소를 포함하여 적응형 Forms 블록에서 제공하는 양식 구성 요소의 HTML 구조에 대한 이해를 구축합니다
+* CSS 선택기를 사용하여 필드 유형 및 필드 이름에 따라 양식 필드의 스타일을 지정하여 요구 사항에 따라 일관되거나 고유한 스타일을 지정하는 방법을 알아봅니다
 
 
 ## 양식 필드 유형 이해
 
 스타일 지정을 시작하기 전에 양식 블록에서 지원하는 일반적인 적응형 양식 [필드 유형](/help/edge/docs/forms/form-components.md)을 검토해 보겠습니다.
 
-* 입력 필드: 여기에는 텍스트 입력, 이메일 입력, 암호 입력 등이 포함됩니다.
+* 입력 필드: 여기에는 텍스트 입력, 이메일 입력, 암호 입력 등이 포함됩니다
 * 확인란 그룹: 여러 옵션을 선택하는 데 사용됩니다.
-* 라디오 그룹: 그룹에서 하나의 옵션만 선택하는 데 사용됩니다.
-* 드롭다운: 선택 상자라고도 하며 목록에서 하나의 옵션을 선택하는 데 사용됩니다.
-* 패널/컨테이너: 관련 양식 요소를 그룹화하는 데 사용됩니다.
+* 라디오 그룹: 그룹에서 하나의 옵션만 선택하는 데 사용됨
+* 드롭다운: 목록에서 하나의 옵션을 선택하는 데 사용되는 선택 상자라고 합니다
+* 패널/컨테이너: 관련 양식 요소를 함께 그룹화하는 데 사용됩니다.
 
 ## 기본 스타일 지정 원칙
 
 특정 양식 필드의 스타일을 지정하기 전에 [기본적인 CSS 개념](https://www.w3schools.com/css/css_intro.asp)을 이해하는 것이 중요합니다.
 
-* [선택기](https://www.w3schools.com/css/css_selectors.asp): CSS 선택기를 사용하면 스타일 지정을 위해 특정 HTML 요소를 타겟팅할 수 있습니다. 요소 선택기, 클래스 선택기 또는 ID 선택기를 사용할 수 있습니다.
-* [속성](https://www.w3schools.com/css/css_syntax.asp): CSS 속성은 요소의 시각적 모양을 정의합니다. 스타일 양식 필드의 일반적인 속성에는 색상, 배경색, 테두리, 패딩, 여백 등이 포함됩니다.
-* [상자 모델](https://www.w3schools.com/css/css_boxmodel.asp): CSS 상자 모델은 HTML 요소의 구조를 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 기술합니다.
-* Flexbox/격자: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 및 [격자 레이아웃](https://www.w3schools.com/css/css_grid.asp)은 반응성이 뛰어나고 유연한 디자인을 만들기 위한 강력한 도구입니다.
+* [선택기](https://www.w3schools.com/css/css_selectors.asp): CSS 선택기를 사용하면 스타일 지정을 위해 특정 HTML 요소를 타기팅할 수 있습니다. 요소 선택기, 클래스 선택기 또는 ID 선택기를 사용할 수 있습니다
+* [속성](https://www.w3schools.com/css/css_syntax.asp): CSS 속성은 요소의 시각적 모양을 정의합니다. 양식 필드 스타일을 위한 일반적인 속성에는 색상, 배경색, 테두리, 패딩, 여백 등이 포함됩니다
+* [상자 모델](https://www.w3schools.com/css/css_boxmodel.asp): CSS 상자 모델은 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 HTML 요소의 구조를 설명합니다
+* Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 및 [격자 레이아웃](https://www.w3schools.com/css/css_grid.asp)은(는) 반응형 및 유연한 디자인을 만들기 위한 강력한 도구입니다.
 
 ## 적응형 양식 블록의 양식 스타일 지정
 
 적응형 양식 블록은 표준화된 HTML 구조를 제공하여 양식 구성 요소 선택 및 스타일 지정 프로세스를 단순화합니다.
 
-* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. 프로젝트에 적응형 양식 블록을 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하십시오.
+* **기본 스타일 업데이트**: `/blocks/form/form.css` 파일을 편집하여 폼의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. 프로젝트에 적응형 양식 블록을 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하십시오.
 
-* **사용자 정의**: 기본 `forms.css`를 베이스로 사용하고 이를 사용자 정의하여 구성 요소의 모양과 느낌을 수정하면 시각적으로 매력적이고 사용자 친화적인 구성 요소를 만들 수 있습니다. 파일 구조를 조직하고 양식 스타일을 유지하여 웹 사이트 전체에서 디자인의 일관성을 유지합니다.
+* **사용자 지정**: 기본 `forms.css`을(를) 기본으로 사용하고 사용자 지정하여 양식 구성 요소의 모양과 느낌을 수정하여 시각적으로 매력적이고 사용자에게 친숙하게 만듭니다. 파일 구조를 조직하고 양식 스타일을 유지하여 웹 사이트 전체에서 디자인의 일관성을 유지합니다.
 
 ## forms.css 구조 분류
 
@@ -66,7 +66,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 * **미디어 쿼리:** 다양한 화면 크기를 위한 스타일을 제공하여 그에 따라 레이아웃과 스타일을 조정할 수 있습니다.
 
-* **기타 스타일 지정:** 이 섹션에서는 성공 또는 오류 메시지 스타일, 파일 업로드 영역 및 양식에서 접할 수 있는 기타 요소 등을 다룹니다.
+* **기타 스타일:** 이 단원에서는 성공 또는 오류 메시지에 대한 스타일, 파일 업로드 영역 및 양식에 표시될 수 있는 기타 요소를 다룹니다.
 
 
 ## 구성 요소 구조
@@ -75,28 +75,28 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 ### 일반 구성 요소(드롭다운, 라디오 그룹 및 확인란 그룹 제외):
 
-드롭다운, 라디오 그룹 및 확인란 그룹을 제외한 모든 양식 필드에는 다음과 같은 HTML 구조가 있습니다.
+드롭다운, 라디오 그룹 및 확인란 그룹을 제외한 모든 양식 필드는 다음과 같은 HTML 구조를 갖습니다.
 
 +++ 일반 구성 요소의 HTML 구조
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
    <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Hint - First name should be a minimum of 3 characters and a maximum of 10 characters.
    </div>
 </div>
 ```
 
-* 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
-   * {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
-   * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
-   * {FieldId}: 자동으로 생성된 필드의 고유 식별자입니다.
-   * {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
-* 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 속성을 사용하여 이를 입력 요소와 연결합니다.
-* 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예를 들어 문자, 숫자, 이메일 등이 있습니다.
-* 설명(선택 사항): `field-description` 클래스가 있는 `div`는 사용자에게 추가 정보 또는 지침을 제공합니다.
+* 클래스: div 요소에는 특정 요소 및 스타일을 타기팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
+   * {Type}: 필드 유형으로 구성 요소를 식별합니다. 예: 텍스트(텍스트 래퍼), 숫자(숫자 래퍼), 날짜(날짜 래퍼)
+   * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자만 사용할 수 있습니다. 이름에 있는 연속된 여러 대시는 단일 대시 `(-)`(으)로 바뀌고 필드 이름의 시작 및 끝 대시는 제거됩니다. 예: 이름 (field-first-name field-wrapper)
+   * {FieldId}: 필드에 대한 고유 식별자로, 자동으로 생성됩니다.
+   * {Required}: 필드가 필요한지 여부를 나타내는 부울입니다.
+* 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 특성을 사용하여 입력 요소와 연결합니다
+* 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예: 텍스트, 숫자, 이메일
+* 설명(선택 사항): 클래스 `field-description`이(가) 있는 `div`은(는) 사용자에 대한 추가 정보 또는 지침을 제공합니다
 
 **HTML 구조의 예**
 
@@ -115,72 +115,64 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 +++ 일반 구성 요소용 CSS 선택기
 
 ```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
-  
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target all input fields within any .{Type}-wrapper */
+.{Type}-wrapper input {
+  /* Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Target any element with the class field-{Name} */
+.field-{Name} {
+  /* Add your styles here */
+  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
+}
 ```
 
-* `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타겟팅합니다. 예를 들어 `.text-wrapper`는 모든 텍스트 필드를 타겟팅합니다.
-* `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.field-first-name`은 “이름” 텍스트 필드를 타겟팅합니다. 이 선택기는 field-{Name} 클래스가 있는 요소를 타겟팅하는 데 사용할 수 있지만 주의해야 합니다. 이 특정한 경우에는 입력 자체뿐만 아니라 레이블 및 설명 요소도 대상으로 하기 때문에 입력 필드 스타일을 지정하는 데 유용하지 않습니다. 텍스트 입력 필드(.text-wrapper 입력)를 대상으로 하는 선택기와 같이 더 구체적인 선택기를 사용하는 것이 좋습니다.
-
-
+* `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타겟팅합니다. 예를 들어 `.text-wrapper`은(는) 모든 텍스트 필드를 대상으로 합니다
+* `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.field-first-name`은 “이름” 텍스트 필드를 타기팅합니다. 이 선택기는 field-{Name} 클래스가 있는 요소를 타기팅하는 데 사용할 수 있지만 주의해야 합니다. 이 특정한 경우에는 입력 자체뿐만 아니라 레이블 및 설명 요소도 대상으로 하기 때문에 입력 필드 스타일을 지정하는 데 유용하지 않습니다. 텍스트 입력 필드(.text-wrapper input) 타깃팅에 사용하는 선택기와 같이 보다 구체적인 선택기를 사용하는 것이 좋습니다
 
 **일반 구성 요소용 CSS 선택기의 예**
 
 ```CSS
-/*Target all text input fields */
-
-text-wrapper input {
+/* Target all text input fields */
+.text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 
-/*Target all fields with name first-name*/
-
-first-name input {
+/* Target all fields with name first-name */
+.field-first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 ```
+
 +++
 
 ### 드롭다운 구성 요소
 
 드롭다운 메뉴의 경우 `input` 요소 대신 `select` 요소가 사용됩니다.
 
-
-
 +++ 드롭다운 구성 요소의 HTML 구조
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">Country</label>
    <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    Please select your country from the list.
    </div>
 </div>
 ```
@@ -204,8 +196,6 @@ first-name input {
 +++
 
 +++ 드롭다운 구성 요소용 CSS 선택기
-
-다음 CSS에는 드롭다운 구성 요소에 대한 몇 가지 CSS 선택기 예가 나열되어 있습니다.
 
 ```CSS
 /* Target the outer wrapper */
@@ -241,22 +231,8 @@ first-name input {
 
 .drop-down-wrapper select::after {
   content: "\25BC";
-  font-size: 12px;
-  color: #ccc;
-  /* Adjust positioning as needed */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 ```
-
-* 래퍼 타겟팅: 첫 번째 선택기(`.drop-down-wrapper`)는 외부 래퍼 요소를 타겟팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
-* Flexbox 레이아웃: Flexbox는 깔끔한 레이아웃을 위해 레이블, 드롭다운 및 설명을 수직으로 정렬합니다.
-* 레이블 스타일: 더 굵은 글꼴 두께와 약간의 여백으로 레이블을 돋보이게 합니다.
-* 드롭다운 스타일링: 테두리, 패딩 및 둥근 모퉁이로 `select` 요소를 세련되게 합니다.
-* 배경색: 시각적인 조화를 위해 일관된 배경색을 설정합니다.
-* 화살표 맞춤화: 선택적 스타일로 기본 드롭다운 화살표를 숨기고 유니코드 문자와 위치 지정을 사용하여 사용자 정의 화살표를 만듭니다.
 
 +++
 
@@ -304,7 +280,7 @@ first-name input {
 
 +++ 라디오 그룹용 CSS 선택기
 
-* Fieldset 타겟팅
+* Fieldset 타기팅
 
 ```CSS
   .radio-group-wrapper {
@@ -315,7 +291,7 @@ first-name input {
 
 이 선택기는 radio-group-wrapper 클래스가 있는 모든 필드 세트를 대상으로 합니다. 전체 라디오 그룹에 일반 스타일을 적용하는 데 유용합니다.
 
-* 라디오 버튼 레이블 타겟팅
+* 라디오 버튼 레이블 타기팅
 
 ```CSS
 .radio-wrapper label {
@@ -324,7 +300,7 @@ first-name input {
   }
 ```
 
-* 이름을 기준으로 특정 Fieldset 내의 모든 라디오 버튼 레이블을 타겟팅합니다.
+* 이름을 기준으로 특정 Fieldset 내의 모든 라디오 버튼 레이블을 타기팅합니다.
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -390,7 +366,7 @@ first-name input {
   ```
 
 
-* 타겟팅 그룹 레이블: 이 선택기는 라디오 및 확인란 그룹 래퍼 내의 `.field-label` 요소를 타겟팅합니다. 이를 통해 해당 그룹에 맞게 레이블 스타일을 지정할 수 있으며 잠재적으로 더 돋보이게 만들 수 있습니다.
+* 타기팅 그룹 레이블: 이 선택기는 라디오 및 확인란 그룹 래퍼 내의 `.field-label` 요소를 타기팅합니다. 이를 통해 해당 그룹에 맞게 레이블 스타일을 지정할 수 있으며 잠재적으로 더 돋보이게 만들 수 있습니다.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -401,7 +377,7 @@ first-name input {
 
 
 
-* 개별 입력 및 레이블 타겟팅: 이들 선택기는 개별 라디오 버튼, 확인란 및 관련 레이블에 대한 보다 세부적인 제어를 제공합니다. 이를 사용하여 크기나 간격을 조정하거나 보다 뚜렷한 시각적 스타일을 적용할 수 있습니다.
+* 개별 입력 및 레이블 타기팅: 이들 선택기는 개별 라디오 버튼, 확인란 및 관련 레이블에 대한 보다 세부적인 제어를 제공합니다. 이를 사용하여 크기나 간격을 조정하거나 보다 뚜렷한 시각적 스타일을 적용할 수 있습니다.
 
   ```CSS
   /* Styling radio buttons */
@@ -508,7 +484,7 @@ first-name input {
 
 +++ 패널/컨테이너 구성 요소용 CSS 선택기 예
 
-1. 패널 타겟팅:
+1. 패널 타기팅:
 
 ```CSS
   /* Target the entire panel container */
@@ -523,7 +499,7 @@ first-name input {
 
 * `.panel-wrapper` 선택기는 panel-wrapper 클래스를 사용하여 모든 요소의 스타일을 지정하여 모든 패널에 대해 일관된 모양을 만듭니다.
 
-1. 패널 제목 타겟팅:
+1. 패널 제목 타기팅:
 
 ```CSS
   /* Target the legend element (panel title) */
@@ -540,7 +516,7 @@ first-name input {
 * `.panel-wrapper legend` 선택기는 패널 내의 범례 요소 스타일을 지정하여 제목을 시각적으로 돋보이게 만듭니다.
 
 
-1. 패널 내 개별 필드 타겟팅:
+1. 패널 내 개별 필드 타기팅:
 
 ```CSS
 /* Target all form field wrappers within a panel */
@@ -552,7 +528,7 @@ first-name input {
 
 * `.panel-wrapper .{Type}-wrapper` 선택기는 패널 내의 `.{Type}-wrapper` 클래스가 있는 모든 래퍼를 대상으로 하여 양식 필드 사이의 간격 스타일을 지정할 수 있습니다.
 
-1. 특정 필드 타겟팅(선택 사항):
+1. 특정 필드 타기팅(선택 사항):
 
 ```CSS
   /* Target the username field wrapper */
@@ -636,7 +612,7 @@ first-name input {
 
 +++ 반복 가능 패널용 CSS 선택기
 
-* 모든 반복 가능 패널 타겟팅:
+* 모든 반복 가능 패널 타기팅:
 
 ```CSS
   /* Target all panels with the repeatable attribute */
@@ -652,7 +628,7 @@ first-name input {
 이 선택기는 모든 반복 가능 패널의 스타일을 지정하여 디자인을 일관되게 유지합니다.
 
 
-* 패널 내 개별 필드 타겟팅:
+* 패널 내 개별 필드 타기팅:
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -663,7 +639,7 @@ first-name input {
 ```
 이 선택기는 반복 가능 패널 내의 모든 필드 래퍼 스타일을 지정하여 필드 사이의 간격을 일관되게 유지합니다.
 
-* 특정 필드 타겟팅(패널 내):
+* 특정 필드 타기팅(패널 내):
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -725,7 +701,7 @@ first-name input {
 
 +++ 파일 첨부 구성 요소용 CSS 선택기
 
-* 전체 파일 첨부 구성 요소 타겟팅:
+* 전체 파일 첨부 구성 요소 타기팅:
 
 ```CSS
 /* Target the entire file attachment component */
@@ -740,7 +716,7 @@ first-name input {
 
 이 선택기는 범례, 드래그 영역, 입력 필드 및 목록을 포함한 전체 파일 첨부 구성 요소의 스타일을 지정합니다.
 
-* 특정 요소 타겟팅:
+* 특정 요소 타기팅:
 
 ```CSS
 /* Target the drag and drop area */
@@ -798,7 +774,7 @@ first-name input {
 
 ### 필드 유형에 따른 스타일 지정
 
-CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일을 일관되게 적용할 수 있습니다.
+CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일을 일관되게 적용할 수 있습니다.
 
 +++ HTML 구조
 
@@ -861,7 +837,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 
 ### 필드 이름에 따른 스타일 지정
 
-이름별로 개별 필드를 타겟팅하여 고유한 스타일을 적용할 수도 있습니다.
+이름별로 개별 필드를 타기팅하여 고유한 스타일을 적용할 수도 있습니다.
 
 +++ HTML 구조
 
@@ -899,7 +875,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 
 
 
-이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따릅니다. 이는 “field-otp” 클래스로 표시된 컨테이너에 “otp”라는 이름의 필드가 있음을 의미합니다.
+이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타기팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따릅니다. 이는 “field-otp” 클래스로 표시된 컨테이너에 “otp”라는 이름의 필드가 있음을 의미합니다.
 
 +++
 

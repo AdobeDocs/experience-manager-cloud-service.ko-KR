@@ -4,10 +4,10 @@ description: Forms용 Edge Delivery Services 범용 편집기를 사용하여 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 69%
+source-wordcount: '1078'
+ht-degree: 70%
 
 ---
 
@@ -22,13 +22,11 @@ ht-degree: 69%
 
 가벼운 클라이언트측 렌더링을 관리하든, 브라우저 간 호환성을 보장하든, 엄격한 접근성 표준을 준수하든, 범용 편집기는 양식을 만들고 관리하기 위한 간소화된 솔루션을 제공합니다.
 
-![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
+![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Forms용 Edge Delivery Services 유니버설 편집기의 주요 기능
 
 
-
-다음은 동일한 너비 카드가 있는 레이아웃입니다(고정 너비 열 사용).
 
 | ![WYSIWYG 인터페이스](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![규칙 편집기](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![작업 제출](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|

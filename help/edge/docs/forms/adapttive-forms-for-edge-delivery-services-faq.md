@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-
-
 # 자주 묻는 질문(FAQ)
+
 
 ## 다국어 지원 및 글로벌 사용
 
@@ -55,4 +55,3 @@ ht-degree: 0%
 - Forms 횡단보도 설명서
 - 번역 워크플로우에 대한 표준 AEM Sites 설명서
 - 양식 작성을 위한 범용 편집기 설명서
-

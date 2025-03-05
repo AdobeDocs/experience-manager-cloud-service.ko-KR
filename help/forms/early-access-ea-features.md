@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 28%
+source-wordcount: '2289'
+ht-degree: 26%
 
 ---
 
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 대화형 Forms은 새로운 모습 그 이상입니다. 사용자 경험을 위한 획기적인 기능입니다.  참여를 확대하고, 양식 포기를 줄이고, 웹 사이트와 상호 작용하여 모든 사용자에게 보다 즐거운 경험을 선사합니다.
 
 
-### Edge Delivery Services용 WYSIWYG 작성
+### Forms용 WYSIWYG을 위한 Edge Delivery Services 작성(유니버설 편집기)
 
-WYSIWYG 작성은 적응형 양식을 작성하고 Edge Delivery Services에 게시할 수 있는 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
+유니버설 편집기는 시각적 디자인 단순성과 고급 기능을 결합하여 [적응형 양식을 Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에 빌드하고 게시할 수 있는 강력한 WYSIWYG 인터페이스를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)의 모든 기능과 다양한 추가 기능을 제공합니다.
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
@@ -86,6 +86,26 @@ WYSIWYG 작성은 적응형 양식을 작성하고 Edge Delivery Services에 게
 * 양식을 미리 채우고 데이터를 제출하기 위한 다양한 데이터 소스 통합.
 * 다양한 데이터 소스와의 데이터 구조 및 상호 작용을 정의하기 위한 양식 데이터 모델(FDM).
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 및 더 많은 데이터 소스에 데이터 제출을 포함하여 양식 제출을 처리하기 위한 여러 제출 작업 중에서 선택할 수 있습니다.
+
+![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**이점:**
+
+* **TTV(Accelerated Time-to-Value)**: 직관적인 시각적 작성으로 복잡한 코딩 요구 사항을 제거하여 양식을 더 빠르게 실행할 수 있습니다.
+* **개발 비용 절감**: 비즈니스 사용자가 최소한의 IT 권한으로 양식을 만들고 수정할 수 있도록 하여 총 소유 비용을 절감합니다.
+* **간단한 개발**: 전문 프레임워크 지식 없이 HTML, CSS 및 JavaScript만 사용하여 사용자 지정 구성 요소를 만듭니다.
+* **최신 웹 스택**: 프런트 엔드 개발자에게 익숙한 웹 표준 및 최신 기술을 기반으로 합니다.
+* **신속한 프로토타이핑**: 전체 개발에 투자하기 전에 양식 개념을 빠르게 빌드하고 테스트합니다.
+
+
+**자세히 알아보려면 설명서를 살펴보십시오.**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**주요 기능**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**응답형 레이아웃 사용**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**제출 동작 구성**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**적응형 Forms용 유니버설 편집기 시작**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**양식 스타일 지정**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**reCAPTCHA 보안 추가**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**첫 번째 양식 만들기**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**규칙 편집기 사용**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**양식 게시**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**사용자 인터페이스 이해**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**사용자 지정 구성 요소 만들기**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms-Marketo 커넥터

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 97%
+source-wordcount: '1505'
+ht-degree: 94%
 
 ---
 # 스니펫 {#snippets}
@@ -252,3 +252,25 @@ ht-degree: 97%
 >
 >* Headless 콘텐츠를 시각적으로 편집하기 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
 >* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)
+
+## 범용 편집기{#ue-see-also}
+
+* [범용 편집기를 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Forms에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Forms 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [디자인 아름다운 Forms: 스타일링 및 테마 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [사용자 정의 양식 구성 요소 작성](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## 추가 참조 {#see-more-eds-forms}
+
+* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
+* [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
+* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
+* [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+* [양식 제출 서비스 사용](/help/forms/forms-submission-service.md)
