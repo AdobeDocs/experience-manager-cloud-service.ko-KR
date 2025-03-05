@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -295,7 +295,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 강력한 번역 기능에 대한 기술 설명서
 * [AEM 워크플로](/help/sites-cloud/authoring/workflows/overview.md) - AEM에서 워크플로를 자동화하는 방법에 대한 기술 설명서
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md) - 콘텐츠 조각에 대한 기술 설명서.
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
 * [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의(외부 링크)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서

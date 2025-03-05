@@ -4,7 +4,7 @@ description: 구성 요소는 모델러 프레임워크를 기반으로 콘텐�
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -30,7 +30,7 @@ JSON 내보내기는 [Sling 모델](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling 모델을 사용하는 예를 보려면 문서 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR)을 참조하십시오.
+>Sling 모델을 사용하는 예는 문서 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko)을 참조하십시오.
 
 Sling 모델 구현 클래스에는 다음 주석이 포함되어야 합니다.
 
@@ -72,13 +72,13 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 ## 예 {#example}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 JSON 내보내기를 지원하며 참조로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 JSON 내보내기를 지원하며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
 ## 관련 설명서 {#related-documentation}
 
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

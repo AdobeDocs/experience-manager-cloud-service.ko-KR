@@ -4,7 +4,7 @@ description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AE
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -21,7 +21,7 @@ AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨�
 * 기본 모바일 애플리케이션
 * AEM 외부의 기타 채널 및 터치포인트
 
-구조화된 콘텐츠를 사용하는 콘텐츠 조각을 사용하면 JSON 익스포터를 사용하여 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달하여 콘텐츠 서비스를 제공할 수 있습니다. 그런 다음 자체 애플리케이션에서 사용할 수 있습니다.
+구조화된 컨텐츠를 사용하는 컨텐츠 조각을 사용하면 JSON 익스포터를 사용하여 AEM 페이지의 컨텐츠를 JSON 데이터 모델 형식으로 전달하여 컨텐츠 서비스를 제공할 수 있습니다. 그런 다음 자체 애플리케이션에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 핵심 구성 요소가 있는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
 
@@ -79,6 +79,6 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 게재를 수
 ## 관련 설명서 {#related-documentation}
 
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6216'
 ht-degree: 95%
 
 ---
@@ -419,7 +419,8 @@ ht-degree: 95%
          + [개요 및 개념](/help/sites-cloud/administering/content-fragments/overview.md)
          + [GraphQL을 사용하여 Headless 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [콘텐츠 조각 설정](/help/sites-cloud/administering/content-fragments/setup.md)
-         + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+         + [콘텐츠 조각 모델 정의](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md)
          + [조각 콘텐츠 작성](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)

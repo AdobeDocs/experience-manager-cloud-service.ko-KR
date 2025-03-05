@@ -1,18 +1,18 @@
 ---
-title: 콘텐츠 조각 모델
+title: 콘텐츠 조각 모델 정의
 description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각을 위한 기반 역할을 하여 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만드는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
+source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
 workflow-type: tm+mt
-source-wordcount: '3591'
-ht-degree: 79%
+source-wordcount: '2260'
+ht-degree: 64%
 
 ---
 
-# 콘텐츠 조각 모델 {#content-fragment-models}
+# 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
 >[!IMPORTANT]
 >
@@ -22,78 +22,13 @@ ht-degree: 79%
 
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이 조각은 페이지 작성에 사용하거나 Headless 콘텐츠의 기반으로 사용할 수 있습니다.
 
-콘텐츠 조각 모델을 사용하려면 다음 작업을 수행하십시오.
-
-1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/sites-cloud/administering/content-fragments/setup.md)
-1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
-1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model)
-1. **정책**&#x200B;을 구성하여 [필요한 자산 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
-
-## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
-
-1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
-1. [구성 또는 하위 구성](/help/sites-cloud/administering/content-fragments/setup.md)에 적합한 폴더로 이동합니다.
-1. **만들기**&#x200B;를 사용하여 마법사를 엽니다.
-
-   >[!CAUTION]
-   >
-   >[콘텐츠 조각 모델 사용이 활성화되지 않은 경우](/help/sites-cloud/administering/content-fragments/setup.md), **만들기** 옵션을 사용할 수 없습니다.
-
-1. **모델 제목**을 지정합니다.
-예로 **태그** 및 **설명** 추가, [모델을 활성화](#enabling-disabling-a-content-fragment-model)하는 **모델 활성화** 선택 등 필요한 경우 다양한 속성을 정의할 수도 있습니다.
-   **기본 미리보기 URL 패턴**.
-
-   >[!NOTE]
-   >
-   >자세한 내용은 [콘텐츠 조각 모델 - 속성](#content-fragment-model-properties)을 참조하십시오.
-
-   ![제목 및 설명](assets/cf-cfmodels-create.png)
-
-1. **만들기**&#x200B;를 사용하여 빈 모델을 저장합니다. 작업의 성공을 나타내는 메시지가 표시되면 **열기**&#x200B;를 선택하여 모델을 즉시 편집하거나 **완료**&#x200B;를 선택하여 콘솔로 돌아갈 수 있습니다.
+이 페이지에서는 전용 편집기를 사용하여 콘텐츠 조각 모델을 정의하는 방법을 다룹니다. 콘텐츠 조각 콘솔에서 사용할 수 있는 [작업](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [폴더에서 모델 허용](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) 및 [모델 게시](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)를 포함하여 조각을 만든 후 사용할 수 있는 추가 작업 및 옵션에 대해서는 [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)를 참조하십시오.
 
 >[!CAUTION]
 >
 >참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
->자세한 내용은 [콘텐츠 조각에 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
-
-### 콘텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
-
-모델을 만들 때 이 속성을 정의하고 콘텐츠 조각 모델에 대한 **속성** 옵션으로 나중에 편집할 수 있습니다.
-
-* **기본**
-   * **모델 제목**
-   * **태그**
-   * **설명**
-   * **모델 활성화**
-   * **기본 미리보기 URL 패턴**
-콘텐츠 조각 편집기를 사용하여 작성자는 외부 프론트엔드 애플리케이션의 콘텐츠를 **미리보기**&#x200B;할 수 있습니다. **미리보기 서비스**&#x200B;가 구성되면 프론트엔드 애플리케이션의 URL을 추가합니다.
-
-     미리보기 URL은 이 패턴을 따라야 합니다.
-    `https://<preview_url>?param=${expression}`
-
-     사용 가능한 표현식은 다음과 같습니다.
-
-      * `${contentFragment.path}`
-      * `${contentFragment.model.path}`
-      * `${contentFragment.model.name}`
-      * `${contentFragment.variation}`
-      * `${contentFragment.id}`
-
-   * **이미지 업로드**
-
-<!-- CHECK: currently under FT -->
-<!--
-* **GraphQL**
-  Define names relevant for GraphQL.
-  Changing the GraphQL API Name, or Query field names will impact client applications.
-  * **API Name**
-    Represents the GraphQL type and query field names in the GraphQL schema.
-  * **Single Query Field Name**
-    Represents the GraphQL single query field name in the GraphQL schema.
-  * **Multiple Query Field Name**
-    Represents the GraphQL multiple query field name in the GraphQL schema.
--->
+>자세한 내용은 [콘텐츠 조각과 함께 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
 
 ## 콘텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
 
@@ -103,9 +38,12 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 >
 >기존 콘텐츠 조각에서 이미 사용된 모델을 편집하면 종속된 조각이 영향을 받을 수 있습니다.
 
-1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
+1. 콘텐츠 조각 콘솔에서 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console)에 대한 패널을 선택하고 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
 
-1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
+   >[!NOTE]
+   >
+   >[모델을 만든 후](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)바로 모델을 열 수도 있습니다.
+
 1. **편집**&#x200B;에 필요한 모델을 엽니다. 빠른 작업을 사용하거나, 모델을 선택한 후 도구 모음에서 작업을 선택하십시오.
 
    모델 편집기를 열면 다음과 같이 표시됩니다.
@@ -117,7 +55,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    >
    >필드가 **필수**&#x200B;로 정의되는 경우, 왼쪽 창에 나타나는 **레이블**&#x200B;이 별표(**&#42;**)와 함께 표시됩니다.
 
-![속성](assets/cf-cfmodels-empty-model.png)
+   ![속성](assets/cf-cfmodels-empty-model.png)
 
 1. **필드를 추가하려면**
 
@@ -127,7 +65,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
    * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
 
-      * 설명이 따로 필요하지 않은 다양한 속성들에 대한 자세한 내용은 [속성](#properties)을 참조하십시오.
+      * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.
       * **필드 레이블**&#x200B;을 입력하면 **속성 이름**&#x200B;이 자동으로 채워집니다. 비어 있는 경우 이후에 수동으로 업데이트할 수 있습니다.
 
         >[!CAUTION]
@@ -229,7 +167,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
      >
      이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
 
-## 속성 {#properties}
+## 속성(데이터 유형) {#properties}
 
 설명이 따로 필요하지 않은 특정 속성들에 대한 자세한 내용은 아래를 참조하십시오.
 
@@ -351,7 +289,7 @@ AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
-자세한 내용은 [콘텐츠 조각에 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
+자세한 내용은 [콘텐츠 조각과 함께 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
 
 ### 콘텐츠 참조 {#content-reference}
 
@@ -434,203 +372,3 @@ type CompanyModel {
 재발 방지 메커니즘을 사용할 수 있습니다. 이는 사용자가 조각 참조에서 현재 콘텐츠 조각을 선택할 수 없도록 하고 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 또한 GraphQL에는 조각 참조에 대한 재발 방지 기능이 있습니다. 서로 참조하는 두 개의 콘텐츠 조각 간에 복합 쿼리를 만들면 null을 반환합니다.
-
-## 콘텐츠 조각 모델 활성화 또는 비활성화 {#enabling-disabling-a-content-fragment-model}
-
-콘텐츠 조각 모델 사용을 완벽하게 제어하기 위해 해당 모델을 **활성화**&#x200B;하거나 **비활성화**&#x200B;할 수 있습니다.
-
-### 콘텐츠 조각 모델 활성화 {#enabling-a-content-fragment-model}
-
-모델을 만든 후에는 모델을 활성화해야 합니다. 활성화한 모델은
-
-* 콘텐츠 조각을 만들 때 선택할 수 있습니다.
-* 콘텐츠 조각 모델 내에서 참조할 수 있습니다.
-* GraphQL에서 사용할 수 있습니다. 그 결과 스키마가 생성됩니다.
-
-다음 중 하나로 플래그가 지정된 모델을 활성화하려면 다음 작업을 수행합니다.
-
-* **초안**: 새로운 초안(활성화되지 않음)
-* **비활성화됨**: 특히 비활성화되어 있음
-
-다음 중 하나에서 **활성화** 옵션을 사용합니다.
-
-* (필요한 모델이 선택되어 있는 경우) 상단 도구 모음
-* 해당 빠른 작업(필요한 모델 위에 마우스 놓기)
-
-![초안 모델 또는 비활성화된 모델 활성화](assets/cf-cfmodels-status-enable.png)
-
-### 콘텐츠 조각 모델 비활성화 {#disabling-a-content-fragment-model}
-
-모델을 비활성화하여
-
-* 해당 모델을 더 이상 *새* 콘텐츠 조각 생성을 위한 기반으로 사용하지 않도록 할 수 있습니다.
-* 하지만
-   * GraphQL 스키마는 JSON API에 영향을 주지 않도록 계속 생성되며 계속 쿼리할 수 있습니다.
-   * 해당 모델을 기반으로 하는 모든 콘텐츠 조각은 여전히 GraphQL 엔드포인트에서 쿼리하고 반환할 수 있습니다.
-* 해당 모델은 더 이상 참조할 수 없지만 기존 참조는 그대로 유지되므로 GraphQL 엔드포인트에서 쿼리하고 반환할 수 있습니다.
-
-**활성화됨**&#x200B;으로 플래그가 지정된 모델을 비활성화하려면 다음 중 하나에서 **비활성화** 옵션을 사용합니다.
-
-* (필요한 모델이 선택되어 있는 경우) 상단 도구 모음
-* 해당 빠른 작업(필요한 모델 위에 마우스 놓기)
-
-![활성화된 모델 비활성화](assets/cf-cfmodels-status-disable.png)
-
-## 자산 폴더에서 콘텐츠 조각 모델 허용 {#allowing-content-fragment-models-assets-folder}
-
-콘텐츠 거버넌스를 구현하기 위해 자산 폴더에서 **정책**&#x200B;을 구성하여 해당 폴더에서 조각 생성에 허용되는 콘텐츠 조각 모델을 제어할 수 있습니다.
-
->[!NOTE]
->
-이 메커니즘은 페이지의 고급 속성에서 페이지 및 그 하위 페이지에 대해 [페이지 템플릿을 허용](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)하는 것과 유사합니다.
-
-**허용되는 콘텐츠 조각 모델**&#x200B;에 대해 **정책**&#x200B;을 구성하려면 다음 작업을 수행합니다.
-
-1. 필요한 자산 폴더의 **속성**&#x200B;으로 이동하여 엽니다.
-
-1. 다음을 구성할 수 있는 **정책** 탭을 엽니다.
-
-   * **상속 위치`<folder>`**
-
-     새 하위 폴더를 만들 때 정책이 자동으로 상속됩니다. 하위 폴더에서 상위 폴더와 다른 모델을 허용해야 하는 경우 정책을 다시 구성(및 상속 중단)할 수 있습니다.
-
-   * **경로에 의해 허용된 콘텐츠 조각 모델**
-
-     여러 모델을 사용할 수 있습니다.
-
-   * **태그에 의해 허용된 콘텐츠 조각 모델**
-
-     여러 모델을 사용할 수 있습니다.
-
-   ![콘텐츠 조각 모델 정책](assets/cf-cfmodels-policy-assets-folder.png)
-
-1. 모든 변경 내용을 **저장**&#x200B;합니다.
-
-폴더에 대해 허용되는 콘텐츠 조각 모델은 다음과 같이 해결됩니다.
-* **허용되는 콘텐츠 조각 모델**&#x200B;에 대한 **정책**
-* 비어 있는 경우 상속 규칙을 사용하여 정책을 결정하십시오.
-* 상속 체인이 결과를 전달하지 않는 경우 해당 폴더에 대한 **Cloud Services** 구성을 살펴보십시오(처음에는 직접, 그 다음에는 상속을 통해).
-* 어느 것도 결과를 전달하지 않는 경우에는 해당 폴더에 대해 허용되는 모델이 없음을 의미합니다.
-
-## 콘텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
-
->[!CAUTION]
->
-콘텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
-
-콘텐츠 조각 모델을 삭제하려면
-
-1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
-
-1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **삭제**&#x200B;를 클릭합니다.
-
-   >[!NOTE]
-   >
-   모델을 참조한 경우 적절한 작업을 수행할 수 있도록 경고가 표시됩니다.
-
-## 콘텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
-
-콘텐츠 조각 모델은 종속된 콘텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
-
-콘텐츠 조각 모델을 게시하려면
-
-1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
-
-1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시**를 클릭합니다.
-게시된 상태가 콘솔에 표시됩니다.
-
-   >[!NOTE]
-   >
-   모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
-
-## 콘텐츠 조각 모델 게시 취소 {#unpublishing-a-content-fragment-model}
-
-조각에서 콘텐츠 모델을 참조하지 않는 경우, 이를 게시 취소할 수 있습니다.
-
-콘텐츠 조각 모델을 게시 취소하려면 다음 작업을 수행하십시오.
-
-1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
-
-1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 다음 도구 모음에서 **게시 취소**를 선택합니다.
-게시된 상태가 콘솔에 표시됩니다.
-
-하나 이상의 조각에서 현재 사용 중인 모델을 게시 취소하려고 하면 이를 알리는 오류 경고가 표시됩니다. 예:
-
-![사용 중인 모델 게시 취소 시 표시되는 콘텐츠 조각 모델 오류 메시지](assets/cf-cfmodels-unpublish-error.png)
-
-이 메시지는 [참조](/help/sites-cloud/authoring/basic-handling.md#references) 패널을 확인하여 자세히 조사하도록 제안합니다.
-
-![참조의 콘텐츠 조각 모델](assets/cf-cfmodels-references.png)
-
-## 잠긴(게시된) 콘텐츠 조각 모델 {#locked-published-content-fragment-models}
-
-이 기능은 게시된 콘텐츠 조각 모델에 대한 거버넌스를 제공합니다.
-
-### 과제 {#the-challenge}
-
-* 콘텐츠 조각 모델은 AEM에서 GraphQL 쿼리에 대한 스키마를 결정합니다.
-
-   * AEM GraphQL 스키마는 콘텐츠 조각 모델 생성 직후 생성되며 작성자 및 게시 환경 모두에 존재할 수 있습니다.
-
-   * 게시의 스키마는 JSON 형식으로 콘텐츠 조각 콘텐츠를 실시간으로 게재할 수 있는 기반을 제공하므로 가장 중요합니다.
-
-* 콘텐츠 조각 모델을 수정할 때, 즉 편집할 때 문제가 발생할 수 있습니다. 즉, 스키마가 변경되어 기존 GraphQL 쿼리에 영향을 줄 수 있습니다.
-
-* 일반적으로 콘텐츠 조각 모델에 새 필드를 추가해도 유해한 영향을 미치지 않아야 합니다. 그러나 기존 데이터 필드(예: 이름)를 수정하거나 필드 정의를 삭제하면 이러한 필드를 요청할 때 기존 GraphQL 쿼리가 중단됩니다.
-
-### 요구 사항 {#the-requirements}
-
-* 사용자가 라이브 콘텐츠 게재에 이미 사용된 모델(즉, 게시된 모델)을 편집할 때의 위험을 인식하도록 합니다.
-
-* 또한 의도하지 않은 변경을 피하도록 합니다.
-
-이러한 기준으로 수정된 모델을 다시 게시하는 경우 쿼리가 중단될 수 있습니다.
-
-### 솔루션 {#the-solution}
-
-이러한 문제를 해결하기 위해 콘텐츠 조각 모델은 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 이 상태는 **잠김**&#x200B;으로 표시됩니다.
-
-![잠긴 콘텐츠 조각 모델의 카드](assets/cf-cfmodels-locked.png)
-
-모델이 읽기 전용 모드에서 **잠김**&#x200B;인 경우 모델의 콘텐츠 및 구조를 볼 수 있지만 이를 편집할 수는 없습니다.
-
-콘솔 또는 모델 편집기에서 **잠긴** 모델을 관리할 수 있습니다.
-
-* 콘솔
-
-  콘솔에서 도구 모음의 **잠금 해제** 및 **잠금** 액션을 사용하여 읽기 전용 모드를 관리할 수 있습니다.
-
-  ![잠긴 콘텐츠 조각 모델의 도구 모음](assets/cf-cfmodels-locked.png)
-
-   * 편집 사용을 위해 모델의 **잠금을 해제**&#x200B;할 수 있습니다.
-
-     **잠금 해제**&#x200B;를 선택한 경우, 경고가 표시되고 **잠금 해제** 작업을 확인해야 합니다.
-     ![콘텐츠 조각 모델 잠금 해제 시 표시되는 메시지](assets/cf-cfmodels-unlock-message.png)
-
-     그런 다음 편집할 모델을 열 수 있습니다.
-
-   * 이후에 모델을 **잠글** 수도 있습니다.
-   * 모델을 다시 게시하면 모델이 즉시 **잠김**(일기 전용) 모드로 반환됩니다.
-
-* 모델 편집기
-
-   * 잠긴 모델을 열면 경고가 표시되며 다음 세 가지 작업이 표시됩니다. **취소**, **읽기 전용 보기**, **편집**
-
-     ![잠긴 콘텐츠 조각 모델을 볼 때 표시되는 메시지](assets/cf-cfmodels-editor-lock-message.png)
-
-   * **읽기 전용 보기**&#x200B;를 선택한 경우, 모델의 콘텐츠 및 구조를 확인할 수 있습니다.
-
-     ![읽기 전용 보기 - 잠긴 콘텐츠 조각 모델](assets/cf-cfmodels-editor-locked-view-only.png)
-
-   * **편집**&#x200B;을 선택하는 경우, 업데이트를 편집하고 저장할 수 있습니다.
-
-     ![편집 - 잠긴 콘텐츠 조각 모델](assets/cf-cfmodels-editor-locked-edit.png)
-
-     >[!NOTE]
-     >
-     맨 위에는 여전히 경고가 표시될 수 있지만, 이는 모델이 기존 콘텐츠 조각에서 이미 사용 중임을 의미합니다.
-
-   * **취소**&#x200B;를 선택하면 콘솔로 돌아갑니다.

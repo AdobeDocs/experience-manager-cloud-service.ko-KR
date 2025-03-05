@@ -1,14 +1,14 @@
 ---
 title: 콘텐츠 조각 작업 개요
-description: Adobe Experience Manager(AEM as a Cloud Service)의 콘텐츠 조각을 사용하여 Headless 게재 및 페이지 작성에 이상적인 구조화된 콘텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각을 사용하여 Headless 게재 및 페이지 작성에 이상적인 구조화된 컨텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 90%
+source-wordcount: '2010'
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 >
 >상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
-Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 [Headless 게재](/help/headless/what-is-headless.md) 및 [페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 [Headless 게재](/help/headless/what-is-headless.md) 및 [페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -39,8 +39,8 @@ Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조�
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
-* 각 조각은 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)을 기반으로 합니다.
-   * 콘텐츠 조각 모델은 결과 조각의 구조를 정의합니다.
+* 각 조각은 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)을 기반으로 합니다.
+   * [콘텐츠 조각 모델은 결과 조각의 구조](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)를 정의합니다.
 * 모든 조각은 다음과 같이 구성됩니다.
    * **[기본](#main-and-variations)** - 핵심 콘텐츠를 가지고, 항상 존재하고, 삭제할 수 없는 조각의 필수 부분
    * **[변형](#main-and-variations)** - 작성자가 만든 하나 이상의 콘텐츠 순열
@@ -92,7 +92,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 이 페이지와 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
 * [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/setup.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 모델 활성화, 생성 및 정의
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 모델 활성화, 생성 및 [정의](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)(콘텐츠 조각 콘솔 사용)
 
 조각이 만들어지면 다음과 같은 작업을 수행할 수 있습니다.
@@ -179,7 +179,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * **자산**&#x200B;으로 저장됩니다.
 
-   * 콘텐츠 조각(및 그 변형)은 [콘텐츠 조각 콘솔에서 만들고 유지 관리할 수 있습니다](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * 콘텐츠 조각(및 그 변형)은 [콘텐츠 조각 콘솔에서 만들고 유지 관리할 수 있습니다](#content-fragments-console).
    * [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 작성 및 편집됩니다.
 
 * [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)를 사용하여 콘텐츠 게재에 액세스할 수 있습니다.
@@ -211,7 +211,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 * **조각 요소**
 
    * 요소는 콘텐츠를 포함하는 데이터 필드와 관련이 있습니다.
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)을 사용하여 콘텐츠 조각을 만듭니다. 모델에 지정된 요소(필드)는 조각의 구조를 정의합니다. 이러한 요소(필드)는 다양한 데이터 유형일 수 있습니다.
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)을 사용하여 콘텐츠 조각을 만듭니다. 모델에 지정된 요소(필드) [은(는) 조각의 구조를 정의합니다](/help/sites-cloud/administering/content-fragments/content-fragment-models.md). 이러한 요소(필드)는 다양한 데이터 유형일 수 있습니다.
 
 * **조각 단락**
 
@@ -247,7 +247,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 * **콘텐츠 모델**
 
    * [구성 브라우저를 사용하여 활성화](/help/sites-cloud/administering/content-fragments/setup.md)됩니다.
-   * [도구를 사용하여 생성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)됩니다.
+   * [콘텐츠 조각 콘솔을 사용하여 만듭니다](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * [조각 생성](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)에 필요합니다.
    * 조각의 구조(제목, 콘텐츠 요소, 태그 정의)를 정의합니다.
    * 콘텐츠 조각 모델 정의에는 제목과 하나의 데이터 요소가 필요하며, 기타 모든 항목은 선택 사항입니다.
@@ -274,6 +274,34 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
    * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)을 참조하십시오.
+
+## 콘텐츠 조각 콘솔 {#content-fragments-console}
+
+콘텐츠 조각 콘솔은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md), [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 및 [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)을 관리, 검색 및 생성하는 데 사용됩니다. Headless 컨텍스트에서 사용하도록 최적화되었지만 페이지 작성에 사용할 콘텐츠 조각 및 콘텐츠 조각 모델을 만들 때도 사용됩니다.
+
+콘솔은 전역 탐색의 최상위 수준에서 직접 액세스할 수 있습니다.
+
+![전역 탐색 - 콘텐츠 조각 콘솔](assets/cf-managing-global-navigation.png)
+
+맨 왼쪽 패널을 사용하여 보고, 찾아보고, 관리할 리소스 유형을 선택할 수 있습니다.
+
+![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+자세한 내용은 다음을 참조하십시오.
+
+* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+
+>[!CAUTION]
+>
+>이 콘솔은 온라인 Adobe Experience Manager(AEM) as a Cloud Service *에서만* 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>필요한 경우 프로젝트 팀이 콘솔 및 편집기를 사용자 지정할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
 
 ## 사용 예 {#example-usage}
 

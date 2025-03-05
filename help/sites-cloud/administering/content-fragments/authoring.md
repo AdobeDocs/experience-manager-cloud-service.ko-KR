@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 70%
@@ -50,7 +50,7 @@ ht-degree: 70%
 * 상단 도구 모음: 주요 정보 및 작업용도
    * 콘텐츠 조각 콘솔에 대한 링크(홈 아이콘)
    * 모델 및 폴더에 대한 정보
-   * [(모델에 대해 기본 미리보기 URL 패턴이 구성된 경우) 미리보기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)에 대한 링크
+   * [(모델에 대해 기본 미리보기 URL 패턴이 구성된 경우) 미리보기](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)에 대한 링크
    * [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment) 작업
    * **상위 참조**&#x200B;를 모두 표시하는 옵션(링크 아이콘)
    * 조각 **[상태](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** 및 마지막으로 저장한 정보
@@ -508,7 +508,7 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 이 기능을 사용하려면 먼저 다음 작업을 수행해야 합니다.
 
 * IT 팀과의 협력을 통해 JSON 출력을 사용하여 콘텐츠 조각을 렌더링할 외부 프론트엔드 애플리케이션을 설정합니다.
-* 외부 프론트엔드 응용 프로그램을 설정할 때 **기본 미리 보기 URL 패턴**&#x200B;을(를) 해당 콘텐츠 조각 모델의 [속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)(으)로 정의해야 합니다.
+* 외부 프론트엔드 응용 프로그램을 설정할 때 **기본 미리 보기 URL 패턴**&#x200B;을(를) 해당 콘텐츠 조각 모델의 [속성](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)(으)로 정의해야 합니다.
 
 URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을 선택하여 콘텐츠 조각을 렌더링할 수 있는 외부 애플리케이션(별도의 탭에서)을 실행할 수 있습니다.
 

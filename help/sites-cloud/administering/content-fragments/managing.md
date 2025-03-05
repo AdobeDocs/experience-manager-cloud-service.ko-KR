@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 84%
+source-wordcount: '2629'
+ht-degree: 79%
 
 ---
 
@@ -22,9 +22,18 @@ ht-degree: 84%
 
 전용 [콘텐츠 조각 콘솔](#content-fragments-console)과 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)에서 Adobe Experience Manager(AEM) as a Cloud Service의 **콘텐츠 조각**&#x200B;을 관리하는 방법에 대해 알아봅니다. 이 콘텐츠 조각을 Headless 콘텐츠 기반 또는 페이지 작성에 사용할 수 있습니다.
 
+>[!IMPORTANT]
+>
+>콘텐츠 조각 콘솔의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
+>
+>상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
+
 >[!NOTE]
 >
->필요한 경우 프로젝트 팀이 콘솔 및 편집기를 사용자 지정할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
+>이 페이지에서는 콘텐츠 조각을 표시하는 콘솔 섹션을 다룹니다. 다른 패널의 경우 다음을 참조하십시오.
+>
+>* [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [콘텐츠 조각 콘솔에서 Assets 보기 및 관리](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 [콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -45,41 +54,13 @@ ht-degree: 84%
 >
 >콘텐츠 조각은 **자산**&#x200B;으로 저장됩니다. 주로 **콘텐츠 조각** 콘솔에서 관리되지만 [자산](/help/assets/content-fragments/content-fragments-managing.md) 콘솔에서도 관리할 수 있습니다.
 
-## 콘텐츠 조각 콘솔 {#content-fragments-console}
+## 콘솔에서 콘텐츠 조각 기본 구조 및 처리 {#basic-structure-handling-content-fragments-console}
 
-콘텐츠 조각 콘솔은 콘텐츠 조각을 관리, 검색 및 생성하는 데 사용됩니다. Headless 컨텍스트에서 사용하도록 최적화되었지만 페이지 작성 시 사용할 콘텐츠 조각을 만들 때도 사용됩니다.
+[콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)의 맨 왼쪽 패널을 사용하여 **콘텐츠 조각**&#x200B;을 리소스 유형으로 선택하여 보고, 검색하고, 관리할 수 있습니다.
 
-콘텐츠 조각 콘솔에서 조각 및 관련 작업에 직접 액세스할 수 있습니다. 콘솔은 전역 탐색의 최상위 수준에서 직접 액세스할 수 있습니다.
-
-![전역 탐색 - 콘텐츠 조각 콘솔](assets/cf-managing-global-navigation.png)
-
-자세한 내용은 다음을 참조하십시오.
-
-* [콘텐츠 조각 콘솔의 기본 구조 및 처리](#basic-structure-handling-content-fragments-console)
-
-* [콘텐츠 조각에 대한 정보 제공](#information-content-fragments)
-
-* [콘텐츠 조각 콘솔의 콘텐츠 조각에 대한 작업](#actions-selected-content-fragment)
-
-* [콘솔에 표시된 열 선택](#select-columns-console)
-
-* [콘텐츠 조각 콘솔에서 검색 및 필터링](#filtering-fragments)
-
-* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
-
->[!NOTE]
->
->이 콘솔에는 콘텐츠 조각만 표시됩니다. 이미지 및 비디오와 같은 다른 자산 유형은 표시되지 않습니다.
-
->[!CAUTION]
->
->이 콘솔은 온라인 Adobe Experience Manager(AEM) as a Cloud Service *에서만* 사용할 수 있습니다.
-
-### 콘솔의 기본 구조 및 처리 {#basic-structure-handling-content-fragments-console}
+![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 **콘텐츠 조각**&#x200B;을 선택하면 새 탭에서 콘솔이 열립니다.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![콘텐츠 조각 콘솔 - 개요](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ ht-degree: 84%
    * IMS 조직도 표시합니다.
    * 다양한 [작업](#actions-unselected) 제공
 * 왼쪽 패널
+   * 여기에서 패널 링크를 압축하거나 확장할 수 있습니다
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
    * 트리의 특정 분기를 선택할 수 있습니다.
    * 중첩된 폴더를 표시하도록 크기를 조정할 수 있습니다.
-   * 콘텐츠 조각을 보거나 [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) 중에서 선택할 수 있습니다.
+   * 콘텐츠 조각뿐만 아니라 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 또는 [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)을 볼 수 있습니다. 패널에 연결된 링크를 압축하거나 확장할 수도 있습니다
 * 기본/오른쪽 패널 - 여기에서 다음 작업을 수행할 수 있습니다.
    * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록을 확인합니다.
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.
@@ -105,7 +87,7 @@ ht-degree: 84%
          * 참조에 대한 정보 표시
          * 조각의 언어 버전에 대한 정보 표시
       * 콘텐츠 조각에 대한 [기타 특정 정보 필드](#information-content-fragments)를 [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
-         * 열에서 값을 선택하면 필터에 즉시 적용됩니다.
+         * 열에서 값을 선택하면 필터로 즉시 적용됩니다
          * **모델**, **상태**, **수정자**, **태그** 및 **게시자** 열에 대해 빠른 필터링이 지원됩니다.
       * 열 머리글 위로 마우스를 가져가면 드롭다운 작업 선택기와 폭 슬라이더가 표시됩니다. 이를 사용하면 다음 작업을 수행할 수 있습니다.
          * 정렬 - 오름차순 또는 내림차순에 적합한 작업 선택
@@ -114,58 +96,9 @@ ht-degree: 84%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
-### 액션 {#actions}
-
-콘솔에는 직접 또는 특정 조각을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
-
-* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
-* [하나 이상의 콘텐츠 조각을 선택하여 적합한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
-
-#### 작업 (선택되지 않음) {#actions-unselected}
-
-특정 콘텐츠 조각을 선택하지 않고 콘솔에서 특정 작업을 수행할 수 있습니다.
-
-* 새 콘텐츠 조각 **[만들기](#creating-a-content-fragment)**
-* 다양한 조건자에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
-* 콘텐츠 조각 [검색](#searching-fragments)
-* [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#select-columns-console)
-* **자산에서 열기**&#x200B;를 사용하여 **자산** 콘솔에서 현재 위치를 바로 열 수 있습니다
-
-  >[!NOTE]
-  >
-  >**Assets** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
-  >
-  >* 콘텐츠 조각 콘솔에서 **자산에서 열기** 링크 사용
-  >* 전역 **탐색** 창에서 바로 액세스
-
-#### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
-
-특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
-
-<!-- CQDOC-21349: screenshot -->
-
-![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[새 편집기에서 열기](#editing-the-content-of-your-fragment)**
-* (원본 편집기에서) **[열기](/help/assets/content-fragments/content-fragments-variations.md)**
-* **[게시](#publishing-and-previewing-a-fragment)** (및 **[게시 취소](#unpublishing-a-fragment)**)
-* **[태그 관리](#manage-tags)**
-* **[복사](/help/assets/manage-digital-assets.md)**
-* **[이동](/help/assets/manage-digital-assets.md)**
-* **[이름 바꾸기](/help/assets/manage-digital-assets.md)**
-* **[삭제](#deleting-a-fragment)**
-* **[바꾸기](#find-and-replace)**
-
->[!NOTE]
->
->**열기**&#x200B;를 사용하여 *원본* 편집기에서 선택한 조각을 엽니다.
-
->[!NOTE]
->
->게시, 게시 취소, 삭제, 이동, 이름 바꾸기 및 복사와 같은 작업과 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
-
-### 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
+## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
 콘솔의 기본/오른쪽 패널(테이블 보기)에 콘텐츠 조각에 대한 다양한 정보가 표시됩니다. 일부 항목에서는 추가 작업 및/또는 정보로 직접 연결될 수도 있습니다.
 
@@ -214,6 +147,53 @@ ht-degree: 84%
 
      ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cf-managing-console-languages-dialog.png)
 
+## 액션 {#actions}
+
+콘솔에는 직접 또는 특정 조각을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
+
+* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
+* [하나 이상의 콘텐츠 조각을 선택하여 적합한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
+
+### 작업 (선택되지 않음) {#actions-unselected}
+
+특정 콘텐츠 조각을 선택하지 않고 콘솔에서 특정 작업을 수행할 수 있습니다.
+
+* 새 콘텐츠 조각 **[만들기](#creating-a-content-fragment)**
+* 다양한 조건자에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
+* 콘텐츠 조각 [검색](#searching-fragments)
+* [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#select-columns-console)
+* **자산에서 열기**&#x200B;를 사용하여 **자산** 콘솔에서 현재 위치를 바로 열 수 있습니다
+
+  >[!NOTE]
+  >
+  >**Assets** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
+  >
+  >* 콘텐츠 조각 콘솔에서 **자산에서 열기** 링크 사용
+  >* 전역 **탐색** 창에서 바로 액세스
+
+### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
+
+특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
+
+![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[새 편집기에서 열기](#editing-the-content-of-your-fragment)**
+* (원본 편집기에서) **[열기](/help/assets/content-fragments/content-fragments-variations.md)**
+* **[게시](#publishing-and-previewing-a-fragment)** (및 **[게시 취소](#unpublishing-a-fragment)**)
+* **[태그 관리](#manage-tags)**
+* **[복사](/help/assets/manage-digital-assets.md)**
+* **[이동](/help/assets/manage-digital-assets.md)**
+* **[이름 바꾸기](/help/assets/manage-digital-assets.md)**
+* **[삭제](#deleting-a-fragment)**
+* **[바꾸기](#find-and-replace)**
+
+>[!NOTE]
+>
+>**열기**&#x200B;를 사용하여 *원본* 편집기에서 선택한 조각을 엽니다.
+
+>[!NOTE]
+>
+>게시, 게시 취소, 삭제, 이동, 이름 바꾸기 및 복사와 같은 작업과 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ ht-degree: 84%
 
 ### 콘텐츠 모델 만들기 {#creating-a-content-model}
 
-구조화된 콘텐츠와 함께 콘텐츠 조각을 만들기 전에 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)을 활성화하고 만들어야 합니다.
+구조화된 콘텐츠와 함께 콘텐츠 조각을 만들기 전에 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)을 활성화하고 만들어야 합니다.
 
 ### 콘텐츠 조각 만들기 {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ ht-degree: 84%
 
 ## 콘텐츠 조각 상태 {#statuses-content-fragments}
 
-콘텐츠 조각은 존재하는 동안 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)과 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에 표시되는 것과 같이 여러 상태를 가질 수 있습니다.
+콘텐츠 조각은 존재하는 동안 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)과 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에 표시되는 것과 같이 여러 상태를 가질 수 있습니다.
 
 * **새로 만들기**(회색)
 콘텐츠 조각 편집기에서 새 콘텐츠 조각을 만들었지만 편집 또는 열리지 않는 콘텐츠는 없습니다.
@@ -319,7 +299,7 @@ ht-degree: 84%
 
 >[!CAUTION]
 >
->조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+>조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
 >
 >모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
@@ -382,8 +362,6 @@ ht-degree: 84%
 
 ## 찾기 및 바꾸기 {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 **바꾸기** 작업은 맨 위 도구 모음에서 선택한 콘텐츠 조각에서 지정된 텍스트를 찾아서 바꿀 수 있습니다.
 
 ![찾기 및 바꾸기](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ ht-degree: 84%
 >찾기 및 바꾸기 작업은 선택한 최대 20개의 콘텐츠 조각에서만 수행할 수 있습니다(한 번에).
 >
 >콘텐츠 조각을 20개 이상 선택하면 **찾아 바꿀 수 없음** 메시지가 표시됩니다.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![바꾸기 확인](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ ht-degree: 84%
 
 선택하면 **필터링 기준** 옵션이 표시됩니다(검색 상자 아래). 여기에서 선택을 취소할 수 있습니다. 예:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![콘텐츠 조각 콘솔 - 필터링](assets/cf-managing-console-filter.png)
 
 ### 빠른 필터링 {#fast-filtering}
@@ -488,13 +462,9 @@ ht-degree: 84%
 
 검색 상자는 전체 텍스트 검색을 지원합니다. 검색 상자에 검색어를 입력합니다.
 
-<!-- CQDOC-21349: screenshot -->
-
 ![콘텐츠 조각 콘솔 - 검색](assets/cf-managing-console-search-specification.png)
 
 선택한 결과가 제공됩니다.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![콘텐츠 조각 콘솔 - 검색 결과](assets/cf-managing-console-search-results.png)
 

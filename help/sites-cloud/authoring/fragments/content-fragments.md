@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 90%
@@ -14,17 +14,17 @@ ht-degree: 90%
 
 # 콘텐츠 조각 {#content-fragments}
 
-Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 만들고 관리](/help/sites-cloud/administering/content-fragments/overview.md)되므로 변형과 함께 채널 중립적인 컨텐츠를 만들 수 있습니다(채널별로 가능). 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 만들고 관리](/help/sites-cloud/administering/content-fragments/overview.md)되므로 변형과 함께 채널 중립적인 컨텐츠를 만들 수 있습니다(채널별로 가능). 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
 >[!CAUTION]
 >
->이 페이지는 [콘텐츠 조각에서 사용](/help/sites-cloud/administering/content-fragments/overview.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각을 만들고 관리하는 방법, 구조화된 콘텐츠 조각을 AEM 페이지 이외의 채널에 전달하는 방법에 대한 정보도 함께 소개합니다.
+>이 페이지는 [콘텐츠 조각에서 사용](/help/sites-cloud/administering/content-fragments/overview.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각 생성과 관리, 구조화된 콘텐츠 조각을 AEM 페이지 이외의 채널에 전달하는 방법에 대한 정보도 함께 소개합니다.
 
 >[!NOTE]
 >
 >콘텐츠 조각은 **Sites** 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔과 함께 관리되지만 **[자산](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서도 계속 관리될 수 있습니다.
+>이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔과 함께 관리되지만 **[자산](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서도 계속 관리될 수 있습니다.
 >
 >콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다.
 >

@@ -5,7 +5,7 @@ landing-page-description: Adobe Experience Manager as a Cloud Service에서 Head
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 96%
@@ -44,9 +44,9 @@ AEM as a Cloud Service는 다음과 같은 세 가지 강력한 기능을 제공
 1. **콘텐츠 조각**
    * 콘텐츠 조각은 콘텐츠 조각 모델을 기반으로 생성됩니다.
    * 콘텐츠 조각은 콘텐츠 작성자가 AEM 콘텐츠 조각 편집기를 사용하여 생성합니다.
-   * 콘텐츠 조각은 AEM Assets으로 저장되지만 자산 콘솔 또는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)을 통해 관리할 수 있습니다.
+   * 콘텐츠 조각은 AEM Assets으로 저장되지만 자산 콘솔 또는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)을 통해 관리할 수 있습니다.
 1. **게재를 위한 콘텐츠 API**
-   * 사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교가 필요하면 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
+   * 사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교는 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
 
    * [콘텐츠 조각 핵심 구성 요소의 JSON 내보내기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)를 통해 직접 콘텐츠 게재도 가능합니다.
 

@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
+source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
 workflow-type: tm+mt
-source-wordcount: '3120'
-ht-degree: 84%
+source-wordcount: '3175'
+ht-degree: 83%
 
 ---
 
@@ -22,6 +22,12 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
 1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model)
 1. **정책**&#x200B;을 구성하여 [필요한 자산 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
+
+>[!NOTE]
+>
+>콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
+>
+>콘텐츠 조각 및 콘텐츠 조각 모델은 이제 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔을 통해 주로 관리되지만 콘텐츠 조각은 **Assets** 콘솔과 **도구** 콘솔의 콘텐츠 조각 모델에서 계속 관리할 수 있습니다. 이 섹션에서는 **Assets** 및 **도구** 콘솔의 관리에 대해 설명합니다.
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 

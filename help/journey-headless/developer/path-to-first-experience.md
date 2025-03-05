@@ -5,8 +5,8 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 
@@ -153,6 +153,6 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM 아키텍처에 대한 전체 개요
 * [Headless 설정](/help/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자가 AEM의 Headless 기능을 파악할 수 있는 간략한 소개.
-* [콘텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서
+* [콘텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서
 * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 콘텐츠 조각에 대한 기술 설명서
 * [GraphQL로 콘텐츠 쿼리](/help/headless/graphql-api/content-fragments.md) - GraphQL API에 대한 기술 설명서

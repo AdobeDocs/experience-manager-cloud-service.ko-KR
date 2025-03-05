@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -271,7 +271,7 @@ tbc...
 
 * [콘텐츠 조각 작업](/help/sites-cloud/administering/content-fragments/overview.md) - 콘텐츠 조각의 리드 인 페이지
    * [구성 브라우저의 콘텐츠 조각](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 구성 브라우저의 콘텐츠 조각 기능 활성화
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델 만들기 및 편집
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - 콘텐츠 조각 모델 만들기 및 편집
    * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md) - 콘텐츠 조각을 만들고 작성하면 이 페이지를 통해 다른 세부 섹션으로 이동합니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL이 모델을 실현하는 방법
 * [샘플 콘텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

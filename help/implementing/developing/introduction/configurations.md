@@ -1,10 +1,10 @@
 ---
 title: 구성 및 구성 브라우저
-description: AEM(Adobe Experience Manager) 구성과 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
+description: Adobe Experience Manager(AEM) 구성과 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -19,12 +19,12 @@ Adobe Experience Manager(AEM) 구성은 AEM에서 설정을 관리하고 작업 
 
 구성은 두 가지 다른 관점에서 고려될 수 있다.
 
-* [관리자](#configurations-administrator)는 AEM 내의 작업 영역으로 구성을 사용하여 설정 그룹을 정의하고 관리합니다.
-* [개발자](#configurations-developer)는 AEM에서 설정을 유지하고 찾는 구성을 구현하는 기본 구성 메커니즘을 사용합니다.
+* [관리자](#configurations-administrator)는 AEM에서 구성을 작업 영역으로 사용하여 설정 그룹을 정의하고 관리합니다.
+* [개발자](#configurations-developer)는 AEM에서 설정을 유지하고 조회하는 구성을 구현하는 기본 구성 메커니즘을 사용합니다.
 
 요약: 관리자의 관점에서 구성은 AEM에서 설정을 관리하는 작업 영역을 만드는 방법이지만 개발자는 AEM이 저장소 내에서 이러한 구성을 사용하고 관리하는 방법을 이해해야 합니다.
 
-사용자의 관점에서 볼 때 구성은 AEM에서 두 가지 주요 목적을 제공합니다.
+사용자의 관점에서 볼 때, 구성은 AEM에서 두 가지 주요 목적을 제공합니다.
 
 * 구성은 특정 사용자 그룹에 대해 특정 기능을 사용할 수 있도록 합니다.
 * 구성은 이러한 기능에 대한 액세스 권한을 정의합니다.
@@ -36,7 +36,7 @@ AEM 관리자 및 작성자는 구성을 작업 공간으로 고려할 수 있�
 AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [편집 가능한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)
 * 다양한 클라우드 구성
 
@@ -82,7 +82,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
       * 필요한 경우 조정할 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [편집 가능한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)
    * 다양한 클라우드 구성
 1. **만들기**&#x200B;를 선택합니다.
@@ -192,7 +192,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
    * 런타임 시 읽기 전용
 1. `/libs`
    * AEM 제품 기본값
-   * Adobe에 의해서만 변경 가능하며, 프로젝트 액세스는 허용되지 않습니다.
+   * Adobe에 의해서만 변경되며, 프로젝트 액세스는 허용되지 않습니다.
    * 애플리케이션 배포로 수정됨
    * 런타임 시 읽기 전용
 

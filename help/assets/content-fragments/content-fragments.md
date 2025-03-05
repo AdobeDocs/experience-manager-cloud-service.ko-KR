@@ -1,20 +1,20 @@
 ---
 title: 컨텐츠 조각을 사용한 작업(Assets - 컨텐츠 조각)
-description: Adobe Experience Manager(AEM as a Cloud Service)의 콘텐츠 조각을 통해 페이지 작성 및 Headless 게재에 이상적인 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 적합한 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2247'
 ht-degree: 59%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조각을 사용하여 페이지를 정의하지 않고 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 [다중 사이트 관리 기능을 함께 사용하여 콘텐츠를 다시 사용할 수 있습니다](#reusing-content-fragments-with-msm).
+Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 [다중 사이트 관리 기능을 함께 사용하여 콘텐츠를 다시 사용할 수 있습니다](#reusing-content-fragments-with-msm).
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -39,7 +39,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->이제 **Assets** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔로 관리됩니다. 이 섹션에서는 **Assets** 콘솔의 관리에 대해 설명합니다.
+>콘텐츠 조각 및 콘텐츠 조각 모델은 이제 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔을 통해 주로 관리되지만 콘텐츠 조각은 **Assets** 콘솔과 **도구** 콘솔의 콘텐츠 조각 모델에서 계속 관리할 수 있습니다. 이 섹션에서는 **Assets** 및 **도구** 콘솔의 관리에 대해 설명합니다.
 >
 >콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오. 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
 
