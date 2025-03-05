@@ -3,9 +3,9 @@ title: 사용자 정의 검색 필터
 description: 검색 필터 양식 사용자 지정에 대해 알아보기
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
+source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1280'
 ht-degree: 13%
 
 ---
@@ -376,7 +376,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
         <ul>
         <li>새 값을 추가하려면 <b>추가</b>를 클릭하십시오. 
         <li>레이블을 편집하려면 <span>✎</span>을(를) 클릭하십시오. 
-        <li>옵션 값을 삭제하려면 <img src="assets/do-not-localize/delete-icon.png">을(를) 클릭하십시오. 
+        <li>옵션 값을 삭제하려면 <span>??</span>을(를) 클릭하십시오. 
         <li>편집 옵션을 수정하려면 <b>편집</b>을 클릭하십시오. 
         <li>옵션을 유지한 채 옵션 순서를 변경할 수도 있습니다.
         </td>
