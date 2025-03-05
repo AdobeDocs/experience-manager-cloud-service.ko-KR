@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 85%
+source-wordcount: '2686'
+ht-degree: 84%
 
 ---
 
@@ -237,6 +237,7 @@ ht-degree: 85%
 
    * **위치** - 현재 위치로 자동 완료되었지만 필요한 경우 다른 위치를 선택할 수 있습니다.
    * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각의 기반으로 사용할 모델을 선택합니다.
+   * **자동 태그** - 이 옵션을 선택하면 콘텐츠 조각 모델에 할당된 모든 태그가 새 콘텐츠 조각에 상속되고 추가됩니다.
    * **제목**
    * **이름** - **제목**&#x200B;을 기반으로 자동 완성되지만 필요한 경우 편집할 수 있습니다.
    * **설명**
