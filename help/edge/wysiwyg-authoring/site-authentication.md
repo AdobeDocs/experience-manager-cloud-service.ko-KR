@@ -3,13 +3,13 @@ title: 콘텐츠 작성을 위한 사이트 인증 구성
 description: AEM Live에서 토큰 기반 인증을 지원하는 방법 및 WYSIWYG 작성에서 인증을 사용하도록 AEM을 구성하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # 콘텐츠 작성을 위한 사이트 인증 구성 {#site-authentication}
 
@@ -46,11 +46,13 @@ AEM Live는 토큰 기반 인증을 지원합니다. 사이트 인증은 일반�
 사이트 인증이 구성되면 AEM 작성 환경에서 활성화할 수 있습니다.
 
 1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동한 다음 사이트에 대해 자동으로 만들어진 구성을 선택하고 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
-1. **Edge Delivery Services 구성** 창에서 **인증** 탭을 선택하고 사이트 인증을 구성할 때 기록한 다음 값을 제공합니다.
-
-   * **기술 계정 ID**
-   * **사이트 인증 토큰**
+1. **Edge Delivery Services 구성** 창에서 **인증** 탭을 선택하고 이전에 복사한 **사이트 인증 토큰**&#x200B;을(를) 제공합니다.
 
    ![Edge Delivery Services 구성](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. **기술 계정 ID**&#x200B;가 이전에 복사한 ID와 일치하는지 확인하십시오.
+
+   * 이 필드는 읽기 전용이며 사전 정의됩니다.
+   * 기술 계정은 단일 AEM 작성 환경의 모든 사이트에 대해 동일합니다.
 
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.

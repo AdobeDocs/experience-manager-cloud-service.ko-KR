@@ -4,9 +4,9 @@ description: 대부분 동일하게 보이고 동작하지만 콘텐츠가 다�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 
 사이트 구성이 매핑되면 기술 계정을 정의하여 게시 권한을 갖도록 액세스 제어를 구성할 수 있습니다.
 
-1. 브라우저에서 다음 링크의 응답으로 기술 계정을 검색합니다.
+1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동한 다음 사이트에 대해 자동으로 만들어진 구성을 선택하고 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. **Edge Delivery Services 구성** 창에서 **인증** 탭을 선택하고 **기술 계정 ID**&#x200B;의 값을 복사합니다.
 
-1. 응답은 다음과 비슷합니다.
+   * `<tech-account-id>@techacct.adobe.com`과(와) 비슷하게 보입니다.
+   * 기술 계정은 단일 AEM 작성 환경의 모든 사이트에 대해 동일합니다.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. 다음과 유사한 cURL 명령을 사용하여 구성에서 기술 계정을 설정합니다.
+1. 복사한 기술 계정 ID를 사용하여 다음과 유사한 cURL 명령을 사용하여 무시 구성에 대한 기술 계정을 설정합니다.
 
    * `admin` 블록을 조정하여 사이트에 대한 전체 관리 액세스 권한을 가져야 하는 사용자를 정의합니다.
       * 이메일 주소 배열입니다.
