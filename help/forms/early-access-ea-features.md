@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 26%
@@ -147,7 +147,7 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 자세한 내용은 다음을 참조하십시오.
 
 * [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
-* [양식 및 문서 사용 통찰력 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [양식 및 문서 사용 통찰력 해석](/help/forms/using-the-value-realization-dashboard.md)
 
 ## 추가적인 조기 액세스 혁신
 

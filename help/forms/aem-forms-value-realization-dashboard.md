@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # 가치 실현 대시보드 이해
 
 ![Fvalue 실현 대시보드](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> 이 기능은 일부 선택한 고객에게만 사용되는 베타 기능입니다. </span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오. <span>
+
 
 양식이 제공하는 가치를 이해하기 위한 원스톱 샵에 오신 것을 환영합니다! 이 대시보드는 양식을 최적화하고 워크플로우를 간소화하며 궁극적으로 목표를 더 빨리 달성할 수 있는 중요한 통찰력을 제공합니다.
 
-이 문서에서는 가치 실현 대시보드와 그 이점에 대한 개념적인 개요를 제공합니다. 자세한 사용 지침 및 지표 해석은 [값 실현 대시보드를 사용하여 양식 사용 인사이트 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)을 참조하십시오.
+이 문서에서는 가치 실현 대시보드와 그 이점에 대한 개념적인 개요를 제공합니다. 자세한 사용 지침 및 지표 해석은 [값 실현 대시보드를 사용하여 양식 사용 인사이트 해석](/help/forms/using-the-value-realization-dashboard.md)을 참조하십시오.
 
 
-![값 실현 대시보드](/help/forms/assets/forms-usage-insights.png)
+
 
 ## 대시보드에는 무엇이 있나요? {#content-of-dashboard}
 
 이 대시보드는 양식 사용의 세계를 보여 주는 창입니다. 다음은 주요 섹션에 대한 분류입니다.
+
 
 ### 시간에 따른 양식 및 문서 활동
 
@@ -44,8 +46,6 @@ ht-degree: 0%
 * **양식 조각 재사용**: 다른 양식에서 이러한 조각이 사용되는 빈도를 측정합니다.
 
 
-
-
 ## 이것이 당신에게 어떤 도움이 됩니까? {#benefits-to-you}
 
 이 대시보드를 통해 양식에 대한 데이터 기반의 의사 결정을 내릴 수 있습니다. 방법은 다음과 같습니다.
@@ -53,6 +53,8 @@ ht-degree: 0%
 * **인기 있는 Forms 식별**: 높은 제출률은 중요한 양식을 나타냅니다. 다른 항목에서 복제하기 위한 모범 사례를 분석합니다.
 * **양식 만들기 최적화**: 병목 현상을 식별하여 만들기 시간을 줄입니다. 미리 빌드된 템플릿을 탐색하거나 워크플로우를 간소화합니다.
 * **조각 재사용 활성화**: 재사용 가능한 조각의 공동 작업 및 검색 기능을 장려합니다. 잘 구성된 조각 라이브러리는 효율성을 크게 향상시킬 수 있습니다.
+
+  ![값 실현 대시보드](/help/forms/assets/forms-usage-insights.png)
 
 
 ## 인사이트를 작업으로 만들기 {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ ht-degree: 0%
 
 ## 추가 참조
 
-* [사용 인사이트 해석](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [대시보드를 사용하여 Forms 및 문서 사용 트렌드 분석](/help/forms/using-the-value-realization-dashboard.md)
