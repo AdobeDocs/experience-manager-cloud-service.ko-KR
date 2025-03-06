@@ -1,15 +1,15 @@
 ---
-title: Content Hub 탐색
+title: Content Hub 개요
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
+source-git-commit: db23c4309454c69b784405ef14b54166db7c7cf2
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
-# Content Hub 탐색 {#overview-content-hub}
+# Content Hub 개요 {#overview-content-hub}
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
