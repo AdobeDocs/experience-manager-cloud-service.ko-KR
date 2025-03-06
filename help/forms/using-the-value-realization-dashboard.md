@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # 값 실현 대시보드를 사용하여 양식 및 문서 사용 트렌드 분석
 
 <span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오. <span>
 
 ![값 실현 대시보드](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 &quot;Forms 사용 인사이트&quot; 대시보드에 표시된 지표를 정기적으로 모니터링하면 양식, 문서 및 양식 조각의 성능에 대한 중요한 인사이트를 얻을 수 있습니다. 이 데이터를 사용하여 양식 디자인, 조각 관리 및 전체 양식 전략에 대한 정보에 입각한 결정을 내릴 수 있습니다.
 
