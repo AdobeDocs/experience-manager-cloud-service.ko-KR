@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 59%
+source-wordcount: '1419'
+ht-degree: 47%
 
 ---
 
@@ -122,19 +122,27 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 ### Java 21 지원 {#java21}
 
-이제 Java 21로 코드를 작성할 수 있습니다. 여기에는 새로운 기능(예: switch 문에 대한 패턴 매칭, 봉인된 클래스)과 성능 개선이 포함됩니다. Java 17 빌드도 새롭게 지원됩니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
+1월 릴리스 정보에서 언급한 바와 같이 이제 Java 21을 사용하여 코드를 작성할 수 있습니다. 이 코드에는 새로운 기능(예: 스위치 문에 대한 패턴 일치, 봉인 클래스) 및 성능 개선이 포함됩니다. Java 17 빌드도 새로 지원됩니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
 
 Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런타임**&#x200B;이 자동으로 배포됩니다. 그러나 Java 11로 빌드된 환경에서는 Java 21 런타임을 선택하는 것도 좋습니다. 이를 위해서는 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내 문의하시기 바랍니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아보십시오.
 
 >[!IMPORTANT]
 >
-> Java 21 **런타임**&#x200B;은 Java 17 또는 21로 이미 빌드된 환경을 제외한 **모든** 환경에 점진적으로 배포될 예정입니다. 2월에는 샌드박스 및 개발/RDE 환경부터 시작되며, 4월에는 스테이지 및 프로덕션 환경으로 확대될 예정입니다.
+> 2월에 Java 21 **runtime**&#x200B;이(가) 개발/RDE 환경에 배포되었습니다(이미 Java 21 런타임이 있는 Java 17 또는 21로 빌드된 환경 제외). Java 21은 4월에 스테이지/프로덕션 환경에 적용됩니다.
 
-### 샌드박스 프로그램은 구성 파이프라인을 지원합니다. {#sandbox-config-pipelines}
+### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
-샌드박스 프로그램은 이제 구성 파이프라인을 지원하며, 이를 Cloud Manager에서 구성하여 git에서 지속되는 YAML 파일을 배포할 수 있습니다.
+에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe은 이 기술이 AEM Publish 게재 및 Edge Delivery Services 프로젝트에 유용한지 알고 싶습니다. 또한 제품 로드맵 입력에 입력용으로 사용할 계획을 알려 주십시오.
 
-콘텐츠 전송 네트워크 구성, 로그 전달, 버전 삭제/감사 로그 삭제 유지 관리 작업을 설정할 수 있는 구성 파이프라인에 대해 [자세히 알아보십시오](/help/operations/config-pipeline.md).
+몇 가지 가능한 사용 사례:
+* 콘텐츠에 대한 액세스 게이트를 위한 IdP를 사용한 인증
+* 지리적 위치, 장치 유형, 사용자 특성 등을 기반으로 동적(개인화된, 지역화된) 콘텐츠 렌더링
+* 고급 이미지 조작
+* CDN과 원본 사이의 미들웨어
+* API 응답을 다시 포맷하기 위한, 브라우저와 서드파티 API 사이의 계층
+* 여러 원본의 데이터를 집계하여 클라이언트 브라우저에서 보다 쉽게 렌더링할 수 있습니다.
+
+질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
 
 ### OpenAPI 기반 API - 얼리 어답터 프로그램 {#open-apis-earlyadopter}
 
@@ -148,10 +156,6 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [Forms 커뮤니케이션 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
-
-에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe는 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지에 대한 귀하의 의견을 듣고 싶습니다. 또한 제품 로드맵에 반영할 수 있도록 이 기술을 어떻게 활용할 계획인지 알려 주십시오. 질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
 
