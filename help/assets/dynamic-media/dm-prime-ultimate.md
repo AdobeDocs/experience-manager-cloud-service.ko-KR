@@ -3,7 +3,7 @@ title: Dynamic Media Prime 및 Ultimate
 description: Dynamic Media Prime 및 Ultimate, 해당 이점 및 둘 간의 차이점에 대해 자세히 알아보십시오.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 14%
@@ -28,13 +28,9 @@ AEM as a Cloud Service에서 Dynamic Media 기본 기능과 고급 기능이 필
 Dynamic Media Prime의 다른 주요 이점 중 일부는 다음과 같습니다.
 
 * 디지털 자산의 중앙 집중식 관리
-
 * 게재 URL에 반영되는 실시간 업데이트
-
 * 브랜드 일관성
-
 * 웹에 최적화된 이미지 제공
-
 * 응용 비디오 스트리밍
 
 ### 사전 요구 사항 {#pre-requisites-dm-prime}
@@ -57,9 +53,7 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변형(회전
 * [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md), 다음 주요 기능도 포함됩니다.
 
    * [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [템플릿 기본 사항](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [시각적 구성](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 사전 요구 사항 {#pre-requisites-dm-ultimate}
@@ -71,4 +65,3 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변형(회전
 전체 기능 목록에 대한 자세한 내용은 [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
 
 AEM as a Cloud Service 환경에 Dynamic Media Prime 및 Ultimate을 활성화하는 방법에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate 활성화](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)를 참조하십시오.
-
