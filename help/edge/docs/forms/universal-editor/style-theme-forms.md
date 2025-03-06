@@ -4,7 +4,7 @@ description: Edge Delivery Services를 통해 제공되는 AEM Forms의 테마�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 96%
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # 양식 모양 사용자 정의
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 
 Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheets)를 사용하여 양식 필드의 스타일을 지정하고 양식의 시각적 표현을 향상시키며 사용자 경험을 향상시킬 수 있습니다.

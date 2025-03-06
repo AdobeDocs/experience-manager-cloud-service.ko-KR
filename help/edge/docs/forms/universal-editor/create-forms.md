@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d7e59c16e90e3632140eae08dc2c25b2dd1df5a7
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 49%
 
 ---
 
-
 # 범용 편집기를 사용하여 독립 실행형 양식 작성(WYSIWYG)
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 이 문서에서는 양식 만들기 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 유니버설 편집기로 독립형 양식을 작성하는 프로세스를 안내합니다. 범용 편집기로 작성된 양식을 AEM Edge Delivery Services에 게시할 수도 있습니다.
 
@@ -163,5 +163,3 @@ URL 구조는 스테이징된 버전과 라이브 버전 모두에서 동일하�
 ## 양식 만들기 시작
 
 {{universal-editor-see-also}}
-
-

@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 1%
@@ -14,8 +14,7 @@ ht-degree: 1%
 
 # Edge Delivery Services Forms을 사용한 Forms 제출 서비스
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
-
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 Forms 제출 서비스를 사용하면 양식 제출의 데이터를 OneDrive, SharePoint 또는 Google Sheets와 같은 스프레드시트에 저장할 수 있으므로 원하는 스프레드시트 플랫폼 내에서 양식 데이터에 쉽게 액세스하고 관리할 수 있습니다.
 

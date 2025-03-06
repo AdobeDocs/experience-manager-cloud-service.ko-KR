@@ -4,7 +4,7 @@ description: Edge Delivery Services 양식을 빠르고 원활하게 게시할 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 87%
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # Edge Delivery Services에 적응형 양식 게시
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 
 양식이 완성되어 사용할 준비가 되면 고객이 데이터를 수집하고 제출할 수 있도록 양식을 게시할 수 있습니다. 게시를 통해 Edge Delivery에서 양식을 사용할 수 있으므로 사용자가 원활하게 상호 작용할 수 있습니다. 이 프로세스를 통해 고객은 실시간으로 양식을 작성하고 제출할 수 있으며, 효율적인 데이터 수집과 간소화된 처리를 보장합니다.

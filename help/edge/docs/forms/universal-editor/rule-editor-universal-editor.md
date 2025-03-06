@@ -4,7 +4,7 @@ description: 범용 편집기의 규칙 편집기를 사용하면 코딩이나 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # WYSIWYG 작성의 규칙 편집기 소개
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 
 규칙 편집기를 사용하여 규칙을 만들면 동적 양식 비헤이비어를 추가할 수 있습니다. 이러한 규칙을 사용하면 조건부 필드 가시성이 높아지고, 사용자 입력을 기반으로 계산이 자동화되며, 전반적인 사용자 경험이 향상됩니다. 규칙 편집기는 양식 작성 프로세스를 간소화하여 정확성과 효율성을 모두 보장하는 데 도움이 됩니다.

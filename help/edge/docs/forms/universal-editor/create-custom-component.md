@@ -4,7 +4,7 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1773'
 ht-degree: 87%
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # WYSIWYG 작성 사용자 정의 구성 요소 만들기
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 
 Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론트엔드 개발자가 맞춤형 양식 구성 요소를 구축할 수 있도록 합니다. 이러한 사용자 정의 구성 요소는 WYSIWYG 작성 환경에 완벽하게 통합되어 양식 작성자가 양식 편집기 내에서 쉽게 추가, 구성 및 관리할 수 있습니다. 사용자 정의 구성 요소를 통해 작성자는 기능을 향상시키면서 원활하고 직관적인 작성 과정을 보장할 수 있습니다.

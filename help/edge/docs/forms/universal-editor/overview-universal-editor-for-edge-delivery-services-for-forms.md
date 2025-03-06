@@ -4,7 +4,7 @@ description: Forms용 Edge Delivery Services 범용 편집기를 사용하여 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 70%
@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # Forms용 Edge Delivery Services 유니버설 편집기
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 범용 편집기는 간단하고, 시각적이며, 직관적인 What You See Is What You Get(WYSIWYG) 인터페이스를 제공하여 Adobe Edge Delivery Services에 대한 양식 작성에 혁신을 줍니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
 
