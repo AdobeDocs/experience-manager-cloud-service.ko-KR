@@ -2,9 +2,10 @@
 title: Dynamic Media Prime 및 Ultimate
 description: Dynamic Media Prime 및 Ultimate, 해당 이점 및 둘 간의 차이점에 대해 자세히 알아보십시오.
 role: User
-source-git-commit: dce23f34cab2248d65e0e19d98fdfd529eadbdc6
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
+source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '417'
 ht-degree: 14%
 
 ---
@@ -44,18 +45,16 @@ Dynamic Media Prime의 다른 주요 이점 중 일부는 다음과 같습니다
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
-Dynamic Media Ultimate은 Experience Manager Assets에 대한 활성화 서비스로, OpenAPI 기본 및 고급 기능을 갖춘 Dynamic Media와 AEM as a Cloud Service의 Dynamic Media 솔루션이 포함되어 있습니다. 이를 통해 조직은 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 다양한 유형의 풍부한 컨텐츠를 실시간으로 생성하고 제공할 수 있습니다.
+Dynamic Media Ultimate은 Experience Manager Assets의 활성화 서비스로, OpenAPI가 포함된 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 기본 및 고급 기능과 [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md)을(를) 포함합니다. 이를 통해 조직은 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 다양한 유형의 풍부한 컨텐츠를 실시간으로 생성하고 제공할 수 있습니다.
 
 Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변형(회전, 자르기, 뒤집기, 크기, Preferwebp, 높이, 너비, 품질) 및 최적화된 전달과 같은 Dynamic Media Prime 기능 외에도 Dynamic Media Ultimate은 다음을 제공합니다.
 
-* OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 고급 기능을 제공합니다.
+* OpenAPI를 사용하는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 기능:
 
    * 자산의 안전한 전달,
    * [스마트 자르기, 스마트 이미징, 이미지 사전 설정 및 추가 이미지 수정자](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/).
 
 * [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md), 다음 주요 기능도 포함됩니다.
-
-   * [콘텐츠 자동화](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/overview)
 
    * [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
 
@@ -70,3 +69,6 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변형(회전
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 전체 기능 목록에 대한 자세한 내용은 [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
+
+AEM as a Cloud Service 환경에 Dynamic Media Prime 및 Ultimate을 활성화하는 방법에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate 활성화](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)를 참조하십시오.
+
