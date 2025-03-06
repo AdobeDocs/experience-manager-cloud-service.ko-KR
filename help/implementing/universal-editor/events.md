@@ -4,9 +4,9 @@ description: 범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ ht-degree: 2%
 
 ## UI 이벤트 {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-`BODY` 수준에서 호출을 사용하여 콘텐츠가 게시될 때 `aue:ui-publish` 이벤트가 트리거됩니다.
-
-페이로드는 항목 ID 및 게시 상태 목록입니다.
-
-### aue:ui-select {#ui-select}
-
-구성 요소를 선택하면 `aue:ui-select` 이벤트가 트리거됩니다.
-
-페이로드는 선택한 구성 요소의 항목 ID, 항목 속성 및 항목 유형입니다.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 페이지의 편집 모드가 **미리 보기**(으)로 변경되면 `aue:ui-preview` 이벤트가 트리거됩니다.
@@ -271,7 +248,6 @@ ht-degree: 2%
 
 | 이벤트 | 비헤이비어 |
 |---|---|
-| `aue:ui-publish` | 아무 작업도 하지 않음 |
 | `aue:ui-select` | 선택한 요소로 스크롤 |
 | `aue:ui-preview` | HTML 태그에 `class="adobe-ue-preview"` 추가 |
 | `aue:ui-edit` | HTML 태그에 `class=adobe-ue-edit"` 추가 |
