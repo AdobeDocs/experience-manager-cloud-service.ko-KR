@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3694'
 ht-degree: 6%
 
 ---
@@ -33,9 +33,9 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 >[!NOTE]
 >
->비디오의 메타데이터 및 관련 비디오 이미지 썸네일을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 Dynamic Media을 활성화하고 비디오 Cloud Service을 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 사용하도록 설정하고 비디오 Cloud Service을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+>비디오의 메타데이터 및 관련 비디오 이미지 썸네일을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media를 사용하도록 설정하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로가 자동으로 적용됩니다. Dynamic Media를 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.
 >
->메타데이터는 에셋을 검색할 때 유용합니다. 썸네일은 인코딩 중에 생성되는 정적 비디오 이미지입니다. 카드 보기, 검색 결과 보기 및 에셋 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 되도록 Experience Manager 시스템에서 요구하고 사용자 인터페이스에 사용됩니다. 인코딩된 비디오의 렌디션 아이콘(Painter 팔레트)을 선택하면 생성된 썸네일을 볼 수 있습니다.
+>메타데이터는 에셋을 검색할 때 유용합니다. 썸네일은 인코딩 중에 생성되는 정적 비디오 이미지입니다. Experience Manager 시스템에 필요하며 사용자 인터페이스에 사용되어 카드 보기, 검색 결과 보기 및 에셋 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 렌디션 아이콘(Painter 팔레트)을 선택하면 생성된 썸네일을 볼 수 있습니다.
 
 비디오 프로필을 만든 후에는 폴더 또는 여러 폴더에 적용합니다. [폴더에 비디오 프로필 적용](#applying-a-video-profile-to-folders)을 참조하세요.
 
@@ -126,7 +126,7 @@ Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디�
 
 ## 적응형 비트율 스트리밍을 위한 비디오 프로필 만들기 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필(MP4 H.264에 대한 비디오 업로드 설정 그룹)이 포함되어 있으며 이는 최상의 보기 환경에 최적화되어 있습니다. 비디오를 업로드할 때 이 프로필을 사용할 수 있습니다.
+Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필(MP4 H.264에 대한 비디오 업로드 설정 그룹)이 포함되어 있으며 최고의 보기 환경에 최적화되어 있습니다. 비디오를 업로드할 때 이 프로필을 사용할 수 있습니다.
 
 그러나 이 사전 정의된 프로필이 사용자의 요구를 충족하지 않으면 고유한 응용 비디오 인코딩 프로필을 만들도록 선택할 수 있습니다. **[!UICONTROL 적응형 스트리밍용 인코딩]** 설정을 사용하는 경우 프로필에 추가하는 모든 인코딩 사전 설정의 유효성을 검사하는 것이 좋습니다. 이 기능을 사용하면 모든 비디오의 종횡비가 동일합니다. 또한, 인코딩된 비디오는 스트리밍을 위해 설정된 멀티비트율로 처리됩니다.
 
@@ -274,7 +274,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
    <td><code>keyframe</code></td>
    <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300입니다.<br /> <br /> 낮은 키프레임 간격은 응용 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하며 많은 동작이 포함된 비디오의 품질을 향상시킬 수도 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
-   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 비트율 스트리밍)에 대한 권장 값은 60-90입니다. (비디오에 DASH를 사용하려면 먼저 계정에서 Adobe 기술 지원 팀에서 활성화해야 합니다. <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>을 참조하세요.)</p> </td>
+   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 비트율 스트리밍)의 권장 값은 60-90입니다.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
    <td><code>audioBitrateCustom</code></td>
    <td>오디오 코덱에서 지원하는 경우 오디오 스트림에 대한 상수 비트 전송률을 적용하려면 값을 <code>true</code>(으)로 설정하십시오.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>HLS 또는 DASH의 권장 값은 <code>false</code>입니다. (비디오에 DASH를 사용하려면 먼저 계정에서 Adobe 기술 지원 팀에서 활성화해야 합니다. <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>을 참조하세요.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>HLS 또는 DASH에 대한 권장 값은 <code>false</code>입니다.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -311,7 +311,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 
 만든 비디오 프로필을 편집하여 해당 프로필 내에서 비디오 사전 설정을 추가, 편집 또는 삭제할 수 있습니다.
 
-기본적으로 Dynamic Media과 함께 제공되는 미리 정의된 기본 **[!UICONTROL 응용 비디오 인코딩]** 프로필을 편집할 수 없습니다. 대신 프로필을 쉽게 복사하여 새 이름으로 저장할 수 있습니다. 그런 다음 복사한 프로필에서 원하는 사전 설정을 편집할 수 있습니다.
+기본적으로 Dynamic Media와 함께 제공되는 미리 정의된 기본 **[!UICONTROL 응용 비디오 인코딩]** 프로필을 편집할 수 없습니다. 대신 프로필을 쉽게 복사하여 새 이름으로 저장할 수 있습니다. 그런 다음 복사한 프로필에서 원하는 사전 설정을 편집할 수 있습니다.
 
 [비디오 인코딩 모범 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)도 참조하세요.
 
@@ -393,13 +393,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 ### 비디오 프로필을 전체적으로 적용 {#applying-a-video-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 Experience Manager 에셋에 업로드된 모든 콘텐츠에 선택한 프로필이 적용되도록 전역적으로 프로필을 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 Experience Manager 에셋에 업로드된 모든 콘텐츠에 선택한 프로필이 적용되도록 전역적으로 적용할 수도 있습니다.
 
 [폴더에서 에셋 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)도 참조하세요.
 
 **비디오 프로필을 전역적으로 적용하려면:**
 
-* `/content/dam/jcr:content` CRXDE Lite으로 이동합니다. `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
+* `/content/dam/jcr:content` 노드로 CRXDE Lite으로 이동합니다. `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
   ![chlimage_1-519](assets/chlimage_1-519.png)
 * [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
@@ -408,7 +408,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 비디오 프로필 처리 작업의 진행 상황을 시각적으로 모니터링할 수 있도록 처리 표시기(또는 진행률 표시줄)가 표시됩니다.
 
-`error.log` 파일을 보고 인코딩 작업의 진행 상황을 모니터링하거나 인코딩이 완료되었는지 확인하거나 작업 오류를 확인할 수도 있습니다. Experience Manager 인스턴스가 설치된 `logs` 폴더에서 `error.log`을(를) 찾았습니다.
+`error.log` 파일을 보고 인코딩 작업의 진행 상황을 모니터링하거나 인코딩이 완료되었는지 확인하거나 작업 오류를 확인할 수도 있습니다. `error.log`은(는) Experience Manager 인스턴스가 설치된 `logs` 폴더에 있습니다.
 
 ## 폴더에서 비디오 프로필 제거 {#removing-a-video-profile-from-folders}
 
