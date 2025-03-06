@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.2.0 �
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 100%
 * 새로운 프로토콜(DASH - Dynamic Adaptive Streaming over HTTP)이 적응형 스트리밍을 위해 Dynamic Media 비디오 게재(CMAF 활성화)에서 시작되었습니다.
    * 적응형 스트리밍(DASH/HLS)은 비디오에 대한 더 나은 사용자 시청 경험 보장
    * DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있음
-   * NA에서 사용 가능, 지원 티켓을 통해 활성화, 곧 APAC, EMEA에서 제공 예정
 
 * WebP 이미지에 대한 지원이 추가되어 자동으로 메타데이터를 추출하고 썸네일 및 사용자 정의 렌디션을 생성합니다. 이제 이러한 파일에 대해 스마트 태그 및 스마트 자르기 기능도 지원됩니다.
 
@@ -98,7 +97,7 @@ Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사�
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
