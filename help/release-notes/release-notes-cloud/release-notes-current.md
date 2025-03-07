@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 47%
@@ -46,25 +46,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### AEM Sites의 새로운 기능 {#new-features-sites}
 
-** 조각 자동 태그 지정 **
+**콘텐츠 조각 자동 태그 지정**
 
 이제 콘텐츠 조각을 만들 때 콘텐츠 모델에 지정된 태그를 자동으로 상속할 수 있습니다. 이를 통해 콘텐츠 조각에 저장된 콘텐츠를 자동으로 강력하게 분류할 수 있습니다.
 
-** 조각 UUID 지원 **
+**콘텐츠 조각 UUID 지원**
 
 이제 콘텐츠 조각 UUID 지원이 GA됩니다. 새로운 기능은 경로가 자동으로 조정되는 이동, 이름 변경, 롤아웃과 같은 AEM 내 작업의 경로 기반 비헤이비어를 변경하지는 않지만, 특히 ByPath 쿼리로 개별 조각을 직접 타겟팅하는 GraphQL 쿼리를 사용하는 경우 콘텐츠 조각의 외부 사용을 더 쉽고 안정적으로 만들 수 있습니다. 조각 경로가 변경되면 이러한 쿼리가 중단될 수 있습니다. 새 ById 쿼리 유형을 사용할 때 이제 경로가 허용하는 경우 조각의 UUID가 변경되지 않으므로 쿼리가 안정적으로 유지됩니다.
 
-** 조각 편집기 및 GraphQL 애플리케이션에서 OpenAPI를 지원하는 Dynamic Media **
+**콘텐츠 조각 편집기 및 GraphQL에서 OpenAPI를 지원하는 Dynamic Media**
 
 컨텐츠 조각이 아닌 다른 AEM as a Cloud Service 프로그램에 저장되고 OpenAPI 기능이 있는 새 Dynamic Media로 활성화된 Assets을 이제 컨텐츠 조각에서 사용할 수 있습니다. 이제 새 콘텐츠 조각 편집기의 이미지 선택기에서 조각에서 참조할 이미지 에셋의 소스로 &quot;원격&quot; 저장소를 선택할 수 있습니다. 그리고 AEM GraphQL을 사용하여 이러한 컨텐츠 조각을 전달할 때 이제 JSON 응답에 원격 자산에 대한 필수 속성(assetId, repositoryId)이 포함되므로 클라이언트 애플리케이션은 이미지를 가져오기 위해 OpenAPI URL을 사용하여 각 Dynamic Media를 만들 수 있습니다.
 
-** 번역 HTTP API **
+**번역 HTTP API**
 
 한동안 얼리어답터 모드였던 AEM 번역 HTTP REST API는 이제 GA입니다. 설명서는 [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)에서 찾을 수 있습니다. API를 사용하면 AEM의 콘텐츠에 대한 번역 관리 프로세스의 필수 단계를 자동화할 수 있습니다.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
