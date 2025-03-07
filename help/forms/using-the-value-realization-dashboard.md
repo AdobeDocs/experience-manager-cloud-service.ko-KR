@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 Forms 사용 통찰력 대시보드에 액세스하려면:
 
 1. **Forms** > **Forms 및 문서**(으)로 이동
-1. **인사이트 대시보드**&#x200B;를 클릭합니다. 대시보드가 새 창에 열립니다.
+1. **제품 내 대시보드**&#x200B;를 클릭합니다. 대시보드가 새 창에 열립니다.
 
    ![값 실현 대시보드](/help/forms/assets/forms-usage-insights.png)
 

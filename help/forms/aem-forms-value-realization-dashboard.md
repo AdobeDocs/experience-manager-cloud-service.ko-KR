@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 0%
 * **양식 제출**: 양식이 완료되는 빈도의 추세를 확인하세요.
 * **문서 변환**: 시간이 지남에 따라 렌더링되는 문서의 수를 추적합니다.
 * **Forms 생성 및 게시**: 새 양식을 작성하고 배포하는 속도를 모니터링합니다.
-* **양식 만들기 및 게시 시간**: 양식을 만들고 게시하기 위한 평균 시간을 분석하여 개선할 영역을 파악합니다.
 
 ### 조각 사용
 
