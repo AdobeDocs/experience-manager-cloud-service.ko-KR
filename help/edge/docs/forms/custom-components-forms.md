@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +59,7 @@ CSS로 스타일을 추가하고 구성 요소를 장식하는 사용자 정의 
 사용자 정의 함수를 추가하려면
 
 1. `[../Form Block/components]`으로 이동합니다.
-1. 이름이 `range.js`인 파일을 찾습니다. 없는 경우 만듭니다.
+1. 이름이 `range.js`인 파일을 찾습니다. 없다면 만듭니다.
 1. 다음 코드 줄 추가:
 
    ```javascript
@@ -214,7 +215,7 @@ CSS 파일에서 구성 요소의 스타일을 추가하려면
 
 ### AEM Sidekick을 사용하여 양식 미리 보기
 
-`range` 구성 요소의 스타일을 지정하는 새로 구현된 함수를 사용하여 양식을 미리 봅니다.
+`range` 구성 요소의 스타일을 지정하는 새로 구현된 기능이 포함된 양식을 미리 봅니다.
 
 ![사용자 정의 구성 요소 양식](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## 추가 참조
 
 {{see-more-forms-eds}}
-
-
-
-
