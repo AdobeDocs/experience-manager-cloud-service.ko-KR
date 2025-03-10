@@ -4,7 +4,7 @@ description: ' [!DNL Dynamic Media] Prime 및 Ultimate 서비스를 활성화하
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -47,7 +47,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 
 1. [Cloud Manager 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [프로그램에  [!DNL Dynamic Media] 솔루션](#configure-dynamic-media-solutions)이 포함되어 있습니다.
-1. 조직에 OpenAPI 크레딧이 있는 [!DNL Dynamic Media]이(가) 있습니다.
+1. [!DNL Dynamic Media] Prime 또는 Ultimate 라이선스가 있습니다.
 
 #### Cloud Service 환경에서 [!DNL Dynamic Media with OpenAPI] 기능 사용 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ Cloud Manager에서 사용 가능한 기존 또는 새로운 환경에서 [Dynam
 [!UICONTROL Dynamic Media] 솔루션을 구성하려면 다음 사항이 있는지 확인하십시오.
 
 1. [Cloud Manager 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. 조직에 [!DNL Dynamic Media with OpenAPI]학점이 있습니다.
+1. [!DNL Dynamic Media] Ultimate 라이선스가 있습니다.
 
 #### 자산 배달을 위한 [!DNL Dynamic Media] 솔루션 구성 {#configure-dynamic-media-solutions-for-asset-delivery}
 
