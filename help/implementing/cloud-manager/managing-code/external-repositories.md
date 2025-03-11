@@ -4,10 +4,10 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 37%
+source-wordcount: '1597'
+ht-degree: 38%
 
 ---
 
@@ -136,6 +136,9 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 암호를 일반 텍스트 파일에 붙여넣습니다. 복사된 암호는 Git 공급업체의 Webhook 설정에 필요합니다.
 1. **닫기**&#x200B;를 클릭합니다.
 1. Git 공급업체 솔루션(GitHub Enterprise, GitLab 또는 Bitbucket)으로 이동합니다.
+
+   Webhook 구성에 대한 모든 세부 정보와 각 공급업체에 필요한 이벤트는 [외부 저장소 추가](#add-ext-repo)에서 확인할 수 있습니다. 8단계에서 표를 참조하십시오.
+
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
    1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
@@ -145,11 +148,6 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
 1. Cloud Manager에서 예상하는 적절한 이벤트를 전송하도록 웹후크를 구성합니다.
 
-   Webhook 구성에 대한 모든 세부 정보와 각 공급업체에 필요한 이벤트는 다음 위치에서 확인할 수 있습니다.
-
-   * [GitHub Enterprise Server에 대한 웹 후크 설정](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-github-pat?id=webhook-events).
-   * [GitLab에 대한 웹후크 설정](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-gitlab-pat?id=webhook-events).
-   * [Bitbucket에 대한 웹 후크를 설정합니다](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-bitbucket-pat?id=webhook-events).
 
 ### 웹후크를 사용한 풀 요청 유효성 검사
 
