@@ -4,7 +4,7 @@ description: ' [!DNL Dynamic Media] Prime 및 Ultimate 서비스를 활성화하
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
+source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -65,7 +65,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
    1. **[!UICONTROL 환경 단계]**: **[!UICONTROL 실행 중]**
    1. ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능이 활성화됨&#x200B;]**
 
-      ![활성화 성공](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![활성화 성공](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### 활성화 다시 시도 {#retry-activation}
 
@@ -74,7 +74,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 * **[!UICONTROL 환경 단계]**: **[!UICONTROL OpenAPI를 사용한 DM 실패]**
 * ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능을 활성화하지 못함&#x200B;]**
 
-  ![활성화 다시 시도](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![활성화 다시 시도](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 활성화를 다시 시작하려면 **[!UICONTROL 다시 시도하려면 클릭]**&#x200B;을 선택하세요.
 
@@ -109,7 +109,7 @@ Cloud Manager에서 사용 가능한 기존 또는 새로운 환경에서 [Dynam
 
 1. **[!UICONTROL Dynamic Media]** 솔루션을 선택하고 **[!UICONTROL 계속]**&#x200B;을 클릭하여 **[!UICONTROL Dynamic Media]** 솔루션을 프로그램에 추가합니다. 이 작업은 프로그램의 모든 기존 환경을 다시 시작하고 [!DNL Dynamic Media] 솔루션을 추가합니다. 또한 프로그램에서 만드는 새 환경은 자동으로 [!DNL Dynamic Media]을(를) 받습니다.
 
-   ![프로덕션에 설정](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![프로덕션에 설정](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 [활성화 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)를 참조하여 환경에서 OpenAPI 기능을 사용하여 [!DNL Dynamic Media]의 기능을 사용해 보세요.
 
@@ -123,7 +123,7 @@ IMS 조직에서 기존 회사(계정)를 보거나 새 [!DNL Dynamic Media] 회
 
 1. [Cloud Manager 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. 조직의 [!DNL Dynamic Media with OpenAPI]학점입니다.
+1. [!DNL Dynamic Media] Ultimate 라이선스가 있습니다.
 
 #### IMS 조직에서 [!DNL Dynamic Media]개 회사 만들고 나열 {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
@@ -135,7 +135,7 @@ IMS 조직에서 기존 회사(계정)를 보거나 새 [!DNL Dynamic Media] 회
 
 1. 고유한 [!DNL Dynamic Media] 회사 이름을 지정하고, 회사 지역을 선택하고, 쉼표로 구분된 회사 관리자 전자 메일 ID 목록을 추가하십시오.
 
-   ![Dynamic Media 회사 만들기](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![Dynamic Media 회사 만들기](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. 회사 만들기를 시작하려면 **[!UICONTROL 만들기]**&#x200B;를 클릭하세요. 이 작업은 **[!UICONTROL [!DNL Dynamic Media]개의 회사]** 섹션에 새 행을 추가하고 **[!UICONTROL 설정]**&#x200B;을(를) 회사의 **[!UICONTROL 상태]**(으)로 표시합니다.
 
@@ -155,11 +155,11 @@ IMS 조직에서 기존 회사(계정)를 보거나 새 [!DNL Dynamic Media] 회
 
 1. **[!UICONTROL 상태]**&#x200B;가 보류 중인 경우 문제 해결을 위해 고객 지원 팀에 문제를 제기하십시오.
 
-   ![보류 중인 상태](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![보류 중인 상태](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. **[!UICONTROL Status]**&#x200B;이(가) 실패한 경우 실패 이유에 따라 다시 시도하십시오.
 
-   ![실패 상태](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![실패 상태](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### 선택 사항: 게재 계층에서 사용자 정의 도메인 구성 {#configure-custom-domain-in-delivery-tier}
 
@@ -196,7 +196,7 @@ Cloud Manager에서 다음 단계를 실행하여 게재 계층에서 사용자 
 
 1. **[!UICONTROL CNAME 구성]** 단계를 실행하여 DNS 서비스 공급자의 DNS 레코드에 [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/)&#x200B;(CNAME 레코드)을 매핑합니다. 이 매핑을 통해 사용자 정의 도메인에서 받은 요청을 Adobe의 CDN으로 리디렉션할 수 있습니다.
 
-   ![실시간 준비 대화 상자](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![실시간 준비 대화 상자](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하세요. **[!UICONTROL 상태]**&#x200B;가 **[!UICONTROL 확인]**(으)로 업데이트됩니다. 사용자 정의 도메인을 게재 URL에서 사용할 준비가 되었습니다.
 
@@ -267,7 +267,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
-TBD: Wiki in progress.
+TBD: Wiki in progress..
 -->
 
 ## [!DNL Dynamic Media] Prime 사용 {#enable-dynamic-media-prime}
