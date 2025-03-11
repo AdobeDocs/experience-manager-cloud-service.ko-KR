@@ -1,19 +1,19 @@
 ---
 title: Cloud Manager에서 외부 저장소 추가 - 제한된 베타
-description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager는 GitHub, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise Server, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 40%
+source-wordcount: '1618'
+ht-degree: 37%
 
 ---
 
 # Cloud Manager에서 외부 저장소 추가 - 제한된 베타 {#external-repositories}
 
-Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager는 GitHub, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise Server, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | 토큰 유형 | 설명 |
    | --- | --- |
    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-   | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>· 필요한 권한은 [GitHub용 새 PAT 만들기](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-github-pat)를 참조하십시오.<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
-   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>· 필요한 권한은 [GitLab용 새 PAT 만들기](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-gitlab-pat)를 참조하십시오.<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
-   |  | **저장소 유형: Bitbucket**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<br>· 필요한 사용 권한에 대해서는 [Bitbucket용 새 PAT 만들기](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/create-new-bitbucket-pat)를 참조하십시오. |
+   | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>· 필요한 권한에 대해서는 다음 정보를 참조하십시오. ![GitHub용 새 PAT 만들기](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>· **액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣으십시오. |
+   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>· 필요한 권한에 대해서는 다음 정보를 참조하십시오. ![GitLab에 대한 새 PAT 만들기](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>· **액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣으십시오. |
+   |  | **저장소 유형: Bitbucket**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<br>· 필요한 사용 권한에 대해서는 다음 정보를 참조하십시오. ![Bitbucket에 대한 새 PAT 만들기](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png). |
 
    >[!NOTE]
    >

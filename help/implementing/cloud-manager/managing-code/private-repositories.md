@@ -4,16 +4,26 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 39%
+source-wordcount: '979'
+ht-degree: 34%
 
 ---
 
-# Cloud Manager에 개인 GitHub 저장소 추가 {#private-repositories}
+# Cloud Manager에 개인 GitHub Cloud 저장소 추가 {#private-repositories}
 
-Cloud Manager을 설정하여 개인 GitHub 리포지토리와 통합하면 Cloud Manager을 사용하여 GitHub 내에서 직접 코드를 확인할 수 있습니다. 이 구성에서는 코드를 Adobe 저장소와 정기적으로 동기화해야 하는 요구 사항이 제거됩니다.
+Cloud Manager을 설정하여 개인 GitHub Cloud(`github.com`에 호스팅된 저장소)와 통합하면 Cloud Manager을 사용하여 GitHub 내에서 직접 코드의 유효성을 검사할 수 있습니다. 이 구성에서는 코드를 Adobe 저장소와 정기적으로 동기화해야 하는 요구 사항이 제거됩니다.
+
+>[!NOTE]
+>
+>웹후크를 사용하여 다음 저장소 유형을 추가할 수도 있습니다.
+>
+>* GitHub Enterprise Server(GitHub의 자체 호스팅 버전) 저장소
+>* GitLab(GitLab의 `gitlab.com` 및 자체 호스팅 버전 모두) 저장소
+>* Bitbucket 저장소(`bitbucket.org` 및 Bitbucket 서버, 자체 호스팅 버전의 BitBucket)
+>
+>[Cloud Manager에서 외부 저장소 추가 - 제한된 베타](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -25,23 +35,22 @@ Cloud Manager을 설정하여 개인 GitHub 리포지토리와 통합하면 Clou
 
 * **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
 
-In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager. -->
+In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager.
 
 >[!NOTE]
 >
->이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
 
 ## 구성 {#configuration}
 
-Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구성됩니다.
+Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다음 두 단계로 구성됩니다.
 
-1. 선택한 프로그램에 [개인 GitHub 저장소를 추가](#add-repo)합니다.
-1. 그런 다음 [개인 GitHub 리포지토리의 소유권을 확인](#validate-ownership)합니다.
+1. 선택한 프로그램에 [개인 GitHub Cloud 저장소를 추가](#add-repo)합니다.
+1. 그런 다음 [개인 GitHub 클라우드 리포지토리의 소유권을 확인](#validate-ownership)합니다.
 
->[!NOTE]
->Cloud Manager은 GitHub Cloud(github.com)에서만 개인 저장소를 지원합니다. <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
 
-### 프로그램에 개인 GitHub 저장소 추가 {#add-repo}
+
+### 프로그램에 개인 GitHub Cloud 저장소 추가 {#add-repo}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -110,11 +119,11 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 
 
 
-## Cloud Manager에서 개인 GitHub 저장소 사용 {#using}
+## Cloud Manager에서 개인 GitHub Cloud 저장소 사용 {#using}
 
 Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합이 완료됩니다. Cloud Manager에서 저장소를 사용할 수 있습니다.
 
-**Cloud Manager로 비공개 저장소를 사용하려면:**
+**Cloud Manager에서 개인 GitHub Cloud 저장소를 사용하려면:**
 
 1. 가져오기 요청을 만들면 GitHub 검사가 자동으로 시작됩니다.
 
@@ -138,7 +147,7 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 
 
 
-## 비공개 저장소를 파이프라인과 연결 {#pipelines}
+## 파이프라인과 비공개 GitHub Cloud 저장소 연결 {#pipelines}
 
 유효성이 확인된 비공개 저장소는 [전체 스택 및 프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)과 연결될 수 있습니다.
 
@@ -146,12 +155,12 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 
 ## 제한 사항 {#limitations}
 
-Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
+Cloud Manager에서 개인 GitHub Cloud 저장소를 사용할 때 특정 제한 사항이 적용됩니다.
 
 * 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
 * GitHub 조직에서 Adobe GitHub 앱을 제거하면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
-* 새 커밋이 선택한 분기에 푸시될 때 개인 저장소 및 &quot;커밋 중&quot; 빌드 트리거를 사용하는 파이프라인이 자동으로 시작되지 않습니다.
+* 새 커밋이 선택한 분기에 푸시될 때 개인 GitHub 클라우드 저장소 및 &quot;커밋 중&quot; 빌드 트리거를 사용하는 파이프라인이 자동으로 시작되지 않습니다.
 * [아티팩트 재사용 기능](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
 * Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
 Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.
