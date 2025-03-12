@@ -4,9 +4,9 @@ description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Migration validation took 0 minutes
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.  또한 이 보고서의 끝에는 마이그레이션 후 사용자 관리에 사용할 수 있는 사용자 보고서가 있습니다.
+요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. 전체 CSV(쉼표로 구분) 사용자 마이그레이션 보고서를 다운로드하려면 **파일 다운로드...** 아래의 드롭다운 목록에서 **사용자 마이그레이션 보고서**&#x200B;를 선택하고 **다운로드** 단추를 클릭합니다. 또한 이 보고서의 끝에는 마이그레이션 후 사용자 관리에 사용할 수 있는 사용자 보고서가 있습니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 사용자 마이그레이션 보고서는 다음과 같이 보고합니다.
 
 * 각 그룹이 마이그레이션되었으며 해당 그룹을 마이그레이션하도록 트리거한 첫 번째 콘텐츠 경로. 그룹은 다른 경로에 있을 수도 있지만 지정된 그룹에 대해 발견된 첫 번째 콘텐츠만 보고됩니다. 또한 ACL 또는 CUG 정책에서 검색되었는지 여부도 보고합니다.
+* 로컬 그룹으로 마이그레이션된 각 그룹의 줄에 &quot;local&quot;이라는 단어가 표시됩니다.
 * 각 그룹이 마이그레이션되지 않았고 마이그레이션되지 않은 이유입니다.  일반적으로 다음과 같은 이유 중 하나일 것입니다.
    * 기본 제공 그룹입니다.
    * 이미 타겟 시스템에 있습니다.

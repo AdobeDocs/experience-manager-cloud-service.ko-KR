@@ -2,10 +2,10 @@
 title: 마이그레이션 후 주체 관리
 description: IMS 및 AEM에서 사용자 및 그룹을 설정하는 방법 알아보기
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
-source-wordcount: '773'
-ht-degree: 100%
+source-git-commit: 1c638f3d1cca4f97eb1f760054febd405b5714f5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 79%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 
 이 문서에서는 AEM as a Cloud Service 환경을 사용하기 위해 IMS 및 AEM에서 사용자 및 그룹을 설정하는 데 취해야 할 주요 단계를 설명합니다.
 
+각 수집에서 사용할 수 있는 그룹 마이그레이션 및 사용자 마이그레이션 보고서에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하십시오.
+
+Admin Console에서 대량 그룹 및 사용자 파일 사용에 대한 지침은 [CTT 사용 후 IMS에 사용자 일괄 업로드](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)를 참조하십시오.
+
 ## 주체 관리 {#managing-principals}
 
 AEM as a Cloud Service의 경우 사용자와 그룹은 주로 Admin Console을 사용하여 관리해야 합니다.  마이그레이션을 고려할 때 이러한 작업 중 일부는 콘텐츠 마이그레이션이 이루어지기 전에 수행할 수 있습니다.  기본적으로 이러한 주요 작업 그룹에는 다음과 같은 것이 있습니다.
@@ -26,7 +30,7 @@ AEM as a Cloud Service의 경우 사용자와 그룹은 주로 Admin Console을 
 * IMS에서 그룹에 사용자 할당
 * IMS 그룹을 AEM 그룹에 할당(필요한 경우)
 
-앞의 두 개는 콘텐츠 마이그레이션 전 또는 후에 수행할 수 있습니다.  이러한 단계는 IMS의 사용자 및 그룹에만 영향을 미치는 단계이며, Active Directory 또는 LDAP와 같은 외부 IDP와의 통합도 포함할 수 있습니다.  이들 단계는 [Admin Console을 사용하는 IMS의 주체 관리](/help/journey-migration/managing-principals.md)에 설명되어 있습니다.
+처음 두 작업은 콘텐츠 마이그레이션 이전 또는 이후에 수행할 수 있습니다.  이러한 단계는 IMS의 사용자 및 그룹에만 영향을 미치는 단계이며, Active Directory 또는 LDAP와 같은 외부 IDP와의 통합도 포함할 수 있습니다.  이들 단계는 [Admin Console을 사용하는 IMS의 주체 관리](/help/journey-migration/managing-principals.md)에 설명되어 있습니다.
 
 콘텐츠가 AEM as a Cloud Service 환경으로 마이그레이션되면 세 번째 단계를 수행할 수 있습니다.
 
@@ -36,13 +40,13 @@ AEM as a Cloud Service의 경우 사용자와 그룹은 주로 Admin Console을 
 
 마이그레이션된 그룹(Assets 컬렉션 생성에 의해 생성되지 않은 그룹 - 아래 컬렉션 참조)은 IMS 그룹으로 구성됩니다.  즉, IMS에서 생성된 동일한 이름의 그룹(예: Admin Console을 통해)은 AEM의 그룹에 연결되며, IMS 그룹의 멤버인 사용자도 AEM의 그룹 멤버가 됩니다.  이 연결이 이루어지려면 먼저 IMS에서 그룹을 만들어야 합니다.  [Admin Console을 사용하는 IMS의 주체 관리](/help/journey-migration/managing-principals.md)에 설명된 대로 Admin Console을 사용하여 AEM 인스턴스에서 개별적으로 또는 일괄로 그룹을 생성합니다.
 
-AEM 보안 UI를 사용하여 로컬 AEM 그룹에 IMS 그룹을 할당합니다.  [그룹 생성 및 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-groups#edit-a-group)을 참조하십시오.  이 문서는 AEM 6.5용이지만 AEM as a Cloud Service의 다른 그룹에 그룹을 추가하는 경우에도 적용됩니다.
+AEM 보안 UI를 사용하여 IMS 그룹을 로컬 AEM 그룹에 할당합니다. 이렇게 하려면 AEM의 [도구] 페이지로 이동하여 [보안]을 클릭하고 [그룹]을 선택합니다.
 
 ### IMS 사용자
 
 사용자는 마이그레이션되지 않으므로 AEM에서 사용할 수 있도록 IMS에서 생성해야 합니다.  이를 달성하는 방법은 여러 가지가 있지만, 생성된 사용자가 이전 AEM 시스템에서 사용했던 콘텐츠에 동일하게 액세스할 수 있도록 올바른 IMS 그룹에 할당하는 것이 중요합니다.  여기에 사용할 수 있는 도구 중 하나는 Admin Console의 일괄 업로드 기능입니다. 일괄 업로더를 사용하여 멤버로 소속되어야 할 그룹과 함께 사용자를 업로드할 수 있습니다.  이 작업을 수행하기 전에 위에서 설명한 대로 먼저 IMS에서 그룹을 만들어야 합니다.
 
-각 사용자가 멤버로 소속되어야 할 그룹을 확인하기 위해 사용자 보고서를 활용할 수 있습니다([그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) 참조).  이 보고서에는 각 사용자가 멤버로 소속되어야 할 그룹이 나열되어 있으며, 이 목록은 Admin Console 일괄 업로드 기능의 입력 파일에 포함될 수 있습니다.
+각 사용자가 멤버로 소속되어야 할 그룹을 확인하기 위해 사용자 보고서를 활용할 수 있습니다([그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) 참조).  이 보고서는 각 사용자가 구성원으로 포함되어야 하는 그룹을 나열하며, 이 목록은 일반적으로 Admin Console 일괄 업로드 기능과 함께 사용하기 위해 일괄 사용자 입력 파일에 포함됩니다.
 
 ### 컬렉션
 
@@ -55,4 +59,4 @@ Assets 컬렉션을 만들면 해당 컬렉션에 대한 액세스를 관리할 
 * Admin Console에서 새 그룹에 사용자를 추가(또는 일괄 업로드)합니다.
 * 사용자가 처음 로그인하면 IMS 사용자가 AEM에 생성되며, 사용자는 새 그룹과 원래 컬렉션 그룹에 액세스할 수 있게 됩니다.
 
-참고: 사용자를 일괄로 할당하려면 위의 단계를 사용하여 IMS에서 사용자를 만들어야 하며, 일괄 업로드를 통해 이미 IMS에 존재하는 사용자를 다시 만들 수 없습니다.
+참고: 사용자를 일괄 할당하는 경우 위의 단계를 사용하여 IMS에서 사용자를 만들어야 합니다. 일괄 편집기를 사용하여 이러한 종류의 변경을 수행할 수 있지만 IMS에 이미 있는 사용자는 일괄 업로드를 통해 다시 만들 수 없습니다(**사용자 세부 정보 편집**&#x200B;에서 [Admin Console 일괄 사용자 업로드](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) 참조).
