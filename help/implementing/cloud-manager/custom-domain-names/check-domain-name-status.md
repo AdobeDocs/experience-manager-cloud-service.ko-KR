@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 22%
 
 ---
@@ -76,7 +76,7 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 * 이 옵션을 사용하여 Apex 도메인과 모든 하위 도메인을 AEM as a Cloud Service Fastly 계정에 연결합니다. 자세한 내용은 [Fastly에서 도메인 작업 설명서](https://docs.fastly.com/en/guides/working-with-domains)를 참조하십시오.
 
-* Apex 도메인에 여러 Fastly 계정에 연결해야 하는 AEM as a Cloud Service 및 비 AEM 사이트에 대한 여러 하위 도메인이 있는 경우 Cloud Manager에 도메인 설치를 시도합니다. 이 프로세스는 다양한 Fastly 계정에서 하위 도메인 연결을 관리하는 데 도움이 됩니다. Adobe 설치에 실패한 경우 Fastly를 사용하여 고객 지원 티켓을 만들어 도메인이 사용자를 대신하여 Fastly를 사용하여 후속 조치를 취할 수 있도록 합니다.
+* Apex 도메인에 여러 Fastly 계정에 연결해야 하는 AEM as a Cloud Service 및 AEM이 아닌 사이트에 대한 여러 하위 도메인이 있는 경우 Cloud Manager에 도메인 설치를 시도합니다. 이 프로세스는 다양한 Fastly 계정에서 하위 도메인 연결을 관리하는 데 도움이 됩니다. 도메인 설치에 실패한 경우 Fastly를 사용하여 고객 지원 티켓을 생성하면 Adobe이 귀하를 대신하여 Fastly를 사용하여 후속 조치를 취할 수 있습니다.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 ## 사용자 정의 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
 
-사용자 정의 도메인 이름에 대한 CDN 구성이 이미 있는 경우 **사용자 정의 도메인 이름** 및 **환경** 페이지에 정보 메시지가 표시됩니다. Cloud Manager 내에서 관리 및 볼 수 있도록 UI를 통해 이러한 구성을 추가하는 것이 좋습니다.
+사용자 정의 도메인 이름에 대한 CDN(Content Delivery Network) 구성이 이미 있는 경우 **사용자 정의 도메인 이름** 및 **환경** 페이지에 정보 메시지가 나타납니다. Cloud Manager 내에서 관리 및 볼 수 있도록 UI를 통해 이러한 구성을 추가하는 것이 좋습니다.
 
 모든 기존 환경 구성이 UI를 사용하여 마이그레이션되면 메시지가 사라집니다. 메시지가 사라지는 데는 영업일 기준 1~2일이 소요될 수 있습니다.
 

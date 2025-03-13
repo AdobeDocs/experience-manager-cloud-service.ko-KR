@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1028'
+ht-degree: 16%
 
 ---
 
 
-# 사용자 정의 도메인 이름 추가 {#adding-cdn}
+# 사용자 정의 도메인 이름 추가 {#adding-custom-domain-name}
 
 Cloud Manager에서 **도메인 설정**&#x200B;을 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 
@@ -29,15 +29,15 @@ Cloud Manager에서 사용자 정의 도메인 이름을 추가하기 전에 이
 >
 >Adobe 관리 CDN을 사용하는 경우에도 Cloud Manager에 도메인을 추가해야 합니다.
 
-## 사용자 정의 도메인 이름을 추가할 위치 {#where-to-add-cdn}
+## 사용자 정의 도메인 이름을 추가할 위치 {#where-to-add-custom-domain-name}
 
 Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용자 지정 도메인 이름을 추가할 수 있습니다.
 
-사용자 정의 도메인 이름을 추가하면 도메인이 가장 구체적이고 유효한 인증서를 사용하여 제공됩니다. 여러 인증서에 동일한 도메인이 있으면 가장 최근에 업데이트된 이 선택됩니다. Adobe은 도메인이 겹치지 않도록 인증서를 관리할 것을 권장합니다.
+사용자 정의 도메인 이름을 추가하면 도메인이 가장 구체적이고 유효한 인증서를 사용하여 제공됩니다. 여러 인증서에 동일한 도메인이 있으면 가장 최근에 업데이트된 이 선택됩니다. Adobe에서는 도메인이 겹치지 않도록 인증서를 관리하는 것이 좋습니다.
 
 이 문서에 설명된 두 메서드의 단계는 Fastly를 기반으로 합니다. 다른 CDN(Content Delivery Network)을 사용한 경우 사용하기로 선택한 CDN으로 도메인을 구성합니다.
 
-## 사용자 정의 도메인 이름 추가 {#adding-cdn-settings}
+## 사용자 정의 도메인 이름 추가 {#adding-custom-domain-name-settings}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -63,7 +63,7 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
    | 인증서 유형 옵션 | 설명 |
    | --- | --- |
-   | Adobe 관리(DV) SSL 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe이 자동으로 인증서를 관리하고 갱신합니다. |
+   | Adobe 관리(DV) SSL 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe은 인증서를 자동으로 관리하고 갱신합니다. |
    | 고객 관리(OV/EV) SSL 인증서 | EV/OV SSL 인증서를 사용하여 도메인을 보호하려면 이 인증서 유형을 선택합니다. 이 옵션은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사)를 통해 향상된 보안을 제공합니다. 더 엄격한 인증, 더 높은 신뢰 수준 또는 인증서에 대한 사용자 지정 제어가 필요한 경우 사용합니다. |
 
 1. **도메인 확인** 대화 상자에서 선택한 인증서 유형에 따라 다음 중 하나를 수행합니다.
@@ -75,7 +75,7 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
    >[!NOTE]
    >
-   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하며 고객 관리 CDN ***provider***&#x200B;을(를) 사용하려는 경우 SSL 인증서 추가를 건너뛸 수 있습니다. 대신 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동합니다.
+   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하는 경우 SSL 인증서를 추가할 필요가 없습니다. 이 규칙은 고객 관리 CDN(Content Delivery Network) ***provider***&#x200B;을(를) 사용하려는 경우에도 적용됩니다. 대신 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동합니다.
 
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 

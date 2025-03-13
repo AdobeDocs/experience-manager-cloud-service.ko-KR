@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -19,9 +19,9 @@ Cloud Manager을 사용하면 사용자 정의 도메인 이름을 편집, 업�
 
 ## 사용자 정의 도메인 이름 구성 편집 {#view-and-update}
 
-Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 이름 구성을 편집할 수 있습니다.
+Adobe Cloud Manager에서 다음과 같은 이유로 사용자 정의 도메인 이름 구성을 편집할 수 있습니다.
 
-* **환경 전환**: 최종 사용자(Publish) 또는 내부 사용자(작성자)에게 콘텐츠를 제공하는지 여부에 따라 올바른 구성을 적용합니다.
+* **환경 전환**: 최종 사용자(게시) 또는 내부 사용자(작성자)에게 콘텐츠를 제공하는지 여부에 따라 올바른 구성을 적용합니다.
 * **보안 업데이트**: 향상된 보안 또는 규정 준수를 위해 최신 SSL 인증서로 업그레이드하려는 경우.
 * **배포 전략 변경**: 적절한 암호화 및 사이트 액세스를 위해 올바른 SSL 인증서가 특정 환경에 적용되도록 합니다.
 
@@ -31,7 +31,7 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 왼쪽 메뉴를 표시합니다.
+1. 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
 
 1. **서비스** 제목에서 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.
 
@@ -39,9 +39,9 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. **편집**&#x200B;을 클릭합니다.
 
-1. **CDN 구성 편집** 대화 상자에서 다음을 수행합니다.
+1. **도메인 구성 편집** 대화 상자에서 다음을 수행합니다.
 
-   * **계층** 드롭다운 목록에서 사용할 계층(Publish 또는 미리 보기)을 선택합니다.
+   * **계층** 드롭다운 목록에서 사용할 계층(게시 또는 미리보기)을 선택합니다.
    * **SSL 인증서** 드롭다운 목록에서 사용할 SSL 인증서를 선택합니다.
 
 1. **업데이트**&#x200B;를 클릭합니다.
@@ -74,7 +74,7 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
    | 인증서 유형 옵션 | 설명 |
    | --- | --- |
-   | Adobe 관리(DV) SSL 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe이 자동으로 인증서를 관리하고 갱신합니다. |
+   | Adobe 관리(DV) SSL 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe은 인증서를 자동으로 관리하고 갱신합니다. |
    | 고객 관리(OV/EV) SSL 인증서 | EV/OV SSL 인증서를 사용하여 도메인을 보호하려면 이 인증서 유형을 선택합니다. 이 옵션은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사)를 통해 향상된 보안을 제공합니다. 더 엄격한 인증, 더 높은 신뢰 수준 또는 인증서에 대한 사용자 지정 제어가 필요한 경우 사용합니다. |
 
 1. **도메인 확인** 대화 상자에서 선택한 인증서 유형에 따라 다음 중 하나를 수행합니다.
@@ -112,7 +112,7 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. **환경** 페이지에서 관심 환경의 세부 정보 화면으로 이동합니다.
 
-1. 도메인 이름 테이블에서 삭제하려는 사용자 정의 도메인 이름의 행을 식별합니다.
+1. 도메인 매핑 테이블에서 삭제하려는 사용자 정의 도메인 이름의 행을 식별합니다.
 
 1. 행의 오른쪽 끝에 있는 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
