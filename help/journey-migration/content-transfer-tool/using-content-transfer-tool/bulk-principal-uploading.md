@@ -1,13 +1,13 @@
 ---
 title: CTT 사용 후 IMS에 주도자 일괄 업로드
 description: 그룹 및 사용자를 위한 일괄 업로드 파일 및 Admin Console에서 이 파일을 사용하여 IMS에서 그룹 및 사용자를 만드는 방법에 대한 개요입니다.
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
+source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
-
 
 # CTT 사용 후 IMS에 주도자 일괄 업로드 {#bulk-principal-uploading}
 
@@ -28,10 +28,11 @@ CTT 및 CAM을 사용하여 콘텐츠를 클라우드로 마이그레이션하�
 
 두 종류의 업로드 파일을 모두 편집하고 사용하기 위한 몇 가지 일반 지침이 있습니다.
 
-* 이러한 지침을 따르려면 먼저 Admin Console에 대한 관리자 액세스 권한을 부여해야 합니다
-* IMS에서 사용자 및 그룹을 만드는 방법에는 몇 가지가 있습니다.  사용 가능한 모든 옵션에 대해 알아보려면 [Adobe Experience Manager as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)을 참조하세요.  Admin Console 벌크 업로드 방법만 여기에 설명되어 있습니다
-* IMS에는 **Adobe ID**, **Enterprise ID** 및 **Federated ID**&#x200B;과(와) 같은 세 가지 ID 유형이 있습니다. 이 페이지의 지침은 **Adobe ID 전용**&#x200B;에 제공됩니다.  Enterprise ID 또는 Federated ID을 사용해야 하는 경우 전체 [Admin Console 설명서](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)와 [Admin Console 일괄 그룹 업로드](https://helpx.adobe.com/kr/enterprise/using/user-groups.html) 및 [Admin Console 일괄 사용자 업로드](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html)에 대한 특정 설명서를 참조하십시오.  업로드 파일에 대한 사양은 이러한 두 ID 유형에 대해 다소 다릅니다
+* 이러한 지침을 따르려면 먼저 Admin Console에 대한 관리자 액세스 권한을 부여해야 합니다.
+* IMS에서 사용자 및 그룹을 만드는 방법에는 몇 가지가 있습니다.  사용 가능한 모든 옵션에 대해 알아보려면 [Adobe Experience Manager as a Cloud Service에 대한 IMS 지원](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/ims-support)을 참조하세요.  여기에서는 Admin Console 벌크 업로드 방법만 설명합니다.
+* IMS에서 가능한 ID 유형은 Adobe ID, Enterprise ID 및 Federated ID의 세 가지입니다.  이 페이지의 지침은 **Adobe ID 전용**&#x200B;에 제공됩니다.  Enterprise ID 또는 Federated ID을 사용해야 하는 경우 전체 [Admin Console 설명서](https://helpx.adobe.com/ca/enterprise/using/admin-console.html)와 [Admin Console 일괄 그룹 업로드](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) 및 [Admin Console 일괄 사용자 업로드](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html)에 대한 특정 설명서를 참조하십시오.  업로드 파일에 대한 사양은 이러한 두 ID 유형에 대해 다소 다릅니다.
 * 단일 CSV 필드에서 여러 개의 항목(예: 여러 제품 프로필, 여러 그룹 또는 여러 관리자)을 허용하는 경우 항목을 큰따옴표로 묶고 쉼표로 구분해야 합니다(예: `"profile 1,profile 2"`).
+
    * 이 경우 큰 따옴표 대신 작은 따옴표를 사용할 수 있지만 Microsoft Excel에서 파일을 편집하면 구문 분석 문제가 발생할 수 있습니다. Excel을 사용하여 이러한 파일을 편집하는 경우 작은 따옴표 대신 큰따옴표를 사용해야 합니다.
 
 ## 일괄 그룹 업로드 {#group-upload}
@@ -55,6 +56,7 @@ CTT/CAM 마이그레이션을 실행한 후 Admin Console의 벌크 그룹 업�
       * _사용자 그룹 관리자_ - 이 필드에는 최소 한 명 이상의 그룹 관리자가 포함되어야 합니다. 각 관리자를 쉼표로 구분하고 목록을 따옴표로 묶어 여러 관리자를 지정할 수 있습니다. 각 관리자의 항목에는 사용자의 ID 유형, 하이픈, 이메일 주소가 포함되어야 합니다.  예
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. 관리자를 쉼표로 구분하는 공백 뒤에 포함하지 마십시오. 현재 Admin Console에서 조직의 일부가 아닌 사용자를 관리자로 포함할 수 없습니다
       * _제품 프로필 할당_ - 이 필드는 선택 사항입니다. 각 프로필을 쉼표로 구분하고 목록을 따옴표로 묶어 여러 제품 프로필을 할당할 수 있습니다. 그러나 포함하는 제품 프로필은 이미 조직에 대해 설정되어 있어야 합니다. 제품 이름이 아닌 제품 프로필 이름을 지정해야 합니다.  그룹에 할당된 제품 프로필의 멤버십은 해당 그룹에 속한 모든 사용자에게 상속됩니다.  제품 프로필을 찾으려면
+
          1. Admin Console으로 이동
          1. 제품(즉, Adobe Experience Manager as a Cloud Service)을 찾아 클릭합니다.
          1. 환경(인스턴스)을 찾아 클릭합니다.
@@ -68,6 +70,7 @@ CTT/CAM 마이그레이션을 실행한 후 Admin Console의 벌크 그룹 업�
    1. 오른쪽에서 &quot;...&quot; 단추를 클릭합니다. 메뉴에서 **CSV로 사용자 그룹 추가**&#x200B;를 선택하고 업로드할 CSV를 선택하십시오. **업로드** 클릭
    1. CSV가 (Admin Console에) 업로드되지만 아직 IMS로 가져오기되지 않았다는 응답이 표시됩니다
    1. 동일한 &quot;...&quot; 메뉴로 이동한 다음 **일괄 작업 결과**&#x200B;을(를) 선택합니다. 일괄 업로드 시도 목록을 표시하고 일괄 업로드가 처리 중인지, 성공했는지, 아니면 실패했는지(**상태**&#x200B;에서) 알려줍니다
+
       * 처음에는 아직 완료되지 않았음을 나타내는 처리 중 이 표시됩니다
       * 완료되면 **사용자 그룹 추가** 링크를 클릭하여 각 줄에 대한 간단한 상태 메시지를 표시합니다.
       * 오류가 발생한 경우 **파일** 아래의 작은 아이콘을 클릭하면 오류가 발생한 이유에 대한 자세한 정보가 표시됩니다.  1행부터 시작되는 그룹 행 번호가 참조됩니다.
@@ -81,52 +84,52 @@ Admin Console에는 사용자 세부 사항을 업로드하고 편집하기 위�
 
 #### 사용 사례: 그룹이 AEM as a Cloud Service으로 마이그레이션되고 일괄 업로드 또는 기타 방법을 통해 업로드되었습니다.  사용자가 IMS/Admin Console에 없을 수 있으므로 업로드하고 Admin Console을 통해 IMS의 해당 그룹에 연결해야 합니다.
 
-Admin Console의 벌크 사용자 업로드 기능을 사용하려면 다음 단계를 수행하십시오.
-
-1. CAM에서 대량 사용자 파일 다운로드
-1. CAM에서 **콘텐츠 전송**(으)로 이동하여 **수집 작업**&#x200B;을(를) 선택하십시오.
-1. 해당 수집 줄의 줄임표(...)를 클릭하고 **사용자 요약 보기**&#x200B;를 선택합니다.
-1. 표시되는 대화 상자에서 **파일 다운로드...** 아래의 드롭다운 목록에서 **대량 사용자 파일**&#x200B;을 선택하고 **다운로드** 단추를 클릭합니다.
-1. 결과 CSV 파일 저장
-
 >[!NOTE]
 >
 >파일을 만드는 동안 수집된 그룹에 있는 사용자는 **일괄 사용자 업로드** 파일에 나타납니다. 사용자가 마이그레이션된 컨텐츠의 ACL 또는 CUG에 직접 있거나, 마이그레이션된 컨텐츠의 ACL 또는 CUG에 있는 기본 제공 그룹 또는 로컬 그룹의 멤버인 경우에도 표시될 수 있습니다. 이러한 경우에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
-* 대량 사용자 파일 편집
-* 각 줄에는 업로드할 사용자를 나타내며 15개의 필드가 있습니다(필드의 이름이 파일의 첫 줄을 구성함). 일부 필드는 선택 사항이며 여기에 설명되어 있지 않습니다. [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하세요.  필드는 다음과 같습니다.
-   * _ID 유형_ - 선택 사항입니다.  지정하지 않으면 Adobe ID으로 만들어집니다.
-   * _사용자 이름_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
-   * _도메인_ - 선택 사항이며, Adobe ID 업로드에 사용되지 않습니다.
-   * _전자 메일_ - 필수.  이메일 주소는 사용자가 처음 로그인할 때 확인에 사용됩니다.
-   * _이름_ - 선택 사항입니다.  여러 위치에 성(Last Name)과 함께 표시되므로 사용해야 합니다.
-   * _성_ - 선택 사항입니다.  여러 위치에 표시되므로 사용해야 합니다.
-   * _국가 코드_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
-   * _ID_ - 선택 사항이며, Adobe ID 업로드에 사용되지 않습니다.
-   * _제품 구성_ - 선택 사항입니다. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-   * _관리자 역할_ - 선택 사항입니다. 사용자가 관리자인 경우 이 필드를 사용합니다. 자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-   * _제품 구성 관리_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-   * _사용자 그룹_ - 선택 사항입니다. 멤버로 사용자를 할당해야 하는 그룹 목록입니다. 각 그룹은 이미 존재하는 IMS 그룹이어야 합니다. CAM에서 대량 사용자 파일을 다운로드하면 이 필드는 마이그레이션 전에 사용자가 멤버로 있었던(직접 또는 간접적으로) IMS 지원 그룹의 이름으로 미리 채워집니다
-   * _사용자 그룹 관리됨_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-   * _관리된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-   * _관리되는 계약_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-   * _개발자 액세스_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-   * _자동 할당된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+Admin Console의 벌크 사용자 업로드 기능을 사용하려면 다음 단계를 수행하십시오.
+
+1. CAM에서 대량 사용자 파일 다운로드
+   1. CAM에서 **콘텐츠 전송**(으)로 이동하여 **수집 작업**&#x200B;을(를) 선택하십시오.
+   1. 해당 수집 줄의 줄임표(...)를 클릭하고 **사용자 요약 보기**&#x200B;를 선택합니다.
+   1. 표시되는 대화 상자에서 **파일 다운로드...** 아래의 드롭다운 목록에서 **대량 사용자 파일**&#x200B;을 선택하고 **다운로드** 단추를 클릭합니다.
+   1. 결과 CSV 파일 저장
+1. 대량 사용자 파일 편집
+   * 각 줄에는 업로드할 사용자를 나타내며 15개의 필드가 있습니다(필드의 이름이 파일의 첫 줄을 구성함). 일부 필드는 선택 사항이며 여기에 설명되어 있지 않습니다. [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하세요.  필드는 다음과 같습니다.
+
+      * _ID 유형_ - 선택 사항입니다.  지정하지 않으면 Adobe ID으로 만들어집니다.
+      * _사용자 이름_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
+      * _도메인_ - 선택 사항이며, Adobe ID 업로드에 사용되지 않습니다.
+      * _전자 메일_ - 필수.  이메일 주소는 사용자가 처음 로그인할 때 확인에 사용됩니다.
+      * _이름_ - 선택 사항입니다.  여러 위치에 성(Last Name)과 함께 표시되므로 사용해야 합니다.
+      * _성_ - 선택 사항입니다.  여러 위치에 표시되므로 사용해야 합니다.
+      * _국가 코드_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
+      * _ID_ - 선택 사항이며, Adobe ID 업로드에 사용되지 않습니다.
+      * _제품 구성_ - 선택 사항입니다. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리자 역할_ - 선택 사항입니다. 사용자가 관리자인 경우 이 필드를 사용합니다. 자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _제품 구성 관리_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _사용자 그룹_ - 선택 사항입니다. 멤버로 사용자를 할당해야 하는 그룹 목록입니다. 각 그룹은 이미 존재하는 IMS 그룹이어야 합니다. CAM에서 대량 사용자 파일을 다운로드하면 이 필드는 마이그레이션 전에 사용자가 멤버로 있었던(직접 또는 간접적으로) IMS 지원 그룹의 이름으로 미리 채워집니다
+      * _사용자 그룹 관리됨_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리되는 계약_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _개발자 액세스_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _자동 할당된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+
    * CSV를 편집할 때 일부 애플리케이션은 저장 시 따옴표를 더 추가할 수 있으며 이로 인해 처리가 실패합니다. 간단한 텍스트 편집기에서 원시 CSV를 검사하여 각 필드에 여는 따옴표와 닫는 따옴표가 하나만 있는지(그리고 &quot;스마트 따옴표&quot;가 아니어야 함) 확인하는 것이 좋습니다.
 
-1. Admin Console에서 대량 사용자 파일 업로드
+1. Admin Console을 사용하여 대량 사용자 파일 가져오기
 
    1. Admin Console에서 사용자로 이동합니다.
    1. **CSV로 사용자 추가** 단추를 클릭합니다.
    1. CAM에서 다운로드한 벌크 사용자 CSV 파일을 드래그 앤 드롭하거나 선택합니다.
    1. **업로드** 단추를 클릭합니다.
    1. CSV가 (Admin Console에) 업로드되지만 아직 IMS로 가져오기되지 않았다는 응답이 표시됩니다.
+   1. 오른쪽의 &quot;...&quot; 메뉴로 이동한 다음 **일괄 작업 결과**&#x200B;를 선택합니다.  일괄 업로드 시도 목록을 표시하고 일괄 업로드가 처리 중인지, 성공했는지 또는 실패했는지 여부를 **상태**&#x200B;에 표시합니다.
 
-1. 오른쪽의 &quot;...&quot; 메뉴로 이동한 다음 **일괄 작업 결과**&#x200B;를 선택합니다.  일괄 업로드 시도 목록을 표시하고 일괄 업로드가 처리 중인지, 성공했는지 또는 실패했는지 여부를 **상태**&#x200B;에 표시합니다.
-
-   * 처음에는 아직 완료되지 않았음을 나타내는 처리 중 이 표시됩니다
-   * 완료되면 **사용자 추가** 링크를 클릭하여 각 줄에 대한 간단한 상태 메시지를 표시합니다
-   * 오류가 발생한 경우 **파일** 아래의 작은 아이콘을 클릭하면 오류가 발생한 이유에 대한 자세한 정보가 표시됩니다. 사용자 줄 번호는 1행부터 참조됩니다.
+      * 처음에는 아직 완료되지 않았음을 나타내는 처리 중 이 표시됩니다
+      * 완료되면 **사용자 추가** 링크를 클릭하여 각 줄에 대한 간단한 상태 메시지를 표시합니다
+      * 오류가 발생한 경우 **파일** 아래의 작은 아이콘을 클릭하면 오류가 발생한 이유에 대한 자세한 정보가 표시됩니다. 사용자 줄 번호는 1행부터 참조됩니다.
 
 1. Admin Console을 사용하여 변경 사항을 확인합니다.
 
@@ -164,8 +167,8 @@ Admin Console의 벌크 사용자 편집 기능을 사용하려면 다음 단계
    1. CSV가 (Admin Console에) 업로드되지만 아직 IMS로 가져오기되지 않았다는 응답이 표시됩니다
    1. 오른쪽의 &quot;...&quot; 메뉴로 이동한 다음 **일괄 작업 결과**&#x200B;를 선택합니다. 벌크 업로드 시도 목록을 표시하고 상태 아래에 벌크 업로드가 처리되는지, 성공했는지 또는 실패했는지 여부를 알려줍니다.
 
-   * 처음에는 아직 완료되지 않았음을 나타내는 처리 중 이 표시됩니다
-   * 완료되면 **사용자 세부 정보 편집** 링크를 클릭하여 각 줄에 대한 간단한 상태 메시지를 표시합니다
-   * 오류가 발생한 경우 **파일** 아래의 작은 아이콘을 클릭하면 오류가 발생한 이유에 대한 정보가 표시됩니다. 사용자 줄 번호는 1행부터 참조됩니다.
+      * 처음에는 아직 완료되지 않았음을 나타내는 처리 중 이 표시됩니다
+      * 완료되면 **사용자 세부 정보 편집** 링크를 클릭하여 각 줄에 대한 간단한 상태 메시지를 표시합니다
+      * 오류가 발생한 경우 **파일** 아래의 작은 아이콘을 클릭하면 오류가 발생한 이유에 대한 정보가 표시됩니다. 사용자 줄 번호는 1행부터 참조됩니다.
 
 1. Admin Console을 사용하여 변경 사항을 확인합니다.
