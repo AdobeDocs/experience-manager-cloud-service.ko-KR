@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4b8e0700f325b43f9142608641a75f9870c7784
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6065'
 ht-degree: 94%
 
 ---
@@ -697,16 +697,14 @@ ht-degree: 94%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [ [!DNL Workfront for Experience Manager enhanced connector]업데이트](/help/assets/update-workfront-enhanced-connector.md)
-
    + Adobe Express와 통합 {#integration-adobe-express}
       + [Adobe Express와 네이티브 통합](/help/assets/native-integration-adobe-express.md)
-
    + Creative Cloud와 통합 {#integration-creative-cloud}
       + [AEM Assets를 Creative Cloud에 연결](/help/assets/connect-assets-with-creative-cloud.md)
-
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
+      + [소개](/help/forms/home2.md)
       + [주요 Adobe Experience Manager Forms 혁신 사항](/help/forms/latest-innovations.md)
       + [얼리 액세스(EA) 기능](/help/forms/early-access-ea-features.md)
       + [주요 변경 사항](/help/forms/notable-changes.md)
