@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 85%
+source-wordcount: '1493'
+ht-degree: 95%
 
 ---
 
@@ -56,9 +56,13 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 콘텐츠 조각 UUID 지원은 이제 GA 상태입니다. 이 새로운 기능은 AEM 내에서 이동, 이름 바꾸기, 롤아웃과 같이 경로가 자동으로 조정되는 작업의 경로 기반 동작을 변경하지 않지만, 특히 ByPath 쿼리로 개별 조각을 직접 타기팅하는 GraphQL 쿼리를 사용할 때 콘텐츠 조각의 외부 사용을 더 쉽고 안정적으로 만들 수 있습니다. 이러한 쿼리는 조각 경로가 변경되면 중단될 수 있습니다. 새로운 ById 쿼리 유형을 사용하면 경로가 변경되어도 조각의 UUID는 변경되지 않으므로 쿼리가 안정적으로 유지됩니다.
 
-**콘텐츠 조각 편집기 및 GraphQL에서 OpenAPI를 지원하는 Dynamic Media**
+**콘텐츠 조각 편집기 및 GraphQL에서의 OpenAPI 포함 Dynamic Media 지원**
 
 콘텐츠 조각이 아닌 다른 AEM as a Cloud Service 프로그램에 저장된 자산이며 OpenAPI 기능이 포함된 새로운 Dynamic Media를 통해 활성화된 자산은 이제 콘텐츠 조각에서 사용할 수 있습니다. 새로운 콘텐츠 조각 편집기의 이미지 선택기를 사용하면 이제 조각에서 참조할 이미지 자산의 소스로 “원격” 저장소를 선택할 수 있습니다. 또한 AEM GraphQL을 사용하여 이러한 콘텐츠 조각을 게재할 때 JSON 응답에는 이제 원격 자산에 대한 필수 속성(assetId, repositoryId)이 포함되므로 클라이언트 애플리케이션에서 해당 OpenAPI 포함 Dynamic Media URL을 만들어 이미지를 가져올 수 있습니다.
+
+**콘텐츠 조각 편집기 롤아웃**
+
+AEM as a Cloud Service에서 새로운 스펙트럼 UI 기반 콘텐츠 조각 편집기를 계속 활성화합니다. 2024년 11월에 모든 Cloud Service 개발자 환경에 대한 기본값이 된 후 2025년 4월 1일에 모든 스테이지 환경에 대한 기본값으로 설정되고 2025년 5월 1일에 모든 프로덕션 환경에 대한 기본값으로 설정됩니다. 모든 경우 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 되돌릴 수 있습니다.
 
 **번역 HTTP API**
 
@@ -120,27 +124,27 @@ AEM Forms Document Generation API를 사용하면 이제 [생성된 PDF 문서�
 
 ### Java 21 지원 {#java21}
 
-1월 릴리스 정보에서 언급한 바와 같이 이제 Java 21을 사용하여 코드를 작성할 수 있습니다. 이 코드에는 새로운 기능(예: 스위치 문에 대한 패턴 일치, 봉인 클래스) 및 성능 개선이 포함됩니다. Java 17 빌드도 새로 지원됩니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
+1월 릴리스 정보에서 언급한 바와 같이 이제 Java 21로 코드를 작성할 수 있습니다. 여기에는 새로운 기능(예: switch 문에 대한 패턴 매칭, 봉인된 클래스)과 성능 개선이 포함됩니다. Java 17 빌드도 새롭게 지원됩니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
 
 Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런타임**&#x200B;이 자동으로 배포됩니다. 그러나 Java 11로 빌드된 환경에서는 Java 21 런타임을 선택하는 것도 좋습니다. 이를 위해서는 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내 문의하시기 바랍니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아보십시오.
 
 >[!IMPORTANT]
 >
-> 2월에 Java 21 **runtime**&#x200B;이(가) 개발/RDE 환경에 배포되었습니다(이미 Java 21 런타임이 있는 Java 17 또는 21로 빌드된 환경 제외). Java 21은 4월에 스테이지/프로덕션 환경에 적용됩니다.
+> 지난 2월에 Java 21 **런타임**&#x200B;이 dev/RDE 환경에 배포되었습니다(이미 Java 17 또는 21로 빌드되어 Java 21 런타임이 있는 환경 제외). Java 21은 4월에 스테이지/프로덕션 환경에 적용될 예정입니다.
 
 ### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
-에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe은 이 기술이 AEM Publish 게재 및 Edge Delivery Services 프로젝트에 유용한지 알고 싶습니다. 또한 제품 로드맵 입력에 입력용으로 사용할 계획을 알려 주십시오.
+에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe는 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지에 대한 귀하의 의견을 듣고자 합니다. 또한 제품 로드맵에 반영할 수 있도록 이 기술을 어떻게 활용할 계획인지 알려 주십시오.
 
-몇 가지 가능한 사용 사례:
-* 콘텐츠에 대한 액세스 게이트를 위한 IdP를 사용한 인증
-* 지리적 위치, 장치 유형, 사용자 특성 등을 기반으로 동적(개인화된, 지역화된) 콘텐츠 렌더링
+가능한 일부 사용 사례는 다음과 같습니다.
+* 콘텐츠에 대한 액세스를 제어하기 위해 IdP를 통한 인증
+* 지리적 위치, 디바이스 유형, 사용자 속성 등을 기반으로 동적(개인화, 지역화) 콘텐츠 렌더링
 * 고급 이미지 조작
-* CDN과 원본 사이의 미들웨어
-* API 응답을 다시 포맷하기 위한, 브라우저와 서드파티 API 사이의 계층
-* 여러 원본의 데이터를 집계하여 클라이언트 브라우저에서 보다 쉽게 렌더링할 수 있습니다.
+* CDN과 원본 간 미들웨어
+* 브라우저와 서드파티 API 사이의 레이어, API 응답을 다시 포맷하기 위한 목적
+* 여러 출처로부터 데이터를 집계하여 클라이언트 브라우저가 데이터를 보다 쉽게 렌더링할 수 있도록 함
 
-질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
+질문과 의견을 이메일([aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com))로 보내 주십시오.
 
 ### OpenAPI 기반 API - 얼리 어답터 프로그램 {#open-apis-earlyadopter}
 
