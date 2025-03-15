@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
+source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 30%
+source-wordcount: '1569'
+ht-degree: 28%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 >[!NOTE]
 >
->Cloud Manager에서는 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
+>Cloud Manager에서 `jacoco-maven-plugin`의 특정 버전을 지정하지 않지만 필요한 버전은 프로젝트의 Java 버전에 따라 다릅니다. Java 8의 경우 플러그인 버전이 `0.7.5.201505241946` 이상이어야 하지만, 최신 Java 버전에는 최신 릴리스가 필요할 수 있습니다.
 
 ## HTTPS Maven 저장소 {#https-maven}
 
@@ -88,11 +88,11 @@ Java 21 또는 Java 17을 사용하여 빌드로 마이그레이션하려면 먼
 
 응용 프로그램을 새 Java 빌드 버전 및 런타임 버전으로 마이그레이션할 때 프로덕션에 배포하기 전에 개발 및 스테이지 환경에서 철저하게 테스트하십시오.
 
-다음 배포 전략을 권장합니다.
+Adobe은 다음 배포 전략을 권장합니다.
 
-1. https://experience.adobe.com/#/downloads에서 다운로드할 수 있는 Java 21로 로컬 SDK을 실행하고 애플리케이션을 배포하고 기능을 확인합니다. 로그에서 클래스 로딩 또는 바이트코드 직조 문제를 나타내는 오류가 없는지 확인합니다.
-1. Java 21을 buildtime Java 버전으로 사용하도록 Cloud Manager 저장소에서 분기를 구성하고 이 분기를 사용하도록 DEV 파이프라인을 구성하고 파이프라인을 실행합니다. 유효성 검사 테스트를 실행합니다.
-1. Java 21을 buildtime Java 버전으로 사용하도록 스테이지/프로덕션 파이프라인을 구성하고 파이프라인을 실행합니다.
+1. https://experience.adobe.com/#/downloads에서 다운로드할 수 있는 Java 21로 로컬 SDK을 실행하고 애플리케이션을 배포하고 기능을 확인합니다. 로그에서 클래스 로드 또는 바이트코드 직조 문제를 나타내는 오류가 없는지 확인합니다.
+1. Java 21을 빌드 시간 Java 버전으로 사용하도록 Cloud Manager 저장소에서 분기를 구성하고, 이 분기를 사용하도록 DEV 파이프라인을 구성하고 파이프라인을 실행합니다. 유효성 검사 테스트를 실행합니다.
+1. Java 21을 빌드 시간 Java 버전으로 사용하도록 스테이지/프로덕션 파이프라인을 구성하고 파이프라인을 실행합니다.
 
 ##### 일부 번역 기능 {#translation-features}
 
@@ -118,7 +118,7 @@ Java 21 런타임은 Java 21 및 Java 17을 사용하는 빌드에 사용되며 
 * **Aries SPIFly의 최소 버전:**
 최신 JVM 런타임 지원을 위해 Java 패키지 `org.apache.aries.spifly.dynamic.bundle`의 사용을 버전 1.3.6 이상으로 업데이트합니다.
 
-AEM Cloud Service SDK은 Java 21과 호환되며, Cloud Manager 파이프라인을 실행하기 전에 Java 21과 프로젝트의 호환성을 확인하는 데 사용할 수 있습니다.
+AEM Cloud Service SDK은 Java 21을 지원하며 Cloud Manager 파이프라인을 실행하기 전에 Java 21과 프로젝트의 호환성을 확인할 수 있도록 해줍니다.
 
 * **런타임 매개 변수 편집:**
 Java 21을 사용하여 로컬로 AEM을 실행하는 경우 `MaxPermSize` 매개 변수로 인해 시작 스크립트(`crx-quickstart/bin/start` 또는 `crx-quickstart/bin/start.bat`)가 실패합니다. 해결 방법으로 스크립트에서 `-XX:MaxPermSize=256M`을(를) 제거하거나 환경 변수 `CQ_JVM_OPTS`을(를) 정의하여 `-Xmx1024m -Djava.awt.headless=true`(으)로 설정합니다.
@@ -127,7 +127,7 @@ Java 21을 사용하여 로컬로 AEM을 실행하는 경우 `MaxPermSize` 매�
 
 >[!IMPORTANT]
 >
->`.cloudmanager/java-version`을(를) `21` 또는 `17`(으)로 설정하면 Java 21 런타임이 배포됩니다. Java 21 런타임은 2025년 2월 4일 화요일부터 모든 환경(코드가 Java 11로 빌드된 환경뿐만 아니라)에 점진적 롤아웃을 예약합니다. 롤아웃은 샌드박스 및 개발 환경에서 시작된 다음 2025년 4월에 모든 프로덕션 환경으로 롤아웃됩니다. Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 고객은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에서 Adobe에 문의할 수 있습니다.
+>`.cloudmanager/java-version`을(를) `21` 또는 `17`(으)로 설정하면 Java 21 런타임이 배포됩니다. Java 21 런타임은 2025년 2월 4일 화요일부터 모든 환경(코드가 Java 11로 빌드된 환경뿐만 아니라)에 점진적 롤아웃을 예약합니다. 롤아웃은 샌드박스 및 개발 환경에서 시작되며 그 뒤에는 2025년 4월에 모든 프로덕션 환경이 시작됩니다. Java 21 런타임 *이전*&#x200B;을(를) 채택하려는 고객은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에서 Adobe에 문의할 수 있습니다.
 
 
 #### 빌드 시간 요구 사항 {#build-time-reqs}
