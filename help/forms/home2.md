@@ -6,10 +6,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: a9eed5b6219163e721d81c9d77a31604666a2ac5
+source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 12%
+source-wordcount: '1059'
+ht-degree: 5%
 
 ---
 
@@ -25,534 +25,299 @@ ht-degree: 12%
   </ul>
 </div>
 
-<div class="aem-forms-hero">
-  <h2>AEM Forms as a Cloud Service</h2>
-  <p>지능형 양식, 자동화된 워크플로 및 개인화된 고객 커뮤니케이션을 생성, 관리 및 제공하기 위한 Adobe의 클라우드 기반 솔루션입니다.</p>
-</div>
+## AEM Forms as a Cloud Service란?
 
-<div class="solutions-grid">
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>적응형 양식</h3>
-    <p>최종 사용자의 디지털 등록 프로세스를 위한 원활한 양식 작성 환경 제공</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>워크플로</h3>
-    <p>라우팅 데이터와 같은 구성 가능한 워크플로우를 통해 비즈니스 특정 프로세스 자동화</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>고객 커뮤니케이션</h3>
-    <p>지속적인 개인화된 아웃바운드 커뮤니케이션을 통해 고객 충성도 향상</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>헤드리스 Forms</h3>
-    <p>여러 채널에서 원활한 등록 및 등록</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">✍️</div>
-    <h3>Acrobat Sign 통합</h3>
-    <p>법적 구속력이 있으며 장치 간에 안전하게 보호되는 전자 서명 캡처</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>자동 양식 변환</h3>
-    <p>기존 PDF 기반 양식을 온라인으로 쉽게 관리 및 배포할 수 있는 적응형 Forms으로 변환</p>
-  </div>
+AEM Forms as a Cloud Service은 디지털 양식 및 통신을 생성, 관리 및 제공하기 위한 Adobe의 클라우드 기반 솔루션입니다. 이를 통해 조직은 전체 고객 여정에서 복잡한 트랜잭션을 간단한 디지털 환경으로 변환할 수 있습니다.
 
-</div>
-
-## 기능 {#features}
-
-<div class="features-section">
-  <h3>양식 작성 및 작성 {#form-creation}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>적응형 양식</h4>
-      <p>대화형, 동적, 응답형, 모바일 친화적, 데이터 기반 양식을 만들고 관리할 수 있습니다.</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">적응형 양식 만들기</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">적응형 양식 스타일 지정</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko-KR">AEM Sites 페이지에 적응형 양식 추가</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">즉시 사용 가능한 테마 및 템플릿 사용</a></li>
-      </ul>
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>적응형 양식</h3>
     </div>
-
-<div class="feature-item">
-      <h4>헤드리스 적응형 Forms</h4>
-      <p>모든 웹 사이트, 애플리케이션 또는 시각적이지 않은 상호 작용에서 양식을 작성하고 기본적으로 렌더링합니다.</p>
+    <div class="card-body">
+      <p>사용자 입력 및 장치 유형에 맞게 조정되는 반응형 동적 양식을 만들 수 있습니다.</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Headless 적응형 Forms 소개</a></li>
-        <li>원하는 프로그래밍 언어로 양식 작성(예: React)</li>
-        <li>기본적으로 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 양식 통합</li>
-        <li>양식 애플리케이션을 통해 독점 UI 구성 요소 재사용</li>
-        <li>프론트엔드 유연성으로 Adobe Experience Manager Forms의 강력한 기능 활용</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">적응형 Forms 만들기</a> - 다양한 화면 크기와 사용자 입력에 자동으로 조정되는 양식을 작성합니다.</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type">리치 구성 요소 라이브러리</a> - 다양한 입력 필드와 UI 구성 요소를 사용합니다.</li>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components">스타일 적응형 Forms</a> - 양식에 일관된 브랜딩 및 시각적 디자인 적용</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">미리 만들어진 테마 및 템플릿 사용</a> - 바로 사용할 수 있는 구성 요소를 사용하여 개발 가속화</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components">양식 유효성 검사</a> - 클라이언트측 및 서버측 유효성 검사 규칙 구현</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html">작업 제출</a> - 사용자가 양식을 제출할 때 수행되는 작업 구성</li>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components">기록 문서</a> - 제출된 양식 데이터의 영구 레코드 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page">AEM Sites 페이지에 Forms 추가</a> - 양식을 웹 사이트에 원활하게 통합</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page">타사 웹 사이트 페이지에 Forms 추가</a> - 양식을 웹 사이트에 원활하게 통합</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
-      <h4>Forms용 Edge Delivery Services</h4>
-      <p>탁월한 사용자 경험을 통해 고성능 양식 제작 및 제공:</p>
-      <ul>
-        <li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">범용 편집기로 WYSIWYG 작성</a> - 양식 작성을 위한 강력한 시각적 인터페이스</li>
-        <li><a href="/help/edge/docs/forms/create-forms.md">문서 기반 작성</a> - Microsoft Excel 및 Google Sheets와 같은 익숙한 도구를 사용하여 양식을 만듭니다.</li>
-        <li>복잡한 양식 논리를 만들기 위한 고급 규칙 편집기</li>
-        <li>최적화된 양식 로딩으로 거의 완벽한 Google Lighthouse 점수 달성</li>
-        <li>개발 시간을 최소화하면서 양식 배포 속도 향상</li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>Forms용 Edge Delivery Services</h3>
     </div>
-
-<div class="feature-item">
-      <h4>자동화된 양식 변환 서비스</h4>
-      <p>기존 PDF 기반 양식을 적응형 Forms으로 변환:</p>
+    <div class="card-body">
+      <p>Edge Delivery Services을 사용하여 양식 만들기 및 전달:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">자동 양식 전환 서비스 구성</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">PDF forms을 적응형 Forms으로 변환</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms 개요</a> - Edge Delivery Services이 포함된 양식에 대해 알아보기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms용 유니버설 편집기</a> - WYSIWYG 유니버설 편집기를 사용하여 양식 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">문서 기반 작성</a> - Microsoft Word 또는 Google Docs을 사용하여 양식 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Forms 스타일 지정</a> - 양식에 사용자 지정 스타일 적용</li>
       </ul>
     </div>
   </div>
 
-
-<h3>문서 처리 및 통신 {#document-processing}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>커뮤니케이션 API</h4>
-      <p>맞춤형 커뮤니케이션 생성, 관리 및 게재 자동화:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">개인화된 커뮤니케이션 생성</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">PDF 문서를 어셈블하거나 디스어셈블합니다.</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 호환 문서 만들기</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">DocAssurance API를 통해 문서 보호</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>헤드리스 Forms</h3>
     </div>
-
-<div class="feature-item">
-      <h4>기록 문서</h4>
-      <p>보관 및 규정 준수를 위해 제출된 양식의 기록 생성 및 관리:</p>
+    <div class="card-body">
+      <p>모든 채널 또는 프론트엔드 프레임워크에서 양식 경험을 제공할 수 있습니다.</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html">장기 보관을 위한 양식 기록 만들기</a></li>
-        <li>맞춤형 기능을 위한 서버측 확장성</li>
-        <li>변조가 불가능한 아카이브를 위한 기록 문서 기능</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Headless Forms 소개</a> - Forms에 대한 Headless 접근 방식에 대해 알아보기</li>
+        <li>React 또는 기타 프론트엔드 프레임워크를 사용하여 양식 작성</li>
+        <li>모바일 앱, 웹 사이트 및 채팅 애플리케이션에 양식 통합</li>
+        <li>양식 기능으로 기존 UI 구성 요소 활용</li>
+        <li>프론트엔드 유연성을 유지하면서 백엔드 양식 논리 유지</li>
       </ul>
     </div>
   </div>
 
-<h3>워크플로우 및 프로세스 자동화 {#workflow}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>양식 워크플로</h4>
-      <p>양식 및 문서 서비스와 관련된 비즈니스 프로세스 자동화:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">검토할 양식 또는 문서 보내기</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">승인 거부 워크플로우 만들기</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br">데이터 저장소 또는 워크플로우에 데이터 제출</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>통신 API</h3>
     </div>
-
-<div class="feature-item">
-      <h4>전자 서명</h4>
-      <p>전자 서명을 위해 Adobe Sign과 통합:</p>
+    <div class="card-body">
+      <p>문서를 프로그래밍 방식으로 생성, 조작 및 보호합니다.</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ko-KR">Adobe Sign을 사용하여 적응형 양식에 전자 서명</a></li>
-        <li>비즈니스 워크플로에 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">기록 문서 추가</a> 또는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">전자 서명</a> 단계</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko-KR#sign-document-step">Adobe Sign 및 AEM 워크플로를 사용하여 문서에 전자 서명</a></li>
-      </ul>
-    </div>
-  </div>
-
-<h3>데이터 통합 및 분석 {#data-integration}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>양식 분석</h4>
-      <p>Adobe Analytics을 사용하여 사용자 동작에 대한 중요한 통찰력을 얻으십시오.</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ko-KR">적응형 양식용 Adobe Analytics 활성화</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">AEM Forms과 Adobe Analytics 통합(수동 방법)</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">적응형 Forms 분석 보고서 보기 및 이해</a></li>
-      </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>Adobe 통합</h4>
-      <p>양식을 다른 Adobe 솔루션과 연결:</p>
-      <ul>
-        <li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Adobe Workfront Fusion에 연결</a> 및 Workfront 시나리오에 데이터 제출</li>
-        <li><a href="/help/forms/integrate-form-to-marketo-engage.md">Adobe Marketo Engage에 연결</a> 및 <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">Marketo에 데이터 제출</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">개인화된 커뮤니케이션 생성</a> - 템플릿 및 데이터를 기반으로 사용자 지정된 문서를 만듭니다.</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">PDF 조합 및 조작</a> - PDF 문서 결합, 분할 및 수정</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">PDF/A 문서 만들기</a> - 보관 품질 문서 생성</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#flatten-interactive-pdf-documents">대화형 PDF 병합</a> - 대화형 필드를 비대화형 요소로 변환</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#signature-apis">서명 적용</a> - 서명을 사용하여 문서 보안</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#encryption-apis">PDF 암호화 및 암호 해독</a> - 중요한 문서 콘텐츠 보호</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP를 PostScript으로 변환</a> - XDP 문서를 PostScript 형식으로 변환</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP를 PCL로 변환</a> - XDP 문서를 프린터 명령 언어로 변환</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">XDP를 ZPL로 변환</a> - XDP 문서를 Zebra 인쇄 언어로 변환</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">PDF을 PDF/A 표준으로 변환</a> - 보관 호환 PDF 문서 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-pdf-documents-to-pdf-x-standards">디지털 서명 추가</a> - 인증을 위해 문서에 디지털 서명</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
+<div class="card">
+    <div class="card-header">
+      <h3>워크플로 자동화</h3>
+    </div>
+    <div class="card-body">
+      <p>양식 및 문서 관련 비즈니스 프로세스 자동화:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">비즈니스 프로세스 만들기</a> - 승인 또는 피드백을 위한 양식, 제출 후 워크플로 또는 등록 프로세스를 관리할 백엔드 워크플로를 라우팅합니다.</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#sign-document-step">AEM 워크플로에서 Adobe Sign 사용</a> - 서명용 문서 보내기 </li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#generate-document-of-record-step">기록 문서 생성 </a> - 요청 시 또는 양식 제출 시 생성</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>전자 서명</h3>
+    </div>
+    <div class="card-body">
+      <p>양식 및 문서에 법적 구속력이 있는 전자 서명 추가:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign 통합</a> - 적응형 Forms에서 전자 서명 사용</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">워크플로에 전자 서명 추가</a> - 비즈니스 프로세스에 서명 단계 포함</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">서명이 있는 기록 문서</a> - 양식 제출의 서명된 기록 생성</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>Analytics 및 Insights</h3>
+    </div>
+    <div class="card-body">
+      <p>양식 사용 및 성능에 대한 통찰력을 얻으십시오.</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ko-KR">Adobe Analytics 사용</a> - 양식 사용 및 성능 추적</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">수동 Analytics 통합</a> - 세부 추적을 위해 Analytics 설정</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">분석 보고서 보기</a> - 양식 성능 및 사용자 동작 분석</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>데이터 통합</h3>
+    </div>
+    <div class="card-body">
+      <p>양식을 기존 데이터 소스 및 시스템에 연결합니다.</p>
+      <h4>Adobe 에코시스템</h4>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign">Adobe Sign</a> - Adobe Sign을 통해 전자 서명 전송</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage">Marketo Engage</a> - Adobe Marketo Engage과 양식 통합</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#invoke-an-aem-workflow">AEM 워크플로</a> - 양식 제출을 통해 AEM 워크플로 트리거</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#workfront-fusion">Workfront</a> - Adobe Workfront Fusion에 적응형 양식 제출</li>
+      </ul>
       <h4>Microsoft 통합</h4>
-      <p>양식을 Microsoft 서비스와 연결:</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ko-KR">Microsoft® Dynamics 365에 연결</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko-KR">Microsoft® Azure Blob 저장소에 연결</a> 및 <a href="/help/forms/configure-submit-action-azure-blob-storage.md">Azure Blob 저장소에 데이터 제출</a></li>
-        <li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Microsoft® SharePoint 문서 라이브러리에 연결</a> 및 <a href="/help/forms/configure-submit-action-sharepoint.md">SharePoint에 데이터 제출</a></li>
-        <li><a href="/help/forms/configure-submit-action-onedrive.md">Microsoft® OneDrive에 연결</a> 및 OneDrive에 데이터 제출</li>
-        <li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Microsoft® Power Automate에 연결</a> 및 양식 제출 시 플로우 트리거</li>
-        <li><a href="/help/forms/ms-dynamics-odata-configuration.md">Microsoft® Dynamics OData에 연결</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics">Microsoft Dynamics 365</a> - Microsoft의 CRM과 통합</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko-KR">Azure Blob 저장소</a> - Microsoft 클라우드 저장소에 양식 데이터 저장</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/connect-to-sharepoint/connect-forms-to-sharepoint-document-library">SharePoint 문서 라이브러리</a> - Microsoft SharePoint 문서 라이브러리에 연결</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#connect-af-sharepoint-list">SharePoint 목록</a> - Microsoft SharePoint 목록에 연결</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#submit-to-onedrive">OneDrive</a> - Microsoft OneDrive에 연결</li>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/services/forms-microsoft-power-automate-integration">Microsoft Power Automate</a> - Microsoft Power Automate 플로우 트리거</li>
       </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>기타 데이터 소스</h4>
-      <p>추가 데이터 소스 및 엔드포인트에 연결:</p>
+      <h4>기타 데이터 소스 및 서비스</h4>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko-KR">RDBMS 또는 Rest 끝점에 연결</a></li>
-        <li><a href="/help/forms/aem-forms-salesforce-integration.md">Salesforce에 연결</a> 및 Salesforce에 데이터 제출</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">REST 엔드포인트에 제출</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration">Salesforce</a> - Salesforce CRM과 통합</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">RESTful 서비스</a> - 모든 REST API 끝점에 연결</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko-KR">RDBMS 데이터베이스</a> - 관계형 데이터베이스에 연결</li>
+        <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#send-email">전자 메일</a> - 전자 메일을 통해 양식 데이터 보내기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/introduction-to-forms-portal/save-core-component-based-form-as-draft">Forms 포털</a> - 초안을 저장하려면 Forms 포털에 제출</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#send-pdf-via-email">이메일을 통해 PDF 보내기</a> - 제출된 양식의 PDF 버전에 이메일을 보냅니다.</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-using-form-data-model">양식 데이터 모델을 사용하여 제출</a> - 양식 데이터 모델을 사용하여 데이터 제출</li>
       </ul>
     </div>
   </div>
 </div>
 
+## AEM Forms as a Cloud Service 시작하기
 
-<!-- 
-## Start Quickly with AEM Forms {#quick-start}
-
-<div class="quick-start-grid">
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/create-form-icon.svg" alt="Create Form Icon">
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>비즈니스 사용자용</h3>
     </div>
-    <h3>Create your first form</h3>
-    <p>Build an adaptive form in minutes using our step-by-step guide</p>
-    <a href="/help/forms/creating-adaptive-form-core-components.md" class="quick-start-link">Get Started</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/templates-icon.svg" alt="Templates Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong>기본 사항 이해</strong>: <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/introduction-forms-authoring.html">적응형 Forms</a>와 비즈니스 프로세스를 디지털화하는 방법에 대해 알아봅니다.</li>
+        <li><strong>템플릿 탐색</strong>: <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">미리 만들어진 템플릿 및 테마</a>를 탐색하여 양식 프로젝트를 시작하십시오.</li>
+        <li><strong>양식 작성 학습</strong>: <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html">양식 작성 가이드</a>에 따라 첫 번째 양식을 만드십시오.</li>
+      </ol>
     </div>
-    <h3>Explore ready-to-use templates</h3>
-    <p>Browse our library of pre-built templates and themes to accelerate development</p>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html" class="quick-start-link">View Templates</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/setup-icon.svg" alt="Setup Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>개발자용</h3>
     </div>
-    <h3>Set up your environment</h3>
-    <p>Configure your local or cloud environment for AEM Forms development</p>
-    <a href="/help/forms/setup-local-development-environment.md" class="quick-start-link">Configure Now</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/data-icon.svg" alt="Data Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong>환경 설정</strong>: AEM Forms용 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html">로컬 개발 환경</a>을 구성합니다.</li>
+        <li><strong>아키텍처 학습</strong>: AEM Forms as a Cloud Service의 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">아키텍처 이해</a>.</li>
+        <li><strong>API 탐색</strong>: Forms을 확장하고 통합하는 데 사용할 수 있는 <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> API </a> 및 SDK를 숙지하십시오.</li>
+      </ol>
     </div>
-    <h3>Connect to data sources</h3>
-    <p>Learn how to integrate forms with your existing data systems</p>
-    <a href="/help/forms/create-form-data-models.md" class="quick-start-link">Connect Data</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/migrate-icon.svg" alt="Migrate Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>관리자용</h3>
     </div>
-    <h3>Migrate from AEM 6.5</h3>
-    <p>Follow our comprehensive guide to move from AEM 6.5 Forms to Cloud Service</p>
-    <a href="/help/forms/migrate-to-forms-as-a-cloud-service.md" class="quick-start-link">Migrate Now</a>
+    <div class="card-body">
+      <ol>
+        <li><strong>Cloud Service에 온보딩</strong>: <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html">온보딩 가이드</a>에 따라 AEM Forms as a Cloud Service을 설정하십시오.</li>
+        <li><strong>서비스 구성</strong>: Adobe Analytics과 같은 다른 Adobe 서비스와의 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ko-KR">통합을 설정</a>합니다.</li>
+        <li><strong>AEM 6.5에서 마이그레이션</strong>: AEM 6.5에서 온 경우 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/migrate-to-forms-as-a-cloud-service.html">마이그레이션 안내서</a>를 따라 Cloud Service으로 이동하십시오.</li>
+      </ol>
+    </div>
   </div>
-</div> 
-
--->
-
-## 얼리 어답터 기능 {#early-adopter-features}
-
-<div class="early-adopter-section">
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램</a>에서는 다음을 포함한 최신 기능을 일반적으로 사용하기 전에 독점적으로 액세스할 수 있습니다.</p>
-
-<ul class="early-adopter-list">
-    <li><strong>AEM Forms AI Assistant(Gen AI)</strong> - AI 기반 제안을 사용하여 양식을 더 빨리 만들기</li>
-    <li><strong>AEM Forms Workfront Fusion Connector</strong> - 양식 제출로 트리거된 워크플로 자동화</li>
-    <li><strong>대화형 Forms</strong> - 모든 AEM Sites 페이지에서 채팅 스타일 양식 경험을 만듭니다.</li>
-    <li><strong>Edge Delivery용 WYSIWYG 작성</strong> - Edge Delivery Services용 유니버설 편집기를 사용하여 양식 작성</li>
-    <li><strong>AEM Forms-Marketo 커넥터</strong> - 양식 제출을 Marketo Engage과 통합</li>
-  </ul>
-
-<p>혁신적인 조기 액세스 기능 및 자세한 설명서에 대한 전체 목록을 보려면 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램 페이지</a>를 참조하세요.</p>
 </div>
 
-## 디지털 경험을 변환할 준비가 되셨습니까? {#get-started}
+## 얼리 어답터 기능
 
-<div class="get-started-section">
-  <p>매력적인 반응형 지능형 양식을 지금 만들어 보십시오!</p>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" class="get-started-button">AEM Forms as a Cloud Service에 온보딩</a>
+<div class="card">
+  <div class="card-header">
+    <h3>AEM Forms 조기 액세스 프로그램</h3>
+  </div>
+  <div class="card-body">
+    <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램</a>에서는 다음을 포함한 최신 기능을 일반적으로 사용하기 전에 독점적으로 액세스할 수 있습니다.</p>
+    <ul>
+      <li><strong>AEM Forms AI Assistant(Gen AI)</strong> - AI 기반 제안을 사용하여 양식을 더 빨리 만들기</li>
+      <li><strong>AEM Forms Workfront Fusion Connector</strong> - 양식 제출로 트리거된 워크플로 자동화</li>
+      <li><strong>대화형 Forms</strong> - 모든 AEM Sites 페이지에서 채팅 스타일 양식 경험을 만듭니다.</li>
+      <li><strong>Edge Delivery용 WYSIWYG 작성</strong> - Edge Delivery Services용 유니버설 편집기를 사용하여 양식 작성</li>
+      <li><strong>AEM Forms-Marketo 커넥터</strong> - 양식 제출을 Marketo Engage과 통합</li>
+    </ul>
+    <p>혁신적인 조기 액세스 기능 및 자세한 설명서에 대한 전체 목록을 보려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램 페이지</a>를 참조하세요.</p>
+  </div>
+</div>
+
+<div class="cta-card">
+  <h3>시작할 준비가 되셨습니까?</h3>
+  <p>오늘 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">AEM Forms as a Cloud Service에 온보딩</a>하여 조직의 디지털 양식 환경을 혁신하십시오.</p>
 </div>
 
 <style>
-/* Overall styling */
-body {
-  font-family: 'Adobe Clean', Arial, sans-serif;
-  line-height: 1.6;
-  color: #2c2c2c;
-}
-
-h2, h3, h4 {
-  font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.8em;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.4em;
-  color: #2c2c2c;
-}
-
-h4 {
-  font-size: 1.2em;
-  color: #2c2c2c;
-}
-
-a {
-  color: #1473E6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-/* Hero section */
-.aem-forms-hero {
-  background-color: #f5f5f5;
-  padding: 2em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
-.aem-forms-hero h2 {
-  font-size: 2em;
-  margin-top: 0;
-  border-bottom: none;
-  color: #2c2c2c;
-}
-
-.aem-forms-hero p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Solutions grid */
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.solution-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.solution-icon {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.solution-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.solution-card p {
-  margin-bottom: 0;
-  font-size: 0.95em;
-}
-
-/* Features section */
-.features-section {
+.card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
-.feature-category {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.feature-item {
-  background-color: #ffffff;
+.card {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 1.5em;
-}
-
-.feature-item h4 {
-  margin-top: 0;
-  color: #2c2c2c;
-}
-
-.feature-item ul {
-  margin-bottom: 0;
-}
-
-/* Quick start grid */
-.quick-start-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.quick-start-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.quick-start-card:hover {
+.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.quick-start-icon {
-  margin-bottom: 1em;
-}
-
-.quick-start-icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.quick-start-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.quick-start-link {
-  display: inline-block;
-  margin-top: 1em;
-  font-weight: 600;
-}
-
-/* Early adopter section */
-.early-adopter-section {
+.card-header {
   background-color: #f5f5f5;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin: 2em 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.early-adopter-list {
-  margin-bottom: 0;
+.card-header h3 {
+  margin: 0;
+  color: #2c2c2c;
+  font-size: 1.25rem;
 }
 
-/* Get started section */
-.get-started-section {
-  text-align: center;
-  margin: 3em 0 1em;
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-.get-started-section p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.card-body ul, .card-body ol {
+  margin-top: 10px;
+  padding-left: 25px;
 }
 
-.get-started-button {
-  display: inline-block;
-  background-color: #1473E6;
-  color: white;
-  padding: 0.8em 1.5em;
+.card-body li {
+  margin-bottom: 8px;
+}
+
+.cta-card {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1473e6;
+  padding: 20px;
+  margin: 30px 0;
   border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.get-started-button:hover {
-  background-color: #0d66d0;
-  text-decoration: none;
-}
-
-/* Version selector */
-.version-selector {
-  background-color: #f5f5f5;
-  padding: 1em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-}
-
-.version-selector p {
+.cta-card h3 {
   margin-top: 0;
-  font-weight: 600;
+  color: #1473e6;
 }
 
-.version-selector ul {
-  margin-bottom: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .feature-category {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.cta-card a {
+  font-weight: bold;
+  color: #1473e6;
 }
 
 @media (max-width: 768px) {
-  .feature-category {
-    grid-template-columns: 1fr;
-  }
-  
-  .solutions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .card {
+    flex: 1 1 100%;
   }
 }
-
-@media (max-width: 480px) {
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </style>
