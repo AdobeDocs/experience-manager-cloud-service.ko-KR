@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: 2c41fae87821a28af1fd00701780e9fc52b5577d
+source-git-commit: 4b4bc6f754c6336136d409cf49617c7fafd4f4c3
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 11%
@@ -39,12 +39,12 @@ AEM Forms as a Cloud Service은 디지털 양식 및 통신을 생성, 관리 �
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모든 단계를 지원하는 고객 중심 솔루션입니다.
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>적응형 양식</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>사용자 입력 및 장치 유형에 맞게 조정되는 반응형 동적 양식을 만들 수 있습니다.</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">적응형 Forms 만들기</a> - 다양한 화면 크기와 사용자 입력에 자동으로 조정되는 양식을 작성합니다.</li>
@@ -60,11 +60,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>통신 API</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>문서를 프로그래밍 방식으로 생성, 조작 및 보호합니다.</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation">개인화된 커뮤니케이션 생성</a> - 템플릿 및 데이터를 기반으로 사용자 지정된 문서를 만듭니다.</li>
@@ -81,11 +81,26 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
+      <h3>Forms용 Edge Delivery Services</h3>
+    </div>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <p>Edge Delivery Services을 사용하여 양식 만들기 및 전달:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms 개요</a> - Edge Delivery Services이 포함된 양식에 대해 알아보기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms용 유니버설 편집기</a> - WYSIWYG 유니버설 편집기를 사용하여 양식 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">문서 기반 작성</a> - Microsoft Word 또는 Google Docs을 사용하여 양식 만들기</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Forms 스타일 지정</a> - 양식에 사용자 지정 스타일 적용</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>헤드리스 Forms</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>모든 채널 또는 프론트엔드 프레임워크에서 양식 경험을 제공할 수 있습니다.</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview">Headless Forms 소개</a> - Forms에 대한 Headless 접근 방식에 대해 알아보기</li>
@@ -97,26 +112,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
-      <h3>Forms용 Edge Delivery Services</h3>
-    </div>
-    <div class="card-body">
-      <p>Edge Delivery Services을 사용하여 양식 만들기 및 전달:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms 개요</a> - Edge Delivery Services이 포함된 양식에 대해 알아보기</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Forms용 유니버설 편집기</a> - WYSIWYG 유니버설 편집기를 사용하여 양식 만들기</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">문서 기반 작성</a> - Microsoft Word 또는 Google Docs을 사용하여 양식 만들기</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Edge Delivery Forms 스타일 지정</a> - 양식에 사용자 지정 스타일 적용</li>
-      </ul>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>워크플로 자동화</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>양식 및 문서 관련 비즈니스 프로세스 자동화:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">비즈니스 프로세스 만들기</a> - 승인 또는 피드백을 위한 양식, 제출 후 워크플로 또는 등록 프로세스를 관리할 백엔드 워크플로를 라우팅합니다.</li>
@@ -126,11 +126,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>전자 서명</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>양식 및 문서에 법적 구속력이 있는 전자 서명 추가:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign 통합</a> - 적응형 Forms에서 전자 서명 사용</li>
@@ -140,11 +140,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Analytics 및 Insights</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>양식 사용 및 성능에 대한 통찰력을 얻으십시오.</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">Adobe Analytics 사용</a> - 양식 사용 및 성능 추적</li>
@@ -154,11 +154,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>데이터 통합</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>양식을 기존 데이터 소스 및 시스템에 연결합니다.</p>
       <h4>Adobe 에코시스템</h4>
       <ul>
@@ -192,42 +192,42 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
 
 ## AEM Forms as a Cloud Service 시작하기
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>비즈니스 사용자용</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>기본 사항 이해</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">적응형 Forms</a>와 비즈니스 프로세스를 디지털화하는 방법에 대해 알아봅니다.</li>
-        <li><strong>템플릿 탐색</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">미리 만들어진 템플릿 및 테마</a>를 탐색하여 양식 프로젝트를 시작하십시오.</li>
-        <li><strong>양식 작성 학습</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">양식 작성 가이드</a>에 따라 첫 번째 양식을 만드십시오.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>기본 사항 이해</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">적응형 Forms</a>와 비즈니스 프로세스를 디지털화하는 방법에 대해 알아봅니다.</li>
+        <li style="margin-bottom: 8px;"><strong>템플릿 탐색</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">미리 만들어진 템플릿 및 테마</a>를 탐색하여 양식 프로젝트를 시작하십시오.</li>
+        <li style="margin-bottom: 8px;"><strong>양식 작성 학습</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">양식 작성 가이드</a>에 따라 첫 번째 양식을 만드십시오.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>개발자용</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>환경 설정</strong>: AEM Forms용 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">로컬 개발 환경</a>을 구성합니다.</li>
-        <li><strong>아키텍처 학습</strong>: AEM Forms as a Cloud Service의 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">아키텍처 이해</a>.</li>
-        <li><strong>API 탐색</strong>: Forms 확장 및 통합을 위해 사용 가능한 API </a> 및 SDK를 <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">에 숙지하십시오.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>환경 설정</strong>: AEM Forms용 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">로컬 개발 환경</a>을 구성합니다.</li>
+        <li style="margin-bottom: 8px;"><strong>아키텍처 학습</strong>: AEM Forms as a Cloud Service의 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">아키텍처 이해</a>.</li>
+        <li style="margin-bottom: 8px;"><strong>API 탐색</strong>: Forms 확장 및 통합을 위해 사용 가능한 API </a> 및 SDK를 <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">에 숙지하십시오.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>관리자용</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Cloud Service에 온보딩</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">온보딩 가이드</a>에 따라 AEM Forms as a Cloud Service을 설정하십시오.</li>
-        <li><strong>서비스 구성</strong>: Adobe Analytics과 같은 다른 Adobe 서비스와의 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">통합을 설정</a>합니다.</li>
-        <li><strong>AEM 6.5에서 마이그레이션</strong>: AEM 6.5에서 온 경우 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">마이그레이션 안내서</a>를 따라 Cloud Service으로 이동하십시오.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>Cloud Service에 온보딩</strong>: <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">온보딩 가이드</a>에 따라 AEM Forms as a Cloud Service을 설정하십시오.</li>
+        <li style="margin-bottom: 8px;"><strong>서비스 구성</strong>: Adobe Analytics과 같은 다른 Adobe 서비스와의 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">통합을 설정</a>합니다.</li>
+        <li style="margin-bottom: 8px;"><strong>AEM 6.5에서 마이그레이션</strong>: AEM 6.5에서 온 경우 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">마이그레이션 안내서</a>를 따라 Cloud Service으로 이동하십시오.</li>
       </ol>
     </div>
   </div>
@@ -235,98 +235,24 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
 
 ## 얼리 어답터 기능
 
-<div class="card">
-  <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
+  <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>AEM Forms 조기 액세스 프로그램</h3>
   </div>
-  <div class="card-body">
+  <div class="card-body" style="padding: 20px; background-color: #ffffff;">
     <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램</a>에서는 다음을 포함한 최신 기능을 일반적으로 사용하기 전에 독점적으로 액세스할 수 있습니다.</p>
-    <ul>
-      <li><strong>AEM Forms AI Assistant(Gen AI)</strong> - AI 기반 제안을 사용하여 양식을 더 빨리 만들기</li>
-      <li><strong>AEM Forms Workfront Fusion Connector</strong> - 양식 제출로 트리거된 워크플로 자동화</li>
-      <li><strong>대화형 Forms</strong> - 모든 AEM Sites 페이지에서 채팅 스타일 양식 경험을 만듭니다.</li>
-      <li><strong>Edge Delivery용 WYSIWYG 작성</strong> - Edge Delivery Services용 유니버설 편집기를 사용하여 양식 작성</li>
-      <li><strong>AEM Forms-Marketo 커넥터</strong> - 양식 제출을 Marketo Engage과 통합</li>
+    <ul style="margin-top: 10px; padding-left: 25px;">
+      <li style="margin-bottom: 8px;"><strong>AEM Forms AI Assistant(Gen AI)</strong> - AI 기반 제안을 사용하여 양식을 더 빨리 만들기</li>
+      <li style="margin-bottom: 8px;"><strong>AEM Forms Workfront Fusion Connector</strong> - 양식 제출로 트리거된 워크플로 자동화</li>
+      <li style="margin-bottom: 8px;"><strong>대화형 Forms</strong> - 모든 AEM Sites 페이지에서 채팅 스타일 양식 경험을 만듭니다.</li>
+      <li style="margin-bottom: 8px;"><strong>Edge Delivery용 WYSIWYG 작성</strong> - Edge Delivery Services용 유니버설 편집기를 사용하여 양식 작성</li>
+      <li style="margin-bottom: 8px;"><strong>AEM Forms-Marketo 커넥터</strong> - 양식 제출을 Marketo Engage과 통합</li>
     </ul>
     <p>혁신적인 조기 액세스 기능 및 자세한 설명서에 대한 전체 목록을 보려면 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms 조기 액세스 프로그램 페이지</a>를 참조하세요.</p>
   </div>
 </div>
 
-<div class="cta-card">
-  <h3>시작할 준비가 되셨습니까?</h3>
-  <p>오늘 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">AEM Forms as a Cloud Service에 온보딩</a>하여 조직의 디지털 양식 환경을 혁신하십시오.</p>
+<div style="background-color: #f0f7ff; border-left: 4px solid #1473e6; padding: 20px; margin: 30px 0; border-radius: 4px;">
+  <h3 style="margin-top: 0; color: #1473e6;">시작할 준비가 되셨습니까?</h3>
+  <p>오늘 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">AEM Forms as a Cloud Service에 온보딩</a>하여 조직의 디지털 양식 환경을 혁신하십시오.</p>
 </div>
-
-<style>
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #2c2c2c;
-  font-size: 1.25rem;
-}
-
-.card-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card-body ul, .card-body ol {
-  margin-top: 10px;
-  padding-left: 25px;
-}
-
-.card-body li {
-  margin-bottom: 8px;
-}
-
-.cta-card {
-  background-color: #f0f7ff;
-  border-left: 4px solid #1473e6;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 4px;
-}
-
-.cta-card h3 {
-  margin-top: 0;
-  color: #1473e6;
-}
-
-.cta-card a {
-  font-weight: bold;
-  color: #1473e6;
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-</style>
