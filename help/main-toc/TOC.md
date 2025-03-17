@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 94%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 94%
       + WYSIWYG 작성 {#universal-editor}
          + [Edge Delivery Services용 Forms Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [모바일 친화적인 Forms 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [아름다운 Forms 디자인: 범용 편집기를 위한 스타일 및 테마 지정 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 94%
          + [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Forms 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [사용자 지정 양식 구성 요소 빌드: 유니버설 편집기에 대한 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [양식 데이터 모델 통합: Forms과 양식 데이터 모델 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
          + [첫 번째 양식 작성: Google Sheets 및 Excel로 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Excel을 사용하여 Forms을 만드는 방법: 단계별 안내서](/help/edge/docs/forms/create-forms.md)

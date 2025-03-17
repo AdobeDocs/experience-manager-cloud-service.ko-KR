@@ -4,9 +4,9 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1858'
 ht-degree: 96%
 
 ---
@@ -14,14 +14,19 @@ ht-degree: 96%
 
 # 범용 편집기(WYSIWYG)를 사용하여 AEM Forms용 Edge Delivery Services 시작하기
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| 범용 편집기 기반 작성 | 이 문서 |
+| 문서 기반 작성 | [여기 클릭](/help/edge/docs/forms/tutorial.md) |
 
+
+<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services 양식은 WYSIWYG(What-You-See-Is-What-You Get) 기능을 제공하는 범용 편집기를 사용하여 작성됩니다. 범용 편집기는 효율적인 양식 작성을 위한 현대적이고 직관적인 인터페이스를 제공합니다.
 
 AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge Delivery Services 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
 
-![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png)
+![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 이 튜토리얼에서는 범용 편집기의 WYSIWYG 작성 기능을 사용하여 새 Adobe Experience Manager 사이트 프로젝트나 기존 Adobe Experience Manager 사이트 프로젝트에서 직접 양식을 만들고, 미리 보고, 게시하는 방법을 안내합니다.
 

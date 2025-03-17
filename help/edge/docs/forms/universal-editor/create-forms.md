@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 49%
+source-wordcount: '1069'
+ht-degree: 48%
 
 ---
 
@@ -58,7 +58,13 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 
       ![EDS Forms 만들기](/help/edge/assets/create-eds-forms.png)
 
+
+      Edge Delivery Services 기반 템플릿을 선택하면 **[!UICONTROL 만들기]** 단추가 활성화됩니다.
+   1. (선택 사항) **[!UICONTROL 데이터 Source]** 또는 **[!UICONTROL 제출]** 탭에서 데이터 원본을 선택하거나 작업을 제출할 수 있습니다.
+   1. (선택사항) **[!UICONTROL 게재]** 탭에서 적응형 양식의 게시 또는 게시 취소 일자를 지정할 수 있습니다.
+
    1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **양식 만들기** 마법사가 나타납니다.
+   1. **이름** 및 **제목**&#x200B;을 지정하십시오.
    1. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 리포지토리의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 다음과 같습니다.
       `https://github.com/wkndforms/edsforms`
    1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.

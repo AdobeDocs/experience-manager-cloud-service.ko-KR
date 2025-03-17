@@ -1,12 +1,12 @@
 ---
 title: AEM Forms용 Edge Delivery Services 시작하기 - 개발자 튜토리얼
-description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 나만의 양식을 만들 수 있습니다.
+description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10분에서 20분 안에 나만의 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1907'
 ht-degree: 97%
 
 ---
@@ -138,8 +138,6 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
       그러면 콘텐츠 폴더가 웹 사이트에 연결됩니다. 참조를 업데이트한 후 처음에는 “404 Not Found” 오류가 발생할 수 있습니다. 이는 콘텐츠의 미리보기를 아직 완료하지 않았기 때문입니다. 다음 섹션에서는 콘텐츠 작성 및 미리보기를 시작하는 방법을 설명합니다.
 
-
-
 ### 콘텐츠 미리보기 및 게시
 
 마지막 단계를 완료하고 나면 새 콘텐츠 소스는 비어 있지 않지만 미리보기 또는 라이브 단계로 승격되기 전까지 웹 사이트에 표시되지 않습니다. 현재 이로 인해 404 오류가 발생할 수 있습니다.
@@ -261,49 +259,47 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 축하합니다! 로컬 개발 환경을 성공적으로 설정하고 변경 사항을 배포했습니다.
 
+## 기존 AEM 프로젝트에 적응형 양식 블록 추가
 
 <!--
-## Add Adaptive Forms Block to your existing AEM project
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
-
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+기존 AEM 프로젝트가 있는 경우 적응형 양식 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다.
 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> 이 단계는 [AEM 상용구](https://github.com/adobe/aem-boilerplate)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
-To Integrate:
+통합하는 방법은 다음과 같습니다.
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. **필수 파일 및 폴더 추가**
+   1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+      * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 폴더
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 폴더
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+1. **구성 요소 정의 및 모델 파일 업데이트**
+   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-definition.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 변경 사항으로 업데이트합니다.
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-models.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)의 변경 사항으로 업데이트합니다.
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
+1. **편집기 스크립트에 양식 편집기 추가**
+   1. AEM Project의 `../scripts/editor-support.js` 파일로 이동하여 [AEM Forms 보일러플레이트의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)의 변경 사항으로 업데이트합니다.
+1. **ESLint 구성 파일 업데이트**
+   1. AEM 프로젝트에서 `../.eslintignore` 파일로 이동하고 다음 코드 라인을 추가하여 폼 블록 규칙 엔진과 관련된 오류를 방지합니다.
 
-That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
+
+이번 단계가 끝났습니다! 적응형 양식 블록은 이제 AEM 프로젝트의 일부입니다. AEM 페이지에 양식을 만들고 추가할 수 있습니다.
 
 ## GitHub 빌드 문제 해결
 
