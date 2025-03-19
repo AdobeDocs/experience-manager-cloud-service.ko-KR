@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.3.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 31%
 
 ---
@@ -33,6 +33,8 @@ AEM as a Cloud Service의 Cloud Manager 2025.3.0 릴리스 일자는 2025년 3�
   여러 파이프라인을 동시에 실행하는 기능이 파이프라인 페이지에 도입되었습니다. 사용자는 최소 하나 이상 10개 이하의 파이프라인을 선택해야 합니다. 파이프라인 페이지의 오른쪽 상단 모서리에서 **선택한 항목 실행(x)**&#x200B;을 클릭합니다. 시작할 수 없는 파이프라인을 나열하는 모달 대화 상자가 나타납니다. 유효한 모든 파이프라인을 시작하려면 **실행**&#x200B;을 클릭하세요.
 
   ![선택한 파이프라인 실행 대화 상자](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  [여러 파이프라인 실행](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)도 참조하세요.
 
 * **Node.js 버전으로 확장 지원**
 
