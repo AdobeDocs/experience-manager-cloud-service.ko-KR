@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 34%
 
 ---
@@ -161,7 +161,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >
 >단축키 `Shift+Backspace`를 사용하여 해당 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
-### 컨테이너의 구성 요소 재정렬 {#reordering-components}
+### 구성 요소 재정렬 {#reordering-components}
 
 1. [콘텐츠 트리 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 있지 않은 경우 전환하십시오.
 1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
@@ -176,7 +176,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->원본 컨테이너와 대상 컨테이너 사이에 다른 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)가 설정된 경우 컨테이너 간에 구성 요소를 이동할 수 없습니다.
+>대상 컨테이너 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)에서 선택한 구성 요소를 허용하는 경우에만 컨테이너 간에 구성 요소를 이동할 수 있습니다.
 
 ### 변형 생성과 함께 GenAI를 사용하여 변형 생성 {#generate-variations-ai}
 

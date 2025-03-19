@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
+source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
 workflow-type: tm+mt
-source-wordcount: '6082'
-ht-degree: 94%
+source-wordcount: '6086'
+ht-degree: 99%
 
 ---
 
@@ -211,11 +211,12 @@ ht-degree: 94%
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + 베리에이션 생성 릴리스 정보 {#generate-variations}
-      + [베리에이션 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+   + 변형 생성 릴리스 정보 {#generate-variations}
+      + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
    + 범용 편집기 릴리스 정보 {#univeral-editor}
       + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.02.25 릴리스 정보](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [2025.02.17 릴리스 정보](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [2025.01.16 릴리스 정보](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024 {#2024}
@@ -571,7 +572,7 @@ ht-degree: 94%
       + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
       + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
-      + [베리에이션 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
+      + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
       + [콘텐츠 조각 관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
       + [콘텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md)
@@ -790,7 +791,7 @@ ht-degree: 94%
             + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [적응형 양식의 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Experience Manager Forms&#x200B;에서 게시 관리](/help/forms/manage-publication.md)
+            + [Experience Manager Forms에서 게시 관리](/help/forms/manage-publication.md)
             + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
@@ -894,9 +895,9 @@ ht-degree: 94%
    + 트랜잭션 보고서 {#using-communications}
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)
       + [사용자 정의 구현을 위한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
-   + 값 실현 대시보드 {#vr-dashboard}
+   + 가치 실현 대시보드 {#vr-dashboard}
       + [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [값 실현 대시보드를 사용하여 양식 및 문서 사용 트렌드 분석](/help/forms/using-the-value-realization-dashboard.md)
+      + [가치 실현 대시보드를 사용하여 양식 및 문서 사용 추세 분석](/help/forms/using-the-value-realization-dashboard.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1035,37 +1036,37 @@ ht-degree: 94%
       + [Edge Delivery Services 양식은 어떻게 작동합니까?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG 작성 {#universal-editor}
-         + [Edge Delivery Services용 Forms Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Services용 양식 범용 편집기 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [모바일 친화적인 Forms 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [아름다운 Forms 디자인: 범용 편집기를 위한 스타일 및 테마 지정 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Forms에 동적 동작 추가: 규칙 편집기에 대한 전체 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [양식 제출 안내서: 양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Forms 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [사용자 지정 양식 구성 요소 빌드: 유니버설 편집기에 대한 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [범용 편집기 인터페이스 가이드: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [모바일 친화적인 양식 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [세련된 양식 디자인하기: 범용 편집기 스타일 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [양식에 동적 동작 추가하기: 규칙 편집기 전체 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [양식 제출 가이드: 제출 작업 구성 및 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [양식 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [사용자 정의 양식 구성 요소 빌드: 범용 편집기 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [양식 데이터 모델 통합: Forms과 양식 데이터 모델 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
-         + [첫 번째 양식 작성: Google Sheets 및 Excel로 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
-         + [Google Sheets 또는 Excel을 사용하여 Forms을 만드는 방법: 단계별 안내서](/help/edge/docs/forms/create-forms.md)
+         + [첫 번째 양식 작성: Google Sheets 및 Excel를 활용한 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
+         + [Google Sheets 또는 Excel을 사용하여 양식 만드는 방법: 단계별 가이드](/help/edge/docs/forms/create-forms.md)
          + [적응형 양식 블록의 다양한 구성 요소](/help/edge/docs/forms/form-components.md)
-         + [양식을 Google Sheets에 연결: 데이터 수집 설정 안내서](/help/edge/docs/forms/submit-forms.md)
-         + [양식을 라이브로 만들기: 게시 및 데이터 수집 안내서](/help/edge/docs/forms/publish-forms.md)
-         + [양식 필드 유효성 검사: Forms에 오류 검사 추가](/help/edge/docs/forms/validate-forms.md)
-         + [아름다운 Forms 디자인: 스타일 및 사용자 지정 안내서](/help/edge/docs/forms/style-theme-forms.md)
-         + [성공 메시지 만들기: 양식의 감사 페이지 사용자 지정](/help/edge/docs/forms/thank-you-page-form.md)
-         + [양식 제출 안내서: Forms 제출 서비스 사용](/help/forms/forms-submission-service.md)
+         + [양식을 Google Sheets와 연결하기: 데이터 수집 설정 안내서](/help/edge/docs/forms/submit-forms.md)
+         + [양식 활성화하기: 게시 및 데이터 수집 안내서](/help/edge/docs/forms/publish-forms.md)
+         + [양식 필드 유효성 검사: 오류 검사 추가하기](/help/edge/docs/forms/validate-forms.md)
+         + [세련된 양식 디자인하기: 스타일링 및 사용자 정의 안내서](/help/edge/docs/forms/style-theme-forms.md)
+         + [성공 메시지 만들기: 양식의 감사 페이지 사용자 정의](/help/edge/docs/forms/thank-you-page-form.md)
+         + [양식 제출 안내서: 양식 제출 서비스 활용](/help/forms/forms-submission-service.md)
          + [동적 양식 필드: URL에서 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
-         + [스마트 동작 추가: 양식 규칙 및 논리 안내서](/help/edge/docs/forms/rules-forms.md)
+         + [스마트 동작 추가하기: 양식 규칙 및 논리 안내서](/help/edge/docs/forms/rules-forms.md)
          + [고급 양식 유효성 검사: 정규 표현식 안내서](/help/edge/docs/forms/regex-forms.md)
-         + [재사용 가능한 Forms 작성: 양식 단편 안내서](/help/edge/docs/forms/form-fragments.md)
-         + [동적 Forms 만들기: 반복 가능한 섹션 추가](/help/edge/docs/forms/repeatable-forms.md)
-         + [양식을 전역으로 만들기: 양식 번역 안내서](/help/edge/docs/forms/translate-forms.md)
-         + [Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/recaptacha-forms.md)
+         + [재사용 가능한 양식 빌드: 양식 조각 활용 안내서](/help/edge/docs/forms/form-fragments.md)
+         + [동적 양식 만들기: 반복 가능한 섹션 추가](/help/edge/docs/forms/repeatable-forms.md)
+         + [글로벌 양식 제작하기: 양식 번역 안내서](/help/edge/docs/forms/translate-forms.md)
+         + [양식 보호하기: reCAPTCHA 보안 추가](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 양식 구성 요소 빌드: 개발자 안내서](/help/edge/docs/forms/custom-components-forms.md)
-         + [양식 성능 모니터링: 모니터링 가이드 실제 사용](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [양식 성능 모니터링: 실제 사용 모니터링 안내서](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
@@ -1156,8 +1157,8 @@ ht-degree: 94%
          + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
          + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
 + 생성형 AI {#generative-ai}
-   + [베리에이션 생성](/help/generative-ai/generate-variations.md)
-   + [변형 생성 - AEM 편집기에 통합됨](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [변형 생성](/help/generative-ai/generate-variations.md)
+   + [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)
    + [어시스턴트 (제한적 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
