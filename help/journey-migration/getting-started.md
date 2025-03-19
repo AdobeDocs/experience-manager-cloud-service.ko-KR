@@ -4,10 +4,10 @@ description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
-workflow-type: ht
+source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
+workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Cloud Service로의 마이그레이션 여정에는 다음 단계가 포함됩�
 
 이 여정에 설명된 단계 외에도 Adobe는 계획 수립에서 Cloud Service로의 이행까지의 전환 과정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반의 애플리케이션인 Cloud Acceleration Manager를 제공합니다. Adobe가 권장하는 모범 사례, 팁, 문서 및 도구를 사용하여 AEM as a Cloud Service로 전환하는 과정의 모든 단계에서 성공적인 마이그레이션을 위해 팀을 구성하십시오.
 
-[Cloud Acceleration Manager 설명서](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)를 참조하거나 [소개 비디오](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning)를 시청하여 마이그레이션 여정을 시작할 수 있습니다.
+[Cloud Acceleration Manager 설명서](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)를 참조하거나 [소개 비디오](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning)를 시청하여 마이그레이션 여정을 시작할 수 있습니다.
 
 ## 다음 단계 {#what-is-next}
 
