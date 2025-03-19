@@ -7,13 +7,13 @@ role: Admin, Architect, Developer
 source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # 시작하기 - 개발자 튜토리얼
 
-오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services for AEM Forms을 사용하면 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다.
+오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms용 Edge Delivery Services를 사용하면 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 생성할 수 있습니다.
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
@@ -59,7 +59,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    >[!NOTE]
    >
    >
-   > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 추가하다에 다음 IP를 추가할 수 있습니다. 3.227.118.73
+   > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 IP를 추가할 수 있습니다.3.227.118.73
 
    축하합니다! `https://<branch>--<repo>--<owner>.aem.page/`에서 새 웹 사이트가 실행되고 있습니다.
 
@@ -89,7 +89,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    Adobe Experience Manager 사용자에게 폴더에 대한 편집 권한을 제공해야 합니다.
 
-   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 -SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
    ![AEM 사용자와 폴더를 공유하고 편집 권한 제공 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
@@ -252,7 +252,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 적응형 양식 블록 `blocks/form` 폴더는 양식 스타일을 지정하고 코드를 작성할 수 있는 놀이터와도 같습니다. 이 디렉터리 내의 모든 `.css` 또는 `.js` 파일을 편집하면 변경 사항이 브라우저에 즉시 반영되는 것을 볼 수 있습니다.
 
-작성 콘텐츠를 선보일 준비가 되셨습니까? Git을 사용하여 변경 사항을 커밋하고 푸시합니다. 이렇게 하면 다음 URL에서 액세스할 수 있는 미리보기 및 프로덕션 환경이 업데이트됩니다(플레이스홀더를 프로젝트 세부 정보로 교체).
+작성 콘텐츠를 선보일 준비가 되셨습니까? Git을 사용하여 변경 사항을 커밋하고 푸시합니다. 이렇게 하면 다음 URL에서 액세스할 수 있는 미리보기 및 프로덕션 환경이 업데이트됩니다(플레이스홀더를 프로젝트 세부 정보로 대체).
 
 미리보기: `https://<branch>--<repo>--<owner>.aem.page/`
 프로덕션: `https://<branch>--<repo>--<owner>.aem.live/`

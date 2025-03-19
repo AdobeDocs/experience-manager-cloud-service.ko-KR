@@ -17,7 +17,7 @@ ht-degree: 83%
 
 <span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
-이 문서는 양식 생성 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 범용 편집기를 사용해 독립형 양식을 작성하는 과정을 안내합니다. 또한, 범용 편집기를 사용해 작성한 양식을 AEM Edge Delivery Services에 게시할 수 있습니다.
+이 문서는 양식 생성 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 범용 편집기를 사용해 독립형 양식을 작성하는 과정을 안내합니다. 또한 범용 편집기를 사용해 작성한 양식을 AEM Edge Delivery Services에 게시할 수 있습니다.
 
 <!--To publish forms to Edge Delivery Services, you must first establish a connection between your AEM environment and your GitHub repository. Once connected, you can author the forms using the Universal Editor, which follows a WYSIWYG (What You See Is What You Get) approach for a seamless and consistent user experience with Sites.-->
 
@@ -33,7 +33,7 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 
 ![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png)
 
-## 전제 조건
+## 사전 요구 사항
 
 * [GitHub 저장소를 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)하여 AEM 환경과 GitHub 저장소 간의 연결을 구축합니다.
 * 이미 Edge Delivery Services를 사용하고 있는 경우 최신 버전의 [적응형 양식 블록](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)을 GitHub 저장소에 추가합니다.
@@ -46,7 +46,7 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 
 >[!NOTE]
 >
-> 또한, [범용 편집기의 Edge Delivery Services 사이트 템플릿을 사용하여 AEM 사이트에서 양식을 작성하고 Edge Delivery Services에 게시할](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project) 수도 있습니다.
+> 또한 [범용 편집기의 Edge Delivery Services 사이트 템플릿을 사용하여 AEM 사이트에서 양식을 작성하고 Edge Delivery Services에 게시할](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project) 수도 있습니다.
 
 독립 실행형 적응형 양식을 범용 편집기를 사용하여 작성하려면 다음 단계를 수행하십시오.
 
