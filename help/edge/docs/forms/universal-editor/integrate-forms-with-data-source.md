@@ -1,17 +1,17 @@
 ---
-title: 범용 편집기에서 양식에 대한 양식 데이터 모델(FDM)을 만드는 방법
+title: 범용 편집기에서 양식에 대해 FDM(양식 데이터 모델)을 통합하는 방법을 선택하십시오.
 description: 양식 데이터 모델(FDM)을 기반으로 양식을 만드는 방법을 알아봅니다. FDM에서 데이터 모델 개체에 대한 샘플 데이터를 생성하고 편집합니다.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # 범용 편집기에서 양식 데이터 모델과 양식 통합
 
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 5. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **양식 만들기** 마법사가 나타납니다.
 6. **이름** 및 **제목**&#x200B;을 지정하십시오.
-7. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 리포지토리의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 다음과 같습니다.
+7. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 저장소의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 다음과 같습니다.
    `https://github.com/wkndforms/edsforms`
 8. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -74,7 +74,7 @@ ht-degree: 5%
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭하자마자 범용 편집기에서 작성할 양식이 열립니다.
 
-   ![양식 작성](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![작성자 양식](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    폼은 연결된 데이터 소스의 데이터 요소를 사용하여 만들어집니다. 폼 필드에는 미리 구성된 데이터 바인딩이 있습니다.
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 
    ![양식 작성](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   양식 요소의 **바인드 참조** 속성에서 데이터 바인딩을 지정하여 양식 요소에 데이터 바인딩을 수동으로 추가할 수도 있습니다.
+   양식 요소의 **바인드 참조** 속성에서 데이터 바인딩을 지정하여 수동으로 양식 요소에 추가해야 합니다.
 예를 들어 다음 양식에 이미 있는 **Pet 이름** 텍스트 상자에 데이터 바인딩 참조를 추가하겠습니다.
 
    ![양식 필드에 수동으로 데이터 바인딩 추가](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

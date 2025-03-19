@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6098'
 ht-degree: 99%
 
 ---
@@ -1047,7 +1047,8 @@ ht-degree: 99%
          + [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [양식 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [사용자 정의 양식 구성 요소 빌드: 범용 편집기 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [양식 데이터 모델 통합: Forms과 양식 데이터 모델 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [양식 데이터 모델 통합: 양식 데이터 모델과 Forms 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [재사용 가능한 모듈식 독립형 세그먼트: 양식에서 양식 조각 만들기 및 사용](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
          + [첫 번째 양식 작성: Google Sheets 및 Excel를 활용한 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Excel을 사용하여 양식 만드는 방법: 단계별 가이드](/help/edge/docs/forms/create-forms.md)
