@@ -1,24 +1,24 @@
 ---
-title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
+title: AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 76%
 
 ---
 
-# AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
+# AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
 
 ## 지금까지의 스토리 {#story-so-far}
 
 [AEM Headless 콘텐츠 작성자 여정](overview.md) 시작 부분의 [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항](basics.md)에서는 Headless 작성과 관련된 기본 개념 및 용어를 다룹니다.
 
-이 문서는 해당 사항을 기본으로 하며, 이를 통해 자체 AEM Headless 프로젝트의 콘텐츠 조각 모델을 만드는 방법을 이해할 수 있습니다.
+이 문서는 AEM Headless 프로젝트에 대한 나만의 콘텐츠 조각 모델을 만드는 방법을 이해할 수 있도록 이러한 원칙을 기반으로 합니다.
 
 ## 목표 {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. **도구** > **일반** > **콘텐츠 조각 모델**&#x200B;에서 수행할 수 있습니다.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다.
 
-![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
+1. 콘텐츠 조각 콘솔에서 콘텐츠 조각 모델에 대한 패널을 선택합니다.
 
-이를 선택하면 모델 위치로 이동하고 **만들기**&#x200B;를 선택합니다. 여기에서 여러 주요 세부 정보를 입력할 수 있습니다.
+1. 구성 또는 하위 구성에 적합한 폴더로 이동합니다.
 
-**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델은 저장하는 즉시 사용할 수 있습니다(콘텐츠 조각 생성 시). 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
+1. **만들기**&#x200B;를 사용하여 **새 콘텐츠 조각 모델** 대화 상자를 엽니다.
 
-![콘텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![제목 및 설명](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-**만들기**&#x200B;를 사용하여 확인한 다음 모델을 **열어**&#x200B;서 구조 정의를 시작할 수 있습니다.
+1. 세부 정보 작성
+
+1. **만들기**&#x200B;를 사용하여 빈 모델을 저장하거나 **만들기 및 열기**&#x200B;를 사용합니다.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![필드 정의](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-데이터 유형을 추가한 후에 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 이는 사용 중인 유형에 따라 다릅니다. 예:
+데이터 유형을 추가한 후에 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 이러한 속성은 사용 중인 유형에 따라 다릅니다. 예:
 
 ![데이터 속성](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 콘텐츠 조각 모델 관리에는 다음 내용이 포함됩니다.
 
 * 모델 활성화(또는 비활성화) - 콘텐츠 조각을 만들 때 작성자는 모델을 사용할 수 있습니다.
-* 삭제 - 삭제는 항상 필요하지만 콘텐츠 조각(특히 이미 게시된 조각)에 이미 사용된 모델의 삭제에 대해 알고 있어야 합니다.
+* 삭제 - 삭제는 항상 필요하지만 콘텐츠 조각에 이미 사용된 모델, 특히 이미 게시된 조각은 삭제해야 합니다.
 
 ## 게시 {#publishing}
 
@@ -99,7 +115,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 모델이 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 목표는 특히 게시 환경에서 기존 GraphQL 스키마 및 쿼리에 오류를 발생시킬 수 있는 변경 사항을 방지하는 것입니다. 콘솔에 **잠김**&#x200B;으로 표시됩니다.
 
