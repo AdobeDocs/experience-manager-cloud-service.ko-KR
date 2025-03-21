@@ -2,14 +2,48 @@
 title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DNL AEM Assets] 통합'
 description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Universal Editor] 및 [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 # [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안 [!DNL AEM Assets] 통합 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 ![UE가 있는 AEM 자산](/help/assets/assets/EDS2.png)
 
@@ -24,7 +58,7 @@ ht-degree: 0%
 
 ## [!DNL Edge Delivery Services]의 문서 기반 작성 흐름과 [!DNL AEM Assets] 통합 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-[!DNL AEM Assets]이(가) [!DNL Microsoft Word] 또는 [!DNL Google Docs]과(와) 같은 문서 기반 작성 도구와 통합되면 편집기에서 에셋 선택기를 제공합니다. 이 자산 선택기를 사용하여 [!DNL AEM Assets]에 액세스하고 승인된 자산을 문서에 삽입합니다.
+[!DNL AEM Assets]이(가) [!DNL Microsoft Word] 또는 [!DNL Google Docs]과(와) 같은 문서 기반 작성 도구와 통합되면 작성 도구에 자산 선택기를 제공합니다. 이 자산 선택기를 사용하여 [!DNL AEM Assets]에 액세스하고 승인된 자산을 콘텐츠에 삽입합니다.
 [!DNL Edge Delivery Services] 웹 사이트가 이미 있는 경우 [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) 설명서를 참조하여 [!DNL AEM Assets]을(를) 기존 [!DNL AEM] 프로젝트와 통합하는 방법에 대해 알아보십시오.
 문서 기반 작성 도구에서 작성한 [!DNL AEM Assets] 포함 콘텐츠를 게시할 [!DNL Edge Delivery Services] 웹 사이트가 없는 경우 다음 [필수 구성 요소](#integrate-aem-assets-with-microsoft-word-and-google-docs) 및 [문서 기반 작성 환경과 통합 [!DNL AEM Assets] 하기](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) 섹션을 따르십시오.
 
@@ -60,7 +94,7 @@ ht-degree: 0%
 
 * [!DNL Dynamic Media with Open API capabilities]이(가) 활성화된 Assets Cloud Service 환경에 대한 권한 부여.
 * [!DNL Dynamic Media] 라이선스.
-* 이미지 에셋에 대한 복사 참조가 활성화된 [!DNL AEM Assets sidekick plugin]이(가) 활성화되었습니다. 자세한 내용은 문서 기반 작성에 대해서는 [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)을(를) 참조하고 유니버설 편집기 기반 작성에 대해서는 [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)을(를) 참조하십시오.
+* 이미지 에셋에 대한 복사 참조가 활성화된 [!DNL AEM Assets sidekick plugin]이(가) 활성화되었습니다. 자세한 내용은 문서 기반 작성에 대해서는 [이 설명서](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)를 참조하고 유니버설 편집기 기반 작성에 대해서는 [이 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
 * Assets이 승인되었습니다. 승인된 자산에는 Assets Cloud Services 백 엔드 또는 UI 작업을 통해 `dam:status=Approved`이(가) 있습니다.
 
 ### [!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 전달된 자산 사용{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
