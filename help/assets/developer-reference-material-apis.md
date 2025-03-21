@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1984'
 ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]개의 개발자 사용 사례, API 및 참조 자료 {#assets-cloud-service-apis}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 이 문서에는 [!DNL Assets] as a [!DNL Cloud Service] 개발자를 위한 권장 사항, 참조 자료 및 리소스가 포함되어 있습니다. 여기에는 새로운 에셋 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
 
@@ -33,7 +67,7 @@ ht-degree: 8%
 | × | 지원되지 않습니다. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | 슬링 [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [자산 계산 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 슬링 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -69,10 +103,10 @@ ht-degree: 8%
 
 ## 에셋 업로드 {#asset-upload}
 
-[!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 HTTP API를 사용하여 클라우드 저장소에 자산을 직접 업로드할 수 있습니다. 바이너리 파일을 업로드하는 단계는 아래에 나와 있습니다. [!DNL Experience Manager] JVM 내부가 아닌 외부 응용 프로그램에서 이 단계를 실행하십시오.
+[!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 HTTP API를 사용하여 클라우드 저장소에 자산을 직접 업로드할 수 있습니다. 바이너리 파일을 업로드하는 단계는 아래에 나와 있습니다. [!DNL Experience Manager] JVM 내부가 아닌 외부 응용 프로그램에서 이 단계를 실행하십시오.
 
 1. [HTTP 요청을 제출](#initiate-upload). [!DNL Experience Manage]r 배포에 새 바이너리를 업로드하도록 알립니다.
-1. [PUT 요청에서 제공한 하나 이상의 URI에 바이너리의 내용을 ](#upload-binary)합니다.
+1. [이진 파일의 내용](#upload-binary)을(를) 시작 요청에서 제공한 하나 이상의 URI에 PUT합니다.
 1. [HTTP 요청을 제출](#complete-upload)하여 이진 파일의 내용이 성공적으로 업로드되었음을 서버에 알립니다.
 
 ![다이렉트 이진 업로드 프로토콜 개요](assets/add-assets-technical.png)
@@ -92,11 +126,11 @@ ht-degree: 8%
 >
 >[!IMPORTANT]
 >
->경우에 따라 변경 사항이 Experience ManagerCloud Service 에 있는 스토리지의 일관적인 특성으로 인해 요청 간에 완전히 전파되지 않을 수 있습니다. 필수 폴더 생성이 전파되지 않아 업로드 호출을 시작하거나 완료하는 응답이 404개로 늘어납니다. 클라이언트는 404 개의 응답을 예상해야 하며, 백오프 전략을 사용하여 재시도를 구현하여 응답들을 처리해야 합니다.
+>Experience Manager 특정 상황에서 Cloud Service의 일관된 스토리지 특성으로 인해 변경 사항이 요청 간에 완전히 전파되지 않을 수 있습니다. 필수 폴더 생성이 전파되지 않아 업로드 호출을 시작하거나 완료하는 응답이 404개로 늘어납니다. 클라이언트는 404 개의 응답을 예상해야 하며, 백오프 전략을 사용하여 재시도를 구현하여 응답들을 처리해야 합니다.
 
 ### 업로드 시작 {#initiate-upload}
 
-원하는 폴더에 HTTP POST 요청을 제출합니다. Assets은 이 폴더에서 만들어지거나 업데이트됩니다. 이진 파일 업로드를 시작하는 요청이 됨을 나타내는 선택기 `.initiateUpload.json`을(를) 포함합니다. 예를 들어 자산을 만들어야 하는 폴더의 경로는 `/assets/folder`입니다. POST 요청이 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`입니다.
+원하는 폴더에 HTTP POST 요청을 제출합니다. Assets은 이 폴더에서 만들어지거나 업데이트됩니다. 이진 파일 업로드를 시작하는 요청이 됨을 나타내는 선택기 `.initiateUpload.json`을(를) 포함합니다. 예를 들어 자산을 만들어야 하는 폴더의 경로는 `/assets/folder`입니다. POST 요청은 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`입니다.
 
 요청 본문의 콘텐츠 형식은 `application/x-www-form-urlencoded` 양식 데이터여야 하며 다음 필드가 포함되어야 합니다.
 
@@ -136,7 +170,7 @@ ht-degree: 8%
 
 ### 바이너리 업로드 {#upload-binary}
 
-업로드를 시작하는 출력은 하나 이상의 업로드 URI 값을 포함한다. 하나 이상의 URI가 제공되는 경우, 클라이언트는 바이너리를 분할하여 제공된 PUT URI에 대해 순서대로 각 파트의 업로드 요청을 할 수 있다. 바이너리를 부분으로 분할하려면 다음 지침을 따르십시오.
+업로드를 시작하는 출력은 하나 이상의 업로드 URI 값을 포함한다. 하나 이상의 URI가 제공되는 경우, 클라이언트는 바이너리를 분할하여 제공된 업로드 URI에 대해 각 부분의 PUT 요청을 순서대로 할 수 있다. 바이너리를 부분으로 분할하려면 다음 지침을 따르십시오.
 
 * 마지막 부분을 제외한 각 부분의 크기는 `minPartSize`보다 크거나 같아야 합니다.
 * 각 부분의 크기는 `maxPartSize`보다 작거나 같아야 합니다.
@@ -166,7 +200,7 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 
 ### 업로드 완료 {#complete-upload}
 
-이진 파일의 모든 부분이 업로드된 후 HTTP POST 요청을 시작 데이터가 제공하는 전체 URI에 제출합니다. 요청 본문의 콘텐츠 형식은 `application/x-www-form-urlencoded` 양식 데이터여야 하며 다음 필드가 포함되어야 합니다.
+이진 파일의 모든 부분이 업로드된 후 HTTP POST 요청을 시작 데이터에서 제공한 전체 URI로 제출합니다. 요청 본문의 콘텐츠 형식은 `application/x-www-form-urlencoded` 양식 데이터여야 하며 다음 필드가 포함되어야 합니다.
 
 | 필드 | 유형 | 필수 여부 | 설명 |
 |---|---|---|---|
@@ -427,7 +461,7 @@ echo "File upload completed successfully."
 
 ### 오픈 소스 업로드 라이브러리 {#open-source-upload-library}
 
-업로드 알고리즘에 대해 자세히 알아보거나 자체 업로드 스크립트 및 도구를 빌드하기 위해 Adobe은 오픈 소스 라이브러리 및 도구를 제공합니다.
+Adobe은 업로드 알고리즘에 대해 자세히 알아보거나 자체 업로드 스크립트 및 도구를 빌드하기 위해 오픈 소스 라이브러리 및 도구를 제공합니다.
 
 * [오픈 소스 aem 업로드 라이브러리](https://github.com/adobe/aem-upload).
 * [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
@@ -440,7 +474,7 @@ echo "File upload completed successfully."
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-새 업로드 메서드는 [!DNL Adobe Experience Manager]에 대해서만 [!DNL Cloud Service](으)로 지원됩니다. [!DNL Adobe Experience Manager] 6.5의 API는 더 이상 사용되지 않습니다. 에셋 또는 렌디션(바이너리 업로드) 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
+새 업로드 메서드는 [!DNL Adobe Experience Manager]에 대해서만 [!DNL Cloud Service]&#x200B;(으)로 지원됩니다. [!DNL Adobe Experience Manager] 6.5의 API는 더 이상 사용되지 않습니다. 에셋 또는 렌디션(바이너리 업로드) 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
 
 * [EXPERIENCE MANAGER ASSETS HTTP API](mac-api-assets.md)
 * `AssetManager` Java API(예: `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`)

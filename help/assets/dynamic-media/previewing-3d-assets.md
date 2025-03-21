@@ -1,18 +1,55 @@
 ---
 title: 3D 자산 미리보기
-description: Experience Manager에서 3D 에셋을 미리 보는 방법에 대해 알아봅니다.
+description: Experience Manager에서 3D 자산을 미리 보는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 8%
 
 ---
 
 # Adobe Experience Manager에서 3D 자산 미리 보기{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -70,7 +107,7 @@ Experience Manager은 기본적으로 다음 파일 형식에 대해 대화형 3
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 [3D 미리 보기에 대해 지원되는 형식](#supported-3d-previewing-assets) 및 [에셋 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
-1. **[!UICONTROL Experience Manager Assets]** 페이지의 **[!UICONTROL 탐색]** > **[!UICONTROL 파일]** 페이지로 이동합니다.
+1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**(으)로 이동합니다.
 
    ![탐색 페이지](/help/assets/dynamic-media/assets/navigation-assets.png)
 

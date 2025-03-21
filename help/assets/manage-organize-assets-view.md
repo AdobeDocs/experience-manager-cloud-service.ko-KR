@@ -5,17 +5,51 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 73%
+source-wordcount: '1661'
+ht-degree: 71%
 
 ---
 
 # 자산 관리 {#manage-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Assets view]의 사용자 친화적인 인터페이스를 사용하여 다양한 디지털 자산 관리(DAM) 작업을 간편하게 수행할 수 있습니다. 자산을 추가한 후 자산을 검색, 다운로드, 이동, 복사, 이름 변경, 삭제, 업데이트 및 편집할 수 있습니다.
 
@@ -142,7 +176,7 @@ Assets 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태�
 
 ### 승인 대상 설정 {#set-approval-target}
 
-Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수 있는 **승인 대상** 필드에 설정한 값을 기반으로 OpenAPI 기능을 사용하여 Dynamic Media이나 Content Hub 또는 둘 다에 승인된 자산을 게시할 수 있습니다.
+Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수 있는 **승인 대상** 필드에 설정한 값을 기반으로 OpenAPI 기능, Content Hub 또는 두 가지 모두를 사용하여 승인된 자산을 Dynamic Media에 게시할 수 있습니다.
 
 승인 대상을 설정하려면:
 
@@ -152,7 +186,7 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
 1. 2단계에서 **승인됨**&#x200B;을(를) 선택한 경우 승인 대상을 선택하십시오. 가능한 값은 게재 및 Content Hub을 포함합니다.
 
-   * **배달**&#x200B;은(는) 드롭다운 메뉴에서 선택한 기본 옵션이며, Experience Manager Assets에 대해 둘 다 활성화된 경우 자산을 [OpenAPI가 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Content Hub](/help/assets/product-overview.md) 모두에 게시합니다.
+   * **배달**&#x200B;은(는) 드롭다운 메뉴에서 선택한 기본 옵션이며, 두 옵션이 모두 Experience Manager Assets에 대해 활성화되어 있는 경우 자산을 [OpenAPI를 사용하는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Content Hub](/help/assets/product-overview.md) 모두에 게시합니다.
 
    * **Content Hub**&#x200B;을(를) 선택하면 자산이 Content Hub에만 게시됩니다. Content Hub은 Experience Manager Assets에 대해 활성화된 경우에만 옵션으로 표시됩니다.
 
@@ -163,7 +197,7 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
    >[!NOTE]
    >
-   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI와 함께 Dynamic Media이 활성화되어 있으면 기본적으로 활성화되어 있습니다.
+   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI가 활성화된 Dynamic Media가 있는 경우 기본적으로 활성화됩니다.
 
    ![승인 상태](/help/assets/assets/approval-status-delivery.png)
 
@@ -179,11 +213,11 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
 다음 표에서는 AEM as a Cloud Service 환경에서 OpenAPI 및 Content Hub을 통한 DM 활성화를 기반으로 `Approval Target` 드롭다운 목록과 기본 승인 대상을 표시하기 위한 사전 요구 사항을 보여 줍니다.
 
-| OpenAPI를 사용한 Dynamic Media | Content Hub | 승인 대상 드롭다운 목록이 표시됩니까? | 승인된 자산의 기본 승인 대상 | Publish 대상 |
+| OpenAPI를 사용하는 Dynamic Media | Content Hub | 승인 대상 드롭다운 목록이 표시됩니까? | 승인된 자산의 기본 승인 대상 | 대상 게시 |
 | --- | --- | --- | --- |---|
-| 활성화됨 | 활성화됨 | 예 | 제공 | OpenAPI 및 Content Hub이 포함된 Dynamic Media |
+| 활성화됨 | 활성화됨 | 예 | 제공 | OpenAPI 및 Content Hub을 사용하는 Dynamic Media |
 | 활성화되지 않음 | 활성화됨 | 예 | Content Hub | Content Hub |
-| 활성화됨 | 활성화되지 않음 | 예 | 제공 | OpenAPI를 사용한 Dynamic Media |
+| 활성화됨 | 활성화되지 않음 | 예 | 제공 | OpenAPI를 사용하는 Dynamic Media |
 | 활성화되지 않음 | 활성화되지 않음 | 아니요 | N/A | N/A |
 
 ### 자산 만료 날짜 설정 {#set-asset-expiration-date}

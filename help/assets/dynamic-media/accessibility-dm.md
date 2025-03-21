@@ -1,28 +1,65 @@
 ---
 title: Dynamic Media에서의 접근성
-description: 비디오 인코딩, Dynamic Media에 비디오 게시 및 비디오 보고서 보기 모범 사례와 같이 YouTube에서 비디오를 사용하는 방법에 대해 알아봅니다. 또한 폐쇄 캡션, 캡션 또는 챕터 마커를 비디오에 추가하는 방법도 알아봅니다.
+description: 비디오 인코딩, YouTube에 비디오 게시 및 비디오 보고서 보기 모범 사례와 같이 Dynamic Media에서 비디오로 작업하는 방법을 알아봅니다. 또한 폐쇄 캡션, 캡션 또는 챕터 마커를 비디오에 추가하는 방법도 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 3%
 
 ---
 
 # Dynamic Media에서의 접근성 {#accessibility-in-dm}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
-Dynamic Media은 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
+Dynamic Media는 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
 
 ## Dynamic Media의 키보드 접근성 지원 {#keyboard-support-in-dm}
 
-Dynamic Media은 [!DNL Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과(와) 동일합니다. 예를 들어, Dynamic Media의 `Cancel` 단추는 [!DNL Experience Manager Assets]과(와) 동일한 포커스 강조 표시가 있습니다. 또한 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에도 반응합니다. [Assets의 키보드 단축키](/help/assets/accessibility.md#keyboard-shortcuts)를 참조하십시오.
+Dynamic Media는 [!DNL Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과(와) 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추는 [!DNL Experience Manager Assets]과(와) 동일한 포커스 강조 표시를 갖습니다. 또한 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에도 반응합니다. [Assets의 키보드 단축키](/help/assets/accessibility.md#keyboard-shortcuts)를 참조하십시오.
 
 Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
@@ -53,20 +90,20 @@ Dynamic Media 사용자 인터페이스 요소는 화면 판독기와 같은 보
 
 ## Dynamic Media 뷰어의 키보드 접근성 지원 {#keyboard-accessibility-for-dm-viewers}
 
-모든 기본 Dynamic Media 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
+모든 Dynamic Media 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
 
 Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## Dynamic Media 뷰어 {#assistive-technology=support-for-dm-viewers}의 보조 기술 지원
 
 모든 Dynamic Media 뷰어 구성 요소는 ARIA(Accessible Rich Internet Applications) 역할 및 속성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media 뷰어 참조 가이드의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)을 참조하십시오.
 
 ## [!DNL Dynamic Media]에서 폐쇄 캡션 지원 {#closed-caption-support}
 
-Dynamic Media은 자막이 있는 비디오 및 적응형 비디오 세트 배달을 지원합니다. 캡션은 비디오 콘텐츠 위에 표시되어야 합니다.
+Dynamic Media는 자막이 있는 비디오 및 적응형 비디오 세트 배달을 지원합니다. 캡션은 비디오 콘텐츠 위에 표시되어야 합니다.
 
-Dynamic Media의 [비디오 - 비디오에 폐쇄 캡션 추가](/help/assets/dynamic-media/video.md#adding-captions-to-video)를 참조하십시오.
+[Dynamic Media의 비디오 - 비디오에 폐쇄 캡션 추가](/help/assets/dynamic-media/video.md#adding-captions-to-video)를 참조하십시오.
 
 
 >[!MORELIKETHIS]

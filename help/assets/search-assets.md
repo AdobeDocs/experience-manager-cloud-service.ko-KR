@@ -1,31 +1,65 @@
 ---
-title: AEM에서 자산을 검색하는 방법
+title: AEM에서 에셋을 검색하는 방법
 description: 필터 패널을 사용하여 AEM에서 에셋을 검색하는 방법 및 에셋 검색에 표시되는 결과를 사용하는 방법에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 6%
 
 ---
 
-# AEM에서 자산 검색 {#search-assets-in-aem}
+# AEM에서 에셋 검색 {#search-assets-in-aem}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
-
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 충족시키는 데 도움이 됩니다.
 
-AEM의 자산 검색은 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용 사례의 사용, 개념, 구성, 제한 사항 및 문제 해결에 대해 설명합니다.
+AEM의 에셋 검색은 다음 사용 사례를 지원하며, 이 문서에서는 이러한 사용 사례의 사용, 개념, 구성, 제한 사항 및 문제 해결에 대해 설명합니다.
 
 | 자산 검색 | 검색 기능 구성 및 관리 | 에셋 검색 결과 작업 |
 |---|---|---|
@@ -88,13 +122,13 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 `damAssetLucene-9`은(는) 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 계산 동작을 변경하므로 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
 
-이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe은 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
+이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe에서는 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
 
 이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 [Facet - Oak 설명서 - Lucene 색인](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)을 참조하십시오.
 
 ## 입력할 때 제안 사항 검색 {#searchsuggestions}
 
-키워드를 입력하기 시작하면 Experience Manager에서 가능한 검색 키워드나 구를 제안합니다. 제안은 Experience Manager의 에셋을 기반으로 합니다. Experience Manager은 검색에 도움이 되도록 모든 메타데이터 필드를 인덱싱합니다. 검색 제안을 제공하기 위해 시스템에서는 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 적절한 키워드로 다음 필드를 채우는 것이 좋습니다.
+키워드를 입력하기 시작하면 Experience Manager에서 가능한 검색 키워드나 구를 제안합니다. 제안은 Experience Manager의 자산을 기반으로 합니다. Experience Manager은 검색에 도움이 되도록 모든 메타데이터 필드를 인덱싱합니다. 검색 제안을 제공하기 위해 시스템에서는 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 적절한 키워드로 다음 필드를 채우는 것이 좋습니다.
 
 * 자산 태그. (`jcr:content/metadata/cq:tags`에 매핑)
 * 자산 제목입니다. (`jcr:content/metadata/dc:title`에 매핑)
@@ -196,7 +230,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 [!DNL Experience Manager] 사용자 인터페이스에서 사용자는 [Adobe Stock 에셋](/help/assets/aem-assets-adobe-stock.md)을(를) 검색하고 필요한 에셋에 라이선스를 부여할 수 있습니다. Omnisearch 막대에 `Location: Adobe Stock`을(를) 추가합니다. 필터 패널을 사용하여 라이선스가 있거나 라이선스가 없는 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수도 있습니다.
 
-### Dynamic Media assets {#dmassets}
+### Dynamic Media 자산 {#dmassets}
 
 You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
 
@@ -249,13 +283,13 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 [!DNL Adobe Experience Manager]은(는) DAM 저장소를 다른 여러 [!DNL Experience Manager] 솔루션에 연결하여 디지털 에셋에 더 빠르게 액세스하고 크리에이티브 워크플로를 간소화합니다. 모든 에셋 검색은 찾아보기 또는 검색으로 시작됩니다. 검색 비헤이비어는 다양한 서피스와 솔루션에서 대체로 동일하게 유지됩니다. 대상 대상, 사용 사례 및 사용자 인터페이스가 [!DNL Experience Manager] 솔루션에 따라 달라짐에 따라 일부 검색 방법이 변경됩니다. 특정 방법은 아래 링크에 개별 솔루션에 대해 설명되어 있습니다. 보편적으로 적용 가능한 팁과 행동은 이 문서에 문서화되어 있습니다.
 
-### Asset Link Adobe 패널에서 에셋 검색 {#aal}
+### Adobe Asset Link 패널에서 자산 검색 {#aal}
 
-이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 [!DNL Experience Manager Assets]에 저장된 콘텐츠에 액세스할 수 있습니다. 광고 팀은 [!DNL Adobe Creative Cloud] 앱의 인앱 패널([!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign])을 사용하여 자산을 원활하게 탐색, 검색, 체크 아웃 및 체크 인할 수 있습니다. Asset Link를 통해 사용자는 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 디스플레이 결과는 Adobe Sensei의 머신 러닝 알고리즘으로 제공되며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe 자산 링크를 사용하여 [자산 검색 및 찾아보기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 참조하십시오.
+이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 [!DNL Experience Manager Assets]에 저장된 콘텐츠에 액세스할 수 있습니다. 광고 팀은 [!DNL Adobe Creative Cloud] 앱의 인앱 패널([!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign])을 사용하여 자산을 원활하게 탐색, 검색, 체크 아웃 및 체크 인할 수 있습니다. Asset Link를 통해 사용자는 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 디스플레이 결과는 Adobe Sensei의 머신 러닝 알고리즘으로 제공되며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe Asset Link를 사용하여 [자산 검색 및 찾아보기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 참조하십시오.
 
 ### [!DNL Experience Manager] 데스크톱 앱에서 자산 검색 {#desktop-app}
 
-크리에이티브 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
+Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
 
 ### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
@@ -441,13 +475,13 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | MIME 유형 | 이미지, 문서, 멀티미디어, 아카이브 또는 기타 |
 | 마지막 수정일 | 시간, 일, 주, 월 또는 년. |
 | 파일 크기 | 소형, Medium 또는 대형 |
-| Publish 상태 | 게시 또는 게시 취소. |
+| 게시 상태 | 게시 또는 게시 취소. |
 | 승인됨 상태 | 승인 또는 거부됨. |
 | 방향 | 가로, 세로 또는 사각형. |
 | 스타일 | 색상 또는 흑백 중에서 선택할 수 있습니다. |
 | 비디오 높이 | 최소값 및 최대값으로 지정됩니다. 값은 비디오 표현물의 메타데이터에만 저장됩니다. |
 | 비디오 폭 | 최소값 및 최대값으로 지정됩니다. 값은 비디오 표현물의 메타데이터에만 저장됩니다. |
-| 비디오 형식 | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. 값은 소스 비디오 및 모든 표현물의 메타데이터에 저장됩니다. |
+| 비디오 형식 | DVI, 플래시, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. 값은 소스 비디오 및 모든 표현물의 메타데이터에 저장됩니다. |
 | 비디오 코덱 | x264. 값은 비디오 표현물의 메타데이터에만 저장됩니다. |
 | 비디오 비트율 | 최소값 및 최대값으로 지정됩니다. 값은 비디오 표현물의 메타데이터에만 저장됩니다. |
 | 오디오 코덱 | Libvorbis, Rame MP3, AAC 인코딩. 값은 비디오 표현물의 메타데이터에만 저장됩니다. |
@@ -471,7 +505,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. **[!UICONTROL 필터]** 패널에서 **[[!UICONTROL 파일]](#searchui)**&#x200B;을(를) 선택한 경우에만 목록 보기에서 검색 결과를 정렬할 수 있습니다. [!DNL Assets]은(는) 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
+목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, 차원, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
 
 정렬 기능의 제한 사항에 대해서는 [제한 사항](#limitations)을 참조하십시오.
 

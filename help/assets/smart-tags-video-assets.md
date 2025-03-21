@@ -4,25 +4,59 @@ description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 4%
+source-wordcount: '1271'
+ht-degree: 5%
 
 ---
 
 # 비디오 자산에 스마트 태그 지정 {#video-smart-tags}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 새로운 콘텐츠에 대한 필요성이 증가함에 따라 매력적인 디지털 경험을 즉시 제공하기 위한 수작업 노력이 감소해야 합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) 인공 지능을 사용하여 비디오 자산의 자동 태깅을 지원합니다. 비디오를 수동으로 태깅하는 데에는 시간이 많이 걸릴 수 있습니다. 그러나 [!DNL Adobe Sensei] 기반 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 콘텐츠를 분석하고 태그를 비디오 자산에 추가합니다. 이를 통해 DAM 사용자가 고객에게 풍부한 경험을 전달하는 시간을 단축할 수 있습니다. Adobe의 머신 러닝 서비스는 비디오에 대해 두 세트의 태그를 생성합니다. 반면, 한 세트는 해당 비디오에 있는 객체, 장면 및 속성에 해당되며, 다른 세트는 음주, 달리기, 조깅 등의 작업에 관한 것입니다.
 
-비디오 태깅은 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 기본적으로 사용됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정을 옵트아웃](#opt-out-video-smart-tagging)할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오가 자동으로 태그됩니다. [!DNL Experience Manager]은(는) 또한 비디오 파일의 썸네일을 만들고 메타데이터를 추출합니다. 스마트 태그가 자산 [!UICONTROL 속성]에서 [신뢰도 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다.
+비디오 태깅은 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 기본적으로 사용됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정을 옵트아웃](#opt-out-video-smart-tagging)할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오가 자동으로 태그됩니다. [!DNL Experience Manager]은(는) 또한 비디오 파일의 썸네일을 만들고 메타데이터를 추출합니다. 스마트 태그가 자산 [!UICONTROL 속성]에서 [신뢰도 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다.
 
 ## 업로드 시 스마트 태깅 비디오 {#smart-tag-assets-on-ingestion}
 
-[비디오 자산을 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service](으)로 업로드](add-assets.md#upload-assets)하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe Sensei]을(를) 사용하여 이러한 스마트 태그를 만듭니다.
+[비디오 자산을 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service]&#x200B;(으)로 업로드](add-assets.md#upload-assets)하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe Sensei]을(를) 사용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됨](assets/smart-tags-added-to-videos.png)
 
@@ -112,7 +146,7 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 
 [!DNL Adobe Experience Manager]의 작업 및 개체 태그에 대한 기본 임계값은 0.7(0과 1 사이의 값이어야 함)입니다. 일부 비디오 자산이 특정 태그에 의해 태깅되지 않는 경우, 이는 알고리즘이 예측된 태그에서 70% 미만으로 신뢰됨을 나타낸다. 기본 임계값이 모든 사용자에게 항상 최적이 아닐 수 있습니다. 따라서 OSGI 구성에서 신뢰 점수 값을 변경할 수 있습니다.
 
-[!DNL Adobe Experience Manager]에 [!DNL Cloud Service] - [!DNL Cloud Manager](으)로 배포된 프로젝트에 신뢰도 점수 OSGI 구성을 추가하려면 다음을 수행하십시오.
+[!DNL Adobe Experience Manager]에 [!DNL Cloud Service] - [!DNL Cloud Manager]&#x200B;(으)로 배포된 프로젝트에 신뢰도 점수 OSGI 구성을 추가하려면 다음을 수행하십시오.
 
 * [!DNL Adobe Experience Manager] 프로젝트( Archetype 24 이후 `ui.config` 또는 이전 `ui.apps`)에서 `config.author` OSGi 구성에 다음 내용이 포함된 구성 파일 `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json`을(를) 포함하십시오.
 

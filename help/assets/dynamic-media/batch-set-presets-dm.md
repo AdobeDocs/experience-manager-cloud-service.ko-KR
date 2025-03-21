@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 1%
 
 ---
 
 # 일괄처리 집합 사전 설정 정보 {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 **[!UICONTROL 일괄처리 집합 사전 설정]**&#x200B;을 사용하여 개별적으로 또는 일괄 수집을 사용하여 에셋 파일을 폴더에 업로드할 때 이미지 집합 또는 회전 집합에서 여러 에셋을 만들고 구성합니다. [!DNL Dynamic Media]에서 예약한 자산 가져오기 작업과 함께 사전 설정을 실행할 수 있습니다. 각 사전 설정은 사전 설정된 레시피에서 정의된 명명 규칙과 일치하는 이미지를 사용하여 이미지 세트 또는 스핀 세트를 구성하는 방법을 정의하는 고유한 이름의 자체 포함된 지침 세트입니다.
 
@@ -20,14 +57,14 @@ ht-degree: 0%
 >
 >[!DNL Dynamic Media Classic]에서 일괄처리 집합 사전 설정을 사용하고 있으며 [!DNL Dynamic Media Classic]에서 Adobe Experience Manager as a Cloud Service으로 마이그레이션하고 있습니까? 이 경우 [!DNL Adobe Experience Manager as a Cloud Service] 내에서 일괄처리 집합 사전 설정 정의를 수동으로 다시 만들어야 합니다.
 
-**모범 사례** - 일괄처리 집합 사전 설정으로 작업할 때 Adobe은 다음 워크플로를 권장합니다.
+**모범 사례** - 일괄처리 집합 사전 설정으로 작업할 때 Adobe에서는 다음 워크플로를 권장합니다.
 
 1. 일괄처리 집합 사전 설정을 만듭니다. [이미지 집합 또는 회전 집합에 대한 일괄처리 집합 사전 설정 만들기](#creating-bsp)를 참조하십시오.
 1. 자산 폴더를 만들거나 기존 자산 폴더를 사용하여 자산 폴더가 [!DNL Dynamic Media]에 동기화되어 있는지 확인하십시오. [폴더 만들기](/help/assets/manage-digital-assets.md#creating-folders)를 참조하세요.
 1. 일괄처리 집합 사전 설정을 자산 폴더에 적용합니다. [폴더에 일괄처리 집합 사전 설정 적용 정보](#apply-bsp)를 참조하세요.
 1. 자산 폴더에 이미지를 업로드합니다. [이미지 집합에 대한 자산 업로드](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [회전 집합에 대한 자산 업로드](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) 또는 [Adobe Experience Manager에 디지털 자산 추가](/help/assets/add-assets.md#add-assets-to-experience-manager)를 참조하십시오.
 1. 이미지 집합 또는 회전 집합이 원하는 폴더에서 자동으로 생성됩니다.
-1. 이미지 세트 또는 회전 세트를 Publish 합니다. [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+1. 이미지 세트 또는 회전 세트를 게시합니다. [Dynamic Media Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 이미지 집합 또는 회전 집합에 대한 일괄처리 집합 사전 설정 만들기 {#creating-bsp}
 
@@ -109,10 +146,10 @@ ht-degree: 0%
 | --- | --- |
 | 사전 설정 이름 | 읽기 전용. 일괄처리 집합을 처음 만들 때 지정한 이름입니다. 사전 설정의 이름을 변경해야 하는 경우 기존 일괄처리 집합 사전 설정을 복사하고 새 이름을 지정할 수 있습니다. [기존 일괄처리 집합 사전 설정 복사](#copy-bsp)를 참조하십시오. |
 | 유형 | 읽기 전용. 일괄처리 집합을 처음 만들 때 유형이 지정되었습니다. 기존 일괄처리 집합 사전 설정을 복사하면 해당 [!UICONTROL Type]을(를) 변경할 수 없습니다. 대신 사전 설정을 만들어야 합니다. |
-| 파생된 자산 포함 | 선택 사항입니다. [!DNL Dynamic Media]의 IPS(이미지 프로덕션 시스템)에 회전 집합 또는 이미지 집합과 함께 생성되거나 &quot;파생된&quot; 이미지를 포함시키려면 **[!UICONTROL 예]**(기본값)를 선택하십시오. 파생된 에셋은 사용자가 직접 업로드하지 않은 이미지입니다. 대신 마스터 에셋이 업로드되면 IPS가 에셋을 생성했습니다. 예를 들어 PDF이 [!DNL Dynamic Media]에 업로드된 시점에 PDF의 페이지에서 생성된 IPS의 이미지 자산은 파생된 자산으로 간주됩니다. |
-| 대상 폴더 | 선택 사항입니다. 많은 수의 이미지 세트 또는 스핀 세트를 정의하는 경우 Adobe은 이러한 세트를 에셋 자체가 들어 있는 폴더와 구분하도록 권장합니다. 따라서 이미지 세트 또는 스핀 세트 폴더를 만들고 배치 세트에서 생성된 세트를 여기에 배치하도록 애플리케이션을 리디렉션하는 것이 좋습니다.<br>이 경우 Experience Manager Assets 폴더 구조(`/content/dam`) 내에서 일괄처리 집합 사전 설정이 활성화된 폴더를 지정하십시오. 대상 폴더로 허용하려면 폴더가 [!DNL Dynamic Media] 동기화에 대해 활성화되어 있는지 확인하십시오. [Dynamic Media의 폴더 수준에서 선택적 게시 구성](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)을 참조하십시오.<br>폴더의 **[!UICONTROL 속성]**&#x200B;을 통해 사전 설정을 적용하는 경우 두 개 이상의 폴더에 지정된 일괄처리 집합 사전 설정이 할당될 수 있습니다. [자산 폴더의 속성 페이지에서 일괄처리 집합 사전 설정 적용](#apply-bsp-to-folders-via-properties)을 참조하십시오.<br>폴더를 지정하지 않으면 일괄처리 집합 사전 설정에서 생성된 이미지 집합 또는 회전 집합이 업로드한 자산 폴더와 같은 폴더에 만들어집니다. |
+| 파생된 자산 포함 | 선택 사항. [!DNL Dynamic Media]의 IPS(이미지 프로덕션 시스템)에 회전 집합 또는 이미지 집합과 함께 생성되거나 &quot;파생된&quot; 이미지를 포함시키려면 **[!UICONTROL 예]**(기본값)를 선택하십시오. 파생된 에셋은 사용자가 직접 업로드하지 않은 이미지입니다. 대신 마스터 에셋이 업로드되면 IPS가 에셋을 생성했습니다. 예를 들어 PDF이 [!DNL Dynamic Media]에 업로드된 시점에 PDF의 페이지에서 IPS가 생성된 이미지 자산은 파생된 자산으로 간주됩니다. |
+| 대상 폴더 | 선택 사항. 많은 수의 이미지 세트 또는 스핀 세트를 정의하는 경우 Adobe에서는 이러한 세트를 에셋 자체가 들어 있는 폴더와 구분하도록 권장합니다. 따라서 이미지 세트 또는 스핀 세트 폴더를 만들고 배치 세트에서 생성된 세트를 여기에 배치하도록 애플리케이션을 리디렉션하는 것이 좋습니다.<br>이 경우 Experience Manager Assets 폴더 구조(`/content/dam`) 내에서 일괄처리 집합 사전 설정이 활성화된 폴더를 지정하십시오. 대상 폴더로 허용하려면 폴더가 [!DNL Dynamic Media] 동기화에 대해 활성화되어 있는지 확인하십시오. [Dynamic Media의 폴더 수준에서 선택적 게시 구성](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)을 참조하십시오.<br>폴더의 **[!UICONTROL 속성]**&#x200B;을 통해 사전 설정을 적용하는 경우 두 개 이상의 폴더에 지정된 일괄처리 집합 사전 설정이 할당될 수 있습니다. [자산 폴더의 속성 페이지에서 일괄처리 집합 사전 설정 적용](#apply-bsp-to-folders-via-properties)을 참조하십시오.<br>폴더를 지정하지 않으면 일괄처리 집합 사전 설정에서 생성된 이미지 집합 또는 회전 집합이 업로드한 자산 폴더와 같은 폴더에 만들어집니다. |
 | **[!UICONTROL 명명 규칙 설정]** |  |
-| 접두사<br>or<br>접미사 | 선택 사항입니다. 각 필드에 접두어, 접미어 또는 둘 다 입력합니다.<br>접두사 및 접미사 필드를 사용하면 특정 콘텐츠 집합에 대해 대체 사용자 지정 파일 이름 지정 규칙을 사용하여 여러 일괄처리 집합 사전 설정을 만들 수 있습니다. 이 방법은 회사가 정의한 기본 이름 지정 체계에 예외가 있는 경우에 특히 유용합니다.<br>접두사 또는 접미사가 **[!UICONTROL 자산 명명 규칙]** 영역에서 정의한 **[!UICONTROL 기본 이름]**&#x200B;에 추가됩니다. 접두어나 접미어를 추가하면 이미지 세트 또는 스핀 세트가 다른 에셋과 배타적으로 독립적으로 생성되도록 할 수 있습니다. 또한 다른 사람이 파일 유형을 식별하는 데 도움이 될 수도 있습니다. 예를 들어 사용되는 색상 모드를 결정하기 위해 접두사 또는 접미사 `rgb` 또는 `cmyk`을(를) 추가할 수 있습니다.<br>일괄처리 집합 사전 설정 기능을 사용하는 데 집합 명명 규칙을 지정할 필요는 없지만 집합 명명 규칙을 사용하는 것이 좋습니다. 이 방법을 사용하면 세트에서 그룹화할 명명 규칙의 요소를 최대한 많이 정의하여 배치 세트 생성을 간소화할 수 있습니다. |
+| 접두사<br>or<br>접미사 | 선택 사항. 각 필드에 접두어, 접미어 또는 둘 다 입력합니다.<br>접두사 및 접미사 필드를 사용하면 특정 콘텐츠 집합에 대해 대체 사용자 지정 파일 이름 지정 규칙을 사용하여 여러 일괄처리 집합 사전 설정을 만들 수 있습니다. 이 방법은 회사가 정의한 기본 이름 지정 체계에 예외가 있는 경우에 특히 유용합니다.<br>접두사 또는 접미사가 **[!UICONTROL 자산 명명 규칙]** 영역에서 정의한 **[!UICONTROL 기본 이름]**&#x200B;에 추가됩니다. 접두어나 접미어를 추가하면 이미지 세트 또는 스핀 세트가 다른 에셋과 배타적으로 독립적으로 생성되도록 할 수 있습니다. 또한 다른 사람이 파일 유형을 식별하는 데 도움이 될 수도 있습니다. 예를 들어 사용되는 색상 모드를 결정하기 위해 접두사 또는 접미사 `rgb` 또는 `cmyk`을(를) 추가할 수 있습니다.<br>일괄처리 집합 사전 설정 기능을 사용하는 데 집합 명명 규칙을 지정할 필요는 없지만 집합 명명 규칙을 사용하는 것이 좋습니다. 이 방법을 사용하면 세트에서 그룹화할 명명 규칙의 요소를 최대한 많이 정의하여 배치 세트 생성을 간소화할 수 있습니다. |
 | **[!UICONTROL 규칙 결과 - RegX]** |  |
 | 자산 명명 규칙 - 일치 | 읽기 전용. 선택한 일치 양식 옵션 또는 입력한 원시 코드를 기반으로 정규 표현식 구문을 표시합니다. |
 | 에셋 명명 규칙 - 기본 이름 | 읽기 전용. 선택한 기본 이름 양식 옵션 또는 입력한 원시 코드를 기반으로 정규 표현식 구문을 표시합니다. |
@@ -241,7 +278,7 @@ ht-degree: 0%
 
 ## 일괄처리 집합 사전 설정 삭제 {#delete-bsp}
 
-일괄처리 집합 사전 설정을 삭제하여 [!DNL Dynamic Media]에서 영구적으로 제거할 수 있습니다. 즉, [!UICONTROL 일괄처리 집합 사전 설정] 페이지에 더 이상 표시되지 않으며, 폴더의 **[!UICONTROL 속성]** 페이지에서 **[!UICONTROL Dynamic Media 처리]** 탭의 **[!UICONTROL 일괄처리 집합 사전 설정]** 드롭다운 목록에 표시되지 않습니다. 따라서 사전 설정은 폴더 재처리 또는 폴더에 새 에셋이 업로드되는 경우 기존 에셋에 적용되지 않습니다.
+일괄처리 집합 사전 설정을 삭제하여 [!DNL Dynamic Media]에서 영구적으로 제거할 수 있습니다. 즉, [!UICONTROL 일괄처리 집합 사전 설정] 페이지에 더 이상 표시되지 않으며, 폴더의 **[!UICONTROL 속성]** 페이지에 있는 **[!UICONTROL Dynamic Media 처리]** 탭의 **[!UICONTROL 일괄처리 집합 사전 설정]** 드롭다운 목록에 표시되지 않습니다. 따라서 사전 설정은 폴더 재처리 또는 폴더에 새 에셋이 업로드되는 경우 기존 에셋에 적용되지 않습니다.
 
 하나 이상의 폴더에 이전에 적용된 사전 설정을 삭제하는 경우 해당 폴더의 에셋에서 생성된 이미지 세트 또는 스핀 세트가 그대로 계속 표시됩니다.
 
@@ -265,5 +302,5 @@ ht-degree: 0%
 >
 >* [이미지 세트](/help/assets/dynamic-media/image-sets.md)
 >* [스핀 세트](/help/assets/dynamic-media/spin-sets.md)
->* [Dynamic Media의 폴더 수준에서 선택적 게시를 구성합니다](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - 단일 폴더를 [!DNL Dynamic Media]에 동기화하는 방법에 대한 자세한 내용은 항목의 &quot;동기화 모드&quot;를 참조하십시오.
->* [Cloud Service에서 Dynamic Media 구성을 만듭니다](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - 모든 폴더를 [!DNL Dynamic Media]에 동기화하는 방법에 대한 자세한 내용은 항목에서 &quot;Dynamic Media 동기화 모드&quot;를 참조하십시오.
+>* [Dynamic Media의 폴더 수준에서 선택적 게시 구성](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - 단일 폴더를 [!DNL Dynamic Media]에 동기화하는 방법에 대한 자세한 내용은 항목에서 &quot;동기화 모드&quot;를 참조하십시오.
+>* [Cloud Services에서 Dynamic Media 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - 모든 폴더를 [!DNL Dynamic Media]에 동기화하는 방법에 대해 자세히 알아보려면 항목의 &quot;Dynamic Media 동기화 모드&quot;를 참조하십시오.

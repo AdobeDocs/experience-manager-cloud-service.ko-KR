@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 2%
 
 ---
 
 # 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 해당 데이터가 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하고 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
 
@@ -32,7 +69,7 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 
   [URL에서 특수 문자 제거](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)를 참조하십시오.
 
-Dynamic Media의 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋 제공을 위한 전처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합되는 시스템의 회사 논리에 맞게 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
+Dynamic Media의 맥락에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하기 위한 전처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media와 통합되는 시스템의 회사 논리에 맞게 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
 >[!CAUTION]
 >
@@ -59,7 +96,7 @@ Dynamic Media의 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 
 
 1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
-   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 고객 지원 센터에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 고객 지원 센터에 문의하십시오.
 
 1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
 
@@ -68,15 +105,15 @@ Dynamic Media의 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 
    * **[!UICONTROL 열기]** 대화 상자에서 규칙 집합 파일(XML)을 찾습니다.
    * 파일을 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 선택합니다.
    * **[!UICONTROL 업로드]** 페이지 오른쪽에서 규칙 집합 파일의 대상 폴더를 선택합니다.
-   * 페이지 하단 근처에서 업로드 후 Publish 가 선택되어 있는지 확인합니다.
+   * 페이지 하단 근처에서 업로드 후 게시 가 선택되어 있는지 확인합니다.
    * 페이지의 오른쪽 하단 모서리에서 **[!UICONTROL 업로드 제출]**&#x200B;을 선택합니다.
    * 전역 탐색 모음에서 **[!UICONTROL 작업]**&#x200B;을(를) 선택하여 업로드 작업의 상태를 확인합니다. **[!UICONTROL 작업]** 페이지의 **[!UICONTROL 상태]** 열에 업로드 완료 메시지가 표시되면 다음 단계를 계속하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 표시줄에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL Publish 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다.
-1. **[!UICONTROL 이미지 서버 Publish]** 페이지의 **[!UICONTROL 카탈로그 관리]** 그룹에서 **[!UICONTROL 규칙 집합 정의 파일 경로]**&#x200B;를 찾은 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. 페이지 상단 근처에 있는 탐색 표시줄에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 이미지 서버 게시]** 페이지의 **[!UICONTROL 카탈로그 관리]** 그룹에서 **[!UICONTROL 규칙 집합 정의 파일 경로]**&#x200B;를 찾은 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 규칙 집합 정의 파일(XML) 선택]** 페이지에서 규칙 집합 파일을 찾은 다음 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 1. 설정 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
-1. 이미지 서버 Publish 작업을 실행합니다.
+1. 이미지 서버 게시 작업을 실행합니다.
 
    규칙 세트 조건은 라이브 Dynamic Media 이미지 서버 요청에 적용됩니다.
 

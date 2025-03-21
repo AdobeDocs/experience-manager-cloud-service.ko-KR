@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1990'
 ht-degree: 9%
 
 ---
 
 # 디지털 에셋의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -70,9 +104,9 @@ ht-degree: 9%
 기술 메타데이터는 디지털 에셋의 기술적 측면에 중점을 두며, 다음과 관련된 중요한 정보를 제공합니다.
 
 * 파일 크기
-* 형식
+* 포맷
 * 해결 방법
-* 치수
+* 차원
 * 색상 모드
 
 이러한 유형의 메타데이터는 사용자가 디지털 에셋을 이해하고 효율적으로 사용하는 데 도움이 됩니다.
@@ -130,14 +164,14 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 파일에 메타데이터를 임베드하는 방법은 다양합니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP: [!DNL Assets]이(가) 저장소에서 추출된 메타데이터를 저장하는 데 사용합니다.
+* XMP: [!DNL Assets]이(가) 저장소 내에 추출된 메타데이터를 저장하는 데 사용합니다.
 * ID3: 오디오 및 비디오 파일용.
 * Exif: 이미지 파일용.
 * 기타/레거시: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform](XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe 및 기타 기업은 XMP standard가 풍부한 콘텐츠 모델을 제공하므로 이를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을(를) 참조하십시오.
+[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하세요.
 
 ### ID3 {#id}
 
@@ -245,7 +279,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 및 MP - Microsoft 사진.
-* PDF 및 PDF/X
+* PDF 및 PDF/X.
 * Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
@@ -256,7 +290,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights 언어.
 * PUR - 프리즘 사용 권한.
-* `xmpPlus` - PLUS와 XMP의 통합
+* `xmpPlus` - PLUS와 XMP 통합.
 
 ### 사진별 메타데이터 {#photography-specific-metadata}
 
@@ -270,7 +304,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션.
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터입니다.
+* `xmpPG` - 페이징된 텍스트의 XMP 메타데이터.
 
 ### 멀티미디어별 메타데이터 {#multimedia-specific-metadata}
 

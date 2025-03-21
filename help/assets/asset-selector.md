@@ -5,14 +5,51 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5339'
-ht-degree: 30%
+source-wordcount: '5385'
+ht-degree: 39%
 
 ---
 
 # 마이크로 프론트엔드 자산 선택기 {#Overview}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 마이크로 프론트엔드 자산 선택기는 [!DNL Experience Manager Assets] 저장소와 간편하게 통합하는 사용자 인터페이스를 제공하므로 사용자는 해당 저장소에서 사용 가능한 디지털 자산을 탐색 또는 검색하고 애플리케이션 작성 경험에 사용할 수 있습니다.
 
@@ -22,7 +59,7 @@ ht-degree: 30%
 
 자산 선택기는 다음과 같은 많은 이점을 제공합니다.
 
-* 바닐라 JavaScript 라이브러리를 사용하여 [Adobe](#asset-selector-ims) 또는 [Adobe 이외](#asset-selector-non-ims) 응용 프로그램과 쉽게 통합할 수 있습니다.
+* 바닐라 JavaScript 라이브러리를 사용하여 [Adobe](#asset-selector-ims) 또는 [Adobe이 아닌](#asset-selector-non-ims) 응용 프로그램과 쉽게 통합할 수 있습니다.
 * 자산 선택기 패키지에 대한 업데이트가 애플리케이션에서 사용할 수 있는 자산 선택기에 자동으로 배포되므로 유지 관리가 간편합니다. 최신 수정 사항을 로드하기 위해 애플리케이션 내에서 업데이트를 수행하지 않아도 됩니다.
 * 애플리케이션 내에서 자산 선택기 표시를 제어하는 속성을 통해 손쉽게 사용자 정의할 수 있습니다.
 * 전체 텍스트 검색, 기본 제공 및 사용자 정의 필터를 통해 작성 경험 내에서 사용할 자산을 빠르게 탐색할 수 있습니다.
@@ -42,26 +79,26 @@ ht-degree: 30%
 ![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-## 사전 요구 사항{#prereqs}
+## 전제 조건{#prereqs}
 
-다음 통신 방법을 확인해야 합니다.
+다음 커뮤니케이션 방법을 보장해야 합니다.
 
-* 응용 프로그램이 HTTPS에서 실행 중입니다.
-* 애플리케이션의 URL은 IMS 클라이언트의 리디렉션 URL 허용 목록에 있습니다.
-* 웹 브라우저에서 팝업을 사용하여 IMS 로그인 흐름을 구성하고 렌더링합니다. 따라서 대상 브라우저에서 팝업을 활성화하거나 허용해야 합니다.
+* 애플리케이션이 HTTPS에서 실행 중입니다.
+* 애플리케이션의 URL이 IMS 클라이언트가 허용하는 리디렉션 URL 목록에 있습니다.
+* IMS 로그인 흐름은 웹 브라우저의 팝업을 사용하여 구성 및 렌더링됩니다. 따라서 타깃 브라우저에서 팝업을 활성화하거나 허용해야 합니다.
 
-자산 선택기의 IMS 인증 워크플로우가 필요한 경우 위의 사전 요구 사항을 사용하십시오. 또는 IMS 워크플로우로 이미 인증한 경우 대신 IMS 정보를 추가할 수 있습니다.
+자산 선택기의 IMS 인증 워크플로우가 필요한 경우 위의 사전 요구 사항을 사용하십시오. 또는 이미 IMS 워크플로로 인증된 경우 대신 IMS 정보를 추가할 수 있습니다.
 
 >[!IMPORTANT]
 >
-> 이 저장소는 Asset Selector를 통합하기 위해 사용 가능한 API 및 사용 예를 설명하는 보조 설명서로서 사용되도록 설계되었습니다. 에셋 선택기를 설치하거나 사용하기 전에 조직에 Experience Manager Assets as a Cloud Service 프로필의 일부로 에셋 선택기에 대한 액세스 권한이 제공되었는지 확인하십시오. 제공되지 않은 경우 이러한 구성 요소를 통합하거나 사용할 수 없습니다. 프로비저닝을 요청하려면 프로그램 관리자가 Admin Console에서 P2로 표시된 지원 티켓을 가져와 다음 정보를 포함해야 합니다.
+> 이 저장소는 자산 선택기를 통합하는 데 사용할 수 있는 API와 사용 예를 설명하는 추가 문서로 사용할 수 있습니다. 자산 선택기를 설치하거나 사용하기 전에 조직에서 Experience Manager Assets as a Cloud Service 프로필의 일부로 자산 선택기에 대한 액세스 권한을 프로비저닝했는지 확인합니다. 프로비저닝되지 않은 경우 이러한 구성 요소를 통합하거나 사용할 수 없습니다. 프로비저닝을 요청하려면 프로그램 관리자가 Admin Console에서 P2로 표시된 지원 티켓을 가져와 다음 정보를 포함해야 합니다.
 >
 >* 통합 애플리케이션이 호스팅되는 도메인 이름.
->* 프로비저닝 후 조직에 자산 선택기 구성에 필요한 요청된 환경에 해당하는 `imsClientId`, `imsScope` 및 `redirectUrl`이(가) 제공됩니다. 이러한 유효한 속성이 없으면 설치 단계를 실행할 수 없습니다.
+>* 프로비저닝 후 조직에 자산 선택기 구성에 필수적인 요청 환경에 해당하는 `imsClientId`, `imsScope` 및 `redirectUrl`이 제공됩니다. 이러한 유효한 속성이 없으면 설치 단계를 실행할 수 없습니다.
 
 ## 설치 {#installation}
 
-자산 선택기는 ESM CDN(예: [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/))과 [UMD](https://github.com/umdjs/umd) 버전을 통해 사용할 수 있습니다.
+자산 선택기는 ESM CDN(예: [esm.sh](https://esm.sh/)/[Skypack](https://www.skypack.dev/)) 및 [UMD](https://github.com/umdjs/umd) 버전을 통해 사용할 수 있습니다.
 
 **UMD 버전**&#x200B;을 사용하는 브라우저의 경우(권장됨):
 
@@ -107,7 +144,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 에셋 선택기를 다음과 같은 다양한 애플리케이션과 통합할 수 있습니다.
 
 * [자산 선택기를  [!DNL Adobe] 응용 프로그램과 통합](#adobe-app-integration-vanilla)
-* [에셋 선택기를 Adobe이 아닌 애플리케이션과 통합](#adobe-non-app-integration)
+* [자산 선택기와 비 Adobe 애플리케이션 통합](#adobe-non-app-integration)
 * [OpenAPI 기능과 Dynamic Media 통합](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
@@ -257,13 +294,13 @@ onErrorReceived: (type, msg) => {
 
 <!--Integration with non-Adobe application content starts here-->
 
->[!TAB Adobe이 아닌 응용 프로그램과 통합]
+>[!TAB Adobe 이외의 응용 프로그램과 통합]
 
 <!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
 
 ### 사전 요구 사항 {#prereqs-non-adobe-app}
 
-에셋 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
+에셋 선택기를 Adobe이 아닌 애플리케이션과 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
 
 * [커뮤니케이션 방법](#prereqs)
 * imsClientId
@@ -272,10 +309,10 @@ onErrorReceived: (type, msg) => {
 * imsOrg
 * apikey
 
-Adobe이 아닌 응용 프로그램과 통합할 때 자산 선택기는 `imsScope` 또는 `imsClientID`과(와) 같은 IMS(Identity Management System) 속성을 사용하여 [!DNL Experience Manager Assets] 리포지토리에 대한 인증을 지원합니다.
+자산 선택기는 Identity Management 이외의 응용 프로그램과 통합할 때 `imsScope` 또는 `imsClientID`과(와) 같은 IMS(Adobe System) 속성을 사용하여 [!DNL Experience Manager Assets] 리포지토리에 대한 인증을 지원합니다.
 
 +++**Adobe이 아닌 응용 프로그램에 대한 자산 선택기 구성**
-Adobe이 아닌 애플리케이션에 대해 에셋 선택기를 구성하려면 먼저 프로비저닝에 대한 지원 티켓을 기록한 후 통합 단계를 수행해야 합니다.
+Adobe이 아닌 애플리케이션에 대한 자산 선택기를 구성하려면 먼저 프로비저닝에 대한 지원 티켓을 기록한 후 통합 단계를 수행해야 합니다.
 
 **지원 티켓 로깅**
 Admin Console을 통해 지원 티켓을 기록하는 절차:
@@ -285,11 +322,11 @@ Admin Console을 통해 지원 티켓을 기록하는 절차:
 1. 설명에서 다음 세부 정보를 입력해 주십시오.
 
    * [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service] URL(프로그램 ID 및 환경 ID)로 사용했습니다.
-   * Adobe이 아닌 웹 응용 프로그램이 호스팅되는 도메인 이름.
+   * Adobe 이외의 웹 애플리케이션이 호스팅되는 도메인 이름.
 +++
 
 +++**통합 단계**
-자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증에 이 예제 `index.html` 파일을 사용하십시오.
+이 예제 `index.html` 파일을 사용하여 자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증하십시오.
 
 예제 `index.html` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `Script` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
 
@@ -396,21 +433,21 @@ Admin Console을 통해 지원 티켓을 기록하는 절차:
 
 ### 사전 요구 사항 {#prereqs-polaris}
 
-Asset Selector를 OpenAPI 기능과 Dynamic Media과 통합하는 경우 다음 전제 조건을 사용하십시오.
+Asset Selector를 OpenAPI 기능을 사용하는 Dynamic Media와 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
 
 * [커뮤니케이션 방법](#prereqs)
 * OpenAPI 기능을 사용하여 Dynamic Media에 액세스하려면 다음에 대한 라이센스가 있어야 합니다.
-   * Assets 저장소(예: Experience Manager Assets as a Cloud Service)
+   * Assets 저장소(예: Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
 * 브랜드 일관성을 유지하기 위해 [승인된 자산](#approved-assets.md)만 사용할 수 있습니다.
 
 ### OpenAPI 기능과 Dynamic Media 통합{#adobe-app-integration-polaris}
 
-Dynamic Media OpenAPI 프로세스와 에셋 선택기를 통합하려면 사용자 지정된 Dynamic Media URL을 생성하거나 Dynamic Media URL을 선택할 준비가 된 것 등을 포함하는 다양한 단계를 수행해야 합니다.
+Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자 지정된 Dynamic Media URL을 만들거나 Dynamic Media URL을 선택할 준비가 된 작업 등을 포함하는 다양한 단계가 포함됩니다.
 
 +++**OpenAPI 기능과 Dynamic Media용 자산 선택기 통합**
 
-`rootPath` 및 `path` 속성은 OpenAPI 기능을 사용하는 Dynamic Media에 속하지 않아야 합니다. 대신 `aemTierType` 속성을 구성할 수 있습니다. 다음은 구성 구문입니다.
+`rootPath` 및 `path` 속성은 OpenAPI 기능이 있는 Dynamic Media에 포함되어서는 안 됩니다. 대신 `aemTierType` 속성을 구성할 수 있습니다. 다음은 구성 구문입니다.
 
 ```
 aemTierType:[1: "delivery"]
@@ -485,7 +522,7 @@ URL 형식:
 ![동적 게재 url](assets/dynamic-delivery-url.png)
 
 * **썸네일:** 썸네일은 이미지일 수 있으며 자산은 PDF, 비디오, 이미지 등입니다. 하지만 에셋 썸네일의 높이 및 너비 속성을 동적 게재 렌디션으로 사용할 수 있습니다.
-다음 렌디션 세트는 PDF 유형 에셋에 사용할 수 있습니다.
+다음 렌디션 세트는 PDF 유형 자산에 사용할 수 있습니다.
 사이드 킥에서 PDF를 선택하면 선택 컨텍스트에 아래 정보가 표시됩니다. 다음은 JSON 개체를 트래버스하는 방법입니다.
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -501,7 +538,7 @@ URL 형식:
   } 
   ```
 
-위 스크린샷에서는 PDF이 필요하고 해당 썸네일이 아닌 경우 PDF의 원래 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **비디오:** 포함된 iFrame을 사용하는 비디오 유형 자산에 비디오 플레이어 URL을 사용할 수 있습니다. Target 경험에서 다음 배열 변환을 사용할 수 있습니다.
   <!--![Video dynamic delivery url](image.png)-->
@@ -517,7 +554,7 @@ URL 형식:
 
   위의 스크린샷에서 렌디션 링크의 배열에 대해 `selection[0].....selection[4]`을(를) 참조할 수 있습니다. 예를 들어 썸네일 렌디션 중 하나의 주요 속성은 다음과 같습니다.
 
-  위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML 역할을 하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
+  위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML을 제공하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
 
   위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`입니다.
 
@@ -557,7 +594,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 
 ## 자산 선택기 속성 {#asset-selector-properties}
 
-자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 표에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
+자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 테이블에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |---|---|---|---|---|
@@ -784,7 +821,7 @@ interface SelectedAsset {
 }
 ```
 
-다음 표에서는 선택한 자산 오브젝트의 몇 가지 중요한 속성에 대해 설명합니다.
+다음 테이블에서는 선택한 자산 오브젝트의 몇 가지 중요한 속성에 대해 설명합니다.
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
@@ -1018,7 +1055,7 @@ const filterSchema = useMemo ((); => {
 
 ### 저장소 전환기 {#repository-switcher}
 
-또한 에셋 선택기를 사용하여 에셋 선택을 위한 저장소를 전환할 수 있습니다. 왼쪽 패널에 있는 드롭다운에서 원하는 저장소를 선택할 수 있습니다. 드롭다운 목록에서 사용할 수 있는 저장소 옵션은 `index.html` 파일에 정의된 `repositoryId` 속성을 기반으로 하며, 로그인한 사용자가 액세스하는 선택한 IMS 조직의 환경을 기반으로 합니다. 소비자는 기본 `repositoryID`를 전달할 수 있으며 이 경우 자산 선택기는 저장소 전환기 렌더링을 중지하고 주어진 저장소의 자산만 렌더링합니다.
+자산 선택기를 사용하면 자산 선택을 위해 저장소를 전환할 수도 있습니다. 왼쪽 패널에 있는 드롭다운에서 원하는 저장소를 선택할 수 있습니다. 드롭다운 목록에서 사용할 수 있는 저장소 옵션은 `index.html` 파일에 정의된 `repositoryId` 속성을 기반으로 하며, 이 속성은 로그인한 사용자가 액세스하는 선택된 IMS 조직의 환경을 기반으로 합니다. 소비자는 기본 `repositoryID`를 전달할 수 있으며 이 경우 자산 선택기는 저장소 전환기 렌더링을 중지하고 주어진 저장소의 자산만 렌더링합니다.
 
 ### 자산 저장소
 
@@ -1028,22 +1065,22 @@ const filterSchema = useMemo ((); => {
 
 자산 선택기에는 검색 결과를 세분화할 수 있는 기본 필터 옵션도 제공됩니다. 사용 가능한 필터는 다음과 같습니다.
 
-* **[!UICONTROL Status]:**&#x200B;에는 `all`, `approved`, `rejected` 또는 `no status` 중 에셋의 현재 상태가 포함됩니다.
-* **[!UICONTROL 파일 형식]:**&#x200B;에 `folder`, `file`, `images`, `documents` 또는 `video`이(가) 포함되어 있습니다.
-* **[!UICONTROL 만료 상태]:**&#x200B;에서 만료 기간을 기준으로 자산을 언급합니다. `[!UICONTROL Expired]` 확인란을 선택하여 만료된 에셋을 필터링하거나, 에셋의 `[!UICONTROL Expiration Duration]`을(를) 설정하여 만료 기간에 따라 에셋을 표시할 수 있습니다. 에셋이 이미 만료되었거나 만료될 위기에 처하면 동일한 에셋을 나타내는 배지가 나타납니다. 또한 만료된 에셋을 사용(또는 드래그 앤 드롭)할지 여부를 제어할 수 있습니다. [만료된 에셋 사용자 지정](#customize-expired-assets)에 대해 자세히 알아보세요. 기본적으로 다음 30일 후에 만료되는 자산에 대해 **곧 만료** 배지가 표시됩니다. 그러나 `expirationDate` 속성을 사용하여 만료를 구성할 수 있습니다.
+* **[!UICONTROL 상태]:** `all`, `approved`, `rejected` 또는 `no status` 중 자산의 현재 상태를 포함합니다.
+* **[!UICONTROL 파일 유형]:** `folder`, `file`, `images`, `documents` 또는 `video`을 포함합니다.
+* **[!UICONTROL 만료 상태]:** 만기 기간을 기준으로 자산을 나타냅니다. `[!UICONTROL Expired]` 확인란을 선택하여 만료된 자산을 필터링하거나 만료 기간을 기준으로 자산을 표시하도록 자산의 `[!UICONTROL Expiration Duration]`을 설정할 수 있습니다. 에셋이 이미 만료되었거나 만료될 위기에 처하면 동일한 에셋을 나타내는 배지가 나타납니다. 또한 만료된 자산의 사용(또는 드래그 앤 드롭)을 허용할지 여부를 제어할 수 있습니다. [만료된 자산 사용자 정의](#customize-expired-assets)에 대한 자세한 내용을 참조하십시오. 기본적으로 다음 30일 후에 만료되는 자산에 대해 **곧 만료** 배지가 표시됩니다. 그러나 `expirationDate` 속성을 사용하여 만료를 구성할 수 있습니다.
 
   >[!TIP]
   >
-  > 향후 만료 날짜를 기준으로 자산을 보거나 필터링하려면 `[!UICONTROL Expiration Duration]` 필드에 미래 날짜 범위를 언급하십시오. **곧 만료** 배지가 있는 자산이 표시됩니다.
+  > 향후 만기일을 기준으로 자산을 보거나 필터링하려면 `[!UICONTROL Expiration Duration]` 필드의 미래 날짜 범위를 입력합니다. 자산에 **곧 만료됨** 배지가 표시됩니다.
 
-* **[!UICONTROL MIME 형식]:**&#x200B;에 `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`이(가) 포함되어 있습니다.
-* **[!UICONTROL 이미지 크기]:**&#x200B;에는 이미지의 최소/최대 너비, 최소/최대 높이가 포함됩니다.
+* **[!UICONTROL MIME 유형]:** `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`를 포함합니다.
+* **[!UICONTROL 이미지 폭]:** 이미지 최소/최대 폭, 최소/최대 높이를 포함합니다.
 
   ![레일-보기-예](assets/filters-asset-selector.png)
 
 ### 사용자 정의 검색
 
-전체 텍스트 검색 외에도 에셋 선택기를 사용하여 사용자 지정된 검색을 사용하여 파일 내에서 에셋을 검색할 수 있습니다. 모달 보기 및 레일 보기 모드 모두에서 사용자 정의 검색 필터를 사용할 수 있습니다.
+전체 텍스트 검색 외에도 자산 선택기를 사용하면 사용자 정의 검색을 사용하여 파일 내의 자산을 검색할 수 있습니다. 모달 보기 및 레일 보기 모드 모두에서 사용자 정의 검색 필터를 사용할 수 있습니다.
 
 ![사용자 정의-검색](assets/custom-search1.png)
 
@@ -1059,12 +1096,12 @@ const filterSchema = useMemo ((); => {
 
 ### 보기 유형 {#types-of-view}
 
-에셋 선택기를 사용하여 에셋을 다음 네 가지 보기로 볼 수 있습니다.
+자산 선택기를 사용하면 네 가지 다른 보기에서 자산을 볼 수 있습니다.
 
-* **![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]** 목록 보기에는 스크롤할 수 있는 파일과 폴더가 한 열에 표시됩니다.
-* **![눈금 보기](assets/do-not-localize/grid-view.png) [!UICONTROL 눈금 보기]** 눈금 보기에는 스크롤할 수 있는 파일과 폴더가 행 및 열 눈금에 표시됩니다.
-* **![갤러리 보기](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]** 갤러리 보기에는 파일 또는 폴더가 가운데로 잠긴 가로 목록에 표시됩니다.
-* **![폭포 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL 폭포 보기]** 폭포 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
+* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]** 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
+* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]** 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
+* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]** 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
+* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL 워터폴 보기]** 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
 <!--
 ### Modes to view Asset Selector

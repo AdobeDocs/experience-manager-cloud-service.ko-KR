@@ -1,21 +1,55 @@
 ---
 title: Brand Portal을 사용하여 AEM Assets as a [!DNL Cloud Service]  구성
-description: Brand Portal을 사용하여 AEM Assets을 구성하는 방법에 대해 알아봅니다. 구성을 사용하면 승인된 브랜드 자산을 AEM 인스턴스에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
+description: Brand Portal을 사용하여 AEM Assets을 구성하는 방법에 대해 알아봅니다. 구성을 사용하면 AEM 인스턴스에서 승인된 브랜드 자산을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 9%
+source-wordcount: '1802'
+ht-degree: 10%
 
 ---
 
 # Brand Portal로 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -43,7 +77,7 @@ Brand Portal을 활성화하는 **단계**
 
 Brand Portal을 [!DNL Cloud Service] 인스턴스로서 또는 별도로 만드는 동안 Experience Manager Assets의 프로덕션 환경을 활성화할 수 있습니다. 환경이 이미 생성되었으며 이제 Brand Portal을 활성화해야 한다고 가정해 보겠습니다.
 
-1. Cloud Manager Adobe에 로그인한 다음 **[!UICONTROL 환경]**(으)로 이동합니다.
+1. Adobe Cloud Manager에 로그인하고 **[!UICONTROL 환경]**(으)로 이동합니다.
 
    **[!UICONTROL 환경]** 페이지에 모든 기존 환경의 목록이 표시됩니다.
 
@@ -72,7 +106,7 @@ Brand Portal을 [!DNL Cloud Service] 인스턴스로서 또는 별도로 만드�
 
 **참고 항목**:
 
-* [Experience Manager Assetsas a Cloud Service 에서 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [Experience Manager Assets as a Cloud Service에서 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -88,7 +122,7 @@ Brand Portal 테넌트의 기본 URL: `https://<tenant-id>.brand-portal.adobe.co
 
 Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
-1. [Admin Console](https://adminconsole.adobe.com/)에 로그인하여 **[!UICONTROL 제품]**(으)로 이동합니다.
+1. [Admin Console](https://adminconsole.adobe.com/)에 로그인한 다음 **[!UICONTROL 제품]**(으)로 이동합니다.
 1. 왼쪽 패널에서 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**&#x200B;을(를) 선택합니다.
 1. 브라우저에서 Brand Portal을 직접 열려면 **[!UICONTROL Brand Portal으로 이동]**&#x200B;을 클릭하세요.
 
@@ -107,11 +141,11 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal
 
    ![배포 옵션으로 이동](assets/test-bpconfig1.png)
 
-   Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)가 **[!UICONTROL Publish to Brand Portal]**&#x200B;에 만들어졌습니다.
+   Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)가 **[!UICONTROL Brand Portal에 게시]**&#x200B;에 만들어졌습니다.
 
    ![배포 에이전트 만들기](assets/test-bpconfig2.png)
 
-1. 배포 에이전트를 열려면 **[!UICONTROL Brand Portal으로 Publish]**&#x200B;를 클릭하십시오.
+1. **[!UICONTROL Brand Portal에 게시]**&#x200B;를 클릭하여 배포 에이전트를 엽니다.
 
    **[!UICONTROL 상태]** 탭에서 배포 큐를 볼 수 있습니다.
 
@@ -141,10 +175,10 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal
 
 이제 다음과 같은 작업을 수행할 수 있습니다.
 
-* [Experience Manager Assets에서 Brand Portal으로 Publish 에셋](publish-to-brand-portal.md)
-* [Experience Manager Assets에서 Brand Portal으로 Publish 폴더](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Experience Manager Assets에서 Brand Portal으로 Publish 컬렉션](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal에서 Experience Manager Assets으로 Publish 자산](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko) - Brand Portal의 자산 소싱
+* [Experience Manager Assets에서 Brand Portal으로 자산 게시](publish-to-brand-portal.md)
+* [Experience Manager Assets에서 Brand Portal으로 폴더 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Experience Manager Assets에서 Brand Portal으로 컬렉션 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Brand Portal에서 Experience Manager Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal의 자산 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -184,7 +218,7 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal
 >
 >상위 폴더가 Brand Portal에 없거나 Experience Manager Assets에서 수정된 경우 추가 요청이 생성됩니다.
 
-Experience Manager Assets에서 Brand Portal을 [!DNL Cloud Service](으)로 활성화하는 자동화 워크플로와 함께, Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets을 [!DNL Cloud Service](으)로 수동으로 구성하는 다른 방법이 있습니다. 이는 더 이상 권장되지 않습니다.
+Experience Manager Assets에서 Brand Portal을 [!DNL Cloud Service]&#x200B;(으)로 활성화하는 자동화 워크플로와 함께, Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets을 [!DNL Cloud Service]&#x200B;(으)로 수동으로 구성하는 다른 방법이 있습니다. 이는 더 이상 권장되지 않습니다.
 
 >[!NOTE]
 >
@@ -199,7 +233,7 @@ Experience Manager Assets에서 Brand Portal을 [!DNL Cloud Service](으)로 활
 
 다음 섹션에서는 Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets as a [!DNL Cloud Service]을(를) 수동으로 구성하는 방법에 대해 설명합니다.
 
-이전에는 Experience Manager Assets as a [!DNL Cloud Service]이(가) Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management 서비스) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer Console 모두에서 구성이 필요합니다.
+이전에는 Experience Manager Assets as a [!DNL Cloud Service]이(가) Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management Services) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer Console 모두에서 구성이 필요합니다.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
 <!--1. Under the project, configure an API using the public key to create a service account connection.
@@ -411,7 +445,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. Experience Manager Assets에 로그인합니다.
 
-1. **Cloud Service** 패널에서 **[!UICONTROL 도구]** > **[!UICONTROL AEM Brand Portal]**(으)로 이동합니다.
+1. **도구** 패널에서 **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL AEM Brand Portal]**(으)로 이동합니다.
 
 1. Brand Portal 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -430,7 +464,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 이제 분배 에이전트를 확인하고 자산을 Brand Portal에 게시하여 구성을 테스트할 수 있습니다.
 
 SPS에서 보안 IP 미리 보기가 활성화된 경우 **허용 목록에 추가하다**
-한 회사에 대해 [보안 미리 보기가 활성화](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)된 Dynamic Media-Scene7을 사용하는 경우, 회사 관리자 [SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역의 공개 이그레스 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)를 Scene7허용 목록에 추가하다 하는 것이 좋습니다.
+회사에 대해 [보안 미리 보기가 활성화](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)된 Dynamic Media-Scene7을 사용하는 경우 SPS(Scene7 Publishing System) 플래시 UI를 사용하여 각 지역에 대해 Scene7 회사 관리자 [공개 이그레스 IP를 허용 목록](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)하는 것이 좋습니다.
 이그레스 IP는 다음과 같습니다.
 
 | **지역** | **이그레스 IP** |

@@ -3,17 +3,48 @@ title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
-workflow-type: ht
-source-wordcount: '1109'
-ht-degree: 100%
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 97%
 
 ---
 
 # OpenAPI 기능이 포함된 Dynamic Media {#new-dynaminc-media-apis-overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -71,7 +102,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
 
   >[!NOTE]
   >
-  >Adobe 이외의 애플리케이션과 통합하려면 애플리케이션이 호스팅되는 허용 목록에 도메인 이름을 입력합니다.
+  Adobe 이외의 애플리케이션과 통합하려면 애플리케이션이 호스팅되는 허용 목록에 도메인 이름을 입력합니다.
 
 * 통합 프로젝트에 참여한 주요 고객 연락처의 세부 정보.
 
@@ -81,7 +112,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
 
 >[!NOTE]
 >
->OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`를 제외합니다.
+OpenAPI 기능이 포함된 Dynamic Media의 비활성화를 방지하기 위해 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`를 제외합니다.
 
 ## 주요 기능에 대해 자세히 알아보기 {#learn-more-key-capabilities}
 

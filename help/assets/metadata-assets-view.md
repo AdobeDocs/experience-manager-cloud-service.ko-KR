@@ -5,17 +5,51 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 82%
+source-wordcount: '1932'
+ht-degree: 85%
 
 ---
 
 # 자산 보기의 메타데이터 {#metadata}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 메타데이터는 데이터 또는 데이터에 대한 설명을 의미합니다. 예를 들어 자산 이미지에는 클릭한 카메라에 대한 정보나 저작권 정보가 포함될 수 있습니다. 이 정보는 해당 이미지의 메타데이터입니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다. 메타데이터는 자산에 대해 사용 가능한 모든 데이터의 집합이지만 해당 자산에 반드시 포함되지는 않을 수 있습니다.
 
@@ -82,7 +116,7 @@ Assets 보기는 다음 순서를 사용하여 기존 메타데이터 양식 이
 
 MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 
-예를 들어 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 없는 경우 이름이 `application`인 메타데이터 양식이 있으면 Assets 보기가 일치합니다. 이름이 `application`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. Assets 보기에서 일치하는 메타데이터 양식을 찾지 못하는 경우 양식에 정의된 메타데이터 필드를 업로드된 PDF 문서에 적용하기 위해 `default` 메타데이터 양식을 검색합니다. 이 단계 중 어느 것도 작동하지 않는 경우 Assets 보기는 기본 제공 양식에 정의된 메타데이터 필드를 업로드된 모든 PDF 문서에 적용합니다.
+예를 들어 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 없는 경우 이름이 `application`인 메타데이터 양식이 있으면 Assets 보기가 일치합니다. 이름이 `application`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. Assets 보기에서 일치하는 메타데이터 양식을 찾지 못하는 경우 양식에 정의된 메타데이터 필드를 업로드된 PDF 문서에 적용하기 위해 `default` 메타데이터 양식을 검색합니다. 이 단계 중 어느 것도 작동하지 않는 경우 Assets 보기는 기본 양식에 정의된 메타데이터 필드를 업로드된 모든 PDF 문서에 적용합니다.
 메타데이터 양식을 폴더에 할당하려면 [참조](#assign-metadata-form-folder)을(를) 참조하십시오.
 
 >[!IMPORTANT]
@@ -171,18 +205,18 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
 
 폴더 세부 정보 페이지로 이동한 후 **[!UICONTROL 메타데이터 양식]** 필드에서 **[!UICONTROL 시스템 매핑된 메타데이터 양식]**&#x200B;을 선택하여 폴더에서 할당된 메타데이터 양식을 제거할 수도 있습니다.
 
-### 메타데이터 양식에서 링크 구성 요소 작업 {#link-component-metadata-form}
+### 메타데이터 양식의 링크 구성 요소 작업 {#link-component-metadata-form}
 
-링크 구성 요소는 스토리지 링크, 저작권 정보, 연락처 양식 등을 포함하는 외부 URL을 활성화하는 데 사용됩니다. 메타데이터 양식에서 링크 구성 요소를 사용하려면 [메타데이터 양식을 구성](#metadata-forms)해야 합니다.
+링크 구성 요소는 스토리지 링크, 저작권 정보, 연락처 양식 등을 포함한 외부 URL을 활성화하는 데 사용됩니다. 메타데이터 양식에서 링크 구성 요소를 사용하려면 [메타데이터 양식을 구성](#metadata-forms)해야 합니다.
 
 메타데이터 양식에서 링크 구성 요소를 사용하려면 아래 단계를 따르십시오.
 
-1. 자산 세부 정보 페이지로 이동하여 **[!UICONTROL 링크 URL]**&#x200B;로 이동합니다.
-1. 선택한 에셋에 대해 리디렉션하는 데 사용할 URL을 추가합니다.
-1. **[!UICONTROL 링크 추가]**&#x200B;를 클릭합니다. 다음 작업 중 하나를 수행합니다.
-   * URL을 복사하려면 ![복사 아이콘](assets/do-not-localize/copy.svg)을 클릭하세요.
-   * URL을 편집하려면 ![편집 아이콘](assets/do-not-localize/edit.svg)을 클릭하세요.
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. 자산 세부 정보 페이지로 이동한 후 **[!UICONTROL 링크 URL]**&#x200B;로 이동합니다.
+1. 선택한 자산을 리디렉션하는 데 사용할 URL을 추가합니다.
+1. **[!UICONTROL 링크 추가]**&#x200B;를 클릭합니다. 다음 작업 중 하나를 수행하십시오.
+   * ![복사 아이콘](assets/do-not-localize/copy.svg)을 클릭하여 URL을 복사합니다.
+   * ![편집 아이콘](assets/do-not-localize/edit.svg)을 클릭하여 URL을 편집합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ## 다음 단계 {#next-steps}
 

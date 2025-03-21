@@ -1,18 +1,52 @@
 ---
 title: 원격 AEM Assets를 AEM Sites와 통합
-description: 승인된 AEM Assets과 AEM 사이트를 구성하고 연결하는 방법에 대해 알아봅니다.
+description: AEM 사이트를 승인된 AEM Assets으로 구성하고 연결하는 방법에 대해 알아봅니다.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1056'
 ht-degree: 17%
 
 ---
 
 # 원격 AEM Assets를 AEM Sites와 통합  {#integrate-approved-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -20,9 +54,9 @@ ht-degree: 17%
 >
 >[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-다양한 온라인 플랫폼에서 매력적이고 일관된 브랜드 경험을 제공하기 위해서는 디지털 에셋을 효과적으로 관리하는 것이 중요합니다. OpenAPI 기능이 포함된 Dynamic Media은 AEM Sites과 AEM Assets as a Cloud Service 간의 원활한 통합을 통해 디지털 자산 관리를 향상시킵니다. 이 혁신적인 기능을 사용하면 여러 AEM 환경에서 서로 다른 유형의 승인된 디지털 에셋을 쉽게 공유 및 관리할 수 있으므로 사이트 작성자 및 콘텐츠 편집자를 위한 워크플로를 간소화할 수 있습니다.
+다양한 온라인 플랫폼에서 매력적이고 일관된 브랜드 경험을 제공하기 위해서는 디지털 에셋을 효과적으로 관리하는 것이 중요합니다. OpenAPI 기능이 포함된 Dynamic Media는 AEM Sites과 AEM Assets as a Cloud Service 간의 원활한 통합을 통해 디지털 에셋 관리를 향상시킵니다. 이 혁신적인 기능을 사용하면 여러 AEM 환경에서 서로 다른 유형의 승인된 디지털 에셋을 쉽게 공유 및 관리할 수 있으므로 사이트 작성자 및 콘텐츠 편집자를 위한 워크플로를 간소화할 수 있습니다.
 
-Dynamic Media의 OpenAPI 기능을 사용하면 사이트 작성자가 AEM 페이지 편집기 및 [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html) 내에서 원격 DAM의 자산을 직접 사용할 수 있으므로 콘텐츠 생성 및 관리 프로세스를 단순화할 수 있습니다.
+OpenAPI 기능이 있는 Dynamic Media를 사용하면 사이트 작성자가 AEM 페이지 편집기 내에서 원격 DAM의 에셋 및 [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)을(를) 직접 사용할 수 있으므로 콘텐츠 만들기 및 관리 프로세스를 단순화할 수 있습니다.
 
 사용자는 최대 수에 대한 제한 없이 여러 AEM Sites 인스턴스를 원격 DAM 배포에 연결할 수 있으므로 [연결된 Assets](use-assets-across-connected-assets-instances.md) 기능에 비해 주목할 만한 이점이 있습니다.
 
@@ -30,11 +64,11 @@ Dynamic Media의 OpenAPI 기능을 사용하면 사이트 작성자가 AEM 페�
 
 초기 설정 후 사용자는 AEM Sites 인스턴스에서 페이지를 만들고 필요에 따라 에셋을 추가할 수 있습니다. 에셋을 추가할 때 로컬 DAM에 저장된 에셋을 선택하거나 원격 DAM에서 사용할 수 있는 에셋을 찾아 사용할 수 있습니다.
 
-OpenAPI 기능이 포함된 Dynamic Media은 컨텐츠 조각의 원격 자산 액세스 및 사용, 원격 자산의 메타데이터 가져오기 등과 같은 몇 가지 다른 이점을 제공합니다. 연결된 Assets에 대한 OpenAPI 기능을 갖춘 Dynamic Media의 다른 [이점에 대해 자세히 알아보세요](/help/assets/dynamic-media-open-apis-faqs.md).
+OpenAPI 기능이 있는 Dynamic Media는 콘텐츠 조각의 원격 자산 액세스 및 사용, 원격 자산의 메타데이터 가져오기 등과 같은 몇 가지 다른 이점을 제공합니다. 연결된 Assets에 대한 OpenAPI 기능을 갖춘 Dynamic Media의 다른 [이점에 대해 자세히 알아보세요](/help/assets/dynamic-media-open-apis-faqs.md).
 
 ## 시작하기에 앞서 {#pre-requisites-sites-integration}
 
-OpenAPI 기능과 함께 Dynamic Media을 사용하여 원격 자산을 지원하려면 다음 작업을 수행해야 합니다.
+OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원하려면 다음 작업이 필요합니다.
 
 * AEM 6.5 SP 18+ 또는 AEM as a Cloud Service
 
@@ -90,7 +124,7 @@ OpenAPI 기능과 함께 Dynamic Media을 사용하여 원격 자산을 지원�
 
 ## 원격 DAM에서 자산 액세스 {#fetch-assets}
 
-OpenAPI 기능이 포함된 Dynamic Media을 사용하면 로컬 AEM Sites 페이지 편집기 및 AEM 콘텐츠 조각의 원격 DAM 인스턴스에서 사용할 수 있는 자산에 액세스할 수 있습니다.
+OpenAPI 기능이 있는 Dynamic Media를 사용하면 로컬 AEM Sites 페이지 편집기 및 AEM 컨텐츠 조각의 원격 DAM 인스턴스에서 사용할 수 있는 자산에 액세스할 수 있습니다.
 
 ![이미지](/help/assets/assets/open-APIs.png)
 
@@ -117,9 +151,9 @@ AEM 페이지 편집기에서 이미지 핵심 구성 요소 v3 및 티저 핵�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### AEM 콘텐츠 조각의 원격 자산 액세스 {#access-assets-content-fragment}
+### AEM 컨텐츠 조각의 원격 자산 액세스 {#access-assets-content-fragment}
 
-AEM Sites 인스턴스에서 AEM 콘텐츠 조각 내의 원격 자산을 사용하려면 아래 단계를 따르십시오. 이 통합은 AEM as a Cloud Service이 아닌 AEM 6.5에서 수행할 수 있습니다.
+AEM Sites 인스턴스에서 AEM 컨텐츠 조각 내의 원격 자산을 사용하려면 아래 단계를 따르십시오. 이 통합은 AEM as a Cloud Service이 아닌 AEM 6.5에서 수행할 수 있습니다.
 
 1. **[!UICONTROL Assets]** > **[!UICONTROL 파일]**(으)로 이동합니다.
 1. 콘텐츠 조각이 있는 에셋 폴더를 선택합니다.
@@ -138,10 +172,10 @@ AEM Sites 인스턴스에서 AEM 콘텐츠 조각 내의 원격 자산을 사용
 1. 자산을 선택하고 **[!UICONTROL 선택]**을 클릭합니다.
    <br> 원격 자산 URL이 텍스트 구성 요소에 나타납니다.
 
-#### 비디오: AEM 콘텐츠 조각에서 원격 자산 액세스
+#### 비디오: AEM 컨텐츠 조각의 원격 자산 액세스
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
 
-### Edge Delivery Services의 원격 자산 액세스 {#access-assets-eds}
+### Edge Delivery Services에서 원격 자산 액세스 {#access-assets-eds}
 
-Edge Delivery Services에서 원격 자산에 액세스할 수도 있습니다. 자세한 내용은 [OpenAPI 기능이 있는 Assets as a Cloud Service API를 사용하여 전달된 Dynamic Media 자산 활용](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)을 참조하십시오.
+Edge Delivery Services에서 원격 자산에 액세스할 수도 있습니다. 자세한 내용은 [OpenAPI 기능과 함께 Dynamic Media를 사용하여 제공된 Assets as a Cloud Service의 자산 활용](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)을 참조하십시오.

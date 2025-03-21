@@ -6,17 +6,51 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4323'
 ht-degree: 10%
 
 ---
 
 # 자산 관리 {#manage-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -31,8 +65,8 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->* `sling:OrderedFolder` 유형의 Assets 폴더를 공유하면 Experience Cloud에 공유할 수 없습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 주문됨]을 선택하지 마십시오.
->* Experience Manager에서 `subassets` 단어를 폴더 이름으로 사용할 수 없습니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
+>* `sling:OrderedFolder` 유형의 Assets 폴더는 Experience Cloud에 공유할 때 공유할 수 없습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 주문됨]을 선택하지 마십시오.
+>* Experience Manager에서는 `subassets` 단어를 폴더 이름으로 사용할 수 없습니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
 
 1. 디지털 자산 폴더에서 폴더를 만들 위치로 이동합니다. 메뉴에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 새 폴더]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 제목]** 필드에 폴더 이름을 입력하십시오. 기본적으로 DAM은 사용자가 제공한 제목을 폴더 이름으로 사용합니다. 폴더가 만들어지면 기본값을 재정의하고 다른 폴더 이름을 지정할 수 있습니다.
@@ -49,7 +83,7 @@ ht-degree: 10%
 
 ## ZIP 아카이브 추출 {#extract-zip-archives}
 
-Experience Manager에서 관리되는 ZIP 아카이브를 선택하고 다운로드하지 않고 파일을 Experience Manager에 직접 추출하십시오.
+Experience Manager에서 관리하는 ZIP 아카이브를 선택하고 다운로드하지 않고 파일을 Experience Manager에 직접 추출합니다.
 
 ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
@@ -255,7 +289,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >비디오 주석은 HTML 5와 호환되는 비디오 형식이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 서로 다른 비디오 형식이 지원됩니다. 그러나 MXF 비디오 포맷은 비디오 주석에서 아직 지원되지 않습니다.
+   >비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 서로 다른 비디오 형식이 지원됩니다. 그러나 MXF 비디오 포맷은 비디오 주석에서 아직 지원되지 않습니다.
 
 ## 에셋 삭제 {#delete-assets}
 
@@ -287,16 +321,16 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 [다음에서 에셋 다운로드 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)를 참조하십시오.
 
-## Publish 또는 자산 게시 취소 {#publish-assets}
+## 자산 게시 또는 게시 취소 {#publish-assets}
 
 1. 게시하거나 게시 환경에서 제거하려는(게시 취소) 에셋 또는 에셋 폴더의 위치로 이동합니다.
 
-1. 게시 또는 게시 취소할 에셋 또는 폴더를 선택하고 도구 모음에서 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션을 선택합니다. 또는 빠르게 게시하려면 도구 모음에서 **[!UICONTROL 빠른 Publish]** 옵션을 선택하십시오. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더는 게시되지 않습니다.
+1. 게시 또는 게시 취소할 에셋 또는 폴더를 선택하고 도구 모음에서 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션을 선택합니다. 또는 빠르게 게시하려면 도구 모음에서 **[!UICONTROL 빠른 게시]** 옵션을 선택하십시오. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더는 게시되지 않습니다.
 
-1. 필요에 따라 **[!UICONTROL Publish]** 또는 **[!UICONTROL 게시 취소]** 옵션을 선택하십시오.
+1. 필요에 따라 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 옵션을 선택하십시오.
 
    ![게시 취소 작업](assets/unpublish_action.png)
-   *그림: Publish 및 게시 취소 옵션과 예약 옵션*
+   *그림: 게시 및 게시 취소 옵션 및 예약 옵션*
 
 1. 자산을 즉시 작업하려면 **[!UICONTROL 지금]**&#x200B;을(를) 선택하고 작업을 예약하려면 **[!UICONTROL 나중에]**&#x200B;을(를) 선택하십시오. **[!UICONTROL 나중에]** 옵션을 선택하는 경우 날짜와 시간을 선택하십시오. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -330,7 +364,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
    >
    >로그인 페이지 경로를 지정하지 않으면 [!DNL Experience Manager]이(가) 게시 인스턴스에 기본 로그인 페이지를 표시합니다.
 
-1. 폴더를 Publish 한 다음 게시 인스턴스에서 액세스해 보십시오. 로그인 화면이 표시됩니다.
+1. 폴더를 게시한 다음 게시 인스턴스에서 액세스해 보십시오. 로그인 화면이 표시됩니다.
 1. CUG 멤버인 경우 보안 인증서를 입력합니다. [!DNL Experience Manager]이(가) 사용자를 인증하면 폴더가 표시됩니다.
 
 ## 자산 검색 {#search-assets}
@@ -421,7 +455,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 주석은 이미지 또는 비디오에 추가된 댓글 또는 설명 주석입니다. 주석은 마케터에게 자산에 대한 공동 작업을 수행하고 피드백을 남길 수 있는 기능을 제공합니다.
 
-비디오 주석은 HTML5와 호환되는 비디오 형식이 있는 브라우저에서만 지원됩니다. Assets에서 지원하는 비디오 형식은 브라우저에 따라 다릅니다. 그러나 MXF 비디오 포맷은 비디오 주석에서 아직 지원되지 않습니다.
+비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. Assets에서 지원하는 비디오 형식은 브라우저에 따라 다릅니다. 그러나 MXF 비디오 포맷은 비디오 주석에서 아직 지원되지 않습니다.
 
 >[!NOTE]
 >
@@ -504,7 +538,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 주석 인쇄 {#printing-annotations}
 
-자산에 주석이 있거나 검토 워크플로우가 적용된 경우, 오프라인 검토를 위한 PDF 파일로 자산 및 검토 상태를 주석과 함께 인쇄할 수 있습니다.
+자산에 주석이 있거나 검토 워크플로우가 적용된 경우, 오프라인 검토를 위해 주석과 함께 자산을 인쇄하고 상태를 PDF 파일로 검토할 수 있습니다.
 
 주석만 인쇄하도록 선택하거나 상태를 검토할 수도 있습니다.
 
@@ -532,7 +566,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
-1. 인쇄 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 들어 있는 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 상단** 설정을 사용하십시오. 기본적으로 선택되어 있습니다.
+1. [인쇄] 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 들어 있는 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 상단** 설정을 사용하십시오. 기본적으로 선택되어 있습니다.
 
    <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
@@ -560,7 +594,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 * 에셋의 메타데이터를 편집합니다.
 * [!DNL Experience Manager] 데스크톱 앱을 사용하여 기존 자산을 체크아웃하고 변경 내용을 저장합니다. 에셋이 저장될 때마다 새 버전이 만들어집니다.
 
-워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 에셋에 대한 버전을 만들면 버전과 함께 메타데이터 및 렌디션이 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같이 동일한 이미지의 대체 표현물입니다.
+워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 에셋에 대한 버전을 만들면 버전과 함께 메타데이터 및 렌디션이 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같이 동일한 이미지의 대체 표현입니다.
 
 버전 관리 기능을 사용하여 다음을 수행할 수 있습니다.
 
@@ -644,9 +678,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하세요.
 
-## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산 숨기기 {#hide-expired-assets-via-acp-api}
+## 데스크탑 앱 또는 Adobe Asset Link에서 자산을 볼 때 만료된 자산 숨기기 {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] 데스크톱 앱에서 Windows 또는 Mac 데스크톱에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 [!DNL Creative Cloud] 데스크톱 응용 프로그램 내에서 자산에 액세스할 수 있습니다.
+[!DNL Experience Manager] 데스크톱 앱에서 Windows 또는 Mac 데스크톱에서 DAM 저장소에 액세스할 수 있습니다. Adobe Asset Link를 사용하면 지원되는 [!DNL Creative Cloud] 데스크톱 응용 프로그램 내에서 자산에 액세스할 수 있습니다.
 
 [!DNL Experience Manager] 사용자 인터페이스 내에서 자산을 검색할 때 만료된 자산이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한과 관계없이 모든 사용자에 대해 작동합니다.
 
@@ -662,7 +696,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 찾는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하세요.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
 
 **추가 참조**
 

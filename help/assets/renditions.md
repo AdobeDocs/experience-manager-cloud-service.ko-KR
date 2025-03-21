@@ -1,22 +1,56 @@
 ---
 title: Experience Manager Assets에서 렌디션 보기 및 관리
-description: AEM Assets 및 Dynamic Media이 정적 및 동적 이미지 렌디션을 사용하여 효과적인 이미지 관리를 간소화하는 방법에 대해 알아봅니다.
+description: AEM Assets 및 Dynamic Media가 정적 및 동적 이미지 렌디션을 사용하여 효과적인 이미지 관리를 간소화하는 방법에 대해 알아봅니다.
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 3%
 
 ---
 
 # Experience Manager Assets에서 렌디션 보기 및 관리{#renditions}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-Adobe Experience Manager(AEM)의 렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지와 같은 디지털 에셋의 사용자 지정 버전입니다. AEM을 사용하면 이러한 렌디션을 쉽게 만들고 관리할 수 있으므로 사용자 경험이 향상됩니다. 썸네일을 만들고, 웹 또는 모바일용 이미지를 최적화하고, 워터마크를 추가하고, 동적 렌디션 또는 스마트 자르기 렌디션을 보고 다운로드하고, 더 많은 작업을 수행할 수 있습니다.
+Adobe Experience Manager(AEM)의 렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼용으로 설계된 이미지와 같은 디지털 에셋의 사용자 지정 버전입니다. AEM을 사용하면 이러한 렌디션을 쉽게 만들고 관리할 수 있으므로 사용자 경험이 향상됩니다. 썸네일을 만들고, 웹 또는 모바일용 이미지를 최적화하고, 워터마크를 추가하고, 동적 렌디션 또는 스마트 자르기 렌디션을 보고 다운로드하고, 더 많은 작업을 수행할 수 있습니다.
 
 Dynamic Media 이미지 사전 설정 및 스마트 자르기 렌디션은 브랜드 표준에 맞는 체계적인 이미지 관리를 촉진하여 브랜드 통합을 극대화합니다. 따라서 관리자 액세스 없이 필요에 따라 동적 이미지 렌디션을 빠르게 찾고 사용하는 프로세스가 간소화됩니다.
 
@@ -52,7 +86,7 @@ Experience Manager Assets에서 [정적 표현물을 보고 다운로드](#view-
    * [이미지 사전 설정](/help/assets/dynamic-media/managing-image-presets.md)
 
   나중에 [보기를 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view)하여 Assets 보기에서 동적 변환을 미리 볼 수 있습니다.
-* Publish assets to Dynamic Media 를 사용하여 Assets 보기에서 Dynamic Media 렌디션을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media으로 Publish Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
+* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
 
 
 ### Dynamic Media 렌디션 보기 및 다운로드 {#view-download-dm-renditions}
@@ -84,14 +118,14 @@ Experience Manager Assets에서 이미지의 동적 변환을 보거나 다운�
 ### 시작하기에 앞서
 
 * 라이선스가 있는 AEM Dynamic Media 사용자여야 합니다.
-* OpenAPI 기능 렌디션이 포함된 Dynamic Media을 표시하려면 Assets을 승인해야 합니다. 자세한 내용은 [Experience Manager에서 자산 승인](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)을 참조하세요.
-* OpenAPI 기능이 있는 Dynamic Media은 AEM as a Cloud Service 인스턴스에서 활성화해야 합니다.
+* OpenAPI 기능이 있는 Dynamic Media를 표시하려면 Assets을 승인해야 합니다. 자세한 내용은 [Experience Manager에서 자산 승인](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)을 참조하세요.
+* AEM as a Cloud Service 인스턴스에서 OpenAPI 기능을 사용하는 Dynamic Media를 활성화해야 합니다.
 
 ### OpenAPI 기능 렌디션을 사용하여 Dynamic Media 보기 {#view-download-dm-with-openapi-renditions}
 
 1. 자산을 선택하고 **세부 정보**&#x200B;를 클릭합니다.
-1. 오른쪽 창에서 사용할 수 있는 Dynamic Media 아이콘을 클릭합니다. Dynamic Media 패널에는 모든 에셋 유형에 대한 Dynamic Media OpenAPI 기능 렌디션이 표시됩니다.
+1. 오른쪽 창에서 사용할 수 있는 Dynamic Media 아이콘을 클릭합니다. Dynamic Media 패널에는 모든 에셋 유형에 대한 OpenAPI 기능 렌디션이 있는 Dynamic Media가 표시됩니다.
    ![다운로드 아이콘](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. **OpenAPI를 사용하는 Dynamic Media** 옵션을 선택한 다음 **URL 복사**&#x200B;를 클릭하여 자산의 배달 URL을 복사합니다.
+1. **Dynamic Media with OpenAPI** 옵션을 선택한 다음 **URL 복사**&#x200B;를 클릭하여 자산의 배달 URL을 복사합니다.
 
 

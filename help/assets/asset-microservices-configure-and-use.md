@@ -5,21 +5,55 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2909'
+source-wordcount: '2937'
 ht-degree: 3%
 
 ---
 
 # 자산 마이크로서비스 및 처리 프로필 사용 {#get-started-using-asset-microservices}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 에셋 마이크로서비스 는 클라우드 기반 애플리케이션(작업자라고도 함)을 사용하여 확장 가능하고 복원 가능한 에셋 처리를 제공합니다. Adobe은 다양한 에셋 유형 및 처리 옵션을 최적으로 처리하기 위해 서비스를 관리합니다.
 
-자산 마이크로서비스를 사용하면 이전 버전의 [!DNL Experience Manager]에서 가능한 것보다 더 많은 형식을 즉시 다루는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 이제 PSD 및 PSB 형식의 썸네일 추출이 가능하지만 이전에는 [!DNL ImageMagick]과 같은 타사 솔루션이 필요했습니다.
+자산 마이크로서비스를 사용하면 이전 버전의 [!DNL Experience Manager]에서 가능한 것보다 더 많은 형식을 즉시 다루는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 이제 PSD 및 PSB 형식의 축소판 추출이 가능하지만 이전에는 [!DNL ImageMagick]과(와) 같은 타사 솔루션이 필요했습니다.
 
 자산 처리는 **[!UICONTROL 처리 프로필]**&#x200B;의 구성에 따라 다릅니다. Experience Manager은 기본 설정을 제공하며 관리자가 보다 구체적인 에셋 처리 구성을 추가할 수 있도록 합니다. 관리자는 선택적 사용자 지정을 포함하여 사후 처리 워크플로우의 구성을 작성, 유지 관리 및 수정합니다. 워크플로를 사용자 지정하면 개발자가 기본 오퍼링을 확장할 수 있습니다.
 
@@ -42,7 +76,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [기본 구성](#default-config) | 현재 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 기본 렌디션 생성 기능을 제공합니다. | <ul> <li>[!DNL Assets] 사용자 인터페이스에서 사용하는 표준 썸네일(48, 140, 319픽셀) </li> <li> 대형 미리 보기(웹 렌디션 - 1280픽셀) </li><li> 메타데이터 및 텍스트 추출.</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 렌디션을 생성하는 옵션이 더 제공됩니다. 기본 제공 옵션을 확장하여 다양한 형식 및 렌디션을 제공합니다. | <ul><li>FPO(배치 전용) 렌디션입니다. </li> <li>파일 형식 및 이미지 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | [Asset compute 서비스](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)를 호출하기 위해 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하도록 사용자 인터페이스를 통해 관리자가 구성했습니다. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | [허용된 사용 사례](#custom-config)를 참조하세요. |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute 서비스](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)를 호출하도록 사용자 인터페이스를 통해 관리자가 구성했습니다. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | [허용된 사용 사례](#custom-config)를 참조하세요. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -53,7 +87,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## 기본 구성 {#default-config}
 
-일부 기본값은 Experience Manager에 필요한 기본 변환을 사용할 수 있도록 사전 구성되어 있습니다. 또한 기본 구성은 메타데이터 추출 및 텍스트 추출 작업을 사용할 수 있도록 합니다. 사용자는 에셋 업로드 또는 업데이트를 즉시 시작할 수 있으며 기본적으로 기본 처리를 사용할 수 있습니다.
+일부 기본값은 Experience Manager에서 필요한 기본 변환을 사용할 수 있도록 사전 구성되어 있습니다. 또한 기본 구성은 메타데이터 추출 및 텍스트 추출 작업을 사용할 수 있도록 합니다. 사용자는 에셋 업로드 또는 업데이트를 즉시 시작할 수 있으며 기본적으로 기본 처리를 사용할 수 있습니다.
 
 기본 구성에서는 가장 기본적인 처리 프로필만 구성됩니다. 이러한 처리 프로필은 사용자 인터페이스에 표시되지 않으므로 수정할 수 없습니다. 업로드된 에셋을 처리하기 위해 항상 실행됩니다. 이러한 기본 처리 프로필은 [!DNL Experience Manager]에 필요한 기본 처리가 모든 자산에 대해 완료되도록 합니다.
 
@@ -68,9 +102,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **MIME 유형 포함 규칙**: 특정 MIME 유형의 자산을 처리할 때 먼저 렌디션 사양에 대해 제외된 MIME 유형 값에 대해 MIME 유형을 확인합니다. 해당 목록과 일치하는 경우 에셋(차단 목록)에 대해 이 특정 렌디션이 생성되지 않습니다. 그렇지 않으면 포함된 MIME 유형에 대해 MIME 유형이 확인되고 목록과 일치하는 경우 렌디션이 생성됩니다(허용 목록).
 
-* **특수 FPO 렌디션**: 크기가 큰 에셋을 [!DNL Experience Manager]에서 [!DNL Adobe InDesign] 문서에 배치할 때 Creative Professional은 [에셋을 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다립니다. 그동안 사용자는 [!DNL InDesign]을(를) 사용할 수 없습니다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 [!DNL InDesign] 문서에 작은 크기의 렌디션을 임시로 배치할 수 있으며 나중에 전체 해상도 자산을 온디맨드로 바꿀 수 있습니다. [!DNL Experience Manager]은(는) 배치에만 사용되는 렌디션을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다.
+* **특수 FPO 렌디션**: 크기가 큰 에셋을 [!DNL Experience Manager]에서 [!DNL Adobe InDesign] 문서에 배치할 때 Creative Professional은 [에셋을 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다립니다. 그동안 사용자는 [!DNL InDesign]을(를) 사용할 수 없습니다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 [!DNL InDesign] 문서에 작은 크기의 렌디션을 임시로 배치할 수 있으며 나중에 전체 해상도 자산을 온디맨드로 대체할 수 있습니다. [!DNL Experience Manager]은(는) 배치에만 사용되는 렌디션을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다.
 
-처리 프로필에는 FPO(배치 전용) 렌디션이 포함될 수 있습니다. 처리 프로필에 대해 켜야 하는지 알아보려면 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)를 참조하세요. 자세한 내용은 [자산 링크 Adobe 완료 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하세요.
+처리 프로필에는 FPO(배치 전용) 렌디션이 포함될 수 있습니다. 처리 프로필에 대해 켜야 하는지 알아보려면 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)를 참조하세요. 자세한 내용은 [Adobe Asset Link 전체 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하세요.
 
 ### 표준 프로필 만들기 {#create-standard-profile}
 
@@ -106,7 +140,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->Adobe은 기본 구성 또는 표준 프로필을 사용하여 비즈니스 요구 사항을 달성할 수 없는 경우에만 사용자 지정 애플리케이션을 사용하는 것을 권장합니다.
+>Adobe에서는 기본 구성 또는 표준 프로필을 사용하여 비즈니스 요구 사항을 수행할 수 없는 경우에만 사용자 지정 애플리케이션을 사용하는 것이 좋습니다.
 
 이미지, 비디오, 문서 및 기타 파일 형식을 썸네일, 추출한 텍스트 및 메타데이터, 아카이브를 포함한 다양한 변환으로 변환할 수 있습니다.
 
@@ -144,7 +178,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 사용자 지정 프로필의 사용을 설명하기 위해 사용 사례를 사용하여 캠페인 이미지에 사용자 지정 텍스트를 적용해 보겠습니다. Photoshop API를 사용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
 
-Asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 지정 응용 프로그램에 전달할 수 있습니다. 그런 다음 사용자 지정 애플리케이션은 Photoshop API를 호출하고 이러한 값을 API에 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 캠페인 이미지에 사용자 정의 텍스트를 추가할 수 있습니다.
+Asset Compute 서비스 통합을 사용하면 Experience Manager에서 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 지정 응용 프로그램에 전달할 수 있습니다. 그런 다음 사용자 지정 애플리케이션은 Photoshop API를 호출하고 이러한 값을 API에 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 캠페인 이미지에 사용자 정의 텍스트를 추가할 수 있습니다.
 
 <!-- TBD: Check screenshot against the interface. -->
 
@@ -172,7 +206,7 @@ Asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 >[!NOTE]
 >
->폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 적용된 다른 프로필로 재정의할 수 있습니다. 에셋이 폴더에 업로드되면 Experience Manager은 처리 프로필에 대해 포함된 폴더의 속성을 확인합니다. 프로필이 적용되지 않은 경우 계층 구조의 상위 폴더에서 적용할 처리 프로필을 확인합니다.
+>폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 적용된 다른 프로필로 재정의할 수 있습니다. 에셋이 폴더에 업로드되면 Experience Manager은 포함 폴더의 속성에서 처리 프로필을 확인합니다. 프로필이 적용되지 않은 경우 계층 구조의 상위 폴더에서 적용할 처리 프로필을 확인합니다.
 
 에셋이 처리되는지 확인하려면 왼쪽 레일의 [!UICONTROL 렌디션] 보기에서 생성된 렌디션을 미리 봅니다. 자산 미리 보기를 열고 왼쪽 레일을 열어 **[!UICONTROL 렌디션]** 보기에 액세스합니다. 처리 프로필에서 특정 에셋의 유형이 MIME 유형 포함 규칙과 일치하는 특정 렌디션을 보고 액세스할 수 있어야 합니다.
 
@@ -194,7 +228,7 @@ Asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 * 하나 이상의 워크플로 모델을 만듭니다. 이 문서에서 이러한 사용자 지정 모델을 *사후 처리 워크플로 모델*&#x200B;이라고 합니다. 일반 [!DNL Experience Manager] 워크플로 모델입니다.
 * 필요한 워크플로우 단계를 이러한 모델에 추가합니다. 기본 워크플로우에서 단계를 검토하고 필요한 모든 기본 단계를 사용자 지정 워크플로우에 추가합니다. 단계는 워크플로우 모델 구성을 기반으로 에셋에서 실행됩니다. 예를 들어 에셋 업로드 시 스마트 태그 지정이 자동으로 수행되도록 하려면 단계를 사용자 지정 사후 처리 워크플로 모델에 추가합니다.
-* 끝에 [!UICONTROL DAM 자산 업데이트 워크플로우 완료 프로세스] 단계를 추가합니다. 이 단계를 추가하면 Experience Manager은 처리가 언제 종료되고 자산이 처리된 것으로 표시될 수 있는지 즉, *새로 만들기*&#x200B;가 자산에 표시되는지 알 수 있습니다.
+* 끝에 [!UICONTROL DAM 자산 업데이트 워크플로우 완료 프로세스] 단계를 추가합니다. 이 단계를 추가하면 Experience Manager은 처리가 종료되고 자산을 처리된 것으로 표시할 수 있는 시기, 즉 *새로 만들기*&#x200B;가 자산에 표시되는지 확인합니다.
 * 경로(폴더 위치) 또는 정규 표현식으로 후 처리 워크플로 모델의 실행을 구성할 수 있도록 해주는 사용자 정의 워크플로 실행기 서비스에 대한 구성을 만듭니다.
 
 사후 처리 워크플로에서 사용할 수 있는 표준 워크플로 단계에 대한 자세한 내용은 개발자 참조에서 [사후 처리 워크플로의 워크플로 단계](developer-reference-material-apis.md#post-processing-workflows-steps)를 참조하십시오.
@@ -205,7 +239,7 @@ Asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 필요에 따라 처리 단계가 추가됩니다. 지원되는 사용 가능한 단계와 사용자 지정 워크플로우 단계를 모두 사용할 수 있습니다.
 
-각 사후 처리 워크플로의 마지막 단계가 `DAM Update Asset Workflow Completed Process`인지 확인하십시오. 마지막 단계에서는 에셋 처리가 완료되면 Experience Manager이 을 인식하도록 합니다.
+각 사후 처리 워크플로의 마지막 단계가 `DAM Update Asset Workflow Completed Process`인지 확인하십시오. 마지막 단계에서는 에셋 처리가 완료되면 Experience Manager이 이를 인식하도록 합니다.
 
 ### 사후 처리 워크플로우 실행 구성 {#configure-post-processing-workflow-execution}
 
@@ -283,7 +317,7 @@ OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](
 
 >[!MORELIKETHIS]
 >
->* [Asset compute 서비스 소개](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
+>* [Asset Compute 서비스 소개](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
 >* [확장성 및 사용 시기를 이해합니다](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 >* [사용자 지정 응용 프로그램을 만드는 방법](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [다양한 사용 사례에 대해 지원되는 MIME 유형](/help/assets/file-format-support.md).

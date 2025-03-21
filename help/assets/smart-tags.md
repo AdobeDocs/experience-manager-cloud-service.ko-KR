@@ -1,13 +1,13 @@
 ---
 title: AEM에서 자산에 스마트 태그를 추가하는 방법
-description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스를 사용하여 AEM의 자산에 스마트 태그를 추가합니다.
+description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스로 AEM의 자산에 스마트 태그를 추가합니다.
 contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 7%
 
 ---
@@ -15,8 +15,42 @@ ht-degree: 7%
 
 # AEM의 자산에 스마트 태그 추가 {#smart-tags-assets-aem}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -33,19 +67,19 @@ ht-degree: 7%
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## AEM의 스마트 태그에 대해 지원되는 자산 유형 {#smart-tags-supported-file-formats}
+## AEM에서 스마트 태그에 대해 지원되는 에셋 유형 {#smart-tags-supported-file-formats}
 
 다음 유형의 자산에 태그를 지정할 수 있습니다.
 
-* **이미지**: Adobe Sensei의 스마트 컨텐츠 서비스를 사용하여 다양한 형식의 이미지에 태그를 지정합니다. [교육 모델을 만들고](#train-model) 업로드한 이미지에 자동으로 태그가 지정됩니다. 스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에 적용됩니다.
+* **이미지**: Adobe Sensei의 스마트 컨텐츠 서비스를 사용하여 다양한 형식의 이미지에 태그를 지정합니다. [교육 모델을 만들고](#train-model) 업로드한 이미지에 자동으로 태그가 지정됩니다. 스마트 태그는 JPG 및 PNG 형식으로 변환을 생성하는 지원되는 파일 유형에 적용됩니다.
 * **텍스트 기반 에셋**: [!DNL Experience Manager Assets]은(는) 업로드할 때 지원되는 텍스트 기반 에셋에 자동 태그를 지정합니다.
-* **비디오 자산**: [!DNL Adobe Experience Manager]에서 기본적으로 [!DNL Cloud Service](으)로 비디오 태그 지정을 사용할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 [비디오에 자동 태그가 지정됩니다](/help/assets/smart-tags-video-assets.md).
+* **비디오 자산**: [!DNL Adobe Experience Manager]에서 기본적으로 [!DNL Cloud Service]&#x200B;(으)로 비디오 태그 지정을 사용할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 [비디오에 자동 태그가 지정됩니다](/help/assets/smart-tags-video-assets.md).
 
 | 이미지(MIME 유형) | 텍스트 기반 에셋(파일 형식) | 비디오 자산(파일 형식 및 코덱) |
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC, 모션 JPEG) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI(indeo4) |
 | image/gif | PDF | FLV (H264/AVC, vp6f) |
 | image/pjpeg | PPT | WMV (WMV2) |
@@ -97,11 +131,11 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 
 ![교육에 대한 지침을 설명하는 그림 이미지](assets/do-not-localize/completeness.png)
 
-**태그 수**: Adobe은 두 개 이상의 고유한 태그와 각 태그에 대해 10개 이상의 서로 다른 이미지를 사용하여 모델을 교육할 것을 권장합니다. 단일 태그 모델에서는 태그를 50개 이상 추가하지 마십시오.
+**태그 수**: Adobe에서는 각 태그에 대해 서로 다른 두 개 이상의 태그와 열 개 이상의 이미지를 사용하여 모델을 교육할 것을 권장합니다. 단일 태그 모델에서는 태그를 50개 이상 추가하지 마십시오.
 
 **예제 수**: 각 태그에 대해 최소 10개 이상의 예제를 추가하십시오. 그러나 Adobe에서는 약 30개의 예제를 권장합니다. 태그당 최대 50개의 예제가 지원됩니다.
 
-**긍정 오류 및 충돌 방지**: Adobe은 단일 시각적 측면에 대해 단일 태그 모델을 만들 것을 권장합니다. 모델 간에 태그가 겹치지 않도록 태그 모델을 구조화합니다. 예를 들어, 두 개의 서로 다른 태그 모델 이름 `shoes` 및 `footwear`에서 `sneakers`과(와) 같은 일반적인 태그를 사용하지 마십시오. 트레이닝 프로세스는 공통 키워드에 대해 트레이닝된 하나의 태그 모델을 다른 모델과 덮어씁니다.
+**긍정 오류 및 충돌 방지**: Adobe에서는 단일 시각적 측면에 대해 단일 태그 모델을 만들 것을 권장합니다. 모델 간에 태그가 겹치지 않도록 태그 모델을 구조화합니다. 예를 들어, 두 개의 서로 다른 태그 모델 이름 `shoes` 및 `footwear`에서 `sneakers`과(와) 같은 일반적인 태그를 사용하지 마십시오. 트레이닝 프로세스는 공통 키워드에 대해 트레이닝된 하나의 태그 모델을 다른 모델과 덮어씁니다.
 
 **예**: 자세한 지침 예는 다음과 같습니다.
 
@@ -192,7 +226,7 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## AEM에서 스마트 태그로 자산에 태그 지정 {#tag-assets}
+## AEM에서 스마트 태그를 사용하여 자산에 태그 지정 {#tag-assets}
 
 [!DNL Experience Manager Assets]이(가) 업로드할 때 지원되는 모든 유형의 자산에 자동으로 태그를 지정합니다. 태깅은 기본적으로 활성화되어 있으며 작동합니다. AEM은 적절한 스마트 태그를 실시간에 가깝게 적용합니다. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 

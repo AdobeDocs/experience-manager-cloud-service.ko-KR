@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 6%
+source-wordcount: '1414'
+ht-degree: 7%
 
 ---
 
-# 디지털 에셋 Digital Rights Management {#digital-rights-management-in-assets}
+# 디지털 에셋용 Digital Rights Management {#digital-rights-management-in-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -97,9 +131,9 @@ ht-degree: 6%
 
 1. [!DNL Assets] 사용자 인터페이스에서 자산을 선택합니다.
 
-1. 도구 모음에서 **[!UICONTROL Publish]**&#x200B;을(를) 선택합니다. 도구 모음에 [!UICONTROL Publish] 옵션이 표시되지 않으면 도구 모음에서 **[!UICONTROL 자세히]**&#x200B;를 클릭하고 **[!UICONTROL Publish]** 옵션을 찾습니다.
+1. 도구 모음에서 **[!UICONTROL 게시]**&#x200B;를 선택합니다. 도구 모음에 [!UICONTROL 게시] 옵션이 표시되지 않으면 도구 모음에서 **[!UICONTROL 자세히]**&#x200B;를 클릭하고 **[!UICONTROL 게시]** 옵션을 찾습니다.
 
-1. 메뉴에서 **[!UICONTROL Publish]**&#x200B;을(를) 선택한 다음 확인 대화 상자를 닫습니다.
+1. 메뉴에서 **[!UICONTROL 게시]**&#x200B;를 선택한 다음 확인 대화 상자를 닫습니다.
 
 1. 선택 모드를 종료합니다. 에셋의 게시 상태는 카드 보기의 에셋 썸네일 하단에 나타납니다. 목록 보기의 게시됨 열에는 에셋이 게시된 시간이 표시됩니다.
 
@@ -121,7 +155,7 @@ ht-degree: 6%
 
 1. `Return`을(를) 선택하고 [!DNL Experience Manager]을(를) 클릭합니다.
 
-1. 검색 패널에서 **[!UICONTROL Publish 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시됨]**&#x200B;을(를) 선택하여 [!DNL Assets]에서 게시된 에셋을 검색합니다.
+1. 검색 패널에서 **[!UICONTROL 게시 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시됨]**&#x200B;을(를) 선택하여 [!DNL Assets]에서 게시된 에셋을 검색합니다.
 
 1. 승인 또는 거부된 자산을 검색하려면 **[!UICONTROL 승인 상태]**&#x200B;를 선택하고 적절한 옵션을 선택하십시오.
 
@@ -140,11 +174,11 @@ DRM 기능은 [!DNL Assets]에서 라이선스가 있는 에셋을 다운로드�
 다음 조건 중 하나가 충족되면 자산이 보호되는 것으로 간주됩니다.
 
 * 에셋 메타데이터 속성 `xmpRights:WebStatement`은(는) 에셋에 대한 라이선스 계약이 포함된 페이지의 경로를 가리킵니다.
-* 에셋 메타데이터 HTML `adobe_dam:restrictions`의 값이 사용권 계약을 지정하는 원시 속성입니다.
+* 에셋 메타데이터 속성 `adobe_dam:restrictions`의 값은 라이선스 계약을 지정하는 원시 HTML입니다.
 
 >[!NOTE]
 >
->위치 `/etc/dam/drm/licences`은(는) [!DNL Experience Manager]의 이전 릴리스에서 라이선스를 저장하는 데 사용되었습니다. 해당 위치는 이제 더 이상 사용되지 않습니다. Adobe 라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스의 페이지를 포트하는 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/*/settings/dam/drm/licenses` 위치에 해당 에셋을 저장하는 것이 좋습니다.
+>위치 `/etc/dam/drm/licences`은(는) [!DNL Experience Manager]의 이전 릴리스에서 라이선스를 저장하는 데 사용되었습니다. 해당 위치는 이제 더 이상 사용되지 않습니다. Adobe 라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스의 페이지를 포트하는 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/*/settings/dam/drm/licenses` 위치에 이러한 자산을 저장하는 것이 좋습니다.
 
 ### DRM 보호 에셋 다운로드 {#downloading-drm-assets}
 

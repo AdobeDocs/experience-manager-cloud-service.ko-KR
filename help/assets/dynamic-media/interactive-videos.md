@@ -1,18 +1,55 @@
 ---
 title: 대화형 비디오
-description: Dynamic Media에서 대화형 비디오 및 구매 가능한 비디오를 사용하여 작업하는 방법을 알아봅니다.
+description: Dynamic Media에서 대화형 비디오 및 구매 가능한 비디오로 작업하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '5863'
+source-wordcount: '5909'
 ht-degree: 2%
 
 ---
 
 # 대화형 비디오{#interactive-videos}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 비디오에서 바로 전환을 유도하는 대화형 비디오를 쉽게 만들 수 있습니다. 이 비디오는 구매 가능한 비디오라고도 합니다. 비디오에 대한 고객 참여는 비디오 플레이어와 함께 비디오에 포함된 내용을 기반으로 관련 서비스, 정보 또는 제품 썸네일을 보기 위해 스크롤하는 패널에서 수행됩니다. 고객은 썸네일을 선택하여 서비스에 직접 연결하거나, 제품을 장바구니에 추가하여 즉시 구매하거나, 웹 페이지에 연결하여 자세한 내용을 확인할 수 있습니다.
 
@@ -48,7 +85,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### 대화형 비디오가 만들어지는 방식 보기 {#watch-how-interactive-videos-are-created}
 
-[대화형 비디오가 만들어지는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7분 30초)에 대한 연습을 살펴보십시오.
+[대화형 비디오가 만들어지는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)&#x200B;(7분 30초)에 대한 연습을 살펴보십시오.
 비디오 연습은 Assets on Demand로 브랜딩되었지만 원리와 단계는 Adobe Experience Manager Assets의 대화형 비디오에 여전히 적용됩니다.
 
 ### Adobe 고객 성공 웨비나 {#adobe-customer-success-webinar}
@@ -57,7 +94,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ## 빠른 시작: 대화형 비디오 {#quick-start-interactive-videos}
 
-다음 단계별 워크플로 설명은 Dynamic Media에서 대화형 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
+다음 단계별 워크플로 설명은 Dynamic Media의 대화형 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
 일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 *아직*&#x200B;하지 않은 [데모 웹 페이지 시작](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)을 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
@@ -70,7 +107,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 1. **(선택 사항) 빠른 보기 변수 식별** - 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 썸네일을 해당 제품 빠른 보기에 매핑합니다. [(선택 사항) 빠른 보기 변수 식별을 참조하십시오](#optional-identifying-quickview-variables).
    **이 단계는 다음 내용이 모두 참인 경우에만 필요합니다.**
    * 빠른 보기 로 트리거하여 비디오에 대화형 기능을 추가하려는 경우
-   * Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 전자 상거래 통합 프레임워크를 사용하지 *않습니다*.
+   * Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다*.
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전 설정 만들기** - 비디오 스크러버 및 대화형 썸네일과 같이 플레이어를 구성하는 다양한 구성 요소의 모양 및 동작을 사용자 지정합니다.
 기본 제공 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark`을(를) 대신 사용하려는 경우에는 고유한 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -81,14 +118,14 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    >[!NOTE]
    >
-   >MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
+   >MXF 비디오 형식은 아직 Dynamic Media의 대화형 비디오에 사용할 수 없습니다.
 
 1. **비디오에 대화형 작업 추가** - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에서 이미지 썸네일을 연결합니다. 각 이미지 썸네일을 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 할당합니다.
 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 대화형 비디오 자산을 게시하여 완료합니다. 게시하면 복사하고 웹 사이트 랜딩 페이지에 적용하는 포함 코드 또는 URL이 만들어집니다. [비디오에 인터랙티브 추가](#adding-interactivity-to-your-video)를 참조하십시오.
-[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+[Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **Experience Manager에서 웹 사이트 또는 웹 사이트에 대화형 비디오를 추가하십시오** - Experience Manager Sites 또는 eCommerce를 사용하거나 둘 다 사용하는 경우 Experience Manager의 웹 페이지에 대화형 비디오를 추가하십시오. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+1. **Experience Manager의 웹 사이트 또는 웹 사이트에 대화형 비디오를 추가** - Experience Manager Sites이나 eCommerce 또는 둘 다를 사용하는 경우 Experience Manager의 웹 페이지에 대화형 비디오를 추가합니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 포함 코드 또는 URL을 사용하여 대화형 비디오를 웹 사이트 경험과 통합합니다. [대화형 비디오와 웹 사이트 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. [대화형 비디오를 기존 빠른 보기와 통합](#integrating-an-interactive-video-with-an-existing-quickview)을 참조하십시오.
    [페이지에 Dynamic Media Assets 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -100,7 +137,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >이 작업은 다음이 참인 경우에만 필요합니다.
 >
 >* 빠른 보기 로 트리거하여 비디오에 대화형 기능을 추가하려는 경우
->* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 전자 상거래 통합 프레임워크를 사용하지 *않습니다*. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+>* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다*. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -243,7 +280,7 @@ After you save the viewer preset, its state is automatically set to **On **in th
 
 >[!NOTE]
 >
->MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
+>MXF 비디오 형식은 아직 Dynamic Media의 대화형 비디오에 사용할 수 없습니다.
 
 잘못된 비디오나 이미지를 업로드했거나 업로드한 비디오나 이미지를 더 이상 필요하지 않게 삭제하려면 [Assets 삭제](/help/assets/manage-digital-assets.md#delete-assets)를 참조하십시오.
 
@@ -495,11 +532,11 @@ After you save the viewer preset, its state is automatically set to **On **in th
    >
    >When you save your interactive video, an associated `.vtt` file is automatically saved with it. `.vtt` 파일이 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
-1. Publish 대화형 비디오입니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
+1. 대화형 비디오를 게시합니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
 
    빠른 보기에서 인터랙티브를 추가한 경우에는 포함 코드만 사용하고, 하이퍼링크로 연결된 웹 페이지에서 인터랙티브를 추가한 경우에는 게시된 URL도 사용할 수 있습니다. 그러나 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
-   [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
+   [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -507,9 +544,9 @@ After you save the viewer preset, its state is automatically set to **On **in th
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [대화형 비디오와 웹 사이트 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
 
-## Publish 대화형 비디오 자산 {#publishing-interactive-video-assets}
+## 대화형 비디오 자산 게시 {#publishing-interactive-video-assets}
 
-대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
+대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 웹 사이트와 대화형 비디오 통합 {#integrating-an-interactive-video-with-your-website}
 
@@ -586,7 +623,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 1. 백엔드 로직은 해당 Quickview 데이터 또는 컨텐츠를 프론트엔드 코드로 다시 반환합니다.
 1. 프론트엔드 코드는 Quickview 데이터 또는 콘텐츠를 로드합니다.
 1. 선택적으로, 프론트엔드 코드는 로드된 Quickview 데이터를 HTML 표시로 변환합니다.
-1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자의 화면에서 HTML 콘텐츠를 렌더링합니다.
+1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자를 위해 화면에 HTML 콘텐츠를 렌더링합니다.
 
 이러한 호출은 임의의 단계에서 웹 페이지 논리에 의해 호출될 수 있는 독립적인 공개 API 호출을 나타내지 않습니다. 대신 모든 다음 단계가 이전 단계의 마지막 단계(콜백)에서 숨겨지는 체인 호출입니다.
 
@@ -600,7 +637,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 또한 대화형 비디오 뷰어는 전체 화면 작업 모드를 지원합니다. 사용자가 전체 화면을 종료하지 않고 썸네일을 선택하여 빠른 보기를 트리거합니다. 이 기능을 사용하려면 빠른 보기 모달 대화 상자가 뷰어의 컨테이너에 연결되도록 프론트엔드 코드를 변경합니다. 뷰어가 전체 화면 모드에 있는 경우 사용할 수 없는 문서 BODY 또는 기타 웹 페이지 요소를 추가하지 마십시오. 이 작업을 수행하는 코드는 뷰어가 페이지에 로드된 후 전송되는 한 개 이상의 뷰어 콜백을 수신합니다.
 
-Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 된 이벤트 처리기가 있습니다. 이것은 다음 강조 표시된 코드 조각에 표시된 대로 주석으로 처리됩니다.
+Experience Manager에서 반환한 포함 코드에는 이미 사용할 준비가 된 이벤트 핸들러가 있습니다. 이것은 다음 강조 표시된 코드 조각에 표시된 대로 주석으로 처리됩니다.
 
 ```js {.line-numbers}
 <style type="text/css">

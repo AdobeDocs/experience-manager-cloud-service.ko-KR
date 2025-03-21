@@ -4,32 +4,66 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 구성
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 1%
+source-wordcount: '1813'
+ht-degree: 2%
 
 ---
 
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.
+[!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.
 
 >[!IMPORTANT]
 >
-> 2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service 기본 통합을 연결하기 위한 새로운 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 새 AEM Assetsas a Cloud Service 를 연결하기 위한 향상된 커넥터(1.9.8 및 이후 버전)의 모든 향후 구현이 차단됩니다.
+> 2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service을 연결하기 위한 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위해 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다.
 
 >[!IMPORTANT]
 >
->* Adobe을 사용하려면 인증된 파트너 또는 [!DNL Adobe Professional Services]을(를) 통해서만 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
+>* Adobe에서는 인증된 파트너 또는 [!DNL Adobe Professional Services]을(를) 통해서만 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
@@ -42,12 +76,12 @@ ht-degree: 1%
 이벤트 구독은 [!DNL Adobe Workfront]에서 발생하는 이벤트를 AEM에 알리는 데 사용됩니다. 이벤트 구독을 통해 작동하는 세 가지 [!DNL Workfront for Experience Manager enhanced connector] 기능이 있습니다. 해당 기능은 다음과 같습니다.
 
 * 프로젝트 연결 폴더의 자동 생성.
-* Workfront 문서 사용자 정의 양식 값의 변경 내용을 AEM 에셋 메타데이터에 동기화.
+* Workfront 문서 사용자 정의 양식 값의 변경 내용을 AEM 에셋 메타데이터에 동기화
 * 프로젝트 완료 시 Brand Portal에 에셋을 자동으로 게시합니다.
 
 이러한 기능을 사용하려면 이벤트 구독을 활성화하십시오.
 
-* 5단계에서 만든 [!UICONTROL Workfront 도구] Cloud Service 구성을 편집하고 [!UICONTROL 이벤트 구독] 탭을 선택합니다.
+* 5단계에서 만든 [!UICONTROL Workfront 도구] 클라우드 서비스 구성을 편집하고 [!UICONTROL 이벤트 구독] 탭을 선택합니다.
 * 섹션 6에서 만든 [!UICONTROL Workfront 사용자 지정 통합]을(를) 선택하십시오.
 * [!UICONTROL Workfront 이벤트 구독 활성화]를 클릭합니다.
 
@@ -65,12 +99,12 @@ ht-degree: 1%
 
 1. 클라우드 서비스의 프로젝트 연결 폴더 탭으로 이동합니다.
 1. 연결된 폴더 상위 경로: DAM에서 연결된 폴더를 만들 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
-1. 연결된 폴더 구조: 쉼표로 구분된 값을 입력합니다. 각 값은 `DE:<some-project-custom-form-field>`, Portfolio, 프로그램, 연도, 이름 또는 일부 &quot;리터럴 문자열 값&quot;(따옴표가 있는 마지막 값)이어야 합니다. 현재 Portfolio,프로그램,연도,DE:프로젝트 유형,이름으로 설정되어 있습니다.
+1. 연결된 폴더 구조: 쉼표로 구분된 값을 입력합니다. 각 값은 `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name 또는 일부 &quot;Literal String Value&quot;(이 마지막 값은 따옴표로 묶음)여야 합니다. 현재 Portfolio,Program,Year,DE:Project Type,Name으로 설정되어 있습니다.
 1. 권한 구성: `wf-workfront-users` 그룹에 대해 `/conf/workfront-tools/settings/cloudconfigs`에 `jcr:all permissions` 권한을 추가합니다.
 1. Workfront의 폴더 제목에 구조의 모든 폴더가 포함되어야 하는 경우 폴더 구조 이름 확인란을 사용하여 Workfront에서 연결된 폴더 제목을 작성해야 합니다. 그렇지 않으면 마지막 폴더의 제목입니다.
 1. 하위 폴더 다중 필드를 사용하면 연결된 폴더의 하위 폴더로 만들어야 하는 폴더 목록을 지정할 수 있습니다.
 1. 프로젝트 상태: 연결된 폴더를 만들기 위해 프로젝트를 설정해야 하는 상태를 선택합니다.
-1. 포트폴리오가 있는 프로젝트에 연결된 폴더를 만듭니다. 연결된 폴더를 만들 수 있도록 프로젝트가 속해야 하는 Portfolio 목록입니다. 모든 프로젝트 포트폴리오에 대해 연결된 폴더를 만들려면 이 목록을 비워 두십시오.
+1. 포트폴리오가 있는 프로젝트에 연결된 폴더를 만듭니다. 연결된 폴더를 만들 수 있도록 프로젝트가 속해야 하는 포트폴리오 목록입니다. 모든 프로젝트 포트폴리오에 대해 연결된 폴더를 만들려면 이 목록을 비워 두십시오.
 1. 사용자 정의 양식 필드가 있는 프로젝트에 연결된 폴더를 만듭니다. 사용자 정의 양식 필드 및 연결된 폴더를 만들 수 있도록 프로젝트에 있어야 하는 해당 값. 비워 두면 이 구성은 무시됩니다. 필드에 `CUSTOM FORMS: Create DAM Linked Folder`을(를) 선택하고 값에 `Yes`을(를) 입력합니다.
 1. 권한 구성: `wf-workfront-users group`에 대해 이러한 권한 `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs`을(를) 구성합니다.
 1. 연결된 폴더의 자동 생성 활성화를 클릭합니다. 이벤트 구독 탭으로 돌아가면 이제 이벤트 만들기가 한 개 있습니다.
@@ -98,7 +132,7 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 ### 자산 메타데이터 매핑 구성 {#asset-metadata-mapping}
 
-Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데이터 스키마 내에 정의됩니다. 메타데이터 스키마는 AEM에서 평소대로 생성 및 구성해야 합니다. Workfront 도구는 각 메타데이터 스키마 양식 필드의 설정 구성 탭에 구성 옵션을 추가합니다. 이 옵션을 사용하면 각 AEM 속성을 매핑할 Workfront 필드를 지정할 수 있습니다.
+Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데이터 스키마 내에 정의됩니다. 메타데이터 스키마는 AEM에서 평소대로 만들고 구성해야 합니다. Workfront 도구는 각 메타데이터 스키마 양식 필드의 설정 구성 탭에 구성 옵션을 추가합니다. 이 옵션을 사용하면 각 AEM 속성을 매핑할 Workfront 필드를 지정할 수 있습니다.
 
 매핑을 구성하려면 다음 단계를 수행합니다.
 
@@ -135,7 +169,7 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
 * `aem-mapped-property`은(는) 다음과 같을 수 있습니다.
 
    * 리터럴 값. 따옴표로 묶어야 합니다.
-   * AEM 속성입니다. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
+   * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
    * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
    * 위의 3개 항목의 연결입니다. `{+}`을(를) 사용하여 지정하십시오.
    * 값을 `{replace(<value>,"old-char","new-char")}`(으)로 둘러싸서 위의 3개 항목을 변경하는 것입니다.
@@ -157,7 +191,7 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
 
 ## 주석 동기화 {#comments-sync}
 
-1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 구성을 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 구성을 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 
    ![댓글 동기화](/help/assets/assets/comments-sync1.png)
 
@@ -177,7 +211,7 @@ Workfront에서 AEM으로의 주석 동기화를 테스트하려면 다음 단�
 
 AEM에서 에셋의 버전 기록을 유지 관리하려면 AEM에서 에셋 버전 관리를 구성합니다.
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 **[!UICONTROL 고급]** 탭을 엽니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 **[!UICONTROL 고급]** 탭을 엽니다.
 
 1. **[!UICONTROL 기존 에셋 버전과 같은 이름의 에셋 저장]** 옵션을 선택하십시오. 선택하면 이 옵션을 사용하여 업로드된 에셋을 기존 에셋 버전과 동일한 위치에 저장할 수 있습니다. 선택하지 않으면 다른 이름으로 새 에셋이 만들어집니다(예: `asset-name.pdf` 및 `asset-name-1.pdf`).
 
@@ -199,11 +233,11 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 ## 자산 자동 게시 {#auto-publish-assets}
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 **[!UICONTROL 고급]** 탭을 엽니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;에 액세스하여 **[!UICONTROL 고급]** 탭을 엽니다.
 
-1. **[!UICONTROL Workfront에서 전송할 때 자동으로 자산 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 Workfront에서 AEM으로 에셋을 전송할 때 에셋을 자동으로 게시할 수 있습니다. 이 기능은 Workfront 사용자 정의 양식 필드 및 설정해야 하는 값을 지정하여 조건부로 활성화할 수 있습니다. 문서가 AEM으로 전송될 때마다 해당 조건을 충족하면 자산이 자동으로 게시됩니다.
+1. **[!UICONTROL Workfront에서 전송할 때 자동으로 자산 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 Workfront에서 AEM으로 에셋을 전송할 때 에셋을 자동으로 게시할 수 있습니다. 이 기능은 Workfront 사용자 정의 양식 필드 및 설정해야 하는 값을 지정하여 조건부로 활성화할 수 있습니다. 문서가 AEM으로 전송될 때마다 조건을 충족하면 자산이 자동으로 게시됩니다.
 
-1. 프로젝트 완료 시 **[!UICONTROL Publish에 모든 프로젝트 자산을 Brand Portal으로 선택]**&#x200B;합니다. 이 옵션을 사용하면 에셋이 속한 Workfront 프로젝트의 상태가 `Complete`(으)로 변경될 때 에셋을 [!DNL Brand Portal]에 자동으로 게시할 수 있습니다.
+1. **[!UICONTROL 프로젝트 완료 시 모든 프로젝트 자산을 Brand Portal에 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 에셋이 속한 Workfront 프로젝트의 상태가 `Complete`(으)로 변경될 때 에셋을 [!DNL Brand Portal]에 자동으로 게시할 수 있습니다.
 
 ![자동 게시 구성](/help/assets/assets/wf-auto-publish-config.png)
 

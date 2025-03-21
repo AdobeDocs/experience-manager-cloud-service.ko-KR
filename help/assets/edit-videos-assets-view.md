@@ -4,19 +4,53 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 비디오를 �
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 17%
+source-wordcount: '825'
+ht-degree: 19%
 
 ---
 
 # [!DNL Assets view]에서 비디오 편집 {#edit-videos}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-Assets 사용자는 비디오에 대한 [!DNL Adobe Express] 빠른 작업이 임베드되어 있으므로 비디오 컨텐츠의 변형을 쉽게 만들 수 있습니다. [!DNL Adobe Express]에서 제공하는 [!DNL Assets view]의 빠른 작업은 비디오 자르기, 비디오 크기 조정, 비디오 트리밍, 비디오를 GIF으로 변환 등 사용자에게 친숙한 비디오 편집 옵션을 제공합니다.
+Assets 사용자는 비디오에 대한 [!DNL Adobe Express] 빠른 작업이 임베드되어 있으므로 비디오 컨텐츠의 변형을 쉽게 만들 수 있습니다. [!DNL Adobe Express]에서 제공하는 [!DNL Assets view]의 빠른 작업은 비디오 자르기, 비디오 크기 조정, 비디오 트리밍, 비디오를 GIF으로 변환하는 등의 사용자 친화적인 비디오 편집 옵션을 제공합니다.
 
 비디오를 편집하려면 비디오 세부 정보로 이동하여 [!UICONTROL 비디오 편집]을 클릭하세요. 또는 에셋을 선택하고 세부 정보를 클릭한 다음 오른쪽 창에 있는 ![가위](assets/do-not-localize/cut.svg) 아이콘을 클릭합니다. 비디오를 편집한 후 새 비디오를 새 버전 또는 새 에셋으로 저장할 수 있습니다.
 
@@ -39,7 +73,7 @@ AEM Assets 내의 [!DNL Adobe Express] 및 하나 이상의 환경에 액세스�
 5. **[!UICONTROL 적용]**을 클릭합니다.
    ![Adobe Express로 비디오 자르기](assets/adobe-express-crop-video.png)
 
-   자른 비디오를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다. ![Adobe Express으로 비디오 저장](assets/adobe-express-save-video.png)
+   자른 비디오를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다. ![Adobe Express에서 비디오 저장](assets/adobe-express-save-video.png)
 
 ### 비디오 크기 조정 {#resize-video-using-express}
 
@@ -79,7 +113,7 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 4. 비디오 모서리에 있는 핸들을 드래그하여 원하는 자르기를 만듭니다.
 5. **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
 
-   ![Adobe Express이 있는 GIF으로 비디오 변환](assets/adobe-express-convert-video-to-gif.png)
+   ![Adobe Express을 사용하여 비디오를 GIF으로 변환](assets/adobe-express-convert-video-to-gif.png)
 
 비디오를 GIF 형식으로 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 

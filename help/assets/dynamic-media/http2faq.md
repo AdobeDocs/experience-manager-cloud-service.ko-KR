@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 1%
+source-wordcount: '844'
+ht-degree: 3%
 
 ---
 
 # 콘텐츠 FAQ의 HTTP2 게재{#http-delivery-of-content-faq}
 
-Adobe이 컨텐츠의 HTTP/2 전달 가용성을 발표하게 되어 기쁩니다. HTTP/2를 사용할 때 전반적인 성능이 향상됩니다.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
+Adobe은 컨텐츠의 HTTP/2 전달 가능성을 발표하게 되어 매우 기쁘게 생각합니다. HTTP/2를 사용할 때 전반적인 성능이 향상됩니다.
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager - Dynamic Media과 번들로 제공되는 기본 제공 콘텐츠 전달 네트워크를 사용해야 합니다. 이 기능에서는 다른 모든 사용자 지정 콘텐츠 전달 네트워크가 지원되지 않습니다.
+>이 기능을 사용하려면 Adobe Experience Manager - Dynamic Media와 함께 번들로 제공되는 기본 제공 컨텐츠 전달 네트워크를 사용해야 합니다. 이 기능에서는 다른 모든 사용자 지정 콘텐츠 전달 네트워크가 지원되지 않습니다.
 
 ## HTTP/2란? {#what-is-http}
 
@@ -45,11 +82,11 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 * 리치 미디어 요청에 보안 HTTPS를 사용합니다.
 * Adobe 번들로 제공되는 CDN(Content Delivery Network)을 Dynamic Media Classic 라이선스의 일부로 사용합니다.
-* 일반 Dynamic Media 도메인(`s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(`images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
+* 일반 Dynamic Media 도메인(`s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(`images.company.com` 또는 `mycompany.scene7.com`)을 사용하십시오.
 
   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
-  **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **게시된 서버 이름**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+  **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **게시된 서버 이름**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 ## 내 Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -70,10 +107,10 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
    도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
-   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
    1. 고객 지원 팀은 요청이 제출된 순서에 따라 사용자를 HTTP/2 고객 대기자 명단에 추가합니다.
-   1. Adobe이 요청을 처리할 준비가 되면 고객 지원 팀에서 연락하여 전환을 조정하고 목표 날짜를 설정합니다.
+   1. Adobe에서 요청을 처리할 준비가 되면 고객 지원 팀에서 연락하여 전환을 조정하고 목표 날짜를 설정합니다.
    1. 완료 후 알림이 전송되며 HTTP2로의 성공적인 전환을 확인할 수 있습니다.
 
 ## 언제 HTTP/2로 전환할 수 있습니까? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -88,7 +125,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 HTTP/2로 전환하면 새 CDN 구성으로 이동하는 작업이 포함되므로 CDN에서 캐시가 지워집니다.
 
-캐싱되지 않은 콘텐츠는 캐시가 다시 빌드될 때까지 Adobe의 원본 서버에 직접 히트합니다. 이러한 조치 때문에 Adobe은 한 번에 몇 가지 고객 전환을 처리할 계획입니다. 이 방법을 사용하면 원본에서 요청을 가져올 때 수용 가능한 성능이 유지됩니다.
+캐싱되지 않은 콘텐츠는 캐시가 다시 빌드될 때까지 Adobe의 원본 서버에 직접 도달합니다. 이러한 조치 때문에 Adobe은 한 번에 몇 가지 고객 전환을 처리할 계획입니다. 이 방법을 사용하면 원본에서 요청을 가져올 때 수용 가능한 성능이 유지됩니다.
 
 ## URL 또는 웹 사이트가 HTTP/2로 활성화되었는지 어떻게 확인할 수 있습니까? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 

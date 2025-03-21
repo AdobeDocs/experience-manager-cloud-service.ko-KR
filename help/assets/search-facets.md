@@ -1,33 +1,67 @@
 ---
 title: 검색 패싯.
-description: 이 문서에서는 Experience Manager에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
+description: 이 문서에서는 Experience Manager에서 검색 패싯을 만들고, 수정하고, 사용하는 방법을 설명합니다.
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2551'
 ht-degree: 19%
 
 ---
 
 # 검색 패싯 {#search-facets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장할 수 있습니다. 경우에 따라 Experience Manager의 일반 검색 기능만 사용하는 경우 적합한 에셋을 찾는 것이 고되고 시간이 오래 걸릴 수 있습니다.
+Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장할 수 있습니다. Experience Manager의 일반 검색 기능만 사용하는 경우 적절한 에셋을 찾는 것이 어렵고 시간이 많이 걸릴 수 있습니다.
 
 필터 패널의 검색 패싯을 사용하여 검색 경험에 세부 기간을 추가하고 검색 기능을 보다 효율적이고 다양하게 만들 수 있습니다. 검색 패싯에는 보다 복잡한 검색을 수행할 수 있도록 하는 여러 차원(술어)이 추가됩니다. 필터 패널에는 몇 가지 표준 패싯이 포함되어 있습니다. 사용자 정의 검색 패싯을 추가할 수도 있습니다.
 
 요약하면, 검색 패싯을 사용하면 미리 결정된 단일 분류 순서가 아니라 여러 방법으로 자산을 검색할 수 있습니다. 원하는 세부 수준으로 쉽게 드릴다운하여 보다 집중적인 검색을 수행할 수 있습니다.
 
-예를 들어 이미지를 찾는 경우 비트맵 이미지를 원하는지 벡터 이미지를 원하는지 선택할 수 있습니다. 이미지에 대한 MIME 유형을 지정하여 검색 범위를 추가로 줄일 수 있습니다. 마찬가지로 문서를 검색할 때 형식을 지정할 수 있습니다(예: PDF 또는 MS Word).
+예를 들어 이미지를 찾는 경우 비트맵 이미지를 원하는지 벡터 이미지를 원하는지 선택할 수 있습니다. 이미지에 대한 MIME 유형을 지정하여 검색 범위를 추가로 줄일 수 있습니다. 마찬가지로 문서를 검색할 때 PDF 또는 MS Word와 같은 형식을 지정할 수 있습니다.
 
 ## 술어 추가 {#adding-a-predicate}
 
@@ -72,7 +106,7 @@ Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장�
 
 ## 옵션 설명 추가 {#adding-an-options-predicate}
 
-옵션 설명 을 사용하면 필터 패널에서 여러 검색 옵션을 추가할 수 있습니다. 필터 패널에서 이러한 옵션 중 하나 이상을 선택하여 에셋을 검색할 수 있습니다. 예를 들어 파일 유형에 따라 에셋을 검색하려면 검색 양식에서 이미지, 멀티미디어, 문서 및 아카이브와 같은 옵션을 구성합니다. 이러한 옵션을 구성한 후 [필터] 패널에서 [이미지] 옵션을 선택하면 GIF, JPEG, PNG 등의 유형 에셋에 대해 검색이 수행됩니다.
+옵션 설명 을 사용하면 필터 패널에서 여러 검색 옵션을 추가할 수 있습니다. 필터 패널에서 이러한 옵션 중 하나 이상을 선택하여 에셋을 검색할 수 있습니다. 예를 들어 파일 유형에 따라 에셋을 검색하려면 검색 양식에서 이미지, 멀티미디어, 문서 및 아카이브와 같은 옵션을 구성합니다. 이러한 옵션을 구성한 후 [필터] 패널에서 [이미지] 옵션을 선택하면 GIF, JPEG, PNG 등의 유형의 에셋에 대해 검색이 수행됩니다.
 
 옵션을 각 속성에 매핑하려면 옵션에 대한 노드 구조를 만들고 옵션 술어의 속성 이름 속성에 상위 노드의 경로를 제공합니다. 부모 노드는 `sling` 유형이어야 합니다. `OrderedFolder`. 옵션은 `nt:unstructured` 형식이어야 합니다. 옵션 노드에는 속성 `jcr:title` 및 `value`이(가) 구성되어 있어야 합니다.
 
@@ -201,7 +235,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Publish 상태</p> </td>
+   <td><p>게시 상태</p> </td>
    <td><p>게시 상태를 기반으로 에셋을 검색하는 검색 조건자</p> </td>
    <td>
     <ul>
@@ -275,7 +309,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
     </ul> </td>
   </tr>
   <tr>
-   <td>Publish 상태</td>
+   <td>게시 상태</td>
    <td>게시 상태를 기반으로 에셋을 검색하는 검색 조건자 </td>
    <td>
     <ul>
@@ -309,7 +343,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 
 ## 기본 검색 패싯 제거 {#removing-default-search-facets}
 
-Adobe은 성능 문제를 방지하기 위해 기본 검색 패싯을 제거하는 동안 주의할 것을 권장합니다. 기본 검색 패싯을 제거하면 기본 기능 동작에도 영향을 줄 수 있습니다.
+Adobe에서는 성능 문제를 방지하기 위해 기본 검색 패싯을 제거할 때 주의할 것을 권장합니다. 기본 검색 패싯을 제거하면 기본 기능 동작에도 영향을 줄 수 있습니다.
 
 다음 숨김 필드는 OmniSearch 및 스마트 컬렉션에서 쿼리 성능 문제를 일으킬 수 있으므로 제거하지 마십시오.
 

@@ -3,14 +3,51 @@ title: ' [!DNL Assets view]에서 에셋 이름 바꾸기 및 벌크 이름 바�
 description: 새로운 Assets UI(Assets 보기)를 사용하여 에셋의 이름을 일괄 변경하는 방법을 알아봅니다. 여러 에셋의 이름을 한 번에 바꿀 수 있는 기능을 제공합니다.
 role: User
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 15%
+source-wordcount: '486'
+ht-degree: 17%
 
 ---
 
 # [!DNL Assets view]에서 에셋 또는 폴더 이름 바꾸기 {#rename-single-asset-or-folder}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 이름을 바꾸면 콘텐츠나 위치를 변경하지 않고 에셋을 보다 효과적으로 구성, 분류 및 식별하는 데 도움이 될 수 있습니다. [!DNL Assets view]을(를) 사용하면 선택한 에셋 또는 폴더의 이름을 바꿀 수 있습니다.
 

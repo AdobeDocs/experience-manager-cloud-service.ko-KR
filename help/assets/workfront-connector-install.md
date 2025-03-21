@@ -4,32 +4,66 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 설치
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 2%
+source-wordcount: '811'
+ht-degree: 3%
 
 ---
 
 # [!DNL Workfront for Experience Manager enhanced connector] 설치 {#assets-integration-overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 [커넥터에 대한 필수 구성 요소](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)를 검토하십시오.
+[!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 [커넥터에 대한 필수 구성 요소](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)를 검토하십시오.
 
 >[!IMPORTANT]
 >
->2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service 기본 통합을 연결하기 위한 새로운 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 새 AEM Assetsas a Cloud Service 를 연결하기 위한 향상된 커넥터(1.9.8 및 이후 버전)의 모든 향후 구현이 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md)을 참조하십시오.
+>2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service을 연결하기 위한 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위해 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md)을 참조하십시오.
 
 >[!IMPORTANT]
 >
->* Adobe을 사용하려면 인증된 파트너 또는 [!DNL Adobe Professional Services]을(를) 통해서만 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
+>* Adobe에서는 인증된 파트너 또는 [!DNL Adobe Professional Services]을(를) 통해서만 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
@@ -67,12 +101,12 @@ ht-degree: 2%
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
    * `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
-1. 이 설치를 수행하려면 지식이 있어야 [!DNL Experience Manager]의 Maven 프로젝트를 [!DNL Cloud Service](으)로 설정할 수 있습니다. 다음 리소스를 사용하여 Maven 프로젝트에 서드파티 패키지를 포함하는 방법을 이해합니다.
+1. 이 설치를 수행하려면 지식이 있어야 [!DNL Experience Manager]의 Maven 프로젝트를 [!DNL Cloud Service]&#x200B;(으)로 설정할 수 있습니다. 다음 리소스를 사용하여 Maven 프로젝트에 서드파티 패키지를 포함하는 방법을 이해합니다.
 
    * [Maven 프로젝트에 서드파티 패키지를 포함합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
    * [배포 대상 [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
 
-[!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 추가 기능을 설치하려면 다음 단계를 수행하십시오.
+[!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 추가 기능을 설치하려면 다음 단계를 수행하십시오.
 
 1. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip)에서 향상된 커넥터를 다운로드합니다.
 
@@ -145,11 +179,11 @@ ht-degree: 2%
 
 [!DNL Workfront for Experience Manager enhanced connector]을(를) 이전 버전에서 최신 버전으로 업데이트하려면 [여기](update-workfront-enhanced-connector.md)를 클릭하십시오.
 
-## [!DNL Experience Manager]을(를) [!DNL Cloud Service](으)로 [!DNL Workfront] 간의 연결을 구성하십시오. {#configure-connection}
+## [!DNL Experience Manager]을(를) [!DNL Cloud Service]&#x200B;(으)로 [!DNL Workfront] 간의 연결을 구성하십시오. {#configure-connection}
 
 [!DNL Workfront]과(와)의 연결을 만들려면 다음 단계를 수행하십시오.
 
-1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;을 선택합니다.
+1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;을 선택합니다.
 
 1. 왼쪽 패널에서 `workfront-tools`을(를) 선택하고 페이지의 오른쪽 상단 영역에서 **[!UICONTROL 만들기]** 옵션을 선택합니다.
 

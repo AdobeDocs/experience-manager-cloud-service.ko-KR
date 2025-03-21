@@ -1,22 +1,59 @@
 ---
 title: 스핀 세트
-description: Dynamic Media에서 스핀 세트 작업 방법을 알아봅니다.
+description: Dynamic Media에서 스핀 세트로 작업하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 8%
+source-wordcount: '2002'
+ht-degree: 9%
 
 ---
 
 # 스핀 세트{#spin-sets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
 스핀 세트는 물체를 돌아서 그것을 살펴보는 실제 행동을 시뮬레이션한다. 스핀 세트를 사용하면 모든 각도에서 항목을 볼 수 있으므로 모든 각도에서 주요 시각적 세부 정보를 얻을 수 있습니다.
 
-회전 세트는 360도 보기 환경을 시뮬레이션합니다. Dynamic Media은 뷰어가 항목을 회전할 수 있는 단일 축 스핀 세트를 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 &quot;자유 형식&quot;으로 보기를 확대/축소하고 이동할 수 있습니다. 이러한 방식으로, 사용자는 특정 관점에서 항목을 더 가까이 검사할 수 있다.
+회전 세트는 360도 보기 환경을 시뮬레이션합니다. Dynamic Media는 뷰어가 항목을 회전할 수 있는 단일 축 스핀 세트를 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 &quot;자유 형식&quot;으로 보기를 확대/축소하고 이동할 수 있습니다. 이러한 방식으로, 사용자는 특정 관점에서 항목을 더 가까이 검사할 수 있다.
 
 회전 집합은 배너에 의해 **[!UICONTROL SPINSET]** 단어로 지정됩니다. 또한 회전 집합이 게시되면 **[!UICONTROL World]** 아이콘으로 표시된 게시 날짜가 **[!UICONTROL Pencil]** 아이콘으로 표시된 마지막 수정 날짜와 함께 배너에 표시됩니다.
 
@@ -26,7 +63,7 @@ ht-degree: 8%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI로 에셋 관리](/help/assets/manage-digital-assets.md)를 참조하고 이미지 집합 에셋이 업로드된 새 폴더에 적용합니다.
 
-회전 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+회전 집합을 만들 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
@@ -38,7 +75,7 @@ ht-degree: 8%
 
 스핀 세트를 빠르게 시작하고 실행하려면 다음 단계를 따르십시오.
 
-1. 선택 사항입니다. [일괄처리 집합 사전 설정을 만들고](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 자산 폴더에 적용합니다.
+1. 선택 사항. [일괄처리 집합 사전 설정을 만들고](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 자산 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 회전 집합 생성을 자동화할 수 있습니다.
 
@@ -72,7 +109,7 @@ ht-degree: 8%
 
    회전 세트를 선택하면 미리 볼 수 있습니다. 회전 세트를 회전합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [Publish 회전 집합](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [회전 집합 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    회전 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정을 게시](/help/assets/dynamic-media/managing-viewer-presets.md)해야 합니다.
 
@@ -112,13 +149,13 @@ ht-degree: 8%
 >
 >You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
 >
->[Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)에서 &quot;이미지 집합 및 스핀 집합을 자동으로 생성하는 일괄처리 집합 사전 설정 만들기&quot;를 참조하십시오.
+>[Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)에서 &quot;이미지 집합 및 회전 집합을 자동으로 생성하는 일괄처리 집합 사전 설정 만들기&quot;를 참조하십시오.
 
 >[!NOTE]
 >
 >회전 집합에 이미지가 나타나는 순서입니다. 회전 방향이 360° 시야가 되도록 주문해야 합니다.
 
-회전 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+회전 집합을 만들 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
@@ -138,7 +175,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >회전 세트를 만들 때 회전 세트 축소판을 변경하거나 회전 세트의 에셋에 따라 Experience Manager이 축소판을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 회전 집합에서 썸네일을 생성하도록 Experience Manager을 결정한 경우 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
+   >회전 세트를 만들 때 회전 세트 썸네일을 변경하거나 Experience Manager에서 회전 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 Experience Manager에서 회전 집합에서 썸네일을 생성하도록 결정한 경우 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
 
 1. 다음 중 하나를 수행합니다.
 
@@ -218,7 +255,7 @@ ht-degree: 8%
    * 이미지 순서를 조정하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 조정 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 선택합니다.
    * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 자산으로 이동하여 선택한 다음 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**을 선택합니다.
-Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 [사전 설정] 아이콘을 선택하고 사전 설정을 선택합니다.
    * 회전 집합 전체를 삭제하려면 회전 집합으로 이동하여 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 선택합니다
@@ -232,6 +269,6 @@ Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로
 
 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하세요.
 
-## Publish 스핀 세트 {#publishing-spin-sets}
+## 스핀 세트 게시 {#publishing-spin-sets}
 
-[Publish 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
+[자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.

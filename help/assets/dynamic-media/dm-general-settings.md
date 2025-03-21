@@ -9,36 +9,73 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 6251b9bb6f56d387fa1a158ac62ef3b25b1ab56b
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 0%
+source-wordcount: '2552'
+ht-degree: 1%
 
 ---
 
 # Dynamic Media 일반 설정 구성
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- hide: yes
 hidefromtoc: yes -->
 
 {{work-with-dynamic-media}}
 
-**[!UICONTROL Dynamic Media 일반 설정]** 구성은 다음 경우에만 사용할 수 있습니다.
+**[!UICONTROL Dynamic Media 일반 설정]**&#x200B;을(를) 구성하는 방법은 다음 경우에만 사용할 수 있습니다.
 
-* Adobe Experience Manager as a Cloud Service에 *기존* **[!UICONTROL Dynamic Media 구성]**(**[!UICONTROL Cloud Service]**&#x200B;에 있음)이 있습니다. [Cloud Service에서 Dynamic Media 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)를 참조하십시오.
+* Adobe Experience Manager as a Cloud Service에 *기존* **[!UICONTROL Dynamic Media 구성]**(**[!UICONTROL Cloud Services]**&#x200B;에서)이 있습니다. [클라우드 서비스에서 Dynamic Media 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)를 참조하십시오.
 * 관리자 권한이 있는 Experience Manager 시스템 관리자입니다.
 
-숙련된 웹 사이트 개발자 및 프로그래머는 Dynamic Media 일반 설정을 위한 의도한 대상입니다. Adobe Dynamic Media은 게시 설정을 변경하는 사용자에게 Adobe Experience Manager의 Dynamic Media 및 기본 이미징 기술을 잘 익힐 것을 권장합니다.
+숙련된 웹 사이트 개발자 및 프로그래머는 Dynamic Media 일반 설정 의 대상 입니다. Adobe Dynamic Media는 게시 설정을 변경하는 사용자에게 Adobe Experience Manager의 Dynamic Media 및 기본 이미징 기술에 익숙할 것을 권장합니다.
 
-계정 생성 시 Dynamic Media Adobe은 회사에 할당된 서버를 자동으로 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 해당됩니다.
+계정 생성 시 Adobe Dynamic Media는 회사에 할당된 서버를 자동으로 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 해당됩니다.
 
-Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 사이트 또는 애플리케이션으로 에셋을 전달하는 방법을 결정하는 기본 설정을 구성합니다. 설정을 지정하지 않으면 Adobe Dynamic Media 서버는 Dynamic Media Publish 설정 페이지에서 구성한 기본 설정에 따라 자산을 전달합니다.
+Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 사이트 또는 애플리케이션으로 에셋을 전달하는 방법을 결정하는 기본 설정을 지정합니다. 설정을 지정하지 않으면 Adobe Dynamic Media 서버는 Dynamic Media 게시 설정 페이지에서 구성한 기본 설정에 따라 자산을 전달합니다.
 
 추가 선택적 구성 작업은 [옵션 - Dynamic Media 설정 설정 및 구성](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)을 참조하십시오.
 
 >[!NOTE]
 >
->Adobe Experience Manager에서 Dynamic Media Classic에서 Dynamic Media으로 업그레이드하시겠습니까? Dynamic Media의 일반 설정 페이지 및 [Publish 설정](/help/assets/dynamic-media/dm-publish-settings.md) 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 일반 설정 페이지의 **[!UICONTROL 기본 업로드 옵션]** 영역에 나열된 모든 값은 예외입니다. 해당 값은 이미 Experience Manager 상태입니다. 따라서 Experience Manager 사용자 인터페이스를 통해 **[!UICONTROL 기본 업로드 옵션]**&#x200B;의 5개 탭에서 변경한 내용은 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 페이지 및 [Publish 설정](/help/assets/dynamic-media/dm-publish-settings.md) 페이지의 다른 모든 설정 및 값은 Experience Manager 시 Dynamic Media Classic과 Dynamic Media 간에 유지 관리됩니다.
+>Adobe Experience Manager에서 Dynamic Media Classic의 Dynamic Media로 업그레이드하시겠습니까? Dynamic Media의 일반 설정 페이지 및 [게시 설정](/help/assets/dynamic-media/dm-publish-settings.md) 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 일반 설정 페이지의 **[!UICONTROL 기본 업로드 옵션]** 영역에 나열된 모든 값은 예외입니다. 해당 값은 이미 Experience Manager에 있습니다. 따라서 Experience Manager 사용자 인터페이스를 통해 **[!UICONTROL 기본 업로드 옵션]**&#x200B;의 5개 탭에서 변경한 내용은 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 페이지 및 [게시 설정](/help/assets/dynamic-media/dm-publish-settings.md) 페이지의 다른 모든 설정 및 값은 Dynamic Media Classic과 Experience Manager의 Dynamic Media 간에 유지 관리됩니다.
 
 **Dynamic Media 일반 설정을 구성하려면:**
 
@@ -55,18 +92,18 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
    * [Illustrator](#illustrator-tab) 탭
 
    ![Dynamic Media 일반 설정 페이지](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media 일반 설정 페이지(**[!UICONTROL 이미지 편집]**탭 선택)*<br><br>
+   **[!UICONTROL 이미지 편집]** 탭이 선택된 *Dynamic Media 일반 설정 페이지.*<br><br>
 
 1. 완료되면 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ## 서버 {#server-general-setting}
 
-계정 생성 시 Dynamic Media Adobe은 회사에 할당된 서버를 자동으로 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 해당됩니다.
+계정 생성 시 Adobe Dynamic Media는 회사에 할당된 서버를 자동으로 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 해당됩니다.
 
 | 옵션 | 설명 |
 | --- | --- |
-| **[!UICONTROL 게시된 서버 이름]** | 필수.<br>이름은 경로에 `https://`을(를) 사용해야 합니다.<br>이 서버는 사용자 계정과 관련된 모든 시스템 생성 URL 호출에 사용되는 Live CDN(Content Deliver Network) 서버입니다. Adobe 기술 지원에서 이 서버 이름을 변경하도록 지시한 경우에만 이 서버 이름을 변경하십시오. |
-| **[!UICONTROL 원본 서버 이름]** | 필수.<br>이 서버는 품질 보증 테스트에만 사용됩니다. Adobe 기술 지원에서 이 서버 이름을 변경하도록 지시한 경우에만 이 서버 이름을 변경하십시오. |
+| **[!UICONTROL 게시된 서버 이름]** | 필수.<br>이름은 경로에 `https://`을(를) 사용해야 합니다.<br>이 서버는 사용자 계정과 관련된 모든 시스템 생성 URL 호출에 사용되는 Live CDN(Content Deliver Network) 서버입니다. Adobe 기술 지원에서 지시한 경우에만 이 서버 이름을 변경합니다. |
+| **[!UICONTROL 원본 서버 이름]** | 필수.<br>이 서버는 품질 보증 테스트에만 사용됩니다. Adobe 기술 지원에서 지시한 경우에만 이 서버 이름을 변경합니다. |
 
 ## 애플리케이션에 업로드 {#upload-to-application}
 
@@ -76,11 +113,11 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
   >[!NOTE]
   >
-  >Experience Manager과 일관성을 유지하려면 [이미지 덮어쓰기] 옵션 **[!UICONTROL 같은 기본 이름/확장명으로 현재 폴더에 덮어쓰기]**&#x200B;를 선택합니다.
+  >Experience Manager과의 일관성을 유지하려면 [이미지 덮어쓰기] 옵션 **[!UICONTROL 같은 기본 이름/확장명으로 현재 폴더에 덮어쓰기]**&#x200B;를 선택하십시오.
 
   | 이미지 덮어쓰기 옵션 | 설명 |
   | --- | --- |
-  | **[!UICONTROL 같은 기본 이름/확장명으로 현재 폴더에 덮어쓰기]** | 새 Dynamic Media 계정에만 *기본값*.<br>이 옵션은 교체에 가장 엄격한 규칙입니다. 대체 이미지를 원본과 동일한 폴더에 업로드하고 대체 이미지의 파일 이름 확장명이 원본과 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 생성됩니다.<br>*Experience Manager과 일관성을 유지하려면 이 옵션을 선택하십시오*. |
+  | **[!UICONTROL 같은 기본 이름/확장명으로 현재 폴더에 덮어쓰기]** | 새 Dynamic Media 계정에만 *기본값*.<br>이 옵션은 교체에 가장 엄격한 규칙입니다. 대체 이미지를 원본과 동일한 폴더에 업로드하고 대체 이미지의 파일 이름 확장명이 원본과 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 생성됩니다.<br>*Experience Manager과의 일관성을 유지하려면 이 옵션을 선택하십시오*. |
   | **[!UICONTROL 확장명에 상관없이 같은 기본 이름으로 현재 폴더에 덮어쓰기]** | 대체 이미지를 원본과 동일한 폴더에 업로드해야 하지만 파일 이름 확장명이 원본과 다를 수 있습니다. 예를 들어 chair.tif는 chair.jpg를 대체합니다. |
   | **[!UICONTROL 같은 기본 에셋 이름/확장명으로 모든 폴더에 덮어쓰기]** | 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아닌 chair.jpg를 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지가 새 폴더에 있습니다. 파일은 원래 위치에서 더 이상 찾을 수 없습니다. |
   | **[!UICONTROL 확장명에 상관없이 같은 기본 자산 이름으로 모든 폴더에 덮어쓰기]** | 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본이 아닌 다른 폴더에 업로드하고, 파일 확장명이 다른 파일을 업로드하고, 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다. |
@@ -101,7 +138,7 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
 | [언샵 마스크] 옵션 | 설명 |
 | --- | --- |
-| **[!UICONTROL 금액]** | 필수.<br>가장자리 픽셀에 적용되는 대비의 양을 제어합니다.<br>효과의 강도로 생각하십시오. [언샵 마스크]의 양 값은 Adobe Dynamic Media과 Adobe Photoshop에 따라 다릅니다. Photoshop은 1%~500% 범위의 금액을 제공합니다. 반면 Adobe Dynamic Media에서는 값 범위가 `0.0`에서 `5.0`까지입니다. Adobe Dynamic Media의 값 5.0은 Photoshop의 500%에 해당하는 대략적인 값이며, 값 0.9는 90%에 해당하는 대략적인 값입니다. |
+| **[!UICONTROL 금액]** | 필수.<br>가장자리 픽셀에 적용되는 대비의 양을 제어합니다.<br>효과의 강도로 생각하십시오. 언샵 마스크의 양 값은 Adobe Dynamic Media와 Adobe Photoshop에 따라 다릅니다. Photoshop은 1%~500% 범위의 금액을 제공합니다. 반면 Adobe Dynamic Media에서는 값 범위가 `0.0`에서 `5.0`까지입니다. Adobe Dynamic Media의 값 5.0은 Photoshop의 500%에 해당하는 대략적인 값이며, 값 0.9는 90%에 해당하는 값입니다. |
 | **[!UICONTROL 반경]** | 필수.<br>효과의 반경을 제어합니다.<br>값 범위는 `0`에서 `250`까지입니다. 이 효과는 이미지의 모든 픽셀에서 실행되며 모든 픽셀에서 모든 방향으로 방사됩니다. 반경은 픽셀 단위로 측정됩니다. 예를 들어, 2000 x 2000 픽셀 이미지와 500 x 500 픽셀 이미지에 대해 유사한 선명하게 하기 위해 2000 x 2000 픽셀 이미지에 대해 두 픽셀의 반경을 설정합니다. 그런 다음 500 x 500 픽셀 이미지에서 한 픽셀의 반경 값을 설정합니다. 더 많은 픽셀이 있는 이미지에는 더 큰 값이 사용됩니다. |
 | **[!UICONTROL 임계값]** | 필수.<br>임계값은 [언샵 마스크] 필터를 적용할 때 무시되는 대비 범위입니다. 이 필터를 사용할 때 이미지에 &quot;노이즈&quot;가 삽입되지 않도록 이 효과가 중요합니다. 값 범위는 회색 음영 이미지의 밝기 단계 수인 `0` - `255`입니다. `0`=검정, `128`=50% 회색 및 `255`=흰색.<br>작은 변화를 무시하는 임계값 `12`은(는) 피부 색조 밝기로 노이즈를 추가하지 않지만 속눈썹이 피부와 만나는 곳과 같은 대비되는 영역에 가장자리 대비를 추가합니다.<br>다른 사람의 얼굴 사진이 있는 경우 [언샵 마스크]는 이미지의 대비되는 부분에 영향을 줍니다. 예를 들어, 속눈썹과 피부가 만나 뚜렷한 대조 영역을 만들고 매끄러운 피부 그 자체입니다. 가장 매끄러운 피부도 밝기 값에 미묘한 변화를 보인다. 임계값을 사용하지 않는 경우에는 필터가 스킨 픽셀에서 이러한 미묘한 변화를 강조합니다. 차례로, 시끄럽고 바람직하지 않은 효과가 만들어지면서 속눈썹의 조영 증대가 이루어져 선명도를 향상시킨다.<br>이 문제를 방지하기 위해 필터에 부드러운 피부처럼 대비가 크게 변경되지 않는 픽셀을 무시하도록 하는 임계값이 도입되었습니다.<br>앞에 표시된 지퍼 그래픽에서 지퍼 옆에 있는 질감을 확인합니다. 문턱값이 너무 낮아서 노이즈를 억제하지 못하기 때문에 화상 노이즈가 나타난다. |
 | **[!UICONTROL 흑백]** | 이미지 밝기(강도)를 언샵 마스크하려면 선택합니다.<br>각 색상 구성 요소를 개별적으로 선택 해제하려면 선택을 취소합니다. |
@@ -112,7 +149,7 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
 Adobe PostScript® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.
 
-Dynamic Media Adobe에서 Adobe PostScript® (EPS) 파일을 사용할 수 있습니다. Adobe Dynamic Media은 이러한 파일을 업로드할 때 구성하기 위한 명령을 제공합니다.
+Adobe Dynamic Media에서 Adobe PostScript®(EPS) 파일을 사용할 수 있습니다. Adobe Dynamic Media는 업로드할 때 이러한 파일을 구성하는 명령을 제공합니다.
 
 PostScript(EPS) 이미지 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 있습니다. 파일을 래스터화하고 투명 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.
 
@@ -121,7 +158,7 @@ PostScript(EPS) 이미지 파일을 업로드할 때 다양한 방법으로 형�
 | **[!UICONTROL 처리 중]** | [래스터화]를 선택하여 파일의 벡터 그래픽을 비트맵 형식으로 변환합니다. |
 | **[!UICONTROL 렌더링된 이미지에서 투명 배경 유지]** | 파일의 배경 투명도는 그대로 유지됩니다. |
 | **[!UICONTROL 해상도(픽셀/인치)]** | 해상도 설정을 결정합니다. 이 설정은 파일의 인치당 표시되는 픽셀 수를 결정합니다. |
-| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 변환합니다.<br>· **[!UICONTROL 회색 음영으로 강제 적용]** - 회색 음영 색상 공간으로 전환됩니다. |
+| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 강제 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 변환합니다.<br>· **[!UICONTROL 회색 음영으로 강제 적용]** - 회색 음영 색상 공간으로 전환됩니다. |
 
 ### Photoshop 탭 {#photoshop-tab}
 
@@ -129,16 +166,16 @@ Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하�
 
 | Photoshop 옵션 | 설명 |
 | --- | --- |
-| **[!UICONTROL 레이어 유지]** | PSD의 레이어(있는 경우)를 개별 에셋으로 분할합니다. 에셋 레이어는 PSD과 연결된 상태로 유지됩니다. 세부 사항 보기의 PSD 파일을 열고 레이어 패널을 선택하여 해당 파일을 볼 수 있습니다. PSD 파일에서 레이어 보기 및 편집을 참조하십시오. |
+| **[!UICONTROL 레이어 유지]** | PSD의 레이어(있는 경우)를 개별 에셋으로 분할합니다. 에셋 레이어는 PSD과 연결된 상태로 유지됩니다. [세부 사항 보기]에서 PSD 파일을 열고 레이어 패널을 선택하여 볼 수 있습니다. PSD 파일에서 레이어 보기 및 편집 을 참조하십시오. |
 | **[!UICONTROL 템플릿 만들기]** | PSD 파일의 레이어로 템플릿을 만듭니다. |
 | **[!UICONTROL 텍스트 추출]** | 사용자가 뷰어에서 텍스트를 검색할 수 있도록 텍스트를 추출합니다. |
 | **[!UICONTROL 레이어를 배경 크기로 확장]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다. |
-| **[!UICONTROL 레이어 이름 지정]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다.<br>· **[!UICONTROL 레이어 이름]** - PSD 파일에서 레이어 이름 뒤에 이미지 이름을 지정합니다. 예를 들어 원본 PSD 파일에서 Price Tag 라는 이름의 레이어는 Price Tag 라는 이미지가 됩니다. 그러나 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름(배경, 레이어 1, 레이어 2 등)이면 PSD 파일에서 해당 레이어 번호의 이름을 따서 이미지 이름이 지정됩니다. <br>· **[!UICONTROL Photoshop 및 레이어 번호]** - 원래 레이어 이름을 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 추가된 레이어 번호로 지정됩니다. 예를 들어, 이름이 `Spring Ad.psd`인 파일의 두 번째 레이어는 Photoshop에 기본이 아닌 이름이 있더라도 이름이 `Spring Ad_2`입니다.<br>· **[!UICONTROL Photoshop 및 레이어 이름]** - PSD 파일 뒤에 레이어 이름 또는 레이어 번호가 붙은 이미지 이름을 지정합니다. PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우 레이어 번호가 사용됩니다. 예를 들어 PSD 파일 `SpringAd`에 있는 `Price Tag` 레이어의 이름은 `Spring Ad_Price Tag`입니다. 기본 이름이 Layer 2인 레이어를 `Spring Ad_2`이라고 합니다. |
-| **[!UICONTROL 앵커]** | PSD 파일에서 생성된 레이어 컴포지션에서 생성된 템플릿에서 이미지가 고정되는 방식을 지정합니다. 기본적으로 앵커는 가운데입니다. 가운데 앵커를 사용하면 대체 이미지의 종횡비에 관계없이 대체 이미지가 동일한 공간을 가장 잘 채울 수 있습니다. 템플릿을 참조하고 매개 변수 대체를 사용할 때 이 이미지를 대체하는 다른 양상의 이미지가 동일한 공간을 효과적으로 차지합니다. 템플릿에서 할당된 공간을 채우기 위해 응용 프로그램에 교체 이미지가 필요한 경우 다른 설정으로 변경합니다. |
+| **[!UICONTROL 레이어 이름 지정]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다.<br>· **[!UICONTROL 레이어 이름]** - PSD 파일에서 레이어 이름 뒤에 이미지 이름을 지정합니다. 예를 들어 원래 PSD 파일에서 Price Tag 라는 레이어는 Price Tag 라는 이미지가 됩니다. 그러나 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름(배경, 레이어 1, 레이어 2 등)이면 PSD 파일에서 해당 레이어 번호의 이름을 따라 이미지 이름이 지정됩니다. <br>· **[!UICONTROL Photoshop 및 레이어 번호]** - 원래 레이어 이름을 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 추가된 레이어 번호로 지정됩니다. 예를 들어, 이름이 `Spring Ad.psd`인 파일의 두 번째 레이어는 Photoshop에 기본이 아닌 이름이 있더라도 이름이 `Spring Ad_2`입니다.<br>· **[!UICONTROL Photoshop 및 레이어 이름]** - PSD 파일 뒤에 레이어 이름 또는 레이어 번호가 오는 이미지 이름을 지정합니다. PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우 레이어 번호가 사용됩니다. 예를 들어, PSD 파일 `SpringAd`의 `Price Tag` 레이어 이름은 `Spring Ad_Price Tag`입니다. 기본 이름이 Layer 2인 레이어를 `Spring Ad_2`이라고 합니다. |
+| **[!UICONTROL 앵커]** | PSD 파일에서 만든 레이어 컴포지션에서 생성된 템플릿에서 이미지가 고정되는 방식을 지정합니다. 기본적으로 앵커는 가운데입니다. 가운데 앵커를 사용하면 대체 이미지의 종횡비에 관계없이 대체 이미지가 동일한 공간을 가장 잘 채울 수 있습니다. 템플릿을 참조하고 매개 변수 대체를 사용할 때 이 이미지를 대체하는 다른 양상의 이미지가 동일한 공간을 효과적으로 차지합니다. 템플릿에서 할당된 공간을 채우기 위해 응용 프로그램에 교체 이미지가 필요한 경우 다른 설정으로 변경합니다. |
 
 ### PDF 탭 {#pdf-tab}
 
-추출을 위해 고려되는 PDF의 최대 페이지 수는 새 업로드의 경우 5000페이지입니다. 이 제한은 2022년 12월 31일에 100페이지(모든 PDF에 대해)로 변경됩니다. [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md)도 참조하세요.
+추출에 고려되는 PDF의 최대 페이지 수는 새 업로드의 경우 5000페이지입니다. 이 제한은 2022년 12월 31일에 100페이지(모든 PDF의 경우)로 변경됩니다. [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md)도 참조하세요.
 
 파일을 래스터화하고, 검색어와 링크를 추출하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.
 
@@ -147,13 +184,13 @@ Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하�
 | **[!UICONTROL 처리 중]** | · **[!UICONTROL 없음]** - PDF 처리가 완료되지 않았습니다.<br>· **[!UICONTROL 축소판]** - PDF 파일의 각 페이지를 잘라내어 축소판 이미지로 변환합니다.<br> · **[!UICONTROL 래스터화]** - PDF 파일의 페이지를 분리하고 벡터 그래픽을 비트맵 이미지로 변환합니다. eCatalog를 만들려면 이 옵션을 선택합니다. |
 | **[!UICONTROL 추출]** | · **[!UICONTROL 없음]** - PDF에서 추출된 검색어 또는 링크가 없습니다.<br>· **[!UICONTROL 검색어]** - 시스템이 PDF 파일에서 검색어를 추출하여 eCatalog 뷰어에서 키워드 검색을 사용하도록 설정합니다.<br>· **[!UICONTROL 링크]** - PDF 파일에서 링크를 추출하여 eCatalog 뷰어에서 사용되는 이미지 맵으로 변환합니다.<br>· **[!UICONTROL 검색어 및 링크]** - eCatalog 뷰어에서 사용할 검색어와 링크를 모두 추출합니다. |
 | **[!UICONTROL 해상도(픽셀/인치)]** | 해상도 설정을 결정합니다. 이 설정은 PDF 파일에서 인치당 표시되는 픽셀 수를 결정합니다. 기본값은 150입니다. |
-| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - PDF 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 전환됩니다.<br>· **[!UICONTROL 회색으로 강제 적용]** - 회색조 색상 공간으로 변환합니다. |
+| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - PDF 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 강제 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 전환됩니다.<br>· **[!UICONTROL 회색으로 강제 적용]** - 회색조 색상 공간으로 변환합니다. |
 
 ### Illustrator 탭 {#illustrator-tab}
 
 Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.
 
-Dynamic Media Adobe에서 Adobe® Illustrator® (AI) 파일을 사용할 수 있습니다. Adobe Dynamic Media은 이러한 파일을 업로드할 때 구성하기 위한 명령을 제공합니다.
+Adobe Dynamic Media에서 Adobe® Illustrator® (AI) 파일을 사용할 수 있습니다. Adobe Dynamic Media는 업로드할 때 이러한 파일을 구성하는 명령을 제공합니다.
 
 Illustrator(AI) 이미지 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 있습니다. 파일을 래스터화하고 투명 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다. PostScript 및 Illustrator 파일 형식 지정 옵션은 업로드 작업 옵션 상자의 PostScript 옵션 및 Illustrator 옵션 아래에 있는 업로드 화면에서 사용할 수 있습니다.
 
@@ -163,4 +200,4 @@ Illustrator(AI) 이미지 파일을 업로드할 때 다양한 방법으로 형�
 | **[!UICONTROL 처리 중]** | [래스터화]를 선택하여 파일의 벡터 그래픽을 비트맵 형식으로 변환합니다. |
 | **[!UICONTROL 렌더링된 이미지에서 투명 배경 유지]** | 파일의 배경 투명도는 그대로 유지됩니다. |
 | **[!UICONTROL 해상도(픽셀/인치)]** | 해상도 설정을 결정합니다. 이 설정은 파일의 인치당 표시되는 픽셀 수를 결정합니다. |
-| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 변환합니다.<br>· **[!UICONTROL 회색으로 강제 적용]** - 회색조 색상 공간으로 변환합니다. |
+| **[!UICONTROL 색상 공간]** | · **[!UICONTROL 자동으로 감지]** - 파일의 색상 공간을 유지합니다.<br>· **[!UICONTROL RGB으로 강제 적용]** - RGB 색상 공간으로 전환됩니다.<br>· **[!UICONTROL CMYK로 강제 적용]** - CMYK 색상 공간으로 변환합니다.<br>· **[!UICONTROL 회색으로 강제 적용]** - 회색조 색상 공간으로 변환합니다. |

@@ -3,27 +3,61 @@ title: Assets API 검색
 description: Search Assets API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 3%
+source-wordcount: '530'
+ht-degree: 9%
 
 ---
 
 # Assets API 검색 {#search-assets-api}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>OpenAPI 기능이 포함된 Dynamic Media 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager 에셋 저장소에서 사용할 수 있는 모든 [승인된 에셋](approve-assets.md)을 검색한 다음 배달 URL을 사용하여 통합된 다운스트림 응용 프로그램으로 배달할 수 있습니다.
 
-Experience Manager 저장소에서 올바른 승인된 에셋을 검색하는 것은 게재 URL을 사용하여 에셋을 게재하는 첫 번째 단계입니다. 검색 요청에 대한 응답은 검색 기준을 충족하는 에셋에 해당하는 JSON 문서 배열로 구성됩니다. 각 JSON 문서는 자산 배달 요청을 작성하는 데 사용되는 `id` 필드를 사용하여 식별됩니다.
+Experience Manager 저장소에서 승인된 올바른 에셋을 검색하는 것은 게재 URL을 사용하여 에셋을 게재하는 첫 번째 단계입니다. 검색 요청에 대한 응답은 검색 기준을 충족하는 에셋에 해당하는 JSON 문서 배열로 구성됩니다. 각 JSON 문서는 자산 배달 요청을 작성하는 데 사용되는 `id` 필드를 사용하여 식별됩니다.
 
 ![다이렉트 이진 업로드 프로토콜 개요](assets/search-assets-api-overview.png)
 
@@ -42,7 +76,7 @@ Assets API 검색 요청 내에서 속성을 정의하여 다음 기능을 활�
 Search Assets API 요청의 끝점은 다음 형식이어야 합니다.
 `https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/search`
 
-게재 도메인은 Experience Manager 작성자 환경의 도메인과 구조가 유사합니다. 유일한 차이점은 용어 `author`을(를) `delivery`(으)로 바꾸는 것입니다.
+게재 도메인은 Experience Manager 작성 환경 도메인과 구조가 유사합니다. 유일한 차이점은 용어 `author`을(를) `delivery`(으)로 바꾸는 것입니다.
 
 `pXXXX`은(는) 프로그램 ID를 참조합니다.
 

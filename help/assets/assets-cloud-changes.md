@@ -4,19 +4,53 @@ description: ' [!DNL Adobe Experience Manager] 6.5와 비교하여  [!DNL Adobe 
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1052'
 ht-degree: 10%
 
 ---
 
-# [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service](으)로 주요 변경 내용 {#notable-changes}
+# [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service]&#x200B;(으)로 주요 변경 내용 {#notable-changes}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) Experience Manager 프로젝트를 관리할 수 있는 많은 새로운 기능과 가능성을 제공합니다. [!DNL Experience Manager Assets]의 온-프레미스 또는 Adobe 관리 서비스로 호스팅되는 것과 [!DNL Experience Manager]의 [!DNL Cloud Service](으)와의 차이점이 많습니다. 이 문서에서는 [!DNL Assets] 기능의 중요한 차이점을 조명합니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) Experience Manager 프로젝트를 관리할 수 있는 많은 새로운 기능과 가능성을 제공합니다. [!DNL Experience Manager Assets] 온-프레미스 또는 Adobe Managed Service로 호스팅 간에 [!DNL Experience Manager] as a [!DNL Cloud Service]와(과) 많은 차이가 있습니다. 이 문서에서는 [!DNL Assets] 기능의 중요한 차이점을 조명합니다.
 
 [!DNL Experience Manager] 6.5와 비교한 주요 차이점은 다음 영역에 있습니다.
 
@@ -50,9 +84,9 @@ ht-degree: 10%
 
 ## 기능 패리티가 [!DNL Experience Manager] 6.5임 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service]은(는) 많은 새로운 기능을 도입했으며 기존 기능을 보다 효율적으로 사용할 수 있는 방법을 도입했습니다. 그러나 [!DNL Cloud Service](으)로 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager](으)로 이동할 때 일부 기능은 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있습니다. 다음은 이러한 기능 목록입니다. 또한 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하세요.
+[!DNL Experience Manager] as a [!DNL Cloud Service]은(는) 많은 새로운 기능을 도입했으며 기존 기능을 보다 효율적으로 사용할 수 있는 방법을 도입했습니다. 그러나 [!DNL Cloud Service]&#x200B;(으)로 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager]&#x200B;(으)로 이동할 때 일부 기능은 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있습니다. 다음은 이러한 기능 목록입니다. 또한 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하세요.
 
-| 기능 또는 사용 사례 | [!DNL Cloud Service](으)로 [!DNL Experience Manager]의 상태 | 댓글 |
+| 기능 또는 사용 사례 | [!DNL Cloud Service]&#x200B;(으)로 [!DNL Experience Manager]의 상태 | 댓글 |
 |-----|-----|-----|
 | [자산 검색 복제](/help/assets/detect-duplicate-assets.md) | 다르게 작동합니다. | [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection)을 참조하세요. |
 | [FPO(배치 전용) 표현물의 경우](/help/assets/configure-fpo-renditions.md) | 다르게 작동합니다. | 처리 프로필은 에셋 마이크로서비스 를 사용하여 FPO 렌디션을 생성합니다. Experience Manager 6.5에서는 [!DNL ImageMagick]과(와) 같은 서드파티 솔루션을 사용하여 렌디션을 생성할 수 있습니다. |
@@ -60,13 +94,13 @@ ht-degree: 10%
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 이 작업에는 수동 개입이 필요합니다 | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 재처리합니다. |
 | MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)에서 [MIME 형식 검색을 참조하십시오. |
 | 조합 자산에 대한 하위 자산 생성 | 지원되지 않습니다. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. [하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)를 참조하세요. 일부 파일 형식의 PDF 미리 보기는 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md)부터 사용할 수 있습니다. |
-| 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service 에서는 에셋 편집이 지원되지 않습니다. [Experience Manager 6.5에서 작동 방식](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)을 참조하세요. |
+| 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. [Experience Manager에서 작동 방식 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)을 참조하세요. |
 | 홈 페이지 | 지원되지 않음 | [[!DNL Assets] 홈 페이지 환경 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) 보기 |
 | ZIP 아카이브에서 자산 추출 | 지원되지 않음 | [ZIP 추출( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip))을 참조하세요. |
 | Assets 등급 | 지원되지 않음 | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
-| 콘텐츠 처리 필터 | 지원되지 않음 | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 다운로드하는 대신 인라인으로 PDF 파일을 열도록 [!DNL Experience Manager]을(를) 구성할 수 있게 하는 것입니다. 게시 인스턴스에서는 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. Adobe 작성 인스턴스에서는 콘텐츠 처리 헤더를 수정하는 것이 권장되지 않습니다. [콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter)를 참조하세요. |
+| 콘텐츠 처리 필터 | 지원되지 않음 | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 다운로드하지 않고 인라인으로 PDF 파일을 열도록 [!DNL Experience Manager]을(를) 구성할 수 있도록 하는 것입니다. 게시 인스턴스에서는 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성 인스턴스에서는 Adobe이 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. [콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter)를 참조하세요. |
 | 제품 사진 촬영 템플릿 | 지원되지 않음 | [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information)을 참조하세요. |
-| 고급 번역 | 지원되지 않음 | [!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 스마트 변환이 지원되지 않습니다. |
+| 고급 번역 | 지원되지 않음 | [!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 스마트 변환이 지원되지 않습니다. |
 | WebDAV | 지원되지 않음 | 다른 방법은 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md)를 참조하세요. |
 | 클래식 UI | 지원되지 않음 | 터치 지원 사용자 인터페이스만 사용할 수 있습니다. |
 
@@ -88,7 +122,7 @@ ht-degree: 10%
 
 >[!MORELIKETHIS]
 >
->[!DNL Experience Manager]에 [!DNL Cloud Service](으)로 다음 리소스를 사용할 수 있습니다.
+>[!DNL Experience Manager]에 [!DNL Cloud Service]&#x200B;(으)로 다음 리소스를 사용할 수 있습니다.
 >
 >* [사용되지 않거나 제거된 기능 목록](/help/release-notes/deprecated-removed-features.md)
 >* [소개](/help/overview/introduction.md)

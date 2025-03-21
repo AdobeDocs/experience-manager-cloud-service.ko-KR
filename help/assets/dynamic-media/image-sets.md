@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 5%
 
 ---
 
 # 이미지 세트 {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 이미지 세트는 사용자에게 썸네일 이미지를 클릭하여 항목의 다양한 보기를 볼 수 있는 통합된 보기 환경을 제공합니다. 이미지 집합을 사용하면 항목의 대체 보기를 표시할 수 있으며 뷰어는 이미지를 면밀하게 검사하는 확대/축소 도구를 제공합니다.
 
@@ -30,7 +67,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI로 자산 관리](/help/assets/manage-digital-assets.md)를 참조하십시오.
 
-이미지 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+이미지 집합을 생성할 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
@@ -43,7 +80,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 빠르게 시작하고 실행하려면:
 
-1. 선택 사항입니다. [일괄처리 집합 사전 설정을 만들고](/help/assets/dynamic-media/batch-set-presets-dm.md) 이를 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
+1. 선택 사항. [일괄처리 집합 사전 설정을 만들고](/help/assets/dynamic-media/batch-set-presets-dm.md) 이를 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 이미지 집합 생성을 자동화할 수 있습니다.
 
@@ -78,7 +115,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
    이미지 세트를 선택하면 미리 볼 수 있습니다. 선택한 뷰어에서 이미지 세트를 검사하려면 축소판 아이콘을 선택합니다. 왼쪽 레일 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [Publish 이미지 집합](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [이미지 집합 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    이미지 집합을 게시하면 URL 및 포함 문자열이 활성화됩니다. 또한 만든 사용자 지정 뷰어 사전 설정을 [게시](/help/assets/dynamic-media/managing-viewer-presets.md)해야 합니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
@@ -92,11 +129,11 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 이미지 집합을 편집하려면 [이미지 집합 편집](#editing-image-sets)을 참조하세요. 또한 [이미지 집합 속성](/help/assets/manage-digital-assets.md#editing-properties)을 보고 편집할 수 있습니다.
 
-집합을 만드는 데 문제가 있는 경우 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)에서 이미지 및 집합을 참조하세요.
+집합을 만드는 데 문제가 있는 경우 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)에서 이미지 및 집합을 참조하십시오.
 
 ## 이미지 세트에 대한 자산 업로드 {#uploading-assets-in-image-sets}
 
-이미지 세트에 대한 이미지 자산을 업로드하여 시작합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있습니다. 따라서 이미지를 신중하게 선택하십시오. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 크기로 2000픽셀 이상인지 확인하십시오. Dynamic Media은 이미지를 각각 최대 2500만 픽셀까지 렌더링할 수 있습니다. 예를 들어 5000x5000메가픽셀 이미지나 다른 모든 크기의 조합을 최대 2500메가픽셀까지 사용할 수 있습니다.
+이미지 세트에 대한 이미지 자산을 업로드하여 시작합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있습니다. 따라서 이미지를 신중하게 선택하십시오. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 크기로 2000픽셀 이상인지 확인하십시오. Dynamic Media는 이미지를 각각 최대 2,500만 픽셀까지 렌더링할 수 있습니다. 예를 들어 5000x5000메가픽셀 이미지나 다른 모든 크기의 조합을 최대 2500메가픽셀까지 사용할 수 있습니다.
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
@@ -110,7 +147,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 다중 뷰 이미지 집합을 만들려면 다른 POV의 항목을 표시하거나 동일한 항목의 다른 측면을 표시하는 이미지가 필요합니다. 목표는 항목의 중요한 기능을 강조 표시하여 뷰어가 항목의 모양 또는 기능에 대한 전체 그림을 볼 수 있도록 하는 것입니다.
 
-사용자는 이미지 세트에서 이미지를 확대/축소할 수 있으므로 이미지의 크기가 가장 큰 것이 2000픽셀 이상인지 확인하십시오. Experience Manager Assets은 다양한 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지가 권장됩니다.
+사용자는 이미지 세트에서 이미지를 확대/축소할 수 있으므로 이미지의 크기가 가장 큰 것이 2000픽셀 이상인지 확인하십시오. Experience Manager Assets은 다양한 이미지 파일 형식을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
 >[!NOTE]
 >
@@ -136,7 +173,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 >
 >파일 이름에 &quot;,&quot;(쉼표)가 있는 자산은 이미지 세트가 지원되지 않습니다.
 
-이미지 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+이미지 집합을 생성할 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
@@ -188,7 +225,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
    >[!NOTE]
    >
-   >이미지 세트를 만들 때 이미지 세트 썸네일을 변경할 수 있습니다. 또는 이미지 세트의 에셋에 따라 Experience Manager이 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 이미지 집합 편집기 페이지의 제목 필드 위에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하십시오. 그런 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 이미지 세트에서 썸네일을 생성할 Experience Manager을 결정하려면 **[!UICONTROL 다음으로 전환]** **[!UICONTROL 자동 썸네일]**&#x200B;을 선택합니다.
+   >이미지 세트를 만들 때 이미지 세트 썸네일을 변경할 수 있습니다. 또는 Experience Manager에서 이미지 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 이미지 집합 편집기 페이지의 제목 필드 위에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하십시오. 그런 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager에서 이미지 집합에서 썸네일을 생성하도록 결정한 다음 **[!UICONTROL 다음으로 전환]** **[!UICONTROL 자동 썸네일]**&#x200B;을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 이미지 세트를 만든 폴더에 이미지 세트가 나타납니다.
 
@@ -210,9 +247,9 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;을 확장하고 **[!UICONTROL 설정]**&#x200B;을 선택할 수 있습니다.
+* 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;를 확장하고 **[!UICONTROL 설정]**&#x200B;을 선택할 수 있습니다.
 
-  UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 &quot;다음으로 시작&quot;을 사용하여 검색 쿼리가 수행됩니다. 이 Experience Manager 기준은 &quot;포함&quot;을 사용하는 기준이 되는 검색과 다릅니다. 필터를 **[!UICONTROL 집합]**(으)로 설정하는 것만이 자동화된 집합을 검색하는 유일한 방법입니다.
+  UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 &quot;다음으로 시작&quot;을 사용하여 검색 쿼리가 수행됩니다. 이 검색 기준은 &quot;포함&quot;을 사용하는 Experience Manager과 다릅니다. 필터를 **[!UICONTROL 집합]**(으)로 설정하는 것만이 자동화된 집합을 검색하는 유일한 방법입니다.
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -245,7 +282,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 클릭하십시오. 자산으로 이동하여 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
      >[!NOTE]
      >
-     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 사전 설정]**&#x200B;을 선택한 다음 뷰어 사전 설정을 선택합니다.
    * 썸네일을 추가하거나 변경하려면 에셋 오른쪽 옆에 있는 썸네일 아이콘을 선택합니다. 새 썸네일 또는 견본 자산으로 이동하여 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
@@ -263,4 +300,4 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 ## 이미지 집합 게시 {#publishing-image-sets}
 
-[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+[Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.

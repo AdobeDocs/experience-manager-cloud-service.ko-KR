@@ -1,24 +1,61 @@
 ---
 title: Dynamic Media Classic을 통해 CDN(Content Delivery Network) 캐시 무효화
-description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있는 방법에 대해 알아봅니다.
+description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에 의해 전달되는 자산을 빠르게 업데이트할 수 있는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 15%
+source-wordcount: '717'
+ht-degree: 17%
 
 ---
 
 # Dynamic Media Classic의 방식으로 CDN 캐시 무효화 {#invalidating-your-cdn-cached-content}
 
-Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에 의해 캐시됩니다. 그러나 자산을 업데이트할 때에는 해당 변경 사항이 즉시 적용되도록 해야 합니다. CDN 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 에셋을 빠르게 업데이트할 수 있습니다.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
+Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에 의해 캐시됩니다. 그러나 자산을 업데이트할 때에는 해당 변경 사항이 즉시 적용되도록 해야 합니다. CDN 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에 의해 전달되는 자산을 빠르게 업데이트할 수 있습니다.
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media와 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 >[!IMPORTANT]
 >
@@ -30,7 +67,7 @@ Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에
 
 1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
-   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 고객 지원 센터에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 고객 지원 센터에 문의하십시오.
 
 1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
 1. 응용 프로그램 일반 설정 페이지의 서버 그룹 머리글 아래에서 **[!UICONTROL CDN 무효화 템플릿]** 텍스트 상자를 찾습니다.
@@ -41,7 +78,7 @@ Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   템플릿에 `<ID>`이(가) 포함된 경우 Dynamic Media은 `https://<server>/is/image`을(를) 채웁니다. 여기서 `<server>`은(는) 일반 설정에 정의된 Publish 서버 이름이고 &lt;ID>은(는) 무효화하도록 선택된 자산입니다.
+   템플릿에 `<ID>`이(가) 포함된 경우 Dynamic Media는 `https://<server>/is/image`을(를) 채웁니다. 여기서 `<server>`은(는) 일반 설정에 정의된 게시 서버 이름이고 &lt;ID>은(는) 무효화하도록 선택된 자산입니다.
 
 1. 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
 1. Dynamic Media Classic(Scene7) UI에서 하나 이상의 자산을 선택한 다음 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]**(으)로 이동합니다. 생성한 템플릿과 선택한 에셋에서 생성된 하나 이상의 URL 목록이 표시됩니다. 응용 프로그램 일반 설정 아래의 &quot;게시된 서버 이름&quot; 아래에 나열된 서버 URL을 사용합니다.
@@ -58,6 +95,6 @@ Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에
 
    >[!NOTE]
    >
-   >자산을 선택한 다음 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]**(으)로 이동하면 Dynamic Media은 무효화 CDN 템플릿을 사용하여 CDN에서 무효화할 URL을 자동으로 만듭니다. If there is nothing in the **[!UICONTROL CDN Invalidate Template]** text box, then you get a blank URL list. Caching at the CDN is not asset-based; it is URL-based. Therefore, it is necessary to be aware of the complete URLs that are on your website. After you determine those URLs, you can add them to the **[!UICONTROL Invalidate CDN Template]** text box earlier in the steps. Then, you can select those assets, and invalidate the URLs in one step.
+   >자산을 선택한 다음 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]**(으)로 이동하면 Dynamic Media는 무효화 CDN 템플릿을 사용하여 CDN에서 무효화할 URL을 자동으로 만듭니다. If there is nothing in the **[!UICONTROL CDN Invalidate Template]** text box, then you get a blank URL list. Caching at the CDN is not asset-based; it is URL-based. Therefore, it is necessary to be aware of the complete URLs that are on your website. After you determine those URLs, you can add them to the **[!UICONTROL Invalidate CDN Template]** text box earlier in the steps. Then, you can select those assets, and invalidate the URLs in one step.
    >
    >다른 옵션은 **[!UICONTROL Invalidate CDN]** 목록에 전체 URL을 추가하는 것입니다. 이 방법을 따를 경우 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]** 옵션으로 이동하기 전에 Dynamic Media Classic에서 자산을 선택할 필요가 없습니다.

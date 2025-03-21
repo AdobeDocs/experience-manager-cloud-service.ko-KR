@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5001'
-ht-degree: 6%
+source-wordcount: '5029'
+ht-degree: 7%
 
 ---
 
 # 비디오 자산 관리 {#manage-video-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -57,19 +91,19 @@ ht-degree: 6%
 * 렌디션이 생성되더라도 MXF 파일에는 비디오 미리보기가 표시되지 않습니다.
 * WebM 파일은 웹 브라우저에서 기본적으로 재생할 수 있으므로 미리 보기 변환을 생성하지 않습니다.
 
-## Publish 비디오 자산 {#publish-video-assets}
+## 비디오 자산 게시 {#publish-video-assets}
 
 게시 후 웹 페이지에 비디오 자산을 URL로 포함하거나 자산을 직접 포함할 수 있습니다. 자세한 내용은 [게시 [!DNL Dynamic Media] 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
 
-## YouTube에 Publish 비디오 {#publishing-videos-to-youtube}
+## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
 Experience Manager Assets에서 관리하는 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
 
-비디오 에셋을 YouTube에 게시하려면 Experience Manager Assets의 비디오 에셋에 태그를 지정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 에셋의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오는 YouTube에 게시됩니다. Publish to YouTube은 연결된 태그가 사용되는 한 비디오의 일반 게시와 함께 발생합니다.
+비디오 에셋을 YouTube에 게시하려면 Experience Manager Assets의 비디오 에셋에 태그를 지정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 에셋의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오는 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 비디오의 일반 게시와 함께 발생합니다.
 
-YouTube은 자체 인코딩을 수행합니다. 따라서 Experience Manager에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩으로 만들어진 비디오 렌디션 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만, 재생에 뷰어 사전 설정이 필요한 경우 처리할 수 있습니다.
+YouTube은 자체 인코딩을 수행합니다. 따라서 Experience Manager에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩으로 만들어진 비디오 렌디션 대신 YouTube에 게시됩니다. Dynamic Media를 사용하여 비디오를 처리할 필요는 없지만, 재생에 뷰어 사전 설정이 필요한 경우 그렇게 될 수 있습니다.
 
-비디오 처리 프로필을 건너뛰고 YouTube에 바로 게시할 때 Experience Manager 에셋의 비디오 에셋에 볼 수 있는 썸네일이 표시되지 않는다는 의미입니다. 또한 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
+비디오 처리 프로필을 건너뛰고 YouTube에 바로 게시하는 경우 Experience Manager Asset의 비디오 자산에 볼 수 있는 썸네일이 표시되지 않는다는 의미입니다. 또한 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
 
 YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 안전하고 안전한 서버 간 확인을 위해 다음 작업을 완료해야 합니다.
 
@@ -78,7 +112,7 @@ YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 �
 1. [게시용 태그 추가](#adding-tags-for-publishing)
 1. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [YouTube 채널에 Publish 비디오](#publishing-videos-to-your-youtube-channel)
+1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
 1. [(선택 사항) YouTube에서 게시된 비디오를 확인합니다](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [웹 애플리케이션에 YouTube URL 연결](#linking-youtube-urls-to-your-web-application)
 
@@ -102,7 +136,7 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    이미 Google 계정이 있는 경우 다음 단계로 건너뛸 수 있습니다.
 
-1. [https://cloud.google.com/](https://cloud.google.com/)(으)로 이동합니다.
+1. [https://cloud.google.com/](https://cloud.google.com/)&#x200B;(으)로 이동합니다.
 1. **[!UICONTROL Google 클라우드]** 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 콘솔]**&#x200B;을 선택합니다.
 
    필요한 경우 Google 계정 자격 증명을 사용하여 **[!UICONTROL 로그인]**&#x200B;하여 **[!UICONTROL 콘솔]** 옵션을 봅니다.
@@ -186,7 +220,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 필요합니�
 
 **YouTube 채널을 만들려면:**
 
-1. [https://www.youtube.com](https://www.youtube.com/)(으)로 이동한 다음 Google 계정 자격 증명을 사용하여 로그인합니다.
+1. [https://www.youtube.com](https://www.youtube.com/)&#x200B;(으)로 이동한 다음 Google 계정 자격 증명을 사용하여 로그인합니다.
 1. YouTube 페이지의 오른쪽 상단 모서리에서 프로필 사진을 선택한 다음(단색 원 안에 글자로 표시될 수도 있음) **[!UICONTROL YouTube 설정]**(원형 톱니바퀴 아이콘)을 선택합니다.
 1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 모든 채널 보기 또는 채널 만들기]**&#x200B;를 선택합니다.
 1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 선택합니다.
@@ -200,13 +234,13 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 필요합니�
 
 ### 게시용 태그 추가 {#adding-tags-for-publishing}
 
-비디오에 YouTube을 게시하려면 Experience Manager이 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-cloud/authoring/sites-console/tags.md)를 참조하십시오.
+Experience Manager은 비디오에 YouTube을 게시하기 위해 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-cloud/authoring/sites-console/tags.md)를 참조하십시오.
 
 또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)(으)로 이동할 수 있습니다.
 
 >[!NOTE]
 >
->Cloud Service이 구성된 후에는 이 시점에서 YouTube Publish 복제 에이전트를 활성화하는 데 다른 구성이 필요하지 않습니다. 이는 Cloud Service 구성을 저장할 때 활성화되었기 때문입니다.
+>Cloud Service이 구성된 후에는 이 시점에서 YouTube 게시 복제 에이전트를 활성화하는 데 다른 구성이 필요하지 않습니다. Cloud Service 구성을 저장할 때 활성화되었기 때문입니다.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -220,7 +254,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### Experience Manager에서 YouTube 설정 {#setting-up-youtube-in-aem}
 
-Experience Manager 6.4부터 새로운 터치 Experience Manager 인터페이스 방식이 도입되어 YouTube에서 게시를 설정할 수 있습니다. 사용 중인 Experience Manager의 설치된 인스턴스를 기반으로 다음 중 하나를 수행합니다.
+Experience Manager 6.4부터 새로운 터치 사용자 인터페이스 방식이 도입되어 Experience Manager에서 YouTube 게시를 설정할 수 있습니다. 사용 중인 Experience Manager의 설치된 인스턴스를 기반으로 다음 중 하나를 수행합니다.
 
 * 6.4 이전 Experience Manager에서 YouTube을 구성하려면 [6.4 이전 Experience Manager에서 YouTube 설정](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)을 참조하십시오.
 * Experience Manager 6.4 이상에서 YouTube을 구성하려면 [Experience Manager 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
@@ -228,7 +262,7 @@ Experience Manager 6.4부터 새로운 터치 Experience Manager 인터페이스
 #### Experience Manager 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
 1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
-1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Service]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;으로 이동합니다.
+1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 전역]**&#x200B;을(를) 선택하십시오(선택하지 마십시오).
 
 1. 전역 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -262,8 +296,8 @@ YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌
 
    이제 게시할 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할 태그 설정]** - Cloud Service > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
-1. 사용 가능한 태그 목록을 Experience Manager에 표시하려면 드롭다운 목록 아이콘(거꾸로 삽입 표시)을 선택합니다.
+1. **[!UICONTROL 게시할 태그 설정]** - Cloud Services > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
+1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 캐럿)을 선택합니다.
 1. 태그를 추가하려면 태그를 하나 이상 선택합니다.
 
    추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
@@ -276,7 +310,7 @@ YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌
 
 1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
 
-1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다.
+1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드 서비스]**&#x200B;로 이동합니다.
 1. 서드파티 서비스 제목 아래의 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 선택합니다.
 1. 구성 만들기 대화 상자의 각 필드에 제목(필수) 및 이름(선택 사항)을 입력합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -308,8 +342,8 @@ YouTube 계정 설정 대화 상자를 열어 두십시오. 잠시 후 대화 �
 
    이제 게시할 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할 태그 설정]** - Cloud Service > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
-1. 사용 가능한 태그 목록을 Experience Manager에 표시하려면 드롭다운 목록 아이콘(거꾸로 삽입 표시)을 선택합니다.
+1. **[!UICONTROL 게시할 태그 설정]** - Cloud Services > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
+1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 캐럿)을 선택합니다.
 1. 태그를 추가하려면 태그를 하나 이상 선택합니다.
 
    추가한 태그를 삭제하려면 태그를 선택하고 **X**&#x200B;을(를) 선택합니다.
@@ -349,7 +383,7 @@ To create the metadata processing profile, you are first going to copy values fr
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. 메타데이터 스키마 편집기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 취소]**&#x200B;를 선택합니다.
-1. Experience Manager 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 선택합니다.
+1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 선택합니다.
 
 1. 메타데이터 프로필 페이지에서 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 `YouTube Video` 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -381,19 +415,19 @@ To create the metadata processing profile, you are first going to copy values fr
 
    See [Metadata Profiles](/help/assets/metadata-profiles.md) and [Video Profiles](/help/assets/dynamic-media/video-profiles.md).
 
-### YouTube 채널에 Publish 비디오 {#publishing-videos-to-your-youtube-channel}
+### YouTube 채널에 비디오 게시 {#publishing-videos-to-your-youtube-channel}
 
 이제 이전에 비디오 에셋에 추가한 태그를 연결합니다. 이 프로세스를 통해 Experience Manager은 YouTube 채널에 게시할 자산을 알 수 있습니다.
 
 >[!NOTE]
 >
->Publish은 즉시 YouTube에 자동으로 게시되지 않습니다. When Dynamic Media is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
+>즉시 게시는 YouTube에 자동으로 게시되지 않습니다. When Dynamic Media is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
 >
->**[!UICONTROL Publish 즉시]**&#x200B;은(는) 업로드된 에셋이 IPS로 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우에는 사실이지만 YouTube의 경우에는 사실이 아닙니다. YouTube에 게시하려면 Experience Manager 작성자를 통해 게시해야 합니다.
+>**[!UICONTROL 즉시 게시]**&#x200B;는 업로드된 자산이 IPS로 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우 사실이지만 YouTube의 경우 사실이 아닙니다. YouTube에 게시하려면 Experience Manager Author를 통해 게시해야 합니다.
 
 >[!NOTE]
 >
->YouTube에서 콘텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL Publish에서 YouTube으로]** 워크플로우를 사용하여 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
+>YouTube에서 콘텐츠를 게시하기 위해 Experience Manager에서는 **[!UICONTROL YouTube에 게시]** 워크플로우를 사용하여 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
 >
 >[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 >
@@ -401,7 +435,7 @@ To create the metadata processing profile, you are first going to copy values fr
 
 **YouTube 채널에 비디오를 게시하려면:**
 
-1. Experience Manager에서 YouTube 채널에 게시하려는 비디오 자산으로 이동합니다.
+1. Experience Manager에서 YouTube 채널에 게시하려는 비디오 에셋으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 1. [기본] 탭의 [메타데이터] 머리글 아래에서 [태그] 필드 오른쪽에 있는 **[!UICONTROL 선택 대화 상자 열기]**&#x200B;를 선택합니다.
@@ -411,7 +445,7 @@ To create the metadata processing profile, you are first going to copy values fr
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 1. 비디오 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 빠른 Publish]**&#x200B;를 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.
 
    [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)도 참조하세요.
 
@@ -451,11 +485,11 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
 
 >[!CAUTION]
 >
->YouTube 내에서 직접 비디오를 제거하는 경우 Experience Manager은 알지 못하며 비디오가 여전히 YouTube에 게시된 것처럼 계속 동작합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 자산의 게시를 취소합니다.
+>YouTube 내에서 직접 비디오를 제거하는 경우 Experience Manager은 인식하지 못하며 비디오가 여전히 YouTube에 게시되는 것처럼 계속 작동합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 자산의 게시를 취소합니다.
 
 >[!NOTE]
 >
->YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTROL YouTube에서 게시 취소]** 워크플로우를 사용하여 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
+>YouTube에서 콘텐츠를 제거하기 위해 Experience Manager에서는 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소]** 워크플로우를 사용합니다.
 >
 >[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
@@ -501,7 +535,7 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
    >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;에 대한 여러 워크플로 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예를 들면 다음과 같습니다.
    >
    >* Apache Sling 작업 큐 구성
-   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Adobe Granite 워크플로우 외부 프로세스 작업 핸들러
    >* Granite 워크플로우 시간 초과 큐
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
@@ -533,7 +567,7 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
    >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;에 대한 여러 워크플로 구성으로 인해 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예:
    >
    >* Apache Sling 작업 큐 구성
-   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Adobe Granite 워크플로우 외부 프로세스 작업 핸들러
    >* Granite 워크플로우 시간 초과 큐
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
@@ -596,7 +630,7 @@ For YouTube publishing jobs, do the following:
 
 ## 처리 프로필을 사용하여 코드 변환 {#transcode-video}
 
-[!DNL Experience Manager]을(를) [!DNL Cloud Service](으)로 사용하면 처리 프로필을 사용하여 MP4 비디오 파일의 기본 코드 변환 작업을 수행할 수 있습니다. 이 기능을 사용하면 MP4 비디오 파일을 업로드하는 것뿐만 아니라 미리 보고 크기를 조정할 수 있습니다.
+[!DNL Experience Manager]을(를) [!DNL Cloud Service]&#x200B;(으)로 사용하면 처리 프로필을 사용하여 MP4 비디오 파일의 기본 코드 변환 작업을 수행할 수 있습니다. 이 기능을 사용하면 MP4 비디오 파일을 업로드하는 것뿐만 아니라 미리 보고 크기를 조정할 수 있습니다.
 
 [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)에서 비디오 코드 변환에 대한 ![처리 프로필 만들기
 

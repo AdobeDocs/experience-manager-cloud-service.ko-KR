@@ -3,29 +3,63 @@ title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 2%
+source-wordcount: '1643'
+ht-degree: 10%
 
 ---
 
 # Content Hub 배포 {#deploy-content-hub}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Content Hub 배포](assets/deploy-content-hub.png)
 
 >[!AVAILABILITY]
 >
->이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub은 조직 및 비즈니스 파트너를 위한 온브랜드 콘텐츠에 대한 액세스를 민주화하기 위해 Experience Manager Assets as a Cloud Service의 일부로 사용할 수 있습니다.
+Content Hub은 조직 및 비즈니스 파트너를 위한 브랜드 내 콘텐츠에 대한 액세스를 대중화하기 위해 Experience Manager Assets as a Cloud Service의 일부로 사용할 수 있습니다.
 
-Experience Manager Assetsas a Cloud Service 에서 승인됨으로 표시된 자산은 Content Hub에서 자산 배포에 사용할 수 있습니다.
+Experience Manager Assets as a Cloud Service에서 승인됨으로 표시된 자산은 Content Hub의 자산 배포에 사용할 수 있습니다.
 
 이 문서에서는 요구 사항에 따른 다양한 권한을 포함하여 사용자에게 Content Hub 액세스를 제공하는 통합 워크플로우를 제공합니다.
 
@@ -33,24 +67,24 @@ Content Hub에 대한 권한의 변형은 다음과 같습니다.
 
 * [Content Hub 사용자](#onboard-content-hub-users): Content Hub 포털에서 브랜드 승인 자산에 액세스합니다.
 
-* [Content Hub 관리자](#onboard-content-hub-administrator): 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지 편집을 위한 Adobe Express 통합(Adobe Express 권한이 있는 경우) 외에도 Content Hub의 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스할 수 있습니다.
+* [Content Hub 관리자](#onboard-content-hub-administrator): Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지 편집을 위한 Adobe Express 통합 외에도 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스(Adobe Express 권한이 있는 경우).
 
 * [에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets): Content Hub 포털에서 브랜드 승인 에셋에 액세스할 수 있을 뿐만 아니라 [Content Hub에 에셋을 업로드](/help/assets/upload-brand-approved-assets.md)할 수 있습니다.
 
 * [자산을 새 변형으로 다시 혼합할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-remix-assets): [Adobe Express 통합](/help/assets/edit-images-content-hub.md)(Adobe Express 권한이 있는 경우), Content Hub 포털에서 브랜드 승인 자산에 액세스할 수도 있습니다.
 
-* [Experience Manager Assets 사용자](#experience-manager-assets-users): Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 해당 자산을 사용할 수 있도록 합니다.
+* [Experience Manager Assets 사용자](#experience-manager-assets-users): Experience Manager Assets as a Cloud Service에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 하는 기능.
 
 다음 표에는 사용 가능한 Content Hub 사용자 유형, 사용자가 가지고 있는 권한 및 이러한 권한을 얻는 데 필요한 제품 프로필이 요약되어 있습니다.
 
 | 사용자 역할 | Content Hub 사용자 | 에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자 | 자산을 리믹스할 수 있는 권한이 있는 Content Hub 사용자 | Content Hub 관리자 |
 |---------------|----------|----------|-------------------------|---|
 | **기능** |
-| Content Hub 포털에서 브랜드 승인 자산에 액세스 | ✓ | ✓ | ✓ | ✓ |
+| Content Hub 포털에서 브랜드 승인 자산 액세스 | ✓ | ✓ | ✓ | ✓ |
 | Content Hub 포털에서 에셋 업로드 | − | ✓ | ✓ | ✓ |
 | Adobe Express 통합을 사용하여 이미지 편집 | − | − | ✓ | − |
 | Content Hub 구성 UI 액세스 | − | − | − | ✓ |
-| **사용자는 이러한 제품 프로필(Admin Console)에 있어야 합니다** |
+| **사용자가 이러한 제품 프로필에 속해야 함(Admin Console)** |
 | AEM > 게재 인스턴스 > AEM Assets 제한된 사용자 | ✓ | ✓ | ✓ | ✓ |
 | AEM > 프로덕션 작성자 인스턴스 > AEM 사용자 | − | ✓ | ✓ | − |
 | AEM > 프로덕션 작성자 인스턴스 > AEM 관리자 | − | − | − | ✓ |
@@ -59,15 +93,15 @@ Content Hub에 대한 권한의 변형은 다음과 같습니다.
 
 >[!NOTE]
 >
-[Experience Manager Assets 사용자](#experience-manager-assets-users)는 Experience Manager Assets as a Cloud Service 환경에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 할 수 있습니다. 이러한 사용자는 Admin Console을 사용하여 AEM > 프로덕션 작성자 인스턴스 > AEM 사용자 제품 프로필에 추가해야 합니다.
+[Experience Manager Assets 사용자](#experience-manager-assets-users)는 Experience Manager Assets as a Cloud Service 환경에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 할 수 있습니다. 이러한 사용자는 AEM > 프로덕션 작성자 인스턴스 > Admin Console을 사용하는 AEM 사용자 제품 프로필에 추가해야 합니다.
 
 ## 1단계: Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화 {#enable-content-hub}
 
-Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 사용하여 Content Hub for Experience Manager Assetsas a Cloud Service 를 활성화해야 합니다. 다음 단계를 실행합니다.
+Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 사용하여 Experience Manager Assets as a Cloud Service용 Content Hub을 활성화해야 합니다. 다음 단계를 실행합니다.
 
 1. Cloud Manager에 로그온합니다. 로그인하는 동안 올바른 조직을 선택해야 합니다. Cloud Manager에 모든 프로그램이 나열됩니다.
 
-1. Experience Manager Assets as a Cloud Service 프로그램으로 이동하고 추가 옵션 아이콘(...)을 클릭한 다음 **[!UICONTROL 프로그램 편집]**&#x200B;을 선택합니다.
+1. Experience Manager Assets as a Cloud Service 프로그램으로 이동하고 기타 옵션 아이콘(...)을 클릭한 다음 **[!UICONTROL 프로그램 편집]**&#x200B;을 선택합니다.
 
    ![Cloud Manager에서 프로그램 편집](assets/edit-program-cloud-manager.png)
 
@@ -82,7 +116,7 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
-이제 Experience Manager Assetsas a Cloud Service 에 대해 Content Hub이 활성화됩니다. 프로덕션 환경에서 Content Hub을 활성화한 후에는 셀프서비스 방식으로 비활성화할 수 없습니다.
+이제 Content Hub이 Experience Manager Assets as a Cloud Service에 대해 활성화됩니다. 프로덕션 환경에서 Content Hub을 활성화한 후에는 셀프서비스 방식으로 비활성화할 수 없습니다.
 
 >[!NOTE]
 >
@@ -93,7 +127,7 @@ Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그�
 
 ### Admin Console의 Content Hub 인스턴스 및 제품 프로필{#content-hub-instance-product-profile}
 
-{Cloud Manager을 사용하여 Assetsas a Cloud Service 용 Content Hub ](#enable-content-hub)을(를) 실행한 후 AEM Assets as a Cloud Service Admin Console 내에서 접미사 `delivery`을(를) 사용하는 새 인스턴스가 생성되었습니다.[
+[Cloud Manager을 사용하여 Assets as a Cloud Service용 Content Hub을 활성화](#enable-content-hub) 후 Admin Console의 AEM Assets as a Cloud Service 내에서 접미사 `delivery`을(를) 사용하여 만든 새 인스턴스가 있습니다.
 
 ![Content Hub의 새 인스턴스](assets/new-instance-content-hub.png)
 
@@ -113,7 +147,7 @@ Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다
 
 ## 2단계: Content Hub 관리자 온보드 {#onboard-content-hub-administrator}
 
-Content Hub 관리자는 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지 편집을 위한 Adobe Express 통합(Adobe Express 권한이 있는 경우) 외에도 Content Hub에서 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스할 수 있습니다.
+Content Hub 관리자는 Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지를 편집하기 위한 Adobe Express 통합(Adobe Express 권한이 있는 경우)과 함께 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스할 수 있습니다.
 
 Content Hub 관리자를 온보딩하려면:
 
@@ -121,18 +155,18 @@ Content Hub 관리자를 온보딩하려면:
 
 1. 제품 프로필에 사용자 또는 사용자 그룹을 추가하려면 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하십시오.
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 1. Content Hub 제품 프로필에 사용자를 추가한 후 Admin Console의 제품 목록에서 AEM as a Cloud Service 제품 이름을 클릭하여 Experience Manager Assets 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-   Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
+   Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
 1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![관리자 제품 프로필](assets/aem-cs-admin-product-profile.png)
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ## 3단계: Content Hub 사용자 온보드 {#onboard-content-hub-users}
 
@@ -144,7 +178,7 @@ Content Hub 사용자를 온보딩하려면:
 
 1. 제품 프로필에 사용자 또는 사용자 그룹을 추가하려면 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하십시오.
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 이제 이러한 사용자는 Content Hub 포털에서 사용할 수 있는 자산에 액세스할 수 있습니다.
 
@@ -152,7 +186,7 @@ Content Hub 사용자를 온보딩하려면:
 >
 외부 ID 공급자와의 동기화와 같은 모든 고급 엔터프라이즈 기능을 사용할 수 있습니다.
 
-### Content Hub에 액세스하는 방법 {#access-content-hub}
+### Content Hub에 어떻게 액세스합니까? {#access-content-hub}
 
 Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
@@ -164,7 +198,7 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
   ![Content Hub 액세스](assets/access-content-hub.png)
 
 * `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
-  ![Content Hub 액세스 메서드 3](assets/access-content-hub-alternate.png)
+  ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
 
 ### 사용자에게 이메일 알림 비활성화 {#disable-email-notifications}
 
@@ -186,11 +220,11 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-   Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
+   Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
 1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ## 4단계: 에셋을 새 변형에 리믹스할 수 있는 권한이 있는 Content Hub 사용자 온보딩(선택 사항) {#onboard-content-hub-users-remix-assets}
 
@@ -203,11 +237,11 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-   Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
+   Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
 1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ## Experience Manager Assets 사용자 {#experience-manager-assets-users}
 
@@ -220,11 +254,11 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-   Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
+   Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
 1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
    >[!NOTE]
    >

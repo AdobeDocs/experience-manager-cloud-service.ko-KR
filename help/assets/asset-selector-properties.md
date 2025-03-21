@@ -3,19 +3,53 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1323'
 ht-degree: 42%
 
 ---
 
 # 자산 선택기 속성 {#asset-selector-properties}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 표에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
+자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 테이블에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |---|---|---|---|---|
@@ -54,7 +88,7 @@ ht-degree: 42%
 | *onMetadataFormChange* | 콜백 함수 | 아니요 | | `property`과(와) `value`(으)로 구성됩니다. `Property`은(는) 값이 업데이트되는 *metadataSchema*&#x200B;에서 전달된 필드의 *mapToProperty*&#x200B;과(와) 같습니다. 반면, `value`은(는) 새 값이 입력으로 제공됩니다. |
 | *targetUploadPath* | 문자열 |  | `"/content/dam"` | 에셋 저장소의 루트로 기본 설정되는 파일의 대상 업로드 경로입니다. |
 | *hideUploadButton* | 부울 | | 거짓 | 내부 업로드 단추를 숨길지 여부를 확인합니다. |
-| *onUploadStart* | 함수 | 아니요 |  | Dropbox, OneDrive 또는 로컬 간에 업로드 소스를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadInfo: UploadInfo) => void`입니다. |
+| *onUploadStart* | 함수 | 아니요 |  | Dropbox, OneDrive 또는 local 간에 업로드 소스를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadInfo: UploadInfo) => void`입니다. |
 | *importSettings* | 함수 | | | 서드파티 소스에서 에셋을 가져올 수 있습니다. `sourceTypes`은(는) 사용할 가져오기 소스의 배열을 사용합니다. 지원되는 소스는 Onedrive 및 Dropbox입니다. 구문은 `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`입니다. |
 | *onUploadComplete* | 함수 | 아니요 | | 성공, 실패 또는 복제 중 파일 업로드 상태를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadStats: UploadStats) => void`입니다. |
 | *onFilesChange* | 함수 | 아니요 | | 파일이 변경될 때 업로드의 동작을 표시하는 데 사용되는 콜백 함수입니다. 업로드를 위해 보류 중인 새 파일 배열과 업로드의 소스 유형을 전달합니다. 오류가 발생한 경우 Source 유형은 null일 수 있습니다. 구문은 `(newFiles: File[], uploadType: UploadType) => void`입니다. |

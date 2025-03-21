@@ -6,18 +6,52 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3887'
-ht-degree: 13%
+source-wordcount: '3915'
+ht-degree: 14%
 
 ---
 
 
 # 연결된 Assets을 사용하여 [!DNL Experience Manager Sites]에서 DAM 에셋 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -28,7 +62,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->AdobeDynamic Media 는 OpenAPI 기능과 함께 AEM Assets as a Cloud Service 및 AEM Sites을 연결하는 데 활용할 것을 권장합니다. [AEM Sites과 원격 AEM Assets 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)을 참조하십시오.
+>Adobe은 OpenAPI 기능과 함께 Dynamic Media를 활용하여 AEM Assets as a Cloud Service 및 AEM Sites을 연결할 것을 권장합니다. [AEM Sites과 원격 AEM Assets 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)을 참조하십시오.
 
 연결된 Assets 기능은 [!DNL Experience Manager Sites]과(와) [!DNL Experience Manager Assets]을(를) 통합하여 위의 사용 사례를 지원합니다. 사용자는 별도의 [!DNL Assets] 배포의 디지털 자산을 사용하는 웹 페이지를 [!DNL Sites]에서 만들 수 있습니다.
 
@@ -47,7 +81,7 @@ ht-degree: 13%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
-* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] [!DNL Assets]은(는) {2.5에서 작동합니다. [!DNL Experience Manager] 6.5에서 이 기능이 작동하는 방식에 대한 자세한 내용은 [연결된 Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)을 참조하십시오.[!DNL Experience Manager]
+* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] as a Cloud Service [!DNL Assets]은(는) [!DNL Experience Manager] 6.5에서 작동합니다. [!DNL Experience Manager] 6.5에서 이 기능이 작동하는 방식에 대한 자세한 내용은 [연결된 Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)을 참조하십시오.
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
@@ -80,7 +114,7 @@ ht-degree: 13%
 
 Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experience Manager [!DNL Sites] 배포에 연결할 수 있습니다. 그러나 원격 DAM 배포가 하나만 있는 [!DNL Sites] 배포에 연결할 수 있습니다.
 
-원격 DAM 배포에 연결할 최적의 사이트 인스턴스 수를 평가합니다. Adobe은 연결된 각 사이트 인스턴스가 원격 DAM의 데이터 트래픽에 기여하므로 사이트 인스턴스를 배포에 점진적으로 연결하고 원격 DAM에 성능에 영향을 주지 않는지 테스트할 것을 권장합니다.
+원격 DAM 배포에 연결할 최적의 사이트 인스턴스 수를 평가합니다. Adobe에서는 연결된 각 사이트 인스턴스가 원격 DAM의 데이터 트래픽에 기여하므로 사이트 인스턴스를 배포에 점진적으로 연결하고 원격 DAM에서 성능에 영향을 주지 않는지 테스트할 것을 권장합니다.
 
 다음 다이어그램은 지원되는 시나리오를 보여 줍니다.
 
@@ -148,7 +182,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Dynamic Media 에셋 사용 {#dynamic-media-assets}
+## Dynamic Media 자산 사용 {#dynamic-media-assets}
 
 
 연결된 Assets을 사용하면 Sites 페이지의 원격 DAM 배포에서 [!DNL Dynamic Media]에 의해 처리된 이미지 자산을 사용할 수 있으며 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용할 수 있습니다.
@@ -172,9 +206,9 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에서 [!DNL Dynamic Media]을(를) 구성합니다. 지침을 따라 [구성 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)합니다.
 
    * 모든 구성에서 동일한 회사 이름을 사용합니다.
-   * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 사용 안 함]**&#x200B;을 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
-   * 로컬 [!DNL Sites]의 **[!UICONTROL Publish Assets]** 옵션에서 **[!UICONTROL 선택적 Publish]**&#x200B;을(를) 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
-   * 원격 [!DNL Assets] 배포의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 사용]**&#x200B;을 선택합니다.
+   * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 비활성화됨]**&#x200B;을(를) 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
+   * 로컬 [!DNL Sites]의 **[!UICONTROL Assets 게시]** 옵션에서 **[!UICONTROL 선택적 게시]**&#x200B;를 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
+   * 원격 [!DNL Assets] 배포의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 활성화됨]**&#x200B;을(를) 선택합니다.
 
 1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지에서 작성자가 [!DNL Dynamic Media]개의 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)에 [!DNL Dynamic Media]개의 이미지가 표시됩니다.
 
@@ -253,7 +287,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 원격 DAM에서 자산에 대한 메타데이터 속성을 업데이트할 수도 있으며 변경 사항은 로컬 Sites 배포에서 사용할 수 있습니다.
 
-사이트 작성자는 Sites 배포에서 사용 가능한 업데이트를 미리 본 다음 변경 사항을 다시 게시하여 AEM 게시 인스턴스에서 사용할 수 있도록 할 수 있습니다.
+사이트 작성자는 Sites 배포에서 사용 가능한 업데이트를 미리 본 다음 변경 사항을 다시 게시하여 AEM 게시 인스턴스에서 사용할 수 있습니다.
 
 Experience Manager은 사이트 작성자가 사이트 페이지에서 자산을 사용하지 못하도록 원격 Assets 콘텐츠 파인더의 자산에 대한 `expired` 상태 시각적 표시기를 표시합니다. Sites 페이지에서 `expired` 상태의 자산을 사용하는 경우 자산이 Experience Manager 게시 인스턴스에 표시되지 않습니다.
 
@@ -325,7 +359,7 @@ Experience Manager은 사이트 작성자가 사이트 페이지에서 자산을
 * 에셋 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [Assets 통찰력](/help/assets/assets-insights.md) 기능을 구성하십시오.
 * 구성 요소 작성의 경로 브라우저 사용은 연결된 자산에서 지원되지 않습니다.
 
-* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
+* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)&#x200B;(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
@@ -349,7 +383,7 @@ Experience Manager은 사이트 작성자가 사이트 페이지에서 자산을
 ### 사용 {#usage}
 
 * 작성할 때 원격 자산을 검색하고 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
-* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기](으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
+* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기]&#x200B;(으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
 * `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우 [!DNL Sites]페이지에서 계속 사용됩니다.

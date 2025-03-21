@@ -1,21 +1,55 @@
 ---
-title: AEM에서 자산을 번역하는 방법
+title: AEM에서 에셋을 번역하는 방법
 description: 바이너리, 메타데이터 및 태그를 비롯한 AEM의 에셋을 여러 언어로 번역하기 위해 워크플로우를 자동화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2633'
-ht-degree: 17%
+source-wordcount: '2661'
+ht-degree: 18%
 
 ---
 
 # AEM에서 에셋 번역 {#multilingual-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -26,7 +60,7 @@ ht-degree: 17%
 
 AEM 에셋 번역을 자동화하려면 번역 서비스 공급업체를 Experience Manager과 통합하고 에셋을 여러 언어로 번역하기 위한 프로젝트를 제작해야 합니다. Experience Manager은 사람 번역 및 기계 번역 워크플로를 지원합니다.
 
-AEM의 사람 에셋 번역: 번역된 에셋이 반환되고 Experience Manager으로 가져옵니다. 번역 공급업체를 Experience Manager과 통합하면 에셋이 Experience Manager과 번역 공급업체 간에 자동으로 전송됩니다.
+AEM의 사람 에셋 번역: 번역된 에셋이 반환되고 Experience Manager으로 가져옵니다. 번역 공급업체를 Experience Manager과 통합하면 Experience Manager과 번역 공급업체 간 에셋이 자동으로 전송됩니다.
 
 AEM의 기계 자산 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 번역합니다.
 
@@ -217,7 +251,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 >[!NOTE]
 >
->PDF 파일 및 Adobe InDesign 파일과 같은 복잡한 에셋에 대한 번역 워크플로를 시작하는 경우, 해당 하위 에셋 또는 렌디션(있는 경우)이 번역을 위해 제출되지 않습니다.
+>PDF 파일 및 Adobe InDesign 파일과 같은 복잡한 자산에 대해 번역 워크플로우를 시작하는 경우, 해당 하위 자산 또는 렌디션(있는 경우)이 번역을 위해 제출되지 않습니다.
 
 ### 워크플로우 만들기 및 번역 {#create-and-translate-workflow}
 
@@ -270,7 +304,7 @@ Adobe Experience Manager을 사용하면 원하는 번역 공급업체에서 클
 If you want to apply a custom connector for the translation services you want to use in translation workflows. 사용자 지정 커넥터를 적용하려면 먼저 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 커넥터를 설치하십시오. Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
 1. [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 커넥터를 설치하십시오.
-1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구 > 배포 > Cloud Service]**(으)로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구 > 배포 > 클라우드 서비스]**&#x200B;로 이동합니다.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

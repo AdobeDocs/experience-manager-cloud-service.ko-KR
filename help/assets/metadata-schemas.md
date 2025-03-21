@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2680'
 ht-degree: 10%
 
 ---
 
 # 메타데이터 스키마 {#metadata-schemas}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -48,14 +82,14 @@ ht-degree: 10%
 |---|---|---|
 | [!UICONTROL 기본값] | | 에셋의 기본 메타데이터 스키마 양식. |
 | | 다음 자식 양식은 [!UICONTROL default] 양식의 속성을 상속합니다. | |
-| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
-| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png` 등 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF을 가진 자산의 스키마 양식입니다.</li></ul> |
-| | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | `application/pdf` 및 `application/zip`과(와) 같은 MIME 유형의 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식입니다. |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오에 대한 스키마 양식. |
+| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png` 등 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF의 자산에 대한 스키마 양식입니다.</li></ul> |
+| | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | `application/pdf` 및 `application/zip`과(와) 같은 MIME 유형의 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]: PDF 하위 유형의 자산에 대한 스키마 양식입니다. |
 | | <ul><li>[!UICONTROL 비디오]</li></ul> | `video/avi` 및 `video/mp4`과(와) 같은 MIME 유형의 비디오 자산에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] | | 콘텐츠 조각에 대한 스키마 양식. |
 | [!UICONTROL 양식] | | 이 스키마 양식은 [!DNL Adobe Experience Manager Forms]과(와) 관련이 있습니다. |
-| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
+| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 조각 및 에셋에 대한 스키마 양식입니다. |
 
 >[!NOTE]
 >
@@ -101,7 +135,7 @@ ht-degree: 10%
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그를 추가합니다. |
 | [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
-| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 자산이 저장될 때 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
 | [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
@@ -123,7 +157,7 @@ ht-degree: 10%
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset&#39;s metadata node as the property `dc:title`.
 
-* `./jcr:created`: 에셋의 생성 날짜 및 시간을 저장합니다. 보호 속성입니다. 이러한 속성을 구성하는 경우, Adobe은 해당 속성을 편집 비활성화로 표시할 것을 권장합니다. Otherwise, the error &quot;Asset(s) failed to modify&quot; occurs when you save the asset&#39;s properties.
+* `./jcr:created`: 에셋의 생성 날짜 및 시간을 저장합니다. 보호 속성입니다. 이러한 속성을 구성하는 경우 Adobe에서 해당 속성을 편집 비활성화로 표시하는 것이 좋습니다. Otherwise, the error &quot;Asset(s) failed to modify&quot; occurs when you save the asset&#39;s properties.
 
 구성 요소가 메타데이터 스키마 양식에 제대로 표시되도록 하려면 속성 경로에 공백을 포함해서는 안 됩니다.
 
@@ -139,7 +173,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->[!UICONTROL 숨김 필드] 구성 요소에 이러한 특성이 포함되어 있지 않습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성이 포함됩니다. 숨김 필드 구성 요소에 대한 값은 에셋이 저장될 때마다 POST 매개 변수로 전송됩니다. 에셋의 메타데이터로 저장되지 않습니다.
+>[!UICONTROL 숨김 필드] 구성 요소에 이러한 특성이 포함되어 있지 않습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성이 포함됩니다. 숨겨진 필드 구성 요소의 값은 자산이 저장될 때마다 POST 매개 변수로 전송됩니다. 에셋의 메타데이터로 저장되지 않습니다.
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. From the **[!UICONTROL Filters]** panel, expand the **[!UICONTROL Metadata Validation]** predicate and select the **[!UICONTROL Invalid]** option. The search results display assets missing mandatory metadata that you configured through the schema form.
 
@@ -243,7 +277,7 @@ Experience Manager을 사용하면 사용자 정의 스키마 양식만 삭제�
 
 >[!NOTE]
 >
->메타데이터 필드는 다른 필드의 값을 기반으로 필수로 정의할 수 있습니다. 카드 보기에서 Experience Manager은 이러한 필수 메타데이터 필드에 대한 메타데이터 누락에 대한 경고 메시지를 표시하지 않습니다.
+>메타데이터 필드는 다른 필드의 값을 기반으로 필수로 정의할 수 있습니다. Experience Manager은 카드 보기에서 이러한 필수 메타데이터 필드에 대한 메타데이터 누락에 대한 경고 메시지를 표시하지 않습니다.
 
 1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 정의 양식으로 저장합니다. 예를 들어 `my_default`(으)로 저장합니다.
@@ -252,7 +286,7 @@ Experience Manager을 사용하면 사용자 정의 스키마 양식만 삭제�
 1. 폴더로 이동하고 사용자 정의 양식에 추가한 필수 필드에 대해 메타데이터가 누락된 일부 에셋을 업로드합니다. 필수 필드의 누락된 메타데이터에 대한 메시지가 에셋의 카드 보기에 표시됩니다.
 1. (선택 사항) `https://[server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 사용하지 않도록 설정된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 사용하도록 설정합니다. Experience Manager이 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오.
 
-   이 구성은 자산 `jcr:content`에 속성 `hasValidMetadata`을(를) 추가합니다. 이 속성을 사용하면 Experience Manager이 검색 결과를 필터링할 수 있습니다.
+   이 구성은 자산 `jcr:content`에 속성 `hasValidMetadata`을(를) 추가합니다. Experience Manager은 이 속성을 사용하여 검색에서 결과를 필터링할 수 있습니다.
 
    >[!NOTE]
    >

@@ -1,24 +1,61 @@
 ---
 title: 이미지 품질 최적화 모범 사례
-description: Dynamic Media을 사용하여 이미지 에셋의 품질을 최적화하는 데 도움이 되는 모범 사례에 대해 알아봅니다.
+description: Dynamic Media를 사용하여 이미지 에셋의 품질을 최적화하는 데 도움이 되는 모범 사례에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 2%
 
 ---
 
 # 이미지 품질 최적화 모범 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
 많은 요소가 허용되는 결과를 렌더링하는 데 기여하므로 이미지 품질을 최적화하는 것은 시간이 오래 걸리는 프로세스일 수 있습니다. 결과는 개인들이 이미지 품질을 다르게 인식하기 때문에 부분적으로 주관적이다. 구조화된 실험이 핵심입니다.
 
-Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최적화하기 위한 100개 이상의 Dynamic Media 이미지 게재 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령과 모범 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 빠르게 얻을 수 있도록 도와줍니다.
+Adobe Experience Manager에는 이미지 조정 및 최적화와 결과 렌더링을 위한 100개 이상의 Dynamic Media 이미지 게재 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령과 모범 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 빠르게 얻을 수 있도록 도와줍니다.
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
@@ -27,7 +64,7 @@ Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최�
 **스마트 이미징:**
 
 * Dynamic Media에서 스마트 이미징을 활성화하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화할 수 있습니다.
-자세히 알아보시겠습니까? [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)(으)로 이동합니다.
+자세히 알아보시겠습니까? [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)&#x200B;(으)로 이동합니다.
 * 이러한 매개 변수를 동적으로 조정하여 이미지 전달 성능을 향상시킵니다.
 * 자동 평가 도구 [스냅숏](https://snapshot.scene7.com/)을(를) 사용하여 스마트 이미징을 평가할 수 있습니다.
 
@@ -38,7 +75,7 @@ Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최�
 
 **기본 동작:**
 
-* URL에 format 명령이 지정되지 않고 스마트 이미징이 활성화되지 않은 경우 Dynamic Media 이미지 게재는 기본적으로 JPEG 형식을 사용합니다.
+* URL에 format 명령이 지정되지 않고 스마트 이미징이 활성화되지 않은 경우, Dynamic Media 이미지 게재는 기본적으로 JPEG 형식을 사용합니다.
 
 이미지 형식에 대한 정보에 입각한 선택을 하고 스마트 이미징을 활성화하면 성능과 사용자 경험에 상당한 영향을 미칠 수 있습니다.
 
@@ -135,7 +172,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 * `qlt=`에서 크로마 플래그 사용
 
    * `qlt=` 매개 변수에는 값 `,1`을(를) 사용하여 RGB 색도 다운샘플링을 켜거나 값 `,0`을(를) 사용하여 끌 수 있는 두 번째 설정이 있습니다.
-   * 단순하게 유지하려면 RGB 색도 다운샘플링을 끄기(`,0`)로 시작하십시오. 이 설정을 사용하면 일반적으로 이미지 품질이 향상됩니다. 특히 가장자리가 선명하고 대비가 많은 합성 이미지의 경우 더욱 그렇습니다.
+   * 간단하게 하려면 RGB 색도 다운샘플링을 끄기(`,0`)로 시작하십시오. 이 설정을 사용하면 일반적으로 이미지 품질이 향상됩니다. 특히 가장자리가 선명하고 대비가 많은 합성 이미지의 경우 더욱 그렇습니다.
 
 JPG 압축에 대한 우수 사례로 `&qlt=85,0`을(를) 사용하십시오.
 
@@ -163,5 +200,5 @@ JPG 압축에 대한 우수 사례로 `&qlt=85,0`을(를) 사용하십시오.
 실험할 때 워크플로를 최적화하는 데 도움이 되는 일반적인 제안은 다음과 같습니다.
 
 * URL에서 직접 다양한 매개 변수를 실시간으로 테스트해 보십시오.
-* 가장 좋은 방법은 Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화하는 것입니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$`과(와) 같은 사용자 지정 사전 설정 이름이 있는 URL 명령 매크로입니다. URL 경로의 사용자 지정 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
-* Experience Manager은 또한 수집 시 이미지 선명하게 하기 적용과 같이, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하기 위해 [Adobe의 컨설팅 서비스](https://business.adobe.com/customers/consulting-services/main.html)를 통해 사용자 지정된 통찰력과 모범 사례를 확인할 수 있습니다.
+* 가장 좋은 방법은 Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화할 수 있다는 것입니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$`과(와) 같은 사용자 지정 사전 설정 이름이 있는 URL 명령 매크로입니다. URL 경로의 사용자 지정 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
+* Experience Manager은 또한 수집 시 이미지 선명하게 하기를 적용하는 등, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하기 위해 [Adobe의 컨설팅 서비스](https://business.adobe.com/customers/consulting-services/main.html)를 통해 사용자 지정된 통찰력과 모범 사례를 확인할 수 있습니다.

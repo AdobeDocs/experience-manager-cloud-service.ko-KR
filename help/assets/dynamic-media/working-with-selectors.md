@@ -1,18 +1,55 @@
 ---
 title: 선택기를 사용하여 작업
-description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너에 사용할 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
+description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너의 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 5%
+source-wordcount: '791'
+ht-degree: 7%
 
 ---
 
 # Dynamic Media에서 선택기를 사용하여 작업 {#working-with-selectors}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 대화형 이미지, 대화형 비디오 또는 회전 배너를 사용하여 작업할 때 에셋을 선택하고 핫스팟 및 이미지 맵에 대해 링크할 사이트 및 제품을 선택합니다. 이미지 세트, 스핀 세트 및 멀티미디어 세트로 작업할 때 에셋 선택기를 사용하여 에셋을 선택할 수도 있습니다.
 
@@ -84,7 +121,7 @@ ht-degree: 5%
 
 1. **[!UICONTROL 미리 보기]** 모드에서는 핫스팟 또는 이미지 맵을 선택하면 지정한 [!DNL Experience Manager] 사이트 페이지로 이동합니다.
 
-## Dynamic Media에서 에셋 선택 {#selecting-assets}
+## Dynamic Media에서 자산 선택 {#selecting-assets}
 
 이 선택기를 사용하여 회전 배너, 대화형 비디오, 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 사용할 이미지를 선택합니다. 대화형 비디오에서는 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL Assets 선택]**&#x200B;을 선택하면 자산 선택기를 사용할 수 있습니다. 슬라이드 세트에서 슬라이드를 만들 때 에셋 선택기를 사용할 수 있습니다. 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 자산 선택기는 이미지 세트, 혼합 미디어 세트 또는 스핀 세트를 각각 만들 때 사용할 수 있습니다.
 

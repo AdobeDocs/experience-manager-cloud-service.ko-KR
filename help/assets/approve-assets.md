@@ -3,17 +3,51 @@ title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1143'
 ht-degree: 11%
 
 ---
 
 # [!DNL Experience Manager]에서 자산 승인
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -27,7 +61,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 ## 시작하기에 앞서 {#pre-requisites}
 
-에셋의 **[!UICONTROL 상태 검토]** 속성을 편집하려면 AEM Assets as a Cloud Service 액세스 권한과 사용 권한이 있어야 합니다.
+에셋의 **[!UICONTROL 검토 상태]** 속성을 편집하려면 AEM Assets as a Cloud Service 액세스 권한과 사용 권한이 있어야 합니다.
 
 ## 구성
 
@@ -114,7 +148,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
    상태를 `Approved`(으)로 선택하고 [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 또는 [Content Hub](/help/assets/product-overview.md) 또는 둘 다 Experience Manager Assets에 대해 활성화된 경우 **[!UICONTROL 승인 대상]** 필드에서 사용할 수 있는 `Delivery` 및 `Content Hub` 옵션을 볼 수 있습니다.
 
-   * OpenAPI 기능을 사용하는 Dynamic Media과 Content Hub에서 자산을 모두 사용할 수 있도록 하려면 **[!UICONTROL 배달]**&#x200B;을 선택하세요. Content Hub을 활성화하지 않은 경우 이 옵션을 선택하면 OpenAPI 기능을 사용하는 Dynamic Media에서만 자산을 사용할 수 있습니다.
+   * OpenAPI 기능을 사용하는 Dynamic Media와 Content Hub 모두에서 자산을 사용할 수 있도록 하려면 **[!UICONTROL 배달]**&#x200B;을 선택하세요. Content Hub이 활성화되어 있지 않은 경우 이 옵션을 선택하면 OpenAPI 기능을 사용하는 Dynamic Media에서만 자산을 사용할 수 있습니다.
    * 자산을 Content Hub에서 사용할 수 있도록 하려면 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택하십시오.
 
    ![승인 상태](/help/assets/assets/approval-status-delivery.png)
@@ -129,7 +163,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 ## 승인된 에셋의 게재 URL 복사 {#copy-delivery-url-approved-assets}
 
-AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 Dynamic Media]을(를) 사용하도록 설정한 경우 저장소의 모든 승인된 에셋에 대한 배달 URL을 사용할 수 있습니다.
+AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 Dynamic Media]를 사용하도록 설정한 경우 저장소의 모든 승인된 에셋에 대한 배달 URL을 사용할 수 있습니다.
 
 저장소 내에서 승인된 에셋에 대한 게재 URL을 복사하려면 다음을 수행합니다.
 
@@ -137,7 +171,7 @@ AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 D
 
 1. 오른쪽 창에서 사용할 수 있는 Dynamic Media 아이콘을 클릭합니다.
 
-1. **[!UICONTROL Dynamic Media]** 패널에서 사용할 수 있는 **[!UICONTROL OpenAPI가 있는 Dynamic Media]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Dynamic Media]** 패널에서 사용할 수 있는 **[!UICONTROL Dynamic Media with OpenAPI]**&#x200B;을(를) 선택하십시오.
 
 1. 자산의 배달 URL을 복사하려면 **[!UICONTROL URL 복사]**를 클릭하세요.
    ![동적 렌디션](/help/assets/assets/dm-with-openapi-non-image-assets.png)

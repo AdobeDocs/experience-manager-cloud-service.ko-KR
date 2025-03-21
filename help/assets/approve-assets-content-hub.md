@@ -1,30 +1,64 @@
 ---
 title: Content Hub에 대한 자산 승인
-description: Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
+description: Assets as a Cloud Service에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 17%
+source-wordcount: '865'
+ht-degree: 20%
 
 ---
 
 # Content Hub에 대한 자산 승인 {#approve-assets-content-hub}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Content Hub에 대한 자산 승인](assets/content-hub-approve-assets.png)
 
 >[!AVAILABILITY]
 >
->이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. Content Hub 내에서는 승인된 최신 버전의 자산만 사용할 수 있으므로 모든 채널 및 애플리케이션에서 브랜드 일관성이 보장됩니다.
 
-AEM Assetsas a Cloud Service 를 사용하여 자산을 승인하여 자산 관리를 간소화할 수 있으므로 자산 처리를 위한 프로세스를 효율적으로 수행할 수 있습니다.
+AEM Assets as a Cloud Service을 사용하여 에셋을 승인하여 에셋 관리를 간소화하여 에셋 처리에 대한 통제되고 효율적인 프로세스를 보장할 수 있습니다.
 
 ## 시작하기에 앞서 {#pre-requisites}
 
@@ -36,11 +70,11 @@ AEM Assetsas a Cloud Service 를 사용하여 자산을 승인하여 자산 관�
 
 ## Content Hub에 대한 자산 승인{#approve-assets-for-content-hub}
 
-Assetsas a Cloud Service 에 `approved`(으)로 표시된 자산은 Content Hub에서 자동으로 사용할 수 있습니다.
+Assets as a Cloud Service에서 `approved`(으)로 표시된 자산은 Content Hub에서 자동으로 사용할 수 있습니다.
 
 >[!NOTE]
 >
-Assets as a Cloud Service Content Hub에 표시하려면 Content Hub과 동일한 조직을 사용해야 합니다.
+Assets as a Cloud Service 및 Content HubContent Hub 에서 자산을 표시하려면 동일한 조직을 사용해야 합니다.
 
 AEM as a Cloud Service 내의 Assets 보기를 사용하여 에셋 상태를 `approved`(으)로 설정하려면 다음을 수행하십시오.
 
@@ -55,7 +89,7 @@ AEM as a Cloud Service 내의 Assets 보기를 사용하여 에셋 상태를 `ap
 
 ## Assets 보기를 사용하여 Content Hub에 대한 자산 일괄 승인 {#bulk-approve-assets-content-hub}
 
-AEM Assetsas a Cloud Service 용 Assets 보기를 사용하여 자산을 일괄 승인합니다. 일괄 승인된 모든 에셋을 Content Hub에서 사용할 수 있습니다.
+AEM Assets as a Cloud Service용 Assets 보기를 사용하여 자산을 일괄 승인합니다. 일괄 승인된 모든 에셋을 Content Hub에서 사용할 수 있습니다.
 
 Assets 보기에서 폴더 내의 자산을 일괄 승인하려면 다음을 수행하십시오.
 
@@ -105,12 +139,12 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 
 ## Content Hub을 사용하여 업로드된 에셋 관리 {#manage-assets-uploaded-using-content-hub}
 
-[에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)는 로컬 파일 시스템에서 [Content Hub에 에셋을 추가](/help/assets/upload-brand-approved-assets.md)하거나 OneDrive 또는 Dropbox 데이터 원본에서 에셋을 가져올 수 있습니다. 모든 에셋은 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다.
+[에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)는 로컬 파일 시스템에서 [Content Hub에 에셋을 추가](/help/assets/upload-brand-approved-assets.md)하거나 OneDrive 또는 Dropbox 데이터 원본에서 에셋을 가져올 수 있습니다. 검색 기능을 개선하기 위해 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 모든 에셋이 Content Hub의 최상위 수준에 표시됩니다.
 
 Content Hub을 사용하여 업로드한 에셋의 표시 여부는 [자동 승인 토글](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)을 활성화했는지 여부에 따라 다릅니다.
 
 * **[!UICONTROL 자동 승인]** 토글이 활성화되어 있으면 Content Hub를 사용하여 업로드한 자산을 자동으로 사용할 수 있습니다.
 
-* **[!UICONTROL 자동 승인]** 토글을 비활성화하면 Content Hub를 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동하여 해당 자산의 상태를 `Approved`로 [일괄 편집](#bulk-approve-assets-content-hub)하여 Content Hub에 표시할 수 있습니다.
+* **[!UICONTROL 자동 승인]** 토글을 비활성화하면 Content Hub를 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동하여 해당 자산을 `Approved` 상태로 [일괄 편집](#bulk-approve-assets-content-hub)하여 Content Hub에 표시할 수 있습니다.
 
 ![Content Hub 승인 프로세스](/help/assets/assets/content-hub-approval.png)

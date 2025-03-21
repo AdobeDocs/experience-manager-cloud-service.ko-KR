@@ -3,25 +3,59 @@ title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 6%
+source-wordcount: '655'
+ht-degree: 11%
 
 ---
 
 # 배달 API {#delivery-apis}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>OpenAPI 기능이 포함된 Dynamic Media 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
->[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋](approve-assets.md)은 모두 [검색](search-assets-api.md)한 다음 배달 URL을 사용하여 통합 다운스트림 응용 프로그램으로 배달할 수 있습니다.
+Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 모든 에셋](approve-assets.md)은 [검색](search-assets-api.md)한 다음 배달 URL을 사용하여 통합 다운스트림 응용 프로그램으로 배달할 수 있습니다.
 
 버전 업데이트 및 메타데이터 수정을 포함하여 DAM에서 승인된 자산에 대한 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통한 에셋 전달에 대해 구성된 10분의 짧은 TTL(Time-to-Live) 값을 사용하면 10분 이내에 모든 작성 및 게시된 인터페이스에 업데이트가 표시됩니다.
 
@@ -33,9 +67,9 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 
 | 배달 API | 설명 |
 |---|---|
-| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 [스마트 자르기](/help/assets/dynamic-media/image-profiles.md)와 같은 다양한 이미지 수정자를 정의할 수 있습니다. 지원되는 형식 및 이미지 수정자에 대해서는 [API 세부 정보](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)를 참조하십시오.<br>Adobe은 모든 이미지 형식 유형에 이 API를 사용할 것을 권장합니다. |
+| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 [스마트 자르기](/help/assets/dynamic-media/image-profiles.md)와 같은 다양한 이미지 수정자를 정의할 수 있습니다. 지원되는 형식 및 이미지 수정자에 대해서는 [API 세부 정보](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)를 참조하십시오.<br>Adobe에서는 모든 이미지 형식 유형에 이 API를 사용하는 것이 좋습니다. |
 | [에셋의 웹에 최적화된 이진 표시](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | 응답에서 반환된 에셋의 웹에 최적화된 이진 표현에 기본값을 적용하는 편의 API입니다. 기본값에는 표준 JPEG/WEBP 형식, 품질 => 65, 너비 => 1024가 포함됩니다. |
-| [자산의 원본 업로드된 이진 파일](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | 에셋에 대해 원래 업로드된 바이너리를 반환합니다. Adobe은 문서 형식 유형 및 SVG 이미지에 이 API를 사용하는 것을 권장합니다. |
+| [자산의 원본 업로드된 이진 파일](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | 에셋에 대해 원래 업로드된 바이너리를 반환합니다. Adobe에서는 문서 형식 유형 및 SVG 이미지에 이 API를 사용하는 것이 좋습니다. |
 | [AEM Assets 작성 환경에서 사용할 수 있는 자산의 미리 생성된 렌디션](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | 요청에서 전송된 자산 ID 및 렌디션 이름을 기반으로 AEM Assets 작성 환경에서 사용할 수 있는 자산 렌디션의 비트스트림을 반환합니다. |
 | [자산 메타데이터](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | title, description, CreateDate, ModifyDate 등과 같이 에셋과 연결된 속성을 반환합니다. |
 | 비디오 자산에 대한 [플레이어 컨테이너](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 비디오 자산에 대한 플레이어 컨테이너를 반환합니다. 플레이어를 iframe HTML 요소에 임베드하고 비디오를 재생할 수 있습니다. |
@@ -52,7 +86,7 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 API 엔드포인트는 각 게재 API에 따라 다릅니다. 예를 들어 `Web-optimized binary representation of the asset in the requested output format` API의 API 끝점은 다음과 같습니다.
 `https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/{assetId}/as/{seoName}.{format}`
 
-게재 도메인은 Experience Manager 작성자 환경의 도메인과 구조가 유사합니다. 유일한 차이점은 용어 `author`을(를) `delivery`(으)로 바꾸는 것입니다.
+게재 도메인은 Experience Manager 작성 환경 도메인과 구조가 유사합니다. 유일한 차이점은 용어 `author`을(를) `delivery`(으)로 바꾸는 것입니다.
 
 `pXXXX`은(는) 프로그램 ID를 참조합니다.
 

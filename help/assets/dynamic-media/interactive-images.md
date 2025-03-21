@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4118'
 ht-degree: 1%
 
 ---
 
 # 대화형 이미지{#interactive-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 &quot;구매 가능한&quot; 핫스팟을 이미지에 끌어다 놓아 정적 이미지를 고객에게 풍부하고 매력적인 경험을 쉽게 만들 수 있습니다. 구매 가능한 핫스팟은 제품 또는 서비스에 대한 추가 정보를 판매 시점(&quot;장바구니에 추가&quot; 또는 &quot;구매&quot;) 기능과 결합합니다. 고객은 제품 또는 서비스에 직접 연결되거나 장바구니에 추가되거나 웹 페이지에 연결되는 이러한 핫스팟을 선택할 수 있습니다. 이와 같은 직접적인 경험은 웹 사이트에서의 고객 참여와 전환을 증가시킵니다.
 
@@ -24,7 +61,7 @@ ht-degree: 1%
 
 ## 대화형 이미지 배너가 생성되는 방식 보기 {#watch-how-interactive-image-banners-are-created}
 
-[대화형 이미지 배너를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10분 33초)에 대해 연습합니다. 또한 대화형 이미지 배너를 미리 보고, 편집하고, 전달하는 방법도 알아봅니다.
+[대화형 이미지 배너를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)&#x200B;(10분 33초)에 대해 연습합니다. 또한 대화형 이미지 배너를 미리 보고, 편집하고, 전달하는 방법도 알아봅니다.
 
 ## 빠른 시작: 대화형 이미지 {#quick-start-interactive-images}
 
@@ -38,7 +75,7 @@ ht-degree: 1%
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수를 식별합니다**. Adobe Experience Manager Assets 및 Dynamic Media 독립 실행형 을 사용하는 경우 기존 Quickview 구현에 사용된 동적 변수를 식별합니다. 이렇게 하면 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).
+1. **(선택 사항) 핫스팟 변수를 식별합니다**. Adobe Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에 사용된 동적 변수를 식별합니다. 이렇게 하면 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).
 그러나 Experience Manager Sites, Experience Manager eCommerce 또는 둘 다를 사용하는 경우 이 단계는 필요하지 않습니다.
 
 1. **(선택 사항) 대화형 이미지 뷰어 사전 설정을 만듭니다**. 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner`을(를) 대신 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -52,7 +89,7 @@ ht-degree: 1%
 [대화형 이미지 미리 보기](#optional-previewing-interactive-images) - 선택 사항을 참조하십시오. 원하는 경우 구매 가능한 배너의 표현을 보고 상호 작용을 테스트할 수 있습니다.
 대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **Experience Manager의 웹 사이트 또는 웹 사이트에 대화형 이미지를 추가하십시오**. Sites, eCommerce 또는 두 가지 모두를 사용하는 경우 Experience Manager의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+1. **Experience Manager의 웹 사이트 또는 웹 사이트에 대화형 이미지를 추가하십시오**. Sites, eCommerce 또는 두 가지 모두를 사용하는 경우 Experience Manager의 웹 페이지에 대화형 이미지를 직접 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 Experience ManagerAssets 및 Dynamic Media 독립 실행형을 사용하는 경우 웹 사이트에서 포함 코드를 복사합니다. 그런 다음 기존 빠른 보기와 통합합니다. [대화형 이미지를 웹 사이트와 통합](#integrating-an-interactive-image-with-your-website)을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기와 통합합니다. [대화형 이미지를 기존 빠른 보기와 통합](#integrating-an-interactive-image-with-an-existing-quickview)을 참조하십시오.
 
@@ -196,7 +233,7 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
    새 뷰어 사전 설정을 게시해야 합니다.
 
-   [Publish 뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)을 참조하세요.
+   [뷰어 사전 설정 게시](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 
    이제 이미지 배너를 업로드할 준비가 되었습니다.
 
@@ -294,9 +331,9 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
         >뷰어를 경험 조각에 포함할 때에는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않습니다. 대신 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 1. 작업을 저장하고 찾아보기 페이지로 돌아가려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.
-1. 대화형 이미지를 Publish합니다. 게시는 클라우드를 통해 배너를 전달하며 서드파티 웹 사이트와 통합할 수 있는 포함 코드도 생성합니다.
+1. 대화형 이미지를 게시합니다. 게시는 클라우드를 통해 배너를 전달하며 서드파티 웹 사이트와 통합할 수 있는 포함 코드도 생성합니다.
 
-   [Publish 자산](/help/assets/manage-digital-assets.md#publish-assets)을 참조하세요.
+   [자산 게시](/help/assets/manage-digital-assets.md#publish-assets)를 참조하십시오.
 
    핫스팟을 추가하고 대화형 이미지를 게시하면 이제 기존 웹 사이트에 추가할 준비가 된 것입니다.
 
@@ -322,9 +359,9 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 1. 뷰어 목록에서 **[!UICONTROL Shoppable_Banner]** 또는 만든 대화형 이미지 뷰어 사전 설정 이름을 선택합니다.
 1. 핫스팟의 관련 작업을 테스트하려면 이미지에서 핫스팟을 선택합니다.
 
-## Publish 대화형 이미지 자산 {#publishing-interactive-image-assets}
+## 대화형 이미지 자산 게시 {#publishing-interactive-image-assets}
 
-대화형 이미지 에셋을 게시하는 방법에 대한 자세한 내용은 [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하십시오.
+대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 대화형 이미지를 웹 사이트에 통합 {#integrating-an-interactive-image-with-your-website}
 
@@ -378,7 +415,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 1. 백엔드 로직은 해당 Quickview 데이터 또는 컨텐츠를 프론트엔드 코드로 다시 반환합니다.
 1. 프론트엔드 코드는 Quickview 데이터 또는 콘텐츠를 로드합니다.
 1. 선택적으로, 프론트엔드 코드는 로드된 Quickview 데이터를 HTML 표시로 변환합니다.
-1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자의 화면에서 HTML 콘텐츠를 렌더링합니다.
+1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자를 위해 화면에 HTML 콘텐츠를 렌더링합니다.
 
 이러한 호출이 임의의 단계에서 웹 페이지 논리에 의해 호출되는 독립적인 공개 API 호출을 반드시 나타내지는 않습니다. 대신 모든 다음 단계가 이전 단계의 마지막 단계(콜백)에서 숨겨지는 체인 호출입니다.
 
@@ -497,6 +534,6 @@ loadQuickView(quickViewUrl);
 
 완전히 통합된 대화형 이미지가 포함된 [최종 데모 웹 사이트](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+## 빠른 보기를 사용하여 사용자 정의 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
 [빠른 보기를 사용하여 사용자 지정 팝업 Windows® 만들기](/help/assets/dynamic-media/custom-pop-ups.md)를 참조하십시오.

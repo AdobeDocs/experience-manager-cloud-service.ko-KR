@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 12%
+source-wordcount: '1553'
+ht-degree: 13%
 
 ---
 
 # 혼합 미디어 세트{#mixed-media-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 혼합 미디어 세트를 사용하면 이미지, 이미지 세트, 스핀 세트 및 비디오를 하나의 프레젠테이션에 혼합할 수 있습니다.
 
@@ -52,7 +89,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
    혼합 미디어 세트를 선택하면 미리 볼 수 있습니다. 선택한 뷰어에서 혼합 미디어 세트를 검사하려면 썸네일 아이콘을 선택합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [Publish 혼합 미디어 집합](#publishing-mixed-media-sets).
+1. [혼합 미디어 집합 게시](#publishing-mixed-media-sets).
 
    혼합 미디어 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정을 게시](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)해야 합니다.
 
@@ -96,7 +133,7 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
    >[!NOTE]
    >
-   >혼합 미디어 세트를 만들 때 혼합 미디어 세트 썸네일을 변경하거나 Experience Manager이 혼합 미디어 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager에서 혼합 미디어 집합에서 썸네일을 생성하도록 결정하려면 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
+   >혼합 미디어 세트를 만들 때 혼합 미디어 세트 썸네일을 변경하거나 Experience Manager에서 혼합 미디어 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager에서 혼합 미디어 집합에서 썸네일을 생성하도록 결정하려면 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
 
 1. 혼합 미디어 집합에 포함할 자산을 선택하려면 자산 선택기를 선택합니다. 선택한 다음 **[!UICONTROL 선택]**&#x200B;을(를) 선택합니다.
 
@@ -158,7 +195,7 @@ Assets의 모든 에셋과 마찬가지로 [ 사용자 인터페이스에서 ](/
 
    >[!NOTE]
    >
-   >* 혼합 미디어 세트의 자산을 편집하려면 - 혼합 미디어 세트로 이동합니다. Experience Manager 세트 미리보기 페이지에서 세트를 열 수 있도록 세트를 선택(선택하지 않음)합니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 **[!UICONTROL 구성원 설정]**&#x200B;을 선택합니다. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 **[!UICONTROL 편집]**(연필 아이콘)을 선택하여 편집 페이지를 엽니다.
+   >* 혼합 미디어 세트의 자산을 편집하려면 - 혼합 미디어 세트로 이동합니다. Experience Manager 세트 미리 보기 페이지에서 세트를 열 수 있도록 세트를 선택(선택하지 않음)합니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 **[!UICONTROL 구성원 설정]**&#x200B;을 선택합니다. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 **[!UICONTROL 편집]**(연필 아이콘)을 선택하여 편집 페이지를 엽니다.
    >
    >* 전체 혼합 미디어 세트를 삭제하려면 보기 모드(예: 카드 보기 또는 열 보기)에서 혼합 미디어 세트로 이동합니다. 집합에 마우스를 가져다 대고 **[!UICONTROL 선택]**&#x200B;을 선택합니다(확인 표시 아이콘). 키보드에서 **[!UICONTROL 백스페이스]**&#x200B;를 누르거나 **[!UICONTROL 자세히]**(세 점 행)을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 선택합니다.
 
@@ -166,9 +203,9 @@ Assets의 모든 에셋과 마찬가지로 [ 사용자 인터페이스에서 ](/
 
 혼합 미디어 집합을 미리 보는 방법에 대한 자세한 내용은 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하십시오.
 
-## Publish 혼합 미디어 집합 {#publishing-mixed-media-sets}
+## 혼합 미디어 집합 게시 {#publishing-mixed-media-sets}
 
-혼합 미디어 집합을 게시하는 방법에 대한 자세한 내용은 [Publish 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
+혼합 미디어 집합을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 >[!NOTE]
 >

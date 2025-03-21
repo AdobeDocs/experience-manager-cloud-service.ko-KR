@@ -5,17 +5,48 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 2%
+source-wordcount: '2570'
+ht-degree: 3%
 
 ---
 
 # AEM Assets 검색 우수 사례
 
-| [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 경우에 따라 적절한 자산을 찾는 것은 어렵고 시간이 많이 걸릴 수 있습니다. 따라서 [!DNL Adobe Experience Manager Assets]의 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다.
 
@@ -57,7 +88,7 @@ ht-degree: 2%
 
 **시나리오 2: `automobile` 폴더 내에서 `classic car` 키워드를 사용하여 모든 파일을 검색합니다.**
 
-파일 및 폴더 필터는 검색 범위를 좁히는 데 도움이 됩니다. 요구 사항에 따라 드롭다운 목록에서 사용할 수 있는 파일, 폴더 또는 파일 및 폴더 옵션을 사용합니다. 파일, 폴더 또는 파일 및 폴더 중에서 선택하는 옵션은 **[!UICONTROL 관리자 보기]**&#x200B;에서만 액세스할 수 있습니다. **[!UICONTROL Assets 보기]**&#x200B;에서 [!UICONTROL 경로](으)로 이동하여 검색을 수행할 폴더를 찾습니다.
+파일 및 폴더 필터는 검색 범위를 좁히는 데 도움이 됩니다. 요구 사항에 따라 드롭다운 목록에서 사용할 수 있는 파일, 폴더 또는 파일 및 폴더 옵션을 사용합니다. 파일, 폴더 또는 파일 및 폴더 중에서 선택하는 옵션은 **[!UICONTROL 관리자 보기]**&#x200B;에서만 액세스할 수 있습니다. **[!UICONTROL Assets 보기]**&#x200B;에서 [!UICONTROL 경로]&#x200B;(으)로 이동하여 검색을 수행할 폴더를 찾습니다.
 
 * 저장소 내의 특정 경로에 있는 파일을 특별히 검색해야 하는 경우 **[!UICONTROL 파일]** 옵션을 사용하십시오. 정의된 경로 내에서 폴더를 검색할 필요는 없습니다.
 * 특정 경로에 있는 폴더로 검색을 제한하려면 **[!UICONTROL 폴더]** 옵션을 사용하십시오.
@@ -160,14 +191,14 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**시나리오 4: `classic car` 키워드가 포함된 게시되지 않은 PDF 파일 형식 문서를 검색합니다.**
+**시나리오 4: `classic car` 키워드를 사용하여 게시되지 않은 PDF 파일 형식 문서를 검색합니다.**
 
 **[!UICONTROL 관리자 보기]**&#x200B;에서 다음 단계를 실행하십시오.
 
 1. 검색 창에 `classic car`을(를) 입력합니다.
 1. 필터로 이동합니다. [!UICONTROL 파일 형식]에서 [!UICONTROL 문서]를 확장하고 [!UICONTROL 워드 프로세싱]을 추가로 확장합니다.
-1. [!UICONTROL PDF]을(를) 선택하십시오.
-1. [!UICONTROL 상태] > [!UICONTROL Publish] > [!UICONTROL 게시 취소](으)로 이동합니다.
+1. [!UICONTROL PDF]을(를) 선택합니다.
+1. [!UICONTROL 상태] > [!UICONTROL 게시] > [!UICONTROL 게시 취소]&#x200B;(으)로 이동합니다.
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -175,7 +206,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 1. 검색 창에 `classic car`을(를) 입력합니다.
 1. 필터로 이동합니다. [!UICONTROL MIME 유형]에서 [!UICONTROL PDF]을(를) 선택합니다.
-1. [!UICONTROL 에셋 상태](으)로 이동하고 [!UICONTROL 모두]를 선택하여 게시된 에셋과 게시되지 않은 에셋을 모두 포함합니다.
+1. [!UICONTROL 에셋 상태]&#x200B;(으)로 이동하고 [!UICONTROL 모두]를 선택하여 게시된 에셋과 게시되지 않은 에셋을 모두 포함합니다.
 
 **시나리오 5: PNG를 제외한 모든 이미지 검색**
 
@@ -212,7 +243,7 @@ Adobe Experience Manager을 사용하면 검색에 여러 기준을 추가할 �
 
 시나리오 6은 와일드카드 사용을 지원하지 않으므로 **[!UICONTROL Assets 보기]**&#x200B;에서 실행할 수 없습니다.
 
-**시나리오 7: Experience Manager 리포지토리에서 문서 내용에 `car`을(를) 포함하고 `classic`은(는) 제외해야 하는 모든 문서를 검색합니다. 자산의 메타데이터에도 같은 조건이 적용됩니다.**
+**시나리오 7: Experience Manager 저장소에서 문서 내용에 `car`이(가) 포함되지만 `classic`은(는) 제외되어야 하는 모든 문서를 검색합니다. 자산의 메타데이터에도 같은 조건이 적용됩니다.**
 
 시나리오 7에 대한 검색을 수행하려면 다음을 수행합니다.
 
@@ -293,7 +324,7 @@ to be added later
 2. [검색 승격] 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 [!UICONTROL 추가]를 클릭합니다. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
 3. [!UICONTROL 저장 및 닫기]를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
-## Experience Manager에서 검색 수행 중 주목할 만한 사항 {#notable-things}
+## Experience Manager에서 검색 수행 중 주목해야 할 사항 {#notable-things}
 
 * 옴니 검색 알고리즘으로 검색할 수 있는 에셋을 준비하려면 에셋의 메타데이터 정보를 제공합니다. 에셋의 메타데이터 정보가 업데이트되었는지 확인합니다.
 * 큰 따옴표(&quot; &quot;)를 사용하여 정확하게 검색되도록 합니다.

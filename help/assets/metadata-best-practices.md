@@ -4,10 +4,10 @@ description: 디지털 자산을 효과적으로 관리하기 위한 메타데�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 1%
+source-wordcount: '1427'
+ht-degree: 2%
 
 ---
 
@@ -18,8 +18,39 @@ experience manager metadata-->
 
 # 메타데이터 관리 및 모범 사례 {#metadata-best-practices}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 비즈니스를 돋보이게 하고 더 많은 고객을 참여시키려면 이미지, 비디오 및 기타 디지털 에셋과 같은 고품질 비주얼을 활용하는 것이 중요합니다. 이를 위해서는 모든 디지털 에셋에 메타데이터를 추가하고 쉽게 검색할 수 있도록 하는 프로세스가 필요합니다. 메타데이터는 에셋의 이름, 유형, 저장소 내의 위치, 수정된 날짜 및 관련 태그를 포함하여 디지털 에셋에 대한 필수 세부 정보를 제공하는 데이터입니다. 메타데이터는 에셋 관리를 간소화하고 검색 및 접근성을 개선하며 효과적인 버전 제어를 보장합니다.
 
@@ -35,9 +66,9 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 여기에는 다음과 같은 세부 사항이 포함됩니다.
 
 * 파일 크기
-* 형식
+* 포맷
 * 해결 방법
-* 치수
+* 차원
 * 색상 모드
 
 ### 정보 메타데이터
@@ -69,7 +100,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 메타데이터 관리는 장기적인 가치를 평가할 수 있는 기반을 제공하는 메타데이터 전략을 정의하는 것부터 시작합니다.
 
-메타데이터 전략을 계획할 때 요구 사항에 따라 사용자 지정 메타데이터 스키마를 만드는 것이 중요합니다. 잘 설계된 스키마는 Experience Manager 내 에셋을 분류하고 구성하는 구조화된 프레임워크를 제공합니다.
+메타데이터 전략을 계획할 때 요구 사항에 따라 사용자 지정 메타데이터 스키마를 만드는 것이 중요합니다. 잘 설계된 스키마는 Experience Manager 내의 자산을 분류하고 구성하는 구조화된 프레임워크를 제공합니다.
 
 #### 비디오: 메타데이터 스키마에 사용자 정의 필드 추가
 
@@ -117,7 +148,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 예를 들어 체계적인 시퀀스를 유지하기 위해 테마가 있는 이미지에 태그를 지정할 때 *product_launch* 또는 *event_promotion*&#x200B;과 같은 용어를 일관되게 사용합니다.
 
 * **정확성 및 완전성 유지:** 메타데이터의 일관성을 유지하려면 다양한 소스 간의 정확성, 완전성 및 정렬이 중요합니다.
-예를 들어 PDF 문서에 메타데이터를 추가할 때 작성자 이름 및 키워드와 같은 세부 사항이 정확하고 완전한지 확인합니다.
+예를 들어, PDF 문서에 메타데이터를 추가할 때 작성자 이름 및 키워드와 같은 세부 사항이 정확하고 완전한지 확인합니다.
 
 #### 비디오: 에셋에 벌크 메타데이터 추가
 
@@ -139,7 +170,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
    1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
 추가한 키워드를 사용하여 에셋을 검색합니다. 에셋이 상위 검색 결과에 나타납니다.
 
-  [Experience Manager에서 검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 알아보세요.
+  Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 알아보세요.
 
 * **사용자 지정 메타데이터 필드:** 에셋에 대한 추가 정보를 캡처하도록 메타데이터 필드를 사용자 지정합니다. 예를 들어 프로젝트 세부 사항, 저작권 정보 또는 검색 기능을 향상시키는 기타 관련 데이터에 대한 특정 필드를 추가합니다. Experience Manager Assets에서 [사용자 지정 메타데이터를 편집하거나 추가하는 방법](meta-edit.md)을 알아보세요.
 

@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1382'
+ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Experience Manager]에서 에셋 다운로드 {#download-assets-from-aem}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -58,7 +92,7 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
 * 다운로드 크기가 100MB를 초과하는 경우
 * 다운로드가 준비되는 데 30초 이상 걸리는 경우
 
-비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 계속 탐색하고 Experience Manager에서 더 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알리기 위해 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
+비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알림을 보낼 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
 
 이메일 서비스가 구성되면 관리자 및 사용자는 Experience Manager 인터페이스에서 이메일 알림을 활성화할 수 있습니다.
 
@@ -113,7 +147,7 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
 
 [!DNL Experience Manager]의 기본 서블릿을 사용하면 인증된 사용자가 임의로 큰 동시 다운로드 요청을 발행하여 자산의 ZIP 파일을 만들 수 있습니다. 다운로드 준비는 성능에 영향을 주거나 서버와 네트워크에 과부하를 줄 수도 있습니다. 이 기능으로 인해 발생할 수 있는 DoS 유사 위험을 완화하기 위해 게시 인스턴스에 대해 `AssetDownloadServlet` OSGi 구성 요소를 사용할 수 없습니다. 작성자 인스턴스에서 다운로드 기능이 필요하지 않은 경우 작성자에서 서블릿을 비활성화합니다.
 
-DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화하십시오. Adobe은 일상적인 다운로드 요구 사항에 영향을 주지 않고 허용되는 다운로드 크기를 가능한 한 낮게 설정할 것을 권장합니다. 값이 높으면 성능에 영향을 줄 수 있습니다.
+DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화하십시오. Adobe에서는 일상적인 다운로드 요구 사항에 영향을 주지 않고 허용되는 다운로드 크기를 가능한 한 낮게 설정하는 것이 좋습니다. 값이 높으면 성능에 영향을 줄 수 있습니다.
 
 1. 게시 실행 모드를 대상으로 하는 명명 규칙을 사용하여 폴더 만들기(즉, `config.publish`):
 
@@ -167,4 +201,4 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 >
 >* [DRM 보호 에셋 다운로드](drm.md)
 >* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [지원되는 Adobe Creative Cloud 앱 내에서 Assets 링크 Adobe을 사용하여 에셋을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [지원되는 Adobe Creative Cloud 앱 내에서 Adobe Assets 링크를 사용하여 에셋을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)

@@ -1,28 +1,62 @@
 ---
 title: Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성
-description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간의 에셋 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
+description: Adobe Workfront 및 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 4%
+source-wordcount: '1058'
+ht-degree: 6%
 
 ---
 
 # Adobe Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성 {#asset-metadata-mapping-workfront-aem-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-Adobe Workfront과 Experience Manager as a Cloud Service 에셋 메타데이터 응용 프로그램 간에 메타데이터 필드를 매핑할 수 있습니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
+Adobe Workfront 및 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑할 수 있습니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 
 예를 들어 이미지를 Workfront으로 보낼 때 Experience Manager Assets에서 이름, 설명 및 이미지가 속한 프로젝트와 같은 이미지에 대한 메타데이터 필드를 유지해야 하는 경우 이러한 필드를 구성하고 Experience Manager Assets 속성에 매핑합니다.
 
 **사용 사례**
 
-Adobe Workfront 응용 프로그램의 `Metadata Syncs` 프로젝트에 `add-users-workfront.png` 이미지가 있습니다. 다음 메타데이터와 함께 해당 이미지를 Experience Manager Assetsas a Cloud Service 로 전송해야 합니다.
+Adobe Workfront 응용 프로그램의 `Metadata Syncs` 프로젝트에 `add-users-workfront.png` 이미지가 있습니다. 다음 메타데이터와 함께 해당 이미지를 Experience Manager Assets as a Cloud Service으로 보내야 합니다.
 
 * 프로젝트 이름
 
@@ -32,9 +66,9 @@ Adobe Workfront 응용 프로그램의 `Metadata Syncs` 프로젝트에 `add-use
 
 ## 사전 요구 사항 {#prerequisites}
 
-* 관리자가 Workfront 및 Experience Manager Assets as a Cloud Service 애플리케이션에 액세스
+* Workfront 및 Experience Manager Assets as a Cloud Service 애플리케이션에 대한 관리자 액세스 권한.
 
-* 응용 프로그램 [Workfront 및 Experience Manager Assets as a Cloud Service](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus) 간의 통합.
+* [Workfront 및 Experience Manager Assets as a Cloud Service 응용 프로그램](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus) 간의 통합.
 
 ## Workfront에서 메타데이터 매핑 설정 {#set-up-metadata-mapping}
 
@@ -46,7 +80,7 @@ Workfront의 프로젝트 이름, 문서 이름 및 문서 설명 필드에 대�
 
 1. Experience Manager Assets 통합을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 메타데이터]**&#x200B;를 클릭합니다. **[!UICONTROL Assets]** 탭에서 [!UICONTROL 프로젝트] > [!UICONTROL 이름] Workfront 필드를 `wm:projectName` Experience Manager Assets 필드에 매핑합니다. Adobe 정확한 일치 항목을 찾지 못한 경우 Workfront 및 Experience Manager Assets 필드를 매핑할 가장 적합한 항목을 찾는 것이 좋습니다. 서로 다른 데이터 유형의 필드를 매핑하지 않아도 됩니다. 예를 들어 날짜 Workfront 필드를 설명 Assets 필드에 매핑합니다.
+1. **[!UICONTROL 메타데이터]**&#x200B;를 클릭합니다. **[!UICONTROL Assets]** 탭에서 [!UICONTROL 프로젝트] > [!UICONTROL 이름] Workfront 필드를 `wm:projectName` Experience Manager Assets 필드에 매핑합니다. 정확한 일치 항목을 찾지 못한 경우 Adobe에서는 Workfront 및 Experience Manager Assets 필드를 매핑할 수 있는 가장 적합한 항목을 찾을 것을 권장합니다. 서로 다른 데이터 유형의 필드를 매핑하지 않아도 됩니다. 예를 들어 날짜 Workfront 필드를 설명 Assets 필드에 매핑합니다.
 1. [!UICONTROL Document] > [!UICONTROL Name] Workfront 필드를 `wm:documentName` Experience Manager Assets 필드에 매핑합니다.
 
    ![Workfront에서 매핑](assets/workfront-metadata-mapping.png)
@@ -73,13 +107,13 @@ Workfront에서 Experience Manager Assets으로 이미지를 전송하려면 다
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-## Experience Manager as a Cloud Service 메타데이터에서 에셋 메타데이터 매핑 구성 {#metadata-mapping-aem}
+## Experience Manager as a Cloud Service에서 에셋 메타데이터 매핑 구성 {#metadata-mapping-aem}
 
-[Adobe Workfront에서 에셋 메타데이터 매핑을 구성](#set-up-metadata-mapping)한 후 동일한 매핑을 Experience Manager Assets as a Cloud Service 애플리케이션에서 사용하여 이미지에 적합한 메타데이터 결과를 표시해야 합니다.
+[Adobe Workfront에서 에셋 메타데이터 매핑을 구성](#set-up-metadata-mapping)한 후에는 Experience Manager Assets as a Cloud Service 응용 프로그램에서 동일한 매핑을 사용하여 이미지에 대한 적절한 메타데이터 결과를 표시해야 합니다.
 
 메타데이터 매핑은 Experience Manager Assets의 메타데이터 스키마를 사용하여 수행됩니다. 새로 추가된 메타데이터 스키마 양식 또는 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 탭과 탭 내의 양식 항목이 포함됩니다. 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내에 있는 필드에 매핑/구성할 수 있습니다. 메타데이터 스키마 양식에 탭이나 양식 항목을 추가할 수 있습니다. 자세한 내용은 [메타데이터 스키마](metadata-schemas.md)를 참조하십시오.
 
-Experience Manager Assetsas a Cloud Service 에서 새 메타데이터 양식을 구성하려면 다음을 수행합니다.
+Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을 사용하여 메타데이터 매핑을 구성하려면 다음 작업을 수행하십시오.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
 
@@ -116,13 +150,13 @@ Workfront에서 매핑을 구성하는 동안 `wm:documentName` Experience Manag
    1. **[!UICONTROL 속성에 매핑]** 필드에 `./jcr:content/metadata/dc:description`을(를) 지정합니다.
 Workfront에서 매핑을 구성하는 동안 `dc:description` Experience Manager Assets 필드를 문서 > 설명 Workfront 필드에 매핑했습니다.
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/344314)
 
 ## 이미지 폴더에 메타데이터 설정 적용 {#apply-metadata-settings-image-folder}
 
-Experience Manager as a Cloud Service 응용 프로그램에서 메타데이터 설정을 구성한 후 해당 설정을 Workfront 응용 프로그램에서 보낸 이미지가 포함된 [폴더에 적용합니다](#send-image-workfront-assets).
+Experience Manager as a Cloud Service 응용 프로그램에서 메타데이터 설정을 구성한 후 해당 설정을 Workfront 응용 프로그램에서 보낸 이미지가 포함된 [폴더에 적용](#send-image-workfront-assets)합니다.
 
 이미지 폴더에 메타데이터 설정을 적용하려면 다음을 수행합니다.
 

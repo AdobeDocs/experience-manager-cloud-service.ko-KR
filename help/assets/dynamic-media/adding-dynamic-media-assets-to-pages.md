@@ -5,16 +5,53 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 13%
+source-wordcount: '3211'
+ht-degree: 14%
 
 ---
 
 # 페이지에 Dynamic Media Assets 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에서 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 에셋을 구성 요소에 추가합니다. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 에셋을 구성 요소에 추가합니다. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
 [!DNL Adobe Experience Manager]을(를) WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)을 참조하십시오.
 
@@ -26,10 +63,10 @@ ht-degree: 13%
 
 3D 미디어, Dynamic Media, 대화형 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 Video 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다.
 
-**페이지에 Dynamic Media 구성 요소를 추가하려면:**
+**Dynamic Media 구성 요소를 페이지에 추가하려면:**
 
 1. [!DNL Experience Manager]에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
-1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 Dynamic Media을 필터링합니다.
+1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 Dynamic Media에 대해 필터링합니다.
 
    Dynamic Media 구성 요소 목록을 사용할 수 없는 경우 사용할 Dynamic Media 구성 요소를 활성화해야 합니다. [Dynamic Media 구성 요소 사용](#enabling-dynamic-media-components)을 참조하세요.
 
@@ -69,7 +106,7 @@ ht-degree: 13%
 
    ![허용된 구성 요소](/help/assets/assets-dm/allowed-components.png)
 
-1. **[!UICONTROL Dynamic Media]**&#x200B;이 표시될 때까지 스크롤합니다.
+1. **[!UICONTROL Dynamic Media]**&#x200B;가 표시될 때까지 스크롤합니다.
 1. **[!UICONTROL Dynamic Media]** 왼쪽에 있는 > 아이콘을 선택한 다음 활성화할 Dynamic Media 구성 요소를 선택합니다.
 
    ![Dynamic Media 구성 요소 목록](/help/assets/assets-dm/dm-components-select.png)
@@ -95,7 +132,7 @@ ht-degree: 13%
 
 ## 사용 가능한 Dynamic Media 구성 요소 {#dynamic-media-components}
 
-Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;에서 필터링하면 사용할 수 있습니다.
+**[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;에서 필터링하면 Dynamic Media 구성 요소를 사용할 수 있습니다.
 
 사용 가능한 Dynamic Media 구성 요소에는 다음이 포함됩니다.
 
@@ -112,13 +149,13 @@ Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 선�
 
 ### 구성 요소: Dynamic Media {#dynamic-media-component}
 
-Dynamic Media 구성 요소는 편리합니다. 이미지를 추가하든 비디오를 추가하든 다양한 옵션이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답하므로 화면 크기가 화면 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML 5 뷰어입니다.
+Dynamic Media 구성 요소는 편리합니다. 이미지를 추가하든 비디오를 추가하든 다양한 옵션이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답하므로 화면 크기가 화면 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
 >웹 페이지에 다음 항목이 있는 경우:
 >
->* 동일한 페이지에서 사용 중인 Dynamic Media 구성 요소의 여러 인스턴스.
+>* Dynamic Media 구성 요소의 여러 인스턴스가 동일한 페이지에서 사용되고 있습니다.
 >* 각 인스턴스는 동일한 에셋 유형을 사용합니다.
 >
 >해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당할 수 없습니다.
@@ -127,7 +164,7 @@ Dynamic Media 구성 요소는 편리합니다. 이미지를 추가하든 비디
 
 Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우 다음을 확인하십시오.
 
-* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media을 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 
 #### 이미지 작업 시 {#when-working-with-images}
 
@@ -190,7 +227,7 @@ Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 
 
 #### 비디오 작업 시 {#when-working-with-video}
 
-Dynamic Media 구성 요소를 사용하여 웹 페이지에 동적 비디오를 추가하십시오. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
+Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디오를 추가하십시오. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -202,7 +239,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 동적 비디오를
 
 * **[!UICONTROL 뷰어 사전 설정]** - 드롭다운 목록에서 기존 비디오 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 뷰어 사전 설정 관리를 참조하십시오.
 
-* **[!UICONTROL 뷰어 수정자]** - 뷰어 수정자는 `&` 구분 기호가 있는 `name=value` 쌍 형식입니다. Adobe 뷰어 참조 가이드에 설명된 대로 뷰어를 변경할 수 있습니다. 뷰어 한정자의 예는 `posterimage=img.jpg&caption=text.vtt,1`입니다.
+* **[!UICONTROL 뷰어 수정자]** - 뷰어 수정자는 `&` 구분 기호가 있는 `name=value` 쌍 형식입니다. Adobe 뷰어 참조 안내서에 설명된 대로 뷰어를 변경할 수 있습니다. 뷰어 한정자의 예는 `posterimage=img.jpg&caption=text.vtt,1`입니다.
 
   예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
@@ -221,7 +258,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 동적 비디오를
 
 Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기 이미지 자산을 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
-[Experience Manager Assets Dynamic Media과 함께 스마트 자르기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)을 참조하세요.
+[Experience Manager Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)을 참조하세요.
 
 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md)도 참조하세요.
 
@@ -271,7 +308,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 대화형 미디어 구성 요소는 핫스팟 또는 이미지 맵과 같이 인터랙티브한 자산을 위한 것입니다. 대화형 이미지, 대화형 비디오 또는 회전 배너가 있는 경우 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용하십시오.
 
-대화형 미디어 구성 요소는 편리합니다. 이미지를 추가하든 비디오를 추가하든 다양한 옵션이 제공됩니다. 또한 뷰어는 응답형이며 화면 크기는 화면 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML 5 뷰어입니다.
+대화형 미디어 구성 요소는 편리합니다. 이미지를 추가하든 비디오를 추가하든 다양한 옵션이 제공됩니다. 또한 뷰어는 응답형이며 화면 크기는 화면 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
@@ -330,7 +367,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 
 * **[!UICONTROL 뷰어 사전 설정]** - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인하십시오. Publish 뷰어 사전 설정을 먼저 사용하십시오. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인하십시오. 뷰어 사전 설정을 사용하기 전에 게시하십시오. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
 
 ### 구성 요소: Video 360 Media {#video-media-component}
 
@@ -346,19 +383,19 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 
 * **[!UICONTROL 뷰어 사전 설정]** - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다. 가상 현실 안경을 사용하는 최종 사용자를 위해 Video360VR을 사용하십시오. 기본 비디오 재생 컨트롤 및 소셜 미디어 기능을 포함합니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드에서 수행됩니다. 수동 POV 컨트롤은 꺼져 있지만 회전식 컨트롤은 켜져 있습니다. 소셜 미디어 기능이 없습니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인하십시오. Publish 뷰어 사전 설정을 먼저 사용하십시오. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인하십시오. 뷰어 사전 설정을 사용하기 전에 게시하십시오. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
 
 ### HTTP/2를 사용하여 Dynamic Media 에셋 전달 {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2는 새로운 업데이트된 웹 프로토콜로서 브라우저와 서버의 통신 방식을 개선합니다. 정보 전송 속도를 높이고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋의 전달이 HTTP/2를 통해 가능해져 응답 및 로드 시간이 향상됩니다.
 
-Dynamic Media 계정으로 HTTP/2를 사용하는 방법에 대한 자세한 내용은 [컨텐츠의 HTTP2 전달](/help/assets/dynamic-media/http2faq.md)을 참조하십시오.
+Dynamic Media 계정으로 HTTP/2를 사용하는 방법에 대한 자세한 내용은 [HTTP2 컨텐츠 배달](/help/assets/dynamic-media/http2faq.md)을 참조하십시오.
 
 >[!MORELIKETHIS]
 >
->* [Dynamic Media Experience Manager에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
+>* [Experience Manager Dynamic Media에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
 >* [Experience Manager Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
->* [Experience Manager Dynamic Media으로 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
+>* [Experience Manager Dynamic Media를 사용하여 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
 >* [Experience Manager Dynamic Media에서 사용자 지정 비디오 썸네일 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Experience Manager Dynamic Media을 통한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Experience Manager Dynamic Media를 통한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
 >* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)

@@ -4,17 +4,51 @@ description: 사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 �
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 13%
+source-wordcount: '418'
+ht-degree: 16%
 
 ---
 
 # 자산 업로드 제한 사항 구성 {#configure-asset-upload-restrictions}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한하도록 Adobe Experience Manager Assets을 구성할 수 있습니다.
 
@@ -42,11 +76,11 @@ ht-degree: 13%
 
 **예 1: Experience Manager Assets에 모든 이미지 및 PDF 파일 업로드 허용**
 
-모든 형식의 이미지 및 PDF 파일을 Experience Manager Assets에 업로드할 수 있도록 하려면 다음 설정을 수행하십시오.
+모든 형식의 이미지와 PDF 파일을 Experience Manager Assets에 업로드할 수 있도록 하려면 다음 설정을 수행하십시오.
 
 ![에셋 업로드 제한 사항](assets/asset-upload-restrictions.png)
 
-`image/*`을(를) MIME 형식으로 사용하면 모든 형식의 이미지를 업로드할 수 있습니다. `application/pdf`을(를) MIME 형식으로 Experience Manager Assets에 PDF 파일을 업로드할 수 있습니다.
+`image/*`을(를) MIME 형식으로 사용하면 모든 형식의 이미지를 업로드할 수 있습니다. `application/pdf`을(를) MIME 형식으로 사용하면 PDF 파일을 Experience Manager Assets에 업로드할 수 있습니다.
 
 허용되는 MIME 유형 목록에 포함되지 않은 파일을 업로드하려고 하면 Experience Manager Assets에 다음 오류 메시지가 표시됩니다.
 

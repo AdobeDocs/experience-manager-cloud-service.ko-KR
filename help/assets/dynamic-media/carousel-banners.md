@@ -1,18 +1,55 @@
 ---
-title: 회전 배너
+title: 슬라이드 배너
 description: Dynamic Media에서 회전 배너를 사용하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
-ht-degree: 1%
+source-wordcount: '4538'
+ht-degree: 2%
 
 ---
 
-# 회전 배너{#carousel-banners}
+# 슬라이드 배너{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 회전 배너를 사용하면 마케터가 대화형 회전 프로모션 콘텐츠를 쉽게 만들어 모든 화면에 전달하여 전환을 유도할 수 있습니다.
 
@@ -44,7 +81,7 @@ ht-degree: 1%
 
 빠르게 시작하고 실행하려면:
 
-1. [핫스팟 및 이미지 맵 변수 식별](#identifying-hotspot-and-image-map-variables)(Adobe Experience Manager Assets + Dynamic Media을 사용하는 고객만 해당)
+1. [핫스팟 및 이미지 맵 변수 식별](#identifying-hotspot-and-image-map-variables)(Adobe Experience Manager Assets + Dynamic Media를 사용하는 고객만 해당)
 
    기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 이렇게 하면 Experience Manager Assets에서 회전 배너 만들기 프로세스 중에 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있습니다.
 
@@ -79,9 +116,9 @@ ht-degree: 1%
 
    [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners) - 선택 사항을 참조하십시오. 원하는 경우 회전 메뉴 세트의 표현을 보고 상호 작용을 테스트할 수 있습니다.
 
-1. [Publish 회전 배너](#publishing-carousel-banners).
+1. [회전 배너 게시](#publishing-carousel-banners).
 
-   에셋의 경우와 마찬가지로 회전 메뉴 세트를 게시합니다. Assets에서 회전 메뉴 집합으로 이동하여 선택하고 **[!UICONTROL Publish]**&#x200B;을(를) 선택합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다.
+   에셋의 경우와 마찬가지로 회전 메뉴 세트를 게시합니다. Assets에서 회전 메뉴 집합으로 이동하여 선택하고 **[!UICONTROL 게시]**&#x200B;를 선택합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -89,7 +126,7 @@ ht-degree: 1%
 
       * [캐러셀 배너를 기존 빠른 보기와 통합](#integrating-the-carousel-banner-with-an-existing-quickview). 서드파티 웹 콘텐츠 관리 시스템을 사용하는 경우 새 캐러셀 배너를 웹 사이트의 기존 빠른 보기 구현과 통합해야 합니다.
 
-   * [Experience Manager에서 웹 사이트에 회전 배너를 추가하십시오](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Experience Manager Sites 고객인 경우 대화형 미디어 구성 요소를 사용하여 페이지에 직접 회전 메뉴 세트를 추가할 수 있습니다.
+   * [Experience Manager에서 웹 사이트에 회전 배너를 추가합니다](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Experience Manager Sites 고객인 경우 대화형 미디어 구성 요소를 사용하여 페이지에 직접 회전 메뉴 세트를 추가할 수 있습니다.
 
 회전 메뉴 집합을 편집해야 하는 경우 [회전 메뉴 집합 편집](#editing-carousel-sets)을 참조하십시오. 또한 [회전 메뉴 집합 속성](/help/assets/manage-digital-assets.md#editing-properties)을 보고 편집할 수 있습니다.
 
@@ -181,7 +218,7 @@ ht-degree: 1%
 
 ## 이미지 배너 업로드 {#uploading-image-banners}
 
-사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 집합 만들기](#creating-carousel-sets)(으)로 이동하십시오. 캐러셀에 사용된 이미지는 Dynamic Media이 활성화된 후에 업로드해야 합니다.
+사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 집합 만들기](#creating-carousel-sets)(으)로 이동하십시오. 캐러셀에 사용된 이미지는 Dynamic Media가 활성화되면 업로드해야 합니다.
 
 이미지 배너를 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md)를 참조하세요.
 
@@ -328,9 +365,9 @@ ht-degree: 1%
    회전 배너의 모양을 미리 볼 수도 있습니다. [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners)를 참조하십시오.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. Publish 회전 메뉴 세트입니다. 게시하면 웹 사이트 페이지에서 사용할 수 있는 포함 코드 또는 URL이 만들어집니다. Experience Manager Sites 고객인 경우 웹 페이지에 바로 회전 메뉴 세트를 추가합니다.
+1. 회전 메뉴 세트를 게시합니다. 게시하면 웹 사이트 페이지에서 사용할 수 있는 포함 코드 또는 URL이 만들어집니다. Experience Manager Sites 고객인 경우 웹 페이지에 바로 회전 메뉴 세트를 추가합니다.
 
-   [Publish 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
+   [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    [웹 사이트 랜딩 페이지에 회전 메뉴 세트 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하세요.
 
@@ -402,7 +439,7 @@ ht-degree: 1%
 1. 페이지 왼쪽 패널의 **[!UICONTROL 뷰어]** 목록에서 사용할 캐러셀 배너 뷰어 사전 설정 이름을 선택합니다.
 1. 연결된 작업을 테스트하려면 이미지에서 핫스팟 또는 이미지 맵을 선택합니다.
 
-## Publish 회전 배너 {#publishing-carousel-banners}
+## 회전 배너 게시 {#publishing-carousel-banners}
 
 회전판을 사용하려면 해당 회전판을 게시해야 합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 확장 가능하고 성능이 뛰어난 전송을 위해 CDN과 통합된 Dynamic Media 클라우드에 캐러셀을 게시합니다.
 
@@ -412,7 +449,7 @@ ht-degree: 1%
 >
 >또한, 캐러셀 배너에 사용하는 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되도록 대화형 이미지를 게시하십시오.
 
-회전 배너를 게시하는 방법에 대한 자세한 내용은 [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
+캐러셀 배너를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 웹 사이트 페이지에 회전 배너 추가 {#adding-a-carousel-banner-to-your-website-page}
 
@@ -444,7 +481,7 @@ ht-degree: 1%
 1. 백엔드 로직은 해당 빠른 보기 데이터 또는 컨텐츠를 프론트엔드 코드로 다시 반환합니다.
 1. 프론트엔드 코드는 빠른 보기 데이터 또는 콘텐츠를 로드합니다.
 1. 선택적으로, 프론트엔드 코드는 로드된 빠른 보기 데이터를 HTML 표시로 변환합니다.
-1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자의 화면에서 HTML 콘텐츠를 렌더링합니다.
+1. 프론트엔드 코드는 모달 대화 상자 또는 패널을 표시하고 사용자를 위해 화면에 HTML 콘텐츠를 렌더링합니다.
 
 이러한 호출은 임의의 단계에서 웹 페이지 논리에 의해 호출될 수 있는 독립적인 공개 API 호출을 나타내지 않습니다. 대신 모든 다음 단계가 이전 단계의 마지막 단계(콜백)에서 숨겨지는 체인 호출입니다.
 

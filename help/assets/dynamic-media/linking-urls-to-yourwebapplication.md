@@ -5,16 +5,53 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 5%
+source-wordcount: '1327'
+ht-degree: 6%
 
 ---
 
 # 웹 애플리케이션에 URL 연결 {#linking-urls-to-your-web-application}
 
-웹 사이트 및 애플리케이션은 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 에셋을 게시하면 Dynamic Media이 에셋을 참조하는 URL 문자열을 활성화합니다. 테스트를 위해 이러한 URL을 웹 브라우저에 붙여넣을 수 있습니다.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
+
+웹 사이트 및 애플리케이션은 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 에셋을 게시하면 Dynamic Media는 에셋을 참조하는 URL 문자열을 활성화합니다. 테스트를 위해 이러한 URL을 웹 브라우저에 붙여넣을 수 있습니다.
 
 Adobe Experience Manager을 WCM으로 사용하여 *not*&#x200B;하는 경우에만 URL에 연결합니다. 링크 - 대 포함 - 은 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우에 사용됩니다. Experience Manager을 WCM으로 사용하는 경우 [에셋을 페이지에서 바로 추가](adding-dynamic-media-assets-to-pages.md)합니다.
 
@@ -22,7 +59,7 @@ Adobe Experience Manager을 WCM으로 사용하여 *not*&#x200B;하는 경우에
 
 >[!NOTE]
 >
->URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 Dynamic Media 서버가 아닌 DAM에 있는 정적 에셋에는 사용할 수 없습니다. 정적인 렌디션에 대해서는 URL 버튼이 나타나지 않습니다.
+>URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 Dynamic Media 서버가 아닌 DAM에 있는 정적 에셋에 사용할 수 없습니다. 정적인 렌디션에 대해서는 URL 버튼이 나타나지 않습니다.
 
 [웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)도 참조하세요.
 
@@ -40,11 +77,11 @@ Adobe Experience Manager을 WCM으로 사용하여 *not*&#x200B;하는 경우에
 >
 >선택한 자산을 게시하기 전에는 URL을 복사할 수 없습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 >
->[Publish Assets](publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+>[Assets 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 >
->[Publish 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)을 참조하세요.
+>[뷰어 사전 설정 게시](managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 >
->[Publish 이미지 사전 설정](managing-image-presets.md#publishing-image-presets)을 참조하세요.
+>[이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
 URL 문자열을 가져오는 방법에는 여러 가지가 있습니다. 그러나 아래 단계에서는 사용할 수 있는 한 가지 방법만 보여 줍니다.
 
@@ -54,11 +91,11 @@ URL 문자열을 가져오는 방법에는 여러 가지가 있습니다. 그러
 
    Remember that URLs are only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
 
-   [Publish Assets](publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+   [Assets 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-   [Publish 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)을 참조하세요.
+   [뷰어 사전 설정 게시](managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 
-   [Publish 이미지 사전 설정](managing-image-presets.md#publishing-image-presets)을 참조하세요.
+   [이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
 1. 선택한 에셋을 기반으로 다음 중 하나를 수행합니다.
 
@@ -84,7 +121,7 @@ URL 문자열을 가져오는 방법에는 여러 가지가 있습니다. 그러
 
 ## 정적 자산에 대한 URL 얻기 {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에셋의 전달을 지원합니다. 게재에 지원되는 정적 에셋 포맷은 다음과 같습니다.
+Dynamic Media는 이미지 및 비디오 이상의 다른 에셋인 정적 에셋의 전달을 지원합니다. 게재에 지원되는 정적 에셋 포맷은 다음과 같습니다.
 
 * 3D 파일
 * 애니메이션 GIF
@@ -118,8 +155,8 @@ Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에�
 
 ## 게시된 비디오 렌디션에 대한 비디오 URL 가져오기 {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다.
-1. **[!UICONTROL Cloud Service]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Service]** 제목까지 아래로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL 클라우드 서비스]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 클라우드 서비스]** 페이지에서 **[!UICONTROL Dynamic Media 클라우드 서비스]** 제목까지 아래로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성의 이름을 선택합니다.
 
 1. **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 복사한 URL 경로는 이 단계의 후반부에 필요합니다.
@@ -134,7 +171,7 @@ Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에�
 
    예를 들어 등록 ID가 `87654321|MyCompany`이면 고객 이름은 `MyCompany`이 됩니다.
 
-1. 페이지의 왼쪽 상단 모서리에서 **[!UICONTROL Cloud Service]**&#x200B;을 선택한 다음 Experience Manager 아이콘을 선택하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;으로 이동합니다.
+1. 페이지의 왼쪽 상단 모서리에서 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 Experience Manager 아이콘을 선택하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**(으)로 이동합니다.
 1. JCR(Java™ Content Repository)에서 전체 비디오 렌디션 경로를 복사합니다.
 
    예를 들어 비디오의 렌디션 경로가 다음과 유사하게 나타날 수 있습니다.
@@ -155,10 +192,10 @@ Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에�
 
 ## 적응형 비트율 스트리밍을 위한 비디오 URL 얻기(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다.
-1. **[!UICONTROL Cloud Service]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Service]** 제목까지 아래로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL 클라우드 서비스]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 클라우드 서비스]** 페이지에서 **[!UICONTROL Dynamic Media 클라우드 서비스]** 제목까지 아래로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성의 이름을 선택합니다.
-1. **[!UICONTROL Dynamic Media Cloud Service 설정]** 페이지에서 다음을 수행합니다.
+1. **[!UICONTROL Dynamic Media 클라우드 서비스 설정]** 페이지에서 다음을 수행합니다.
 
    * **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 이 단계의 후반부에 복사한 URL 경로가 필요합니다. 예를 들어 URL 경로는 다음과 유사하게 나타날 수 있습니다.
 
@@ -207,8 +244,8 @@ Dynamic Media은 이미지 및 비디오 이상의 다른 에셋인 정적 에�
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2를 사용하여 Dynamic Media 에셋 전달 {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2는 새로운 업데이트된 웹 프로토콜로서 브라우저와 서버의 통신 방식을 개선합니다. 정보 전송 속도를 높이고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋의 전달이 HTTP/2를 통해 가능해져 응답 및 로드 시간이 향상됩니다.
 
-Dynamic Media 계정으로 HTTP/2를 사용하는 방법에 대한 자세한 내용은 [컨텐츠의 HTTP2 전달](http2faq.md)을 참조하십시오.
+Dynamic Media 계정으로 HTTP/2를 사용하는 방법에 대한 자세한 내용은 [HTTP2 컨텐츠 배달](http2faq.md)을 참조하십시오.

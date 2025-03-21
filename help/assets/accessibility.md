@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 2%
+source-wordcount: '1969'
+ht-degree: 3%
 
 ---
 
@@ -28,10 +28,44 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Cloud Service](으)로 [!DNL Adobe Experience Manager Assets]의 접근성 기능 {#accessibility-in-aem-assets}
+# [!DNL Cloud Service]&#x200B;(으)로 [!DNL Adobe Experience Manager Assets]의 접근성 기능 {#accessibility-in-aem-assets}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager]을(를) 사용하면 콘텐츠 작성자 및 게시자가 웹에서 놀라운 경험을 제공할 수 있습니다. Adobe은 [!DNL Experience Manager]의 접근성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 이 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각적, 청각적, 이동성 또는 기타 장애가 있는 개인을 포함한 전 세계 표준을 준수합니다.
 
@@ -44,7 +78,7 @@ Possible topics to cover in this article are below.
 * [접근성 이니셔티브 - W3C에서 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/accessibility/compliance.html)(ACR) 페이지를 참조하십시오.
+준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/accessibility/compliance.html)&#x200B;(ACR) 페이지를 참조하십시오.
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
@@ -213,7 +247,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 ## 액세스 가능한 설명서 {#accessible-docs}
 
-[!DNL Experience Manager]은(는) 장애가 있는 사용자가 사용할 수 있도록 액세스 가능한 설명서를 제공합니다. 다음은 Adobe이 템플릿과 컨텐츠를 계속 개선하는 동안 컨텐츠 제공을 지금 액세스할 수 있도록 하는 데 도움이 됩니다.
+[!DNL Experience Manager]은(는) 장애가 있는 사용자가 사용할 수 있도록 액세스 가능한 설명서를 제공합니다. 다음은 Adobe이 템플릿과 컨텐츠를 지속적으로 개선하는 동안 컨텐츠 제공을 지금 사용할 수 있도록 하는 데 도움이 됩니다.
 
 * 화면 판독기는 텍스트를 읽을 수 있습니다.
 * 이미지와 일러스트레이션에 대체 텍스트를 사용할 수 있습니다.

@@ -1,40 +1,74 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
-description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
+description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
 # OpenAPI 기능과 Dynamic Media 통합 {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
-에셋 선택기를 사용하면 다양한 Adobe 애플리케이션을 사용하여 를 통합하여 두 애플리케이션이 원활하게 함께 작동할 수 있습니다.
+에셋 선택기를 사용하면 다양한 Adobe 애플리케이션을 사용하여 통합하여 원활하게 함께 작업할 수 있습니다.
 
 
 ## 사전 요구 사항 {#prereqs-polaris}
 
-Asset Selector를 OpenAPI 기능과 Dynamic Media과 통합하는 경우 다음 전제 조건을 사용하십시오.
+Asset Selector를 OpenAPI 기능을 사용하는 Dynamic Media와 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
 
 * [커뮤니케이션 방법](/help/assets/overview-asset-selector.md#prereqs)
 * OpenAPI 기능을 사용하여 Dynamic Media에 액세스하려면 다음에 대한 라이센스가 있어야 합니다.
-   * Assets 저장소(예: Experience Manager Assets as a Cloud Service)
+   * Assets 저장소(예: Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
 * 브랜드 일관성을 유지하기 위해 [승인된 자산](/help/assets/approve-assets.md)만 사용할 수 있습니다.
 
 ## OpenAPI 기능과 Dynamic Media 통합 {#adobe-app-integration-polaris}
 
-Dynamic Media OpenAPI 프로세스와 에셋 선택기를 통합하려면 사용자 지정된 Dynamic Media URL을 생성하거나 Dynamic Media URL을 선택할 준비가 된 것 등을 포함하는 다양한 단계를 수행해야 합니다.
+Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자 지정된 Dynamic Media URL을 만들거나 Dynamic Media URL을 선택할 준비가 된 작업 등을 포함하는 다양한 단계가 포함됩니다.
 
 ### OpenAPI 기능으로 Dynamic Media에 대한 자산 선택기 통합 {#integrate-dynamic-media}
 
-`rootPath` 및 `path` 속성은 OpenAPI 기능을 사용하는 Dynamic Media에 속하지 않아야 합니다. 대신 `aemTierType` 속성을 구성할 수 있습니다. 다음은 구성 구문입니다.
+`rootPath` 및 `path` 속성은 OpenAPI 기능이 있는 Dynamic Media에 포함되어서는 안 됩니다. 대신 `aemTierType` 속성을 구성할 수 있습니다. 다음은 구성 구문입니다.
 
 ```
 aemTierType:[1: "delivery"]
@@ -108,7 +142,7 @@ URL 형식:
 ![동적 게재 url](assets/dynamic-delivery-url.png)
 
 * **썸네일:** 썸네일은 이미지일 수 있으며 자산은 PDF, 비디오, 이미지 등입니다. 하지만 에셋 썸네일의 높이 및 너비 속성을 동적 게재 렌디션으로 사용할 수 있습니다.
-다음 렌디션 세트는 PDF 유형 에셋에 사용할 수 있습니다.
+다음 렌디션 세트는 PDF 유형 자산에 사용할 수 있습니다.
 사이드 킥에서 PDF를 선택하면 선택 컨텍스트에 아래 정보가 표시됩니다. 다음은 JSON 개체를 트래버스하는 방법입니다.
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -124,7 +158,7 @@ URL 형식:
   } 
   ```
 
-위 스크린샷에서는 PDF이 필요하고 해당 썸네일이 아닌 경우 PDF의 원래 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **비디오:** 포함된 iFrame을 사용하는 비디오 유형 자산에 비디오 플레이어 URL을 사용할 수 있습니다. Target 경험에서 다음 배열 변환을 사용할 수 있습니다.
   <!--![Video dynamic delivery url](image.png)-->
@@ -140,7 +174,7 @@ URL 형식:
 
   위의 스크린샷에서 렌디션 링크의 배열에 대해 `selection[0].....selection[4]`을(를) 참조할 수 있습니다. 예를 들어 썸네일 렌디션 중 하나의 주요 속성은 다음과 같습니다.
 
-  위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML 역할을 하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
+  위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML을 제공하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
 
   위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`입니다.
 
@@ -175,6 +209,6 @@ Adobe의 마이크로 프론트엔드 에셋 선택기와 통합하면 Experienc
 
 >[!MORELIKETHIS]
 >
->* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
+>* [자산 선택기와 다양한 애플리케이션 통합](/help/assets/integrate-asset-selector.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
->* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
+>* [자산 선택기 사용자 정의](/help/assets/asset-selector-customization.md)

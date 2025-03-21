@@ -1,18 +1,55 @@
 ---
-title: 빠른 보기를 사용하여 사용자 정의 팝업 제작
+title: 빠른 보기를 사용하여 사용자 정의 팝업 만들기
 description: 전자 상거래 경험에서 기본 빠른 보기를 사용하여 제품 정보와 함께 팝업 창을 표시하여 구매를 유도하는 방법에 대해 알아봅니다. 팝업 창에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
-# 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 사용자 정의 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 기본 빠른 보기는 팝업이 제품 정보와 함께 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 하지만 사용자 지정 콘텐츠를 트리거하여 팝업에 표시할 수 있습니다. 사용하는 뷰어에 따라 고객은 핫스팟, 썸네일 이미지 또는 이미지 맵을 선택하여 정보 또는 관련 콘텐츠를 볼 수 있습니다.
 
@@ -45,7 +82,7 @@ ht-degree: 2%
     <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 대화형 기능을 추가</a>.</td>
     </tr>
     <tr>
-    <td>회전 배너</td>
+    <td>슬라이드 배너</td>
     <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">배너에 핫스팟 또는 이미지 맵 추가</a>.<br /> </td>
     </tr>
     </tbody>
@@ -172,7 +209,7 @@ ht-degree: 2%
    </style>
    ```
 
-1. 팝업 `DIV`을(를) HTML 페이지의 본문에 넣습니다.
+1. 팝업 `DIV`을(를) HTML 페이지의 본문에 배치합니다.
 
    요소 중 하나는 사용자가 빠른 보기를 호출할 때 SKU 값으로 업데이트되는 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 버튼도 포함되어 있습니다.
 

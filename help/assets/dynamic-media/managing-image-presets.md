@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3596'
 ht-degree: 6%
 
 ---
 
 # 이미지 사전 설정 관리{#managing-image-presets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+        </td>
+    </tr>
+</table>
 
 이미지 사전 설정을 사용하면 Adobe Experience Manager Assets에서 다른 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
 
@@ -30,7 +67,7 @@ ht-degree: 6%
 
 매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 조정 및 서식 지정 명령의 미리 정의된 컬렉션입니다. 이미지 사전 설정의 작동 방식을 이해하려면 웹 사이트에서 각 제품 이미지를 데스크탑 및 모바일 게재에 대해 서로 다른 크기, 다른 형식 및 압축률로 표시해야 한다고 가정해 봅시다.
 
-데스크탑의 경우 500 x 500픽셀, 모바일의 경우 150 x 150픽셀이라는 두 개의 이미지 사전 설정을 만들 수 있습니다. 두 개의 이미지 사전 설정을 만듭니다. 하나는 500x500픽셀로 이미지를 표시하는 `Enlarge`이고 다른 하나는 150x150픽셀로 이미지를 표시하는 `Thumbnail`입니다. `Enlarge` 및 `Thumbnail` 크기의 이미지를 게재하기 위해 Experience Manager은 `Enlarge Image Preset` 및 `Thumbnail Image Preset`에 대한 정의를 찾습니다. 그런 다음 Experience Manager은 각 이미지 사전 설정의 크기 및 서식 지정 사양에 따라 이미지를 동적으로 생성합니다.
+데스크탑의 경우 500 x 500픽셀, 모바일의 경우 150 x 150픽셀이라는 두 개의 이미지 사전 설정을 만들 수 있습니다. 두 개의 이미지 사전 설정을 만듭니다. 하나는 500x500픽셀로 이미지를 표시하는 `Enlarge`이고 다른 하나는 150x150픽셀로 이미지를 표시하는 `Thumbnail`입니다. `Enlarge` 및 `Thumbnail` 크기의 이미지를 전달하기 위해 Experience Manager은 `Enlarge Image Preset` 및 `Thumbnail Image Preset`의 정의를 찾습니다. 그런 다음 Experience Manager은 각 이미지 사전 설정의 크기 및 형식 지정 사양에 따라 이미지를 동적으로 생성합니다.
 
 이미지가 동적으로 전달될 때 크기가 줄어든 이미지는 선명도와 디테일을 잃을 수 있습니다. 이러한 이유로 각 이미지 사전 설정에는 이미지가 특정 크기로 제공될 때 이를 최적화하기 위한 서식 지정 컨트롤이 포함되어 있습니다. 이러한 컨트롤은 이미지가 웹 사이트나 응용 프로그램에 전달될 때 선명하고 선명하게 나타나도록 합니다.
 
@@ -48,7 +85,7 @@ Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 �
 >
 >이미지 사전 설정이 자동으로 게시되므로 *not*&#x200B;은(는) 이미지 사전 설정을 게시할 필요가 없습니다.
 >
->[Publish 이미지 사전 설정](#publishing-image-presets)을 참조하세요.
+>[이미지 사전 설정 게시](#publishing-image-presets)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -56,7 +93,7 @@ Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 �
 
 ### Adobe Illustrator(AI), PostScript®(EPS) 및 PDF 파일 형식 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-이러한 파일 형식의 동적 변환을 생성할 수 있도록 AI, EPS 및 PDF 파일의 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
+이러한 파일 형식의 동적 변환을 생성할 수 있도록 AI, EPS 및 PDF 파일 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
 
 Adobe Illustrator의 파일 형식은 PDF의 변형입니다. Experience Manager Assets의 컨텍스트에서 주요 차이점은 다음과 같습니다.
 
@@ -69,7 +106,7 @@ Adobe Illustrator의 파일 형식은 PDF의 변형입니다. Experience Manager
 
 에셋을 열고 콘텐츠 메뉴를 선택한 다음 **[!UICONTROL 하위 에셋]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택하면 하위 에셋 또는 페이지를 볼 수 있습니다. 하위 자산은 실제 자산입니다. `Create Sub Asset` 워크플로 구성 요소는 PDF 페이지를 추출합니다. 그런 다음 기본 에셋 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장되면 `DAM Update Asset` 워크플로에서 처리합니다.
 
-Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
+Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
 
 1. `DAM Update Asset` 워크플로에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소는 구성된 해상도를 사용하여 원본 에셋의 첫 번째 페이지를 `cqdam.preview.png` 렌디션으로 래스터화합니다.
 
@@ -113,7 +150,7 @@ PDF 또는 AI 워크플로 래스터화 인수
 
 이 파일 형식의 동적 변환을 생성할 수 있도록 INDD 파일 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
 
-InDesign 파일의 경우, Adobe InDesign Server이 Experience Manager과 통합된 경우에만 하위 자산이 추출됩니다. 참조된 자산은 메타데이터를 기반으로 연결됩니다. InDesign Server은 연결에 필요하지 않습니다. 그러나 InDesign 파일과 참조된 에셋 사이에 연결되는 링크가 만들어지려면 InDesign 파일이 처리되기 전에 참조된 에셋이 Experience Manager 내에 있어야 합니다.
+InDesign 파일의 경우, Adobe InDesign Server이 Experience Manager과 통합된 경우에만 하위 자산이 추출됩니다. 참조된 자산은 메타데이터를 기반으로 연결됩니다. InDesign Server은 연결에 필요하지 않습니다. 그러나 InDesign 파일과 참조된 에셋 사이에 링크를 만들려면 InDesign 파일이 처리되기 전에 참조된 에셋이 Experience Manager 내에 있어야 합니다.
 
 <!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
@@ -121,22 +158,22 @@ InDesign 파일의 경우, Adobe InDesign Server이 Experience Manager과 통합
 
 ![미디어 추출 프로세스의 인수에 있는 ExtendScript 경로](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구성 요소 인수의 ExtendScript 경로.
+DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구성 요소의 인수에 있는 ExtendScript 경로입니다.
 
-Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
+Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 
 
 | ExtendScript 이름 | 기본값 | 설명 |
 |---|---|---|
 | ThumbnailExport.jsx | 예 | `Dynamic Media Process Image Assets` 프로세스 구성 요소에 의해 최적화되고 PTIFF 렌디션으로 변환되는 300PPI `thumbnail.jpg` 렌디션을 생성합니다. |
 | JPEGPagesExport.jsx | 예 | 각 페이지에 대해 300PPI JPEG 하위 자산을 생성합니다. JPEG 하위 에셋은 InDesign 에셋 아래에 저장된 실제 에셋입니다. `DAM Update Asset` 워크플로는 최적화하고 PTIFF로 변환합니다. |
-| PDFPagesExport.jsx | 아니요 | 각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산이 앞에서 설명한 대로 처리됩니다. PDF은 단일 페이지만 포함하므로 하위 자산이 생성되지 않습니다. |
+| PDFPagesExport.jsx | 아니요 | 각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞에서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다. |
 
 ### 이미지 썸네일 크기 구성 {#configuring-image-thumbnail-size}
 
 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 썸네일 크기를 구성할 수 있습니다. 이 워크플로에서는 이미지 에셋의 썸네일 크기를 구성할 수 있는 두 가지 단계가 있습니다. 하나(**[!UICONTROL Dynamic Media 프로세스 이미지 Assets]**)가 동적 이미지 자산에 사용됩니다. 다른 (**[!UICONTROL 프로세스 썸네일]**)은 정적 썸네일 생성에 사용되거나 다른 모든 프로세스에서 썸네일을 생성하지 못할 때 사용됩니다. *둘 다*&#x200B;의 설정이 동일해야 합니다.
 
-**[!UICONTROL Dynamic Media 이미지 처리 Assets]** 단계에서는 **[!UICONTROL 썸네일 처리]** 단계에 적용된 구성과 관계없이 이미지 서버를 사용하여 썸네일을 생성합니다. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
+**[!UICONTROL Dynamic Media 이미지 Assets 처리]** 단계에서는 **[!UICONTROL 썸네일 처리]** 단계에 적용된 구성과 관계없이 이미지 서버를 사용하여 썸네일을 생성합니다. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
 썸네일 크기가 **[!UICONTROL width:height:center]**(예: `80:80:false`) 형식으로 정의되었습니다. 폭과 높이는 축소판의 크기를 픽셀 단위로 결정합니다. 중심 값은 false 또는 true입니다. true로 설정하면 썸네일 이미지의 크기가 구성에 지정된 것과 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 내에서 가운데에 표시됩니다.
 
@@ -218,7 +255,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
 
 응답형 이미지 사전 설정을 만들려면 [이미지 사전 설정 만들기](#creating-image-presets)의 단계를 수행하십시오. **[!UICONTROL 이미지 사전 설정 편집]** 창에 높이와 너비를 입력할 때 값을 지우고 비워 둡니다.
 
-이 필드를 비워 두면 Experience Manager에게 이 이미지 사전 설정이 응답함을 알려줍니다. 다른 값은 적절하게 조정할 수 있습니다.
+이 필드를 비워 두면 Experience Manager에 이 이미지 사전 설정이 응답함을 알려줍니다. 다른 값은 적절하게 조정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -230,7 +267,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
 
 ### 이미지 사전 설정 옵션 {#image-preset-options}
 
-이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe은 다음과 같은 &quot;모범 사례&quot; 옵션 선택 사항을 시작할 것을 권장합니다.
+이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe에서는 다음과 같은 &quot;모범 사례&quot; 옵션 선택 사항을 시작할 것을 권장합니다.
 
 * **[!UICONTROL 형식]**(**[!UICONTROL 기본]** 탭) - **[!UICONTROL JPEG]** 또는 요구 사항에 맞는 다른 형식을 선택하십시오. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
@@ -244,7 +281,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
 | --- | --- |
 | **이름** | 공백 없이 수사적 이름을 입력합니다. 사용자가 이 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함하십시오. |
 | **너비 및 높이** | 이미지가 표시될 크기를 픽셀로 입력합니다. 폭과 높이는 0픽셀보다 커야 합니다. 값이 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 반응형 이미지 사전 설정이 만들어집니다. |
-| **형식** | 메뉴에서 형식을 선택합니다.<br>JPEG **선택**&#x200B;은(는) 다음과 같은 기타 옵션을 제공합니다.<br>· **품질** - JPEG 품질 기준은 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.<br>· **JPG 색차 다운샘플링 사용** - 눈은 고주파 광도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 광도와 색상 구성 요소로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소는 최대 해상도로 유지되는 반면, 색상 구성 요소는 픽셀 그룹의 평균에 의해 다운샘플링됩니다. 다운샘플링은 인지된 품질에 미치는 영향을 최소화하면서 데이터 양을 절반 또는 1/3로 줄입니다. 회색 음영 이미지에는 다운샘플링을 적용할 수 없습니다. 이 기법은 대비가 높은 이미지(예: 오버레이된 텍스트가 있는 이미지)에 유용한 압축의 양을 줄입니다.<br><br>알파 포함 **GIF** 또는 **GIF을 선택하면 다음과 같은 추가** GIF 색상 양자화&#x200B;**옵션이 제공됩니다.<br>·**&#x200B;유형&#x200B;**-**&#x200B;적응형&#x200B;**(기본값),**&#x200B;웹&#x200B;**또는** Macintosh **선택.** **Alpha GIF**&#x200B;을(를) 선택하면 Macintosh 옵션을 사용할 수 없습니다.<br>· **디더** - **분산** 또는 **해제**&#x200B;를 선택합니다.<br>· **색상 수** - 숫자 2 - 256을 입력하십시오.<br>· **색상 목록** - 쉼표로 구분된 목록을 입력하십시오. 예를 들어 흰색, 회색 및 검은색은 `000000,888888,ffffff`을(를) 입력합니다.<br><br>알파 포함 **PDF**, **TIFF** 또는 **TIFF**&#x200B;을 선택하면 다음과 같은 추가 옵션이 제공됩니다.<br>· **압축** - 압축 알고리즘을 선택하십시오. PDF의 알고리즘 옵션은 **없음**, **Zip** 및 **Jpeg**&#x200B;이고, TIFFTIFF 의 경우 **없음**, **LZW**, **Jpeg** 및 **Zip**&#x200B;이며, Alpha의 경우 **없음**, **LZW** 및 **Zip**&#x200B;입니다.<br><br>Alpha이 있는 **PNG**, **PNG** 또는 **EPS**&#x200B;을(를) 선택하면 추가 옵션이 없습니다. |
+| **형식** | 메뉴에서 형식을 선택합니다.<br>선택 **JPEG**&#x200B;은(는) 다음과 같은 기타 옵션을 제공합니다.<br>· **품질** - JPEG 품질 기준은 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.<br>· **JPG 색차 다운샘플링 사용** - 눈은 고주파 광도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 광도와 색상 구성 요소로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소는 최대 해상도로 유지되는 반면 색상 구성 요소는 픽셀 그룹을 함께 평균화하여 다운샘플링됩니다. 다운샘플링은 인지된 품질에 미치는 영향을 최소화하면서 데이터 양을 절반 또는 1/3로 줄입니다. 회색 음영 이미지에는 다운샘플링을 적용할 수 없습니다. 이 기법은 대비가 높은 이미지(예: 오버레이된 텍스트가 있는 이미지)에 유용한 압축의 양을 줄입니다.<br><br>알파 포함 **GIF** 또는 **GIF을 선택하면 다음과 같은 추가** GIF 색상 양자화&#x200B;**옵션이 제공됩니다.<br>·**&#x200B;유형&#x200B;**-**&#x200B;적응형&#x200B;**(기본값),**&#x200B;웹&#x200B;**또는** Macintosh **선택.** **Alpha과 함께 GIF**&#x200B;을(를) 선택하면 Macintosh 옵션을 사용할 수 없습니다.<br>· **디더** - **분산** 또는 **해제**&#x200B;를 선택합니다.<br>· **색상 수** - 숫자 2 - 256을 입력하십시오.<br>· **색상 목록** - 쉼표로 구분된 목록을 입력하십시오. 예를 들어 흰색, 회색 및 검은색은 `000000,888888,ffffff`을(를) 입력합니다.<br><br>알파 포함 **PDF**, **TIFF** 또는 **TIFF**&#x200B;을(를) 선택하면 다음과 같은 추가 옵션이 제공됩니다.<br>· **압축** - 압축 알고리즘을 선택합니다. PDF의 알고리즘 옵션은 **없음**, **Zip** 및 **Jpeg**&#x200B;이고, TIFF의 경우 **없음**, **LZW**, **Jpeg** 및 **Zip**&#x200B;이며, Alpha이 있는 TIFF의 경우 **없음**, **LZW** 및 **Zip**&#x200B;입니다.<br><br>추가 옵션이 없는 **PNG**, **Alpha을 사용하는 PNG** 또는 **EPS**&#x200B;을(를) 선택하십시오. |
 | **선명하게 하기** | 모든 크기 조절 후 이미지에 기본 선명하게 하기 필터를 적용하려면 **단순 선명하게 하기 사용**&#x200B;을 선택하십시오. 선명하게 하기는 다른 크기의 이미지를 표시할 때 발생하는 흐릿함을 보상하는 데 도움이 될 수 있습니다. |
 
 #### 고급 탭 옵션 {#advanced-tab-options}
@@ -257,7 +294,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
   </tr>
   <tr>
    <td><strong>색상 공간</strong></td>
-   <td>색상 공간으로 <strong>RGB, CMYK,</strong> 또는 <strong>회색 음영</strong>을 선택하십시오.</td>
+   <td>색상 공간으로 <strong>RGB, CMYK,</strong> 또는 <strong>회색 음영</strong>을 선택합니다.</td>
   </tr>
   <tr>
    <td><strong>색상 프로필</strong></td>
@@ -317,7 +354,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media에서는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>지역화 명령: <code>locale=</code> 및 <code>req=xlate</code></li>
@@ -340,7 +377,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
 
 >[!NOTE]
 >
->일부 이미지 수정자 [을(를) Experience Manager](#advanced-tab-options)에서 사용할 수 없습니다.
+>일부 이미지 수정자 [은(는) Experience Manager](#advanced-tab-options)에서 사용할 수 없습니다.
 
 * [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
 
@@ -391,7 +428,7 @@ Dynamic Media 통합에서는 다음 스크립트를 사용합니다.
 1. 사전 설정을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
 1. 변경 내용을 적용하고 **[!UICONTROL 저장]**&#x200B;을 선택하여 변경 내용을 저장하거나 **[!UICONTROL 취소]**&#x200B;을 선택하여 변경 내용을 취소합니다.
 
-### Publish 이미지 사전 설정 {#publishing-image-presets}
+### 이미지 사전 설정 게시 {#publishing-image-presets}
 
 이미지 사전 설정은 자동으로 게시됩니다.
 
