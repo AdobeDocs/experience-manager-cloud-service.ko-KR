@@ -4,9 +4,9 @@ description: 클라이언트측 데이터 수집을 모니터링할 수 있는 �
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->클라이언트측 모니터링은 AEM(Adobe Experience Manager) Cloud Service 버전이 **2024.5.16461** 이상인 고객에게만 작동합니다.
+>클라이언트측 모니터링은 AEM(Adobe Experience Manager) Cloud Service 버전 **2024.5.16461** 이상인 고객에게만 작동합니다.
 
 ## 개요 {#overview}
 
@@ -31,7 +31,7 @@ Real Use Monitoring은 고객 및 Adobe이 최종 사용자가 AEM 사이트와 
 
 ## 모니터링 서비스 및 개인 정보 보호 실제 사용 {#rum-service-and-privacy}
 
-AEM의 Real Use Monitoring 서비스는 방문자 개인 정보를 유지하고 데이터 수집을 최소화합니다. 방문자는 방문 중이거나 Adobe 가능한 사이트가 개인 정보를 수집하지 않음을 의미합니다.
+AEM의 Real Use Monitoring 서비스는 방문자 개인 정보를 유지하고 데이터 수집을 최소화합니다. 방문자는 방문 중이거나 Adobe에서 사용할 수 있는 사이트가 개인 정보를 수집하지 않음을 의미합니다.
 
 사이트 운영자는 이 기능을 통해 모니터링을 활성화하는 데 추가 옵트인이 필요하지 않습니다. 최종 사용자가 RUM 활성화를 위해 수락할 추가 팝업 또는 동의 양식이 없습니다.
 
@@ -55,11 +55,11 @@ Real Use Monitoring 서비스는 개인 식별 정보의 수집을 방지하기 
 * 페이지를 로드하는 순서에 있는 특정 이벤트의 체크포인트 또는 이름입니다. 또는 방문자로서 상호 작용
 * 위에서 언급한 체크포인트에 대해 사용자가 상호 작용하는 DOM 요소의 소스 또는 식별자입니다. 예를 들어 이미지일 수 있습니다
 * 위에서 언급한 체크포인트에 대해 사용자가 상호 작용하는 대상 또는 외부 페이지 또는 리소스에 대한 링크입니다. 예를 들어`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* 방문자의 경험 품질을 설명하는 가장 큰 LCP(Contentable Paint), FID(First Input Delay), CLS(Cumulative Layout Shift) 및 TTFB(Time To First Byte)를 포함하는 CWV(Core Web Vitals) 성능 지표입니다.
+* 방문자의 체감 품질을 설명하는 [핵심 웹 바이탈(CWV)](https://web.dev/articles/lcp) 성능 지표 [가장 큰 LCP(Contentable Paint)](https://web.dev/articles/lcp), [다음 페인트에 대한 상호 작용(INP)](https://web.dev/articles/inp) 및 [CLS(Cumulative Layout Shift)](https://web.dev/articles/cls).
 
 ## 고객의 실제 사용 모니터링 작동 방식 {#how-rum-works-for-a-customer}
 
-Real Use Monitoring은 클라이언트측 트래픽을 자동으로 모니터링합니다. 이 서비스는 기존 설정에 완벽하게 통합되므로 Adobe 고객은 추가 단계를 수행하지 않아도 됩니다. RUM(Real Use Monitoring) 서비스를 일반적으로 사용할 수 있게 되면 이 새로운 기능을 자동으로 활용할 수 있습니다. Real Use Monitoring 서비스는 현재 모니터링할 고객 대면 지표를 노출하지 않습니다. 당사는 이 기능을 최대한 빨리 제공하기 위해 노력하고 있습니다.
+Real Use Monitoring은 클라이언트측 트래픽을 자동으로 모니터링합니다. 이 서비스는 기존 설정에 원활하게 통합되므로 Adobe 고객은 추가 단계를 수행하지 않아도 됩니다. RUM(Real Use Monitoring) 서비스를 일반적으로 사용할 수 있게 되면 이 새로운 기능을 자동으로 활용할 수 있습니다. Real Use Monitoring 서비스는 현재 모니터링할 고객 대면 지표를 노출하지 않습니다. 당사는 이 기능을 최대한 빨리 제공하기 위해 노력하고 있습니다.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
@@ -107,6 +107,6 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **어떻게 옵트아웃할 수 있습니까?**
 
-   Adobe은 상당한 이점으로 인해 RUM(Real Use Monitoring) 사용을 권장하며 Adobe이 웹 사이트 성능을 개선하여 디지털 경험을 최적화하는 데 도움이 될 수 있도록 할 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
+   Adobe은 상당한 이점으로 인해 RUM(Real Use Monitoring)을 사용할 것을 권장하며 Adobe을 통해 웹 사이트 성능을 개선하여 디지털 경험을 최적화할 수 있도록 지원할 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
 
    옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
