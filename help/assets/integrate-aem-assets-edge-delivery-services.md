@@ -2,9 +2,9 @@
 title: AEM Assets를 통합하면서 Edge Delivery Services용 콘텐츠 작성
 description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google Docs과 통합하고, AEM Assets을 유니버설 편집기와 통합하고, Dynamic Media를 OpenAPI 기능과 유니버설 편집기와 통합하고, Dynamic Media를 OpenAPI 기능과 Microsoft Word 및 Google Docs을 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 3%
 다음 위치에서 콘텐츠를 편집할 수 있습니다.
 
 * [Microsoft Word 또는 Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [범용 편집기](#integrate-aem-assets-with-universal-editor)
+* [범용 편집기](#integrate-aem-assets-with-UE-universal-editor)
 
 콘텐츠를 편집한 후 Edge Delivery Services에 게시할 수 있습니다.
 
 ## AEM Assets과 Edge Delivery Services용 문서 기반 작성 플로우 통합 {#integrate-aem-assets-with-document-based-authoring-tools}
 
-Microsoft Word 또는 Google Docs과 같은 문서 기반 작성 도구와 AEM Assets 통합은 편집기에 자산 선택기를 직접 제공합니다. 이 에셋 선택기를 사용하여 AEM Assets에 액세스하고 승인된 에셋을 문서에 삽입합니다.
-
-Edge Delivery Services 웹 사이트가 이미 있는 경우 기존 AEM 프로젝트와 AEM Assets을 통합하려면 [AEM Assets 플러그인](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)을 참조하십시오. Edge Delivery Services 웹 사이트가 없는 경우 아래 [필수 구성 요소](#integrate-aem-assets-with-microsoft-word-and-google-docs) 및 [문서 기반 작성 환경과 AEM Assets 통합](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) 섹션을 참조하십시오.
+AEM Assets이 Microsoft Word 또는 Google Docs과 같은 문서 기반 작성 도구와 통합되면 편집기에 에셋 선택기가 제공됩니다. 이 에셋 선택기를 사용하여 AEM Assets에 액세스하고 승인된 에셋을 문서에 삽입합니다.
+이미 Edge Delivery Services 웹 사이트가 있는 경우 기존 AEM Assets 프로젝트와 AEM Assets을 통합하는 방법에 대해 알아보려면 [AEM 플러그인](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) 문서를 참조하십시오.
+문서 기반 작성 도구로 작성된 AEM Assets 포함 콘텐츠를 게시할 Edge Delivery Services 웹 사이트가 없는 경우 다음 [사전 요구 사항](#integrate-aem-assets-with-microsoft-word-and-google-docs) 및 [문서 기반 작성 환경과 AEM Assets 통합](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) 섹션을 따르십시오.
 
 ### 사전 요구 사항{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 시작하기 전에 문서 기반 작성 환경이 준비되었는지 확인합니다.
 
-* AEM을 문서 기반 작성 도구와 통합하여 작성 환경을 설정합니다. 작성 환경을 설정하려면 [시작하기 - 개발자 자습서](https://www.aem.live/developer/tutorial)를 참조하십시오.
+* AEM을 문서 기반 작성 도구와 통합하여 작성 환경을 설정합니다. 작성 환경을 설정하는 방법에 대해 알아보려면 [시작하기 - 개발자 자습서](https://www.aem.live/developer/tutorial)를 참조하십시오.
 
 ### 문서 기반 작성 환경과 AEM Assets 통합{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ OpenAPI 기능과 함께 DM을 사용하여 제공되는 에셋을 사용할 수
 
 ### OpenAPI 기능과 함께 Dynamic Media를 사용하여 제공된 자산 사용{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-콘텐츠를 작성하는 동안 OpenAPI 기능과 함께 Dynamic Media를 사용하여 제공된 에셋을 사용하려면 다음을 참조하십시오.
+다음 링크를 선택하여 OpenAPI 기능과 함께 Dynamic Media를 사용하여 콘텐츠의 이미지, 비디오 및 기타 자산 유형을 전달하는 방법을 알아보십시오.
 
-* [이미지 참조 사용](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [비디오 참조 사용](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [PDF, Zip 파일 등과 같은 비이미지 및 비디오 자산에 대한 자산 참조 사용](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [콘텐츠에 이미지 추가](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [콘텐츠에 비디오 추가](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [콘텐츠에 PDF, Zip 파일 등 이미지가 아닌 자산과 비디오 자산을 추가하십시오.](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-OpenAPI 기능과 Dynamic Media를 사용하여 자산을 제공하는 방법을 알려면 이 비디오 를 참조하십시오.
+OpenAPI 기능과 Dynamic Media를 사용하여 콘텐츠의 자산을 전달하는 방법을 배우려면 이 비디오 를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## 샘플 Edge Delivery Services 사이트{#example-of-an-Edge-Delivery-Services-site}
 
-[WKND 여행](http://bit.ly/3DExLnf)을 참조하세요. 이 사이트는 Edge Delivery Services의 문서 기반 작성 기능을 사용하여 빌드됩니다. 사이트 콘텐츠는 자산 전달을 위해 OpenAPI 기능이 있는 Dynamic Media를 사용하여 [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성됩니다. 작성된 콘텐츠는 문서에서 직접 게시됩니다. 이 문서 기반 작성 설정의 경우 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드가 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)에 저장됩니다.
+Edge Delivery Services의 문서 기반 작성 기능을 사용하여 빌드된 사이트인 [WKND 여행](http://bit.ly/3DExLnf)을 참조하십시오. 사이트의 콘텐츠는 [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성되었으며 OpenAPI 기능이 있는 Dynamic Media를 사용하여 콘텐츠의 자산을 전달합니다. 작성 후 컨텐츠는 문서에서 직접 게시됩니다. 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)를 탐색하여 이 Edge Delivery Services(EDS) 사이트의 문서 기반 작성 설정을 만드는 데 사용되는 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드에 대해 알아보십시오.
 
-## AEM Assets과 Edge Delivery Services용 유니버설 편집기 기반 작성 플로우 통합 {#integrate-aem-assets-with-universal-editor}
+## AEM Assets과 Edge Delivery Services용 유니버설 편집기 기반 작성 플로우 통합 {#integrate-aem-assets-with-UE-universal-editor}
 
 AEM Assets과 통합하도록 범용 편집기를 설정합니다. 이 통합을 통해 OpenAPI 기능과 함께 Dynamic Media 를 사용하여 에셋을 제공할 수 있습니다.
 
-* 범용 편집기에서 사용자 지정 자산 선택기 함수를 추가하려면 [Edge Delivery 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 지정 에셋 선택기를 사용하면 에셋을 유니버설 편집기 콘텐츠에 직접 삽입할 수 있습니다.
+* 범용 편집기에서 사용자 지정 자산 선택 함수를 추가하는 방법에 대해 알아보려면 [Edge Delivery 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 지정 에셋 선택기를 사용하면 에셋을 유니버설 편집기 콘텐츠에 직접 삽입할 수 있습니다.
 * 범용 편집기에서 작성하는 동안 AEM Assets에 액세스하고 자산을 삽입하는 방법을 알아보려면 [확장 개요](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
