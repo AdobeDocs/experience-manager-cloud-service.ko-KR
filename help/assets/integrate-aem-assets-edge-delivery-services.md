@@ -2,7 +2,7 @@
 title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DNL AEM Assets] 통합'
 description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Universal Editor] 및 [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
+source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
