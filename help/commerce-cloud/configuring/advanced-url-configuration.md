@@ -2,7 +2,7 @@
 title: 고급 URL 구성
 description: 제품 및 카테고리 페이지의 URL을 사용자 지정하는 방법을 알아봅니다. 구현을 통해 검색 엔진의 URL을 최적화하고 검색을 홍보할 수 있습니다.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 그 결과, Adobe Experience Manager(AEM as a Cloud Service)의 많은 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)를 참조하세요.
+> SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 Adobe Experience Manager(AEM) as a Cloud Service의 많은 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)를 참조하세요.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 제품 및 범주 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 `UrlProvider` 서비스 및 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 범주 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
@@ -91,7 +91,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 
 >[!NOTE]
 >
-> URL 형식의 저장소별 구성에는 [CIF 핵심 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0)과(와) 최신 버전의 Adobe Experience Manager 콘텐츠 및 Commerce 추가 기능이 필요합니다.
+> URL 형식의 저장소별 구성을 사용하려면 [CIF 핵심 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0)와 최신 버전의 Adobe Experience Manager 콘텐츠 및 Commerce 추가 기능이 필요합니다.
 
 ## 카테고리 인식 제품 페이지 URL {#context-aware-pdps}
 
@@ -211,7 +211,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 
 ### Sling 매핑과 결합 {#sling-mapping}
 
-`UrlProvider` 외에도 URL을 다시 작성하고 처리하도록 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 구성할 수 있습니다. AEM Archetype 프로젝트에서는 포트 4503(게시) 및 80(Dispatcher)에 대한 일부 Sling 매핑을 구성할 수 있도록 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)도 제공합니다.
+`UrlProvider` 외에도 URL을 다시 작성하고 처리하도록 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 구성할 수 있습니다. 또한 AEM Archetype 프로젝트는 포트 4503(게시) 및 80(Dispatcher)에 대한 일부 Sling 매핑을 구성하기 위한 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)을 제공합니다.
 
 ### AEM Dispatcher과 결합 {#dispatcher}
 
@@ -243,7 +243,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 반면 검색 엔진은 새 URL 형식으로 모든 카탈로그 페이지를 다시 캡처하는 데 시간이 필요합니다. 이 프로세스를 지원하고 최종 사용자 경험을 개선하기 위해 사용자를 이전 URL에서 새 URL로 전달하는 리디렉션을 제공하는 것이 좋습니다.
 
-이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 이후 단계 및 프로덕션 환경 모두에 대해 CIF 제품 사이트 맵 생성기](../../overview/seo-and-url-management.md)에서 생성된 [제품 사이트 맵을 얻은 다음 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)을(를) 만듭니다. 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
+이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 그런 다음 스테이지와 프로덕션 환경 모두에 대해 CIF 제품 사이트 맵 생성기](../../overview/seo-and-url-management.md)에서 생성된 [제품 사이트 맵을 가져오고 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)을(를) 만듭니다. 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
 
 ## 예 {#example}
 

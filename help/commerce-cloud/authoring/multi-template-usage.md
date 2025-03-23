@@ -2,7 +2,7 @@
 title: 여러 범주 및 제품 페이지 만들기
 description: 타깃팅된 마케팅 콘텐츠로 카테고리 랜딩 및 제품 세부 사항 페이지를 보강하는 방법을 알아봅니다.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 이 기능은 CIF을 기반으로 하는 상점(예: Venia)에만 작동합니다.
+> 이 기능은 CIF(예: Venia)를 기반으로 하는 상점에만 작동합니다.
 
-[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 콘텐츠 작성자에게 추가 범주 및 제품 페이지를 만드는 기능을 제공합니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
+[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 통해 콘텐츠 작성자는 추가 범주 및 제품 페이지를 만들 수 있습니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
@@ -37,4 +37,4 @@ ht-degree: 0%
 
 ## 관련 리소스 {#related}
 
-페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. [관련 AEM 콘텐츠로 제품 데이터를 보강](./enrich-product-associated-content.md)하는 방법에 대해 알아봅니다.
+페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. [연결된 AEM 콘텐츠로 제품 데이터를 보강](./enrich-product-associated-content.md)하는 방법에 대해 알아봅니다.

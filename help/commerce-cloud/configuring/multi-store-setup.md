@@ -2,7 +2,7 @@
 title: Commerce 다중 스토어 설정
 description: Adobe Commerce에서 Adobe Experience Manager으로 여러 스토어 보기를 매핑하는 방법을 알아봅니다. 이를 통해 프로젝트는 다중 임차인 및 다국어 사용 사례를 지원할 수 있습니다.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Adobe Experience Manager(AEM) CIF 핵심 구성 요소는 여러 AEM 사이트 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-라이브 카피 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용하여 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
+Live Copy 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용되어 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
 
 권장되는 설정은 AEM 사이트와 Adobe Commerce 스토어 보기 간에 1:1 관계를 사용하는 것입니다.
 
@@ -61,6 +61,6 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 ## 추가 리소스
 
 * [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
-* [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [AEM CIF 핵심 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)

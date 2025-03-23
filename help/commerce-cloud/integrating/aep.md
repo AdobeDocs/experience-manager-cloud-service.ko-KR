@@ -1,8 +1,8 @@
 ---
 title: AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합
-description: CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 전송하는 방법에 대해 알아봅니다.
+description: CIF - Experience Platform Connector를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 보내는 방법을 알아봅니다.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 1%
@@ -23,33 +23,33 @@ ht-degree: 1%
 
 [Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 __장바구니에 추가__&#x200B;와 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터를 전달하기 위해 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en)과(와) 매끄럽게 통합됩니다.
 
-[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 Adobe Commerce용 [Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)라는 JavaScript 라이브러리를 제공하여 Commerce 상점 전면에서 이벤트 데이터를 수집합니다. 해당 이벤트 데이터는 Experience Platform으로 전송되어 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 고객 여정을 다루는 360도 프로필을 빌드하는 데 사용됩니다. Commerce 데이터를 Adobe Experience Cloud의 다른 제품에 연결하면 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
+[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 Adobe Commerce 상점 첫 화면에서 이벤트 데이터를 수집할 수 있도록 [Commerce용 Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)라는 JavaScript 라이브러리를 제공합니다. 해당 이벤트 데이터는 Experience Platform으로 전송되어 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 고객 여정을 다루는 360도 프로필을 빌드하는 데 사용됩니다. Commerce 데이터를 Adobe Experience Cloud의 다른 제품에 연결하면 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
 클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 기술 제품군에 대해 자세히 알아보십시오.
 
-## Experience Platform에 `addToCart` 이벤트 데이터 보내기 {#send-addtocart-to-aep}
+## `addToCart` 이벤트 데이터를 Experience Platform에 보내기 {#send-addtocart-to-aep}
 
-다음 단계에서는 CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링된 제품 페이지에서 Experience Platform으로 `addToCart` 이벤트 데이터를 전송하는 방법을 보여 줍니다. Adobe Experience Platform Debugger 브라우저 확장을 사용하면 제출된 데이터를 테스트하고 검토할 수 있습니다.
+다음 단계에서는 CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 `addToCart` 이벤트 데이터를 전송하는 방법을 보여 줍니다. Adobe Experience Platform Debugger 브라우저 확장을 사용하면 제출된 데이터를 테스트하고 검토할 수 있습니다.
 
 ![Adobe Experience Platform Debugger에서 addToCart 이벤트 데이터 검토](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## 사전 요구 사항 {#prerequisites}
 
-로컬 개발 환경을 사용하여 이 데모를 완료합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md)에 대한 요구 사항과 단계를 검토하십시오.
+로컬 개발 환경을 사용하여 이 데모를 완료합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. [AEM as a Cloud Service SDK을 사용하여 로컬 개발 설정](../develop.md)에 대한 요구 사항과 단계를 검토하십시오.
 
 또한 데이터 수집을 위한 스키마, 데이터 세트 및 데이터 스트림을 만들려면 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html)에 대한 액세스 권한과 사용 권한이 필요합니다. 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)를 참조하십시오.
 
 ## AEM Commerce as a Cloud Service 설정 {#aem-setup}
 
-필요한 __AEM Commerce as a Cloud Service__ 로컬 환경에서 코드 및 구성을 사용하여 작업하려면 다음 단계를 완료하십시오.
+필요한 코드 및 구성을 사용하여 __AEM Commerce as a Cloud Service__ 로컬 환경에서 작업하려면 다음 단계를 완료하십시오.
 
 ### 로컬 설정
 
-[로컬 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) 단계를 따라 AEM Commerce as a Cloud Service 환경에서 작업할 수 있습니다.
+작동하는 AEM Commerce as a Cloud Service 환경을 만들 수 있도록 [로컬 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) 단계를 따르십시오.
 
 ### 프로젝트 설정
 
-새 AEM Commerce(CIF) 프로젝트를 만들 수 있도록 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 단계를 따르십시오.
+새 AEM Commerce(CIF) 프로젝트를 만들 수 있도록 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 단계를 따르십시오.
 
 >[!TIP]
 >
@@ -58,7 +58,7 @@ ht-degree: 1%
 ![AEM Commerce 프로젝트](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-프로젝트의 루트 디렉토리에서 다음 명령을 실행하여 생성된 AEM Commerce 프로젝트를 빌드하고 로컬 AEM SDK에 배포합니다.
+프로젝트의 루트 디렉터리에서 다음 명령을 실행하여 만든 AEM Commerce 프로젝트를 로컬 AEM SDK에 빌드하고 배포합니다.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -149,7 +149,7 @@ Babel 로더(`babel-loader`) 및 Webpack을 사용하여 JavaScript 파일을 �
 
 [Apollo Client](https://www.apollographql.com/docs/react/)는 GraphQL을 사용하여 로컬 및 원격 데이터를 모두 관리하는 데 사용됩니다. 또한 GraphQL 쿼리의 결과를 정규화된 로컬 메모리 내 캐시에 저장합니다.
 
-[`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/)이(가) 효과적으로 작동하려면 `possibleTypes.js` 파일이 필요합니다. 이 파일을 생성하려면 [자동으로 가능한 형식 생성](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically)을 참조하세요. 또한 [PWA Studio 참조 구현](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120)과 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 파일의 예제를 참조하십시오.
+[`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/)이(가) 효과적으로 작동하려면 `possibleTypes.js` 파일이 필요합니다. 이 파일을 생성하려면 [자동으로 가능한 형식 생성](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically)을 참조하세요. [PWA Studio 참조 구현](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 및 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 파일의 예제를 참조하십시오.
 
 
 1. `ui.frontend` 모듈로 이동하여 파일을 `./src/main/possibleTypes.js`(으)로 저장합니다.
@@ -226,7 +226,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
    >[!IMPORTANT]
    >
-   >이미 __AEM Guides - CIF Venia 프로젝트__&#x200B;의 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 파일에 익숙하실 수 있지만 이 파일에 몇 가지 변경 사항이 있습니다. 먼저 __TODO__ 댓글을 검토하십시오. 그런 다음 `eventsCollector` 속성 내에서 `eventsCollector > aep` 개체를 찾고 `orgId` 및 `datastreamId` 속성을 올바른 값으로 업데이트합니다. [자세히 알아보기](./aep.md#add-aep-values-to-aem).
+   >이미 __AEM Guides - CIF Venia 프로젝트__&#x200B;의 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 파일을 잘 알고 있을 수 있지만 이 파일에 몇 가지 변경 사항이 있습니다. 먼저 __TODO__ 댓글을 검토하십시오. 그런 다음 `eventsCollector` 속성 내에서 `eventsCollector > aep` 개체를 찾고 `orgId` 및 `datastreamId` 속성을 올바른 값으로 업데이트합니다. [자세히 알아보기](./aep.md#add-aep-values-to-aem).
 
 1. 다음 내용으로 `App.js` 파일을 만듭니다. 이 파일은 일반적인 React 애플리케이션 시작 지점 파일과 유사하며 Experience Platform 통합을 용이하게 하기 위해 React 및 사용자 정의 후크와 React Context 사용을 포함합니다.
 
@@ -326,14 +326,14 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
    `EventCollectorContext`은(는) 다음과 같은 React 컨텍스트를 내보냅니다.
 
    - commerce-events-sdk 및 commerce-events-collector 라이브러리,
-   - 는 Experience Platform 및/또는 ACDS에 대해 주어진 구성으로 초기화합니다.
-   - Peregrine에서 모든 이벤트를 구독하고 이벤트 SDK에 전달합니다.
+   - 는 Experience Platform 및/또는 ACDS에 대한 주어진 구성으로 초기화합니다.
+   - Peregrine에서 모든 이벤트를 구독하고 이벤트 SDK으로 전달합니다.
 
    `EventCollectorContext`의 구현 세부 정보를 검토할 수 있습니다. GitHub의 [aem-core-cif-components](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)을(를) 참조하십시오.
 
 ### 업데이트된 AEM 프로젝트 빌드 및 배포
 
-위의 패키지 설치, 코드 및 구성 변경 내용이 올바른지 확인하려면 Maven 명령 `$ mvn clean install -PautoInstallSinglePackage`을(를) 사용하여 업데이트된 AEM Commerce 프로젝트를 다시 빌드하고 배포하십시오.
+위의 패키지 설치, 코드 및 구성 변경 내용이 올바른지 확인하려면 다음 Maven 명령을 사용하여 업데이트된 AEM Commerce 프로젝트를 다시 빌드하고 배포하십시오. `$ mvn clean install -PautoInstallSinglePackage`.
 
 ## Experience Platform 설정 {#aep-setup}
 
@@ -395,7 +395,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 ### 데이터 스트림 만들기
 
-Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 단계를 완료합니다.
+Experience Platform에서 데이터 스트림을 만들 수 있도록 다음 단계를 완료합니다.
 
 1. 브라우저에서 __Adobe Experience Platform__ 제품 홈 페이지로 이동합니다. 예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
@@ -432,9 +432,9 @@ Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 
 
 ## `addToCart` 이벤트 트리거 및 데이터 수집 확인 {#event-trigger-verify}
 
-위의 단계에서는 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 제품 UI에서 Google Chrome 확장 _Snowploy Inspector_ 및 데이터 세트 __지표 및 그래프__ 토글을 사용하여 `addToCart` 이벤트를 트리거하고 데이터 수집을 확인할 수 있습니다.
+위의 단계에서 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 제품 UI에서 Google Chrome 확장 _Snowploy Inspector_ 및 데이터 세트 __지표 및 그래프__ 토글을 사용하여 `addToCart` 이벤트를 트리거하고 데이터 수집을 확인할 수 있습니다.
 
-이벤트를 트리거하려면 로컬 설정에서 AEM author 또는 publish 서비스를 사용할 수 있습니다. 예를 들어, 계정에 로그인하여 AEM 작성자를 사용하십시오.
+이벤트를 트리거하려면 로컬 설정에서 AEM 작성자 또는 게시 서비스를 사용할 수 있습니다. 이 예에서는 계정에 로그인하여 AEM 작성자를 사용하십시오.
 
 1. 사이트 페이지에서 __내 데모 StoreFront > us > en__ 페이지를 선택하고 상단 작업 표시줄의 __편집__&#x200B;을 클릭합니다.
 
@@ -443,18 +443,18 @@ Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 
 1. __제품 페이지__&#x200B;에서 원하는 제품 카드를 클릭한 다음 __색상, 크기__&#x200B;을(를) 선택하여 __장바구니에 추가__ 단추를 사용하도록 설정합니다.
 
 
-1. 브라우저의 확장 패널에서 __Snowploy Inspector__ 확장을 열고 왼쪽 레일에서 __Wed SDK Experience Platform__&#x200B;을 선택합니다.
+1. 브라우저의 확장 패널에서 __Snowploy Inspector__ 확장을 열고 왼쪽 레일에서 __Experience Platform Wed SDK__&#x200B;를 선택합니다.
 
 
-1. __제품 페이지__(으)로 돌아가서 __장바구니에 추가__ 단추를 클릭하십시오. 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. __Adobe Experience Platform Debugger__ 확장에 이벤트 세부 정보가 표시됩니다.
+1. __제품 페이지__(으)로 돌아가서 __장바구니에 추가__ 단추를 클릭하십시오. 이렇게 하면 Experience Platform으로 데이터가 전송됩니다. __Adobe Experience Platform Debugger__ 확장에 이벤트 세부 정보가 표시됩니다.
 
-   ![AEP 디버거 장바구니에 추가 이벤트 데이터](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
+   ![AEP Debugger 추가 장바구니 이벤트 데이터](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
 
 
 1. Experience Platform 제품 UI 내에서 __데이터 세트 활동__ 탭의 __데이터 세트 > 내 데모 StoreFront__(으)로 이동합니다. __지표 및 그래프__&#x200B;가 활성화되면 이벤트 데이터 통계가 표시됩니다.
 
-   ![Experience Platform 데이터 집합 데이터 통계](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
+   ![Experience Platform 데이터 세트 데이터 통계](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
 
 
@@ -462,7 +462,7 @@ Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 
 
 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)는 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 프로젝트의 일부인 [Adobe Commerce용 데이터 연결](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)의 맨 위에 만들어집니다.
 
-PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Source에서 제공하는 Progressive Web Application(PWA) 상점 전면을 만들 수 있습니다. 프로젝트에 시각적 구성 요소에 논리를 추가하기 위한 [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)이라는 구성 요소 라이브러리도 포함되어 있습니다. [Peregrin 라이브러리](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)는 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)에서 Experience Platform과 원활하게 통합하기 위해 사용하는 사용자 지정 React 후크도 제공합니다.
+PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Source에서 제공하는 Progressive Web Application(PWA) 상점 전면을 만들 수 있습니다. 프로젝트에 시각적 구성 요소에 논리를 추가하기 위한 [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)이라는 구성 요소 라이브러리도 포함되어 있습니다. [Peregrin 라이브러리](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)는 또한 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)에서 Experience Platform과 원활하게 통합하기 위해 사용하는 사용자 지정 React 후크를 제공합니다.
 
 
 ## 지원되는 이벤트 {#supported-events}
