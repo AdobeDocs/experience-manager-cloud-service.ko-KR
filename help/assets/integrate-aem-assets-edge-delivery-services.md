@@ -2,9 +2,9 @@
 title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DNL AEM Assets] 통합'
 description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Universal Editor] 및 [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-![UE가 있는 AEM 자산](/help/assets/assets/EDS2.png)
+![범용 편집기와 AEM 자산 통합](/help/assets/assets/EDS2.png)
 
 [[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)은(는) 구성 가능한 서비스 집합으로, 웹 사이트에서 콘텐츠를 작성하고 전달하는 방법에 대해 높은 수준의 유연성을 제공합니다. [AEM 콘텐츠 관리](/help/sites-cloud/authoring/author-publish.md) 및 [WYSIWYG 작성은  [!DNL Universal Editor] 뿐만 아니라 문서 기반 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)을 사용하여 모두 사용할 수 있습니다.
 
