@@ -5,7 +5,7 @@ feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 66%
@@ -31,9 +31,8 @@ AEM as a Cloud Service과의 통합에 대한 지원은 구현한 Campaign 버�
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 지원되지 않음 |
 | [Campaign v8(클라이언트 콘솔)](https://experienceleague.adobe.com/docs/campaign-v8.html) | 지원되지 않음 |
-| Campaign Web 사용자 인터페이스 | 지원됨. [자세히 알아보기](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
-
+| Campaign Web 사용자 인터페이스 | 지원됨. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Adobe Campaign Standard와 통합 {#acs}
 
-AEM as a Cloud Service는 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html)(ACS)와의 통합을 지원하지 않습니다.
+AEM as a Cloud Service는 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html)&#x200B;(ACS)와의 통합을 지원하지 않습니다.
