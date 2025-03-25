@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **콘텐츠 조각 편집기 롤아웃**
 
-AEM as a Cloud Service에서 새로운 스펙트럼 UI 기반 콘텐츠 조각 편집기를 계속 활성화합니다. 2024년 11월에 모든 Cloud Service 개발자 환경에 대한 기본값이 된 후 2025년 4월 1일에 모든 스테이지 환경에 대한 기본값으로 설정되고 2025년 5월 1일에 모든 프로덕션 환경에 대한 기본값으로 설정됩니다. 모든 경우 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 되돌릴 수 있습니다.
+당사는 AEM as a Cloud Service에서 새로운 Spectrum UI 기반 콘텐츠 조각 편집기를 계속 활성화할 예정입니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
 
 **번역 HTTP API**
 
