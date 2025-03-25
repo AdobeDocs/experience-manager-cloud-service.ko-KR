@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
+source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6106'
 ht-degree: 99%
 
 ---
@@ -1318,6 +1318,7 @@ ht-degree: 99%
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [SPA 편집기 사용 중단](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA 소개 및 워크스루](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 튜토리얼](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React를 사용하여 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)

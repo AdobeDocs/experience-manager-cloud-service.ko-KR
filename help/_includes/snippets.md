@@ -1,8 +1,8 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -60,12 +60,12 @@ ht-degree: 94%
 ## 범용 편집기{#universal-editor-see-also}
 
 * [범용 편집기를 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Forms에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Forms 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [디자인 아름다운 Forms: 스타일링 및 테마 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [사용자 정의 양식 구성 요소 작성](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [양식에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [양식 제출 액션 구성 및 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [양식 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [세련된 양식 디자인하기: 스타일링 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [사용자 정의 양식 구성 요소 빌드](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 
@@ -248,7 +248,7 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->SPA 편집기는 새로운 프로젝트에서는 [더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor). 기존 프로젝트에 대해서는 Adobe에서 지원하지만 새로운 프로젝트에는 사용하면 안 됩니다. AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
+>SPA 편집기는 새로운 프로젝트에서는 [더 이상 사용되지 않습니다](/help/implementing/developing/hybrid/spa-editor-deprecation.md). 기존 프로젝트에 대해서는 Adobe에서 지원하지만 새로운 프로젝트에는 사용하면 안 됩니다. AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
 >
 >* Headless 콘텐츠를 시각적으로 편집하기 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)
 >* Headless 콘텐츠의 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)
@@ -256,12 +256,12 @@ ht-degree: 94%
 ## 범용 편집기{#ue-see-also}
 
 * [범용 편집기를 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Forms에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [양식 제출 작업 구성 및 사용자 지정](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Forms 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [디자인 아름다운 Forms: 스타일링 및 테마 가이드](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [사용자 정의 양식 구성 요소 작성](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [스팸으로부터 Forms 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [양식에 동적 동작 추가](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [양식 제출 액션 구성 및 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [양식 게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [세련된 양식 디자인하기: 스타일링 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [사용자 정의 양식 구성 요소 빌드](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 추가 참조 {#see-more-eds-forms}
 
