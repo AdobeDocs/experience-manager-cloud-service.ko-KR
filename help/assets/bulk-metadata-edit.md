@@ -1,5 +1,5 @@
 ---
-title: [DNL!에서 벌크 메타데이터 편집 Assets 보기]
+title: 에서 벌크 메타데이터 편집 Assets 보기
 description: '[DNL]에서 사용 가능한 여러 에셋에 대한 사전 정의된 표준 메타데이터 필드 세트를 업데이트하는 방법에 대해 알아봅니다. Assets View] 와 동시에 표시됩니다.'
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 9b5191bd05bfb06fb4eb1a9b710b98cc132ffeda
