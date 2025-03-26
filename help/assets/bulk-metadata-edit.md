@@ -2,9 +2,9 @@
 title: ' [!DNL Assets View]에서 일괄 메타데이터 편집'
 description: '[DNL]에서 사용 가능한 여러 에셋에 대한 사전 정의된 표준 메타데이터 필드 세트를 업데이트하는 방법에 대해 알아봅니다. Assets View] 와 동시에 표시됩니다.'
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL Assets View]의 **[!DNL Bulk Metadata Edit]** 기능을 사용하면 여러 에셋 파일에 대해 미리 정의된 표준 메타데이터 필드 집합을 동시에 편집할 수 있습니다. 각 에셋에 대한 표준 메타데이터를 개별적으로 업데이트하는 대신, 여러 에셋을 선택하고 사전 정의된 표준 메타데이터 세트를 한 번에 일괄 업데이트합니다. 여러 에셋에 대한 표준 메타데이터 속성 세트를 한 번에 일괄 편집할 수 있는 기능은 대규모 에셋 세트에서 이러한 표준 메타데이터 속성의 효율성, 일관성 및 정확성을 유지 관리하여 해당 에셋의 검색 및 구성을 향상합니다.
+[!DNL Assets View]의 **[!DNL Bulk Metadata Edit]** 기능을 사용하면 여러 에셋 파일에 대해 미리 정의된 표준 메타데이터 필드 집합을 동시에 편집할 수 있습니다. 각 에셋에 대한 표준 메타데이터를 개별적으로 업데이트하는 대신, 여러 에셋을 선택하고 사전 정의된 표준 메타데이터 세트를 한 번에 일괄 업데이트합니다. 이 기능은 대규모 에셋 세트에서 표준 메타데이터 속성 세트의 효율성, 일관성 및 정확성을 유지하며, 해당 에셋의 검색 및 구성을 향상시킵니다.
 
 ## 자산 메타데이터 벌크 편집 {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
