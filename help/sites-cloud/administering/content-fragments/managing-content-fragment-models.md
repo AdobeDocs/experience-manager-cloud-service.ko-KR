@@ -4,9 +4,10 @@ description: 콘텐츠 조각 모델을 관리하는 방법을 알아봅니다. 
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 48%
 
 ---
@@ -49,7 +50,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)의 맨 왼쪽 패널을 사용하여 **콘텐츠 조각 모델**&#x200B;을(를) 리소스 유형으로 선택하여 보고, 찾아보고, 관리할 수 있습니다.
 
-![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 이렇게 하면 콘텐츠 조각 모델에 대한 보기가 열립니다.
 
@@ -62,7 +63,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * IMS 조직도 표시합니다.
    * 다양한 [작업](#actions-unselected) 제공
 * 왼쪽 패널
-   * 폴더로 나열된 모든 [구성](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)을 표시합니다.
+   * 폴더로 나열된 [모든 구성에 대한 경로](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)을(를) 표시합니다.
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
    * 트리의 특정 폴더를 선택할 수 있습니다
    * 중첩된 폴더(하위 구성)를 표시하도록 크기를 조정할 수 있습니다.
@@ -75,7 +76,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
          * [표시할 열을 선택할 수 있습니다.](#select-columns-console)
       * 콘텐츠 조각 모델에 대한 [다양한 정보 필드](#information-content-fragment-models)에서 링크를 제공합니다. 필드에 따라 다음 작업을 수행할 수 있습니다.
          * 편집기에서 적절한 모델을 엽니다
-         * 구성에 대한 정보 표시
+         * 구성 경로에 대한 정보 표시
          * 모델 상태에 대한 정보 표시
       * [콘텐츠 조각 모델에 대한 다른 특정 정보 필드](#information-content-fragments)를 [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
          * 열에서 값을 선택하면 필터로 즉시 적용됩니다
@@ -96,8 +97,8 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 편집기에서 모델을 여는 링크를 제공합니다.
 * 잠김
    * 모델이 잠기면 자물쇠 아이콘으로 표시됩니다.
-* **구성**
-   * 콘솔에서 구성을 여는 링크를 제공합니다.
+* **경로**
+   * 콘솔에서 구성을 여는 링크로서 경로를 제공합니다.
 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
 * **상태**
    * 정보만.
@@ -123,7 +124,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 ![콘텐츠 조각 콘솔 - 선택한 콘텐츠 조각 모델에 대한 정보](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[구성](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[경로](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[상태](#enabling-a-content-fragment-model)**
 * **제목**
 * **태그**
@@ -233,7 +234,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    >* [콘텐츠 조각 모델 사용이 활성화된 경우](/help/sites-cloud/administering/content-fragments/setup.md)
    >* 모델을 만들 폴더를 선택했을 때
 
-1. **구성**&#x200B;을(를) 선택하고 **이름**&#x200B;을(를) 지정하십시오.
+1. 구성에 대한 **경로**&#x200B;을(를) 선택하고 **이름**&#x200B;을(를) 지정하십시오.
 
    >[!NOTE]
    >

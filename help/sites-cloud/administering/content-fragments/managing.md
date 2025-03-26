@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 79%
@@ -58,7 +58,7 @@ ht-degree: 79%
 
 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)의 맨 왼쪽 패널을 사용하여 **콘텐츠 조각**&#x200B;을 리소스 유형으로 선택하여 보고, 검색하고, 관리할 수 있습니다.
 
-![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![콘텐츠 조각 콘솔 - 탐색](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 **콘텐츠 조각**&#x200B;을 선택하면 새 탭에서 콘솔이 열립니다.
 
