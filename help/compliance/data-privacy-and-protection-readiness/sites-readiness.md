@@ -5,13 +5,13 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Experience Manager Sites 준비 완료 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Experience Manager Sites 준비 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -130,7 +130,7 @@ AEM에서는 ContextHub와 관련하여 선택적 데이터 계층을 제공합�
 
 ### ContextHub의 지속성 미리보기 {#previewing-persistence-of-contexthub}
 
-ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행할 수 있습니다.
+ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행하십시오.
 
 * 브라우저의 콘솔 사용. 예를 들어
 
@@ -180,7 +180,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
-ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행할 수 있습니다.
+ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행하십시오.
 
 * 브라우저의 콘솔 사용:
 
@@ -244,7 +244,7 @@ ContextHub 지속성 지우기:
 
 * 모든 ContextHub 지속성 계층을 지우려면 모든 레이어에 대해 적절한 코드를 호출해야 합니다.
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL`(기본값)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (기본값)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`

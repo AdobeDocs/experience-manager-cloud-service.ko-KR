@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -47,14 +47,14 @@ Cloud Manager를 통해 Edge Delivery Services 라이선스에 액세스하고 �
 
 ## 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery Services 추가에 대한 정보
 
-Edge Delivery Services은 프로젝트를 시작한 방법 또는 사이트를 만들 시기에 따라 여러 가지 방법으로 추가할 수 있습니다.
+Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 만들고자 하는 시기에 따라 다양한 방식으로 추가할 수 있습니다.
 
 | 사용 사례 | 설명 |
 | --- | --- |
 | 새 프로덕션 프로그램에 Edge Delivery Services를 추가하려고 합니다. | [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)를 참조하십시오.<br>마법사의 **솔루션 및 추가 기능** 탭에서 **Edge Delivery Services**&#x200B;를 선택합니다. |
 | 기존 프로덕션 프로그램에 Edge Delivery Services를 추가하려고 합니다. | [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)을 참조하십시오.<br>**프로그램 편집** 대화 상자의 **솔루션 및 추가 기능** 탭 아래에서 **Edge Delivery Services**&#x200B;를 선택합니다. |
 | Cloud Manager에 Edge Delivery 사이트를 추가하려고 합니다. | [Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 참조하십시오. |
-| 지금 Edge Delivery 사이트를 만들고 싶습니다 | 단추를 클릭하여 [Cloud Manager에서 빠르게 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하세요. |
+| 지금 Edge Delivery 사이트를 만들려고 합니다. | [버튼 클릭만으로 Cloud Manager에서 Edge Delivery 사이트를 빠르게 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오. |
 | 새 샌드박스 프로그램이나 기존 샌드박스 프로그램에 Edge Delivery Services를 추가하려고 합니다. | [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)를 참조하십시오.<br>샌드박스 프로그램을 만들면 Edge Delivery Services가 기본적으로 프로그램에 추가되므로 선택할 필요가 없습니다.<br>Edge Delivery가 일반적으로 제공되기 전의 기존 샌드박스 프로그램은 Edge Delivery Services를 자동으로 상속합니다. |
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Edge Delivery Services은 프로젝트를 시작한 방법 또는 사이트를 �
 | --- | --- | --- |
 | 1 | 제품 공동 작업 채널 가입 | **요청 제출하기**&#x200B;를 클릭하면 Adobe에 귀사를 위한 채널을 만들기 위한 요청이 제출됩니다. 채널이 이미 존재하는 경우 귀사 채널로 연결됩니다. |
 | 2 | 사전 요구 사항 완료 | [시작하기 튜토리얼 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
-| 3 | Edge Delivery 사이트 추가 또는 <br>지금 사이트 만들기 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오.<br>Cloud Manager에서 [Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오. |
+| 3 | Edge Delivery 사이트 추가 또는 <br>지금 사이트 만들기 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오.<br>[Cloud Manager에서 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오. |
 | 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오. |

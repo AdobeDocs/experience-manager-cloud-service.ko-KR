@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 | 문서 기반 작성 | [여기 클릭](/help/edge/docs/forms/tutorial.md) |
 
 
-<span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름 및 저장소 이름으로 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 이메일을 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
+<span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. Edge Delivery Services 양식은 WYSIWYG(What-You-See-Is-What-You Get) 기능을 제공하는 범용 편집기를 사용하여 작성됩니다. 범용 편집기는 효율적인 양식 작성을 위한 현대적이고 직관적인 인터페이스를 제공합니다.
 
@@ -195,7 +195,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 이번 단계가 끝났습니다! 적응형 양식 블록은 이제 AEM 프로젝트의 일부입니다. 이제 [AEM 프로젝트에 양식을 만들고 추가](#add-edge-delivery-services-forms-to-aem-site-project)할 수 있습니다.
 
-## WYSIWYG을 사용하여 Forms 작성
+## WYSIWYG를 사용하여 양식 작성
 
 WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프로젝트를 편집하고 AEM 프로젝트 페이지에 Edge Delivery Services 양식을 포함하도록 적응형 양식 섹션을 추가할 수 있습니다.
 
