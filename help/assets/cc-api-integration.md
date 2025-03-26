@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '847'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,8 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 * [!DNL Experience Manager]은(는) 자산 처리를 환경당 분당 300개 요청 및 조직당 분당 700개 요청으로 제한합니다.
 * 파일 크기는 [!DNL Adobe Photoshop] API 작업의 경우 4GB로 제한되고 [!DNL Adobe Lightroom] 작업의 경우 1GB로 제한됩니다.
+* Microsoft Office 문서(&quot;.docx&quot;, &quot;.doc&quot;, &quot;.ppt&quot;, &quot;.pptx&quot;, &quot;.xls&quot;, &quot;.xlsx&quot;)의 PDF 렌디션은 100MB 이하의 파일로 제한됩니다.
+* 비디오 트랜스코딩은 입력 파일이 15GB 이하인 것으로 제한된다.
 
 **추가 참조**
 
