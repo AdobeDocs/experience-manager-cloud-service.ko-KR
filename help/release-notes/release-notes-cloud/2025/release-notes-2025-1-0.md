@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### AEM Assets 보기의 새로운 기능 {#new-features-assets}
+### AEM Assets의 새로운 기능 {#new-features-assets}
 
-**검색 필터 사용자 지정**
+**Dynamic Media 게재 보고서**
 
-사용자 정의 검색 필터는 관련 정보를 찾는 정확성과 효율성을 향상시킵니다. 이를 통해 보다 세밀하게 검색하고 브랜드, 제품, 카테고리 또는 기타 키 식별자와 같은 특정 속성에 따라 데이터를 필터링할 수 있습니다. 이를 통해 조직을 개선하고 관련 없는 결과를 찾는 데 소요되는 시간을 줄이며 보다 신속한 의사 결정을 수행할 수 있습니다. 또한 대규모 데이터 세트를 탐색하고 분석하기 쉬워지므로 확장성을 지원합니다.
+자산 수준 게재 카운트, 레퍼러 세부 정보, AEM Assets의 자산 경로 및 고유 자산 ID를 포함한 Dynamic Media를 통해 게재된 자산에 대한 게재 인사이트를 확인할 수 있습니다. AEM Assets 저장소 또는 특정 폴더 계층에 있는 모든 자산에 대한 보고서를 생성합니다. 이러한 인사이트를 통해 제공된 자산의 ROI를 측정하고, 채널 성과를 평가하고, 자산 관리에 대한 정보에 입각한 결정을 내릴 수 있습니다.
 
-![사용자 지정 검색 필터](/help/assets/assets/custom-search-filters.png)
+![동적 렌디션](/help/assets/assets/referrer.png)
 
-### Content Hub의 새로운 기능 {#new-features-content-hub}
+**Dynamic Media 다중 오디오 및 캡션**
 
-설명
+[Dynamic Media로 비디오의 다중 캡션 및 다중 오디오 트랙 지원](/help/assets/dynamic-media/video.md#about-msma) - 이제 기본 비디오에 여러 개의 캡션과 오디오 트랙을 손쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
+
+**Dynamic Adaptive Streaming over HTTP 지원**
+
+새로운 프로토콜(DASH - Dynamic Adaptive Streaming over HTTP)이 Dynamic Media 비디오 게재(CMAF 활성화)에서 적응형 스트리밍을 위해 시작되었습니다.
+
+* 적응형 스트리밍(DASH/HLS)은 비디오에 대한 더 나은 사용자 시청 경험을 보장합니다.
+
+* DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있습니다.
+
+**자산 관계**
+
+이제 자산 보기의 간소화된 자산 세부 정보 패널에서 자산 관계를 보고 편집할 수 있습니다. 소스 및 파생과 같은 관계를 콘텐츠에 쉽게 추가하면 사용자가 관련성 있는 히어로 콘텐츠를 보다 효과적으로 찾을 수 있습니다.
+
+**자산 재처리**
+
+이제 자산 보기에서 폴더에서 사용할 수 있는 자산의 재처리가 지원됩니다. **전체 프로세스** 옵션을 사용하거나 기본 미리보기 렌디션, 메타데이터, 사후 처리 워크플로, 처리 프로필과 같은 고급 옵션을 사용할 수 있습니다.
 
 ### AEM Assets의 얼리 액세스 기능 {#early-access-features-assets}
 
