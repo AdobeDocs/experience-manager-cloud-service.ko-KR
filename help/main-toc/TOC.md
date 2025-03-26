@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
+source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 99%
@@ -114,8 +114,8 @@ ht-degree: 99%
          + [2023.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager 릴리스 노트 {#cloud-manager}
-      + [현재](/help/implementing/cloud-manager/release-notes/current.md)
+   + Cloud Manager 릴리스 정보 {#cloud-manager}
+      + [최신](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
@@ -322,7 +322,7 @@ ht-degree: 99%
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [마이그레이션 후 주체 관리](/help/journey-migration/managing-principals-after-migration.md)
-         + [마이그레이션 후 IMS에 주도자 일괄 업로드](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
+         + [마이그레이션 후 IMS에 주체 일괄 업로드](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -1038,7 +1038,7 @@ ht-degree: 99%
       + WYSIWYG 작성 {#universal-editor}
          + [Edge Delivery Services용 양식 범용 편집기 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 자습서](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [범용 편집기 인터페이스 가이드: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [모바일 친화적인 양식 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [세련된 양식 디자인하기: 범용 편집기 스타일 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1047,7 +1047,7 @@ ht-degree: 99%
          + [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [양식 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [사용자 정의 양식 구성 요소 빌드: 범용 편집기 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [양식 데이터 모델 통합: 양식 데이터 모델과 Forms 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [양식 데이터 모델 통합: 양식과 양식 데이터 모델 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [재사용 가능한 모듈식 독립형 세그먼트: 양식에서 양식 조각 만들기 및 사용](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + 문서 기반 작성 {#getting-started-edge-delivery-services-forms}
          + [첫 번째 양식 작성: Google Sheets 및 Excel를 활용한 빠른 시작 안내서](/help/edge/docs/forms/tutorial.md)
@@ -1323,7 +1323,7 @@ ht-degree: 99%
          + [SPA WKND 튜토리얼](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React를 사용하여 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Angular를 사용하여 시작하기](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [SPA 심층 분석](/help/implementing/developing/hybrid/deep-dives.md)
+         + [SPA 심층 분석](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [AEM용 SPA 개발](/help/implementing/developing/hybrid/developing.md)
          + [SPA 편집기 개요](/help/implementing/developing/hybrid/editor-overview.md)
          + [SPA 블루프린트](/help/implementing/developing/hybrid/blueprint.md)
