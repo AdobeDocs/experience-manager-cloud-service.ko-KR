@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5931'
 ht-degree: 6%
 
 ---
+
 
 # AEM에서 에셋 검색 {#search-assets-in-aem}
 
@@ -313,7 +314,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ## 자산 선택기 {#asset-picker}
 
-자산 선택기(이전 버전의 [!DNL Adobe Experience Manager]에서는 자산 선택기라고 함)를 사용하면 DAM 자산을 특별한 방식으로 검색, 필터링 및 검색할 수 있습니다. 자산 선택기를 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수 있습니다. 에셋 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수로 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 에셋 선택기의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
+[AEM 자산 선택기](/help/assets/overview-asset-selector.md)([!DNL Adobe Experience Manager] 이전 버전에서는 자산 선택기라고 함)을 사용하면 특별한 방식으로 DAM 자산을 검색, 필터링 및 검색할 수 있습니다. 자산 선택기를 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수 있습니다. 에셋 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수로 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 에셋 선택기의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
 
 에셋 선택기는 HTML5 `Window.postMessage` 메시지를 사용하여 선택한 에셋에 대한 데이터를 받는 사람에게 보냅니다. 찾아보기 모드에서만 작동하며 Omnisearch 결과 페이지에서만 작동합니다.
 
@@ -370,6 +371,8 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 * **인덱싱**: 인덱싱된 메타데이터와 자산만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. [인덱싱](#searchindex)을 참조하십시오.
 
+자세한 [검색 모범 사례](search-best-practices.md)를 참조하세요.
+
 ## 검색을 설명하는 몇 가지 예 {#samples}
 
 키워드 주위에 큰따옴표를 사용하여 사용자가 지정한 정확한 순서로 정확한 구가 포함된 자산을 찾습니다.
@@ -407,62 +410,56 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 *그림: 대시를 사용하여 제외된 키워드가 없는 자산을 검색합니다.*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## 검색 기능과 관련된 구성 및 관리 작업 {#configadmin}
 
-### Search index configurations {#searchindex}
+### 색인 구성 검색 {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+에셋 검색은 메타데이터를 포함한 DAM 콘텐츠 인덱싱에 의존합니다. 보다 빠르고 정확한 에셋 검색은 최적화된 인덱싱과 적절한 구성에 의존합니다. [인덱싱](/help/operations/indexing.md)을 참조하십시오.
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### 시각적 또는 유사성 검색 {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+시각적 검색은 스마트 태그를 사용합니다. 스마트 태그 지정 기능을 구성한 후 다음 단계를 수행합니다.
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. [!DNL Experience Manager] CRXDE의 `/oak:index/lucene` 노드에서 다음 속성 및 값을 추가하고 변경 내용을 저장합니다.
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * 값이 `10`인 `Double` 형식의 `costPerEntry` 속성입니다.
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * 값이 `2`인 `Double` 형식의 `costPerExecution` 속성입니다.
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * 값이 `true`인 `Boolean` 형식의 `refresh` 속성입니다.
 
-   This configuration allows searches from the appropriate index.
+   이 구성을 사용하면 적절한 색인에서 검색할 수 있습니다.
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. Lucene 인덱스를 만들려면 CRXDE의 `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`에서 `nt-unstructured` 유형의 `imageFeatures`(이)라는 노드를 만듭니다. `imageFeatures` 노드에서
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * 값이 `jcr:content/metadata/imageFeatures/haystack0`인 `String` 형식의 `name` 속성을 추가하십시오.
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * 값이 `true`인 `Boolean` 형식의 `nodeScopeIndex` 속성을 추가하십시오.
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * 값이 `true`인 `Boolean` 형식의 `propertyIndex` 속성을 추가하십시오.
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * 값이 `true`인 `Boolean` 형식의 `useInSimilarity` 속성을 추가하십시오.
 
-   Save the changes.
+   변경 사항을 저장합니다.
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`에 액세스하고 값이 `true`인 `Boolean` 형식의 `similarityTags` 속성을 추가하십시오.
+1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)을 참조하세요.
+1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 `reindex` 속성을 `true`(으)로 설정합니다. 변경 사항을 저장합니다.
+1. (선택 사항) 검색 양식을 사용자 지정한 경우 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 노드를 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`에 복사합니다. 변경 사항을 저장합니다.
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+관련 정보는 [Experience Manager의 스마트 태그 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) 및 [스마트 태그를 관리하는 방법](/help/assets/smart-tags.md)을 참조하십시오.
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### 필수 메타데이터 {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+비즈니스 사용자, 관리자 또는 DAM 사서들은 일부 메타데이터를 비즈니스 프로세스가 작동하는 데 반드시 필요한 필수 메타데이터로 정의할 수 있습니다. 다양한 이유로 레거시 에셋 또는 일괄적으로 마이그레이션된 에셋과 같은 일부 에셋에 이 메타데이터가 누락될 수 있습니다. 누락되거나 잘못된 메타데이터가 있는 Assets은 인덱싱된 메타데이터 속성을 기반으로 검색 및 보고됩니다. 구성하려면 [필수 메타데이터](/help/assets/metadata-schemas.md#defining-mandatory-metadata)를 참조하십시오.
 
-### Modify search facets {#searchfacets}
+### 검색 패싯 수정 {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+검색 속도를 향상시키기 위해 [!DNL Experience Manager Assets]에서는 검색 결과를 필터링할 수 있는 검색 패싯을 제공합니다. 필터 패널에는 기본적으로 몇 가지 표준 패싯이 포함되어 있습니다. 관리자는 내장된 술어를 사용하여 필터 패널을 사용자 정의하여 기본 패싯을 수정할 수 있습니다. [!DNL Experience Manager]에서는 패싯을 사용자 지정할 수 있는 기본 제공 술어 컬렉션과 편집기를 제공합니다. [검색 패싯](/help/assets/search-facets.md)을 참조하세요.
 
-### Extract text when uploading assets {#extracttextupload}
+### 에셋 업로드 시 텍스트 추출 {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+사용자가 PSD 또는 PDF 파일과 같은 에셋을 업로드할 때 에셋에서 텍스트를 추출하도록 [!DNL Experience Manager]을(를) 구성할 수 있습니다. [!DNL Experience Manager]은(는) 추출된 텍스트를 인덱싱하고 사용자가 추출된 텍스트를 기반으로 이러한 에셋을 검색할 수 있도록 지원합니다. [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하세요.
 
 ### 검색 결과를 필터링하기 위한 사용자 지정 술어 {#custompredicates}
 
@@ -507,7 +504,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, 차원, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
 
-정렬 기능의 제한 사항에 대해서는 [제한 사항](#limitations)을 참조하십시오.
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### 에셋의 세부 정보 확인 {#checkinfo}
 
@@ -523,13 +520,13 @@ To check the comments on an asset or version history of an asset, click the asse
 
 ### 검색된 에셋 다운로드 {#download}
 
-폴더에서 일반 에셋을 다운로드하는 것처럼 검색된 에셋 및 해당 렌디션을 다운로드할 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택하고 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
+폴더에서 일반 에셋을 다운로드하는 것처럼 검색된 에셋 및 해당 렌디션을 다운로드할 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택하고 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. [자산 다운로드](/help/assets/download-assets-from-aem.md)를 참조하세요.
 
 ### 메타데이터 속성 벌크 업데이트 {#metadata-updates}
 
 여러 에셋의 공통 메타데이터 필드를 대량 업데이트할 수 있습니다. 검색 결과에서 하나 이상의 에셋을 선택합니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭하고 필요에 따라 메타데이터를 업데이트합니다. 완료되면 **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 업데이트된 필드의 기존 메타데이터를 덮어씁니다.
 
-단일 폴더 또는 컬렉션에서 사용할 수 있는 자산의 경우 검색 기능을 사용하지 않고 [메타데이터를 일괄적으로 업데이트](/help/assets/manage-metadata.md#manage-assets-metadata)하는 것이 더 쉽습니다. 여러 폴더에서 사용할 수 있거나 공통 기준과 일치하는 에셋의 경우 검색을 통해 메타데이터를 대량 업데이트하는 것이 더 빠릅니다.
+단일 폴더 또는 컬렉션에서 사용할 수 있는 자산의 경우 검색 기능을 사용하지 않고 [메타데이터를 일괄적으로 업데이트](/help/assets/bulk-metadata-edit.md)하는 것이 더 쉽습니다. 여러 폴더에서 사용할 수 있거나 공통 기준과 일치하는 에셋의 경우 검색을 통해 메타데이터를 대량 업데이트하는 것이 더 빠릅니다.
 
 ### 스마트 컬렉션 {#smart-collections}
 
@@ -578,7 +575,6 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 * [검색 모범 사례](search-best-practices.md)
 * [자산 번역](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)
 * [연결된 자산](use-assets-across-connected-assets-instances.md)
 * [자산 보고서](asset-reports.md)
