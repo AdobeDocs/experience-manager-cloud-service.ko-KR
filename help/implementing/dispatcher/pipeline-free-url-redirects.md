@@ -4,9 +4,9 @@ description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 시나리오에는 다음이 포함됩니다.
 
-* 제거된 HTML 페이지이므로 `404 Page Not Found` 오류가 표시되지 않고 대체 페이지(경우에 따라 홈 페이지)로 이동됩니다.
+* HTML 페이지가 제거되었으므로 `404 Page Not Found` 오류가 표시되지 않고 대체 페이지(홈 페이지일 수 있음)로 이동합니다.
 * 이름이 변경된 HTML 페이지.
 * SEO 최적화.
 
@@ -30,15 +30,17 @@ AEM as a Cloud Service은 클라이언트측 리디렉션을 구현하기 위해
 이 기능의 핵심은 AEM Apache/Dispatcher이 게시 저장소의 지정된 위치에 배치된 하나 이상의 재작성 맵 파일을 로드(또는 다시 로드)하여 AEM 게시에서 다운로드할 수 있도록 하는 기능입니다. 파일이 도착하는 방법은 이 기능의 범위를 벗어나지만 다음 방법 중 하나를 고려할 수 있습니다.
 
 * 작성자 사용자 인터페이스에서 재작성 맵을 에셋으로 수집하고 게시합니다.
-* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons 리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([최소 6.7.0 버전 이상](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases))를 설치하는 중입니다.
-* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons 리디렉션 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)([최소 6.10.0 버전 이상](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases))를 설치하는 중입니다.
-* 사용자 정의 응용 프로그램을 작성함으로써 완벽한 유연성을 제공합니다. 예를 들어 URL 매핑을 관리하는 사용자 인터페이스 또는 명령줄 인터페이스 또는 재작성 맵을 업로드하는 양식 중 하나를 선택합니다. 그러면 AEM API를 사용하여 재작성 맵 파일을 게시할 수 있습니다.
+* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons 리디렉션 맵 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)&#x200B;([최소 6.7.0 버전 이상](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases))를 설치하는 중입니다.
+* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons 리디렉션 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)&#x200B;([최소 6.10.0 버전 이상](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases))를 설치하는 중입니다.
+* 사용자 정의 응용 프로그램을 작성함으로써 완벽한 유연성을 제공합니다. 예를 들어 URL 매핑을 관리하는 사용자 인터페이스 또는 명령줄 인터페이스 또는 재작성 맵을 업로드하는 양식을 사용하여 AEM API를 사용하여 재작성 맵 파일을 게시할 수 있습니다.
 
 >[!NOTE]
 > 이 기능을 사용하려면 AEM 버전 **18311 이상이 필요합니다**.
 
 >[!NOTE]
 > 이 기능의 Redirect Map Manager를 사용하려면 ACS Commons 버전 **6.7.0 이상**&#x200B;이 필요한 반면 Redirect Manager를 사용하려면 버전 **6.10.0 이상**&#x200B;이 필요합니다.
+
+자세한 단계별 구현 안내서는 [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) 자습서를 참조하십시오.
 
 ## 맵 다시 작성 {#rewrite-map}
 
@@ -54,7 +56,7 @@ maps:
   path: <path-in-publish-repository>/redirectmap.txt
 ```
 
-예를 들어 맵 다시 작성 파일을 배치하기 위해 선택한 메서드가 맵 파일을 `mysite-redirectmap.txt`(이)라는 자산으로 AEM에 수집한 다음 게시하는 경우 `/content/dam` 아래에 폴더를 지정할 수 있습니다.
+예를 들어 맵 다시 작성 파일을 배치하기 위해 선택한 메서드가 AEM에서 `mysite-redirectmap.txt`(이)라는 자산으로 수집한 다음 게시하는 경우 `/content/dam` 아래에 폴더를 지정할 수 있습니다.
 
 ```
 maps:
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## 고려 사항 {#considerations}
 
 다음 사항에 유의하십시오.
@@ -83,3 +84,8 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 * 기본적으로 다시 작성 맵을 로드할 때 전체 맵 파일이 로드될 때까지 기다리지 않고 Apache가 시작되므로 전체 맵이 로드될 때까지 일시적으로 불일치가 발생할 수 있습니다. Apache가 전체 맵 콘텐츠가 로드될 때까지 기다리도록 이 설정을 변경할 수 있지만 Apache가 시작하는 데에는 더 오랜 시간이 걸립니다. Apache가 대기하도록 이 동작을 변경하려면 `wait:true`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오.
 * 로드 빈도를 변경하려면 `ttl: <integer>`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오. 예: `ttl: 120`.
 * Apache에는 RewriteMap 단일 항목에 대해 1024 길이 제한이 있습니다.
+
+## 튜토리얼 {#tutorials}
+
+1. [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
