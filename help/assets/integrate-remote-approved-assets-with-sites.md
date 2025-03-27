@@ -2,10 +2,10 @@
 title: 원격 AEM Assets를 AEM Sites와 통합
 description: AEM 사이트를 승인된 AEM Assets으로 구성하고 연결하는 방법에 대해 알아봅니다.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 17%
+source-wordcount: '1085'
+ht-degree: 16%
 
 ---
 
@@ -178,4 +178,4 @@ AEM Sites 인스턴스에서 AEM 컨텐츠 조각 내의 원격 자산을 사용
 
 ### Edge Delivery Services에서 원격 자산 액세스 {#access-assets-eds}
 
-Edge Delivery Services에서 원격 자산에 액세스할 수도 있습니다. 자세한 내용은 [OpenAPI 기능과 함께 Dynamic Media를 사용하여 제공된 Assets as a Cloud Service의 자산 활용](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)을 참조하십시오.
+Microsoft Word, Google Docs 또는 Universal Editor에서 컨텐츠를 작성하는 동안 원격 자산에 액세스한 다음 컨텐츠를 Edge Delivery Services에 게시할 수 있습니다. 또한 OpenAPI와 함께 Dynamic Media 를 사용하여 브랜드 승인 자산을 제공하고 제공되는 다른 많은 이점을 활용할 수 있습니다. 자세한 내용은 [Edge Delivery Services용 콘텐츠를 작성하는 동안 AEM Assets 통합](/help/assets/integrate-aem-assets-edge-delivery-services.md)을 참조하십시오.
