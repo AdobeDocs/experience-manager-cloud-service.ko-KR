@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 75%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2025.2.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 75%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.3.0) 일자는 2025년 3월 27일 금요일입니다. 다음 기능 릴리스(2025.4.0)는 2025년 4월 24일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.2.0) 일자는 2025년 3월 4일입니다. 다음 기능 릴리스(2025.3.0)는 2025년 3월 27일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### AEM Sites의 새로운 기능 {#new-features-sites}
+
+**콘텐츠 조각 자동 태그 지정**
+
+콘텐츠 조각을 만들 때 이제 콘텐츠 모델에 할당된 태그를 자동으로 상속할 수 있습니다. 이를 통해 콘텐츠 조각에 저장된 콘텐츠를 손쉽게 자동 분류할 수 있습니다.
+
+**콘텐츠 조각 UUID 지원**
+
+콘텐츠 조각 UUID 지원은 이제 GA 상태입니다. 이 새로운 기능은 AEM 내에서 이동, 이름 바꾸기, 롤아웃과 같이 경로가 자동으로 조정되는 작업의 경로 기반 동작을 변경하지 않지만, 특히 ByPath 쿼리로 개별 조각을 직접 타기팅하는 GraphQL 쿼리를 사용할 때 콘텐츠 조각의 외부 사용을 더 쉽고 안정적으로 만들 수 있습니다. 이러한 쿼리는 조각 경로가 변경되면 중단될 수 있습니다. 새로운 ById 쿼리 유형을 사용하면 경로가 변경되어도 조각의 UUID는 변경되지 않으므로 쿼리가 안정적으로 유지됩니다.
+
+**콘텐츠 조각 편집기 및 GraphQL에서의 OpenAPI 포함 Dynamic Media 지원**
+
+콘텐츠 조각이 아닌 다른 AEM as a Cloud Service 프로그램에 저장된 자산이며 OpenAPI 기능이 포함된 새로운 Dynamic Media를 통해 활성화된 자산은 이제 콘텐츠 조각에서 사용할 수 있습니다. 새로운 콘텐츠 조각 편집기의 이미지 선택기를 사용하면 이제 조각에서 참조할 이미지 자산의 소스로 “원격” 저장소를 선택할 수 있습니다. 또한 AEM GraphQL을 사용하여 이러한 콘텐츠 조각을 게재할 때 JSON 응답에는 이제 원격 자산에 대한 필수 속성(assetId, repositoryId)이 포함되므로 클라이언트 애플리케이션에서 해당 OpenAPI 포함 Dynamic Media URL을 만들어 이미지를 가져올 수 있습니다.
+
+**콘텐츠 조각 편집기 롤아웃**
+
+당사는 AEM as a Cloud Service에서 새로운 Spectrum UI 기반 콘텐츠 조각 편집기를 계속 활성화할 예정입니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
+
+**번역 HTTP API**
+
+한동안 얼리 어답터 모드에 있었던 AEM 번역 HTTP REST API는 이제 GA 상태입니다. 설명서는 [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)에서 확인할 수 있습니다. API를 사용하면 AEM의 콘텐츠 번역 관리 프로세스에서 필요한 단계를 자동화할 수 있습니다.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
+### AEM Assets의 새로운 기능 {#new-features-assets}
 
-**Open API가 있는 Dynamic Media를 사용하여 제공되는 비디오에 대한 긴 양식 지원**
+**Dynamic Media의 새로운 패키징 구조**
 
-OpenAPI가 포함된 Dynamic Media는 이제 긴 양식 비디오를 지원합니다. 긴 형식의 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
+이제 시장 기대에 보다 잘 부합하고 추적을 지원할 수 있도록 새롭게 구성된 Dynamic Media 패키징 구조가 제공됩니다. 새로운 패키징 구조는 다음과 같이 구성됩니다.
 
-### Assets 보기의 새로운 기능 {#new-features-assets-view}
+* Dynamic Media Prime에는 OpenAPI 및 비디오를 포함한 Dynamic Media가 포함되어 게재 방식이 개선됩니다.
 
+* Dynamic Media Ultimate에는 보다 높은 사용 요구 사항을 충족하기 위해 게재 및 변환 기능이 추가되어 있습니다.
 
-**루트 태그 지원**
+새로운 패키징 구조의 혜택을 누리려면 Assets as a Cloud Service Prime 또는 Ultimate을 보유하고 있어야 합니다.
 
-이제 AEM Assets에서는 메타데이터 양식의 태그 속성을 사용자 지정 메타데이터에 매핑할 수 있습니다. 또한 관리자는 특정 루트 태그 및 루트 태그 아래에 있는 태그에 대한 액세스를 제한하여 사용자에 대한 태그 가용성을 제한할 수 있습니다.
+**AI 생성 비디오 캡션**
+
+Adobe Dynamic Media의 AI 생성 비디오 캡션은 인공 지능을 통해 비디오 콘텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 캡션을 제공하여 접근성을 개선하고 사용자 경험을 향상시킬 수 있도록 설계되었습니다. 캡션은 원본 오디오, 추가 오디오 트랙 또는 비디오 속성 페이지의 “캡션 및 오디오” 탭에서 제공된 추가 캡션에서 생성됩니다. 60개 이상의 언어를 지원하므로 비디오를 게시하기 전에 캡션을 검토하고 미리 볼 수 있습니다.
+
+**검색 필터 사용자 정의**
+
+사용자 정의 검색 필터를 사용하면 관련 정보를 검색할 때 정확도와 효율성이 향상됩니다. 브랜드, 제품, 카테고리 또는 기타 주요 식별자와 같은 특정 속성에 따라 데이터를 필터링하여 더욱 맞춤화된 검색이 가능합니다. 이를 통해 구성이 개선되고, 관련 없는 결과를 걸러내는 데 소요되는 시간이 줄어들며, 더 빠른 의사 결정이 가능해집니다. 또한 대규모 데이터 세트를 탐색하고 분석하기가 더 쉬워지므로 확장성도 확보됩니다.
+
+![검색 필터 사용자 정의](/help/assets/assets/custom-search-filters.png)
+
+### Content Hub의 얼리 액세스 기능 {#early-access-content-hub}
+
+이제 Content Hub에서 기존의 정적 렌디션 외에도 동적 및 스마트 자르기 렌디션을 보고 다운로드할 수 있습니다. Content Hub 관리자는 구성 사용자 인터페이스를 사용하여 이러한 렌디션의 가용성을 구성할 수도 있습니다.
+
+![동적 렌디션](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime**&#x200B;은(는) 2월에 개발/RDE 환경에 배포되었습니다. **4월 28일과 29일**&#x200B;에 단계/프로덕션 환경에 적용됩니다. Java 21(또는 Java 17)을 사용하여 **코드 빌드**&#x200B;는 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 빌드하려면 명시적으로 단계를 수행해야 합니다.
-
-### 더 많은 대상으로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
-
-이제 Beta에서는 AEM 로그를 New Relic(HTTPS 사용), Amazon S3 및 Sumo Logic에 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)는 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
-
-Cloud Manager에서 로그를 다운로드할 수 있지만 많은 조직은 이러한 로그를 기본 로깅 대상으로 스트리밍하는 것이 좋습니다. AEM은 이미 (GA) AEM 및 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch) 및 Splunk로의 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성되고 구성 파이프라인을 사용하여 배포됩니다.
-
-자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)를 참조하세요.
+> 지난 2월에 Java 21 **런타임**&#x200B;이 dev/RDE 환경에 배포되었습니다(이미 Java 17 또는 21로 빌드되어 Java 21 런타임이 있는 환경 제외). Java 21은 4월에 스테이지/프로덕션 환경에 적용될 예정입니다.
 
 ### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
