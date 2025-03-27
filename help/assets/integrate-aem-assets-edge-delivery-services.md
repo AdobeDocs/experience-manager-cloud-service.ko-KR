@@ -1,15 +1,15 @@
 ---
 title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DNL AEM Assets] 통합'
-description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Universal Editor] 및 [!DNL Dynamic Media with OpenAPI capabilities] 포함 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
+description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 다음 항목 [!DNL Microsoft Word] 포함 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 다음 항목 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Universal Editor] 통합 [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
+source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 3%
 
 ---
 
-# [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안 [!DNL AEM Assets] 통합 {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안 [!DNL AEM Assets] 통합 {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
     <tr>
@@ -51,12 +51,12 @@ ht-degree: 3%
 
 다음 위치에서 콘텐츠를 편집할 수 있습니다.
 
-* [[!DNL Microsoft Word] 또는 [!DNL Google Docs]](#integrate-aem-assets-with-document-based-authoring-tools)
-* [[!DNL Universal Editor]](#integrate-aem-assets-with-UE-universal-editor)
+* [[!DNL Microsoft Word] 또는 [!DNL Google Docs]](#integrate-dynamic-media-with-edge-delivery-services)
+* [[!DNL Universal Editor]](#integrate-aem-assets-with-universal-editor-UE)
 
 콘텐츠를 편집한 후 Edge Delivery Services에 게시할 수 있습니다.
 
-## [!DNL Edge Delivery Services]의 문서 기반 작성 흐름과 [!DNL AEM Assets] 통합 {#integrate-aem-assets-with-document-based-authoring-tools}
+## [!DNL Edge Delivery Services]의 문서 기반 작성 흐름과 [!DNL AEM Assets] 통합 {#integrate-dynamic-media-with-edge-delivery-services}
 
 [!DNL AEM Assets]이(가) [!DNL Microsoft Word] 또는 [!DNL Google Docs]과(와) 같은 문서 기반 작성 도구와 통합되면 작성 도구에 자산 선택기를 제공합니다. 이 자산 선택기를 사용하여 [!DNL AEM Assets]에 액세스하고 승인된 자산을 콘텐츠에 삽입합니다.
 [!DNL Edge Delivery Services] 웹 사이트가 이미 있는 경우 [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) 설명서를 참조하여 [!DNL AEM Assets]을(를) 기존 [!DNL AEM] 프로젝트와 통합하는 방법에 대해 알아보십시오.
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 기능에 대한 자세한 내용은 [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) 설명서를 참조하십시오.
 
-### 사전 요구 사항 {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}
+### 사전 요구 사항 {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 에셋 참조를 사용하려면 다음을 수행해야 합니다.
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 * 이미지 에셋에 대한 복사 참조가 활성화된 [!DNL AEM Assets sidekick plugin]이(가) 활성화되었습니다. 자세한 내용은 문서 기반 작성에 대해서는 [이 설명서](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)를 참조하고 유니버설 편집기 기반 작성에 대해서는 [이 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
 * Assets이 승인되었습니다. 승인된 자산에는 Assets Cloud Services 백 엔드 또는 UI 작업을 통해 `dam:status=Approved`이(가) 있습니다.
 
-### [!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 전달된 자산 사용{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### [!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 전달된 자산 사용{#Using-Dynamic-Media-with-edge-delivery-services}
 
 [!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 콘텐츠의 이미지, 비디오 및 기타 에셋 유형을 전달하는 방법을 알아보려면 다음 링크를 선택하십시오.
 
@@ -109,11 +109,11 @@ OpenAPI 기능과 Dynamic Media를 사용하여 콘텐츠의 자산을 전달하
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
-## 샘플 [!DNL Edge Delivery Services] 사이트{#example-of-an-Edge-Delivery-Services-site}
+## 샘플 [!DNL Edge Delivery Services] 사이트{#dynamic-media-with-google-docs-and-ms-word}
 
 [!DNL Edge Delivery Services]의 문서 기반 작성 기능을 사용하여 빌드된 사이트인 [WKND Travel](http://bit.ly/3DExLnf)을 참조하십시오. 사이트의 컨텐츠는 [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성되었으며 [!DNL Dynamic Media with OpenAPI capabilities]은(는) 컨텐츠의 자산을 전달하는 데 사용됩니다. 작성 후 컨텐츠는 문서에서 직접 게시됩니다. 이 [!DNL Edge Delivery Services (EDS)] 사이트에 대한 문서 기반 작성 설정을 만드는 데 사용되는 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드에 대해 알아보려면 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)를 살펴보십시오.
 
-## [!DNL Edge Delivery Services]에 대해 [!DNL AEM Assets]을(를) [!DNL Universal Editor] 기반 작성 흐름과 통합 {#integrate-aem-assets-with-UE-universal-editor}
+## [!DNL Edge Delivery Services]에 대해 [!DNL AEM Assets]을(를) [!DNL Universal Editor] 기반 작성 흐름과 통합 {#integrate-aem-assets-with-universal-editor-UE}
 
 [!DNL AEM Assets]과(와) 통합하도록 [!DNL Universal Editor]을(를) 설정합니다. 이 통합을 통해 [!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 자산을 전달할 수 있습니다.
 
