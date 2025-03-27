@@ -5,10 +5,10 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 100%
+source-wordcount: '1320'
+ht-degree: 98%
 
 ---
 
@@ -132,19 +132,21 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ### 조각 참조 {#fragment-references}
 
-**조각 참조**:
+**조각 참조** 및 **조각 참조 UUID**:
 
-* 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
+* 콘텐츠 조각 모델을 정의할 때 사용할 수 있는 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
 * 구조화된 데이터를 만든 다음 검색할 수 있습니다.
 
    * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
-### JSON 미리보기 {#json-preview}
+<!--
+### JSON Preview {#json-preview}
 
-콘텐츠 조각 모델 디자인 및 개발을 지원하기 위해 콘텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-![JSON 미리보기](assets/cfm-model-json-preview.png "JSON 미리보기")
+![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

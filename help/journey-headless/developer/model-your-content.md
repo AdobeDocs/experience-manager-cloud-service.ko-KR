@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 96%
 
 ---
 
@@ -184,9 +184,10 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 * 날짜 및 시간
 * 열거
 * 태그
-* 콘텐츠 참조
-* 조각 참조
+* 조각 참조/조각 참조 UUID
+* 컨텐츠 참조/컨텐츠 참조 UUID
 * JSON 오브젝트
+* 탭 플레이스홀더
 
 ### 참조 및 중첩된 콘텐츠 {#references-nested-content}
 
@@ -213,7 +214,9 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 >
 >추가 리소스 - 구성 브라우저의 콘텐츠 조각을 참조하십시오.
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. **도구** > **일반** > **콘텐츠 조각 모델**&#x200B;에서 수행할 수 있습니다. 예:
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 모든 작업은 콘텐츠 조각 콘솔에서 수행할 수 있습니다. 콘솔에서 콘텐츠 조각 모델에 대한 패널을 선택하고 적절한 폴더로 이동한 다음 **만들기**&#x200B;를 사용하여 **새 콘텐츠 조각 모델** 대화 상자를 엽니다.
+
+모델을 만든 후에는 편집할 수 있습니다. 예:
 
 ![콘텐츠 조각 모델](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 ### 적절한 모델 선택 {#select-model}
 
-콘텐츠 조각을 만드는 것이 실제로 콘텐츠를 만드는 첫 번째 단계입니다. 이 작업은 만들기 > 자산에서 필요한 폴더의 콘텐츠 조각 > 파일을 사용하여 수행됩니다. 마법사가 단계를 안내합니다.
-
-콘텐츠 조각은 생성 프로세스의 첫 번째 단계로 선택한 특정 콘텐츠 조각 모델을 기반으로 합니다.
+콘텐츠 조각을 만드는 것이 실제로 콘텐츠를 만드는 첫 번째 단계입니다. 이 작업은 콘텐츠 조각 콘솔의 **콘텐츠 조각** 탭에서 **만들기**&#x200B;를 사용하여 수행됩니다.
 
 ### 구조화된 콘텐츠 만들기 및 편집 {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 적절한 모델을 선택하면 편집할 콘텐츠 조각이 콘텐츠 조각 편집기에서 열립니다.
 
-![콘텐츠 조각 편집기](assets/cfm-editor.png)
+![콘텐츠 조각 편집기 - 개요](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
