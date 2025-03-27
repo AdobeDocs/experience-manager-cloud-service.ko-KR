@@ -4,9 +4,9 @@ description: 리디렉션 방식으로 단일 코드 베이스를 활용하는 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ ht-degree: 2%
 1. `https://main--wknd-prod--<your-github-org>.aem.page`에 있는 해당 페이지의 새 Edge Delivery Services 사이트를 방문하십시오.
 
 변경한 사항이 표시되면 별도의 프로덕션 사이트 설정이 제대로 작동하는 것입니다.
+
+## 사용 {#usage}
+
+신뢰할 수 없는 스테이징 및 프로덕션 환경으로 프로젝트를 구성하고 나면 해당 환경에 대한 코드를 독립적으로 관리할 수 있습니다. 다음 다이어그램은 AEM, Edge Delivery Services 사이트 및 GitHub 리포지토리의 다양한 환경에 있는 콘텐츠의 관계를 보여 줍니다.
+
+![AEM 환경 그림 및 문제 해결 프로덕션/스테이징 환경](assets/repoless/aem-edge-github.png)
