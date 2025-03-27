@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 89%
 
 ---
 
@@ -44,6 +44,13 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 콘텐츠 참조는 이 작업을 수행하고 이를 통해 다른 콘텐츠를 참조할 수 있습니다. 이러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
+다음 두 가지 유형이 있습니다.
+
+* **콘텐츠 참조**
+   * 참조된 리소스의 경로를 지정합니다.
+* **콘텐츠 참조(UUID)**
+   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
+
 ## 자산/미디어 참조 {#assets-media-references}
 
 **자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이러면 자산 항목을 선택할 수 있는 브라우저가 열립니다.
@@ -75,6 +82,13 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 사용자(작성자)와 Headless 애플리케이션 모두가 이해하므로 조각 참조를 사용하여 해당 상호 관계를 나타낼 수 있습니다.
 
 작성자는 해당 관계(콘텐츠 조각 모델 생성 시 콘텐츠 설계자가 수행하는 작업)를 정의할 책임이 없지만, 참조를 인식하고 편집하는 방법에 대해 알아야 합니다.
+
+다음 두 가지 종류가 있습니다.
+
+* **조각 참조**
+   * 참조된 리소스의 경로를 지정합니다.
+* **조각 참조(UUID)**
+   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
