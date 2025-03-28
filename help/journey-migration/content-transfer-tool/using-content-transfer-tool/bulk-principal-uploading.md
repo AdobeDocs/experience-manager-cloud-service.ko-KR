@@ -1,20 +1,20 @@
 ---
 title: CTT 사용 후 IMS에 주도자 일괄 업로드
-description: 그룹 및 사용자를 위한 일괄 업로드 파일 및 Admin Console에서 이 파일을 사용하여 IMS에서 그룹 및 사용자를 만드는 방법에 대한 개요입니다.
+description: 그룹 및 사용자를 위한 일괄 업로드 파일과 이를 Admin Console에서 사용하여 IMS에서 그룹과 사용자를 만드는 방법에 대한 개요입니다.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# CTT 사용 후 IMS에 주도자 일괄 업로드 {#bulk-principal-uploading}
+# CTT 사용 후 IMS에 주체 일괄 업로드 {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
->title="주도자 일괄 업로드"
->abstract="그룹 및 사용자를 위한 일괄 업로드 파일 및 Admin Console에서 이 파일을 사용하여 IMS에서 그룹 및 사용자를 만드는 방법에 대한 개요입니다."
+>title="주체 일괄 업로드"
+>abstract="그룹 및 사용자를 위한 일괄 업로드 파일과 이를 Admin Console에서 사용하여 IMS에서 그룹과 사용자를 만드는 방법에 대한 개요입니다."
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 설명서"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
