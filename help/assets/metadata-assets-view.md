@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 85%
+source-wordcount: '2124'
+ht-degree: 77%
 
 ---
 
@@ -217,6 +217,39 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
    * ![복사 아이콘](assets/do-not-localize/copy.svg)을 클릭하여 URL을 복사합니다.
    * ![편집 아이콘](assets/do-not-localize/edit.svg)을 클릭하여 URL을 편집합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+
+
+### 메타데이터 양식에서 태그 구성 요소 작업 {#tag-component-metadata-form}
+
+루트 요소는 에셋과 연결할 수 있는 태그의 트리 구조를 나타내며 에셋에 지정된 태그를 기반으로 에셋을 식별하는 데 도움이 됩니다. 또한 메타데이터 편집기에서 메타데이터 양식을 구성하는 동안 특정 분류법에 대한 액세스를 제한할 수 있습니다.
+
+#### 태그 구성 요소 구성 {#tags-component-configuration}
+
+다음 단계를 실행하여 태그 구성 요소를 구성합니다.
+
+1. 메타데이터 편집기로 이동하여 **[!UICONTROL 태그]**(으)로 이동하여 캔버스에 배치합니다.
+1. 캔버스에서 구성 요소의 이름을 변경합니다. 이렇게 하려면 설정 패널의 [!UICONTROL 메타데이터 속성] 아래에 있는 **[!UICONTROL 레이블]**(으)로 이동하여 식별을 위한 텍스트를 추가하십시오.
+1. 설정 패널의 [!UICONTROL 메타데이터 속성]에서 구성 요소에 할당할 메타데이터 속성을 검색합니다.
+1. 분류법의 루트 경로를 제한하려면 **[!UICONTROL 특정 분류법으로 제한]**&#x200B;을 클릭합니다. 이렇게 하려면 태그를 찾은 다음 특정 경로에 대한 분류를 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+
+   ![루트 태그 구성](assets/root-tag-config.png)
+
+1. [폴더에 메타데이터 양식을 할당](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+구성된 루트 태그를 보려면 메타데이터 양식과 루트 태그 간의 매핑이 수행되는 자산의 세부 정보 페이지로 이동합니다.
 
 ## 다음 단계 {#next-steps}
 
