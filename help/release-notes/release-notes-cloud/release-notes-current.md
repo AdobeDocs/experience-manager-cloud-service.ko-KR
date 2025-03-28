@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 75%
@@ -28,7 +28,7 @@ ht-degree: 75%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.4.0) 일자는 2025년 4월 24일 금요일입니다. 다음 기능 릴리스(2025.5.0)는 2025년 5월 29일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.3.0) 일자는 2025년 3월 27일 금요일입니다. 다음 기능 릴리스(2025.4.0)는 2025년 4월 24일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
