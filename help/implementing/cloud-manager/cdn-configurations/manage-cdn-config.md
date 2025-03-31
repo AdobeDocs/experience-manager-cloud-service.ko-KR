@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41155a724f48ad28a12aac615a3e9a13bb3afa26
+source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1075'
 ht-degree: 8%
 
 ---
@@ -67,31 +67,33 @@ Adobe Cloud Manager에서는 몇 가지 이유로 환경 계층(게시 또는 �
 
 1. **업데이트**&#x200B;를 클릭합니다.
 
-<!-- 
-## Go live readiness: Configure DNS settings for a custom domain {#go-live-readiness} 
 
-Before a custom domain can serve traffic in Adobe Cloud Manager, you must complete DNS configuration with your DNS provider. After deploying a domain mapping and clicking **Go live**, Cloud Manager displays a dialog box that guides you through the DNS record setup process. You have the option to go live by adding either a CNAME record type or an A record type representing Fastly's IPs, simplifying domain routing. This ability eliminates the restriction of relying solely on CNAME records for domain setup with Fastly.
+## 라이브 준비: 사용자 정의 도메인에 대한 DNS 설정 구성 {#go-live-readiness}
 
-MAYBE There is support for A record types to improve Go Live readiness for domains using CDN configurations in AEM Cloud Manager. MAYBE
+사용자 정의 도메인이 트래픽을 제공하려면 먼저 DNS 공급자와 DNS 구성을 완료해야 합니다. 도메인 매핑을 배포하고 **실행**&#x200B;을 클릭하면 Cloud Manager에서 DNS 레코드 설정 프로세스를 안내하는 대화 상자를 표시합니다. CNAME 레코드 유형 또는 A 레코드 유형을 추가하여 라이브로 전환하는 옵션이 있습니다.
 
-See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record).
+<!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**To configure Go live readiness:**
+**Go-Live 준비 구성:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. 왼쪽 메뉴에서 **서비스** 아래의 ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **도메인 매핑**&#x200B;을 클릭합니다.
+1. 도메인 매핑 테이블에서 구성할 Go Live 준비 상태에 해당하는 CDN의 행 끝 근처에 있는 **Go Live**&#x200B;를 클릭합니다.
 
-1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
+   ![라이브 준비 대화 상자](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. In the Domain Mappings table, click **Go live** near the end of a row that corresponds to a CDN whose Go Live readiness you want to configure. 
+1. **라이브 준비** 대화 상자에서 다음 중 하나를 수행합니다.
 
-1. In the Go live readiness dialog box, do one of the following:
+   | 옵션 | 단계 |
+   | --- | --- |
+   | A 기록 구성 | `example.com`<br>과(와) 같은 루트 도메인에 권장<ol><li>DNS 서비스 공급자의 포털에 로그인합니다.<li>DNS 레코드 섹션으로 이동합니다.<li>나열된 모든 IP 주소를 가리키는 A 레코드를 만듭니다.</li></ol> |
+   | CNAME 구성 | `www.example.com`<br>과(와) 같은 사용자 정의 도메인에 권장<ol><li>DMS 서비스 공급자의 포털에 로그인합니다.<li>DNS 레코드 섹션으로 이동합니다.<li>DNS 서비스 공급자(사용자 지정 도메인)의 DNS 레코드에 [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/)&#x200B;(CNAME 레코드)을 매핑합니다. 이 매핑을 통해 사용자 정의 도메인에서 받은 요청을 Adobe의 CDN으로 리디렉션할 수 있습니다.</li></ol> |
 
-    | Configure  | Steps |
-    | --- | --- |
-    | A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.<li>In the Go live readiness dialog box, click **OK**.<li>In the Domain Mappings table, under the **Status** column, click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).<br>The status is updated to **Verified** when the resolution is complete.</li></ol> |
-    | CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.<li>In the **Go live readiness** dialog box, click **OK** to save the record.<br>Wait for DNS propogation (may take several minutes to a few hours). When the **[!UICONTROL Status]** column in the Domamin Mappings table updates to **[!UICONTROL Verified]**, the custom domain is ready to use. You may need to click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to refresh the status.</li></ol> | 
-    
--->
+1. **라이브 준비** 대화 상자에서 **확인**&#x200B;을 클릭하여 레코드를 저장합니다.
+
+   DNS 전파 대기. 몇 분에서 몇 시간 정도 소요될 수 있습니다.
+
+   도메인 매핑 테이블의 **[!UICONTROL Status]** 열이 **[!UICONTROL Verified]**(으)로 업데이트되면 사용자 정의 도메인을 사용할 수 있습니다. 상태를 업데이트하려면 ![새로 고침 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)을 클릭해야 할 수 있습니다.
 
 ## CDN 구성 삭제 {#delete-cdn}
 
