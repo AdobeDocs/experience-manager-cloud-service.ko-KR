@@ -2,10 +2,10 @@
 title: 마이그레이션 후 주체 관리
 description: IMS 및 AEM에서 사용자 및 그룹을 설정하는 방법 알아보기
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: 1c638f3d1cca4f97eb1f760054febd405b5714f5
-workflow-type: ht
-source-wordcount: '830'
-ht-degree: 100%
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service의 경우 사용자와 그룹은 주로 Admin Console을 
 
 마이그레이션의 수집 단계에서 마이그레이션된 콘텐츠에 대한 ACL 또는 CUG 정책을 충족해야 하는 경우 그룹이 마이그레이션됩니다.  자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하십시오.
 
-마이그레이션된 그룹(Assets 컬렉션 생성에 의해 생성되지 않은 그룹 - 아래 컬렉션 참조)은 IMS 그룹으로 구성됩니다.  즉, IMS에서 생성된 동일한 이름의 그룹(예: Admin Console을 통해)은 AEM의 그룹에 연결되며, IMS 그룹의 멤버인 사용자도 AEM의 그룹 멤버가 됩니다.  이 연결이 이루어지려면 먼저 IMS에서 그룹을 만들어야 합니다.  [Admin Console을 사용하는 IMS의 주체 관리](/help/journey-migration/managing-principals.md)에 설명된 대로 Admin Console을 사용하여 AEM 인스턴스에서 개별적으로 또는 일괄로 그룹을 생성합니다.
+마이그레이션된 그룹(Assets 컬렉션 또는 개인 폴더 생성으로 생성되지 않은 그룹 - 아래 컬렉션 및 개인 폴더 참조)은 IMS 그룹으로 구성됩니다.  즉, IMS에서 생성된 동일한 이름의 그룹(예: Admin Console을 통해)은 AEM의 그룹에 연결되며, IMS 그룹의 멤버인 사용자도 AEM의 그룹 멤버가 됩니다.  이 연결이 이루어지려면 먼저 IMS에서 그룹을 만들어야 합니다.  [Admin Console을 사용하는 IMS의 주체 관리](/help/journey-migration/managing-principals.md)에 설명된 대로 Admin Console을 사용하여 AEM 인스턴스에서 개별적으로 또는 일괄로 그룹을 생성합니다.
 
 AEM 보안 UI를 사용하여 로컬 AEM 그룹에 IMS 그룹을 할당합니다. 이렇게 하려면 AEM의 [도구] 페이지로 이동하여 [보안]을 클릭한 다음 [그룹]을 선택합니다.
 
@@ -48,15 +48,15 @@ AEM 보안 UI를 사용하여 로컬 AEM 그룹에 IMS 그룹을 할당합니다
 
 각 사용자가 멤버로 소속되어야 할 그룹을 확인하기 위해 사용자 보고서를 활용할 수 있습니다([그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) 참조).  이 보고서에는 각 사용자가 멤버로 소속되어야 할 그룹이 나열되어 있으며, 이 목록은 일반적으로 Admin Console 일괄 업로드 기능을 사용하는 대량 사용자 입력 파일에 포함됩니다.
 
-### 컬렉션
+### 컬렉션 및 개인 폴더
 
-Assets 컬렉션을 만들면 해당 컬렉션에 대한 액세스를 관리할 일부 그룹도 자동으로 생성됩니다.  이러한 그룹은 마이그레이션된 컬렉션에서 언급된 경우에만 마이그레이션되지만 IMS 그룹에 직접 연결하도록 구성되지 않습니다. 따라서, AEM에서는 “로컬 그룹”으로 남아 있으며 IMS를 통해 관리할 수 없습니다.
+Assets 컬렉션 또는 개인 폴더를 만들면 해당 Assets 콘텐츠에 대한 액세스를 관리할 일부 그룹도 자동으로 만들어집니다.  이러한 그룹은 마이그레이션된 콘텐츠에 언급되지만 IMS 그룹에 직접 연결하도록 구성되지 않은 경우 마이그레이션됩니다. AEM에서 이러한 그룹은 &quot;로컬 그룹&quot;으로 유지되며 IMS를 통해 관리할 수 없습니다.
 
 이 그룹들은 IMS에 존재하지 않기 때문에, 일괄 업로드 도구를 사용하여 사용자를 직접 멤버로 만들 수 없습니다.  AEM에 속한 IMS 사용자는 이러한 그룹에 개별적으로 추가할 수 있지만 이 작업을 일괄로 수행하려면 추가 단계가 필요합니다.  이 작업을 수행할 수 있는 한 가지 방법은 다음과 같습니다.
-* Admin Console/IMS에서 컬렉션에 액세스할 수 있는 새 그룹 또는 그룹을 생성하고 AEM에 맞게 구성합니다.
+* 컬렉션/개인 폴더에 액세스하기 위해 Admin Console/IMS에 새 그룹을 만들고 AEM에 대해 구성합니다.
 * 그룹의 멤버로 로그인하면 그룹이 AEM에 생성됩니다.
-* 마이그레이션된 컬렉션의 경우 Assets 컬렉션 UI를 사용하여 새 그룹을 편집자/소유자/뷰어로 추가합니다.
+* 마이그레이션된 컬렉션 또는 개인 폴더의 경우 Assets UI를 사용하여 새 그룹을 편집기/소유자/뷰어로 추가합니다.
 * Admin Console에서 새 그룹에 사용자를 추가(또는 일괄 업로드)합니다.
-* 사용자가 처음 로그인하면 IMS 사용자가 AEM에 생성되며, 사용자는 새 그룹과 원래 컬렉션 그룹에 액세스할 수 있게 됩니다.
+* 사용자가 처음 로그인하면 IMS 사용자가 AEM에 생성되고 새 그룹 및 이에 따라 원래 컬렉션 또는 개인 폴더 그룹에 액세스할 수 있습니다.
 
 참고: 사용자를 일괄 할당하려면 위의 단계를 사용하여 IMS에서 사용자를 만들어야 합니다. IMS에 이미 존재하는 사용자는 일괄 업로드를 통해 다시 만들 수 없지만 일괄 편집기를 사용하여 이러한 종류의 변경을 적용할 수 있습니다(**사용자 세부 정보 편집**&#x200B;의 [Admin Console 일괄 사용자 업로드](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html) 참조).

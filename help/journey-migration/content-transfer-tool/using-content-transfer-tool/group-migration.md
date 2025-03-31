@@ -2,9 +2,9 @@
 title: 그룹 마이그레이션
 description: AEM as a Cloud Service의 그룹 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 
 
 마이그레이션된 그룹은 더 이상 AEM &quot;로컬 그룹&quot;으로 간주되지 않습니다. IMS에 아직 존재하지 않을 수 있지만 AEM에서는 IMS에 준비된 그룹입니다.  AEM과 IMS 간에 동기화할 수 있도록 IMS에서 별도로 다시 만들어야 합니다.  그룹은 다른 방법 중에서도 Admin Console을 통해 개별적으로 또는 대량으로 IMS에서 만들 수 있습니다.  Admin Console에서 개별적으로 또는 대량으로 그룹을 만드는 방법에 대한 자세한 내용은 [사용자 그룹 관리](https://helpx.adobe.com/kr/enterprise/using/user-groups.html)를 참조하십시오.
 
-이 IMS 구성에 대한 예외는 Assets 컬렉션에서 만든 그룹에 있습니다. AEM에서 컬렉션을 만들면 해당 컬렉션에 액세스하기 위한 그룹이 만들어집니다. 이러한 그룹은 클라우드 시스템으로 마이그레이션되지만 IMS에서 관리되도록 구성되지 않습니다.  이러한 그룹에 IMS 사용자를 추가하려면 Assets UI의 그룹 속성 페이지에서 개별적으로 또는 집합적으로 다른 IMS 그룹의 일부로 추가해야 합니다.
+이 IMS 구성에 대한 예외는 Assets 컬렉션 및 개인 폴더로 생성된 그룹에 있습니다. AEM에 컬렉션이나 개인 폴더를 만들면 해당 컨텐츠에 액세스하기 위한 그룹이 만들어집니다. 이러한 그룹은 클라우드 시스템으로 마이그레이션되지만 IMS에서 관리되도록 구성되지 않습니다.  이러한 그룹에 IMS 사용자를 추가하려면 Assets UI의 그룹 속성 페이지에서 개별적으로 또는 집합적으로 다른 IMS 그룹의 일부로 추가해야 합니다.
 
 
 ## 그룹 마이그레이션 옵트아웃 {#group-migration-option}
