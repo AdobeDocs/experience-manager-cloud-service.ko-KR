@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 48%
 
 ---
@@ -95,7 +95,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * **이름**
    * 편집기에서 모델을 여는 링크를 제공합니다.
-* 잠김
+* **잠김**(자물쇠 아이콘)
    * 모델이 잠기면 자물쇠 아이콘으로 표시됩니다.
 * **경로**
    * 콘솔에서 구성을 여는 링크로서 경로를 제공합니다.
