@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이제 로그 전달이 Adobe 지원 티켓을 제출해야 했던 기존 방법과 달리 셀프서비스 방식으로 구성됩니다. Adobe으로 로그 전달이 설정된 경우 [마이그레이션](#legacy-migration) 섹션을 참조하십시오.
+>이제 로그 전달이 Adobe 지원 티켓을 제출해야 했던 기존 방법과 달리 셀프서비스 방식으로 구성됩니다. Adobe에서 로그 전달을 설정한 경우 [마이그레이션](#legacy-migration) 섹션을 참조하십시오.
 
 로깅 공급업체에 라이센스가 있거나 로깅 제품을 호스팅하는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상에 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
+* Amazon S3(비공개 베타, [^1] 참조)
 * Azure Blob 저장소
 * Datadog
 * Elasticsearch 또는 OpenSearch
 * HTTPS
 * 스플렁크
+* Sumo 논리(개인 베타, [^1] 참조)
 
-로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 명령줄 도구를 사용하여 RDE(Rapid Development Environment)에 구성 파일을 배포할 수 있습니다.
+로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
-AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
+AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅되는 옵션이 있습니다.
 
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
+
+[^1] Amazon S3 및 Sumo Logic은 Private Beta에 있으며 AEM 로그(Apache/Dispatcher 포함)만 지원합니다.  HTTPS를 통한 New Relic 또한 비공개 베타에 있습니다. 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ## 이 문서를 구성하는 방식 {#how-organized}
 
@@ -39,7 +43,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 * 전송 및 고급 네트워킹 - 로깅 구성을 만들기 전에 네트워크 설정을 고려해야 합니다.
 * 대상 구성 로깅 - 각 대상의 형식이 약간 다릅니다.
 * 로그 항목 형식 - 로그 항목 형식에 대한 정보
-* 이전 로그 전달에서 마이그레이션 - 이전에 Adobe으로 설정했던 로그 전달에서 셀프 서비스 접근 방식으로 이동하는 방법
+* 이전 로그 전달에서 마이그레이션 - Adobe에서 이전에 설정한 로그 전달에서 셀프서비스 접근 방식으로 이동하는 방법
 
 ## 설정 {#setup}
 
@@ -177,14 +181,51 @@ data:
       advancedNetworking: true
 ```
 
-CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 Adobe이 아닌 https 서버 또는 Azure Blob Store로 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 알려진 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
+CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 큰 경우, 알려진 IP에서 로그를 최종 대상으로 전송하도록 논리를 작성할 수 있는 https 서버 또는 (Adobe이 아닌) Azure Blob Store로 트래픽을 보내는 것이 좋습니다.
 
 >[!NOTE]
->AEM 로그가 표시되는 IP 주소와 동일한 IP 주소에서 CDN 로그가 표시될 수 없습니다. 이는 로그가 AEM Cloud Service이 아닌 Fastly에서 직접 전송되기 때문입니다.
+>AEM 로그가 표시되는 IP 주소와 동일한 IP 주소에서 CDN 로그가 표시될 수 없습니다. 이는 로그가 AEM Cloud Service가 아닌 Fastly에서 직접 전송되기 때문입니다.
 
 ## 대상 구성 로깅 중 {#logging-destinations}
 
 특정 고려 사항과 함께 지원되는 로깅 대상에 대한 구성이 아래에 나와 있습니다.
+
+### Amazon {#amazons3}
+
+>
+>각 로그 파일 유형에 대해 10분마다 정기적으로 S3에 기록되는 로그  이로 인해 기능이 전환되면 로그가 S3에 기록되는 초기 지연이 발생할 수 있습니다.  이 동작이 존재하는 이유에 대한 자세한 내용은 [여기](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)를 참조하십시오.
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+S3 로그 전달자를 사용하려면 S3 버킷에 액세스하기 위한 적절한 정책으로 AWS IAM 사용자를 사전 구성해야 합니다.  IAM 사용자 자격 증명을 만드는 방법은 [여기](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)를 참조하십시오.
+
+IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용해야 합니다.  예:
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+AWS 버킷 정책 구현에 대한 자세한 내용은 [여기](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)를 참조하십시오.
 
 ### Azure Blob 저장소 {#azureblob}
 
@@ -279,7 +320,7 @@ data:
 
 * 특정 클라우드 공급자와의 통합 없이 API 키를 만듭니다.
 * 태그 속성은 선택 사항입니다
-* AEM 로그의 경우 Datadog 소스 태그가 `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` 또는 `aemhttpderror` 중 하나로 설정되어 있습니다.
+* AEM 로그의 경우 Datadog 소스 태그가 `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` 또는 `aemhttpderror` 중 하나로 설정되어 있습니다
 * CDN 로그의 경우 Datadog 소스 태그가 `aemcdn`(으)로 설정됩니다.
 * Datadog 서비스 태그가 `adobeaemcloud`(으)로 설정되어 있지만 태그 섹션에서 덮어쓸 수 있습니다
 * 수집 파이프라인이 Datadog 태그를 사용하여 전달 로그에 대한 적절한 인덱스를 결정하는 경우 이러한 태그가 로그 전달 YAML 파일에 올바르게 구성되어 있는지 확인하십시오. 태그가 누락되면 파이프라인이 종속된 경우 성공적인 로그 수집이 방해될 수 있습니다.
@@ -309,7 +350,7 @@ data:
 ![탄력적인 배포 자격 증명](/help/implementing/developing/introduction/assets/ec-creds.png)
 
 * AEM 로그의 경우 `index`이(가) `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` 또는 `aemhttpderror` 중 하나로 설정되어 있습니다.
-* 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정되어야 합니다. 파이프라인의 프로세서 유형을 *script*(으)로 설정하고 스크립트 언어를 *painless*(으)로 설정해야 합니다. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
+* 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정해야 합니다. 파이프라인의 프로세서 유형을 *script*(으)로 설정하고 스크립트 언어를 *painless*(으)로 설정해야 합니다. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -338,6 +379,13 @@ data:
 
 * URL 문자열에 **https://**&#x200B;이(가) 포함되어야 합니다. 그렇지 않으면 유효성 검사가 실패합니다.
 * URL은 포트를 포함할 수 있습니다. 예, `https://example.com:8443/aem_logs/aem`. URL 문자열에 포트가 포함되지 않으면 포트 443(기본 HTTPS 포트)이 가정됩니다.
+
+#### New Relic 로그 API {#newrelic-https}
+
+액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+
+>
+>New Relic은 New Relic 계정이 프로비저닝된 위치를 기반으로 지역별 엔드포인트를 제공합니다.  New Relic 설명서는 [여기](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)를 참조하십시오.
 
 #### HTTPS CDN 로그 {#https-cdn}
 
@@ -389,24 +437,30 @@ data:
 >
 > [이전 로그 전달에서 이 셀프 서비스 모델로 마이그레이션](#legacy-migration)하는 경우 Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 
-<!--
-### Sumo Logic {#sumologic}
+### 스모 논리 {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+데이터 수집을 위해 Sumo 논리를 구성할 때 단일 문자열에 호스트, receiverURI 및 개인 키를 제공하는 &quot;HTTP Source 주소&quot;가 표시됩니다.  예:
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+위의 [설정](#setup) 섹션에 설명된 대로 URL의 마지막 섹션(`/` 없이)을 복사한 다음 [CloudManager 보안 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> &quot;색인&quot; 필드 기능을 사용하려면 Sumo Logic Enterprise 구독이 필요합니다.  Enterprise가 아닌 구독의 로그는 기본적으로 `sumologic_default` 파티션으로 라우팅됩니다.  자세한 내용은 [Sumo 논리 분할 설명서](https://help.sumologic.com/docs/search/optimize-search-partitions/)를 참조하십시오.
 
 ## 로그 항목 형식 {#log-formats}
 
@@ -430,20 +484,20 @@ aem_tier: author
 
 ## 이전 로그 전달에서 마이그레이션 {#legacy-migration}
 
-셀프서비스 모델을 통해 로그 전달 구성을 수행하기 전에 고객에게 지원 티켓을 열도록 요청했으며, 여기서 Adobe은 통합을 시작합니다.
+셀프서비스 모델을 통해 로그 전달 구성을 수행하기 전에 고객에게 지원 티켓을 열도록 요청했으며, 여기서 Adobe이 통합을 시작합니다.
 
 Adobe에서 이러한 방식으로 설정했던 고객은 편리하게 셀프서비스 모델에 적응할 수 있습니다. 이렇게 전환하는 데는 몇 가지 이유가 있습니다.
 
 * 새 환경(예: 새 개발 환경 또는 RDE)이 프로비저닝되었습니다.
 * 기존 Splunk 끝점 또는 자격 증명에 대한 변경.
-* Adobe이 CDN 로그를 사용하기 전에 로그 전달을 설정했으며 CDN 로그를 수신하려고 합니다.
+* Adobe은 CDN 로그를 사용하기 전에 로그 전달을 설정했으며 CDN 로그를 수신하려고 합니다.
 * 시간에 민감한 변화가 필요하기 전에 조직에서 지식을 갖도록 셀프서비스 모델에 적극적으로 적응하려는 의식적인 결정입니다.
 
 마이그레이션할 준비가 되면 이전 섹션에서 설명한 대로 YAML 파일을 구성하면 됩니다. Cloud Manager 구성 파이프라인을 사용하여 구성을 적용해야 하는 각 환경에 배포합니다.
 
-구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 그렇지 않으면 Adobe으로 구성된 환경과 셀프 서비스 방식으로 구성된 환경을 구분할 수 없습니다.
+구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 구성하지 않은 경우 Adobe에서 구성한 환경과 셀프 서비스 방식으로 구성한 환경을 잊어버릴 수 있습니다.
 
 >[!NOTE]
 >Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 >
->이전에 Adobe 지원으로 구성한 환경에 로그 전달이 배포되면 최대 몇 시간 동안 중복 로그를 받을 수 있습니다. 이 문제는 결국 자동으로 해결됩니다.
+>이전에 Adobe 지원에서 구성한 환경에 로그 전달이 배포되면 최대 몇 시간 동안 중복 로그를 받을 수 있습니다. 이 문제는 결국 자동으로 해결됩니다.
