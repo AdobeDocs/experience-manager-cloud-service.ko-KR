@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 로깅 공급업체에 라이센스가 있거나 로깅 제품을 호스팅하는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상에 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
-* Amazon S3(비공개 베타, [^1] 참조)
+* Amazon S3(비공개 베타, 아래 참고 사항 참조)
 * Azure Blob 저장소
 * Datadog
 * Elasticsearch 또는 OpenSearch
 * HTTPS
 * 스플렁크
-* Sumo 논리(개인 베타, [^1] 참조)
+* Sumo Logic(비공개 베타, 아래 참고 사항 참조)
 
 로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
@@ -33,7 +33,9 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
 
-[^1] Amazon S3 및 Sumo Logic은 Private Beta에 있으며 AEM 로그(Apache/Dispatcher 포함)만 지원합니다.  HTTPS를 통한 New Relic 또한 비공개 베타에 있습니다. 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>[!NOTE]
+>
+>Amazon S3 및 Sumo Logic은 Private Beta에 있으며 AEM 로그(Apache/Dispatcher 포함)만 지원합니다.  HTTPS를 통한 New Relic 또한 비공개 베타에 있습니다. 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ## 이 문서를 구성하는 방식 {#how-organized}
 
@@ -192,6 +194,7 @@ CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.co
 
 ### Amazon {#amazons3}
 
+>[!NOTE]
 >
 >각 로그 파일 유형에 대해 10분마다 정기적으로 S3에 기록되는 로그  이로 인해 기능이 전환되면 로그가 S3에 기록되는 초기 지연이 발생할 수 있습니다.  이 동작이 존재하는 이유에 대한 자세한 내용은 [여기](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)를 참조하십시오.
 
@@ -384,7 +387,7 @@ data:
 
 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
->
+>[!NOTE]
 >New Relic은 New Relic 계정이 프로비저닝된 위치를 기반으로 지역별 엔드포인트를 제공합니다.  New Relic 설명서는 [여기](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)를 참조하십시오.
 
 #### HTTPS CDN 로그 {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > &quot;색인&quot; 필드 기능을 사용하려면 Sumo Logic Enterprise 구독이 필요합니다.  Enterprise가 아닌 구독의 로그는 기본적으로 `sumologic_default` 파티션으로 라우팅됩니다.  자세한 내용은 [Sumo 논리 분할 설명서](https://help.sumologic.com/docs/search/optimize-search-partitions/)를 참조하십시오.
 
 ## 로그 항목 형식 {#log-formats}
