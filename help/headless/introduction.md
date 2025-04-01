@@ -5,7 +5,7 @@ landing-page-description: Adobe Experience Manager as a Cloud Service에서 Head
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
+source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 96%
@@ -22,8 +22,6 @@ Adobe Experience Manager (AEM) as a Headless CMS (Content Management System)를 
 >[!NOTE]
 >
 >또한 Headless 개념 및 용어 소개가 포함되어 있는 [Headless 소개](/help/headless/what-is-headless.md)를 참조하십시오.
-
-{{headless-trials-promotion}}
 
 ## 개요 {#overview}
 
