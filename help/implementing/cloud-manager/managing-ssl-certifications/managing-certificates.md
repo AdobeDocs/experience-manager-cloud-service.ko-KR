@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -39,6 +39,10 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 고객 관리 인증서가 만료되면 만료된 인증서와 함께 사용 중인 모든 도메인이 더 이상 작동하지 않습니다. 인증서를 업데이트하면 도메인이 계속해서 원하는 대로 작동할 수 있습니다.
 
 이 작업을 완료하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
+
+>[!IMPORTANT]
+>
+>SSL 인증서를 추가하거나 업데이트할 때 인증서 체인에 새 인증서를 포함하지 마십시오. 포함하면 업로드가 제대로 완료되지 않습니다.
 
 **만료된 고객 관리 SSL 인증서를 업데이트하려면:**
 
@@ -78,7 +82,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 * **혼동 방지**: 여러 인증서를 관리하는 경우 명확하고 설명적인 이름을 사용하면 잘못된 도메인에 잘못된 인증서를 적용하는 것과 같은 실수를 방지할 수 있습니다.
 * **준수 및 감사**: 올바른 이름의 인증서를 보안 및 감사 목적으로 추적하기가 더 쉬울 수 있습니다.
 
-**Adobe 관리 SSL 인증서의 이름을 바꾸려면**
+**Adobe 관리 SSL 인증서의 이름을 바꾸려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
 
@@ -88,7 +92,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
 
-1. **SSL 인증서** 페이지에서 이름을 바꿀 **Adobe 관리** SSL 인증서가 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. **SSL 인증서** 페이지에서 이름을 바꿀 **Adobe 관리** SSL 인증서가 있는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
 1. 드롭다운 메뉴에서 **이름 바꾸기**&#x200B;를 클릭합니다.
 
@@ -99,7 +103,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 ## SSL 인증서 삭제 {#deleting-an-ssl-certificate}
 
-Cloud Manager에서 Adobe 관리 또는 고객 관리 SSL 인증서를 삭제하는 것은 실행 취소할 수 없는 영구적인 작업입니다. Adobe Cloud Manager에서 SSL 파일을 삭제하기 전에 로컬에 저장하는 것이 좋습니다.
+Cloud Manager에서 Adobe 관리 또는 고객 관리 SSL 인증서를 삭제하는 것은 실행 취소할 수 없는 영구적인 작업입니다. Cloud Manager에서는 SSL 파일을 Adobe에서 삭제하기 전에 로컬에 저장하는 것이 좋습니다.
 
 >[!NOTE]
 >

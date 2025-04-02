@@ -1,19 +1,19 @@
 ---
 title: Cloud Manager에서 외부 저장소 추가 - 제한된 베타
-description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise Server, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e18368b1f16033790c91038d746c96d04a05ba21
+source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 26%
+source-wordcount: '1890'
+ht-degree: 27%
 
 ---
 
 # Cloud Manager에서 외부 저장소 추가 - 제한된 베타 {#external-repositories}
 
-Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise Server, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 
 >[!NOTE]
 >
@@ -26,6 +26,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 1. 선택한 프로그램에 [외부 저장소를 추가](#add-external-repo)합니다.
 1. 외부 저장소에 액세스 토큰을 입력합니다.
 1. 개인 GitHub 저장소의 소유권을 확인합니다.
+1. 외부 저장소에 [웹후크를 구성](#configure-webhook)합니다.
 
 
 
@@ -51,7 +52,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | --- | --- |
    | **저장소 이름** | 필수. 새로운 저장소의 표현적인 이름. |
    | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨)<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
-   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다.<ul><li>**GitHub**(GitHub Enterprise Server 및 자체 호스팅 버전의 GitHub)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org` 및 Bitbucket 서버와 자체 호스팅 버전의 Bitbucket)</li></ul>위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
+   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다.<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org` 및 Bitbucket 서버와 자체 호스팅 버전의 Bitbucket)</li></ul>위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
    | **설명** | 선택 사항. 저장소에 대한 자세한 설명. |
 
 1. **저장**&#x200B;을 선택하여 저장소를 추가합니다.
@@ -64,9 +65,9 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | 토큰 유형 | 설명 |
    | --- | --- |
    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-   | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub**<br><ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>필요한 권한에 대해 다음을 설정하십시오.<ul><li>**GitHub PAT(Personal Access Token)에 필요한 권한**<br>&#x200B;이러한 권한을 통해 Cloud Manager은 끌어오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub에서 PAT(개인 액세스 토큰)를 생성할 때 여기에 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul><li>**필수 웹후크 이벤트(GitHub 호스팅 리포지토리용)**<br>&#x200B;이러한 이벤트를 사용하면 Cloud Manager이 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>GitHub 웹후크를 수동으로 구성할 때 다음의 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: GitLab**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>필요한 권한에 대해 다음을 설정하십시오.<ul><li>**GitLab PAT(개인 액세스 토큰)에 대한 필수 권한**<br>&#x200B;이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 개인 액세스 토큰을 만들 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul><li>**필수 웹후크 이벤트(GitLab 호스팅 저장소의 경우)**<br>&#x200B;이러한 웹후크 이벤트를 사용하면 코드를 푸시하거나 병합 요청을 제출할 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>GitLab에서 웹후크를 수동으로 구성할 때 다음과 같은 필수 웹후크 이벤트를 포함해야 합니다.<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>필요한 권한에 대해 다음을 설정하십시오.<ul><li>**PAT(Bitbucket Personal Access Token)에 필요한 권한**<br>&#x200B;이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul><li>**필요한 Webhook 이벤트(Bitbucket 호스팅 리포지토리용)**<br>&#x200B;이러한 이벤트는 Cloud Manager이 끌어오기 요청의 유효성을 검사하고 코드 푸시에 응답하며 파이프라인 조정을 위해 댓글과 상호 작용할 수 있도록 합니다.<br>Bitbucket에서 수동으로 웹후크를 설정하는 경우 다음 필수 웹후크 이벤트를 트리거하도록 구성하십시오.<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+   | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub Enterprise**<br><ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+   | | **저장소 유형: GitLab**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+   | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
 
    >[!NOTE]
    >
@@ -108,7 +109,8 @@ Cloud Manager을 사용하면 추가한 외부 Git 저장소에 대한 웹후크
 * 향후 댓글 기반 작업 - PR에서 신속한 개발 환경(RDE)으로 직접 배포하는 것과 같은 워크플로우를 허용합니다.
 
 Cloud Manager은 GitHub 앱을 통해 직접 통합되므로 `GitHub.com`에서 호스팅되는 저장소에 대해 Webhook 구성이 필요하지 않습니다.
-GitHub Enterprise Server, GitLab 및 Bitbucket과 같이 액세스 토큰과 함께 온보딩되는 다른 모든 외부 저장소의 경우 Webhook 구성을 사용할 수 있으며 수동으로 설정해야 합니다.
+
+GitHub Enterprise, GitLab 및 Bitbucket과 같이 액세스 토큰과 함께 온보딩되는 다른 모든 외부 저장소의 경우 웹후크 구성을 사용할 수 있으며 수동으로 설정해야 합니다.
 
 **외부 저장소에 대한 웹후크를 구성하려면:**
 
@@ -135,7 +137,7 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
    1. **Webhook 암호** 토큰/키 필드 옆에 있는 **생성**&#x200B;을 클릭한 다음 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭합니다.
 암호를 일반 텍스트 파일에 붙여넣습니다. 복사된 암호는 Git 공급업체의 Webhook 설정에 필요합니다.
 1. **닫기**&#x200B;를 클릭합니다.
-1. Git 공급업체 솔루션(GitHub Enterprise, GitLab 또는 Bitbucket)으로 이동합니다.
+1. Git 공급업체 솔루션(GitHub Enterpriser, GitLab 또는 Bitbucket)으로 이동합니다.
 
    Webhook 구성에 대한 모든 세부 정보와 각 공급업체에 필요한 이벤트는 [외부 저장소 추가](#add-ext-repo)에서 확인할 수 있습니다. 8단계에서 표를 참조하십시오.
 
@@ -146,8 +148,13 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
       API 키를 생성하려면 Adobe Developer Console에서 통합 프로젝트를 만들어야 합니다. 자세한 내용은 [API 통합 프로젝트 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 참조하십시오.
 
 1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
-1. Cloud Manager에서 예상하는 적절한 이벤트를 전송하도록 웹후크를 구성합니다.
+1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 웹후크를 구성합니다.
 
+   | 저장소 | 필수 웹후크 이벤트 |
+   | --- | --- |
+   | GitHub Enterprise | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul> |
+   | GitLab | 이러한 웹후크 이벤트를 사용하면 코드가 푸시되거나 병합 요청이 제출될 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul> |
+   | Bitbucket | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
 
 ### 웹후크를 사용한 풀 요청 유효성 검사
 
@@ -155,11 +162,11 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 다음과 같은 동작이 적용됩니다.
 
-* **GitHub Enterprise Server**
+* **GitHub Enterprise**
 
-  검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise Server(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
+  검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
 
-  ![GitHub Enterprise Server의 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+  ![GitHub Enterprise에서 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 * **Bitbucket**
 

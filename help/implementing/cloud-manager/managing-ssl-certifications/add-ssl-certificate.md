@@ -1,27 +1,27 @@
 ---
 title: SSL 인증서 추가
-description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서 또는 Adobe 관리 DV(도메인 유효성 검사) 인증서를 추가하는 방법을 알아봅니다.
+description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서 또는 Adobe Managed DV(도메인 유효성 검사) 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 4%
+source-wordcount: '1021'
+ht-degree: 6%
 
 ---
 
 
 # SSL 인증서 추가 {#add-ssl-cert}
 
-Cloud를 사용하여 자체 SSL 인증서 또는 Adobe 관리 DV(도메인 유효성 검사) 인증서를 추가하는 방법을 알아봅니다
+Cloud를 사용하여 자체 SSL 인증서 또는 Adobe Managed DV(도메인 유효성 검사) 인증서를 추가하는 방법을 알아봅니다
 
 >[!NOTE]
 >
 >OV/EV(고객 관리) SSL 인증서와 고객 관리 CDN 공급자를 사용하는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
 
-인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe은 지연을 방지하기 위해 마감일이나 라이브 날짜 이전에 자체 인증서를 프로비저닝할 것을 권장합니다.
+인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe에서는 지연이 발생하지 않도록 마감일이나 라이브 날짜 이전에 자체 인증서를 프로비저닝할 것을 권장합니다.
 
 Cloud Manager에서 SSL 인증서를 업데이트하고 관리하는 방법에 대한 자세한 내용은 [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)를 참조하십시오.
 
@@ -35,12 +35,12 @@ Cloud Manager에서 SSL 인증서를 업데이트하고 관리하는 방법에 �
 
 ## 추가할 SSL 인증서 선택 {#which-ssl-to-add}
 
-[AEM Cloud Manager에서 사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)을(를) 추가한 후 다음 단계는 DV(Adobe 관리) SSL 인증서(권장) 또는 OV/EV(고객 관리) SSL 인증서 사용 선택 여부에 따라 다릅니다.
+[AEM Cloud Manager에서 사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)한 후 다음 단계는 Adobe 관리(DV) SSL 인증서(권장) 또는 고객 관리(OV/EV) SSL 인증서를 사용하도록 선택했는지 여부에 따라 다릅니다.
 
 * **DV(Adobe 관리) SSL 인증서의 경우:**
    * Cloud Manager에서 사용자 정의 도메인을 추가하고 확인하면 도메인 유효성 검사 프로세스가 수행됩니다.
    * 이제 [DV(Adobe 관리) SSL 인증서를 추가](#add-adobe-managed-ssl-cert)해야 합니다.
-Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사용자를 대신하여 DV SSL 인증서를 설치합니다.
+Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인증서가 발급되고 설치될 때까지 기다립니다.
    * 인증서가 활성화되면 사용자 정의 도메인을 사용할 수 있습니다.
 
 * **고객 관리(OV/EV) SSL 인증서:**
@@ -83,7 +83,7 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 
    SSL 인증서가 발급되면 **SSL 인증서** 표에 녹색 Valid 확인 표시가 나타납니다.
 
-이제 프로젝트에 대한 작업 Adobe 관리 DV SSL 인증서를 추가했습니다. 이 단계는 사용자 정의 도메인 이름을 처음 설정하는 경우가 많습니다.
+이제 프로젝트에 대해 작동하는 Adobe 관리 DV SSL 인증서를 추가했습니다. 이 단계는 사용자 정의 도메인 이름을 처음 설정하는 경우가 많습니다.
 
 이제 [CDN 구성](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)을 추가할 준비가 되었습니다.
 
@@ -92,6 +92,10 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
 도메인에서 Adobe 관리 SSL 인증서(권장) 또는 고객 관리 SSL 인증서를 사용할지 선택하는 데 도움이 필요하십니까? [추가할 SSL 인증서 선택](#which-ssl-to-add)을 참조하세요.
+
+>[!IMPORTANT]
+>
+>SSL 인증서를 추가하거나 업데이트할 때 인증서 체인에 새 인증서를 포함하지 마십시오. 포함하면 업로드가 제대로 완료되지 않습니다.
 
 **고객 관리(OV/EV) SSL 인증서를 추가하려면:**
 
