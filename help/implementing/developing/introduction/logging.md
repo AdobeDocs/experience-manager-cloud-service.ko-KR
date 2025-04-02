@@ -4,9 +4,9 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2364'
 ht-degree: 9%
 
 ---
@@ -17,9 +17,9 @@ AEM as a Cloud Service은 고객이 자신의 고객 기반을 위해 고유한 
 
 AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager을 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service에 로그인하는 것은 세 개의 논리 세트로 나눌 수 있습니다.
 
-* AEM 로깅 - AEM 애플리케이션 수준에서 로깅을 수행합니다.
-* Publish 계층에서 웹 서버 및 Dispatcher의 로깅을 수행하는 Apache HTTPD 웹 서버/Dispatcher 로깅.
-* CDN 로깅은 이름 그대로 CDN에서 로깅을 수행합니다. 이 기능은 9월 초에 고객에게 점진적으로 출시되고 있습니다.
+* AEM 로깅: AEM 애플리케이션 수준에서 로깅을 수행합니다.
+* Apache HTTPD 웹 서버/Dispatcher 로깅 - 게시 계층에서 웹 서버 및 Dispatcher의 로깅을 수행합니다.
+* CDN 로깅은 이름 그대로 CDN에서 로깅을 수행합니다.
 
 ## AEM 로깅 {#aem-logging}
 
@@ -27,11 +27,11 @@ AEM 애플리케이션 수준에서 로깅은 다음 세 가지 로그에 의해
 
 1. AEM Java 로그: AEM 애플리케이션에 대한 Java 로깅 문을 렌더링합니다.
 1. AEM에서 제공하는 HTTP 요청 및 해당 응답에 대한 정보를 기록하는 HTTP 요청 로그
-1. 요약된 정보 및 AEM에서 제공하는 HTTP 요청을 기록하는 HTTP 액세스 로그
+1. AEM에서 제공하는 요약 정보 및 HTTP 요청을 기록하는 HTTP 액세스 로그
 
 >[!NOTE]
 >
->Publish 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
+>게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
 
 ## AEM Java 로깅 {#aem-java-logging}
 
@@ -97,7 +97,7 @@ ERROR 로깅이 활성화되면 실패를 나타내는 문만 기록됩니다. �
 
 AEM as a Cloud Service Java 로깅은 다른 여러 수준의 로깅 세부기간을 지원하지만 위에서 설명한 세 가지 수준을 사용하는 것이 좋습니다.
 
-AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSGi 구성은 차례로 Git에 커밋되고 Cloud Manager을 통해 AEM as a Cloud Service에 배포됩니다. 따라서 업데이트된 로그 수준 구성으로 애플리케이션을 다시 배포하지 않고도 AEM as Cloud Service을 통해 사용할 수 있는 로그를 최적의 로그 수준에서 사용할 수 있도록 로그 문을 일관되게 유지하고 환경 유형에 대해 잘 알려진 상태로 유지하는 것이 가장 좋습니다.
+AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSGi 구성은 결과적으로 Git에 커밋되고 Cloud Manager을 통해 AEM as a Cloud Service에 배포됩니다. 따라서 업데이트된 로그 수준 구성으로 애플리케이션을 다시 배포하지 않고도 최적의 로그 수준에서 AEM as Cloud Service을 통해 사용할 수 있는 로그를 사용할 수 있도록 로그 문을 일관되게 유지하고 환경 유형에 대해 잘 알려진 상태로 유지하는 것이 가장 좋습니다.
 
 **로그 출력 예**
 
@@ -135,7 +135,7 @@ AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSG
 </tr>
 <tr>
 <td>로그 메시지</td>
-<td>지정된 승인자가 없습니다. [ Creative Approvers 사용자 그룹 ]이 기본값으로 설정됩니다.</td>
+<td>지정된 승인자가 없습니다. [ Creative 승인자 사용자 그룹 ]이 기본값으로 설정됩니다.</td>
 </tr>
 </tbody>
 </table>
@@ -194,7 +194,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 
 ## AEM HTTP 요청 로깅 {#aem-http-request-logging}
 
-AEM as a Cloud Service의 HTTP 요청 로깅을 통해 AEM에 수행된 HTTP 요청과 그 HTTP 응답을 시간 순서대로 파악할 수 있습니다. 이 로그는 AEM에 대한 HTTP 요청과 이 요청이 처리되고 응답하는 순서를 이해하는 데 유용합니다.
+AEM as a Cloud Service의 HTTP 요청 로깅을 통해 AEM에 수행된 HTTP 요청과 그 HTTP 응답을 시간 순서대로 파악할 수 있습니다. 이 로그는 AEM에 대한 HTTP 요청과 이 요청이 처리 및 응답된 순서를 이해하는 데 유용합니다.
 
 이 로그를 이해하는 핵심은 HTTP 요청 및 응답 쌍을 해당 ID로 매핑하는 것입니다(대괄호의 숫자 값으로 표시됨). 종종 요청 및 해당 응답에는 다른 HTTP 요청과 응답이 로그에 있는 요청 사이에 끼어있습니다.
 
@@ -279,19 +279,19 @@ AEM as a Cloud Service에서는 HTTP 액세스 로그를 구성할 수 없습니
 
 ## Apache 웹 서버 및 Dispatcher 로깅 {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service은 Publish에 Apache 웹 서버 및 Dispatcher 계층에 대해 세 개의 로그를 제공합니다.
+AEM as a Cloud Service은 게시에서 Apache 웹 서버 및 Dispatcher 계층에 대해 세 개의 로그를 제공합니다.
 
 * Apache HTTPD 웹 서버 액세스 로그
 * Apache HTTPD 웹 서버 오류 로그
 * Dispatcher 로그
 
-이러한 로그는 Publish 계층에서만 사용할 수 있습니다.
+이러한 로그는 게시 계층에만 사용할 수 있습니다.
 
-이 로그 세트는 해당 요청이 AEM 애플리케이션에 도달하기 전에 AEM as a Cloud Service Publish 계층에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 이는 이상적으로 Publish 계층 서버에 대한 대부분의 HTTP 요청이 Apache HTTPD 웹 서버 및 AEM Dispatcher에 의해 캐시된 콘텐츠에서 제공되므로 AEM 애플리케이션 자체에는 절대 도달하지 않는다는 것을 이해하는 데 중요합니다. 따라서 AEM의 Java, 요청 또는 액세스 로그에는 이러한 요청에 대한 로그 구문이 없습니다.
+이 로그 세트는 해당 요청이 AEM as a Cloud Service 애플리케이션에 도달하기 전에 AEM Publish 계층에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 게시 계층 서버에 대한 대부분의 HTTP 요청은 Apache HTTPD 웹 서버 및 AEM Dispatcher에 의해 캐시된 콘텐츠에서 제공되므로 AEM 애플리케이션 자체에는 절대 도달하지 않는다는 것을 이해하는 것이 중요합니다. 따라서 AEM의 Java, 요청 또는 액세스 로그에는 이러한 요청에 대한 로그 구문이 없습니다.
 
 ### Apache HTTPD 웹 서버 액세스 로그 {#apache-httpd-web-server-access-log}
 
-Apache HTTP 웹 서버 액세스 로그는 Publish 계층의 웹 서버/Dispatcher에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
+Apache HTTP 웹 서버 액세스 로그는 게시 계층의 웹 서버/Dispatcher에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
 
 [공식 Apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog)에서 오류 로그 형식에 대한 정보를 참조하십시오.
 
@@ -360,7 +360,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ## Apache HTTPD 웹 서버 오류 로그 {#apache-httpd-web-server-error-log}
 
-Apache HTTP 웹 서버 오류 로그는 Publish 계층의 웹 서버/Dispatcher에 있는 각 오류에 대한 문을 제공합니다.
+Apache HTTP 웹 서버 오류 로그는 게시 계층의 웹 서버/Dispatcher에 있는 각 오류에 대한 문을 제공합니다.
 
 [공식 Apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#errorlog)에서 오류 로그 형식에 대한 정보를 참조하십시오.
 
@@ -403,7 +403,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite 로그 수준은 `conf.d/variables/global.var` 파일의 REWRITE_LOG_LEVEL 변수에 의해 정의됩니다.
 
-error, warn, info, debug 및 trace1 - trace8로 설정할 수 있으며 기본값은 warn입니다. RewriteRules를 디버깅하려면 로그 수준을 trace2로 높이는 것이 좋습니다. [Dispatcher SDK](../../dispatcher/validation-debug.md)를 사용하여 규칙 다시 작성을 디버깅하는 것이 좋습니다. AEM as a Cloud Service의 최대 로그 수준은 `debug`입니다. 따라서 현재 클라우드에서 재작성 규칙을 디버깅하는 것이 효과적으로 불가능합니다.
+error, warn, info, debug 및 trace1 - trace8로 설정할 수 있으며 기본값은 warn입니다. RewriteRules를 디버깅하려면 로그 수준을 trace2로 높이는 것이 좋습니다. [Dispatcher SDK](../../dispatcher/validation-debug.md)을 사용하여 다시 쓰기 규칙을 디버깅하는 것이 좋습니다. AEM as a Cloud Service의 최대 로그 수준은 `debug`입니다. 따라서 현재 클라우드에서 재작성 규칙을 디버깅하는 것이 효과적으로 불가능합니다.
 
 자세한 내용은 [mod_rewrite 모듈 설명서](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)를 참조하세요.
 
@@ -561,7 +561,7 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 
 클라우드 서비스용 AEM as a Cloud Service 로그는 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 테일링하여 액세스할 수 있습니다. 자세한 내용은 [Cloud Manager 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
 
-### 추가 Publish 지역 로그 {#logs-for-additional-publish-regions}
+### 추가 게시 영역에 대한 로그 {#logs-for-additional-publish-regions}
 
 특정 환경에 대해 추가 게시 영역이 활성화된 경우 위에서 언급한 대로 Cloud Manager에서 각 영역에 대한 로그를 다운로드할 수 있습니다.
 
@@ -573,7 +573,7 @@ cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:1
 
 ### 로컬 SDK {#local-sdk}
 
-AEM as a Cloud Service SDK는 로컬 개발을 지원하기 위해 로그 파일을 제공합니다.
+AEM as a Cloud Service SDK은 로컬 개발을 지원하기 위한 로그 파일을 제공합니다.
 
 AEM 로그는 다음 로그를 볼 수 있는 `crx-quickstart/logs` 폴더에 있습니다.
 
@@ -589,7 +589,7 @@ Dispatcher를 포함한 Apache 계층 로그는 Dispatcher이 보관된 도커 �
 1. 컨테이너에 로그인하려면 &quot;`docker exec -it <container> /bin/sh`&quot;을(를) 입력하십시오. 여기서 `<container>`은(는) 이전 단계의 Dispatcher 컨테이너 ID입니다.
 1. `/mnt/var/www/html` 아래의 캐시 루트로 이동
 1. 로그가 `/etc/httpd/logs` 아래에 있습니다.
-1. Inspect 로그: XYZ 폴더 아래에서 액세스할 수 있으며 여기에서 다음 로그를 볼 수 있습니다.
+1. 로그를 검사합니다. 다음 로그를 볼 수 있는 XYZ 폴더 아래에서 액세스할 수 있습니다.
    * Apache HTTPD 웹 서버 액세스 로그 - `httpd_access.log`
    * Apache HTTPD 웹 서버 오류 로그 - `httpd_error.log`
    * Dispatcher 로그 - `dispatcher.log`
@@ -611,7 +611,7 @@ Dispatcher를 포함한 Apache 계층 로그는 Dispatcher이 보관된 도커 �
 
 ## 로그 전달 {#log-forwarding}
 
-Cloud Manager에서 로그를 다운로드할 수 있지만 일부 조직에서는 이러한 로그를 기본 로깅 대상에 전달하는 것이 좋습니다. AEM은 다음 대상에 대한 스트리밍 로그를 지원합니다.
+Cloud Manager에서 로그를 다운로드할 수 있지만 일부 조직에서는 이러한 로그를 기본 로깅 대상에 전달하는 것이 좋습니다. AEM은 다음 대상에 대한 로그 스트리밍을 지원합니다.
 
 * Azure Blob 저장소
 * Datadog
