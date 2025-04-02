@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
+source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 16%
+source-wordcount: '1514'
+ht-degree: 15%
 
 ---
 
@@ -36,13 +36,11 @@ ht-degree: 16%
 * SITES-25433: 이전 버전을 비교할 때 전체 페이지 렌더링을 지원합니다.
 * SITES-25923: LinkInfoStorageImpl은 더 이상 URL이 저장되지 않을 때 차단할 수 있습니다.
 * SITES-26208: 이제 워크플로우를 통해 콘텐츠 조각을 삭제하면 새로 삭제된 조각을 제거하여 참조 리소스를 업데이트하는 옵션이 제공됩니다.
-* SITES-26400: 횡단보도를 개선, 간소화 및 강화하여 Edge Delivery 서비스를 채택할 수 있는 낮은 장벽
 * SITES-26500: 워크플로 - `move-fragments`을(를) 통해 콘텐츠 조각을 이동하는 옵션을 추가합니다.
 * SITES-26711: 롤아웃 트리거 - 링크가 업데이트되지 않습니다.
 * SITES-27583: 이동 후 버전 기록이 손실되는 경험 조각입니다.
 * SITES-27618: 페이지에서 조각 참조를 검색해도 모든 결과가 반환되지 않습니다.
 * SITES-27781: 콘텐츠 조각 참조에 대한 모델 수준 유효성 검사를 구현하여 모델 제약 조건 및 필수 태그에 대한 참조된 조각의 유효성 검사를 가능하게 했습니다.
-* SITES-27782: 특정 게시자 및 구독자 에이전트별 횡단보도를 만듭니다.
 * SITES-27784: `jcr:path` 대신 PATH 함수를 사용하도록 SQL 쿼리 생성을 업데이트하십시오.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener가 손상되었습니다.
 * SITES-28051: 컨텐츠 조각: GET /cf/fragments/{fragmentId}/permissions에 대한 현재 사용자의 권한을 가져옵니다.
@@ -65,6 +63,10 @@ ht-degree: 16%
 * SITES-2947: kibana 시각화를 생성/수정하여 게시 rasp를 비교합니다.
 * SITES-29733: 콘텐츠 조각 태그로 모델 검색 성능이 향상되었습니다.
 * SITES-8316: 컨텐츠 정책: ContentPolicyManager를 캐시합니다.
+* SITES-24906: 범용 편집기가 있는 Edge Delivery: 매핑 없이 작성자가 만든 스프레드시트를 지원합니다(조기 액세스)
+* SITES-24907: 범용 편집기가 있는 Edge Delivery: MSM 사용 사례를 위해 여러 사이트에 Assets 게시를 지원합니다(조기 액세스)
+* SITES-27956: 범용 편집기가 있는 Edge Delivery: 게시 처리량 개선(조기 액세스)
+* SITES-27956: 범용 편집기가 있는 Edge Delivery: Edge Delivery Services에 게시하기 위한 오류 처리 개선(조기 액세스)
 
 ### 해결된 문제 {#fixed-issues-20133}
 
@@ -90,7 +92,7 @@ ht-degree: 16%
 * SITES-26881: AEMaaCS 접근성 버그 - 댓글 입력 필드 옆에 있는 &quot;세 점&quot; 아이콘에 잘못된 역할이 제공됩니다.
 * SITES-26956: 프로덕션 환경에서 페이지를 이동할 수 24920 SITES-Launch에 대한 후속 조치입니다.
 * SITES-27707: 에셋 이름 문제(6.5 SP22 회귀)로 인해 콘텐츠 파인더 에셋 목록이 실패합니다.
-* SITES-27757: helix-html-pipeline을 사용하여 아이콘 재쓰기가 정확하지 않습니다.
+* SITES-27757: 범용 편집기가 있는 Edge Delivery: helix-html-pipeline 의미에 따라 아이콘을 다시 작성합니다.
 * SITES-27780: RTE에 예기치 않은 &lt;br> 태그가 SP22의 일반 텍스트 DefaultPasteMode와 함께 나타납니다.
 * SITES-27958: Linkchecker에서 &quot;이 세션이 종료되었습니다&quot; 오류가 발생합니다.
 * SITES-28149: Target으로 XF 내보내기를 수행하는 동안 사용자 지정 ExperienceFragmentLinkRewriterProvider가 트리거되지 않았습니다.
