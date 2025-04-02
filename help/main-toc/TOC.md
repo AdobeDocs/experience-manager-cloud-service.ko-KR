@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 457a5715c9f8a51e2806bcc83f55a88c69fae91b
+source-git-commit: dd7b09dc208f556a08d4a8960d9c71ec3c6e7651
 workflow-type: tm+mt
 source-wordcount: '6127'
 ht-degree: 99%
@@ -1104,8 +1104,8 @@ ht-degree: 99%
       + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
       + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + 콘텐츠 조각 선택기 {#content-fragment-selector}
-      + [마이크로 프론트엔드 콘텐츠 조각 선택기 - 개요](/help/headless/content-fragment-selector/content-fragment-selector-overview.md)
-      + [콘텐츠 조각 선택기 - 관련 속성](/help/headless/content-fragment-selector/content-fragment-selector-properties.md)
+      + [마이크로 프론트엔드 콘텐츠 조각 선택기 - 개요](/help/headless/content-fragment-selector/overview.md)
+      + [콘텐츠 조각 선택기 - 관련 속성](/help/headless/content-fragment-selector/properties.md)
    + [구조화된 콘텐츠 게재 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
