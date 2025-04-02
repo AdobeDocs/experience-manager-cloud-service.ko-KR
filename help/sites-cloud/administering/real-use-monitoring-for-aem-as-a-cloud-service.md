@@ -4,9 +4,9 @@ description: 클라이언트측 데이터 수집을 모니터링할 수 있는 �
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,7 @@ RUM(Real Use Monitoring) 서비스는 웹 사이트 또는 애플리케이션에
 
 ## Real Use Monitoring Service를 통해 혜택을 얻을 수 있는 사람은 누구입니까? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring은 고객 및 Adobe이 최종 사용자가 AEM 사이트와 상호 작용하는 방법을 이해하는 데 도움이 됩니다. Real Use Monitoring은 성능 문제를 진단하고 실험의 효과를 측정합니다. 실제 사용 모니터링은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
-
-## 모니터링 서비스 및 개인 정보 보호 실제 사용 {#rum-service-and-privacy}
-
-AEM의 Real Use Monitoring 서비스는 방문자 개인 정보를 유지하고 데이터 수집을 최소화합니다. 방문자는 방문 중이거나 Adobe에서 사용할 수 있는 사이트가 개인 정보를 수집하지 않음을 의미합니다.
-
-사이트 운영자는 이 기능을 통해 모니터링을 활성화하는 데 추가 옵트인이 필요하지 않습니다. 최종 사용자가 RUM 활성화를 위해 수락할 추가 팝업 또는 동의 양식이 없습니다.
+Real Use Monitoring은 고객 및 Adobe이 최종 사용자가 AEM 사이트와 상호 작용하는 방법을 이해하는 데 도움이 됩니다. 실제 사용 모니터링은 제한된 데이터 수집 및 샘플링을 통해 방문자의 개인 정보를 보존합니다. 모든 페이지 보기의 일부만 모니터링됩니다.
 
 ## Real Use 모니터링 서비스 데이터 샘플링 {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ AEM의 Real Use Monitoring 서비스는 방문자 개인 정보를 유지하고 
 
 ## 어떤 데이터가 수집됩니까? {#what-data-is-being-collected}
 
-Real Use Monitoring 서비스는 개인 식별 정보의 수집을 방지하기 위해 설계되었습니다. RUM에서 수집한 전체 정보 집합은 아래에 나와 있습니다.
+Real Use Monitoring 서비스는 데이터 수집을 최소화하도록 설계되었습니다. RUM에서 수집한 전체 정보 집합은 아래에 나와 있습니다.
 
 * 방문 중인 사이트의 호스트 이름(예: `experienceleague.adobe.com`)
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형 및 운영 체제(예: `desktop:windows` 또는 `mobile:ios`)
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    RUM 라이브러리 및 RUM 컬렉션은 콘텐츠 요청으로 계산되지 않고 보고된 페이지 보기 수 또는 API 호출 수를 증가시키지 않습니다. 또한 AEM as a Cloud Service에서 기본 제공 CDN을 사용하는 고객의 경우 [서버측 컬렉션](#serverside-collection)이 콘텐츠 요청의 기본입니다.
 
-1. **어떻게 옵트아웃할 수 있습니까?**
+1. **RUM을 비활성화하려면 어떻게 해야 합니까?**
 
    Adobe은 상당한 이점으로 인해 RUM(Real Use Monitoring)을 사용할 것을 권장하며 Adobe을 통해 웹 사이트 성능을 개선하여 디지털 경험을 최적화할 수 있도록 지원할 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
 
