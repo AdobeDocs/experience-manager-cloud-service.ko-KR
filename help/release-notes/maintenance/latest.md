@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 15%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 15%
 ### 개선 사항 {#enhancements-20133}
 
 * ASSETS-47850: AEM CS가 ES로 설정된 경우 Scene7 구성 추가를 제한합니다.
-* CQ-4359547: https://git.corp.adobe.com/target-sdk/tsdk-core 저장소에서 구아바를 완전히 제거합니다.
+* CQ-4359547: git 저장소에서 구아바를 완전히 제거합니다.
 * FORMS-17551: SharePoint 목록 통합에 대한 DoR(Document of Record) 지원이 추가되었습니다.
 * FORMS-18432: OSGI 수준 변경 없이 선택적 미리 채우기 기능을 사용할 수 있도록 양식별(정규 표현식 기반) 클라이언트측 미리 채우기 구성이 구현되었습니다.
 * FORMS-18513: AEP Connector에서 데이터 트리 변환 지원을 구현하여 마법사 기능과 데이터 처리 기능을 개선했습니다.
@@ -57,16 +57,16 @@ ht-degree: 15%
 * SITES-28549: AEM 계층을 기반으로 도메인 ID를 반환하려면 `/cf/domains`을(를) 만듭니다.
 * SITES-29026: 언어 및 국가 코드를 사용하여 콘텐츠 조각의 로케일을 지정하는 선택적 매개 변수를 추가했습니다.
 * SITES-29031: PATCH-ing 조각에 대한 논리가 개선되어 더 나은 성능을 제공합니다.
-* SITES-29169: 이동, 이름 변경 또는 삭제된 리소스를 참조하는 경우 게시된 모든 리소스(게시됨 또는 수정됨 상태에 관계없이)가 다시 게시됩니다.
+* SITES-29169: 게시됨 상태의 리소스는 이동되거나 이름이 변경되거나 삭제된 리소스를 참조하는 경우 다시 게시됩니다.
 * SITES-29376: 게시된 리소스 삭제의 유효성 검사로 코드 추가 토글을 전환합니다.
-* SITES-29417: /libs/cq/Page/proxy.jsp을 업데이트하여 를 포함하지 않고 요청을 jcr:content 노드에 전달합니다.
+* SITES-29417: `/libs/cq/Page/proxy.jsp`을(를) 업데이트하여 포함 대신 jcr:content 노드로 요청을 전달합니다.
 * SITES-2947: kibana 시각화를 생성/수정하여 게시 rasp를 비교합니다.
 * SITES-29733: 콘텐츠 조각 태그로 모델 검색 성능이 향상되었습니다.
 * SITES-8316: 컨텐츠 정책: ContentPolicyManager를 캐시합니다.
-* SITES-24906: 범용 편집기가 있는 Edge Delivery: 매핑 없이 작성자가 만든 스프레드시트를 지원합니다(조기 액세스)
-* SITES-24907: 범용 편집기가 있는 Edge Delivery: MSM 사용 사례를 위해 여러 사이트에 Assets 게시를 지원합니다(조기 액세스)
-* SITES-27956: 범용 편집기가 있는 Edge Delivery: 게시 처리량 개선(조기 액세스)
-* SITES-27956: 범용 편집기가 있는 Edge Delivery: Edge Delivery Services에 게시하기 위한 오류 처리 개선(조기 액세스)
+* SITES-24906: 범용 편집기가 있는 Edge Delivery: 매핑(조기 액세스) 없이 작성자가 만든 스프레드시트를 지원합니다.
+* SITES-24907: 범용 편집기가 있는 Edge Delivery: MSM 사용 사례를 위해 여러 사이트에 Assets을 게시하도록 지원합니다(조기 액세스).
+* SITES-27956: 범용 편집기가 있는 Edge Delivery: 게시 처리량(조기 액세스)을 개선합니다.
+* SITES-27956: 범용 편집기가 있는 Edge Delivery: Edge Delivery Services에 게시하기 위한 오류 처리를 개선합니다(조기 액세스).
 
 ### 해결된 문제 {#fixed-issues-20133}
 
