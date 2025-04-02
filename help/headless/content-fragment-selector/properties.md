@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 마이크로 프론트엔드 콘텐츠 조각 선택기 속성
 description: 애플리케이션에서 콘텐츠 조각을 검색, 찾기 및 검색하도록 마이크로 프론트엔드 콘텐츠 조각 선택기를 구성하는 속성입니다.
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
-
 
 # 콘텐츠 조각 선택기 - 관련 속성 {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ ht-degree: 3%
 | `filters` | 조각 필터 | 아니요 | | 콘텐츠 조각 목록에 적용할 필터. 기본적으로 `/content/dam` 아래의 조각이 표시됩니다. 기본값: `{ folder: "/content/dam" }` |
 | `isOpen` | 부울 | 예 | `false` | 선택기 열기 또는 닫기를 트리거하는 플래그입니다. |
 | `onDismiss` | () => void | 예 | | **취소**&#x200B;를 선택하면 호출할 함수입니다. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | 하나 이상의 콘텐츠 조각을 선택한 후 **Select**&#x200B;을(를) 사용하면 호출할 함수입니다. <br><br>함수가 받게 되는 값:<br><ul><li> `id` 및 `path` 필드가 있는 선택된 콘텐츠 조각</li><li>및 저장소의 프로그램 id 및 환경 id와 관련된 도메인 이름으로, 상태가 `ready`이고 게시가 `tier`입니다.</li></ul><br>도메인 이름이 없으면 게시 인스턴스를 대체 도메인으로 사용합니다. |
-| `theme` | &quot;light&quot; | &quot;dark&quot; | 아니요 | | 콘텐츠 조각 선택기의 테마입니다. 기본 테마는 UnifiedShell 환경의 테마로 설정됩니다. |
-| `selectionType` | &quot;single&quot; | &quot;다중&quot; | 아니요 | `single` | FragmentSelector에 대한 선택을 제한하는 데 사용할 수 있는 선택 유형입니다. |
-| `dialogSize` | &quot;전체 화면&quot; | &quot;fullscreenTakeover&quot; | 아니요 | `fullscreen` | 대화 상자 크기를 제어하는 선택적 속성입니다. |
+| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | 예 | | 하나 이상의 콘텐츠 조각을 선택한 후 **Select**&#x200B;을(를) 사용하면 호출할 함수입니다. <br><br>함수가 받게 되는 값:<br><ul><li> `id` 및 `path` 필드가 있는 선택된 콘텐츠 조각</li><li>및 저장소의 프로그램 id 및 환경 id와 관련된 도메인 이름으로, 상태가 `ready`이고 게시가 `tier`입니다.</li></ul><br>도메인 이름이 없으면 게시 인스턴스를 대체 도메인으로 사용합니다. |
+| `theme` | &quot;light&quot; 또는 &quot;dark&quot; | 아니요 | | 콘텐츠 조각 선택기의 테마입니다. 기본 테마는 UnifiedShell 환경의 테마로 설정됩니다. |
+| `selectionType` | &quot;single&quot; 또는 &quot;multiple&quot; | 아니요 | `single` | FragmentSelector에 대한 선택을 제한하는 데 사용할 수 있는 선택 유형입니다. |
+| `dialogSize` | &quot;fullscreen&quot; 또는 &quot;fullscreenTakeover&quot; | 아니요 | `fullscreen` | 대화 상자 크기를 제어하는 선택적 속성입니다. |
 | `waitForImsToken` | 부울 | 아니요 | `false` | 콘텐츠 조각 선택기가 SUSI 흐름 컨텍스트에서 렌더링되는지 여부를 나타내며 `imsToken`이(가) 준비될 때까지 기다려야 합니다. |
 | `imsAuthInfo` | ImsAuthInfo | 아니요 | | 로그인한 사용자의 IMS 인증 정보가 포함된 개체입니다. |
 | `runningInUnifiedShell` | 부울 | 아니요 | | 콘텐츠 조각 선택기가 UnifiedShell에서 실행 중인지 또는 독립 실행형인지 여부를 나타냅니다. |
