@@ -3,10 +3,10 @@ title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 11%
+source-wordcount: '653'
+ht-degree: 15%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -74,6 +74,8 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 모든
 | [자산 메타데이터](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | title, description, CreateDate, ModifyDate 등과 같이 에셋과 연결된 속성을 반환합니다. |
 | 비디오 자산에 대한 [플레이어 컨테이너](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 비디오 자산에 대한 플레이어 컨테이너를 반환합니다. 플레이어를 iframe HTML 요소에 임베드하고 비디오를 재생할 수 있습니다. |
 | [선택한 출력 형식의 재생 매니페스트](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 지정된 비디오 자산에 대한 재생 매니페스트 파일을 선택한 출력 형식으로 반환합니다. 재생 매니페스트 파일을 가져와서 비디오를 재생하려면 HLS 또는 DASH 프로토콜을 통해 적응형 스트리밍이 가능한 사용자 지정 플레이어를 빌드해야 합니다. |
+
+OpenAPI 기능이 포함된 Dynamic Media도 긴 양식 비디오를 지원합니다. 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
 
 사용 가능한 Dynamic Media 서비스 및 기능에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)을(를) 참조하십시오.
 

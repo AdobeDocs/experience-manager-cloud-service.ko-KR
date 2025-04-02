@@ -4,10 +4,10 @@ description: ' [!DNL Dynamic Media] Prime 및 Ultimate 서비스를 활성화하
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 ## [!DNL Dynamic Media] Ultimate 사용 {#enable-dynamic-media-ultimate}
 
-클라우드 서비스 환경에서 다음 단계를 실행하여 [!DNL Dynamic Media] Ultimate을 사용하도록 설정합니다.
+[!DNL Dynamic Media] Ultimate을 사용하려면:
 
 1. [활성화 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [구성 [!DNL Dynamic Media] 솔루션](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ IMS 조직에서 기존 회사(계정)를 보거나 새 [!DNL Dynamic Media] 회
 
 1. **[!UICONTROL 상태]**&#x200B;가 보류 중인 경우 문제 해결을 위해 고객 지원 팀에 문제를 제기하십시오.
 
-   ![보류 중인 상태](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![보류 중인 상태](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. **[!UICONTROL Status]**&#x200B;이(가) 실패한 경우 실패 이유에 따라 다시 시도하십시오.
 
-   ![실패 상태](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![실패 상태](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### 선택 사항: 게재 계층에서 사용자 정의 도메인 구성 {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## [!DNL Dynamic Media] Prime 사용 {#enable-dynamic-media-prime}
 
-클라우드 서비스 환경에서 다음 단계를 실행하여 [!DNL Dynamic Media] Prime을 사용하도록 설정합니다.
+[!DNL Dynamic Media] Prime을 사용하려면:
 
 1. [OpenAPI로 Dynamic Media 활성화](#activate-dynamic-media-with-openapi)
 1. [선택 사항: 게재 계층에서 사용자 지정 도메인 구성](#configure-custom-domain-in-delivery-tier)
