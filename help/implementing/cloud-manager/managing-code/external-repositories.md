@@ -4,9 +4,9 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1866'
 ht-degree: 27%
 
 ---
@@ -206,16 +206,9 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 * PR 유효성 검사 또는 파이프라인 트리거가 작동하지 않는 경우 Cloud Manager 및 Git 공급업체 모두에서 웹후크 비밀이 최신 상태인지 확인하십시오.
 
 
-
-
-
-
-
-
 ## 제한 사항
 
 * 외부 저장소는 구성 파이프라인에 연결할 수 없습니다.
-* 외부 저장소(GitHub에서 호스팅되지 않음) 및 &quot;Git 변경 시&quot; 트리거가 있는 파이프라인은 자동으로 시작되지 않습니다. 수동으로 시작할 수만 있습니다.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
