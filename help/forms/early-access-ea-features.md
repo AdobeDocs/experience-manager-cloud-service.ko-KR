@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 26%
+source-wordcount: '2286'
+ht-degree: 27%
 
 ---
 
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 대화형 Forms은 새로운 모습 그 이상입니다. 사용자 경험을 위한 획기적인 기능입니다.  참여를 확대하고, 양식 포기를 줄이고, 웹 사이트와 상호 작용하여 모든 사용자에게 보다 즐거운 경험을 선사합니다.
 
 
-### Forms용 WYSIWYG을 위한 Edge Delivery Services 작성(유니버설 편집기)
+### Edge Delivery Services용 WYSIWYG 작성
 
-유니버설 편집기는 시각적 디자인 단순성과 고급 기능을 결합하여 [적응형 양식을 Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에 빌드하고 게시할 수 있는 강력한 WYSIWYG 인터페이스를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)의 모든 기능과 다양한 추가 기능을 제공합니다.
+WYSIWYG 작성은 적응형 양식을 작성하고 Edge Delivery Services에 게시할 수 있는 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
@@ -86,26 +86,6 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 * 양식을 미리 채우고 데이터를 제출하기 위한 다양한 데이터 소스 통합.
 * 다양한 데이터 소스와의 데이터 구조 및 상호 작용을 정의하기 위한 양식 데이터 모델(FDM).
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 및 더 많은 데이터 소스에 데이터 제출을 포함하여 양식 제출을 처리하기 위한 여러 제출 작업 중에서 선택할 수 있습니다.
-
-![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**이점:**
-
-* **TTV(Accelerated Time-to-Value)**: 직관적인 시각적 작성으로 복잡한 코딩 요구 사항을 제거하여 양식을 더 빠르게 실행할 수 있습니다.
-* **개발 비용 절감**: 비즈니스 사용자가 최소한의 IT 권한으로 양식을 만들고 수정할 수 있도록 하여 총 소유 비용을 절감합니다.
-* **간단한 개발**: 전문 프레임워크 지식 없이 HTML, CSS 및 JavaScript만 사용하여 사용자 지정 구성 요소를 만듭니다.
-* **최신 웹 스택**: 프런트 엔드 개발자에게 익숙한 웹 표준 및 최신 기술을 기반으로 합니다.
-* **신속한 프로토타이핑**: 전체 개발에 투자하기 전에 양식 개념을 빠르게 빌드하고 테스트합니다.
-
-
-**자세히 알아보려면 설명서를 살펴보십시오.**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**주요 기능**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**응답형 레이아웃 사용**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**제출 동작 구성**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**적응형 Forms용 유니버설 편집기 시작**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**양식 스타일 지정**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**reCAPTCHA 보안 추가**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**첫 번째 양식 만들기**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**규칙 편집기 사용**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**양식 게시**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**사용자 인터페이스 이해**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**사용자 지정 구성 요소 만들기**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms-Marketo 커넥터
@@ -127,27 +107,38 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 * [기존 적응형 Marketo Engage에 대한 Forms 광고 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Marketo Engage에 기존 적응형 양식 제출](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### 값 실현 대시보드
+### 클라우드의 대화형 통신
 
-값 실현 대시보드를 사용하여 양식의 성능을 추적하고 분석합니다. 이 분석 도구를 사용하면 데이터 중심의 의사 결정을 통해 양식 전략을 최적화할 수 있습니다.
+Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 메일, 청구서 및 시작 키트와 같은 데이터 기반 대화형 서신을 생성, 관리 및 제공할 수 있는 강력한 솔루션입니다.
 
-![Forms 사용 통찰력 대시보드](/help/forms/assets/forms-usage-insights.png)
+![인터랙티브 커뮤니케이션 편집기](/help/forms/assets/ic-editor.png)
 
-**주요 기능:**
+#### 주요 기능:
 
-* 양식 제출, 문서 변환 및 양식 생성/게시 지표 모니터링
-* 조직 전체에서 양식 단편 사용 및 재사용 추적
-* 추세, 피크 기간 및 개선 기회 파악
+* **클라우드 기반 편집기**: Windows 컴퓨터에만 설치할 수 있는 AEM Forms 데스크톱 Designer과 달리 대화형 통신 편집기는 설치할 필요 없이 모든 최신 브라우저에서 실행됩니다. 이 클라우드 기반 접근 방식은 설치의 번거로움을 없애고 플랫폼 간 접근성을 제공하며 인터넷 액세스가 가능한 모든 위치에서 협업이 가능합니다.
 
-대시보드는 다음 두 가지 기본 섹션을 통해 인사이트를 제공합니다.
+* **사용자에게 친숙한 디자인**: 최소한의 기술적 지식이 필요한 직관적인 포인트 앤 클릭 인터페이스입니다.
 
-* **시간이 지남에 따른 양식 및 문서 활동**: 제출, 변환 및 양식 만들기/게시를 추적합니다.
-* **조각 사용**: 조각 채택 및 재사용 모니터링
+* **데이터 통합**: 동적 콘텐츠 생성을 위해 스키마, 데이터베이스 및 웹 서비스에 연결합니다.
 
-자세한 내용은 다음을 참조하십시오.
+* **리치 미디어**: 텍스트, 이미지 및 대화형 요소를 원활하게 통합합니다.
 
-* [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
-* [양식 및 문서 사용 통찰력 해석](/help/forms/using-the-value-realization-dashboard.md)
+* **문서 단편**: 일관성 및 효율성을 위해 여러 문서에서 모듈식 콘텐츠 블록을 다시 사용합니다.
+
+* **다중 채널 출력**: 규정 준수를 통해 인쇄 및 디지털 형식 전반에 통합 환경을 만듭니다.
+
+* **다이내믹 콘텐츠**: 비즈니스 논리 및 데이터 바인딩을 사용하여 개인화된 콘텐츠를 생성합니다.
+
+* **형식 유연성**: PDF, HTML, PCL, PostScript® 및 ZPL 형식으로 출력합니다.
+
+#### 사용 사례:
+
+* 계정 명세서를 생성하는 금융 기관
+* 복리후생 공지를 간소화하는 정부 기관
+* 고품질, 보안 및 법적 규정 준수 서신 작성
+* 데이터 기반 대화형 통신의 작성, 수집 및 전달 관리
+
+시작할 준비가 되셨습니까? 대화형 통신 편집기는 Forms as a Cloud Service 배포의 조기 액세스 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 조직 ID와 프로그램 세부 정보를 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 공식 주소로 전자 메일을 보내십시오.
 
 ## 추가적인 조기 액세스 혁신
 
