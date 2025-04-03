@@ -1,27 +1,29 @@
 ---
-title: 범용 편집기를 사용하여 Edge Delivery Services 템플릿을 기반으로 독립형 양식을 만드는 방법
-description: 이 문서에서는 양식 만들기 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 범용 편집기를 사용하여 양식을 만드는 방법을 설명합니다. 양식을 AEM Edge Delivery Services에 게시할 수도 있습니다.
+title: 범용 편집기를 사용하여 Edge Delivery Services 템플릿을 기반으로 독립 실행형 양식을 만드는 방법은 무엇입니까?
+description: 이 문서에서는 양식 생성 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 범용 편집기를 통해 양식을 만드는 방법을 설명합니다. AEM Edge Delivery Services에 양식을 게시할 수도 있습니다.
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 87%
 
 ---
 
-# 범용 편집기에서 독립 실행형 양식 만들기에 대한 단계별 안내서
+# 범용 편집기를 사용하여 적응형 Forms 만들기
 
 <span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
-이 문서에서는 양식 만들기 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 유니버설 편집기로 독립 실행형 양식을 만들고 작성하는 프로세스를 안내합니다. 또한 범용 편집기를 사용해 작성한 양식을 AEM Edge Delivery Services에 게시할 수 있습니다.
+범용 편집기는 양식을 편집할 수 있는 (WYSIWYG) 환경을 제공하는 다용도 비주얼 편집기입니다. 텍스트 상자, 라디오 단추 및 확인란과 같은 적응형 Forms 구성 요소를 사용하여 끌어서 놓기 기능을 사용하여 반응형 및 사용자 친화적 양식을 간편하게 만들 수 있습니다.
 
-AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge Delivery Services 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 사이트 프로젝트를 만들거나](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
+AEM은 범용 편집기를 사용하여 데이터를 캡처하고 저장할 Edge Delivery Services Forms을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 사이트 프로젝트를 만들거나](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
 
-![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png){width=50%}
+![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png)
+
+이 문서에서는 양식 만들기 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 유니버설 편집기로 독립 실행형 양식을 만들고 작성하는 프로세스를 안내합니다.
 
 ## 사전 요구 사항
 
@@ -30,9 +32,9 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 * AEM Forms 작성자 인스턴스에는 Edge Delivery Services 기반 템플릿이 포함됩니다. 사용자 환경에 [최신 버전의 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components)가 설치되어 있는지 확인합니다.
 * AEM Forms as a Cloud Service 작성자 인스턴스 및 GitHub 저장소의 URL을 바로 사용할 수 있습니다.
 
-## 범용 편집기에서 양식 작업
+## 범용 편집기에서 양식 작업하기
 
-범용 편집기를 사용하면 텍스트 필드, 체크박스, 라디오 버튼 등과 같은 기본 제공 구성 요소를 활용하여 반응형 및 대화형 독립 실행형 양식을 손쉽게 생성할 수 있습니다. 동적 규칙, 매끄러운 데이터 통합 및 사용자 지정 옵션과 같은 강력한 기능을 제공하여 정확한 요구 사항에 따라 양식을 작성할 수 있습니다. 양식을 AEM Edge Delivery Services에 게시할 수도 있습니다. 범용 편집기에서 양식에 대해 다음 작업을 수행할 수 있습니다.
+범용 편집기를 사용하면 반응형 및 대화형 독립 실행형 양식을 쉽게 만들 수 있습니다. 범용 편집기에서 양식에 대해 다음과 같은 작업을 수행할 수 있습니다.
 * [양식 만들기](#create-a-form)
 * [양식 작성](#author-a-form)
 * [양식 게시](#publish-a-form)
@@ -55,7 +57,7 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 
    Edge Delivery Services 기반 템플릿을 선택하면 **[!UICONTROL 만들기]** 버튼이 활성화됩니다.
 1. (선택 사항) **[!UICONTROL 데이터 소스]** 또는 **[!UICONTROL 제출]** 탭에서 데이터 소스를 선택하거나 액션을 제출할 수 있습니다.
-1. (선택 사항) **[!UICONTROL 게재]** 탭에서 양식의 게시 또는 게시 취소 날짜를 지정할 수 있습니다.
+1. (선택 사항) **[!UICONTROL 게재]** 탭에서 양식의 게시 또는 게시 취소 일자를 지정할 수 있습니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **양식 생성** 마법사가 나타납니다.
 1. **이름**&#x200B;과 **제목**&#x200B;을 지정합니다.
@@ -93,7 +95,7 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 
    ![문의 양식](/help/edge/assets/contact-us.png)
 
-   이제 [양식 제출 작업을 구성하고 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)할 수 있습니다.
+   이제 [양식의 제출 액션을 구성하고 사용자 지정할 수 있습니다](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
