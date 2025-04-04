@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 팀 및 제품 프로필이 사용 허가된
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
-workflow-type: ht
-source-wordcount: '2059'
-ht-degree: 100%
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
+workflow-type: tm+mt
+source-wordcount: '2062'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service는 AEM as a Service를 제공하는 완전한 클라우�
 
 >[!NOTE]
 >
-> 이 문서에서 설명하는 일부 제품 인스턴스와 제품 프로필은 새로 생성된 환경에서만 나타날 수 있습니다. 향후 메커니즘을 통해 기존 환경도 업데이트할 예정입니다.
+> 이 문서에서 설명하는 일부 제품 인스턴스와 제품 프로필은 새로 생성된 환경에서만 나타날 수 있습니다. 환경을 현대화하는 방법은 [기존 환경에 대한 제품 프로필 추가](#adding-product-profiles-for-existing-environments)를 참조하십시오.
 
 Adobe가 처음으로 AEM 솔루션의 라이선스를 처리하면 Adobe Admin Console에서 Adobe Experience Manager as a Cloud Service 제품 아래에 두 개의 제품 인스턴스가 표시됩니다.
 
@@ -278,7 +278,7 @@ Forms Communication Solution 라이선스가 부여되면 AEM 조직 수준 제�
 
 ### 기존 환경의 제품 프로필 추가 {#adding-product-profiles-for-existing-environments}
 
-2024년 11월 초 이전에 생성된 환경에서 위 섹션에 설명된 조직 수준 제품 인스턴스와 특정 제품 프로필이 누락되어 있을 수 있습니다. 기존 제품 프로필에도 서비스 토글이 없습니다. 일부 향후 API에 액세스하기 위한 필수 구성 요소인 해당 제품 프로필을 업데이트하는 것이 좋습니다.
+2024년 4월 초 전에 생성된 환경에는 위의 섹션에 설명된 조직 수준 제품 인스턴스와 특정 제품 프로필이 누락될 수 있습니다. 기존 제품 프로필에도 서비스 토글이 없습니다. 일부 향후 API에 액세스하기 위한 필수 구성 요소인 해당 제품 프로필을 업데이트하는 것이 좋습니다.
 
 프로그램의 환경 하나 이상에서 제품 프로필을 업데이트해야 하는 경우 Cloud Manager에 아래 알림이 표시됩니다. 제품 프로필을 업데이트하려면 먼저 환경을 최신 AEM 버전으로 업데이트해야 합니다.
 
