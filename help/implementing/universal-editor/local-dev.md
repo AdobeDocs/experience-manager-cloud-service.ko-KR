@@ -4,10 +4,10 @@ description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 37%
+source-wordcount: '950'
+ht-degree: 36%
 
 ---
 
@@ -16,20 +16,24 @@ ht-degree: 37%
 
 로컬 개발을 위해 또는 자체 인프라의 일부로 고유한 범용 편집기 서비스를 실행하는 방법에 대해 알아봅니다.
 
+>[!NOTE]
+>
+>Edge Delivery Services에서 AEM 작성을 사용하는 프로젝트에는 로컬 유니버설 편집기 서비스가 필요하지 않으며 지원되지 않습니다.
+
 ## 개요 {#overview}
 
 Universal Editor Service는 Universal Editor와 백엔드 시스템을 바인딩하는 서비스입니다. 범용 편집기에서 로컬로 개발하려면 범용 편집기 서비스의 로컬 복사본을 실행해야 합니다. 이유는 다음과 같습니다.
 
-* Adobe의 공식 범용 편집기 서비스는 전 세계적으로 호스팅되며 로컬 AEM 인스턴스를 인터넷에 노출해야 합니다.
-* 로컬 AEM SDK을 사용하여 개발하는 동안 Adobe의 Universal Editor Service는 인터넷에서 액세스할 수 없습니다.
-* AEM 인스턴스에 IP 제한이 있고 Adobe의 Universal Editor 서비스가 정의된 IP 범위에 있지 않은 경우 직접 호스팅할 수 있습니다.
+* Adobe의 공식 범용 편집기 서비스는 전 세계적으로 호스팅되며, 로컬 AEM 인스턴스를 인터넷에 노출해야 합니다.
+* 로컬 AEM SDK을 사용하여 개발하는 동안 Adobe의 범용 편집기 서비스는 인터넷에서 액세스할 수 없습니다.
+* AEM 인스턴스에 IP 제한 사항이 있고 Adobe의 Universal Editor 서비스가 정의된 IP 범위에 있지 않은 경우 직접 호스팅할 수 있습니다.
 
 ## 사용 사례 {#use-cases}
 
 범용 편집기 서비스의 사용자 복사본은 다음 경우에 유용합니다.
 
-* 범용 편집기에서 사용할 AEM을 로컬로 개발합니다.
-* Adobe의 Universal Editor Service와 관계없이 자체 인프라의 일부로 Universal Editor Service를 실행하십시오.
+* 범용 편집기에서 사용할 수 있도록 AEM에서 로컬로 개발합니다.
+* Adobe의 Universal Editor Service와는 별도로 자체 인프라의 일부로 Universal Editor Service를 실행하십시오.
 
 두 사용 사례가 모두 지원됩니다. 이 문서에서는 범용 편집기 서비스의 로컬 복사본과 함께 HTTPS로 AEM을 실행하는 방법을 설명합니다.
 
@@ -41,11 +45,11 @@ HTTPS로 보호되는 외부 프레임 내에서는 비보안 HTTP 프레임을 
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 
-사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행되는 AEM을 설정하는 방법은 [이 문서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
+사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법은 [이 문서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
 
 ## Universal Editor Service 설치 {#install-ue-service}
 
-범용 편집기 서비스는 범용 편집기의 전체 복사본이 아니라 로컬 AEM 환경의 호출이 인터넷을 통해 라우팅되지 않고 사용자가 제어하는 정의된 끝점에서 라우팅되도록 하는 기능의 하위 집합일 뿐입니다.
+유니버설 편집기 서비스는 유니버설 편집기의 전체 복사본이 아니라, 로컬 AEM 환경의 호출이 인터넷을 통해 라우팅되지 않고 사용자가 제어하는 정의된 끝점에서 라우팅되도록 하는 기능의 하위 집합일 뿐입니다.
 
 [NodeJS 버전 20](https://nodejs.org/en/download/releases)은(는) 유니버설 편집기 서비스의 로컬 복사본을 실행해야 합니다.
 

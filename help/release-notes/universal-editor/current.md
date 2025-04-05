@@ -4,17 +4,17 @@ description: 다음은 범용 편집기 2025.03.10 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b3c98f5e41dbc5e1714d0ed418a317199c735b73
+source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 23%
+source-wordcount: '295'
+ht-degree: 68%
 
 ---
 
 
 # 범용 편집기 2025.03.10 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 3월 10일 릴리스에 대한 릴리스 정보입니다.
+다음은 범용 편집기 2025년 3월 10일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,17 +22,26 @@ ht-degree: 23%
 
 ## 새로운 기능 {#what-is-new}
 
-* **구성 요소 이동:** [컨테이너 간 구성 요소 이동](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)은(는) 이제 대상 컨테이너의 구성 요소 필터를 확인합니다.
-   * 더 이상 컨테이너 간에 구성 요소를 이동하기 위해 대상 컨테이너와 대상 컨테이너 모두에 대해 동일한 [필터 정의](/help/implementing/universal-editor/filtering.md)를 보유해야 하는 요구 사항이 없습니다.
-* **잠긴 페이지:** 유니버설 편집기 서비스는 [페이지의 잠금 상태](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)를 관찰하고 잠기지 않았거나 사용자가 잠근 페이지에만 씁니다.
+* **구성 요소 이동:** [컨테이너 간 구성 요소 이동](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)은 이제 타깃 컨테이너의 구성 요소 필터를 따릅니다.
+   * 더 이상 컨테이너 간 구성 요소를 이동하기 위해 타깃 및 대상 컨테이너 모두에 동일한 [필터 정의](/help/implementing/universal-editor/filtering.md)를 설정할 필요가 없습니다.
+* **잠긴 페이지:** 범용 편집기 서비스는 [페이지의 잠금 상태](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)를 따르며 잠겨 있지 않거나 사용자가 잠근 페이지에만 작성합니다.
+
+## 유니버설 편집기의 새로운 확장 기능 {#extensions}
+
+유니버설 편집기의 [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)에 여러 가지 새로운 확장이 릴리스되어 작성 환경이 향상되었습니다.
+
+* **MSM 확장**: 이제 이 확장을 사용하여 구성 요소/블록의 상속을 끊고 다시 인스턴스화할 수 있습니다.
+* **페이지 속성 확장**: 이 확장을 사용하여 유니버설 편집기에서 직접 페이지의 페이지 속성 창에 액세스합니다.
+* **워크플로 확장**: 이 확장을 사용하여 페이지에서 계측된 페이지 및 콘텐츠 조각에서 워크플로를 사용합니다.
+* **페이지 잠금 확장**: 이 확장 프로그램을 사용하여 유니버설 편집기에서 직접 페이지를 잠그고 잠금 해제할 수 있습니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* Headless 캔버스에 대한 유효성 검사를 수정했습니다.
+* Headless 캔버스에 대한 유효성 검사를 올바르게 수정했습니다.
 
 ## 사용 중단 {#deprecation}
 
-* npm 또는 `https://unviersal-editor-service.experiencecloud.live/corslib/*`을(를) 통해 제공된 `universal-editor-cors` 라이브러리는 더 이상 사용할 수 없습니다.
-   * 대신 `https://universal-editor-service.adobe.io/cors.js`을(를) 가리키는 스크립트 태그를 사용해야 합니다.
-   * 범용 편집기에서 사용할 페이지를 올바르게 계측하는 방법에 대한 자세한 내용은 [AEM 개발자를 위한 유니버설 편집기 개요](/help/implementing/universal-editor/developer-overview.md)를 참조하십시오.
-   * 잘못된 메서드를 사용하면 하루에 한 번 사용 중단 메시지가 표시됩니다.
+* npm 또는 `https://unviersal-editor-service.experiencecloud.live/corslib/*`를 통해 제공되는 `universal-editor-cors` 라이브러리는 더 이상 사용해서는 안 됩니다.
+   * `https://universal-editor-service.adobe.io/cors.js`를 가리키는 스크립트 태그를 대신 사용해야 합니다.
+   * 페이지를 범용 편집기와 함께 올바르게 사용하는 방법에 대한 자세한 내용은 [AEM 개발자용 범용 편집기 개요](/help/implementing/universal-editor/developer-overview.md)를 참조하십시오.
+   * 잘못된 방법을 사용하면 사용자에게 하루에 한 번씩 사용 중단 메시지가 표시됩니다.
