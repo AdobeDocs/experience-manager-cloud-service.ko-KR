@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: deab7ac707527e62f7a0fa3581080171e499cd32
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 10%
+source-wordcount: '2258'
+ht-degree: 6%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 10%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -51,45 +51,36 @@ ht-degree: 10%
     </tr>
 </table>
 
-| 버전 | 문서 링크 |
+<!--
+| Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
-| AEM as a Cloud Service | 이 문서 |
-
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+-->
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
 
 엔터프라이즈 오퍼링의 [!DNL Adobe Stock]은(는) 기본적으로 조직 전체에서 공유 권한을 포함합니다. 조직의 사용자가 에셋에 라이선스를 부여한 후에는 다시 라이선스를 부여하지 않고도 조직의 다른 사용자가 이 에셋을 식별하고, 다운로드하고, 사용할 수 있습니다. 조직에서 에셋에 라이선스를 부여한 후에는 에셋을 사용할 수 있는 권한이 영구적으로 유지됩니다.
 
 조직은 기업 [!DNL Adobe Stock] 계획을 [!DNL Experience Manager Assets]과(와) 통합하여 라이선스가 있는 자산이 [!DNL Experience Manager]의 강력한 자산 관리 기능을 통해 광고 및 마케팅 프로젝트에 폭넓게 사용 가능한지 확인할 수 있습니다. [!DNL Experience Manager] 사용자는 [!DNL Experience Manager] 인터페이스를 벗어나지 않고도 [!DNL Experience Manager]에 저장된 Adobe Stock 자산을 빠르게 찾고, 미리 보고, 라이선스를 제공할 수 있습니다.
 
-## [!DNL Experience Manager]과(와) [!DNL Adobe Stock] 통합 {#integrate-aem-and-adobe-stock}
+## [!DNL Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하기 위한 필수 구성 요소 {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets]은(는) 사용자에게 [!DNL Experience Manager]에서 직접 [!DNL Adobe Stock] 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다.
 
-**전제 조건**
-
-통합하려면 다음 작업을 수행해야 합니다.
+이 통합을 활성화하려면 다음 요구 사항을 충족해야 합니다.
 
 * [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service] 인스턴스로 실행 중입니다.
 * [엔터프라이즈 [!DNL Adobe Stock] 플랜](https://stockenterprise.adobe.com/)
-* 기본 Stock 제품 프로필에 대해 Admin Console 권한이 있는 사용자
-* Adobe Developer Console에서 통합을 만들기 위한 개발자 액세스 프로필에 대한 권한이 있는 사용자
+* 기본 Stock 제품 프로필에 대한 [!DNL Admin Console]의 권한이 있는 사용자
+* [!DNL Adobe Developer Console]에서 통합을 만들기 위해 [!DNL Developer Access profile]에 대한 권한이 있는 사용자
 
 엔터프라이즈 [!DNL Adobe Stock] 계획,
 
 * [!DNL Adobe Stock]에 대한 제품 권한을 제공합니다(Experience Manager에 연결된 재고).
 * 주식 특권을 위해 [!DNL Adobe Admin Console]&#x200B;(으)로 구입한 크레딧
-* 재고 자격에 대해 [!DNL Adobe Developer Console] 내에서 JWT(서비스 계정) 인증을 사용하도록 설정합니다.
 * [!DNL Adobe Admin Console] 내에서 크레딧과 라이선스를 전체적으로 관리할 수 있습니다.
 
 권한 내에서 [!DNL Adobe Stock]에 대한 기본 제품 프로필이 [!DNL Admin Console]에 있습니다. 여러 프로필을 만들 수 있으며 이러한 프로필에 따라 Stock 자산에 라이센스를 부여할 수 있는 사람이 결정됩니다. 제품 프로필에 직접 액세스하는 사용자는 [https://stock.adobe.com/](https://stock.adobe.com/)에 액세스하여 Stock 자산에 라이선스를 부여할 수 있습니다. 반면 개발자 액세스를 사용하여 통합(API)을 만드는 다른 방법이 있습니다. 이 통합은 [!DNL Experience Manager Assets]과(와) [!DNL Adobe Stock] 간의 통신을 인증합니다.
-
->[!NOTE]
->
->JWT(Stock 서비스 계정) 인증은 Enterprise Stock 권한 부여와 함께 제공됩니다.
->
->통합은 엔터프라이즈 스톡 권한에 대한 Oauth 인증을 지원하지 않습니다.
-
 
 <!--
 ### Create an IMS configuration {#create-an-ims-configuration}
@@ -118,160 +109,215 @@ ht-degree: 10%
 >[!NOTE]
 >
 >If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in User Preferences panel. To access the panel from Experience Manager home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
-
 -->
 
-## [!DNL Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하는 단계 {#integration-steps}
+## [!DNL Experience Manager]과(와) [!DNL Adobe Stock] 통합 {#integrate-adobe-stock-with-aem-assets}
 
-[!DNL Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하려면 나열된 순서로 다음 단계를 수행하십시오.
+개발자로서 다음 단계를 실행하여 [!DNL Adobe Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하십시오.
 
-1. [공개 인증서 받기](#public-certificate)
+<!--
+1. [Obtain public certificate](#public-certificate)
+   
+   In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
 
-   [!DNL Experience Manager]에서 IMS 계정을 만들고 공개 인증서(공개 키)를 생성합니다.
+1. [Create service account (JWT) connection](#createnewintegration) 
+   
+   In [!DNL Adobe Developer Console], create a project for your [!DNL Adobe Stock] organization. Under the project, configure an API using the public key to create a service account (JWT) connection. Get the service account credentials and JWT payload information.
 
-1. [서비스 계정(JWT) 연결 만들기](#createnewintegration)
+1. [Configure IMS account](#create-ims-account-configuration)
 
-   [!DNL Adobe Developer Console]에서 [!DNL Adobe Stock] 조직에 대한 프로젝트를 만듭니다. 프로젝트에서 공개 키로 API를 구성하여 서비스 계정(JWT) 연결을 만듭니다. 서비스 계정 자격 증명과 JWT 페이로드 정보를 가져옵니다.
+   In [!DNL Experience Manager], configure the IMS account using the service account credentials and JWT payload.
 
-1. [IMS 계정 구성](#create-ims-account-configuration)
+1. [Configure cloud service](#configure-the-cloud-service)
 
-   [!DNL Experience Manager]에서 서비스 계정 자격 증명과 JWT 페이로드를 사용하여 IMS 계정을 구성합니다.
-
-1. [클라우드 서비스 구성](#configure-the-cloud-service)
-
-   [!DNL Experience Manager]에서 IMS 계정을 사용하여 [!DNL Adobe Stock] 클라우드 서비스를 구성합니다.
-
-
-### IMS 구성 만들기 {#create-an-ims-configuration}
-
-IMS 구성은 [!DNL Adobe Stock] 권한으로 [!DNL Experience Manager Assets] 작성자 인스턴스를 인증합니다.
-
-IMS 구성에는 두 단계가 포함됩니다.
-
-* [공개 인증서 받기](#public-certificate)
-* [IMS 계정 구성](#create-ims-account-configuration)
-
-### 공개 인증서 받기 {#public-certificate}
-
-공개 키(인증서)는 Adobe Developer Console에서 제품 프로필을 인증합니다.
-
-1. [!DNL Experience Manager Assets] 클라우드 인스턴스에 로그인합니다.
-
-1. **[!UICONTROL 도구]** 패널에서 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
-
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지가 열립니다.
-
-1. **[!UICONTROL 인증서]** 탭의 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택합니다.
-
-1. 인증서를 생성하거나 구성에 대한 기존 인증서를 재사용할 수 있습니다.
-
-   인증서를 만들려면 **[!UICONTROL 새 인증서 만들기]** 확인란을 선택하고 공개 키에 대해 **별칭**&#x200B;을 지정하십시오. 별칭은 공개 키의 이름 역할을 합니다.
-
-1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 공개 키를 생성합니다.
-
-1. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 공개 키(.crt) 파일을 컴퓨터에 저장합니다. 공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe Developer Console에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
-
-   **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-
-   ![인증서 생성](assets/stock-integration-ims-account.png)
-
-1. **계정** 탭에서 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다.
-
-   새 탭을 열고 [Adobe Developer Console에서 서비스 계정(JWT) 연결을 만듭니다](#createnewintegration).
-
-### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
-
-Adobe Developer Console에서 프로젝트 및 API는 조직 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 이 예에서는 공개 키를 업로드하여 서비스 계정 자격 증명이 생성됩니다.
-
-서비스 계정 자격 증명 및 JWT 페이로드를 생성하려면 다음을 수행합니다.
-
-1. 시스템 관리자 권한으로 Adobe Developer Console에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)입니다.
+   In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-   드롭다운(조직) 목록에서 올바른 IMS 조직(주식 자격)을 선택했는지 확인합니다.
+### Create an IMS configuration {#create-an-ims-configuration}
 
-1. **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 클릭합니다. 조직에 대해 시스템 생성 이름을 사용하는 빈 프로젝트가 만들어집니다.
+The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
-   **[!UICONTROL 프로젝트 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 프로젝트 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 업데이트한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+IMS configuration includes two steps:
 
-1. **[!UICONTROL 프로젝트 개요]** 탭에서 **[!UICONTROL API 추가]**&#x200B;를 클릭합니다.
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
 
-1. **[!UICONTROL API 추가]**&#x200B;에서 **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+### Obtain public certificate {#public-certificate}
 
-1. **[!UICONTROL API 구성]** 창에서 **[!UICONTROL 서비스 계정(JWT)]** 인증을 선택하십시오. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+The public key (certificate) authenticates your product profile in Adobe Developer Console.
+
+1. Log in to your [!DNL Experience Manager Assets] cloud instance.
+
+1. From the **[!UICONTROL Tools]** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page opens. 
+
+1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** drop-down list.  
+
+1. You can create a certificate or reuse an existing certificate for the configuration. 
+
+   To create a certificate, select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
+
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.
+
+   Click **[!UICONTROL Next]**.
+
+   ![generate-certificate](assets/stock-integration-ims-account.png)
+
+1. In the **Account** tab, Adobe IMS account is created which requires the service account credentials.
+
+   Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration). 
+
+### Create service account (JWT) connection {#createnewintegration}
+
+In Adobe Developer Console, projects and APIs are configured at organization level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. In this example, the service account credentials are generated by uploading the public key.
+
+To generate the service account credentials and JWT payload:
+
+1. Log in to Adobe Developer Console with system administrator privileges. The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+
+
+   Ensure that you have selected the correct IMS organization (Stock entitlement) from the drop-down (organization) list.
+
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
+
+   Click **[!UICONTROL Edit project]**. Update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and then click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
+
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL Adobe Stock]**. Click **[!UICONTROL Next]**. 
+
+1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**.
 
    ![create-jwt-credentials](assets/aem-stock-jwt.png)
 
-1. **[!UICONTROL 공개 키 업로드]**&#x200B;를 클릭합니다. **[!UICONTROL 파일 선택]**&#x200B;을 클릭하고 [공개 인증서 가져오기](#public-certificate) 섹션에서 다운로드한 공개 키(.crt 파일)를 업로드하십시오. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. Click **[!UICONTROL Upload your public key]**. Click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. Click **[!UICONTROL Next]**.
 
-1. 공개 키를 확인하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. Verify the public key and click **[!UICONTROL Next]**.
 
-1. 기본 **[!UICONTROL Adobe Stock]** 제품 프로필을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
+1. Select the default **[!UICONTROL Adobe Stock]** product profile and click **[!UICONTROL Save configured API]**. 
 
-1. API가 구성되면 API 개요 페이지로 리디렉션됩니다. **[!UICONTROL 자격 증명]** 아래의 왼쪽 탐색에서 **[!UICONTROL 서비스 계정(JWT)]** 옵션을 클릭합니다. 여기에서 자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 정보 복사 및 클라이언트 암호 검색과 같은 작업을 수행할 수 있습니다.
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
 
-1. **[!UICONTROL 클라이언트 자격 증명]** 탭에서 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사합니다.
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
-   **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 **[!UICONTROL 클라이언트 암호 키]**&#x200B;를 복사합니다.
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
 
    ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
 
-1. **[!UICONTROL JWT 생성]** 탭으로 이동하여 **[!UICONTROL JWT 페이로드]** 정보를 복사합니다.
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
-이제 클라이언트 ID(API 키), 클라이언트 암호 및 JWT 페이로드를 사용하여 [!DNL Experience Manager Assets]에서 [IMS 계정을 구성](#create-ims-account-configuration)할 수 있습니다.
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in [!DNL Experience Manager Assets].
 
-### IMS 계정 구성 {#create-ims-account-configuration}
+### Configure IMS account {#create-ims-account-configuration}
 
-IMS 계정을 구성하려면 [인증서](#public-certificate) 및 [서비스 계정(JWT) 자격 증명](#createnewintegration)이 있어야 합니다.
+You must have the [certificate](#public-certificate) and [service account (JWT) credentials](#createnewintegration) to configure the IMS account.
 
-IMS 계정을 구성하려면:
+To configure the IMS account: 
 
-1. IMS 구성을 열고 **[!UICONTROL 계정]** 탭으로 이동합니다. [공개 인증서를 받는 동안](#public-certificate) 페이지를 열어 두었습니다.
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
 
-1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   **[!UICONTROL 인증 서버]** 필드에 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을(를) 입력하십시오.
+   In the **[!UICONTROL Authorization Server]** field, enter the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).  
 
-   [서비스 계정(JWT) 연결을 만드는 중](#createnewintegration) 복사한 **[!UICONTROL API 키]** 필드, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL 페이로드]**(JWT 페이로드)에 클라이언트 ID를 입력하십시오.
+   Enter the client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. IMS 계정 구성이 만들어집니다.
+1. Click **[!UICONTROL Create]**. An IMS account configuration is created. 
 
-   ![configure-ims-account](assets/aem-stock-ims-config.png)
+   ![configure-ims-acount](assets/aem-stock-ims-config.png)
+   
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. IMS 계정 구성을 선택하고 **[!UICONTROL 상태 확인]**&#x200B;을 클릭합니다.
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 구성이 성공하면 *토큰이 성공적으로 검색되었습니다.*&#x200B;라는 메시지가 나타납니다.
+   ![health-check](assets/aem-stock-healthcheck.png)
+-->
 
-   ![상태 확인](assets/aem-stock-healthcheck.png)
+1. [ [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
+1. [ [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
 
+### [!DNL Developer Console]에서 프로그램 설정 {#set-up-a-program-in-developer-console}
 
-### 클라우드 서비스 구성 {#configure-the-cloud-service}
+[!DNL Developer Console]에서 프로그램을 설정하려면 다음 단계를 수행하십시오.
+1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)&#x200B;(으)로 이동하여 조직에 로그인합니다.
+1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**를 선택하십시오.
+   ![aem assets와 adobe stock 통합](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
+1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 자격 증명 이름]**&#x200B;을(를) 지정하고 **[!UICONTROL OAuth 서버 간]**&#x200B;이(가) 선택되었는지 확인하고 **[!UICONTROL 다음]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 제품 프로필]**&#x200B;을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. [!DNL Developer Console]에서 프로젝트를 만들었음을 확인하는 성공 메시지가 표시됩니다. 프로젝트 대시보드가 열리고 맨 위에 프로젝트 이름이 표시됩니다. **[!UICONTROL API]**&#x200B;에 **[!UICONTROL Adobe Stock]**, **[!UICONTROL 제품 프로필]**&#x200B;에 **[!UICONTROL AEM Assets]**, **[!UICONTROL 연결된 자격 증명]**&#x200B;에 **[!UICONTROL OAuth 서버 간]** 자격 증명 카드입니다.
+   ![aem assets와 adobe stock 통합](/help/assets/assets/adc-project-name.png)
+1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]**, **[!UICONTROL 자격 증명 이름]**, **[!UICONTROL 기술 계정 ID]**, **[!UICONTROL 조직 ID]**&#x200B;부터 [AEM 작성자 인스턴스에 구성을 추가](#add-configuration-in-the-aem-author-instance)까지 프로젝트의 이러한 [!DNL OAuth Server-to-Server] 자격 증명 세부 정보를 사용하십시오.
+   ![aem assets 및 adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
-[!DNL Adobe Stock] 클라우드 서비스를 구성하려면:
+### [!DNL AEM] 작성자 인스턴스에 구성 추가 {#add-configuration-in-the-aem-author-instance}
 
-1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Adobe Stock]**(으)로 이동합니다.
+다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에 구성을 추가합니다.
 
-1. [!DNL Adobe Stock Configurations] 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. [ [!DNL AEM] 작성자 인스턴스에서 새  [!DNL Adobe Stock IMS configuration] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [ [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
 
-1. 클라우드 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정하십시오.
+#### [!DNL AEM author] 인스턴스에서 새 [!DNL Adobe Stock IMS configuration] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
-   [IMS 계정을 구성](#create-ims-account-configuration)하는 동안 만든 IMS 구성을 선택합니다.
+다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에서 새 [!DNL Adobe Stock IMS configuration]을(를) 설정합니다.
+1. [!DNL AEM] 작성자 인스턴스로 이동합니다.
+1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을 클릭하고 **[!UICONTROL 보안]**&#x200B;을 선택한 다음 **[!UICONTROL Adobe IMS 구성]**&#x200B;을 선택합니다.
+1. 새 IMS 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지에는 **[!UICONTROL 클라우드 솔루션]**, **[!UICONTROL 제목]**, **[!UICONTROL 인증 서버]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]** 및 **[!UICONTROL 조직 ID]**&#x200B;와 같은 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
+   * **[!UICONTROL 클라우드 솔루션]**: **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택합니다.
+   * **[!UICONTROL 제목]**: 이 통합의 이름을 지정하십시오.
+   * **[!UICONTROL 인증 서버]**: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을(를) 인증 서버로 추가합니다.
+   * **[!UICONTROL 클라이언트 ID]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사하여 여기에 붙여넣습니다([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
+   * **[!UICONTROL 클라이언트 암호]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 **[!UICONTROL 클라이언트 암호]**&#x200B;을 복사하여 여기에 붙여넣습니다([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
+   * **[!UICONTROL 범위]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 범위]**&#x200B;를 복사하고 여기에 붙여넣으십시오([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
+   * **[!UICONTROL 조직 ID]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 조직 ID]**&#x200B;를 복사하여 여기에 붙여넣으십시오([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
+     ![aem assets 및 adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe IMS 구성]** 페이지가 열리고 사용자가 만든 [!DNL Adobe Stock] 통합이 표시됩니다.
 
-   드롭다운 목록에서 로케일을 선택합니다.
+#### [!DNL Adobe Stock]에 연결할 클라우드 구성 추가 {#add-cloud-configuration-to-connect-adobe-stock}
+
+다음 단계를 실행하여 [!DNL Adobe Stock]에 연결할 클라우드 구성을 추가하십시오.
+
+1. [!DNL AEM author] 인스턴스로 이동합니다.
+1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**을(를) 찾아 선택합니다.
+   ![aem과 adobe stock 사용](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe Stock 구성]** 페이지에 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
+   * **[!UICONTROL 제목]**: [AEM 작성자 인스턴스에서 Adobe Stock IMS 구성을 설정](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)할 때 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지에서 사용되는 것과 동일한 제목 이름을 지정합니다.
+   * **[!UICONTROL 연결된 Adobe IMS 구성]**: 만든 [!DNL Adobe Stock] 통합을 선택하십시오.
+   * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)를 선택합니다]**.
+1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
+   ![aem과 adobe stock 사용](/help/assets/assets/adobe-stock-config-page.png)
+
+<!--
+### Configure cloud service {#configure-the-cloud-service}
+
+To configure the [!DNL Adobe Stock] cloud service:
+
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+
+1. In the [!DNL Adobe Stock Configurations] page, click **[!UICONTROL Create]**.
+
+1. Specify a **[!UICONTROL Title]** for the cloud configuration. 
+
+   Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
+
+   Select your locale from the drop-down list.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+1. Click **[!UICONTROL Save & Close]**. 
+-->
+[!DNL Experience Manager Assets] 작성자 인스턴스가 이제 [!DNL Adobe Stock]과(와) 통합되었습니다. 여러 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성)을 만들 수 있습니다. 이제 [!DNL Experience Manager] 사용자 인터페이스 내에서 [!DNL Adobe Stock] 자산에 액세스하고, 검색하고, 라이선스를 부여할 수 있습니다.
 
-   [!DNL Experience Manager Assets] 작성자 인스턴스가 이제 [!DNL Adobe Stock]과(와) 통합되었습니다. 여러 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성)을 만들 수 있습니다. 이제 [!DNL Experience Manager] 사용자 인터페이스 내에서 [!DNL Adobe Stock] 자산에 액세스하고, 검색하고, 라이선스를 부여할 수 있습니다.
+![search-stock-assets](assets/aem-stock-searchstocks.png)
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
-
-   >[!NOTE]
-   >
-   >이 통합 단계에서는 관리자만 [!DNL Adobe Stock] 자산에 액세스하고, omnisearch를 사용하여 Stock 자산을 검색하고, [!DNL Adobe Stock] 자산에 라이선스를 부여할 수 있습니다.
-   >
-   >관리자는 [!DNL Adobe Stock] 클라우드 서비스에 사용자 또는 그룹을 추가하고 [!DNL Experience Manager]에서 관리자가 아닌 사용자에게 Stock 구성에 액세스할 수 있는 권한을 부여할 수 있습니다.
+>[!NOTE]
+>
+>이 통합 단계에서는 관리자만 [!DNL Adobe Stock] 자산에 액세스하고, omnisearch를 사용하여 Stock 자산을 검색하고, [!DNL Adobe Stock] 자산에 라이선스를 부여할 수 있습니다.
+>
+>관리자는 [!DNL Adobe Stock] 클라우드 서비스에 사용자 또는 그룹을 추가하고 [!DNL Experience Manager]에서 관리자가 아닌 사용자에게 Stock 구성에 액세스할 수 있는 권한을 부여할 수 있습니다.
 
 1. 사용자 또는 그룹을 추가하려면 [!DNL Adobe Stock] 클라우드 구성을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
