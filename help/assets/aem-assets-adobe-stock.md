@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
+source-git-commit: 33ab5edf6531d56158f3887fbd61c76c69d05bdf
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2254'
 ht-degree: 7%
 
 ---
@@ -69,14 +69,14 @@ ht-degree: 7%
 이 통합을 활성화하려면 다음 요구 사항을 충족해야 합니다.
 
 * [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service] 인스턴스로 실행 중입니다.
-* [엔터프라이즈 [!DNL Adobe Stock] 플랜](https://stockenterprise.adobe.com/)
-* 기본 Stock 제품 프로필에 대한 [!DNL Admin Console]의 권한이 있는 사용자
-* [!DNL Adobe Developer Console]에서 통합을 만들기 위해 [!DNL Developer Access profile]에 대한 권한이 있는 사용자
+* 엔터프라이즈 [!DNL Adobe Stock] 계획입니다.
+* 기본 Stock 제품 프로필에 대한 [!DNL Admin Console]의 권한이 있는 사용자입니다.
+* [!DNL Adobe Developer Console]에서 통합을 만들기 위해 [!DNL Developer Access profile]에 대한 권한이 있는 사용자입니다.
 
 엔터프라이즈 [!DNL Adobe Stock] 계획,
 
 * [!DNL Adobe Stock]에 대한 제품 권한을 제공합니다(Experience Manager에 연결된 재고).
-* 주식 특권을 위해 [!DNL Adobe Admin Console]&#x200B;(으)로 구입한 크레딧
+* 주식 특권을 위해 [!DNL Adobe Admin Console]에 구입한 크레딧입니다.
 * [!DNL Adobe Admin Console] 내에서 크레딧과 라이선스를 전체적으로 관리할 수 있습니다.
 
 권한 내에서 [!DNL Adobe Stock]에 대한 기본 제품 프로필이 [!DNL Admin Console]에 있습니다. 여러 프로필을 만들 수 있으며 이러한 프로필에 따라 Stock 자산에 라이센스를 부여할 수 있는 사람이 결정됩니다. 제품 프로필에 직접 액세스하는 사용자는 [https://stock.adobe.com/](https://stock.adobe.com/)에 액세스하여 Stock 자산에 라이선스를 부여할 수 있습니다. 반면 개발자 액세스를 사용하여 통합(API)을 만드는 다른 방법이 있습니다. 이 통합은 [!DNL Experience Manager Assets]과(와) [!DNL Adobe Stock] 간의 통신을 인증합니다.
@@ -268,10 +268,13 @@ To configure the IMS account:
    * **[!UICONTROL 클라우드 솔루션]**: **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택합니다.
    * **[!UICONTROL 제목]**: 이 통합의 이름을 지정하십시오.
    * **[!UICONTROL 인증 서버]**: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을(를) 인증 서버로 추가합니다.
-   * **[!UICONTROL 클라이언트 ID]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사하여 여기에 붙여넣습니다([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
-   * **[!UICONTROL 클라이언트 암호]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 **[!UICONTROL 클라이언트 암호]**&#x200B;을 복사하여 여기에 붙여넣습니다([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
-   * **[!UICONTROL 범위]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 범위]**&#x200B;를 복사하고 여기에 붙여넣으십시오([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
-   * **[!UICONTROL 조직 ID]**: 프로젝트의 **[!UICONTROL OAuth 서버 간 자격 증명 세부 정보]** 페이지로 이동하여 **[!UICONTROL 조직 ID]**&#x200B;를 복사하여 여기에 붙여넣으십시오([Developer Console에서 프로그램 설정](#set-up-a-program-in-developer-console) 섹션의 7단계 참조).
+   * **[!UICONTROL 클라이언트 ID]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 클라이언트 ID]**&#x200B;을(를) 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
+
+   * **[!UICONTROL 클라이언트 암호]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택하고 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 복사하여 여기에 붙여 넣으십시오([7단계](#set-up-a-program-in-developer-console) 참조).
+
+   * **[!UICONTROL 범위]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 범위]**&#x200B;를 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
+
+   * **[!UICONTROL 조직 ID]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 조직 ID]**&#x200B;을(를) 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
      ![aem assets 및 adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe IMS 구성]** 페이지가 열리고 사용자가 만든 [!DNL Adobe Stock] 통합이 표시됩니다.
 
@@ -283,9 +286,9 @@ To configure the IMS account:
 1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**을(를) 찾아 선택합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe Stock 구성]** 페이지에 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
-   * **[!UICONTROL 제목]**: [AEM 작성자 인스턴스에서 Adobe Stock IMS 구성을 설정](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)할 때 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지에서 사용되는 것과 동일한 제목 이름을 지정합니다.
+   * **[!UICONTROL 제목]**: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지([단계 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) 참조)로 이동하여 제목을 복사하고 여기에 붙여넣으십시오.
    * **[!UICONTROL 연결된 Adobe IMS 구성]**: 만든 [!DNL Adobe Stock] 통합을 선택하십시오.
-   * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)를 선택합니다]**.
+   * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adobe-stock-config-page.png)
 
