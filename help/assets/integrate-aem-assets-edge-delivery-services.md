@@ -1,12 +1,11 @@
 ---
 title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DNL AEM Assets] 통합'
 description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 다음 항목 [!DNL Microsoft Word] 포함 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 다음 항목 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Universal Editor] 통합 [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
-tags: "AEM Assets""Edge Delivery Services""Dynamic Media""Dynamic Media with OpenAPI capabilities""Universal Editor""Edge Delivery Services with Universal Editor"
-features: "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]""How to use [!DNL AEM Assets] with [!DNL Universal Editor]""How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]""How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools""How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
+tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 3d333fb7b6304c5e0d9898bd9fbd947e54d2e7e1
+source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
 workflow-type: tm+mt
-source-wordcount: 671
+source-wordcount: '671'
 ht-degree: 6%
 
 ---
