@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Adobe Cloud Manager에서는 몇 가지 이유로 환경 계층(게시 또는 �
    | 옵션 | 단계 |
    | --- | --- |
    | A 기록 구성 | `example.com`<br>과(와) 같은 루트 도메인에 권장<ol><li>DNS 서비스 공급자의 포털에 로그인합니다.<li>DNS 레코드 섹션으로 이동합니다.<li>나열된 모든 IP 주소를 가리키는 A 레코드를 만듭니다.</li></ol> |
-   | CNAME 구성 | `www.example.com`<br>과(와) 같은 사용자 정의 도메인에 권장<ol><li>DMS 서비스 공급자의 포털에 로그인합니다.<li>DNS 레코드 섹션으로 이동합니다.<li>DNS 서비스 공급자(사용자 지정 도메인)의 DNS 레코드에 [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/)&#x200B;(CNAME 레코드)을 매핑합니다. 이 매핑을 통해 사용자 정의 도메인에서 받은 요청을 Adobe의 CDN으로 리디렉션할 수 있습니다.</li></ol> |
+   | CNAME 구성 | `www.example.com`<br>과(와) 같은 사용자 정의 도메인에 권장<ol><li>DMS 서비스 공급자의 포털에 로그인합니다.<li>DNS 레코드 섹션으로 이동합니다.<li>DNS 서비스 공급자(사용자 지정 도메인)의 DNS 레코드에 `cdn.adobeaemcloud.com`(CNAME 레코드)을(를) 매핑합니다. 이 매핑을 통해 사용자 정의 도메인에서 받은 요청을 Adobe의 CDN으로 리디렉션할 수 있습니다.</li></ol> |
 
 1. **라이브 준비** 대화 상자에서 **확인**&#x200B;을 클릭하여 레코드를 저장합니다.
 
