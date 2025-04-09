@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅�
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
+source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '3071'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,21 @@ ht-degree: 1%
 
 ## 캐싱 {#caching}
 
+AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본의 `Cache-Control`, `Surrogate-Control` 또는 `Expires` HTTP 응답 헤더에 의해 제어됩니다.
+
+이러한 캐시 헤더는 일반적으로 mod_headers를 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다([CDN 캐싱을 활성화하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) 참조).
+
+CDN 리소스에 대한 캐시 키에는 쿼리 매개 변수를 포함한 전체 요청 URL이 포함되어 있으므로 서로 다른 모든 쿼리 매개 변수가 다른 캐시 항목을 생성합니다. 원치 않는 쿼리 매개 변수를 제거하는 것이 좋습니다. 캐시 적중률을 개선하려면 [아래 ](#marketing-parameters)을 참조하세요.
+
+`Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답이 AEM as a Cloud Service의 CDN에 의해 캐시되지 않습니다([CDN 캐싱을 비활성화하는 방법 참조)
+](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)을(를) 참조하십시오.  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
+
 ### HTML/텍스트 {#html-text}
 
+Dispatcher 구성은 `text/html` 콘텐츠 형식에 대해 일부 기본 캐싱 헤더를 설정합니다.
+
 * 기본적으로 Apache 계층에서 내보낸 `cache-control` 헤더를 기반으로 5분 동안 브라우저에서 캐시됩니다. CDN도 이 값을 준수합니다.
-* `global.vars`에서 `DISABLE_DEFAULT_CACHING` 변수를 정의하여 기본 HTML/텍스트 캐싱 설정을 사용하지 않도록 설정할 수 있습니다.
+* `global.vars`에서 `DISABLE_DEFAULT_CACHING` 변수를 정의하여 기본 HTML/텍스트 캐싱 설정을 비활성화할 수 있습니다.
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -73,7 +84,7 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 전용으로 설정된 HTML 콘텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)이 구성된 경우 Dispatcher에서 캐시될 수 있으므로 승인된 사용자만 콘텐츠를 제공할 수 있습니다.
+* Private으로 설정된 HTML 콘텐츠는 CDN에서 캐시되지 않지만 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)이 구성된 경우 Dispatcher에서 캐시될 수 있으므로 권한이 있는 사용자만 콘텐츠를 제공할 수 있습니다.
 
   >[!NOTE]
   >[Dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 포함한 다른 메서드가 값을 재정의하지 않습니다.
@@ -83,7 +94,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
-* AEM의 클라이언트 측 라이브러리 프레임워크를 사용하는 경우 변경 사항이 고유한 경로를 갖는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다. 즉, 클라이언트 라이브러리를 참조하는 HTML은 필요에 따라 생성되므로 고객은 게시된 대로 새로운 콘텐츠를 경험할 수 있습니다. cache-control은 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저의 경우 30일로 설정됩니다.
+* AEM의 클라이언트측 라이브러리 프레임워크를 사용하는 경우 변경 사항이 고유한 경로를 갖는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다. 즉, 클라이언트 라이브러리를 참조하는 HTML은 고객이 게시할 때 새로운 콘텐츠를 경험할 수 있도록 필요에 따라 생성됩니다. cache-control은 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저의 경우 30일로 설정됩니다.
 * 자세한 내용은 [클라이언트 측 라이브러리 및 버전 일관성](#content-consistency) 섹션을 참조하십시오.
 
 ### 이미지 및 Blob 저장소에 저장될 만큼 큰 모든 콘텐츠 {#images}
@@ -132,7 +143,7 @@ vary
 
 AEM 계층은 캐시 헤더가 이미 설정되었는지 여부와 요청 유형의 값에 따라 캐시 헤더를 설정합니다. 캐시 제어 헤더가 설정되지 않은 경우 공개 컨텐츠가 캐시되고 인증된 트래픽이 비공개로 설정됩니다. 캐시 제어 헤더가 설정되면 캐시 헤더는 그대로 유지됩니다.
 
-| 캐시 제어 헤더가 있습니까? | 요청 유형 | AEM은 캐시 헤더를 로 설정합니다. |
+| 캐시 제어 헤더가 있습니까? | 요청 유형 | AEM이 캐시 헤더를 다음으로 설정 |
 |------------------------------|---------------|------------------------------------------------|
 | 아니요 | 공용 | Cache-Control: public, max-age=600, 변경 불가 |
 | 아니요 | 인증됨 | Cache-Control: private, max-age=600, 변경 불가 |
@@ -160,7 +171,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 
 ### 추가 최적화 {#further-optimizations}
 
-* `User-Agent`을(를) `Vary` 헤더의 일부로 사용하지 마십시오. 이전 버전의 기본 Dispatcher Adobe 설정(Archetype 버전 28 이전)에 포함되어 있으므로 아래 단계를 사용하여 제거하는 것이 좋습니다.
+* `User-Agent`을(를) `Vary` 헤더의 일부로 사용하지 마십시오. 이전 버전의 기본 Dispatcher 설치 프로그램(Archetype 버전 28 이전)이 포함되어 있으므로 Adobe에서는 아래 단계를 사용하여 제거할 것을 권장합니다.
    * `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`에서 vhost 파일을 찾습니다.
    * 읽기 전용인 default.vhost를 제외한 모든 vhost 파일에서 `Header append Vary User-Agent env=!dont-vary` 줄을 제거하거나 주석 처리합니다.
 * `Surrogate-Control` 헤더를 사용하여 브라우저 캐싱과 독립적으로 CDN 캐싱을 제어합니다.
@@ -186,7 +197,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
      </LocationMatch>
      ```
 
-   * 브라우저에서 1시간, CDN에서 12시간 동안 백그라운드 새로 고침으로 5분 동안 HTML 페이지를 캐시합니다. 캐시 제어 헤더가 항상 추가되므로 /content/* 아래의 일치하는 html 페이지가 public이 되도록 하는 것이 중요합니다. 그렇지 않은 경우 보다 구체적인 정규 표현식을 사용하는 것이 좋습니다.
+   * 브라우저에서 1시간, CDN에서 12시간의 백그라운드 새로 고침으로 5분 동안 HTML 페이지를 캐시합니다. 캐시 제어 헤더가 항상 추가되므로 /content/* 아래의 일치하는 html 페이지가 public이 되도록 하는 것이 중요합니다. 그렇지 않은 경우 보다 구체적인 정규 표현식을 사용하는 것이 좋습니다.
 
      ```
      <LocationMatch "^/content/.*\.html$">
@@ -231,7 +242,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 
 ### HEAD 요청 동작 {#request-behavior}
 
-캐시된 **not** 리소스에 대한 HEAD 요청이 Adobe CDN에서 수신되면 요청이 변환되어 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 수신됩니다. 응답을 캐시할 수 있는 경우 후속 HEAD 요청이 CDN에서 제공됩니다. 응답을 캐시할 수 없는 경우 후속 HEAD 요청이 `Cache-Control` TTL에 의존하는 시간 동안 Dispatcher 또는 AEM 인스턴스나 둘 다에 전달됩니다.
+캐시된 **not** 리소스에 대한 HEAD 요청이 Adobe CDN에서 수신되면 해당 요청은 변형되어 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 수신됩니다. 응답을 캐시할 수 있는 경우 후속 HEAD 요청이 CDN에서 제공됩니다. 응답을 캐시할 수 없는 경우 후속 HEAD 요청이 `Cache-Control` TTL에 의존하는 시간 동안 Dispatcher 또는 AEM 인스턴스 또는 둘 다에 전달됩니다.
 
 ### 마케팅 캠페인 매개변수 {#marketing-parameters}
 
@@ -291,13 +302,13 @@ CDN 수준에서 `removeMarketingParams` 기능이 비활성화된 경우에도 
 이전 버전의 AEM과 마찬가지로 페이지를 게시하거나 게시를 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 해당 페이지를 다시 게시하고 Dispatcher 캐시 무효화에 필요한 `ServerAlias` localhost와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다.
 
 >[!NOTE]
->적절한 Dispatcher 무효화를 위해 &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; 및 &quot;\*.adobeaemcloud.net&quot;의 요청이 모두 일치하고 vhost 구성에서 처리되어 요청이 제공될 수 있는지 확인하십시오. 이 작업은 참조 [AEM Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)의 패턴에 따라 catch-all vhost 구성에서 전역 일치 &quot;*&quot;를 통해 수행할 수 있습니다. 또는 vhost 중 하나에서 이전에 언급한 목록을 catch했는지 확인할 수 있습니다.
+>적절한 Dispatcher 무효화를 위해 요청이 제공될 수 있도록 &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; 및 &quot;\*.adobeaemcloud.net&quot;의 요청이 모두 일치하고 vhost 구성에서 처리되었는지 확인하십시오. 이 작업은 참조 [AEM Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)의 패턴에 따라 catch-all vhost 구성에서 전역 일치 &quot;*&quot;를 통해 수행할 수 있습니다. 또는 vhost 중 하나에서 이전에 언급한 목록을 catch했는지 확인할 수 있습니다.
 
-게시 인스턴스는 작성자로부터 페이지 또는 에셋의 새 버전을 받으면 플러시 에이전트를 사용하여 Dispatcher에서 적절한 경로를 무효화합니다. 업데이트된 경로는 상위 경로와 함께 Dispatcher 캐시에서 최대 수준까지 제거됩니다([statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)(으)로 이 수준을 구성할 수 있습니다).
+게시 인스턴스는 작성자로부터 페이지 또는 에셋의 새 버전을 받으면 플러시 에이전트를 사용하여 Dispatcher에서 적절한 경로를 무효화합니다. 업데이트된 경로는 상위 경로와 함께 Dispatcher 캐시에서 최대 수준까지 제거됩니다([statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)&#x200B;(으)로 이 수준을 구성할 수 있습니다).
 
 ## Dispatcher 캐시의 명시적 무효화 {#explicit-invalidation}
 
-Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 제어할 것을 권장합니다. 그러나 필요한 경우 Dispatcher에서 직접 콘텐츠를 무효화할 수 있습니다.
+Adobe에서는 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 제어할 것을 권장합니다. 그러나 필요한 경우 Dispatcher에서 직접 콘텐츠를 무효화할 수 있습니다.
 
 다음 목록에는 캐시를 명시적으로 무효화할 수 있는 시나리오가 포함되어 있습니다(선택적으로 무효화 완료를 수신하는 동안).
 
@@ -371,9 +382,9 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
     <td>
      <ol>
        <li>콘텐츠를 게시하고 캐시를 무효화합니다.</li>
-       <li>작성자/Publish 계층에서 - 콘텐츠를 제거하고 캐시를 무효화합니다.</li>
-       <li><p><strong>작성자 계층에서</strong> - 콘텐츠를 제거하고 캐시를 무효화합니다(Publish 에이전트의 AEM 작성자 계층에서 트리거된 경우).</p>
-           <p><strong>Publish 계층에서</strong> - 캐시만 무효화합니다(플러시 또는 리소스 전용 플러시 에이전트의 AEM Publish 계층에서 트리거된 경우).</p>
+       <li>작성자/게시 계층에서 - 콘텐츠를 제거하고 캐시를 무효화합니다.</li>
+       <li><p><strong>작성자 계층에서</strong> - 콘텐츠를 제거하고 캐시를 무효화합니다(게시 에이전트의 AEM 작성자 계층에서 트리거된 경우).</p>
+           <p><strong>게시 계층에서</strong> - 캐시만 무효화합니다(플러시 또는 리소스 전용 플러시 에이전트의 AEM 게시 계층에서 트리거된 경우).</p>
        </li>
      </ol>
      </td>
@@ -394,7 +405,7 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
 ### Sling 콘텐츠 배포(SCD) {#sling-distribution}
 
 >[!NOTE]
->아래 지침을 사용하는 경우 로컬이 아닌 AEM Cloud Service 개발 환경에서 사용자 지정 코드를 테스트합니다.
+>아래 표시된 지침을 사용하는 경우, 로컬이 아닌 AEM 클라우드 서비스 개발 환경에서 사용자 지정 코드를 테스트합니다.
 
 작성자의 SCD 작업을 사용할 때 구현 패턴은 다음과 같습니다.
 
@@ -526,13 +537,13 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개발자는 소스 제어에서 JS 라이브러리에 대한 변경 사항을 체크인할 수 있고 고객이 릴리스를 푸시할 때 최신 버전을 사용할 수 있습니다. 이 워크플로가 없으면 개발자는 라이브러리의 새 버전에 대한 참조를 사용하여 HTML을 수동으로 변경해야 합니다. 이는 동일한 라이브러리가 많은 HTML 템플릿을 공유하는 경우 특히 문제가 됩니다.
 
-라이브러리의 새 버전이 프로덕션에 릴리스되면 참조 HTML 페이지가 업데이트된 라이브러리 버전에 대한 새 링크로 업데이트됩니다. 지정된 HTML 페이지에 대한 브라우저 캐시가 만료되면 이전 라이브러리가 브라우저 캐시에서 로드될 염려가 없습니다. 이유는 AEM에서 새로 고친 페이지 가 이제 라이브러리의 새 버전을 참조하도록 보장되기 때문입니다. 즉, 새로 고친 HTML 페이지에는 모든 최신 라이브러리 버전이 포함됩니다.
+라이브러리의 새 버전이 프로덕션에 릴리스되면 참조하는 HTML 페이지가 업데이트된 라이브러리 버전에 대한 새 링크로 업데이트됩니다. 지정된 HTML 페이지에 대한 브라우저 캐시가 만료되면 브라우저 캐시에서 이전 라이브러리가 로드될 염려가 없습니다. 이유는 AEM에서 새로 고친 페이지 가 이제 라이브러리의 새 버전을 참조하도록 보장되기 때문입니다. 즉, 새로 고침된 HTML 페이지에 모든 최신 라이브러리 버전이 포함됩니다.
 
 이 기능의 메커니즘은 클라이언트 라이브러리 링크에 추가되는 직렬화된 해시입니다. 브라우저가 CSS/JS를 캐시할 수 있는 고유한 버전 URL을 보장합니다. 직렬화된 해시는 클라이언트 라이브러리의 내용이 변경될 때만 업데이트됩니다. 즉, 새 배포가 있더라도 관련되지 않은 업데이트가 발생하는 경우(즉, 클라이언트 라이브러리의 기본 css/js가 변경되지 않는 경우) 참조는 동일하게 유지됩니다. 결과적으로 브라우저 캐시의 중단을 줄입니다.
 
 ### 클라이언트측 라이브러리의 Longcache 버전 활성화 - AEM as a Cloud Service SDK 빠른 시작 {#enabling-longcache}
 
-기본 clientlib은 다음 예제와 같이 HTML 페이지에 포함됩니다.
+기본 clientlib은 다음 예와 같이 HTML 페이지에 포함됩니다.
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.css" type="text/css">
@@ -549,8 +560,8 @@ clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개�
 로컬 SDK 빠른 시작에서 엄격한 clientlib 버전 관리를 활성화하려면 다음을 수행합니다.
 
 1. OSGi 구성 관리자 `<host>/system/console/configMgr`(으)로 이동
-1. Adobe Granite HTML 라이브러리 관리자에 대한 OSGi 구성을 찾습니다.
+1. Adobe Granite HTML Library Manager에 대한 OSGi 구성을 찾습니다.
    * 엄격한 버전 관리를 활성화하려면 확인란을 선택합니다.
    * 레이블이 **장기 클라이언트측 캐시 키**&#x200B;인 필드에 / 값을 입력합니다.*;해시
 1. 변경 사항을 저장합니다. AEM as a Cloud Service은 개발, 스테이지 및 프로덕션 환경에서 이 구성을 자동으로 활성화하므로 소스 제어에 이 구성을 저장할 필요가 없습니다.
-1. 클라이언트 라이브러리의 내용이 변경될 때마다 새 해시 키가 생성되고 HTML 참조가 업데이트됩니다.
+1. 클라이언트 라이브러리의 콘텐츠가 변경될 때마다 새 해시 키가 생성되고 HTML 참조가 업데이트됩니다.
