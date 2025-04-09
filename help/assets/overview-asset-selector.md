@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ ht-degree: 94%
 
 * 호스트 응용 프로그램이 HTTPS에서 실행 중입니다.
 * `localhost`에서 응용 프로그램을 실행할 수 없습니다. 로컬 컴퓨터에서 자산 선택기를 통합하려면 `[https://<your_campany>.localhost.com:<port_number>]`과(와) 같은 사용자 지정 도메인을 만들고 이 사용자 지정 도메인을 `redirectUrl list`에 추가해야 합니다.
-* 각 `imsClientId`을(를) 사용하여 AEM 클라우드 서비스 환경 변수에 `ADOBE_PROVIDED_CLIENT_ID`을(를) 구성하고 추가할 수 있습니다.
-  ![자산 선택기 IMS 클라이언트 ID 환경](assets/asset-selector-ims-client-id-env.png)
+* 각 `imsClientId`을(를) 사용하여 clientID를 구성하고 AEM 클라우드 서비스 환경 변수에 추가할 수 있습니다.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * 환경 구성에서 IMS 범위 목록을 정의해야 합니다.
 * 애플리케이션의 URL이 IMS 클라이언트가 허용하는 리디렉션 URL 목록에 있습니다.
 * IMS 로그인 흐름은 웹 브라우저의 팝업을 사용하여 구성 및 렌더링됩니다. 따라서 타깃 브라우저에서 팝업을 활성화하거나 허용해야 합니다.
