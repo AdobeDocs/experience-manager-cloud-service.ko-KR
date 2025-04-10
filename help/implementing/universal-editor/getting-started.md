@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 36%
+source-wordcount: '981'
+ht-degree: 37%
 
 ---
 
@@ -124,9 +124,7 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 
 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하는 기존 AEM 프로젝트가 있는 경우 콘텐츠 작성자가 페이지를 편집할 때 페이지 편집기로 페이지가 자동으로 열립니다. 콘텐츠 경로 또는 `sling:resourceType`을(를) 기반으로 AEM이 열어야 하는 편집기를 정의할 수 있으므로 선택한 콘텐츠에 필요한 편집기에 관계없이 작성자가 원활하게 작업을 수행할 수 있습니다.
 
-1. 이 구성 기능을 활용하려면 Adobe 고객 지원 센터에 연락하여 프로그램의 범용 편집기 URL 서비스에 대한 액세스를 활성화하십시오.
-
-1. 고객 지원 센터에서 범용 편집기 URL 서비스에 대한 액세스를 활성화한 후 구성 관리자를 엽니다.
+1. 구성 관리자를 엽니다.
 
    `http://<host>:<port>/system/console/configMgr`
 
