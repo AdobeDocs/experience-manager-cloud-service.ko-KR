@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 95%
+source-wordcount: '1589'
+ht-degree: 94%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 95%
 
 ### 알려진 문제 {#known-issues-20133}
 
-없음.
+* SITES-30727: AEM 편집기 내의 하위 구성 요소에 대한 드래그 앤 드롭이 실패할 수 있습니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-20133}
 
