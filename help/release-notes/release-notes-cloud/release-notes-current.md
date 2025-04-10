@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 64%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 64%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.3.0) 일자는 2025년 3월 27일 금요일입니다. 다음 기능 릴리스(2025.4.0)는 2025년 4월 24일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.3.0) 일자는 2025년 3월 27일입니다. 다음 기능 릴리스(2025.4.0)는 2025년 4월 24일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -48,9 +48,9 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
 
-**Open API가 있는 Dynamic Media를 사용하여 제공되는 비디오에 대한 긴 양식 지원**
+**Open API 기능이 포함된 Dynamic Media를 사용하여 긴 양식의 비디오 지원**
 
-OpenAPI가 포함된 Dynamic Media는 이제 긴 양식 비디오를 지원합니다. 긴 형식의 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
+OpenAPI 기능이 포함된 Dynamic Media가 이제 긴 양식의 비디오를 지원합니다. 긴 형식의 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
 
 ### Dynamic Media Classic {#dmc}
 
@@ -66,7 +66,7 @@ Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터
 
 **루트 태그 지원**
 
-이제 AEM Assets에서는 메타데이터 양식의 태그 속성을 사용자 지정 메타데이터에 매핑할 수 있습니다. 또한 관리자는 특정 루트 태그 및 루트 태그 아래에 있는 태그에 대한 액세스를 제한하여 사용자에 대한 태그 가용성을 제한할 수 있습니다.
+이제 AEM Assets는 메타데이터 형식의 태그 속성을 사용자 정의 메타데이터로 매핑하는 것을 지원합니다. 또한 관리자는 특정 루트 태그와 루트 태그 아래에 있는 태그에 대한 액세스를 제한하여 사용자에게 태그 사용 가능성을 제한할 수 있습니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,15 +96,15 @@ Java 17 또는 21 빌드가 검색되면 더 성능이 좋은 Java 21 **runtime*
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime**&#x200B;은(는) 2월에 개발/RDE 환경에 배포되었습니다. **4월 28일 및 29**&#x200B;에 단계/프로덕션 환경에 적용됩니다. Java 21(또는 Java 17)을 사용하여 **코드 빌드**&#x200B;는 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 빌드하려면 명시적으로 단계를 수행해야 합니다.
+> Java 21 **runtime**&#x200B;은(는) 2월에 개발/RDE 환경에 배포되었습니다. **4월 28일 및 29**&#x200B;에 단계/프로덕션 환경에 적용됩니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
 
-### 더 많은 대상으로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
+### 더 많은 목적지로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
 
-이제 Beta에서는 AEM 로그를 New Relic(HTTPS 사용), Amazon S3 및 Sumo Logic에 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)는 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+현재 Beta 버전에서는 AEM 로그를 New Relic(HTTPS 사용), Amazon S3, Sumo Logic으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)는 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
 
-Cloud Manager에서 로그를 다운로드할 수 있지만 많은 조직은 이러한 로그를 기본 로깅 대상으로 스트리밍하는 것이 좋습니다. AEM은 이미 (GA) AEM 및 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch) 및 Splunk로의 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성되고 구성 파이프라인을 사용하여 배포됩니다.
+로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 (GA) AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
 
-자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)를 참조하세요.
+자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)에서 확인하십시오.
 
 ### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
