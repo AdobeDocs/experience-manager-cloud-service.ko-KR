@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
+source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 63%
@@ -73,7 +73,6 @@ AEM 홈은 Adobe Experience Manager 내에서 콘텐츠, 자산, 사이트를 �
 * 귀하의 프로필에 가장 적합한 역할: 콘텐츠 작성자, 개발자, 비즈니스 소유자, 관리자 또는 기타(설명을 입력하십시오).
 * 기본 AEM 액세스 표면: AEM 사이트, AEM Sites, AEM Assets, AEM Forms, Cloud Manager 또는 기타(설명을 입력하십시오).
 
-
 ## 버그 수정
 
 * **CN(일반 이름) 필드가 없는 인증서 문제**
@@ -90,3 +89,4 @@ AEM 홈은 Adobe Experience Manager 내에서 콘텐츠, 자산, 사이트를 �
 
 
 <!-- ## Known issues {#known-issues} -->
+
