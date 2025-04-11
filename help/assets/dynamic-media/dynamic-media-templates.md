@@ -4,10 +4,10 @@ description: WYSIWYG 템플릿 편집기를 사용하여 Dynamic Media 템플릿
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 1%
+source-wordcount: '3050'
+ht-degree: 2%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 1%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -305,6 +305,41 @@ URL에서 직접 매개 변수를 편집하는 것은 지루할 수 있습니다
 2. 템플릿 위치로 이동합니다.
 3. 템플릿을 선택합니다.
 4. **[!UICONTROL 템플릿 편집]**&#x200B;을 클릭합니다. 템플릿 캔버스에는 템플릿과 해당 레이어의 모든 목록이 [레이어] 패널에 표시됩니다. 요구 사항에 따라 템플릿 편집을 시작합니다.
+
+## 템플릿 계층에 콜 투 액션 링크 추가{#add-CTA-in-dynamic-media-templates}
+
+사용자를 대상 페이지로 안내하는 CTA 링크를 추가하여 Dynamic Media 템플릿의 이미지 또는 텍스트 레이어를 하이퍼링크로 변환합니다. 다음 단계를 실행하여 레이어에 CTA 링크를 추가합니다.
+
+1. 템플릿 위치로 이동하여 템플릿을 선택하고 ![편집](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 템플릿 편집]**&#x200B;을 클릭합니다. 템플릿이 캔버스에 표시됩니다.
+1. 템플릿 레이어를 선택하고 [해당 속성 패널로 이동](#edit-or-delete-a-layer)하여 CTA 링크를 추가합니다.
+1. 속성 패널에서 **[!UICONTROL CTA 추가]**&#x200B;를 선택하고 **[!UICONTROL URL]** 필드에 대상 URL을 지정한 다음 **[!UICONTROL 저장]**을 클릭합니다.
+   ![CTA 추가](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. 템플릿을 미리 보고 정의된 매개 변수를 보려면 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하십시오.
+1. 이전에 게시하지 않은 경우 **[!UICONTROL 게시]**&#x200B;를 클릭하고 **[!UICONTROL 예]**&#x200B;를 선택하여 템플릿을 게시합니다.
+1. 이 템플릿이 저장된 폴더로 이동하여 이 템플릿을 선택하고 ![세부 정보 페이지](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 옵션 복사]**&#x200B;를 클릭하고 **[!UICONTROL 포함 코드 복사]**&#x200B;를 선택합니다.
+
+   ![포함 코드 복사](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   다음은 포함 코드의 예입니다.
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. 복사한 포함 코드를 사이트의 HTML 파일에 추가하고 브라우저에서 실행하여 템플릿을 표시합니다.
+
+템플릿에서 CTA 요소를 클릭하여 대상 페이지로 이동합니다.
+
+이 단계별 비디오를 통해 템플릿 레이어에 CTA 링크를 추가하는 방법에 대해 알아보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## 중요 참고 사항 {#important-points-to-note}
 
