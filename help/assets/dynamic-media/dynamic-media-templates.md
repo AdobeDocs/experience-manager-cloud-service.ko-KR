@@ -4,7 +4,7 @@ description: WYSIWYG 템플릿 편집기를 사용하여 Dynamic Media 템플릿
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
+source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -323,7 +323,7 @@ URL에서 직접 매개 변수를 편집하는 것은 지루할 수 있습니다
 
    다음은 포함 코드의 예입니다.
 
-   ```
+   ```json
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
