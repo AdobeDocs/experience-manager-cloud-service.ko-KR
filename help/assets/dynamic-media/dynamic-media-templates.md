@@ -4,7 +4,7 @@ description: WYSIWYG 템플릿 편집기를 사용하여 Dynamic Media 템플릿
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -312,14 +312,16 @@ URL에서 직접 매개 변수를 편집하는 것은 지루할 수 있습니다
 
 1. 템플릿 위치로 이동하여 템플릿을 선택하고 ![편집](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 템플릿 편집]**&#x200B;을 클릭합니다. 템플릿이 캔버스에 표시됩니다.
 1. 템플릿 레이어를 선택하고 [해당 속성 패널로 이동](#edit-or-delete-a-layer)하여 CTA 링크를 추가합니다.
-1. 속성 패널에서 **[!UICONTROL CTA 추가]**&#x200B;를 선택하고 **[!UICONTROL URL]** 필드에 대상 URL을 지정한 다음 **[!UICONTROL 저장]**을 클릭합니다.
-   ![CTA 추가](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. 속성 패널에서 **[!UICONTROL CTA 추가]**&#x200B;를 선택하고 **[!UICONTROL URL]** 필드에 대상 URL을 지정한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+![CTA 추가](/help/assets/assets/add-cta.png)
+
 1. 템플릿을 미리 보고 정의된 매개 변수를 보려면 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하십시오.
 1. 이전에 게시하지 않은 경우 **[!UICONTROL 게시]**&#x200B;를 클릭하고 **[!UICONTROL 예]**&#x200B;를 선택하여 템플릿을 게시합니다.
 1. 이 템플릿이 저장된 폴더로 이동하여 이 템플릿을 선택하고 ![세부 정보 페이지](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 옵션 복사]**&#x200B;를 클릭하고 **[!UICONTROL 포함 코드 복사]**&#x200B;를 선택합니다.
 
-   ![포함 코드 복사](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![포함 코드 복사](/help/assets/assets/copy-options1.png)
 
    다음은 포함 코드의 예입니다.
 
