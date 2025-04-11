@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 71%
+source-wordcount: '1734'
+ht-degree: 63%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 71%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -135,17 +135,37 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![버전 기록에서 자산의 새 버전을 업로드하는 옵션](assets/view-asset-versions2.png)
 
-### 자산의 버전 보기 {#view-versions}
+### 에셋의 버전 보기 및 비교 {#view-and-compare-versions}
 
-자산의 복제된 사본 또는 수정된 사본을 업로드할 때 해당 자산의 버전을 생성할 수 있습니다. 버전 관리를 통해 이전 자산을 검토하고 필요한 경우 이전 버전으로 되돌릴 수 있습니다.
+에셋의 복제된 사본 또는 수정된 사본을 업로드하여 해당 버전을 만듭니다. 버전 관리를 통해 시간에 따른 에셋의 수정 사항을 추적하고 필요한 경우 이전 버전으로 되돌릴 수 있습니다.
 
-버전을 보려면 자산의 미리보기를 열고 오른쪽 사이드바에서 **[!UICONTROL 버전]**(![버전 아이콘](assets/do-not-localize/versions-clock-icon.png))을 클릭하십시오. 특정 버전을 미리 보려면 해당 버전을 선택합니다. 되돌리려면 **[!UICONTROL 최신 버전으로 만들기]**&#x200B;를 클릭합니다.
+버전을 보고 비교하려면 다음 작업을 수행하십시오.
 
-버전 타임라인에서 버전을 생성할 수도 있습니다. 최신 버전을 선택하고 **[!UICONTROL 새 버전]**&#x200B;을 클릭한 다음 로컬 파일 시스템에서 자산의 새로운 사본을 업로드하십시오.
+1. 자산의 세부 정보 페이지로 이동합니다.
+1. 오른쪽 창에서 ![버전](/help/assets/assets/Clock.svg)을 클릭하여 **[!UICONTROL 버전]** 패널을 표시합니다. 원본 에셋과 업로드된 버전의 썸네일이 이 패널에 표시됩니다.
+1. 패널에서 버전을 선택하여 미리보기 영역에서 미리 봅니다.
+1. 최신 버전이 아닌 버전을 선택하고 **[!UICONTROL 최신 버전으로 만들기]**&#x200B;를 클릭하여 최신 버전으로 설정합니다.
+1. 미리 보기의 슬라이더를 왼쪽과 오른쪽으로 드래그하여 선택한 이미지 버전과 최신 버전을 단일 미리 보기로 빠르게 볼 수 있습니다. 이렇게 하면 선택한 이미지 버전을 최신 버전과 빠르게 비교할 수 있습니다.
 
-![자산의 버전 보기](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > 버전 비교는 이미지 에셋에 대해서만 활성화됩니다.
 
-*그림: 자산 버전 보기, 이전 버전으로 되돌리기 또는 다른 새로운 버전 업로드*
+   ![에셋의 버전 비교](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+최신 버전을 선택하고 **[!UICONTROL 새 버전]**&#x200B;을 클릭하여 로컬 파일 시스템에서 에셋의 새 복사본을 업로드하여 에셋 버전을 만듭니다.
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## 자산 상태 관리 {#manage-asset-status}
 

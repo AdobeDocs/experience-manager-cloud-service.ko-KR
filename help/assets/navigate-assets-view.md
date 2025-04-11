@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 72%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ ht-degree: 72%
 
 ![자산 미리보기](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: 저장소의 현재 폴더 또는 현재 검색 결과로 돌아가기 **B**: 미리 보고 있는 파일의 이름 및 형식 **C**: 작업 할당 **D**: 고급 메타데이터 **E**: 키워드 및 스마트 태그 **F**: 댓글 및 주석 **G**: 선택한 에셋과 관련된 작업 보기 **H**: 버전 보기 및 관리 **I**: 이미지 렌디션 보기 **J**: 이미지 편집 **K**: 스마트 자르기 및 스마트 자르기를 포함한 Dynamic Media 렌디션 보기 OpenAPI 기능이 포함된 Dynamic Media 표현물. **L**: 기본 메타데이터 **M**: 고급 메타데이터 **N**: 키워드 및 스마트 태그 **O**: **P** 폴더로 돌아가지 않고 현재 폴더의 이전 또는 다음 에셋으로 진행: 더 자세히 미리 보기. 확대/축소, 전체 화면 및 기타 옵션
+**A**: 저장소의 현재 폴더 또는 현재 검색 결과로 돌아가기 **B**: 미리 보고 있는 파일의 이름 및 형식 **C**: 작업 할당 **D**: 고급 메타데이터 **E**: 키워드 및 스마트 태그 **F**: 댓글 및 주석 **G**: 선택한 에셋과 관련된 작업 보기 **H**: [버전 보기 및 관리](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: 이미지 렌디션 보기 **J**: 이미지 편집 **K**: 보기 Smart Crop 및 OpenAPI 기능이 포함된 Dynamic Media를 포함한 미디어 렌디션. **L**: 기본 메타데이터 **M**: 고급 메타데이터 **N**: 키워드 및 스마트 태그 **O**: **P** 폴더로 돌아가지 않고 현재 폴더의 이전 또는 다음 에셋으로 진행: 더 자세히 미리 보기. 확대/축소, 전체 화면 및 기타 옵션
 
 비디오를 미리 볼 수도 있습니다.
 
