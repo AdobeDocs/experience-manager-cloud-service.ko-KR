@@ -4,9 +4,9 @@ description: WYSIWYG 템플릿 편집기를 사용하여 Dynamic Media 템플릿
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Dynamic Media 템플릿을 만들려면 다음 항목이 있어야 합니다.
 
 DM 템플릿을 만들려면 다음 단계를 수행하십시오.
 
+1. [!DNL AEM Assets] 홈 페이지로 이동하여 [이미지를 업로드하고 [!DNL AEM] 및 [!DNL Dynamic Media] 동시에](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)게시하여 템플릿을 만드는 데 사용합니다.
 1. [빈 캔버스 만들기](#create-a-canvas)
 1. [캔버스에 이미지 추가](#add-images-to-the-canvas)
 1. [캔버스에 텍스트 레이어 추가](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ URL에서 매개 변수 값을 업데이트하여 URL에서 텍스트, 글꼴, �
 1. 제품 또는 서비스의 빠른 머천다이징에 이 URL을 사용하십시오. 이 URL을 고객과 공유하거나 웹 사이트 또는 다운스트림 타사 애플리케이션에 통합하여 배너를 표시하고 진행 중인 오퍼를 반영하도록 실시간 업데이트할 수 있습니다.
 
 이 비디오에서 단계별로 Dynamic Media 템플릿을 만드는 방법을 알아봅니다.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## URL에서 템플릿을 실시간으로 업데이트합니다.{#update-the-template-from-the-url}
 
