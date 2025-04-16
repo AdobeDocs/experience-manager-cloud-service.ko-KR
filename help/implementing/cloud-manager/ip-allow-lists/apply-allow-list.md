@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,6 @@ ht-degree: 11%
 IP 허용 목록을 적용할 때 목록의 정의에 포함된 모든 IP 범위는 환경 내의 작성자 또는 게시 서비스와 연결됩니다. 목록 적용을 취소하는 것은 이 프로세스의 반대입니다.
 
 {{add-cm-allowlist-frontend-pipeline}}
-
-{{ip-allow-lists-ue}}
 
 ## IP 허용 목록 적용 {#applying}
 
@@ -33,7 +31,7 @@ IP 허용 목록을 적용할 때 목록의 정의에 포함된 모든 IP 범위
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 1. **환경** 화면에서 특정 환경 세부 정보 페이지로 이동합니다.
 1. **IP 허용 목록** 테이블로 이동합니다.
-1. IP 허용 목록과 이를 적용할 작성자, Publish 또는 미리보기 서비스를 선택할 수 있도록 표 상단의 입력 필드를 사용합니다.
+1. IP 허용 목록과 이를 적용할 작성자, 게시 또는 미리보기 서비스를 선택할 수 있도록 표 상단의 입력 필드를 사용합니다.
 IP 허용 목록을 적용하려면 Cloud Manager에 IP 도메인이 이미 있어야 합니다. [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)를 참조하십시오.
 1. ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **적용**&#x200B;을 클릭하고 제출을 확인합니다.
 
