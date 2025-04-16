@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.4.0 �
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -186,9 +186,9 @@ CDN이 트래픽을 AEM 원본으로 라우팅할 수 없는 경우에는 사용
 
 ### 얼리 어답터 프로그램 {#foundation-early-adopter}
 
-#### 클라이언트측 리디렉션(얼리 어답터 프로그램) {#client-side-redirects-early-adopter}
+#### 서버측 리디렉션(얼리 어답터 프로그램) {#server-side-redirects-early-adopter}
 
-소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보고](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여하십시오.
+소스 제어에서 301/302 서버측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보고](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여하십시오.
 
 #### 트래픽 필터 규칙 경고(얼리 어답터 프로그램) {#traffic-filter-rules-alerts-early-adopter}
 

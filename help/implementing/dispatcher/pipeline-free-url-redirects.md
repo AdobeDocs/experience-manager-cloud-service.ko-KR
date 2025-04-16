@@ -4,7 +4,7 @@ description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 * 이름이 변경된 HTML 페이지.
 * SEO 최적화.
 
-AEM as a Cloud Service은 클라이언트측 리디렉션을 구현하기 위해 [몇 가지 접근 방식](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)을 제공하지만, 이 문서에 설명된 전략인 파이프라인 없는 리디렉션은 다음과 같은 경우에 유용한 선택입니다.
+AEM as a Cloud Service은 서버측 리디렉션을 구현하기 위해 [몇 가지 접근 방식](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)을 제공하지만, 이 문서에 설명된 전략인 파이프라인 없는 리디렉션은 다음과 같은 경우에 유용한 선택입니다.
 
 * 리디렉션을 유지 관리하는 사람은 소스 제어에 파일 변경 내용을 커밋할 권한이 없거나 Cloud Manager 웹 계층 구성 파이프라인을 실행할 권한이 없는 비즈니스 사용자입니다.
 * 리디렉션의 수는 몇 개에서 수만 개에 이른다.

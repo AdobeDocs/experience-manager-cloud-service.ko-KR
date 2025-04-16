@@ -4,7 +4,7 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%
@@ -38,13 +38,13 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [WAF을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 악성 트래픽을 차단하는 규칙 선언 |
 | [변형 요청](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 규칙을 선언하여 트래픽 요청의 모양을 변환합니다. |
 | [응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 규칙을 선언하여 지정된 요청에 대한 응답의 모양을 변환합니다. |
-| [클라이언트측 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 스타일 클라이언트측 리디렉션 선언 |
-| [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Adobe이 아닌 애플리케이션을 포함하여 다양한 백엔드로 트래픽을 라우팅하는 규칙을 선언합니다. |
+| [서버측 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 301/302 스타일 서버측 리디렉션 선언 |
+| [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | 비 Adobe 애플리케이션을 포함하여 다양한 백엔드로 트래픽을 라우팅하는 규칙을 선언합니다. |
 | [CDN 오류 페이지](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 구성 파일에서 자체 호스팅된 정적 콘텐츠의 위치를 참조하여 AEM 원본에 연결할 수 없는 경우 기본 오류 페이지를 재정의합니다. |
 | [CDN 삭제](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN을 제거하는 데 사용되는 Purge API 키 선언 |
 | [고객 관리 CDN HTTP 토큰](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 고객 CDN에서 Adobe CDN을 호출하는 데 필요한 X-AEM-Edge-Key 값 선언 |
 | [기본 인증](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 특정 URL을 보호하는 기본 인증 대화 상자의 사용자 이름 및 암호를 선언합니다. |
-| [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 컨텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소를 최적화합니다 |
+| [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 콘텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소 최적화 |
 | [감사 로그 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 로그를 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 감사 로그를 최적화하여 성능 향상 |
 | [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 로그를 전달하기 위한 끝점 및 자격 증명을 구성합니다. |
 

@@ -4,7 +4,7 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
-AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 계층에서 구성 가능한 기능 컬렉션을 제공하며, 이 기능은 수신 요청이나 발신 응답의 특성을 수정합니다. 이 페이지에 자세히 설명된 다음 규칙은 다음 동작을 달성하도록 선언할 수 있습니다.
+AEM as a Cloud Service에서는 수신 요청 또는 발신 응답의 특성을 수정하는 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 계층에서 구성할 수 있는 기능 컬렉션을 제공합니다. 이 페이지에 자세히 설명된 다음 규칙은 다음 동작을 달성하도록 선언할 수 있습니다.
 
 * [요청 변환](#request-transformations) - 헤더, 경로 및 매개 변수를 포함하여 들어오는 요청의 측면을 수정합니다.
 * [응답 변환](#response-transformations) - 클라이언트로 돌아가는 중인 헤더를 수정합니다(예: 웹 브라우저).
-* [클라이언트측 리디렉션](#client-side-redirectors) - 브라우저 리디렉션을 트리거합니다.
+* [서버측 리디렉션](#server-side-redirectors) - 브라우저 리디렉션을 트리거합니다.
 * [원본 선택기](#origin-selectors) - 다른 원본 백엔드에 대한 프록시입니다.
 
 또한 CDN에서 구성할 수 있는 것은 CDN에서 허용하거나 거부하는 트래픽을 제어하는 트래픽 필터 규칙 (WAF 포함)입니다. 이 기능은 이미 릴리스되었으며 자세한 내용은 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 페이지에서 확인할 수 있습니다.
@@ -357,12 +357,12 @@ data:
 | **forwardAuthorization**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
 | **시간 초과**(선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
 
-### Edge Delivery Services에 프록시 지정 {#proxying-to-edge-delivery}
+### Edge Delivery Services에 프록시 설정 {#proxying-to-edge-delivery}
 
-원본 선택기를 사용하여 AEM Publish을 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
+원본 선택기를 사용하여 AEM 게시를 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
 
 * 일부 컨텐츠는 AEM Publish에서 관리하는 도메인에 의해 전달되지만, 동일한 도메인의 다른 컨텐츠는 Edge Delivery Services에 의해 전달됩니다
-* Edge Delivery Services에 의해 전달된 콘텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
+* Edge Delivery Services에서 제공하는 컨텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
 
 다음은 이를 수행할 수 있는 원본 선택기 규칙의 예입니다.
 
@@ -390,10 +390,10 @@ data:
 ```
 
 >[!NOTE]
-> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation)에 따라 **관리** 모드에서 푸시 무효화를 구성해야 합니다.
+> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation)를 따라 **관리** 모드에서 푸시 무효화를 구성해야 합니다.
 
 
-## 클라이언트측 리디렉션 {#client-side-redirectors}
+## 서버측 리디렉션 {#server-side-redirectors}
 
 301, 302 및 유사한 클라이언트측 리디렉션에 대해 클라이언트측 리디렉션 규칙을 사용할 수 있습니다. 규칙이 일치하는 경우 CDN은 상태 코드 및 메시지(예: HTTP/1.1 301 영구적으로 이동됨)와 위치 헤더 세트를 포함하는 상태 라인으로 응답합니다.
 

@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.5.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.5.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -71,7 +72,7 @@ ht-degree: 100%
 
 **변형 생성**
 
-이제 클라우드 서비스에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
+이제 Cloud Service에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
 
 **콘텐츠 조각 콘솔에서 자산 찾아보기**
 
@@ -213,9 +214,9 @@ RDE 명령줄 인터페이스에는 개발자 환경을 개선하는 몇 가지 
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 클라이언트측 리디렉션(얼리 어답터 프로그램) {#client-side-redirects-early-adopter}
+#### 서버측 리디렉션(얼리 어답터 프로그램) {#server-side-redirects-early-adopter}
 
-소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 콘텐츠 전송 네트워크에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 요청 및 응답 변환, AEM 외부 사이트로의 라우팅 트래픽 등 [CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)과 관련하여 이미 사용 가능한 여러 다른 기능이 있습니다.
+소스 제어에서 301/302 서버측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 요청 및 응답 변환, AEM 외부 사이트로의 라우팅 트래픽 등 [CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)과 관련하여 이미 사용 가능한 여러 다른 기능이 있습니다.
 
 #### 트래픽 필터 규칙 경고(얼리 어답터 프로그램) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -242,11 +243,11 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
-[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.9.0 �
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 특정 콘텐츠 리소스를 보호합니다. 이 기능은 최종 사용자 액세스 권한에 대한 포괄적인 솔루션 역할을 하기보다는 주로 비즈니스 관련자가 콘텐츠를 검토하는 것과 같은 간단한 인증 사용 사례를 대상으로 합니다. 사용자 이름 및 암호 목록은 구성 파이프라인을 통해 배포된 Git의 구성 파일을 통해 관리되며, 비밀 유형 Cloud Manager 환경 변수를 참조합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### 클라이언트측 리디렉션 {#client-side-redirects}
+### 서버측 리디렉션 {#server-side-redirects}
 
-CDN에서 배포 및 평가되는 구성 파일 Git에서 [브라우저 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)을 선언합니다. 이 기능은 페이지 삭제, 변경된 사이트 구조 및 SEO 최적화를 포함한 시나리오에 유용할 수 있습니다.
+CDN에서 배포 및 평가되는 구성 파일 Git에서 [브라우저 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)을 선언합니다. 이 기능은 페이지 삭제, 변경된 사이트 구조 및 SEO 최적화를 포함한 시나리오에 유용할 수 있습니다.
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
 
