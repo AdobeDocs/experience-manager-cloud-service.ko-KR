@@ -4,26 +4,26 @@ description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 8%
+source-wordcount: '659'
+ht-degree: 7%
 
 ---
 
 # API 참조 자료 {#api-reference-materials}
 
-AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 여러 오픈 소스 기술 위에 구축되어 있으며, 이 기술을 사용할 수도 있습니다.
+Adobe Experience Manager(AEM)는 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 여러 오픈 소스 기술을 기반으로 구축되며, 이 기술을 사용할 수도 있습니다.
 
-## AEM 코어 API {#core-aem-apis}
+## AEM 핵심 API {#core-aem-apis}
 
 다음 API는 AEM의 핵심입니다.
 
 | API | 설명 |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 에셋, 워크플로우 등과 같은 제품 추상화입니다. |
-| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | 다양한 필수 구성 요소를 제공하는 Adobe의 오픈 웹 스택(6.5 Granite 재료는 AEMaaCS에 적용됨) |
-| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe 경험에 일관성을 제공하도록 설계된 클라우드 UI에 대한 사용자의 시각적 스타일 |
+| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | 다양한 필수 구성 요소를 제공하는 Adobe 오픈 웹 스택(AEMaaCS에 적용되는 6.5 Granite 소재) |
+| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | 사용자 경험에 일관성을 제공하도록 설계된 Adobe의 클라우드 UI에 대한 시각적 스타일 |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -67,11 +67,11 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 
 | 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 표준화된 웹 컨텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 콘텐츠의 JSON 내보내기 생성 |
 | [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) | 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI |
-| [콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | 컨텐츠 조각의 구조화된 컨텐츠를 JSON 형식으로 전달하도록 설계된 AEM Edge Delivery Services의 HTTP REST API입니다. |
+| [OpenAPI를 사용한 AEM 콘텐츠 조각 배달](/help/headless/aem-content-fragment-delivery-with-openapi.md) | JSON 형식으로 컨텐츠 조각의 구조화된 컨텐츠를 제공하도록 설계된 AEM Edge Delivery Services의 HTTP REST API입니다. |
 | [컨텐츠 조각 GraphQL API](/help/headless/graphql-api/content-fragments.md) | Headless CMS 구현에서 JavaScript 클라이언트에 콘텐츠 조각을 효율적으로 게재할 수 있도록 합니다 |
 |  |  |
 | [Assets API](/help/assets/mac-api-assets.md) | 바이너리, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. AEM Assets HTTP API 를 참조하십시오 |
@@ -80,18 +80,18 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 
 >[!NOTE]
 >
->사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교가 필요하면 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
+>사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교는 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
 
-## SPA 관련 API {#spa-apis}
+## SPA별 API {#spa-apis}
 
-AEM 단일 페이지 애플리케이션(SPA) 편집기 SDK 프레임워크는 특정 JavaScript API 참조를 제공합니다.
+AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크는 특정 JavaScript API 참조를 제공합니다.
 
 | API | 설명 |
 |---|---|
 | [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | 단일 페이지 애플리케이션에서 프론트엔드 구성 요소를 Adobe Experience Manager 리소스 유형(AEM 구성 요소)에 매핑하는 방법을 제공합니다. |
 | [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Adobe Experience Manager 편집기와 Adobe Experience Manager SPA(단일 페이지 애플리케이션) 편집기 간의 인터프리터 |
 | [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Adobe Experience Manager Site Editor를 시작할 수 있는 React 구성 요소 및 통합 계층을 제공합니다. |
-| [편집 가능한 구성 요소 Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Adobe Experience Manager 사이트 편집기를 시작할 수 있는 Angular 구성 요소 및 통합 레이어를 제공합니다. |
+| [Angular 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Adobe Experience Manager 사이트 편집기를 시작할 수 있는 Angular 구성 요소 및 통합 계층을 제공합니다. |
 
 >[!TIP]
 >

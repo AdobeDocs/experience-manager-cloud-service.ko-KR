@@ -3,20 +3,20 @@ title: 구조화된 컨텐츠 전달 및 컨텐츠 조각 관리를 위한 AEM A
 description: 구조화된 컨텐츠 전달 및 컨텐츠 조각 관리에 사용할 수 있는 API에 대해 알아봅니다
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 21599676916068f3529976410a93951b02f750b0
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
+# 구조화된 콘텐츠 게재 및 관리를 위한 AEM API {#aem-apis-structured-content-delivery-and-management}
 
-# 구조화된 컨텐츠 전달 및 관리를 위한 AEM API {#aem-apis-structured-content-delivery-and-management}
+Adobe Experience Manager(AEM) as a Cloud Service은 콘텐츠 조각의 구조화된 콘텐츠 전달 및 콘텐츠 조각 관리를 위한 여러 API를 제공합니다. 특정 API에 대한 자세한 내용은 개별 페이지 를 참조하십시오.
 
-Adobe Experience Manager(AEM as a Cloud Service)는 구조화된 컨텐츠 조각과 컨텐츠 조각 관리를 모두 위한 여러 API를 제공합니다. 특정 API에 대한 자세한 내용은 개별 페이지 를 참조하십시오.
-
-* [콘텐츠 조각 배달을 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
-   * 이 API는 AEM의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하기 위한 JSON 응답을 생성합니다.
+* [OpenAPI를 사용한 AEM 컨텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   * 이 API는 AEM의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하기 위한 JSON 응답을 만듭니다.
    * 콘텐츠 조각에 대한 경로를 끝점으로 사용합니다.
    * 이 API는 REST를 기반으로 합니다.
    * CDN 통합을 포함하여 콘텐츠 전달에 최적화되었습니다.
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM as a Cloud Service)는 구조화된 컨텐츠 조�
    * 이 API는 GraphQL 기반입니다.
 * [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
    * 이러한 API는 구조화된 컨텐츠 관리를 위한 것입니다.
-   * 각 GET 연산자는 컨텐츠 전달에 최적화되지 않습니다.
+   * 각 GET 연산자는 컨텐츠 전달에 최적화되어 있지 않습니다.
    * 이 API는 REST를 기반으로 합니다.
 * [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
    * AEM의 구조화된 컨텐츠 제공을 위한 JSON 출력을 위한 원래 API입니다.
@@ -51,7 +51,7 @@ Key considerations include:
 
 ## REST 및 GraphQL {#rest-vs-graphql}
 
-사용된 API는 개발자를 위한 의사 결정이며 AEM은 두 가지를 모두 지원합니다.
+사용된 API는 개발자를 위한 결정으로, AEM은 두 가지를 모두 지원합니다.
 
 많은 비교가 온라인에서 사용할 수 있지만 REST의 몇 가지 특징 및 이점은 다음과 같습니다.
 
@@ -71,7 +71,7 @@ Key considerations include:
 
 * 캐싱
 
-   * REST `GET` 요청에 대한 JSON 응답은 기본적으로 캐시할 수 있습니다. GraphQL `POST` 요청은 캐시되지 않는 한 캐시할 수 없습니다. 예를 들어 서버에 저장되고 REST와 유사한 `GET` 요청으로 요청된 AEM 지속 쿼리를 사용합니다.
+   * REST `GET` 요청에 대한 JSON 응답은 기본적으로 캐시할 수 있습니다. GraphQL `POST` 요청은 캐시되지 않는 한 캐시할 수 없습니다. 예를 들어, 서버에 저장되고 REST와 유사한 `GET` 요청으로 요청된 AEM 지속 쿼리를 사용합니다.
 
 GraphQL의 이점은 다음과 같습니다.
 

@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d8e4fdc4f79e40a43a6845ab083dc231444b9c99
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 36%
+source-wordcount: '578'
+ht-degree: 33%
 
 ---
 
@@ -35,7 +35,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Delivery API를 통해 콘�
 
 Adobe Experience Manager(AEM) as a Cloud Service은 콘텐츠 조각의 구조화된 콘텐츠 전달 및 콘텐츠 조각 관리를 위한 여러 API를 제공합니다. 특정 API에 대한 자세한 내용은 개별 페이지 를 참조하십시오.
 
-* 콘텐츠 조각 게재를 위한 AEM REST OpenAPI
+* OpenAPI를 사용한 AEM 컨텐츠 조각 게재
    * 이 API는 AEM의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하기 위한 JSON 응답을 만듭니다.
    * 콘텐츠 조각에 대한 경로를 끝점으로 사용합니다.
    * 이 API는 REST를 기반으로 합니다.
@@ -67,7 +67,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 * [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [구조화된 콘텐츠 게재 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)
-* [콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [OpenAPI를 사용한 AEM 컨텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
 * [컨텐츠 조각 전달을 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
 * [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)

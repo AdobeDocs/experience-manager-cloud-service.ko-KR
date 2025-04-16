@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 94%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 94%
       + [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 쿼리 문제 해결](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI를 사용한 AEM 컨텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [콘텐츠 조각 및 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 보안 {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 94%
       + 범용 편집기 {#universal-editor}
          + [소개](/help/implementing/universal-editor/introduction.md)
          + [사용 사례](/help/implementing/universal-editor/use-cases.md)
+         + [범용 편집기 및 사이트 편집기](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
          + [구성 요소 정의](/help/implementing/universal-editor/component-definition.md)
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)

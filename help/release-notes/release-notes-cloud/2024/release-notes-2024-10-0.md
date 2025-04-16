@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.10.0 �
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 98%
@@ -56,7 +56,7 @@ ht-degree: 98%
 
 **콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
-[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
+[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

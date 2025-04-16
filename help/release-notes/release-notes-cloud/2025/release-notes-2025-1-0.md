@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 �
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 91%
@@ -58,7 +58,7 @@ AEM 콘텐츠 조각 편집기의 새롭고 현대화된 댓글 달기 서비스
 
 **콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
-[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
+[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
 
 ### 더 이상 사용되지 않는 기능 {#sites-deprecated}
 
