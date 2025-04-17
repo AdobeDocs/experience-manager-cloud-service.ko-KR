@@ -4,9 +4,9 @@ description: WYSIWYG 템플릿 편집기를 사용하여  [!DNL Dynamic Media] �
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 배너 및 전단에 대한 사용자 지정 가능한 실시간 템플릿을 만듭니다. 다운스트림 애플리케이션에서 [!DNL Dynamic Media] 템플릿을 사용하십시오. [!DNL Dynamic Media] 템플릿에는 이미지 및 텍스트 레이어가 포함됩니다. 템플릿의 이미지 및 텍스트 레이어에 매개 변수를 추가하고 [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)을 사용하여 레이어의 위치를 변경하고 크기를 조정하며 해당 내용을 실시간으로 업데이트합니다.
+WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 배너 및 전단에 대한 사용자 지정 가능한 실시간 템플릿을 만듭니다. [!DNL Dynamic Media] 템플릿을 게시하고 다운스트림 애플리케이션에서 사용합니다. [!DNL Dynamic Media] 템플릿에는 이미지 및 텍스트 레이어가 포함됩니다. 템플릿의 이미지 및 텍스트 레이어에 매개 변수를 추가하고 [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)을 사용하여 레이어의 위치를 변경하고 크기를 조정하며 해당 내용을 실시간으로 업데이트합니다.
 
 몇 가지 주요 기능은 다음과 같습니다.
 
@@ -88,7 +88,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 [!DNL Dynamic Media] 템플릿을 만들려면 다음 단계를 수행하십시오.
 
 1. [!DNL Assets View]&#x200B;(으)로 이동한 다음 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**에서 [폴더를 만듭니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view). ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;의 폴더 트리가 **[!UICONTROL Dynamic Media Assets]**&#x200B;에서 복제됩니다. 이 [!UICONTROL Dynamic Media Assets] 폴더에 [!DNL Dynamic Media] 템플릿을 저장합니다.
-1. 템플릿을 만드는 데 사용하려면 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**및 [이미지를 업로드하고 [!DNL AEM] 및 [!DNL Dynamic Media] 동시에](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)게시를 선택하십시오.
+1. 템플릿을 만드는 데 사용하려면 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**및 [이미지를 업로드하고 [!DNL AEM] 및 [!DNL Dynamic Media] 동시에](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)게시를 선택하십시오. 템플릿 게재 URL을 생성하려면 이미지를 게시해야 하며, 이 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
 1. [빈 캔버스 만들기](#create-a-canvas)
 1. [캔버스에 이미지 추가](#add-images-to-the-canvas)
 1. [캔버스에 텍스트 레이어 추가](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
    >[!NOTE]
    >
    >  템플릿은 사용자가 만드는 위치에 저장됩니다. [!DNL Assets View] 홈 페이지에서 **[!UICONTROL Dynamic Media Assets]**&#x200B;을(를) 선택하고 **[!UICONTROL 템플릿 만들기]**&#x200B;를 클릭하여 **[!UICONTROL Dynamic Media Assets]** 루트 폴더에 템플릿을 저장합니다.
+
 1. 템플릿 이름을 지정하고 캔버스 너비 및 높이를 정의한 다음 **[!UICONTROL 만들기]**를 클릭합니다. 템플릿을 만드는 데 사용할 메뉴 옵션이 양쪽에 있는 빈 캔버스가 표시됩니다. 메뉴 옵션 위로 마우스를 가져가면 해당 도구 설명을 볼 수 있습니다.
    ![실시간 사용자 지정 가능한 템플릿](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 * ![사용자 지정 템플릿](/help/assets/assets/add-text.svg): 캔버스에 텍스트를 추가하려면 클릭하세요.
 * ![사용자 지정 가능한 템플릿](/help/assets/assets/show-layers-list.svg): 캔버스에 있는 모든 레이어(이미지 및 텍스트) 목록을 보려면 클릭하세요. 캔버스에 추가된 모든 이미지와 텍스트는 별도의 레이어로 표시됩니다.
 
-**왼쪽 창의 메뉴 옵션:** 아래에 언급된 일반적인 편집기 작업에 이 옵션을 사용합니다.
+**왼쪽 창의 메뉴 옵션:** 다음의 일반 편집기 작업에 이 옵션을 사용합니다.
 
-* ![DM 템플릿](/help/assets/assets/layer-selector.svg): 레이어를 선택합니다.
-* ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg): 선택한 레이어를 앞으로 가져오려면 클릭하거나 **Ctrl** + **]**(Windows) 또는 **Cmd** + **]**(Mac)을 누릅니다.
-* ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg): 선택한 레이어를 뒤로 보내려면 클릭하거나 **Ctrl** + **[**(Windows) 또는 **Cmd** + **[**(Mac)을 누르십시오.
-* ![즉시 사용자 지정할 수 있는 서식 파일을 만드세요](/help/assets/assets/undo.svg): 마지막 작업을 실행 취소하려면 클릭하거나 **Ctrl** + **Z**(Windows) 또는 **Cmd** + **Z**(Mac)을 누르십시오.
-* ![배너를 빠르게 만들 템플릿](/help/assets/assets/redo.svg): 마지막 작업을 다시 실행하려면 클릭하거나 **Ctrl** + **Y**(Windows) 또는 **Cmd** + **Y**(Mac)을 누르십시오.
-* ![빠르게 전단을 만드는 템플릿](/help/assets/assets/zoom-in.svg): 캔버스를 확대하려면 클릭하거나 **Ctrl** + **+**(Windows) 또는 Cmd + **+**(Mac)을 누릅니다.
-* 배너를 빠르게 만드는 ![템플릿](/help/assets/assets/Zoom-out.svg): 캔버스를 축소하려면 클릭하거나 **Ctrl** + **-**(Windows) 또는 **Cmd** + **-**(Mac)을 누르십시오.
+* ![DM 템플릿](/help/assets/assets/layer-selector.svg): ![DM 템플릿](/help/assets/assets/layer-selector.svg)을 선택하고 캔버스에서 레이어를 클릭하여 선택합니다.
+* ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg): ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **]**(Windows) 또는 **Cmd** + **]**(Mac)을 사용하여 선택한 레이어를 앞으로 가져옵니다.
+* ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg): ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **[**(Windows) 또는 **Cmd** + **[**(Mac)을 사용하여 선택한 레이어를 뒤로 보냅니다.
+* ![즉시 사용자 지정할 수 있는 템플릿 만들기](/help/assets/assets/undo.svg): ![즉시 사용자 지정할 수 있는 템플릿 만들기](/help/assets/assets/undo.svg)를 클릭하거나 키보드 단축키, **Ctrl** + **Z**(Windows) 또는 **Cmd** + **Z**(Mac)를 사용하여 마지막 작업을 취소하십시오.
+* ![배너를 빠르게 만드는 템플릿](/help/assets/assets/redo.svg): ![배너를 빠르게 만들려면 템플릿을 클릭](/help/assets/assets/redo.svg)하거나, 키보드 단축키, **Ctrl** + **Y**(Windows) 또는 **Cmd** + **Y**(Mac)를 사용하여 마지막 작업을 다시 실행하십시오.
+* ![전단을 빠르게 만들려면](/help/assets/assets/zoom-in.svg): ![템플릿을 클릭하여 전단을 빠르게 만들거나](/help/assets/assets/zoom-in.svg) 키보드 단축키를 사용하거나 **Ctrl** + **+**(Windows) 또는 **Cmd** + **+**(Mac)을 사용하여 캔버스를 확대하십시오.
+* 배너를 빠르게 만들려면 ![템플릿](/help/assets/assets/Zoom-out.svg): 배너를 빠르게 만들려면 ![템플릿을 클릭](/help/assets/assets/Zoom-out.svg)하거나, 키보드 단축키, **Ctrl** + **-**(Windows) 또는 **Cmd** + **-**(Mac)를 사용하여 캔버스를 축소하십시오.
 * 편집 중인 텍스트나 속성이 없으면 **백스페이스** 또는 **삭제**&#x200B;를 눌러 선택한 레이어를 삭제합니다.
 
-![템플릿을 클릭하여 전단을 빠르게 만듭니다](/help/assets/assets/show-layers-list.svg) **>**&#x200B;개의 옵션(![](/help/assets/assets/three-dots.svg))을 캔버스 레이어에서 클릭하면 템플릿을 만드는 동안 언제든지 캔버스 차원을 편집할 수 있습니다.
+템플릿을 만드는 동안 언제든지 캔버스 차원을 편집하려면 ![템플릿을 클릭하여 전단을 빠르게 만들고](/help/assets/assets/show-layers-list.svg) 캔버스 레이어에서 더 많은 옵션(![](/help/assets/assets/three-dots.svg))을 선택하십시오.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 
 다음 단계를 실행하여 캔버스에 이미지를 추가합니다.
 
-1. ![즉시 배너 만들기](/help/assets/assets/add-image.svg)를 클릭하여 [자산 선택기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) 패널을 표시합니다. 패널에 [!DNL Dynamic Media]에 동기화된 AEM Assets 인스턴스의 이미지가 표시됩니다.
+1. ![즉시 배너 만들기](/help/assets/assets/add-image.svg)를 클릭하여 [자산 선택기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) 패널을 엽니다. 패널에 [!DNL Dynamic Media]에 동기화된 AEM Assets 인스턴스의 이미지가 표시됩니다.
 1. 패널을 찾아보거나 검색 막대에서 키워드를 사용하여 특정 이미지를 찾습니다.
 1. 캔버스에 이미지를 드래그하여 놓아 사용하십시오. 캔버스에서 레이어 크기 조정 또는 위치 조정은 [**[!UICONTROL 속성 패널]**](#reposition-resize-delete-a-layer)을 참조하세요.
    ![초 내에 배너 만들기](/help/assets/assets/add-image-to-canvas.png)
