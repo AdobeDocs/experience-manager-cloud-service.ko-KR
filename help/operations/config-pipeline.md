@@ -1,19 +1,19 @@
 ---
 title: 구성 파이프라인 사용하기
-description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
+description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 AEM as a Cloud Service의 다양한 구성을 배포하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 # 구성 파이프라인 사용하기 {#config-pipelines}
 
-구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
+구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 AEM as a Cloud Service의 다양한 구성을 배포하는 방법에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
@@ -46,7 +46,8 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [기본 인증](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 특정 URL을 보호하는 기본 인증 대화 상자의 사용자 이름 및 암호를 선언합니다. |
 | [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 콘텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소 최적화 |
 | [감사 로그 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 로그를 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 감사 로그를 최적화하여 성능 향상 |
-| [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 로그를 전달하기 위한 끝점 및 자격 증명을 구성합니다. |
+| [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 로그를 Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 전달하기 위한 끝점 및 자격 증명을 구성합니다. |
+| [클라이언트 ID 등록](/help/implementing/developing/open-api-based-apis.md) | `API` | 클라이언트 ID를 등록하여 Adobe Developer Console API 프로젝트를 특정 AEM 환경으로 범위 지정합니다. 인증이 필요한 OpenAPI 기반 API를 사용하기 위해 필요합니다 |
 
 ## 구성 파이프라인 생성 및 관리 {#creating-and-managing}
 
