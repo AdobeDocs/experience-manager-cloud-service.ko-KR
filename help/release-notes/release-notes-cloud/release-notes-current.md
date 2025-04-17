@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Open API 기능이 포함된 Dynamic Media를 사용하여 긴 양식의 비디오 지원**
 
-OpenAPI 기능이 포함된 Dynamic Media가 이제 긴 양식의 비디오를 지원합니다. 긴 형식의 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
+OpenAPI 기능이 포함된 Dynamic Media가 이제 긴 양식의 비디오를 지원합니다. 최대 50GB와 2시간의 긴 양식 비디오를 지원할 수 있습니다.
 
 ### Dynamic Media Classic {#dmc}
 
@@ -58,7 +58,7 @@ OpenAPI 기능이 포함된 Dynamic Media가 이제 긴 양식의 비디오를 �
 
 Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터 더 이상 지원되지 않습니다.
 
-[대역폭 및 저장소, 보고서 유형](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)을 참조하세요.
+[대역폭 및 스토리지, 보고서 유형](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)을 참조하십시오.
 
 
 ## Assets 보기의 새로운 기능 {#new-features-assets-view}
@@ -84,19 +84,19 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 #### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
 
-이제 AEM Forms 문서 생성 API를 사용하여 [생성된 PDF 문서를 직접 업로드](/help/forms/early-access-ea-features.md#doc-generation-api)할 수 있습니다. 이러한 향상된 기능을 통해 저장 및 검색을 간소화하여 클라우드 워크플로와의 통합과 효율성이 개선됩니다.
+AEM Forms Document Generation API를 사용하면 이제 [생성된 PDF 문서를 Azure Blob 스토리지에 직접 업로드](/help/forms/early-access-ea-features.md#doc-generation-api)할 수 있습니다. 이러한 향상된 기능을 통해 저장 및 검색을 간소화하여 클라우드 워크플로와의 통합과 효율성이 개선됩니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Java 21 지원 {#java21}
 
-1월 릴리스부터 Java 21 및 Java 17을 사용하여 코드를 작성할 수 있습니다. 패턴 일치, 봉인된 클래스 및 다양한 성능 개선과 같은 새로운 기능에 액세스할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
+1월 릴리스부터 Java 21 및 Java 17을 사용하여 코드를 작성할 수 있습니다. 패턴 매칭, 봉인된 클래스 및 다양한 성능 개선과 같은 새로운 기능을 사용할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
 
-Java 17 또는 21 빌드가 검색되면 더 성능이 좋은 Java 21 **runtime**&#x200B;이(가) 자동으로 배포됩니다. 그러나 Adobe에서는 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내어 Java 11로 빌드된 환경에 대해 Java 21 런타임을 선택하는 것도 좋습니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아보십시오.
+Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런타임**&#x200B;이 자동으로 배포됩니다. 그러나 Java 11로 빌드된 환경에서는 Java 21 런타임을 선택하는 것도 좋습니다. 이를 위해서는 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내 문의하시기 바랍니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아보십시오.
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime**&#x200B;은(는) 2월에 개발/RDE 환경에 배포되었습니다. **4월 28일 및 29**&#x200B;에 단계/프로덕션 환경에 적용됩니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
+> Java 21 **런타임**&#x200B;은 2월에 개발/RDE 환경에 배포되었으며, **4월 28일과 29일**&#x200B;에 스테이징/프로덕션 환경에 적용될 예정입니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
 
 ### 더 많은 목적지로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
 
@@ -125,7 +125,7 @@ Java 17 또는 21 빌드가 검색되면 더 성능이 좋은 Java 21 **runtime*
 
 개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새 AEM as a Cloud Service API는 OpenAPI 사양을 따르며, 일관되고 문서화가 잘 되며 사용자 친화적인 것을 목표로 합니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 만드는 방식으로 생성됩니다.
 
-[OpenAPI 기반 AEM API](/help/implementing/developing/open-api-based-apis.md)에 대해 자세히 알아보고 구성 및 사용 방법을 안내하는 [전체 튜토리얼](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)을 살펴보십시오.
+[OpenAPI 기반 AEM API](/help/implementing/developing/open-api-based-apis.md)에 대해 자세히 알아보고 구성 및 사용 방법을 안내하는 [전체 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)을 살펴보십시오.
 
 구체적으로 아래에 나열된 API 엔드포인트가 얼리 어답터 프로그램의 일부로 제공됩니다. 관심이 있는 경우 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 이메일로 문의하여 사용 계획을 설명해 주십시오.
 
@@ -142,7 +142,7 @@ Java 17 또는 21 빌드가 검색되면 더 성능이 좋은 Java 21 **runtime*
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 <!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
 (https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
