@@ -4,9 +4,9 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 508265c72f458b062e1667fd42403743fa293586
+source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1365'
 ht-degree: 3%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 # 양식을 초안으로 저장하고 사이트 페이지에 나열
 
-<span class="preview"> 이 문서에는 시험판 기능인 **초안** 기능에 대한 내용이 포함되어 있습니다. 이 프리릴리스 기능은 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해서만 액세스할 수 있습니다.</span>
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM은 AEM Sites 페이지에 초안 및 제출을 표시하는 **초안 및 제출** Forms 포털 구성 요소를 즉시 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
 ![초안 아이콘](assets/drafts-component.png)
 
-## 전제 조건
+## 사전 요구 사항
 
 * [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](/help/forms/enable-adaptive-forms-core-components.md).
 
@@ -123,7 +123,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> **양식 저장** 규칙을 사용하여 양식을 초안으로 저장하려면 [핵심 구성 요소 버전이 3.0.24 이상](https://github.com/adobe/aem-core-forms-components)(으)로 설정되어 있는지 확인하십시오.
+> **양식 저장** 규칙을 사용하여 양식을 초안으로 저장하려면 [핵심 구성 요소 버전이 3.0.24 이상](https://github.com/adobe/aem-core-forms-components)&#x200B;(으)로 설정되어 있는지 확인하십시오.
 
 양식을 초안으로 저장하려면 단추와 같은 양식 구성 요소에 **양식 저장** 규칙을 만듭니다. 버튼을 클릭하면 규칙이 트리거되고 양식이 초안으로 저장됩니다. 단추 구성 요소에 **양식 저장** 규칙을 만들려면 다음 단계를 수행하십시오.
 

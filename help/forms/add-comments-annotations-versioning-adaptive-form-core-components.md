@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
+source-wordcount: '581'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,6 @@ ht-degree: 2%
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
-
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
-
 
 적응형 양식 핵심 구성 요소는 양식 작성자가 버전 관리, 주석 및 주석을 양식에 통합할 수 있는 기능을 제공합니다. 이러한 기능은 사용자가 여러 버전의 양식을 작성 및 관리하고, 주석을 통해 공동 토론에 참여하고, 특정 양식 구성 요소에 주석을 첨부할 수 있도록 함으로써 양식 개발 프로세스를 간소화함으로써 전반적인 양식 작성 환경을 향상시킵니다.
 
@@ -34,7 +31,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 양식 버전을 만들려면 아래 단계를 수행합니다.
 
 1. 양식을 만들거나 기존 양식을 사용합니다.
-1. AEM UI에서 **[!UICONTROL 양식]**>**[!UICONTROL Forms 및 문서]**(으)로 이동하여 **양식**&#x200B;을(를) 선택합니다.
+1. AEM UI에서 **[!UICONTROL 양식]**>>**[!UICONTROL Forms 및 문서]**&#x200B;로 이동하고 **양식**&#x200B;을 선택합니다.
 1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**을 선택합니다.
    ![양식 선택](select-a-form.png)
 1. 왼쪽 하단 패널에 있는 **세 점**&#x200B;을 클릭하고 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.

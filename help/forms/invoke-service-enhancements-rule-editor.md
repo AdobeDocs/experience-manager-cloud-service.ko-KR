@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 2%
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
-
 # 핵심 구성 요소를 기반으로 하는 양식에 대해 시각적 규칙 편집기에서 서비스 호출 사용
-
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 적응형 양식의 시각적 규칙 편집기는 인스턴스에 대해 구성된 양식 데이터 모델(FDM) 목록에서 서비스를 선택할 수 있는 **서비스 호출** 기능을 지원합니다. 양식 필드를 서비스의 입력 매개 변수에 직접 매핑할 수 있습니다. 양식 필드를 출력 매개 변수에 매핑하려면 지정된 양식 데이터 모델 서비스에 대해 이벤트 페이로드 옵션을 사용합니다. 또한 시각적 규칙 편집기를 사용하면 출력 응답을 기반으로 **서비스 호출** 작업의 성공 및 실패 처리기에 대한 규칙을 만들 수 있습니다. 성공 처리기는 **서비스 호출** 작업의 성공적인 실행을 관리하지만 오류 처리기는 발생하는 모든 오류를 해결합니다.
 
@@ -242,4 +240,3 @@ ht-degree: 2%
 ## 추가 리소스
 
 {{see-also-rule-editor}}
-

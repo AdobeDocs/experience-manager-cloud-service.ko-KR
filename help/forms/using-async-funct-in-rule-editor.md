@@ -4,13 +4,13 @@ description: Visual Rule Editor의 비동기 함수 호출
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 1%
+source-wordcount: '1409'
+ht-degree: 0%
 
 ---
-
 
 # 핵심 구성 요소 기반 적응형 양식에서 비동기 기능 사용
 
@@ -39,8 +39,6 @@ ht-degree: 1%
 
 ## 비동기 함수 호출 규칙 유형을 사용하는 방법
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
-
 비동기 작업을 위해 [사용자 지정 함수](/help/forms/custom-function-core-component-create-function.md)를 작성하고 규칙 편집기의 **[!UICONTROL 비동기 함수 호출]** 규칙 형식을 사용하여 비동기 함수를 구성할 수 있습니다.
 
 ### 사용 사례를 통해 비동기 함수 호출 규칙 유형 살펴보기
@@ -53,7 +51,7 @@ ht-degree: 1%
 
 다음 그림은 **[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하여 적응형 Forms에 대한 비동기 함수를 호출하는 단계를 보여 줍니다.
 
-![비동기 함수를 추가하는 워크플로우](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
+![비동기 함수를 추가하는 워크플로](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
 ### 1. JS 파일의 비동기 작업에 대한 사용자 지정 함수 작성
 
@@ -217,7 +215,7 @@ OTP가 값 `111`과(와) 일치하지 않는 경우 오류 메시지를 표시�
 
 ![비동기 함수에 대한 규칙을 만드는 중](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-사용자가 `Fetch` 단추를 클릭할 때 사용자 지정 함수 `callAsyncFunction`이(가) 호출되어 비동기 함수 `asyncFunction`이(가) 호출되는지 보여 주려면 아래 콘솔 창의 스크린샷을 참조하십시오. Inspect 콘솔 창에서 버튼에 대한 응답을 봅니다. 클릭:
+사용자가 `Fetch` 단추를 클릭할 때 사용자 지정 함수 `callAsyncFunction`이(가) 호출되어 비동기 함수 `asyncFunction`이(가) 호출되는지 보여 주려면 아래 콘솔 창의 스크린샷을 참조하십시오. 콘솔 창을 검사하여 버튼 클릭에 대한 응답을 확인합니다.
 
 ![콘솔 창](/help/forms/assets/async-custom-funct-console.png)
 
