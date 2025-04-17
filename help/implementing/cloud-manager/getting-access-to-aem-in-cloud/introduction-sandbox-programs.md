@@ -5,9 +5,9 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '503'
 ht-degree: 32%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 32%
 
   ![샌드박스용 솔루션 및 추가 기능 선택](assets/sandbox-solutions-add-ons.png)
 
-* [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/ experience-manager-core-components/using/developing/archetype/overview)을(를) 기반으로 하는 샘플 프로젝트로 프로젝트 git 저장소를 설정합니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을(를) 기반으로 하는 샘플 프로젝트로 프로젝트 git 저장소를 설정합니다.
 * 개발 환경을 만듭니다.
 * 개발 환경에 배포하는 비프로덕션 파이프라인을 만듭니다.
 
 샌드박스 프로그램에는 개발 환경이 하나만 있습니다.
 
-## 제한 사항 및 조건 {#limitations}
+## 사용 정보 및 조건 {#usage-notes-conditions}
 
 샌드박스 프로그램은 라이브 트래픽을 위한 것이 아니기 때문에 프로덕션 프로그램과 구별되는 특정 사용 제한 사항 및 조건이 있습니다.
 

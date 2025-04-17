@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 40%
+source-wordcount: '1820'
+ht-degree: 39%
 
 ---
 
@@ -21,9 +21,9 @@ AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monit
 
 Adobe는 애플리케이션의 모니터링, 가용성 및 성능에 중점을 둡니다. AEM as a Cloud Service에는 New Relic One 모니터링에 대한 액세스 권한이 포함되어 있으므로 표준 제품 서비스의 일부로 팀에게 시스템 및 환경 성능 지표를 포괄적으로 확인할 수 있습니다.
 
-이 문서에서는 AEM as a Cloud Service 환경에서 New Relic One APM(Application Performance Monitoring) 기능에 대한 액세스를 관리하는 방법을 간략하게 설명합니다. Effective management of these features supports optimal performance and maximizes the benefits of AEM as a Cloud Service.
+이 문서에서는 AEM as a Cloud Service 환경에서 New Relic One APM(Application Performance Monitoring) 기능에 대한 액세스를 관리하는 방법을 간략하게 설명합니다. 이러한 기능을 효과적으로 관리하면 최적의 성능을 지원하고 AEM as a Cloud Service의 이점을 극대화할 수 있습니다.
 
-When a new production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. [This sub-account must be activated](#activate-sub-account) to begin ingesting data.
+새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. 데이터 수집을 시작하려면 [이 하위 계정을 활성화해야 합니다](#activate-sub-account).
 
 ## 기능 {#transaction-monitoring}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to manage your New Relic One users.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
 1. 프로그램 개요 페이지의 **환경** 카드 하단에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
 
@@ -59,13 +59,13 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 하위 계정이 비활성화되면 데이터 수집이 없습니다.
 
-## Manage New Relic One users {#manage-users}
+## New Relic One 사용자 관리 {#manage-users}
 
 다음 단계에 따라 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정의 사용자를 정의합니다.
 
 >[!NOTE]
 >
->A user in the **Business Owner** or **Deployment Manager** role must be logged in to manage New Relic One users.
+>New Relic One 사용자를 관리하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -89,7 +89,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 >[!NOTE]
 >
->If you are managing the New Relic One users, you must also add yourself as a user to have access yourself. **비즈니스 소유자** 또는 **배포 관리자**&#x200B;가 되는 것만으로는 New Relic One에 액세스할 수 없습니다. 자신을 사용자로 만들어야 합니다.
+>New Relic One 사용자를 관리하는 경우 직접 액세스할 수 있도록 자신을 사용자로 추가해야 합니다. **비즈니스 소유자** 또는 **배포 관리자**&#x200B;가 되는 것만으로는 New Relic One에 액세스할 수 없습니다. 자신을 사용자로 만들어야 합니다.
 
 ## New Relic One 사용자 계정 활성화 {#activate-user-account}
 
@@ -97,7 +97,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 **New Relic One 사용자 계정을 활성화하려면:**
 
-1. Click the link provided in the email from New Relic.
+1. New Relic 이메일에 제공된 링크를 클릭합니다.
 
 1. New Relic 로그인 페이지에서 **암호를 잊어버렸습니까?**&#x200B;를 클릭합니다.
 
@@ -121,11 +121,11 @@ New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](
 
 1. New Relic One에 액세스할 프로그램을 클릭합니다.
 
-1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Open New Relic**.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **New Relic 열기**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-access.png)
 
-   * You can also access New Relic. 프로그램의 **환경** 화면 맨 위에서 ![자세히 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+   * New Relic에 액세스할 수도 있습니다. 프로그램의 **환경** 화면 맨 위에서 ![자세히 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
 1. 새 브라우저 탭이 열리면 New Relic One에 로그인합니다.
 
@@ -137,7 +137,7 @@ New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](
 
 ### 이메일 확인 {#verify-email}
 
-If you are asked to verify your email during login to New Relic One, it means that your email is associated with multiple accounts. You can choose which account to access.
+New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 액세스할 계정을 선택할 수 있습니다.
 
 이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
@@ -163,15 +163,13 @@ If you are asked to verify your email during login to New Relic One, it means th
 
 가입 절차를 완료했는데 전자 메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우 [Admin Console](https://adminconsole.adobe.com/)을 통해 지원 티켓을 기록하십시오.
 
-If you do not receive an email from New Relic, do the following:
+New Relic에서 이메일을 받지 못한 경우 다음을 수행하십시오.
 
 * [스팸 필터](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)를 확인합니다.
 * 해당하는 경우 [전자 메일에 New Relic 허용 목록에 추가하다 추가](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* If neither suggestion helps, provide feedback on the support ticket.
+* 두 제안 모두 도움이 되지 않는 경우 지원 티켓에 대한 피드백을 제공해 주십시오.
 
-## 제한 사항 {#limitations}
-
-New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
+## 사용 정보 {#usage-notes}
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우, 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
 * New Relic에 추가된 사용자의 유형은 **기본**&#x200B;입니다. 자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)를 참조하세요.
@@ -179,7 +177,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 
 >[!NOTE]
 >
->New Relic One 하위 계정에서 30일 이상 **사용자 로그인** 활동이 검색되지 않으면 APM 에이전트가 중지되고 데이터가 AEM Cloud Service에서 New Relic으로 전송되지 않습니다.  **하위 계정이 다시 활성화될 때까지 데이터가 다시 전송되지 않습니다.**
+>New Relic One 하위 계정에서 30일 이상 **사용자 로그인** 활동이 검색되지 않으면 APM 에이전트가 중지됩니다. 데이터가 AEM Cloud Service에서 New Relic으로 전송되지 않습니다. *하위 계정이 다시 활성화될 때까지 데이터가 다시 전송되지 않습니다.*
 >
 >이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
@@ -191,11 +189,11 @@ AEM as a Cloud Service 프로그램의 New Relic One 제공에 대한 추가 도
 
 Adobe는 New Relic One의 Java 플러그인을 통해 AEM as a Cloud Service, 게시 및 미리보기(사용 가능한 경우) 서비스를 모니터링합니다. Adobe는 비프로덕션 및 프로덕션 AEM as a Cloud Service 환경 전반에서 사용자 정의 New Relic One APM 원격 분석 및 모니터링을 지원합니다.
 
-Your New Relic One account is attached to a primary Adobe-maintained account and has multiple applications reporting into it; three per AEM as a Cloud Service Environment.
+New Relic One 계정은 Adobe에서 관리하는 기본 계정에 연결되어 있으며 여러 애플리케이션에서 보고를 받습니다(AEM as a Cloud Service 환경당 3개).
 
-* One application for the Author service per environment
-* One application for the `Publish` service per environment (including Golden Publish)
-* One application for the Preview service per environment
+* 환경당 Author 서비스용 애플리케이션 1개
+* 환경당 `Publish` 서비스에 대한 응용 프로그램 1개(Golden Publish 포함)
+* 환경당 미리보기 서비스용 애플리케이션 1개
 
 메모:
 
@@ -205,9 +203,9 @@ Your New Relic One account is attached to a primary Adobe-maintained account and
 
 +++
 
-+++**Does Adobe send alert notifications from New Relic One?**
++++**Adobe에서 New Relic One에서 경고 알림을 전송합니까?**
 
-Adobe provides New Relic One access for observability purposes only and does not use it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles](/help/journey-onboarding/notification-profiles.md).
+Adobe은 가시성 목적으로만 New Relic One 액세스를 제공하며 고객 경고 또는 내부 운영 경고 용도로 사용하지 않습니다. 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 사용하여 전송됩니다.
 +++
 
 +++**New Relic One 클라우드 서비스 데이터에 액세스할 수 있는 사용자**
@@ -234,7 +232,7 @@ Adobe은 New Relic One 및 기타 도구를 사용하여 AEM as a Cloud Service�
 
 +++
 
-+++**내 New Relic One 계정에 대한 APM 에이전트가 중지되었습니다. What happened?**
++++**내 New Relic One 계정에 대한 APM 에이전트가 중지되었습니다. 무슨 일이 있었습니까?**
 
-[APM agents are stopped](#limitations) if no activity is detected for 30 days or more. 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
+30일 이상 활동이 검색되지 않으면 [APM 에이전트가 중지됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 +++

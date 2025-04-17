@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '710'
 ht-degree: 44%
 
 ---
@@ -43,9 +43,9 @@ AEM as a Cloud Service은 내장된 CDN(Content Delivery Network) 서비스를 �
 * Cloud Manager은 AEM 관리 CDN에 설치된 사용자 정의 도메인 이름과 인증서를 관리합니다.
 * BYO CDN에 설치된 사용자 정의 도메인 이름과 인증서는 해당 CDN 내에서 직접 관리됩니다.
 
-**자체 CDN에서 관리되는 도메인은 Cloud Manager을 통해 설치할 필요가 없습니다.** - X-Forwarded-Host를 통해 AEM에서 사용할 수 있으며 Dispatcher에 정의된 vhost와 일치합니다. [CDN 설명서](/help/implementing/dispatcher/cdn.md)를 참조하십시오.
+**자체 CDN에서 관리되는 도메인은 Cloud Manager을 통해 설치할 필요가 없습니다** - X-Forwarded-Host를 통해 AEM에서 사용할 수 있으며 Dispatcher에 정의된 vhost와 일치합니다. [CDN 설명서](/help/implementing/dispatcher/cdn.md)를 참조하십시오.
 
-한 환경에서는 AEM 관리 CDN에 설치되고 BYO CDN에 설치된 두 개의 도메인이 모두 있을 수 있습니다.
+한 환경에서 AEM 관리 CDN에 설치되고 BYO CDN에 설치된 두 도메인을 모두 가질 수 있습니다.
 
 ## 워크플로 {#workflow}
 
@@ -63,9 +63,7 @@ AEM as a Cloud Service은 내장된 CDN(Content Delivery Network) 서비스를 �
 >
 >AEM as a Cloud Service를 사용하여 사용자 정의 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 해결하는 데 영업일 기준 1~2일이 소요될 수 있습니다. 따라서 Go-Live 날짜 이전에 도메인을 설치하는 것이 좋습니다. 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
 
-## 제한 사항 {#limitations}
-
-AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 몇 가지 제한 사항이 있습니다.
+## 사용 정보 {#usage-notes}
 
 * 사용자 정의 도메인 이름은 Cloud Manager에서 Sites 프로그램의 게시 및 미리보기 서비스에 대해서만 지원됩니다.
    * 작성자 서비스를 위한 사용자 정의 도메인은 지원되지 않습니다.

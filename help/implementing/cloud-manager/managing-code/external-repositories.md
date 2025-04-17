@@ -1,23 +1,23 @@
 ---
-title: Cloud Manager에서 외부 리포지토리 추가 - 제한된 Beta
-description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager는 GitHub Enterprise, GitLab 및 Bitbucket 리포지토리와의 통합을 지원합니다.
+title: Cloud Manager에서 외부 저장소 추가 - 얼리 어답터
+description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 27%
+source-wordcount: '2307'
+ht-degree: 23%
 
 ---
 
-# Cloud Manager에서 외부 저장소 추가 - 제한된 베타 {#external-repositories}
+# Cloud Manager에서 외부 저장소 추가 - 얼리 어답터 {#external-repositories}
 
 Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 
 >[!NOTE]
 >
->이 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 얼리 어답터로 등록하려면 [GitLab 및 Bitbucket에 대한 지원을 통해 지금 자신의 Git을 가져오세요](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)를 참조하세요.
+>이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 얼리 어답터로 등록하려면 [자신의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
 
 ## 외부 저장소 구성
 
@@ -31,6 +31,14 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 
 ## 외부 저장소 추가 {#add-ext-repo}
+
+>[!NOTE]
+>
+>외부 저장소는 구성 파이프라인에 연결할 수 없습니다.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -66,8 +74,8 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | --- | --- |
    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
    | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub Enterprise**<br><ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: GitLab**<ul><li>Token Name(토큰 이름&#x200B;**)**&#x200B;텍스트 필드에 만들려는 액세스 토큰의 이름을 입력합니다.<li>GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 personal access token을([를) 만들기 합니다.<li>GitLab PAT(Personal Access Token)<br>에 필요한 권한이러한 범위를 통해 Cloud Manager는 유효성 검사 및 웹훅 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인합니다.<ul><li>증권 시세 표시기<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>Bitbucket 설명서를](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/) 사용하여 [저장소 액세스 토큰을 만들기.<li>Bitbucket PAT(Personal Access Token)에 필요한 권한이러한<br> 권한을 통해 Cloud Manager는 저장소 컨텐츠에 액세스하고, 가져오기 요청을 관리하고, 웹훅 이벤트를 구성하거나 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 생성할 때 다음과 같은 필수 앱 암호 권한이 포함되어 있는지 확인합니다.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+   | | **저장소 유형: GitLab**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+   | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
 
    >[!NOTE]
    >
@@ -145,20 +153,20 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
    1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
 
-      API 키를 생성하려면 Adobe Systems 개발자 콘솔에서 통합 프로젝트를 만들어야 합니다. 자세한 내용은 API 통합 프로젝트](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) 만들기를 참조하십시오[.
+      API 키를 생성하려면 Adobe Developer Console에서 통합 프로젝트를 만들어야 합니다. 자세한 내용은 [API 통합 프로젝트 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 참조하십시오.
 
-1. 이전에 **복사한 Webhook Secret을 Secret** (또는 **Secret key** 또는 **Secret token**) 텍스트 필드에 붙여넣기 합니다.
-1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 Webhook을 구성합니다.
+1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
+1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 웹후크를 구성합니다.
 
    | 저장소 | 필수 웹후크 이벤트 |
    | --- | --- |
-   | GitHub Enterprise | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>끌어오기 요청<li>못 살게 굴지<li>문제 댓글</li></li></li></ul></ul></ul> |
+   | GitHub Enterprise | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul> |
    | GitLab | 이러한 웹후크 이벤트를 사용하면 코드가 푸시되거나 병합 요청이 제출될 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul> |
-   | Bitbucket | 이러한 이벤트를 통해 Cloud Manager는 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위해 댓글과 상호 작용할 수 있습니다.<br>웹훅이 다음 필수 웹훅 이벤트에서 트리거되도록 설정되어 있는지 확인합니다<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>끌어오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
+   | Bitbucket | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
 
-### 웹훅을 사용한 가져오기 요청 유효성 검사
+### 웹후크를 사용한 풀 요청 유효성 검사
 
-웹훅이 올바르게 구성되면 Cloud Manager는 저장소에 대한 파이프라인 실행 또는 PR 유효성 검사 검사를 자동으로 트리거합니다.
+웹후크가 올바르게 구성되면 Cloud Manager은 저장소에 대한 파이프라인 실행 또는 PR 유효성 검사를 자동으로 트리거합니다.
 
 다음과 같은 동작이 적용됩니다.
 
@@ -206,12 +214,88 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 * PR 유효성 검사 또는 파이프라인 트리거가 작동하지 않는 경우 Cloud Manager 및 Git 공급업체 모두에서 웹후크 비밀이 최신 상태인지 확인하십시오.
 
 
-## 제한 사항
+## 외부 Git 공급자에서 신속한 개발 환경에 배포 {#deploy-to-rde}
 
-* 외부 저장소는 구성 파이프라인에 연결할 수 없습니다.
+>[!NOTE]
+>
+>이 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다. 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)(으)로 전자 메일을 보내세요. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+
+Cloud Manager에서는 [자체 Git(BYOG) 구성 가져오기](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 사용할 때 외부 Git 공급자에서 직접 RDE(Rapid Development Environment)에 코드를 배포할 수 있습니다.
+
+외부 Git 저장소에서 RDE로 배포하려면 다음 조건을 충족해야 합니다.
+
+* Cloud Manager과 통합된 외부 Git 저장소 사용(BYOG 설정).
+* 프로젝트에 하나 이상의 RDE 환경이 프로비저닝되어 있어야 합니다.
+* `github.com`을(를) 사용하는 경우 업데이트된 GitHub 앱 설치를 검토하고 수락하여 필요한 새 권한을 부여해야 합니다.
+
+**사용 정보**
+
+* RDE에 대한 배포는 현재 AEM 콘텐츠 및 Dispatcher 패키지에 대해서만 지원됩니다.
+* 다른 패키지 유형(예: 전체 AEM 애플리케이션 패키지)의 배포는 아직 지원되지 않습니다.
+* 현재 주석을 사용하여 RDE 환경을 재설정하는 기능은 지원되지 않습니다. 고객은 [여기](/help/implementing/developing/introduction/rapid-development-environments.md)에 설명된 대로 기존 AIO CLI 명령을 사용해야 합니다.
+
+**작동 방식**
+
+1. **코드 품질 유효성 검사 메시지.**
+
+   끌어오기 요청(PR)이 코드 품질 파이프라인 실행을 트리거할 때 유효성 검사 결과는 배포가 RDE 환경으로 진행될 수 있는지 여부를 나타냅니다.
+
+   GitHub Enterprise의 특징:
+   ![GitHub Enterprise의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   GitLab의 특징:
+   ![GitLab의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Bitbucket의 모양:
+   ![Bitbucket의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **댓글을 사용하여 배포를 트리거합니다.**
+
+   배포를 시작하려면 `deploy on rde-environment-<envName>` 형식으로 PR에 주석을 추가하십시오.
+
+   ![댓글을 사용하여 배포 트리거](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   `<envName>`은(는) 기존 RDE 환경의 이름과 일치해야 합니다. 이름을 찾을 수 없으면 환경이 유효하지 않음을 나타내는 주석이 반환됩니다.
+
+   환경 상태가 준비되지 않은 경우 다음과 같은 댓글이 표시됩니다.
+
+   ![환경을 배포할 준비가 되지 않았습니다](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **환경 검사 및 아티팩트 배포.**
+
+   RDE가 준비되면 Cloud Manager은 PR에 새 검사를 게시합니다.
+
+   GitHub Enterprise의 특징:
+
+   ![GitHub의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   GitLab의 특징:
+
+   ![GitLab의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   Bitbucket의 모양:
+
+   ![Bitbucket의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **배포 완료 메시지.**
+
+   배포가 완료되면 Cloud Manager은 대상 환경에 배포된 아티팩트를 요약하는 성공 메시지를 게시합니다.
+
+   GitHub Enterprise의 특징:
+
+   ![GitHub의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   GitLab의 특징:
+
+   ![GitLab의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   Bitbucket의 모양:
+
+   ![Bitbucket의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 

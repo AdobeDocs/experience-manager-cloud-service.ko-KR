@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Cloud Manager의 IP 허용 목록을 사용하여 이러한 신뢰할 수 있는
 >
 >IP 허용 목록이 적용되지 않으면 기본적으로 모든 IP 주소가 허용됩니다. IP 허용 목록이 적용되면 IP 허용 목록의 주소 외에는 IP 주소가 허용되지 않습니다.
 
-## 제한 사항 {#limitations}
-
-IP 허용 목록을 사용하기 전에 다음 제한 사항의 기능, 사용 및 다른 기능에 미치는 영향을 파악하십시오.
-
-### IP 허용 목록의 일반적인 제한 사항 {#general}
+## 사용 정보 {#usage-notes}
 
 * 프로그램에 최대 50개의 IP 허용 목록을 추가할 수 있습니다.
 * 각 IP 허용 목록에 최대 50개의 IP/CIDR 주소를 추가할 수 있습니다.

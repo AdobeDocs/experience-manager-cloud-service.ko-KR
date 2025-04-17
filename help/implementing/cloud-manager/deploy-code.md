@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 41%
 
 ---
@@ -42,7 +42,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 코드를 배포할 프로그램을 클릭합니다.
 
-1. **개요** 페이지의 콜 투 액션 영역에서 **배포**&#x200B;를 클릭합니다.
+1. **개요** 페이지의 call-to-action 영역에서 **배포**&#x200B;를 클릭합니다.
 
    ![CTA](assets/deploy-code1.png)
 
@@ -134,7 +134,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 >
 >재실행에서 빌드 단계는 재빌드가 아니라 아티팩트를 복사하는 것임을 나타내기 위해 UI에 레이블이 지정됩니다.
 
-### 제한 사항 {#limitations}
+### 사용 정보 {#usage-notes}
 
 * 프로덕션 배포 단계를 재실행하는 것은 마지막 실행에서만 사용할 수 있습니다.
 * 푸시 업데이트 실행은 재실행이 불가능합니다. 마지막 실행이 푸시 업데이트 실행인 경우 재실행이 불가능합니다.

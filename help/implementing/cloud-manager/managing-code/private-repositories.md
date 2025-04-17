@@ -4,9 +4,9 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 34%
 
 ---
@@ -84,7 +84,7 @@ Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다�
 
 ### 개인 GitHub 저장소의 소유권 확인 {#validate-ownership}
 
-이제 Cloud Manager는 GitHub 저장소에 대해 알게 되었지만, 여전히 이에 대한 액세스가 필요합니다. 액세스 권한을 부여하려면 Adobe GitHub 앱을 설치하고 지정된 저장소를 소유하고 있는지 확인해야 합니다.
+이제 Cloud Manager는 GitHub 저장소에 대해 알게 되었지만 여전히 이에 대한 액세스가 필요합니다. 액세스 권한을 부여하려면 Adobe GitHub 앱을 설치하고 지정된 저장소를 소유하고 있는지 확인해야 합니다.
 
 **개인 GitHub 저장소의 소유권을 확인하려면:**
 
@@ -153,9 +153,7 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 
 
 
-## 제한 사항 {#limitations}
-
-Cloud Manager에서 개인 GitHub Cloud 저장소를 사용할 때 특정 제한 사항이 적용됩니다.
+## 사용 정보 {#usage-notes}
 
 * 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
