@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 35%
+ht-degree: 38%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 35%
 * CQ-4355411: 도구 설명이 &quot;사용자 환경 설정&quot; 대화 상자의 디스플레이에 남아 있습니다.
 * GRANITE-57265: 드롭다운 선택 값이 선택되지 않습니다.
 * GRANITE-57067 - UI에 대한 효과적인 정책이 없습니다.
-* SITES-30727: AEM 편집기 내의 하위 구성 요소에 대한 드래그 앤 드롭이 실패할 수 있습니다.
+* SITES-30727: AEM 편집기 내의 하위 구성 요소에 대한 끌어다 놓기가 실패할 수 있습니다.
 * SKYOPS-90607: 슬링 작업은 비활성 배포/변경 가능한 콘텐츠에서 실행됩니다.
 * SKYOPS-95722: AEM-SDK의 빠른 시작 플래그에서 `MaxPermSize` 크기를 제거합니다.
 * SKYOPS-103569: 특정 이미지는 Java 21로 로드할 수 없습니다. `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
