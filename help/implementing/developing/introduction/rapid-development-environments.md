@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
 workflow-type: tm+mt
-source-wordcount: '5390'
+source-wordcount: '5392'
 ht-degree: 3%
 
 ---
@@ -81,18 +81,18 @@ Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음
 
 >[!IMPORTANT]
 >
->Adobe I/O CLI 및 관련 플러그인이 제대로 작동하도록 [노드 및 NPM 버전 20이 설치](https://nodejs.org/en/download/)되어 있는지 확인하십시오.
+>Adobe I/O(AIO) CLI 및 관련 플러그인이 제대로 작동하도록 [노드 및 NPM 버전 20이 설치](https://nodejs.org/en/download/)되어 있는지 확인하십시오.
 
 
-1. 이 [프로시저](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)에 따라 Adobe I/O CLI 도구를 설치합니다.
-1. Adobe I/O CLI 도구 AEM RDE 플러그인 설치:
+1. 이 [프로시저](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)에 따라 AIO CLI 도구를 설치하십시오.
+1. AIO CLI 도구 AEM RDE 플러그인 설치:
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. aio 클라이언트를 사용하여 로그인합니다.
+1. Adobe I/O(AIO) 클라이언트를 사용하여 로그인합니다.
 
    ```
    aio login
@@ -473,6 +473,60 @@ Logs:
 >
 >2023년 4월 이전에 RDE를 만든 후 프론트엔드 기능을 처음 사용할 때 `UNEXPECTED_API_ERROR`이(가) 발생하는 경우, 오래된 설정 때문일 수 있습니다. 이 문제를 해결하려면 환경을 삭제하고 새 환경을 만듭니다.
 
+### RDE 상태 확인 {#checking-rde-status}
+
+RDE CLI를 사용하여 RDE 플러그인을 통해 배포된 내용과 같이 환경을 배포할 준비가 되었는지 확인할 수 있습니다.
+
+다음을 실행합니다.
+
+`aio aem:rde:status`
+
+를 반환하며 다음을 포함합니다.
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+```
+
+인스턴스 배포에 대한 메모를 반환하는 경우 계속해서 다음 업데이트를 수행할 수 있지만 마지막 업데이트가 아직 인스턴스에 표시되지 않을 수 있습니다.
+
+### 배포 내역 표시 {#show-deployment-history}
+
+다음을 실행하여 RDE에 대한 배포 내역을 확인할 수 있습니다.
+
+`aio aem:rde:history`
+
+응답 형식을 반환합니다.
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### RDE에서 삭제 {#deleting-from-rde}
+
+CLI 도구를 사용하여 이전에 RDE에 배포한 구성 및 번들을 삭제할 수 있습니다. 삭제할 수 있는 항목 목록에 `status` 명령을 사용하십시오. 이 목록에는 번들의 경우 `bsn`, delete 명령에서 참조할 구성의 경우 `pid`이(가) 포함됩니다.
+
+예를 들어 `com.adobe.granite.demo.MyServlet.cfg.json`이(가) 설치된 경우 `bsn`은(는) **cfg.json** 접미사가 없는 `com.adobe.granite.demo.MyServlet`입니다.
+
+컨텐츠 패키지 또는 컨텐츠 파일 삭제는 지원되지 않습니다. 이를 제거하려면 RDE를 재설정하여 기본 상태로 되돌립니다.
+
+자세한 내용은 아래 예를 참조하십시오.
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
+
+
 ## 외부 Git 공급자의 RDE에 배포 {#deploy-to-rde}
 
 >[!NOTE]
@@ -491,7 +545,7 @@ Cloud Manager에서는 [BYOG(Bring Your Own Git) 구성](/help/implementing/clou
 
 * RDE에 대한 배포는 현재 AEM 콘텐츠 및 Dispatcher 패키지에 대해서만 지원됩니다.
 * 다른 패키지 유형(예: 전체 AEM 애플리케이션 패키지)의 배포는 아직 지원되지 않습니다.
-* 현재 주석을 사용하여 RDE 환경을 재설정하는 기능은 지원되지 않습니다. 고객은 [여기](/help/implementing/developing/introduction/rapid-development-environments.md)에 설명된 대로 기존 AIO CLI 명령을 사용해야 합니다.
+* 현재 주석을 사용하여 RDE 환경을 재설정하는 기능은 지원되지 않습니다. 대신 기존 AIO CLI reset 명령을 사용해야 합니다([여기에 설명](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)).
 
 **작동 방식**
 
@@ -553,58 +607,7 @@ Cloud Manager에서는 [BYOG(Bring Your Own Git) 구성](/help/implementing/clou
    ![Bitbucket의 환경 배포 상태](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### RDE 상태 확인 {#checking-rde-status}
 
-RDE CLI를 사용하여 RDE 플러그인을 통해 배포된 내용과 같이 환경을 배포할 준비가 되었는지 확인할 수 있습니다.
-
-다음을 실행합니다.
-
-`aio aem:rde:status`
-
-를 반환하며 다음을 포함합니다.
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-```
-
-인스턴스 배포에 대한 메모를 반환하는 경우 계속해서 다음 업데이트를 수행할 수 있지만 마지막 업데이트가 아직 인스턴스에 표시되지 않을 수 있습니다.
-
-### 배포 내역 표시 {#show-deployment-history}
-
-다음을 실행하여 RDE에 대한 배포 내역을 확인할 수 있습니다.
-
-`aio aem:rde:history`
-
-응답 형식을 반환합니다.
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### RDE에서 삭제 {#deleting-from-rde}
-
-CLI 도구를 사용하여 이전에 RDE에 배포한 구성 및 번들을 삭제할 수 있습니다. 삭제할 수 있는 항목 목록에 `status` 명령을 사용하십시오. 이 목록에는 번들의 경우 `bsn`, delete 명령에서 참조할 구성의 경우 `pid`이(가) 포함됩니다.
-
-예를 들어 `com.adobe.granite.demo.MyServlet.cfg.json`이(가) 설치된 경우 `bsn`은(는) **cfg.json** 접미사가 없는 `com.adobe.granite.demo.MyServlet`입니다.
-
-컨텐츠 패키지 또는 컨텐츠 파일 삭제는 지원되지 않습니다. 이를 제거하려면 RDE를 재설정하여 기본 상태로 되돌립니다.
-
-자세한 내용은 아래 예를 참조하십시오.
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
 
 ## 로그 {#rde-logging}
 
