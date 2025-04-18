@@ -330,7 +330,7 @@ ht-degree: 99%
          + [마이그레이션 후 주체 관리](/help/journey-migration/managing-principals-after-migration.md)
          + [마이그레이션 후 IMS에 주체 일괄 업로드](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 기존 사용자 매핑 도구(레거시){#legacy-user-mapping-tool}
+         + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -1409,7 +1409,7 @@ ht-degree: 99%
    + 작성자 계층 {#author-tier}
       + [작성자 계층에 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 콘텐츠 전송 개요 {#content-delivery}
+   + 콘텐츠 게재 개요 {#content-delivery}
       + [콘텐츠 게재 플로우](/help/implementing/dispatcher/overview.md)
       + [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [Dispatcher 도구를 사용하여 검증 및 디버깅](/help/implementing/dispatcher/validation-debug.md)

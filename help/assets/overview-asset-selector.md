@@ -6,7 +6,7 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -81,12 +81,12 @@ ht-degree: 94%
 
 다음 커뮤니케이션 방법을 보장해야 합니다.
 
-* 호스트 응용 프로그램이 HTTPS에서 실행 중입니다.
-* `localhost`에서 응용 프로그램을 실행할 수 없습니다. 로컬 컴퓨터에서 자산 선택기를 통합하려면 `[https://<your_campany>.localhost.com:<port_number>]`과(와) 같은 사용자 지정 도메인을 만들고 이 사용자 지정 도메인을 `redirectUrl list`에 추가해야 합니다.
+* 호스트 애플리케이션이 HTTPS에서 실행 중입니다.
+* 해당 애플리케이션을 `localhost`에서 실행할 수 없습니다. 로컬 컴퓨터에서 자산 선택기를 통합하려면 `[https://<your_campany>.localhost.com:<port_number>]` 등의 사용자 정의 도메인을 생성하고 이 사용자 정의 도메인을 `redirectUrl list`에 추가해야 합니다.
 * 각 `imsClientId`을(를) 사용하여 clientID를 구성하고 AEM 클라우드 서비스 환경 변수에 추가할 수 있습니다.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
-* 환경 구성에서 IMS 범위 목록을 정의해야 합니다.
+* IMS 범위 목록은 환경 구성에서 정의되어야 합니다.
 * 애플리케이션의 URL이 IMS 클라이언트가 허용하는 리디렉션 URL 목록에 있습니다.
 * IMS 로그인 흐름은 웹 브라우저의 팝업을 사용하여 구성 및 렌더링됩니다. 따라서 타깃 브라우저에서 팝업을 활성화하거나 허용해야 합니다.
 
@@ -96,7 +96,7 @@ ht-degree: 94%
 
 * [자산 선택기와 Adobe 앱 통합](/help/assets/integrate-asset-selector-adobe-app.md)
 * [자산 선택기와 Adobe 이외의 앱 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [자산 선택기 Dynamic Media 오픈 API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
