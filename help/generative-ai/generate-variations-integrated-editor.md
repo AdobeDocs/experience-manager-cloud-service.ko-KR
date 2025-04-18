@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 내 다양한 편집기에서 접근 가능�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 854ffd8fd40ba038003dbaed0d4a2b8830256484
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+workflow-type: tm+mt
+source-wordcount: '1341'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->독립 실행형 버전의 [변형 생성](/help/generative-ai/generate-variations.md)에는 여전히 직접 액세스할 수 있습니다.
+>이 버전을 사용하는 것이 좋습니다. 독립 실행형 버전 [변형 생성](/help/generative-ai/generate-variations.md)에 계속 직접 액세스할 수 있지만 앞으로 더 이상 사용되지 않습니다.
 
 그런 다음 아래와 같은 작업을 수행할 수 있습니다.
 

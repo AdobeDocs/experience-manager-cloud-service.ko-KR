@@ -1,19 +1,19 @@
 ---
-title: 베리에이션 생성 릴리스 정보
-description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 베리에이션 생성을 위한 릴리스 정보
+title: 변형 생성 릴리스 정보
+description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 변형 생성을 위한 릴리스 정보
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 81%
+source-wordcount: '284'
+ht-degree: 89%
 
 ---
 
-# 베리에이션 생성 릴리스 정보 {#release-notes-generate-variations}
+# 변형 생성 릴리스 정보 {#release-notes-generate-variations}
 
-이 페이지는 AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 베리에이션 생성을 위한 릴리스 정보를 설명합니다.
+이 페이지는 AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 변형 생성을 위한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,19 +21,19 @@ ht-degree: 81%
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-현재 릴리스는 버전 3.0.0입니다.
+현재 릴리스 버전은 3.0.0입니다.
 
 ### 3.0.0 {#release-notes-3-0-0}
 
-다음 편집기에서 [변형 생성에 액세스](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)할 수 있습니다([일단 구성되면](#access-generate-variations)).
+[다음 편집기를 구성한 후](#access-generate-variations)에는 편집기에서 [변형 생성에 액세스](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)할 수 있습니다.
 
-* [AEM Edge Delivery Services의 Sidekick 내에서, 문서 기반 작성용](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [AEM Edge Delivery Services의 Sidekick 내 문서 기반 작성용 편집기](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [범용 편집기 내](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [콘텐츠 조각 편집기 내](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
 >[!NOTE]
 >
->이전 버전의 [변형 생성에 계속 액세스할 수 있습니다](/help/generative-ai/generate-variations.md).
+>이전 버전의 [변형 생성](/help/generative-ai/generate-variations.md)에 계속 직접 액세스할 수 있지만 앞으로 더 이상 사용되지 않으므로 버전 3.0.0을 사용하는 것이 좋습니다.
 
 ### 2.2.0 {#release-notes-2-2-0}
 

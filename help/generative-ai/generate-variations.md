@@ -1,22 +1,27 @@
 ---
-title: 베리에이션 생성
-description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 베리에이션 생성에 대해 알아봅니다.
+title: 변형 생성
+description: AEM as a Cloud Service와 Edge Delivery Services의 Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 99%
 
 ---
 
 
-# 베리에이션 생성 {#generate-variations}
+# 변형 생성 {#generate-variations}
 
-디지털 채널을 최적화하고 콘텐츠 제작을 가속화하는 방법을 찾고 있다면 베리에이션 생성을 사용할 수 있습니다. 베리에이션 생성은 생성형 AI를 사용하여 프롬프트를 기반으로 콘텐츠 베리에이션을 생성하며, 이러한 프롬프트는 Adobe에서 제공하거나 사용자가 만들고 관리합니다. 베리에이션을 만든 후 웹 사이트에서 콘텐츠를 사용할 수 있으며, [Edge Delivery Services](/help/edge/overview.md)의 [실험](https://www.aem.live/docs/experimentation) 기능을 사용하여 성공 여부를 측정할 수도 있습니다.
 
-다음에서 [베리에이션 생성](#access-generate-variations)에 액세스할 수 있습니다.
+>[!NOTE]
+>
+>이 페이지에 설명된 버전은 향후에 더 이상 사용되지 않으므로 [AEM 편집기에 통합된 변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)에 액세스하는 것이 좋습니다.
+
+디지털 채널을 최적화하고 콘텐츠 제작을 가속화하는 방법을 찾고 있다면 변형 생성을 사용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 프롬프트를 기반으로 콘텐츠 변형을 생성하며, 이러한 프롬프트는 Adobe에서 제공하거나 사용자가 만들고 관리합니다. 변형을 만든 후 웹 사이트에서 콘텐츠를 사용할 수 있으며, [Edge Delivery Services](/help/edge/overview.md)의 [실험](https://www.aem.live/docs/experimentation) 기능을 사용하여 성공 여부를 측정할 수도 있습니다.
+
+다음에서 [변형 생성](#access-generate-variations)에 액세스할 수 있습니다.
 
 * [Adobe Experience Manager(AEM) as a Cloud Service 내](#access-aemaacs)
 * [AEM Edge Delivery Services의 Sidekick](#access-aem-sidekick)
@@ -25,10 +30,6 @@ ht-degree: 99%
 >[!NOTE]
 >
 >모든 경우에 베리에이션 생성을 사용하려면 [액세스 전제 조건](#access-prerequisites)이 충족되었는지 확인해야 합니다.
-
->[!NOTE]
->
->[AEM 편집기에 통합된 변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)에 액세스할 수도 있습니다.
 
 그런 다음, 아래와 같은 작업을 수행할 수 있습니다.
 
@@ -39,32 +40,32 @@ ht-degree: 99%
    * 조직 전반의 [공유 프롬프트에 이를 액세스하고 사용](#select-prompt)할 수 있습니다.
 * [대상자별의 맞춤형 콘텐츠를 생성](#generate-copy)할 때 프롬프트에 사용할 [대상자](#audiences) 세그먼트 정의를 할 수 있습니다.
 * 프롬프트와 함께 출력을 미리 보고 수정하고 필요한 경우 결과를 수정할 수 있습니다.
-* [Adobe Express를 사용하여 사본 베리에이션을 기반으로 이미지를 생성](#generate-image)할 수 있으며, 이는 Firefly의 생성형 AI 기능을 사용합니다.
+* [Adobe Express를 사용하여 사본 변형을 기반으로 이미지를 생성](#generate-image)할 수 있으며, 이는 Firefly의 생성형 AI 기능을 사용합니다.
 * 웹 사이트 또는 실험에서 사용할 콘텐츠를 선택할 수 있습니다.
 
 ## 법률 및 사용 참고 사항 {#legal-usage-note}
 
-AEM을 위한 생성형 AI 및 베리에이션 생성은 강력한 도구이지만 결과물의 사용은 **사용자**&#x200B;가 책임집니다.
+AEM을 위한 생성형 AI 및 변형 생성은 강력한 도구이지만 결과물의 사용은 **사용자**&#x200B;가 책임집니다.
 
 서비스에 대한 입력은 컨텍스트에 연결되어야 합니다. 이러한 컨텍스트는 브랜딩 자료, 웹 사이트 콘텐츠, 데이터, 데이터에 대한 스키마, 템플릿 또는 기타 신뢰할 수 있는 문서가 될 수 있습니다.
 
 사용 사례에 따라 모든 출력의 정확성을 평가해야 합니다.
 
-베리에이션 생성을 사용하기 전에 [Adobe 생성형 AI 사용자 가이드라인](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)에 동의해야 합니다.
+변형 생성을 사용하기 전에 [Adobe 생성형 AI 사용자 가이드라인](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)에 동의해야 합니다.
 
-[베리에이션 생성의 사용](#generative-action-usage)은 생성형 액션의 소비와 관련이 있습니다.
+[변형 생성의 사용](#generative-action-usage)은 생성형 액션의 소비와 관련이 있습니다.
 
 ## 개요 {#overview}
 
-베리에이션 생성을 열고 왼쪽 패널을 확장하면 다음이 표시됩니다.
+변형 생성을 열고 왼쪽 패널을 확장하면 다음이 표시됩니다.
 
-![베리에이션 생성 - 기본 패널](assets/generate-variations-main-panel.png)
+![변형 생성 - 기본 패널](assets/generate-variations-main-panel.png)
 
 * 오른쪽 패널
    * 이는 왼쪽 탐색에서 선택한 항목에 따라 달라집니다.
    * 기본적으로 **프롬프트 템플릿**&#x200B;이 표시됩니다.
 * 왼쪽 탐색
-   * **베리에이션 생성** 왼쪽에는 왼쪽 탐색 패널을 확장하거나 숨길 수 있는 옵션(샌드위치 메뉴)이 있습니다.
+   * **변형 생성** 왼쪽에는 왼쪽 탐색 패널을 확장하거나 숨길 수 있는 옵션(샌드위치 메뉴)이 있습니다.
    * **프롬프트 템플릿**:
       * 다양한 프롬프트에 대한 링크를 표시하며, 여기에는 프롬프트가 포함될 수 있습니다.
          * Adobe에서 제공하여 콘텐츠 생성에 도움을 주며 Adobe 아이콘으로 표시됩니다.
@@ -96,7 +97,7 @@ AEM을 위한 생성형 AI 및 베리에이션 생성은 강력한 도구이지�
 * IMS 조직 전체에서 사용할 수 있는 프롬프트에는 여러 개의 머리 모양 아이콘이 표시됩니다.
 * 개인 프롬프트는 특별히 플래그가 지정되지 않습니다.
 
-![베리에이션 생성 - 프롬프트 템플릿](assets/generate-variations-prompt-templates.png)
+![변형 생성 - 프롬프트 템플릿](assets/generate-variations-prompt-templates.png)
 
 ### 입력 제공 {#provide-inputs}
 
@@ -107,8 +108,8 @@ AEM을 위한 생성형 AI 및 베리에이션 생성은 강력한 도구이지�
 여러 프롬프트에 공통적으로 표시되는 몇 가지 주요 입력 필드가 있습니다(특정 필드를 항상 사용할 수 있는 것은 아닙니다).
 
 * **카운트**/**수**
-   * 한 세대에 몇 개의 콘텐츠 베리에이션을 만들 것인지 선택할 수 있습니다.
-   * 프롬프트에 따라 카운트, 베리에이션 수, 아이디어 수 등 다양한 레이블 중 하나가 있을 수 있습니다.
+   * 한 세대에 몇 개의 콘텐츠 변형을 만들 것인지 선택할 수 있습니다.
+   * 프롬프트에 따라 카운트, 변형 수, 아이디어 수 등 다양한 레이블 중 하나가 있을 수 있습니다.
 * **대상자 소스**/**타깃 대상자**
    * 특정 대상자에 대한 맞춤형 콘텐츠를 생성하는 데 도움이 됩니다.
    * Adobe는 기본 대상자를 제공합니다. 또는 추가 대상자를 지정할 수도 있습니다. [대상자](#audiences)를 참조하십시오.
@@ -116,7 +117,7 @@ AEM을 위한 생성형 AI 및 베리에이션 생성은 강력한 도구이지�
    * 관련 콘텐츠를 삽입하여 생성형 AI가 입력을 기반으로 더 나은 응답을 만드는 데 도움이 됩니다. 예를 들어 특정 페이지나 제품에 대한 웹 배너를 만드는 경우 해당 페이지/제품에 대한 정보를 포함할 수 있습니다.
 * **온도**
 Adobe 생성형 AI의 온도를 수정하는 데 사용:
-   * 온도가 높을수록 프롬프트에서 벗어나 더 많은 베리에이션, 무작위성과 창의성을 얻을 수 있습니다.
+   * 온도가 높을수록 프롬프트에서 벗어나 더 많은 변형, 무작위성과 창의성을 얻을 수 있습니다.
    * 온도가 낮을수록 결정적이며 프롬프트에 있는 온도에 더 가깝게 유지됩니다.
    * 기본적으로 온도는 1로 설정됩니다. 생성된 결과가 마음에 들지 않는 경우 다양한 온도로 실험해 볼 수 있습니다.
 * **프롬프트 편집**
@@ -126,15 +127,15 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 
 입력 필드를 작성하거나 프롬프트를 수정하면 콘텐츠를 생성하고 응답을 검토할 준비가 됩니다.
 
-생성형 AI가 생성한 응답을 보려면 **생성**&#x200B;을 선택합니다. 생성된 콘텐츠 베리에이션은 생성된 프롬프트 아래에 표시됩니다.
+생성형 AI가 생성한 응답을 보려면 **생성**&#x200B;을 선택합니다. 생성된 콘텐츠 변형은 생성된 프롬프트 아래에 표시됩니다.
 
-![베리에이션 생성 - 사본 생성](assets/generate-variations-generate-content.png)
+![변형 생성 - 사본 생성](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
->대부분의 Adobe 프롬프트 템플릿에는 베리에이션 응답에 **AI 이론적 근거**&#x200B;가 포함되어 있습니다. 이를 통해 생성형 AI가 특정 베리에이션을 생성한 이유에 대한 투명성을 확보할 수 있습니다.
+>대부분의 Adobe 프롬프트 템플릿에는 변형 응답에 **AI 이론적 근거**&#x200B;가 포함되어 있습니다. 이를 통해 생성형 AI가 특정 변형을 생성한 이유에 대한 투명성을 확보할 수 있습니다.
 
-단일 베리에이션을 선택하면 다음과 같은 작업을 사용할 수 있습니다.
+단일 변형을 선택하면 다음과 같은 작업을 사용할 수 있습니다.
 
 * **즐겨찾기**
    * 향후 사용할 수 있도록 **즐겨찾기**&#x200B;로 표시합니다([즐겨찾기](#favorites)에 표시됨).
@@ -146,7 +147,7 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 
 입력을 수정하거나 프롬프트를 표시해야 하는 경우 조정하고 다시 **생성**&#x200B;을 선택하여 새 응답 세트를 얻을 수 있습니다. 새 프롬프트와 응답은 처음 프롬프트와 응답 아래에 표시되며, 위아래로 스크롤하여 다양한 콘텐츠 세트를 볼 수 있습니다.
 
-각 베리에이션 세트 위에는 **재사용** 옵션과 함께 베리에이션을 생성한 프롬프트가 표시되어 있습니다. 입력과 함께 프롬프트를 다시 실행해야 하는 경우 **재사용**&#x200B;을 선택하여 **입력**&#x200B;에서 다시 로드합니다.
+각 변형 세트 위에는 **재사용** 옵션과 함께 변형을 생성한 프롬프트가 표시되어 있습니다. 입력과 함께 프롬프트를 다시 실행해야 하는 경우 **재사용**&#x200B;을 선택하여 **입력**&#x200B;에서 다시 로드합니다.
 
 ### 이미지 생성 {#generate-image}
 
@@ -156,9 +157,9 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 >
 >**이미지 생성**&#x200B;은 IMS 조직의 일부로 Adobe Express 권한이 있고 Admin Console에서 사용자에게 권한이 부여된 경우에만 사용할 수 있습니다.
 
-베리에이션을 선택한 다음 **이미지 생성**&#x200B;을 선택하여 [Adobe Express](https://www.adobe.com/kr/express/)에서 **텍스트를 이미지로** 직접 엽니다. 프롬프트는 선택한 변형에 따라 사전 입력되며, 해당 프롬프트에 따라 이미지가 자동으로 생성됩니다.
+변형을 선택한 다음 **이미지 생성**&#x200B;을 선택하여 [Adobe Express](https://www.adobe.com/kr/express/)에서 **텍스트를 이미지로** 직접 엽니다. 프롬프트는 선택한 변형에 따라 사전 입력되며, 해당 프롬프트에 따라 이미지가 자동으로 생성됩니다.
 
-![베리에이션 생성 - 이미지 표현](assets/generate-variations-express-images.png)
+![변형 생성 - 이미지 표현](assets/generate-variations-express-images.png)
 
 다음을 추가로 변경할 수 있습니다.
 
@@ -168,16 +169,16 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 
 추가 가능성을 위해 **더 많은 항목 살펴보기**&#x200B;를 사용할 수도 있습니다.
 
-완료되면 원하는 이미지를 선택하고 **저장**&#x200B;하여 Adobe Express를 닫습니다. 이미지가 반환되고 베리에이션 버전이 저장됩니다.
+완료되면 원하는 이미지를 선택하고 **저장**&#x200B;하여 Adobe Express를 닫습니다. 이미지가 반환되고 변형 버전이 저장됩니다.
 
-![베리에이션 생성 - 저장된 이미지 표현](assets/generate-variations-express-image-saved.png)
+![변형 생성 - 저장된 이미지 표현](assets/generate-variations-express-image-saved.png)
 
 여기에서 이미지 위에 마우스를 가져가면 다음 작업 항목이 표시됩니다.
 
 * **복사**: [다른 곳에서 사용하기 위해 이미지를 클립보드에 복사합니다.](#use-content)
 * **편집**: Adobe Express를 열어 이미지를 변경할 수 있습니다.
 * **다운로드**: 이미지를 로컬 컴퓨터에 다운로드합니다.
-* **삭제**: 베리에이션에서 이미지를 제거합니다.
+* **삭제**: 변형에서 이미지를 제거합니다.
 
 >[!NOTE]
 >
@@ -189,44 +190,44 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 
 이 작업은 복사 아이콘을 사용하여 수행됩니다.
 
-* 텍스트의 경우: 베리에이션 패널에 표시된 복사 아이콘을 사용합니다.
+* 텍스트의 경우: 변형 패널에 표시된 복사 아이콘을 사용합니다.
 * 이미지의 경우: 이미지 위에 마우스를 가져가면 복사 아이콘이 표시됩니다.
 
 클립보드에 복사한 후 웹 사이트의 콘텐츠를 작성할 때 사용할 정보를 붙여넣을 수 있습니다. [실험](https://www.aem.live/docs/experimentation)을 실행할 수도 있습니다.
 
 ## 즐겨찾기 {#favorites}
 
-콘텐츠를 검토한 후 선택한 베리에이션을 즐겨찾기에 저장할 수 있습니다.
+콘텐츠를 검토한 후 선택한 변형을 즐겨찾기에 저장할 수 있습니다.
 
 저장하면 왼쪽 탐색 창의 **즐겨찾기**&#x200B;에 표시됩니다. 즐겨찾기는 계속 유지됩니다(**삭제** 또는 브라우저 캐시를 지울 때까지).
 
-* 즐겨찾기와 베리에이션을 클립보드에 복사/붙여넣기하여 웹 사이트 콘텐츠에 사용할 수 있습니다.
+* 즐겨찾기와 변형을 클립보드에 복사/붙여넣기하여 웹 사이트 콘텐츠에 사용할 수 있습니다.
 * 즐겨찾기는 **제거**&#x200B;할 수 있습니다.
 
 ## 최근 항목 {#recents}
 
-이 섹션에서는 최근 활동에 대한 링크를 제공합니다. **최근** 항목은 **생성**&#x200B;을 선택하면 추가됩니다. 프롬프트 이름과 타임스탬프가 있습니다. 링크를 선택하면 프롬프트가 로드되고 입력 필드가 적절히 채워지며 생성된 베리에이션이 표시됩니다.
+이 섹션에서는 최근 활동에 대한 링크를 제공합니다. **최근** 항목은 **생성**&#x200B;을 선택하면 추가됩니다. 프롬프트 이름과 타임스탬프가 있습니다. 링크를 선택하면 프롬프트가 로드되고 입력 필드가 적절히 채워지며 생성된 변형이 표시됩니다.
 
 ## 프롬프트 편집 {#edit-the-prompt}
 
-기본 프롬프트를 편집할 수 있습니다. 다음을 고려해 볼 수 있습니다:
+기본 프롬프트를 편집할 수 있습니다. 다음을 고려해 볼 수 있습니다.
 
 * 생성된 결과에 추가적인 세분화가 필요한 경우
 * 나중에 사용할 수 있도록 프롬프트를 수정하고 [저장](#save-prompt)하려는 경우
 
 **프롬프트 편집**&#x200B;을 선택합니다.
 
-![베리에이션 생성 - 프롬프트 편집](assets/generate-variations-prompt-edit.png)
+![변형 생성 - 프롬프트 편집](assets/generate-variations-prompt-edit.png)
 
 이렇게 하면 프롬프트 편집기가 열리고 여기서 변경 사항을 적용할 수 있습니다.
 
-![베리에이션 생성 - 프롬프트 편집기](assets/generate-variations-prompt-editor.png)
+![변형 생성 - 프롬프트 편집기](assets/generate-variations-prompt-editor.png)
 
 ### 프롬프트 입력 추가 {#add-prompt-inputs}
 
 프롬프트를 만들거나 편집할 때 입력 필드를 추가할 수 있습니다. 입력 필드는 프롬프트의 변수 역할을 하며 다양한 시나리오에서 동일한 프롬프트를 사용할 수 있도록 유연성을 부여합니다. 이 기능을 사용하면 전체 프롬프트를 작성할 필요 없이 프롬프트의 특정 요소를 정의할 수 있습니다.
 
-* 필드는 자리표시자 이름을 둘러싼 이중 중괄호 `{{ }}`로 정의됩니다.
+* 필드는 플레이스홀더 이름을 둘러싼 이중 중괄호 `{{ }}`로 정의됩니다.
 예: `{{tone_of_voice}}`
 
   >[!NOTE]
@@ -252,7 +253,7 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 }}
 ```
 
-![베리에이션 생성 - 어조를 사용해 편집된 프롬프트](assets/generate-variations-prompt-edited.png)
+![변형 생성 - 어조를 사용해 편집된 프롬프트](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -294,9 +295,9 @@ UI와 문서 기반 작성 흐름에 복사하여 붙여넣을 때 서식을 모
 다음 이미지는 이를 통해 얻을 수 있는 이점을 보여 줍니다.
 
 * 첫 번째 예시에는 `Title`과 `Description`이 결합되어 있습니다.
-* 반면에, 두 번째 예시에는 별도로 형식이 지정되어 있으며, 이는 프롬프트에 JSON 요청을 포함하는 것으로 수행되었습니다.
+* 반면에 두 번째 예시에는 별도로 형식이 지정되어 있으며, 이는 프롬프트에 JSON 요청을 포함하는 것으로 수행되었습니다.
 
-![베리에이션 생성 - 제목과 설명이 별도로 형식이 지정된 프롬프트](assets/generate-variations-prompt-formatted.png)
+![변형 생성 - 제목과 설명이 별도로 형식이 지정된 프롬프트](assets/generate-variations-prompt-formatted.png)
 
 ## 프롬프트 저장 {#save-prompt}
 
@@ -306,7 +307,7 @@ UI와 문서 기반 작성 흐름에 복사하여 붙여넣을 때 서식을 모
 
 선택하면 **프롬프트 저장** 대화 상자가 열립니다.
 
-![베리에이션 생성 - 프롬프트 저장 대화 상자](assets/generate-variations-prompt-save-dialog.png)
+![변형 생성 - 프롬프트 저장 대화 상자](assets/generate-variations-prompt-save-dialog.png)
 
 1. 고유한 **프롬프트 이름**&#x200B;을 추가합니다. **프롬프트 템플릿** 내에서 프롬프트를 식별하는 데 사용됩니다.
    1. 고유한 새 이름을 사용하면 새 프롬프트 템플릿이 생성됩니다.
@@ -339,7 +340,7 @@ UI와 문서 기반 작성 흐름에 복사하여 붙여넣을 때 서식을 모
 * [Adobe Target](#audience-adobe-target)
 * [CSV 파일](#audience-csv-file)
 
-![베리에이션 생성 - 대상자 소스](assets/generate-variations-audiences.png)
+![변형 생성 - 대상자 소스](assets/generate-variations-audiences.png)
 
 ### 대상자 - Adobe Target {#audience-adobe-target}
 
@@ -356,7 +357,7 @@ UI와 문서 기반 작성 흐름에 복사하여 붙여넣을 때 서식을 모
    >
    >**Adobe Target** 대상자를 사용하려면 설명 필드를 입력해야 합니다. 그렇게 하지 않으면 해당 대상자는 드롭다운 목록에서 사용할 수 없는 것으로 표시됩니다. 설명을 추가하려면 Target으로 이동하여 [대상자 설명을 추가합니다](https://experienceleague.adobe.com/ko/docs/target-learn/tutorials/audiences/create-audiences).
 
-   ![베리에이션 생성 - 대상자 소스 - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
+   ![변형 생성 - 대상자 소스 - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
 #### Adobe Target 대상자 추가 {#add-adobe-target-audience}
 
@@ -371,7 +372,7 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 1. **CSV 파일**&#x200B;을 선택합니다.
 1. 그런 다음 제공된 목록에서 필요한 **타깃 대상자**&#x200B;를 선택합니다.
 
-   ![베리에이션 생성 - 대상자 소스 - CSV 파일](assets/generate-variations-audiences-csv-file.png)
+   ![변형 생성 - 대상자 소스 - CSV 파일](assets/generate-variations-audiences-csv-file.png)
 
 #### 대상자 CSV 파일 추가 {#add-audience-csv-file}
 
@@ -381,7 +382,7 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 >
 >공유 플랫폼에는 파일에 공개적으로 액세스할 수 있는 기능이 *반드시* 있어야 합니다.
 
-예를 들어 Google Drive의 파일에서 대상자를 추가하려면 다음 작업을 수행합니다.
+예를 들어 Google Drive의 파일에서 대상자를 추가하려면 다음 작업을 수행하십시오.
 
 1. Google Drive에서 두 개의 열이 있는 스프레드시트 파일을 만듭니다.
    1. 첫 번째 열은 드롭다운에 표시됩니다.
@@ -389,7 +390,7 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 1. 파일을 게시합니다.
    1. 파일 -> 공유 -> 웹에 게시 -> CSV
 1. 게시된 파일에 URL을 복사합니다.
-1. 베리에이션 생성으로 이동합니다.
+1. 변형 생성으로 이동합니다.
 1. 프롬프트 편집기를 엽니다.
 1. 메타데이터에서 **Adobe Target** 대상자를 찾아 URL을 바꿉니다.
 
@@ -399,13 +400,13 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 
    예:
 
-   ![베리에이션 생성 - 대상자 CSV 파일 추가](assets/generate-variations-audiences-csv-save.png)
+   ![변형 생성 - 대상자 CSV 파일 추가](assets/generate-variations-audiences-csv-save.png)
 
 ## 생성형 액션 사용량 {#generative-action-usage}
 
 사용량 관리는 수행된 액션에 따라 달라집니다.
 
-* 베리에이션 생성
+* 변형 생성
 
   하나의 카피 변형 생성은 하나의 생성형 액션과 동일합니다. 고객은 AEM 라이선스와 함께 제공되는 일정 수의 생성형 액션을 보유하고 있습니다. 기본 할당량을 모두 사용하면 추가 액션을 구매할 수 있습니다.
 
@@ -417,19 +418,19 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 
   이미지 생성 사용량은 Adobe Express 할당량 및 [생성 크레딧](https://helpx.adobe.com/kr/firefly/using/generative-credits-faq.html)을 통해 처리됩니다.
 
-## 베리에이션 생성 액세스 {#access-generate-variations}
+## 변형 생성 액세스 {#access-generate-variations}
 
-전제 조건을 충족하면 AEM as a Cloud Service 또는 Edge Delivery Services의 Sidekick에서 베리에이션 생성에 액세스할 수 있습니다.
+사전 요구 사항을 충족하면 AEM as a Cloud Service 또는 Edge Delivery Services의 Sidekick에서 변형 생성에 액세스할 수 있습니다.
 
-### 전제 조건 액세스 {#access-prerequisites}
+### 액세스 사전 요구 사항 {#access-prerequisites}
 
-베리에이션 생성을 사용하려면 다음 전제 조건이 충족되었는지 확인해야 합니다.
+변형 생성을 사용하려면 다음 사전 요구 사항이 충족되었는지 확인해야 합니다.
 
 * [Edge Delivery Services가 포함된 Experience Manager as a Cloud Service 액세스](#access-to-aemaacs-with-edge-delivery-services)
 
 #### Edge Delivery Services가 포함된 Experience Manager as a Cloud Service 액세스{#access-to-aemaacs-with-edge-delivery-services}
 
-베리에이션 생성에 액세스해야 하는 사용자는 Edge Delivery Services가 포함된 Experience Manager as a Cloud Service 환경에 권한이 있어야 합니다.
+변형 생성에 액세스해야 하는 사용자는 Edge Delivery Services가 포함된 Experience Manager as a Cloud Service 환경에 권한이 있어야 합니다.
 
 >[!NOTE]
 >
@@ -441,17 +442,17 @@ Adobe는 다양한 대상자를 사용할 수 있도록 제공합니다.
 
 ### AEM as a Cloud Service에서 액세스 {#access-aemaacs}
 
-AEM as a Cloud Service의 [탐색 패널](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)에서 베리에이션 생성에 액세스할 수 있습니다.
+AEM as a Cloud Service의 [탐색 패널](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)에서 변형 생성에 액세스할 수 있습니다.
 
 ![탐색 패널](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
 ### AEM Sidekick에서 액세스 {#access-aem-sidekick}
 
-Edge Delivery Services의 Sidekick에서 베리에이션 생성에 액세스하려면 몇 가지 구성이 필요합니다.
+Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇 가지 구성이 필요합니다.
 
 1. Sidekick을 설치하고 구성하는 방법은 [AEM Sidekick 설치](https://www.aem.live/docs/sidekick-extension) 문서를 참조하십시오.
 
-1. (Edge Delivery Services의) Sidekick에서 베리에이션 생성을 사용하려면 Edge Delivery Services 프로젝트에 다음 구성을 포함시킵니다.
+1. (Edge Delivery Services의) Sidekick에서 변형 생성을 사용하려면 Edge Delivery Services 프로젝트에 다음 구성을 포함시킵니다.
 
    * `tools/sidekick/config.json`
 
@@ -479,15 +480,15 @@ Edge Delivery Services의 Sidekick에서 베리에이션 생성에 액세스하�
 
 1. 그런 다음 사용자가 [Edge Delivery Services가 포함된 Experience Manager as a Cloud Service에 액세스](#access-to-aemaacs-with-edge-delivery-services)할 수 있는지 확인해야 할 수도 있습니다.
 
-1. 그런 다음 Sidekick 도구 모음에서 **베리에이션 생성**&#x200B;을 선택하여 이 기능에 액세스할 수 있습니다.
+1. 그런 다음 Sidekick 도구 모음에서 **변형 생성**&#x200B;을 선택하여 이 기능에 액세스할 수 있습니다.
 
-   ![베리에이션 생성 - AEM Sidekick에서 액세스](assets/generate-variations-sidekick-toolbar.png)
+   ![변형 생성 - AEM Sidekick에서 액세스](assets/generate-variations-sidekick-toolbar.png)
 
 ## 추가 정보 {#further-information}
 
 자세한 내용은 다음에서 확인할 수 있습니다.
 
-* [GitHub에서 생성형 AI 베리에이션 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [GitHub에서 생성형 AI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
 
 ## FAQ {#faqs}
@@ -525,7 +526,7 @@ Edge Delivery Services의 Sidekick에서 베리에이션 생성에 액세스하�
 **제가 받는 응답이 찾고자 하는 내용과 다릅니다. 이를 개선하려면 어떻게 해야 합니까?**
 
 1. 고급 설정에서 온도를 변경해 보십시오.
-   1. 온도가 높을수록 프롬프트에서 벗어나 더 많은 베리에이션, 무작위성과 창의성을 얻을 수 있습니다.
+   1. 온도가 높을수록 프롬프트에서 벗어나 더 많은 변형, 무작위성과 창의성을 얻을 수 있습니다.
    1. 온도가 낮을수록 결정론적이며 프롬프트에 있는 내용을 준수합니다.
 1. 편집 모드에서 실제 프롬프트를 열고 프롬프트를 검토합니다. 어조 및 기타 중요한 기준을 설명하는 요구 사항 섹션에 특히 주의를 기울이십시오.
 
@@ -552,11 +553,11 @@ Edge Delivery Services의 Sidekick에서 베리에이션 생성에 액세스하�
 
 v2.0.0 릴리스로 이동하면 사용자 정의 프롬프트 템플릿이 손상되어 사용할 수 없게 됩니다.
 
-이를 복구하려면 다음을 수행하십시오.
+이를 복구하려면 다음 작업을 수행하십시오.
 
 1. Sharepoint의 prompt-template 폴더로 이동합니다.
 1. 프롬프트를 복사합니다.
-1. 베리에이션 생성 애플리케이션을 엽니다.
+1. 변형 생성 애플리케이션을 엽니다.
 1. 새 프롬프트 카드를 선택합니다.
 1. 프롬프트를 붙여넣습니다.
 1. 프롬프트가 작동하는지 확인합니다.
@@ -564,4 +565,4 @@ v2.0.0 릴리스로 이동하면 사용자 정의 프롬프트 템플릿이 손�
 
 ## 릴리스 기록 {#release-history}
 
-현재 및 이전 릴리스에 대한 자세한 내용은 [베리에이션 생성에 대한 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)를 참조하십시오.
+현재 및 이전 릴리스에 대한 자세한 내용은 [변형 생성에 대한 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)를 참조하십시오.
