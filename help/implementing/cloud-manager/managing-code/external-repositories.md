@@ -4,10 +4,10 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,6 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 1. 외부 저장소에 액세스 토큰을 입력합니다.
 1. 개인 GitHub 저장소의 소유권을 확인합니다.
 1. 외부 저장소에 [웹후크를 구성](#configure-webhook)합니다.
-
 
 
 ## 외부 저장소 추가 {#add-ext-repo}
@@ -212,90 +211,5 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 * Webhook URL에 유효한 API 키가 포함되어 있는지 확인합니다.
 * Git 공급업체 설정에 웹후크 이벤트가 올바르게 구성되어 있는지 확인합니다.
 * PR 유효성 검사 또는 파이프라인 트리거가 작동하지 않는 경우 Cloud Manager 및 Git 공급업체 모두에서 웹후크 비밀이 최신 상태인지 확인하십시오.
-
-
-## 외부 Git 공급자에서 신속한 개발 환경에 배포 {#deploy-to-rde}
-
->[!NOTE]
->
->이 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다. 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)(으)로 전자 메일을 보내세요. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
-
-Cloud Manager에서는 [자체 Git(BYOG) 구성 가져오기](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 사용할 때 외부 Git 공급자에서 직접 RDE(Rapid Development Environment)에 코드를 배포할 수 있습니다.
-
-외부 Git 저장소에서 RDE로 배포하려면 다음 조건을 충족해야 합니다.
-
-* Cloud Manager과 통합된 외부 Git 저장소 사용(BYOG 설정).
-* 프로젝트에 하나 이상의 RDE 환경이 프로비저닝되어 있어야 합니다.
-* `github.com`을(를) 사용하는 경우 업데이트된 GitHub 앱 설치를 검토하고 수락하여 필요한 새 권한을 부여해야 합니다.
-
-**사용 정보**
-
-* RDE에 대한 배포는 현재 AEM 콘텐츠 및 Dispatcher 패키지에 대해서만 지원됩니다.
-* 다른 패키지 유형(예: 전체 AEM 애플리케이션 패키지)의 배포는 아직 지원되지 않습니다.
-* 현재 주석을 사용하여 RDE 환경을 재설정하는 기능은 지원되지 않습니다. 고객은 [여기](/help/implementing/developing/introduction/rapid-development-environments.md)에 설명된 대로 기존 AIO CLI 명령을 사용해야 합니다.
-
-**작동 방식**
-
-1. **코드 품질 유효성 검사 메시지.**
-
-   끌어오기 요청(PR)이 코드 품질 파이프라인 실행을 트리거할 때 유효성 검사 결과는 배포가 RDE 환경으로 진행될 수 있는지 여부를 나타냅니다.
-
-   GitHub Enterprise의 특징:
-   ![GitHub Enterprise의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   GitLab의 특징:
-   ![GitLab의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   Bitbucket의 모양:
-   ![Bitbucket의 코드 품질 유효성 검사 메시지](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **댓글을 사용하여 배포를 트리거합니다.**
-
-   배포를 시작하려면 `deploy on rde-environment-<envName>` 형식으로 PR에 주석을 추가하십시오.
-
-   ![댓글을 사용하여 배포 트리거](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   `<envName>`은(는) 기존 RDE 환경의 이름과 일치해야 합니다. 이름을 찾을 수 없으면 환경이 유효하지 않음을 나타내는 주석이 반환됩니다.
-
-   환경 상태가 준비되지 않은 경우 다음과 같은 댓글이 표시됩니다.
-
-   ![환경을 배포할 준비가 되지 않았습니다](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **환경 검사 및 아티팩트 배포.**
-
-   RDE가 준비되면 Cloud Manager은 PR에 새 검사를 게시합니다.
-
-   GitHub Enterprise의 특징:
-
-   ![GitHub의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   GitLab의 특징:
-
-   ![GitLab의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   Bitbucket의 모양:
-
-   ![Bitbucket의 환경 상태](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **배포 완료 메시지.**
-
-   배포가 완료되면 Cloud Manager은 대상 환경에 배포된 아티팩트를 요약하는 성공 메시지를 게시합니다.
-
-   GitHub Enterprise의 특징:
-
-   ![GitHub의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   GitLab의 특징:
-
-   ![GitLab의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   Bitbucket의 모양:
-
-   ![Bitbucket의 환경 배포 상태](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 

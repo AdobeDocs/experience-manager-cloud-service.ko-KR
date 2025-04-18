@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.4
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 60%
+source-wordcount: '614'
+ht-degree: 48%
 
 ---
 
@@ -62,16 +62,17 @@ Cloud Manager의 조기 채택 프로그램에 참여하여 일반 릴리스 전
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
-### AEM 홈 {#aem-home}
+<!--
+### AEM Home {#aem-home}
 
-AEM 홈은 Adobe Experience Manager 내에서 콘텐츠, 자산, 사이트를 관리하기 위한 중앙 집중식의 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 AEM 홈을 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. AEM 홈은 명확하고 개인화된 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 보장하며, 모든 AEM 기능에서 간소화되고 효과적인 경험을 지원합니다.
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-얼리 어답터에게 제공되는 AEM 홈은 워크플로 개선, 목표 우선순위 지정, 결과 제공에 중점을 둔 최적화된 환경을 제공합니다. 동참해 주십시오. 피드백을 제공하여 AEM 홈의 미래를 결정하고 전체 AEM 커뮤니티의 가치를 높이는 데 영향을 미칠 수 있습니다.
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)에 이메일을 보내 주십시오. 다음과 같은 정보를 포함해야 합니다.
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
-* 귀하의 프로필에 가장 적합한 역할: 콘텐츠 작성자, 개발자, 비즈니스 소유자, 관리자 또는 기타(설명을 입력하십시오).
-* 기본 AEM 액세스 표면: AEM 사이트, AEM Sites, AEM Assets, AEM Forms, Cloud Manager 또는 기타(설명을 입력하십시오).
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
 
 ## 버그 수정
 

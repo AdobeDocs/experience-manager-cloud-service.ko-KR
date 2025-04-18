@@ -1,5 +1,5 @@
 ---
-title: AEM Launchpad &ndash; 얼리 어답터 정보
+title: AEM Launchpad 정보
 description: Adobe Experience Manager Launchpad 페이지에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '341'
+ht-degree: 9%
 
 ---
 
-# AEM Launchpad 정보 - 얼리 어답터 {#aem-launchpad}
+# AEM Launchpad 정보 {#aem-launchpad}
 
 AEM Launchpad에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 AEM Launchpad를 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. AEM Launchpad는 사용자 중심의 명확한 레이아웃을 통해 필수 도구에 빠르게 액세스하여 모든 AEM 기능에 걸쳐 간소화되고 효과적인 경험을 제공합니다.
 
-얼리어답터가 사용할 수 있는 AEM Launchpad는 워크플로 개선, 목표 우선 순위 지정 및 결과 전달에 초점을 맞춘 최적화된 경험을 제공합니다. 옵트인을 사용하면 향후 상태를 형성하고 전체 AEM 커뮤니티에 대한 가치를 높이는 데 도움이 되는 피드백을 제공하여 AEM Launchpad의 개발에 영향을 줄 수 있습니다.
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM Launchpad 위로 닫기 {#aem-launchpad-about}
 
