@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 콘텐츠 참조는 이 작업을 수행하고 이를 통해 다른 콘텐츠를 참조할 수 있습니다. 이러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
-다음 두 가지 유형이 있습니다.
+다음의 두 가지 유형이 있습니다.
 
 * **콘텐츠 참조**
-   * 참조된 리소스의 경로를 지정합니다.
-* **콘텐츠 참조(UUID)**
-   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
+   * 참조된 리소스에 대한 경로를 지정
+* **콘텐츠 참조 (UUID)**
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
 
 ## 자산/미디어 참조 {#assets-media-references}
 
@@ -77,18 +77,18 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
    * 직원 - 개인
       * 개인 상 - 상
 
-시작에만 적용되는 과정입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
+이는 시작일 뿐입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
 
 사용자(작성자)와 Headless 애플리케이션 모두가 이해하므로 조각 참조를 사용하여 해당 상호 관계를 나타낼 수 있습니다.
 
-작성자는 해당 관계(콘텐츠 조각 모델 생성 시 콘텐츠 설계자가 수행하는 작업)를 정의할 책임이 없지만, 참조를 인식하고 편집하는 방법에 대해 알아야 합니다.
+작성자는 해당 관계(콘텐츠 조각 모델 생성 시 콘텐츠 설계자가 수행하는 작업)를 정의할 책임이 없지만 참조를 인식하고 편집하는 방법에 대해 알아야 합니다.
 
-다음 두 가지 종류가 있습니다.
+아래와 같은 두 가지 유형이 있습니다.
 
 * **조각 참조**
-   * 참조된 리소스의 경로를 지정합니다.
-* **조각 참조(UUID)**
-   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
+   * 참조된 리소스에 대한 경로를 지정
+* **조각 참조 (UUID)**
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")

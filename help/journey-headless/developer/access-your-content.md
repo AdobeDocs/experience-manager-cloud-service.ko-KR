@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1320'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 **조각 참조** 및 **조각 참조 UUID**:
 
-* 콘텐츠 조각 모델을 정의할 때 사용할 수 있는 특정 데이터 유형입니다.
+* 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
 * 구조화된 데이터를 만든 다음 검색할 수 있습니다.
 

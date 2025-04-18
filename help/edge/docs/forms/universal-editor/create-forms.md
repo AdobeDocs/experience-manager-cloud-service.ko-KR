@@ -7,23 +7,23 @@ hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 범용 편집기를 사용하여 적응형 Forms 만들기
+# 범용 편집기를 사용하여 적응형 양식 생성
 
 <span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
-범용 편집기는 양식을 편집할 수 있는 (WYSIWYG) 환경을 제공하는 다용도 비주얼 편집기입니다. 텍스트 상자, 라디오 단추 및 확인란과 같은 적응형 Forms 구성 요소를 사용하여 끌어서 놓기 기능을 사용하여 반응형 및 사용자 친화적 양식을 간편하게 만들 수 있습니다.
+범용 편집기는 WYSIWYG(What You See Is What You Get) 방식으로 양식을 편집할 수 있는 다용도 비주얼 편집기입니다. 텍스트 상자, 라디오 버튼, 확인란과 같은 사용 가능한 적응형 양식 구성 요소를 사용하여 드래그 앤 드롭 기능으로 반응형이면서 사용자 친화적인 양식을 쉽게 만들 수 있습니다.
 
-AEM은 범용 편집기를 사용하여 데이터를 캡처하고 저장할 Edge Delivery Services Forms을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 사이트 프로젝트를 만들거나](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
+AEM은 범용 편집기를 사용하여 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge Delivery Services 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 사이트 프로젝트를 만들거나](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
 
 ![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png)
 
-이 문서에서는 양식 만들기 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 유니버설 편집기로 독립 실행형 양식을 만들고 작성하는 프로세스를 안내합니다.
+이 문서는 양식 생성 마법사에서 Edge Delivery Services 기반 템플릿을 선택하여 범용 편집기를 통해 독립 실행형 양식을 만들고 작성하는 과정을 안내합니다.
 
 ## 사전 요구 사항
 
@@ -34,7 +34,7 @@ AEM은 범용 편집기를 사용하여 데이터를 캡처하고 저장할 Edge
 
 ## 범용 편집기에서 양식 작업하기
 
-범용 편집기를 사용하면 반응형 및 대화형 독립 실행형 양식을 쉽게 만들 수 있습니다. 범용 편집기에서 양식에 대해 다음과 같은 작업을 수행할 수 있습니다.
+범용 편집기를 사용하면 반응형 및 대화형인 독립 양식을 쉽게 만들 수 있습니다. 범용 편집기에서 양식에 대해 다음과 같은 작업을 수행할 수 있습니다.
 * [양식 만들기](#create-a-form)
 * [양식 작성](#author-a-form)
 * [양식 게시](#publish-a-form)
@@ -95,7 +95,7 @@ AEM은 범용 편집기를 사용하여 데이터를 캡처하고 저장할 Edge
 
    ![문의 양식](/help/edge/assets/contact-us.png)
 
-   이제 [양식의 제출 액션을 구성하고 사용자 지정할 수 있습니다](/help/edge/docs/forms/universal-editor/submit-action.md).
+   이제 [양식 제출 작업을 구성하고 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)할 수 있습니다.
 
 
 <!--

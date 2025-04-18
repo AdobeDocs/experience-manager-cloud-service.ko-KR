@@ -4,9 +4,9 @@ description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 �
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ DAM 사용자는 [승인된 자산](approve-assets.md#approve-assets)에 대한 
 
 +++**비디오에 지원되는 파일 크기는 얼마입니까?**
 
-OpenAPI 기능이 있는 Dynamic Media는 긴 형식의 비디오를 지원합니다. 비디오는 최대 50GB 및 2시간을 지원할 수 있습니다.
+OpenAPI 기능이 포함된 Dynamic Media는 긴 양식의 비디오를 지원합니다. 최대 50GB와 2시간의 비디오를 지원할 수 있습니다.
 
 +++
 

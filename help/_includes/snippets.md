@@ -1,13 +1,13 @@
 ---
 source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1497'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
 
-## Headless 체험판(프로그램이 종료됨) {#headless-trials-promotion}
+## Headless 체험판 (프로그램 종료됨) {#headless-trials-promotion}
 
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
