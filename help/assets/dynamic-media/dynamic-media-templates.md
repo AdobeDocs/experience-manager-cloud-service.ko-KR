@@ -4,9 +4,9 @@ description: WYSIWYG 템플릿 편집기를 사용하여  [!DNL Dynamic Media] �
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3222'
 ht-degree: 1%
 
 ---
@@ -88,8 +88,8 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 [!DNL Dynamic Media] 템플릿을 만들려면 다음 단계를 수행하십시오.
 
 1. [!DNL Assets View]&#x200B;(으)로 이동한 다음 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**에서 [폴더를 만듭니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view). ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;의 폴더 트리가 **[!UICONTROL Dynamic Media Assets]**&#x200B;에서 복제됩니다. 이 [!UICONTROL Dynamic Media Assets] 폴더에 [!DNL Dynamic Media] 템플릿을 저장합니다.
-1. 템플릿을 만드는 데 사용하려면 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**및 [이미지를 업로드하고 [!DNL AEM] 및 [!DNL Dynamic Media] 동시에](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)게시를 선택하십시오. 템플릿을 만든 후 템플릿의 게재 URL을 생성하려면 이미지를 게시해야 합니다. 이 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
-1. [이러한 에셋 업로드 및 게시 단계를 실행](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)하여 글꼴 파일을 업로드하고 동시에 AEM 및 Dynamic Media에 게시하여 템플릿을 만드는 데 사용합니다. [!UICONTROL Adobe Sans F2]은 텍스트 레이어에서 사용할 수 있는 유일한 기본 글꼴입니다. [지원되는 글꼴 파일 형식은 AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)입니다. 템플릿을 만드는 데 기존 글꼴을 사용하려면 [재처리](/help/assets/reprocessing-assets-view.md)하십시오([!DNL Assets View] 홈 페이지에서 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**을 클릭하고, 글꼴 파일 위치로 이동하여 한 번에 하나씩 글꼴 파일을 선택하고 ![재처리](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 재처리]**&#x200B;를 클릭하십시오). 글꼴에 대한 자세한 내용은 [글꼴](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.
+1. 템플릿을 만드는 데 사용하려면 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**및 [이미지를 업로드하고 [!DNL AEM] 및 [!DNL Dynamic Media] 동시에](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)게시를 선택하십시오. 템플릿을 만든 후 템플릿의 게재 URL을 생성하려면 이미지를 게시해야 합니다. 게재 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
+1. [이러한 에셋 업로드 및 게시 단계를 실행](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)하여 글꼴 파일을 업로드하고 AEM 및 Dynamic Media에 동시에 게시하여 템플릿을 만드는 데 사용합니다. [!UICONTROL Adobe Sans F2]은 텍스트 레이어에서 사용할 수 있는 유일한 기본 글꼴입니다. [지원되는 글꼴 파일 형식은 AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)입니다. 템플릿을 만드는 데 기존 글꼴을 사용하려면 [재처리](/help/assets/reprocessing-assets-view.md)하십시오([!DNL Assets View] 홈 페이지에서 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**을 클릭하고, 글꼴 파일 위치로 이동하여 한 번에 하나씩 글꼴 파일을 선택하고 ![재처리](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 재처리]**&#x200B;를 클릭하십시오). 글꼴에 대한 자세한 내용은 [글꼴](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.
 1. [빈 캔버스 만들기](#create-a-canvas)
 1. [캔버스에 이미지 추가](#add-images-to-the-canvas)
 1. [캔버스에 텍스트 레이어 추가](#add-text-to-the-canvas)
@@ -159,7 +159,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 1. [속성] 패널에서 **[!UICONTROL 스마트 텍스트 크기 조정]**을 선택하여 지정된 영역에 맞게 텍스트 길이 및 글꼴 크기를 자동으로 조정합니다.
    ![최고의 사용자 지정 배너](/help/assets/assets/add-text-layer.png)
 
-레이어를 위치 변경, 크기 조정, 회전 또는 삭제하려면 [**[!UICONTROL 속성 패널]**](#reposition-resize-delete-a-layer)을 참조하세요. 패널의 **[!UICONTROL 텍스트]** 섹션 아래에 있는 각 필드의 값을 변경하여 텍스트 서식을 필요한 글꼴, 크기, 색상, 스타일, 정렬(레이어)로 지정합니다. **[!UICONTROL 글꼴 모음]** 필드에는 재처리된 기존 글꼴과 새로 업로드되고 게시된 글꼴이 표시됩니다. 자세한 내용은 위의 [만들기 [!DNL Dynamic Media] 템플릿](#how-to-create-dynamic-media-template) 섹션에서 3단계 를 참조하십시오.
+레이어를 위치 변경, 크기 조정, 회전 또는 삭제하려면 [**[!UICONTROL 속성 패널]**](#reposition-resize-delete-a-layer)을 참조하세요. 패널의 **[!UICONTROL 텍스트]** 섹션 아래에 있는 각 필드의 값을 변경하여 텍스트 서식을 필요한 글꼴, 크기, 색상, 스타일, 정렬(레이어)로 지정합니다. **[!UICONTROL 글꼴 모음]** 필드에는 [!UICONTROL Adobe Sans F2] 기본 글꼴, 다시 처리된 기존 글꼴 및 새로 업로드되고 게시된 글꼴이 표시됩니다. 자세한 내용은 위의 [만들기 [!DNL Dynamic Media] 템플릿](#how-to-create-dynamic-media-template) 섹션에서 3단계 를 참조하십시오.
 
 ### 레이어 편집 또는 삭제 {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ URL에서 매개 변수 값을 업데이트하여 URL에서 텍스트, 글꼴, �
    ![즉시 콘텐츠 만들기](/help/assets/assets/dm-templates-publish-status.png)
 **[!UICONTROL 모든 매개 변수 포함]**을 전환하여 표시된 모든 매개 변수 값을 편집하고 템플릿 미리 보기에서 업데이트를 볼 수도 있습니다.
    <br>
-1. 미리 보기 페이지에 템플릿을 게시하려면 **[!UICONTROL 게시]**&#x200B;를 클릭하고 게시를 확인합니다. **[!UICONTROL 게시 완료]** 메시지가 표시되고 게시 상태가 **[!UICONTROL 게시됨]**(으)로 업데이트됩니다.
+1. 미리 보기 페이지에서 템플릿을 게시하려면 **[!UICONTROL 게시]**&#x200B;를 클릭하고 게시를 확인합니다. **[!UICONTROL 게시 완료]** 메시지가 표시되고 게시 상태가 **[!UICONTROL 게시됨]**(으)로 업데이트됩니다.
 
->[!NOTE]
->
->템플릿을 게시하려면 먼저 템플릿 이미지를 게시해야 합니다.
+   >[!NOTE]
+   >
+   >템플릿을 게시하려면 먼저 템플릿 이미지를 게시해야 합니다.
 
 ### 게재 URL 복사
 
 **[!UICONTROL 미리 보기]** 페이지에서 선택한 매개 변수가 템플릿 URL의 URL 매개 변수가 됩니다.
 
-미리보기에 표시된 게시된 템플릿의 URL을 복사하려면 다음을 수행하십시오.
+템플릿의 이미지가 AEM 및 Dynamic Media에 게시되어 게시된 템플릿의 게재 URL이 생성되는지 확인합니다.
+
+다음 단계를 실행하여 템플릿의 게재 URL을 복사합니다.
 
 1. **[!UICONTROL URL 복사]**&#x200B;를 클릭합니다. **[!UICONTROL URL 복사]** 대화 상자가 표시됩니다. 표시된 URL을 선택하고 복사합니다. URL의 첫 번째 매개 변수는 물음표 **([!UICONTROL ) 뒤에 시작됩니다.])** 및 키-값 쌍이 **[!UICONTROL $]**(으)로 시작되고 **[!UICONTROL &amp;]**(으)로 끝납니다. 키와 값이 등호 **([!UICONTROL =])**(으)로 구분됩니다. 왼쪽에는 키가 있고 오른쪽에는 값이 있습니다.
 1. 이 URL을 브라우저 탭에 붙여넣고 라이브 템플릿을 확인합니다. **미리 보기 및 게시** 섹션의 [2단계](#preview-and-publish-template-and-copy-template-deliver-url) 및 단계에 표시된 대로 URL에서 필요한 매개 변수의 값(키 값)을 직접 업데이트하여 실시간으로 템플릿을 사용자 지정하십시오.
