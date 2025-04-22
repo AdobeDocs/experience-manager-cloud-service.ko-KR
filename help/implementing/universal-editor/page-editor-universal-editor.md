@@ -1,19 +1,19 @@
 ---
 title: 페이지 편집기 및 유니버설 편집기
-description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 편집기는 새로운 프로젝트에 새로운 가능성을 제공합니다.
+description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 편집기는 새로운 프로젝트에 흥미로운 가능성을 제공합니다.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
-
 # 페이지 편집기 및 유니버설 편집기 {#page-editor-universal-editor}
 
-페이지 편집기는 Adobe에서 계속 지원되지만, 범용 편집기는 새로운 프로젝트에 새로운 가능성을 제공합니다.
+페이지 편집기는 Adobe에서 계속 지원되지만, 범용 편집기는 새로운 프로젝트에 흥미로운 가능성을 제공합니다.
 
 ## 배경 {#background}
 
@@ -56,7 +56,7 @@ Adobe은 최신 Javascript 기반 개발 방식을 수용하는 간소화된 편
 |  | 페이지 편집기 | 메모 | 범용 편집기 | 메모 |
 |---|---|---|---|---|
 | 페이지 템플릿 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 범용 편집기는 사용된 템플릿 시스템에 대해 불가지론자적 태도를 갖습니다. 그러나 최신 프론트엔드 도구를 사용하면 개발자가 코드에서 직접 템플릿 논리를 정의하고 유지할 수 있으므로 일반적인 구현 패턴은 개발자가 정의한 템플릿을 선호합니다. |
-| WYSIWYG 편집 | [!BADGE 사용 가능]{type=Positive} 페이지 제한 |  | [!BADGE 사용 가능]{type=Positive} | 지원 페이지 및 컨텐츠 조각 |
+| WYSIWYG 편집 | [!BADGE 사용 가능]{type=Positive} | 페이지로 제한 | [!BADGE 사용 가능]{type=Positive} | 지원 페이지 및 컨텐츠 조각 |
 | [변형 생성](/help/generative-ai/generate-variations.md) | [!BADGE 사용할 수 없음]{type=Negative} |  | [!BADGE 사용 가능]{type=Positive} | [확장으로 사용 가능](/help/implementing/universal-editor/extending.md) |
 | 새 블록 삽입 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} |  |
 | 블록 재정렬 | [!BADGE 사용 가능]{type=Positive} | 컨텍스트 내 드래그 앤 드롭을 사용할 수 있지만 &quot;트리 보기&quot; 사이드 패널에서는 사용할 수 없음 | [!BADGE 사용 가능]{type=Positive} | &quot;트리 보기&quot; 사이드 패널의 드래그 앤 드롭을 통해 가능하지만 아직 컨텍스트(계획됨)에 있지 않습니다. |
