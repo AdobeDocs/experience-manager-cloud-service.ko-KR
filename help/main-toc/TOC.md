@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -1078,14 +1078,9 @@ ht-degree: 99%
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
          + [확장 기능 설치](/help/edge/docs/sidekick-extension.md)
-         + [프로젝트 구성기](https://www.aem.live/tools/sidekick/)
          + [Sidekick 라이브러리](/help/edge/docs/sidekick-library.md)
       + [FAQ](/help/edge/docs/faq.md)
-      + [관리 API](https://www.aem.live/docs/admin.html)
-      + [AEM 상태](https://status.adobe.com)
       + 도구 {#tools}
-         + [AEM Sidekick Chrome 확장 기능](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github 봇](https://github.com/apps/aem-code-sync)
          + [감사 로그](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
