@@ -4,10 +4,13 @@ description: Edge Delivery Services 사이트에서 AEM과 함께 태그를 사�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ Edge Delivery Services 사이트에서 AEM과 함께 태그를 사용하기 위�
 
 >[!TIP]
 >
->분류법으로 작업할 수 있는 범용 편집기에서 사용할 수 있는 AEM 태그 필드에 대한 자세한 내용은 [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) 문서를 참조하십시오.
+>분류 체계와 함께 사용할 수 있는 범용 편집기에서 사용할 수 있는 AEM 태그 필드에 대한 자세한 내용은 [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) 문서를 참조하십시오.
 
 ## 분류 체계 페이지 만들기 {#creating}
 

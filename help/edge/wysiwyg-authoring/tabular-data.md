@@ -4,10 +4,13 @@ description: 스프레드시트를 사용하여 Edge Delivery Services 사이트
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,10 +183,10 @@ AEM에서 스프레드시트의 데이터를 게시하려면 프로젝트의 `pa
 
 이제 리디렉션 스프레드시트를 만드는 방법을 알았으므로 다음과 같은 다른 표준 스프레드시트 유형을 만들 수 있습니다.
 
-* [자리 표시자](https://www.aem.live/docs/placeholders)
+* [플레이스홀더](https://www.aem.live/docs/placeholders)
 * [메타데이터](https://www.aem.live/docs/bulk-metadata)
-* [머리글](https://www.aem.live/docs/custom-headers)
-* [구성](https://www.aem.live/docs/configuration) - 예: [캐시 무효화](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
+* [헤더](https://www.aem.live/docs/custom-headers)
+* [구성](https://www.aem.live/docs/configuration) - [캐시 무효화](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation) 등
 * [분류 체계](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 [스프레드시트 만들기](#spreadsheet) 및 [paths.json 업데이트](#paths-json) 섹션의 단계를 동일하게 따르고, 적절한 템플릿을 선택하고, `paths.json` 파일을 적절하게 업데이트하십시오.

@@ -4,7 +4,10 @@ description: 페이지의 DAM 에셋이 Edge Delivery Services에 원활하게 �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -37,12 +40,12 @@ AEM에서 Edge Delivery Services으로 페이지를 게시할 때 [기술 계정
 
 ## Assets 폴더에 적절한 구성이 할당되었는지 확인 {#configuration}
 
-일반적으로 기술 계정이 DAM의 에셋에 액세스할 수 있는지 확인하면 페이지와 함께 에셋을 Edge Delivery Services에 게시할 수 있습니다.
+일반적으로 기술 계정이 DAM의 자산에 액세스할 수 있는지 확인하면 페이지와 함께 자산을 Edge Delivery Services에 게시할 수 있습니다.
 
 그러나 다음 두 가지 추가 사례에서 추가 구성이 필요합니다.
 
 * PDF 또는 비디오와 같은 이미지가 아닌 에셋이 포함된 페이지를 Edge Delivery Services에 게시하려는 경우.
-* 페이지에 관계없이 이미지 에셋을 Edge Delivery Services에 게시하려면 다음 작업을 수행하십시오.
+* 페이지와 별도로 이미지 자산을 Edge Delivery Services에 게시하려는 경우.
 
 이러한 사용 사례를 모두 지원하려면 [구성](/help/implementing/developing/introduction/configurations.md)을(를) DAM 폴더에 할당해야 합니다.
 
@@ -53,5 +56,5 @@ AEM에서 Edge Delivery Services으로 페이지를 게시할 때 [기술 계정
    * 이 형식은 `/conf/<site-name>` 형식으로 사이트를 만들 때 자동으로 만들어집니다.
 1. 속성 창에서 **취소**&#x200B;를 탭하거나 클릭하고 **Assets** -> **파일**(으)로 이동한 다음 DAM 폴더를 선택합니다.
 1. 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
-1. 속성 창의 **Cloud Service** 탭에서 **클라우드 구성** 필드에서 이전에 설명한 것과 동일한 구성을 선택합니다.
+1. 속성 창의 **클라우드 서비스** 탭에서 **클라우드 구성** 필드에서 이전에 설명한 것과 동일한 구성을 선택합니다.
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
