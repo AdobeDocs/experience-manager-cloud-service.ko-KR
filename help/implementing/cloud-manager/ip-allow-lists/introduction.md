@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 26%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -77,3 +77,13 @@ Cloud Manager의 IP 허용 목록을 사용하여 이러한 신뢰할 수 있는
 프론트엔드 파이프라인 실행이 중단되지 않도록 하려면 이 Cloud Manager IP 허용 목록이 추가되었는지 확인하십시오. 그런 다음 목록을 작성자 환경 *이전*&#x200B;에 적용하여 파이프라인을 사용하도록 설정합니다.
 
 자세한 내용은 [IP 허용 목록 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 및 [프론트엔드 파이프라인 사용](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)을 참조하십시오.
+
+### 범용 편집기 및 IP 허용 목록 {#universal-editor}
+
+범용 편집기를 사용하여 콘텐츠를 작성하려면 범용 편집기 서비스에서 사용하는 IP 주소를 허용 목록에 추가하고 적용해야 합니다.
+
+1. API 끝점 `http://universal-editor-service.adobe.io/ip-ranges`에서 유니버설 편집기 서비스에 사용되는 IP 주소를 검색합니다.
+1. 해당 IP 주소로 허용 목록을 만들어 이름을 `Universal Editor Service` 또는 이와 비슷하게 지정합니다.
+1. `Universal Editor Service` 허용 목록을 적용합니다.
+
+Universal Editor Service에서 사용하는 IP 주소 목록은 변경될 수 있으며 그에 따라 허용 목록을 업데이트해야 합니다.

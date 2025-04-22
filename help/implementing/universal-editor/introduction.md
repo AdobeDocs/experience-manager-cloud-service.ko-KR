@@ -4,7 +4,7 @@ description: 유니버설 편집기는 마케팅 조직이 효과적인 웹 경�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 13%
@@ -108,7 +108,7 @@ ht-degree: 13%
 * AEM의 일부로 범용 편집기 [은(는) AEM과 동일한 데스크톱 브라우저를 지원합니다.](/help/overview/supported-platforms.md)
    * 이러한 브라우저의 모바일 버전은 지원되지 않습니다.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## 다음 단계 {#next-steps}
 
