@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: ht
-source-wordcount: '4215'
-ht-degree: 100%
+source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
+workflow-type: tm+mt
+source-wordcount: '4278'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다. (이스케이프되지 않은 변형의 경우 `pathRaw` 사용)</li><li>`url`: 쿼리 매개변수를 포함한 전체 URL을 반환합니다. (이스케이프되지 않은 변형의 경우 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인 속성을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더에 첫 번째 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다. (이스케이프되지 않은 변형의 경우 `pathRaw` 사용)</li><li>`url`: 쿼리 매개변수를 포함한 전체 URL을 반환합니다. (이스케이프되지 않은 변형의 경우 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인 속성을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더에 첫 번째 IP를 반환합니다.</li><li>`clientRegion`: [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2)에 설명된 대로 클라이언트가 있는 지역을 식별하는 국가 하위 분류 코드를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li><li>`clientContinent`: 클라이언트가 있는 대륙을 식별하는 두 문자 코드(AF, AN, AS, EU, NA, OC, SA)를 반환합니다.</li><li>`clientAsNumber`: 클라이언트 IP에 연결된 [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) 번호를 반환합니다.</li><li>`clientAsName`: Autonomous System 번호에 연결된 이름을 반환합니다.</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
