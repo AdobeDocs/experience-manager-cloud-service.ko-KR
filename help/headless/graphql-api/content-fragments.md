@@ -4,21 +4,15 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 92%
 
 ---
 
 
 # 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->컨텐츠 조각과 함께 사용하기 위한 GraphQL API의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 
@@ -1187,7 +1181,7 @@ query allTeams {
 * 참조되는 에셋이 원격 저장소에서 제거되면 콘텐츠 조각 에셋 참조가 손상됩니다.
 * 사용자가 액세스할 수 있는 모든 게재 에셋 저장소를 선택할 수 있습니다. 사용 가능한 목록은 제한할 수 없습니다.
 * AEM 인스턴스와 원격 자산 저장소 인스턴스가 모두 동일한 버전이어야 합니다.
-* [관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) 및 [배달 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)를 통해 노출된 자산 메타데이터가 없습니다. 에셋 메타데이터 API를 사용하여 에셋 메타데이터 세부 사항을 검색해야 합니다.
+* [관리 사이트 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) 및 [OpenAPI를 사용한 AEM 콘텐츠 조각 배달](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)을 통해 노출되는 에셋 메타데이터가 없습니다. 에셋 메타데이터 API를 사용하여 에셋 메타데이터 세부 사항을 검색해야 합니다.
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 

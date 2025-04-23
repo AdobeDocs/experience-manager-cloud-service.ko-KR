@@ -3,20 +3,15 @@ title: OpenAPI를 사용한 AEM 컨텐츠 조각 게재
 description: OpenAPI를 사용한 tAEM 콘텐츠 조각 게재에 대해 알아보기
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # OpenAPI를 사용한 AEM 컨텐츠 조각 게재 {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->이 API는 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 Adobe Experience Manager(AEM) as a Cloud Service에서 컨텐츠 조각 전달을 위한 AEM OpenAPI는 다음과 같습니다.
 
@@ -33,7 +28,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 컨텐츠 조각 전달�
 
 * 은(는) 콘텐츠 조각과 함께 사용하기 위한 [AEM GraphQL API에 대한 HTTP REST 대안입니다](/help/headless/graphql-api/content-fragments.md)
 
-전체 설명서는 [AEM Sites API 스키마 - 콘텐츠 조각 배달 API(2024.07-experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)를 참조하십시오.
+전체 문서를 보려면 [OpenAPI를 사용한 AEM 콘텐츠 조각 배달](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)을 참조하십시오.
 
 >[!NOTE]
 >
