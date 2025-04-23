@@ -4,9 +4,9 @@ description: WYSIWYG 템플릿 편집기를 사용하여  [!DNL Dynamic Media] �
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
+source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
 workflow-type: tm+mt
-source-wordcount: '3168'
+source-wordcount: '3176'
 ht-degree: 1%
 
 ---
@@ -80,8 +80,8 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 1. [!DNL Dynamic Media]에 액세스.
 1. [!DNL Assets View] 홈 페이지의 **[!UICONTROL Dynamic Media Assets]**&#x200B;에 템플릿을 저장할 폴더가 있습니다. **[!UICONTROL Dynamic Media Assets]**&#x200B;에서 해당 폴더를 복제하려면 [폴더를 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**에서 만듭니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view).
 1. [ [!DNL AEM Assets] 인스턴스에서 사용할 수 있는 이미지를  [!DNL Dynamic Media] 동기화하여 템플릿을 만드는 데 사용](/help/assets/dynamic-media/config-dm.md)합니다.
-1. 템플릿을 만드는 데 사용할 이미지를 게시하여 템플릿을 만든 후 템플릿의 게재 URL을 생성합니다. 게재 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
-1. 템플릿의 텍스트 레이어에서 기본 [!UICONTROL Adobe Sans F2] 글꼴 이외의 글꼴을 사용하려면 [글꼴 파일을 AEM 및 Dynamic Media에 동시에 업로드하고 게시합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). 템플릿을 만드는 데 사용할 기존 글꼴을 [재처리](/help/assets/reprocessing-assets-view.md)하십시오<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->. 글꼴에 대한 자세한 내용은 [글꼴](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.
+1. 템플릿을 만든 후 템플릿의 게재 URL을 생성하는 데 사용할 이미지를 게시합니다. 게재 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
+1. 템플릿의 텍스트 레이어에서 기본 [!UICONTROL Adobe Sans F2] 글꼴 이외의 글꼴을 사용하려면 [글꼴 파일을 AEM 및 Dynamic Media에 동시에 업로드하고 게시합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [지원되는 글꼴 파일 형식은 AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)입니다. 또한 기존 글꼴을 사용하려면 [재처리](/help/assets/reprocessing-assets-view.md)해야 합니다. 자세한 내용은 [글꼴](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. touch UI에서 다음을 확인하십시오.
    * **[!UICONTROL 구성 편집 페이지]**&#x200B;에서 **[!UICONTROL 기본적으로 비활성화됨]**(으)로 설정된 **[!UICONTROL [!DNL Dynamic Media]동기화 모드]**&#x200B;이(가) 모든 AEM 폴더에 적용되지 않습니다(**[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;이(가) 선택되지 않음). [!DNL Dynamic Media] 자세한 내용은 [Dynamic Media Cloud Service 구성](/help/assets/dynamic-media/config-dm.md)을 참조하십시오.
    * **[!UICONTROL [!DNL Dynamic Media]동기화 모드]**&#x200B;이(가) 생성 후 템플릿을 저장할 대상 폴더 또는 하위 폴더에 대해 **[!UICONTROL 하위 폴더에 대해 사용]**(으)로 설정되어 있습니다. 자세한 내용은 [구성 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)을 참조하십시오.
