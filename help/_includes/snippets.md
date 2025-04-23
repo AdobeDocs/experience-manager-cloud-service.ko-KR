@@ -1,8 +1,8 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 97%
 
 ---
 # 스니펫 {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->[컨텐츠 작성에 범용 편집기를 사용하는 경우](/help/implementing/universal-editor/introduction.md) 또한 [범용 편집기 서비스의 IP 주소가 있는 허용 목록을 추가하고 적용해야 합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>[컨텐츠 작성에 범용 편집기](/help/implementing/universal-editor/introduction.md)를 사용하고 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 사용하려면 [범용 편집기 서비스의 IP 주소가 있는 허용 목록을 추가하고 적용해야 합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 
