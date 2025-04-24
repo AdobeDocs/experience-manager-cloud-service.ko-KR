@@ -4,9 +4,9 @@ description: WYSIWYG 템플릿 편집기를 사용하여  [!DNL Dynamic Media] �
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 1%
 
 ---
@@ -322,8 +322,7 @@ URL에서 직접 매개 변수를 편집하는 것은 지루할 수 있습니다
 
    ![CTA 추가](/help/assets/assets/add-cta.png)
 
-1. 템플릿을 미리 보고 정의된 매개 변수를 보려면 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하십시오.
-1. 이전에 게시하지 않은 경우 **[!UICONTROL 게시]**&#x200B;를 클릭하고 **[!UICONTROL 예]**&#x200B;를 선택하여 템플릿을 게시합니다.
+1. 이전에 게시하지 않은 경우 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하고 **[!UICONTROL 게시]**&#x200B;를 선택하여 템플릿을 게시합니다.
 1. 이 템플릿이 저장된 폴더로 이동하여 이 템플릿을 선택하고 ![세부 정보 페이지](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 옵션 복사]**&#x200B;를 클릭하고 **[!UICONTROL 포함 코드 복사]**&#x200B;를 선택합니다. 포함 코드를 복사하려면 템플릿 이미지를 [!DNL AEM and Dynamic Media]에 게시해야 합니다.
 
