@@ -7,7 +7,7 @@ exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->이 버전을 사용하는 것이 좋습니다. 독립 실행형 버전 [변형 생성](/help/generative-ai/generate-variations.md)에 계속 직접 액세스할 수 있지만 앞으로 더 이상 사용되지 않습니다.
+>여전히 [변형 생성](/help/generative-ai/generate-variations.md)의 독립형 버전을 바로 이용하실 수 있지만 향후 더 이상 사용되지 않을 예정이므로 본 버전 사용을 권장하여 드립니다.
 
 그런 다음 아래와 같은 작업을 수행할 수 있습니다.
 
@@ -88,7 +88,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
       * 최근 생성 기록을 표시합니다.
    * [즐겨찾기](#favorites):
       * 즐겨찾기로 표시한 이전 세대의 결과를 표시합니다.
-   * **Adobe Generative AI 용어**: [Adobe Experience Cloud Generative AI 사용자 지침](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)에 대한 링크입니다.
+   * **Adobe Generative AI 용어**: [Adobe Experience Cloud Generative AI 사용자 가이드라인](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)에 대한 링크입니다.
 
 ## 변형 생성 시작하기 {#get-started-with-generate-variations}
 
@@ -141,7 +141,7 @@ The brand score shows you how on-brand the generated variation is.
 
 생성형 AI로 생성된 콘텐츠를 사용하려면 먼저 선택한 후 **CSV로 내보내기**&#x200B;를 선택해야 합니다.
 
-내보낸 후에는 다른 곳에서 콘텐츠를 사용할 수 있습니다. 예를 들어, 웹 사이트의 콘텐츠를 작성할 때 사용할 수 있습니다. [실험](https://www.aem.live/docs/experimentation)을 실행할 수도 있습니다.
+내보낸 후에는 다른 곳에서 콘텐츠를 사용할 수 있습니다. 예를 들어 웹 사이트의 콘텐츠를 작성할 때 사용할 수 있습니다. [실험](https://www.aem.live/docs/experimentation)을 실행할 수도 있습니다.
 
 >[!NOTE]
 >

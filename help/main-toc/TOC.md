@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
 source-wordcount: '6135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1117,7 +1117,7 @@ ht-degree: 99%
       + [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 쿼리 문제 해결](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI를 사용한 AEM 컨텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   + [OpenAPI와 함께 사용하는 AEM 콘텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [콘텐츠 조각 및 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 보안 {#security}
@@ -1188,7 +1188,7 @@ ht-degree: 99%
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [외부 저장소 추가(얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [외부 저장소 추가 (얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 Git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1303,7 +1303,7 @@ ht-degree: 99%
       + 범용 편집기 {#universal-editor}
          + [소개](/help/implementing/universal-editor/introduction.md)
          + [사용 사례](/help/implementing/universal-editor/use-cases.md)
-         + [범용 편집기 및 사이트 편집기](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [범용 편집기 및 Sites 편집기](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
          + [구성 요소 정의](/help/implementing/universal-editor/component-definition.md)
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
