@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.4
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 48%
+ht-degree: 98%
 
 ---
 
@@ -28,19 +28,19 @@ AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 일자는 2025년 4�
 
 ## 새로운 기능 {#what-is-new}
 
-* **(UI) 향상된 배포 가시성**
+* **(UI) 배포 가시성 개선**
 
-  이제 Cloud Manager의 파이프라인 실행 세부 정보 페이지에 배포가 다른 배포가 완료되기를 기다리는 동안 상태 메시지(&quot;*대기 중 - 다른 업데이트가 진행 중*&quot;)가 표시됩니다. 이 워크플로우를 통해 환경 배포 중 시퀀스를 보다 쉽게 이해할 수 있습니다.  <!-- CMGR-66890 -->
+  이제 Cloud Manager의 파이프라인 실행 세부 정보 페이지에 다른 배포가 완료될 때까지 대기하는 배포가 있는 경우 상태 메시지(“*대기 중 - 다른 업데이트 진행 중*”)가 표시됩니다. 이 워크플로를 통해 환경 배포 중에 배포 순서를 더 쉽게 이해할 수 있습니다.  <!-- CMGR-66890 -->
 
-  ![세부 정보 및 분류를 표시하는 개발 배포 대화 상자](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+  ![세부 정보와 분류를 보여주는 개발 배포 대화 상자](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-* **(UI) 도메인 유효성 검사 개선**
+* **(UI) 도메인 유효성 검사 향상**
 
-  이제 도메인을 추가할 때 도메인이 Fastly 계정에 이미 설치되어 있으면 Cloud Manager에 오류가 표시됩니다. &quot;*도메인이 Fastly 계정에 이미 설치되어 있습니다. Cloud Service에 추가하기 전에 먼저 여기에서 제거하십시오.*&quot;
+  Cloud Manager는 이제 도메인을 추가할 때 Fastly 계정에 도메인이 이미 설치되어 있는 경우 “*도메인이 이미 Fastly 계정에 설치되어 있습니다. 클라우드 서비스에 추가하기 전에 먼저 Fastly 계정에서 도메인을 제거하세요.*”라는 오류를 표시합니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
-Cloud Manager의 조기 채택 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
+Cloud Manager의 얼리 어답터 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
 현재 다음 조기 채택 기회를 사용할 수 있습니다.
 
@@ -76,17 +76,17 @@ If you are interested in testing this new capability and sharing your feedback, 
 
 ## 버그 수정
 
-* **CN(일반 이름) 필드가 없는 인증서 문제**
+* **인증서에 일반 이름(CN) 필드가 없는 문제**
 
-  주체 필드에 일반 이름(CN)을 포함하지 않는 EV/OV 인증서를 처리할 때 Cloud Manager에서 더 이상 NPE(NullPointerException) 및 500 HTTP 응답을 throw하지 않습니다. 최신 인증서는 종종 CN을 생략하고 대신 SAN(주체 대체 이름)을 사용합니다. 이 수정 사항을 통해 SAN이 있을 때 구성 빌드 프로세스 중에 더 이상 CN이 없으므로 오류가 발생하지 않습니다. <!-- CMGR-67548 -->
+  Cloud Manager는 제목 필드에 일반 이름(CN)이 포함되지 않은 EV/OV 인증서를 처리할 때 NullPointerException(NPE) 및 500 HTTP 응답을 더 이상 제공하지 않습니다. 최신 인증서는 종종 CN을 생략하고 주체 대체 이름(SAN)을 대신 사용합니다. 따라서 SAN이 있는 경우 구성 빌드 프로세스 중에 CN이 없어도 더 이상 오류가 발생하지 않습니다. <!-- CMGR-67548 -->
 
-* **인증서가 일치하지 않는 도메인 확인 문제**
+* **잘못된 인증서 매칭으로 인한 도메인 확인 문제**
 
-  Cloud Manager은 더 이상 잘못된 인증서를 사용하여 도메인을 잘못 확인하지 않습니다. 이전에는 유효성 검사 논리에서 정확한 일치 대신 패턴 기반 일치를 사용했으며, 이로 인해 `should-not-be-verified.example.com`과(와) 같은 도메인이 `example.com`에 대해 유효한 인증서와 겹쳐서 확인된 것으로 표시되었습니다. 이 수정 사항을 사용하면 도메인 유효성 검사에서 정확한 일치 항목을 확인하여 잘못된 인증서 연결을 방지할 수 있습니다. <!-- CMGR-67225 -->
+  Cloud Manager에서 잘못된 인증서를 사용하여 도메인을 잘못 확인하는 일이 더 이상 발생하지 않습니다. 이전에는 검사 로직에서 정확한 매칭 대신 패턴 기반의 매칭을 사용했기 때문에 `example.com`에 대한 유효 인증서와 중복되면서 `should-not-be-verified.example.com` 등의 도메인이 검증된 것으로 표시되었습니다. 이번 업데이트는 도메인 검증에서 정확한 일치 항목을 확인하여 잘못된 인증서 연결이 방지됩니다. <!-- CMGR-67225 -->
 
-* **고급 네트워킹 포트 전달 이름에 적용된 고유성**
+* **고급 네트워킹 포트 전달 이름에 대한 고유성 강제 적용**
 
-  이제 Cloud Manager은 고급 네트워킹 포트에 대해 고유한 이름을 적용합니다. 기존에는 중복 이름이 허용돼 갈등이 생길 수 있었다. 이 수정 사항을 통해 각 포트 전달 항목의 이름이 네트워크 구성 무결성에 대한 모범 사례와 일치하도록 합니다. <!-- CMGR-67082 -->
+  이제 Cloud Manager는 고급 네트워킹 포트 전달에 대해 고유한 이름을 적용합니다. 이전에는 중복 이름이 허용되었기 때문에 충돌 가능성이 있었습니다. 이번 업데이트는 네트워크 구성 무결성을 위한 모범 사례에 맞춰 각 포트 전달 항목에 고유한 이름이 지정되도록 보장합니다. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
