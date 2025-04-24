@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 63%
+source-wordcount: '1700'
+ht-degree: 65%
 
 ---
 
@@ -214,10 +214,6 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
 
    사용 가능한 옵션에 대한 자세한 내용은 [승인된 자산의 기본 승인 대상 및 게시 대상](#default-approval-target-options-publish-destinations)을 참조하십시오.
-
-   >[!NOTE]
-   >
-   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI가 활성화된 Dynamic Media가 있는 경우 기본적으로 활성화됩니다.
 
    ![승인 상태](/help/assets/assets/approval-status-delivery.png)
 
