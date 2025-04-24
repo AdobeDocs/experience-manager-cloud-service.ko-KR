@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->이 페이지에 설명된 버전은 향후에 더 이상 사용되지 않으므로 [AEM 편집기에 통합된 변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)에 액세스하는 것이 좋습니다.
+>본 페이지에 설명된 버전은 향후 사용되지 않을 예정이므로 AEM 편집기에 통합된 [변형 생성](/help/generative-ai/generate-variations-integrated-editor.md) 버전 이용을 권장하여 드립니다.
 
 디지털 채널을 최적화하고 콘텐츠 제작을 가속화하는 방법을 찾고 있다면 변형 생성을 사용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 프롬프트를 기반으로 콘텐츠 변형을 생성하며, 이러한 프롬프트는 Adobe에서 제공하거나 사용자가 만들고 관리합니다. 변형을 만든 후 웹 사이트에서 콘텐츠를 사용할 수 있으며, [Edge Delivery Services](/help/edge/overview.md)의 [실험](https://www.aem.live/docs/experimentation) 기능을 사용하여 성공 여부를 측정할 수도 있습니다.
 
@@ -29,9 +29,9 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->모든 경우에 베리에이션 생성을 사용하려면 [액세스 전제 조건](#access-prerequisites)이 충족되었는지 확인해야 합니다.
+>모든 경우에 변형 생성을 사용하려면 [액세스 사전 요구 사항](#access-prerequisites)이 충족되었는지 확인해야 합니다.
 
-그런 다음, 아래와 같은 작업을 수행할 수 있습니다.
+그런 다음 아래와 같은 작업을 수행할 수 있습니다.
 
 * Adobe가 특정 사용 사례를 위해 만든 프롬프트 템플릿을 사용하여 [시작](#get-started)합니다.
 * [기존의 프롬프트를 편집](#edit-the-prompt)할 수 있습니다.
@@ -182,7 +182,7 @@ Adobe 생성형 AI의 온도를 수정하는 데 사용:
 
 >[!NOTE]
 >
->[Content Credentials](https://helpx.adobe.com/kr/creative-cloud/help/content-credentials.html)은 문서 기반 작성에 사용하는 경우 지속되지 않습니다.
+>[Content Credentials](https://helpx.adobe.com/kr/creative-cloud/help/content-credentials.html)는 문서 기반 작성에 사용하는 경우 지속되지 않습니다.
 
 ### 콘텐츠 사용 {#use-content}
 

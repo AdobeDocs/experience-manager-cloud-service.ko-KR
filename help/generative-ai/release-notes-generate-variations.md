@@ -5,9 +5,9 @@ exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->이전 버전의 [변형 생성](/help/generative-ai/generate-variations.md)에 계속 직접 액세스할 수 있지만 앞으로 더 이상 사용되지 않으므로 버전 3.0.0을 사용하는 것이 좋습니다.
+>여전히 [변형 생성](/help/generative-ai/generate-variations.md)의 이전 버전을 바로 이용하실 수 있지만 향후 더 이상 사용되지 않을 예정이므로 3.0.0 버전 사용을 권장하여 드립니다.
 
 ### 2.2.0 {#release-notes-2-2-0}
 
