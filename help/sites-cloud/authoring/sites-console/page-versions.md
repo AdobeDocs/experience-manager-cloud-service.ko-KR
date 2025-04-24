@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 94%
 
 ---
 
@@ -25,6 +25,13 @@ ht-degree: 97%
 * 페이지의 현재 버전과 이전 버전 비교
    * 텍스트 및 이미지의 차이점이 강조 표시됩니다.
 * 타임워프는 페이지 버전을 사용하여 게시 환경의 상태를 파악합니다.
+
+>[!NOTE]
+>
+>AEM 저장소에서는 콘텐츠만 버전이 관리됩니다. 코드, CSS 및 JavaScript과 같은 동적 리소스의 버전이 관리되지 않습니다.
+>
+>* 버전을 볼 때는 저장소의 현재 코드, CSS 및 JavaScript으로 콘텐츠를 봅니다.
+>* 버전을 복원하면 콘텐츠만 복원되고 저장소의 현재 코드, CSS 및 JavaScript이 적용됩니다.
 
 ## 새 버전 만들기 {#creating-a-new-version}
 
