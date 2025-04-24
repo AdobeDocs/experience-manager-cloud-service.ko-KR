@@ -22,21 +22,21 @@ AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.4.0 릴�
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 일자는 2025년 4월 10일 금요일입니다.
+AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 일자는 2025년 4월 10일 목요일입니다.
 
-다음 릴리스는 2025년 5월 8일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 5월 8일 목요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
 * **(UI) 배포 가시성 개선**
 
-  이제 Cloud Manager의 파이프라인 실행 세부 정보 페이지에 다른 배포가 완료될 때까지 대기하는 배포가 있는 경우 상태 메시지(“*대기 중 - 다른 업데이트 진행 중*”)가 표시됩니다. 이 워크플로를 통해 환경 배포 중에 배포 순서를 더 쉽게 이해할 수 있습니다.  <!-- CMGR-66890 -->
+  이제 Cloud Manager의 파이프라인 실행 세부 정보 페이지에 다른 배포가 완료될 때까지 대기하는 배포가 있는 경우 상태 메시지(“*대기 중 - 다른 업데이트 진행 중*”)가 표시됩니다. 이 워크플로를 통해 환경 배포 중에 배포 순서를 더 쉽게 이해할 수 있습니다. <!-- CMGR-66890 -->
 
-  ![세부 정보와 분류를 보여주는 개발 배포 대화 상자](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+  ![세부 정보와 분류를 보여 주는 개발 배포 대화 상자](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
 * **(UI) 도메인 유효성 검사 향상**
 
-  Cloud Manager는 이제 도메인을 추가할 때 Fastly 계정에 도메인이 이미 설치되어 있는 경우 “*도메인이 이미 Fastly 계정에 설치되어 있습니다. 클라우드 서비스에 추가하기 전에 먼저 Fastly 계정에서 도메인을 제거하세요.*”라는 오류를 표시합니다.
+  Cloud Manager는 이제 도메인을 추가할 때 Fastly 계정에 도메인이 이미 설치되어 있는 경우 “*도메인이 이미 Fastly 계정에 설치되어 있습니다. 클라우드 서비스에 추가하기 전에 먼저 Fastly 계정에서 도메인을 제거해 주십시오*”라는 오류를 표시합니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
@@ -58,7 +58,7 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하면 정식 출시 전
 
 >[!NOTE]
 >
->현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만, 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
+>현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 

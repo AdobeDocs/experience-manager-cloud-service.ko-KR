@@ -7,14 +7,14 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 
 # 범용 편집기 2025.04.04 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기 2025년 4월 4일 릴리스의 릴리스 정보입니다.
+다음은 범용 편집기 2025년 4월 4일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,11 +22,11 @@ ht-degree: 37%
 
 ## 새로운 기능 {#what-is-new}
 
-* **OpenAPI를 지원하는 Dynamic Media** - [자산 선택기](/help/assets/overview-asset-selector.md#repository-switcher) 유니버설 편집기에서 이제 [OpenAPI 및 원격 자산을 지원하는 Dynamic Media](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP 허용 목록** - 이제 유니버설 편집기에서 [IP 허용 목록을 지원합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) [이 끝점을 사용하여 유니버설 편집기 서비스의 IP를 확인할 수 있습니다.](http://universal-editor-service.adobe.io/ip-ranges)
+* **OpenAPI 지원이 제공되는 Dynamic Media** - 범용 편집기의 [자산 선택기가 이제 ](/help/assets/overview-asset-selector.md#repository-switcher)[OpenAPI 및 원격 자산을 제공하는 Dynamic Media를 지원](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **IP 목록 허용** - 범용 편집기에서 이제 [IP 허용 목록을 지원합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor)[이 엔드포인트](http://universal-editor-service.adobe.io/ip-ranges)를 사용하는 범용 편집기 서비스의 IP를 확인할 수 있습니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
 * 레이아웃 컨텍스트 제거가 수정되었습니다.
 * e2e 테스트가 개선되었습니다.
-* 종속성 업데이트 및 코드 정리가 수행되었습니다.
+* 종속성 업데이트와 코드 정리가 수행되었습니다.
