@@ -4,9 +4,9 @@ description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -95,11 +95,13 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
    다음 대화 상자가 표시됩니다. 오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 일정 기간 동안 프로젝트 카드 및 마이그레이션 작업 테이블 행에 경고가 표시되면 마이그레이션 세트가 만료되어 해당 데이터를 더 이상 사용할 수 없습니다. 자세한 내용은 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)를 검토하십시오.
 
+   마이그레이션 세트를 만드는 동안 임시 마이그레이션 데이터가 저장되는 지역을 선택할 수 있습니다.  수집 중에 최적의 성능을 보장하려면 타겟 클라우드 환경과 가장 가까운 지역을 선택하는 것이 좋습니다.  마이그레이션 세트를 만든 후에는 지역을 변경할 수 없습니다. 다른 지역을 사용하려면 마이그레이션 세트를 새로 만들어야 합니다.
+
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >이름은 AEM 노드의 동일한 규칙을 따라야 하므로 다음 문자를 포함할 수 없습니다. . / : [ ] | *
+   >이름은 AEM 노드의 동일한 규칙을 따라야 하므로 다음 문자를 포함할 수 없습니다. `. / : [ ] | * &lt; > ^ ? { } % # &quot;비정상적인 기호나 이모지가 없습니다.
 
 1. 이제 목록 보기에 마이그레이션 목록이 표시됩니다. 세 점 기호(**..**)를 선택하여 드롭다운을 열고 **추출 키 복사**&#x200B;를 선택합니다. 추출 단계에서 이 키가 필요합니다. 이 추출 키를 복사합니다.
 
