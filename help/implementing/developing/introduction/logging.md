@@ -4,9 +4,9 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 9%
 
 ---
@@ -194,7 +194,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 
 ## AEM HTTP 요청 로깅 {#aem-http-request-logging}
 
-AEM as a Cloud Service의 HTTP 요청 로깅을 통해 AEM에 수행된 HTTP 요청과 그 HTTP 응답을 시간 순서대로 파악할 수 있습니다. 이 로그는 AEM에 대한 HTTP 요청과 이 요청이 처리 및 응답된 순서를 이해하는 데 유용합니다.
+AEM as a Cloud Service의 HTTP 요청 로깅은 insightAEM 에 수행된 HTTP 요청과 해당 HTTP 응답을 시간 순서로 제공합니다. 이 로그는 AEM에 대한 HTTP 요청과 이 요청이 처리 및 응답된 순서를 이해하는 데 유용합니다.
 
 이 로그를 이해하는 핵심은 HTTP 요청 및 응답 쌍을 해당 ID로 매핑하는 것입니다(대괄호의 숫자 값으로 표시됨). 종종 요청 및 해당 응답에는 다른 HTTP 요청과 응답이 로그에 있는 요청 사이에 끼어있습니다.
 
@@ -411,7 +411,7 @@ error, warn, info, debug 및 trace1 - trace8로 설정할 수 있으며 기본�
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Dispatcher AEM as a Cloud Service 로깅은 다른 여러 수준의 로깅 세�
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *pop* | CDN 캐시 서버의 데이터센터입니다. |
 | *rules* | 일치하는 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 및 WAF 플래그의 이름으로, 일치하는 결과 차단 여부도 나타냅니다. 일치하는 규칙이 없으면 비어 있습니다. |
 
+CDN 로그는 [요청/응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty)을 사용하여 고유한 속성으로 확장할 수 있습니다.
 
 ## 로그 액세스 방법 {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM 로그는 다음 로그를 볼 수 있는 `crx-quickstart/logs` 폴더에 �
 * AEM HTTP 요청 로그: `request.log`
 * AEM HTTP 액세스 로그: `access.log`
 
-Dispatcher를 포함한 Apache 계층 로그는 Dispatcher이 보관된 도커 컨테이너에 있습니다. Dispatcher 시작 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)를 참조하세요.
+Dispatcher를 포함한 Apache 계층 로그는 Dispatcher이 보관된 도커 컨테이너에 있습니다. Dispatcher 시작 방법에 대한 자세한 내용은 [Dispatcher 설명서](/help/implementing/dispatcher/disp-overview.md)를 참조하세요.
 
 로그를 검색하려면 다음을 수행하십시오.
 

@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1493'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **작업**
@@ -153,12 +156,20 @@ data:
 
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
-| **설정** | (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 값 | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 문자열 리터럴 또는 요청 매개 변수일 수 있는 지정된 값으로 설정합니다. |
-|     | var, 값 | 지정된 요청 속성을 지정된 값으로 설정합니다. |
-| **설정 해제** | reqProperty | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 문자열 리터럴 또는 요청 매개 변수일 수 있는 지정된 값으로 제거합니다. |
-|         | var | 지정된 변수를 제거합니다. |
-|         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
-|         | queryParamDoesNotMatch | 지정된 정규 표현식과 일치하지 않는 모든 쿼리 매개 변수를 제거합니다. |
+| **설정** | reqProperty, 값 | 지정된 요청 매개 변수를 설정합니다(&quot;path&quot; 속성만 지원됨). |
+|     | reqHeader, 값 | 지정된 요청 헤더를 지정된 값으로 설정합니다. |
+|     | queryParam, value | 지정된 쿼리 매개 변수를 지정된 값으로 설정합니다. |
+|     | reqCookie, 값 | 지정된 요청 쿠키를 지정된 값으로 설정합니다. |
+|     | logProperty, value | 지정된 CDN 로그 속성을 지정된 값으로 설정합니다. |
+|     | var, 값 | 지정된 변수를 지정된 값으로 설정합니다. |
+| **설정 해제** | reqProperty | 지정된 요청 매개 변수 제거(&quot;path&quot; 속성만 지원됨) |
+|     | reqHeader, 값 | 지정된 요청 헤더를 제거합니다. |
+|     | queryParam, value | 지정된 쿼리 매개 변수를 제거합니다. |
+|     | reqCookie, 값 | 지정된 쿠키를 제거합니다. |
+|     | logProperty, value | 지정된 CDN 로그 속성을 제거합니다. |
+|     | var | 지정된 변수를 제거합니다. |
+|     | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
+|     | queryParamDoesNotMatch | 지정된 정규 표현식과 일치하지 않는 모든 쿼리 매개 변수를 제거합니다. |
 | **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨), 요청 헤더 또는 쿼리 매개 변수, 쿠키 또는 변수의 일부를 새 값으로 바꿉니다. |
 |              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수, 쿠키 또는 변수를 해당 소문자 값으로 설정합니다. |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### 로그 속성 {#logproperty}
+
+요청 및 응답 변환을 사용하여 CDN 로그에 고유한 로그 속성을 추가할 수 있습니다.
+
+구성 예:
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+로그 예:
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## 응답 변환 {#response-transformations}
 
-응답 변환 규칙을 사용하면 CDN의 발신 응답에 대한 헤더를 설정하고 설정이 해제될 수 있습니다. 또한 요청 변환 규칙에 이전에 설정된 변수를 참조하려면 위의 예를 참조하십시오. 응답의 상태 코드를 설정할 수도 있습니다.
+응답 변환 규칙을 사용하면 CDN의 발신 응답에 대한 헤더, 쿠키 및 상태를 설정하고 설정이 해제될 수 있습니다. 또한 요청 변환 규칙에 이전에 설정된 변수를 참조하려면 위의 예를 참조하십시오.
 
 구성 예:
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **작업**
@@ -300,9 +376,15 @@ data:
 
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
-| **설정** | reqHeader, 값 | 지정된 헤더를 응답의 특정 값으로 설정합니다. |
-|          | respProperty, 값 | 응답 속성을 설정합니다. 상태 코드를 설정하기 위해 속성 &quot;status&quot;만 지원합니다. |
+| **설정** | respProperty, 값 | 응답 속성을 설정합니다. 상태 코드를 설정하기 위해 속성 &quot;status&quot;만 지원합니다. |
+|     | respHeader, 값 | 지정된 응답 헤더를 지정된 값으로 설정합니다. |
+|     | respCookie, 속성(만료, 도메인, 경로, 보안, httpOnly, 확장), 값 | 특정 속성을 가진 지정된 요청 쿠키를 지정된 값으로 설정합니다. |
+|     | logProperty, value | 지정된 CDN 로그 속성을 지정된 값으로 설정합니다. |
+|     | var, 값 | 지정된 변수를 지정된 값으로 설정합니다. |
 | **설정 해제** | respHeader | 응답에서 지정된 헤더를 제거합니다. |
+|     | respCookie, 값 | 지정된 쿠키를 제거합니다. |
+|     | logProperty, value | 지정된 CDN 로그 속성을 제거합니다. |
+|     | var | 지정된 변수를 제거합니다. |
 
 ## 원본 선택기 {#origin-selectors}
 
