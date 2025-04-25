@@ -3,10 +3,10 @@ title: Content Hub에서 에셋 다운로드
 description: Content Hub 포털에서 에셋을 다운로드하는 방법을 알아봅니다
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ Content Hub에서 사용할 수 있는 [변환 유형](#types-of-renditions)을 
 
    >[!NOTE]
    >
-   * 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
-   * 에셋을 다운로드하는 동안 모든 [정적, 동적 및 스마트 자르기 렌디션](#types-of-renditions)을 다운로드할 수 있습니다.
+   >* 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
+   >* 에셋을 다운로드하는 동안 모든 [정적, 동적 및 스마트 자르기 렌디션](#types-of-renditions)을 다운로드할 수 있습니다.
 
 1. 렌디션을 하나 이상 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
@@ -86,7 +86,7 @@ Content Hub에서 사용할 수 있는 [변환 유형](#types-of-renditions)을 
 
 >[!NOTE]
 >
-Open API 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 대한 액세스 권한이 있는 사용자는 동적 및 스마트 자르기 변환을 보고 다운로드할 수 있습니다.
+> Open API 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 대한 액세스 권한이 있는 사용자는 동적 및 스마트 자르기 변환을 보고 다운로드할 수 있습니다.
 
 ## 여러 에셋 및 해당 렌디션 다운로드 {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Open API 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-o
 
      >[!NOTE]
      >
-     * 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
-     * 여러 자산을 다운로드하는 동안에는 [정적 렌디션](#types-of-renditions)만 다운로드할 수 있습니다.
+     >* 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
+     >* 여러 자산을 다운로드하는 동안에는 [정적 렌디션](#types-of-renditions)만 다운로드할 수 있습니다.
 
    선택한 자산 중 라이센스가 부여된 자산이 있는 경우 왼쪽 창에서 자산의 라이센스를 클릭하여 미리 보기를 확인합니다. 그러면 **[!UICONTROL 위에서 언급한 약관을 읽고 수락했습니다]**. **[!UICONTROL 다운로드]**&#x200B;를 클릭할 수 있습니다. Assets as a Cloud Service 작성 환경을 사용하여 에셋이 승인된 경우에만 라이선스 미리보기가 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
 
@@ -153,17 +153,35 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [정적 렌디션](/help/assets/renditions.md#static-renditions): 정적 렌디션은 디지털 에셋의 미리 만들어진 버전으로, 일반적으로 에셋 수집 또는 수정 중에 생성됩니다. 웹 썸네일, 응답형 디자인을 위한 모바일 친화적 형식 또는 인쇄용 고해상도 파일과 같은 특정 용도 및 플랫폼에 최적화되어 간소화되고 일관된 환경을 제공합니다.
 
-* [동적 변환](/help/assets/renditions.md#dynamic-renditions): 동적 변환은 다양한 장치 해상도에 대한 이미지 크기 조정 또는 다양한 종횡비에 맞는 자르기 등 다양한 작업을 수행하는 자산의 실시간 사용자 지정 버전입니다. 이러한 렌디션을 사용하면 더 넓은 요구 사항에 맞게 개인화되고 최적화된 경험을 제공할 수 있습니다. 자산의 동적 변환이 [!DNL Adobe Experience Manager Assets] 작성 환경에서 만들어집니다.
+* [동적 변환](/help/assets/renditions.md#dynamic-renditions): 동적 변환은 다양한 장치 해상도에 대한 이미지 크기 조정 또는 다양한 종횡비에 맞는 자르기 등 다양한 작업을 수행하는 자산의 실시간 사용자 지정 버전입니다. 이러한 렌디션을 사용하면 더 넓은 요구 사항에 맞게 개인화되고 최적화된 경험을 제공할 수 있습니다. 자산의 동적 변환이 [!DNL Adobe Experience Manager Assets] 작성 환경에서 만들어집니다. 동적 변환을 활성화하는 데 필요한 단계에 대한 자세한 내용은 [동적 변환 활성화](#enable-dynamic-media-renditions)를 참조하십시오.
 
 * [스마트 자르기](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): 스마트 자르기 프로세스는 자르기 프로세스 중 에셋의 필수 부분에만 중점을 둡니다. Dynamic media 스마트 자르기 for은 Adobe Sensei에서 제공하는 인공 지능을 활용하여 관심 영역을 추적하므로, 모든 화면 크기에서 에셋이 최고처럼 보이도록 할 수 있습니다. [!DNL Adobe Experience Manager] 스마트 자르기에 제목과 함께 에셋 표현물의 너비와 높이가 표시됩니다. 자세한 내용은 [AEM Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을 참조하세요.
 
+  스마트 자르기 렌디션이 표시되고 OpenAPI 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 액세스할 수 있는 경우에만 다운로드할 수 있습니다. 스마트 자르기 렌디션은 이미지 에셋에만 사용할 수 있습니다.
+
   ![렌디션 유형](/help/assets/assets/renditions-types.png)
 
+### 동적 변환 활성화 {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* 동적 및 스마트 자르기 렌디션 기능은 얼리 어답터 단계입니다. 기능에 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
-* [Dynamic Media Open API 서비스](/help/assets/dynamic-media-open-apis-overview.md)에서 새로 온보딩된 고객은 승인을 위해 기존 이미지 사전 설정을 수정해야 합니다.
+동적 변환을 활성화하려면 다음 작업을 수행하십시오.
+
+1. OpenAPI 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 액세스할 수 있는지 확인하십시오.
+
+   OpenAPI 기능을 사용하여 Dynamic Media에 액세스하면 `Approved`(으)로 표시된 모든 자산을 Dynamic Media를 사용하여 공개 게재할 수 있습니다.
+
+1. Content Hub에 대해서만 자산을 승인하려면 자산의 [승인 대상](/help/assets/approve-assets-content-hub.md#set-approval-target)을 Content Hub으로 설정하십시오.
+
+1. [구성](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) 사용자 인터페이스의 **[!UICONTROL 렌디션]** 탭에서 사용할 수 있는 **[!UICONTROL 렌디션의 사용 가능]** 토글을 사용하도록 설정합니다.
+
+1. 기존 이미지 사전 설정을 다시 저장하여 Content Hub에서 사용할 수 있도록 합니다. OpenAPI를 사용하여 Dynamic Media에 새로 온보딩한 경우에만 적용됩니다.
+
+   기존 이미지 사전 설정을 다시 저장하려면 [관리] 보기로 이동하여 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 선택합니다. 사전 설정을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+
+
+   >[!NOTE]
+   > 
+   > 동적 변환은 이미지 자산에만 사용할 수 있습니다.
 
 
 

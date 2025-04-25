@@ -2,10 +2,10 @@
 title: Content Hub에 대한 자산 승인
 description: Assets as a Cloud Service에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 20%
+source-wordcount: '1276'
+ht-degree: 19%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 20%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ Assets as a Cloud Service에서 `approved`(으)로 표시된 자산은 Content H
 
 >[!NOTE]
 >
-Assets as a Cloud Service 및 Content HubContent Hub 에서 자산을 표시하려면 동일한 조직을 사용해야 합니다.
+>Assets as a Cloud Service 및 Content HubContent Hub 에서 자산을 표시하려면 동일한 조직을 사용해야 합니다.
 
 AEM as a Cloud Service 내의 Assets 보기를 사용하여 에셋 상태를 `approved`(으)로 설정하려면 다음을 수행하십시오.
 
@@ -98,6 +98,52 @@ Assets 보기에서 폴더 내의 자산을 일괄 승인하려면 다음을 수
 1. 오른쪽 창 **[!UICONTROL 속성]** 섹션의 사용 가능한 **[!UICONTROL 상태]** 필드에서 [!UICONTROL 승인됨]을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+## 승인 대상 설정 {#set-approval-target}
+
+Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수 있는 **승인 대상** 필드에 설정한 값을 기반으로 OpenAPI 기능, Content Hub 또는 두 가지 모두를 사용하여 승인된 자산을 Dynamic Media에 게시할 수 있습니다.
+
+승인 대상을 설정하려면:
+
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
+
+1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
+
+1. 2단계에서 **승인됨**&#x200B;을(를) 선택한 경우 승인 대상을 선택하십시오. 가능한 값은 게재 및 Content Hub을 포함합니다.
+
+   * **배달**&#x200B;은(는) 드롭다운 메뉴에서 선택한 기본 옵션이며, 두 옵션이 모두 Experience Manager Assets에 대해 활성화되어 있는 경우 자산을 [OpenAPI를 사용하는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 및 [Content Hub](/help/assets/product-overview.md) 모두에 게시합니다.
+
+   * **Content Hub**&#x200B;을(를) 선택하면 자산이 Content Hub에만 게시됩니다. Content Hub은 Experience Manager Assets에 대해 활성화된 경우에만 옵션으로 표시됩니다.
+
+   * 드롭다운 목록에서 옵션을 선택하지 않으면 AEM as a Cloud Service 환경에 대해 활성화된 기본 옵션이 자산에 자동으로 적용됩니다.
+
+
+   사용 가능한 옵션에 대한 자세한 내용은 [승인된 자산의 기본 승인 대상 및 게시 대상](#default-approval-target-options-publish-destinations)을 참조하십시오.
+
+   >[!NOTE]
+   >
+   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI가 활성화된 Dynamic Media가 있는 경우 기본적으로 활성화됩니다.
+
+   ![승인 상태](/help/assets/assets/approval-status-delivery.png)
+
+1. 다른 자산 속성을 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+참고할 몇 가지 추가 사항은 다음과 같습니다.
+
+* 기본 메타데이터 양식을 사용하지 않고 **[!UICONTROL 승인 대상]** 필드를 볼 수 없는 경우 [메타데이터 양식을 편집](/help/assets/metadata-assets-view.md#metadata-forms)하여 **[!UICONTROL 승인 대상]** 필드를 사용 가능한 구성 요소에서 메타데이터 양식으로 드래그하고 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
+
+* Assets 보기를 사용하여 승인 대상을 `Content Hub`(으)로 선택하면 Content Hub의 자산을 동일한 조직에 속한 사용자가 사용할 수 있습니다.
+
+### 승인된 에셋의 기본 승인 대상 및 게시 대상 {#default-approval-target-options-publish-destinations}
+
+다음 표에서는 AEM as a Cloud Service 환경에서 OpenAPI 및 Content Hub을 통한 DM 활성화를 기반으로 `Approval Target` 드롭다운 목록과 기본 승인 대상을 표시하기 위한 사전 요구 사항을 보여 줍니다.
+
+| OpenAPI를 사용하는 Dynamic Media | Content Hub | 승인 대상 드롭다운 목록이 표시됩니까? | 승인된 자산의 기본 승인 대상 | 대상 게시 |
+| --- | --- | --- | --- |---|
+| 활성화됨 | 활성화됨 | 예 | 제공 | OpenAPI 및 Content Hub을 사용하는 Dynamic Media |
+| 활성화되지 않음 | 활성화됨 | 예 | Content Hub | Content Hub |
+| 활성화됨 | 활성화되지 않음 | 예 | 제공 | OpenAPI를 사용하는 Dynamic Media |
+| 활성화되지 않음 | 활성화되지 않음 | 아니요 | N/A | N/A |
 
 ## 관리자 보기에서 새로 수집된 자산에 대한 승인 자동화 {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 
 >[!NOTE]
 > 
-이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다.
+>이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다.
 
 ## Content Hub을 사용하여 업로드된 에셋 관리 {#manage-assets-uploaded-using-content-hub}
 
