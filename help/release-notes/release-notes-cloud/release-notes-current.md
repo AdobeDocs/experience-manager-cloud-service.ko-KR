@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 47%
+source-wordcount: '1713'
+ht-degree: 42%
 
 ---
 
@@ -162,6 +162,20 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 >[!IMPORTANT]
 >
 > Java 21 **런타임**&#x200B;은 2월에 개발/RDE 환경에 배포되었으며, **4월 28일과 29일**&#x200B;에 스테이징/프로덕션 환경에 적용될 예정입니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
+
+### AEM의 로깅 구성 정책 시행 {#logconfig-policy}
+
+고객 환경을 효과적으로 모니터링하려면 AEM Java 로그가 일관된 형식을 유지해야 하며 사용자 지정 구성으로 인해 재정의되면 안 됩니다. 로그 출력은 기본 파일로 향해야 합니다. AEM 제품 코드의 경우 기본 로그 수준을 유지해야 합니다. 그러나 고객이 개발한 코드에 대해 로그 수준을 조정하는 것은 허용됩니다.
+
+이를 위해 다음 OSGi 속성을 변경해서는 안 됩니다.
+* **Apache Sling 로그 구성**(PID: `org.apache.sling.commons.log.LogManager`) — *모든 속성*
+* **Apache Sling 로깅 로거 구성**(공장 PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+5월 중순에 AEM은 이러한 속성에 대한 사용자 지정 수정 사항이 무시되는 정책을 적용합니다. 다운스트림 프로세스를 적절하게 검토하고 조정하십시오. 예를 들어 로그 전달 기능을 사용하는 경우:
+* 로깅 대상에 사용자 지정(기본값이 아닌) 로그 형식이 필요한 경우 수집 규칙을 업데이트해야 할 수 있습니다.
+* 로그 수준을 변경하면 로그 세부 정보가 감소하면 기본 로그 수준으로 인해 로그 볼륨이 크게 증가할 수 있습니다.
 
 ### 더 많은 대상으로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
 
