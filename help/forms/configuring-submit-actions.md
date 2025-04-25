@@ -4,10 +4,10 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
-ht-degree: 73%
+source-wordcount: '3957'
+ht-degree: 72%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 73%
 | AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Foundation 구성 요소) | 이 문서 |
 
-**적용 대상**: ✔️ Form Foundation 구성 요소 [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md)를 ❌. Adobe은 핵심 구성 요소를 사용하여 [AEM Sites 페이지에 적응형 Forms을 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)하거나 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md)할 것을 권장합니다.
+**적용 대상**: ✔️ Form Foundation 구성 요소 [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md)를 ❌. Adobe에서는 핵심 구성 요소를 사용하여 [AEM Sites 페이지에 적응형 Forms을 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)하거나 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md)할 것을 권장합니다.
 
-사용자가 적응형 양식에서 **[!UICONTROL 제출]** 단추를 클릭하면 제출 액션이 트리거됩니다. Formsas a Cloud Service 에서 제출 액션 실행
+사용자가 적응형 양식에서 **[!UICONTROL 제출]** 단추를 클릭하면 제출 액션이 트리거됩니다. Forms as a Cloud Service은 다음과 같은 제출 액션을 즉시 제공합니다.
 
 * [REST 엔드포인트에 제출](#submit-to-rest-endpoint)
 * [이메일 보내기](#send-email)
@@ -193,7 +193,7 @@ SharePoint에 제출을 사용하여 다음과 같은 작업을 수행할 수 �
 
 AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하려면:
 
-1. **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**(으)로 이동합니다.
+1. **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® SharePoint]**(으)로 이동합니다.
 1. **[!UICONTROL Microsoft® SharePoint]**&#x200B;을(를) 선택하면 **[!UICONTROL SharePoint 브라우저]**(으)로 리디렉션됩니다.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
 1. 드롭다운 목록에서 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]**&#x200B;를 클릭합니다. SharePoint 구성 마법사가 나타납니다.
@@ -239,6 +239,11 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 문서 라이브러리 저장소에 저장됩니다.
 데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
 
+>[!NOTE]
+>
+> 첨부 파일도 `/folder_name/form_name/year/month/date/submission_id/data` 디렉터리에 저장됩니다. 그러나 **원래 이름으로 첨부 파일 저장**을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다.
+> ![이미지](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+
 ### Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
@@ -252,7 +257,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
 AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 이동합니다.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
 1. 드롭다운 목록에서 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]**&#x200B;을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
@@ -274,7 +279,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식에서 SharePoint 목록 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft® SharePoint 목록 구성을 사용하여 FDM(양식 데이터 모델) 만들기](/help/forms/create-form-data-models.md)
+1. [Microsoft을 사용하여 양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
 1. [데이터를 검색하고 보내도록 양식 데이터 모델(FDM) 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
 1. [FDM(양식 데이터 모델)을 사용하여 제출 액션 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)

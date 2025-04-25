@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: 적응형 양식을 위한 SharePoint 문서 라이브러리 연결, SharePoint에 제출, SharePoint 문서 라이브러리 구성 만들기, 적응형 양식에서 SharePoint에 제출 액션을 사용, AEM Forms 데이터 모델 SharePoint 문서 라이브러리, Forms 데이터 모델 SharePoint 문서 라이브러리, Forms 데이터 모델을 SharePoint 문서 라이브러리에 통합
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 35%
+source-wordcount: '635'
+ht-degree: 33%
 
 ---
-
 
 # Microsoft® SharePoint 문서 라이브러리에 적응형 양식 연결 {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
 
-양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 문서 라이브러리 저장소에 저장됩니다.
-데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
+>[!NOTE]
+>
+> 양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 문서 라이브러리 저장소에 저장됩니다. 데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
+
+>[!NOTE]
+>
+> 첨부 파일도 `/folder_name/form_name/year/month/date/submission_id/data` 디렉터리에 저장됩니다. 그러나 **원래 이름으로 첨부 파일 저장**을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다.
+> ![이미지](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## 관련 문서
 

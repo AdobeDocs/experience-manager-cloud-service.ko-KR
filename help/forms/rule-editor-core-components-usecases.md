@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1561'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,21 @@ ht-degree: 0%
 이 문서에서는 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 규칙 편집기의 자세한 예제를 제공하여 다양한 시나리오에 대한 적절한 구현에 대한 통찰력을 제공합니다. 규칙 편집기를 사용하면 개발자가 양식의 동작을 제어하는 논리를 정의하고 관리할 수 있습니다.
 이제 규칙 편집기에 대한 다양한 구현에 대해 살펴보겠습니다.
 
+## 첫 번째 패널이 유효한 경우 단추 클릭 시 포커스를 다른 패널로 설정
+
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해 액세스할 수 있습니다. </span>
+
+규칙 편집기를 사용하면 가로 탭, 세로 탭, 아코디언 또는 단추 클릭 시 마법사와 같은 패널 레이아웃의 유효성을 검사하고 포커스를 다른 패널의 양식 객체로 설정할 수 있습니다. 이 기능을 사용하여 양식 탐색 및 사용자 경험을 개선할 수 있습니다.
+
+마법사 레이아웃을 사용하는 여러 단계 애플리케이션 양식을 상상해 보십시오. `Employment Details`(으)로 이동하려면 `Personal Information` 패널을 완료해야 합니다. `Next` 단추를 클릭하면 규칙 편집기가 `Personal Information` 패널의 유효성을 검사합니다. 모든 필수 필드를 올바르게 채우면 양식에서 자동으로 포커스를 `Employment Details` 패널로 이동합니다. 그렇지 않으면 누락 필드를 완료하라는 오류 메시지가 표시됩니다.
+
+`Next` 단추에 규칙을 만들어 첫 번째 패널의 유효성을 검사할 수 있습니다.
+
+![다음 단추에 대한 규칙](/help/forms/assets/next-rule.png){width=50%}
+
+**다음** 단추를 클릭하면 **개인 정보** 패널의 유효성을 검사합니다. 입력한 세부 정보가 정확하면 포커스가 **계정 보안** 패널로 이동합니다. 그렇지 않으면 누락된 세부 정보를 입력하라는 오류 메시지가 표시됩니다.
+
+<!--![Video]()-->
 
 ## 버튼을 사용하여 패널 간 탐색
 
@@ -122,7 +137,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 * 라디오 단추, **[!UICONTROL 기존 Geometrixx 고객입니까?]**: [!UICONTROL 예] 및 [!UICONTROL 아니요] 옵션을 제공합니다. 예 값은 **0**&#x200B;이고 아니요 값은 **1**&#x200B;입니다.
 
-* 고객 ID를 지정하는 텍스트 필드 **[!UICONTROL Geometrixx 고객 ID]**&#x200B;입니다.
+* 고객 ID를 지정하는 텍스트 필드 **[!UICONTROL Geometrixx 고객 ID]**.
 
 이 동작을 구현하기 위해 라디오 단추에 When 규칙을 작성할 때 시각적 규칙 편집기에 다음과 같이 규칙이 나타납니다.
 

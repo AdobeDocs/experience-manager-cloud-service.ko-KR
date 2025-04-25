@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
-workflow-type: ht
-source-wordcount: '1092'
-ht-degree: 100%
+source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+workflow-type: tm+mt
+source-wordcount: '1551'
+ht-degree: 47%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.3.0) 일자는 2025년 3월 27일입니다. 다음 기능 릴리스(2025.4.0)는 2025년 4월 24일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.4.0) 일자는 2025년 4월 24일 금요일입니다. 다음 기능 릴리스(2025.5.0)는 2025년 5월 29일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -44,17 +44,29 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Experience Manager Sites의 새로운 기능 {#enhancements-sites}
+
+**새 콘텐츠 조각 모델 관리자 UI**
+
+AEM 콘텐츠 조각을 사용하여 작업할 때 새로운 클라이언트측 사용자 인터페이스 목록을 완료하면 이제 콘텐츠 조각 모델에 새 관리 UI를 사용할 수 있습니다. 새 UI는 필터를 사용하여 모델을 검색할 수 있고, 모델 태그 및 특정 모델을 기반으로 하는 콘텐츠 조각이 있는지 표시하는 깔끔하고 현대적인 목록 보기를 제공합니다. 설명서는 [여기](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)에서 찾을 수 있습니다.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
+### Dynamic Media(Scene7) {#dynamic-media-scene7}
 
-**Open API 기능이 포함된 Dynamic Media를 사용하여 긴 양식의 비디오 지원**
+**향상된 보안 환경에서 Dynamic Media(Scene7)가 지원되지 않음**
 
-OpenAPI 기능이 포함된 Dynamic Media가 이제 긴 양식의 비디오를 지원합니다. 최대 50GB와 2시간의 긴 양식 비디오를 지원할 수 있습니다.
+AEM as a Cloud Service의 Dynamic Media(Scene7)는 HIPAA를 사용할 수 없으며 향상된 보안이 활성화된 AEM 환경에서 사용할 수 없습니다.
 
-### Dynamic Media Classic {#dmc}
+2025년 4월 AEM as a Cloud Service 릴리스부터 기술 제한 사항으로 인해 보안이 강화된 환경에서 Dynamic Media(Scene7)가 구성되지 않습니다. 따라서 이러한 환경에서는 **도구** > **클라우드 서비스**&#x200B;의 **Dynamic Media 구성** 카드가 더 이상 표시되지 않습니다.
 
-<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+또한 AEM 6.5를 사용하는 고객은 Dynamic Media(Scene7) 스택이 HIPAA를 사용할 수 없다는 것을 알고 있어야 합니다.
+
+### Dynamic Media Classic {#dynamic-media-classic}
+
+**보고**
 
 Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터 더 이상 지원되지 않습니다.
 
@@ -63,30 +75,83 @@ Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터
 
 ## Assets 보기의 새로운 기능 {#new-features-assets-view}
 
+**자산 관계**
 
-**루트 태그 지원**
+이제 자산 보기의 간소화된 자산 세부 정보 패널에서 자산 관계를 보고 편집할 수 있습니다. 사용자가 관련 히어로 콘텐츠를 보다 효과적으로 찾을 수 있도록 콘텐츠에 Source 및 파생 제품과 같은 관계를 쉽게 추가할 수 있습니다.
 
-이제 AEM Assets는 메타데이터 형식의 태그 속성을 사용자 정의 메타데이터로 매핑하는 것을 지원합니다. 또한 관리자는 특정 루트 태그와 루트 태그 아래에 있는 태그에 대한 액세스를 제한하여 사용자에게 태그 사용 가능성을 제한할 수 있습니다.
+![Assets 관계 예](/help/assets/assets/asset-relations-example.png)
+
+**에셋의 버전 비교**
+
+이제 Assets 보기를 사용하여 에셋의 모든 버전을 최신 버전과 빠르게 선택하고 비교할 수 있습니다.
+
+![에셋의 버전 비교](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
+### 프리릴리스 기능
+
+* [범용 편집기 - 양식 조각](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): 이제 범용 편집기를 사용하여 적응형 Forms에 대한 양식 조각을 만들고 재사용할 수 있습니다. 이러한 조각은 한 번 작성하여 여러 양식에 걸쳐 적용할 수 있는 재사용 가능한 양식 섹션(예: 연락처 세부 정보, 동의 필드)입니다. 이 기능은 양식 생성을 간소화하고 일관성을 보장하며 작성 효율성을 향상시킵니다.
+
+* [SharePoint 문서 라이브러리 - 원본 파일 이름으로 첨부 파일 저장](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): 이제 SharePoint 문서 라이브러리에 양식 첨부 파일을 저장할 때 원본 파일 이름을 사용하여 양식 첨부 파일을 저장할 수 있는 옵션이 제공됩니다. 이 향상된 기능을 통해 업로드된 파일을 간편하게 식별하고 관리할 수 있습니다.
+
+* **규칙 편집기**:
+   * [클릭 이벤트가 있는 이진 조건 &quot;When&quot; 절](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): 이제 규칙 편집기에서 단추 클릭 이벤트(_클릭됨_)를 &quot;When&quot; 절 내의 다른 조건과 결합할 수 있습니다. 이를 통해 사용자 상호 작용 및 기타 요인에 따라 규칙 실행을 보다 정확하게 제어할 수 있습니다. 참고: 여러 조건을 사용할 때 클릭 이벤트는 나열된 첫 번째 조건이어야 합니다.
+   * [필드 및 패널의 유효성 검사 조건](/help/forms/rule-editor-core-components-usecases.md): 이제 규칙 편집기에 _IsValid_ 및 _IsNotValid_ 조건이 포함됩니다. 이를 통해 특정 필드 또는 전체 패널(가로 탭, 세로 탭, 아코디언 및 마법사와 같은 레이아웃 포함)의 유효성 검사 상태를 확인할 수 있으므로 유효성 검사 결과에 따라 양식 탐색 및 사용자 경험을 향상시킬 수 있습니다.
+* **SharePoint 목록에 대한 범위 관리 개선**: 이제 SharePoint 사이트에서 /sites 및 /teams와 같은 관리되는 모든 경로를 지원합니다. 이 향상된 기능을 통해 다양한 SharePoint 사이트 구조 전반에서 보다 광범위한 통합을 수행할 수 있으므로 조직 콘텐츠에 보다 유연하게 연결할 수 있습니다.
+* **SharePoint 목록에 기록 문서 저장 지원**: SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 Forms은 이제 기록 문서 바인딩 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 향상된 기능을 통해 지원되는 양식 데이터 및 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+
+### AEM Forms의 조기 액세스 기능 {#forms-new-early-access-features}
 
 AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다.
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### 적응형 양식의 HTML 이메일 템플릿
+#### Forms과 Adobe Experience Platform(AEP) 통합
 
-적응형 양식을 사용하면 [HTML 이메일 템플릿](/help/forms/html-email-templates-in-adaptive-forms.md)을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식을 제출할 때 내용이 풍부하고 개인화되고 시각적으로 매력적인 이메일을 보낼 수 있습니다. 이러한 이메일은 양식 데이터로 사용자 정의할 수 있으며, 이미지와 링크 등 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 양식을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+이제 얼리어답터에서 Forms과 AEP 간의 통합 기능을 사용할 수 있습니다.
 
-![HTML 이메일 템플릿](/help/forms/assets/html-email.png)
+## CIF 추가 기능 {#cloud-services-cif}
 
-#### 향상된 클라우드 스토리지 지원: Azure Blob 스토리지에 직접 PDF 업로드
+### 개선 사항 {#enhancements-cif}
 
-AEM Forms Document Generation API를 사용하면 이제 [생성된 PDF 문서를 Azure Blob 스토리지에 직접 업로드](/help/forms/early-access-ea-features.md#doc-generation-api)할 수 있습니다. 이러한 향상된 기능을 통해 저장 및 검색을 간소화하여 클라우드 워크플로와의 통합과 효율성이 개선됩니다.
+* CIF 제품 참조 데이터 유형에 대한 제품 변형 선택 추가
+* [실험]: PDP의 CIF 핵심 구성 요소에 JSON+LD
+* [Experimental]: 캐시를 지우는 CIF 기능
+
+### 버그 수정 {#bug-fixes-cif}
+
+* 제품 필드의 검색 문제 해결
+* 제품 URL 형식이 #variant_sku의 예상대로 작동하지 않음
+* 제품 목록 구성 요소에 20개 이상의 SKU를 추가할 수 없음
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### OpenAPI 기반 API {#open-apis}
+
+개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새 AEM as a Cloud Service API는 OpenAPI 사양을 따르며, 일관되고 문서화가 잘 되며 사용자 친화적인 것을 목표로 합니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 생성하여 생성되고 OAuth 서버 간, 웹 앱 및 SPA(단일 페이지 앱)를 지원합니다.
+
+[OpenAPI 기반 API의 전체 목록을 보고](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis), [자세히 알아보기](/help/implementing/developing/open-api-based-apis.md), 구성 및 사용을 보여주는 [종단간 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)을 사용해 보세요.
+
+이 비디오를 통해 나중에 사용할 수 있도록 인증된 API를 구성하는 방법에 대해 알아보십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+### CDN 구성 관련 개선 사항 {#cdn-enhancements}
+
+Adobe 관리 CDN은 [Config Pipeline 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다. 다음은 몇 가지 최신 기능입니다.
+
+#### CDN 로그에 추가 속성 포함 {#props-in-cdnlogs}
+
+디버깅 및 데이터 분석을 포함한 시나리오에 유용하며, [요청 및 응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)에서 `logProperty` 작업을 설정하여 기본 속성 외에 CDN 로그에 더 많은 정보를 포함할 수 있습니다.
+
+#### 일치 조건으로서의 지역, 대륙 및 조직 속성 {#matching-conditions}
+
+이제 CDN 규칙은 트래픽 및 리디렉션 차단을 포함한 사용 사례에 대해 지역, 대륙 및 조직에 따라 일치할 수 있습니다. `clientRegion`과(와) `clientContinent`은(는) 지역에 따라 이미 지원되는 `clientCountry`을(를) 일치시키고 `clientAsName`과(와) `clientAsNumber`은(는) 자율 시스템을 일치시켜 대규모 ISP, 회사 또는 클라우드 공급자를 식별합니다. 이 [새로 노출된 요청 속성](/help/security/traffic-filter-rules-including-waf.md#condition-structure)에 대해 자세히 알아보세요.
+
+#### 쿠키 값 설정 {#cookie-attributes}
+
+[응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)에서 쿠키 특성을 설정할 수 있습니다.
 
 ### Java 21 지원 {#java21}
 
@@ -98,7 +163,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 >
 > Java 21 **런타임**&#x200B;은 2월에 개발/RDE 환경에 배포되었으며, **4월 28일과 29일**&#x200B;에 스테이징/프로덕션 환경에 적용될 예정입니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
 
-### 더 많은 목적지로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
+### 더 많은 대상으로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
 
 현재 Beta 버전에서는 AEM 로그를 New Relic(HTTPS 사용), Amazon S3, Sumo Logic으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)는 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
 
@@ -113,7 +178,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 가능한 일부 사용 사례는 다음과 같습니다.
 
 * 콘텐츠에 대한 액세스를 제어하기 위해 IdP를 통한 인증
-* 지리적 위치, 디바이스 유형, 사용자 속성 등을 기반으로 동적(개인화, 지역화) 콘텐츠 렌더링
+* 지리적 위치, 장치 유형, 사용자 특성 등에 따라 다이내믹 콘텐츠를 렌더링하여 Personalization을 만듭니다.
 * 고급 이미지 조작
 * CDN과 원본 간 미들웨어
 * 브라우저와 서드파티 API 사이의 레이어, API 응답을 다시 포맷하기 위한 목적
@@ -121,31 +186,9 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 질문과 의견을 이메일([aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com))로 보내 주십시오.
 
-### OpenAPI 기반 API - 얼리 어답터 프로그램 {#open-apis-earlyadopter}
-
-개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새 AEM as a Cloud Service API는 OpenAPI 사양을 따르며, 일관되고 문서화가 잘 되며 사용자 친화적인 것을 목표로 합니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 만드는 방식으로 생성됩니다.
-
-[OpenAPI 기반 AEM API](/help/implementing/developing/open-api-based-apis.md)에 대해 자세히 알아보고 구성 및 사용 방법을 안내하는 [전체 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)을 살펴보십시오.
-
-구체적으로 아래에 나열된 API 엔드포인트가 얼리 어답터 프로그램의 일부로 제공됩니다. 관심이 있는 경우 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)에 이메일로 문의하여 사용 계획을 설명해 주십시오.
-
-* [Sites 콘텐츠 조각 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [Forms 커뮤니케이션 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
-
-클라우드 환경에서 코드 디버깅을 위한 보다 인터랙티브한 경험을 제공하는 개선된 [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)을 사용해 보십시오.
-
-현재 AEM Developer Console에서 *새 콘솔 사용 가능* 버튼을 클릭하여 누구나 공개 Beta에 액세스할 수 있습니다. Adobe는 여러분의 피드백을 환영합니다. 의견이 있는 경우 [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)으로 이메일을 보내 주십시오.
-
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 

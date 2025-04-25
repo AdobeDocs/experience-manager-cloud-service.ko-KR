@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.1.0 �
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1703'
 ht-degree: 91%
 
 ---
@@ -97,9 +97,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 * DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있습니다.
 
-**자산 관계**
-
-이제 자산 보기의 간소화된 자산 세부 정보 패널에서 자산 관계를 보고 편집할 수 있습니다. 소스 및 파생과 같은 관계를 콘텐츠에 쉽게 추가하면 사용자가 관련성 있는 히어로 콘텐츠를 보다 효과적으로 찾을 수 있습니다.
 
 **자산 재처리**
 
