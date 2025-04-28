@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1500'
 ht-degree: 11%
 
 ---
@@ -703,12 +703,7 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
 
 #### 리치 텍스트 {#rich-text}
 
-서식 있는 텍스트를 사용하면 여러 줄의 서식 있는 텍스트를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
-
-| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
-|---|---|---|---|
-| `maxSize` | `number` | 허용되는 최대 문자 수 | 아니요 |
-| `customErrorMsg` | `string` | `maxSize`을(를) 초과할 경우 표시되는 메시지 | 아니요 |
+서식 있는 텍스트를 사용하면 여러 줄의 서식 있는 텍스트를 입력할 수 있습니다.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 샘플 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
