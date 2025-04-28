@@ -4,9 +4,9 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1133'
 ht-degree: 50%
 
 ---
@@ -30,7 +30,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ## 구성 {#configuration}
 
-수신 관리 센터 전자 메일 알림을 구성하려면 [알림 프로필](/help/journey-onboarding/notification-profiles.md)에 설명된 대로 제품 프로필을 만듭니다. 즉, 문제 알림 - Cloud Service 및 사전 알림 - Cloud Service. 또한 해당 프로필에 조직의 적절한 Adobe ID를 할당합니다. 이를 통해 관리자는 해당 이메일 알림을 수신하려는 사용자를 확인할 수 있습니다.
+수신 관리 센터 이메일 알림을 구성하려면 [알림 프로필](/help/journey-onboarding/notification-profiles.md)에 설명된 대로 제품 프로필을 만듭니다. 즉, 문제 알림 - Cloud Service 및 사전 알림 - Cloud Service. 또한 해당 프로필에 조직의 적절한 Adobe ID를 할당합니다. 이를 통해 관리자는 해당 이메일 알림을 수신하려는 사용자를 확인할 수 있습니다.
 
 >[!NOTE]
 >액션 센터 이메일 알림은 조직 수준에서 작동하므로 구독자는 해당 프로그램 내의 모든 프로그램 및 환경에 대한 알림을 수신합니다.
@@ -75,9 +75,9 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
 | 잘못된 지속 GraphQL 쿼리 | 인시던트 | [지속된 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)를 참조하여 잘못된 GraphQL 쿼리를 수정하십시오. |
-| 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 섹션을 참조하십시오. |
+| 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 보호합니다.  자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 섹션을 참조하십시오. |
 | CDN 트래픽 필터 규칙 트리거됨 | 인시던트 | 일치하는 트래픽 필터 규칙이 공격을 반영하지만 사이트에서 해당 트래픽을 차단하지 않는 경우 차단 모드에서 트래픽 필터 규칙을 구성하여 사이트를 보호하십시오. 자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 필터 규칙으로 웹 사이트 보호(WAF 규칙 포함)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) 섹션을 참조하십시오. |
-| Splunk 로그 전달 오류 | 인시던트 | Splunk 끝점이 작동하며 AEM Cloud Service 환경에서 접근 가능한지 확인하십시오. 로그 전달에 대한 자세한 내용은 [Splunk 로그 전달 설명서](/help/implementing/developing/introduction/logging.md#splunk-logs)를 참조하십시오. 문제 해결에 도움이 필요하거나 로깅 구성을 변경해야 하는 경우 Adobe으로 지원 티켓을 높입니다. |
+| Splunk 로그 전달 오류 | 인시던트 | Splunk 끝점이 작동하며 AEM Cloud Service 환경에서 접근 가능한지 확인하십시오. 로그 전달에 대한 자세한 내용은 [Splunk 로그 전달 설명서](/help/implementing/developing/introduction/logging.md#splunk-logs)를 참조하십시오. 문제 해결에 대한 지원이 필요하거나 로깅 구성을 변경해야 하는 경우 Adobe에서 지원 티켓을 제공하십시오. |
 | 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx)를 참조하세요. | |
 | 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. [제거 작업을 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) 알아보기 |               |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | [고급 네트워킹 설명서와 함께 연결 풀링에 대해 알아봅니다](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
@@ -87,4 +87,5 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | JCR 콘텐츠 누락 | 사전 알림 | 누락된 JCR 콘텐츠 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. | |
 | 완료된 워크플로가 삭제되지 않음 | 사전 알림 | 90일 이상 된 워크플로 인스턴스를 삭제하여 워크플로 인스턴스 수를 최소화하고 성능을 향상시킵니다. [유지 관리 작업을 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance)하는 방법 알아보기 | |
 | 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. | |
-| 느린 쿼리 | 사전 알림 | [JCQ 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)에서 제안하는 대로 올바른 인덱스 정의를 정의하여 느린 쿼리를 수정하십시오. |
+| 느린 쿼리 | 사전 알림 | [JCQ 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)에서 제안하는 대로 올바른 인덱스 정의를 정의하여 느린 쿼리를 수정하십시오. | |
+| 색인 없는 쿼리 | 사전 알림 | 인덱스를 사용하지 않는 쿼리를 실행하지 마십시오. [인덱싱 문서에 대한 링크](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing) |
