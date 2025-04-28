@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,7 @@ ht-degree: 99%
 
 AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge Delivery Services 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
 
-<!-->
-![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
+![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png){width=auto}
 
 이 튜토리얼에서는 범용 편집기의 WYSIWYG 작성 기능을 사용하여 새 Adobe Experience Manager 사이트 프로젝트나 기존 Adobe Experience Manager 사이트 프로젝트에서 직접 양식을 만들고, 미리 보고, 게시하는 방법을 안내합니다.
 

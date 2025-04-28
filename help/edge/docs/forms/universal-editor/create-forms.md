@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 1e5711a1b671663653fe22ee08bc01f584655d76
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 26%
+source-wordcount: '403'
+ht-degree: 15%
 
 ---
 
@@ -45,274 +45,274 @@ AEM에서 양식을 작성하고 Edge Delivery Services을 통해 게시하기 �
 
 <!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}-->
+![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
 
-## AEM에서 양식 작성 및 Edge Delivery Services에 게시
+## Authoring forms in AEM and publishing them to Edge Delivery Services
 
-다음 단계에 따라 AEM에서 양식을 작성하고 Edge Delivery Services에 게시합니다.
+Follow these steps to author forms in AEM and publish them on Edge Delivery Services:
 
-[1. 템플릿을 선택하고 양식 만들기](#choose-a-template-and-create-the-form)
+[1. Choose a template and create the form](#choose-a-template-and-create-the-form)
 
-[2. 양식 작성](#author-the-form)
+[2. Author the form](#author-the-form)
 
-[3. Edge Delivery Services 구성 만들기](#create-an-edge-delivery-services-configuration)
+[3. Publish a form](#publish-a-form)
 
-[4. 양식 게시](#publish-a-form)
+### Choose a template and create the form 
 
-[5. Edge Delivery Services에서 양식 액세스](#access-the-form-on-edge-delivery-services)
-
-### 템플릿을 선택하고 양식 만들기
-
-다음을 사용하여 Edge Delivery Services에 게시하기 위해 AEM 인스턴스에서 양식을 만들 수 있습니다.
-
-* Edge Delivery Services 기반 템플릿
-* 핵심 구성 요소 기반 템플릿
-
-템플릿을 선택하고 양식을 만들려면 다음 단계를 수행하십시오.
-
-1. AEM Forms as a Cloud Service 작성자 인스턴스에 로그인합니다.
-1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 양식]**&#x200B;을 선택합니다. 마법사가 열립니다.
-1. 템플릿을 선택합니다. 다음 중 하나를 선택할 수 있습니다.
-   * **Edge Delivery Services 기반 템플릿의 경우**
-
-     **Source** 탭에서 **Edge Delivery Services 기반 템플릿**&#x200B;을(를) 선택합니다.
-
-     ![EDS 양식 만들기](/help/edge/assets/create-eds-forms.png)
-
-     **Edge Delivery Services 기반 템플릿**&#x200B;을(를) 선택하면 **[!UICONTROL 만들기]** 단추가 활성화됩니다.
-
-      * **핵심 구성 요소 기반 템플릿**
-
-     **Source** 탭에서 **핵심 구성 요소 기반 템플릿**&#x200B;을(를) 선택하고 **테마**&#x200B;를 선택하면 **[!UICONTROL 만들기]** 단추가 활성화됩니다.:
-
-     ![핵심 구성 요소 기반 템플릿](/help/forms/assets/core-component-based-template.png)
-
-1. (선택 사항) **[!UICONTROL 데이터 소스]** 또는 **[!UICONTROL 제출]** 탭에서 데이터 소스를 선택하거나 액션을 제출할 수 있습니다.
-1. (선택 사항) **[!UICONTROL 게재]** 탭에서 양식의 게시 또는 게시 취소 일자를 지정할 수 있습니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 다음에 대한 **양식 만들기** 마법사가 나타납니다.
-
-   * **Edge Delivery Services 템플릿 기반 양식**
-
-      1. **이름**&#x200B;과 **제목**&#x200B;을 지정합니다.
-      2. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 저장소의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 다음과 같습니다.
-         `https://github.com/wkndforms/edsforms`
-
-         ![양식 생성 마법사](/help/edge/assets/create-form-wizard.png)
-
-         **[!UICONTROL 만들기]**&#x200B;를 클릭하면 범용 편집기에서 작성할 양식이 열립니다.
-
-         ![작성자 양식](/help/edge/assets/author-form.png)
-
-   * **핵심 구성 요소 템플릿 기반 양식**
-
-      1. **이름**&#x200B;과 **제목**&#x200B;을 지정합니다.
-      1. **경로** 필드에 적응형 양식을 저장할 위치를 지정하십시오.
-
-         ![양식 만들기 마법사](/help/forms/assets/create-cc-form.png)
-
-         **[!UICONTROL 만들기]**&#x200B;를 클릭하면 작성을 위해 적응형 양식 편집기에서 양식이 열립니다.
-
-         ![적응형 양식 편집기](/help/forms/assets/af-editor-form.png)
-
-1. 양식을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 클릭하십시오. 이제 범용 편집기 또는 적응형 양식 편집기를 사용하여 양식을 작성할 수 있습니다.
-
-### 양식 작성
-
-Edge Delivery Services 기반 템플릿을 사용하여 만든 양식은 작성을 위해 [유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에서 열립니다. 그러나 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식은 작성을 위해 적응형 양식 편집기에 열립니다.
-
-Edge Delivery Services 기반 템플릿용 범용 편집기 또는 핵심 구성 요소 기반 템플릿용 적응형 양식 편집기 를 사용하여 양식을 작성하려면 다음 단계를 수행하십시오.
+You can create forms on an AEM instance for publishing to Edge Delivery Services using:
 
 >[!BEGINTABS]
 
->[!TAB Edge Delivery Services 기반 템플릿]
+>[!TAB Edge Delivery Services-based template]
 
+Perform the following steps to choose the template and create the form:
 
-1. 콘텐츠 브라우저를 열고 **콘텐츠 트리**&#x200B;의 **[!UICONTROL 적응형 양식]** 구성 요소로 이동합니다.
+1. Login in to your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
+1. In the **Source** tab, select an **Edge Delivery Services-based template**:
 
-   ![콘텐츠 트리](/help/edge/assets/content-tree.png)
+      ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
-1. **[!UICONTROL 추가]** 아이콘을 클릭하고 **적응형 양식 구성 요소** 목록에서 원하는 구성 요소를 추가합니다.
-   ![구성 요소 추가](/help/edge/assets/add-component.png)
+      When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
+1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears:
+   
+    1. Specify the **Name** and **Title**. 
+    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
+    `https://github.com/wkndforms/edsforms`
 
-   아래 스크린샷에는 범용 편집기에서 작성된 `Registration Form`이(가) 표시됩니다.
+    ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
 
-   ![문의 양식](/help/edge/assets/contact-us.png)
+    When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
 
->[!NOTE]
->
-> 범용 편집기를 사용하여 적응형 양식을 작성하는 방법에 대한 자세한 지침은 [여기를 클릭](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)하십시오.
+    ![author the form](/help/edge/assets/author-form.png)
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Universal Editor](#author-the-form).
 
-이제 [양식 제출 작업을 구성하고 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)할 수 있습니다.
+>[!TAB Core Component-based template]
 
->[!TAB 핵심 구성 요소 기반 템플릿]
+Perform the following steps to choose the template and create the form:
 
-1. **구성 요소를 여기로 드래그하십시오** 섹션에서 **[!UICONTROL 구성 요소 삽입]**&#x200B;을 클릭합니다.
+1. Login in to your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
+1. In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
+          
+  ![Core Component based template](/help/forms/assets/core-component-based-template.png)
 
-   ![구성 요소를 여기로 드래그하십시오](/help/forms/assets/drag-components-af-editor.png)
+1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
+     1. Specify the **Name** and **Title**.
+     2. Specify the location in the **Path** field where the Adaptive Form is to be saved.
+          
+      ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
 
-1. **적응형 양식 구성 요소** 목록에서 원하는 구성 요소를 추가합니다.
+      When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
 
-   ![구성 요소 추가](/help/forms/assets/add-component-af.png)
+      ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
 
-아래 스크린샷에는 적응형 양식 편집기에서 작성된 `Enrollment Form`이(가) 표시됩니다.
-
-![적응형 양식 편집기](/help/forms/assets/af-editor-form.png)
-
->[!NOTE]
->
-> 핵심 구성 요소 템플릿을 기반으로 적응형 양식을 만드는 방법에 대한 자세한 지침을 보려면 [여기를 클릭](/help/forms/creating-adaptive-form-core-components.md)하십시오.
-
-이제 [양식의 제출 액션을 구성](/help/forms/configure-submit-actions-core-components.md)할 수 있습니다.
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Adaptive Form Editor](#author-the-form).
 
 >[!ENDTABS]
 
-### Edge Delivery Services 구성 만들기
+### Author the form
 
-Edge Delivery Services에 적응형 양식을 게시하려면 AEM 인스턴스에 Edge Delivery Services 구성을 만들어야 합니다. Edge Delivery Services 구성을 만들려면 다음 단계를 수행하십시오.
+The forms created using the Edge Delivery Services-based template open in the [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) for authoring. However, the forms created using the Core Component-based template open in the Adaptive Form Editor for authoring.
+
+Perform the following steps to author forms using the Universal Editor for Edge Delivery Services-based template or using Adaptive Form Editor for  Core Component based template:
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Services 기반 템플릿을 사용하여 만든 양식용]
 
+>[!TAB Edge Delivery Services-based template]
+  
 
-Edge Delivery Services 기반 템플릿을 기반으로 하는 양식에 대한 Edge Delivery Services 구성은 양식의 구성 컨테이너에서 자동으로 만들어집니다.
+ 1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-![Edge Delivery Services 구성](/help/edge/assets/aem-instance-eds-configuration.png)
+    ![content tree](/help/edge/assets/content-tree.png)
 
->[!TAB 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식의 경우]
+ 1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
+    ![add component](/help/edge/assets/add-component.png)
 
-1. AEM Forms as a Cloud Service 작성자 인스턴스에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Edge Delivery Services 구성]**&#x200B;으로 이동합니다.
+     The screenshot below displays the `Registration Form` authored in the Universal Editor:
 
-   ![Edge Delivery Services 구성 선택](/help/edge/assets/select-eds-conf.png)
+     ![contact us form](/help/edge/assets/contact-us.png)
 
-1. 양식 이름과 일치하는 폴더를 선택합니다. 예를들어, 폼이 `enrollment-form`이면 `forms/enrollment-form` 폴더를 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
+  >[!NOTE]
+  >
+  > For detailed instructions on authoring an Adaptive Form using the Universal Editor, [click here](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-   ![Edge Delivery Services 구성](/help/forms/assets/create-eds-conf.png)
+  Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-1. **[!UICONTROL Edge Delivery Services 구성]**&#x200B;을 클릭하고 **[!UICONTROL 속성]**&#x200B;을 클릭하여 속성을 엽니다.
+>[!TAB Core Component-based template]
 
-   ![자동으로 생성된 구성](/help/forms/assets/eds-conf.png)
+  1. Click **[!UICONTROL Insert component]** in the **Drag components here** section.
 
-   Edge Delivery Services 구성이 나타납니다.
+     ![Drag components here](/help/forms/assets/drag-components-af-editor.png)
 
-1. Edge Delivery Services 구성에서 다음을 지정합니다.
+  1. Add the desired components from the **Adaptive Form Components** list. 
 
-   * **조직**: GitHub 조직 이름을 지정하십시오.
+     ![Add components](/help/forms/assets/add-component-af.png)
 
-   * **사이트 이름**: GitHub 저장소 이름을 지정하십시오.
-   * **분기**: 분기 이름을 지정하십시오. 주 분기를 사용하는 경우 텍스트 상자를 비워 둡니다.
-   * **(선택 사항) Edge 호스트**: Edge 호스트 옵션을 그대로 둡니다. 양식이 미리보기(.page) 및 라이브(.live) 환경 모두에 게시됩니다.
-   * **(선택 사항) 사이트 인증 토큰**: 사이트 인증 토큰을 사용하여 AEM 인스턴스와 Edge Delivery Services 간의 요청을 안전하게 인증합니다.
+   The screenshot below displays the `Enrollment Form` authored in the Adaptive Form Editor:
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 구성이 생성됩니다.
+   ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+
+  >[!NOTE]
+  >
+  > For detailed guidance on creating an Adaptive Form based on the Core Component template, [click here](/help/forms/creating-adaptive-form-core-components.md).
+
+  Now you can [configure the submit actions for forms](/help/forms/configure-submit-actions-core-components.md).
 
 >[!ENDTABS]
 
-### 양식 게시
+### Publish the Form
 
-Edge Delivery Services에서 양식에 액세스하려면 양식을 게시해야 합니다.
+To publish an Adaptive Form on Edge Delivery Services, you need to [create an Edge Delivery Services Configuration on an AEM](#create-an-edge-delivery-services-configuration) instance. 
 
-양식을 게시하려면 다음 단계를 수행하십시오.
+#### Create an Edge Delivery Services Configuration
+
+Perform the following steps to create the Edge Delivery Services Configuration:
 
 >[!BEGINTABS]
->[!TAB 유니버설 편집기에서]
+>[!TAB For forms created using the Edge Delivery Services-based template]
 
-1. 범용 편집기의 오른쪽 상단에 있는 **[!UICONTROL 게시]** 단추를 클릭하여 양식을 게시합니다.
 
-![양식 게시](/help/edge/assets/publish-form.png)
+  The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
 
->[!NOTE]
->
-> Edge Delivery Services에 양식을 게시하는 방법은 [게시 및 배포](/help/edge/docs/forms/universal-editor/publish-forms.md) 설명서를 참조하십시오.
+  ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB 적응형 양식 편집기에서]
+>[!TAB For forms created using the Core Component-based template]
 
-1. Experience Manager Forms 콘솔에서 상위 폴더로 이동하여 게시할 양식을 선택합니다.
+  1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 
-1. 도구 모음에서 **[!UICONTROL 게시]** 옵션을 클릭하여 양식과 함께 게시되는 모든 참조 자산을 살펴보십시오.
+     ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
 
-![적응형 양식 편집기에서 양식 게시](/help/forms/assets/publish-af-editor.png)
+  1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
 
->[!NOTE]
->
-> 적응형 양식 편집기에서 양식을 게시하는 방법에 대한 자세한 내용은 [Experience Manager Forms에서 게시 관리](/help/forms/manage-publication.md) 문서를 참조하십시오.
+     ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
+
+  1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
+     
+     ![Automatically created configuration](/help/forms/assets/eds-conf.png)
+
+     The Edge Delivery Services Configuration appears.
+
+  1. Specify the following in the Edge Delivery Services Configuration:
+
+     * **Organization**: Specify your GitHub organization name.
+
+     * **Site Name**: Specify your GitHub repository name.
+     * **Branch**: Specify the branch name. Leave the textbox empty if using the main branch.
+     * **(Optional) Edge Host**: Leave the Edge Host option as it is. The form is published to both preview (.page) and live (.live) environments.
+     * **(Optional) Site Authentication Token**: Use the Site Authentication Token to securely authenticate requests between your AEM instance and Edge Delivery Services.
+
+  1. Click **[!UICONTROL Save and Close]**. The configuration is created.
 
 >[!ENDTABS]
 
-## Edge Delivery Services에서 양식 액세스
+#### Access the form on Edge Delivery Services
 
-* **스테이징된 버전(테스트용)**: 스테이징된 버전에 테스트 목적으로 게시 취소된 양식의 작업 버전이 표시됩니다. 다음 URL 형식을 사용하여 양식이 라이브로 전환되기 전에 미리 봅니다.
-
-  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
-
-
-
-* **라이브 버전(게시된 양식)**: 라이브 버전에 최종 사용자가 액세스할 수 있는 최근 게시된 양식 버전이 표시됩니다. 다음 URL 형식을 사용하여 게시된 양식의 라이브 버전에 액세스합니다.
-
-  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
-
-  URL 구조는 스테이징된 버전과 라이브 버전 모두에서 동일하게 유지됩니다. 그러나 표시되는 콘텐츠는 컨텍스트에 따라 다릅니다.
-
-아래 스크린샷은 Edge Delivery Services 기반 및 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식의 스테이징 및 라이브 양식 URL과 시각적 미리보기를 비교합니다.
+To access the form on Edge Delivery Services, it is mandatory to publish the form. Perform the following steps to publish the form:
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Services 기반 템플릿을 사용하여 만든 양식에 액세스]
+>[!TAB On Universal Editor]
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+   1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
+
+  ![publish form](/help/edge/assets/publish-form.png)
+
+   >[!NOTE]
+   >
+   > Refer to the [Publish and Deploy](/help/edge/docs/forms/universal-editor/publish-forms.md) article to learn how to publish a form to Edge Delivery Services.
+
+>[!TAB On Adaptive Form Editor]
+
+  1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish.
+
+  1. Click **[!UICONTROL Publish]**  option from the toolbar, take a look at all the reference assets that would be published with form.
+
+  ![Publish Form on Adaptive Form Editor](/help/forms/assets/publish-af-editor.png)
+
+  >[!NOTE]
+  >
+  > Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
+
+>[!ENDTABS]
+
+* **Staged Version (for testing)**: The staged version displays the unpublished, working version of the form for testing purposes. Use the following URL format to preview the form before it goes live:
+
+    `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+
+    
+
+* **Live Version (published form)**:   The live version displays the most recently published version of the form, accessible to end users. Use the following URL format to access the published, live version of the form:
+
+    `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+
+     The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context.
+
+The below screenshots compares staged and live form URLs and visual previews for forms created using Edge Delivery Services-based and Core Component-based templates:
+
+>[!BEGINTABS]
+>[!TAB Accessing forms created using Edge Delivery Services-based Template]
+
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
     <tr>
-      <th style="width: 20%;"><strong>버전</strong></th>
-      <th style="width: 80%;"><strong>이미지</strong></th>
+      <th style="width: 20%;"><strong>Version</strong></th>
+      <th style="width: 80%;"><strong>Image</strong></th>
     </tr>
     </thead>
     <tbody>
     <tr>
-      <td>스테이징된 버전</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="등록 양식의 스테이징된 버전" style="width: 100%; height: auto;" /></td>
+      <td>Staged Version</td>
+      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Staged version of registration form" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>라이브 버전</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="등록 양식의 라이브 버전" style="width: 100%; height: auto;" /></td>
+      <td>Live Version</td>
+      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Live version of registration form" style="width: 100%; height: auto;" /></td>
     </tr>
     </tbody>
   </table>
 
->[!TAB 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식에 액세스]
+>[!TAB Accessing forms created using Core Component-based Template]
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
-      <th style="width: 20%;"><strong>버전</strong></th>
-      <th style="width: 80%;"><strong>이미지</strong></th>
+      <th style="width: 20%;"><strong>Version</strong></th>
+      <th style="width: 80%;"><strong>Image</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>스테이징된 버전</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="등록 양식의 스테이징된 버전" style="width: 100%; height: auto;" /></td>
+      <td>Staged Version</td>
+      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="Staged version of enrollment form" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>라이브 버전</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="등록 양식의 라이브 버전" style="width: 100%; height: auto;" /></td>
+      <td>Live Version</td>
+      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Live version of enrollment form" style="width: 100%; height: auto;" /></td>
     </tr>
   </tbody>
   </table>
 
 >[!ENDTABS]
 
-## 문제 해결
+## Troubleshooting 
 
-양식을 로딩하는 데 문제가 있습니까? 여기 몇 가지 일반적인 문제와 해결 방법이 있습니다.
+Having trouble loading your form? Here are some common issues and how to fix them:
 
-* **양식 URL**: 양식의 URL 끝에 “.html” 확장 기능이 포함되어 있지 않은지 다시 한 번 확인합니다. Edge Deliver Service에는 이 확장 기능이 필요하지 않습니다.
+* **Form URL**: Double-check that your form's URL doesn't include the ".html" extension at the end. Edge Deliver Service does not require this extension.
 
-* **AEM 작성자 UR** L: `fstab.yaml` 파일에 나열된 AEM 작성자 URL 형식이 올바른지 확인합니다. 다음 세부 정보가 포함되어야 합니다.
+* **AEM Author UR**L: Make sure the AEM Author URL listed in your `fstab.yaml` file is formatted correctly. It should include the following details:
 
-   * 올바른 GitHub 소유자
-   * 올바른 저장소 이름
-   * Edge Delivery Services에 사용 중인 특정 분기
+    * The correct GitHub owner
+    * The correct repository name
+    * The specific branch that you're using for Edge Delivery Services
 
-## 양식 만들기 시작
+## Start creating forms
 
 {{universal-editor-see-also}}
 
