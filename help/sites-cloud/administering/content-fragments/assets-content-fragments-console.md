@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 10%
+source-wordcount: '247'
+ht-degree: 11%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 10%
 기본적으로 Adobe Experience Manager as a Cloud Service의 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)에는 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)이 표시됩니다.
 
 그러나 이 **콘텐츠 조각 콘솔**&#x200B;에서 다른 모든 종류의 **Assets**&#x200B;을 보고 관리할 수도 있습니다.
-
->[!IMPORTANT]
->
->콘텐츠 조각 콘솔의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 >[!NOTE]
 >

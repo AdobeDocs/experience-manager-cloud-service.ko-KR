@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 85%
+source-wordcount: '1977'
+ht-degree: 86%
 
 ---
 
 # 콘텐츠 조각 작업 개요 {#overview-working-with-content-fragments}
-
->[!IMPORTANT]
->
->얼리어답터 프로그램을 통해 콘텐츠 조각 및 콘텐츠 조각 모델의 다양한 기능을 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 [Headless 게재](/help/headless/what-is-headless.md) 및 [페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 

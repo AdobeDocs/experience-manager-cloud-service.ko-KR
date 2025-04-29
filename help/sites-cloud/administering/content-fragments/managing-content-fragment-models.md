@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 48%
+source-wordcount: '2260'
+ht-degree: 49%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 48%
 콘텐츠 조각 콘솔에서 콘텐츠 조각 모델을 관리한 다음 [편집기를 열고](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 구조를 정의할 수 있습니다.
 
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이러한 조각을 Headless 콘텐츠 또는 페이지 작성의 기반으로 사용할 수 있습니다.
-
->[!IMPORTANT]
->
->콘텐츠 조각 콘솔의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 >[!NOTE]
 >
@@ -255,7 +249,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
    ![제목 및 설명](assets/cf-managing-content-fragment-models-create.png)
 
-1. **만들기**&#x200B;를 사용하여 빈 모델을 저장하거나 **만들기 및 열기**&#x200B;를 사용합니다.
+1. **만들기** 메뉴를 사용하여 빈 모델을 저장하거나 새로 **만들고 엽니다**.
 
 ### 콘텐츠 조각 모델 활성화 {#enabling-a-content-fragment-model}
 

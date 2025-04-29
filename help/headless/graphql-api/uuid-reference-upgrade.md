@@ -3,26 +3,21 @@ title: UUID 참조용 콘텐츠 조각 업그레이드
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 최적화된 UUID 참조를 위해 콘텐츠 조각을 업그레이드하는 방법을 알아봅니다.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 2%
 
 ---
 
 # UUID 참조용 콘텐츠 조각 업그레이드 {#upgrade-content-fragments-for-UUID-references}
 
->[!IMPORTANT]
->
->컨텐츠 조각과 함께 사용하기 위한 GraphQL API의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
-
 GraphQL 필터의 안정성을 최적화하기 위해 UUID(범용 고유 식별자)를 사용하도록 콘텐츠 조각에서 콘텐츠 및 조각 참조를 업그레이드할 수 있습니다.
 
 원래 콘텐츠 조각 모델은 **콘텐츠 참조** 및 **조각 참조**&#x200B;의 데이터 형식을 제공했습니다. 이러한 두 참조는 모두 참조된 리소스를 가리키는 경로를 사용하며 리소스를 이동할 경우 이 경로가 오래된 경로가 될 수 있습니다. 이러한 참조가 대부분의 시나리오에서 충분치 않지만 콘텐츠 조각 모델 은 UUID를 기반으로 참조를 제공하도록 확장되었습니다.
 
-* **콘텐츠 참조(UUID)**
+* **콘텐츠 참조 (UUID)**
 * **조각 참조(UUID)**.
 
 이러한 새 참조 유형은 새 콘텐츠 조각 모델 및 조각에서 모두 사용하고 기존 인스턴스를 확장하는 데 사용할 수 있습니다.
@@ -115,19 +110,19 @@ GraphQL 필터의 안정성을 최적화하기 위해 UUID(범용 고유 식별�
 
 ### 콘텐츠 업그레이드 시작 {#start-a-content-upgrade}
 
-| 끝점 | HTTP 요청 유형 | 댓글 |
+| 엔드포인트 | HTTP 요청 유형 | 댓글 |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
 | **요청 매개 변수** | **값** | |
 | action | `start` | |
 | serviceTypeId | `uuidUpgradeService` | 서비스 유형 ID(사전 정의된 고정 값). |
 |  segmentSize | `1000` | 한 세그먼트(일괄 처리)에서 업그레이드할 콘텐츠 조각 또는 모델의 수입니다. |
-| 기본 경로 | `/conf` | 다음 중 하나를 지정합니다.<ul><li>모든 AEM 구성을 업그레이드할 루트 `/conf`</li><li>선택한 AEM 구성 경로. 콘텐츠 업그레이드가 실행되는 <br>예: `/conf/wknd-shared`은(는) 단일 테넌트 `wknd-shared`만 업그레이드합니다.</li></ul> |
+| 기본 경로 | `/conf` | 다음 중 하나를 지정합니다.<ul><li>모든 AEM 구성을 업그레이드하기 위한 루트 `/conf`</li><li>선택한 AEM 구성 경로. 콘텐츠 업그레이드가 실행되는 <br>예: `/conf/wknd-shared`은(는) 단일 테넌트 `wknd-shared`만 업그레이드합니다.</li></ul> |
 | 간격 | `10` | 콘텐츠 조각 또는 모델의 다음 세그먼트가 업그레이드되는 간격(초)입니다. |
-| 모드 | `replicate`, `noReplicate` | <ul><li>`replicate`: 모든 AEM Publish 인스턴스에서 동일한 작업을 복제합니다</li><li>`noReplicate`: AEM 작성자 인스턴스에서만 작업을 실행합니다.</li></ul> |
+| 모드 | `replicate`, `noReplicate` | <ul><li>`replicate`: 모든 AEM 게시 인스턴스에서 동일한 작업을 복제합니다.</li><li>`noReplicate`: AEM 작성자 인스턴스에서만 작업을 실행합니다.</li></ul> |
 | dryRun |  `true`, `false` | <ul><li>`false`: 콘텐츠 변경 내용을 저장하지 않고 콘텐츠 업그레이드를 시뮬레이션합니다.</li><li>`true`: 콘텐츠 업그레이드를 수행하고 콘텐츠 변경 내용을 저장합니다.</li></ul> |
 | **응답 세부 정보** | **값** | |
-| jobId | `UUID` |  콘텐츠 업그레이드를 실행하는 작업의 ID입니다.<ul><li>이 ID는 이 실행과 관련된 모든 후속 호출에 필요합니다.</li><li>`mode` 값이 `replicate`(으)로 설정된 경우 AEM Publish 인스턴스에서의 실행도 동일한 `jobId` 아래에 있어야 합니다.</li></ul> |
+| jobId | `UUID` |  콘텐츠 업그레이드를 실행하는 작업의 ID입니다.<ul><li>이 ID는 이 실행과 관련된 모든 후속 호출에 필요합니다.</li><li>`mode` 값이 `replicate`(으)로 설정된 경우 AEM 게시 인스턴스에서의 실행도 동일한 `jobId` 아래에 있어야 합니다.</li></ul> |
 | 매개 변수 | 콘텐츠 업그레이드 매개 변수 | 여기에는 콘텐츠 업그레이드를 시작하기 위해 제공되는 초기 매개 변수와 일부 내부 기본값이 포함됩니다. |
 
 
@@ -185,7 +180,7 @@ Content-Length: 386
 
 ### 콘텐츠 업그레이드 상태 가져오기 {#get-the-status-of-a-content-upgrade}
 
-| 끝점 | HTTP 요청 유형 | 댓글 |
+| 엔드포인트 | HTTP 요청 유형 | 댓글 |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `GET` | |
 | **요청 매개 변수** | **값** | |
@@ -267,7 +262,7 @@ Content-Length: 1116
 
 +++샘플 로그 파일
 
-AEM 로그는 HTTP 끝점에서 가져온 실행 중인 콘텐츠 업그레이드의 상태 외에도 콘텐츠 수준의 진행 상황에 대한 자세한 정보를 제공합니다. 예:
+HTTP 끝점에서 가져온 실행 중인 콘텐츠 업그레이드의 상태 외에도 AEM 로그는 콘텐츠 수준의 진행 상황에 대한 자세한 정보를 제공합니다. 예:
 
 ```xml
 #Successful model upgrade
@@ -302,7 +297,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 >
 >이 작업은 주의하여 사용하십시오.
 
-| 끝점 | HTTP 요청 유형 | 댓글 |
+| 엔드포인트 | HTTP 요청 유형 | 댓글 |
 |--- |--- |--- |
 | `/libs/dam/cfm/maintenance.json` | `POST` | |
 | **요청 매개 변수** | **값** | |

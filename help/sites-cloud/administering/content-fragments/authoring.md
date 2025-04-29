@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 70%
+source-wordcount: '2817'
+ht-degree: 71%
 
 ---
 
 # 콘텐츠 조각 작성 {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->콘텐츠 조각 편집기의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 콘텐츠 조각 작성은 Headless 게재와 페이지 작성 모두에 중점을 두고 있습니다.
 

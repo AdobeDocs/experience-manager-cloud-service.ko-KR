@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 64%
+source-wordcount: '2230'
+ht-degree: 67%
 
 ---
 
 # 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->콘텐츠 조각 모델의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
->
->상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이 조각은 페이지 작성에 사용하거나 Headless 콘텐츠의 기반으로 사용할 수 있습니다.
 
@@ -131,13 +125,13 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
       * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
       * 필드의 새 인스턴스 만들기
    * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
-* **조각 참조(UUID)**
+* **조각 참조 (UUID)**
    * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
    * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
       * 참조된 조각 직접 편집
       * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
       * 필드의 새 인스턴스 만들기
-   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
       * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 조각을 찾아볼 수 있습니다
 
 * **콘텐츠 참조**
@@ -145,11 +139,11 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 이미지가 참조되면 썸네일을 표시하도록 선택할 수 있습니다.
    * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
    * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
-* **콘텐츠 참조(UUID)**
+* **콘텐츠 참조 (UUID)**
    * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
    * 이미지가 참조되면 썸네일을 표시하도록 선택할 수 있습니다.
    * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
-   * 편집기에서 참조는 참조된 리소스에 대한 경로를 지정합니다. 내부적으로 참조는 리소스를 참조하는 UUID(범용 고유 ID)로 유지됩니다
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
       * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 에셋 리소스를 찾아볼 수 있습니다
 
 * **JSON 오브젝트**
