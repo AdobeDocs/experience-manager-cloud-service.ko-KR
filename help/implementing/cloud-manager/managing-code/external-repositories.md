@@ -3,9 +3,9 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badgePremium: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ce6ddc47109e0e2ae6a11682122a30f1f679e349
+source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 27%
