@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 42%
@@ -98,8 +98,8 @@ Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터
 * **규칙 편집기**:
    * [클릭 이벤트가 있는 이진 조건 &quot;When&quot; 절](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): 이제 규칙 편집기에서 단추 클릭 이벤트(_클릭됨_)를 &quot;When&quot; 절 내의 다른 조건과 결합할 수 있습니다. 이를 통해 사용자 상호 작용 및 기타 요인에 따라 규칙 실행을 보다 정확하게 제어할 수 있습니다. 참고: 여러 조건을 사용할 때 클릭 이벤트는 나열된 첫 번째 조건이어야 합니다.
    * [필드 및 패널의 유효성 검사 조건](/help/forms/rule-editor-core-components-usecases.md): 이제 규칙 편집기에 _IsValid_ 및 _IsNotValid_ 조건이 포함됩니다. 이를 통해 특정 필드 또는 전체 패널(가로 탭, 세로 탭, 아코디언 및 마법사와 같은 레이아웃 포함)의 유효성 검사 상태를 확인할 수 있으므로 유효성 검사 결과에 따라 양식 탐색 및 사용자 경험을 향상시킬 수 있습니다.
-* **SharePoint 목록에 대한 범위 관리 개선**: 이제 SharePoint 사이트에서 /sites 및 /teams와 같은 관리되는 모든 경로를 지원합니다. 이 향상된 기능을 통해 다양한 SharePoint 사이트 구조 전반에서 보다 광범위한 통합을 수행할 수 있으므로 조직 콘텐츠에 보다 유연하게 연결할 수 있습니다.
-* **SharePoint 목록에 기록 문서 저장 지원**: SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 Forms은 이제 기록 문서 바인딩 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 향상된 기능을 통해 지원되는 양식 데이터 및 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+* [SharePoint 목록에 대한 범위 관리 개선](/help/forms/connect-forms-to-sharepoint-list.md): 이제 SharePoint 사이트에서 /sites 및 /teams와 같은 관리되는 모든 경로를 지원합니다. 이 향상된 기능을 통해 다양한 SharePoint 사이트 구조 전반에서 보다 광범위한 통합을 수행할 수 있으므로 조직 콘텐츠에 보다 유연하게 연결할 수 있습니다.
+* [SharePoint 목록에 기록 문서 저장 지원](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 Forms은 이제 기록 문서 바인딩 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 향상된 기능을 통해 지원되는 양식 데이터 및 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
 
 ### AEM Forms의 조기 액세스 기능 {#forms-new-early-access-features}
 
