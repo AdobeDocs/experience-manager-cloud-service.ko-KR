@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 27%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. 
 
 ## 외부 저장소 구성
 
-Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구성됩니다.
+Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습니다.
 
 1. 선택한 프로그램에 [외부 저장소를 추가](#add-external-repo)합니다.
 1. 외부 저장소에 액세스 토큰을 입력합니다.
