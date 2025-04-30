@@ -4,10 +4,10 @@ description: 이 문서에서는 양식 만들기 마법사에서 핵심 구성 
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 28%
+source-wordcount: '1626'
+ht-degree: 29%
 
 ---
 
@@ -97,13 +97,13 @@ AEM에서 양식을 작성하고 Edge Delivery Services을 통해 게시하기 �
 1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 양식]**&#x200B;을 선택합니다. 마법사가 열립니다.
 1. **Source** 탭에서 **핵심 구성 요소 기반 템플릿**&#x200B;을(를) 선택하고 **테마**&#x200B;를 선택하면 **[!UICONTROL 만들기]** 단추가 활성화됩니다.:
 
-![핵심 구성 요소 기반 템플릿](/help/forms/assets/core-component-based-template.png)
+   ![핵심 구성 요소 기반 템플릿](/help/forms/assets/core-component-based-template.png)
 
 1. (선택 사항) **[!UICONTROL 데이터 소스]** 또는 **[!UICONTROL 제출]** 탭에서 데이터 소스를 선택하거나 액션을 제출할 수 있습니다.
 1. (선택 사항) **[!UICONTROL 게재]** 탭에서 양식의 게시 또는 게시 취소 일자를 지정할 수 있습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 다음에 대한 **양식 만들기** 마법사가 나타납니다.
    1. **이름**&#x200B;과 **제목**&#x200B;을 지정합니다.
-   2. **경로** 필드에 적응형 양식을 저장할 위치를 지정하십시오.
+   1. **경로** 필드에 적응형 양식을 저장할 위치를 지정하십시오.
 
    ![양식 만들기 마법사](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Edge Delivery Services에 적응형 양식을 게시하려면 [AEM 인스턴스�
 Edge Delivery Services 구성을 만들려면 다음 단계를 수행하십시오.
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Services 기반 템플릿을 사용하여 만든 양식용]
+>[!TAB Edge Delivery Services 기반 템플릿]
 
 
 Edge Delivery Services 기반 템플릿을 기반으로 하는 양식에 대한 Edge Delivery Services 구성은 양식의 구성 컨테이너에서 자동으로 만들어집니다.
 
 ![Edge Delivery Services 구성](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식의 경우]
+>[!TAB 핵심 구성 요소 기반 템플릿]
 
 1. AEM Forms as a Cloud Service 작성자 인스턴스에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Edge Delivery Services 구성]**&#x200B;으로 이동합니다.
 
    ![Edge Delivery Services 구성 선택](/help/edge/assets/select-eds-conf.png)
 
-1. 양식 이름과 일치하는 폴더를 선택합니다. 예를들어, 폼이 `enrollment-form`이면 `forms/enrollment-form` 폴더를 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
+2. 양식 이름과 일치하는 폴더를 선택합니다. 예를들어, 폼이 `enrollment-form`이면 `forms/enrollment-form` 폴더를 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
 
    ![Edge Delivery Services 구성](/help/forms/assets/create-eds-conf.png)
 
-1. **[!UICONTROL Edge Delivery Services 구성]**&#x200B;을 클릭하고 **[!UICONTROL 속성]**&#x200B;을 클릭하여 속성을 엽니다.
+3. **[!UICONTROL Edge Delivery Services 구성]**&#x200B;을 클릭하고 **[!UICONTROL 속성]**&#x200B;을 클릭하여 속성을 엽니다.
 
    ![자동으로 생성된 구성](/help/forms/assets/eds-conf.png)
 
    Edge Delivery Services 구성이 나타납니다.
 
-1. Edge Delivery Services 구성에서 다음을 지정합니다.
+4. Edge Delivery Services 구성에서 다음을 지정합니다.
 
    * **조직**: GitHub 조직 이름을 지정하십시오.
 
@@ -206,7 +206,7 @@ Edge Delivery Services 기반 템플릿을 기반으로 하는 양식에 대한 
    * **(선택 사항) Edge 호스트**: Edge 호스트 옵션을 그대로 둡니다. 양식이 미리보기(.page) 및 라이브(.live) 환경 모두에 게시됩니다.
    * **(선택 사항) 사이트 인증 토큰**: 사이트 인증 토큰을 사용하여 AEM 인스턴스와 Edge Delivery Services 간의 요청을 안전하게 인증합니다.
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 구성이 생성됩니다.
+5. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 구성이 생성됩니다.
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Edge Delivery Services에서 양식에 액세스하려면 양식을 게시해야
 아래 스크린샷은 Edge Delivery Services 기반 및 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식의 스테이징 및 라이브 양식 URL과 시각적 미리보기를 비교합니다.
 
 >[!BEGINTABS]
->[!TAB Edge Delivery Services 기반 템플릿을 사용하여 만든 양식에 액세스]
+>[!TAB Edge Delivery Services 기반 템플릿]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ Edge Delivery Services에서 양식에 액세스하려면 양식을 게시해야
     </tbody>
   </table>
 
->[!TAB 핵심 구성 요소 기반 템플릿을 사용하여 만든 양식에 액세스]
+>[!TAB 핵심 구성 요소 기반 템플릿]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
