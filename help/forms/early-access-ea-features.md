@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 27%
+source-wordcount: '2356'
+ht-degree: 26%
 
 ---
 
@@ -139,6 +139,12 @@ Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, �
 * 데이터 기반 대화형 통신의 작성, 수집 및 전달 관리
 
 시작할 준비가 되셨습니까? 대화형 통신 편집기는 Forms as a Cloud Service 배포의 조기 액세스 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 조직 ID와 프로그램 세부 정보를 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 공식 주소로 전자 메일을 보내십시오.
+
+### Adobe Experience Platform(AEP)와 AEM Forms 통합
+
+AEM Forms을 Adobe Experience Platform(AEP)와 연결하여 개인화된 양식 경험을 위해 고객 프로필 및 데이터를 활용하고 양식 제출을 기반으로 다운스트림 워크플로우를 트리거할 수 있습니다. 양식 데이터를 AEP 데이터 세트로 직접 보내어 고객 프로필을 보강하고 사용자 상호 작용에 대한 심층적인 통찰력을 얻을 수 있습니다.
+
+시작할 준비가 되셨습니까? [AEM Forms과 Adobe Experience Platform(AEP) 통합에 대해 자세히 알아보세요](/help/forms/aem-forms-aep-connector.md).
 
 ## 추가적인 조기 액세스 혁신
 
