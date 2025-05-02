@@ -4,10 +4,10 @@ description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Deliv
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '712'
+ht-degree: 76%
 
 ---
 
@@ -61,6 +61,109 @@ Edge Delivery Services 사이트를 삭제하면 관련 CDN 구성도 모두 제
 Edge Delivery 사이트 테이블에서 삭제하려는 사이트의 행 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. ![Edge Delivery 사이트 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **삭제**&#x200B;를 클릭한 후 **삭제**&#x200B;를 다시 클릭하여 사이트 삭제를 확인합니다.
 
      ![Edge Delivery Sites 버튼에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## Helix 4와 Helix 5 간의 Edge Delivery 사이트 관리
+
+`/program/{programId}/site/{siteId}` API 끝점을 사용하여 Helix 4와 Helix 5 간에 Edge Delivery 사이트를 마이그레이션합니다.
+
+Helix 4 웹 사이트에 대한 CDN 구성은 Helix 5로 자동으로 마이그레이션할 수 없습니다. 고객 프로덕션 사이트는 Helix 4에서 실행될 수 있지만 Helix 5 버전은 아직 개발 중이기 때문에 이러한 제한이 있습니다.
+
+**전제 조건**
+
+* `sitename`이(가) 이미 있어야 합니다.
+* 적절한 `branchName`, Helix `version` 및 `repo` 값을 알고 있습니다.
+* 마이그레이션은 `branchName`, `version` 및 `repo`만 수정합니다. 소유자 필드는 변경할 수 없습니다.
+
+**API 형식**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**본문 매개 변수 요청**
+Edge Delivery 사이트에 대한 재정의를 만들어 요청 본문에 지정된 원본을 적용합니다.
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### 예제 1: Helix 5로 마이그레이션
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**원본 URL 결과**
+다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### 예제 2: Helix 4로 마이그레이션
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**원본 URL 결과**
+다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### 예제 3: 무시 사이트를 Helix 5로 마이그레이션
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**원본 URL 결과**
+다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 
