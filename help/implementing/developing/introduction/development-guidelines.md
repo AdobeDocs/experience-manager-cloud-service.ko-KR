@@ -111,7 +111,7 @@ AEM as a Cloud Service에서는 게시에서 작성자로 역방향 복제가 �
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
 
-클라우드 환경에서 개발자는 Cloud Manager을 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager을 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -215,7 +215,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 AEM as a Cloud Service Developer Console에 대한 액세스는 Adobe Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되지만, 샌드박스 프로그램의 경우 AEM as a Cloud Service Developer ConsoleAEM as a Cloud Service 에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며, 작성자 및 게시 서비스 모두에서 데이터를 보려면 저장소 브라우저 및 사용자를 AEM 사용자 또는 AEM 관리자 제품 프로필에 정의해야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하세요.
+프로덕션 프로그램의 경우 AEM as a Cloud Service Developer Console에 대한 액세스는 Adobe Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되지만, 샌드박스 프로그램의 경우 AEM as a Cloud Service Developer ConsoleAEM as a Cloud Service 에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며, 작성자 및 게시 서비스 모두에서 데이터를 보려면 저장소 브라우저 및 사용자를 AEM 사용자 또는 AEM 관리자 제품 프로필에 정의해야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ko)를 참조하세요.
 
 ### 성능 모니터링 {#performance-monitoring}
 
@@ -239,13 +239,13 @@ Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 �
 
 ### 이메일 보내기 {#sending-emails}
 
-[일 CQ 메일 서비스 OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용해야 하며, 전자 메일은 받는 사람에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
+[일 CQ 메일 서비스 OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service)를 사용해야 하며, 전자 메일은 받는 사람에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
 
 ### 구성 {#email-configuration}
 
-AEM의 전자 메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
+AEM의 전자 메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service)를 사용하여 전송해야 합니다.
 
-전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)를 참조하세요. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스에 대해 다음과 같은 필요한 조정을 참고하십시오.
+전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko)를 참조하세요. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스에 대해 다음과 같은 필요한 조정을 참고하십시오.
 
 * SMTP 서버 호스트 이름을 $[env:AEM_PROXY_HOST;default=proxy.tunnel]&#x200B;(으)로 설정해야 합니다.
 * SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용되는 portForwards 매개변수에 설정된 원래 프록시 포트의 값으로 설정되어야 합니다. 예를 들어 30465(465가 아님)
