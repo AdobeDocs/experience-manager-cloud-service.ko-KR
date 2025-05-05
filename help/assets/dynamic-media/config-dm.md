@@ -75,7 +75,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 클라우드 서비스에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 **[!UICONTROL 클라우드 서비스 > Dynamic Media 구성]**(으)로 이동합니다.
@@ -133,7 +133,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manager as a Cloud Service은 토큰 기반 유효성 검사를 사용하여 Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 볼 수 있으므로 Experience Manager 작성자는 기본적으로 Dynamic Media 콘텐츠를 미리 봅니다. 그러나 사용자가 안전하게 미리보기 콘텐츠에 액세스할 수 있도록 IP를 *허용 목록*&#x200B;할 수 있습니다. Experience Manager as a Cloud Service에서 이 작업을 설정하려면 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)을 참조하십시오. <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -244,7 +244,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account. -->
 
 설정 및 구성 작업에는 다음이 포함됩니다.
 
@@ -275,7 +275,7 @@ Dynamic Media 색상 관리를 사용하면 올바른 에셋에 색상을 지정
 
 이미지 요청 시 색상 교정을 활성화하기 위한 기본 색상 속성을 구성하려면 다음과 같이 하십시오.
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 연 다음 프로비전하는 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 연 다음 프로비전하는 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
 1. **[!UICONTROL 설정 > 응용 프로그램 설정]**(으)로 이동합니다.
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
 1. 변경해야 하는 속성(예: **[!UICONTROL 색상 관리 특성]** 영역의 속성)으로 스크롤합니다.

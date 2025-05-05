@@ -22,7 +22,7 @@ ht-degree: 73%
 >
 >Cloud Manager UI를 통해 또는 AEM as a Cloud Service API(예: cURL)를 사용하여 Cloud Manager에서 고급 네트워킹을 구성할 수 있습니다.
 >
->이 문서에서는 UI 메서드 사용에 중점을 둡니다. API를 통해 구성을 자동화하려면 [가상 사설망(VPN) 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)를 참조하세요.
+>이 문서에서는 UI 메서드 사용에 중점을 둡니다. API를 통해 구성을 자동화하려면 [가상 사설망(VPN) 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/vpn)를 참조하세요.
 >
 >**API를 사용하여 고급 네트워킹 자동화**
 >고급 네트워킹 설정(예: VPN 생성)을 자동화하려면 Cloud Manager API를 사용하면 됩니다.
@@ -44,7 +44,7 @@ ht-degree: 73%
 >   }'
 >```
 >
->[가상 사설망(VPN) 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)에서 전체 자습서와 추가 API 예제를 참조하십시오.
+>[가상 사설망(VPN) 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/vpn)에서 전체 자습서와 추가 API 예제를 참조하십시오.
 >
 
 ## 개요 {#overview}
@@ -59,7 +59,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 >[!CAUTION]
 >
->이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)하십시오.
+>이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#home)하십시오.
 >
 >이전 이그레스 기술을 사용하여 고급 네트워킹을 구성하려고 하면 사이트 연결에 영향을 미칠 수 있습니다.
 

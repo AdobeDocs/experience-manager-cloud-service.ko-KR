@@ -73,8 +73,8 @@ Adobe 이 도구의 작동 방식과 사용 권장 방법에 대한 자세한 �
 
 
 * 계획 중에 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. Cloud Service을 위해 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용은 [개발 지침](/help/implementing/developing/introduction/development-guidelines.md)을 검토할 수 있습니다.
-* AEM as a Cloud Service에서 [구성을 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration)하는 방법에 대해 읽어 보십시오.
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)를 다운로드하여 로컬 개발 환경을 설정하는 방법을 알아봅니다
+* AEM as a Cloud Service에서 [구성을 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=ko#what-is-a-configuration)하는 방법에 대해 읽어 보십시오.
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko)를 다운로드하여 로컬 개발 환경을 설정하는 방법을 알아봅니다
 * 마지막으로 [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)를 숙지하십시오.
 
 또한 다음을 수행할 수도 있습니다.
@@ -106,8 +106,8 @@ Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되�
 
 * 자산 처리 워크플로우를 자동으로 마이그레이션하는 데 사용되는 도구인 [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
 * 기존 Dispatcher 구성을 AEM as a Cloud Service에 맞는 형식으로 변환하는 도구인 [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md).
-* AEM 다중 모드 프로젝트를 입력으로 받아 AEM as a Cloud Service 프로젝트로 변환하는 도구인 [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)
-* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구
+* AEM 다중 모드 프로젝트를 입력으로 받아 AEM as a Cloud Service 프로젝트로 변환하는 도구인 [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=ko)
+* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=ko), 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구
 * [현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), 레거시 AEM 기능을 AEM as a Cloud Service의 최신 지원 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트입니다.
 
 로컬 개발 환경을 설정한 후에는 [설명서](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)를 참조하여 AEM as a Cloud Service SDK에 익숙해지십시오.
@@ -132,9 +132,9 @@ Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테�
 
 ## Go-Live 준비 {#preparing-for-go-live}
 
-마이그레이션을 위한 소스 시스템을 준비하려면 시스템 및 AEM 관리자 수준 작업이 필요합니다. 먼저 [수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) 작업 상태를 확인하여 콘텐츠 리포지토리가 잘 유지 관리되고 있는지 확인할 수 있습니다. 컨텐츠 전송 도구가 버전 6.3부터 호환되므로 AEM 버전 6.3을 실행 중인 경우 오프라인 압축을 수행한 다음 데이터 저장소 가비지 수집을 수행하는 것이 좋습니다.
+마이그레이션을 위한 소스 시스템을 준비하려면 시스템 및 AEM 관리자 수준 작업이 필요합니다. 먼저 [수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ko) 및 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=ko) 작업 상태를 확인하여 콘텐츠 리포지토리가 잘 유지 관리되고 있는지 확인할 수 있습니다. 컨텐츠 전송 도구가 버전 6.3부터 호환되므로 AEM 버전 6.3을 실행 중인 경우 오프라인 압축을 수행한 다음 데이터 저장소 가비지 수집을 수행하는 것이 좋습니다.
 
-[데이터 일관성 검사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html)를 모든 AEM 버전에서 권장하므로 콘텐츠 리포지토리가 마이그레이션 활동을 시작하는 데 좋은 상태가 됩니다.
+[데이터 일관성 검사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=ko)를 모든 AEM 버전에서 권장하므로 콘텐츠 리포지토리가 마이그레이션 활동을 시작하는 데 좋은 상태가 됩니다.
 
 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)를 설치하고 구성하려면 시스템 관리자 수준 액세스 권한이 필요합니다.
 

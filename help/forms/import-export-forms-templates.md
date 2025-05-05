@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 이 문서 |
 
 # 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
@@ -183,7 +183,7 @@ ht-degree: 3%
 
    ![자산 검색](/help/forms/assets/search-bar.png)
 
-검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)을 참조하세요.
+검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ko)을 참조하세요.
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

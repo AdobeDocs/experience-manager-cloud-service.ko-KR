@@ -21,7 +21,7 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -155,7 +155,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 ### 새로운 기능 {#what-is-new-screens-june}
 
 >[!NOTE]
->자세한 개념 기술 설명서에 대한 Screens as a Cloud Service 및 링크를 성공적으로 설치, 구성 및 실행하는 데 필요한 기본 지식은 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) 가이드를 참조하십시오.
+>자세한 개념 기술 설명서에 대한 Screens as a Cloud Service 및 링크를 성공적으로 설치, 구성 및 실행하는 데 필요한 기본 지식은 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=ko) 가이드를 참조하십시오.
 
 * Bulk Device Registration Management는 대량의 플레이어 디바이스를 프로비저닝하는 것이 더 빠르고 효율적이라는 것을 의미합니다.
 
@@ -184,7 +184,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt-latest}
 
-* CTT에서 사용할 선택적 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 단계에 대한 지원이 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
+* CTT에서 사용할 선택적 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ko) 단계에 대한 지원이 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
 
 * 사용자가 수집 단계 중 위험 시점에 도달하면 수집을 중지하고 데이터를 손상시킬 수 있는 문제를 방지하기 위해 CTT에 보호 기능이 추가되었습니다.
 

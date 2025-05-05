@@ -26,9 +26,9 @@ ht-degree: 1%
 사전 요구 사항은 간단합니다.
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
    * Forms은 외부 SPA을 포함하도록 업데이트되는 AEM 프로젝트의 기초입니다.
-   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)의 시작점을 사용합니다.
+   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
 * 즉시 통합할 작업 중인 외부 React SPA이 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
@@ -371,7 +371,7 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 다음 참조 자료가 AEM의 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)

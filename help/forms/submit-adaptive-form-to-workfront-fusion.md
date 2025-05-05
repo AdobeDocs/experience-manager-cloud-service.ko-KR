@@ -17,7 +17,7 @@ ht-degree: 5%
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)은(는) 문서 승인 워크플로, 전자 메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복 작업 대신 새로운 작업에 집중할 수 있도록 합니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ko)은(는) 문서 승인 워크플로, 전자 메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복 작업 대신 새로운 작업에 집중할 수 있도록 합니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
 
 예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
 
@@ -35,8 +35,8 @@ AEM Formsas a Cloud Service 에서 OOTB 커넥터를 연결하고 적응형 양�
 
 Workfront Fusion과 AEM Forms 간에 연결을 설정하려면 다음 조건을 충족해야 합니다.
 
-* 유효한 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* [서비스 자격 증명을 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)하기 위해 [개발 콘솔](https://my.cloudmanager.adobe.com/)에 액세스할 수 있는 권한이 있는 AEM 사용자입니다.
+* 유효한 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=ko).
+* [서비스 자격 증명을 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)하기 위해 [개발 콘솔](https://my.cloudmanager.adobe.com/)에 액세스할 수 있는 권한이 있는 AEM 사용자입니다.
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
 
@@ -102,7 +102,7 @@ Webhook를 추가하려면:
    >
    > 인스턴스 URL은 특정 AEM Forms 인스턴스를 가리키는 고유한 웹 주소입니다.
 
-   연결을 만드는 데 필요한 [서비스 자격 증명을 개발자 콘솔에서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)검색할 수 있습니다.
+   연결을 만드는 데 필요한 [서비스 자격 증명을 개발자 콘솔에서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)검색할 수 있습니다.
 
 1. **IMS 끝점**&#x200B;의 `ims-na1.adobelogin.com`을(를) 개발자 콘솔의 서비스 자격 증명에서 **imsEndpoint** 값으로 바꿉니다.
 

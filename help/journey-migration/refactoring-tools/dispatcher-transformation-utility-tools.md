@@ -27,13 +27,13 @@ Dispatcher은 Adobe Experience Manager의 캐싱, 로드 밸런싱 또는 둘 �
 >[!NOTE]
 >Dispatcher의 가장 일반적인 사용은 **AEM 게시 인스턴스**&#x200B;의 응답을 캐시하여 외부에서 게시되는 웹 사이트의 응답성과 보안을 향상시키는 것입니다.
 
-Dispatcher에서 캐싱을 수행하고 문서를 반환하며 부하 분산을 수행하는 방법에 대해 알아보려면 [Dispatcher 개요](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)를 참조하십시오.
+Dispatcher에서 캐싱을 수행하고 문서를 반환하며 부하 분산을 수행하는 방법에 대해 알아보려면 [Dispatcher 개요](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)를 참조하십시오.
 
 ### Apache 및 Dispatcher 구성 및 테스트 {#dispatcher-configurations-cloud}
 
 AEM as a Cloud Service Apache 및 Dispatcher 구성을 구성하는 방법과, 클라우드 환경에 배포하기 전에 로컬에서 확인하고 실행하는 방법을 알아봅니다.
 
-자세한 내용은 [클라우드의 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)를 참조하십시오.
+자세한 내용은 [클라우드의 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ko)를 참조하십시오.
 
 ## AEM Dispatcher 변환기 {#aem-dispatcher-converter}
 

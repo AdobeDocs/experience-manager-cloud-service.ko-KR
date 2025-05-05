@@ -93,7 +93,7 @@ Cloud Manager의 Git 저장소 설정에는 두 개의 분기가 있습니다.
 
 >[!TIP]
 >
->이 설정에 대한 자세한 내용은 [여러 Source Git 저장소를 사용하여 작업](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)을 참조하십시오.
+>이 설정에 대한 자세한 내용은 [여러 Source Git 저장소를 사용하여 작업](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)을 참조하십시오.
 
 ### 다중 팀 설정에 대한 고려 사항 {#considerations}
 

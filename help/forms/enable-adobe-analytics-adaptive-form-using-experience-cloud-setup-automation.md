@@ -17,7 +17,7 @@ ht-degree: 50%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 이 문서 |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=ko) |
 
 Experience Cloud 설정 자동화는 양식과의 사용자 상호 작용을 빠르게 추적하고 방문자 상호 작용 및 참여에 대한 통찰력을 제공하는 적응형 Forms에 Adobe Analytics을 연결하는 데 도움이 됩니다. 또한 Experience Cloud 설정 자동화를 통해 완료 시간과 드롭오프 시점과 같은 지표 평가를 포함하는 양식 성능을 모니터링할 수 있습니다. 이 분석을 사용하면 로그인 상태에 따라 사용자 행동(예: 익명 사용자)을 구분하여 일반적인 트렌드와 패턴을 식별하는 동시에 양식을 최적화하여 사용자 경험을 향상시킬 수 있습니다.
 
@@ -71,7 +71,7 @@ Experience Cloud 설정 자동화에는 추적 스크립트를 관리하기 위�
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=ko)
 -->
 
 ## Adobe Analytics 구성 {#configure-adobe-analytics}
@@ -149,7 +149,7 @@ AEM Sites용 적응형 Forms에서 analytics를 연결하고 활성화하려면 
 
 AEM Sites 페이지에서 적응형 양식을 연결하여 빠른 트랙 분석을 위해 Analytics를 활성화하려면 AEM Archetype/Git 저장소 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 `customfooterlibs` 클라이언트 라이브러리를 포함하십시오.
 
-1. 텍스트 편집기에서 [AEM Forms Archetype 또는 복제된 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 프로젝트를 엽니다. 예: Visual Studio Code.
+1. 텍스트 편집기에서 [AEM Forms Archetype 또는 복제된 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 프로젝트를 엽니다. 예: Visual Studio Code.
 
 1. 적응형 양식이 있는 사이트 페이지로 이동합니다. 예를 들어 이 데모 프로젝트에는 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`이(가) 있습니다.
 
@@ -172,7 +172,7 @@ AEM Sites 페이지에서 적응형 양식을 연결하여 빠른 트랙 분석�
 
    `customfooterlibs.html`은(는) JavaScript에 사용됩니다.
 
-1. [파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 변경 내용을 배포합니다.
+1. [파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ko)하여 변경 내용을 배포합니다.
 
 ### Sites에서 Forms에 양식 분석 규칙 활성화 {#bind-forms-analytics-rules-to-forms-in-sites}
 

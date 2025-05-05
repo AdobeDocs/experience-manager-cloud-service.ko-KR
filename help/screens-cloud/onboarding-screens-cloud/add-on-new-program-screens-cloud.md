@@ -16,7 +16,7 @@ ht-degree: 3%
 이 섹션에서는 Screens을 Cloud Manager의 새 프로그램에 추가 기능으로 추가하는 방법에 대해 설명합니다.
 
 >[!NOTE]
->Cloud Manager 프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html)를 참조하십시오.
+>Cloud Manager 프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=ko)를 참조하십시오.
 
 ## 목표 {#objective}
 
@@ -29,7 +29,7 @@ Cloud Manager의 새 프로그램에 추가 기능으로서의 Screens을 추가
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/)(으)로 이동합니다.
 
    >[!NOTE]
-   >Cloud Manager에 대한 자세한 내용은 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html)를 참조하십시오.
+   >Cloud Manager에 대한 자세한 내용은 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=ko)를 참조하십시오.
 
 1. Cloud Manager 랜딩 페이지에서 **프로그램 추가**&#x200B;를 클릭합니다.
 

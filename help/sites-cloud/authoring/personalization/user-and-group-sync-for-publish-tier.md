@@ -82,17 +82,17 @@ ht-degree: 64%
 >
 >IdP는 사용자 자격 증명의 초기 인증만 인증하며, 이후 AEM으로의 요청은 AEM 로그인 토큰 쿠키(사용 가능한 한)를 사용하여 수행됩니다.
 
-[SAML 2.0 인증 핸들러](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)에 대한 자세한 내용은 설명서를 참조하십시오.
+[SAML 2.0 인증 핸들러](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ko)에 대한 자세한 내용은 설명서를 참조하십시오.
 
 **OAuth/SSO**
 
-AEM의 SSO 인증 핸들러 서비스 사용에 대한 자세한 내용은 [SSO(Single Sign-On) 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)를 참조하십시오.
+AEM의 SSO 인증 핸들러 서비스 사용에 대한 자세한 내용은 [SSO(Single Sign-On) 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=ko)를 참조하십시오.
 
 원하는 OAuth 공급자를 통해 `com.adobe.granite.auth.oauth.provider` 인터페이스를 구현할 수 있습니다.
 
 **필수 구성 요소:**
 
-사용자별 데이터를 저장할 때 항상 idP(ID 공급자)를 단일 관리 지점으로 사용하는 것이 좋습니다. 추가 사용자 정보가 idP의 일부가 아닌 로컬 저장소에 저장된 경우 고객 지원 센터에 적절한 프로그램 및 환경을 나타내는 요청을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오. SAML 인증 공급자의 경우 [데이터 동기화](#data-synchronization-data-synchronization) 외에 [동적 그룹 구성원](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)이 활성화되어 있는지 확인하십시오.
+사용자별 데이터를 저장할 때 항상 idP(ID 공급자)를 단일 관리 지점으로 사용하는 것이 좋습니다. 추가 사용자 정보가 idP의 일부가 아닌 로컬 저장소에 저장된 경우 고객 지원 센터에 적절한 프로그램 및 환경을 나타내는 요청을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오. SAML 인증 공급자의 경우 [데이터 동기화](#data-synchronization-data-synchronization) 외에 [동적 그룹 구성원](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)이 활성화되어 있는지 확인하십시오.
 
 ### 고정 세션 및 압축된 토큰 {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 사용자 프로필 정보를 작성하고 읽는 방법에는 두 가지가 있습니다.
 
 * `com.adobe.granite.security.user` 인터페이스 UserPropertiesManager 인터페이스를 통한 서버측 사용. 데이터가 `/home/users`에서 사용자의 노드 아래에 배치됩니다. 사용자별로 고유한 페이지가 캐시되지 않았는지 확인하십시오.
-* [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)에 따라 ContextHub를 사용하는 클라이언트측
+* [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=ko#personalization)에 따라 ContextHub를 사용하는 클라이언트측
 
 **필수 구성 요소:**
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 
 ## 권한 (폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
 
-CUG(폐쇄형 사용자 그룹)라고도 하는 Publish 계층 액세스 정책은 AEM 작성자에 정의되어 있습니다. [폐쇄형 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)를 참조하십시오. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
+CUG(폐쇄형 사용자 그룹)라고도 하는 Publish 계층 액세스 정책은 AEM 작성자에 정의되어 있습니다. [폐쇄형 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ko#applying-your-closed-user-group-to-content-pages)를 참조하십시오. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
 
 * 사용자가 SAML을 사용하여 ID 공급자(IdP)를 통해 인증하여 로그인하는 경우, 인증 핸들러는 사용자의 그룹 멤버십(게시 계층의 CUG와 일치해야 함)을 식별한 다음 저장소 레코드를 통해 사용자와 그룹 간의 연결을 유지합니다.
 * IdP 통합 없이 로그인하는 경우 사용자 정의 코드를 동일한 저장소 구조 관계에 적용할 수 있습니다.

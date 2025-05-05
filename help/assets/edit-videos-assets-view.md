@@ -135,7 +135,7 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support)에 문의하십시오.
+* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >

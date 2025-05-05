@@ -16,7 +16,7 @@ ht-degree: 6%
 
 핫 연결은 서드파티 웹 사이트가 HTML 코드를 사용하여 웹 사이트의 이미지를 표시하는 것입니다. 방문자의 브라우저가 서버에서 바로 액세스하고 있으므로 그림이 요청될 때마다 대역폭을 사용합니다. 핫링크 *보호*&#x200B;는 다른 웹 사이트가 웹 페이지의 사진, CSS 또는 JavaScript에 직접 연결되는 것을 방지하는 방법입니다. 이러한 종류의 실드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.
 
-[Adobe 고객 지원 센터](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)는 CDN 수준에서 레퍼러 필터를 구성할 수 있습니다. 이렇게 하면 도메인에 대해 허용된 웹 사이트 목록의 웹 사이트에만 Dynamic Media 콘텐츠가 제공됩니다.
+[Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#home)는 CDN 수준에서 레퍼러 필터를 구성할 수 있습니다. 이렇게 하면 도메인에 대해 허용된 웹 사이트 목록의 웹 사이트에만 Dynamic Media 콘텐츠가 제공됩니다.
 
 >[!NOTE]
 >

@@ -229,15 +229,15 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 비공개 컬렉션의 권한 관리{#manage-permissions-private-collection}
 
-저장소에서 사용할 수 있는 비공개 컬렉션에 대한 [액세스 수준](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)을 관리할 수 있습니다. 사용자 그룹 또는 사용자에게 `Can View` 및 `Can Edit`와 같은 권한을 할당할 수 있습니다. 또한 사용자 그룹에 권한 관리 권한을 위임할 수도 있습니다. 비공개 컬렉션을 만든 사용자가 해당 컬렉션의 소유자입니다. 이러한 사용자는 [!UICONTROL 권한 관리] 작업을 사용하여 다른 사용자에게 액세스 권한을 부여할 수 있습니다. 또한 관리자는 [!DNL Experience Manager] 저장소에 있는 비공개 컬렉션의 권한을 보고 관리할 수 있습니다.
+저장소에서 사용할 수 있는 비공개 컬렉션에 대한 [액세스 수준](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)을 관리할 수 있습니다. 사용자 그룹 또는 사용자에게 `Can View` 및 `Can Edit`와 같은 권한을 할당할 수 있습니다. 또한 사용자 그룹에 권한 관리 권한을 위임할 수도 있습니다. 비공개 컬렉션을 만든 사용자가 해당 컬렉션의 소유자입니다. 이러한 사용자는 [!UICONTROL 권한 관리] 작업을 사용하여 다른 사용자에게 액세스 권한을 부여할 수 있습니다. 또한 관리자는 [!DNL Experience Manager] 저장소에 있는 비공개 컬렉션의 권한을 보고 관리할 수 있습니다.
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-사용자 그룹에 사용 가능한 권한을 할당하는 방법에 대한 자세한 내용은 [사용자 그룹에 권한 추가](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
+사용자 그룹에 사용 가능한 권한을 할당하는 방법에 대한 자세한 내용은 [사용자 그룹에 권한 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
 
-엔드 투 엔드 워크플로에 대한 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
+엔드 투 엔드 워크플로에 대한 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
 
 ## 다음 단계 {#next-steps}
 
@@ -245,4 +245,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의

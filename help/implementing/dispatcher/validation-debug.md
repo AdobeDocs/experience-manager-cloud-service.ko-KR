@@ -636,7 +636,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 레거시 모드에서 유연한 모드로 마이그레이션 {#migrating}
 
-Cloud Manager 2021.7.0 릴리스에서는 새로운 Cloud Manager 프로그램이 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 이상의 Maven 프로젝트 구조를 생성합니다. 이 구조에는 **opt-in/USE_SOURCES_DIRECTLY** 파일이 포함됩니다. 파일 수와 크기에 대한 [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md)의 이전 제한 사항을 제거하여 SDK 및 런타임에서 개선된 방법으로 구성의 유효성을 검사하고 배포할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
+Cloud Manager 2021.7.0 릴리스에서는 새로운 Cloud Manager 프로그램이 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 이상의 Maven 프로젝트 구조를 생성합니다. 이 구조에는 **opt-in/USE_SOURCES_DIRECTLY** 파일이 포함됩니다. 파일 수와 크기에 대한 [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md)의 이전 제한 사항을 제거하여 SDK 및 런타임에서 개선된 방법으로 구성의 유효성을 검사하고 배포할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일 `opt-in/USE_SOURCES_DIRECTLY`을(를) 추가합니다. Dispatcher이 로컬에서 작동하는지 테스트할 수 있도록 이 문서의 &quot;로컬 유효성 검사&quot; 지침을 따르십시오.
 1. **클라우드 개발 테스트:**

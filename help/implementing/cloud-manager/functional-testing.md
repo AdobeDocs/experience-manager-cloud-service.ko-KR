@@ -58,7 +58,7 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 
 모든 테스트 전략의 기초가 되는 AEM 애플리케이션에 대한 단위 테스트를 제공하는 것이 좋습니다. 빠르고 자주 실행하고 일찍 빠르게 피드백을 제공하도록 설계되었습니다. 개발자 워크플로우, 고유한 CI/CD 및 AEM Cloud Service 배포 파이프라인에 긴밀하게 통합됩니다.
 
-JUnit을 사용하여 구현되고 Maven로 실행됩니다. AEM 및 시작에 대한 단위 테스트의 예는 AEM Project Archetype의 [코어 모듈](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)을 참조하십시오.
+JUnit을 사용하여 구현되고 Maven로 실행됩니다. AEM 및 시작에 대한 단위 테스트의 예는 AEM Project Archetype의 [코어 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)을 참조하십시오.
 
 ### 코드 품질
 

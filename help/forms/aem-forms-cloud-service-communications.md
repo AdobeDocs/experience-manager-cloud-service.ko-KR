@@ -47,11 +47,11 @@ Forms as a Cloud Service - 및 Communications는 예약된 문서 생성을 위�
 
 * **토큰 기반 인증:** 토큰 기반 인증은 액세스 토큰(전달자 인증 토큰)을 사용하여 Experience Manageras a Cloud Service 에 요청합니다. AEM Formsas a Cloud Service 에서 액세스 토큰을 검색할 수 있는 API 보안 제공 토큰을 검색하고 사용하여 요청을 인증하려면 다음을 수행하십시오.
 
-   1. [Developer Console에서 Experience Manager as a Cloud Service 자격 증명을 검색합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Experience Manager as a Cloud Service 자격 증명을 환경에 설치](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, 웹 서버 또는 기타 비AEM 서버)가 클라우드 서비스에 요청을 전송(호출)하도록 구성되어 있습니다.
-   1. [JWT 토큰을 생성하고 액세스 토큰용 Adobe IMS API와 교환했습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Developer Console에서 Experience Manager as a Cloud Service 자격 증명을 검색합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko).
+   1. [Experience Manager as a Cloud Service 자격 증명을 환경에 설치](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko). (Application Server, 웹 서버 또는 기타 비AEM 서버)가 클라우드 서비스에 요청을 전송(호출)하도록 구성되어 있습니다.
+   1. [JWT 토큰을 생성하고 액세스 토큰용 Adobe IMS API와 교환했습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko).
    1. 액세스 토큰을 전달자 인증 토큰으로 사용하여 Experience Manager API를 실행합니다.
-   1. [Experience Manager 환경에서 기술 계정 사용자에 대한 적절한 사용 권한을 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [Experience Manager 환경에서 기술 계정 사용자에 대한 적절한 사용 권한을 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko#configure-access-in-aem).
 
   >[!NOTE]
   >

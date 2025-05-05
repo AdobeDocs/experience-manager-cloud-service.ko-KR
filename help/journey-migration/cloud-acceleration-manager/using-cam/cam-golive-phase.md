@@ -20,7 +20,7 @@ Go-Live 카드는 AEM as a Cloud Service에서 유연하고 성공적인 Go-Live
 ![라이브 진행](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project)를 참조하십시오.
+>자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ko#create-project)를 참조하십시오.
 
 
 ## Go-Live 활동 카드 사용 {#go-live}

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](do-not-localize/data-integeration.png)
@@ -39,8 +39,8 @@ ht-degree: 3%
 ### 사전 요구 사항
 
 [!DNL Experience Manager] 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성하기 전에 다음을 수행해야 합니다.
-* 포트가 기본적으로 비활성화되어 있으므로 [Cloud Manager API를 통해 고급 네트워킹을 활성화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)하십시오.
-* [Maven에 JDBC 드라이버 종속성을 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+* 포트가 기본적으로 비활성화되어 있으므로 [Cloud Manager API를 통해 고급 네트워킹을 활성화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ko)하십시오.
+* [Maven에 JDBC 드라이버 종속성을 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ko#mysql-driver-dependencies).
 
 
 ### 관계형 데이터베이스를 구성하는 단계
@@ -72,7 +72,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 자세한 내용은 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)을 참조하십시오.
+   > 자세한 내용은 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ko)을 참조하십시오.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택하여 구성을 저장합니다.
 
@@ -108,7 +108,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 클라우드 서비스 구성에 대한 폴더를 구성하려면 다음을 수행합니다.
 
 1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
-   * 자세한 내용은 [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 설명서를 참조하십시오.
+   * 자세한 내용은 [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ko) 설명서를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
    1. **[!UICONTROL 구성 브라우저]**&#x200B;에서 `global` 폴더를 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
@@ -318,7 +318,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. as a Cloud Service [
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
 
 To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

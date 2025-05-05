@@ -29,17 +29,17 @@ Adobe Experience Manager Formsas a Cloud Service Adobe Experience Manager Forms 
 
 * 이 서비스는 Cloud Service에 코드를 배포하기 전에 로컬 환경(로컬 컴퓨터)에서 사용자 지정 코드를 개발하고 테스트하는 SDK를 제공합니다. 개발자는 로컬 컴퓨터에서 SDK를 사용하여 사용자 지정 구성 요소, 테마, 워크플로 애플리케이션, 구성, 템플릿 등을 개발 및 테스트합니다. 로컬 개발 환경에서 사용자 지정 코드를 테스트한 후 프로덕션 환경으로 승격하기 전에 추가 테스트를 위해 사용자 지정 코드를 [Forms CS 환경 개발 또는 스테이징 환경](/help/implementing/cloud-manager/deploy-code.md)에 배포합니다.
 
-* 개발자는 공통 [git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html)에서 Cloud Service 및 로컬 개발 환경에 대한 코드를 유지 관리합니다. AEM Archetype을 기반으로 하는 git 저장소는 AEM as a Cloud Service 프로그램 생성 시 자동으로 생성됩니다.
+* 개발자는 공통 [git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=ko)에서 Cloud Service 및 로컬 개발 환경에 대한 코드를 유지 관리합니다. AEM Archetype을 기반으로 하는 git 저장소는 AEM as a Cloud Service 프로그램 생성 시 자동으로 생성됩니다.
 
   ![AEM as a cloud service 프로그램에서 git 저장소 자동 생성](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
-* AEM Cloud Service용 AEM Archetype과 함께 Formsas a Cloud Service 의 개발 흐름. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할을 준수하기 위해 콘텐츠와 코드를 개별 하위 패키지로 분리해야 합니다. [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html)를 사용하여 Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환될 수 있도록 콘텐츠와 코드를 개별 패키지로 분리하여 기존 프로젝트 패키지를 재구성하십시오.
+* AEM Cloud Service용 AEM Archetype과 함께 Formsas a Cloud Service 의 개발 흐름. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할을 준수하기 위해 콘텐츠와 코드를 개별 하위 패키지로 분리해야 합니다. [Repository Modernizer 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=ko)를 사용하여 Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환될 수 있도록 콘텐츠와 코드를 개별 패키지로 분리하여 기존 프로젝트 패키지를 재구성하십시오.
 
 * Formsas a Cloud Service 와 함께 고객 번들을 사용하기 전에 최신 버전의 adobe-aemfd-docmanager로 사용자 정의 코드를 다시 컴파일하십시오.
 
 * [AEM Forms as a Cloud Service 마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md)를 사용하여 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Formsas a Cloud Service 에서 [!DNL AEM] (으)로 준비하고 마이그레이션합니다. 기존 적응형 양식 템플릿을 가져오려면 [프로그램의 Git 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 사용하십시오.
 
-* 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오.
+* 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오.
 
 ## 현지화
 
@@ -56,11 +56,11 @@ Adobe Experience Manager Formsas a Cloud Service Adobe Experience Manager Forms 
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **미리 채우기 서비스:** 미리 채우기 서비스는 서버에서 데이터를 가져오고 병합하여 클라이언트 측에서 적응형 Forms을 미리 채웁니다. 이 기능은 적응형 양식을 작성하는 데 필요한 시간을 개선하는 데 도움이 됩니다. 항상 [미리 채우기 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html)를 구성하여 Adobe Experience Manager Forms 서버에서 병합 작업을 실행할 수 있습니다.
+* **미리 채우기 서비스:** 미리 채우기 서비스는 서버에서 데이터를 가져오고 병합하여 클라이언트 측에서 적응형 Forms을 미리 채웁니다. 이 기능은 적응형 양식을 작성하는 데 필요한 시간을 개선하는 데 도움이 됩니다. 항상 [미리 채우기 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=ko)를 구성하여 Adobe Experience Manager Forms 서버에서 병합 작업을 실행할 수 있습니다.
 
 * **제출 액션:** **이메일** 제출 액션은 첨부 파일을 전송하고 이메일에 기록 문서(DoR)를 첨부할 수 있는 옵션을 제공합니다. AEM 6.5 Forms에서 사용할 수 있는 **PDF으로 전자 메일** 작업 대신 사용할 수 있습니다.
 
-* **Automated forms conversion 서비스**: 서비스가 Automated forms conversion 서비스에 대한 메타 모델을 제공하지 않습니다. [Automated forms conversion 서비스 문서에서 다운로드할 수 있습니다](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **Automated forms conversion 서비스**: 서비스가 Automated forms conversion 서비스에 대한 메타 모델을 제공하지 않습니다. [Automated forms conversion 서비스 문서에서 다운로드할 수 있습니다](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ko#default-meta-model).
 
 * **XSD 기반 적응형 Forms:** XDP-template을 사용하여 기록용 문서에 대한 템플릿을 디자인할 수 있습니다. 이 서비스는 XFA 기반 적응형 Forms을 지원하지 않습니다
 
@@ -82,7 +82,7 @@ Forms as a Cloud Service 문서 생성 및 문서 조작 RESTapi 필요에 따�
 
    * 문서 서비스나 응용 프로그램에 의존하는 작업은 사용할 수 없습니다. 예를 들어 Microsoft® Word에서 PDF으로, Microsoft® Excel에서 PDF으로, HTML에서 PDF으로, PostScript(PS)에서 PDF으로, XDP에서 PDF forms으로 변환할 수 없습니다. 이러한 작업은 각각 Microsoft® Office, Adobe Acrobat, Adobe Distiller, Forms Document Service를 사용합니다.
 
-   * 커뮤니케이션 문서 조작 API가 있는 문서를 사용하기 전에 PDF 형식이 아닌 문서를 PDF 형식으로 변환합니다. 예를 들어, 문서가 Microsoft® Office, HTML, PostScript(PS), XDP 형식인 경우 PDF 문서에 이들 문서를 사용하기 전에 PDF 형식으로 변환하십시오. 이러한 전환에는 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) 서비스를 사용할 수 있습니다.
+   * 커뮤니케이션 문서 조작 API가 있는 문서를 사용하기 전에 PDF 형식이 아닌 문서를 PDF 형식으로 변환합니다. 예를 들어, 문서가 Microsoft® Office, HTML, PostScript(PS), XDP 형식인 경우 PDF 문서에 이들 문서를 사용하기 전에 PDF 형식으로 변환하십시오. 이러한 전환에는 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=ko) 서비스를 사용할 수 있습니다.
 
    * 디지털 서명, 암호화, Reader 확장, 프린터로 전송, PDF 변환 및 바코드 Forms 서비스에 AEM 6.5 Forms 환경을 사용할 수 있습니다.
 
@@ -111,7 +111,7 @@ Forms as a Cloud Service 문서 생성 및 문서 조작 RESTapi 필요에 따�
 
    * xdp 기반 양식을 HTML5 Forms으로 렌더링합니다. 이 서비스는 HTML5 Forms을 지원하지 않습니다.
 
-   * 오프라인으로 데이터를 캡처하고 다음에 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 앱을 사용하여 온라인으로 돌아올 때 동기화합니다.
+   * 오프라인으로 데이터를 캡처하고 다음에 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=ko) 앱을 사용하여 온라인으로 돌아올 때 동기화합니다.
 
 ## 대화형 통신
 

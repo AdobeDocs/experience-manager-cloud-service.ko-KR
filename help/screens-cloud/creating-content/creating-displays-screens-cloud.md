@@ -135,4 +135,4 @@ Screens 서비스 공급자에서 디스플레이를 삭제할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 프로젝트에 대한 디스플레이를 관리하고 만드는 방법에 대해 알아보았습니다. 다음에 [Screensas a Cloud Service 에 여정 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html)을 검토하여 Screens as a Cloud Service 채널을 만들고 관리하는 방법을 계속 살펴보십시오.
+이제 프로젝트에 대한 디스플레이를 관리하고 만드는 방법에 대해 알아보았습니다. 다음에 [Screensas a Cloud Service 에 여정 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=ko)을 검토하여 Screens as a Cloud Service 채널을 만들고 관리하는 방법을 계속 살펴보십시오.

@@ -89,7 +89,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
   기존 수동 자르기 정의의 유지를 제어합니다.
 
-  Dynamic Media 뷰어 참조 가이드의 [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) 및 [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)에서도 `preserveCrop`을(를) 참조하십시오.
+  Dynamic Media 뷰어 참조 가이드의 [UploadPostJob](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) 및 [ReprocessAssetsJob](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)에서도 `preserveCrop`을(를) 참조하십시오.
 
 ## 기본 업로드 옵션 {#default-upload-options}
 
@@ -106,7 +106,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 | **[!UICONTROL 임계값]** | 필수.<br>임계값은 [언샵 마스크] 필터를 적용할 때 무시되는 대비 범위입니다. 이 필터를 사용할 때 이미지에 &quot;노이즈&quot;가 삽입되지 않도록 이 효과가 중요합니다. 값 범위는 회색 음영 이미지의 밝기 단계 수인 `0` - `255`입니다. `0`=검정, `128`=50% 회색 및 `255`=흰색.<br>작은 변화를 무시하는 임계값 `12`은(는) 피부 색조 밝기로 노이즈를 추가하지 않지만 속눈썹이 피부와 만나는 곳과 같은 대비되는 영역에 가장자리 대비를 추가합니다.<br>다른 사람의 얼굴 사진이 있는 경우 [언샵 마스크]는 이미지의 대비되는 부분에 영향을 줍니다. 예를 들어, 속눈썹과 피부가 만나 뚜렷한 대조 영역을 만들고 매끄러운 피부 그 자체입니다. 가장 매끄러운 피부도 밝기 값에 미묘한 변화를 보인다. 임계값을 사용하지 않는 경우에는 필터가 스킨 픽셀에서 이러한 미묘한 변화를 강조합니다. 차례로, 시끄럽고 바람직하지 않은 효과가 만들어지면서 속눈썹의 조영 증대가 이루어져 선명도를 향상시킨다.<br>이 문제를 방지하기 위해 필터에 부드러운 피부처럼 대비가 크게 변경되지 않는 픽셀을 무시하도록 하는 임계값이 도입되었습니다.<br>앞에 표시된 지퍼 그래픽에서 지퍼 옆에 있는 질감을 확인합니다. 문턱값이 너무 낮아서 노이즈를 억제하지 못하기 때문에 화상 노이즈가 나타난다. |
 | **[!UICONTROL 흑백]** | 이미지 밝기(강도)를 언샵 마스크하려면 선택합니다.<br>각 색상 구성 요소를 개별적으로 선택 해제하려면 선택을 취소합니다. |
 
-[Adobe Dynamic Media 및 이미지 서버에서 이미지 선명하게 하기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)도 참조하세요.
+[Adobe Dynamic Media 및 이미지 서버에서 이미지 선명하게 하기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=ko)도 참조하세요.
 
 ### PostScript 탭 {#postscript-tab}
 

@@ -52,7 +52,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.

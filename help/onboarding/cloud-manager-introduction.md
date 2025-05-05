@@ -70,7 +70,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 Cloud Manager 프로그램은 비즈니스 이니셔티브의 논리적 그룹화를 지원하는 Cloud Manager 환경 세트를 나타냅니다. 이러한 그룹화는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당합니다. 예를 들어 한 프로그램은 조직의 공개 웹 사이트를 지원하기 위한 AEM 리소스를 나타내고 다른 프로그램은 내부 DAM을 나타낼 수 있습니다.
 
 
-Cloud Manager 프로그램 사용에 대해 자세히 알아보려면 이 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)를 시청하십시오.
+Cloud Manager 프로그램 사용에 대해 자세히 알아보려면 이 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ko)를 시청하십시오.
 
 사용자는 **샌드박스** 또는 **프로덕션** 프로그램을 만들 수 있습니다.
 
@@ -92,7 +92,7 @@ Cloud Manager 프로그램 사용에 대해 자세히 알아보려면 이 [비�
 
 >[!TIP]
 >
-> 사용 가능한 환경에 대한 개요는 [Adobe Cloud Manager 환경 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 비디오를 참조하십시오.
+> 사용 가능한 환경에 대한 개요는 [Adobe Cloud Manager 환경 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ko) 비디오를 참조하십시오.
 >
 >사용자가 만들 수 있는 환경 유형과 사용자가 환경을 만드는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 

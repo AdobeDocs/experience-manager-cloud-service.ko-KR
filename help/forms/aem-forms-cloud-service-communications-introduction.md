@@ -17,7 +17,7 @@ ht-degree: 34%
 
 > **버전 가용성**
 >
-> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ko)
 > * **AEM as a Cloud Service**: 이 문서
 
 ## 소개

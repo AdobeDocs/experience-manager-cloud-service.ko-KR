@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Adobe Admin Console에 사용자 추가 {#admin-console}
 
-Adobe IMS(Identity Management System) 조직 ID로 프로비저닝되면 이제 [Adobe Admin Console](https://adminconsole.adobe.com/)에 액세스할 수 있습니다. Admin Console에 사용자를 추가하는 방법에 대한 자세한 내용은 [Adobe Admin Console 사용자](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)를 참조하세요.
+Adobe IMS(Identity Management System) 조직 ID로 프로비저닝되면 이제 [Adobe Admin Console](https://adminconsole.adobe.com/)에 액세스할 수 있습니다. Admin Console에 사용자를 추가하는 방법에 대한 자세한 내용은 [Adobe Admin Console 사용자](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/users.ug.html)를 참조하세요.
 
 >[!NOTE]
 >사용자는 AEM Cloud Service 또는 Federated ID을 사용하여 AEM에 로그인할 수 있도록 Adobe ID 제품 프로필에 액세스할 수 있습니다.

@@ -136,7 +136,7 @@ AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하�
 
 1. 대상자를 구성합니다.
 
-   1. 타겟팅 엔진에 따라 [타깃 대상자](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) 또는 [ContextHub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)와 함께 규칙을 정의합니다.
+   1. 타겟팅 엔진에 따라 [타깃 대상자](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=ko) 또는 [ContextHub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)와 함께 규칙을 정의합니다.
 
 1. [브랜드 및 활동](/help/sites-cloud/authoring/personalization/activities.md)을 만듭니다.
 

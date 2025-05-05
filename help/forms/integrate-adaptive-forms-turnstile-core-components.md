@@ -70,7 +70,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    >
    > 이미 턴스타일 유효성 검사를 위해 미리 채워져 있으므로 사용자는 클라이언트측 JavaScript 유효성 검사 URL 및 서버측 유효성 검사 URL을 수정할 필요가 없습니다.
 
-   Turnstile Captcha 서비스가 구성되면 [핵심 구성 요소를 기반으로 하는 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)에서 사용할 수 있습니다.
+   Turnstile Captcha 서비스가 구성되면 [핵심 구성 요소를 기반으로 하는 적응형 양식](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)에서 사용할 수 있습니다.
 
 ## 적응형 양식에서 Turnstile 사용 {#using-turnstile-core-components}
 

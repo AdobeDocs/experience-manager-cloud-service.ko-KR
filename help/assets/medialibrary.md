@@ -154,4 +154,4 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >[!MORELIKETHIS]
 >
 >* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ko-KR)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="적합한 팀 선택"
 >abstract="Adobe Experience Manager 배포를 정상적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ko" text="KPI 평가"
 
 조직 내 여러 부서에서 디지털 환경의 다양한 측면을 보일 수 있습니다. 거버넌스를 갖추지 않으면 끝없는 논쟁과 내분, 혼란의 상황이 발생할 것입니다.
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ![구현을 위한 역할 검토](assets/team_involvement.png)
 
-**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인합니다. Adobe Experience Cloud에 익숙하지 않은 팀원은 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
+**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인합니다. Adobe Experience Cloud에 익숙하지 않은 팀원은 [Experience League](https://experienceleague.adobe.com/ko#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
 
 ## **AEM Experience Manager Assets에 대한 주요 역할**
 
@@ -79,4 +79,4 @@ Adobe Experience Manager Assets 구현을 정상적으로 실행하기 위해 �
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)에서 Adobe Experience Cloud 및 사용 리소스에 대한 자세한 내용을 살펴보고 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받으십시오.
+> [Experience League](https://experienceleague.adobe.com/ko#recommended/solutions/experience-manager)에서 Adobe Experience Cloud 및 사용 리소스에 대한 자세한 내용을 살펴보고 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받으십시오.

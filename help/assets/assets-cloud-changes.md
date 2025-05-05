@@ -88,18 +88,18 @@ ht-degree: 10%
 
 | 기능 또는 사용 사례 | [!DNL Cloud Service]&#x200B;(으)로 [!DNL Experience Manager]의 상태 | 댓글 |
 |-----|-----|-----|
-| [자산 검색 복제](/help/assets/detect-duplicate-assets.md) | 다르게 작동합니다. | [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection)을 참조하세요. |
+| [자산 검색 복제](/help/assets/detect-duplicate-assets.md) | 다르게 작동합니다. | [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/managing/duplicate-detection)을 참조하세요. |
 | [FPO(배치 전용) 표현물의 경우](/help/assets/configure-fpo-renditions.md) | 다르게 작동합니다. | 처리 프로필은 에셋 마이크로서비스 를 사용하여 FPO 렌디션을 생성합니다. Experience Manager 6.5에서는 [!DNL ImageMagick]과(와) 같은 서드파티 솔루션을 사용하여 렌디션을 생성할 수 있습니다. |
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화되어 있습니다. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 에셋 마이크로서비스 는 원본에 쓰기(writeback)를 처리합니다. |
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 이 작업에는 수동 개입이 필요합니다 | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 재처리합니다. |
-| MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)에서 MIME 형식 검색을 참조하십시오. |
-| 조합 자산에 대한 하위 자산 생성 | 지원되지 않습니다. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. [하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)를 참조하세요. 일부 파일 형식의 PDF 미리 보기는 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md)부터 사용할 수 있습니다. |
-| 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. [Experience Manager에서 작동 방식 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)을 참조하세요. |
-| 홈 페이지 | 지원되지 않음 | [[!DNL Assets] 홈 페이지 환경 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) 보기 |
-| ZIP 아카이브에서 자산 추출 | 지원되지 않음 | [ZIP 추출( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip))을 참조하세요. |
+| MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)에서 MIME 형식 검색을 참조하십시오. |
+| 조합 자산에 대한 하위 자산 생성 | 지원되지 않습니다. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. [하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)를 참조하세요. 일부 파일 형식의 PDF 미리 보기는 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md)부터 사용할 수 있습니다. |
+| 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. [Experience Manager에서 작동 방식 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)을 참조하세요. |
+| 홈 페이지 | 지원되지 않음 | [[!DNL Assets] 홈 페이지 환경 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-home-page) 보기 |
+| ZIP 아카이브에서 자산 추출 | 지원되지 않음 | [ZIP 추출( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip))을 참조하세요. |
 | Assets 등급 | 지원되지 않음 | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
-| 콘텐츠 처리 필터 | 지원되지 않음 | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 다운로드하지 않고 인라인으로 PDF 파일을 열도록 [!DNL Experience Manager]을(를) 구성할 수 있도록 하는 것입니다. 게시 인스턴스에서는 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성 인스턴스에서는 Adobe이 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. [콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter)를 참조하세요. |
-| 제품 사진 촬영 템플릿 | 지원되지 않음 | [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information)을 참조하세요. |
+| 콘텐츠 처리 필터 | 지원되지 않음 | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 다운로드하지 않고 인라인으로 PDF 파일을 열도록 [!DNL Experience Manager]을(를) 구성할 수 있도록 하는 것입니다. 게시 인스턴스에서는 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성 인스턴스에서는 Adobe이 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. [콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/content-disposition-filter)를 참조하세요. |
+| 제품 사진 촬영 템플릿 | 지원되지 않음 | [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information)을 참조하세요. |
 | 고급 번역 | 지원되지 않음 | [!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 스마트 변환이 지원되지 않습니다. |
 | WebDAV | 지원되지 않음 | 다른 방법은 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md)를 참조하세요. |
 | 클래식 UI | 지원되지 않음 | 터치 지원 사용자 인터페이스만 사용할 수 있습니다. |
@@ -130,4 +130,4 @@ ht-degree: 10%
 >* [아키텍처](/help/overview/architecture.md)
 >* [주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
 >* [주요 변경 내용 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [비디오 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview)
+>* [비디오 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/overview)

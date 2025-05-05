@@ -20,7 +20,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -35,7 +35,7 @@ as a Cloud Service [!DNL Adobe Experience Manager]의 릴리스 일자 2021년 5
 
 * [API 사용 중단](/help/release-notes/deprecated-removed-features.md): AEM as a Cloud Service에서 사용 중단된 최신 API 목록을 사용할 수 있습니다.
 
-* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): 더 이상 사용되지 않는 Java API 검사 및 기타 개선 사항이 포함된 최신 버전으로 Maven 프로젝트를 업데이트합니다.
+* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko): 더 이상 사용되지 않는 Java API 검사 및 기타 개선 사항이 포함된 최신 버전으로 Maven 프로젝트를 업데이트합니다.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

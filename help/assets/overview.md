@@ -99,7 +99,7 @@ AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹
 
 ## Adobe Journey Optimizer와 통합 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)는 고객에게 지능적인 의사결정과 통찰력을 통해 옴니채널 캠페인을 제공할 수 있도록 여정 관리를 간소화합니다. Journey Optimizer를 사용하여 메시지를 디자인하면 Journey Optimizer 인터페이스 내에서 직접 Assets as a Cloud Service 저장소로 자산에 액세스할 수 있습니다. 사용자는 Experience Manager Assets의 임베드된 사용자 인터페이스를 사용하여 자산에 액세스할 수 있습니다. 자세한 내용은 [Experience Manager Assets를 사용하여 자산 생성 및 관리](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)를 참조하십시오.
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)는 고객에게 지능적인 의사결정과 통찰력을 통해 옴니채널 캠페인을 제공할 수 있도록 여정 관리를 간소화합니다. Journey Optimizer를 사용하여 메시지를 디자인하면 Journey Optimizer 인터페이스 내에서 직접 Assets as a Cloud Service 저장소로 자산에 액세스할 수 있습니다. 사용자는 Experience Manager Assets의 임베드된 사용자 인터페이스를 사용하여 자산에 액세스할 수 있습니다. 자세한 내용은 [Experience Manager Assets를 사용하여 자산 생성 및 관리](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=ko)를 참조하십시오.
 
 ## 새 자산 기능 {#whats-new-assets}
 

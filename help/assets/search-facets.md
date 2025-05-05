@@ -52,7 +52,7 @@ ht-degree: 19%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장할 수 있습니다. Experience Manager의 일반 검색 기능만 사용하는 경우 적절한 에셋을 찾는 것이 어렵고 시간이 많이 걸릴 수 있습니다.

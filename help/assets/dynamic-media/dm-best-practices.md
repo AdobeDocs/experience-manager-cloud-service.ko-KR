@@ -46,7 +46,7 @@ Dynamic Media의 주요 개념 중 일부는 다음과 같습니다.
 * **경험 뷰어 라이브러리:** 이미지 및 비디오에 대한 경험 뷰어를 사용자 지정하고 브랜드화합니다. 이러한 뷰어는 디지털 경험에 원활하게 통합됩니다.
 * **새로운 형식 지원:** Dynamic Media를 사용하면 3D 및 파노라마 경험을 제공할 수 있습니다.
 
-[Dynamic Media 여정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)을 살펴보면서 아래 통합 모범 사례 목록을 검토하면 해당 기능을 최대한 활용하는 데 도움이 될 수 있습니다. 이러한 Dynamic Media 모범 사례를 특정 컨텍스트 및 프로젝트 요구 사항에 맞게 조정하여 채널 및 디바이스 전반에서 경험을 최적화할 수 있습니다.
+[Dynamic Media 여정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)을 살펴보면서 아래 통합 모범 사례 목록을 검토하면 해당 기능을 최대한 활용하는 데 도움이 될 수 있습니다. 이러한 Dynamic Media 모범 사례를 특정 컨텍스트 및 프로젝트 요구 사항에 맞게 조정하여 채널 및 디바이스 전반에서 경험을 최적화할 수 있습니다.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Dynamic Media 뷰어 우수 사례는 AEM에서 Dynamic Media 에셋의 성능, 
 기본 뷰어 JavaScript 파일만 페이지에 포함하십시오. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `/s7viewers` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `Utils.js` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
 * **포함 지침:**
 각 뷰어에 고유한 포함 지침을 보려면 설명서를 사용하십시오.
-자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)&#x200B;(으)로 이동합니다.
+자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)&#x200B;(으)로 이동합니다.
 * **SDK 자습서 및 예제:**
-SDK 구성 요소 API에 대한 자세한 내용은 [뷰어 SDK 자습서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
+SDK 구성 요소 API에 대한 자세한 내용은 [뷰어 SDK 자습서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
 
 
 ## 게재를 위한 자산 준비
@@ -224,7 +224,7 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
 | **로고 또는 아이콘 이미지를 업로드 및 게시합니다** | 그런 다음 기본 이미지 위에 겹칠 이미지를 업로드하고 게시합니다. 이 이미지는 오버레이할 로고 또는 아이콘이 있는 투명 PNG여야 합니다.<br>투명 효과가 있는 별 개체의 투명 PNG 이미지는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>여기서 에셋은<ul><li> `hotspotRetailBaseImage`은(는) 기본 이미지입니다.</li><li> `starxp`은(는) 로고/아이콘 이미지입니다.</li><li> `layer=1`은(는) 로고 또는 아이콘이 기본 이미지 위에 겹치도록 지정합니다.</li><li> `scale=1.25`은(는) 로고/아이콘의 크기를 조정합니다.</li><li> `posN=0.33,-.25`은(는) 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.</li><li> `fmt=png`은(는) 출력이 PNG 형식인지 확인합니다.</li></ul> |
 
-자세한 내용 `src` 명령 및 기타 Dynamic Media URL 명령에 대한 자세한 내용을 보려면 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)&#x200B;(으)로 이동하십시오.
+자세한 내용 `src` 명령 및 기타 Dynamic Media URL 명령에 대한 자세한 내용을 보려면 [src](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)&#x200B;(으)로 이동하십시오.
 
 
 #### 홍보 텍스트 오버레이
@@ -276,7 +276,7 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop)
 
 특정 요구 사항에 맞게 이러한 변형을 자유롭게 탐색할 수 있습니다.
-URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습니까? [명령 참조](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)&#x200B;(으)로 이동합니다.
+URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습니까? [명령 참조](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)&#x200B;(으)로 이동합니다.
 
 ### GIF 이미지 게재
 
@@ -320,7 +320,7 @@ Dynamic Media를 통해 GIF를 업로드하고 게재할 수 있습니다. 애�
    * **비디오 포함:**
 제공된 임베드된 코드를 복사하여 비디오를 표시할 웹 페이지의 HTML에 붙여넣습니다. 이렇게 하면 사이트에서 비디오를 직접 재생할 수 있습니다.
 
-자세히 알아보시겠습니까? [비디오](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)&#x200B;(으)로 이동합니다.
+자세히 알아보시겠습니까? [비디오](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)&#x200B;(으)로 이동합니다.
 
 ### 최적의 품질과 참여를 위한 비디오 구성
 

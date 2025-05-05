@@ -54,7 +54,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 ## 에뮬레이터 활성화 {#enabling-emulator}
 
-[Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 [표준 사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)이(가) 이미 에뮬레이터를 사용할 수 있도록 설정되었습니다. 핵심 구성 요소 또는 Archetype을 기반으로 하지 않는 자체 콘텐츠를 개발한 경우, 이러한 기능을 활용하면서 구성 요소를 개발하는 방법에 대한 자세한 내용은 [반응형 디자인](/help/implementing/developing/introduction/responsive-design.md) 문서를 참조하십시오.
+[Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 [표준 사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)이(가) 이미 에뮬레이터를 사용할 수 있도록 설정되었습니다. 핵심 구성 요소 또는 Archetype을 기반으로 하지 않는 자체 콘텐츠를 개발한 경우, 이러한 기능을 활용하면서 구성 요소를 개발하는 방법에 대한 자세한 내용은 [반응형 디자인](/help/implementing/developing/introduction/responsive-design.md) 문서를 참조하십시오.
 
 ## 사이트에 대한 레이아웃 모드 활성화 {#activate-layout-mode-for-your-site}
 

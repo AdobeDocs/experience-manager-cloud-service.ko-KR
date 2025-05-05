@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법에 대한 소개는 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem_ko)을 참조하십시오. 또한 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법도 알아봅니다. Adobe ID가 필요합니다.
+>Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법에 대한 소개는 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?lang=ko&recommended=ExperienceManager-A-1-2020.1.aem_ko)을 참조하십시오. 또한 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법도 알아봅니다. Adobe ID가 필요합니다.
 
 ## 주요 내용 {#key-highlights}
 

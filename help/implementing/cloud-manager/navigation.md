@@ -119,7 +119,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 * 프로그램에 할당된 이름. 위의 이미지는 프로그램 이름으로 &quot;SecurBank 샘플&quot;을 보여 줍니다.
 * 서비스 유형:
    * **Experience Manager 클라우드** — AEM as a Cloud Service 프로그램용
-   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)
 * [프로그램 형식](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * 샌드박스
    * 프로덕션

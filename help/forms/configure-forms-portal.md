@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=ko) |
 | AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
 
 Forms 포털은 AEM Sites 페이지에 적응형 Forms을 표시하고 나열하는 효율적인 방법을 제공합니다. 다양한 양식을 체계적으로 사용자에게 제시하기 위해 플랫폼이 필요한 조직에 유용합니다.

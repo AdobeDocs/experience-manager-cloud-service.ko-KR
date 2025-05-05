@@ -99,6 +99,6 @@ AEM as a Cloud Service의 제품 영역에 대한 아래의 규제 설명서 섹
 Adobe Experience Manager as a Cloud Service와 Adobe Target 및 Adobe Analytics의 통합은 데이터 보호 및 개인정보 보호(예: GDPR) 지원 서비스로 구현됩니다. 해당 통합과 관련하여 어떠한 Adobe Target 또는 Adobe Analytics의 개인 데이터도 AEM에 저장되지 않습니다.
 자세한 내용은 다음 문서를 참조하십시오.
 
-* [Adobe Target - 개인정보 보호 개요](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [Adobe Target - 개인정보 보호 개요](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ko)
 
-* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=ko)

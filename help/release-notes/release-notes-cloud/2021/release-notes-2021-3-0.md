@@ -20,7 +20,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -64,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms은 수년 동안 훌륭한 온보딩 및 등록 경험을 제공할 수 있도록 많은 기업들에게 도움을 주었습니다. 이러한 경험은 기업이 잠재 고객을 판매로 전환하고, 캡처된 고객 데이터를 처리하고, 대상 그룹 프로필을 기반으로 반응형 경험을 제공하는 데 도움이 되었습니다. 이제 AEM Forms을 클라우드 서비스로 사용할 수 있습니다.
 
-[AEM Forms, as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)을 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, Adobe Sign과 양식을 통합하여 양식에 전자 서명을 추가하고, DoR(문서 기록)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 이 서비스는 기존 PDF forms을 디지털 양식으로 변환할 수도 있습니다. 표준 AEM Forms 기능 외에도 이 서비스는 자동 확장, 무중단 업그레이드, 클라우드 기반 개발 환경과 같은 여러 클라우드 기반 기능을 제공합니다.
+[AEM Forms, as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ko)을 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, Adobe Sign과 양식을 통합하여 양식에 전자 서명을 추가하고, DoR(문서 기록)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 이 서비스는 기존 PDF forms을 디지털 양식으로 변환할 수도 있습니다. 표준 AEM Forms 기능 외에도 이 서비스는 자동 확장, 무중단 업그레이드, 클라우드 기반 개발 환경과 같은 여러 클라우드 기반 기능을 제공합니다.
 
 Adobe 담당자에게 문의하여 데모를 받거나 서비스에 등록할 수 있습니다.
 
@@ -149,7 +149,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt-march}
 
 * 이제 CTT가 `/libs` 대신 `/apps`에 설치되어 특정 페이지에 대한 브라우저 책갈피가 더 이상 유효하지 않을 수 있습니다.
-* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 자세한 내용은 [콘텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)을 참조하세요.
+* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 자세한 내용은 [콘텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko)을 참조하세요.
 
 ### 버그 수정 {#bug-fixes-ctt-march}
 

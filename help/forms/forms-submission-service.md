@@ -37,7 +37,7 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 ## Forms 제출 서비스 구성
 
-적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
+적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
 
 [Forms 제출 서비스를 수동으로 구성](#configuring-the-forms-submission-service-manually)하거나 [API를 사용하여 Forms 제출 서비스를 구성](#configuring-the-forms-submission-service-using-api)할 수 있습니다.
 
@@ -47,7 +47,7 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 #### 1. 양식 정의를 사용하여 양식 만들기
 
-Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
+Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
 
 아래 스크린샷에는 양식을 만드는 데 사용된 양식 정의가 표시됩니다.
 
@@ -55,7 +55,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. 
 
 #### 2. 스프레드시트가 데이터를 수락하도록 설정합니다.
 
-양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
+양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
 
 ![받는 시트](/help/forms/assets/form-submission-incoming-sheet.png)
 

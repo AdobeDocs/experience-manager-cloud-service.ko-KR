@@ -84,7 +84,7 @@ Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점�
 
 Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PDF 문서를 미리 볼 수 있습니다. PDF 문서의 여러 페이지를 미리 보려면 다음 단계를 고려하십시오.
 
-1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
+1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko)하는 단계를 따릅니다.
 1. 업로드하고 미리 보려는 PDF 문서를 찾아봅니다.
 1. 문서를 엽니다.
 1. PDF 문서 뷰어는 기본적으로 로드됩니다. 렌디션 패널에서 PDF 렌디션을 선택할 수도 있습니다.
@@ -163,7 +163,7 @@ PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지�
 
 지원되는 다른 문서 형식의 여러 페이지를 미리 보려면 다음 단계를 수행하십시오.
 
-1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
+1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko)하는 단계를 따릅니다.
 1. 업로드할 문서를 검색하고 미리 봅니다.
 1. 문서를 엽니다.
 1. 왼쪽 패널의 정적 섹션 아래에서 PDF 를 선택합니다. 오른쪽 패널에는 에셋의 여러 페이지 미리보기가 표시됩니다. 미리 보려는 페이지를 선택하려면 왼쪽 패널에서 축소판을 선택합니다.

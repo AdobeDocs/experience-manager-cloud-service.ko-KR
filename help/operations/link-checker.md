@@ -36,7 +36,7 @@ ht-degree: 0%
 내부 링크는 AEM 저장소의 다른 콘텐츠에 대한 링크입니다. 내부 링크는 경로 선택기, 리치 텍스트 편집기 또는 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * `/content/wknd/us/en/adventures/ski-touring` 페이지를 만듭니다.
-* 해당 페이지에는 [텍스트 구성 요소의 `/content/wknd/us/en/adventures/extreme-ironing`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* 해당 페이지에는 [텍스트 구성 요소의 `/content/wknd/us/en/adventures/extreme-ironing`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text)
 
 내부 링크는 콘텐츠 작성자가 그러한 링크를 페이지에 추가하는 즉시 검증됩니다. 링크가 잘못된 경우:
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 외부 링크는 AEM 저장소 외부의 콘텐츠에 대한 링크입니다. 외부 링크는 리치 텍스트 편집기나 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * `/content/wknd/us/en/adventures/ski-touring` 페이지를 만듭니다.
-* 해당 페이지에는 [텍스트 구성 요소의 `https://bunwarmerthermalunderwear.com`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* 해당 페이지에는 [텍스트 구성 요소의 `https://bunwarmerthermalunderwear.com`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text)
 
 외부 링크는 구문을 확인하고 가용성을 확인합니다. 이 검사는 구성 가능한 간격으로 비동기적으로 수행됩니다. 링크 검사기에서 잘못된 외부 링크를 찾은 경우:
 

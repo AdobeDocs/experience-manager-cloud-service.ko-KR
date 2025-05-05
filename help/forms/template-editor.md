@@ -15,11 +15,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 양식 컨테이너의 `guideRootPanel`에 필드 및 구성 요소를 추가합니다. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 도구 메뉴에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**&#x200B;으로 이동하여 템플릿 편집기에 액세스할 수 있습니다. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다.
 
-Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)를 참조하십시오.
+Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko#editing-templates-template-authors)를 참조하십시오.
 
 ### 템플릿 만들기 {#create-template}
 
@@ -160,7 +160,7 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)할 수도 있습니다.
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ko#prerequisites)할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Perform the following steps to show and hide templates:
 
 * 템플릿 편집기에서 양식 속성을 수정할 때는 BindReference 속성을 사용하지 마십시오.
 * 중단점을 추가하려면 적응형 양식 템플릿을 작성할 때 중단점을 만듭니다.
-중단점에 대한 자세한 내용은 [응답형 레이아웃](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)을 참조하세요.
+중단점에 대한 자세한 내용은 [응답형 레이아웃](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=ko#authoring)을 참조하세요.
 
 
 ## 추가 참조 {#see-also}

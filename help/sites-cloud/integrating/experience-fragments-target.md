@@ -55,8 +55,8 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
 >
 >* [Adobe Target 개발](https://developers.adobetarget.com/)
 >* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
->* [Adobe Target - Adobe Experience Manager(AEM) 경험 조각 사용 방법](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
->* [AEM 6.5 - 수동으로 Adobe Target과의 통합 구성 - Target 클라우드 구성 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
+>* [Adobe Target - Adobe Experience Manager(AEM) 경험 조각 사용 방법](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko)
+>* [AEM 6.5 - 수동으로 Adobe Target과의 통합 구성 - Target 클라우드 구성 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=ko#creating-a-target-cloud-configuration)
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -98,7 +98,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
    >
    >경험 조각 오퍼의 JSON 형식을 맞춤화할 수 있습니다. 이렇게 하려면 고객 경험 조각 구성 요소를 정의한 다음 구성 요소 Sling 모델에서 속성을 내보내는 방법에 대한 주석을 달아야 합니다.
    >
-   >다음에서 핵심 구성 요소를 참조하십시오. [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >다음에서 핵심 구성 요소를 참조하십시오. [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=ko)
 
 1. **Adobe Target**&#x200B;에서 다음을 선택합니다.
 
@@ -198,7 +198,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
      >[!NOTE]
      >
-     >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+     >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=ko)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
      >
      >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
      >
@@ -270,7 +270,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ko).
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 
-이전 작업을 수행하면 경험 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)를 참조하십시오.
+이전 작업을 수행하면 경험 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experiencecloud.adobe.com/resources/help/ko_KR/target/target/aem-experience-fragments.html)를 참조하십시오.
 
 >[!NOTE]
 >

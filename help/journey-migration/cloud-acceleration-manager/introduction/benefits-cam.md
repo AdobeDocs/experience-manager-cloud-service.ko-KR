@@ -17,7 +17,7 @@ ht-degree: 34%
 >id="aemcloud_cam_benefits"
 >title="Cloud Acceleration Manager 사용 시 장점"
 >abstract="CAM(Cloud Acceleration Manager)은 Adobe에서 권장하는 모범 사례 및 방법론이 포함된 안내형 경험을 통해 팀이 안심하고 계획, 구현 및 실행할 수 있도록 지원합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Cloud Acceleration Manager 시작"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ko" text="Cloud Acceleration Manager 시작"
 
 다양한 비즈니스 요구 사항과 사용자 정의 기능을 통해 클라우드로 전환하는 것은 관련 프로젝트일 수 있습니다. CAM(Cloud Acceleration Manager)은 Adobe에서 권장하는 모범 사례 및 방법론이 포함된 안내형 경험을 통해 팀이 안심하고 계획, 구현 및 실행할 수 있도록 지원합니다.
 
@@ -41,4 +41,4 @@ Cloud Acceleration Manager 사용의 주요 이점은 다음과 같습니다.
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 대해 알게 되면 이제 및 [Cloud Acceleration Manager을 시작할 준비가 되었습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager에 대해 알게 되면 이제 및 [Cloud Acceleration Manager을 시작할 준비가 되었습니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ko).

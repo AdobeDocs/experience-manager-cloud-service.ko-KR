@@ -27,7 +27,7 @@ Screens 컨텐츠 공급자의 Screensas a Cloud Service 에서 비디오 렌디
 1. Screens Content Provider에서 채널로 이동합니다.
 
    >[!NOTE]
-   >자세한 내용은 [Screens 콘텐츠 공급자 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider)을 참조하십시오.
+   >자세한 내용은 [Screens 콘텐츠 공급자 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ko#screens-content-provider)을 참조하십시오.
 
 1. 왼쪽 탐색 모음에서 도구 섹션을 클릭하고 **Assets**&#x200B;을 클릭한 다음 **처리 프로필**&#x200B;을 클릭합니다.
 

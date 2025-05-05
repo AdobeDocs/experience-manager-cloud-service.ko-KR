@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
+Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
 다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM 사용자 인터페이스를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 ## 캘린더 표시 {#mark-calendars}
 
-기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
+기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)에 게시됩니다.
 
 예정된 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 일자를 기록해 두십시오.
 
@@ -187,7 +187,7 @@ JavaDoc은 Maven Central에 게시됩니다.
 > 
 > 스테이지 및 프로덕션에 배포 시 `aem-prerelease-sdk-api` artifactId를 사용해야 합니다. 프로덕션 파이프라인을 통해 배포 시 항상 `aem-sdk-api`를 사용하십시오. 마찬가지로 프리릴리스 API를 참조하는 코드는 프로덕션 파이프라인을 통해 배포할 수 없습니다.
 
-[AEM CS SDK Build Analyzer Maven 플러그인 v1.0 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)은 종속성 검사를 통해 프로젝트에서 프리릴리스 API가 사용되는지 감지합니다. 분석기가 사용을 감지하면 프리릴리스 SDK API를 사용하여 프로젝트를 분석합니다.
+[AEM CS SDK Build Analyzer Maven 플러그인 v1.0 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko#developing)은 종속성 검사를 통해 프로젝트에서 프리릴리스 API가 사용되는지 감지합니다. 분석기가 사용을 감지하면 프리릴리스 SDK API를 사용하여 프로젝트를 분석합니다.
 
 ## 사용자 교육 {#train-users}
 
@@ -195,8 +195,8 @@ JavaDoc은 Maven Central에 게시됩니다.
 
 Adobe Experience League는 AEMaaCS에 대해 알아볼 수 있는 많은 리소스를 제공합니다.
 
-* [AEMaaCS 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [AEMaaCS 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko)
+* [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=ko)
 * 릴리스 정보 [월별 릴리스 개요 비디오](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 고려 사항 {#considerations}

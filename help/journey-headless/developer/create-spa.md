@@ -129,4 +129,4 @@ AEM에서 SPA 주제에 대해 자세히 살펴볼 수 있는 [추가 리소스]
 * [SPA 편집기 개요](/help/implementing/developing/hybrid/editor-overview.md) - SPA 편집기의 작동 방식에 대한 세부 정보
 * [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md) - 오픈 소스 AEM SPA GitHub 프로젝트에 대한 JavaScript API 참조 및 링크
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 콘텐츠 조각을 만드는 방법
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿

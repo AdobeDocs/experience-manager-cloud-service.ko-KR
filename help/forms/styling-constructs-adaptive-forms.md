@@ -19,7 +19,7 @@ CSS 및 LESS 프레임워크에 대한 지식.
 
 ## 사용자 정의 가능한 사항 {#what-can-be-customized}
 
-이 문서에는 적응형 Forms의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 사용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)를 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 이러한 스타일 구문을 사용하여 스타일을 만드십시오(CSS 또는 그 이하 사용).
+이 문서에는 적응형 Forms의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 사용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. [테마 편집기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/themes.html)를 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 이러한 스타일 구문을 사용하여 스타일을 만드십시오(CSS 또는 그 이하 사용).
 
 ## 적응형 Forms에서 스타일 맞춤화 {#customizing-styles-in-adaptive-forms}
 

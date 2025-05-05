@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -196,7 +196,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하거�
 
 1. **[!UICONTROL 바인딩 대상]** 드롭다운 메뉴에서 **[!UICONTROL 요청 특성]**&#x200B;을(를) 선택하고 **[!UICONTROL 바인딩 값]** 필드에 특성 이름을 입력합니다.
 
-1. head.jsp에 대한 [오버레이](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing)를 만듭니다. 오버레이를 만들려면 CRX DE를 열고 `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` 파일을 `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`에 복사하십시오.
+1. head.jsp에 대한 [오버레이](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=ko#developing)를 만듭니다. 오버레이를 만들려면 CRX DE를 열고 `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` 파일을 `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`에 복사하십시오.
 
    >[!NOTE]
    >

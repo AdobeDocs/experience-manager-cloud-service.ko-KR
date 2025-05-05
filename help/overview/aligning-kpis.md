@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="KPI 정렬"
 >abstract="디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현에 적합한 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="KPI 평가"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=ko" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=ko" text="적합한 팀 선택"
 
 디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현을 위한 세 가지 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다.
 
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->[**KPI 방식 템플릿 다운로드**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**KPI 방식 템플릿 다운로드**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=ko)

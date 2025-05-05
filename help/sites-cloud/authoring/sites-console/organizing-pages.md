@@ -30,7 +30,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 웹 사이트의 구조는 콘텐츠 페이지를 담는 트리로 생각할 수 있습니다. 이 콘텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 콘텐츠가 표시될 때 표시됩니다.
 
-다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
+다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 

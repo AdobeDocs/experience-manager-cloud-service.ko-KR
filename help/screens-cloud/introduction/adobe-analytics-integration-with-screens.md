@@ -63,4 +63,4 @@ Screens Cloud에서 Adobe 분석을 활성화하려면 Adobe 관계 관리자에
 Analytics 이벤트는 indexedDB에 오프라인으로 저장되고 나중에 청크되어 클라우드로 전송됩니다.
 
 >[!NOTE]
->이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)을 참조하세요.
+>이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=ko)을 참조하세요.

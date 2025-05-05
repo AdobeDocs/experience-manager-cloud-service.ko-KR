@@ -19,11 +19,11 @@ ht-degree: 91%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 URL, IP 주소 및 사용자 에이전트 등의 속성별로 웹 사이트 트래픽과 일치하는 규칙을 선언하여 [Adobe Managed CDN에서 트래픽을 필터링하거나](/help/security/traffic-filter-rules-including-waf.md) DoS 공격으로부터 보호하기 위해 사용자 정의 트래픽 속도 제한을 설정합니다. 또한 고객이 정교한 웹 사이트 위협을 대비하는 추가적인 보호를 위해 고급 WAF(웹 애플리케이션 방화벽) 규칙 세트에 라이선스를 부여할 수도 있습니다.
 
-[튜토리얼을 시도](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)하여 트래픽 필터 규칙을 숙지하는 것이 좋습니다. 새로운 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 이해할 수 있습니다.
+[튜토리얼을 시도](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ko)하여 트래픽 필터 규칙을 숙지하는 것이 좋습니다. 새로운 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 이해할 수 있습니다.
 
 트래픽 필터 규칙은 이제 개발 환경에서 이용할 수 있으며, 11월에는 스테이지 및 프로덕션 환경에 점진적으로 롤아웃됩니다. **aemcs-waf-adopter@adobe.com**&#x200B;으로 이메일을 보내어 스테이지 및 프로덕션에 대한 조기 액세스를 요청할 수 있습니다.
 

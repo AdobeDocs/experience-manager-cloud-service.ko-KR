@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="KPI 평가"
 >abstract="Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ko" text="적합한 팀 선택"
 
 Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다.
 

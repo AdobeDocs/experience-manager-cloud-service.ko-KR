@@ -69,7 +69,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 * 이 도구는 이미 실행된 쿼리를 그 관련 성능 특성 및 쿼리 계획과 함께 표시합니다.
 * 이 도구를 사용하면 단순히 쿼리 플랜을 표시하는 것부터 전체 쿼리를 실행하는 것까지 다양한 수준에서 애드혹 쿼리를 수행할 수 있습니다.
 
-쿼리 성능 도구는 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)을 통해 연결할 수 있습니다. AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
+쿼리 성능 도구는 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko#queries)을 통해 연결할 수 있습니다. AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
 
 이 차트는 쿼리 최적화를 위해 쿼리 성능 도구를 사용하는 일반적인 흐름을 설명합니다.
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 
 ## 쿼리 성능 도구 {#query-performance-tool}
 
-쿼리 성능 도구(`/libs/granite/operations/content/diagnosistools/queryPerformance.html`에 있으며 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)를 통해 사용 가능)는 다음을 제공합니다.
+쿼리 성능 도구(`/libs/granite/operations/content/diagnosistools/queryPerformance.html`에 있으며 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko#queries)를 통해 사용 가능)는 다음을 제공합니다.
 * 현재 5000개 이상의 행을 읽기/스캔하는 쿼리로 정의된 &#39;느린 쿼리&#39; 목록입니다.
 * &#39;자주 사용하는 쿼리&#39; 목록
 * Oak에서 특정 쿼리를 실행하는 방법을 이해하는 &#39;쿼리 설명&#39; 도구입니다.
@@ -255,7 +255,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ## JCR 쿼리 치트 시트 {#jcr-query-cheatsheet}
 
-효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)를 다운로드하여 개발 중 참조할 수 있습니다.
+효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ko#jcrquerycheatsheet)를 다운로드하여 개발 중 참조할 수 있습니다.
 
 여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트시트의 콘텐츠는 AEM as a Cloud Service 및 AEM 6.5에 적용됩니다.
 

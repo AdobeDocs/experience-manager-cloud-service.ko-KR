@@ -89,7 +89,7 @@ ht-degree: 3%
 
       * **[!UICONTROL 사후 처리 워크플로]:** 처리 프로필을 사용하여 수행할 수 없는 추가 자산 처리가 필요한 경우 이 옵션을 선택하십시오. 추가적인 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
 
-처리 프로필 및 사후 처리 워크플로에 대한 자세한 내용은 [자산 마이크로서비스 및 처리 프로필 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)을 참조하세요.
+처리 프로필 및 사후 처리 워크플로에 대한 자세한 내용은 [자산 마이크로서비스 및 처리 프로필 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ko)을 참조하세요.
 
 ![고급 Assets 재처리 옵션2](assets/reprocessing-assets-options-advanced-2.png)
 
@@ -105,23 +105,23 @@ ht-degree: 3%
 
 자연어 어휘와 비교하여 비즈니스 분류법에 따라 디지털 에셋에 태그를 지정하면 기업의 비즈니스에 맞게 정렬되고 가장 관련성이 높은 에셋이 검색에 표시됩니다.
 
-비디오 자산용 [스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en)에 대해 자세히 알아보세요.
+비디오 자산용 [스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=ko)에 대해 자세히 알아보세요.
 
-[DAM의 기존 이미지에 대한 색상 태그 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images)에 대해 자세히 알아보십시오.
+[DAM의 기존 이미지에 대한 색상 태그 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ko#color-tags-existing-images)에 대해 자세히 알아보십시오.
 
 ### 스마트 자르기 {#reprocessing-smart-crop}
 
-업로드된 에셋에 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기) 및 선명하게 하기 구성을 적용할 수 있는 [Dynamic Media 스마트 자르기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en)에 대해 자세히 알아보십시오.
+업로드된 에셋에 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기) 및 선명하게 하기 구성을 적용할 수 있는 [Dynamic Media 스마트 자르기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ko)에 대해 자세히 알아보십시오.
 
 ### 메타데이터 {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. Experience Manager Assets에 업로드된 파일에서 메타데이터를 추출하는 기능을 사용하면 메타데이터 관리가 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
 
-[메타데이터 프로필 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en)에 대해 자세히 알아보세요.
+[메타데이터 프로필 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=ko)에 대해 자세히 알아보세요.
 
 ### 폴더에서 Dynamic Media 자산 재처리 {#reprocessing-dynamic-media}
 
-이미 기존 Dynamic Media 이미지 프로필이 있거나 나중에 변경한 Dynamic Media 비디오 프로필이 있는 폴더에서 자산을 재처리할 수 있습니다. 자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)를 참조하십시오.
+이미 기존 Dynamic Media 이미지 프로필이 있거나 나중에 변경한 Dynamic Media 비디오 프로필이 있는 폴더에서 자산을 재처리할 수 있습니다. 자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -130,4 +130,4 @@ ht-degree: 3%
 
 ### 워크플로
 
-[처리 프로필 및 사후 처리 워크플로](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)에 대해 자세히 알아보십시오.
+[처리 프로필 및 사후 처리 워크플로](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ko)에 대해 자세히 알아보십시오.

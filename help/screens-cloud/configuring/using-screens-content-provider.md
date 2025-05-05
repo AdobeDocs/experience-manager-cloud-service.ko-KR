@@ -25,7 +25,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >**전제 조건**
->이 섹션을 읽기 전에 [Screens 서비스 공급자 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)을 참조하여 Screens 서비스 공급자에서 이 사용자 인터페이스로 이동하는 방법을 알아보십시오.
+>이 섹션을 읽기 전에 [Screens 서비스 공급자 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ko)을 참조하여 Screens 서비스 공급자에서 이 사용자 인터페이스로 이동하는 방법을 알아보십시오.
 
 Screens Content Provider에 로그온하려면 아래 단계를 따르십시오.
 
@@ -42,7 +42,7 @@ Screens Content Provider에 로그온하려면 아래 단계를 따르십시오.
    ![도구 모음의 맨 왼쪽에 Cloud Manager 개요 페이지의 아이콘이 표시됩니다.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >프로그램을 만들지 않은 경우 [Screensas a Cloud Service 에 처음 로그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)을 참조하십시오. 이 항목에서는 Cloud Manager의 Screensas a Cloud Service 에 대한 프로그램을 추가하는 방법을 안내합니다.
+   >프로그램을 만들지 않은 경우 [Screensas a Cloud Service 에 처음 로그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=ko)을 참조하십시오. 이 항목에서는 Cloud Manager의 Screensas a Cloud Service 에 대한 프로그램을 추가하는 방법을 안내합니다.
 
 1. Screens Content Provider에 액세스할 수 있도록 **환경** 카드에서 링크를 선택합니다.
 
@@ -58,4 +58,4 @@ Screens Content Provider에 로그온하려면 아래 단계를 따르십시오.
 
 ## 다음 단계 {#whats-next}
 
-이제 Screens Provider로 이동하는 방법을 배웠으므로 [Screensas a Cloud Service 에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html) 문서를 검토하여 Screens as a Cloud Service 여정을 계속하십시오.
+이제 Screens Provider로 이동하는 방법을 배웠으므로 [Screensas a Cloud Service 에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=ko) 문서를 검토하여 Screens as a Cloud Service 여정을 계속하십시오.

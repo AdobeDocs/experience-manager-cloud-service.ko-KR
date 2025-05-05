@@ -297,7 +297,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
     </ul>
     <div>
       선명하게 하기는에 설명되어 있습니다.
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용</a> 비디오, <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">이미지 선명하게 하기</a> 온라인 도움말 항목 및 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Dynamic Media Classic에서 이미지 선명하게 하기 모범 사례</a> 다운로드 가능한 PDF.
+     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용</a> 비디오, <a href="https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">이미지 선명하게 하기</a> 온라인 도움말 항목 및 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ko">Dynamic Media Classic에서 이미지 선명하게 하기 모범 사례</a> 다운로드 가능한 PDF.
     </div> </td>
   </tr>
   <tr>
@@ -317,7 +317,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>지역화 명령: <code>locale=</code> 및 <code>req=xlate</code></li>
@@ -334,7 +334,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 
 ### 이미지 수정자를 사용하여 이미지 사전 설정 옵션 정의 {#defining-image-preset-options-with-image-modifiers}
 
-기본 및 고급 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하도록 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용하며 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)에서 자세히 정의됩니다.
+기본 및 고급 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하도록 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용하며 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)에서 자세히 정의됩니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본 예입니다.
 
@@ -342,7 +342,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 >
 >일부 이미지 수정자 [은(는) Experience Manager](#advanced-tab-options)에서 사용할 수 없습니다.
 
-* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
+* [op_invert](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -350,7 +350,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - 이미지에 흐림 효과 필터를 적용합니다.
+* [op_blur](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - 이미지에 흐림 효과 필터를 적용합니다.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -366,7 +366,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - 밝기를 줄이거나 늘립니다.
+* [op_brightness](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - 밝기를 줄이거나 늘립니다.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -374,7 +374,7 @@ Dynamic Media 통합에서 사용되는 스크립트는 다음과 같습니다.
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
+* [opac](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
   ```xml {.line-numbers}
   opac=29

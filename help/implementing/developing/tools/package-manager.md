@@ -616,4 +616,4 @@ AEM 패키지를 사용하여 AEMaaCS 환경에서 콘텐츠를 만들고 공유
 
 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com)는 로컬 개발 AEM SDK에서 사용할 AEM 패키지를 제공합니다. 소프트웨어 배포에 제공된 AEM 패키지는 Adobe 지원에서 명시적으로 승인하지 않는 한 AEMaaCS 클라우드 환경에 설치하지 않아야 합니다.
 
-자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)를 참조하세요.
+자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)를 참조하세요.

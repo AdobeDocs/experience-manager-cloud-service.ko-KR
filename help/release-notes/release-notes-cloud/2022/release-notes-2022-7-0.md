@@ -21,7 +21,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.7.0
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -41,7 +41,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.7.0
 
 * [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)은 이제 [키보드 단축키](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)를 지원합니다.
 
-* Cloud Service의 [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)(으)로 AEM을 사용하면 WebP와 같은 형식을 제공함으로써 페이지 속도를 크게 향상시킬 수 있습니다. 또한 이 새로운 서비스는 보다 유연한 이미지 크기 조정 및 변환 옵션을 제공합니다. 모든 버전의 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에서는 이 서비스를 사용하여 이미지 구성 요소 정책에서 옵션을 클릭하는 것으로 WebP로 이미지를 제공할 수 있습니다.
+* Cloud Service의 [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko)(으)로 AEM을 사용하면 WebP와 같은 형식을 제공함으로써 페이지 속도를 크게 향상시킬 수 있습니다. 또한 이 새로운 서비스는 보다 유연한 이미지 크기 조정 및 변환 옵션을 제공합니다. 모든 버전의 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko)에서는 이 서비스를 사용하여 이미지 구성 요소 정책에서 옵션을 클릭하는 것으로 WebP로 이미지를 제공할 수 있습니다.
 
 * AEM 개인화 활동은 이제 레거시 오퍼 대신 경험 조각을 사용할 수 있습니다. 이 기능은 다음의 특징을 포함합니다.
    * 레거시 라이브러리가 아닌 AEM 콘텐츠가 경험 조각 오퍼를 촉진하는 마이그레이션 경로를 통해 향후 규모에 맞는 개인화에 적합한 스타일의 콘텐츠를 제공할 수 있습니다.

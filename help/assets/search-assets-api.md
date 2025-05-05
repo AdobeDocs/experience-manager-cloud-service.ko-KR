@@ -99,6 +99,6 @@ headers: {
     },
 ```
 
-Search API를 호출하려면 `Authorization` 세부 정보에 IMS 토큰을 정의해야 합니다. IMS 토큰을 기술 계정에서 가져옵니다. 새 기술 계정을 만들려면 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials)를 참조하십시오. IMS 토큰을 생성하고 자산 검색 API 요청 헤더에서 적절하게 사용하려면 [액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)을 참조하십시오.
+Search API를 호출하려면 `Authorization` 세부 정보에 IMS 토큰을 정의해야 합니다. IMS 토큰을 기술 계정에서 가져옵니다. 새 기술 계정을 만들려면 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#fetch-the-aem-as-a-cloud-service-credentials)를 참조하십시오. IMS 토큰을 생성하고 자산 검색 API 요청 헤더에서 적절하게 사용하려면 [액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#generating-the-access-token)을 참조하십시오.
 
 요청 샘플, 응답 샘플 및 응답 코드를 보려면 [Assets API 검색](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)을 참조하십시오.

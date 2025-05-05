@@ -21,7 +21,7 @@ ht-degree: 1%
 
 인증이 필요한 끝점의 경우 인증 접근 방식은 끝점에 따라 다르지만 OAuth 서버 간, OAuth 웹 앱 또는 OAuth SPA(단일 페이지 앱)를 사용할 수 있습니다. 자격 증명이 [Adobe Developer Console](https://developer.adobe.com/developer-console/)의 프로젝트를 통해 구성되었습니다.
 
-일반적인 API 사용 사례는 CRM 또는 PIM과 같은 시스템과의 통합을 포함하며, 여기서 AEM API를 호출하여 데이터를 검색하거나 유지합니다. 통합 구현의 일부로 응용 프로그램이 [AEM에서 제공하는 이벤트](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview)를 구독할 수 있으며, 이로 인해 Adobe App Builder 또는 기타 인프라에서 비즈니스 논리가 트리거될 수 있습니다.
+일반적인 API 사용 사례는 CRM 또는 PIM과 같은 시스템과의 통합을 포함하며, 여기서 AEM API를 호출하여 데이터를 검색하거나 유지합니다. 통합 구현의 일부로 응용 프로그램이 [AEM에서 제공하는 이벤트](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-eventing/overview)를 구독할 수 있으며, 이로 인해 Adobe App Builder 또는 기타 인프라에서 비즈니스 논리가 트리거될 수 있습니다.
 
 이 문서는 개요 역할을 하지만, 다음 페이지에서 보다 심층적인 문서를 사용할 수 있습니다.
 
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 * [API 개념 및 구문](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)을(를) 포함한 정보 [안내서](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/).
 
-* [인증 접근 방식](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) 및 기타 개념을 설명하는 최상위 튜토리얼입니다.
+* [인증 접근 방식](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) 및 기타 개념을 설명하는 최상위 튜토리얼입니다.
 
-* [OpenAPI 기반 API를 구성하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)에 초점을 맞춘 비디오가 포함된 튜토리얼입니다.
+* [OpenAPI 기반 API를 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)에 초점을 맞춘 비디오가 포함된 튜토리얼입니다.
 
 * 서버 간 인증 전략으로 OpenAPI를 구성하고 호출하는 방법에 대한 [종합적인 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis). 웹 앱 및 단일 페이지 애플리케이션 인증 접근 방식에 대해서도 유사한 튜토리얼을 찾을 수 있습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 1. ADC 프로젝트를 구성합니다. 이렇게 하면 API를 호출할 때 나중에 전달자 토큰으로 교환하는 데 사용되는 자격 증명이 생성됩니다.
 1. ADC 프로젝트 통신을 사용하도록 AEM 인스턴스를 구성합니다. 아래 [클라이언트 ID 등록](#registering-a-client-id) 섹션에 설명된 대로 YAML 파일을 구성하고 배포하여 환경에 클라이언트 ID를 등록하는 작업이 포함됩니다.
 
-자세한 단계별 지침은 [OpenAPI 기반 API 설정 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)를 참조하십시오.
+자세한 단계별 지침은 [OpenAPI 기반 API 설정 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)를 참조하십시오.
 
 ### 클라이언트 ID 등록 {#registering-a-client-id}
 

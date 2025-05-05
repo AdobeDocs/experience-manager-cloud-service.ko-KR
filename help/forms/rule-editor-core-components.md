@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/rule-editor.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko) |
 
 핵심 구성 요소를 기반으로 하는 적응형 양식에서 규칙 편집기 기능은 비즈니스 사용자와 개발자가 적응형 양식 개체에 대한 규칙을 작성할 수 있도록 해줍니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 이 기능을 사용하면 양식 작성 환경을 더욱 간소화하여 정확성과 속도를 모두 보장할 수 있습니다.
 

@@ -48,7 +48,7 @@ osgi 구성 파일이 다음에서 정의됩니다.
 
 >[!NOTE]
 >
->OSGi 구성은 외부 위치에 저장되는 클라우드의 일반적인 AEM 인스턴스처럼 /apps 아래에 저장되지 않습니다. OSGi 구성을 보려면 Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)을(를) 확인하십시오.
+>OSGi 구성은 외부 위치에 저장되는 클라우드의 일반적인 AEM 인스턴스처럼 /apps 아래에 저장되지 않습니다. OSGi 구성을 보려면 Cloud Manager [Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)을(를) 확인하십시오.
 
 ## 실행 모드 확인 {#runmode-resolution}
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으
 
 실행 모드에서 지정한 OSGi 구성 값은 다음 방법으로 확인할 수 있습니다.
 
-1. Cloud Service 환경의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)(으)로 AEM 열기
+1. Cloud Service 환경의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko)(으)로 AEM 열기
 1. __Pod__ 드롭다운 목록을 사용하여 검사할 서비스 계층을 선택합니다.
 1. __상태__ 탭 선택 중
 1. __상태 덤프__ 드롭다운 목록에서 __구성__ 선택

@@ -16,4 +16,4 @@ ht-degree: 7%
 
 2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 지원이 공식적으로 종료됩니다.
 
-지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)를 참조하십시오.
+지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ko)를 참조하십시오.

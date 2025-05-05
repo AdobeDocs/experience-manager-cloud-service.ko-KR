@@ -60,7 +60,7 @@ ht-degree: 0%
 다음 단계를 수행하기 전에 [필수 구성 요소](adding-reviewers-form.md#prerequisite)를 참조하십시오.
 
 그룹을 만들고 구성원을 추가하려면 **도구** > **작업** > **보안** > **그룹**(으)로 이동합니다.
-자세한 내용은 [사용자 관리 및 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)를 참조하십시오.
+자세한 내용은 [사용자 관리 및 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)를 참조하십시오.
 만든 그룹을 기본 제공 사용자 그룹 **forms-submission-reviewers**&#x200B;의 구성원으로 추가했는지 확인하십시오. 이 사용자 그룹은 [!DNL AEM Forms]과(와) 함께 제공되며 사용자가 제출 검토자로 추가되었는지 확인합니다.
 
 사용자 그룹을 적응형 양식에 연결하려면 다음 작업을 수행하십시오.

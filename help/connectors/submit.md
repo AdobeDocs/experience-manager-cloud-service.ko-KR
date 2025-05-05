@@ -22,7 +22,7 @@ AEM 커넥터는 [Adobe Exchange](https://partners.adobe.com/technologyprogram/e
 패키지를 프로젝트에 포함하는 방법에는 여러 가지 옵션이 있습니다.
 
 1. 파트너의 공개 저장소 - 파트너는 공개적으로 액세스할 수 있는 Maven 저장소에 콘텐츠 패키지를 호스팅할 수 있습니다.
-1. 파트너의 암호로 보호된 저장소 - 파트너는 암호로 보호된 Maven 저장소에 콘텐츠 패키지를 호스팅할 수 있습니다. 지침이 필요하면 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories)를 참조하십시오.
+1. 파트너의 암호로 보호된 저장소 - 파트너는 암호로 보호된 Maven 저장소에 콘텐츠 패키지를 호스팅할 수 있습니다. 지침이 필요하면 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=ko#password-protected-maven-repositories)를 참조하십시오.
 1. 번들형 아티팩트 - 이 경우 커넥터 패키지는 고객의 Maven 프로젝트에 로컬로 포함됩니다.
 
 호스팅되는 위치에 관계없이 패키지는 공급업체에서 제공된 대로 pom.xml의 종속성으로 참조되어야 합니다.

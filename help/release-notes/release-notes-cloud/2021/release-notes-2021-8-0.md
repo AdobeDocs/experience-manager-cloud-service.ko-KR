@@ -21,7 +21,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -62,11 +62,11 @@ ht-degree: 27%
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* Automated forms conversion 서비스는 [이탈리아어 및 포르투갈어 언어로 PDF forms을 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)할 수 있습니다. 응용 Forms
+* Automated forms conversion 서비스는 [이탈리아어 및 포르투갈어 언어로 PDF forms을 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ko&#language-specific-meta-model)할 수 있습니다. 응용 Forms
 
-* **Acroform 기반 기록 문서**: AEM Forms as a Cloud Service는 XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로도 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 사용할 수 있도록 지원합니다.
+* **Acroform 기반 기록 문서**: AEM Forms as a Cloud Service는 XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로도 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko)을 사용할 수 있도록 지원합니다.
 
-* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
+* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 ### 새로운 기능 {#what-is-new-aug}
 
 * Cloud Service 고객은 이제 Cloud Manager에서 SLA(서비스 수준 계약) 보고서를 볼 수 있습니다. 이 기능은 앞으로 몇 달에 걸쳐 점진적으로 제공될 예정입니다.
-[SLA 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html)를 참조하십시오.
+[SLA 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=ko)를 참조하십시오.
 
 * IndexType 및 `IndexDamAssetLucene` 품질 규칙의 유형 및 심각도가 변경되었습니다. 이러한 규칙은 이제 모두 Bugs of Blocker *severity*&#x200B;입니다.
 

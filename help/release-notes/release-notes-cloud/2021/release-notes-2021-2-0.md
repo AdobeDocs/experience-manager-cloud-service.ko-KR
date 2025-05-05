@@ -57,13 +57,13 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager]에 대한 �
 
 * [!DNL Experience Manager Assets Brand Portal]을(를) 사용하여 Assets을 가져올 수 있습니다. 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트를 위해 에이전시 사용자로부터 에셋을 소싱하는 데 도움이 됩니다.
 
-* [!DNL Cloud Service] (으)로서 [!DNL Experience Manager Assets]은(는) 사전 구성된 [!DNL Brand Portal] 인스턴스를 가질 수 있습니다. [!DNL Cloud Manager] 사용자는 [!DNL Experience Manager Assets]에서 [!DNL Brand Portal]을(를) [!DNL Cloud Service] (으)로 활성화할 수 있습니다. [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)를 참조하세요.
+* [!DNL Cloud Service] (으)로서 [!DNL Experience Manager Assets]은(는) 사전 구성된 [!DNL Brand Portal] 인스턴스를 가질 수 있습니다. [!DNL Cloud Manager] 사용자는 [!DNL Experience Manager Assets]에서 [!DNL Brand Portal]을(를) [!DNL Cloud Service] (으)로 활성화할 수 있습니다. [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko)를 참조하세요.
 
 * 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 자산을 소싱할 수 있습니다. 에셋 소싱 기능은 [!DNL Brand Portal]을(를) 사용하여 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트를 위한 에셋을 소싱할 수 있도록 지원합니다. [자산 소싱 위치 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko)를 참조하십시오.
 
-* 이제 [!DNL Brand Portal] 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 현재 표시되지 않습니다. 활성 사용자는 [!DNL Admin Console]의 제품 프로필에 계정이 할당된 사용자입니다. [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)를 참조하세요.
+* 이제 [!DNL Brand Portal] 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 현재 표시되지 않습니다. 활성 사용자는 [!DNL Admin Console]의 제품 프로필에 계정이 할당된 사용자입니다. [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=ko)를 참조하세요.
 
-* [!DNL Brand Portal]에 폴더, 컬렉션 등을 다운로드할 때 각 에셋에 대해 별도의 폴더를 만들 수 있는 새로운 다운로드 설정이 도입되었습니다. [다운로드 설정](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)을 참조하세요.
+* [!DNL Brand Portal]에 폴더, 컬렉션 등을 다운로드할 때 각 에셋에 대해 별도의 폴더를 만들 수 있는 새로운 다운로드 설정이 도입되었습니다. [다운로드 설정](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=ko)을 참조하세요.
 
 ## [!DNL Assets]에서 수정된 버그 {#bug-fixes-assets}
 
@@ -138,7 +138,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt}
 
 * 컨텐츠 전송 도구 - 사용자 매핑 도구에 새로운 기능과 UI가 추가되었습니다. 이 기능은 콘텐츠 마이그레이션 활동의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다.
-자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
+자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ko)을 참조하십시오.
 * 이제 콘텐츠 전송 도구는 하위 그룹을 포함하여 마이그레이션 세트에서 참조된 모든 그룹과 사용자를 마이그레이션합니다.
 * 사용자는 마이그레이션 세트를 만들 때 `/etc`에서 특정 경로를 선택할 수 있습니다.
 
@@ -161,7 +161,7 @@ Best Practices Analyzer v2.1.2의 릴리스 날짜는 2021년 2월 18일입니�
 ### 코드 리팩터링 도구의 새로운 기능 {#what-is-new-crt}
 
 * 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer에 대한 몇 가지 버그 수정이 포함되어 있습니다.
-이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits)을 참조하세요.
+이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ko#benefits)을 참조하세요.
 
 ### 버그 수정 {#bug-fixes-crt}
 

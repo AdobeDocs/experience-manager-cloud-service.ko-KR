@@ -20,9 +20,9 @@ ht-degree: 4%
 
 AEM as a Cloud Service용 Commerce integration framework(CIF)를 기반으로 AEM Commerce 프로젝트를 개발하는 경우 AEM as a Cloud Service의 다른 AEM 프로젝트와 동일한 규칙과 모범 사례를 따릅니다. 먼저 다음을 검토하십시오.
 
-- [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
+- [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ko)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko)
+- [AEM as a Cloud Service 개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko)
 
 ## AEM as a Cloud Service SDK을 사용한 로컬 개발 {#local}
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service을 처음 사용하십니까?**&#x200B;** [AEM as a Cloud
 
 다음은 로컬에 설치해야 합니다.
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#download-the-aem-as-a-cloud-service-sdk)
 - [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 - [Node.js v10+](https://nodejs.org/en)
@@ -85,7 +85,7 @@ AEM as a Cloud Service SDK을 사용하여 로컬 CIF 추가 기능 개발을 �
 
    이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한 CIF 추가 기능에는 Commerce GraphQL 끝점을 로컬에서 사용할 수 있도록 하는 로컬 역방향 프록시가 포함되어 있습니다. 이 프록시는 CIF 작성 도구(제품 콘솔 및 선택기) 및 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
 
-   이 변수는 AEM as a Cloud Service 환경에도 설정해야 합니다. 변수에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)을 참조하십시오.
+   이 변수는 AEM as a Cloud Service 환경에도 설정해야 합니다. 변수에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#local-development)을 참조하십시오.
 
 1. (선택 사항) 스테이징된 카탈로그 기능을 활성화하려면 Adobe Commerce 인스턴스에 대한 통합 토큰을 만들어야 합니다. 토큰을 만들려면 [시작하기](./getting-started.md#staging)의 단계를 따르십시오.
 
@@ -95,7 +95,7 @@ AEM as a Cloud Service SDK을 사용하여 로컬 CIF 추가 기능 개발을 �
    Authorization: Bearer <Access Token>
    ```
 
-   암호에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)을 참조하십시오.
+   암호에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko#local-development)을 참조하십시오.
 
 1. AEM as a Cloud Service SDK 시작
 

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ## 특정 실행 모드에 대한 컨텍스트 인식 구성 {#runmode-specific-context-aware-config}
 
-[!UICONTROL 양식 데이터 모델(FDM)]은 [Sling 컨텍스트 인식 구성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html)을 사용하여 다양한 [!DNL Experience Manager] 실행 모드에 대한 데이터 소스와 연결할 수 있도록 다양한 데이터 소스 매개 변수를 지원합니다.
+[!UICONTROL 양식 데이터 모델(FDM)]은 [Sling 컨텍스트 인식 구성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=ko)을 사용하여 다양한 [!DNL Experience Manager] 실행 모드에 대한 데이터 소스와 연결할 수 있도록 다양한 데이터 소스 매개 변수를 지원합니다.
 
 [!UICONTROL 양식 데이터 모델(FDM)]이 클라우드 구성을 사용하여 매개 변수를 저장하는 경우, 체크 인하고 소스 제어(Cloud-Manager GIT 저장소)를 통해 배포하면 모든 실행 모드(개발, 스테이지 및 프로덕션)에 대해 동일한 매개 변수를 사용하여 클라우드 구성이 만들어집니다. 그러나 테스트 및 프로덕션 환경에 대해 서로 다른 데이터 세트를 사용해야 하는 사용 사례의 경우, 서로 다른 [!DNL Experience Manager] 실행 모드에 대해 데이터 소스 매개 변수(예: 데이터 소스 URL)를 사용합니다.
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 1. [!DNL Experience Manager] Archetype 프로젝트에 클라우드 구성을 통합합니다.
    1. 다운로드한 패키지의 압축을 풉니다.
    1. `jcr_root` 폴더를 복사하여 `ui.content` > `src` > `main` > `content`에 넣습니다.
-   1. 필터 `/conf/{foldername}/settings/cloudconfigs/fdm`을(를) 포함하도록 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`을(를) 업데이트합니다. 자세한 내용은 AEM Project Archetype의 [ui.content 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)을 참조하십시오. 이 Archetype 프로젝트가 CM 파이프라인을 통해 배포되면 모든 환경(또는 실행 모드)에 동일한 클라우드 구성이 설치됩니다. 환경을 기반으로 클라우드 구성의 필드(예: URL) 값을 변경하려면 다음 단계에서 설명한 OSGi 구성을 사용하십시오.
+   1. 필터 `/conf/{foldername}/settings/cloudconfigs/fdm`을(를) 포함하도록 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`을(를) 업데이트합니다. 자세한 내용은 AEM Project Archetype의 [ui.content 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=ko)을 참조하십시오. 이 Archetype 프로젝트가 CM 파이프라인을 통해 배포되면 모든 환경(또는 실행 모드)에 동일한 클라우드 구성이 설치됩니다. 환경을 기반으로 클라우드 구성의 필드(예: URL) 값을 변경하려면 다음 단계에서 설명한 OSGi 구성을 사용하십시오.
 
 1. Apache Sling 컨텍스트 인식 구성을 만듭니다. OSGi 구성을 생성하려면 다음을 수행합니다.
    1. **[!DNL Experience Manager] Archetype 프로젝트에서 OSGi 구성 파일을 설정합니다.**
@@ -131,7 +131,7 @@ PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`�
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service]명의 사용자가 암호화 지원을 사용하여 암호 값을 암호화할 수 있습니다. 자세한 내용은 [구성 속성에 대한 암호화 지원](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)을 참조하고 [서비스 팩에서 컨텍스트 인식 구성을 사용할 수 있게 된 후 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config) 값에 암호화된 텍스트를 넣으십시오.
+      >[!DNL Adobe Managed Service]명의 사용자가 암호화 지원을 사용하여 암호 값을 암호화할 수 있습니다. 자세한 내용은 [구성 속성에 대한 암호화 지원](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=ko#enabling-encryption-support)을 참조하고 [서비스 팩에서 컨텍스트 인식 구성을 사용할 수 있게 된 후 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ko#runmode-specific-context-aware-config) 값에 암호화된 텍스트를 넣으십시오.
 
 1. [양식 데이터 모델 편집기](#data-sources)에서 데이터 소스 정의를 새로 고치는 옵션을 사용하여 데이터 소스 정의를 새로 고쳐 FDM UI를 통해 FDM 캐시를 새로 고치고 최신 구성을 가져옵니다.
 

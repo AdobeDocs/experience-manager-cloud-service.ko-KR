@@ -27,7 +27,7 @@ Adobe Experience Manager에는 이미지 조정 및 최적화와 결과 렌더�
 **스마트 이미징:**
 
 * Dynamic Media에서 스마트 이미징을 활성화하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화할 수 있습니다.
-자세히 알아보시겠습니까? [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)&#x200B;(으)로 이동합니다.
+자세히 알아보시겠습니까? [스마트 이미징](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)&#x200B;(으)로 이동합니다.
 * 이러한 매개 변수를 동적으로 조정하여 이미지 전달 성능을 향상시킵니다.
 * 자동 평가 도구 [스냅숏](https://snapshot.scene7.com/)을(를) 사용하여 스마트 이미징을 평가할 수 있습니다.
 
@@ -87,7 +87,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 * 모범 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 모범 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf)는 Experience Manager에도 적용됩니다.
 
-* [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)을 시청하십시오.
+* [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)을 시청하십시오.
 
 Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이미지를 선명하게 할 수 있습니다. 그러나 일반적으로 이미지를 선명하게 하는 데는 한 가지 방법이나 다른 방법만 사용하는 것이 가장 좋지만 둘 다 사용하지 않는 것이 좋습니다. URL에서 전달 시 이미지를 선명하게 하면 일반적으로 최상의 결과를 얻을 수 있습니다.
 
@@ -111,7 +111,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 
       * 모범 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 모범 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf)는 Experience Manager에도 적용됩니다.
 
-      * [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)을 시청하십시오.
+      * [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)을 시청하십시오.
 
       * Experience Manager을 사용하면 네 번째 매개 변수인 모노크롬(0,1)을 제어할 수도 있습니다. 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 별도로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지 여부를 결정합니다.
 

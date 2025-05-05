@@ -53,7 +53,7 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성하면 이제 준비
    1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) 포털로 이동하여 모범 사례 분석기를 zip 파일로 다운로드합니다.
 
       >[!NOTE]
-      >[모범 사례 분석기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations)을 검토하여 BPA를 실행하는 방법을 알아보십시오.
+      >[모범 사례 분석기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ko#imp-considerations)을 검토하여 BPA를 실행하는 방법을 알아보십시오.
 
 1. CAM에서 **업로드 키 가져오기**&#x200B;를 클릭하면 BPA 보고서를 자동으로 CAM에 바로 업로드하도록 시스템을 구성하는 데 사용되는 키를 가져올 수 있습니다.
 
@@ -161,7 +161,7 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성하면 이제 준비
 ![보고서 필터](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->검색 결과 범주 및 중요도 수준에 대한 자세한 내용은 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html)을 참조하십시오.
+>검색 결과 범주 및 중요도 수준에 대한 자세한 내용은 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ko)을 참조하십시오.
 
 #### 모범 사례 평가 {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성하면 이제 준비
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배우면 이제 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html)의 다음 단계를 검토할 준비가 되었습니다.
+Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배우면 이제 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=ko)의 다음 단계를 검토할 준비가 되었습니다.

@@ -42,7 +42,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 핵심 구성 요소별 폴더에서 편집 가능한 핵심 구성 요소 기반 템플릿을 찾을 수 있습니다.
 
-Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)를 참조하십시오.
+Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko#editing-templates-template-authors)를 참조하십시오.
 
 ## 템플릿 만들기 {#create-template}
 
@@ -139,7 +139,7 @@ Header and footer are added in the Initial Content layer.
 
 ![구조 레이어의 레이아웃 컨테이너](/help/forms/assets/layout-template-core-component.png)
 
-자세한 내용은 문서 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)를 참조하십시오.
+자세한 내용은 문서 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=ko)를 참조하십시오.
 
 ## 템플릿 활성화 {#enabling-the-template}
 
@@ -152,7 +152,7 @@ Header and footer are added in the Initial Content layer.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)할 수도 있습니다.
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ko#prerequisites)할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 모범 사례 {#best-practices}
 
-* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)하십시오.
+* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)하십시오.
 * 웹 사이트에서 사용할 수 있는 근본적으로 다른 양식 유형과 일치하도록 템플릿 수 제한
 * 템플릿에 사용되는 사용자 지정 구성 요소에 필요한 유연성과 구성 기능을 제공합니다.
 

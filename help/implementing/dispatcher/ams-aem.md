@@ -29,7 +29,7 @@ Dispatcher 구성 구조에는 Managed Services과 AEM as a Cloud Service 간에
 ## AMS를 AEM as a Cloud Service Dispatcher 구성으로 변환하는 방법
 
 다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. 다음과 같습니다.
-[Cloud Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조의 아카이브가 있습니다.
+[Cloud Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=ko)에 설명된 것과 유사한 구조의 아카이브가 있습니다.
 
 ### 아카이브 추출 및 최종 접두사 제거
 

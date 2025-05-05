@@ -15,7 +15,7 @@ ht-degree: 3%
 
 CT(콘텐츠 변환기)는 Adobe에서 개발한 도구로, 현재 AEM 구현(온-프레미스 또는 Managed Services)에서 AEM as a Cloud Service으로 콘텐츠를 마이그레이션하기 전에 [BPA(모범 사례 분석기)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)에서 보고한 콘텐츠 관련 문제를 자동으로 감지하고 해결하는 데 사용할 수 있습니다.
 
-콘텐츠 변환기는 사용자가 이동 또는 삭제와 같은 대량 작업을 수행할 수 있도록 함으로써 다음 [BPA 패턴 범주](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)(아래 표에 표시됨)에 해당하는 문제를 해결하는 데 도움이 될 수 있습니다. 이를 통해 마이그레이션 프로젝트에 소요되는 시간을 크게 줄이고 복잡성을 줄일 수 있습니다.
+콘텐츠 변환기는 사용자가 이동 또는 삭제와 같은 대량 작업을 수행할 수 있도록 함으로써 다음 [BPA 패턴 범주](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ko)(아래 표에 표시됨)에 해당하는 문제를 해결하는 데 도움이 될 수 있습니다. 이를 통해 마이그레이션 프로젝트에 소요되는 시간을 크게 줄이고 복잡성을 줄일 수 있습니다.
 
 ## 콘텐츠 변환기에서 다루는 패턴 범주 및 제안된 솔루션 {#pattern-categories-and-benefits}
 

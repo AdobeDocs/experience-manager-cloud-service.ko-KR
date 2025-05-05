@@ -42,7 +42,7 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 
 >[!TIP]
 >
->예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
+>예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
 
 [AEM Sites에서 Extension Manager 사용](https://developer.adobe.com/uix/docs/extension-manager/)을 통해 인스턴스별로 확장을 활성화하거나 비활성화하고, 범용 편집기용 확장을 포함하여 Adobe의 자사 확장에 액세스할 수 있습니다.
 

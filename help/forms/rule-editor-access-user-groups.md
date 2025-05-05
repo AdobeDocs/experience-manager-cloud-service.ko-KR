@@ -54,5 +54,5 @@ ht-degree: 2%
 
    규칙 편집기 액세스 권한 없이 사용자가 볼 수 있는 구성 요소 도구 모음
 
-   그룹에 사용자를 추가하는 방법에 대한 지침은 [사용자 관리 및 보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)을 참조하세요.
+   그룹에 사용자를 추가하는 방법에 대한 지침은 [사용자 관리 및 보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)을 참조하세요.
 

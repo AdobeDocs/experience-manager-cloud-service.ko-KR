@@ -191,7 +191,7 @@ Experience Cloud 헤더는 콘솔 상단에 표시되며 더 광범위한 Adobe 
 
   >[!NOTE]
   >
-  > 양식의 변형 생성 사용에 대한 자세한 지침은 [변형 생성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 문서를 참조하십시오.
+  > 양식의 변형 생성 사용에 대한 자세한 지침은 [변형 생성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 문서를 참조하십시오.
 
 - **실험**
 

@@ -97,7 +97,7 @@ ht-degree: 1%
 
 **응답형 동작:** 모바일 장치에서 마법사는 단계별 접근 방식을 유지하지만 더 좁은 화면에 맞게 각 단계 내의 내용을 조정하며 더 큰 화면에 나란히 표시되는 요소를 스택합니다.
 
-[마법사 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)를 사용하여 양식에 마법사 레이아웃을 추가할 수 있습니다. 마법사 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [마법사 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) 문서를 참조하십시오.
+[마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)를 사용하여 양식에 마법사 레이아웃을 추가할 수 있습니다. 마법사 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) 문서를 참조하십시오.
 
 ### 어코디언 레이아웃
 
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 **반응형 동작:** 아코디언은 확장된 콘텐츠 섹션만 표시하여 자연스럽게 세로 공간을 절약하므로 작은 화면에 이상적입니다.
 
-[아코디언 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)를 사용하여 양식에 아코디언 레이아웃을 추가할 수 있습니다. 아코디언 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [아코디언 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) 문서를 참조하십시오.
+[아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)를 사용하여 양식에 아코디언 레이아웃을 추가할 수 있습니다. 아코디언 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) 문서를 참조하십시오.
 
 ### 올바른 레이아웃을 선택하는 방법
 

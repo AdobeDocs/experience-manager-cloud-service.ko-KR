@@ -81,4 +81,4 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 게재를 수
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)

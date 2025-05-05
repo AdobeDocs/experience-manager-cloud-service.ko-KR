@@ -16,7 +16,7 @@ ht-degree: 4%
 이 섹션에서는 Cloud Manager에서 프로그램의 분기를 만드는 방법을 설명합니다.
 
 >[!NOTE]
->마법사를 사용하여 Cloud Manager에서 AEM 응용 프로그램 프로젝트를 만드는 방법에 대해 알아보려면 [Cloud Manager에서 마법사 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html)을 참조하십시오.
+>마법사를 사용하여 Cloud Manager에서 AEM 응용 프로그램 프로젝트를 만드는 방법에 대해 알아보려면 [Cloud Manager에서 마법사 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=ko)을 참조하십시오.
 
 ## 목표 {#objective}
 

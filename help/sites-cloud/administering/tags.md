@@ -36,7 +36,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
    * 이러한 분류는 AEM 전체에 적용됩니다.
 * 태그는 작성자가 적용하고 사이트 방문자가 사용할 수 있습니다.
 * 만든 사람과 관계없이 태그를 페이지에 할당하거나 검색할 때 모든 형태의 태그를 선택할 수 있습니다.
-* 태그는 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)에서 선택한 태그를 기반으로 동적 목록을 생성할 때 사용됩니다.
+* 태그는 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=ko)에서 선택한 태그를 기반으로 동적 목록을 생성할 때 사용됩니다.
 
 ## 태그 요구 사항 {#requirements}
 

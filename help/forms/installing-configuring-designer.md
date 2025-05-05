@@ -17,7 +17,7 @@ ht-degree: 9%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 이 문서 |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=ko) |
 
 Designer은 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. XDP 및 PDF 양식은 적응형 양식에서 기록 문서 템플릿 역할을 합니다. 이러한 양식 서식 파일은 [적응형 양식 서식 파일](template-editor.md)과 다릅니다.
 

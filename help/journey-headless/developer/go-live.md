@@ -66,9 +66,9 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 ## 프로덕션에 배포 {#deploy-to-production}
 
-모든 항목을 테스트하고 제대로 작동하는지 확인하면 코드 업데이트를 [Cloud Manager의 중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)로 푸시할 준비가 완료되었습니다.
+모든 항목을 테스트하고 제대로 작동하는지 확인하면 코드 업데이트를 [Cloud Manager의 중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=ko)로 푸시할 준비가 완료되었습니다.
 
-업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)을 사용하여 AEM as a Cloud Service에 배포할 수 있습니다.
+업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko)을 사용하여 AEM as a Cloud Service에 배포할 수 있습니다.
 
 Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 수 있으며, 이에 대해서는 [Cloud Manager 및 Package Manager를 통한 콘텐츠 패키지 배포](/help/implementing/deploying/overview.md)에서 광범위하게 다루고 있습니다.
 
@@ -134,8 +134,8 @@ Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 �
 ## 추가 리소스 {#additional-resources}
 
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
 * [AEM as a Cloud Service 배포 개요](/help/implementing/deploying/overview.md)
-* [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko)
+* [Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ko)

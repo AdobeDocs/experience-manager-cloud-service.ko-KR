@@ -42,7 +42,7 @@ Real Use Monitoring 서비스는 데이터 수집을 최소화하도록 설계�
 * 방문 중인 사이트의 호스트 이름(예: `experienceleague.adobe.com`)
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형 및 운영 체제(예: `desktop:windows` 또는 `mobile:ios`)
 * 데이터 수집 시간(예: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`)
-* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs`)
+* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs?lang=ko`)
 * 레퍼러 URL(사용자가 링크를 따라간 경우, 현재 페이지에 연결된 페이지의 URL)
 * `2Ac6`과(와) 유사한 형식으로 임의로 생성된 페이지 보기의 ID
 * 샘플링 속도의 가중치 또는 역입니다(예: `100`). 즉, 100개 페이지 중 하나만 기록됩니다

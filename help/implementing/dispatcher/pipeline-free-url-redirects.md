@@ -21,7 +21,7 @@ ht-degree: 1%
 * 이름이 변경된 HTML 페이지.
 * SEO 최적화.
 
-AEM as a Cloud Service은 서버측 리디렉션을 구현하기 위해 [몇 가지 접근 방식](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)을 제공하지만, 이 문서에 설명된 전략인 파이프라인 없는 리디렉션은 다음과 같은 경우에 유용한 선택입니다.
+AEM as a Cloud Service은 서버측 리디렉션을 구현하기 위해 [몇 가지 접근 방식](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/administration/url-redirection)을 제공하지만, 이 문서에 설명된 전략인 파이프라인 없는 리디렉션은 다음과 같은 경우에 유용한 선택입니다.
 
 * 리디렉션을 유지 관리하는 사람은 소스 제어에 파일 변경 내용을 커밋할 권한이 없거나 Cloud Manager 웹 계층 구성 파이프라인을 실행할 권한이 없는 비즈니스 사용자입니다.
 * 리디렉션의 수는 몇 개에서 수만 개에 이른다.
@@ -40,7 +40,7 @@ AEM as a Cloud Service은 서버측 리디렉션을 구현하기 위해 [몇 가
 >[!NOTE]
 > 이 기능의 Redirect Map Manager를 사용하려면 ACS Commons 버전 **6.7.0 이상**&#x200B;이 필요한 반면 Redirect Manager를 사용하려면 버전 **6.10.0 이상**&#x200B;이 필요합니다.
 
-자세한 단계별 구현 안내서는 [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) 자습서를 참조하십시오.
+자세한 단계별 구현 안내서는 [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) 자습서를 참조하십시오.
 
 ## 맵 다시 작성 {#rewrite-map}
 
@@ -87,5 +87,5 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ## 튜토리얼 {#tutorials}
 
-1. [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [URL 리디렉션](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [파이프라인 없는 URL 리디렉션 구현](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL 리디렉션](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/administration/url-redirection)

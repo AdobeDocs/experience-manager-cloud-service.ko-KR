@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 테마를 만들고 적용하여 적응형 양식의 스타일을 지정할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리되며 여러 적응형 Forms에서 재사용할 수 있습니다.
@@ -63,15 +63,15 @@ Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대한 
 
 ### 사전 요구 사항 {#prerequisites-to-customize}
 
-* [Cloud Manager에서 파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)에 대해 잘 알고 있으며 파이프라인 설정 방법에 대한 기본 지식이 있으면 테마 맞춤화를 효율적으로 관리하고 배포하는 데 도움이 됩니다.
-* [기여자 역할로 사용자를 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)하는 방법을 알아봅니다. 기여자 역할이 있는 사용자를 구성하는 방법을 이해하면 테마 맞춤화에 필요한 권한을 부여할 수 있습니다.
+* [Cloud Manager에서 파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#setup-pipeline)에 대해 잘 알고 있으며 파이프라인 설정 방법에 대한 기본 지식이 있으면 테마 맞춤화를 효율적으로 관리하고 배포하는 데 도움이 됩니다.
+* [기여자 역할로 사용자를 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ko)하는 방법을 알아봅니다. 기여자 역할이 있는 사용자를 구성하는 방법을 이해하면 테마 맞춤화에 필요한 권한을 부여할 수 있습니다.
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오. Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 * 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 
 ### 환경 설정
 
 * 로컬 개발 및 Cloud Service 환경에 대해 [적응형 Forms 핵심 구성 요소를 활성화](/help/forms/enable-adaptive-forms-core-components.md).
-* Cloud Service 환경에 대해 [프론트엔드 배포 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 구성하십시오. 또는 나중에 파이프라인을 구성할 수 있으므로 배포 파이프라인을 설정하기 전에 테스트 및 테마 세분화의 우선 순위를 지정할 수 있습니다.
+* Cloud Service 환경에 대해 [프론트엔드 배포 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ko)을 구성하십시오. 또는 나중에 파이프라인을 구성할 수 있으므로 배포 파이프라인을 설정하기 전에 테스트 및 테마 세분화의 우선 순위를 지정할 수 있습니다.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -321,7 +321,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 ##### 5.1 테마를 위한 저장소 만들기{#create-a-new-theme-repo}
 
-테마를 배포하려면 저장소가 필요합니다. [AEM Cloud Manager 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)에 로그인하고 테마에 대한 새 저장소를 추가하십시오.
+테마를 배포하려면 저장소가 필요합니다. [AEM Cloud Manager 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)에 로그인하고 테마에 대한 새 저장소를 추가하십시오.
 
 1. **[!UICONTROL 저장소]** > **[!UICONTROL 저장소 추가]**&#x200B;를 클릭하여 테마에 대한 새 저장소를 만듭니다.
 
@@ -373,7 +373,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 ##### 5.3 프론트엔드 파이프라인 실행 {#run-a-frontend-pipeline}
 
-테마는 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 사용하여 배포됩니다. 테마를 배포하려면 다음 단계를 수행하십시오.
+테마는 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ko)을 사용하여 배포됩니다. 테마를 배포하려면 다음 단계를 수행하십시오.
 
 1. AEM Cloud Manager 저장소에 로그인합니다.
 1. **[!UICONTROL 파이프라인]** 섹션에서 **[!UICONTROL 추가]** 단추를 클릭합니다.
@@ -441,7 +441,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
 
 
 >[!MORELIKETHIS]
@@ -457,5 +457,5 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [적응형 Forms(핵심 구성 요소)를 위한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [반복 가능한 섹션이 포함된 적응형 Forms 만들기](/help/forms/create-forms-repeatable-sections.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
 * [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)

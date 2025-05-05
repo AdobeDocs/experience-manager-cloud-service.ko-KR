@@ -107,9 +107,9 @@ AEM as a Cloud Service 배포 카드 활동 카드를 살펴볼 수 있도록 �
    >오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 자세한 내용은 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)을 참조하십시오.
 
    >[!NOTE]
-   >콘텐츠 전송 도구를 사용하기 전에 [필수 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 및 [모범 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)을(를) 참조하십시오.
+   >콘텐츠 전송 도구를 사용하기 전에 [필수 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ko) 및 [모범 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko)을(를) 참조하십시오.
 
-1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. [콘텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)를 검토하여 콘텐츠 전송 도구를 사용하는 방법을 알아보십시오.
+1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. [콘텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko)를 검토하여 콘텐츠 전송 도구를 사용하는 방법을 알아보십시오.
 
 1. 마이그레이션 세트에서 AEM as a Cloud Service의 환경으로 컨텐츠를 수집하려면 수집을 시작해야 합니다. **수집 작업**(으)로 이동한 다음 **새 수집**&#x200B;을 클릭합니다. 콘텐츠 전송의 수집 단계를 완료하는 방법을 배울 수 있도록 [Target에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 검토하십시오.
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 로그온하는 방법과 구현 단계를 사용하는 방법을 학습하면 [라이브 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html)의 다음 단계를 검토할 수 있습니다.
+Cloud Acceleration Manager에 로그온하는 방법과 구현 단계를 사용하는 방법을 학습하면 [라이브 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=ko)의 다음 단계를 검토할 수 있습니다.

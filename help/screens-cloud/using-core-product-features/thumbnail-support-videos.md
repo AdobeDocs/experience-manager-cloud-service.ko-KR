@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 기존 Screens 채널로 이동하거나 채널을 만듭니다.
 
    >[!NOTE]
-   >채널을 만들고 채널에 콘텐츠를 추가하는 방법은 [Screensas a Cloud Service 에서 채널 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)를 참조하십시오.
+   >채널을 만들고 채널에 콘텐츠를 추가하는 방법은 [Screensas a Cloud Service 에서 채널 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=ko)를 참조하십시오.
 
 1. 채널을 선택합니다. 작업 표시줄에서 **편집**&#x200B;을 클릭하여 편집기를 엽니다.
 

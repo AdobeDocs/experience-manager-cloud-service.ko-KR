@@ -22,7 +22,7 @@ Dynamic Media에는 360개의 비디오 자산 전달에 대한 기본 지원이
 
 현재 공간 오디오가 지원되지 않습니다. 오디오가 스테레오로 혼합된 경우 고객이 카메라 시야각을 변경할 때 밸런스(L/R)가 변경되지 않습니다.
 
-[AEM Assets에서 Dynamic Media 360 비디오 및 사용자 지정 비디오 썸네일 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)을 참조하세요.
+[AEM Assets에서 Dynamic Media 360 비디오 및 사용자 지정 비디오 썸네일 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=ko#dynamic-media)을 참조하세요.
 
 [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)도 참조하세요.
 
@@ -37,7 +37,7 @@ Dynamic Media에는 360개의 비디오 자산 전달에 대한 기본 지원이
 
 Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있습니다. 예를 들어, 장면에 로고와 텍스트를 적절하게 배치하고, 등장방형 미디어용으로 특별히 설계된 효과와 전환을 적용할 수 있습니다.
 
-[360/VR 비디오 편집](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
+[360/VR 비디오 편집](https://helpx.adobe.com/kr/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
 
 ## 360 비디오 뷰어에 사용할 자산 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 

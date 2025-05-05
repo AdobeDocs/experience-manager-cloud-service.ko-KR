@@ -53,7 +53,7 @@ ht-degree: 12%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets을 사용하여 폴더 또는 컬렉션에 있는 에셋에 대한 임시 검토 워크플로를 설정할 수 있습니다. 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 구할 수 있습니다. 검토 워크플로를 프로젝트와 연결하거나 독립 검토 작업을 만들 수 있습니다.

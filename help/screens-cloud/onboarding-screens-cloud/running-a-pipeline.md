@@ -16,7 +16,7 @@ ht-degree: 4%
 이 섹션에서는 Cloud Manager에서 파이프라인을 실행하고 프로그램에 대한 코드를 배포하는 방법에 대해 설명합니다.
 
 >[!NOTE]
->Cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)를 참조하십시오.
+>Cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ko) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)를 참조하십시오.
 
 ## 목표 {#objective}
 
@@ -37,14 +37,14 @@ ht-degree: 4%
 1. **파이프라인 설정** 마법사에서 옵션을 선택합니다. **저장**&#x200B;을 클릭합니다.
 
    >[!NOTE]
-   >파이프라인 설정 마법사의 옵션에 대한 자세한 내용은 [Cloud Manager에서 파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html)을 참조하십시오.
+   >파이프라인 설정 마법사의 옵션에 대한 자세한 내용은 [Cloud Manager에서 파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ko)을 참조하십시오.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. 설정 파이프라인이 완료되면 콜 투 액션 카드가 업데이트됩니다.
 
    >[!NOTE]
-   >Cloud Manager의 배포 단계에 대한 자세한 내용은 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)를 참조하세요.
+   >Cloud Manager의 배포 단계에 대한 자세한 내용은 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)를 참조하세요.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -82,4 +82,4 @@ AEM Headless 번역 여정을 시작해 주셔서 감사합니다! 지금까지 
 
 * [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 다중 사이트 관리자에 대한 세부 정보 및 번역 도구 사용 방법
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)

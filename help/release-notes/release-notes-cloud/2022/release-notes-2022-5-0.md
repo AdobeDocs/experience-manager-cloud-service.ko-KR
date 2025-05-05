@@ -21,7 +21,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.5.0
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -47,7 +47,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.5.0
 
 * [이제 Dynamic Media 스마트 이미징](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)이 AVIF 파일 형식을 지원합니다. AVIF를 사용하면 WebP에 비해 20% 더 큰 크기를 줄일 수 있으므로 Google Core Web Vital(최대 콘텐츠풀 페인트)을 더욱 향상시킬 수 있습니다. 전체적으로 AVIF는 JPEG에 비해 최대 41%의 평균 크기 감소를 제공합니다(일부 이미지에서는 76%까지).
 
-* [!UICONTROL Experience Manager Assets Brand Portal]은(는) 이제 12시간마다 자동 작업을 실행하여 AEM에 게시된 모든 Brand Portal 에셋을 삭제합니다. 따라서 폴더 크기를 임계값 제한 이하로 유지하기 위해 기여도 폴더에 에셋을 수동으로 삭제할 필요가 없습니다. [Experience Manager Assets Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
+* [!UICONTROL Experience Manager Assets Brand Portal]은(는) 이제 12시간마다 자동 작업을 실행하여 AEM에 게시된 모든 Brand Portal 에셋을 삭제합니다. 따라서 폴더 크기를 임계값 제한 이하로 유지하기 위해 기여도 폴더에 에셋을 수동으로 삭제할 필요가 없습니다. [Experience Manager Assets Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko)을 참조하십시오.
 
 ### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
 

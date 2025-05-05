@@ -62,11 +62,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 버튼)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
 
-  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
+  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ko)를 참조하십시오.
 
 * Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이징 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지 및 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다. 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
-  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
+  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ko)를 참조하십시오.
 
 * 랜딩 페이지의 코치 표시를 사용하여 사용자에게 기본 탐색에 대해 알리고 지시합니다.
 
@@ -78,11 +78,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 버튼을 **프로그램 추가** 버튼 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
 
-  자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
+  자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ko#sysadmin-tasks)을 참조하십시오.
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에서 직접 작성자 인스턴스에 한 번의 클릭으로 액세스할 수 있습니다.
 
-  자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
+  자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ko#manage-access-aem)를 참조하십시오.
 
 * 이제 빌드 로그에 생략된 콘텐츠 패키지를 포함하여 검색된 아티팩트의 목록이 포함됩니다.
 

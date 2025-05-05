@@ -37,7 +37,7 @@ AEM as a Cloud Service의 모든 환경은 가용성이 있는지 모니터링�
 
 >[!NOTE]
 >
-> 이 기능은 프로덕션 환경 및 [고급 클라우드 지원](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)을 받는 고객에게만 제공됩니다. 질문이 있는 경우 Adobe 계정 팀에 문의하십시오.
+> 이 기능은 프로덕션 환경 및 [고급 클라우드 지원](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ko#support-add-ons)을 받는 고객에게만 제공됩니다. 질문이 있는 경우 Adobe 계정 팀에 문의하십시오.
 
 ## 내부 모듈 모니터링 {#module-monitoring}
 
@@ -55,10 +55,10 @@ Forms용으로 프로비저닝된 환경에 추가 검사가 추가됩니다. �
 
 ## 고객 가시성 {#customer-observability}
 
-고객은 분석 및 문제 해결을 위해 수집 및 차트로 작성된 실시간 성능 데이터를 제공하는 [New Relic 응용 프로그램 성능 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) 제품군을 사용할 수 있습니다. 모니터링 세트를 사용하면 고객이 JVM 성능 지표, Java™에 대한 트랜잭션 시간, 백그라운드 외부 호출 및 데이터베이스 호출과 같은 다양한 지표를 직접 관찰할 수 있습니다.
+고객은 분석 및 문제 해결을 위해 수집 및 차트로 작성된 실시간 성능 데이터를 제공하는 [New Relic 응용 프로그램 성능 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=ko) 제품군을 사용할 수 있습니다. 모니터링 세트를 사용하면 고객이 JVM 성능 지표, Java™에 대한 트랜잭션 시간, 백그라운드 외부 호출 및 데이터베이스 호출과 같은 다양한 지표를 직접 관찰할 수 있습니다.
 
 ## 추가 리소스 {#resources}
 
-* [New Relic 응용 프로그램 성능 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [AEM as a Cloud Service에 대한 로깅](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [환경 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [New Relic 응용 프로그램 성능 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=ko)
+* [AEM as a Cloud Service에 대한 로깅](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=ko)
+* [환경 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=ko)

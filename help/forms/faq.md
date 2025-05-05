@@ -28,7 +28,7 @@ ht-degree: 100%
 * **온프레미스 또는 [!DNL Adobe-Managed Services] 환경에서 [!DNL Forms] as a Cloud Service 환경으로 콘텐츠를 마이그레이션할 수 있습니까?**
 예. 온프레미스 또는 [!DNL Adobe-Managed Services] 환경에서 [!DNL Forms] as a Cloud Service 환경으로 사용자 정의 코드, 콘텐츠 및 자산을 마이그레이션할 수 있습니다. 자세한 지침은 [Forms as a Cloud Service로 마이그레이션](migrate-to-forms-as-a-cloud-service.md)을 참조하십시오.
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ko#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **AEM [!DNL Forms] as a Cloud Service [!DNL Java™] API 참조 설명서를 어디에서 얻을 수 있습니까?**
 [!DNL Maven Central Repository]에서 Java™ API 참조 설명서를 다운로드할 수 있습니다. 다운로드 방법:
@@ -100,11 +100,11 @@ Experience Manager 6.5 Forms 환경에서 JSON 스키마를 기반으로 적응�
 
 * **Is there any AEM Forms as a Cloud Service connector for Microsoft Power Automate?**
 
-  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
+  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko&#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

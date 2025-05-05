@@ -117,4 +117,4 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 * [Commerce 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
-* [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)

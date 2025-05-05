@@ -16,12 +16,12 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 <span class="preview"> 이 문서에서는 적응형 양식에서 Adobe Analytics을 활성화하는 수동 절차에 대해 간략히 설명합니다. 그러나 Adobe은 [Experience Cloud 설정 자동화를 사용하여 적응형 양식에 Adobe Analytics 사용](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)을 사용하는 것이 좋습니다. </span>
 
-AEM Forms은 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en)과(와) 통합되어 게시된 양식의 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 비즈니스 사용자가 최종 사용자 동작에 대한 통찰력을 얻고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. 적응형 Forms용 Adobe Analytics을 통해 로그인한 사용자와 로그인하지 않은(익명) 사용자의 행동을 모두 캡처하고 추적할 수 있습니다.
+AEM Forms은 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ko)과(와) 통합되어 게시된 양식의 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 비즈니스 사용자가 최종 사용자 동작에 대한 통찰력을 얻고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. 적응형 Forms용 Adobe Analytics을 통해 로그인한 사용자와 로그인하지 않은(익명) 사용자의 행동을 모두 캡처하고 추적할 수 있습니다.
 
 이 문서에 언급된 작업을 수행한 후 다음 비디오에 나와 있는 대로 [!DNL Adobe Analytics]에서 보고서를 구성하고 볼 수 있습니다.
 
@@ -54,12 +54,12 @@ AEM Forms은 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics
 [!DNL Adobe Analytics]을(를) 구성하기 전에 다음을 만드십시오.
 
 * [Adobe Experience Cloud](https://experience.adobe.com/#/home)에 로그온할 Adobe ID.
-* [보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* [보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ko).
 
 
 ### AEM Forms 및 [!DNL Adobe Analytics] 확장 설치 {#install-extensions}
 
-AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) 확장을 구성하려면 다음 단계를 수행하십시오.
+AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko) 확장을 구성하려면 다음 단계를 수행하십시오.
 
 1. Adobe Experience Cloud에 로그온하고 회사에 적합한 이름을 선택합니다.
 
@@ -203,7 +203,7 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 ## 2. AEM Forms 구성 {#configure-aem-forms}
 
-Adobe 실행 구성을 만들기 전에 Adobe 실행을 클라우드 솔루션으로 사용하여 [Adobe IMS 구성을 만드십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Adobe 실행 구성을 만들기 전에 Adobe 실행을 클라우드 솔루션으로 사용하여 [Adobe IMS 구성을 만드십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=ko).
 
 ### Adobe Launch 구성 만들기 {#create-adobe-launch-configuration}
 
@@ -215,7 +215,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 
 1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
 
-1. [연결된 Adobe IMS 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html)을(를) 선택하십시오.
+1. [연결된 Adobe IMS 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=ko)을(를) 선택하십시오.
 
 1. [Adobe Analytics을 구성하는 동안](#Configure-adobe-analytics)에 사용된 회사 이름을 선택하십시오.
 
@@ -235,7 +235,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. [!DNL Adobe Analytics]에 대해 적응형 양식을 사용할 수 있습니다.
 1. 양식 Publish.
 
-적응형 양식에 대해 [!DNL Adobe Analytics]을(를) 사용하도록 설정한 후 AEM Forms과 [!DNL Adobe Analytics] 사이에 적절한 데이터 이벤트 흐름이 있으면 [유효성 검사](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon)할 수 있습니다. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 [Adobe Analytics에서 보고서를 구성하고 볼 수 있습니다](#view-reports-adobe-analytics).
+적응형 양식에 대해 [!DNL Adobe Analytics]을(를) 사용하도록 설정한 후 AEM Forms과 [!DNL Adobe Analytics] 사이에 적절한 데이터 이벤트 흐름이 있으면 [유효성 검사](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ko#validate-the-page-view-beacon)할 수 있습니다. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 [Adobe Analytics에서 보고서를 구성하고 볼 수 있습니다](#view-reports-adobe-analytics).
 
 ### 사용자 지정 이벤트 캡처를 위한 규칙 만들기(선택 사항) {#capture-custom-events}
 

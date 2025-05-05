@@ -31,7 +31,7 @@ AEM as a Cloud Service SDK은 다음 아티팩트로 구성됩니다.
 
 ## SDK을 위한 빌드 {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK을 사용하여 사용자 지정 코드를 빌드하고 배포합니다. [AEM Project Archetype 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)를 참조하세요. 높은 수준에서 다음 단계가 수행됩니다.
+AEM as a Cloud Service SDK을 사용하여 사용자 지정 코드를 빌드하고 배포합니다. [AEM Project Archetype 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using)를 참조하세요. 높은 수준에서 다음 단계가 수행됩니다.
 
 * **컴파일 코드** - Source 코드가 컴파일되어 결과 콘텐츠 패키지가 생성됩니다.
 * **아티팩트 빌드** - 아티팩트는 이 프로세스 동안 빌드됩니다.

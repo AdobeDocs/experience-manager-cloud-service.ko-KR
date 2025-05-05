@@ -97,7 +97,7 @@ Admin Console의 벌크 사용자 업로드 기능을 사용하려면 다음 단
    1. 표시되는 대화 상자에서 **파일 다운로드...** 아래의 드롭다운 목록에서 **대량 사용자 파일**&#x200B;을 선택하고 **다운로드** 단추를 클릭합니다.
    1. 결과 CSV 파일 저장
 1. 대량 사용자 파일 편집
-   * 각 줄에는 업로드할 사용자를 나타내며 15개의 필드가 있습니다(필드의 이름이 파일의 첫 줄을 구성함). 일부 필드는 선택 사항이며 여기에 설명되어 있지 않습니다. [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하세요.  필드는 다음과 같습니다.
+   * 각 줄에는 업로드할 사용자를 나타내며 15개의 필드가 있습니다(필드의 이름이 파일의 첫 줄을 구성함). 일부 필드는 선택 사항이며 여기에 설명되어 있지 않습니다. [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하세요.  필드는 다음과 같습니다.
 
       * _ID 유형_ - 선택 사항입니다.  지정하지 않으면 Adobe ID으로 만들어집니다.
       * _사용자 이름_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
@@ -108,14 +108,14 @@ Admin Console의 벌크 사용자 업로드 기능을 사용하려면 다음 단
       * _국가 코드_ - 선택 사항이며 Adobe ID 업로드에 사용되지 않음
       * _ID_ - 선택 사항이며, Adobe ID 업로드에 사용되지 않습니다.
       * _제품 구성_ - 선택 사항입니다. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-      * _관리자 역할_ - 선택 사항입니다. 사용자가 관리자인 경우 이 필드를 사용합니다. 자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-      * _제품 구성 관리_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리자 역할_ - 선택 사항입니다. 사용자가 관리자인 경우 이 필드를 사용합니다. 자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _제품 구성 관리_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
       * _사용자 그룹_ - 선택 사항입니다. 멤버로 사용자를 할당해야 하는 그룹 목록입니다. 각 그룹은 이미 존재하는 IMS 그룹이어야 합니다. CAM에서 대량 사용자 파일을 다운로드하면 이 필드는 마이그레이션 전에 사용자가 멤버로 있었던(직접 또는 간접적으로) IMS 지원 그룹의 이름으로 미리 채워집니다
-      * _사용자 그룹 관리됨_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-      * _관리된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
-      * _관리되는 계약_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-      * _개발자 액세스_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
-      * _자동 할당된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _사용자 그룹 관리됨_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오. 이 필드는 사용자가 멤버인 모든 그룹에서도 상속됩니다.
+      * _관리되는 계약_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _개발자 액세스_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
+      * _자동 할당된 제품_ - 선택 사항입니다.  자세한 내용은 [대량 사용자 CSV 형식](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html#csv-format)을 참조하십시오
 
    * CSV를 편집할 때 일부 애플리케이션은 저장 시 따옴표를 더 추가할 수 있으며 이로 인해 처리가 실패합니다. 간단한 텍스트 편집기에서 원시 CSV를 검사하여 각 필드에 여는 따옴표와 닫는 따옴표가 하나만 있는지(그리고 &quot;스마트 따옴표&quot;가 아니어야 함) 확인하는 것이 좋습니다.
 

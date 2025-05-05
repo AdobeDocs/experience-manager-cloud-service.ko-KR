@@ -35,4 +35,4 @@ AEM의 ![Extension Manager](/help/implementing/developing/extending/assets/homep
 * AEM App Builder
 
    * [Adobe Developer App Builder을 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [AEM UI 확장성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [AEM UI 확장성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)

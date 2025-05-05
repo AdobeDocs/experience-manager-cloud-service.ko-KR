@@ -302,7 +302,7 @@ AEM에서 검색을 수행하는 동안 선택한 에셋과 유사한 에셋을 
 
 ## 사용자 정의 검색 패싯 {#custom-search-facets}
 
-Adobe Experience Manager의 검색 패싯을 사용하면 단일, 사전 결정된 또는 분류 순서가 아닌 다양한 방법으로 자산을 검색할 수 있습니다. 필요에 따라 검색 패싯을 사용자 정의하고 술어를 추가할 수 있습니다. 사용자 지정 술어 추가에 대한 단계별 안내서는 [검색 패싯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#)을 읽어 보십시오.
+Adobe Experience Manager의 검색 패싯을 사용하면 단일, 사전 결정된 또는 분류 순서가 아닌 다양한 방법으로 자산을 검색할 수 있습니다. 필요에 따라 검색 패싯을 사용자 정의하고 술어를 추가할 수 있습니다. 사용자 지정 술어 추가에 대한 단계별 안내서는 [검색 패싯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=ko#)을 읽어 보십시오.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -350,7 +350,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> 사용자 지정 패싯 </td>
-        <td> 요구 사항에 따라 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">사용자 지정 검색 패싯을 추가할 수 있습니다.</td>
+        <td> 요구 사항에 따라 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=ko">사용자 지정 검색 패싯을 추가할 수 있습니다.</td>
         <td> 사용자 지정 패싯은 Assets 보기에서 부분적으로 지원됩니다. 지원되는 패싯은 다음과 같습니다.
             <ul>
             <li> 예측된 태그
@@ -464,5 +464,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [자산 검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
->* [검색 패싯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+>* [자산 검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=ko)
+>* [검색 패싯](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=ko)

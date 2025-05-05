@@ -21,7 +21,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.4.0
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 * `content-packages-validation` - 배포 중에 설치된 패키지에 대한 올바른 형식의 콘텐츠 구문 및 구조를 확인합니다.
 
-최신 버전의 분석기로 Maven 프로젝트를 업데이트하거나 아직 업데이트하지 않았다면 해당 분석기를 포함하는 것이 좋습니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)에서 설명서를 참조하십시오.
+최신 버전의 분석기로 Maven 프로젝트를 업데이트하거나 아직 업데이트하지 않았다면 해당 분석기를 포함하는 것이 좋습니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko)에서 설명서를 참조하십시오.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation 보안 {#foundation-security}
 

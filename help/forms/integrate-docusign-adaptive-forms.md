@@ -120,7 +120,7 @@ AEM Forms as a Cloud Service docuSign에 대한 사용자 정의 제출 액션 �
 
    이 단계를 실행한 후에는 로컬 개발 환경에서 적응형 양식에 대한 제출 옵션 목록 및 [DocuSign 클라우드 서비스 구성](#configure-docusign-with-aem-forms)에서 사용할 수 있는 새로운 사용자 지정 제출 액션 [DocuSign 전자 서명으로 제출](#enabledocusign)을 볼 수 있습니다.
 
-1. as a Cloud Service [코드를 컴파일하여  [!DNL AEM Forms] 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases)합니다.
+1. as a Cloud Service [코드를 컴파일하여  [!DNL AEM Forms] 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#customer-releases)합니다.
 
 ## [!DNL DocuSign]과(와) [!DNL AEM Forms] 통합 {#configure-docusign-with-aem-forms}
 

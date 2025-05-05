@@ -27,7 +27,7 @@ ht-degree: 73%
 
 * 새 사용자 인터페이스 구현으로 클래식 UI 기반의 구현을 대체합니다.
 
-* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 및 [Adobe Target 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)을 참조하십시오.
+* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=ko) 및 [Adobe Target 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=ko)을 참조하십시오.
 
 * 이제 구성이 Experience Manager 저장소의 `/etc/cloudsettings`가 아닌 `/conf`에 저장됩니다.
 
@@ -57,7 +57,7 @@ ht-degree: 73%
 
 이제 Cloud Service에서 AEM Commerce을 사용할 수 있습니다.
 
-자세한 내용은 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
+자세한 내용은 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ko)를 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
@@ -68,9 +68,9 @@ ht-degree: 73%
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
-자세한 내용은 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
+자세한 내용은 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ko)을 참조하십시오.
 
-* [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
+* [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko) 버전 1.0.2와의 호환성.
 
 * 버그 수정 및 코드 품질 개선
 
@@ -139,7 +139,7 @@ ht-degree: 73%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
+  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ko#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 

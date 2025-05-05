@@ -42,9 +42,9 @@ ht-degree: 35%
 
 * 처리 프로필을 사용하여 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성합니다. [처리 프로필을 사용한 사용자 지정 메타데이터](/help/assets/manage-metadata.md#metadata-compute-service)를 참조하십시오.
 
-* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 다운로드 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)를 참조하세요.
+* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 다운로드 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko#download-configurations)를 참조하세요.
 
-* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)를 참조하세요.
+* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko#doc-viewer)를 참조하세요.
 
 * 이제 AEM as a Cloud Service의 [!DNL Dynamic Media]에서 직접 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다([!DNL Dynamic Media Classic] 사용이 아니라). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 에셋을 제공할 수 있습니다. [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)를 참조하십시오.
 

@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ![워크플로](/help/forms/assets/workflow-marketo-4.png)
 
-Marketo Engage을 AEM Forms과 통합하기 위해 클라우드 서비스 구성을 만든 후 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)과 통합하도록 적응형 양식을 구성할 수 있습니다.
+Marketo Engage을 AEM Forms과 통합하기 위해 클라우드 서비스 구성을 만든 후 [Adobe Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo/using/home)과 통합하도록 적응형 양식을 구성할 수 있습니다.
 
 각 단계를 안내하여 구성 프로세스를 단순화하는 양식 마법사를 사용하여 Marketo Engage을 적응형 양식에 연결할 수 있습니다. 여기에는 템플릿, 스타일 및 데이터 필드 선택뿐만 아니라 데이터 매핑을 설정하여 양식이 만들어진 후 Marketo Engage과 통신할 수 있도록 하는 작업이 포함됩니다. 양식 마법사를 사용하여 제출 시 Adobe Marketo Engage에 직접 데이터를 제출하도록 적응형 양식을 구성할 수도 있습니다.
 
@@ -95,7 +95,7 @@ Marketo Engage과 통합하도록 새 적응형 양식을 구성하려면 다음
 
 ## 다음 단계
 
-[Munchkin 라이브러리](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
+[Munchkin 라이브러리](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
 
 ## 관련 문서
 

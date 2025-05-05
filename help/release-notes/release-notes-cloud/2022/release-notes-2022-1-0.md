@@ -125,7 +125,7 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 원본 AEM 환경의 `System Console`에서 활성화하십시오. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)를 참조하십시오.
+* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 원본 AEM 환경의 `System Console`에서 활성화하십시오. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ko#getting-started)를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt}
 

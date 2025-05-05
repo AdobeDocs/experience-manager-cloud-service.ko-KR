@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service는 클라우드 기반 AEM as a Cloud Service 플�
 >* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko)
 
 AEM Sites as a Cloud Service에 대한 변경 내용 및 추가 사항은 다음과 같습니다.
 
@@ -48,9 +48,9 @@ AEM Cloud service에서는 전통적으로 UI를 차단하는 작업이 백그�
 
 ## 새로운 참조 사이트 및 튜토리얼 {#new-reference-site-and-tutorial}
 
-새로운 AEM 참조 사이트인 [WKND](https://wknd.site/)는 AEM을 통해 웹 사이트를 빌드하기 위한 모범 사례를 반영하고 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델의 세트를 갖추도록 업데이트 및 게시되었습니다. 새로운 참조 사이트 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
+새로운 AEM 참조 사이트인 [WKND](https://wknd.site/)는 AEM을 통해 웹 사이트를 빌드하기 위한 모범 사례를 반영하고 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델의 세트를 갖추도록 업데이트 및 게시되었습니다. 새로운 참조 사이트 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
 
-이전에는 We.Retail이 기본적으로 AEM을 통해 설치되었습니다(프로덕션 모드로 시작하는 경우 제외). AEM as a Cloud Service에서는 기본적으로 참조 사이트가 설치되지 않습니다. 대신 [git 저장소](https://github.com/adobe/aem-guides-wknd/) 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)이 업데이트된 WKND 참조 사이트 코드와 함께 제공됩니다.
+이전에는 We.Retail이 기본적으로 AEM을 통해 설치되었습니다(프로덕션 모드로 시작하는 경우 제외). AEM as a Cloud Service에서는 기본적으로 참조 사이트가 설치되지 않습니다. 대신 [git 저장소](https://github.com/adobe/aem-guides-wknd/) 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)이 업데이트된 WKND 참조 사이트 코드와 함께 제공됩니다.
 
 ## 런타임 시 사용할 수 없는 기능 {#capabilities-not-available-at-runtime}
 

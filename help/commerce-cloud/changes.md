@@ -40,12 +40,12 @@ AEM CIF 추가 기능은 Cloud Manager을 통해 설치됩니다. 설치에는 C
 
 ## CIF Venia 프로젝트 배포
 
-[Cloud Manager Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html)에서 사용할 수 있는 프로젝트 및 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)을(를) 통해 배포가 완료됨
+[Cloud Manager Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=ko)에서 사용할 수 있는 프로젝트 및 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko)을(를) 통해 배포가 완료됨
 
 **이전 CIF 버전**
 
 * CIF Classic: AEM 패키지 설치
-* CIF 오픈 소스: [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)을 통해
+* CIF 오픈 소스: [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)을 통해
 
 ## 제품 카탈로그 데이터
 

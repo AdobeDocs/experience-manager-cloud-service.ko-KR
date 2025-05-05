@@ -47,7 +47,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 * Adobe 번들로 제공되는 CDN(Content Delivery Network)을 Dynamic Media Classic 라이선스의 일부로 사용합니다.
 * 일반 Dynamic Media 도메인(`s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(`images.company.com` 또는 `mycompany.scene7.com`)을 사용하십시오.
 
-  도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+  도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **게시된 서버 이름**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
@@ -60,7 +60,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    * 기본 담당자 이름, 이메일 및 전화번호.
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
    **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다.
 
@@ -68,7 +68,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    * Adobe을 통해 CDN을 사용 중이며 직접적인 관계로 관리되지 않는지 확인합니다.
    * 전용 도메인을 사용 중인지 확인합니다. 즉, `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`과(와) 같은 일반 Dynamic Media 도메인이 아닌 `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
    **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 

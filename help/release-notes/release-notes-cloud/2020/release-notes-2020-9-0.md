@@ -36,7 +36,7 @@ as a Cloud Service [!DNL Adobe Experience Manager] 2020.9.0의 릴리스 날짜�
    * 선택적 Publish - 이제 마케팅 팀이 [!DNL Dynamic Media]과(와) 동기화된 [!DNL Dynamic Media]개의 스마트 자르기 이미지 및 동적 변환에 액세스할 수 있으므로 전역 전송을 위해 [!DNL Dynamic Media]에 해당 자산을 게시하지 않고도 홍보 자료를 만들 수 있습니다. [!DNL Experience Manager] 및 [!DNL Dynamic Media] 게시는 분리되며 이를 위해 별도로 발생할 수 있습니다. [선택적 게시](/help/assets/dynamic-media/selective-publishing.md)를 참조하십시오.
    * 이제 관리자는 프로비전 시 받은 [!DNL Dynamic Media] Cloud Service 암호를 재설정할 수 있습니다. [!DNL Dynamic Media Classic] 데스크톱 앱을 사용하지 않고도 [!DNL Experience Manager] 사용자 인터페이스에서 재설정할 수 있습니다.
 
-* 다음 개선 사항에 대해 알아보려면 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하세요.
+* 다음 개선 사항에 대해 알아보려면 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko)을 참조하세요.
 
    * Adobe Document Cloud 보기 SDK 통합을 통해 향상된 PDF 미리보기.
    * 한 번의 클릭으로 다운로드 기능을 사용할 수 있습니다.

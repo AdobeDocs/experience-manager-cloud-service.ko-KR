@@ -21,7 +21,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.6.0
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -43,7 +43,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.6.0
 
   ![콘텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
 
-* 새로운 [목차 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)는 핵심 구성 요소뿐만 아니라 모든 구성 요소와 함께 작동하므로 자동으로 콘텐츠 페이지에 목차를 렌더링합니다. 또한 서버측에서 렌더링되고 디스패처에 의해 완전히 캐시되므로 로드하는 것도 효율적입니다.
+* 새로운 [목차 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=ko)는 핵심 구성 요소뿐만 아니라 모든 구성 요소와 함께 작동하므로 자동으로 콘텐츠 페이지에 목차를 렌더링합니다. 또한 서버측에서 렌더링되고 디스패처에 의해 완전히 캐시되므로 로드하는 것도 효율적입니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

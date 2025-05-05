@@ -110,6 +110,6 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로
 
 [프로그램 및 파이프라인 제작](create-program.md)을 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋으며 다음은 추가적인 일부 옵션 리소스입니다. 이 리소스는 해당 문서에서 언급된 개념에 대해 자세히 알아봅니다. 그러나 여정을 계속하지 않아도 됩니다.
 
-* [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - 라이브 프로그램과 샌드박스 프로그램 간 차이점에 대해 이해할 수 있습니다.
+* [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=ko) - 라이브 프로그램과 샌드박스 프로그램 간 차이점에 대해 이해할 수 있습니다.
 * [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) - 사이트 템플릿 구조 및 이를 사용하여 사이트를 만드는 방법에 대해 자세히 알아보려면 이 문서를 참조하십시오.
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
+* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ko) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.

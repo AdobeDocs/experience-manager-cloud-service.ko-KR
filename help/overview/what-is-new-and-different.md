@@ -38,7 +38,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)를 참조하십시오.
+>온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko)를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
@@ -272,7 +272,7 @@ Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고�
 * [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko)
 
 >[!TIP]
 >
