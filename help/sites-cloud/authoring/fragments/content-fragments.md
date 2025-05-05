@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 90%
+source-wordcount: '1272'
+ht-degree: 85%
 
 ---
 
@@ -24,12 +24,11 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 >
 >콘텐츠 조각은 **Sites** 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔과 함께 관리되지만 **[자산](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서도 계속 관리될 수 있습니다.
+>**[Assets](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔로 관리됩니다.
 >
->콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다.
+>[콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)에 대한 기본 편집기는 새 편집기이며, **콘텐츠 조각** 콘솔과 **Assets** 콘솔 모두에서 액세스할 수 있습니다.
 >
->* [콘텐츠 조각 -작성](/help/sites-cloud/administering/content-fragments/authoring.md)의 새 편집기는 주로 **콘텐츠 조각** 콘솔에서 액세스할 수 있습니다.
->* [원본 편집기](/help/assets/content-fragments/content-fragments-variations.md)는 주로 **자산** 콘솔에서 액세스할 수 있습니다.
+>[원본 편집기](/help/assets/content-fragments/content-fragments-variations.md)를 사용하려면 먼저 새 편집기를 연 다음 **새 편집기** 스위치를 비활성화하십시오.
 
 >[!NOTE]
 >

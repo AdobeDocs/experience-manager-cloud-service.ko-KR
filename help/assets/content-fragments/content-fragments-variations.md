@@ -5,22 +5,26 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 52%
 
 ---
 
-# 베리에이션 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
+# 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) Adobe Experience Manager(AEM as a Cloud Service) 콘텐츠 조각의 중요한 기능입니다. 특정 채널 및 시나리오에서 사용할 **기본** 컨텐츠의 복사본을 만들고 편집할 수 있기 때문입니다. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각의 중요한 기능입니다. 특정 채널 및 시나리오에서 사용할 **기본** 컨텐츠의 복사본을 만들고 편집할 수 있기 때문입니다. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
 
 >[!NOTE]
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
+>콘텐츠 조각 작성을 위한 두 개의 편집기 (새 편집기와 원본 편집기)가 있습니다. 새 편집기가 기본값입니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다.
+>
+>이 섹션에서는 원본 편집기에 대해 설명합니다. [새 편집기를 통해 열었습니다](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>새 편집기에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
 
 **변형** 탭에서 다음을 수행할 수 있습니다.
 
@@ -47,7 +51,7 @@ ht-degree: 52%
 
 ## 콘텐츠 작성 {#authoring-your-content}
 
-편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 컨텐츠 모델에서 정의된 다양한 데이터 유형의 필드를 포함합니다.
+원본 편집기에서 편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 컨텐츠 모델에서 정의된 다양한 데이터 유형의 필드를 포함합니다.
 
 예:
 
