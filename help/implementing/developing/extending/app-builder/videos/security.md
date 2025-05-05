@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Runtime 작업 보안, 사용자 및 AppBuilder 인증 및 권한 부여에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343300/?quality=12&learn=on&captions=kor)

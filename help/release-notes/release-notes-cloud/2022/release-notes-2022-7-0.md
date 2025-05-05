@@ -33,7 +33,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.7.0
 
 2022년 7월 릴리스 개요 비디오를 통해 2022.7.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3454203/?quality=12&captions=kor)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

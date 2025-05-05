@@ -50,7 +50,7 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 
 ### Cloud Manager 사용자 인터페이스(기본값) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343273?quality=12&learn=on&captions=kor)
 
 이 구성은 환경 세부 정보 페이지의 대화 상자를 사용하여 수행할 수 있습니다. Commerce 지원 프로그램에 대해 이 페이지를 볼 때 엔드포인트가 현재 구성되지 않은 경우 버튼이 표시됩니다.
 

@@ -22,10 +22,10 @@ ht-degree: 0%
 
 이벤트 기반 아키텍처, Adobe I/O 이벤트 및 사용자 지정 이벤트에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343688/?quality=12&learn=on&captions=kor)
 
 ## 이벤트 기반 App Builder 애플리케이션 구축
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343695/?quality=12&learn=on&captions=kor)
 
 게시를 작성하는 방법에 대해 알아보고 App Builder 애플리케이션에서 이벤트를 사용할 수 있습니다.

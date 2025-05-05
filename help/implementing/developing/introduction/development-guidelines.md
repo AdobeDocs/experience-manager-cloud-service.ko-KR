@@ -17,7 +17,7 @@ ht-degree: 3%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 개발 지침"
 >abstract="AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/330555/" text="패키지 구조 데모"
+>additional-url="https://video.tv.adobe.com/v/345905?captions=kor" text="패키지 구조 데모"
 
 이 문서에서는 AEM as a Cloud Service에서의 개발을 위한 지침과 AEM 온프레미스 및 AMS의 AEM과 차이가 있는 중요한 방법에 대해 설명합니다.
 

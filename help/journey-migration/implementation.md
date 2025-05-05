@@ -85,7 +85,7 @@ Adobe 이 도구의 작동 방식과 사용 권장 방법에 대한 자세한 �
 
 * Dispatcher SDK를 구성하는 방법을 이해하려면 이 비디오 를 시청하십시오.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/32984?captions=kor)
 
 ### 마음가짐의 변화 {#a-change-in-mindset}
 

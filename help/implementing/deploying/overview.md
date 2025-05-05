@@ -41,7 +41,7 @@ ht-degree: 94%
 
 다음 비디오는 AEM as a Cloud Service에 코드를 배포하는 방법에 대한 높은 수준의 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/32992?quality=9&captions=kor)
 
 <!--
 >[!NOTE]

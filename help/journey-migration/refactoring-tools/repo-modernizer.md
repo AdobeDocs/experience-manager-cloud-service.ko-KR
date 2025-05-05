@@ -32,7 +32,7 @@ Repository Modernizer는 다음과 같은 배포 구조를 생성하여 호환�
 
 ## Repository Modernizer 사용 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412962/?quality=12&learn=on&captions=kor)
 
 * Adobe I/O CLI 방법 : Adobe은 `aio-cli-plugin-aem-cloud-service-migration`을(를) 통해 Repository Modernizer 사용(Adobe I/O CLI의 경우 AEM as a Cloud Service 코드 리팩터링 플러그인)을 권장합니다.
 

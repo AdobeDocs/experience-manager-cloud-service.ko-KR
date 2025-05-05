@@ -22,22 +22,22 @@ ht-degree: 100%
 
 App Builder, 자체 기능과 App Builder가 제공하는 비즈니스 가치에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342926/?quality=12&learn=on&captions=kor)
 
 ## 터치포인트
 
 최종 사용자가 App Builder SPA와 상호 작용하는 방법과 개발자가 App Builder 개발에 대해 알아볼 수 있는 위치에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342919/?quality=12&learn=on&captions=kor)
 
 ## 아키텍처
 
 App Builder의 애플리케이션 아키텍처와 장점에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342911/?quality=12&learn=on&captions=kor)
 
 ## 비즈니스 가치 및 사용 사례
 
 App Builder의 디자인 원칙과 일반적인 사용 사례에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342904/?quality=12&learn=on&captions=kor)

@@ -185,7 +185,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 이 도구는 Azure 또는 S3 데이터 저장소에서 대규모 에셋을 수집하는 데 사용할 관리자 그룹에만 제공됩니다. 구성 및 수집에 대한 자세한 내용은 비디오를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341391/?quality=12&learn=on&captions=kor)
 
 다음 이미지는 데이터 저장소에서 Experience Manager으로 자산을 수집할 때의 다양한 단계를 보여줍니다.
 
