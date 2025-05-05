@@ -64,8 +64,8 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_demo"
 >title="콘텐츠 전송 도구 실행"
 >abstract="콘텐츠 전송 도구를 사용하여 콘텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오."
->additional-url="https://video.tv.adobe.com/v/327072/?quality=12&amp;learn=on&captions=kor" text=" 데모 보기"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ko#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 데모 보기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
 
 다음 섹션은 새 버전의 콘텐츠 전송 도구에 적용됩니다. 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아보십시오.
 
@@ -75,7 +75,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_extraction_setup"
 >title="추출 설정 단계"
 >abstract="마이그레이션 세트를 만들고 관리하는 방법과 추출 키를 복사하는 방법을 알아보십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ko#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -101,7 +101,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
    >[!NOTE]
    >
-   >이름은 AEM 노드의 동일한 규칙을 따라야 하므로 다음 문자를 포함할 수 없습니다. &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;비정상적인 기호나 이모지가 없습니다.
+   >이름은 AEM 노드의 동일한 규칙을 따라야 하므로 다음 문자를 포함할 수 없습니다. `. / : [ ] | * &lt; > ^ ? { } % # &quot;비정상적인 기호나 이모지가 없습니다.
 
 1. 이제 목록 보기에 마이그레이션 목록이 표시됩니다. 세 점 기호(**..**)를 선택하여 드롭다운을 열고 **추출 키 복사**&#x200B;를 선택합니다. 추출 단계에서 이 키가 필요합니다. 이 추출 키를 복사합니다.
 
@@ -117,7 +117,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_populate_migrationset"
 >title="마이그레이션 세트 채우기"
 >abstract="마이그레이션 세트를 만든 후에는 AEM as a Cloud Service 환경으로 이동해야 하는 소스 인스턴스의 콘텐츠로 채워야 합니다. 이를 위해 소스 인스턴스에 콘텐츠 전송 도구를 설치해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ko" text="콘텐츠 추출하기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="콘텐츠 추출하기"
 
 Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 콘텐츠 전송 도구를 설치합니다. 마이그레이션 세트를 채우는 방법을 알아보려면 이 섹션을 따르십시오.
 
@@ -148,7 +148,6 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
       >CTT 버전(3.0.24)부터 새로운 기능이 콘텐츠 전송 도구에 포함되어 경로 포함 및 제외 프로세스를 향상했습니다. 기존에는 경로를 일일이 선택해야 해 지루하고 시간이 많이 소요됐다. 이제 사용자는 원하는 대로 UI에서 직접 경로를 포함하거나 CSV 파일을 업로드할 수 있습니다.
 
    1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택하십시오. 경로 선택기는 입력하거나 선택하여 입력을 허용합니다. 사용자는 UI에서 또는 CSV 파일을 업로드하여 경로를 포함하는 옵션을 하나만 선택할 수 있습니다.
-
       >[!IMPORTANT]
       >마이그레이션 세트를 만드는 동안 다음 경로가 제한됩니다.
       >* `/apps`

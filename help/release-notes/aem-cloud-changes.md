@@ -19,7 +19,7 @@ AEM(Adobe Experience Manager) 클라우드 서비스는 AEM 프로젝트 관리�
 >id="aem_cloud_notable_changes"
 >title="AEM as a Cloud Service의 주요 변경 사항"
 >abstract="이 탭에서는 AEM as a Cloud Service와 비교하여 AEM 온프레미스 또는 Adobe Managed Services 간의 차이점을 이해하는 데 도움이 되는 콘텐츠를 볼 수 있습니다."
->additional-url="https://video.tv.adobe.com/v/346177?captions=kor" text="AEM as a Cloud Service의 발전"
+>additional-url="https://video.tv.adobe.com/v/330543" text="AEM as a Cloud Service의 발전"
 
 
 >[!NOTE]
@@ -101,7 +101,7 @@ AEM Cloud Service에서는 콘텐츠가 [Sling 콘텐츠 배포](https://sling.a
 
 CDN과 작성 및 게시 서비스에 대한 트래픽 관리를 비롯한 HTTP 가속은 AEM Cloud Service에서 기본적으로 제공됩니다.
 
-AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM Cloud Service 내의 기능이 제공된 CDN에 맞게 최적화되므로 기본 CDN을 사용하는 것이 좋습니다.
+AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM Cloud Service 내의 기능이 제공된 CDN에 맞게 최적화되므로 기본 제공 CDN을 사용하는 것이 좋습니다.
 
 ## 자산 처리 및 게재 {#asset-handling}
 

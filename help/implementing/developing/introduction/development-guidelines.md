@@ -17,7 +17,7 @@ ht-degree: 3%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 개발 지침"
 >abstract="AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/345905?captions=kor" text="패키지 구조 데모"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="패키지 구조 데모"
 
 이 문서에서는 AEM as a Cloud Service에서의 개발을 위한 지침과 AEM 온프레미스 및 AMS의 AEM과 차이가 있는 중요한 방법에 대해 설명합니다.
 
@@ -37,7 +37,7 @@ AEM as a Cloud Service 업데이트 중에 이전 코드와 새 코드가 동시
 
 AEM as a Cloud Service에서 인스턴스의 파일 시스템을 사용하지 마십시오. 이 디스크는 사용 후 삭제되며 인스턴스가 재활용될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수 있지만 대용량 파일에 대해 남용되어서는 안 됩니다. 리소스 사용 할당량에 부정적인 영향을 주고 디스크 제한에 걸릴 수 있기 때문입니다.
 
-파일 시스템 사용이 지원되지 않는 예를 들어, Publish 티어는 지속되어야 하는 모든 데이터가 장기 저장을 위해 외부 서비스로 제공되도록 해야 합니다.
+파일 시스템 사용이 지원되지 않는 예를 들어 게시 계층은 지속되어야 하는 모든 데이터가 장기 저장을 위해 외부 서비스로 전달되도록 해야 합니다.
 
 ## 관찰 {#observation}
 
@@ -63,15 +63,15 @@ Adobe은 HTTP 연결을 위해 제공된 [Apache HttpComponents Client 4.x 라�
 
 작동하는 것으로 알려져 있지만, 종속성을 직접 제공해야 할 수 있는 대안은 다음과 같습니다.
 
-* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) 및/또는 [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)(AEM 제공)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)(오래된 버전이며 버전 4.x로 대체되었으므로 권장되지 않음)
-* [OK Http](https://square.github.io/okhttp/)(AEM에서 제공되지 않음)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) 및/또는 [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)&#x200B;(AEM 제공)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)&#x200B;(오래된 버전이며 버전 4.x로 대체되었으므로 권장되지 않음)
+* [OK Http](https://square.github.io/okhttp/)&#x200B;(AEM에서 제공되지 않음)
 
 시간 초과 제공 옆에 이러한 시간 초과 및 예기치 않은 HTTP 상태 코드의 적절한 처리도 구현해야 합니다.
 
 ## 요청 비율 제한 처리 {#rate-limit-handling}
 
-AEM에 대한 수신 요청 비율이 정상 수준을 초과하면 AEM은 HTTP 오류 코드 429로 새 요청에 응답합니다. AEM에 프로그래밍 방식으로 호출하는 애플리케이션에서는 지수 백오프 전략을 사용하여 몇 초 후에 다시 시도하면서 방어적으로 코딩을 고려할 수 있습니다. 2023년 8월 중순 이전, AEM은 HTTP 오류 코드 503으로 동일한 조건에 응답했습니다.
+AEM에 대한 수신 요청 비율이 정상 수준을 초과하면 AEM은 HTTP 오류 코드 429로 새 요청에 응답합니다. AEM에 프로그래밍 방식으로 호출하는 애플리케이션에서는 지수 백오프 전략을 사용하여 몇 초 후에 다시 시도하면서 방어적으로 코딩을 고려할 수 있습니다. 2023년 8월 중순 이전에도 AEM은 HTTP 오류 코드 503으로 동일한 조건에 응답했습니다.
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
@@ -91,11 +91,11 @@ AEM as a Cloud Service은 타사 고객 코드용 Touch UI만 지원합니다. �
 
 ## 역방향 복제 에이전트 없음 {#no-reverse-replication-agents}
 
-Publish에서 작성자로의 역방향 복제는 AEM as a Cloud Service에서 지원되지 않습니다. 이러한 전략이 필요한 경우 Publish 인스턴스의 팜 및 잠재적으로 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
+AEM as a Cloud Service에서는 게시에서 작성자로 역방향 복제가 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 잠재적으로 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
 
 ## 순방향 복제 에이전트를 포팅해야 할 수 있음 {#forward-replication-agents}
 
-컨텐츠는 게시자-하위 메커니즘을 통해 작성자에서 Publish으로 복제됩니다. 사용자 지정 복제 에이전트는 지원되지 않습니다.
+게시자-하위 메커니즘을 통해 컨텐츠가 작성자에서 게시로 복제됩니다. 사용자 지정 복제 에이전트는 지원되지 않습니다.
 
 ## 개발 환경을 오버로드할 수 없음 {#overloading-dev-envs}
 
@@ -111,7 +111,7 @@ Publish에서 작성자로의 역방향 복제는 AEM as a Cloud Service에서 �
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
 
-클라우드 환경에서 개발자는 Cloud Manager을 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager을 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -142,7 +142,7 @@ Publish에서 작성자로의 역방향 복제는 AEM as a Cloud Service에서 �
 
 디버그 로그 수준에서 로그를 필요 이상으로 오래 두면 많은 항목이 생성됩니다.
 
-개발 중에 `DEBUG`에 항상 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타깃팅을 사용하여 여러 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. 예:
+개발 중에 `DEBUG`에 항상 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타깃팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. 예:
 
 | 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 |
 | - | - | - |
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 스레드 덤프 {#thread-dumps}
 
-클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프서비스 방식으로 다운로드할 수 없습니다. 한편, 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원에 문의하십시오.
+클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프서비스 방식으로 다운로드할 수 없습니다. 한편, 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원 센터에 문의하십시오.
 
 ## CRX/DE Lite 및 AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -183,13 +183,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >
 
 >[!NOTE]
->일부 고객은 AEM Cloud Service Developer Console을 위해 향상된 환경을 시도할 수 있습니다. 자세한 내용은 [이 문서](/help/implementing/developing/introduction/aem-developer-console.md)를 참조하십시오.
+>일부 고객은 AEM 클라우드 서비스 Developer Console을 위해 개선된 경험을 시도할 수 있습니다. 자세한 내용은 [이 문서](/help/implementing/developing/introduction/aem-developer-console.md)를 참조하십시오.
 
 고객은 작성 계층의 개발 환경에서 CRXDE lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)를 런타임에 쓸 수 없으므로 이 작업을 시도하면 오류가 발생합니다.
 
 대신 AEM as a Cloud Service Developer Console에서 저장소 브라우저를 시작하여 작성자, 게시 및 미리보기 계층의 모든 환경에 대해 저장소에 대한 읽기 전용 보기를 제공할 수 있습니다. 자세한 내용은 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)를 참조하세요.
 
-AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경용 AEM as a Cloud Service Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
+AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경용 AEM as a Cloud Service Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 Author 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,7 +215,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 AEM as a Cloud Service Developer Console에 대한 액세스는 Adobe Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되지만, 샌드박스 프로그램의 경우 AEM as a Cloud Service Developer ConsoleAEM as a Cloud Service 에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며, 작성자와 게시 서비스 모두에서 데이터를 보려면 저장소 브라우저와 사용자가 AEM 사용자 또는 AEM 관리자 제품 프로필에도 정의되어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ko)를 참조하세요.
+프로덕션 프로그램의 경우 AEM as a Cloud Service Developer Console에 대한 액세스는 Adobe Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되지만, 샌드박스 프로그램의 경우 AEM as a Cloud Service Developer ConsoleAEM as a Cloud Service 에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며, 작성자 및 게시 서비스 모두에서 데이터를 보려면 저장소 브라우저 및 사용자를 AEM 사용자 또는 AEM 관리자 제품 프로필에 정의해야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하세요.
 
 ### 성능 모니터링 {#performance-monitoring}
 
@@ -239,15 +239,15 @@ Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 �
 
 ### 이메일 보내기 {#sending-emails}
 
-[일 CQ 메일 서비스 OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service)를 사용해야 하며, 전자 메일은 받는 사람에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
+[일 CQ 메일 서비스 OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용해야 하며, 전자 메일은 받는 사람에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
 
 ### 구성 {#email-configuration}
 
-AEM의 전자 메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko#configuring-the-mail-service)를 사용하여 전송해야 합니다.
+AEM의 전자 메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
 
-전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ko)를 참조하세요. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스에 대해 다음과 같은 필요한 조정을 참고하십시오.
+전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)를 참조하세요. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스에 대해 다음과 같은 필요한 조정을 참고하십시오.
 
-* SMTP 서버 호스트 이름을 $[env:AEM_PROXY_HOST;default=proxy.tunnel] (으)로 설정해야 합니다.
+* SMTP 서버 호스트 이름을 $[env:AEM_PROXY_HOST;default=proxy.tunnel]&#x200B;(으)로 설정해야 합니다.
 * SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용되는 portForwards 매개변수에 설정된 원래 프록시 포트의 값으로 설정되어야 합니다. 예를 들어 30465(465가 아님)
 
 SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용되는 portForwards 매개 변수에 설정된 `portDest` 값으로 설정해야 하며 `portOrig` 값은 필요한 30000 - 30999 범위 내에 있는 의미 있는 값이어야 합니다. 예를 들어 SMTP 서버 포트가 465이면 포트 30465을 `portOrig` 값으로 사용해야 합니다.
@@ -307,4 +307,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
-개발 사용 사례, 권장 사항 및 Assetsas a Cloud Service 에 대한 참조 자료에 대해 알아보려면 [Assets 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)를 참조하십시오.
+Assets as a Cloud Service의 개발 사용 사례, 권장 사항 및 참조 자료에 대한 자세한 내용은 [Assets용 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)를 참조하세요.
