@@ -63,9 +63,9 @@ AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
    1. Experience Manager 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**(으)로 이동합니다.
    1. **[!UICONTROL reCAPTCHA]**&#x200B;을(를) 선택합니다. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
-   1. 버전을 [!DNL reCAPTCHA Enterprise](으)로 선택하고 이름, 프로젝트 ID, 사이트 키 및 reCAPTCHA Enterprise 서비스에 대한 API 키(2단계에서 획득)를 지정합니다.
+   1. 버전을 [!DNL reCAPTCHA Enterprise] (으)로 선택하고 이름, 프로젝트 ID, 사이트 키 및 reCAPTCHA Enterprise 서비스에 대한 API 키(2단계에서 획득)를 지정합니다.
    1. 키 유형을 선택하십시오. 키 유형은 [Google Cloud 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)에서 구성한 사이트 키와 동일해야 합니다(예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**).
-   1. 0에서 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores) 사이의 [임계값 점수를 지정하십시오. 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
+   1. 0에서 1[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores) 사이의 임계값 점수를 지정하십시오. 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
    1. 클라우드 서비스 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
 <!--
@@ -92,7 +92,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
    1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **Cloud Service**(으)로 이동합니다.
    1. **[!UICONTROL reCAPTCHA]**&#x200B;을(를) 선택합니다. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
-   1. [!DNL reCAPTCHA v2](으)로 버전을 선택하고 reCAPTCHA 서비스(1단계에서 획득)에 대한 이름, 사이트 키 및 비밀 키를 지정한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하여 클라우드 서비스 구성을 만듭니다.
+   1. [!DNL reCAPTCHA v2] (으)로 버전을 선택하고 reCAPTCHA 서비스(1단계에서 획득)에 대한 이름, 사이트 키 및 비밀 키를 지정한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하여 클라우드 서비스 구성을 만듭니다.
    1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. **[!UICONTROL 설정 저장]**&#x200B;을 선택한 다음 **확인**&#x200B;을 선택하여 구성을 완료합니다.
 
    reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 CAPTCHA 사용](#using-reCAPTCHA)을 참조하세요.
@@ -230,7 +230,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 >[!NOTE]
 >
-> reCAPTCHA v2 구성을 선택하고 크기가 [!UICONTROL 보이지 않음](으)로 설정된 경우 표시/숨기기 옵션이 비활성화됩니다.
+> reCAPTCHA v2 구성을 선택하고 크기가 [!UICONTROL 보이지 않음] (으)로 설정된 경우 표시/숨기기 옵션이 비활성화됩니다.
 
 ### CAPTCHA 유효성 검사 {#validate-captcha}
 

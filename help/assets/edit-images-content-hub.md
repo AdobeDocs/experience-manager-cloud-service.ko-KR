@@ -64,7 +64,7 @@ Adobe Express 및 [자산을 새 변형에 다시 혼합할 수 있는 권한이
 
 >[!NOTE]
 >
-[!DNL Adobe Express]을(를) 사용하여 PNG 및 JPG/JPEG 파일 형식의 이미지를 편집할 수 있습니다.
+>[!DNL Adobe Express]을(를) 사용하여 PNG 및 JPG/JPEG 파일 형식의 이미지를 편집할 수 있습니다.
 
 ## [!DNL Adobe Express]를 사용하여 이미지 편집 {#edit-images-using-content-hub}
 

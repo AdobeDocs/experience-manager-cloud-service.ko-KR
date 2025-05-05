@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 핵심 구성 요소 기반 적응형 양식에서 비동기 기능 사용
 
-적응형 Forms](/help/forms/rule-editor-core-components.md)의 [규칙 편집기는 비동기 기능을 지원하므로, 양식과의 사용자 상호 작용을 방해하지 않고 외부 프로세스나 데이터 검색을 기다리는 작업을 통합 및 관리할 수 있습니다.
+적응형 Forms[&#128279;](/help/forms/rule-editor-core-components.md)의 규칙 편집기는 비동기 기능을 지원하므로, 양식과의 사용자 상호 작용을 방해하지 않고 외부 프로세스나 데이터 검색을 기다리는 작업을 통합 및 관리할 수 있습니다.
 
 ## 비동기 또는 동기 함수의 사용을 결정하는 요소는 무엇입니까?
 
@@ -113,7 +113,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 단추 클릭에 대한 규칙의 **When** 섹션에 조건을 만듭니다. 예를 들어 **When[Confirm]**&#x200B;을 클릭합니다.
-1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 비동기 함수 호출]**을 선택합니다.
+1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 비동기 함수 호출]**&#x200B;을 선택합니다.
 **[!UICONTROL 비동기 함수 호출]**&#x200B;을(를) 선택하면 `Promise` 반환 형식의 함수가 나타납니다.
 1. 목록에서 비동기 함수를 선택합니다. 예를 들어 `Add success callback` 및 `add failure callback`이(가) 나타나므로 `matchOTP()` 함수와 해당 콜백을 선택하십시오.
 1. 이제 **[!UICONTROL 입력]** 바인딩을 선택하십시오. 예를 들어 **[!UICONTROL 입력]**&#x200B;을(를) `Form Object`(으)로 선택하고 `OTP` 필드와 비교합니다.

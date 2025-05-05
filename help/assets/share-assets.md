@@ -333,7 +333,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 데스크탑 앱에서 사용할 데스크탑 작업 활성화 {#desktop-actions}
 
-브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 데스크탑 애플리케이션에서 편집할 자산을 체크아웃하고 열 수 있습니다. 이러한 옵션을 데스크톱 작업이라고 하며 사용하려면 [웹 인터페이스에서 데스크톱 작업 사용 [!DNL Assets] 2}을 참조하세요.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 데스크탑 애플리케이션에서 편집할 자산을 체크아웃하고 열 수 있습니다. 이러한 옵션을 데스크톱 작업이라고 하며 사용하려면 [웹 인터페이스에서 데스크톱 작업 사용 [!DNL Assets] 2&rbrace;을 참조하세요.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 
 ![데스크톱 앱으로 작업할 때 바로 가기로 사용할 데스크톱 작업 사용](assets/enable_desktop_actions.png)
 

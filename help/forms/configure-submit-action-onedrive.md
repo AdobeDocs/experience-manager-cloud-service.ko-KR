@@ -77,7 +77,7 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
    > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
    > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**로 선택합니다.
+1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**&#x200B;로 선택합니다.
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.

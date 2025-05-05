@@ -87,7 +87,7 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
    1. `AEM SDK/crx-quickstart/install` 폴더에 AEM Forms 추가 기능(.far) 파일 추가,
    1. AEM SDK를 다시 시작합니다.
 
-+++
+   +++
 
 1. [사용자 권한 구성](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): 개발, 작성 및 기타 권한을 가진 사용자를 만들고 이러한 사용자를 사전 정의된 양식 그룹에 추가합니다.
 
@@ -116,7 +116,7 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
 
    AEM 프로젝트를 배포하면 환경에 적응형 Forms 템플릿을 볼 수 있습니다.
 
-+++
+   +++
 
 
 로컬 AEM Forms 개발 환경 설정에 대한 자세한 지침 및 단계별 안내서는 [AEM Forms용 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md) 문서를 참조하십시오.

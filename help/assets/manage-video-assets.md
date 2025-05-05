@@ -370,7 +370,7 @@ To create the metadata processing profile, you are first going to copy values fr
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
+   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보]**&#x200B;를 선택합니다.
@@ -379,7 +379,7 @@ To create the metadata processing profile, you are first going to copy values fr
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
+   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. 메타데이터 스키마 편집기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 취소]**&#x200B;를 선택합니다.
@@ -632,7 +632,7 @@ For YouTube publishing jobs, do the following:
 
 [!DNL Experience Manager]을(를) [!DNL Cloud Service]&#x200B;(으)로 사용하면 처리 프로필을 사용하여 MP4 비디오 파일의 기본 코드 변환 작업을 수행할 수 있습니다. 이 기능을 사용하면 MP4 비디오 파일을 업로드하는 것뿐만 아니라 미리 보고 크기를 조정할 수 있습니다.
 
-[!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)에서 비디오 코드 변환에 대한 ![처리 프로필 만들기
+[!DNL Experience Manager]![&#128279;](assets/video-processing-profile-for-mp4.png)에서 비디오 코드 변환에 대한 처리 프로필 만들기
 
 *그림: [!DNL Experience Manager]에서 비디오 코드 변환에 대한 처리 프로필.*
 

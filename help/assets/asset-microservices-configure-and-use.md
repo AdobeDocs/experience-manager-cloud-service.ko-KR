@@ -193,7 +193,7 @@ Asset Compute 서비스 통합을 사용하면 Experience Manager에서 [!UICONT
 다음 방법 중 하나를 사용하여 처리 프로필을 폴더에 적용합니다.
 
 * 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 처리 프로필]**&#x200B;에서 처리 프로필 정의를 선택하고 **[!UICONTROL 폴더에 프로필 적용]** 작업을 사용할 수 있습니다. 컨텐츠 브라우저를 열어 특정 폴더로 이동하여 선택한 다음, 프로필의 애플리케이션을 확인할 수 있습니다.
-* 사용자는 Assets 사용자 인터페이스에서 폴더를 선택하고 **[!UICONTROL 속성]** 액션을 사용하여 폴더 속성 화면을 열 수 있습니다. **[!UICONTROL 자산 처리]** 탭의 [!UICONTROL 처리 프로필] 목록에서 해당 폴더에 적합한 처리 프로필을 선택할 수 있습니다. 변경 내용을 저장하려면 **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
+* 사용자는 Assets 사용자 인터페이스에서 폴더를 선택하고 **[!UICONTROL 속성]** 액션을 사용하여 폴더 속성 화면을 열 수 있습니다. **[!UICONTROL 자산 처리]** 탭의 [!UICONTROL 처리 프로필] 목록에서 해당 폴더에 적합한 처리 프로필을 선택할 수 있습니다. 변경 내용을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
   ![자산 속성 탭에서 폴더에 처리 프로필 적용](assets/folder-properties-processing-profile.png)
 
 * 사용자는 Assets 사용자 인터페이스에서 폴더 또는 특정 에셋을 선택하여 처리 프로필을 적용한 다음 맨 위에 제공되는 옵션에서 ![에셋 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Assets 재처리]** 옵션을 선택할 수 있습니다.

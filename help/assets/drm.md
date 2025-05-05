@@ -102,7 +102,7 @@ ht-degree: 7%
    }
    ```
 
-1.  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)에서 [OSGi 구성을 수행하는 방법 지침을 따르십시오.
+1. [!DNL Experience Manager] as a [!DNL Cloud Service][&#128279;](/help/implementing/deploying/configuring-osgi.md)에서 OSGi 구성을 수행하는 방법 지침을 따르십시오.
 
 다음 속성을 사용하여 스케줄러를 구성할 수 있습니다.
 

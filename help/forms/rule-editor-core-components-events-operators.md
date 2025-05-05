@@ -68,7 +68,7 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 
 `Action 2 on Object B;`
 `AND`
-`개체 C에 대한 작업 3;
+&grave;개체 C에 대한 작업 3;
 
 `Else, do the following:`
 
@@ -163,7 +163,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 양식 데이터 모델 서비스 외에, 직접 WSDL URL 지정을 하여 웹 서비스를 호출할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 것이 좋습니다.
 
-FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 데이터 통합을](data-integration.md) 참조하십시오[[!DNL Experience Manager Forms] .
+FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 데이터 통합을[&#128279;](data-integration.md) 참조하십시오[!DNL Experience Manager Forms] .
 
 **[!UICONTROL Set value of]** 지정된 개체의 값을 계산하고 설정합니다. 개체 값을 문자열, 다른 개체의 값, 수학 식이나 함수를 사용하여 계산된 값, 개체의 속성 값 또는 구성된 양식 데이터 모델 서비스의 출력 값으로 설정할 수 있습니다. 웹 서비스 옵션을 선택하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다.
 
@@ -276,7 +276,7 @@ Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사
 
 #### [!UICONTROL 사용] {#enable}
 
-활성화 **** 규칙 유형을 사용하면 조건이 충족되는지 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 Enable 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 Disable 작업을 트리거합니다.
+활성화 **&#x200B;**&#x200B;규칙 유형을 사용하면 조건이 충족되는지 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 Enable 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 Disable 작업을 트리거합니다.
 
 일반적인 Enable 규칙 구조는 다음과 같습니다.
 

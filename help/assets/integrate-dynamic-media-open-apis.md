@@ -67,6 +67,6 @@ Adobe의 Micro-Frontend 자산 선택기는 [!DNL Experience Manager Assets as a
 
 >[!MORELIKETHIS]
 >
-* [자산 선택기와 다양한 애플리케이션 통합](/help/assets/integrate-asset-selector.md)
-* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
-* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
+>* [자산 선택기와 다양한 애플리케이션 통합](/help/assets/integrate-asset-selector.md)
+>* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
+>* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)

@@ -87,9 +87,11 @@ Adobe은 오버레이를 사용하여 재작성기를 구성할 것을 권장합
 1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
+
       `cq/experience-fragments/components/xfpage`
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
+
       `experience-fragments`
 이 패턴을 사용하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 

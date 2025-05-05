@@ -67,7 +67,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 | 스테이지 배포 단계 | 설명 |
 | --- | --- |
 | 유효성 검사 | 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되었는지 확인합니다. 예를 들어 구성된 분기가 존재하고 환경이 사용 가능한지를 테스트합니다. |
-| 빌드 및 단위 테스트 | 컨테이너화된 빌드 프로세스를 실행합니다.빌드 환경에 대한 자세한 내용은 <br>빌드 환경 세부 정보](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)를 참조하십시오.[ |
+| 빌드 및 단위 테스트 | 컨테이너화된 빌드 프로세스를 실행합니다.빌드 환경에 대한 자세한 내용은 <br>빌드 환경 세부 정보[&#128279;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)를 참조하십시오. |
 | 코드 검색 | 애플리케이션 코드의 품질을 평가합니다.<br>테스트 프로세스에 대한 자세한 내용은 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)를 참조하십시오. |
 | 이미지 빌드 | 이 프로세스는 빌드 단계의 콘텐츠와 Dispatcher 패키지를 도커 이미지로 변환합니다. 또한 해당 패키지를 기반으로 Kubernetes 구성을 생성합니다. |
 | 스테이지로 배포 | [단계 테스트 단계](#stage-testing)를 준비하는 동안 이미지가 스테이징 환경에 배포됩니다. |
@@ -80,8 +80,8 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 | 스테이지 테스트 단계 | 설명 |
 | --- | --- |
-| 제품 기능 테스트 | Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테스트를 실행합니다.<br>제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)도 참조하세요.[ |
-| 사용자 정의 기능 테스트 | 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 빌드가 테스트 JAR을 생성하지 않으면 테스트가 자동으로 통과됩니다.<br>사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)도 참조하세요.[ |
+| 제품 기능 테스트 | Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테스트를 실행합니다.<br>제품 기능 테스트[&#128279;](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)도 참조하세요. |
+| 사용자 정의 기능 테스트 | 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 빌드가 테스트 JAR을 생성하지 않으면 테스트가 자동으로 통과됩니다.<br>사용자 지정 기능 테스트[&#128279;](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)도 참조하세요. |
 | 사용자 정의 UI 테스트 | 사용자 정의 애플리케이션에 대해 생성된 UI 테스트를 자동으로 실행하는 선택적 기능입니다.<br>UI 테스트는 Selenium 기반이며 도커 이미지에 패키징되어 언어 및 프레임워크에 유연성을 제공합니다. 이 접근 방식을 사용하면 Java 및 Maven, Node 및 WebDriver.io 또는 Selenium 기반 프레임워크 또는 기술을 사용할 수 있습니다.<br>또한 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)를 참조하십시오. |
 | 경험 감사 | 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 정의 기능 테스트 후 경험 감사 단계가 포함됩니다.<ul><li>구성된 페이지는 서비스에 제출되고 평가됩니다.</li><li>결과는 정보 제공용이며 점수, 현재 점수와 이전 점수 간의 변화를 보여 줍니다.</li><li>이 인사이트는 현재 배포에 도입될 회귀가 있는지 확인하는 데 유용합니다.</li></ul>[경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.</li></ul> |
 

@@ -43,7 +43,7 @@ ht-degree: 24%
 
 * **[!DNL Adobe Asset Link]버전 2.1**: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]에 대한 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 확장의 새 버전을 사용할 수 있습니다. 2020년 10월에 릴리스된 버전 2021의 최신 [!DNL Adobe Creative Cloud] 응용 프로그램과의 호환성을 추가합니다.
 
-* as a Cloud Service **[!DNL Assets]WebP 파일 지원}: [!DNL Assets] 이제 WebP 이미지 형식을 지원합니다.** WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별되지 않으며 파일이 훨씬 작습니다. 에셋의 파일 크기를 줄이면 페이지 로드 시간이 향상되고 콘텐츠 작성자가 더 빠른 웹 경험을 제공할 수 있습니다. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)에서 WebP를 사용하는 방법을 확인하세요.
+* as a Cloud Service **[!DNL Assets]WebP 파일 지원&rbrace;: [!DNL Assets] 이제 WebP 이미지 형식을 지원합니다.** WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별되지 않으며 파일이 훨씬 작습니다. 에셋의 파일 크기를 줄이면 페이지 로드 시간이 향상되고 콘텐츠 작성자가 더 빠른 웹 경험을 제공할 수 있습니다. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)에서 WebP를 사용하는 방법을 확인하세요.
 
 ## as a Cloud Service [!DNL Adobe Experience Manager Forms] {#forms-oct-2021}
 

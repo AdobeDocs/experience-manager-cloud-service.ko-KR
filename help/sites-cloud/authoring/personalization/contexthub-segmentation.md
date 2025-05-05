@@ -215,6 +215,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더가 세그먼트 목록에 나타납니다.
    * 열 정렬 방식은 목록 내에 새 폴더가 나타나는 위치에 영향을 미칩니다.
    * 열 머리글을 선택하여 정렬을 조정할 수 있습니다.
+
      ![새 폴더](../assets/contexthub-folder.png)
 
 ### 기존 폴더 수정 {#modify-folders}

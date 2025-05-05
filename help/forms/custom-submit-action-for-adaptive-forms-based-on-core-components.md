@@ -44,6 +44,7 @@ ht-degree: 4%
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **이 정보를 찾을 수 있는 위치**
 
    이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
@@ -67,6 +68,7 @@ ht-degree: 4%
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **중요**: `<app-id>`을(를) 실제 응용 프로그램 ID로 바꾸십시오.
 
 1. 사용자 지정 제출 액션에 대한 새 폴더를 만들고 선택한 이름을 지정합니다. 예를 들어 폴더 이름을 `customsubmitaction`(으)로 지정합니다.
@@ -79,7 +81,7 @@ ht-degree: 4%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: 바꾸기 <app-id> (실제 애플리케이션 ID 포함)
+   `Important`: 바꾸기 &lt;app-id> (실제 애플리케이션 ID 포함)
 
 1. 새 구성 파일을 만듭니다.
 `customsubmitaction` 폴더 내에서 이름이 `.content.xml`인 새 파일을 만듭니다.
@@ -117,6 +119,7 @@ ht-degree: 4%
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    예를 들어 다음 코드 행을 추가하여 `filter.xml` 파일에 `customsubmitaction` 폴더를 추가합니다.
 
    ```
@@ -131,7 +134,7 @@ ht-degree: 4%
 
 1. `[AEMaaCS project directory]`에서 다음 디렉터리로 이동합니다.
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: 바꾸기 <app-id> (실제 애플리케이션 ID 포함)
+   `Important`: 바꾸기 &lt;app-id> (실제 애플리케이션 ID 포함)
 1. 새 Java 파일을 만들어 추가된 제출 작업에 대한 서비스를 구현합니다. 예를 들어 새 Java 파일을 `CustomSubmitService.java`(으)로 추가합니다.
 
    ![사용자 지정 제출 액션 폴더](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ ht-degree: 4%
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![로컬 배포](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Cloud Service 환경에 대한 코드를 배포합니다**

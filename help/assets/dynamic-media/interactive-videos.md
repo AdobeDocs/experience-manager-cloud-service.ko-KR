@@ -233,7 +233,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
 대화형 비디오 뷰어 사전 설정은 추가한 비디오와 모든 타임라인 세그먼트를 올바르게 렌더링합니다. 또한 미리보기 모드에서 제품 썸네일을 선택할 때 기본 빠른 보기 예를 사용하므로 게시하기 전에 상호 작용을 테스트할 수 있습니다.
 
-After you save the viewer preset, its state is automatically set to **On **in the Viewer Presets page. This state means that it is visible in the Dynamic Media component and whenever you preview a video with it. Be sure you also manually publish your new viewer preset.
+After you save the viewer preset, its state is automatically set to **On &#x200B;** in the Viewer Presets page. This state means that it is visible in the Dynamic Media component and whenever you preview a video with it. Be sure you also manually publish your new viewer preset.
 
 나만의 대화형 비디오 뷰어 사전 설정을 만들려면 [뷰어 사전 설정 만들기](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
@@ -657,27 +657,27 @@ Experience Manager에서 반환한 포함 코드에는 이미 사용할 준비�
   <tbody>
   <tr>
     <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>URL 경로에 있는 단일 SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

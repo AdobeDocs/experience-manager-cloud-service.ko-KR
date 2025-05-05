@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
          * 열 크기 조정 - 작업 또는 폭 슬라이더 사용
       * 추가 [작업](#actions-selected-content-fragment-models)에 대해 하나 이상의 모델을 선택하십시오.
    * [필터 패널](#filter-content-fragment-models) 열기
-   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 모델에 대해 제공된 정보 {#information-content-fragment-models}
 

@@ -31,7 +31,7 @@ Screens Content Provider에 로그온하려면 아래 단계를 따르십시오.
 
 1. [Adobe Experience Cloud](https://experience.adobe.com) 홈 페이지로 이동합니다.
 
-1. **Experience Manager**를 선택합니다.
+1. **Experience Manager**&#x200B;를 선택합니다.
    ![Experience Manager 영역에 빠르게 액세스할 수 있는 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Cloud Manager 카드에서 **시작**&#x200B;을 클릭합니다. [!UICONTROL Cloud Manager]에 성공적으로 로그인하면 UI(사용자 인터페이스)를 사용할 수 있습니다.

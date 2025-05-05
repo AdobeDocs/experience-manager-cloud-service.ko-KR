@@ -64,7 +64,7 @@ ht-degree: 5%
 
    `git clone [Git Repository URL]`
 
-이 명령은 저장소를 다운로드하고 시스템에 복제된 저장소의 로컬 폴더를 만듭니다. 이 안내서에서는 이 폴더를 [AEMaaCS 프로젝트 디렉터리](으)로 참조합니다.
+이 명령은 저장소를 다운로드하고 시스템에 복제된 저장소의 로컬 폴더를 만듭니다. 이 안내서에서는 이 폴더를 [AEMaaCS 프로젝트 디렉터리] (으)로 참조합니다.
 
 **클라이언트 라이브러리 폴더 추가**
 
@@ -109,6 +109,7 @@ ht-degree: 5%
          #base=js
        function.js
    ```
+
 1. `js` 폴더에서 사용자 지정 함수를 포함하는 `function.js`(으)로 Javascript 파일을 추가합니다.
 
    ```javascript
@@ -133,6 +134,7 @@ ht-degree: 5%
     return age;
     }
    ```
+
 1. 파일을 저장합니다.
 
 ![사용자 지정 함수 폴더 구조](/help/forms/assets/custom-function-added-files.png)

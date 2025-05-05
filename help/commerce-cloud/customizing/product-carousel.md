@@ -38,6 +38,7 @@ Sling 모델을 구현하여 제품 캐러셀의 비즈니스 논리를 확장�
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
+
 1. 그런 다음 `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`에 구현 클래스 `CustomCarouselImpl.java`을(를) 만듭니다.
 Sling 모델에 대한 전달 패턴을 통해 `CustomCarouselImpl`은(는) `sling:resourceSuperType` 속성을 통해 `ProductCarousel` 모델을 참조할 수 있습니다.
 

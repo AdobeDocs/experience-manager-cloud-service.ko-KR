@@ -325,7 +325,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
    ![오퍼 추가](../assets/targeted-component-menu.png)
 
-1. + 아이콘을 선택합니다.
+1. &#x200B;+ 아이콘을 선택합니다.
 
    기본값 오퍼의 콘텐츠는 현재 경험을 위한 오퍼로 사용됩니다.
 
@@ -635,6 +635,6 @@ Adobe Target을 엔진으로 선택하는 경우:
 >
 >AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [Adobe Campaign과 AEM 통합]을 참조하십시오.
 >
->타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**를 선택하십시오. 자세한 내용은 ContextHub 구성 을 참조하십시오.
+>타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. 자세한 내용은 ContextHub 구성 을 참조하십시오.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

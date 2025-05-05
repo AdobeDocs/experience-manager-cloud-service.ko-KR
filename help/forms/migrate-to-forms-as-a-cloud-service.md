@@ -16,14 +16,14 @@ ht-degree: 1%
 
 ---
 
-# [!DNL AEM Forms](온-프레미스 및 AMS 환경)에서 {1 an as a Cloud Service}(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# [!DNL AEM Forms] (온-프레미스 및 AMS 환경)에서 &lbrace;1 an as a Cloud Service&rbrace;(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-적응형 Forms, 테마, 템플릿 및 클라우드 구성을 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms as a Cloud Service on OSGi에서 [!DNL AEM](으)로 마이그레이션하거나 업그레이드할 수 있습니다. as a Cloud Service 이러한 자산을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 [!DNL AEM] 형식으로 변환하십시오.
+적응형 Forms, 테마, 템플릿 및 클라우드 구성을 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms as a Cloud Service on OSGi에서 [!DNL AEM] (으)로 마이그레이션하거나 업그레이드할 수 있습니다. as a Cloud Service 이러한 자산을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 [!DNL AEM] 형식으로 변환하십시오.
 AEM as a Cloud Service으로의 마이그레이션 여정을 시작해 보겠습니다 | Adobe Experience Manager. 마이그레이션 유틸리티를 실행하면 다음 자산이 업데이트됩니다.
 
 * 적응형 Forms에 대한 맞춤형 구성 요소
@@ -121,7 +121,7 @@ AEM Forms 6.5에서 AEM as a Cloud Service 환경으로 원활하게 전환하�
 
    Cloud Service으로 AEM Form 마이그레이션을 수행하려면 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)를 사용하여 재사용 가능한 함수(클라이언트 라이브러리)를 패키지로 내보냅니다.
 
-1. as a Cloud Service [재사용 가능한 함수(클라이언트 라이브러리) 패키지, [사용자 지정 코드, 구성 요소, 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), 사용자 지정 로케일별 라이브러리를 [!DNL AEM] 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager).
+1. as a Cloud Service [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager)재사용 가능한 함수(클라이언트 라이브러리) 패키지, [사용자 지정 코드, 구성 요소, 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), 사용자 지정 로케일별 라이브러리를 [!DNL AEM] 환경에 배포.
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 

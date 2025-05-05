@@ -94,7 +94,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 * [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]에 대한 [!DNL Adobe Asset Link] v3.0과 [!DNL Adobe XD]에 대한 [!DNL Adobe Asset Link] v2.0이 릴리스되었습니다. 다음을 제공합니다.
 
    * [!DNL Assets Essentials] 지원.
-   * [!DNL Cloud Service] 또는 [!DNL Assets Essentials](으)로 [!DNL Experience Manager]에 자동으로 연결할 수 있습니다.
+   * [!DNL Cloud Service] 또는 [!DNL Assets Essentials] (으)로 [!DNL Experience Manager]에 자동으로 연결할 수 있습니다.
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->

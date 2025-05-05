@@ -275,7 +275,7 @@ Live Copy 페이지의 속성에는 다음과 같은 Live Copy에 대한 정보�
 
 #### Live Copy 개요에서 블루프린트 롤아웃 {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-블루프린트 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)에서도 [**롤아웃** 작업을 사용할 수 있습니다.
+블루프린트 페이지를 선택하면 Live Copy 개요[&#128279;](live-copy-overview.md#using-the-live-copy-overview)에서도 **롤아웃** 작업을 사용할 수 있습니다.
 
 1. [Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)를 연 다음 블루프린트 페이지를 선택합니다.
 1. 도구 모음에서 **롤아웃**&#x200B;을 선택합니다.
@@ -564,7 +564,7 @@ Live Copy 페이지를 재설정하여 다음과 같은 작업을 수행할 수 
 
 #### Live Copy 개요에서 Live Copy 페이지 재설정 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-Live Copy 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)에서도 [**재설정** 작업을 사용할 수 있습니다.
+Live Copy 페이지를 선택하면 Live Copy 개요[&#128279;](live-copy-overview.md#using-the-live-copy-overview)에서도 **재설정** 작업을 사용할 수 있습니다.
 
 1. [Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)를 연 다음 Live Copy 페이지를 선택합니다.
 1. 도구 모음에서 **재설정**&#x200B;을 선택합니다.

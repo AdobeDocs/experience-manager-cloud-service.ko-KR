@@ -121,7 +121,7 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 1. **[!UICONTROL 렌디션 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 형식)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, **[!UICONTROL 포함]** 및 **[!UICONTROL 제외]** MIME 형식 목록(또는 입력 에셋 필터)을 선택한 다음 필요한 크리에이티브 작업을 선택하십시오.
 
-   [!UICONTROL 처리 프로필]](assets/creative-processing-profile.png)의 ![[!UICONTROL Creative] 탭
+   [!UICONTROL 처리 프로필]![&#128279;](assets/creative-processing-profile.png)의 [!UICONTROL Creative] 탭
 
 1. 일부 작업에는 추가 매개 변수(에셋)가 필요합니다. 필요한 경우 이러한 추가 매개 변수의 값을 제공합니다.
 

@@ -80,7 +80,7 @@ Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니�
 | `mandatoryContent` | 이 작업은 특정 사용자 그룹에 대해 라이브 복사 페이지에 있는 일부 ACL의 권한을 읽기 전용으로 설정합니다. 다음과 같은 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용하십시오. | `target: (String)`은 권한 설정 중인 그룹의 ID입니다. |
 | `mandatoryStructure` | 이 작업은 특정 사용자 그룹에 대해 라이브 복사 페이지에 있는 `ActionSet.ACTION_NAME_REMOVE` ACL의 권한을 읽기 전용으로 설정합니다.<br>이 작업은 페이지에만 사용하십시오. | `target: (String)`은 권한 설정 중인 그룹의 ID입니다. |
 | `VersionCopyAction` | 블루프린트/소스 페이지가 한 번 이상 게시된 경우 이 작업은 게시된 버전을 사용하여 Live Copy 페이지를 생성합니다. 참고: 이 작업은 게시된 소스 페이지를 기반으로 하는 Live Copy 페이지를 만드는 데만 사용할 수 있으며, 기존 Live Copy 페이지를 업데이트하는 데는 사용할 수 없습니다. |  |
-| `PageMoveAction` | `PageMoveAction`은 페이지가 블루프린트에서 이동된 경우 적용됩니다.<br>이 작업은 (관련) Live Copy 페이지를 한 위치에서 다른 위치로 이동하지 않고 복사합니다.<br>`PageMoveAction`은 이동 전 위치에서 Live Copy 페이지를 변경하지 않습니다. 따라서 연속된 롤아웃 구성은 블루프린트가 없는 라이브 관계 상태를 가집니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | `prop_referenceUpdate: (Boolean)`을 true(기본값)으로 설정하여 참조를 업데이트합니다. |
+| `PageMoveAction` | `PageMoveAction`은 페이지가 블루프린트에서 이동된 경우 적용됩니다.<br>이 작업은 (관련) Live Copy 페이지를 한 위치에서 다른 위치로 이동하지 않고 복사합니다.<br>`PageMoveAction`은 이동 전 위치에서 Live Copy 페이지를 변경하지 않습니다. 따라서 연속된 롤아웃 구성은 블루프린트가 없는 라이브 관계 상태를 가집니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**&#x200B;** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | `prop_referenceUpdate: (Boolean)`을 true(기본값)으로 설정하여 참조를 업데이트합니다. |
 | `markLiveRelationship` | 이 작업은 론치가 생성한 콘텐츠에 대해 라이브 관계가 존재함을 나타냅니다. |  |
 
 ### 롤아웃 구성 만들기 {#creating-a-rollout-configuration}

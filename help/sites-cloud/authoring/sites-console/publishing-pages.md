@@ -155,7 +155,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
      >[!NOTE]
      >
-     >게시를 위한 콘텐츠 예약은 페이지 속성 ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)에서 사용할 수 있는 [**설정 시간** 및 **해제 시간**&#x200B;과(와) 동일하지 않지만 유사한 상황에서 사용할 수 있습니다.
+     >게시를 위한 콘텐츠 예약은 페이지 속성 [&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)에서 사용할 수 있는 **설정 시간** 및 **해제 시간**&#x200B;과(와) 동일하지 않지만 유사한 상황에서 사용할 수 있습니다.
 
    ![게시 관리 옵션](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 

@@ -72,7 +72,7 @@ ht-degree: 4%
 1. 프로젝트 화면에서 생성된 프로젝트를 클릭합니다. 예를들어 **정부 참조 사이트 - 독일어 로케일** 타일을 클릭합니다.
 1. **요약** 타일 하단에서 **줄임표**&#x200B;를 클릭합니다. 번역 프로젝트 속성 화면이 열립니다.
 1. **번역 프로젝트 속성** 화면 맨 위에서 **[!UICONTROL 고급]** 탭을 엽니다. **[!UICONTROL 번역 필드]**&#x200B;에 대해 **[!UICONTROL 사람 번역]**&#x200B;을 선택하세요. 화면 상단의 **저장 및 닫기**&#x200B;를 클릭합니다.
-1. **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘을 클릭하고 **내보내기**를 클릭합니다. 내보내기 대화 상자에서 내보낸 파일 다운로드 옵션을 클릭합니다. .zip 파일을 다운로드합니다.
+1. **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘을 클릭하고 **내보내기**&#x200B;를 클릭합니다. 내보내기 대화 상자에서 내보낸 파일 다운로드 옵션을 클릭합니다. .zip 파일을 다운로드합니다.
    ![번역 파일 내보내기](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 다운로드한 .zip 파일의 압축을 풉니다. 추출된 폴더에는 두 개의 파일이 있습니다.
    * translation_export_summary.xml

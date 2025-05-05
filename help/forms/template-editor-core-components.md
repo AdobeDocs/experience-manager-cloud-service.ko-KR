@@ -51,7 +51,7 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 1. 만든 폴더 내에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 템플릿 유형 선택]** 섹션에서 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-1. **[!UICONTROL 템플릿 세부 정보]** 섹션에서 **템플릿 제목**&#x200B;을 제공하고 **[!UICONTROL 만들기]**를 선택합니다.
+1. **[!UICONTROL 템플릿 세부 정보]** 섹션에서 **템플릿 제목**&#x200B;을 제공하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 설명을 입력할 수도 있습니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 콘솔로 돌아가거나 **[!UICONTROL 열기]**&#x200B;를 선택하여 편집기에서 템플릿을 엽니다.
@@ -147,7 +147,7 @@ Header and footer are added in the Initial Content layer.
 
 1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]**(으)로 이동하여 템플릿을 만든 폴더를 엽니다.
 생성한 템플릿이 초안으로 표시됩니다.
-1. 템플릿을 선택하고 도구 모음에서 **[!UICONTROL 사용]**을 선택합니다.
+1. 템플릿을 선택하고 도구 모음에서 **[!UICONTROL 사용]**&#x200B;을 선택합니다.
 적응형 양식을 만들 때 템플릿을 선택하라는 메시지가 표시되면 템플릿이 나열된 것을 볼 수 있습니다.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}

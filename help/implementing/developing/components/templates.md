@@ -501,6 +501,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    * `jcr:content` 노드에서 상태 속성을 설정하는 중입니다.
 
       * 예를 들어,
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 속성을 정의합니다.
@@ -513,6 +514,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * [하위 분기의 해당 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)&#x200B;에서 허용되는 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
+
      `cq:allowedTemplates`
 필요한 분기의 `jcr:content` 노드에서.
 

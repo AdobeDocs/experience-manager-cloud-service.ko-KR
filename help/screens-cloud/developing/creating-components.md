@@ -23,7 +23,7 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 콘텐츠를 유�
 
 예, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-사용자가 편집하는 동안 선택기를 URL에 추가할 필요는 없습니다. 클라이언트측 논리가 계층 전환 이벤트를 수신하고 있으며, 채널에 전용 리소스 종류 *screens/core/components/channel.1}이(가) 있는 경우 선택기를 추가합니다.*
+사용자가 편집하는 동안 선택기를 URL에 추가할 필요는 없습니다. 클라이언트측 논리가 계층 전환 이벤트를 수신하고 있으며, 채널에 전용 리소스 종류 *screens/core/components/channel.1&rbrace;이(가) 있는 경우 선택기를 추가합니다.*
 
 ## 렌더링 구성 요소 {#rendering-components}
 
@@ -44,4 +44,4 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 콘텐츠를 유�
 
 >[!NOTE]
 >
->사용자 지정 구성 요소를 개발하려면 ***[AEM Screens 샘플 구성 요소 템플릿](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)을 ***.
+>사용자 지정 구성 요소를 개발하려면 ***[AEM Screens 샘플 구성 요소 템플릿](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)을 &#x200B;***.

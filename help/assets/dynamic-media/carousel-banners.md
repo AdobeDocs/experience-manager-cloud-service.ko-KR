@@ -312,7 +312,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 조각을 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**을 선택합니다.
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 조각을 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)을 참조하세요.
 
       * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.

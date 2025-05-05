@@ -147,7 +147,7 @@ Cloud Manager API를 사용하여 고급 네트워킹을 셀프서비스하는 �
 
 **색인 최적화**
 
-검색 쿼리와 인덱싱의 성능을 개선하기 위해 전체 텍스트 인덱스 lucene-2는 더 이상 [!DNL Adobe Experience Manager]에서 이 릴리스의 [!DNL Cloud Service](으)로 즉시 사용되지 않습니다. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 색인을 제거하기 위해 Adobe 엔지니어링은 Lucene 전체 텍스트 색인을 부드럽고 지속적으로 제거하기 위해 개인적이며 적극적으로 고객과 협력합니다. 자세한 내용은 [!DNL Adobe Experience Manager]을(를) [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations)(으)로 방문하고 질문이 있는 경우 Adobe 지원에 직접 문의하십시오.
+검색 쿼리와 인덱싱의 성능을 개선하기 위해 전체 텍스트 인덱스 lucene-2는 더 이상 [!DNL Adobe Experience Manager]에서 이 릴리스의 [!DNL Cloud Service] (으)로 즉시 사용되지 않습니다. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 색인을 제거하기 위해 Adobe 엔지니어링은 Lucene 전체 텍스트 색인을 부드럽고 지속적으로 제거하기 위해 개인적이며 적극적으로 고객과 협력합니다. 자세한 내용은 [!DNL Adobe Experience Manager]을(를) [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations)(으)로 방문하고 질문이 있는 경우 Adobe 지원에 직접 문의하십시오.
 
 ## Cloud Manager {#cloud-manager}
 

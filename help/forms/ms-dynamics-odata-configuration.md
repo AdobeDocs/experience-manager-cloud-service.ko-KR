@@ -36,7 +36,7 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service(OData 서비스)는 모든 실행 모드에서 사용할 수 있습니다. [!DNL Experience Manager] 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)를 참조하십시오.
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service(OData 서비스)는 모든 실행 모드에서 사용할 수 있습니다. [!DNL Experience Manager] 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)를 참조하십시오.
 
 AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
@@ -105,6 +105,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    * `Client-ID`은(는) GUID 생성기를 사용하여 생성할 수 있는 클라이언트 ID입니다.
    * `redirect-uri`은(는) [!DNL Experience Manager Forms]의 [!DNL Microsoft Dynamics] OData 클라우드 서비스에 대한 URL입니다. [!DNL Experience Manager Forms]과(와) 함께 설치된 기본 클라우드 서비스는 다음 URL에 배포됩니다.
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 다음 명령을 실행하여 AD FS 컴퓨터에 대한 액세스 권한을 부여합니다.
@@ -131,7 +132,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. [!DNL Experience Man
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder)을 참조하십시오.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL 데이터 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 찾아 선택한 후 **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL 데이터 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 찾아 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 **[!UICONTROL 인증 설정]** 탭에서:
 
    1. **[!UICONTROL 서비스 루트]** 필드에 대한 값을 입력하십시오. Dynamics 인스턴스로 이동하여 **[!UICONTROL 개발자 리소스]**(으)로 이동하여 서비스 루트 필드에 대한 값을 확인합니다. 예: https://&lt;tenant-name>/api/data/v9.1/

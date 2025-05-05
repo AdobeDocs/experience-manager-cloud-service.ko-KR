@@ -79,7 +79,7 @@ ht-degree: 38%
 
 ### [!DNL Assets]의 수정된 버그 {#assets-bugs-fixed}
 
-API `com.day.cq.dam.api.collection.SmartCollection`은(는) [!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 사용할 수 없습니다. (CQ-4326322)
+API `com.day.cq.dam.api.collection.SmartCollection`은(는) [!DNL Experience Manager]에서 [!DNL Cloud Service] (으)로 사용할 수 없습니다. (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -12,7 +12,7 @@ ht-degree: 56%
 
 ---
 
-# 적응형 양식을 Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}과(와) 통합
+# 적응형 양식을 Salesforce과(와) 통합 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -63,7 +63,7 @@ OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 적응형 
 1. **[!UICONTROL 인증 유형]**&#x200B;을 **[!UICONTROL OAuth 2.0]**&#x200B;으로 선택합니다. 그러면 **[!UICONTROL 인증 설정]** 패널이 나타납니다.
 1. **[!UICONTROL 부여 유형]**&#x200B;을 **[!UICONTROL 클라이언트 자격 증명]**&#x200B;으로 선택합니다.
 1. Salesforce 연결된 앱에서 받은 **[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 보안]**&#x200B;을 지정합니다.
-1. **[!UICONTROL 액세스 토큰 URL]**을 다음과 같은 형식으로 지정합니다.
+1. **[!UICONTROL 액세스 토큰 URL]**&#x200B;을 다음과 같은 형식으로 지정합니다.
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`
 
    >[!NOTE]

@@ -34,7 +34,7 @@ Swagger Open API 사양을 기반으로 제출 액션을 구성하려면 다음 
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. **[!UICONTROL 제출]** 탭을 클릭합니다.
-1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Rest 끝점에 제출]**을 선택합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Rest 끝점에 제출]**&#x200B;을 선택합니다.
    ![Rest 끝점에 제출의 작업 구성](/help/forms/assets/submit-action-restendpoint.png)
 
    데이터를 내부 서버에 게시하려면 리소스 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예, `/content/restEndPoint`. 해당 게시 요청이 있는 경우 제출 요청에 대한 인증 정보가 사용됩니다.

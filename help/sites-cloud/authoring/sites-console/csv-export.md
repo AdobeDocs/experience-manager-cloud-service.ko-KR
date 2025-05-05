@@ -60,5 +60,5 @@ CSV 내보내기를 만들려면:
    ![CSV 내보내기 옵션](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. 내보낼 필수 속성을 선택합니다.
-1. **만들기**를 선택합니다.
+1. **만들기**&#x200B;를 선택합니다.
    ![Excel에서 결과 CSV 내보내기](/help/sites-cloud/authoring/assets/csv-example.png)

@@ -231,7 +231,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
    > * 적응형 양식에 대해 동일한 [!UICONTROL 구성 컨테이너]를 선택합니다. 여기서 SharePoint 문서 라이브러리 저장소를 만들었습니다.
    > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL SharePoint에 제출]**로 선택합니다.
+1. **제출 액션**&#x200B;을 **[!UICONTROL SharePoint에 제출]**&#x200B;로 선택합니다.
    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
@@ -241,7 +241,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
 >[!NOTE]
 >
-> 첨부 파일도 `/folder_name/form_name/year/month/date/submission_id/data` 디렉터리에 저장됩니다. 그러나 **원래 이름으로 첨부 파일 저장**을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다.
+> 첨부 파일도 `/folder_name/form_name/year/month/date/submission_id/data` 디렉터리에 저장됩니다. 그러나 **원래 이름으로 첨부 파일 저장**&#x200B;을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다.
 > ![이미지](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
@@ -344,7 +344,7 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
    > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
    > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**로 선택합니다.
+1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**&#x200B;로 선택합니다.
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
@@ -387,7 +387,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
    > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
    > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL Azure Blob Storage에 제출]**로 선택합니다.
+1. **제출 액션**&#x200B;을 **[!UICONTROL Azure Blob Storage에 제출]**&#x200B;로 선택합니다.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
 
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.

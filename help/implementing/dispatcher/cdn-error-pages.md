@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 데이터 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. 종류 속성 값은 *CDN*&#x200B;이어야 하며 `version` 속성은 *1*(으)로 설정해야 합니다.
 
 

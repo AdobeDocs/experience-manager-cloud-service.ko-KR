@@ -21,7 +21,7 @@ ht-degree: 4%
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 이 패키지에는 코드, 구성 및 지원하는 모든 기본 콘텐츠를 포함하여 애플리케이션이 기능하는 데 필요한 모든 것을 구성하는 하위 패키지가 포함되어야 합니다.
 
-AEM에서는 **content**&#x200B;과(와) **code**&#x200B;을(를) 분리해야 합니다. 이는 단일 콘텐츠 패키지가 저장소의 **7} `/apps` 및 런타임 쓰기 가능 영역(예: `/content`, `/conf`, `/home` 또는 `/apps`이(가) 아닌 모든 영역)에 배포될 수**&#x200B;없습니다&#x200B;**.** Instead, the application must separate code and content into discrete packages for deployment into AEM.
+AEM에서는 **content**&#x200B;과(와) **code**&#x200B;을(를) 분리해야 합니다. 이는 단일 콘텐츠 패키지가 저장소의 **7&rbrace; `/apps` 및 런타임 쓰기 가능 영역(예: `/content`, `/conf`, `/home` 또는 `/apps`이(가) 아닌 모든 영역)에 배포될 수**&#x200B;없습니다&#x200B;**.** Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
 The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
@@ -246,7 +246,7 @@ AEM 작성자, AEM 게시 또는 두 가지 모두를 타겟팅하기 위해 패
 + 네 번째 수준 폴더는 하위 패키지를 포함하며 다음 중 하나여야 합니다.
    + `install`을(를) 설치했으므로 **AEM 작성자 및 AEM 게시에 모두**&#x200B;합니다.
    + `install.author` 따라서 AEM 작성자에 **only**&#x200B;을(를) 설치합니다.
-   + `install.publish`을(를) 설치했으므로 AEM 게시에서 **only**을(를) 설치합니다.
+   + `install.publish`을(를) 설치했으므로 AEM 게시에서 **only**&#x200B;을(를) 설치합니다.
 `install.author` 및 `install.publish`만 지원되는 대상입니다. Other run modes **are not** supported.
 
 예를 들어 AEM 작성자 및 게시 특정 패키지를 포함하는 배포는 다음과 같을 수 있습니다.

@@ -116,14 +116,14 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 일부 조직에서는 로깅 대상에 의해 수신될 수 있는 트래픽을 제한하도록 선택하고, 다른 조직에서는 HTTPS(443) 이외의 포트를 사용해야 할 수 있습니다.  이 경우 로그 전달 구성을 배포하기 전에 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성해야 합니다.
 
 아래 표를 사용하여 포트 443을 사용하는지 여부와 고정 IP 주소에서 로그를 표시해야 하는지 여부를 기준으로 고급 네트워킹 및 로깅 구성에 대한 요구 사항을 확인할 수 있습니다.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>예</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >단일 IP 주소에서 로그가 표시되는지 여부는 고급 네트워킹 구성 선택에 따라 결정됩니다.  이 작업을 용이하게 하려면 전용 이그레스를 사용해야 합니다.

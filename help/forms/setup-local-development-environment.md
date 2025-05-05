@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # AEM Forms을 위한 로컬 개발 환경 설정 {#overview}
 
-[!DNL  Adobe Experience Manager Forms]을(를) [!DNL  Cloud Service] 환경으로 설정하고 구성할 때 클라우드에서 개발, 스테이징 및 프로덕션 환경을 설정합니다. 또한 로컬 개발 환경을 설정하고 구성할 수도 있습니다.
+[!DNL &#x200B; Adobe Experience Manager Forms]을(를) [!DNL &#x200B; Cloud Service] 환경으로 설정하고 구성할 때 클라우드에서 개발, 스테이징 및 프로덕션 환경을 설정합니다. 또한 로컬 개발 환경을 설정하고 구성할 수도 있습니다.
 
 클라우드 개발 환경에 로그인하지 않고 로컬 개발 환경을 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -155,8 +155,8 @@ Adobe Experience Manager Forms as a Cloud Service 스타일 아카이브는 로�
 
 | 사용자 유형 | AEM 그룹 |
 |---|---|
-| 양식 전문가 / | [!DNL forms-users](AEM Forms 사용자), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] 및 [!DNL fdm-authors] |
-| 양식 개발자 | [!DNL forms-users](AEM Forms 사용자), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] 및 [!DNL fdm-authors] |
+| 양식 전문가 / | [!DNL forms-users] (AEM Forms 사용자), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] 및 [!DNL fdm-authors] |
+| 양식 개발자 | [!DNL forms-users] (AEM Forms 사용자), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] 및 [!DNL fdm-authors] |
 | Customer Experience Lead 또는 UX Designer | [!DNL forms-users], [!DNL template-authors] |
 | AEM 관리자 | [!DNL aem-administrators], [!DNL fd-administrators] |
 | 최종 사용자 | 적응형 양식을 보고 제출하려면 사용자가 로그인해야 하는 경우 해당 사용자를 [!DNL forms-users] 그룹에 추가하십시오. </br> 응용 Forms에 액세스하는 데 사용자 인증이 필요하지 않으면 해당 사용자에게 그룹을 할당하지 마십시오. |

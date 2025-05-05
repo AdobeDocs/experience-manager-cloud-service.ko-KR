@@ -37,7 +37,7 @@ Adobe Experience Manager Formsas a Cloud Service Adobe Experience Manager Forms 
 
 * Formsas a Cloud Service 와 함께 고객 번들을 사용하기 전에 최신 버전의 adobe-aemfd-docmanager로 사용자 정의 코드를 다시 컴파일하십시오.
 
-* [AEM Forms as a Cloud Service 마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md)를 사용하여 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Formsas a Cloud Service 에서 [!DNL AEM](으)로 준비하고 마이그레이션합니다. 기존 적응형 양식 템플릿을 가져오려면 [프로그램의 Git 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 사용하십시오.
+* [AEM Forms as a Cloud Service 마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md)를 사용하여 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Formsas a Cloud Service 에서 [!DNL AEM] (으)로 준비하고 마이그레이션합니다. 기존 적응형 양식 템플릿을 가져오려면 [프로그램의 Git 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 사용하십시오.
 
 * 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오.
 

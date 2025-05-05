@@ -37,7 +37,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 
 ## AEM as a Cloud Service용 프론트엔드 개발 {#fed-for-aemaacs}
 
-모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 [ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
+모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
 
 그런 다음 Archetype은 리소스를 단일 CSS 및 JS 파일로 컴파일하여 리포지토리의 `cq:clientLibraryFolder`에 자동으로 포함할 수 있습니다.
 

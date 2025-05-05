@@ -44,7 +44,7 @@ ht-degree: 1%
 1. **(선택 사항) 대화형 이미지 뷰어 사전 설정을 만듭니다**. 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner`을(를) 대신 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
 [(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
-1. **이미지 배너를 업로드**합니다. 대화형으로 만들 이미지 배너를 업로드합니다.
+1. **이미지 배너를 업로드**&#x200B;합니다. 대화형으로 만들 이미지 배너를 업로드합니다.
 [이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
 
 1. **이미지 배너에 핫스팟을 추가합니다**. 이미지 배너에 핫스팟을 하나 이상 추가합니다. 각 사용자를 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 연결합니다. 핫스팟을 추가한 후 대화형 이미지를 게시하여 이 작업을 완료합니다.
@@ -284,7 +284,7 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택합니다. 그런 다음 페이지의 오른쪽 상단에서 **[!UICONTROL 선택]**을 선택합니다. 핫스팟 관리 페이지로 돌아갑니다.
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택합니다. 그런 다음 페이지의 오른쪽 상단에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다. 핫스팟 관리 페이지로 돌아갑니다.
 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)을 참조하세요.
 
       * 배너에 표시할 경험 조각의 너비와 높이를 지정합니다.
@@ -426,27 +426,27 @@ Quickview URL을 구성하는 프로세스는 이전에 설명한 핫스팟 변�
  <tbody>
   <tr>
    <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>URL 경로에 있는 단일 SKU</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

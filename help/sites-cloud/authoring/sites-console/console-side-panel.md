@@ -112,7 +112,7 @@ AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더
 
 ![사이트 패널](assets/console-side-panel-site-paenl.png)
 
-패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오](/help/sites-cloud/administering/site-creation/site-themes.md).
+패널을 사용하여 사이트의 [&#128279;](/help/sites-cloud/administering/site-creation/site-themes.md)테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오.
 
 테마 기반 사이트 생성을 활성화하도록 프론트엔드 파이프라인을 아직 설정하지 않은 경우 사이드 패널에서 해당 옵션을 제공합니다.
 

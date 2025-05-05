@@ -56,7 +56,7 @@ ht-degree: 3%
 
 다음은 검색을 시작하기 전에 Experience Manager에서 수행하는 기본 단계입니다.
 
-* **관리자 보기**에서 Assets > Experience Manager의 파일 로 이동하여 상단 막대의 검색 아이콘을 클릭합니다. 또는 슬래시(/)를 사용하여 옴니 검색 필드를 엽니다.
+* **관리자 보기**&#x200B;에서 Assets > Experience Manager의 파일 로 이동하여 상단 막대의 검색 아이콘을 클릭합니다. 또는 슬래시(/)를 사용하여 옴니 검색 필드를 엽니다.
 **Assets 보기**&#x200B;에서 검색 창이 맨 위에 표시되어 바로 액세스할 수 있습니다.
 * 검색 범위를 Experience Manager Assets 저장소로 제한하기 위해 `Location:Assets` 및 `Path:/content/dam`을(를) 미리 선택했습니다. 다른 폴더로 이동하면 `Path:/content/dam/<folder name>`이(가) 옴니 검색 필드에 표시되어 검색 범위를 현재 폴더로 제한합니다.
 

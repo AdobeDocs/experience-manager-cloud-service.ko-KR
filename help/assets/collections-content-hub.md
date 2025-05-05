@@ -129,7 +129,7 @@ ht-degree: 9%
 
 ## 컬렉션 내에서 사용 가능한 자산 공유 {#share-assets-available-within-collection}
 
-컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
+컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
 
 ## 컬렉션 세부 정보 편집 {#edit-details-of-collection}
 

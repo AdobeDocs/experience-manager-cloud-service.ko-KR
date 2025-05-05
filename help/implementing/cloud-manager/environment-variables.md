@@ -48,7 +48,7 @@ Adobe 여러 변수를 추가하려면 첫 번째 변수를 추가한 다음 **�
 1. 사이드 메뉴에서 **환경**&#x200B;을 클릭합니다.
 1. **환경** 페이지에서 환경 변수를 추가할 환경이 있는 테이블의 행을 선택합니다.
 1. 환경의 세부 정보 페이지에서 **구성** 탭을 클릭합니다.
-1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**를 클릭합니다.
+1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**&#x200B;를 클릭합니다.
 환경 변수를 처음 추가하는 경우 페이지 중앙에 있는 **구성 추가**&#x200B;를 클릭합니다.
 
    ![구성 탭](assets/configuration-tab.png)

@@ -26,8 +26,8 @@ AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본의 `Cache-Contr
 
 CDN 리소스에 대한 캐시 키에는 쿼리 매개 변수를 포함한 전체 요청 URL이 포함되어 있으므로 서로 다른 모든 쿼리 매개 변수가 다른 캐시 항목을 생성합니다. 원치 않는 쿼리 매개 변수를 제거하는 것이 좋습니다. 캐시 적중률을 개선하려면 [아래 ](#marketing-parameters)을 참조하세요.
 
-`Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답이 AEM as a Cloud Service의 CDN에 의해 캐시되지 않습니다([CDN 캐싱을 비활성화하는 방법 참조)
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)을(를) 참조하십시오.  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
+`Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답이 AEM as a Cloud Service의 CDN에 의해 캐시되지 않습니다([&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)CDN 캐싱을 비활성화하는 방법 참조)
+을(를) 참조하십시오.  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
 
 ### HTML/텍스트 {#html-text}
 

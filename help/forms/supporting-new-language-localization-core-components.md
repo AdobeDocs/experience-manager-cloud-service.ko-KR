@@ -357,7 +357,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    1. 터미널 창이나 명령 프롬프트를 엽니다.
 
-   1. [AEMaaCS 프로젝트 디렉터리](으)로 이동
+   1. [AEMaaCS 프로젝트 디렉터리] (으)로 이동
 
    1. 다음 명령을 실행합니다.
 

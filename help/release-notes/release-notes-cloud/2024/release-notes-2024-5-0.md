@@ -61,7 +61,7 @@ ht-degree: 99%
 
 #### RUM(Real Use Monitoring) 데이터 서비스 {#real-use-monitoring}
 
-* **[실제 사용 모니터링(RUM) 데이터 서비스는 이제 GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**를 통해 AEM as a Cloud Service에 대한 클라이언트측 데이터 수집이 가능합니다.
+* **[실제 사용 모니터링(RUM) 데이터 서비스는 이제 GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;를 통해 AEM as a Cloud Service에 대한 클라이언트측 데이터 수집이 가능합니다.
 클라이언트측 컬렉션인 실제 사용 모니터링 서비스는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 향상된 인사이트를 얻을 수 있습니다. 페이지 성능에 대해 자세히 알아보고 이를 개선하기 위한 인사이트를 얻을 수 있는 좋은 기회입니다.
 
 #### Edge Delivery Services용 AEM 작성 {#edge-enhancements}

@@ -384,7 +384,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 **[!UICONTROL Source 코드]** 단계.
 1. 최신 변경 사항이 있는 **[!UICONTROL 저장소]** 및 **[!UICONTROL Git 분기]** 값을 선택하십시오. 예를 들어 선택한 저장소 이름은 `custom-canvas-theme-repo`이고 Git 분기는 `main`입니다.
 1. 변경 내용이 루트 폴더에 있는 경우 **[!UICONTROL 코드 위치]**&#x200B;을(를) `/`(으)로 선택합니다.
-1. **[!UICONTROL 저장]**을 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
    ![프론트엔드 파이프라인 만들기](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
    파이프라인 설정이 완료되면 콜 투 액션 카드가 업데이트됩니다.

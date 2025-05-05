@@ -146,7 +146,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 * 프로그램의 특정 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [환경](/help/implementing/cloud-manager/manage-environments.md)(으)로 이동
 * ![프로그램 개요 아이콘](/help/implementing/cloud-manager/assets/program-overview.svg) [프로그램 개요](#program-overview) 열기
 * ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

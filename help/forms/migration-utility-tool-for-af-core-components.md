@@ -158,7 +158,7 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
    ![AEM 현대화 도구 대상 폴더](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. **[!UICONTROL 저장 후 닫기]**를 선택하여 변환된 양식의 속성을 다시 저장합니다.
+1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택하여 변환된 양식의 속성을 다시 저장합니다.
    ![AEM 현대화 도구 적응형 양식 속성](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 이제 기초 구성 요소에 구축된 적응형 양식이 핵심 구성 요소에 구축된 적응형 양식으로 변환됨을 알 수 있습니다.

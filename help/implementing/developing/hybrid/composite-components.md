@@ -160,7 +160,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)의 컨테이너 구성 요소 [에 대해 허용되는 구성 요소에 추가하십시오.
+1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)의 컨테이너 구성 요소 에 대해 허용되는 구성 요소에 추가하십시오.
 
 이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 바로 추가할 수 있습니다.
 
@@ -178,4 +178,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례](#content-does-not-exist)에서 정의된 [과(와) 동일합니다. 여기에서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.
+`AEMCard` 구성 요소는 이전 사용 사례[&#128279;](#content-does-not-exist)에서 정의된 과(와) 동일합니다. 여기에서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.

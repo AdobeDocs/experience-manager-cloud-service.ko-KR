@@ -94,6 +94,7 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
        }
    }'
    ```
+
 1. 공개 구성이 설정되었는지 확인하고 다음과 유사한 cURL 명령을 사용하여 사용할 수 있습니다.
 
    ```text
@@ -149,7 +150,7 @@ AEM이 다시 사용되지 않도록 구성되면 구성 서비스를 사용하�
 이제 AEM에서 Edge Delivery Services에 필요한 사항을 변경할 준비가 되었습니다.
 
 1. AEM 작성자 인스턴스에 로그인하고 **도구** -> **클라우드 서비스** -> **Edge Delivery Services 구성**(으)로 이동한 다음 사이트에 대해 자동으로 만들어진 구성을 선택하고 도구 모음에서 **속성**&#x200B;을 탭하거나 클릭합니다.
-1. **Edge Delivery Services 구성** 창에서 프로젝트 형식을 **AEM.live에 무수정 구성 설정**(으)로 변경하고 **저장 및 닫기**를 탭하거나 클릭합니다.
+1. **Edge Delivery Services 구성** 창에서 프로젝트 형식을 **AEM.live에 무수정 구성 설정**(으)로 변경하고 **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
    ![Edge Delivery Services 구성](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. 범용 편집기를 사용하여 사이트로 돌아가서 제대로 렌더링되는지 확인하십시오.
 1. 일부 콘텐츠를 수정하고 다시 게시합니다.

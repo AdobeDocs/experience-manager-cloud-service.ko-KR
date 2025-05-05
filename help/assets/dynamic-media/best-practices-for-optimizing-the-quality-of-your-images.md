@@ -139,7 +139,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 
 JPG 압축에 대한 우수 사례로 `&qlt=85,0`을(를) 사용하십시오.
 
-## JPEG 크기 조정(`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}에 대한 모범 사례
+## JPEG 크기 조정(`&jpegSize=`)에 대한 모범 사례 {#best-practices-for-jpeg-sizing-jpegsize}
 
 `jpegSize` 매개 변수는 메모리가 제한된 장치에 전달할 때 이미지가 특정 크기를 초과하지 않도록 하려는 경우에 유용합니다.
 

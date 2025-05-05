@@ -59,7 +59,7 @@ Adobe Experience Manager(AEM) as a Cloud Service 내의 콘텐츠 조각을 통�
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
-   1. 생성 시 **이름**은 저장소의 노드 이름이 됩니다.
+   1. 생성 시 **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
 이름을 입력할 수 있습니다. 필드를 비워두면 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다. 필요한 경우 결과를 조정할 수 있습니다.
    1. 사용을 활성화하려면 다음을 선택합니다.
       * **콘텐츠 조각 모델**

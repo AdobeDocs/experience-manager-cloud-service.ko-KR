@@ -81,13 +81,15 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 +++ 일반 구성 요소의 HTML 구조
 
 ```HTML
+
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
-     <label for="{FieldId}" class="field-label">First   Name</label>
-     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     &lt;label for="{FieldId}" class="field-label">First   Name&lt;/label>
+     &lt;input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
      <div class="field-description" aria-live="polite"  id="{FieldId}-description">
       Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
      </div>
   </div>
+
 ```
 
 * 클래스: div 요소에는 특정 요소 및 스타일을 타기팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
@@ -102,13 +104,15 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 **HTML 구조의 예**
 
 ```HTML
+
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
-  <label for="firstName" class="field-label">First Name</label>
-  <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
+  &lt;label for="firstName" class="field-label">First Name&lt;/label>
+  &lt;input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
   <div class="field-description" aria-live="polite" id="firstName-description">
     Please enter your legal first name.
   </div>
 </div>
+
 ```
 
 +++
@@ -116,28 +120,29 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 +++ 일반 구성 요소용 CSS 선택기
 
 ```CSS
+
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  {
+  main .form form .{Type}-wrapper  &lbrace;
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  }
+  &rbrace;
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input {
+  main .form form .{Type}-wrapper input &lbrace;
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  }
+  &rbrace;
   
   /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} {
+  main .form form .field-{Name} &lbrace;
     /* Add your styles here */
     /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
+  &rbrace;
   
 ```
 * `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타기팅합니다. 예를 들어 `.text-wrapper`는 모든 텍스트 필드를 타기팅합니다.
@@ -146,20 +151,22 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 **일반 구성 요소용 CSS 선택기의 예**
 
 ```CSS
+
 /*Target all text input fields */
-main .form form .text-wrapper input {
+main .form form .text-wrapper input &lbrace;
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
   color: red;
-}
+&rbrace;
 
 /*Target all fields with name first-name*/
-main .form form .field-first-name input {
+main .form form .field-first-name input &lbrace;
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
-}
+&rbrace;
+
 ```
 
 +++
@@ -171,29 +178,33 @@ main .form form .field-first-name input {
 +++ 드롭다운 구성 요소의 HTML 구조
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
+
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
-  <label for="country" class="field-label">Country</label>
-  <select id="country" name="country">
-    <option value="">Select Country</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-  </select>
+  &lt;label for="country" class="field-label">Country&lt;/label>
+  &lt;select id="country" name="country">
+    &lt;option value="">Select Country&lt;/option>
+    &lt;option value="US">United States&lt;/option>
+    &lt;option value="CA">Canada&lt;/option>
+  &lt;/select>
   <div class="field-description" aria-live="polite" id="country-description">
     Please select your country of residence.
   </div>
 </div>
+
 ```
 
 +++
@@ -203,19 +214,21 @@ main .form form .field-first-name input {
 다음 CSS에는 드롭다운 구성 요소에 대한 몇 가지 CSS 선택기 예가 나열되어 있습니다.
 
 ```CSS
+
 /* Target the outer wrapper */
-main .form form .drop-down-wrapper {
+main .form form .drop-down-wrapper &lbrace;
   /* Add your styles here */
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-}
+&rbrace;
 
 /* Style the label */
-main .form form .drop-down-wrapper .field-label {
+main .form form .drop-down-wrapper .field-label &lbrace;
   margin-bottom: 5px;
   font-weight: bold;
-}
+&rbrace;
+
 ```
 * 래퍼 타기팅: 첫 번째 선택기(`.drop-down-wrapper`)는 외부 래퍼 요소를 타기팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
 * Flexbox 레이아웃: Flexbox는 깔끔한 레이아웃을 위해 레이블, 드롭다운 및 설명을 수직으로 정렬합니다.
@@ -235,37 +248,41 @@ main .form form .drop-down-wrapper .field-label {
 +++ 라디오 그룹의 HTML 구조
 
 ```HTML
-<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   <legend for="{FieldId}" class="field-label">....</legend>
+
+&lt;fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
-      <label for="{UniqueId}" class="field-label">...</label>
+      &lt;input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
    </div>
    <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
-<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
-  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+
+&lt;fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  &lt;legend for="color_preference" class="field-label">Favorite Color:&lt;/legend>
   <% for each radio in Group %>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
-      <label for="color_red" class="field-label">Red</label>
+      &lt;input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_red" class="field-label">Red&lt;/label>
     </div>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
-      <label for="color_green" class="field-label">Green</label>
+      &lt;input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_green" class="field-label">Green&lt;/label>
     </div>
     <div class="radio-wrapper field-color">
-      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
-      <label for="color_blue" class="field-label">Blue</label>
+      &lt;input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      &lt;label for="color_blue" class="field-label">Blue&lt;/label>
     </div>
   <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 +++
@@ -275,28 +292,34 @@ main .form form .drop-down-wrapper .field-label {
 * Fieldset 타기팅
 
 ```CSS
-  main .form form .radio-group-wrapper {
+
+  main .form form .radio-group-wrapper &lbrace;
     border: 1px solid #ccc;
     padding: 10px;
-  }
+  &rbrace;
+
 ```
 이 선택기는 radio-group-wrapper 클래스가 있는 모든 필드 세트를 대상으로 합니다. 전체 라디오 그룹에 일반 스타일을 적용하는 데 유용합니다.
 
 * 라디오 버튼 레이블 타기팅
 
 ```CSS
-main .form form .radio-wrapper label {
+
+main .form form .radio-wrapper label &lbrace;
     font-weight: normal;
     margin-right: 10px;
-  }
+  &rbrace;
+
 ```
 
 * 이름을 기준으로 특정 Fieldset 내의 모든 라디오 버튼 레이블을 타기팅합니다.
 
 ```CSS
-main .form form .field-color .radio-wrapper label {
+
+main .form form .field-color .radio-wrapper label &lbrace;
   /* Your styles here */
-}
+&rbrace;
+
 ```
 
 +++
@@ -306,35 +329,39 @@ main .form form .field-color .radio-wrapper label {
 +++ 확인란 그룹의 HTML 구조
 
 ```HTML
-<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   <legend for="{FieldId}" class="field-label">....</legend>
+
+&lt;fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
-      <label for="{UniqueId}" class="field-label">...</label>
+      &lt;input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
    </div>
    <% end for %>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
-<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
-  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+
+&lt;fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  &lt;legend for="topping_preference" class="field-label">Pizza Toppings:&lt;/legend>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
+    &lt;input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_pepperoni" class="field-label">Pepperoni&lt;/label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+    &lt;input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_mushrooms" class="field-label">Mushrooms&lt;/label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
-    <label for="topping_onions" class="field-label">Onions</label>
+    &lt;input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    &lt;label for="topping_onions" class="field-label">Onions&lt;/label>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 +++
@@ -344,78 +371,86 @@ main .form form .field-color .radio-wrapper label {
 * 외부 래퍼 타기팅: 이들 선택기는 라디오 및 확인란 그룹의 가장 바깥쪽 컨테이너를 타기팅하여 전체 그룹 구조에 일반 스타일을 적용할 수 있습니다. 이는 간격, 정렬 또는 기타 레이아웃 관련 속성을 설정하는 데 유용합니다.
 
 ```CSS
+
   
   /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper {
+  main .form form .radio-group-wrapper &lbrace;
     margin-bottom: 20px; /* Adds space between radio groups */  
-  }
+  &rbrace;
 
   /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper {
+  main .form form .checkbox-group-wrapper &lbrace;
     margin-bottom: 20px; /* Adds space between checkbox groups */
-  }
+  &rbrace;
+
 ```
 
 * 타기팅 그룹 레이블: 이 선택기는 라디오 및 확인란 그룹 래퍼 내의 `.field-label` 요소를 타기팅합니다. 이를 통해 해당 그룹에 맞게 레이블 스타일을 지정할 수 있으며 잠재적으로 더 돋보이게 만들 수 있습니다.
 
 ```CSS
+
 main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend {
+main .form form .checkbox-group-wrapper legend &lbrace;
   font-weight: bold; /* Makes the group label bold */
-}
+&rbrace;
+
 ```
 
 * 개별 입력 및 레이블 타기팅: 이들 선택기는 개별 라디오 버튼, 확인란 및 관련 레이블에 대한 보다 세부적인 제어를 제공합니다. 이를 사용하여 크기나 간격을 조정하거나 보다 뚜렷한 시각적 스타일을 적용할 수 있습니다.
 
 ```CSS
+
 /* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] {
+main .form form .radio-group-wrapper input[type="radio"] &lbrace;
   margin-right: 5px; /* Adds space between the input and its label */
-}
+&rbrace;
 
 /* Styling radio button labels */
-main .form form .radio-group-wrapper label {
+main .form form .radio-group-wrapper label &lbrace;
   font-size: 15px; /* Changes the label font size */
-}
+&rbrace;
 
 /* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
+main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
   margin-right: 5px; /* Adds space between the input and its label */
-}
+&rbrace;
 
 /* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label {
+main .form form .checkbox-group-wrapper label &lbrace;
   font-size: 15px; /* Changes the label font size */
-}
+&rbrace;
+
 ```
 
 * 라디오 버튼 및 확인란 모양 맞춤화: 이 기술을 통해 기본 입력을 숨기고 `:before` 및 `:after` 의사 요소를 사용하여 ‘선택됨’ 상태에 따라 모양을 변경하는 맞춤형 시각적 요소를 생성할 수 있습니다.
 
 ```CSS
+
 /* Hide the default radio button or checkbox */
 main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
+main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
   opacity: 0;
   position: absolute;
-}
+&rbrace;
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before {
+main .form form .radio-group-wrapper input[type="radio"] + label::before &lbrace;
   /* ... styles for custom radio button ... */
-}
+&rbrace;
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
+main .form form .radio-group-wrapper input[type="radio"]:checked + label::before &lbrace;
   /* ... styles for checked radio button ... */
-}
+&rbrace;
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
+main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before &lbrace;
   /* ... styles for custom checkbox ... */
-}
+&rbrace;
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
+main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before &lbrace;
   /* ... styles for checked checkbox ... */
-}
+&rbrace;
+
 ```
 
 +++
@@ -425,38 +460,42 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 +++ 패널/컨테이너 구성 요소의 HTML 구조
 
 ```HTML
-<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+
+&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    <label for="{FieldId}" class="field-label">First Name</label>
-    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
-<fieldset class="panel-wrapper field-login field-wrapper">
-  <legend for="login" class="field-label" data-visible="false">Login Information</legend>
+
+&lt;fieldset class="panel-wrapper field-login field-wrapper">
+  &lt;legend for="login" class="field-label" data-visible="false">Login Information&lt;/legend>
   <div class="text-wrapper field-username field-wrapper">
-    <label for="username" class="field-label">Username</label>
-    <input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
+    &lt;label for="username" class="field-label">Username&lt;/label>
+    &lt;input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
     <div class="field-description" aria-live="polite" id="username-description">
       Please enter your username or email address.
     </div>
   </div>
   <div class="password-wrapper field-password field-wrapper">
-    <label for="password" class="field-label">Password</label>
-    <input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
+    &lt;label for="password" class="field-label">Password&lt;/label>
+    &lt;input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
     <div class="field-description" aria-live="polite" id="password-description">
       Your password must be at least 8 characters long.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 * Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
@@ -471,14 +510,16 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 패널 타기팅:
 
 ```CSS
+
   /* Target the entire panel container */
-  main .form form .panel-wrapper {
+  main .form form .panel-wrapper &lbrace;
     /* Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
- }
+ &rbrace;
+
 ```
 
 * `.panel-wrapper` 선택기는 panel-wrapper 클래스를 사용하여 모든 요소의 스타일을 지정하여 모든 패널에 대해 일관된 모양을 만듭니다.
@@ -486,15 +527,17 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 패널 제목 타기팅:
 
 ```CSS
+
   /* Target the legend element (panel title) */
-  .panel-wrapper legend {
+  .panel-wrapper legend &lbrace;
     /* Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd; /* Optional: create a separation line */
-  }
+  &rbrace;
+
 ```
 
 * `.panel-wrapper legend` 선택기는 패널 내의 범례 요소 스타일을 지정하여 제목을 시각적으로 돋보이게 만듭니다.
@@ -503,11 +546,13 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 패널 내 개별 필드 타기팅:
 
 ```CSS
+
 /* Target all form field wrappers within a panel */
-main .form form .panel-wrapper .{Type}-wrapper {
+main .form form .panel-wrapper .{Type}-wrapper &lbrace;
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-}
+&rbrace;
+
 ```
 
 * `.panel-wrapper .{Type}-wrapper` 선택기는 패널 내의 `.{Type}-wrapper` 클래스가 있는 모든 래퍼를 대상으로 하여 양식 필드 사이의 간격 스타일을 지정할 수 있습니다.
@@ -515,15 +560,17 @@ main .form form .panel-wrapper .{Type}-wrapper {
 1. 특정 필드 타기팅(선택 사항):
 
 ```CSS
+
   /* Target the username field wrapper */
-  main .form form .panel-wrapper .text-wrapper.field-username {
+  main .form form .panel-wrapper .text-wrapper.field-username &lbrace;
     /* Add your styles here (specific to username field) */
-  }
+  &rbrace;
 
   /* Target the password field wrapper */
-  main .form form .panel-wrapper .password-wrapper.field-password {
+  main .form form .panel-wrapper .password-wrapper.field-password &lbrace;
     /* Add your styles here (specific to password field) */
-  }
+  &rbrace;
+
 ```
 
 * 선택 사항에 해당하는 이러한 선택기의 경우 사용자 이름 필드 강조 표시와 같은 고유한 스타일 지정을 위해 패널 내의 특정 필드 래퍼를 대상으로 지정할 수 있습니다.
@@ -535,55 +582,59 @@ main .form form .panel-wrapper .{Type}-wrapper {
 +++ 반복 가능 패널의 HTML 구조
 
 ```HTML
-<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+
+&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    <label for="{FieldId}" class="field-label">First Name</label>
-    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
-<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  <legend for="contact-1" class="field-label" data-visible="false">Contact Information</legend>
+
+&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  &lt;legend for="contact-1" class="field-label" data-visible="false">Contact Information&lt;/legend>
   <div class="text-wrapper field-name field-wrapper">
-    <label for="name-1" class="field-label">Name</label>
-    <input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
+    &lt;label for="name-1" class="field-label">Name&lt;/label>
+    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
     <div class="field-description" aria-live="polite" id="name-1-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    <label for="email-1" class="field-label">Email</label>
-    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
+    &lt;label for="email-1" class="field-label">Email&lt;/label>
+    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
     <div class="field-description" aria-live="polite" id="email-1-description">
       Please enter a valid email address.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
 
-<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  <legend for="contact-2" class="field-label" data-visible="false">Contact Information</legend>
+&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  &lt;legend for="contact-2" class="field-label" data-visible="false">Contact Information&lt;/legend>
   <div class="text-wrapper field-name field-wrapper">
-    <label for="name-2" class="field-label">Name</label>
-    <input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
+    &lt;label for="name-2" class="field-label">Name&lt;/label>
+    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
     <div class="field-description" aria-live="polite" id="name-2-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    <label for="email-2" class="field-label">Email</label>
-    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
+    &lt;label for="email-2" class="field-label">Email&lt;/label>
+    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
     <div class="field-description" aria-live="polite" id="email-2-description">
       Please enter a valid email address.
     </div>
   </div>
-</fieldset>
+&lt;/fieldset>
+
 ```
 
 각 패널은 추가 속성을 포함하여 단일 패널 예와 구조가 동일합니다.
@@ -599,14 +650,16 @@ main .form form .panel-wrapper .{Type}-wrapper {
 * 모든 반복 가능 패널 타기팅:
 
 ```CSS
+
   /* Target all panels with the repeatable attribute */
- main .form form .panel-wrapper[data-repeatable="true"] {
+ main .form form .panel-wrapper[data-repeatable="true"] &lbrace;
     /* Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-  }
+  &rbrace;
+
 ```
 
 이 선택기는 모든 반복 가능 패널의 스타일을 지정하여 디자인을 일관되게 유지합니다.
@@ -615,23 +668,27 @@ main .form form .panel-wrapper .{Type}-wrapper {
 * 패널 내 개별 필드 타기팅:
 
 ```CSS
+
 /* Target all form field wrappers within a repeatable panel */
-main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
+main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper &lbrace;
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-}
+&rbrace;
+
 ```
 이 선택기는 반복 가능 패널 내의 모든 필드 래퍼 스타일을 지정하여 필드 사이의 간격을 일관되게 유지합니다.
 
 * 특정 필드 타기팅(패널 내):
 
 ```CSS
+
 /* Target the name field wrapper within the first panel */
-main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
+main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name &lbrace;
   /* Add your styles here (specific to first name field) */
-}
+&rbrace;
 
 /* Target all
+
 ```
 
 +++
@@ -641,40 +698,44 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 +++ 파일 첨부의 HTML 구조
 
 ```HTML
+
 <div class="file-wrapper field-{FileName} field-wrapper">
-  <legend for="{id}" class="field-label" data-visible="false"> File Attachment </legend>
+  &lt;legend for="{id}" class="field-label" data-visible="false"> File Attachment &lt;/legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    <button class="file-attachButton" type="button">Attach</button>
-    <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
+    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
+    &lt;input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
   </div>
   <div class="files-list">
     <div data-index="0" class="file-description">
       <span class="file-description-name">ClaimForm.pdf</span>
       <span class="file-description-size">26 kb</span>
-      <button class="file-description-remove" type="button"></button>
+      &lt;button class="file-description-remove" type="button">&lt;/button>
     </div>
   </div>
 </div>
+
 ```
 
 **HTML 구조의 예**
 
 
 ```HTML
+
 <div class="file-wrapper field-claim_form field-wrapper">
-  <legend for="claim_form" class="field-label" data-visible="false">File Attachment</legend>
+  &lt;legend for="claim_form" class="field-label" data-visible="false">File Attachment&lt;/legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    <button class="file-attachButton" type="button">Attach</button>
+    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
   </div>
   <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="claim_form"
          name="claim_form" autocomplete="off" multiple="" required="required" data-max-file-size="2MB">
   <div class="files-list">
     </div>
 </div>
+
 ```
 
 * 클래스 속성은 첨부 파일에 제공된 이름(claim_form)을 사용합니다.
@@ -688,14 +749,16 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 * 전체 파일 첨부 구성 요소 타기팅:
 
 ```CSS
+
 /* Target the entire file attachment component */
-main .form form .file-wrapper {
+main .form form .file-wrapper &lbrace;
   /* Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
-}
+&rbrace;
+
 ```
 
 이 선택기는 범례, 드래그 영역, 입력 필드 및 목록을 포함한 전체 파일 첨부 구성 요소의 스타일을 지정합니다.
@@ -703,34 +766,36 @@ main .form form .file-wrapper {
 * 특정 요소 타기팅:
 
 ```CSS
+
 /* Target the drag and drop area */
-main .form form .file-wrapper .file-drag-area {
+main .form form .file-wrapper .file-drag-area &lbrace;
   /* Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
-}
+&rbrace;
 
 /* Target the file input element */
-main .form form .file-wrapper input[type="file"] {
+main .form form .file-wrapper input[type="file"] &lbrace;
   /* Add your styles here (e.g., hide the default input) */
   display: none;
-}
+&rbrace;
 
 /* Target individual file descriptions within the list (populated dynamically) */
-main .form form .file-wrapper .files-list .file-description {
+main .form form .file-wrapper .files-list .file-description &lbrace;
   /* Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-}
+&rbrace;
 
 /* Target the file name within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-name {
+main .form form .file-wrapper .files-list .file-description .file-description-name &lbrace;
   /* Add your styles here (e.g., font-weight) */
   font-weight: bold;
-}
+&rbrace;
+
 ```
 
 이러한 선택기를 사용하면 파일 첨부 구성 요소의 다양한 부분에 개별적으로 스타일을 지정할 수 있습니다. 디자인 환경 설정에 맞게 스타일을 조정할 수 있습니다.
@@ -749,32 +814,36 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 +++ HTML 구조
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
+
 <div class="text-wrapper field-name field-wrapper" data-required="true">
-  <label for="name" class="field-label">Name</label>
-  <input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
+  &lt;label for="name" class="field-label">Name&lt;/label>
+  &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
 </div>
 
 <div class="number-wrapper field-age field-wrapper" data-required="true">
-  <label for="age" class="field-label">Age</label>
-  <input type="number" placeholder="Enter your age" id="age" name="age">
+  &lt;label for="age" class="field-label">Age&lt;/label>
+  &lt;input type="number" placeholder="Enter your age" id="age" name="age">
 </div>
 
 <div class="email-wrapper field-email field-wrapper" data-required="true">
-  <label for="email" class="field-label">Email Address</label>
-  <input type="email" placeholder="Enter your email" id="email" name="email">
+  &lt;label for="email" class="field-label">Email Address&lt;/label>
+  &lt;input type="email" placeholder="Enter your email" id="email" name="email">
 </div>
+
 ```
 
 * 각 필드는 여러 클래스가 있는 `div` 요소로 래핑됩니다.
@@ -791,16 +860,18 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 +++ CSS 선택기의 예
 
 ```CSS
+
 /* Target all text input fields */
-main .form form .text-wrapper input {
+main .form form .text-wrapper input &lbrace;
   /* Add your styles here */
-}
+&rbrace;
 
 /* Target all number input fields */
-main .form form .number-wrapper input {
+main .form form .number-wrapper input &lbrace;
   /* Add your styles here */
   letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
-}
+&rbrace;
+
 ```
 
 +++
@@ -812,25 +883,29 @@ main .form form .number-wrapper input {
 +++ HTML 구조
 
 ```HTML
+
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
+   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
+
 ```
 
 **HTML 구조의 예**
 
 ```HTML
+
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
-  <label for="otp" class="field-label">OTP</label>
-  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
+  &lt;label for="otp" class="field-label">OTP&lt;/label>
+  &lt;input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
   <div class="field-description" aria-live="polite" id="otp-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
+
 ```
 
 +++
@@ -838,9 +913,11 @@ main .form form .number-wrapper input {
 +++ CSS 선택기의 예
 
 ```CSS
-main .form form .field-otp input {
+
+main .form form .field-otp input &lbrace;
    letter-spacing: 2px
-}
+&rbrace;
+
 ```
 
 이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타기팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따릅니다. 이는 “field-otp” 클래스로 표시된 컨테이너에 “otp”라는 이름의 필드가 있음을 의미합니다.

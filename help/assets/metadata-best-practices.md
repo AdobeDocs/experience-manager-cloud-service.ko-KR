@@ -167,7 +167,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
    1. **[!UICONTROL 고급]** 탭으로 이동한 다음 **[!UICONTROL 검색 키워드에 대한 개선]**&#x200B;에서 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. <br>기본 메타데이터 스키마를 사용하여 검색 키워드를 높여야 합니다.
    1. 검색을 강화할 키워드를 입력한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.<br>
 여러 키워드를 추가하고 우선 순위에 따라 정렬할 수 있습니다.
-   1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
+   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 추가한 키워드를 사용하여 에셋을 검색합니다. 에셋이 상위 검색 결과에 나타납니다.
 
   Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 알아보세요.

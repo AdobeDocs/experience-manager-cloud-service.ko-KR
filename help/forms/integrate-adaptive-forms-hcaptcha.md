@@ -54,9 +54,11 @@ AEM Forms으로 hCaptcha®를 구성하려면 hCaptcha® 웹 사이트에서 [hC
          1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**을(를) 선택합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**&#x200B;을(를) 선택합니다.
+
       ui의 ![hCaptcha®](assets/hcaptcha-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+
       ![구성 hCaptcha®](assets/config-hcaptcha.png)
    1. [필수 구성 요소에서 구한](#prerequisite)hCaptcha® 서비스 **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL 사이트 키]** 및 **[!UICONTROL 비밀 키]**&#x200B;를 지정하십시오. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
@@ -67,7 +69,7 @@ AEM Forms으로 hCaptcha®를 구성하려면 hCaptcha® 웹 사이트에서 [hC
 
 hCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다.
 
-## 적응형 양식{#using-hCaptcha®-foundation-components}에서 hCaptcha® 사용
+## 적응형 양식에서 hCaptcha® 사용{#using-hCaptcha®-foundation-components}
 
 1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
 1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;로 이동합니다.

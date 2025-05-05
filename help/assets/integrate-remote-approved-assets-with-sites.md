@@ -77,6 +77,7 @@ OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원�
 * AEM as a Cloud Service에 대해 다음 [환경 변수](/help/implementing/cloud-manager/environment-variables.md#add-variables)를 설정합니다.
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX`이(가) 프로그램 ID <br>을(를) 참조합니다.
      `eYYYY`이(가) 환경 ID를 참조합니다.
 
@@ -86,7 +87,7 @@ OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원�
 
      또는 다음 단계에 따라 AEM Sites 인스턴스에서 AEM 6.5에 대한 [OSGi 설정](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)을 구성하십시오.
 
-   1. 콘솔에 로그인하고 **[!UICONTROL OSGi] >**를 클릭하거나
+   1. 콘솔에 로그인하고 **[!UICONTROL OSGi] >**&#x200B;를 클릭하거나
 직접 URL 사용(예: `https://localhost:4502/system/console/configMgr`)
 
    1. **차세대 Dynamic Media 구성**(`NextGenDynamicMediaConfigImpl`) OSGi 구성을 다음과 같이 구성하여 값을 원격 자산 환경의 값으로 바꿉니다.
@@ -137,12 +138,12 @@ AEM Sites 인스턴스에서 AEM 페이지 편집기 내의 원격 자산을 사
 1. 레이아웃 컨테이너를 클릭하고 **[!UICONTROL 이미지]** 구성 요소를 추가합니다.
 1. **[!UICONTROL 이미지]** 구성 요소를 클릭하고 ![설정 아이콘](/help/assets/assets/do-not-localize/settings-icon.svg) 아이콘을 클릭합니다.
 1. **[!UICONTROL 페이지에서 추천 이미지 상속]** 옵션을 선택 취소합니다.
-1. **[!UICONTROL 선택]**&#x200B;을 클릭하고 **[!UICONTROL 원격]**을(를) 선택합니다.
+1. **[!UICONTROL 선택]**&#x200B;을 클릭하고 **[!UICONTROL 원격]**&#x200B;을(를) 선택합니다.
    ![이미지](/help/assets/assets/uncheck-inherit-option.jpg)
 
    로그인하라는 메시지가 표시됩니다.
 1. 자산을 선택하고 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
-1. 대체 텍스트를 추가하고 **[!UICONTROL 완료]**를 클릭합니다.
+1. 대체 텍스트를 추가하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
    <br> 원격 자산이 이미지 구성 요소에 나타납니다. 자산이 페이지에 로드될 때 또는 &#39;미리 보기&#39; 탭을 사용하여 자산의 게재 URL을 확인할 수도 있습니다. 게재 URL은 자산이 원격으로 액세스되고 있음을 나타냅니다.
 
 AEM 페이지 편집기에서 이미지 핵심 구성 요소 v3 및 티저 핵심 구성 요소 v2에 대해서만 기본 원격 자산에 액세스할 수 있습니다. 사용자 지정 구성 요소를 포함한 다른 구성 요소의 경우 해당 구성 요소와 자산 선택기를 통합하려면 사용자 지정이 필요합니다.
@@ -161,7 +162,7 @@ AEM Sites 인스턴스에서 AEM 컨텐츠 조각 내의 원격 자산을 사용
 
    >[!NOTE]
    >
-   AEM 콘텐츠 조각 모델이 없는 경우 [하나 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)해야 할 수 있습니다.
+   >AEM 콘텐츠 조각 모델이 없는 경우 [하나 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)해야 할 수 있습니다.
 
 1. 텍스트 구성 요소 옆에 있는 ![확인 표시 아이콘](/help/assets/assets/do-not-localize/checkmark-icon.svg) 아이콘을 클릭합니다.
 1. 원격 DAM에서 자산을 가져오려면 **[!UICONTROL 원격]**&#x200B;을(를) 선택하십시오. <br>
@@ -169,7 +170,7 @@ AEM Sites 인스턴스에서 AEM 컨텐츠 조각 내의 원격 자산을 사용
 
    ![이미지](/help/assets/assets/cf-pick.jpg)
 로그인하라는 메시지가 표시됩니다.
-1. 자산을 선택하고 **[!UICONTROL 선택]**을 클릭합니다.
+1. 자산을 선택하고 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
    <br> 원격 자산 URL이 텍스트 구성 요소에 나타납니다.
 
 #### 비디오: AEM 컨텐츠 조각의 원격 자산 액세스

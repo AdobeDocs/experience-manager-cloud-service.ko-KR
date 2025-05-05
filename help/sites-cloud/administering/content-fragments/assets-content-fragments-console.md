@@ -49,7 +49,7 @@ ht-degree: 11%
 * [폴더 만들기](/help/assets/manage-digital-assets.md#creating-folders)
 * [자산 업로드](/help/assets/add-delete-assets-view.md)
 * 보기 유형(목록, 격자, 갤러리, 폭포)을 구성하고 적절한 경우 열을 표시합니다
-* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 하나 이상의 선택한 Assets에 대해 다음 작업을 수행할 수도 있습니다.
 

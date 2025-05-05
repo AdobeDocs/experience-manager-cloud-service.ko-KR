@@ -36,7 +36,7 @@ Designer은 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC.
 * Designer을 설치할 수 있는 관리 권한입니다.
-* [!DNL Microsoft® Visual C++ 2019](VC 14.28 이상) 64비트 런타임
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 이상) 64비트 런타임
 
 +++
 

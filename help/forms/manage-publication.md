@@ -92,7 +92,7 @@ Experience Manager Forms에서는 다음 방법 중 하나를 사용하여 양�
 1. 계속하려면 **다음**&#x200B;을 클릭하세요.
 1. (선택 사항) **범위** 탭에서 [콘텐츠 추가](#add-content) 옵션을 사용하여 게시할 콘텐츠를 더 추가합니다. 예를 들어 Forms 또는 기록 문서 파일을 더 추가할 수 있습니다.
    ![범위 탭](/help/forms/assets/scope-tab.png)
-1. **[!UICONTROL 게시]**를 클릭하여 양식 및 관련 자산을 게시하고 성공적인 메시지가 나타납니다.
+1. **[!UICONTROL 게시]**&#x200B;를 클릭하여 양식 및 관련 자산을 게시하고 성공적인 메시지가 나타납니다.
    ![성공한 메시지 게시](/help/forms/assets/publish-successful.png)
 
 ### 콘텐츠 추가
@@ -116,7 +116,7 @@ Experience Manager Forms에 게시하면 게시 목록에 더 많은 컨텐츠(�
 
    ![게시된 참조](/help/forms/assets/published-references.png)
 
-4. **게시된 참조** 대화 상자에서 게시하지 않을 자산을 선택 취소하고 **[!UICONTROL 완료]**를 클릭합니다.
+4. **게시된 참조** 대화 상자에서 게시하지 않을 자산을 선택 취소하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
    ![게시된 참조 대화 상자](/help/forms/assets/published-references-dialog.png)
 
 <!--

@@ -79,7 +79,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)은(는) 텍스트, 숫자 및 날짜를 저장하는 구조화된 자산입니다. `standard`개의 자산(예: 이미지 또는 문서)에 몇 가지 차이점이 있으므로 콘텐츠 조각 처리에 몇 가지 추가 규칙이 적용됩니다.
 
-자세한 내용은  [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)에서 [콘텐츠 조각 지원을 참조하십시오.
+자세한 내용은  [!DNL Experience Manager Assets] HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)에서 콘텐츠 조각 지원을 참조하십시오.
 
 >[!NOTE]
 >
@@ -352,4 +352,4 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)에 대한 [개발자 참조 문서
+>*  [!DNL Assets][&#128279;](/help/assets/developer-reference-material-apis.md)에 대한 개발자 참조 문서

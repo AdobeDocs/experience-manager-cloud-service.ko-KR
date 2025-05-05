@@ -137,8 +137,8 @@ RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL RESTful 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 검색하여 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL  Swagger] 정의 파일에 [!DNL Swagger URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
-   * [!DNL  Swagger] Source 입력을 기반으로 다음 필드가 값으로 미리 채워집니다.
+   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL &#x200B; Swagger] 정의 파일에 [!DNL Swagger URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
+   * [!DNL &#x200B; Swagger] Source 입력을 기반으로 다음 필드가 값으로 미리 채워집니다.
 
       * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 [!DNL Swagger] 소스에 정의된 구성표에 따라 다릅니다.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
@@ -162,8 +162,8 @@ RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL RESTful 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 검색하여 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL  Swagger] 정의 파일에 [!DNL Swagger 3.0 URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
-   * [!DNL  Swagger] Source 입력을 기반으로 대상 서버와의 연결 정보가 표시됩니다.
+   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL &#x200B; Swagger] 정의 파일에 [!DNL Swagger 3.0 URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
+   * [!DNL &#x200B; Swagger] Source 입력을 기반으로 대상 서버와의 연결 정보가 표시됩니다.
    * RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공하려면 인증 유형 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, API 키 또는 사용자 지정 인증을 선택하십시오.
 
    인증 유형으로 **[!UICONTROL API 키]**&#x200B;을(를) 선택한 경우 API 키 값을 지정하십시오. API 키는 요청 헤더 또는 쿼리 매개 변수로 전송될 수 있습니다. **[!UICONTROL 위치]** 드롭다운 목록에서 이러한 옵션 중 하나를 선택하고 **[!UICONTROL 매개 변수 이름]** 필드에 헤더 이름 또는 쿼리 매개 변수를 적절하게 지정합니다.

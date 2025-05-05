@@ -28,7 +28,7 @@ Adobe Analytics와 AEM as a Cloud Service를 통합하여 웹 페이지 활동�
 ## Adobe Analytics 구성 만들기 {#analytics-configuration}
 
 1. **도구** → **클라우드 서비스**&#x200B;로 이동합니다.
-2. **Adobe Analytics**를 선택합니다.
+2. **Adobe Analytics**&#x200B;를 선택합니다.
    ![Adobe Analytics 창](assets/analytics_screen2.png "Adobe Analytics 창")
 3. **만들기** 버튼을 선택합니다.
 4. 아래의 세부 정보를 입력한 다음 **연결**&#x200B;을 클릭합니다.
