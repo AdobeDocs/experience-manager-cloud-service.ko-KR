@@ -4,10 +4,10 @@ description: 범용 편집기에서 양식 조각을 만들고 양식에 추가�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 90%
    ![조각 만들기](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **적응형 양식 조각 만들기** 마법사가 나타납니다.
-1. **템플릿 선택**&#x200B;탭에서 Egde Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **템플릿 선택** 탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**을 클릭합니다.
    ![Edge Delivery Services 템플릿 선택](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.
