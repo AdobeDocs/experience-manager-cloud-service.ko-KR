@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 내 다양한 편집기에서 접근 가능�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
+source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1372'
 ht-degree: 98%
 
 ---
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->AEM에서 변형 생성과 관련된 자세한 내용은 [보안 팩트 시트](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)를 참조하십시오.
+>[AEM에서의 변형 생성과 관련된 세부 정보를 위한 보안 사실 시트](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)를 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -325,6 +325,9 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 * [GitHub에서 생성형 AI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
+* [Experience Cloud 제품의 생성 AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+   * Experience Cloud 제품의 [생성 AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## 릴리스 기록 {#release-history}
 
