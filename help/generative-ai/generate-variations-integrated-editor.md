@@ -325,9 +325,9 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 * [GitHub에서 생성형 AI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
-* [Experience Cloud 제품의 생성 AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud 제품의 생성 AI](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai)
 
-   * Experience Cloud 제품의 [생성 AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * Experience Cloud 제품의 [생성 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai#aem)
 
 ## 릴리스 기록 {#release-history}
 
