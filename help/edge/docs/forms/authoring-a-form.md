@@ -42,7 +42,7 @@ AEM은 다양한 사용자 요구 사항, 기술 기술 수준 및 게시 대상
 * [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms은 양식을 작성, 실행 및 처리하는 방법을 변환합니다. 조직은 Edge Delivery Services를 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 만들 수 있으며, 빠른 개발 환경을 통해 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. 다음 두 가지 방법으로 Edge Delivery Services Forms을 작성할 수 있습니다.
    * [WYSIWYG 작성](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 기술적 지식이 제한된 콘텐츠 작성자에게 적합한 시각적, 끌어서 놓기 양식 작성에는 범용 편집기를 사용하십시오. 범용 편집기로 작성된 Forms은 빠르고 가벼운 렌더링을 위해 Edge Delivery Services을 사용하여 제공됩니다.
    * [문서 기반 작성](/help/edge/docs/forms/tutorial.md): Microsoft Excel 또는 Google Sheets와 같은 도구를 사용하여 양식 구조 및 콘텐츠를 정의합니다. 이 방법은 스프레드시트 기반 입력을 선호하는 비즈니스 사용자에게 유용합니다. 이러한 양식은 일반적으로 Edge Delivery Services을 통해 게시되며 가벼운 대량 사용 사례에 적합합니다.
-* [Headless 작성](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): AEM에 의존하지 않고 API를 사용하여 React, Angular, 모바일 앱 또는 키오스크와 같은 프런트 엔드에 대해 양식을 JSON으로 렌더링합니다. 현재 핵심 구성 요소만 Headless 전달을 지원합니다. Headless 양식은 옴니채널 사용 사례에 이상적이며 AEM의 페이지 렌더링과 독립적으로 사용되므로 사용자 정의 프론트엔드 배포에 유연하게 사용할 수 있습니다.
+* [Headless 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): AEM에 의존하지 않고 API를 사용하여 React, Angular, 모바일 앱 또는 키오스크와 같은 프런트 엔드에 대해 양식을 JSON으로 렌더링합니다. 현재 핵심 구성 요소만 Headless 전달을 지원합니다. Headless 양식은 옴니채널 사용 사례에 이상적이며 AEM의 페이지 렌더링과 독립적으로 사용되므로 사용자 정의 프론트엔드 배포에 유연하게 사용할 수 있습니다.
 
 ### AEM 양식 작성 방법 비교 분석
 
