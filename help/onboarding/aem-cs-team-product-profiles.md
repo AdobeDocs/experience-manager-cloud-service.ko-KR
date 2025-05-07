@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 팀 및 제품 프로필이 사용 허가된
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '2124'
 ht-degree: 100%
 
 ---
@@ -143,11 +143,10 @@ Forms Communication Solution 라이선스가 부여되면 AEM 조직 수준 제�
         <td>AEM Assets 공동 작업자 사용자</td>
         <td>
         <ul>
-                <li>DAM에 대해 읽기 전용으로 액세스하기 위한 것입니다. 이 제품 프로필의 사용자는 AEM에서 자동으로 생성되는 “참여자” AEM 그룹의 멤버가 됩니다.
+                <li>조직에서 사용할 수 있는 자산을 다른 Adobe 제품 및 Adobe 이외의 애플리케이션에서 통합하여 Experience 관리자의 자산으로 작업을 수행할 수 있습니다.
                 </li>
-                <li>
-                또한 자산 베리에이션을 생성할 수 있는 Adobe Express 권한도 제공합니다.
-                </li>
+                <li>전문적으로 디자인된 템플릿, 브랜드 키트, Adobe Stock 자산 등을 활용하여 기본 제공 Adobe Express와 Firefly로 자산을 만들고 편집할 수 있습니다.</li>
+                <li>AEM Assets Content Hub 포털을 사용하여 조직의 승인된 자산에 액세스하고 이를 활용할 수 있습니다.</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ Forms Communication Solution 라이선스가 부여되면 AEM 조직 수준 제�
         <td>AEM Assets 파워 유저</td>
 <td>
         <ul>
-                <li>DAM에 대해 읽기 전용으로 액세스하기 위한 것입니다. 이 제품 프로필의 사용자는 AEM에서 자동으로 생성되는 “참여자” AEM 그룹의 멤버가 됩니다.
+                <li>자산 관리, 메타데이터, 디지털 자산에 대한 전반적인 거버넌스 및 자동화를 포함한 모든 AEM Assets 기능에 액세스할 수 있습니다.</li>
+                <li>조직에서 사용할 수 있는 자산을 다른 Adobe 제품 및 Adobe 이외의 애플리케이션에서 통합하여 Experience 관리자의 자산으로 작업을 수행할 수 있습니다.
                 </li>
-                <li>
-                또한 자산 베리에이션을 생성할 수 있는 Adobe Express 권한도 제공합니다.
-                </li>
+                <li>전문적으로 디자인된 템플릿, 브랜드 키트, Adobe Stock 자산 등을 활용하여 기본 제공 Adobe Express와 Firefly로 자산을 만들고 편집할 수 있습니다.</li>
+                <li>AEM Assets Content Hub 포털을 사용하여 조직의 승인된 자산에 액세스하고 이를 활용할 수 있습니다.</li>
           <ul>
 </td>
     </tr>
