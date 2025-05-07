@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -44,17 +44,25 @@ MSM 및 론치는 상속을 사용하여 콘텐츠를 재사용하는 데 도움
 
 작성자는 로컬 편집을 수행하기 전에 버튼을 클릭하거나 다른 단계를 수행하여 상속을 비활성화할 필요가 없습니다. 변경이 이루어지면 즉시 상속이 묵시적으로 취소됩니다. 이 워크플로는 [페이지 편집기](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)와 대조적입니다.
 
+상속은 다음을 통해 전체 페이지에 대해 되돌릴 수 있습니다.
+
+* [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [시작 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* [페이지 속성 창](/help/sites-cloud/authoring/sites-console/page-properties.md)의 **라이브 카피** 탭에서 **재설정** 단추를 사용합니다.
+
 범용 편집기는 상속의 기본 메커니즘에 영향을 주지 않습니다. 상속이 작동하는 방식에 대한 자세한 내용은 다음 설명서를 참조하십시오.
 
 * [다중 사이트 관리(MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [론치](/help/sites-cloud/authoring/launches/overview.md)
 
+### AEM MSM(다중 사이트 관리) 확장 {#msm-extension}
+
+설치된 경우 **AEM MSM(다중 사이트 관리) 확장**&#x200B;에 선택한 구성 요소의 현재 상속 상태가 표시되고 구성 요소 수준에서 상속을 중단하거나 복원할 수 있습니다.
+
+자세한 내용은 [작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
 ## 제한 사항 {#limitations}
 
-* 작성자는 단일 구성 요소에 대한 상속을 되돌릴 수 없습니다.
-   * 상속은 를 통해서만 전체 페이지에 대해 되돌릴 수 있습니다.
-      * [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [시작 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * [페이지 속성 창](/help/sites-cloud/authoring/sites-console/page-properties.md)의 **라이브 카피** 탭에서 **재설정** 단추를 사용합니다.
-* 작성자는 상속이 비활성화된 구성 요소와 아직 상속이 유지된 구성 요소를 확인할 수 있는 시각적 피드백이 없습니다.
+* 단일 구성 요소의 상속을 되돌리려면 **AEM MSM(다중 사이트 관리) 확장**&#x200B;을 사용하도록 설정해야 합니다.
+* 상속이 비활성화된 구성 요소와 유지된 구성 요소를 확인하기 위한 시각적 피드백을 보려면 **AEM MSM(다중 사이트 관리) 확장**&#x200B;을(를) 활성화해야 합니다.
 * 이러한 기능은 현재 페이지의 구성 요소로 제한되어 있으며 MSM 및 Launch 기능도 있지만 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)에는 아직 적용되지 않습니다.

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 30%
+source-wordcount: '2133'
+ht-degree: 20%
 
 ---
 
@@ -192,6 +192,122 @@ ht-degree: 30%
 
 미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 나가십시오.
 
+## 구성 요소 상속 편집 {#inheritance}
+
+상속은 콘텐츠를 연결할 수 있는 메커니즘으로, 콘텐츠를 변경하면 자동으로 다른 콘텐츠가 변경됩니다.
+
+범용 편집기를 사용하면 콘텐츠를 업데이트하여 콘텐츠의 상속을 취소할 수 있습니다. 편집기는 해당 페이지에서 작성자가 변경한 모든 사항에 대한 상속을 자동으로 비활성화하여 블루프린트에서 업데이트가 동기화될 때 수정된 콘텐츠가 유지되도록 합니다.
+
+프로그램에 대해 **AEM MSM(Multi-Site-Management) 확장**&#x200B;을 사용할 수 있는 경우 유니버설 편집기 내에서 개별 구성 요소의 상속 상태를 보고 변경할 수 있는 [추가 도구 모음 옵션](#inheritance-extension)이 있습니다.
+
+유니버설 편집기를 사용하여 상속이 작동하는 방법에 대한 자세한 내용은 [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)을 참조하십시오.
+
+
+## 옵션 도구 모음 옵션{#toolbar-options}
+
+페이지와 컨텐츠를 보다 세밀하게 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장 프로그램은 관리자가 프로그램에서 사용하도록 설정해야 합니다](/help/implementing/universal-editor/extending.md) [유니버설 편집기 도구 모음에서 콘텐츠 작성자로 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### 상속 {#inheritance-extension}
+
+**AEM MSM(다중 사이트 관리) 확장**&#x200B;은(는) 선택한 구성 요소의 현재 상속 상태를 표시하고 [상속을 중단하거나 복원할 수 있도록 허용합니다.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+범용 편집기 도구 모음의 **상속 설치** 아이콘은 선택한 구성 요소에 대해 상속이 여전히 활성 상태임을 보여 줍니다.
+
+![설치된 상속 아이콘](assets/inheritance-installed-icon.png)
+
+선택한 구성 요소의 상속을 중단하려면 아이콘을 탭하거나 클릭합니다. 구성 요소를 편집하면 상속이 자동으로 중단됩니다.
+
+**상속 중단** 아이콘은 선택한 구성 요소에 대한 상속이 중단되었음을 보여 줍니다.
+
+![상속 중단 아이콘](assets/inheritance-broken-icon.png)
+
+아이콘을 탭하거나 클릭하여 선택한 구성 요소의 상속을 복원합니다. 상속된 콘텐츠를 표시하려면 페이지를 다시 로드하여 콘텐츠를 새로 고쳐야 합니다.
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**상속 설치** 및 **상속 중단** 아이콘은 구성 요소를 선택하고 페이지가 블루프린트를 기반으로 하는 경우에만 표시됩니다.
+
+>[!NOTE]
+>
+>**AEM MSM(다중 사이트 관리) 확장**&#x200B;은(는) 콘텐츠 조각이 아닌 페이지에만 작동합니다.
+
+### 페이지 속성 액세스 {#page-properties}
+
+**AEM 페이지 속성 확장**&#x200B;을 사용하면 현재 편집 중인 페이지의 [페이지 속성 창](/help/sites-cloud/authoring/sites-console/page-properties.md)에 빠르게 액세스할 수 있습니다.
+
+![페이지 속성 아이콘](assets/page-properties-icon.png)
+
+범용 편집기 도구 모음에서 **페이지 속성** 아이콘을 탭하거나 클릭하여 페이지의 페이지 속성을 새 브라우저 탭에서 엽니다.
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM 페이지 속성 확장**&#x200B;은(는) 콘텐츠 조각이 아닌 페이지에만 작동합니다.
+
+### 사이트 콘솔에 액세스 {#sites-console}
+
+**AEM 사이트 관리자 확장**&#x200B;을 사용하면 AEM의 [사이트 콘솔 내에서 편집 중인 페이지에 빠르게 액세스할 수 있으며,](/help/sites-cloud/authoring/sites-console/introduction.md)을(를) 통해 사이트 트리를 탐색하거나 콘솔에서 페이지 수준 작업을 수행할 수 있습니다.
+
+![사이트 관리자 아이콘에서 열기](assets/open-in-site-admin-icon.png)
+
+아이콘을 탭하거나 클릭하여 새 브라우저 탭에서 사이트 콘솔을 열고 현재 편집기에 있는 페이지로 이동합니다.
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 페이지 잠금 및 잠금 해제 {#locking-pages}
+
+**AEM 페이지 잠금 확장**&#x200B;은(는) 편집기에 있는 페이지의 현재 잠금 상태를 표시하고 [페이지 잠금 또는 잠금 해제할 수 있도록 합니다.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+유니버설 편집기 도구 모음의 **잠금 해제됨** 아이콘은 현재 편집기에 있는 페이지가 잠겨 있지 않음을 나타냅니다.
+
+![잠금 해제된 아이콘](assets/unlocked-icon.png)
+
+아이콘을 탭하거나 클릭하여 페이지를 잠급니다.
+
+유니버설 편집기 도구 모음의 **잠김** 아이콘은 현재 편집기에 있는 페이지가 잠겨 있음을 보여 줍니다. 페이지를 잠근 사용자를 나타내는 도구 설명을 보려면 마우스를 아이콘 위에 놓습니다.
+
+![잠긴 아이콘](assets/locked-icon.png)
+
+페이지를 잠근 사용자인 경우 아이콘을 탭하거나 클릭하여 페이지 잠금을 해제합니다.
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM 페이지 잠금 확장**&#x200B;은(는) 콘텐츠 조각이 아닌 페이지에만 작동합니다.
+
+### 워크플로 {#workflows}
+
+**AEM 워크플로 확장**&#x200B;을 사용하면 현재 편집기에 있는 페이지에서 [워크플로를 시작](/help/sites-cloud/authoring/workflows/overview.md)할 수 있습니다.
+
+![워크플로 아이콘](assets/workflows-icon.png)
+
+범용 편집기 도구 모음에서 **워크플로** 아이콘을 탭하거나 클릭하여 **워크플로 시작** 모달을 엽니다. 창에는 워크플로우를 적용할 수 있는 가능한 컨텐트가 나열됩니다.
+
+![워크플로 모달 시작](assets/start-a-workflow.png)
+
+1. **워크플로 모델** 드롭다운에서 적용할 워크플로를 선택합니다.
+1. **이름** 필드에 워크플로에 대한 설명을 입력하십시오.
+1. **워크플로에 포함할 콘텐츠** 목록에서 확인란을 사용하여 워크플로에 포함할 콘텐츠를 정의합니다.
+1. **워크플로 시작**&#x200B;을 탭하거나 클릭하여 워크플로를 시작하거나 **닫기**&#x200B;를 탭하거나 클릭하여 중단합니다.
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 개발자 로그인 {#developer-login}
+
+**AEM Universal Editor Dev Login Extension**&#x200B;은 로컬에서 개발 중인 개발자에게 유용하며, 이를 통해 테스트 목적으로 로컬 AEM SDK에 편리하게 인증할 수 있습니다.
+
+![개발자 로그인 아이콘](assets/developer-login-icon.png)
+
+범용 편집기 도구 모음에서 **개발자 로그온** 아이콘을 탭하거나 클릭하여 로컬 로그인 자격 증명을 제공하여 로컬 AEM SDK에 로그인합니다.
+
+![개발자 로그인 양식](assets/developer-login.png)
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## 추가 리소스 {#additional-resources}
 
 범용 편집기로 콘텐츠를 게시하는 방법에 대해 알아보려면 이 문서 를 참조하십시오.
@@ -205,11 +321,3 @@ ht-degree: 30%
 * [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [Universal Editor 인증](/help/implementing/universal-editor/authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
-
-## 구성 요소 상속 편집 {#inheritance}
-
-상속은 콘텐츠를 연결할 수 있는 메커니즘으로, 콘텐츠를 변경하면 자동으로 다른 콘텐츠가 변경됩니다.
-
-범용 편집기를 사용하면 콘텐츠를 업데이트하여 콘텐츠의 상속을 취소할 수 있습니다. 편집기는 해당 페이지에서 작성자가 변경한 모든 사항에 대한 상속을 자동으로 비활성화하여 블루프린트에서 업데이트가 동기화될 때 수정된 콘텐츠가 유지되도록 합니다.
-
-유니버설 편집기를 사용하여 상속이 작동하는 방법에 대한 자세한 내용은 [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)을 참조하십시오.
