@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 
 
 >[!IMPORTANT]
 >
->라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
 >
 >프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards)을 참조하십시오.
 
@@ -56,7 +56,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## 자주 묻는 질문 {#faq}
 
-+++**콘텐츠 요청이란?**{#what-is-a-content-request}
+### 콘텐츠 요청이란?{#what-is-a-content-request}
 
 콘텐츠 요청은 AEM Sites 또는 콘텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템으로 전달되는 모든 요청입니다. 페이지 조회수를 위해 HTML 형식의 콘텐츠나 데이터를 검색합니다. 또는 API 호출을 위해 JSON 형식으로 표시.
 
@@ -109,29 +109,25 @@ The right side of the window presents an area chart showing the usage broken dow
 콘텐츠 요청은 제품 및 서비스 제공의 유일한 목적으로 Adobe에 의해 또는 이를 대신하여 시작된 요청 또는 활동을 제외합니다. 일반 검색 엔진 및 소셜 미디어 서비스와 관련된 봇, 크롤러 및 스파이더의 Adobe 식별 사용자 에이전트 트래픽도 제외됩니다.
 
 [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)도 참조하세요.
-+++
 
-+++**Adobe Experience Manager은 콘텐츠 요청을 어떻게 측정합니까?**{#how-are-content-requests-measured}
+### Adobe Experience Manager는 콘텐츠 요청을 어떻게 측정합니까?{#how-are-content-requests-measured}
 
 콘텐츠 요청은 AEM as a Cloud Service의 에지 서버에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 포함되지 않습니다. AEM as a Cloud Service에 내장된 CDN은 유효한 HTML 및 JSON 요청을 추적합니다.
 
 또한 AEM에는 검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
 
 [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)도 참조하세요.
-+++
 
-+++**Analytics 보고서에 AEM 콘텐츠 요청과 다른 결과가 표시되는 이유는 무엇입니까?**{#why-are-reports-different}
+### Analytics 보고서에 AEM 콘텐츠 요청과 다른 결과가 표시되는 이유는 무엇입니까?{#why-are-reports-different}
 
 콘텐츠 요청은 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 자세한 내용은 [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)를 참조하십시오.
-+++
 
-+++**콘텐츠 요청 볼륨에 대해 자세히 알아보려면 어떻게 해야 합니까?**{#current-request-volumes}
+### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 해야 합니까?{#current-request-volumes}
 
 라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 통찰력을 원하는 경우 Adobe 팀이 콘텐츠 요청의 상위 볼륨 드라이버를 보여주는 보고서를 제공할 수 있습니다. 최상위 사용 보고서를 요청하려면 Adobe 팀 또는 Adobe 고객 지원 센터에 문의하십시오.
-+++
 
-+++**내 CDN을 사용하는 경우 어떻게 합니까?**{#using-own-cdn}
+### 자체 CDN을 사용하는 경우 어떻게 합니까?{#using-own-cdn}
 
 라이선스 대시보드에는 Cloud Service CDN에서 추적한 데이터만 표시됩니다. 자체 CDN(BYOCDN)을 가져오기로 선택한 경우 계약에 명시된 대로 연간 기준으로 컨텐츠 요청 볼륨을 Adobe에 다시 보고합니다.
-+++
+
 
