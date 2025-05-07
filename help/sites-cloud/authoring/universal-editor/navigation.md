@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 28%
+source-wordcount: '1729'
+ht-degree: 27%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -219,9 +219,9 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 도구 모음에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
-* 개별 확장의 작동 방식에 대한 자세한 내용은 [범용 편집기 작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
+* 개별 확장의 작동 방식에 대한 자세한 내용은 [범용 편집기 작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
 * 확장 가능성에 대한 자세한 내용은 [범용 편집기 확장](/help/implementing/universal-editor/extending.md)을 참조하십시오.
-* 개별 확장을 설치하는 방법에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.
+* 개별 확장을 설치하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### 편집기 {#editor}
 
@@ -236,6 +236,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 속성 패널은 항상 편집기의 오른쪽에 표시됩니다. 해당 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층 구조에서 선택한 구성 요소에 대한 세부 정보를 표시할 수 있습니다.
 
 ![속성 패널](assets/properties-rail.png)
+
+프로그램의 구성에 따라 관리자가 확장으로 활성화한 [추가 기능도 제공할 수 있습니다.](#additional-properties-panel-buttons)
 
 #### 속성 모드 {#properties-mode}
 
@@ -315,12 +317,13 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >단축키 `Shift+Backspace`를 사용하여 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
-## 추가 기능 {#additional-features}
+#### 추가 단추 {#additional-properties-panel-buttons}
 
-유니버설 편집기는 사용자 정의 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널이나 도구 모음에 추가 단추나 옵션이 표시되면 범용 편집기가 확장되었습니다.
+유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
-* 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장](/help/implementing/universal-editor/customizing.md)을 참조하십시오.
-* 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)를 참조하세요.
+* 개별 확장의 작동 방식에 대한 자세한 내용은 [범용 편집기 작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* 확장 가능성에 대한 자세한 내용은 [범용 편집기 확장](/help/implementing/universal-editor/extending.md)을 참조하십시오.
+* 개별 확장을 설치하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## 다음 단계 {#next-steps}
 

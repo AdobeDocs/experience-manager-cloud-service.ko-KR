@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 20%
+source-wordcount: '2222'
+ht-degree: 19%
 
 ---
 
@@ -178,14 +178,6 @@ ht-degree: 20%
 >
 >대상 컨테이너 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)에서 선택한 구성 요소를 허용하는 경우에만 컨테이너 간에 구성 요소를 이동할 수 있습니다.
 
-### 변형 생성과 함께 GenAI를 사용하여 변형 생성 {#generate-variations-ai}
-
-생성 변형 을 사용하여 생성 AI를 활용하여 콘텐츠 생성을 가속화합니다.
-
-범용 편집기를 열어 변형 생성에 사용할 진입점을 찾습니다.
-
-자세한 내용은 [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)을 참조하세요.
-
 ## 콘텐츠 미리보기 {#previewing-content}
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
@@ -202,8 +194,7 @@ ht-degree: 20%
 
 유니버설 편집기를 사용하여 상속이 작동하는 방법에 대한 자세한 내용은 [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)을 참조하십시오.
 
-
-## 옵션 도구 모음 옵션{#toolbar-options}
+## 옵션 도구 모음 기능 {#toolbar-options}
 
 페이지와 컨텐츠를 보다 세밀하게 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장 프로그램은 관리자가 프로그램에서 사용하도록 설정해야 합니다](/help/implementing/universal-editor/extending.md) [유니버설 편집기 도구 모음에서 콘텐츠 작성자로 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -305,6 +296,20 @@ ht-degree: 20%
 범용 편집기 도구 모음에서 **개발자 로그온** 아이콘을 탭하거나 클릭하여 로컬 로그인 자격 증명을 제공하여 로컬 AEM SDK에 로그인합니다.
 
 ![개발자 로그인 양식](assets/developer-login.png)
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## 옵션 속성 패널 기능 {#properties-panel-options}
+
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### 변형 생성 {#generate-variations}
+
+**변형 생성** 확장을 사용하면 생성 AI(인공 지능)를 사용하여 속성 패널에서 직접 콘텐츠에 대한 변형을 만들 수 있습니다.
+
+![변형 생성 아이콘](assets/generate-variations-icon.png)
+
+권장 사항을 받고 변형을 만들려면 범용 편집기 속성 패널에서 **변형 생성** 아이콘을 탭하거나 클릭합니다. 변형 생성이 작동하는 방법에 대한 자세한 내용은 [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md) 문서를 참조하십시오.
 
 이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
 

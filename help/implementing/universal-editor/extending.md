@@ -4,9 +4,9 @@ description: 콘텐츠 작성자의 요구 사항을 지원하기 위해 범용 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 * **[AEM 페이지 잠금 확장 기능](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: 유니버설 편집기에서 페이지 잠금 상태를 보고 변경합니다
 * **[AEM 워크플로 확장](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: 페이지에서 워크플로를 시작하고 유니버설 편집기에서 페이지 콘텐츠를 가져옵니다.
 * **[AEM 유니버설 편집기 개발 로그인 확장](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: 로컬로 개발할 때 로컬 AEM SDK에 쉽게 인증할 수 있습니다
+* **[변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)**: 생성 AI(인공 지능)를 사용하여 속성 패널에서 직접 콘텐츠에 대한 변형을 만듭니다.
 * **[범용 편집기에 대한 AEM 제품 선택기](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: 편집기에서 제품 데이터를 선택하거나 제거하여 Adobe Commerce 데이터를 통합합니다.
 * **[유니버설 편집기 콘텐츠 초안](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: 여러 콘텐츠 초안을 만들고 편집하고 관리합니다.
 * **[구성 가능한 자산 선택기](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: 편집된 페이지에서 사용하는 저장소가 아닌 저장소에서 자산 선택을 사용하도록 설정합니다.
@@ -48,7 +49,7 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 
 >[!TIP]
 >
->예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
+>예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
 
 [AEM Sites에서 Extension Manager 사용](https://developer.adobe.com/uix/docs/extension-manager/)을 통해 인스턴스별로 확장을 활성화하거나 비활성화하고, 범용 편집기용 확장을 포함하여 Adobe의 자사 확장에 액세스할 수 있습니다.
 
