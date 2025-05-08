@@ -4,7 +4,7 @@ description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -55,6 +55,8 @@ ht-degree: 0%
 * [범용 편집기용 SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
 
 해당 문서를 읽고 나면 이 페이지로 돌아가서 WYSIWYG 작성 사용 사례와 범용 편집기가 일반적으로 작동하는 방식에 대해 알아볼 수 있습니다.
+
+{{ue-headless-auth}}
 
 ## 유니버설 편집기 작동 방식 {#how-ue-works}
 

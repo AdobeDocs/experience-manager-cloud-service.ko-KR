@@ -4,10 +4,10 @@ description: Universal Editor가 인증을 위해 Adobe의 Identity Management S
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 93%
 
 ---
 
@@ -31,3 +31,7 @@ Universal Editor를 사용하려면 사용자가 IMS에 대해 인증하는 통�
 사용자가 CRUD 작업을 수행할 때마다 HTTP 헤더의 IMS 전달자 토큰과 함께 Universal Editor 서비스로 호출이 전송됩니다. 그런 다음 Universal Editor 서비스는 전달자 토큰을 사용해 AEM 백엔드 시스템에 대한 요청을 인증하여 사용자 이름으로 작업을 실행합니다.
 
 ![표준 인증 흐름](assets/standard-flow.png)
+
+이 다이어그램과 문서에서는 범용 편집기 자체의 내부 인증을 설명합니다.
+
+{{ue-headless-auth}}

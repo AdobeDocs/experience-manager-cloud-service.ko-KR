@@ -4,7 +4,7 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -178,6 +178,8 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 이제 앱이 Universal Editor를 사용하도록 구성되었습니다.
 
 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아보려면 [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)을 참조하십시오.
+
+{{ue-headless-auth}}
 
 ## 추가 리소스 {#additional-resources}
 

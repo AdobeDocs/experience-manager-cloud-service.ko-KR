@@ -4,7 +4,7 @@ description: 콘텐츠 제작 시간을 단축할 수 있는 범용 편집기의
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -37,7 +37,7 @@ SecurBank 앱의 설치는 앞으로 쭉 진행되지만, AEM as a Cloud Service
 
 SecurBank를 설치할 수 있는 새로운 Cloud Manager 프로그램이 필요합니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. SecurBank 앱에 대한 새 샌드박스 프로그램을 만듭니다.
 
@@ -66,7 +66,7 @@ SecurBank를 설치할 수 있는 새로운 Cloud Manager 프로그램이 필요
 
 ### 파이프라인을 실행하여 SecurBank AEM 프로젝트를 배포합니다. {#run-pipeline}
 
-샌드박스 저장소에 커밋된 SecurBank용 AEM 프로젝트를 사용하여 파이프라인으로 배포할 수 있습니다.
+샌드박스 저장소에 커밋된 SecurBank용 AEM 프로젝트를 파이프라인으로 배포할 수 있습니다.
 
 1. Cloud Manager에서 샌드박스 프로그램의 **개요** 탭으로 돌아가서 전체 스택 비프로덕션 파이프라인을 실행합니다.
 
@@ -137,3 +137,6 @@ Cloud Manager과 로컬에서 모두 설정하면 SecurBank 웹 앱을 실행할
 콘텐츠가 아직 나타나지 않으면 실행한 **Dev에 배포** 파이프라인이 성공적으로 완료되었는지 확인하십시오.
 
 ![브라우저에서 SecurBank 앱](assets/securbank.png)
+
+{{ue-headless-auth}}
+

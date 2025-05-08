@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # 스니펫 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 100%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
@@ -259,3 +259,9 @@ ht-degree: 100%
 * [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
 * [양식 제출 서비스 사용](/help/forms/forms-submission-service.md)
+
+## 범용 편집기 Headless 인증 {#ue-headless-auth}
+
+>[!NOTE]
+>
+>Headless 사용 사례에서 유니버설 편집기를 사용하는 경우 Headless 앱에서 자체 인증을 관리해야 합니다.
