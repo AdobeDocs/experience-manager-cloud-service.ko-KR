@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->[컨텐츠 작성에 범용 편집기](/help/implementing/universal-editor/introduction.md)를 사용하고 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 사용하려면 [범용 편집기 서비스의 IP 주소가 있는 허용 목록을 추가하고 적용해야 합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>[콘텐츠 작성용 범용 편집기](/help/implementing/universal-editor/introduction.md)를 사용하고 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 사용하려는 경우에는 [범용 편집기 서비스의 IP 주소로 허용 목록을 추가하고 적용해야 합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
