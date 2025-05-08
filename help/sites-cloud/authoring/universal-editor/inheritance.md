@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,9 @@ MSM 및 론치는 상속을 사용하여 콘텐츠를 재사용하는 데 도움
 
 설치된 경우 **AEM MSM(다중 사이트 관리) 확장**&#x200B;에 선택한 구성 요소의 현재 상속 상태가 표시되고 구성 요소 수준에서 상속을 중단하거나 복원할 수 있습니다.
 
-자세한 내용은 [작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [작성 설명서를 참조하십시오.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 제한 사항 {#limitations}
 

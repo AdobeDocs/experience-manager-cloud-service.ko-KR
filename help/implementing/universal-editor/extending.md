@@ -4,9 +4,9 @@ description: 콘텐츠 작성자의 요구 사항을 지원하기 위해 범용 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 확장 {#extensions}
 
-Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 사용하여 범용 편집기의 UI를 확장할 수 있습니다. Adobe은 프로젝트에 사용할 수 있는 준비된 여러 확장을 제공합니다.
+Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 사용하여 범용 편집기의 UI를 확장할 수 있습니다. Adobe에서는 프로젝트에 사용할 수 있는 [Extension Manager](https://experience.adobe.com/aem/extension-manager)을 통해 사용할 수 있는 다양한 준비된 확장을 제공합니다.
 
 * **[AEM MSM(다중 사이트 관리) 확장](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: 구성 요소 수준에서 상속을 중단하거나 복원합니다.
 * **[AEM 페이지 속성 확장](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: 유니버설 편집기에서 페이지의 페이지 속성 창에 액세스합니다
@@ -37,6 +37,8 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 * **[Adobe Target으로 콘텐츠 조각 내보내기](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Target 활동의 오퍼로 사용할 수 있도록 Adobe Experience Manager as a Cloud Service에서 만든 콘텐츠 조각을 Adobe Target으로 내보내 규모에 맞게 경험을 테스트하고 개인화합니다.
 * **[콘텐츠 조각 워크플로](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: 선택한 콘텐츠 조각에 대한 AEM 워크플로를 시작합니다.
 
+이러한 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## UI 확장 {#extending-ui}
 
 범용 편집기의 UI 확장은 Adobe App Builder으로 빌드된 JavaScript 애플리케이션입니다. 이와 동일한 도구를 사용하여 헤더 메뉴 및 속성 패널에 고유한 버튼과 작업을 추가할 수 있을 뿐만 아니라 범용 편집기에 대한 고유한 이벤트를 만들 수도 있습니다.
@@ -49,7 +51,7 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 
 >[!TIP]
 >
->예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
+>예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
 
 [AEM Sites에서 Extension Manager 사용](https://developer.adobe.com/uix/docs/extension-manager/)을 통해 인스턴스별로 확장을 활성화하거나 비활성화하고, 범용 편집기용 확장을 포함하여 Adobe의 자사 확장에 액세스할 수 있습니다.
 

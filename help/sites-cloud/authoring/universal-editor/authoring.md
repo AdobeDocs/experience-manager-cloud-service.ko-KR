@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 19%
@@ -214,7 +214,7 @@ ht-degree: 19%
 
 아이콘을 탭하거나 클릭하여 선택한 구성 요소의 상속을 복원합니다. 상속된 콘텐츠를 표시하려면 페이지를 다시 로드하여 콘텐츠를 새로 고쳐야 합니다.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ ht-degree: 19%
 
 범용 편집기 도구 모음에서 **페이지 속성** 아이콘을 탭하거나 클릭하여 페이지의 페이지 속성을 새 브라우저 탭에서 엽니다.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ ht-degree: 19%
 
 아이콘을 탭하거나 클릭하여 새 브라우저 탭에서 사이트 콘솔을 열고 현재 편집기에 있는 페이지로 이동합니다.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 페이지 잠금 및 잠금 해제 {#locking-pages}
 
@@ -264,7 +264,7 @@ ht-degree: 19%
 
 페이지를 잠근 사용자인 경우 아이콘을 탭하거나 클릭하여 페이지 잠금을 해제합니다.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ ht-degree: 19%
 1. **워크플로에 포함할 콘텐츠** 목록에서 확인란을 사용하여 워크플로에 포함할 콘텐츠를 정의합니다.
 1. **워크플로 시작**&#x200B;을 탭하거나 클릭하여 워크플로를 시작하거나 **닫기**&#x200B;를 탭하거나 클릭하여 중단합니다.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 개발자 로그인 {#developer-login}
 
@@ -297,11 +297,11 @@ ht-degree: 19%
 
 ![개발자 로그인 양식](assets/developer-login.png)
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 변형 생성 {#generate-variations}
 
@@ -311,7 +311,7 @@ ht-degree: 19%
 
 권장 사항을 받고 변형을 만들려면 범용 편집기 속성 패널에서 **변형 생성** 아이콘을 탭하거나 클릭합니다. 변형 생성이 작동하는 방법에 대한 자세한 내용은 [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md) 문서를 참조하십시오.
 
-이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/)
+이 확장을 사용하는 방법에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 추가 리소스 {#additional-resources}
 
