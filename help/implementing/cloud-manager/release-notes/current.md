@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 일자는 2025년 4�
 
 Cloud Manager의 얼리 어답터 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
-현재 다음 조기 채택 기회를 사용할 수 있습니다.
+현재 사용 가능한 얼리 어답터 기회는 다음과 같습니다.
 
 ### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
 
