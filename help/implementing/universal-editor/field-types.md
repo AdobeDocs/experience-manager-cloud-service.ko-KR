@@ -4,7 +4,7 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
+source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 11%
@@ -849,6 +849,7 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
+      "valueFormat": "regexp",
       "description": "This is a text input with validation.",
       "required": true,
       "validation": {
