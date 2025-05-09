@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
+source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 3%
 콘텐츠 요청에는 AEM Sites에 전송된 요청이 포함됩니다. 이러한 요청은 Edge Delivery Services 또는 CDN(Content Delivery Network)과 같은 고객 제공 캐싱 시스템을 통해 라우팅될 수 있습니다. 이러한 요청은 구조화된 데이터를 HTML 또는 JSON 형식으로 제공하며 Headless 방식으로 API를 통해 페이지 보기(예: 페이지 및 경험 조각) 또는 JSON 반환을 지원합니다.
 
 시스템은 사용자가 HTML 또는 JSON을 사용하여 페이지를 볼 때 콘텐츠 요청을 계산합니다. 첫 번째 캐싱 시스템이 요청을 수신하는 지점에서 요청을 측정합니다. 특정 HTTP 요청은 콘텐츠 요청 계산을 위해 포함되거나 제외됩니다. HTTP [포함된 콘텐츠 요청](#included-content-requests) 및 [제외된 콘텐츠 요청](#excluded-content-request)의 전체 목록을 확인하십시오.
+
+>[!NOTE]
+>
+>콘텐츠 요청 보기에 표시된 데이터는 24시간마다 새로 고쳐집니다.
 
 ## Cloud Service 콘텐츠 요청 정보 {#understanding-cloud-service-content-requests}
 

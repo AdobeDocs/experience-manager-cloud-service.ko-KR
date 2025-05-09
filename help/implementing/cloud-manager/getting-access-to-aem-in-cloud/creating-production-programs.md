@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ ht-degree: 11%
 
    * 사용 허가된 여러 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심이 있는 프로그램을 선택합니다. 나중에 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 추가 솔루션을 활성화할 수 있습니다. 프로그램 설정 권장 사항에 대한 자세한 내용은 [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
    * 프로그램 제작에는 하나 이상의 솔루션이 필요합니다.
-   * 디지털 환경을 최적화하는 전체 관리 CDN 솔루션으로 **Edge Deliver Services**&#x200B;를 선택하십시오. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](#edge-overview)를 참조하세요.
+   * 디지털 환경을 최적화하는 전체 관리 CDN 솔루션에 대해 **Edge Delivery Services**&#x200B;을(를) 선택하십시오. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)를 참조하세요.
    * **[향상된 보안 사용](#security)** 옵션을 선택한 경우 HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있습니다.
 
      ![솔루션 선택](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Edge Delivery Services의 경우 프로그램에서 99.99% SLA 라이선스를 �
 
 1. **프로그램 개요**&#x200B;를 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
 
-1. 개요 페이지의 기본 콜 투 액션 카드는 환경, 비프로덕션 파이프라인 및 마지막으로 프로덕션 파이프라인을 만드는 과정을 안내합니다.
+1. 개요 페이지의 기본 call-to-action 카드는 환경, 비프로덕션 파이프라인 및 마지막으로 프로덕션 파이프라인을 만드는 과정을 안내합니다.
 
    ![프로그램 개요](assets/set-up-prod5.png)
 

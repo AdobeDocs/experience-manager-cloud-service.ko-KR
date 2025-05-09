@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -43,7 +43,7 @@ ht-degree: 15%
 1. **솔루션 및 추가 기능** 목록 상자에서 프로그램에 포함할 하나 이상의 솔루션을 선택합니다.
 
    * 솔루션 이름 왼쪽에 있는 V자형 화살표를 클릭하여 선택한 솔루션에 포함할 사용 가능한 선택적 추가 기능을 표시합니다.
-   * 샌드박스 프로그램을 만들 때 **Sites**, **Assets** 및 **Edge Deliver Services** 솔루션이 항상 기본적으로 선택됩니다. 이러한 옵션은 선택 취소할 수 없습니다.
+   * 샌드박스 프로그램을 만들 때 **Sites**, **Assets** 및 **Edge Delivery Services** 솔루션이 항상 기본적으로 선택됩니다. 이러한 옵션은 선택 취소할 수 없습니다.
 
    ![샌드박스용 솔루션 및 추가 기능 선택](assets/sandbox-solutions-add-ons.png)
 
@@ -71,7 +71,7 @@ ht-degree: 15%
 
    ![AEM 링크 액세스](assets/create-program5.png)
 
-1. 개발에 대한 비프로덕션 파이프라인 배포가 완료되면 콜 투 액션 의 마법사가 AEM 개발 환경에 액세스하거나 개발 환경에 코드를 배포하도록 안내합니다.
+1. 개발에 대한 비프로덕션 파이프라인 배포가 완료되면 call-to-action의 마법사가 AEM 개발 환경에 액세스하거나 개발 환경에 코드를 배포하도록 안내합니다.
 
    ![샌드박스 배포](assets/create-program-setup-deploy.png)
 
