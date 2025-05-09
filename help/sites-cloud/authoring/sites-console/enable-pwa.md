@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 92%
+source-wordcount: '1896'
+ht-degree: 93%
 
 ---
 
@@ -27,11 +27,7 @@ ht-degree: 92%
 >
 >이 기능을 사용하기 전에 Adobe는 개발 팀과 논의하여 이를 프로젝트에 사용할 수 있는 최적의 방법을 정의하는 것을 권장합니다.
 
->[!IMPORTANT]
->
->AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
->
->이 기능을 사용하는 기존 프로젝트는 계속 지원되지만 새 프로젝트는 이 기능을 사용하지 않아야 합니다.
+{{pwa-deprecation}}
 
 ## 소개 {#introduction}
 
@@ -63,7 +59,7 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 >[!NOTE]
 >
->Adobe에서는 사용자 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
+>Adobe에서는 사용자 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -226,7 +222,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 AEM 핵심 구성 요소의 이미지 구성 요소는 프론트엔드에서 가져올 최적의 렌디션을 결정합니다. 이 메커니즘에는 해당 리소스의 마지막 수정 시간에 해당하는 타임스탬프도 포함됩니다. 이 메커니즘은 PWA 사전 캐싱 구성을 더욱 복잡하게 만듭니다.
 
-사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 폭과 같은 매개변수로 구성되어 있습니다. 이들 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
+사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 폭과 같은 매개변수로 구성되어 있습니다. 이들 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
 
 신중하게 구성하지 않으면 메모리 및 네트워크 소모가 PWA 성능에 심각한 영향을 줄 수 있습니다. 또한 50개의 이미지를 사전 캐싱하고자 하고 이미지당 폭이 3개라고 가정하면 사이트를 관리하는 사용자는 페이지 속성의 PWA 사전 캐싱 섹션에서 최대 150개의 항목 목록을 관리해야 합니다.
 

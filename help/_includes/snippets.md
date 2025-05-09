@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 # 스니펫 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 98%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
@@ -265,3 +265,11 @@ ht-degree: 98%
 >[!NOTE]
 >
 >Headless 사용 사례에서 유니버설 편집기를 사용하는 경우 Headless 앱에서 자체 인증을 관리해야 합니다.
+
+## PWA 사용 중단 {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>AEM Sites [의 점진적 웹 앱(PWA) 기능은 더 이상 사용되지 않습니다](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>이 기능을 사용하는 기존 프로젝트는 계속 지원되지만 새 프로젝트는 이 기능을 사용하지 않아야 합니다.

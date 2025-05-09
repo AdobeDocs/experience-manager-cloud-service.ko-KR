@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 89%
+source-wordcount: '2454'
+ht-degree: 83%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 * **브랜딩**
 
-  각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+  각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
    * **브랜드 슬러그**
 
@@ -242,7 +242,9 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->[점진적 웹 앱 기능 사용](/help/sites-cloud/authoring/sites-console/enable-pwa.md)을 참조하십시오.
+>자세한 내용은 [점진적 웹 앱 기능 사용](/help/sites-cloud/authoring/sites-console/enable-pwa.md)을 참조하십시오.
+
+{{pwa-deprecation}}
 
 * **설치 가능한 경험 구성**
 
@@ -337,3 +339,35 @@ ht-degree: 89%
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값이면(예: 태그) 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
    * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다.
+
+## 속성 상속 {#inheritance}
+
+페이지가 블루프린트를 기반으로 하거나 다른 페이지에서 콘텐츠를 상속하는 경우 상속이 개별 필드의 **페이지 속성** 창에 반영됩니다.
+
+![상속된 속성](assets/property-inhertiance.png)
+
+상속된 속성은 편집할 수 없습니다. 상속을 중단하려면 특정 필드 옆에 있는 **상속 취소** 아이콘을 탭하거나 클릭합니다.
+
+![상속 취소](assets/cancel-inheritance.png)
+
+**상속 취소** 모달에서 취소를 확인합니다.
+
+![상속 확인 양식 취소](assets/cancel-inheriance-confirmation.png)
+
+필드에 대한 상속이 취소되면 편집할 수 있게 됩니다.
+
+![상속을 취소함](assets/property-inheritance-broken.png)
+
+상속을 복원하려면 필드 옆에 있는 **상속 되돌리기** 아이콘을 탭하거나 클릭합니다.
+
+![상속 되돌리기](assets/revert-inheritance.png)
+
+**상속 되돌리기** 모달에서 되돌리기를 확인합니다.
+
+![상속 확인 양식 되돌리기](assets/revert-inhertiance-confirmation.png)
+
+블루프린트에서 최신 값으로 필드를 업데이트하려면 **상속을 되돌린 후 페이지 동기화**&#x200B;를 선택하십시오. 이렇게 하지 않으면 다음에 LiveCopy를 동기화할 때 값이 업데이트됩니다.
+
+>[!TIP]
+>
+>상속에 대한 자세한 내용은 [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md) 문서를 참조하십시오.
