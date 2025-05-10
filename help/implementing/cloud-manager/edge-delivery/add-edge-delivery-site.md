@@ -27,7 +27,7 @@ ht-degree: 94%
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
-**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**를 클릭합니다.
+**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**&#x200B;를 클릭합니다.
 페이지의 오른쪽 상단 근처에서 **사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery Sites 버튼에서 Edge Delivery Sites 추가](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
