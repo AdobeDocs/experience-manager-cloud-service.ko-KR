@@ -4,8 +4,8 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
-workflow-type: ht
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service의 Cloud Manager를 사용하면 프로젝트에 Edge Del
 
 ## Cloud Manager에서의 Edge Delivery Services 정보 {#edge-in-cloud-manager}
 
-Adobe Experience Manager Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, Cloud Manager에서 Edge Delivery Services를 통해 사이트를 직접 온보딩하고 [안내식 셀프서비스 경험을 사용하여](/help/implementing/cloud-manager/managing-code/private-repositories.md) 라이브로 전환할 수 있습니다.
+Adobe Experience Manager Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, Cloud Manager에서 Edge Delivery Services를 통해 사이트를 직접 온보딩하고 [안내식 셀프서비스 경험을 사용하여](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 라이브로 전환할 수 있습니다.
 
 또한 모든 AEM 속성을 관리하는 동시에 주요 워크플로 간에 일관성을 보장하는 통합 환경에 액세스할 수 있습니다. 이 워크플로에는 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑이 포함됩니다.
 
@@ -83,7 +83,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 
