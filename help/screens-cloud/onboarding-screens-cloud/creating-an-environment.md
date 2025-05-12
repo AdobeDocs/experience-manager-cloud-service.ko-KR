@@ -16,7 +16,7 @@ ht-degree: 5%
 이 섹션에서는 Cloud Manager에서 프로그램의 환경을 만드는 방법을 설명합니다.
 
 >[!NOTE]
->사용자가 환경을 만드는 방법에 대해 알아보려면 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)를 참조하십시오.
+>사용자가 환경을 만드는 방법에 대해 알아보려면 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)를 참조하십시오.
 
 ## 목표 {#objective}
 
