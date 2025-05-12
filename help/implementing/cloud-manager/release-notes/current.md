@@ -1,93 +1,209 @@
 ---
-title: Cloud Manager 2025.4.0 릴리스 정보
-description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.4.0 릴리스에 대해 알아봅니다.
+title: Cloud Manager 2025.5.0 릴리스 정보
+description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 20%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5.0 릴리스 정보 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.4.0 릴리스에 대해 알아봅니다.
-
+AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.5.0 릴리스에 대해 알아봅니다.
 
 또한 [최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)도 살펴보십시오.
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2025.4.0 릴리스 일자는 2025년 4월 10일 목요일입니다.
+AEM as a Cloud Service의 Cloud Manager 2025.5.0 릴리스 일자는 2025년 5월 8일 금요일입니다.
 
-다음 릴리스는 2025년 5월 8일 목요일에 예정되어 있습니다.
+다음 릴리스는 2025년 6월 5일 금요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* **(UI) 배포 가시성 개선**
+### Edge Delivery Services에서 한 번의 클릭으로 컨텐츠 소스를 변경하는 방법
 
-  이제 Cloud Manager의 파이프라인 실행 세부 정보 페이지에 다른 배포가 완료될 때까지 대기하는 배포가 있는 경우 상태 메시지(“*대기 중 - 다른 업데이트 진행 중*”)가 표시됩니다. 이 워크플로를 통해 환경 배포 중에 배포 순서를 더 쉽게 이해할 수 있습니다. <!-- CMGR-66890 -->
+Adobe Experience Manager(AEM) Edge Delivery Services을 사용하면 빠르고 전역적으로 분산된 에지 네트워크를 사용하여 Google 드라이브, SharePoint 또는 AEM 자체와 같은 여러 소스에서 콘텐츠를 전달할 수 있습니다.
 
-  ![세부 정보와 분류를 보여 주는 개발 배포 대화 상자](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+콘텐츠 소스 구성은 다음과 같은 방식으로 Helix 4와 Helix 5에서 다릅니다.
 
-* **(UI) 도메인 유효성 검사 향상**
+| 버전 | 구성 방법 |
+| --- | --- |
+| 헬릭스 4 | YAML 파일(`fstab.yaml`) |
+| 헬릭스 5 | 구성 서비스 API(*아니요`fstab.yaml`*) |
 
-  Cloud Manager는 이제 도메인을 추가할 때 Fastly 계정에 도메인이 이미 설치되어 있는 경우 “*도메인이 이미 Fastly 계정에 설치되어 있습니다. 클라우드 서비스에 추가하기 전에 먼저 Fastly 계정에서 도메인을 제거해 주십시오*”라는 오류를 표시합니다.
+이 문서에서는 두 버전에 대한 포괄적인 구성 단계, 예 및 유효성 검사 지침을 제공합니다.
+
+시작하기 전&#x200B;**일**
+
+Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)을 사용하는 경우 사이트는 단일 리포지토리가 있는 Helix 5입니다. Helix 5 지침에 따라 제공된 Helix 4 YAML 버전을 대체 항목으로 사용합니다.
+
+**Helix 버전 확인**
+
+* Helix 4 - 프로젝트에 `fstab.yaml` 파일이 포함되어 있습니다.
+* Helix 5 - 프로젝트 *이(가) `fstab.yaml`을(를) 사용하지*&#x200B;하며 Edge Delivery Services UI 또는 API를 통해 설정되었습니다.
+
+저장소 메타데이터를 통해 확인하거나 확실하지 않은 경우 관리자에게 문의하십시오.
+
+#### 콘텐츠 소스 구성(Helix 4)
+
+Helix 4에서 콘텐츠 원본은 GitHub 저장소의 루트에 있는 `fstab.yaml`(이)라는 YAML 구성 파일에 정의되어 있습니다.
+
+##### YAML 파일 형식
+
+`fstab.yaml` 파일은 다음 예제와 유사한 탑재 지점(콘텐츠 원본 URL에 매핑된 URL 경로 접두사)을 정의합니다(그림 용도로만 사용).
+
+```yaml
+mountpoints:
+  /: https://drive.google.com/drive/folders/your-folder-id
+```
+
+##### 콘텐츠 소스 변경
+
+단계는 사용하는 소스 시스템에 따라 다릅니다.
+
+* **Google 드라이브**
+
+   1. Google 드라이브 폴더를 만듭니다.
+   1. `helix@adobe.com`과(와) 폴더를 공유합니다.
+   1. 공유 가능한 폴더 링크를 가져옵니다.
+   1. 다음과 같이 `fstab.yaml`을(를) 업데이트합니다.
+
+      ```yaml
+      mountpoints: 
+          /: https://drive.google.com/drive/folders/<folder-id>
+      ```
+
+   1. GitHub에 변경 사항을 커밋하고 푸시합니다.
+
+* **SharePoint**
+
+   1. SharePoint 폴더 또는 문서 라이브러리를 만듭니다.
+   1. `helix@adobe.com`과(와) 액세스 권한을 공유합니다.
+   1. 폴더 URL을 가져옵니다.
+   1. 다음과 같이 `fstab.yaml`을(를) 업데이트합니다.
+
+      ```yaml
+      mountpoints:
+        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
+      ```
+
+   1. GitHub에 변경 사항을 커밋하고 푸시합니다.
+
+* **AEM**
+
+   1. AEM 컨텐츠 경로를 식별합니다.
+   1. 다음과 같이 AEM 컨텐츠 내보내기 URL을 사용합니다.
+
+      ```yaml
+      mountpoints:
+        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
+      ```
+
+   1. GitHub에 변경 사항을 커밋하고 푸시합니다.
+
+##### 유효성 검사
+
+* AEM Sidekick Chrome 확장을 사용하여 **미리 보기** > **게시** > **라이브 사이트 테스트**&#x200B;를 클릭합니다.
+* URL 유효성 검사: `https://main--<repo>--<org>.hlx.page/`
+
+#### 콘텐츠 소스 구성(Helix 5)
+
+Helix 5는 오류가 없으며 `fstab.yaml`을(를) 사용하지 않으며 동일한 디렉터리를 공유하는 여러 사이트를 지원합니다. 구성은 구성 서비스 API 또는 Edge Delivery Services UI를 통해 관리됩니다. 구성은 저장소 수준이 아닌 사이트 수준입니다.
+
+##### 개념적 차이점
+
+| Aspect | 헬릭스 4 | 헬릭스 5 |
+| --- | --- | --- |
+| 구성 파일 | `fstab.yaml` | API 또는 UI 구성 |
+| 마운트 지점 | YAML 정의 | 필요하지 않음(암시적 루트) |
+
+##### 콘텐츠 소스 변경
+
+구성 서비스 API를 사용합니다.
+
+1. API 키 또는 액세스 토큰을 통해 인증합니다.
+1. 다음 `PUT` API 호출 수행:
+
+   ```bash
+   PUT /api/{program}/{programId}/site/{siteId}
+   Content-Type: application/json
+   
+   {
+     "sitename": "my-site",
+     "branchName": "main",
+     "version": "v5",
+     "repo": "my-content-repo-link"
+   }
+   ```
+
+1. 응답 유효성 검사(예상: HTTP 200 OK).
+
+##### 유효성 검사
+
+* AEM Sidekick Chrome 확장을 사용하여 **미리 보기** > **게시** > **라이브 사이트 테스트**&#x200B;를 클릭합니다.
+* URL 유효성 검사: `https://main--<repo>--<org>.aem.page/`
+* (선택 사항) 다음 `GET` API 호출을 통해 현재 구성을 검사합니다.
+
+  ```bash
+  GET /api/{program}/{programId}/site/{siteId}
+  ```
+
+<!--
+* **AI-powered build summaries now available for internal use**
+
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
+
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
-Cloud Manager의 얼리 어답터 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
+Cloud Manager의 얼리 어답터 프로그램(Early Adopter Program)에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
 
-현재 사용 가능한 얼리 어답터 기회는 다음과 같습니다.
+현재 다음 얼리어답터 기회를 사용할 수 있습니다.
 
-### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
+### Edge Delivery 파이프라인 추가 {#add-eds-pipeline}
+
+이제 Edge Delivery Services으로 빌드된 사이트에 대해 **파이프라인**&#x200B;이 지원되므로 이 기능은 Cloud Service 환경뿐만 아니라 확장됩니다. 해당되는 경우 **파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 응용 프로그램 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
+
+<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)(으)로 전자 메일을 보내세요.
+
+### Azure DevOps에 대한 지원을 통해 나만의 Git 가져오기 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-**자체 Git 가져오기** 기능이 확장되어 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원이 포함되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
+이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps Git 저장소를 Cloud Manager에 온보딩할 수 있습니다.
 
-이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
+* Edge Delivery Services 사용자의 경우 온보딩된 리포지토리를 사용하여 사이트 코드를 동기화하고 배포할 수 있습니다.
+* AEM as a Cloud Service 및 Adobe Managed Services(AMS) 사용자의 경우 저장소를 전체 스택 및 프론트엔드 파이프라인 모두에 연결할 수 있습니다.
+
+추가 파이프라인 유형에 대한 지원과 코드 품질 파이프라인을 통한 가져오기 요청 유효성 검사가 곧 제공될 예정입니다.
 
 [Cloud Manager에서 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
-![저장소 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
+![저장소 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 <!--
-### AEM Home {#aem-home}
+## Bug fixes
 
-AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+* Issue
 
-Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+* Issue
 
-If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
-
-* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
-* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
-
-## 버그 수정
-
-* **인증서에 일반 이름(CN) 필드가 없는 문제**
-
-  Cloud Manager는 제목 필드에 일반 이름(CN)이 포함되지 않은 EV/OV 인증서를 처리할 때 NullPointerException(NPE) 및 500 HTTP 응답을 더 이상 제공하지 않습니다. 최신 인증서는 종종 CN을 생략하고 주체 대체 이름(SAN)을 대신 사용합니다. 따라서 SAN이 있는 경우 구성 빌드 프로세스 중에 CN이 없어도 더 이상 오류가 발생하지 않습니다. <!-- CMGR-67548 -->
-
-* **잘못된 인증서 매칭으로 인한 도메인 확인 문제**
-
-  Cloud Manager에서 잘못된 인증서를 사용하여 도메인을 잘못 확인하는 일이 더 이상 발생하지 않습니다. 이전에는 검사 로직에서 정확한 매칭 대신 패턴 기반의 매칭을 사용했기 때문에 `example.com`에 대한 유효 인증서와 중복되면서 `should-not-be-verified.example.com` 등의 도메인이 검증된 것으로 표시되었습니다. 이번 업데이트는 도메인 검증에서 정확한 일치 항목을 확인하여 잘못된 인증서 연결이 방지됩니다. <!-- CMGR-67225 -->
-
-* **고급 네트워킹 포트 전달 이름에 대한 고유성 강제 적용**
-
-  이제 Cloud Manager는 고급 네트워킹 포트 전달에 대해 고유한 이름을 적용합니다. 이전에는 중복 이름이 허용되었기 때문에 충돌 가능성이 있었습니다. 이번 업데이트는 네트워크 구성 무결성을 위한 모범 사례에 맞춰 각 포트 전달 항목에 고유한 이름이 지정되도록 보장합니다. <!-- CMGR-67082 -->
-
+* Issue
+-->
 
 <!-- ## Known issues {#known-issues} -->
 
