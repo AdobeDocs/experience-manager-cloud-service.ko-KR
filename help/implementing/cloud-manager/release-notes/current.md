@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 20%
+source-wordcount: '780'
+ht-degree: 21%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services을 사용하면 빠르고 �
 
 이 문서에서는 두 버전에 대한 포괄적인 구성 단계, 예 및 유효성 검사 지침을 제공합니다.
 
-시작하기 전&#x200B;**일**
+**시작하기 전에**
 
 Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)을 사용하는 경우 사이트는 단일 리포지토리가 있는 Helix 5입니다. Helix 5 지침에 따라 제공된 Helix 4 YAML 버전을 대체 항목으로 사용합니다.
 
@@ -131,7 +131,7 @@ Helix 5는 오류가 없으며 `fstab.yaml`을(를) 사용하지 않으며 동�
 1. API 키 또는 액세스 토큰을 통해 인증합니다.
 1. 다음 `PUT` API 호출 수행:
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
