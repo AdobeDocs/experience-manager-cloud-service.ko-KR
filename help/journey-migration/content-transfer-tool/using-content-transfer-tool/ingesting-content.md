@@ -4,9 +4,9 @@ description: Cloud Acceleration Manager을 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
+source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3467'
 ht-degree: 12%
 
 ---
@@ -151,13 +151,13 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 > 몇 가지 경우에 해당 토큰을 검색하는 것이 실제로 허용되지 않으므로 &quot;마이그레이션 토큰&quot; 필드가 표시됩니다. 수동으로 제공될 수 있게 함으로써, 이는 사용자가 어떠한 추가적인 도움 없이도 수집을 신속하게 시작할 수 있게 할 수 있다. 토큰을 제공하고 메시지가 여전히 나타나면, 토큰을 검색하는 것은 문제가 되지 않습니다.
 
 * AEM as a Cloud Service은 환경 상태를 유지하고 있으며, 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
-* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 [AEM 버전 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
+* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 [AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
 * Cloud Manager을 통해 [IP 허용 목록이 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)된 경우 Cloud Acceleration Manager이 마이그레이션 서비스에 도달하는 것이 차단됩니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재, 유일한 해결책은 수집 및 인덱싱 프로세스 동안 IP 허용 목록을 비활성화하는 것이다.
 * 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화가 계속 실패하는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 ### AEM 버전 업데이트 및 수집 {#aem-version-updates-and-ingestions}
 
-[AEM 버전 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)는 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
+[AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)는 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
 
 &quot;AEM 버전 업데이트&quot;가 대상 프로그램에 온보딩되면 수집 프로세스는 시작하기 전에 해당 대기열을 비활성화하려고 시도합니다. 수집이 완료되면 버전 업데이트 프로그램 상태가 수집이 시작되기 전의 상태로 반환됩니다.
 
@@ -239,7 +239,7 @@ MongoDB 제한 사항입니다.
 
 자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크는 [콘텐츠 전송 도구를 위한 필수 구성 요소](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)의 `Node property value in MongoDB` 메모를 참조하십시오. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
 
-이러한 제한을 방지하려면 소스 AEM 인스턴스에서 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)를 실행하고 표시되는 결과, 특히 [&quot;지원되지 않는 저장소 구조&quot;(URS)](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/urs) 패턴을 검토하십시오.
+이러한 제한을 방지하려면 소스 AEM 인스턴스에서 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)를 실행하고 표시되는 결과, 특히 [&quot;지원되지 않는 저장소 구조&quot;(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) 패턴을 검토하십시오.
 
 >[!NOTE]
 >
@@ -259,6 +259,7 @@ MongoDB 제한 사항입니다.
 * `Atlas prescale timeout error` - 수집 단계에서 대상 클라우드 데이터베이스를 수집 중인 마이그레이션 세트 콘텐츠의 크기에 맞는 크기로 미리 조정하려고 합니다. 드물게 이 작업이 예상 기간 내에 완료되지 않습니다.
 * `Exhausted mongo restore retries` - 수집된 마이그레이션 세트 컨텐츠의 로컬 덤프를 클라우드 데이터베이스로 복원하려고 시도했습니다. 이는 MongoDB의 전반적인 상태/네트워크 문제를 나타내며 몇 분 후에 해결되는 경우가 많습니다.
 * `Mongo network error` - 때로는 MongoDB에 대한 연결을 설정하지 못해 수집 프로세스가 일찍 종료되고 실패한 것으로 보고할 수 있습니다. 수집을 간단하게 다시 시도해야 합니다.
+* `Mongo server selection error` - 여러 가지 기본 이유로 인해 발생할 수 있는 드문 mongo 클라이언트측 시간 초과 오류입니다. 나중에 다시 시도하면 문제가 해결될 가능성이 높습니다.
 
 ### 수집 취소됨 {#ingestion-rescinded}
 
