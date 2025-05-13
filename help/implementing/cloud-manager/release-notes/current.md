@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
+source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 21%
+source-wordcount: '830'
+ht-degree: 19%
 
 ---
 
@@ -27,13 +27,13 @@ AEM as a Cloud Service의 Cloud Manager 2025.5.0 릴리스 일자는 2025년 5�
 
 ## 새로운 기능 {#what-is-new}
 
-### Edge Delivery Services에서 한 번의 클릭으로 컨텐츠 소스를 변경하는 방법
+### Edge Delivery Services에 대해 한 번의 클릭으로 컨텐츠 소스 구성
 
 Adobe Experience Manager(AEM) Edge Delivery Services을 사용하면 빠르고 전역적으로 분산된 에지 네트워크를 사용하여 Google 드라이브, SharePoint 또는 AEM 자체와 같은 여러 소스에서 콘텐츠를 전달할 수 있습니다.
 
 콘텐츠 소스 구성은 다음과 같은 방식으로 Helix 4와 Helix 5에서 다릅니다.
 
-| 버전 | 구성 방법 |
+| 버전 | 컨텐츠 소스 구성 방법 |
 | --- | --- |
 | 헬릭스 4 | YAML 파일(`fstab.yaml`) |
 | 헬릭스 5 | 구성 서비스 API(*아니요`fstab.yaml`*) |
@@ -42,7 +42,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services을 사용하면 빠르고 �
 
 **시작하기 전에**
 
-Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)을 사용하는 경우 사이트는 단일 리포지토리가 있는 Helix 5입니다. Helix 5 지침에 따라 제공된 Helix 4 YAML 버전을 대체 항목으로 사용합니다.
+Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)을 사용하는 경우 사이트는 단일 리포지토리가 있는 Helix 5입니다. Helix 5 지침에 따라 제공된 Helix 4 YAML 버전의 지침을 대체 항목으로 사용합니다.
 
 **Helix 버전 확인**
 
@@ -51,20 +51,18 @@ Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-mana
 
 저장소 메타데이터를 통해 확인하거나 확실하지 않은 경우 관리자에게 문의하십시오.
 
-#### 콘텐츠 소스 구성(Helix 4)
+#### Helix 4에 대한 콘텐츠 소스 구성
 
-Helix 4에서 콘텐츠 원본은 GitHub 저장소의 루트에 있는 `fstab.yaml`(이)라는 YAML 구성 파일에 정의되어 있습니다.
-
-##### YAML 파일 형식
-
-`fstab.yaml` 파일은 다음 예제와 유사한 탑재 지점(콘텐츠 원본 URL에 매핑된 URL 경로 접두사)을 정의합니다(그림 용도로만 사용).
+Helix 4에서 fstab.yaml 파일은 사이트의 콘텐츠 소스를 정의합니다. GitHub 리포지토리의 루트에 있는 이 파일은 URL 경로 접두사(마운트 지점이라고 함)를 외부 콘텐츠 소스에 매핑합니다. 일반적인 예는 다음과 같습니다.
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### 콘텐츠 소스 변경
+이 예는 그림에만 해당됩니다. 실제 URL은 특정 Google 드라이브 폴더, SharePoint 디렉터리 또는 AEM 경로와 같은 컨텐츠 소스를 가리켜야 합니다.
+
+**Helix 4에 대한 콘텐츠 원본을 구성하려면:**
 
 단계는 사용하는 소스 시스템에 따라 다릅니다.
 
@@ -113,22 +111,20 @@ mountpoints:
 * AEM Sidekick Chrome 확장을 사용하여 **미리 보기** > **게시** > **라이브 사이트 테스트**&#x200B;를 클릭합니다.
 * URL 유효성 검사: `https://main--<repo>--<org>.hlx.page/`
 
-#### 콘텐츠 소스 구성(Helix 5)
+#### Helix 5에 대한 콘텐츠 소스 구성
 
-Helix 5는 오류가 없으며 `fstab.yaml`을(를) 사용하지 않으며 동일한 디렉터리를 공유하는 여러 사이트를 지원합니다. 구성은 구성 서비스 API 또는 Edge Delivery Services UI를 통해 관리됩니다. 구성은 저장소 수준이 아닌 사이트 수준입니다.
+Helix 5는 신뢰할 수 없으며 `fstab.yaml`을(를) 사용하지 않으며 동일한 디렉터리를 공유하는 여러 사이트를 지원합니다. 구성은 구성 서비스 API 또는 Edge Delivery Services UI를 통해 관리됩니다. 구성은 저장소 수준이 아닌 사이트 수준입니다.
 
-##### 개념적 차이점
+개념상의 차이점은 다음과 같습니다.
 
 | Aspect | 헬릭스 4 | 헬릭스 5 |
 | --- | --- | --- |
-| 구성 파일 | `fstab.yaml` | API 또는 UI 구성 |
-| 마운트 지점 | YAML 정의 | 필요하지 않음(암시적 루트) |
+| 구성 | `fstab.yaml`을(를) 통해 완료 | YAML 대신 API 또는 UI를 통해 수행됩니다. |
+| 마운트 지점 | `fstab.yaml`에 정의되었습니다. | 필요하지 않습니다. 그 뿌리는 암묵적으로 이해된다. |
 
-##### 콘텐츠 소스 변경
+**Helix 5에 대한 콘텐츠 원본을 구성하려면:**
 
-구성 서비스 API를 사용합니다.
-
-1. API 키 또는 액세스 토큰을 통해 인증합니다.
+1. 구성 서비스 API를 사용하여 API 키 또는 액세스 토큰을 통해 인증합니다.
 1. 다음 `PUT` API 호출 수행:
 
    ```bash {.line-numbering}
