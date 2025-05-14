@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 지원되는 클라이언트 플랫폼 {#supported-platforms}
 
@@ -35,7 +35,7 @@ Adobe은 AEM의 클라이언트 플랫폼에 대한 다음 수준의 지원을 �
 
 AEM 사용자 인터페이스는 노트북, 데스크탑 컴퓨터 및 태블릿 장치(예: Apple iPad 또는 Microsoft Surface)에 있는 더 큰 화면에 최적화되어 있습니다. 작성 사용 사례에 대해서는 휴대폰 폼 팩터가 지원되지 않습니다.
 
-Adobe Experience Manager 사용자 인터페이스는 [작성 방법에 따라 다음 클라이언트 플랫폼에서 작동합니다.](/help/edge/authoring-methods.md)
+Adobe Experience Manager 사용자 인터페이스는 [작성 방법에 따라 다음 클라이언트 플랫폼에서 작동합니다.](/help/edge/overview.md#authoring-method)
 
 * [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)

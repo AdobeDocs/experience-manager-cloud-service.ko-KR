@@ -7,10 +7,10 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -59,4 +59,4 @@ AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성�
 
 WYSIWYG 작성은 콘텐츠 작성자를 위한 강력하고 직관적인 도구입니다. 그러나 작성 사용 사례가 다양하기 때문에 AEM은 추가 작성 솔루션을 제공합니다.
 
-AEM이 제공하는 문서 기반 작성 및 Headless를 포함한 작성 솔루션에 대해 자세히 알아보려면 [작성 방법 선택](/help/edge/authoring-methods.md) 문서를 참조하십시오.
+문서 기반 작성 및 Headless를 포함하여 AEM에서 제공하는 작성 솔루션에 대한 자세한 내용은 [Edge Delivery Services 개요](/help/edge/overview.md#authoring-method) 문서를 참조하십시오.

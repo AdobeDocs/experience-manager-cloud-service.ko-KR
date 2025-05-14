@@ -4,10 +4,10 @@ description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 
 Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용 모니터링(RUM)을 통해 사이트 성과를 지속적으로 모니터링합니다.
-* 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 WYSIWYG와 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
+* 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 즉시 범용 편집기를 사용한 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
 
 ## 비즈니스 요구 사항에 맞춘 신속한 대응 {#agile-reaction}
@@ -46,9 +46,9 @@ Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 
 
 ## 콘텐츠 제작자를 위한 유연한 작성 도구 {#overview}
 
-Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)를 사용하는 [AEM 콘텐츠 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) 및 WYSIWYG 작성과 [문서 기반 작성](https://www.aem.live/docs/authoring)을 모두 사용할 수 있습니다.
+Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. [AEM 콘텐츠 관리](/help/sites-cloud/authoring/author-publish.md)와 [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)를 사용한 콘텐츠 작성과 [문서 기반 작성을 모두 사용할 수 있습니다.](https://www.aem.live/docs/authoring)
 
-다음 다이어그램은 Microsoft Word(문서 기반 작성)에서 콘텐츠를 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 범용 편집기를 사용하는 WYSIWYG 편집을 보여 줍니다.
+다음 다이어그램은 범용 편집기를 사용하여 Microsoft Word(문서 기반 작성)에서 콘텐츠를 편집하고 AEM 콘텐츠 작성과 함께 Edge Delivery Services에 게시하는 방법을 보여 줍니다.
 
 ![Edge Delivery 아키텍처](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -67,25 +67,25 @@ Edge Delivery Services는 GitHub를 활용하므로 GitHub 저장소에서 바�
 
 문서 기반 작성 설명서에서 더 자세히 읽어보기:
 
-* Edge Delivery를 시작하는 방법에 대한 자세한 내용은 [빌드 섹션](https://www.aem.live/docs/#build)을 참조하십시오.
-* Edge Delivery를 사용하여 콘텐츠를 작성 및 게시하는 방법을 이해하려면 [게시 섹션](https://www.aem.live/docs/authoring)을 참조하십시오.
-* 웹 사이트 프로젝트를 올바르게 시작하는 방법을 이해하려면 [론치 섹션](https://www.aem.live/docs/#launch)을 참조하십시오.
+* Edge Delivery을 시작하는 방법에 대한 자세한 내용은 aem.live 설명서의 [빌드 섹션](https://www.aem.live/docs/#build)을 참조하십시오.
+* Edge Delivery을 사용하여 콘텐츠를 작성하고 게시하는 방법에 대한 자세한 내용은 aem.live 설명서의 [게시 섹션](https://www.aem.live/docs/authoring)을 참조하십시오.
+* 웹 사이트 프로젝트를 제대로 시작하는 방법을 이해하려면 aem.live 설명서의 [시작 섹션](https://www.aem.live/docs/#launch)을 참조하십시오.
 
-### WYSIWYG 작성 {#wysiwyg-authoring}
+### 범용 편집기를 사용한 AEM 작성{#wysiwyg-authoring}
 
-WYSIWYG(What-you-see-is-what-you-get) 작성 방식은 시각적 미리보기와 함께 콘텐츠를 실시간으로 맥락에 맞게 편집할 수 있는 사용자 정의 가능한 원스톱 플랫폼인 범용 편집기를 활용합니다.
+범용 편집기는 콘텐츠를 실시간으로 편집할 수 있고 시각적 미리 보기를 통해 컨텍스트에 맞게 편집할 수 있는 사용자 지정 가능한 단일 위치입니다(WYSIWYG).
 
-* WYSIWYG 작성을 사용하면 Headless과 Headful 모두에서 작성자의 효율성이 높아집니다.
+* 범용 편집기로 AEM을 작성하면 headless든 headful이든 작성자 효율성을 높일 수 있습니다.
 * 워크플로 및 거버넌스 등, AEM의 포괄적인 콘텐츠 관리 기능을 활용할 수도 있습니다.
 * 다양한 확장 지점을 활용하여 자체적인 프로세스와 통합을 지원해 보십시오.
 * GitHub에서 CSS와 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다.
 
-![WYSIWYG 작성](assets/wysiwyg-authoring.png)
+![범용 편집기로 AEM 작성](assets/wysiwyg-authoring.png)
 
-WYSIWYG 작성 설명서에서 더 자세히 읽어보기:
+범용 편집기 및 Edge Delivery Services을 사용하여 AEM 작성을 시작하십시오.
 
-* 범용 편집기와 WYSIWYG 작성의 개요는 [Edge Delivery Services를 위한 WYSIWYG 콘텐츠 작성](/help/edge/wysiwyg-authoring/authoring.md)을 참조하시기 바랍니다.
-* 개발자 개요는 [Edge Delivery Services를 사용한 WYSIWYG 작성용 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하시기 바랍니다.
+* 범용 편집기를 사용한 AEM 작성에 대한 개요는 aem.live 설명서에서 [Edge Delivery Services용 AEM으로 작성](https://www.aem.live/docs/aem-authoring) 문서를 참조하십시오.
+* 개발자 개요는 aem.live 설명서에서 [시작하기 - 유니버설 편집기 개발자 자습서](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
 
 ### 작성 방법 결정 {#authoring-method}
 
@@ -96,19 +96,13 @@ AEM은 작성 시 발생하는 요구 사항을 유연하게 충족해 줍니다
 * 작성 방법은 나중에 언제든지 변경 가능합니다.
 * 구현 전에 결정할 필요가 없으며, 구현의 일부로서 결정해야 합니다.
 
-자세한 내용은 [작성 방법 선택](authoring-methods.md)을 참조하십시오.
-
 ## Edge Delivery Services 및 기타 Adobe Experience Cloud 제품 {#edge-other-products}
 
 Edge Delivery Services는 Adobe Experience Manager의 일부입니다. 따라서 Edge Delivery Services와 AEM Sites는 동일 도메인에서 함께 존재할 수 있으며, 이는 대규모 웹 사이트의 일반적인 사용 사례입니다. 또한 AEM Sites 페이지에서 Edge Delivery Services의 콘텐츠를 원활하게 사용할 수 있으며 그 반대의 경우도 마찬가지입니다.
 
-AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성하는 방법을 알아보려면 [Edge Delivery Services를 사용한 WYSIWYG용 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하십시오.
+AEM 및 Edge Delivery Services을 사용하여 직접 프로젝트를 시작하여 제작하는 방법에 대해 알아보려면 aem.live 설명서에서 [시작하기 - 유니버설 편집기 개발자 튜토리얼](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
 
-[Adobe Target](https://www.aem.live/developer/target-integration), [실제 사용 모니터링(RUM)](https://www.aem.live/developer/rum)과 함께 Edge Delivery Services를 사용하여 사이트의 사용량과 성능을 진단하고 [시작](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)할 수 있습니다.
-
-## Edge Delivery Services 시작하기 {#getting-started}
-
-[시작하기 - 개발자 튜토리얼](https://www.aem.live/developer/tutorial)에 따라 Edge Delivery Services 사용을 쉽게 시작할 수 있습니다.
+[Adobe Target](https://www.aem.live/developer/target-integration), [RUM(Real Use Monitoring)](https://www.aem.live/developer/rum)과(와) 함께 Edge Delivery Services을 사용하여 사이트의 사용 및 성능을 진단할 수도 있고 [Launch.](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)
 
 ## Adobe에서 도움 받기 {#getting-help}
 
@@ -120,7 +114,7 @@ Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 �
 
 ### 커뮤니티 리소스에 액세스 {#community-resources}
 
-Adobe는 사용자에게 Edge Delivery Services, WYSIWYG 작성 및 문서 기반 작성에 대한 최고의 커뮤니티 참여와 지원을 제공하기 위해 최선을 다하고 있습니다.
+Adobe은 Edge Delivery Services, 유니버설 편집기를 사용한 AEM 작성 및 문서 기반 작성에 대한 최상의 커뮤니티 참여 및 지원을 제공할 수 있도록 지원하기 위해 최선을 다하고 있습니다.
 
 * [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl)에 참여하여 질의하고, 피드백을 공유하고, 토론을 시작하고, Adobe 전문가와 AEM Advisor/Champs의 지원을 요청하고, 비슷한 생각을 가진 사람들과 실시간으로 소통할 수 있습니다.
 * 보다 일반적인 플랫폼인 [디스코드 채널](https://discord.gg/aem-live)에 참여하여 실시간으로 상호 작용하고 아이디어를 빠르게 교환할 수 있습니다.
@@ -136,7 +130,3 @@ Adobe는 사용자에게 Edge Delivery Services, WYSIWYG 작성 및 문서 기�
 ### 지원 티켓 기록 {#support-ticket}
 
 {{support-ticket}}
-
-## 다음 단계 {#whats-next}
-
-[Edge Delivery Services 사용](/help/edge/using.md)문서 검토로 시작하십시오.
