@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 19%
+source-wordcount: '1038'
+ht-degree: 16%
 
 ---
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-이 예는 그림에만 해당됩니다. 실제 URL은 특정 Google 드라이브 폴더, SharePoint 디렉터리 또는 AEM 경로와 같은 컨텐츠 소스를 가리켜야 합니다.
+이 예는 그림에만 해당됩니다. 실제 URL은 Google 드라이브 폴더, SharePoint 디렉터리 또는 AEM 경로와 같은 컨텐츠 소스를 가리켜야 합니다.
 
 **Helix 4에 대한 콘텐츠 원본을 구성하려면:**
 
@@ -190,6 +190,16 @@ Cloud Manager의 얼리 어답터 프로그램(Early Adopter Program)에 참여�
 ![저장소 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+
+#### 나만의 Git 가져오기 와 관련하여 자주 묻는 질문
+
+| 질문 | 답변 |
+|---|---|
+| *필요한 경우 프로젝트가 Adobe 관리 Git 저장소로 다시 전환되는 방법은 무엇입니까?* | 다시 전환하는 것은 간단합니다. [파이프라인을 업데이트](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)하여 Adobe 저장소를 가리키도록 하고 더 이상 필요하지 않은 경우 외부 저장소를 제거합니다. |
+| *다른 환경(예: 비프로덕션 대 프로덕션)에 대해 다른 저장소를 구성하여 비프로덕션에서 먼저 테스트할 수 있습니까?* | 예. 별도의 환경에 대해 서로 다른 저장소를 구성할 수 있습니다. 예를 들어 프로덕션 파이프라인이 Adobe 저장소에 연결된 상태를 유지하는 동안 개발 또는 코드 품질 파이프라인이 외부 저장소를 가리킬 수 있습니다. 이 구성 중에 두 저장소 간의 동기화 작업이 활성 상태로 유지되는지 확인하십시오. |
+| *IP 허용 목록과 같은 기존 설정이 계속 작동합니까?* | 예. 기존 IP 허용 목록은 평소대로 계속 작동합니다. 그러나 외부 Git 저장소가 방화벽으로 보호되어 있는 경우 필요한 [Adobe IP 주소를 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)에 추가해야 합니다. |
+| *모든 GitLab 저장소 URL이 작동합니까? 사용 중인 저장소 URL은 `https://gitlab_dedicated_url.com/path/repo-name.git` 형식을 따르며, 이는 설명서의 예제와 다릅니다.* | 예. [Cloud Manager에서 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)(`https://git-vendor-name.com/org-name/repo-name.git`)에 설명된 것과 같은 자체 호스팅 GitLab URL을 포함하여 API V3 또는 V4를 지원하는 모든 GitLab 저장소가 지원됩니다. |
+
 
 <!--
 ## Bug fixes
