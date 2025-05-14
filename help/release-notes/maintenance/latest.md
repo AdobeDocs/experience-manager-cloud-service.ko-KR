@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 10%
 
 ---
@@ -33,9 +33,8 @@ ht-degree: 10%
 * SITES-27775: 게시하는 동안 최적화된 참조 검색입니다.
 * SITES-30885: 지속 쿼리에서 JSON 처리가 최적화되었습니다.
 * SITES-25433: 범용 편집기가 있는 Edge Delivery: 이전 버전을 비교할 때 전체 페이지 렌더링을 지원합니다.
-* SITES-27792: 범용 편집기가 있는 Edge Delivery: EDS 구성을 CA 구성으로 완전히 이동합니다.
+* SITES-27792: 범용 편집기가 있는 Edge Delivery: Edge Delivery 서비스 구성에 대한 특정 템플릿을 추가합니다.
 * SITES-19754: 범용 편집기가 있는 Edge Delivery: 설정이 중단되었을 때 강력한 오류 메시지가 표시됩니다.
-* SITES-30267: 범용 편집기가 있는 Edge Delivery: 시트 V2(조기 액세스).
 * SITES-30328: 범용 편집기가 있는 Edge Delivery: Sidekick 지원에서 미리 보기.
 * SITES-23499: 범용 편집기가 있는 Edge Delivery: 블록 옵션에 여러 필드를 사용할 수 있습니다.
 * SITES-29987: 콘텐츠 조각 모델을 만들 때 `previewUrlPattern`을(를) 설정하는 기능을 추가합니다.
