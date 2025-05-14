@@ -1,21 +1,21 @@
 ---
-title: CDN 구성 추가
-description: Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 추가하는 방법에 대해 알아봅니다.
+title: 도메인 매핑 추가
+description: Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 도메인 매핑을 추가하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
 
-# CDN 구성 추가 {#add-cdn}
+# 도메인 매핑 추가 {#add-cdn}
 
-프로그램 내의 Adobe 관리 CDN에서 도메인을 SSL 인증서와 연결하려면 CDN(Content Delivery Network) 구성을 추가해야 합니다.
+프로그램 내의 Adobe 관리 CDN에서 SSL 인증서와 도메인을 연결하려면 CDN(Content Delivery Network) 구성을 추가해야 합니다.
 
 Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있는 사이트만 허용됩니다.
 
@@ -25,7 +25,7 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
 
 [Adobe 관리 CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)도 참조하세요.
 
-**CDN 구성을 추가하려면:**
+**도메인 매핑을 추가하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -43,7 +43,7 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
    | 원본 | 설명 |
    | --- | --- |
    | Sites | Edge Delivery 사이트를 선택합니다. |
-   | 환경 | AEM 설정 내에서 타깃팅할 특정 Cloud Service 환경을 선택합니다.<br>**계층** 드롭다운 목록에서 다음 중 하나를 선택합니다.<br>· 콘텐츠가 최종 사용자에게 제공되는 라이브 프로덕션 환경을 타깃팅하려면 **Publish**&#x200B;을(를) 선택합니다.<br>· 변경 내용을 실행하기 전에 테스트하는 스테이징 또는 비프로덕션 환경의 **미리 보기**&#x200B;를 선택합니다. |
+   | 환경 | AEM 설정 내에서 타깃팅할 특정 Cloud Service 환경을 선택합니다.<br>**계층** 드롭다운 목록에서 다음 중 하나를 선택합니다.<br>· 콘텐츠가 최종 사용자에게 제공되는 라이브 프로덕션 환경을 타깃팅하려면 **게시**&#x200B;를 선택합니다.<br>· 변경 내용을 실행하기 전에 테스트하는 스테이징 또는 비프로덕션 환경의 **미리 보기**&#x200B;를 선택합니다. |
 
 1. 다음 중 하나를 선택하여 CDN 유형 및 관련 구성을 선택합니다.
 
