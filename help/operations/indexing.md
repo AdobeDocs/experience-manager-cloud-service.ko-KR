@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 콘텐츠 검색 및 색인화에 대해 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 22%
+source-wordcount: '2850'
+ht-degree: 21%
 
 ---
 
@@ -31,9 +31,9 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 제한 사항:
 
-* 현재 AEM as a Cloud Service의 색인 관리는 `lucene` 색인 유형만 지원됩니다.
-* 표준 분석기 (즉, 제품과 함께 제공되는 분석기)만 지원됩니다. 사용자 정의 분석기는 지원되지 않습니다.
+* 현재 AEM as a Cloud Service의 색인 관리는 `lucene` 유형의 색인에 대해서만 지원됩니다. 즉, 모든 인덱스 사용자 지정은 `lucene` 형식이어야 합니다. `async` 속성은 `[async]`, `[async,nrt]` 또는 `[fulltext-async]` 중 하나만 사용할 수 있습니다.
 * 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어 `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 응용 프로그램과 사용자에게는 표시되지 않지만 `explain` 기능과 같은 특정 도구는 다른 색인을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수도 없습니다.
+* 표준 분석기 (즉, 제품과 함께 제공되는 분석기)만 지원됩니다. 사용자 정의 분석기는 지원되지 않습니다.
 * 유사한 기능 벡터(`useInSimilarity = true`)로 검색할 수 없습니다.
 
 >[!TIP]
@@ -78,6 +78,9 @@ OOTB 인덱스의 사용자 정의를 위해 이 이름 지정 패턴을 따르�
 완전히 맞춤화된 색인의 경우 이 이름 지정 패턴을 따르는 색인 정의가 포함된 새 색인 정의 패키지를 준비합니다.
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+제한 섹션에서 언급한 바와 같이 패키지 관리자를 사용하여 추출된 색인 정의가 다른 유형(예: `elasticsearch`)인 경우에도 사용자 지정된 색인 정의의 `type`을(를) 항상 `lucene`(으)로 설정해야 합니다.
+추출된 색인 정의가 `elastic-async`(으)로 설정된 경우에도 `async` 속성을 변경해야 합니다. 사용자 지정된 인덱스 정의에 대해 `async` 속성을 `[async]`, `[async,nrt]` 또는 `[fulltext-async]` 중 하나로 설정해야 합니다.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
