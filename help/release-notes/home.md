@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 06c8cfb5bdd020334c164058fd1f9f337a97f4a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,4 +46,4 @@ ht-degree: 99%
 * [유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
 * [새로운 기능](what-is-new.md)
 * [주요 변경 사항](aem-cloud-changes.md)
-* [더 이상 사용되지 않고 제거된 기능](deprecated-removed-features.md)
+* [더 이상 사용되지 않으며 제거된 기능](deprecated-removed-features.md)
