@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 100%
+source-wordcount: '1853'
+ht-degree: 91%
 
 ---
 
@@ -84,6 +84,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 ### 새 AEM 프로젝트 만들기
 
 이제 GitHub 프로젝트가 있으므로 AEM as a Cloud Service 작성 인스턴스에서 새 AEM 프로젝트를 만들고 게시할 수 있습니다.
+
 1. 새 AEM 프로젝트를 만드는 방법은 다음과 같습니다.
 
    1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 **사이트**&#x200B;를 선택합니다.
@@ -164,34 +165,103 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 >[!NOTE]
 >
 >
-> 이 단계는 [AEM 상용구](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
+> 이 단계는 [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)을 사용하여 빌드된 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
 통합하는 방법은 다음과 같습니다.
-1. **필수 파일 및 폴더 추가**
-   1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-      * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 폴더
-      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 폴더
-      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
-      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
+1. 로컬 시스템의 AEM 프로젝트 저장소 폴더로 이동합니다.
 
-1. **구성 요소 정의 및 모델 파일 업데이트**
-   1. AEM 프로젝트의 `../models/_component-definition.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-definition.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)의 변경 사항으로 업데이트합니다.
+1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-   1. AEM 프로젝트의 `../models/_component-models.json` 파일로 이동하여 [AEM Forms 보일러플레이트의 _component-models.json 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)의 변경 사항으로 업데이트합니다.
+   * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
+   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
+   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
+1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일로 업데이트](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. AEM 프로젝트의 `/models/_section.json`(으)로 이동하여 &quot;form&quot; 및 &quot;embed-adaptive-form&quot;을 `filters` 개체의 구성 요소 배열에 추가합니다.
 
-1. **편집기 스크립트에 양식 편집기 추가**
-   1. AEM Project의 `../scripts/editor-support.js` 파일로 이동하여 [AEM Forms 보일러플레이트의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)의 변경 사항으로 업데이트합니다.
-1. **ESLint 구성 파일 업데이트**
-   1. AEM 프로젝트에서 `../.eslintignore` 파일로 이동하고 다음 코드 라인을 추가하여 폼 블록 규칙 엔진과 관련된 오류를 방지합니다.
+   ```
+       "filters": [
+       {
+     "id": "section",
+     "components": [
+       .
+       .
+       .
+       "form",
+       "embed-adaptive-form"
+     ]
+    }]
+   ```
 
-      ```
-          blocks/form/rules/formula/*
-          blocks/form/rules/model/*
-      ```
+1. (선택 사항) AEM 프로젝트에서 `/.eslintignore`(으)로 이동하여 아래 코드 행을 추가합니다.
+
+   ```
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
+   ```
+
+1. (선택 사항) AEM 프로젝트에서 `/.eslintrc.js`(으)로 이동하여 `rules` 개체에 아래 코드 행을 추가합니다.
+
+   ```
+   'xwalk/max-cells': ['error', {
+     '*': 4, // default limit for all models
+     form: 15,
+     wizard: 12,
+     'form-button': 7,
+     'checkbox-group': 20,
+     checkbox: 19,
+     'date-input': 21,
+     'drop-down': 19,
+     email: 22,
+     'file-input': 20,
+     'form-fragment': 15,
+     'form-image': 7,
+     'multiline-input': 23,
+     'number-input': 22,
+     panel: 17,
+     'radio-group': 20,
+     'form-reset-button': 7,
+     'form-submit-button': 7,
+     'telephone-input': 20,
+     'text-input': 23,
+     accordion: 14,
+     modal: 11,
+     rating: 18,
+     password: 20,
+     tnc: 12,
+   }],
+   'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
+   ```
+
+1. 터미널을 열고 아래 명령을 실행합니다.
+
+   ```
+   npm i
+   npm run build:json
+   ```
+
+   >[!NOTE]
+   >
+   > 변경 사항을 GitHub의 AEM 프로젝트 리포지토리에 푸시하기 전에 AEM 프로젝트의 루트 수준에 있는 `component-definition.json`, `component-models.json` 및 `component-filters.json` 파일이 양식 관련 개체로 업데이트되었는지 확인하십시오.
 
 1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
+
+   <!--
+    1. **Update ESLint configuration file**
+    2. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
+        
+            blocks/form/rules/formula/*
+            blocks/form/rules/model/*
+       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
+       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
+    
+     3. **Update component definitions and models files**
+       1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+    
+    3. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26) -->
 
 이번 단계가 끝났습니다! 적응형 양식 블록은 이제 AEM 프로젝트의 일부입니다. 이제 [AEM 프로젝트에 양식을 만들고 추가](#add-edge-delivery-services-forms-to-aem-site-project)할 수 있습니다.
 
@@ -303,8 +373,8 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
 
-* **모듈 경로 오류 해결:**
-“모듈 “../../scripts/lib-franklin.js”에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
+* **모듈 경로 확인 오류:**
+&quot;모듈 &quot;&#39;/scripts/lib-franklin.js&#39;의 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 [EDS 프로젝트]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
 ## 추가 참조
 
