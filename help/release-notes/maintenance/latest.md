@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1750'
 ht-degree: 10%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 2025년 5월 13일에 공개적으로 릴리스된 유지 보수 릴리스 20783에 대한 지속적인 개선 사항을 요약하면 다음과 같습니다. 이전 유지 관리 릴리스는 릴리스 20626.
 
-2025.5.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스(2025.5.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-20783}
 
@@ -30,6 +30,7 @@ ht-degree: 10%
 * FORMS-19125: 데이터 소스 트리의 해당 섹션을 양식 캔버스로 끌어 놓을 때 사용 가능한 적응형 양식 조각의 자동 매핑을 지원하도록 핵심 구성 요소 적응형 양식 편집기가 개선되었습니다. 이 기능은 기초 편집기에서 핵심 구성 요소로 주요 생산성 기능을 제공합니다.
 * FORMS-17887: 이제 AEM Forms은 출력 서비스를 통해 AFP(Advanced Function Presentation) 포맷으로 문서를 생성하는 기능을 제공합니다. 이 향상된 기능은 일반적으로 AFP를 사용하는 고속 대량 인쇄 환경에 대한 고객의 요구에 부응합니다.
 * FORMS-15089: AEM Forms은 게시할 때 양식의 모든 구성 조각이 게시된 특정 버전에 인라인(임베드)되는 방식으로 양식 버전을 관리하는 기능을 도입했습니다. 이를 통해 게시 시점에 표시된 양식을 정확하게 자체적으로 표현할 수 있으며, 이는 보관, 법률 또는 규정 준수를 위해 매우 중요할 수 있습니다.
+* FORMS-17107: 이제 AEM Forms에서 향상된 클라이언트측 사용자 지정 함수 구문 분석을 제공합니다. 여기에는 선택적 체인과 같은 최신 JavaScript 기능(ECMAScript ES10+)에 대한 지원이 포함되며 사용자 지정 함수 스크립트 내에서 정적 가져오기를 사용하는 기능이 도입되었습니다. 이를 통해 개발자는 코드를 보다 효율적으로 구성하고, ESM 모듈을 활용하고, 특히 이전에 이러한 기능에 대한 해결 방법이 필요했던 사용자를 위해 적응형 Forms v2 및 Edge Delivery Services에서 사용자 정의 기능과 관련하여 발생한 이전 제한 사항을 제거할 수 있습니다.
 * SITES-27775: 게시하는 동안 최적화된 참조 검색입니다.
 * SITES-30885: 지속 쿼리에서 JSON 처리가 최적화되었습니다.
 * SITES-25433: 범용 편집기가 있는 Edge Delivery: 이전 버전을 비교할 때 전체 페이지 렌더링을 지원합니다.
@@ -70,10 +71,12 @@ ht-degree: 10%
 * FORMS-19629: JSON 스키마 파서가 잘못된 결과를 생성하거나 고객이 제공한 특정 JSON 스키마를 잘못 해석하고 있습니다. 이 문제는 조각의 자동 매핑과 같이 올바른 스키마 구문 분석에 의존하는 기능에 부정적인 영향을 줄 수 있습니다.
 * FORMS-19380: 핵심 구성 요소에 대한 버전 관리 지원을 도입하면 적응형 Forms은 자산 유형에 대한 특정 디자인이나 테스트 없이 다양한 다른 자산 유형(예: Foundation Forms, PDF 파일, 테마, FDM)에 대한 버전 관리 기능을 의도하지 않게 활성화합니다. 이 의도하지 않은 부작용은 조사 중이다.
 * FORMS-17707: AEP(Adobe Experience Platform) 커넥터가 AEP 플랫폼 &#39;단계&#39; 환경에 연결하도록 구성된 경우 제대로 작동하지 않습니다.
+FORMS-18526: 여러 필드를 기반으로 하는 조건이 있는 규칙을 복사할 때 규칙의 조건 또는 작업 내에서 참조된 필드(규칙을 트리거하는 기본 필드가 아님)가 업데이트되지 않고 규칙이 복사되는 새 필드를 올바르게 참조하게 됩니다. 대신 규칙이 복사된 원본 소스 필드를 계속 참조합니다.
+FORMS-18474: 특정 필드의 값이 변경될 때(예: 필드 &#39;A&#39;) 특정 패널 또는 구성 요소에 포커스를 설정하도록 디자인된 규칙이 양식의 모든 필드 변경으로 인해 잘못 트리거됩니다. 예를 들어 필드 &#39;B&#39;가 수정되면 필드 &#39;A&#39;의 변경에 대해서만 규칙이 구성되었더라도 포커스는 여전히 지정된 패널로 설정됩니다.
 * GRANITE-58276: OSGi 종속성 사이클로 인해 HTL 스크립트 엔진 팩토리가 제대로 작동하지 않습니다.
 * OAK-11673: refreshLease로 인한 Oak-segment-azure v12 CPU 증가.
 * SITES-30752: 지속 쿼리 응답을 생성할 때 `If-modified-since`/`last-modified` 헤더를 사용하지 마십시오.
-* SITES-30353: AEM 콘텐츠 조각의 &quot;src&quot; 필드에 대한 GraphQL DataFetchExceptions입니다.
+* SITES-30353: AEM 컨텐츠 조각의 &quot;src&quot; 필드에 대한 GraphQL DataFetchExceptions입니다.
 * SITES-30333: xmp 구문 분석 문제를 방지하기 위해 jcr에서 자산 메타데이터를 읽습니다.
 * SITES-30140: 콘텐츠 조각 참조를 생성할 때 이중 창 문제가 발생합니다.
 * SITES-29748: CF 편집기 내에서 관리 게시/빠른 게시 작업을 표시하도록 renderconditions를 수정했습니다.
