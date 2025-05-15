@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 �
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 98%
 
 **번역 HTTP API**
 
-한동안 얼리 어답터 모드에 있었던 AEM 번역 HTTP REST API는 이제 GA 상태입니다. 설명서는 [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)에서 확인할 수 있습니다. API를 사용하면 AEM의 콘텐츠 번역 관리 프로세스에서 필요한 단계를 자동화할 수 있습니다.
+한동안 얼리 어답터 모드에 있었던 AEM 번역 HTTP REST API는 이제 GA 상태입니다. 설명서는 여기에서 [을(를) 찾을 수 있습니다.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) API를 사용하면 AEM의 콘텐츠에 대한 번역 관리 프로세스에서 필요한 단계를 자동화할 수 있습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
