@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
 workflow-type: tm+mt
 source-wordcount: '2554'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
 | Sites | [PWA 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 없음 |
-| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다<br>.- 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
+| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 이 기능은 곧 제거될 예정입니다. |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
@@ -56,7 +56,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 | 영역 | 기능 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
-| 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 클라우드 서비스 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
+| 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 Cloud Service 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
 | [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/integration/scene7#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 저장소의 변경 불가능한 섹션을 사용할 수 없으므로 이 기능은 제거되었습니다. | 제거됨 |
@@ -173,7 +173,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용합니다.</td>
+    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
     <td>10/31/2022</td>
     <td>1/01/2023</td>
   </tr>
@@ -226,10 +226,10 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 </table>
 </details>
 
-다음은 제거된 AEM API의 광범위한 목록입니다.
+아래는 제거된 AEM API의 확장된 목록입니다.
 
 <details>
-  <summary>를 확장하여 제거된 API 목록을 확인합니다.</summary>
+  <summary>제거된 API의 목록을 보려면 이를 펼치십시오.</summary>
 <table style="table-layout:auto">
   <tr>
     <th>패키지/클래스</th>
