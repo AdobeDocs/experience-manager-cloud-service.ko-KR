@@ -237,7 +237,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 <owner> 저장소 소유자와 <repo> 저장소 이름은 바꿉니다.
+1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 &lt;owner> 저장소 소유자와 &lt;repo> 저장소 이름은 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>

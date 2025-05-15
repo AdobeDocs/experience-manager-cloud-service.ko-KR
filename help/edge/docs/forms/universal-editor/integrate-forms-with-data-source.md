@@ -93,7 +93,7 @@ ht-degree: 82%
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다.
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
-1. 데이터 소스를 추가할 양식을 선택하고 **[!UICONTROL 속성]**을 클릭합니다.
+1. 데이터 소스를 추가할 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
    ![양식 속성 열기](/help/edge/docs/forms/universal-editor/assets/non-schema-based-edit-properties.png)
 
    양식 속성이 열립니다.
