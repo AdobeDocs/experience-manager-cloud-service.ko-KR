@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.5
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 16%
+source-wordcount: '1050'
+ht-degree: 15%
 
 ---
 
@@ -166,11 +166,11 @@ Cloud Manager의 얼리 어답터 프로그램(Early Adopter Program)에 참여�
 
 현재 다음 얼리어답터 기회를 사용할 수 있습니다.
 
-### Edge Delivery 파이프라인 추가 {#add-eds-pipeline}
+### Edge Delivery 구성 파이프라인 추가 {#add-eds-pipeline}
 
-이제 Edge Delivery Services으로 빌드된 사이트에 대해 **파이프라인**&#x200B;이 지원되므로 이 기능은 Cloud Service 환경뿐만 아니라 확장됩니다. 해당되는 경우 **파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 응용 프로그램 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
+이제 구성 파이프라인이 Edge Delivery Services으로 빌드된 사이트에 대해 지원되므로 이 기능은 Cloud Service 환경뿐만 아니라 확장됩니다. 해당되는 경우 **파이프라인 구성**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 응용 프로그램 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)(으)로 전자 메일을 보내세요.
 
