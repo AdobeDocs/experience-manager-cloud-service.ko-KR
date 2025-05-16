@@ -4,10 +4,10 @@ description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Deliv
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 76%
 
 기존 사이트에 CDN 구성을 추가하여 Cloud Manager에서 Edge Delivery 사이트를 관리하는 방법을 알아봅니다. 또는 Edge Delivery 사이트를 삭제합니다.
 
-## 기존 Edge Delivery 사이트에 CDN 구성 추가 {#add-cdn-to-edge-delivery-site}
+## 기존 Edge Delivery 사이트에 도메인 매핑 추가 {#add-cdn-to-edge-delivery-site}
 
-[CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오.
+[도메인 매핑 추가](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)를 참조하십시오.
 
 ## Edge Delivery 사이트 이름 변경 (#rename-edge-delivery-site)
 
@@ -35,7 +35,7 @@ Adobe Cloud Manager에서 다음의 이유로 Edge Delivery 사이트 이름을 
 
    * **프로그램 개요** 페이지에서 **Edge Delivery** 탭을 클릭합니다. Edge Delivery 사이트 테이블에서 이름을 바꾸려는 사이트의 행 끝의 줄임표를 클릭합니다.
 **이름 변경**&#x200B;을 클릭합니다.
-   * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다. **서비스** 제목 아래 ![Web pages icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**&#x200B;를 클릭합니다.
+   * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다. **서비스** 제목 아래 ![Web pages icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**를 클릭합니다.
 Edge Delivery 사이트 테이블에서 이름을 바꾸려는 사이트의 행 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. **이름 변경**&#x200B;을 클릭합니다.
 
 1. **Edge Delivery 사이트 편집** 대화 상자에서 **사이트 이름** 텍스트 필드에 사이트의 새 이름을 입력합니다.
@@ -57,24 +57,24 @@ Edge Delivery Services 사이트를 삭제하면 관련 CDN 구성도 모두 제
 
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다. **서비스** 제목 아래 ![Edge Delivery 사이트용 웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**&#x200B;를 클릭합니다.
+   * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다. **서비스** 제목 아래 ![Edge Delivery 사이트용 웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**를 클릭합니다.
 Edge Delivery 사이트 테이블에서 삭제하려는 사이트의 행 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. ![Edge Delivery 사이트 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **삭제**&#x200B;를 클릭한 후 **삭제**&#x200B;를 다시 클릭하여 사이트 삭제를 확인합니다.
 
-     ![Edge Delivery Sites 버튼에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+     ![Edge Delivery Sites 버튼으로 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## Helix 4와 Helix 5 간의 Edge Delivery 사이트 관리
+## Helix 4와 Helix 5 간 Edge Delivery 사이트 관리
 
-`/program/{programId}/site/{siteId}` API 끝점을 사용하여 Helix 4와 Helix 5 간에 Edge Delivery 사이트를 마이그레이션합니다.
+`/program/{programId}/site/{siteId}` API 엔드포인트를 사용하여 Helix 4와 Helix 5 간에 Edge Delivery 사이트를 마이그레이션할 수 있습니다.
 
 >[!IMPORTANT]
 >
->Helix 4 웹 사이트에 대한 CDN 구성은 Helix 5로 자동으로 마이그레이션할 수 없습니다. 고객 프로덕션 사이트는 Helix 4에서 실행될 수 있지만 Helix 5 버전은 아직 개발 중이기 때문에 이러한 제한이 있습니다.
+>Helix 4 웹 사이트의 콘텐츠 전송 네트워크 구성은 Helix 5로 자동 마이그레이션할 수 없습니다. 이 제한 사항은 고객의 프로덕션 사이트가 아직 Helix 4에서 실행 중인 반면, Helix 5 버전은 아직 개발 중일 수 있기 때문에 존재합니다.
 
-**전제 조건**
+**사전 요구 사항**
 
-* `sitename`이(가) 이미 있어야 합니다.
-* 적절한 `branchName`, Helix `version` 및 `repo` 값을 알고 있습니다.
-* 마이그레이션은 `branchName`, `version` 및 `repo`만 수정합니다. 소유자 필드는 변경할 수 없습니다.
+* `sitename`이 이미 존재해야 합니다.
+* 적절한 `branchName`, Helix `version` 및 `repo` 값을 알고 있어야 합니다.
+* 마이그레이션은 `branchName`, Helix `version` 및 `repo`만 수정합니다. 소유자 필드는 변경할 수 없습니다.
 
 **API 형식**
 
@@ -82,8 +82,8 @@ Edge Delivery 사이트 테이블에서 삭제하려는 사이트의 행 끝에 
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**본문 매개 변수 요청**
-Edge Delivery 사이트에 대한 재정의를 만들어 요청 본문에 지정된 원본을 적용합니다.
+**요청 본문 매개변수**
+요청 본문에 지정된 출처를 적용하기 위해 Edge Delivery 사이트에 대한 재정의를 만듭니다.
 
 ```json
 {
@@ -114,7 +114,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **원본 URL 결과**
-다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+다음 원본 URL을 포함하는 Edge Delivery 사이트를 반환합니다.
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
@@ -139,11 +139,11 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **원본 URL 결과**
-다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+다음 원본 URL을 포함하는 Edge Delivery 사이트를 반환합니다.
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### 예제 3: 무시 사이트를 Helix 5로 마이그레이션
+### 예제 3: 저장소 없는 사이트를 Helix 5로 마이그레이션
 
 **http**
 
@@ -163,7 +163,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **원본 URL 결과**
-다음 원본 URL을 사용하여 Edge Delivery 사이트를 반환합니다.
+다음 원본 URL을 포함하는 Edge Delivery 사이트를 반환합니다.
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 

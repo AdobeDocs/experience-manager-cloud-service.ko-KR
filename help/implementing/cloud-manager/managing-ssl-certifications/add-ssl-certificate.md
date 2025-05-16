@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -19,7 +19,7 @@ Cloud를 사용하여 자체 SSL 인증서 또는 Adobe Managed DV(도메인 유
 
 >[!NOTE]
 >
->OV/EV(고객 관리) SSL 인증서와 고객 관리 CDN 공급자를 사용하는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
+>OV/EV(고객 관리) SSL 인증서와 고객 관리 CDN 공급자를 사용하는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [도메인 매핑 추가](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)(으)로 이동할 수 있습니다.
 
 인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe에서는 지연이 발생하지 않도록 마감일이나 라이브 날짜 이전에 자체 인증서를 프로비저닝할 것을 권장합니다.
 
@@ -85,7 +85,7 @@ Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인�
 
 이제 프로젝트에 대해 작동하는 Adobe 관리 DV SSL 인증서를 추가했습니다. 이 단계는 사용자 정의 도메인 이름을 처음 설정하는 경우가 많습니다.
 
-이제 [CDN 구성](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)을 추가할 준비가 되었습니다.
+이제 [CDN 구성](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)을 추가할 준비가 되었습니다.
 
 ## OV/ED(고객 관리) SSL 인증서 추가 {#add-customer-managed-ssl-cert}
 
@@ -132,7 +132,7 @@ Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인�
 
 이제 프로젝트에 대해 작동하는 SSL 인증서를 추가했습니다. 이 단계는 사용자 정의 도메인 이름을 처음 설정하는 경우가 많습니다.
 
-이제 [CDN 구성](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)을 추가할 준비가 되었습니다.
+이제 [CDN 구성](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)을 추가할 준비가 되었습니다.
 
 
 

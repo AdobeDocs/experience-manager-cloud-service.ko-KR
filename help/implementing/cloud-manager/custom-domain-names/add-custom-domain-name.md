@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 16%
@@ -75,7 +75,7 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
    >[!NOTE]
    >
-   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하는 경우 SSL 인증서를 추가할 필요가 없습니다. 이 규칙은 고객 관리 CDN(Content Delivery Network) ***provider***&#x200B;을(를) 사용하려는 경우에도 적용됩니다. 대신 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동합니다.
+   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하는 경우 SSL 인증서를 추가할 필요가 없습니다. 이 규칙은 고객 관리 CDN(Content Delivery Network) ***provider***&#x200B;을(를) 사용하려는 경우에도 적용됩니다. 대신 준비가 되면 바로 [도메인 매핑 추가](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)(으)로 이동합니다.
 
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}

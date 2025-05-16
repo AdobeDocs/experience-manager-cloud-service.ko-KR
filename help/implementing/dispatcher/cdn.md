@@ -4,7 +4,7 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 11%
@@ -17,7 +17,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service의 CDN"
->abstract="AEM as Cloud Service는 빌트인된 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
+>abstract="AEM as Cloud Service는 CDN을 기본 제공합니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
 
 AEM as a Cloud Service에는 사용자의 브라우저와 가까운 에지 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이도록 설계된 통합 CDN이 포함되어 있습니다. 이 완전 관리 CDN은 AEM 애플리케이션 성능에 최적화되어 있습니다.
 
@@ -28,26 +28,26 @@ Edge Delivery Services 계층에 게시하려는 고객은 Adobe의 관리 CDN�
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe 관리 CDN {#aem-managed-cdn}
+## Adobe Managed CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
-Cloud Manager의 셀프서비스 UI를 통해 AEM의 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 Adobe의 관리 CDN 기능을 활용할 수 있습니다. 이 기능을 사용하면 DV(도메인 유효성 검사) 또는 EV/OV(확장/조직 유효성 검사) 인증서와 같은 SSL 인증서 구성 및 설치를 포함하여 셀프서비스 CDN 관리를 처리할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 다음을 참조하십시오.
+Cloud Manager의 셀프서비스 UI를 통해 AEM의 내장된 CDN을 사용하여 컨텐츠 전달을 준비하려면 Adobe의 관리 CDN 기능을 활용할 수 있습니다. 이 기능을 사용하면 DV(도메인 유효성 검사) 또는 EV/OV(확장/조직 유효성 검사) 인증서와 같은 SSL 인증서 구성 및 설치를 포함하여 셀프서비스 CDN 관리를 처리할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [Cloud Manager의 Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [CDN 구성](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [CDN 구성](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **트래픽 제한**
 
-기본적으로 AEM 관리 CDN 설정의 경우 모든 공개 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이지) 환경 모두에 대해 게시 서비스로 이동할 수 있습니다. Cloud Manager 사용자 인터페이스를 통해 특정 환경에 대한 게시 서비스로 트래픽을 제한할 수 있습니다(예: IP 주소 범위별로 스테이징 제한).
+기본적으로 AEM 관리 CDN 설정의 경우 모든 공개 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이징) 환경 모두에 대해 게시 서비스로 이동할 수 있습니다. Cloud Manager 사용자 인터페이스를 통해 특정 환경에 대한 게시 서비스로 트래픽을 제한할 수 있습니다(예: IP 주소 범위별로 스테이징 제한).
 
 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.
 
 >[!CAUTION]
 >
->AEM의 관리되는 CDN은 허용된 IP의 요청만 처리합니다. 자체 CDN을 AEM 관리 CDN으로 지정하는 경우 CDN의 IP가 IP 허용 목록에 포함되어 있는지 확인합니다.
+>AEM의 관리 CDN은 허용된 IP의 요청만 처리합니다. 자체 CDN을 AEM 관리 CDN으로 지정하는 경우 CDN의 IP가 IP 허용 목록에 포함되어 있는지 확인합니다.
 
 ### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
@@ -56,7 +56,7 @@ CDN에서 트래픽을 다음과 같은 다양한 방법으로 구성할 수 있
 * [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)(선택적으로 라이선스가 부여된 고급 WAF 규칙 포함)으로 악성 트래픽 차단
 * [요청 및 응답](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)의 특성 수정
 * 301/302 [클라이언트측 리디렉션 적용](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)을(를) 선언하여 비 AEM 백엔드에 대한 요청을 프록시로 되돌립니다.
+* AEM이 아닌 백엔드에 대한 요청을 리버스 프록시로 전환하도록 [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 선언
 
 Git의 YAML 파일을 사용하여 이러한 기능을 구성합니다. Cloud Manager [구성 파이프라인](/help/implementing/dispatcher/cdn-configuring-traffic.md)을(를) 사용하여 배포하십시오.
 
@@ -81,7 +81,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 >title="고객 CDN은 AEM Managed CDN에 지정"
 >abstract="AEM as Cloud Service는 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다."
 
-고객이 기존 CDN을 사용해야 하는 경우 이를 관리하고 AEM 관리 CDN을 지정할 수 있으며, 이는 다음을 충족하면 됩니다.
+고객이 기존 CDN을 사용해야 하는 경우 이를 관리하고 AEM 관리 CDN을 지정할 수 있으며, 이는 다음을 충족한 경우에 해당됩니다.
 
 * 고객은 교체해야 하는 기존 CDN이 있어야 합니다.
 * 고객이 관리해야 합니다.
@@ -98,11 +98,11 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.
 
    * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조).
-   * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에게 알립니다(차단됨).
+   * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에 알립니다(차단 예정).
 
 주요 CDN 공급업체의 구성 예는 [샘플 CDN 공급업체 구성](#sample-configurations) 섹션을 참조하십시오.
 
-라이브 트래픽을 수락하기 전에 Adobe의 고객 지원 센터를 통해 종단 간 트래픽 라우팅이 올바르게 작동하는지 확인해야 합니다.
+라이브 트래픽을 수락하기 전에 Adobe 고객 지원 센터를 통해 종단 간 트래픽 라우팅이 올바르게 작동하는지 확인해야 합니다.
 
 `X-AEM-Edge-Key`을(를) 설정한 후 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
 
@@ -203,7 +203,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 ## 지리적 위치 헤더 {#geo-headers}
 
-AEM Managed CDN은 다음과 같이 각 요청에 헤더를 추가합니다.
+AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다.
 
 * 국가 코드: `x-aem-client-country`
 * 대륙 코드: `x-aem-client-continent`
