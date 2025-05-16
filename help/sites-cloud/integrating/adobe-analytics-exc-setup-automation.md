@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 87%
+source-wordcount: '727'
+ht-degree: 86%
 
 ---
 
 # Adobe Analytics와 Experience Cloud 설정 자동화 통합 {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>Experience Cloud 설정 자동화 기능은 더 이상 사용되지 않습니다.
 
 Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Platform Tags 및 Adobe Analytics와 Experience Manager Sites를 통합하고 측정하는 간단하고 자동화된 방법을 제공합니다.
 
@@ -24,7 +28,7 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 
 ## 요구 사항
 
-자동화 설정은 특히 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko)가 활성화된 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 사용하여 구축된 AEM 사이트를 사용하여 작업하도록 설계되었습니다. [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용하거나 [사이트 템플릿](/help/journey-sites/quick-site/create-site.md)을 사용하여 사이트를 생성함으로써 이러한 기능이 자동으로 활성화되어 있는 새 사이트를 생성할 수 있습니다.
+자동화 설정은 특히 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)가 활성화된 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 사용하여 구축된 AEM 사이트를 사용하여 작업하도록 설계되었습니다. [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하거나 [사이트 템플릿](/help/journey-sites/quick-site/create-site.md)을 사용하여 사이트를 생성함으로써 이러한 기능이 자동으로 활성화되어 있는 새 사이트를 생성할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -51,7 +55,7 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 1. **Analytics 통합** 단추를 선택합니다.
 1. 그 결과로 표시되는 대화 상자에서 **보고서 세트 ID**&#x200B;의 이름을 입력합니다.
 
-   이 문자열은 선택한 AEM 사이트에 대한 분석 데이터를 위한 데이터 저장소인 Adobe Analytics에서 [보고서 세트 ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ko)을(를) 만드는 데 사용됩니다. 제공된 문자열에는 고유성을 위해 환경 및 계층 식별자가 추가됩니다.
+   이 문자열은 선택한 AEM 사이트에 대한 분석 데이터를 위한 데이터 저장소인 Adobe Analytics에서 [보고서 세트 ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html)를 만드는 데 사용됩니다. 제공된 문자열에는 고유성을 위해 환경 및 계층 식별자가 추가됩니다.
 
 1. 페이지 및 패널을 새로 고치고 **통합 상태 확인**&#x200B;을 선택하여 자동화 상태를 확인합니다.
 

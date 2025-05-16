@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
+source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2560'
 ht-degree: 97%
 
 ---
@@ -48,6 +48,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하여 10MB보다 큰 콘텐츠 패키지를 복제할 수 없습니다. | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일부터 Adobe Developer Console에서는 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 구성된 통합에 사용할 수 있으며, 그 이후에는 작동이 중단되므로 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 | [!DNL Foundation] | 콘텐츠 계층 구조 복제에 사용된 콘텐츠 트리 게시 워크플로 및 관련 콘텐츠 트리 게시 워크플로 단계. | 성능이 더 뛰어난 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)를 사용하십시오. |
+| Sites | [Experience Cloud 설치 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 없음 |
 
 
 ## 제거된 기능 {#removed-features}
