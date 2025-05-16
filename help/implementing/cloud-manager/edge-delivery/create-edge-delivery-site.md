@@ -1,21 +1,23 @@
 ---
-title: 한 번의 클릭으로 Cloud Manager에서 Edge Delivery 사이트 만들기
+title: 한 번의 클릭으로 첫 번째 Edge Delivery 사이트 만들기
 description: 버튼 클릭만으로 Cloud Manager에서 Edge Delivery 사이트를 빠르게 만드는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 767b1f89f42340cc9307a43ff9e97e9a074e592e
+source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 97%
+source-wordcount: '945'
+ht-degree: 95%
 
 ---
 
-# 한 번의 클릭으로 Cloud Manager에서 Edge Delivery 사이트 만들기{#about-one-click-edge-delivery-site}
+# 한 번의 클릭으로 첫 번째 Edge Delivery 사이트 만들기{#about-one-click-edge-delivery-site}
 
-Edge Delivery 사이트 만들기 기능은 Cloud Manager 내에서 Edge Delivery 사이트의 온보딩 및 배포를 자동화하는 데 도움이 되도록 설계되었습니다. 버튼 하나만 클릭하면 되므로 과정이 크게 간소화됩니다. 클릭 한 번으로 필요한 인프라를 프로비저닝하고, GitHub와 통합하여 버전을 제어하며, Google Drive에서 문서 및 자산 저장소를 구성할 수 있습니다.
+한 번의 클릭으로 첫 번째 Edge Delivery 사이트를 만들면 Cloud Manager 내에서 Edge Delivery 사이트의 온보딩 및 배포를 자동화할 수 있습니다. 버튼 하나만 클릭하면 되므로 과정이 크게 간소화됩니다. 클릭 한 번으로 필요한 인프라를 프로비저닝하고, GitHub와 통합하여 버전을 제어하며, Google Drive에서 문서 및 자산 저장소를 구성할 수 있습니다.
 
 이러한 자동화는 초기 사이트를 설정하는 데 필요한 수작업을 줄이는 데 도움이 됩니다. 원활한 워크플로와 확장성을 보장하고 에지에서 콘텐츠를 관리할 때 팀의 성과를 향상시킵니다.
+
+<!-- ADD LINK TO DORU'S VIDEO DEMO -->
 
 <!-- >
 ## Practical use cases {#use-cases}
