@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 81%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 81%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -166,14 +166,14 @@ ht-degree: 81%
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[새 편집기에서 열기](#editing-the-content-of-your-fragment)**
-* (원본 편집기에서) **[열기](/help/assets/content-fragments/content-fragments-variations.md)**
 * **[게시](#publishing-and-previewing-a-fragment)** (및 **[게시 취소](#unpublishing-a-fragment)**)
 * **[태그 관리](#manage-tags)**
-* **[복사](/help/assets/manage-digital-assets.md)**
-* **[이동](/help/assets/manage-digital-assets.md)**
-* **[이름 바꾸기](/help/assets/manage-digital-assets.md)**
-* **[삭제](#deleting-a-fragment)**
+* **복사**
 * **[바꾸기](#find-and-replace)**
+* **이동**
+* **이름 바꾸기**
+* **[삭제](#deleting-a-fragment)**(게시되지 않은 조각에만 사용 가능)
+
 
 >[!NOTE]
 >
