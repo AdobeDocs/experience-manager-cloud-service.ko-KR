@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -313,10 +313,10 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 ### AEM 범용 편집기에서 액세스 {#access-aem-universal-editor}
 
-[AEM 유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)의 액세스가 확장으로 구현되었습니다.
+[AEM 범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)에서의 액세스는 확장 기능으로 구현되었습니다.
 
-* 유니버설 편집기에서 변형 생성에 액세스하는 방법에 대한 자세한 내용은 [유니버설 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations) 문서를 참조하십시오.
-* 확장을 활성화하는 방법에 대한 자세한 내용은 AEM Experience Manager의 [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) 문서를 참조하십시오.
+* 범용 편집기에서 변형 생성에 액세스하는 방법에 대한 자세한 내용은 [범용 편집기를 사용하여 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)을 참조하십시오.
+* 확장 기능을 활성화하는 방법에 대한 자세한 내용은 [AEM Experience Manager의 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) 문서를 참조하십시오.
 
 ### AEM 콘텐츠 조각 편집기에서 액세스 {#access-aem-content-fragment-editor}
 
@@ -328,9 +328,9 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 * [GitHub에서 생성형 AI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
-* [Experience Cloud 제품의 생성 AI](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud 제품의 생성형 AI](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai)
 
-   * Experience Cloud 제품의 [생성 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud 제품의 생성형 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai#aem)
 
 ## 릴리스 기록 {#release-history}
 
