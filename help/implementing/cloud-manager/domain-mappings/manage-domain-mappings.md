@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
+source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집하거나 삭제하는 방법에 대해 알아봅니다.
 
-## 도메인 매핑 페이지에서 CDN 구성 편집 {#edit-cdn}
+## 도메인 매핑 페이지에서 CDN 구성 편집 {#edit-domain-mapping}
 
 Adobe Cloud Manager에서는 몇 가지 이유로 환경 계층(게시 또는 미리보기)과 SSL 인증서를 비롯한 CDN(Content Delivery Network) 구성을 편집할 수 있습니다.
 
