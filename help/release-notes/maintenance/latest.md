@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1482'
 ht-degree: 12%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 12%
 
 다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 정보를 간략히 소개합니다.
 
-## 릴리스 20783 {#20783}
+## 릴리스 20936 {#20936}
 
-2025년 5월 13일에 공개적으로 릴리스된 유지 보수 릴리스 20783에 대한 지속적인 개선 사항을 요약하면 다음과 같습니다. 이전 유지 관리 릴리스는 릴리스 20626.
+2025년 5월 19일에 공개적으로 릴리스된 유지 보수 릴리스 20936에 대한 지속적인 개선 사항을 요약하면 다음과 같습니다. 이전 유지 관리 릴리스는 릴리스 20626.
 
 이 유지 관리 릴리스(2025.5.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-20783}
+>[!NOTE]
+>
+>릴리스 20783은 5월 19일에 비공개로 변경되었으며 릴리스 정보로 20936.
+
+### 개선 사항 {#enhancements-20936}
 
 * FORMS-19125: 데이터 소스 트리의 해당 섹션을 양식 캔버스로 끌어 놓을 때 사용 가능한 적응형 양식 조각의 자동 매핑을 지원하도록 핵심 구성 요소 적응형 양식 편집기가 개선되었습니다. 이 기능은 기초 편집기에서 핵심 구성 요소로 주요 생산성 기능을 제공합니다.
 * FORMS-17107: 이제 AEM Forms에서 향상된 클라이언트측 사용자 지정 함수 구문 분석을 제공합니다. 여기에는 선택적 체인과 같은 최신 JavaScript 기능(ECMAScript ES10+)에 대한 지원이 포함되며 사용자 지정 함수 스크립트 내에서 정적 가져오기를 사용하는 기능이 도입되었습니다. 이를 통해 개발자는 코드를 보다 효율적으로 구성하고, ESM 모듈을 활용하고, 특히 이전에 이러한 기능에 대한 해결 방법이 필요했던 사용자를 위해 핵심 구성 요소 및 Edge Delivery Services을 기반으로 하는 적응형 Forms에서 사용자 정의 기능과 관련하여 발생한 이전 제한 사항을 제거할 수 있습니다.
@@ -46,7 +50,7 @@ ht-degree: 12%
 * SITES-26711: RTE 텍스트 필드에 대한 링크는 MSM 롤아웃 시 라이브 카피를 가리키도록 업데이트되지 않습니다.
 * SITES-25976: 경험 조각 내의 링크가 MSM 롤아웃 후에 조정되지 않습니다.
 
-### 해결된 문제 {#fixed-issues-20783}
+### 해결된 문제 {#fixed-issues-20936}
 
 * ASSETS-50994: AemRequestEventFilter에서 차단된 수신 트래픽.
 * CQ-4358591: &quot;번역 프로젝트 만들기&quot; 옵션을 사용하여 사이트 참조 패널에서 언어 사본을 만들 때 일부 언어에 대한 프로젝트가 누락되었습니다.
@@ -92,21 +96,22 @@ ht-degree: 12%
 * SITES-31020: 진행 상황을 고객에게 보여 주기 위해 라이브 카피 만들기 작업 UI를 개선합니다.
 * SITES-29816: 경험 조각의 라이브 카피를 만드는 동안 &quot;리소스를 찾을 수 없음&quot; 오류가 발생했습니다.
 * SITES-29363: 중첩된 라이브 복사 콘텐츠 계층 구조에서 라이브 복사 재설정 버튼이 작동하지 않습니다.
+* SITES-31467: 페이지 편집기의 `contexthub.authoring-hook.js`에서 JS 오류가 발생했습니다.
 * SKYOPS-106509: Java 21에서 GSON 반사 액세스를 지원하기 위해 보조 추가 열기 플래그를 추가합니다.
 
-### 알려진 문제 {#known-issues-20783}
+### 알려진 문제 {#known-issues-20936}
 
-없음.
+* SITES-28030: 타깃팅 옵션을 선택할 때 타겟 시작 옵션이 누락되었습니다.
 
-### 사용 중단된 기능 및 API {#deprecated-20783}
+### 사용 중단된 기능 및 API {#deprecated-20936}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-20783}
+### 보안 수정 {#security-20936}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스는 19개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 노력을 강화합니다.
 
-### 임베드된 기술 {#embedded-tech-20783}
+### 임베드된 기술 {#embedded-tech-20936}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
