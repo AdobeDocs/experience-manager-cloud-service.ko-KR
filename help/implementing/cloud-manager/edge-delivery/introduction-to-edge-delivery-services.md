@@ -84,7 +84,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 
