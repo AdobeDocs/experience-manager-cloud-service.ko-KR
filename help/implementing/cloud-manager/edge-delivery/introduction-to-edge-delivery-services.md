@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d866df00c25a827d351fcaf21a8c63ab04e6e41
+source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 96%
+source-wordcount: '800'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,9 @@ Cloud Manager를 통해 Edge Delivery Services 라이선스에 액세스하고 �
 * [SLA 보고 액세스](/help/implementing/cloud-manager/sla-reporting.md) (*곧 제공 예정*)
 * 등록된 프로덕션 프로그램에 대한 [Adobe 지원에 액세스합니다.](/help/edge/overview.md#support-ticket)
 
-또한 Cloud Manager를 사용하면 Edge Delivery 사이트에 [Adobe에서 관리하는 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 인증서의 구성 및 추가를 포함한 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. 또한 DV 인증서가 생성된 후 삭제되지 않는 한 Adobe는 3개월마다 자동으로 인증서를 갱신합니다. Adobe에 Edge Delivery Services 라이선스가 없고 자체 관리 CDN을 사용하도록 선택한 경우 해당 설정은 [`aem.live` 플랫폼](https://www.aem.live/docs/go-live-checklist#cdn-configuration)에서 실행해야 합니다.
+EDS(Edge Delivery Services) 라이선스가 있는 경우 Edge Delivery 사이트에 대해 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을(를) 사용하고, 삭제하지 않는 한 3개월마다 셀프서비스 CDN 관리 및 DV 인증서 자동 갱신과 같은 기능을 활용할 수 있습니다.
+
+또는 Edge Delivery Services 라이선스에 관계없이 CDN(즉, Adobe에서 관리하지 않는 CDN)을 사용하도록 선택하는 경우 `aem.live` 플랫폼에서 구성해야 합니다. [BYO CDN 설정](https://www.aem.live/docs/byo-cdn-setup)을 참조하세요.
 
 
 ## 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery Services 추가에 대한 정보
@@ -84,7 +86,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 
