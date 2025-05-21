@@ -1,19 +1,21 @@
 ---
-title: 적응형 양식을 Microsoft® Power Automate와 통합하는 방법
-description: Microsoft® Power Automate와 적응형 양식을 통합합니다.
+title: 적응형 양식을 Microsoft&reg; Power Automate와 통합하는 방법
+description: 적응형 양식을 Microsoft&reg; Power Automate와 통합합니다.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: power automate에 AEM forms 연결, Power Automate AEM Forms, Adaptive Forms에 power automate 통합, Adaptive Forms에서 Power Automate로 데이터 전송
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
+source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1243'
 ht-degree: 12%
 
 ---
 
 
 # Microsoft® Power Automate와 적응형 양식 연결 {#connect-adaptive-form-with-power-automate}
+
+<span class="preview"> GovCloud를 사용하고 있고 GCC(정부 클라우드 컴퓨팅) 테넌트에 연결해야 하는 경우, 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램을 통한 액세스를 요청하십시오. </span>
 
 제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 구축하여 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로를 자동화할 수 있습니다.
 
@@ -37,17 +39,17 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
 * Microsoft® Power Automate Premium 라이센스.
 * 적응형 양식 제출 데이터를 수락하기 위한 `When an HTTP request is received` 트리거를 사용하는 Microsoft® [Power Automate 흐름](https://docs.microsoft.com/en-us/power-automate/create-flow-solution).
-* [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한을 가진 Experience Manager 사용자
+* [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
-## Microsoft® Power Automate와 Forms as a Cloud Service 인스턴스 연결 {#connect-forms-server-with-power-automate}
+## Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결 {#connect-forms-server-with-power-automate}
 
-Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하려면 다음 작업을 수행하십시오.
+다음 작업을 수행하여 Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate에 연결합니다.
 
 1. [Microsoft 만들기](#ms-power-automate-application)
 1. [Microsoft 만들기](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [Microsoft 만들기](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Microsoft 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Microsoft® Azure Active Directory 응용 프로그램 만들기 {#ms-power-automate-application}
 
@@ -88,7 +90,7 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
 1. AEM Forms 작성자 인스턴스에서 **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 구성 브라우저]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정하고 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
-1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**(으)로 이동하여 이전 단계에서 만든 구성 컨테이너를 엽니다.
+1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**(으)로 이동한 후 이전 단계에서 만든 구성 컨테이너를 엽니다.
 
 
    >[!NOTE]
@@ -104,7 +106,7 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
 
 ### Microsoft® Power Automate 플로우 서비스 클라우드 구성 생성 {#create-microsoft-power-automate-flow-cloud-configuration}
 
-1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate 흐름 서비스]**(으)로 이동하여 이전 섹션에서 만든 구성 컨테이너를 엽니다.
+1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® Power Automate 플로우 서비스]**(으)로 이동하여 이전 섹션에서 만든 구성 컨테이너를 엽니다.
 
 
    >[!NOTE]
@@ -126,17 +128,17 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
 
 1. **[!UICONTROL 연결]**&#x200B;을 선택합니다. 메시지가 표시되면 Microsoft® Azure 계정에 로그인합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-### Publish Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 게시 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
-1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**(으)로 이동하여 이전 [Microsoft 만들기® Power Automate Dataverse 클라우드 구성](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 구성 컨테이너를 엽니다.
-1. `dataverse` 구성을 선택하고 **[!UICONTROL Publish]**&#x200B;을(를) 선택합니다.
-1. Publish 페이지에서 **[!UICONTROL 모든 구성]**&#x200B;을 선택하고 **[!UICONTROL Publish]**&#x200B;을 선택합니다. Publish Power Automate Dataverse 및 Power Automate Flow Service 클라우드 구성 모두
+1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**(으)로 이동한 후 이전 [Microsoft® Power Automate Dataverse 클라우드 구성 만들기](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 구성 컨테이너를 엽니다.
+1. `dataverse` 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;를 선택합니다.
+1. 게시 페이지에서 **[!UICONTROL 모든 구성]**&#x200B;을 선택하고 **[!UICONTROL 게시]**&#x200B;를 선택합니다. Power Automate Dataverse 및 Power Automate Flow Service 클라우드 구성을 모두 게시합니다.
 
-이제 Forms as a Cloud Service Microsoft 인스턴스® Power Automate와 연결됩니다. 이제 적응형 Forms 데이터를 Power Automate 흐름에 보낼 수 있습니다.
+이제 Forms as a Cloud Service 인스턴스가 Microsoft® Power Automate와 연결됩니다. 이제 적응형 Forms 데이터를 Power Automate 흐름에 보낼 수 있습니다.
 
 ## Microsoft 호출® Power Automate 플로우 제출 액션을 사용하여 Power Automate 플로우에 데이터 전송 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-[Forms as a Cloud Service 인스턴스를 Microsoft®와 연결](#connect-forms-server-with-power-automate)한 후 다음 작업을 수행하여 캡처된 데이터를 양식 제출 시 Microsoft® 플로우로 전송하도록 적응형 양식을 구성하십시오.
+[Microsoft® Power Automate와 Forms as a Cloud Service 인스턴스를 연결](#connect-forms-server-with-power-automate)한 후 다음 작업을 수행하여 캡처된 데이터를 양식 제출 시 Microsoft® 플로우로 전송하도록 적응형 양식을 구성하십시오.
 
 1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. 구성 컨테이너에서 [Microsoft 만들기® Power Automate Dataverse 클라우드 구성](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 컨테이너를 찾아 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
@@ -215,7 +217,7 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft&reg; Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 -->
 
 
