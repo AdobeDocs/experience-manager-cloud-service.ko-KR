@@ -216,7 +216,7 @@ Cloud Manager에서 다음 단계를 실행하여 게재 계층에서 사용자 
 
 1. [사용자 지정 도메인 이름 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. 환경 세부 정보 페이지로 이동하고 [CDN 구성을 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)합니다. 구성을 추가하는 동안 **[!UICONTROL CDN 구성]** 대화 상자의 **[!UICONTROL 계층]** 필드에서 **[!UICONTROL 배달]**&#x200B;을 선택합니다.
+1. 환경 세부 정보 페이지로 이동하고 [CDN 구성을 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)합니다. 구성을 추가하는 동안 **[!UICONTROL CDN 구성]** 대화 상자의 **[!UICONTROL 계층]** 필드에서 **[!UICONTROL 배달]**&#x200B;을 선택합니다.
 
    ![CDN 구성](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
