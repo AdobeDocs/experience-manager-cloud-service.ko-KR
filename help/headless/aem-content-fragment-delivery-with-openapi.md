@@ -1,21 +1,21 @@
 ---
-title: OpenAPI를 사용한 AEM 컨텐츠 조각 게재
+title: OpenAPI와 함께 사용하는 AEM 콘텐츠 조각 게재
 description: OpenAPI를 사용한 tAEM 콘텐츠 조각 게재에 대해 알아보기
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 4%
 
 ---
 
-# OpenAPI를 사용한 AEM 컨텐츠 조각 게재 {#aem-content-fragment-delivery-with-openapi}
+# OpenAPI와 함께 사용하는 AEM 콘텐츠 조각 게재 {#aem-content-fragment-delivery-with-openapi}
 
 Adobe Experience Manager(AEM) as a Cloud Service에서 컨텐츠 조각 전달을 위한 AEM OpenAPI는 다음과 같습니다.
 
-* 은(는) JSON 형식의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하도록 설계된 [AEM Edge Delivery Services](/help/edge/overview.md)의 HTTP REST API입니다
+* 는 JSON 형식으로 AEM 컨텐츠 조각의 라이브 게재에 최적화된 OpenAPI입니다
 * 는 활성 콘텐츠 무효화를 허용하는 최신 CDN 통합을 제공합니다
 * 컨텐츠 전달(성능, 확장성, CDN 통합, 최적화된 JSON 제어 및 출력)에 중점을 둡니다.
 * 참조된 조각 및 에셋에 대해 JSON을 하이드레이션하는 기능이 포함되어 있습니다
