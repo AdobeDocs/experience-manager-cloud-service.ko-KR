@@ -63,7 +63,7 @@ AEM에서는 사용자 및 그룹에 대한 권한 관리를 도입했습니다.
 
 >[!NOTE]
 >
->권한 및 설명의 전체 목록은 [사용자, 그룹 및 액세스 권한 관리](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)를 참조하십시오.
+>권한 및 설명의 전체 목록은 [사용자, 그룹 및 액세스 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)를 참조하십시오.
 
 ![지정한 경로에 대한 검색 권한입니다.](assets/image2019-3-21_0-5-47.png) ![수직 열에서 선택한 경로에 표시된 대로 &#39;dam-users&#39;에 대한 새 항목을 추가합니다.](assets/image2019-3-21_0-6-53.png)
 
