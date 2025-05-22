@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2024년 5월 릴리스 개요 비디오를 통해 2024.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448069?quality=12&captions=kor)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
