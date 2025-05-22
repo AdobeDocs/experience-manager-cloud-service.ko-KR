@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.3.0 �
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 92%
+source-wordcount: '2283'
+ht-degree: 91%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 92%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 92%
 
 2024년 3월 릴리스 개요 비디오를 통해 2024.3.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3450366?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ ht-degree: 92%
 
 ![AEM 작성](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-자세한 내용은 [설명서](/help/edge/overview.md)를 참조하고 [AEM Gems - AEM Authoring 및 Edge Delivery Services 시작하기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=ko#M43905)를 시청하십시오.
+자세한 내용은 [설명서](/help/edge/overview.md)를 참조하고 [AEM Gems - AEM Authoring 및 Edge Delivery Services 시작하기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)를 시청하십시오.
 
 **Headless 구현을 위한 Universal Editor**
 
@@ -123,7 +123,7 @@ Assets Essentials에서 관리자는 저장소에서 사용할 수 있는 비공
 이러한 서비스를 통해 다음이 가능합니다.
 
 * 동일한 양식 사이트에서 여러 콘텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 양식 편집기 등 선호하는 작성 도구를 사용합니다.
-* RUM(실시간 사용 모니터링)을 통해 양식 성능을 빠르고 지속적으로 모니터링하는 로드 및 렌더링의 디지털 등록 경험을 제공합니다.
+* 운영 원격 분석을 통해 양식 성능을 빠르고 지속적으로 모니터링하고 로드하고 렌더링하는 디지털 등록 경험을 제공합니다.
 * 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 방지하면서 뛰어난 경험을 창출합니다.
 
 
@@ -186,10 +186,10 @@ Assets Essentials에서 관리자는 저장소에서 사용할 수 있는 비공
 
   공식 이메일 ID에서 “`aem-forms-ea@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.
 
-* **[RUM(Real Use Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;를 활용하여 AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
-RUM(Real Use Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
+* **[작동 원격 분석 서비스를 사용하여](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
+운영 원격 분석 서비스는 사용자 상호 작용을 보다 정밀하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
 
-  이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 RUM을 활성화하고자 하는 각 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그런 다음 Adobe 제품 팀이 RUM(Real Use Monitoring) 데이터 서비스를 활성화합니다.
+  이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 운영 원격 분석을 사용할 각 환경의 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`에게 전자 메일을 보내십시오. 그런 다음 Adobe 제품 팀이 Operational Telemetry Service를 활성화합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

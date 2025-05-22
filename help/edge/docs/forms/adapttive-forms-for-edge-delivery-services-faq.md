@@ -6,10 +6,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ### Q: 한 번 생성한 양식을 여러 웹 페이지에서 사용할 수 있습니까?
 
-**A:** 예. 적응형 양식에서 구성 요소 기능을 포함하는 양식과 유사하게 한 위치에 양식을 만들고 여러 웹 페이지에서 이를 참조할 수 있습니다.
+**A:** 예. 적응형 양식에서 구성 요소 기능을 임베드한 양식과 유사하게 한 위치에 양식을 만들고 여러 웹 페이지에서 이를 참조할 수 있습니다.
 
 ## 데이터 통합 및 매핑
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 **A:** 다음과 같은 분석 및 추적 옵션을 사용할 수 있습니다.
 
 - Adobe Experience Platform Web SDK (기본 권장 사항)
-- 실사용자 모니터링(RUM)을 통한 샘플링된 지표 제공
+- 샘플링된 지표에 대한 운영 원격 분석
 - 필요에 따라 기타 분석 시스템과 통합 가능
 
 ## 설명서 및 리소스

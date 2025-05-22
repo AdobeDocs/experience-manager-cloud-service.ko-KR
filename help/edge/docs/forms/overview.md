@@ -4,10 +4,10 @@ description: AEM Forms용 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Forms용 Edge Delivery Services는 새 양식을 빠르게 업데이트, 게
 
 * **원하는 도구를 사용하여 등록 경험 조성**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft SharePoint 또는 Google Drive)과 WYSIWYG 작성(범용 편집기 또는 적응형 양식 편집기)을 사용할 수 있습니다. 동일한 양식 사이트에서 여러 콘텐츠 소스로 작업하고 Microsoft Excel, Google Sheets, 범용 편집기 또는 적응형 양식 편집기 등 선호하는 작성 도구를 사용할 수 있습니다.
 
-* **뛰어난 디지털 등록 경험 제공:** 실제 사용 모니터링(RUM)을 통해 신속하게 로드 및 렌더링하고 양식 성능을 지속적으로 모니터링하는 디지털 등록 경험을 제공합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률과 전환율을 향상할 수 있습니다.
+* **뛰어난 디지털 등록 환경 제공:** 운영 원격 분석을 통해 양식 성능을 빠르고 지속적으로 모니터링하고 로드하는 디지털 등록 환경을 제공합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률과 전환율을 향상할 수 있습니다.
 
 * **개발자 친화적인 도구 세트 사용:** AEM Forms용 Edge Delivery Services는 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 방지하면서 뛰어난 경험을 창출합니다. 기본적인 웹 개발 기술을 갖춘 개발자라면 양식 구성 요소와 경험을 사용자 정의하고 손쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요 없이 코드를 GitHub에 체크인하면 변경 사항이 적용됩니다.
 
@@ -62,7 +62,7 @@ AEM Forms용 Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHu
 * 스팸 방지를 위한 Google reCAPTCHA 통합.
 * 특정 요구에 맞는 사용자 정의 양식 구성 요소를 만드는 기능.
 * 양식 데이터를 Microsoft Excel 또는 Google Sheets 또는 이메일 주소로 직접 제출.
-* 실제 사용 모니터링(RUM)을 통해 양식 성능 모니터링
+* 운영 원격 분석을 통해 양식 성능 모니터링
 
 #### WYSIWYG 작성 기능
 

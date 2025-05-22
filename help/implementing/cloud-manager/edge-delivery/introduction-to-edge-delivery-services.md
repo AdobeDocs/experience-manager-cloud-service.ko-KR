@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 90%
+source-wordcount: '798'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 이 기능을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse 점수로 빠른 사이트를 만듭니다.
-* RUM(실제 사용 모니터링)을 통해 지속적으로 성능을 모니터링합니다.
+* 운영 원격 분석을 통해 성능을 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다.
 
 범용 편집기를 사용하는 AEM 콘텐츠 관리 및 WYSIWYG 작성과 문서 기반 작성을 모두 사용할 수 있습니다.
@@ -86,7 +86,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 

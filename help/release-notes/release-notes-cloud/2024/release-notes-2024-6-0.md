@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.6.0 �
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 98%
 
 ### Experience Manager Sites의 새로운 기능 {#new-feature-sites}
 
-**RUM(Real Use Monitoring) 데이터 서비스** {#real-use-monitoring}
+**운영 원격 분석 데이터 서비스** {#real-use-monitoring}
 
-[실제 사용 모니터링(RUM) 데이터 서비스](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)는 이제 일반적으로 사용할 수 있어 AEM as a Cloud Service에 대한 클라이언트측 데이터 수집이 가능합니다. 이 서비스는 사용자 상호 작용을 보다 정확하게 반영하므로 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 수행할 수 있습니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 인사이트를 얻어 페이지 성능을 이해하고 개선할 수 있습니다.
+[운영 원격 분석 서비스](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)를 이제 일반적으로 사용할 수 있으므로 AEM as a Cloud Service에 대해 클라이언트측 데이터 수집을 사용할 수 있습니다. 이 서비스는 사용자 상호 작용을 보다 정확하게 반영하므로 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 수행할 수 있습니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 인사이트를 얻어 페이지 성능을 이해하고 개선할 수 있습니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 

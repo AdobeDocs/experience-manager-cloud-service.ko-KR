@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.5.0 �
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 99%
 >
 >여기에서 2022년 또는 2023년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 2024년 5월 릴리스 개요 비디오를 통해 2024.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448069?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ ht-degree: 99%
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### RUM(Real Use Monitoring) 데이터 서비스 {#real-use-monitoring}
+#### 운영 원격 분석 서비스 {#real-use-monitoring}
 
-* **[실제 사용 모니터링(RUM) 데이터 서비스는 이제 GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;를 통해 AEM as a Cloud Service에 대한 클라이언트측 데이터 수집이 가능합니다.
+* **[이제 작동 원격 분석 서비스가 GA됩니다](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM as a Cloud Service에 대한 클라이언트측 데이터 수집을 사용하도록 설정합니다.
 클라이언트측 컬렉션인 실제 사용 모니터링 서비스는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 향상된 인사이트를 얻을 수 있습니다. 페이지 성능에 대해 자세히 알아보고 이를 개선하기 위한 인사이트를 얻을 수 있는 좋은 기회입니다.
 
 #### Edge Delivery Services용 AEM 작성 {#edge-enhancements}
