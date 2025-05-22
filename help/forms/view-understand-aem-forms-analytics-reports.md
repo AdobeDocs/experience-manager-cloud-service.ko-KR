@@ -7,9 +7,9 @@ feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '984'
 ht-degree: 97%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 97%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 이 문서 |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 빠르게 변화하는 디지털 분석 환경에서 정보에 입각한 결정을 내리고 디지털 경험을 최적화하려면 지속적으로 글로벌 트렌드에 적응해야 합니다. 문제 해결을 위해 적응형 양식은 Adobe Analytics와 원활하게 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적합니다. 이러한 지표를 분석하는 목적은 양식의 유용성과 효율성을 높일 수 있는 지표 및 분석을 사용하여 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
@@ -28,6 +28,11 @@ ht-degree: 97%
 ## 적응형 양식에 Adobe Analytics 설정 {#setup-adobe-analytics-to-aem-forms}
 
 AEM Forms Analytics 보고서의 경우 Experience Cloud 설정 자동화를 통해 먼저 Adobe Analytics를 AEM Forms에 통합합니다. 데이터 집계 및 인사이트 생성 간소화를 위해 추적 스크립트와 Experience Platform Launch API와의 통합 기능을 관리하려면 적응형 양식의 Experience Cloud 설정 자동화에 Adobe Analytics 라이선스, 데이터 수집(이전 명칭 Adobe Launch)이 필요합니다. 전체 설정 정보를 보려면 [Experience Cloud 설정 자동화를 통해 적응형 양식용 Adobe Analytics를 사용할 수 있도록 설정](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)을 참조하십시오.
+
+>[!CAUTION]
+>
+>Experience Cloud 설정 자동화 기능은 더 이상 사용되지 않습니다.
+
 
 ## 적응형 양식 Adobe Analytics 보고서 보기 {#view-adobe-analytics-report}
 
@@ -52,7 +57,7 @@ Adobe Analytics는 양식 사용에 대한 중요한 인사이트 확보를 위�
 
 * **유효성 검사 오류**: 유효성 검사 오류는 양식 필드에 발생한 유효성 검사 관련 총 오류 수를 표시합니다.
 
-* **고유 방문자 수**: 고유 방문자 수는 방문자가 양식을 렌더링한 횟수를 나타냅니다. 고유 방문자 수에 대한 자세한 내용은 [고유 방문자 수, 방문자 수와 고객 행동](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ko)을 참조하십시오.
+* **고유 방문자 수**: 고유 방문자 수는 방문자가 양식을 렌더링한 횟수를 나타냅니다. 고유 방문자 수에 대한 자세한 내용은 [고유 방문자 수, 방문자 수와 고객 행동](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)을 참조하십시오.
 
   ![양식 성능](assets/forms-performance.png){width="100%"}
 
@@ -60,8 +65,8 @@ Adobe Analytics는 양식 사용에 대한 중요한 인사이트 확보를 위�
 
 이를 통해 양식의 방문자 활동에 대한 중요한 인사이트를 확보할 수 있습니다.
 
-* **방문 및 제출 수**: 날짜 범위 내 양식 방문 빈도와 해당 양식 제출 횟수에 대해 설명합니다. 이 대한 자세한 내용은 [방문](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=ko)을 클릭합니다.
-* **고유 방문자 수 및 총 방문 수**: 새 사용자와 재방문 사용자를 구분합니다. 예를 들어 방문자는 한 달 동안 매일 사이트를 방문할 수 있지만 여전히 하나의 고유 방문자로 계산됩니다. 자세한 내용은 [고유 방문자 수](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ko)를 참조하십시오.
+* **방문 및 제출 수**: 날짜 범위 내 양식 방문 빈도와 해당 양식 제출 횟수에 대해 설명합니다. 이 대한 자세한 내용은 [방문](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)을 클릭합니다.
+* **고유 방문자 수 및 총 방문 수**: 새 사용자와 재방문 사용자를 구분합니다. 예를 들어 방문자는 한 달 동안 매일 사이트를 방문할 수 있지만 여전히 하나의 고유 방문자로 계산됩니다. 자세한 내용은 [고유 방문자 수](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)를 참조하십시오.
 
   ![양식 방문자 수](assets/forms-visitors.png){width="100%"}
 
