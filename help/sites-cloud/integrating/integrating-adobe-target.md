@@ -33,12 +33,12 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 ## Adobe Target 구성 만들기 {#create-configuration}
 
-1. **도구** → **클라우드 서비스**로 이동합니다.
+1. **도구** → **클라우드 서비스**&#x200B;로 이동합니다.
    ![탐색](assets/cloudservice1.png "탐색")
 2. **Adobe Target**&#x200B;을 선택합니다.
 3. **만들기** 버튼을 선택합니다.
    ![만들기](assets/tenant1.png "만들기")
-4. 아래의 세부 정보를 입력한 다음 **연결**을 선택합니다.
+4. 아래의 세부 정보를 입력한 다음 **연결**&#x200B;을 선택합니다.
    ![연결](assets/open_screen1.png "연결")
 
 ### IMS 구성 {#ims-configuration}
@@ -139,7 +139,7 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 1. **데이터 요소**&#x200B;를 선택합니다.
 2. **데이터 요소 추가**&#x200B;를 선택합니다.
 3. 데이터 요소의 이름을 입력한 다음 ContextHub 매개변수로 매핑합니다.
-4. **저장**을 선택합니다.
+4. **저장**&#x200B;을 선택합니다.
    ![데이터 요소](assets/data_elem1.png "데이터 요소")
 
 ### 페이지 규칙 만들기 {#page-rule}
