@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 82%
 
 ## 고려 사항
 
-* 유니버설 편집기 인터페이스에 **데이터 원본** 아이콘이 없거나 오른쪽 속성 패널에 **참조 바인딩** 속성이 없으면 **Extension Manager**&#x200B;에서 **데이터 원본** 확장을 사용하도록 설정하십시오.
+* 범용 편집기 인터페이스에서 **데이터 소스** 아이콘이 표시되지 않거나 오른쪽 속성 패널에서 **바인드 참조** 속성이 표시되지 않으면 **Extension Manager**&#x200B;에서 **데이터 소스** 확장 기능을 활성화하십시오.
 
-  ![확장 관리자](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  유니버설 편집기에서 확장을 활성화하고 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+  범용 편집기에서 확장 기능을 활성화하거나 비활성화하는 방법을 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
 
 * 현재 범용 편집기의 양식 미리 채우기 서비스는 지원되지 않습니다.
 
@@ -93,7 +93,7 @@ ht-degree: 82%
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다.
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
-1. 데이터 소스를 추가할 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
+1. 데이터 소스를 추가할 양식을 선택하고 **[!UICONTROL 속성]**을 클릭합니다.
    ![양식 속성 열기](/help/edge/docs/forms/universal-editor/assets/non-schema-based-edit-properties.png)
 
    양식 속성이 열립니다.
@@ -133,27 +133,27 @@ ht-degree: 82%
 
    ![양식 작성](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-**바인드 참조** 속성에서 선택하여 양식 필드에 데이터 바인딩을 추가할 수 있습니다. 예를 들어 양식에 이미 있는 **Id** 텍스트 상자에 데이터 바인딩 참조를 추가하겠습니다.
+**바인드 참조** 속성에서 데이터 바인딩을 선택하여 양식 필드에 추가할 수 있습니다. 예를 들어 양식에 이미 존재하는 **ID** 텍스트 상자에 데이터 바인딩 참조를 추가해 보겠습니다.
 데이터 소스 트리에서 양식 필드에 대한 데이터 바인딩을 선택하려면 다음 단계를 수행하십시오.
 
-1. 데이터 바인드 참조를 추가할 양식 필드의 속성을 엽니다.
-1. **참조 바인딩** 속성으로 이동하여 **찾아보기** 아이콘을 클릭합니다.
+1. 데이터 바인드 참조를 추가할 양식 필드 속성을 엽니다.
+1. **바인드 참조** 속성으로 이동하여 **찾아보기** 아이콘을 클릭합니다.
 
    ![양식 필드에 대한 데이터 바인딩 수동 추가](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. **바인딩 참조 선택** 마법사의 데이터 원본 트리에서 데이터 바인딩 참조를 선택합니다.
+1. **바인드 참조 선택** 마법사의 데이터 소스 트리에서 데이터 바인딩 참조를 선택합니다.
 
    ![데이터 바인드 참조 선택](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. 양식 필드에 바인딩할 데이터 원본 트리에서 데이터 요소를 선택하고 **선택**&#x200B;을 클릭합니다.
+1. 양식 필드에 바인딩하려는 데이터 소스 트리에서 데이터 요소를 선택하고 **선택**&#x200B;을 클릭합니다.
 
    ![데이터 요소 선택](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-   양식 필드가 데이터 요소에 바인딩되고 **바인드 참조** 속성에 나타납니다.
+   양식 필드는 데이터 요소에 바인딩되어 **바인드 참조** 속성에 나타납니다.
 
    ![자동 데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-   양식 필드에 대한 **참조 바인딩** 속성을 수동으로 편집할 수도 있습니다.
+   양식 필드의 **바인드 참조** 속성을 수동으로 편집할 수도 있습니다.
 
 이제 양식에 [제출 액션을 추가하고 구성](/help/edge/docs/forms/universal-editor/submit-action.md)할 수 있습니다.
 

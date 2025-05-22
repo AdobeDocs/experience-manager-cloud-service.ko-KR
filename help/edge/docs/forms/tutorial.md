@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1899'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -237,7 +237,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 &lt;owner> 저장소 소유자와 &lt;repo> 저장소 이름은 바꿉니다.
+1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 <owner> 저장소 소유자와 <repo> 저장소 이름은 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -269,7 +269,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 >[!NOTE]
 >
 >
-> 이 단계는 [AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate)을 사용하여 빌드된 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
+> 이 단계는 [AEM 상용구 XWalk](https://github.com/adobe/aem-boilerplate)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
 통합하는 방법은 다음과 같습니다.
 
@@ -280,8 +280,8 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
    * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
-1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일로 업데이트](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. AEM 프로젝트의 `/models/_section.json`(으)로 이동하여 &quot;form&quot; 및 &quot;embed-adaptive-form&quot;을 `filters` 개체의 구성 요소 배열에 추가합니다.
+1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 [AEM Forms 상용구의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)로 업데이트합니다.
+1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 &quot;form&quot;과 &quot;embed-adaptive-form&quot;을 추가합니다.
 
    ```
        "filters": [
@@ -297,7 +297,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
     }]
    ```
 
-1. (선택 사항) AEM 프로젝트에서 `/.eslintignore`(으)로 이동하여 아래 코드 행을 추가합니다.
+1. (선택 사항) AEM 프로젝트에서 `/.eslintignore`로 이동하여 다음 코드 줄을 추가합니다.
 
    ```
    blocks/form/rules/formula/*
@@ -307,7 +307,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
    scripts/editor-support-rte.js
    ```
 
-1. (선택 사항) AEM 프로젝트에서 `/.eslintrc.js`(으)로 이동하여 `rules` 개체에 아래 코드 행을 추가합니다.
+1. (선택 사항) AEM 프로젝트에서 `/.eslintrc.js`로 이동하여 `rules` 오브젝트에서 다음 코드 줄을 추가합니다.
 
    ```
    'xwalk/max-cells': ['error', {
@@ -340,7 +340,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
    ```
 
-1. 터미널을 열고 아래 명령을 실행합니다.
+1. 터미널을 열고 다음 명령을 실행합니다.
 
    ```
    npm i
@@ -349,7 +349,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
    >[!NOTE]
    >
-   > 변경 사항을 GitHub의 AEM 프로젝트 리포지토리에 푸시하기 전에 AEM 프로젝트의 루트 수준에 있는 `component-definition.json`, `component-models.json` 및 `component-filters.json` 파일이 양식 관련 개체로 업데이트되었는지 확인하십시오.
+   > GitHub의 AEM 프로젝트 저장소에 변경 사항을 푸시하기 전에 AEM 프로젝트의 루트 수준에 있는 `component-definition.json`, `component-models.json` 및 `component-filters.json` 파일이 양식 관련 오브젝트로 업데이트되었는지 확인합니다.
 
 1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
 
@@ -359,8 +359,8 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 잠재적인 문제를 해결하면 GitHub 빌드 프로세스를 원활하게 할 수 있습니다.
 
-* **모듈 경로 확인 오류:**
-&quot;모듈 &quot;&#39;/scripts/lib-franklin.js&#39;의 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 [EDS 프로젝트]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
+* **모듈 경로 오류 해결:**
+&quot;모듈 &quot;scripts/lib-franklin.js&quot;에 대한 경로를 확인할 수 없음&quot; 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.

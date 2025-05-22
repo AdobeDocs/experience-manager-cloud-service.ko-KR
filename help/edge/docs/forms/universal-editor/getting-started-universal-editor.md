@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,6 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       ![fstab.yaml 파일 열기](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. **fstab.yaml** 파일을 편집하여 프로젝트의 마운트 지점을 업데이트합니다. URL을 AEM as a Cloud Service 작성 인스턴스의 URL로 바꿉니다.
-
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml 파일 편집](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -118,7 +117,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
       단 몇 분 만에 새로운 AEM 프로젝트가 생성됩니다.
 
-   1. Sites 콘솔에서 새로 만든 AEM 프로젝트로 이동하여 **편집**&#x200B;을 클릭합니다.
+   1. Sites 콘솔에서 새로 만든 AEM 프로젝트로 이동하여 **편집**을 클릭합니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
 
       ![AEM 사이트 편집](/help/edge/docs/forms/assets/edit-site.png)
@@ -166,7 +165,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 >[!NOTE]
 >
 >
-> 이 단계는 [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)을 사용하여 빌드된 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
+> 이 단계는 [AEM 상용구 XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)를 사용하여 빌드한 프로젝트에 적용됩니다. [AEM Forms 상용구](https://github.com/adobe-rnd/aem-boilerplate-forms)를 사용하여 AEM 프로젝트를 만든 경우 이 단계를 건너뛸 수 있습니다.
 
 통합하는 방법은 다음과 같습니다.
 
@@ -177,8 +176,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
-1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 AEM Forms Boilerplate의 [editor-support.js 파일로 업데이트](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. AEM 프로젝트의 `/models/_section.json`(으)로 이동하여 &quot;form&quot; 및 &quot;embed-adaptive-form&quot;을 `filters` 개체의 구성 요소 배열에 추가합니다.
+1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 [AEM Forms 상용구의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)로 업데이트합니다.
+1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 &quot;form&quot;과 &quot;embed-adaptive-form&quot;을 추가합니다.
 
    ```
        "filters": [
@@ -194,7 +193,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
     }]
    ```
 
-1. (선택 사항) AEM 프로젝트에서 `/.eslintignore`(으)로 이동하여 아래 코드 행을 추가합니다.
+1. (선택 사항) AEM 프로젝트에서 `/.eslintignore`로 이동하여 다음 코드 줄을 추가합니다.
 
    ```
    blocks/form/rules/formula/*
@@ -204,7 +203,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    scripts/editor-support-rte.js
    ```
 
-1. (선택 사항) AEM 프로젝트에서 `/.eslintrc.js`(으)로 이동하여 `rules` 개체에 아래 코드 행을 추가합니다.
+1. (선택 사항) AEM 프로젝트에서 `/.eslintrc.js`로 이동하여 `rules` 오브젝트에서 다음 코드 줄을 추가합니다.
 
    ```
    'xwalk/max-cells': ['error', {
@@ -237,7 +236,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
    ```
 
-1. 터미널을 열고 아래 명령을 실행합니다.
+1. 터미널을 열고 다음 명령을 실행합니다.
 
    ```
    npm i
@@ -246,7 +245,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    >[!NOTE]
    >
-   > 변경 사항을 GitHub의 AEM 프로젝트 리포지토리에 푸시하기 전에 AEM 프로젝트의 루트 수준에 있는 `component-definition.json`, `component-models.json` 및 `component-filters.json` 파일이 양식 관련 개체로 업데이트되었는지 확인하십시오.
+   > GitHub의 AEM 프로젝트 저장소에 변경 사항을 푸시하기 전에 AEM 프로젝트의 루트 수준에 있는 `component-definition.json`, `component-models.json` 및 `component-filters.json` 파일이 양식 관련 오브젝트로 업데이트되었는지 확인합니다.
 
 1. GitHub의 AEM 프로젝트 저장소에 이러한 변경 사항을 커밋하고 푸시합니다.
 
@@ -271,7 +270,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프로젝트를 편집하고 AEM 프로젝트 페이지에 Edge Delivery Services 양식을 포함하도록 적응형 양식 섹션을 추가할 수 있습니다.
 
 1. AEM 프로젝트 페이지에 적응형 양식 섹션을 추가합니다. 추가 방법은 다음과 같습니다.
-   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**&#x200B;을 클릭합니다. 편집할 수 있도록 AEM 프로젝트 페이지가 범용 편집기에서 열립니다.
+   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**을 클릭합니다. 편집할 수 있도록 AEM 프로젝트 페이지가 범용 편집기에서 열립니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
    1. 콘텐츠 트리를 열고 적응형 양식 섹션을 추가할 섹션으로 이동합니다.
    1. **[!UICONTROL 추가]** 아이콘을 클릭하고 구성 요소 목록에서 **[!UICONTROL 적응형 양식]** 구성 요소를 선택합니다.
@@ -345,7 +344,7 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
        npm install -g @adobe/aem-cli
    ```
 
-1. **GitHub 프로젝트 복제**: 다음 명령을 사용하여 GitHub에서 AEM 프로젝트 저장소를 복제합니다. 이때 &lt;owner> 저장소 소유자와 &lt;repo> 저장소 이름은 바꿉니다.
+1. **GitHub 프로젝트 복제**: 다음 명령을 사용하여 GitHub에서 AEM 프로젝트 저장소를 복제합니다. 이때 <owner> 저장소 소유자와 <repo> 저장소 이름은 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -374,8 +373,8 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
 
-* **모듈 경로 확인 오류:**
-&quot;모듈 &quot;&#39;/scripts/lib-franklin.js&#39;의 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 [EDS 프로젝트]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
+* **모듈 경로 오류 해결:**
+&quot;모듈 &quot;scripts/lib-franklin.js&quot;에 대한 경로를 확인할 수 없음&quot; 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
 ## 추가 참조
 
