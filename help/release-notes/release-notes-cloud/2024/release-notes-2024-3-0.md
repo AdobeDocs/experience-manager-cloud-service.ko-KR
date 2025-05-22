@@ -19,11 +19,11 @@ ht-degree: 91%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -49,7 +49,7 @@ ht-degree: 91%
 
 ![AEM 작성](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-자세한 내용은 [설명서](/help/edge/overview.md)를 참조하고 [AEM Gems - AEM Authoring 및 Edge Delivery Services 시작하기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)를 시청하십시오.
+자세한 내용은 [설명서](/help/edge/overview.md)를 참조하고 [AEM Gems - AEM Authoring 및 Edge Delivery Services 시작하기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=ko#M43905)를 시청하십시오.
 
 **Headless 구현을 위한 Universal Editor**
 
