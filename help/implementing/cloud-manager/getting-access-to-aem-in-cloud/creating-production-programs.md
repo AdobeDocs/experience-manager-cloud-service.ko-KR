@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1079'
 ht-degree: 11%
 
 ---
@@ -49,13 +49,18 @@ ht-degree: 11%
 1. **솔루션 및 추가 기능** 목록 상자에서 프로그램에 포함할 하나 이상의 솔루션을 선택합니다.
 
    * 사용 허가된 여러 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심이 있는 프로그램을 선택합니다. 나중에 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 추가 솔루션을 활성화할 수 있습니다. 프로그램 설정 권장 사항에 대한 자세한 내용은 [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
-   * 프로그램 제작에는 하나 이상의 솔루션이 필요합니다.
-   * 디지털 환경을 최적화하는 전체 관리 CDN 솔루션에 대해 **Edge Delivery Services**&#x200B;을(를) 선택하십시오. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)를 참조하세요.
-   * **[향상된 보안 사용](#security)** 옵션을 선택한 경우 HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있습니다.
+   * 프로그램 생성을 위해 솔루션을 하나 이상 선택해야 합니다. 예를 들어 디지털 환경을 최적화하는 완전 관리 CDN 솔루션에 대해 **Edge Delivery Services**&#x200B;을(를) 선택하도록 선택할 수 있습니다. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)를 참조하세요.
 
-     ![솔루션 선택](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![솔루션 선택](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * 솔루션 이름 왼쪽의 ![V자 크기 300 아이콘](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)을 클릭하여 **Sites**&#x200B;에서 **Commerce** 추가 기능 옵션과 같은 선택적 추가 기능을 표시합니다.
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * 옵션 추가 기능을 표시하려면 솔루션 이름 왼쪽의 ![V자 크기 300 아이콘](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)을 클릭합니다. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![추가 기능 선택](assets/setup-prod-commerce.png)
 
