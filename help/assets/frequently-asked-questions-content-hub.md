@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 97%
+source-wordcount: '1367'
+ht-degree: 77%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -111,9 +111,23 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
 
 1. **[!UICONTROL 수정 날짜]** 필드를 사용하여 자산 정렬.
 
-## 자산 카드에서 Adobe Express 옵션을 사용하여 편집을 보고 자산을 리믹스하여 새로운 베리에이션을 만들 수 없는 이유는 무엇입니까? {#edit-using-express-not-available}
+## 에셋을 리믹스하여 새 변형을 만들 수 있도록 에셋 카드에 Adobe Express을 사용하여 편집 옵션이 표시되지 않는 이유는 무엇입니까? {#edit-using-express-not-available}
 
-자산 카드에 Adobe Express 옵션을 사용하여 편집하려면 Adobe Express 옵션을 사용하여 [Content Hub 사용자가 새 베리에이션으로 자산을 리믹스할 수 있는 권한](#onboard-content-hub-users-add-assets) 외에 Adobe Express 권한이 있어야 합니다. Adobe Express는 Adobe Admin Console에서 Adobe Experience Manager가 배포된 동일한 조직에 배포되어야 합니다.
+에셋 카드에서 **Adobe Express을 사용하여 편집** 옵션을 보려면 사용자에게 Adobe Express Enterprise 또는 Teams 권한([계획](https://www.adobe.com/express/pricing) 참조)과 [에셋을 새 변형으로 리믹스할 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets)에 대한 권한이 있어야 합니다.
+
+[!DNL Content Hub] 및 [!DNL Adobe Express]에 사용자를 할당하는 방법에 대한 몇 가지 구성이 있습니다.
+
+1. 조직에 [Assets Ultimate](/help/assets/assets-ultimate-overview.md) 또는 [Assets Prime](/help/assets/assets-prime.md) 라이선스가 있으며 사용자는 Admin Console에서 Adobe Express 권한(공동 작업자 또는 고급 사용자)이 포함된 Experience Manager 프로필 중 하나에 할당되었습니다. 통합은 추가 구성 없이 작동합니다.
+
+1. [!DNL Adobe Express]이(가) [!DNL Content Hub]을(를) 사용하여 [!DNL Experience Manager Assets]과(와) 동일한 [!DNL Adobe Admin Console]에 배포되었습니다. 통합은 추가 구성 없이 작동합니다.
+
+1. [!DNL Adobe Express]이(가) [!DNL Content Hub]을(를) 사용하여 [!DNL Experience Manager Assets]과(와) 다른 [!DNL Adobe Admin Console]에 배포되었습니다. 이 경우 [!DNL Assets] 관리자는 통합을 작동하도록 구성할 수 있습니다([설명서](/help/assets/connect-assets-with-creative-cloud.md) 참조).
+
+   >[!NOTE]
+   >
+   >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 사용하고 비즈니스 **Enterprise 또는 School** 계정을 사용해야 하며 **Personal** 계정은 사용하지 않아야 합니다. 이상적인 구성은 두 Admin Console을 **Federated ID**(으)로 설정하고 둘 사이에 트러스트 관계를 설정하여 사용자가 원활한 Single Sign-On 환경을 갖도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
+
+올바른 제품 사용 권한 외에, Content Hub의 Adobe Express 통합을 사용하려면 할당된 사용자에게 Content Hub을 지원하는 Assets 작성 환경, **[#UICONTROL /content/dam/hydraded-assets/]** 폴더 계층 구조에서 [!UICONTROL 편집 가능] 권한이 있어야 합니다. Content Hub 사용자는 Express를 사용하여 만든 콘텐츠를 저장할 수 있습니다. 관리자 보기(Touch UI)의 [권한 관리](/help/security/touch-ui-principal-view.md) 또는 Assets 보기의 간소화된 [권한 관리](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
 
 ## 조직의 브랜드 지침이 홈 페이지에 링크로 표시되도록 Content Hub를 설정할 수 있습니까? {#content-hub-setup-brand-guidelines}
 
