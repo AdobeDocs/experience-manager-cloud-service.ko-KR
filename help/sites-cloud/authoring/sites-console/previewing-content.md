@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 89%
+source-wordcount: '306'
+ht-degree: 72%
 
 ---
 
@@ -19,11 +19,15 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 이를 사용하면 페이지 전환 및 게시측 전용 콘텐츠와 같은 작성자 환경에는 표시되지 않는 페이지 경험을 미리 볼 수 있습니다.
 
+>[!IMPORTANT]
+>
+>미리보기 환경에 액세스하려면 IP 허용 목록에 추가하다를 구성해야 합니다. 자세한 내용은 [미리 보기 서비스에 액세스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service)를 참조하세요.
+>
+>모든 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)를 참조하십시오.
+
 >[!NOTE]
 >
->콘텐츠가 미리보기 환경에 *게시*&#x200B;되므로 URL을 통해 액세스할 수 있습니다(따라서 AEM에 액세스할 필요가 없음).
-
-미리보기 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)을 참조하십시오.
+>콘텐츠가 미리보기 환경에 *게시*&#x200B;되어 있으므로 URL로 액세스할 수 있습니다.
 
 ## 미리보기에 콘텐츠 게시 {#publishing-content-to-preview}
 
@@ -48,7 +52,7 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-환경에 대한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 문서를 참조하십시오.
+환경에 대한 URL을 검색하는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
 `agentId` 매개변수가 `preview`로 설정된 [콘텐츠 트리 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하거나 미리보기에 대해 `AgentFilter`가 구성된 [복제 API](/help/operations/replication.md#replication-api)를 사용하여 콘텐츠를 미리보기에 게시할 수도 있습니다.
 
