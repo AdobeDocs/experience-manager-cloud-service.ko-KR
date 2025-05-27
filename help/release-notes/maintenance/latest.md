@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 859af15f4038b28e6e1398e5168dc008d22985e9
+source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 96%
+source-wordcount: '555'
+ht-degree: 48%
 
 ---
 
@@ -16,72 +16,85 @@ ht-degree: 96%
 
 다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 정보를 간략히 소개합니다.
 
->[!NOTE]
->
-> 릴리스 20936 및 20783이 비공개로 설정되었습니다.
+## 릴리스 21005 {#21005}
 
-## 릴리스 20626 {#20626}
+2025년 5월 27일에 공개적으로 릴리스된 유지 보수 릴리스 21005에 대한 지속적인 개선 사항을 요약하면 다음과 같습니다. 이전 유지 관리 릴리스는 릴리스 20626이었습니다.
 
-2025년 4월 29일에 릴리스된 유지 관리 릴리스 20626의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 20476이었습니다.
+이 유지 관리 릴리스(2025.5.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-2025.5.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+### 개선 사항 {#enhancements-21005}
 
-### 개선 사항 {#enhancements-20626}
+* GRANITE-58927: 의미 체계 검색 전환 개선 사항.
+* GRANITE-58800: Apache Commons 컬렉션을 버전 4.5.0으로 업데이트합니다.
+* GRANITE-58866: Oak을 1.80.0으로 업데이트합니다.
+* SKYOPS-106509: Java 21에서 반사 액세스를 통해 GSON 호환성을 개선했습니다.
+* SKYOPS-107761: Jackson Exporter 슬링 모델을 1.1.6으로 업데이트합니다.
+* SKYOPS-107813: Sling ResourceResolver 1.12.8로 업데이트합니다.
 
-* ASSETS-46413, ASSETS-46580: 새로운 검토 상태 “미리보기”가 추가되었습니다.
-* ASSETS-49542: 비디오 및 오디오 필사 및 번역에 대해 지원되는 언어가 확장되었습니다.
-* ASSETS-48264: 렌디션에 대한 PNG 품질 지원이 확장되었습니다.
+### 해결된 문제 {#fixed-issues-21005}
 
-### 해결된 문제 {#fixed-issues-20626}
-
-* ASSETS-50387: GenStudio에서 사용할 수 있도록 콘텐츠 조각 기본 썸네일이 수정되었습니다.
-* ASSETS-49006: 사용자에게 쓰기 권한이 없는 경우 비디오 속성이 표시됩니다.
-* ASSETS-46757, ASSETS-46997: 스마트 자르기 편집기의 접근성이 개선되었습니다.
-* ASSETS-48018: 자산 게시 보고서의 자산 참조 추적 기능이 개선되었습니다.
-* ASSETS-35846: 작성자와 게재 계층 간 액세스 일관성이 개선되었습니다.
-* ASSETS-48171: 캔버스를 사용하는 Dynamic Media 템플릿의 일관성이 개선되었습니다.
-* ASSETS-49813: 만료 알림이 개선되었습니다.
-* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: 일괄 작업에 대한 관리 및 가시성이 개선되었습니다.
-* ASSETS-50003, ASSETS-50004: 자산 다운로드에 포함된 렌디션의 이름 지정 및 컨트롤이 개선되었습니다.
-* ASSETS-47939: Content Hub에 대한 응답 구성이 개선되었습니다.
-* ASSETS-46738: 초대형 컬렉션의 성능이 개선되었습니다.
-* ASSETS-50121: 자산 게시 이벤트의 안정성이 개선되었습니다.
-* ASSETS-48490: 이미지 수집 중 자동화된 처리의 복원력이 개선되었습니다.
-* ASSETS-28106, ASSETS-49404: 전체 텍스트 검색의 안정성이 개선되었습니다.
-* ASSETS-50006, ASSETS-50423: 대형 폴더 내에서의 검색 및 탐색 성능이 개선되었습니다.
-* ASSETS-46021: Safari 및 모바일 브라우저의 비디오 디스플레이가 개선되었습니다.
-* ASSETS-49002: Dynamic Media 템플릿 편집 처리가 개선되었습니다.
-* ASSETS-48376: Content Hub UI에 다양한 개선 사항이 적용되었습니다.
-* ASSETS-48504, ASSETS-49378: UI 동작에 대해 다양한 개선 사항이 적용되었습니다.
-* ASSETS-49540: 자산 관계 OpenAPI가 이제 실험 단계를 벗어났습니다.
-* ASSETS-40284: Adobe Stock 통합에 대한 설명서가 업데이트되었습니다.
-* ASSETS-49739: 자산 선택기에서 Figma를 통합하는 작업입니다.
+* CNTBF-443: SearchSlingJob `EVENT_JOB_TOPIC` 속성을 수정했습니다.
+* GRANITE-57853: UI의 드롭다운 정렬 문제가 수정되었습니다.
+* GRANITE-58107: OAuth 처리기에서 사용자 기반 pod 친화성을 비활성화하여 게시에서 404 오류를 해결했습니다.
+* GRANITE-58276, SLING-12755: HTL 스크립트 엔진 팩토리가 올바르게 시작되지 않도록 하여 서버측 렌더링 오류가 간헐적으로 발생하는 OSGi 종속성 사이클을 수정했습니다.
+* SKYOPS-105151: 번들 목록에 액세스할 때 NPE가 수정되었습니다.
+* SKYOPS-83910, SKYOPS-82371 - JSP 컴파일 동시 실행 문제가 수정되었습니다.
 
 #### AEM 안내서 {#guides}
 
-* GUIDES-21734: XMLEditorConfig에서 자동 ID 생성 옵션이 활성화된 경우에도 스니펫을 통해 요소를 추가하거나 템플릿을 통해 요소를 생성할 때 해당 요소에 대해 새 ID가 생성되지 않습니다.
-* GUIDES-25969: DITA 항목의 외부 링크에서 `scope=external` 속성이 누락되면, 특히 마이크로서비스가 활성화된 경우 오류 로그에 이 속성이 누락된 파일을 표시하지 않고 HTML5 게시가 실패합니다.
-* GUIDES-27288: 새로운 AEM Sites 게시를 사용하여 생성된 맵 랜딩 페이지에 메타데이터 속성을 전달할 수 없습니다.
+* GUIDES-26919 : 통합 셸이 활성화된 DITA 맵을 열면 편집기가 간헐적으로 새로 고쳐집니다.
+* GUIDES-26282: 항목을 업데이트하거나 만드는 동안 JCR 세션 연결을 닫지 못하면 메모리 누수 및 서비스 다운타임이 발생합니다.
+* GUIDES-26434: DITA 콘텐츠에 `external` 범위가 없는 웹 링크가 있는 경우 기본 PDF 게시가 무기한 계속됩니다.
+* GUIDES-26516: 콘텐츠에 오류가 있으면 기본 PDF 및 AEM 사이트 게시가 중지되고 대기열에 삽입됩니다.
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
-### 알려진 문제 {#known-issues-20626}
+### 알려진 문제 {#known-issues-21005}
 
 없음.
 
-### 사용 중단된 기능 및 API {#deprecated-20626}
+### 사용 중단된 기능 및 API {#deprecated-21005}
+
+* GRANITE-54164: 공개 API에서 `org.apache.jackrabbit.oak.plugins.blob`을(를) 제거했습니다.
+* GRANITE-54280: 공개 API에서 `org.apache.jackrabbit.oak.cache`을(를) 제거했습니다.
+* GRANITE-58332: 공용 API에서 `org.apache.jackrabbit.oak.plugins.memory`을(를) 사용하지 않습니다.
+* [Experience Cloud 설치 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) 기능은 더 이상 사용되지 않습니다.
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-20626}
+### 보안 수정 {#security-21005}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이번 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 11가지가 해결되었습니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 5가지가 해결되었습니다.
 
-### 임베드된 기술 {#embedded-tech-20626}
+### 변경 사항 공지 {#change-notice-21005}
+
+* 이 릴리스에는 다음과 같은 새로운 제품 인덱스 버전이 포함되어 있습니다.
+   * **damAssetLucene-12**
+
+이전 색인 버전의 사용자 정의 버전은 새 제품 색인 버전과 자동으로 병합됩니다. 병합된 버전에 추가 사용자 정의 업데이트를 적용하십시오.
+
+#### Aem-cloud-testing-clients 업데이트 {#update-aem-cloud-testing-clients-21005}
+
+향후 변경 사항을 적용하려면 사용자 정의 기능 테스트에 사용된 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 라이브러리를 **1.2.1** 이상 버전으로 업데이트해야 합니다(권장: 최신 버전 1.2.9).
+
+`it.tests/pom.xml`의 종속성이 업데이트되었는지 확인합니다.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.9</version>
+</dependency>
+```
+
+이 변경 사항은 2025년 6월 15일 이전에 수행해야 합니다.
+종속성 라이브러리를 업데이트할 수 없으면 “사용자 정의 기능 테스트” 단계에서 파이프라인 오류가 발생합니다.
+
+### 임베드된 기술 {#embedded-tech-21005}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
-| AEM Oak | 1.78.0 | [Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
+| AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.26-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.28-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | AEM 핵심 구성 요소 | 2.29.0 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
