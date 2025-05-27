@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 18%
+source-wordcount: '1160'
+ht-degree: 17%
 
 ---
 
@@ -58,6 +58,10 @@ Cloud Manager은 SSL 인증서를 설치하고 관리하는 셀프서비스 도�
 DV 인증서는 가장 기본적인 수준의 SSL 인증서이며 테스트 목적이나 기본 암호화를 사용하는 웹 사이트 보호에 사용되는 경우가 많습니다. DV 인증서는 [프로덕션 프로그램 및 샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 모두 사용할 수 있습니다.
 
 DV 인증서가 만들어지면 Adobe에서 삭제하지 않는 한 3개월마다 자동으로 갱신합니다.
+
+>[!IMPORTANT]
+>
+>환경에서 CNAME 기반 유효성 검사가 포함된 (DV) SSL 인증서를 사용하는 경우 자동 인증서 갱신 전에 CNAME 레코드를 제거하면 갱신에 실패할 수 있습니다. 제거하면 인증서가 만료되고 서비스가 중단될 수 있습니다. 이 문제가 발생하지 않도록 하려면 전체 갱신 프로세스를 통해 CNAME 레코드가 제자리에 남아 있는지 확인하십시오. 갱신 프로세스는 도메인 소유권 확인을 위한 CNAME 레코드의 존재 여부에 따라 달라집니다.
 
 ### 고객 관리(OV/EV) SSL 인증서 {#customer-managed}
 
