@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 86%
 
 ---
@@ -53,7 +53,7 @@ Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조�
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 포맷으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
-* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 추가하여 벌크 게재를 수행할 수 있습니다.
+* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 추가하여 벌크 게재를 수행할 수 있습니다.
 
 커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
@@ -81,7 +81,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 이 페이지와 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -98,6 +98,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
    * 주석을 사용하여 다른 작성자와 공동 작업
 * 편집기를 사용하여 콘텐츠 조각의 구조 [분석](/help/sites-cloud/administering/content-fragments/analysis.md)
 * [Headless 방식으로 애플리케이션에 게재하기 위해 GraphQL을 사용하여 조각에 액세스합니다](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Adobe Journey Optimizer에서 콘텐츠 조각 통합 및 사용](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * [또는 페이지를 작성하는 데 조각을 사용합니다.](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -180,7 +181,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * [콘텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fragments/content-fragments.md)에서 사용 가능합니다.
 
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
 
 콘텐츠 조각은 다음과 같은 콘텐츠 구조입니다.
 
@@ -267,7 +268,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)을 참조하십시오.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)을 참조하십시오.
 
 ## 콘텐츠 조각 콘솔 {#content-fragments-console}
 
@@ -287,7 +288,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
