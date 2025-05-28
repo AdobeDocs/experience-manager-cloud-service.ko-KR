@@ -288,7 +288,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
