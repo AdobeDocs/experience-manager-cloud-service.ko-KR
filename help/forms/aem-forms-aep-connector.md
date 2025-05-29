@@ -5,15 +5,15 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
+source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1554'
+ht-degree: 1%
 
 ---
 
-
-# Adobe Experience Platform(AEP)와 AEM Forms 통합 {#aem-forms-aep-integration}
+# Adobe Experience Platform(AEP)과의 AEM Forms 통합 {#aem-forms-aep-integration}
 
 <span class="preview"> 응용 Forms(AEM Forms)와 Adobe Experience Platform(AEP)를 연결하는 기능은 조기 액세스 프로그램 아래에 있습니다. 기능에 대한 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D)(으)로 전자 메일을 보내면 됩니다. <a href="/help/forms/early-access-ea-features.md">조기 액세스 프로그램 </a> 페이지를 방문하여 사용 가능한 모든 혁신 및 기능을 확인할 수도 있습니다. . </span>
 
@@ -56,21 +56,21 @@ Adobe Experience Platform(AEP)용 AEM Forms 커넥터는 AEM Forms에서 제공�
 AEM Forms에서 AEP 커넥터를 설정하기 전에 Adobe Experience Platform에서 다음을 완료했는지 확인하십시오.
 
 1. 스키마 설정
-   * [XDM 스키마 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [프로파일링에 스키마 사용](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [ID 필드 정의](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [XDM 스키마 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [프로파일링에 스키마 사용](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [ID 필드 정의](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. 데이터 구성
-   * [데이터 집합 만들기](https://experienceleague.adobe.com/ko/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [스트리밍 연결을 설정](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/tutorials/create-streaming-connection)&#x200B;(나중에 스트리밍 끝점 URL이 필요하므로 지금 기록해 두십시오.)
+   * [데이터 집합 만들기](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [스트리밍 연결을 설정](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection)&#x200B;(나중에 스트리밍 끝점 URL이 필요하므로 지금 기록해 두십시오.)
 
 3. 인증
-   * Adobe Developer Console에서 [API 자격 증명 생성](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)&#x200B;(클라이언트 ID 및 클라이언트 암호)
+   * Adobe Developer Console에서 [API 자격 증명 생성](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)&#x200B;(클라이언트 ID 및 클라이언트 암호)
 
 
 ## 구현 단계
 
-### 1. AEP 클라우드 구성 만들기
+### &#x200B;1. AEP 클라우드 구성 만들기
 
 1. **Adobe Experience Manager 인스턴스** > **도구** > **클라우드 서비스** > **Adobe Experience Platform**&#x200B;로 이동합니다.
 1. 구성을 저장할 **구성 컨테이너**&#x200B;를 선택하십시오.
@@ -81,12 +81,14 @@ AEM Forms에서 AEP 커넥터를 설정하기 전에 Adobe Experience Platform�
    * 클라이언트 암호(개발자 콘솔에서 획득)
    * OAuth URL(기본 URL이 있지만 개발자 콘솔에서도 가져올 수 있음)
 
+   ![AEP 클라우드 구성](/help/forms/assets/aep-cloud-configuration.png)
+
 1. 연결을 설정하려면 **연결**&#x200B;을 클릭하세요. 연결을 설정한 후 다음 추가 설정을 구성합니다.
    * 기본 URL: platform.adobe.io (기본 URL이며 개발자 콘솔에서 가져올 수 있습니다. oauth 및 platform URL의 기본값은 prod URL입니다. 단계에 연결해야 하는 경우 단계 URL을 사용해야 합니다.)
    * 조직 ID(클라이언트 ID/암호와 함께 개발자 콘솔에서 가져옴)
    * 샌드박스 이름(개발 및 프로덕션 환경 모두에 필요)
 
-### 2. XDM 스키마 통합을 사용하여 양식 만들기 {#form-creation}
+### &#x200B;2. XDM 스키마 통합을 사용하여 양식 만들기 {#form-creation}
 
 1. 양식 만들기 마법사에 액세스합니다.
    * **Adobe Experience Manager 인스턴스** > **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
@@ -94,13 +96,18 @@ AEM Forms에서 AEP 커넥터를 설정하기 전에 Adobe Experience Platform�
 1. **소스** 탭에서 템플릿을 선택합니다
 1. **데이터** 탭에서 **Adobe Experience Platform** 옵션을 선택합니다.
 
-1. 속성 창에서 클라우드 구성을 선택합니다. 시스템은 Adobe Experience Platform에서 사용 가능한 모든 스키마를 로드합니다
+1. 속성 창에서 클라우드 구성을 선택합니다.
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   시스템은 Adobe Experience Platform에서 사용 가능한 모든 스키마를 로드합니다
 
    >[!NOTE]
    >
    >
    > * 프로필 사용 및 비시스템 생성 스키마만 가져옵니다.
    > * 초기 스키마 로드는 처음 설정할 때 시간이 걸릴 수 있습니다.
+
 1. 스키마의 해당/필수 필드를 선택합니다. 자세한 단계는 비디오 를 참조하십시오.
 1. 제출 탭에서:
    * **Adobe Experience Platform에 제출** 제출 액션 선택
@@ -156,7 +163,7 @@ A: 이 커넥터는 적응형 Forms 핵심 구성 요소 및 적응형 Forms Fou
 A: 현재 각 양식은 하나의 데이터 세트에만 제출할 수 있습니다.
 
 **Q: 처리할 수 있는 양식 제출 횟수에 제한이 있습니까?**
-답변: 양식 제출에는 AEP 스트리밍 수집 [할당량 및 속도 제한](https://experienceleague.adobe.com/ko/docs/experience-platform/data-lifecycle/api/quota)이 적용됩니다.
+답변: 양식 제출에는 AEP 스트리밍 수집 [할당량 및 속도 제한](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota)이 적용됩니다.
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -194,10 +201,10 @@ Adobe Experience Platform과 AEM Forms 통합을 통해 조직은 양식과 광�
 ## 관련 리소스 {#related-resources}
 
 * [AEM Forms as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)
-* [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ko)
-* [XDM 시스템 개요](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko)
-* [Adobe Experience Platform에서 스트리밍 수집](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=ko)
-* [실시간 고객 프로필 개요](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ko)
+* [Adobe Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [XDM 시스템 개요](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [Adobe Experience Platform에서 스트리밍 수집](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [실시간 고객 프로필 개요](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms 조기 액세스 기능](/help/forms/early-access-ea-features.md)
 * [핵심 구성 요소를 사용하여 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Forms에서 양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
@@ -230,5 +237,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
