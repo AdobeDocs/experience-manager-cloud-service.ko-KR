@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
+title: 사용자 지정에 대한 자산 선택기 속성
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 44%
+source-wordcount: '1403'
+ht-degree: 41%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 44%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@ ht-degree: 44%
 | *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. 통합을 위해 [!DNL Adobe] 응용 프로그램을 사용하는 경우 `imsToken`이(가) 필요합니다. |
 | *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. [!DNL Adobe] 응용 프로그램 통합을 사용하는 경우 `apiKey`이(가) 필요합니다. |
 | *filterSchema* | 배열 | 아니요 | | 필터 속성을 구성하는 데 사용되는 모델입니다. 자산 선택기에서 특정 필터 옵션을 제한하려는 경우에 유용합니다. |
-| *filterFormProps* | 오브젝트 | 아니요 | | 검색을 세분화하는 데 사용해야 하는 필터 속성을 지정합니다. 대상! 예: MIME 유형 JPG, PNG, GIF. |
+| *filterForm Prop* | 오브젝트 | 아니요 | | 검색을 세분화하는 데 사용해야 하는 필터 속성을 지정합니다. 대상! 예: MIME 유형 JPG, PNG, GIF. |
 | *selectedAssets* | 배열 `<Object>` | 아니요 |                 | 자산 선택기가 렌더링될 때 선택된 자산을 지정합니다. 자산의 ID 속성을 포함하는 오브젝트 배열이 필요합니다. 그 예로는 `[{id: 'urn:234}, {id: 'urn:555'}]` 등이 있습니다. 또한 현재 디렉터리에서 자산을 사용할 수 있어야 합니다. 다른 디렉터리를 사용해야 하는 경우 `path` 속성 값도 제공하십시오. |
 | *acvConfig* | 오브젝트 | 아니요 | | 기본값을 재정의하기 위한 사용자 지정 구성이 포함된 개체를 포함하는 자산 컬렉션 보기 속성입니다. 또한 이 속성은 `rail` 속성과 함께 사용되어 자산 뷰어의 레일 보기를 사용할 수 있습니다. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 아니요 |                 | OOTB 번역이 응용 프로그램의 요구 사항에 충분하지 않은 경우 `i18nSymbols` prop을 통해 사용자 지정 지역화된 값을 전달할 수 있는 인터페이스를 표시할 수 있습니다. 이 인터페이스를 통해 값을 전달하면 제공된 기본 번역이 무시되고 대신 자체 번역이 사용됩니다. 재정의를 수행하려면 유효한 재정의하려는 `i18nSymbols`의 키에 [메시지 설명자](https://formatjs.io/docs/react-intl/api/#message-descriptor) 오브젝트를 전달해야 합니다. |
@@ -66,12 +66,12 @@ ht-degree: 44%
 | *repositoryId* | 문자열 | 아니요 | &#39;&#39; | 자산 선택기가 콘텐츠를 로드하는 저장소입니다. |
 | *additionalAemSolutions* | `Array<string>` | 아니요 | [ ] | 추가 AEM 저장소 목록을 추가할 수 있습니다. 이 속성에 정보를 제공하지 않으면 미디어 라이브러리 또는 AEM Assets 저장소만 고려됩니다. |
 | *hideTreeNav* | 부울 | 아니요 |  | 자산 트리 탐색 사이드바를 표시할지 또는 숨길지 지정합니다. 모달 보기에서만 사용되므로 레일 보기에서는 이 속성이 영향을 미치지 않습니다. |
-| *onDrop* | 함수 | 아니요 | | 이 속성은 자산의 드롭 기능을 허용합니다. |
+| *onDrop* | 함수 | 아니요 | | 놓기 기능은 에셋을 드래그하여 지정된 놓기 영역에 놓는 데 사용됩니다. 자산을 원활하게 이동 및 처리할 수 있는 대화형 사용자 인터페이스를 제공합니다. |
 | *dropOptions* | `{allowList?: Object}` | 아니요 | | “allowList”를 사용하여 드롭 옵션을 구성합니다. |
 | *colorScheme* | 문자열 | 아니요 | | 자산 선택기에 대한 테마를 구성합니다(`light` 또는 `dark`). |
 | *테마* | 문자열 | 아니요 | 기본값 | `default`에서 `express` 사이의 자산 선택기 응용 프로그램에 테마를 적용합니다. `@react-spectrum/theme-express`도 지원합니다. |
-| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
-| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
+| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(자산: 자산[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
+| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(자산: 자산[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
 | *onClose* | 함수 | 아니요 | | 모달 보기에서 `Close` 버튼을 누르면 호출됩니다. 이 속성은 `modal` 보기에서만 호출되며 `rail` 보기에서는 무시됩니다. |
 | *onFilterSubmit* | 함수 | 아니요 | | 사용자가 다른 필터 조건을 변경할 때 필터 항목과 함께 호출됩니다. |
 | *selectionType* | 문자열 | 아니요 | 미혼 | 한 번에 `single` 자산을 선택할지 또는 `multiple` 자산을 선택할지에 대한 구성입니다. |
@@ -94,11 +94,20 @@ ht-degree: 44%
 | *onFilesChange* | 함수 | 아니요 | | 파일이 변경될 때 업로드의 동작을 표시하는 데 사용되는 콜백 함수입니다. 업로드를 위해 보류 중인 새 파일 배열과 업로드의 소스 유형을 전달합니다. 오류가 발생한 경우 Source 유형은 null일 수 있습니다. 구문은 `(newFiles: File[], uploadType: UploadType) => void`입니다. |
 | *uploadingPlaceholder* | 문자열 | | | 에셋 업로드가 시작되면 메타데이터 양식을 대체하는 자리 표시자 이미지입니다. 구문은 `{ href: string; alt: string; } `입니다. |
 | *uploadConfig* | 오브젝트 | | | 이 개체는 업로드에 대한 사용자 지정된 구성을 포함합니다. |
-| *기능 집합* | 배열 | 문자열 | | `featureSet:[ ]` 속성은 자산 선택기 응용 프로그램에서 특정 기능을 활성화하거나 비활성화하는 데 사용됩니다. 구성 요소 또는 기능을 활성화하기 위해 배열에 문자열 값을 전달하거나 배열을 비워 두어 해당 구성 요소를 비활성화할 수 있습니다. 예를 들어 자산 선택기에서 업로드 기능을 활성화하려면 `featureSet:[0:"upload"]` 구문을 사용합니다. |
+| *기능 집합* | 배열 | 문자열 | | `featureSet:[ ]` 속성은 자산 선택기 응용 프로그램에서 특정 기능을 활성화하거나 비활성화하는 데 사용됩니다. 구성 요소 또는 기능을 활성화하기 위해 배열에 문자열 값을 전달하거나 배열을 비워 두어 해당 구성 요소를 비활성화할 수 있습니다.  예를 들어 자산 선택기에서 업로드 기능을 활성화하려면 `featureSet:[0:"upload"]` 구문을 사용합니다. 마찬가지로 `featureSet:[0:"collections"]`을(를) 사용하여 자산 선택기에서 컬렉션을 활성화할 수 있습니다. 또한 `featureSet:[0:"detail-panel"]`을(를) 사용하여 자산의 [세부 정보 패널](overview-asset-selector.md#asset-details-and-metadata)을(를) 사용하도록 설정하십시오. 이러한 기능을 함께 사용하려면 구문이 `featureSet:["upload", "collections", "detail-panel"]`입니다. |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [자산 선택기 사용자 정의](/help/assets/asset-selector-customization.md)
+>* [자산 선택기와 다양한 애플리케이션 통합](/help/assets/integrate-asset-selector.md)
+>* [자산 선택기와 OpenAPI 기능 포함 Dynamic Media 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [자산 선택기와 타사 응용 프로그램 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)

@@ -4,10 +4,10 @@ description: AEM Assets 및 Dynamic Media가 정적 및 동적 이미지 렌디�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -86,7 +86,7 @@ Experience Manager Assets에서 [정적 표현물을 보고 다운로드](#view-
    * [이미지 사전 설정](/help/assets/dynamic-media/managing-image-presets.md)
 
   나중에 [보기를 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view)하여 Assets 보기에서 동적 변환을 미리 볼 수 있습니다.
-* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
+* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
 
 
 ### Dynamic Media 렌디션 보기 및 다운로드 {#view-download-dm-renditions}
@@ -115,7 +115,7 @@ Experience Manager Assets에서 이미지의 동적 변환을 보거나 다운�
 
 ## OpenAPI 기능 렌디션이 포함된 Dynamic Media {#dm-with-openapi-renditions}
 
-### 시작하기에 앞서
+### 시작하기에 앞서 {#prereqs-dm-with-openapi-renditions}
 
 * 라이선스가 있는 AEM Dynamic Media 사용자여야 합니다.
 * OpenAPI 기능이 있는 Dynamic Media를 표시하려면 Assets을 승인해야 합니다. 자세한 내용은 [Experience Manager에서 자산 승인](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)을 참조하세요.

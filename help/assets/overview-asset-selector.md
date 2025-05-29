@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **갤러리 보기**] 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
 * ![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **워터폴** 보기] 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
+### 에셋 세부 정보 및 메타데이터 {#asset-details-and-metadata}
+
+에셋 세부 정보 페이지에서는 모든 주요 정보를 한 곳에 통합한 특정 에셋에 대한 포괄적인 보기를 제공합니다. 이름, 파일 형식, 상태 및 간단한 설명이 포함된 개요와 간단한 시각적 식별을 위한 미리보기 또는 썸네일이 포함되어 있습니다. 또한 생성 날짜, 작성자, 크기, 색상 구성표 등과 같은 에셋의 메타데이터도 포함됩니다. 이러한 속성은 에셋을 효율적으로 검색, 필터링 및 분류하는 데 도움이 됩니다. 에셋 세부 사항 패널은 에셋 선택기의 레일 보기와 모달 보기 모두에서 사용할 수 있습니다. 레일 보기에서 자산을 반환하도록 `onDrop` 속성을 활성화하고 구성해야 합니다. 또는 모달 보기에서 `handleSelection` 속성은 자산을 반환합니다. [자산 선택기 속성](asset-selector-properties.md)을 참조하세요.
+
+에셋 및 메타데이터의 세부 사항을 보려면 아래 단계를 수행하십시오.
+
+1. 자산 선택기 MFE를 열고 자산으로 이동합니다.
+1. 에셋을 마우스로 가리킨 다음 ![정보 아이콘](/help/assets/assets/info-icon-solid-black.svg)을 클릭합니다.
+1. 자산의 세부 정보를 보려면 **[!UICONTROL 정보]** 탭으로 이동하십시오. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+에셋의 세부 정보 보기 패널을 사용자 지정하려면 [모달 보기에서 정보 사용자 지정](asset-selector-customization.md#customize-info-in-modal-view)을 참조하십시오.
+
+![자산 세부 정보](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## 주요 기능에 대해 자세히 알아보기 {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="자산 선택기와 Adobe 애플리케이션 그래픽 통합"><br/>
-        <a href="integrate-asset-selector.md">자산 선택기와 Adobe 애플리케이션 통합</a>
+        <a href="integrate-asset-selector-adobe-app.md">자산 선택기와 Adobe 애플리케이션 통합</a>
         <p>
         <em>자산 선택기와 다양한 Adobe 애플리케이션을 통합하는 방법을 알아봅니다.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="자산 선택기 그래픽 통합"><br/>
-        <a href="integrate-asset-selector.md">자산 선택기와 서드파티 애플리케이션 통합</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">자산 선택기와 서드파티 애플리케이션 통합</a>
         <p>
         <em>자산 선택기와 Adobe 이외의 애플리케이션을 통합하는 기능을 살펴봅니다.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="자산 선택기 그래픽 통합"><br/>
-        <a href="integrate-asset-selector.md">자산 선택기와 Dynamic Media 오픈 API 통합</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">자산 선택기와 Dynamic Media 오픈 API 통합</a>
         <p>
         <em>자산 선택기와 Dynamic Media 오픈 API를 통합하는 방법을 알아봅니다.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="자산 선택기 속성 그래픽"><br/>
-        <a href="asset-selector-customization.md">자산 선택기 속성</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="자산 선택기 예제 그래픽"><br/>
+        <a href="asset-selector-properties.md">자산 선택기 속성</a>
         <p>
-        <em>필터, 자산 선택, 만료된 자산 등 자산 선택기의 다양한 구성 요소를 사용자 정의하는 기본 사항을 알아봅니다. </em>
+        <em>실용적인 방식으로 속성의 사용을 이해합니다. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="자산 선택기 예제 그래픽"><br/>
-        <a href="asset-selector-customization.md">자산 선택기 예제</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="자산 선택기 속성 그래픽"><br/>
+        <a href="asset-selector-examples.md">자산 선택기 예제</a>
         <p>
-        <em>실용적인 방식으로 속성의 사용을 이해합니다. </em>
+        <em>필터, 자산 선택, 만료된 자산 등 자산 선택기의 다양한 구성 요소를 사용자 정의하는 기본 사항을 알아봅니다. </em>
         </p>
     </td>
     <td>
@@ -269,7 +309,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="자산 선택기 컬렉션 그래픽"><br/>
         <a href="asset-selector-collections.md">자산 선택기 컬렉션</a>
         <p>
-        <em>Experience Manager 저장소를 사용하여 자산 선택기 내에서 컬렉션을 사용하는 방법을 알아봅니다. </em>
+        <em>Experience Manager 저장소를 사용하여 에셋 선택기 내에서 컬렉션을 사용하는 방법에 대해 알아봅니다. </em>
         </p>
     </td>
     <td>
