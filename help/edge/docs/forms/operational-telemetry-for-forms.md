@@ -1,23 +1,23 @@
 ---
-title: AEM Forms as a Cloud Service용 Edge Delivery Services의 운영 원격 분석
-description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 운영 원격 분석에는 양식과의 사용자 상호 작용에 대한 지속적인 추적 및 분석이 포함됩니다.
+title: AEM Forms as a Cloud Service용 Edge Delivery Services 운영 원격 측정
+description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 운영 원격 측정에는 양식과의 사용자 상호 작용을 지속적으로 추적하여 분석하는 작업이 포함됩니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# AEM Forms as a Cloud Service용 Edge Delivery Services의 운영 원격 분석
+# AEM Forms as a Cloud Service용 Edge Delivery Services 운영 원격 측정
 
-운영 원격 분석을 통해 방문자가 Adobe Experience Manager(AEM) 웹 사이트와 상호 작용하는 방식에 대한 실제 통찰력을 얻을 수 있습니다. 이 기본 제공 도구는 사용자 행동을 이해하고, 성능 문제를 진단하고, 웹 사이트 실험의 효과를 측정하는 데 유용한 데이터를 제공합니다. 운영 원격 측정은 실제 사용 상호 작용을 캡처하여 합성 테스트를 넘어 사이트 성능을 보다 정확하게 파악할 수 있습니다.
+운영 원격 측정을 사용하면 방문자가 Adobe Experience Manager(AEM) 웹 사이트와 상호 작용하는 방식에 대한 실질적 인사이트를 얻을 수 있습니다. 이 기본 제공 도구는 사용자 행동을 이해하고, 성능 문제를 진단하고, 웹 사이트 실험의 효과를 측정하는 데 유용한 데이터를 제공합니다. 운영 원격 측정은 실제 사용 상호 작용을 캡처하여 합성 테스트를 넘어 사이트 성능에 대해 더욱 정확한 그림을 제시합니다.
 
-하지만 운영 원격 분석은 방문자 개인 정보 보호를 우선시합니다. 샘플링 기술을 활용하여 대표적인 사용자 하위 집합으로부터 데이터를 수집하므로 개인 식별 정보(PII)가 캡처되지 않습니다. 또한 운영 원격 측정은 성능 분석에 필요한 필수 지표만 수집하면서 데이터 최소화를 염두에 두고 설계되었습니다. 이 접근 방식 덕분에 사용자 신뢰를 유지하면서 AEM 사이트를 최적화할 수 있습니다.
+단, 운영 원격 측정은 방문자의 개인정보 보호를 우선시합니다. 샘플링 기술을 활용하여 대표적인 사용자 하위 집합으로부터 데이터를 수집하므로 개인 식별 정보(PII)가 캡처되지 않습니다. 또한 운영 원격 측정은 데이터 최소화를 염두에 두고 설계되어 성능 분석에 필요한 필수 지표만 수집합니다. 이 접근 방식 덕분에 사용자 신뢰를 유지하면서 AEM 사이트를 최적화할 수 있습니다.
 
 
 ## 전제 조건
@@ -26,7 +26,7 @@ ht-degree: 83%
 
 https://data.aem.live/?ext=forms
 
-![Forms용 Edge Delivery Services의 운영 원격 분석 로그인 화면](/help/edge/assets/rum-login-screen.png)
+![Forms용 Edge Delivery Services의 운영 원격 측정 로그인 화면](/help/edge/assets/rum-login-screen.png)
 
 AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 모니터링 대시보드에 로그인하려면 다음을 입력합니다.
 
@@ -40,7 +40,7 @@ AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 모니터링 �
 
 아래 그림은 AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 대시보드를 보여 줍니다.
 
-![운영 원격 분석 Forms 대시보드](/help/edge/assets/rum-forms-dashboard.png)
+![운영 원격 측정 양식 대시보드](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Forms용 대시보드의 다양한 주요 지표 {#different-metrics-operational-telemetry-dashboard-forms}
 

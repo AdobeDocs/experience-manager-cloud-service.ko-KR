@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager에서의 Edge Delivery Services 소개
-description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트를 게재하는 방법을 알아봅니다.
+description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트를 게재하는 방법을 알아보십시오.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 이 기능을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse 점수로 빠른 사이트를 만듭니다.
-* 운영 원격 분석을 통해 성능을 지속적으로 모니터링합니다.
+* 운영 원격 측정을 통해 성능을 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다.
 
 범용 편집기를 사용하는 AEM 콘텐츠 관리 및 WYSIWYG 작성과 문서 기반 작성을 모두 사용할 수 있습니다.
@@ -43,9 +43,9 @@ Cloud Manager를 통해 Edge Delivery Services 라이선스에 액세스하고 �
 * [SLA 보고 액세스](/help/implementing/cloud-manager/sla-reporting.md) (*곧 제공 예정*)
 * 등록된 프로덕션 프로그램에 대한 [Adobe 지원에 액세스합니다.](/help/edge/overview.md#support-ticket)
 
-EDS(Edge Delivery Services) 라이선스가 있는 경우 Edge Delivery 사이트에 대해 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을(를) 사용하고, 삭제하지 않는 한 3개월마다 셀프서비스 CDN 관리 및 DV 인증서 자동 갱신과 같은 기능을 활용할 수 있습니다.
+Edge Delivery Services(EDS) 라이선스가 있는 경우, Edge Delivery Site에 대해 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 셀프서비스 CDN 관리 및 매 3개월 DV 인증서 자동 갱신과 같은 기능을 활용할 수 있습니다(삭제하지 않는 한).
 
-또는 Edge Delivery Services 라이선스에 관계없이 CDN(즉, Adobe에서 관리하지 않는 CDN)을 사용하도록 선택하는 경우 `aem.live` 플랫폼에서 구성해야 합니다. [BYO CDN 설정](https://www.aem.live/docs/byo-cdn-setup)을 참조하세요.
+또는 Edge Delivery Services 라이선스와 관계없이 CDN(즉, Adobe에서 관리하지 않는 CDN)을 사용하려는 경우, `aem.live` 플랫폼에서 이를 구성해야 합니다. [BYO CDN 설정](https://www.aem.live/docs/byo-cdn-setup)을 참조하십시오.
 
 
 ## 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery Services 추가에 대한 정보
@@ -86,7 +86,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 

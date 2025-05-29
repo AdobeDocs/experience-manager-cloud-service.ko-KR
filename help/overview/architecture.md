@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2712'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 아키텍처 소개"
 >abstract="이 탭에서는 AEM as a Cloud Service의 새 아키텍처를 확인하고 변경 내용을 알아볼 수 있습니다. AEM에서 다양한 수의 이미지를 가진 동적 아키텍처를 구축했으므로 클라우드 아키텍처를 이해하는 시간을 가져 보십시오."
->additional-url="https://video.tv.adobe.com/v/346184?captions=kor" text="아키텍처 개요"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="아키텍처 개요"
 
 Adobe Experience Manager(AEM) as a Cloud Service는 영향력이 큰 경험을 만들고 관리할 수 있는 구성 가능한 서비스 세트를 제공합니다.
 
@@ -58,7 +58,7 @@ AEM as a Cloud Service에 사용할 수 있는 [환경](/help/implementing/cloud
       * 이는 유지 관리 업데이트의 일부로 Adobe에서 시작하거나 코드 배포에 의해 시작되는 변경 사항과는 별개입니다.
       * 코드 배포의 경우 수동 테스트를 수행할 수도 있습니다.
    * 스테이징 환경의 콘텐츠는 일반적으로 셀프서비스 콘텐츠 복사 기능을 사용하여 프로덕션 콘텐츠와 동기화된 상태로 유지됩니다.
-   * 스테이징 환경에서 성능 및 보안 테스트를 수행합니다. 이는 프로덕션 크기와 동일합니다.
+   * 스테이징 환경에서 성능 및 보안 테스트를 수행합니다.  이는 프로덕션 크기와 동일합니다.
 * 개발 환경:
    * 개발 환경은 개발자가 스테이징 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현하고 테스트할 수 있도록 해 줍니다.
    * 변경 사항은 프로덕션 배포 파이프라인과 동일한 코드 품질 및 보안 게이트를 허용하는 배포 파이프라인을 거칩니다.
@@ -138,7 +138,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
 * 데이터 서비스:
    * 라이선스 지표(예: 콘텐츠 요청, 스토리지, 사용자) 또는 사용 보고서(예: 업로드, 다운로드 수)와 같은 고객 데이터를 노출하는 일을 담당합니다.
    * 고객 데이터는 API를 통해, 그리고 제품 사용자 인터페이스(예: Cloud Manager) 내에서 노출될 수 있습니다.
-* 운영 원격 분석 서비스:
+* 운영 원격 측정 서비스:
    * 고객 경험(예: 페이지 조회수, 핵심 웹 바이탈 및 전환 이벤트)에서 주요 지표를 수집하고 관련 쿼리(예: 지난 7일 동안 특정 도메인에 대한 상위 페이지 조회수)에 응답하는 일을 담당합니다.
 * 자산 컴퓨팅 서비스:
    * 업로드된 이미지, 비디오, 문서(예: PDF 및 Adobe Photoshop 파일) 처리를 담당합니다. 처리에서는 Adobe Sensei를 사용하여 이미지 및 비디오 메타데이터(예: 설명 태그 또는 주 색상 톤)를 추출한 다음 Adobe Photoshop 및 Adobe Lightroom API와 같은 API에 액세스하여 렌디션(예: 다양한 크기 또는 형식)을 생성할 수 있습니다.
@@ -239,4 +239,4 @@ AEM as a Cloud Service를 위한 최신 아키텍처에서는 이전 세대(AEM 
 * Edge Delivery Services:
    * [AEM as a Cloud Service 개요 - Edge Delivery Services 포함](/help/edge/overview.md)
    * [Edge Delivery Services 사용](/help/edge/using.md)
-   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ko)
+   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

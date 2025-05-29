@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 **A:** 다음과 같은 분석 및 추적 옵션을 사용할 수 있습니다.
 
 - Adobe Experience Platform Web SDK (기본 권장 사항)
-- 샘플링된 지표에 대한 운영 원격 분석
+- 샘플링된 지표에 대한 운영 원격 측정
 - 필요에 따라 기타 분석 시스템과 통합 가능
 
 ## 설명서 및 리소스

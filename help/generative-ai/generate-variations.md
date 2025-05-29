@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -490,7 +490,7 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 * [GitHub에서 생성형 AI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
-* [AEM as a Cloud Service의 생성](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service의 생성형 기능](/help/generative-ai/generative-ai-in-aem.md)
 
 ## FAQ {#faqs}
 

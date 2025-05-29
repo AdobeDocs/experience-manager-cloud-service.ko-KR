@@ -1,25 +1,25 @@
 ---
-title: 컨텐츠 Source 구성
-description: Edge Delivery 사이트에 대한 콘텐츠 소스를 구성하는 방법에 대해 알아봅니다. Helix 4 아키텍처로 'fstab.yaml'을 사용하거나, Helix 5 아키텍처로 Cloud Manager(또는 구성 서비스 API)의 안내가 있는 마법사를 사용하십시오.
+title: 콘텐츠 소스 구성
+description: Edge Delivery Site에 대해 콘텐츠 소스를 구성하는 방법을 알아봅니다. Helix 4 아키텍처에서는 `fstab.yaml`을 사용하고, Helix 5 아키텍처에서는 Cloud Manager(또는 구성 서비스 API)의 가이드 마법사를 사용합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
 source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Edge Delivery Services에 대해 한 번의 클릭으로 콘텐츠 소스 구성 {#config-content-source}
+# 한 번의 클릭으로 Edge Delivery Services에 대한 콘텐츠 소스 구성 {#config-content-source}
 
 >[!IMPORTANT]
 >
->*Helix*&#x200B;은(는) 문서 기반 작성으로 AEM Sites을 지원하는 기본 아키텍처의 내부 이름입니다. 기능 또는 제품 이름이 아닙니다. 이 문서에서 *Helix*&#x200B;은(는) Edge Delivery 사이트에서 사용하는 아키텍처 버전을 참조합니다. Helix 5는 기본 아키텍처의 현재 버전이고 Helix 4는 이전 버전입니다.
+>*Helix*&#x200B;는 문서 기반 작성 기능을 갖춘 AEM Sites를 구동하는 기본 아키텍처의 내부 이름입니다. 이는 기능이나 제품 이름이 아닙니다. 이 문서에서 *Helix*&#x200B;는 Edge Delivery Sites에서 사용하는 아키텍처 버전을 의미합니다. Helix 5는 기본 아키텍처의 현재 버전이고, Helix 4는 이전 버전입니다.
 
 Adobe Experience Manager(AEM) Edge Delivery Services를 사용하면 빠르고 전역적으로 분산된 에지 네트워크를 사용하여 Google Drive, SharePoint, AEM 자체 등 여러 소스에서 콘텐츠를 게재할 수 있습니다.
 
-컨텐츠 소스 구성은 다음과 같은 방식으로 두 아키텍처 버전 간에 다릅니다.
+콘텐츠 소스 구성은 두 아키텍처 버전 간에 다음과 같은 차이점이 있습니다.
 
 | 버전 | 콘텐츠 소스 구성 방법 |
 | --- | --- |
@@ -30,25 +30,25 @@ Adobe Experience Manager(AEM) Edge Delivery Services를 사용하면 빠르고 �
 
 **시작하기 전**
 
-Cloud Manager에서 [한 번 클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)을 사용하는 경우 사이트는 단일 리포지토리가 있는 Helix 5를 사용합니다. [Helix 5 지침을 따르고](#config-helix5) 제공된 Helix 4 YAML 버전의 지침을 대체 항목으로 사용하십시오.
+[Cloud Manager에서 원클릭 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)를 사용하는 경우 사이트는 단일 저장소가 있는 Helix 5를 사용합니다. [Helix 5 지침](#config-helix5)을 따르고 대안으로 제공되는 Helix 4 YAML 버전 지침을 참조하십시오.
 
 **Helix 버전 확인**
 
 * Helix 4 - 프로젝트에 `fstab.yaml` 파일이 포함되어 있습니다.
-* Helix 5 - 프로젝트 *이(가) `fstab.yaml`을(를) 사용하지 않고 [안내 마법사](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) 또는 API를 사용하여 Cloud Manager을 통해 설정되었습니다.*
+* Helix 5 - 프로젝트는 `fstab.yaml`을 사용하지 *않으며* 가이드 마법사 또는 API를 사용하는 [Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 설정되었습니다.
 
 저장소 메타데이터를 통해 확인하거나 여전히 잘 모르겠다면 관리자에게 문의하십시오.
 
 ## Helix 4의 콘텐츠 소스 구성
 
-Helix 4에서 `fstab.yaml` 파일은 사이트의 콘텐츠 원본을 정의합니다. GitHub 저장소 루트에 위치한 이 파일은 URL 경로 접두사(마운트 지점이라고 함)를 외부 콘텐츠 소스에 매핑합니다. 일반적인 예시는 다음과 같습니다.
+Helix 4에서는 `fstab.yaml` 파일이 사이트의 콘텐츠 소스를 정의합니다. GitHub 저장소 루트에 위치한 이 파일은 URL 경로 접두사(마운트 지점이라고 함)를 외부 콘텐츠 소스에 매핑합니다. 일반적인 예시는 다음과 같습니다.
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-위의 예는 그림만을 위한 것입니다. 실제 URL은 Google Drive 폴더, SharePoint 디렉터리, AEM 경로와 같이 콘텐츠 소스를 가리켜야 합니다.
+이 예시는 단지 일러스트레이션을 위한 것입니다. 실제 URL은 Google Drive 폴더, SharePoint 디렉터리, AEM 경로와 같이 콘텐츠 소스를 가리켜야 합니다.
 
 **Helix 4의 콘텐츠 소스를 구성하려면 다음 작업을 수행합니다.**
 

@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->[AEM에서의 변형 생성과 관련된 세부 정보를 위한 보안 사실 시트](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)를 참조하십시오.
+>[AEM에서의 변형 생성과 관련된 세부 정보를 위한 보안 사실 시트](https://www.adobe.com/kr/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)를 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -332,9 +332,9 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
    * [Experience Cloud 제품의 생성형 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai#aem)
 
-* [Experience Cloud에서 변형 랜딩 페이지 생성](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [Experience Cloud의 변형 생성 랜딩 페이지](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [AEM as a Cloud Service의 생성](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service의 생성형 기능](/help/generative-ai/generative-ai-in-aem.md)
 
 ## 릴리스 기록 {#release-history}
 
