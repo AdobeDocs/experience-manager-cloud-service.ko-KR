@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
+source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2889'
 ht-degree: 90%
 
 ---
@@ -39,6 +39,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 이 기능은 곧 제거될 예정입니다. |
+| Sites | [Experience Cloud 설정 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 없음 |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 직접 업로드합니다. [지원 중단된 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
@@ -48,8 +49,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하여 10MB보다 큰 콘텐츠 패키지를 복제할 수 없습니다. | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일부터 Adobe Developer Console에서는 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 구성된 통합에 사용할 수 있으며, 그 이후에는 작동이 중단되므로 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 | [!DNL Foundation] | 콘텐츠 계층 구조 복제에 사용된 콘텐츠 트리 게시 워크플로 및 관련 콘텐츠 트리 게시 워크플로 단계. | 성능이 더 뛰어난 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)를 사용하십시오. |
-| Sites | [Experience Cloud 설치 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 없음 |
-
+| [!DNL Foundation] | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/축소합니다. Adobe은 YUI 라이브러리를 더 이상 업데이트할 계획이 없습니다. | Adobe에서는 구현을 위해 Google Closure Compiler(GCC)로 전환할 것을 권장합니다. |
 
 ## 제거된 기능 {#removed-features}
 
