@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1529'
 ht-degree: 8%
 
 ---
@@ -15,14 +15,15 @@ ht-degree: 8%
 
 # 경험 감사 대시보드 {#experience-audit-dashboard}
 
-경험 감사에서 배포 프로세스를 검증하여 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다. 이러한 지표를 추적할 수 있는 명확하고 유용한 대시보드 인터페이스를 제공합니다.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+경험 감사에서 배포 프로세스를 검증하여 변경 사항이 성능, 접근성, 모범 사례 및 SEO(검색 엔진 최적화)에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다. 이러한 지표를 추적할 수 있는 명확하고 유용한 대시보드 인터페이스를 제공합니다.
 
 ## 개요 {#overview}
 
 경험 감사는 배포 프로세스를 검증하고 변경 사항이 배포되었는지 확인합니다.
 
-1. 성능, 접근성, 모범 사례 및 SEO(검색 엔진 최적화)에 대한 기준 표준을 충족합니다.
-
+1. 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족합니다.
 1. 회귀를 도입하지 마십시오.
 
 Cloud Manager의 경험 감사를 통해 사이트에서 사용자의 경험을 최고 수준으로 유지할 수 있습니다.
@@ -35,9 +36,9 @@ Cloud Manager의 경험 감사를 통해 사이트에서 사용자의 경험을 
 
 Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
-* (기본값) Sites 프로덕션 파이프라인
-* (선택 사항) 전체 스택 파이프라인 개발
-* (선택 사항) 프론트엔드 파이프라인 개발
+* (기본값) 사이트 프로덕션 파이프라인.
+* (선택 사항) 전체 스택 파이프라인 개발.
+* (선택 사항) 프론트엔드 파이프라인 개발.
 
 선택적 환경에 대한 감사를 구성하는 방법에 대한 자세한 내용은 [구성 섹션](#configuration)을 참조하십시오.
 
@@ -49,9 +50,9 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 1. 구성할 파이프라인 유형에 따라 다음 중 하나를 수행합니다.
 
-   * 새 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 추가하여 감사에서 평가할 경로를 정의합니다.
-   * 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려면 새 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 추가하십시오.
-   * 또는 [기존 파이프라인을 편집](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)하고 기존 옵션을 업데이트할 수 있습니다.
+   * [프로덕션 파이프라인을 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)하여 감사에서 평가할 경로를 정의합니다.
+   * 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려면 [비프로덕션 파이프라인을 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)하십시오.
+   * [기존 파이프라인을 편집](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)하고 기존 옵션을 업데이트합니다.
 
 1. 비프로덕션 파이프라인을 추가하거나 편집할 때 경험 감사를 사용하려면 **경험 감사** 확인란을 선택하십시오. 이 옵션은 **Source 코드** 탭에서 찾을 수 있습니다.
 
@@ -69,7 +70,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 1. **페이지 추가**&#x200B;를 클릭하면 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
 
-   ![표에 경로 저장](assets/experience-audit-page-added.png)
+   ![테이블에 경로 저장](assets/experience-audit-page-added.png)
 
 1. 필요에 따라 앞의 두 단계를 반복하여 경로를 계속 추가합니다.
 
@@ -148,7 +149,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ![트렌드 세부 정보](assets/experience-audit-trend-details.png)
 
-특정 시점에 차트를 클릭하면 해당 스캔의 세부 정보와 함께 팝오버가 열립니다. **경험 감사 검사 열기**&#x200B;를 클릭하여 해당 검사 결과를 **[경험 감사 검사 결과](#scan-results)** 섹션으로 로드합니다.
+특정 시점에 차트를 클릭하면 해당 검사의 세부 정보가 포함된 팝업이 열립니다. **경험 감사 검사 열기**&#x200B;를 클릭하여 해당 검사 결과를 **[경험 감사 검사 결과](#scan-results)** 섹션으로 로드합니다.
 
 ![다른 검사 선택](assets/experience-audit-open-scan.png)
 
