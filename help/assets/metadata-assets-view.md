@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 77%
+source-wordcount: '2448'
+ht-degree: 76%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 77%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ ht-degree: 77%
 
 ![자산의 메타데이터 보기](assets/metadata-view.png)
 
-*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 [!UICONTROL 기본] 탭에서 제목, 설명 및 업로드 날짜와 같은 기본 메타데이터를 사용할 수 있습니다. [!UICONTROL 고급] 탭에는 카메라 모델, 렌즈 세부 정보 및 위치 정보 태그와 같은 고급 메타데이터가 포함되어 있습니다. [!UICONTROL 태그] 탭에는 이미지 내용에 따라 자동으로 적용된 태그가 포함되어 있습니다.
 
@@ -85,7 +85,7 @@ ht-degree: 77%
 
 ![자산의 스마트 태그 보기](assets/metadata-view-tags.png)
 
-*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 스마트 태그에는 신뢰도 점수도 백분율로 포함됩니다. 이는 적용된 태그와 관련된 신뢰도를 나타냅니다. 자동으로 적용되는 스마트 태그를 조정할 수 있습니다.
 
@@ -219,23 +219,23 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 
-### 메타데이터 양식에서 태그 구성 요소 작업 {#tag-component-metadata-form}
+### 메타데이터 양식의 태그 구성 요소 작업 {#tag-component-metadata-form}
 
-루트 요소는 에셋과 연결할 수 있는 태그의 트리 구조를 나타내며 에셋에 지정된 태그를 기반으로 에셋을 식별하는 데 도움이 됩니다. 또한 메타데이터 편집기에서 메타데이터 양식을 구성하는 동안 특정 분류법에 대한 액세스를 제한할 수 있습니다.
+루트 요소는 자산과 연관시킬 수 있는 태그의 트리 구조를 나타내며, 자산에 할당된 태그를 기반으로 해당 자산을 식별하는 데 도움이 됩니다. 또한 메타데이터 편집기에서 메타데이터 양식을 구성하는 동안 특정 분류 체계에 대한 액세스를 제한할 수 있습니다.
 
 #### 태그 구성 요소 구성 {#tags-component-configuration}
 
-다음 단계를 실행하여 태그 구성 요소를 구성합니다.
+다음 단계를 실행하여 태그 구성 요소를 구성하십시오.
 
-1. 메타데이터 편집기로 이동하여 **[!UICONTROL 태그]**(으)로 이동하여 캔버스에 배치합니다.
-1. 캔버스에서 구성 요소의 이름을 변경합니다. 이렇게 하려면 설정 패널의 [!UICONTROL 메타데이터 속성] 아래에 있는 **[!UICONTROL 레이블]**(으)로 이동하여 식별을 위한 텍스트를 추가하십시오.
-1. 설정 패널의 [!UICONTROL 메타데이터 속성]에서 구성 요소에 할당할 메타데이터 속성을 검색합니다.
-1. 분류법의 루트 경로를 제한하려면 **[!UICONTROL 특정 분류법으로 제한]**&#x200B;을 클릭합니다. 이렇게 하려면 태그를 찾은 다음 특정 경로에 대한 분류를 선택합니다.
+1. 메타데이터 편집기에서 **[!UICONTROL 태그]**&#x200B;로 이동한 후 캔버스에 배치합니다.
+1. 캔버스에서 구성 요소의 이름을 바꿉니다. 이렇게 하려면 설정 패널에서 [!UICONTROL 메타데이터 속성] 아래의 **[!UICONTROL 레이블]**&#x200B;로 이동하고 식별을 위한 텍스트를 추가합니다.
+1. 설정 패널의 [!UICONTROL 메타데이터 속성]에서 구성 요소에 할당하려는 메타데이터 속성을 검색합니다.
+1. 분류 체계의 루트 경로를 제한하려면 **[!UICONTROL 특정 분류에 대해 제한]**&#x200B;을 클릭합니다. 이렇게 하려면 태그를 검색하고 특정 경로에 대한 분류 체계를 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
    ![루트 태그 구성](assets/root-tag-config.png)
 
-1. [폴더에 메타데이터 양식을 할당](#assign-metadata-form-folder).
+1. [폴더에 메타데이터 양식을 할당](#assign-metadata-form-folder)합니다.
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -249,17 +249,44 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-구성된 루트 태그를 보려면 메타데이터 양식과 루트 태그 간의 매핑이 수행되는 자산의 세부 정보 페이지로 이동합니다.
+구성된 루트 태그를 보려면 메타데이터 양식과 루트 태그 간 매핑이 수행되는 자산의 세부 정보 페이지로 이동합니다.
+
+## AI가 생성한 스마트 태그를 사용하여 콘텐츠 검색 향상 {#ai-smart-tags}
+
+AI는 수동 입력에 의존하는 대신 디지털 에셋에 설명 태그를 자동으로 할당합니다. 이러한 AI 생성 태그는 메타데이터 품질을 향상시켜 에셋을 보다 쉽게 검색, 분류 및 추천할 수 있도록 합니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다. 예를 들어, 자산이 이미지인 경우 AI는 객체, 장면, 감정 또는 브랜드 로고까지 식별하고 &quot;일몰&quot;, &quot;해변&quot;, &quot;휴가&quot; 또는 &quot;스마일&quot;과 같은 관련 태그를 생성할 수 있습니다. AI가 생성한 콘텐츠는 의미론적 검색과 어휘 검색 기술을 모두 활용해 자산 검색을 강화할 수 있다. 더 보기 [Assets 검색](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![향상된 스마트 태그](assets/enhanced-smart-tags.png)
+
+### AI가 생성한 스마트 태그 사용 {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+향상된 스마트 태그 기능을 사용하려면 다음 단계를 수행하십시오.
+
+1. [!DNL Experience Manager] 인터페이스에서 원하는 폴더로 이동한 다음 **[!UICONTROL Assets 추가]**&#x200B;를 클릭합니다. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> 호환되는 이미지 파일 형식은 `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` 및 `bmp`입니다.
+
+1. 새로 업로드한 자산이 처리될 때까지 기다립니다. 완료되면 자산 세부 정보로 이동합니다.
+
+1. **[!UICONTROL AI 생성]** 탭으로 이동합니다. [!DNL Experience Manager] 버전이 호환되지 않거나 업데이트되지 않으면 이 탭이 표시되지 않습니다. 필요한 최소 AEM 릴리스 버전은 `20626`입니다. 다음 필드가 있습니다.
+
+   * **[!UICONTROL 생성된 제목]:** 제목은 업로드된 에셋의 핵심 아이디어를 캡처하는 명확하고 간결한 헤드라인을 제공하므로 한 눈에 쉽게 이해할 수 있습니다. 에셋을 추가할 때 `dc:title`에 제목을 입력하면 에셋 찾아보기 보기에 표시됩니다. 비워 두면 AI가 생성한 제목이 자동으로 할당됩니다.
+   * **[!UICONTROL 생성된 설명]:** 설명은 자산의 내용에 대한 간단하면서도 유용한 요약을 제공하여 사용자 및 검색 모듈이 관련성을 빠르게 파악할 수 있도록 합니다.
+   * **[!UICONTROL 생성된 키워드]:** 키워드는 자산의 주요 테마를 나타내는 타깃팅된 용어이며 태그 지정 및 콘텐츠 필터링에 도움이 됩니다.
+
+1. [선택 사항] 관련 태그가 누락된 경우 태그를 추가하거나 직접 만들 수 있습니다. 이렇게 하려면 **[!UICONTROL 생성된 키워드]** 필드에 태그를 쓰고 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
