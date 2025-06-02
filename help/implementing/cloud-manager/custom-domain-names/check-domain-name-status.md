@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -58,7 +58,7 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 ## 도메인 이름 오류 {#domain-error}
 
-다음은 몇 가지 일반적인 도메인 이름 확인 오류와 일반적인 해결 방법입니다.
+다음은 일반적인 도메인 이름 확인 오류와 일반적인 해결 방법입니다.
 
 ### 도메인이 설치되지 않음 오류 {#domain-not-installed}
 
