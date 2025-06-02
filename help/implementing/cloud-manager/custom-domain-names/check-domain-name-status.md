@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
+source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 20%
+source-wordcount: '863'
+ht-degree: 19%
 
 ---
 
@@ -64,23 +64,21 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Cloud Manager에서 도메인 매핑을 추가할 때 다음 오류 메시지가 표시될 수 있습니다.
+Cloud Manager에서 도메인 매핑을 추가하려고 하면 다음 오류 메시지가 표시될 수 있습니다.
 
 *도메인이 Fastly 계정에 이미 설치되어 있습니다. Cloud Service에 추가하기 전에 먼저 여기에서 제거하십시오.*
 
-이 메시지는 도메인이 현재 다른 Fastly 계정(일반적으로 Adobe 제어 외부)과 연결되어 있음을 나타냅니다. 계속하려면 도메인을 다른 계정에서 연결 해제해야 Adobe 관리 Cloud Service에 추가할 수 있습니다. 이 문제는 일반적으로 동일한 도메인이 비 Adobe Fastly 구성에서 다른 원본으로 이미 매핑된 경우에 발생합니다.
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
-#### 오류 원인 {#cause}
-
+**오류 원인**
 도메인을 처음 등록한 계정으로 빠르게 잠그고 다른 계정은 하위 도메인을 등록할 수 있는 권한을 요청해야 합니다. 또한 Fastly를 사용하면 하나의 Fastly 서비스 및 계정에 Apex 도메인 및 관련 하위 도메인만 할당할 수 있습니다. AEM Cloud Service 도메인에 사용되는 동일한 apex 및 하위 도메인을 연결하는 기존 Fastly 계정이 있는 경우 이 오류가 표시됩니다.
 
-#### 오류 해결 {#resolution}
-
-이 오류는 다음과 같이 수정됩니다.
+**오류 해결**
+오류는 다음과 같이 수정됩니다.
 
 * Cloud Manager에 도메인을 설치하기 전에 기존 계정에서 apex 및 하위 도메인을 제거합니다.
 
-* 이 옵션을 사용하여 Apex 도메인과 모든 하위 도메인을 AEM as a Cloud Service Fastly 계정에 연결합니다. 자세한 내용은 [Fastly에서 도메인 작업 설명서](https://docs.fastly.com/en/guides/working-with-domains)를 참조하십시오.
+* 이 옵션을 사용하여 Apex 도메인과 모든 하위 도메인을 AEM as a Cloud Service Fastly 계정에 연결합니다. 자세한 내용은 Fastly 설명서에서 [도메인 작업](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/)을 참조하십시오.
 
 * Apex 도메인에 여러 Fastly 계정에 연결해야 하는 AEM as a Cloud Service 및 AEM이 아닌 사이트에 대한 여러 하위 도메인이 있는 경우 Cloud Manager에 도메인 설치를 시도합니다. 이 프로세스는 다양한 Fastly 계정에서 하위 도메인 연결을 관리하는 데 도움이 됩니다. 도메인 설치에 실패한 경우 Fastly를 사용하여 고객 지원 티켓을 생성하면 Adobe이 귀하를 대신하여 Fastly를 사용하여 후속 조치를 취할 수 있습니다.
 
