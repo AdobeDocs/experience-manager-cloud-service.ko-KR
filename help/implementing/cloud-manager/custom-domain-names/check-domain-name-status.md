@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 22%
+source-wordcount: '920'
+ht-degree: 20%
 
 ---
 
@@ -62,7 +62,13 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 ### 도메인이 설치되지 않음 오류 {#domain-not-installed}
 
-인증서가 적절하게 업데이트되었는지 확인한 후에도 EV/OV 인증서의 도메인 유효성 검사 중에 이 오류가 발생할 수 있습니다.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Cloud Manager에서 도메인 매핑을 추가할 때 다음 오류 메시지가 표시될 수 있습니다.
+
+*도메인이 Fastly 계정에 이미 설치되어 있습니다. Cloud Service에 추가하기 전에 먼저 여기에서 제거하십시오.*
+
+이 메시지는 도메인이 현재 다른 Fastly 계정(일반적으로 Adobe 제어 외부)과 연결되어 있음을 나타냅니다. 계속하려면 도메인을 다른 계정에서 연결 해제해야 Adobe 관리 Cloud Service에 추가할 수 있습니다. 이 문제는 일반적으로 동일한 도메인이 비 Adobe Fastly 구성에서 다른 원본으로 이미 매핑된 경우에 발생합니다.
 
 #### 오류 원인 {#cause}
 
