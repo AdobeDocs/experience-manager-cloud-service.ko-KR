@@ -157,18 +157,18 @@ Postman에서 **보내기** 단추를 클릭하면 `201 Created` 응답이 반�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —헤더 &quot;Content-Type: application/json&quot; \
     —헤더 &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —데이터 &#39;{
-    &quot;data&quot;: {
+    —데이터 &#39;&lbrace;
+    &quot;data&quot;: &lbrace;
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
     &quot;class&quot;: &quot;First Class&quot;,
-    &quot;budget&quot;: &quot;200000&quot;,{amount&quot;: &quot;1000000&quot;,
+    &quot;budget&quot;: &quot;200000&quot;,&lbrace;amount&quot;: &quot;1000000&quot;,
     &quot;name&quot;: &quot;Joe&quot;,
     &quot;age&quot;: &quot;35&quot;,
     &quot;subscribe&quot;: null,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    }
+    &rbrace;
     &#39;
     
     &quot;
