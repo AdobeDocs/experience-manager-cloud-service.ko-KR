@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1899'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 98%
 
 ---
 
@@ -188,6 +188,10 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 샘플 콘텐츠에는 “enquiry” 양식의 템플릿 역할을 하는 “enquiry” 시트가 포함되어 있습니다. 시트의 각 행은 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내며, 열 헤더는 [필드 속성](/help/edge/docs/forms/form-components.md#available-components)을 정의합니다. 이 샘플 양식을 사용하면 양식 작성을 시작하는 데 도움이 됩니다.
 
 ![문의 양식](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
+
+>[!IMPORTANT]
+>
+>**폼이 작성된 시트에는 이름을 지정할 수 있는 내용에 제한이 있습니다. `helix-default` 및 `shared-aem`만 시트 이름으로 사용할 수 있습니다.**
 
 필드 레이블 업데이트부터 시작해 보겠습니다. 편집을 위해 ‘enquiry’ 시트를 열고 제출 버튼 레이블을 `Let's Talk`으로 변경한 다음 AEM Sidekick을 사용하여 파일을 미리 보고 게시합니다.
 

@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # Edge Delivery Services Forms을 사용한 Forms 제출 서비스
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
 Forms 제출 서비스를 사용하면 양식 제출의 데이터를 OneDrive, SharePoint 또는 Google Sheets와 같은 스프레드시트에 저장할 수 있으므로 원하는 스프레드시트 플랫폼 내에서 양식 데이터에 쉽게 액세스하고 관리할 수 있습니다.
 
@@ -28,7 +28,7 @@ Forms 제출 서비스를 사용하면 양식 제출의 데이터를 OneDrive, S
 * **데이터 구조**: 제출을 설정할 때 양식 필드를 구성된 데이터 저장을 위해 해당 스프레드시트 열에 매핑할 수 있습니다.
 * **액세스 제어**: 기존 권한을 활용하여 선택한 스프레드시트 서비스에 따라 제출된 양식 데이터에 액세스하고 수정할 수 있는 사용자를 제어할 수 있습니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 같습니다.
 
@@ -37,7 +37,7 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 ## Forms 제출 서비스 구성
 
-적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
+적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
 
 [Forms 제출 서비스를 수동으로 구성](#configuring-the-forms-submission-service-manually)하거나 [API를 사용하여 Forms 제출 서비스를 구성](#configuring-the-forms-submission-service-using-api)할 수 있습니다.
 
@@ -45,17 +45,21 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 ![양식 제출 서비스에 대한 워크플로](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. 양식 정의를 사용하여 양식 만들기
+#### &#x200B;1. 양식 정의를 사용하여 양식 만들기
 
-Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
+Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
 
 아래 스크린샷에는 양식을 만드는 데 사용된 양식 정의가 표시됩니다.
 
 ![양식 정의](/help/forms/assets/form-submission-definition.png)
 
-#### 2. 스프레드시트가 데이터를 수락하도록 설정합니다.
+>[!IMPORTANT]
+>
+>**폼이 작성된 시트에는 이름을 지정할 수 있는 내용에 제한이 있습니다. `helix-default` 및 `shared-aem`만 시트 이름으로 사용할 수 있습니다.**
 
-양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
+#### &#x200B;2. 스프레드시트가 데이터를 수락하도록 설정합니다.
+
+양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
 
 ![받는 시트](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -63,7 +67,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. 
 >
 > `incoming` 시트가 없으면 AEM에서 이 통합 문서로 데이터를 전송하지 않습니다.
 
-#### 3. 스프레드시트를 공유하고 링크를 생성합니다.
+#### &#x200B;3. 스프레드시트를 공유하고 링크를 생성합니다.
 
 스프레드시트를 `forms@adobe.com` 계정에 공유하고 링크를 생성하려면 다음 단계를 수행하십시오.
 
@@ -77,7 +81,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. 
 
    ![수신 시트의 링크 복사](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. 양식 정의에서 스프레드시트를 연결합니다
+#### &#x200B;4. 양식 정의에서 스프레드시트를 연결합니다
 
 Google Sheets 또는 Microsoft Excel을 사용하여 Forms 제출 서비스를 구성하려면 다음 단계를 수행하십시오.
 
@@ -153,18 +157,18 @@ Postman에서 **보내기** 단추를 클릭하면 `201 Created` 응답이 반�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —헤더 &quot;Content-Type: application/json&quot; \
     —헤더 &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —데이터 &#39;&lbrace;
-    &quot;data&quot;: &lbrace;
+    —데이터 &#39;{
+    &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
     &quot;class&quot;: &quot;First Class&quot;,
-    &quot;budget&quot;: &quot;200000&quot;,&lbrace;amount&quot;: &quot;1000000&quot;,
+    &quot;budget&quot;: &quot;200000&quot;,{amount&quot;: &quot;1000000&quot;,
     &quot;name&quot;: &quot;Joe&quot;,
     &quot;age&quot;: &quot;35&quot;,
     &quot;subscribe&quot;: null,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
+    }
     &#39;
     
     &quot;
