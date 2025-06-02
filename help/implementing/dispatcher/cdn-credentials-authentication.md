@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1712'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # CDN 자격 증명 및 인증 구성 {#cdn-credentials-authentication}
 
-Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일부는 적절한 수준의 엔터프라이즈 보안을 보장하기 위해 자격 증명과 인증에 의존합니다. Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포된 구성 파일에서 규칙을 선언하면 고객은 셀프서비스 방식으로 다음을 구성할 수 있습니다.
+Adobe에서 제공하는 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일부는 적절한 수준의 엔터프라이즈 보안을 보장하기 위해 자격 증명과 인증에 의존합니다. Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포된 구성 파일에서 규칙을 선언하면 고객은 셀프서비스 방식으로 다음을 구성할 수 있습니다.
 
 * Adobe CDN이 고객 관리 CDN에서 발생하는 요청의 유효성을 검사하는 데 사용하는 X-AEM-Edge-Key HTTP 헤더 값입니다.
 * CDN 캐시에서 리소스를 제거하는 데 사용되는 API 토큰입니다.
@@ -24,11 +24,17 @@ Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일�
 
 [키를 회전](#rotating-secrets)하는 방법에 대한 섹션이 있습니다. 이는 올바른 보안 방법입니다.
 
+>[!NOTE]
+> 환경 변수로 정의된 암호는 변경할 수 없는 것으로 간주해야 합니다. 값을 변경하는 대신 새 이름으로 새 암호를 만들고 구성에서 해당 암호를 참조해야 합니다. 그렇게 하지 않으면 신뢰할 수 없는 기밀 업데이트가 발생할 수 있습니다.
+
+>[!WARNING]
+>CDN 구성에서 참조하는 환경 변수는 제거하지 마십시오. 이렇게 하면 CDN 구성 업데이트(예: 규칙 또는 사용자 정의 도메인 및 인증서 업데이트)에 오류가 발생할 수 있습니다.
+
 ## 고객 관리 CDN HTTP 헤더 값 {#CDN-HTTP-value}
 
 AEM as a Cloud Service의 [CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) 페이지에 설명된 대로 고객은 자체 CDN(Customer CDN(BYOCDN이라고도 함)을 통해 트래픽을 라우팅하도록 선택할 수 있습니다.
 
-설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 고객 CDN의 각 요청에 대해 설정되며, Adobe CDN으로 라우팅되기 전에 해당 값이 예상대로인지 확인한 다음 해당 AEM 원본으로 요청을 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
+설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 Adobe CDN으로 라우팅되기 전에 고객 CDN의 각 요청에 대해 설정되고, 이 값은 값이 예상대로 맞는지 검증하므로 요청을 적절한 AEM 원본으로 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
 
 *X-AEM-Edge-Key* 값은 `cdn.yaml` 또는 유사한 파일의 `edgeKey1` 및 `edgeKey2` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.  구문은 아래 예에 설명되어 있습니다.
 
@@ -59,7 +65,7 @@ data:
 
 `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
-자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
+자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
 
 추가 속성은 다음과 같습니다.
 
@@ -158,7 +164,7 @@ data:
 >[!NOTE]
 >제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 openssl rand -hex 32 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
-제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 기본 인증 {#basic-auth}
 
@@ -216,7 +222,9 @@ data:
 
 ## 회전 비밀 {#rotating-secrets}
 
-1. 경우에 따라 자격 증명을 변경하는 것이 좋습니다. 이는 비록 퍼지 키들에 대해 동일한 전략이 사용되지만, 에지 키의 예를 사용하여 이하에 예시된 바와 같이 달성될 수 있다.
+자격 증명을 정기적으로 변경하는 것이 좋습니다. 환경 변수를 직접 변경하지 말고 대신 새 암호를 만들고 구성에서 새 이름을 참조하십시오.
+
+이러한 사용 사례는 퍼지 키에 대해서도 동일한 전략을 사용할 수 있지만, 에지 키의 예를 이용하여 이하에서 예시된다.
 
 1. 처음에는 `edgeKey1`만 정의되었습니다. 이 경우 `${{CDN_EDGEKEY_052824}}`(으)로 참조되며 권장 규칙으로 만들어진 날짜를 반영합니다.
 
@@ -227,7 +235,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 키를 회전할 때가 되면 새 Cloud Manager 암호를 만드십시오(예: `${{CDN_EDGEKEY_041425}}`).
 1. 구성에서 `edgeKey2`에서 참조하고 배포합니다.
 
@@ -249,7 +256,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Cloud Manager에서 이전 비밀 참조(`${{CDN_EDGEKEY_052824}}`)를 삭제하고 배포합니다.
 
 1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `${{CDN_EDGEKEY_031426}}`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `edgeKey1`을(를) 추가합니다.
@@ -262,3 +268,47 @@ data:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+백엔드에 대한 인증과 같이 요청 헤더에 설정된 비밀을 회전하는 경우 헤더 값이 임시 간격 없이 전환되도록 두 단계로 회전하는 것이 좋습니다.
+
+1. 회전 전 초기 구성. 이 상태에서는 이전 키가 백엔드로 전송됩니다.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. 같은 헤더를 두 번 설정하여 새 키 `API_KEY_2`을(를) 도입합니다(새 키는 이전 키 뒤에 설정해야 함). 이 항목을 배포하면 백엔드에 새 키가 표시됩니다.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. 구성에서 이전 키 `API_KEY_1`을(를) 제거합니다. 이 항목을 배포하면 백엔드에 새 키가 표시되며 이전 키의 환경 변수를 제거하는 것이 안전합니다.
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+

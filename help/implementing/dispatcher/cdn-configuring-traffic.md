@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
 
 이름, 조건부 &quot;when 절&quot; 및 작업에서 규칙을 참조합니다.
 
-when 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 속성을 기반으로 규칙을 평가할지 여부를 결정합니다. 구문은 규칙 유형에서 동일합니다. 자세한 내용은 트래픽 필터 규칙 문서의 [조건 구조 섹션](/help/security/traffic-filter-rules-including-waf.md#condition-structure)을 참조하십시오.
+&quot;when&quot; 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 속성을 기반으로 규칙을 평가할지 여부를 결정합니다. 구문은 규칙 유형에서 동일합니다. 자세한 내용은 트래픽 필터 규칙 문서의 [조건 구조 섹션](/help/security/traffic-filter-rules-including-waf.md#condition-structure)을 참조하십시오.
 
 작업 노드의 세부 사항은 규칙 유형에 따라 다르며 아래 개별 섹션에 설명되어 있습니다.
+
+구성 규칙에서 환경 변수로 정의된 암호를 참조할 수 있습니다([구성 암호](/help/implementing/dispatcher/cdn-credentials-authentication.md) 참조).
 
 ## 변형 요청 {#request-transformations}
 
