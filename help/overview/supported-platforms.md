@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Adobe Experience Manager 사용자 인터페이스는 [작성 방법](/help/edge
 | Mozilla Firefox(항상 최신 상태) | A: 지원됨 | A: 지원됨 | Z: 지원되지 않음 |
 | Mozilla Firefox 최신 ESR [1] | A: 지원됨 | A: 지원됨 | Z: 지원되지 않음 |
 | macOS의 Safari(항상 최신 상태) | A: 지원됨 | A: 지원됨 | Z: 지원되지 않음 |
-| iOS의 Safari(항상 최신 상태) [2] | Z: 지원되지 않음 | A: 지원됨 | Z: 지원되지 않음 |
+| iPadOS의 Safari(에버그린) | Z: 지원되지 않음 | A: 지원됨 | Z: 지원되지 않음 |
 
 1. Firefox의 확장 지원 릴리스([mozilla.org에서 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/))
-1. Apple iPad만 지원
 
 >[!NOTE]
 >
