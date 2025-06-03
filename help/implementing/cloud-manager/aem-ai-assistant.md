@@ -6,9 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1122'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 1%
 AEM(Adobe Experience Manager)의 AI Assistant는 Adobe Experience Manager 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. 제품 지식에 액세스하고, 문제를 해결하며, Experience League에서 사용할 수 있는 정보를 탐색하는 데 도움이 됩니다. 제한된 Beta 프로그램 동안 AI 도우미는 사이트, Assets, Forms 및 Cloud Manager 등 Adobe Experience Manager as a Cloud Service을 지원합니다.
 
 >[!IMPORTANT]
->Adobe이 AI Assistant 기능을 활성화하여 Beta 프로그램을 테스트하고 참여할 수 있도록 사용자 계약을 검토하고 제출했는지 확인합니다.
+>Adobe에서 사용자가 Beta 프로그램을 테스트하고 참여할 수 있도록 AI Assistant 기능을 활성화할 수 있도록 사용자 계약을 검토하고 제출했는지 확인합니다.
 >
 >질문이 있는 경우 Adobe ID과 연결된 메일 주소에서 [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)(으)로 메일을 보내십시오.
 
@@ -45,6 +46,46 @@ AEM의 AI Assistant는 개인 정보 보호, 보안 및 거버넌스에 중점�
 | 문제 해결 | <ul><li>유니버설 편집기에 액세스할 수 없는 이유는 무엇입니까?</li><li>내 파이프라인이 실패한 이유는 무엇입니까?</li></ul> |
 
 AI Assistant의 현재 범위는 Adobe Experience Manager as a Cloud Service에 대한 제품 지식 질문 처리에 중점을 둡니다. 이 범위에는 Sites, Assets, Forms 및 Cloud Manager과 같은 주요 영역에 대한 포괄적인 지원이 포함됩니다.
+
+## AEM Forms용 AI Assistant(Forms Experience Builder) {#ai-forms-builder}
+
+AEM은 제품 지식을 위한 일반적인 AI Assistant 외에도 AEM Forms용 특수 **AI Assistant(Forms Experience Builder)**&#x200B;를 제공합니다. 이 향상된 도우미는 자연어 프롬프트를 통해 양식을 만들고 구성하고 양식에 대한 질문에 답변하는 데 도움이 될 수 있습니다.
+
+### 주요 기능
+
+AEM Forms용 AI 비서는 다음을 제공합니다.
+
+* **양식 만들기**: 자연어 설명을 사용하여 처음부터 새 양식 만들기
+* **디자인 가져오기**: 기존 디자인(PDF, Figma, 이미지)을 제대로 작동하는 AEM 양식으로 변환
+* **양식 구성**: 필드, 패널, 유효성 검사 규칙 및 조건부 논리 추가
+* **레이아웃 관리**: 양식 구조를 구성하고 다른 장치에 맞게 최적화합니다.
+* **통합 설정**: 양식 제출 및 데이터 처리 구성
+* **제품 정보**: AEM Forms 기능 및 모범 사례에 대한 질문에 답변합니다.
+
+### 액세스 위치
+
+AEM Forms용 AI Assistant는 다음 위치에서 사용할 수 있습니다.
+
+* **범용 편집기**: 시각적 편집 기능이 있는 Edge Delivery Services 양식용
+* **적응형 Forms 편집기**: 자세한 양식 구성 및 고급 기능용
+* **Forms 관리 UI**: 높은 수준의 양식 만들기 및 관리 작업용
+
+### 시작하기
+
+>[!NOTE]
+>
+> AEM Forms용 AI Assistant(Forms Experience Builder)는 얼리어답터 프로그램에 따라 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 전자 메일을 보내십시오.
+
+자세한 예제 및 모범 사례를 포함하여 AEM Forms용 AI Assistant 사용에 대한 자세한 내용은 AEM Forms 설명서 를 참조하십시오.
+
+### 예시 사용 사례
+
+* **&quot;이름, 전자 메일, 등급 및 댓글 필드가 있는 고객 피드백 양식 만들기&quot;**
+* **&quot;업로드된 이 PDF 응용 프로그램 양식을 디지털 적응형 양식으로 변환&quot;**
+* **&quot;결혼 상태가 &#39;기혼&#39;인 경우에만 배우자 정보를 표시하는 조건부 논리를 추가하십시오.&quot;**
+* **&quot;CRM 시스템에 데이터를 제출하도록 이 양식을 구성하십시오.&quot;**
+
+이 전문 Forms AI Assistant는 AI의 힘과 AEM의 강력한 양식 기능을 결합하여 양식 작성 워크플로를 간소화하여 양식 작성의 다음 진화를 나타냅니다.
 
 ## 효과적인 질문을 작성하는 방법 {#ai-craft-questions}
 
@@ -109,12 +150,9 @@ AI 도우미에는 지원되는 주제 및 범주를 탐색하는 데 도움이 
 
 * **AI Assistant에서 실시간으로 제공하는 정보입니까?**\
   아니요. AI Assistant는 Adobe Experience League 설명서에서 해당 콘텐츠를 소스화합니다. 콘텐츠에 대한 업데이트가 응답에 반영되는 데 시간이 걸릴 수 있습니다.
-* **AI Assistant에서 지원하는 Adobe 응용 프로그램은 무엇입니까?**\
+* **AI Assistant가 지원하는 Adobe 애플리케이션은 무엇입니까?**\
   현재 AI 어시스턴트는 특히 제품 지식 조회를 위해 사이트, Assets, Forms, Cloud Manager 등 AEM as a Cloud Service을 지원한다.
 * **AI Assistant의 기능은 무엇입니까?**\
   AI Assistant는 Adobe 제품 지식과 관련된 질문에 답변할 수 있도록 설계되었습니다.
 * **AI 관리자가 교육 데이터에 개인 정보를 사용합니까?**\
   아니요. AI 어시스턴트는 개인정보를 교육 목적으로 활용하지 않습니다. 이름이나 연락처 세부 사항을 포함하여 자신 또는 다른 사람에 대한 개인 정보를 AI 어시스턴트와 공유하지 마십시오.
-
-
-
