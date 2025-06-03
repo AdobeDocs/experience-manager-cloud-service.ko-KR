@@ -4,10 +4,10 @@ description: 콘텐츠 복사 도구를 통해 사용자는 필요할 때 AEM as
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -200,3 +200,4 @@ ht-degree: 36%
 * 콘텐츠 복사 도구는 버전 관리 기능이 없으며 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트의 소스 환경에서 수정된 콘텐츠 또는 작성된 콘텐츠를 자동으로 감지할 수 없습니다.
    * 콘텐츠 변경 사항으로만 대상 환경을 업데이트하려면 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트를 만들어야 합니다. 그런 다음 마지막 콘텐츠 복사 작업 이후 변경된 소스 인스턴스의 경로를 지정합니다.
 * 버전 정보는 콘텐츠 사본에 포함되지 않습니다.
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)은(는) UUID(범용 고유 ID)를 기반으로 참조 필드를 지정할 수 있습니다. 이러한 UUID는 리포지토리별로 다르므로 컨텐츠 복사 도구는 컨텐츠 조각을 복사할 때 대상 환경에서 이러한 UUID를 다시 계산합니다.
