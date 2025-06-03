@@ -40,7 +40,7 @@ Repository Modernizer 는 이제 다음 프로젝트 유형도 지원합니다.
 
 ## Repository Modernizer 사용 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412962/?quality=12&learn=on&captions=kor)
 
 - 이제 리팩터링 작업 탭 아래의 리팩터링 서비스에서 Repository Modernizer를 자동으로 호출합니다. 고객은 프로젝트를 업로드하고 리팩터링 작업을 트리거하면 되므로 추가 설정이 필요하지 않습니다.
 
