@@ -4,10 +4,10 @@ description: 구조화된 컨텐츠 전달 및 컨텐츠 조각 관리에 사용
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 42%
+source-wordcount: '516'
+ht-degree: 28%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager(AEM) as a Cloud Service는 콘텐츠 조각에서 구�
    * 이러한 API는 구조화된 콘텐츠 관리에 사용됩니다.
    * 각 GET 연산자는 콘텐츠 게재에 최적화되어 있지 않습니다.
    * 이 API는 REST 기반입니다.
-* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * AEM에서 구조화된 콘텐츠 게재를 위한 JSON 출력용 원본 API입니다.
-      * 이 API는 견고하고 검증되었지만 *완전히 하이드레이션된* JSON 출력을 제공하지는 않습니다. 참조는 경로로만 출력되므로 추가 콘텐츠를 검색하려면 보조 API 요청이 필요합니다.
-   * Assets HTTP API는 콘텐츠 조각과 콘텐츠 조각 모델(CRUD)을 관리하는 데에도 사용할 수 있습니다.
-   * 이 API는 REST 기반입니다.
-   * Assets HTTP API의 콘텐츠 조각 지원은 Edge Delivery Services JSON REST API로 대체됨에 따라 향후 더 이상 제공되지 않을 예정입니다. 아직 구체적인 일정은 정해지지 않았습니다.
+
+>[!NOTE]
+>
+>[Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이(가) 이제 [사용되지 않음](/help/release-notes/deprecated-removed-features.md)입니다. [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md)와 함께 [OpenAPI를 사용한 콘텐츠 조각 배달](/help/headless/aem-content-fragment-delivery-with-openapi.md)로 대체되었습니다.
 
 ## REST 및 GraphQL {#rest-vs-graphql}
 

@@ -4,9 +4,9 @@ description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1859'
 ht-degree: 14%
 
 ---
@@ -17,14 +17,20 @@ ht-degree: 14%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service | 이 문서 |
+
+>[!CAUTION]
+>
+>Assets HTTP API의 콘텐츠 조각 지원이 이제 [사용되지 않음](/help/release-notes/deprecated-removed-features.md)입니다.
+>
+>[콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md)와 함께 [OpenAPI를 통한 콘텐츠 조각 배달](/help/headless/aem-content-fragment-delivery-with-openapi.md)로 대체되었습니다.
 
 Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 
 >[!NOTE]
 >
->사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교가 필요하면 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
+>사용 가능한 다양한 API에 대한 개요와 관련된 몇 가지 개념의 비교는 [구조화된 컨텐츠 배달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)를 참조하십시오.
 >
 >[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
@@ -39,15 +45,15 @@ Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Asse
 
 >[!NOTE]
 >
->Experience Manager API에 대한 최신 정보를 보려면 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)를 방문하세요.
+>Experience Manager API에 대한 최신 정보는 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)를 참조하십시오.
 
 [Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager as a Cloud Service의 개발자가 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API를 통해 직접 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
 API를 사용하면 Adobe Experience Manager as a Cloud Service 프론트엔드 애플리케이션에 컨텐츠 서비스를 제공하여 JavaScript as a headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 모든 애플리케이션.
 
-예를 들어 프레임워크 기반 또는 사용자 지정 [SPA(단일 페이지 애플리케이션)](/help/implementing/developing/hybrid/introduction.md)은(는) HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
+예를 들어 프레임워크 기반 또는 사용자 지정 [SPA(단일 페이지 애플리케이션)](/help/implementing/developing/hybrid/introduction.md)에는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 이 용도로 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공하지만, 구현을 위해 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 이러한 목적에 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공하지만, 구현을 위해 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직에서 이러한 지식을 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 
@@ -114,7 +120,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 <table>
  <thead>
   <tr>
-   <td>Aspect</td>
+   <td>측면</td>
    <td>Assets REST API<br/> </td>
    <td>AEM 구성 요소<br/>(Sling 모델을 사용하는 구성 요소)</td>
   </tr>
@@ -123,7 +129,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   <tr>
    <td>지원되는 사용 사례</td>
    <td>일반적인 목적.</td>
-   <td><p>단일 페이지 애플리케이션(SPA) 또는 기타(콘텐츠 소비) 컨텍스트에서 사용하도록 최적화되었습니다.</p> <p>레이아웃 정보를 포함할 수도 있습니다.</p> </td>
+   <td><p>SPA(단일 페이지 애플리케이션) 또는 기타(콘텐츠 소비) 컨텍스트에서 사용을 위해 최적화되었습니다.</p> <p>레이아웃 정보를 포함할 수도 있습니다.</p> </td>
   </tr>
   <tr>
    <td>지원되는 작업</td>
@@ -135,7 +141,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
    <td><p>바로 액세스할 수 있습니다.</p> <p>리포지토리의 <code>/content/dam</code>에 매핑된 <code>/api/assets </code>끝점을 사용합니다.</p> 
    <p>예제 경로는 다음과 같습니다. <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>AEM 페이지에서 AEM 구성 요소를 통해 참조되어야 합니다.</p> <p><code>.model</code> 선택기를 사용하여 JSON 표현을 만듭니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>AEM 페이지에서 AEM 구성 요소를 통해 참조해야 합니다.</p> <p><code>.model</code> 선택기를 사용하여 JSON 표현을 만듭니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
@@ -145,8 +151,8 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   </tr>
   <tr>
    <td>아키텍처 설명</td>
-   <td><p>쓰기 액세스는 일반적으로 작성자 인스턴스를 해결합니다.</p> <p>읽기는 Publish 인스턴스로 진행될 수도 있습니다.</p> </td>
-   <td>이 접근 방식은 읽기 전용이므로 일반적으로 Publish 인스턴스에 사용됩니다.</td>
+   <td><p>쓰기 액세스는 일반적으로 작성자 인스턴스를 해결합니다.</p> <p>읽기는 게시 인스턴스로 진행될 수도 있습니다.</p> </td>
+   <td>이 접근 방식은 읽기 전용이므로 일반적으로 게시 인스턴스에 사용됩니다.</td>
   </tr>
   <tr>
    <td>출력</td>
@@ -158,14 +164,14 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 ### 보안 {#security}
 
-Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되는 경우 AEM의 CORS 필터를 올바르게 구성해야 합니다.
+Assets REST API를 특정 인증 요구 사항 없이 환경 내에서 사용하는 경우 AEM의 CORS 필터를 올바르게 구성해야 합니다.
 
 >[!NOTE]
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)
->* [비디오 - AEM을 사용하여 CORS용 개발(04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko)
+>* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [비디오 - AEM을 사용하여 CORS용 개발(04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
@@ -261,18 +267,18 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 ## 사용 {#using}
 
-특정 사용 사례와 함께 AEM Author 또는 Publish 환경을 사용하는지 여부에 따라 사용이 다를 수 있습니다.
+특정 사용 사례와 함께 AEM 작성자 또는 게시 환경을 사용하는지에 따라 사용 방식이 다를 수 있습니다.
 
 * 만들기는 작성자 인스턴스([)에 바인딩되는 것이 좋습니다. 현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/content-fragments/assets-api-content-fragments.md#limitations).
 * AEM은 JSON 형식으로만 요청된 콘텐츠를 제공하므로 모두에서 게재할 수 있습니다.
 
-   * AEM 작성자 인스턴스의 저장 및 제공은 방화벽 뒤의 미디어 라이브러리 애플리케이션이면 충분합니다.
+   * AEM 작성자 인스턴스의 저장 및 제공은 방화벽 뒤 미디어 라이브러리 애플리케이션이면 충분합니다.
 
-   * 라이브 웹 게재의 경우 AEM Publish 인스턴스가 권장됩니다.
+   * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
 
 >[!CAUTION]
 >
->AEM 클라우드 인스턴스의 Dispatcher 구성이 `/api`에 대한 액세스를 차단할 수 있습니다.
+>AEM 클라우드 인스턴스의 Dispatcher 구성으로 인해 `/api`에 대한 액세스가 차단될 수 있습니다.
 
 >[!NOTE]
 >
@@ -377,4 +383,4 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 자세한 내용은 다음 문서를 참조하십시오.
 
 * [Assets HTTP API 설명서](/help/assets/mac-api-assets.md)
-* [AEM Gem 세션: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=ko)
+* [AEM Gem 세션: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

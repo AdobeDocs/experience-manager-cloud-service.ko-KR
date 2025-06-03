@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 93%
 
 ---
 
@@ -47,12 +47,10 @@ Adobe Experience Manager(AEM) as a Cloud Service는 콘텐츠 조각에서 구�
    * 이러한 API는 구조화된 콘텐츠 관리에 사용됩니다.
    * 각 GET 연산자는 콘텐츠 게재에 최적화되어 있지 않습니다.
    * 이 API는 REST 기반입니다.
-* AEM Assets HTTP API의 콘텐츠 조각 지원
-   * AEM에서 구조화된 콘텐츠 게재를 위한 JSON 출력용 원본 API입니다.
-      * 이 API는 견고하고 검증되었지만 *완전히 하이드레이션된* JSON 출력을 제공하지는 않습니다. 참조는 경로로만 출력되므로 추가 콘텐츠를 검색하려면 보조 API 요청이 필요합니다.
-   * Assets HTTP API는 콘텐츠 조각과 콘텐츠 조각 모델(CRUD)을 관리하는 데에도 사용할 수 있습니다.
-   * 이 API는 REST 기반입니다.
-   * Assets HTTP API의 콘텐츠 조각 지원은 Edge Delivery Services JSON REST API로 대체됨에 따라 향후 더 이상 제공되지 않을 예정입니다. 아직 구체적인 일정은 정해지지 않았습니다.
+
+>[!NOTE]
+>
+>[Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)이(가) 이제 [사용되지 않음](/help/release-notes/deprecated-removed-features.md)입니다. [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md)와 함께 [OpenAPI를 통한 콘텐츠 조각 배달](/help/headless/aem-content-fragment-delivery-with-openapi.md)로 대체되었습니다.
 
 ## 다음 단계 {#whats-next}
 
@@ -72,9 +70,9 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
 * [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/overview.md)
-* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 설명](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
