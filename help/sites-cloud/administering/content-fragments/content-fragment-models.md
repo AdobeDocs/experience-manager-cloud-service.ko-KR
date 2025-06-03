@@ -64,9 +64,9 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
         >[!CAUTION]
         >
-        데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄 “_”*만* 포함해야 합니다.
+        >데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄 “_”*만* 포함해야 합니다.
         >
-        이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
+        >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
      예:
 
@@ -98,9 +98,9 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!NOTE]
   >
-  텍스트 영역이 리치 텍스트, 일반 텍스트 또는 Markdown 인지 여부는 모델에서 **기본 유형** 속성에 의해 정의됩니다.
+  >텍스트 영역이 리치 텍스트, 일반 텍스트 또는 Markdown 인지 여부는 모델에서 **기본 유형** 속성에 의해 정의됩니다.
   >
-  이 포맷은 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)가 아니라 모델에서만 변경할 수 있습니다.
+  >이 포맷은 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)가 아니라 모델에서만 변경할 수 있습니다.
 
 * **숫자**
    * 숫자 필드 추가
@@ -137,7 +137,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!NOTE]
   >
-  UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
+  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
 
 * **콘텐츠 참조**
    * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
@@ -154,7 +154,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!NOTE]
   >
-  UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
+  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
 
 * **JSON 오브젝트**
    * 콘텐츠 조각 작성자는 조각의 해당 요소에 JSON 구문을 입력할 수 있습니다.
@@ -169,7 +169,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      >[!NOTE]
      >
-     이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
+     >이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
 
 ## 속성(데이터 유형) {#properties}
 
@@ -181,7 +181,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!CAUTION]
   >
-  이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
+  >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
 * **렌더링 형식**
 
@@ -212,11 +212,11 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!NOTE]
   >
-  언어 루트별로 고유성이 보장됩니다.
+  >언어 루트별로 고유성이 보장됩니다.
 
   >[!NOTE]
   >
-  변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
+  >변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
 
 * 특정 데이터 유형 및 그 속성에 대한 자세한 내용은 **[콘텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
 
@@ -272,28 +272,28 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      >[!NOTE]
      >
-     이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
+     >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
 >[!NOTE]
 >
-콘텐츠/조각 참조 및 콘텐츠/조각 참조(UUID)와 UUID 기반 데이터 유형으로 업그레이드하는 방법에 대한 자세한 내용은 [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)를 참조하십시오.
+>콘텐츠/조각 참조 및 콘텐츠/조각 참조(UUID)와 UUID 기반 데이터 유형으로 업그레이드하는 방법에 대한 자세한 내용은 [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)를 참조하십시오.
 
 >[!NOTE]
 >
-AEM은 다음에 대한 재발 방지 기능을 제공합니다.
+>AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
-* 콘텐츠 참조
-이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>* 콘텐츠 참조
+>이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
-* GraphQL의 조각 참조
-서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+>* GraphQL의 조각 참조
+>서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 >[!CAUTION]
 >
-참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
+>참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
-자세한 내용은 [콘텐츠 조각과 함께 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
+>자세한 내용은 [콘텐츠 조각과 함께 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
 
 ### 콘텐츠 참조 {#content-reference}
 
@@ -304,16 +304,16 @@ AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 * 참조된 콘텐츠를 저장할 위치를 지정하거나 나타내는 **루트 경로**
   >[!NOTE]
   >
-  이 경로는 콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 필수입니다.
+  >이 경로는 콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 필수입니다.
   >
-  자세한 내용은 [이미지 참조](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)를 참조하십시오.
+  >자세한 내용은 [이미지 참조](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)를 참조하십시오.
 
 * 참조할 수 있는 콘텐츠 유형
   >[!NOTE]
   >
-  콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 이에 **이미지**&#x200B;가 포함되어야 합니다.
+  >콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 이에 **이미지**&#x200B;가 포함되어야 합니다.
   >
-  자세한 내용은 [이미지 참조](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)를 참조하십시오.
+  >자세한 내용은 [이미지 참조](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)를 참조하십시오.
 
 * 파일 크기 제한
 * 이미지를 참조한 경우:
@@ -347,7 +347,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-콘텐츠 참조는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
+>콘텐츠 참조는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
 
 표준 속성 외에 다음을 정의할 수 있습니다.
 
@@ -373,6 +373,6 @@ type CompanyModel {
 
 >[!NOTE]
 >
-재발 방지 메커니즘을 사용할 수 있습니다. 이는 사용자가 조각 참조에서 현재 콘텐츠 조각을 선택할 수 없도록 하고 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>재발 방지 메커니즘을 사용할 수 있습니다. 이는 사용자가 조각 참조에서 현재 콘텐츠 조각을 선택할 수 없도록 하고 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
-또한 GraphQL에는 조각 참조에 대한 재발 방지 기능이 있습니다. 서로 참조하는 두 개의 콘텐츠 조각 간에 복합 쿼리를 만들면 null을 반환합니다.
+>또한 GraphQL에는 조각 참조에 대한 재발 방지 기능이 있습니다. 서로 참조하는 두 개의 콘텐츠 조각 간에 복합 쿼리를 만들면 null을 반환합니다.
