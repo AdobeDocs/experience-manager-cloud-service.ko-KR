@@ -14,7 +14,7 @@ ht-degree: 2%
 >id="aemcloud_rs_overview"
 >title="개요"
 >abstract="Refactoring Tools 는 Adobe과의 호환성을 위해 기존 AEM 프로젝트를 리팩터링할 수 있도록 AEM as a Cloud Service에서 개발한 솔루션입니다. 도구는 CAM(Cloud Acceleration Manager)을 통해 실행되고 주요 현대화 작업을 자동화합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="지침 및 모범 사례"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ko" text="지침 및 모범 사례"
 
 # 리팩터링 도구 시작하기 {#getting-started-refactoring-tools}
 
