@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -232,6 +232,69 @@ AEM Forms용 AI 도우미는 단순한 빌드가 아닙니다. AEM Forms의 다�
 - **피드백 제공:** AI Assistant 인터페이스에서 기본 제공 **&quot;피드백 제공&quot; 명령 또는 단추**&#x200B;를 사용하여 경험을 공유하거나 문제를 보고하거나 개선 사항을 제안하십시오. (예: `/feedback`을(를) 입력하거나 피드백 아이콘을 찾을 수 있습니다).
 - **공식 지원:** 중요한 문제나 추가 지원이 필요한 경우 공식 Adobe 지원 채널 또는 조직의 지정 지원 연락처를 통해 연락하십시오.
 
+
+
+## 첨부 파일 작업
+
+AI Assistant는 파일 첨부를 지원하여 양식 작성 및 구성 경험을 향상시킵니다. 다양한 파일 형식을 연결하여 변환할 시각적 컨텍스트, 디자인 참조 또는 기존 양식을 제공할 수 있습니다.
+
+### 지원되는 첨부 파일 유형
+
+| 파일 유형 | 사용 사례 | 첨부 파일을 지원하는 명령 | 예 |
+|-----------|-----------|-----------------------------------|----------|
+| **이미지**(PNG, JPG, JPEG, GIF) | 양식 레이아웃 참조, UI mockup, 종이 양식 스캔 | /create-form, /add-form, /create-panel, /add-panel, /update-field | 원하는 레이아웃의 스크린샷 업로드 |
+| **PDF 파일** | 변환할 기존 양식, 디자인 사양 | /create-form, /add-form, /create-panel, /add-panel | PDF 애플리케이션 양식 변환 |
+| **그림 파일** | 시스템 참조, UI 프로토타입 디자인 | /create-form, /add-form, /create-panel | Figure 디자인 프레임 가져오기 |
+| **디자인 파일**(스케치, Adobe XD 내보내기) | 시각적 디자인 참조 | /create-form, /add-form, /create-panel | 참조 디자인 시스템 구성 요소 |
+
+### 첨부 파일 사용 방법
+
+1. **다음 명령을 사용하여 첨부:**
+
+   - AI Assistant 인터페이스에서 첨부 아이콘 클릭
+   - 장치에서 파일 선택
+   - 첨부 파일을 참조하는 명령을 입력합니다.
+
+2. **명령의 첨부 파일 참조:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **여러 첨부 파일:**
+
+   - 비교 또는 참조를 위해 여러 파일을 첨부할 수 있습니다
+   - 사용할 첨부 파일 지정: &quot;첫 번째 첨부된 이미지 사용&quot; 또는 &quot;PDF 파일 기반&quot;
+
+### 첨부 파일 우수 사례
+
+- **선명한 고품질 이미지:** AI 분석을 위해 업로드된 이미지가 선명하고 읽기 쉽도록 합니다.
+- **관련 파일 이름:** AI가 컨텍스트를 이해하는 데 도움이 되도록 설명 파일 이름을 사용합니다.
+- **단일 포커스:** 각 첨부 파일은 한 가지 특정 측면(레이아웃, 필드 디자인 등)에 중점을 두어야 합니다.
+- **지원되는 형식:** 최상의 호환성을 위해 일반 형식(PNG, JPG, PDF)에 고정됨
+- **파일 크기:** 최적의 처리 속도를 위해 첨부 파일을 10MB 미만으로 유지
+
+### 첨부 파일 워크플로 예
+
+**용지 양식 변환:**
+
+1. 종이 서식을 명확하게 스캔하거나 촬영합니다.
+2. 이미지 파일 업로드
+3. 명령 사용: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**디자인 시스템과 일치:**
+
+1. 관련 디자인 구성 요소 내보내기 또는 스크린샷
+2. 디자인 참조 첨부
+3. 명령 사용: `/create-panel following the visual style and layout shown in the attached design`
+
+**필드 스타일 참조:**
+
+1. 원하는 필드 모양의 스크린샷 첨부
+2. 명령 사용: `/update-field @email to match the styling and layout shown in the attached image`
 
 ## 관련 컨텐츠
 

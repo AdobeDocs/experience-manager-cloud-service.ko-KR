@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AI Assistant의 현재 범위는 Adobe Experience Manager as a Cloud Service에 
 
 ## AEM Forms용 AI Assistant(Forms Experience Builder) {#ai-forms-builder}
 
-AEM은 제품 지식을 위한 일반적인 AI Assistant 외에도 AEM Forms용 특수 **AI Assistant(Forms Experience Builder)**&#x200B;를 제공합니다. 이 향상된 도우미는 자연어 프롬프트를 통해 양식을 만들고 구성하고 양식에 대한 질문에 답변하는 데 도움이 될 수 있습니다.
+AEM은 제품 지식을 위한 일반적인 AI Assistant 외에도 AEM Forms용 특수 **[AI Assistant(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**&#x200B;를 제공합니다. 이 향상된 도우미는 자연어 프롬프트를 통해 양식을 만들고 구성하고 양식에 대한 질문에 답변하는 데 도움이 될 수 있습니다.
 
 ### 주요 기능
 
@@ -76,7 +76,7 @@ AEM Forms용 AI Assistant는 다음 위치에서 사용할 수 있습니다.
 >
 > AEM Forms용 AI Assistant(Forms Experience Builder)는 얼리어답터 프로그램에 따라 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 전자 메일을 보내십시오.
 
-자세한 예제 및 모범 사례를 포함하여 AEM Forms용 AI Assistant 사용에 대한 자세한 내용은 AEM Forms 설명서 를 참조하십시오.
+자세한 예제와 모범 사례를 포함하여 AEM Forms용 AI Assistant 사용에 대한 자세한 내용은 [AEM Forms용 AI Assistant 설명서](/help/edge/docs/forms/forms-ai-assistant.md)를 참조하십시오.
 
 ### 예시 사용 사례
 
