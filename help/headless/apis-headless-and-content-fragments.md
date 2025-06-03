@@ -4,50 +4,35 @@ description: 구조화된 컨텐츠 전달 및 컨텐츠 조각 관리에 사용
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 2%
+ht-degree: 42%
 
 ---
 
 # 구조화된 콘텐츠 게재 및 관리를 위한 AEM API {#aem-apis-structured-content-delivery-and-management}
 
-Adobe Experience Manager(AEM) as a Cloud Service은 콘텐츠 조각의 구조화된 콘텐츠 전달 및 콘텐츠 조각 관리를 위한 여러 API를 제공합니다. 특정 API에 대한 자세한 내용은 개별 페이지 를 참조하십시오.
+Adobe Experience Manager(AEM) as a Cloud Service는 콘텐츠 조각에서 구조화된 콘텐츠 게재와 콘텐츠 조각 관리를 위한 여러 API를 제공합니다. 특정 API에 대한 자세한 내용은 개별 페이지를 참조하시기 바랍니다.
 
-* [OpenAPI를 사용한 AEM 컨텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
-   * 이 API는 AEM의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하기 위한 JSON 응답을 만듭니다.
-   * 콘텐츠 조각에 대한 경로를 끝점으로 사용합니다.
-   * 이 API는 REST를 기반으로 합니다.
-   * CDN 통합을 포함하여 콘텐츠 전달에 최적화되었습니다.
-* [컨텐츠 조각 전달을 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-   * 이 API는 스키마 기반입니다. API 스키마는 콘텐츠 구조를 정의하는 콘텐츠 조각 모델로 표시됩니다.
+* [OpenAPI와 함께 사용하는 AEM 콘텐츠 조각 게재](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   * 이 API는 AEM의 콘텐츠 조각에서 구조화된 콘텐츠를 제공하기 위한 JSON 응답을 생성합니다.
+   * 콘텐츠 조각에 대한 경로를 엔드포인트로 사용합니다.
+   * 이 API는 REST 기반입니다.
+   * CDN 통합을 비롯한 콘텐츠 게재에 최적화되어 있습니다.
+* [콘텐츠 조각 게재를 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+   * 이 API는 스키마 기반입니다. API 스키마는 콘텐츠 구조를 정의하는 콘텐츠 조각 모델로 표현됩니다.
    * 이 API는 GraphQL 기반입니다.
 * [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
-   * 이러한 API는 구조화된 컨텐츠 관리를 위한 것입니다.
-   * 각 GET 연산자는 컨텐츠 전달에 최적화되어 있지 않습니다.
-   * 이 API는 REST를 기반으로 합니다.
+   * 이러한 API는 구조화된 콘텐츠 관리에 사용됩니다.
+   * 각 GET 연산자는 콘텐츠 게재에 최적화되어 있지 않습니다.
+   * 이 API는 REST 기반입니다.
 * [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * AEM의 구조화된 컨텐츠 제공을 위한 JSON 출력을 위한 원래 API입니다.
-      * 강력하고 입증된 이 API는 *완전 하이드레이션된* JSON 출력을 제공하지 않습니다. 참조는 경로로만 출력되므로 추가 콘텐츠 검색을 위해 보조 API 요청이 필요합니다.
-   * Assets HTTP API는 콘텐츠 조각 및 콘텐츠 조각 모델(CRUD)을 관리하는 데에도 사용할 수 있습니다.
-   * 이 API는 REST를 기반으로 합니다.
-   * Assets HTTP API의 콘텐츠 조각 지원은 Edge Delivery Services JSON REST API에 의해 승계되므로 향후 더 이상 사용되지 않습니다. 아직 타임스케일이 결정되지 않았습니다.
-
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
+   * AEM에서 구조화된 콘텐츠 게재를 위한 JSON 출력용 원본 API입니다.
+      * 이 API는 견고하고 검증되었지만 *완전히 하이드레이션된* JSON 출력을 제공하지는 않습니다. 참조는 경로로만 출력되므로 추가 콘텐츠를 검색하려면 보조 API 요청이 필요합니다.
+   * Assets HTTP API는 콘텐츠 조각과 콘텐츠 조각 모델(CRUD)을 관리하는 데에도 사용할 수 있습니다.
+   * 이 API는 REST 기반입니다.
+   * Assets HTTP API의 콘텐츠 조각 지원은 Edge Delivery Services JSON REST API로 대체됨에 따라 향후 더 이상 제공되지 않을 예정입니다. 아직 구체적인 일정은 정해지지 않았습니다.
 
 ## REST 및 GraphQL {#rest-vs-graphql}
 
