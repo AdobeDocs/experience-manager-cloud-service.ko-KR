@@ -17,7 +17,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![이미지](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-&#x200B;---
+---
 
 ## Source 코드 업로드 {#uploading}
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 >[!NOTE]
 >소스 코드 업로드가 성공적으로 수행된 경우에만 리팩터링 작업을 실행할 수 있습니다.
 
-&#x200B;---
+---
 
 ## 리팩터링 작업 {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 >[!NOTE]
 >**모든 도구를 함께 사용** 옵션을 사용하여 개별 리팩터링 작업을 트리거하거나 사용 가능한 모든 도구를 한 번에 실행할 수 있습니다.
 
-&#x200B;---
+---
 
 ### &#x200B;2. 작업 상태
 
