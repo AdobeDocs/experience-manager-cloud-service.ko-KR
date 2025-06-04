@@ -4,9 +4,9 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2556'
 ht-degree: 10%
 
 ---
@@ -158,8 +158,8 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 다른 LogManager OSGi 구성 속성을 변경하면 AEM as a Cloud Service에서 가용성 문제가 발생할 수 있습니다.
 
 이전 섹션에서 설명한 대로 고객 환경을 효과적으로 모니터링하려면 다음을 수행합니다.
-* AEM 제품 코드에 대한 Java 로그는 기본 로그 수준 &quot;INFO&quot;를 유지해야 하며 사용자 지정 구성으로 재정의해서는 안 됩니다.
-* 제품 코드의 로그 수준을 DEBUG로 설정하는 것은 허용되지만 성능 저하를 방지하고 더 이상 필요하지 않은 경우 INFO로 복원하려면 제한적으로 사용합니다.
+* AEM의 기본 로그 구성(Apache Sling 로깅 구성)의 로그 수준은 기본값인 &quot;INFO&quot;에서 수정해서는 안 됩니다.
+* 제품 코드의 개별 패키지에 대해 로그 수준을 DEBUG로 설정하는 것이 허용되지만(&quot;Apache Sling Logger 구성&quot; OSGi 구성 팩토리의 인스턴스 사용), 성능 저하를 방지하고 더 이상 필요하지 않을 때 INFO로 복원하기 위해 제한적으로 사용합니다.
 * 고객이 개발한 코드에 대해 로그 수준을 조정하는 것은 허용됩니다.
 * AEM 제품 코드와 고객이 개발한 코드 모두에 대한 모든 로그는 기본 로깅 형식을 유지해야 합니다.
 * 로그 출력은 기본 파일 &quot;logs/error.log&quot;로 향해야 합니다.
