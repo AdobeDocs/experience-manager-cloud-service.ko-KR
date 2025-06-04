@@ -1,28 +1,29 @@
 ---
-title: 리팩터링 도구 시작하기
+title: 리팩터링 도구 개요
 description: AEM 리팩터링 도구 시작 방법 알아보기
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="개요"
->abstract="Refactoring Tools 는 Adobe과의 호환성을 위해 기존 AEM 프로젝트를 리팩터링할 수 있도록 AEM as a Cloud Service에서 개발한 솔루션입니다. 도구는 CAM(Cloud Acceleration Manager)을 통해 실행되고 주요 현대화 작업을 자동화합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ko" text="지침 및 모범 사례"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# 리팩터링 도구 시작하기 {#getting-started-refactoring-tools}
+-->
+
+# 리팩터링 도구 개요 {#refactoring-tools-overview}
 
 **리팩터링 도구** 기존 AEM 프로젝트를 **AEM as a Cloud Service(AEMaaCS)**&#x200B;와(과) 호환되도록 업데이트하는 프로세스를 간소화합니다. 이러한 도구는 일반적인 리팩터링 및 현대화 작업을 자동화하고 원활한 경험을 위해 **CAM(Cloud Acceleration Manager)**&#x200B;과(와) 통합됩니다.
 
 이전에는 CLI 유틸리티로만 제공되었던 리팩터링 툴은 이제 자동화된 검사, 구성 생성 및 작업 실행과 같은 기능이 포함된 통합 인터페이스를 제공하여 수동 오버헤드를 줄이고 가시성을 향상시킵니다.
-
-&#x200B;---
 
 ## 검사 워크플로우 {#inspection-workflow}
 
@@ -34,8 +35,6 @@ ht-degree: 2%
 * **구성 생성** - 도구는 업로드된 소스 코드를 검사하고 필요한 구성을 생성합니다.
 * **페이로드 제출** - 이러한 구성은 실행을 위해 선택한 도구에 직접 전달됩니다.
 
-&#x200B;---
-
 ## 사용 가능한 리팩터링 도구
 
 ### 저장소 현대화 도구 {#repo-modernizer}
@@ -45,8 +44,6 @@ ht-degree: 2%
 ### 코드 변형자 {#code-transformer}
 
 **코드 변환기**&#x200B;는 지능형 패턴 인식 및 AI 기반 분석을 사용하여 AEMaaCS와 호환되지 않는 코드 세그먼트를 감지하고 업데이트합니다. 이 도구는 마이그레이션 작업을 단순화하고 수동 코드 변경 사항을 줄입니다.
-
-&#x200B;---
 
 ## 리팩터링 워크플로 단계 {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ ht-degree: 2%
 
 >[!NOTE]
 >검사 과정에서 다른 프로젝트 업로드는 허용되지 않습니다.
-
-&#x200B;---
 
 ### 2단계: 리팩터링 작업 트리거
 
