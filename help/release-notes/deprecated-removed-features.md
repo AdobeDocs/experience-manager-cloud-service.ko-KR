@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
+source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 89%
+source-wordcount: '3028'
+ht-degree: 71%
 
 ---
 
@@ -18,20 +18,19 @@ ht-degree: 89%
 >title="AEM as a Cloud Service에서 더 이상 사용되지 않으며 제거된 기능"
 >abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 이 탭은 클라우드 기반 기능으로 대체된 기능을 강조 표시합니다."
 
-Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 대체하기 위해 제품 기능을 지속해서 평가합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 클라우드 기반 배포 모델을 사용함에 따라, 일부 기능이 클라우드 기반 기능으로 대체되었습니다.
+Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM as a Cloud Service의 성능, 보안 및 전반적인 가치에 대해 발전하는 표준을 충족하는지 확인합니다. 이러한 평가를 기반으로 특정 기능은 사용 중단 표시가 될 수 있습니다. 가능한 경우 Adobe에서 적절한 대체 기능을 제공합니다.
 
-[!DNL Experience Manager] 기능의 제거/대체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
+사용 중단이 발표되면 이 기능은 제한된 기간 동안만 사용할 수 있으며 고객은 지정된 제거 날짜 이전에 모든 사용을 제거해야 합니다. Adobe은 원활한 전환을 지원하기 위해 합당한 알림과 지침을 제공할 예정입니다.
 
-1. 사용 중지 공지가 먼저 표시됩니다. 더 이상 사용되지 않는 기능은 계속 사용할 수 있지만 추가로 개선되지 않습니다.
-1. 이제 사용되지 않는다고 발표된 기능은 이른 시일 내에 후속 주 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 발표됩니다.
+사용 중단 기간 동안 Adobe은 이메일 알림, 작업 센터 알림 또는 Cloud Manager의 미리 알림을 통해 기능을 사용하지 않도록 전환하기 위해 수행해야 하는 작업을 고객에게 알려줍니다.
 
-이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
+>[!WARNING]
+>
+>경우에 따라 새 Cloud Manager 빌드를 배포하거나 최신 버전의 AEM as a Cloud Service으로 업그레이드하기 전에 기능을 제거해야 할 수 있습니다.
 
-## 더 이상 사용되지 않는 기능 {#deprecated-features}
+## 사용되지 않는 기능 {#deprecated-features}
 
-이 섹션에는 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않는다고 표시된 기능이 나열됩니다. 일반적으로 향후 릴리스에서 제거되는 기능은 먼저 대체 기능이 제공되며 더 이상 사용되지 않도록 설정됩니다.
-
-현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
+아래 표의 기능은 더 이상 사용되지 않는다고 발표되었지만 아직 제거되지 않았습니다.  대상 제거 날짜 이전에 기능 사용을 중지해야 하거나 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다.
 
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
@@ -54,7 +53,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## 제거된 기능 {#removed-features}
 
-이 섹션에는 [!DNL Experience Manager] 및 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 제거된 기능이 나열됩니다.
+이 섹션에는 제거된 기능이 나열됩니다.
 
 | 영역 | 기능 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -68,11 +67,11 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 | [!DNL Foundation] | [서비스 사용자 ID 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)를 위한 org.apache.sling.serviceusermapping 기능 지원 | 해당 사항 없음 | 8/30/24 |
+| [!DNL Foundation] | Java 11 런타임은 더 이상 사용되지 않으며 Adobe에서 Java 21 런타임으로 대체되었습니다. 코드는 여전히 Java 11을 사용하여 작성할 수 있습니다(Java 17 및 21은 기타 옵션) | Java 21 런타임이 적용됩니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 설명된 대로 라이브러리 버전을 업데이트해야 합니다 | 25/3/5/29 |
 
+## 더 이상 사용되지 않는 API {#aem-apis}
 
-## AEM API {#aem-apis}
-
-다음은 더 이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생할 수 있습니다.
+아래 표의 API(확장하려면 클릭)는 더 이상 사용되지 않는 것으로 발표되었지만 아직 제거되지 않았습니다.  대상 제거 날짜 이전에 이러한 API 사용을 중지해야 하거나 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다. 일부 API는 아래 API 제거 지침 섹션을 참조합니다.
 
 <details>
   <summary>더 이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
@@ -91,47 +90,17 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>7/30/2021</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td><a href="https://johnzon.apache.org/index.html">javax.json</a>의 Apache Johnzon 구현이 권장되며 사용해야 합니다. </td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2는 유지 관리 모드입니다. 대신 Commons Lang 3을 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3은 유지 관리 모드입니다. 대신 Commons Collections 4를 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>Felix 웹 콘솔은 클라우드 환경에서 지원되지 않습니다. <a href="#org.apache.felix.webconsole">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/30/2021</td>
-    <td>8/31/2025</td>
-  </tr>
-  <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다. <a href="#org.eclipse.jetty">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+ <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다. <a href="#com.mongodb">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
+   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
     <td>7/29/2021</td>
@@ -173,17 +142,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>1/27/2022</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
-    <td>10/31/2022</td>
-    <td>1/01/2023</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service는 이 API를 지원하지 않습니다.</td>
-    <td>5/15/2023</td>
-    <td>6/15/2023</td>
-  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+  <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Google Guava Core Libraries는 더 이상 사용되지 않습니다.</td>
     <td>5/15/2023</td>
     <td>8/31/2025</td>
@@ -193,20 +152,8 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>AEM as a Cloud Service은 이 내부 slf4j API를 지원하지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/11/2022</td>
     <td>8/31/2025</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
-    <td>12/12/2023</td>
-    <td>6/30/2024</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
-    <td>12/12/2023</td>
-    <td>6/30/2024</td>
-  </tr>
-  <tr>
+  </tr> 
+    <tr>
     <td>com.drew.*</td>
     <td>이미지와 비디오에서 메타데이터를 추출하려면 Cloud Service의 Asset Compute, Apache POI 또는 Apache Tika를 통해 수행해야 합니다.</td>
     <td>9/17/2024</td>
@@ -225,16 +172,70 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+<td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
+    <td>Felix 웹 콘솔은 클라우드 환경에서 지원되지 않습니다. <a href="#org.apache.felix.webconsole">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/30/2021</td>
+    <td>8/31/2025</td>
+  </tr>
+<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>10/31/2022</td>
     <td>8/31/2025</td>
+  </tr>  
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>TBD</td>
   </tr>
-</tbody>
+  <tr>
+    <td>org.json</td>
+    <td><a href="https://johnzon.apache.org/index.html">javax.json</a>의 Apache Johnzon 구현이 권장되며 사용해야 합니다. </td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2는 유지 관리 모드입니다. 대신 Commons Lang 3을 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3은 유지 관리 모드입니다. 대신 Commons Collections 4를 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
+    <td>10/31/2022</td>
+    <td>TBD</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service는 이 API를 지원하지 않습니다.</td>
+    <td>5/15/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
+    <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
+    <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
+  </tbody>
 </table>
 </details>
 
-아래는 제거된 AEM API의 확장된 목록입니다.
+## 제거된 API {#removed-apis}
+
+이 섹션에는 더 이상 사용되지 않고 제거된 API가 나열됩니다. 일부 API는 아래 API 제거 지침 섹션을 참조합니다.
 
 <details>
   <summary>제거된 API의 목록을 보려면 이를 펼치십시오.</summary>
@@ -314,6 +315,10 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 </tbody>
 </table>
 </details>
+
+## API 제거 지침 {#api-removal-guidance}
+
+이 섹션은 위의 표에 있는 다양한 API에 대한 API 제거 지침을 반영합니다.
 
 ### `org.apache.sling.commons.auth*` 제거 {#org.apache.sling.commons.auth}
 
@@ -412,7 +417,7 @@ Cloud Service에서는 로그백이 지원되지 않습니다. 모든 사용을 
 
 ## OSGI 구성 {#osgi-configuration}
 
-아래 두 목록은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
+아래 섹션은 AEM as a Cloud Service OSGi 구성 표면을 반영하며 고객이 구성할 수 있는 내용을 설명합니다.
 
 1. 고객 코드는 나열된 OSGi 구성을 구성해서는 안 됩니다.
 1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
@@ -423,212 +428,115 @@ Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사
 
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
-+++수정할 수 없는 OSGi 구성입니다.
+### 더 이상 사용되지 않는 OSGi 속성(더 이상 수정할 수 없는 속성) {#deprecated-osgi-properties}
 
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.felix.http (Factory)`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
-+++
+다음 OSGi 구성 요소 PID의 일부 속성을 더 이상 수정할 수 없습니다. 이 작업은 아래 설명된 일정에 따라 시행됩니다.
 
-+++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
+| **OSGI 구성 요소 ID** | **수정할 수 없는 속성** | **사용 중단** | **적용** |
+|---|---|---|---|
+| **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | 모두 | 2024 | 8/31/25 |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | 모두 | 2024 |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 모두 | 2024 | 8/31/25 |
+| **`org.apache.felix.http (Factory)`** | 모두 | 2024 | 8/31/25 |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 모두 | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 모두 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 모두 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.impl`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 모두 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 모두 | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | 모두 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.factory`** | 모두 | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | 모두 | 6/3/25 | 8/31/25 |
 
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * 유형: 정수
-   * 필수 범위: 2~100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * 유형: 중복 요소
-* `org.apache.felix.eventadmin.Timeout`
-   * 유형: 정수
-* `org.apache.felix.eventadmin.RequireTopic`
-   * 유형: 부울
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * 필수
-   * 유형: 문자열 배열
-   * 필수 범위: 적어도 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * 유형: 문자열 배열
-* **`org.apache.felix.http`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `org.apache.felix.http.timeout`
-      * 유형: 정수
-   * `org.apache.felix.http.session.timeout`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * 유형: 정수
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * 유형: 부울
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * 유형: 부울
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * 유형: 부울
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * 유형: 정수
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * 유형: 부울
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * 유형: 부울
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * 유형: 문자열
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * 유형: 문자열 배열
-   * `org.apache.felix.http.session.invalidate`
-      * 유형: 부울
-   * `org.apache.felix.http.session.container.attribute`
-      * 유형: 문자열 배열
-   * `org.apache.felix.http.session.uniqueid`
-      * 유형: 부울
-* **`org.apache.sling.scripting.cache`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `org.apache.sling.scripting.cache.size`
-      * 유형: 정수
-      * 필수 범위: >= 2,048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * 필수
-      * 유형: 문자열 배열
-      * 필수 범위: js를 포함해야 함
-* **`com.day.cq.mailer.DefaultMailService`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `smtp.host`
-      * 유형: 문자열
-   * `smtp.port`
-      * 유형: 정수
-      * 필수 범위: 465, 587 또는 25
-   * `smtp.user`
-      * 유형: 문자열
-   * `smtp.password`
-      * 유형: 문자열
-   * `from.address`
-      * 유형: 문자열
-   * `smtp.ssl`
-      * 유형: 문자열
-   * `smtp.starttls`
-      * 유형: 부울
-   * `smtp.requiretls`
-      * 유형: 부울
-   * `debug.email`
-      * 유형: 부울
-   * `oauth.flow`
-      * 유형: 부울
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
-   * `org.apache.sling.commons.log.level`
-      * 유형: 열거
-      * 필수 범위: INFO, DEBUG 또는 TRACE
-   * `org.apache.sling.commons.log.names`
-      * 유형: 문자열
-   * `org.apache.sling.commons.log.file`
-      * 유형: 문자열
-   * `org.apache.sling.commons.log.additiv`
-      * 유형: 부울
-+++
+<!--
+### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+
+Properties for the following OSGi component PIDs cannot be modified, as described below.
+-->
+
+### OSGi 속성 제한 {#restrictions-osgi-properties}
+
+일부 OSGi 속성의 값은 아래에 설명된 규칙으로 제한됩니다.
+
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한(적용되는 경우) |
+|---|---|---|---|---|
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | 예 | 정수 | 2-100 |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 더블 | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 정수 | -- |
+|   | `org.apache.felix.eventadmin.RequireTopic` |   | 부울 | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 예 | 문자열 배열 | `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`을(를) 적어도 모두 포함해야 합니다. |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 문자열 배열 | -- |
+| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 정수 |   |
+|   | `org.apache.felix.http.session.timeout` |   | 정수 |   |
+|   | `org.apache.felix.http.jetty.threadpool.max` |   | 정수 |   |
+|   | `org.apache.felix.http.jetty.headerBufferSize` |   | 정수 |   |
+|   | `org.apache.felix.http.jetty.requestBufferSize` |   | 정수 |   |
+|   | `org.apache.felix.http.jetty.responseBufferSize` |   | 정수 |   |
+|   | `org.apache.felix.http.jetty.maxFormSize` |   | 정수 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | 부울 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.secure` |   | 부울 |   |
+|   | `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | 문자열 |   |
+|   | `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding` |   | 부울 |   |
+|   | `org.eclipse.jetty.servlet.SessionCookie` |   | 문자열 |   |
+|   | `org.eclipse.jetty.servlet.SessionDomain` |   | 문자열 |   |
+|   | `org.eclipse.jetty.servlet.SessionPath` |   | 문자열 |   |
+|   | `org.eclipse.jetty.servlet.MaxAge` |   | 정수 |   |
+|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | 정수 |   |
+|   | `org.apache.felix.jetty.gziphandler.enable` |   | 부울 |   |
+|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | 정수 |   |
+|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | 정수 |   |
+|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | 정수 |   |
+|   | `org.apache.felix.jetty.gzip.syncFlush` |   | 부울 |   |
+|   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | 문자열 |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 문자열 배열 |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 문자열 배열 |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 문자열 배열 |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 문자열 배열 |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 문자열 배열 |   |
+|   | `org.apache.felix.http.session.invalidate` |   | 부울 |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | 문자열 배열 |   |
+|   | `org.apache.felix.http.session.uniqueid` |   | 부울 |   |
+| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 예 | 정수 | >= 2048 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | 예 | 문자열 배열 | 은(는) &quot;js&quot;를 포함해야 합니다 |
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 문자열 |   |
+|   | `smtp.port` | 예 | 정수 | 465, 587 또는 25 중 하나 |
+|   | `smtp.user` |   | 문자열 |   |
+|   | `smtp.password` |   | 문자열 |   |
+|   | `from.address` |   | 문자열 |   |
+|   | `smtp.ssl` |   | 문자열 |   |
+|   | `smtp.starttls` |   | 부울 |   |
+|   | `smtp.requiretls` |   | 부울 |   |
+|   | `debug.email` |   | 부울 |   |
+|   | `oauth.flow` |   | 부울 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 예 | 문자열 | &quot;INFO&quot;, &quot;DEBUG&quot; 또는 &quot;TRACE&quot; |
+|   | `org.apache.sling.commons.log.names` |   | 문자열 배열 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | 부울 |   |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 아니요 | 문자열 |   |
+|   | `request.log.outputtype` | 아니요 | 문자열 |   |
+|   | `request.log.entry.format` | 아니요 | 문자열 |   |
+|   | `request.log.exit.format` | 아니요 | 문자열 |   |
+|   | `request.log.enabled` | 아니요 | 문자열 |   |
+|   | `access.log.output` | 아니요 | 문자열 |   |
+|   | `access.log.outputtype` | 아니요 | 문자열 |   |
+|   | `access.log.enabled` | 아니요 | 문자열 |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | 아니요 | 문자열 |   |
+|   | `servletresolver.cacheSize` | 아니요 | 정수 |   |
+|   | `servletresolver.paths` | 아니요 | 문자열[] |   |
+|   | `servletresolver.defaultExtensions` | 아니요 | 문자열 |   |
+|   | `servletresolver.mountProviders` | 아니요 | 부울 |   |
+|   | `servletresolver.scriptUser` | 아니요 | 문자열 | 더 이상 사용되지 않음, 사용 안 함 |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 아니요 | 문자열[] |   |
+|   | `externalizer.encodedpath` | 아니요 | 부울 |   |
+|   | `externalizer.host` | 아니요 | 문자열 |   |
+|   | `externalizer.contextpath` | 아니요 | 문자열 |   |
 
 ## Java 버전 21 런타임 업데이트 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service가 Java 21 런타임으로 전환됩니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다.
+Adobe Experience Manager as a Cloud Service이 Java 21 런타임으로 전환되었습니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다.
 
-<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
-
-### Runtime Requirements
-
-These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
-
-Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of org.apache.groovy {#org.apache.groovy}
-
-Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
-
-This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
-
-### Build-time Requirements
-
-These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
-
-Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
-
-#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
-
-Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
-
-Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
-
-#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
-
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
--->
