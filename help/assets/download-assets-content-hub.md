@@ -1,12 +1,12 @@
 ---
 title: Content Hub에서 에셋 다운로드
-description: Content Hub 포털에서 에셋을 다운로드하는 방법을 알아봅니다
+description: Content Hub 포털에서 단일 또는 여러 에셋과 해당 표현물을 다운로드하는 방법을 알아봅니다.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
+source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 10%
+source-wordcount: '888'
+ht-degree: 8%
 
 ---
 
@@ -54,61 +54,86 @@ ht-degree: 10%
 
 >[!AVAILABILITY]
 >
->Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
+> 이제 PDF 형식으로 [!DNL Content Hub] 가이드를 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
 >
 >[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub을 사용하여 에셋을 다운로드하고 공유할 수 있습니다. Content Hub 사용자 인터페이스에는 승인된 에셋만 표시됩니다. 이러한 에셋에는 이미지, 비디오 또는 기타 디지털 콘텐츠가 포함될 수 있습니다. Content Hub은 효과적인 에셋 배포를 위해 접근성과 적응성을 향상합니다.
+[!DNL Content Hub]을(를) 통해 에셋을 다운로드하고 공유할 수 있습니다. [!DNL Content Hub] 사용자 인터페이스에는 승인된 자산만 표시됩니다. 이러한 에셋에는 이미지, 비디오 또는 기타 디지털 콘텐츠가 포함될 수 있습니다. [!DNL Content Hub]은(는) 효과적인 자산 배포를 위해 접근성과 적응성을 향상시킵니다.
 
-Content Hub을 사용하여 하나 또는 여러 에셋과 사용 가능한 렌디션을 다운로드할 수 있습니다.
+[!DNL Content Hub]을(를) 사용하여 하나 또는 여러 에셋과 사용 가능한 렌디션을 다운로드할 수 있습니다.
 
-Content Hub에서 사용할 수 있는 [변환 유형](#types-of-renditions)을 참조하세요.
+Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-renditions)을 참조하세요.
 
-## 에셋 및 해당 렌디션 다운로드 {#download-asset-renditions}
+## 하나 이상의 에셋 및 해당 렌디션 다운로드 {#download-asset-renditions}
 
-에셋 및 해당 렌디션을 다운로드하려면 다음 단계를 실행합니다.
+하나 이상의 에셋 및 해당 렌디션을 다운로드하려면 다음 단계를 수행하십시오.
 
-1. 속성을 보려면 자산을 클릭합니다.
+1. 에셋을 다운로드하려면 에셋 카드에서 사용 가능한 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 에셋을 미리 보고, 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**를 클릭하십시오.
+   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-1. 다운로드 프로세스를 시작하려면 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭하십시오. 다운로드 패널에 사용 가능한 모든 에셋 렌디션이 나열됩니다.
+   또는 에셋 썸네일을 클릭하고 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 대화 상자에서 사용 가능한 렌디션을 선택하고 확인한 후 다운로드합니다.
+
+1. 여러 자산을 다운로드하려면 자산을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭한 다음 **[!UICONTROL 자산 다운로드]** 대화 상자에서 선택한 자산 목록을 검토하십시오. 목록에서 자산 선택을 취소하려면 자산 옆에 있는 ![선택 취소](/help/assets/assets/Close.svg)를 클릭합니다. 하나 이상의 렌디션을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 단일 ZIP 파일로 다운로드합니다. **[!UICONTROL 스마트 자르기]** 및 **[!UICONTROL 정적 렌디션]**을 선택하면 선택한 각 에셋의 사용 가능한 모든 정적 및 스마트 자르기 렌디션이 다운로드됩니다.
+   ![여러 에셋 다운로드](/help/assets/assets/download-multiple-assets-CH.png)
+다운로드가 진행되는 동안 [!DNL Content Hub]을(를) 계속 사용할 수 있습니다. Content Hub은 다운로드 프로세스 중에 워크플로우를 중단하지 않습니다.
+   ![여러 에셋 다운로드](/help/assets/assets/download-assets-notification-ch.png)
+**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**를 선택하여 다운로드합니다.
+   ![여러 에셋 다운로드](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
-   >* 에셋을 다운로드하는 동안 모든 [정적, 동적 및 스마트 자르기 렌디션](#types-of-renditions)을 다운로드할 수 있습니다.
+   >* 변환은 [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
+   >* [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md)에 대한 액세스 권한이 있는 사용자는 동적 및 스마트 자르기 변환을 보고 다운로드할 수 있습니다.
+   >* 라이선스 미리 보기는 자산이 [!DNL Assets as a Cloud Service] 작성 환경을 사용하여 승인된 경우에만 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
 
-1. 렌디션을 하나 이상 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
+<!--
 
-   ![단일 에셋 렌디션 다운로드](/help/assets/assets/download-single-asset-renditions.png)
+## Download an asset and its renditions {#download-asset-renditions} 
+
+To download an asset and its renditions, execute the following steps: 
+
+1. Click the asset to view its properties.
+
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
+
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+   ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-사용 허가된 자산을 다운로드하는 경우 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 클릭하세요. **[!UICONTROL 약관]**&#x200B;을 클릭하여 자산 라이선스를 볼 수도 있습니다. Assets as a Cloud Service 작성 환경을 사용하여 에셋이 승인된 경우에만 라이선스 미리보기가 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
+If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 >[!NOTE]
 >
-> Open API 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 대한 액세스 권한이 있는 사용자는 동적 및 스마트 자르기 변환을 보고 다운로드할 수 있습니다.
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
-## 여러 에셋 및 해당 렌디션 다운로드 {#download-multiple-assets-renditions}
+## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
-여러 에셋 및 해당 표현물을 다운로드하려면 다음 단계를 수행하십시오.
+To download multiple assets and their renditions, execute the following steps: 
 
-1. 자산을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. [!UICONTROL 에셋 다운로드] 화면에 선택한 에셋을 모두 나열하는 화면이 표시됩니다.
-1. 다운로드를 시작하려면 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 다양한 다운로드 옵션 중에서 선택하십시오.
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. The [!UICONTROL Download assets] screen displays listing all the selected assets. 
+1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
-   * **[!UICONTROL 원본 다운로드]**: 선택한 자산을 원본 양식으로 다운로드하려면 이 옵션을 선택하십시오.
-   * **정적 렌디션만 다운로드[!UICONTROL 원본 에셋을 제외한 에셋의 사용 가능한 모든 정적 렌디션을 다운로드하려면 이 옵션을 선택하십시오.]**
-   * **원본 및 정적 렌디션 [!UICONTROL 다운로드]**: 선택한 에셋의 원본 및 정적 렌디션을 모두 다운로드하려면 이 옵션을 선택하십시오.
+    * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
-     ![여러 렌디션 다운로드](/help/assets/assets/download-multiple-renditions.png)
+      ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
-     >[!NOTE]
-     >
-     >* 변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
-     >* 여러 자산을 다운로드하는 동안에는 [정적 렌디션](#types-of-renditions)만 다운로드할 수 있습니다.
+      >[!NOTE]
+      >
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
-   선택한 자산 중 라이센스가 부여된 자산이 있는 경우 왼쪽 창에서 자산의 라이센스를 클릭하여 미리 보기를 확인합니다. 그러면 **[!UICONTROL 위에서 언급한 약관을 읽고 수락했습니다]**. **[!UICONTROL 다운로드]**&#x200B;를 클릭할 수 있습니다. Assets as a Cloud Service 작성 환경을 사용하여 에셋이 승인된 경우에만 라이선스 미리보기가 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
+    If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -142,12 +167,11 @@ The dialog box that displays depends on whether the download list includes expir
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
-
 ## 표현물 유형 {#types-of-renditions}
 
 에셋 렌디션은 에셋의 원본 파일을 다르게 표현한 것입니다. 여기에는 썸네일, 웹 또는 모바일용으로 최적화된 버전, 워터마크가 적용되거나 DRM으로 보호된 파일 또는 스마트 자르기와 같은 동적 요소가 포함될 수 있습니다. 원본 파일 형식과 일치시킬 필요가 없으며, 대신 다양한 사용 사례에서 에셋을 나타내는 역할을 합니다.
 
-[Experience Manager Assets에서 렌디션 보기 및 관리](/help/assets/renditions.md)에 대해 자세히 알아보세요.
+ [!DNL Experience Manager Assets]](/help/assets/renditions.md)에서 [렌디션 보기 및 관리에 대해 자세히 알아보세요.
 
 [!DNL Experience Manager Assets]은(는) 다음 유형의 변환을 지원합니다.
 
@@ -155,7 +179,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [동적 변환](/help/assets/renditions.md#dynamic-renditions): 동적 변환은 다양한 장치 해상도에 대한 이미지 크기 조정 또는 다양한 종횡비에 맞는 자르기 등 다양한 작업을 수행하는 자산의 실시간 사용자 지정 버전입니다. 이러한 렌디션을 사용하면 더 넓은 요구 사항에 맞게 개인화되고 최적화된 경험을 제공할 수 있습니다. 자산의 동적 변환이 [!DNL Adobe Experience Manager Assets] 작성 환경에서 만들어집니다. 동적 변환을 활성화하는 데 필요한 단계에 대한 자세한 내용은 [동적 변환 활성화](#enable-dynamic-media-renditions)를 참조하십시오.
 
-* [스마트 자르기](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): 스마트 자르기 프로세스는 자르기 프로세스 중 에셋의 필수 부분에만 중점을 둡니다. Dynamic media 스마트 자르기 for은 Adobe Sensei에서 제공하는 인공 지능을 활용하여 관심 영역을 추적하므로, 모든 화면 크기에서 에셋이 최고처럼 보이도록 할 수 있습니다. [!DNL Adobe Experience Manager] 스마트 자르기에 제목과 함께 에셋 표현물의 너비와 높이가 표시됩니다. 자세한 내용은 [AEM Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을 참조하세요.
+* [스마트 자르기](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): 스마트 자르기 프로세스는 자르기 프로세스 중 에셋의 필수 부분에만 중점을 둡니다. Dynamic Media 스마트 자르기는 Adobe Sensei에서 제공하는 인공 지능을 활용하여 관심 영역을 추적하므로 모든 화면 크기에서 에셋이 가장 잘 보이는지 확인할 수 있습니다. [!DNL Adobe Experience Manager] 스마트 자르기에 제목과 함께 에셋 표현물의 너비와 높이가 표시됩니다. 자세한 내용은 [AEM Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을 참조하세요.
 
   스마트 자르기 렌디션이 표시되고 OpenAPI 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 액세스할 수 있는 경우에만 다운로드할 수 있습니다. 스마트 자르기 렌디션은 이미지 에셋에만 사용할 수 있습니다.
 
