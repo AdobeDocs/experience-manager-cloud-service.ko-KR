@@ -201,7 +201,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
 2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.
 3. **레이블** 필드에 메타데이터 이름을 지정하고 **메타데이터** 필드에서 메타데이터 속성을 선택합니다.
-4. **확인**&#x200B;을 클릭한 다음 **저장**을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
+4. **확인**&#x200B;을 클릭한 다음 **저장**&#x200B;을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
    ![자산 카드](/help/assets/assets/asset-card.png)
 
 마찬가지로 각 사용 가능한 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)을 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
@@ -216,7 +216,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 새 메타데이터 속성이 메타데이터 필드 목록에 표시되도록 변경 사항을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
 
-마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 ![Content Hub에서 구성 UI 검색](assets/configuration-ui-metadata-search.png)
 
 ### 브랜딩 {#configure-branding-content-hub}
@@ -337,4 +337,4 @@ Content Hub 사용자가 공개 링크를 생성할 수 있도록 구성 사용�
 
    ![Content Hub에서 공개 링크 공유 사용](assets/enable-public-link-sharing-tab.png)
 
- [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
+ [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
