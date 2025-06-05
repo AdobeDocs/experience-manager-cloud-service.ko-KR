@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 99%
+source-wordcount: '2067'
+ht-degree: 31%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 99%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2025.4.0)의 릴리스 일자는 2025년 4월 24일입니다. 다음 기능 릴리스(2025.5.0)는 2025년 6월 5일에 예정되어 있습니다.
+
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.5.0) 일자는 2025년 6월 5일 금요일입니다. 다음 기능 릴리스(2025.6.0)는 2025년 6월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -40,52 +41,80 @@ ht-degree: 99%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Experience Manager Sites의 새로운 기능 {#enhancements-sites}
-
-**새로운 콘텐츠 조각 모델 관리 UI**
-
-AEM 콘텐츠 조각을 사용하여 작업할 때 사용할 수 있는 새로운 클라이언트측 사용자 인터페이스 목록이 더욱 확장되고 완성되었으며, 이제 콘텐츠 조각 모델에 대해 새로운 관리 UI를 사용할 수 있습니다. 새로운 UI는 필터를 사용하여 모델을 검색할 수 있는 깔끔하고 현대적인 목록 보기를 제공하며, 이를 통해 모델 태그와 특정 모델을 기반으로 하는 콘텐츠 조각이 표시됩니다. 설명서는 [여기](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)에서 확인할 수 있습니다.
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**AI 생성 메타데이터**
 
-**개선된 보안 환경에서 Dynamic Media(Scene7)가 지원되지 않음**
+이제 AEM Assets은 [AI를 사용하여 제목, 설명 및 키워드를 포함한 메타데이터를 자동으로 생성합니다](/help/assets/metadata-assets-view.md#ai-smart-tags). 이러한 AI 생성 필드는 메타데이터 정확도를 향상시켜 에셋을 보다 쉽게 검색, 분류 및 추천할 수 있도록 합니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다.
 
-AEM as a Cloud Service의 Dynamic Media(Scene7)는 HIPAA를 지원하지 않으며 개선된 보안이 활성화된 AEM 환경에서 사용할 수 없습니다.
+![AI 생성 메타데이터](/help/assets/assets/enhanced-smart-tags.png)
 
-2025년 4월 AEM as a Cloud Service 릴리스부터 기술 제한 사항으로 인해 보안이 강화된 환경에서는 Dynamic Media(Scene7)를 구성할 수 없습니다. 결과적으로, **도구** > **클라우드 서비스** 아래의 **Dynamic Media 구성** 카드는 이러한 환경에서 더 이상 표시되지 않습니다.
+**Figma와 통합**
 
-또한 AEM 6.5를 사용하는 고객은 Dynamic Media (Scene7) 스택이 HIPAA를 지원하지 않는다는 점을 인지하고 있어야 합니다.
+AEM Assets은 기본적으로 Figma와 통합되어 설계자가 Figma 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리하는 컨텐츠를 그림 캔버스에 배치한 다음 AEM Assets 저장소에 새 컨텐츠 또는 편집된 컨텐츠를 저장할 수 있습니다.
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**보고**
-
-Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터 더 이상 지원되지 않습니다.
-
-[대역폭 및 스토리지, 보고서 유형](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)을 참조하십시오.
+![Figma와 통합](/help/assets/assets/figma-integration.png)
 
 
-## 자산 보기의 새로운 기능 {#new-features-assets-view}
+### Content Hub의 새로운 기능 {#new-features-content-hub}
 
-**자산 관계**
+**특성 기반 액세스 제어(ABAC)**
 
-이제 자산 보기의 간소화된 자산 세부 정보 패널에서 자산 관계를 보고 편집할 수 있습니다. 소스 및 파생과 같은 관계를 콘텐츠에 간편하게 추가하여 사용자가 관련성 있는 히어로 콘텐츠를 보다 효과적으로 찾을 수 있도록 하십시오.
+이제 Content Hub을 사용하여 에셋에 액세스하는 데 규칙 기반 제한을 적용할 수 있습니다. 에셋 권한은 거버넌스를 보장하며 사용자가 관련 에셋만 액세스할 수 있도록 합니다.
 
-![자산 관계 예시](/help/assets/assets/asset-relations-example.png)
+에셋 제한 규칙은 메타데이터를 기반으로 하며, 규칙에 정의된 조건이 에셋 메타데이터와 일치하는 경우 에셋이 사용자 그룹에 표시됩니다.
 
-**자산 버전 비교**
+속성 기반 액세스 제어의 몇 가지 주요 이점은 다음과 같습니다.
 
-이제 자산 보기를 사용하여 원하는 버전의 자산을 빠르게 선택하고 최신 버전과 비교할 수 있습니다.
+* 사용 권한에 대한 폴더 구조에 대한 종속성 제거
 
-![자산 버전 비교](/help/assets/assets/version-compare2.png)
+* 관리자가 에셋을 업로드하고 권한 구조를 소급하여 결정할 수 있습니다.
+
+* 중복 횟수가 줄어들어 자산 무결성이 향상됩니다. 동일한 에셋을 다른 그룹과 공유할 때 폴더 기반 권한에서 중복이 필요합니다.
+
+**UI 브랜딩**
+
+이제 Content Hub을 통해 관리자는 배너 이미지, 배너 제목, 본문 텍스트와 기본 및 2차 색상을 비롯한 브랜드별 요소로 사용자 인터페이스를 사용자 정의할 수 있습니다. 이러한 개선 사항은 브랜드 일관성을 보장하고, 사용자 온보딩을 간소화하며, 신뢰를 구축하는 데 도움이 됩니다.
+
+![UI 브랜딩](/help/assets/assets/content-hub-ui-branding.png)
+
+**공개 링크 공유**
+
+Content Hub은 이제 공유 가능한 링크 생성을 지원하여 애플리케이션 액세스 없이 외부 사용자가 에셋 메타데이터를 보거나 에셋을 다운로드할 수 있도록 합니다.
+
+![UI 브랜딩](/help/assets/assets/public-and-private-link.png)
+
+**컬렉션 거버넌스**
+
+이제 Content Hub을 사용하여 생성 중에 컬렉션에 대한 액세스를 제어할 수 있으므로 권한이 있는 사용자만 그룹화된 에셋을 보거나 관리할 수 있습니다. 이를 통해 보안 향상, 협업 개선, 체계적인 에셋 관리, 간소화된 거버넌스 등의 효과를 얻을 수 있습니다.
+
+![컬렉션 거버넌스](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>컬렉션 거버넌스는 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화할 수 있습니다.
+
+**여러 자산을 ZIP으로 다운로드**
+
+이제 Content Hub을 사용하여 선택한 에셋과 해당 렌디션을 별도의 파일이 아닌 ZIP 파일로 다운로드함으로써 파일 관리를 간소화할 수 있습니다.
+
+Content Hub의 **Dynamic Media 렌디션**
+
+Content Hub 사용자 인터페이스 내에서 직접 모든 Dynamic Media 사전 설정 렌디션 및 스마트 자르기에 액세스하여 다운로드할 수 있습니다.
+
+{&#x200B;0}Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)![
+
+### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
+
+**AJO B2C와 Dynamic Media 기본 통합&#x200B;**
+
+Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 손쉽게 임베드하고 채널 간에 실시간 업데이트 및 초 개인화된 경험을 제공할 수 있습니다.
+
+{&#x200B;0}Dynamic Media 렌디션](/help/assets/assets/dm-ajo-integration.png)![
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,94 +140,126 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이제 얼리 어답터를 위해 Forms와 AEP 간 통합 기능이 제공됩니다.
 
-## CIF 추가 기능 {#cloud-services-cif}
-
-### 개선 사항 {#enhancements-cif}
-
-* CIF 제품 참조 데이터 유형에 대한 제품 변형 선택 기능 추가
-* [실험적 기능]: PDP 내 CIF 핵심 구성 요소에 JSON+LD 지원 추가
-* [실험적 기능]: CIF 캐시 초기화 기능
-
-### 버그 수정 {#bug-fixes-cif}
-
-* 제품 필드의 검색 문제 해결
-* #variant_sku에 대한 제품 URL 형식이 제대로 작동하지 않음
-* 제품 목록 구성 요소에 20개가 넘는 SKU를 추가할 수 없음
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### OpenAPI 기반 API {#open-apis}
+### 사용 중단 프로세스 업데이트됨 {#updated-deprecation-process}
 
-개발자는 AEM as Cloud Service 기능을 자신의 애플리케이션과 도구에 긴밀하게 통합할 수 있습니다. 새 AEM as a Cloud Service API는 OpenAPI 사양을 따르며, 일관되고 문서화가 잘 되며 사용자 친화적인 것을 목표로 합니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 만들어 생성되며 OAuth 서버 간, 웹 앱 및 단일 페이지 앱(SPA)을 지원합니다.
+Adobe은 기능, 라이브러리, API 및 구성을 정기적으로 검토하여 성능, 보안 및 가치에 대한 표준을 충족하는지 확인합니다. 기능이 더 이상 이러한 표준을 충족하지 않으면 사용 중지로 표시되며 지정된 제거 날짜까지 사용을 중지해야 합니다. 이 날짜까지 Adobe은 새 빌드를 진행하거나 배포하기 전에 고객에게 이메일 알림과 Cloud Manager에서 수행해야 하는 작업을 알려줍니다. 필요한 조치를 취하지 않으면 AEM의 새 버전으로 업그레이드할 수 없기 때문에 보안, 성능, 안정성 및 가용성에 대한 잠재적인 영향을 받을 수 있습니다.
 
-OpenAPI 기반 AEM API의 [전체 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)을 확인하고, [자세히 알아보고](/help/implementing/developing/open-api-based-apis.md), 구성 및 사용 방법을 안내하는 [전체 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)을 살펴보십시오.
+자세한 내용은 [사용 중단 문서](/help/release-notes/deprecated-removed-features.md)를 참조하세요.
 
-나중에 사용할 수 있도록 인증된 API를 구성하는 방법을 알아보려면 이 비디오를 시청하십시오.
+#### 제거 날짜에 즈음하여 더 이상 사용되지 않는 Java API 및 OSGi 구성 {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+더 이상 사용하지 않아야 하는 더 이상 사용되지 않는 API 및 OSGi 구성을 보려면 아래 목록을 확장하십시오. 제거 타임라인 등 자세한 내용은 사용 중단 문서를 참조하십시오.
 
-### 도메인 매핑 관련 개선 사항 {#cdn-enhancements}
+<details>
+  <summary>를 확장하여 사용 중단 확인</summary>
 
-Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다. 최근 추가된 몇 가지 기능은 다음과 같습니다.
+Java API:
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### CDN 로그에 추가 속성 포함 {#props-in-cdnlogs}
+OSGi 속성:
 
-디버깅 및 데이터 분석을 포함한 시나리오에 유용하며, [요청 및 응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)에서 `logProperty` 액션을 설정하여 기본 속성 외에도 CDN 로그에 더 많은 정보를 포함할 수 있습니다.
+* `org.apache.sling.commons.log.LogManager`(모든 속성)
+* `org.apache.sling.commons.log.LogManager.factory.config`(`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-#### 지역, 대륙 및 조직 속성을 일치 조건으로 사용 {#matching-conditions}
+</details>
 
-이제 CDN 규칙을 트래픽 차단 및 리디렉션을 포함한 사용 사례에 대해 지역, 대륙 및 조직을 기준으로 매칭할 수 있습니다. `clientRegion` 및 `clientContinent`는 이미 지원되는 `clientCountry`를 보강하여 지리적 위치를 기반으로 매칭하는 반면, `clientAsName` 및 `clientAsNumber`는 자율 시스템을 매칭하여 대규모 ISP, 회사 또는 클라우드 공급업체를 식별합니다. [새로 공개된 요청 속성](/help/security/traffic-filter-rules-including-waf.md#condition-structure)에 대해 자세히 알아보십시오.
+### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-#### 쿠키 값 설정 {#cookie-attributes}
+**Java 11 런타임**&#x200B;은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 성능이 더 뛰어난 **Java 21 런타임**(으)로 업그레이드되었습니다.
 
-[응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)에서 쿠키 속성을 설정할 수 있습니다.
+지원되지 않는 종속성([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조)으로 인해 환경을 업그레이드할 수 없는 경우 Adobe에서 특정 다음 단계에 대한 전자 메일을 받았어야 합니다. **2025년 8월 28일**&#x200B;까지 모든 필수 업데이트가 완료되어 중단 없이 환경을 업그레이드할 수 있는지 확인하십시오.
 
-### Java 21 지원 {#java21}
+참고: 런타임 버전은 코드의 빌드 버전과 별도입니다. Java 21을 사용하여 빌드하는 것이 좋지만 현재로서는 Java 11 빌드가 계속 지원됩니다. 향후 Java 11 빌드에 대한 별도의 사용 중단 알림이 공유될 예정입니다.
 
-1월 릴리스부터 Java 21 및 Java 17을 사용하여 코드를 작성할 수 있습니다. 패턴 매칭, 봉인된 클래스 및 다양한 성능 개선과 같은 새로운 기능을 사용할 수 있습니다. Maven 프로젝트 및 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 문서를 참조하십시오.
+### AEM Java 로그 구성 정책 시행 {#logconfig-policy}
 
-Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런타임**&#x200B;이 자동으로 배포됩니다. 그러나 Java 11로 빌드된 환경에서는 Java 21 런타임을 선택하는 것도 좋습니다. 이를 위해서는 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)로 이메일을 보내 문의하시기 바랍니다. [Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 대해 알아보십시오.
+4월 릴리스 정보에서 언급한 바와 같이 AEM Java 로그는 모든 고객 환경에서 신뢰할 수 있는 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식, 출력 파일 또는 기본 로그 수준에 대한 변경 사항과 같은 사용자 지정 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 계속 이동해야 하며 AEM 제품 코드에 대한 기본 로그 수준은 유지되어야 합니다. [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)에서 자세한 내용을 확인하세요.
 
->[!IMPORTANT]
->
-> Java 21 **런타임**&#x200B;은 2월에 개발/RDE 환경에 배포되었으며, **4월 28일과 29일**&#x200B;에 스테이징/프로덕션 환경에 적용될 예정입니다. Java 21(또는 Java 17)을 사용한 **코드 작성**&#x200B;은 Java 21 런타임과 독립적입니다. Java 21(또는 Java 17)을 사용하여 코드를 작성하기 위한 단계를 명시적으로 수행해야 합니다.
+**늦은 8월**&#x200B;부터 지원되지 않는 사용자 지정 로깅 무시가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 Adobe은 현재 구성이 영향을 받을 수 있는 모든 고객에게 직접 연락합니다.
 
-### AEM 로깅 구성 시행 {#logconfig-policy}
+사용자 지정 로깅 동작을 사용하는 다운스트림 프로세스를 검토하고 업데이트하십시오. 예:
 
-고객 환경을 효과적으로 모니터링하려면 AEM Java 로그가 일관된 형식을 유지해야 하며 사용자 정의 구성으로 재정의되어서는 안 됩니다. 로그 출력은 기본 파일로 계속 전달되어야 합니다. AEM 제품 코드의 경우 기본 로그 수준을 유지해야 합니다. 단, 고객이 개발한 코드에 대한 로그 수준을 조정하는 것은 허용됩니다.
+* 로그 전달 시스템에서 사용자 지정 로그 형식이 필요한 경우 수집 규칙을 조정해야 할 수 있습니다.
+* 이전에 로그 수준을 변경하여 로그 심각도를 줄인 경우 기본 수준으로 되돌리면 로그 볼륨이 늘어날 수 있습니다.
 
-이를 위해 다음 OSGi 속성을 변경해서는 안 됩니다.
-* **Apache Sling 로그 구성** (PID: `org.apache.sling.commons.log.LogManager`) — *모든 속성*
-* **Apache Sling 로깅 로거 구성** (공장 PID: `org.apache.sling.commons.log.LogManager.factory.config`):
-   * `org.apache.sling.commons.log.file`
-   * `org.apache.sling.commons.log.pattern`
+### 이전 버전 및 감사 로그 기본 제거 {#mt-defaults}
 
-5월 중순부터 AEM에서는 이러한 속성에 대한 사용자 정의 수정 사항이 무시되는 정책을 시행할 예정입니다. 다운스트림 프로세스를 검토하고 그에 따라 조정하십시오. 예를 들어 로그 전달 기능을 사용하는 경우:
-* 로깅 대상이 사용자 정의(기본이 아닌) 로그 형식을 기대하는 경우 수집 규칙을 업데이트해야 할 수 있습니다.
-* 로그 수준을 변경하여 로그의 자세한 정보가 줄어든 경우, 기본 로그 수준을 적용하면 로그 볼륨이 상당히 증가할 수 있다는 점을 알아 두십시오.
+현재 콘텐츠 버전 및 감사 로그의 관련 *유지 관리 작업 제거*&#x200B;가 기본적으로 비활성화되어 있으므로 해당 OSGi 속성을 통해 명시적으로 구성되지 않은 한 데이터가 제거되지 않습니다.
 
-### 더 많은 대상으로 AEM 로그 전달 - Beta 프로그램 {#log-forwarding-earlyadopter}
+그러나 저장소 성능을 최적화하기 위해 **2025년 6월 말**&#x200B;부터 다음 지침에 따라 기본적으로 제거가 활성화됩니다.
 
-현재 Beta 버전에서는 AEM 로그를 New Relic(HTTPS 사용), Amazon S3, Sumo Logic으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)는 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
+#### 컨텐츠 버전 {#mt-content}
 
-로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 (GA) AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
+* **새 환경**(예정된 날짜 이후에 생성됨(나중에 통신됨)
+   * **30일**&#x200B;보다 오래된 버전은 정기적으로 삭제됩니다.
+   * 지난 30일 내에 가장 최근 5개 버전이 나이에 관계없이 가장 최근 버전 및 현재 버전과 함께 유지됩니다.
+
+* **기존 환경**(예정된 날짜 이전에 생성됨):
+   * **7년** 이전 버전은 정기적으로 삭제됩니다.
+   * 지난 7년 내의 모든 버전은 유지됩니다.
+   * 이 높은 기본 임계값은 의도하지 않은 최근 데이터 제거를 방지합니다. 하지만 저장소 성능을 최적화하기 위해 더 낮은 값을 구성하는 것이 좋습니다.
+
+* OSGi 구성 대체를 통해 이러한 기본값을 수정할 수 있습니다.
+
+#### 감사 로그 {#mt-auditlogs}
+
+* **새 환경**(별도로 전달되는 예정된 날짜 이후에 생성됨):
+   * **7일**&#x200B;보다 오래된 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
+   * 모든 이벤트는 기본적으로 기록됩니다.
+
+* **기존 환경**(예정된 날짜 이전에 생성됨):
+   * **7년**&#x200B;보다 오래된 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
+   * 모든 이벤트는 기본적으로 기록됩니다.
+   * 이 높은 기본 임계값은 의도하지 않은 최근 데이터 제거를 방지합니다. 하지만 저장소 성능을 최적화하기 위해 더 낮은 값을 구성하는 것이 좋습니다.
+
+* OSGi 구성 대체를 통해 이러한 기본값을 수정할 수 있습니다.
+
+자세한 내용은 [유지 관리 작업 문서](/help/operations/maintenance.md#default)를 참조하십시오.
+
+### Edge 컴퓨팅(Alpha 프로그램) {#edge-computing}
+
+Edge 컴퓨팅을 사용하면 CDN 계층에서 JavaScript을 실행할 수 있으므로 데이터 처리가 최종 사용자에게 더 가까워집니다. 그러면 지연이 줄어들고 에지에서 응답형의 동적 경험이 활성화됩니다.
+
+일반적인 사용 사례는 다음과 같습니다.
+
+* 콘텐츠에 대한 액세스 권한을 부여하기 전에 ID 공급자로 사용자 인증
+* 지리적 위치, 장치 유형 또는 사용자 특성을 기반으로 콘텐츠 개인화
+* CDN과 원본 간의 미들웨어 역할
+* 서드파티 API의 응답을 브라우저에 전달하기 전에 다시 서식 지정(및 여러 API 응답 집계)
+* 다양한 백엔드에서 결합된 콘텐츠를 사용하여 에지에서 서버 렌더링 HTML 작성 및 서비스
+
+라이브 프로덕션 사이트를 위한 AEM Publish 게재 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회의 수가 제한되어 있습니다. 참여에 관심이 있거나 더 자세히 알아보려면 사용 사례에 대한 간단한 설명을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 전자 메일을 보내십시오.
+
+### Edge Delivery Services(Beta 프로그램)에 대한 CDN 구성 {#cdn-eds-beta}
+
+Adobe 관리 CDN은 [Config Pipeline 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다.
+
+이제 베타 버전에서 CDN 원본 선택기, 응답 및 요청 변환 등을 포함하는 기능에 대한 구성 파이프라인을 배포합니다. 사용 사례에 대한 자세한 내용을 확인하려면 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)에 문의하세요.
+
+### 더 많은 대상으로 AEM 로그 전달(Beta 프로그램) {#log-forwarding-beta}
+
+로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch) 및 Splunk로의 AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
+
+이제 Beta에서는 AEM 로그를 Amazon S3, Sumo Logic 및 고유한 New Relic 계정(Adobe 제공 계정이 아님)에 전달할 수 있습니다. 이러한 로깅 대상에 대해 AEM 로그(Apache/Dispatcher 포함)가 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
 
 자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)에서 확인하십시오.
-
-### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
-
-에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe는 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지에 대한 귀하의 의견을 듣고자 합니다. 또한 제품 로드맵에 반영할 수 있도록 이 기술을 어떻게 활용할 계획인지 알려 주십시오.
-
-가능한 일부 사용 사례는 다음과 같습니다.
-
-* 콘텐츠에 대한 액세스를 제어하기 위해 IdP를 통한 인증
-* 지리적 위치, 디바이스 유형, 사용자 속성 등을 기반으로 다이내믹 콘텐츠를 랜더링하여 개인화
-* 고급 이미지 조작
-* CDN과 원본 간 미들웨어
-* 브라우저와 서드파티 API 사이의 레이어, API 응답을 다시 포맷하기 위한 목적
-* 여러 출처로부터 데이터를 집계하여 클라이언트 브라우저가 데이터를 보다 쉽게 렌더링할 수 있도록 함
-
-질문과 의견을 이메일([aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com))로 보내 주십시오.
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 

@@ -3,13 +3,13 @@ title: 구성 요소 및 GraphQL 캐시 지우기
 description: AEM CIF에서 캐시 지우기 기능을 활성화하고 확인하는 방법을 알아봅니다.
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 63a3a40cc19a83ce51a74899434c73f0ff4f318c
+exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
+source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 2%
 
 ---
-
 
 # 구성 요소 및 GraphQL 캐시 지우기 {#clear-cache}
 
@@ -23,14 +23,16 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
   >[!NOTE]
   >
   > 작성자 인스턴스에 대해서만 구성을 활성화해야 합니다.
+
 * [여기](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)와 같이 프로젝트에서 `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
    * 작성자 및 게시 인스턴스 모두에 대해 구성을 활성화해야 합니다.
    * Dispatcher 캐시 활성화(선택 사항): 위의 구성에서 `enableDispatcherCacheInvalidation` 속성을 true로 설정하여 Dispatcher 캐시 지우기 설정을 활성화할 수 있습니다. 이렇게 하면 Dispatcher에서 캐시를 지우는 기능이 제공됩니다.
-
   >[!NOTE]
   >
   > 게시 인스턴스에서만 작동합니다.
-  > * 또한, 제품, 카테고리 및 CMS 페이지에 맞는 해당 패턴을 위의 구성 파일에 추가하여 Dispatcher 캐시에서 제거해야 합니다.
+
+   * 또한, 제품, 카테고리 및 CMS 페이지에 맞는 해당 패턴을 위의 구성 파일에 추가하여 Dispatcher 캐시에서 제거해야 합니다.
+
 * 제품 및 범주와 관련된 해당 페이지를 찾기 위한 SQL 쿼리 성능을 향상하려면 프로젝트에 해당 인덱스를 추가하십시오(권장). 자세한 내용은 [cifCacheInvalidationSupport/]&#x200B;(링크 https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)을 참조하십시오.
 
 ## 캐시 지우기 기능 확인 중 {#verify-clear-cache}
@@ -57,7 +59,6 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 모든 것이 잘 진행되면 새로운 변경 사항이 모든 인스턴스에 반영됩니다. 게시 인스턴스에 대한 변경 사항이 반영되지 않는 경우 전용 창에서 해당 PLP 및 PDP 페이지를 확인하십시오.
 
 >[!NOTE]
