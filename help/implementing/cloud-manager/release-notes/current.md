@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.6
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 59%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.6.0 릴리스 일자는 2025년 6�
 
 ## 새로운 기능 {#what-is-new}
 
-* **(UI) 라이선스 대시보드에 이제 Edge Delivery Services 라이선스가 포함됩니다**
+* **라이선스 대시보드에 Edge Delivery Services 라이선스가 포함됨**
 
   이제 Edge Delivery Services 라이선스 사용량이 라이선스 대시보드에 표시되므로 자격 및 상태를 보다 명확하게 확인할 수 있습니다. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.6.0 릴리스 일자는 2025년 6�
 
   [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)를 참조하세요.
 
-* **(UI) Edge Delivery 사이트 구성이 업데이트됨**
+* **Edge Delivery 사이트 구성 업데이트됨**
 
   **리포지토리 URL** 대신 **Edge Delivery 원본**&#x200B;을 요청하여 Edge Delivery 사이트를 추가하는 흐름을 단순화하여 온보딩을 수행하고 보다 직관적이고 빠르게 설정합니다. <!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.6.0 릴리스 일자는 2025년 6�
 
   [Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 참조하십시오.
 
-* **(UI) 파이프라인 즐겨찾기**
+* **파이프라인 즐겨찾기**
 
   이번 릴리스에서는 Cloud Manager에서 즐겨찾는 파이프라인을 고정할 수 있는 기능을 도입하여 특정 파이프라인을 즐겨찾기로 표시하여 **파이프라인** 페이지의 목록 맨 위에 나타나도록 할 수 있습니다. 이 향상된 기능을 통해 자주 액세스하는 파이프라인을 더 쉽게 찾고 실행할 수 있습니다. <!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 고유한 Git �
 
 이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *프로그램 개요&#x200B;**페이지,**&#x200B;파이프라인&#x200B;**카드에서 Edge Delivery 파이프라인을 추가***
+![파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *프로그램 개요&#x200B;**페이지,**파이프라인&#x200B;**카드에서 Edge Delivery 파이프라인을 추가***
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자*
 
