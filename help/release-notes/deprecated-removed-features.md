@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
+source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3039'
 ht-degree: 71%
 
 ---
@@ -428,41 +428,65 @@ Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사
 
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
-### 더 이상 사용되지 않는 OSGi 속성(더 이상 수정할 수 없는 속성) {#deprecated-osgi-properties}
+### 더 이상 사용되지 않는 OSGi 속성(곧 수정될 예정) {#deprecated-unmodifiable-osgi-properties}
 
-다음 OSGi 구성 요소 PID의 일부 속성을 더 이상 수정할 수 없습니다. 이 작업은 아래 설명된 일정에 따라 시행됩니다.
+다음 OSGi 구성 요소 PID에 대한 속성은 더 이상 사용되지 않으며 시행일까지 사용이 중단되어야 합니다.
 
 | **OSGI 구성 요소 ID** | **수정할 수 없는 속성** | **사용 중단** | **적용** |
 |---|---|---|---|
 | **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | 모두 | 2024 | 8/31/25 |
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | 모두 | 2024 |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 모두 | 2024 | 8/31/25 |
-| **`org.apache.felix.http (Factory)`** | 모두 | 2024 | 8/31/25 |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 모두 | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 모두 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 모두 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.impl`** | 모두 | 6/3/25 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 모두 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 모두 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 모두 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 모두 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 모두 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 모두 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 모두 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.factory`** | 모두 | 6/3/25 | 8/31/25 |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | 모두 | 6/3/25 | 8/31/25 |
 
-<!--
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### 수정할 수 없는 OSGi 속성 {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
--->
+아래 설명된 대로 다음 OSGi 구성 요소 PID에 대한 속성을 수정할 수 없습니다.
+
+| **OSGI 구성 요소 ID** | **수정할 수 없는 속성** |
+|---|---|
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 모두 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 모두 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 모두 |
+| **`org.apache.sling.feature.apiregions.impl`** | 모두 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 모두 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 모두 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 모두 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 모두 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 모두 |
+| **`org.apache.sling.feature.apiregions.factory`** | 모두 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | 모두 |
+
+
+### 향후 강제 적용된 OSGi 속성 제한 {#future-restrictions-osgi-properties}
+
+향후 Adobe에서는 다음 OSGi 속성 제한을 적용하여 사용을 중단해야 합니다.
+
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한(적용되는 경우) |
+|---|---|---|---|---|
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 문자열 |   |
+|   | `smtp.port` | 예 | 정수 | 465, 587 또는 25 중 하나 |
+|   | `smtp.user` |   | 문자열 |   |
+|   | `smtp.password` |   | 문자열 |   |
+|   | `from.address` |   | 문자열 |   |
+|   | `smtp.ssl` |   | 문자열 |   |
+|   | `smtp.starttls` |   | 부울 |   |
+|   | `smtp.requiretls` |   | 부울 |   |
+|   | `debug.email` |   | 부울 |   |
+|   | `oauth.flow` |   | 부울 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 예 | 문자열 | &quot;INFO&quot;, &quot;DEBUG&quot; 또는 &quot;TRACE&quot; |
+|   | `org.apache.sling.commons.log.names` |   | 문자열 배열 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | 부울 |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 아니요 | 문자열[] |   |
+|   | `externalizer.encodedpath` | 아니요 | 부울 |   |
+|   | `externalizer.host` | 아니요 | 문자열 |   |
+|   | `externalizer.contextpath` | 아니요 | 문자열 |   |
 
 ### OSGi 속성 제한 {#restrictions-osgi-properties}
 
-일부 OSGi 속성의 값은 아래에 설명된 규칙으로 제한됩니다.
+이러한 OSGi 속성의 값은 아래에 설명된 규칙으로 제한됩니다.
 
 | OSGi 구성 요소 PID |   | 필수 | 유형 | 제한(적용되는 경우) |
 |---|---|---|---|---|
@@ -504,19 +528,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `org.apache.felix.http.session.uniqueid` |   | 부울 |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 예 | 정수 | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | 예 | 문자열 배열 | 은(는) &quot;js&quot;를 포함해야 합니다 |
-| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 문자열 |   |
-|   | `smtp.port` | 예 | 정수 | 465, 587 또는 25 중 하나 |
-|   | `smtp.user` |   | 문자열 |   |
-|   | `smtp.password` |   | 문자열 |   |
-|   | `from.address` |   | 문자열 |   |
-|   | `smtp.ssl` |   | 문자열 |   |
-|   | `smtp.starttls` |   | 부울 |   |
-|   | `smtp.requiretls` |   | 부울 |   |
-|   | `debug.email` |   | 부울 |   |
-|   | `oauth.flow` |   | 부울 |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 예 | 문자열 | &quot;INFO&quot;, &quot;DEBUG&quot; 또는 &quot;TRACE&quot; |
-|   | `org.apache.sling.commons.log.names` |   | 문자열 배열 |   |
-|   | `org.apache.sling.commons.log.additiv` |   | 부울 |   |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 아니요 | 문자열 |   |
 |   | `request.log.outputtype` | 아니요 | 문자열 |   |
 |   | `request.log.entry.format` | 아니요 | 문자열 |   |
@@ -531,10 +542,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `servletresolver.defaultExtensions` | 아니요 | 문자열 |   |
 |   | `servletresolver.mountProviders` | 아니요 | 부울 |   |
 |   | `servletresolver.scriptUser` | 아니요 | 문자열 | 더 이상 사용되지 않음, 사용 안 함 |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 아니요 | 문자열[] |   |
-|   | `externalizer.encodedpath` | 아니요 | 부울 |   |
-|   | `externalizer.host` | 아니요 | 문자열 |   |
-|   | `externalizer.contextpath` | 아니요 | 문자열 |   |
 
 ## Java 버전 21 런타임 업데이트 {#java-runtime-update-21}
 
