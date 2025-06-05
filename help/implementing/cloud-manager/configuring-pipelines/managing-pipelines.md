@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 29%
+source-wordcount: '1493'
+ht-degree: 42%
 
 ---
 
@@ -60,6 +60,19 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ![파이프라인 작업](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
+### 파이프라인 즐겨찾기 표시{#pipeline-favorites}
+
+**파이프라인** 페이지의 목록 맨 위에 나타나도록 특정 파이프라인을 즐겨찾기로 표시할 수 있습니다. 이 기능을 사용하면 자주 액세스하는 파이프라인을 더 쉽게 찾고 실행할 수 있습니다.
+
+**파이프라인 즐겨찾기를 표시하려면:**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+1. **프로그램 개요** 페이지에서 ![파이프라인 탭 - 워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인** 탭을 클릭합니다.
+1. 파이프라인 페이지에서 파이프라인 이름 및 유형 왼쪽의 ![즐겨찾기에 맞지 않는 파이프라인에 대한 별 개요 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)을 클릭하여 즐겨찾기 목록에 추가합니다.
+또는 즐겨찾기 목록에서 파이프라인을 제거하려면 ![즐겨찾는 파이프라인의 별 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)을 클릭하십시오.
+
+
 ## 활동 페이지 {#activity}
 
 **활동** 페이지에는 선택한 프로그램 및 기타 중요한 프로그램 이벤트에 대한 모든 파이프라인 실행의 전체 목록이 표시됩니다.
@@ -98,20 +111,20 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ## 여러 파이프라인 실행 {#run-multiple-pipelines}
 
-Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 있으므로 AEM as a Cloud Service 고객의 배포 효율성이 향상됩니다. **선택한 항목 실행** 기능을 사용하면 여러 파이프라인을 선택하고 한 번에 실행되도록 트리거할 수 있습니다. 파이프라인을 개별적으로 실행해야 하는 수작업 부담을 줄이고 빌드 및 배포 워크플로우를 최적화합니다.
+Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 있으므로 AEM as a Cloud Service 고객의 배포 효율성이 향상됩니다. **선택 항목 실행** 기능을 사용하면 여러 파이프라인을 선택하여 한 번에 실행되도록 트리거할 수 있습니다. 이를 통해 파이프라인을 개별적으로 실행해야 하는 수동 작업을 줄이고 빌드 및 배포 워크플로를 최적화할 수 있습니다.
 
-**여러 파이프라인을 실행하려면:**
+**여러 파이프라인을 실행하는 방법은 다음과 같습니다.**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 1. 왼쪽 메뉴에서 ![워크플로 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인**&#x200B;을 클릭합니다.
-1. **파이프라인** 페이지의 표에서 실행할 파이프라인 옆에 있는 확인란을 선택합니다.
-필요한 경우 ![필터 아이콘, 단계](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **필터**&#x200B;를 클릭하여 이름, 환경, 배포된 코드 유형 또는 세 가지 모두를 조합하여 파이프라인을 정렬합니다.
-1. 페이지의 오른쪽 상단 모서리에서 **선택한 항목 실행(x)**&#x200B;을 클릭합니다.
+1. **파이프라인** 페이지의 테이블에서 실행하려는 파이프라인 옆에 있는 확인란을 선택합니다.
+필요한 경우 ![필터 아이콘(깔때기)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **필터**&#x200B;를 클릭하여 파이프라인을 이름, 환경, 배포된 코드 유형 또는 이 세 가지의 조합에 따라 정렬합니다.
+1. 페이지의 오른쪽 상단에서 **선택 항목 실행(x)**&#x200B;을 클릭합니다.
 1. **선택한 파이프라인 실행(x)** 대화 상자에서 **실행(x)**&#x200B;을 클릭합니다.
 
-   **실행** 단추는 진행할 수 있는 파이프라인 수를 반영합니다. 예를 들어 4개의 파이프라인을 선택했지만 하나는 이미 실행 중입니다. 또는 선택한 파이프라인에 연결된 환경이 더 이상 존재하지 않습니다. 이러한 경우 시스템이 그에 따라 조정됩니다. 버튼이 &quot;실행(3)&quot;으로 업데이트되어 세 개의 파이프라인이 진행될 수 있음을 나타냅니다.
+   **실행** 버튼은 진행할 수 있는 파이프라인의 수를 반영합니다. 예를 들어 4개의 파이프라인을 선택했지만 그 중 하나는 이미 실행 중일 수 있습니다. 또는 선택한 파이프라인에 연결된 환경이 더 이상 존재하지 않을 수 있습니다. 이러한 경우 시스템이 이에 맞게 조정됩니다. 버튼이 “실행(3)”으로 업데이트되어 세 개의 파이프라인이 진행될 수 있음을 나타냅니다.
 
-1. 파이프라인이 실행되고 상태가 **파이프라인** 목록에서 업데이트됩니다.
+1. 파이프라인이 실행되기 시작하며 해당 상태가 **파이프라인** 목록에서 업데이트됩니다.
 
 ## 파이프라인 편집 {#editing-pipelines}
 
@@ -131,7 +144,7 @@ Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 
    * [프로덕션 파이프라인 구성](configuring-production-pipelines.md)
    * [비프로덕션 파이프라인 구성](configuring-non-production-pipelines.md)
 
-1. 완료되면 **업데이트**&#x200B;를 클릭하세요.
+1. 완료되면 **업데이트**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
@@ -209,3 +222,4 @@ Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 
    ![파이프라인 세부 정보 취소](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. **취소**&#x200B;를 클릭합니다.
+

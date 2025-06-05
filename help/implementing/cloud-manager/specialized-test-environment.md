@@ -1,0 +1,76 @@
+---
+title: 특수 테스트 환경 추가
+description: Cloud Manager의 전문 테스트 환경이 스트레스 테스트 및 고급 배포 전 검사에 이상적인, 프로덕션에 가까운 조건에서 기능을 확인할 수 있는 전용 공간을 제공하는 방법에 대해 알아봅니다.
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+badge: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 8%
+
+---
+
+# 특수 테스트 환경 추가{#add-special-test-enviro}
+
+>[!NOTE]
+>
+>>이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 얼리 어답터로 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
+
+전문 테스트 환경 또는 DevXL은 만들 수 있는 새로운 유형의 Cloud Manager 환경입니다. UAT(사용자 승인 테스트) 및 성능 유효성 검사와 같은 고급 사용 사례를 지원하도록 설계되었습니다. 기존 개발, 신속한 개발 또는 스테이징 환경과 달리 DevXL 환경은 프로덕션 배포 파이프라인 외부에서 작동합니다. 따라서 프로덕션 워크플로에 대한 간섭을 방지하기 위해 엄격한 격리를 유지하면서 보다 큰 유연성을 제공합니다.
+
+DevXL은 일반적인 스테이징 환경의 크기, 확장성 및 구성을 미러링하도록 제작되었습니다. 이 접근 방식을 사용하면 DevXL에서 수행된 테스트를 통해 코드와 콘텐츠가 프로덕션과 유사한 조건에서 수행되는 방식에 대한 현실적인 통찰력을 얻을 수 있습니다. 또한 프로덕션 또는 스테이지에서 직접 콘텐츠 복사를 지원합니다. 또한 배포 워크플로, 액세스 제어 및 네트워크 구성 측면에서 개발 환경과의 동등성을 유지합니다.
+
+## 주요 기능 및 구성 {#key-features}
+
+| 범주 | DevXL 동작 |
+| --- | --- |
+| 용도 | UAT 및 성능 테스트. |
+| 파이프라인 유형 | 프로덕션 파이프라인에는 없습니다. |
+| 환경 크기 | 스테이지 환경과 일치합니다. |
+| 격리 | 다른 환경에서 완전히 격리됩니다. |
+| 코드 파이프라인 | 개발 환경(유효성 검사, 빌드, 배포)과 동일합니다. |
+| 콘텐츠 복사 | 프로덕션 또는 스테이징 환경에서 허용됩니다. |
+| 콘텐츠 복원 | 개발 환경과 동일합니다. |
+| 액세스 로그 | 개발 환경과 동일합니다. |
+| Developer Console | 개발 환경과 동일합니다. |
+| IP 허용 목록 | 개발 환경과 동일합니다. |
+| 네트워킹 | 개발 환경(서비스, 도메인 이름, SSL 인증서, 고급 네트워크)과 동일합니다. |
+
+[환경 관리](/help/implementing/cloud-manager/manage-environments.md)도 참조하세요.
+
+## 특수 테스트 환경 추가 {#add-specialized-testing-environment}
+
+환경을 추가하거나 편집하려면 사용자가 **비즈니스 소유자** 역할의 멤버여야 합니다.
+
+**특수 테스트 환경을 추가하려면:**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 환경을 추가할 프로그램을 클릭합니다.
+
+1. 다음 중 하나를 수행하십시오.
+
+   **환경 추가** 옵션이 흐리게 표시(사용 안 함)되면 사용 권한이 없거나 사용 허가된 리소스에 종속되어 있을 수 있습니다.
+
+   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**&#x200B;를 클릭합니다.
+
+   ![환경 카드](assets/no-environments.png)
+
+   * 왼쪽 패널에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭한 다음 오른쪽 상단 모서리의 환경 페이지에서 **환경 추가**&#x200B;를 클릭합니다.
+
+     ![환경 탭](assets/environments-tab.png)
+
+1. **환경 추가** 대화 상자에서 다음을 수행합니다.
+
+   * [**특수 테스트 환경**](#environment-types)&#x200B;을 클릭합니다.
+   * **이름** 환경을 제공하십시오. 환경이 생성된 후에는 환경 이름을 변경할 수 없습니다.
+   * (선택 사항) 환경에 대해 **설명**&#x200B;을 제공합니다.
+   * 드롭다운 목록에서 **기본 영역**&#x200B;을(를) 선택하십시오. 만들어지면 DevXL 환경의 기본 영역(예: *미국 서부*)이 잠기고 변경할 수 없습니다.
+
+   ![특수 테스트 환경 라디오 단추가 선택된 환경 추가 대화 상자](assets/specialized-test-environment.png)
+
+1. **저장**&#x200B;을 클릭합니다.
+
+   이제 **개요** 페이지에 **환경** 카드에 새 환경이 표시됩니다. 이제 새 환경에 대한 파이프라인을 설정할 수 있습니다.
+

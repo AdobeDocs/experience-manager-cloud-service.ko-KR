@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # 라이선스 대시보드 {#license-dashboard}
 
-Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
+Cloud Manager은 조직 또는 테넌트가 사용할 수 있는 Adobe Experience Manager as a Cloud Service(AEMaaCS) 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
 
 >[!IMPORTANT]
 >
->라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
 >
 >프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards)을 참조하십시오.
 
@@ -41,7 +41,10 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 대시보드는 다음을 표시하는 세 섹션으로 나뉩니다.
 
-* **솔루션** - 라이선스가 부여된 솔루션.
+* **솔루션** - 라이선스가 부여된 솔루션. 예를 들어 Sites, Edge Delivery Services 및 Assets 등이 있습니다.
+
+  ![솔루션 목록](assets/solutions.png)
+
 * **추가 기능** - 사용 허가된 솔루션에 대한 추가 기능.
 * **기타 권한** - 테넌트 내에서 사용할 수 있는 샌드박스 및 개발 환경 및 기타 권한.
 
@@ -56,7 +59,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 

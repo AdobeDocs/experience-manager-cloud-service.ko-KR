@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub]에서 Assets 공유'
 description: ' [!DNL the Content Hub]에서 Assets 공유'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 0e66b355d09e2fd2c4c8a5ddacc9b2d033b41bf2
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 11%
+source-wordcount: '486'
+ht-degree: 17%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -57,50 +57,47 @@ ht-degree: 11%
 >
 >[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-링크를 통해 자산을 공유하면 [!DNL the Content Hub]명의 사용자가 리소스를 편리하게 사용할 수 있습니다. 이 기능을 사용하면 인가된 사용자가 공유된 에셋에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 자산을 다운로드할 때 [!DNL the Content Hub]은(는) 더 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다.
+선택한 에셋에 대한 링크를 만들어 다른 사용자와 쉽게 공유할 수 있습니다. 승인된 [!DNL Content Hub] 사용자로서 [!DNL Content Hub] 환경에서 사용 가능한 자산을 하나 이상 선택하고 링크를 생성한 후 다른 개인 또는 공용 사용자에게 보냅니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users)는 이 문서에 언급된 작업을 수행할 수 있습니다.
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users)는 선택한 에셋에 대한 링크를 만들어 다른 사용자와 공유할 수 있습니다.
 
-## 단일 자산 공유 {#share-a-single-asset}
+## 자산 공유 {#share-assets}
 
-다음 단계를 실행하여 단일 자산을 공유할 수 있습니다.
+하나 이상의 에셋을 개인 또는 공용 사용자와 공유하려면 다음 단계를 수행하십시오.
+1. [!DNL Content Hub] 홈 페이지로 이동하여 자산을 하나 이상 선택하고 ![공유](/help/assets/assets/share.svg) **[!UICONTROL 공유]**&#x200B;를 클릭하여 **[!UICONTROL 자산 공유]** 대화 상자에 선택한 단일 자산 또는 여러 자산 목록을 표시합니다.
+![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL 컬렉션]**&#x200B;에서 사용할 수 있는 자산을 선택하고 공유할 수도 있습니다.
+1. 자산을 보거나 **[!UICONTROL 자산 공유]** 대화 상자에서 사용할 수 있는 자산 목록을 검토하십시오. 목록에서 자산 선택을 취소하려면 자산 옆에 있는 ![선택 취소](/help/assets/assets/Close.svg)를 클릭합니다.
+1. **[!UICONTROL 만료 기간]**&#x200B;을 선택하고 **[!UICONTROL 개인 링크 생성]**&#x200B;을 클릭하여 개인 사용자와 공유할 링크를 생성합니다. 개인 사용자가 [!DNL Content Hub] 환경에 로그인하여 공유 에셋 페이지에 액세스합니다.
+   ![비공개 및 공개 링크](/help/assets/assets/private-and-public-link.png)
+**[!UICONTROL 공개 링크]** 토글을 활성화하고 **[!UICONTROL 만료 기간]**&#x200B;을 선택한 다음 **[!UICONTROL 공개 링크 생성]**&#x200B;을 클릭하여 공개 사용자와 공유할 링크를 생성합니다. 게스트로 공용 사용자는 [!DNL Content Hub]에 로그인하지 않고 공유 에셋 페이지에 액세스합니다.
+   ![비공개 및 공개 링크](/help/assets/assets/public-and-private-link.png)
 
-1. 에셋을 선택하고 ![공유 아이콘](assets/share.svg) 아이콘을 클릭하여 에셋을 공유하십시오.
+   >[!NOTE]
+   > 
+   > [구성 페이지에서 공개 링크 공유를 사용하도록 설정](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing)하여 **[!UICONTROL 자산 공유]** 대화 상자에서 **[!UICONTROL 공개 링크]** 토글을 표시합니다.
 
-   ![단일 자산 공유](assets/sharing-single-asset.png)
+## 미리보기 페이지에서 에셋 공유 {#share-asset-from-preview-page}
 
-1. **[!UICONTROL Expiration]** 필드를 사용하여 링크의 만료 날짜를 지정하십시오. 사용 가능한 옵션(예: 24시간, 1주, 30일, 90일, 1년) 중 하나를 선택하거나 사용자 지정 날짜를 지정합니다.
+에셋을 미리 보는 동안 공유하려면 다음 단계를 수행하십시오.
 
-1. **[!UICONTROL 공유 링크 복사]**&#x200B;를 클릭합니다. 그런 다음 복사한 링크를 수신자와 공유할 수 있습니다.
-
-## 여러 에셋 공유 {#share-multiple-assets}
-
-[!DNL The Content Hub]에서 공유 링크를 통해 여러 자산을 공유할 수 있습니다. 다음 단계를 실행합니다.
-
-1. 승인된 수신자와 공유해야 하는 자산을 선택합니다. 여러 자산을 하나씩 선택하거나 **[!UICONTROL 모두 선택]**&#x200B;을 클릭하여 사용 가능한 모든 자산을 한 번에 선택할 수 있습니다. **[!UICONTROL 모두 선택]** 옵션은 하나 이상의 자산을 선택하는 경우에만 표시됩니다.
-
-1. ![공유 아이콘](assets/share.svg) 아이콘을 클릭합니다.
-
-   ![여러 자산 공유](assets/sharing-multiple-assets.png)
-
-1. 미리보기 섹션에서 요구 사항에 따라 에셋을 삭제할 수도 있습니다. **[!UICONTROL Expiration]** 필드를 사용하여 링크의 만료 날짜를 지정하십시오. 사용 가능한 옵션(예: 24시간, 1주, 30일, 90일, 1년) 중 하나를 선택하거나 사용자 지정 날짜를 지정합니다.
-
-1. **[!UICONTROL 공유 링크 복사]**&#x200B;를 클릭합니다. 그런 다음 복사한 링크를 수신자와 공유할 수 있습니다.
-
-## 에셋 미리보기 및 공유 {#preview-assets}
-
-링크 수신자와 공유하기 전에 공유하려는 디지털 에셋이 어떻게 보이는지 미리 볼 수 있습니다. 미리 보아야 하는 에셋을 클릭합니다. [!DNL Content Hub]은(는) 에셋에 대한 [자세히 보기를 표시합니다](asset-properties-content-hub.md).
-
-자산을 공유하려면 ![공유 아이콘](assets/share.svg) 아이콘을 클릭하십시오. **[!UICONTROL Expiration]** 필드를 사용하여 링크의 만료 날짜를 지정하십시오. 사용 가능한 옵션(예: 24시간, 1주, 30일, 90일, 1년) 중 하나를 선택하거나 사용자 지정 날짜를 지정합니다. **[!UICONTROL 공유 링크 복사]**&#x200B;를 클릭합니다. 그런 다음 복사한 링크를 수신자와 공유할 수 있습니다.
-
-![Content Hub에서 에셋 미리 보기](assets/preview-assets-content-hub.png)
+1. [!DNL Content Hub] 홈 페이지로 이동하고 자산 미리 보기를 클릭하여 자산을 미리 보고 대화 상자의 오른쪽 창에 메뉴 옵션을 표시합니다.
+1. ![공유](/help/assets/assets/share.svg)를 선택하여 **[!UICONTROL 공유]** 패널을 표시합니다.
+   자산을 미리 보는 동안 ![자산 공유](/help/assets/assets/share-assets-from-share-panel.png)
+1. [에셋 공유](#share-assets) 섹션의 3단계를 수행하여 이 **[!UICONTROL 공유]** 패널에서 에셋 링크(비공개 또는 공개)를 생성하고 공유하십시오.
 
 ## 공유 자산에 액세스 {#access-shared-assets}
 
-에셋에 대한 링크를 공유하면 승인된 수신자는 해당 링크를 클릭하여 웹 브라우저에서 공유 에셋을 미리 보거나 다운로드할 수 있습니다.
+링크를 통해 공유 에셋 페이지에 액세스하고 다음을 수행합니다.
 
-공유 링크를 클릭하고 에셋 카드에 있는 다운로드 아이콘 을 클릭하여 에셋을 다운로드합니다.  여러 자산을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭할 수도 있습니다. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub]이(가) 로컬 파일 시스템에 각 자산을 하나씩 다운로드합니다.
+* 하나 이상의 에셋을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 사용 가능한 다운로드 옵션에서 **[!UICONTROL 원본]**, **[!UICONTROL 정적]** 또는 두 표현물을 모두 선택합니다.
+  ![](/help/assets/assets/download-shared-assets.png)
+* 에셋의 메타데이터를 보려면 에셋 썸네일을 클릭합니다.
+* 공유 에셋 페이지([개인 링크를 통해 액세스](#share-assets))에서 에셋 썸네일을 클릭하고 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 **[!UICONTROL 다운로드]** 패널에서 에셋의 사용 가능한 동적 렌디션을 선택하고 확인합니다.
+  ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-![공유 링크에 액세스](assets/content-hub-access-shared-links.png)
+
+
+
+
