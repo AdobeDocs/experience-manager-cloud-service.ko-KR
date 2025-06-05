@@ -3,9 +3,9 @@ title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -111,23 +111,23 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
 
 1. **[!UICONTROL 수정 날짜]** 필드를 사용하여 자산 정렬.
 
-## 에셋을 리믹스하여 새 변형을 만들 수 있도록 에셋 카드에 Adobe Express을 사용하여 편집 옵션이 표시되지 않는 이유는 무엇입니까? {#edit-using-express-not-available}
+## 자산 카드에서 Adobe Express 옵션을 사용하여 편집 내용을 조회하고 자산을 리믹스하여 새로운 변형을 만들 수 없는 이유는 무엇입니까? {#edit-using-express-not-available}
 
-에셋 카드에서 **Adobe Express을 사용하여 편집** 옵션을 보려면 사용자에게 Adobe Express Enterprise 또는 Teams 권한([계획](https://www.adobe.com/express/pricing) 참조)과 [에셋을 새 변형으로 리믹스할 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets)에 대한 권한이 있어야 합니다.
+자산 카드에서 **Adobe Express 옵션을 사용하여 편집**&#x200B;한 내용을 조회하려면 [Content Hub 사용자가 자산을 리믹스하여 새 변형을 만들 수 있는 권한](#onboard-content-hub-users-add-assets) 외에도 해당 사용자에게 Adobe Express Enterprise 또는 Teams 권한([플랜](https://www.adobe.com/kr/express/pricing) 참조)이 있어야 합니다.
 
-[!DNL Content Hub] 및 [!DNL Adobe Express]에 사용자를 할당하는 방법에 대한 몇 가지 구성이 있습니다.
+사용자가 [!DNL Content Hub] 및 [!DNL Adobe Express]에 할당되는 방식에는 다음과 같은 몇 가지 구성이 있습니다.
 
-1. 조직에 [Assets Ultimate](/help/assets/assets-ultimate-overview.md) 또는 [Assets Prime](/help/assets/assets-prime.md) 라이선스가 있으며 사용자는 Admin Console에서 Adobe Express 권한(공동 작업자 또는 고급 사용자)이 포함된 Experience Manager 프로필 중 하나에 할당되었습니다. 통합은 추가 구성 없이 작동합니다.
+1. 조직이 [Assets Ultimate](/help/assets/assets-ultimate-overview.md) 또는 [Assets Prime](/help/assets/assets-prime.md) 라이선스를 보유하고 있으며, 사용자는 Adobe Express 권한(공동 작업자 또는 파워 유저)이 포함된 Admin console의 Experience Manager 프로필 중 하나에 할당되어 있습니다. 추가 구성 없이도 통합이 가능합니다.
 
-1. [!DNL Adobe Express]이(가) [!DNL Content Hub]을(를) 사용하여 [!DNL Experience Manager Assets]과(와) 동일한 [!DNL Adobe Admin Console]에 배포되었습니다. 통합은 추가 구성 없이 작동합니다.
+1. [!DNL Adobe Express]가 [!DNL Content Hub]를 포함하는 [!DNL Experience Manager Assets]와 동일한 [!DNL Adobe Admin Console]에서 배포됩니다. 추가 구성 없이도 통합이 가능합니다.
 
-1. [!DNL Adobe Express]이(가) [!DNL Content Hub]을(를) 사용하여 [!DNL Experience Manager Assets]과(와) 다른 [!DNL Adobe Admin Console]에 배포되었습니다. 이 경우 [!DNL Assets] 관리자는 통합을 작동하도록 구성할 수 있습니다([설명서](/help/assets/connect-assets-with-creative-cloud.md) 참조).
+1. [!DNL Adobe Express]가 [!DNL Content Hub]를 포함하는 [!DNL Experience Manager Assets]와 다른 [!DNL Adobe Admin Console]에서 배포됩니다. 이 경우 [!DNL Assets] 관리자는 통합이 작동하도록 이를 구성할 수 있습니다([설명서](/help/assets/connect-assets-with-creative-cloud.md) 참조).
 
    >[!NOTE]
    >
-   >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 사용하고 비즈니스 **Enterprise 또는 School** 계정을 사용해야 하며 **Personal** 계정은 사용하지 않아야 합니다. 이상적인 구성은 두 Admin Console을 **Federated ID**(으)로 설정하고 둘 사이에 트러스트 관계를 설정하여 사용자가 원활한 Single Sign-On 환경을 갖도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
+   >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 가져야 하고, 비즈니스 **기업 또는 학교** 계정을 사용해야 하며, **개인** 계정을 사용해서는 안 됩니다. 이상적인 구성은 두 Admin Console을 모두 **Federated ID**&#x200B;로 설정하고 두 콘솔 간 트러스트 관계를 설정하여 사용자에게 원활한 SSO(Single Sign-On) 경험을 제공하도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
 
-올바른 제품 사용 권한 외에, Content Hub의 Adobe Express 통합을 사용하려면 할당된 사용자에게 Content Hub을 지원하는 Assets 작성 환경, **[!UICONTROL # /content/dam/hydraded-assets/]** 폴더 계층 구조에서 [!UICONTROL 편집 가능] 권한이 있어야 합니다. Content Hub 사용자는 Express를 사용하여 만든 콘텐츠를 저장할 수 있습니다. 관리자 보기(Touch UI)의 [권한 관리](/help/security/touch-ui-principal-view.md) 또는 Assets 보기의 간소화된 [권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 참조하십시오.
+적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[#UICONTROL /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
 
 ## 조직의 브랜드 지침이 홈 페이지에 링크로 표시되도록 Content Hub를 설정할 수 있습니까? {#content-hub-setup-brand-guidelines}
 
