@@ -4,9 +4,9 @@ description: AEM CIF에서 캐시 지우기 기능을 활성화하고 확인하�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # 구성 요소 및 GraphQL 캐시 지우기 {#clear-cache}
 
 이 문서에서는 AEM CIF의 캐시 지우기 기능 활성화 및 확인에 대한 포괄적인 안내서를 제공합니다.
+
+>[!NOTE]
+>
+> 이 기능은 실험적입니다.
 
 ## CIF 구성에서 캐시 지우기 기능 활성화 {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
 * [여기](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)와 같이 프로젝트에서 `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
    * 작성자 및 게시 인스턴스 모두에 대해 구성을 활성화해야 합니다.
    * Dispatcher 캐시 활성화(선택 사항): 위의 구성에서 `enableDispatcherCacheInvalidation` 속성을 true로 설정하여 Dispatcher 캐시 지우기 설정을 활성화할 수 있습니다. 이렇게 하면 Dispatcher에서 캐시를 지우는 기능이 제공됩니다.
-
-  >[!NOTE]
-  >
-  > 게시 인스턴스에서만 작동합니다.
+     >[!NOTE]
+     >
+     > 게시 인스턴스에서만 작동합니다.
 
    * 또한, 제품, 카테고리 및 CMS 페이지에 맞는 해당 패턴을 위의 구성 파일에 추가하여 Dispatcher 캐시에서 제거해야 합니다.
 
@@ -60,7 +63,6 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 모든 것이 잘 진행되면 새로운 변경 사항이 모든 인스턴스에 반영됩니다. 게시 인스턴스에 대한 변경 사항이 반영되지 않는 경우 전용 창에서 해당 PLP 및 PDP 페이지를 확인하십시오.
 
 >[!NOTE]
@@ -98,7 +100,6 @@ AEM에서 상거래 관련 데이터의 캐시를 지우고자 할 때마다 트
 | 속성 | 값 | 유형(배열/문자열/부울) | 이렇게 하면 Dispatcher 캐시가 지워집니까? | 댓글 |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | 캐시를 제거해야 하는 사이트 경로의 해당 값(예: venia 프로젝트 참조: `/content/venia/us/en`). | 문자열 | 예 | 이 값은 `invalidateType.`의 조합과 함께 제공되어야 합니다. |
-
 
 ### 샘플 API 요청
 
