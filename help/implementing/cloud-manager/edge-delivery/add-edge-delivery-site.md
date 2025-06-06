@@ -4,10 +4,10 @@ description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >Edge Delivery Services 사이트를 Cloud Manager에 온보딩해야 하는 이유를 알아보십시오.
->&#x200B;>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
+>>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
 
 **Cloud Manager에 Edge Delivery Site를 추가하려면:**
 
@@ -30,7 +30,7 @@ ht-degree: 90%
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
-**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**&#x200B;를 클릭합니다.
+**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**를 클릭합니다.
 페이지의 오른쪽 상단 근처에서 **사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery Sites 버튼에서 Edge Delivery Sites 추가](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -40,7 +40,7 @@ ht-degree: 90%
    | 텍스트 필드 | 설명 |
    | - | --- |
    | 사이트 이름 | 추가하려는 Edge Delivery site의 이름을 입력하십시오.<br>이 이름은 Cloud Manager 내 사이트의 고유 식별자 역할을 합니다. |
-   | Edge Delivery Origin | 이 값은 Edge Delivery Services에 있는 사이트의 콘텐츠 소스에 대한 URL 경로를 지정합니다. 또한 Cloud Manager을 라이브 사이트에 연결합니다.<br>다음 예제와 같이 URL에는 일반적으로 *분기*, *프로젝트* 및 *테넌트*&#x200B;이(가) 포함됩니다(일러스트레이션만 목적).<br>`https://main--projectname--tenant.aem.live` |
+   | Edge Delivery 원본 | 이 값은 Edge Delivery Services에 있는 사이트의 콘텐츠 소스에 대한 URL 경로를 지정합니다. 또한 Cloud Manager을 라이브 사이트에 연결합니다.<br>다음 예제와 같이 URL에는 일반적으로 *분기*, *프로젝트* 및 *테넌트*&#x200B;이(가) 포함됩니다(일러스트레이션만 목적).<br>`https://main--{site}--{org}.aem.live` |
    | 사이트 설명 (선택 사항) | 추가하려는 Edge Delivery 사이트에 대한 간략한 설명을 입력합니다.<br>설명은 사이트를 식별하고 차별화하는 데 도움이 되며, 추가한 다른 사이트 간에 관리하고 인식하는 것이 더 쉬워집니다. |
 
 1. 대화 상자의 오른쪽 하단에 있는 **추가**&#x200B;를 클릭합니다.
