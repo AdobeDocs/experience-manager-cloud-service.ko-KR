@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 생성형 AI에 대�
 feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
-source-git-commit: df463616bcc85fc0065fb708e69d4f7bd5bac131
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 83%
 
 ---
 
@@ -37,6 +37,10 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 * [Content Hub 개요](/help/assets/product-overview.md)
 
   Content Hub를 사용하면 Adobe Express로 새 콘텐츠를 만들 수 있습니다(Adobe Express 권한이 있는 경우). 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿과 브랜드 요소로 브랜드에 맞는 변형을 만들고, Adobe Firefly의 최신 생성형 AI 기능으로 새로운 콘텐츠를 만들 수 있습니다.
+
+* [AI 생성 스마트 태그](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  디지털 Assets의 경우 수동 입력에 의존하는 대신 AI를 사용하여 설명 태그를 자동으로 할당할 수 있습니다. 이러한 AI 생성 태그는 메타데이터 품질을 향상시켜 에셋을 보다 쉽게 검색, 분류 및 추천할 수 있도록 합니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다.
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

@@ -4,7 +4,8 @@ description: Cloud Manager의 전문 테스트 환경이 스트레스 테스트 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -15,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 얼리 어답터로 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
+>>이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 얼리 어답터로 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
 
 전문 테스트 환경 또는 DevXL은 만들 수 있는 새로운 유형의 Cloud Manager 환경입니다. UAT(사용자 승인 테스트) 및 성능 유효성 검사와 같은 고급 사용 사례를 지원하도록 설계되었습니다. 기존 개발, 신속한 개발 또는 스테이징 환경과 달리 DevXL 환경은 프로덕션 배포 파이프라인 외부에서 작동합니다. 따라서 프로덕션 워크플로에 대한 간섭을 방지하기 위해 엄격한 격리를 유지하면서 보다 큰 유연성을 제공합니다.
 
@@ -63,7 +64,7 @@ DevXL은 일반적인 스테이징 환경의 크기, 확장성 및 구성을 미
 
 1. **환경 추가** 대화 상자에서 다음을 수행합니다.
 
-   * [**특수 테스트 환경**](#environment-types)&#x200B;을 클릭합니다.
+   * **특수 테스트 환경**&#x200B;을 클릭합니다.
    * **이름** 환경을 제공하십시오. 환경이 생성된 후에는 환경 이름을 변경할 수 없습니다.
    * (선택 사항) 환경에 대해 **설명**&#x200B;을 제공합니다.
    * 드롭다운 목록에서 **기본 영역**&#x200B;을(를) 선택하십시오. 만들어지면 DevXL 환경의 기본 영역(예: *미국 서부*)이 잠기고 변경할 수 없습니다.
@@ -73,4 +74,3 @@ DevXL은 일반적인 스테이징 환경의 크기, 확장성 및 구성을 미
 1. **저장**&#x200B;을 클릭합니다.
 
    이제 **개요** 페이지에 **환경** 카드에 새 환경이 표시됩니다. 이제 새 환경에 대한 파이프라인을 설정할 수 있습니다.
-
