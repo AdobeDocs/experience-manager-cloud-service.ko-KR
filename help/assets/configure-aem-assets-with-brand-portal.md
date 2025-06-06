@@ -237,7 +237,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > 2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다.
-> > 자세한 내용은 [OAuth 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)를 참조하십시오.
+> &#x200B;> 자세한 내용은 [OAuth 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)를 참조하십시오.
 
 다음 섹션에서는 Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets as a [!DNL Cloud Service]을(를) 수동으로 구성하는 방법에 대해 설명합니다.
 
