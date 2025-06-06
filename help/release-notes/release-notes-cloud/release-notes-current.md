@@ -106,7 +106,7 @@ Content Hub의 **Dynamic Media 렌디션**
 
 Content Hub 사용자 인터페이스 내에서 직접 모든 Dynamic Media 사전 설정 렌디션 및 스마트 자르기에 액세스하여 다운로드할 수 있습니다.
 
-{&#x200B;0}Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)![
+{&#x200B;0}Dynamic Media 렌디션![&#128279;](/help/assets/assets/dm-renditions-content-hub.png)
 
 ### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
 
@@ -114,7 +114,7 @@ Content Hub 사용자 인터페이스 내에서 직접 모든 Dynamic Media 사�
 
 Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 손쉽게 임베드하고 채널 간에 실시간 업데이트 및 초 개인화된 경험을 제공할 수 있습니다.
 
-{&#x200B;0}Dynamic Media 렌디션](/help/assets/assets/dm-ajo-integration.png)![
+{&#x200B;0}Dynamic Media 렌디션![&#128279;](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
