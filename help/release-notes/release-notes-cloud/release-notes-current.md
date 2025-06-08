@@ -106,7 +106,7 @@ Content Hub의 **Dynamic Media 렌디션**
 
 Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설정 렌디션 및 스마트 자르기에 액세스하여 다운로드할 수 있습니다](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
-{&#x200B;0}Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)![
+{&#x200B;0}Dynamic Media 렌디션![&#128279;](/help/assets/assets/dm-renditions-content-hub.png)
 
 ### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
 
