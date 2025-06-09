@@ -2,8 +2,8 @@
 title: Content Hub 개요
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: f728e29110808b6b5a8181120086ab82349c9835
-workflow-type: ht
+source-git-commit: dbf83611f31ee598b43208f44614d3d8210a20f1
+workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Content Hub를 사용하면 Adobe Express로 새 콘텐츠를 만들 수 있습�
 
 ## Content Hub 데모 {#content-hub-demo}
 
->[!VIDEO](https://video.tv.adobe.com/v/3459547)
+>[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
 ## 사전 요구 사항 {#prerequisites-content-hub}
 
