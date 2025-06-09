@@ -4,10 +4,10 @@ description: ' [!DNL AEM Assets View]. [!DNL AEM Assets View] UI의 UI 확장성
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '633'
+ht-degree: 6%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
@@ -85,3 +85,11 @@ ht-degree: 3%
 1. 로컬 환경을 설정하고 첫 번째 UI 확장을 만들어 [!DNL Assets View]에서 UI 확장을 개발하는 과정을 직접 경험하십시오. 자세한 내용은 [단계별 AEM Assets 보기 확장 개발](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)을 참조하십시오.
 1. AIO CLI를 사용하여 애플리케이션을 설정하여 기본 확장 구조 및 필수 코드를 생성합니다. 자세한 내용은 [코드 생성 대상 [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)을 참조하십시오.
 1. 확장을 로컬에서 테스트하여 배포하기 전에 예상대로 작동하는지 확인합니다. 완전히 격리된 환경 또는 부분 격리된 환경에서 확장을 실행하고 테스트를 위해 프로덕션 [!DNL AEM Assets View]에 확장을 연결합니다. 자세한 내용은 [문제 해결 - [!DNL AEM Assets View] 확장성](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)을 참조하십시오.
+
+## Assets 보기에서 빠른 작업 및 작업 표시줄 사용자 지정 {#customize-quick-actions-and-actions-bar}
+
+Assets 보기에서 에셋을 하나 이상 선택하면 표시되는 작업(작업 표시줄)을 사용자 지정할 수 있습니다. Assets 보기를 사용하면 에셋 카드에서 추가 옵션(...)을 클릭할 때 표시되는 작업을 사용자 지정할 수도 있습니다. 자세한 내용은 [보기 찾아보기](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/)를 참조하십시오.
+
+## Assets 보기에서 사용자 지정 대화 상자 열기 {#open-custom-dialogs-assets-view}
+
+Assets 보기는 선택한 텍스트로 사용자 지정 대화 상자를 여는 기능도 제공합니다. 텍스트에 링크를 추가할 수도 있습니다. 자세한 내용은 [모달 API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api)를 참조하십시오.
