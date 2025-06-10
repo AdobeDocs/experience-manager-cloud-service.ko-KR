@@ -3,9 +3,9 @@ title: Dynamic Media Open API와 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 9%
 
 ---
@@ -206,6 +206,10 @@ Adobe의 마이크로 프론트엔드 에셋 선택기와 통합하면 Experienc
 * **F**: [오름차순 또는 내림차순으로 정렬](#sorting)
 * **G**: 선택 취소
 * **시간**: 하나 또는 여러 자산을 선택하십시오.
+
+>[!NOTE]
+>
+>폴더는 작성자 저장소에 연결할 때만 지원되며 OpenAPI 저장소를 사용하는 Dynamic Media는 지원되지 않습니다.
 
 >[!MORELIKETHIS]
 >

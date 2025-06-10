@@ -3,7 +3,7 @@ title: Dynamic Media Prime 및 Ultimate
 description: Dynamic Media Prime 및 Ultimate, 해당 이점 및 둘 간의 차이점에 대해 자세히 알아보십시오.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 12%
@@ -45,13 +45,13 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변형(회전
 * OpenAPI를 사용하는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 기능:
 
    * 자산의 안전한 전달,
-   * [스마트 자르기, 스마트 이미징, 이미지 사전 설정 및 추가 이미지 수정자](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/).
+   * [스마트 자르기, 스마트 이미징, 이미지 사전 설정 및 추가 이미지 수정자](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
 
 * [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md), 다음 주요 기능도 포함됩니다.
 
    * [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [템플릿 기본 사항](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [시각적 구성](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [템플릿 기본 사항](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [시각적 구성](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 사전 요구 사항 {#pre-requisites-dm-ultimate}
 
