@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2025.04.04 릴리스 정보
-description: 다음은 범용 편집기 2025.04.04 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.05.21 릴리스 정보
+description: 다음은 범용 편집기 2025.05.21 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# 범용 편집기 2025.04.04 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.05.21 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기 2025년 4월 4일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 5월 21일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ ht-degree: 100%
 
 ## 새로운 기능 {#what-is-new}
 
-* **OpenAPI 지원이 제공되는 Dynamic Media** - 범용 편집기의 [자산 선택기가 이제 ](/help/assets/overview-asset-selector.md#repository-switcher)[OpenAPI 및 원격 자산을 제공하는 Dynamic Media를 지원](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP 목록 허용** - 범용 편집기에서 이제 [IP 허용 목록을 지원합니다.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor)[이 엔드포인트](http://universal-editor-service.adobe.io/ip-ranges)를 사용하는 범용 편집기 서비스의 IP를 확인할 수 있습니다.
-
-## 기타 개선 사항 {#other-improvements}
-
-* 레이아웃 컨텍스트 제거가 수정되었습니다.
-* e2e 테스트가 개선되었습니다.
-* 종속성 업데이트와 코드 정리가 수행되었습니다.
+* **페이지 열기 단추 사용 안 함** - 이제 페이지 열기 단추 [을(를) 사용하지 않도록 설정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#open-page)

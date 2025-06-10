@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
+source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 42%
+source-wordcount: '555'
+ht-degree: 31%
 
 ---
 
@@ -30,10 +30,10 @@ Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐�
 ![페이지 게시](assets/publish-menu.png)
 
 1. 유니버설 편집기에서 [유니버설 편집기의 도구 모음에서 **게시** 아이콘을 탭하거나 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. [미리보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)를 사용할 수 있는 경우 콘텐츠를 게시하는 위치를 **미리보기** 또는 **게시**&#x200B;로 선택할 수 있습니다.
+1. [미리 보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)를 사용할 수 있는 경우 콘텐츠를 게시하는 위치를 **[미리 보기](/help/sites-cloud/authoring/sites-console/previewing-content.md)**(사용 가능한 경우) 또는 **게시**&#x200B;로 선택할 수 있습니다.
 1. **항목** 섹션에는 다음 항목을 포함하여 게시에 포함된 콘텐츠가 나열됩니다.
    * 아직 게시되지 않은 **새**&#x200B;개 항목.
-   * 게시되었지만 마지막 게시 이후에 수정된 **수정된** 콘텐츠.
+   * 게시되었지만 마지막 게시 이후에 수정된 **수정됨** 콘텐츠.
    * 게시 이후 수정되지 않고 게시된 **게시** 콘텐츠입니다.
 
    해당 항목 옆의 확인란을 탭하거나 클릭하여 필요에 따라 게시에서 해당 항목을 포함/제외합니다. **확장**&#x200B;을 탭하거나 클릭하여 세 가지 범주의 합계에 포함된 개별 항목을 보고 개별적으로 항목을 입력/제외할 수 있습니다.
@@ -44,6 +44,10 @@ Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐�
 
 1. 게시하려면 **게시**, 중단하려면 **취소**&#x200B;를 탭하거나 클릭합니다.
 
+>[!NOTE]
+>
+>미리 보기 [에 게시하는 옵션을 사용하지 않도록 설정](/help/implementing/universal-editor/customizing.md#publish-preview)할 수 있으므로 편집기에 나타나지 않을 수 있습니다.
+
 ## 유니버설 편집기에서 콘텐츠 게시 취소 {#unpublishing-content}
 
 콘텐츠 게시 취소는 콘텐츠 게시와 유사한 방식으로 작동합니다. 콘텐츠 작성자가 게시에서 콘텐츠를 제거할 준비가 되면 범용 편집기의 도구 모음에서 줄임표 아이콘을 탭하거나 클릭한 다음 **게시 취소**&#x200B;를 탭하거나 클릭합니다.
@@ -53,28 +57,6 @@ Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐�
 ## 사이트 콘솔에서 게시 및 게시 취소 {#publishing-sites-console}
 
 Sites 콘솔에서 [을(를) 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md)할 수도 있습니다. 이 기능은 여러 페이지의 콘텐츠를 게시하거나 게시 또는 게시 취소를 예약하려는 경우에 유용합니다.
-
-## 페이지 편집기와의 유사성 {#similarities}
-
-[AEM 페이지 편집기 ](/help/sites-cloud/authoring/page-editor/introduction.md) 사용자의 경우 유니버설 편집기로 콘텐츠를 게시하는 프로세스는 익숙한 대로 작동합니다. AEM에서 게시할 때 콘텐츠는 작성자 계층에서 게시 계층으로 복제됩니다.
-
-## 차이점 {#differences}
-
-유니버설 편집기로 게시할 때 약간 다른 점은 편집기 자체가 아니라, 유니버설 편집기가 가능하게 하는 앱의 외부 호스팅입니다.
-
-외부에서 호스팅되는 경우 작성자가 편집기 내에서 앱을 열 때 작성자 계층에서 콘텐츠가 로드되고 방문자가 앱에 액세스할 때 게시 계층에서 콘텐츠가 로드되도록 하는 것이 해당 웹 앱의 관심사입니다.
-
-## 앱에서 계층 감지 {#detecting}
-
-편집기 내에서 열려 있음을 감지할 때 적절한 작성자 또는 게시 엔드포인트를 선택하는 앱의 간단한 조건문으로 작성자 또는 게시 계층에 액세스해야 하는지 여부를 결정할 수 있습니다.
-
-또 다른 방법은 서로 다르게 구성된 두 개의 환경에 앱을 배포하여 하나는 작성자 계층에서 콘텐츠를 검색하고 다른 하나는 게시 계층에서 콘텐츠를 검색하도록 하는 것입니다. 작성자가 유니버설 편집기에서 게시된 URL을 열 수 있도록 하기 위해 작성자가 자동으로 리디렉션될 수 있도록 작성자 환경(예: `author` 하위 도메인을 앞에 붙여서)에서 게시측 URL을 이와 동등한 것으로 &quot;변환&quot;하는 작은 스크립트를 만들 수 있습니다.
-
-## 요약 {#summary}
-
-Universal Editor의 목적은 특정 패턴을 적용하지 않고 구현을 위한 모든 것을 간단하고 복잡하지 않게 유지하면서 완전히 분리된 방식으로 목표를 달성할 수 있도록 하는 것입니다.
-
-마찬가지로 Universal Editor는 특정 프로젝트에서 콘텐츠를 게재할 계층을 결정하는 방법에 대한 요구 사항을 제공하지 않습니다. 오히려 몇 가지 가능성을 지원하며 프로젝트에서 자체 요구 사항에 가장 적합한 솔루션을 결정할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

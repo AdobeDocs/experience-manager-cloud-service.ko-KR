@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 27%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -183,9 +183,9 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >핫키 `p`을(를) 사용하여 미리 보기 모드로 전환하거나 미리 보기 모드에서 전환합니다.
 
-#### 앱 미리보기 열기 {#open-app-preview}
+#### 페이지 열기 {#open-page}
 
-앱 미리 보기 열기 아이콘을 선택하여 편집기에서 벗어난 자체 브라우저 탭에서 현재 편집 중인 페이지를 열고 콘텐츠를 미리 봅니다.
+페이지 열기 아이콘을 선택하여 편집기에서 벗어나 현재 편집 중인 페이지를 자체 브라우저 탭에서 열어 콘텐츠를 미리 봅니다.
 
 ![앱 미리보기 열기](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >[앱의 미리 보기 URL을 사용자 지정할 수 있습니다](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>페이지 열기 단추 [을(를) 사용하지 않도록 설정](/help/implementing/universal-editor/customizing.md#open-page)할 수 있으므로 편집기에 나타나지 않을 수 있습니다.
+
 #### 게시 {#publish}
 
 게시를 선택하면 독자가 사용하기 위해 콘텐츠를 라이브로 게시하거나 검토할 미리보기 환경에 변경 사항을 게시할 수 있습니다.
@@ -206,6 +210,10 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >[!TIP]
 >
 >유니버설 편집기를 사용하여 게시하는 방법에 대한 자세한 내용은 [유니버설 편집기를 사용하여 콘텐츠 게시](publishing.md) 문서를 참조하십시오.
+
+>[!NOTE]
+>
+>게시 단추 [을(를) 사용하지 않도록 설정](/help/implementing/universal-editor/customizing.md#disable-publish)할 수 있으므로 편집기에 나타나지 않을 수 있습니다.
 
 #### 생략 부호 {#ellipsis}
 
