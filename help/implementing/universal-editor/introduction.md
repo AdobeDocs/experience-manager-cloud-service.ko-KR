@@ -4,9 +4,9 @@ description: 유니버설 편집기는 마케팅 조직이 효과적인 웹 경�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
+source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 13%
 
 ---
@@ -49,10 +49,12 @@ ht-degree: 13%
 유니버설 편집기는 다음에서 지원합니다.
 
 * AEM as a Cloud Service(릴리스 `2023.8.13099` 이상)
-* AEM 6.5(서비스 팩 21 또는 22 + 기능 팩 추가)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+   * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
+* [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
 
-이 설명서는 AEM as a Cloud Service과 함께 범용 편집기를 사용하기 위한 것입니다. AEM 6.5에서 유니버설 편집기를 사용하려면 [AEM 6.5 설명서를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+이 설명서는 AEM as a Cloud Service과 함께 범용 편집기를 사용하기 위한 것입니다.
 
 ## 기능 {#features}
 
@@ -102,7 +104,7 @@ ht-degree: 13%
 유니버설 편집기를 살펴보고 고유한 프로젝트에서 이를 구현하는 데 있어 다음 제한 사항을 염두에 두십시오.
 
 * 단일 페이지에서 계측을 위해 AEM 리소스(콘텐츠 조각, 페이지, 경험 조각, Assets 등)를 25개 이하로 지정해야 합니다.
-* AEM as a Cloud Service 및 [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)만 지원되는 AEM 백엔드입니다.
+* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) 및 [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)만 지원되는 AEM 백엔드입니다.
 * AEM as a Cloud Service에는 릴리스 `2023.8.13099` 이상이 필요합니다.
 * 콘텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
 * AEM의 일부로 범용 편집기 [은(는) AEM과 동일한 데스크톱 브라우저를 지원합니다.](/help/overview/supported-platforms.md)
