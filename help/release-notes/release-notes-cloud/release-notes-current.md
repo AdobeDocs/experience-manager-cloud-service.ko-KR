@@ -112,7 +112,7 @@ Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설
 
 **AJO B2C와의 Dynamic Media 네이티브 통합**
 
-[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
+[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
