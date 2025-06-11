@@ -939,4 +939,4 @@ In Universal Editor, create a **responsive contact form** for the company websit
 6. **사용자 수용 테스트** - 배포 전에 실제 사용자가 양식을 테스트하도록 합니다.
 
 
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 AI 어시스턴트 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백과 새로운 AI 어시스턴트 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
