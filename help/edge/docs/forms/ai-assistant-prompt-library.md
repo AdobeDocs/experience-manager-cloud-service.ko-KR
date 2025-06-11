@@ -1,46 +1,45 @@
 ---
-title: AEM Forms AI Assistant - 프롬프트 라이브러리
-description: Forms 관리 UI, 적응형 Forms 편집기 및 유니버설 편집기에서 AI 지원을 통해 양식을 작성할 수 있는 검증된 프롬프트 패턴 및 예제 컬렉션입니다.
+title: AEM Forms AI 어시스턴트 - 프롬프트 라이브러리
+description: Forms 관리 UI, 적응형 양식 편집기 및 범용 편집기에서 AI 어시스턴트를 활용하여 양식을 작성하기 위한 검증된 프롬프트 패턴과 예제 모음입니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# AEM Forms AI 어시스턴트 - 프롬프트 라이브러리
 
-
-# AEM Forms AI Assistant - 프롬프트 라이브러리
-
-일반적인 양식 작성 시나리오에 대한 재사용 가능한 프롬프트 패턴 및 예제 컬렉션. 이러한 템플릿을 특정 요구 사항에 맞게 조정할 수 있습니다. 각 섹션에서는 사용 시기에 대한 지침과 입증된 예와 함께 특정 사용 사례를 다룹니다.
+일반적인 양식 작성 시나리오에 대한 재사용 가능한 프롬프트 패턴과 예제 모음입니다. 이들 모음을 특정 요구 사항에 맞게 조정할 수 있는 템플릿이라고 생각하십시오. 각 섹션에서는 특정 사용 사례를 다루고, 사용 시기에 대한 지침과 검증된 예제를 제공합니다.
 
 >[!NOTE]
 >
-> AEM Forms용 AI Assistant는 얼리어답터 프로그램에 따라 사용할 수 있습니다. 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 이메일을 보내 액세스를 요청합니다.
+> AEM Forms용 AI 어시스턴트는 얼리 어답터 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com로 이메일을 보내시기 바랍니다.
 
 >[!IMPORTANT]
 >
-> **변경할 설명서**: 이 프롬프트 라이브러리는 현재 제품에 대해 테스트 중이며 업데이트 및 개정이 적용됩니다. AEM Forms용 AI Assistant가 얼리어답터 프로그램 도중 계속 발전함에 따라 프롬프트, 예제 및 모범 사례가 변경될 수 있습니다.
+> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 AEM Forms용 AI 어시스턴트가 계속 발전함에 따라 프롬프트, 예제 및 모범 사례가 변경될 수 있습니다.
 
 ## 최적의 결과를 위한 모범 사례
 
-AI Assistant를 최대한 활용하려면 다음 팁을 염두에 두십시오.
+AI 어시스턴트를 최대한 활용하려면 다음 팁을 염두에 두시기 바랍니다.
 
-### 단순하게 시작, 점진적 구축
+### 간단하게 시작하고 점진적으로 확장하기
 
-처음에는 지나치게 복잡한 여러 단계 요청이 아닌 더 작고 구체적인 명령(예: &quot;이름&quot;에 대한 텍스트 입력 추가&quot;)으로 시작합니다. 이 접근 방식은 정확성을 보장하는 데 도움이 되며 문제가 예상대로 작동하지 않을 경우 문제를 쉽게 해결할 수 있습니다.
+처음에는 너무 복잡한 여러 단계로 구성된 요청보다는 작고 구체적인 명령(예: ““이름”에 대한 텍스트 입력 추가”)부터 시작하십시오. 이러한 접근 방식은 정확성을 높이는 데 도움이 되며, 예상대로 작동하지 않을 경우 문제를 쉽게 해결할 수 있게 해 줍니다.
 
-**단순 시작의 예:**
+**간단한 시작 예제:**
 
 ```
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**증분 빌드:**
+**점진적 확장 예제:**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
@@ -48,64 +47,64 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 
 ### AEM Forms 용어 사용
 
-도우미가 더 잘 이해할 수 있도록 &quot;패널&quot;, &quot;텍스트 입력 필드&quot;, &quot;확인란 그룹&quot;, &quot;제출 작업&quot;, &quot;규칙&quot; 등의 용어를 사용합니다. 이렇게 하면 AI가 AEM Forms 컨텍스트 내에서 요청을 올바르게 해석합니다.
+어시스턴트가 더 잘 이해할 수 있도록 “패널”, “텍스트 입력 필드”, “체크박스 그룹”, “제출 액션”, “규칙” 등의 용어를 사용하십시오. 이렇게 하면 AI가 AEM Forms 컨텍스트 내에서 요청을 올바르게 해석할 수 있습니다.
 
-**기본 용어:**
+**선호하는 용어:**
 
-- &quot;텍스트 상자&quot; 대신 &quot;텍스트 입력 필드&quot;
-- &quot;checkboxes&quot; 대신 &quot;checkbox group&quot;
-- &quot;select list&quot; 대신 &quot;dropdown&quot;
-- &quot;section&quot; 또는 &quot;container&quot; 대신 &quot;panel&quot;
-- &quot;양식 제출&quot; 대신 &quot;제출 액션&quot;
-- &quot;logic&quot; 또는 &quot;condition&quot; 대신 &quot;rule&quot;
+- “텍스트 상자” 대신 “텍스트 입력 필드”
+- “체크박스” 대신 “체크박스 그룹”
+- “선택 목록” 대신 “드롭다운”
+- “섹션” 또는 “컨테이너” 대신 “패널”
+- “양식 제출” 대신 “제출 액션”
+- “논리” 또는 “조건” 대신 “규칙”
 
-### 명확하게 참조 필드
+### 참조 필드를 명확하게
 
-기존 필드를 구성할 때는 @fieldName 표기법을 사용하십시오(예: &quot;필수 @firstName&quot;). 이는 특히 필드가 많은 복잡한 양식에서 AI가 사용자가 참조하는 필드를 정확히 식별하는 데 도움이 됩니다.
+기존 필드를 구성할 때 @fieldName 표기법을 사용하십시오(예: “@firstName을 필수로 지정”). 이렇게 하면 AI가 특히 여러 필드가 포함된 복잡한 양식에서 사용자가 언급하는 필드가 정확히 무엇인지 식별하는 데 도움이 됩니다.
 
-**예:**
+**예제:**
 
 - `Make @email mandatory with real-time validation`
 - `Show @spouseInfo panel when @maritalStatus equals "Married"`
 - `Set @country default value to "United States"`
 
-### 항상 계획 검토
+### 정기적인 계획 검토
 
-&quot;적용&quot;을 클릭하기 전에 항상 유니버설 편집기의 도우미가 제안한 변경 사항에 대해 신중하게 계획을 검토하십시오. AI가 계획한 작업을 보여 줍니다. 잠시 시간을 내어 예상과 이것이 일치하는지 확인합니다.
+“적용”을 클릭하기 전에, 범용 편집기에서 어시스턴트가 제안한 변경 사항에 대한 계획을 항상 주의 깊게 검토하십시오. AI는 수행할 계획을 보여 주며, 그 내용이 기대한 바와 일치하는지 잠시 확인해 보시기 바랍니다.
 
 ### 수동으로 유효성 검사
 
-도우미가 변경한 후에는 항상 양식을 미리 보고 테스트하여 양식이 예상대로 동작하며 보이는지 확인하십시오. AI는 강력한 도구이지만 최종 검증이 품질을 보장하는 핵심이다.
+어시스턴트가 변경 사항을 적용한 후에는 항상 양식을 미리 보고 테스트하여 예상대로 동작하고 표시되는지 확인하십시오. AI는 강력한 도구이지만 품질을 보장하려면 최종 확인이 중요합니다.
 
-**유효성 검사 목록:**
+**유효성 검사 체크리스트:**
 
-- 미리 보기 모드에서 양식 기능 테스트
-- 조건부 로직이 올바르게 작동하는지 확인
-- 모바일 응답성 확인
+- 미리보기 모드에서 양식 기능 테스트
+- 조건 논리가 올바르게 작동하는지 확인
+- 모바일 반응성 확인
 - 양식 제출 테스트
 - 접근성 기능 유효성 검사
 
-### 반복 및 세분화
+### 반복 및 개선
 
-첫 번째 프롬프트에서 정확한 결과를 얻지 못한 경우 요청을 다시 입력하거나 더 작은 단계로 분류해 보십시오. AI는 컨텍스트에서 학습하므로 더 구체적인 세부 정보를 제공하면 결과가 향상되는 경우가 많습니다.
+첫 번째 프롬프트에서 원하는 결과가 나오지 않으면 요청을 변경하거나 더 작은 단계로 나누어 보십시오. AI는 맥락을 통해 학습하므로, 보다 구체적인 세부 정보를 제공하면 결과가 향상되는 경우가 많습니다.
 
-**반복 예:**
+**반복 예제:**
 
-1. 첫 번째 시도: &quot;모바일 친화적인 양식 만들기&quot;
-2. 세분화: &quot;단일 열 레이아웃 및 큰 터치 타겟으로 768px 미만의 모바일 화면에 대한 양식 레이아웃 최적화&quot;
+1. 첫 번째 시도: “양식을 모바일 친화적으로 만들기”
+2. 개선된 프롬프트: “768px 미만의 모바일 화면에 맞춰 단일 열 레이아웃과 보다 큰 터치 타깃을 사용하여 양식 레이아웃 최적화”
 
 ### 피드백 제공
 
-기본 제공 피드백 메커니즘을 사용하여 지원자가 배우고 개선하는 데 도움을 줍니다. 사용자의 피드백은 모든 사용자에게 AI를 더 잘 만들어 주는 데 도움이 됩니다.
+기본 제공되는 피드백 메커니즘을 사용하여 어시스턴트가 학습하고 개선할 수 있도록 도와주십시오. 여러분의 피드백은 AI를 모두에게 더 나은 도구로 만드는 데 기여합니다.
 
 
-## 증분 개발 예
+## 점진적 개발 예제
 
-다음 예에서는 간단한 작업을 시작하고 복잡성을 점진적으로 추가하면서 양식을 단계별로 빌드하는 방법을 보여 줍니다.
+다음 예제에서는 간단한 것부터 시작하여 점차 복잡도를 추가하는 방식으로 단계별로 양식을 작성하는 방법을 보여 줍니다.
 
-### 예제 1: 연락처 양식 증분 작성
+### 예제 1: 점진적으로 연락처 양식 작성
 
-**1단계 - 간단한 시작:**
+**1단계 - 간단하게 시작하기:**
 
 ```
 Create a basic contact form with name, email, and message fields
@@ -117,7 +116,7 @@ Create a basic contact form with name, email, and message fields
 Make @name and @email mandatory fields with appropriate validation
 ```
 
-**3단계 - 사용자 환경 개선:**
+**3단계 - 사용자 경험 향상:**
 
 ```
 Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
@@ -129,13 +128,13 @@ Add placeholder text: @name "Your full name", @email "your.email@company.com", @
 Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
 ```
 
-**5단계 - 조건부 논리 구현:**
+**5단계 - 조건 논리 구현:**
 
 ```
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
 ```
 
-### 예제 2: 등록 양식 증분 작성
+### 예제 2: 점진적으로 등록 양식 작성
 
 **1단계 - 기본 구조:**
 
@@ -143,7 +142,7 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 Create a user registration form with personal information panel
 ```
 
-**2단계 - 코어 필드 추가:**
+**2단계 - 핵심 필드 추가:**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
@@ -161,7 +160,7 @@ Make @firstName, @lastName, and @email mandatory with real-time validation
 Create a new panel "Account Information" with @username and @password fields
 ```
 
-**5단계 - 보안 강화:**
+**5단계 - 보안 향상:**
 
 ```
 Add password confirmation field @confirmPassword with validation to match @password
@@ -173,20 +172,20 @@ Add password confirmation field @confirmPassword with validation to match @passw
 Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
 ```
 
-이 증분 접근 방식은 다음과 같은 이점을 제공합니다.
+이러한 점진적인 접근 방식은 다음과 같은 데 도움이 됩니다.
 
-- 문제를 병합하기 전에 조기에 파악
-- 각 기능을 철저히 테스트합니다.
-- 사용자 피드백을 기반으로 조정
-- 개발 프로세스에 대한 더 나은 제어 유지
+- 문제가 악화되기 전에 조기에 발견할 수 있습니다.
+- 각 기능을 철저히 테스트할 수 있습니다.
+- 사용자 피드백을 바탕으로 조정할 수 있습니다.
+- 개발 프로세스를 보다 효과적으로 제어할 수 있습니다.
 
-## 새 Forms 시작
+## 새로운 양식 시작
 
-**사용할 시기:** 양식 프로젝트의 시작 부분에서. 이 메시지는 AI가 요구 사항을 이해하고 기반 구조를 구축하는 데 도움이 됩니다.
+**사용 시기:** 모든 양식 프로젝트를 시작하는 경우. 이 프롬프트는 AI가 사용자의 요구 사항을 이해하고 기반 구조를 구축하는 데 도움이 됩니다.
 
-**사용 방법:** 기본 구조 및 핵심 요구 사항으로 시작합니다. 양식 유형, 타겟 대상자 및 기본 목적을 지정합니다. 후속 프롬프트에서 복잡성을 추가합니다.
+**사용 방법:** 기본 구조와 핵심 요구 사항부터 시작합니다. 양식 유형, 타깃 대상자 및 주 목적을 지정합니다. 이후의 프롬프트에 복잡성을 추가합니다.
 
-**예제 프롬프트 - 단순 시작:**
+**프롬프트 예제 - 간단하게 시작하기:**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**증분 빌드:**
+**점진적 확장 예제:**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -213,7 +212,7 @@ Add employment information panel with @employer, @jobTitle, and @annualIncome fi
 Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
 ```
 
-**대체 단순 시작 프롬프트:**
+**대체 간단한 시작 프롬프트:**
 
 ```
 Create a basic **event registration form** with name, email, and event selection fields
@@ -229,11 +228,11 @@ Design a basic **feedback survey** with rating scale and comments field
 
 ## 양식 구조 및 레이아웃
 
-**사용할 시기:** 복잡한 양식을 구성하거나 더 나은 레이아웃 디자인을 통해 사용자 경험을 개선해야 하는 경우.
+**사용 시기:** 복잡한 양식을 구성하거나 더 나은 레이아웃 디자인을 통해 사용자 경험을 개선해야 하는 경우.
 
-**사용 방법:** 사용자 여정과 정보의 논리적 그룹화에 중점을 둡니다. 레이아웃 환경 설정 및 탐색 패턴을 지정합니다.
+**사용 방법:** 사용자 여정과 정보의 논리적인 그룹화에 집중합니다. 레이아웃 환경 설정과 탐색 패턴을 지정합니다.
 
-**예제 프롬프트 - 여러 단계 양식 구조:**
+**예제 프롬프트 - 다단계 양식 구조:**
 
 ```
 Convert this single-page form into a **3-step wizard** with:
@@ -272,13 +271,13 @@ Convert this long form into an **accordion layout** where users can expand/colla
 Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
 ```
 
-## 현장 관리 및 검증
+## 필드 관리 및 유효성 검사
 
-**사용할 시기:** 특정 유효성 검사 규칙 및 동작을 사용하여 양식 필드를 추가, 수정 또는 향상시켜야 하는 경우.
+**사용 시기:** 특정 유효성 검사 규칙 및 비헤이비어가 필요한 양식 필드를 추가, 수정 또는 향상해야 하는 경우.
 
-**사용 방법:** 필드 형식, 유효성 검사 요구 사항 및 사용자 경험 기대치에 대해 구체적으로 지정하십시오. @fieldName 구문을 사용하여 기존 필드를 참조합니다.
+**사용 방법:** 필드 유형, 유효성 검사 요구 사항 및 사용자 경험 기대 사항을 구체적으로 명시합니다. @fieldName 구문을 사용하여 기존 필드를 참조합니다.
 
-**예제 프롬프트 - 필드 개선 사항:**
+**예제 프롬프트 - 필드 향상:**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -305,7 +304,7 @@ Enhance the form fields with these specific requirements:
 - Show upload progress and file names after upload
 ```
 
-**필드별 프롬프트:**
+**필드 관련 프롬프트:**
 
 ```
 Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
@@ -321,9 +320,9 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 ## 조건부 논리 및 규칙
 
-**사용 시기:** 사용자 입력 또는 비즈니스 규칙에 따라 동적 양식 동작이 필요한 경우.
+**사용 시기:** 사용자 입력 또는 비즈니스 규칙에 따라 동적인 양식 비헤이비어가 필요한 경우.
 
-**사용 방법:** 조건 및 결과 작업을 명확하게 정의합니다. 특정 필드 참조 및 논리 연산자를 사용하십시오.
+**사용 방법:** 조건과 그에 따른 작업을 명확하게 정의합니다. 특정 필드 참조와 논리 연산자를 사용합니다.
 
 **예제 프롬프트 - 복잡한 조건부 논리:**
 
@@ -357,7 +356,7 @@ Implement these conditional rules for the application form:
   - Add accessibility preferences section
 ```
 
-**규칙별 프롬프트:**
+**규칙 관련 프롬프트:**
 
 ```
 Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
@@ -373,9 +372,9 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 ## 데이터 통합 및 제출
 
-**사용할 시기:** 양식을 백엔드 시스템, 데이터베이스 또는 외부 서비스에 연결해야 하는 경우.
+**사용 시기:** 백엔드 시스템, 데이터베이스 또는 외부 서비스에 양식을 연결해야 하는 경우.
 
-**사용 방법:** 기본 제출 설정으로 시작한 다음 추가 통합을 점진적으로 추가합니다. 통합 유형, 데이터 형식 요구 사항 및 오류 처리 환경 설정을 지정합니다.
+**사용 방법:** 기본 제출 설정부터 시작한 다음 점진적으로 추가 통합을 추가합니다. 통합 유형, 데이터 형식 요구 사항 및 오류 처리 환경 설정을 지정합니다.
 
 **예제 프롬프트 - 기본 제출로 시작:**
 
@@ -389,7 +388,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**그런 다음 보조 작업을 증분 추가:**
+**점진적인 보조 작업 추가 예제:**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -444,9 +443,9 @@ Configure **database integration** to save form submissions as records. Create n
 
 ## 디자인 가져오기 및 변환
 
-**사용 시기:** 기능 AEM 양식으로 변환해야 하는 기존 양식 디자인(PDF, Figma, 이미지)이 있는 경우.
+**사용 시기:** 기존 양식 디자인(PDF, Figma, 이미지)을 기능적인 AEM 양식으로 변환해야 하는 경우.
 
-**사용 방법:** 소스 디자인에 대한 명확한 컨텍스트를 제공하고 필요한 수정 또는 개선 사항을 지정합니다.
+**사용 방법:** 소스 디자인에 대한 명확한 맥락을 제공하고 필요한 수정이나 개선 사항을 명시합니다.
 
 **예제 프롬프트 - PDF 양식 변환:**
 
@@ -494,13 +493,13 @@ Analyze this **image of a paper form** and recreate it digitally. Improve the la
 Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
 ```
 
-## 모바일 최적화 및 응답성
+## 모바일 최적화 및 반응성
 
-**사용 시기:** 양식이 모든 장치 유형과 화면 크기에서 원활하게 작동해야 하는 시기.
+**사용 시기:** 모든 디바이스 유형과 화면 크기에서 양식이 원활하게 작동해야 하는 경우.
 
-**사용 방법:** 기본 모바일 최적화를 시작한 다음 고급 기능을 사용하여 개선합니다. 모바일 우선 접근 방식을 강조하고 중단점 동작을 점진적으로 지정합니다.
+**사용 방법:** 기본적인 모바일 최적화부터 시작한 다음 고급 기능으로 강화합니다. 모바일 우선 접근 방식을 강조하고 중단점 비헤이비어를 점진적으로 지정합니다.
 
-**예제 프롬프트 - 기본 모바일 최적화로 시작:**
+**예제 프롬프트 - 기본 모바일 최적화로 시작하기:**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -511,7 +510,7 @@ Make @contactForm mobile-friendly with:
 - Responsive design that works on phones and tablets
 ```
 
-**다음 고급 모바일 기능 추가:**
+**고급 모바일 기능 추가 예제:**
 
 ```
 Enhance @contactForm mobile experience with:
@@ -557,7 +556,7 @@ Optimize this form for **mobile-first responsive design**:
 - Progressive enhancement approach
 ```
 
-**모바일 전용 단순 프롬프트:**
+**모바일 전용 간단한 프롬프트:**
 
 ```
 Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
@@ -573,9 +572,9 @@ Enable offline functionality for @applicationForm with local data saving
 
 ## 접근성 및 규정 준수
 
-**사용할 시기:** 양식이 접근성 표준(WCAG 2.1 AA) 또는 준수 요구 사항을 충족해야 하는 시기
+**사용 시기:** 양식이 접근성 표준(WCAG 2.1 AA) 또는 규정 준수 요구 사항을 충족해야 하는 경우.
 
-**사용 방법:** 충족해야 하는 접근성 요구 사항 및 준수 표준을 지정합니다.
+**사용 방법:** 충족해야 하는 접근성 요구 사항과 준수 표준을 지정합니다.
 
 **예제 프롬프트 - 접근성 구현:**
 
@@ -619,7 +618,7 @@ Make this form **WCAG 2.1 AA compliant** with these accessibility features:
 - Validate HTML for semantic correctness
 ```
 
-**준수 관련 프롬프트:**
+**규정 준수 관련 프롬프트:**
 
 ```
 Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
@@ -633,11 +632,11 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## 테스트 및 품질 Assurance
+## 테스트 및 품질 보증
 
-**사용 시기:** 양식 기능, 사용자 경험 및 기술 성능을 확인해야 하는 경우.
+**사용 시기:** 양식 기능, 사용자 경험 및 기술 성능을 검증해야 하는 경우.
 
-**사용 방법:** 확인해야 하는 테스트 시나리오, 에지 사례 및 품질 기준을 지정합니다.
+**사용 방법:** 검증해야 하는 테스트 시나리오, 예외 사례 및 품질 기준을 지정합니다.
 
 **예제 프롬프트 - 포괄적인 양식 테스트:**
 
@@ -705,7 +704,7 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 **사용 시기:** AI 지원, 고급 워크플로 또는 복잡한 통합과 같은 정교한 양식 기능이 필요한 경우.
 
-**사용 방법:** 고급 기능 및 통합 요구 사항을 명확히 정의합니다.
+**사용 방법:** 고급 기능과 통합 요구 사항을 명확하게 정의합니다.
 
 **예제 프롬프트 - AI 강화 양식:**
 
@@ -765,9 +764,9 @@ Implement **blockchain verification** for document authenticity, immutable audit
 
 ## 문제 해결 및 최적화
 
-**사용할 시기:** 양식에 성능 문제, 사용자 경험 문제 또는 기술적 문제가 있는 경우.
+**사용 시기:** 양식에 성능 문제, 사용자 경험 문제 또는 기술적 어려움이 있는 경우.
 
-**사용 방법:** 특정 문제와 원하는 결과를 명확하게 설명하십시오.
+**사용 방법:** 구체적인 문제와 원하는 결과를 명확하게 설명합니다.
 
 **예제 프롬프트 - 성능 최적화:**
 
@@ -823,19 +822,19 @@ Optimize this form for **better performance and user experience**:
 **Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
 ```
 
-## 환경별 우수 사례
+## 환경 관련 모범 사례
 
 ### Forms 관리 UI
 
-**사용할 시기:** 높은 수준의 양식 만들기 및 관리 작업용.
+**사용 시기:** 고수준 양식 생성 및 관리 작업 시.
 
 ```
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### 적응형 Forms 편집기
+### 적응형 양식 편집기
 
-**사용할 시기:** 자세한 양식 구성 및 복잡한 규칙 만들기.
+**사용 시기:** 상세한 양식 구성 및 복잡한 규칙 생성 시.
 
 ```
 In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
@@ -843,7 +842,7 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### 범용 편집기
 
-**사용할 시기:** 시각적 편집이 있는 Edge Delivery Services 양식용.
+**사용 시기:** 시각적 편집이 가능한 Edge Delivery Services 양식 사용 시.
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
@@ -851,93 +850,93 @@ In Universal Editor, create a **responsive contact form** for the company websit
 
 ## 명령 참조 빠른 안내서
 
-| 명령 | 최상의 사용 사례 | 예 |
+| 명령 | 모범 사용 사례 | 예 |
 |---------|---------------|---------|
-| `/create-form` | 새 양식 시작 | `/create-form employee onboarding with personal info and benefits selection` |
+| `/create-form` | 새로운 양식 시작 | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | 페이지에 양식 추가 | `/add-form newsletter signup with email and preferences` |
 | `/update-layout` | 양식 구조 변경 | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
 | `/update-field` | 필드 속성 수정 | `/update-field @email to be mandatory with real-time validation` |
-| `/create-rule` | 동적 동작 추가 | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
+| `/create-rule` | 동적 비헤이비어 추가 | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
 | `/create-panel` | 양식 섹션 구성 | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | 디자인 변환 | `/add-panel from uploaded form image with field recognition` |
 | `/configure-submit` | 데이터 처리 설정 | `/configure-submit to CRM and send confirmation email` |
-| `/help` | 지원 받기 | `/help how to implement multi-step validation?` |
+| `/help` | 도움 받기 | `/help how to implement multi-step validation?` |
 
 ## 지원되는 구성 요소 속성 참조
 
-### 범용 속성(모든 구성 요소)
+### 범용 속성 (모든 구성 요소)
 
-- **유형**: 구성 요소 유형(텍스트, 이메일, 번호, 전화, 날짜, 확인란, 라디오, 드롭다운, 파일 등)
-- **이름**: 양식 제출용 필드 식별자
-- **레이블**: 필드에 대한 텍스트를 표시합니다.
+- **유형**: 구성 요소 유형 (텍스트, 이메일, 숫자, 전화번호, 날짜, 체크박스, 라디오, 드롭다운, 파일 등)
+- **이름**: 양식 제출을 위한 필드 식별자
+- **레이블**: 필드에 대한 표시 텍스트
 - **설명**: 필드에 대한 도움말 텍스트
-- **표시**: 초기 가시성에 대한 부울
-- **필수**: 필수 필드에 대한 부울
+- **표시**: 초기 가시성에 대한 부울 값
+- **필수**: 필수 필드에 대한 부울 값
 
 ### 입력 필드 속성
 
-- **값**: 기본/초기 값
-- **자리 표시자**: 입력 필드에 대한 힌트 텍스트
-- **최소**: 최소값(숫자/날짜)
-- **Max**: 최대값(숫자/날짜)
+- **값**: 기본값/초기값
+- **플레이스홀더**: 입력 필드에 대한 힌트 텍스트
+- **최소값**: 최소값 (숫자/날짜의 경우)
+- **최대값**: 최대값 (숫자/날짜의 경우)
 
 ### 파일 업로드 속성
 
-- **수락**: 파일 형식(.pdf, .doc, .docx, .jpg, .png 등)
-- **다중**: 다중 파일 선택에 대한 부울
+- **허용**: 파일 유형 (.pdf, .doc, .docx, .jpg, .png 등)
+- **다중**: 여러 파일 선택을 위한 부울 값
 
-### 선택 컨트롤 속성
+### 선택 제어 속성
 
-- **옵션**: 드롭다운 선택 사항(쉼표로 구분된 목록)
-- **선택됨**: 확인란/라디오에 대한 기본 선택
+- **옵션**: 드롭다운에 대한 선택 사항 (쉼표로 구분된 목록)
+- **선택됨**: 체크박스/라디오에 대한 기본 선택
 
 ### 컨테이너 속성
 
-- **필드 집합**: 관련 필드를 그룹화합니다.
-- **반복 가능**: 반복 가능한 섹션에 대한 부울
+- **Fieldset**: 관련 필드 그룹화
+- **반복 가능**: 반복 가능한 섹션에 대한 부울 값
 
 ### 고급 속성
 
-- **보이는 식**: 조건부 표시 형식(=수식) 수식
-- **값 식**: 계산된 값의 수식(=수식)
+- **가시적 표현**: 조건부 가시성을 위한 공식 (=formula)
+- **값 표현식**: 계산된 값에 대한 공식 (=formula)
 
 ## 모범 사례 요약
 
 ### 기술 지침
 
-- 공식 AEM Forms 구성 요소 사양의 **지원되는 속성만 사용**
-- 필드 참조(@fieldName) 및 표현식(=수식)에 대해 **적절한 구문을 따르세요**
-- 각 변경 후 **점진적으로 테스트**&#x200B;하여 문제를 조기에 포착합니다.
-- **액세스 가능성에 대한 계획**&#x200B;을 처음부터 다시 고려해야 합니다.
+- 공식 AEM Forms 구성 요소 사양에서 **지원되는 속성만 사용**
+- 필드 참조(@fieldName) 및 표현식(=formula)에 대한 **적절한 구문 따르기**
+- 각 변경 후 **점진적으로 테스트**&#x200B;하여 문제를 조기에 포착
+- **접근성을 처음부터 계획**
 - 모든 디자인 결정에 **모바일 사용자 고려**
-- 향후 유지 관리 및 팀 공동 작업을 위해 **복잡한 규칙을 문서화**
+- 향후 유지 관리 및 팀 협업을 위해 **복잡한 규칙 문서화**
 
-### 전략적 접근
+### 전략적 접근 방식
 
-- **사용자 요구 사항 시작** - 기술 기능뿐만 아니라 사용자가 수행해야 하는 작업에 집중합니다.
-- **완성을 위한 디자인** - 양식 디자인에서 마찰 및 인지 부하 최소화
-- **데이터 흐름을 미리 계획** - 데이터가 처리, 저장 및 사용되는 방법을 고려합니다.
-- **규모에 맞게 빌드** - 예상되는 사용자 볼륨 및 데이터 증가를 처리할 수 있는 디자인 양식입니다.
-- **점진적 개선 사항 구현** - 기본 기능이 작동하는지 확인한 다음 고급 기능을 추가합니다.
+- **사용자 요구 사항부터 시작** - 기술적 기능뿐만 아니라 사용자가 달성해야 하는 것에도 집중합니다.
+- **완성을 위한 디자인** - 양식 디자인에서 마찰과 인지 부하를 최소화합니다.
+- **데이터 흐름을 조기에 계획** - 데이터가 어떻게 처리, 저장 및 사용될지 고려합니다.
+- **규모에 맞춰 구축** - 예상되는 사용자 볼륨과 데이터 증가를 처리할 수 있는 양식을 디자인합니다.
+- **점진적인 개선 구현** - 기본 기능이 작동하는지 확인한 다음 고급 기능을 추가합니다.
 
-### 피해야 할 일반적인 위험
+### 피해야 할 일반적인 위험 요소
 
-- **매우 복잡한 초기 요청** - 대규모 작업을 더 작고 관리하기 쉬운 단계로 나눕니다.
-- AEM Forms 사양에 없는 **지원되지 않는 속성을 사용**
+- **너무 복잡한 초기 요청** - 큰 작업을 더 작고 관리하기 쉬운 단계로 나누십시오.
+- AEM Forms 사양에 없는 **지원되지 않는 속성 사용**
 - 개발 프로세스 후반까지 **모바일 경험 무시**
-- 실제 시나리오 및 극단적 사례가 있는 **사용자 테스트 건너뛰기**
-- **AI가 명확한 특정 지침을 제공하지 않고 컨텍스트를 이해한다고 가정**
-- **액세스 가능성 및 준수 요구 사항에 대해 잊음**
-- 다음 단계로 이동하기 전에 **변경 내용을 확인하지 않습니다**
+- 실제 시나리오와 예외 사례를 반영한 **사용자 테스트 생략**
+- **AI가 명확하고 구체적인 지침을 제공하지 않고도 맥락을 이해한다고 가정**
+- **접근성 및 규정 준수 요구 사항 무시**
+- 다음 단계로 넘어가기 전에 **변경 사항을 검증하지 않음**
 
-### 품질 Assurance 접근 방식
+### 품질 보증 접근 방식
 
-1. **자주 미리 보기** - 중요한 변경 후 미리 보기 모드에서 작업을 확인하세요.
-2. **테스트 에지 사례** - 비정상적인 입력, 긴 텍스트, 특수 문자 시도
-3. **여러 장치에서 유효성 검사** - 모바일, 태블릿 및 데스크톱에서 테스트
-4. **접근성 확인** - 키보드 탐색 및 화면 판독기 호환성 확인
+1. **자주 미리 보기** - 중요한 변경 사항이 있을 때마다 미리보기 모드에서 작업을 확인합니다.
+2. **예외 사례 테스트** - 비정상적인 입력, 긴 텍스트, 특수 문자를 시도해 봅니다.
+3. **다양한 디바이스에서 검증** - 모바일, 태블릿 및 데스크탑에서 테스트합니다.
+4. **접근성 확인** - 키보드 탐색 및 화면 판독기 호환성을 확인합니다.
 5. **성능 테스트** - 양식이 빠르게 로드되고 원활하게 응답하는지 확인합니다.
-6. **사용자 수락 테스트** - 실제 사용자가 배포 전에 양식을 테스트하도록 합니다.
+6. **사용자 수용 테스트** - 배포 전에 실제 사용자가 양식을 테스트하도록 합니다.
 
 
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 AI Assistant 기능을 기반으로 계속 업데이트됩니다. 최신 기능 및 예제는 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 참조하세요.*
+*이 프롬프트 라이브러리는 사용자 피드백과 새로운 AI 어시스턴트 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1922'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 >[!IMPORTANT]
 >
->**폼이 작성된 시트에는 이름을 지정할 수 있는 내용에 제한이 있습니다. `helix-default` 및 `shared-aem`만 시트 이름으로 사용할 수 있습니다.**
+>**양식이 작성된 시트에는 지정할 수 있는 이름에 제한이 있습니다. 시트 이름으로는 `helix-default`와 `shared-aem`만 사용할 수 있습니다.**
 
 필드 레이블 업데이트부터 시작해 보겠습니다. 편집을 위해 ‘enquiry’ 시트를 열고 제출 버튼 레이블을 `Let's Talk`으로 변경한 다음 AEM Sidekick을 사용하여 파일을 미리 보고 게시합니다.
 
@@ -241,7 +241,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 &lt;owner> 저장소 소유자와 &lt;repo> 저장소 이름은 바꿉니다.
+1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 <owner> 저장소 소유자와 <repo> 저장소 이름은 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -279,13 +279,13 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 1. 로컬 시스템의 AEM 프로젝트 저장소 폴더로 이동합니다.
 
-1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
+1. [AEM Forms 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
    * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 [AEM Forms 상용구의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)로 업데이트합니다.
-1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 &quot;form&quot;과 &quot;embed-adaptive-form&quot;을 추가합니다.
+1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 “form”과 “embed-adaptive-form”을 추가합니다.
 
    ```
        "filters": [
@@ -364,7 +364,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 잠재적인 문제를 해결하면 GitHub 빌드 프로세스를 원활하게 할 수 있습니다.
 
 * **모듈 경로 오류 해결:**
-&quot;모듈 &quot;scripts/lib-franklin.js&quot;에 대한 경로를 확인할 수 없음&quot; 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
+“모듈 “scripts/lib-franklin.js”에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.

@@ -4,9 +4,9 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -203,17 +203,17 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **갤러리 보기**] 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
 * ![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL **워터폴** 보기] 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
-### 에셋 세부 정보 및 메타데이터 {#asset-details-and-metadata}
+### 자산 세부 정보 및 메타데이터 {#asset-details-and-metadata}
 
-에셋 세부 정보 페이지에서는 모든 주요 정보를 한 곳에 통합한 특정 에셋에 대한 포괄적인 보기를 제공합니다. 이름, 파일 형식, 상태 및 간단한 설명이 포함된 개요와 간단한 시각적 식별을 위한 미리보기 또는 썸네일이 포함되어 있습니다. 또한 생성 날짜, 작성자, 크기, 색상 구성표 등과 같은 에셋의 메타데이터도 포함됩니다. 이러한 속성은 에셋을 효율적으로 검색, 필터링 및 분류하는 데 도움이 됩니다. 에셋 세부 사항 패널은 에셋 선택기의 레일 보기와 모달 보기 모두에서 사용할 수 있습니다. 레일 보기에서 자산을 반환하도록 `onDrop` 속성을 활성화하고 구성해야 합니다. 또는 모달 보기에서 `handleSelection` 속성은 자산을 반환합니다. [자산 선택기 속성](asset-selector-properties.md)을 참조하세요.
+자산 세부 정보 페이지는 특정 자산에 대한 포괄적인 보기를 제공하므로 모든 주요 정보를 한 곳에서 통합적으로 확인할 수 있습니다. 여기에는 이름, 파일 형식, 상태 및 간략한 설명이 포함된 개요와 함께 시각적 식별을 위한 미리보기 또는 썸네일이 포함됩니다. 생성 날짜, 작성자, 크기, 색상 구성표 등 자산의 메타데이터도 포함됩니다. 이들 속성은 자산을 효율적으로 검색하고, 필터링하고, 분류하는 데 도움이 됩니다. 자산 세부 정보 패널은 자산 선택기의 레일 보기와 모달 보기 모두에서 사용할 수 있습니다. 레일 보기에서는 자산을 반환하려면 `onDrop` 속성을 활성화하고 구성해야 합니다. 또는 모달 보기에서는 `handleSelection` 속성이 자산을 반환합니다. [자산 선택기 속성](asset-selector-properties.md)을 참조하십시오.
 
-에셋 및 메타데이터의 세부 사항을 보려면 아래 단계를 수행하십시오.
+자산과 메타데이터의 세부 정보를 보려면 아래 단계를 실행합니다.
 
 1. 자산 선택기 MFE를 열고 자산으로 이동합니다.
-1. 에셋을 마우스로 가리킨 다음 ![정보 아이콘](/help/assets/assets/info-icon-solid-black.svg)을 클릭합니다.
-1. 자산의 세부 정보를 보려면 **[!UICONTROL 정보]** 탭으로 이동하십시오. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+1. 자산 위에 마우스를 가져다 대로 ![정보 아이콘](/help/assets/assets/info-icon-solid-black.svg)을 클릭합니다.
+1. **[!UICONTROL 정보]** 탭으로 이동하여 자산 세부 정보를 확인합니다. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-에셋의 세부 정보 보기 패널을 사용자 지정하려면 [모달 보기에서 정보 사용자 지정](asset-selector-customization.md#customize-info-in-modal-view)을 참조하십시오.
+자산의 세부 정보 보기 패널을 사용자 정의하려면 [모달 보기에서 정보 사용자 정의](asset-selector-customization.md#customize-info-in-modal-view)를 참조하십시오.
 
 ![자산 세부 정보](assets/asset-details.png)
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -276,7 +276,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="자산 선택기 예제 그래픽"><br/>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="자산 선택기 예시 그래픽"><br/>
         <a href="asset-selector-properties.md">자산 선택기 속성</a>
         <p>
         <em>실용적인 방식으로 속성의 사용을 이해합니다. </em>
@@ -286,7 +286,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 <tr>
     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="자산 선택기 속성 그래픽"><br/>
-        <a href="asset-selector-examples.md">자산 선택기 예제</a>
+        <a href="asset-selector-examples.md">자산 선택기 예시</a>
         <p>
         <em>필터, 자산 선택, 만료된 자산 등 자산 선택기의 다양한 구성 요소를 사용자 정의하는 기본 사항을 알아봅니다. </em>
         </p>
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="자산 선택기 컬렉션 그래픽"><br/>
         <a href="asset-selector-collections.md">자산 선택기 컬렉션</a>
         <p>
-        <em>Experience Manager 저장소를 사용하여 에셋 선택기 내에서 컬렉션을 사용하는 방법에 대해 알아봅니다. </em>
+        <em>Experience Manager 저장소를 사용하여 자산 선택기 내에서 컬렉션을 사용하는 방법을 알아봅니다. </em>
         </p>
     </td>
     <td>
