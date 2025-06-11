@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3039'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 71%
 >title="AEM as a Cloud Service에서 더 이상 사용되지 않으며 제거된 기능"
 >abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 이 탭은 클라우드 기반 기능으로 대체된 기능을 강조 표시합니다."
 
-Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM as a Cloud Service의 성능, 보안 및 전반적인 가치에 대해 발전하는 표준을 충족하는지 확인합니다. 이러한 평가를 기반으로 특정 기능은 사용 중단 표시가 될 수 있습니다. 가능한 경우 Adobe에서 적절한 대체 기능을 제공합니다.
+Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM as a Cloud Service에 대한 성능, 보안 및 전반적인 가치에 대한 진화하는 표준을 충족하는지 확인합니다. 이러한 평가에 따라 특정 기능은 더 이상 지원되지 않을 수 있습니다. 가능한 경우 Adobe에서 적합한 대체 솔루션을 제공해드립니다.
 
-사용 중단이 발표되면 이 기능은 제한된 기간 동안만 사용할 수 있으며 고객은 지정된 제거 날짜 이전에 모든 사용을 제거해야 합니다. Adobe은 원활한 전환을 지원하기 위해 합당한 알림과 지침을 제공할 예정입니다.
+사용 중단이 발표되면 해당 기능은 제한된 기간 동안만 사용할 수 있으며, 고객은 지정된 제거 날짜 이전에 모든 사용을 제거해야 합니다. Adobe는 원활한 전환을 지원하기 위해 합리적인 공지와 지침을 제공할 것입니다.
 
-사용 중단 기간 동안 Adobe은 이메일 알림, 작업 센터 알림 또는 Cloud Manager의 미리 알림을 통해 기능을 사용하지 않도록 전환하기 위해 수행해야 하는 작업을 고객에게 알려줍니다.
+사용 중단 기간 동안 Adobe는 이메일 알림, 액션 센터 알림 또는 Cloud Manager의 미리 알림을 통해 기능 사용을 중단하기 위해 취해야 할 조치를 고객에게 알려 줍니다.
 
 >[!WARNING]
 >
->경우에 따라 새 Cloud Manager 빌드를 배포하거나 최신 버전의 AEM as a Cloud Service으로 업그레이드하기 전에 기능을 제거해야 할 수 있습니다.
+>경우에 따라 새로운 Cloud Manager 빌드를 배포하거나 최신 버전의 AEM as a Cloud Service로 업그레이드하기 전에 기능을 제거해야 할 수도 있습니다.
 
-## 사용되지 않는 기능 {#deprecated-features}
+## 사용하지 않는 기능 {#deprecated-features}
 
-아래 표의 기능은 더 이상 사용되지 않는다고 발표되었지만 아직 제거되지 않았습니다.  대상 제거 날짜 이전에 기능 사용을 중지해야 하거나 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다.
+아래 표의 기능은 더 이상 지원되지 않을 것으로 발표되었지만 아직 제거되지는 않았습니다.  기능 사용은 목표 제거일 이전에 중단되어야 하며, 그렇지 않으면 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다.
 
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
-| Sites | [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI를 사용한 콘텐츠 조각 배달](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>함께 제공<br> [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md) |
+| Sites | [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>와 함께 사용하는<br> AEM 콘텐츠 조각 게재 [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 없음 |
 | Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
@@ -49,11 +49,11 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하여 10MB보다 큰 콘텐츠 패키지를 복제할 수 없습니다. | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일부터 Adobe Developer Console에서는 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 구성된 통합에 사용할 수 있으며, 그 이후에는 작동이 중단되므로 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 | [!DNL Foundation] | 콘텐츠 계층 구조 복제에 사용된 콘텐츠 트리 게시 워크플로 및 관련 콘텐츠 트리 게시 워크플로 단계. | 성능이 더 뛰어난 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)를 사용하십시오. |
-| [!DNL Foundation] | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/축소합니다. Adobe은 YUI 라이브러리를 더 이상 업데이트할 계획이 없습니다. | Adobe에서는 구현을 위해 Google Closure Compiler(GCC)로 전환할 것을 권장합니다. |
+| [!DNL Foundation] | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/최소화. Adobe는 YUI 라이브러리를 추가로 업데이트할 계획이 없습니다. | Adobe는 고객에게 구현을 위해 Google Closure Compiler(GCC)로 전환할 것을 권장합니다. |
 
 ## 제거된 기능 {#removed-features}
 
-이 섹션에는 제거된 기능이 나열됩니다.
+이 섹션에서는 제거된 기능을 나열합니다.
 
 | 영역 | 기능 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -67,11 +67,11 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 | [!DNL Foundation] | [서비스 사용자 ID 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)를 위한 org.apache.sling.serviceusermapping 기능 지원 | 해당 사항 없음 | 8/30/24 |
-| [!DNL Foundation] | Java 11 런타임은 더 이상 사용되지 않으며 Adobe에서 Java 21 런타임으로 대체되었습니다. 코드는 여전히 Java 11을 사용하여 작성할 수 있습니다(Java 17 및 21은 기타 옵션) | Java 21 런타임이 적용됩니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 설명된 대로 라이브러리 버전을 업데이트해야 합니다 | 25/3/5/29 |
+| [!DNL Foundation] | Java 11 런타임은 더 이상 사용되지 않으며 Adobe에서 Java 21 런타임으로 대체되었습니다. Java 11에서는 여전히 코드를 빌드하는 것이 허용됩니다(Java 17과 21은 다른 옵션입니다) | Java 21 런타임이 적용됩니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다. | 3월 5/29/25 |
 
 ## 더 이상 사용되지 않는 API {#aem-apis}
 
-아래 표의 API(확장하려면 클릭)는 더 이상 사용되지 않는 것으로 발표되었지만 아직 제거되지 않았습니다.  대상 제거 날짜 이전에 이러한 API 사용을 중지해야 하거나 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다. 일부 API는 아래 API 제거 지침 섹션을 참조합니다.
+아래 표의 API(클릭하여 확장)는 더 이상 지원되지 않는다고 발표되었지만 아직 제거되지 않았습니다.  이 API 사용은 목표 제거일 이전에 중단되어야 하며, 그렇지 않으면 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다. 일부 API는 아래 API 제거 안내 섹션을 참조합니다.
 
 <details>
   <summary>더 이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
@@ -126,13 +126,13 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service은 이 내부 로그백 API를 지원하지 않습니다. <a href="#ch.qos.logback">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>AEM as a Cloud Service는 이 내부 로그백 API를 지원되지 않습니다. <a href="#ch.qos.logback">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
     <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service은 이 내부 log4j API를 지원하지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>AEM as a Cloud Service는 이 내부 log4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
     <td>8/31/2025</td>
   </tr>
@@ -149,7 +149,7 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service은 이 내부 slf4j API를 지원하지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>AEM as a Cloud Service는 이 내부 slf4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/11/2022</td>
     <td>8/31/2025</td>
   </tr> 
@@ -235,7 +235,7 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 ## 제거된 API {#removed-apis}
 
-이 섹션에는 더 이상 사용되지 않고 제거된 API가 나열됩니다. 일부 API는 아래 API 제거 지침 섹션을 참조합니다.
+이 섹션에는 더 이상 사용되지 않거나 삭제된 API가 나열되어 있습니다. 일부 API는 아래 API 제거 안내 섹션을 참조합니다.
 
 <details>
   <summary>제거된 API의 목록을 보려면 이를 펼치십시오.</summary>
@@ -316,9 +316,9 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 </table>
 </details>
 
-## API 제거 지침 {#api-removal-guidance}
+## API 제거 안내 {#api-removal-guidance}
 
-이 섹션은 위의 표에 있는 다양한 API에 대한 API 제거 지침을 반영합니다.
+이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
 ### `org.apache.sling.commons.auth*` 제거 {#org.apache.sling.commons.auth}
 
@@ -326,12 +326,12 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 액션 목록:
 
-* ACS AEM Commons를 최신 버전(최소 6.11.0)으로 업데이트
-* `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 응답으로 마이그레이션합니다. `org.apache.sling.auth.spi`
+* ACS AEM Commons를 최신 버전(6.11.0 이상)으로 업데이트
+* `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 응답으로 마이그레이션합니다. `org.apache.sling.auth.spi`.
 
 ### `org.apache.felix.webconsole*` 제거 {#org.apache.felix.webconsole}
 
-`org.apache.felix.webconsole*`의 패키지를 사용하는 경우 프로젝트에서 이 코드를 제거합니다. Cloud Service에서 웹 콘솔에 액세스할 수 없습니다.
+`org.apache.felix.webconsole*`에서 패키지를 사용하는 경우, 프로젝트에서 이 코드를 제거합니다. Cloud Service에서는 웹 콘솔에 접근할 수 없습니다.
 
 액션 목록:
 
@@ -365,13 +365,13 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 ### `Apache Commons Lang 2 and Apache Commons Collections 3` 제거 {#apache.commons}
 
-유지 관리되지 않는 Apache Commons 라이브러리의 사용을 제거하고 지원 버전의 사용으로 대체합니다. 대부분의 경우 패키지 가져오기를 조정해야 하며 일부 경우에는 클래스 또는 메서드의 이름이 바뀌었을 뿐입니다. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
+유지 관리되지 않는 Apache Commons 라이브러리 사용을 제거하고 지원 버전을 사용하도록 대체합니다. 대부분의 경우 패키지 가져오기를 조정하기만 하면 되지만 일부 경우에는 클래스나 메서드의 이름이 변경된 경우도 있습니다. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
 
 액션 목록:
 
-* ACS AEM Commons를 최신 버전(최소 6.11.0)으로 업데이트
-* `org.apache.commons.lang*`의 가져오기를 `org.apache.commons.lang3`(으)로 바꾸기
-* `org.apache.commons.collections*`의 가져오기를 `org.apache.commons.collecitons4`(으)로 바꾸기
+* ACS AEM Commons를 최신 버전(6.11.0 이상)으로 업데이트
+* `org.apache.commons.lang*` 가져오기 `org.apache.commons.lang3`로 바꾸기
+* `org.apache.commons.collections*` 가져오기 `org.apache.commons.collecitons4`로 바꾸기
 
 ### `org.apache.abdera*` 및 `org.apache.sling.atom.taglib` 사용 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
@@ -391,33 +391,33 @@ Adobe은 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 ### `ch.qos.logback*` 사용 {#ch.qos.logback}
 
-Cloud Service에서는 로그백이 지원되지 않습니다. 모든 사용을 제거하십시오. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
+Cloud Service에서는 로그백이 지원되지 않으므로 모든 사용을 제거합니다. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
 
 액션 목록:
 
-* ACS AEM Commons를 최신 버전(최소 6.11.0)으로 업데이트
+* ACS AEM Commons를 최신 버전(6.11.0 이상)으로 업데이트
 * `ch.qos.logback`에서 패키지를 사용하여 코드 제거
 
 ### `org.slf4j.event and org.slf4j.spi` 사용 {#org.slf4j}
 
-`org.slf4j.event` 또는 `org.slf4j.spi`을(를) 사용하는 경우 해당 사용을 모두 제거하십시오. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
+`org.slf4j.event` 또는 `org.slf4j.spi`를 사용하는 경우 모든 사용을 제거합니다. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
 
 액션 목록:
 
-* ACS AEM Commons를 최신 버전(최소 6.11.0)으로 업데이트
-* `org.slf4j.event` 및 `org.slf4j.spi`을(를) 사용하여 코드 제거
+* ACS AEM Commons를 최신 버전(6.11.0 이상)으로 업데이트
+* `org.slf4j.event` 및 `org.slf4j.spi`를 사용하여 코드 제거
 
 ### `org.apache.log4j` 사용 {#org.apache.log4j}
 
-`org.apache.log4j`을(를) 사용하는 경우 SLF4J(`org.slf4j`) 또는 Log4J 2.x(`org.apache.logging.log4j`)(으)로 전환합니다.
+`org.apache.log4j`를 사용하는 경우 SLF4J (`org.slf4j`)또는 Log4J 2.x(`org.apache.logging.log4j`)로 전환합니다.
 
 액션 목록:
 
-* `org.apache.log4j`의 사용을 `org.slf4j` 사용(권장) 또는 `org.apache.logging.log4j`(으)로 바꾸기
+* `org.apache.log4j` 사용을 `org.slf4j`(추천) 또는 `org.apache.logging.log4j` 사용으로 바꾸기
 
 ## OSGI 구성 {#osgi-configuration}
 
-아래 섹션은 AEM as a Cloud Service OSGi 구성 표면을 반영하며 고객이 구성할 수 있는 내용을 설명합니다.
+해당 섹션은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
 
 1. 고객 코드는 나열된 OSGi 구성을 구성해서는 안 됩니다.
 1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
@@ -428,21 +428,21 @@ Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사
 
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
-### 더 이상 사용되지 않는 OSGi 속성(곧 수정될 예정) {#deprecated-unmodifiable-osgi-properties}
+### 더 이상 사용되지 않는 OSGi 속성(곧 수정 불가능) {#deprecated-unmodifiable-osgi-properties}
 
-다음 OSGi 구성 요소 PID에 대한 속성은 더 이상 사용되지 않으며 시행일까지 사용이 중단되어야 합니다.
+다음 OSGi 구성 요소 PID의 속성은 사용이 중단되며 시행일까지 사용이 중단되어야 합니다.
 
 | **OSGI 구성 요소 ID** | **수정할 수 없는 속성** | **사용 중단** | **적용** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 2025년 8월 31일(구성이 6월에 무시됨) |
+| **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 8/31/25(6월에는 구성이 무시됨) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25(6월에는 구성이 무시됨) |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 모두 | 2024 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 모두 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 모두 | 6/3/25 | 8/31/25 |
 
 ### 수정할 수 없는 OSGi 속성 {#unmodifiable-osgi-properties}
 
-아래 설명된 대로 다음 OSGi 구성 요소 PID에 대한 속성을 수정할 수 없습니다.
+다음 OSGi 구성 요소 PID의 속성은 아래에 설명된 대로 수정할 수 없습니다.
 
 | **OSGI 구성 요소 ID** | **수정할 수 없는 속성** |
 |---|---|
@@ -460,14 +460,14 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | 모두 |
 
 
-### 향후 강제 적용된 OSGi 속성 제한 {#future-restrictions-osgi-properties}
+### 향후 OSGi 속성 제한 적용 {#future-restrictions-osgi-properties}
 
-향후 Adobe에서는 다음 OSGi 속성 제한을 적용하여 사용을 중단해야 합니다.
+앞으로 Adobe는 다음과 같은 OSGi 속성 제한을 시행하여 사용을 중단합니다.
 
-| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한(적용되는 경우) |
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항(해당되는 경우) |
 |---|---|---|---|---|
 | `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 문자열 |   |
-|   | `smtp.port` | 예 | 정수 | 465, 587 또는 25 중 하나 |
+|   | `smtp.port` | 예 | 정수 | “465”, “587” 또는 “25” |
 |   | `smtp.user` |   | 문자열 |   |
 |   | `smtp.password` |   | 문자열 |   |
 |   | `from.address` |   | 문자열 |   |
@@ -476,8 +476,8 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 |   | `smtp.requiretls` |   | 부울 |   |
 |   | `debug.email` |   | 부울 |   |
 |   | `oauth.flow` |   | 부울 |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 예 | 문자열 | &quot;INFO&quot;, &quot;DEBUG&quot; 또는 &quot;TRACE&quot; |
-|   | `org.apache.sling.commons.log.names` |   | 문자열 배열 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 예 | 문자열 | “INFO”, “DEBUG” 또는 “TRACE” |
+|   | `org.apache.sling.commons.log.names` |   | 문자열의 배열 |   |
 |   | `org.apache.sling.commons.log.additiv` |   | 부울 |   |
 | `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 아니요 | 문자열[] |   |
 |   | `externalizer.encodedpath` | 아니요 | 부울 |   |
@@ -488,14 +488,14 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 
 이러한 OSGi 속성의 값은 아래에 설명된 규칙으로 제한됩니다.
 
-| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한(적용되는 경우) |
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항(해당되는 경우) |
 |---|---|---|---|---|
 | `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | 예 | 정수 | 2-100 |
-|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 더블 | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 이중 | -- |
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 정수 | -- |
 |   | `org.apache.felix.eventadmin.RequireTopic` |   | 부울 | -- |
-|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 예 | 문자열 배열 | `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`을(를) 적어도 모두 포함해야 합니다. |
-|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 문자열 배열 | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 예 | 문자열의 배열 | 최소한 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함 |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 문자열의 배열 | -- |
 | `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 정수 |   |
 |   | `org.apache.felix.http.session.timeout` |   | 정수 |   |
 |   | `org.apache.felix.http.jetty.threadpool.max` |   | 정수 |   |
@@ -518,16 +518,16 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 |   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | 정수 |   |
 |   | `org.apache.felix.jetty.gzip.syncFlush` |   | 부울 |   |
 |   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | 문자열 |   |
-|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 문자열 배열 |   |
-|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 문자열 배열 |   |
-|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 문자열 배열 |   |
-|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 문자열 배열 |   |
-|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 문자열 배열 |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 문자열의 배열 |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 문자열의 배열 |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 문자열의 배열 |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 문자열의 배열 |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 문자열의 배열 |   |
 |   | `org.apache.felix.http.session.invalidate` |   | 부울 |   |
-|   | `org.apache.felix.http.session.container.attribute` |   | 문자열 배열 |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | 문자열의 배열 |   |
 |   | `org.apache.felix.http.session.uniqueid` |   | 부울 |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 예 | 정수 | >= 2048 |
-|   | `org.apache.sling.scripting.cache.additional_extensions` | 예 | 문자열 배열 | 은(는) &quot;js&quot;를 포함해야 합니다 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | 예 | 문자열의 배열 | “js”를 포함해야 함 |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 아니요 | 문자열 |   |
 |   | `request.log.outputtype` | 아니요 | 문자열 |   |
 |   | `request.log.entry.format` | 아니요 | 문자열 |   |
@@ -541,9 +541,9 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 |   | `servletresolver.paths` | 아니요 | 문자열[] |   |
 |   | `servletresolver.defaultExtensions` | 아니요 | 문자열 |   |
 |   | `servletresolver.mountProviders` | 아니요 | 부울 |   |
-|   | `servletresolver.scriptUser` | 아니요 | 문자열 | 더 이상 사용되지 않음, 사용 안 함 |
+|   | `servletresolver.scriptUser` | 아니요 | 문자열 | 사용 중단, 사용 금지 |
 
 ## Java 버전 21 런타임 업데이트 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service이 Java 21 런타임으로 전환되었습니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다.
+Adobe Experience Manager as a Cloud Service가 Java 21 런타임으로 전환되었습니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다.
 

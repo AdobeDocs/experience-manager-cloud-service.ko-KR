@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1282'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 
 
 Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* 완벽한 Lighthouse 점수로 빠른 사이트를 만들고 운영 원격 분석을 통해 사이트 성능을 지속적으로 모니터링합니다.
+* 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 운영 원격 측정을 통해 사이트 성과를 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 범용 편집기가 포함된 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
 
@@ -102,7 +102,7 @@ Edge Delivery Services는 Adobe Experience Manager의 일부입니다. 따라서
 
 AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성하는 방법을 알아보려면 aem.live 설명서에 나와 있는 [시작하기 - 범용 편집기 개발자 튜토리얼](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
 
-또한 [Adobe Target](https://www.aem.live/developer/target-integration), [운영 원격 분석](https://www.aem.live/developer/rum)과 함께 Edge Delivery Services을 사용하여 사이트의 사용 및 성능을 진단하고 [Launch.](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)을(를) 실행할 수 있습니다.
+[Adobe Target](https://www.aem.live/developer/target-integration), [운영 원격 측정](https://www.aem.live/developer/rum)과 함께 Edge Delivery Services를 사용하여 사이트의 사용량과 성능을 진단하고 [시작](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/home)할 수 있습니다.
 
 ## Adobe에서 도움 받기 {#getting-help}
 
