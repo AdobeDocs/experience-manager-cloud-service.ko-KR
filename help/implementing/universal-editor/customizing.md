@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 6%
 
 ---
 
@@ -47,6 +47,18 @@ ht-degree: 8%
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## 중복 단추 비활성화 {#duplicate-button}
+
+특정 작성 워크플로우는 콘텐츠 작성자의 구성 요소 복제 기능을 제한해야 할 수 있습니다. 다음 메타데이터를 추가하여 [중복 아이콘](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)을 비활성화할 수 있습니다.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## 엔드포인트 변경 {#custom-endpoint}
+
+Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않고 호스팅된 자체 버전을 사용하려면 메타 태그에서 이를 설정할 수 있습니다. 자세한 내용은 [AEM에서 유니버설 편집기 시작하기](/help/implementing/universal-editor/getting-started.md##configuration-settings) 문서를 참조하십시오.
 
 ## 필터링 구성 요소 {#filtering-components}
 
