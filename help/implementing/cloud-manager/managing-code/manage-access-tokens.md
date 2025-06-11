@@ -38,7 +38,7 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 액세스 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 
