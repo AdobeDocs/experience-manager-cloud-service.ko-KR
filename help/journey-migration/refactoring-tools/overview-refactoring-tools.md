@@ -1,13 +1,13 @@
 ---
-title: 리팩터링 도구 개요
+title: 리팩토링 도구 개요
 description: AEM 리팩터링 도구 시작 방법 알아보기
-source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
+exl-id: b8137e01-87e8-4298-b0cc-b376330cb730
+source-git-commit: 879f4f3476ee369554188d6e3b7973d32454ed4b
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 <!-- Alexandru: temporarily commeting this out, since it breaks validation
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 >id="aemcloud_rs_overview"
 >title="Overview"
 >abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ko" text="Guidelines and Best Practices"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
 -->
 
-# 리팩터링 도구 개요 {#refactoring-tools-overview}
+# 리팩토링 도구 개요 {#refactoring-tools-overview}
 
 **리팩터링 도구** 기존 AEM 프로젝트를 **AEM as a Cloud Service(AEMaaCS)**&#x200B;와(과) 호환되도록 업데이트하는 프로세스를 간소화합니다. 이러한 도구는 일반적인 리팩터링 및 현대화 작업을 자동화하고 원활한 경험을 위해 **CAM(Cloud Acceleration Manager)**&#x200B;과(와) 통합됩니다.
 

@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="샘플 CodePen 앱 실행"
->abstract="이 안내서는 체험판 환경의 JSON 데이터를 기본 JavaScript 웹 앱으로 쿼리하는 방법을 설명합니다. 이전 학습 모듈에서 모델링하여 만든 콘텐츠 조각을 사용합니다. 필요한 경우 이 모듈로 넘어가기 전에 해당 안내서를 먼저 살펴보시기 바랍니다."
+>abstract="이 안내서는 체험판 환경의 JSON 데이터를 기본 JavaScript 웹 앱으로 쿼리하는 방법을 설명합니다. 이전 학습 모듈에서 모델링하여 만든 콘텐츠 조각을 사용합니다. 필요한 경우 이 모듈로 넘어가기 전에 해당 안내서를 먼저 살펴보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
