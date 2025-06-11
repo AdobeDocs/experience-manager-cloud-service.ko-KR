@@ -2,10 +2,10 @@
 title: Content Hub 개요
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: ecbc1783e6327b7d187eba01b698948111c3a2d3
+source-git-commit: cc6c227a566c4d4fd8c9a20d1bb39020974f494f
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 97%
 
 ---
 
@@ -54,6 +54,10 @@ ht-degree: 100%
 Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공되며, 이를 통해 조직과 비즈니스 파트너는 브랜드 콘텐츠를 더 간편하게 이용할 수 있습니다. 대규모 활성화를 위한 자산을 배포하고 마케팅 민첩성을 개선하기 위한 온브랜드 콘텐츠 변형을 만드는 데 중점을 둡니다.
 
 ## Content Hub 데모 {#content-hub-demo}
+
+>[!IMPORTANT]
+>
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) 및 Assets as a Cloud Service에는 250명의 Content Hub 사용자가 포함되어 있습니다. [Assets Prime](/help/assets/assets-prime.md)에 50명의 Content Hub 사용자가 포함되어 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
