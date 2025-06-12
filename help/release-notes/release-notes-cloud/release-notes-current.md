@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 88%
+source-wordcount: '2077'
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 88%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설
 
 **AJO B2C와의 Dynamic Media 네이티브 통합**
 
-[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
+[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463789/?learn=on&enablevpops=&autoplay=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi 속성:
 
 ### 이전 버전 및 감사 로그의 기본 삭제 {#mt-defaults}
 
-현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 *삭제 유지 관리 작업*&#x200B;이 비활성화되어 있으므로 해당 OSGi 속성을 통해 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
+현재 콘텐츠 버전 및 감사 로그의 관련 *유지 관리 작업 제거*&#x200B;가 기본적으로 비활성화되어 있으므로 명시적으로 구성하지 않으면 데이터가 제거되지 않습니다.
 
 그러나 저장소 성능을 최적화하기 위해 **2025년 6월 말**&#x200B;부터 다음 지침에 따라 삭제가 기본적으로 활성화됩니다.
 
