@@ -3,13 +3,13 @@ title: ' [!DNL Adobe Sensei] 스마트 서비스로 자산 자동 태그 지정'
 description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스로 자산에 태그를 지정합니다.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # AEM Assets용 스마트 태그 {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## AI가 생성한 스마트 태그를 사용하여 콘텐츠 검색 향상 {#ai-smart-tags}
+## AI 생성 메타데이터를 통해 콘텐츠 검색 향상 {#ai-smart-tags}
 
 AI는 수동 입력에 의존하는 대신 디지털 에셋에 설명 태그를 자동으로 할당합니다. 이러한 AI 생성 태그는 메타데이터 품질을 향상시켜 에셋을 보다 쉽게 검색, 분류 및 추천할 수 있도록 합니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다. 예를 들어, 자산이 이미지인 경우 AI는 객체, 장면, 감정 또는 브랜드 로고까지 식별하고 &quot;일몰&quot;, &quot;해변&quot;, &quot;휴가&quot; 또는 &quot;스마일&quot;과 같은 관련 태그를 생성할 수 있습니다. AI가 생성한 콘텐츠는 의미론적 검색과 어휘 검색 기술을 모두 활용해 자산 검색을 강화할 수 있다. 더 보기 [Assets 검색](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![향상된 스마트 태그](assets/enhanced-smart-tags1.png)
 
-### AI가 생성한 스마트 태그 사용 {#using-ai-generated-smart-tags}
+### AI가 생성한 메타데이터를 활성화하는 방법 {#enable-ai-generated-metadata}
+
+AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
+
+* 필요한 최소 AEM 릴리스 버전은 `20626`입니다.
+
+* GenAI 라이더 계약에 서명해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
+
+  >[!IMPORTANT]
+  >
+  > AI가 생성한 에셋의 제목은 에셋 제목을 정의하지 않은 경우에만 에셋 카드에 표시됩니다. 사용자가 지정한 자산 제목을 덮어쓰지 않습니다.
+
+### AI가 생성한 메타데이터 사용 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ AI는 수동 입력에 의존하는 대신 디지털 에셋에 설명 태그를 
 
 1. 새로 업로드한 자산이 처리될 때까지 기다립니다. 완료되면 자산 속성으로 이동합니다.
 
-1. **[!UICONTROL AI 생성]** 탭으로 이동합니다. [!DNL Experience Manager] 버전이 호환되지 않거나 업데이트되지 않으면 이 탭이 표시되지 않습니다. 필요한 최소 AEM 릴리스 버전은 `20626`입니다. 다음 필드가 있습니다.
+1. **[!UICONTROL AI 생성]** 탭으로 이동합니다. [!DNL Experience Manager] 버전이 호환되지 않거나 업데이트되지 않으면 이 탭이 표시되지 않습니다. 다음 필드가 있습니다.
 
    * **[!UICONTROL 생성된 제목]:** 제목은 업로드된 에셋의 핵심 아이디어를 캡처하는 명확하고 간결한 헤드라인을 제공하므로 한 눈에 쉽게 이해할 수 있습니다. 에셋을 추가할 때 `dc:title`에 제목을 입력하면 에셋 찾아보기 보기에 표시됩니다. 비워 두면 AI가 생성한 제목이 자동으로 할당됩니다.
    * **[!UICONTROL 생성된 설명]:** 설명은 자산의 내용에 대한 간단하면서도 유용한 요약을 제공하여 사용자 및 검색 모듈이 관련성을 빠르게 파악할 수 있도록 합니다.
