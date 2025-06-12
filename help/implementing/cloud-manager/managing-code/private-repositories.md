@@ -4,7 +4,7 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 34%
@@ -23,7 +23,7 @@ Cloud Manager을 설정하여 개인 GitHub Cloud(`github.com`에 호스팅된 �
 >* GitLab(GitLab의 `gitlab.com` 및 자체 호스팅 버전 모두) 저장소
 >* Bitbucket 저장소(`bitbucket.org` 및 Bitbucket 서버, 자체 호스팅 버전의 BitBucket)
 >
->[Cloud Manager에서 외부 저장소 추가 - 제한된 베타](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
+>[Cloud Manager의 외부 저장소 추가 - 비공개 베타](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -74,7 +74,7 @@ Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다�
    | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨) |
    | 설명(선택 사항) | 저장소에 대한 자세한 설명. |
 
-1. **저장**&#x200B;을 선택합니다.
+1. **저장**을 선택합니다.
 이제 [개인 저장소의 소유권을 확인](#validate-ownership)할 수 있습니다.
 
 >[!TIP]

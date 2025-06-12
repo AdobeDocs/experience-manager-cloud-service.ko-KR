@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '5392'
+source-wordcount: '5391'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
+RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -179,7 +179,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * [조직 ID 보기](https://experienceleague.adobe.com/ko/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
+   * [조직 ID 보기](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -195,7 +195,7 @@ retrieving programs of your organization ...
 
    이 단계를 수행하려면 Cloud Manager **Developer - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당 - 개발자 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)을 참조하십시오.
 
-자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
+자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
 </details>
 
 ## 새 기능을 개발하는 동안 RDE 사용 {#using-rde-while-developing-a-new-feature}
@@ -524,14 +524,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
+자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
 
 
 ## 외부 Git 공급자의 RDE에 배포 {#deploy-to-rde}
 
 >[!NOTE]
 >
->이 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다. 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)(으)로 전자 메일을 보내세요. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+>이 기능은 Beta 프로그램을 통해 사용할 수 있습니다. 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)(으)로 전자 메일을 보내세요. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 Cloud Manager에서는 [BYOG(Bring Your Own Git) 구성](/help/implementing/cloud-manager/managing-code/external-repositories.md)을 사용할 때 외부 Git 공급자에서 직접 RDE에 코드를 배포할 수 있습니다.
 
@@ -1151,7 +1151,7 @@ Forms 개발자는 AEM Forms Cloud Service 빠른 개발 환경을 사용하여 
 
 ## RDE 자습서
 
-AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
+AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
 
 ## 문제 해결 {#troubleshooting}
 

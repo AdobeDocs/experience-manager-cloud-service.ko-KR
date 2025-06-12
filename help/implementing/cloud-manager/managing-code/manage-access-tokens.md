@@ -3,9 +3,9 @@ title: Cloud Manager에서 외부 저장소의 액세스 토큰 관리
 description: AEM Cloud Manager에서 나만의 Git 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="얼리 어답터" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 
 >[!NOTE]
 >
->이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 얼리 어답터로 등록하려면 [자신의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
+>이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 개인 Beta에 등록하려면 [나만의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
 
 ## 액세스 토큰 보기 {#view-access-tokens}
 
@@ -38,7 +38,7 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 액세스 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 

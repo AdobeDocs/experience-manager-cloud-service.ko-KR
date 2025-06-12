@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager의 AI 지원(제한된 Beta)
+title: Adobe Experience Manager의 AI Assistant(비공개 베타)
 description: Adobe Experience Manager의 AI Assistant를 사용하여 답을 찾고, 문제를 해결하고, 사이트, Assets, Forms 및 Cloud Manager을 탐색할 수 있습니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Manager의 AI Assistant 정보 {#aem-home}
 
-AEM(Adobe Experience Manager)의 AI Assistant는 Adobe Experience Manager 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. 제품 지식에 액세스하고, 문제를 해결하며, Experience League에서 사용할 수 있는 정보를 탐색하는 데 도움이 됩니다. 제한된 Beta 프로그램 동안 AI 도우미는 사이트, Assets, Forms 및 Cloud Manager 등 Adobe Experience Manager as a Cloud Service을 지원합니다.
+AEM(Adobe Experience Manager)의 AI Assistant는 Adobe Experience Manager 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. 제품 지식에 액세스하고, 문제를 해결하며, Experience League에서 사용할 수 있는 정보를 탐색하는 데 도움이 됩니다. 비공개 베타 프로그램 진행 시 AI 비서는 Adobe Experience Manager as a Cloud Service(사이트, Assets, Forms, Cloud Manager 등)을 지원합니다.
 
 >[!IMPORTANT]
->Adobe에서 사용자가 Beta 프로그램을 테스트하고 참여할 수 있도록 AI Assistant 기능을 활성화할 수 있도록 사용자 계약을 검토하고 제출했는지 확인합니다.
+>Adobe에서 AI Assistant 기능을 활성화하여 개인 베타 프로그램을 테스트하고 참여할 수 있도록 사용자 계약을 검토하고 제출했는지 확인합니다.
 >
 >질문이 있는 경우 Adobe ID과 연결된 메일 주소에서 [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)(으)로 메일을 보내십시오.
 
@@ -47,7 +47,7 @@ AEM의 AI Assistant는 개인 정보 보호, 보안 및 거버넌스에 중점�
 
 AI Assistant의 현재 범위는 Adobe Experience Manager as a Cloud Service에 대한 제품 지식 질문 처리에 중점을 둡니다. 이 범위에는 Sites, Assets, Forms 및 Cloud Manager과 같은 주요 영역에 대한 포괄적인 지원이 포함됩니다.
 
-## AEM Forms용 AI Assistant(Forms Experience Builder) {#ai-forms-builder}
+## AEM Forms용 AI 어시스턴트 (Forms Experience Builder) {#ai-forms-builder}
 
 AEM은 제품 지식을 위한 일반적인 AI Assistant 외에도 AEM Forms용 특수 **[AI Assistant(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**&#x200B;를 제공합니다. 이 향상된 도우미는 자연어 프롬프트를 통해 양식을 만들고 구성하고 양식에 대한 질문에 답변하는 데 도움이 될 수 있습니다.
 
@@ -74,7 +74,7 @@ AEM Forms용 AI Assistant는 다음 위치에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
-> AEM Forms용 AI Assistant(Forms Experience Builder)는 얼리어답터 프로그램에 따라 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 전자 메일을 보내십시오.
+> AEM Forms용 AI Assistant(Forms Experience Builder)는 개인 베타 프로그램에 따라 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 전자 메일을 보내십시오.
 
 자세한 예제와 모범 사례를 포함하여 AEM Forms용 AI Assistant 사용에 대한 자세한 내용은 [AEM Forms용 AI Assistant 설명서](/help/edge/docs/forms/forms-ai-assistant.md)를 참조하십시오.
 

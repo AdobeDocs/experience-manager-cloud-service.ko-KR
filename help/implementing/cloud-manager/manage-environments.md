@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 42%
@@ -30,7 +30,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->**전문 테스트 환경** 기능은 현재 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 얼리 어답터로 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
+>**전문 테스트 환경** 기능은 현재 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 개인 Beta에 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
 
 개별 환경의 기능은 환경의 [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 활성화된 솔루션에 따라 다릅니다.
 
@@ -299,7 +299,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 **개발자** 역할을 가진 사용자만 **Developer Console**&#x200B;에 액세스할 수 있습니다. 단, 샌드박스 프로그램의 경우 샌드박스 프로그램에 대한 액세스 권한이 있는 모든 사용자가 **Developer Console**&#x200B;에 액세스할 수 있습니다.
 
-자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
+자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
 
 이 옵션은 개별 환경의 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭할 때 **개요** 창의 **환경** 탭에서도 사용할 수 있습니다.
 
