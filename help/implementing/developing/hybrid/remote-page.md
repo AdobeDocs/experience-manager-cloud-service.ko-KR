@@ -38,6 +38,7 @@ AEM의 편집 가능한 외부 SPA에 대한 자세한 내용은 [AEM에서 외�
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+
      ![진입점 속성 예](assets/asset-manifest-entrypoints.png)
 * 응용 프로그램은 `body` 요소 아래의 `<div id="root"></div>`에서 초기화할 수 있어야 합니다. 앱이 인스턴스화되기 위해 다른 마크업이 필요한 경우 `sling:resourceSuperType="spa-project-core/components/remotepage`이(가) 있는 프록시 구성 요소의 HTL 스크립트에서 이를 적절하게 조정해야 합니다.
 
