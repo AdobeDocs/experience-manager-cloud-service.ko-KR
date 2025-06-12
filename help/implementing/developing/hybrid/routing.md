@@ -4,12 +4,14 @@ description: AEM의 단일 페이지 애플리케이션의 경우 앱이 라우�
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
+
 
 # SPA 모델 라우팅{#spa-model-routing}
 
@@ -27,7 +29,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 
 ## 모델 라우터 {#modelrouter}
 
-`ModelRouter` - 활성화된 경우 - 모델의 지정된 조각을 미리 가져오고 액세스할 수 있도록 HTML5 기록 API 함수 `pushState` 및 `replaceState`을(를) 캡슐화합니다. 그런 다음 등록된 프런트엔드 구성 요소에 모델이 수정되었음을 알립니다.
+`ModelRouter` - 활성화된 경우 - HTML5 기록 API 함수 `pushState` 및 `replaceState`을(를) 캡슐화하여 모델의 지정된 조각을 미리 가져오고 액세스할 수 있도록 합니다. 그런 다음 등록된 프런트엔드 구성 요소에 모델이 수정되었음을 알립니다.
 
 ## 수동 및 자동 모델 라우팅 {#manual-vs-automatic-model-routing}
 
@@ -51,7 +53,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-`PageModelManager`이(가) 경로를 선택하면 해당 페이지 모델을 자동으로 로드하기 때문에 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `/content/mysite/mypage"`)에 해당해야 합니다. 그러나 필요한 경우 SPA은 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
+경로를 선택하면 `PageModelManager`이(가) 자동으로 해당 페이지 모델을 로드하려고 하므로 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `/content/mysite/mypage"`)에 해당해야 합니다. 그러나 필요한 경우 SPA는 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

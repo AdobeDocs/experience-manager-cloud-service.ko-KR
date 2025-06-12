@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 61%
@@ -20,8 +20,6 @@ ht-degree: 61%
 >[!TIP]
 >
 >AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [사이트 콘솔을 사용](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 및 [페이지 편집기](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)를 사용하는 경우.
-
-{{edge-delivery-authoring}}
 
 ## 터치 지원 UI {#a-touch-enabled-ui}
 
@@ -78,7 +76,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | 자산 | 자산 콘솔을 사용하여 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산](/help/assets/overview.md)을 가져오고 관리할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 또한 자산 콘솔에서는 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 만들고 관리할 수도 있습니다. |
 | 개인화 | [이 콘솔은 타겟팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다](/help/sites-cloud/authoring/personalization/overview.md). |
 | 콘텐츠 조각 | [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 페이지 작성과 Headless 게재 모두에 이상적인, 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 콘텐츠를 준비할 수 있습니다. |
-| 변형 생성 | [변형 생성](/help/generative-ai/generate-variations.md)은(는) 생성 AI(인공 지능)를 사용하여 프롬프트에 따라 콘텐츠 변형을 만듭니다. 이러한 프롬프트는 Adobe이 제공하거나 사용자가 만들고 관리합니다. |
+| 변형 생성 | [변형 생성](/help/generative-ai/generate-variations.md)은(는) 생성 AI(인공 지능)를 사용하여 프롬프트에 따라 콘텐츠 변형을 만듭니다. 이러한 프롬프트는 Adobe에서 제공되거나 사용자가 만들고 관리합니다. |
 
 ## 도구 패널 {#tools-panel}
 
@@ -130,7 +128,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   ![도움말 아이콘](assets/basic-handling-help.png)
 
-* **콘솔** - 시스템을 처음 탐색하면 [일련의 슬라이드가 AEM 탐색을 도입합니다](#product-navigation).
+* **콘솔** - 시스템을 처음 탐색하면 [일련의 슬라이드가 AEM 탐색을 소개합니다](#product-navigation).
 
   ![튜토리얼](assets/basic-handling-console-tutorial.png)
 

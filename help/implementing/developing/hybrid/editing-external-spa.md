@@ -1,39 +1,41 @@
 ---
 title: AEM에서 외부 SPA 편집
-description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
+description: 이 문서에서는 독립 실행형 SPA를 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
 
 ---
 
+
 # AEM에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
-외부 SPA과 AEM 간에 [어떤 수준의 통합을 원할지](/help/implementing/developing/headful-headless.md)을 결정할 때 AEM 내에서 SPA을 자주 편집하고 볼 수 있어야 한다고 생각하십시오.
+외부 SPA와 AEM 간에 [어떤 수준의 통합을 원할지](/help/implementing/developing/headful-headless.md)를 결정할 때는 AEM 내에서 SPA를 자주 편집하고 볼 수 있어야 합니다.
 
 {{ue-over-spa}}
 
 ## 개요 {#overview}
 
-이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
+이 문서에서는 독립 실행형 SPA를 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
 사전 요구 사항은 간단합니다.
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
-   * Forms은 외부 SPA을 포함하도록 업데이트되는 AEM 프로젝트의 기초입니다.
-   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
-* 즉시 통합할 작업 중인 외부 React SPA이 있습니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
+   * Forms은 외부 SPA를 포함하도록 업데이트된 AEM 프로젝트의 기반입니다.
+   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)의 시작점을 사용합니다.
+* 즉시 통합하려는 작동하고 외부 React SPA가 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
 
-먼저 외부 SPA을 AEM 프로젝트에 업로드해야 합니다.
+먼저 외부 SPA를 AEM 프로젝트에 업로드해야 합니다.
 
 1. `/ui.frontend` 프로젝트 폴더의 `src`을(를) React 응용 프로그램의 `src` 폴더로 바꾸십시오.
 1. `/ui.frontend/package.json` 파일에 있는 앱의 `package.json`에 추가 종속성을 포함하십시오.
@@ -43,7 +45,7 @@ ht-degree: 1%
 
 ## 원격 SPA 구성 {#configure-remote-spa}
 
-이제 외부 SPA은 AEM 프로젝트의 일부이므로 AEM 내에서 구성해야 합니다.
+이제 외부 SPA는 AEM 프로젝트의 일부이므로 AEM 내에서 구성해야 합니다.
 
 ### Adobe SPA SDK 패키지 포함 {#include-spa-sdk-packages}
 
@@ -107,7 +109,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    >[!NOTE]
    >
-   >이 예에는 구성 요소의 개별 버전인 AEM 래핑된 구성 요소와 래핑되지 않은 React 구성 요소가 있습니다. 구성 요소를 명시적으로 사용할 때는 래핑된 버전을 사용해야 합니다. 구성 요소가 페이지의 일부인 경우 SPA 편집기에서 현재 작업을 수행한 대로 기본 구성 요소를 계속 사용할 수 있습니다.
+   >이 예에는 구성 요소의 개별 버전, AEM 래핑 및 래핑 해제된 React 구성 요소가 있습니다. 구성 요소를 명시적으로 사용할 때는 래핑된 버전을 사용해야 합니다. 구성 요소가 페이지의 일부인 경우 SPA 편집기에서 현재 작업을 수행한 대로 기본 구성 요소를 계속 사용할 수 있습니다.
 
 1. 구성 요소에서 콘텐츠를 렌더링합니다.
 
@@ -138,7 +140,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
    export const AEMText = withMappable(Text, TextEditConfig);
    ```
 
-   AEM 구성이 완료되면 구성 요소가 표시되는 방식은 다음과 같습니다.
+   AEM 구성이 완료되면 구성 요소가 다음과 같이 표시됩니다.
 
    ```javascript
    const Text = ({ cqPath, richText, text }) => {
@@ -189,11 +191,11 @@ mvn clean install -PautoInstallSinglePackage
 
 이제 AEM에서 `AEMText` 구성 요소를 작성할 수 있습니다.
 
-### AEM 승인 가능 페이지 {#aem-authorable-pages}
+### AEM 작성 가능한 페이지 {#aem-authorable-pages}
 
-1. SPA에서 작성하기 위해 추가할 페이지를 식별합니다. 이 예제에서는 `/content/wknd-spa-react/us/en/home.html`을(를) 사용합니다.
+1. SPA에서 작성할 페이지를 식별합니다. 이 예제에서는 `/content/wknd-spa-react/us/en/home.html`을(를) 사용합니다.
 1. 작성 가능한 페이지 구성 요소에 대한 파일(예: `Page.js`)을 만듭니다. `@adobe/cq-react-editable-components`에 제공된 페이지 구성 요소를 사용하십시오.
-1. [AEM 승인 가능한 리프 구성 요소](#authorable-leaf-components) 섹션에서 4단계를 반복합니다. 구성 요소에서 래퍼 함수 `withMappable`을(를) 사용합니다.
+1. [AEM 작성 가능한 리프 구성 요소](#authorable-leaf-components) 섹션에서 4단계를 반복합니다. 구성 요소에서 래퍼 함수 `withMappable`을(를) 사용합니다.
 1. 이전에 수행한 대로 페이지 내의 모든 하위 구성 요소에 대한 AEM 리소스 유형에 `MapTo`을(를) 적용합니다.
 
    ```javascript
@@ -217,11 +219,11 @@ mvn clean install -PautoInstallSinglePackage
 
 ![AEM에서 페이지 편집](assets/external-spa-edit-page.png)
 
-이제 레이아웃 컨테이너 및 하위 텍스트 구성 요소를 사용하여 AEM에서 페이지를 편집할 수 있습니다.
+이제 AEM에서 레이아웃 컨테이너 및 하위 텍스트 구성 요소를 사용하여 페이지를 편집할 수 있습니다.
 
 ### 가상 리프 구성 요소 {#virtual-leaf-components}
 
-앞의 예제에서는 기존 AEM 컨텐츠가 있는 SPA에 구성 요소를 추가했습니다. 그러나 AEM에서 아직 컨텐츠가 만들어지지 않았지만 나중에 컨텐츠 작성자가 추가해야 하는 경우가 있습니다. 이 시나리오를 수용하기 위해 프론트엔드 개발자는 SPA 내의 적절한 위치에 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 AEM의 편집기에서 열리면 자리 표시자를 표시합니다. 콘텐츠 작성자가 이러한 자리 표시자 내에 콘텐츠를 추가하면 노드가 JCR 구조로 만들어지고 콘텐츠가 유지됩니다. 생성된 구성 요소를 사용하여 독립 실행형 리프 구성 요소와 동일한 작업 세트를 사용할 수 있습니다.
+이전 예에서는 기존 AEM 콘텐츠로 SPA에 구성 요소를 추가했습니다. 단, AEM에서 아직 컨텐츠가 만들어지지 않았지만 컨텐츠 작성자가 나중에 추가해야 하는 경우가 있습니다. 이 시나리오를 수용하기 위해 프론트엔드 개발자는 SPA 내의 적절한 위치에 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 AEM의 편집기에서 열면 자리 표시자를 표시합니다. 콘텐츠 작성자가 이러한 자리 표시자 내에 콘텐츠를 추가하면 노드가 JCR 구조로 만들어지고 콘텐츠가 유지됩니다. 생성된 구성 요소를 사용하여 독립 실행형 리프 구성 요소와 동일한 작업 세트를 사용할 수 있습니다.
 
 이 예제에서는 이전에 만든 `AEMText` 구성 요소를 다시 사용합니다. WKND 홈 페이지의 기존 텍스트 구성 요소 아래에 새 텍스트를 추가하려고 합니다. 컴포넌트 추가는 일반 리프 컴포넌트와 동일합니다. 그러나 새 구성 요소를 추가해야 하는 경로로 `itemPath`을(를) 업데이트할 수 있습니다.
 
@@ -241,7 +243,7 @@ mvn clean install -PautoInstallSinglePackage
 >
 >이 기능을 사용할 수 있도록 `AEMText` 구성 요소의 `resourceType`이(가) 구성에 설정되어 있는지 확인하십시오.
 
-이제 [AEM에서 텍스트 콘텐츠 편집 확인](#verify-text-edit) 섹션의 단계에 따라 변경 사항을 AEM에 배포할 수 있습니다. 현재 존재하지 않는 `text_20` 노드에 대한 자리 표시자가 표시됩니다.
+이제 [AEM에서 텍스트 컨텐츠 편집 확인](#verify-text-edit) 섹션의 단계에 따라 변경 사항을 AEM에 배포할 수 있습니다. 현재 존재하지 않는 `text_20` 노드에 대한 자리 표시자가 표시됩니다.
 
 ![aem의 text_20 노드](assets/external-spa-text20-aem.png)
 
@@ -266,7 +268,7 @@ mvn clean install -PautoInstallSinglePackage
 
 해당 컨테이너가 AEM에서 아직 만들어지지 않은 경우에도 컨테이너를 추가하는 기능이 지원됩니다. 개념 및 접근 방식은 [가상 리프 구성 요소](#virtual-leaf-components)와(과) 유사합니다.
 
-프론트엔드 개발자는 SPA 내의 적절한 위치에 컨테이너 구성 요소를 추가할 수 있으며 AEM의 편집기에서 열면 이러한 구성 요소에 자리 표시자가 표시됩니다. 그런 다음 작성자는 구성 요소와 해당 콘텐츠를 JCR 구조에 필요한 노드를 만드는 컨테이너에 추가할 수 있습니다.
+프론트엔드 개발자는 SPA 내의 적절한 위치에 컨테이너 구성 요소를 추가할 수 있으며, 이러한 구성 요소는 AEM의 편집기에서 열면 자리 표시자가 표시됩니다. 그런 다음 작성자는 구성 요소와 해당 콘텐츠를 JCR 구조에 필요한 노드를 만드는 컨테이너에 추가할 수 있습니다.
 
 예를 들어, 컨테이너가 `/root/responsivegrid`에 있고 개발자가 하위 컨테이너를 추가하려는 경우:
 
@@ -300,13 +302,13 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ## 추가 사용자 정의 {#additional-customizations}
 
-이전 예제를 따랐다면 이제 AEM 내에서 외부 SPA을 편집할 수 있습니다. 그러나 추가로 사용자 정의할 수 있는 외부 SPA의 추가 측면이 있습니다.
+이전 예제를 따랐다면 이제 AEM 내에서 외부 SPA를 편집할 수 있습니다. 그러나 추가로 사용자 정의할 수 있는 외부 SPA의 추가 측면이 있습니다.
 
 ### 루트 노드 ID {#root-node-id}
 
 기본적으로 React 응용 프로그램이 요소 ID `spa-root`의 `div` 내에서 렌더링된다고 가정할 수 있습니다. 필요한 경우 이 구문을 사용자 지정할 수 있습니다.
 
-예를 들어 요소 ID `root`의 `div` 내에서 응용 프로그램이 렌더링되는 SPA이 있다고 가정해 보겠습니다. 이 구문은 세 개의 파일에 반영되어야 합니다.
+예를 들어 요소 ID `root`의 `div` 내에서 응용 프로그램이 렌더링되는 SPA가 있다고 가정해 보겠습니다. 이 구문은 세 개의 파일에 반영되어야 합니다.
 
 1. React 응용 프로그램의 `index.js`(또는 `ReactDOM.render()`이(가) 호출된 경우)에서
 
@@ -326,52 +328,52 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
    ![body.html에 루트 요소 추가](assets/external-spa-add-root.png)
 
-### 라우팅으로 React SPA 편집 {#editing-react-spa-with-routing}
+### 라우팅을 사용하여 React SPA 편집 {#editing-react-spa-with-routing}
 
-외부 React SPA 응용 프로그램에 여러 페이지가 있는 경우 [라우팅을 사용하여 렌더링할 페이지/구성 요소를 결정할 수 있습니다](/help/implementing/developing/hybrid/routing.md). 기본 사용 사례는 경로에 대해 제공된 경로에 대해 현재 활성화된 URL을 일치시키는 것입니다. 이러한 라우팅 지원 응용 프로그램에서 편집할 수 있도록 하려면 AEM 관련 정보를 수용하도록 일치시킬 경로를 변환해야 합니다.
+외부 React SPA 응용 프로그램에 여러 페이지가 있는 경우 [라우팅을 사용하여 렌더링할 페이지/구성 요소를 결정할 수 있습니다](/help/implementing/developing/hybrid/routing.md). 기본 사용 사례는 경로에 대해 제공된 경로에 대해 현재 활성화된 URL을 일치시키는 것입니다. 이러한 라우팅 지원 응용 프로그램에서 편집을 활성화하려면 일치시킬 경로를 AEM 관련 정보를 수용하도록 변환해야 합니다.
 
 다음 예에서는 페이지가 두 개인 간단한 React 애플리케이션이 있습니다. 렌더링할 페이지는 라우터에 제공된 경로를 활성 URL과 일치시켜 결정됩니다. 예를 들어, `mydomain.com/test`을(를) 사용하는 경우 `TestPage`이(가) 렌더링됩니다.
 
-외부 SPA에서 ![라우팅](assets/external-spa-routing.png)
+![외부 SPA에서 라우팅](assets/external-spa-routing.png)
 
-이 예제 SPA에 대해 AEM 내에서 편집을 활성화하려면 다음 단계를 수행해야 합니다.
+이 예제 SPA에 대해 AEM 내에서 편집을 활성화하려면 다음 단계가 필요합니다.
 
-1. AEM에서 루트로 사용할 레벨을 식별합니다.
+1. AEM에서 루트로 사용할 수준을 식별합니다.
 
-   * 샘플의 경우 wknd-spa-react/us/en을 SPA의 루트로 간주합니다. 이 루트는 해당 경로 이전의 모든 항목이 AEM 전용 페이지/콘텐츠임을 의미합니다.
+   * 샘플의 경우 wknd-spa-react/us/en 을 SPA의 루트로 간주합니다. 이 루트는 해당 경로 이전의 모든 항목이 AEM 전용 페이지/콘텐츠임을 의미합니다.
 
 1. 필요한 수준에서 페이지를 만듭니다.
 
    * 이 예제에서 편집할 페이지는 `mydomain.com/test`입니다. `test`이(가) 앱의 루트 경로에 있습니다. AEM에서 페이지를 만들 때도 이 루트 경로를 유지해야 합니다. 따라서 이전 단계에서 정의된 루트 수준에서 페이지를 만들 수 있습니다.
    * 작성된 새 페이지는 편집할 페이지와 이름이 같아야 합니다. 이 예제에서 `mydomain.com/test`의 경우 새로 만든 페이지는 `/path/to/aem/root/test`이어야 합니다.
 
-1. SPA 라우팅 내에 도우미를 추가합니다.
+1. SPA 라우팅 내에서 도우미를 추가합니다.
 
-   * 생성된 페이지는 아직 AEM에서 필요한 콘텐츠를 렌더링할 수 없습니다. 이유는 라우터에는 `/test` 경로가 필요한데 AEM 활성 경로는 `/wknd-spa-react/us/en/test`이기 때문입니다. URL의 AEM 관련 부분을 수용하려면 SPA 측에 몇 가지 도우미를 추가해야 합니다.
+   * 만들어진 페이지는 아직 AEM에서 필요한 콘텐츠를 렌더링할 수 없습니다. 라우터에는 `/test` 경로가 필요한데 AEM 활성 경로는 `/wknd-spa-react/us/en/test`이기 때문입니다. URL의 AEM 관련 부분을 수용하려면 SPA에 도우미를 추가해야 합니다.
 
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 
    * `@adobe/cq-spa-page-model-manager`에서 제공한 `toAEMPath` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
       * 라우팅에 필요한 경로
-      * SPA이 편집되는 AEM 인스턴스의 원본 URL
+      * SPA가 편집되는 AEM 인스턴스의 원본 URL
       * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
 
    * 이러한 값은 보다 유연하게 사용할 수 있도록 환경 변수로 설정할 수 있습니다.
 
 1. AEM에서 페이지 편집을 확인합니다.
 
-   * AEM에 프로젝트를 배포하고 만든 `test` 페이지로 이동합니다. 이제 페이지 콘텐츠가 렌더링되고 AEM 구성 요소를 편집할 수 있습니다.
+   * 프로젝트를 AEM에 배포하고 만든 `test` 페이지로 이동합니다. 이제 페이지 콘텐츠가 렌더링되고 AEM 구성 요소를 편집할 수 있습니다.
 
 ## 프레임워크 제한 사항 {#framework-limitations}
 
-RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
+RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-다음 참조 자료가 AEM의 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
+다음 참조 자료는 AEM의 컨텍스트에서 SPA를 이해하는 데 도움이 될 수 있습니다.
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)

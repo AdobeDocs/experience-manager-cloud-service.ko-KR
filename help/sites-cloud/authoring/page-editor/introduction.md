@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # AEM 페이지 편집기 {#editing-page-content}
 
-[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지가 만들어지면 콘텐츠 작성을 위한 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
+[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지가 만들어지면 콘텐츠를 작성하는 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -23,6 +23,8 @@ ht-degree: 39%
 >[!NOTE]
 >
 >페이지를 편집하려면 계정에 적절한 액세스 권한과 권한이 있어야 합니다. 권한이 없는 경우 시스템 관리자에게 문의하십시오.
+
+{{traditional-aem}}
 
 ## 방향 {#orientation}
 

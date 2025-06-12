@@ -1,19 +1,20 @@
 ---
-title: 편집기 제한 사항
-description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
+title: 페이지 편집기 제한 사항
+description: 페이지 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 4%
 
 ---
 
-# 편집기 제한 사항 {#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+# 페이지 편집기 제한 사항 {#editor-limitations}
+
+[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)에서 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 
@@ -27,7 +28,7 @@ ht-degree: 6%
 
 ### 구조 페이지 {#structure-pages}
 
-Pages의 이름을 `structure`(으)로 지정할 수 없습니다. 이름이 `structure`인 페이지는 페이지 편집기에서 편집할 수 없습니다.
+페이지 이름을 `structure`로 지정할 수 없습니다. 이름이 `structure`인 페이지는 페이지 편집기에서 편집할 수 없습니다.
 
 ## CSS 제한 사항 {#css-limitations}
 
@@ -41,7 +42,7 @@ Pages의 이름을 `structure`(으)로 지정할 수 없습니다. 이름이 `st
 
 ### vh 단위 {#vh-units}
 
-iframe 높이를 AEM에서 자동으로 조정해야 하므로 `vh` 단위가 지원되지 않습니다.
+AEM에서 iframe 높이를 자동으로 조정해야 하므로 `vh` 단위가 지원되지 않습니다.
 
 ### 고정 배경 이미지 {#fixed-background-images}
 

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 80%
@@ -13,6 +13,8 @@ ht-degree: 80%
 ---
 
 # 사이트 생성 {#creating-site}
+
+{{traditional-aem}}
 
 AEM을 통해 사이트 템플릿을 사용하여 사이트를 만들고 이러한 사이트의 스타일 및 구조를 정의하는 방법에 대해 알아봅니다.
 
@@ -56,7 +58,7 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 생성**&#x200B;을 선택합니다.
+1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 만들기**&#x200B;를 선택합니다.
 
    ![템플릿으로 사이트 생성](../assets/create-site-from-template.png)
 

@@ -5,14 +5,16 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
 
 ---
 
 # 프론트엔드 개발자에게 액세스 권한 부여 {#grant-fed-access}
+
+{{traditional-aem}}
 
 AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 

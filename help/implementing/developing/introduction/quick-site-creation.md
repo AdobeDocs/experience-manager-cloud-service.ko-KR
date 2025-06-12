@@ -4,7 +4,7 @@ description: 빠른 사이트 생성 도구가 사이트 템플릿, 테마 및 �
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 빠른 사이트 생성 및 프론트엔드 맞춤화 {#quick-site-creation}
+
+{{traditional-aem}}
 
 빠른 사이트 생성 도구가 사이트 템플릿, 테마 및 프론트엔드 파이프라인을 사용하여 새로운 사이트를 빠르게 배포하고 프론트엔드 개발을 분리하는 방법을 알아봅니다.
 

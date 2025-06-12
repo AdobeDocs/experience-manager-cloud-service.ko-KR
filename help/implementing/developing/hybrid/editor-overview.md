@@ -4,12 +4,14 @@ description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
 
 ---
+
 
 # SPA 편집기 개요 {#spa-editor-overview}
 
@@ -35,7 +37,7 @@ AEM의 SPA에 대한 자세한 내용은 다음을 참조하십시오.
 
 ## 디자인 {#design}
 
-SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA가 아닌 구성 요소에서 페이지 구성 요소의 초기 본문 구성을 구별합니다.
+SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA 페이지 구성 요소의 초기 본문 컴포지션이 SPA가 아닌 방식과 다른 점을 보여줍니다.
 
 ### 페이지 모델 관리 {#page-model-management}
 

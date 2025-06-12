@@ -4,10 +4,10 @@ description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '1282'
-ht-degree: 100%
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 97%
 
 ---
 
@@ -21,6 +21,12 @@ Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 
 * 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 운영 원격 측정을 통해 사이트 성과를 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 범용 편집기가 포함된 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
+
+>[!TIP]
+>
+>**바로 실습해 보시겠습니까?**
+>
+>바로 실습해 보려면 [aem.live에서 자습서를 체크 아웃하여 30분 이내에 AEM 작성으로 Edge Delivery Services 프로젝트를 시작할 수 있습니다.](https://www.aem.live/developer/ue-tutorial)
 
 ## 비즈니스 요구 사항에 맞춘 신속한 대응 {#agile-reaction}
 
@@ -54,6 +60,22 @@ Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법�
 
 Edge Delivery Services는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가됩니다.
 
+### 범용 편집기가 포함된 AEM 작성{#wysiwyg-authoring}
+
+범용 편집기는 시각적 미리보기와 함께 콘텐츠를 실시간으로 맥락에 맞게 편집할 수 있는 WYSIWYG(What-you-see-is-what-you-get) 방식의 사용자 정의 가능한 원스톱 플랫폼입니다.
+
+* 범용 편집기가 포함된 AEM 작성을 사용하면 Headless와 Headful 모두에서 작성자의 효율성이 높아집니다.
+* 워크플로 및 거버넌스 등, AEM의 포괄적인 콘텐츠 관리 기능을 활용할 수도 있습니다.
+* 다양한 확장 지점을 활용하여 자체적인 프로세스와 통합을 지원해 보십시오.
+* GitHub에서 CSS와 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다.
+
+![범용 편집기가 포함된 AEM 작성](assets/wysiwyg-authoring.png)
+
+범용 편집기가 포함된 AEM 작성과 Edge Delivery Services 시작하기:
+
+* 범용 편집기가 포함된 AEM 작성에 대한 개요는 aem.live 설명서에 나와 있는 [Edge Delivery Services를 위한 AEM 작성 ](https://www.aem.live/docs/aem-authoring)문서를 참조하십시오.
+* 개발자 개요는 aem.live 설명서에 나와 있는 [시작하기 - 범용 편집기 개발자 튜토리얼](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
+
 ### 문서 기반 작성 {#document-based}
 
 문서 기반 작성 기능을 통해 Microsoft Word 또는 Google 문서의 콘텐츠를 직접 사용하여 해당 소스가 웹 사이트의 페이지가 되도록 할 수 있습니다. 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다.
@@ -70,22 +92,6 @@ Edge Delivery Services는 GitHub를 활용하므로 GitHub 저장소에서 바�
 * Edge Delivery를 시작하는 방법에 대한 자세한 내용은 [aem.live 설명서의 빌드 섹션](https://www.aem.live/docs/#build)을 참조하십시오.
 * Edge Delivery를 사용하여 콘텐츠를 작성 및 게시하는 방법을 이해하려면 [aem.live 설명서의 게시 섹션](https://www.aem.live/docs/authoring)을 참조하십시오.
 * 웹 사이트 프로젝트를 올바르게 시작하는 방법을 이해하려면 [aem.live 설명서의 론치 섹션](https://www.aem.live/docs/#launch)을 참조하십시오.
-
-### 범용 편집기가 포함된 AEM 작성{#wysiwyg-authoring}
-
-범용 편집기는 시각적 미리보기와 함께 콘텐츠를 실시간으로 맥락에 맞게 편집할 수 있는 WYSIWYG(What-you-see-is-what-you-get) 방식의 사용자 정의 가능한 원스톱 플랫폼입니다.
-
-* 범용 편집기가 포함된 AEM 작성을 사용하면 Headless와 Headful 모두에서 작성자의 효율성이 높아집니다.
-* 워크플로 및 거버넌스 등, AEM의 포괄적인 콘텐츠 관리 기능을 활용할 수도 있습니다.
-* 다양한 확장 지점을 활용하여 자체적인 프로세스와 통합을 지원해 보십시오.
-* GitHub에서 CSS와 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다.
-
-![범용 편집기가 포함된 AEM 작성](assets/wysiwyg-authoring.png)
-
-범용 편집기가 포함된 AEM 작성과 Edge Delivery Services 시작하기:
-
-* 범용 편집기가 포함된 AEM 작성에 대한 개요는 aem.live 설명서에 나와 있는 [Edge Delivery Services를 위한 AEM 작성 ](https://www.aem.live/docs/aem-authoring)문서를 참조하십시오.
-* 개발자 개요는 aem.live 설명서에 나와 있는 [시작하기 - 범용 편집기 개발자 튜토리얼](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
 
 ### 작성 방법 결정 {#authoring-method}
 

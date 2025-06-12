@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -16,8 +16,6 @@ ht-degree: 67%
 # 페이지 구성 {#creating-and-organizing-pages}
 
 AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다. 페이지를 구성하는 방법을 이해하면 [새 페이지를 만들고](/help/sites-cloud/authoring/sites-console/creating-pages.md) [기존 페이지를 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md)할 수 있습니다.
-
-{{edge-delivery-authoring}}
 
 ## 사이트 구성 {#organizing-your-site}
 
@@ -30,7 +28,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 웹 사이트의 구조는 콘텐츠 페이지를 담는 트리로 생각할 수 있습니다. 이 콘텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 콘텐츠가 표시될 때 표시됩니다.
 
-다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
+다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -95,7 +93,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 ### 제목 {#title}
 
-페이지를 만들 때 **Title** 페이지만 제공하면 AEM은 이 문자열에서 **Name** 페이지를 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
+페이지를 만들 때 **제목** 페이지만 제공하면 AEM은 이 문자열에서 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
 
 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 

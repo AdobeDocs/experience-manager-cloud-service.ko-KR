@@ -1,17 +1,18 @@
 ---
-title: SPA 편집기 사용 중단
+title: SPA 편집기 서비스 중단
 description: SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프로젝트에 어떤 의미가 있는지, 그리고 향후 프로젝트를 위해 어떤 옵션이 있는지 알아보십시오.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SPA 편집기 사용 중단 {#spa-editor-deprecation}
+# SPA 편집기 서비스 중단 {#spa-editor-deprecation}
 
 SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프로젝트에 어떤 의미가 있는지, 그리고 향후 프로젝트를 위해 어떤 옵션이 있는지 알아보십시오.
 
@@ -32,7 +33,7 @@ SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않
 * [AEM SPA 프로젝트 코어](https://github.com/adobe/aem-spa-project-core)
 * [AEM SPA 페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA 구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React Editable Components](https://github.com/adobe/aem-react-editable-components)
+* [AEM SPA React 편집 가능한 구성 요소](https://github.com/adobe/aem-react-editable-components)
    * [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components)
    * [AEM React 핵심 구성 요소 베이스](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [AEM React 핵심 구성 요소 SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -50,7 +51,7 @@ SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에
 
 * **[범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)**&#x200B;는 SPA 편집기를 직접 대체하는 것이 가장 좋습니다.
    * 또한 범용 편집기는 시각적 편집기이며 SPA 편집기의 모든 Adobe 경험을 통합하여 분리된 구현을 위해 특별히 디자인되었습니다.
-   * 또한 범용 편집기는 AEM 6.5[&#128279;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)용으로 릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
+   * 또한 범용 편집기는 AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)용으로 [릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
 * **[콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;는 양식 기반 편집기를 선호하는 사용자를 위한 대체 요소입니다.
    * 콘텐츠 조각 편집기는 콘텐츠가 페이지가 아닌 콘텐츠 조각으로 구조화될 때 가장 적합합니다.
 

@@ -4,7 +4,7 @@ description: 프론트엔드 파이프라인은 개발자의 독립성을 높이
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 
 
 # 프론트엔드 파이프라인으로 Sites 개발 {#developing-site-with-front-end-pipeline}
+
+{{traditional-aem}}
 
 [프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)을 통해 프론트엔드 개발자의 독립성을 높이고 개발 속도를 크게 높일 수 있습니다. 이 문서에서는 프로세스의 작동 방식을 설명하고 프로세스를 최대한 활용할 수 있는 주요 고려 사항을 소개합니다.
 

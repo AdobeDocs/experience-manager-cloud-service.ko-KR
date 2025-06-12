@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 25%
@@ -13,6 +13,8 @@ ht-degree: 25%
 ---
 
 # 프론트엔드 파이프라인 활성화 {#enable-front-end-pipeline}
+
+{{traditional-aem}}
 
 기존 사이트에 대해 프론트엔드 파이프라인을 활성화하여 사이트 테마를 사용하여 사이트를 보다 신속하게 맞춤화하는 방법에 대해 알아봅니다.
 
@@ -44,7 +46,7 @@ AEM은 기존 클라이언트 라이브러리 위에 사이트를 계층화하�
 
 ## 요구 사항 {#requirements}
 
-AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
+AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 

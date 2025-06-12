@@ -5,18 +5,25 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 85%
+source-wordcount: '1338'
+ht-degree: 83%
 
 ---
 
-# 스타일 시스템{#style-system}
+
+# 스타일 시스템 {#style-system}
 
 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 구성 요소를 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 
 따라서 각 스타일에 대해 사용자 정의 구성 요소를 개발하거나 이러한 스타일 기능을 사용하도록 구성 요소 대화 상자를 사용자 정의할 필요가 없습니다. 또한 AEM 백엔드 개발 없이 콘텐츠 작성자의 요구에 맞게 빠르고 쉽게 조정될 수 있는 재사용 가능한 구성 요소가 생성되게 됩니다.
+
+>[!NOTE]
+>
+>스타일 시스템은 페이지 편집기로 만든 페이지에만 적용됩니다.
+>
+>[범용 편집기](/help/implementing/universal-editor/introduction.md)로 만들고 [Edge Delivery Services](/help/edge/overview.md)와(과) 함께 제공되는 스타일 지정 페이지는 전적으로 GitHub 프로젝트를 통해 수행할 수 있습니다.
 
 ## 사용 사례 {#use-case}
 
@@ -59,7 +66,7 @@ ht-degree: 85%
 
 ## 사용 {#use}
 
-이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
+이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
 다음 섹션 [콘텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자](#as-a-template-author)에서는 WKND의 스타일 시스템을 사용하여 스타일 시스템의 기능을 테스트하는 방법을 설명합니다.
 

@@ -5,7 +5,8 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
+index: false
+source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 93%
@@ -59,7 +60,7 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 >[!NOTE]
 >
->Adobe에서는 사용자 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
+>Adobe에서는 사용자 지정 구성 요소 또는 [핵심 구성 요소에서 확장](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)되지 않은 구성 요소에서는 PWA 기능을 사용하지 않는 것이 좋습니다.
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -184,7 +185,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 이 설정을 사용하면 이 사이트의 일부를 오프라인에서 사용하고 방문자의 디바이스에서 로컬로 사용할 수 있습니다. 이를 통해 웹 앱의 캐시를 제어하여 네트워크 요청을 최적화하고 오프라인 경험을 지원할 수 있습니다.
 
-* **캐싱 전략 및 콘텐츠 새로 고침 주기** - 이 설정은 PWA의 캐싱 모델을 정의합니다.
+* **캐싱 전략 및 콘텐츠 새로 고침 빈도** - 이 설정은 PWA의 캐싱 모델을 정의합니다.
    * **보통** - [이 설정](https://web.dev/stale-while-revalidate/)은 대부분의 사이트에 적용되며 기본값입니다.
       * 이 설정을 사용하면 캐시에서 사용자가 처음 본 콘텐츠가 로드되고 사용자가 해당 콘텐츠를 사용하는 동안 캐시에 있는 나머지 콘텐츠의 유효성이 다시 검사됩니다.
    * **자주** - 이 설정은 경매장과 같이 업데이트가 빨리 이루어져야 하는 사이트에 적용됩니다.
@@ -192,7 +193,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **거의 사용 안 함** - 이 설정은 참조 페이지와 같이 거의 정적인 사이트에 적용됩니다.
       * 이 설정을 사용하면 앱은 먼저 캐시에서 콘텐츠를 찾고, 이를 사용할 수 없는 경우 네트워크로 돌아가 다시 검색합니다.
 * **파일 사전 캐싱** - AEM에서 호스팅된 이들 파일은 서비스 작업자가 설치할 때와 이를 사용하기 전에 로컬 브라우저 캐시에 저장됩니다. 이 옵션을 사용하면 오프라인에서도 웹 앱의 모든 기능을 사용할 수 있습니다.
-* **경로 포함** - 정의된 경로에 대한 네트워크 요청이 이전되며 구성된 **캐싱 전략 및 콘텐츠 새로 고침 주기**&#x200B;에 따라 캐시된 콘텐츠가 반환됩니다.
+* **경로 포함** - 정의된 경로에 대한 네트워크 요청이 이전되며 구성된 **캐싱 전략 및 콘텐츠 새로 고침 빈도**&#x200B;에 따라 캐시된 콘텐츠가 반환됩니다.
 * **캐시 제외** - 이 파일은 **파일 사전 캐싱** 및 **경로 포함** 아래의 설정에 관계없이 캐시되지 않습니다.
 
 >[!TIP]
@@ -222,7 +223,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 AEM 핵심 구성 요소의 이미지 구성 요소는 프론트엔드에서 가져올 최적의 렌디션을 결정합니다. 이 메커니즘에는 해당 리소스의 마지막 수정 시간에 해당하는 타임스탬프도 포함됩니다. 이 메커니즘은 PWA 사전 캐싱 구성을 더욱 복잡하게 만듭니다.
 
-사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 폭과 같은 매개변수로 구성되어 있습니다. 이들 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
+사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 폭과 같은 매개변수로 구성되어 있습니다. 이들 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
 
 신중하게 구성하지 않으면 메모리 및 네트워크 소모가 PWA 성능에 심각한 영향을 줄 수 있습니다. 또한 50개의 이미지를 사전 캐싱하고자 하고 이미지당 폭이 3개라고 가정하면 사이트를 관리하는 사용자는 페이지 속성의 PWA 사전 캐싱 섹션에서 최대 150개의 항목 목록을 관리해야 합니다.
 
