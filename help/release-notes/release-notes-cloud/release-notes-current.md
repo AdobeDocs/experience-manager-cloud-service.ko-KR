@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
+source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 90%
+source-wordcount: '2082'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 90%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설
 
 **AJO B2C와의 Dynamic Media 네이티브 통합**
 
-[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
+[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463789/?learn=on&enablevpops=&autoplay=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -216,7 +216,7 @@ OSGi 속성:
    * 지난 7년 이내의 모든 버전이 보존됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
-* 이러한 기본값은 OSGi 구성 재정의를 통해 수정할 수 있습니다.
+* 구성 파이프라인을 사용하여 배포된 YAML 구성을 통해 이러한 기본값을 수정할 수 있습니다.
 
 #### 감사 로그 {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ OSGi 속성:
    * 모든 이벤트는 기본적으로 기록됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
-* 이러한 기본값은 OSGi 구성 재정의를 통해 수정할 수 있습니다.
+* 구성 파이프라인을 사용하여 배포된 YAML 구성을 통해 이러한 기본값을 수정할 수 있습니다.
 
 자세한 내용은[유지 관리 작업 문서](/help/operations/maintenance.md#defaults)를 참조하십시오.
 
