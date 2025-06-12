@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
