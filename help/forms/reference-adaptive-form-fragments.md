@@ -34,7 +34,7 @@ ht-degree: 2%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [Cloud Manager 및 패키지 관리자를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)을 참조하십시오.
+패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [Cloud Manager 및 패키지 관리자를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)을 참조하십시오.
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 

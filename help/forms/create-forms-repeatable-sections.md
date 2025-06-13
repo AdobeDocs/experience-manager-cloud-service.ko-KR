@@ -16,7 +16,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 반복 가능 섹션은 동일한 데이터의 여러 인스턴스에 대한 정보를 수집하기 위해 중복되거나 여러 번 반복될 수 있는 양식의 일부를 나타냅니다.
@@ -31,10 +31,10 @@ ht-degree: 8%
 * 적응형 양식 구성 요소에 대한 최소 또는 최대 반복 횟수 설정
 * 규칙 편집기를 사용하여 반복 가능한 섹션에 대한 추가 또는 삭제 작업을 구성합니다.
 
-[패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소를 사용하여 적응형 양식의 섹션을 반복 가능하도록 만들 수 있습니다. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
+[패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ko), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ko), [세로 탭](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ko) 구성 요소를 사용하여 적응형 양식의 섹션을 반복 가능하도록 만들 수 있습니다. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
 
 
-이 문서의 예제는 [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 구성 요소를 기반으로 합니다. 동일한 단계를 수행하여 [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소를 반복할 수 있습니다.
+이 문서의 예제는 [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 구성 요소를 기반으로 합니다. 동일한 단계를 수행하여 [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ko), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ko), [세로 탭](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ko) 구성 요소를 반복할 수 있습니다.
 
 ## 양식에서 반복 가능한 섹션 추가 또는 삭제 {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -173,7 +173,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. 하위 양식 반복의 최대 횟수를 지정하려면 최대값을 선택하고 연관된 상자에 숫자를 입력합니다. [최대] 상자에 값을 지정하지 않으면 하위 양식 반복 횟수는 제한이 없습니다.
 1. 데이터 수량에 관계없이 하위 양식 반복 횟수를 지정하려면 초기 수를 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정된 초기 개수 값보다 적은 데이터 항목이 있는 경우 하위 양식의 빈 인스턴스가 계속 양식에 배치됩니다.
 1. 상위 하위 양식에 인스턴스 추가 단추와 반복 가능한 하위 양식의 인스턴스 삭제 단추 두 개를 추가합니다. 자세한 단계는 [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)를 참조하십시오.
-1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 [템플릿을 기반으로 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template)를 참조하십시오.
+1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 [템플릿을 기반으로 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ko#create-an-adaptive-form-based-on-an-xfa-form-template)를 참조하십시오.
 1. 9단계에서 만든 단추를 사용하여 하위 양식을 추가하거나 제거합니다.
 
 첨부된 .zip 파일에는 반복 가능한 하위 양식 샘플이 포함되어 있습니다.
@@ -182,7 +182,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## XSD(XML 스키마)의 반복 설정 사용 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html)를 참조하십시오.
+XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=ko)를 참조하십시오.
 
 다음 코드에서 `SampleType` 패널은 minOccours 및 maxOccurs 속성을 사용합니다.
 
