@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 27%
+source-wordcount: '1782'
+ht-degree: 26%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -269,7 +269,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![콘텐츠 트리 모드](assets/content-tree-mode.png)
 
-콘텐츠 트리의 항목을 선택하면 편집기는 해당 콘텐츠를 스크롤하여 선택합니다.
+* 콘텐츠 트리의 항목을 선택하면 편집기는 해당 콘텐츠를 스크롤하여 선택합니다.
+* 콘텐츠 트리에서 항목을 두 번 클릭하면 편집기가 해당 콘텐츠로 스크롤하여 선택하고 관련 속성도 [속성 모드에서 엽니다.](#properties-mode)
 
 ![콘텐츠 트리](assets/content-tree.png)
 
