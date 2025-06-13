@@ -4,9 +4,9 @@ description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 �
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Adobe은 최신 Javascript 기반 개발 방식을 수용하는 간소화된 편
 
 |  | 페이지 편집기 | 메모 | 범용 편집기 | 메모 |
 |---|---|---|---|---|
-| [클래식 AEM 배달](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 사용 가능]{type=Positive} | 핵심 구성 요소와 함께 사용하는 것이 좋습니다. | [!BADGE 사용할 수 없음]{type=Negative} | 클래식 AEM 페이지는 일반적으로 범용 편집기를 사용하여 있는 그대로 복제하기 어려운 몇 가지 페이지 편집기 관련 기능을 사용합니다. |
+| [게재 게시](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 사용 가능]{type=Positive} | 핵심 구성 요소 및 기존 AEM 프로젝트에 사용하기 위해 권장됨 | [!BADGE 사용할 수 없음]{type=Negative} | 기존 AEM 페이지는 일반적으로 범용 편집기를 사용하여 있는 그대로 복제하기 어려운 몇 가지 페이지 편집기 관련 기능을 사용합니다. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE 사용할 수 없음]{type=Negative} |  | [!BADGE 사용 가능]{type=Positive} |  |
 | [Headless 게재](/help/headless/introduction.md) | [!BADGE 부분적으로 사용 가능]{type=Caution} | [SPA 편집기,](/help/implementing/developing/hybrid/introduction.md)이(가) 있는 경우에만 [더 이상 사용되지 않음](/help/implementing/developing/hybrid/spa-editor-deprecation.md)(범용 편집기 사용) | [!BADGE 사용 가능]{type=Positive} | 범용 편집기를 사용하면 개발자가 특정 프레임워크 요구 사항이나 구현 제한 없이 고유한 웹 앱을 가져올 수 있습니다. |
 
@@ -103,6 +103,6 @@ Adobe은 최신 Javascript 기반 개발 방식을 수용하는 간소화된 편
    * 이 기능은 사용자 정의 위젯, 필드 유효성 검사, 규칙 표시/숨기기 및 템플릿 기반 사용자 지정과 같은 대화 상자의 많은 영역에 영향을 줍니다.
       * 이러한 기능은 계속 사용할 수 있지만, 대화 상자에 배포된 사용자 지정 JavaScript 대신 범용 편집기가 구성을 통해 이러한 기능을 해결합니다.
 
-범용 편집기는 클래식 AEM 페이지(예: 핵심 구성 요소로 빌드)에 대한 편집을 기술적으로 활성화할 수 있지만, 이러한 사이트는 일반적으로 대화 상자 내의 스타일 시스템, 반응형 그리드, 편집 가능한 템플릿 및 사용자 지정 Javascript와 같은 여러 페이지 편집기 관련 기능을 사용합니다.
+범용 편집기는 기술적으로 기존 AEM 프로젝트(예: 핵심 구성 요소로 빌드)의 페이지 편집을 활성화할 수 있지만 이러한 사이트는 일반적으로 대화 상자 내의 스타일 시스템, 반응형 그리드, 편집 가능한 템플릿 및 사용자 지정 Javascript와 같은 여러 페이지 편집기 관련 기능을 사용합니다.
 
 범용 편집기는 이러한 레거시 기능을 지원하지 않는 보다 간소화된 최신 접근 방식을 따르므로 이러한 사이트를 마이그레이션하려면 상당한 리팩터링이 필요합니다. 따라서 **Edge Delivery Services으로 전환하는 프로젝트에만 페이지 편집기 사이트를 유니버설 편집기로 마이그레이션하는 것이 좋습니다.**
