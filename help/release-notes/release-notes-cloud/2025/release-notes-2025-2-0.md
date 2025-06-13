@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 �
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 96%
+source-wordcount: '1527'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 96%
 
 **콘텐츠 조각 편집기 롤아웃**
 
-당사는 AEM as a Cloud Service에서 새로운 Spectrum UI 기반 콘텐츠 조각 편집기를 계속 활성화할 예정입니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
+[통합 셸](/help/overview/aem-cloud-service-on-unified-shell.md)(Spectrum-UI 사용)을 사용하여 AEM as a Cloud Service에서 새 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)를 계속 활성화합니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
 
 **번역 HTTP API**
 

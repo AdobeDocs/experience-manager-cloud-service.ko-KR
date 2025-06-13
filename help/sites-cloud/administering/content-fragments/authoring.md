@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 71%
+source-wordcount: '2824'
+ht-degree: 70%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 71%
 
 >[!WARNING]
 >
->이 섹션에서 설명하는 편집기는 *온라인* Adobe Experience Manager(AEM) as a Cloud Service *에서만* 사용할 수 있습니다.
+>이 섹션에 설명된 편집기는 [통합 셸](/help/overview/aem-cloud-service-on-unified-shell.md)에서 *전용*&#x200B;이므로 로컬 인스턴스가 아닌 *온라인* Adobe Experience Manager(AEM) as a Cloud Service에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 편집기 {#content-fragment-editor}
 
@@ -179,7 +179,6 @@ ht-degree: 71%
     >[!NOTE]
     >
     >**Main**.
-
 을(를) 삭제할 수 없습니다.
 1. 변형을 선택합니다.
 
@@ -268,7 +267,7 @@ ht-degree: 71%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
