@@ -137,7 +137,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    * **String** 형식의 **guideComponentType** 및 값 **fd/af/components/guidesubmittype**
 
-   * **문자열** 유형 및 값 **<!--xfa, -->xsd, 기본**&#x200B;의 **guideDataModel**
+   * **문자열** 유형 및 값 **<!--xfa, -->xsd, 기본&#x200B;**&#x200B;의 &#x200B;** guideDataModel**
 
    * **문자열** 유형 및 값 **저장 및 전자 메일 동작**&#x200B;의 **jcr:description**
 
