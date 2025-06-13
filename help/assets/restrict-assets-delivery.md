@@ -3,10 +3,10 @@ title: OpenAPI 기능을 사용하여 Dynamic Media로 자산 배달 제한
 description: OpenAPI 기능을 사용하여 에셋 전달을 제한하는 방법에 대해 알아봅니다.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 5%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ IMS 사용자 및 그룹 ID 를 기준으로 [!DNL Experience Manager] 내의 �
 
 >[!NOTE]
 >
->이 기능은 현재 셀프 서비스가 아닙니다. IMS [사용자](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) 및 [그룹](https://helpx.adobe.com/in/enterprise/using/user-groups.html)에 대한 자산 전달을 제한하려면 Enterprise 지원 팀에 연락하여 [Adobe Admin Console](https://adminconsole.adobe.com/) 포털에서 액세스를 제한하는 데 필요한 정보를 검색하는 방법과 AEM as a Cloud Service 작성자 서비스에서 액세스를 구성하는 방법에 대한 지침을 확인하십시오.
+> 이 기능은 현재 셀프 서비스가 아닙니다. IMS [사용자](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) 및 [그룹](https://helpx.adobe.com/in/enterprise/using/user-groups.html)에 대한 자산 전달을 제한하려면 Enterprise 지원 팀에 연락하여 [Adobe Admin Console](https://adminconsole.adobe.com/) 포털에서 액세스를 제한하는 데 필요한 정보를 검색하는 방법과 AEM as a Cloud Service 작성자 서비스에서 액세스를 구성하는 방법에 대한 지침을 확인하십시오.
 
 ### 설정 및 해제 날짜 및 시간을 사용하여 에셋 게재 제한 {#restrict-delivery-assets-date-time}
 
@@ -97,7 +97,7 @@ DAM 작성자는 에셋 속성에서 사용할 수 있는 활성화 켜기 또�
 1. 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 날짜]** 필드를 양식의 메타데이터 섹션에 추가합니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
    1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) **설정 시간** 또는 **해제 시간**(으)로 변경하십시오.
-   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다.**설정 시간**&#x200B;필드 및_&#x200B;에 대한 /jcr:content/onTime _.**해제 시간**&#x200B;필드의 /jcr:content/offTime_.
+   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다.**설정 시간**필드 및_&#x200B;에 대한 /jcr:content/onTime _.**해제 시간**필드의 /jcr:content/offTime_.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 마찬가지로, Assets 보기의 경우 에셋이 기본 메타데이터 스키마를 기반으로 하지 않으며 에셋 속성에서 설정 시간 및 해제 시간 필드를 사용할 수 없는 경우 다음 단계를 실행합니다.
@@ -106,14 +106,14 @@ DAM 작성자는 에셋 속성에서 사용할 수 있는 활성화 켜기 또�
 1. 메타데이터 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 1. 왼쪽 창의 **[!UICONTROL 구성 요소]** 섹션에서 **[!UICONTROL 날짜]** 필드를 양식에 추가하십시오.
 1. 새로 추가한 필드를 클릭하고 **[!UICONTROL 레이블]**&#x200B;을(를) **설정 시간** 또는 **해제 시간**(으)로 변경합니다.
-1. **[!UICONTROL 메타데이터 속성]**&#x200B;을(를) _(으)로 업데이트합니다.**설정 시간**&#x200B;필드 및_&#x200B;에 대한 /jcr:content/onTime _.**해제 시간**&#x200B;필드의 /jcr:content/offTime_.
+1. **[!UICONTROL 메타데이터 속성]**&#x200B;을(를) _(으)로 업데이트합니다.**설정 시간**필드 및_&#x200B;에 대한 /jcr:content/onTime _.**해제 시간**필드의 /jcr:content/offTime_.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 
 
 ## 제한된 에셋 전달 {#delivery-restricted-assets}
 
-제한된 에셋의 전달은 에셋에 액세스할 수 있는 성공적인 인증을 기반으로 합니다. 인증은 [IMS 전달자 토큰](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/)&#x200B;([AEM 자산 선택기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)에서 시작된 요청에 대한 애플리케이션) 또는 보안 쿠키( AEM Publish/Preview 서비스에 사용자 지정 ID 공급자가 설정되어 있고 페이지에 쿠키 생성과 포함을 설정한 경우)를 통해 수행됩니다.
+제한된 에셋의 전달은 에셋에 액세스할 수 있는 성공적인 인증을 기반으로 합니다. 인증은 [IMS 전달자 토큰](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/)&#x200B;([AEM 자산 선택기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)에서 시작된 요청에 대한 애플리케이션) 또는 보안 쿠키( AEM Publish/Preview 서비스에 사용자 지정 ID 공급자가 설정되어 있고 페이지에 쿠키 생성과 포함을 설정한 경우)를 통해 수행됩니다.
 
 ### AEM 작성자 또는 에셋 선택기 요청 게재 {#delivery-aem-author-asset-selector}
 
@@ -125,8 +125,8 @@ AEM Cloud Service 작성자 서비스와 자산 선택기에서 IMS 전달자 �
 >AEM Asset Selector 기반 통합에서 IMS 인증을 활성화하는 방법에 대한 자세한 내용은 엔터프라이즈 지원 센터에 문의하십시오
 
 1. 비 Asset Selector 기반 경험의 경우 현재 OpenAPI 기능이 있는 AEM as a Cloud Service 및 Dynamic Media가 서버측 API 통합을 지원하고 IMS Bearer 토큰을 생성할 수 있습니다.
-   * [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)의 지침에 따라 [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)을 통해 IMS Bearer 토큰을 검색할 수 있는 서비스 대 서버 API 통합을 수행합니다
-   * 제한된 기간 동안 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)의 지침에 따라 [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)에서 인증된 사용자에 대한 로컬 개발자 액세스(프로덕션 사용 사례는 아님), 단기 IMS 전달자 토큰을 생성할 수 있습니다.
+   * [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)의 지침에 따라 [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)을 통해 IMS Bearer 토큰을 검색할 수 있는 서비스 대 서버 API 통합을 수행합니다
+   * 제한된 기간 동안 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)의 지침에 따라 [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)에서 인증된 사용자에 대한 로컬 개발자 액세스(프로덕션 사용 사례는 아님), 단기 IMS 전달자 토큰을 생성할 수 있습니다.
 
 1. [Search](search-assets-api.md) 및 [Delivery](deliver-assets-apis.md) API 요청을 만드는 동안 가져온 IMS 전달자 토큰을 HTTP 요청의 **[!UICONTROL Authorization]** 헤더에 추가하십시오(**[!UICONTROL Bearer]** 접두사가 추가되었는지 확인).
 
@@ -136,4 +136,4 @@ AEM Cloud Service 작성자 서비스와 자산 선택기에서 IMS 전달자 �
 
 ### 게시 서비스의 사용자 정의 ID 공급자에 대한 게재 {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets 및 OpenAPI가 포함된 Dynamic Media 라이선스를 함께 사용할 수 있으므로 AEM Publish 또는 미리보기 서비스에서 호스팅되는 웹 사이트에 제한된 에셋 전달을 구성할 수 있습니다. 보안 게재 흐름은 브라우저 쿠키를 활용하여 사용자의 액세스를 설정하며, 게시 도메인의 하위 도메인인 게재 계층에 대한 사용자 지정 도메인을 보유하는 것은 이 사용 사례를 구현하기 위한 전제 조건입니다. AEM Sites의 Publish 및 Preview 서비스가 [사용자 지정 ID 공급자(IdP)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)를 사용하도록 구성된 경우 `delivery-token`(이)라는 새 쿠키를 설정하여 사용자의 그룹 구성원을 캡슐화해야 합니다. 게재 계층은 보안 쿠키에서 인증 자료를 추출하고 액세스를 확인합니다. 자세한 내용은 [엔터프라이즈 지원 티켓](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)을 기록하십시오.
+AEM Sites, AEM Assets 및 OpenAPI가 포함된 Dynamic Media 라이선스를 함께 사용할 수 있으므로 AEM Publish 또는 미리보기 서비스에서 호스팅되는 웹 사이트에 제한된 에셋 전달을 구성할 수 있습니다. 보안 게재 흐름은 브라우저 쿠키를 활용하여 사용자의 액세스를 설정하며, 게시 도메인의 하위 도메인인 게재 계층에 대한 사용자 지정 도메인을 보유하는 것은 이 사용 사례를 구현하기 위한 전제 조건입니다. AEM Sites의 Publish 및 Preview 서비스가 [사용자 지정 ID 공급자(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)를 사용하도록 구성된 경우 `delivery-token`(이)라는 새 쿠키를 설정하여 사용자의 그룹 구성원을 캡슐화해야 합니다. 게재 계층은 보안 쿠키에서 인증 자료를 추출하고 액세스를 확인합니다. 자세한 내용은 [엔터프라이즈 지원 티켓](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)을 기록하십시오.

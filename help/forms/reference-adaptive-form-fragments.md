@@ -9,19 +9,19 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 1%
+source-wordcount: '395'
+ht-degree: 2%
 
 ---
 
-
-# 적응형 양식 단편 참조 {#reference-adaptive-form-fragments}
+# 참조 적응형 양식 조각 {#reference-adaptive-form-fragments}
 
 적응형 양식 조각은 필드 그룹이거나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널입니다. 이를 통해 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 에셋 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 앤 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 Forms 작성자의 경우 참조 조각이 [!DNL AEM Forms] 패키지 [[!DNL AEM FORMS] 참조 조각](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
+적응형 Forms 작성자의 경우 참조 조각이 [!DNL AEM Forms] 패키지 [!DNL AEM FORMS] 참조 조각에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -34,7 +34,7 @@ ht-degree: 1%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [Cloud Manager 및 패키지 관리자를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)을 참조하십시오.
+패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [Cloud Manager 및 패키지 관리자를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)을 참조하십시오.
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 

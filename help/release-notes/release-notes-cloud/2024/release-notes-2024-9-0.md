@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.9.0 �
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 
 #### 번역 관리 {#translation-management}
 
-AEM 번역 워크플로와 API 액션은 이제 이벤트를 트리거하여 번역 작업 상태 변경에 대한 인사이트를 제공합니다. 사용자는 Adobe Developer Console을 통해 이러한 이벤트를 구독할 수 있습니다. AEM 번역 관리 API에 대한 자세한 내용은 [여기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)에서 확인하십시오.
+AEM 번역 워크플로와 API 액션은 이제 이벤트를 트리거하여 번역 작업 상태 변경에 대한 인사이트를 제공합니다. 사용자는 Adobe Developer Console을 통해 이러한 이벤트에 가입할 수 있습니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=ko) |
-| AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service(Foundation 구성 요소) | 이 문서 |
 
 적응형 양식은 즉시 사용할 수 있는(OOTB) 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식을 통해 수집된 데이터에 대해 수행할 작업의 세부 정보를 지정합니다. (예: 이메일에서 데이터 보내기)
@@ -111,7 +111,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
-> 핵심 구성 요소에 대한 사용자 지정 제출 액션을 만드는 방법에 대해 알아보려면 [적응형 Forms(핵심 구성 요소)에 대한 사용자 지정 제출 액션 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)를 참조하십시오.
+> 핵심 구성 요소에 대한 사용자 지정 제출 액션을 만드는 방법에 대해 알아보려면 [적응형 Forms(핵심 구성 요소)에 대한 사용자 지정 제출 액션 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)를 참조하십시오.
 
 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 액션을 만들려면 다음 단계를 수행하십시오. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 OOTB 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 AEM에서는 전자 메일을 보내는 데 사용할 수 있는 [메일](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API를 제공합니다. Mail API를 사용하기 전에 시스템 콘솔을 통해 일별 CQ 메일 서비스를 구성합니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
 
@@ -137,7 +137,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    * **String** 형식의 **guideComponentType** 및 값 **fd/af/components/guidesubmittype**
 
-   * **문자열** 유형 및 값 **<!--xfa, -->xsd, 기본&#x200B;**&#x200B;의 &#x200B;** guideDataModel**
+   * **문자열** 유형 및 값 **<!--xfa, -->xsd, 기본**&#x200B;의 **guideDataModel**
 
    * **문자열** 유형 및 값 **저장 및 전자 메일 동작**&#x200B;의 **jcr:description**
 
@@ -161,7 +161,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    `String mailTo = properties.get("mailTo");`
 
-   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
+   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://commons.apache.org/proper/commons-email/commons-email2-javax/apidocs/org/apache/commons/mail2/javax/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
 
    >[!NOTE]
    >
@@ -209,7 +209,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
 ## 사용자 지정 제출 액션에 submitService 속성 사용 {#submitservice-property}
 
-`submitService` 속성을 포함하는 사용자 지정 제출 액션을 설정하면 폼이 제출 시 [FormSubmitActionService](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)을(를) 트리거합니다. `FormSubmitActionService`은(는) `getServiceName` 메서드를 사용하여 `submitService` 속성의 값을 검색합니다. `submitService` 속성의 값을 기반으로 서비스가 적절한 제출 메서드를 호출합니다. [!DNL AEM Forms] 서버에 업로드하는 사용자 지정 번들에 `FormSubmitActionService`을(를) 포함하십시오.
+`submitService` 속성을 포함하는 사용자 지정 제출 액션을 설정하면 폼이 제출 시 [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)을(를) 트리거합니다. `FormSubmitActionService`은(는) `getServiceName` 메서드를 사용하여 `submitService` 속성의 값을 검색합니다. `submitService` 속성의 값을 기반으로 서비스가 적절한 제출 메서드를 호출합니다. [!DNL AEM Forms] 서버에 업로드하는 사용자 지정 번들에 `FormSubmitActionService`을(를) 포함하십시오.
 
 형식 문자열의 `submitService` 속성을 사용자 지정 제출 작업의 `sling:Folder`에 추가하여 적응형 양식에 [!DNL Adobe Sign]을(를) 사용하도록 설정합니다. 사용자 지정 제출 액션의 `submitService` 속성 값을 설정한 후에만 적응형 양식 컨테이너 속성의 **[!UICONTROL 전자 서명]** 섹션에서 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택할 수 있습니다.
 

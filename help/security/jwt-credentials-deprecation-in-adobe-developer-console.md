@@ -4,10 +4,10 @@ description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: ht
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)�
 
 중요한 점은 AEM이 이제 AEM as a Cloud Service에 대한 새로운 OAuth 서버 간 자격 증명을 지원한다는 것입니다. JWT 자격 증명을 마이그레이션하기 위한 지침이 포함된 이메일을 받으셨을 수 있으며, 이제 이 마이그레이션을 수행할 수 있습니다.
 
-아래 섹션에서는 고객이 서비스 계정(JWT) 자격 증명을 현재 AEM에서 지원되는 OAuth 서버 간 자격 증명으로 교체해야 하는(또는 경우에 따라 교체해서는 안 되는) 시나리오를 나열합니다. 자격 증명을 마이그레이션하는 [방법을 확인](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)하십시오.
+아래 섹션에서는 고객이 서비스 계정(JWT) 자격 증명을 현재 AEM에서 지원되는 OAuth 서버 간 자격 증명으로 교체해야 하는(또는 경우에 따라 교체해서는 안 되는) 시나리오를 나열합니다. 자격 증명을 마이그레이션하는 [방법을 확인](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)하십시오.
 
 >[!NOTE]
 >

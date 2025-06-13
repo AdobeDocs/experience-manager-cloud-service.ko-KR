@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 �
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 97%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 
@@ -147,7 +147,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 * [Sites 콘텐츠 조각 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* 사이트 및 Assets 폴더 API
 * [Forms 커뮤니케이션 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
@@ -158,7 +158,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 

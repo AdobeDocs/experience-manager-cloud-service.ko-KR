@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 비즈니스 규칙을 구현하기 위한 JavaScript 함수를 정의할 수 있습니다. 이러한 사용자 지정 기능은 지정된 요구 사항을 충족하도록 입력된 데이터의 조작 및 처리를 용이하게 하여 양식의 기능을 확장합니다. 사전 정의된 기준에 따라 양식 동작을 동적으로 변경할 수 있습니다. 사용자 지정 기능을 사용하면 개발자가 복잡한 유효성 검사 논리를 적용하고, 동적 계산을 수행하고, 사용자 상호 작용이나 사전 정의된 기준에 따라 양식 요소의 표시나 동작을 제어할 수 있습니다.
@@ -168,7 +168,6 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
             // code to be executed
         }
 ```
-
 사용자가 사용자 지정 함수에 JavaScript 주석을 추가하지 않으면 함수 이름으로 규칙 편집기에 나열됩니다. 그러나 사용자 정의 함수의 가독성을 높이기 위해 JavaScript 주석을 포함하는 것이 좋습니다.
 
 ### 필수 JavaScript 주석 또는 댓글이 있는 화살표 기능

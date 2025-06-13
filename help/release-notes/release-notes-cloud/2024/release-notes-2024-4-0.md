@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.4.0 �
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2689'
 ht-degree: 95%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 95%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 2024년 4월 릴리스 개요 비디오를 통해 2024.4.0 릴리스에 추가된 기능에 대한 요약 내용을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446315?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -163,7 +163,7 @@ ht-degree: 95%
 
   공식 이메일 ID에서 “`aem-forms-ea@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.
 
-* **[작동 원격 분석 서비스를 사용하여](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
+* **[작동 원격 분석 서비스를 사용하여](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
 운영 원격 분석 서비스는 사용자 상호 작용을 보다 정밀하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
 
   이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 운영 원격 분석을 사용할 각 환경의 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`에게 전자 메일을 보내십시오. 그런 다음 Adobe 제품 팀이 Operational Telemetry Service를 활성화합니다.
@@ -238,9 +238,6 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 
 언어 그룹을 만들면 번역 프로젝트의 전반적인 효율성과 생산성이 향상되어 궁극적으로 여러 언어에 대한 현지화 프로세스가 개선됩니다.
-
-
-[웹 편집기에서 문서를 번역하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor) 알아보기
 
 ### 저장소 보기에서 파일을 검색하고 필터링하도록 향상된 환경
 

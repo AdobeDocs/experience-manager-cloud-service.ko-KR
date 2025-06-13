@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.3.0 �
 feature: Release Information
 role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
-source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
+source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 98%
+source-wordcount: '1122'
+ht-degree: 97%
 
 ---
 
@@ -126,7 +126,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 * [Sites 콘텐츠 조각 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* 사이트 및 Assets 폴더 API
 * [Forms 커뮤니케이션 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}

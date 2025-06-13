@@ -1,10 +1,10 @@
 ---
 title: Eclipse용 AEM 개발자 도구
-description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse 플러그인인 AEM Developer Tools for Eclipse를 사용하는 방법에 대해 알아봅니다.
+description: Apache Sling용 Eclipse 플러그인 기반의 Eclipse 플러그인인 Eclipse용 AEM 개발자 도구를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -13,18 +13,18 @@ ht-degree: 2%
 
 # Eclipse용 AEM 개발자 도구{#aem-developer-tools-for-eclipse}
 
-![Eclipse 로고용 개발자 도구 Experience Manager](assets/eclipse-logo.png)
+![Eclipse용 Experience Manager 개발자 도구 로고](assets/eclipse-logo.png)
 
 ## 개요 {#overview}
 
 _Eclipse용 Experience Manager 개발자 도구_&#x200B;는 Apache 라이선스 2에 따라 릴리스된 [Apache Sling용 Eclipse 플러그인](https://sling.apache.org/documentation/development/ide-tooling.html)을 기반으로 하는 Eclipse 플러그인입니다.
 
-AEM 개발을 쉽게 만드는 몇 가지 기능을 제공합니다.
+AEM 개발을 보다 쉽게 만드는 몇 가지 기능을 제공합니다.
 
 * Eclipse Server Connector를 통해 AEM 인스턴스와 원활하게 통합
 * 콘텐츠 및 OSGi 번들 모두에 대한 동기화
 * 코드 핫 스왑 기능으로 디버깅 지원
-* 특정 프로젝트 만들기 마법사를 통한 AEM 프로젝트 단순 Bootstrap
+* 특정 프로젝트 만들기 마법사를 통한 AEM 프로젝트의 간단한 Bootstrap
 * JCR 속성의 간편한 편집
 
 ## 요구 사항 {#requirements}
@@ -32,7 +32,7 @@ AEM 개발을 쉽게 만드는 몇 가지 기능을 제공합니다.
 AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java™ 개발자용 [Eclipse IDE를 다운로드하여 설치합니다](https://www.eclipse.org/downloads/packages/).
-* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse)에 설명된 대로 `eclipse.ini` 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
+* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)에 설명된 대로 `eclipse.ini` 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 1. **이름** 필드에 `AEM Developer Tools`을(를) 입력하십시오.
 1. **위치** 필드에서 설치 URL을 복사합니다.
 1. **추가**&#x200B;를 클릭합니다.
-1. **AEM** 및 **Sling** 플러그인을 모두 확인하십시오.
+1. **AEM** 및 **Sling** 플러그인을 모두 확인하세요.
 1. **다음**&#x200B;을 클릭합니다.
 1. **설치 세부 정보** 창에서 **다음**&#x200B;을 다시 클릭합니다.
 1. 사용권 계약에 동의하고 **마침**&#x200B;을 클릭합니다.
@@ -64,16 +64,16 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 Eclipse에서 관점은 창 내에서 사용할 수 있는 작업 및 보기를 결정하고 Eclipse의 리소스와 작업 지향 상호 작용을 가능하게 합니다. Perspective에 대한 자세한 내용은 [Eclipse 설명서](https://help.eclipse.org/latest/index.jsp)를 참조하십시오.
 
-_Eclipse용 Experience Manager 개발 도구_&#x200B;는 AEM 프로젝트 및 인스턴스를 완벽하게 제어할 수 있는 AEM 관점을 제공합니다. AEM Perspective를 열려면
+_Eclipse용 Experience Manager 개발 도구_&#x200B;는 AEM 프로젝트 및 인스턴스를 완벽하게 제어할 수 있는 AEM 관점을 제공합니다. AEM 관점을 열려면:
 
 1. Eclipse 메뉴 모음에서 **창** > **관점** > **관점 열기** > **기타**&#x200B;를 선택합니다.
-1. 대화 상자에서 **AEM**&#x200B;을(를) 선택하고 **열기**&#x200B;를 클릭합니다.
+1. 대화 상자에서 **AEM**&#x200B;을 선택하고 **열기**&#x200B;를 클릭합니다.
 
 ![Eclipse의 AEM 관점](assets/eclipse-aem-perspective.png)
 
 ## 샘플 다중 모듈 프로젝트 {#sample-multi-module-project}
 
-_Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse에서 프로젝트 설정을 빠르게 시작할 수 있도록 도와주는 샘플 다중 모듈 프로젝트가 포함되어 있습니다. 또한 여러 AEM 기능에 대한 모범 사례 안내서 역할을 합니다. [Project Archetype에 대해 자세히 알아보기](https://github.com/adobe/aem-project-archetype).
+_Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로젝트 설정을 빠르게 시작하는 데 도움이 되는 샘플 다중 모듈 프로젝트가 포함되어 있습니다. 또한 여러 AEM 기능에 대한 모범 사례 안내서로도 사용됩니다. [Project Archetype에 대해 자세히 알아보기](https://github.com/adobe/aem-project-archetype).
 
 다음 단계에 따라 샘플 프로젝트를 만듭니다.
 
@@ -189,10 +189,10 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse에서 프
         </workspaceFilter>
         ```
 
-1. 모든 변경 사항을 저장해야 합니다. 이제 해당 새 콘텐츠를 AEM 인스턴스와 동기화할 수 있습니다.
+1. 모든 변경 사항을 저장해야 합니다. 이제 새로운 콘텐츠를 AEM 인스턴스와 동기화할 수 있습니다.
 
 1. 서버 패널에서 연결이 시작되었는지 확인하고 시작되지 않은 경우 시작합니다.
-1. **청소 및 Publish** 아이콘을 클릭합니다.
+1. **정리 및 게시** 아이콘을 클릭합니다.
 
 완료되면 인스턴스에서 패키지를 실행해야 하며 저장 시 모든 변경 사항이 인스턴스에 자동으로 동기화됩니다.
 

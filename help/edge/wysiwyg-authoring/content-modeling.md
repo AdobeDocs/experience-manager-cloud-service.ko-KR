@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 Edge Delivery Services 프로젝트를 통한 WYSIWYG 작성 시 범용 편집기에 사용하도록 구성된 블록을 만드는 방법을 알아보려면 [범용 편집기에 사용하도록 구성된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) 문서를 참조하십시오.
 
 이미 블록을 만드는 데 익숙하다면 콘텐츠 작성을 위한 Edge Delivery Services 및 범용 편집기를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하기 위한 정보를 확인하려면 [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 문서를 참조하십시오.
-
->[!TIP]
->
->AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)를 시청하십시오.
-

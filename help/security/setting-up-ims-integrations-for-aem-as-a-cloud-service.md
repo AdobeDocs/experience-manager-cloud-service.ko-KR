@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대한 IMS 통합을 설정하는 방법 
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) as a Cloud Service은 다른 여러 Adobe 솔루�
 
 * 새 OAuth 자격 증명 만들기:
 
-   * [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 기존 JWT 자격 증명을 OAuth 자격 증명으로 마이그레이션:
 
@@ -67,7 +67,7 @@ OAuth를 사용하여 새로운 Adobe IMS 통합을 만들려면 다음 작업�
 
 1. **만들기**&#x200B;를 선택합니다.
 
-1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)의 세부 정보에 따라 구성을 완료합니다. 예:
+1. [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)의 세부 정보에 따라 구성을 완료합니다. 예:
 
    ![OAuth 구성 만들기](assets/ims-create-oauth-configuration.png)
 

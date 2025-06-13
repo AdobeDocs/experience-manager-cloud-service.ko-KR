@@ -1,37 +1,37 @@
 ---
-title: AEM Forms Cloud Service에서 워크플로우를 만드는 데 사용할 수 있는 워크플로우 단계와 비즈니스 프로세스 자동화(BPM)에 사용할 수 있는 워크플로우 단계는 무엇입니까?
-description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
+title: AEM Forms Cloud Service에서 워크플로우를 만드는 데 사용할 수 있는 워크플로우 단계 또는 BPM(비즈니스 프로세스 자동화)에 사용할 수 있는 워크플로우 단계는 무엇입니까?
+description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 전송하고, 이메일 알림을 전송할 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
+keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 생성 단계, 비대화형 PDF 출력 생성
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 0%
 
 ---
 
 
-# Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
+# Forms 중심 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. [모델에 다양한 AEM Workflow 단계를 포함하여 비즈니스 논리를 달성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
+워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 비즈니스 논리를 달성하기 위해 [모델에 다양한 AEM 워크플로 단계를 포함할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
 
 ## Forms 중심 단계 {#forms-workflow-steps}
 
-Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi에서 적응형 Forms 기반 Forms 중심 워크플로우를 신속하게 구축할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 워크플로, 내부 및 방화벽 간 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다. Forms Workflow 단계를 사용하여 다음을 수행할 수도 있습니다.
+Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi에서 적응형 Forms 기반 Forms 중심 워크플로우를 신속하게 구축할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 워크플로, 내부 및 방화벽 간 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다. Forms Workflow 단계를 사용하여 다음을 수행할 수도 있습니다.
 
 * 비즈니스 프로세스, 사후 제출 워크플로우 및 백엔드 워크플로우를 만들어 등록 프로세스를 관리합니다.
 
 * 작업을 만들고 사용자 또는 그룹에 할당합니다.
 
-* AEM Workflow에서 [!DNL Adobe Sign]을(를) 사용하여 서명용 문서를 보냅니다.
+* AEM 워크플로에서 [!DNL Adobe Sign]을(를) 사용하여 서명용 문서를 보냅니다.
 
 * 요청 시 또는 양식 제출 시 기록 문서를 생성합니다.
 
@@ -41,11 +41,11 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 >[!NOTE]
 >
->워크플로 모델이 외부 스토리지로 표시된 경우 모든 Forms Workflow 단계에서 변수 옵션만 선택하여 데이터 파일과 첨부 파일을 저장하거나 검색할 수 있습니다.
+>워크플로 모델이 외부 스토리지로 표시된 경우 모든 Forms Workflow 단계에 대해 변수 옵션만 선택하여 데이터 파일 및 첨부 파일을 저장하거나 검색할 수 있습니다.
 
 ## 작업 단계 할당 {#assign-task-step}
 
-작업 할당 단계에서는 작업 항목을 만들어 사용자 또는 그룹에 할당합니다. 작업 할당과 함께 구성 요소는 작업에 대한 적응형 양식 또는 비대화형 PDF을 지정합니다. 적응형 양식은 사용자의 입력을 받아들여야 하며 비대화형 PDF 또는 읽기 전용 적응형 양식은 검토 전용 워크플로우에 사용됩니다.
+작업 할당 단계에서는 작업 항목을 만들어 사용자 또는 그룹에 할당합니다. 작업 할당과 함께 구성 요소는 작업에 대한 적응형 양식 또는 비대화형 PDF도 지정합니다. 적응형 양식은 사용자와 비대화형 PDF의 입력을 수락하는 데 필요하거나, 읽기 전용 적응형 양식이 검토 전용 워크플로우에 사용됩니다.
 
 구성 요소를 사용하여 작업의 동작을 제어할 수도 있습니다. 예를 들어 자동 기록 문서 생성, 특정 사용자 또는 그룹에 작업 할당, 제출된 데이터의 경로 지정, 미리 채울 데이터 경로 지정 및 기본 작업 지정이 있습니다. 작업 할당 단계에는 다음과 같은 속성이 있습니다.
 
@@ -53,7 +53,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 * **[!UICONTROL 설명]**: 작업에서 수행 중인 작업에 대한 설명입니다. 이 정보는 공유 개발 환경에서 작업할 때 다른 프로세스 개발자에게 유용합니다.
 
 * **[!UICONTROL 썸네일 경로]**: 작업 썸네일의 경로입니다. 경로를 지정하지 않으면 적응형 양식에 대해 기본 썸네일이 표시되고 기록 문서에 대해 기본 아이콘이 표시됩니다.
-* **[!UICONTROL 워크플로 단계]**: 워크플로에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델의 속성([Sidekick] > [페이지] > [페이지 속성] > [단계])에서 이러한 단계를 정의할 수 있습니다.
+* **[!UICONTROL 워크플로 단계]**: 워크플로에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델의 속성(Sidekick > 페이지 > 페이지 속성 > 단계)에서 이러한 단계를 정의할 수 있습니다.
 * **[!UICONTROL 우선 순위]**: 선택한 우선 순위가 AEM 받은 편지함에 표시됩니다. 사용 가능한 옵션은 높음, Medium 및 낮음입니다. 기본값은 Medium입니다.
 * **[!UICONTROL 기한]**: 작업이 기한 초과로 표시된 후 경과된 일 또는 시간을 지정합니다. **[!UICONTROL 해제]**&#x200B;를 선택하면 작업이 기한 초과로 표시되지 않습니다. 작업 기한이 지난 후 특정 작업을 수행할 시간 초과 핸들러를 지정할 수도 있습니다.
 
@@ -81,7 +81,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 -->
 
 * **[!UICONTROL 적응형 양식 경로]**: 적응형 양식의 경로를 지정하십시오. 워크플로우에 제출된 적응형 양식을 사용하여 절대 경로에서 사용할 수 있으며 문자열 데이터 유형의 변수에 저장된 경로에서 적응형 양식을 검색할 수 있습니다.
-* **[!UICONTROL 다음을 사용하여 입력 PDF 선택]**: 비대화형 PDF 문서의 경로를 지정하십시오. 유형 필드에서 비대화형 PDF 문서를 선택하면 이 필드를 사용할 수 있습니다. 페이로드에 상대적인 경로, 절대 경로에 저장된 경로 또는 문서 데이터 유형의 PDF을 사용하여 입력 경로를 선택할 수 있습니다. 예: [Payload_Directory]/Workflow/PDF/credit-card.pdf. 경로가 crx-repository에 없습니다. 관리자는 경로를 사용하기 전에 경로를 만듭니다. PDF 경로 옵션을 사용하려면 기록 문서 옵션 활성화 또는 양식 템플릿 기반 적응형 Forms이 필요합니다.
+* **[!UICONTROL 다음을 사용하여 입력 PDF 선택]**: 비대화형 PDF 문서의 경로를 지정하십시오. 유형 필드에서 비대화형 PDF 문서를 선택하면 이 필드를 사용할 수 있습니다. 페이로드에 상대적인 경로, 절대 경로에 저장된 경로 또는 문서 데이터 유형의 변수를 사용하여 입력 PDF을 선택할 수 있습니다. 예: [Payload_Directory]/Workflow/PDF/credit-card.pdf. 경로가 crx-repository에 없습니다. 관리자는 경로를 사용하기 전에 경로를 만듭니다. PDF 경로 옵션을 사용하려면 기록 문서 옵션 활성화 또는 양식 템플릿 기반 적응형 Forms이 필요합니다.
 * **[!UICONTROL 완료된 작업의 경우 적응형 양식을 다음과 같이 렌더링]**: 작업이 완료된 것으로 표시되면 적응형 양식을 읽기 전용 적응형 양식 또는 PDF 문서로 렌더링할 수 있습니다. 적응형 양식을 기록 문서로 렌더링하려면 기록 문서 옵션 활성화 또는 양식 템플릿 기반 적응형 Forms이 필요합니다.
 * **[!UICONTROL 미리 채워짐]**: 아래에 나열된 다음 필드는 작업에 대한 입력으로 사용됩니다.
 
@@ -121,7 +121,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
     -->
 
 * **[!UICONTROL 피할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
-* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko&amp;CID=RedirectAEMCommunityKautuk)를 참조하십시오.
+* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자 지정 Adobe Experience Manager 동적 참가자 만들기 단계](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
 
 * **[!UICONTROL 참가자]**: **[!UICONTROL 참가자 선택기]** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 이 필드를 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
@@ -138,7 +138,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 * **[!UICONTROL HTML 전자 메일 서식 파일]**: 알림 전자 메일에 대한 전자 메일 서식 파일을 선택하십시오. 템플릿을 편집하려면 crx-repository의 /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt에 있는 파일을 수정합니다.
 * **[!UICONTROL 다음으로 위임 허용]**: AEM 받은 편지함에서는 로그인한 사용자에게 할당된 워크플로를 다른 사용자에게 위임할 수 있는 옵션을 제공합니다. 동일한 그룹 내에서 또는 다른 그룹의 워크플로 사용자에게 위임할 수 있습니다. 작업이 단일 사용자에게 할당되고 **[!UICONTROL 피할당자 그룹의 구성원에게 위임 허용]** 옵션이 선택된 경우 다른 사용자 또는 그룹에 작업을 위임할 수 없습니다.
-* **[!UICONTROL 설정 공유]**: AEM 받은 편지함에서는 받은 편지함에 있는 단일 또는 모든 작업을 다른 사용자와 공유할 수 있는 옵션을 제공합니다.
+* **[!UICONTROL 설정 공유]**: AEM 받은 편지함에서는 받은 편지함의 단일 작업 또는 모든 작업을 다른 사용자와 공유할 수 있는 옵션을 제공합니다.
    * **[!UICONTROL 피할당자가 받은 편지함에서 명시적으로 공유하도록 허용]** 옵션을 선택하면 사용자는 AEM 받은 편지함에서 작업을 선택하여 다른 AEM 사용자와 공유할 수 있습니다.
    * **[!UICONTROL 피할당자가 받은 편지함 공유를 통해 공유하도록 허용]** 옵션을 선택하고 사용자가 받은 편지함 항목을 공유하거나 다른 사용자가 받은 편지함 항목에 액세스할 수 있도록 허용하면 이전에 언급된 옵션이 활성화된 작업만 다른 사용자와 공유됩니다.
    * **[!UICONTROL 피할당자가 &#39;부재 중&#39; 설정을 사용하여 위임하도록 허용]**&#x200B;을 선택한 경우. 피할당자는 다른 부재 중 옵션과 함께 다른 사용자에게 작업을 위임하는 옵션을 활성화할 수 있습니다. 부재 중 사용자에게 할당된 새 작업은 부재 중 설정에 언급된 사용자에게 자동으로 위임(할당)됩니다.
@@ -146,8 +146,8 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
   이 옵션을 통해 다른 사용자는 부재 중이고 할당된 작업을 수행할 수 없는 동안 할당자 작업을 선택할 수 있습니다.
 
 * **[!UICONTROL 작업]** > **[!UICONTROL 기본 작업]**: 기본적으로 제출, 저장 및 재설정 작업을 사용할 수 있습니다. 모든 기본 작업은 기본적으로 활성화되어 있습니다.
-* **[!UICONTROL 경로 변수]**: 경로 변수의 이름입니다. 경로 변수는 사용자가 AEM 받은 편지함에서 선택하는 사용자 지정 작업을 캡처합니다.
-* **[!UICONTROL 경로]**: 작업이 다른 경로로 분기될 수 있습니다. AEM 받은 편지함에서 선택하면 경로가 값을 반환하고 선택한 경로를 기반으로 워크플로우가 분기됩니다. String 데이터 형식 배열의 변수에 경로를 저장하거나 **[!UICONTROL Literal]**&#x200B;을(를) 선택하여 경로를 수동으로 추가할 수 있습니다.
+* **[!UICONTROL 경로 변수]**: 경로 변수의 이름입니다. 경로 변수는 사용자가 AEM 받은 편지함에서 선택한 사용자 지정 작업을 캡처합니다.
+* **[!UICONTROL 경로]**: 작업이 다른 경로로 분기될 수 있습니다. AEM 받은 편지함에서 이 경로를 선택하면 해당 경로가 값을 반환하고, 선택한 경로를 기반으로 워크플로우가 분기됩니다. String 데이터 형식 배열의 변수에 경로를 저장하거나 **[!UICONTROL Literal]**&#x200B;을(를) 선택하여 경로를 수동으로 추가할 수 있습니다.
 
 * **[!UICONTROL 경로 제목]**: 경로의 제목을 지정합니다. AEM 받은 편지함에 표시됩니다.
 * **[!UICONTROL Coral 아이콘]**: coral 아이콘의 HTML 특성을 지정합니다. Adobe CorelUI 라이브러리는 광범위한 터치 우선 아이콘 세트를 제공합니다. 경로를 선택하고 아이콘을 사용할 수 있습니다. AEM 받은 편지함에 제목과 함께 표시됩니다. 경로를 변수에 저장하는 경우 경로는 기본 &quot;태그&quot; 코랄 아이콘을 사용합니다.
@@ -156,7 +156,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 * **[!UICONTROL 피할당자가 첨부 파일을 작업에 추가하도록 허용]**: 작업에 대한 첨부 파일을 활성화하려면 이 옵션을 선택하십시오. 할당자는 작업을 제출할 때 AEM 받은 편지함 내에서 첨부 파일을 추가할 수 있습니다. 첨부 파일의 최대 크기 **[!UICONTROL (최대 파일 크기)]**&#x200B;을(를) 제한할 수도 있습니다. 기본 크기는 2MB입니다.
 
-* **[!UICONTROL 다음을 사용하여 출력 작업 첨부 파일 저장]**: 첨부 파일 폴더의 위치를 지정하십시오. 페이로드와 관련된 경로 또는 문서 데이터 유형 배열의 변수를 사용하여 출력 작업 첨부 파일을 저장할 수 있습니다. 이 옵션은 **[!UICONTROL 피할당자가 작업에 첨부 파일을 추가하도록 허용]** 확인란을 선택하고 **[!UICONTROL 양식/문서]** 탭의 **[!UICONTROL 유형]** 드롭다운 목록에서 **[!UICONTROL 적응형 양식]**, **[!UICONTROL 읽기 전용 적응형 양식]** 또는 **[!UICONTROL 비대화형 PDF 문서]**&#x200B;를 선택한 경우에만 표시됩니다.
+* **[!UICONTROL 다음을 사용하여 출력 작업 첨부 파일 저장]**: 첨부 파일 폴더의 위치를 지정하십시오. 페이로드와 관련된 경로 또는 문서 데이터 유형 배열의 변수를 사용하여 출력 작업 첨부 파일을 저장할 수 있습니다. 이 옵션은 **[!UICONTROL 피할당자가 작업에 첨부 파일을 추가하도록 허용]** 확인란을 선택하고 **[!UICONTROL 양식/문서]** 탭의 **[!UICONTROL 유형]** 드롭다운 목록에서 **[!UICONTROL 적응형 양식]**, **[!UICONTROL 읽기 전용 적응형 양식]** 또는 **[!UICONTROL 비대화형 PDF 문서]**&#x200B;를 선택하는 경우에만 표시됩니다.
 
 * **[!UICONTROL 사용자 지정 메타데이터 사용]**: 사용자 지정 메타데이터 필드를 활성화하려면 이 옵션을 선택하십시오. 사용자 지정 메타데이터는 이메일 템플릿에 사용됩니다.
 * **[!UICONTROL 사용자 지정 메타데이터]**: 전자 메일 템플릿에 대한 사용자 지정 메타데이터를 선택합니다. 사용자 지정 메타데이터는 apps/fd/dashboard/scripts/metadataScripts의 crx-repository에서 사용할 수 있습니다. 지정된 경로가 crx-repository에 없습니다. 관리자는 경로를 사용하기 전에 경로를 만듭니다. 사용자 지정 메타데이터에 서비스를 사용할 수도 있습니다. `WorkitemUserMetadataService` 인터페이스를 확장하여 사용자 지정 메타데이터를 제공할 수도 있습니다.
@@ -172,14 +172,14 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 PDF/A는 글꼴을 포함하고 파일의 압축을 해제하여 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. AEM 워크플로의 ***PDF/A로 변환*** 단계를 사용하여 PDF 문서를 PDF/A 형식으로 변환할 수 있습니다.
 
-PDF/A로 변환 단계에는 다음과 같은 속성이 있습니다.
+PDF/A로 변환 단계에는 다음 속성이 있습니다.
 
 **[!UICONTROL 입력 문서]**: 입력 문서는 페이로드에 상대적이거나 절대 경로를 가질 수 있으며 페이로드로 제공되거나 문서 데이터 형식의 변수에 저장될 수 있습니다.
 
 **[!UICONTROL 변환 옵션]**: 이 속성을 사용하여 PDF 문서를 PDF/A 문서로 변환하는 설정이 지정됩니다. 이 탭에서 사용할 수 있는 다양한 옵션은 다음과 같습니다.
 * **[!UICONTROL 준수]**: 출력 PDF/A 문서가 준수해야 하는 표준을 지정합니다. PDF/A-1b, PDF/A-2b 또는 PDF/A-3b와 같은 다양한 PDF 표준을 지원합니다.
 * **[!UICONTROL 결과 수준]**: 전환 출력의 결과 수준을 PassFail, Summary 또는 Detailed로 지정합니다.
-* RGB **[!UICONTROL 색상 공간]**: 미리 정의된 색상 공간을 출력 PDF/A 파일에 사용할 수 있는 S_COLOR, COATED_FOGRA27, JAPAN_COLOR_COATED 또는 SWOP로 지정합니다.
+* **[!UICONTROL 색상 공간]**: 미리 정의된 색상 공간을 출력 PDF/A 파일에 사용할 수 있는 S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED 또는 SWOP로 지정합니다.
 * **[!UICONTROL 선택적 컨텐츠]**: 지정된 기준 세트를 충족할 때만 특정 그래픽 개체 및/또는 주석을 출력 PDF/A 문서에 표시할 수 있습니다.
 
 **[!UICONTROL 출력 문서]**: 출력 파일을 저장할 위치를 지정합니다. 출력 파일은 페이로드에 상대적인 위치에 저장하거나, 페이로드가 파일인 경우 페이로드를 덮어쓰거나, 문서 데이터 유형의 변수에 저장할 수 있습니다.
@@ -187,9 +187,9 @@ PDF/A로 변환 단계에는 다음과 같은 속성이 있습니다.
 
 ## 이메일 전송 단계 {#send-email-step}
 
-전자 메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 <!-- , link of an interactive communication-->의 링크 또는 첨부된 PDF 문서가 있는 전자 메일)을 보낼 수 있습니다. 이메일 보내기 단계는 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)을(를) 지원합니다. HTML 이메일은 응답하며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
+전자 메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 <!-- , link of an interactive communication-->의 링크 또는 첨부된 PDF 문서)을 보낼 수 있습니다. 이메일 전송 단계는 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)을 지원합니다. HTML 이메일은 응답형이며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
 
-이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
+이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
 
 이메일 단계에는 다음과 같은 속성이 있습니다.
 
@@ -585,8 +585,8 @@ Send a document directly to a printer. It supports the following printing access
 ### 추가 매개 변수 {#additional-parameters-1}
 
 * **콘텐츠 루트**: 입력 XDP 템플릿에서 사용된 조각이나 이미지가 저장되는 저장소의 폴더에 대한 경로를 지정합니다.
-* **로케일**: 생성된 PDF 양식에 대한 기본 로케일을 지정합니다.
-* **Acrobat 버전**: 생성된 PDF 양식에 대해 타깃팅된 Acrobat 버전을 지정합니다.
+* **로케일**: 생성된 PDF 양식의 기본 로케일을 지정합니다.
+* **Acrobat 버전**: 생성된 PDF 양식의 대상 Acrobat 버전을 지정합니다.
 * **선형화된 PDF**: 웹 보기용으로 생성된 PDF을 최적화할지 여부를 지정합니다.
 * **태그가 지정된 PDF**: 생성된 PDF에 액세스할 수 있게 할지 여부를 지정합니다.
 * **XCI 문서**: XCI 파일의 경로를 지정합니다.

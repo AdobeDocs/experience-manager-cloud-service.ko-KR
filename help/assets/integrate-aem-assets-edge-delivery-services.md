@@ -3,7 +3,7 @@ title: ' [!DNL Edge Delivery Services]의 콘텐츠를 작성하는 동안  [!DN
 description: ' [!DNL AEM Assets] 다음 항목 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 다음 항목 [!DNL Microsoft Word] 포함 [!DNL Google Docs], integrate [!DNL AEM Assets] 다음 항목 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 다음 항목 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Universal Editor] 통합 [!DNL Dynamic Media with OpenAPI capabilities] 다음 항목 [!DNL Microsoft Word] 및 [!DNL Google Docs]을 통합하는 방법에 대해 알아봅니다.'
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
@@ -16,16 +16,16 @@ ht-degree: 6%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
          <td>
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
@@ -113,7 +113,7 @@ OpenAPI 기능과 Dynamic Media를 사용하여 콘텐츠의 자산을 전달하
 
 ## 샘플 [!DNL Edge Delivery Services] 사이트{#dynamic-media-with-google-docs-and-ms-word}
 
-[!DNL Edge Delivery Services]의 문서 기반 작성 기능을 사용하여 빌드된 사이트인 [WKND Travel](http://bit.ly/3DExLnf)을 참조하십시오. 사이트의 컨텐츠는 [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성되었으며 [!DNL Dynamic Media with OpenAPI capabilities]은(는) 컨텐츠의 자산을 전달하는 데 사용됩니다. 작성 후 컨텐츠는 문서에서 직접 게시됩니다. 이 [!DNL Edge Delivery Services (EDS)] 사이트에 대한 문서 기반 작성 설정을 만드는 데 사용되는 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드에 대해 알아보려면 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)를 살펴보십시오.
+[!DNL Edge Delivery Services]의 문서 기반 작성 기능을 사용하여 빌드된 사이트인 [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home)을 참조하십시오. 사이트의 컨텐츠는 [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)에서 작성되었으며 [!DNL Dynamic Media with OpenAPI capabilities]은(는) 컨텐츠의 자산을 전달하는 데 사용됩니다. 작성 후 컨텐츠는 문서에서 직접 게시됩니다. 이 [!DNL Edge Delivery Services (EDS)] 사이트에 대한 문서 기반 작성 설정을 만드는 데 사용되는 모든 필수 파일, 폴더, 구성, 웹 사이트의 스타일 및 기능 코드에 대해 알아보려면 이 [Git 저장소](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)를 살펴보십시오.
 
 ## [!DNL Edge Delivery Services]에 대해 [!DNL AEM Assets]을(를) [!DNL Universal Editor] 기반 작성 흐름과 통합 {#integrate-aem-assets-with-universal-editor-UE}
 
