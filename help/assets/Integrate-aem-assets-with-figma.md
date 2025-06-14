@@ -70,13 +70,13 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> [!DNL AEM] 환경에 로그인한 후 **[!UICONTROL 네트워크 오류]** 메시지가 표시되면 [Adobe 지원에 문의](https://helpx.adobe.com/contact.html)하십시오.
+> [!DNL AEM] 환경에 로그인한 후 **[!UICONTROL 네트워크 오류]** 메시지가 표시되면 [Adobe 지원에 문의](https://helpx.adobe.com/kr/contact.html)하십시오.
 
 ## [!DNL AEM]개의 자산을 [!DNL Figma] 캔버스로 가져오기{#import-aem-assets-into-figma-workflow}
 
 [!DNL Figma] 디자인 인터페이스에서 [Adobe Experience Manager(AEM) Assets 커넥터] 패널(#access-aem-assets-connector)에 액세스하고 다음을 수행합니다.
 
-1. [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널에서 자산을 검색합니다. 자세한 내용은 [자산 선택기 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)을 참조하세요.
+1. [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널에서 자산을 검색합니다. 자세한 내용은 [자산 선택기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)을 참조하세요.
 
 1. 자산을 캔버스로 드래그 앤 드롭하거나 자산을 선택하고 **[!UICONTROL 선택]**&#x200B;을 클릭하여 자산을 캔버스로 가져옵니다.
 
