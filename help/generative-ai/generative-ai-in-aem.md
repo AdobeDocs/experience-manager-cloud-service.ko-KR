@@ -5,9 +5,9 @@ feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
 * [AI 생성 스마트 태그](/help/assets/metadata-assets-view.md#ai-smart-tags)
 
-  디지털 Assets의 경우 수동 입력에 의존하는 대신 AI를 사용하여 설명 태그를 자동으로 할당할 수 있습니다. 이러한 AI 생성 태그는 메타데이터 품질을 향상시켜 에셋을 보다 쉽게 검색, 분류 및 추천할 수 있도록 합니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다.
+  디지털 자산의 경우 수동 입력에 의존하지 않고도 AI를 사용하여 설명 태그를 자동으로 할당할 수 있습니다. 이러한 AI 생성 태그는 메타데이터의 품질을 높여 자산을 검색, 분류 및 추천하기 쉽게 만들어 줍니다. 이 접근 방식은 수동 태그 지정을 제거하여 효율성을 향상시킬 뿐만 아니라 방대한 양의 디지털 콘텐츠에 대한 일관성과 확장성을 보장합니다.
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
