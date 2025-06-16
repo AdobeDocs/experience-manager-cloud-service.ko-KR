@@ -1,9 +1,9 @@
 ---
 title: Edge Delivery Services 양식 제출에서 403 금지된 오류 해결
 description: Edge Delivery Services에서 AEM Publish로 양식을 제출할 때 403 금지된 오류를 진단하고 해결하는 방법을 알아봅니다. 이 안내서에서는 CORS, Dispatcher 규칙 및 레퍼러 필터 문제를 포함한 일반적인 원인을 다룹니다.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%
