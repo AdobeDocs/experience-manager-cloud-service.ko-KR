@@ -4,9 +4,9 @@ description: ' [!DNL AEM Assets View]. [!DNL AEM Assets View] UI의 UI 확장성
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '641'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 6%
 * [액세스 대상 [!DNL Assets View]](#1).
 * [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/)에 대한 액세스 권한.
 * 조직 내 시스템 관리자 역할의 개발자에 대한 자격 부여. 자세한 내용은 [이 설명서](https://developer.adobe.com/uix/docs/guides/get-access/)를 참조하세요.
-* [!DNL Adobe IO command line tool (AIO CLI)]이(가) 로컬 컴퓨터에 설치되어 있습니다. 이 도구는 확장 프로젝트를 만들고 배포하는 데 필수적입니다. 자세한 내용은 [이 설명서](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)를 참조하세요.
+* [!DNL Adobe IO command line tool (AIO CLI)]이(가) 로컬 컴퓨터에 설치되어 있습니다. 이 도구는 확장 프로젝트를 만들고 배포하는 데 필수적입니다. 자세한 내용은 [첫 번째 App Builder 응용 프로그램 만들기](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up)&#x200B;(액세스를 위한 인증 필요)를 참조하십시오.
 * [!DNL JavaScript], [!DNL Node.js] 및 [!DNL React] 기술을 잘 이해하고 있습니다.
 
 ## [!DNL Assets View]에 UI 확장성 구성 요소 추가 {#ui-extensibility-in-assets-view}
