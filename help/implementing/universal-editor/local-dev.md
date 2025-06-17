@@ -4,7 +4,7 @@ description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 36%
@@ -45,7 +45,7 @@ HTTPS로 보호되는 외부 프레임 내에서는 비보안 HTTP 프레임을 
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 
-사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법은 [이 문서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ko).
+사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법은 [이 문서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
 
 ## Universal Editor Service 설치 {#install-ue-service}
 
@@ -53,7 +53,7 @@ HTTPS로 보호되는 외부 프레임 내에서는 비보안 HTTP 프레임을 
 
 [NodeJS 버전 20](https://nodejs.org/en/download/releases)은(는) 유니버설 편집기 서비스의 로컬 복사본을 실행해야 합니다.
 
-범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 대한 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)를 참조하세요.
+범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 대한 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)를 참조하세요.
 
 소프트웨어 배포의 `universal-editor-service.cjs` 파일을 로컬 개발 환경에 저장합니다.
 
@@ -156,7 +156,7 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 
 ## 로컬 Universal Editor Service를 사용하여 페이지 편집 {#editing}
 
-[로컬에서 실행되는 범용 편집기 서비스](#running-ue)와(과) 로컬 서비스를 사용하도록 계측된 [콘텐츠 페이지](#using-loca-ue)를 사용하면 이제 편집기를 시작할 수 있습니다.
+[로컬에서 실행되는 범용 편집기 서비스](#running-ue)와(과) 로컬 서비스를 사용하도록 계측된 [콘텐츠 페이지](/help/implementing/universal-editor/getting-started.md)를 사용하면 이제 편집기를 시작할 수 있습니다.
 
 1. 브라우저를 열고 `https://localhost:8000/ping`으로 이동합니다.
 1. 브라우저에서 [자체 서명된 인증서](#ue-https)를 수락하도록 지시합니다.
