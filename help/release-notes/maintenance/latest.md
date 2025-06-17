@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -18,28 +18,28 @@ ht-degree: 43%
 
 ## 릴리스 21193 {#21193}
 
-다음은 2025년 6월 10일에 공개적으로 릴리스된 유지 보수 릴리스 21193에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 21005.
+2025년 6월 10일에 릴리스된 유지 관리 릴리스 21193의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 21005이었습니다.
 
-2025.6.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스(2025.6.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-21193}
 
-* ASSETS-51245: Touch UI의 대용량 폴더 목록에 대한 성능이 향상되었습니다.
-* ASSETS-51686: 간편한 작업 취소, 향상된 로깅 및 큰 결과를 위한 감사 다운로드를 포함하여 대량 작업 작업이 개선되었습니다.
-* CQ-4360131: API 클라이언트가 올바른 구조화된 오류 정보를 수신할 수 있는 OpenAPI 엔드포인트에 대한 오류 응답이 개선되었습니다.
+* ASSETS-51245: Touch UI에서 대용량 폴더 목록의 성능이 개선되었습니다.
+* ASSETS-51686: 대량 작업의 개선으로 작업 취소가 쉬워졌고, 로깅 기능이 향상되었으며, 대용량 결과에 대한 감사 다운로드가 가능해졌습니다.
+* CQ-4360131: OpenAPI 엔드포인트에 대한 오류 응답이 향상되어 API 클라이언트가 올바른 구조의 오류 정보를 받을 수 있습니다.
 
 ### 해결된 문제 {#fixed-issues-21193}
 
-* ASSETS-41007: 삭제된 자산은 Content Hub에 계속 표시될 수 있습니다.
-* ASSETS-50994: AemRequestEventFilter로 인해 Jetty 스레드가 과도하게 경합됩니다.
-* ASSETS-50155: 중복된 메타데이터 변경 이벤트가 트리거되었습니다.
-* ASSETS-50716: Assets 목록 보기의 제목별 정렬이 예상대로 작동하지 않습니다.
-* ASSETS-50820: 자산 관계 API에 대한 잘못된 요청이 400 오류로 제대로 거부되는지 확인합니다.
-* ASSETS-50562: 에셋 업로드 API는 이름 충돌에 대한 기본 동작으로 버전을 생성해야 합니다.
-* ASSETS-50992: Assets API initiateUpload.json 엔드포인트는 &#39;application/json&#39;의 컨텐츠 유형을 반환해야 합니다.
-* ASSETS-51322: 작업 실패 후 무기한 지속되는 비동기 바리케이드의 자동 제거 및 만료입니다.
-* ASSETS-51809: 브라우저 캐싱으로 인해 CSV 편집기에 최근에 저장된 변경 사항이 표시되지 않았습니다.
-* SITES-31678: 컨텍스트 인식 참조가 포함된 XF(경험 구성요소)가 XF 게시 API에서 올바른 언어 루트를 해결하지 못했습니다.
+* ASSETS-41007: 삭제된 자산이 Content Hub에 계속 표시될 수 있습니다.
+* ASSETS-50994: AemRequestEventFilter가 과도한 Jetty 스레드 경합을 일으킵니다.
+* ASSETS-50155: 중복된 메타데이터 변경 이벤트가 발생했습니다.
+* ASSETS-50716: 자산 목록 보기에서 제목별 정렬이 예상대로 작동하지 않습니다.
+* ASSETS-50820: 자산 관계 API에 대한 잘못된 요청이 400 오류로 올바르게 거부되도록 합니다.
+* ASSETS-50562: 자산 업로드 API가 이름 충돌 시 기본적으로 버전을 생성해야 합니다.
+* ASSETS-50992: 자산 API initiateUpload.json 엔드포인트가 “application/json” 콘텐츠 유형을 반환해야 합니다.
+* ASSETS-51322: 작업 실패 후에도 무기한 유지되는 비동기 바리케이드가 자동으로 제거되고 만료됩니다.
+* ASSETS-51809: CSV 편집기가 브라우저 캐싱으로 인해 최근에 저장된 변경 사항을 표시하지 않았습니다.
+* SITES-31678: 컨텍스트 인식 참조를 사용하는 경험 조각(XF)이 XF 게시 API에서 올바른 언어 루트를 해결하지 못했습니다.
 
 
 ### 알려진 문제 {#known-issues-21193}
