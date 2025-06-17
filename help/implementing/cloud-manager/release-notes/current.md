@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.6.0 릴리스 일자는 2025년 6�
 
 ## 새로운 기능 {#what-is-new}
 
-* **라이선스 대시보드에 Edge Delivery Services 라이선스가 포함됨**
+* **라이선스 대시보드에 Edge Delivery Services 라이선스가 포함되었습니다**
 
   이제 Edge Delivery Services 라이선스 사용량이 라이선스 대시보드에 표시되어 자격과 상태를 더 명확하게 파악할 수 있습니다. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.6.0 릴리스 일자는 2025년 6�
 
   [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)를 참조하십시오.
 
-* **Edge Delivery 사이트 구성 업데이트됨**
+* **Edge Delivery 사이트 구성이 업데이트되었습니다.**
 
   **저장소 URL** 대신 **Edge Delivery Origin**&#x200B;을 요청하여 Edge Delivery 사이트를 추가하는 흐름을 간소화하여 온보딩과 설정을 더 빠르고 직관적으로 만들었습니다. <!-- CMGR-67686 -->
 
@@ -63,14 +63,14 @@ Cloud Manager의 개인 Beta 프로그램에 참여하여 일반 릴리스 전�
 
 이제 Cloud Manager는 **전문화된 테스트 환경**&#x200B;이라는 새로운 환경 유형의 추가를 지원합니다. 이 환경은 팀이 라이브로 전환하기 전에 거의 프로덕션 환경에서 기능을 검증할 수 있도록 설계되었습니다. 이 환경 유형은 *프로덕션 + 스테이징*, *개발* 또는 *신속한 개발* 환경과는 다르며 고급 검증 시나리오를 실행할 수 있는 집중 공간을 제공합니다.
 
-[특수 테스트 환경 추가](/help/implementing/cloud-manager/specialized-test-environment.md)를 참조하십시오.
+[전문화된 테스트 환경 추가](/help/implementing/cloud-manager/specialized-test-environment.md)를 참조하십시오.
 
 ![전문화된 테스트 환경 라디오 버튼이 선택된 환경 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)에 이메일을 보내 주십시오.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)에 이메일을 보내 주십시오.
 
 
-### 이제 Azure DevOps에 대한 지원을 통해 나만의 Git(BYOG) 가져오기 {#gitlab-bitbucket-azure-vsts}
+### 자체 Git 가져오기(BYOG) - Azure DevOps 지원 포함 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -85,10 +85,10 @@ Cloud Manager의 개인 Beta 프로그램에 참여하여 일반 릴리스 전�
 
 ![저장소 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 
-**BYOG에 대해 자주 묻는 질문**
+**BYOG에 대한 FAQ**
 
 | 질문 | 답변 |
 |---|---|
@@ -100,22 +100,22 @@ Cloud Manager의 개인 Beta 프로그램에 참여하여 일반 릴리스 전�
 
 #### 액세스 토큰 관리{#manage-access-tokens}
 
-Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 외부 BYOG 저장소와 연결된 액세스 토큰을 보고, 이름을 바꾸고, 삭제합니다.
+Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub Enterprise, GitLab, Bitbucket, Azure DevOps와 같은 외부 BYOG 저장소와 관련된 액세스 토큰을 보고, 이름을 변경하고, 삭제할 수 있습니다.
 
-[액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)를 참조하세요.
+[액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)를 참조하십시오.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)(으)로 전자 메일을 보내세요.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오.
 
 
 ### Edge Delivery 구성 파이프라인 추가 {#add-eds-pipeline}
 
 이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)에 이메일을 보내 주십시오.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)에 이메일을 보내 주십시오.
 
 
 ## 버그 수정

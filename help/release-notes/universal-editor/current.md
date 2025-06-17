@@ -7,14 +7,14 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 34%
+ht-degree: 54%
 
 ---
 
 
 # 범용 편집기 2025.05.21 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 5월 21일 릴리스에 대한 릴리스 정보입니다.
+다음은 범용 편집기 2025년 5월 21일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 34%
 
 ## 새로운 기능 {#what-is-new}
 
-* **페이지 열기 단추 사용 안 함** - 이제 페이지 열기 단추 [을(를) 사용하지 않도록 설정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#open-page)
+* **페이지 열기 버튼 비활성화** - 페이지 열기 버튼을 [이제 비활성화할 수 있습니다.](/help/implementing/universal-editor/customizing.md#open-page)
 * **콘텐츠 트리에서 속성에 액세스** - [콘텐츠 트리에서 항목을 두 번 클릭하면](/help/sites-cloud/authoring/universal-editor/navigation.md) 연결된 속성이 사이드 패널에서 자동으로 열립니다.
 
 ## 기타 개선 사항 {#other-improvements}

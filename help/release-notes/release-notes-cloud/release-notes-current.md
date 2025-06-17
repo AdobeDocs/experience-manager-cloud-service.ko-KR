@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
 source-wordcount: '2077'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 **속성 기반 액세스 제어(ABAC)**
 
-[Content Hub에서 이제 에셋에 액세스하는 데 규칙 기반 제한을 적용할 수 있습니다](/help/assets/attribute-based-access-control.md). 자산 권한은 거버넌스를 보장하고 관련 자산만 사용자가 접근할 수 있도록 보장합니다.
+[이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다](/help/assets/attribute-based-access-control.md). 자산 권한은 거버넌스를 보장하고 관련 자산만 사용자가 접근할 수 있도록 보장합니다.
 
 자산 제한 규칙은 메타데이터를 기반으로 하며, 규칙에 정의된 조건이 자산 메타데이터와 일치하면 자산이 사용자 그룹에 표시됩니다.
 
@@ -78,19 +78,19 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 **UI 브랜딩**
 
-이제 Content Hub을 통해 관리자는 [배너 이미지, 배너 제목, 본문 텍스트와 기본 및 보조 색상을 포함하여 브랜드별 요소로 사용자 인터페이스를 사용자 지정](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)할 수 있습니다. 이러한 개선 사항은 브랜드 일관성을 보장하고 사용자 온보딩을 간소화하며 신뢰를 구축하는 데 도움이 됩니다.
+이제 Content Hub를 통해 관리자는 배너 이미지, 배너 제목, 본문 텍스트, 기본 및 보조 색상 등 [브랜드별 요소를 사용하여 사용자 인터페이스를 사용자 정의](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)할 수 있습니다. 이러한 개선 사항은 브랜드 일관성을 보장하고 사용자 온보딩을 간소화하며 신뢰를 구축하는 데 도움이 됩니다.
 
 ![UI 브랜딩](/help/assets/assets/content-hub-ui-branding.png)
 
 **공개 링크 공유**
 
-Content Hub은 이제 응용 프로그램 액세스 없이 [외부 사용자가 자산 메타데이터를 보거나 자산을 다운로드할 수 있도록 공유 가능한 링크를 생성](/help/assets/share-assets-content-hub.md##share-assets)할 수 있습니다.
+이제 Content Hub는 애플리케이션에 액세스하지 않고도 [외부 사용자가 자산 메타데이터를 보거나 자산을 다운로드할 수 있도록 공유 가능한 링크 생성](/help/assets/share-assets-content-hub.md##share-assets)을 지원합니다.
 
 ![UI 브랜딩](/help/assets/assets/public-and-private-link.png)
 
 **컬렉션 거버넌스**
 
-이제 Content Hub을 사용하여 [생성 중에 컬렉션에 대한 액세스를 제어하여 권한이 있는 사용자만 그룹화된 자산을 보거나 관리할 수 있도록](/help/assets/collections-content-hub.md##create-collections)할 수 있습니다. 이를 통해 보안이 강화되고, 협업이 원활해지며, 자산 관리가 체계화되고, 거버넌스가 간소화됩니다.
+이제 Content Hub를 사용하면 [컬렉션을 생성하는 동안 컬렉션에 대한 액세스를 제어할 수 있으므로 권한이 있는 사용자만 그룹화된 자산을 보거나 관리](/help/assets/collections-content-hub.md##create-collections)할 수 있습니다. 이를 통해 보안이 강화되고, 협업이 원활해지며, 자산 관리가 체계화되고, 거버넌스가 간소화됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
@@ -100,11 +100,11 @@ Content Hub은 이제 응용 프로그램 액세스 없이 [외부 사용자가 
 
 **여러 자산을 ZIP으로 다운로드**
 
-이제 Content Hub을 통해 [선택한 에셋과 해당 표현물을 ZIP 파일로 다운로드](/help/assets/download-assets-content-hub.md#download-asset-renditions)할 수 있으며 파일 관리를 단순화하는 별도의 파일로 다운로드할 수 없습니다.
+이제 Content Hub를 사용하면 [선택한 자산과 해당 렌디션을 별도의 파일이 아닌 ZIP 파일로 다운로드](/help/assets/download-assets-content-hub.md#download-asset-renditions)하여 파일 관리를 간소화할 수 있습니다.
 
 **Content Hub의 Dynamic Media 렌디션**
 
-Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설정 렌디션 및 스마트 자르기에 액세스하여 다운로드할 수 있습니다](/help/assets/download-assets-content-hub.md#download-asset-renditions).
+[Content Hub 사용자 인터페이스 내에서 다운로드할 수 있는 모든 Dynamic Media 사전 설정 렌디션과 스마트 자르기](/help/assets/download-assets-content-hub.md#download-asset-renditions)에 직접 액세스할 수 있습니다.
 
 &#x200B;![Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub 사용자 인터페이스 내에서 직접 [Dynamic Media 사전 설
 
 **AJO B2C와의 Dynamic Media 네이티브 통합**
 
-[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 기본 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 에셋(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 채널 간에 실시간 업데이트와 초개인화된 경험을 제공할 수 있습니다.
+[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 네이티브 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 자산(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 여러 채널에서 실시간 업데이트 및 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463789/?learn=on&enablevpops=&autoplay=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
