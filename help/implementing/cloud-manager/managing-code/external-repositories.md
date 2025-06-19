@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
+source-git-commit: f51730be823782ba722a33be6da409fad14429eb
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2301'
 ht-degree: 28%
 
 ---
@@ -83,6 +83,9 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/github —>
+
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
@@ -93,6 +96,8 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 [액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)도 참조하세요.
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
@@ -105,6 +110,8 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
@@ -115,6 +122,8 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 [액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)도 참조하세요.
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
@@ -208,11 +217,16 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/github —>
+
 | 필수 웹후크 이벤트 |
 | --- |
 | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 필수 웹후크 이벤트 |
 | --- |
@@ -220,11 +234,15 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 필수 웹후크 이벤트 |
 | --- |
 | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 필수 웹후크 이벤트 |
 | --- |
@@ -244,12 +262,17 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendor/github —>
+
 검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
 
 ![GitHub Enterprise에서 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작되면 댓글이 추가됩니다. 유효성 검사가 완료되면(성공 또는 실패) 초기 주석을 제거하고 유효성 검사 결과 또는 오류 세부 정보가 포함된 새 주석으로 대체합니다.
 
@@ -271,6 +294,8 @@ GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작
 
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 코드 품질 유효성 검사가 실행 중인 경우:
 
