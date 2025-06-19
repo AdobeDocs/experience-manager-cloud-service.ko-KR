@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## &#x200B;9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 상거래에서 어떻게 작동합니까?
 
-Adobe는 Dispatcher에 캐시된 페이지에 대해 TTL 기반의 캐시 무효화를 설정할 것을 권장합니다. 가격이나 재고와 같은 동적 정보의 경우, Adobe는 클라이언트측에서 데이터를 렌더링할 것을 권장합니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [Dispatcher 캐시 최적화](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ko)를 참조하십시오.
+Adobe는 Dispatcher에 캐시된 페이지에 대해 TTL 기반의 캐시 무효화를 설정할 것을 권장합니다. 가격이나 재고와 같은 동적 정보의 경우, Adobe는 클라이언트측에서 데이터를 렌더링할 것을 권장합니다. TTL 기반의 캐시 무효화에 대한 자세한 내용은 [Dispatcher 캐시 최적화](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)를 참조하십시오.
 
 ## &#x200B;10. Commerce가 포함된 AEM 콘텐츠 전반의 통합 검색에 대한 권장 사항이 있습니까?
 
