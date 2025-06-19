@@ -25,15 +25,15 @@ Adobe Experience Manager as a Cloud Service의 새로운 기능은? 최신 사�
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
+[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
 
 ## 핵심 개념 {#core-concepts}
 
 튜토리얼 구현은 여러 개의 강력한 AEM 기능을 사용합니다. 다음을 사용하여 사이트를 구현합니다.
 
-* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
+* [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=ko)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
-* [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [편집 가능한 템플릿](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko)
+* [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=ko)
