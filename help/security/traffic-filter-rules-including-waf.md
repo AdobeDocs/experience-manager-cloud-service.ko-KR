@@ -4,9 +4,9 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ ht-degree: 100%
 * **대시보드 도구:** CDN 로그를 분석하여 새로운 트래픽 필터 규칙을 구상해 보십시오.
 * **권장 스타터 규칙:** 규칙 집합을 시작하는 데 필요한 규칙입니다.
 * **튜토리얼:** 대시보드 도구로 올바른 규칙을 선언하는 방법을 비롯해 기능에 대한 실질적인 지식입니다.
-
-**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내 주시기 바랍니다.
 
 ## 트래픽 보호 개요 {#traffic-protection-overview}
 
