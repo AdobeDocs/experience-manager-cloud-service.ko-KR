@@ -1,22 +1,30 @@
 ---
-title: 론치
-description: 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
+title: 페이지용 론치
+description: Adobe Experience Manager as a Cloud Service에서 Launches for Pages를 사용하는 방법을 알아봅니다. 론치를 사용하면 현재 페이지를 유지하면서 향후 릴리스를 위한 콘텐츠를 효율적으로 개발할 수 있습니다.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 75%
 
 ---
 
-# 론치 {#launches}
+# 페이지용 론치 {#launches-for-pages}
 
-론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 향후 릴리스를 위한 콘텐츠를 효율적으로 개발할 수 있습니다.
 
-*Launch*&#x200B;을(를) 만들어 현재 페이지를 유지 관리하는 동시에 나중에 게시할 준비를 변경할 수 있도록 합니다. 즉, 현재 게시된 페이지와 향후 한 번에 게시할 페이지 버전이라는 두 가지 버전을 동시에 효과적으로 편집합니다. 해당 시간이 되면 원래 페이지를 바꾸고 새 버전을 게시할 수 있습니다.
+*Launch*&#x200B;을(를) 만들어 현재 콘텐츠를 유지 관리하는 동시에 나중에 게시할 준비를 변경할 수 있도록 합니다. AEM 페이지의 경우 현재 게시된 페이지와 향후 한 번에 게시될 해당 페이지의 버전, 이렇게 두 버전을 동시에 효과적으로 편집하는 것입니다. 해당 시간이 되면 원래 페이지를 바꾸고 새 버전을 게시할 수 있습니다.
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 *시작*&#x200B;을(를) 만든 다음 *시작* 페이지를 편집하고 업데이트한 후 *홍보*&#x200B;를 *Source*(으)로 되돌립니다. 그런 다음 이 *Source* 페이지를 활성화할 수 있습니다(최상위). 홍보를 하면 론치 콘텐츠가 소스 페이지에 다시 복제되며, 홍보는 수동 또는 자동으로 수행할 수 있습니다(론치를 생성 및 편집할 때 설정된 필드에 따라 다름).
 
@@ -28,7 +36,7 @@ ht-degree: 83%
 다음 작업도 수행할 수 있습니다.
 
 * 론치 분기의 콘텐츠를 탐색하고 필요에 따라 페이지를 추가하거나 제거합니다.
-* 미래의 특정 날짜/시간에 게시된 콘텐츠가 표시되는 방식을 미리 봅니다.
+* 미래의 특정 날짜에 게시된 콘텐츠가 어떻게 표시되는지 미리 봅니다.
 
 다음 분기가 되면 소스 페이지(업데이트된 콘텐츠 보관 중)를 게시할 수 있도록 론치 페이지를 홍보합니다. 모든 페이지를 홍보하거나 수정한 페이지만 홍보할 수 있습니다.
 
@@ -106,6 +114,12 @@ ht-degree: 83%
    ![Sites 콘솔의 론치에 대해 수행하는 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## 론치 콘솔 {#the-launches-console}
+
+>[!NOTE]
+>
+>이 콘솔은 페이지 론치용으로만 사용됩니다.
+>
+>콘텐츠 조각을 관리하려면 [콘텐츠 조각 실행](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)을 참조하십시오.
 
 론치 콘솔은 론치에 대한 개요를 제공하며 나열된 론치에 대해 조치를 취할 수 있도록 해줍니다.
 
