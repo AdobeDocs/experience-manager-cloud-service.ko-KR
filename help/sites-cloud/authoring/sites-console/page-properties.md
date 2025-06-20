@@ -50,7 +50,7 @@ ht-degree: 34%
 
 ### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **브랜드 슬러그**
    * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
