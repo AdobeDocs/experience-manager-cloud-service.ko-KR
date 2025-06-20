@@ -5,7 +5,7 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 47%
@@ -84,7 +84,7 @@ ht-degree: 47%
 * [페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Site](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
-* [실행](/help/sites-cloud/authoring/launches/overview.md)
+* [론치](/help/sites-cloud/authoring/launches/overview.md)
 * [언어 복사](/help/sites-cloud/administering/translation/overview.md)
 * [CSV 보고서](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
@@ -238,11 +238,11 @@ AEM 도구 모음의 맨 오른쪽에 있는 **보기** 아이콘은 선택한 �
 * **편집** - 선택한 페이지가 만들어진 방식에 따라 **편집** 작업을 수행하면 해당 편집기가 열립니다.
    * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM 페이지 편집기로 만든 페이지의 경우
    * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 유니버설 편집기로 만든 페이지의 경우
-* [**속성**](/help/sites-cloud/authoring/sites-console/page-properties.md) - 페이지 속성 창을 엽니다.
+* [**속성**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - 페이지 속성 창을 엽니다.
 * [**잠금**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 다른 사용자가 변경하지 못하도록 페이지를 잠급니다.
 * [**복사**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - 페이지 복사
 * [**이동**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - 페이지 이동 또는 이름 바꾸기
-* [**빠른 Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지 또는 페이지를 즉시 Publish
+* [**빠른 게시**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지를 즉시 게시
 * [**게시 관리**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 게시할 페이지를 예약합니다.
 * [**복원**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - 페이지 또는 페이지 트리의 버전 복원
 * [**삭제**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - 페이지 삭제

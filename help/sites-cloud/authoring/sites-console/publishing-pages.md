@@ -1,28 +1,35 @@
 ---
-title: 페이지 게시
-description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
+title: 사이트 콘솔에서 페이지 게시
+description: 사이트 콘솔을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 77%
+source-wordcount: '1635'
+ht-degree: 74%
 
 ---
 
-# 페이지 게시 {#publishing-pages}
+
+# 사이트 콘솔에서 페이지 게시 {#publishing-pages}
 
 작성 환경에서 콘텐츠를 작성 및 검토한 다음, 목표는 [콘텐츠를 공개 웹 사이트(게시 환경)에서 사용할 수 있도록](/help/sites-cloud/authoring/author-publish.md) 만드는 것입니다.
 
 이를 페이지 게시라고도 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 게시 및 게시 취소 시 페이지는 삭제될 때까지 추가 변경 사항에 대해 작성자 환경에서 사용할 수 있습니다.
 
-페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수 있습니다.
+[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 사용하여 페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수 있습니다.
 
->[!NOTE]
+>[!TIP]
 >
->[경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)을 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지를 게시하는 것과 동일한 절차를 따릅니다.
+>사이트 콘솔이 아닌 다른 위치에서 게시할 수 있습니다.
+>
+>* [페이지 편집기에서](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [유니버설 편집기에서](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 콘솔 또는 편집기에서
+>
+>이러한 위치에서 게시하는 것은 다양한 옵션을 제공하지만 여기에 설명된 유사한 절차와 일반적인 아이디어를 따릅니다.
 
 ## 용어 {#terminology}
 
@@ -37,14 +44,6 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 * **복제하기 / 복제**
    * 페이지를 게시할 때(예: 작성자에서 미리보기) 한 서비스에서 다른 서비스로의 데이터(예: 페이지 콘텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
    * 주로 개발자가 사용하는 용어입니다.
-
-## 페이지 게시 {#publishing-pages-1}
-
-다음 위치에 따라 게시할 수 있습니다.
-
-* [페이지 편집기에서](#publishing-from-the-page-editor)
-* [다음에서 ](#publishing-from-the-sites-console)
-* [유니버설 편집기에서](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -63,47 +62,14 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 >* 하위 페이지만 게시하도록 선택한 경우(상위 페이지에 주문 정보가 있기 때문)
 >* 상위 및 하위 페이지가 별도의 작업으로 게시되는 경우
 
-### 페이지 편집기에서 게시 {#publishing-from-the-page-editor}
-
-[페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)에서 페이지를 편집하는 경우 편집기에서 직접 게시할 수 있습니다.
-
-1. **페이지 정보** 아이콘을 선택하여 메뉴를 열고 **페이지 게시** 옵션을 엽니다.
-
-   ![페이지 옵션을 통해 페이지 게시](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. 페이지에 게시해야 하는 참조가 있는지에 따라 다음과 같이 달라집니다.
-
-   * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
-   * 페이지에 게시해야 하는 참조가 있을 경우, **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
-      * 페이지와 함께 게시할 자산, 태그 등을 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
-      * **취소**&#x200B;를 사용하여 작업을 중단합니다.
-
-   ![페이지를 사용하여 참조 게시](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. **게시**&#x200B;를 선택하면 페이지가 게시 환경에 복제됩니다. 페이지 편집기에 게시 작업을 확인하는 정보 배너가 표시됩니다.
-
-   ![게시 상태 정보 배너](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   콘솔에서 동일한 페이지를 볼 때 업데이트된 게시 상태가 표시됩니다.
-
-   ![Sites 콘솔 열 보기의 페이지 게시 상태](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->페이지 편집기에서 게시하면 약식 게시가 됩니다. 즉, 선택한 페이지만 게시되고 하위 페이지는 게시되지 않습니다.
-
->[!NOTE]
->
->편집기의 [별칭](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-
-### 사이트 콘솔에서 게시 {#publishing-from-the-sites-console}
+## 사이트 콘솔에서 페이지 게시 {#publishing-from-the-sites-console}
 
 **사이트** 콘솔에는 두 가지 게시 옵션이 있습니다.
 
 * [빠른 게시](#quick-publish)
 * [게시 관리](#manage-publication)
 
-#### 빠른 게시 {#quick-publish}
+### 빠른 게시 {#quick-publish}
 
 **빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이로 인해 게시되지 않은 참조도 자동으로 게시됩니다.
 
@@ -123,7 +89,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 >
 >빠른 게시는 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
 
-#### 게시 관리 {#manage-publication}
+### 게시 관리 {#manage-publication}
 
 **게시 관리**&#x200B;는 **빠른 게시**&#x200B;보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 사용자 지정, 미리보기 서비스(가능한 경우)에 게시 및 적용 가능한 워크플로 시작 등의 작업을 허용하며 나중에 게시할 수 있는 옵션을 제공합니다.
 
@@ -149,13 +115,13 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
      나중에 게시하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로를 시작합니다. 반대로 나중에 게시 취소하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로를 시작합니다.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)로 이동하여 해당 워크플로를 종료합니다.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >게시를 위한 콘텐츠 예약은 페이지 속성 [&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)에서 사용할 수 있는 **설정 시간** 및 **해제 시간**&#x200B;과(와) 동일하지 않지만 유사한 상황에서 사용할 수 있습니다.
+     >게시를 위한 컨텐츠 예약은 컨텐츠를 복제하고 게시 워크플로를 준수합니다. 게시를 취소하지 않고 이미 게시된 콘텐츠를 일시적으로 숨기려면 페이지 속성에서 사용할 수 있는 [**설정 시간** 및 **해제 시간**&#x200B;을 고려하십시오.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![게시 관리 옵션](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 1. **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
 
-
-
 ## 페이지 게시 취소 {#unpublishing-pages}
 
 페이지 게시를 취소하면 더 이상 읽을 수 없도록 페이지가 게시 또는 [미리보기](/help/sites-cloud/authoring/sites-console/previewing-content.md) 환경에서 제거됩니다.
-
-[게시와 유사한 방식으로](#publishing-pages) 원하는 대상에서 하나 이상의 페이지에 대한 게시를 취소할 수 있습니다.
-
-* [페이지 편집기에서](#unpublishing-from-the-editor)
-* [Sites 콘솔에서](#unpublishing-from-the-console)
-
-### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
-
-페이지를 편집할 때 해당 페이지의 게시를 취소하려면 [페이지를 게시](#publishing-from-the-editor)하는 것과 마찬가지로 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
-
->[!NOTE]
->
->편집기의 [별칭](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)을 통해 액세스하는 페이지는 게시를 취소할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-
-### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
 [게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 

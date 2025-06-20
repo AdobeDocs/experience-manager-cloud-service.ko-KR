@@ -4,7 +4,7 @@ description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 �
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Adobe은 최신 Javascript 기반 개발 방식을 수용하는 간소화된 편
 | 콘텐츠 트리 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 트리 내에서 순서를 변경할 수도 있습니다. |
 | 기기 시뮬레이션 | [!BADGE 사용 가능]{type=Positive} | [구성된 장치를 시뮬레이션할 수 있지만](/help/sites-cloud/administering/responsive-layout.md) 사용자는 시뮬레이션할 다른 화면 차원을 수동으로 입력할 수 없습니다. | [!BADGE 사용 가능]{type=Positive} | [시뮬레이션할 모든 화면 차원을 수동으로 입력할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) 그러나 기본 중단점을 구성할 수 없습니다. |
 | [페이지 잠금](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 편집기에서 페이지를 잠금/잠금 해제할 수 있는 확장자를 사용하여 사이트 콘솔에 설정된 잠금 상태를 유지합니다. |
-| [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 편집기에서 페이지 속성에 액세스할 수 있는 확장 기능을 사이트 관리자로부터 받을 수 있습니다 |
+| [페이지 속성](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 편집기에서 페이지 속성에 액세스할 수 있는 확장 기능을 사이트 관리자로부터 받을 수 있습니다 |
 | 다중 필드 속성 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용할 수 없음]{type=Negative} | 계획됨 |
 | [원격 DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} |  |
 | [페이지 버전 관리](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} |  |

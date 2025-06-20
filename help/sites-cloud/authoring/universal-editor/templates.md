@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ ht-degree: 26%
 
 1. **사이트** 콘솔을 사용하여 템플릿으로 사용할 [새 페이지 또는 기존 페이지로 이동](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)한 다음 탭하거나 클릭하여 선택합니다.
 
-1. 페이지를 선택한 후 도구 모음에서 [**속성** 아이콘](/help/sites-cloud/authoring/sites-console/page-properties.md)을 탭하거나 클릭합니다.
+1. 페이지를 선택한 후 도구 모음에서 [**속성** 아이콘](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)을 탭하거나 클릭합니다.
 
 1. **템플릿 설정** 섹션 아래에 있는 속성 대화 상자의 **고급** 탭에서 **페이지를 템플릿으로 사용** 전환을 선택합니다.
 

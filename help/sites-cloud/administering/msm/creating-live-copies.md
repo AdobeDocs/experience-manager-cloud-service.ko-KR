@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -212,7 +212,7 @@ Live Copy 페이지의 속성에는 다음과 같은 Live Copy에 대한 정보�
 
 ### 블루프린트 페이지의 Live Copy 보기 {#seeing-the-live-copies-of-a-blueprint-page}
 
-블루프린트 구성에서 참조하는 블루프린트 페이지는 현재 (블루프린트) 페이지를 소스로 사용하는 Live Copy 페이지 목록을 제공합니다. 이 목록을 사용하여 Live Copy를 계속 추적할 수 있습니다. 이 목록은 [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)의 **블루프린트** 탭에 표시됩니다.
+블루프린트 구성에서 참조하는 블루프린트 페이지는 현재 (블루프린트) 페이지를 소스로 사용하는 Live Copy 페이지 목록을 제공합니다. 이 목록을 사용하여 Live Copy를 계속 추적할 수 있습니다. 이 목록은 [페이지 속성의 **블루프린트** 탭에 표시됩니다.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![페이지 속성의 블루프린트 탭](../assets/live-copy-blueprint-tab.png)
 
@@ -275,7 +275,7 @@ Live Copy 페이지의 속성에는 다음과 같은 Live Copy에 대한 정보�
 
 #### Live Copy 개요에서 블루프린트 롤아웃 {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-블루프린트 페이지를 선택하면 Live Copy 개요[&#128279;](live-copy-overview.md#using-the-live-copy-overview)에서도 **롤아웃** 작업을 사용할 수 있습니다.
+블루프린트 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)에서도 [**롤아웃** 작업을 사용할 수 있습니다.
 
 1. [Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)를 연 다음 블루프린트 페이지를 선택합니다.
 1. 도구 모음에서 **롤아웃**&#x200B;을 선택합니다.
@@ -462,7 +462,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
    >
    >약식 Live Copy로 전환하면 변경 내용이 즉시 적용되며 취소가 불가능합니다.
    >
-   >자세한 내용은 [Live Copy - 구성](overview.md#live-copies-composition)을 참조하십시오.
+   >자세한 내용은 [Live Copy - 컴포지션](overview.md#live-copies-composition)을 참조하십시오.
 
 1. 업데이트를 유지하려면 **저장**&#x200B;을(를) 선택하십시오.
 
@@ -564,7 +564,7 @@ Live Copy 페이지를 재설정하여 다음과 같은 작업을 수행할 수 
 
 #### Live Copy 개요에서 Live Copy 페이지 재설정 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-Live Copy 페이지를 선택하면 Live Copy 개요[&#128279;](live-copy-overview.md#using-the-live-copy-overview)에서도 **재설정** 작업을 사용할 수 있습니다.
+Live Copy 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)에서도 [**재설정** 작업을 사용할 수 있습니다.
 
 1. [Live Copy 개요](live-copy-overview.md#using-the-live-copy-overview)를 연 다음 Live Copy 페이지를 선택합니다.
 1. 도구 모음에서 **재설정**&#x200B;을 선택합니다.
