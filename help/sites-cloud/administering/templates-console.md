@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 속성 {#properties}
 
-[페이지 속성을 편집할 수 있는 것과 같은 방법으로 [템플릿의 속성](/help/sites-cloud/authoring/page-editor/templates.md)을 편집할 수 있습니다.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) 템플릿 속성은 다음과 같습니다.
+[&#128279;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)페이지 속성을 편집할 수 있는 것과 같은 방법으로 [템플릿의 속성](/help/sites-cloud/authoring/page-editor/templates.md)을 편집할 수 있습니다. 템플릿 속성은 다음과 같습니다.
 
 * 템플릿 제목
 * 설명
