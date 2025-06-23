@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3181'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>8/31/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava 코어 라이브러리는 Cloud Service에서 더 이상 사용되지 않습니다. <a href="#com.google.common">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>Google Guava Core Libraries는 더이상 Cloud Service에서 사용되지 않습니다. <a href="#com.google.common">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/15/2023</td>
     <td>8/31/2025</td>
   </tr>
@@ -363,17 +363,17 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 * 프로젝트에 이 번들 추가
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-요구 사항에 따라 다른 버전을 선택할 수 있습니다.
+필요에 따라 다른 버전을 선택하실 수도 있습니다.
 
 ### `com.google.common*` 제거 {#com.google.common}
 
-Google Guava 코어 라이브러리 사용을 제거하거나 프로젝트에 적절한 버전을 포함하십시오. 대부분의 경우 이 라이브러리의 사용은 JDK 또는 Apache Commons Collections4의 컬렉션 클래스로 대체할 수 있습니다. 대체 항목이 없는 경우 프로젝트에 최신 버전의 Google Guave 코어 라이브러리를 포함하십시오. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
+Google Guava Core Libraries 사용을 제거하거나 프로젝트에 적절한 버전을 포함시키십시오. 많은 경우 이 라이브러리 사용은 JDK의 컬렉션 클래스나 Apache Commons Collections4로 대체할 수 있습니다. 대체 라이브러리를 찾을 수 없는 경우 프로젝트에 최신 버전의 Google Guave Core Library를 포함시킬 수 있습니다. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
 
 액션 목록:
 
 * ACS AEM Commons를 최신 버전(6.11.0 이상)으로 업데이트
-* Google Guava Core Library 사용을 JDK 컬렉션 또는 Apache Commons 컬렉션4로 바꾸기
-* 여전히 필요한 경우 이 번들을 프로젝트에 추가합니다(버전을 사용 가능한 최신 버전으로 대체).
+* Google Guava Core Library 사용을 JDK 컬렉션 또는 Apache Commons Collections4로 대체합니다.
+* 여전히 필요한 경우 이 번들을 프로젝트에 추가합니다(사용 가능한 최신 버전으로 대체).
    * `com.google.guava:guava:33.4.8-jre`
 
 ### `Apache Commons Lang 2 and Apache Commons Collections 3` 제거 {#apache.commons}

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 
 
 >[!TIP]
 >
->**바로 실습해 보시겠습니까?**
+>**바로 직접 체험해보고 싶으신가요?**
 >
->바로 실습해 보려면 [aem.live에서 자습서를 체크 아웃하여 30분 이내에 AEM 작성으로 Edge Delivery Services 프로젝트를 시작할 수 있습니다.](https://www.aem.live/developer/ue-tutorial)
+>바로 체험하고자 하시는 경우 [aem.live에서 튜토리얼을 확인](https://www.aem.live/developer/ue-tutorial)해 30분 내에 AEM을 작성하여 Edge Delivery Services 프로젝트를 직접 시작해보실 수 있습니다.
 
 ## 비즈니스 요구 사항에 맞춘 신속한 대응 {#agile-reaction}
 

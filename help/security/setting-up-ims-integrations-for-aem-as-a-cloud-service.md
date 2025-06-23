@@ -5,9 +5,9 @@ exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
 source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,5 +101,5 @@ JWT 자격 증명을 기반으로 기존 Adobe IMS 통합을 마이그레이션�
 
    ![OAuth 세부 정보 작성](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. **저장 믿 닫기**&#x200B;를 사용하여 업데이트 내용을 유지합니다.
+1. **저장 믿 닫기**를 사용하여 업데이트 내용을 유지합니다.
 콘솔로 돌아오면 **JWT 자격 증명(사용 안 함)** 경고가 사라집니다.
