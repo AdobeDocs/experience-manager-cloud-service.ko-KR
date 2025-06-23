@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 93%
 
 ---
@@ -70,11 +70,11 @@ ht-degree: 93%
 
 #### 충족 방법 - 텍스트가 아닌 콘텐츠 (1.1.1) {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 방법은 **대체 텍스트** 필드에서 수행할 수 있습니다. 그 예로 핵심 구성 요소 **[이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)**&#x200B;를 보십시오.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 방법은 **대체 텍스트** 필드에서 수행할 수 있습니다. 그 예로 핵심 구성 요소 **[이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**&#x200B;를 보십시오.
 
 >[!NOTE]
 >
->전체 구성 요소에 대해 **레이블** 필드(**[접근성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko#accessibility-tab)** 탭)가 있더라도 **[슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko)** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위한 **대체 텍스트** 필드를 제공하지 않습니다.
+>전체 구성 요소에 대해 **레이블** 필드(**[접근성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** 탭)가 있더라도 **[슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위한 **대체 텍스트** 필드를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현할 때 개발 팀은 `alt` 속성을 지원하도록 해당 구성 요소를 구성해야 합니다. 이렇게 하면 작성자가 콘텐츠에 해당 설명을 추가할 수 있습니다([추가 HTML 요소 및 속성에 대한 지원 추가](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes) 참조).
 
@@ -184,7 +184,7 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 #### 목적 - 캡션 (사전 기록됨) (1.2.2) {#purpose-captions-prerecorded}
 
-청각 장애가 있거나 난청인 사람은 오디오 콘텐츠에 액세스할 수 없거나 액세스하는 데 어려움이 큽니다. 캡션은 음성 오디오 및 비음성 오디오에 상응하는 텍스트로서, 비디오가 재생되는 동안 적절한 시점에 화면에 표시됩니다. 캡션을 사용하면 오디오를 들을 수 없는 사람이 비디오의 내용을 이해할 수 있습니다.
+귀가 들리지 않거나 난청인 사람은 오디오 콘텐츠에 액세스할 수 없거나 액세스하는 데 큰 어려움을 겪습니다. 캡션은 음성 오디오 및 비음성 오디오에 상응하는 텍스트로서, 비디오가 재생되는 동안 적절한 시점에 화면에 표시됩니다. 캡션을 사용하면 오디오를 들을 수 없는 사람이 비디오의 내용을 이해할 수 있습니다.
 
 #### 충족하는 방법 - 캡션 (사전 기록됨) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -201,13 +201,13 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 #### 추가 정보 - 캡션 (사전 기록됨) (1.2.2) {#more-information-captions-prerecorded}
 
-* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
-* [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
+* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C: 동기화된 멀티미디어](https://www.w3.org/AudioVideo/).
-* [캡션, 트랜스크립트 및 오디오 설명 - WebAIM별](https://webaim.org/techniques/captions/).
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### 오디오 설명 또는 미디어 대체 요소 (사전 기록됨) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -338,7 +338,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
   >[!NOTE]
   >
-  >시스템 관리자가 **테이블 속성**&#x200B;[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >시스템 관리자가 **테이블 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
   **테이블 속성** 탭을 선택할 수 있는 **테이블** 대화 상자를 열려면:
 
@@ -349,7 +349,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 * **강조**: 강조를 나타내려면 `<strong>` 또는 `<em>` 요소를 사용합니다. 머리글을 사용하여 단락 내 텍스트를 강조 표시하지 마십시오.
    * 강조할 텍스트를 강조 표시합니다.
-   * **HTML** 패널에 표시된 **B** 아이콘(`<strong>`용)이나 **I** 아이콘(`<em>`용)을 클릭합니다(속성이 선택되었는지 확인).
+   * **속성** 패널에 표시된 **B** 아이콘(`<strong>`용)이나 **I** 아이콘(`<em>`용)을 클릭합니다(HTML이 선택되었는지 확인).
 
      >[!NOTE]
      >
@@ -657,7 +657,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 목적 - 키보드 트랩 없음(2.1.2) {#purpose-no-keyboard-trap}
 
-이 성공 기준의 목적은 콘텐츠가 웹 페이지의 콘텐츠의 하위 섹션 내에 키보드 포커스를 *트래핑*&#x200B;하지 않도록 하기 위한 것입니다. 여러 포맷이 한 페이지 내에서 결합되어 플러그인 또는 임베디드 애플리케이션을 사용하여 렌더링되는 경우 발생하는 일반적인 문제입니다.
+이 성공 기준의 목적은 콘텐츠가 웹 페이지의 콘텐츠의 하위 섹션 내에 키보드 포커스를 *트래핑*&#x200B;하지 않도록 하기 위한 것입니다. 여러 포맷이 한 페이지 내에서 결합되어 플러그인 또는 임베드된 애플리케이션을 사용하여 렌더링되는 경우 발생하는 일반적인 문제입니다.
 
 웹 페이지의 기능이 포커스를 콘텐츠의 하위 섹션(예: 모달 대화 상자)으로 제한하는 경우가 있을 수 있습니다. 이 경우 사용자가 해당 하위 섹션의 콘텐츠를 종료할 수 있는 방법을 제공해야 합니다(예: ESC 키는 모달 대화 상자를 닫거나 닫기 버튼을 누르면 모달 대화 상자가 닫힘).
 
@@ -701,7 +701,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 * 레벨 A
 * 일시 중단, 중지, 숨기기: 이동, 깜박임, 스크롤 또는 자동 업데이트 정보에 대해서는 다음 내용이 적용됩니다.
    * 이동, 깜박임, 스크롤: (a) 자동으로 시작되고, (b) 5초 이상 지속되고, (c) 다른 콘텐츠와 병렬로 표시되는 이동, 깜박임 또는 스크롤 정보의 경우, 이동, 깜박임 또는 스크롤이 중요한 활동의 일부가 아니면 사용자가 일시 중지하거나, 중단하거나, 숨길 수 있는 메커니즘이 있습니다.
-   * 자동 업데이트: (a) 자동으로 시작되고, (b) 다른 콘텐츠와 병렬로 표시되는 자동 업데이트 정보의 경우, 자동 업데이트가 중요한 활동의 일부가 아니면 사용자가 일시 중지하거나, 중단하거나, 숨길 수 있는 메커니즘이 있습니다.
+   * 자동 업데이트: (a) 자동으로 시작되고, (b) 다른 콘텐츠와 병렬로 표시되는 자동 업데이트 정보의 경우, 자동 업데이트가 중요한 활동의 일부가 아니면 사용자가 일시 중지하거나, 중단하거나, 숨기거나, 업데이트 빈도를 제어할 수 있는 메커니즘이 있습니다.
 
 주목할 점은 다음과 같습니다.
 
@@ -1198,7 +1198,7 @@ AEM WKND 데모 프로젝트에서는 **텍스트 필드**&#x200B;와 같은 양
 
 WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 그룹이 있으면 개별 컨트롤 및 그룹에도 제목이 필요할 수 있습니다. 라디오 버튼(**항목**)이 생성될 때 개별 제목이 지정되는 반면 AEM에서 라디오 버튼 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
 
-하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**&#x200B;[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md)).
+하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### Forms에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
