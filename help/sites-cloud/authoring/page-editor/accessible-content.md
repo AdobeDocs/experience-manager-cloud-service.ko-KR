@@ -70,11 +70,11 @@ ht-degree: 93%
 
 #### 충족 방법 - 텍스트가 아닌 콘텐츠 (1.1.1) {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 방법은 **대체 텍스트** 필드에서 수행할 수 있습니다. 그 예로 핵심 구성 요소 **[이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**&#x200B;를 보십시오.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 방법은 **대체 텍스트** 필드에서 수행할 수 있습니다. 그 예로 핵심 구성 요소 **[이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)**&#x200B;를 보십시오.
 
 >[!NOTE]
 >
->전체 구성 요소에 대해 **레이블** 필드(**[접근성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** 탭)가 있더라도 **[슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위한 **대체 텍스트** 필드를 제공하지 않습니다.
+>전체 구성 요소에 대해 **레이블** 필드(**[접근성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko#accessibility-tab)** 탭)가 있더라도 **[슬라이드](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko)** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위한 **대체 텍스트** 필드를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현할 때 개발 팀은 `alt` 속성을 지원하도록 해당 구성 요소를 구성해야 합니다. 이렇게 하면 작성자가 콘텐츠에 해당 설명을 추가할 수 있습니다([추가 HTML 요소 및 속성에 대한 지원 추가](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes) 참조).
 
