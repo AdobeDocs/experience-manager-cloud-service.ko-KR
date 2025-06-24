@@ -3,10 +3,10 @@ title: Dynamic Media Open API와 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 9%
+source-wordcount: '982'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,7 @@ aemTierType:[1: "delivery"]
 | 오브젝트 | JSON |
 |---|---|
 | 호스트 | `assetJsonObj["repo:repositoryId"]` |
-| API 루트 | `/adobe/dynamicmedia/deliver` |
+| API 루트 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | 형식 | `.jpg` |
@@ -105,13 +105,14 @@ aemTierType:[1: "delivery"]
 #### 승인된 에셋 게재 API 사양 {#approved-assets-delivery-api-specification}
 
 URL 형식:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 위치,
 
 * 호스트가 `https://delivery-pxxxxx-exxxxxx.adobe.com`입니다.
 * API 루트: `"/adobe/assets"`
 * `<asset-id>`은(는) 자산 식별자입니다.
+* `as`은(는) 참조되는 에셋을 나타내는 open API 사양의 상수 부분입니다.
 * `<seo-name>`은(는) 에셋의 이름입니다.
 * `<format>`은(는) 출력 형식입니다.
 * 승인된 자산의 배달 API 사양에서 지원하는 `<image modification query parameters>`
@@ -168,7 +169,7 @@ URL 형식:
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Adobe의 마이크로 프론트엔드 에셋 선택기와 통합하면 Experienc
 
 ![OpenAPI 기능 UI를 사용하는 Dynamic Media](assets/polaris-ui.png)
 
-* **A**: [패널 숨기기/표시](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [정렬](#sorting)
-* **D**: [필터](#filters)
-* **E**: [검색 창](#search-bar)
-* **F**: [오름차순 또는 내림차순으로 정렬](#sorting)
+* **A**: 패널 숨기기/표시
+* **B**: Assets
+* **C**: 정렬
+* **일**: 필터
+* **E**: 검색 창
+* **F**: 오름차순 또는 내림차순으로 정렬
 * **G**: 선택 취소
 * **시간**: 하나 또는 여러 자산을 선택하십시오.
 
