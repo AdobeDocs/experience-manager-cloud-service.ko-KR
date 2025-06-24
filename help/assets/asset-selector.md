@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5418'
 ht-degree: 39%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 39%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -79,7 +79,7 @@ ht-degree: 39%
 ![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-## 전제 조건{#prereqs}
+## 사전 요구 사항{#prereqs}
 
 다음 커뮤니케이션 방법을 보장해야 합니다.
 
@@ -484,25 +484,27 @@ aemTierType:[1: "delivery"]
 **승인된 에셋 배달 API 사양**
 
 URL 형식:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 위치,
 
 * 호스트가 `https://delivery-pxxxxx-exxxxxx.adobe.com`입니다.
-* API 루트: `"/adobe/dynamicmedia/deliver"`
+* API 루트: `"/adobe/assets"`
 * `<asset-id>`은(는) 자산 식별자입니다.
+* `as`은(는) 참조되는 에셋을 나타내는 open API 사양의 상수 부분입니다.
 * `<seo-name>`은(는) 에셋의 이름입니다.
 * `<format>`은(는) 출력 형식입니다.
 * 승인된 자산의 배달 API 사양에서 지원하는 `<image modification query parameters>`
 
-**승인된 에셋 배달 API**
+**승인된 에셋 원본 렌디션 배달 API**
 
 동적 게재 URL은 다음 구문을 갖습니다.
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, 위치,
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, 위치,
 
 * 호스트가 `https://delivery-pxxxxx-exxxxxx.adobe.com`입니다.
-* 원본 렌디션 배달의 API 루트는 `"/adobe/assets/deliver"`입니다.
+* 원본 렌디션 배달의 API 루트는 `"/adobe/assets"`입니다.
 * `<asset-id>`은(는) 자산 식별자입니다.
+* `/original/as`은(는) 원본 렌디션을 나타내는 open API 사양의 상수 부분입니다.
 * `<seo-name>`은(는) 확장이 있거나 없을 수 있는 에셋의 이름입니다.
 
 +++
@@ -533,12 +535,12 @@ URL 형식:
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **비디오:** 포함된 iFrame을 사용하는 비디오 유형 자산에 비디오 플레이어 URL을 사용할 수 있습니다. Target 경험에서 다음 배열 변환을 사용할 수 있습니다.
   <!--![Video dynamic delivery url](image.png)-->
@@ -547,7 +549,7 @@ URL 형식:
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -556,7 +558,7 @@ URL 형식:
 
   위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML을 제공하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
 
-  위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`입니다.
+  위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`입니다.
 
 +++**OpenAPI 기능이 있는 Dynamic Media용 자산 선택기 사용자 인터페이스**
 
@@ -614,8 +616,8 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 | *onDrop* | 함수 | 아니요 | | 이 속성은 자산의 드롭 기능을 허용합니다. |
 | *dropOptions* | `{allowList?: Object}` | 아니요 | | “allowList”를 사용하여 드롭 옵션을 구성합니다. |
 | *colorScheme* | 문자열 | 아니요 | | 자산 선택기에 대한 테마를 구성합니다(`light` 또는 `dark`). |
-| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
-| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
+| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(자산: 자산[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
+| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(자산: 자산[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
 | *onClose* | 함수 | 아니요 | | 모달 보기에서 `Close` 버튼을 누르면 호출됩니다. 이 속성은 `modal` 보기에서만 호출되며 `rail` 보기에서는 무시됩니다. |
 | *onFilterSubmit* | 함수 | 아니요 | | 사용자가 다른 필터 조건을 변경할 때 필터 항목과 함께 호출됩니다. |
 | *selectionType* | 문자열 | 아니요 | 미혼 | 한 번에 `single` 자산을 선택할지 또는 `multiple` 자산을 선택할지에 대한 구성입니다. |

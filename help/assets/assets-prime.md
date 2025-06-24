@@ -4,10 +4,10 @@ description: 주요 이점, 사용자 유형 및 해당 권한 등 Assets Prime�
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 16%
+source-wordcount: '1150'
+ht-degree: 18%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 16%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -72,7 +72,7 @@ Assets as a Cloud Service Prime에는 다음과 같은 다양한 주요 기능�
 
   >[!NOTE]
   >
-  >회전, 자르기(수동만 해당 - 스마트 자르기 없음), 뒤집기, 크기, 기본 설정, 높이, 너비, 품질, 형식 및 응용 비디오 스트리밍과 같은 기본 이미지 수정자에 대한 액세스를 제공하는 OpenAPI 기능이 있는 Dynamic Media는 Assets Prime에서도 사용할 수 있습니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
+  >회전, 자르기(수동만 해당 - 스마트 자르기 없음), 뒤집기, 높이, 너비, 품질, 형식 및 응용 비디오 스트리밍과 같은 기본 이미지 수정자에 대한 액세스를 제공하는 OpenAPI 기능이 있는 Dynamic Media도 Assets Prime에서 사용할 수 있습니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
 
 1. [새 프로그램을 만듭니다](/help/journey-onboarding/create-program.md).
 
@@ -162,7 +162,7 @@ Collaborator 사용자를 온보딩하려면 다음을 수행합니다.
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-1. Collaborators 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. Collaborators 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-assets-collaborator-user-permissions.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -184,7 +184,7 @@ Power 사용자를 온보딩하려면:
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-1. 고급 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 고급 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-assets-power-user-permissions.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.

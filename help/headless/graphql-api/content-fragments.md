@@ -4,9 +4,9 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5981'
 ht-degree: 92%
 
 ---
@@ -375,7 +375,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 >[!NOTE]
 >
 >**일반 메타데이터와 배열 메타데이터의 차이점**
->`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
+>>`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
 >
 >따라서 예를 들어 `stringMetadata` 필드를 호출하면 저장소에 `String`으로 저장된 모든 메타데이터의 배열을 수신하고 `stringArrayMetadata`를 호출하면 저장소에 `String[]`으로 저장된 모든 메타데이터의 배열을 수신하게 됩니다.
 
@@ -795,7 +795,6 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
 * `quality`: 이미지 품질의 백분율을 나타내는 1~100의 정수
 * `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시되는 정수
-* `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)
 
 URL 변환은 경로, 목록 또는 페이지 지정과 같은 모든 쿼리 유형에 사용할 수 있습니다.
 
@@ -823,7 +822,6 @@ URL 변환은 경로, 목록 또는 페이지 지정과 같은 모든 쿼리 유
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +860,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +898,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {

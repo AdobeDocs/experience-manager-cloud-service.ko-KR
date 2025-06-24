@@ -3,9 +3,9 @@ title: Dynamic Media Open API와 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '967'
 ht-degree: 9%
 
 ---
@@ -105,25 +105,26 @@ aemTierType:[1: "delivery"]
 #### 승인된 에셋 게재 API 사양 {#approved-assets-delivery-api-specification}
 
 URL 형식:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 위치,
 
 * 호스트가 `https://delivery-pxxxxx-exxxxxx.adobe.com`입니다.
-* API 루트: `"/adobe/dynamicmedia/deliver"`
+* API 루트: `"/adobe/assets"`
 * `<asset-id>`은(는) 자산 식별자입니다.
 * `<seo-name>`은(는) 에셋의 이름입니다.
 * `<format>`은(는) 출력 형식입니다.
 * 승인된 자산의 배달 API 사양에서 지원하는 `<image modification query parameters>`
 
-#### 승인된 에셋 게재 API {#approved-assets-delivery-api}
+#### 승인된 에셋 원본 렌디션 배달 API {#approved-assets-delivery-api}
 
 동적 게재 URL은 다음 구문을 갖습니다.
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, 위치,
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, 위치,
 
 * 호스트가 `https://delivery-pxxxxx-exxxxxx.adobe.com`입니다.
-* 원본 렌디션 배달의 API 루트는 `"/adobe/assets/deliver"`입니다.
+* 원본 렌디션 배달의 API 루트는 `"/adobe/assets"`입니다.
 * `<asset-id>`은(는) 자산 식별자입니다.
+* `/original/as`은(는) 원본 렌디션을 나타내는 open API 사양의 상수 부분입니다.
 * `<seo-name>`은(는) 확장이 있거나 없을 수 있는 에셋의 이름입니다.
 
 ### 동적 게재 URL 선택 준비 완료 {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ URL 형식:
 | 오브젝트 | JSON |
 |---|---|
 | 호스트 | `assetJsonObj["repo:repositoryId"]` |
-| API 루트 | `/adobe/assets/deliver` |
+| API 루트 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -153,12 +154,12 @@ URL 형식:
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+위의 스크린샷에서 PDF의 썸네일이 아닌 PDF이 필요한 경우 원본 렌디션의 게재 URL을 타겟 경험에 통합해야 합니다. 예, `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **비디오:** 포함된 iFrame을 사용하는 비디오 유형 자산에 비디오 플레이어 URL을 사용할 수 있습니다. Target 경험에서 다음 배열 변환을 사용할 수 있습니다.
   <!--![Video dynamic delivery url](image.png)-->
@@ -167,7 +168,7 @@ URL 형식:
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ URL 형식:
 
   위 스크린샷의 코드 스니펫은 비디오 자산의 예입니다. 렌디션 링크 배열이 포함되어 있습니다. 발췌한 `selection[5]`은(는) 대상 경험에서 비디오 썸네일의 자리 표시자로 사용할 수 있는 이미지 썸네일의 예입니다. 렌디션 배열의 `selection[5]`은(는) 비디오 플레이어용입니다. HTML을 제공하며 iframe의 `src`(으)로 설정할 수 있습니다. 웹에 최적화된 비디오 전달인 적응형 비트율 스트리밍을 지원합니다.
 
-  위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`입니다.
+  위의 예에서 비디오 플레이어 URL은 `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`입니다.
 
 ### 맞춤형 필터 구성 {#configure-custom-filters-dynamic-media-open-api}
 
