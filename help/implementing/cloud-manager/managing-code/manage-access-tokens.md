@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -38,18 +38,16 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 액세스 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 
 1. 토큰 이름의 오른쪽에 있는 **액세스 토큰 관리** 대화 상자에서 ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)을 클릭합니다.
 1. **액세스 토큰 편집** 대화 상자에서 **토큰 이름**, **액세스 토큰** 값 또는 둘 다를 업데이트하십시오.
 
-   **액세스 토큰**&#x200B;이(가) 현재 사용 중이면 업데이트 후 연결된 모든 저장소의 유효성을 자동으로 다시 검사한다는 알림이 표시됩니다.
-
    ![액세스 토큰 편집 대화 상자](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. 토큰이 사용 중이면 연관된 모든 저장소의 유효성이 자동으로 재확인된다는 알림이 표시됩니다.
+1. **액세스 토큰**&#x200B;이(가) 현재 사용 중이면 업데이트 후 연결된 모든 저장소의 유효성을 자동으로 다시 검사한다는 알림이 표시됩니다.
 
 1. 변경 내용을 저장하려면 **업데이트**&#x200B;를 클릭하세요.
 
