@@ -3,7 +3,7 @@ title: Adobe 이외의 애플리케이션 또는 타사 애플리케이션과 �
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 19a7d8089a3c33f2d066bcbb4b7a99e77777eb91
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 18%
@@ -150,7 +150,7 @@ Admin Console을 통해 지원 티켓을 기록하는 단계:
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
