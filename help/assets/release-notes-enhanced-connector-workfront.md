@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 98%
+source-wordcount: '1761'
+ht-degree: 96%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
         </td>
     </tr>
     <tr>
@@ -52,13 +52,17 @@ ht-degree: 98%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.20의 릴리스 일자는 2024년 9월 6일입니다.
+[!DNL Workfront for Experience Manager enhanced connector]의 최신 버전 1.9.21의 릴리스 날짜는 2025년 6월 25일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
+최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
 
-* 기존 자산의 새 버전을 업로드하고 생성하는 도중 MIME 유형이 손실됩니다.
+* 인증 실패의 거짓 양성 로깅을 방지하기 위해 API 요청 로깅이 개선되었습니다.
+
+* Workfront API 호출에 대한 연결 누수가 수정되었습니다.
+
+* Java 17 및 Java 21 버전용 6.5 LTS에서 Workfront Enhanced Connector를 지원합니다.
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ ht-degree: 98%
 * 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
 
 ## 이전 출시 버전 {#previous-releases}
+
+### 2024년 9월 릴리스 {#september-2024-release}
+
+* 기존 자산의 새 버전을 업로드하고 생성하는 도중 MIME 유형이 손실됩니다.
 
 ### 2024년 4월 릴리스 {#april-2024-release}
 
@@ -94,9 +102,9 @@ ht-degree: 98%
 
 ### 2024년 1월 릴리스 {#january-2024-release}
 
-* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#linked-folders) 방법에 대해 자세히 알아보십시오.
+* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
-* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#metadata-schema-mapping)에 대해 자세히 알아보십시오.
+* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)에 대해 자세히 알아보십시오.
 
 * 강화 커넥터에서 연결 구성을 삭제하면 이벤트 구독 및 기타 저장된 구성에 큰 영향을 미치며, 이전 URL을 가리키게 됩니다.
 
