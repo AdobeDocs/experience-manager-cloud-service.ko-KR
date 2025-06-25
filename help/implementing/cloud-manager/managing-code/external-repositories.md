@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
+source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2322'
+ht-degree: 27%
 
 ---
 
@@ -242,9 +242,9 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
-| 필수 웹후크 이벤트 |
+| 필수 웹후크 이벤트 및 인증 |
 | --- |
-| 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>저장소: 푸시</li></li></ul></ul></ul> |
+| 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>저장소: 푸시</li></ul>인증 설정:<br>1. **기본 인증 사용자 이름** 필드에 `cloudmanager`을(를) 입력합니다.<br>2. **기본 인증 암호** 필드에 Cloud Manager 사용자 인터페이스에서 생성한 Webhook 암호를 입력합니다. |
 
 >[!ENDTABS]
 
