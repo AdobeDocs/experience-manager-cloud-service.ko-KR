@@ -258,6 +258,7 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. 키를 회전할 때가 되면 새 Cloud Manager 암호를 만드십시오(예: `${{CDN_EDGEKEY_041425}}`).
 1. 구성에서 `edgeKey2`에서 참조하고 배포합니다.
 
@@ -279,6 +280,7 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. Cloud Manager에서 이전 비밀 참조(`${{CDN_EDGEKEY_052824}}`)를 삭제하고 배포합니다.
 
 1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `${{CDN_EDGEKEY_031426}}`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `edgeKey1`을(를) 추가합니다.
