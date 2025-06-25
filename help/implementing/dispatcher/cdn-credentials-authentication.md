@@ -4,10 +4,10 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 4%
+source-wordcount: '1939'
+ht-degree: 3%
 
 ---
 
@@ -65,7 +65,7 @@ data:
 
 `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
-자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
+자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
 
 추가 속성은 다음과 같습니다.
 
@@ -119,6 +119,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 성공적으로 테스트한 후 추가 조건을 제거하고 구성을 다시 배포할 수 있습니다.
 
+### Adobe 지원에서 이전에 `X-AEM-Edge-Key` HTTP 헤더 값을 생성한 경우 마이그레이션 프로세스 {#migrating-legacy}
+
+>[!NOTE]
+>마이그레이션을 진행하기 전에 스테이징 환경에서 테스트 마이그레이션을 예약하여 전략을 확인하십시오.
+
+>[!WARNING]
+> 4단계까지 고객 관리 CDN의 키를 변경하지 마십시오.
+
+이전에는 고객 관리 CDN과 통합하는 프로세스에 고객이 직접 값을 정의하지 않고 Adobe 지원에서 X-AEM-Edge-Key HTTP 헤더 값을 요청하는 것이 포함되었습니다. 고유한 Edge 키 값을 정의하는 최신 셀프 서비스 접근 방식으로 마이그레이션하려면 다음 단계에 따라 가동 중지 시간 없이 원활하게 전환할 수 있습니다.
+
+1. `edgeKey1` 및 `edgeKey2`(으)로 지정된 새(고객 생성) 및 이전(Adobe 생성) 비밀을 모두 사용하여 CDN 구성을 구성합니다. 이는 [회전 비밀](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) 설명서의 변형입니다.
+
+2. 암호 및 셀프서비스 CDN 구성을 배포합니다. 이 시점에서 Adobe에서 정의한 이전 암호는 고객 관리 CDN이 전달한 X-AEM-Edge-Key 값으로 남아 있어야 합니다.
+
+3. Adobe 지원 센터에 문의하여 Adobe에서 셀프 서비스 구성을 사용하도록 전환하여 이미 배포했음을 요청하십시오.
+
+4. Adobe에서 해당 작업이 수행되었음을 확인하면 `X-AEM-Edge-Key` HTTP 헤더 값에 대해 고객이 정의한 새 키를 사용하도록 고객 관리 CDN을 구성합니다.
+
+5. CDN 구성에서 이전 키를 제거하고 구성 파이프라인을 다시 배포합니다.
+
+>[!WARNING]
+>두 키가 동시에 구성된 대체 항목이 없는 경우 마이그레이션 도중 중단 시간이 발생할 수 있습니다.
+
 ## API 토큰 제거 {#purge-API-token}
 
 고객은 선언된 제거 API 토큰을 사용하여 [CDN 캐시를 제거](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다. 토큰이 최상위 `config` 폴더 아래에 있는 `cdn.yaml` 또는 유사한 파일에 선언되었습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.
@@ -164,7 +187,7 @@ data:
 >[!NOTE]
 >제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 openssl rand -hex 32 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
-제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 기본 인증 {#basic-auth}
 
@@ -235,7 +258,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 키를 회전할 때가 되면 새 Cloud Manager 암호를 만드십시오(예: `${{CDN_EDGEKEY_041425}}`).
 1. 구성에서 `edgeKey2`에서 참조하고 배포합니다.
 
@@ -257,7 +279,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Cloud Manager에서 이전 비밀 참조(`${{CDN_EDGEKEY_052824}}`)를 삭제하고 배포합니다.
 
 1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `${{CDN_EDGEKEY_031426}}`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `edgeKey1`을(를) 추가합니다.
