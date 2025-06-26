@@ -13,75 +13,40 @@ ht-degree: 9%
 # [!DNL Content Hub]에서 컬렉션 관리 {#manage-collections}
 
 <table>
-
     <tr>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-
         </td>
-
           <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
-
         </td>
-
     </tr>
-
     <tr>
-
         <td>
-
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-
         </td>
-
         <td>
-
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-
         </td>
-
     </tr>
-
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
