@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
 source-wordcount: '1744'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -78,7 +78,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="고객 CDN(또는 프록시)은 AEM 관리 CDN을 가리킵니다"
+>title="고객 CDN(또는 프록시)은 AEM Managed CDN에 지정"
 >abstract="AEM as Cloud Service는 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다."
 
 고객이 기존 CDN(또는 로드 밸런서 또는 WAF과 같은 모든 종류의 역방향 프록시)을 사용해야 하는 경우, 이를 관리하고 AEM 관리 CDN을 가리키면 다음 사항이 충족됩니다.
