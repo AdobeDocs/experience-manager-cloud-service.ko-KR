@@ -3,50 +3,85 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 10%
+source-wordcount: '1106'
+ht-degree: 9%
 
 ---
 
 # [!DNL Content Hub]에서 컬렉션 관리 {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -93,17 +128,22 @@ ht-degree: 10%
 
    | 액세스 방법 | 액세스 유형 | 설명 |
    |---|---|---|
-   | **사용자와 관리자만 액세스할 수 있음** | 비공개 | 작성자와 관리자만 이 컬렉션을 편집하고 액세스할 수 있습니다. |
-   | **누구나 액세스할 수 있음** | 공개 | 모든 사용자가 이 컬렉션에 액세스할 수 있지만 작성자와 관리자만 편집할 수 있습니다. |
-   | **누구나 액세스하고 편집할 수 있음** | 공개 | 이 컬렉션은 제한 없이 모든 사람에게 공개 되며 전체 액세스 및 편집 권한이 부여됩니다. |
+   | **사용자와 관리자만 편집할 수 있음** | 비공개 | 작성자와 관리자만 이 컬렉션을 편집하고 액세스할 수 있습니다. |
+   | **누구나 볼 수 있음** | 공개 | 모든 사용자가 이 컬렉션에 액세스할 수 있지만 작성자와 관리자만 편집할 수 있습니다. |
+   | **누구나 보고 편집할 수 있음** | 공개 | 이 컬렉션은 제한 없이 모든 사람에게 공개 되며 전체 액세스 및 편집 권한이 부여됩니다. |
+
+   >[!NOTE]
+   >
+   > [!DNL Content Hub] 관리자는 **[!UICONTROL 액세스할 수 있는 사용자]** 드롭다운에서 사용할 수 있는 모든 옵션을 볼 수 있지만 일반 사용자의 경우 액세스할 수 있는 옵션을 [지정 및 구성](configure-content-hub-ui-options.md)해야 합니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 완료되면 [컬렉션에 에셋을 추가](#add-assets-to-existing-collection)할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+<!--
 >[!NOTE]
 >
->컬렉션 거버넌스는 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화할 수 있습니다. 활성화한 후에는 [Content Hub에서 컬렉션을 구성](configure-content-hub-ui-options.md#configure-collections-content-hub)해야 합니다.
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
@@ -172,19 +212,25 @@ Content Hub을 사용하면 컬렉션 보기를 필터링하여 환경 설정에
 
 ## 컬렉션 내에서 사용 가능한 자산 공유 {#share-assets-available-within-collection}
 
-컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
+컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
 
-Content Hub에서 컬렉션을 공유하는 동안 시스템 내의 디지털 리소스에 대해 수신자가 수행할 수 있는 액세스 범위와 작업을 정의할 수 있습니다. Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 작업 기능을 포함하여 효과적인 에셋 관리를 위한 포괄적인 거버넌스 도구를 제공합니다. 읽기 전용 액세스에서 전체 관리 제어에 이르기까지 이러한 설정은 자산 배포에 대한 미세 거버넌스를 지원합니다.
+Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 작업 기능을 포함하여 효과적인 에셋 관리를 위한 포괄적인 거버넌스 도구를 제공합니다. 읽기 전용 액세스에서 전체 관리 제어에 이르기까지 이러한 설정은 자산 배포에 대한 미세 거버넌스를 지원합니다. 에셋을 개별적으로 또는 컬렉션의 일부로 공유할 때 액세스 범위는 사용자에게 할당된 컬렉션의 현재 액세스 수준에 따라 결정됩니다. 또는 개인 컬렉션을 공유할 수 없습니다.
 
 ## 컬렉션 세부 정보 편집 {#edit-details-of-collection}
 
-컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집하려면 컬렉션 이름을 클릭한 다음 ![정보 아이콘](assets/info-icon.svg) 아이콘을 클릭합니다. 컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집할 수 있는 [!UICONTROL 컬렉션 세부 정보] 화면이 나타납니다. **[!UICONTROL 변경 내용 저장]**&#x200B;을 클릭하여 수정 내용을 확인합니다.
+컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집하려면 컬렉션 이름을 클릭한 다음 ![정보 아이콘](assets/info-icon.svg) 아이콘을 클릭합니다. 컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집할 수 있는 [!UICONTROL 컬렉션 세부 정보] 화면이 나타납니다. **[!UICONTROL 변경 내용 저장]**&#x200B;을 클릭하여 수정 내용을 확인합니다. 또한 구성에 따라 컬렉션 편집 대화 상자를 통해 컬렉션에 대한 액세스를 업데이트할 수 있습니다.
 
 ![컬렉션 세부 정보](assets/collection-details.png)
 
 ## 컬렉션에서 자산 제거{#remove-assets-from-a-collection}
 
-컬렉션에서 하나 또는 여러 에셋을 제거할 수 있습니다. 컬렉션에서 에셋을 제거하려면 에셋을 제거해야 하는 컬렉션을 클릭하고 에셋을 선택한 다음 **[!UICONTROL 컬렉션에서 제거]**&#x200B;를 클릭합니다.
+다음 사용자는 컬렉션에서 단일 또는 여러 자산을 제거할 수 있습니다.
+
+* 관리자
+* 컬렉션 소유자
+* 편집 권한이 있는 관리자가 아닌 사용자
+
+컬렉션에서 에셋을 제거하려면 에셋을 제거해야 하는 컬렉션을 클릭하고 에셋을 선택한 다음 **[!UICONTROL 컬렉션에서 제거]**&#x200B;를 클릭합니다.
 
 ![컬렉션 제거](assets/remove-collection-new.jpg)
 
@@ -193,7 +239,7 @@ Content Hub에서 컬렉션을 공유하는 동안 시스템 내의 디지털 �
 
 ## 컬렉션 삭제{#delete-collection}
 
-컬렉션을 삭제하려면 **[!UICONTROL 컬렉션]** 탭으로 이동하여 삭제해야 하는 컬렉션을 클릭합니다. 컬렉션을 삭제하려면 ![제거 아이콘](assets/remove-icon.svg) 아이콘을 클릭하십시오.
+관리자와 작성자만 컬렉션을 삭제할 수 있습니다. 컬렉션을 삭제하려면 **[!UICONTROL 컬렉션]** 탭으로 이동하여 삭제해야 하는 컬렉션을 클릭합니다. 컬렉션을 삭제하려면 ![삭제 아이콘](assets/delete-icon.svg) 아이콘을 클릭하십시오.
 
 
 

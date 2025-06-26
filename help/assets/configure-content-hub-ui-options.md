@@ -2,9 +2,9 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2121'
 ht-degree: 14%
 
 ---
@@ -113,7 +113,9 @@ Content Hub에서 구성 옵션에 액세스하려면 다음을 수행하십시�
 
 * [사용자 정의 링크](#configure-custom-links-content-hub)
 
-* [컬렉션 및 공유](#configure-collections-sharing-content-hub)
+* [컬렉션 및 공유](#configure-collections-content-hub)
+
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### 가져오기 {#configure-import-options-content-hub}
 
@@ -199,7 +201,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
 2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.
 3. **레이블** 필드에 메타데이터 이름을 지정하고 **메타데이터** 필드에서 메타데이터 속성을 선택합니다.
-4. **확인**&#x200B;을 클릭한 다음 **저장**&#x200B;을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
+4. **확인**&#x200B;을 클릭한 다음 **저장**을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
    ![자산 카드](/help/assets/assets/asset-card.png)
 
 마찬가지로 각 사용 가능한 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)을 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
@@ -214,7 +216,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 새 메타데이터 속성이 메타데이터 필드 목록에 표시되도록 변경 사항을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
 
-마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
 ![Content Hub에서 구성 UI 검색](assets/configuration-ui-metadata-search.png)
 
 ### 브랜딩 {#configure-branding-content-hub}
@@ -275,7 +277,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ### 렌디션 {#renditions-content-hub}
 
-렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지, 문서 등과 같은 디지털 에셋의 사용자 지정 버전입니다. Adobe Experience Manager Assets의 [렌디션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)에 대해 자세히 알아보세요.
+렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지, 문서 등과 같은 디지털 에셋의 사용자 지정 버전입니다. Adobe Experience Manager Assets의 [렌디션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)에 대해 자세히 알아보세요.
 
 이렇게 하려면 다음 단계를 실행합니다.
 
@@ -311,21 +313,33 @@ Content Hub에서 렌디션을 보고 다운로드하는 방법에 대한 자세
 
 ![Content Hub의 구성 UI 사용자 지정 링크 탭](assets/configuration-ui-custom-link-tab.png)
 
-### 컬렉션 및 공유 {#configure-collections-sharing-content-hub}
+### 컬렉션 및 공유 {#configure-collections-content-hub}
 
-관리자는 컬렉션을 만드는 동안 사용자 권한을 정의하고 Content Hub 사용자가 공개 링크를 생성하도록 할 수 있습니다. 이러한 설정을 활성화하려면 다음 단계를 수행합니다.
+관리자는 컬렉션을 만드는 동안 사용자 권한을 정의할 수 있습니다. 이러한 설정을 활성화하려면 다음 단계를 수행합니다.
 
-1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 컬렉션 및 공유]**&#x200B;를 클릭합니다.
+1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 컬렉션]**&#x200B;을(를) 클릭합니다.
 
-1. 모든 사용자가 액세스할 수 있지만 작성자와 관리자만 편집할 수 있는 컬렉션을 허용하도록 **[!UICONTROL 읽기 전용 컬렉션]** 전환을 활성화합니다.
+1. 외부 사용자가 Content Hub에 로그인하지 않고도 에셋에 액세스하고 다운로드하는 데 사용할 수 있는 공개 링크를 만들 수 있도록 **[!UICONTROL 공개 링크 사용]** 토글을 활성화합니다.
 
-1. 모든 사용자가 액세스할 수 있고 편집할 수 있는 컬렉션을 허용하도록 **[!UICONTROL 공용 컬렉션]** 토글을 활성화합니다.
+1. 모든 사용자가 액세스할 수 있지만 작성자와 관리자만 편집할 수 있는 컬렉션을 허용하도록 **[!UICONTROL 컬렉션만 보기]** 전환을 활성화합니다.
 
-1. Content Hub 사용자가 공개 링크를 생성하도록 하려면 **[!UICONTROL 공개 링크 사용]** 토글을 활성화하십시오.
+1. 모든 사용자가 액세스할 수 있고 편집할 수 있는 컬렉션을 허용하도록 **[!UICONTROL 공용 컬렉션]** 토글을 활성화합니다. **[!UICONTROL 컬렉션만 보기]** 및 **[!UICONTROL 공용 컬렉션]** 전환이 비활성화된 경우 기본적으로 관리자가 아닌 사용자는 전용 컬렉션만 만들 수 있습니다.
 
 1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-   ![Content Hub의 구성 컬렉션 탭](assets/collections-link-sharing.png)
+   ![Content Hub의 구성 컬렉션 탭](assets/collections-and-sharing.png)
 
+<!--
+### Enable public link sharing {#enable-public-link-sharing}
 
-   컬렉션 및 자산 공유에 대한 자세한 내용은 [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md) 및 [자산 공유 [!DNL Content Hub]](share-assets-content-hub.md)를 참조하십시오.
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+-->
+
+ [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
