@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Admin View] 메타데이터 양식을  [!DNL Assets View](으)로 가져오기'
+title: ' [!DNL Admin View] 메타데이터 양식을  [!DNL Assets View] (으)로 가져오기'
 description: 이 문서에서는  [!DNL Admin View] to [!DNL Assets View]에서 사용할 수 있는 메타데이터 양식을 가져오는 방법에 대해 설명합니다.
 contentOwner: AG
 feature: Metadata
@@ -75,9 +75,11 @@ ht-degree: 8%
    ![메타데이터 Forms 페이지 가져오기](/help/assets/assets/unsupported-import-elements.png)
 1. 테이블에서 하나 이상의 양식을 선택하고 **[!UICONTROL 가져오기 시작]**&#x200B;을 클릭하여 메타데이터 양식 및 관련 폴더를 [!DNL Assets View]&#x200B;(으)로 가져옵니다. 처리 메시지가 표시됩니다(예: *3개의 메타데이터 양식을 가져오는 중). 기다려 주십시오!*). 가져오기가 완료되면 양식을 성공적으로 가져왔음을 확인하는 메시지가 나타나고 [!DNL Assets View]의 **[!UICONTROL 메타데이터 Forms]** 페이지에 [!DNL Assets View]에서 사용 가능한 최근에 가져온 양식과 기존 양식이 모두 표시됩니다. 이 페이지에서 다음 작업을 수행할 수 있습니다.
    * [!UICONTROL 이름], [!UICONTROL 수정됨] 또는 [!UICONTROL 작성자]별로 테이블을 정렬하려면 열 헤더를 클릭하십시오.
-   * 가져온 양식을 선택하고 **[!UICONTROL 폴더에서 제거]**를 클릭한 다음 폴더 경로에서 폴더 이름을 확인하여 폴더가 올바르게 포팅되었는지 확인하십시오.
+   * 가져온 양식을 선택하고 **[!UICONTROL 폴더에서 제거]**&#x200B;를 클릭한 다음 폴더 경로에서 폴더 이름을 확인하여 폴더가 올바르게 포팅되었는지 확인하십시오.
+
      ![메타데이터 양식 페이지 확인](/help/assets/assets/confirm-ported-folder.png)
    * 가져온 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 메타데이터 양식의 지원되는 모든 구성을 봅니다. 메타데이터 양식, 구성 요소 및 필드에 대한 자세한 내용은 [메타데이터 Forms 설정](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)을 참조하십시오.
+
      ![메타데이터 양식 페이지 확인](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## 가져온 메타데이터 양식 확인{#Verify-the-imported-metadata-forms}
