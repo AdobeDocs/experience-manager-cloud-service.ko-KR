@@ -1,10 +1,10 @@
 ---
-title: ' [!DNL Admin View] 메타데이터 양식을  [!DNL Assets View] (으)로 가져오기'
+title: ' [!DNL Admin View] 메타데이터 양식을  [!DNL Assets View](으)로 가져오기'
 description: 이 문서에서는  [!DNL Admin View] to [!DNL Assets View]에서 사용할 수 있는 메타데이터 양식을 가져오는 방법에 대해 설명합니다.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
-source-git-commit: 3b2014fe41f6a4918c092790462252082fabc3c7
+source-git-commit: 1ee93bee379ba48a9b42b13b5d11ff89f705b298
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 8%
@@ -55,7 +55,7 @@ ht-degree: 8%
 
 ## 시작하기에 앞서{#prerequisites-for-importing-metadata-forms-to-assets-view}
 
-메타데이터 양식 및 관련 폴더를 [!DNL Admin View]에서 [!DNL Assets View]&#x200B;(으)로 가져올 수 있는 관리자 권한이 있는지 확인하십시오.
+[!DNL Admin View]에서 [!DNL Assets View]&#x200B;(으)로 메타데이터 양식 및 해당 폴더 연결을 가져올 수 있는 관리자 권한이 있는지 확인하십시오.
 
 ## 메타데이터 양식을 [!DNL Assets View]&#x200B;(으)로 가져오기{#import-metadata-forms-to-assets-view}
 
@@ -75,11 +75,9 @@ ht-degree: 8%
    ![메타데이터 Forms 페이지 가져오기](/help/assets/assets/unsupported-import-elements.png)
 1. 테이블에서 하나 이상의 양식을 선택하고 **[!UICONTROL 가져오기 시작]**&#x200B;을 클릭하여 메타데이터 양식 및 관련 폴더를 [!DNL Assets View]&#x200B;(으)로 가져옵니다. 처리 메시지가 표시됩니다(예: *3개의 메타데이터 양식을 가져오는 중). 기다려 주십시오!*). 가져오기가 완료되면 양식을 성공적으로 가져왔음을 확인하는 메시지가 나타나고 [!DNL Assets View]의 **[!UICONTROL 메타데이터 Forms]** 페이지에 [!DNL Assets View]에서 사용 가능한 최근에 가져온 양식과 기존 양식이 모두 표시됩니다. 이 페이지에서 다음 작업을 수행할 수 있습니다.
    * [!UICONTROL 이름], [!UICONTROL 수정됨] 또는 [!UICONTROL 작성자]별로 테이블을 정렬하려면 열 헤더를 클릭하십시오.
-   * 가져온 양식을 선택하고 **[!UICONTROL 폴더에서 제거]**&#x200B;를 클릭한 다음 폴더 경로에서 폴더 이름을 확인하여 폴더가 올바르게 포팅되었는지 확인하십시오.
-
+   * 가져온 양식을 선택하고 **[!UICONTROL 폴더에서 제거]**를 클릭한 다음 폴더 경로에서 폴더 이름을 확인하여 폴더가 올바르게 포팅되었는지 확인하십시오.
      ![메타데이터 양식 페이지 확인](/help/assets/assets/confirm-ported-folder.png)
-   * 가져온 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 메타데이터 양식의 지원되는 모든 구성을 봅니다. 메타데이터 양식, 구성 요소 및 필드에 대한 자세한 내용은 [메타데이터 Forms 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)을 참조하십시오.
-
+   * 가져온 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 메타데이터 양식의 지원되는 모든 구성을 봅니다. 메타데이터 양식, 구성 요소 및 필드에 대한 자세한 내용은 [메타데이터 Forms 설정](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)을 참조하십시오.
      ![메타데이터 양식 페이지 확인](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## 가져온 메타데이터 양식 확인{#Verify-the-imported-metadata-forms}
@@ -87,8 +85,8 @@ ht-degree: 8%
 [!DNL Admin View]에서 [!DNL Assets View]&#x200B;(으)로 메타데이터 양식을 가져온 후 다음 단계에 따라 가져오기를 확인하십시오.
 
 1. 가져온 메타데이터 양식의 관련 폴더로 이동합니다.
-1. [자산의 세부 정보 페이지](/help/assets/navigate-assets-view.md#preview-assets)(으)로 이동하여 지원되는 메타데이터 구성 요소, 구성 요소 필드 및 필드 값이 [!DNL Admin View]에서 동기화되었는지 확인하십시오. 메타데이터 구성 요소, 구성 요소 필드 및 필드 값에 대한 자세한 내용은 [Assets Essentials의 메타데이터](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/metadata) 문서를 참조하십시오.
+1. [자산의 세부 정보 페이지](/help/assets/navigate-assets-view.md#preview-assets)(으)로 이동하여 지원되는 메타데이터 구성 요소, 구성 요소 필드 및 필드 값이 [!DNL Admin View]에서 동기화되었는지 확인하십시오. 메타데이터 구성 요소, 구성 요소 필드 및 필드 값에 대한 자세한 내용은 [Assets Essentials의 메타데이터](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) 문서를 참조하십시오.
 
    >[!NOTE]
    >
-   > [[!DNL Assets View] 세부 정보 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) 또는 [[!DNL Admin View] 속성 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/administer/metadata-schemas)에서 메타데이터 속성 값에 대한 변경 내용은 두 인터페이스 간에 자동으로 동기화됩니다. 그러나 필드를 추가 또는 제거하거나 기타 수정 사항과 같은 양식의 구조적 변경 사항은 동기화되지 않습니다.
+   > [[!DNL Assets View] 세부 정보 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) 또는 [[!DNL Admin View] 속성 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas)에서 메타데이터 속성 값에 대한 변경 내용은 두 인터페이스 간에 자동으로 동기화됩니다. 그러나 필드를 추가 또는 제거하거나 기타 수정 사항과 같은 양식의 구조적 변경 사항은 동기화되지 않습니다.
