@@ -3,9 +3,9 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1110'
 ht-degree: 9%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 9%
 # [!DNL Content Hub]에서 컬렉션 관리 {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -134,7 +169,7 @@ Content Hub을 사용하면 컬렉션 보기를 필터링하여 환경 설정에
 
 컬렉션 보기를 필터링하려면 **[!DNL Collections]** 탭으로 이동하여 컬렉션 드롭다운으로 이동합니다. 다음 옵션 중에서 선택합니다.
 
-* **[!UICONTROL 모든 컬렉션]:** 이 옵션을 선택하면 비공개 컬렉션과 사용자와 공유되는 모든 컬렉션을 볼 수 있습니다.
+* **[!UICONTROL 모든 컬렉션]:** 이 옵션을 선택하면 비공개 컬렉션이나 사용자와 공유된 컬렉션을 포함하여 모든 컬렉션을 보고 편집할 수 있습니다.
 * **[!UICONTROL 나만]:** 액세스 가능한 컬렉션을 보려면 이 옵션을 선택하십시오.
 * **[!UICONTROL 누구나 볼 수 있음]:** 이 옵션을 사용하면 모든 사람이 액세스할 수 있지만 작성자만 편집할 수 있는 컬렉션을 필터링할 수 있습니다.
 * **[!UICONTROL 누구나 편집할 수 있습니다]:** 모든 사람이 액세스할 수 있고 편집할 수 있는 컬렉션을 필터링하려면 이 옵션을 선택하십시오.
@@ -177,7 +212,7 @@ Content Hub을 사용하면 컬렉션 보기를 필터링하여 환경 설정에
 
 ## 컬렉션 내에서 사용 가능한 자산 공유 {#share-assets-available-within-collection}
 
-컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
+컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
 
 Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 작업 기능을 포함하여 효과적인 에셋 관리를 위한 포괄적인 거버넌스 도구를 제공합니다. 읽기 전용 액세스에서 전체 관리 제어에 이르기까지 이러한 설정은 자산 배포에 대한 미세 거버넌스를 지원합니다. 에셋을 개별적으로 또는 컬렉션의 일부로 공유할 때 액세스 범위는 사용자에게 할당된 컬렉션의 현재 액세스 수준에 따라 결정됩니다. 또는 개인 컬렉션을 공유할 수 없습니다.
 
