@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.5.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.5.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
+source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 88%
+source-wordcount: '2108'
+ht-degree: 97%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.5.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2025.5.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -28,37 +26,112 @@ ht-degree: 88%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.6.0) 일자는 2025년 6월 26일 금요일입니다. 다음 기능 릴리스(2025.7.0)는 2025년 7월 31일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.5.0) 일자는 2025년 6월 5일입니다. 다음 기능 릴리스(2025.6.0)는 2025년 6월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- 
+## 릴리스 비디오 {#release-video}
 
-## Release Video {#release-video}
+2025년 5월 릴리스 개요 비디오를 통해 2025.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Assets 보기에서 메타데이터 양식 관리 개선**
+**AI 생성 메타데이터**
 
-이제 관리 보기에서 Assets 보기로 메타데이터 양식을 직접 가져올 수 있습니다. Assets 보기에서 이러한 양식에 대해 수행된 모든 업데이트는 관리자 보기에 자동으로 반영되므로 두 경험 모두에서 일관성이 보장됩니다. 이 기능은 기존 메타데이터 구성과의 연속성을 유지하면서 새로운 Assets 보기로의 원활한 전환을 지원합니다.
+이제 AEM Assets는 [AI를 사용하여 제목, 설명, 키워드를 포함한 메타데이터를 자동으로 생성합니다](/help/assets/metadata-assets-view.md#ai-smart-tags). 이러한 AI 생성 필드는 메타데이터의 정확도를 높여 자산을 검색, 분류 및 추천하기 쉽게 만듭니다. 이 접근 방식은 수동 태그 지정을 제거하여 효율성을 향상시킬 뿐만 아니라 방대한 양의 디지털 콘텐츠에 대한 일관성과 확장성을 보장합니다.
 
-![AI 생성 메타데이터](/help/assets/assets/import-metadata-forms-page.png)
+![AI 생성 메타데이터](/help/assets/assets/enhanced-smart-tags.png)
+
+**Figma와의 통합**
+
+AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Figma 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. Figma 커뮤니티 페이지에서 제공되는 AEM Assets Connector에 액세스하려면 [여기](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)를 클릭하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
+
 
 ### Content Hub의 새로운 기능 {#new-features-content-hub}
+
+**속성 기반 액세스 제어(ABAC)**
+
+[이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다](/help/assets/attribute-based-access-control.md). 에셋 권한은 거버넌스를 보장하며 사용자가 관련 에셋만 액세스할 수 있도록 합니다.
+
+자산 제한 규칙은 메타데이터를 기반으로 하며, 규칙에 정의된 조건이 자산 메타데이터와 일치하면 자산이 사용자 그룹에 표시됩니다.
+
+속성 기반 액세스 제어의 주요 이점은 다음과 같습니다.
+
+* 폴더 구조에 대한 권한 종속을 제거합니다.
+
+* 관리자가 자산을 업로드하고 권한 구조를 소급적으로 결정할 수 있도록 합니다.
+
+* 중복 횟수를 줄여 자산 무결성을 향상시킵니다. 폴더 기반 권한에서는 동일한 자산이 다른 그룹과 공유될 때 중복이 필요합니다.
+
+**UI 브랜딩**
+
+이제 Content Hub를 통해 관리자는 배너 이미지, 배너 제목, 본문 텍스트, 기본 및 보조 색상 등 [브랜드별 요소를 사용하여 사용자 인터페이스를 사용자 정의](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)할 수 있습니다. 이러한 개선 사항은 브랜드 일관성을 보장하고 사용자 온보딩을 간소화하며 신뢰를 구축하는 데 도움이 됩니다.
+
+![UI 브랜딩](/help/assets/assets/content-hub-ui-branding.png)
+
+**공개 링크 공유**
+
+이제 Content Hub는 애플리케이션에 액세스하지 않고도 [외부 사용자가 자산 메타데이터를 보거나 자산을 다운로드할 수 있도록 공유 가능한 링크 생성](/help/assets/share-assets-content-hub.md##share-assets)을 지원합니다.
+
+![UI 브랜딩](/help/assets/assets/public-and-private-link.png)
 
 **컬렉션 거버넌스**
 
 이제 Content Hub를 사용하면 [컬렉션을 생성하는 동안 컬렉션에 대한 액세스를 제어할 수 있으므로 권한이 있는 사용자만 그룹화된 자산을 보거나 관리](/help/assets/collections-content-hub.md##create-collections)할 수 있습니다. 이를 통해 보안이 강화되고, 협업이 원활해지며, 자산 관리가 체계화되고, 거버넌스가 간소화됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>컬렉션 거버넌스는 제한적으로 제공되는 기능입니다. 지원 티켓을 생성하여 활성화할 수 있습니다.
+
+**여러 자산을 ZIP으로 다운로드**
+
+이제 Content Hub를 사용하면 [선택한 자산과 해당 렌디션을 별도의 파일이 아닌 ZIP 파일로 다운로드](/help/assets/download-assets-content-hub.md#download-asset-renditions)하여 파일 관리를 간소화할 수 있습니다.
+
+**Content Hub의 Dynamic Media 렌디션**
+
+[Content Hub 사용자 인터페이스 내에서 다운로드할 수 있는 모든 Dynamic Media 사전 설정 렌디션과 스마트 자르기](/help/assets/download-assets-content-hub.md#download-asset-renditions)에 직접 액세스할 수 있습니다.
+
+&#x200B;![Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Dynamic Media의 새로운 기능 {#new-features-dynamic-media}
+
+**AJO B2C와의 Dynamic Media 네이티브 통합**
+
+[Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 네이티브 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 자산(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 여러 채널에서 실시간 업데이트 및 초개인화된 경험을 제공할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### 프리릴리스 기능
+
+* [범용 편집기 - 양식 조각](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): 이제 범용 편집기를 사용하여 적응형 양식의 양식 조각을 만들고 재사용할 수 있습니다. 이들 조각은 한 번 빌드하여 여러 양식에 적용할 수 있는 재사용 가능한 양식 섹션(예: 연락처 세부 정보, 동의 필드)입니다. 이 기능을 사용하면 양식 생성이 간소화되고, 일관성이 보장되며, 작성 효율성이 향상됩니다.
+
+* [SharePoint 문서 라이브러리 - 원본 파일 이름으로 첨부 파일 저장](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): 이제 SharePoint 문서 라이브러리에 양식 첨부 파일을 저장할 때 원본 파일 이름을 사용하여 저장할 수 있는 옵션이 추가되었습니다. 이 향상된 기능은 업로드된 파일의 식별과 관리를 간소화해 줍니다.
+
+* **규칙 편집기**:
+   * [“When” 절에 클릭 이벤트가 포함된 바이너리 조건](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): 이제 규칙 편집기에서 버튼 클릭 이벤트(_클릭됨_)를 “When” 절 내의 다른 조건과 결합할 수 있습니다. 이를 통해 사용자 상호 작용 및 기타 요소를 기반으로 규칙 실행을 보다 정밀하게 제어할 수 있습니다. 참고: 여러 조건을 사용하는 경우에는 클릭 이벤트가 가장 먼저 나열된 조건이어야 합니다.
+   * [필드 및 패널에 대한 유효성 검사 조건](/help/forms/rule-editor-core-components-usecases.md): 이제 규칙 편집기에 _IsValid_ 및 _IsNotValid_ 조건이 포함됩니다. 이를 통해 특정 필드나 전체 패널(가로 탭, 세로 탭, 아코디언, 마법사 등의 레이아웃 포함)의 유효성 검사 상태를 확인할 수 있으며, 유효성 검사 결과에 따라 양식 탐색과 사용자 경험이 향상됩니다.
+* [SharePoint 목록에 대한 범위 관리 개선](/help/forms/connect-forms-to-sharepoint-list.md): 이제 SharePoint 사이트가 /sites 및 /teams와 같은 모든 관리 경로를 지원합니다. 이 향상된 기능은 다양한 SharePoint 사이트 구조에서 보다 광범위한 통합을 가능하게 해 주므로 조직 콘텐츠에 연결하는 데 더 큰 유연성이 제공됩니다.
+* [SharePoint 목록에 기록 문서 저장 지원](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): 이제 SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 양식이 기록 문서 바인드 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 개선된 기능을 통해 지원되는 양식 데이터와 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+
+### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
+
+AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다.
+
+이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
+
+#### Adobe Experience Platform(AEP)과 Forms 통합
+
+이제 얼리 어답터를 위해 Forms와 AEP 간 통합 기능이 제공됩니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -104,7 +177,7 @@ OSGi 속성:
 
 **Java 11 런타임**&#x200B;은 이제 더 이상 사용되지 않으며, 대부분의 환경은 이미 성능이 더 좋은 **Java 21 런타임**&#x200B;으로 업그레이드되었습니다.
 
-지원되지 않는 종속성([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조)으로 인해 환경을 업그레이드할 수 없는 경우 Adobe에서 특정 다음 단계에 대한 전자 메일을 받았어야 합니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
+지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
 참고: 런타임 버전은 코드의 빌드 버전과 별도입니다. Java 21을 사용한 빌드를 권장하지만 현재로서는 Java 11 빌드도 여전히 지원됩니다. Java 11 빌드에 대한 별도의 사용 중단 공지는 앞으로 공유될 예정입니다.
 
@@ -112,7 +185,7 @@ OSGi 속성:
 
 4월 릴리스 정보에서 언급된 대로 AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
 
-**8월 말**&#x200B;부터 지원되지 않는 사용자 정의 로깅 재정의는 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 Adobe은 현재 구성이 영향을 받을 수 있는 고객에게 연락했습니다.
+**8월 말**&#x200B;부터 지원되지 않는 사용자 정의 로깅 재정의는 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 Adobe는 현재 구성에 영향을 받을 수 있는 고객에게 직접 연락할 것입니다.
 
 사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
 
@@ -123,7 +196,7 @@ OSGi 속성:
 
 현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 *삭제 유지 관리 작업*&#x200B;이 비활성화되어 있으므로 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
 
-그러나 저장소 성능을 최적화하기 위해 **2025년 7월 초**&#x200B;부터 다음 지침에 따라 기본적으로 제거가 활성화됩니다.
+그러나 저장소 성능을 최적화하기 위해 **2025년 6월 말**&#x200B;부터 다음 지침에 따라 삭제가 기본적으로 활성화됩니다.
 
 #### 콘텐츠 버전 {#mt-content}
 

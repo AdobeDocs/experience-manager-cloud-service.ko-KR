@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.4.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.4.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: a3bdb58e3a53ffc422320b08bfb260b47fb2ddef
+exl-id: 48e09824-5c67-49d8-8896-358d679649fc
+source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 99%
+source-wordcount: '1744'
+ht-degree: 97%
 
 ---
 
@@ -32,15 +33,11 @@ ht-degree: 99%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- 
+## 릴리스 비디오 {#release-video}
 
-## Release Video {#release-video}
+2025년 4월 릴리스 개요 비디오를 통해 2025.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
