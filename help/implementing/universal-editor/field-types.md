@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -91,11 +91,11 @@ ht-degree: 11%
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
 | `component` | `ComponentType` | 구성 요소의 렌더러 | 예 |
-| `name` | `string` | 데이터가 지속되어야 하는 속성 | 예 |
+| `name` | `string` | 데이터가 유지되는 속성 [ 또는 경로](#nesting) | 예 |
 | `label` | `FieldLabel` | 필드 레이블 | 예 |
 | `description` | `FieldDescription` | 필드 설명 | 아니요 |
 | `placeholder` | `string` | 필드에 대한 자리 표시자 | 아니요 |
-| `value` | `FieldValue` | 기본값 | 아니요 |
+| `value` | `FieldValue` | 기본 값 | 아니요 |
 | `valueType` | `ValueType` | 표준 유효성 검사에는 `string`, `string[]`, `number`, `date`, `boolean`이(가) 포함될 수 있습니다. | 아니요 |
 | `required` | `boolean` | 필수 필드임 | 아니요 |
 | `readOnly` | `boolean` | 필드가 읽기 전용임 | 아니요 |
@@ -104,6 +104,14 @@ ht-degree: 11%
 | `multi` | `boolean` | 필드가 다중 필드입니까 | 아니요 |
 | `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
 | `raw` | `unknown` | 구성 요소에서 사용할 수 있는 원시 데이터 | 아니요 |
+
+### 이름 필드 및 중첩 {#nesting}
+
+`name` 필드는 현재 리소스의 속성을 직접 가리키거나 `cq:Pages`에 있는 구성 요소의 경우 중첩된 속성에 대한 경로를 사용할 수도 있습니다. 예:
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### 구성 요소 유형 {#component-types}
 
@@ -281,7 +289,7 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
 
 #### 컨테이너 {#container}
 
-컨테이너 구성 요소 유형은 구성 요소를 그룹화할 수 있습니다. 추가 구성을 제공합니다.
+컨테이너 구성 요소 유형을 사용하면 다중 필드 지원을 포함한 구성 요소를 그룹화할 수 있습니다. 추가 구성을 제공합니다.
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -324,7 +332,36 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
 
 컨테이너 구성 요소 형식의 ![스크린샷](assets/component-types/container.png)
 
+>[!TAB 다중 필드 지원]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### 콘텐츠 조각 {#content-fragment}
 
