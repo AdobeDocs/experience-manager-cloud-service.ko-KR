@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
+source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -101,3 +101,4 @@ AEM as a Cloud Service은 콘텐츠 요청을 카운트하기 위해 서버측 �
 | Commerce integration framework 호출 제외 | 제외됨 | AEM에 수행된 요청이 Commerce integration framework(URL은 `/api/graphql`(으)로 시작)로 전달되므로 두 번 계산되지 않습니다. Cloud Service에 대해서는 청구할 수 없습니다. |
 | `manifest.json` 제외 | 제외됨 | 매니페스트가 API 호출이 아닙니다. 데스크탑 또는 휴대 전화에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 `/etc.clientlibs/*/manifest.json`에 대한 JSON 요청을 계산해서는 안 됩니다. |
 | `favicon.ico` 제외 | 제외됨 | 반환된 콘텐츠가 HTML 또는 JSON이 아니어야 하지만 SAML 인증 흐름과 같은 특정 시나리오에서는 favicons를 HTML으로 반환하는 것으로 관찰되었습니다. 따라서 favicons는 카운트에서 명시적으로 제외됩니다. |
+| XF(경험 조각) - 동일한 도메인 재사용 | 제외됨 | 동일한 도메인에 호스팅된 페이지의 XF 경로(예: `/content/experience-fragments/...`)에 대한 요청(요청 호스트와 일치하는 Referer 헤더로 식별됨).<br><br> 예: 동일한 도메인에서 배너 또는 카드에 대한 XF를 가져오는 `aem.customer.com`의 홈 페이지.<br><br>· URL이 /content/experience-fragments/...<br>· Referer 도메인이 `request_x_forwarded_host`<br><br>**와(과) 일치합니다. 참고:** 경험 조각 경로를 사용자 지정하는 경우(예: `/XFrags/...` 또는 `/content/experience-fragments/` 외부의 경로를 사용하는 경우) 요청은 제외되지 않으며 동일한 도메인인 경우에도 카운트될 수 있습니다. 제외 논리가 올바르게 적용되도록 Adobe의 표준 XF 경로 구조를 사용하는 것이 좋습니다. |
