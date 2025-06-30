@@ -26,7 +26,7 @@ ht-degree: 9%
 에셋 업로드는 수집의 확장, 업로드 속도 향상, 마이크로 서비스를 사용한 빠른 처리 및 대량 수집을 통해 효율성에 최적화됩니다. 제품 기능(웹 사용자 인터페이스, 데스크탑 클라이언트)이 업데이트됩니다. 또한 이러한 사항은 일부 기존 사용자 지정에 영향을 줄 수 있습니다.
 
 * [!DNL Experience Manager]은(는) 직접 이진 액세스 원칙을 사용하여 자산을 업로드 및 다운로드하고 자산 마이크로서비스를 사용하여 자산을 처리합니다. [마이크로서비스 개요](/help/assets/asset-microservices-overview.md)를 참조하세요.
-   * 직접 이진 액세스](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)를 사용하여 [에셋을 업로드합니다.
+   * 직접 이진 액세스[&#128279;](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)를 사용하여 에셋을 업로드합니다.
    * 자세한 내용은 [다이렉트 이진 업로드 프로토콜 및 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오.
    * 기본 CRUD 작업에 사용 가능한 API 메서드를 비교하려면 [API 및 에셋 작업](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)을 참조하십시오.
 * 이전 버전의 [!DNL Experience Manager]에서 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 더 이상 사용할 수 없습니다. 대신 에셋 마이크로서비스 는 대부분의 기본 에셋 처리(렌디션, 메타데이터 추출 및 색인을 위한 텍스트 추출)를 포함하는 확장 가능하고 사용 가능한 서비스를 제공합니다.
@@ -55,7 +55,7 @@ ht-degree: 9%
 | [FPO(배치 전용) 표현물의 경우](/help/assets/configure-fpo-renditions.md) | 다르게 작동합니다. | 처리 프로필은 에셋 마이크로서비스 를 사용하여 FPO 렌디션을 생성합니다. Experience Manager 6.5에서는 [!DNL ImageMagick]과(와) 같은 서드파티 솔루션을 사용하여 렌디션을 생성할 수 있습니다. |
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화되어 있습니다. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 에셋 마이크로서비스 는 원본에 쓰기(writeback)를 처리합니다. |
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 이 작업에는 수동 개입이 필요합니다 | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 재처리합니다. |
-| MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)에서 [MIME 형식 검색을 참조하십시오. |
+| MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)에서 MIME 형식 검색을 참조하십시오. |
 | 조합 자산에 대한 하위 자산 생성 | 지원되지 않습니다. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. [하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)를 참조하세요. 일부 파일 형식의 PDF 미리 보기는 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md)부터 사용할 수 있습니다. |
 | 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. [Experience Manager에서 작동 방식 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)을 참조하세요. |
 | 홈 페이지 | 지원되지 않음 | [[!DNL Assets] 홈 페이지 환경 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) 보기 |

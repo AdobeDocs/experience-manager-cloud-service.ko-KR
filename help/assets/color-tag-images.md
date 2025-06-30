@@ -171,7 +171,7 @@ DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니�
 
 1. **[!UICONTROL Assets > 파일]**(으)로 이동합니다.
 
-1. 드롭다운 목록에서 **[!UICONTROL 필터]**을(를) 선택합니다.
+1. 드롭다운 목록에서 **[!UICONTROL 필터]**&#x200B;을(를) 선택합니다.
    ![Assets 필터링](assets/filter-assets.png)
 
 1. [AEM Assets 색상 술어](#configure-search-predicate)를 선택하십시오.

@@ -32,8 +32,8 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
->>Assets은 일괄로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
->> [!DNL Experience Manager Assets]의 [!DNL Cloud Service]인 경우 랩 조건에서 관찰되는 전송 속도는 시간당 1,000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
+>&#x200B;>Assets은 일괄로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
+>&#x200B;> [!DNL Experience Manager Assets]의 [!DNL Cloud Service]인 경우 랩 조건에서 관찰되는 전송 속도는 시간당 1,000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
 
 ## Brand Portal에 자산 게시 {#publish-assets-to-bp}
 
@@ -93,12 +93,12 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >
 > * DAM-Users 그룹의 기존 사용자 부분은 &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; 경로에서 읽기 액세스 권한이 있습니다.
 > * 새 사용자(또는 관리자가 아닌 사용자)는 brand portal에 게시하려면 다음 권한이 필요합니다.
->   > 경로:
->   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   >`/libs : jcr:read`
->   >`/conf : jcr:read`
->   >`/content : jcr:read, crx:replicate`
->   >`/content/dam/ : jcr:read,modify, crx:replicate`
+>   &#x200B;> 경로:
+>   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   &#x200B;>`/libs : jcr:read`
+>   &#x200B;>`/conf : jcr:read`
+>   &#x200B;>`/content : jcr:read, crx:replicate`
+>   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal}
 

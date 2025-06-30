@@ -60,7 +60,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 
 1. 확인 대화 상자에서 **[!UICONTROL 활성화]**&#x200B;를 클릭하여 [!DNL Dynamic Media with OpenAPI] 활성화 프로세스를 시작합니다. 활성화가 성공하면 Cloud Manager에 다음 상태 업데이트가 표시됩니다.
    1. **[!UICONTROL 환경 단계]**: **[!UICONTROL 실행 중]**
-   1. ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능이 활성화됨&#x200B;]**
+   1. ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI 기능이 활성화됨&#x200B;]**
 
       ![활성화 성공](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -69,7 +69,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 활성화에 실패하면 Cloud Manager에 다음 상태 업데이트가 표시됩니다.
 
 * **[!UICONTROL 환경 단계]**: **[!UICONTROL OpenAPI를 사용한 DM 실패]**
-* ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능을 활성화하지 못함&#x200B;]**
+* ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI 기능을 활성화하지 못함&#x200B;]**
 
   ![활성화 다시 시도](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 

@@ -91,6 +91,7 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
    1. **[!UICONTROL 필드 레이블]** 필드에 `Project Name`을(를) 지정하십시오.
 
    1. **[!UICONTROL 속성에 매핑]** 필드에 `./jcr:content/metadata/wm:projectName`을(를) 지정합니다. 지침으로, 다음 템플릿을 사용하여 Experience Manager Assets에서 필드 매핑을 정의합니다.
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`
 
       Workfront에서 매핑을 구성하는 동안 `wm:projectName` Experience Manager Assets 필드를 프로젝트 > 이름 Workfront 필드에 매핑했습니다.

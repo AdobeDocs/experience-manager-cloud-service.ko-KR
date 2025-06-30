@@ -134,7 +134,7 @@ Content Hub을 사용하면 컬렉션 보기를 필터링하여 환경 설정에
 
 ## 컬렉션 내에서 사용 가능한 자산 공유 {#share-assets-available-within-collection}
 
-컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
+컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
 
 Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 작업 기능을 포함하여 효과적인 에셋 관리를 위한 포괄적인 거버넌스 도구를 제공합니다. 읽기 전용 액세스에서 전체 관리 제어에 이르기까지 이러한 설정은 자산 배포에 대한 미세 거버넌스를 지원합니다. 에셋을 개별적으로 또는 컬렉션의 일부로 공유할 때 액세스 범위는 사용자에게 할당된 컬렉션의 현재 액세스 수준에 따라 결정됩니다. 또는 개인 컬렉션을 공유할 수 없습니다.
 

@@ -110,7 +110,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    **[!UICONTROL 인증]**&#x200B;을 클릭합니다.
 
-   [!DNL Experience Manager]](assets/analytics-insight-config.png)에서 Assets Insights용 Adobe Analytics ![ 구성
+   [!DNL Experience Manager]![&#128279;](assets/analytics-insight-config.png)에서 Assets Insights용 Adobe Analytics  구성
 
    *그림:[!DNL Experience Manager]*&#x200B;에서 Assets Insights용 Adobe Analytics 구성
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL AEM and Dynamic Media]에 Assets 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-[!DNL Experience Manager Assets]을(를) 사용하면 [!DNL Assets view]을(를) 사용하여 자산을 [!DNL Experience Manager] 및 [!DNL Dynamic Media]에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음  [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences)(으)로 전환하지 않고 [[!DNL Assets view] 을(를) 사용하여 게시할 수 있습니다.
+[!DNL Experience Manager Assets]을(를) 사용하면 [!DNL Assets view]을(를) 사용하여 자산을 [!DNL Experience Manager] 및 [!DNL Dynamic Media]에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음  [!DNL Admin view][&#128279;](/help/assets/overview.md##persona-based-experiences)(으)로 전환하지 않고 [!DNL Assets view] 을(를) 사용하여 게시할 수 있습니다.
 
 [!DNL Experience Manager Assets view]은(는) 자산을 [!DNL AEM] 또는 [!DNL Dynamic Media]에 게시하거나 동시에 게시할 수 있는 유연성을 제공합니다. 에셋을 업로드하고, 탐색하고, 검색하는 동안 에셋을 게시할 수 있습니다. 자산을 게시하는 이러한 모든 옵션은 이 문서에서 자세히 설명합니다.
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 1. 왼쪽 창에 있는 **[!UICONTROL Assets 관리]** 섹션에서 **[!UICONTROL Assets]**&#x200B;을(를) 클릭합니다.
 2. 게시해야 하는 에셋 또는 폴더를 하나 이상 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
-3. 자산을 [!DNL AEM and Dynamic Media]에 게시하려면 **[!UICONTROL AEM]**&#x200B;을(를) 선택하고 **[!UICONTROL 게시]**를 클릭하십시오.
+3. 자산을 [!DNL AEM and Dynamic Media]에 게시하려면 **[!UICONTROL AEM]**&#x200B;을(를) 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭하십시오.
    ![자산 찾아보기](/help/assets/assets/browse-uactivation-immediate.svg)
 [!DNL Dynamic Media] 게시 모드가 **[!UICONTROL 선택적 게시]**(으)로 설정된 폴더는 게시할 수 없습니다. [!DNL AEM]을(를) 선택하면 다른 모든 선택한 폴더 또는 자산이 [!DNL AEM and Dynamic Media]에 게시됩니다.
    ![자산 찾아보기](/help/assets/assets/browse-selective123.svg)
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 1. 검색 막대에서 기준을 지정하고 검색 아이콘을 클릭하여 결과를 확인합니다.
 2. 게시해야 하는 자산을 선택하고 **[!UICONTROL 게시].**&#x200B;를 클릭합니다
-3. 요구 사항에 따라 [!DNL AEM, Dynamic Media] 또는 둘 다 선택하고 **[!UICONTROL 게시]**를 클릭합니다.
+3. 요구 사항에 따라 [!DNL AEM, Dynamic Media] 또는 둘 다 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
    ![이미지 검색](/help/assets/assets/search-mode.svg)
 검색 결과 페이지의 [!DNL Dynamic Media]에 게시하는 옵션은 저장소에서 에셋을 사용할 수 있는 폴더에 설정된 [!DNL Dynamic Media] 게시 모드에 따라 다릅니다.
    >[!NOTE]

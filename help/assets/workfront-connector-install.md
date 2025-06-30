@@ -52,7 +52,7 @@ ht-degree: 1%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. [!DNL Experience Manager] 저장소에 다음 오버레이가 없는지 확인하십시오. 이러한 경로에 기존 오버레이가 있는 경우 오버레이를 제거하거나 둘 사이의 변경 사항 델타를 병합해야 합니다.

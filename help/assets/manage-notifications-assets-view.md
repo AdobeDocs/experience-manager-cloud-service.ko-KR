@@ -72,7 +72,7 @@ Assets 보기 알림을 사용하면 저장소에서 사용할 수 있는 에셋
 
    ![Assets 보기의 알림](assets/enable-notifications.png)
 
-1. 알림 범주를 보려면 **[!UICONTROL 맞춤화]**를 클릭합니다.
+1. 알림 범주를 보려면 **[!UICONTROL 맞춤화]**&#x200B;를 클릭합니다.
    ![Assets 보기의 알림](assets/enable-notification-categories.png)
 
 1. 알림을 받아야 하는 알림 범주를 선택합니다.
