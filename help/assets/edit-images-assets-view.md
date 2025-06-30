@@ -4,51 +4,14 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 �
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 79%
+source-wordcount: '1127'
+ht-degree: 78%
 
 ---
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images-in-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 Assets 보기 UI를 통해 UI에 통합된 Adobe Express에서 제공하는 기본 이미지 편집을 사용할 수 있습니다. 이 편집 기능에는 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환이 포함됩니다. 또한 Assets 보기 UI 내에 임베드된 Adobe Express 인터페이스를 통해 고급 편집을 수행할 수 있습니다.
 
@@ -63,7 +26,7 @@ Assets 보기 UI를 통해 UI에 통합된 Adobe Express에서 제공하는 기�
 ## 이미지 편집 {#edit-image}
 
 [Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하고 올바른 저장소를 선택하여 Assets 보기 UI로 이동합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
-추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
+추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -81,7 +44,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 이미지 크기 조정 기능이 표시됩니다.
 1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
-1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -92,7 +55,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 아래 설명된 몇 번의 간단한 단계를 따라 이미지에서 배경을 제거할 수 있습니다.
 
 1. 왼쪽 창에서 **배경 제거**&#x200B;를 클릭합니다. Experience Manager Assets에 배경이 없는 이미지가 표시됩니다.
-1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-remove-background.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -103,7 +66,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 1. 왼쪽 창에서 **[!UICONTROL 이미지 자르기]**&#x200B;를 클릭합니다.
 2. 이미지 모퉁이의 핸들을 드래그하여 원하는 자르기를 만듭니다.
-3. **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
+3. **[!UICONTROL 적용]**을 클릭합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
 잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
@@ -111,7 +74,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**&#x200B;를 클릭합니다.
+1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**를 클릭합니다.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
@@ -190,7 +153,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/kr/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -233,7 +196,7 @@ TBD: Insert a video of the available social media options.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 >[!MORELIKETHIS]
 >

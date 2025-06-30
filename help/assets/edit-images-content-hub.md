@@ -2,59 +2,14 @@
 title: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 description: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 18%
+source-wordcount: '382'
+ht-degree: 10%
 
 ---
 
 # Content Hub에서 이미지 편집 {#edit-images-content-hub}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
-
-![Adobe Express을 사용하여 Content Hub에서 이미지 편집](assets/edit-images-content-hub.png)
-
->[!AVAILABILITY]
->
->Content Hub 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
->
->[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub을 사용하면 Adobe Express으로 새 콘텐츠를 만들 수 있습니다. 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿과 브랜드 요소로 브랜드에 맞는 변형을 만들고, Adobe Firefly의 최신 생성형 AI 기능으로 새로운 콘텐츠를 만들 수 있습니다.
 
@@ -72,7 +27,7 @@ Content Hub을 사용하여 이미지를 편집하려면:
 
 1. 편집해야 하는 이미지의 자산 카드에서 사용할 수 있는 **[!DNL Open in Adobe Express]**&#x200B;을(를) 클릭합니다. 또는 이미지를 클릭하여 세부 정보를 연 다음 [!DNL Adobe Express] 로고를 클릭합니다. 그런 다음 Adobe Express용 임베드된 편집기는 Content Hub을 종료하지 않고 로드됩니다.
 
-   [!DNL Adobe Express] 기능을 사용하여 [이미지 크기 조정](https://helpx.adobe.com/kr/express/using/resize-image.html), [배경색 제거 또는 변경](https://helpx.adobe.com/kr/express/using/remove-background.html), [이미지 자르기](https://helpx.adobe.com/kr/express/using/crop-image.html), 이미지를 AI에서 생성한 이미지 또는 텍스트와 결합하는 등 모든 이미지 편집 관련 작업을 수행할 수 있습니다.
+   [!DNL Adobe Express] 기능을 사용하여 [이미지 크기 조정](https://helpx.adobe.com/express/using/resize-image.html), [배경색 제거 또는 변경](https://helpx.adobe.com/express/using/remove-background.html), [이미지 자르기](https://helpx.adobe.com/express/using/crop-image.html), 이미지를 AI에서 생성한 이미지 또는 텍스트와 결합하는 등 모든 이미지 편집 관련 작업을 수행할 수 있습니다.
 
 1. 수정 작업을 수행하고 **[!UICONTROL 저장]**&#x200B;을 클릭하여 편집된 자산을 다음 형식 유형 중 하나로 저장합니다.
 

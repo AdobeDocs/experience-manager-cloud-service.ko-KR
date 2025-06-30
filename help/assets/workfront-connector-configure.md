@@ -4,55 +4,18 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 구성
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 2%
+source-wordcount: '1767'
+ht-degree: 1%
 
 ---
 
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
-
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.
@@ -245,4 +208,4 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 [!DNL Workfront] 문서 사용자 정의 양식의 변경 내용을 구독하려면 **[!UICONTROL 고급]** 탭에서 관련 옵션을 선택하십시오. 이 업데이트를 구독하면 [!DNL Workfront] 문서 사용자 지정 양식의 해당 필드가 변경될 때 매핑된 [!DNL Experience Manager] 메타데이터 필드가 업데이트됩니다.
 
-[!DNL Experience Manager]![&#128279;](/help/assets/assets/wf-custom-form-update.png)의 Workfront 문서 사용자 지정 양식 업데이트 구성
+[!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)의 ![Workfront 문서 사용자 지정 양식 업데이트 구성

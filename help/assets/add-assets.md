@@ -4,51 +4,14 @@ description: 디지털 자산을  [!DNL Adobe Experience Manager] as a [!DNL Clo
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '3190'
-ht-degree: 10%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
 # 디지털 자산을 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] [!DNL Assets]&#x200B;(으)로 추가 {#add-assets-to-experience-manager}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets]은(는) 다양한 소스의 다양한 디지털 에셋을 허용합니다. 바이너리와 생성된 렌디션을 저장하고, 다양한 워크플로우 및 [!DNL Adobe Sensei] 서비스를 사용하여 에셋 처리를 수행할 수 있으며, 여러 표면에 걸쳐 다양한 채널을 통해 배포할 수 있습니다.
 
@@ -66,7 +29,7 @@ ht-degree: 10%
 |---------------------|----------------|-----------------|
 | [Assets 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 누르기 및 끌기, 찾기 업로드. 를 사용하여 많은 에셋을 업로드하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드 중 다이내믹 의사 결정용. | 개발자 |
-| [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko) | 낮은 볼륨 에셋 수집이지만 마이그레이션용은 아닙니다. | 관리자, 마케터 |
+| [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 낮은 볼륨 에셋 수집이지만 마이그레이션용은 아닙니다. | 관리자, 마케터 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 [!DNL Creative Cloud] 데스크톱 앱 내에서 자산에 대해 작업할 때 유용합니다. | Creative, 마케터 |
 | [일괄 에셋 수집기](#asset-bulk-ingestor) | 대규모 마이그레이션 및 경우에 따라 대량으로 수집하는 경우에 권장됩니다. 지원되는 데이터 저장소에만 해당됩니다. | 관리자, 개발자 |
 
@@ -178,20 +141,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 더 많은 수의 파일을 업로드하려면 다음 방법 중 하나를 사용하십시오. [사용 사례 및 메서드](#upload-methods-comparison)도 참조하세요.
 
 * [자산 업로드 API](developer-reference-material-apis.md#asset-upload): 필요한 경우 API를 사용하는 사용자 지정 업로드 스크립트나 도구를 사용하여 자산의 추가 처리를 추가합니다(예: 메타데이터 번역 또는 파일 이름 바꾸기).
-* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko): 로컬 파일 시스템에서 에셋을 업로드하는 크리에이티브 전문가 및 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하는 데 사용합니다.
+* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): 로컬 파일 시스템에서 에셋을 업로드하는 크리에이티브 전문가 및 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하는 데 사용합니다.
 * [일괄 수집 도구](#asset-bulk-ingestor): [!DNL Experience Manager]을(를) 배포할 때 가끔 또는 처음에 대량의 자산을 수집하는 데 사용합니다.
 
 ### 일괄 에셋 가져오기 도구 {#asset-bulk-ingestor}
 
 이 도구는 Azure 또는 S3 데이터 저장소에서 대규모 에셋을 수집하는 데 사용할 관리자 그룹에만 제공됩니다. 구성 및 수집에 대한 자세한 내용은 비디오를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/341391/?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 다음 이미지는 데이터 저장소에서 Experience Manager으로 자산을 수집할 때의 다양한 단계를 보여줍니다.
 
 ![일괄 수집 도구](assets/bulk-ingestion.png)
 
-**전제 조건**
+**사전 요구 사항**
 
 이 기능을 사용하려면 Azure 또는 AWS의 외부 저장소 계정이나 버킷이 필요합니다.
 
@@ -234,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 
-1. (선택 사항) **[!UICONTROL 메타데이터 파일]** 필드에서 가져올 메타데이터 파일(CSV 형식으로 제공)을 지정합니다. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 [자산 메타데이터를 일괄로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=ko)할 때 CSV 파일 형식과 동일합니다. **가져오기 후 소스 파일 삭제** 옵션을 선택한 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드를 사용하여 CSV 파일을 필터링하십시오. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
+1. (선택 사항) **[!UICONTROL 메타데이터 파일]** 필드에서 가져올 메타데이터 파일(CSV 형식으로 제공)을 지정합니다. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 [자산 메타데이터를 일괄로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html)할 때 CSV 파일 형식과 동일합니다. **가져오기 후 소스 파일 삭제** 옵션을 선택한 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드를 사용하여 CSV 파일을 필터링하십시오. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
 
 1. 구성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
@@ -389,7 +352,7 @@ Experience Manager에 작업 내역이 표시됩니다. 대량 가져오기 작�
 [!DNL Experience Manager]은(는) 웹 브라우저 사용자 인터페이스 외에도 데스크톱에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)은(는) Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크톱 응용 프로그램의 [!DNL Experience Manager]에서 자산에 대한 액세스를 제공합니다. 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 현재 열려 있는 문서를 [!DNL Experience Manager]에 직접 업로드할 수 있습니다.
-* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)은(는) 파일 형식이나 자산을 처리하는 기본 응용 프로그램에 관계없이 데스크톱에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록 업로드만 지원하므로 로컬 파일 시스템에서 중첩된 폴더 계층의 파일을 업로드하는 것이 유용합니다.
+* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)은(는) 파일 형식이나 자산을 처리하는 기본 응용 프로그램에 관계없이 데스크톱에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록 업로드만 지원하므로 로컬 파일 시스템에서 중첩된 폴더 계층의 파일을 업로드하는 것이 유용합니다.
 
 ## 업로드 시 에셋 처리 {#process-when-uploaded}
 
@@ -453,7 +416,7 @@ Experience Manager에 작업 내역이 표시됩니다. 대량 가져오기 작�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)
+>* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)

@@ -4,48 +4,14 @@ description: ' [!DNL Dynamic Media] Prime 및 Ultimate 서비스를 활성화하
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 4%
+source-wordcount: '1036'
+ht-degree: 1%
 
 ---
 
 # [!DNL Dynamic Media] Prime 및 Ultimate 사용 {#enable-dynamic-media-prime-and-ultimate}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager] as a Cloud Service을 사용하면 [!DNL Dynamic Media] Prime 및 Ultimate 오퍼링에 액세스하여 디지털 워크플로우를 간소화하고 컨텐츠 관리를 최적화할 수 있습니다. [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)을(를) 참조하여 각각의 이점 및 차이점에 대해 알아보십시오.
 
@@ -86,7 +52,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 
 1. [Cloud Manager UI로 이동](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. 기존 환경에 대한 액세스 권한이 없는 경우 [환경을 만듭니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments).
+1. 기존 환경에 대한 액세스 권한이 없는 경우 [환경을 만듭니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments).
 
 1. 환경 세부 정보 페이지의 **[!UICONTROL 환경 정보]** 섹션에 있는 **[!UICONTROL Dynamic Media]** 행에서 **[!UICONTROL 활성화하려면 클릭]**&#x200B;을(를) 선택하십시오.
 
@@ -94,7 +60,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 
 1. 확인 대화 상자에서 **[!UICONTROL 활성화]**&#x200B;를 클릭하여 [!DNL Dynamic Media with OpenAPI] 활성화 프로세스를 시작합니다. 활성화가 성공하면 Cloud Manager에 다음 상태 업데이트가 표시됩니다.
    1. **[!UICONTROL 환경 단계]**: **[!UICONTROL 실행 중]**
-   1. ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI 기능이 활성화됨&#x200B;]**
+   1. ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능이 활성화됨&#x200B;]**
 
       ![활성화 성공](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -103,7 +69,7 @@ OpenAPI 기능이 있는 [!DNL Dynamic Media]은(는) DAM을 애자일 및 효�
 활성화에 실패하면 Cloud Manager에 다음 상태 업데이트가 표시됩니다.
 
 * **[!UICONTROL 환경 단계]**: **[!UICONTROL OpenAPI를 사용한 DM 실패]**
-* ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI 기능을 활성화하지 못함&#x200B;]**
+* ![DM 활성화됨](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI 기능을 활성화하지 못함&#x200B;]**
 
   ![활성화 다시 시도](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -134,7 +100,7 @@ Cloud Manager에서 사용 가능한 기존 또는 새로운 환경에서 [Dynam
 
 다음 단계를 실행합니다.
 
-1. [새 프로그램을 만들거나](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) 기존 프로그램으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 프로덕션 설정]** 페이지에 **[!UICONTROL 솔루션 및 추가 기능]** 탭이 표시됩니다.
+1. [새 프로그램을 만들거나](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) 기존 프로그램으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 프로덕션 설정]** 페이지에 **[!UICONTROL 솔루션 및 추가 기능]** 탭이 표시됩니다.
 
 1. **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** 또는 **[!UICONTROL 사이트]**&#x200B;를 선택하여 **[!UICONTROL Dynamic Media]** 솔루션을 프로그램에 추가하십시오.
 
@@ -206,17 +172,17 @@ AEM as a Cloud Service에는 기본 도메인이 제공되지만 필요에 따�
 1. [Cloud Manager 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [이미 활성화됨 [!DNL Dynamic Media with OpenAPI] 환경에서 활성화됨](#activate-dynamic-media-with-openapi).
 1. 준비 상태에서 [!DNL Dynamic Media with OpenAPI]을(를) 사용하도록 설정했습니다.
-1. 게재 계층에 사용할 도메인에 대한 EV 또는 OV 유형 인증서. 자세한 내용은 [SSL 인증서 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)를 참조하십시오.
+1. 게재 계층에 사용할 도메인에 대한 EV 또는 OV 유형 인증서. 자세한 내용은 [SSL 인증서 소개](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)를 참조하십시오.
 
 #### Cloud Manager을 사용하여 게재 계층에서 사용자 정의 도메인 구성 {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 Cloud Manager에서 다음 단계를 실행하여 게재 계층에서 사용자 정의 도메인을 구성합니다.
 
-1. [고객 관리 SSL 인증서 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
+1. [고객 관리 SSL 인증서 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
-1. [사용자 지정 도메인 이름 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
+1. [사용자 지정 도메인 이름 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. 환경 세부 정보 페이지로 이동하고 [CDN 구성을 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)합니다. 구성을 추가하는 동안 **[!UICONTROL CDN 구성]** 대화 상자의 **[!UICONTROL 계층]** 필드에서 **[!UICONTROL 배달]**&#x200B;을 선택합니다.
+1. 환경 세부 정보 페이지로 이동하고 [CDN 구성을 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)합니다. 구성을 추가하는 동안 **[!UICONTROL CDN 구성]** 대화 상자의 **[!UICONTROL 계층]** 필드에서 **[!UICONTROL 배달]**&#x200B;을 선택합니다.
 
    ![CDN 구성](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
@@ -248,9 +214,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -273,7 +239,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -297,7 +263,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 

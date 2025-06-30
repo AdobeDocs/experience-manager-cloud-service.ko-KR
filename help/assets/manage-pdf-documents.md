@@ -4,51 +4,14 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 P
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 6%
+source-wordcount: '835'
+ht-degree: 4%
 
 ---
 
 # Experience Manager Assets as a Cloud Service에서 PDF 문서 관리 {#add-assets-to-experience-manager}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 Experience Manager Assets은 Document Cloud PDF 뷰어와 원활하게 통합되므로 PDF 문서의 여러 페이지를 미리 볼 수 있습니다. 또한 주석, 검색 텍스트, 책갈피 및 썸네일을 사용하여 PDF 문서를 탐색하는 등의 고급 Document Cloud PDF 뷰어 기능을 동일한 지붕 아래에서 사용할 수도 있습니다. 또한 Experience Manager Assets을 사용하면 지원되는 다른 형식의 문서를 업로드하고 PDF 형식으로 미리 볼 수 있습니다.
 
@@ -84,7 +47,7 @@ Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점�
 
 Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PDF 문서를 미리 볼 수 있습니다. PDF 문서의 여러 페이지를 미리 보려면 다음 단계를 고려하십시오.
 
-1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko)하는 단계를 따릅니다.
+1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
 1. 업로드하고 미리 보려는 PDF 문서를 찾아봅니다.
 1. 문서를 엽니다.
 1. PDF 문서 뷰어는 기본적으로 로드됩니다. 렌디션 패널에서 PDF 렌디션을 선택할 수도 있습니다.
@@ -109,7 +72,7 @@ Experience Manager Assets을 사용하면 PDF 문서에 주석을 추가할 수 
 PDF 문서에 주석을 달려면 다음 단계를 수행하십시오.
 
 1. Assets 인터페이스로 이동하여 주석을 추가할 PDF 문서로 이동합니다. 기본 PDF 뷰어가 오른쪽에 열리고 선택한 PDF 문서의 미리보기가 표시됩니다.
-1. 상단 메뉴에서 **주석 달기**&#x200B;를 클릭합니다.
+1. 상단 메뉴에서 **주석 달기**를 클릭합니다.
 다음은 PDF 문서에 적용할 수 있는 주석입니다.
 
 <table>
@@ -163,7 +126,7 @@ PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지�
 
 지원되는 다른 문서 형식의 여러 페이지를 미리 보려면 다음 단계를 수행하십시오.
 
-1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ko)하는 단계를 따릅니다.
+1. [AEM에서 자산을 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)하는 단계를 따릅니다.
 1. 업로드할 문서를 검색하고 미리 봅니다.
 1. 문서를 엽니다.
 1. 왼쪽 패널의 정적 섹션 아래에서 PDF 를 선택합니다. 오른쪽 패널에는 에셋의 여러 페이지 미리보기가 표시됩니다. 미리 보려는 페이지를 선택하려면 왼쪽 패널에서 축소판을 선택합니다.

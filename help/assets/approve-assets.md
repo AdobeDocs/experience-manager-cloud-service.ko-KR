@@ -3,57 +3,14 @@ title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 11%
+source-wordcount: '1063'
+ht-degree: 7%
 
 ---
 
 # [!DNL Experience Manager]에서 자산 승인
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->OpenAPI 기능이 포함된 Dynamic Media 안내서가 이제 PDF 포맷으로 제공됩니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI 어시스턴트를 사용하여 쿼리에 답변합니다.
->
->[!BADGE OpenAPI 기능이 포함된 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. 승인된 최신 버전의 자산만 사용할 수 있어 모든 채널과 애플리케이션에서 브랜드 일관성을 보장합니다.
 
@@ -68,10 +25,10 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 자산을 승인하려면 먼저 관리 보기에서 적용 가능한 메타데이터 스키마를 한 번 업데이트해야 합니다. Assets 보기에 대해 이 구성을 건너뛸 수 있습니다. 메타데이터 스키마를 구성하려면 다음 단계를 따르십시오.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
-1. 적용 가능한 메타데이터 스키마를 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. <br>메타데이터 스키마 양식 편집기&#x200B;**가 열리고**&#x200B;[!UICONTROL &#x200B;기본&#x200B;]&#x200B;**탭이 강조 표시됩니다.**
+1. 적용 가능한 메타데이터 스키마를 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. <br>메타데이터 스키마 양식 편집기&#x200B;]**가 열리고**[!UICONTROL &#x200B;기본&#x200B;]**탭이 강조 표시됩니다.**[!UICONTROL 
 1. 아래로 스크롤하여 **[!UICONTROL 검토 상태]**&#x200B;를 클릭합니다.
 1. 오른쪽 패널의 **[!UICONTROL 규칙]** 탭을 클릭합니다.
-1. **[!UICONTROL 편집 사용 안 함]**&#x200B;을 선택 취소합니다.
+1. **[!UICONTROL 편집 사용 안 함]**을 선택 취소합니다.
 **[!UICONTROL 검토 상태]** 필드가 매핑된 속성을 확인해야 하는 경우 **[!UICONTROL 설정]** 탭으로 이동하여 **[!UICONTROL 속성에 매핑]** 필드에서 `./jcr:content/metadata/dam:status` 값을 확인합니다.
 1. 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 드롭다운]** 필드를 양식의 메타데이터 섹션으로 끌어다 놓습니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
@@ -95,7 +52,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 1. 자산을 선택하고 상단 창에서 **[!UICONTROL 속성]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL 기본]** 탭에서 아래로 스크롤하여 **[!UICONTROL 상태 검토]**&#x200B;를 선택합니다.
-1. 검토 상태를 **[!UICONTROL 승인됨]**&#x200B;으로 변경합니다.
+1. 검토 상태를 **[!UICONTROL 승인됨]**으로 변경합니다.
    ![이미지](/help/assets/assets/approve-old-ui.png)
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
@@ -112,7 +69,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;로 이동합니다.
 1. 페이지 오른쪽 상단의 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 프로필 제목을 추가하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 메타데이터 프로필이 정상적으로 생성되었습니다.
-1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**&#x200B;을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;**양식이 열리고**&#x200B;[!UICONTROL 기본&#x200B;]&#x200B;**탭이 강조 표시됩니다.**
+1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;]**양식이 열리고**[!UICONTROL 기본&#x200B;]**탭이 강조 표시됩니다.**[!UICONTROL 
 1. 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 한 줄 텍스트 필드]**&#x200B;를 양식의 메타데이터 섹션으로 끌어다 놓습니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
    1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) _승인된 Assets_(으)로 변경합니다.
@@ -131,7 +88,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 새로 만든 메타데이터 프로필을 선택합니다.
 1. 맨 위의 작업 표시줄에서 **[!UICONTROL 폴더에 메타데이터 프로필 적용]**&#x200B;을 클릭합니다.
-1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
+1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**을 클릭합니다.
    <br> 전체 폴더에 대한 권한이 승인을 위해 설정되었으며 이 폴더에 업로드된 모든 자산이 자동으로 승인됩니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)
@@ -173,7 +130,7 @@ AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 D
 
 1. **[!UICONTROL Dynamic Media]** 패널에서 사용할 수 있는 **[!UICONTROL Dynamic Media with OpenAPI]**&#x200B;을(를) 선택하십시오.
 
-1. 자산의 배달 URL을 복사하려면 **[!UICONTROL URL 복사]**&#x200B;를 클릭하세요.
+1. 자산의 배달 URL을 복사하려면 **[!UICONTROL URL 복사]**를 클릭하세요.
    ![동적 렌디션](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]

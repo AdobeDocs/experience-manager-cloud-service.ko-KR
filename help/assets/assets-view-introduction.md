@@ -5,51 +5,14 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 68%
+source-wordcount: '966'
+ht-degree: 69%
 
 ---
 
 # Assets 보기 소개 {#assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 ![Assets Essentials 배포](assets/banner-image.jpg)
 
@@ -114,7 +77,7 @@ Assets 보기는 관리 보기에서 사용할 수 없는 다음과 같은 주�
 
 ### 공동 작업을 가속화하는 Adobe Photoshop Express 통합 {#accelerate-collaboration}
 
-새로운 환경은 내장된 Adobe Photoshop 기능, 버전 제어 및 주석 도구를 사용한 실시간 편집을 포함하여 강력한 공동 작업 기능 세트를 제공합니다. 이를 통해 디자인, 크리에이티브, 브랜딩 및 마케팅 팀 간에 원활한 공동 작업이 가능하여 병목 현상을 극복하고 마케팅 운영 프로세스를 가속화할 수 있습니다. 마케팅 담당자는 이제 프로젝트 게재를 가속화하고 전반적인 생산성을 높일 수 있는 강력한 도구를 자유롭게 사용할 수 있습니다.
+새로운 환경은 기본 제공 Adobe Photoshop 기능, 버전 제어 및 주석 도구를 사용한 실시간 편집을 포함하여 강력한 공동 작업 기능 세트를 제공합니다. 이를 통해 디자인, 크리에이티브, 브랜딩 및 마케팅 팀 간에 원활한 공동 작업이 가능하여 병목 현상을 극복하고 마케팅 운영 프로세스를 가속화할 수 있습니다. 마케팅 담당자는 이제 프로젝트 게재를 가속화하고 전반적인 생산성을 높일 수 있는 강력한 도구를 자유롭게 사용할 수 있습니다.
 
 Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 이 비디오를 시청하십시오.
 
@@ -122,7 +85,7 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 [![안내서 참조](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Assets as a Cloud Service에 예정된 릴리스에는 [Adobe Express을 통한 Adobe Firefly 통합](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)도 포함됩니다.
+Assets as a Cloud Service에 예정된 릴리스에는 [Adobe Express을 통한 Adobe Firefly 통합](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&sdid=JM4FW6VL&mv=search&mv2=paidsearch&ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)도 포함됩니다.
 
 ### 조직의 계층 구조를 설정하기 위한 폴더 업로드 {#folder-uploads}
 

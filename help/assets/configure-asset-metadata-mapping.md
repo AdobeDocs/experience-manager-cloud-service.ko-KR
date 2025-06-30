@@ -4,51 +4,14 @@ description: Adobe Workfront 및 Experience Manager as a Cloud Service 애플리
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 6%
+source-wordcount: '1012'
+ht-degree: 4%
 
 ---
 
 # Adobe Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성 {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Workfront 및 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑할 수 있습니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 
@@ -68,7 +31,7 @@ Adobe Workfront 응용 프로그램의 `Metadata Syncs` 프로젝트에 `add-use
 
 * Workfront 및 Experience Manager Assets as a Cloud Service 애플리케이션에 대한 관리자 액세스 권한.
 
-* [Workfront 및 Experience Manager Assets as a Cloud Service 응용 프로그램](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus) 간의 통합.
+* [Workfront 및 Experience Manager Assets as a Cloud Service 응용 프로그램](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&_LANG=enus) 간의 통합.
 
 ## Workfront에서 메타데이터 매핑 설정 {#set-up-metadata-mapping}
 
@@ -128,7 +91,6 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
    1. **[!UICONTROL 필드 레이블]** 필드에 `Project Name`을(를) 지정하십시오.
 
    1. **[!UICONTROL 속성에 매핑]** 필드에 `./jcr:content/metadata/wm:projectName`을(를) 지정합니다. 지침으로, 다음 템플릿을 사용하여 Experience Manager Assets에서 필드 매핑을 정의합니다.
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`
 
       Workfront에서 매핑을 구성하는 동안 `wm:projectName` Experience Manager Assets 필드를 프로젝트 > 이름 Workfront 필드에 매핑했습니다.

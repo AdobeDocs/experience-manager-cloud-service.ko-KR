@@ -6,51 +6,14 @@ mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '3484'
+source-wordcount: '3438'
 ht-degree: 14%
 
 ---
 
 # Adobe Experience Manager 및 Creative Cloud 통합 우수 사례 {#aem-and-creative-cloud-integration-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -72,7 +35,7 @@ Adobe Creative Cloud은 크리에이티브 팀에 디지털 에셋을 제작할 
 | 요구 사항 | 사용 사례 | 관련 표면 |
 |---|---|---|
 | 데스크탑에서 크리에이티브를 위한 경험 단순화 | 크리에이티브 전문가 또는 더 광범위하게 기본 자산 만들기 애플리케이션에서 작업하는 데스크탑의 사용자를 위해 DAM([!DNL Assets])에서 자산에 대한 액세스를 간소화합니다. Experience Manager의 변경 사항을 검색, 사용(열기), 편집 및 저장하고, 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑, Creative Cloud 앱 |
-| [!DNL Adobe Stock]에서 바로 사용할 수 있는 고품질 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 콘텐츠 작성 프로세스를 가속화합니다. 크리에이티브 전문가는 크리에이티브 도구 내에서 승인된 에셋을 바로 사용합니다. | [!DNL Assets]; [!DNL Adobe Stock] 마켓플레이스; 메타데이터 필드 |
+| [!DNL Adobe Stock]에서 바로 사용할 수 있는 고품질 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 콘텐츠 작성 프로세스를 가속화합니다. Creative 전문가는 승인된 자산을 자체 제작 도구 내에서 바로 사용합니다. | [!DNL Assets]; [!DNL Adobe Stock] 마켓플레이스; 메타데이터 필드 |
 | 조직별 자산 분배 및 공유 | 내부 부서/로컬 지점과 외부 파트너, 배포자 및 에이전시는 상위 조직이 공유하는 승인된 자산을 사용합니다. 이 조직은 생성된 자산을 보다 광범위한 재사용을 위해 안전하고 원활하게 공유하고자 합니다. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | 업로드된 에셋의 사전 정의된 변형 자동 생성 | 사전 정의된 작업에 대해 Adobe의 고유한 미디어 처리 및 변형 기술을 사용하여 에셋을 자동으로 처리합니다. API 및 에셋 마이크로서비스를 사용하여 사용자 지정 로직을 만들어 사용자 지정 작업을 정의합니다. | [!DNL Assets] 사용자 인터페이스 |
 
@@ -81,12 +44,12 @@ Adobe Creative Cloud은 크리에이티브 팀에 디지털 에셋을 제작할 
 | 관련된 담당자에 대한 가치 제안 | Adobe 제공 | 관련 표면 |
 |---|---|---|
 | Creative 사용자는 [!DNL Creative Cloud] 앱을 종료하지 않고 [!DNL Experience Manager]에서 자산을 검색하고 열어 사용하며, [!DNL Experience Manager]에 대한 변경 내용을 편집하여 업로드하고, [!DNL Experience Manager]에 새 파일을 업로드합니다. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign. |
-| 비즈니스 사용자는 데스크톱 환경에서 자산 열기 및 사용, [!DNL Experience Manager]에 변경 내용 편집 및 업로드, [!DNL Experience Manager]에 새 파일 업로드를 단순화합니다. 범용 통합을 사용하여 Adobe 이외의 자산 유형을 포함하여 기본 데스크탑 애플리케이션에서 모든 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko) | Win 및 Mac 데스크탑의 Experience Manager 데스크탑 앱 |
+| 비즈니스 사용자는 데스크톱 환경에서 자산 열기 및 사용, [!DNL Experience Manager]에 변경 내용 편집 및 업로드, [!DNL Experience Manager]에 새 파일 업로드를 단순화합니다. 범용 통합을 사용하여 Adobe 이외의 자산 유형을 포함하여 기본 데스크탑 애플리케이션에서 모든 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑의 Experience Manager 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 Experience Manager 내에서 Adobe Stock 자산을 검색, 미리보기, 라이센스 부여 및 저장하고 관리합니다. 라이센스가 부여되고 저장된 자산은 더 나은 거버넌스를 위해 선별된 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
-| 디지털 제품 디자이너와 마케터 간의 협업을 개선합니다. 디자이너는 Adobe XD 캔버스의 디자인 및 와이어프레임 모델에서 디지털 에셋을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 디지털 제품 디자이너와 마케터 간의 협업을 개선합니다. 디자이너는 Adobe XD 캔버스의 디자인 및 와이어프레임 모델에서 디지털 에셋을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 마케터는 업로드된 에셋 및 사용자 지정을 사용하여 만든 사전 정의된 작업을 기반으로 변형 및 파생물을 자동으로 만들 수 있습니다. 이 자동화를 사용하여 콘텐츠 속도를 향상시키고 수작업을 줄일 수 있습니다. | [콘텐츠 자동화](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 웹 인터페이스 |
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ko), [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 구성 요소, [Link Share](share-assets.md)를 기반으로 빌드할 수 있는 솔루션, [Experience Manager Assets 웹 UI](/help/assets/manage-digital-assets.md)를 사용하는 솔루션 등의 대체 솔루션은 특정 요구 사항을 기반으로 검토해야 합니다.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 구성 요소, [Link Share](share-assets.md)를 기반으로 빌드할 수 있는 솔루션, [Experience Manager Assets 웹 UI](/help/assets/manage-digital-assets.md)를 사용하는 솔루션 등의 대체 솔루션은 특정 요구 사항을 기반으로 검토해야 합니다.
 
 Experience Manager용 ![Creative Cloud 연결: 사용할 기능 결정](assets/creative-connections-aem.png)
 
@@ -116,7 +79,7 @@ Experience Manager용 ![Creative Cloud 연결: 사용할 기능 결정](assets/c
 
 자산 분배 사용 사례를 지원하려면 다음 옵션을 고려하십시오.
 
-* 자산을 게시할 수 있도록 Assets에 대한 구성 가능한 추가 기능에 대해 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ko).
+* 자산을 게시할 수 있도록 Assets에 대한 구성 가능한 추가 기능에 대해 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
 
 * 사용자 지정 솔루션은 [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 코드 베이스를 기반으로 만들어집니다.
 * 링크를 사용하여 주문형 자산을 공유할 수 있는 Experience Manager [링크 공유](/help/assets/share-assets.md).
@@ -187,7 +150,7 @@ DAM에 에셋을 저장하면 에셋에 쉽게 액세스하고 검색할 수 있
 
 #### 자산이 DAM에 저장되는 경우 {#when-assets-are-stored-in-dam}
 
-크리에이티브 팀(및 조직)은 일반적으로 에셋 수명주기의 각 단계에서 에셋을 저장하는 데 관심이 없습니다. 예를 들어 다음과 같은 경우에는 에셋을 저장하지 않습니다.
+Creative 팀(및 조직)은 일반적으로 에셋 주기의 각 단계에 에셋을 저장하는 데 관심이 없습니다. 예를 들어 다음과 같은 경우에는 에셋을 저장하지 않습니다.
 
 * 아직 확정되지 않았거나 실험이 필요한 Assets
 * 크리에이티브/내부 팀 검토 주기를 통과하지 못한 Assets
@@ -216,20 +179,20 @@ DAM의 기존 에셋에 대한 변경 요청 후 마케팅 팀이 검토하도�
 
 Experience Manager Assets은 Experience Manager Assets 배포에 대한 액세스 권한을 기반으로 두 가지 유형의 사용자를 지원합니다. 일반적으로 엔터프라이즈 네트워크(방화벽) 내의 사용자는 DAM에 직접 액세스할 수 있습니다. 엔터프라이즈 네트워크 외부의 다른 사용자는 직접 액세스할 수 없습니다. 사용자 유형은 기술적 관점에서 사용할 수 있는 통합을 결정합니다.
 
-#### DAM에 직접 액세스할 수 있는 크리에이티브 사용자 {#creative-users-with-direct-access-to-dam}
+#### DAM에 직접 액세스할 수 있는 Creative 사용자 {#creative-users-with-direct-access-to-dam}
 
 일반적으로 내부 네트워크에 온보딩된 사내 크리에이티브 팀 또는 에이전시/크리에이티브 전문가는 Experience Manager 로그인을 포함하여 DAM 인스턴스에 액세스할 수 있습니다. Experience Manager 및 네트워크 인프라는 외부 당사자(일반적으로 클라이언트에 근무하는 기관과 같은 신뢰할 수 있는 조직)에 직접 액세스하여 VPN 또는 IP 허용 목록 등을 통해 네트워크를 통해 Experience Manager에 액세스할 수 있도록 설정할 수 있습니다.
 
 이러한 경우 Adobe Asset Link 또는 Experience Manager 데스크탑 앱을 통해 최종/승인된 에셋에 쉽게 액세스하고 크리에이티브 준비가 완료된 에셋을 DAM에 저장할 수 있습니다.
 
-#### DAM에 액세스할 수 없는 크리에이티브 사용자 {#creative-users-without-access-to-dam}
+#### DAM에 액세스할 수 없는 Creative 사용자 {#creative-users-without-access-to-dam}
 
 DAM 인스턴스에 직접 액세스할 수 없는 외부 에이전시와 프리랜서는 승인된 에셋에 액세스해야 하거나 DAM에 새 디자인을 추가하려고 할 수 있습니다.
 
 다음 전략을 사용하여 최종/승인된 에셋에 액세스할 수 있습니다.
 
 * Asset Link가 작동하지 않는 경우 데스크탑 앱을 사용하십시오.
-* 자산을 외부 파트너에게 안전하게 배포하려면 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ko)을(를) 사용하십시오.
+* 자산을 외부 파트너에게 안전하게 배포하려면 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)을(를) 사용하십시오.
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 기반으로 배포 및 소싱 포털의 사용자 지정 구현 사용
 * Experience Manager에 설정된 액세스 제어 및 필요한 네트워크 인프라(예: 허용된 VPN 및 IP 목록)를 사용하여 외부 당사자에게 DAM의 전용 콘텐츠 영역에 대한 액세스 권한을 부여합니다. Experience Manager 웹 UI를 사용하여 에셋을 가져오고 새 콘텐츠를 DAM에 업로드할 수 있습니다.
 
@@ -261,7 +224,7 @@ Experience Manager 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네
 
 다음과 같은 업로드 기능을 사용할 수 있습니다.
 
-* 대형/계층적 폴더를 일괄 업로드하려면 [폴더 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#bulk-upload-assets) 기능을 제공하는 Experience Manager 데스크톱 앱을 사용하십시오. 계층적 폴더 구조를 업로드할 수도 있습니다. Assets은 백그라운드에서 업로드되므로 웹 브라우저 세션에 연결되어 있지 않습니다
+* 대형/계층적 폴더를 일괄 업로드하려면 [폴더 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) 기능을 제공하는 Experience Manager 데스크톱 앱을 사용하십시오. 계층적 폴더 구조를 업로드할 수도 있습니다. Assets은 백그라운드에서 업로드되므로 웹 브라우저 세션에 연결되어 있지 않습니다
 * 단일 폴더에서 몇 가지 파일을 업로드하려면 파일을 웹 인터페이스로 직접 드래그하거나 Experience Manager Assets 웹 인터페이스의 만들기 옵션을 사용합니다.
 * 비즈니스 요구 사항에 따라 사용자 정의 업로더를 사용할 수도 있습니다.
 

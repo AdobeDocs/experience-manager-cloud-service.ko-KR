@@ -4,48 +4,14 @@ description: ' [!DNL AEM Assets View]. [!DNL AEM Assets View] UI의 UI 확장성
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 6%
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 # [!DNL AEM Assets View]에서 UI 확장성 사용 {#AEM-Assets-View-UI-Extensibility}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>신규</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets View]은(는) UI 확장성을 지원하므로 [!DNL AEM Assets View]의 기본 기능에서 충족되지 않는 특정 워크플로 및 비즈니스 요구 사항에 대해 [!DNL Assets View] UI에 사용자 지정 UI 구성 요소를 추가할 수 있습니다. [!DNL AEM Assets View]의 이 UI 확장성 기능은 유연성을 향상시켜 조직에서 특정 워크플로 및 요구 사항에 맞게 인터페이스를 조정할 수 있도록 합니다.\
 **자산**, **폴더** 및 **컬렉션** 수준에 확장을 추가할 수 있습니다. 추가된 확장은 **자산**, **컬렉션** 또는 **폴더** **[!UICONTROL 세부 정보]** 페이지의 전용 패널에 표시됩니다.

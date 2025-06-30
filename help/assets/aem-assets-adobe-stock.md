@@ -5,55 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '2254'
-ht-degree: 7%
+source-wordcount: '2208'
+ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Stock]개 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services와의 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로운</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 활성화</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
-
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
@@ -243,7 +206,7 @@ To configure the IMS account:
 
 [!DNL Developer Console]에서 프로그램을 설정하려면 다음 단계를 수행하십시오.
 1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)&#x200B;(으)로 이동하여 조직에 로그인합니다.
-1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 선택하십시오.
+1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**를 선택하십시오.
    ![aem assets와 adobe stock 통합](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -276,7 +239,6 @@ To configure the IMS account:
    * **[!UICONTROL 범위]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 범위]**&#x200B;를 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
 
    * **[!UICONTROL 조직 ID]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 조직 ID]**&#x200B;을(를) 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
-
      ![aem assets 및 adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe IMS 구성]** 페이지가 열리고 사용자가 만든 [!DNL Adobe Stock] 통합이 표시됩니다.
 
@@ -285,13 +247,13 @@ To configure the IMS account:
 다음 단계를 실행하여 [!DNL Adobe Stock]에 연결할 클라우드 구성을 추가하십시오.
 
 1. [!DNL AEM author] 인스턴스로 이동합니다.
-1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**&#x200B;을(를) 찾아 선택합니다.
+1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**을(를) 찾아 선택합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe Stock 구성]** 페이지에 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
    * **[!UICONTROL 제목]**: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지([단계 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) 참조)로 이동하여 제목을 복사하고 여기에 붙여넣으십시오.
    * **[!UICONTROL 연결된 Adobe IMS 구성]**: 만든 [!DNL Adobe Stock] 통합을 선택하십시오.
    * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adobe-stock-config-page.png)
 
 <!--
@@ -450,7 +412,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 사용자는 [!DNL Adobe Stock] 엔터프라이즈 플랜의 할당량을 사용하여 [!DNL Adobe Stock] 자산의 라이선스를 부여할 수 있습니다. 에셋에 라이선스를 부여하면 에셋은 워터마크 없이 저장되고 [!DNL Experience Manager Assets]에서 검색 및 사용에 사용할 수 있습니다.
 
-[!DNL Experience Manager Assets]![&#128279;](assets/aem-stock_licenseandsave.jpg)에서 [!DNL Adobe Stock]개 자산을 라이선스하고 저장하는 대화 상자
+[!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)에서 [!DNL Adobe Stock]개 자산을 라이선스하고 저장하는 ![대화 상자
 
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
@@ -562,6 +524,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ko)
->* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/kr/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock FAQ](https://helpx.adobe.com/kr/stock/faq.html)
+>* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)

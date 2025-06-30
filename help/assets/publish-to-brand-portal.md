@@ -5,51 +5,14 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 84%
+source-wordcount: '1287'
+ht-degree: 85%
 
 ---
 
 # Brand Portal에 자산 게시 {#publish-assets-to-brand-portal}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -69,8 +32,8 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
->Assets은 일괄로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
-> [!DNL Experience Manager Assets]의 [!DNL Cloud Service]인 경우 랩 조건에서 관찰되는 전송 속도는 시간당 1,000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
+>>Assets은 일괄로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
+>> [!DNL Experience Manager Assets]의 [!DNL Cloud Service]인 경우 랩 조건에서 관찰되는 전송 속도는 시간당 1,000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
 
 ## Brand Portal에 자산 게시 {#publish-assets-to-bp}
 
@@ -130,12 +93,12 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >
 > * DAM-Users 그룹의 기존 사용자 부분은 &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; 경로에서 읽기 액세스 권한이 있습니다.
 > * 새 사용자(또는 관리자가 아닌 사용자)는 brand portal에 게시하려면 다음 권한이 필요합니다.
-> 경로:
-> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->`/libs : jcr:read`
->`/conf : jcr:read`
->`/content : jcr:read, crx:replicate`
->`/content/dam/ : jcr:read,modify, crx:replicate`
+>   > 경로:
+>   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   >`/libs : jcr:read`
+>   >`/conf : jcr:read`
+>   >`/content : jcr:read, crx:replicate`
+>   >`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal}
 
@@ -197,7 +160,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
 1. 에셋의 현재 게시 상태를 보려면 목록 보기 ![목록 보기](assets/list-view.svg)(으)로 전환하십시오.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![생성된 보고서 상태](assets/report-status.JPG)
 
@@ -295,11 +258,11 @@ AEM Assets 인스턴스에서 게시를 취소하여 Brand Portal에 게시된 �
 
 위의 항목 외에도 AEM Assets의 메타데이터 스키마, 이미지 사전 설정, 검색 패싯 및 태그를 Brand Portal 포털에 게시할 수 있습니다.
 
-* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=ko)
-* [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=ko)
+* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-자세한 내용은 [Brand Portal 설명서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ko)를 참조하십시오.
+자세한 내용은 [Brand Portal 설명서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)를 참조하십시오.
 
 
 <!--

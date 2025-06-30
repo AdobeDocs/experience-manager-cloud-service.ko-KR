@@ -4,51 +4,14 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 비디오를 �
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 17%
 
 ---
 
 # [!DNL Assets view]에서 비디오 편집 {#edit-videos}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 Assets 사용자는 비디오에 대한 [!DNL Adobe Express] 빠른 작업이 임베드되어 있으므로 비디오 컨텐츠의 변형을 쉽게 만들 수 있습니다. [!DNL Adobe Express]에서 제공하는 [!DNL Assets view]의 빠른 작업은 비디오 자르기, 비디오 크기 조정, 비디오 트리밍, 비디오를 GIF으로 변환하는 등의 사용자 친화적인 비디오 편집 옵션을 제공합니다.
 
@@ -70,7 +33,7 @@ AEM Assets 내의 [!DNL Adobe Express] 및 하나 이상의 환경에 액세스�
 2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!UICONTROL 비디오 자르기]**&#x200B;를 클릭합니다.
 3. 비디오 모서리에 있는 핸들을 드래그하여 원하는 자르기를 만들거나 기존 화면 크기 중에서 원하는 크기를 선택합니다.
 4. 비디오를 음소거 또는 음소거 해제하도록 선택할 수 있습니다.
-5. **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
+5. **[!UICONTROL 적용]**을 클릭합니다.
    ![Adobe Express로 비디오 자르기](assets/adobe-express-crop-video.png)
 
    자른 비디오를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다. ![Adobe Express에서 비디오 저장](assets/adobe-express-save-video.png)
@@ -84,7 +47,7 @@ DAM의 최종 비디오 콘텐츠는 특정 채널에 배포하기 위해 크기
 3. **[!UICONTROL 다음에 대한 크기 조정]** 드롭다운 목록의 소셜 미디어 플랫폼에서 적절한 차원을 선택합니다. 또는 비디오 모서리의 핸들을 드래그하여 원하는 자르기를 만듭니다.
 4. 필요한 경우 **[!UICONTROL 비디오 크기 조정]** 필드를 사용하여 비디오 크기를 조정합니다.
 5. 비디오를 음소거 또는 음소거 해제하도록 선택할 수 있습니다.
-6. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
+6. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express으로 비디오 크기 조정](assets/adobe-express-resize-video.png)
 
 크기 조정된 비디오를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -98,7 +61,7 @@ DAM의 최종 비디오 콘텐츠는 특정 채널에 배포하기 위해 크기
 3. 비디오의 시작 및 종료 시간을 지정하여 비디오의 특정 부분을 트리밍합니다. 또는 비디오 모서리의 핸들을 드래그하여 원하는 트리밍을 만듭니다.
 4. **[!UICONTROL 크기]** 드롭다운 목록에서 적절한 차원을 선택합니다.
 5. 비디오를 음소거 또는 음소거 해제하도록 선택할 수 있습니다.
-6. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
+6. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express으로 비디오 크기 조정](assets/adobe-express-trim-video.png)
 
 트리밍한 비디오를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -135,7 +98,7 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support)에 문의하십시오.
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >

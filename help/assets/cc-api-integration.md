@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 7%
+source-wordcount: '801'
+ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Creative Cloud] 통합을 사용하여 자산의 변형 생성 {#content-automation}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 콘텐츠 자동화 추가 기능은 [!DNL Adobe Experience Manager Assets]을(를) [!DNL Cloud Service] 및 [!DNL Adobe Creative Cloud] API로 통합하여 규모에 맞게 창의적으로 자산을 처리합니다. [!DNL Experience Manager]은(는) 클라우드 기반의 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용하여 [!DNL Adobe Creative Cloud] 기능을 사용하고 에셋 생성 및 미디어 처리를 자동화합니다.
 
@@ -97,7 +60,7 @@ Cloud Manager을 사용하여 AEM as a Cloud Service 프로그램용 Content Aut
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL 콘텐츠 자동화]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.
 
 Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동화 추가 기능을 추가해야 하는 경우
 
@@ -107,7 +70,7 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL 콘텐츠 자동화]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.
 
 ## 처리 프로필을 사용하여 크리에이티브 에셋을 일괄적으로 편집 {#process-assets}
 
@@ -121,7 +84,7 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 1. **[!UICONTROL 렌디션 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 형식)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, **[!UICONTROL 포함]** 및 **[!UICONTROL 제외]** MIME 형식 목록(또는 입력 에셋 필터)을 선택한 다음 필요한 크리에이티브 작업을 선택하십시오.
 
-   [!UICONTROL 처리 프로필]![&#128279;](assets/creative-processing-profile.png)의 [!UICONTROL Creative] 탭
+   [!UICONTROL 처리 프로필]](assets/creative-processing-profile.png)의 ![[!UICONTROL Creative] 탭
 
 1. 일부 작업에는 추가 매개 변수(에셋)가 필요합니다. 필요한 경우 이러한 추가 매개 변수의 값을 제공합니다.
 

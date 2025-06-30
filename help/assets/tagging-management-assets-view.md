@@ -4,51 +4,14 @@ description: 자산 보기에서 태그를 관리하는 방법을 알아보십�
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 96%
+source-wordcount: '1739'
+ht-degree: 98%
 
 ---
 
 # 자산 보기에서 태그 관리 {#view-assets-and-details}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 및 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Edge Delivery Services과 AEM Assets 통합</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 확장성</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>새로 만들기</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime 및 Ultimate 사용</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>모범 사례 검색</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>메타데이터 모범 사례</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 기능이 포함된 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 개발자 설명서</b></a>
-        </td>
-    </tr>
-</table>
 
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
@@ -167,7 +130,7 @@ ht-degree: 96%
 
 ## 메타데이터 양식에 태그 구성 요소 추가 {#add-tags-to-metadata-form}
 
-태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=ko#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. [!DNL Assets as a Cloud Service] 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
+태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. [!DNL Assets as a Cloud Service] 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
 
 메타데이터 양식에 태그 구성 요소를 추가하는 방법을 보려면 이 빠른 비디오를 시청하십시오.
 
