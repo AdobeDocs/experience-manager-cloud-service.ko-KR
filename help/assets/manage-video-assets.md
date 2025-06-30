@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 비디오 형식은 조직의 디지털 에셋에 중요한 부분입니다. [!DNL Adobe Experience Manager]은(는) 생성 후 비디오 자산의 전체 라이프사이클을 관리하는 완성도 높은 서비스와 기능을 제공합니다.
@@ -410,7 +410,7 @@ To create the metadata processing profile, you are first going to copy values fr
 1. 비디오 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.
 
-   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)도 참조하세요.
+   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ko#page-authoring)도 참조하세요.
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 

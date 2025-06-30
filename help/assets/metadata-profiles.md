@@ -16,7 +16,7 @@ ht-degree: 21%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 메타데이터 프로필을 사용하면 폴더 내의 에셋에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 이후에 폴더에 업로드하는 모든 에셋은 메타데이터 프로필에서 구성한 기본 메타데이터를 상속합니다.

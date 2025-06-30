@@ -16,7 +16,7 @@ ht-degree: 16%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 이미지 및 비디오에 디지털 워터마크를 추가할 수 있습니다. [!DNL Assets]에서는 다른 이미지 파일에 이미지를 워터마크로 적용할 수 있습니다. 워터마크는 사용자가 에셋의 진정성과 저작권 소유권을 확인하는 데 도움이 될 수 있습니다. 또한 워터마크를 사용하여 기밀, 초안, 유효성 등과 같은 문서의 상태를 표시할 수 있습니다.

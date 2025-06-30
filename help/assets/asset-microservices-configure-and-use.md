@@ -39,7 +39,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [기본 구성](#default-config) | 현재 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 기본 렌디션 생성 기능을 제공합니다. | <ul> <li>[!DNL Assets] 사용자 인터페이스에서 사용하는 표준 썸네일(48, 140, 319픽셀) </li> <li> 대형 미리 보기(웹 렌디션 - 1280픽셀) </li><li> 메타데이터 및 텍스트 추출.</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 렌디션을 생성하는 옵션이 더 제공됩니다. 기본 제공 옵션을 확장하여 다양한 형식 및 렌디션을 제공합니다. | <ul><li>FPO(배치 전용) 렌디션입니다. </li> <li>파일 형식 및 이미지 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute 서비스](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)를 호출하도록 사용자 인터페이스를 통해 관리자가 구성했습니다. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | [허용된 사용 사례](#custom-config)를 참조하세요. |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute 서비스](https://experienceleague.adobe.com/ko/docs/asset-compute/using/introduction)를 호출하도록 사용자 인터페이스를 통해 관리자가 구성했습니다. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | [허용된 사용 사례](#custom-config)를 참조하세요. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -65,7 +65,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **MIME 유형 포함 규칙**: 특정 MIME 유형의 자산을 처리할 때 먼저 렌디션 사양에 대해 제외된 MIME 유형 값에 대해 MIME 유형을 확인합니다. 해당 목록과 일치하는 경우 에셋(차단 목록)에 대해 이 특정 렌디션이 생성되지 않습니다. 그렇지 않으면 포함된 MIME 유형에 대해 MIME 유형이 확인되고 목록과 일치하는 경우 렌디션이 생성됩니다(허용 목록).
 
-* **특수 FPO 렌디션**: 크기가 큰 에셋을 [!DNL Experience Manager]에서 [!DNL Adobe InDesign] 문서에 배치할 때 Creative Professional은 [에셋을 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다립니다. 그동안 사용자는 [!DNL InDesign]을(를) 사용할 수 없습니다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 [!DNL InDesign] 문서에 작은 크기의 렌디션을 임시로 배치할 수 있으며 나중에 전체 해상도 자산을 온디맨드로 대체할 수 있습니다. [!DNL Experience Manager]은(는) 배치에만 사용되는 렌디션을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다.
+* **특수 FPO 렌디션**: 크기가 큰 에셋을 [!DNL Experience Manager]에서 [!DNL Adobe InDesign] 문서에 배치할 때 Creative Professional은 [에셋을 배치](https://helpx.adobe.com/kr/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다립니다. 그동안 사용자는 [!DNL InDesign]을(를) 사용할 수 없습니다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 [!DNL InDesign] 문서에 작은 크기의 렌디션을 임시로 배치할 수 있으며 나중에 전체 해상도 자산을 온디맨드로 대체할 수 있습니다. [!DNL Experience Manager]은(는) 배치에만 사용되는 렌디션을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다.
 
 처리 프로필에는 FPO(배치 전용) 렌디션이 포함될 수 있습니다. 처리 프로필에 대해 켜야 하는지 알아보려면 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)를 참조하세요. 자세한 내용은 [Adobe Asset Link 전체 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하세요.
 
@@ -99,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-[!DNL Asset Compute Service]은(는) 기본 처리 및 Photoshop 파일과 같은 Adobe 관련 형식 처리를 포함하여 다양한 사용 사례를 지원합니다. 또한 사용자 지정 또는 조직별 처리를 구현할 수 있습니다. 과거에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 또는 처리 프로필 구성을 통해 처리됩니다. Adobe 이러한 처리 옵션이 비즈니스 요구 사항에 맞지 않으면 [!DNL Asset Compute Service]을(를) 개발 및 사용하여 기본 기능을 확장하는 것이 좋습니다. 개요는 [확장성 및 사용 시기 이해](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)를 참조하십시오.
+[!DNL Asset Compute Service]은(는) 기본 처리 및 Photoshop 파일과 같은 Adobe 관련 형식 처리를 포함하여 다양한 사용 사례를 지원합니다. 또한 사용자 지정 또는 조직별 처리를 구현할 수 있습니다. 과거에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 또는 처리 프로필 구성을 통해 처리됩니다. Adobe 이러한 처리 옵션이 비즈니스 요구 사항에 맞지 않으면 [!DNL Asset Compute Service]을(를) 개발 및 사용하여 기본 기능을 확장하는 것이 좋습니다. 개요는 [확장성 및 사용 시기 이해](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/understand-extensibility)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 이미지, 비디오, 문서 및 기타 파일 형식을 썸네일, 추출한 텍스트 및 메타데이터, 아카이브를 포함한 다양한 변환으로 변환할 수 있습니다.
 
-개발자는 [!DNL Asset Compute Service]을(를) 사용하여 지원되는 사용 사례에 대해 [사용자 지정 응용 프로그램을 만듭니다](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application). [!DNL Experience Manager]에서는 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service]은(는) 외부 서비스를 호출하는 다음과 같은 사용 사례를 지원합니다.
+개발자는 [!DNL Asset Compute Service]을(를) 사용하여 지원되는 사용 사례에 대해 [사용자 지정 응용 프로그램을 만듭니다](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/develop-custom-application). [!DNL Experience Manager]에서는 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service]은(는) 외부 서비스를 호출하는 다음과 같은 사용 사례를 지원합니다.
 
 * [!DNL Adobe Photoshop]의 [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/)를 사용하고 결과를 렌디션으로 저장합니다.
 * 타사 시스템(예: PIM 시스템)을 호출하여 변경 작업을 수행합니다.
@@ -125,8 +125,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 이름 텍스트 필드에 원하는 렌디션 파일 이름을 입력한 다음 다음 다음 정보를 제공합니다.
 
    * 각 렌디션의 파일 이름 및 지원되는 파일 확장명.
-   * [App Builder 사용자 지정 앱의 끝점 URL](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). 앱은 Experience Manager 계정과 동일한 조직의 앱이어야 합니다.
-   * [사용자 지정 응용 프로그램에 추가 정보 또는 매개 변수를 전달](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend)합니다.
+   * [App Builder 사용자 지정 앱의 끝점 URL](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/deploy-custom-application). 앱은 Experience Manager 계정과 동일한 조직의 앱이어야 합니다.
+   * [사용자 지정 응용 프로그램에 추가 정보 또는 매개 변수를 전달](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/develop-custom-application#extend)합니다.
    * 일부 특정 파일 형식으로 처리를 제한하기 위한 포함 및 제외된 MIME 유형입니다.
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Save]**.
@@ -181,7 +181,7 @@ Asset Compute 서비스 통합을 사용하면 Experience Manager에서 [!UICONT
 
 처리 프로필을 사용하여 달성할 수 없는 추가 자산 처리가 필요한 경우 구성에 추가 사후 처리 워크플로우를 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
 
-마이크로서비스 처리가 완료되면 [!DNL Experience Manager]은(는) 사후 처리 워크플로를 자동으로 실행하거나 구성된 경우 [자동 시작 워크플로](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows)를 실행합니다. 워크플로우를 트리거하기 위해 워크플로우 런처를 수동으로 추가할 필요가 없습니다. 예는 다음과 같습니다.
+마이크로서비스 처리가 완료되면 [!DNL Experience Manager]은(는) 사후 처리 워크플로를 자동으로 실행하거나 구성된 경우 [자동 시작 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/configuring/auto-start-workflows)를 실행합니다. 워크플로우를 트리거하기 위해 워크플로우 런처를 수동으로 추가할 필요가 없습니다. 예는 다음과 같습니다.
 
 * 에셋을 처리하는 사용자 지정 워크플로 단계입니다.
 * 제품 또는 프로세스 정보와 같은 외부 시스템의 에셋에 메타데이터 또는 속성을 추가하는 통합.
@@ -280,9 +280,9 @@ OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](
 
 >[!MORELIKETHIS]
 >
->* [Asset Compute 서비스 소개](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
->* [확장성 및 사용 시기를 이해합니다](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
->* [사용자 지정 응용 프로그램을 만드는 방법](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
+>* [Asset Compute 서비스 소개](https://experienceleague.adobe.com/ko/docs/asset-compute/using/introduction).
+>* [확장성 및 사용 시기를 이해합니다](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/understand-extensibility).
+>* [사용자 지정 응용 프로그램을 만드는 방법](https://experienceleague.adobe.com/ko/docs/asset-compute/using/extend/develop-custom-application).
 >* [다양한 사용 사례에 대해 지원되는 MIME 유형](/help/assets/file-format-support.md).
 
 <!-- TBD: 

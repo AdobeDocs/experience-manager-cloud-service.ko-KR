@@ -17,7 +17,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager]의 MSM(다중 사이트 관리자) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. [!DNL Assets]에 대해 MSM이라는 이름의 디지털 에셋에 동일한 기능을 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하여 다음을 수행할 수 있습니다.

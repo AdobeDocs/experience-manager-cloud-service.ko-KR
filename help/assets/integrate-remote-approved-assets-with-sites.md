@@ -13,7 +13,7 @@ ht-degree: 12%
 
 다양한 온라인 플랫폼에서 매력적이고 일관된 브랜드 경험을 제공하기 위해서는 디지털 에셋을 효과적으로 관리하는 것이 중요합니다. OpenAPI 기능이 포함된 Dynamic Media는 AEM Sites과 AEM Assets as a Cloud Service 간의 원활한 통합을 통해 디지털 에셋 관리를 향상시킵니다. 이 혁신적인 기능을 사용하면 여러 AEM 환경에서 서로 다른 유형의 승인된 디지털 에셋을 쉽게 공유 및 관리할 수 있으므로 사이트 작성자 및 콘텐츠 편집자를 위한 워크플로를 간소화할 수 있습니다.
 
-OpenAPI 기능이 있는 Dynamic Media를 사용하면 사이트 작성자가 AEM 페이지 편집기 내에서 원격 DAM의 에셋 및 [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)을(를) 직접 사용할 수 있으므로 콘텐츠 만들기 및 관리 프로세스를 단순화할 수 있습니다.
+OpenAPI 기능이 있는 Dynamic Media를 사용하면 사이트 작성자가 AEM 페이지 편집기 내에서 원격 DAM의 에셋 및 [콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=ko)을(를) 직접 사용할 수 있으므로 콘텐츠 만들기 및 관리 프로세스를 단순화할 수 있습니다.
 
 사용자는 최대 수에 대한 제한 없이 여러 AEM Sites 인스턴스를 원격 DAM 배포에 연결할 수 있으므로 [연결된 Assets](use-assets-across-connected-assets-instances.md) 기능에 비해 주목할 만한 이점이 있습니다.
 
@@ -42,7 +42,7 @@ OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원�
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: IMS 클라이언트 ID를 가져오려면 Adobe 지원 티켓을 제출해야 합니다.
 
-     또는 다음 단계에 따라 AEM Sites 인스턴스에서 AEM 6.5에 대한 [OSGi 설정](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)을 구성하십시오.
+     또는 다음 단계에 따라 AEM Sites 인스턴스에서 AEM 6.5에 대한 [OSGi 설정](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=ko)을 구성하십시오.
 
    1. 콘솔에 로그인하고 **[!UICONTROL OSGi] >**&#x200B;를 클릭하거나
 직접 URL 사용(예: `https://localhost:4502/system/console/configMgr`)
@@ -63,12 +63,12 @@ OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원�
 
       ![차세대 Dynamic Media 구성 OSGi 구성 창](/help/assets/assets/remote-assets-osgi.png)
 
-  [IMS 인증](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)에 대해 자세히 알아보세요.
+  [IMS 인증](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=ko)에 대해 자세히 알아보세요.
 
   OSGi 구성 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-   * AEM as a Cloud Service용 [Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
-   * AEM 6.5용 [OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+   * AEM as a Cloud Service용 [Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko)
+   * AEM 6.5용 [OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ko)
 
 * 원격 DAM AEM as a Cloud Service 인스턴스에 로그인하기 위한 IMS 액세스 원격 DAM 환경에 대한 IMS 액세스 권한이 있는 사이트 작성자를 의미합니다.
 
@@ -78,7 +78,7 @@ OpenAPI 기능이 있는 Dynamic Media를 사용하여 원격 자산을 지원�
 
 일반적으로 HTTP를 사용하여 모든 프로덕션 AEM 인스턴스를 실행하는 것이 좋습니다. 단, 로컬 개발 환경은 이와 같이 설정되지 않을 수 있습니다. 그러나 OpenAPI가 포함된 Dynamic Media를 사용하는 원격 자산이 작동하려면 HTTPS가 필요합니다.
 
-개발 환경을 포함하여 원격 자산을 사용하려는 곳에서 [이 안내서를 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)하여 HTTPS를 구성하십시오.
+개발 환경을 포함하여 원격 자산을 사용하려는 곳에서 [이 안내서를 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ko)하여 HTTPS를 구성하십시오.
 
 ## 원격 DAM에서 자산 액세스 {#fetch-assets}
 
@@ -119,7 +119,7 @@ AEM Sites 인스턴스에서 AEM 컨텐츠 조각 내의 원격 자산을 사용
 
    >[!NOTE]
    >
-   >AEM 콘텐츠 조각 모델이 없는 경우 [하나 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)해야 할 수 있습니다.
+   >AEM 콘텐츠 조각 모델이 없는 경우 [하나 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=ko)해야 할 수 있습니다.
 
 1. 텍스트 구성 요소 옆에 있는 ![확인 표시 아이콘](/help/assets/assets/do-not-localize/checkmark-icon.svg) 아이콘을 클릭합니다.
 1. 원격 DAM에서 자산을 가져오려면 **[!UICONTROL 원격]**&#x200B;을(를) 선택하십시오. <br>

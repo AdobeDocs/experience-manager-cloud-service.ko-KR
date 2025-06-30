@@ -60,7 +60,7 @@ Cloud Manager을 사용하여 AEM as a Cloud Service 프로그램용 Content Aut
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL 콘텐츠 자동화]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.
 
 Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동화 추가 기능을 추가해야 하는 경우
 
@@ -70,7 +70,7 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL 콘텐츠 자동화]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.
 
 ## 처리 프로필을 사용하여 크리에이티브 에셋을 일괄적으로 편집 {#process-assets}
 

@@ -124,7 +124,7 @@ Experience Manager Assets 인스턴스에 [Dynamic Media가 구성](/help/assets
 
 추가 참조:
 
-* [Dynamic Media 비디오에 CC 자막을 추가하는 방법에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [Dynamic Media 비디오에 CC 자막을 추가하는 방법에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko#add-cc-closed-captioning-to-dynamic-media-video)
 * [YouTube에 Dynamic Media 비디오 게시](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 다음 일러스트레이션에서 URL은 트랜스크립션(.vtt 파일)을 참조하는 캡션 부분을 반영합니다. 비디오는 특정 비디오 타임스탬프에서 음성 언어(기록된 텍스트)를 **[!UICONTROL 자막]**&#x200B;으로 반영합니다. 사용자는 **[!UICONTROL CC]** 버튼을 사용하여 캡션을 활성화하거나 비활성화할 수 있습니다.

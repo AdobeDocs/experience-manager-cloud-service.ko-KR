@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->AEM 6.5에 대한 [!DNL Workfront for Experience Manager enhanced connector] 업데이트 설명서를 검색하고 있습니까? [여기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront)를 클릭하세요.
+>AEM 6.5에 대한 [!DNL Workfront for Experience Manager enhanced connector] 업데이트 설명서를 검색하고 있습니까? [여기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ko##update-enhanced-connector-for-workfront)를 클릭하세요.
 
 
 [!DNL Workfront for Experience Manager enhanced connector]을(를) 최신 버전으로 업데이트하려면:
 
 1. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)에서 향상된 커넥터의 최신 버전을 다운로드하십시오.
 
-1. Cloud Manager에서 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)하고 AEM as a Cloud Service 저장소를 복제합니다.
+1. Cloud Manager에서 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=ko)하고 AEM as a Cloud Service 저장소를 복제합니다.
 
 1. 원하는 IDE를 사용하여 복제된 Experience Manager as a Cloud Service 저장소를 엽니다.
 
@@ -85,4 +85,4 @@ ht-degree: 0%
 
 1. 변경 사항을 저장소에 푸시합니다.
 
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.

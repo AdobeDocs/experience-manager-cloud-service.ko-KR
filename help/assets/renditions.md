@@ -49,7 +49,7 @@ Experience Manager Assets에서 [정적 표현물을 보고 다운로드](#view-
    * [이미지 사전 설정](/help/assets/dynamic-media/managing-image-presets.md)
 
   나중에 [보기를 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view)하여 Assets 보기에서 동적 변환을 미리 볼 수 있습니다.
-* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
+* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
 
 
 ### Dynamic Media 렌디션 보기 및 다운로드 {#view-download-dm-renditions}
