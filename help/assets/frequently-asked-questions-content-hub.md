@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Content Hub란 무엇입니까? {#what-is-content-hub}
 
-Content Hub는 Adobe Experience Manager Assets as a Cloud Service의 기능 중 하나입니다.
+Content Hub은 Adobe Experience Manager Assets as a Cloud Service의 기능입니다.
 
 Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 관련성 있고 승인된 자산을 쉽게 발견하고 필요에 따라 신속하게 자산을 조정할 수 있습니다.  또한 Content Hub는 사용자가 자산을 DAM에 업로드할 때 셀프서비스를 쉽게 이용할 수 있는 수집 메커니즘을 제공합니다. 이는 브랜드 일관성과 적절한 안전장치 준수를 유지하면서 콘텐츠 제작 속도를 높이고자 하는 조직의 요구를 직접적으로 충족할 수 있습니다.
 

@@ -4,10 +4,10 @@ description: ' [!DNL Assets View]의 액세스 방법, 로그인 경험, 지원�
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 * **2단계**: 자산을 [검색](/help/assets/search-assets-view.md)하고 [다운로드](/help/assets/manage-organize-assets-view.md#download)합니다.
 * **3단계**: 자산을 [관리하고 구성](/help/assets/manage-organize-assets-view.md)합니다.
 
-[!DNL Assets View]를 사용하려면 [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets)에 로그인하십시오. 로그인할 때 `Company or School Account`을(를) 선택합니다. 액세스하려면 조직 관리자에게 문의하십시오.
+[!DNL Assets View]를 사용하려면 [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets)에 로그인하십시오. 로그인할 때 `Company or School Account`을(를) 선택합니다. 액세스 권한을 받으려면 조직 관리자에게 문의하십시오.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -60,13 +60,13 @@ Assets 보기에 액세스하는 방법에 대한 자세한 내용은 [Assets �
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기를 시작하려면 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=ko)
+* [Assets 보기를 시작하려면 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.
