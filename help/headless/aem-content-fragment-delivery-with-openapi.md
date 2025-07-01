@@ -4,10 +4,10 @@ description: OpenAPI를 사용한 tAEM 콘텐츠 조각 게재에 대해 알아�
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ OpenAPI를 사용하여 콘텐츠 조각 게재를 미리 보는 경우 다음�
 
 Dispatcher 구성 측, 특히 GraphQL에 대해 정의된 CORS 허용 출처는 이 API에서 고려되지 않습니다.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## API 속도 제한 {#api-rate-limits}
+
+API를 사용하면 환경당 초당 최대 200개의 요청 비율로 새 요청을 허용할 수 있습니다.
+
+이 제한을 초과하면 API에서 429 오류를 보내기 시작합니다. 이러한 오류는 모든 클라이언트 애플리케이션에서 처리해야 하며, 기하급수적 백오프 재시도 후 실패한 요청을 다시 시도합니다.
 
 <!-- 
 ## Limitations {#limitations}
