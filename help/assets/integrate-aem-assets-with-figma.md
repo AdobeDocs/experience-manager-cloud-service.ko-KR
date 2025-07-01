@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!DNL AEM]개의 자산을 [!DNL Figma] 캔버스로 가져오기{#import-aem-assets-into-figma-workflow}
 
-[!DNL Figma] 디자인 인터페이스에서 [Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음을 수행합니다.[!UICONTROL 
+[!DNL Figma] 디자인 인터페이스에서 [Adobe Experience Manager(AEM) Assets 커넥터] 패널(#access-aem-assets-connector)에 액세스하고 다음을 수행합니다.
 
 1. [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널에서 자산을 검색합니다. 자세한 내용은 [자산 선택기 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)을 참조하세요.
 
@@ -51,12 +51,12 @@ Figma 디자인이 준비되면 [자산을 AEM Assets 저장소로 내보내기]
 
 ## 자산을 [!DNL AEM Assets] 리포지토리로 내보내기{#export-figma-design-to-aem-assets-folder}
 
-[!DNL Figma] 디자인 인터페이스에서 [Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음 단계를 실행하여 디자인을 [!DNL AEM Assets] 리포지토리로 내보냅니다.[!UICONTROL 
+[!DNL Figma] 디자인 인터페이스에서 [Adobe Experience Manager(AEM) Assets 커넥터] 패널(#access-aem-assets-connector)에 액세스하고 다음 단계를 실행하여 디자인을 [!DNL AEM Assets] 리포지토리로 내보냅니다.
 
 1. [!DNL Figma] 디자인을 저장할 대상 폴더로 이동합니다. 이미 폴더에 있는 경우 폴더 경로에서 추가 옵션(![점 세 개](/help/assets/assets/three-dots.svg))을 클릭하여 다른 대상 폴더를 선택합니다.
 1. 선택 사항: 캔버스에서 에셋을 그룹화하여 폴더에서 업로드할 단일 단위로 선택합니다.
 1. ![파일 업로드](/help/assets/assets/upload-icon.svg) **[!UICONTROL 업로드]**&#x200B;를 클릭하여 **[!UICONTROL 자산 업로드]** 대화 상자를 표시합니다.
-1. 대화 상자에서 파일 이름을 지정하고 파일 형식을 선택한 다음 **[!UICONTROL 선택한 항목]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택하고 **[!UICONTROL 업로드]**를 클릭하여 선택한 에셋 또는 전체 디자인을 대상 폴더에 업로드합니다.
+1. 대화 상자에서 파일 이름을 지정하고 파일 형식을 선택한 다음 **[!UICONTROL 선택한 항목]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택하고 **[!UICONTROL 업로드]**&#x200B;를 클릭하여 선택한 에셋 또는 전체 디자인을 대상 폴더에 업로드합니다.
    ![그림 디자인 업로드](/help/assets/assets/upload-figma-design.png)
 
 ## 중요 참고 사항{#Limitations-of-using-aem-assets-into-figma}
