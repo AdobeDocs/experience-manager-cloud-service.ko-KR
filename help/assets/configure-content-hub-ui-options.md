@@ -2,10 +2,10 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 11%
+source-wordcount: '2089'
+ht-degree: 10%
 
 ---
 
@@ -96,11 +96,10 @@ Experience Manager Assets 저장소에 추가하는 모든 자산을 Content Hub
 
 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-![Content Hub의 구성 UI 업로드 세부 정보](assets/configuration-ui-upload-details.png)
+![Content Hub의 구성 UI 업로드 세부 정보](/help/assets/assets/import-content-hub.png)
 
 구성 사용자 인터페이스에서 활성화된 메타데이터는 에셋 업로드 페이지에 표시됩니다.
-
-![Content Hub에서 메타데이터 업로드](assets/configuration-ui-add-assets.png)
+![Content Hub에서 메타데이터 업로드](assets/add-assets-for-approval.png)
 
 ### 필터 {#configure-filters-content-hub}
 
@@ -119,13 +118,11 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
    >
    >저장소에 필터 기준과 일치하는 에셋이 하나 이상 있는 경우에만 새 필터가 검색 페이지에 표시됩니다.
 
-마찬가지로 사용 가능한 각 필터 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
-
-![Content Hub의 구성 UI 필터](assets/configuration-ui-filters.png)
+마찬가지로 사용 가능한 각 필터 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+![Content Hub의 구성 UI 필터](assets/configuration-filter.png)
 
 구성 사용자 인터페이스에서 활성화된 필터가 [검색] 페이지에 표시됩니다.
-
-![Content Hub에서 검색](assets/filters-for-search.png)
+![Content Hub에서 검색](assets/content-hub-filters.png)
 
 
 ### 자산 세부 정보 {#configure-asset-details-content-hub}
@@ -143,25 +140,24 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 마찬가지로 사용 가능한 각 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 에셋 세부 정보를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-![Content Hub의 구성 UI 자산 세부 정보](assets/configuration-ui-asset-details.png)
+![Content Hub의 구성 UI 자산 세부 정보](assets/configuration-asset-details.png)
 
 구성 사용자 인터페이스에서 활성화된 속성이 [자산 세부 정보] 페이지에 표시됩니다.
 
-![Content Hub의 자산 속성](assets/config-ui-asset-properties.png)
+![Content Hub의 자산 속성](assets/asset-details-page-content-hub.png)
 
 ### 자산 카드 {#asset-card}
 
-**에셋 카드**&#x200B;에 표시할 키 메타데이터 필드를 최대 6개까지 구성할 수도 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
-
-![자산 카드의 주요 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
+최대 6개의 필드를 **자산 카드**에 표시해야 하는 주요 메타데이터 속성을 구성할 수도 있습니다.
+자산 카드의 ![키 메타데이터](/help/assets/assets/asset-card-metadata.png)
+다음 단계를 실행하여 메타데이터 속성을 구성하여 **[!UICONTROL 자산 카드]**&#x200B;에 표시합니다.
 
 1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
 2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.
 3. **레이블** 필드에 메타데이터 이름을 지정하고 **메타데이터** 필드에서 메타데이터 속성을 선택합니다.
-4. **확인**&#x200B;을 클릭한 다음 **저장**&#x200B;을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
-   ![자산 카드](/help/assets/assets/asset-card.png)
-
-마찬가지로 각 사용 가능한 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)을 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
+4. **확인**&#x200B;을 클릭한 다음 **저장**을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
+   ![자산 카드](/help/assets/assets/configuration-asset-card.png)
+마찬가지로 사용 가능한 각 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)를 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
 
 ### 검색 {#configure-metadata-search-content-hub}
 
@@ -173,12 +169,14 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 새 메타데이터 속성이 메타데이터 필드 목록에 표시되도록 변경 사항을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
 
-마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
-![Content Hub에서 구성 UI 검색](assets/configuration-ui-metadata-search.png)
+마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+![Content Hub에서 구성 UI 검색](assets/configuration-search.png)
 
 ### 브랜딩 {#configure-branding-content-hub}
 
-관리자는 브랜딩 요구 사항에 맞게 [!DNL Content Hub] 포털을 사용자 지정합니다. ![브랜딩](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 브랜딩]** 페이지에서 **[!UICONTROL 배너]**, **[!UICONTROL 색상]** 및 **[!UICONTROL 배너 이미지]** 섹션을 사용하여 다음 사용자 지정을 실행하십시오.
+관리자는 브랜딩 요구 사항에 맞게 [!DNL Content Hub] 포털을 사용자 지정합니다.
+![기본값 재설정](/help/assets/assets/reset-default-content-hub.png)
+![브랜딩](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 브랜딩]** 페이지에서 **[!UICONTROL 배너]**, **[!UICONTROL 색상]** 및 **[!UICONTROL 배너 이미지]** 섹션을 사용하여 다음 사용자 지정을 실행하십시오.
 
 1. [[!UICONTROL 배너 이미지] 섹션에서 배너 이미지 변경](#Change-the-banner-image)
 1. [배너의 제목과 본문을 업데이트하고 [!UICONTROL 배너] 섹션에서 텍스트 색을 변경합니다.](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -192,21 +190,23 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 자산 선택기 대화 상자를 사용하여 배너 이미지를 선택하려면 ![이미지 선택](/help/assets/assets/Browse.svg) **[!UICONTROL 갤러리에서 선택]**&#x200B;을 클릭합니다. 에셋 선택기에는 승인된 이미지만 표시됩니다.
 1. 이미지를 선택하고 **[!UICONTROL 선택]**&#x200B;을 클릭한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭하여 [!DNL Content Hub] 배포의 배너 이미지로 표시합니다.
+   ![배너 이미지](/help/assets/assets/banner-image-content-hub.png)
 
 #### 배너에 제목 및 본문 추가 및 텍스트 색상 변경{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 ![브랜딩](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 브랜딩]** 페이지에서 **[!UICONTROL 배너]** 섹션의 각 필드를 사용하여 제목과 본문을 배너에 추가하십시오.
 **[!UICONTROL 배너 텍스트 색]** 옆에 있는 사각형 상자를 클릭하여 배너 텍스트에 대한 색 선택기에서 텍스트 색을 선택하거나 색 선택기 사각형 상자 옆에 있는 필드에 색의 16진수 코드를 지정합니다.
+![배너 텍스트 콘텐츠 허브](/help/assets/assets/banner-text-content-hub.png)
 
 #### 기본 및 보조 색상 변경{#Change-the-primary-and-secondary-color}
 
 ![브랜딩](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 브랜딩]** 페이지에서 **[!UICONTROL 색상]** 섹션을 사용하여 기본 및 보조 색상을 설정하거나 색상 선택기를 사용하여 선택하거나 색상의 16진수 코드를 정의합니다. 이러한 색상은 [!DNL Content Hub] UI를 브랜드 테마에 맞게 정렬하기 위해 UI 요소의 배경, 텍스트 및 아이콘 색상을 설정합니다.
-
+![기본 및 보조 색상](/help/assets/assets/primary-secondary-color-content-hub.png)
 **[!UICONTROL 기본 색상]:** 기본 색상 구성표는 선택 작업, 확인란, 검색 창, 토글 스위치와 같은 대화형 요소에 적용되며 [!DNL Content Hub] 홈 페이지 및 [!UICONTROL 구성] 페이지를 포함한 [!DNL Content Hub]의 전환 스위치에 적용됩니다. **[!UICONTROL 모든 Assets]** 및 **[!UICONTROL 컬렉션]** 페이지에서 사용할 수 있는 옵션과 같이 기본 [!DNL Content Hub] 인터페이스에서 사용할 수 있는 작업 옵션에도 적용됩니다.
 
 **[!UICONTROL 보조 색상]:** [!DNL Content Hub] 홈 페이지에서 보조 색상 구성표가 대화 상자에서 사용할 수 있는 UI 옵션 및 입력 필드에 적용됩니다. 선택 작업, 확인란, 검색 창 및 전환 스위치를 제외한 [!UICONTROL 구성] 페이지에서 사용할 수 있는 모든 구성 메뉴 옵션에 적용됩니다.
 
-### 만료된 자산{#expired-assets-content-hub}
+### 자산 가시성{#asset-visibility-content-hub}
 
 관리자는 만료된 에셋을 Content Hub에 표시해야 하는지 여부를 제어할 수 있습니다. 만료된 자산이 표시되면 사용자가 해당 자산을 다운로드할 수 있는지 여부도 정의할 수 있습니다.
 
@@ -214,15 +214,15 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 이렇게 하려면 다음 단계를 실행합니다.
 
-1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 만료된 Assets]**&#x200B;을(를) 클릭합니다.
+1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 자산 가시성]**&#x200B;을 클릭합니다.
 
 1. **[!UICONTROL 표시]** 섹션에서 **[!UICONTROL 사용자가 만료된 에셋을 볼 수 있도록 허용]** 전환을 활성화하여 만료된 모든 에셋을 Content Hub에 표시합니다.
 
 1. 에셋의 가시성을 활성화한 후 **[!UICONTROL 사용자가 만료된 에셋을 다운로드할 수 있도록 허용]** 전환을 사용하여 만료된 에셋을 다운로드하는 기능을 활성화하거나 비활성화할 수 있습니다.
-
+1. **[!UICONTROL 사용자가 배달에 대해 승인된 에셋을 볼 수 있도록 허용]** 전환을 활성화하여 Content Hub에서 배달에 대해 승인된 모든 에셋을 표시합니다.
 1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-   ![Content Hub의 만료된 자산](assets/expired-assets-content-hub.png)
+   ![Content Hub의 만료된 자산](assets/asset-visibility-content-hub.png)
 
 에셋의 가시성을 활성화한 후 다음 이미지에 표시된 대로 Content Hub에서 만료된 에셋을 볼 수 있습니다.
 
@@ -234,7 +234,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ### 렌디션 {#renditions-content-hub}
 
-렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지, 문서 등과 같은 디지털 에셋의 사용자 지정 버전입니다. Adobe Experience Manager Assets의 [렌디션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)에 대해 자세히 알아보세요.
+렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지, 문서 등과 같은 디지털 에셋의 사용자 지정 버전입니다. Adobe Experience Manager Assets의 [렌디션](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)에 대해 자세히 알아보세요.
 
 이렇게 하려면 다음 단계를 실행합니다.
 
@@ -244,7 +244,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 * **[!UICONTROL 사용자가 원본 에셋을 다운로드할 수 있도록 허용]** 토글을 활성화하거나 비활성화하여 원본 에셋 다운로드 가능 여부를 제어합니다.
 
-  ![Content Hub에서 렌디션 구성](assets/config-renditions.png)
+  ![Content Hub에서 렌디션 구성](assets/configuration-renditions.png)
 
 Content Hub에서 렌디션을 보고 다운로드하는 방법에 대한 자세한 내용은 [Content Hub에서 에셋 다운로드](/help/assets/download-assets-content-hub.md)를 참조하십시오.
 
@@ -262,12 +262,10 @@ Content Hub에서 렌디션을 보고 다운로드하는 방법에 대한 자세
 
 1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-마찬가지로 각 URL 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 링크를 편집하거나 삭제 아이콘을 클릭하여 기존 URL을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
-
-![Content Hub의 구성 UI 사용자 지정 링크](assets/configuration-ui-custom-links.png)
+마찬가지로 각 URL 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 링크를 편집하거나 삭제 아이콘을 클릭하여 기존 URL을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+![Content Hub의 구성 UI 사용자 지정 링크](assets/configuration-custom-links.png)
 
 사용자 지정 링크는 Content Hub 홈 페이지의 Insights 탭 옆에 새 탭으로 표시됩니다.
-
 ![Content Hub의 구성 UI 사용자 지정 링크 탭](assets/configuration-ui-custom-link-tab.png)
 
 ### 컬렉션 및 공유 {#configure-collections-content-hub}
@@ -299,4 +297,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 -->
 
- [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
+ [!DNL Content Hub]](share-assets-content-hub.md)에서 [에셋 공유에 대해 자세히 알아보세요.
