@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 83%
+source-wordcount: '1768'
+ht-degree: 99%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 83%
 * SITES-19754: 범용 편집기가 포함된 Edge Delivery: 통합에 문제가 있는 경우 사람이 읽을 수 있는 오류 메시지가 추가되었습니다.
 * SITES-23499: 범용 편집기가 포함된 Edge Delivery: 블록 옵션에 여러 필드를 사용할 수 있도록 하는 지원이 추가되었습니다.
 * SITES-23518: 범용 편집기가 포함된 Edge Delivery: Edge Delivery 특정 자산 렌디션에 대한 지원이 추가되었습니다.
-* SITES-24436: 콘텐츠 조각 Rest API: 중복 참조의 검색 속도를 높이기 위해 로컬 캐시가 도입되었습니다.
-* SITES-25155: 콘텐츠 조각 REST API: 모델 목록에서 더 이상 사용되지 않는 &quot;enabledForFolder&quot; 쿼리 매개 변수를 제거합니다.
+* SITES-24436: 콘텐츠 조각 Rest API: 중복 참조 검색 속도를 높이기 위해 로컬 캐시가 도입되었습니다.
+* SITES-25155: 콘텐츠 조각 Rest API: 모델 목록에서 더 이상 사용되지 않는 “enabledForFolder” 쿼리 매개변수가 제거되었습니다.
 * SITES-25913: 콘텐츠 조각 Rest API: 게시 워크플로를 시작하기 전에 리소스의 시간 제한 유효성 검사가 수행됩니다.
 * SITES-25976: MSM 롤아웃 이후 경험 조각 내부 링크가 조정되지 않습니다.
 * SITES-26271: 콘텐츠 조각 Rest API: GET Variation 엔드포인트에 대해 BFS 순회로 전환합니다.
@@ -46,16 +46,16 @@ ht-degree: 83%
 * SITES-27775: 게시 중 참조 검색 기능이 최적화되었습니다(메타데이터 지연 로딩).
 * SITES-27782: 범용 편집기가 포함된 Edge Delivery: Edge Delivery에 콘텐츠를 게시하기 위한 특정 게시자-구독자 구현이 추가되었습니다(얼리 액세스).
 * SITES-27792: 범용 편집기가 포함된 Edge Delivery: 전용 Edge Delivery Service 구성 템플릿이 추가되었습니다.
-* SITES-28557: 콘텐츠 조각 Rest API: 콘텐츠 조각을 패치하기 위해 `references=direct`을(를) 사용하여 `/cf/fragments/{fragmentId}`을(를) 호출하여 검색된 ETags를 사용할 수 있도록 허용합니다.
+* SITES-28557: 콘텐츠 조각 REST API: `/cf/fragments/{fragmentId}`에 `references=direct`를 통해 호출하여 가져온 ETag을 사용하여 콘텐츠 조각을 패치할 수 있도록 허용합니다.
 * SITES-28683: MSM LiveRelationship 검색에서 고급 상태를 건너뛸 수 있도록 허용합니다.
 * SITES-29601: 콘텐츠 조각 Rest API: 긴 텍스트 필드의 콘텐츠 조각 참조에 대한 유효성 검사.
-* SITES-29614: 콘텐츠 조각 Rest API: `/cf/workflows/{workflowInstanceId}` 끝점을 사용하여 워크플로우를 검색합니다. 여기서 workflowInstanceIda는 게시 요청에서 반환된 ID입니다.
-* SITES-29615: 콘텐츠 조각 REST API: `GET /cf/batch`을(를) 사용하여 POST `/cf/batch`을(를) 통해 만들어진 모든 일괄 처리 요청을 나열합니다.
-* SITES-29874: 콘텐츠 조각 Rest API: 이제 콘텐츠 조각의 긴 텍스트 필드의 참조가 검색되고 하이드레이션됩니다.
+* SITES-29614: 콘텐츠 조각 REST API: `/cf/workflows/{workflowInstanceId}` 엔드포인트를 사용하여 워크플로를 검색할 수 있으며, 이때 workflowInstanceId는 게시 요청 시 반환된 ID입니다.
+* SITES-29615: 콘텐츠 조각 Rest API: `GET /cf/batch`를 사용하여 `/cf/batch`를 통해 생성된 모든 배치 요청을 나열합니다.
+* SITES-29874: 콘텐츠 조각 Rest API: 이제 콘텐츠 조각의 긴 텍스트 필드에 포함된 참조가 검색 및 하이드레이션됩니다.
 * SITES-29930: 콘텐츠 조각 Rest API: 콘텐츠 조각 게시 워크플로에 대한 지표가 추가되었습니다.
 * SITES-29986: 콘텐츠 조각 Rest API: CF 모델 기술 명명이 지원됩니다.
 * SITES-30088: 콘텐츠 조각 Rest API: CF 게시 - filterReferencesByStatus가 비어 있으면 참조 검색을 건너뜁니다.
-* SITES-30126: 콘텐츠 조각 REST API: CF 게시 성능 개선: 최소의 검사로 리소스가 조각인지 확인을 대체했습니다.
+* SITES-30126: 콘텐츠 조각 Rest API: CF 게시 성능 개선: 리소스가 조각인지 확인하는 검사가 최소한의 검사로 대체되었습니다.
 * SITES-30328: 범용 편집기가 포함된 Edge Delivery: Sidekick에서 미리보기 기능에 대한 지원이 추가되었습니다.
 * SITES-30445: 콘텐츠 조각 Rest API: CF 모델 UI 스키마: 축소 가능한 요소의 초기 상태를 제어하는 옵션이 추가되었습니다.
 * SITES-30604: 콘텐츠 조각 Rest API: 새로운 UI에서 모델 메타데이터 스키마 채택이 지원됩니다.
@@ -63,12 +63,12 @@ ht-degree: 83%
 * SITES-30886: 콘텐츠 조각 Rest API: 워크플로 메타데이터에 저장된 조각 UUID를 기반으로 콘텐츠 조각 엔드포인트에 대한 GET 워크플로가 지원됩니다.
 * SITES-31005: 진행 상황을 보여 주기 위해 롤아웃 작업 UI가 개선되었습니다.
 * SITES-31020: 진행 상황을 보여 주기 위해 Live Copy 만들기 작업 UI가 개선되었습니다.
-* SITES-31111: 콘텐츠 조각 Rest API: 변형 패치 API가 콘텐츠 조각 실행 내에서 콘텐츠 조각 참조를 수락하도록 허용합니다.
-* SITES-31343: 콘텐츠 조각 Rest API: 배치 요청을 나열하는 엔드포인트에 날짜별 필터링 및 페이지 매김을 추가합니다.
+* SITES-31111: 콘텐츠 조각 Rest API: 변형 패치 API에서 콘텐츠 조각 내의 콘텐츠 조각 참조를 허용합니다.
+* SITES-31343: 콘텐츠 조각 Rest API: 배치 요청을 나열하는 엔드포인트에 날짜별 필터링 및 페이지 매김 기능이 추가되었습니다.
 * SITES-31472: 론치 삭제로 인해 론치가 대규모일 경우 저장소가 일시 중지될 수 있습니다.
-* SITES-31641: 콘텐츠 조각 Rest API: 확장과 관련된 동적 맵을 저장하기 위한 모델 필드에 속성을 추가합니다.
+* SITES-31641: 콘텐츠 조각 Rest API: 확장 기능과 관련된 동적 맵을 저장하기 위한 속성이 모델 필드에 추가되었습니다.
 * SITES-31677: 사용자 정의 작업 영역이 AEM 콘텐츠 조각을 Target으로 내보낼 수 있도록 지원합니다.
-* SITES-31770: 콘텐츠 조각 REST API: PATCH 성능 개선.
+* SITES-31770: 콘텐츠 조각 Rest API: 패치 성능 개선.
 * SITES-31782: 콘텐츠 조각 Rest API: 로컬 자산에 대한 설명이 추가되었습니다.
 * SITES-32175: Live Copy 생성과 MSM 페이지 롤아웃 모두에 대한 중간 커밋을 허용합니다.
 
@@ -97,7 +97,7 @@ ht-degree: 83%
 * SITES-25235: 필터 레일 콘텐츠 로드 메시지가 화면 판독기에서 읽히지 않습니다.
 * SITES-25254: 콘텐츠를 320px 폭으로 볼 때 슬라이드 모달에 가로 스크롤 막대가 나타납니다.
 * SITES-25433: 범용 편집기가 포함된 Edge Delivery: 다국어 사이트 구조에 대한 페이지 버전 렌더링이 수정되었습니다.
-* SITES-26064: 콘텐츠 조각 REST API: 조각을 만들고 백엔드에서 `AccessDeniedException`을(를) 가져올 때 반환된 상태 코드 수정.
+* SITES-26064: 콘텐츠 조각 Rest API: 조각을 만들고 백엔드에서 `AccessDeniedException`을 가져올 때 반환되는 상태 코드가 수정되었습니다.
 * SITES-26890: 키보드를 사용할 때, 게시 관리 페이지에서 “테이블 헤더” 지정에 대한 키보드 포커스가 표시되지 않습니다.
 * SITES-29075: 대규모 웹 사이트에서 Live Copy 개요가 작동하지 않습니다.
 * SITES-29514: 범용 편집기가 포함된 Edge Delivery: 새 사이트를 만들 때 GitHub/프로젝트 URL이 필수로 지정되었습니다.
@@ -124,16 +124,16 @@ ht-degree: 83%
 * SITES-30899: “나중에” 롤아웃 옵션을 사용하면 날짜를 선택하지 않고도 계속 진행할 수 있습니다.
 * SITES-30947: 롤아웃 중 블루프린트에 “behavior” 속성이 없어 null 포인터 예외가 발생합니다.
 * SITES-31157: 콘텐츠 조각 Rest API: 특정 경우에 패치가 실패합니다.
-* SITES-31162: Content Fragments Rest API: `ModelFieldMapper`의 `DateTimeField` 필드에 대한 캐스팅 문제를 수정했습니다.
-* SITES-31174: 콘텐츠 조각 Rest API: 게재 요청과 함께 태그가 게시되지 않았습니다.
+* SITES-31162: 콘텐츠 조각 Rest API: `ModelFieldMapper`의 `DateTimeField` 필드에 대한 캐스팅 문제가 해결되었습니다.
+* SITES-31174: 콘텐츠 조각 Rest API: 태그가 게시 요청과 함께 게시되지 않았습니다.
 * SITES-31272: PageManager.copy를 통해 자산 언어 사본을 생성할 수 없습니다.
 * SITES-31327: 콘텐츠 조각 Rest API: GET 조각 요청에서 ETag 유효성 검사가 제거되었습니다.
 * SITES-31387: Ghost 구성 요소 상속을 다시 활성화할 때 “ns.ui.alert는 함수가 아닙니다”라는 JavaScript 오류가 발생합니다.
-* SITES-31454: 콘텐츠 조각 Rest API: 조각 참조 필드에 대한 이완 패턴을 통해 UUID도 수락합니다.
+* SITES-31454: 콘텐츠 조각 Rest API: 조각 참조 필드에 대한 패턴이 UUID도 허용하도록 완화되었습니다.
 * SITES-31455: 콘텐츠 조각 Rest API: 동일한 콘텐츠 조각 모델에 대한 엔드포인트 간 ETag 불일치가 수정되었습니다.
 * SITES-31459: 콘텐츠 조각 Rest API: 콘텐츠 참조 필드가 있는 경우 CF Live Copy를 편집할 수 없습니다.
 * SITES-31467: 페이지 편집기의 contexthub.authoring-hook.js에서 js 오류가 발생합니다.
-* SITES-31487: 콘텐츠 조각 Rest API: 루트 폴더에 대해 권한 끝점을 호출할 수 있도록 허용합니다.
+* SITES-31487: 콘텐츠 조각 Rest API: 루트 폴더에 대한 권한 엔드포인트가 호출되도록 허용합니다.
 * SITES-31621: 범용 편집기가 포함된 Edge Delivery: Live Copy인 스프레드시트에서 빈 행이 제거되었습니다.
 * SITES-31676: 구성 요소를 작성하거나 삭제하면 페이지 하단에 공백이 생깁니다.
 * SITES-31822: ClassicUI 체크박스 레이블이 누락되고 HTML이 인코딩되어 표시됩니다.
@@ -146,7 +146,7 @@ ht-degree: 83%
 
 ### 알려진 문제 {#known-issues-21331}
 
-없음.
+* SITES-33177: 쉼표로 구분된 문자열로 저장된 섹션 스타일이 중단됩니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-21331}
 
