@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## Content Hub란 무엇입니까? {#what-is-content-hub}
 
-Content Hub은 Adobe Experience Manager Assets as a Cloud Service의 기능입니다.
+Content Hub는 Adobe Experience Manager Assets as a Cloud Service의 기능 중 하나입니다.
 
 Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 관련성 있고 승인된 자산을 쉽게 발견하고 필요에 따라 신속하게 자산을 조정할 수 있습니다.  또한 Content Hub는 사용자가 자산을 DAM에 업로드할 때 셀프서비스를 쉽게 이용할 수 있는 수집 메커니즘을 제공합니다. 이는 브랜드 일관성과 적절한 안전장치 준수를 유지하면서 콘텐츠 제작 속도를 높이고자 하는 조직의 요구를 직접적으로 충족할 수 있습니다.
 
@@ -84,7 +84,7 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
    >
    >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 가져야 하고, 비즈니스 **기업 또는 학교** 계정을 사용해야 하며, **개인** 계정을 사용해서는 안 됩니다. 이상적인 구성은 두 Admin Console을 모두 **Federated ID**&#x200B;로 설정하고 두 콘솔 간 트러스트 관계를 설정하여 사용자에게 원활한 SSO(Single Sign-On) 경험을 제공하도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
 
-적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[!UICONTROL # /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
+적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[#UICONTROL /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
 
 ## 조직의 브랜드 지침이 홈 페이지에 링크로 표시되도록 Content Hub를 설정할 수 있습니까? {#content-hub-setup-brand-guidelines}
 

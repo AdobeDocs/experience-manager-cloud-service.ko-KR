@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 [!DNL Assets view]의 사용자 친화적인 인터페이스를 사용하여 다양한 디지털 자산 관리(DAM) 작업을 간편하게 수행할 수 있습니다. 자산을 추가한 후 자산을 검색, 다운로드, 이동, 복사, 이름 변경, 삭제, 업데이트 및 편집할 수 있습니다.
 
-[!DNL Assets view]를 클릭하여 다음 자산 관리 작업을 수행합니다. 에셋을 선택하면 다음 옵션이 상단의 도구 모음에 표시됩니다.
+[!DNL Assets view]를 클릭하여 다음 자산 관리 작업을 수행합니다. 자산을 선택하면 다음 옵션이 상단의 도구 모음에 표시됩니다.
 
 ![자산 선택 시 도구 모음 옵션](assets/toolbar-image-selected.png)
 
@@ -231,11 +231,11 @@ Assets 보기는 기본적으로 많은 표준 메타데이터 필드를 제공�
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 자산을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=ko)
+* [Assets 보기에서 자산을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Experience Manager as a [!DNL Cloud Service]는 클라우드 기반의 Experience Manager 애플리케이션 및 기능 사용 방법을 제공합니다. 이 새 아키텍처의 핵심 요소 중 하나는 자산 마이크로서비스에서 제공하는 자산 수집 및 처리입니다. 자산 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 자산 처리 워크플로를 제공합니다. Adobe는 다양한 자산 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 클라우드 기반 자산 마이크로서비스의 주요 이점은 다음과 같습니다.
 
-* 리소스 집약적인 운영을 위한 원활한 처리를 가능하게 하는 확장 가능한 아키텍처.
+* 리소스 집약적인 작업을 원활하게 처리할 수 있는 확장 가능한 아키텍처입니다.
 * Experience Manager 환경의 성능에 영향을 주지 않는 효율적인 인덱싱 및 텍스트 추출 기능입니다.
 * Experience Manager 환경에서 워크플로가 자산을 처리할 필요성을 최소화할 수 있습니다. 이를 통해 리소스를 확보하고, Experience Manager의 로드를 최소화하고, 뛰어난 확장성을 제공합니다.
 * 자산 처리의 복원력이 개선됩니다. 손상된 파일이나 대용량 파일 등 비정상적인 파일을 처리하는 경우 발생할 수 있는 문제는 배포 성능에 더 이상 영향을 주지 않습니다.
@@ -97,5 +97,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >* [자산 마이크로서비스 사용 시작](asset-microservices-configure-and-use.md)
 >* [지원되는 파일 형식](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)
+>* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [다이렉트 바이너리 액세스에 대한 Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
