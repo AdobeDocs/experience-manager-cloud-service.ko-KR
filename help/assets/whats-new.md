@@ -2,10 +2,11 @@
 title: Content Hub의 새로운 기능
 description: 최근에 실행한 일부 Content Hub 기능에 대해 자세히 알아보십시오
 role: User
-source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
+exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
+source-git-commit: 721be5448a43f4501aeb9d0017ad97cf0d851e58
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 71%
+source-wordcount: '441'
+ht-degree: 73%
 
 ---
 
@@ -49,7 +50,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 * 중복 횟수를 줄여 자산 무결성을 향상시킵니다. 폴더 기반 권한에서는 동일한 자산이 다른 그룹과 공유될 때 중복이 필요합니다.
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
 
 ## UI 브랜딩 {#ui-branding}
 
@@ -57,7 +58,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 ![UI 브랜딩](/help/assets/assets/content-hub-ui-branding.png)
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
 
 ## 공개 링크 공유 {#public-link-sharing}
 
@@ -65,7 +66,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 ![UI 브랜딩](/help/assets/assets/public-and-private-link.png)
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
 
 ## 컬렉션 거버넌스 {#collections-governance}
 
@@ -73,7 +74,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
 
 >[!NOTE]
 >
@@ -83,7 +84,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 이제 Content Hub를 사용하면 선택한 자산과 해당 렌디션을 별도의 파일이 아닌 ZIP 파일로 다운로드하여 파일 관리를 간소화할 수 있습니다.
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
 
 ## Content Hub의 Dynamic Media 렌디션 {#dynamic-media-renditions}
 
@@ -91,4 +92,4 @@ Content Hub 사용자 인터페이스 내에서 다운로드할 수 있는 모�
 
 &#x200B;![Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)
 
-|정보(기본값)|[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
