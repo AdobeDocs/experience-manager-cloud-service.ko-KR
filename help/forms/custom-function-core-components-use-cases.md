@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ ht-degree: 0%
 
 또한 콘솔 창을 검사하여 서버에 제출된 데이터를 볼 수도 있습니다.
 
-콘솔 창의 ![Inspect 데이터](/help/forms/assets/custom-function-submit-data-console-data.png)
+![콘솔 창에서 데이터 검사](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## 양식 제출 성공 및 오류 처리기 재정의
 
@@ -370,7 +370,7 @@ function showModal(type, message) {
 
 기본 방식으로 양식 제출 성공 및 실패를 표시하려면 `Default submit Form Success Handler` 및 `Default submit Form Error Handler` 함수를 즉시 사용할 수 있습니다.
 
-사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 실행되지 않는 경우 [문제 해결](#troubleshooting) 섹션을 참조하십시오.
+사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 수행하지 못하는 경우 [문제 해결](#troubleshooting) 섹션을 참조하십시오.
 
 ## 반복 가능 패널의 특정 인스턴스에서 작업 수행
 
@@ -513,11 +513,20 @@ function testRemoveInstance(globals)
 
 ![패널 삭제](/help/forms/assets/custom-function-delete-panel.gif)
 
+## 알려진 문제
+
+* 사용자 지정 함수는 JavaScript 정규 표현식 리터럴을 지원하지 않습니다. 사용자 지정 함수에서 regex 리터럴을 사용하면 실행 중에 오류가 발생합니다. 예:
+  `const pattern = /^abc$/;`
+
+  호환성을 보장하려면 사용자 지정 함수에서 RegExp 생성자를 사용하십시오.
+
+  `const pattern = new RegExp("^abc$");`
+일관되고 안정적인 실행을 위해 RegExp 생성자를 사용하도록 정규 표현식을 리팩터링합니다.
 
 ## 문제 해결
 
 * 사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 수행되지 않으면 다음 단계를 수행하십시오.
-   * [핵심 구성 요소 버전이 3.0.18 이상](https://github.com/adobe/aem-core-forms-components)(으)로 업데이트되었는지 확인하십시오. 그러나 기존 AEM 프로젝트 및 양식의 경우 따라야 할 추가 단계가 있습니다.
+   * [핵심 구성 요소 버전이 3.0.18 이상](https://github.com/adobe/aem-core-forms-components)&#x200B;(으)로 업데이트되었는지 확인하십시오. 그러나 기존 AEM 프로젝트 및 양식의 경우 따라야 할 추가 단계가 있습니다.
 
    * AEM 프로젝트의 경우 사용자는 `submitForm('custom:submitSuccess', 'custom:submitError')`의 모든 인스턴스를 `submitForm()`(으)로 바꾸고 Cloud Manager 파이프라인을 통해 프로젝트를 배포해야 합니다.
 
