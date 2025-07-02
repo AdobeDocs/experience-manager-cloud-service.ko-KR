@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: ht
-source-wordcount: '3181'
-ht-degree: 100%
+source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 98%
 
 ---
 
@@ -453,9 +453,9 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 모두 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 모두 | 6/3/25 | 8/31/25 |
 
-### 수정할 수 없는 OSGi 속성 {#unmodifiable-osgi-properties}
+### 수정할 수 없는 OSGi 구성 {#unmodifiable-osgi-properties}
 
-다음 OSGi 구성 요소 PID의 속성은 아래에 설명된 대로 수정할 수 없습니다.
+다음 OSGi 구성 요소 PID의 속성은 수정할 수 없으므로 구성하지 않아야 합니다.
 
 | **OSGI 구성 요소 ID** | **수정할 수 없는 속성** |
 |---|---|
@@ -475,7 +475,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 
 ### 향후 OSGi 속성 제한 적용 {#future-restrictions-osgi-properties}
 
-앞으로 Adobe는 다음과 같은 OSGi 속성 제한을 시행하여 사용을 중단합니다.
+향후 Adobe에서 다음 OSGi 속성 제한을 적용합니다. 언급된 PID의 경우 나열된 속성만 구성할 수 있습니다.
 
 | OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항(해당되는 경우) |
 |---|---|---|---|---|
