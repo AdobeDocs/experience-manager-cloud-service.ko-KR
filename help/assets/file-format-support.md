@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1082'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 에셋 마이크로서비스를 사용한 에셋 전환에 대한 주요 내용은 다음과 같습니다.
 
-* [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], [!DNL Adobe Acrobat] 또는 PDF 등 Adobe 응용 프로그램 및 서비스에서 생성한 키 [Adobe 파일 형식](#adobe-formats).
+* [, ](#adobe-formats), [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD] 또는 PDF 등 Adobe 응용 프로그램 및 서비스에서 생성한 키 [!DNL Adobe Dimension]Adobe 파일 형식[!DNL Adobe Acrobat].
 * 주요 [이미징 파일 형식](#image-formats).
 * 캐논, 니콘, 후지 필름, 올림푸스 및 기타 제조업체(Adobe Camera Raw 제공)를 포함한 다양한 카메라용 [Camera Raw 파일 형식](#camera-raw-formats).
 * Microsoft® Office 및 Open Document 형식을 포함한 일반적인 [문서 형식](#document-formats)
@@ -33,6 +33,12 @@ ht-degree: 9%
 | ✓ | 지원됨 |
 | * | 표 아래의 비고 참조 |
 | - | 해당되지 않음 |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets]은(는) 이 문서에 나열된 파일 형식만 지원합니다.
+>>일부 기능은 다른 형식과 함께 작동하는 것처럼 보일 수 있지만, 이러한 형식은 공식적으로 지원되지 않습니다. 결과가 일관되지 않을 수 있으며 기능이 예상대로 작동하지 않을 수 있습니다.
+>>일관되고 신뢰할 수 있는 결과를 얻으려면 지원되는 형식만 사용하십시오.
 
 ## Adobe 형식 {#adobe-formats}
 
@@ -246,7 +252,7 @@ ht-degree: 9%
 
 ## Dynamic Media - 지원되지 않는 래스터 이미지 형식 {#unsupported-raster-image-formats-dm}
 
-[!DNL Dynamic Media]에서 *지원되지 않는* 래스터 이미지 파일 형식의 하위 유형:
+*에서*&#x200B;지원되지 않는[!DNL Dynamic Media] 래스터 이미지 파일 형식의 하위 유형:
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일입니다.
 * PSB 파일
