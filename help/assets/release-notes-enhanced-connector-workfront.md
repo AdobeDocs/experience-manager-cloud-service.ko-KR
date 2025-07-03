@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 96%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-[!DNL Workfront for Experience Manager enhanced connector]의 최신 버전 1.9.21의 릴리스 날짜는 2025년 6월 25일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.21의 릴리스 일자는 2025년 6월 25일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
+최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 개선 사항과 버그 수정이 포함되어 있습니다.
 
-* 인증 실패의 거짓 양성 로깅을 방지하기 위해 API 요청 로깅이 개선되었습니다.
+* 인증 실패에 대한 긍정 오류 로깅을 방지하기 위해 API 요청 로깅이 개선되었습니다.
 
-* Workfront API 호출에 대한 연결 누수가 수정되었습니다.
+* Workfront API 호출에서 연결 누수가 해결되었습니다.
 
-* Java 17 및 Java 21 버전용 6.5 LTS에서 Workfront Enhanced Connector를 지원합니다.
+* Java 17 및 Java 21 버전에 대해 6.5 LTS가 포함된 Workfront 강화 커넥터가 지원됩니다.
 
 >[!NOTE]
 >
@@ -65,9 +65,9 @@ ht-degree: 96%
 
 ### 2024년 1월 릴리스 {#january-2024-release}
 
-* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#linked-folders) 방법에 대해 자세히 알아보십시오.
+* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
-* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#metadata-schema-mapping)에 대해 자세히 알아보십시오.
+* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)에 대해 자세히 알아보십시오.
 
 * 강화 커넥터에서 연결 구성을 삭제하면 이벤트 구독 및 기타 저장된 구성에 큰 영향을 미치며, 이전 URL을 가리키게 됩니다.
 

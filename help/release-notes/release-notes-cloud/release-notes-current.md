@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.6.0) 일자는 2025년 6월 26일 금요일입니다. 다음 기능 릴리스(2025.7.0)는 2025년 7월 31일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.6.0) 일자는 2025년 6월 26일입니다. 다음 기능 릴리스(2025.7.0)는 2025년 7월 31일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -40,15 +40,15 @@ ht-degree: 88%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Assets 보기에서 메타데이터 양식 관리 개선**
+**자산 보기에서 향상된 메타데이터 양식 관리**
 
-이제 관리 보기에서 Assets 보기로 메타데이터 양식을 직접 가져올 수 있습니다. Assets 보기에서 이러한 양식에 대해 수행된 모든 업데이트는 관리자 보기에 자동으로 반영되므로 두 경험 모두에서 일관성이 보장됩니다. 이 기능은 기존 메타데이터 구성과의 연속성을 유지하면서 새로운 Assets 보기로의 원활한 전환을 지원합니다.
+이제 관리자 보기에서 자산 보기로 메타데이터 양식을 직접 가져올 수 있습니다. 자산 보기에서 이러한 양식을 업데이트하면 해당 내용이 관리자 보기에 자동으로 반영되어 두 환경 모두에서 일관성이 유지됩니다. 이 기능을 통해 기존 메타데이터 구성의 연속성을 유지하면서 새로운 자산 보기로 원활하게 전환할 수 있습니다.
 
 ![AI 생성 메타데이터](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ OSGi 속성:
 
 **Java 11 런타임**&#x200B;은 이제 더 이상 사용되지 않으며, 대부분의 환경은 이미 성능이 더 좋은 **Java 21 런타임**&#x200B;으로 업그레이드되었습니다.
 
-지원되지 않는 종속성([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조)으로 인해 환경을 업그레이드할 수 없는 경우 Adobe에서 특정 다음 단계에 대한 전자 메일을 받았어야 합니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
+지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
 참고: 런타임 버전은 코드의 빌드 버전과 별도입니다. Java 21을 사용한 빌드를 권장하지만 현재로서는 Java 11 빌드도 여전히 지원됩니다. Java 11 빌드에 대한 별도의 사용 중단 공지는 앞으로 공유될 예정입니다.
 
@@ -112,7 +112,7 @@ OSGi 속성:
 
 4월 릴리스 정보에서 언급된 대로 AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
 
-**8월 말**&#x200B;부터 지원되지 않는 사용자 정의 로깅 재정의는 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 Adobe은 현재 구성이 영향을 받을 수 있는 고객에게 연락했습니다.
+**8월 말**&#x200B;부터 지원되지 않는 사용자 정의 로깅 재정의는 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
 
 사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
 
@@ -123,7 +123,7 @@ OSGi 속성:
 
 현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 *삭제 유지 관리 작업*&#x200B;이 비활성화되어 있으므로 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
 
-그러나 저장소 성능을 최적화하기 위해 **2025년 7월 초**&#x200B;부터 다음 지침에 따라 기본적으로 제거가 활성화됩니다.
+그러나 저장소 성능을 최적화하기 위해 **2025년 7월 초**&#x200B;부터 다음 지침에 따라 삭제가 기본적으로 활성화됩니다.
 
 #### 콘텐츠 버전 {#mt-content}
 
@@ -162,7 +162,7 @@ OSGi 속성:
 * 콘텐츠 접근 권한을 부여하기 전에 ID 공급자를 통해 사용자 인증
 * 지리적 위치, 디바이스 유형 또는 사용자 속성에 따라 콘텐츠 개인화
 * CDN과 원본 사이의 미들웨어 역할
-* 서드파티 API의 응답을 다시 서식 지정(및 여러 API 응답 집계)한 후 브라우저에 전달
+* 브라우저에 제공하기 전에 서드파티 API의 응답(및 여러 API 응답 집계)을 다시 포맷
 * 다양한 백엔드에서 결합된 콘텐츠를 사용하여 에지에서 서버 렌더링 HTML을 구성하고 제공
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
