@@ -1,17 +1,18 @@
 ---
-title: 제품 경험 빌드
+title: 제품 경험 구축
 description: 다양한 채널에서 사용할 수 있는 제품 콘텐츠를 빌드하여 몰입형 쇼핑 경험을 만드는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 2%
 
 ---
 
-# 제품 경험 빌드 {#building-experiences}
+# 제품 경험 구축 {#building-experiences}
 
 제품 경험을 관리하는 방법을 알아봅니다.
 
@@ -25,7 +26,7 @@ Adobe Experience Manager(AEM) 컨텐츠 및 Commerce 여정의 이전 문서인 
 
 ## 제품 경험 관리 {#management}
 
-제품 경험 관리는 제품 데이터(PIM 또는 상거래 솔루션이 소유)를 AEM의 마케팅 콘텐츠로 장식하는 방법입니다. 이렇게 콘텐츠가 포함된 풍부한 제품 데이터를 다양한 채널에서 사용하여 몰입형 쇼핑 경험을 만들 수 있습니다.
+제품 경험 관리는 AEM의 마케팅 콘텐츠로 제품 데이터(PIM 또는 상거래 솔루션이 소유)를 장식하는 방법입니다. 이렇게 콘텐츠가 포함된 풍부한 제품 데이터를 다양한 채널에서 사용하여 몰입형 쇼핑 경험을 만들 수 있습니다.
 
 AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연결할 수 있습니다. 연관된 콘텐츠를 쉽게 검색하고 사용할 수 있으므로 생산성이 높습니다.
 
@@ -33,7 +34,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 높은 수준에서 제품과 관련된 자산에는 두 가지 유형이 있습니다. 제품 자산은 판매자가 관리하며 제품 표시(대부분 중립적인 배경 앞)에 중점을 둡니다. 자산은 상거래 솔루션 또는 AEM Assets(commerce / pim 솔루션에 Assets 통합을 통해)에서 관리됩니다.
 
-마케팅 에셋은 마케팅이 소유한 제품을 홍보하고 사용하는 것과 관련이 있습니다. 예를 들어 여러 제품(&quot;모양 보기&quot;), 특정 컨텍스트(&quot;야외 가을 컬렉션&quot;) 또는 방법 pdf를 보여 주는 경우가 있습니다. CIF에서는 AEM 자산을 제품 카탈로그 개체와 쉽게 연결할 수 있습니다.
+마케팅 에셋은 마케팅이 소유한 제품을 홍보하고 사용하는 것과 관련이 있습니다. 예를 들어 여러 제품(&quot;모양 보기&quot;), 특정 컨텍스트(&quot;야외 가을 컬렉션&quot;) 또는 방법 pdf를 보여 주는 경우가 있습니다. CIF은 AEM 에셋을 제품 카탈로그 개체와 쉽게 연결하는 방법을 제공합니다.
 
 에셋 속성을 열고 **Commerce** 탭으로 전환합니다. 이 탭에서는 제품과의 연결을 관리할 수 있습니다. 선택기 아래의 표에서는 링크된 객체에 대한 추가 정보를 제공합니다(선택 항목에만 표시됨). 세부 정보 아이콘을 클릭하면 제품 관리실에 전체 보기가 표시됩니다. 새 객체를 연결하려면 제품 선택기 아이콘(폴더 아이콘)을 클릭하고 객체를 선택한 다음 선택기를 닫습니다.
 
@@ -83,7 +84,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ![pem CF 대화 상자](assets/pem-dialog-cf.png)
 
-이 대화 상자는 핵심 구성 요소의 콘텐츠 조각 대화 상자를 다시 사용합니다. 추가 리소스에서 자세한 정보를 확인하십시오. 유일한 차이는 콘텐츠 조각 모델에서 식별자 필드(제품 SKU 또는 범주 UID)를 구성하는 **링크 요소** 속성입니다.
+이 대화 상자는 핵심 구성 요소의 콘텐츠 조각 대화 상자를 다시 사용합니다. 추가 리소스에서 자세한 정보를 확인하십시오. 유일한 차이는 콘텐츠 조각 모델의 식별자 필드(제품 SKU 또는 카테고리 UID)를 구성하는 **링크 요소** 속성입니다.
 
 이제 관련 콘텐츠 조각 및/또는 경험 조각이 있는 제품 페이지를 미리 봅니다. AEM은 페이지를 렌더링할 때 경험 조각의 유형(콘텐츠 또는 경험 조각), 식별자 및 자리 표시자 이름을 기반으로 모든 자리 표시자에 대해 조회를 수행합니다. AEM은 URL 확인자를 사용하여 식별자(제품의 경우 SKU, 범주의 경우 UID)를 가져옵니다. 경험 또는 콘텐츠 조각이 반환되면 자리 표시자 위치에 렌더링되고, 그렇지 않으면 자리 표시자가 무시됩니다.
 
@@ -105,16 +106,16 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ## 여정의 끝 {#end-of-journey}
 
-축하합니다! AEM Content 및 Commerce 개발자 여정을 완료했습니다! 이제
+축하합니다! AEM 컨텐츠 및 Commerce 개발자 여정을 완료했습니다! 이제
 
 * AEM 콘텐츠를 제품 카탈로그 개체에 연결하는 방법 이해
 * 자리 표시자를 사용하여 제품 및 범주 페이지를 개별적으로 보강
 * 콘텐츠를 구매 가능하게 하고 관련 콘텐츠 탭을 사용하는 방법을 이해할 수 있습니다.
 
-이제 AEM Content 및 Commerce을 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM Content 및 Commerce에는 다양한 추가 옵션이 있습니다. [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오. 이 섹션에서는 이 여정에서 확인한 기능에 대해 자세히 알아볼 수 있습니다.
+이제 AEM Content 및 Commerce을 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM Content 및 Commerce에는 많은 추가 옵션이 있습니다. [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오. 이 섹션에서는 이 여정에서 확인한 기능에 대해 자세히 알아볼 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
 * [Commerce 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
-* [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)
+* [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

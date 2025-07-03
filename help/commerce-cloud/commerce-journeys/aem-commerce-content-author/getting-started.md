@@ -4,7 +4,8 @@ description: CIF 작성 시작하기
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
@@ -17,7 +18,7 @@ Adobe Experience Manager(AEM) CIF 작성에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
-이 AEM Content 및 Commerce 여정의 이전 문서인 [AEM Content 및 Commerce에 대해 알아보기](/help/commerce-cloud/introduction.md)에서는 headless CMS 및 AEM Content 및 Commerce에 대한 기본 이론과 개념을 배웠습니다.
+이 AEM 컨텐츠 및 Commerce 여정의 이전 문서인 [AEM 컨텐츠 및 Commerce에 대해 알아보기](/help/commerce-cloud/introduction.md)에서는 headless CMS 및 AEM 컨텐츠 및 Commerce에 대한 기본 이론과 개념을 배웠습니다.
 
 이 문서는 이러한 기본 사항을 기반으로 합니다.
 
@@ -25,7 +26,7 @@ Adobe Experience Manager(AEM) CIF 작성에 대해 알아봅니다.
 
 이 문서는 CIF for Content 및 Commerce 특정 작성을 사용하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
-* AEM에서 페이지 편집기를 사용하여 CIF 작성의 개념 이해
+* AEM에서 페이지 편집기를 사용하여 CIF 작성의 개념을 이해합니다
 * 제품 및 카테고리 선택기를 사용하여 AEM에서 제품 카탈로그 데이터에 액세스하는 방법
 * 제품 관리실 및 AEM Omnisearch를 사용하여 콘텐츠 및 상거래 데이터에 액세스하는 방법
 
@@ -91,7 +92,7 @@ CIF은 AEM의 페이지 편집기를 확장하여 컨텍스트를 종료하지 �
 Omnisearch를 사용하면 전체 텍스트 검색을 사용하여 AEM 콘텐츠를 쉽게 찾을 수 있습니다. CIF은 연결된 AEM 콘텐츠와 함께 제품 카탈로그의 전체 텍스트 검색으로 Omnisearch를 확장합니다.
 ![상거래 메뉴 항목](assets/omnisearch.png)
 
-Omnisearch는 상거래 백엔드에서 전체 텍스트 검색을 실행하여 모든 관련 제품을 검색합니다. 결과는 **모든 제품 보기**&#x200B;에 나열됩니다. Omnisearch는 또한 AEM에서 검색된 제품과 관련된 콘텐츠를 검색합니다. 결과는 해당 AEM 카테고리 아래에 나열됩니다. 이 예에서 하나의 콘텐츠 조각은 제품과 관련되어 있습니다.
+Omnisearch는 상거래 백엔드에서 전체 텍스트 검색을 실행하여 모든 관련 제품을 검색합니다. 결과는 **모든 제품 보기**&#x200B;에 나열됩니다. Omnisearch는 AEM에서 검색된 제품과 관련된 콘텐츠도 검색합니다. 결과는 해당 AEM 카테고리 아래에 나열됩니다. 이 예에서 하나의 콘텐츠 조각은 제품과 관련되어 있습니다.
 
 ## 다음 단계 {#what-is-next}
 

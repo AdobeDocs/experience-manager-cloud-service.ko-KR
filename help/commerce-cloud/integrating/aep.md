@@ -11,7 +11,8 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 1%
@@ -21,11 +22,11 @@ ht-degree: 1%
 
 # AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합 {#aem-cif-aep-integration}
 
-[Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 __장바구니에 추가__&#x200B;와 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터를 전달하기 위해 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=ko)과(와) 매끄럽게 통합됩니다.
+[Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 [장바구니에 추가](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en)와 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터를 전달하기 위해 __Adobe Experience Platform__&#x200B;과(와) 매끄럽게 통합됩니다.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 Adobe Commerce 상점 첫 화면에서 이벤트 데이터를 수집할 수 있도록 [Commerce용 Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)라는 JavaScript 라이브러리를 제공합니다. 해당 이벤트 데이터는 Experience Platform으로 전송되어 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 고객 여정을 다루는 360도 프로필을 빌드하는 데 사용됩니다. Commerce 데이터를 Adobe Experience Cloud의 다른 제품에 연결하면 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
-클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=ko) 기술 제품군에 대해 자세히 알아보십시오.
+클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 기술 제품군에 대해 자세히 알아보십시오.
 
 ## `addToCart` 이벤트 데이터를 Experience Platform에 보내기 {#send-addtocart-to-aep}
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 
 로컬 개발 환경을 사용하여 이 데모를 완료합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. [AEM as a Cloud Service SDK을 사용하여 로컬 개발 설정](../develop.md)에 대한 요구 사항과 단계를 검토하십시오.
 
-또한 데이터 수집을 위한 스키마, 데이터 세트 및 데이터 스트림을 만들려면 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=ko)에 대한 액세스 권한과 사용 권한이 필요합니다. 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=ko)를 참조하십시오.
+또한 데이터 수집을 위한 스키마, 데이터 세트 및 데이터 스트림을 만들려면 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html)에 대한 액세스 권한과 사용 권한이 필요합니다. 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)를 참조하십시오.
 
 ## AEM Commerce as a Cloud Service 설정 {#aem-setup}
 
@@ -45,11 +46,11 @@ ht-degree: 1%
 
 ### 로컬 설정
 
-작동하는 AEM Commerce as a Cloud Service 환경을 만들 수 있도록 [로컬 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ko&#local-setup) 단계를 따르십시오.
+작동하는 AEM Commerce as a Cloud Service 환경을 만들 수 있도록 [로컬 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) 단계를 따르십시오.
 
 ### 프로젝트 설정
 
-새 AEM Commerce(CIF) 프로젝트를 만들 수 있도록 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ko&#project) 단계를 따르십시오.
+새 AEM Commerce(CIF) 프로젝트를 만들 수 있도록 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 단계를 따르십시오.
 
 >[!TIP]
 >
@@ -87,7 +88,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!IMPORTANT]
 >
->[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)이(가) 지원되는 피어 종속으로 제한되어 있으므로 `--force` 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
+>`--force`PWA Studio[이(가) 지원되는 피어 종속으로 제한되어 있으므로 ](https://developer.adobe.com/commerce/pwa-studio/) 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
 
 
 ### `--force` 인수를 사용하도록 Maven 구성
@@ -114,7 +115,7 @@ Maven 빌드 프로세스의 일부로 npm 클린 설치(`npm ci` 사용)가 트
 
 1. `ui.frontend` 모듈로 이동하여 기존 `.babelrc` 파일을 삭제합니다.
 
-1. `peregrine` 사전 설정을 사용하는 `babel.config.js` 파일을 만듭니다.
+1. `babel.config.js` 사전 설정을 사용하는 `peregrine` 파일을 만듭니다.
 
    ```javascript
    const peregrine = require('@magento/babel-preset-peregrine');
@@ -135,7 +136,7 @@ Maven 빌드 프로세스의 일부로 npm 클린 설치(`npm ci` 사용)가 트
 
 Babel 로더(`babel-loader`) 및 Webpack을 사용하여 JavaScript 파일을 전송하려면 `webpack.common.js` 파일을 편집하십시오.
 
-`module` 속성 값 내에 다음 규칙을 포함할 수 있도록 `ui.frontend` 모듈로 이동하고 `webpack.common.js` 파일을 업데이트합니다.
+`ui.frontend` 속성 값 내에 다음 규칙을 포함할 수 있도록 `webpack.common.js` 모듈로 이동하고 `module` 파일을 업데이트합니다.
 
 ```javascript
 {
@@ -226,7 +227,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
    >[!IMPORTANT]
    >
-   >이미 __AEM Guides - CIF Venia 프로젝트__&#x200B;의 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 파일을 잘 알고 있을 수 있지만 이 파일에 몇 가지 변경 사항이 있습니다. 먼저 __TODO__ 댓글을 검토하십시오. 그런 다음 `eventsCollector` 속성 내에서 `eventsCollector > aep` 개체를 찾고 `orgId` 및 `datastreamId` 속성을 올바른 값으로 업데이트합니다. [자세히 알아보기](./aep.md#add-aep-values-to-aem).
+   >이미 [`config.js`AEM Guides - CIF Venia 프로젝트](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js)의 ____ 파일을 잘 알고 있을 수 있지만 이 파일에 몇 가지 변경 사항이 있습니다. 먼저 __TODO__ 댓글을 검토하십시오. 그런 다음 `eventsCollector` 속성 내에서 `eventsCollector > aep` 개체를 찾고 `orgId` 및 `datastreamId` 속성을 올바른 값으로 업데이트합니다. [자세히 알아보기](./aep.md#add-aep-values-to-aem).
 
 1. 다음 내용으로 `App.js` 파일을 만듭니다. 이 파일은 일반적인 React 애플리케이션 시작 지점 파일과 유사하며 Experience Platform 통합을 용이하게 하기 위해 React 및 사용자 정의 후크와 React Context 사용을 포함합니다.
 
@@ -341,7 +342,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 >[!AVAILABILITY]
 >
->__Adobe Experience Platform__ 및 __Adobe Experience Platform 데이터 수집__&#x200B;에서 올바른 __제품 프로필__&#x200B;에 속해 있는지 확인하십시오. 필요한 경우 시스템 관리자와 함께 [Admin Console](https://adminconsole.adobe.com/)에서 __제품 프로필__&#x200B;을 만들거나 업데이트하거나 할당하십시오.
+>__Adobe Experience Platform__ 및 __Adobe Experience Platform 데이터 수집__&#x200B;에서 올바른 __제품 프로필__&#x200B;에 속해 있는지 확인하십시오. 필요한 경우 시스템 관리자와 함께 __Admin Console__&#x200B;에서 [제품 프로필](https://adminconsole.adobe.com/)을 만들거나 업데이트하거나 할당하십시오.
 
 ### Commerce 필드 그룹으로 스키마 만들기
 
@@ -364,7 +365,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 >[!TIP]
 >
->자세한 내용은 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko)을 참조하십시오.
+>자세한 내용은 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)을 참조하십시오.
 
 ### 데이터 세트 만들기
 
@@ -390,7 +391,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 >[!TIP]
 >
->자세한 내용은 [데이터 세트 개요](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ko)를 참조하십시오.
+>자세한 내용은 [데이터 세트 개요](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)를 참조하십시오.
 
 
 ### 데이터 스트림 만들기
@@ -417,11 +418,11 @@ Experience Platform에서 데이터 스트림을 만들 수 있도록 다음 단
 
 >[!TIP]
 >
->자세한 내용은 [데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko)를 참조하세요.
+>자세한 내용은 [데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)를 참조하세요.
 
 ## AEM Commerce 구성에 데이터스트림 값 추가 {#add-aep-values-to-aem}
 
-위의 Experience Platform 설정을 완료한 후에는 데이터 스트림 세부 정보의 왼쪽 레일에 `datastreamId`이(가) 있고 __프로필 사진 > 계정 정보 > 사용자 정보__ 모달의 오른쪽 상단 모서리에 `orgId`이(가) 있어야 합니다.
+위의 Experience Platform 설정을 완료한 후에는 데이터 스트림 세부 정보의 왼쪽 레일에 `datastreamId`이(가) 있고 `orgId`프로필 사진 > 계정 정보 > 사용자 정보&#x200B;__모달의 오른쪽 상단 모서리에__&#x200B;이(가) 있어야 합니다.
 
 ![AEP 데이터스트림 ID](../assets/aep-integration/AEP-Datastream-ID.png)
 
@@ -432,7 +433,7 @@ Experience Platform에서 데이터 스트림을 만들 수 있도록 다음 단
 
 ## `addToCart` 이벤트 트리거 및 데이터 수집 확인 {#event-trigger-verify}
 
-위의 단계에서 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 제품 UI에서 Google Chrome 확장 _Snowploy Inspector_ 및 데이터 세트 __지표 및 그래프__ 토글을 사용하여 `addToCart` 이벤트를 트리거하고 데이터 수집을 확인할 수 있습니다.
+위의 단계에서 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 제품 UI에서 Google Chrome 확장 `addToCart`Snowploy Inspector _및 데이터 세트_&#x200B;지표 및 그래프&#x200B;__토글을 사용하여__ 이벤트를 트리거하고 데이터 수집을 확인할 수 있습니다.
 
 이벤트를 트리거하려면 로컬 설정에서 AEM 작성자 또는 게시 서비스를 사용할 수 있습니다. 이 예에서는 계정에 로그인하여 AEM 작성자를 사용하십시오.
 
@@ -460,7 +461,7 @@ Experience Platform에서 데이터 스트림을 만들 수 있도록 다음 단
 
 ## 구현 세부 사항 {#implementation-details}
 
-[CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)는 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 프로젝트의 일부인 [Adobe Commerce용 데이터 연결](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)의 맨 위에 만들어집니다.
+[CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)는 [PWA Studio](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html) 프로젝트의 일부인 [Adobe Commerce용 데이터 연결](https://developer.adobe.com/commerce/pwa-studio/)의 맨 위에 만들어집니다.
 
 PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Source에서 제공하는 Progressive Web Application(PWA) 상점 전면을 만들 수 있습니다. 프로젝트에 시각적 구성 요소에 논리를 추가하기 위한 [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)이라는 구성 요소 라이브러리도 포함되어 있습니다. [Peregrin 라이브러리](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)는 또한 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)에서 Experience Platform과 원활하게 통합하기 위해 사용하는 사용자 지정 React 후크를 제공합니다.
 
@@ -500,6 +501,6 @@ __프로필 XDM 이벤트:__
 자세한 내용은 다음 리소스를 참조하십시오.
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=ko)
-- [[!DNL Data Connection] 이벤트](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=ko)
-- [Adobe Experience Platform 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ko)
+- [[!DNL Data Connection] 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] 이벤트](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [Adobe Experience Platform 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

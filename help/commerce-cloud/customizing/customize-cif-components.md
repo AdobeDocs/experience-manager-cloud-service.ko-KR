@@ -1,23 +1,24 @@
 ---
-title: CIF 핵심 구성 요소 사용자 지정
+title: CIF 핵심 구성 요소 맞춤화
 description: AEM CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 튜토리얼에서는 비즈니스별 요구 사항을 충족하도록 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 1%
 
 ---
 
-# AEM CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
+# AEM CIF 핵심 구성 요소 맞춤화 {#customize-cif-components}
 
 [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)은(는) [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 사용하기 위한 참조 코드 기반입니다. 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 구성 요소를 추가로 확장하여 Adobe Commerce의 사용자 지정 특성을 표시합니다. 또한 AEM과 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
 
 >[!TIP]
 >
-> 상거래 구현을 시작할 때 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 사용하십시오.
+> 상거래 구현을 시작할 때 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)을 사용하십시오.
 
 ## 빌드할 내용
 
@@ -27,7 +28,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 이 환경에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함되어 있습니다. [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md)에 대한 요구 사항과 단계를 검토하십시오. 자습서를 완전히 따르려면 Adobe Commerce에서 [특성을 제품에 추가](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)할 수 있는 권한이 필요합니다.
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 이 환경에는 Adobe Commerce 인스턴스에 구성 및 연결된 실행 중인 AEM 인스턴스가 포함되어 있습니다. [AEM as a Cloud Service SDK을 사용하여 로컬 개발 설정](../develop.md)에 대한 요구 사항과 단계를 검토하십시오. 자습서를 완전히 따르려면 Adobe Commerce에서 [특성을 제품에 추가](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)할 수 있는 권한이 필요합니다.
 
 코드 샘플 및 튜토리얼을 실행하려면 [GraphiQL](https://github.com/graphql/graphiql)과 같은 GraphQL IDE 또는 브라우저 확장이 필요합니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는지 확인합니다. Google Chrome에서 _Altair GraphQL 클라이언트_&#x200B;는 작업을 수행할 수 있는 확장 프로그램입니다.
 
@@ -37,7 +38,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 >[!NOTE]
 >
-> **언제든지 기존 프로젝트를 사용할 수 있습니다**(CIF이 포함된 AEM Project Archetype 기준). 이 섹션을 건너뜁니다.
+> **언제든지 기존 프로젝트를 사용할 수 있습니다**(CIF이 포함된 AEM Project Archetype 기반). 이 섹션을 건너뜁니다.
 
 1. 프로젝트를 복제할 수 있도록 다음 git 명령을 실행합니다.
 
@@ -54,7 +55,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결할 수 있도록 필요한 OSGi 구성을 추가하거나 생성된 프로젝트에 구성을 추가합니다.
 
-1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)에서 `US` > `Home` 페이지로 이동합니다.
+1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. `US`http://localhost:4502/editor.html/content/venia/us/en.html`Home`에서 [ > ](http://localhost:4502/editor.html/content/venia/us/en.html) 페이지로 이동합니다.
 
    당신은 상점이 현재 베니아 테마를 사용하고 있다는 것을 볼 수 있습니다. 상점 첫 화면의 메인 메뉴를 확장하면 Adobe Commerce에 대한 연결이 작동하고 있음을 나타내는 다양한 카테고리가 표시됩니다.
 
@@ -183,7 +184,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [GraphQL 개요](h
 
 슬링 모델은 Java™으로 구현되며 생성된 프로젝트의 **core** 모듈에서 찾을 수 있습니다.
 
-[선택한 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#set-up-the-development-ide)를 사용하여 Venia 프로젝트를 가져옵니다. 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#microsoft-visual-studio-code)에서 가져온 것입니다.
+[선택한 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)를 사용하여 Venia 프로젝트를 가져옵니다. 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에서 가져온 것입니다.
 
 1. IDE에서 **core** 모듈 아래로 이동하여 `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`을(를) 수행합니다.
 
@@ -208,9 +209,9 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [GraphQL 개요](h
 
    이 새 메서드는 논리를 캡슐화하여 제품에 `eco_friendly` 특성이 **예** 또는 **아니요**(으)로 설정되어 있는지 나타냅니다.
 
-1. `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`에서 `MyProductTeaserImpl.java`을(를) 검사합니다.
+1. `MyProductTeaserImpl.java`에서 `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`을(를) 검사합니다.
 
-   Sling 모델에 대한 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 통해 `MyProductTeaserImpl`에서 `sling:resourceSuperType` 속성을 통해 `ProductTeaser` 모델을 참조할 수 있습니다.
+   Sling 모델에 대한 [위임 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)을 통해 `MyProductTeaserImpl`에서 `ProductTeaser` 속성을 통해 `sling:resourceSuperType` 모델을 참조할 수 있습니다.
 
    ```java
    @Self
@@ -229,7 +230,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [GraphQL 개요](h
 
    이 메서드는 구현이 작성해야 하는 Java™ 코드의 양을 최소화합니다.
 
-1. AEM CIF 핵심 구성 요소에서 제공하는 추가 확장 지점 중 하나는 특정 제품 특성에 대한 액세스를 제공하는 `AbstractProductRetriever`입니다. `initModel()` 메서드 Inspect:
+1. AEM CIF 핵심 구성 요소에서 제공하는 추가 확장 지점 중 하나는 특정 제품 특성에 대한 액세스를 제공하는 `AbstractProductRetriever`입니다. `initModel()` 메서드 검사:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -323,9 +324,9 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [GraphQL 개요](h
 
 ## 제품 티저의 마크업 맞춤화 {#customize-markup-product-teaser}
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 편집은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)를 재정의하여 수행됩니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 재사용하여 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 편집은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)를 재정의하여 수행됩니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 재사용하여 다른 제품을 표시할 수 있습니다.
 
-이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 구성 요소의 [마크업 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
+이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 구성 요소의 [마크업 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
 
 >[!NOTE]
 >
@@ -345,9 +346,9 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
        componentGroup="Venia - Commerce"/>
    ```
 
-   위의 구성 요소 정의는 프로젝트의 제품 티저 구성 요소에 대한 것입니다. `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` 속성을 확인합니다. 이 속성은 [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ko#create-proxy-components)를 만드는 예제입니다. AEM CIF 핵심 구성 요소에서 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType`을(를) 사용하여 모든 기능을 상속할 수 있습니다.
+   위의 구성 요소 정의는 프로젝트의 제품 티저 구성 요소에 대한 것입니다. `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` 속성을 확인합니다. 이 속성은 [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components)를 만드는 예제입니다. AEM CIF 핵심 구성 요소에서 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType`을(를) 사용하여 모든 기능을 상속할 수 있습니다.
 
-1. `productteaser.html` 파일을 엽니다. 이 파일은 [CIF 제품 티저](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)에 있는 `productteaser.html` 파일의 복사본입니다.
+1. `productteaser.html` 파일을 엽니다. 이 파일은 `productteaser.html`CIF 제품 티저[에 있는 ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html) 파일의 복사본입니다.
 
    ```html
    <!--/* productteaser.html */-->
@@ -362,7 +363,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    `MyProductTeaser`에 대한 Sling 모델이 사용되고 `product` 변수에 할당됩니다.
 
-1. 이전 연습에서 구현된 `isEcoFriendly` 메서드를 호출할 수 있도록 `productteaser.html`을(를) 수정합니다.
+1. 이전 연습에서 구현된 `productteaser.html` 메서드를 호출할 수 있도록 `isEcoFriendly`을(를) 수정합니다.
 
    ```html
    ...
@@ -385,7 +386,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    HTL에서 Sling Model 메서드를 호출할 때 메서드의 `get` 및 `is` 부분이 삭제되고 첫 번째 문자는 소문자입니다. 따라서 `isShowBadge()`은(는) `.showBadge`이(가) 되고 `isEcoFriendly`은(는) `.ecoFriendly`이(가) 됩니다. `.isEcoFriendly()`에서 반환된 부울 값에 따라 `<span>Eco Friendly</span>`이(가) 표시되는지 확인합니다.
 
-   `data-sly-test` 및 기타 HTL 블록 문에 대한 자세한 내용은 [HTL 사양](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=ko)에서 확인할 수 있습니다.
+   `data-sly-test` 및 기타 HTL 블록 문에 대한 자세한 내용은 [HTL 사양](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)에서 확인할 수 있습니다.
 
 1. 명령줄 터미널에서 Maven 기술을 사용하여 변경 사항을 저장하고 업데이트를 AEM에 배포합니다.
 
@@ -394,7 +395,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **슬링 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)(으)로 이동합니다.
+1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **슬링 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)&#x200B;(으)로 이동합니다.
 
 1. `MyProductTeaserImpl`을(를) 검색하면 다음과 같은 줄이 표시됩니다.
 
@@ -404,7 +405,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    이 선은 슬링 모델이 제대로 배포되고 올바른 구성 요소에 매핑되었음을 나타냅니다.
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
+1. 제품 티저가 추가된 **http://localhost:4502/editor.html/content/venia/us/en.html**&#x200B;의 [Venia 홈 페이지](http://localhost:4502/editor.html/content/venia/us/en.html)&#x200B;(으)로 새로 고칩니다.
 
    ![환경 친화적인 메시지가 표시됨](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -431,11 +432,11 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 1. [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일을 다운로드합니다. 이 파일은 **친환경** 배지로 사용됩니다.
 1. IDE로 돌아가서 `ui.frontend` 폴더로 이동합니다.
-1. `ui.frontend/src/main/resources/images` 폴더에 `eco_friendly.svg` 파일 추가:
+1. `eco_friendly.svg` 폴더에 `ui.frontend/src/main/resources/images` 파일 추가:
 
    ![친환경 SVG 추가됨](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
-1. `ui.frontend/src/main/styles/commerce/_productteaser.scss`에서 `productteaser.scss` 파일을 엽니다.
+1. `productteaser.scss`에서 `ui.frontend/src/main/styles/commerce/_productteaser.scss` 파일을 엽니다.
 1. `.productteaser` 클래스 내에 다음 Sass 규칙을 추가합니다.
 
    ```scss
@@ -473,7 +474,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
+1. 제품 티저가 추가된 **http://localhost:4502/editor.html/content/venia/us/en.html**&#x200B;의 [Venia 홈 페이지](http://localhost:4502/editor.html/content/venia/us/en.html)&#x200B;(으)로 새로 고칩니다.
 
    ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -489,9 +490,9 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 ## 추가 리소스 {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
-- [AEM CIF 핵심 구성 요소 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html?lang=ko)
-- [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)
-- [AEM Sites 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
-- [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md)
+- [AEM CIF 핵심 구성 요소 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
+- [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)

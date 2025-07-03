@@ -4,7 +4,8 @@ description: CIF 구성 요소를 사용하여 AEM 사이트에서  [!DNL Live S
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -15,9 +16,9 @@ ht-degree: 0%
 
 Adobe Commerce 라이브 검색은 추가 비용 없이 빠르고, 관련성이 높고, 직관적인 검색 경험을 제공합니다. Adobe Sensei에서 제공하는 라이브 검색은 인공 지능과 머신 러닝 알고리즘을 사용하여 집계된 방문자 데이터를 심층 분석합니다. 이 데이터를 Adobe Commerce 카탈로그와 결합하면 연관성 있고 개인화된 쇼핑 경험이 구축됩니다.
 
-이 항목에서는 AEM CIF 구성 요소를 사용하여 AEM 사이트에 [!DNL Live Search] PLP(제품 목록 페이지) 위젯을 구현하는 방법에 대해 설명합니다.
+이 항목에서는 AEM CIF 구성 요소를 사용하여 [!DNL Live Search] PLP(제품 목록 페이지) 위젯을 AEM 사이트에 구현하는 방법에 대해 설명합니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 항목에서는 사용자가 로컬 [AEM 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko)을 설정했다고 가정합니다.
 
@@ -58,7 +59,7 @@ PLP 구성 요소를 설치하려면 [[!DNL Live Search] Popover CIF 구성 요�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  `embed` 줄에 `core.cif.productlist.v1`을(를) 추가합니다.
+  `core.cif.productlist.v1` 줄에 `embed`을(를) 추가합니다.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -319,7 +320,7 @@ PLP 구성 요소를 설치하려면 [[!DNL Live Search] Popover CIF 구성 요�
 
 * ui.frontend/src/main/components/App/App.js
 
-  `../../site/main.scss` 바로 위의 47행에서 `App.js`을(를) 편집합니다.
+  `App.js` 바로 위의 47행에서 `../../site/main.scss`을(를) 편집합니다.
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';

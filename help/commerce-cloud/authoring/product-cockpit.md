@@ -4,7 +4,8 @@ description: 연결된 제품 카탈로그 및 관련 컨텐츠에 대한 통합
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -25,9 +26,9 @@ ht-degree: 1%
 
 ## 구성 {#configuration}
 
-제품 카탈로그는 AEM에서 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ko#catalog)을 참조하세요.
+AEM에서 제품 카탈로그를 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)을 참조하세요.
 
-단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ko)를 참조하십시오.
+단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -75,12 +76,12 @@ ht-degree: 1%
 
 ### Commerce 탭 {#tabs}
 
-일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 이 데이터(포함) 레코드 시스템이 상거래 백엔드이므로 variables)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
+일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 이 데이터(포함) 레코드 시스템이 상거래 백엔드이므로 variants)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
 
 ![카탈로그 속성](../assets/catalog-properties.png)
 
 ### AEM 컨텐츠 탭 {#content-tabs}
 
-AEM 콘텐츠 유형(경험 조각, 콘텐츠 조각, 연관된 Assets)별로 그룹화된 이 탭에는 상거래 오브젝트와 연관된 AEM 콘텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
+AEM 컨텐츠 유형(경험 조각, 컨텐츠 조각, 연관된 Assets)별로 그룹화된 이 탭에는 상거래 오브젝트와 연관된 AEM 컨텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
 
 ![콘텐츠 속성](../assets/content-properties.png)

@@ -1,9 +1,11 @@
 ---
 title: CIF 제품 슬라이드에 대한 사용자 정의 속성
-description: Sling 모델을 업데이트하고 마크업을 사용자 지정하여 AEM CIF 제품 슬라이드 구성 요소를 확장하는 방법을 알아봅니다.
+description: 슬링 모델을 업데이트하고 마크업을 사용자 지정하여 AEM CIF 제품 캐러셀 구성 요소를 확장하는 방법을 알아봅니다.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 4%
@@ -30,7 +32,7 @@ ht-degree: 4%
 
 Sling 모델을 구현하여 제품 캐러셀의 비즈니스 논리를 확장할 수 있습니다.
 
-1. IDE에서 핵심 모듈 아래에서 `core/src/main/java/com/venia/core/models/commerce`(으)로 이동하고 CIF ProductCarousel 인터페이스를 확장하는 CustomCarousel 인터페이스를 만듭니다.
+1. IDE에서 코어 모듈 아래에서 `core/src/main/java/com/venia/core/models/commerce`(으)로 이동하고 CIF ProductCarousel 인터페이스를 확장하는 CustomCarousel 인터페이스를 만듭니다.
 
    ```
    package com.venia.core.models.commerce;
@@ -38,9 +40,8 @@ Sling 모델을 구현하여 제품 캐러셀의 비즈니스 논리를 확장�
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
-1. 그런 다음 `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`에 구현 클래스 `CustomCarouselImpl.java`을(를) 만듭니다.
-Sling 모델에 대한 전달 패턴을 통해 `CustomCarouselImpl`은(는) `sling:resourceSuperType` 속성을 통해 `ProductCarousel` 모델을 참조할 수 있습니다.
+1. 그런 다음 `CustomCarouselImpl.java`에 구현 클래스 `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`을(를) 만듭니다.
+Sling 모델에 대한 전달 패턴을 통해 `CustomCarouselImpl`은(는) `ProductCarousel` 속성을 통해 `sling:resourceSuperType` 모델을 참조할 수 있습니다.
 
    ```
    @Self
@@ -69,7 +70,7 @@ Sling 모델에 대한 전달 패턴을 통해 `CustomCarouselImpl`은(는) `sli
 
 마크업을 추가로 사용자 정의하려면
 
-1. `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel`(핵심 구성 요소 자격 증명 경로)에서 ui.apps 모듈 `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`(으)로 `productcard.html`의 복사본을 만듭니다.
+1. `productcard.html`(핵심 구성 요소 자격 증명 경로)에서 ui.apps 모듈 `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel`(으)로 `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`의 복사본을 만듭니다.
 
 1. 구현 클래스에 언급된 사용자 지정 특성을 호출하려면 `productcard.html`을(를) 편집하십시오.
 

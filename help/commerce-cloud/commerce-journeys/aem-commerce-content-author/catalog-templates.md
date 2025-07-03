@@ -4,7 +4,8 @@ description: 제품 카탈로그 페이지 및 템플릿 관리 방법 알아보
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -33,7 +34,7 @@ AEM 컨텐츠 및 Commerce 작성 여정의 이전 문서인 [AEM CIF 작성 기
 
 Venia storefront는 탐색, 랜딩, 카테고리(PLP), 제품 세부 사항 페이지(PDP)와 함께 일반적인 제품 카탈로그 경험을 제공합니다.
 
-카탈로그 페이지는 AEM CIF 카탈로그 템플릿과 필요할 때 상거래 끝점에서 가져오는 실시간 제품 데이터를 사용하여 동적으로 작성됩니다. 모든 카탈로그에는 제품 및 범주 페이지에 대한 일반 템플릿이 있습니다.
+카탈로그 페이지는 AEM CIF 카탈로그 템플릿과 필요할 때 상거래 끝점에서 가져오는 실시간 제품 데이터를 사용하여 동적으로 만들어집니다. 모든 카탈로그에는 제품 및 범주 페이지에 대한 일반 템플릿이 있습니다.
 ![카탈로그 구조](assets/catalog-structure.png)
 
 탐색 구성 요소는 콘텐츠 및 카탈로그 페이지를 보여 줍니다. 탐색에서 카탈로그 랜딩 페이지 또는 첫 번째 수준 범주를 표시할 수 있습니다. 마우스로 범주를 가리키면 두 번째 수준의 범주가 두 번째 선으로 표시됩니다.
@@ -109,7 +110,7 @@ CIF은 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 �
 * 일반 템플릿 작동 방식
 * 개별 템플릿을 만들었습니다.
 
-이 지식을 기반으로 다음 문서인 [준비된 제품 카탈로그 여정 관리](staged-catalog.md)를 검토하여 경험을 계속하십시오. 여기에서는 준비된 제품 데이터 및 AEM Launch를 사용하여 작업하는 방법에 대해 알아봅니다.
+이 지식을 기반으로 다음 문서인 [준비된 제품 카탈로그 여정 관리](staged-catalog.md)를 검토하여 경험을 계속하십시오. 여기에서는 준비된 제품 데이터 및 AEM 실행을 사용하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 

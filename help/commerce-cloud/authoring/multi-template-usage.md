@@ -11,10 +11,11 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 통해 콘텐츠 작성자는 추가 범주 및 제품 페이지를 만들 수 있습니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32788/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 특정 제품 페이지는 sku 또는 제품 범주로 선택할 수 있습니다. 카테고리 정보를 제품 URL로 인코딩해야 하므로 나중은 사용 가능한 일부 기본 제품 페이지 URL 형식에서만 지원됩니다.
 

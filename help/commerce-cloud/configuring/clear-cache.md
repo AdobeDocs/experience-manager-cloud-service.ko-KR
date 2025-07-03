@@ -4,7 +4,8 @@ description: AEM CIF에서 캐시 지우기 기능을 활성화하고 확인하�
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 3%
@@ -23,15 +24,14 @@ ht-degree: 3%
 
 CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되어 있습니다. 활성화하려면 해당 프로젝트에 다음을 추가해야 합니다.
 
-* [여기](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)와 같이 프로젝트에서 `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` 구성을 추가하여 해당 요청으로 clear-cache API를 트리거하는 데 도움이 되는 서블릿 `/bin/cif/invalidate-cache`을(를) 활성화합니다.
+* `/bin/cif/invalidate-cache`여기`com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`와 같이 프로젝트에서 [ 구성을 추가하여 해당 요청으로 clear-cache API를 트리거하는 데 도움이 되는 서블릿 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)을(를) 활성화합니다.
   >[!NOTE]
   >
   > 작성자 인스턴스에 대해서만 구성을 활성화해야 합니다.
 
-* [여기](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)와 같이 프로젝트에서 `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
+* `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`여기[와 같이 프로젝트에서 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
    * 작성자 및 게시 인스턴스 모두에 대해 구성을 활성화해야 합니다.
    * Dispatcher 캐시 활성화(선택 사항): 위의 구성에서 `enableDispatcherCacheInvalidation` 속성을 true로 설정하여 Dispatcher 캐시 지우기 설정을 활성화할 수 있습니다. 이렇게 하면 Dispatcher에서 캐시를 지우는 기능이 제공됩니다.
-
      >[!NOTE]
      >
      > 게시 인스턴스에서만 작동합니다.
@@ -64,7 +64,6 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 모든 것이 잘 진행되면 새로운 변경 사항이 모든 인스턴스에 반영됩니다. 변경 사항이 게시 인스턴스에 표시되지 않으면 개인/시크릿 브라우저 창에서 관련 PLP 및 PDP 페이지에 액세스해 보십시오.
 
 >[!NOTE]
@@ -135,4 +134,4 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 * 내부 메모리 및 Dispatcher 캐시에서 캐시를 지워야 하는 경우 [이 참조](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)를 따라야 합니다.
   >[!NOTE]
   >
-  > `getPatterns()` 메서드에 대해 `null`을(를) 반환하면 내부 지우기 캐시를 무시할 수 있습니다.
+  > `null` 메서드에 대해 `getPatterns()`을(를) 반환하면 내부 지우기 캐시를 무시할 수 있습니다.

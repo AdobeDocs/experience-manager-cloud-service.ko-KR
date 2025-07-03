@@ -4,7 +4,8 @@ description: AEM Commerce 작성을 통한 가이드 여정을 시작해 보십�
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 95%
@@ -43,7 +44,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 기초 지식을 제공하며 상세 기술 설명서와 연결됩니다.
 
-여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM Content 및 CommerceAdobe 를 처음 사용하는 경우 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
+여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM 컨텐츠 및 Commerce을 처음 사용하는 경우 Adobe에서는 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
 
 | # | 문서 | 설명 |
 |---|---|---|
