@@ -28,7 +28,7 @@ AEM 컨텐츠 및 Commerce 여정의 이전 문서인 [제품 카탈로그 페�
 
 >[!NOTE]
 >
->이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 서드파티 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
+>이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 서드파티 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ko)를 참조하십시오.
 
 먼저 작성자가 CIF을 사용하여 단계적 제품 데이터에 액세스하는 방법을 살펴보겠습니다.
 

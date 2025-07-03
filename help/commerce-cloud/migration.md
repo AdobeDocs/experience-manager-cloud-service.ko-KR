@@ -30,7 +30,7 @@ CIF Adobe을 배포하는 프로젝트를 지원하기 위해 [AEM CIF 핵심 �
 
 ## 프로젝트 구조
 
-[AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 및 AEM as a Cloud Service의 특성에 대해 알아봅니다. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정합니다.
+[AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko) 및 AEM as a Cloud Service의 특성에 대해 알아봅니다. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정합니다.
 AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 * GraphQL 클라이언트 OSGI 번들 **은(는) 더 이상 AEM 프로젝트에 포함되지 않아야**&#x200B;하며, CIF 추가 기능을 통해 배포됩니다.

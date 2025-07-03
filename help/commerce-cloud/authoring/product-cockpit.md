@@ -26,9 +26,9 @@ ht-degree: 1%
 
 ## 구성 {#configuration}
 
-AEM에서 제품 카탈로그를 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)을 참조하세요.
+AEM에서 제품 카탈로그를 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ko#catalog)을 참조하세요.
 
-단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
+단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ko)를 참조하십시오.
 
 >[!NOTE]
 >

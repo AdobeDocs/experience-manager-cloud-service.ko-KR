@@ -55,5 +55,5 @@ AEM CIF 핵심 구성 요소를 위한 Adobe Commerce과의 비즈니스 로직 
 
 ## 검색 {#search}
 
-CIF은 [Commerce GraphQL API](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)를 기반으로 서버측에서 렌더링된 검색 경험인 [검색 핵심 구성 요소](https://developer.adobe.com/commerce/webapi/graphql/)를 즉시 제공합니다. Commerce 고객은 대신 [실시간 검색](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en)을 사용할 수 있습니다. 이 [링크](/help/commerce-cloud/integrating/live-search-plp.md)를 따라 CIF - Live Search 통합에 대해 자세히 알아보십시오.
+CIF은 [Commerce GraphQL API](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)를 기반으로 서버측에서 렌더링된 검색 경험인 [검색 핵심 구성 요소](https://developer.adobe.com/commerce/webapi/graphql/)를 즉시 제공합니다. Commerce 고객은 대신 [실시간 검색](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=ko)을 사용할 수 있습니다. 이 [링크](/help/commerce-cloud/integrating/live-search-plp.md)를 따라 CIF - Live Search 통합에 대해 자세히 알아보십시오.
 
