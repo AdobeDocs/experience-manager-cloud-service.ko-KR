@@ -4,9 +4,9 @@ description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service �
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 63%
 
 ---
@@ -56,7 +56,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 1. 콘텐츠 복원을 참조하는 표현적 이름으로 제품 프로필을 만듭니다.
 1. 필요한 프로그램에 **프로그램 액세스** 권한을 제공하십시오.
-1. 사용 사례에 따라 필요한 환경 또는 프로그램의 모든 환경에 대해 **콘텐츠 복원** 권한을 제공하십시오.
+1. 사용 사례에 따라 필요한 환경 또는 프로그램의 모든 환경에 대해 **환경 복원 만들기** 권한을 제공하십시오.
 1. 해당 프로필 프로필에 사용자를 할당합니다.
 
 권한 관리에 대한 자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md) 설명서를 참조하십시오.
