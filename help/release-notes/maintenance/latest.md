@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ ht-degree: 98%
 
 ### 알려진 문제 {#known-issues-21331}
 
-* SITES-33177: 쉼표로 구분된 문자열로 저장된 섹션 스타일이 중단됩니다.
+* SITES-33177: 쉼표로 구분된 문자열로 저장된 섹션 스타일이 손상되었습니다.
 * SITES-33262: 이름 속성이 없는 블록은 페이지 렌더링 및 게시에 실패합니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-21331}
