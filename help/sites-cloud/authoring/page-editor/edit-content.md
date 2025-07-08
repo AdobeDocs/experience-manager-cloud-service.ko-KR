@@ -5,9 +5,9 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 34%
 
 ---
@@ -24,13 +24,17 @@ AEM 페이지 편집기는 페이지 콘텐츠를 작성하는 강력한 도구�
 1. 새 자산을 페이지로 끌어다 놓아 [추가](#adding-asset)합니다.
 1. 페이지에 이미 있는 [구성 요소를 바로 편집](#edit-in-place)하고 있습니다.
 
-AEM 페이지 편집기는 고급 기능에 대한 액세스 권한뿐만 아니라 이러한 작업을 수행하기 위한 직관적인 UI를 제공합니다.
+AEM 페이지 편집기는 고급 기능에 대한 액세스 권한을 제공하는 것 외에도 이러한 작업을 수행하기 위한 직관적인 UI를 제공합니다.
 
 또한 편집기에서 다음 작업을 수행하여 페이지에서 기존 콘텐츠를 구성할 수 있습니다.
 
 * [구성 요소 이동](#moving-components)
 * [구성 요소 레이아웃 편집](#editing-component-layout)
 * [구성 요소 상속 편집](#inherited-components)
+
+>[!NOTE]
+>
+>필요한 경우 프로젝트 팀이 편집기를 사용자 지정할 수 있습니다. 자세한 내용은 [페이지 작성 사용자 지정](/help/implementing/developing/extending/page-authoring.md)을 참조하십시오.
 
 ## 구성 요소 추가 {#adding-components}
 
