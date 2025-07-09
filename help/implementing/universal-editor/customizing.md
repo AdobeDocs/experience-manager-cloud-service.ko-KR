@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 
 ## [속성] 패널에서 구성 요소를 조건부로 표시 및 숨기기 {#conditionally-hide}
 
-일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 구성 요소 모델의 [필드](/help/implementing/universal-editor/field-types.md#fields)에 `condition` 특성을 추가하여 속성 패널에서 구성 요소를 숨길 수 있습니다.
+일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 구성 요소 모델의 `condition`필드[에 ](/help/implementing/universal-editor/field-types.md#fields) 특성을 추가하여 속성 패널에서 구성 요소를 숨길 수 있습니다.
 
 [JsonLogic 스키마](https://jsonlogic.com/)를 사용하여 조건을 정의할 수 있습니다. 조건이 true이면 필드가 표시됩니다. 조건이 false이면 필드가 숨겨집니다.
 
@@ -107,9 +107,7 @@ Adobe에서 호스팅하는 유니버설 편집기 서비스를 사용하지 않
 
 ## 사용자 지정 미리보기 URL {#custom-preview-urls}
 
-[편집기의 오른쪽 상단 도구 모음](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)에서 **페이지 열기** 단추를 클릭하면 열리는 `urn:adobe:aue:config:preview` 메타 구성을 통해 사용자 지정 미리 보기 URL을 지정할 수 있습니다.
-
-이 기능은 [WYSIWYG 작성 시 Edge Delivery Services를 사용하는](/help/edge/wysiwyg-authoring/authoring.md) 애플리케이션과 같이 특정 미리보기 요구 사항이 있는 애플리케이션에 특히 유용합니다.
+`urn:adobe:aue:config:preview`편집기의 오른쪽 상단 도구 모음&#x200B;**에서**&#x200B;페이지 열기[ 단추를 클릭하면 열리는 ](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) 메타 구성을 통해 사용자 지정 미리 보기 URL을 지정할 수 있습니다.
 
 이렇게 하려면 다음 예제와 같이 원하는 미리보기 URL을 계측된 앱의 메타 태그에 포함하기만 하면 됩니다.
 
