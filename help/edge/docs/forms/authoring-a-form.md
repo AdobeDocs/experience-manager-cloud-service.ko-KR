@@ -4,10 +4,12 @@ description: Adobe Experience Manager(AEM)에서 사용할 수 있는 다양한 
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager(AEM)는 매력적이고, 반응성이 뛰어나고, 역
 
 AEM은 인터랙티브하고 매력적인 양식을 만들기 위한 다양한 양식 작성 옵션을 제공합니다. 양식 작성 환경을 선택할 때 다음 요소를 고려하십시오.
 
-| ?? **고려 사항** | ?? **질문 내용** |
+| 📝 **고려 사항** | 💡 **질문할 내용** |
 |----------------------|--------------------|
 | **사용자 전문성** | 양식을 작성하는 사람은 개발자, 비즈니스 사용자, 콘텐츠 작성자 중 누구입니까? |
 | **양식 복잡성** | 양식에 고급 규칙, 동적 섹션 또는 통합이 필요합니까? |
@@ -81,25 +83,25 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 | **CAPTCHA 지원** | reCAPTCHA v2/Enterprise, hCaptcha(EA), Turnstile(EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 사용자 정의 통합 필요 |
 | **제출 기능** | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | 스프레드시트만 | 사용자 정의 API 엔드포인트 |
 | **데이터 스키마** | FDM, 사용자 정의 | FDM, 사용자 정의 | FDM, 사용자 정의 | 사용자 정의 | 사용자 정의 |
-| **미리 채우기** | ✅ | ✅ | ?? (마법사 사용) | ✅ | 사용자 정의 구현 |
+| **미리 채우기** | ✅ | ✅ | 💡(마법사를 통해) | ✅ | 사용자 정의 구현 |
 | **조각** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **시각적 규칙 편집기** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **현지화** | ✅ | ✅ | ?? (Sites 사용) | ℹ️ (Excel - 수동, Google Sheets 함수) | 사용자 정의 구현 |
-| **데이터 스키마 (데이터 트리)** | ✅ | ✅ | ?? (UI 확장 기능 사용) | ❌ | 사용자 정의 구현 |
+| **현지화** | ✅ | ✅ | 💡(사이트를 통해) | ℹ️ (Excel - 수동, Google Sheets 함수) | 사용자 정의 구현 |
+| **데이터 스키마 (데이터 트리)** | ✅ | ✅ | 💡(UI 확장 사용) | ❌ | 사용자 정의 구현 |
 | **템플릿 지원** | ✅ | ✅ | 초기 콘텐츠만 제공, 정책 없음 | ❌ | 사용자 정의 구현 |
 | **포털** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR 작성** | ✅ | ✅ | ?? (Derlina 사용) | ❌ | ❌ |
-| **DoR 생성** | ✅ | ✅ | ?? (FORMS-2475 New) | ❌ | ❌ |
+| **DoR 작성** | ✅ | ✅ | 💡(Derlina를 통해) | ❌ | ❌ |
+| **DoR 생성** | ✅ | ✅ | 💡(FORMS-2475 신규) | ❌ | ❌ |
 | **테마** | ✅ | ✅ | ℹ️ (프로젝트 수준에서) | ℹ️ (프로젝트 수준에서) | 사용자 정의 구현 |
 | **사용자 정의 구성 요소** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB 및 사용자 정의 함수** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **조각 참조** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Sign 통합** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **RTL 지원** | ❌ | ✅ | ?? | ?? | 사용자 정의 구현 |
+| **RTL 지원** | ❌ | ✅ | 💡 | 💡 | 사용자 정의 구현 |
 | **실험** | ❌ | ❌ | ✅ | ✅ | 사용자 정의 구현 |
 | **Workfront를 통한 작업 관리** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **개인화 확장 기능** | ❌ | ❌ | ?? | ❌ | 사용자 정의 구현 |
-| **편집기 사용자 정의** | ❌ | ❌ | ✅ (UI 확장 기능 사용) | ❌ | 사용자 정의 구현 |
+| **개인화 확장 기능** | ❌ | ❌ | 💡 | ❌ | 사용자 정의 구현 |
+| **편집기 사용자 정의** | ❌ | ❌ | ✅(UI 확장 사용) | ❌ | 사용자 정의 구현 |
 | **제출 액션** | ✅ | ✅ | ✅ | 스프레드시트만 | 사용자 정의 구현 |
 
 
