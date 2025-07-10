@@ -3,7 +3,8 @@ title: 고성능 Forms 디자인 모범 사례
 description: AEM Forms을 사용하여 사용자 친화적이고, 액세스 가능하고, 성과가 좋은 양식을 만드는 데 필요한 필수 모범 사례에 대해 알아봅니다. 데이터 품질, 사용자 경험 및 제출 성공률을 개선합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
