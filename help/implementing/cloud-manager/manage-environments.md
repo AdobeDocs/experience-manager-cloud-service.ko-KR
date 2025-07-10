@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 42%
+source-wordcount: '2474'
+ht-degree: 41%
 
 ---
 
@@ -130,26 +130,29 @@ ht-degree: 42%
 
 프로그램의 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 프로비저닝하려면 추가 게시 지역을 환경에 추가하기 전에 이 프로비저닝을 수행하는 것이 좋습니다. 그렇지 않은 경우, 추가 게시 지역의 트래픽이 기본 지역의 프록시로 이동합니다.
 
-## 환경 세부 정보 액세스 {#viewing-environment}
+## 환경 세부 정보 보기 {#viewing-environment}
 
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 환경 세부 정보에 액세스하려면 다음 중 하나를 수행하십시오.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 환경의 세부 정보를 보려는 프로그램을 클릭합니다.
 
-   * **개요** 페이지의 왼쪽 메뉴에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다.
+1. 다음 중 하나를 수행하여 프로그램의 모든 환경을 나열합니다.
 
-   ![환경 탭](assets/environments-tab2.png)
+   * 왼쪽 메뉴에서 **서비스** 아래의 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경**&#x200B;을 클릭합니다.
 
-   * **환경** 카드에서 ![워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **모두 표시**&#x200B;를 클릭합니다.
+   ![환경 탭](assets/environments-1.png)
 
-     ![모두 표시 옵션](assets/environment-showall.png)
+   * 왼쪽 메뉴에서 **프로그램** 아래의 **개요**&#x200B;를 클릭한 다음 **환경** 카드에서 ![워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **모두 표시**&#x200B;를 클릭합니다.
 
-   **환경** 페이지가 열리고 프로그램에 대한 모든 환경이 나열됩니다.
+     ![모두 표시 옵션](assets/environments-2.png)
 
-   ![환경 탭](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >**환경** 카드에는 세 가지 환경만 나열됩니다. 카드의 **모두 표시**&#x200B;를 클릭하면 프로그램의 *모두* 환경을 볼 수 있습니다.
 
 1. 환경 페이지에서 다음 중 하나를 수행합니다.
 
-   * 목록에서 환경을 클릭하여 세부 정보를 표시합니다.
+   * 세부 정보를 보려면 목록에서 환경을 클릭합니다.
 
    ![환경 세부 정보](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ ht-degree: 42%
 
    ![환경 세부 정보 보기](assets/view-environment-details.png)
 
->[!NOTE]
->
->**환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 카드에서 **모두 표시**&#x200B;를 클릭하십시오.
+
+## 환경의 콘텐츠 복원(Alpha) {#restore-environment}
+
+[AEM as a Cloud Service에서 콘텐츠 복원](/help/operations/restore.md)을 참조하세요.
+
 
 ### 미리보기 서비스 액세스 {#access-preview-service}
 
@@ -240,7 +245,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 >[!NOTE]
 > 2024년 현재, 개발 인스턴스 및 일부 샌드박스 프로그램은 이미 자동으로 업데이트되므로 업데이트를 수동으로 관리할 필요가 없습니다. 이 전환으로 인해 프로그램의 _일부_&#x200B;에서는 개발 인스턴스에 대해 환경을 수동으로 업데이트하는 옵션을 사용할 수 없습니다.
 
-**업데이트** 옵션은 특정 개발 및 샌드박스 환경에 대해 **환경** 카드에서 사용할 수 있습니다. **업데이트**&#x200B;에 액세스하려면 환경 옆에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하세요.
+**업데이트** 옵션은 특정 개발 및 샌드박스 환경에 대해 **환경** 카드에서 사용할 수 있습니다. ![업데이트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)에 액세스하려면 환경 옆에 있는 **추가 아이콘**&#x200B;을 클릭하세요.
 
 ![환경 카드의 업데이트 옵션](assets/environ-update2.png)
 
@@ -299,9 +304,9 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 **개발자** 역할을 가진 사용자만 **Developer Console**&#x200B;에 액세스할 수 있습니다. 단, 샌드박스 프로그램의 경우 샌드박스 프로그램에 대한 액세스 권한이 있는 모든 사용자가 **Developer Console**&#x200B;에 액세스할 수 있습니다.
 
-자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
+자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
 
-이 옵션은 개별 환경의 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭할 때 **개요** 창의 **환경** 탭에서도 사용할 수 있습니다.
+이 옵션은 개별 환경의 **자세히 아이콘**&#x200B;을 클릭할 때 **개요** 창의 ![환경](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 탭에서도 사용할 수 있습니다.
 
 ## 로컬에 로그인 {#login-locally}
 
@@ -327,7 +332,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 IP 허용 목록은 Cloud Manager에서 Sites 프로그램의 작성자, 게시 및 미리보기 서비스를 위해 지원됩니다.
 
-IP 허용 목록을 관리하려면 프로그램의 **개요** 페이지에서 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경** 페이지로 이동합니다. 세부 정보를 관리하려면 개별 환경을 클릭합니다.
+IP 허용 목록을 관리하려면 프로그램의 ![개요](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 페이지에서 **데이터 아이콘** **환경** 페이지로 이동합니다. 세부 정보를 관리하려면 개별 환경을 클릭합니다.
 
 ### IP 허용 목록 적용 {#apply-ip-allow-list}
 

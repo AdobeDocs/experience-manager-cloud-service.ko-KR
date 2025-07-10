@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager은 조직 또는 테넌트가 사용할 수 있는 Adobe Experienc
 
 >[!IMPORTANT]
 >
->라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
 >
 >프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards)을 참조하십시오.
 
@@ -34,7 +34,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 >라이선스 대시보드를 보려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)의 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭합니다. 이 작업을 수행하면 탭이 표시됩니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 ![Cloud Manager 헤더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)의 [메뉴 아이콘 표시](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)를 클릭합니다. 이 작업을 수행하면 탭이 표시됩니다.
 1. 탭에서 **라이선스** 옵션을 클릭합니다.
 
 ![라이선스 대시보드](assets/license-dashboard.png)
@@ -59,7 +59,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 
@@ -77,6 +77,8 @@ Cloud Manager의 라이선스 영역에 있는 **사용 세부 정보 보기** �
 창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
 
 창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
+
+대시보드 페이지의 오른쪽 상단 모서리에서 **보고서 다운로드**&#x200B;를 클릭하여 데이터를 CSV 파일로 내보낼 수 있습니다. 이 다운로드를 통해 사용 트렌드를 간편하게 분석하고 공유할 수 있습니다.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

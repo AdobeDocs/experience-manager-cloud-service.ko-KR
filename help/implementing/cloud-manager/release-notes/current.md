@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.7
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 66%
+source-wordcount: '1198'
+ht-degree: 60%
 
 ---
 
@@ -37,34 +37,50 @@ AEM as a Cloud Service의 Cloud Manager 2025.7.0 릴리스 일자는 2025년 7�
 
   ![사이트 사용 세부 정보 페이지](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)를 참조하십시오.
+
 ## 얼리 어답터 프로그램 {#private-beta-program}
 
 Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 일찍 액세스하십시오.
 
 현재 사용할 수 있는 영업 기회는 다음과 같습니다.
 
-
 ### 파이프라인 배포를 위한 원클릭 롤백 {#one-click-rollback}
 
-최신 코드가 예상대로 작동하지 않는 경우 이전 배포로 빠르게 되돌립니다. 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요가 없습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+최신 고객 소스 코드가 예상대로 작동하지 않을 경우 이전 배포로 빠르게 되돌립니다. 전체 파이프라인을 다시 실행하거나 수동으로 커밋을 되돌릴 필요가 없습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *선택한 환경에 대한&#x200B;**복원**>**이전 코드 배포**옵션을 표시하는 위의 환경 카드.*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![배포된 이전 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+***배포된 이전 코드 복원**대화 상자에서 현재 배포된 버전과 복원할 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+
+
+![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager은 환경을 이전 빌드로 되돌리고, 콘텐츠와 구성을 그대로 유지하며, 배포가 완료될 때까지 환경을&#x200B;**복원**합니다.*
+
+
+![사용 중인 Source 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에 표시된 환경 세부 정보 보기에는 사용 중인 활성 소스 코드 버전도 표시됩니다.*
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [restorecode@adobe.com](mailto:restorecode@adobe.com)(으)로 전자 메일을 보내세요.
+
+[AEM as a Cloud Service의 콘텐츠 복원](/help/operations/restore.md)도 참조하세요.
+
+
+### 전문화된 테스트 환경 {#specialized-test-environment}
+
+이제 Cloud Manager는 **전문화된 테스트 환경**&#x200B;이라는 새로운 환경 유형의 추가를 지원합니다. 이 환경은 팀이 라이브로 전환하기 전에 거의 프로덕션 환경에서 기능을 검증할 수 있도록 설계되었습니다. 이 환경 유형은 *프로덕션 + 스테이징*, *개발* 또는 *신속한 개발* 환경과는 다르며 고급 검증 시나리오를 실행할 수 있는 집중 공간을 제공합니다.
+
+최근 향상된 기능: 이제 더 간단하고 직관적인 워크플로우를 통해 비프로덕션 파이프라인에서 특별한 테스트 환경을 구성할 수 있습니다. 간소화된 설정은 완료 시간을 단축하고 구성 오류를 줄입니다.
+
+[전문화된 테스트 환경 추가](/help/implementing/cloud-manager/specialized-test-environment.md)를 참조하십시오.
+
+![전문화된 테스트 환경 라디오 버튼이 선택된 환경 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)에 이메일을 보내 주십시오.
+
+
+### 자체 Git 가져오기(BYOG) - Azure DevOps 지원 포함 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -105,7 +121,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
