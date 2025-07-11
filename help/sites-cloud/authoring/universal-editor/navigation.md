@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 26%
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
