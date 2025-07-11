@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service Assets에서 관리되는 사용자/프로덕션 콘텐�
 
 샌드박스 프로그램 및 해당 작성 프로덕션 환경에 Content Hub에 대한 얼리 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 얼리 액세스 프로그램에 대해 자세히 알아보려면 Adobe 계정 팀에 문의하십시오.
 
-Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 스테이징/개발 환경은 2025년 3월에 출시될 예정입니다.
+Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 단계/개발 환경에 대한 예상 가용성은 2025년 3월입니다.
 
 ## Content Hub에 로그인한 후 자산이 표시되지 않는 이유는 무엇입니까? {#no-assets-in-content-hub}
 
@@ -97,3 +97,42 @@ Adobe는 Adobe 지원 티켓을 생성하여 사용할 수 있는 Brand Portal�
 ## Content Hub에서 제품 설정/구성 옵션이 표시되지 않는 이유는 무엇입니까? {#ui-configuration-option-missing}
 
 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스하려면 [Content Hub 관리자](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)여야 합니다. Adobe Admin Console의 프로덕션 작성자 인스턴스에서 AEM 관리자 제품 프로필에 할당되었지만 여전히 구성 옵션이 표시되지 않는 경우, AEM 관리자 제품 프로필의 이름이 변경되지 않았는지 확인합니다. 자세한 내용은 [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)을 참조하십시오.
+
+## Content Hub은 Brand Portal의 제한을 어떻게 해결합니까? {#content-hub-brand-portal-comparison}
+
+
+아래 테이블에는 두 솔루션의 주요 차이점이 요약되어 있습니다.
+
+| 영역 | 기능 | Content Hub | Brand Portal |
+|---|---|----|----|
+| 배포 경험 구성 | 필터, 에셋 세부 사항 및 에셋 추가 페이지에 대한 메타데이터 구성 | ✓ | − |
+|  | 포털에서 외부 링크 구성 | ✓ | − |
+|  | 배너 메시지 구성 | ✓ | ✓ |
+|  | 브랜딩용 배너 이미지 구성 | ✓ | ✓ |
+|  | 브랜딩 요구 사항에 따라 UI에 대한 기본 및 보조 색상 구성 | ✓ | − |
+| DAM에서 에셋 공유 | DAM에서 승인된 원래 에셋 공유 | ✓ | ✓ |
+|  | 승인된 자산 변경 사항이 자동으로 동기화됨 | ✓ | − |
+| 검색 및 필터 | 동적 필터(표시된 에셋에 따라 옵션이 동적으로 표시됨) | ✓ | − |
+|  | 검색 기록 | ✓ | − |
+| 에셋 업로드 | 로컬 드라이브 | ✓ | ✓ |
+|  | 자산을 업로드하는 동안 구성 가능한 메타데이터 추가 | ✓ | − |
+| 다운로드 및 렌디션 | 원본 에셋 다운로드 | ✓ | ✓ |
+|  | DAM에서 정적 렌디션 공유 및 다운로드 | ✓ | ✓ |
+|  | 동적 렌디션 다운로드(사전 설정 및 스마트 자르기) | ✓ | ✓ |
+|  | 만료된 에셋의 보기 및 다운로드를 제한하는 기능 | ✓ | − |
+| 공유 및 컬렉션 연결 | 로그인한 사용자를 위한 링크 공유 | ✓ | ✓ |
+|  | 공용 컬렉션 | ✓ | ✓ |
+|  | 컬렉션 내 검색 | ✓ | − |
+|  | 익명 링크 공유 | ✓ | ✓ |
+|  | 비공개 컬렉션 | ✓ | ✓ |
+| 권한 | ACL 기반 권한 | − | ✓ |
+|  | 속성 기반 액세스 제어 | ✓ | − |
+| Express 통합 | Adobe Express에서 Content Hub Assets 편집 및 DAM에 저장 | ✓ | − |
+| 대시보드 및 보고서 | Insights 대시보드 | ✓ | − |
+| UI 확장성 | 자산 세부 사항 페이지의 사용자 지정 확장 지점 | 제한된 가용성 | − |
+| 곧 출시될 혁신 | 사용자가 즐겨찾는 컬렉션 | ✓ | − |
+|  | 책임자에 의해 고정된 컬렉션 | ✓ | − |
+|  | 의미 체계 검색 | ✓ | − |
+|  | 지역화된 검색 및 메타데이터 표시 | ✓ | − |
+
+
