@@ -4,9 +4,9 @@ description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 45%
 
 ---
@@ -52,6 +52,6 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 * `data-aue-type`이(가) 설정된 태그에는 직접 필요하지 않습니다.
 * 설정되지 않은 경우 가장 가까운 부모의 `data-aue-resource` 특성이 사용됩니다.
 
-`data-aue-prop`은(는) 선택적 컨테이너인 컨테이너를 제외하고 컨텍스트에서 편집을 수행할 때마다 필요합니다(컨테이너가 콘텐츠 조각이고 prop이 다중 참조 필드를 가리키는 경우).
+`data-aue-prop`은(는) 선택적 컨테이너인 컨테이너를 제외하고 컨텍스트에서 편집할 때마다 필요합니다(컨테이너가 콘텐츠 조각이고 prop이 다중 참조 필드를 가리키는 경우).
 
 * `data-aue-prop`은(는) `data-aue-resource`의 기본 키에 대해 업데이트할 특성입니다.

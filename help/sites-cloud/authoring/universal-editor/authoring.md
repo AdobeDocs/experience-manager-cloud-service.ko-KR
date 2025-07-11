@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 19%
 
 ---
@@ -129,6 +129,8 @@ ht-degree: 19%
 1. 그런 다음 속성 패널에서 추가 아이콘을 선택합니다.
 
    ![추가 아이콘 선택](assets/add-icon.png)
+
+1. 컨테이너에 대해 둘 이상의 구성 요소가 허용되는 경우 드롭다운에서 삽입할 구성 요소를 선택합니다. 하나의 구성 요소만 허용되는 경우 자동으로 삽입됩니다.
 
 구성 요소가 컨테이너에 삽입되며 편집기에서 편집할 수 있습니다.
 
@@ -301,7 +303,7 @@ ht-degree: 19%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 변형 생성 {#generate-variations}
 

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1820'
 ht-degree: 26%
 
 ---
@@ -48,7 +48,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 >[!NOTE]
 >
->[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 범용 편집기 또는 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다.
+>[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 범용 편집기 또는 [페이지 편집기](/help/sites-cloud/authoring/page-editor/templates.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/page-editor/introduction.md)에 적합한 편집기를 엽니다.
 
 ### 직접 액세스 {#accessing-directly}
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -154,6 +154,10 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 [로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 설정 아이콘을 선택합니다.
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>대부분의 경우 이 버튼은 제한된 값이므로 기본적으로 숨겨집니다. 필요한 경우 Adobe ID과 연결된 이메일 주소에서 Adobe Customer Success Manager에게 이메일을 보내십시오.
 
 #### 에뮬레이터 설정 {#emulator}
 

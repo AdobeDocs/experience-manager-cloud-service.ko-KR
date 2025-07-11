@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 11%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 11%
 ]
 ```
 
-`fields` 배열을 정의하는 방법에 대한 자세한 내용은 이 문서의 **[필드](#fields)** 섹션을 참조하십시오.
+**[배열을 정의하는 방법에 대한 자세한 내용은 이 문서의](#fields)**&#x200B;필드`fields` 섹션을 참조하십시오.
 
 계측을 통해 [구성 요소 정의](#component-definition) 또는 [을(를) 사용하는 두 가지 방법으로 구성 요소에 모델을 연결할 수 있습니다.](#instrumentation)
 
@@ -49,7 +49,7 @@ ht-degree: 11%
 
 이 방법이 모델을 컴포넌트에 연결하는 기본 방법입니다. 이렇게 하면 구성 요소 정의에서 링크를 중앙에 유지할 수 있으며 컨테이너 간에 구성 요소를 드래그할 수 있습니다.
 
-`component-definition.json` 파일의 `components` 배열에서 구성 요소 개체에 `model` 속성을 포함하기만 하면 됩니다.
+`model` 파일의 `components` 배열에서 구성 요소 개체에 `component-definition.json` 속성을 포함하기만 하면 됩니다.
 
 자세한 내용은 [구성 요소 정의](/help/implementing/universal-editor/component-definition.md) 문서를 참조하십시오.
 
@@ -101,7 +101,7 @@ ht-degree: 11%
 | `readOnly` | `boolean` | 필드가 읽기 전용임 | 아니요 |
 | `hidden` | `boolean` | 기본적으로 필드가 숨겨져 있음 | 아니요 |
 | `condition` | `RulesLogic` | [조건](/help/implementing/universal-editor/customizing.md#conditionally-hide)을(를) 기반으로 필드를 표시하거나 숨기는 규칙 | 아니요 |
-| `multi` | `boolean` | 필드가 다중 필드입니까 | 아니요 |
+| `multi` | `boolean` | 필드가 다중 필드입니까<br/>속성 패널의 다중 필드에는 컨테이너를 중첩할 수 없습니다 | 아니요 |
 | `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
 | `raw` | `unknown` | 구성 요소에서 사용할 수 있는 원시 데이터 | 아니요 |
 
@@ -289,7 +289,7 @@ AEM 컨텐츠 구성 요소 유형을 사용하면 AEM 컨텐츠 선택기를 �
 
 #### 컨테이너 {#container}
 
-컨테이너 구성 요소 유형을 사용하면 다중 필드 지원을 포함한 구성 요소를 그룹화할 수 있습니다. 추가 구성을 제공합니다.
+컨테이너 구성 요소 유형을 사용하면 다중 필드 지원을 포함한 구성 요소를 그룹화할 수 있습니다. 추가 구성을 제공합니다. 속성 패널의 다중 필드에는 컨테이너 중첩이 허용되지 않습니다
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
