@@ -49,15 +49,15 @@ Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스
 
 최신 고객 소스 코드가 예상대로 작동하지 않을 경우 이전 배포로 빠르게 되돌립니다. 전체 파이프라인을 다시 실행하거나 수동으로 커밋을 되돌릴 필요가 없습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *선택한 환경에 대한&#x200B;**복원**>**이전 코드 배포**옵션을 표시하는 위의 환경 카드.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *선택한 환경에 대한&#x200B;**복원**>**이전 코드 배포**&#x200B;옵션을 표시하는 위의 환경 카드.*
 
 
 ![배포된 이전 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***배포된 이전 코드 복원**대화 상자에서 현재 배포된 버전과 복원할 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***배포된 이전 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원할 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager은 환경을 이전 빌드로 되돌리고, 콘텐츠와 구성을 그대로 유지하며, 배포가 완료될 때까지 환경을&#x200B;**복원**합니다.*
+*Cloud Manager은 환경을 이전 빌드로 되돌리고, 콘텐츠와 구성을 그대로 유지하며, 배포가 완료될 때까지 환경을&#x200B;**복원**&#x200B;합니다.*
 
 
 ![사용 중인 Source 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에 표시된 환경 세부 정보 보기에는 사용 중인 활성 소스 코드 버전도 표시됩니다.*
@@ -123,7 +123,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 

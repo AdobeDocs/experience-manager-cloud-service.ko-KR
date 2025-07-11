@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
+>&#x200B;>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
