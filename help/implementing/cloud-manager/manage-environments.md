@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 41%
+source-wordcount: '2488'
+ht-degree: 40%
 
 ---
 
@@ -161,9 +161,13 @@ ht-degree: 41%
    ![환경 세부 정보 보기](assets/view-environment-details.png)
 
 
-## 환경의 콘텐츠 복원(Alpha) {#restore-environment}
+## 환경의 콘텐츠 복원 {#restore-environment}
 
 [AEM as a Cloud Service에서 콘텐츠 복원](/help/operations/restore.md)을 참조하세요.
+
+## 배포된 이전 코드 복원 {#restore-previous-code-deployed}
+
+[AEM as a Cloud Service에 배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 참조하세요.
 
 
 ### 미리보기 서비스 액세스 {#access-preview-service}
@@ -304,7 +308,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 **개발자** 역할을 가진 사용자만 **Developer Console**&#x200B;에 액세스할 수 있습니다. 단, 샌드박스 프로그램의 경우 샌드박스 프로그램에 대한 액세스 권한이 있는 모든 사용자가 **Developer Console**&#x200B;에 액세스할 수 있습니다.
 
-자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
+자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
 
 이 옵션은 개별 환경의 **자세히 아이콘**&#x200B;을 클릭할 때 **개요** 창의 ![환경](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 탭에서도 사용할 수 있습니다.
 

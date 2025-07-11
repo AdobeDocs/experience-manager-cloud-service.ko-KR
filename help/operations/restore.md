@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Service 콘텐츠 복원
+title: AEM as a Cloud Service에서 컨텐츠 복원
 description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원하는 방법에 대해 알아봅니다.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 32%
+source-wordcount: '1359'
+ht-degree: 29%
 
 ---
 
 
-# AEM as a Cloud Service의 콘텐츠 복원 {#content-restore}
+# AEM as a Cloud Service에서 콘텐츠 복원 {#content-restore}
 
 Cloud Manager을 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원할 수 있습니다.
 
@@ -20,7 +20,7 @@ Cloud Manager을 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 �
 
 Cloud Manager의 셀프서비스 복원 프로세스는 Adobe 시스템 백업에서 데이터를 복사하고 원래 환경으로 복원합니다. 복원 작업은 손실, 손상 또는 실수로 삭제된 데이터를 원래 상태로 반환하기 위해 수행됩니다.
 
-복원 프로세스는 콘텐츠에만 영향을 미치며 코드 및 AEM 버전은 변경되지 않습니다. 언제든지 개별 환경의 복원 작업을 시작할 수 있습니다.
+복원 프로세스는 콘텐츠에만 영향을 미치며 코드 및 AEM 버전은 변경되지 않습니다. 언제든지 개별 환경의 복원 작업을 시작할 수 있습니다. (새 파이프라인 실행을 시작하지 않고도 이전에 배포된 소스 코드를 쉽고 빠르게 복원해야 하는 경우 [배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 사용할 수 있습니다.)
 
 Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업을 제공합니다.
 
@@ -87,7 +87,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
      >
      >**환경** 카드에는 세 가지 환경만 나열됩니다. 카드의 **모두 표시**&#x200B;를 클릭하면 프로그램의 *모두* 환경을 볼 수 있습니다.
 
-1. 환경 테이블에서 복원할 콘텐츠가 있는 환경의 오른쪽에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **콘텐츠 복원**&#x200B;을 클릭합니다.
+1. 환경 테이블에서 복원할 콘텐츠가 있는 환경의 오른쪽에 있는 ![기타 아이콘 또는 줄임표 메뉴 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **콘텐츠 복원**&#x200B;을 클릭합니다.
 
    ![줄임표 메뉴에서 콘텐츠 복원 옵션](/help/operations/assets/environments-ellipsis-menu.png)
 
