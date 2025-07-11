@@ -34,7 +34,7 @@ Content Hub 기능 릴리스(2025.6.0)의 릴리스 날짜는 2025년 6월 26일
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## 5월 릴리스 기능 {#may-release-features}
 
@@ -64,7 +64,7 @@ Content Hub 5월 릴리스에는 다음 기능이 포함됩니다.
 
 * 중복 횟수를 줄여 자산 무결성을 향상시킵니다. 폴더 기반 권한에서는 동일한 자산이 다른 그룹과 공유될 때 중복이 필요합니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### UI 브랜딩 {#ui-branding}
 
@@ -72,7 +72,7 @@ Content Hub 5월 릴리스에는 다음 기능이 포함됩니다.
 
 ![UI 브랜딩](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### 공개 링크 공유 {#public-link-sharing}
 
@@ -80,13 +80,13 @@ Content Hub 5월 릴리스에는 다음 기능이 포함됩니다.
 
 ![UI 브랜딩](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### 여러 자산을 ZIP으로 다운로드 {#download-multiple-assets-as-zip}
 
 이제 Content Hub를 사용하면 선택한 자산과 해당 렌디션을 별도의 파일이 아닌 ZIP 파일로 다운로드하여 파일 관리를 간소화할 수 있습니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Content Hub의 Dynamic Media 렌디션 {#dynamic-media-renditions}
 
@@ -94,4 +94,4 @@ Content Hub 사용자 인터페이스 내에서 다운로드할 수 있는 모�
 
 &#x200B;![Dynamic Media 렌디션](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
