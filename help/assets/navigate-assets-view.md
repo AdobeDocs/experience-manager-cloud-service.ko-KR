@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 73%
 
 ---
 
@@ -40,11 +40,8 @@ ht-degree: 72%
 * **최근에 본 항목**: 최근에 미리 본 자산 목록입니다. [!DNL Assets view]는 미리보기하는 자산만 표시합니다. 저장소 파일 또는 폴더를 탐색할 때 스크롤한 자산은 표시되지 않습니다.
 * [컬렉션](/help/assets/manage-collections-assets-view.md): 컬렉션은 에셋, 폴더 또는 Adobe Experience Manager Assets 보기에 있는 다른 컬렉션의 집합입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다. 폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다. 사용자와 여러 컬렉션을 공유할 수 있습니다. 각 컬렉션에는 자산에 대한 참조가 포함되어 있습니다. 자산의 참조 무결성은 컬렉션에 간에 유지됩니다.
 
-<!--
+* [인사이트](/help/assets/manage-reports-assets-view.md#view-live-statistics): [!DNL Assets view]의 대시보드에서 실시간 인사이트를 볼 수 있습니다. Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets 보기 환경에 대한 실시간 데이터를 볼 수 있습니다. 지난 30일 동안 또는 지난 12개월 동안의 실시간 이벤트 지표를 볼 수 있습니다.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
-
--->
 * **휴지통**: 루트 **[!UICONTROL Assets]** 폴더에서 삭제된 자산을 나열합니다. 휴지통 폴더에서 자산을 선택하여 원래 위치로 복원하거나 영구적으로 삭제할 수 있습니다. 키워드를 지정하거나 자산 상태, 파일 유형, MIME 유형, 이미지 크기, 자산 생성, 수정 및 만료 일자와 같은 필터를 적용할 수 있을 뿐만 아니라 현재 사용자가 폐기한 자산을 기준으로 필터링할 수도 있습니다. 또한 사용자 정의 필터를 적용하여 휴지통 폴더 내에서 적절한 자산을 검색할 수도 있습니다. 표준 및 사용자 지정 필터를 사용하는 방법에 대한 자세한 내용은 [Assets 보기에서 에셋을 검색하는 방법](/help/assets/search-assets-view.md)을 참조하세요.
 * **설정**: 메타데이터 양식, 보고서, 분류 관리 등의 **설정**&#x200B;을 사용하여 Assets 보기의 다양한 옵션을 구성할 수 있습니다.
 
@@ -100,7 +97,7 @@ Other use cases after previewing.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 >[!MORELIKETHIS]
 >

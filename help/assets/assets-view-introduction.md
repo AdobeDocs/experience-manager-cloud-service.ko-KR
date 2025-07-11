@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '966'
 ht-degree: 69%
 
 ---
@@ -67,17 +67,15 @@ Assets 보기는 관리 보기에서 사용할 수 없는 다음과 같은 주�
 
 [![안내서 참조](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-<!--
 
-### Insights to take data-driven decisions {#insights-data}
+### 데이터 기반 의사 결정을 위한 인사이트 {#insights-data}
 
-To keep pace with content velocity, actionable insights are essential. The Assets view offers advanced insights within the My Workspace, providing valuable data on asset performance, audience usage, and engagements. Marketers can make data-driven decisions, optimize content strategies, and refine their downstream delivery to achieve optimal results. With access to meaningful insights, businesses can stay ahead of the competition and drive exceptional outcomes.
+콘텐츠 속도에 보조를 맞추려면 실행 가능한 인사이트가 필수적입니다. Assets 보기는 My Workspace 내에 고급 통찰력을 제공하며 에셋 성능, 대상 사용 및 참여에 대한 중요한 데이터를 제공합니다. 마케터는 데이터 기반 의사 결정을 내리고, 콘텐츠 전략을 최적화하고, 다운스트림 게재를 개선하여 최적의 결과를 얻을 수 있습니다. 의미 있는 인사이트에 액세스할 수 있는 기업은 경쟁에서 앞서 나가고 우수한 결과를 창출할 수 있습니다.
 
-![Insights overview](assets/insights-overview.gif)
+![인사이트 개요](assets/insights-overview.gif)
 
-[![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![안내서 참조](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
--->
 
 ### 공동 작업을 가속화하는 Adobe Photoshop Express 통합 {#accelerate-collaboration}
 
