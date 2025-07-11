@@ -4,9 +4,9 @@ description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4225'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -303,13 +303,13 @@ When you select a form model, configure Document of Record using options availab
 
 * 기본 템플릿에서 루트 하위 양식의 이름을 `AF_METATEMPLATE`(으)로 지정하고 마스터 페이지의 이름을 `AF_MASTERPAGE`(으)로 지정합니다.
 
-* `AF_METATEMPLATE` 루트 하위 양식 아래에 있는 이름이 `AF_MASTERPAGE`인 마스터 페이지는 머리글, 바닥글 및 스타일 정보를 추출할 때 선호됩니다.
+* `AF_MASTERPAGE` 루트 하위 양식 아래에 있는 이름이 `AF_METATEMPLATE`인 마스터 페이지는 머리글, 바닥글 및 스타일 정보를 추출할 때 선호됩니다.
 
 * `AF_MASTERPAGE`이(가) 없으면 기본 템플릿에 있는 첫 번째 마스터 페이지가 사용됩니다.
 
 **필드에 대한 스타일 규칙**
 
-* 기록 문서의 필드에 스타일을 적용하려면 기본 서식 파일에서 `AF_METATEMPLATE` 루트 하위 양식 아래의 `AF_FIELDSSUBFORM` 하위 양식에 있는 필드를 제공합니다.
+* 기록 문서의 필드에 스타일을 적용하려면 기본 서식 파일에서 `AF_FIELDSSUBFORM` 루트 하위 양식 아래의 `AF_METATEMPLATE` 하위 양식에 있는 필드를 제공합니다.
 
 * 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이러한 필드는 `AF_<name of field in all caps>_XFO` 명명 규칙을 따라야 합니다. 예를들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`이어야 합니다.
 
@@ -395,6 +395,14 @@ When you select a form model, configure Document of Record using options availab
    ```
 
 1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
+
+>[!NOTE]
+> 
+> 기록 문서에 사용자 정의 양식 제목을 표시하려면 **기록 문서 속성** > **기본 페이지 속성**&#x200B;에서 **사용자 정의 양식 제목**&#x200B;을 편집하십시오. 이 사용자 정의 제목:
+> 
+> * 생성된 PDF의 헤더에 표시됩니다.
+> * PDF 문서 속성에 제목으로 표시됩니다.
+> * PDF이 열릴 때 초기 보기 제목으로 표시됩니다.
 
 ## 적응형 양식 편집기의 기록 지원 문서 {#dor-support-in-adaptiveform}
 

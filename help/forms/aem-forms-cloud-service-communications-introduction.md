@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 34%
+source-wordcount: '2663'
+ht-degree: 28%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 34%
 
 > **버전 가용성**
 >
-> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ko)
+> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: 이 문서
 
 ## 소개
@@ -44,7 +44,7 @@ AEM Forms as a Cloud Service의 커뮤니케이션 API를 통해 비즈니스 �
 
 ## 문서 생성
 
-통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터(XML)와 결합하여 PS, PCL, DPL, IPL, ZPL 등 PDF 및 인쇄 형식으로 문서를 생성하는 데 도움이 됩니다. 해당 API는 [XML 데이터](communications-known-issues-limitations.md#form-data)가 포함된 PDF 및 XFA 템플릿을 활용하여 배치 작업을 통해 주문형 단일 문서이나 여러 문서를 생성합니다.
+커뮤니케이션 문서 생성 API를 사용하면 템플릿(XFA 또는 PDF)과 고객 데이터(XML)를 결합하여 PDF, AFP(고급 함수 프레젠테이션) 및 PS, PCL, DPL, IPL, ZPL 등의 인쇄 형식으로 문서를 생성할 수 있습니다. 이러한 API는 [XML 데이터](communications-known-issues-limitations.md#form-data)와 함께 PDF 및 XFA 템플릿을 사용하여 요청 시 단일 문서를 생성하거나 일괄 작업을 사용하여 여러 문서를 생성합니다.
 
 일반적으로 [디자이너](use-forms-designer.md)를 사용하여 템플릿을 만들고 통신 API를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션은 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템에 전송하여 보관합니다. 일반적인 기본 제공 및 사용자 지정 워크플로는 다음과 같습니다.
 
@@ -54,14 +54,28 @@ AEM Forms as a Cloud Service의 커뮤니케이션 API를 통해 비즈니스 �
 
 ### 주요 문서 생성 기능
 
-#### PDF 문서 만들기 {#create-pdf-documents}
+#### PDF/AFP 전자 형식으로 문서 만들기
 
-문서 생성 API를 사용하여 양식 디자인과 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 일러스트레이션은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 모습을 보여 줍니다.
+문서 생성 API를 사용하여 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 또는 AFP 형식의 문서를 만들 수 있습니다. 출력은 비대화형 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로는 XML 양식 데이터를 양식 디자인과 병합하여 문서를 만드는 것입니다. 다음 일러스트레이션은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 모습을 보여 줍니다.
 
 ![PDF 문서 만들기](assets/outPutPDF_popup.png)
-그림: PDF 문서를 만드는 일반적인 워크플로
+그림: 문서를 만드는 일반적인 워크플로
 
-문서 생성 API는 생성된 PDF 문서를 반환합니다. 선택적으로 생성된 PDF를 Azure Blob Storage에 업로드할 수도 있습니다.
+아래 표에는 AFP 및 PDF 형식의 차이가 표시됩니다.
+
+| **기능** | **AFP(고급 함수 표시)** | **PDF(휴대용 문서 형식)** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **용도** | 트랜잭션 문서의 대량 인쇄 및 제작 | 범용 문서 공유 및 보기 |
+| **사용 사례** | 은행 거래 명세서, 청구서, 송장, 보험 서류 | 전자 책, 양식, 보고서, 이력서, 매뉴얼 |
+| **플랫폼 원본** | IBM에서 개발 | Adobe에서 개발 |
+| **구조** | 구조화된 필드 및 개체가 있는 페이지 지향 형식 | 페이지 지향적이지만 고정된 레이아웃 |
+| **편집 가능성** | 프로덕션 인쇄용으로 설계되었으며 거의 편집되지 않음 | 다양한 도구(예: Adobe Acrobat)로 편집할 수 있습니다 |
+| **파일 크기 및 성능** | 고속 인쇄 환경의 성능에 최적화 | 크기가 더 크고 벌크 출력에 덜 최적화될 수 있음 |
+| **상호 작용** | 최소 - 없음, 정적 페이지 | 양식, 링크, JavaScript과 같은 대화형 요소 지원 |
+| **출력 제어** | 프린터의 레이아웃을 세밀하게 제어합니다. | 화면 및 인쇄에 최적화된 시각적 레이아웃 |
+| **글꼴 및 그래픽** | 글꼴 및 리소스 참조를 사용합니다. 렌더러가 해석해야 합니다. | 글꼴 및 이미지를 파일에 직접 임베드 |
+
+문서 생성 API는 생성된 PDF 문서 또는 AFP 문서를 반환합니다. 선택적으로 생성된 PDF를 Azure Blob Storage에 업로드할 수도 있습니다.
 
 <span class="preview"> 문서 생성 API를 사용하여 생성된 PDF를 Azure Blob Storage 기능에 업로드하는 작업은 [얼리 어답터 프로그램](/help/forms/early-access-ea-features.md)에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 

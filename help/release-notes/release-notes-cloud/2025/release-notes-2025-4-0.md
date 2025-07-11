@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.4.0 �
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 97%
+source-wordcount: '1828'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 2025년 4월 릴리스 개요 비디오를 통해 2025.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464009?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ Dynamic Media Classic 보고 대시보드의 대역폭 탭은 2025년 4월부터
 
 ![자산 버전 비교](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 프리릴리스 기능
 
-* [범용 편집기 - 양식 조각](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): 이제 범용 편집기를 사용하여 적응형 양식의 양식 조각을 만들고 재사용할 수 있습니다. 이들 조각은 한 번 빌드하여 여러 양식에 적용할 수 있는 재사용 가능한 양식 섹션(예: 연락처 세부 정보, 동의 필드)입니다. 이 기능을 사용하면 양식 생성이 간소화되고, 일관성이 보장되며, 작성 효율성이 향상됩니다.
+* [적응형 Forms 및 양식 단편을 위한 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 이제 범용 편집기는 적응형 Forms 및 재사용 가능한 양식 단편을 모두 만들 수 있습니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 양식을 시각적으로 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능은 양식 생성을 가속화하고 일관성을 향상시키며 스팸 및 자동 남용에 대한 보호 기능을 향상시킵니다.
 
 * [SharePoint 문서 라이브러리 - 원본 파일 이름으로 첨부 파일 저장](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): 이제 SharePoint 문서 라이브러리에 양식 첨부 파일을 저장할 때 원본 파일 이름을 사용하여 저장할 수 있는 옵션이 추가되었습니다. 이 향상된 기능은 업로드된 파일의 식별과 관리를 간소화해 줍니다.
 
 * **규칙 편집기**:
    * [“When” 절에 클릭 이벤트가 포함된 바이너리 조건](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): 이제 규칙 편집기에서 버튼 클릭 이벤트(_클릭됨_)를 “When” 절 내의 다른 조건과 결합할 수 있습니다. 이를 통해 사용자 상호 작용 및 기타 요소를 기반으로 규칙 실행을 보다 정밀하게 제어할 수 있습니다. 참고: 여러 조건을 사용하는 경우에는 클릭 이벤트가 가장 먼저 나열된 조건이어야 합니다.
    * [필드 및 패널에 대한 유효성 검사 조건](/help/forms/rule-editor-core-components-usecases.md): 이제 규칙 편집기에 _IsValid_ 및 _IsNotValid_ 조건이 포함됩니다. 이를 통해 특정 필드나 전체 패널(가로 탭, 세로 탭, 아코디언, 마법사 등의 레이아웃 포함)의 유효성 검사 상태를 확인할 수 있으며, 유효성 검사 결과에 따라 양식 탐색과 사용자 경험이 향상됩니다.
-* **SharePoint 목록에 대한 범위 관리 개선**: 이제 SharePoint 사이트가 /sites 및 /teams와 같은 모든 관리 경로를 지원합니다. 이 향상된 기능은 다양한 SharePoint 사이트 구조에서 보다 광범위한 통합을 가능하게 해 주므로 조직 콘텐츠에 연결하는 데 더 큰 유연성이 제공됩니다.
-* **SharePoint 목록에 기록 문서 저장 지원**: 이제 SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 양식이 기록 문서 바인드 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 개선된 기능을 통해 지원되는 양식 데이터와 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+* [SharePoint 목록에 대한 범위 관리 개선](/help/forms/connect-forms-to-sharepoint-list.md): 이제 SharePoint 사이트가 /sites 및 /teams와 같은 모든 관리 경로를 지원합니다. 이 향상된 기능은 다양한 SharePoint 사이트 구조에서 보다 광범위한 통합을 가능하게 해 주므로 조직 콘텐츠에 연결하는 데 더 큰 유연성이 제공됩니다.
+* [SharePoint 목록에 기록 문서 저장 지원](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): 이제 SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 양식이 기록 문서 바인드 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 개선된 기능을 통해 지원되는 양식 데이터와 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+* [적응형 양식 조각에 대한 자동 매핑 지원](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): 이제 적응형 Forms은 스키마 개체가 정의된 조각 구조와 일치할 때 일치하는 조각의 자동 삽입을 지원하여 양식 만들기를 간소화하고 재사용을 촉진합니다.
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 #### Adobe Experience Platform(AEP)과 Forms 통합
 
-이제 얼리 어답터를 위해 Forms와 AEP 간 통합 기능이 제공됩니다.
+* [Adobe Experience Platform과 AEM Forms 통합](/help/forms/aem-forms-aep-connector.md): AEM Forms-Adobe Experience Platform 커넥터를 사용하면 적응형 Forms과 Adobe Experience Platform 간의 원활한 통합을 수행할 수 있습니다. 이 기능을 사용하면 양식 데이터를 XDM 스키마에 매핑하고 실시간으로 AEP에 직접 제출할 수 있습니다. Adobe Experience Cloud 솔루션에서 개인화 및 활성화 사용 사례에 대한 데이터 캡처를 간소화합니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 

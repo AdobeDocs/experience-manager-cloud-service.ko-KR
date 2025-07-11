@@ -4,9 +4,9 @@ description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -284,13 +284,13 @@ When you select a form model, configure Document of Record using options availab
 
 * 기본 템플릿에서 루트 하위 양식의 이름을 `AF_METATEMPLATE`(으)로 지정하고 마스터 페이지의 이름을 `AF_MASTERPAGE`(으)로 지정합니다.
 
-* `AF_METATEMPLATE` 루트 하위 양식 아래에 있는 이름이 `AF_MASTERPAGE`인 마스터 페이지는 머리글, 바닥글 및 스타일 정보를 추출할 때 선호됩니다.
+* `AF_MASTERPAGE` 루트 하위 양식 아래에 있는 이름이 `AF_METATEMPLATE`인 마스터 페이지는 머리글, 바닥글 및 스타일 정보를 추출할 때 선호됩니다.
 
 * `AF_MASTERPAGE`이(가) 없으면 기본 템플릿에 있는 첫 번째 마스터 페이지가 사용됩니다.
 
 **필드에 대한 스타일 규칙**
 
-* 기록 문서의 필드에 스타일을 적용하려면 기본 서식 파일에서 `AF_METATEMPLATE` 루트 하위 양식 아래의 `AF_FIELDSSUBFORM` 하위 양식에 있는 필드를 제공합니다.
+* 기록 문서의 필드에 스타일을 적용하려면 기본 서식 파일에서 `AF_FIELDSSUBFORM` 루트 하위 양식 아래의 `AF_METATEMPLATE` 하위 양식에 있는 필드를 제공합니다.
 
 * 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이러한 필드는 `AF_<name of field in all caps>_XFO` 명명 규칙을 따라야 합니다. 예를들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`이어야 합니다.
 
@@ -380,7 +380,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
 
-
+>[!NOTE]
+> 
+> 기록 문서에 사용자 정의 양식 제목을 표시하려면 **기록 문서 속성** > **기본 페이지 속성**&#x200B;에서 **사용자 정의 양식 제목**&#x200B;을 편집하십시오. 이 사용자 정의 제목:
+> 
+> * 생성된 PDF의 헤더에 표시됩니다.
+> * PDF 문서 속성에 제목으로 표시됩니다.
+> * PDF이 열릴 때 초기 보기 제목으로 표시됩니다.
 
 ## 기록 문서의 패널에 대한 표 및 열 레이아웃 {#table-and-column-layouts-for-panels-in-document-of-record}
 

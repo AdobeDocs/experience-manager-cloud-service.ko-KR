@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.5.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.5.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 97%
+source-wordcount: '2162'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +37,7 @@ ht-degree: 97%
 
 2025년 5월 릴리스 개요 비디오를 통해 2025.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464357?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -107,13 +108,13 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 [Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 네이티브 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 자산(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 여러 채널에서 실시간 업데이트 및 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463789/?learn=on&enablevpops=&autoplay=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 프리릴리스 기능
 
-* [범용 편집기 - 양식 조각](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): 이제 범용 편집기를 사용하여 적응형 양식의 양식 조각을 만들고 재사용할 수 있습니다. 이들 조각은 한 번 빌드하여 여러 양식에 적용할 수 있는 재사용 가능한 양식 섹션(예: 연락처 세부 정보, 동의 필드)입니다. 이 기능을 사용하면 양식 생성이 간소화되고, 일관성이 보장되며, 작성 효율성이 향상됩니다.
+* [적응형 Forms 및 양식 단편을 위한 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 이제 범용 편집기는 적응형 Forms 및 재사용 가능한 양식 단편을 모두 만들 수 있습니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 양식을 시각적으로 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능은 양식 생성을 가속화하고 일관성을 향상시키며 스팸 및 자동 남용에 대한 보호 기능을 향상시킵니다.
 
 * [SharePoint 문서 라이브러리 - 원본 파일 이름으로 첨부 파일 저장](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): 이제 SharePoint 문서 라이브러리에 양식 첨부 파일을 저장할 때 원본 파일 이름을 사용하여 저장할 수 있는 옵션이 추가되었습니다. 이 향상된 기능은 업로드된 파일의 식별과 관리를 간소화해 줍니다.
 
@@ -131,7 +132,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 #### Adobe Experience Platform(AEP)과 Forms 통합
 
-이제 얼리 어답터를 위해 Forms와 AEP 간 통합 기능이 제공됩니다.
+* [Adobe Experience Platform과 AEM Forms 통합](/help/forms/aem-forms-aep-connector.md): AEM Forms-Adobe Experience Platform 커넥터를 사용하면 적응형 Forms과 Adobe Experience Platform 간의 원활한 통합을 수행할 수 있습니다. 이 기능을 사용하면 양식 데이터를 XDM 스키마에 매핑하고 실시간으로 AEP에 직접 제출할 수 있습니다. Adobe Experience Cloud 솔루션에서 개인화 및 활성화 사용 사례에 대한 데이터 캡처를 간소화합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -235,7 +236,7 @@ OSGi 속성:
 * 콘텐츠 접근 권한을 부여하기 전에 ID 공급자를 통해 사용자 인증
 * 지리적 위치, 디바이스 유형 또는 사용자 속성에 따라 콘텐츠 개인화
 * CDN과 원본 사이의 미들웨어 역할
-* 서드파티 API의 응답을 다시 서식 지정(및 여러 API 응답 집계)한 후 브라우저에 전달
+* 브라우저에 제공하기 전에 서드파티 API의 응답(및 여러 API 응답 집계)을 다시 포맷
 * 다양한 백엔드에서 결합된 콘텐츠를 사용하여 에지에서 서버 렌더링 HTML을 구성하고 제공
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
