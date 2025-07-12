@@ -4,9 +4,10 @@ description: 파이프라인 실행이 필요 없는 마지막 빌드 &ndash;(�
 feature: Operations
 role: Admin
 badge: label="알파벳" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->&#x200B;>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
+>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
@@ -31,10 +32,10 @@ ht-degree: 4%
 
 * **환경 복원 만들기** 권한이 있습니다. 권한 관리에 대한 자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)을 참조하세요.
 * 조직이 얼리어답터 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
-* 프로그램은 **AEM as a Cloud Service**&#x200B;에서 실행됩니다.
-* 선택한 환경은 **DEV** 환경(임시 Alpha 제한)입니다.
-* 해당 환경에 대한 마지막 파이프라인이 **정상적으로**&#x200B;을(를) 마쳤고 **10일 미만**&#x200B;전에 실행되었습니다.
-* 환경 상태가 **실행 중**&#x200B;이고 진행 중인 파이프라인이 없습니다.
+* 프로그램은 AEM as a Cloud Service에서 실행됩니다.
+* 선택한 환경은 `Development` 환경(임시 Alpha 제한)입니다.
+* 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **10일 미만** 전에 실행되었습니다.
+* 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
 * 복원할 대상 소스 코드 버전이 **30일 이내에 배포되었습니다**.
 
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
