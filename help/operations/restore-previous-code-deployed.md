@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Service에 배포된 이전 Source 코드 복원
+title: 배포된 이전 Source 코드 복원
 description: 파이프라인 실행이 필요 없는 마지막 빌드 &ndash;(으)로 환경을 복원하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
 badge: label="알파벳" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
+>>이 문서에 설명된 기능은 얼리어답터 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
