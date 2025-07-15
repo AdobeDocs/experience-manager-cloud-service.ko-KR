@@ -4,10 +4,10 @@ description: 양식 데이터 모델(FDM)을 기반으로 양식을 만드는 �
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * 범용 편집기 인터페이스에서 **데이터 소스** 아이콘이 표시되지 않거나 오른쪽 속성 패널에서 **바인드 참조** 속성이 표시되지 않으면 **Extension Manager**&#x200B;에서 **데이터 소스** 확장 기능을 활성화하십시오.
 
-  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![양식 통합에 사용할 수 있는 데이터 원본 확장을 포함하여 사용 가능한 확장을 표시하는 유니버설 편집기 Extension Manager 인터페이스의 스크린샷](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   범용 편집기에서 확장 기능을 활성화하거나 비활성화하는 방법을 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭하자마자 범용 편집기에서 작성할 양식이 열립니다.
 
-   ![작성자 양식](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![미리 채워진 양식 필드가 있는 스키마 기반 양식 및 사용 가능한 데이터 소스 요소를 표시하는 콘텐츠 브라우저를 표시하는 범용 편집기의 스크린샷](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    양식은 연결된 데이터 소스의 데이터 요소를 사용하여 생성되며, 양식 필드에는 데이터 바인딩이 사전 구성되어 있습니다.
 
@@ -131,7 +131,7 @@ ht-degree: 100%
 
    이들 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다. **[!UICONTROL 추가]**&#x200B;를 클릭하면 **[!UICONTROL 데이터 소스]** 탭에서 선택한 요소가 양식에 추가되고, 추가된 요소 앞에 확인 표시가 나타납니다.
 
-   ![양식 작성](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![데이터 Source 탭의 데이터 요소를 양식 구조로 끌어다 놓아 비스키마 양식이 포함된 유니버설 편집기를 표시하는 스크린샷](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 **바인드 참조** 속성에서 데이터 바인딩을 선택하여 양식 필드에 추가할 수 있습니다. 예를 들어 양식에 이미 존재하는 **ID** 텍스트 상자에 데이터 바인딩 참조를 추가해 보겠습니다.
 데이터 소스 트리에서 양식 필드에 대한 데이터 바인딩을 선택하려면 다음 단계를 수행하십시오.

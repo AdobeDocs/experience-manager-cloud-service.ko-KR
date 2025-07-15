@@ -4,23 +4,23 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 87%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # WYSIWYG 작성 사용자 정의 구성 요소 만들기
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 GitHub 조직 이름과 저장소 이름이 포함된 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>(으)로 보내십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc이면 조직 이름은 adobe이고 저장소 이름은 abc입니다.</span>
+<span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
 
 Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론트엔드 개발자가 맞춤형 양식 구성 요소를 구축할 수 있도록 합니다. 이러한 사용자 정의 구성 요소는 WYSIWYG 작성 환경에 완벽하게 통합되어 양식 작성자가 양식 편집기 내에서 쉽게 추가, 구성 및 관리할 수 있습니다. 사용자 정의 구성 요소를 통해 작성자는 기능을 향상시키면서 원활하고 직관적인 작성 과정을 보장할 수 있습니다.
 
 이 문서에서는 사용자 경험을 개선하고 양식의 시각적 매력을 높이기 위해 기본 HTML 양식 구성 요소의 스타일을 지정하여 사용자 정의 구성 요소를 만드는 절차에 대해 설명합니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 사용자 정의 구성 요소 만들기를 시작하기 전에 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -39,11 +39,11 @@ Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론�
 
 **범위**&#x200B;라는 새로운 사용자 정의 구성 요소를 만드는 예를 들어보겠습니다. 범위 구성 요소는 최소값, 최대값 또는 선택한 값 등의 값으로 표시되고 직선으로 나타납니다.
 
-![범위 구성 요소 스타일](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![최소값과 최대값, 선택한 값 표시기가 있는 슬라이더를 보여 주는 범위 구성 요소의 시각적 표현](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 이 문서를 끝까지 읽으면 사용자 정의 구성 요소를 처음부터 만드는 방법을 배울 수 있습니다.
 
-### 1. 새로운 사용자 정의 구성 요소에 대한 구조 추가
+### &#x200B;1. 새로운 사용자 정의 구성 요소에 대한 구조 추가
 
 사용자 정의 구성 요소를 사용하기 전에 범용 편집기가 이를 사용 가능한 옵션으로 인식할 수 있도록 등록해야 합니다. 이는 고유 식별자, 기본 속성 및 구성 요소의 구조를 포함하는 구성 요소 정의를 통해 이루어집니다. 다음 단계를 수행하여 사용자 정의 구성 요소를 양식 작성에 사용할 수 있도록 합니다.
 
@@ -106,7 +106,7 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
 >
 > 모든 양식 관련 구성 요소는 범용 편집기에 블록을 추가할 때 Sites와 동일한 접근 방식을 따릅니다. 자세한 내용은 [범용 편집기에 사용하도록 구성된 블록 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) 문서를 참조하십시오.
 
-### 2. 작성을 위한 사용자 정의 구성 요소의 속성 정의
+### &#x200B;2. 작성을 위한 사용자 정의 구성 요소의 속성 정의
 
 사용자 정의 구성 요소에는 양식 작성자가 구성할 수 있는 속성을 지정하는 구성 요소 모델이 포함되어 있습니다. 이러한 속성은 범용 편집기의 **속성** 대화 상자에 표시되므로 작성자가 레이블, 유효성 검사 규칙, 스타일 및 기타 속성과 같은 설정을 조정할 수 있습니다. 속성을 정의하려면 다음 작업을 수행하십시오.
 
@@ -184,16 +184,16 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
       }
 ```
 
-JSON 코드 조각은 **범위** 구성 요소에 대해 **단계 값**&#x200B;이라는 사용자 지정 속성을 정의합니다. 다음은 각 필드에 대한 분류입니다.
+JSON 스니펫은 **범위** 구성 요소에 대해 **Step Value**&#x200B;라는 사용자 정의 속성을 정의합니다. 각 필드의 세부 내용은 다음과 같습니다.
 
-* **component**: 속성 대화 상자에 사용되는 입력 필드 형식을 지정합니다. 이 경우 `number`은(는) 필드가 숫자 값을 허용함을 나타냅니다.
-* **name**: 구성 요소의 논리에서 해당 속성을 참조하는 데 사용되는 속성의 식별자입니다. 여기서 `stepValue`은(는) 범위에 대한 단계 값 설정을 나타냅니다.
+* **component**: 속성 대화 상자에서 사용되는 입력 필드의 유형을 지정합니다. 이 경우 `number`는 해당 필드가 숫자 값을 허용함을 나타냅니다.
+* **name**: 구성 요소의 논리에서 해당 속성을 참조하는 데 사용되는 식별자입니다. 여기에서 `stepValue`는 범위에 대한 단계 값 설정을 나타냅니다.
 * **label**: 속성 대화 상자에 표시되는 속성의 표시 이름입니다.
-* **valueType**: 속성에 필요한 데이터 형식을 정의합니다. `number`을(를) 사용하면 숫자 입력만 허용됩니다.
+* **valueType**: 속성에 필요한 데이터 유형을 정의합니다. `number`는 숫자 입력만 허용됨을 나타냅니다.
 
-이제 `stepValue`을(를) `range.js`의 JSON 속성에서 사용자 지정 속성으로 사용하고 런타임 시 해당 값을 기반으로 동적 동작을 구현할 수 있습니다.
+이제 `range.js`의 JSON 속성에서 사용자 정의 속성으로 `stepValue`를 사용하여 런타임에 해당 값에 따라 동적 동작을 구현할 수 있습니다.
 
-따라서 구성 요소 정의, 구성 요소 모델 및 사용자 지정 속성을 추가한 후 최종 `_range.json` 파일은 다음과 같습니다.
+따라서 구성 요소 정의, 구성 요소 모델 및 사용자 정의 속성을 추가한 후의 최종 `_range.json` 파일은 다음과 같습니다.
 
 ```javascript
  {
@@ -253,7 +253,7 @@ JSON 코드 조각은 **범위** 구성 요소에 대해 **단계 값**&#x200B;�
 ![구성 요소 정의 및 모델](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. WYSIWYG 구성 요소 목록에 사용자 정의 구성 요소 표시
+### &#x200B;3. WYSIWYG 구성 요소 목록에 사용자 정의 구성 요소 표시
 
 필터는 범용 편집기에서 사용자 정의 구성 요소를 사용할 수 있는 섹션을 정의합니다. 이를 통해 구성 요소는 구조와 사용성을 유지하면서 적절한 섹션에서만 사용할 수 있습니다.
 
@@ -299,7 +299,7 @@ WYSIWYG에서 양식 작성 중 사용 가능한 구성 요소 목록에 사용�
 
 ![구성 요소 필터](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. 사용자 정의 구성 요소 등록
+### &#x200B;4. 사용자 정의 구성 요소 등록
 
 양식 블록이 양식 작성 중에 사용자 정의 구성 요소를 인식하고 구성 요소 모델에 정의된 속성을 로드할 수 있도록 하려면 구성 요소 정의의 `fd:viewType` 값을 `mappings.js` 파일에 추가합니다.
 구성 요소를 등록하려면 다음 작업을 수행하십시오.
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 위의 단계를 완료하면 사용자 정의 구성 요소가 범용 편집기 내의 양식 구성 요소 목록에 나타납니다. 그런 다음 양식 섹션으로 끌어다 놓을 수 있습니다.
 
-![범위 구성 요소](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![폼으로 드래그 앤 드롭할 수 있는 사용자 지정 범위 구성 요소를 표시하는 유니버설 편집기 구성 요소 팔레트의 스크린샷](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
-아래 스크린샷에는 양식 작성자가 구성할 수 있는 속성을 지정하는 구성 요소 모델에 추가된 `range` 구성 요소의 속성이 표시됩니다.
+아래 스크린샷은 구성 요소 모델에 추가된 `range` 구성 요소의 속성을 보여 줍니다. 이 속성은 양식 작성자가 구성할 수 있는 속성을 지정합니다.
 
-![범위 구성 요소의 속성](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![기본 속성, 유효성 검사 규칙 및 스타일 옵션을 포함하여 범위 구성 요소에 대해 구성 가능한 설정을 표시하는 유니버설 편집기 속성 패널의 스크린샷](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 이제 스타일링과 기능을 추가하여 사용자 정의 구성 요소의 런타임 동작을 정의할 수 있습니다.
 
-### 5. 사용자 정의 구성 요소에 대한 런타임 동작 추가
+### &#x200B;5. 사용자 정의 구성 요소에 대한 런타임 동작 추가
 
 [양식 필드의 스타일링](/help/edge/docs/forms/style-theme-forms.md)에 설명된 대로 미리 정의된 마크업을 사용하여 사용자 정의 구성 요소를 수정할 수 있습니다. 이는 구성 요소의 모양을 향상시키기 위해 사용자 정의 CSS(Cascading Style Sheets)와 사용자 정의 코드를 사용하여 달성할 수 있습니다. 구성 요소에 런타임 동작을 추가하려면 다음 작업을 수행하십시오.
 
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    이 코드는 사용자 정의 구성 요소의 스타일링과 시각적 모양을 정의하는 데 도움이 됩니다.
 
 1. 기능을 추가하려면 `/blocks/form/components/range/range.js` 파일로 이동하여 다음 코드 라인을 추가합니다.
@@ -457,7 +456,7 @@ const OOTBComponentDecorators = ['file-input',
    사용자 정의 스타일링과 기능을 통합한 후 범위 구성 요소의 모양과 동작이 향상되었습니다. 업데이트된 디자인은 적용된 스타일을 반영하며, 추가된 기능은 보다 역동적이면서 인터랙티브한 사용자 경험을 보장합니다.
 아래 스크린샷은 업데이트된 범위 구성 요소를 보여 줍니다.
 
-![범위 구성 요소 스타일](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![범용 편집기에서 값 버블 표시 및 대화형 기능을 사용하여 스타일이 지정된 슬라이더를 표시하는 최종 범위 구성 요소입니다](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## 자주 묻는 질문
 

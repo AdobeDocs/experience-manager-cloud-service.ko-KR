@@ -4,14 +4,52 @@ description: 적응형 양식에 대한 제출 액션을 구성합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 78%
 
 ---
 
 # 적응형 양식 제출 액션
+
+## 개요
+
+양식 제출은 수집된 데이터를 처리하고 작업을 수행하는 사용자 여정의 중요한 마지막 단계입니다. 이 문서는 범용 편집기에서 적응형 Forms에 대한 제출 액션을 구성 및 관리하는 데 대한 포괄적인 안내서를 제공합니다.
+
+### 학습 내용
+
+이 문서의 마지막 부분에서는 다음 방법을 이해할 수 있습니다.
+
+* 양식에 대해 다양한 유형의 제출 액션 구성
+* 외부 시스템과의 통합을 위해 REST 엔드포인트 제출 설정
+* 양식 응답을 위한 이메일 제출 구성
+* 특정 비즈니스 요구 사항에 맞게 사용자 정의 제출 작업 구현
+* 제출 중 양식 유효성 검사 및 오류 시나리오 처리
+
+### 타겟 대상
+
+이 안내서는 다음 사용자를 위해 설계되었습니다.
+
+* 제출 논리를 구현하는 **양식 개발자**
+* 백엔드 시스템에 양식을 연결하는 **시스템 통합자**
+* 양식 워크플로우를 정의하는 **비즈니스 분석가**
+* **기술 설계자** 양식 제출 프로세스 디자인
+
+### 사용 가능한 제출 액션
+
+Universal Editor는 두 가지 기본 제출 작업 유형을 제공합니다.
+
+1. **REST 끝점에 제출** * API 끝점으로 양식 데이터 보내기
+2. **전자 메일 보내기** * 전자 메일을 통해 양식 응답 전달
+
+### 사전 요구 사항
+
+제출 액션을 구성하기 전에 다음을 확인하십시오.
+
+* 범용 편집기에 액세스
+* 양식 구성에 대한 적절한 권한
+* 대상 제출 엔드포인트 또는 이메일 구성 이해
 
 제출 액션은 적응형 양식을 통해 수집된 데이터의 대상을 지정합니다. 제출 절차는 사용자가 양식의 **[!UICONTROL 제출]** 버튼을 클릭하면 시작됩니다. AEM Forms는 아래에 설명된 두 가지 유형의 제출 액션을 제공하며, 특정 요구 사항을 충족하는 사용자 정의 제출 액션을 만들고 사용할 수 있습니다. 기본 제공 제출 액션은 다음과 같습니다.
 
@@ -42,7 +80,7 @@ REST 엔드포인트를 구성하려면 다음 작업을 수행하십시오.
 1. REST 엔드포인트 URL을 지정합니다.
 1. 또한 **POST 요청을 활성화**&#x200B;하고 요청을 게시하는 URL을 제공할 수 있습니다.
 
-![적응형 양식에 대한 게시 요청 활성화](/help/forms/assets/enable-post-request-ue.png)
+![URL 입력 및 양식 제출에 대한 POST 요청 활성화 토글을 포함한 REST 끝점 구성 필드를 보여주는 유니버설 편집기 속성 패널의 스크린샷](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ REST 엔드포인트를 구성하려면 다음 작업을 수행하십시오.
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

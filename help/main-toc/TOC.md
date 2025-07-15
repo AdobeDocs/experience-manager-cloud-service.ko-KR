@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,7 @@ ht-degree: 99%
       + [개요](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services 양식 제출 구성](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [양식 만들기 모범 사례](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
+      + [양식 만들기 모범 사례](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + WYSIWYG 작성 {#universal-editor}
          + [Edge Delivery Services용 양식 Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Universal Editor를 사용하여 작성을 시작하는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
