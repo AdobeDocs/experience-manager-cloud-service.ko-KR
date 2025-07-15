@@ -79,6 +79,7 @@ AEM에서 양식을 작성하고 Edge Delivery Services를 통해 게시하기 �
 
    1. **이름**&#x200B;과 **제목**&#x200B;을 지정합니다.
    1. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 저장소의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 다음과 같습니다.
+
       `https://github.com/wkndforms/edsforms`
 
    ![양식 생성 마법사](/help/edge/assets/create-form-wizard.png)

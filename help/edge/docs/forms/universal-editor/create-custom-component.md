@@ -392,6 +392,7 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
+
    이 코드는 사용자 정의 구성 요소의 스타일링과 시각적 모양을 정의하는 데 도움이 됩니다.
 
 1. 기능을 추가하려면 `/blocks/form/components/range/range.js` 파일로 이동하여 다음 코드 라인을 추가합니다.
