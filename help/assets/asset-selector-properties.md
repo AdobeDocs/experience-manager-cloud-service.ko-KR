@@ -3,10 +3,10 @@ title: 사용자 지정에 대한 자산 선택기 속성
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 39%
+source-wordcount: '1420'
+ht-degree: 37%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 39%
 |---|---|---|---|---|
 | *레일* | 부울 | 아니요 | 거짓 | `true`(으)로 표시된 경우 자산 선택기가 왼쪽 레일 보기에서 렌더링됩니다. `false`(으)로 표시되어 있으면 자산 선택기가 모달 보기에서 렌더링됩니다. |
 | *imsOrg* | 문자열 | 예 | | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 액세스 중인 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 `imsOrg` 키가 필요합니다. |
-| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. 통합을 위해 [!DNL Adobe] 응용 프로그램을 사용하는 경우 `imsToken`이(가) 필요합니다. |
-| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. [!DNL Adobe] 응용 프로그램 통합을 사용하는 경우 `apiKey`이(가) 필요합니다. |
+| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. 통합을 위해 `imsToken` 응용 프로그램을 사용하는 경우 [!DNL Adobe]이(가) 필요합니다. |
+| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` 응용 프로그램 통합을 사용하는 경우 [!DNL Adobe]이(가) 필요합니다. |
 | *filterSchema* | 배열 | 아니요 | | 필터 속성을 구성하는 데 사용되는 모델입니다. 자산 선택기에서 특정 필터 옵션을 제한하려는 경우에 유용합니다. |
 | *filterForm Prop* | 오브젝트 | 아니요 | | 검색을 세분화하는 데 사용해야 하는 필터 속성을 지정합니다. 대상! 예: MIME 유형 JPG, PNG, GIF. |
 | *selectedAssets* | 배열 `<Object>` | 아니요 |                 | 자산 선택기가 렌더링될 때 선택된 자산을 지정합니다. 자산의 ID 속성을 포함하는 오브젝트 배열이 필요합니다. 그 예로는 `[{id: 'urn:234}, {id: 'urn:555'}]` 등이 있습니다. 또한 현재 디렉터리에서 자산을 사용할 수 있어야 합니다. 다른 디렉터리를 사용해야 하는 경우 `path` 속성 값도 제공하십시오. |
@@ -45,18 +45,18 @@ ht-degree: 39%
 | *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
-| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](/help/assets/asset-selector-customization.md#customize-expired-assets)을 참조하십시오. 또한 함수 값이 `true` 또는 `false`일 수 있는 **allowSelectionAndDrag**&#x200B;을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
+| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](/help/assets/asset-selector-customization.md#customize-expired-assets)을 참조하십시오. 또한 함수 값이 **또는**&#x200B;일 수 있는 `true`allowSelectionAndDrag`false`을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
 | *showToast* | | 아니요 | | 이를 통해 에셋 선택기에서 만료된 에셋에 대한 사용자 지정 Toast 메시지를 표시할 수 있습니다. |
-| *metadataSchema* | 배열 | 아니요 | | 사용자로부터 메타데이터를 수집하기 위해 제공하는 필드 배열을 추가합니다. 이 속성을 사용하면 자산에 자동으로 할당되지만 사용자에게 표시되지 않는 숨겨진 메타데이터를 사용할 수도 있습니다. |
-| *onMetadataFormChange* | 콜백 함수 | 아니요 | | `property`과(와) `value`(으)로 구성됩니다. `Property`은(는) 값이 업데이트되는 *metadataSchema*&#x200B;에서 전달된 필드의 *mapToProperty*&#x200B;과(와) 같습니다. 반면, `value`은(는) 새 값이 입력으로 제공됩니다. |
-| *targetUploadPath* | 문자열 |  | `"/content/dam"` | 에셋 저장소의 루트로 기본 설정되는 파일의 대상 업로드 경로입니다. |
-| *hideUploadButton* | 부울 | | 거짓 | 내부 업로드 단추를 숨길지 여부를 확인합니다. |
-| *onUploadStart* | 함수 | 아니요 |  | Dropbox, OneDrive 또는 local 간에 업로드 소스를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadInfo: UploadInfo) => void`입니다. |
-| *importSettings* | 함수 | | | 서드파티 소스에서 에셋을 가져올 수 있습니다. `sourceTypes`은(는) 사용할 가져오기 소스의 배열을 사용합니다. 지원되는 소스는 Onedrive 및 Dropbox입니다. 구문은 `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`입니다. |
-| *onUploadComplete* | 함수 | 아니요 | | 성공, 실패 또는 복제 중 파일 업로드 상태를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadStats: UploadStats) => void`입니다. |
-| *onFilesChange* | 함수 | 아니요 | | 파일이 변경될 때 업로드의 동작을 표시하는 데 사용되는 콜백 함수입니다. 업로드를 위해 보류 중인 새 파일 배열과 업로드의 소스 유형을 전달합니다. 오류가 발생한 경우 Source 유형은 null일 수 있습니다. 구문은 `(newFiles: File[], uploadType: UploadType) => void`입니다. |
-| *uploadingPlaceholder* | 문자열 | | | 에셋 업로드가 시작되면 메타데이터 양식을 대체하는 자리 표시자 이미지입니다. 구문은 `{ href: string; alt: string; } `입니다. |
-| *uploadConfig* | 오브젝트 | | | 이 개체는 업로드에 대한 사용자 지정된 구성을 포함합니다. |
+| *uploadConfig* | 오브젝트 | | | 이 개체는 업로드에 대한 사용자 지정된 구성을 포함합니다. 유용성은 [업로드 구성](#asset-selector-customization.md#upload-config)을 참조하십시오. |
+| *metadataSchema* | 배열 | 아니요 | | 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. 사용자로부터 메타데이터를 수집하기 위해 제공하는 필드 배열을 추가합니다. 이 속성을 사용하면 자산에 자동으로 할당되지만 사용자에게 표시되지 않는 숨겨진 메타데이터를 사용할 수도 있습니다. |
+| *onMetadataFormChange* | 콜백 함수 | 아니요 | | 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. `property`과(와) `value`(으)로 구성됩니다. `Property`은(는) 값이 업데이트되는 *metadataSchema*&#x200B;에서 전달된 필드의 *mapToProperty*&#x200B;과(와) 같습니다. 반면, `value`은(는) 새 값이 입력으로 제공됩니다. |
+| *targetUploadPath* | 문자열 |  | `"/content/dam"` | 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. 에셋 저장소의 루트로 기본 설정되는 파일의 대상 업로드 경로입니다. |
+| *hideUploadButton* | 부울 | | 거짓 | 내부 업로드 단추를 숨길지 여부를 확인합니다. 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. |
+| *onUploadStart* | 함수 | 아니요 |  | Dropbox, OneDrive 또는 local 간에 업로드 소스를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadInfo: UploadInfo) => void`입니다. 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. |
+| *importSettings* | 함수 | | | 서드파티 소스에서 에셋을 가져올 수 있습니다. `sourceTypes`은(는) 사용할 가져오기 소스의 배열을 사용합니다. 지원되는 소스는 Onedrive 및 Dropbox입니다. 구문은 `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`입니다. 또한 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. |
+| *onUploadComplete* | 함수 | 아니요 | | 성공, 실패 또는 복제 중 파일 업로드 상태를 전달하는 데 사용되는 콜백 함수입니다. 구문은 `(uploadStats: UploadStats) => void`입니다. 또한 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. |
+| *onFilesChange* | 함수 | 아니요 | | 이 속성은 `uploadConfig` 속성에 중첩되어 있습니다. 파일이 변경될 때 업로드의 동작을 표시하는 데 사용되는 콜백 함수입니다. 업로드를 위해 보류 중인 새 파일 배열과 업로드의 소스 유형을 전달합니다. 오류가 발생한 경우 Source 유형은 null일 수 있습니다. 구문은 `(newFiles: File[], uploadType: UploadType) => void`입니다. |
+| *uploadingPlaceholder* | 문자열 | | | 에셋 업로드가 시작되면 메타데이터 양식을 대체하는 자리 표시자 이미지입니다. 구문은 `{ href: string; alt: string; }`입니다. 또한 이 속성은 `uploadConfig` 속성 아래에 중첩됩니다. |
 | *기능 집합* | 배열 | 문자열 | | `featureSet:[ ]` 속성은 자산 선택기 응용 프로그램에서 특정 기능을 활성화하거나 비활성화하는 데 사용됩니다. 구성 요소 또는 기능을 활성화하기 위해 배열에 문자열 값을 전달하거나 배열을 비워 두어 해당 구성 요소를 비활성화할 수 있습니다.  예를 들어 자산 선택기에서 업로드 기능을 활성화하려면 `featureSet:[0:"upload"]` 구문을 사용합니다. 마찬가지로 `featureSet:[0:"collections"]`을(를) 사용하여 자산 선택기에서 컬렉션을 활성화할 수 있습니다. 또한 `featureSet:[0:"detail-panel"]`을(를) 사용하여 자산의 [세부 정보 패널](overview-asset-selector.md#asset-details-and-metadata)을(를) 사용하도록 설정하십시오. 이러한 기능을 함께 사용하려면 구문이 `featureSet:["upload", "collections", "detail-panel"]`입니다. |
 
 <!--

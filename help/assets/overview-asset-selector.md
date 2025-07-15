@@ -3,8 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: a57bcc24798dbb3acd3d19526848c4dd9adf3d1f
+workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 100%
 
@@ -202,7 +202,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -230,7 +230,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <p>
         <em>자산 선택기와 Adobe 이외의 애플리케이션을 통합하는 기능을 살펴봅니다.</em>
         </p>
-    </td>
+    </td>   
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="자산 선택기 그래픽 통합"><br/>
         <a href="integrate-asset-selector-dynamic-media-open-api.md">자산 선택기와 Dynamic Media 오픈 API 통합</a>

@@ -3,9 +3,9 @@ title: 자산 선택기 응용 프로그램 사용자 지정
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 25%
 * [상황별 호출 필터](#contextual-invocation-filter)
 * [dragOptions 속성](#drag-options-property)
 
-[!DNL Experience Manager Assets] 저장소에 액세스하기 위한 인증 세부 정보를 정의하려면 응용 프로그램 구현 내의 **index.html** 파일 또는 유사한 파일에서 필수 구성 요소를 정의해야 합니다. 완료되면 요구 사항에 따라 코드 조각을 추가할 수 있습니다.
+**저장소에 액세스하기 위한 인증 세부 정보를 정의하려면 응용 프로그램 구현 내의** index.html[!DNL Experience Manager Assets] 파일 또는 유사한 파일에서 필수 구성 요소를 정의해야 합니다. 완료되면 요구 사항에 따라 코드 조각을 추가할 수 있습니다.
 
 ## 필터 패널 사용자 지정 {#customize-filter-panel}
 
@@ -293,7 +293,7 @@ const currentData = new Date();
 currentData.getTime(),
 ```
 
-날짜 형식 2024-06-19T06:36:53.959Z에 따른 `1718779013959`을(를) 반환합니다.
+날짜 형식 2024-06-19T06`1718779013959`53.959Z에 따른 :36:을(를) 반환합니다.
 
 ### 만료된 에셋의 Toast 메시지 사용자 지정 {#customize-toast-message}
 
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## 자산 선택기에서 업로드 {#upload-in-asset-selector}
 
-로컬 파일 시스템에서 파일 또는 폴더를 에셋 선택기에 업로드할 수 있습니다. 로컬 파일 시스템을 사용하여 파일을 업로드하려면 일반적으로 자산 선택기 마이크로 프론트엔드 애플리케이션에서 제공하는 업로드 기능을 사용해야 합니다. 자산 선택기에서 업로드를 호출하는 데 필요한 다양한 코드 조각은 다음과 같습니다.
+로컬 파일 시스템에서 파일 또는 폴더를 에셋 선택기에 업로드할 수 있습니다. 로컬 파일 시스템을 사용하여 파일을 업로드하려면 일반적으로 자산 선택기 마이크로 프론트엔드 애플리케이션에서 제공하는 업로드 기능을 사용해야 합니다. 자산 선택기에서 업로드를 호출하는 데 필요한 `upload` 다양한 코드 조각은 다음과 같습니다.
 
 * [기본 업로드 양식 코드 조각](#basic-upload)
+* [구성 업로드](#upload-config)
 * [메타데이터로 업로드](#upload-with-metadata)
 * [사용자 지정된 업로드](#customized-upload)
 * [타사 소스를 사용하여 업로드](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### 구성 업로드 {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*추가 속성에는 `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*&#x200B;이(가) 포함됩니다. 자세한 내용은 [자산 선택기 속성](#asset-selector-properties.md)을 참조하십시오.
 
 ### 메타데이터로 업로드 {#upload-with-metadata}
 
