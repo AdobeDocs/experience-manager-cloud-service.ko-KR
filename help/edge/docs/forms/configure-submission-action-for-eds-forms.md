@@ -46,6 +46,7 @@ ht-degree: 99%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Forms 제출](/help/forms/assets/eds-fss.png)
 
 이 순서도는 Forms 제출 서비스가 제출된 데이터를 어떻게 가져와 구성된 스프레드시트나 이메일로 보내는지 보여 줍니다.
@@ -144,6 +145,7 @@ ht-degree: 99%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![임베드된 양식 아키텍처](/help/forms/assets/eds-embedded-form.png)
 이 다이어그램은 호스트 페이지가 양식 소스에서 양식 HTML을 가져와서 표시하는 모습을 보여 줍니다. 제출은 원본 양식의 구성된 엔드포인트를 사용합니다.
 
