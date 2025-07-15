@@ -3,8 +3,10 @@ title: 높은 성과를 창출하는 양식 디자인 모범 사례
 description: AEM Forms를 사용하여 사용자 친화적이고 접근하기 쉬우며 성과가 높은 양식을 만들기 위한 필수적인 모범 사례를 알아봅니다. 데이터 품질, 사용자 경험, 제출 성공률을 개선합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: true
+hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 78%

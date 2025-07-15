@@ -4,11 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -37,7 +39,7 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 ## Forms 제출 서비스 구성
 
-적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
+적응형 Forms 블록으로 구성된 새 AEM 프로젝트를 만듭니다. 새 AEM 프로젝트를 만드는 방법을 알아보려면 [시작하기 - 개발자 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) 문서를 참조하십시오. 프로젝트에서 `fstab.yaml` 파일을 업데이트합니다. 기존 참조를 `forms@adobe.com`과(와) 공유한 폴더의 경로로 바꿉니다.
 
 [Forms 제출 서비스를 수동으로 구성](#configuring-the-forms-submission-service-manually)하거나 [API를 사용하여 Forms 제출 서비스를 구성](#configuring-the-forms-submission-service-using-api)할 수 있습니다.
 
@@ -47,7 +49,7 @@ Forms 제출 서비스를 사용하기 위한 사전 요구 사항은 다음과 
 
 #### &#x200B;1. 양식 정의를 사용하여 양식 만들기
 
-Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
+Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. Microsoft Excel 또는 Google Sheets에서 양식 정의를 사용하여 양식을 만드는 방법에 대해 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)하십시오.
 
 아래 스크린샷에는 양식을 만드는 데 사용된 양식 정의가 표시됩니다.
 
@@ -55,11 +57,11 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식을 작성합니다. 
 
 >[!IMPORTANT]
 >
->**폼이 작성된 시트에는 이름을 지정할 수 있는 내용에 제한이 있습니다. `helix-default` 및 `shared-aem`만 시트 이름으로 사용할 수 있습니다.**
+>**양식이 작성된 시트에는 지정할 수 있는 이름에 제한이 있습니다. 시트 이름으로는 `helix-default`와 `shared-aem`만 사용할 수 있습니다.**
 
 #### &#x200B;2. 스프레드시트가 데이터를 수락하도록 설정합니다.
 
-양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
+양식을 만들고 미리 본 후 해당 스프레드시트를 활성화하여 데이터 수신을 시작합니다. 새 시트를 `incoming`(으)로 추가합니다. [스프레드시트가 데이터를 수락하도록 수동으로 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)할 수 있습니다.
 
 ![받는 시트](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -103,7 +105,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 Forms 제출 서비스를 �
 >[!NOTE]
 >
 > * `incoming` 시트가 없으면 AEM에서 이 통합 문서로 데이터를 전송하지 않습니다.
-> * `forms@adobe.com`을(를) 통해 Adobe Experience Manager과 `incoming` 시트를 공유하고 편집 액세스 권한을 부여합니다.
+> * `incoming`을(를) 통해 Adobe Experience Manager과 `forms@adobe.com` 시트를 공유하고 편집 액세스 권한을 부여합니다.
 > * 사이드 킥에서 `incoming` 시트를 미리 보고 게시합니다.
 
 시트 설정에 대한 POST 요청의 형식을 지정하는 방법을 이해하려면 [API 설명서](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)를 참조하십시오. 아래 제공된 예를 살펴볼 수도 있습니다.
@@ -157,23 +159,23 @@ Postman에서 **보내기** 단추를 클릭하면 `201 Created` 응답이 반�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —헤더 &quot;Content-Type: application/json&quot; \
     —헤더 &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —데이터 &#39;&lbrace;
-    &quot;data&quot;: &lbrace;
+    —데이터 &#39;{
+    &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
     &quot;class&quot;: &quot;First Class&quot;,
-    &quot;budget&quot;: &quot;200000&quot;,&lbrace;amount&quot;: &quot;1000000&quot;,
+    &quot;budget&quot;: &quot;200000&quot;,{amount&quot;: &quot;1000000&quot;,
     &quot;name&quot;: &quot;Joe&quot;,
     &quot;age&quot;: &quot;35&quot;,
     &quot;subscribe&quot;: null,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
+    }
     &#39;
-    
     &quot;
-
     
+    
+
 >[!TAB Windows OS용]
 
     &quot;json
