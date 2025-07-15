@@ -1,53 +1,53 @@
 ---
 title: AEM Forms용 Edge Delivery Services 개요
-description: 최고 성능을 위해 구축된 AEM Forms용 Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다.
+description: AEM Forms용 Edge Delivery Services는 최고의 성능을 발휘하도록 구축되어 데이터 수집 및 사용자 참여를 간소화하는 미래를 구상할 수 있도록 지원합니다.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 67fe933807f8a1bca681a6bcee7164f7c117bcac
 workflow-type: tm+mt
 source-wordcount: '1874'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
-# AEM Edge Delivery Services에서 Forms 시작하기
+# AEM Edge Delivery Services의 Forms 시작하기
 
 <span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
 
-이 안내서는 Adobe Experience Manager(AEM) Edge Delivery Services(EDS)를 사용하여 양식을 이해하고 구현하는 데 도움이 됩니다. 간단한 연락처 양식을 만들거나 복잡한 데이터 수집 도구를 만드는 경우 이 페이지에서는 선택 사항을 안내합니다.
+이 안내서는 Adobe Experience Manager(AEM) Edge Delivery Services(EDS)를 사용하여 양식을 이해하고 구현하는 데 도움이 됩니다. 간단한 연락처 양식부터 복잡한 데이터 수집 도구까지 이 페이지에서 해당 옵션을 안내합니다.
 
-## Edge Delivery Services의 Forms 이해
+## Edge Delivery Services의 양식 이해
 
-Edge Delivery Services은 양식을 비롯한 웹 컨텐츠를 탁월한 성능과 민첩성으로 제공하기 위한 Adobe의 최신 솔루션입니다. 양식에 Edge Delivery Services을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+Edge Delivery Services는 양식을 포함한 웹 콘텐츠를 탁월한 성능과 민첩성으로 제공하는 Adobe의 최신 솔루션입니다. Edge Delivery Services를 양식에 사용하면 다음과 같은 이점이 있습니다.
 
-* **더 빠른 환경 제공:** Forms은 사용자와 가까운 CDN(Edge Server)의 글로벌 네트워크에서 제공되므로 매우 빠르게 로드됩니다. 이를 통해 사용자 만족도가 향상되고 양식 완료율이 높아질 수 있다.
-* **보다 손쉽게 Forms 업데이트:** Edge Delivery Services 접근 방식을 사용하면 개발 주기와 콘텐츠 업데이트가 빨라져 양식을 빠르게 조정할 수 있습니다.
-* **최신 반응형 Forms 빌드:** 멋진 양식을 만들고 모든 장치에서 원활하게 작동합니다.
-* **확장성 및 안정성의 이점:** 폼은 기본 에지 인프라만큼 강력하고 확장 가능합니다.
+* **더욱 빠른 경험 제공:** 양식은 사용자와 가까운 글로벌 에지 서버 네트워크(CDN)에서 제공되므로 매우 빠르게 로드됩니다. 이를 통해 사용자 만족도를 향상시키고 양식 완료율을 높일 수 있습니다.
+* **더욱 간편한 양식 업데이트:** Edge Delivery Services 접근 방식을 사용하면 개발 주기를 단축하고 콘텐츠를 업데이트할 수 있으므로 양식을 빠르게 조정할 수 있습니다.
+* **현대적인 반응형 양식:** 어떤 디바이스에서든 완벽하고 원활하게 작동하는 양식을 만드십시오.
+* **확장성과 안정성의 이점:** 양식은 기본 에지 인프라만큼이나 견고하고 확장 가능할 것입니다.
 
-이 안내서는 다음을 수행합니다.
+이 안내서는 다음 내용을 다룹니다.
 
-* Edge Delivery 사이트에 대한 양식을 작성(작성)할 수 있는 다양한 방법을 설명합니다.
-* 사용자가 양식을 제출한 후 수행할 작업을 구성하는 방법을 보여 줍니다(제출 작업).
-* 특정 요구 사항과 팀 기술에 가장 적합한 방법을 선택할 수 있습니다.
-* 아키텍처 다이어그램 및 모범 사례를 제공합니다.
+* Edge Delivery Sites에서 양식을 만드는(작성하는) 다양한 방법을 설명합니다.
+* 사용자가 양식을 제출한(제출 액션) 후에 발생하는 일을 구성하는 방법을 보여 줍니다.
+* 특정 요구 사항과 팀 기술에 가장 적합한 방법을 선택하도록 도와줍니다.
+* 아키텍처 다이어그램과 모범 사례를 제공합니다.
 
-## 알아야 할 주요 용어
+## 알아야 할 핵심 용어
 
-* **EDS(Edge Delivery Services):** CDN을 통해 AEM 콘텐츠를 게재하기 위한 Adobe의 성능 우선 아키텍처입니다. 프로젝트 프랭클린이라고도 합니다.
-* **AEM Forms:** 양식을 만들고, 관리하고, 처리하기 위한 Adobe 솔루션입니다.
-* **유니버설 편집기(UE):** 양식을 포함한 AEM 콘텐츠에 대한 시각적 WYSIWYG 편집기입니다.
-* **문서 기반 작성:** Microsoft Word 또는 Google Docs/Sheets를 사용하여 양식을 만듭니다.
-* **DA(문서 작성):** Edge Delivery Services의 컨텐츠(양식을 호스팅할 수 있는 페이지 포함)를 작성하기 위한 Adobe 호스팅 서비스입니다.
-* **Forms 제출 서비스(FSS):** 스프레드시트나 전자 메일로 양식 데이터를 간단하게 전송하는 Adobe 서비스입니다.
-* **AEM 게시 인스턴스:** 복잡한 양식 제출을 처리할 수 있는 라이브 AEM 환경입니다.
-* **CORS(원본 간 리소스 공유):** 다른 도메인의 양식을 포함할 때 구성해야 하는 브라우저 보안 기능입니다.
-* **CDN(Content Delivery Network):** 지리적 위치에 따라 사용자에게 웹 콘텐츠를 빠르게 전달하는 서버 네트워크입니다.
+* **Edge Delivery Services(EDS):** CDN을 통해 AEM 콘텐츠를 제공하기 위한 Adobe의 성능 우선 아키텍처. Franklin 프로젝트라고도 합니다.
+* **AEM Forms:** 양식 만들기, 관리 및 처리를 위한 Adobe의 솔루션.
+* **Universal Editor(UE):** 양식을 포함한 AEM 콘텐츠용 시각적 WYSIWYG 편집기.
+* **문서 기반 작성:** Microsoft Word 또는 Google Docs/Sheets를 사용하여 양식 만들기.
+* **문서 작성(DA):** Edge Delivery Services를 위한 콘텐츠(양식을 호스팅할 수 있는 페이지 포함)를 작성하는 Adobe 호스팅 서비스.
+* **Forms 제출 서비스(FSS):** 스프레드시트나 이메일로 양식 데이터를 간편하게 전송할 수 있는 Adobe 서비스.
+* **AEM Publish 인스턴스:** 복잡한 양식 제출을 처리할 수 있는 라이브 AEM 환경.
+* **CORS(원본 간 리소스 공유):** 다양한 도메인의 양식을 임베드할 때 구성이 필요한 브라우저 보안 기능.
+* **CDN(콘텐츠 전송 네트워크):** 지리적 위치를 기반으로 사용자에게 웹 콘텐츠를 신속하게 제공하는 서버 네트워크.
 
 
-**Edge Delivery Services 양식 인터랙션 개념도**
+**Edge Delivery Services 양식 상호 작용의 개념 다이어그램**
 
 <!--  
 ```mermaid
@@ -62,12 +62,12 @@ graph LR
     style Backend fill:#fca,stroke:#333,stroke-width:2px
 ``` -->
 
-![양식 상호 작용](/help/forms/assets/eds-form-interaction.png)
-이 다이어그램은 사용자가 CDN을 통해 빠르게 전달되는 양식과 상호 작용하는 모습을 보여 줍니다. 그런 다음 제출하는 데이터는 백엔드 시스템에 의해 처리됩니다.
+![양식 상호작용](/help/forms/assets/eds-form-interaction.png)
+이 다이어그램은 CDN을 통해 신속하게 전달된 양식과 사용자가 상호작용하는 모습을 보여 줍니다. 제출된 데이터는 백엔드 시스템에 의해 처리됩니다.
 
-## Forms은 Edge에서 어떻게 작동합니까?
+## Edge에서 양식은 어떻게 작동합니까?
 
-EDS를 사용하면 웹 사이트 컨텐츠(양식 구조 포함)를 AEM as a Cloud Service, SharePoint, Google 드라이브 또는 DA(Document Authoring) 서비스와 같은 다양한 소스에서 가져올 수 있습니다. 그런 다음 이 콘텐츠는 글로벌 CDN에 게시됩니다. 사용자가 사이트를 방문할 때 가장 가까운 CDN 에지 서버에서 바로 콘텐츠가 제공되어 최대 속도가 보장됩니다.
+EDS를 사용하면 웹 사이트 콘텐츠(양식 구조 포함)를 AEM as a Cloud Service, SharePoint, Google Drive 또는 문서 작성(DA) 서비스와 같은 다양한 소스에서 가져올 수 있습니다. 이 콘텐츠는 이후 글로벌 CDN에 게시됩니다. 사용자가 사이트를 방문하면 가장 가까운 CDN 에지 서버에서 직접 콘텐츠를 제공해 최대 속도를 보장합니다.
 
 <!--*   **Where AEM Forms Fit In**
     Forms in an EDS architecture are designed to be:
@@ -76,7 +76,7 @@ EDS를 사용하면 웹 사이트 컨텐츠(양식 구조 포함)를 AEM as a Cl
     *   **Flexible to Create:** You have different tools to build your forms.
     *   **Configurable for Submission:** You can send data to simple services or powerful AEM backends.-->
 
-**Forms을 사용한 간소화된 Edge Delivery Services 아키텍처**
+**Forms를 통해 간소화된 Edge Delivery Services 아키텍처**
 
 <!--
 ```mermaid
@@ -94,17 +94,17 @@ EDS를 사용하면 웹 사이트 컨텐츠(양식 구조 포함)를 AEM as a Cl
 ``` -->
 
 ![아키텍처](/help/forms/assets/eds-simplified-architecture.png)
-이 다이어그램은 여정을 보여 줍니다. 양식이 작성 시스템에 정의되어 있고, 에지에 게시되고, 사용자에게 제공되며, 제출된 데이터는 백엔드에 의해 처리됩니다.
+이 다이어그램은 양식이 작성 시스템에서 정의되고, 에지에 게시되어 사용자에게 제공되고, 제출된 데이터는 백엔드에서 처리되는 여정을 보여 줍니다.
 
 ## 양식 작성 방법 선택
 
-Edge Delivery Services 사이트에 대한 양식을 만드는 세 가지 주요 방법이 있습니다. 선택은 팀의 기술, 양식의 복잡성 및 프로젝트 요구 사항에 따라 달라집니다.
+Edge Delivery Services 사이트에 맞는 양식을 만드는 데는 세 가지 주요 방법이 있습니다. 팀의 기술, 양식의 복잡성, 프로젝트의 필요성에 따라 선택이 달라집니다.
 
-### 어떤 작성 방식이 귀하에게 적합합니까?
+### 어떤 작정 접근 방식이 적합할까요?
 
-이 진단트리를 사용하여 다음 항목을 선택하십시오.
+다음 의사 결정 트리를 사용하여 선택합니다.
 
-**양식 작성 결정 트리**
+**양식 작성 의사 결정 트리**
 <!--    
 ```mermaid
     graph TD
@@ -124,38 +124,38 @@ Edge Delivery Services 사이트에 대한 양식을 만드는 세 가지 주요
 
 ![올바른 플랫폼 선택](/help/forms/assets/eds-authoring-selection.png)
 
-이 진단트리는 팀 및 양식 요구 사항에 따라 작성 방법을 선택하는 데 도움이 됩니다.
+이 의사 결정 트리는 팀과 양식의 필요에 따라 작성 방법을 선택하는 데 도움이 됩니다.
 
-### 문서를 사용하여 Forms 만들기(Word/Google Docs)
+### 문서를 사용하여 양식 만들기 (Word/Google Docs)
 
-이 방법은 팀이 Microsoft Word 또는 Google Docs/Sheets에 익숙한 경우 [양식을 빠르게 만들기](/help/edge/docs/forms/create-forms.md)하는 데 유용합니다.
+이 방법은 [팀이 Microsoft Word 또는 Google Docs/Sheets에 익숙하다면 신속하게 양식을 작성](/help/edge/docs/forms/create-forms.md)하는 데 매우 유용합니다.
 
 **작동 방식: 문서에서 웹 양식으로**
 
-특수한 표 형식 또는 &quot;양식 블록&quot;을 사용하여 Word 문서 또는 Google 시트에서 직접 양식의 필드, 레이블 및 유형을 정의합니다. 이 문서를 게시하면 Edge Delivery Services은 자동으로 문서를 웹에서 바로 사용할 수 있는 HTML 양식으로 변환하여 사용자가 사이트에서 상호 작용할 수 있도록 합니다.
+특수 테이블 형식이나 “양식 블록”을 사용하여 Word 문서나 Google Sheet에서 양식의 필드, 레이블 및 유형을 직접 정의합니다. 이 문서를 게시하면 Edge Delivery Services가 자동으로 해당 문서를 사용자가 사이트에서 상호 작용할 수 있는 웹 지원 HTML 양식으로 변환합니다.
 
-**기능 및 기능**
+**기능 및 특징**
 
-* 익숙한 도구로 작성: Word, Google Docs, Google Sheets.
-* 텍스트 입력, 이메일, 드롭다운, 확인란, 라디오 버튼, 텍스트 영역 등의 필드를 정의합니다.
-* 레이블, 자리 표시자 및 도움말 메시지를 추가합니다.
-* 기본 유효성 검사 규칙(필수 필드, 이메일 형식)을 설정합니다.
-* 스팸 보호를 위해 reCAPTCHA를 통합합니다.
-* 파일 업로드를 허용합니다.
-* 즉시 게시: 문서의 변경 사항이 라이브 사이트에 빠르게 반영됩니다.
-* 사용자 지정 코드로 확장: 고급 사용자는 GitHub를 통해 사용자 지정 양식 구성 요소 및 스타일을 추가할 수 있습니다.
+* 익숙한 도구를 사용하여 작성: Word, Google Docs, Google Sheets.
+* 필드 정의: 텍스트, 이메일, 드롭다운, 체크박스, 라디오 버튼, 텍스트 영역 입력.
+* 레이블, 플레이스홀더, 도움말 메시지 추가.
+* 기본적인 유효성 검사 규칙 설정: 필수 필드, 이메일 형식.
+* 스팸 방지를 위한 reCAPTCHA 통합.
+* 파일 업로드 허용.
+* 즉시 게시: 문서의 변경 사항이 라이브 사이트에 빠르게 반영.
+* 사용자 정의 코드로 확장: 고급 사용자는 GitHub을 통해 사용자 정의 양식 구성 요소와 스타일 추가.
 
 **고려 사항**
 
-* 팀에서는 컨텐츠에 대해 Word 또는 Google Docs/Sheets를 정기적으로 사용합니다.
-* 간단하거나 적당히 복잡한 양식을 빨리 만들어야 합니다.
-* 최소한의 설정으로 양식 데이터를 스프레드시트나 이메일 주소로 직접 전송하려는 경우
+* 팀이 정기적으로 Word 또는 Google Docs/Sheets를 콘텐츠에 사용합니다.
+* 간단한 것부터 적당히 복잡한 형태까지 빠르게 만들어야 합니다.
+* 최소한의 설정으로 양식 데이터를 스프레드시트나 이메일 주소로 직접 보내고자 합니다.
 
-**제출 작동 방식(주로 Forms 제출 서비스)**
+**제출 방식 (주로 Forms 제출 서비스)**
 
-Forms은 일반적으로 이러한 방식으로 [데이터를 AEM Forms 제출 서비스로 전송](/help/forms/forms-submission-service.md)합니다. 데이터를 Google Sheet, OneDrive/SharePoint의 Excel 파일 또는 이메일로 보내도록 소스 문서 자체에서 구성할 수 있습니다.
+이렇게 생성된 양식은 일반적으로 [데이터를 AEM Forms 제출 서비스로 전송](/help/forms/forms-submission-service.md)합니다. Google Sheet, OneDrive/SharePoint의 Excel 파일 또는 이메일로 데이터를 전송하도록 (종종 소스 문서 자체에서) 설정할 수 있습니다.
 
-**문서 기반 작성 개념**
+**문서 기반 작성의 개념**
 <!--    
 ```mermaid
     graph LR
@@ -172,38 +172,38 @@ Forms은 일반적으로 이러한 방식으로 [데이터를 AEM Forms 제출 �
 ```-->
 
 ![문서 기반](/help/forms/assets/eds-doc-based.png)
-이 다이어그램은 문서에 정의된 양식이 라이브 웹 양식이 되는 방식을 보여 줍니다.
+이 다이어그램은 문서에 정의된 양식이 어떻게 라이브 웹 양식이 되는지 보여 줍니다.
 
-### 범용 편집기를 사용한 Forms 시각적
+### Universal Editor를 사용한 시각적 양식 작성
 
-[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 웹 브라우저에서 직접 양식을 작성할 수 있는 최신 드래그 앤 드롭 인터페이스를 제공합니다.
+[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 웹 브라우저에서 직접 양식을 작성할 수 있는 현대적인 드래그 앤 드롭 인터페이스를 제공합니다.
 
-**작동 방법: 양식 드래그 앤 드롭**
+**작동 방식: 드래그 앤 드롭 양식 작성**
 
-시각적 인터페이스를 사용하여 양식 구성 요소(예: 입력 필드, 단추, 드롭다운)를 페이지로 드래그합니다. 그런 다음 속성 패널을 통해 각 구성 요소의 속성(레이블, 유효성 검사 등)을 구성할 수 있습니다. 유니버설 편집기는 폼의 실시간 미리 보기를 표시합니다.
+시각적 인터페이스를 사용하여 양식 구성 요소(입력 필드, 버튼, 드롭다운 등)를 페이지로 끌어다 놓습니다. 그런 다음 속성 패널을 통해 각 구성 요소의 속성(레이블, 유효성 검사 등)을 구성할 수 있습니다. Universal Editor는 양식을 실시간으로 미리 보여 줍니다.
 
-**기능 및 기능**
+**기능 및 특징**
 
-* 사전 빌드된 구성 요소의 라이브러리로 시각적 양식 만들기.
-* 실시간 유효성 검사 및 비즈니스 논리 구성(예: 선택 항목에 따라 필드 표시/숨기기).
-* 다른 장치(데스크탑, 모바일)에 대한 라이브 미리보기 를 참조하십시오.
-* 컨텐츠 조각, AEM 워크플로 및 사용자 권한과 같은 AEM 기능과 통합됩니다.
-* 프롬프트를 사용하여 양식을 만들거나 편집하는 데 AI 지원을 받으려면 &quot;Experience Builder&quot;를 사용하십시오.
+* 사전 설치된 구성 요소 라이브러리를 사용하여 시각적 양식을 만듭니다.
+* 실시간 유효성 검사 및 비즈니스 로직을 구성합니다(예: 선택에 따라 필드 표시/숨기기).
+* 다양한 디바이스(데스크탑, 모바일)에 대해 실시간 미리보기를 확인합니다.
+* 콘텐츠 조각, AEM 워크플로, 사용자 권한과 같은 AEM 기능과 통합할 수 있습니다.
+* 프롬프트를 사용하여 양식을 만들거나 편집하기 위한 AI 지원을 받으려면 “경험 빌더”를 사용합니다.
 
 **고려 사항**
 
-* 조건부 논리, 여러 단계 패널 또는 개인화를 사용하여 복잡한 양식을 작성해야 합니다.
-* 팀(예: 마케터, 비즈니스 사용자)은 시각적 도구를 선호합니다.
-* 거버넌스, 워크플로 또는 양식에서 AEM 에셋을 사용하려면 AEM as a Cloud Service과의 강력한 통합이 필요합니다.
+* 조건 논리, 다단계 패널 또는 개인화가 포함된 복잡한 양식을 작성해야 합니다.
+* 팀(예: 마케터, 비즈니스 사용자)이 시각적 도구를 선호합니다.
+* 거버넌스, 워크플로 또는 양식에 AEM 자산을 사용하려면 AEM as a Cloud Service와 강력한 통합이 필요합니다.
 
-**제출 작동 방식(Forms 제출 서비스 또는 AEM 게시)**
+**제출 작동 방식 (Forms 제출 서비스 또는 AEM Publish)**
 
-범용 편집기로 빌드된 Forms은 다음 작업을 수행할 수 있습니다.
+Universal Editor로 작성한 양식은 다음과 같은 기능을 제공합니다.
 
-* 간단한 [Forms 제출 서비스](/help/forms/forms-submission-service.md)(스프레드시트나 전자 메일로 데이터 보내기)를 사용합니다.
-* 보다 고급 처리(예: AEM 워크플로 시작, 양식 데이터 모델 사용 또는 다른 엔터프라이즈 시스템과의 통합)를 위해 AEM 게시 인스턴스에 데이터를 제출합니다.
+* (스프레드시트나 이메일로 데이터를 전송하기 위해) 간단한[Forms 제출 서비스](/help/forms/forms-submission-service.md)를 사용합니다.
+* AEM Publish 인스턴스에 데이터를 제출하여 (AEM 워크플로 시작, 양식 데이터 모델 사용 또는 다른 엔터프라이즈 시스템과의 통합과 같은) 고급 처리를 수행합니다.
 
-**유니버설 편집기 개념**
+**Universal Editor 개념**
 
 <!--    
 ```mermaid
@@ -222,33 +222,33 @@ Forms은 일반적으로 이러한 방식으로 [데이터를 AEM Forms 제출 �
     style RenderedForm fill:#ffe6e6,stroke:#333
 ```-->
 
-![범용 편집기](/help/forms/assets/eds-ue-based.png)
+![Universal Editor](/help/forms/assets/eds-ue-based.png)
 
-이 다이어그램은 양식 작성에 사용되는 유니버설 편집기의 주요 부분을 보여 줍니다.
+이 다이어그램은 양식 작성에 사용되는 Universal Editor의 주요 부분을 보여 줍니다.
 
-### DA(문서 작성)와 함께 Forms 사용
+### 문서 작성(DA)을 통한 양식 사용
 
-[DA(문서 작성)](https://www.aem.live/developer/da-tutorial)은(는) Edge Delivery Services을 통해 제공되는 기본 웹 사이트 콘텐츠(페이지, 문서)를 만들고 관리하기 위한 Adobe 호스팅 서비스입니다. Edge Delivery Services 소스 콘텐츠에 SharePoint 또는 Google 드라이브를 사용하는 대신 사용할 수 있습니다.
+[문서 작성(DA)](https://www.aem.live/developer/da-tutorial)은 Edge Delivery Services를 통해 제공되는 주요 웹 사이트 콘텐츠(페이지, 문서)를 만들고 관리하기 위한 Adobe 호스팅 서비스입니다. Edge Delivery Services 소스 콘텐츠에 SharePoint 또는 Google Drive를 사용하는 대신 사용할 수 있습니다.
 
-**Edge Delivery Services 콘텐츠에 대한 DA(문서 작성) 이해**
+**Edge Delivery Services 콘텐츠를 위한 문서 작성(DA) 이해**
 
-문서 작성은 Adobe의 Spectrum(디자인 시스템) 및 AEM의 문서 모델(블록, 섹션)을 사용하여 엔터프라이즈급 작성 환경을 제공합니다. EDS를 위한 구조화된 컨텐츠 관리를 위해 설계되었습니다.
+문서 저작은 Adobe의 디자인 시스템(Spectrum)과 AEM의 문서 모델(블록, 섹션)을 사용하여 엔터프라이즈급 작성 환경을 제공합니다. EDS의 구조화된 콘텐츠 관리를 위해 설계되었습니다.
 
-**DA에서 Forms을 처리하는 방법(직접 작성이 아닌 포함)**
+**DA가 양식 처리 방식(직접 작성이 아닌 임베드)**
 
-DA 자체는 **처음부터 양식을 작성하는 도구가 아닙니다**. 대신 DA를 사용하여 웹 페이지를 만든 다음 문서 기반 작성 또는 유니버설 편집기를 사용하여 만든 *embed* 양식을 DA가 작성한 페이지에 추가합니다.
+DA 자체는 **양식을 처음부터 구축하는 도구가 아닙니다**. 대신 DA를 사용하여 웹 페이지를 만든 다음 (문서 기반 작성 또는 Universal Editor를 사용하여 만든) 양식을 해당 DA 작성 페이지에 *임베드*&#x200B;합니다.
 
-**DA 페이지에 Forms을 포함하는 단계**
+**DA 페이지에 양식을 임베드하는 단계**
 
-1. **다음 중 하나를 사용하여 양식을 만듭니다.**
-   * 문서 기반 작성(Word/Google Docs)
-   * 범용 편집기
+1. **양식 만들기:** 다음 중 하나를 사용하여 양식을 작성합니다.
+   * 문서 기반 작성 (Word/Google Docs)
+   * Universal Editor
 
-1. **양식 게시:** 이 양식이 게시되고 자체 Edge Delivery URL(예: `https://your-eds-project.hlx.page/forms/contact-us`)을 통해 액세스할 수 있는지 확인하십시오.
-1. **DA에서 사용자 페이지 작성:** 양식을 표시할 문서 작성에서 페이지를 만들거나 편집합니다.
-1. **양식 포함:** DA 페이지 내의 특정 &quot;블록&quot; 또는 구성 요소를 사용하여 해당 URL에서 양식을 참조하고 포함하십시오. 그런 다음 DA 페이지는 외부에서 만든 이 양식을 가져와 표시합니다.
+1. **양식 게시:** 이 양식이 게시되고 자체 Edge Delivery URL(예: `https://your-eds-project.hlx.page/forms/contact-us`)을 통해 액세스할 수 있는지 확인합니다.
+1. **DA에서 페이지 작성:** 문서 작성에서 양식을 표시할 페이지를 만들거나 편집합니다.
+1. **양식 임베드:** DA 페이지 내의 특정 “블록” 또는 구성 요소를 사용하여 URL에서 양식을 참조하고 임베드합니다. 그러면 DA 페이지가 외부에서 생성된 양식을 가져와서 표시합니다.
 
-**포함된 양식으로 문서 작성**
+**임베드된 양식을 사용한 문서 작성**
 <!--
 ```mermaid
     graph TD
@@ -273,22 +273,22 @@ DA 자체는 **처음부터 양식을 작성하는 도구가 아닙니다**. 대
 
 ![문서 작성](/help/forms/assets/eds-da-based.png)
 
-이 다이어그램은 먼저 UE 또는 문서를 사용하여 양식을 만든 다음 문서 작성에서 빌드하는 페이지에 포함한다는 것을 보여 줍니다.
+이 다이어그램은 먼저 UE 또는 Docs를 사용하여 양식을 만든 다음 문서 작성에서 작성한 페이지에 임베드하는 방식을 보여 줍니다.
 
 
 ### 작성 옵션 비교
 
-| 기준 | 문서 기반 작성 | 유니버설 편집기(WYSIWYG) | DA(문서 작성)의 Forms |
+| 기준 | 문서 기반 작성 | Universal Editor (WYSIWYG) | 문서 작성(DA)의 양식 |
 |----------------------------------|---------------------------------------|-----------------------------------------|-------------------------------------------|
-| **기본 제작 도구** | Word/Google Docs/Sheets | 브라우저(AEM 유니버설 편집기) | 해당 없음(Forms은 *포함*&#x200B;됨) |
-| **팀 스킬 레벨** | 문서 편집기에 익숙함 | 시각적 웹 도구에 익숙함 | 페이지 콘텐츠에 DA 사용 |
-| **일반적인 양식 복잡성** | 단순-중재 | 중간에서 복잡으로, 엔터프라이즈급 | 포함된 양식에 따라 다름 |
-| **제출 옵션 1(단순)** | Forms 제출 서비스(시트/이메일로) | Forms 제출 서비스(시트/이메일로) | 임베드된 양식의 설정을 따릅니다. |
-| **제출 옵션 2(고급)** | 해당 사항 없음 | AEM 게시(워크플로, FDM 등) | 임베드된 양식의 설정을 따릅니다. |
-| **AEM 백엔드 통합** | 최소 | 높음(AEM Publish 제출 시) | 임베드된 범용 편집기 양식을 통해 간접적으로 |
-| **가장 적합한 대상...** | 콘텐츠 팀이 간단한 양식을 신속하게 작성하고 데이터를 빠르게 캡처합니다. | 시각적 제어, 복잡한 양식 또는 심층 AEM 통합이 필요한 마케터, 비즈니스 사용자. | DA에서 기본 콘텐츠가 관리되고 다른 소스의 양식이 필요한 사이트. |
+| **기본 작성 도구** | Word/Google Docs/Sheets | 브라우저 (AEM Universal Editor) | N/A (양식이 *임베드됨*) |
+| **팀 기술 수준** | 문서 편집기에 익숙함 | 시각적 웹 도구에 익숙함 | 페이지 콘텐츠에 DA 사용 |
+| **일반적인 양식 복잡성** | 단순부터 중간 | 중간부터 복잡, 엔터프라이즈급 | 임베드된 양식에 따라 다름 |
+| **제출 옵션 1 (단순)** | Forms 제출 서비스 (시트/이메일) | Forms 제출 서비스 (시트/이메일) | 임베드된 양식의 설정을 따름 |
+| **제출 옵션 2 (고급)** | 해당 사항 없음 | AEM Publish (워크플로, FDM 등) | 임베드된 양식의 설정을 따름 |
+| **AEM 백엔드 통합** | 최소 | 높음 (AEM Publish 제출 포함) | 간접적, 임베드된 Universal Editor 양식을 통해 |
+| **적합한 대상...** | 콘텐츠 팀이 간단한 양식의 신속한 생성, 빠른 데이터 캡처. | 마케터, 시각적 제어, 복잡한 양식 또는 긴밀한 AEM 통합이 필요한 비즈니스 사용자. | DA에서 주요 콘텐츠를 관리하고 다른 소스의 양식이 필요한 Sites. |
 
-**향상된 결정 트리**
+**향상된 의사 결정 트리**
 <!--
 ```mermaid
     graph TD
@@ -314,38 +314,38 @@ DA 자체는 **처음부터 양식을 작성하는 도구가 아닙니다**. 대
     style G fill:#ffb6c1,stroke:#333
 ```-->
 
-![결정 트리](/help/forms/assets/eds-enhanced-decision.png)
+![의사 결정 트리](/help/forms/assets/eds-enhanced-decision.png)
 
 ## 작성 방법의 기능 비교
 
 다음 표는 다양한 AEM 양식 작성 방법의 주요 기능을 자세히 비교하여 요구 사항에 가장 적합한 방법을 선택하는 데 도움을 줍니다.&#x200B;
 
-| **기능** | **범용 편집기 (WYSIWYG)** | **문서 기반 작성** | **DA(문서 작성)** |
+| **기능** | **Universal Editor (WYSIWYG)** | **문서 기반 작성** | **문서 작성 (DA)** |
 |-----------------------------------------|-------------------------------|-----------------------------|-----------------------------|
-| **Sites를 통한 통합 컴포지션** | ✅ |                              | ✅(임베드된 양식 포함) |
-| **양식 임베드 지원** | ✅ | ✅ | ✅(유니버설 편집기 또는 문서에서 포함) |
-| **규칙 (동적 동작)** | 사용자 정의 함수가 포함된 고급 규칙 편집기 | 제한적: 표시/숨기기, 값 계산, 사용자 정의 함수 | 포함된 양식에 따라 다름 |
-| **첨부 파일 지원** | ✅ | ℹ️ (얼리 액세스) | 포함된 양식에 따라 다름 |
-| **CAPTCHA 지원** | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 포함된 양식에 따라 다름 |
-| **제출 기능** | REST, 이메일, FDM, 워크플로우, SharePoint, OneDrive, Azure Blob, Power Automate, Workfront Fusion(EA) | 스프레드시트만 | 임베드된 양식의 설정을 따릅니다. |
-| **데이터 스키마** | FDM, 사용자 정의 | 사용자 정의 | 임베드된 양식 기반 |
-| **미리 채우기** | 💡(마법사를 통해) | ✅ | 포함된 양식에 따라 다름 |
-| **조각** | ✅ | ✅ | 포함된 양식에 따라 다름 |
+| **Sites를 통한 통합 컴포지션** | ✅ |                              | ✅ (임베드된 양식 포함) |
+| **양식 임베드 지원** | ✅ | ✅ | ✅ (Universal Editor 또는 Docs에서 임베드) |
+| **규칙 (동적 동작)** | 사용자 정의 함수가 포함된 고급 규칙 편집기 | 제한적: 표시/숨기기, 값 계산, 사용자 정의 함수 | 임베드된 양식에 따라 다름 |
+| **첨부 파일 지원** | ✅ | ℹ️ (얼리 액세스) | 임베드된 양식에 따라 다름 |
+| **CAPTCHA 지원** | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 임베드된 양식에 따라 다름 |
+| **제출 기능** | REST, 이메일, FDM, 워크플로, SharePoint, OneDrive, Azure Blob, Power Automate, Workfront Fusion(EA) | 스프레드시트만 | 임베드된 양식의 설정을 따름 |
+| **데이터 스키마** | FDM, 사용자 정의 | 사용자 정의 | 임베드된 양식 기준 |
+| **미리 채우기** | 💡 (마법사 사용) | ✅ | 임베드된 양식에 따라 다름 |
+| **조각** | ✅ | ✅ | 임베드된 양식에 따라 다름 |
 | **시각적 규칙 편집기** | ✅ |                              |                              |
-| **현지화** | 💡(사이트를 통해) | ℹ️ (Excel/Sheets 설명서) | 포함된 양식에 따라 다름 |
-| **데이터 스키마 (데이터 트리)** | 💡(UI 확장 사용) |                              |                              |
-| **템플릿 지원** | 초기 콘텐츠만 |                              |                              |
+| **현지화** | 💡 (Sites 사용) | ℹ️ (Excel/Sheets 매뉴얼) | 임베드된 양식에 따라 다름 |
+| **데이터 스키마 (데이터 트리)** | 💡 (UI 확장 기능 사용) |                              |                              |
+| **템플릿 지원** | 초기 콘텐츠 전용 |                              |                              |
 | **포털** |                               |                              |                              |
-| **테마** | ℹ️ (프로젝트 수준에서) | ℹ️ (프로젝트 수준에서) | ℹ️(호스팅 사이트 기준) |
-| **사용자 정의 구성 요소** | ✅ | ✅ | ✅(포함된 구성 요소가 지원하는 경우) |
-| **OOTB 및 사용자 정의 함수** | ✅ | ✅ | ✅(임베드된 양식) |
+| **테마** | ℹ️ (프로젝트 수준에서) | ℹ️ (프로젝트 수준에서) | ℹ️ (호스팅 사이트 기준) |
+| **사용자 정의 구성 요소** | ✅ | ✅ | ✅ (임베드된 구성 요소가 지원하는 경우) |
+| **OOTB 및 사용자 정의 함수** | ✅ | ✅ | ✅ (임베드된 양식) |
 | **조각 참조** |                               |                              |                              |
 | **Sign 통합** |                               |                              |                              |
-| **실험** | ✅ | ✅ | 포함 컨텍스트에 따라 다름 |
+| **실험** | ✅ | ✅ | 임베드된 컨텍스트에 따라 다름 |
 | **Workfront를 통한 작업 관리** | ✅ |                              |                              |
 | **개인화 확장 기능** | 💡 |                              |                              |
-| **편집기 사용자 정의** | ✅(UI 확장 사용) |                              |                              |
-| **제출 액션** | ✅ | 스프레드시트만 | 임베드된 양식 기반 |
+| **편집기 사용자 정의** | ✅ (UI 확장 기능 사용) |                              |                              |
+| **제출 액션** | ✅ | 스프레드시트만 | 임베드된 양식 기준 |
 
 <!--
 
@@ -421,19 +421,19 @@ Let's bring it all together to help you decide on the best approach for your for
     *   **For visually rich forms with potential for AEM backend integration:** Universal Editor is your tool. You can start with the Forms Submission Service for simple needs and scale to full AEM Publish submissions for complex workflows.
     *   **If your site content is managed in Document Authoring (DA):** You'll create forms using one of the above methods and then embed them into your DA pages. The submission logic will be tied to how the original embedded form was configured.-->
 
-학습한 내용을 토대로 다음 단계를 진행할 수 있습니다.
+배운 내용을 바탕으로 앞으로 나아갈 수 있는 방법은 다음과 같습니다.
 
-[제출 전략을 선택하십시오](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) 프로젝트에 Forms 제출 서비스의 단순성(스프레드시트/이메일 출력에 적합)이 필요한지 또는 AEM 게시 제출 액션에서 제공하는 유연성과 백엔드 통합이 필요한지 여부를 결정합니다.
+[제출 전략 선택](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) 프로젝트에 스프레드시트/이메일 출력에 적합한 Forms 제출 서비스의 간편함이 필요한지, 아니면 AEM Publish 제출 액션이 제공하는 유연성과 백엔드 통합이 필요한지 결정합니다.
 
-효과적이고 접근 가능하며 사용자 친화적인 양식을 디자인하는 방법에 대해 알아보려면 [Forms 만들기 모범 사례](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) 문서를 참조하십시오.
+효과적이고 접근성이 뛰어나며 사용자 친화적인 양식을 디자인하는 방법은 [양식 만들기 모범 사례](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) 문서를 참조하십시오.
 
 ## 다음 단계
 
-이 안내서에서는 AEM Edge Delivery Services에서 양식 사용에 대한 개요를 제공합니다. 특정 구성에 대한 자세한 단계별 지침은 공식 Adobe Experience Manager 설명서를 참조하십시오.
+이 안내서는 AEM Edge Delivery Services에서 양식 사용에 대한 개요를 제공합니다. 특정 구성에 대한 자세한 단계별 지침은 공식 Adobe Experience Manager 설명서를 참조하십시오.
 
-* [Edge Delivery Services Forms을 사용하여 문서 기반 작성](/help/edge/docs/forms/tutorial.md)
-* [Edge Delivery Services Forms을 사용한 유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [DA(문서 작성) 및 콘텐츠 포함](https://www.aem.live/developer/da-tutorial)
+* [Edge Delivery Services Forms가 포함된 문서 기반 작성](/help/edge/docs/forms/tutorial.md)
+* [Edge Delivery Services Forms가 포함된 Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [문서 작성(DA) 및 콘텐츠 임베드](https://www.aem.live/developer/da-tutorial)
 * [AEM Forms 제출 서비스](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
 

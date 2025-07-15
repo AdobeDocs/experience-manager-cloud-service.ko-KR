@@ -227,8 +227,8 @@ ht-degree: 99%
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 변형 생성 릴리스 정보 {#generate-variations}
       + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
-   + 범용 편집기 릴리스 정보 {#univeral-editor}
-      + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
+   + Universal Editor 릴리스 정보 {#univeral-editor}
+      + [Universal Editor 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19 릴리스 정보](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [2025.05.21 릴리스 정보](/help/release-notes/universal-editor/2025/2025-05-21.md)
@@ -301,7 +301,7 @@ ht-degree: 99%
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
       + [JavaScript로 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
-      + [범용 편집기로 인라인 편집](/help/trials/headless/universal-editor.md)
+      + [Universal Editor로 인라인 편집](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
@@ -403,10 +403,10 @@ ht-degree: 99%
          + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [실행 취소 다시 실행 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + 범용 편집기 {#universal-editor}
+      + Universal Editor {#universal-editor}
          + [탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [범용 편집기에서 페이지 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Universal Editor에서 페이지 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [페이지 템플릿](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 조각 {#fragments}
@@ -1013,7 +1013,7 @@ ht-degree: 99%
          + [SEO에 대한 URL 구성](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce-cloud/configuring/caching.md)
          + [사용자 정의 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [장바구니 및 디스패처 설정](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [장바구니 및 Dispatcher 설정](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
          + [구성 요소 및 GraphQL 캐시 지우기](/help/commerce-cloud/configuring/clear-cache.md)
       + 개발 {#developing}
          + [AEM Cloud Service SDK를 사용하여 개발](/help/commerce-cloud/develop.md)
@@ -1073,21 +1073,21 @@ ht-degree: 99%
       + [리디렉션](/help/edge/docs/redirects.md)
    + 양식 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms에 대한 제출 구성](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Edge Delivery Services 양식 제출 구성](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + [양식 만들기 모범 사례](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
       + WYSIWYG 작성 {#universal-editor}
-         + [Edge Delivery Services용 양식 범용 편집기 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [범용 편집기를 사용하여 작성을 시작하는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [범용 편집기를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [범용 편집기 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [모바일 친화적인 양식 만들기: 범용 편집기의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [세련된 양식 디자인하기: 범용 편집기 스타일 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Edge Delivery Services용 양식 Universal Editor 소개 - 전체 안내서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Universal Editor를 사용하여 작성을 시작하는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Universal Editor를 사용하여 첫 번째 양식을 만드는 방법 - 단계별 튜토리얼](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Universal Editor 인터페이스 안내서: 도구, 기능 및 탐색 설명](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [모바일 친화적인 양식 만들기: Universal Editor의 반응형 디자인](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [세련된 양식 디자인하기: Universal Editor 스타일 및 테마 안내서](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [양식에 동적 동작 추가하기: 규칙 편집기 전체 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [양식 제출 안내서: 양식 제출 작업 구성 및 사용자 정의](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [스팸으로부터 양식 보호: reCAPTCHA 보안 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [양식 게시 및 배포 방법: 범용 편집기 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [사용자 정의 양식 구성 요소 빌드: 범용 편집기 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [양식 게시 및 배포 방법: Universal Editor 게시 안내서](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [사용자 정의 양식 구성 요소 빌드: Universal Editor 개발자 안내서](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [양식 데이터 모델 통합: 양식과 양식 데이터 모델 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [재사용 가능한 모듈식 독립 실행형 세그먼트: 양식에서 양식 조각 만들기 및 사용](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [Edge Delivery Services 양식 제출 시 발생하는 403 금지됨 오류 문제 해결](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
@@ -1342,10 +1342,10 @@ ht-degree: 99%
             + [사용자 정의 조건자 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [사용자 정의 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
-      + 범용 편집기 {#universal-editor}
+      + Universal Editor {#universal-editor}
          + [소개](/help/implementing/universal-editor/introduction.md)
          + [사용 사례](/help/implementing/universal-editor/use-cases.md)
-         + [범용 편집기 및 Sites 편집기](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [Universal Editor 및 Sites 편집기](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
          + [구성 요소 정의](/help/implementing/universal-editor/component-definition.md)
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
