@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 60%
+ht-degree: 99%
 
 ---
 
@@ -21,59 +21,59 @@ AEM (Adobe Experience Manager) as a Cloud Service의 Cloud Manager 2025.7.0 릴�
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2025.7.0 릴리스 일자는 2025년 7월 10일 금요일입니다.
+AEM as a Cloud Service의 Cloud Manager 2025.7.0 릴리스 일자는 2025년 7월 10일 목요일입니다.
 
-다음 릴리스는 2025년 8월 7일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 8월 7일 목요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* **Cloud Manager에서 ECDSA(Elliptic Curve Digital Signature Algorithm) SSL 인증서 지원 추가**
+* **Cloud Manager에 ECDSA(Elliptic Curve Digital Signature Algorithm) SSL 인증서 지원**
 
-  이제 Cloud Manager에서 ECDSA 인증서를 지원합니다. 이 기능은 더 작은 키 크기로 강력한 보안을 제공하여 고객이 CDN 구성에 최신 초경량 암호화를 적용할 수 있도록 합니다. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+  Cloud Manager는 이제 ECDSA 인증서를 지원합니다. 이 기능은 더 작은 키 크기로 강력한 보안을 제공하므로 고객은 CDN 구성에 가볍고 현대적인 암호화를 적용할 수 있습니다. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
-* **사이트 라이선스 사용량 보고서 다운로드**
+* **사이트 라이선스 사용 보고서 다운로드**
 
-  **사이트 사용 세부 정보** 페이지(Cloud Manager에서 **라이선스**&#x200B;를 클릭합니다. Solutions 테이블의 **Sites** 행에서 **사용 세부 정보 보기**&#x200B;를 클릭합니다. 이제 고객은 **보고서 다운로드**&#x200B;를 클릭하여 데이터를 CSV 파일로 내보낼 수 있습니다. 이 다운로드를 통해 사용 트렌드를 간편하게 분석하고 공유할 수 있습니다. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  **사이트 사용 세부 정보** 페이지에서(Cloud Manager에서) **라이선스**&#x200B;를 클릭합니다. 솔루션 테이블의 **사이트** 행에서 **사용 세부 정보 보기**&#x200B;를 클릭하면 이제 고객이 **보고서 다운로드**&#x200B;를 클릭하여 데이터를 CSV 파일로 내보낼 수 있습니다. 이 다운로드를 통해 사용 추세를 분석하고 공유하는 작업이 간소화됩니다. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
-  ![사이트 사용 세부 정보 페이지](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
+  ![Sites 사용 세부 페이지](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
   [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)를 참조하십시오.
 
 ## 얼리 어답터 프로그램 {#private-beta-program}
 
-Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 일찍 액세스하십시오.
+Cloud Manager의 Alpha 및 Beta 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
-현재 사용할 수 있는 영업 기회는 다음과 같습니다.
+현재 제공되는 기회는 다음과 같습니다.
 
 ### 파이프라인 배포를 위한 원클릭 롤백 {#one-click-rollback}
 
-최신 고객 소스 코드가 예상대로 작동하지 않을 경우 이전 배포로 빠르게 되돌립니다. 전체 파이프라인을 다시 실행하거나 수동으로 커밋을 되돌릴 필요가 없습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *선택한 환경에 대한&#x200B;**복원**>**이전 코드 배포**&#x200B;옵션을 표시하는 위의 환경 카드.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 
-![배포된 이전 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***배포된 이전 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원할 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음,**확인***을 클릭합니다.
 
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager은 환경을 이전 빌드로 되돌리고, 콘텐츠와 구성을 그대로 유지하며, 배포가 완료될 때까지 환경을&#x200B;**복원**&#x200B;합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 
-![사용 중인 Source 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에 표시된 환경 세부 정보 보기에는 사용 중인 활성 소스 코드 버전도 표시됩니다.*
+![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [restorecode@adobe.com](mailto:restorecode@adobe.com)(으)로 전자 메일을 보내세요.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [restorecode@adobe.com](mailto:restorecode@adobe.com)에 이메일을 보내 주십시오.
 
 [AEM as a Cloud Service에 배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 참조하세요.
 
-[AEM as a Cloud Service의 콘텐츠 복원](/help/operations/restore.md)도 참조하세요.
+[AEM as a Cloud Service 콘텐츠 복원](/help/operations/restore.md).
 
 
 ### 전문화된 테스트 환경 {#specialized-test-environment}
 
 이제 Cloud Manager는 **전문화된 테스트 환경**&#x200B;이라는 새로운 환경 유형의 추가를 지원합니다. 이 환경은 팀이 라이브로 전환하기 전에 거의 프로덕션 환경에서 기능을 검증할 수 있도록 설계되었습니다. 이 환경 유형은 *프로덕션 + 스테이징*, *개발* 또는 *신속한 개발* 환경과는 다르며 고급 검증 시나리오를 실행할 수 있는 집중 공간을 제공합니다.
 
-최근 향상된 기능: 이제 더 간단하고 직관적인 워크플로우를 통해 비프로덕션 파이프라인에서 특별한 테스트 환경을 구성할 수 있습니다. 간소화된 설정은 완료 시간을 단축하고 구성 오류를 줄입니다.
+최근 개선 사항: 이제 더 간단하고 직관적인 워크플로를 통해 비프로덕션 파이프라인에서 특수 테스트 환경을 구성할 수 있습니다. 간소화된 설정으로 완료 속도가 빨라지고 구성 오류가 줄어듭니다.
 
 [전문화된 테스트 환경 추가](/help/implementing/cloud-manager/specialized-test-environment.md)를 참조하십시오.
 
@@ -123,7 +123,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
@@ -132,13 +132,13 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 ## 버그 수정
 
-* 이제 Cloud Manager은 환경 업그레이드 중에 모든 파이프라인에 대한 릴리스 버전을 업데이트하여 모든 파이프라인 유형에서 일관된 버전 추적을 보장합니다. <!-- CMGR-69043 -->
-* 이제 DV(도메인 유효성 검사) SSL 인증서가 실패하면 UI에 상태 및 자세한 오류 메시지가 표시되므로 인증서 문제를 이해하고 해결하는 데 도움이 됩니다. <!-- CMGR-68872 -->
-* 도메인 매핑을 편집하는 동안 UI는 이제 선택한 도메인과 일치하지 않는 SSL 인증서를 선택할 수 없도록 하여 잘못된 구성을 줄이고 설정 중 안정성을 향상시킵니다. <!-- CMGR-64307 -->
-* 인증서가 제대로 삭제되지 않아 도메인이 여전히 활성 상태인 경우가 있습니다. <!-- CMGR-69867 -->
-* 경우에 따라 *Adobe Assets*&#x200B;에서 *Adobe Assets Ultimate*(으)로 업그레이드를 차단할 수 있는 문제를 해결했습니다. 이제 전환이 더 매끄럽고 안정적입니다. <!-- CMGR-69506 -->
-* 다운스트림 서비스 및 배포를 원활하게 지원하기 위해 다중 지역 환경을 만들 때 주요 지역 필드가 자동으로 설정되는 문제를 해결했습니다. <!-- CMGR-69471 -->
-* 실행 후 일부 구성 파이프라인이 제대로 중지되지 않던 문제를 해결했습니다. 이제 파이프라인이 정상적으로 완료되고 예상대로 닫혀 안정성이 향상됩니다. <!-- CMGR-69344 -->
+* 이제 Cloud Manager는 환경 업그레이드 중에 모든 파이프라인의 릴리스 버전을 업데이트하여 모든 파이프라인 유형에서 일관된 버전 추적을 보장합니다. <!-- CMGR-69043 -->
+* 이제 도메인 검증(DV) SSL 인증서가 실패하면 UI에 상태와 자세한 오류 메시지가 표시되어 인증서 문제를 이해하고 해결하는 데 도움이 됩니다. <!-- CMGR-68872 -->
+* 도메인 매핑을 편집하는 동안 UI에서 선택한 도메인과 일치하지 않는 SSL 인증서를 선택하지 못하도록 방지하여 구성 오류를 줄이고 설정 중 안정성을 향상시켰습니다. <!-- CMGR-64307 -->
+* 어떤 상황에서는 인증서가 제대로 삭제되지 않았지만 도메인은 여전히 활성 상태로 유지됩니다. <!-- CMGR-69867 -->
+* 특정한 경우 *Adobe Assets*&#x200B;에서 *Adobe Assets Ultimate*&#x200B;로의 업그레이드를 차단할 수 있는 문제를 해결했습니다. 이제 전환이 더욱 원활하고 안정적입니다. <!-- CMGR-69506 -->
+* 다운스트림 서비스와 배포를 원활하게 지원하기 위해 다중 지역 환경을 생성할 때 주요 지역 필드가 자동으로 설정되는 문제를 해결했습니다. <!-- CMGR-69471 -->
+* 일부 구성 파이프라인이 실행 후 제대로 중지되지 않는 문제가 해결되었습니다. 이제 파이프라인이 예상대로 정상적으로 완료되고 닫히므로 신뢰성이 향상되었습니다. <!-- CMGR-69344 -->
 
 
 <!-- ## Known issues {#known-issues} -->

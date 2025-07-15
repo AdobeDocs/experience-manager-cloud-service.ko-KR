@@ -28,14 +28,14 @@ ht-degree: 94%
 
 ### 해결된 문제 {#fixed-issues-21484}
 
-없음
+없음.
 
 #### AEM Guides {#guides-21484}
 
 * GUIDES-29781: 소스 보기에서 요소 내에 XML 댓글이 추가되어 보기를 전환하면 댓글 주변의 앞뒤 공백이 손실됩니다.
 * GUIDES-29078: 브라우저를 새로 고친 후 작성자 보기에서 주제를 열면 파일 속성 패널에서 이전에 적용한 태그가 유지되지 않고, 새 태그를 추가하면 기존 태그를 덮어씁니다. 특히 선택할 수 있는 태그가 많은 경우 더욱 그렇습니다.
 * GUIDES-28214: AEM 워크플로를 통해 검토 작업을 생성하려는 시도는 검토 노드가 생성되지 않아 계속 실패합니다.
-* GUIDES-28104: 속성이 있는 DITA 맵을 게시하면`chunk=to-content` 새 AEM Sites 출력에 중복된 JCR 노드가 생성되어 AEM Sites에서 중복된 콘텐츠 구조가 발생합니다.
+* GUIDES-28104: `chunk=to-content` 속성이 있는 DITA 맵을 게시하면 새 AEM Sites 출력에 중복된 JCR 노드가 생성되어 AEM Sites에서 중복된 콘텐츠 구조가 발생합니다.
 * GUIDES-29065, GUIDES-28793: 초대형 컬렉션을 작업할 때 로딩 시간이 길어지고 간헐적인 시간 초과가 발생하는 등 성능 문제가 발생합니다.
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
