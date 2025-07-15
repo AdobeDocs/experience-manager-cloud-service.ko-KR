@@ -47,7 +47,7 @@ AEM은 기존 클라이언트 라이브러리 위에 사이트를 계층화하�
 
 ## 요구 사항 {#requirements}
 
-AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
+AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 
