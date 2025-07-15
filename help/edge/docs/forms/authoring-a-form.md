@@ -7,9 +7,9 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
 source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1075'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager(AEM)는 매력적이고, 반응성이 뛰어나고, 역
 
 AEM은 인터랙티브하고 매력적인 양식을 만들기 위한 다양한 양식 작성 옵션을 제공합니다. 양식 작성 환경을 선택할 때 다음 요소를 고려하십시오.
 
-| 📝 **고려 사항** | 💡 **질문할 내용** |
+| 📝 **고려 사항** | 💡 **질문 내용** |
 |----------------------|--------------------|
 | **사용자 전문성** | 양식을 작성하는 사람은 개발자, 비즈니스 사용자, 콘텐츠 작성자 중 누구입니까? |
 | **양식 복잡성** | 양식에 고급 규칙, 동적 섹션 또는 통합이 필요합니까? |
@@ -42,7 +42,7 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 * [핵심 구성 요소](/help/forms/creating-adaptive-form-core-components.md): 핵심 구성 요소를 사용하여 현대적이고 반응성이 뛰어나며 확장 가능한 양식을 만들 수 있습니다. 핵심 구성 요소는 재사용 가능하고, 접근성이 뛰어나며, 더 나은 성능을 지원합니다. 핵심 구성 요소를 사용하여 작성된 양식은 AEM과 Edge Delivery Services 모두에 게시할 수 있으므로 플랫폼 전반에 걸쳐 유연성을 제공합니다.
 
 * [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md): Edge Delivery Services 양식은 양식 작성, 실행 및 처리 방식을 변화시킵니다. 조직은 Edge Delivery Services를 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 만들 수 있으며, 빠른 개발 환경을 통해 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. Edge Delivery Services 양식은 두 가지 방법으로 작성할 수 있습니다.
-   * [WYSIWYG 작성](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 제한된 기술적 지식이 있는 콘텐츠 작성자의 경우 범용 편집기를 사용하여 시각적 끌어다 놓기 방식으로 양식을 작성할 수 있습니다. 범용 편집기를 사용하여 작성된 양식은 빠르고 가벼운 렌더링을 위해 Edge Delivery Services를 통해 게재됩니다.
+   * [WYSIWYG 작성](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 제한된 기술적 지식이 있는 콘텐츠 작성자의 경우 Universal Editor를 사용하여 시각적 드래그 앤 드롭 방식으로 양식을 작성할 수 있습니다. Universal Editor를 사용하여 작성된 양식은 빠르고 가벼운 렌더링을 위해 Edge Delivery Services를 통해 게재됩니다.
    * [문서 기반 작성](/help/edge/docs/forms/tutorial.md): Microsoft Excel 또는 Google Sheets와 같은 도구를 사용하여 양식 구조와 내용을 정의합니다. 이 방법은 스프레드시트 기반 입력을 선호하는 비즈니스 사용자에게 유용합니다. 이러한 양식은 일반적으로 Edge Delivery Services를 통해 게시되며, 가벼운 고용량 사용 사례에 적합합니다.
 * [Headless 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): AEM에 의존하지 않고 API를 사용하여 React, Angular, 모바일 앱, 키오스크 등 모든 프론트엔드에서 양식을 JSON으로 렌더링합니다. 현재는 핵심 구성 요소만 Headless 게재를 지원합니다. Headless 양식은 옴니채널 사용 사례에 적합하며 AEM의 페이지 렌더링과 독립적으로 사용되므로 사용자 정의 프론트엔드 배포에 유연하게 사용할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 
 &#x200B;다음 표는 다양한 AEM 양식 작성 방법을 간략하게 비교한 것으로 접근 방식, 기능, 게시 옵션 및 이상적인 사용 사례를 강조하여 사용자의 요구 사항에 가장 적합한 방법을 선택하는 데 도움을 줍니다.
 
-| **고려 사항** | **기초 구성 요소** | **핵심 구성 요소** | **범용 편집기 (WYSIWYG)** | **문서 기반 작성** | **Headless 작성** |
+| **고려 사항** | **기초 구성 요소** | **핵심 구성 요소** | **Universal Editor (WYSIWYG)** | **문서 기반 작성** | **Headless 작성** |
 |--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **적합한 용도** | AEM 내에서 기존 양식 및 워크플로 유지 관리 | 복잡한 워크플로 및 통합을 지원하는 확장 가능한 최신 양식 | 요구 사항이 복잡한 Edge Delivery Service 사이트를 위한 양식 만들기 | 빠른 프로토타이핑 또는 고급 제출 서비스가 없는 기본 양식 | 다양한 플랫폼(웹, 모바일, 키오스크 등)을 통한 옴니채널 경험 |
 | **사용자 전문성** | 개발자, 콘텐츠 작성자 | 개발자, 고급 작성자 | 비즈니스 사용자, 콘텐츠 작성자 | 비즈니스 사용자 | 개발자 |
@@ -74,7 +74,7 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 
 다음 표는 다양한 AEM 양식 작성 방법의 주요 기능을 자세히 비교하여 요구 사항에 가장 적합한 방법을 선택하는 데 도움을 줍니다.&#x200B;
 
-| **기능** | **기초 구성 요소** | **핵심 구성 요소** | **범용 편집기 (WYSIWYG)** | **문서 기반 작성** | **Headless 작성** |
+| **기능** | **기초 구성 요소** | **핵심 구성 요소** | **Universal Editor (WYSIWYG)** | **문서 기반 작성** | **Headless 작성** |
 |-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
 | **Sites를 통한 통합 컴포지션** | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **양식 임베드 지원** | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -83,15 +83,15 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 | **CAPTCHA 지원** | reCAPTCHA v2/Enterprise, hCaptcha(EA), Turnstile(EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 사용자 정의 통합 필요 |
 | **제출 기능** | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | REST 엔드포인트, 이메일, 양식 데이터 모델(FDM), AEM 워크플로 호출, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion(EA) | 스프레드시트만 | 사용자 정의 API 엔드포인트 |
 | **데이터 스키마** | FDM, 사용자 정의 | FDM, 사용자 정의 | FDM, 사용자 정의 | 사용자 정의 | 사용자 정의 |
-| **미리 채우기** | ✅ | ✅ | 💡(마법사를 통해) | ✅ | 사용자 정의 구현 |
+| **미리 채우기** | ✅ | ✅ | 💡 (마법사 사용) | ✅ | 사용자 정의 구현 |
 | **조각** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **시각적 규칙 편집기** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **현지화** | ✅ | ✅ | 💡(사이트를 통해) | ℹ️ (Excel - 수동, Google Sheets 함수) | 사용자 정의 구현 |
-| **데이터 스키마 (데이터 트리)** | ✅ | ✅ | 💡(UI 확장 사용) | ❌ | 사용자 정의 구현 |
+| **현지화** | ✅ | ✅ | 💡 (Sites 사용) | ℹ️ (Excel - 수동, Google Sheets 함수) | 사용자 정의 구현 |
+| **데이터 스키마 (데이터 트리)** | ✅ | ✅ | 💡 (UI 확장 기능 사용) | ❌ | 사용자 정의 구현 |
 | **템플릿 지원** | ✅ | ✅ | 초기 콘텐츠만 제공, 정책 없음 | ❌ | 사용자 정의 구현 |
 | **포털** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR 작성** | ✅ | ✅ | 💡(Derlina를 통해) | ❌ | ❌ |
-| **DoR 생성** | ✅ | ✅ | 💡(FORMS-2475 신규) | ❌ | ❌ |
+| **DoR 작성** | ✅ | ✅ | 💡 (Derlina 사용) | ❌ | ❌ |
+| **DoR 생성** | ✅ | ✅ | 💡 (FORMS-2475 New) | ❌ | ❌ |
 | **테마** | ✅ | ✅ | ℹ️ (프로젝트 수준에서) | ℹ️ (프로젝트 수준에서) | 사용자 정의 구현 |
 | **사용자 정의 구성 요소** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB 및 사용자 정의 함수** | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -101,13 +101,13 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 | **실험** | ❌ | ❌ | ✅ | ✅ | 사용자 정의 구현 |
 | **Workfront를 통한 작업 관리** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **개인화 확장 기능** | ❌ | ❌ | 💡 | ❌ | 사용자 정의 구현 |
-| **편집기 사용자 정의** | ❌ | ❌ | ✅(UI 확장 사용) | ❌ | 사용자 정의 구현 |
+| **편집기 사용자 정의** | ❌ | ❌ | ✅ (UI 확장 기능 사용) | ❌ | 사용자 정의 구현 |
 | **제출 액션** | ✅ | ✅ | ✅ | 스프레드시트만 | 사용자 정의 구현 |
 
 
 ## 관련 문서
 
 * [Microsoft Excel 또는 Google Sheets를 사용하여 문서 기반 작성](/help/edge/docs/forms/create-forms.md)
-* [WYSIWYG 작성용 범용 편집기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+* [WYSIWYG 작성용 Universal Editor](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 * [적응형 양식(기초 구성 요소) 만들기](/help/forms/creating-adaptive-form.md)
 * [적응형 양식(핵심 구성 요소) 만들기](/help/forms/create-an-adaptive-form.md)
