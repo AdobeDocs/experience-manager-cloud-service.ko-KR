@@ -142,6 +142,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
   }
   
 ```
+
 * `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타기팅합니다. 예를 들어 `.text-wrapper`는 모든 텍스트 필드를 타기팅합니다.
 * `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.field-first-name`은 “이름” 텍스트 필드를 타기팅합니다. 이 선택기는 필드-{Name} 클래스가 있는 요소를 타깃팅하는 데 사용할 수 있지만 주의해야 합니다. 이 특정한 경우에는 입력 자체뿐만 아니라 레이블 및 설명 요소도 대상으로 하기 때문에 입력 필드 스타일을 지정하는 데 유용하지 않습니다. 텍스트 입력 필드(.text-wrapper 입력)를 대상으로 하는 선택기와 같이 더 구체적인 선택기를 사용하는 것이 좋습니다.
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * 래퍼 타기팅: 첫 번째 선택기(`.drop-down-wrapper`)는 외부 래퍼 요소를 타기팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
 * Flexbox 레이아웃: Flexbox는 깔끔한 레이아웃을 위해 레이블, 드롭다운 및 설명을 수직으로 정렬합니다.
 * 레이블 스타일: 더 굵은 글꼴 두께와 약간의 여백으로 레이블을 돋보이게 합니다.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### 라디오 그룹
 
@@ -282,6 +284,7 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
+
 이 선택기는 radio-group-wrapper 클래스가 있는 모든 필드 세트를 대상으로 합니다. 전체 라디오 그룹에 일반 스타일을 적용하는 데 유용합니다.
 
 * 라디오 버튼 레이블 타기팅
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
-* 범례 요소 (<legend>)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+* 범례 요소 (&lt;legend>)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
 * Fieldset 내부에서 여러 개의.{Type} 래퍼 요소(.text-wrapper 및 .password-wrapper)는 패널 내의 개별 양식 필드를 나타냅니다.
 * 각 래퍼에는 이전 예시와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 이 선택기는 반복 가능 패널 내의 모든 필드 래퍼 스타일을 지정하여 필드 사이의 간격을 일관되게 유지합니다.
 
 * 특정 필드 타기팅(패널 내):

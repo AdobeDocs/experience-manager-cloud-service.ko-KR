@@ -35,13 +35,13 @@ ht-degree: 97%
 1. **게시**&#x200B;를 클릭하면 양식의 제목을 포함한 게시 자산을 보여 주는 화면 또는 팝업이 나타납니다. 이 예제에서는 **Wknd_Form** 템플릿이 사용되었습니다.
    ![클릭 시 게시](/help/forms/assets/on-click-publish.png)
 
-1. **게시**를 다시 클릭하면 확인 팝업이 나타나 양식이 게시되었음을 알려 줍니다.
+1. **게시**&#x200B;를 다시 클릭하면 확인 팝업이 나타나 양식이 게시되었음을 알려 줍니다.
    ![게시 성공](/help/forms/assets/publish-success.png)
 
-1. 양식의 게시 상태를 확인하려면 **게시**를 다시 클릭합니다.
+1. 양식의 게시 상태를 확인하려면 **게시**&#x200B;를 다시 클릭합니다.
    ![게시 상태](/help/forms/assets/publish-status.png)
 
-1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 점 3개로 된 메뉴를 클릭한 다음 **게시 취소**를 클릭합니다.
+1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 점 3개로 된 메뉴를 클릭한 다음 **게시 취소**&#x200B;를 클릭합니다.
    ![게시 취소](/help/forms/assets/unpublish--form.png)
 
 ## AEM Publisher에 대한 레퍼러 필터를 구성하여 Edge Delivery에서 양식 제출 활성화
@@ -57,6 +57,7 @@ ht-degree: 97%
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **로컬 개발의 경우:**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 로컬 개발의 경우 CORS를 **개발 UI 호스트 URL**&#x200B;에서 활성화하는 방법에 대한 [설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)를 참조하십시오.
 
 ### 레퍼러 필터 구성
