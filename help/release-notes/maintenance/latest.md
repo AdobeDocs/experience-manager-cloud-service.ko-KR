@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
+source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 56%
+source-wordcount: '387'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 56%
 
 ## 릴리스 21484 {#21484}
 
-다음은 2025년 7월 10일에 공개적으로 릴리스된 유지 보수 릴리스 21484에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 21331.
+2025년 7월 10일에 릴리스된 유지 관리 릴리스 21484의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 21331이었습니다.
 
 이 유지 관리 릴리스(2025.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
@@ -32,17 +32,17 @@ ht-degree: 56%
 
 #### AEM Guides {#guides-21484}
 
-* GUIDES-29781: Source 보기의 요소 내에 XML 주석을 추가하면 보기를 전환할 때 주석 주위의 선행 및 후행 공백이 손실됩니다.
-* GUIDES-29078: 브라우저를 새로 고친 후 작성자 보기에서 주제를 열 때 [파일 속성] 패널의 이전에 적용된 태그는 유지되지 않으며, 특히 선택할 수 있는 태그가 많을 경우 새 태그를 추가하면 기존 태그를 덮어씁니다.
-* GUIDES-28214: 검토 노드가 생성되지 않으므로 AEM 워크플로우를 통해 검토 작업을 만들려고 하면 지속적으로 실패합니다.
-* GUIDES-28104: `chunk=to-content` 특성이 있는 DITA 맵을 게시하면 새 AEM Sites 출력에 중복 JCR 노드가 생성되어 AEM Sites에서 컨텐츠 구조가 중복됩니다.
-* GUIDES-29065, GUIDES-28793: 큰 컬렉션으로 작업할 때 로드 시간이 길어지고 간헐적인 시간 초과와 같은 성능 문제가 발생합니다.
+* GUIDES-29781: 소스 보기에서 요소 내에 XML 댓글이 추가되어 보기를 전환하면 댓글 주변의 앞뒤 공백이 손실됩니다.
+* GUIDES-29078: 브라우저를 새로 고친 후 작성자 보기에서 주제를 열면 파일 속성 패널에서 이전에 적용한 태그가 유지되지 않고, 새 태그를 추가하면 기존 태그를 덮어씁니다. 특히 선택할 수 있는 태그가 많은 경우 더욱 그렇습니다.
+* GUIDES-28214: AEM 워크플로를 통해 검토 작업을 생성하려는 시도는 검토 노드가 생성되지 않아 계속 실패합니다.
+* GUIDES-28104: 속성이 있는 DITA 맵을 게시하면`chunk=to-content` 새 AEM Sites 출력에 중복된 JCR 노드가 생성되어 AEM Sites에서 중복된 콘텐츠 구조가 발생합니다.
+* GUIDES-29065, GUIDES-28793: 초대형 컬렉션을 작업할 때 로딩 시간이 길어지고 간헐적인 시간 초과가 발생하는 등 성능 문제가 발생합니다.
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
 ### 알려진 문제 {#known-issues-21484}
 
-없음.
+* 소프트웨어 배포 포털에서 사용할 수 있는 SDK에 로컬로 실행되는 문제가 있습니다. 로컬 테스트에 이전 SDK을 계속 사용하십시오.
 
 ### 사용 중단된 기능 및 API {#deprecated-21484}
 
