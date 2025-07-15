@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="알파벳" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 4%
 
 ---
@@ -34,9 +34,8 @@ ht-degree: 4%
 * 조직이 얼리어답터 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
 * 선택한 환경은 `Development` 환경(임시 Alpha 제한)입니다.
-* 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **10일 미만** 전에 실행되었습니다.
+* 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
-* 복원할 대상 소스 코드 버전이 **30일 이내에 배포되었습니다**.
 
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
 
