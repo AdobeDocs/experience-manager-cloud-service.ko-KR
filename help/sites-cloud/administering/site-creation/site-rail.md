@@ -1,14 +1,14 @@
 ---
 title: 사이트 패널을 사용하여 사이트 테마 관리
-description: 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 패널의 강력한 기능에 대해 알아봅니다.
+description: 게시 게재를 사용한 기존 AEM 작성 프로젝트의 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 패널의 강력한 기능에 대해 알아봅니다.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 31%
+source-wordcount: '607'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 31%
 
 {{traditional-aem}}
 
-사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 패널의 강력한 기능에 대해 알아봅니다.
+게시 게재를 사용한 기존 AEM 작성 프로젝트의 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 패널의 강력한 기능에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
-사이트 패널을 사용하면 사이트의 테마 및 템플릿 리소스를 관리할 수 있습니다. [다른 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md)(콘텐츠 트리, 참조 또는 타임라인 패널 등)과 마찬가지로 [사이트] 패널은 [사이트 콘솔]의 맨 왼쪽 패널에 나타나며 선택한 항목에 대한 정보를 표시합니다. 다른 패널과 달리 사이트 패널은 사이트 루트에만 적용됩니다.
+사이트 패널을 사용하면 [게시 게재를 사용하여 기존 AEM 제작 프로젝트에 대한 사이트의 테마 및 템플릿 리소스를 관리할 수 있습니다.](/help/sites-cloud/authoring/author-publish.md) [다른 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md)(콘텐츠 트리, 참조 또는 타임라인 패널 등)과 같이 [사이트] 패널은 사이트 콘솔의 맨 왼쪽 패널에 나타나며 선택한 항목에 대한 정보를 표시합니다. 다른 패널과 달리 사이트 패널은 사이트 루트에만 적용됩니다.
 
 사이트 패널은 다음을 포함하여 사이트의 테마 및 템플릿 관련 정보를 관리하는 데 사용됩니다.
 
@@ -42,11 +42,11 @@ ht-degree: 31%
 
 ![테마 소스 다운로드](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-맞춤화를 위해 사이트 테마의 로컬 복사본을 `.zip` 파일로 다운로드하려면 **테마 원본 다운로드**&#x200B;를 선택하십시오.
+맞춤화를 위해 사이트 테마의 로컬 복사본을 **파일로 다운로드하려면**&#x200B;테마 원본 다운로드`.zip`를 선택하십시오.
 
 ## 템플릿 리소스 다운로드 {#downloading-template-resources}
 
-[사이트 템플릿](site-templates.md)에는 사이트 콘텐츠 구조 및 [사이트 테마](site-themes.md) 이외의 정보가 포함될 수 있습니다. 사이트 템플릿에는 와이어프레임 디자인 또는 기타 사이트 관련 파일 등이 포함될 수 있습니다.
+[사이트 템플릿](site-templates.md)에는 사이트 콘텐츠 구조 및 [사이트 테마 외에도 다른 정보가 포함될 수 있습니다.](site-themes.md) 사이트 템플릿에는 와이어프레임 디자인 또는 기타 사이트 관련 파일 등이 포함될 수 있습니다.
 
 사이트가 사이트 템플릿을 기반으로 하는 경우 사이트 콘솔에 표시되는 사이트 패널을 사용하여 사이트 루트를 선택해 추가 사이트 리소스를 포함하여 사이트에 대한 테마 정보를 표시할 수 있습니다.
 
@@ -86,4 +86,4 @@ AEM에서 새 테마 버전이 프론트엔드 파이프라인을 통해 배포�
 
 ![프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/assets/enable-fep.png)
 
-자세한 내용은 문서 [프론트엔드 파이프라인 활성화](enable-front-end-pipeline.md)를 참조하십시오.
+자세한 내용은 [프론트엔드 파이프라인 활성화](enable-front-end-pipeline.md) 문서를 참조하십시오.

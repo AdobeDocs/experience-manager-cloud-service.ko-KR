@@ -5,36 +5,25 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 80%
+source-wordcount: '726'
+ht-degree: 55%
 
 ---
 
-# 사이트 생성 {#creating-site}
 
-{{traditional-aem}}
+# 사이트 생성 {#creating-site}
 
 AEM을 통해 사이트 템플릿을 사용하여 사이트를 만들고 이러한 사이트의 스타일 및 구조를 정의하는 방법에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
-콘텐츠 작성자가 콘텐츠로 페이지를 만들기 위해서는 먼저 사이트를 제작해야 합니다. 이 작업은 일반적으로 사이트의 초기 구조를 정의하는 AEM 관리자가 수행합니다. 사이트 템플릿을 사용하면 빠르고 유연하게 사이트를 생성할 수 있습니다.
-
-AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자도 사이트 템플릿을 사용하여 처음부터 간편하게 사이트를 만들 수 있습니다.
-
-만든 후에도 빠른 사이트 생성 도구를 사용하여 빠르게 테마를 맞춤화하고 AEM 사이트(JavaScript, CSS 및 정적 리소스)의 스타일을 지정할 수 있습니다. 이렇게 하면 AEM에 대한 지식이 전혀 필요 없는 프론트엔드 개발자가 콘텐츠 크리에이터와 별도로 작업할 수 있습니다. AEM 관리자는 사이트 테마를 다운로드하여 프론트엔드 개발자에게 제공하고, 프론트엔드 개발자는 자주 사용하는 도구를 사용하여 이를 맞춤화한 다음 변경 내용을 AEM 코드 저장소에 커밋하여 배포합니다.
-
-이 문서는 빠른 사이트 생성 도구를 사용한 사이트 생성을 중점적으로 다룹니다. 사이트 생성 및 맞춤화 워크플로 개요를 살펴보려면 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)을 참조하십시오.
+콘텐츠 작성자가 콘텐츠로 페이지를 만들기 위해서는 먼저 사이트를 제작해야 합니다. 이 작업은 일반적으로 사이트의 초기 구조를 정의하는 AEM 관리자가 수행합니다. 사이트 템플릿을 사용하면 개발자가 아닌 사용자도 빠르고 유연하게 사이트를 만들 수 있습니다.
 
 ## 사이트 구조 계획 {#structure}
 
-사이트의 목적과 계획된 콘텐츠를 사전에 충분히 고려하십시오. 이를 통해 사이트 구조 설계 방법을 유도해낼 수 있습니다. 훌륭한 사이트 구조를 통해 사이트 방문자는 간편하게 탐색하고 콘텐츠를 검색할 수 있을 뿐만 아니라 [다중 사이트 관리 및 번역](/help/sites-cloud/administering/msm-and-translation.md) 등의 AEM 기능을 사용할 수 있습니다.
-
->[!TIP]
->
->[WKND 참조 사이트](https://wknd.site)는 완전한 기능을 갖춘 야외 활동 브랜드 웹 사이트의 모범 사례 구현을 제공합니다. 이를 살펴보고 잘 구축된 AEM 사이트를 구성하는 방법을 확인하십시오.
+사이트의 목적과 계획된 콘텐츠를 사전에 충분히 고려하십시오. 이를 통해 사이트 구조 설계 방법을 유도해낼 수 있습니다. 훌륭한 사이트 구조를 통해 사이트 방문자는 간편하게 탐색하고 콘텐츠를 검색할 수 있으며 [다중 사이트 관리 및 번역](/help/sites-cloud/administering/msm-and-translation.md)과 같은 다양한 AEM 기능을 사용할 수 있습니다.
 
 ## 사이트 템플릿 {#site-templates}
 
@@ -44,11 +33,15 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
 >[!TIP]
 >
->사이트 템플릿에 대한 자세한 내용은 [사이트 템플릿](site-templates.md)을 참조하십시오.
+>사이트 템플릿에 대한 자세한 내용은 [사이트 템플릿](site-templates.md) 문서를 참조하십시오.
 
 >[!NOTE]
 >
->사이트 템플릿을 페이지 템플릿과 혼동하면 안 됩니다. 사이트 템플릿은 사이트의 전반적인 구조를 정의하는 역할을 합니다. 페이지 템플릿은 개별 페이지의 구조 및 초기 콘텐츠를 정의합니다.
+>사이트 템플릿을 [페이지 템플릿과 혼동하면 안 됩니다.](/help/sites-cloud/authoring/page-editor/templates.md) 사이트 템플릿은 사이트의 전반적인 구조를 정의하는 역할을 합니다. 페이지 템플릿은 개별 페이지의 구조 및 초기 콘텐츠를 정의합니다.
+
+### Adobe 제공 사이트 템플릿 {#adobe-templates}
+
+{{adobe-templates}}
 
 ## 사이트 생성 {#create-site}
 
@@ -80,6 +73,11 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
    * 사이트 이름은 URL의 일부가 됩니다.
    * 사이트 이름은 [AEM의 페이지 이름 지정 규칙](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)을 준수해야 합니다.
 
+1. 사이트 템플릿에 필요한 추가 사이트 세부 정보를 제공합니다.
+
+   * 다른 템플릿에는 추가 세부 정보가 필요할 수 있습니다.
+   * 예를 들어 [Edge Delivery Services 프로젝트](https://www.aem.live/developer/ue-tutorial)용 템플릿에는 프로젝트의 GitHub 저장소가 필요합니다.
+
 1. **만들기**&#x200B;를 선택하면 사이트 템플릿에서 사이트가 만들어집니다.
 
    ![새 사이트 세부 정보](../assets/create-site-details.png)
@@ -96,10 +94,10 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
 ## 사이트 맞춤화 {#site-customization}
 
-사이트에서 사용할 수 있는 템플릿 이상의 맞춤화가 필요한 경우 몇 가지 옵션이 있습니다.
+템플릿은 사이트의 기본 구조와 스타일을 빠르게 설정하는 데 유용합니다. 그러나 대부분의 프로젝트에는 몇 가지 추가 스타일 및 맞춤화가 필요합니다. 사이트 템플릿을 사용하면 사이트 스타일을 분리할 수 있으므로 프론트엔드 개발자는 AEM에 대한 지식이 없어도 사이트 스타일을 지정할 수 있으며 다음과 같은 작업을 수행할 수 있습니다
+콘텐츠 작성자와 별도로 작업하고 콘텐츠 작성자와 나란히 작업합니다. 프로젝트 유형에 따라 두 가지 형태가 될 수 있습니다.
 
-* 사이트 구조 또는 초기 콘텐츠를 조정해야 하는 경우 [요구 사항에 맞게 사이트 템플릿을 사용자 지정할 수 있습니다](site-templates.md).
-* 사이트 스타일을 조정해야 하는 경우 [사이트 테마를 다운로드하여 사용자 지정할 수 있습니다](/help/journey-sites/quick-site/overview.md).
-* 사이트 기능을 조정해야 하는 경우 [사이트를 완전히 사용자 지정할 수 있습니다](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
-
-모든 맞춤화는 개발 팀의 지원을 통해 수행해야 합니다.
+* 범용 편집기로 AEM 페이지를 작성하고 [edge 전달을 통해 전달하는 프로젝트의 경우](/help/edge/overview.md) 모든 스타일이 GitHub 프로젝트에서 수행됩니다.
+   * 자세한 내용은 [시작하기 - 유니버설 편집기 개발자 자습서](https://www.aem.live/developer/ue-tutorial) 문서를 참조하십시오.
+* [게시 게재를 통해 기존 AEM 페이지를 작성하고 전달하는 프로젝트의 경우](/help/sites-cloud/authoring/author-publish.md) AEM 관리자는 사이트 테마를 다운로드하여 프론트엔드 개발자에게 제공하고 프론트엔드 개발자는 자주 사용하는 도구를 사용하여 이를 맞춤화한 다음 변경 내용을 AEM 코드 저장소에 커밋하여 배포합니다.
+   * 자세한 내용은 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md) 문서를 참조하십시오.
