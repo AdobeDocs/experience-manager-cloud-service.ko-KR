@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
-workflow-type: ht
-source-wordcount: '4262'
-ht-degree: 100%
+source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
+workflow-type: tm+mt
+source-wordcount: '4582'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 * 대규모 DoS 공격에 대한 취약성을 줄이기 위해 속도 제한 설정
 * 악성으로 알려진 IP 주소가 사용자 페이지를 타기팅하지 않도록 함
 
-대부분의 트래픽 필터 규칙은 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. 이 규칙은 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함하여 요청 속성과 요청 헤더에서 주로 작동합니다.
+이러한 트래픽 필터 규칙 중 대부분은 모든 AEM as a Cloud Service 사이트 및 Forms 고객이 사용할 수 있습니다. *표준 트래픽 필터 규칙*&#x200B;이라고도 하는 이 규칙은 주로 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함한 요청 속성 및 요청 헤더에서 작동합니다. 표준 트래픽 필터 규칙에는 트래픽 스파이크를 방지하기 위한 속도 제한 규칙이 포함되어 있습니다.
 
-트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
+트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙을 WAF(Web Application Firewall) 트래픽 필터 규칙(또는 줄여서 *WAF 규칙*)이라고 하며, 이 문서의 뒷부분에서 설명하는 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
 트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이징, 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
@@ -61,23 +61,23 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 트래픽 필터 규칙을 Adobe에서 관리하는 콘텐츠 전송 네트워크에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 카테고리에 라이선스를 부여할 수도 있습니다.
+이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 트래픽 필터 규칙을 Adobe에서 관리하는 콘텐츠 전송 네트워크에 배포할 수 있습니다. IP 주소, 경로 및 헤더와 같은 속성을 기반으로 하는 *표준 트래픽 필터 규칙* 또는 속도 제한을 기반으로 하는 규칙 외에, 고객은 *WAF 규칙*&#x200B;이라는 강력한 하위 범주의 트래픽 필터 규칙에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
 다음 프로세스는 올바른 트래픽 필터 규칙을 권장하는 높은 수준의 엔드 투 엔드 프로세스입니다.
 
 1. [설정](#setup) 섹션의 설명에 따라 비프로덕션 및 프로덕션 구성 파이프라인을 구성하십시오.
-1. WAF 트래픽 필터 규칙의 하위 카테고리에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
+1. *WAF 트래픽 필터 규칙*&#x200B;에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 사용하도록 설정해야 합니다.
 1. 라이선스가 부여된 경우 WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
-1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
-1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
-1. CDN 로그 분석 기반의 사용자 정의 규칙을 추가하여 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 후 로그 모드에서 스테이지 및 프로덕션 환경에 배포한 다음 차단 모드에서 배포하십시오.
+1. 권장 시작 규칙을 `cdn.yaml`에 복사하고, 일부 규칙을 로그 모드로 사용하여 구성을 프로덕션 환경에 배포합니다.
+1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류(false positive)를 검색하고 필요한 조정을 수행하여 궁극적으로 블록 모드에서 모든 시작 규칙을 활성화합니다.
+1. 필요한 경우 CDN 로그의 분석을 기반으로 사용자 지정 규칙을 추가하고, 로그 모드에서 스테이지 및 프로덕션 환경에 배포하기 전에 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 다음 차단 모드로 배포합니다.
 1. 트래픽을 지속적으로 모니터링하면서 위협 환경이 변함에 따라 규칙을 변경하십시오.
 
 ## 설정 {#setup}
 
-1. WAF 규칙을 포함한 트래픽 필터 규칙 세트로 `cdn.yaml` 파일을 만듭니다.
+1. WAF 규칙을 포함한 일련의 트래픽 필터 규칙을 사용하여 `cdn.yaml` 파일을 만듭니다. 예:
 
    ```
    kind: "CDN"
@@ -113,7 +113,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
 
-향상된 보안 또는 WAF-DDoS 보호 보안 제품에 라이선스를 부여한 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(이하 WAF 규칙)의 특수 카테고리를 구성할 수도 있습니다.
+향상된 보안 또는 WAF-DDoS 보호 보안 서비스의 라이선스를 부여하는 고객은 하나 이상의 *WAF 플래그*&#x200B;를 참조하는 *WAF 트래픽 필터 규칙*(또는 [WAF 규칙](#waf-flags-list))이라는 특별한 트래픽 필터 규칙 범주를 구성할 수도 있습니다.
 
 다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
@@ -237,8 +237,8 @@ when:
 
 | **플래그 ID** | **플래그 이름** | **설명** |
 |---|---|---|
-| 공격 | 공격 | 해당 표에 나열된 공격 유형 중 하나 이상을 포함하는 요청을 식별하기 위한 플래그 |
-| ATTACK-FROM-BAD-IP | 악성 IP로부터의 공격 | `BAD-IP`에서 오며 해당 표에 나열된 공격 유형 중 하나 이상을 포함하는 요청을 식별하기 위한 플래그 |
+| 공격 | 공격 | 악성 트래픽과 관련된 플래그의 집계(SQLI, CMDEXE, XSS 등). 이 플래그를 효과적으로 사용하는 방법은 [권장 WAF 규칙 섹션](#recommended-waf-starter-rules)을 참조하십시오. |
+| ATTACK-FROM-BAD-IP | 악성 IP로부터의 공격 | ATTACK 플래그와 유사하지만, `BAD-IP` 플래그와 &quot;논리적 AND-ed&quot;이므로 ATTACK 및 BAD-IP와 모두 일치하는 경우 요청이 플래그가 지정됩니다. 이 플래그를 효과적으로 사용하는 방법은 [권장 WAF 규칙 섹션](#recommended-waf-starter-rules)을 참조하십시오. |
 | SQLI | SQL 주입 | SQL 주입은 임의의 데이터베이스 쿼리를 실행하여 애플리케이션에 대한 액세스 권한을 얻거나 권한 있는 정보를 얻으려는 시도입니다. |
 | BACKDOOR | 백도어 | 백도어 신호는 일반적인 백도어 파일이 시스템에 있는지 확인하려고 시도하는 요청입니다. |
 | CMDEXE | 명령 실행 | 명령 실행은 사용자 입력을 통해 임의의 시스템 명령으로 대상 시스템을 제어하거나 손상시키려는 시도입니다. |
@@ -254,7 +254,7 @@ when:
 | **플래그 ID** | **플래그 이름** | **설명** |
 |---|---|---|
 | ABNORMALPATH | 비정상 경로 | 비정상 경로는 원래 경로가 정규화된 경로와 다름을 나타냅니다(예: `/foo/./bar`는 `/foo/bar`로 정규화됨). |
-| BAD-IP | 악성 IP | 악성 소스로 식별되었거나(`SANS`, `TORNODE`) WAF에 의해 너무 많은 악성 요청을 보낸 것으로 확인되어 악성 IP로 분류된 경우, 해당 요청을 식별하는 플래그 |
+| BAD-IP | 악성 IP | `SANS` 및 `TORNODE`과(와) 같은 데이터 세트에 포함되어 있거나 WAF에서 악의적인 동작을 이전에 탐지한 것을 기반으로 악의적인 것으로 알려진 IP 주소에서 시작된 요청을 식별합니다 |
 | BHH | 잘못된 홉 헤더 | 잘못된 홉 헤더는 잘못된 형식의 TE(Transfer-Encoding) 또는 CL(Content-Length) 헤더나 올바른 형식의 TE 및 CL 헤더를 통한 HTTP 스머글링 시도를 나타냅니다. |
 | CODEINJECTION | 코드 삽입 | 코드 삽입은 사용자 입력을 통해 임의의 애플리케이션 코드 명령으로 대상 시스템을 제어하거나 손상시키려는 시도입니다. |
 | COMPRESSED | 압축 감지 | POST 요청 본문이 압축되어 검사할 수 없습니다. 예를 들어 `Content-Encoding: gzip` 요청 헤더가 지정되고 POST 본문이 일반 텍스트가 아닌 경우입니다. |
@@ -661,11 +661,20 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 저장소에서 바로 대시보드 도구를 복제할 수 있습니다.
 
-[튜토리얼](#tutorial)에서는 대시보드 도구 사용법에 대한 구체적인 지침을 확인할 수 있습니다.
+[튜토리얼](#tutorial)은(는) 대시보드 도구 사용 방법에 대한 구체적인 지침을 제공합니다.
 
-## 권장 스타터 규칙 {#recommended-starter-rules}
+## 권장 시작 규칙 {#recommended-starter-rules}
 
-아래 권장 규칙을 시작하려는 `cdn.yaml`에 복사할 수 있습니다. 로그 모드에서 시작하여 트래픽을 분석한 다음 결과에 만족하면 차단 모드로 변경하십시오. 웹 사이트 라이브 트래픽의 고유 특성에 따라 규칙을 수정할 수 있습니다.
+Adobe에서는 아래의 트래픽 필터 규칙으로 시작한 다음 시간을 세분화할 것을 제안합니다. *표준 규칙*&#x200B;은(는) Sites 또는 Forms 라이선스에서 사용할 수 있지만 *WAF 규칙*&#x200B;에는 향상된 보안 또는 WAF-DDoS 보호 라이선스가 필요합니다.
+
+### 권장 표준 규칙 {#recommended-nonwaf-starter-rules}
+
+다음 규칙으로 시작하십시오.
+
+1. 속도 제한(로그 모드):
+   * 지정된 IP의 트래픽이 비율 제한을 초과할 때 기록합니다. 수신된 경고가 없는지 확인한 후 차단 모드로 변경합니다. 경고가 수신되면 제한 값이 너무 낮음을 가리켰을 것입니다.
+2. 특정 국가(차단 모드):
+   * 특정 국가의 트래픽 차단(비즈니스 요구 사항에 따라 국가 코드 수정)
 
 ```
 kind: "CDN"
@@ -701,8 +710,9 @@ data:
         groupBy:
           - reqProperty: clientIp
       action: log
+      alert: true
     # Block requests coming from OFAC countries
-    - name: block-ofac-countries
+    - name: ofac-countries
       when:
         allOf:
           - { reqProperty: tier, in: ["author", "publish"] }
@@ -720,7 +730,53 @@ data:
               - ZW
               - CU
               - CI
-      action: log
+      action: block
+```
+
+### 권장 WAF 규칙 {#recommended-waf-starter-rules}
+
+기존 구성에 다음 규칙을 추가합니다.
+
+1. ATTACK-FROM-BAD-IP 플래그(차단 모드):
+   * 의심스러운 패턴([WAF 플래그 목록](#waf-flags-list)에 여러 개 포함)과 일치하고 악의적인 것으로 알려진 IP 주소에서 시작된 트래픽을 즉시 차단합니다.
+   * ATTACK-FROM-BAD-IP 플래그는 기본적으로 두 조건(패턴 일치 및 알려진 악성 IP)을 모두 충족하므로 긍정 오류(false positive)의 위험을 최소화합니다. 따라서 차단 모드에서 이 규칙을 즉시 안전하게 적용할 수 있습니다.
+2. 공격 플래그(로그 모드):
+   * 처음에는 의심되는 패턴과 일치하지만 알려진 악성 IP 주소에서 비롯되지 않는 트래픽을 ( 차단되지 않고) 기록합니다. 차단보다는 로깅에 대한 이러한 신중한 접근 방식은 합법적인 트래픽(긍정 오류)을 의도치 않게 차단하는 것을 방지하는 데 도움이 됩니다.
+   * 이 규칙을 배포한 후 CDN 로그를 주의 깊게 분석하여 합법적인 요청에 플래그가 잘못 지정되지 않았는지 확인합니다. 합법적인 트래픽이 영향을 받지 않는다고 확신하면 차단 모드로 전환합니다.
+
+>[!NOTE]
+> 우리의 경험은 ATTACK 플래그와 연관된 긍정 오류(false positive)가 드물다는 것을 나타낸다. 따라서 IP 주소가 악의적인 것으로 알려져 있지 않더라도 모든 의심되는 트래픽을 즉시 차단한 다음 CDN 로그 분석을 사용하여 합법적인 트래픽에 대한 허용 규칙을 식별하고 도입하는 것이 실용적인 전략이 될 수 있습니다. 각 조직은 고유한 위험 허용 한도를 평가하여, 부주의로 합법적인 요청을 차단할 수 있는 위험으로부터 더 큰 보호 효과를 평가해야 합니다.
+>
+
+```
+    # blocks likely attack traffic, which also comes from suspected IPs
+    - name: attacks-from-bad-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: block
+        wafFlags:
+          - ATTACK-FROM-BAD-IP
+    # log likely attack traffic, and later switch to block mode if false positives aren't observed
+    - name: attacks-from-any-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: log
+        wafFlags:
+          - ATTACK
+```
+
+### 레거시 권장 WAF 규칙 {#previous-waf-starter-rules}
+
+2025년 7월 이전에 Adobe은 아래 나열된 WAF 규칙을 권장했습니다. 이 규칙은 여전히 유효하며 악성 트래픽에 대한 방어에 효과적입니다. 새로운 권장 규칙으로 마이그레이션하는 것과 관련된 고려 사항은 자습서를 참조하십시오.
+
+<details>
+  <summary>를 확장하여 이전에 권장된 WAF 규칙을 확인합니다.</summary>
+
+```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
@@ -743,32 +799,21 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
+</details>
 
 ## 튜토리얼 {#tutorial}
 
-사용 가능한 두 가지 튜토리얼은 다음과 같습니다.
+[일련의 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)을 통해 WAF 규칙을 포함한 트래픽 필터 규칙에 대한 실용적인 지식과 경험을 쌓을 수 있습니다.
 
-### 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호 {#tutorial-protecting-websites}
+튜토리얼에는 다음이 포함됩니다.
 
-[튜토리얼 살펴보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)로 WAF 규칙 등 트래픽 필터 규칙에 대한 일반적이며 실질적인 지식과 경험을 얻습니다.
-
-튜토리얼은 다음 과정에 대해 소개합니다.
-
-* Cloud Manager 구성 파이프라인 설정
-* 도구를 사용하여 악성 트래픽 시뮬레이션
-* WAF 규칙이 포함된 트래픽 필터 규칙 선언
-* 대시보드 도구를 사용하여 결과 분석
+* 표준 및 WAF 트래픽 필터 규칙 개요
+* DoS(서비스 거부) 및 기타 위협을 포함한 공격을 차단하기 위해 권장 표준 및 WAF 트래픽 필터 규칙 구성
+* Cloud Manager 구성 파이프라인을 사용하여 규칙 배포
+* 악의적인 트래픽을 시뮬레이션하는 도구를 사용하여 규칙 테스트
+* 로그 분석 도구를 사용하여 결과 분석
 * 모범 사례
 
-### 트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단 {#tutorial-blocking-DDoS-with-rules}
-
-속도 제한 트래픽 필터 규칙 및 기타 전략을 사용하여 서비스 거부(DoS) 및 분산 서비스 거부(DDoS) 공격을 [차단하는 방법에 대해 자세히 알아보십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules).
-
-튜토리얼은 다음 과정에 대해 소개합니다.
-
-* 보호 이해
-* 속도 제한이 초과되면 알림 수신
-* 속도 제한 트래픽 필터 규칙에 대한 임계값을 구성하기 위해 대시보드 도구로 트래픽 패턴 분석
 
 
 
