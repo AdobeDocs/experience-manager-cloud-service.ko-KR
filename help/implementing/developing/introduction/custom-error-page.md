@@ -77,7 +77,7 @@ HTTP [500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >[!NOTE]
 >
 >AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류를 받으면 일반 오류 페이지를 제공합니다. 백엔드의 실제 응답을 통과하려면 응답에 `x-aem-error-pass: true` 헤더를 추가해야 합니다.
->>AEM 또는 Apache/Dispatcher 계층에서 온 응답에만 작동합니다. 중간 인프라 계층에서 발생하는 기타 예기치 않은 오류는 일반 오류 페이지를 계속 표시합니다.
+>&#x200B;>AEM 또는 Apache/Dispatcher 계층에서 온 응답에만 작동합니다. 중간 인프라 계층에서 발생하는 기타 예기치 않은 오류는 일반 오류 페이지를 계속 표시합니다.
 
 >[!CAUTION]
 >
