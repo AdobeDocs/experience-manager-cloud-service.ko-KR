@@ -56,8 +56,8 @@ ht-degree: 93%
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-고객은 Cloud Manager를 통해 클라우드 환경에 사용자 정의 코드를 배포합니다. Cloud Manager는 Sling 기능 모델에 따라 로컬에서 취합된 콘텐츠 패키지를 아티팩트로 변환해야 합니다. 이는 클라우드 환경에서 실행 시 AEM as a Cloud Service의 애플리케이션을 설명하는 방식입니다. 따라서 클라우드 환경의 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 패키지를 찾을 때 이름에는 “cp2fm”이 포함되며 변환된 패키지에서 모든 메타데이터가 제거됩니다. 상호 작용할 수 없다는 것은 다운로드, 복제 또는 열 수 없다는 의미입니다. 변환기에 대한 자세한 설명서는 [을(를) 참조하십시오.
-GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)의 sling-org-apache-sling-feature-cpconverter.
+고객은 Cloud Manager를 통해 클라우드 환경에 사용자 정의 코드를 배포합니다. Cloud Manager는 Sling 기능 모델에 따라 로컬에서 취합된 콘텐츠 패키지를 아티팩트로 변환해야 합니다. 이는 클라우드 환경에서 실행 시 AEM as a Cloud Service의 애플리케이션을 설명하는 방식입니다. 따라서 클라우드 환경의 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 패키지를 찾을 때 이름에는 “cp2fm”이 포함되며 변환된 패키지에서 모든 메타데이터가 제거됩니다. 상호 작용할 수 없다는 것은 다운로드, 복제 또는 열 수 없다는 의미입니다. 변환기에 대한 자세한 설명서는 [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)을(를) 참조하십시오.
+GitHub의 sling-org-apache-sling-feature-cpconverter.
 
 AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지는 변경 불가능한 콘텐츠와 변경 가능한 콘텐츠를 명확하게 구분해야 하고 Cloud Manager는 변경 가능한 콘텐츠만 설치하고 다음 메시지도 출력할 수 있습니다.
 
