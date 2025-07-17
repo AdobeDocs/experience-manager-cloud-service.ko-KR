@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 1%
+source-wordcount: '2409'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 1%
 
 로깅 공급업체에 라이센스가 있거나 로깅 제품을 호스팅하는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상에 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
-* Amazon S3(비공개 베타, 아래 참고 사항 참조)
-* Azure Blob 저장소
-* Datadog
-* Elasticsearch 또는 OpenSearch
-* HTTPS
-* 스플렁크
-* Sumo Logic(비공개 베타, 아래 참고 사항 참조)
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>로그 기술</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon</td>
+      <td style="background-color: #ffb3b3;">예</td>
+      <td>예</td>
+      <td>예</td>
+      <td style="background-color: #ffb3b3;">아니요</td>
+    </tr>
+    <tr>
+      <td>Azure Blob 저장소</td>
+      <td>아니요</td>
+      <td>예</td>
+      <td>예</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>아니요</td>
+      <td>예</td>
+      <td>예</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">예</td>
+      <td>예</td>
+      <td>예</td>
+      <td style="background-color: #ffb3b3;">아니요</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>아니요</td>
+      <td>예</td>
+      <td>예</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>아니요</td>
+      <td>예</td>
+      <td>예</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">예</td>
+      <td>예</td>
+      <td>예</td>
+      <td style="background-color: #ffb3b3;">아니요</td>
+    </tr>
+    <tr>
+      <td>스플렁크</td>
+      <td>아니요</td>
+      <td>예</td>
+      <td>예</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>스모 논리</td>
+      <td style="background-color: #ffb3b3;">예</td>
+      <td>예</td>
+      <td>예</td>
+      <td style="background-color: #ffb3b3;">아니요</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Private Beta의 기술에 대한 액세스 권한을 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
 AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅되는 옵션이 있습니다.
 
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
-
->[!NOTE]
->
->Amazon S3 및 Sumo Logic은 Private Beta에 있으며 AEM 로그(Apache/Dispatcher 포함)만 지원합니다.  HTTPS를 통한 New Relic 또한 비공개 베타에 있습니다. 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ## 이 문서를 구성하는 방식 {#how-organized}
 
@@ -49,7 +133,7 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 
 ## 설정 {#setup}
 
-1. 이름이 `logForwarding.yaml`인 파일을 만듭니다. [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
+1. 이름이 `logForwarding.yaml`인 파일을 만듭니다. [구성 파이프라인](/help/operations/config-pipeline.md#common-syntax) 문서에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
 
    ```yaml
    kind: "LogForwarding"
@@ -65,7 +149,7 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
          index: "AEMaaCS"
    ```
 
-1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. *구성 파이프라인 사용*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 1. RDE(명령줄 도구 사용) 이외의 환경 유형의 경우 [이 섹션](/help/operations/config-pipeline.md#creating-and-managing)에서 참조한 대로 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
 
@@ -116,14 +200,14 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 일부 조직에서는 로깅 대상에 의해 수신될 수 있는 트래픽을 제한하도록 선택하고, 다른 조직에서는 HTTPS(443) 이외의 포트를 사용해야 할 수 있습니다.  이 경우 로그 전달 구성을 배포하기 전에 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성해야 합니다.
 
 아래 표를 사용하여 포트 443을 사용하는지 여부와 고정 IP 주소에서 로그를 표시해야 하는지 여부를 기준으로 고급 네트워킹 및 로깅 구성에 대한 요구 사항을 확인할 수 있습니다.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>LogForwarding.yaml 포트 정의 필요</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS(443)</td>
+      <td rowspan="2" ro>HTTPS(443)</td>
       <td>아니요</td>
       <td>아니요</td>
       <td>아니요</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>예</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >단일 IP 주소에서 로그가 표시되는지 여부는 고급 네트워킹 구성 선택에 따라 결정됩니다.  이 작업을 용이하게 하려면 전용 이그레스를 사용해야 합니다.
@@ -194,13 +278,17 @@ CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.co
 
 ### Amazon {#amazons3}
 
+Amazon S3에 대한 로그 전달은 AEM 및 Dispatcher 로그를 지원하며 CDN 로그는 아직 지원되지 않습니다.
+
 >[!NOTE]
 >
->각 로그 파일 유형에 대해 10분마다 정기적으로 S3에 기록되는 로그  이로 인해 기능이 전환되면 로그가 S3에 기록되는 초기 지연이 발생할 수 있습니다.  이 동작이 존재하는 이유에 대한 자세한 내용은 [여기](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)를 참조하십시오.
+>각 로그 파일 유형에 대해 10분마다 정기적으로 S3에 기록되는 로그  이로 인해 기능이 전환되면 로그가 S3에 기록되는 초기 지연이 발생할 수 있습니다.  [이 동작에 대한 추가 정보](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-S3 로그 전달자를 사용하려면 S3 버킷에 액세스하기 위한 적절한 정책으로 AWS IAM 사용자를 사전 구성해야 합니다.  IAM 사용자 자격 증명을 만드는 방법은 [여기](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)를 참조하십시오.
+S3 로그 전달자를 사용하려면 S3 버킷에 액세스하기 위한 적절한 정책으로 AWS IAM 사용자를 사전 구성해야 합니다.  IAM 사용자 자격 증명을 만드는 방법은 [AWS IAM 사용자 설명서](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)를 참조하십시오.
 
 IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용해야 합니다.  예:
 
@@ -228,7 +316,7 @@ IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용
 }
 ```
 
-AWS 버킷 정책 구현에 대한 자세한 내용은 [여기](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)를 참조하십시오.
+구현 방법에 대한 자세한 내용은 [AWS 버킷 정책 설명서](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)를 참조하십시오.
 
 ### Azure Blob 저장소 {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-고려 사항:
+#### 고려 사항
 
 * 특정 클라우드 공급자와의 통합 없이 API 키를 만듭니다.
 * 태그 속성은 선택 사항입니다
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-고려 사항:
+#### 고려 사항
 
 * 기본적으로 포트는 443입니다. 선택적으로 `port` 속성으로 재정의할 수 있습니다.
 * 자격 증명의 경우 계정 자격 증명이 아닌 배포 자격 증명을 사용해야 합니다. 다음은 이 이미지와 유사할 수 있는 화면에서 생성된 자격 증명입니다.
@@ -378,23 +466,16 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-고려 사항:
+#### 고려 사항
 
 * URL 문자열에 **https://**&#x200B;이(가) 포함되어야 합니다. 그렇지 않으면 유효성 검사가 실패합니다.
 * URL은 포트를 포함할 수 있습니다. 예, `https://example.com:8443/aem_logs/aem`. URL 문자열에 포트가 포함되지 않으면 포트 443(기본 HTTPS 포트)이 가정됩니다.
-
-#### New Relic 로그 API {#newrelic-https}
-
-액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
-
->[!NOTE]
->New Relic은 New Relic 계정이 프로비저닝된 위치를 기반으로 지역별 엔드포인트를 제공합니다.  New Relic 설명서는 [여기](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)를 참조하십시오.
 
 #### HTTPS CDN 로그 {#https-cdn}
 
 웹 요청(POST)은 로그 항목의 배열인 json 페이로드와 함께 지속적으로 전송되며, 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md#cdn-log)에 설명되어 있습니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
 
-`aemcdn` 값으로 설정된 `sourcetype` 속성도 있습니다.
+`sourcetype` 값으로 설정된 `aemcdn` 속성도 있습니다.
 
 >[!NOTE]
 >
@@ -413,6 +494,52 @@ AEM 로그(apache/dispatcher 포함)의 경우 [AEM as a Cloud Service에 대한
 * aemhttpdaccess
 * aemhttpdererror
 
+### New Relic 로그 API {#newrelic-https}
+
+New Relic으로 로그 전달에서는 수집에 New Relic HTTPS API를 활용합니다.  현재 AEM 및 Dispatcher의 로그만 지원하며 CDN 로그는 아직 지원되지 않습니다.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>New Relic에 대한 로그 전달은 고객 소유 New Relic 계정에만 사용할 수 있습니다.
+>
+>액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>
+>New Relic은 New Relic 계정이 프로비저닝된 위치를 기반으로 지역별 엔드포인트를 제공합니다.  자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)를 참조하세요.
+
+### Dynatrace 로그 API {#dynatrace-https}
+
+Dynatrace으로 로그 전달에서는 수집에 Dynatrace HTTPS API를 활용합니다.  현재 AEM 및 Dispatcher의 로그만 지원하며 CDN 로그는 아직 지원되지 않습니다.
+
+토큰에 &quot;로그 수집&quot; 범위 속성이 필요합니다.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+
 ### 스플렁크 {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-고려 사항:
+#### 고려 사항
 
 * 기본적으로 포트는 443입니다. 필요한 경우 이름이 `port`인 속성으로 재정의할 수 있습니다.
 * Sourcetype 필드는 특정 로그에 따라 다음 값 중 하나를 갖습니다. *aemaccess*, *aemerror*,
@@ -442,11 +569,13 @@ data:
 
 ### 스모 논리 {#sumologic}
 
+Sumo Logic으로의 로그 전달은 AEM 및 Dispatcher 로그를 지원합니다. CDN 로그는 아직 지원되지 않습니다.
+
 데이터 수집을 위해 Sumo 논리를 구성할 때 단일 문자열에 호스트, receiverURI 및 개인 키를 제공하는 &quot;HTTP Source 주소&quot;가 표시됩니다.  예:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-위의 [설정](#setup) 섹션에 설명된 대로 URL의 마지막 섹션(`/` 없이)을 복사한 다음 [CloudManager 보안 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
+위의 `/`설정[ 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
 
 ```yaml
 kind: "LogForwarding"
