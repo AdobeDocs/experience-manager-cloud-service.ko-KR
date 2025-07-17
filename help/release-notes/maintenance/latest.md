@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
+source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 71%
+source-wordcount: '276'
+ht-degree: 54%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 71%
 
 ### 개선 사항 {#enhancements-21570}
 
-없음
+* Apache Httpd 2.4.63으로 마이그레이션됨
 
 ### 해결된 문제 {#fixed-issues-21570}
 
@@ -37,6 +37,7 @@ ht-degree: 71%
 ### 알려진 문제 {#known-issues-21570}
 
 * 관련 AEM SDK에는 다른 릴리스 ID(21575)가 있으며 소프트웨어 배포 포털을 통해 사용할 수 있습니다.
+* Apache HTTP Server 버전 2.4.63에서는 `mod_rewrite`이(가) URL에서 물음표(`?`)를 처리하는 방법에 새로운 변경 사항이 도입되었습니다. 이 변경 사항은 보안 위험으로 간주되었던 `UnsafeAllow3F` 플래그를 사용하지 않도록 하기 위해 구현되었습니다. 이 오류는 URL 패턴의 물음표 검색에 의존하는 `RewriteRule` 지시문에 영향을 줍니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-21570}
 
@@ -53,4 +54,5 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [�
 | AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
+| Apache HTTP 서버 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 핵심 구성 요소 | 2.29.0 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
