@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 25%
+source-wordcount: '2467'
+ht-degree: 22%
 
 ---
 
@@ -130,6 +130,30 @@ Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, �
 AEM Forms을 Adobe Experience Platform(AEP)와 연결하여 개인화된 양식 경험을 위해 고객 프로필 및 데이터를 활용하고 양식 제출을 기반으로 다운스트림 워크플로우를 트리거할 수 있습니다. 양식 데이터를 AEP 데이터 세트로 직접 보내어 고객 프로필을 보강하고 사용자 상호 작용에 대한 심층적인 통찰력을 얻을 수 있습니다.
 
 시작할 준비가 되셨습니까? [AEM Forms과 Adobe Experience Platform(AEP) 통합에 대해 자세히 알아보세요](/help/forms/aem-forms-aep-connector.md).
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Forms을 사용하면 기존 XFA(XML Forms 아키텍처) 양식 템플릿을 HTML5 형식으로 렌더링하여 XFA 기반 PDF이 지원되지 않는 최신 브라우저 및 모바일 디바이스에서 액세스할 수 있습니다. 이 기능은 기존 PDF forms과 최신 웹 경험 간의 차이를 보완합니다.
+
+![HTML5 Forms 미리 보기](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**주요 기능:**
+
+* **HTML5 기반 XFA 양식 템플릿 렌더링**: 기존 XFA 기반 양식을 HTML5 형식으로 렌더링하여 HTML5를 지원하지만 XFA Forms이 있는 Adobe Reader를 지원하지 않는 모바일 장치(Apple iPad, Android 태블릿, 스마트폰 등)로 클라이언트 플랫폼을 확장합니다.
+
+* **모바일 전용 양식**: HTML5 Forms은 모바일 전용 기능을 제공하므로 HTML5 브라우저를 사용하는 태블릿 또는 스마트폰으로 현재 솔루션과 워크플로를 확장할 수 있습니다.
+
+* **접근성 지원**: HTML5 Forms은 ARIA HTML5 접근성 표준 및 지원 탭 탐색을 사용하여 JAWS 및 VoiceOver와 같은 일반적인 화면 판독기와 호환되도록 합니다.
+
+* **사용자 지정 기능**: CSS 및 JavaScript과 같은 표준 웹 기술을 사용하여 기존 위젯의 모양을 사용자 지정하거나, 사용자 지정 위젯을 만들거나, 양식의 사용자 지정 스타일을 사용할 수 있습니다.
+
+* **오른쪽에서 왼쪽 쓰기 언어 지원**: HTML5 Forms은 히브리어 같은 오른쪽에서 왼쪽 쓰기 언어를 지원하므로 RTL 언어로 양식을 표시하고 채울 수 있습니다.
+
+* **첨부 파일 지원**: 향상된 데이터 수집을 위해 HTML5 양식을 사용하여 첨부 파일을 업로드하고 미리 보고 제출합니다.
+
+* **초안 저장**: HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 채우기를 다시 시작합니다.
+
+시작할 준비가 되셨습니까? [HTML5 양식 소개](/help/forms/introductionhtml5.md) 설명서는 이 혁신에 대한 포괄적인 개요 및 시작 안내서를 제공합니다.
 
 ## 추가적인 조기 액세스 혁신
 
