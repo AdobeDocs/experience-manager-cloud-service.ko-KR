@@ -3,10 +3,11 @@ title: AFP 출력 동기화 API를 사용하는 방법
 description: AFP Output Sync API를 사용하여 출력 표현물을 검색하고 동기화하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 10%
+source-wordcount: '235'
+ht-degree: 11%
 
 ---
 
@@ -100,4 +101,4 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 응답을 저장하고 저장된 파일을 AFP 판독기에서 열어 볼 수 있습니다.
 
-![PDF reader](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
