@@ -2,10 +2,11 @@
 title: 속성 기반 액세스 제어
 description: 속성 기반 액세스 제어를 활성화하여 메타데이터 기반 규칙을 정의하여 Content Hub에서 사용할 수 있는 에셋에 대한 액세스 수준을 정의하는 방법에 대해 알아봅니다
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 4%
 
 ---
 
@@ -21,15 +22,26 @@ Content Hub 관리자는 속성 기반 액세스 제어(ABAC)를 사용하여 �
 
 속성 기반 액세스 제어의 몇 가지 주요 이점은 다음과 같습니다.
 
-* 사용 권한에 대한 폴더 구조에 대한 종속성 제거
+* 폴더 구조에 대한 권한 종속을 제거합니다.
 
-* 관리자가 에셋을 업로드하고 권한 구조를 소급하여 결정할 수 있습니다.
+* 관리자가 자산을 업로드하고 권한 구조를 소급적으로 결정할 수 있도록 합니다.
 
-* 중복 횟수가 줄어들어 자산 무결성이 향상됩니다. 동일한 에셋을 다른 그룹과 공유할 때 폴더 기반 권한에서 중복이 필요합니다.
+* 중복 횟수를 줄여 자산 무결성을 향상시킵니다. 폴더 기반 권한에서는 동일한 자산이 다른 그룹과 공유될 때 중복이 필요합니다.
 
 ## 속성 기반 액세스 제어를 활성화하는 방법 {#enable-attribute-based-access-control}
 
-현재는 Content Hub 사용자 인터페이스를 사용하여 속성 기반 액세스 제어 규칙을 직접 만들 수 없습니다. 이 문서에 정의된 지침을 사용하여 스프레드시트에서 규칙을 정의할 Adobe 지원 티켓을 만듭니다.
+현재는 Content Hub 사용자 인터페이스를 사용하여 속성 기반 액세스 제어 규칙을 직접 만들 수 없습니다.
+
+스프레드시트에서 규칙을 다운로드하고 정의하려면 **스프레드시트 다운로드**&#x200B;를 클릭하십시오. Adobe 지원 티켓을 만들고 스프레드시트에 정의된 규칙을 Adobe에 제공합니다.
+
+[!BADGE 스프레드시트 다운로드]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+이 문서에 정의된 지침을 사용하여 스프레드시트에서 규칙을 정의합니다.
+
+>[!IMPORTANT]
+>
+> 규칙을 정의한 후 스프레드시트의 **유효성 검사 오류** 탭으로 이동하여 **ABAC 유효성 검사 실행**&#x200B;을 클릭합니다. **모든 유효성 검사 통과** 메시지를 통해 정의된 규칙을 Adobe에 제공할 수 있음을 확인합니다.
 
 ## 예제 속성 기반 액세스 제어 사용 사례 {#example-metadata-based-rules}
 
@@ -77,20 +89,10 @@ Content Hub 관리자는 이러한 규칙을 사용하여 다음을 수행할 �
 * ABAC 규칙은 Admin Console에서 사용할 수 있는 IMS 그룹 ID를 사용하여 사용자 그룹에 적용됩니다.
 
 
-* AEM as a Cloud Service 작성자 환경을 사용하여 자산에 대한 [승인 대상](/help/assets/approve-assets-content-hub.md#set-approval-target)을 설정할 수 있습니다. 승인 대상 = `Delivery`이(가) `Delivery` + `Content Hub`에 사용 가능한 자산에 대한 것이므로 승인 대상 = `Content Hub`인 승인된 자산에 ABAC 규칙이 적용됩니다. 승인 대상으로 표시된 Assets = `Delivery`이(가) 콘텐츠 허브의 모든 사용자에게 표시됩니다.
+* AEM as a Cloud Service 작성자 환경을 사용하여 자산에 대한 [승인 대상](/help/assets/approve-assets-content-hub.md#set-approval-target)을 설정할 수 있습니다. 승인 대상 = `Content Hub`이(가) `Delivery` + `Delivery`에 사용 가능한 자산에 대한 것이므로 승인 대상 = `Content Hub`인 승인된 자산에 ABAC 규칙이 적용됩니다. 승인 대상으로 표시된 Assets = `Delivery`이(가) 콘텐츠 허브의 모든 사용자에게 표시됩니다.
 
 * ABAC 규칙에 사용된 메타데이터 스키마가 AEM에서 올바르게 정의되고 사용 가능한지 확인하십시오. ABAC 규칙에서 참조된 속성을 정의하는 AEM 메타데이터 스키마의 전체 경로를 제공합니다. ABAC 조건과 일치하는 메타데이터 값이 있는 몇 가지 샘플 에셋이 있는 테스트 폴더를 선택적으로 만들 수 있습니다. 이렇게 하면 규칙 동작을 확인하고 액세스를 정확하게 평가하는 데 도움이 됩니다.
 
 * 필요한 경우 논리의 유효성을 검사하고 수정하는 데 도움이 되므로 조건이 올바르게 작성되었는지 여부에 관계없이 규칙의 비즈니스 의도를 주석에 캡처합니다.
 
 * DRM용으로 설정된 라이센스 PDF 파일은 사용자가 라이센스가 있는 에셋을 다운로드할 때 볼 수 있도록 모두에게 표시되어야 합니다.
-
-
-
-
-
-
-
-
-
-
