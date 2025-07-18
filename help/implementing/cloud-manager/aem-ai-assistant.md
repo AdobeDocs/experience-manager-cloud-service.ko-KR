@@ -81,7 +81,7 @@ AEM AI Assistant를 사용하려면 조직에서 Admin Console 수준에서 옵�
 
 ![Admin Console의 AEM AI Assistant에서 기술 지원 티켓 만들기](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-AEM as a Cloud Service에서 사용자 및 그룹 설정에 대한 안내 설명은 [AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview)을 참조하십시오.
+AEM as a Cloud Service에서 사용자 및 그룹 설정에 대한 안내 설명은 [AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview)을 참조하십시오.
 
 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)도 참조하세요.
 
