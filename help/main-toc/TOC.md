@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
 workflow-type: tm+mt
-source-wordcount: '6521'
+source-wordcount: '6522'
 ht-degree: 97%
 
 ---
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [AEM as a Cloud Service의 생성형 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)
    + [변형 생성](/help/generative-ai/generate-variations.md)
-   + [어시스턴트 (제한적 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms용 AI 어시스턴트 (Forms Experience Builder)(얼리 어답터)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM AI Assistant(제한된 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms AI Assistant(Forms Experience Builder)(얼리 어답터)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI 어시스턴트 - 프롬프트 라이브러리](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
