@@ -1,8 +1,8 @@
 ---
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -113,7 +113,7 @@ ht-degree: 93%
    <tr>
     <td>ES2022 지원 </td>
     <td>ES2022는 아직 지원되지 않습니다. 지원은 ES5 JavaScript 기능으로 제한됩니다. </td>
-    <td>최신 JavaScript 기능(예: let 및 arrow 함수, 최대 ES2022)에 대한 지원은 사용자 지정 함수 내에서 사용할 수 있습니다. 
+    <td>사용자 정의 함수 내에서 ES2022까지의 let 및 arrow 함수와 같은 최신 JavaScript 기능을 지원할 수 있습니다. 
    </td>
    </tr>
    </tr>
@@ -169,11 +169,11 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >프론트엔드 파이프라인의 경우 다음 IP 허용 목록을 미리 Cloud Manager에 추가해야 합니다.
->&#x200B;>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
->&#x200B;>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
+>>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
+>>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
 >
 >**Cloud Manager IP 허용 목록**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 추가 {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >프론트엔드 파이프라인을 사용하여 사이트를 개발하거나 사용하려는 경우 사전에 Cloud Manager IP 허용 목록을 추가해야 합니다.
->&#x200B;>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하십시오.
+>>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하십시오.
 
 ## IP 허용 목록 및 범용 편집기 {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ ht-degree: 93%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
@@ -284,8 +284,8 @@ ht-degree: 93%
 
 ## Adobe 제공 사이트 템플릿 {#adobe-templates}
 
-사이트 생성 시간을 단축하기 위해 Adobe에서는 다양한 목적에 맞는 다양한 템플릿을 제공합니다.
+Adobe는 사이트 제작 속도를 높이기 위해 다양한 목적에 맞는 다양한 템플릿을 제공합니다.
 
-* [Edge Delivery Services이 있는 AEM 사이트](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - 범용 편집기로 AEM 페이지를 작성하고 [edge 게재](/help/edge/overview.md)를 통해 게재할 경우
-* [Commerce용 AEM을 사용한 Edge Delivery Services 작성](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - 상거래 프로젝트 및 [edge 배달을 통한 배달을 위해 유니버설 편집기를 사용하여 AEM 페이지를 작성](/help/edge/overview.md)
-* [표준 AEM 사이트 템플릿](https://github.com/adobe/aem-site-template-standard/releases) - 기존 AEM 페이지를 작성하고 [게시 게재](/help/sites-cloud/authoring/author-publish.md)를 통해 게재할 경우
+* [Edge Delivery Services 포함 AEM 사이트](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - 범용 편집기를 사용하여 AEM 페이지를 작성하고 [Edge Delivery](/help/edge/overview.md)를 통해 게재합니다.
+* [상거래용 AEM 작성을 통한 Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - 범용 편집기를 사용하여 상거래 프로젝트를 위한 AEM 페이지를 작성하고 [Edge Delivery](/help/edge/overview.md)를 통해 게재합니다.
+* [표준 AEM 사이트 템플릿](https://github.com/adobe/aem-site-template-standard/releases) - 기존 AEM 페이지를 작성하고 [게시 게재](/help/sites-cloud/authoring/author-publish.md)를 통해 게재하기 위한 템플릿입니다.

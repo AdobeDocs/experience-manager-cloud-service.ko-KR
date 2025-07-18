@@ -3,9 +3,9 @@ title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 �
 
 ## Cloud Manager 프로그램/환경에서 Content Hub를 활성화할 수 없는 이유는 무엇입니까? {#cannot-enable-content-hub}
 
-현재 Content Hub는 자산 라이선스(Assets Cloud Service, Assets Ultimate, Assets Prime)를 포함한 AEM Cloud Manager 프로덕션 프로그램에서만 사용할 수 있습니다. [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub)를 클릭하여 활성화하면 Content Hub가 배포되고 해당 프로그램의 AEM 작성 프로덕션 환경과 연결됩니다. 자세한 내용과 사전 요구 사항은 [Content Hub 배포](/help/assets/deploy-content-hub.md)를 참조하십시오.
+현재 Content Hub는 자산 라이선스(Assets Cloud Service, Assets Ultimate, Assets Prime)를 포함한 AEM Cloud Manager 프로덕션 프로그램에서만 사용할 수 있습니다. [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub)를 클릭하여 활성화하면 배포되고 해당 프로그램의 AEM 작성 프로덕션 환경과 연결됩니다. 자세한 내용과 사전 요구 사항은 [Content Hub 배포](/help/assets/deploy-content-hub.md)를 참조하십시오.
 
 ## 프로덕션 프로그램/환경에서 Content Hub를 활성화했는데, 비활성화할 수 있습니까? {#can-i-disable-content-hub}
 
@@ -29,7 +29,7 @@ Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 �
 
 Content Hub가 배포된 후 사용자에게 Content Hub를 제공하지 않으려면 Admin Console의 Content Hub 제품 프로필에 사용자를 할당하지 마십시오. 자세한 내용은 [Content Hub 배포](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)를 참조하십시오.
 
-## Content Hub를 프로덕션 프로그램/프로덕션 작성 환경에서만 사용할 수 있는데 조직에서 Content Hub를 어떻게 평가할 수 있습니까? {#how-can-i-evaluate-content-hub}
+## Content Hub를 프로덕션 프로그램/프로덕션 작성 환경에서만 사용할 수 있는데 조직에서 이를 어떻게 평가할 수 있습니까? {#how-can-i-evaluate-content-hub}
 
 Content Hub는 Adobe가 제공하고 유지 관리하는 기능으로, 개발/스테이징/프로덕션을 통해 일반적인 검증이 필요한 사용자 정의 코드가 없습니다. 또한 사용자용 기능에 대한 액세스 권한을 관리자가 완전히 제어하므로 모든 사용자에게 공개하지 않고도 평가할 수 있습니다.
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service Assets에서 관리되는 사용자/프로덕션 콘텐�
 
 샌드박스 프로그램 및 해당 작성 프로덕션 환경에 Content Hub에 대한 얼리 액세스 프로그램이 있습니다. 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오. 얼리 액세스 프로그램에 대해 자세히 알아보려면 Adobe 계정 팀에 문의하십시오.
 
-Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 단계/개발 환경에 대한 예상 가용성은 2025년 3월입니다.
+Content Hub는 비프로덕션 환경(스테이징 및 개발)에서 아직 사용할 수 없습니다. Assets Ultimate의 스테이징/개발 환경은 2025년 3월에 출시될 예정입니다.
 
 ## Content Hub에 로그인한 후 자산이 표시되지 않는 이유는 무엇입니까? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
    >
    >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 가져야 하고, 비즈니스 **기업 또는 학교** 계정을 사용해야 하며, **개인** 계정을 사용해서는 안 됩니다. 이상적인 구성은 두 Admin Console을 모두 **Federated ID**&#x200B;로 설정하고 두 콘솔 간 트러스트 관계를 설정하여 사용자에게 원활한 SSO(Single Sign-On) 경험을 제공하도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
 
-적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[!UICONTROL # /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
+적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[#UICONTROL /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
 
 ## 조직의 브랜드 지침이 홈 페이지에 링크로 표시되도록 Content Hub를 설정할 수 있습니까? {#content-hub-setup-brand-guidelines}
 
@@ -98,41 +98,41 @@ Adobe는 Adobe 지원 티켓을 생성하여 사용할 수 있는 Brand Portal�
 
 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스하려면 [Content Hub 관리자](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)여야 합니다. Adobe Admin Console의 프로덕션 작성자 인스턴스에서 AEM 관리자 제품 프로필에 할당되었지만 여전히 구성 옵션이 표시되지 않는 경우, AEM 관리자 제품 프로필의 이름이 변경되지 않았는지 확인합니다. 자세한 내용은 [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)을 참조하십시오.
 
-## Content Hub은 Brand Portal의 제한을 어떻게 해결합니까? {#content-hub-brand-portal-comparison}
+## Content Hub는 Brand Portal의 한계를 어떻게 해결합니까? {#content-hub-brand-portal-comparison}
 
 
 아래 테이블에는 두 솔루션의 주요 차이점이 요약되어 있습니다.
 
 | 영역 | 기능 | Content Hub | Brand Portal |
 |---|---|----|----|
-| 배포 경험 구성 | 필터, 에셋 세부 사항 및 에셋 추가 페이지에 대한 메타데이터 구성 | ✓ | − |
+| 배포 경험 구성 | 필터, 자산 세부 정보 및 자산 추가 페이지에 대한 메타데이터 구성 | ✓ | − |
 |  | 포털에서 외부 링크 구성 | ✓ | − |
 |  | 배너 메시지 구성 | ✓ | ✓ |
-|  | 브랜딩용 배너 이미지 구성 | ✓ | ✓ |
-|  | 브랜딩 요구 사항에 따라 UI에 대한 기본 및 보조 색상 구성 | ✓ | − |
-| DAM에서 에셋 공유 | DAM에서 승인된 원래 에셋 공유 | ✓ | ✓ |
+|  | 브랜딩을 위한 배너 이미지 구성 | ✓ | ✓ |
+|  | 브랜딩 요구 사항에 따라 UI의 기본 및 보조 색상을 구성합니다. | ✓ | − |
+| DAM의 자산 공유 | DAM에서 승인된 원본 자산 공유 | ✓ | ✓ |
 |  | 승인된 자산 변경 사항이 자동으로 동기화됨 | ✓ | − |
-| 검색 및 필터 | 동적 필터(표시된 에셋에 따라 옵션이 동적으로 표시됨) | ✓ | − |
+| 검색 및 필터 | 동적 필터 (옵션은 표시된 자산에 따라 동적으로 표시됨) | ✓ | − |
 |  | 검색 기록 | ✓ | − |
-| 에셋 업로드 | 로컬 드라이브 | ✓ | ✓ |
+| 자산 업로드 | 로컬 드라이브 | ✓ | ✓ |
 |  | 자산을 업로드하는 동안 구성 가능한 메타데이터 추가 | ✓ | − |
-| 다운로드 및 렌디션 | 원본 에셋 다운로드 | ✓ | ✓ |
+| 다운로드 및 렌디션 | 원본 자산 다운로드 | ✓ | ✓ |
 |  | DAM에서 정적 렌디션 공유 및 다운로드 | ✓ | ✓ |
-|  | 동적 렌디션 다운로드(사전 설정 및 스마트 자르기) | ✓ | ✓ |
-|  | 만료된 에셋의 보기 및 다운로드를 제한하는 기능 | ✓ | − |
-| 공유 및 컬렉션 연결 | 로그인한 사용자를 위한 링크 공유 | ✓ | ✓ |
-|  | 공용 컬렉션 | ✓ | ✓ |
+|  | 동적 렌디션 다운로드 (사전 설정 및 스마트 자르기) | ✓ | ✓ |
+|  | 만료된 자산의 보기 및 다운로드를 제한하는 기능 | ✓ | − |
+| 링크 공유 및 컬렉션 | 로그인한 사용자를 위한 링크 공유 | ✓ | ✓ |
+|  | 공개 컬렉션 | ✓ | ✓ |
 |  | 컬렉션 내 검색 | ✓ | − |
 |  | 익명 링크 공유 | ✓ | ✓ |
 |  | 비공개 컬렉션 | ✓ | ✓ |
 | 권한 | ACL 기반 권한 | − | ✓ |
 |  | 속성 기반 액세스 제어 | ✓ | − |
-| Express 통합 | Adobe Express에서 Content Hub Assets 편집 및 DAM에 저장 | ✓ | − |
+| Express 통합 | Adobe Express에서 Content Hub 자산을 편집하고 DAM에 저장 | ✓ | − |
 | 대시보드 및 보고서 | Insights 대시보드 | ✓ | − |
-| UI 확장성 | 자산 세부 사항 페이지의 사용자 지정 확장 지점 | 제한된 가용성 | − |
-| 곧 출시될 혁신 | 사용자가 즐겨찾는 컬렉션 | ✓ | − |
-|  | 책임자에 의해 고정된 컬렉션 | ✓ | − |
-|  | 의미 체계 검색 | ✓ | − |
+| UI 확장성 | 자산 세부 정보 페이지의 사용자 정의 확장 지점 | 제한된 가용성 | − |
+| 곧 출시 예정 | 사용자가 즐겨 찾는 컬렉션 | ✓ | − |
+|  | 관리자가 고정한 컬렉션 | ✓ | − |
+|  | 시멘틱 검색 | ✓ | − |
 |  | 지역화된 검색 및 메타데이터 표시 | ✓ | − |
 
 
