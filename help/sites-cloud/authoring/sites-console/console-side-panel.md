@@ -5,16 +5,16 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 26%
+source-wordcount: '828'
+ht-degree: 23%
 
 ---
 
 # 사이트 콘솔 사이드 패널 {#side-panel}
 
-AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더 잘 이해하고 탐색하는 방법을 알아봅니다.
+콘텐츠를 더 잘 이해하고 탐색하기 위해 AEM **사이트** 콘솔에서 사이드 패널을 사용하는 방법을 알아봅니다.
 
 ## 방향 {#orientation}
 
@@ -99,8 +99,8 @@ AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더
 
 자세한 내용을 보려면 적절한 참조 유형을 선택합니다. 특정 상황에서 다음을 비롯한 특정 참조를 선택하면 추가 작업을 사용할 수 있습니다.
 
-* **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공.
-   * 이렇게 하면 목록 구성 요소에서 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다.
+* **수신 링크**&#x200B;는 특정 링크를 선택할 때 해당 페이지 중 하나(**편집**)에 대한 직접 액세스와 함께 선택 페이지를 직접 참조하는 페이지 목록을 제공합니다.
+   * 이렇게 하면 목록 구성 요소에서 동적으로 생성된 링크가 아닌 정적 링크만 표시됩니다.
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md): 선택한 리소스를 기반으로 하는 모든 Live Copy의 경로 표시
 * [블루프린트](/help/sites-cloud/administering/msm/best-practices.md): 세부 정보 및 여러 작업 제공
@@ -112,7 +112,7 @@ AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더
 
 ![사이트 패널](assets/console-side-panel-site-paenl.png)
 
-패널을 사용하여 사이트의 [&#128279;](/help/sites-cloud/administering/site-creation/site-themes.md)테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오.
+패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 ](/help/sites-cloud/administering/site-creation/site-rail.md)사이트 패널을 사용하여 사이트 테마 관리[를 참조하십시오](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 테마 기반 사이트 생성을 활성화하도록 프론트엔드 파이프라인을 아직 설정하지 않은 경우 사이드 패널에서 해당 옵션을 제공합니다.
 
