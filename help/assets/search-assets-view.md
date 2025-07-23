@@ -4,10 +4,10 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 [!DNL Assets view]는 기본적으로 작동하는 효과적인 검색 기능을 제공합니다. 검색 기능은 전체 텍스트 검색이므로 포괄적입니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다. [!DNL Assets view]는 스마트 태그, 제목, 생성 날짜 및 저작권과 같은 메타데이터를 통해 전체 텍스트 검색 및 다중 검색 기능을 제공합니다.
 
-자산을 검색하려면
+에셋을 검색하려면 다음을 수행하십시오.
 
 * 페이지 상단의 검색 상자를 클릭합니다. 기본적으로 현재 탐색 중인 폴더 내에서 검색됩니다. 다음 중 하나를 수행하십시오.
 
@@ -121,6 +121,40 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에서 필터를 제거합니다.
 
+## 시맨틱 검색 {#semantic-search}
+
+시맨틱 검색은 정확한 키워드 일치에 의존하지 않고 사용자 쿼리 뒤에 있는 의미와 의도를 이해하는 고급 검색 기능입니다. 인공지능(AI), 자연어 처리(NLP), 머신러닝 등을 활용해 보다 정확하고 상황 인식 결과를 전달한다.
+
+시맨틱 검색은 정확한 용어를 찾는 기존 키워드 기반 검색과 달리 단어, 개념, 사용자 의도 간의 관계를 해석한다. 이렇게 하면 쿼리가 다르게 표현되거나, 오타가 있거나, 다른 언어로 되어 있더라도 사용자가 찾고 있는 항목을 찾을 수 있습니다.
+
+몇 가지 주요 이점은 다음과 같습니다.
+
+* **다국어 지원**: 정확한 번역이 필요 없이 여러 언어를 검색합니다. 사용자는 쿼리 언어에 관계없이 관련 콘텐츠를 찾을 수 있습니다.
+
+* **철자 오류를 처리합니다**: 오타 및 맞춤법 오류를 자동으로 수정하거나 해석하여 입력이 불완전한 경우에도 정확한 결과를 보장합니다.
+
+* **동의어 이해**: 관련 용어와 구에 대한 결과를 제공하므로 사용자가 올바른 키워드를 추측할 필요가 없습니다.
+
+* **컨텍스트 인식 검색**: 단어뿐만 아니라 쿼리 뒤에 있는 의도를 인식합니다.
+
+* **텍스트 기반 프롬프트를 기반으로 검색**: Experience Manager Assets은 콘텐츠에 필터를 적용하고 간단한 텍스트 기반 프롬프트를 기반으로 적절한 결과를 자동으로 표시합니다.
+
+>[!IMPORTANT]
+>
+> 의미 체계 검색에 대해 3개 이상의 단어를 지정하여 적절한 결과를 표시하십시오.
+
+### 의미 체계 검색 예제 {#examples-semantic-search}
+
+**메시지 예제**: *커피를 마시는 여성*
+
+기존 키워드 기반 검색은 Woman, Coffee 등과 같은 자산 메타데이터의 정확한 일치 항목을 찾고 이 키워드를 포함하는 자산을 반환합니다.
+
+그러나 의미 체계 검색은 `Girl`의 경우 `Lady`, `Woman`과(와) 같은 유사한 단어를 찾고 `Cappuccino`의 경우 `Latte` 및 `Coffee`과(와) 같은 커피 옵션을 찾습니다.
+
+마찬가지로 이 프롬프트를 스페인어로 지정하거나 `Woman`을(를) `Wman`(으)로 잘못 입력해도 동일한 결과를 얻을 수 있습니다.
+
+![Assets 보기에서 의미 체계 검색](assets/semantic-search.png)
+
 ## [!DNL Adobe Firefly]를 사용하여 자산 검색 {#search-firefly}
 
 [!DNL Experience Manager Assets] 내에서 [!DNL Adobe Firefly] 자산 검색 기능을 활용하면 어떤 자산 폴더에서도 사용할 수 없는 자산을 검색할 수 있습니다. 이를 통해 자산 폴더에 저장되지 않은 자산을 실시간으로 효율적으로 생성할 수 있습니다.
@@ -160,7 +194,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 생성된 자산을 자산 저장소에 업로드하려면 다음 작업을 수행하십시오.
 
 1. **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
-1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**&#x200B;을 클릭합니다.
+1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**을 클릭합니다.
    ![자산 업로드](assets/upload-asset-firefly.jpg)
 
 ## 저장된 검색 {#saved-search}
@@ -337,12 +371,12 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
