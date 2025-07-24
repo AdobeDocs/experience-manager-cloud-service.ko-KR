@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
+source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 30%
+source-wordcount: '632'
+ht-degree: 29%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 정보를 간략히 소개합니다.
 
-## 릴리스 21644 {#21644}
+## 릴리스 21706 {#21706}
 
-다음은 2025년 7월 22일에 공개적으로 릴리스된 유지 보수 릴리스 21644에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 21570.
+다음은 2025년 7월 24일에 공개적으로 릴리스된 유지 보수 릴리스 21706에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 21570.
+
+>[!NOTE]
+>
+>릴리스 21644은 비공개로 설정되었으며 릴리스 정보로 21706.
 
 이 유지 관리 릴리스(2025.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-21644}
+### 개선 사항 {#enhancements-21706}
 
 * ASSETS-39377: Assets Bulk Importer의 원격 저장소에서 429s의 처리를 개선합니다.
 * ASSETS-46026: 메타데이터 내보내기에 대한 구성 가능한 최대 깊이입니다.
@@ -39,7 +43,7 @@ ht-degree: 30%
 * SITES-31677: 사용자 정의 작업 영역이 AEM 콘텐츠 조각을 Target으로 내보낼 수 있도록 지원합니다.
 * SKYOPS-112741: AEM-CS SDK에서 `com.adobe.granite.product.support` 번들을 제거합니다.
 
-### 해결된 문제 {#fixed-issues-21644}
+### 해결된 문제 {#fixed-issues-21706}
 
 * ASSETS-12882: 뷰어 사전 설정을 연 후 UI 정렬 문제.
 * ASSETS-48958: 사이트 로컬 AEM에서 자산 동기화가 게시된 상태를 변경하는 문제.
@@ -65,19 +69,19 @@ ht-degree: 30%
 * GRANITE-60311: AEM SDK 빠른 시작 - &quot;OSGi 설치 관리자 구성 프린터&quot;의 NPE.
 * GS-15285: 사용자가 비활성화된 것으로 표시됩니다.
 
-### 알려진 문제 {#known-issues-21644}
+### 알려진 문제 {#known-issues-21706}
 
 없음.
 
-### 사용 중단된 기능 및 API {#deprecated-21644}
+### 사용 중단된 기능 및 API {#deprecated-21706}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-21644}
+### 보안 수정 {#security-21706}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 4개가 해결되었습니다.
 
-### 임베드된 기술 {#embedded-tech-21644}
+### 임베드된 기술 {#embedded-tech-21706}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
