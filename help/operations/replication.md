@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 >[!NOTE]
 >
 >콘텐츠 벌크 게시에 관심이 있는 경우 [트리 활성화 워크플로 단계](#tree-activation)를 사용하여 워크플로를 만드십시오. 그러면 대규모 페이로드를 효율적으로 처리할 수 있습니다.
->>벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
->>어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 단계로 워크플로를 트리거할 수 있습니다.
->>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 그리고 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 트리 활성화 워크플로 단계가 있는 워크플로를 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
+>&#x200B;>벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
+>&#x200B;>어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 단계로 워크플로를 트리거할 수 있습니다.
+>&#x200B;>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 그리고 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 트리 활성화 워크플로 단계가 있는 워크플로를 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
 
 ### 빠른 게시 취소/게시 - 예정된 게시 취소/게시 {#publish-unpublish}
 
@@ -193,6 +193,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### 복제 API {#replication-api}
