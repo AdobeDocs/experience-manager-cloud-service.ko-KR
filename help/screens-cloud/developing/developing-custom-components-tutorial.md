@@ -30,12 +30,12 @@ ht-degree: 2%
 
 1. 로컬 개발 환경
 
-튜토리얼 단계 및 스크린샷은 **CRXDE Lite**&#x200B;을(를) 사용하여 수행됩니다. IDE를 사용하여 자습서를 완료할 수도 있습니다. IDE를 사용하여 AEM으로 [을(를) 개발하는 방법에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)에서 확인할 수 있습니다.
+튜토리얼 단계 및 스크린샷은 **CRXDE Lite**&#x200B;을(를) 사용하여 수행됩니다. IDE를 사용하여 자습서를 완료할 수도 있습니다. IDE를 사용하여 AEM으로 [을(를) 개발하는 방법에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ko)에서 확인할 수 있습니다.
 
 
 ## 프로젝트 설정 {#project-setup}
 
-Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 자습서를 신속하게 수행하기 위해 [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 프로젝트가 미리 생성되었습니다. Maven AEM Project Archetype을 사용하여 프로젝트를 만드는 방법에 대한 자세한 내용은 [프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)을 참조하십시오.
+Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 자습서를 신속하게 수행하기 위해 [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 프로젝트가 미리 생성되었습니다. Maven AEM Project Archetype을 사용하여 프로젝트를 만드는 방법에 대한 자세한 내용은 [프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ko)을 참조하십시오.
 
 1. [CRX 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 다음 패키지를 다운로드하여 설치하십시오.
 
@@ -131,7 +131,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens 구성 요소에는 사용 중인 [작성 모드](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)에 따라 두 가지 다른 렌더링이 필요합니다.
+   Screens 구성 요소에는 사용 중인 [작성 모드](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=ko#page-modes)에 따라 두 가지 다른 렌더링이 필요합니다.
 
    1. **프로덕션**: 미리 보기 또는 게시 모드(wcmmode=disabled)
    1. **편집**: 편집, 디자인, 스캐폴딩, 개발자 등 다른 모든 작성 모드에 사용됩니다.
@@ -378,7 +378,7 @@ AEM Screens 구성 요소는 편집 모드와 미리보기/프로덕션 모드�
 
 ## 디자인 페이지 만들기 {#design-page}
 
-AEM Screens은 전역 변경 사항에 [정적 페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) 및 [디자인 구성](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html)을 사용합니다. 디자인 구성은 채널에서 Parsys에 대해 허용되는 구성 요소를 구성하는 데 자주 사용됩니다. 가장 좋은 방법은 이러한 구성을 앱별 방법으로 저장하는 것입니다.
+AEM Screens은 전역 변경 사항에 [정적 페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=ko) 및 [디자인 구성](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=ko)을 사용합니다. 디자인 구성은 채널에서 Parsys에 대해 허용되는 구성 요소를 구성하는 데 자주 사용됩니다. 가장 좋은 방법은 이러한 구성을 앱별 방법으로 저장하는 것입니다.
 
 We.Retail 실행 프로젝트에 관련된 모든 구성을 저장하는 We.Retail 실행 디자인 페이지가 아래에 만들어집니다.
 
