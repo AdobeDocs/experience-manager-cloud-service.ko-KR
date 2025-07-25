@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -67,7 +67,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### 프리릴리스 기능
 
-* [적응형 양식 및 양식 조각을 위한 Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Universal Editor는 이제 적응형 양식과 재사용 가능한 양식 조각을 모두 만들 수 있도록 지원합니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
+* [적응형 양식 및 양식 조각을 위한 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 범용 편집기는 이제 적응형 양식과 재사용 가능한 양식 조각을 모두 만들 수 있도록 지원합니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
 
 * [적응형 양식에서 AFP 렌디션 생성 및 동기화](/help/forms/document-generation-afp-api.md): AFP 출력 동기화 API를 사용하면 관리자와 사용자가 적응형 양식에서 AFP(고급 기능 프레젠테이션) 출력을 생성하고 해당 출력을 외부 시스템이나 저장 위치와 동기화할 수 있습니다. AFP는 인쇄에 최적화된 고성능 문서 형식으로, 대규모 기업 환경에서 자주 사용됩니다.
 
@@ -182,7 +182,7 @@ OSGi 속성:
 
 자세한 내용은[유지 관리 작업 문서](/help/operations/maintenance.md#defaults)를 참조하십시오.
 
-### 에지 컴퓨팅(Alpha 프로그램) {#edge-computing}
+### 에지 컴퓨팅 (Alpha 프로그램) {#edge-computing}
 
 에지 컴퓨팅을 사용하면 CDN 계층에서 JavaScript를 실행할 수 있어 데이터 처리가 최종 사용자에게 더 가까워집니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
 
@@ -196,13 +196,13 @@ OSGi 속성:
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
 
-### Edge Delivery Services를 위한 CDN 구성(Beta 프로그램) {#cdn-eds-beta}
+### Edge Delivery Services를 위한 CDN 구성 (Beta 프로그램) {#cdn-eds-beta}
 
 Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다.
 
 이제 Beta 버전에서는 CDN 원본 선택기, 응답 및 요청 변환 등을 포함한 기능에 대한 구성 파이프라인을 배포합니다. 사용 사례에 대한 자세한 내용은 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)에 문의해 주십시오.
 
-### 더 많은 대상으로 AEM 로그 전달(Beta 프로그램) {#log-forwarding-beta}
+### 더 많은 대상으로 AEM 로그 전달 (Beta 프로그램) {#log-forwarding-beta}
 
 로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
 
@@ -222,9 +222,9 @@ Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipe
 
 [여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
-## Universal Editor {#universal-editor}
+## 범용 편집기 {#universal-editor}
 
-[여기](/help/release-notes/universal-editor/current.md)에서 Universal Editor의 전체 목록을 찾을 수 있습니다.
+[여기](/help/release-notes/universal-editor/current.md)에서 범용 편집기의 전체 목록을 찾을 수 있습니다.
 
 ## 변형 생성 {#generate-variations}
 
