@@ -57,11 +57,11 @@ Adobe 디지털 자산 관리의 주요 기능 중 일부는 다음과 같습니
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/using">
    <img alt="AEM 데스크탑 앱 사용" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/using">
       <strong>AEM 데스크톱 앱 사용</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets은 AI 생성 태그 지정(스마트 태그), 사용자 지정된 메
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ko">
    <img alt="메타데이터 관리 모범 사례" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ko">
       <strong>메타데이터 관리 모범 사례</strong>
       </a>
    </div>
@@ -517,7 +517,7 @@ AEM Assets은 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
 
 * **Adobe Workfront과 통합**: [!DNL Adobe Workfront]은(는) 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]과(와) [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
 
-  Adobe은 [통합 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 기본적으로](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html)에 제공합니다.
+  Adobe은 [통합 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 기본적으로](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=ko)에 제공합니다.
 
 * **Figma와 통합**: AEM Assets은 기본적으로 Figma와 통합되어 디자이너가 Figma 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Figma 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. Figma 커뮤니티 페이지에서 제공되는 AEM Assets Connector에 액세스하려면 [여기](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)를 클릭하십시오.
 
@@ -583,11 +583,11 @@ AEM Assets은 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Adobe Journey Optimizer와 통합" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Adobe Journey Optimizer과 통합</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ AEM Assets은 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Commerce과 통합" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Commerce과 통합</strong>
       </a>
    </div>
