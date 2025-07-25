@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # WYSIWYG 작성의 규칙 편집기 소개
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 규칙 편집기를 사용하여 규칙을 만들면 동적 양식 비헤이비어를 추가할 수 있습니다. 이러한 규칙을 사용하면 조건부 필드 가시성이 높아지고, 사용자 입력을 기반으로 계산이 자동화되며, 전반적인 사용자 경험이 향상됩니다. 규칙 편집기는 양식 작성 프로세스를 간소화하여 정확성과 효율성을 모두 보장하는 데 도움이 됩니다.
@@ -188,7 +188,7 @@ ht-degree: 97%
 
 시각적 규칙 편집기에서 규칙을 작성하는 방법을 이해하기 위해 세금 계산 양식이라는 간단한 예제를 살펴보겠습니다.
 
-![양식 필드 가시성에 대한 When-Then 논리를 사용하여 조건부 규칙을 만드는 것을 보여 주는 규칙 편집기 인터페이스의 스크린샷](/help/edge/docs/forms/assets/rule-editor-1.png)
+![양식 필드 표시 여부를 위한 When-Then 논리를 사용하여 조건부 규칙을 만드는 것을 보여 주는 규칙 편집기 인터페이스 스크린샷](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 위에 설명된 양식에서 사용자는 총 급여를 입력합니다. 이러한 입력을 기준으로 조건부 필드가 표시되고 미지급 세금이 계산됩니다.
 
@@ -223,7 +223,7 @@ ht-degree: 97%
    * 제출 (제출 버튼)
 1. `Additional Deduction` 양식 필드의 `Properties`를 열어 해당 필드를 숨깁니다.
 
-   ![규칙이 적용되기 전에 양식 구조를 보여주는 총 급여, 결혼 상태 및 부양 자녀에 대한 입력 필드가 있는 세금 계산 양식의 스크린샷](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![총 급여, 결혼 여부, 부양 자녀에 대한 입력 필드가 있는 세금 계산 양식의 스크린샷으로, 규칙이 적용되기 전 양식 구조를 보여 줍니다.](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### &#x200B;2. 양식 필드에 대한 조건부 규칙 추가
 
@@ -232,7 +232,7 @@ ht-degree: 97%
 1. 범용 편집기에서 양식을 열어 편집하고 콘텐츠 트리에서 **[!UICONTROL 총 급여]** 필드를 선택한 다음 ![edit-rules](/help/forms/assets/edit-rules-icon.svg)를 선택합니다. 또는 **[!UICONTROL 양식 오브젝트]** 창에서 직접 **[!UICONTROL 총 급여]** 필드를 선택할 수도 있습니다.
    ![규칙 편집기 예제1](/help/edge/docs/forms/assets/rule-editor3.png)
 시각적 규칙 편집기 인터페이스가 나타납니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭하여 규칙을 생성합니다.
+1. **[!UICONTROL 만들기]**를 클릭하여 규칙을 생성합니다.
    ![규칙 편집기 예제2](/help/edge/docs/forms/assets/rule-editor4.png)
 기본적으로 `Set Value Of` 규칙 유형이 선택되어 있습니다. 선택한 오브젝트를 변경하거나 수정할 수는 없지만 규칙 드롭다운을 사용하여 다른 규칙 유형을 선택할 수 있습니다.\
    ![규칙 편집기 예제3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -243,17 +243,17 @@ ht-degree: 97%
 1. 규칙의 **[!UICONTROL 숫자 입력]** 필드에서 `50000`을 입력합니다.
    ![규칙 편집기 예제6](/help/edge/docs/forms/assets/rule-editor8.png)
 조건을 `When Gross Salary is greater than 50000`으로 정의했습니다. 다음으로 이 조건이 `True`일 경우 수행할 액션을 정의합니다.
-1. `Then` 문에서 **[!UICONTROL 액션 선택]** 드롭다운의 **[!UICONTROL 표시]**&#x200B;를 선택합니다.
+1. `Then` 문에서 **[!UICONTROL 액션 선택]** 드롭다운의 **[!UICONTROL 표시]**를 선택합니다.
    ![규칙 편집기 예제7](/help/edge/docs/forms/assets/rule-editor9.png)
 1. **[!UICONTROL 오브젝트 드롭 또는 여기에서 선택]** 필드의 양식 오브젝트 탭에서 **[!UICONTROL 추가 공제]** 필드를 드래그 앤 드롭합니다. 또는 **[!UICONTROL 오브젝트를 놓거나 여기에서 선택]** 필드를 선택하고 팝업 메뉴에서 **[!UICONTROL 추가 공제]** 필드를 선택하면 양식의 모든 양식 오브젝트가 나열됩니다.
    ![규칙 편집기 예제8](/help/edge/docs/forms/assets/rule-editor10.png)
 1. `50000` 미만의 급여를 입력하는 경우를 위해 **[!UICONTROL 다른 섹션 추가]**&#x200B;를 선택하여 **[!UICONTROL 총 급여]** 필드에 다른 조건을 추가합니다.
    ![규칙 편집기 예제9](/help/edge/docs/forms/assets/rule-editor11.png)
-1. `Else` 문에서 **[!UICONTROL 액션 선택]** 드롭다운의 **[!UICONTROL 숨기기]**&#x200B;를 선택합니다.
+1. `Else` 문에서 **[!UICONTROL 액션 선택]** 드롭다운의 **[!UICONTROL 숨기기]**를 선택합니다.
    ![규칙 편집기 예제10](/help/edge/docs/forms/assets/rule-editor12.png)
 1. **[!UICONTROL 오브젝트 드롭 또는 여기에서 선택]** 필드의 양식 오브젝트 탭에서 **[!UICONTROL 추가 공제]** 필드를 드래그 앤 드롭합니다. 또는 **[!UICONTROL 오브젝트를 놓거나 여기에서 선택]** 필드를 선택하고 팝업 메뉴에서 **[!UICONTROL 추가 공제]** 필드를 선택하면 양식의 모든 양식 오브젝트가 나열됩니다.
    ![규칙 편집기 예제11](/help/edge/docs/forms/assets/rule-editor13.png)
-1. **[!UICONTROL 완료]**&#x200B;를 선택하여 규칙을 저장합니다.
+1. **[!UICONTROL 완료]**를 선택하여 규칙을 저장합니다.
 규칙이 규칙 편집기에 다음과 같이 나타납니다.
    ![규칙 편집기 예제12](/help/edge/docs/forms/assets/rule-editor14.png)
 
@@ -266,9 +266,9 @@ ht-degree: 97%
 다음으로 `Taxable Income`을 계산하는 규칙을 작성합니다. 이는 `Gross Salary`에서 `Additional Deduction`(해당되는 경우)을 뺀 값입니다. **[!UICONTROL 과세 소득]** 필드에 계산 규칙을 추가하려면 다음 단계를 수행하십시오.
 
 1. 작성 모드에서 **[!UICONTROL 과세 소득]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 또는 **[!UICONTROL 양식 오브젝트]** 창에서 직접 **[!UICONTROL 과세 소득]** 필드를 선택할 수도 있습니다.
-1. 그 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하여 규칙을 생성합니다.
+1. 그 다음 **[!UICONTROL 만들기]**를 선택하여 규칙을 생성합니다.
    ![규칙 편집기 예제13](/help/edge/docs/forms/assets/rule-editor16.png)
-1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**&#x200B;을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
+1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
    ![규칙 편집기 예제14](/help/edge/docs/forms/assets/rule-editor17.png)
 
 1. 수학 표현 필드에서 다음 작업을 수행하십시오.
@@ -278,16 +278,15 @@ ht-degree: 97%
    * **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 빼기]**&#x200B;를 선택합니다.
 
    * 양식 오브젝트 탭의 기타 **[!UICONTROL 오브젝트 드롭 또는 여기에서 선택]** 필드에서 **[!UICONTROL 추가 공제]** 필드를 선택하거나 드래그 앤 드롭합니다.
-
      ![규칙 편집기 예제15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 규칙을 저장합니다.
 
    이제 과세 소득에 세율을 곱하여 결정되는 `Tax Payable ` 필드에 대한 규칙을 추가합니다. 단순성을 위해 고정 세율을 `10%`로 가정합니다.
 
-1. 작성 모드에서 **[!UICONTROL 미지급 세금]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 그 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하여 규칙을 생성합니다.
+1. 작성 모드에서 **[!UICONTROL 미지급 세금]** 필드를 선택하고 ![edit-rules](/help/forms/assets/edit-rules-icon.svg) 아이콘을 선택합니다. 그 다음 **[!UICONTROL 만들기]**를 선택하여 규칙을 생성합니다.
    ![규칙 편집기 예제16](/help/edge/docs/forms/assets/rule-editor19.png)
-1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**&#x200B;을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
+1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
    ![규칙 편집기 예제17](/help/edge/docs/forms/assets/rule-editor20.png)
 1. 수학 표현 필드에서 다음 작업을 수행하십시오.
 
@@ -296,9 +295,8 @@ ht-degree: 97%
    * **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 곱하기]**&#x200B;를 선택합니다.
 
    * **[!UICONTROL 옵션 선택]** 필드에서 **숫자**&#x200B;를 선택하고 **[!UICONTROL 숫자 입력]** 필드에 값을 `10`으로 입력합니다.
-
      ![규칙 편집기 예제18](/help/edge/docs/forms/assets/rule-editor21.png)
-1. 다음으로 표현식 필드 주변의 강조 표시된 영역을 선택하고 **[!UICONTROL 표현식 확장]**&#x200B;을 선택합니다.
+1. 다음으로 표현식 필드 주변의 강조 표시된 영역을 선택하고 **[!UICONTROL 표현식 확장]**을 선택합니다.
    ![규칙 편집기 예제19](/help/edge/docs/forms/assets/rule-editor22.png)
 1. 확장된 표현식 필드의 **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 나누기]**&#x200B;를 선택하고 **[!UICONTROL 옵션 선택]** 필드에서 **[!UICONTROL 숫자]**&#x200B;를 선택합니다. 그런 다음 숫자 필드에 `100`을 지정합니다.
    ![규칙 편집기 예제20](/help/edge/docs/forms/assets/rule-editor23.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![사용자 정의 함수 추가](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 규칙 편집기의 사용자 정의 함수 사용

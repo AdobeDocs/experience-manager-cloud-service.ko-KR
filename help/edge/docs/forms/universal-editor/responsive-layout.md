@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1247'
+ht-degree: 100%
 
 ---
 
 
 # WYSIWYG 작성 환경에서의 반응형 모드
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 ## 반응형 양식 소개
 
@@ -83,7 +83,7 @@ ht-degree: 99%
 
 **예:** 입사지원서 양식에는 “개인 정보”, “학력”, “경력”, “참조”를 구분된 패널로 구분하여 사용할 수 있습니다.
 
-**반응형 동작:** 작은 화면에서는 패널이 일반적으로 세로로 배열되어, 구분된 그룹을 유지하면서도 좁은 폭에 맞게 조정됩니다.
+**반응형 동작:** 작은 화면에서는 패널이 일반적으로 세로로 배열되어 구분된 그룹을 유지하면서도 좁은 폭에 맞게 조정됩니다.
 
 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)를 사용하여 양식에 패널 레이아웃을 추가할 수 있습니다. 패널 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 설명서를 참조하십시오.
 

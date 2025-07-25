@@ -1,13 +1,13 @@
 ---
 title: AEM Forms용 Edge Delivery Services 개요
-description: 범용 편집기 작성 접근 방식을 강조하여 Adobe Experience Manager Edge Delivery Services에서 고성능 양식을 작성하고 전달합니다.
+description: Adobe Experience Manager Edge Delivery Services에서 범용 편집기 작성 방식을 중점적으로 활용하여 고성능 양식을 만들고 전달합니다.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -28,33 +28,33 @@ AEM Forms용 Edge Delivery Services는 새 양식을 빠르게 업데이트, 게
 ## 작성 방법 선택
 
 
-Adobe Experience Manager(AEM) EDS(Edge Delivery Services)를 사용하면 엣지에서 매우 빠르고 확장성이 뛰어난 웹 경험을 제공할 수 있습니다. 이 안내서에서는 명확한 권장 계층 구조를 사용하여 **이러한 경험에 대한 양식을 작성하고 게시하는 방법**&#x200B;을 설명합니다.
+Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우 빠르고 확장성이 뛰어난 웹 경험을 제공합니다. 이 안내서에서는 **해당 경험을 위한 양식을 빌드하고 게시하는 방법**&#x200B;을 명확한 권장 계층과 함께 설명합니다.
 
-* **유니버설 편집기(UE) - 대부분의 팀에 가장 적합한 옵션**
-* **문서 기반 작성(문서/시트) - 빠르고 간단한 양식에 적합**
-* **DA(문서 작성) - DA가 작성된 페이지에 양식을 포함하는 데 사용**
+* **범용 편집기(UE) – 대부분의 팀에 최적의 선택**
+* **문서 기반 작성 (Docs/Sheets) – 빠르고 간단한 양식에 적합**
+* **문서 작성 (DA) – DA로 작성된 페이지에 양식을 임베드하는 데 사용**
 
-마지막에 올바른 작성 방법을 선택하고 제출 옵션을 이해한 다음, 프로덕션 준비 양식에 대한 다음 단계를 따를 수 있습니다.
+마지막으로 올바른 작성 방법을 선택하고, 제출 옵션을 이해하며, 프로덕션 준비가 된 양식을 만드는 다음 단계를 따를 수 있습니다.
 
 
-| 팀 및 요구 사항 | 권장 메서드 | 이유 |
+| 팀 및 요구 사항 | 권장 방법 | 이유 |
 |--------------------|--------------------|-----|
-| 마케터/디자이너는 시각적 제어, 조건부 논리 또는 AEM 통합이 필요합니다 | **Universal Editor** | 드래그 앤 드롭, 고급 규칙, FSS 또는 AEM 게시로 제출 |
-| 이미 Word/Google Docs/Sheets에서 작업 중인 콘텐츠 작성자, 스프레드시트/이메일로 간단한 데이터 캡처 | **문서 기반 작성** | 친숙한 도구, 기본 양식을 위한 가장 빠른 경로 |
-| **DA(문서 작성)**&#x200B;에 빌드된 웹 사이트 페이지 | DA 페이지에 UE 또는 문서 기반 양식을 **포함** | DA는 양식 자체를 빌드하지 않습니다. |
+| 마케터/디자이너에게 시각적 제어, 조건 논리 또는 AEM 통합이 필요합니다. | **범용 편집기** | 드래그 앤 드롭, 고급 규칙, FSS 또는 AEM Publish로 제출 |
+| Word/Google Docs/Sheets에서 이미 작업 중인 콘텐츠 작성자, 스프레드시트, 이메일에 대한 간단한 데이터 캡처 | **문서 기반 작성** | 익숙한 도구, 기본 양식에 대한 가장 빠른 경로 |
+| **문서 작성(DA)**&#x200B;에 기본 제공되는 웹 사이트 페이지 | UE 또는 문서 기반 양식을 DA 페이지에 **임베드** | DA는 양식을 직접 빌드하지 않습니다. |
 
 
-## 작성 방법 세부 정보
+## 작성 방법 상세 설명
 
-### Universal Editor
+### 범용 편집기
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
-[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 속도를 엔터프라이즈급 성능과 결합하는 마케터와 디자이너를 위한 시각적, 끌어서 놓기 작성 도구입니다.
+[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 속도와 엔터프라이즈급 기능을 결합한 마케터 및 디자이너를 위한 시각적 드래그 앤 드롭 작성 도구입니다.
 
-* 실시간 WYSIWYG 편집 및 장치 미리 보기.
-* AEM 자산, 워크플로우 및 양식 데이터 모델(FDM)과 직접 통합합니다.
-* 바닐라 JS/CSS의 사용자 지정 구성 요소에 대해 개발자에게 매끄러운 핸드오프입니다.
+* 실시간 WYSIWYG 편집 및 디바이스 미리보기 기능을 제공합니다.
+* AEM 자산, 워크플로 및 Forms 데이터 모델(FDM)과의 직접 통합을 지원합니다.
+* Vanilla JS/CSS에서 사용자 정의 구성 요소를 개발자에게 원활하게 전달합니다.
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
 * 쉬운 양식 만들기 및 시각화를 위한 WYSIWYG 편집 경험.
@@ -64,14 +64,14 @@ Adobe Experience Manager(AEM) EDS(Edge Delivery Services)를 사용하면 엣지
 * 양식을 미리 채우고 데이터를 제출하기 위한 다양한 데이터 소스 통합.
 * 다양한 데이터 소스와의 데이터 구조 및 상호 작용을 정의하기 위한 양식 데이터 모델(FDM).
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, 더 많은 데이터 소스에 데이터를 제출하는 기능을 포함하여 양식 제출을 처리하기 위한 여러 제출 작업 중에서 선택할 수 있는 기능.
-* Forms 제출 서비스(FSS) 또는 AEM 게시 제출 액션을 사용하여 제출
+* Forms 제출 서비스(FSS) 또는 AEM 게시를 사용하여 제출 작업
 
-**권장 사항**: 팀이 100% 문서 중심이고 양식이 매우 기본이 아닌 경우 유니버설 편집기로 모든 새 양식 프로젝트를 시작하십시오.
+**권장 사항**: 팀이 100% 문서 중심이고 양식이 매우 기본적인 경우가 아니라면 모든 새 양식 프로젝트를 범용 편집기로 시작하는 것이 좋습니다.
 
 
-### 문서 기반 작성(Microsoft 문서 또는 Google Sheets 사용)
+### Microsoft Docs 또는 Google Sheets를 사용하여 문서 기반 작성
 
-[문서 기반 작성](/help/edge/docs/forms/tutorial.md)은(는) Microsoft Word, Google Docs 또는 Google Sheets와 같은 익숙한 도구를 사용하여 단순하고 복잡성이 낮은 양식을 만드는 데 가장 적합합니다. 이 방법은 양식을 빠르고 간단하게 작성하는 방법이 필요한 콘텐츠 팀에 이상적입니다.
+[문서 기반 작성](/help/edge/docs/forms/tutorial.md)은 Microsoft Word, Google Docs 또는 Google Sheets와 같은 익숙한 도구를 사용하여 간단하고 복잡도가 낮은 양식을 만드는 데 가장 적합합니다. 이 방법은 빠르고 간단하게 양식을 빌드해야 하는 콘텐츠 팀에게 이상적입니다.
 
 * 사용자 친화적인 경험을 위한 접근성 구성 요소.
 * 일관된 렌더링을 위한 표준화된 HTML 구조.
@@ -83,11 +83,11 @@ Adobe Experience Manager(AEM) EDS(Edge Delivery Services)를 사용하면 엣지
 * 운영 원격 측정을 통해 양식 성능 모니터링
 
 
-### DA(문서 작성)에 Forms 포함
+### 문서 작성(DA)에 양식 임베드
 
-DA(Document Authoring)는 구조화된 페이지 콘텐츠를 만들기 위해 설계되었으며 기본 양식 만들기를 지원하지 않습니다. DA 작성 페이지에 양식을 추가하려면 **유니버설 편집기**(권장) 또는 문서 기반 작성을 사용하여 양식을 만들고 해당 양식을 문서 작성 페이지에 포함할 수 있습니다.
+문서 작성(DA)은 구조화된 페이지 콘텐츠 생성을 위해 설계되었으며, 기본 양식 생성을 지원하지 않습니다. DA로 작성된 페이지에 양식을 추가하려면 **범용 편집기**(권장) 또는 문서 기반 작성을 사용하여 양식을 생성하고, 해당 양식을 문서 작성 페이지에 임베드할 수 있습니다.
 
-## Edge Delivery Services Forms 게시 {#edge-overview}
+## Edge Delivery Services 양식 게시 {#edge-overview}
 
 다음 다이어그램은 Microsoft Excel 또는 Google Sheets(문서 기반 편집)에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 WYSIWYG 작성(범용 편집기)을 사용하는 AEM 게시 방법을 보여 줍니다.
 
@@ -112,13 +112,13 @@ DA(Document Authoring)는 구조화된 페이지 콘텐츠를 만들기 위해 �
 
 ## 다음 단계
 
-* [Forms용 Edge Delivery Services 유니버설 편집기의 기능](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Forms용 Edge Delivery Services용 범용 편집기의 기능 및 성능](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [범용 편집기를 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Google Sheets 또는 Microsoft Excel을 사용하여 첫 번째 양식을 만듭니다](/help/edge/docs/forms/tutorial.md).
-* [DA(문서 작성)에 Forms 포함](https://www.aem.live/developer/da-tutorial)
+* [Google 시트 또는 Microsoft Excel을 사용하여 첫 번째 양식 만들기](/help/edge/docs/forms/tutorial.md)
+* [문서 작성(DA)에 양식 임베드](https://www.aem.live/developer/da-tutorial)
 
 
-이제 AEM Edge Delivery Services을 사용하여 첫 번째 고성능 양식을 만들 준비가 되었습니다.
+이제 AEM Edge Delivery Services를 사용하여 첫 번째 고성능 양식을 생성할 준비가 되었습니다.
 
 
 <!-- 

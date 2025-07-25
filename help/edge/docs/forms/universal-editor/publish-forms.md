@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Edge Delivery Services에 적응형 양식 게시
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 양식이 완성되어 사용할 준비가 되면 고객이 데이터를 수집하고 제출할 수 있도록 양식을 게시할 수 있습니다. 게시를 통해 Edge Delivery에서 양식을 사용할 수 있으므로 사용자가 원활하게 상호 작용할 수 있습니다. 이 프로세스를 통해 고객은 실시간으로 양식을 작성하고 제출할 수 있으며, 효율적인 데이터 수집과 간소화된 처리를 보장합니다.
@@ -35,13 +35,13 @@ ht-degree: 97%
 1. **게시**&#x200B;를 클릭하면 양식의 제목을 포함한 게시 자산을 보여 주는 화면 또는 팝업이 나타납니다. 이 예제에서는 **Wknd_Form** 템플릿이 사용되었습니다.
    ![클릭 시 게시](/help/forms/assets/on-click-publish.png)
 
-1. **게시**&#x200B;를 다시 클릭하면 확인 팝업이 나타나 양식이 게시되었음을 알려 줍니다.
+1. **게시**를 다시 클릭하면 확인 팝업이 나타나 양식이 게시되었음을 알려 줍니다.
    ![게시 성공](/help/forms/assets/publish-success.png)
 
-1. 양식의 게시 상태를 확인하려면 **게시**&#x200B;를 다시 클릭합니다.
+1. 양식의 게시 상태를 확인하려면 **게시**를 다시 클릭합니다.
    ![게시 상태](/help/forms/assets/publish-status.png)
 
-1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 점 3개로 된 메뉴를 클릭한 다음 **게시 취소**&#x200B;를 클릭합니다.
+1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 점 3개로 된 메뉴를 클릭한 다음 **게시 취소**를 클릭합니다.
    ![게시 취소](/help/forms/assets/unpublish--form.png)
 
 ## AEM Publisher에 대한 레퍼러 필터를 구성하여 Edge Delivery에서 양식 제출 활성화
@@ -57,7 +57,6 @@ ht-degree: 97%
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **로컬 개발의 경우:**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 로컬 개발의 경우 CORS를 **개발 UI 호스트 URL**&#x200B;에서 활성화하는 방법에 대한 [설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)를 참조하십시오.
 
 ### 레퍼러 필터 구성

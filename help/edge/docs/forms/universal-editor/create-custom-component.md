@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1802'
+ht-degree: 100%
 
 ---
 
 # WYSIWYG 작성 사용자 정의 구성 요소 만들기
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론트엔드 개발자가 맞춤형 양식 구성 요소를 구축할 수 있도록 합니다. 이러한 사용자 정의 구성 요소는 WYSIWYG 작성 환경에 완벽하게 통합되어 양식 작성자가 양식 편집기 내에서 쉽게 추가, 구성 및 관리할 수 있습니다. 사용자 정의 구성 요소를 통해 작성자는 기능을 향상시키면서 원활하고 직관적인 작성 과정을 보장할 수 있습니다.
@@ -39,7 +39,7 @@ Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론�
 
 **범위**&#x200B;라는 새로운 사용자 정의 구성 요소를 만드는 예를 들어보겠습니다. 범위 구성 요소는 최소값, 최대값 또는 선택한 값 등의 값으로 표시되고 직선으로 나타납니다.
 
-![최소값과 최대값, 선택한 값 표시기가 있는 슬라이더를 보여 주는 범위 구성 요소의 시각적 표현](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![최소값과 최대값을 포함하는 슬라이더와 선택된 가치 지표를 보여 주는 범위 구성 요소의 시각적 표현](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 이 문서를 끝까지 읽으면 사용자 정의 구성 요소를 처음부터 만드는 방법을 배울 수 있습니다.
 
@@ -324,11 +324,11 @@ const OOTBComponentDecorators = ['file-input',
 
 위의 단계를 완료하면 사용자 정의 구성 요소가 범용 편집기 내의 양식 구성 요소 목록에 나타납니다. 그런 다음 양식 섹션으로 끌어다 놓을 수 있습니다.
 
-![폼으로 드래그 앤 드롭할 수 있는 사용자 지정 범위 구성 요소를 표시하는 유니버설 편집기 구성 요소 팔레트의 스크린샷](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![드래그 앤 드롭으로 양식에 사용할 수 있는 사용자 정의 범위 구성 요소를 보여 주는 범용 편집기 구성 요소 팔레트의 스크린샷](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 아래 스크린샷은 구성 요소 모델에 추가된 `range` 구성 요소의 속성을 보여 줍니다. 이 속성은 양식 작성자가 구성할 수 있는 속성을 지정합니다.
 
-![기본 속성, 유효성 검사 규칙 및 스타일 옵션을 포함하여 범위 구성 요소에 대해 구성 가능한 설정을 표시하는 유니버설 편집기 속성 패널의 스크린샷](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![기본 속성, 유효성 검사 규칙 및 스타일 옵션을 포함한 범위 구성 요소에 대한 구성 가능한 설정을 보여 주는 범용 편집기 속성 패널의 스크린샷](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 이제 스타일링과 기능을 추가하여 사용자 정의 구성 요소의 런타임 동작을 정의할 수 있습니다.
 
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    이 코드는 사용자 정의 구성 요소의 스타일링과 시각적 모양을 정의하는 데 도움이 됩니다.
 
 1. 기능을 추가하려면 `/blocks/form/components/range/range.js` 파일로 이동하여 다음 코드 라인을 추가합니다.
@@ -457,7 +456,7 @@ const OOTBComponentDecorators = ['file-input',
    사용자 정의 스타일링과 기능을 통합한 후 범위 구성 요소의 모양과 동작이 향상되었습니다. 업데이트된 디자인은 적용된 스타일을 반영하며, 추가된 기능은 보다 역동적이면서 인터랙티브한 사용자 경험을 보장합니다.
 아래 스크린샷은 업데이트된 범위 구성 요소를 보여 줍니다.
 
-![범용 편집기에서 값 버블 표시 및 대화형 기능을 사용하여 스타일이 지정된 슬라이더를 표시하는 최종 범위 구성 요소입니다](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![스타일이 지정된 슬라이더와 범용 편집기의 값 버블 표시 및 대화형 기능을 보여 주는 최종 범위 구성 요소](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## 자주 묻는 질문
 

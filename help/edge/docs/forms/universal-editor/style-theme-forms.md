@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1833'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 양식 모양 사용자 정의
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>을 통해 사용할 수 있는 시험판 기능입니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheets)를 사용하여 양식 필드의 스타일을 지정하고 양식의 시각적 표현을 향상시키며 사용자 경험을 향상시킬 수 있습니다.
@@ -54,7 +54,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 * **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다.
 
-* **양식에 맞는 CSS 스타일링**: 스타일이 올바르게 적용되도록 하려면 양식별 CSS를 `main .form form` 선택기에 래핑합니다. 이렇게 하면 스타일이 기본 콘텐츠 영역 내의 양식 요소만 타겟팅하므로 웹 사이트의 다른 부분과의 충돌을 피할 수 있습니다.
+* **양식에 맞는 CSS 스타일링**: 스타일이 올바르게 적용되도록 하려면 양식별 CSS를 `main .form form` 선택기에 래핑합니다. 이렇게 하면 스타일이 주요 콘텐츠 영역 내의 양식 요소만을 대상으로 하여 웹 사이트의 다른 부분과 충돌하는 것을 피할 수 있습니다.
 
   예:
 
@@ -93,10 +93,10 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 ```
 
 * 클래스: div 요소에는 특정 요소 및 스타일을 타기팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
-* {Type}: 필드 유형별로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
-* {Name}: 이름별로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
-* {FieldId}: 필드에 대한 고유 식별자로, 자동으로 생성됩니다.
-* {Required}: 필드가 필요한지 여부를 나타내는 부울입니다.
+* {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
+* {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
+* {FieldId}: 자동으로 생성된 필드의 고유 식별자입니다.
+* {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
 * 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 속성을 사용하여 이를 입력 요소와 연결합니다.
 * 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예를 들어 문자, 숫자, 이메일 등이 있습니다.
 * 설명(선택 사항): `field-description` 클래스가 있는 `div`는 사용자에게 추가 정보 또는 지침을 제공합니다.
@@ -142,9 +142,8 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
   }
   
 ```
-
 * `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타기팅합니다. 예를 들어 `.text-wrapper`는 모든 텍스트 필드를 타기팅합니다.
-* `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.field-first-name`은 “이름” 텍스트 필드를 타기팅합니다. 이 선택기는 필드-{Name} 클래스가 있는 요소를 타깃팅하는 데 사용할 수 있지만 주의해야 합니다. 이 특정한 경우에는 입력 자체뿐만 아니라 레이블 및 설명 요소도 대상으로 하기 때문에 입력 필드 스타일을 지정하는 데 유용하지 않습니다. 텍스트 입력 필드(.text-wrapper 입력)를 대상으로 하는 선택기와 같이 더 구체적인 선택기를 사용하는 것이 좋습니다.
+* `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.field-first-name`은 “이름” 텍스트 필드를 타기팅합니다. 이 선택기는 field-{Name} 클래스가 있는 요소를 타기팅하는 데 사용할 수 있지만 주의해야 합니다. 이 특정한 경우에는 입력 자체뿐만 아니라 레이블 및 설명 요소도 대상으로 하기 때문에 입력 필드 스타일을 지정하는 데 유용하지 않습니다. 텍스트 입력 필드(.text-wrapper 입력)를 대상으로 하는 선택기와 같이 더 구체적인 선택기를 사용하는 것이 좋습니다.
 
 **일반 구성 요소용 CSS 선택기의 예**
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * 래퍼 타기팅: 첫 번째 선택기(`.drop-down-wrapper`)는 외부 래퍼 요소를 타기팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
 * Flexbox 레이아웃: Flexbox는 깔끔한 레이아웃을 위해 레이블, 드롭다운 및 설명을 수직으로 정렬합니다.
 * 레이블 스타일: 더 굵은 글꼴 두께와 약간의 여백으로 레이블을 돋보이게 합니다.
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### 라디오 그룹
 
@@ -284,7 +282,6 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
-
 이 선택기는 radio-group-wrapper 클래스가 있는 모든 필드 세트를 대상으로 합니다. 전체 라디오 그룹에 일반 스타일을 적용하는 데 유용합니다.
 
 * 라디오 버튼 레이블 타기팅
@@ -465,8 +462,8 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
-* 범례 요소 (&lt;legend>)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
-* Fieldset 내부에서 여러 개의.{Type} 래퍼 요소(.text-wrapper 및 .password-wrapper)는 패널 내의 개별 양식 필드를 나타냅니다.
+* 범례 요소 (<legend>)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+* Fieldset 내부에서 여러 개의.{Type}-wrapper 요소(이 경우 .text-wrapper 및 .password-wrapper)가 패널 내의 개별 양식 필드를 나타냅니다.
 * 각 래퍼에는 이전 예시와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
 
 +++
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 이 선택기는 반복 가능 패널 내의 모든 필드 래퍼 스타일을 지정하여 필드 사이의 간격을 일관되게 유지합니다.
 
 * 특정 필드 타기팅(패널 내):
