@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.7.0 릴리스 일자는 2025년 7�
 
 ## Alpha/Beta 프로그램 {#private-beta-program}
 
-Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
+Cloud Manager의 Alpha 및 Beta 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
 현재 제공되는 기회는 다음과 같습니다.
 
@@ -49,15 +49,15 @@ Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음,**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
@@ -121,9 +121,9 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 ### Edge Delivery 구성 파이프라인 추가 {#add-eds-pipeline}
 
-이제 Edge Delivery Services를 사용하여 구축한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
+이제 Edge Delivery Services를 사용하여 빌드한 사이트에서도 구성 파이프라인이 지원되며 Cloud Service 환경 그 이상으로 기능이 확장되었습니다. 해당되는 경우 **구성 파이프라인**&#x200B;을 사용하여 트래픽 필터링 규칙 및 웹 애플리케이션 방화벽(WAF) 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
