@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # WYSIWYG 작성 환경에서의 반응형 모드
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 ## 반응형 양식 소개
 

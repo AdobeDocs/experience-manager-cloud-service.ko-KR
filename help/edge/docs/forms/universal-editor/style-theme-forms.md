@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 양식 모양 사용자 정의
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheets)를 사용하여 양식 필드의 스타일을 지정하고 양식의 시각적 표현을 향상시키며 사용자 경험을 향상시킬 수 있습니다.

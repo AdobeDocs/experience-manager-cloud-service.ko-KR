@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # WYSIWYG 작성의 규칙 편집기 소개
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 규칙 편집기를 사용하여 규칙을 만들면 동적 양식 비헤이비어를 추가할 수 있습니다. 이러한 규칙을 사용하면 조건부 필드 가시성이 높아지고, 사용자 입력을 기반으로 계산이 자동화되며, 전반적인 사용자 경험이 향상됩니다. 규칙 편집기는 양식 작성 프로세스를 간소화하여 정확성과 효율성을 모두 보장하는 데 도움이 됩니다.

@@ -15,7 +15,7 @@ ht-degree: 100%
 
 <span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
 
 양식에는 연락처 정보, 신원 정보, 동의 계약과 같은 일반적인 섹션이 포함되는 경우가 많습니다. 양식 개발자는 새로운 양식을 작성할 때마다 이러한 섹션을 만드는데, 이는 반복적이고 시간이 많이 소요되는 작업입니다.
 이러한 중복 작업을 없애기 위해 범용 편집기는 패널이나 필드 그룹 등의 재사용 가능한 양식 세그먼트를 한 번만 만들어 다양한 양식에서 재사용할 수 있는 방법을 제공합니다. 이러한 재사용 가능한 모듈식 독립 세그먼트를 양식 조각이라고 합니다. 예를 들어 동일한 비상 연락처 조각을 직원 및 감독자의 연락처 정보 등 양식의 다른 섹션에서도 사용할 수 있습니다.

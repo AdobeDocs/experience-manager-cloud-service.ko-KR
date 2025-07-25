@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Forms용 Edge Delivery Services용 범용 편집기
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 범용 편집기는 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공함으로써 Adobe Edge Delivery Services용 양식 만들기에 혁신을 일으켰습니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
 
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 온보딩
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 ## 자주 묻는 질문 (FAQ)
 

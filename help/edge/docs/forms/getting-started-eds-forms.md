@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # AEM Edge Delivery Services의 Forms 시작하기
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우 빠르고 확장성이 뛰어난 웹 경험을 제공합니다. 이 안내서에서는 **해당 경험을 위한 양식을 빌드하고 게시하는 방법**&#x200B;을 명확한 권장 계층과 함께 설명합니다.
 

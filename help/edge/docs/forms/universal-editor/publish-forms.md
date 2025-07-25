@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Edge Delivery Services에 적응형 양식 게시
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 
 양식이 완성되어 사용할 준비가 되면 고객이 데이터를 수집하고 제출할 수 있도록 양식을 게시할 수 있습니다. 게시를 통해 Edge Delivery에서 양식을 사용할 수 있으므로 사용자가 원활하게 상호 작용할 수 있습니다. 이 프로세스를 통해 고객은 실시간으로 양식을 작성하고 제출할 수 있으며, 효율적인 데이터 수집과 간소화된 처리를 보장합니다.

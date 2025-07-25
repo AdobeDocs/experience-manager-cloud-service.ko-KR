@@ -48,7 +48,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 
 ### 범용 편집기
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 속도와 엔터프라이즈급 기능을 결합한 마케터 및 디자이너를 위한 시각적 드래그 앤 드롭 작성 도구입니다.
 
