@@ -182,6 +182,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 CMK UI에 다음 정보를 제공합니다.
 ![UI에 정보 입력](./assets/cmk/step3a.png)
 
