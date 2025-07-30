@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,8 +111,8 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 1. 이제 콘텐츠 폴더를 설정했으므로 앞서 AEM Forms 상용구를 사용하여 만든 GitHub의 프로젝트에 이를 연결할 차례입니다. 연결하는 방법은 다음과 같습니다.
 
    1. 앞서 AEM Forms 상용구를 사용하여 만든 GitHub 저장소로 이동합니다.
-   1. 편집할 `fstab.yaml`을 엽니다.
-   1. 기존 참조를 AEM 사용자(forms@adobe.com)와 공유한 폴더 경로로 바꿉니다.
+   1. 루트 폴더에 `fstab.yaml` 파일을 추가합니다.
+   1. AEM 사용자와 공유한 폴더에 경로가 있는 참조를 추가합니다(forms@adobe.com).
 
       ![Google Drive의 샘플 콘텐츠](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       Microsoft SharePoint에서의 파일 관리에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 확인하십시오.
 
 
-   1. 참조를 업데이트했고 모든 항목에 문제가 없으면 업데이트된 `fsatb.yaml` 파일을 커밋합니다. 빌드 문제가 발생하면 [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
+   1. 참조를 추가하고 모든 것이 정상이면 `fsatb.yaml` 파일을 커밋하십시오. 빌드 문제가 발생하면 [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
 
       ![업데이트된 fsatab.yaml 파일 커밋](/help/edge/assets/commit-updated-fstab-yaml.png)
 

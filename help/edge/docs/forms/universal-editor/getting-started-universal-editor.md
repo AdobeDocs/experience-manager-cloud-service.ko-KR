@@ -4,10 +4,10 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 Edge 
 ![Github 저장소 워크플로](/help/edge/assets/repo-workflow.png){width=auto}
 
 이 튜토리얼에서는 범용 편집기의 WYSIWYG 작성 기능을 사용하여 새 Adobe Experience Manager 사이트 프로젝트나 기존 Adobe Experience Manager 사이트 프로젝트에서 직접 양식을 만들고, 미리 보고, 게시하는 방법을 안내합니다.
-
 
 ## 사전 요구 사항
 
@@ -66,16 +65,16 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 1. 이제 AEM Forms 상용구를 사용하여 만든 GitHub 저장소를 AEM 프로젝트 작성 환경에 링크합니다. 연결하는 방법은 다음과 같습니다.
 
    1. 앞서 AEM Forms 상용구를 사용하여 만든 GitHub 저장소로 이동합니다.
-   1. 편집을 위해 **fstab.yaml** 파일을 엽니다.
+   1. 루트 폴더에 **fstab.yaml** 파일을 추가합니다.
 
       ![fstab.yaml 파일 열기](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. **fstab.yaml** 파일을 편집하여 프로젝트의 마운트 지점을 업데이트합니다. URL을 AEM as a Cloud Service 작성 인스턴스의 URL로 바꿉니다.
+   1. 프로젝트의 탑재 지점을 **fstab.yaml** 파일에 추가합니다. AEM as a Cloud Service 작성 인스턴스의 URL을 추가합니다.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml 파일 편집](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 참조를 업데이트했고 모든 항목에 문제가 없으면 업데이트된 **fstab.yaml** 파일을 커밋합니다.
+   1. 참조를 추가하고 모든 것이 정상인 경우 **fstab.yaml** 파일을 커밋하십시오.
 
       ![변경 사항 커밋](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -171,13 +170,13 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 1. 로컬 시스템의 AEM 프로젝트 저장소 폴더로 이동합니다.
 
-1. [AEM 양식 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
+1. [AEM Forms 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
    * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 [AEM Forms 상용구의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)로 업데이트합니다.
-1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 &quot;form&quot;과 &quot;embed-adaptive-form&quot;을 추가합니다.
+1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 “form”과 “embed-adaptive-form”을 추가합니다.
 
    ```
        "filters": [
