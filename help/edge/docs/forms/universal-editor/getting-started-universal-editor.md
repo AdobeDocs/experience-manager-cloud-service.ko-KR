@@ -70,6 +70,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       ![fstab.yaml 파일 열기](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. 프로젝트의 탑재 지점을 **fstab.yaml** 파일에 추가합니다. AEM as a Cloud Service 작성 인스턴스의 URL을 추가합니다.
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![fstab.yaml 파일 편집](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -116,7 +117,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
       단 몇 분 만에 새로운 AEM 프로젝트가 생성됩니다.
 
-   1. Sites 콘솔에서 새로 만든 AEM 프로젝트로 이동하여 **편집**을 클릭합니다.
+   1. Sites 콘솔에서 새로 만든 AEM 프로젝트로 이동하여 **편집**&#x200B;을 클릭합니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
 
       ![AEM 사이트 편집](/help/edge/docs/forms/assets/edit-site.png)
@@ -269,7 +270,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프로젝트를 편집하고 AEM 프로젝트 페이지에 Edge Delivery Services 양식을 포함하도록 적응형 양식 섹션을 추가할 수 있습니다.
 
 1. AEM 프로젝트 페이지에 적응형 양식 섹션을 추가합니다. 추가 방법은 다음과 같습니다.
-   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**을 클릭합니다. 편집할 수 있도록 AEM 프로젝트 페이지가 범용 편집기에서 열립니다.
+   1. Sites 콘솔에서 AEM 프로젝트로 이동하여 편집할 사이트 페이지를 선택한 다음 **편집**&#x200B;을 클릭합니다. 편집할 수 있도록 AEM 프로젝트 페이지가 범용 편집기에서 열립니다.
 이 경우 `index.html` 페이지는 설명 목적으로 사용됩니다.
    1. 콘텐츠 트리를 열고 적응형 양식 섹션을 추가할 섹션으로 이동합니다.
    1. **[!UICONTROL 추가]** 아이콘을 클릭하고 구성 요소 목록에서 **[!UICONTROL 적응형 양식]** 구성 요소를 선택합니다.
@@ -343,7 +344,7 @@ WYSIWYG 작성을 위해 범용 편집기에서 AEM 프로젝트를 열어 프�
        npm install -g @adobe/aem-cli
    ```
 
-1. **GitHub 프로젝트 복제**: 다음 명령을 사용하여 GitHub에서 AEM 프로젝트 저장소를 복제합니다. 이때 <owner> 저장소 소유자와 <repo> 저장소 이름은 바꿉니다.
+1. **GitHub 프로젝트 복제**: 다음 명령을 사용하여 GitHub에서 AEM 프로젝트 저장소를 복제합니다. 이때 &lt;owner> 저장소 소유자와 &lt;repo> 저장소 이름은 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>
