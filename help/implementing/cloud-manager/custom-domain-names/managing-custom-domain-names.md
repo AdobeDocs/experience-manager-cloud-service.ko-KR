@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 22%
+source-wordcount: '833'
+ht-degree: 21%
 
 ---
 
@@ -105,6 +105,12 @@ Adobe Cloud Manager에서 다음과 같은 이유로 사용자 정의 도메인 
 
 
 ### 특정 환경에서 사용자 정의 도메인 이름 삭제 {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>Cloud Manager에서 도메인을 삭제하기 *전*&#x200B;에 DNS 공급자를 사용하여 도메인의 DNS 레코드를 제거합니다. 중단된(대기 중인) DNS 항목을 납치하여 보안 위험을 초래할 수 있습니다.
+
+**특정 환경에서 사용자 지정 도메인 이름을 삭제하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
