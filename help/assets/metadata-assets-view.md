@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2430'
 ht-degree: 74%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 74%
 
 ![자산의 메타데이터 보기](assets/metadata-view.png)
 
-*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 [!UICONTROL 기본] 탭에서 제목, 설명 및 업로드 날짜와 같은 기본 메타데이터를 사용할 수 있습니다. [!UICONTROL 고급] 탭에는 카메라 모델, 렌즈 세부 정보 및 위치 정보 태그와 같은 고급 메타데이터가 포함되어 있습니다. [!UICONTROL 태그] 탭에는 이미지 내용에 따라 자동으로 적용된 태그가 포함되어 있습니다.
 
@@ -48,7 +48,7 @@ ht-degree: 74%
 
 ![자산의 스마트 태그 보기](assets/metadata-view-tags.png)
 
-*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 스마트 태그에는 신뢰도 점수도 백분율로 포함됩니다. 이는 적용된 태그와 관련된 신뢰도를 나타냅니다. 자동으로 적용되는 스마트 태그를 조정할 수 있습니다.
 
@@ -130,10 +130,10 @@ MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 | 확인란 | 부울 값을 추가합니다. 값이 저장되면 TRUE 또는 FALSE로 저장됩니다. |
 | 날짜 | 날짜 구성 요소를 추가합니다. |
 | 드롭다운 | 드롭다운 목록을 추가합니다. |
-| 상태 | 저장소 상태 속성 추가(repo:state에 매핑됨) |
-| 자산 상태 | 기본 자산 상태 속성 추가(dam:assetStatus에 매핑됨) |
-| 태그 | 분류 체계 관리에 저장된 값에서 태그를 추가합니다(xcm:tags에 매핑됨). |
-| 키워드 | 자유 형식 키워드를 추가합니다(dc:subject에 매핑됨). |
+| 상태 | 저장소 상태 속성(저장소 :state에 매핑됨) 추가 |
+| 자산 상태 | 기본 자산 상태 속성(dam:assetStatus에 매핑됨) 추가 |
+| 태그 | 분류 관리에 저장된 값(xcm:tags에 매핑됨)에서 태그를 추가합니다. |
+| 키워드 | 자유 형식 키워드(dc:subject에 매핑됨)를 추가합니다. |
 | 스마트 태그 | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
 
 ### 폴더에 메타데이터 양식 할당 {#assign-metadata-form-folder}
@@ -228,9 +228,6 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 * GenAI 라이더 계약에 서명해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
-  >[!IMPORTANT]
-  >
-  > AI가 생성한 에셋의 제목은 에셋 제목을 정의하지 않은 경우에만 에셋 카드에 표시됩니다. 사용자가 지정한 자산 제목을 덮어쓰지 않습니다.
 
 ### AI가 생성한 메타데이터 사용 {#using-ai-generated-smart-tags}
 
@@ -253,15 +250,17 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 1. [선택 사항] 관련 태그가 누락된 경우 태그를 추가하거나 직접 만들 수 있습니다. 이렇게 하려면 **[!UICONTROL 생성된 키워드]** 필드에 태그를 쓰고 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
+AI 생성 메타데이터를 비활성화하는 방법에 대한 자세한 내용은 [AI 생성 메타데이터 비활성화](/help/assets/smart-tags.md#disable-ai-generated-metadata)를 참조하십시오.
+
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
