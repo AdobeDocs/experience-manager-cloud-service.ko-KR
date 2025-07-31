@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ AEM as a Cloud Service를 사용하면 데이터를 암호화하기 위한 암�
 1. 환경 설정
 1. Adobe에서 애플리케이션 ID 받기
 1. 새 리소스 그룹 만들기
-1. 주요 자격 증명 모음 만들기
-1. 주요 자격 증명 모음에 대한 Adobe 액세스 권한 부여
+1. 키 자격 증명 모음 만들기
+1. Adobe에 키 자격 증명 모음에 대한 액세스 권한 부여
 1. 암호화 키 만들기
 
 키 자격 증명 모음 URL, 암호화 키 이름 및 키 자격 증명 모음에 대한 정보를 Adobe와 공유해야 합니다.
@@ -52,30 +52,30 @@ AEM as a Cloud Service를 사용하면 데이터를 암호화하기 위한 암�
 
 이 안내서에는 Azure 명령줄 인터페이스(CLI)만 필요합니다. Azure CLI가 아직 설치되지 않은 경우 [여기](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)에서 공식 설치 지침을 따릅니다.
 
-이 안내서의 나머지 부분을 계속 진행하기 전에 `az login`을(를) 사용하여 CLI에 로그인하십시오.
+이 안내서의 나머지 부분을 진행하기 전에 `az login`으로 CLI에 로그인하십시오.
 
 >[!NOTE]
 >
 >이 안내서는 Azure CLI를 사용하지만 Azure 콘솔을 통해 동일한 작업을 수행할 수 있습니다. Azure 콘솔을 사용하려면 아래 명령을 참조하십시오.
 
 
-## AEM as a Cloud Service에 대한 CMK 구성 프로세스 시작 {#request-cmk-for-aem-as-a-cloud-service}
+## AEM as a Cloud Service에 대한 CMK 구성 프로세스 시작하기 {#request-cmk-for-aem-as-a-cloud-service}
 
-UI를 통해 AEM as a Cloud Service 환경에 대한 CMK(고객 관리 키) 구성을 요청해야 합니다. 이렇게 하려면 **고객 관리 키** 섹션 아래의 AEM 홈 보안 UI로 이동합니다.
-그런 다음 **온보딩 시작** 단추를 클릭하여 온보딩 프로세스를 시작할 수 있습니다.
+UI를 통해 AEM as a Cloud Service 환경에 대한 고객 관리 키(CMK) 구성을 요청해야 합니다. 이렇게 하려면 **고객 관리 키** 섹션 아래 AEM 홈 보안 UI로 이동하십시오.
+그런 다음 **온보딩 시작** 버튼을 클릭하여 온보딩 프로세스를 시작할 수 있습니다.
 
 ![CMK UI를 사용하여 웹 사이트 온보딩 시작](./assets/cmk/step1.png)
 
 
 ## Adobe에서 애플리케이션 ID 받기 {#obtain-an-application-id-from-adobe}
 
-온보딩 프로세스가 시작되면 Adobe에서 Entra 애플리케이션 ID를 제공합니다. 이 애플리케이션 ID는 안내서의 나머지 부분에 필요하며 Adobe이 주요 자격 증명 모음에 액세스할 수 있도록 하는 서비스 사용자를 만드는 데 사용됩니다. 아직 애플리케이션 ID가 없는 경우 Adobe에서 제공할 때까지 기다려야 합니다.
+온보딩 프로세스를 시작하면 Adobe에서 Entra 애플리케이션 ID를 제공합니다. 이 애플리케이션 ID는 가이드의 나머지 부분에서 필요하며 Adobe가 키 자격 증명 모음에 액세스할 수 있도록 하는 서비스 주체를 만드는 데 사용됩니다. 아직 애플리케이션 ID가 없다면 Adobe에서 제공할 때까지 기다려야 합니다.
 
-![요청이 처리 중입니다. Adobe에서 Entra 응용 프로그램 ID를 제공할 때까지 기다리십시오](./assets/cmk/step2.png)
+![요청을 처리하는 중입니다. Adobe에서 Entra 애플리케이션 ID를 제공할 때까지 기다리십시오.](./assets/cmk/step2.png)
 
 요청이 완료되면 CMK UI에서 애플리케이션 ID를 볼 수 있습니다.
 
-![Adobe에서 Entra 응용 프로그램 ID를 제공합니다](./assets/cmk/step3.png)
+![Entra 애플리케이션 ID는 Adobe에서 제공합니다.](./assets/cmk/step3.png)
 
 ## 새 리소스 그룹 만들기 {#create-a-new-resource-group}
 
@@ -94,7 +94,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## 키 자격 증명 모음 만들기 {#create-a-key-vault}
 
-암호화 키를 저장하려면 키 자격 증명 모음을 만들어야 합니다. 키 자격 증명 모음은 삭제 방지 기능이 활성화되어 있어야 합니다. 다른 Azure 서비스에서 사용하지 않는 데이터를 암호화하려면 삭제 방지 기능이 필요합니다. Adobe 서비스가 주요 자격 증명 모음에 액세스할 수 있도록 하려면 공개 네트워크 액세스를 활성화해야 합니다.
+암호화 키를 저장하려면 키 자격 증명 모음을 만들어야 합니다. 키 자격 증명 모음은 삭제 방지 기능이 활성화되어 있어야 합니다. 다른 Azure 서비스에서 사용하지 않는 데이터를 암호화하려면 삭제 방지 기능이 필요합니다. Adobe 서비스가 키 자격 증명 모음에 액세스할 수 있도록 하려면 공용 네트워크 액세스도 활성화해야 합니다.
 
 >[!IMPORTANT]
 >공용 네트워크 액세스가 비활성화한 상태에서 키 자격 증명 모음을 생성하면 키 생성 또는 회전과 같은 모든 키 자격 증명 모음 관련 작업을 네트워크 액세스가 있는 KeyVault 환경(예: KeyVault에 액세스할 수 있는 VM)에서 실행해야 합니다.
@@ -122,7 +122,7 @@ az keyvault create `
 
 이 단계에서는 Adobe가 Entra 애플리케이션을 통해 키 자격 증명 모음에 액세스할 수 있도록 허용합니다. Entra 애플리케이션의 ID는 Adobe에서 이미 제공되어야 합니다.
 
-먼저 Entra 응용 프로그램에 연결된 서비스 사용자를 만들고 **Key Vault Reader** 및 **Key Vault 암호화 사용자** 역할을 할당해야 합니다. 역할은 이 안내서에서 생성된 키 자격 증명 모음으로 제한됩니다.
+우선 Entra 애플리케이션에 연결된 서비스 주체를 만들고 이를 **키 자격 증명 모음 리더** 및 **키 자격 증명 모음 암호화 사용자** 역할로 할당해야 합니다. 역할은 이 안내서에서 생성된 키 자격 증명 모음으로 제한됩니다.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -162,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## 키 자격 증명 모음 정보 공유 {#share-the-key-vault-information}
 
-이제 모든 준비가 끝났습니다. CMK UI를 통해 필요한 정보를 공유하면 환경 구성 프로세스가 시작됩니다.
+이제 모든 준비가 끝났습니다. CMK UI를 통해 필요한 정보를 공유하기만 하면 환경 구성 프로세스가 시작됩니다.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -182,9 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-CMK UI에 다음 정보를 제공합니다.
-![UI에 정보 입력](./assets/cmk/step3a.png)
+CMK UI에서 이 정보 제공:
+![UI에서 정보 입력](./assets/cmk/step3a.png)
 
 ## 키 액세스 권한 해지의 의미 {#implications-of-revoking-key-access}
 
@@ -194,16 +193,16 @@ CMK UI에 다음 정보를 제공합니다.
 
 ## 다음 단계 {#next-steps}
 
-CMK UI에 필요한 정보를 제공하면 Adobe이 AEM as a Cloud Service 환경에 대한 구성 프로세스를 시작합니다. 이 프로세스는 시간이 걸릴 수 있으며, 완료되면 알림을 받게 됩니다.
+CMK UI에서 필요한 정보를 입력하고 나면 Adobe는 AEM as a Cloud Service 환경에 대한 구성 프로세스를 시작합니다. 이 과정은 시간이 다소 걸릴 수 있으며, 완료되면 알림을 받게 됩니다.
 
-![Adobe에서 환경을 구성할 때까지 기다립니다.](./assets/cmk/step4.png)
+![Adobe가 환경을 구성할 때까지 기다리십시오.](./assets/cmk/step4.png)
 
 
 ## CMK 설정 완료 {#complete-the-cmk-setup}
 
-구성 프로세스가 완료되면 UI에서 CMK 설정 상태를 확인할 수 있습니다. 키 저장소와 암호화 키도 볼 수 있습니다.
-![이제 프로세스가 완료되었습니다](./assets/cmk/step5.png)
+구성 프로세스가 완료되면 UI에서 CMK 설정 상태를 볼 수 있습니다. 또한 키 자격 증명 모음과 암호화 키도 볼 수 있습니다.
+![이제 프로세스가 완료되었습니다.](./assets/cmk/step5.png)
 
 ## 질문 및 지원 {#questions-and-support}
 
-질문이 있거나 AEM as a Cloud Service용 고객 관리 키 설정에 대한 지원이 필요한 경우 문의하십시오. Adobe 지원 은 문의 사항이 있을 때 도움이 될 수 있습니다.
+AEM as a Cloud Service의 고객 관리 키 설정과 관련하여 질문 또는 문의 사항이 있거나 도움이 필요하면 저희에게 문의하십시오. Adobe 지원 센터에서 모든 질문에 답변해 드리도록 하겠습니다.

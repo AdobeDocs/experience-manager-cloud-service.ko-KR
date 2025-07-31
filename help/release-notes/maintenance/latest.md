@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 95%
 
 ## 릴리스 21706 {#21706}
 
-다음은 2025년 7월 24일에 공개적으로 릴리스된 유지 보수 릴리스 21706에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 21570이었습니다.
+2025년 7월 24일에 릴리스된 유지 관리 릴리스 21706의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 21570이었습니다.
 
 >[!NOTE]
 >
->릴리스 21644은 비공개로 설정되었으며 릴리스 정보로 21706.
+>릴리스 21644는 비공개로 전환되었으며 릴리스 21706으로 대체되었습니다.
 
 이 유지 관리 릴리스(2025.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
@@ -48,7 +48,7 @@ ht-degree: 95%
 * ASSETS-12882: 뷰어 사전 설정을 연 후 UI 정렬 문제가 발생합니다.
 * ASSETS-48958: Sites 로컬 AEM에서 Asset Sync로 인해 게시 상태가 변경되는 문제가 있습니다.
 * ASSETS-50856: `dam:processingAttempts`가 completeUpload에서 재설정되지 않습니다.
-* ASSETS-51604: 링크 공유 보고서 CSV에 &quot;공유 대상&quot; 데이터가 없습니다.
+* ASSETS-51604: 링크 공유 보고서 CSV에 “공유 대상” 데이터가 없습니다.
 * ASSETS-51783: 검색 쿼리를 사용하여 구성을 찾을 수 없는 경우 `/conf/global`에서 DM 구성으로 대체합니다.
 * ASSETS-51857: 자산 테이블 항목을 다시 정렬할 수 없습니다.
 * ASSETS-52169: 새로운 BAT 머신 렌디션이 자산 다운로드에 잘못 포함되었습니다.
