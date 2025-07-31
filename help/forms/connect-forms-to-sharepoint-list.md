@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: 적응형 양식에 대해 SharePoint 목록을 연결하는 방법? SharePoint에 제출, SharePoint 목록 구성 만들기, 적응형 양식의 SharePoint 제출 액션을 사용, Microsoft&reg; SharePoint 목록에 적응형 양식 연결.
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 32%
 
 ---
-
 
 # Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
@@ -22,7 +22,7 @@ ht-degree: 32%
 1. [SharePoint 목록 구성 만들기](#1-create-a-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 저장소에 연결합니다.
 1. [적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
 
-## 1. SharePoint 목록 구성 만들기
+## &#x200B;1. SharePoint 목록 구성 만들기
 
 AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
@@ -32,7 +32,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
-   * 읽기/쓰기 권한을 제공하려면 **Microsoft® 그래프** 탭에서 API 권한 `offline_access` 및 `Sites.Manage.All`을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 **Sharepoint** 탭에 `AllSites.Manage` 권한을 추가하십시오.
+   * 읽기/쓰기 권한을 제공하려면 `offline_access`Microsoft® 그래프`Sites.Manage.All` 탭에서 API 권한 **및**&#x200B;을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 `AllSites.Manage`Sharepoint **탭에** 권한을 추가하십시오.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
      >[!NOTE]
@@ -44,7 +44,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 1. Microsoft® SharePointList에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
 
-## 2. 적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 {#use-submit-using-fdm}
+## &#x200B;2. 적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 {#use-submit-using-fdm}
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식의 SharePoint 목록을 다음으로 사용하려면 다음 단계를 수행하십시오.
 

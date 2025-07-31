@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '6492'
-ht-degree: 1%
+source-wordcount: '6727'
+ht-degree: 5%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service(Foundation 구성 요소) | 이 문서 |
 | AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 개요 {#overview}
 
 규칙 편집기 기능을 사용하면 forms 비즈니스 사용자 및 개발자가 적응형 양식 개체에 대한 규칙을 작성할 수 있습니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확성과 속도를 보장하는 양식 채우기 환경을 더욱 간소화하는 데 도움이 됩니다.
 
-규칙 편집기는 규칙을 작성하는 직관적이고 간단한 사용자 인터페이스를 제공합니다. 규칙 편집기는 모든 사용자를 위한 시각적 편집기를 제공합니다.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 규칙을 사용하여 적응형 양식 개체에서 수행할 수 있는 몇 가지 주요 작업은 다음과 같습니다.
+규칙 편집기는 규칙을 작성하는 직관적이고 간단한 사용자 인터페이스를 제공합니다. 규칙 편집기는 모든 사용자를 위한 시각적 편집기를 제공합니다.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 규칙을 사용하여 적응형 양식 개체에 대해 수행할 수 있는 주요 작업:
 
-* 개체 보기 또는 숨기기
+* 개체 표시 또는 숨기기
 * 오브젝트 활성화 또는 비활성화
 * 오브젝트의 값 설정
 * 오브젝트 값의 유효성 검사
@@ -48,19 +48,19 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 ## 규칙 이해 {#understanding-a-rule}
 
-규칙 은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 폼의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성에 대한 검사 및 작업을 수행하여 평가되는 부울 표현식입니다. 조건을 평가하여 반환된 값(`True` 또는 `False`)을 기반으로 작업이 수행됩니다.
+규칙은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 폼의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성에 대한 검사 및 작업을 수행하여 평가되는 부울 표현식입니다. 조건을 평가하여 반환된 값(`True` 또는 `False`)을 기반으로 작업이 수행됩니다.
 
 규칙 편집기는 규칙을 작성하는 데 도움이 되는 시기, 표시, 숨기기, 활성화, 비활성화, 값 설정 및 유효성 검사와 같은 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 사용하면 규칙에서 조건 및 작업을 정의할 수 있습니다. 이 문서에서는 각 규칙 유형에 대해 자세히 설명합니다.
 
-규칙은 일반적으로 다음 구문 중 하나를 따릅니다.
+규칙은 일반적으로 다음 구성 중 하나를 따릅니다.
 
-**조건-작업** 이 구문에서 규칙 먼저 조건을 정의한 다음 트리거할 작업을 정의합니다. 이 구문은 프로그래밍 언어의 if-then 문과 비슷합니다.
+**Condition-Action** 이 구문에서는 규칙이 먼저 조건을 정의한 다음 트리거할 작업을 정의합니다. 이 구문은 프로그래밍 언어의 if-then 문과 비슷합니다.
 
-규칙 편집기 **에서 When** 규칙 형식은 조건-작업 구문을 적용합니다.
+규칙 편집기에서 **When** 규칙 유형은 조건-작업 구문을 적용합니다.
 
-**Action-Condition** 이 구문에서 규칙 먼저 트리거할 작업을 정의한 다음 평가 조건을 정의합니다. 이 구문의 또 다른 변형은 action-condition-alternate action으로, 조건이 False를 반환하는 경우 트리거할 대체 작업도 정의합니다.
+**Action-Condition** 이 구문에서는 규칙이 먼저 트리거할 작업을 정의한 다음 평가 조건을 정의합니다. 이 구문의 또 다른 변형은 action-condition-alternate 매크로 함수이며, 이 매크로 함수는 조건이 False를 반환하는 경우 트리거할 대체 매크로 함수도 정의합니다.
 
-규칙 편집기의 보기, 숨기기, 활성화, 비활성화, 값 설정 및 규칙 유형 유효성 검사는 작업 조건 규칙 구문을 적용합니다. 기본적으로 보기(Look)의 대체 작업은 숨기기(Hide)이고 사용(Enable)의 대체 작업은 사용 안 함(Disable)이며, 그 반대입니다. 기본 대체 작업은 변경할 수 없습니다.
+규칙 편집기의 규칙 유형 표시, 숨기기, 활성화, 비활성화, 값 설정 및 유효성 검사는 작업 조건 규칙 구성을 적용합니다. 기본적으로 표시에 대한 대체 작업은 숨기기이고 활성화에 대한 대체 작업은 비활성화이며 그 반대입니다. 기본 대체 작업은 변경할 수 없습니다.
 
 >[!NOTE]
 >
@@ -109,13 +109,13 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](rule-editor.md#p-write-rules-p)을 참조하십시오.
 
-### [!UICONTROL 언제] {#whenruletype}
+### [!UICONTROL When] {#whenruletype}
 
-**[!UICONTROL When]** 규칙 형식은 조건-작업-대체 작업&#x200B;**규칙 구문을**&#x200B;따르거나 경우에 따라 조건-작업&#x200B;**구문만**&#x200B;따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을[&#128279;](#nestedexpressions) 만들 수 있습니다.
+**[!UICONTROL When]** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정한 다음 조건이 충족되면 트리거할 작업(`True`)을 지정합니다. When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 [중첩 식](#nestedexpressions)을 만들 수 있습니다.
 
-When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
+When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하나 이상의 객체에 작업을 수행할 수 있습니다.
 
-간단히 말해서 일반적인 When 규칙 구조는 다음과 같습니다.
+쉽게 말해, 일반적인 When 규칙은 다음과 같이 구성됩니다.
 
 `When on Object A:`
 
@@ -124,7 +124,7 @@ When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하�
 `Then, do the following:`
 
 개체 B에 대한 작업 2;
-그리고
+및
 개체 C에 대한 작업 3;
 
 _
@@ -133,7 +133,7 @@ _
 
 예를 들어, 목록에는 빨강, 파랑, 녹색 및 노랑의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 버튼)이 자동으로 검색되어 규칙 작성자는 다음과 같이 사용할 수 있습니다.
 
-![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions1.png)
+![다중 값에 옵션 표시](assets/multivaluefcdisplaysoptions1.png)
 
 When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다.
 
@@ -145,7 +145,7 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **[!UICONTROL 사용]** 지정한 개체를 사용합니다.
 
-**[!UICONTROL Disable(비활성화]** ) 지정된 개체를 비활성화합니다.
+**[!UICONTROL 사용 안 함]** 지정한 개체를 사용하지 않습니다.
 
 **[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)에 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델(FDM) 서비스를 선택하면 양식 객체를 지정된 서비스의 입력 및 출력 매개변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델 서비스를 호출하는 예제 규칙을 참조하십시오.
 
@@ -207,21 +207,21 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 **[!UICONTROL Set Value of]** 규칙 형식을 사용하면 지정된 조건을 충족하는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 값은 다른 개체의 값, 리터럴 문자열, 수학적 식이나 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
 
-**값** 설정 규칙 유형은 패널 및 도구 모음 단추와 같은 일부 양식 개체에 사용할 수 없습니다. 표준 규칙 세트 값의 구조는 다음과 같습니다.
+**Set Value Of** 규칙 형식은 패널 및 도구 모음 단추와 같은 모든 양식 개체에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
-개체 A의 값을 다음으로 설정합니다.
+개체 A의 값을 다음으로 설정:
 
 (문자열 ABC) 또는
-(객체 C의 객체 속성 X) 또는
+(객체 C의 객체 등록 정보 X) 또는
 (함수의 값) 또는
-(수학 표현식의 값) 또는
-(데이터 모델 서비스 또는 웹 서비스의 출력 값);
+(수학 표현식의 값) OR
+(데이터모델 서비스 또는 웹서비스의 출력값)
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
-다음 예제에서는 `dependentid` 필드의 값을 입력으로 취하여 `Relation` 필드의 값을 `getDependent` 양식 데이터 모델 서비스의 `Relation` 인수의 출력으로 설정합니다.
+다음 예제에서는 `dependentid` 필드의 값을 입력으로 취하여 `Relation` 필드의 값을 `Relation` 양식 데이터 모델 서비스의 `getDependent` 인수의 출력으로 설정합니다.
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
@@ -375,7 +375,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 ### C. 양식 개체 및 함수 전환 {#c-form-objects-and-functions-toggle-br}
 
-전환 단추를 누르면 양식 개체 및 함수 창이 전환됩니다.
+토글 버튼을 탭하면 양식 오브젝트와 함수 창이 토글됩니다.
 
 ### D. 시각적 규칙 편집기 {#visual-rule-editor}
 
@@ -398,7 +398,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-**[!UICONTROL 완료]** 단추를 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 다음에 동일한 양식 객체에서 규칙 편집기를 실행하면 양식 객체에 저장된 규칙이 나열됩니다. 해당 보기에서 기존 규칙을 관리할 수 있습니다. 자세한 내용은 [규칙 관리](rule-editor.md#p-manage-rules-p)를 참조하십시오.
+**[!UICONTROL 완료]** 버튼은 규칙을 저장하는 데 사용됩니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 다음에 동일한 양식 객체에서 규칙 편집기를 실행하면 양식 객체에 저장된 규칙이 나열됩니다. 해당 보기에서 기존 규칙을 관리할 수 있습니다. 자세한 내용은 [규칙 관리](rule-editor.md#p-manage-rules-p)를 참조하십시오.
 
 **[!UICONTROL 취소]** 단추를 사용하면 규칙에 대한 모든 변경 내용이 취소되고 규칙 편집기가 닫힙니다.
 
@@ -477,13 +477,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 식]**&#x200B;을 선택합니다. 수학 표현식을 작성할 필드가 열립니다.
+1. **[!UICONTROL 옵션 선택]**&#x200B;을 선택하고 **[!UICONTROL 수학 표현식]**&#x200B;을 선택합니다. 수학 표현식을 작성하는 필드가 열립니다.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. 표현식 필드에서:
 
-   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는**&#x200B;[!UICONTROL &#x200B;급여&#x200B;]&#x200B;**필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
+   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는]**&#x200B;급여&#x200B;**[!UICONTROL 필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
 
    * **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 더하기]**&#x200B;을(를) 선택합니다.
 
@@ -491,11 +491,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 그런 다음 식 필드 주위의 강조 표시된 영역에서 을 선택하고 **[!UICONTROL 식 확장]**&#x200B;을 선택합니다.
+1. 다음으로 표현식 필드 주변의 강조 표시된 영역을 선택하고 **[!UICONTROL 표현식 확장]**&#x200B;을 선택합니다.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   확장 식 필드의 **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 나누기]**&#x200B;를 선택하고 **[!UICONTROL 옵션 선택]** 필드에서 **[!UICONTROL 숫자]**&#x200B;를 선택합니다. 그런 다음 숫자 필드에 **[!UICONTROL 2]**&#x200B;을(를) 지정합니다.
+   확장된 표현식 필드의 **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 나누기]**&#x200B;를 선택하고 **[!UICONTROL 옵션 선택]** 필드에서 **[!UICONTROL 숫자]**&#x200B;를 선택합니다. 그런 다음 숫자 필드에 **[!UICONTROL 2]**&#x200B;을(를) 지정합니다.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
@@ -537,7 +537,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -601,7 +601,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 구문: `@return {type}`
 또는 `@returns {type}`을(를) 사용할 수 있습니다.
 함수 목적 등 함수에 대한 정보를 추가합니다.
-{type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+  {type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
    1. 문자열
    1. 숫자
@@ -614,7 +614,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
   규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
 
-  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this.value`의 `this` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
+  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this`의 `this.value` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
 
   ```
      /**
@@ -641,8 +641,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 클라이언트 라이브러리를 만들고 CRX 저장소에 추가하려면 다음 단계를 수행하십시오.
 
-1. 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ko#developing)을 참조하십시오.
-1. CRXDE에서 문자열 형식 값이 `customfunction`인 `categories` 속성을 `clientlib` 폴더에 추가합니다.
+1. 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)을 참조하십시오.
+1. CRXDE에서 문자열 형식 값이 `categories`인 `customfunction` 속성을 `clientlib` 폴더에 추가합니다.
 
    >[!NOTE]
    >
@@ -730,6 +730,22 @@ var c = {
 >[!NOTE]
 >
 >모든 사용자 지정 함수에 `jsdoc`을(를) 사용하는지 확인하십시오. `jsdoc`댓글이 권장되지만 빈 `jsdoc`댓글을 포함하여 함수를 사용자 지정 함수로 표시하십시오. 사용자 지정 함수를 기본 처리할 수 있도록 합니다.
+
+### 유효성 검사 표현식에서 사용자 정의 함수 지원 {#supporting-custom-functions-in-validation-expressions-br}
+
+**복잡한 유효성 검사 규칙**&#x200B;이 있는 경우에는 정확한 유효성 검사 스크립트는 사용자 정의 함수에 있고 작성자는 필드 유효성 검사 표현식에서 이러한 사용자 정의 함수를 호출합니다. 서버측 유효성 검사를 수행하면서 이 사용자 정의 함수 라이브러리를 이해하고 사용할 수 있도록 양식 작성자는 아래와 같이 적응형 양식 컨테이너 속성의 **[!UICONTROL 기본]** 탭 아래에서 AEM 클라이언트 라이브러리 이름을 구성할 수 있습니다.
+
+![유효성 검사 표현식에서 사용자 정의 함수 지원](assets/clientlib-cat.png)
+
+유효성 검사 표현식에서 사용자 정의 함수 지원
+
+작성자는 적응형 양식별로 사용자 정의 JavaScript 라이브러리를 구성할 수 있습니다. jquery 및 underscore.js 서드파티 라이브러리에 종속된 재사용 가능한 함수만 라이브러리에 유지됩니다.
+
+## 제출 액션의 오류 처리 {#error-handling-on-submit-action}
+
+AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
+
+데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되어 있지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인을 사용하여 FDM(양식 데이터 모델) 또는 스키마 기반 적응형 양식을 미리 채우면 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 ## 규칙 관리 {#manage-rules}
 
@@ -840,7 +856,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 * 라디오 단추, **[!UICONTROL 기존 Geometrixx 고객입니까?]**: [!UICONTROL 예] 및 [!UICONTROL 아니요] 옵션을 제공합니다. 예 값은 **0**&#x200B;이고 아니요 값은 **1**&#x200B;입니다.
 
-* 고객 ID를 지정하는 텍스트 필드 **[!UICONTROL Geometrixx 고객 ID]**&#x200B;입니다.
+* 고객 ID를 지정하는 텍스트 필드 **[!UICONTROL Geometrixx 고객 ID]**.
 
 이 동작을 구현하기 위해 라디오 단추에 When 규칙을 작성할 때 시각적 규칙 편집기에 다음과 같이 규칙이 나타납니다.
 

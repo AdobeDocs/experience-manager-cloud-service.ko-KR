@@ -3,12 +3,12 @@ title: 적응형 양식을 Microsoft&reg; Power Automate와 통합하는 방법
 description: 적응형 양식을 Microsoft&reg; Power Automate와 통합합니다.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: power automate에 AEM forms 연결, Power Automate AEM Forms, Adaptive Forms에 power automate 통합, Adaptive Forms에서 Power Automate로 데이터 전송
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 12%
+source-wordcount: '1531'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다.
 
-AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/aem-forms-submit-action.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
 
 ## 장점
@@ -38,7 +38,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 적응형 양식과 Microsoft® Power Automate를 연결하려면 다음이 필요합니다.
 
 * Microsoft® Power Automate Premium 라이센스.
-* 적응형 양식 제출 데이터를 수락하기 위한 `When an HTTP request is received` 트리거를 사용하는 Microsoft® [Power Automate 흐름](https://docs.microsoft.com/en-us/power-automate/create-flow-solution).
+* 적응형 양식 제출 데이터를 수락하기 위한 [ 트리거를 사용하는 Microsoft® ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
 * [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
@@ -140,12 +140,17 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
 [Microsoft® Power Automate와 Forms as a Cloud Service 인스턴스를 연결](#connect-forms-server-with-power-automate)한 후 다음 작업을 수행하여 캡처된 데이터를 양식 제출 시 Microsoft® 플로우로 전송하도록 적응형 양식을 구성하십시오.
 
+>[!BEGINTABS]
+
+>[!TAB 기초 구성 요소]
+
 1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. 구성 컨테이너에서 [Microsoft 만들기® Power Automate Dataverse 클라우드 구성](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 컨테이너를 찾아 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
 1. 편집할 적응형 양식을 열고 적응형 양식 컨테이너 속성의 **[!UICONTROL 제출]** 섹션으로 이동합니다.
 1. 속성 컨테이너에서 **[!UICONTROL 작업 제출]**&#x200B;에 대해 **[!UICONTROL Power Automate 흐름 호출]** 옵션을 선택하고 **[!UICONTROL Power Automate 흐름 선택]**&#x200B;합니다. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.
 
    ![제출 액션 구성](assets/submission.png)
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
             }
         }
 ```
+
+>[!TAB 핵심 구성 요소]
+
+1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
+1. 구성 컨테이너에서 [Microsoft 만들기® Power Automate Dataverse 클라우드 구성](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 컨테이너를 찾아 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. **[!UICONTROL 제출]** 탭을 클릭합니다.
+1. 제출 작업 드롭다운 목록에서 **[!UICONTROL Power Automate 흐름 호출]** 옵션을 선택하고 **[!UICONTROL Power Automate 흐름 선택]**. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.
+
+   ![제출 액션 구성](/help/forms/assets/power-automate-cc.png)
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+> 적응형 양식을 제출하기 전에 아래 JSON 스키마를 사용하는 `When an HTTP Request is received` 트리거가 Power Automate 흐름에 추가되었는지 확인하십시오.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB 범용 편집기]
+
+1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택합니다.
+1. 구성 컨테이너에서 [Microsoft 만들기® Power Automate Dataverse 클라우드 구성](#microsoft-power-automate-dataverse-cloud-configuration) 섹션에서 만든 컨테이너를 찾아 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
+1. 편집할 적응형 양식을 엽니다.
+1. 편집기에서 **양식 속성 편집** 확장을 클릭합니다.
+**양식 속성** 대화 상자가 나타납니다.
+
+   >[!NOTE]
+   >
+   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
+   > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+
+
+1. **제출** 탭을 클릭하고 **[!UICONTROL Power Automate 흐름 호출]** 제출 액션을 선택합니다. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.
+
+   ![제출 액션 구성](/help/forms/assets/power-automate-ue.png)
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+> 적응형 양식을 제출하기 전에 아래 JSON 스키마를 사용하는 `When an HTTP Request is received` 트리거가 Power Automate 흐름에 추가되었는지 확인하십시오.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

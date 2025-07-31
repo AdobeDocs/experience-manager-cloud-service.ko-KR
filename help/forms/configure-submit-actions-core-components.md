@@ -5,61 +5,36 @@ keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 �
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 48%
+source-wordcount: '347'
+ht-degree: 41%
 
 ---
 
 
-# 적응형 양식 제출 액션 {#configuring-the-submit-action}
+# 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 지원되는 작업 제출
 
 <span class="preview"> 핵심 구성 요소를 사용하여 [AEM Sites 페이지에 적응형 양식을 추가하거나](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) [독립 적응형 양식을 만드는 것](/help/forms/creating-adaptive-form-core-components.md)이 좋습니다. </span>
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
+| AEM as a Cloud Service(Edge Delivery Services) | [여기 클릭](/help/forms/configure-submit-action-eds-forms.md) |
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 양식의 Forms as a Cloud Service는 다수의 사전 빌드된 제출 액션을 제공합니다. 이러한 기본 제공 제출 액션을 통해 다음과 같은 작업을 수행할 수 있습니다.
+제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 Forms은 다양한 [기본 제출 액션](#submit-actions-supported-by-adaptive-forms-based-on-core-components)을 지원합니다.
 
-* 이메일을 통해 양식 데이터를 손쉽게 전송합니다.
-* 데이터를 전송하는 동안 Microsoft® Power Automate 플로우 또는 AEM 워크플로우를 시작합니다.
-* 양식 데이터를 Microsoft® SharePoint Server, Microsoft® Azure Blob Storage 또는 Microsoft® OneDrive로 직접 전송합니다.
-* 양식 데이터 모델(FDM)을 사용하여 구성된 데이터 소스에 데이터를 원활하게 전송합니다.
-* 편리하게 데이터를 REST 엔드포인트에 제출합니다.
+<!--You can also configure different actions for an Adaptive Form submissions.
 
-기본 제출 액션을 [확장](custom-submit-action-form.md)할 수 있습니다. 조직별 요구 사항에 대해 제출 액션을 사용자 지정할 수도 있습니다.
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-적응형 양식에 대한 제출 액션을 정의하려면 **적응형 양식 컨테이너** 구성 요소의 구성 대화 상자를 사용하십시오. **적응형 양식 컨테이너** 구성 요소의 구성 대화 상자에 다음이 포함됩니다.
+## 핵심 구성 요소를 기반으로 Forms에 대한 작업 제출
 
-* 기본 탭
-* 양식 데이터 모델 탭
-* 제출 탭
-
-구성 대화 상자를 사용하여 양식 컨테이너 속성을 정의할 수 있습니다. 양식 컨테이너 구성 요소의 구성 대화 상자에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=ko)하십시오.
-
-## 적응형 양식의 제출 액션 선택 및 구성 {#select-and-configure-submit-action}
-
-양식의 제출 액션을 선택하고 구성하려면 다음 작업을 수행하십시오.
-
-1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
-1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
-
-1. **[!UICONTROL 제출]** 탭을 클릭합니다.
-
-   ![제출 액션을 구성하려면 공구 모양 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 엽니다.](/help/forms/assets/adaptive-forms-submit-message.png)
-
-1. 요구 사항에 따라 **[!UICONTROL 제출 액션]**&#x200B;을 선택하고 구성하십시오.
-
-적응형 양식 제출을 위해 다양한 작업을 구성할 수도 있습니다.
-* **리디렉션 URL/경로** - 이 옵션을 사용하면 적응형 양식을 제출한 후 양식 사용자가 리디렉션되는 각 양식에 대한 페이지를 구성할 수 있습니다.
-* **메시지 표시** - 이 옵션을 사용하면 적응형 양식이 정상적으로 제출될 때 표시되는 메시지를 추가할 수 있습니다. 미리 정의된 텍스트는 대화 상자에 포함되어 사용자가 수정할 수 있습니다.
-
-다음 제출 작업에 대한 자세한 내용은 다음을 참조하십시오.
+다음 제출 액션은 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 지원됩니다.
 
 * [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate 플로우 호출](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -71,15 +46,40 @@ ht-degree: 48%
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
 * [Marketo 조직에 제출](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Adobe Experience Platform(AEP)에 제출](/help/forms/aem-forms-aep-connector.md)
 
-적응형 양식을 다른 스토리지 구성에 제출할 수도 있습니다.
+핵심 구성 요소를 기반으로 하는 적응형 양식을 다른 스토리지 구성에 제출할 수도 있습니다.
 
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
-* [적응형 양식을 Adobe Marketo Engage에 연결](/help/forms/integrate-form-to-marketo-engage.md)
 
-[기본 제출 액션을 사용자 지정](custom-submit-action-form.md)할 수 있습니다. 또한 특정 조직 요구 사항에 맞게 제출 액션을 사용자 지정할 수 있습니다.
+또한 특정 조직 요구 사항에 맞게 [기본 제출 액션을 사용자 지정](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)할 수 있습니다.
 
+
+### 핵심 구성 요소를 기반으로 적응형 양식에 대한 제출 액션 구성
+
+<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+
+* Basic Tab
+* Form Data Model Tab
+* Submission Tab
+  ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
+  -->
+
+구성 대화 상자의 제출 서류 탭을 사용하여 양식 컨테이너 속성을 정의할 수 있습니다. 양식 컨테이너 구성 요소의 구성 대화 상자에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)하십시오.
+
+![제출 액션을 구성하려면 공구 모양 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 엽니다.](/help/forms/assets/adaptive-forms-submit-message.png)
+
+<!--To select and configure a Submit Action for your form:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+
+1. Click the  **[!UICONTROL Submission]** tab. 
+
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. -->
 
 <!--
 ## Send Email {#send-email}
@@ -87,7 +87,7 @@ ht-degree: 48%
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 
@@ -211,18 +211,14 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
--->
 
-## 제출 액션의 오류 처리 {#error-handling-on-submit-action}
+## Error handling on Submit Action {#error-handling-on-submit-action}
 
-AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
+As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되어 있지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인을 사용하여 FDM(양식 데이터 모델) 또는 스키마 기반 적응형 양식을 미리 채우면 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
-
-
-<!--
+<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -233,5 +229,5 @@ AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같�
 
 ## 추가 참조 {#see-also}
 
-{{see-also}}
+{{af-submit-action}}
 

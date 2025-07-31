@@ -1,15 +1,15 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: AEM Forms OneDrive 통합, AEM Forms를 사용하여 Microsoft OneDrive, OneDrive 구성 설정에 연결
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 67%
+source-wordcount: '865'
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 67%
 
 **[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive 저장소에 제출할 수 있습니다.
 
-AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/aem-forms-submit-action.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
 ## 장점
 
@@ -69,21 +69,61 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
 
 ### 적응형 양식에서 OneDrive 구성 사용 {#use-onedrive-configuartion-in-af}
 
-적응형 양식에서 만든 OneDrive 스토리지 구성을 사용하여 데이터 또는 생성된 기록 문서를 OneDrive 폴더에 저장할 수 있습니다. 적응형 양식에서 OneDrive 스토리지 구성을 다음과 같이 사용하려면 다음 단계를 수행하십시오.
-1. [적응형 양식](/help/forms/creating-adaptive-form.md)을 만듭니다.
+만들어진 OneDrive 저장소 구성을 적응형 양식으로 사용하여 OneDrive 폴더에 데이터 또는 생성된 기록 문서를 저장할 수 있습니다.
 
-   >[!NOTE]
-   >
-   > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
-   > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
+>[!NOTE]
+>
+> * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
+> * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**&#x200B;로 선택합니다.
-   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+>[!BEGINTABS]
+
+>[!TAB 기초 구성 요소]
+
+기초 구성 요소를 기반으로 하는 적응형 양식에서 OneDrive 저장소 구성을 사용하려면 다음 단계를 수행하십시오.
+
+1. 편집할 적응형 양식을 열고 적응형 양식 컨테이너 속성의 **[!UICONTROL 제출]** 섹션으로 이동합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL OneDrive에 제출]**을 선택합니다.
+   ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
+OneDrive에 기록 문서(DoR)를 저장할 수도 있습니다.
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
 
 양식이 제출되면 지정된 Microsoft® OneDrive Storage에 데이터가 저장됩니다.
 데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
+
+>[!TAB 핵심 구성 요소]
+
+다음 단계를 수행하여 핵심 구성 요소를 기반으로 하는 적응형 양식에서 OneDrive 저장소 구성을 사용합니다.
+
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. **[!UICONTROL 제출]** 탭을 클릭합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL OneDrive에 제출]**을 선택합니다.
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+OneDrive에 기록 문서(DoR)를 저장할 수도 있습니다.
+1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
+
+>[!TAB 범용 편집기]
+
+범용 편집기에서 작성한 적응형 양식에서 OneDrive 저장소 구성을 사용하려면 다음 단계를 수행하십시오.
+
+1. 편집할 적응형 양식을 엽니다.
+1. 편집기에서 **양식 속성 편집** 확장을 클릭합니다.
+**양식 속성** 대화 상자가 나타납니다.
+
+   >[!NOTE]
+   >
+   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
+   > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+1. **제출** 탭을 클릭하고 **[!UICONTROL OneDrive에 제출]**을 선택합니다.
+   ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
+**원래 이름으로 첨부 파일 저장**&#x200B;을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다. Azure Blob Storage에 기록 문서(DoR)를 저장할 수도 있습니다.
+1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 저장 및 닫기]** 클릭
+
+>[!ENDTABS]
 
 ## 관련 문서
 
