@@ -31,7 +31,7 @@ AEM에 직접 임베드되며 AEM Experience Hub, Cloud Manager 및 Author UI에
 
 다음 3분 39초 길이의 비디오에서는 AEM AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
 
 >[!IMPORTANT]
 >Adobe에서 AI Assistant 기능을 활성화하여 개인 베타 프로그램을 테스트하고 참여할 수 있도록 사용자 계약을 검토하고 제출했는지 확인합니다.
