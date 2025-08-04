@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 96%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->* AEM 콘텐츠 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
->* [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
+>[Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
 Adobe Experience Manager as a Cloud Service(AEM)에서 생성한 [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)을 Adobe Target(Target)으로 내보낼 수 있습니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
@@ -70,50 +69,24 @@ AEM 콘텐츠 조각을 Adobe Target으로 내보내기 위한 인스턴스를 �
 
 * 내보내기에 사용할 형식 옵션 지정
 * Target 작업 영역을 대상으로 선택
-* 콘텐츠 조각의 참조 재작성을 위한 외부화 도메인 선택(옵션)
 
-필요한 옵션은 필요한 폴더나 조각 또는 둘 다의 **페이지 속성**&#x200B;에서 선택할 수 있습니다. 사양은 필요에 따라 상속됩니다.
+필요한 옵션은 필요한 폴더의 **속성**&#x200B;에서 선택할 수 있습니다. 사양은 필요에 따라 상속됩니다.
 
 1. **자산** 콘솔로 이동합니다.
 
-1. 적절한 폴더 또는 조각에 대한 **페이지 속성**&#x200B;을 엽니다.
+1. 해당 폴더의 **속성**&#x200B;을 엽니다.
 
    >[!NOTE]
    >
    >클라우드 구성을 콘텐츠 조각 상위 폴더에 추가하면 해당 구성은 모든 하위 폴더에 상속됩니다.
-   >
-   >클라우드 구성을 콘텐츠 조각에 추가하면 해당 구성은 모든 변형에 상속됩니다.
 
 1. **클라우드 서비스** 탭을 선택합니다.
 
-1. **클라우드 서비스 구성** 아래의 드롭다운 목록에서 **Adobe Target**&#x200B;을 선택합니다.
+1. **Cloud Service 구성**&#x200B;의 드롭다운 목록에서 대상 구성을 선택합니다.
 
-   <!-- is this note appropriate? -->
+1. Adobe Target 작업 영역을 선택합니다.
 
-   >[!NOTE]
-   >
-   >콘텐츠 조각 오퍼의 JSON 형식을 맞춤화할 수 있습니다. 이렇게 하려면 고객 콘텐츠 조각 구성 요소를 정의한 다음 구성 요소 Sling 모델에서 속성을 내보내는 방법에 대한 주석을 달아야 합니다.
-   >
-   >핵심 구성 요소: [핵심 구성 요소 - 콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)을 참조하십시오.
-
-1. **Adobe Target**&#x200B;에서 다음을 선택합니다.
-
-   * 적절한 구성
-   * 필요한 형식 옵션
-   * Adobe Target 작업 영역
-   * 필요한 경우 - 외부화 도메인
-
-   >[!CAUTION]
-   >
-   >외부화 도메인은 옵션입니다.
-   >
-   > 내보낸 콘텐츠가 특정 *게시* 도메인을 가리키도록 하면 AEM 외부화가 구성됩니다. 자세한 내용은 [AEM 링크 외부화 구성](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer)을 참조하십시오.
-   >
-   > 또한 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 콘텐츠 조각의 콘텐츠에만 관련이 있습니다.
-
-   폴더의 경우 그 예는 다음과 같습니다.
-
-   <!-- need a new screenshot -->
+   예:
 
    ![폴더 - 클라우드 서비스](assets/cf-target-integration-01.png "폴더 - 클라우드 서비스")
 
@@ -139,7 +112,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 다음 절차를 통해 AEM에서 Target 클라우드 구성을 만드십시오.
 
-1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**&#x200B;로 이동합니다.
+1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**로 이동합니다.
 예: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Experience Cloud** 개요 페이지가 열립니다.
@@ -190,13 +163,13 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    * **정확한 타겟팅 사용:** 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
-   * **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않고 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어인 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
+   * **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않고 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
 
    * **클라이언트 라이브러리:** 기본값은 AT.js입니다(mbox.js는 더 이상 사용되지 않음).
 
      >[!NOTE]
      >
-     >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=ko)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+     >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
      >
      >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
      >
@@ -268,7 +241,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ko).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -337,7 +310,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
    
    -->
 
-1. 필요에 따라 **게시하지 않고 내보내기** 또는 **Publish**&#x200B;을 선택합니다.
+1. 필요에 따라 **게시하지 않고 내보내기** 또는 **게시**&#x200B;를 선택하십시오.
 
    >[!NOTE]
    >
@@ -367,7 +340,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 
 ## Adobe Target에서 콘텐츠 조각 사용 {#using-your-content-fragments-in-adobe-target}
 
-앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ko)를 참조하십시오.
+앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -405,10 +378,10 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [핵심 구성 요소 - 콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)
+* [핵심 구성 요소 - 콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 개발](https://developers.adobetarget.com/)
 
-* [Adobe Target - 최적화 또는 개인화를 지원하기 위해 Target 활동에서 AEM 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ko)
+* [Adobe Target - 최적화 또는 개인화를 지원하기 위해 Target 활동에서 AEM 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target - AEM 경험 조각 및 콘텐츠 조각 개요](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=ko)
+* [Adobe Target - AEM 경험 조각 및 콘텐츠 조각 개요](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
