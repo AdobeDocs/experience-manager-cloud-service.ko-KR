@@ -71,12 +71,12 @@ Edge Delivery Services은 다음 두 옵션 중 하나를 사용하여 설정할
 ## 사전 요구 사항 {#prerequisites}
 
 1. Cloud Manager에서 사이트 온보드
-- 두 배포 모델에 모두 필요합니다. AEM 사이트 온보딩을 따르십시오.
+&#x200B;- 두 배포 모델에 모두 필요합니다. AEM 사이트 온보딩을 따르십시오.
 
 2. Byog(Bring Your Own Git)(옵션)
-- Adobe Git 외부에 사이트 코드를 저장하는 경우 BYOG 온보딩을 완료합니다.
+&#x200B;- Adobe Git 외부에 사이트 코드를 저장하는 경우 BYOG 온보딩을 완료합니다.
 
 3. Edge Delivery 라이선스
-- 프로그램에 Edge Delivery Services 라이선스가 부여되어 있는지 확인합니다.
+&#x200B;- 프로그램에 Edge Delivery Services 라이선스가 부여되어 있는지 확인합니다.
 
 
