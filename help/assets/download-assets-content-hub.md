@@ -3,9 +3,9 @@ title: Content Hub에서 에셋 다운로드
 description: Content Hub 포털에서 단일 또는 여러 에셋과 해당 표현물을 다운로드하는 방법을 알아봅니다.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -22,16 +22,16 @@ Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-rendi
 
 하나 이상의 에셋 및 해당 렌디션을 다운로드하려면 다음 단계를 수행하십시오.
 
-1. 에셋을 다운로드하려면 에셋 카드에서 사용 가능한 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 에셋을 미리 보고, 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하십시오.
+1. 에셋을 다운로드하려면 에셋 카드에서 사용 가능한 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 에셋을 미리 보고, 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**를 클릭하십시오.
    ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
    또는 에셋 썸네일을 클릭하고 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 대화 상자에서 사용 가능한 렌디션을 선택하고 확인한 후 다운로드합니다.
 
-1. 여러 자산을 다운로드하려면 자산을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭한 다음 **[!UICONTROL 자산 다운로드]** 대화 상자에서 선택한 자산 목록을 검토하십시오. 목록에서 자산 선택을 취소하려면 자산 옆에 있는 ![선택 취소](/help/assets/assets/Close.svg)를 클릭합니다. 하나 이상의 렌디션을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 단일 ZIP 파일로 다운로드합니다. **[!UICONTROL 스마트 자르기]** 및 **[!UICONTROL 정적 렌디션]**&#x200B;을 선택하면 선택한 각 에셋의 사용 가능한 모든 정적 및 스마트 자르기 렌디션이 다운로드됩니다.
+1. 여러 자산을 다운로드하려면 자산을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭한 다음 **[!UICONTROL 자산 다운로드]** 대화 상자에서 선택한 자산 목록을 검토하십시오. 목록에서 자산 선택을 취소하려면 자산 옆에 있는 ![선택 취소](/help/assets/assets/Close.svg)를 클릭합니다. 하나 이상의 렌디션을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 단일 ZIP 파일로 다운로드합니다. **[!UICONTROL 스마트 자르기]** 및 **[!UICONTROL 정적 렌디션]**을 선택하면 선택한 각 에셋의 사용 가능한 모든 정적 및 스마트 자르기 렌디션이 다운로드됩니다.
    ![여러 에셋 다운로드](/help/assets/assets/download-multiple-assets-CH.png)
 다운로드가 진행되는 동안 [!DNL Content Hub]을(를) 계속 사용할 수 있습니다. Content Hub은 다운로드 프로세스 중에 워크플로우를 중단하지 않습니다.
    ![여러 에셋 다운로드](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택하여 다운로드합니다.
+**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**를 선택하여 다운로드합니다.
    ![여러 에셋 다운로드](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
@@ -125,7 +125,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 에셋 렌디션은 에셋의 원본 파일을 다르게 표현한 것입니다. 여기에는 썸네일, 웹 또는 모바일용으로 최적화된 버전, 워터마크가 적용되거나 DRM으로 보호된 파일 또는 스마트 자르기와 같은 동적 요소가 포함될 수 있습니다. 원본 파일 형식과 일치시킬 필요가 없으며, 대신 다양한 사용 사례에서 에셋을 나타내는 역할을 합니다.
 
- [!DNL Experience Manager Assets][&#128279;](/help/assets/renditions.md)에서 렌디션 보기 및 관리에 대해 자세히 알아보세요.
+[에서  [!DNL Experience Manager Assets]](/help/assets/renditions.md)렌디션 보기 및 관리에 대해 자세히 알아보세요.
 
 [!DNL Experience Manager Assets]은(는) 다음 유형의 변환을 지원합니다.
 
@@ -139,6 +139,10 @@ The dialog box that displays depends on whether the download list includes expir
 
   ![렌디션 유형](/help/assets/assets/renditions-types.png)
 
+  >[!NOTE]
+  > 
+  > 다운로드 패널에는 사용자 지정 정적 렌디션만 표시됩니다. 기본 `cq5dam.*` 썸네일이 Content Hub에 표시되지 않습니다.
+
 ### 동적 변환 활성화 {#enable-dynamic-media-renditions}
 
 동적 변환을 활성화하려면 다음 작업을 수행하십시오.
@@ -149,7 +153,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Content Hub에 대해서만 자산을 승인하려면 자산의 [승인 대상](/help/assets/approve-assets-content-hub.md#set-approval-target)을 Content Hub으로 설정하십시오.
 
-1. [구성](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) 사용자 인터페이스의 **[!UICONTROL 렌디션]** 탭에서 사용할 수 있는 **[!UICONTROL 렌디션의 사용 가능]** 토글을 사용하도록 설정합니다.
+1. **[!UICONTROL 구성]** 사용자 인터페이스의 **[!UICONTROL 렌디션]** 탭에서 사용할 수 있는 [렌디션의 사용 가능](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub) 토글을 사용하도록 설정합니다.
 
 1. 기존 이미지 사전 설정을 다시 저장하여 Content Hub에서 사용할 수 있도록 합니다. OpenAPI를 사용하여 Dynamic Media에 새로 온보딩한 경우에만 적용됩니다.
 

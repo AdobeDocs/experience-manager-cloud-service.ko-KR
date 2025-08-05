@@ -2,10 +2,10 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 89%
 
 ---
 
@@ -134,5 +134,29 @@ Adobe는 Adobe 지원 티켓을 생성하여 사용할 수 있는 Brand Portal�
 |  | 관리자가 고정한 컬렉션 | ✓ | − |
 |  | 시멘틱 검색 | ✓ | − |
 |  | 지역화된 검색 및 메타데이터 표시 | ✓ | − |
+
+## 선택한 환경에 대한 에셋만 볼 저장소를 선택하려면 어떻게 해야 합니까? {#select-repository-multiple-environments}
+
+동일한 프로그램에 대해 프로덕션용 Content Hub 및 기타 하위 환경을 구성한 경우 저장소를 선택하고 선택한 환경에 대한 에셋을 표시할 수 있습니다. 다음 단계를 실행합니다.
+
+1. 오른쪽 창에서 사용자 아이콘을 클릭합니다.
+
+1. **[!UICONTROL 제품 설정]** 섹션에서 **[!UICONTROL 저장소 선택]**&#x200B;을 선택합니다.
+
+1. **[!UICONTROL 저장소]** 드롭다운 메뉴에서 저장소를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭하여 확인합니다.
+
+   이제 Content Hub에 선택한 환경에 대한 에셋이 표시됩니다.
+
+## Content Hub은 .ZIP 파일 유형에 대한 썸네일 미리보기를 어떻게 표시합니까? {#thumbnail-preview-zip-file}
+
+Content Hub에서 .ZIP과 같은 파일 형식에 대한 썸네일 미리 보기를 제공하기 위해 AEM as a Cloud Service 작성 환경에서 .ZIP을 사용할 수 있는 경로의 루트에 `cq5dam.preview.jpg` 또는 `cq5dam.preview.png` 이름의 렌디션을 추가할 수 있습니다.
+
+렌디션으로 추가하는 이미지:
+
+* JPG, JPEG 또는 PNG 형식일 수 있습니다.
+
+* 50MB 미만이어야 함
+
+사용 가능한 경우 Content Hub은 이미지를 Content Hub에서 .ZIP 파일에 대한 미리보기 썸네일로 표시합니다.
 
 
