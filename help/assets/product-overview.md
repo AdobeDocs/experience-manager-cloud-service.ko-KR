@@ -2,9 +2,9 @@
 title: Content Hub 개요
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
 workflow-type: ht
-source-wordcount: '683'
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -36,10 +36,6 @@ AEM Assets는 단일 정보 소스 역할을 하며, 모든 승인된 자산은 
 **비창의적인 사용자 또한 브랜드를 유지하면서 콘텐츠를 편집하고 리믹스할 수 있도록 지원**
 
 Content Hub를 사용하면 Adobe Express로 새 콘텐츠를 만들 수 있습니다(Adobe Express 권한이 있는 경우). 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿과 브랜드 요소로 브랜드에 맞는 변형을 만들고, Adobe Firefly의 최신 생성형 AI 기능으로 새로운 콘텐츠를 만들 수 있습니다.
-
-**팀 전체의 콘텐츠 사용 방식에 대한 인사이트 확보**
-
-[!DNL Content Hub]는 자산에 대한 귀중한 인사이트를 제공하여 마케팅 관련자들이 자주 직면하는 일반적인 문제인 마케팅 캠페인, 채널 및 다양한 지역에서 사용되는 자산 사용 통계를 해결합니다. 자산의 성과와 인기를 명확하게 이해함으로써 사용자 경험 향상에 필수적인 실행 가능한 인사이트를 제공합니다.
 
 ## 사전 요구 사항 {#prerequisites-content-hub}
 
