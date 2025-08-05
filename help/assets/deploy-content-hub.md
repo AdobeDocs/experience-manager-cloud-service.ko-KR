@@ -73,7 +73,7 @@ Experience Manager Assets용 Content Hub을 활성화하려면 다음을 수행�
 
 1. [!UICONTROL 프로그램 편집] 대화 상자에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭을 선택합니다.
 
-1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL Content Hub]**을(를) 선택합니다.
+1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택합니다.
    ![Cloud Manager에서 Content Hub 선택](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
@@ -129,7 +129,7 @@ Content Hub 관리자를 온보딩하려면:
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![관리자 제품 프로필](assets/aem-cs-admin-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -160,10 +160,10 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* `experience.adobe com`에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
+* `experience.adobe com`에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**&#x200B;을(를) 클릭합니다.
   ![Content Hub 액세스](assets/access-content-hub.png)
 
-* `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
+* `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**&#x200B;을(를) 클릭합니다.
   ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
 
 ### 사용자에게 이메일 알림 비활성화 {#disable-email-notifications}
@@ -187,7 +187,7 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -204,7 +204,7 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -221,7 +221,7 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
