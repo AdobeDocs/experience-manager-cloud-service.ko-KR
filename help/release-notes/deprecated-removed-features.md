@@ -1,11 +1,11 @@
 ---
 title: 더 이상 사용되지 않으며 제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
-mini-toc-levels: 2
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6c7d7823fbe8440d414461c61d37681c5f205418
+source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
 workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 100%
