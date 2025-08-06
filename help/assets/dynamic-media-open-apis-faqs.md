@@ -3,22 +3,21 @@ title: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
 description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1520'
-ht-degree: 100%
+source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 87%
 
 ---
 
 # OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문 {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Experience Manager Assets as a Cloud Service 저장소의 모든 자산을 OpenAPI 기능이 포함된 Dynamic Media를 사용하여 검색하고 게재할 수 있습니까?**
+## OpenAPI 기능이 있는 Dynamic Media를 사용하여 Experience Manager Assets as a Cloud Service 저장소의 모든 자산을 검색 및 게재할 수 있습니까? {#assets-available-for-search}
 
 아니요, 모든 채널과 애플리케이션에서 브랜드 일관성을 보장하는 OpenAPI 기능이 포함된 Dynamic Media를 사용하여 [승인된 최신 버전의 자산](/help/assets/approve-assets.md)만 검색 및 게재할 수 있습니다.
 
-+++
 
-+++**관리자가 폴더에 추가된 신규 자산과 기존 자산을 승인된 것으로 표시하려면 어떻게 해야 합니까?**
+## 관리자는 폴더에 추가된 새 에셋과 기존 에셋을 승인됨으로 어떻게 표시할 수 있습니까? {#add-assets-to-folder-as-approved}
 
 Experience Manager Assets에서 자산의 상태는 `jcr:content/metadata/dam:status` 속성에 따라 달라집니다. 이 속성의 값은 다음 상태여야 합니다.
 
@@ -50,15 +49,12 @@ Experience Manager Assets은 관리 및 자산 보기의 다음 이미지에 표
 ![자산 보기에서 거부된 자산](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
-
-+++**게재 및 검색 환경을 보호하기 위해 Experience Manager 관리 보기에서 자산에 대한 역할을 설정하는 데 Adobe IMS(Adobe Identity Management Services) 사용자 또는 그룹 ID를 사용하도록 하려면 어떻게 해야 합니까?**
+## 배달 및 검색 환경의 보안을 위해 Experience Manager 관리 보기에서 에셋에 대한 역할을 설정하는 데 사용할 Adobe IMS(Adobe Identity Management Services) 사용자 또는 그룹 ID를 얻으려면 어떻게 해야 합니까? {#set-roles-secure-delivery-search}
 
 Experience Manager 작성자 환경에 대한 액세스가 필요한 사용자는 Adobe Admin Console의 Adobe IMS 사용자로 관리됩니다. Adobe IMS 사용자에 대한 정보, Admin Console에서 액세스 및 관리되는 방식에 대한 자세한 내용은 [Adobe IMS 사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=ko)를 참조하십시오.
 
-+++
 
-+++**폴더 내에서 여러 자산을 동시에 승인할 수 있습니까?**
+## 폴더 내에서 여러 자산을 동시에 승인할 수 있습니까? {#approve-multiple-assets-in-folder}
 
 예, 폴더 내에서 여러 자산을 동시에 승인할 수 있습니다.
 
@@ -78,9 +74,7 @@ Experience Manager 작성자 환경에 대한 액세스가 필요한 사용자�
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 
-+++
-
-+++**Dynamic Media OpenAPI에 대한 자산 게재 및 검색을 보호하려면 어떻게 해야 합니까?**
+## 자산 전달을 보호하고 Dynamic Media OpenAPI를 검색하려면 어떻게 합니까? {#secure-asset-delivery}
 
 Experience Manager의 중앙 자산 거버넌스를 통해 DAM 관리자 또는 브랜드 관리자가 자산에 대한 액세스를 관리할 수 있습니다. 작성자 측, 특히 AEM as a Cloud Service 작성자 인스턴스에서 역할을 구성하거나 승인된 자산에 대한 활성화 및 비활성화 시간을 설정하여 액세스를 제한할 수 있습니다.
 
@@ -88,21 +82,18 @@ Experience Manager의 중앙 자산 거버넌스를 통해 DAM 관리자 또는 
 
 자세한 내용은 [Experience Manager의 자산에 대한 액세스 제한](restrict-assets-delivery.md#authoring)을 참조하십시오.
 
-+++
 
-+++**자산의 승인 상태를 편집할 수 있는 권한을 얻으려면 어떻게 해야 합니까?**
+## 에셋의 승인 상태를 편집할 수 있는 권한을 얻으려면 어떻게 해야 합니까? {#permissions-edit-approval-status}
 
 DAM 사용자는 [승인된 자산](approve-assets.md#approve-assets)에 대한 권한이 없을 수 있습니다. 자산의 승인 상태를 편집할 수 있는 권한을 얻으려면 관리자는 기본 또는 자산 폴더에 적용된 기타 메타데이터 스키마를 편집하여 **[!UICONTROL 검토 상태]** 필드에 대한 편집 권한을 제공할 수 있습니다. 자세한 내용은 [검토 상태 필드에 대한 편집을 비활성화하는 방법](approve-assets.md#configuration)을 참조하십시오.
 
-+++
 
-+++**비디오에 지원되는 파일 크기는 얼마입니까?**
+## 비디오에 지원되는 파일 크기는 얼마입니까? {#supported-file-formats-videos}
 
 OpenAPI 기능이 포함된 Dynamic Media는 긴 양식의 비디오를 지원합니다. 최대 50GB와 2시간의 비디오를 지원할 수 있습니다.
 
-+++
 
-+++**OpenAPI 기능 포함 Dynamic Media와 Dynamic Media 솔루션의 차이점은 무엇입니까?**
+## OpenAPI 기능이 포함된 Dynamic Media는 Dynamic Media 솔루션과 어떻게 다릅니까? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 OpenAPI 기능 포함 Dynamic Media와 Dynamic Media는 각각 특수한 게재 기능을 제공하는 별개의 솔루션을 나타냅니다. 특정 요구 사항을 철저히 검토하여 필요에 가장 적합한 솔루션을 결정하는 것이 중요합니다.
 
@@ -124,9 +115,8 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | Dynamic Video 인코딩은 입력된 비디오를 기반으로 최상의 인코딩을 제공합니다. 기본 비디오 게재에는 설정이 필요하지 않습니다. | 표준 3은 입력 비디오와 관계없이 인코딩합니다(비디오 게재 성능에 영향을 미칠 수 있습니다). 비디오 비트 전송률에 따라 서로 다른 인코딩을 수동으로 설정해야 합니다. |
 | 자산 UID 기반 URL을 추측하기는 어렵지만(URL 난독화 활성화) SEO는 최적화되어 있습니다. | URL 난독화는 URL 쿼리 매개변수에만 사용할 수 있습니다. URL의 Assets ID(자산 이름)를 인식할 수 있습니다. |
 
-+++
 
-+++**OpenAPI 기능 포함 Dynamic Media는 연결된 자산 기능의 한계를 어떻게 해결합니까?**
+## OpenAPI 기능이 있는 Dynamic Media는 연결된 Assets 기능의 제한을 어떻게 해결합니까? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 아래 테이블에는 두 솔루션의 주요 차이점이 요약되어 있습니다.
 
@@ -141,4 +131,14 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | 버전 업데이트 및 메타데이터 수정을 포함하여 원격 DAM 배포에서 사용 가능한 승인된 자산에 대한 변경 사항은 10분의 짧은 TTL(수명) 값 내에 Sites 인스턴스로 자동 반영됩니다. | 원격 DAM 배포에 대한 자산 업데이트는 라이프사이클 이벤트를 통해 자동으로 처리되지만 OpenAPI 기능 포함 Dynamic Media에 비해 훨씬 더 많은 시간이 걸립니다. |
 | 원격 DAM의 자산 메타데이터도 AEM Sites 인스턴스에서 사용할 수 있습니다. | 원격 DAM의 자산 메타데이터를 AEM Sites 인스턴스에서 사용할 수 없습니다. |
 
-+++
+## 일부 수정자는 제한된 가용성으로 표시됩니다. 어떻게 사용을 시작할 수 있습니까? {#use-limited-availability-modifiers}
+
+계정의 제한된 가용성에서 수정자의 생산 사용을 활성화하려면
+
+1. [Admin Console을 사용하여 Adobe 지원 사례를 만듭니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+
+1. Adobe 지원 사례에서 다음 세부 사항을 언급하십시오.
+
+   * IMS 조직
+
+   * 사용할 수 있는 수정자 목록
