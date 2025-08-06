@@ -3,9 +3,9 @@ title: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
 description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 87%
 
 ---
@@ -133,7 +133,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 
 ## 일부 수정자는 제한된 가용성으로 표시됩니다. 어떻게 사용을 시작할 수 있습니까? {#use-limited-availability-modifiers}
 
-계정의 제한된 가용성에서 수정자의 생산 사용을 활성화하려면
+계정에서 [제한된 가용성의 수정자](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)를 프로덕션에 사용하도록 설정하려면:
 
 1. [Admin Console을 사용하여 Adobe 지원 사례를 만듭니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 
