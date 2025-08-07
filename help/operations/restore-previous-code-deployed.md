@@ -3,9 +3,9 @@ title: 배포된 이전 Source 코드 복원
 description: 파이프라인 실행이 필요 없는 마지막 빌드 &ndash;(으)로 환경을 복원하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
-badge: label="알파벳" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
+source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->이 문서에 설명된 기능은 알파 프로그램을 통해서만 사용할 수 있습니다. 알파에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
+>이 문서에 설명된 기능은 Beta 프로그램을 통해서만 사용할 수 있습니다. Beta에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
@@ -31,9 +31,9 @@ ht-degree: 4%
 **배포된 이전 코드 복원** 기능은 아래의 **every** 조건이 참인 경우에만 사용할 수 있습니다.
 
 * **환경 복원 만들기** 권한이 있습니다. 권한 관리에 대한 자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)을 참조하세요.
-* 조직이 알파 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
+* 조직이 Beta 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
-* 선택한 환경은 `Development` 환경(임시 Alpha 제한)입니다.
+* 선택한 환경은 `Development` 환경(임시 Beta 제한)입니다.
 * 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
 
