@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
-workflow-type: ht
-source-wordcount: '1810'
-ht-degree: 100%
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 51%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.6.0) 일자는 2025년 6월 26일입니다. 다음 기능 릴리스(2025.7.0)는 2025년 8월 7일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.7.0) 일자는 2025년 8월 7일 금요일입니다. 다음 기능 릴리스(2025.8.0)는 2025년 8월 28일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -38,56 +38,147 @@ ht-degree: 100%
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Experience Manager Sites의 새로운 기능 {#enhancements-sites}
+
+**콘텐츠 조각 개선 사항**
+
+* 이제 하위 항목이 있는 콘텐츠 조각을 복사할 수 있습니다.
+* 이제 폴더 설정에서 사용자 지정 작업 영역을 구성하여 콘텐츠 조각을 Adobe Target의 구성된 작업 영역으로 내보낼 수 있습니다.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**자산 보기에서 향상된 메타데이터 양식 관리**
+**Dynamic Media 템플릿에 도형 추가**
 
-이제 관리자 보기에서 자산 보기로 메타데이터 양식을 직접 가져올 수 있습니다. 자산 보기에서 이러한 양식을 업데이트하면 해당 내용이 관리자 보기에 자동으로 반영되어 두 환경 모두에서 일관성이 유지됩니다. 이 기능을 통해 기존 메타데이터 구성의 연속성을 유지하면서 새로운 자산 보기로 원활하게 전환할 수 있습니다.
+이제 Experience Manager Assets에서 [셰이프 레이어를 Dynamic Media 템플릿에 추가](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)할 수 있습니다. 이미지 및 텍스트 레이어와 마찬가지로 모양 레이어는 템플릿 URL을 통해 실시간 업데이트에 대한 매개 변수를 지원합니다. 템플릿에 도형에 대한 call-to-action(CTA) 링크를 포함할 수도 있습니다.
 
-![AI 생성 메타데이터](/help/assets/assets/import-metadata-forms-page.png)
+![Dynamic Media 템플릿에 공유 추가](/help/assets/assets/enable-uniform-radius-shape.png)
+
+**AI 생성 메타데이터 개선 사항**
+
+이제 AEM Assets을 사용하여 자산 검색 페이지에서 [카드 보기 또는 목록 보기에서 자산 제목을 표시하도록 구성](/help/assets/smart-tags.md#configure-ai-generated-titles)할 수 있습니다. 사용자가 정의한 에셋 제목, AI를 사용하여 생성된 제목 또는 에셋에 대한 기존 제목이 없는 경우에만 AI 생성 제목을 사용하도록 선택할 수 있습니다.
+
+![AI 생성 제목 구성](/help/assets/assets/configure-title-ai-generated.png)
+
+이제 폴더 수준에서 AI 생성 메타데이터를 비활성화하도록 선택할 수도 있습니다.
+
 
 ### Content Hub의 새로운 기능 {#new-features-content-hub}
 
-**컬렉션 거버넌스**
+**Content Hub의 브랜딩 유연성 향상**
 
-이제 Content Hub를 사용하면 [컬렉션을 생성하는 동안 컬렉션에 대한 액세스를 제어할 수 있으므로 권한이 있는 사용자만 그룹화된 자산을 보거나 관리](/help/assets/collections-content-hub.md##create-collections)할 수 있습니다. 이를 통해 보안이 강화되고, 협업이 원활해지며, 자산 관리가 체계화되고, 거버넌스가 간소화됩니다.
+기존 개인화 기능을 기반으로 구축된 Content Hub에서 이제 관리자는 사용자 정의 로고 이미지를 추가하여 배포를 더욱 맞춤화할 수 있습니다. 배너 및 로고 이미지 모두에 대해 TIFF 파일 형식에 대한 지원도 추가되어 디자인 유연성을 높일 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463336)
+**제목 있는 링크를 사용하여 보다 효율적으로 공유**
+
+이제 자산 세부 사항 보기에서 또는 하나 이상의 자산을 선택한 후 공유 링크를 생성할 때 제목을 추가할 수 있습니다. 따라서 수신자는 특히 여러 공유 에셋을 수신할 때 각 링크의 목적을 쉽게 식별할 수 있습니다.
+
+![비공개 및 공개 링크](/help/assets/assets/shared-link-for-assets.png)
+
+**향상된 필터 탐색**
+
+이제 Content Hub에 필터 내에 **모두 표시** 옵션이 포함되어 있으므로 사용자는 최대 10개의 패싯만 보는 현재 제한의 자산 카운트와 함께 사용 가능한 모든 패싯을 볼 수 있습니다. 각 필터 내의 향상된 검색 및 정렬 기능을 통해 에셋을 보다 쉽게 검색하고 효율적으로 관리할 수 있습니다.
+
+### AEM 데스크탑 앱 릴리스 3.0.0 {#desktop-app-release-3.0.0}
+
+새로운 파일 및 폴더의 자동 업로드, 파일 작업 개선, 보다 스마트한 에셋 검색, AEM과의 원활한 통합을 통해 더욱 빠르고, 명확하며, 직관적인 콘텐츠 관리를 실현합니다.
+
+전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
+
+### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
+
+**게시 전 자산 미리 보기**
+
+이제 [!DNL Dynamic Media with OpenAPI capabilities]에서 자산을 공개적으로 사용할 수 있도록 설정하기 전에 [!DNL AEM Sites] 작성자 페이지 내에서 직접 자산을 미리 볼 수 있습니다. 이해 당사자와 미리 보기 페이지를 공유하여 시각적 품질 및 상황에 맞는 맞춤에 대한 피드백을 수집할 수 있습니다. 검토 주기 동안 게시할 에셋을 완료하기 전에 여러 에셋 버전을 만들고 관리할 수 있습니다.
+
+**OpenAPI 이미지 요청에 대한 향상된 스마트 이미징**
+
+이제 모든 OpenAPI 이미지 요청은 자동 프로모션 및 대체 로직이 포함된 스마트 이미징을 완전히 활용합니다. 이 향상된 기능은 장치 및 네트워크 상태에 따라 이미지를 최적화하여 시각적 품질을 유지하면서 페이지 로드 속도를 높이고 대역폭 사용량을 줄입니다.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### AEM Forms의 새로운 기능 {#forms-new-features}
+
+**적응형 Forms 및 양식 단편을 위한 유니버설 편집기**
+
+이제 [유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에서 적응형 Forms과 재사용 가능한 양식 단편을 만들 수 있습니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
+
+![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-### 프리릴리스 기능
+**Edge Delivery Services Forms용 Forms 제출 서비스**
 
-* [적응형 양식 및 양식 조각을 위한 범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 범용 편집기는 이제 적응형 양식과 재사용 가능한 양식 조각을 모두 만들 수 있도록 지원합니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
+[Forms 제출 서비스](/help/forms/forms-submission-service.md)를 참조하십시오. 을(를) 사용하면 적응형 양식 제출의 데이터를 Google Sheets, Microsoft OneDrive 또는 SharePoint과 같이 인기 있는 스프레드시트 플랫폼에 바로 저장할 수 있습니다. 이 통합을 통해 양식 데이터를 선택한 스프레드시트로 직접 제출할 수 있으므로 데이터 관리를 간소화하므로 수동으로 데이터를 전송할 필요가 없고 오류가 줄어듭니다.
 
-* [적응형 양식에서 AFP 렌디션 생성 및 동기화](/help/forms/document-generation-afp-api.md): AFP 출력 동기화 API를 사용하면 관리자와 사용자가 적응형 양식에서 AFP(고급 기능 프레젠테이션) 출력을 생성하고 해당 출력을 외부 시스템이나 저장 위치와 동기화할 수 있습니다. AFP는 인쇄에 최적화된 고성능 문서 형식으로, 대규모 기업 환경에서 자주 사용됩니다.
+주요 이점은 다음과 같습니다.
 
-* [SharePoint 문서 라이브러리 - 원본 파일 이름으로 첨부 파일 저장](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): 이제 SharePoint 문서 라이브러리에 양식 첨부 파일을 저장할 때 원본 파일 이름을 사용하여 저장할 수 있는 옵션이 추가되었습니다. 이 향상된 기능은 업로드된 파일의 식별과 관리를 간소화해 줍니다.
+* **직접 통합:** 지정된 스프레드시트로 직접 데이터를 제출하도록 양식을 구성하십시오.
+* **사용자 지정 데이터 매핑:** 양식 필드를 구성된 저장을 위해 해당 스프레드시트 열에 매핑합니다.
+* **액세스 제어:** 기존 스프레드시트 권한을 활용하여 제출된 데이터에 액세스하거나 수정할 수 있는 사용자를 관리합니다.
 
-* **규칙 편집기**:
-   * [“When” 절에 클릭 이벤트가 포함된 바이너리 조건](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): 이제 규칙 편집기에서 버튼 클릭 이벤트(_클릭됨_)를 “When” 절 내의 다른 조건과 결합할 수 있습니다. 이를 통해 사용자 상호 작용 및 기타 요소를 기반으로 규칙 실행을 보다 정밀하게 제어할 수 있습니다. 참고: 여러 조건을 사용하는 경우에는 클릭 이벤트가 가장 먼저 나열된 조건이어야 합니다.
-   * [필드 및 패널에 대한 유효성 검사 조건](/help/forms/rule-editor-core-components-usecases.md): 이제 규칙 편집기에 _IsValid_ 및 _IsNotValid_ 조건이 포함됩니다. 이를 통해 특정 필드나 전체 패널(가로 탭, 세로 탭, 아코디언, 마법사 등의 레이아웃 포함)의 유효성 검사 상태를 확인할 수 있으며, 유효성 검사 결과에 따라 양식 탐색과 사용자 경험이 향상됩니다.
-* [SharePoint 목록에 대한 범위 관리 개선](/help/forms/connect-forms-to-sharepoint-list.md): 이제 SharePoint 사이트가 /sites 및 /teams와 같은 모든 관리 경로를 지원합니다. 이 향상된 기능은 다양한 SharePoint 사이트 구조에서 보다 광범위한 통합을 가능하게 해 주므로 조직 콘텐츠에 연결하는 데 더 큰 유연성이 제공됩니다.
-* [SharePoint 목록에 기록 문서 저장 지원](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): 이제 SharePoint 목록 기반 양식 데이터 모델(FDM)을 사용하여 생성된 양식이 기록 문서 바인드 참조 필드 속성을 구성하여 기록 문서(DoR)를 SharePoint 목록에 저장할 수 있습니다. 이 개선된 기능을 통해 지원되는 양식 데이터와 문서를 SharePoint 스토리지와 원활하게 통합할 수 있습니다.
+**적응형 Forms에서 AFP 표현물 생성 및 동기화**
 
-### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
+[AFP 출력 동기화 API](/help/forms/document-generation-afp-api.md)를 사용하면 관리자와 사용자는 적응형 Forms에서 AFP(고급 기능 프레젠테이션) 출력을 생성하고 외부 시스템 또는 저장소 위치와 출력을 동기화할 수 있습니다. AFP는 인쇄에 최적화된 고성능 문서 형식으로, 대규모 기업 환경에서 자주 사용됩니다.
 
-AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다.
+<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
-이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
+**Enhancements in Rule Editor**
 
-#### Adobe Experience Platform(AEP)과 Forms 통합
+* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
+* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
+* Rules now support the use of dynamic variables.
+* Custom event-based rules are now supported.
+* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
+* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
-* [AEM Forms와 Adobe Experience Platform 통합](/help/forms/aem-forms-aep-connector.md): AEM Forms와 Adobe Experience Platform 커넥터를 사용하면 적응형 양식과 Adobe Experience Platform을 원활하게 통합할 수 있습니다. 이 기능을 사용하면 양식 데이터를 XDM 스키마에 매핑하여 실시간으로 AEP에 직접 제출할 수 있습니다. Adobe Experience Cloud 솔루션 전반에서 개인화 및 활성화 사용 사례에 대한 데이터 캡처를 간소화합니다.
+ -->
+
+### AEM Forms의 새로운 조기 액세스 기능 {#forms-new-early-access-features}
+
+AEM Forms 조기 액세스 프로그램은 최신 혁신 기술에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다.
+
+이 릴리스 노트에는 현재 릴리스에서 제공되는 혁신적인 기능이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
+
+
+<!-- **Forms Optimization opportunities**
+
+Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
+
+Key optimization opportunities include:
+
+* Increasing visibility for forms with low views
+* Improving completion rates for forms with low conversions
+* Addressing accessibility compliance issues
+* Streamlining navigation to enhance user experience
+
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+
+대화형 통신 편집기용 **규칙 편집기**
+
+직관적인 포인트 앤 클릭 인터페이스를 사용하여 문서 내에서 직접 동적 데이터 기반 작업을 구축할 수 있습니다. 코드를 작성하지 않고도 조건부 논리를 쉽게 정의하고, 워크플로우를 자동화하고, 콘텐츠를 개인화할 수 있습니다.
+
+**사용자 지정 구성 요소에 대한 AEM Forms Scaffold CLI**
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms 사용자 지정 구성 요소-aem-forms 개발 도구)
+
+이 CLI 도구를 사용하여 AEM Forms Edge Delivery Services 개발을 가속화하십시오. 맞춤형 구성 요소 개발에 필요한 코드와 배선을 즉시 생성하므로 번거롭지 않고 번거롭지 않습니다.
+
+동적 양식 데이터를 위한 **API 통합 도구**
+
+양식 작성자는 API 통합 도구를 통해 사용자 상호 작용을 기반으로 외부 REST API에서 데이터를 자동으로 가져오고 채우는 동적 지능형 양식을 만들 수 있습니다. 이 노 코드 통합 기능은 정적 양식을 반응형 데이터 수집 인터페이스로 변환합니다.
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -105,6 +196,7 @@ Adobe는 정기적으로 기능, 라이브러리, API 및 구성을 검토하여
   <summary>사용 중단 항목을 보려면 확장하십시오.</summary>
 
 Java API:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -131,7 +223,7 @@ OSGi 속성:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-**Java 11 런타임**&#x200B;은 이제 더 이상 사용되지 않으며, 대부분의 환경은 이미 성능이 더 좋은 **Java 21 런타임**&#x200B;으로 업그레이드되었습니다.
+**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 **Java 21 런타임**(으)로 업그레이드되었습니다.
 
 지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
@@ -150,18 +242,18 @@ OSGi 속성:
 
 ### 이전 버전 및 감사 로그의 기본 삭제 {#mt-defaults}
 
-현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 *삭제 유지 관리 작업*&#x200B;이 비활성화되어 있으므로 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
+현재 컨텐츠 버전 및 감사 로그에는 관련 *제거 유지 관리 작업이 기본적으로 비활성화되어 있으므로 명시적으로 구성되지 않은 경우 데이터가 제거되지 않습니다.
 
-그러나 저장소 성능을 최적화하기 위해 **2025년 7월 초**&#x200B;부터 다음 지침에 따라 삭제가 기본적으로 활성화됩니다.
+그러나 저장소 성능을 최적화하기 위해 다음 지침에 따라 나중에 발표되는 날짜에 기본적으로 제거가 활성화됩니다.
 
 #### 콘텐츠 버전 {#mt-content}
 
-* **새로운 환경** (향후 날짜 이후에 생성됨(나중에 전달))
-   * **30일** 이전 버전은 주기적으로 삭제됩니다.
+* **새 환경*-(예정된 날짜 이후에 생성됨(나중에 통신됨)
+   * **30일*- 이전 버전은 정기적으로 삭제됩니다.
    * 지난 30일 이내의 최신 버전 5개는 보관 기간에 관계없이 가장 최신 버전 및 현재 버전도 함께 유지됩니다.
 
-* **기존 환경**(향후 날짜 이전에 생성됨):
-   * **7년** 이전 버전은 주기적으로 삭제됩니다.
+* **기존 환경*-(예정된 날짜 이전에 생성됨):
+   * **7년*- 이전 버전은 정기적으로 삭제됩니다.
    * 지난 7년 이내의 모든 버전이 보존됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
@@ -169,12 +261,12 @@ OSGi 속성:
 
 #### 감사 로그 {#mt-auditlogs}
 
-* **새로운 환경**(향후 날짜가 정해지면 별도 공지 예정):
-   * 복제, DAM 및 페이지 감사 로그는 **7일** 이상 주기적으로 삭제됩니다.
+* **새 환경*-(별도로 전달되는 예정된 날짜 이후에 생성됨):
+   * **7일*-보다 오래된 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
    * 모든 이벤트는 기본적으로 기록됩니다.
 
-* **기존 환경**(향후 날짜 이전에 생성됨):
-   * 복제, DAM 및 페이지 감사 로그는 **7년** 이상 주기적으로 삭제됩니다.
+* **기존 환경*-(예정된 날짜 이전에 생성됨):
+   * **7년*- 이전의 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
    * 모든 이벤트는 기본적으로 기록됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
@@ -193,6 +285,7 @@ OSGi 속성:
 * CDN과 원본 사이의 미들웨어 역할
 * 브라우저에 제공하기 전에 서드파티 API의 응답(및 여러 API 응답 집계)을 다시 포맷
 * 다양한 백엔드에서 결합된 콘텐츠를 사용하여 에지에서 서버 렌더링 HTML을 구성하고 제공
+* 맞춤형 도구에 액세스하기 위해 ChatGPT 및 Cloud와 같은 LLM용 MCP 서버 노출
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
 
@@ -200,13 +293,19 @@ OSGi 속성:
 
 Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다.
 
-이제 Beta 버전에서는 CDN 원본 선택기, 응답 및 요청 변환 등을 포함한 기능에 대한 구성 파이프라인을 배포합니다. 사용 사례에 대한 자세한 내용은 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)에 문의해 주십시오.
+이제 베타 버전에서 CDN 원본 선택기, 응답 및 요청 변환, CDN 로그 전달 등을 포함하는 기능에 대한 구성 파이프라인을 배포합니다. 사용 사례에 대한 자세한 내용은 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)에 문의해 주십시오.
+
+### RDE용 스냅샷(Alpha 프로그램) {#rde-snapshot-beta}
+
+알파에서 RDE(빠른 개발 환경)는 이제 코드 및 컨텐츠의 현재 상태에 대한 스냅샷을 생성하는 기능을 지원하며 나중에 복원할 수 있습니다. 이 기능은 되돌려야 할 코드를 동기화하거나 다른 기능 개발 간에 전환할 때 유용할 수 있습니다. 또한 변경 가능한 콘텐츠만 테스트의 알려진 시작점으로 복원할 수도 있습니다.
+
+이 기능에 대한 피드백을 제공하는 데 관심이 있는 경우 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)에 전자 메일을 보내십시오.
 
 ### 더 많은 대상으로 AEM 로그 전달 (Beta 프로그램) {#log-forwarding-beta}
 
 로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
 
-이제 Beta 버전에서는 AEM 로그를 Amazon S3, Sumo Logic 및 사용자의 New Relic 계정(Adobe 제공 계정이 아닌 경우)으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)가 이러한 로깅 대상에 대해 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
+이제 Beta에서는 AEM 로그를 Amazon S3, Sumo Logic, Dynatrace 및 고유한 New Relic 계정(Adobe 제공 계정이 아님)에 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)가 이러한 로깅 대상에 대해 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
 
 자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)에서 확인하십시오.
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms은 범용 편집기에서 고성능 웹 게
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
 
 ## 경로 A: Forms으로 새 프로젝트 만들기
 
@@ -182,8 +182,8 @@ AEM 코드 동기화는 AEM 작성 환경과 GitHub 저장소 간의 콘텐츠 �
 
 **유효성 검사:** AEM에 대한 GitHub 리포지토리 연결을 확인합니다.
 
->[!NOTE]
->
+    >[!NOTE]
+    >
 >빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하세요.
 
 +++
@@ -399,11 +399,11 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **.eslintrc.js 업데이트**
@@ -648,7 +648,7 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
    AEM CLI는 로컬 개발 작업을 단순화합니다.
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **리포지토리 복제**

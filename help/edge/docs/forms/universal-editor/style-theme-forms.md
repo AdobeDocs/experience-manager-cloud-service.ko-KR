@@ -4,7 +4,7 @@ description: Edge Delivery Services를 통해 제공되는 AEM Forms의 테마�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 83%
@@ -133,27 +133,29 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 +++ 일반 구성 요소용 CSS 선택기
 
 ```CSS
-/- Primary Pattern: Target field wrapper by type */
-.form .{Type}-wrapper {
-  /- Add your styles here */
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-/- Primary Pattern: Target input fields within wrapper */
-.form .{Type}-wrapper input {
-  /- Add your styles here */
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  width: 100%;
-}
-
-/- Context-specific: Target element by field name when higher specificity needed */
-.form .field-{Name} input {
-  /- Add your styles here */
-  /- Use this pattern for specific field customization */
-}
+  
+  /- Primary Pattern: Target field wrapper by type */
+  .form .{Type}-wrapper {
+    /- Add your styles here */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  /- Primary Pattern: Target input fields within wrapper */
+  .form .{Type}-wrapper input {
+    /- Add your styles here */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /- Context-specific: Target element by field name when higher specificity needed */
+  .form .field-{Name} input {
+    /- Add your styles here */
+    /- Use this pattern for specific field customization */
+  }
+  
 ```
 
 - `.form .{Type}-wrapper`: 필드 유형에 따라 필드 래퍼 요소를 타깃팅합니다. 예를 들어 `.form .text-wrapper`은(는) 모든 텍스트 필드 컨테이너를 대상으로 합니다.

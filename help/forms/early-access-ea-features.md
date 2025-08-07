@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 22%
+source-wordcount: '2837'
+ht-degree: 19%
 
 ---
 
@@ -116,6 +116,8 @@ Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, �
 
 * **형식 유연성**: PDF, HTML, PCL, PostScript® 및 ZPL 형식으로 출력합니다.
 
+* **규칙 편집기**: 직관적인 포인트 앤 클릭 인터페이스를 사용하여 문서 내에서 직접 동적 데이터 기반 작업을 빌드합니다. 코드를 작성하지 않고도 조건부 논리를 쉽게 정의하고, 워크플로우를 자동화하고, 콘텐츠를 개인화할 수 있습니다.
+
 #### 사용 사례:
 
 * 계정 명세서를 생성하는 금융 기관
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms을 사용하면 기존 XFA(XML Forms 아키텍처) 양식 
 * **초안 저장**: HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 채우기를 다시 시작합니다.
 
 시작할 준비가 되셨습니까? [HTML5 양식 소개](/help/forms/introductionhtml5.md) 설명서는 이 혁신에 대한 포괄적인 개요 및 시작 안내서를 제공합니다.
+
+### 맞춤형 구성 요소를 위한 AEM Forms Scaffold CLI
+
+AEM Forms CLI 도구를 사용하여 AEM Forms Edge Delivery Services 개발을 가속화하십시오. 이 명령줄 인터페이스를 사용하면 사용자 지정 구성 요소 개발을 시작하는 데 필요한 코드와 배선을 즉시 생성할 수 있습니다. 번거롭지 않고 번거롭지 않습니다.
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms 사용자 지정 구성 요소-aem-forms 개발 도구)
+
+**주요 기능:**
+
+* **빠른 스캐폴딩**: 새로운 사용자 지정 구성 요소에 대한 구조와 코드를 즉시 생성하여 수동 설정 시간을 단축합니다.
+* **모범 사례 기본 제공**: 이 도구는 AEM Forms Edge Delivery Services에 대해 권장되는 패턴을 따르며 일관성과 유지 관리를 보장합니다.
+* **개발자 생산성**: CLI가 반복적인 설정 작업을 처리하는 동안 비즈니스 논리 및 UI 구축에 집중하십시오.
+* **원활한 통합**: 생성된 구성 요소를 사용하고 기존 AEM Forms 프로젝트와 통합할 준비가 되었습니다.
+
+시작할 준비가 되셨습니까? AEM Forms CLI 도구는 Forms as a Cloud Service 배포용 조기 액세스 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 조직 ID와 프로그램 세부 정보를 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 공식 주소로 전자 메일을 보내십시오.
+
+### 동적 양식 데이터를 위한 API 통합 도구
+
+양식 작성자는 API 통합 도구를 통해 사용자 상호 작용을 기반으로 외부 REST API에서 데이터를 자동으로 가져오고 채우는 동적 지능형 양식을 만들 수 있습니다. 이 노 코드 통합 기능은 정적 양식을 반응형 데이터 수집 인터페이스로 변환합니다.
+
+주요 기능은 다음과 같습니다.
+
+* **시각적 구성 인터페이스**: 사용자 지정 코딩 없이 직관적인 포인트 앤 클릭 인터페이스를 통해 API 통합 만들기
+* **실시간 데이터 채우기**: 입력한 사용자를 기준으로 양식 필드를 자동으로 채웁니다(예: 사용자가 우편번호를 입력할 때 시/도 자동 채우기).
+* **유연한 API 지원**: GET/POST 메서드, 인증 및 JSON/XML 응답을 지원하여 공개적으로 액세스할 수 있는 모든 REST API에 연결합니다.
+* **규칙 기반 트리거**: 기본 제공 규칙 엔진을 사용하여 API 호출이 트리거되는 시기를 정의합니다(예: 필드 변경, 양식 이벤트).
+* **스마트 데이터 매핑**: Adobe의 JSON 구문 분석 기능을 사용하여 API 응답 데이터가 특정 양식 필드에 매핑되는 방법을 구성합니다.
+* **향상된 사용자 환경**: 수동 데이터 입력 감소, 데이터 정확도 향상 및 보다 매력적인 양식 상호 작용 생성
+
+이 도구는 주소 자동 완성, 동적 드롭다운 채우기, 외부 데이터베이스에 대한 실시간 유효성 검사 및 사용자 입력을 기반으로 적응하는 컨텍스트 인식 양식 환경 만들기와 같은 시나리오에 특히 유용합니다.
+
+
 
 ## 추가적인 조기 액세스 혁신
 
