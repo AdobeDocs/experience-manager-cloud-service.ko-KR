@@ -118,7 +118,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
    >
    >저장소에 필터 기준과 일치하는 에셋이 하나 이상 있는 경우에만 새 필터가 검색 페이지에 표시됩니다.
 
-마찬가지로 사용 가능한 각 필터 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+마찬가지로 사용 가능한 각 필터 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 ![Content Hub의 구성 UI 필터](assets/configuration-filter1.png)
 
 구성 사용자 인터페이스에서 활성화된 필터가 [검색] 페이지에 표시됩니다.
@@ -147,14 +147,14 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ### 자산 카드 {#asset-card}
 
-최대 6개의 필드를 **자산 카드**에 표시해야 하는 주요 메타데이터 속성을 구성할 수도 있습니다.
+최대 6개의 필드를 **자산 카드**&#x200B;에 표시해야 하는 주요 메타데이터 속성을 구성할 수도 있습니다.
 자산 카드의 ![키 메타데이터](/help/assets/assets/asset-card-metadata.png)
 다음 단계를 실행하여 메타데이터 속성을 구성하여 **[!UICONTROL 자산 카드]**&#x200B;에 표시합니다.
 
 1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
 2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.
 3. **레이블** 필드에 메타데이터 이름을 지정하고 **메타데이터** 필드에서 메타데이터 속성을 선택합니다.
-4. **확인**&#x200B;을 클릭한 다음 **저장**을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
+4. **확인**&#x200B;을 클릭한 다음 **저장**&#x200B;을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
    ![자산 카드](/help/assets/assets/configuration-asset-card1.png)
 마찬가지로 사용 가능한 각 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)를 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
 
@@ -168,7 +168,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 새 메타데이터 속성이 메타데이터 필드 목록에 표시되도록 변경 사항을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하십시오.
 
-마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+마찬가지로 사용 가능한 각 메타데이터 속성 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 속성을 편집하거나 삭제 아이콘을 클릭하여 기존 속성을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 ![Content Hub에서 구성 UI 검색](assets/configuration-search.png)
 
 ### 브랜딩 {#configure-branding-content-hub}
@@ -216,7 +216,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ![브랜딩](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 브랜딩]** 페이지에서 **[!UICONTROL 색상]** 섹션을 사용하여 기본 및 보조 색상을 설정하거나 색상 선택기를 사용하여 선택하거나 색상의 16진수 코드를 정의합니다. 이러한 색상은 [!DNL Content Hub] UI를 브랜드 테마에 맞게 정렬하기 위해 UI 요소의 배경, 텍스트 및 아이콘 색상을 설정합니다.
 ![기본 및 보조 색상](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL 기본 색상]:** 기본 색상 구성표는 선택 작업, 확인란, 검색 창, 토글 스위치와 같은 대화형 요소에 적용되며 [!DNL Content Hub] 홈 페이지 및 [!DNL Content Hub]구성[!UICONTROL  페이지를 포함한 ]의 전환 스위치에 적용됩니다. [!DNL Content Hub]모든 Assets **[!UICONTROL 및]**&#x200B;컬렉션&#x200B;**[!UICONTROL 페이지에서 사용할 수 있는 옵션과 같이 기본]** 인터페이스에서 사용할 수 있는 작업 옵션에도 적용됩니다.
+**[!UICONTROL 기본 색상]:** 기본 색상 구성표는 선택 작업, 확인란, 검색 창, 토글 스위치와 같은 대화형 요소에 적용되며 [!DNL Content Hub] 홈 페이지 및 [!DNL Content Hub]구성[!UICONTROL &#x200B; 페이지를 포함한 &#x200B;]의 전환 스위치에 적용됩니다. [!DNL Content Hub]모든 Assets **[!UICONTROL 및]**&#x200B;컬렉션&#x200B;**[!UICONTROL 페이지에서 사용할 수 있는 옵션과 같이 기본]** 인터페이스에서 사용할 수 있는 작업 옵션에도 적용됩니다.
 
 **[!UICONTROL 보조 색상]:** [!DNL Content Hub] 홈 페이지에서 보조 색상 구성표가 대화 상자에서 사용할 수 있는 UI 옵션 및 입력 필드에 적용됩니다. 선택 작업, 확인란, 검색 창 및 전환 스위치를 제외한 [!UICONTROL 구성] 페이지에서 사용할 수 있는 모든 구성 메뉴 옵션에 적용됩니다.
 
@@ -276,7 +276,7 @@ Content Hub에서 렌디션을 보고 다운로드하는 방법에 대한 자세
 
 1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-마찬가지로 각 URL 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 링크를 편집하거나 삭제 아이콘을 클릭하여 기존 URL을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**을 클릭하세요.
+마찬가지로 각 URL 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 링크를 편집하거나 삭제 아이콘을 클릭하여 기존 URL을 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 ![Content Hub의 구성 UI 사용자 지정 링크](assets/configuration-custom-links1.png)
 
 사용자 지정 링크는 Content Hub 홈 페이지의 Insights 탭 옆에 새 탭으로 표시됩니다.
