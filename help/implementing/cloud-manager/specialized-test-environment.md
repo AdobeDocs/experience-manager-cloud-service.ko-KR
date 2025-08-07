@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->>이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 개인 Beta에 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
+>&#x200B;>이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 개인 Beta에 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
 
 전문 테스트 환경 또는 DevXL은 만들 수 있는 새로운 유형의 Cloud Manager 환경입니다. UAT(사용자 승인 테스트) 및 성능 유효성 검사와 같은 고급 사용 사례를 지원하도록 설계되었습니다. 기존 개발, 신속한 개발 또는 스테이징 환경과 달리 DevXL 환경은 프로덕션 배포 파이프라인 외부에서 작동합니다. 따라서 프로덕션 워크플로에 대한 간섭을 방지하기 위해 엄격한 격리를 유지하면서 보다 큰 유연성을 제공합니다.
 
@@ -52,7 +52,7 @@ DevXL은 일반적인 스테이징 환경의 크기, 확장성 및 구성을 미
 
 1. 다음 중 하나를 수행하십시오.
 
-   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**를 클릭합니다.
+   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**&#x200B;를 클릭합니다.
 **환경 추가** 옵션이 흐리게 표시(사용 안 함)되면 사용 권한이 없거나 사용 허가된 리소스에 종속되어 있을 수 있습니다.
 
    ![환경 카드](assets/no-environments.png)
