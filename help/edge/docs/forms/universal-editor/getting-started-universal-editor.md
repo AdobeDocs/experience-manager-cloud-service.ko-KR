@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms은 범용 편집기에서 고성능 웹 게
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
 
 ## 경로 A: Forms으로 새 프로젝트 만들기
 
