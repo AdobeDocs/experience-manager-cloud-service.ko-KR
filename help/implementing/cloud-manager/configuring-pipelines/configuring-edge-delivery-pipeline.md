@@ -6,15 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-hide: true
-hidefromtoc: true
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+hide: false
+hidefromtoc: false
+source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 38%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
-
 
 
 # Edge Delivery 파이프라인 추가 {#configure-production-pipeline}
@@ -25,9 +24,9 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->다음과 같은 상황이 발생할 때까지 프로덕션 파이프라인을 설정할 수 없습니다.
+>다음과 같은 상황이 발생할 때까지 Edge Delivery 파이프라인을 구성할 수 없습니다.
 >
->* 프로그램이 생성됩니다.
+>* 하나의 Edge Delivery Services 사이트 및 하나의 매핑된 도메인을 포함하는 프로그램이 만들어집니다. 그렇지 않으면 **Edge Delivery 파이프라인 추가** 옵션이 사용자 인터페이스에 비활성화되어 있고 누락된 요구 사항에 대해 설명하는 도구 설명이 표시됩니다. <!-- CMGR‑69680 -->
 >* Git 저장소에는 분기가 하나 이상 있습니다.
 >* 프로덕션 및 스테이징 환경이 생성됩니다.
 
@@ -35,47 +34,56 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->초기 설정 후에 [파이프라인 설정을 편집](managing-pipelines.md)할 수 있습니다.
+>초기 구성 후 [파이프라인 설정을 편집](managing-pipelines.md)할 수 있습니다.
 
-## 새 Edge Delivery 파이프라인 추가 {#adding-production-pipeline}
+**Edge Delivery 파이프라인을 추가하려면:**
 
-프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하는 환경이 하나 이상 있는 경우 다음 단계에 따라 비프로덕션 파이프라인을 추가할 준비가 된 것입니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 원하는 조직을 선택합니다.
 
->[!TIP]
->
->프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 참조하십시오. 이 여정을 사용하면 AEM 사이트의 프론트엔드 개발을 간소화하여 AEM 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
+1. **내 프로그램** 페이지에서 원하는 프로그램을 선택합니다.
 
-**새 Edge Delivery 파이프라인을 추가하려면:**
+   ![Cloud Manager의 내 프로그램 페이지](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+1. 다음 중 하나를 수행하십시오.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+   * **파이프라인 카드에서 Edge Delivery 파이프라인 추가**
 
-1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 **추가**&#x200B;를 클릭하여 **프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
+      1. 왼쪽 레일의 **프로그램**&#x200B;에서 **![개요 아이콘](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [개요](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;를 클릭합니다.
+      1. **프로그램 개요** 페이지의 **파이프라인** 카드에서 **![더하기 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)추가**&#x200B;를 클릭한 다음 **Edge Delivery 파이프라인 추가**&#x200B;를 선택합니다.
 
-   ![프로그램 관리자의 파이프라인 카드 개요](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+         ![프로그램 개요 페이지의 파이프라인 카드](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
-1. **프로덕션 파이프라인 추가** 대화 상자가 표시됩니다. 파이프라인을 식별할 수 있도록 다음 옵션과 함께 **파이프라인 이름**&#x200B;을 입력합니다. **계속**&#x200B;을 클릭합니다.
+   * **파이프라인 페이지에서 Edge Delivery 파이프라인 추가**
 
-   **배포 트리거** - 다음과 같은 옵션을 사용하여 배포 트리거를 정의하여 파이프라인을 시작할 수 있습니다.
+      1. 왼쪽 레일의 **프로그램**&#x200B;에서 **![워크플로 아이콘 또는 파이프라인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) 파이프라인**&#x200B;을 클릭합니다.
+      1. 파이프라인 페이지의 오른쪽 상단 모서리에서 **파이프라인 추가** > **Edge Delivery 파이프라인 추가**&#x200B;를 클릭합니다.
 
-   * **수동** - 파이프라인을 수동으로 시작합니다.
-   * **Git 변경 시** - 구성된 Git 분기에 커밋이 추가될 때마다 CI/CD 파이프라인을 시작합니다. 이 옵션을 사용하면 필요에 따라 파이프라인을 수동으로 시작할 수 있습니다.
+         ![파이프라인 추가 단추가 있는 파이프라인 페이지](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
-   **중요한 지표 장애 비헤이비어** - 파이프라인 설정 또는 편집 중에 **배포 관리자**&#x200B;는 품질 게이트에서 중요한 장애가 발생했을 때 파이프라인의 비헤이비어를 정의할 수 있는 옵션을 제공합니다. 사용 가능한 옵션은 다음과 같습니다.
+1. **Edge Delivery 파이프라인 추가** 대화 상자의 **파이프라인 이름** 텍스트 필드에 설명 파이프라인 레이블을 입력합니다.
 
-   * **매번 묻기** - 기본 설정입니다. 중요한 장애가 발생하면 수동으로 개입해야 합니다.
-   * **즉시 실패** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 취소됩니다. 이 프로세스는 본질적으로 각 실패를 수동으로 거부하는 사용자를 에뮬레이션하는 것입니다.
-   * **즉시 계속** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이 프로세스는 본질적으로 각 실패를 수동으로 승인하는 사용자를 에뮬레이션하는 것입니다.
+   ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-   ![프로덕션 파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+1. 원하는 파이프라인 **배포 트리거** 옵션을 선택하십시오.
 
-1. **Source 코드** 탭에서 파이프라인이 처리해야 하는 코드 유형을 선택합니다.
+   * **수동** - 배포를 시작합니다.
+   * **Git 변경 시** - Git 커밋은 배포를 자동으로 시작합니다. 이 옵션을 사용하면 필요한 경우 파이프라인을 수동으로 시작할 수 있습니다.
 
-   * **[전체 스택 코드 파이프라인 구성](#full-stack-code)**
-   * **[타깃팅된 배포 파이프라인 구성](#targeted-deployment)**
+1. **계속**&#x200B;을 클릭합니다.
 
-파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
+1. **Source 코드**&#x200B;에서 다음 옵션을 설정합니다.
 
-프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
+   * **배포 환경** - 대상 환경 필드를 표시하며 읽기 전용으로 유지됩니다.
 
+   * **저장소** - 드롭다운 목록을 사용하여 파이프라인이 Edge Delivery 구성을 저장하는 정확한 Git 저장소를 가리키도록 합니다.
+
+     Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
+
+   * **Git 분기** - 드롭다운 목록을 사용하여 선택한 저장소 내에서 특정 분기를 선택합니다. 필요한 경우 ![재생 아이콘 또는 새로 고침 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)을 클릭하여 최근 푸시 후 Git 분기 드롭다운 목록을 다시 로드합니다
+   * **코드 위치** - 파이프라인 준비 코드가 시작되는 저장소 내의 폴더 경로를 정의합니다(`/`은(는) 저장소 루트와 같음).
+
+   ![파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
+
+1. **저장**&#x200B;을 클릭합니다.
+
+이제 [프로그램 개요](managing-pipelines.md) 페이지 또는 **파이프라인** 페이지에서 **파이프라인** 카드에서 파이프라인을 **관리**&#x200B;할 수 있습니다.

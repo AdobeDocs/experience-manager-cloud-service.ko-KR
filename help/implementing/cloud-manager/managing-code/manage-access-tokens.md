@@ -3,16 +3,17 @@ title: Cloud Manager에서 외부 저장소의 액세스 토큰 관리
 description: AEM Cloud Manager에서 나만의 Git 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '366'
 ht-degree: 3%
 
 ---
 
 # 외부 저장소에 대한 액세스 토큰 관리 {#manage-access-tokens}
+
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens" -->
 
 Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호스팅되는 저장소를 관리합니다. 이전에는 토큰이 만료되면 연결된 저장소를 다시 온보딩하여 계속 작동해야 했습니다.
 
@@ -20,9 +21,11 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 
 [Cloud Manager에 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)도 참조하세요.
 
+<!--
 >[!NOTE]
 >
->이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 개인 Beta에 등록하려면 [나만의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+-->
 
 ## 액세스 토큰 보기 {#view-access-tokens}
 
@@ -38,7 +41,7 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 액세스 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 액세스 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * **현재 사용 중이 아닌 액세스 토큰만**&#x200B;삭제&#x200B;*할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 

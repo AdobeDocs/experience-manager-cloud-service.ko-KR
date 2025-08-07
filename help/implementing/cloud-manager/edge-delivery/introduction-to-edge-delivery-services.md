@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '798'
-ht-degree: 100%
+source-git-commit: 040c8af18353cbcb9242570e6bb3bac73928e2fa
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 97%
 
 ---
 
@@ -80,13 +80,14 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 1 | 제품 공동 작업 채널 가입 | **요청 제출하기**&#x200B;를 클릭하면 Adobe에 귀사를 위한 채널을 만들기 위한 요청이 제출됩니다. 채널이 이미 존재하는 경우 귀사 채널로 연결됩니다. |
 | 2 | 사전 요구 사항 완료 | [시작하기 튜토리얼 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
 | 3 | Edge Delivery 사이트 추가 또는 <br>지금 사이트 만들기 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오.<br>[Cloud Manager에서 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오. |
-| 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
-| 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
-| 6 | Edge Delivery 사이트의 CDN 구성 | [도메인 매핑 추가](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)를 참조하십시오. |
-| 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
-| 8 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
+| 4 | 외부 Git 저장소를 사용하도록 Edge Delivery 사이트 구성 | [외부 Git 저장소를 사용하도록 Edge Delivery 사이트 구성](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)을 참조하십시오. |
+| 5 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
+| 6 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
+| 7 | Edge Delivery 사이트의 CDN 구성 | [도메인 매핑 추가](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)를 참조하십시오. |
+| 8 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
+| 9 | 실행 | [실행 체크리스트](/help/edge/docs/go-live-checklist.md)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 

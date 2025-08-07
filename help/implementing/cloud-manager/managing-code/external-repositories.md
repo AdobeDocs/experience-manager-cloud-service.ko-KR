@@ -3,27 +3,28 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2321'
 ht-degree: 27%
 
 ---
 
 # Cloud Manager에서 외부 저장소 추가 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 
-이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps Git 저장소를 Cloud Manager에 온보딩할 수도 있습니다.
+이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps(Beta) Git 저장소를 Cloud Manager에 온보딩할 수도 있습니다.
 
 * Edge Delivery Services 사용자의 경우 온보딩된 저장소를 사용하여 사이트 코드를 동기화하고 배포할 수 있습니다.
 * AEM as a Cloud Service와 Adobe Managed Services(AMS) 사용자의 경우 저장소를 전체 스택 파이프라인과 프론트엔드 파이프라인 모두에 연결할 수 있습니다.
 
 >[!NOTE]
 >
->이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 개인 Beta에 등록하려면 [나만의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
+>이 문서에 설명된 Azure DevOps에 대해 추가된 지원은 비공개 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 Beta에 등록하려면 [나만의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)를 참조하세요.
 
 
 ## 외부 저장소 구성
@@ -120,7 +121,7 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 
 [액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)도 참조하세요.
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps(Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -238,7 +239,7 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 | --- |
 | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps(Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
