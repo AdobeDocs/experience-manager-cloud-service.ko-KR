@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 # 스니펫 {#snippets}
@@ -111,10 +111,9 @@ ht-degree: 100%
    </td>
    </tr>
    <tr>
-    <td>ES2022 지원 </td>
-    <td>ES2022는 아직 지원되지 않습니다. 지원은 ES5 JavaScript 기능으로 제한됩니다. </td>
-    <td>사용자 정의 함수 내에서 ES2022까지의 let 및 arrow 함수와 같은 최신 JavaScript 기능을 지원할 수 있습니다. 
-   </td>
+    <td>ECMAScript 버전 지원</td>
+    <td>ES5 JavaScript 기능만 지원합니다.</td>
+    <td>사용자 지정 함수 내에서 최신 JavaScript 기능(예: <code>let</code>, 화살표 함수)을 지원합니다.</td>
    </tr>
    </tr>
    <tr>
@@ -222,7 +221,7 @@ ht-degree: 100%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
