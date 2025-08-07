@@ -4,7 +4,7 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 27%
@@ -68,7 +68,7 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
    | --- | --- |
    | **저장소 이름** | 필수. 새로운 저장소의 표현적인 이름. |
    | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨)<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
-   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다. 저장소 URL 경로에 GitLab 또는 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 이미 사전 선택되어 있습니다.:<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org` - 클라우드 버전만)이 지원됩니다. 자체 호스팅되는 Bitbucket 버전은 2024년 2월 15일부터 더 이상 사용되지 않습니다.)</li><li>**Azure DevOps**(`dev.azure.com`) </ul> |
+   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다. 저장소 URL 경로에 GitLab 또는 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 이미 사전 선택되어 있습니다.:<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org` - 클라우드 버전만)이 지원됩니다. 자체 호스팅되는 Bitbucket 버전은 2024년 2월 15일부터 더 이상 사용되지 않습니다.</li><li>**Azure DevOps**(`dev.azure.com`) </ul> |
    | **설명** | 선택 사항. 저장소에 대한 자세한 설명. |
 
 1. **저장**&#x200B;을 선택하여 저장소를 추가합니다.
