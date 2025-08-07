@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 10%
@@ -131,7 +131,7 @@ ht-degree: 10%
 
 ### 알려진 문제 {#known-issues-21772}
 
-* SITES-31791: 컨텐츠 조각 GraphQL - &quot;최대 필드 수 초과&quot;로 인해 쿼리가 실패했습니다. [기술 자료 문서](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27231)를 참조하세요.
+* SITES-31791: 컨텐츠 조각 GraphQL - &quot;최대 필드 수 초과&quot;로 인해 쿼리가 실패했습니다. [기술 자료 문서](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231)를 참조하세요.
 
 ### 사용 중단된 기능 및 API {#deprecated-21772}
 
@@ -140,7 +140,6 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [�
 ### 보안 수정 {#security-21772}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스는 35개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 노력을 강화합니다.
-
 
 ### 임베드된 기술 {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 
 | AEM HTL | 1.4.28-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | Apache HTTP 서버 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 핵심 구성 요소 | 2.29.0 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14(기본값) | [지원되는 Node.js 버전](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14(기본값) | [지원되는 Node.js 버전](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
