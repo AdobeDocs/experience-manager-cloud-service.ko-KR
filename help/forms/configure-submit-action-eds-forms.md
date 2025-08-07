@@ -4,19 +4,19 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델(FDM)에 연결하는 방법
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 19%
 
 ---
 
-
 # Edge Delivery Services Forms에 대한 작업 제출
 
 | 버전 | 문서 링크 |
 |---------|-----------------------------|
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Edge Delivery Services) | 이 문서 |
@@ -33,7 +33,7 @@ ht-degree: 19%
 * [Power Automate 플로우 호출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion 호출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [양식 데이터 모델(FDM)을 사용하여 제출](/help/forms/using-form-data-model.md)
+* [양식 데이터 모델(FDM)을 사용하여 제출](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob Storage에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST 끝점에 제출](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
@@ -68,4 +68,3 @@ You can configure the submit action for forms created in the Universal Editor us
 ## 추가 참조 {#see-also}
 
 {{af-submit-action}}
-

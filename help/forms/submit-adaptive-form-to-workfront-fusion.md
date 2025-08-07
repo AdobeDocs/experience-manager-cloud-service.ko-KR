@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1304'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ko)은(는) 문서 승인 워크플로, 전자 메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복 작업 대신 새로운 작업에 집중할 수 있도록 합니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)은(는) 문서 승인 워크플로, 전자 메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복 작업 대신 새로운 작업에 집중할 수 있도록 합니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
 
 예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
 
@@ -31,12 +31,14 @@ AEM Forms as a Cloud Service은 Adobe Workfront Fusion에 연결하고 적응형
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
+<span> 이 비디오는 핵심 구성 요소에만 적용됩니다. UE/Foundation 구성 요소에 대해서는 문서를 참조하십시오.</span>
+
 ## AEM Forms을 Adobe Workfront Fusion과 통합하기 위한 사전 요구 사항 {#prerequisites}
 
 Workfront Fusion과 AEM Forms 간에 연결을 설정하려면 다음 조건을 충족해야 합니다.
 
-* 유효한 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=ko).
-* [서비스 자격 증명을 검색](https://my.cloudmanager.adobe.com/)하기 위해 [개발 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)에 액세스할 수 있는 권한이 있는 AEM 사용자입니다.
+* 유효한 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* [서비스 자격 증명을 검색](https://my.cloudmanager.adobe.com/)하기 위해 [개발 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)에 액세스할 수 있는 권한이 있는 AEM 사용자입니다.
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
 
@@ -103,7 +105,7 @@ Webhook를 추가하려면:
    >
    > 인스턴스 URL은 특정 AEM Forms 인스턴스를 가리키는 고유한 웹 주소입니다.
 
-   연결을 만드는 데 필요한 [서비스 자격 증명을 개발자 콘솔에서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ko)검색할 수 있습니다.
+   연결을 만드는 데 필요한 [서비스 자격 증명을 개발자 콘솔에서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)검색할 수 있습니다.
 
 1. `ims-na1.adobelogin.com`IMS 끝점&#x200B;**의**&#x200B;을(를) 개발자 콘솔의 서비스 자격 증명에서 **imsEndpoint** 값으로 바꿉니다.
 
@@ -153,7 +155,7 @@ Webhook를 추가하려면:
 Workfront Fusion의 기초 구성 요소를 기반으로 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 편집할 적응형 양식을 열고 적응형 양식 컨테이너 속성의 **[!UICONTROL 제출]** 섹션으로 이동합니다.
-1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오 호출]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오 호출]**을 선택합니다.
    ![Workfront Fusion용 제출 액션](/help/forms/assets/workfront-fusion-fc.png)
 
 1. 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오]**&#x200B;를 선택합니다.

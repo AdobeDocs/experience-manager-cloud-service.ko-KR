@@ -5,9 +5,9 @@ Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Mar
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '755'
 ht-degree: 8%
 
 ---
@@ -37,6 +37,8 @@ Marketo Engage을 기존 AEM Forms과 통합하기 위한 클라우드 서비스
 ## Marketo Engage 데이터 소스에 대해 기존 적응형 양식을 구성하는 방법
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
+<span> 이 비디오는 핵심 구성 요소에만 적용됩니다. UE/Foundation 구성 요소에 대해서는 문서를 참조하십시오.</span>
 
 >[!BEGINTABS]
 

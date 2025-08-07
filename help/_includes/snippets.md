@@ -1,5 +1,5 @@
 ---
-source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 98%
@@ -43,7 +43,7 @@ ht-degree: 98%
 * [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
 * [SharePoint 문서 라이브러리에 제출](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [SharePoint 목록에 제출](/help/forms/connect-forms-to-sharepoint-list.md)
-* [Forms 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Forms 데이터 모델을 사용하여 제출](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob 스토리지에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
@@ -168,11 +168,11 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >프론트엔드 파이프라인의 경우 다음 IP 허용 목록을 미리 Cloud Manager에 추가해야 합니다.
->&#x200B;>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
->&#x200B;>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
+>>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
+>>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
 >
 >**Cloud Manager IP 허용 목록**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 추가 {#add-cm-allowlist-frontend-pipeline}
@@ -180,7 +180,7 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >프론트엔드 파이프라인을 사용하여 사이트를 개발하거나 사용하려는 경우 사전에 Cloud Manager IP 허용 목록을 추가해야 합니다.
->&#x200B;>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하십시오.
+>>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하십시오.
 
 ## IP 허용 목록 및 범용 편집기 {#ip-allow-lists-ue}
 
@@ -221,7 +221,7 @@ ht-degree: 98%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 

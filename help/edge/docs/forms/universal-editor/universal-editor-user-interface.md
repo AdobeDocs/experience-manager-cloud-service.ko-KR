@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ ht-degree: 4%
 **목적:** 편집기 인터페이스 없이 새 탭에서 양식을 봅니다.\
 **사용할 시기:** 전체 화면 테스트의 경우 관련자와 공유하여 검토하십시오.
 
-    ![Open Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![페이지 열기](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **게시**
 
 **목적:** 양식을 라이브로 만들어 사용자가 액세스할 수 있도록 합니다.\
 **사용할 시기:** 미리 보기 및 반응형 모드에서 철저한 테스트 후
 
-    ![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![게시](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 게시 전 **유효성 검사 목록:**
 
@@ -216,12 +216,22 @@ ht-degree: 4%
 
 **다음 도구는 특정 시나리오 또는 고급 설정에 사용됩니다.**
 
-#### **양식 속성 편집**
+#### **AEM 양식 속성**
 
 **목적:** FDM(양식 데이터 모델) 및 게시 날짜와 같은 양식 수준 설정을 구성합니다.\
 **사용할 시기:** 데이터 통합 설정, 게시 예약
 
 ![양식 속성](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![양식 속성 마법사](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+양식 속성 패널에는 다음 섹션이 포함되어 있습니다.
+
+- **제출**: 사용자가 양식을 제출한 후 수행할 작업을 정의합니다. 이메일을 통해 데이터 보내기, SharePoint에 제출, 양식 데이터 모델 사용 또는 Adobe Experience Platform 또는 Microsoft Power Automate와 같은 서비스와 통합과 같은 여러 제출 작업 중에서 선택합니다. 지원되는 제출 액션의 전체 목록에 대해서는 [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md) 문서를 참조하십시오.
+
+- **미리 채우기**: 사용자가 양식과 상호 작용하기 전에 양식 필드를 자동으로 채우는 방법을 구성합니다. 양식 데이터 모델(FDM)과 같은 데이터 소스에 연결하거나 URL 매개 변수를 사용하여 필드를 미리 채울 수 있으므로 사용자 경험을 향상하고 수동 입력을 줄일 수 있습니다. 자세한 내용은 [서비스 미리 채우기](/help/edge/docs/forms/universal-editor/prefill-form.md) 문서를 참조하세요.
+
+- **감사합니다**: 양식을 제출한 후 사용자에게 표시되는 내용을 사용자 지정합니다. 확인 메시지를 표시하거나 다른 웹 페이지로 리디렉션하여 원활하고 전문적인 완료 경험을 보장할 수 있습니다. 양식에 감사 메시지를 구성하는 방법에 대해 알아보려면 [감사 메시지 구성](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) 문서를 참조하십시오.
 
 #### **규칙 편집기**(조기 액세스)
 
@@ -521,4 +531,3 @@ ht-degree: 4%
 4. **기본 규칙 편집기** - [규칙 편집기 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 사용하여 동적 동작 추가
 
 **사용자 지정:** 유니버설 편집기는 양식 빌드를 직관적으로 만들도록 설계되었습니다. 필수 요소부터 시작하여 요구 사항이 증가함에 따라 점차 고급 기능을 살펴보십시오.
-

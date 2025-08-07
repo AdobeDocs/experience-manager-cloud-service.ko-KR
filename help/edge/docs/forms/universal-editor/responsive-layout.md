@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # 범용 편집기를 사용하여 응답형 Forms 만들기
 
 사용자는 데스크탑, 태블릿 및 스마트폰 등 다양한 디바이스의 양식에 액세스합니다. 반응형 양식을 디자인하면 디바이스에 상관없이 모든 사용자에게 최적의 경험을 제공할 수 있습니다. 이 안내서에서는 범용 편집기를 사용하여 화면 크기에 따라 양식을 디자인, 테스트 및 최적화하는 방법을 설명합니다.
+
 
 반응형 양식 작성에는 두 가지 주요 활동이 포함됩니다.
 

@@ -6,16 +6,18 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 32%
+source-wordcount: '455'
+ht-degree: 30%
 
 ---
 
 # Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+<span> 이 비디오는 핵심 구성 요소에만 적용됩니다. UE/Foundation 구성 요소에 대해서는 문서를 참조하십시오.</span>
 
 적응형 양식에서 [!UICONTROL SharePoint 목록에 제출] 제출 액션을 사용하려면:
 
