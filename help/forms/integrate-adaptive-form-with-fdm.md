@@ -53,7 +53,7 @@ ht-degree: 28%
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. **[!UICONTROL 제출]** 탭을 클릭합니다.
-1. **[!UICONTROL 제출 동작]** 드롭다운 목록에서 **[양식 데이터 모델을 사용하여 제출]**을 선택합니다.
+1. **[!UICONTROL 제출 동작]** 드롭다운 목록에서 **[양식 데이터 모델을 사용하여 제출]**&#x200B;을 선택합니다.
    ![양식 데이터 모델을 사용하여 제출](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. 전송할 **[!UICONTROL 데이터 모델]** 구성을 선택하십시오.
@@ -72,7 +72,7 @@ ht-degree: 28%
    >
    > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
    > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
-1. **제출** 탭을 클릭하고 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]**을 선택합니다.
+1. **제출** 탭을 클릭하고 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]**&#x200B;을 선택합니다.
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
 **원래 이름으로 첨부 파일 저장**&#x200B;을 선택하면 첨부 파일은 원래 파일 이름을 사용하여 폴더에 저장됩니다. Azure Blob Storage에 기록 문서(DoR)를 저장할 수도 있습니다.
 1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
