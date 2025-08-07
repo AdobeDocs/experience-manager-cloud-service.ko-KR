@@ -142,7 +142,7 @@ ht-degree: 2%
 
        >[!NOTE]
        >
-   > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
+       > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
 
 +++
 
@@ -267,18 +267,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: {
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    }
+    &rbrace;
     
     
     &quot;

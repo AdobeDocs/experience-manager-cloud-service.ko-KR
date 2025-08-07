@@ -157,6 +157,7 @@ AEM OSGi 콘솔(`/system/console/configMgr`)에서:
        Access-Control-Allow-Origin: https://host-domain.com
        Access-Control-Allow-Methods: GET, OPTIONS
    
+
 ### 단계 포함
 
 1. **양식 만들기 및 게시**
