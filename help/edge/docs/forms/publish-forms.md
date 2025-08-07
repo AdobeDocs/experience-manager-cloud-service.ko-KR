@@ -4,10 +4,10 @@ description: AEM Forms용 Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 81%
+source-wordcount: '585'
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 81%
 
 ## 전제 조건
 
-* [AEM Forms 상용구](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)를 기반으로 한 AEM 프로젝트가 있거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가했습니다.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
-* 양식 전체를 테스트하여 사용할 준비가 되었습니다.
-* [스프레드시트를 구성하여](/help/edge/docs/forms/submit-forms.md) 데이터를 수신할 수 있습니다.
+- [AEM Forms 상용구](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)를 기반으로 한 AEM 프로젝트가 있거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가했습니다.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- 양식 전체를 테스트하여 사용할 준비가 되었습니다.
+- [스프레드시트를 구성하여](/help/edge/docs/forms/submit-forms.md) 데이터를 수신할 수 있습니다.
 
 
 ## 양식 게시
 
-+++ 1. 스프레드시트 게시
++++ &#x200B;1. 스프레드시트 게시
 
 1. Microsoft SharePoint 또는 Google Drive의 계정으로 연 다음 AEM Edge Delivery 프로젝트 디렉터리로 이동합니다.
 
-1. 양식이 있는 스프레드시트를 엽니다. 예를 들어, [조회](/help/edge/assets/enquiry.xlsx) 양식은 Microsoft Excel 통합 문서입니다.
+1. 양식이 있는 스프레드시트를 엽니다. 예: Microsoft Excel 통합 문서 [문의](/help/edge/assets/enquiry.xlsx) 양식입니다.
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 시트를 미리 봅니다.
 
@@ -47,18 +47,18 @@ ht-degree: 81%
        https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
-   * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
-   * `<repository>`는 GitHub 저장소를 나타냅니다.
-   * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
+   - `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
+   - `<repository>`는 GitHub 저장소를 나타냅니다.
+   - `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
-   예를 들어 프로젝트의 리포지토리 이름이 &quot;wefinance&quot;이고 계정 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기 및 양식을 &quot;inquiry&quot;로 사용하는 경우 URL은 다음과 같습니다.
+   예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndform” 계정 아래에서 “main” 분기 및 양식을 “문의”로 사용하는 경우 URL은 다음과 같습니다.
 
    `https://main--wefinance--wkndform.aem.live/enquiry.json`
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
-+++ 2. 웹 페이지에 양식 추가
++++ &#x200B;2. 웹 페이지에 양식 추가
 
 웹 페이지에 `<form>.json`을 추가하면 고객과 간편하게 상호 작용하여 양식 작성기에서 양식을 손쉽게 작성하고 제출할 수 있습니다.
 
@@ -67,11 +67,11 @@ ht-degree: 81%
 
 1. Microsoft SharePoint 또는 Google Drive 계정에 액세스한 다음 `[AEM Edge Delivery project directory]`로 이동합니다.
 
-1. 양식을 임베드하려는 문서 파일을 엽니다. 예를들어 [inquiry-form.docx](/help/edge/assets/enquiry-form.docx) 파일을 열거나 새 문서를 만들 수 있습니다.
+1. 양식을 임베드하려는 문서 파일을 엽니다. 예를 들어 [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) 파일을 열거나 새 문서를 만들 수 있습니다.
 
 1. 양식을 삽입할 문서 내에서 원하는 섹션을 확인하고 이에 따라 해당 섹션으로 이동합니다.
 
-1. 파일에 &#39;Form&#39;이라는 블록을 추가합니다. 예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;인 경우 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용합니다.
+1. “양식”이라는 블록을 파일에 추가합니다. 예를 들어 프로젝트 저장소의 이름이 “wefinance”인 경우 “wkndform” 계정 아래에서 “main” 분기를 사용합니다.
 
    | 양식 |
    |---|
@@ -88,7 +88,7 @@ ht-degree: 81%
 
    개발 또는 테스트 목적으로는 미리보기 URL(.page URL)을 사용하고, 프로덕션용으로는 게시 URL(.live)을 사용합니다.
 
-   예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;인 경우 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용합니다.
+   예를 들어 프로젝트 저장소의 이름이 “wefinance”인 경우 “wkndform” 계정 아래에서 “main” 분기를 사용합니다.
 
    다음은 미리보기 및 게시 URL의 예입니다.
 
@@ -125,6 +125,4 @@ ht-degree: 81%
 +++
 
 
-## 추가 참조
 
-{{see-more-forms-eds}}

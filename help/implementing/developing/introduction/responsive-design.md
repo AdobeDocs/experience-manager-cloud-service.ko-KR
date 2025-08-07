@@ -4,7 +4,7 @@ description: 반응형 설계를 통해 동일한 경험을 여러 방향의 여
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 1%
@@ -85,7 +85,7 @@ CSS 파일에서 타겟팅하는 장치의 속성을 기반으로 미디어 쿼�
 
 ### AEM 페이지에서 미디어 쿼리 사용 {#using-media-queries-with-aem-pages}
 
-[WKND 샘플 프로젝트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)은(는) 페이지 정책을 통해 clientlib을 포함하는 [페이지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ko)를 사용합니다.
+[WKND 샘플 프로젝트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)은(는) 페이지 정책을 통해 clientlib을 포함하는 [페이지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)를 사용합니다.
 
 자체 페이지 구성 요소가 페이지 핵심 구성 요소를 기반으로 하지 않는 경우 해당 구성 요소의 HTL 또는 JSP 스크립트에 클라이언트 라이브러리 폴더를 포함할 수도 있습니다. 이렇게 하면 반응형 그리드가 작동하는 데 필요한 미디어 쿼리가 있는 CSS 파일이 생성되고 참조됩니다.
 
@@ -121,7 +121,7 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 ### 장치 그룹 지정 {#specifying-device-groups}
 
-**장치** 목록에 표시되는 장치 그룹을 지정하려면 사이트의 템플릿 페이지에 있는 `jcr:content` 노드에 `cq:deviceGroups` 속성을 추가하십시오. 속성 값은 장치 그룹 노드에 대한 경로 배열입니다.
+**장치** 목록에 표시되는 장치 그룹을 지정하려면 사이트의 템플릿 페이지에 있는 `cq:deviceGroups` 노드에 `jcr:content` 속성을 추가하십시오. 속성 값은 장치 그룹 노드에 대한 경로 배열입니다.
 
 예를 들어 WKND 사이트의 템플릿 페이지는 `/conf/wknd/settings/wcm/template-types/empty-page/structure`입니다. 그리고 그 아래의 `jcr:content` 노드에는 다음 속성이 포함됩니다.
 
@@ -135,16 +135,16 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 반응형 페이지는 렌더링되는 장치에 동적으로 적응하여 사용자에게 더 나은 경험을 제공합니다. 하지만 페이지 로드 시간을 최소화하기 위해 자산을 중단점 및 장치에 최적화하는 것도 중요합니다.
 
-[핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko) 기능(예: 응용 이미지 선택)입니다.
+[핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) 기능(예: 응용 이미지 선택)입니다.
 
-* 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=ko)을(를) 사용하여 적절한 렌디션을 전달합니다.
+* 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)을(를) 사용하여 적절한 렌디션을 전달합니다.
 * [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko-KR)은(는) DAM의 이미지 에셋을 WebP 형식으로 제공하고 이미지의 다운로드 크기를 평균적으로 약 25% 줄일 수 있는 정책의 간단한 확인란을 통해서도 사용할 수 있습니다.
 
 ## 레이아웃 컨테이너 {#layout-container}
 
 AEM의 레이아웃 컨테이너를 사용하면 응답형 레이아웃을 효율적이고 효과적으로 구현하여 페이지 차원을 클라이언트 뷰포트에 맞출 수 있습니다.
 
->응답형 격자의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)는 미래 AEM 사이트에 대한 정적 HTML mock-up을 만들 때 AEM 외부에서 AEM 격자를 사용할 수 있도록 해주는 프론트엔드 개발자에게 제공할 수 있는 참조입니다.
+>응답형 격자의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)는 프론트엔드 개발자에게 제공할 수 있는 참조로서, 예를 들어 향후 AEM 사이트에 대한 정적 HTML mock-up을 만들 때 AEM 외부에서 AEM 격자를 사용할 수 있습니다.
 
 >[!TIP]
 >
@@ -152,7 +152,7 @@ AEM의 레이아웃 컨테이너를 사용하면 응답형 레이아웃을 효�
 
 ## 중첩된 응답형 격자 {#nested-responsive-grids}
 
-프로젝트의 요구 사항을 지원하기 위해 응답형 그리드를 중첩해야 하는 경우가 있을 수 있습니다. 그러나 Adobe이 권장하는 모범 사례는 가능한 한 구조를 평평하게 유지하는 것입니다.
+프로젝트의 요구 사항을 지원하기 위해 응답형 그리드를 중첩해야 하는 경우가 있을 수 있습니다. 그러나 Adobe이 권장하는 모범 사례는 구조를 최대한 평평하게 유지하는 것입니다.
 
 중첩된 응답형 격자를 사용하지 않을 수 없는 경우에는 다음을 확인하십시오.
 
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB 결과 HTML 예]
+>[!TAB 결과 HTML 예제]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

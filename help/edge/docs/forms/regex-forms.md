@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 100%
 
 다음을 포함하여 최소 8자를 사용합니다.
 
-* 소문자(a~z)
-* 대문자(A~Z)
-* 숫자(0~9)
-* 특수 문자 (@$!%*?&amp;)
+- 소문자(a~z)
+- 대문자(A~Z)
+- 숫자(0~9)
+- 특수 문자 (@$!%*?&amp;)
 
 
 ## 이메일 주소
@@ -76,7 +76,7 @@ http 또는 https로 시작하는 유효한 URL인지 확인합니다.
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-시간이 HH:MM(24시간 포맷) 포맷인지 확인합니다.
+시간을 HH:MM 형식(24시간 형식)으로 확인합니다.
 
 
 ## 우편번호(미국 포맷)

@@ -4,9 +4,9 @@ description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4221'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -281,7 +281,6 @@ When you select a form model, configure Document of Record using options availab
 | 적응형 양식 구성 요소 | 해당 XFA 구성 요소 | 메모 |
 |---|---|---|
 | 이미지 | 이미지 | 바운드 컨트롤이든 언바운드 컨트롤이든 TextDraw 및 Image 구성 요소는 기록 문서 설정을 사용하여 제외하지 않는 한 항상 XSD 기반 적응형 양식에 대한 기록 문서에 나타납니다. |
-| 텍스트 | 텍스트 |
 
 ### 표 {#tables}
 
@@ -364,7 +363,7 @@ When you select a form model, configure Document of Record using options availab
       * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 [!UICONTROL 기록 문서]에 확인란 및 라디오 단추의 선택한 값만 표시됩니다.
       * **여러 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
       * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
-      * **수평 정렬을 위한 옵션 수**:수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
+      * **수평 정렬을 위한 옵션 수**:You&#x200B;는 수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
 
       ![양식 필드 속성](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ When you select a form model, configure Document of Record using options availab
 1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 기록 문서 템플릿]** 탭을 열고 다음 옵션 중 하나를 선택합니다.
    * **[!UICONTROL 없음]**: 이 옵션을 선택하면 적응형 양식에 대해 만들어진 [!UICONTROL 기록 문서] 서식 파일이 없습니다.
-
-   * **[!UICONTROL 양식 서식 파일을 기록 문서 서식 파일로 연결]**:이 옵션을 선택하면 XFA 양식이 기록 문서의 서식 파일로 사용됩니다.
-
+   * **[!UICONTROL 양식 서식 파일을 기록 문서 서식 파일로 연결]**:When 이 옵션을 선택하면 XFA 양식이 기록 문서의 서식 파일로 사용됩니다.
    * **[!UICONTROL 기록 문서 생성]**: 이 옵션을 선택하면 적응형 양식에 대해 [!UICONTROL 기록 문서] 템플릿이 자동으로 생성됩니다.
 
 1. 속성을 저장하려면 ![저장](/help/forms/assets/check-button.png)을(를) 선택하십시오.

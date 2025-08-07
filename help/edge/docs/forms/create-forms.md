@@ -4,9 +4,9 @@ description: AEM Forms용 Edge Delivery Services 사용을 시작해 보십시�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저�
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* [AEM Forms 상용구를 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)를 설정하고, [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고, 로컬 컴퓨터의 해당 GitHub 저장소를 복제합니다.
+- [AEM Forms 상용구를 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)를 설정하고, [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고, 로컬 컴퓨터의 해당 GitHub 저장소를 복제합니다.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
+- Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ 1단계: Microsoft Excel 또는 Google Sheets를 사용하여 양식을 작성합니다.
@@ -105,9 +105,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
-   * `<repository>`는 GitHub 저장소를 나타냅니다.
-   * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
+   - `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
+   - `<repository>`는 GitHub 저장소를 나타냅니다.
+   - `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
    예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndform” 계정 아래에서 “main” 분기를 사용하는 경우 URL은 다음과 같습니다.
 
@@ -164,6 +164,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 [스프레드시트를 준비](/help/edge/docs/forms/submit-forms.md)하여 양식 제출 시 데이터를 수신합니다.
 
 
-## 추가 참조
-
-{{see-more-forms-eds}}

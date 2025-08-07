@@ -4,10 +4,10 @@ description: 범용 편집기에서 양식 조각을 만들고 양식에 추가�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 <span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소를 통해 GitHub 조직 이름과 저장소 이름을 포함한 이메일을 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>으로 보내 주십시오. 예를 들어 저장소 URL이 https://github.com/adobe/abc, 조직 이름이 adobe, 저장소 이름이 abc인 경우입니다.</span>
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 양식에는 연락처 정보, 신원 정보, 동의 계약과 같은 일반적인 섹션이 포함되는 경우가 많습니다. 양식 개발자는 새로운 양식을 작성할 때마다 이러한 섹션을 만드는데, 이는 반복적이고 시간이 많이 소요되는 작업입니다.
 이러한 중복 작업을 없애기 위해 범용 편집기는 패널이나 필드 그룹 등의 재사용 가능한 양식 세그먼트를 한 번만 만들어 다양한 양식에서 재사용할 수 있는 방법을 제공합니다. 이러한 재사용 가능한 모듈식 독립 세그먼트를 양식 조각이라고 합니다. 예를 들어 동일한 비상 연락처 조각을 직원 및 감독자의 연락처 정보 등 양식의 다른 섹션에서도 사용할 수 있습니다.
@@ -24,17 +24,17 @@ ht-degree: 100%
 
 ## Edge Delivery Services 양식 조각의 특징
 
-* **양식 조각을 사용하여 일관성 유지**
+- **양식 조각을 사용하여 일관성 유지**
 조각을 다양한 양식에 통합하여 일관된 레이아웃과 표준화된 콘텐츠를 유지할 수 있습니다.
 
   >[!NOTE]
   >
   > 미리보기 모드에서는 “한번 변경하여 전체 반영”이라는 접근 방식을 통해 조각에 적용된 모든 업데이트가 모든 양식에 자동으로 적용됩니다. 그러나 게시 모드에서 변경 사항을 반영하려면 조각을 게시하거나 양식을 다시 게시해야 합니다.
 
-* **양식 내에서 양식 조각을 여러 번 추가**
+- **양식 내에서 양식 조각을 여러 번 추가**
 양식 내에서 양식 조각을 여러 번 추가하고 데이터 소스나 스키마에 대한 데이터 바인딩 속성을 구성할 수 있습니다.
 
-* **조각 내에서 조각 사용**
+- **조각 내에서 조각 사용**
 중첩된 양식 조각을 만들 수 있습니다. 즉, 조각 안에 다른 조각을 추가할 수 있으며, 중첩된 조각 구조를 가질 수 있습니다.
 
   >[!NOTE]
@@ -43,23 +43,23 @@ ht-degree: 100%
 
 ## Edge Delivery Services 양식 조각 사용 시 고려 사항
 
-* 조각과 조각을 사용하려는 양식 모두에 동일한 GitHub URL을 추가해야 합니다.
-* 양식 내에서 양식 조각을 편집할 수 없습니다. 변경하려면 독립 실행형 양식 조각을 수정해야 합니다.
+- 조각과 조각을 사용하려는 양식 모두에 동일한 GitHub URL을 추가해야 합니다.
+- 양식 내에서 양식 조각을 편집할 수 없습니다. 변경하려면 독립 실행형 양식 조각을 수정해야 합니다.
 
 ## 사전 요구 사항
 
-* [GitHub 저장소를 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)하여 AEM 환경과 GitHub 저장소 간의 연결을 구축합니다.
-* 이미 Edge Delivery Services를 사용하고 있는 경우 최신 버전의 [적응형 양식 블록](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)을 GitHub 저장소에 추가합니다.
-* AEM Forms 작성자 인스턴스에는 Edge Delivery Services 기반 템플릿이 포함됩니다.
-* AEM Forms as a Cloud Service 작성자 인스턴스 및 GitHub 저장소의 URL을 바로 사용할 수 있습니다.
+- [GitHub 저장소를 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)하여 AEM 환경과 GitHub 저장소 간의 연결을 구축합니다.
+- 이미 Edge Delivery Services를 사용하고 있는 경우 최신 버전의 [적응형 양식 블록](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)을 GitHub 저장소에 추가합니다.
+- AEM Forms 작성자 인스턴스에는 Edge Delivery Services 기반 템플릿이 포함됩니다.
+- AEM Forms as a Cloud Service 작성자 인스턴스 및 GitHub 저장소의 URL을 바로 사용할 수 있습니다.
 
 ## Edge Delivery Services 양식 조각을 사용하여 작업
 
 범용 편집기에서 Edge Delivery Services 양식 조각을 만들고 생성된 조각을 Edge Delivery Services 양식에 추가할 수 있습니다. Edge Delivery Services 양식 조각을 사용하면 다음 액션을 수행할 수 있습니다.
 
-* [양식 조각 만들기](#creating-form-fragments)
-* [양식에 양식 조각 추가](#adding-form-fragments-to-a-form)
-* [양식 조각 관리](#managing-form-fragments)
+- [양식 조각 만들기](#creating-form-fragments)
+- [양식에 양식 조각 추가](#adding-form-fragments-to-a-form)
+- [양식 조각 관리](#managing-form-fragments)
 
 ### 양식 조각 만들기
 
@@ -84,14 +84,14 @@ ht-degree: 100%
 
    ![양식 모델 탭에서 모델 유형 표시](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **양식 데이터 모델(FDM)**: 데이터 소스의 데이터 모델 오브젝트와 서비스를 조각에 통합합니다. 양식에 여러 소스의 데이터를 읽고 써야 하는 경우 양식 데이터 모델(FDM)을 선택하십시오.
+   - **양식 데이터 모델(FDM)**: 데이터 소스의 데이터 모델 오브젝트와 서비스를 조각에 통합합니다. 양식에 여러 소스의 데이터를 읽고 써야 하는 경우 양식 데이터 모델(FDM)을 선택하십시오.
 
-   * **JSON 스키마**: 데이터 구조를 정의하는 JSON 스키마를 연결하여 양식을 백엔드 시스템과 통합합니다. 이렇게 하면 스키마 요소를 사용하여 동적 콘텐츠를 추가할 수 있습니다.
-   * **없음**: 양식 모델을 사용하지 않고 처음부터 조각을 만들도록 지정합니다.
+   - **JSON 스키마**: 데이터 구조를 정의하는 JSON 스키마를 연결하여 양식을 백엔드 시스템과 통합합니다. 이렇게 하면 스키마 요소를 사용하여 동적 콘텐츠를 추가할 수 있습니다.
+   - **없음**: 양식 모델을 사용하지 않고 처음부터 조각을 만들도록 지정합니다.
 
    >[!NOTE]
    >
-   > 범용 편집기에서 양식 데이터 모델(FDM)과 양식 또는 조각을 통합하여 다양한 백엔드 데이터 소스를 사용하는 방법을 알아보려면 [여기를 클릭](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)하십시오.
+   > 양식 또는 조각을 유니버설 편집기의 양식 데이터 모델(FDM)과 통합하여 다양한 백엔드 데이터 소스를 사용하는 방법에 대해 알아보려면 [유니버설 편집기에서 양식 데이터 모델과 양식 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)을 참조하십시오.
 
 1. (선택 사항) **고급** 탭에서 조각의 **게시 일자** 또는 **게시 취소 일자**&#x200B;를 지정합니다.
 
@@ -211,10 +211,8 @@ AEM Forms 사용자 인터페이스를 사용하여 양식 조각에 대해 여�
 
 ## 모범 사례
 
-* 조각 이름이 고유한지 확인하십시오. 동일한 이름의 조각이 이미 있는 경우 조각을 만들 수 없습니다.
-* 독립형 양식 조각의 모든 표현식, 스크립트 또는 스타일은 참조로 삽입되거나 양식에 임베드되어도 유지됩니다.
-* 양식을 게시하면 양식 내에 참조로 삽입된 양식 조각도 자동으로 게시됩니다.
+- 조각 이름이 고유한지 확인하십시오. 동일한 이름의 조각이 이미 있는 경우 조각을 만들 수 없습니다.
+- 독립형 양식 조각의 모든 표현식, 스크립트 또는 스타일은 참조로 삽입되거나 양식에 임베드되어도 유지됩니다.
+- 양식을 게시하면 양식 내에 참조로 삽입된 양식 조각도 자동으로 게시됩니다.
 
-## 추가 참조
 
-{{universal-editor-see-also}}

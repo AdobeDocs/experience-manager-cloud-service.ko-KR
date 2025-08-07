@@ -4,10 +4,10 @@ description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 87%
 
 개별 스프레드시트에서 드롭다운 옵션을 로드하면 다음과 같은 이점이 있습니다.
 
-* 단순화된 관리: 중앙 관리식으로 드롭다운 옵션을 유지하여 업데이트 및 추가를 쉽게 할 수 있습니다.
-* 향상된 효율성: 양식 정의 내에서 긴 옵션 목록을 수동으로 추가할 필요가 없습니다.
+- 단순화된 관리: 중앙 관리식으로 드롭다운 옵션을 유지하여 업데이트 및 추가를 쉽게 할 수 있습니다.
+- 향상된 효율성: 양식 정의 내에서 긴 옵션 목록을 수동으로 추가할 필요가 없습니다.
 
 ![드롭다운 옵션](/help/forms/assets/drop-down-options.png)
 
 
 이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
-* [개별 스프레드시트에서 옵션 정의](#define-options)
-* [드롭다운 목록 옵션을 로드할 URL 추가](#add-url)
+- [개별 스프레드시트에서 옵션 정의](#define-options)
+- [드롭다운 목록 옵션을 로드할 URL 추가](#add-url)
 
 ## 개별 시트에 옵션 정의 {#define-options}
 
@@ -39,8 +39,8 @@ ht-degree: 87%
    1. 새 시트를 추가합니다. 예를 들어 “shared-country”입니다.
 1. 옵션 열 정의:
 “옵션”과 “값”의 두 열을 추가합니다.
-   * “옵션”은 드롭다운 메뉴에 표시되는 텍스트를 정의합니다.
-   * “값”은 사용자가 옵션을 선택할 때 제출된 값을 정의합니다.
+   - “옵션”은 드롭다운 메뉴에 표시되는 텍스트를 정의합니다.
+   - “값”은 사용자가 옵션을 선택할 때 제출된 값을 정의합니다.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ ht-degree: 87%
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 `shared-country` 시트를 미리 보고 게시합니다.
 
-   예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;인 경우 계정 소유자 &quot;wkndform&quot; 아래에 있으며 `shared-country` 시트를 표시하는 URL인 &quot;main&quot; 분기를 사용합니다.
+   예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndform” 계정 아래에서 “main” 분기를 사용하는 경우 `shared-country` 시트를 보여 주는 URL은 다음과 같습니다.
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ ht-degree: 87%
 
 드롭다운 목록 옵션을 로드하기 위해 URL을 양식 정의에 통합한 후 `Destination` 드롭다운이 URL에 표시되기 시작합니다.
 
-예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndform&quot; 아래에 있으며 &quot;main&quot; 분기를 사용하는 경우 아래 URL에는 별도의 시트에 저장된 옵션을 표시하는 `enquiry` 양식이 표시됩니다.
+예를 들어 프로젝트 저장소의 이름이 “wefinance”이고 “wkndform” 계정 아래에서 “main” 분기를 사용하는 경우 아래 URL에 개별 시트에 저장된 옵션을 보여 주는 `enquiry` 양식이 표시됩니다.
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## 추가 참조
-
-{{see-more-forms-eds}}
 
 

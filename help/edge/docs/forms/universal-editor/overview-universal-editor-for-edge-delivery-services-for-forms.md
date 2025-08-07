@@ -4,17 +4,15 @@ description: Forms용 Edge Delivery Services용 범용 편집기를 사용하여
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1012'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '987'
 ht-degree: 100%
 
 ---
 
 
 # Forms용 Edge Delivery Services용 범용 편집기
-
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 범용 편집기는 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공함으로써 Adobe Edge Delivery Services용 양식 만들기에 혁신을 일으켰습니다. 콘텐츠 제작자와 양식 작성자를 위해 설계되었으며, 기존 양식 작성 프로세스의 복잡성을 제거하여 기술 전문가가 아닌 사용자도 쉽게 액세스할 수 있습니다.
 
@@ -54,26 +52,6 @@ ht-degree: 100%
 | reCAPTCHA를 사용하여 자동화된 봇으로부터 양식을 보호하고, 안전하고 신뢰할 수 있는 데이터 수집을 보장합니다. | 범용 편집기의 기본 제공 임베드 구성 요소를 사용하여 Edge Delivery Services Sites 페이지에 양식을 직접 임베드할 수 있습니다. | 양식을 성공적으로 제출한 후 사용자에게 표시되는 승인 메시지 또는 페이지를 간편하게 사용자 정의합니다. |
 
 
-<!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
-
-
-* **Rule editor**: The rule editor stands out as a powerful mechanism for creating sophisticated form interactions. It supports event-driven rules, instant validation, and error handling through lightweight JavaScript and JSON-based definitions. This allows developers to implement complex form logic, such as conditional field visibility, automatic calculations, and dynamic form behaviour without extensive coding.
-
-* **Submit actions**: Submit Actions enable form submission workflows. These actions provide comprehensive backend integration options, supporting protocols like REST API. The system allows you configure data pre-processors for automatic data transformation, conditional submission logic based on form field values, and secure endpoint connections. Organizations can define complex submission rules that validate data, and manage form responses with granular control.
-
-* **Pre-fill services:** Pre-fill Services enhance user experience by intelligently populating form fields with relevant data. These services connect to various data sources, including user profiles, browser local storage, and external databases. The mechanism supports dynamic data population, enabling automatic completion of form fields based on contextual information. Users benefit from reduced manual data entry, while administrators gain flexibility in configuring pre-fill rules across different form types and scenarios. The pre-fill functionality adapts to different authentication methods, including session-based approaches and token-based systems, ensuring both convenience and security.
-
-* **Data binding capabilities**: Data binding in the Universal Editor enables direct, dynamic connections between form fields and backend data sources. This feature allows real-time synchronization of form data, supporting complex data mapping scenarios. The system supports transforming form inputs into structured database records with minimal configuration. Advanced mapping supports nested data structures, allowing complex form designs to interact seamlessly with intricate data models.
-
-* **Internationalization/localization capabilities**: Internationalization support ensures global accessibility, with multi-language rendering, right-to-left language compatibility, and locale-specific formatting.
-
-* **Analytics and tracking mechanisms**: The built-in analytics and tracking mechanisms provide comprehensive insights into form interactions, submission rates, and user behavior, enabling continuous optimization of form design and performance. 
-
-* **Experimentation (A/B Testing)**: The Universal Editor supports experimentation by allowing organizations to run A/B tests on form designs to identify the best-performing layouts or features.
-
-* **Task Management via Adobe Workfront**: Integration with Adobe Workfront allows teams to manage tasks related to form creation and maintenance, ensuring streamlined collaboration and efficient workflows.
-
-* **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
 ## 사전 설치된 양식 구성 요소
 
@@ -180,53 +158,17 @@ ht-degree: 100%
   </tbody>
 </table>
 
-<!-- * Footer: Adds a footer section for consistent design or additional information.
-* Form Container: Wraps all form elements and manages overall form properties.
-* Header: Adds a header section for form titles, branding, or instructions.-->
-<!-- * 
-* Prefillable Fields: Automatically populates form fields with data from predefined sources such as user profiles or APIs. 
-
-* Switches/Toggle Buttons: Provides binary on/off choices for user input.
-
-
-* Title: Adds a text-based heading or label to improve form clarity and organization.
-
-
-In-addtion to pre-built form components, the Universal editor also provides support for:
-
-* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
-
-* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
-    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
-    * Customizable Messages: Allows form authors to define user-friendly error texts.
-    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
-
-* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
-    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
-    * Capturing metadata like timestamps or tracking IDs.
-    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
-
-* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
-    * Flexibility: Developers can design unique form elements tailored to specific use cases.
-    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
-    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
-
-* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
--->
-
 
 ## 온보딩
-
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 ## 자주 묻는 질문 (FAQ)
 
 **Q. 누가 범용 편집기를 사용할 수 있습니까?**
 범용 편집기는 다음을 포함한 광범위한 대상자를 위해 설계되었습니다.
 
-* 시각적으로 매력적인 양식을 작성하고자 하는 콘텐츠 제작자
-* 고급 사용자 정의 및 통합 기능이 필요한 개발자
-* 확장 가능하고 안전하며 규정을 준수하는 양식 솔루션을 원하는 조직
+- 시각적으로 매력적인 양식을 작성하고자 하는 콘텐츠 제작자
+- 고급 사용자 정의 및 통합 기능이 필요한 개발자
+- 확장 가능하고 안전하며 규정을 준수하는 양식 솔루션을 원하는 조직
 
 **Q: 범용 편집기로 만든 양식을 기존 시스템에 통합할 수 있습니까?**
 예. 범용 편집기는 백엔드 시스템과의 원활한 데이터 바인딩을 지원하여 실시간 업데이트와 고급 데이터 매핑을 가능하게 합니다. 작업 관리를 위한 Adobe Workfront와 같은 도구와도 통합되며 데이터 제출 워크플로를 위한 안전한 엔드포인트를 지원합니다.
@@ -241,7 +183,5 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 범용 편집기에는 사용자 상호 작용, 양식 제출률, 전환 지표를 모니터링하는 기본 제공 분석 및 추적 도구가 포함되어 있습니다. 이러한 인사이트는 양식을 최적화하여 더 나은 성과를 얻는 데 도움이 됩니다.
 
 
-## 양식 만들기 시작
 
-{{universal-editor-see-also}}
 

@@ -4,17 +4,14 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 98%
 
 ---
 
 # WYSIWYG 작성 사용자 정의 구성 요소 만들기
-
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
-
 
 Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론트엔드 개발자가 맞춤형 양식 구성 요소를 구축할 수 있도록 합니다. 이러한 사용자 정의 구성 요소는 WYSIWYG 작성 환경에 완벽하게 통합되어 양식 작성자가 양식 편집기 내에서 쉽게 추가, 구성 및 관리할 수 있습니다. 사용자 정의 구성 요소를 통해 작성자는 기능을 향상시키면서 원활하고 직관적인 작성 과정을 보장할 수 있습니다.
 
@@ -24,8 +21,8 @@ Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론�
 
 사용자 정의 구성 요소 만들기를 시작하기 전에 다음과 같은 작업을 수행할 수 있습니다.
 
-* [기본 HTML 구성 요소](/help/edge/docs/forms/form-components.md)에 대한 기본 지식이 있어야 합니다.
-* [CSS 선택기를 사용하여 필드 유형에 따라 양식 필드의 스타일을 지정하는](/help/edge/docs/forms/style-theme-forms.md) 방법 파악
+- [기본 HTML 구성 요소](/help/edge/docs/forms/form-components.md)에 대한 기본 지식이 있어야 합니다.
+- [CSS 선택기를 사용하여 필드 유형에 따라 양식 필드의 스타일을 지정하는](/help/edge/docs/forms/style-theme-forms.md) 방법 파악
 
 ## 사용자 정의 구성 요소 만들기
 
@@ -52,9 +49,9 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
    1. AEM 프로젝트를 열고 `../blocks/form/components/`로 이동합니다.
    1. 사용자 정의 구성 요소를 위한 새 폴더를 `../blocks/form/components/<component_name>`에 추가합니다. 이 예에서는 이름이 `range`인 폴더를 생성합니다.
    1. `../blocks/form/components/<component_name>`에 새로 만든 폴더로 이동합니다. 예를 들어 `../blocks/form/components/range`로 이동하여 다음 파일을 추가합니다.
-      * `/blocks/form/components/range/_range.json`: 사용자 정의 구성 요소의 정의를 포함합니다.
-      * `../blocks/form/components/range/range.css`: 사용자 정의 구성 요소에 대한 스타일을 정의합니다.
-      * `../blocks/form/components/range/range.js`: 런타임에 사용자 정의 구성 요소를 사용자 정의합니다.
+      - `/blocks/form/components/range/_range.json`: 사용자 정의 구성 요소의 정의를 포함합니다.
+      - `../blocks/form/components/range/range.css`: 사용자 정의 구성 요소에 대한 스타일을 정의합니다.
+      - `../blocks/form/components/range/range.js`: 런타임에 사용자 정의 구성 요소를 사용자 정의합니다.
 
         ![작성을 위한 사용자 정의 구성 요소 추가](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
 
    정의를 추가하기 위해 `_range.json` 파일에 추가해야 하는 필드는 다음과 같습니다.
 
-   * **title**: 범용 편집기에 표시되는 구성 요소의 제목입니다.
-   * **id**: 구성 요소의 고유 식별자.
-   * **fieldType**: 양식은 특정 유형의 사용자 입력을 캡처하기 위해 다양한 **fieldType**&#x200B;을 지원합니다. [지원되는 fieldType은 추가 바이트 섹션](#supported-fieldtypes)에서 찾을 수 있습니다.
-   * **resourceType**: 각 사용자 정의 구성 요소는 해당 fieldType에 따라 연결된 리소스 유형을 갖습니다. [지원되는 resourceType은 추가 바이트 섹션](#supported-resourcetype)에서 찾을 수 있습니다.
-   * **jcr:title**: 제목과 유사하지만 구성 요소의 구조 내에 저장됩니다.
-   * **fd:viewType**: 사용자 정의 구성 요소의 이름을 나타냅니다. 이는 구성 요소의 고유 식별자입니다. 구성 요소에 대한 사용자 정의 보기를 만들어야 합니다.
+   - **title**: 범용 편집기에 표시되는 구성 요소의 제목입니다.
+   - **id**: 구성 요소의 고유 식별자.
+   - **fieldType**: 양식은 특정 유형의 사용자 입력을 캡처하기 위해 다양한 **fieldType**&#x200B;을 지원합니다. [지원되는 fieldType은 추가 바이트 섹션](#supported-fieldtypes)에서 찾을 수 있습니다.
+   - **resourceType**: 각 사용자 정의 구성 요소는 해당 fieldType에 따라 연결된 리소스 유형을 갖습니다. [지원되는 resourceType은 추가 바이트 섹션](#supported-resourcetype)에서 찾을 수 있습니다.
+   - **jcr:title**: 제목과 유사하지만 구성 요소의 구조 내에 저장됩니다.
+   - **fd:viewType**: 사용자 정의 구성 요소의 이름을 나타냅니다. 이는 구성 요소의 고유 식별자입니다. 구성 요소에 대한 사용자 정의 보기를 만들어야 합니다.
 
 구성 요소 정의를 추가한 후 `_range.json` 파일은 다음과 같습니다.
 
@@ -118,17 +115,17 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
 
    1. **새 모델 만들기**
 
-      * 모델 배열에서 새 오브젝트를 추가하고 구성 요소 정의에서 이전에 구성된 `fd:viewType`속성과 일치하도록 구성 요소 모델의 `id`를 설정합니다.
-      * 이 오브젝트 내에 필드 배열을 포함합니다.
+      - 모델 배열에서 새 오브젝트를 추가하고 구성 요소 정의에서 이전에 구성된 `fd:viewType`속성과 일치하도록 구성 요소 모델의 `id`를 설정합니다.
+      - 이 오브젝트 내에 필드 배열을 포함합니다.
 
    2. **속성 대화 상자의 필드 정의**
 
-      * 필드 배열의 각 오브젝트는 컨테이너 유형의 구성 요소여야 하며, 이를 통해 **속성** 대화 상자에 탭으로 표시될 수 있습니다.
-      * 일부 필드는 `models/form-common`에서 재사용 가능한 속성을 참조할 수 있습니다.
+      - 필드 배열의 각 오브젝트는 컨테이너 유형의 구성 요소여야 하며, 이를 통해 **속성** 대화 상자에 탭으로 표시될 수 있습니다.
+      - 일부 필드는 `models/form-common`에서 재사용 가능한 속성을 참조할 수 있습니다.
 
    3. **기존 구성 요소 모델을 참조로 사용**
 
-      * 선택한 `fieldType`에 해당하는 기존 구성 요소 모델의 내용을 복사하고 필요에 따라 수정할 수 있습니다. 예를 들어 `number-input` 구성 요소는 확장되어 **범위** 구성 요소를 생성하므로 `models/form-components/_number-input.json`의 모델 배열을 참조로 사용할 수 있습니다.
+      - 선택한 `fieldType`에 해당하는 기존 구성 요소 모델의 내용을 복사하고 필요에 따라 수정할 수 있습니다. 예를 들어 `number-input` 구성 요소는 확장되어 **범위** 구성 요소를 생성하므로 `models/form-components/_number-input.json`의 모델 배열을 참조로 사용할 수 있습니다.
 
    구성 요소 모델을 추가한 후 `_range.json` 파일은 다음과 같습니다.
 
@@ -186,10 +183,10 @@ AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더�
 
 JSON 스니펫은 **범위** 구성 요소에 대해 **Step Value**&#x200B;라는 사용자 정의 속성을 정의합니다. 각 필드의 세부 내용은 다음과 같습니다.
 
-* **component**: 속성 대화 상자에서 사용되는 입력 필드의 유형을 지정합니다. 이 경우 `number`는 해당 필드가 숫자 값을 허용함을 나타냅니다.
-* **name**: 구성 요소의 논리에서 해당 속성을 참조하는 데 사용되는 식별자입니다. 여기에서 `stepValue`는 범위에 대한 단계 값 설정을 나타냅니다.
-* **label**: 속성 대화 상자에 표시되는 속성의 표시 이름입니다.
-* **valueType**: 속성에 필요한 데이터 유형을 정의합니다. `number`는 숫자 입력만 허용됨을 나타냅니다.
+- **component**: 속성 대화 상자에서 사용되는 입력 필드의 유형을 지정합니다. 이 경우 `number`는 해당 필드가 숫자 값을 허용함을 나타냅니다.
+- **name**: 구성 요소의 논리에서 해당 속성을 참조하는 데 사용되는 식별자입니다. 여기에서 `stepValue`는 범위에 대한 단계 값 설정을 나타냅니다.
+- **label**: 속성 대화 상자에 표시되는 속성의 표시 이름입니다.
+- **valueType**: 속성에 필요한 데이터 유형을 정의합니다. `number`는 숫자 입력만 허용됨을 나타냅니다.
 
 이제 `range.js`의 JSON 속성에서 사용자 정의 속성으로 `stepValue`를 사용하여 런타임에 해당 값에 따라 동적 동작을 구현할 수 있습니다.
 
@@ -263,46 +260,48 @@ WYSIWYG에서 양식 작성 중 사용 가능한 구성 요소 목록에 사용�
 1. `id="form"`이 있는 오브젝트 내에서 구성 요소 배열을 찾습니다.
 1. `id="form"`을 사용하여 `definitions[]`의 `fd:viewType` 값을 오브젝트의 구성 요소 배열에 추가합니다.
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![구성 요소 필터](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. 사용자 정의 구성 요소 등록
 
-양식 블록이 양식 작성 중에 사용자 정의 구성 요소를 인식하고 구성 요소 모델에 정의된 속성을 로드할 수 있도록 하려면 구성 요소 정의의 `fd:viewType` 값을 `mappings.js` 파일에 추가합니다.
+양식 블록이 사용자 지정 구성 요소를 인식하고 양식을 작성하는 동안 구성 요소 모델에 정의된 속성을 로드하도록 하려면 구성 요소 정의의 `fd:viewType` 값을 `mappings.js` 파일에 추가하십시오.
+
 구성 요소를 등록하려면 다음 작업을 수행하십시오.
+
 1. `/blocks/form/mappings.js` 파일로 이동합니다.
 1. `customComponents[]` 배열을 찾습니다.
 1. `definitions[]` 배열의 `fd:viewType` 값을 `customComponents[]` 배열에 추가합니다.
@@ -347,7 +346,7 @@ const OOTBComponentDecorators = ['file-input',
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -392,6 +391,7 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
+
    이 코드는 사용자 정의 구성 요소의 스타일링과 시각적 모양을 정의하는 데 도움이 됩니다.
 
 1. 기능을 추가하려면 `/blocks/form/components/range/range.js` 파일로 이동하여 다음 코드 라인을 추가합니다.
@@ -407,7 +407,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -460,18 +460,18 @@ const OOTBComponentDecorators = ['file-input',
 
 ## 자주 묻는 질문
 
-* **component.css와 form.css 모두에 스타일링을 추가하면 어떤 것이 우선시됩니까?**
+- **component.css와 form.css 모두에 스타일링을 추가하면 어떤 것이 우선시됩니까?**
 스타일이 `component.css`와 **forms.css** 모두에서 정의될 때, `component.css`가 우선됩니다. 이는 구성 요소 수준의 스타일이 더 구체적이고 `forms.css`의 글로벌 스타일을 재정의하기 때문입니다.
 
-* **내 사용자 정의 구성 요소가 범용 편집기의 사용 가능한 구성 요소 목록에 표시되지 않습니다. 이를 어떻게 수정할 수 있습니까?**
+- **내 사용자 정의 구성 요소가 범용 편집기의 사용 가능한 구성 요소 목록에 표시되지 않습니다. 이를 어떻게 수정할 수 있습니까?**
 사용자 정의 구성 요소가 나타나지 않는 경우 다음 파일을 확인하여 구성 요소가 올바르게 등록되었는지 확인합니다.
-   * **component-definition.json**: 구성 요소가 올바르게 정의되었는지 확인합니다.
-   * **component-filters.json**: 해당 섹션에서 구성 요소가 허용되는지 확인합니다.
-   * **component-models.json**: 구성 요소 모델이 올바르게 구성되었는지 확인합니다.
+   - **component-definition.json**: 구성 요소가 올바르게 정의되었는지 확인합니다.
+   - **component-filters.json**: 해당 섹션에서 구성 요소가 허용되는지 확인합니다.
+   - **component-models.json**: 구성 요소 모델이 올바르게 구성되었는지 확인합니다.
 
 ## 모범 사례
 
-* 사용자 정의 스타일과 구성 요소를 로컬에서 개발하기 위한 [로컬 AEM 개발 환경을 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)하는 것이 좋습니다.
+- 사용자 정의 스타일과 구성 요소를 로컬에서 개발하기 위한 [로컬 AEM 개발 환경을 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)하는 것이 좋습니다.
 
 
 ## 추가 바이트
@@ -496,19 +496,17 @@ const OOTBComponentDecorators = ['file-input',
 ### 지원되는 fieldTypes
 
 양식에 지원되는 fieldTypes는 다음과 같습니다.
-* text-input
-* number-input
-* date-input
-* 패널
-* 확인란
-* drop-down
-* radio-group
-* plain-text
-* file-input
-* 이메일
-* 이미지
-* 버튼
 
-## 추가 참조
+- text-input
+- number-input
+- date-input
+- 패널
+- 확인란
+- drop-down
+- radio-group
+- plain-text
+- file-input
+- 이메일
+- 이미지
+- 버튼
 
-{{universal-editor-see-also}}

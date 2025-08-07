@@ -4,9 +4,9 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
-workflow-type: ht
-source-wordcount: '1923'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1921'
 ht-degree: 100%
 
 ---
@@ -23,10 +23,10 @@ AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 양�
 
 ## 사전 요구 사항
 
-* GitHub 계정이 있고 Git 기본 사항을 이해하고 있습니다.
-* Google 또는 Microsoft SharePoint 계정이 있습니다.
-* HTML, CSS 및 JavaScript의 기본 사항을 이해합니다.
-* 로컬 개발을 위해 Node/npm이 설치되어 있습니다.
+- GitHub 계정이 있고 Git 기본 사항을 이해하고 있습니다.
+- Google 또는 Microsoft SharePoint 계정이 있습니다.
+- HTML, CSS 및 JavaScript의 기본 사항을 이해합니다.
+- 로컬 개발을 위해 Node/npm이 설치되어 있습니다.
 
 **주의!** 이 튜토리얼에서는 macOS, Chrome 및 Visual Studio Code를 사용합니다. 단계는 다른 설정에 맞게 조정할 수 있지만 스크린샷과 특정 UI 요소는 선택한 운영 체제, 브라우저 및 코드 편집기에 따라 다를 수 있습니다.
 
@@ -63,9 +63,9 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
    축하합니다! `https://<branch>--<repo>--<owner>.aem.page/`에서 새 웹 사이트가 실행되고 있습니다.
 
-   * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
-   * `<repository>`는 GitHub 저장소를 나타냅니다.
-   * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
+   - `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
+   - `<repository>`는 GitHub 저장소를 나타냅니다.
+   - `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
    예를 들어 분기 이름이 `main`이고 저장소가 `wefinance`이며 소유자가 `wkndforms`인 경우 웹 사이트는 `https://main--wefinance--wkndforms.aem.page`에서 실행됩니다.
 &lt;!--(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
-   * `<repository>`는 GitHub 저장소를 나타냅니다.
-   * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
+   - `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
+   - `<repository>`는 GitHub 저장소를 나타냅니다.
+   - `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
@@ -281,9 +281,9 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 1. [AEM Forms 보일러플레이트](https://github.com/adobe-rnd/aem-boilerplate-forms)에서 다음 폴더와 파일을 복사하여 AEM 프로젝트에 붙여넣습니다.
 
-   * [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
+   - [양식 블록](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 폴더
+   - [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 파일
+   - [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 파일
 1. AEM 프로젝트의 `/scripts/editor-support.js` 파일로 이동하여 [AEM Forms 상용구의 editor-support.js 파일](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)로 업데이트합니다.
 1. AEM 프로젝트에서 `/models/_section.json`으로 이동하여 `filters` 오브젝트의 구성 요소 배열에 “form”과 “embed-adaptive-form”을 추가합니다.
 
@@ -363,13 +363,9 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 
 잠재적인 문제를 해결하면 GitHub 빌드 프로세스를 원활하게 할 수 있습니다.
 
-* **모듈 경로 오류 해결:**
+- **모듈 경로 오류 해결:**
 “모듈 “scripts/lib-franklin.js”에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
-* **린팅 오류 처리**:
+- **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 열고 “lint” 스크립트를 `"lint": "npm run lint:js && npm run lint:css"`에서 `"lint": "echo 'skipping linting for now'"`로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
 
-
-## 추가 참조
-
-{{see-more-forms-eds}}

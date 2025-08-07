@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,12 +21,12 @@ Edge Delivery Services에서 양식 번역에는 정확성, 명확성 및 일관
 
 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
-* [Google Drive 내 양식 번역](#translate-form-google-drive)
-* [SharePoint Site 내 양식 번역](#translate-form-sharepoint)
+- [Google Drive 내 양식 번역](#translate-form-google-drive)
+- [SharePoint Site 내 양식 번역](#translate-form-sharepoint)
 
 ## Google Drive 내 양식 번역 {#translate-form-google-drive}
 
-Google 시트의 `GOOGLETRANSLATE` 함수는 내장된 번역 도구를 활용하여 양식을 번역하고 Google 시트 내에서 텍스트를 한 언어에서 다른 언어로 직접 변경합니다. Google Drive 내 양식을 번역하는 방법:
+Google 시트의 `GOOGLETRANSLATE` 함수는 기본 제공 번역 도구를 활용하여 양식을 번역하고 Google 시트 내에서 텍스트를 한 언어에서 다른 언어로 직접 변경합니다. Google Drive 내 양식을 번역하는 방법:
 
 1. Google Drive의 AEM 프로젝트 폴더로 이동하여 Google 시트를 엽니다.
 2. 기존 시트(`shared-default`)의 이름을 `shared-en`으로 바꿉니다.
@@ -68,11 +68,11 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## 알려진 문제 {#known-issues}
 
-* 양식 레이블은 `shared-default` 시트에 지정된 현지화된 언어로 번역되지만, 오류 메시지는 브라우저의 기본 언어로 표시됩니다.
+- 양식 레이블은 `shared-default` 시트에 지정된 현지화된 언어로 번역되지만, 오류 메시지는 브라우저의 기본 언어로 표시됩니다.
 
   ![오류 메시지](/help/forms/assets/translate-error-message.png)
 
-* 캘린더를 열면 캘린더 드롭다운이 브라우저의 기본 언어로 표시됩니다.
+- 캘린더를 열면 캘린더 드롭다운이 브라우저의 기본 언어로 표시됩니다.
 
   ![오류 메시지](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **A**: 현지화된 특정 언어로 텍스트를 입력하려면 디바이스의 키보드 설정을 조정합니다. 수행 방법에 대한 지침은 다음 링크를 참조하십시오.
 
-* [다른 언어로 입력하도록 Mac 설정](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [다른 언어로 입력하도록 Windows 설정](https://support.microsoft.com/ko/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [다른 언어로 입력하도록 Android 또는 iPhone/iPad 설정](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+- [다른 언어로 입력하도록 Mac 설정](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [다른 언어로 입력하도록 Windows 설정](https://support.microsoft.com/ko/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [다른 언어로 입력하도록 Android 또는 iPhone/iPad 설정](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **Q**: `GOOGLETRANSLATE` 함수에 사용된 로케일 목록을 어떻게 검색할 수 있습니까?
 
 **A**: GOOGLETRANSLATE에서 사용되는 전체 로케일 목록은 [Google 공식 문서](https://cloud.google.com/translate/docs/languages)를 참조하십시오.
 
-## 추가 참조
-
-{{see-more-forms-eds}}
 

@@ -4,20 +4,20 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '871'
+ht-degree: 100%
 
 ---
 
 # Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작
 
 
-[양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다. 다음을 수행할 수 있습니다.
+[양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-* [데이터를 수락하도록 스프레드시트를 수동으로 활성화](#manually-enable-the-spreadsheet-to-accept-data)
-* [Admin API를 사용하여 스프레드시트에서 데이터를 허용하도록 설정](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+- [데이터를 수신하도록 스프레드시트를 수동으로 활성화](#manually-enable-the-spreadsheet-to-accept-data)
+- [Admin API를 사용하여 스프레드시트에서 데이터를 허용하도록 설정](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -42,7 +42,7 @@ ht-degree: 97%
 
 1. 테이블 이름을 “intake_form”으로 변경합니다. Microsoft Excel에서 테이블 이름을 변경하려면 테이블을 선택하고 테이블 디자인을 클릭합니다.
 
-1. 다음으로 양식 필드 이름을 테이블 헤더로 추가합니다. 필드가 정확히 동일한지 확인하려면 ”shared-aem“ 시트에서 필드를 복사하여 붙여넣으면 됩니다. “shared-aem” 시트에서 제출 필드를 제외하고 “이름” 열 아래에 나열된 양식 ID를 선택하고 복사합니다.
+1. 다음으로 양식 필드 이름을 테이블 헤더로 추가합니다. 필드가 정확히 동일한지 확인하려면 “shared-aem” 시트에서 필드를 복사하여 붙여넣으면 됩니다. “shared-aem” 시트에서 제출 필드를 제외하고 “이름” 열 아래에 나열된 양식 ID를 선택하고 복사합니다.
 
 1. “incoming” 시트에서 선택하여 붙여넣기 > 행을 열로 바꾸기를 선택하여 필드 ID를 이 새 시트의 열 헤더로 복사합니다. 데이터를 캡처해야 하는 필드만 유지합니다. 다른 필드는 무시할 수 있습니다.
 
@@ -154,7 +154,7 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
 
    이제 양식이 데이터를 수신할 수 있습니다. 또한 스프레드시트에서 다음과 같은 변경 내용을 확인할 수 있습니다.
 
-## 데이터를 수락하도록 활성화되면 시트가 자동으로 변경됩니다.
+## 데이터를 수신하도록 활성화된 후 자동 변경 사항
 
 시트가 데이터를 수신하도록 설정되면 스프레드시트에서 다음과 같은 변경 사항을 확인할 수 있습니다.
 
@@ -174,138 +174,5 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
 
 
 
-<!--
-## Send data to your sheet {#send-data-to-your-sheet}
-
-After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
-
-### Use Admin APIs to send data to your sheet
-
-You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
-
-
-```JSON
-
-POST https://branch–repo–owner.aem.(page|live)/email-form
-POST https://my-domain.com/email-form
-
-```
-
->[!NOTE] 
->
-> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
-
-#### Formatting the form data
-
-There are a few different ways that you can format the form data in the POST body. You can use: 
-
-* array of `name:value` pairs: 
-    
-    ```JSON
-    
-    {
-      "data": [
-        { "name": "name", "value": "Clark Kent" },
-        { "name": "email", "value": "superman@example.com" },
-        { "name": "subject", "value": "Regarding Product Inquiry" },
-        { "name": "message", "value": "I have some questions about your products." },
-        { "name": "phone", "value": "123-456-7890" },
-        { "name": "company", "value": "Example Inc." },
-        { "name": "country", "value": "United States" },
-        { "name": "preferred_contact_method", "value": "Email" },
-        { "name": "newsletter_subscribe", "value": true }
-      ]
-    }
-
-    ```
-
-    For example
-
-    ```JSON
-
-    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
-        --header 'Content-Type: application/json' \
-        --data '{
-        "data": [
-            { "name": "name", "value": "Clark Kent" },
-            { "name": "email", "value": "superman@example.com" },
-            { "name": "subject", "value": "Regarding Product Inquiry" },
-            { "name": "message", "value": "I have some questions about your        products." },
-            { "name": "phone", "value": "123-456-7890" },
-            { "name": "company", "value": "Example Inc." },
-            { "name": "country", "value": "United States" },
-            { "name": "preferred_contact_method", "value": "Email" },
-            { "name": "newsletter_subscribe", "value": true }
-        ]
-    }'
-
-    ```
-
-
-
-* an object with `key:value` pairs:
-
-    ```JSON
-
-        {
-          "data": {
-            "name": "Jessica Jones",
-            "email": "jj@example.com",
-            "subject": "Regarding Product Inquiry",
-            "message": "I have some questions about your products.",
-            "phone": "123-456-7890",
-            "company": "Example Inc.",
-            "country": "United States",
-            "preferred_contact_method": "Email",
-            "newsletter_subscribe": true
-          }
-        }
-
-    ```
-
-    For example,
-
-    ```JSON
-
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "khushwant@wknd.com",
-            "Name": "khushwant",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
-
-* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
-
-    ```Shell
-
-    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-
-    ```
-
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
-
-    ```Shell
-
-    curl -s -i -X POST \
-      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--wefinance--wkndform.aem.live/contact-us
-
-    ```
--->
-
 다음으로, [감사 메시지를 사용자 정의](/help/edge/docs/forms/thank-you-page-form.md)할 수 있습니다.
 
-## 추가 참조
-
-{{see-more-forms-eds}}

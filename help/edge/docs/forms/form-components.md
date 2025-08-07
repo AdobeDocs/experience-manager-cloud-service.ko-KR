@@ -4,9 +4,9 @@ description: 이 문서는 AEM Forms용 Edge Delivery Services에서 사용 가�
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ AEM Forms용 Edge Delivery Services를 사용하면 다양한 구성 요소를 �
 
 ### 입력 필드
 
-* 유효한 모든 HTML5 [입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) 및 [텍스트 영역](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). 예: 버튼, 확인란, 색상, 날짜, 날짜/시간-로컬, 이메일, 파일, 숨김, 이미지, 시간(월), 숫자, 암호, 라디오, 범위, 재설정, 제출, 전화, 텍스트, 시간, URL 및 시간(주) 등.
+- 유효한 모든 HTML5 [입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) 및 [텍스트 영역](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). 예: 버튼, 확인란, 색상, 날짜, 날짜/시간-로컬, 이메일, 파일, 숨김, 이미지, 시간(월), 숫자, 암호, 라디오, 범위, 재설정, 제출, 전화, 텍스트, 시간, URL 및 시간(주) 등.
 
 ### 선택 사항 컨트롤
 
-* [확인란 그룹](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): 여러 옵션을 선택하는 데 사용.
-* [라디오 그룹](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): 그룹에서 단일 옵션을 선택하는 데 사용.
-* [드롭다운 메뉴](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): 옵션 메뉴를 표시하려는 경우. 예를 들어 드롭다운 상자입니다.
+- [확인란 그룹](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): 여러 옵션을 선택하는 데 사용.
+- [라디오 그룹](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): 그룹에서 단일 옵션을 선택하는 데 사용.
+- [드롭다운 메뉴](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): 옵션 메뉴를 표시하려는 경우. 예를 들어 드롭다운 상자입니다.
 
 ### 컨테이너
 
-* 패널/컨테이너: 효율적인 구성을 위해 관련 양식 요소를 그룹화합니다. [Fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)와 [범례](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)의 조합입니다.
+- 패널/컨테이너: 효율적인 구성을 위해 관련 양식 요소를 그룹화합니다. [Fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)와 [범례](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)의 조합입니다.
 
 
 ## 구성 요소 속성
@@ -64,8 +64,3 @@ AEM Forms용 Edge Delivery Services를 사용하면 다양한 구성 요소를 �
 | 반복 가능 | 모두 | 특정 필드 세트를 지정된 `Min` 및 `Max` 횟수만큼 반복할 수 있음을 나타내는 `fieldset` 부울 속성입니다. `Min` 속성은 1 이상으로 설정해야 하며, `Min` 속성은 0으로 설정하지 마십시오. |
 | 표시 표현식 | 모두 | 표시 표현식은 필드의 가시성을 제어하는 데 사용되는 스프레드시트 공식을 가리키며 ‘=’ 태그로 표시됩니다. 이 공식에서는 다른 필드의 값 속성만 사용할 수 있으므로 시스템 내에서 필드 가시성을 직접 관리할 수 있습니다. |
 | 값 표현식 | 모두 | 값 표현식은 필드 값을 제어하는 데 사용되는 스프레드시트 공식을 가리키며 ‘=’ 태그로 표시됩니다. 이 공식에서는 다른 필드의 값 속성만 사용할 수 있으므로 시스템 내에서 필드 값을 직접 관리할 수 있습니다. |
-
-
-## 추가 참조
-
-{{see-more-forms-eds}}

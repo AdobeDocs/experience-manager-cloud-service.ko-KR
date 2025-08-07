@@ -4,8 +4,8 @@ description: AEM Forms용 Edge Delivery Services는 최고의 성능을 발휘�
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
 
@@ -21,16 +21,16 @@ ht-degree: 100%
 
 규칙은 다양한 상황에서 무엇을 해야 하는지 알려 주는 지침과 같습니다. 규칙은 일반적으로 다음과 같은 구성됩니다.
 
-* 조건: 규칙이 적용되는 상황을 지정합니다. 대답이 필요한 질문(예 또는 아니요)으로 생각합니다.
+- 조건: 규칙이 적용되는 상황을 지정합니다. 대답이 필요한 질문(예 또는 아니요)으로 생각합니다.
 
-* 액션: 조건이 충족되거나(true) 충족되지 않을 때(false) 발생하는 액션을 정의합니다.
+- 액션: 조건이 충족되거나(true) 충족되지 않을 때(false) 발생하는 액션을 정의합니다.
 
 
 예를 들어 확인란을 선택하면 이메일 상자를 표시할 수 있습니다.
 
-* 조건: “잡지 및 활동을 구독하시겠습니까?” 확인란이 선택됩니다. (예 또는 아니요?). 이 조건은 양식의 `Visible` 속성에서 설정됩니다.
-* 액션(True): 이메일 상자가 표시됩니다. (예를 선택하면 어떻게 됩니까?). `Visibility Expression`은 `visible` 속성에 대해 정의된 조건을 사용하여 필드를 동적으로 표시합니다.
-* 액션(False): 이메일 상자가 숨겨집니다. (아니요를 선택하면 어떻게 됩니까?). `Visibility Expression`은 `Value`에 대해 정의된 조건을 사용하여 필드를 동적으로 숨깁니다.
+- 조건: “잡지 및 활동을 구독하시겠습니까?” 확인란이 선택됩니다. (예 또는 아니요?). 이 조건은 양식의 `Visible` 속성에서 설정됩니다.
+- 액션(True): 이메일 상자가 표시됩니다. (예를 선택하면 어떻게 됩니까?). `Visibility Expression`은 `visible` 속성에 대해 정의된 조건을 사용하여 필드를 동적으로 표시합니다.
+- 액션(False): 이메일 상자가 숨겨집니다. (아니요를 선택하면 어떻게 됩니까?). `Visibility Expression`은 `Value`에 대해 정의된 조건을 사용하여 필드를 동적으로 숨깁니다.
 
 자세한 단계별 지침은 [조건에 따라 이메일 표시/숨기기](#example-1-conditional-email-field) 필드를 참조하십시오
 
@@ -41,8 +41,8 @@ ht-degree: 100%
 
 양식 필드에 대한 조명 스위치를 상상해 보십시오. `Visible` 속성은 스위치와 같아서 필드가 처음 로드될 때 양식에 처음 표시 여부를 제어합니다.
 
-* True(조명 스위치가 “켜진 상태”): 필드가 양식에 표시됩니다.
-* False(조명 스위치가 “꺼진 상태”): 필드가 양식에서 숨겨집니다.
+- True(조명 스위치가 “켜진 상태”): 필드가 양식에 표시됩니다.
+- False(조명 스위치가 “꺼진 상태”): 필드가 양식에서 숨겨집니다.
 
 스프레드시트 공식(= 태그 포함)을 사용하면 스프레드시트와 같은 논리를 사용하여 공식을 작성하고 필드의 가시성을 결정할 수 있습니다. 이 공식 내에서 양식의 다른 필드 값을 사용할 수 있습니다. 예를 들어 사용자가 등록 유형 필드에서 “개인 사용자”를 선택하면 해당 값을 확인하는 공식을 사용하여 이메일 필드를 숨길 수 있습니다.
 
@@ -73,10 +73,10 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
 다음은 이러한 개념을 강화하기 위한 유사점입니다.
 
-* 표시: 집과 같은 양식을 상상해 보십시오. “표시” 속성은 각 방(필드)의 조명 스위치와 같습니다. 누군가가 집에 들어왔을 때(양식을 열 때) 처음에 방 조명이 켜져 있는지(표시) 꺼져 있는지(숨김) 여부를 결정합니다.
-* 표시 표현식: 이것은 동작 센서 조명 스위치와 같습니다. 방(필드)이 처음에는 어두울 수 있지만(숨김) 누군가가 지나가면(다른 필드의 값을 변경하면) 공식(동작 센서)을 방 조명(필드 표시)을 켤 수 있습니다.
-* 값: 조명(필드의 초기 데이터)에 대해 미리 설정된 조광기 스위치와 같습니다. 그런 다음 사용자는 명도를 조정(값 수정)할 수 있습니다.
-* 값 표현식: 집(양식)에 있는 제품의 가격표에 내장된 고급 계산기와 같습니다. 가격표(필드)에는 기준 가격(다른 필드의 값)처럼 그 밖의 정보를 사용하는 공식(예: 기준 가격에 세금을 추가하는 것)을 기반으로 최종 가격이 표시됩니다.
+- 표시: 집과 같은 양식을 상상해 보십시오. “표시” 속성은 각 방(필드)의 조명 스위치와 같습니다. 누군가가 집에 들어왔을 때(양식을 열 때) 처음에 방 조명이 켜져 있는지(표시) 꺼져 있는지(숨김) 여부를 결정합니다.
+- 표시 표현식: 이것은 동작 센서 조명 스위치와 같습니다. 방(필드)이 처음에는 어두울 수 있지만(숨김) 누군가가 지나가면(다른 필드의 값을 변경하면) 공식(동작 센서)을 방 조명(필드 표시)을 켤 수 있습니다.
+- 값: 조명(필드의 초기 데이터)에 대해 미리 설정된 조광기 스위치와 같습니다. 그런 다음 사용자는 명도를 조정(값 수정)할 수 있습니다.
+- 값 표현식: 집(양식)에 있는 제품의 가격표에 내장된 고급 계산기와 같습니다. 가격표(필드)에는 기준 가격(다른 필드의 값)처럼 그 밖의 정보를 사용하는 공식(예: 기준 가격에 세금을 추가하는 것)을 기반으로 최종 가격이 표시됩니다.
 
 이러한 속성을 [스프레드시트 기능](#spreadsheet-functions-for-rules)과 결합하면 양식 내에서 다양한 동적 비헤이비어를 달성할 수 있습니다.
 
@@ -86,19 +86,19 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
 ### 논리 함수
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): 논리 상태를 반전합니다(TRUE는 FALSE가 되고 그 반대도 됩니다).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): 지정한 모든 조건이 TRUE인 경우에만 TRUE를 반환합니다.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): 지정한 조건 중 하나 이상이 TRUE이면 TRUE를 반환합니다.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): 논리 상태를 반전합니다(TRUE는 FALSE가 되고 그 반대도 됩니다).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): 지정한 모든 조건이 TRUE인 경우에만 TRUE를 반환합니다.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): 지정한 조건 중 하나 이상이 TRUE이면 TRUE를 반환합니다.
 
 ### 조건부 함수
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): 조건을 평가하고 TRUE인 경우 특정 값을 반환하고 FALSE인 경우 다른 값을 반환합니다.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): 조건을 평가하고 TRUE인 경우 특정 값을 반환하고 FALSE인 경우 다른 값을 반환합니다.
 
 ### 수학 함수
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): 지정된 셀 범위의 값을 추가합니다.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): 숫자를 특정 소수 자릿수로 반올림합니다.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): 지정된 셀 범위에서 가장 작은 값을 반환합니다.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): 지정된 셀 범위의 값을 추가합니다.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): 숫자를 특정 소수 자릿수로 반올림합니다.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): 지정된 셀 범위에서 가장 작은 값을 반환합니다.
 
 ## 규칙 만들기
 
@@ -156,7 +156,7 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
 **논리 함수:**
 
-* **NOT():** 논리적 상태를 반전합니다(TRUE는 FALSE가 되고 그 반대도 됩니다).
+- **NOT():** 논리적 상태를 반전합니다(TRUE는 FALSE가 되고 그 반대도 됩니다).
 
   예: 이메일 필드가 비어 있으면 “이메일 확인” 필드 숨기기.
 
@@ -170,9 +170,9 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
       ![AEM Forms 표시 표현식 공식](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): 지정한 모든 조건이 TRUE인 경우에만 TRUE를 반환합니다.
+- AND(): 지정한 모든 조건이 TRUE인 경우에만 TRUE를 반환합니다.
 
-   * 예: 모든 필수 필드가 입력된 경우에만 “제출” 버튼 활성화.
+   - 예: 모든 필수 필드가 입력된 경우에만 “제출” 버튼 활성화.
 
    1. “제출” 버튼의 `Visible` 속성을 다음과 같이 설정합니다.
 
@@ -202,9 +202,9 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
       이 공식은 모든 필드(이름, 이메일, 전화번호)가 채워진 경우에만 “제출” 버튼(TRUE)을 표시하고(NOT()은 각 필드에 대해 TRUE를 반환), 그렇지 않으면 버튼(AND(다수 FALSES) = FALSE)을 숨깁니다.
 
-* OR(): 지정한 조건 중 하나 이상이 TRUE이면 TRUE를 반환합니다.
+- OR(): 지정한 조건 중 하나 이상이 TRUE이면 TRUE를 반환합니다.
 
-   * 예: 사용자가 해당 할인 쿠폰 코드 중 하나를 입력하면 할인 적용.
+   - 예: 사용자가 해당 할인 쿠폰 코드 중 하나를 입력하면 할인 적용.
 
    1. “최종 금액” 필드의 `Visible` 속성을 다음과 같이 설정합니다.
 
@@ -229,9 +229,9 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
 **텍스트 함수:**
 
-* IF(): 조건을 평가하고 TRUE인 경우 특정 값을 반환하고 FALSE인 경우 다른 값을 반환합니다.
+- IF(): 조건을 평가하고 TRUE인 경우 특정 값을 반환하고 FALSE인 경우 다른 값을 반환합니다.
 
-   * 예: 선택한 제품 카테고리에 따라 사용자 정의 메시지 표시.
+   - 예: 선택한 제품 카테고리에 따라 사용자 정의 메시지 표시.
 
    1. `message` 필드의 `Value` 속성을 `Only upto 7 kg check-in lagguage is allowed!`로 설정합니다.
 
@@ -264,7 +264,7 @@ Excel 수식(= 태그 포함)을 사용하면 스프레드시트와 같은 논�
 
 **수학 함수:**
 
-* SUM(): 지정된 셀 범위의 값을 추가합니다.
+- SUM(): 지정된 셀 범위의 값을 추가합니다.
 
   예: 장바구니에 담긴 물품의 총 비용 계산.
 
@@ -273,7 +273,7 @@ SUM(가격 * 수량)
 
   이 공식은 각 항목의 “가격”과 “수량”에 대한 별도의 필드가 있다고 가정합니다. 이를 곱하고 SUM()을 사용하여 장바구니에 있는 모든 물품의 총 비용을 합산합니다.
 
-* ROUND(): 숫자를 특정 소수 자릿수로 반올림합니다.
+- ROUND(): 숫자를 특정 소수 자릿수로 반올림합니다.
 
   예: 계산된 할인 금액을 소수점 두 자리로 반올림.
 
@@ -282,7 +282,7 @@ ROUND(discount, 2)
 
   이 공식은 할인 값을 소수점 두 자리로 반올림합니다.
 
-* MIN(): 지정된 셀 범위에서 가장 작은 값을 반환합니다.
+- MIN(): 지정된 셀 범위에서 가장 작은 값을 반환합니다.
 
   예: 선택한 국가를 기준으로 가입 양식에 필요한 최소 연령 찾기.
 
@@ -304,9 +304,9 @@ MIN(ageLimits[“US”], ageLimits[“UK”], ageLimits[“France”])
 
 사용자 정의 함수는 `[Adaptive form block]/functions.js` 파일에 있습니다. 만들기 프로세스에는 일반적으로 다음 단계가 포함됩니다.
 
-* 함수 선언: 함수 이름과 함수의 매개변수(허용되는 입력)를 정의합니다.
-* 논리 구현: 함수에 의해 수행되는 특정 계산이나 조작을 개략적으로 설명하는 코드를 작성합니다.
-* 함수 내보내기: 해당 파일에서 함수를 내보내 규칙에서 액세스할 수 있도록 합니다.
+- 함수 선언: 함수 이름과 함수의 매개변수(허용되는 입력)를 정의합니다.
+- 논리 구현: 함수에 의해 수행되는 특정 계산이나 조작을 개략적으로 설명하는 코드를 작성합니다.
+- 함수 내보내기: 해당 파일에서 함수를 내보내 규칙에서 액세스할 수 있도록 합니다.
 
 ### 예: 연도 함수
 
@@ -315,9 +315,9 @@ MIN(ageLimits[“US”], ageLimits[“UK”], ageLimits[“France”])
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

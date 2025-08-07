@@ -1,18 +1,18 @@
 ---
 title: XFA 양식 템플릿을 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식을 만드는 방법
-description: ' [!DNL Experience Manager Forms] XFA 양식 템플릿 또는 XDP 파일을 사용하여 적응형 양식을 만드는 방법을 알아봅니다. '
+description: ' [!DNL Experience Manager Forms] XFA 양식 템플릿 또는 XDP 파일을 사용하여 적응형 양식을 만드는 방법을 알아봅니다.'
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 12%
+source-wordcount: '711'
+ht-degree: 16%
 
 ---
 
-
-# XFA 양식 템플릿을 기반으로 적응형 양식(핵심 구성 요소) 만들기
+# XFA Forms 템플릿 기반 적응형 양식(핵심 구성 요소) 만들기
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
@@ -29,7 +29,7 @@ XFA 양식 템플릿 또는 XDP 파일을 기반으로 양식을 만들 때 얻�
 * **향상된 사용자 환경**: 적응형 Forms은 XFA 양식보다 더 반응적이고 사용자 정의가 가능합니다. 적응형 Forms으로 전환하면 다양한 디바이스와 화면 크기에서 보다 사용자 친화적인 경험을 할 수 있습니다.
 * **향상된 통합**: 적응형 Forms은 워크플로우, 데이터 바인딩 및 양식 제출과 같은 다른 기능과 더 잘 통합되므로 더 원활한 워크플로우와 더 나은 전체 양식 관리를 가능하게 합니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 XFA 양식 템플릿 또는 XDP 파일을 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
@@ -43,7 +43,7 @@ XFA 양식 템플릿 또는 XDP 파일을 사용하여 핵심 구성 요소를 �
 XFA 또는 XDP 양식 템플릿을 사용하여 적응형 양식을 만들려면 다음 단계를 수행하십시오.
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다.
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
 
    ![Forms 및 문서](/help/forms/assets/create-fdm.png)
 
@@ -62,7 +62,7 @@ XFA 또는 XDP 양식 템플릿을 사용하여 적응형 양식을 만들려면
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 저장할 제목, 이름 및 위치를 지정하는 대화 상자가 나타납니다.
 1. 제목, 이름 및 위치를 지정합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 만들기]**를 선택합니다.
    ![이름 및 제목 제공](/help/forms/assets/create-form.png)
 
    적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 템플릿에서 사용할 수 있는 콘텐츠가 편집기에 표시됩니다.
@@ -93,7 +93,3 @@ XFA 또는 XDP 양식 템플릿을 사용하여 적응형 양식을 만들려면
 >
 > 추가된 필드의 패널 도구 모음을 사용하여 XDP 양식 필드에 대한 스크립트를 비활성화할 수 있습니다. [시각적 규칙 편집기](/help/forms/rule-editor-core-components.md)를 사용하여 추가된 필드에 대한 논리를 만듭니다.
 
-## 추가 참조
-
-{{see-also}}
-* [규칙 편집기를 사용하여 양식에 동적 동작 추가](/help/forms/rule-editor-core-components.md)

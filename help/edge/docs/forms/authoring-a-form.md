@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM은 인터랙티브하고 매력적인 양식을 만들기 위한 다양한 �
 
 AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적합한 여러 가지 작성 방법을 지원합니다.
 
-* [기초 구성 요소](/help/forms/create-adaptive-form-tutorial.md): 기초 구성 요소를 사용하여 기존의 대화형 양식을 작성할 수 있습니다. 기존 시스템과 통합되거나 오래된 워크플로에 의존하는 양식에 가장 적합합니다. 기초 구성 요소를 사용하여 작성된 양식은 AEM에만 게시할 수 있으며 Edge Delivery Services와 호환되지 않습니다.
+- [기초 구성 요소](/help/forms/create-adaptive-form-tutorial.md): 기초 구성 요소를 사용하여 기존의 대화형 양식을 작성할 수 있습니다. 기존 시스템과 통합되거나 오래된 워크플로에 의존하는 양식에 가장 적합합니다. 기초 구성 요소를 사용하여 작성된 양식은 AEM에만 게시할 수 있으며 Edge Delivery Services와 호환되지 않습니다.
 
-* [핵심 구성 요소](/help/forms/creating-adaptive-form-core-components.md): 핵심 구성 요소를 사용하여 현대적이고 반응성이 뛰어나며 확장 가능한 양식을 만들 수 있습니다. 핵심 구성 요소는 재사용 가능하고, 접근성이 뛰어나며, 더 나은 성능을 지원합니다. 핵심 구성 요소를 사용하여 작성된 양식은 AEM과 Edge Delivery Services 모두에 게시할 수 있으므로 플랫폼 전반에 걸쳐 유연성을 제공합니다.
+- [핵심 구성 요소](/help/forms/creating-adaptive-form-core-components.md): 핵심 구성 요소를 사용하여 현대적이고 반응성이 뛰어나며 확장 가능한 양식을 만들 수 있습니다. 핵심 구성 요소는 재사용 가능하고, 접근성이 뛰어나며, 더 나은 성능을 지원합니다. 핵심 구성 요소를 사용하여 작성된 양식은 AEM과 Edge Delivery Services 모두에 게시할 수 있으므로 플랫폼 전반에 걸쳐 유연성을 제공합니다.
 
-* [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md): Edge Delivery Services 양식은 양식 작성, 실행 및 처리 방식을 변화시킵니다. 조직은 Edge Delivery Services를 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 만들 수 있으며, 빠른 개발 환경을 통해 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. Edge Delivery Services 양식은 두 가지 방법으로 작성할 수 있습니다.
-   * [WYSIWYG 작성](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 제한된 기술적 지식이 있는 콘텐츠 작성자의 경우 Universal Editor를 사용하여 시각적 드래그 앤 드롭 방식으로 양식을 작성할 수 있습니다. Universal Editor를 사용하여 작성된 양식은 빠르고 가벼운 렌더링을 위해 Edge Delivery Services를 통해 게재됩니다.
-   * [문서 기반 작성](/help/edge/docs/forms/tutorial.md): Microsoft Excel 또는 Google Sheets와 같은 도구를 사용하여 양식 구조와 내용을 정의합니다. 이 방법은 스프레드시트 기반 입력을 선호하는 비즈니스 사용자에게 유용합니다. 이러한 양식은 일반적으로 Edge Delivery Services를 통해 게시되며, 가벼운 고용량 사용 사례에 적합합니다.
-* [Headless 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): AEM에 의존하지 않고 API를 사용하여 React, Angular, 모바일 앱, 키오스크 등 모든 프론트엔드에서 양식을 JSON으로 렌더링합니다. 현재는 핵심 구성 요소만 Headless 게재를 지원합니다. Headless 양식은 옴니채널 사용 사례에 적합하며 AEM의 페이지 렌더링과 독립적으로 사용되므로 사용자 정의 프론트엔드 배포에 유연하게 사용할 수 있습니다.
+- [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md): Edge Delivery Services 양식은 양식 작성, 실행 및 처리 방식을 변화시킵니다. 조직은 Edge Delivery Services를 활용하여 빠르고 안전하며 가용성이 높은 디지털 양식을 만들 수 있으며, 빠른 개발 환경을 통해 사용자 경험과 운영 효율성을 향상시킬 수 있습니다. Edge Delivery Services 양식은 두 가지 방법으로 작성할 수 있습니다.
+   - [WYSIWYG 작성](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): 제한된 기술적 지식이 있는 콘텐츠 작성자의 경우 Universal Editor를 사용하여 시각적 드래그 앤 드롭 방식으로 양식을 작성할 수 있습니다. Universal Editor를 사용하여 작성된 양식은 빠르고 가벼운 렌더링을 위해 Edge Delivery Services를 통해 게재됩니다.
+   - [문서 기반 작성](/help/edge/docs/forms/tutorial.md): Microsoft Excel 또는 Google Sheets와 같은 도구를 사용하여 양식 구조와 내용을 정의합니다. 이 방법은 스프레드시트 기반 입력을 선호하는 비즈니스 사용자에게 유용합니다. 이러한 양식은 일반적으로 Edge Delivery Services를 통해 게시되며, 가벼운 고용량 사용 사례에 적합합니다.
+- [Headless 작성](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): AEM에 의존하지 않고 API를 사용하여 React, Angular, 모바일 앱, 키오스크 등 모든 프론트엔드에서 양식을 JSON으로 렌더링합니다. 현재는 핵심 구성 요소만 Headless 게재를 지원합니다. Headless 양식은 옴니채널 사용 사례에 적합하며 AEM의 페이지 렌더링과 독립적으로 사용되므로 사용자 정의 프론트엔드 배포에 유연하게 사용할 수 있습니다.
 
 ### AEM 양식 작성 방법의 비교 분석
 
@@ -107,7 +107,7 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 
 ## 관련 문서
 
-* [Microsoft Excel 또는 Google Sheets를 사용하여 문서 기반 작성](/help/edge/docs/forms/create-forms.md)
-* [WYSIWYG 작성용 Universal Editor](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [적응형 양식(기초 구성 요소) 만들기](/help/forms/creating-adaptive-form.md)
-* [적응형 양식(핵심 구성 요소) 만들기](/help/forms/create-an-adaptive-form.md)
+- [Microsoft Excel 또는 Google Sheets를 사용하여 문서 기반 작성](/help/edge/docs/forms/create-forms.md)
+- [WYSIWYG 작성용 Universal Editor](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [적응형 양식(기초 구성 요소) 만들기](/help/forms/creating-adaptive-form.md)
+- [적응형 양식(핵심 구성 요소) 만들기](/help/forms/create-an-adaptive-form.md)

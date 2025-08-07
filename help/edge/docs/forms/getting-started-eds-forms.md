@@ -4,8 +4,8 @@ description: Adobe Experience Manager Edge Delivery Services에서 범용 편집
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # AEM Edge Delivery Services의 Forms 시작하기
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
 
 Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우 빠르고 확장성이 뛰어난 웹 경험을 제공합니다. 이 안내서에서는 **해당 경험을 위한 양식을 빌드하고 게시하는 방법**&#x200B;을 명확한 권장 계층과 함께 설명합니다.
 
@@ -41,11 +41,11 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 
 범용 편집기는 속도와 엔터프라이즈급 기능을 결합한 마케터 및 디자이너를 위한 시각적 드래그 앤 드롭 작성 도구입니다.
 
-* 실시간 WYSIWYG 편집 및 디바이스 미리보기 기능을 제공합니다.
-* 코드가 필요 없는 고급 규칙 및 유효성 검사 UI를 제공합니다.
-* AEM 자산, 워크플로 및 Forms 데이터 모델(FDM)과의 직접 통합을 지원합니다.
-* Vanilla JS/CSS에서 사용자 정의 구성 요소를 개발자에게 원활하게 전달합니다.
-* 유연한 제출 대상: **Forms 제출 서비스(FSS)**&#x200B;로 간단하게 시작하거나 필요에 따라 **AEM Publish 제출 작업**&#x200B;으로 전환할 수 있습니다.
+- 실시간 WYSIWYG 편집 및 디바이스 미리보기 기능을 제공합니다.
+- 코드가 필요 없는 고급 규칙 및 유효성 검사 UI를 제공합니다.
+- AEM 자산, 워크플로 및 Forms 데이터 모델(FDM)과의 직접 통합을 지원합니다.
+- Vanilla JS/CSS에서 사용자 정의 구성 요소를 개발자에게 원활하게 전달합니다.
+- 유연한 제출 대상: **Forms 제출 서비스(FSS)**&#x200B;로 간단하게 시작하거나 필요에 따라 **AEM Publish 제출 작업**&#x200B;으로 전환할 수 있습니다.
 
 > **권장 사항**: 팀이 100% 문서 중심이고 양식이 매우 기본적인 경우가 아니라면 모든 새 양식 프로젝트를 범용 편집기로 시작하는 것이 좋습니다.
 
@@ -54,10 +54,10 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 
 문서 기반 작성은 Microsoft Word, Google Docs 또는 Google Sheets와 같은 익숙한 도구를 사용하여 간단하고 복잡도가 낮은 양식을 만드는 데 가장 적합합니다. 이 방법은 빠르고 간단하게 양식을 빌드해야 하는 콘텐츠 팀에게 이상적입니다.
 
-* 테이블 내에서(Docs) 또는 행으로(Sheets) 양식 필드를 정의합니다.
-* 기본 필드 유효성 검사 및 스팸 방지를 위한 Google reCAPTCHA를 지원합니다.
-* 양식 제출은 Forms 제출 서비스를 통해서만 처리됩니다.
-* 즉시 게시: 소스 문서에서 변경된 내용은 배포 파이프라인 없이도 사이트에 즉시 반영됩니다.
+- 테이블 내에서(Docs) 또는 행으로(Sheets) 양식 필드를 정의합니다.
+- 기본 필드 유효성 검사 및 스팸 방지를 위한 Google reCAPTCHA를 지원합니다.
+- 양식 제출은 Forms 제출 서비스를 통해서만 처리됩니다.
+- 즉시 게시: 소스 문서에서 변경된 내용은 배포 파이프라인 없이도 사이트에 즉시 반영됩니다.
 
 
 ### 문서 작성(DA)에 양식 임베드

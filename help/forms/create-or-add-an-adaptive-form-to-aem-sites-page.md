@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3162'
 ht-degree: 19%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 19%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -25,13 +25,13 @@ AEM Forms을 사용하면 AEM Sites 페이지에 양식을 원활하게 추가�
 
 AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
-AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - 임베디드 구성 요소 를 제공합니다. 적응형 양식 컨테이너를 사용하여 AEM Sites 페이지 또는 경험 조각에서 양식을 만들 수 있습니다. 반면 적응형 Forms - 임베드 구성 요소를 사용하면 기존 적응형 양식을 추가하거나 적응형 Forms 편집기를 사용하여 양식을 만들 수 있습니다.
+AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - 임베드 구성 요소 를 제공합니다. 적응형 양식 컨테이너를 사용하여 AEM Sites 페이지 또는 경험 조각에서 양식을 만들 수 있습니다. 반면 적응형 Forms - 임베드 구성 요소를 사용하면 기존 적응형 양식을 추가하거나 적응형 Forms 편집기를 사용하여 양식을 만들 수 있습니다.
 
 ![AEM Sites 페이지의 적응형 양식의 예](/help/forms/assets/adaptive-form-in-sites-page.png)
 
 ## 적응형 Forms 핵심 구성 요소를 사용하여 AEM Sites 페이지 또는 경험 조각에서 적응형 양식을 만드는 이유는 무엇입니까?
 
-과거에 사이트에 대한 적응형 Forms 기초 구성 요소 또는 일반 HTML 기반 양식을 만든 경우, Adobe은 적응형 Forms 핵심 구성 요소를 사용하여 AEM Sites 페이지 또는 경험 조각에서 적응형 양식을 만들 것을 권장합니다. 이를 통해 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있으므로 적응형 Forms에 대한 전반적인 양식 생성 및 관리 경험이 향상됩니다. 다음 기능 중 일부를 살펴보겠습니다.
+과거에 사이트에 대한 적응형 Forms 기초 구성 요소 또는 일반 HTML 기반 양식을 만든 경우 Adobe에서는 적응형 Forms 핵심 구성 요소를 사용하여 AEM Sites 페이지 또는 경험 조각에서 적응형 양식을 만들 것을 권장합니다. 이를 통해 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있으므로 적응형 Forms에 대한 전반적인 양식 생성 및 관리 경험이 향상됩니다. 다음 기능 중 일부를 살펴보겠습니다.
 
 * **버전 관리:** AEM Sites 페이지는 [강력한 버전 관리 기능](/help/sites-cloud/authoring/sites-console/page-versions.md)을 제공하므로 다양한 버전의 양식을 추적하고 관리할 수 있습니다. 이렇게 하면 필요한 경우 이전 버전으로 롤백하는 기능을 유지하면서 양식을 변경하고 개선할 수 있습니다. 버전 관리를 통해 개발 및 진화를 형성하기 위한 통제되고 조직화된 접근 방식을 확보할 수 있습니다.
 * **타깃팅(Adobe Target과 통합):** AEM Sites 페이지 타깃팅 기능을 사용하면 [다른 대상자를 위해 양식 환경을 개인 설정할 수도 있습니다](/help/sites-cloud/integrating/integrating-adobe-target.md). 사용자 세그먼트와 타겟팅 기준을 사용하여 양식의 콘텐츠, 디자인 또는 동작을 특정 사용자 그룹에 맞게 조정할 수 있습니다. 이를 통해 개인화되고 관련성 있는 양식 경험을 제공하여 참여도와 전환율을 높일 수 있습니다.
@@ -41,7 +41,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 * **태그 지정:** AEM Sites 페이지를 사용하면 [페이지, 에셋 또는 기타 콘텐츠에 태그나 레이블을 할당](/help/implementing/developing/introduction/tagging-framework.md)할 수 있습니다. 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
 * **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 사용하면 사용자가 AEM Sites 환경에서 [페이지에 대한 액세스 및 수정 사항을 제어](/help/sites-cloud/authoring/page-editor/edit-content.md)할 수 있습니다. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
-또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features)를 사용합니다. 이러한 핵심 구성 요소는 [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)와(과) 동일하게 구성 요소의 스타일을 지정하고 사용자 지정하는 보다 쉬운 표준 방법을 제공합니다.
+또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)를 사용합니다. 이러한 핵심 구성 요소는 [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)와(과) 동일하게 구성 요소의 스타일을 지정하고 사용자 지정하는 보다 쉬운 표준 방법을 제공합니다.
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하는 방법 {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -50,7 +50,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 * **[사용자 지정 적응형 양식을 만들어 AEM Sites 페이지에 추가](#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** 적응형 양식 컨테이너 구성 요소를 사용하여 새로운 양식을 처음부터 빌드할 수 있으며, 요구 사항 및 디자인 환경 설정에 맞게 맞춤화할 수 있습니다.
 
-* **[사용자 지정 적응형 양식을 만들어 경험 조각에 추가](#create-an-adaptive-form-in-sites-editor):** 양식을 AEM Experience Fragments에 추가하여 양식의 범위를 확장하면 여러 페이지 또는 사이트에서 원활하게 재사용할 수 있습니다.
+* **[사용자 지정 적응형 양식을 만들어 경험 조각에 추가](#create-an-adaptive-form-in-sites-editor):** 사용자 지정 적응형 양식을 AEM 경험 조각에 추가하여 양식의 범위를 확장하면 여러 페이지나 사이트에서 원활하게 재사용할 수 있습니다.
 
 * **[적응형 양식을 경험 조각으로 변환](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** AEM Sites 페이지에 추가된 적응형 양식을 여러 AEM Sites 페이지에서 양식을 재사용하기 위한 경험 조각으로 변환합니다.
 
@@ -65,14 +65,14 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 * 적응형 양식 컨테이너를 사용하여 양식을 만들거나 추가하는 경우 AEM Sites 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 각 언어별로 사이트 페이지와 해당 양식의 별도 사본(언어 사본)을 생성하고, 콘텐츠 작성자가 상위 페이지의 양식에서 규칙을 수정하는 경우 양식의 모든 언어 사본에 대해 동일한 변경을 수행해야 합니다. 또한 적응형 양식 컨테이너를 사용하여 버전 관리, 타기팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
-* 적응형 양식 임베디드 구성 요소를 사용하여 양식을 만들거나 추가하는 경우 AEM Forms 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 이 경우 Sites 페이지의 모든 언어 사본에서 단일 양식을 관리하고 참조하십시오. 적응형 양식 임베디드 구성 요소는 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능에 대한 액세스 권한을 제공하지 않습니다.
+* 적응형 양식 임베드 구성 요소를 사용하여 양식을 만들거나 추가하는 경우 AEM Forms 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 이 경우 Sites 페이지의 모든 언어 사본에서 단일 양식을 관리하고 참조하십시오. 적응형 양식 임베드 구성 요소는 버전 관리, 타깃팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능에 대한 액세스 권한을 제공하지 않습니다.
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하기 위한 요구 사항 {#before-you-start-creating-an-adaptive-form}
 
 적응형 양식 만들기를 시작하기 전에 적응형 Forms 핵심 구성 요소를 활성화하고 적응형 Forms 클라이언트 라이브러리를 AEM Sites 페이지에 추가합니다.
 
-### AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화
+### AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소 활성화
 
 [AEM Forms as a Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되어 있는지](enable-adaptive-forms-core-components.md) 확인합니다.
 
@@ -80,7 +80,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 적응형 양식 컨테이너 구성 요소의 전체 기능을 활성화하려면 배포 파이프라인을 사용하여 AEM Sites 페이지에 Customheaderlibs 및 Customfooterlibs 클라이언트 라이브러리를 추가합니다. 라이브러리를 추가하려면:
 
-1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ko)를 사용하고 복제합니다.
+1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)를 사용하고 복제합니다.
 1. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예: Microsoft Visual 코드.
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 파일을 열고 다음 코드를 파일에 추가합니다.
 
@@ -119,7 +119,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
        </sly> 
    ```
 
-1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ko)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
+1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
 
 ### AEM Sites 페이지 또는 경험 조각에 대해 적응형 Forms 컨테이너 활성화
 
@@ -251,21 +251,5 @@ FDM(양식 데이터 모델)을 사용하여 양식을 데이터 Source에 연�
 
    * 리디렉션 URL을 구성하려면 [제출 시] 옵션에서 **[!UICONTROL URL로 리디렉션]** 옵션을 선택하고 AEM Sites 페이지를 검색하여 선택하거나 외부 페이지의 URL을 제공합니다.
    * 사용자 지정 또는 감사 메시지를 구성하려면 [전송] 옵션에서 **[!UICONTROL 메시지 표시]** 옵션을 선택하고 **[!UICONTROL 메시지 내용]** 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
-
-
-<!--
-## See next
-
-* [Create style or themes for your forms](using-themes-in-core-components.md)
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-
--->
-
-## 추가 참조 {#see-also}
-
-{{see-also}}
-* [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
-* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

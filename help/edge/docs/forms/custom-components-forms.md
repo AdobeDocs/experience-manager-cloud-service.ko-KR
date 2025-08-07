@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
-source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
-workflow-type: ht
-source-wordcount: '625'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '623'
 ht-degree: 100%
 
 ---
@@ -35,8 +35,8 @@ CSS로 스타일을 추가하고 구성 요소를 장식하는 사용자 정의 
 
 사용자 정의 구성 요소 만들기를 시작하기 전에 다음과 같은 작업을 수행할 수 있습니다.
 
-* [기본 HTML 구성 요소](/help/edge/docs/forms/form-components.md)에 대한 기본 지식이 있어야 합니다.
-* [CSS 선택기를 사용하여 필드 유형에 따라 양식 필드의 스타일을 지정하는](/help/edge/docs/forms/style-theme-forms.md) 방법 파악
+- [기본 HTML 구성 요소](/help/edge/docs/forms/form-components.md)에 대한 기본 지식이 있어야 합니다.
+- [CSS 선택기를 사용하여 필드 유형에 따라 양식 필드의 스타일을 지정하는](/help/edge/docs/forms/style-theme-forms.md) 방법 파악
 
 
 ## 사용자 정의 구성 요소 만들기
@@ -52,9 +52,9 @@ CSS로 스타일을 추가하고 구성 요소를 장식하는 사용자 정의 
 
 `[../Form Block/components]`에 추가된 사용자 정의 함수는 다음과 같이 구성됩니다.
 
-* **함수 선언**: 함수 이름과 매개변수를 정의합니다.
-* **논리 구현**: 논리를 작성하여 구성 요소에 대한 사용자 정의 비헤이비어를 추가합니다.
-* **함수 내보내기**: 함수를 `[Form Block]`에서 액세스할 수 있도록 합니다.
+- **함수 선언**: 함수 이름과 매개변수를 정의합니다.
+- **논리 구현**: 논리를 작성하여 구성 요소에 대한 사용자 정의 비헤이비어를 추가합니다.
+- **함수 내보내기**: 함수를 `[Form Block]`에서 액세스할 수 있도록 합니다.
 
 사용자 정의 함수를 추가하려면
 
@@ -151,6 +151,7 @@ CSS 선택기를 사용하여 필드 유형 및 필드 이름을 기반으로 �
 `range` 구성 요소의 스타일을 사용자 정의하려면 양식 내 `range` 입력 요소 및 관련 구성 요소의 스타일을 지정하는 CSS 코드 조각을 포함합니다. `.form` 및 `.range-wrapper`와 같은 클래스가 구조화된 HTML 레이아웃에 포함되어 있다고 가정합니다.
 
 CSS 파일에서 구성 요소의 스타일을 추가하려면
+
 1. `[../Form Block/]`으로 이동한 다음 `form.css`를 엽니다.
 1. 다음 코드 줄 추가:
 
@@ -207,6 +208,7 @@ CSS 파일에서 구성 요소의 스타일을 추가하려면
    float: right;
    }
    ```
+
 1. 변경 사항을 저장합니다.
 
 ### 파일 배포 및 프로젝트 빌드
@@ -220,145 +222,5 @@ CSS 파일에서 구성 요소의 스타일을 추가하려면
 ![사용자 정의 구성 요소 양식](/help/edge/assets/custom-componet-form.png)
 
 `range` 구성 요소의 스타일을 새롭게 지정하면 CSS와 구성 요소의 데코레이터가 포함된 사용자 정의 함수로 스타일을 추가하여 줄에 최소값, 최대값 및 선택된 값을 표시합니다.
-<!--
-Now, you can extend the created custom component for WYSIWYG based authoring.
-
-## Enable Component for WYSIWYG authoring
-
-To enable component for WYSIWYG authoring:
-
-1. Navigate to  `[../Form Block/components]`.
-2. Locate a file named `_range.json`. if not present, create it.
-3. Add the following code in the  `_range.json` file:
-
-    ```javascript
-    {
-    "definitions": [
-        {
-         "title": "Range",
-         "id": "range",
-        "plugins": {
-          "xwalk": {
-           "page": {
-               "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-              "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-             }
-            }
-            }
-        }
-        }
-    ],
-    "models": [
-     {
-          "id": "range",
-        "fields": [
-          {
-              "component": "container",
-             "name": "basic",
-             "label": "Basic",
-             "collapsible": false,
-             "...": "../../../../models/form-common/_basic-input-fields.json"
-             {
-             "component": "number",
-             "name": "stepValue",
-             "label": "Step Value",
-              "valueType": "number"
-        }
-         },
-         {
-              "...": "../../../../models/form-common/_help-container.json"
-            },
-            {
-          "component": "container",
-          "name": "validation",
-          "label": "Validation",
-          "collapsible": true,
-          "...": "../../../../models/form-common/_number-validation-fields.json"
-            }
-        ]
-        }
-    ]
-    }
-    ```
-
-    The above code snippet in the `_range.json` file includes the component definition, component model and custom properties for your custom component.
 
 
-    ![component definition and model](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
-
-4. Navigate to the `/blocks/form/_form.json` file and add the `fd:viewType` value from the `definitions[]` to the components array of the object with `id="form"`.
-
-    ```javascript
-
-        "filters": [
-        {
-         "id": "form",
-        "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-        }
-    ]
-      ```
-
-    The above code snippet defines the section in which the custom component can be used in Universal Editor.
-    
-    ![component filter](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
-
-5. Navigate to the `/blocks/form/mappings.js` file and add the `fd:viewType` value from the `definitions[]` array to the `customComponents[]` array.
-
-    ```javascript
-    let customComponents = ["range"];
-    const OOTBComponentDecorators = ['file-input',
-                                 'wizard', 
-                                 'modal', 'tnc',
-                                'toggleable-link',
-                                'rating',
-                                'datetime',
-                                'list',
-                                'location',
-                                'accordion'];
-    ```
-
-The above code snippet enables the form block to recognize the custom component and load its properties defined in the component model during form authoring in Universal Editor.
-
-![component mapping](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
-
-Now, you can see your custom component in the WYSIWYG based authoring:
-
-![Range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range-doc-based.png)
-
->[!NOTE]
->
-> For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article. -->
-
-## 추가 참조
-
-{{see-more-forms-eds}}

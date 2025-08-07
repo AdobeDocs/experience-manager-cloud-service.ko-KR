@@ -1,91 +1,163 @@
 ---
-title: Edge Delivery Services용 AEM Forms 게시.
-description: Edge Delivery Services 양식을 빠르고 원활하게 게시할 수 있습니다.
+title: Edge Delivery Services을 사용하여 적응형 Forms 게시
+description: 프로덕션 사용을 위해 Edge Delivery Services을 사용하여 적응형 Forms을 게시, 구성 및 액세스하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
+keywords: [양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '477'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: 756
+ht-degree: 2%
 
 ---
 
-# Edge Delivery Services에 적응형 양식 게시
+# Edge Delivery Services을 사용하여 적응형 Forms 게시
 
-<span class="preview"> 이는 프리릴리스 기능이고 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">프리릴리스 채널</a>을 통해 사용할 수 있습니다. </span>
+## 개요
 
+적응형 양식을 게시하면 최종 사용자가 액세스하고 제출할 수 있도록 Edge Delivery Services에서 사용할 수 있습니다. 이 프로세스에는 양식 게시, 보안 설정 구성 및 라이브 양식 액세스의 세 가지 주요 단계가 포함됩니다.
 
-양식이 완성되어 사용할 준비가 되면 고객이 데이터를 수집하고 제출할 수 있도록 양식을 게시할 수 있습니다. 게시를 통해 Edge Delivery에서 양식을 사용할 수 있으므로 사용자가 원활하게 상호 작용할 수 있습니다. 이 프로세스를 통해 고객은 실시간으로 양식을 작성하고 제출할 수 있으며, 효율적인 데이터 수집과 간소화된 처리를 보장합니다.
+**수행할 작업:**
+
+- Edge Delivery Services에 양식 게시
+- 양식 제출을 위한 보안 설정 구성
+- 게시된 양식 액세스 및 확인
+- 적절한 URL 라우팅 및 CORS 정책 설정
 
 ## 사전 요구 사항
 
-* **Edge Delivery Services 템플릿**&#x200B;을 사용하여 만든 양식. EDS 기반 양식을 만드는 방법에 대해 [자세히 알아보기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+- **양식 요구 사항:**
+   - Edge Delivery Services 템플릿을 사용하여 만든 적응형 양식
+   - 양식 테스트 및 제작 준비 완료
 
-## 양식 게시
+- **액세스 요구 사항:**
+   - AEM Forms 작성자 권한
+   - Cloud Manager 액세스(프로덕션 구성용)
+   - 양식 블록 코드에 대한 개발자 액세스(제출 설정용)
 
-다음 단계를 따라 **EDS 기반 적응형 양식**&#x200B;을 Edge Delivery에 게시할 수 있습니다.
+- **관련 설명서:**
+   - [Edge Delivery Services을 사용하여 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [제출 액션 구성](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
-<!--1. Select the **Adaptive Form** that you want to publish and click the **Edit** ![edit icon](/help/forms/assets/edit.svg) icon.
-   ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)-->
+## 1단계: 양식 게시
 
-1. 편집기에서 적응형 양식을 열고 위쪽 레일에 있는 **게시** 아이콘을 클릭합니다.
+### 1단계: 게시 시작
+
+1. **양식에 액세스**: 범용 편집기에서 적응형 양식을 엽니다.
+2. **게시 시작**: 도구 모음에서 **게시** 아이콘을 클릭합니다
+
    ![게시 클릭](/help/forms/assets/publish-icon-eds-form.png)
 
-1. **게시**&#x200B;를 클릭하면 양식의 제목을 포함한 게시 자산을 보여 주는 화면 또는 팝업이 나타납니다. 이 예제에서는 **Wknd_Form** 템플릿이 사용되었습니다.
+### 2단계: 검토 및 확인
+
+1. **자산 게시를 검토**: 양식을 포함하여 게시 중인 모든 자산이 시스템에 표시됩니다
+
    ![클릭 시 게시](/help/forms/assets/on-click-publish.png)
 
-1. **게시**를 다시 클릭하면 확인 팝업이 나타나 양식이 게시되었음을 알려 줍니다.
+2. **게시 확인**: 계속하려면 **게시**&#x200B;를 클릭하십시오.
+3. **성공 확인**: 확인 메시지를 찾습니다
+
    ![게시 성공](/help/forms/assets/publish-success.png)
 
-1. 양식의 게시 상태를 확인하려면 **게시**를 다시 클릭합니다.
-   ![게시 상태](/help/forms/assets/publish-status.png)
+### 3단계: 게시 상태 확인
 
-1. 양식을 **게시 취소**&#x200B;하려면 편집기에서 양식을 열고 오른쪽 상단의 점 3개로 된 메뉴를 클릭한 다음 **게시 취소**를 클릭합니다.
-   ![게시 취소](/help/forms/assets/unpublish--form.png)
+**상태 확인**: **게시** 아이콘을 다시 클릭하여 현재 상태를 확인합니다
 
-## AEM Publisher에 대한 레퍼러 필터를 구성하여 Edge Delivery에서 양식 제출 활성화
+![게시 상태](/help/forms/assets/publish-status.png)
 
-안전한 양식 제출을 보장하려면 AEM Publisher에서 **레퍼러 필터**&#x200B;를 구성해야 합니다. 이 필터는 Edge Delivery의 승인된 요청만 쓰기 작업(POST, PUT, DELETE, COPY, MOVE)을 수행할 수 있도록 하여 무단 수정을 방지합니다. 다음은 AEM Publisher에 대한 레퍼러 필터를 구성하는 단계입니다.
+**유효성 검사 검사점:**
 
-### Edge Delivery에서 AEM 인스턴스 URL 업데이트
+- 양식에 편집기의 &quot;게시됨&quot; 상태가 표시됨
+- 게시 프로세스 중 오류 메시지 없음
+- 양식이 게시된 자산 목록에 표시됨
 
-양식 블록 내의 **constant.js** 파일에서 `submitBaseUrl`을 수정하여 AEM 인스턴스 URL을 지정합니다.
+### 게시된 Forms 관리
 
-**클라우드 설정의 경우:**
+**양식 게시를 취소하려면:**
 
-```js
+1. 편집기에서 양식 열기
+2. 오른쪽 상단의 점 3개 메뉴(⋯)를 클릭합니다
+3. **게시 취소** 선택
+
+![양식 게시 취소](/help/forms/assets/unpublish--form.png)
+
+## 2단계: 보안 설정 구성
+
+### 보안 구성이 필요한 이유
+
+보안 양식 제출을 활성화하려면 다음과 같은 보안 설정을 구성해야 합니다.
+
+- Edge Delivery Services에서 AEM에 데이터를 제출하도록 허용
+- AEM 인스턴스에 대한 무단 액세스 방지
+- 양식 제출을 위해 CORS(원본 간 리소스 공유) 활성화
+- 합법적인 Edge Delivery 도메인만 허용하도록 요청 필터링
+
+>[!IMPORTANT]
+>
+>**프로덕션에 필요**: 이러한 구성은 양식 제출이 프로덕션 환경에서 작동하는 데 필수입니다.
+
+### 1단계: 양식 제출 URL 구성
+
+**목적**: AEM 인스턴스에 직접 양식 제출
+
+Edge Delivery Services 프로젝트의 **파일 위치**: `blocks/form/constant.js`
+
+**구성 예:**
+
+```javascript
+// Production Environment
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
-```
-**로컬 개발의 경우:**
 
-```js
+// Local Development Environment  
 export const submitBaseUrl = 'http://localhost:4503';
+
+// Staging Environment
+export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com';
 ```
 
-### CORS 구성 수정
+**유효성 검사 검사점:**
 
-Edge Delivery 도메인에서 양식 제출 요청을 허용하도록 **CORS 설정**&#x200B;을 조정합니다. 자세한 내용은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
+- `constant.js` 파일이 올바른 AEM 게시 URL로 업데이트되었습니다.
+- URL이 환경(프로덕션, 스테이징 또는 로컬)과 일치함
+- URL에 후행 슬래시가 없음
 
-**예제 CORS 구성:**
+### 2단계: CORS 설정 구성
+
+**목적**: Edge Delivery Services 도메인에서 양식 제출 요청 허용
+
+**구현**: AEM Dispatcher 또는 Apache 구성에 CORS 구성 추가
 
 ```apache
-# Developer Localhost
+# Local Development Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 
-# Franklin Stage
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+# Edge Delivery Services - Preview/Stage Environment  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
 
-# Franklin Live
+# Edge Delivery Services - Production Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-로컬 개발의 경우 CORS를 **개발 UI 호스트 URL**&#x200B;에서 활성화하는 방법에 대한 [설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)를 참조하십시오.
 
-### 레퍼러 필터 구성
+**유효성 검사 검사점:**
 
-Cloud Manager를 통해 AEM Cloud Service에서 **레퍼러 필터**&#x200B;를 설정합니다. 클라우드 관리자를 사용하여 AEM Cloud Service 인스턴스에서 레퍼러 필터를 구성하는 방법에 대해 [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+- Dispatcher 구성에 적용되는 CORS 규칙
+- 필요한 모든 도메인(localhost, hlx.page, hlx.live)이 포함됩니다
+- 타겟 환경에 배포된 구성
 
-**레퍼러 필터에 대한 JSON 구성:**
+**참조 설명서:**
+
+- [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [레퍼러 필터 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+
+### 3단계: 레퍼러 필터 구성
+
+**목적**: 쓰기 작업을 승인된 Edge Delivery Services 도메인으로 제한합니다.
+
+**구현 메서드**: AEM as a Cloud Service에서 Cloud Manager을 통해 구성
+
+**구성 파일**: 프로젝트의 OSGi 구성에 추가
 
 ```json
 {
@@ -97,7 +169,7 @@ Cloud Manager를 통해 AEM Cloud Service에서 **레퍼러 필터**&#x200B;를 
   ],
   "filter.methods": [
     "POST",
-    "PUT",
+    "PUT", 
     "DELETE",
     "COPY",
     "MOVE"
@@ -108,24 +180,91 @@ Cloud Manager를 통해 AEM Cloud Service에서 **레퍼러 필터**&#x200B;를 
 }
 ```
 
-이 구성은 필터링되는 HTTP 메서드, 허용되는 레퍼러, 필터에서 제외되는 사용자 에이전트를 지정합니다. 이러한 구성을 구현하면 **Edge Delivery를 통한 양식 제출**&#x200B;이 안전하게 보호되고 승인된 소스로만 제한됩니다.
+**구성 분류:**
 
-### 게시된 적응형 양식에 액세스하기
+- **`allow.empty`**: 레퍼러 헤더 없이 요청을 거부합니다.
+- **`allow.hosts.regexp`**: Edge Delivery Services 도메인의 요청을 허용합니다.
+- **`filter.methods`**: 다음 HTTP 메서드에 필터링을 적용합니다
+- **`exclude.agents.regexp`**: 필터링에서 제외된 사용자 에이전트
 
-이제 적응형 양식은 다음 URL 형식을 사용하여 **Edge Delivery**&#x200B;를 통해 액세스할 수 있습니다.
+**유효성 검사 검사점:**
+
+- Cloud Manager을 통해 배포된 레퍼러 필터 구성
+- AEM 게시 인스턴스에서 활성화된 구성
+- Edge Delivery Services 도메인에서 양식 제출 작업 테스트
+- 승인되지 않은 도메인의 양식 제출이 차단됨
+
+**참조 설명서:**
+
+- [Cloud Manager을 통해 레퍼러 필터 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+
+## 3단계: 게시된 양식에 액세스
+
+### Edge Delivery Services용 URL 구조
+
+**표준 URL 형식:**
 
 ```
-https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 ```
 
-예를 들어 **Wknd-Form**&#x200B;의 URL은 다음과 같습니다.
+**URL 구성 요소:**
+
+- **`<branch>`**: Git 분기 이름(일반적으로 `main`)
+- **`<repo>`**: 저장소 이름
+- **`<owner>`**: GitHub 조직 또는 사용자 이름
+- **`<form_name>`**: 양식 이름(소문자, 하이픈 넣기)
+
+**환경별 URL:**
 
 ```
+# Production Environment (.aem.live)
 https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
+
+# Preview Environment (.aem.page) 
+https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
+### 최종 유효성 검사 단계
 
-## 추가 참조
+**양식 액세스 가능성 확인:**
 
-{{universal-editor-see-also}}
+1. **양식 로드 테스트**: 양식 URL을 방문하여 제대로 로드되는지 확인하십시오
+2. **양식 제출 테스트**: 데이터 처리를 확인하기 위해 양식을 작성하고 제출합니다.
+3. **응답형 디자인 확인**: 다양한 장치 및 화면 크기에서 양식을 테스트합니다.
+4. **보안 유효성 검사**: CORS 및 레퍼러 필터가 제대로 작동하는지 확인하십시오.
 
+**예상 결과:**
+
+- 오류 없이 양식 로드
+- 모든 양식 필드가 올바르게 렌더링됨
+- 양식 제출 프로세스 성공
+- 구성된 대상(스프레드시트, 이메일 등)에 데이터가 표시됩니다.
+- CORS 또는 보안 정책과 관련된 콘솔 오류 없음
+
+
+## 다음 단계
+
+**즉각적인 작업:**
+
+- 게시된 양식을 철저히 테스트합니다.
+- 양식 제출 데이터 모니터링
+- 필요한 경우 분석 추적 설정
+
+**고급 항목:**
+
+- [양식 제출 작업 구성](/help/edge/docs/forms/universal-editor/submit-action.md)
+- [양식 스타일 지정 및 테마 설정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+- [reCAPTCHA 보호 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+- [응답형 양식 레이아웃 만들기](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+
+## 요약
+
+다음을 완료했습니다.
+
+- 적응형 양식을 Edge Delivery Services에 게시함
+- 양식 제출을 위해 구성된 보안 설정
+- 최종 사용자에 대한 적절한 URL 액세스 설정
+- 양식 기능 및 접근성을 확인했습니다.
+
+이제 양식이 활성 상태이며 프로덕션에 사용할 준비가 되었습니다.

@@ -4,9 +4,9 @@ description: EDS 양식에 반복 가능한 섹션 추가
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 100%
 
 이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
-* [양식에서 반복 가능한 섹션을 만드는 방법](#add-repeatable-sections-to-a-form)
-* [양식에서 최소 또는 최대 반복 횟수를 설정하는 방법](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+- [양식에서 반복 가능한 섹션을 만드는 방법](#add-repeatable-sections-to-a-form)
+- [양식에서 최소 또는 최대 반복 횟수를 설정하는 방법](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
 ## 반복 가능한 섹션을 만드는 방법
 
@@ -58,9 +58,9 @@ ht-degree: 100%
 
 1. `type`, `fieldset` 및 `repeatable` 속성의 필드가 `true`로 설정된 경우
 
-   * `min` 속성을 설정하여 섹션을 반복할 수 있는 최소 횟수를 지정합니다.
+   - `min` 속성을 설정하여 섹션을 반복할 수 있는 최소 횟수를 지정합니다.
 
-   * `max` 속성을 설정하여 섹션을 반복할 수 있는 최대 횟수를 지정합니다.
+   - `max` 속성을 설정하여 섹션을 반복할 수 있는 최대 횟수를 지정합니다.
 
    ![최소 및 최대 속성을 설정하여 섹션을 반복할 수 있는 횟수를 지정합니다.](/help/edge/assets/repeatable-section-set-min-max.png)
 
@@ -68,59 +68,4 @@ ht-degree: 100%
 
    반복 가능한 섹션이 추가되면 사용자는 직관적인 **삭제** 아이콘을 찾아 반복 가능한 섹션을 더 쉽게 제거할 수 있습니다. 추가되면 이 세션은 `min` 속성으로 지정된 인스턴스보다 더 적은 수의 인스턴스로 줄어들 수 없습니다. 이렇게 하면 양식을 완성하는 데 필요한 최소 요구 사항을 준수할 수 있습니다.
 
-<!--
 
-For example, consider a form used to collect information from users applying for a loan. . You may have a repeatable section for capturing details of each co-applicant. The repeatable section would typically contain fields such as co-co-applicant
-
-The form allows users to provide personal information, including details of the co-applicants. Users can enter details for co-applicants, with this section being repeatable.
-
-![Repeatable sections in forms](/help/forms/assets/eds-repeatable.png)
-
-## Prerequisites
-
-The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
-
-## Add a repeatable section to a form 
-
-Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
-
-"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-SharePoint)._" 
-
-
-To add repeatable sections in Edge Delivery:
-
-1. [Author a form using Microsoft Excel](#author-form)
-2. [Preview and publish the form](#preview-form)
-
-### Author a form using Microsoft Excel {#author-form}
-
-1. Go to your Edge Deliver project folder on Microsoft SharePoint or Google Workspace and open your spreadsheet. For example, open an a spreadsheet named `loan-application.xlsx`.
-
-1. Add a new columns labeled `Repeatable` to the sheet contaning your form fields. By default, the `shared-default` sheet contains the form fields.  
-
-1. Add new columns labeled as `Repeatable`, `Min`, and `Max` in your Microsoft Excel file.
-1. Specify the value for the `Repeatable` column as `True` for the fieldset that you want to make repeatable.
-1. Specify the values for the `Min` and `Max` columns. The `Min` value represents the minimum number of occurrences for which the panel repeats, while the `Max` value represents the maximum number of occurrences for which the panel repeats.
-1. Save your Microsoft Excel file.
-     
->[!NOTE]
->
-> Here is the [Loan application](/help/forms/assets/loan-application.xlsx) excel sheet for your reference. 
-
-### Preview/Publish the form using your Edge Delivery Service
-
-1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
-2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
-
-The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the repeatable section by clicking the `Delete` button. 
-
->[!NOTE]
->
-> If you encounter a "Page Not Found" error while accessing your form at localhost, add the directory name of the Microsoft SharePoint Site in front of the URL where your form is located. For example, `http://localhost:3000/<dir-name>/`
-
--->
-
-
-## 추가 참조
-
-{{see-more-forms-eds}}

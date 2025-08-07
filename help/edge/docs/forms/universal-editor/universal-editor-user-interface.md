@@ -1,269 +1,524 @@
 ---
-title: 범용 편집기 이해
-description: 이 자습서는 범용 편집기 인터페이스를 시작하고 실행하는 데 도움이 됩니다. 범용 편집기에서 나만의 Edge Delivery Services 양식을 만들 수 있는 사용자 인터페이스를 이해하는 데 도움이 됩니다.
+title: AEM Forms용 범용 편집기 인터페이스 탐색
+description: Edge Delivery Services으로 AEM Forms을 만들기 위한 범용 편집기 인터페이스를 기본으로 제공합니다. 이 포괄적인 인터페이스 안내서를 통해 양식을 효율적으로 빌드하기 위한 필수 도구, 바로 가기 및 워크플로에 대해 알아봅니다.
+keywords: 범용 편집기, AEM forms, edge delivery services, 인터페이스 안내서, 양식 작성, WYSIWYG 편집기, 양식 빌더 도구, 사용자 인터페이스 탐색
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: User, Developer, Admin
+level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 1%
+source-wordcount: '2209'
+ht-degree: 4%
 
 ---
 
 
-# 범용 편집기(WYSIWYG) 인터페이스 살펴보기
+# AEM Forms용 범용 편집기 인터페이스 탐색
 
-[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)에서는 Adobe Edge Delivery Services Forms에 대해 간단하고, 시각적이며, 직관적인 WYSIWYG(What You See Is What You Get) 인터페이스를 제공합니다. 효율적인 양식 작성을 위한 드래그 앤 드롭 기능이 있는 최신 인터페이스를 제공합니다.
+[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 Edge Delivery Services을 사용하여 AEM Forms을 만들 수 있는 시각적 인터페이스를 제공합니다. 이 안내서는 양식을 효율적으로 빌드하기 위한 인터페이스를 이해하는 데 도움이 됩니다.
 
-![유니버설 편집기 사용자 인터페이스](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
+![유니버설 편집기 인터페이스 개요](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## 학습 내용
+## 개요
 
-이 자습서를 마치면 다음 작업을 수행할 수 있습니다.
+유니버설 편집기는 양식이 사용자에게 표시되는 방식을 정확하게 표시하는 **What You See Is What You Get(WYSIWYG)** 경험을 제공합니다. 양식을 처음 작성하는 사용자 또는 숙련된 개발자 모두 이 안내서를 통해 다음 작업을 수행할 수 있습니다.
 
-- 범용 편집기 인터페이스의 기본 구성 요소 이해
-- 다양한 인터페이스 섹션을 자신 있게 탐색합니다.
-- 필수 양식 작성 도구에 액세스하고 사용하는 방법을 이해할 수 있습니다
-- 생산성을 높이는 키보드 단축키 숙지
+**필수 스킬 학습:**
 
-## 범용 편집기 인터페이스 이해
+- 자신 있고 효율적으로 인터페이스 탐색
+- 일반적인 양식 작성 작업에 적절한 도구 사용
+- 키보드 단축키를 활용하여 생산성 향상
+- 일반적인 인터페이스 문제 해결
 
-범용 편집기를 사용하여 양식을 편집하면 콘솔에서 편집을 바로 시작할 수 있는 대화형 WYSIWYG 인터페이스가 열립니다. 이 인터페이스는 작업하는 동안 폼이 최종 사용자에게 표시되는 방식을 정확하게 보여 주는 실시간 시각적 피드백을 제공합니다.
+**기본 키 워크플로:**
+
+- 최적의 생산성을 위해 작업 공간 설정
+- 개념에서 발행으로 양식 작성
+- 여러 장치에서 양식 테스트 및 미리 보기
+- 양식 프로젝트에서 팀원과 공동 작업
+
+## 빠르게 시작하기
+
+**처음 사용하는 사용자:** [기본 도구](#essential-tools-for-form-building)로 시작하여 가장 자주 사용하는 핵심 기능을 알아보세요.
+
+**숙련된 사용자:** 전문 도구 및 통합을 위해 [고급 기능](#advanced-features-and-integrations)(으)로 이동
+
+**빠른 참조:** 빠른 조회를 위해 [인터페이스 개요](#interface-overview) 및 [키보드 단축키](#keyboard-shortcuts) 섹션을 사용하세요.
 
 >[!NOTE]
 >
-> 범용 편집기를 사용하여 양식을 작성하는 방법에 대해 알아보려면 문서 [범용 편집기를 사용하여 Edge Delivery Services for AEM Forms 시작하기(WYSIWYG)](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)를 참조하십시오.
+> 양식 작성에 대한 새로운 기능 단계별 양식 만들기 지침은 [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)를 참조하십시오.
 
-![유니버설 편집기 사용자 인터페이스](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
+## 인터페이스 개요
 
-유니버설 편집기 인터페이스는 다음 네 가지 논리적 부분으로 나뉘어져 있습니다.
+유니버설 편집기 인터페이스는 다음 네 가지 기본 영역으로 구성되어 있으며, 각 영역은 특정 작업을 위해 디자인되었습니다.
 
-- **[A: Experience Cloud 헤더](#experience-cloud-header)**
-- **[B: 유니버설 편집기 도구 모음](#universal-editor-toolbar)**
-- **[C: 속성 패널](#properties-panel)**
-- **[D: 편집기](#editor)**
+![유니버설 편집기 인터페이스 레이아웃](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-각 섹션을 자세히 살펴보겠습니다.
+| **영역** | **용도** | **기본 사용** |
+|----------|-------------|----------------|
+| **[A: Experience Cloud 헤더](#experience-cloud-header)** | 탐색 및 계정 관리 | Adobe 도구 간 전환, 도움말 액세스, 알림 관리 |
+| **[B: 범용 편집기 도구 모음](#universal-editor-toolbar)** | 양식 편집 및 게시 | 양식 만들기, 편집, 미리보기 및 게시 |
+| **[C: 속성 패널](#properties-panel)** | 구성 요소 구성 | 양식 필드 구성, 콘텐츠 구조 관리 및 고급 기능 액세스 |
+| **[D: 편집기 캔버스](#editor-canvas)** | 시각적 양식 작성 | 구성 요소 추가, 레이아웃 정렬, 실시간 미리 보기 참조 |
 
-### Experience Cloud 헤더
+**인터페이스 흐름:** 대부분의 사용자는 미리 보기 및 게시와 같은 작업에 대해 **도구 모음**(B)을 사용하여 **편집기 캔버스**(D) 및 **속성 패널**(C)에서 주로 작업합니다.
 
-Experience Cloud 헤더는 콘솔 상단에 표시되며 더 광범위한 Adobe Experience Cloud 에코시스템 내에서 탐색 컨텍스트를 제공합니다. 사용자의 현재 위치를 표시하고 다른 Experience Cloud 애플리케이션에 빠르게 액세스할 수 있습니다.
+## 양식 작성을 위한 기본 도구
 
-![유니버설 편집기 Experience Cloud 헤더](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
+유니버설 편집기를 처음 사용하는 경우 여기에서 시작하십시오. 다음은 대부분의 양식 작성 작업에 사용할 핵심 도구입니다.
 
-각 구성 요소를 살펴보겠습니다.
+### **1. 편집기 캔버스 - 기본 Workspace**
 
-- **Adobe Experience Cloud**
+**편집기 캔버스**&#x200B;에서 양식을 시각적으로 빌드합니다. 사용자에게 양식이 정확하게 표시됩니다.
 
-  화면 왼쪽에 있는 **Adobe Experience Cloud** 링크를 클릭하면 Experience Manager 솔루션의 루트로 이동할 수 있습니다. 여기에서 Experience Manager Sites, Experience Manager Assets 및 Experience Manager Guides과 같은 다른 도구에 액세스할 수 있습니다.
+![편집기 캔버스](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-  ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png)
+**주요 작업:**
 
-- **조직 이름**
+- 속성 패널에서 **추가** 단추를 클릭하여 **구성 요소 추가**
+- 캔버스에서 직접 클릭하여 **요소 선택**
+- 구성 요소를 구성할 때 **실시간 변경 내용 보기**
+- 미리 보기 모드에서 **상호 작용 테스트**
 
-  **조직 이름**&#x200B;에 현재 로그인한 Identity Management System(IMS) 조직의 이름이 표시됩니다. 여러 조직에 대한 액세스 권한이 있는 경우 이 드롭다운 메뉴를 사용하여 조직 간을 전환할 수 있습니다. 예를 들어 스크린샷에서 현재 선택한 IMS 조직은 &quot;AEM Forms Internal01&quot;입니다.
+### **2. 속성 패널 - 구성 요소 구성**
 
-  ![조직](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png)
-
-- **도움말**
-
-  도움말 아이콘을 통해 학습 및 지원 리소스에 빠르게 액세스할 수 있습니다. 이 기능은 문제가 발생하거나 특정 기능에 대한 지침이 필요한 경우에 특히 유용합니다. 이 섹션을 통해 피드백을 제출할 수도 있습니다.
-
-  ![도움말](/help/edge/docs/forms/universal-editor/assets/ue-help.png)
-
-- **알림**
-
-  **알림** 섹션에는 IMS 조직에서 현재 할당된 불완전한 알림, 요청 및 현재 작업의 수가 표시됩니다. 이 섹션을 주시하면 워크플로우를 최신 상태로 유지하는 데 도움이 됩니다.
-
-  ![알림](/help/edge/docs/forms/universal-editor/assets/ue-notification.png)
-
-- **솔루션**
-
-  **솔루션** 메뉴를 사용하면 다른 Adobe Experience Cloud 솔루션으로 전환할 수 있으므로 워크플로우의 다양한 도구 간에 쉽게 이동할 수 있습니다.
-
-  ![솔루션](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png)
-
-- **사용자 프로필**
-
-  이 아이콘에는 현재 로그인한 IMS 조직의 이름과 함께 프로필 정보가 표시됩니다. 계정 설정 및 로그아웃 옵션에 액세스하려면 이 아이콘을 클릭하십시오.
-
-  ![작성자](/help/edge/docs/forms/universal-editor/assets/ue-author.png)
-
-### 범용 편집기 도구 모음
-
-도구 모음에서는 필수 탐색 및 편집 도구를 제공합니다. 이를 통해 양식 간에 이동하거나, 양식을 게시 또는 게시 취소하고, 양식 속성을 편집하고, 규칙 편집기에 액세스하여 동적 동작을 추가할 수 있습니다.
-
-![유니버설 편집기 도구 모음](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
-
-각 구성 요소가 제공하는 기능은 다음과 같습니다.
-
-- **홈 단추**
-
-  홈 버튼을 누르면 유니버설 편집기의 시작 페이지로 돌아갑니다. 이 기능은 다른 양식에서 작업을 시작해야 할 때 유용합니다. 위치 표시줄에 URL을 직접 입력하여 편집할 양식으로 이동할 수도 있습니다.
-
-  ![유니버설 편집기 홈](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
-
-- **위치 표시줄**
-
-  **위치 표시줄**&#x200B;에 현재 편집 중인 양식 주소가 표시됩니다. 다른 양식으로 전환하려면 위치 표시줄을 클릭하고 해당 URL을 입력하면 됩니다. 위치 표시줄의 포커스를 설정하는 키보드 단축키는 `l`입니다.
-
-  ![위치 표시줄](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
-
-- **규칙 편집기**
-
-  **규칙 편집기**&#x200B;를 사용하면 직관적인 시각적 인터페이스를 통해 양식에 동적 동작을 추가할 수 있습니다. 이를 통해 사용자 입력에 응답하는 조건, 유효성 검사 및 작업을 만들어 양식을 대화형 및 지능적으로 만들 수 있습니다.
-
-  ![규칙 편집기](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
-
-  >[!NOTE]
-  >
-  > - 규칙 편집기 확장은 범용 편집기에서 기본적으로 활성화되어 있지 않습니다. 이 강력한 기능을 사용하려면 공식 전자 메일 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 문의하세요.
-  > - 규칙을 만들고 관리하는 방법에 대해 알아보려면 문서 [WYSIWYG 작성의 규칙 편집기 소개](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 참조하십시오.
-
-- **양식 속성 편집**
-
-  **양식 속성 편집** 옵션을 사용하면 FDM(양식 데이터 모델) 및 게시 날짜와 같은 중요한 양식 설정을 구성할 수 있습니다. 이러한 속성은 폼이 백 엔드 시스템에서 작동하고 통합되는 방식에 영향을 줍니다.
-
-  ![양식 속성 편집](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
-
-- **인증 헤더 설정**
-
-  **인증 헤더 설정** 옵션을 사용하면 로컬 개발 목적으로 사용자 지정 인증 헤더를 설정할 수 있습니다. 이 기능은 인증 자격 증명이 필요한 양식을 테스트할 때 특히 유용합니다.
-
-  ![인증 헤더](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
-
-- **응답형 모드**
-
-  **응답 모드** 기능을 사용하면 양식이 다양한 장치에 어떻게 표시되는지 테스트할 수 있습니다. 기본적으로 편집기는 데스크탑 레이아웃으로 열리지만, 모바일 보기로 전환하여 작은 화면에서 양식을 사용할 수 있고 매력적인 상태로 유지할 수 있습니다.
-
-  ![응답형 모드](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
-
-- **미리 보기 모드**
-
-  **미리 보기 모드**&#x200B;는 게시할 때 표시되는 양식과 동일하게 양식을 표시합니다. 이렇게 하면 사용자와 마찬가지로 링크 및 단추를 클릭하여 양식과 상호 작용할 수 있습니다. 모든 것이 예상대로 작동하는지 확인하기 위해 게시하기 전에 반드시 수행해야 하는 단계입니다. 키보드 단축키 `p`을(를) 사용하여 편집 모드와 미리 보기 모드 간을 전환합니다.
-
-  ![미리보기](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
-
-- **페이지 열기**
-
-  **페이지 열기** 단추를 사용하면 미리 볼 수 있도록 새 브라우저 탭에서 양식이 열립니다. 이렇게 하면 편집기 인터페이스 없이 폼의 전체 화면을 볼 수 있습니다. 이 작업의 바로 가기 키는 `o`입니다.
-
-  ![페이지 열기](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
-
-- **게시**
-
-  양식을 사용자가 사용할 수 있게 되면 **게시** 버튼을 통해 양식을 실시간으로 사용할 수 있습니다. 양식 만들기 워크플로의 마지막 단계입니다.
-
-  ![게시](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
-
-- **줄임표 메뉴**
-
-  줄임표(...)를 클릭하면 현재 라이브 상태인 양식을 **게시 취소**&#x200B;하는 기능을 포함한 추가 옵션이 표시됩니다. 이 기능은 공용 액세스에서 양식을 일시적으로 제거하거나 업데이트된 버전으로 대체해야 할 때 유용합니다.
-
-  ![줄임표](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
-
-### 속성 패널
-
-**속성 패널**&#x200B;은 인터페이스 오른쪽에 나타나며 양식에서 선택한 내용에 따라 상황별 정보를 표시합니다. 선택한 구성 요소가 없으면 전체 양식 구조가 표시됩니다.
+**속성 패널**(오른쪽)에서 선택한 구성 요소를 사용자 지정하고 양식 구조를 관리할 수 있습니다.
 
 ![속성 패널](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-주요 구성 요소를 살펴보겠습니다.
+**필수 기능:**
 
-- **속성 모드**
+- **속성 모드**(`d` 바로 가기) - 선택한 구성 요소 설정 구성
+- **콘텐츠 트리**(`f` 바로 가기) - 양식 구조 탐색
+- **구성 요소 추가**(`a` 바로 가기) - 새 양식 필드 삽입
+- **구성 요소 작업** - 선택한 요소 복제 또는 삭제
 
-  **속성** 모드에서는 현재 선택한 구성 요소에 대한 설정 및 옵션이 표시됩니다. 여기에서 특정 요구 사항을 충족하도록 양식의 개별 요소를 사용자 정의할 수 있습니다. 선택한 구성 요소의 속성을 여는 키보드 단축키는 `d`입니다.
+### **3. 도구 모음 Essentials - 미리 보기 및 게시**
 
-  ![속성](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+**유니버설 편집기 도구 모음**&#x200B;은(는) 양식을 테스트하고 게시하기 위한 주요 작업을 제공합니다.
 
-- **콘텐츠 트리**
+![범용 편집기 도구 모음](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-  **콘텐츠 트리**&#x200B;에 양식의 계층 구조가 표시됩니다. 이 시각적 표현은 구성 요소가 서로 어떻게 중첩되는지를 이해하는 데 도움이 됩니다. 트리에서 항목을 클릭하면 편집기에서 해당 항목이 선택되고 해당 위치로 스크롤됩니다. 이는 복잡한 형식에서 특히 유용합니다. 키보드 단축키 `f`을(를) 사용하여 콘텐츠 트리 보기를 전환합니다.
+**꼭 알아야 할 도구:**
 
-  ![콘텐츠 트리](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+- **미리 보기 모드**(`p` 바로 가기) - 사용자가 볼 수 있는 양식을 테스트합니다.
+- **응답형 모드** - 모바일 장치에서 양식이 어떻게 표시되는지 확인
+- **페이지 열기**(`o` 바로 가기) - 새 탭에서 양식 보기
+- **게시** - 사용자의 양식을 라이브로 만들기
 
-- **변형 생성**
+### **4. 빠른 시작 워크플로**
 
-  **변형 생성** 기능은 인공 지능을 사용하여 특정 프롬프트에 따라 다른 버전의 양식을 만듭니다. 이렇게 하면 각 변형을 수동으로 만들지 않고도 다양한 접근 방식 및 디자인을 실험할 수 있습니다. 프롬프트는 Adobe에서 제공하거나 사용자가 사용자 정의할 수 있습니다.
+**첫 번째 양식에 대해:**
 
-  ![변형 생성](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+1. **빌드 시작** - **추가** 단추(`a`)를 사용하여 구성 요소를 추가합니다.
+2. **필드 구성** - 구성 요소를 선택하고 **속성 모드**(`d`) 사용
+3. **양식 테스트** - **미리 보기 모드**(`p`)를 사용하여 양식과 상호 작용합니다.
+4. **모바일 보기 확인** - 모바일 테스트를 위해 **응답형 모드**(으)로 전환
+5. **라이브 진행** - 준비되면 **게시** 클릭
 
-  >[!NOTE]
-  >
-  > 양식의 변형 생성 사용에 대한 자세한 지침은 [변형 생성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 문서를 참조하십시오.
+**유효성 검사 검사점:**
 
-- **실험**
+- 양식 필드를 추가하고 구성할 수 있습니까?
+- 미리보기 모드가 제대로 작동합니까?
+- 모든 필수 필드가 올바르게 설정되었습니까?
+- 모바일 장치에서 양식이 잘 표시됩니까?
 
-  **실험** 기능을 사용하면 다양한 양식 디자인과 레이아웃을 비교하는 제어된 테스트를 실행할 수 있습니다. 사용자가 각 변형과 상호 작용하는 방법을 분석함으로써 전환율과 사용자 경험을 최적화하기 위해 데이터 중심의 결정을 내릴 수 있습니다.
+## Experience Cloud 헤더
 
-  ![실험](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+**Experience Cloud 헤더**&#x200B;는 탐색 및 계정 관리 도구를 제공합니다. 대부분의 양식 빌더는 Adobe 도구 간을 전환하거나 도움말에 액세스하는 데 이 도구를 가끔 사용합니다.
 
-- **개인화**
+![Experience Cloud 헤더](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
-  **Personalization** 설정을 통해 양식을 Adobe Experience Platform(AEP) 또는 외부 응용 프로그램에 연결할 수 있습니다. 이 연결을 통해 사용자 데이터 및 동작을 기반으로 맞춤 양식 경험을 만들 수 있으므로 관련성과 참여도를 높일 수 있습니다.
+**키 요소:**
 
-  ![개인화](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+| **요소** | **용도** | **사용 시기** |
+|-------------|-------------|----------------|
+| **Adobe Experience Cloud** | 다른 Adobe 도구로 이동 | 사이트 간 전환, Assets, Forms |
+| **조직** | 조직 간 전환 | 다중 조직 액세스 시나리오 |
+| **도움말** | 설명서 및 지원 액세스 | 지침이 필요하거나 피드백을 제출하려는 경우 |
+| **알림** | 할당된 작업 및 경고 보기 | 워크플로우 상태 확인 |
+| **솔루션** | 다른 Adobe 솔루션에 대한 빠른 액세스 | 다른 Adobe 제품 간 이동 |
+| **사용자 프로필** | 계정 설정 및 로그아웃 | 계정 관리 또는 사용자 전환 |
 
-- **A/B 테스트**
+**가장 일반적인 사용:**
 
-  **A/B 테스트**&#x200B;를 통해 양식의 특정 변형을 비교하여 더 나은 성과를 확인할 수 있습니다. 광범위한 실험과 달리, A/B 테스트는 일반적으로 가장 효과적인 옵션을 식별하기 위해 특정 요소 또는 변경 사항을 비교하는 데 중점을 둡니다.
+- **도움말 보기** - 도움말 아이콘을 클릭하여 설명서 및 지원을 확인합니다.
+- **조직 전환** - 다중 조직 액세스 권한이 있는 경우 조직 드롭다운을 사용합니다.
 
-  ![A/B 테스트](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+## 범용 편집기 도구 모음
 
-- **작업 관리**
+**유니버설 편집기 도구 모음**&#x200B;에는 기본 양식 편집 및 게시 도구가 포함되어 있습니다. 사용 빈도와 일반적인 워크플로우별로 구성됩니다.
 
-  **작업 관리** 기능을 사용하면 팀이 양식 만들기 및 최적화와 관련된 작업을 구성하고, 추적하고, 완료할 수 있으므로 공동 작업을 간소화할 수 있습니다. 따라서 명확한 책임감을 갖고 프로젝트를 효율적으로 진행할 수 있습니다.
+![범용 편집기 도구 모음](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-  ![작업 관리](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+### **일별 워크플로 도구**
 
-- **콘텐츠 초안**
+**이러한 도구는 대부분의 양식 작성 세션에서 사용됩니다.**
 
-  **콘텐츠 초안** 기능을 사용하면 양식에 텍스트 요소의 임시 버전을 만들고 저장할 수 있습니다. 기존 양식 텍스트를 사용하여 초안을 만들거나 처음부터 시작한 다음 필요에 따라 편집하거나 삭제할 수 있습니다. 기본적으로 3개의 초안이 표시되지만 **모두 표시**&#x200B;를 클릭하면 추가 초안이 표시됩니다.
+#### **미리 보기 모드**(`p` 바로 가기)
 
-  ![콘텐츠 초안](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+**목적:** 사용자가 경험하는 대로 양식을 테스트하십시오\
+**사용할 시기:** 게시 전, 변경 후 양식 기능을 테스트하기 위해
 
-- **데이터 Source**
+![미리보기 모드](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-  **데이터 Source** 옵션을 사용하면 FDM(양식 데이터 모델)의 데이터 소스를 구성하고 선택할 수 있습니다. 이 통합을 통해 선택한 소스의 모든 데이터 모델 개체, 속성 및 서비스를 양식에서 사용할 수 있으므로 동적 데이터 검색 및 제출이 가능합니다.
+**모범 사례:** 모든 주요 변경 후 미리 보기하여 문제를 조기에 발견할 수 있습니다.
 
-  ![데이터 Source](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+#### **반응형 모드**
 
-- **추가**
+**목적:** 모바일 장치에서 양식이 어떻게 표시되는지 확인\
+**사용 시기:** 양식을 작성한 후 게시하기 전
 
-  **추가** 단추에 현재 선택한 컨테이너에 추가할 수 있는 구성 요소의 드롭다운 목록이 표시됩니다. 예를 들어 적응형 양식 섹션을 선택하면 이 목록에는 해당 섹션에 추가할 수 있는 모든 구성 요소가 표시됩니다. 이 구성 요소 목록을 여는 키보드 단축키는 `a`입니다.
+![반응형 모드](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-  ![아이콘 추가](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+**모범 사례:** 항상 모바일 보기를 테스트합니다. 많은 사용자가 휴대폰에서 양식에 액세스합니다.
 
-- **복제**
+#### **페이지 열기**(`o` 바로 가기)
 
-  **복제** 옵션을 사용하면 선택한 구성 요소의 정확한 복사본이 만들어집니다. 이렇게 하면 처음부터 만드는 대신 복제한 다음 수정할 수 있으므로 유사한 여러 요소가 필요할 때 시간을 절약할 수 있습니다.
+**목적:** 편집기 인터페이스 없이 새 탭에서 양식을 봅니다.\
+**사용할 시기:** 전체 화면 테스트의 경우 관련자와 공유하여 검토하십시오.
 
-  ![중복 아이콘](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+    ![Open Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
-- **삭제**
+#### **게시**
 
-  **삭제** 옵션을 사용하면 선택한 구성 요소가 양식에서 제거됩니다. 이 옵션은 확인 프롬프트 없이 요소가 즉시 제거되므로 이 옵션을 사용할 때는 주의하십시오.
+**목적:** 양식을 라이브로 만들어 사용자가 액세스할 수 있도록 합니다.\
+**사용할 시기:** 미리 보기 및 반응형 모드에서 철저한 테스트 후
 
-  ![삭제](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+    ![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
-### 편집기
+게시 전 **유효성 검사 목록:**
 
-편집기는 양식을 만들고 수정하는 중앙 작업 영역입니다. 이 보고서는 위치 표시줄에 지정된 양식을 표시하고 양식이 사용자에게 표시되는 방식을 정확하게 보여 주는 WYSIWYG 환경을 제공합니다. 미리 보기 모드에서는 사용자와 마찬가지로 양식과 상호 작용하여 버튼과 링크를 통한 탐색을 테스트할 수 있습니다.
+- 미리 보기 모드에서 테스트된 양식
+- 모바일 응답성 확인됨
+- 모든 필수 필드가 구성됨
+- 올바르게 작동하는 작업 제출
 
-![편집기](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+### **탐색 도구**
 
-편집기에서 구성 요소를 추가하고, 속성을 구성하고, 배열하여 직관적이고 효과적인 양식 경험을 만들 수 있습니다.
+#### **홈 버튼**
 
-## 키보드 단축키 요약
+**목적:** 유니버설 편집기 시작 페이지로 돌아가기\
+**사용할 시기:** 다른 양식에서 작업을 시작하는 중
 
-생산성을 향상시키려면 다음과 같은 중요한 키보드 단축키를 기억하십시오.
+![홈 버튼](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
-- `l` - 위치 표시줄에 포커스 지정
-- `p` - 편집 모드와 미리 보기 모드 간 전환
-- `o` - 새 탭에서 양식을 엽니다.
-- `d` - 선택한 구성 요소의 속성 열기
-- `f` - 콘텐츠 트리 보기 전환
-- `a` - 추가할 구성 요소 목록을 엽니다.
+#### **위치 표시줄**(`l` 바로 가기)
 
+**목적:** URL로 모든 양식으로 직접 이동\
+**사용할 시기:** 특정 양식 간에 빠르게 전환합니다.
+
+![위치 표시줄](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
+
+### **고급 구성 도구**
+
+**다음 도구는 특정 시나리오 또는 고급 설정에 사용됩니다.**
+
+#### **양식 속성 편집**
+
+**목적:** FDM(양식 데이터 모델) 및 게시 날짜와 같은 양식 수준 설정을 구성합니다.\
+**사용할 시기:** 데이터 통합 설정, 게시 예약
+
+![양식 속성](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+#### **규칙 편집기**(조기 액세스)
+
+**목적:** 동적 동작, 유효성 검사 및 조건부 논리 추가\
+**사용할 시기:** 복잡한 비즈니스 논리를 사용하여 대화형 양식을 만드는 중
+
+![규칙 편집기](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
+
+>[!IMPORTANT]
+>
+> **조기 액세스 기능:** 규칙 편집기에는 특수 액세스가 필요합니다. 이 기능을 사용하려면 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)에 문의하세요.
+>
+> **자세히 알아보기:** 자세한 지침은 [규칙 편집기 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 참조하세요.
+
+#### **인증 헤더 설정**
+
+**목적:** 개발 테스트를 위해 사용자 지정 인증 헤더를 설정합니다\
+**사용할 시기:** 인증이 필요한 양식으로 로컬 개발
+
+![인증 헤더](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
+
+#### **추가 옵션**(줄임표 메뉴)
+
+**목적:** 게시 취소와 같이 덜 일반적인 작업에 액세스합니다.\
+**사용할 시기:** 양식을 오프라인으로 전환하고 고급 옵션에 액세스
+
+![추가 옵션](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
+
+## 속성 패널
+
+**속성 패널**(오른쪽)은 양식을 작성하고 구성하는 컨트롤 센터입니다. 선택한 항목에 따라 달라지며 여러 작업에 대해 다양한 도구를 제공합니다.
+
+![속성 패널](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+
+### **핵심 양식 작성 도구**
+
+**다음 도구는 양식을 만들고 구성하는 데 필수적입니다.**
+
+#### **구성 요소 추가**(`a` 바로 가기)
+
+**목적:** 새 양식 필드 및 요소 삽입\
+**작동 방법:** 선택한 컨테이너에 대해 사용 가능한 구성 요소를 표시합니다.
+
+![구성 요소 추가](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+
+**일반 구성 요소:**
+
+- 텍스트 입력, 이메일, 전화 필드
+- 드롭다운, 라디오 버튼, 확인란
+- 파일 업로드, 날짜 선택
+- 조직용 패널 및 섹션
+
+#### **속성 모드**(`d` 바로 가기)
+
+**목적:** 선택한 구성 요소에 대한 설정을 구성합니다.\
+**사용 시기:** 동작을 사용자 지정할 구성 요소를 추가한 후
+
+![속성 모드](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+
+**키 설정:**
+
+- 필드 레이블 및 자리 표시자 텍스트
+- 검증 규칙(필수, 형식, 길이)
+- 기본값 및 도움말 텍스트
+- 조건부 가시성 규칙
+
+#### **콘텐츠 트리**(`f` 바로 가기)
+
+**목적:** 양식 구조 탐색 및 구성\
+**사용할 시기:** 여러 섹션이 있는 복합 양식, 특정 구성 요소 찾기
+
+![콘텐츠 트리](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+
+**이점:**
+
+- 구성 요소에 대한 빠른 탐색
+- 시각적 양식 계층
+- 요소 재정렬 용이
+
+#### **구성 요소 작업**
+
+**목적:** 기존 구성 요소 관리\
+**사용 가능한 작업:**
+
+- **복제** - 빠르게 구성 요소 복사 ![복제](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+- **삭제** - 구성 요소 제거(확인 메시지 없음) ![삭제](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+
+### **고급 기능 및 통합**
+
+**이러한 도구를 사용하면 정교한 양식 기능을 사용할 수 있습니다.**
+
++++데이터 통합
+
+#### **데이터 소스**
+
+**목적:** 양식을 백엔드 데이터 시스템에 연결\
+**사용할 시기:** 데이터베이스 또는 외부 서비스에 읽기/쓰기가 필요한 Forms
+
+![데이터 소스](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+
+**기능:**
+
+- 양식 데이터 모델(FDM) 구성
+- 동적 데이터 채우기
+- 외부 시스템에 제출
+
++++
+
++++AI 기반 도구
+
+#### **변형 생성**
+
+**목적:** AI를 사용하여 다른 버전의 양식 콘텐츠를 만듭니다\
+**사용할 시기:** 다른 텍스트, 레이아웃 또는 접근 방식으로 실험
+
+    ![변형 생성](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+
+**자세히 알아보기:** [변형 생성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+
+#### **콘텐츠 초안**
+
+**목적:** 예비 텍스트 버전 만들기 및 저장\
+**사용할 시기:** 양식 사본에서 반복, 대체 텍스트 옵션 저장
+
+![콘텐츠 초안](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+
++++
+
++++테스트 및 최적화
+
+#### **A/B 테스트**
+
+**목적:** 양식 변형을 비교하여 성능 최적화\
+**사용 시기:** 전환율 최적화, 다양한 디자인 테스트
+
+![A/B 테스트](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+
+#### **실험**
+
+**목적:** 폼 디자인에서 제어된 테스트 실행\
+**사용할 시기:** 데이터 기반 양식 최적화, 사용자 경험 테스트
+
+    ![실험](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+
++++
+
++++Collaboration 도구
+
+#### **작업 관리**
+
+**목적:** 양식 프로젝트를 위한 팀 워크플로 구성\
+**사용할 시기:** 여러 사람이 사용하는 양식 개발, 프로젝트 추적
+
+![작업 관리](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+
+#### **개인화**
+
+**목적:** 맞춤형 경험을 위해 Adobe Experience Platform과 연결\
+**사용할 시기:** 사용자 데이터를 기반으로 개인화된 양식 만들기
+
+    ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+
++++
+
+## 편집기 캔버스
+
+**편집기 캔버스**&#x200B;는 시각적으로 양식을 작성하는 기본 작업 영역입니다. 사용자에게 양식이 표시되는 방식을 정확하게 표시하고 변경할 때 실시간 피드백을 제공합니다.
+
+![편집기 캔버스](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+
+**주요 기능:**
+
+- **WYSIWYG 편집** - 변경 내용을 즉시 확인할 수 있음
+- **직접 상호 작용** - 구성 요소를 클릭하여 선택하고 편집합니다.
+- **실시간 미리 보기** - 기능을 테스트하려면 미리 보기 모드로 전환합니다.
+- **응답형 디스플레이** - 장치 보기를 전환하여 모바일 호환성을 확인합니다.
+
+**모범 사례:**
+
+- **구조체로 시작** - 자세한 구성 요소 앞에 주 섹션 추가
+- **자주 테스트** - 미리 보기 모드를 정기적으로 사용하여 문제를 조기에 파악합니다.
+- **모바일 우선 고려** - 디자인 프로세스 전체에서 응답형 모드 확인
+
+## 키보드 단축키
+
+다음과 같은 단축키를 기본으로 사용하여 양식을 보다 빠르고 효율적으로 작성할 수 있습니다.
+
+| **바로 가기** | **작업** | **사용 시기** |
+|--------------|------------|----------------|
+| `a` | 구성 요소 목록 열기 | 새 양식 필드 추가 |
+| `d` | 구성 요소 속성 열기 | 선택한 요소 구성 |
+| `f` | 콘텐츠 트리 전환 | 복잡한 양식 탐색 |
+| `p` | 미리 보기 모드 전환 | 양식 기능 테스트 |
+| `o` | 새 탭에서 양식 열기 | 전체 화면 테스트 |
+| `l` | 포커스 위치 막대 | 다른 양식으로 전환 |
+
+**Pro 팁:** 이러한 단축키를 함께 사용하십시오. 예를 들어 구성 요소를 선택하고 `d`을 눌러 구성한 다음 `p`을 눌러 변경 내용을 테스트하십시오.
+
+## 일반 워크플로우
+
+### **첫 번째 양식 만들기**
+
+1. **구조 추가** - 양식 섹션에 패널을 추가하려면 `a`을(를) 사용합니다.
+2. **필드 추가** - 텍스트 입력, 전자 메일 및 기타 구성 요소 삽입
+3. **속성 구성** - 각 필드를 선택하고 `d`을 눌러 레이블과 유효성 검사를 설정합니다.
+4. **기능 테스트** - 양식을 미리 보고 테스트하려면 `p`을(를) 누르십시오.
+5. **모바일 보기 확인** - 응답형 모드를 사용하여 모바일 디스플레이를 확인합니다.
+6. **게시** - 라이브로 전환할 준비가 되면 게시 클릭
+
+### **기존 Forms 편집**
+
+1. **구조 탐색** - 콘텐츠 트리(`f`)를 사용하여 구성 요소를 빠르게 찾습니다.
+2. **선택 및 수정** - 구성 요소를 직접 클릭하거나 콘텐츠 트리를 사용합니다.
+3. **변경 내용 테스트** - 각 중요 변경 후 미리 보기(`p`)
+4. **워크플로 유효성 검사** - 다시 게시하기 전에 전체 양식 흐름을 테스트합니다.
+
+### **팀과 공동 작업**
+
+1. **작업 관리 사용** - 팀원에게 특정 양식 섹션 할당
+2. **검토를 위해 공유** - 열린 페이지(`o`)를 사용하여 미리 보기를 정리합니다.
+3. **함께 테스트** - 공동 테스트 세션에 미리 보기 모드 사용
+4. **진행 상황 추적** - 작업 업데이트에 대한 알림 확인
+
+## 일반적인 문제 해결
+
+### **인터페이스 문제**
+
++++인터페이스 요소가 로드되지 않음
+
+**문제:** 도구 모음 단추, 속성 패널 또는 기타 인터페이스 요소가 표시되지 않습니다.
+
+**솔루션:**
+
+- **페이지 새로 고침** - 간단한 브라우저 새로 고침으로 로드 문제가 해결되는 경우가 많습니다
+- **브라우저 호환성 확인** - Chrome, Firefox 또는 Safari 사용
+- **브라우저 캐시 지우기** - 오래된 캐시된 파일을 제거합니다.
+- **권한 확인** - 양식 편집에 대한 적절한 액세스 권한이 있는지 확인
+
++++
+
++++구성 요소가 응답하지 않음
+
+**문제:** 구성 요소를 선택할 수 없거나 속성 패널이 업데이트되지 않습니다.
+
+**솔루션:**
+
+- **구성 요소를 직접 클릭** - 빈 영역을 클릭하지 마십시오.
+- **콘텐츠 트리 사용** - `f`을 누르고 트리에서 구성 요소를 선택하십시오.
+- **겹치는 요소 확인** - 일부 구성 요소가 다른 구성 요소를 차단하고 있을 수 있습니다.
+- **양식 다시 로드** - 위치 표시줄(`l`)을 사용하여 현재 양식 다시 로드
+
++++
+
++++미리보기 모드 문제
+
+**문제:** 미리 보기 모드가 제대로 작동하지 않거나 오류가 표시됩니다
+
+**솔루션:**
+
+- **양식 유효성 검사 확인** - 모든 필수 필드가 올바르게 구성되었는지 확인
+- **먼저 편집 모드에서 테스트** - 미리 보기 전에 구성 요소가 작동하는지 확인
+- **브라우저 캐시 지우기** - 캐시된 스크립트가 미리 보기를 방해할 수 있습니다.
+- **구성 요소 구성 확인** - 오류에 대한 속성 모드 설정 검토
+
++++
+
+## 효율적인 양식 구축을 위한 모범 사례
+
+### **조직 팁**
+
+- **설명 이름 사용** - 속성 모드에서 구성 요소에 레이블을 명확하게 지정합니다.
+- **관련 필드 그룹화** - 패널을 사용하여 양식 섹션을 논리적으로 구성하십시오.
+- **빌드 전 계획** - 시작하기 전에 양식 구조를 스케치합니다.
+- **단순하게 유지** - 필드가 너무 많아 사용자가 압도되지 않도록 합니다.
+
+### **성능 최적화**
+
+- **구성 요소 최소화** - 필요한 양식 필드만 사용
+- **이미지 최적화** - 양식에서 사용되는 모든 이미지 압축
+- **모바일에서 테스트** - 느린 모바일 연결에서 성능을 확인하십시오.
+- **일찍 유효성 검사** - 전송 오류를 방지하기 위해 적절한 유효성 검사를 설정하십시오.
+
+### **사용자 경험**
+
+- **자주 테스트** - 모든 주요 변경 후 미리 보기 모드 사용
+- **사용자로 생각하기** - 전체 양식 채우기 환경을 고려하십시오.
+- **명확한 레이블 제공** - 필드 용도를 사용자에게 명확하게 지정
+- **유용한 텍스트 추가** - 복잡한 필드에 도움말 텍스트를 사용합니다.
+
+## 다음 단계
+
+이제 범용 편집기 인터페이스를 이해했습니다.
+
+1. **간단한 양식으로 연습** - 익숙해지려면 기본 필드에서 시작하십시오.
+2. **고급 기능 살펴보기** - 준비되면 AI 기반 도구 및 통합 사용
+3. **양식 작성 학습** - [시작 안내서 참조](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+4. **기본 규칙 편집기** - [규칙 편집기 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 사용하여 동적 동작 추가
+
+**사용자 지정:** 유니버설 편집기는 양식 빌드를 직관적으로 만들도록 설계되었습니다. 필수 요소부터 시작하여 요구 사항이 증가함에 따라 점차 고급 기능을 살펴보십시오.
 
