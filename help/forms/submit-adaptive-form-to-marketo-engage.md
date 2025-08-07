@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![워크플로](/help/forms/assets/workflow-marketo-3.png)
 
-적응형 Forms 편집기는 처리를 위해 적응형 Forms 데이터를 Adobe Marketo Engage으로 보내기 위한 **Marketo Engage에 제출** 제출 액션을 제공합니다. 제출 시 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)에 데이터를 제출하도록 기존 적응형 양식을 구성할 수 있습니다.
+적응형 Forms 편집기는 처리를 위해 적응형 Forms 데이터를 Adobe Marketo Engage으로 보내기 위한 **Marketo Engage에 제출** 제출 액션을 제공합니다. 제출 시 [Adobe Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo/using/home)에 데이터를 제출하도록 기존 적응형 양식을 구성할 수 있습니다.
 
 양식 제출을 처리하기 위한 다양한 기본 제출 액션을 사용할 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
@@ -97,7 +97,7 @@ Adobe Marketo Engage에 데이터를 제출하도록 핵심 구성 요소 기반
 
 ## 다음 단계
 
-[Munchkin 라이브러리](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
+[Munchkin 라이브러리](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
 
 ## 관련 문서
 
