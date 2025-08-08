@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -142,7 +142,7 @@ ht-degree: 2%
 
        >[!NOTE]
        >
-       > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
+   > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
 
 +++
 
@@ -267,18 +267,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    &rbrace;
+    }
     
     
     &quot;
@@ -431,8 +431,6 @@ FDM 기반 양식에 대한 **JSON 예:**
 양식당 하나의 기본 미리 채우기 서비스를 구성할 수 있습니다. 그러나 단일 양식 데이터 모델 내에서 서로 다른 데이터 소스를 결합하여 유사한 기능을 수행할 수 있습니다.
 
 +++
-
-=
 
 ## 관련 항목
 
