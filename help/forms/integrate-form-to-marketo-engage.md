@@ -16,7 +16,7 @@ ht-degree: 5%
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-AEM Forms을 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)과(와) 통합하면 사용자가 Marketo Engage의 기능을 활용하여 캡처된 데이터에서 비즈니스 논리를 만들고 스마트 캠페인 및 이메일 자동화를 비롯한 워크플로우를 자동화할 수 있습니다. 구성된 양식은 캡처된 데이터를 처리를 위해 Marketo Engage으로 전송할 수 있습니다.
+AEM Forms을 [Adobe Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo/using/home)과(와) 통합하면 사용자가 Marketo Engage의 기능을 활용하여 캡처된 데이터에서 비즈니스 논리를 만들고 스마트 캠페인 및 이메일 자동화를 비롯한 워크플로우를 자동화할 수 있습니다. 구성된 양식은 캡처된 데이터를 처리를 위해 Marketo Engage으로 전송할 수 있습니다.
 
 ## Marketo Engage과 양식 통합의 이점
 
@@ -52,7 +52,7 @@ AEM Forms을 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/m
 Marketo Engage과 AEM Forms을 통합하는 동안 고려할 사항:
 
 * AEM은 다양한 Marketo 데이터베이스 중 사람(잠재 고객) 데이터베이스만 지원합니다.
-* Marketo을 사용하면 [10개의 사용자 지정 개체를 만들 수](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)을(를) 사용자 정의 개체로 만들어 Lead의 표준 필드 이상의 특수 데이터를 저장할 수 있으므로 고유한 비즈니스 요구 사항을 지원합니다.
+* Marketo을 사용하면 [10개의 사용자 지정 개체를 만들 수](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)을(를) 사용자 정의 개체로 만들어 Lead의 표준 필드 이상의 특수 데이터를 저장할 수 있으므로 고유한 비즈니스 요구 사항을 지원합니다.
 * AEM은 사용자 정의 객체가 리드 데이터베이스와 연결된 경우에만 액세스할 수 있습니다
 
 ## Marketo Engage과 양식 통합을 위한 사전 요구 사항
@@ -60,7 +60,7 @@ Marketo Engage과 AEM Forms을 통합하는 동안 고려할 사항:
 Marketo Engage을 AEM Forms과 연결하기 위한 사전 요구 사항은 다음과 같습니다.
 
 * 유효한 Adobe Marketo Engage 라이선스
-* 클라우드 구성을 만들기 위해 [클라이언트 ID 및 클라이언트 암호를 검색](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)하는 Marketo Engage의 작업 인스턴스.
+* 클라우드 구성을 만들기 위해 [클라이언트 ID 및 클라이언트 암호를 검색](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)하는 Marketo Engage의 작업 인스턴스.
 
 ## AEM Forms(적응형 Forms)와 Marketo Engage을 연결하는 클라우드 서비스 구성 만들기
 
