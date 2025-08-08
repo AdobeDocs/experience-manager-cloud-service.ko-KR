@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 23%
+source-wordcount: '2197'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=ko#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Acrobat Sign]은(는) 적응형 Forms 및 AEM 워크플로우에 전자 서명 워크플로우를 사용합니다. 전자 서명은 법무, 판매, 임금, 인적 자원 관리 등의 다양한 분야에서 문서를 처리하는 워크플로를 개선합니다.
@@ -37,7 +37,7 @@ ht-degree: 23%
 1. 활성 [Adobe Acrobat Sign 개발자 계정.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. [Adobe Acrobat Sign API 응용 프로그램](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. [!DNL Adobe Acrobat Sign] API 애플리케이션의 자격 증명(클라이언트 ID 및 클라이언트 보안).
-1. (정부 ID 기반 인증만 해당) 정부 ID 인증에 대해 [인증 방법을 사용](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html#AuditReport)합니다.
+1. (정부 ID 기반 인증만 해당) 정부 ID 인증에 대해 [인증 방법을 사용](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport)합니다.
 
 ### AEM Forms 작성자 및 게시 인스턴스와 Adobe Acrobat Sign 연결 {#configure-adobe-sign-with-aem-forms}
 
@@ -65,7 +65,7 @@ ht-degree: 23%
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. 현재 브라우저 창에 있는 URL을 메모장에 복사하고 URL에서 `/ui#/aem` 부분을 제거합니다. 이후 단계에서 [!DNL AEM Forms]&#x200B;(으)로 [!DNL Adobe Acrobat Sign] 응용 프로그램을 구성하려면 수정된 URL이 필요합니다. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. 현재 브라우저 창에 있는 URL을 메모장에 복사하고 URL에서 `/ui#/aem` 부분을 제거합니다. 이후 단계에서 [!DNL Adobe Acrobat Sign]&#x200B;(으)로 [!DNL AEM Forms] 응용 프로그램을 구성하려면 수정된 URL이 필요합니다. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 1. **[!UICONTROL 설정]** 탭에서,
    * **[!UICONTROL OAuth URL]** 필드에 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함되어 있습니다. URL 형식은 다음과 같습니다.
@@ -84,11 +84,11 @@ ht-degree: 23%
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
-   >* **Adobe Acrobat Sign 구성 만들기** 페이지를 열어 두십시오. 닫지 마세요. 향후 단계에 설명된 대로 [!DNL Adobe Acrobat Sign] 응용 프로그램에 대한 OAuth 설정을 구성한 후 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;을(를) 검색할 수 있습니다.
+   >* **Adobe Acrobat Sign 구성 만들기** 페이지를 열어 두십시오. 닫지 마세요. 향후 단계에 설명된 대로 **응용 프로그램에 대한 OAuth 설정을 구성한 후**&#x200B;클라이언트 ID **및**&#x200B;클라이언트 암호[!DNL Adobe Acrobat Sign]을(를) 검색할 수 있습니다.
    > * Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign OAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
 
 1. [!DNL Adobe Acrobat Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
@@ -119,11 +119,11 @@ ht-degree: 23%
 
 1. **[!UICONTROL 첨부 파일에 Adobe Acrobat Sign 사용]** 옵션을 선택하여 적응형 양식에 첨부된 파일을 서명을 위해 전송된 해당 [!DNL Adobe Acrobat Sign] 문서에 추가하십시오.
 
-1. **[!UICONTROL Adobe Acrobat Sign에 연결]**&#x200B;을 선택합니다. 자격 증명을 입력하라는 메시지가 표시되면 [!DNL Adobe Acrobat Sign] 응용 프로그램을 만드는 동안 사용된 계정의 **사용자 이름** 및 **암호**&#x200B;을(를) 제공하십시오. `your developer account`에 대한 액세스 권한을 확인하라는 메시지가 표시되면 **[!UICONTROL 액세스 허용]**&#x200B;을 클릭하세요. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
+1. **[!UICONTROL Adobe Acrobat Sign에 연결]**&#x200B;을 선택합니다. 자격 증명을 입력하라는 메시지가 표시되면 **응용 프로그램을 만드는 동안 사용된 계정의**&#x200B;사용자 이름&#x200B;**및**&#x200B;암호[!DNL Adobe Acrobat Sign]을(를) 제공하십시오. `your developer account`에 대한 액세스 권한을 확인하라는 메시지가 표시되면 **[!UICONTROL 액세스 허용]**&#x200B;을 클릭하세요. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
 
    ![Adobe Acrobat Sign 클라우드 구성 성공](assets/adobe-sign-cloud-configuration-success.png)
 
-1. [!DNL Adobe Acrobat Sign] 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
+1. **[!UICONTROL 구성을 만들려면]**&#x200B;만들기[!DNL Adobe Acrobat Sign]를 선택하십시오.
 
 1. 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭한 다음 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭합니다. 해당 게시 환경에 구성이 복사됩니다.
 
@@ -197,7 +197,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
 #### 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결합니다.
 
-1. 브라우저에서 `re-direct URL`을(를) 엽니다. [AEM 인스턴스에서 리디렉션 URL 만들기](#create-a-redirect-url-for-your-aem-instance) 섹션의 마지막 단계에서 `re-direct URL`을(를) 만들고 기록했습니다.
+1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[ 섹션의 마지막 단계에서 ](#create-a-redirect-url-for-your-aem-instance)을(를) 만들고 기록했습니다.
 
 1. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지의 **[!UICONTROL 일반]** 탭에서 구성에 대한 **[!UICONTROL 이름]**&#x200B;을 지정하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다. 필요에 따라 **[!UICONTROL 제목]**&#x200B;을 지정하고 구성에 대한 **[!UICONTROL 썸네일]**&#x200B;을 찾아 선택할 수 있습니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -225,7 +225,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -239,7 +239,9 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    ![Adobe Acrobat Sign 클라우드 구성 성공](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
@@ -258,9 +260,9 @@ AEM Forms as a Cloud Service은 정의된 간격으로 서명자 상태를 확�
 
 기본값으로 [!DNL Adobe Acrobat Sign] 스케줄러 서비스는 서명자 응답을 24시간마다 점검(가져옴)합니다. 해당 환경에 맞게 기본값 간격을 변경할 수 있습니다.
 
-기본 간격을 변경하려면 **Adobe Acrobat Sign 구성 서비스** 구성의 **sign.status.exp** 속성에 대해 [cron 식](https://en.wikipedia.org/wiki/Cron#CRON_expression)을 지정하십시오.
+기본 간격을 변경하려면 [Adobe Acrobat Sign 구성 서비스](https://en.wikipedia.org/wiki/Cron#CRON_expression) 구성의 **sign.status.exp** 속성에 대해 **cron 식**&#x200B;을 지정하십시오.
 
-예를 들어 매일 오전 0시에 구성 서비스를 실행하려면 **Adobe Acrobat Sign 구성 서비스** 구성의 **sign.status.exp** 속성을 설정하여 `0 0 0 1/1 * ? *`을(를) 지정하십시오. 다음의 JSON 파일은 매일 오전 00:00에 구성 서비스를 실행하는 예를 나타낸 것입니다.
+예를 들어 매일 오전 00:00에 구성 서비스를 실행하려면 **Adobe Acrobat Sign 구성 서비스** 구성의 **sign.status.exp** 속성을 설정하여 `0 0 0 1/1 * ? *`을(를) 지정하십시오. 다음 JSON 파일은 매일 오전 00:00에 구성 서비스를 실행하는 샘플을 표시합니다.
 
 ```json
 {
@@ -268,7 +270,7 @@ AEM Forms as a Cloud Service은 정의된 간격으로 서명자 상태를 확�
 }
 ```
 
-구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)하십시오.
+구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)합니다.
 
 ## 자주 묻는 질문
 
