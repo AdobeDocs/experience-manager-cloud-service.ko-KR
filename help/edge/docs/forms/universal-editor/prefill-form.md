@@ -249,7 +249,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **예:**
 
@@ -269,18 +269,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: {
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    }
+    &rbrace;
     
     
     &quot;
