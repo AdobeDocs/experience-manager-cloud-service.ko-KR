@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
-ht-degree: 50%
+source-wordcount: '2271'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 50%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 이제 폴더 수준에서 AI 생성 메타데이터를 비활성화하도록 선택할 수도 있습니다.
 
-
 ### Content Hub의 새로운 기능 {#new-features-content-hub}
 
 **Content Hub의 브랜딩 유연성 향상**
@@ -89,7 +88,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 새로운 파일 및 폴더의 자동 업로드, 파일 작업 개선, 보다 스마트한 에셋 검색, AEM과의 원활한 통합을 통해 더욱 빠르고, 명확하며, 직관적인 콘텐츠 관리를 실현합니다.
 
-전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
+전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### 권한 관리에 대한 주요 보기 {#principal-view}
+
+AEM은 사용자 및 그룹에 대한 권한 관리 기능을 도입합니다. 기본 기능은 클래식 UI와 동일하게 유지되지만 보다 사용자 친화적이고 효율적입니다. 자세한 내용은 [전용 문서](/help/security/touch-ui-principal-view.md)를 참조하십시오.
+
 ### 업데이트된 사용 중단 프로세스 {#updated-deprecation-process}
 
 Adobe는 정기적으로 기능, 라이브러리, API 및 구성을 검토하여 성능, 보안 및 가치에 대한 기준을 충족하는지 확인합니다. 기능이 더 이상 이 기준을 충족하지 못하면 더 이상 사용되지 않으며 지정된 제거 날짜까지 사용을 중단해야 합니다. 이 날짜까지 Adobe는 이메일 알림을 통해 고객에게 알리고, 새 빌드를 진행하거나 배포하기 전에 Cloud Manager에서 수행해야 할 작업을 알려 드립니다. 필요한 조치를 취하지 않으면 AEM의 새 버전으로 업그레이드할 수 없게 되어 보안, 성능, 안정성 및 가용성에 잠재적인 영향을 미칠 수 있습니다.
@@ -222,7 +225,7 @@ OSGi 속성:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 &#x200B;** Java 21 런타임**(으)로 업그레이드되었습니다.
+**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 **Java 21 런타임**(으)로 업그레이드되었습니다.
 
 지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
