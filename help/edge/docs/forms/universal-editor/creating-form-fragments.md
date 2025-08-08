@@ -16,7 +16,7 @@ ht-degree: 97%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
 -->
 
 양식에는 연락처 정보, 신원 정보, 동의 계약과 같은 일반적인 섹션이 포함되는 경우가 많습니다. 양식 개발자는 새로운 양식을 작성할 때마다 이러한 섹션을 만드는데, 이는 반복적이고 시간이 많이 소요되는 작업입니다.
