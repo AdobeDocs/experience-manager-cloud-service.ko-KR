@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 2%
+source-wordcount: '1829'
+ht-degree: 3%
 
 ---
 
@@ -140,9 +140,9 @@ ht-degree: 2%
 
 6. 인수를 저장하려면 **완료**&#x200B;를 클릭하고 FDM을 저장하려면 **저장**&#x200B;을 클릭합니다
 
-       >[!NOTE]
-       >
-       > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
+   >[!NOTE]
+   >
+   > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
 
 +++
 
@@ -151,35 +151,36 @@ ht-degree: 2%
 ### 3단계: 적응형 양식 만들기
 
 1. **Adobe Experience Manager** > **Forms** > **Forms 및 문서**(으)로 이동
-2. **만들기** > **적응형 Forms** 선택
-3. **Source** 탭에서 Edge Delivery Services 템플릿을 선택합니다.
+1. **만들기** > **적응형 Forms** 선택
+1. **Source** 탭에서 Edge Delivery Services 템플릿을 선택합니다.
 
-       ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
-   
-4. **만들기**&#x200B;를 클릭하여 **양식 만들기** 마법사를 엽니다.
-5. 양식 세부 사항 지정:
+   ![Edge Delivery Services 템플릿](/help/edge/assets/create-eds-forms.png)
+
+1. **만들기**&#x200B;를 클릭하여 **양식 만들기** 마법사를 엽니다.
+1. 양식 세부 사항 지정:
+
    - **이름**: 양식에 대한 수사적 이름을 입력하십시오.
    - **제목**: 사용자에게 친숙한 제목을 제공합니다.
    - **GitHub URL**: 저장소 URL(예: `https://github.com/wkndforms/edsforms`) 입력
 
-6. **만들기**&#x200B;를 클릭합니다.
+1. **만들기**&#x200B;를 클릭합니다.
 
-       ![스키마 기반 양식 만들기](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![스키마 기반 양식 만들기](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 작성용 범용 편집기에서 양식이 열립니다.
 
 ### 4단계: 양식 데이터 Source 구성
 
 1. 양식을 선택하고 **속성**&#x200B;을 클릭하세요.
 
-       ![양식 속성 선택](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![양식 속성 선택](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. **양식 모델** 탭을 엽니다.
 3. **다음에서 선택** 드롭다운에서 **양식 데이터 모델(FDM)**&#x200B;을 선택합니다.
 4. 드롭다운에서 만든 양식 데이터 모델(예: PetFDM)을 선택합니다
 
-       ![양식 모델 탭 선택](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![양식 모델 탭 선택](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. **저장 및 닫기** 클릭
 6. 유니버설 편집기에서 편집할 양식 열기
 
@@ -193,6 +194,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
    ![스키마 기반 양식을 보여주는 유니버설 편집기의 스크린샷](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. 양식 필드에 데이터 바인딩 추가:
+
    - 양식 필드 선택
    - **속성** 패널에서 **바인드 참조** 속성을 찾습니다
    - 적절한 데이터 바인딩 참조를 선택합니다
@@ -208,12 +210,14 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 범용 편집기에서 다음 확장이 활성화되어 있는지 확인합니다.
 
 1. **AEM 양식 속성 확장**
+
    - 유니버설 편집기에서 **Extension Manager** 열기
    - **AEM 양식 속성** 확장 사용
 
    ![양식 속성 아이콘](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **데이터 Source 확장**
+1. **데이터 Source 확장**
+
    - **데이터 원본** 아이콘이 보이지 않는 경우 **데이터 원본** 확장 사용
 
    ![범용 편집기 Extension Manager의 스크린샷](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **미리 채우기** 탭을 클릭합니다.
 4. **양식 데이터 모델 미리 채우기 서비스 선택**
 
-       ![미리 채우기 서비스 선택](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![미리 채우기 서비스 선택](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. **저장 및 닫기** 클릭
 
 +++
@@ -247,14 +251,14 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;값>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **예:**
 
-       https://your-preview-url.com?petid=12345
-       
-       ![미리 채우기 양식](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![양식 미리 채우기](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 제공된 매개 변수를 기반으로 양식이 자동으로 데이터로 채워집니다.
 
 +++
@@ -267,18 +271,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    &rbrace;
+    }
     
     
     &quot;
@@ -306,11 +310,11 @@ FDM 기반 양식에 대한 **JSON 예:**
 
 **기본 미리 채우기 테스트:**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **여러 매개 변수 테스트:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## 문제 해결
@@ -330,21 +334,25 @@ FDM 기반 양식에 대한 **JSON 예:**
 +++디버깅 단계
 
 1. **FDM 구성 확인:**
+
    - 서비스가 올바르게 구성되었는지 확인
    - 독립적으로 FDM 서비스 테스트
    - 데이터 소스 연결 확인
 
 2. **양식 구성 확인:**
+
    - 양식이 올바른 FDM과 연결되어 있는지 확인
    - 필드 `bindRef` 값 확인
    - 먼저 미리 채우지 않고 양식 테스트
 
 3. **테스트 데이터 흐름:**
+
    - 브라우저 개발자 도구를 사용하여 네트워크 요청 검사
    - 콘솔에서 JavaScript 오류 확인
    - 응답 데이터 형식 유효성 검사
 
 4. **일반적인 오류 메시지:**
+
    - &quot;미리 채우기 서비스를 찾을 수 없음&quot;: 서비스 구성 확인
    - &quot;데이터 바인딩 실패&quot;: `bindRef` 정확도 확인
    - &quot;잘못된 데이터 형식&quot;: 데이터가 스키마와 일치하는지 확인
