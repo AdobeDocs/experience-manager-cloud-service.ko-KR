@@ -52,7 +52,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 **비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
+1. 환영 이메일에서 아래 그림과 같이 **시작하기**&#x200B;를 클릭합니다.
    ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
