@@ -1,14 +1,14 @@
 ---
 title: Edge Delivery 파이프라인 추가
 description: Edge Delivery 파이프라인을 추가하여 코드를 빌드하고 프로덕션 환경에 배포하는 방법을 알아봅니다.
-index: false
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
+index: false
 hidefromtoc: false
-source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%

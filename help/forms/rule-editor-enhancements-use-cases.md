@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 규칙 편집기 개선 사항 및 사용 사례
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다.
+<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다.
 
 이 문서에서는 적응형 Forms의 규칙 편집기에 대한 최신 개선 사항을 소개합니다. 이러한 업데이트는 사용자 지정 코드를 작성하지 않고도 양식 동작을 보다 쉽게 정의하고, 보다 역동적이고 반응적이며 개인화된 양식 경험을 만들 수 있도록 설계되었습니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 양식, 조각 또는 개별 필드에 **validate()** 메서드를 사용할 수 있습니다. 조각이 양식에 포함된 경우, 유효성 검사 컨텍스트에서 양식과 조각이 모두 옵션으로 나타납니다. 이 경우 조각은 해당 내의 필드를 참조하고, 양식은 조각이 포함된 상위 양식을 참조합니다.
+>양식, 조각 또는 개별 필드에 **validate()** 메서드를 사용할 수 있습니다. 조각이 양식에 포함된 경우, 유효성 검사 컨텍스트에서 양식과 조각이 모두 옵션으로 나타납니다. 이 경우 조각은 해당 내의 필드를 참조하고, 양식은 조각이 포함된 상위 양식을 참조합니다.
 
 ## 규칙 편집기에서 DownloadDor as OOTB 함수
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 기록 문서에 대해 양식이 구성되지 않은 경우 **downloadDoR()** 함수를 사용하는 규칙이 단추에 적용되면 오류 메시지가 표시됩니다.
+>기록 문서에 대해 양식이 구성되지 않은 경우 **downloadDoR()** 함수를 사용하는 규칙이 단추에 적용되면 오류 메시지가 표시됩니다.
 
 **시나리오**: 정부 기관에서 인증서 발급을 위한 디지털 응용 프로그램 양식을 제공합니다. 지원자들은 양식을 제출한 후 기록을 위해 완성된 양식 사본을 요구하거나 다른 부서와 공유해야 하는 경우가 많습니다. 사용자 경험을 개선하기 위해, 이 기관은 지원자들에게 제출 직후 또는 최종 제출 전 어느 단계에서든 기록 문서(DoR)를 다운로드할 수 있는 옵션을 제공하고자 합니다.
 

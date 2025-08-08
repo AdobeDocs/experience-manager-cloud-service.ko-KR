@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -142,7 +142,7 @@ ht-degree: 2%
 
        >[!NOTE]
        >
-       > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
+   > [FDM(양식 데이터 모델)을 사용하여 작업](/help/forms/work-with-form-data-model.md)에서 FDM 서비스를 구성하는 방법에 대해 자세히 알아보십시오.
 
 +++
 
@@ -267,18 +267,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    &rbrace;
+    }
     
     
     &quot;
@@ -432,7 +432,7 @@ FDM 기반 양식에 대한 **JSON 예:**
 
 +++
 
-
+=
 ## 관련 항목
 
 - [범용 편집기에서 양식 데이터 모델과 양식 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)

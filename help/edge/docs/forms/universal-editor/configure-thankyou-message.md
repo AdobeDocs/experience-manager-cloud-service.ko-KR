@@ -4,7 +4,7 @@ description: 양식을 만드는 동안 양식 작성자가 구성할 수 있는
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -56,5 +56,3 @@ ht-degree: 0%
 ![감사합니다](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 양식 작성자는 양식을 제출한 후 양식 사용자가 리디렉션되는 각 양식에 대한 페이지를 구성할 수 있습니다.
-
-

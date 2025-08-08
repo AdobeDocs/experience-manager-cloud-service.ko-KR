@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.6.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.6.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 2679466939e1c2e25e426c62f0fd6bde1bf90b93
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,10 +70,10 @@ Adobe는 정기적으로 기능, 라이브러리, API 및 구성을 검토하여
 
 아래 목록을 확장하여 사용 중단된 API와 OSGi 구성을 확인하십시오. 제거 일정을 포함한 자세한 내용은 사용 중단 문서를 참조하십시오.
 
-<details>
-  <summary>사용 중단 항목을 보려면 확장하십시오.</summary>
++++확장을 확장하여 사용 중단 확인
 
 Java API:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -96,7 +96,7 @@ OSGi 속성:
 * `org.apache.sling.commons.log.LogManager` (모든 속성)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-</details>
++++
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
@@ -125,7 +125,7 @@ OSGi 속성:
 
 #### 콘텐츠 버전 {#mt-content}
 
-* **새로운 환경** (향후 날짜 이후에 생성됨(나중에 전달))
+* **새 환경**(나중에 통신하도록 예정된 날짜 이후에 생성됨)
    * **30일** 이전 버전은 주기적으로 삭제됩니다.
    * 지난 30일 이내의 최신 버전 5개는 보관 기간에 관계없이 가장 최신 버전 및 현재 버전도 함께 유지됩니다.
 
