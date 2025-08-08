@@ -4,10 +4,10 @@ description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 75%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 ## 목표 {#objective}
 
-이 온보딩 여정의 이전 문서인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)에서 AEMaaCS 팀에 적절한 역할을 부여했습니다 이제 팀에서 사용하는 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법에 대해 알아봅니다.
+이 온보딩 여정의 이전 문서인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)에서 AEMaaCS 팀에 적절한 역할을 부여했습니다 이제 팀에서 사용하려는 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법을 알아봅니다.
 
-이 여정의 이전 단계를 완료했으므로 팀에서 Cloud Manager에 액세스할 수 있습니다. Cloud Manager는 프로그램 및 환경과 같은 프로젝트 리소스를 생성하고 관리하는 데 사용됩니다.
+이 여정의 이전 단계를 완료했으므로 팀에서 Cloud Manager에 액세스할 수 있습니다. Cloud Manager은 프로그램 및 환경과 같은 프로젝트 리소스를 만들고 관리하는 데 사용됩니다.
 
 이 문서를 읽은 후에는 다음과 같은 사항을 이해할 수 있습니다.
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단일 진입점 역할을 합니다. Cloud Manager는 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공할 수 있도록 기업 개발 설정 및 특수 목적으로 구축된 CI/CD 파이프라인을 통해 기업 개발 설정을 통해 고객을 지원합니다. Cloud Manager는 클라우드 리소스 및 환경을 생성하는 기능을 포함하여 셀프서비스 방식으로 시작하는 데 필요한 모든 기능을 제공합니다.
+Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단일 진입점 역할을 합니다. Cloud Manager는 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공할 수 있도록 기업 개발 설정 및 특수 목적으로 구축된 CI/CD 파이프라인을 통해 기업 개발 설정을 통해 고객을 지원합니다. Cloud Manager은 클라우드 리소스 및 환경을 만드는 기능을 포함하여 셀프서비스 방식으로 시작하는 데 필요한 모든 기능을 제공합니다.
 
 일반적으로 **비즈니스 소유자** 제품 프로필에 할당된 팀원은 프로그램 및 환경과 같은 클라우드 리소스를 추가할 책임이 있습니다. 이 개인은 비즈니스 요구 사항을 이해하며 초기 Cloud Manager 설정을 완료합니다.
 
@@ -36,17 +36,17 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 ## 시스템 관리자 및 비즈니스 소유자로 Cloud Manager에 액세스 {#access-sysadmin-bo}
 
-**비즈니스 소유자** 역할에 할당한 팀원이 Cloud Manager에 액세스하여 클라우드 리소스 생성을 시작하려면 시스템 관리자에게 **비즈니스 소유자** 역할을 할당해야 합니다. 이 온보딩 여정의 이전 단계에서와 같이 Cloud Manager에 로그인해야 합니다.
+**비즈니스 소유자** 역할에 할당한 팀원이 Cloud Manager에 액세스하여 클라우드 리소스 생성을 시작하려면 먼저 시스템 관리자에게 **비즈니스 소유자** 역할을 할당해야 합니다. 이 온보딩 여정의 이전 단계에서와 같이 Cloud Manager에 로그인해야 합니다.
 
 1. 시스템 관리자로서 **비즈니스 소유자** 역할이 할당되었는지 확인합니다.
 
-   * 이 여정의 이전 단계인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)으로 돌아가서 시스템 관리자에게 **비즈니스 소유자** 역할을 할당하는 방법에 대한 자세한 내용을 참조하십시오.
+   시스템 관리자에게 [비즈니스 소유자](assign-profiles-cloud-manager.md) 역할을 할당하는 방법에 대한 자세한 내용을 보려면 이전 단계인 **Cloud Manager 제품 프로필에 팀원 할당**(으)로 돌아가십시오.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하면 일반 랜딩 페이지가 표시됩니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인합니다.
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로 성공적으로 로그인하여 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager를 초기화합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
+**비즈니스 소유자** 역할이 있는 시스템 관리자로 성공적으로 로그인하여 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager을 초기화합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로서 Cloud Manager에 로그인할 때까지 **비즈니스 소유자** 역할을 가진 다른 사용자는 Cloud Manager에서 프로그램을 작성할 수 없습니다. 이 규칙은 올바른 역할이 할당되더라도 true입니다.
+**비즈니스 소유자** 역할을 가진 시스템 관리자로 Cloud Manager에 로그인할 때까지 **비즈니스 소유자** 역할을 가진 다른 사용자는 Cloud Manager에서 프로그램을 만들 수 없습니다. 이 규칙은 올바른 역할이 할당되더라도 true입니다.
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
@@ -63,7 +63,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 1. Cloud Manager의 랜딩 페이지로 이동합니다.
 
-또는 다음 단계에 따라 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수도 있습니다.
+또는 Adobe Experience Cloud 홈 페이지에서 다음 단계를 사용하여 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다.
 
 1. [Adobe Experience Cloud](https://experience.adobe.com)로 이동한 다음 Adobe ID를 사용하여 로그인합니다.
 
@@ -101,7 +101,7 @@ Cloud Manager에 성공적으로 액세스하면 다음 섹션에 설명된 대�
 
 ### 프로그램이 존재하고 시스템 관리자인 경우 {#programs-exist-sysadmin}
 
-조직에 프로그램이 있고 시스템 관리자인 경우 랜딩 페이지에 **프로그램 추가** 옵션과 함께 **액세스 관리** 버튼이 표시됩니다.
+조직에 프로그램이 있고 시스템 관리자인 경우 랜딩 페이지에 **프로그램 추가** 옵션과 함께 **액세스 관리** 단추가 표시됩니다.
 
 ![시스템 관리자 보기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
