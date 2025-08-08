@@ -8,7 +8,7 @@ badge: label="비공개 베타" type="Positive" url="/help/implementing/cloud-ma
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -26,9 +26,12 @@ ht-degree: 4%
 >
 >다음과 같은 상황이 발생할 때까지 Edge Delivery 파이프라인을 구성할 수 없습니다.
 >
->* 하나의 Edge Delivery Services 사이트 및 하나의 매핑된 도메인을 포함하는 프로그램이 만들어집니다. 그렇지 않으면 **Edge Delivery 파이프라인 추가** 옵션이 사용자 인터페이스에 비활성화되어 있고 누락된 요구 사항에 대해 설명하는 도구 설명이 표시됩니다. <!-- CMGR‑69680 -->
+>* 하나의 Edge Delivery Services 사이트 및 하나의 매핑된 도메인을 포함하는 프로그램이 만들어집니다. 그렇지 않으면 **Edge Delivery 파이프라인 추가** 옵션이 사용자 인터페이스에 비활성화되어 있고 누락된 요구 사항에 대해 설명하는 도구 설명이 표시됩니다.
 >* Git 저장소에는 분기가 하나 이상 있습니다.
 >* 프로덕션 및 스테이징 환경이 생성됩니다.
+
+<!-- CMGR‑69680 -->
+
 
 코드 배포를 시작하기 전에 [!UICONTROL Cloud Manager]에서 파이프라인 설정을 구성하십시오.
 

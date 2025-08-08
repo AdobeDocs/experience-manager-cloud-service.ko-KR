@@ -4,7 +4,7 @@ description: 양식을 만드는 동안 양식 작성자가 구성할 수 있는
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * 범용 편집기 인터페이스에 **양식 속성** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
-> * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+>* 범용 편집기 인터페이스에 **양식 속성** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
+>* 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
 
 ## 리디렉션 또는 감사 메시지를 구성하는 방법
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 리디렉션 페이지 또는 감사 메시지를 구성하려면:
 
 1. 편집할 적응형 양식을 엽니다.
-2. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
-3. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
-4. **[!UICONTROL 제출]** 탭을 엽니다. 리디렉션 페이지 또는 메시지를 구성하는 옵션이 표시됩니다.
+1. 콘텐츠 트리를 열고 **[!UICONTROL 안내서 컨테이너]**&#x200B;를 선택합니다.
+1. 적응형 양식 컨테이너 속성 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. **[!UICONTROL 제출]** 탭을 엽니다. 리디렉션 페이지 또는 메시지를 구성하는 옵션이 표시됩니다.
 
    리디렉션 페이지 또는 메시지를 구성하기 위한 가이드 컨테이너의 ![제출 대화 상자](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 

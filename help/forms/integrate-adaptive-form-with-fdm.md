@@ -3,7 +3,7 @@ title: 적응형 양식과 양식에 대한 양식 데이터 모델(FDM)을 통�
 description: 양식 데이터 모델(FDM)을 기반으로 양식을 만드는 방법을 알아봅니다. FDM의 데이터 모델 오브젝트에 대한 샘플 데이터를 생성하고 편집합니다.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 28%
@@ -54,6 +54,7 @@ ht-degree: 28%
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. **[!UICONTROL 제출]** 탭을 클릭합니다.
 1. **[!UICONTROL 제출 동작]** 드롭다운 목록에서 **[양식 데이터 모델을 사용하여 제출]**&#x200B;을 선택합니다.
+
    ![양식 데이터 모델을 사용하여 제출](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. 전송할 **[!UICONTROL 데이터 모델]** 구성을 선택하십시오.
