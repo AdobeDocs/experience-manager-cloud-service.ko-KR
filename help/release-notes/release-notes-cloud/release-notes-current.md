@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 51%
+source-wordcount: '2235'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 51%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites의 새로운 기능 {#enhancements-sites}
 
-**콘텐츠 조각 개선 사항**
-
-* 이제 하위 항목이 있는 콘텐츠 조각을 복사할 수 있습니다.
-* 이제 폴더 설정에서 사용자 지정 작업 영역을 구성하여 콘텐츠 조각을 Adobe Target의 구성된 작업 영역으로 내보낼 수 있습니다.
+* 이제 한 번의 작업으로 참조된 조각(하위)과 함께 콘텐츠 조각을 복사할 수 있습니다. 이를 통해 기존 콘텐츠 조각 구조를 다시 사용하여 새 콘텐츠를 만들 수 있습니다.
+* 이제 콘텐츠 조각 관리 UI에서 콘텐츠 조각의 워크플로 상태를 볼 수 있으며, 선택한 조각에 대해 과거 및 현재 실행 중인 워크플로에 대한 자세한 정보를 제공합니다.
+* 이제 라이브 카피 소스 페이지의 이름을 바꾸거나 이동하면 그에 따라 이름이 바뀌거나 이동한 라이브 카피 페이지가 다시 게시됩니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 새로운 파일 및 폴더의 자동 업로드, 파일 작업 개선, 보다 스마트한 에셋 검색, AEM과의 원활한 통합을 통해 더욱 빠르고, 명확하며, 직관적인 콘텐츠 관리를 실현합니다.
 
-전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
+전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ OSGi 속성:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 &#x200B;** Java 21 런타임**(으)로 업그레이드되었습니다.
+**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 **Java 21 런타임**(으)로 업그레이드되었습니다.
 
 지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
