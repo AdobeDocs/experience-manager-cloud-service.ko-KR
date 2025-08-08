@@ -1,15 +1,14 @@
 ---
-Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
-Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
+description: 양식을 제출할 때 적응형 양식의 데이터를 SharePoint 목록 또는 문서 라이브러리와 같은 SharePoint 저장소로 전송하는 방법에 대해 알아봅니다.
 keywords: 적응형 양식에 대한 SharePoint 목록을 연결하는 방법, 적응형 양식에 대한 SharePoint 문서 라이브러리 연결, SharePoint에 제출, SharePoint 문서 라이브러리 구성 만들기, 적응형 양식의 SharePoint 제출 액션을 사용, 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
-source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 

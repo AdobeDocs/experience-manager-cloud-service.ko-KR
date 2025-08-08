@@ -1,15 +1,14 @@
 ---
-Title: How to send an email on submission of an Adaptive Form?
-Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+description: 적응형 양식을 제출할 때 이메일 알림을 설정하는 프로세스를 살펴보십시오.
 keywords: 적응형 양식에 대한 이메일 보내기 방법, 이메일 제출 액션, 적응형 양식 이메일, 양식 제출 이메일, 이메일 보내기 안내서
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 20%
+source-wordcount: '851'
+ht-degree: 19%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
+title: AEM 워크플로우를 적응형 양식과 통합하는 방법
+description: AEM Forms 제출 액션을 사용하여 자동화된 워크플로우 시작 프로세스를 살펴봅니다.
 keywords: AEM 워크플로, 적응형 양식과 AEM 워크플로 통합, AEM 워크플로 호출 제출 액션
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: dc9fc0c7d886d976f9b0b9daa955f98402341527
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 62%
+source-wordcount: '1434'
+ht-degree: 61%
 
 ---
 

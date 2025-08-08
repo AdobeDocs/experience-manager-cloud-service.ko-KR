@@ -1,14 +1,14 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Forms용 Marketo Engage에 제출 액션을 구성하는 방법
+description: Marketo Engage으로 데이터를 전송하도록 적응형 양식의 제출 액션을 구성하는 방법에 대해 알아봅니다.
+keywords: Marketo 참여에 데이터 제출, Marketo Engage에 제출로 제출 액션 구성
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 8%
+source-wordcount: '772'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![워크플로](/help/forms/assets/workflow-marketo-3.png)
 
-적응형 Forms 편집기는 처리를 위해 적응형 Forms 데이터를 Adobe Marketo Engage으로 보내기 위한 **Marketo Engage에 제출** 제출 액션을 제공합니다. 제출 시 [Adobe Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo/using/home)에 데이터를 제출하도록 기존 적응형 양식을 구성할 수 있습니다.
+적응형 Forms 편집기는 처리를 위해 적응형 Forms 데이터를 Adobe Marketo Engage으로 보내기 위한 **Marketo Engage에 제출** 제출 액션을 제공합니다. 제출 시 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)에 데이터를 제출하도록 기존 적응형 양식을 구성할 수 있습니다.
 
 양식 제출을 처리하기 위한 다양한 기본 제출 액션을 사용할 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
@@ -97,7 +97,7 @@ Adobe Marketo Engage에 데이터를 제출하도록 핵심 구성 요소 기반
 
 ## 다음 단계
 
-[Munchkin 라이브러리](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
+[Munchkin 라이브러리](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
 
 ## 관련 문서
 

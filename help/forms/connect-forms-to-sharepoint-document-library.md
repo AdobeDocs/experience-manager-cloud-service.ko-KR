@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: 적응형 양식을 SharePoint 문서 라이브러리에 통합하는 방법
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: 적응형 양식을 위한 SharePoint 문서 라이브러리 연결, SharePoint에 제출, SharePoint 문서 라이브러리 구성 만들기, 적응형 양식에서 SharePoint에 제출 액션을 사용, AEM Forms 데이터 모델 SharePoint 문서 라이브러리, Forms 데이터 모델 SharePoint 문서 라이브러리, Forms 데이터 모델을 SharePoint 문서 라이브러리에 통합
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '991'
 ht-degree: 28%
 
 ---
