@@ -6,13 +6,12 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%
 
 ---
-
 
 # Edge Delivery Services을 사용하여 적응형 Forms에서 미리 채우기 서비스 구성
 
@@ -37,9 +36,9 @@ ht-degree: 3%
 미리 채우기 프로세스에는 다음 네 가지 주요 단계가 포함됩니다.
 
 1. **사용자가 양식을 엽니다**: 사용자가 URL 또는 탐색을 통해 적응형 양식에 액세스합니다
-2. **데이터 Source 식별**: 미리 채우기 서비스가 구성된 데이터 원본(양식 데이터 모델 또는 초안 서비스)을 결정합니다.
-3. **데이터 검색**: 시스템은 컨텍스트, 매개 변수 또는 사용자 식별을 기반으로 관련 사용자 데이터를 가져옵니다
-4. **매핑 및 표시**: 데이터가 `bindRef` 속성을 사용하여 양식 필드에 매핑되고 채워진 양식이 사용자에게 표시됩니다.
+1. **데이터 Source 식별**: 미리 채우기 서비스가 구성된 데이터 원본(양식 데이터 모델 또는 초안 서비스)을 결정합니다.
+1. **데이터 검색**: 시스템은 컨텍스트, 매개 변수 또는 사용자 식별을 기반으로 관련 사용자 데이터를 가져옵니다
+1. **매핑 및 표시**: 데이터가 `bindRef` 속성을 사용하여 양식 필드에 매핑되고 채워진 양식이 사용자에게 표시됩니다.
 
 이러한 자동화된 프로세스를 통해 사용자는 관련 정보로 미리 채워진 양식을 볼 수 있으므로 사용자 경험과 양식 완료율이 크게 향상됩니다.
 
@@ -62,7 +61,6 @@ ht-degree: 3%
 - **JSON 스키마 양식**: 스키마와 호환되는 JSON
 - **FDM(양식 데이터 모델) 양식**: FDM 구조와 일치하는 JSON
 - **스키마 없는 양식**: 모든 필드가 바인딩되지 않았으며 바인딩되지 않은 XML을 사용합니다.
-
 
 ## 사전 요구 사항
 
@@ -106,39 +104,39 @@ ht-degree: 3%
 
 ## 양식에 대한 미리 채우기 서비스 구성
 
-
 +++1단계: 양식 데이터 모델 설정
 
 ### 1단계: 양식 데이터 모델 만들기
 
 1. AEM Forms as a Cloud Service 인스턴스에 로그인합니다
-2. **Adobe Experience Manager** > **Forms** > **데이터 통합**(으)로 이동
-3. **만들기** > **양식 데이터 모델** 선택
-4. **데이터 Source 구성**&#x200B;을 선택하고 구성된 **데이터 Source**&#x200B;을(를) 선택하십시오.
+1. **Adobe Experience Manager** > **Forms** > **데이터 통합**(으)로 이동
+1. **만들기** > **양식 데이터 모델** 선택
+1. **데이터 Source 구성**&#x200B;을 선택하고 구성된 **데이터 Source**&#x200B;을(를) 선택하십시오.
 
    ![양식 데이터 모델을 만들었습니다](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > 양식 데이터 모델을 만드는 방법에 대한 자세한 지침은 [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)를 참조하십시오.
+   >양식 데이터 모델을 만드는 방법에 대한 자세한 지침은 [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)를 참조하십시오.
 
 ### 2단계: FDM 서비스 구성
 
 1. **Adobe Experience Manager** > **Forms** > **데이터 통합**(으)로 이동
-2. 편집 모드에서 양식 데이터 모델 열기
-3. 데이터 모델 개체를 선택하고 **속성 편집**&#x200B;을 클릭합니다.
-4. 선택한 데이터 모델 개체에 대해 **읽기** 및 **쓰기** 서비스 구성
+1. 편집 모드에서 양식 데이터 모델 열기
+1. 데이터 모델 개체를 선택하고 **속성 편집**&#x200B;을 클릭합니다.
+1. 선택한 데이터 모델 개체에 대해 **읽기** 및 **쓰기** 서비스 구성
 
    ![읽기 쓰기 서비스 구성](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. 서비스 인수 구성:
+1. 서비스 인수 구성:
+
    - 읽기 서비스 인수에 대한 편집 아이콘을 클릭합니다
    - 인수를 **사용자 프로필 특성**, **요청 특성** 또는 **리터럴 값**&#x200B;에 바인딩합니다.
    - 바인딩 값(예: pet 등록 양식의 경우 `petid`) 지정
 
    ![pet id 인수 구성](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. 인수를 저장하려면 **완료**&#x200B;를 클릭하고 FDM을 저장하려면 **저장**&#x200B;을 클릭합니다
+1. 인수를 저장하려면 **완료**&#x200B;를 클릭하고 FDM을 저장하려면 **저장**&#x200B;을 클릭합니다
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **예:**
 
@@ -271,18 +269,18 @@ FDM 기반 양식에 대한 **JSON 예:**
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
     
     ,
-    &quot;afUnBoundData&quot;: &lbrace;
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    &rbrace;
+    }
     
     
     &quot;

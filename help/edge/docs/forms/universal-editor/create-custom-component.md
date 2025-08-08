@@ -4,10 +4,10 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -44,11 +44,14 @@ Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론�
 
 사용자 정의 구성 요소를 사용하기 전에 범용 편집기가 이를 사용 가능한 옵션으로 인식할 수 있도록 등록해야 합니다. 이는 고유 식별자, 기본 속성 및 구성 요소의 구조를 포함하는 구성 요소 정의를 통해 이루어집니다. 다음 단계를 수행하여 사용자 정의 구성 요소를 양식 작성에 사용할 수 있도록 합니다.
 
-1. **새 폴더와 파일 추가**
-AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더와 파일을 추가합니다.
+1. **새 폴더 및 파일 추가**
+
+   AEM 프로젝트에서 새 사용자 지정 구성 요소에 대한 새 폴더 및 파일을 추가합니다.
+
    1. AEM 프로젝트를 열고 `../blocks/form/components/`로 이동합니다.
    1. 사용자 정의 구성 요소를 위한 새 폴더를 `../blocks/form/components/<component_name>`에 추가합니다. 이 예에서는 이름이 `range`인 폴더를 생성합니다.
    1. `../blocks/form/components/<component_name>`에 새로 만든 폴더로 이동합니다. 예를 들어 `../blocks/form/components/range`로 이동하여 다음 파일을 추가합니다.
+
       - `/blocks/form/components/range/_range.json`: 사용자 정의 구성 요소의 정의를 포함합니다.
       - `../blocks/form/components/range/range.css`: 사용자 정의 구성 요소에 대한 스타일을 정의합니다.
       - `../blocks/form/components/range/range.js`: 런타임에 사용자 정의 구성 요소를 사용자 정의합니다.
@@ -358,18 +361,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -407,7 +410,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
