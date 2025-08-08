@@ -89,7 +89,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 새로운 파일 및 폴더의 자동 업로드, 파일 작업 개선, 보다 스마트한 에셋 검색, AEM과의 원활한 통합을 통해 더욱 빠르고, 명확하며, 직관적인 콘텐츠 관리를 실현합니다.
 
-전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
+전체 기능 목록은 [데스크톱 앱 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/release-notes)를 참조하세요.
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
