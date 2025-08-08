@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.8
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 60%
+source-wordcount: '1308'
+ht-degree: 59%
 
 ---
 
@@ -25,11 +25,6 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
 다음 릴리스는 2025년 9월 4일 금요일에 예정되어 있습니다.
 
-
-
-
-
-
 ## 새로운 기능 {#what-is-new}
 
 * **Edge Delivery Services 라이선스는 셀프 서비스 방식으로 HIPAA 프로그램에 포함될 수 있습니다**
@@ -42,7 +37,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
 * **새 Forms 추가 기능에 대한 자동 프로비저닝**
 
-  사이트 전용 고객은 마케팅 양식을 간소화하고 저렴하게 구축할 수 있는 방법이 필요한 경우가 많습니다. 새로운 AEM Forms 사이트 추가 기능은 Sites 프로그램에 제한된 Forms 기능을 추가하여 필요한 사항을 충족합니다. 또한 원하는 경우 전체 AEM Forms 오퍼링에 대한 명확한 업그레이드 경로를 생성합니다. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  사이트 전용 고객은 마케팅 양식을 간소화하고 저렴하게 구축할 수 있는 방법이 필요한 경우가 많습니다. 새로운 AEM Forms 사이트 추가 기능은 Sites 프로그램에 제한된 Forms 기능을 추가하여 필요한 사항을 충족합니다. 또한 전체 AEM Forms 제품에 대한 명확한 업그레이드 경로를 만듭니다. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   추가 기능:
    * 별도의 Forms 프로그램이나 권한 없이 Sites 프로그램에 연결하여 함께 배포합니다.
@@ -53,7 +48,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
      ![프로덕션 프로그램을 만들 때 솔루션 및 추가 기능의 Forms 추가 기능](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *프로그램을 만드는 동안 Sites 솔루션에서 Forms 추가 기능을 선택할 수 있습니다.*
 
-     ![프로덕션 프로그램을 편집할 때 Forms 추가 기능](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) ***프로그램 편집**&#x200B;에서 Sites 프로그램에 대한 Forms 추가 기능을 선택한 다음 파이프라인을 실행하여 환경에서 활성화하십시오.*
+     ![프로덕션 프로그램을 편집할 때 Forms 추가 기능](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) ***프로그램 편집**에서 Sites 프로그램에 대한 Forms 추가 기능을 선택한 다음 파이프라인을 실행하여 환경에서 활성화하십시오.*
 
      자세한 내용은 [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)를 참조하십시오.
 
@@ -67,13 +62,13 @@ Cloud Manager의 베타 프로그램에 참여하여 일반 릴리스 전에 예
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
@@ -82,7 +77,6 @@ Cloud Manager의 베타 프로그램에 참여하여 일반 릴리스 전에 예
 [AEM as a Cloud Service에서 배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 참조하십시오.
 
 [AEM as a Cloud Service 콘텐츠 복원](/help/operations/restore.md).
-
 
 ### 전문화된 테스트 환경 {#specialized-test-environment}
 
@@ -152,13 +146,13 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
   ![Edge 게재 및 게시 게재의 새 게재 유형을 표시하는 필터 패널](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
 [Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)를 참조하십시오.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)에 이메일을 보내 주십시오.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## 버그 수정
