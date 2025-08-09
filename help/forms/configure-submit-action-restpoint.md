@@ -115,13 +115,13 @@ Foundation 구성 요소를 기반으로 적응형 양식에 대해 Swagger Open
 
    또한 **[!UICONTROL POST 요청을 활성화]**&#x200B;하고 요청을 게시하는 URL을 제공할 수 있습니다. 양식을 호스팅하는 AEM 서버에 데이터를 제출하려면 AEM 서버 루트 경로에 해당되는 상대 경로를 사용합니다. 예, `/content/forms/af/SampleForm.html`. 데이터를 다른 서버에 제출하려면 절대 경로를 사용합니다.
 
-+++
+   +++
 
    +++구성
 
    이 옵션을 사용하면 AEM의 구성 브라우저를 통해 관리되는 사전 정의된 HTTP 구성을 추가할 수 있습니다. 서비스 나머지 끝점 인증 유형 및 콘텐츠 유형에 대해 만든 구성을 선택할 수 있습니다. 인증 유형 및 콘텐츠 유형에 대한 자세한 내용은 [데이터 원본 구성](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)을 참조하세요.
 
-+++
+   +++
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
@@ -172,13 +172,13 @@ Foundation 구성 요소를 기반으로 적응형 양식에 대해 Swagger Open
 
    또한 **[!UICONTROL POST 요청을 활성화]**&#x200B;하고 요청을 게시하는 URL을 제공할 수 있습니다. 양식을 호스팅하는 AEM 서버에 데이터를 제출하려면 AEM 서버 루트 경로에 해당되는 상대 경로를 사용합니다. 예, `/content/forms/af/SampleForm.html`. 데이터를 다른 서버에 제출하려면 절대 경로를 사용합니다.
 
-+++
+   +++
 
    +++구성
 
    이 옵션을 사용하면 AEM의 구성 브라우저를 통해 관리되는 사전 정의된 HTTP 구성을 추가할 수 있습니다. 서비스 나머지 끝점 인증 유형 및 콘텐츠 유형에 대해 만든 구성을 선택할 수 있습니다. 인증 유형 및 콘텐츠 유형에 대한 자세한 내용은 [데이터 원본 구성](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)을 참조하세요.
 
-+++
+   +++
 
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 

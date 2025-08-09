@@ -147,6 +147,7 @@ Edge Delivery Services for AEM Forms의 양식 스타일을 사용하려면 CSS 
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ 레이아웃 및 구조 변수
@@ -1108,6 +1109,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
   text-align: center;
 }
 ```
+
 +++
 
 +++ 필드 이름에 따른 스타일 지정
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **구성 요소별 모범 사례**
