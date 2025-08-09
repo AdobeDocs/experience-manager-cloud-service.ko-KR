@@ -16,7 +16,7 @@ ht-degree: 40%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
 -->
 
 양식 조각은 반복적인 개발 작업을 제거하고 조직 양식 전체에서 일관성을 보장하는 재사용 가능한 구성 요소입니다. 모든 양식에 대한 연락처 정보, 주소 세부 정보 또는 동의 계약과 같은 공통 섹션을 다시 만드는 대신 이러한 요소를 조각으로 한 번 빌드하여 여러 양식에서 다시 사용할 수 있습니다.
