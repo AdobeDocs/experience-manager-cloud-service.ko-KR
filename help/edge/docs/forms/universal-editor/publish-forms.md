@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # Edge Delivery Services을 사용하여 적응형 Forms 게시
-
-## 개요
 
 적응형 양식을 게시하면 최종 사용자가 액세스하고 제출할 수 있도록 Edge Delivery Services에서 사용할 수 있습니다. 이 프로세스에는 양식 게시, 보안 설정 구성 및 라이브 양식 액세스의 세 가지 주요 단계가 포함됩니다.
 
@@ -28,29 +26,35 @@ ht-degree: 2%
 
 ## 사전 요구 사항
 
-- **양식 요구 사항:**
-   - Edge Delivery Services 템플릿을 사용하여 만든 적응형 양식
-   - 양식 테스트 및 제작 준비 완료
+- Edge Delivery Services 템플릿을 사용하여 만든 적응형 양식
+- 양식 테스트 및 제작 준비 완료
+- AEM Forms 작성자 권한
+- Cloud Manager 액세스(프로덕션 구성용)
+- 양식 블록 코드에 대한 개발자 액세스(제출 설정용)
 
-- **액세스 요구 사항:**
-   - AEM Forms 작성자 권한
-   - Cloud Manager 액세스(프로덕션 구성용)
-   - 양식 블록 코드에 대한 개발자 액세스(제출 설정용)
+## 게시 프로세스 개요
 
-- **관련 설명서:**
-   - [Edge Delivery Services을 사용하여 양식 만들기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [제출 액션 구성](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+Edge Delivery Services에 양식을 게시하는 방법은 3단계로 구성됩니다.
 
-## 1단계: 양식 게시
+- **1단계: 양식 게시** - 양식을 CDN에 게시하고 게시 상태를 확인합니다.
+- **2단계: 보안 구성** - 보안 제출을 위한 CORS 정책 및 레퍼러 필터 설정
+- **3단계: 액세스 및 유효성 검사** - 양식 기능을 테스트하고 전체 워크플로의 유효성을 검사합니다.
 
-### 1단계: 게시 시작
+각 단계는 이전 단계를 기반으로 빌드하여 안전하고 기능적인 배포를 보장합니다.
+
+### 1단계: 양식 게시
+
++++ 1단계: 게시 시작
 
 1. **양식에 액세스**: 범용 편집기에서 적응형 양식을 엽니다.
 2. **게시 시작**: 도구 모음에서 **게시** 아이콘을 클릭합니다
 
    ![게시 클릭](/help/forms/assets/publish-icon-eds-form.png)
 
-### 2단계: 검토 및 확인
++++
+
+
++++ 2단계: 검토 및 확인
 
 1. **자산 게시를 검토**: 양식을 포함하여 게시 중인 모든 자산이 시스템에 표시됩니다
 
@@ -61,7 +65,10 @@ ht-degree: 2%
 
    ![게시 성공](/help/forms/assets/publish-success.png)
 
-### 3단계: 게시 상태 확인
++++
+
+
++++ 3단계: 게시 상태 확인
 
 **상태 확인**: **게시** 아이콘을 다시 클릭하여 현재 상태를 확인합니다
 
@@ -73,7 +80,10 @@ ht-degree: 2%
 - 게시 프로세스 중 오류 메시지 없음
 - 양식이 게시된 자산 목록에 표시됨
 
-### 게시된 Forms 관리
++++
+
+
++++ 게시된 Forms 관리
 
 **양식 게시를 취소하려면:**
 
@@ -83,9 +93,12 @@ ht-degree: 2%
 
 ![양식 게시 취소](/help/forms/assets/unpublish--form.png)
 
-## 2단계: 보안 설정 구성
++++
 
-### 보안 구성이 필요한 이유
+
+### 2단계: 보안 설정 구성
+
++++ 보안 구성이 필요한 이유
 
 보안 양식 제출을 활성화하려면 다음과 같은 보안 설정을 구성해야 합니다.
 
@@ -98,7 +111,11 @@ ht-degree: 2%
 >
 >**프로덕션에 필요**: 이러한 구성은 양식 제출이 프로덕션 환경에서 작동하는 데 필수입니다.
 
-### 1단계: 양식 제출 URL 구성
++++
+
+
+
++++ 1단계: 양식 제출 URL 구성
 
 **목적**: AEM 인스턴스에 직접 양식 제출
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL이 환경(프로덕션, 스테이징 또는 로컬)과 일치함
 - URL에 후행 슬래시가 없음
 
-### 2단계: CORS 설정 구성
++++
+
+
+
++++ 2단계: CORS 설정 구성
 
 **목적**: Edge Delivery Services 도메인에서 양식 제출 요청 허용
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [레퍼러 필터 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### 3단계: 레퍼러 필터 구성
++++
+
+
+
++++ 3단계: 레퍼러 필터 구성
 
 **목적**: 쓰기 작업을 승인된 Edge Delivery Services 도메인으로 제한합니다.
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Cloud Manager을 통해 레퍼러 필터 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## 3단계: 게시된 양식에 액세스
++++
 
-### Edge Delivery Services용 URL 구조
+
+### 3단계: 게시된 양식에 액세스
+
+
+
++++ Edge Delivery Services용 URL 구조
 
 **표준 URL 형식:**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### 최종 유효성 검사 단계
++++
+
+
+
++++ 최종 유효성 검사 단계
 
 **양식 액세스 가능성 확인:**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - 구성된 대상(스프레드시트, 이메일 등)에 데이터가 표시됩니다.
 - CORS 또는 보안 정책과 관련된 콘솔 오류 없음
 
++++
+
 
 ## 다음 단계
 
-**즉각적인 작업:**
-
-- 게시된 양식을 철저히 테스트합니다.
-- 양식 제출 데이터 모니터링
-- 필요한 경우 분석 추적 설정
-
-**고급 항목:**
 
 - [양식 제출 작업 구성](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [양식 스타일 지정 및 테마 설정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [reCAPTCHA 보호 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [응답형 양식 레이아웃 만들기](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## 요약
 
-다음을 완료했습니다.
-
-- 적응형 양식을 Edge Delivery Services에 게시함
-- 양식 제출을 위해 구성된 보안 설정
-- 최종 사용자에 대한 적절한 URL 액세스 설정
-- 양식 기능 및 접근성을 확인했습니다.
-
-이제 양식이 활성 상태이며 프로덕션에 사용할 준비가 되었습니다.

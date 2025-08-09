@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 1%
 
 ---
@@ -48,45 +48,47 @@ Edge Delivery Services for AEM Forms은 범용 편집기에서 고성능 웹 게
 
 ## 사전 요구 사항
 
-시작하기 전에 다음을 확인하십시오.
+범용 편집기를 사용하여 Edge Delivery Services for AEM Forms을 원활하고 성공적으로 경험하려면 다음 사전 요구 사항을 검토하고 확인한 후 계속 진행하십시오.
 
-### 필수 액세스 권한
+### 액세스 요구 사항
 
-- 저장소를 만들 수 있는 권한이 있는 **GitHub 계정**
-- **AEM as a Cloud Service** 작성 액세스
+- **GitHub 계정**: 새 저장소를 만들 수 있는 권한이 있는 GitHub 계정이 있어야 합니다. 이는 프로젝트 소스 코드를 관리하고 팀과 공동 작업하는 데 필수적입니다.
+- **AEM as a Cloud Service 제작 액세스**: AEM as a Cloud Service 환경에 대한 작성자 수준 액세스 권한이 있는지 확인하십시오. 양식을 작성, 편집 및 게시하려면 이 액세스 권한이 필요합니다.
 
 ### 기술 요구 사항
 
-- **Git 기본 사항**: 복제, 커밋, 푸시 작업
-- **웹 기술**: HTML, CSS, JavaScript 기본 사항
-- 로컬 개발용 **Node.js**(버전 16+ 권장)
-- **npm** 또는 **yarn** 패키지 관리자
+- **Git에 익숙함**: 저장소 복제, 변경 내용 커밋 및 업데이트 푸시와 같은 기본 Git 작업을 수행하는 데 익숙해야 합니다. 이러한 기술은 소스 제어 및 프로젝트 협업의 기본이 됩니다.
+- **웹 기술 이해**: HTML, CSS 및 JavaScript에 대한 작업 지식이 권장됩니다. 이러한 기술은 양식 맞춤화 및 문제 해결의 기초를 형성합니다.
+- **Node.js(버전 16 이상)**: Node.js는 로컬 개발과 빌드 도구 실행에 필요합니다. 시스템에 버전 16 이상이 설치되어 있는지 확인합니다.
+- **패키지 관리자(npm 또는 yarn)**: 프로젝트 종속성 및 스크립트를 관리하려면 npm(노드 패키지 관리자) 또는 yarn이 필요합니다.
 
-### 권장되는 지식
+### 권장 배경
 
-- AEM Sites 개념에 대한 기본 이해
-- 양식 디자인 원리에 대한 친숙도
-- WYSIWYG 편집기 경험
+- **AEM Sites 개념**: 사이트 구조 및 콘텐츠 작성을 포함한 AEM Sites에 대한 기본 이해를 통해 양식을 효과적으로 탐색하고 통합할 수 있습니다.
+- **양식 디자인 원칙**: 유용성, 접근성, 데이터 유효성 검사와 같은 양식 디자인 모범 사례에 익숙하면 효과적이고 사용하기 쉬운 양식을 만들 수 있습니다.
+- **WYSIWYG 편집기 경험**: What You See Is What You Get(WYSIWYG) 편집기를 사용한 이전 경험은 범용 편집기의 시각적 작성 기능을 보다 효율적으로 활용하는 데 도움이 됩니다.
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
 
 ## 경로 A: Forms으로 새 프로젝트 만들기
 
-**새로운 구현 또는 개념 입증 모범 사례:**
+**추천 대상:** 새 프로젝트, 파일럿 또는 개념 증명 이니셔티브
 
-AEM Forms Boilerplate는 적응형 Forms 블록이 통합된 사전 구성된 템플릿을 제공합니다.
+AEM Forms Boilerplate을 활용하여 프로젝트 설정을 가속화하십시오. 이 표준 템플릿은 적응형 Forms 블록을 원활하게 통합하는 즉시 사용 가능한 템플릿을 제공하여 AEM 사이트 내에서 양식을 신속하게 작성하고 배포할 수 있도록 해 줍니다.
 
-### 단계 개요
+### 개요
 
-1. 템플릿에서 GitHub 저장소 설정
-2. AEM 코드 동기화 설치
-3. AEM 프로젝트 연결 구성
-4. AEM 사이트 만들기 및 게시
-5. 범용 편집기를 사용하여 양식 추가
+통합 양식을 사용하여 새 프로젝트를 성공적으로 시작하려면 다음을 수행합니다.
 
-각 단계를 살펴보겠습니다.
+1. AEM Forms Boilerplate 템플릿을 사용하여 GitHub 저장소를 만듭니다.
+2. AEM 코드 동기화를 설정하여 AEM과 저장소 간의 콘텐츠 동기화를 자동화합니다.
+3. GitHub 프로젝트와 AEM 환경 간의 연결을 구성합니다.
+4. 새 AEM 사이트를 설정하고 게시합니다.
+5. 범용 편집기를 사용하여 양식을 추가하고 관리합니다.
+
+다음 섹션에서는 원활하고 효율적인 프로젝트 설정 환경을 보장하기 위해 각 단계를 자세히 안내합니다.
 
 +++1단계: 템플릿에서 GitHub 저장소 만들기
 
@@ -184,7 +186,7 @@ AEM 코드 동기화는 AEM 작성 환경과 GitHub 저장소 간의 콘텐츠 �
 
     >[!NOTE]
     >
-    >빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하세요.
+>빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하세요.
 
 +++
 
@@ -320,20 +322,26 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
 
 ### 경로 B 사전 요구 사항
 
-- [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)을(를) 사용하여 빌드된 기존 AEM 프로젝트
-- 로컬 개발 환경 설정
-- 프로젝트 저장소에 대한 Git 액세스
+양식을 기존 AEM 프로젝트에 통합하려면 다음 전제 조건이 충족되는지 확인하십시오.
 
-**AEM Forms Boilerplate을 사용하시겠습니까?** 프로젝트가 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)&#x200B;(으)로 만들어진 경우 양식이 이미 통합되었습니다. [첫 번째 양식 만들기](#create-your-first-form)(으)로 건너뛰기
+- [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)을(를) 사용하여 만든 기존 AEM 프로젝트가 있습니다.
+- [로컬 개발 환경을 설정했습니다](#set-up-local-development-environment)
+- 프로젝트 저장소에 대한 Git 액세스 권한을 보유하고 있으므로 필요에 따라 변경 사항을 복제, 수정 및 푸시할 수 있습니다.
 
-각 단계를 살펴보겠습니다.
+>[!NOTE]
+>
+> 원래 프로젝트가 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)을 사용하여 설정된 경우 양식 기능이 이미 포함되어 있습니다. 이 경우 [첫 번째 양식 만들기](#create-your-first-form) 섹션으로 이동할 수 있습니다.
 
-### 단계 개요
+다음 안내서에서는 기존 프로젝트에 양식 기능을 추가하는 구조화된 접근 방식을 제공합니다. 각 단계는 범용 편집기 환경 내에서 원활한 통합과 최적의 기능을 보장하기 위해 설계되었습니다.
 
-1. 적응형 Forms 블록 파일 복사
-2. 프로젝트 구성 업데이트
-3. ESLint 규칙 구성
-4. 변경 내용 작성 및 커밋
+### 개요
+
+다음과 같은 높은 수준의 단계를 완료합니다.
+
+1. 적응형 Forms 블록 파일을 프로젝트에 복사합니다.
+2. 양식 구성 요소를 인식하고 지원하도록 프로젝트의 구성을 업데이트합니다.
+3. 새 파일과 코딩 패턴을 수용하도록 ESLint 규칙을 조정합니다.
+4. 프로젝트를 빌드하고 변경 사항을 저장소에 커밋합니다.
 
 +++1단계: Forms 블록 파일 복사
 
@@ -494,19 +502,31 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
 
 ## 첫 번째 양식 만들기
 
-**적용 대상:** 경로 A와 경로 B 사용자 모두
+**이 섹션을 팔로우해야 하는 사용자:**\
+이 섹션은 경로 A(새 프로젝트) 또는 경로 B(기존 프로젝트) 다음의 사용자와 관련이 있습니다.
 
-이제 프로젝트가 양식 기능으로 설정되었으므로 범용 편집기의 WYSIWYG 인터페이스를 사용하여 첫 번째 양식을 만들어 보겠습니다.
+이제 프로젝트에서 양식 만들기를 지원하므로, 유니버설 편집기의 직관적인 WYSIWYG 작성 환경을 사용하여 첫 번째 양식을 작성할 준비가 되었습니다. 다음 단계는 AEM 사이트 내에서 양식을 디자인, 구성 및 게시하는 구조화된 접근 방식을 제공합니다.
 
-### 양식 작성 프로세스 개요
+### 개요
 
-1. 페이지에 **적응형 양식 블록 추가**
-2. **양식 구성 요소 추가**(텍스트 입력, 단추 등)
-3. **구성 요소 속성 구성**
-4. 양식 **미리 보기 및 테스트**
-5. 업데이트된 페이지를 **게시**
+유니버설 편집기에서 양식을 만드는 프로세스는 다음과 같은 몇 가지 주요 단계로 구성됩니다.
 
-각 단계를 살펴보겠습니다.
+1. **적응형 양식 블록 삽입**\
+   선택한 페이지에 적응형 양식 블록을 추가하는 것부터 시작합니다.
+
+2. **양식 구성 요소 추가**\
+   텍스트 필드, 단추 및 기타 입력 요소와 같은 구성 요소를 삽입하여 양식을 채웁니다.
+
+3. **구성 요소 속성 구성**\
+   양식의 요구 사항을 충족하도록 각 구성 요소의 설정 및 속성을 조정합니다.
+
+4. **양식 미리 보기 및 테스트**\
+   미리보기 기능을 사용하여 게시하기 전에 양식의 모양과 동작을 확인하십시오.
+
+5. **업데이트된 페이지 게시**\
+   만족하면 페이지를 게시하여 최종 사용자가 양식을 사용할 수 있도록 합니다.
+
+다음 섹션에서는 이러한 각 단계를 자세히 안내하여 원활하고 효과적인 양식 작성 경험을 제공합니다.
 
 +++1단계: 적응형 양식 블록 추가
 

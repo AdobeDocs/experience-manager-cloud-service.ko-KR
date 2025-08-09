@@ -4,10 +4,10 @@ description: 범용 편집기에서 양식 조각을 만들고 양식에 추가�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 97%
+source-wordcount: '1670'
+ht-degree: 40%
 
 ---
 
@@ -16,44 +16,67 @@ ht-degree: 97%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 -->
 
-양식에는 연락처 정보, 신원 정보, 동의 계약과 같은 일반적인 섹션이 포함되는 경우가 많습니다. 양식 개발자는 새로운 양식을 작성할 때마다 이러한 섹션을 만드는데, 이는 반복적이고 시간이 많이 소요되는 작업입니다.
-이러한 중복 작업을 없애기 위해 범용 편집기는 패널이나 필드 그룹 등의 재사용 가능한 양식 세그먼트를 한 번만 만들어 다양한 양식에서 재사용할 수 있는 방법을 제공합니다. 이러한 재사용 가능한 모듈식 독립 세그먼트를 양식 조각이라고 합니다. 예를 들어 동일한 비상 연락처 조각을 직원 및 감독자의 연락처 정보 등 양식의 다른 섹션에서도 사용할 수 있습니다.
+양식 조각은 반복적인 개발 작업을 제거하고 조직 양식 전체에서 일관성을 보장하는 재사용 가능한 구성 요소입니다. 모든 양식에 대한 연락처 정보, 주소 세부 정보 또는 동의 계약과 같은 공통 섹션을 다시 만드는 대신 이러한 요소를 조각으로 한 번 빌드하여 여러 양식에서 다시 사용할 수 있습니다.
 
-이 문서를 끝까지 읽으면 범용 편집기를 사용하여 양식에서 조각을 만들고 사용하는 방법을 배울 수 있습니다.
+**이 문서에서 수행할 작업:**
 
-## Edge Delivery Services 양식 조각의 특징
+- 양식 조각의 비즈니스 가치 및 기술 기능 이해
+- 범용 편집기를 사용하여 재사용 가능한 양식 조각 만들기
+- 적절한 구성을 통해 기존 양식에 조각 통합
+- 조각 라이프사이클 관리 및 양식 간 일관성 유지
 
-- **양식 조각을 사용하여 일관성 유지**
-조각을 다양한 양식에 통합하여 일관된 레이아웃과 표준화된 콘텐츠를 유지할 수 있습니다.
+**비즈니스 이점:**
 
-  >[!NOTE]
-  >
-  > 미리보기 모드에서는 “한번 변경하여 전체 반영”이라는 접근 방식을 통해 조각에 적용된 모든 업데이트가 모든 양식에 자동으로 적용됩니다. 그러나 게시 모드에서 변경 사항을 반영하려면 조각을 게시하거나 양식을 다시 게시해야 합니다.
+- **개발 시간 단축**: 공통 양식 섹션을 한 번 빌드하고 모든 곳에서 재사용합니다.
+- **일관성 향상**: 모든 양식에서 표준화된 레이아웃 및 콘텐츠
+- **유지 관리 간소화**: 조각을 사용하는 모든 양식의 변경 사항을 반영하도록 조각을 한 번 업데이트하십시오
+- **향상된 규정 준수**: 규정 섹션이 일관되고 최신 상태로 유지되는지 확인
 
-- **양식 내에서 양식 조각을 여러 번 추가**
-양식 내에서 양식 조각을 여러 번 추가하고 데이터 소스나 스키마에 대한 데이터 바인딩 속성을 구성할 수 있습니다.
+Edge Delivery Services의 양식 조각은 중첩된 조각, 단일 양식 내의 여러 인스턴스 및 데이터 소스와의 원활한 통합을 포함한 고급 기능을 지원합니다.
 
-- **조각 내에서 조각 사용**
-중첩된 양식 조각을 만들 수 있습니다. 즉, 조각 안에 다른 조각을 추가할 수 있으며, 중첩된 조각 구조를 가질 수 있습니다.
+## 양식 단편 이해
 
-  >[!NOTE]
-  >
-  > 조각을 그 자체 내에 중첩할 수는 없습니다. 순환 참조와 의도치 않은 동작을 유발하여 오류나 렌더링 문제가 발생할 수 있기 때문입니다.
+Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강력한 기능을 제공합니다.
 
-## Edge Delivery Services 양식 조각 사용 시 고려 사항
+**핵심 기능:**
 
-- 조각과 조각을 사용하려는 양식 모두에 동일한 GitHub URL을 추가해야 합니다.
-- 양식 내에서 양식 조각을 편집할 수 없습니다. 변경하려면 독립 실행형 양식 조각을 수정해야 합니다.
+- **일관성 관리**: 조각은 여러 양식에서 동일한 레이아웃 및 콘텐츠를 유지합니다. &quot;한 번 변경, 모든 곳에 적용&quot; 접근 방식을 사용하면 조각 업데이트가 미리보기 모드의 모든 양식에 자동으로 적용됩니다.
+- **여러 사용**: 각각 다른 데이터 원본 또는 스키마 요소에 독립적인 데이터 바인딩이 있는 단일 양식 내에서 동일한 조각을 여러 번 추가합니다.
+- **중첩된 구조**: 복잡한 양식 아키텍처를 위해 다른 조각 내에 조각을 포함시켜 복잡한 계층을 만듭니다.
+
+**기술 요구 사항:**
+
+- **GitHub URL 일관성**: 조각과 이를 사용하는 모든 양식은 모두 동일한 GitHub 저장소 URL을 지정해야 합니다
+- **독립 실행형 편집**: 조각은 독립 실행형 양식에서만 수정할 수 있으며 호스트 양식에서는 변경할 수 없습니다.
+
+**게시 동작:**
+
+>[!IMPORTANT]
+>
+>미리보기 모드에서 조각 변경 사항은 모든 양식에 즉시 반영됩니다. 게시 모드에서는 업데이트와 이를 사용하는 양식을 모두 다시 게시해야 합니다.
+
+>[!CAUTION]
+>
+>재귀적 조각 참조(조각 자체 내에 조각 중첩)를 사용하지 마십시오. 이렇게 하면 렌더링 오류와 예기치 않은 동작이 발생합니다.
 
 ## 사전 요구 사항
 
-- [GitHub 저장소를 설정](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)하여 AEM 환경과 GitHub 저장소 간의 연결을 구축합니다.
-- 이미 Edge Delivery Services를 사용하고 있는 경우 최신 버전의 [적응형 양식 블록](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)을 GitHub 저장소에 추가합니다.
-- AEM Forms 작성자 인스턴스에는 Edge Delivery Services 기반 템플릿이 포함됩니다.
-- AEM Forms as a Cloud Service 작성자 인스턴스 및 GitHub 저장소의 URL을 바로 사용할 수 있습니다.
+**기술 설정 요구 사항:**
+
+- AEM 환경과 GitHub 리포지토리 간에 연결이 설정된 [GitHub 리포지토리 구성됨](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
+- GitHub 저장소에 [최신 적응형 Forms 블록](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) 추가됨(기존 Edge Delivery Services 프로젝트의 경우)
+- Edge Delivery Services 템플릿이 있는 AEM Forms 작성자 인스턴스 사용 가능
+- AEM Forms as a Cloud Service 작성자 인스턴스 URL 및 GitHub 저장소 URL에 액세스
+
+**필요한 지식과 권한:**
+
+- 양식 디자인 개념 및 구성 요소 계층 구조에 대한 기본 이해
+- 유니버설 편집기 인터페이스 및 양식 작성 워크플로에 대한 친숙도
+- 양식 에셋을 만들고 관리할 수 있는 AEM Forms의 작성자 수준 권한
+- 조직의 양식 표준 및 재사용 가능한 구성 요소 요구 사항 이해
 
 ## Edge Delivery Services 양식 조각을 사용하여 작업
 
@@ -63,7 +86,7 @@ ht-degree: 97%
 - [양식에 양식 조각 추가](#adding-form-fragments-to-a-form)
 - [양식 조각 관리](#managing-form-fragments)
 
-### 양식 조각 만들기
++++ 양식 조각 만들기
 
 범용 편집기에서 양식 조각을 만들려면 다음 단계를 수행합니다.
 
@@ -74,11 +97,11 @@ ht-degree: 97%
    ![조각 만들기](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **적응형 양식 조각 만들기** 마법사가 나타납니다.
-1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**을 클릭합니다.
    ![Edge Delivery Services 템플릿 선택](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.
-1. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 저장소의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 `https://github.com/wkndforms/edsforms`입니다.
+1. **GitHub URL**&#x200B;을 지정합니다. 예를 들어 GitHub 리포지토리의 이름이 `edsforms`이고 `wkndforms` 계정 아래에 있는 경우 URL은 `https://github.com/wkndforms/edsforms`입니다.
 
    ![기본 속성](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -98,25 +121,39 @@ ht-degree: 97%
 1. (선택 사항) **고급** 탭에서 조각의 **게시 일자** 또는 **게시 취소 일자**&#x200B;를 지정합니다.
 
    ![고급 탭](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. **만들기**&#x200B;를 클릭하면 마법사가 나타납니다.
+1. 조각을 생성하려면 **만들기**&#x200B;를 클릭하십시오. 편집 옵션이 있는 성공 대화 상자가 나타납니다.
 
    ![조각 편집](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-1. **편집**&#x200B;을 클릭하면 기본 템플릿이 적용된 생성된 조각이 작성용 범용 편집기에서 열립니다.
+1. 기본 템플릿이 적용된 유니버설 편집기에서 조각을 열려면 **편집**&#x200B;을 클릭하십시오.
 
-   ![작성용 범용 편집기의 조각](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![작성을 위한 유니버설 편집기의 조각](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-   편집 모드에서는 모든 양식 구성 요소를 조각에 추가할 수 있습니다. 범용 편집기를 사용하여 조각을 만드는 방법에 대한 자세한 내용은 [범용 편집기를 사용한 AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) 문서를 참조하십시오.
+1. **조각 콘텐츠 디자인**: 양식 구성 요소(텍스트 필드, 드롭다운, 확인란)를 추가하여 재사용 가능한 섹션을 만듭니다. 자세한 구성 요소 지침은 [범용 편집기를 사용하여 AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)를 참조하십시오.
 
-   아래 스크린샷은 범용 편집기에서 생성된 `contact fragment`를 보여 줍니다.
+1. **구성 요소 속성 구성**: 사용 사례에 필요한 필드 이름, 유효성 검사 규칙 및 기본값을 설정합니다.
+
+1. **저장 및 미리 보기**: 조각을 저장하고 미리 보기 모드를 사용하여 레이아웃 및 기능을 확인합니다.
 
    ![이름, 전화번호, 이메일, 주소 필드를 보여 주는 범용 편집기의 완성된 연락처 세부 정보의 스크린샷은 여러 양식에 걸쳐 재사용할 수 있습니다.](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
-   조각을 만든 후에는 [Edge Delivery Services 양식에 만든 조각을 추가](#adding-form-fragments-in-forms)할 수 있습니다.
+**유효성 검사 검사점:**
 
-### 양식에 양식 조각 추가
+- 유니버설 편집기에서 오류 없이 조각 로드
+- 모든 양식 구성 요소가 올바르게 렌더링됩니다.
+- 필드 속성 및 유효성 검사 규칙은 예상대로 작동합니다
+- 조각이 저장되고 Forms 및 문서 콘솔에서 사용할 수 있습니다.
 
-직원과 감독자 정보를 모두 포함하는 간단한 `Employee Details` 양식을 만들어 보겠습니다. 직원 및 감독자 패널 모두에서 `Contact Details` 조각을 사용할 수 있습니다. 양식에서 양식 조각을 사용하려면 다음 단계를 수행합니다.
+조각이 완료되면 [모든 Edge Delivery Services 양식에 통합](#adding-form-fragments-to-a-form)할 수 있습니다.
+
++++
+
+
++++ 양식에 양식 조각 추가
+
+이 예에서는 직원 및 감독자 정보 섹션 모두에 대해 `Employee Details` 조각을 사용하는 `Contact Details` 양식을 만드는 방법을 보여 줍니다. 이 접근 방식은 개발 노력을 줄이면서 일관된 데이터 수집을 보장합니다.
+
+양식 조각을 양식에 통합하려면 다음 작업을 수행하십시오.
 
 1. 편집 모드에서 양식을 엽니다.
 1. 양식에 양식 조각 구성 요소를 추가합니다.
@@ -140,7 +177,7 @@ ht-degree: 97%
 
 1. **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
 
-   양식 조각은 양식에 대한 참조를 통해 추가되며 독립형 양식 조각과 동기화 상태를 유지합니다.
+   양식 조각은 양식에 대한 참조로 추가되며 독립 실행형 양식 조각과 동기화된 상태를 유지합니다.
 
    ![범용 편집기 내의 직원 양식에 연락처 세부 정보 조각이 성공적으로 통합된 모습을 보여 주는 스크린샷으로, 조각이 재사용될 때 구조를 유지하는 방법을 보여 줍니다.](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -152,7 +189,11 @@ ht-degree: 97%
 
    ![직원 세부 정보 양식](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
 
-### 양식 조각 관리
++++
+
+
+
++++ 양식 조각 관리
 
 AEM Forms 사용자 인터페이스를 사용하여 양식 조각에 대해 여러 작업을 수행할 수 있습니다.
 
@@ -211,10 +252,50 @@ AEM Forms 사용자 인터페이스를 사용하여 양식 조각에 대해 여�
     </tbody>
     </table>
 
++++
+
 ## 모범 사례
 
-- 조각 이름이 고유한지 확인하십시오. 동일한 이름의 조각이 이미 있는 경우 조각을 만들 수 없습니다.
-- 독립형 양식 조각의 모든 표현식, 스크립트 또는 스타일은 참조로 삽입되거나 양식에 임베드되어도 유지됩니다.
-- 양식을 게시하면 양식 내에 참조로 삽입된 양식 조각도 자동으로 게시됩니다.
+**조각 디자인 및 이름 지정:**
+
+- **설명적이고 고유한 이름을 사용합니다**: 조각의 목적을 명확하게 나타내는 이름을 선택합니다(예: &quot;fragment1&quot;이 아닌 &quot;contact-details-with-validation&quot;).
+- **재사용 가능성 계획**: 디자인 조각은 컨텍스트에 독립적이므로 다양한 양식 유형에서 작동합니다
+- **조각의 포커스를 유지합니다**: 복잡한 다기능 구성 요소가 아닌 단일 목적의 조각을 만듭니다.
+
+**개발 워크플로:**
+
+- **독립적으로 조각 테스트**: 양식에 통합하기 전에 조각 기능을 확인하십시오.
+- **일관된 GitHub URL 유지**: 모든 관련 조각 및 양식에서 동일한 저장소 URL이 사용되는지 확인
+- **문서 단편 목적**: 팀 구성원이 각 단편을 사용할 시기를 이해하는 데 도움이 되는 명확한 설명과 태그를 포함합니다
+
+**게시 및 유지 관리:**
+
+- **게시 조정**: 조각을 업데이트할 때 모든 종속 양식을 동시에 다시 게시합니다.
+- **버전 제어**: 조각을 업데이트할 때 의미 있는 커밋 메시지를 사용하여 시간 경과에 따른 변경 내용을 추적합니다
+- **종속성 모니터링**: 업데이트 영향을 평가하기 위해 각 조각을 사용하는 양식을 추적합니다.
+
+>[!TIP]
+>
+>조각 스타일, 스크립트 및 표현식은 임베드될 때 유지되므로 이 상속을 염두에 두고 디자인할 수 있습니다.
+
+## 요약
+
+Edge Delivery Services에서 양식 조각을 활용하여 개발 효율성을 높이고 조직 양식 전반에서 일관성을 유지하는 방법을 성공적으로 배웠습니다.
+
+**주요 성과:**
+
+- **이해**: 양식 조각의 비즈니스 가치와 기술적 기능을 파악했습니다.
+- **만들기**: 적절한 구성으로 유니버설 편집기를 사용하여 재사용 가능한 양식 조각을 빌드했습니다.
+- **통합**: 올바른 참조 설정 및 속성 구성을 사용하여 양식에 조각을 추가했습니다.
+- **관리**: 탐색된 조각 라이프사이클 작업 및 유지 관리 워크플로
+
+**다음 단계:**
+
+- 조직에 대해 일반적으로 사용되는 조각의 라이브러리 만들기
+- 조각 사용에 대한 이름 지정 규칙 및 거버넌스 정책 수립
+- 동적 데이터 기반 조각에 대한 [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)과의 고급 통합 탐색
+- 일관된 사용자 경험을 위해 조각 기반 양식 템플릿 구현
+
+이제 일관된 사용자 환경을 보장하면서 프로젝트 간에 효율적으로 확장하는 모듈식 유지 관리 아키텍처를 통해 양식을 활용할 수 있습니다.
 
 
