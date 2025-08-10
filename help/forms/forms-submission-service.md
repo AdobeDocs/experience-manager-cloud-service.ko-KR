@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 60e693593778a558e91d68da41025277438c6f03
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1545'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 1%
 # Edge Delivery Services용 Forms 제출 서비스
 
 Forms 제출 서비스는 양식 제출 데이터를 원하는 스프레드시트(Google Sheets, Microsoft OneDrive 또는 SharePoint)에 직접 자동으로 저장하는 Adobe의 호스팅 솔루션입니다. 따라서 실시간 데이터 수집 및 관리를 제공하면서 복잡한 백엔드 인프라가 필요하지 않습니다.
-
-
 
 ## 개요
 
@@ -57,8 +55,6 @@ Forms 제출 서비스는 양식 제출 데이터를 원하는 스프레드시�
 ## 주요 이점
 
 Forms 제출 서비스는 간소화된 데이터 수집을 위한 몇 가지 이점을 제공합니다.
-
-
 
 +++ 간소화된 설정
 
@@ -119,7 +115,7 @@ Forms 제출 서비스를 설정하기 전에 다음을 확인하십시오.
 
 >[!TIP]
 >
->Edge Delivery Services을 처음 사용하십니까?**&#x200B;** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
+>Edge Delivery Services을 처음 사용하십니까?**** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
 
 ## 구성 메서드
 
@@ -139,9 +135,8 @@ Forms 제출 서비스는 두 가지 구성 접근 방식을 제공합니다. �
 
 두 방법 중 하나를 구성하기 전에 AEM 프로젝트 기반이 준비되었는지 확인하십시오.
 
-1. 최신 적응형 Forms 블록(**시작 자습서**)을 사용하여 [AEM 프로젝트 만들기 또는 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
-
-2. **프로젝트 루트에서`fstab.yaml`** 업데이트:
+1. 최신 적응형 Forms 블록(**시작 자습서**)을 사용하여 [AEM 프로젝트 만들기 또는 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
+1. **프로젝트 루트에서`fstab.yaml`** 업데이트:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -149,8 +144,7 @@ Forms 제출 서비스는 두 가지 구성 접근 방식을 제공합니다. �
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-
-3. **과(와)**&#x200B;프로젝트 폴더 공유`forms@adobe.com`(편집 권한 필요)
+1. **과(와)**&#x200B;프로젝트 폴더 공유`forms@adobe.com`(편집 권한 필요)
 
 +++
 
@@ -170,9 +164,9 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식 구조를 만듭니�
 **양식 만들기 단계:**
 
 1. **스프레드시트 플랫폼을 엽니다**(Google Sheets 또는 Microsoft Excel)
-2. 양식 프로젝트용 **새 스프레드시트 만들기**
-3. **시트 이름 지정**(`helix-default` 또는 `shared-aem`이어야 함)
-4. **양식 만들기 가이드**&#x200B;를 사용하여 [양식 구조를 정의](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+1. 양식 프로젝트용 **새 스프레드시트 만들기**
+1. **시트 이름 지정**(`helix-default` 또는 `shared-aem`이어야 함)
+1. **양식 만들기 가이드**&#x200B;를 사용하여 [양식 구조를 정의](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![양식 정의](/help/forms/assets/form-submission-definition.png)
 *예: 필드 유형, 레이블 및 유효성 검사 규칙을 사용한 양식 정의*
@@ -203,9 +197,9 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식 구조를 만듭니�
 **데이터 시트 설정:**
 
 1. 기존 스프레드시트에 **새 시트 추가**
-2. **시트 이름을 정확히`incoming`**&#x200B;로 지정합니다(대/소문자 구분).
-3. 양식 필드와 일치하는 **열 머리글 설정**
-4. 변경 내용을 유지하려면 **스프레드시트를 저장**&#x200B;하세요.
+1. **시트 이름을 정확히`incoming`**&#x200B;로 지정합니다(대/소문자 구분).
+1. 양식 필드와 일치하는 **열 머리글 설정**
+1. 변경 내용을 유지하려면 **스프레드시트를 저장**&#x200B;하세요.
 
 ![받는 시트](/help/forms/assets/form-submission-incoming-sheet.png)
 *예: 양식 필드와 일치하는 열 머리글이 있는 시트를 가져오는 중*
@@ -239,11 +233,13 @@ Adobe Forms 제출 서비스에 스프레드시트에 대한 액세스 권한을
 **공유 프로세스:**
 
 1. 스프레드시트의 오른쪽 상단에 있는 **공유 단추를 클릭합니다**
-2. **Adobe 서비스 계정 추가:**
+1. **Adobe 서비스 계정 추가:**
+
    - 전자 메일: `forms@adobe.com`
    - 권한 수준: **편집기**(데이터 쓰기에 필요)
-3. **공유 초대 보내기**
-4. 다음 단계를 위해 **스프레드시트 링크 복사**
+
+1. **공유 초대 보내기**
+1. 다음 단계를 위해 **스프레드시트 링크 복사**
 
    ![수신 시트 공유](/help/forms/assets/form-submission-share-incoming.png)
    *Adobe 서비스 액세스 권한을 부여하기 위한 단계별 공유 프로세스*
@@ -280,9 +276,9 @@ Adobe Forms 제출 서비스에 스프레드시트에 대한 액세스 권한을
 **양식 스프레드시트 연결:**
 
 1. **양식 정의 스프레드시트 열기**(`helix-default` 또는 `shared-aem`시트가 있는 스프레드시트)
-2. 양식 정의에서 **제출 필드 행 찾기**
-3. **복사한 스프레드시트 링크**&#x200B;를 제출 필드의 **Action** 열에 붙여 넣습니다.
-4. 양식 정의에 **변경 내용을 저장**
+1. 양식 정의에서 **제출 필드 행 찾기**
+1. **복사한 스프레드시트 링크**&#x200B;를 제출 필드의 **Action** 열에 붙여 넣습니다.
+1. 양식 정의에 **변경 내용을 저장**
 
    ![스프레드시트 연결](/help/forms/assets/form-submission-sheet-linking.png)
    *예: 데이터 수집 스프레드시트에 제출 동작 연결*
@@ -290,8 +286,8 @@ Adobe Forms 제출 서비스에 스프레드시트에 대한 액세스 권한을
 **양식 게시:**
 
 1. 브라우저에서 **AEM Sidekick 열기**
-2. 구성을 테스트하려면 **양식 미리 보기**
-3. 라이브로 만들려면 **양식을 게시**
+1. 구성을 테스트하려면 **양식 미리 보기**
+1. 라이브로 만들려면 **양식을 게시**
 
 **최종 유효성 검사:**
 
@@ -368,37 +364,38 @@ Postman은 API 제출을 테스트할 수 있는 사용자 친화적인 인터�
 **설치 지침:**
 
 1. Postman에서 **새 POST 요청 만들기**
-2. **끝점 구성:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-3. **자리 표시자 바꾸기:**
+1. **끝점 구성:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+1. **자리 표시자 바꾸기:**
+
    - 실제 양식 ID→ `{id}`
    - GitHub 저장소 이름→ `[repository]`
    - GitHub 조직/사용자 이름→ `[organization]`
 
 **요청 구성:**
 
-    &quot;json
+```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-헤더:
+Headers:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main—your-repo—your-org
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-본문(JSON):
-&lbrace;
-&quot;data&quot;: &lbrace;
-&quot;startDate&quot;: &quot;2025-01-10&quot;,
-&quot;endDate&quot;: &quot;2025-01-25&quot;,
-&quot;destination&quot;: &quot;Australia&quot;,
-&quot;class&quot;: &quot;First Class&quot;,
-&quot;예산&quot;: &quot;2000&quot;,
-&quot;amount&quot;: &quot;1000000&quot;,
-&quot;name&quot;: &quot;Mary&quot;,
-&quot;age&quot;: &quot;35&quot;,
-&quot;subscribe&quot;: null,
-&quot;email&quot;: &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
-&quot;
+Body (JSON):
+{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
+}
+```
 
 **예상 응답:**
 
@@ -444,10 +441,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-        ```
+```
 
->[!TAB Windows Command Prompt]
-     
+>[!TAB Windows 명령 프롬프트]
+
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -477,15 +474,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-    ```
+```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Response & Verification
++++ API 응답 및 확인
 
-**Successful Response:**
+**성공한 응답:**
 
 ```http
 HTTP/1.1 201 Created
@@ -571,7 +568,7 @@ Solutions:
 
 - **조기 액세스 문제:** 전자 메일 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API 설명서:** [개발자 참조](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **커뮤니티 지원:** [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)
+- **커뮤니티 지원:** [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/)
 
 +++
 
@@ -582,7 +579,7 @@ Forms 제출 서비스를 구성했으므로 이제 다음 관련 항목을 살�
 
 +++ Forms 기능 향상
 
-- **[고급 Forms 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - 유효성 검사, 조건부 논리 및 사용자 지정 스타일 추가
+- **[고급 Forms 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - 유효성 검사, 조건부 논리 및 사용자 지정 스타일 추가
 - **[양식 구성 요소 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - 사용 가능한 양식 필드 형식 살펴보기
 
 +++
