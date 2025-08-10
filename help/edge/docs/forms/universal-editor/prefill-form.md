@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1787'
 ht-degree: 3%
 
 ---
@@ -249,7 +249,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **예:**
 
@@ -267,40 +267,36 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 
 FDM 기반 양식에 대한 **JSON 예:**
 
-    &quot;
-    
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
-    &quot;firstName&quot;: &quot;John&quot;,
-    &quot;lastName&quot;: &quot;Doe&quot;,
-    &quot;email&quot;: &quot;john.doe@example.com&quot;,
-    &quot;phone&quot;: &quot;+1-555-0123&quot;
-    
-    ,
-    &quot;afUnBoundData&quot;: &lbrace;
-    &quot;additionalInfo&quot;: &quot;사용자 환경 설정 로드됨&quot;
-    &rbrace;
-    
-    
-    &quot;
+```
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
+```
 
 **XFA 기반 양식에 대한 XML 예:**
 
-    &quot;
-    
-    &lt;?xml version=&quot;UTF-8&quot;?>
-    &lt;afData>
-    &lt;afBoundData>
-    &lt;user>
-    &lt;firstName>John&lt;/firstName>
-    &lt;lastName>Doe&lt;/lastName>
-    &lt;email>john.doe@example.com&lt;/email>
-    &lt;/user>
-    &lt;/afBoundData>
-    &lt;/afData>
-    
-    &quot;
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
+```
 
 ### 예제 미리 채우기 URL
 
