@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
+source-git-commit: 060a00e887a8709a4fd3c4b160b540a8e2867769
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 8%
@@ -67,8 +67,8 @@ curl -svo /dev/null https://www.example.com \
 --resolve www.example.com:443:151.101.3.10
 ```
 
-* **`www.example.com`**&#x200B;을(를) 도메인으로 바꾸십시오.
-* IP 주소 ``151.101.3.10``은(는) AEM Cloud Service에 액세스하는 데 사용할 수 있는 IP 중 하나입니다. [APEX 레코드](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)도 참조하세요.
+* `www.example.com`을(를) 도메인으로 바꾸십시오.
+* IP 주소 `151.101.3.10`은(는) AEM Cloud Service에 액세스하는 데 사용할 수 있는 IP 중 하나입니다. [APEX 레코드](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)도 참조하세요.
 
 `--resolve` 플래그는 지정된 IP에 요청을 강제 적용하고 도메인의 인증서 및 라우팅이 올바르게 설치된 후에만 성공을 반환합니다.
 
