@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms은 범용 편집기에서 고성능 웹 게
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
 
 ## 경로 A: Forms으로 새 프로젝트 만들기
 
@@ -186,7 +186,7 @@ AEM 코드 동기화는 AEM 작성 환경과 GitHub 저장소 간의 콘텐츠 �
 
     >[!NOTE]
     >
-    >빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하세요.
+>빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하세요.
 
 +++
 
@@ -759,27 +759,6 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
 
 +++
 
-+++유니버설 편집기 문제
-
-**문제:** 양식 구성 요소가 유니버설 편집기에 표시되지 않음
-
-**솔루션:**
-
-- AEM 코드 동기화가 설치되어 실행 중인지 확인
-- `fstab.yaml`에 올바른 AEM 작성자 URL이 있는지 확인
-- AEM 인스턴스에 조기 액세스 기능이 활성화되어 있는지 확인합니다.
-- `component-definition.json`에 양식 구성 요소가 포함되어 있는지 확인
-
-**문제:** 게시 후 변경 내용이 표시되지 않음
-
-**솔루션:**
-
-- CDN 캐시 새로 고침 대기
-- 브라우저 캐시 확인(시크릿/비공개 모드 시도)
-- 올바른 URL 형식이 사용되고 있는지 확인
-
-+++
-
 +++양식 기능 문제
 
 **문제:** 양식 제출이 작동하지 않음
@@ -801,4 +780,27 @@ Edge Delivery Services을 사용하는 AEM 프로젝트가 이미 있는 경우 
 - 로컬 개발 환경에서 테스트
 
 +++
+
++++유니버설 편집기 문제
+
+**문제:** 양식 구성 요소가 유니버설 편집기에 표시되지 않음
+
+**솔루션:**
+
+- AEM 코드 동기화가 설치되어 실행 중인지 확인
+- `fstab.yaml`에 올바른 AEM 작성자 URL이 있는지 확인
+- AEM 인스턴스에 조기 액세스 기능이 활성화되어 있는지 확인합니다.
+- `component-definition.json`에 양식 구성 요소가 포함되어 있는지 확인
+
+**문제:** 게시 후 변경 내용이 표시되지 않음
+
+**솔루션:**
+
+- CDN 캐시 새로 고침 대기
+- 브라우저 캐시 확인(시크릿/비공개 모드 시도)
+- 올바른 URL 형식이 사용되고 있는지 확인
+
++++
+
+
 

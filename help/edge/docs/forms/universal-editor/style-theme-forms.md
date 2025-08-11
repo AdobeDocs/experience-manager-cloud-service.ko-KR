@@ -4,7 +4,7 @@ description: Edge Delivery Services를 통해 제공되는 AEM Forms의 테마�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -147,7 +147,6 @@ Edge Delivery Services for AEM Forms의 양식 스타일을 사용하려면 CSS 
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
-
 +++
 
 +++ 레이아웃 및 구조 변수
@@ -1109,7 +1108,6 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
   text-align: center;
 }
 ```
-
 +++
 
 +++ 필드 이름에 따른 스타일 지정
@@ -1447,32 +1445,6 @@ main .form .text-wrapper input {
 
 +++
 
-+++ 일반적인 선택기 실수
-
-```css
-/- ❌ Incorrect: Assumes direct nesting */
-.form form input {
-  /- This might miss inputs in wrappers */
-}
-
-/- ✅ Correct: Target actual structure */
-.form .text-wrapper input {
-  /- Targets actual HTML structure */
-}
-
-/- ❌ Avoid: Unnecessary specificity */
-main .form form .text-wrapper input {
-  /- Too specific, harder to override */
-}
-
-/- ✅ Preferred: Balanced specificity */
-.form .text-wrapper input {
-  /- Easier to maintain and override */
-}
-```
-
-+++
-
 +++ 양식 상태 스타일링
 
 ```css
@@ -1499,6 +1471,34 @@ main .form form .text-wrapper input {
 ```
 
 +++
+
++++ 일반적인 선택기 실수
+
+```css
+/- ❌ Incorrect: Assumes direct nesting */
+.form form input {
+  /- This might miss inputs in wrappers */
+}
+
+/- ✅ Correct: Target actual structure */
+.form .text-wrapper input {
+  /- Targets actual HTML structure */
+}
+
+/- ❌ Avoid: Unnecessary specificity */
+main .form form .text-wrapper input {
+  /- Too specific, harder to override */
+}
+
+/- ✅ Preferred: Balanced specificity */
+.form .text-wrapper input {
+  /- Easier to maintain and override */
+}
+```
+
++++
+
+
 
 ### **구성 요소별 모범 사례**
 

@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2382'
 ht-degree: 1%
 
 ---
@@ -317,7 +317,7 @@ Universal Editor는 다양한 화면 차원, 입력 방법 및 사용자 컨텍�
 
 +++
 
-## 포괄적인 문제 해결
+## 문제 해결
 
 ### 레이아웃 문제
 

@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 3%
@@ -41,11 +41,13 @@ ht-degree: 3%
 
 **의사 결정 지침:**
 
+![템플릿 선택 결정](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - 복잡한 워크플로우, 심층 AEM 통합 또는 기존 AEM 에셋을 활용하는 경우 **핵심 구성 요소**&#x200B;를 사용하십시오.
 - 성능, 간소화 및 최신 개발 사례를 확인하려면 **Edge Delivery Services**&#x200B;을(를) 사용하십시오.
 
-![템플릿 선택 결정](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
-*적절한 템플릿 유형을 선택하기 위한 결정 흐름도*
+
+*적절한 템플릿 형식을 선택하기 위한 결정 흐름도*
 
 ## 사전 요구 사항
 
@@ -505,8 +507,8 @@ Edge Delivery Services을 구성하고 양식을 게시합니다. 프로세스�
 문제가 지속되는 경우:
 
 1. Adobe Experience Cloud 서비스 상태를 확인합니다.
-2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko)를 검토하십시오.
-3. [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)를 방문하십시오.
+2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토하십시오.
+3. [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/)를 방문하십시오.
 4. Adobe 고객 지원 센터에 문의하십시오.
 
 +++
@@ -528,6 +530,6 @@ Edge Delivery Services을 구성하고 양식을 게시합니다. 프로세스�
 
 ### 성능 최적화
 
-- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko): 성능을 최대화합니다.
+- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): 성능을 최대화합니다.
 - [양식 분석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): 양식 성능 및 사용자 동작을 추적합니다.
 

@@ -1,13 +1,13 @@
 ---
 title: 범용 편집기에서 양식에 대한 양식 데이터 모델(FDM)을 통합하는 방법은 무엇입니까?
-description: 양식 데이터 모델(FDM)을 기반으로 양식을 만드는 방법을 알아봅니다. FDM의 데이터 모델 오브젝트에 대한 샘플 데이터를 생성하고 편집합니다.
+description: 양식 데이터 모델(FDM)을 기반으로 에지 전달 서비스를 위한 양식을 만드는 방법을 알아봅니다. FDM의 데이터 모델 오브젝트에 대한 샘플 데이터를 생성하고 편집합니다.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 33%
+source-wordcount: '716'
+ht-degree: 31%
 
 ---
 

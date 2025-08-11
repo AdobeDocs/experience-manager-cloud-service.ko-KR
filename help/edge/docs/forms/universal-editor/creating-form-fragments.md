@@ -4,7 +4,7 @@ description: 범용 편집기에서 양식 조각을 만들고 양식에 추가�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 40%
@@ -12,12 +12,6 @@ ht-degree: 40%
 ---
 
 # 범용 편집기에서 양식 조각 만들기
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
--->
 
 양식 조각은 반복적인 개발 작업을 제거하고 조직 양식 전체에서 일관성을 보장하는 재사용 가능한 구성 요소입니다. 모든 양식에 대한 연락처 정보, 주소 세부 정보 또는 동의 계약과 같은 공통 섹션을 다시 만드는 대신 이러한 요소를 조각으로 한 번 빌드하여 여러 양식에서 다시 사용할 수 있습니다.
 
@@ -97,7 +91,7 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
    ![조각 만들기](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **적응형 양식 조각 만들기** 마법사가 나타납니다.
-1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**을 클릭합니다.
    ![Edge Delivery Services 템플릿 선택](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.

@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +249,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **예:**
 
@@ -422,17 +422,19 @@ FDM 기반 양식에 대한 **JSON 예:**
 
 +++
 
++++한 양식에서 여러 미리 채우기 서비스를 사용할 수 있습니까?
+
+양식당 하나의 기본 미리 채우기 서비스를 구성할 수 있습니다. 그러나 단일 양식 데이터 모델 내에서 서로 다른 데이터 소스를 결합하여 유사한 기능을 수행할 수 있습니다.
+
++++
+
 +++미리 채우기 서비스에 대한 인증을 처리하려면 어떻게 해야 합니까?
 
 인증은 데이터 소스 구성에 따라 다릅니다. FDM 기반 미리 채우기의 경우 데이터 소스 설정에서 인증을 구성합니다. 초안 미리 채우기의 경우 일반적으로 저장된 초안에 액세스하려면 로그인해야 합니다.
 
 +++
 
-+++한 양식에서 여러 미리 채우기 서비스를 사용할 수 있습니까?
 
-양식당 하나의 기본 미리 채우기 서비스를 구성할 수 있습니다. 그러나 단일 양식 데이터 모델 내에서 서로 다른 데이터 소스를 결합하여 유사한 기능을 수행할 수 있습니다.
-
-+++
 
 ## 관련 항목
 

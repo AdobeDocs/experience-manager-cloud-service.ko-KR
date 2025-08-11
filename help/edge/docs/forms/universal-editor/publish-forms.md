@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 2%
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [양식 제출 작업 구성](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [양식 스타일 지정 및 테마 설정](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [reCAPTCHA 보호 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [응답형 양식 레이아웃 만들기](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [reCAPTCHA 보호 추가](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 
