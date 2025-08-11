@@ -4,11 +4,11 @@ description: 프로덕션 사용을 위해 Edge Delivery Services을 사용하�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터]
+keywords: 양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
 workflow-type: tm+mt
-source-wordcount: 746
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
