@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 74%
+source-wordcount: '2557'
+ht-degree: 70%
 
 ---
+
 
 # 자산 보기의 메타데이터 {#metadata}
 
@@ -32,7 +33,7 @@ ht-degree: 74%
 
 ![자산의 메타데이터 보기](assets/metadata-view.png)
 
-*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 [!UICONTROL 기본] 탭에서 제목, 설명 및 업로드 날짜와 같은 기본 메타데이터를 사용할 수 있습니다. [!UICONTROL 고급] 탭에는 카메라 모델, 렌즈 세부 정보 및 위치 정보 태그와 같은 고급 메타데이터가 포함되어 있습니다. [!UICONTROL 태그] 탭에는 이미지 내용에 따라 자동으로 적용된 태그가 포함되어 있습니다.
 
@@ -48,7 +49,7 @@ ht-degree: 74%
 
 ![자산의 스마트 태그 보기](assets/metadata-view-tags.png)
 
-*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 스마트 태그에는 신뢰도 점수도 백분율로 포함됩니다. 이는 적용된 태그와 관련된 신뢰도를 나타냅니다. 자동으로 적용되는 스마트 태그를 조정할 수 있습니다.
 
@@ -181,7 +182,6 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
    * ![편집 아이콘](assets/do-not-localize/edit.svg)을 클릭하여 URL을 편집합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-
 ### 메타데이터 양식의 태그 구성 요소 작업 {#tag-component-metadata-form}
 
 루트 요소는 자산과 연관시킬 수 있는 태그의 트리 구조를 나타내며, 자산에 할당된 태그를 기반으로 해당 자산을 식별하는 데 도움이 됩니다. 또한 메타데이터 편집기에서 메타데이터 양식을 구성하는 동안 특정 분류 체계에 대한 액세스를 제한할 수 있습니다.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 구성된 루트 태그를 보려면 메타데이터 양식과 루트 태그 간 매핑이 수행되는 자산의 세부 정보 페이지로 이동합니다.
+
+## 메타데이터 Forms 편집 {#edit-metadata-forms}
+
+메타데이터 양식을 편집하려면 다음 단계를 수행하십시오.
+
+1. [!DNL Assets View] 홈 페이지로 이동하고 **[!DNL Metadata Forms]**&#x200B;을(를) 선택하여 메타데이터 양식 목록을 봅니다.
+1. 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 [!DNL Metadata Form Editor] 페이지를 엽니다. 이 페이지에는 왼쪽 창에 메타데이터 양식의 구성 요소(예: 가운데 창의 기본, 고급, 태그 등 탭 및 오른쪽 창의 메타데이터 속성 편집을 위한 설정 패널)가 표시됩니다.
+1. 탭(**[!DNL Basic]**, **[!DNL Advanced]** 또는 **[!DNL Tags]**)을 엽니다.
+1. 메타데이터 속성을 선택하여 **[!UICONTROL 설정]** 패널에서 설정을 편집합니다. **[!UICONTROL 설정]** 패널에서 속성 매핑을 업데이트하고 레이블 이름을 바꾸고 속성 값을 수정하거나 추가할 수 있으며 이러한 추가 편집을 수행할 수 있습니다.
+1. **[!UICONTROL 미리 보기]**&#x200B;를 클릭하여 변경 내용을 저장하기 전에 양식의 변경 내용을 검토합니다.
+1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## AI 생성 메타데이터를 통해 콘텐츠 검색 향상 {#ai-smart-tags}
 
@@ -254,13 +265,13 @@ AI 생성 메타데이터를 비활성화하는 방법에 대한 자세한 내�
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
