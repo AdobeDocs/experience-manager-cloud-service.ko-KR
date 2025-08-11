@@ -224,7 +224,7 @@ OSGi 속성:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 **Java 21 런타임**(으)로 업그레이드되었습니다.
+**Java 11 런타임*-은(는) 이제 더 이상 사용되지 않으며 대부분의 환경은 이미 더 성능이 좋은 &#x200B;** Java 21 런타임**(으)로 업그레이드되었습니다.
 
 지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 8월 28일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
 
