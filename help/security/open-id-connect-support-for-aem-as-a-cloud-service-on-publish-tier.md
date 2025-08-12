@@ -115,6 +115,7 @@ IdP 구성의 정보:
       "storeRefreshToken": false
    }
    ```
+
 1. 그런 다음 속성을 다음과 같이 구성합니다.
    * `groupsInIdToken`: ID 토큰으로 그룹이 전송되는 경우 true로 설정합니다. 값이 false이거나 지정되지 않으면 UserInfo 끝점에서 그룹을 읽습니다.
    * `groupsClaimName`: 클레임 이름에 AEM에서 동기화할 그룹이 포함되어 있습니다.
