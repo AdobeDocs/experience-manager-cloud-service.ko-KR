@@ -4,8 +4,8 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -745,8 +745,8 @@ data:
    * 이 규칙을 배포한 후에는 CDN 로그를 주의 깊게 분석하여 합법적인 요청이 잘못 표시되지 않는지 확인하십시오. 합법적인 트래픽에 영향이 없다고 확신하면 차단 모드로 전환하십시오.
 
 >[!NOTE]
-> 저희의 경험에 따르면 ATTACK 플래그와 관련된 긍정 오류 반응은 드뭅니다. 따라서 IP 주소가 악성이 아닌 것으로 알려져 있더라도 모든 의심스러운 트래픽을 즉시 차단하는 것이 실용적인 전략이 될 수 있으며, 이후 CDN 로그 분석을 사용하여 합법적인 트래픽을 식별하고 허용 규칙을 도입할 수 있습니다. 각 조직은 합법적인 요청을 실수로 차단할 위험과 더 큰 보호의 이점을 비교하여 위험 허용치를 평가해야 합니다.
 >
+> 저희의 경험에 따르면 ATTACK 플래그와 관련된 긍정 오류 반응은 드뭅니다. 따라서 IP 주소가 악성이 아닌 것으로 알려져 있더라도 모든 의심스러운 트래픽을 즉시 차단하는 것이 실용적인 전략이 될 수 있으며, 이후 CDN 로그 분석을 사용하여 합법적인 트래픽을 식별하고 허용 규칙을 도입할 수 있습니다. 각 조직은 합법적인 요청을 실수로 차단할 위험과 더 큰 보호의 이점을 비교하여 위험 허용치를 평가해야 합니다.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ data:
 
 Adobe는 2025년 7월 이전까지 악성 트래픽을 방어하는 데 여전히 유효하고 효과적인 아래 나열된 WAF 규칙을 권장했습니다. 새로 권장되는 규칙으로 마이그레이션하는 데 대한 고려 사항은 튜토리얼을 참조하십시오.
 
-<details>
-  <summary>확장하여 레거시 권장 WAF 규칙을 확인하십시오.</summary>
++++ 확장하여 레거시 권장 WAF 규칙을 확인하십시오.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,7 +798,8 @@ Adobe는 2025년 7월 이전까지 악성 트래픽을 방어하는 데 여전�
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## 튜토리얼 {#tutorial}
 
@@ -813,7 +813,3 @@ Adobe는 2025년 7월 이전까지 악성 트래픽을 방어하는 데 여전�
 * 악성 트래픽을 시뮬레이션하는 도구를 사용하여 규칙 테스트
 * 로그 분석 도구를 사용하여 결과 분석
 * 모범 사례
-
-
-
-

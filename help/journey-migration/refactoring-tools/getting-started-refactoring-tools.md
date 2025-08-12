@@ -1,14 +1,15 @@
 ---
-title: 리팩터링 도구 시작하기
+title: 리팩토링 도구 시작하기
 description: AEM as a Cloud Service에서 리팩터링 도구를 시작하는 방법에 대해 알아봅니다.
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 리팩터링 도구 시작하기 {#getting-started-refactoring-tools}
+# 리팩토링 도구 시작하기 {#getting-started-refactoring-tools}
 
 ## 사용 가능 {#availability}
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -34,8 +35,6 @@ ht-degree: 2%
 1. **Source 코드 보기**&#x200B;에 처음 액세스하면 소스 코드를 업로드하라는 메시지가 비어 있습니다.
 
    ![이미지](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Source 코드 업로드 {#uploading}
 
@@ -67,12 +66,12 @@ ht-degree: 2%
    ![이미지](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >새 프로젝트를 업로드하면 기존 프로젝트가 삭제됩니다. 계속하기 전에 필요한 데이터가 저장되었는지 확인하십시오.
 
 >[!NOTE]
+>
 >소스 코드 업로드가 성공적으로 수행된 경우에만 리팩터링 작업을 실행할 수 있습니다.
-
-&#x200B;---
 
 ## 리팩터링 작업 {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ ht-degree: 2%
 ![이미지](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >**모든 도구를 함께 사용** 옵션을 사용하여 개별 리팩터링 작업을 트리거하거나 사용 가능한 모든 도구를 한 번에 실행할 수 있습니다.
-
-&#x200B;---
 
 ### &#x200B;2. 작업 상태
 
@@ -110,5 +108,5 @@ ht-degree: 2%
 ![이미지](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >각 작업은 완료하는 데 최대 1시간이 걸릴 수 있습니다. 상태가 업데이트되지 않은 경우 Adobe 지원 센터에 문의하십시오.
-

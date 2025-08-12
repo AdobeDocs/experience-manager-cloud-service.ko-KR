@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 배포 및 복제 문제 해결에 대해
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 31%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 >[!NOTE]
 >
 >콘텐츠 벌크 게시에 관심이 있는 경우 [트리 활성화 워크플로 단계](#tree-activation)를 사용하여 워크플로를 만드십시오. 그러면 대규모 페이로드를 효율적으로 처리할 수 있습니다.
->&#x200B;>벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
->&#x200B;>어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 단계로 워크플로를 트리거할 수 있습니다.
->&#x200B;>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 그리고 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 트리 활성화 워크플로 단계가 있는 워크플로를 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
+>>벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
+>>어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 단계로 워크플로를 트리거할 수 있습니다.
+>>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 그리고 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 트리 활성화 워크플로 단계가 있는 워크플로를 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
 
 ### 빠른 게시 취소/게시 - 예정된 게시 취소/게시 {#publish-unpublish}
 
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**(으)로 이동합니다.
 1. 워크플로 모델 페이지에서 화면 오른쪽 상단의 **만들기**&#x200B;를 누릅니다.
-1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko)를 참조하십시오.
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오.
 1. 목록에서 만든 모델을 선택하고 **편집**&#x200B;을 누릅니다.
 1. 다음 창에서 기본적으로 나타나는 단계를 삭제합니다
 1. 프로세스 단계를 현재 모델 플로우로 끌어서 놓습니다.
@@ -126,8 +126,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 >
 >이 기능은 사용자 지정 워크플로에 포함할 수 있는 더 많은 성능 트리 활성화 단계를 위해 더 이상 사용되지 않습니다.
 
-<details>
-<summary>더 이상 사용되지 않는 기능에 대한 자세한 내용을 보려면 여기를 클릭하십시오 .</summary>
++++ 더 이상 사용되지 않는 기능에 대한 자세한 내용을 보려면 여기를 클릭하십시오 .
 
 **도구 - 워크플로 - 모델**&#x200B;을 선택한 다음 아래와 같이 기본 워크플로 모델의 **콘텐츠 트리 게시**&#x200B;를 복사하여 트리 복제를 트리거할 수 있습니다.
 
@@ -135,13 +134,13 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 원래 모델을 호출하지 마십시오. 대신 먼저 모델을 복사하고 해당 복사본을 호출해야 합니다.
 
-모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ko#extending-aem)을 참조하십시오.
+모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)을 참조하십시오.
 
 또는 `Publish Content Tree` 프로세스 단계를 사용하는 워크플로 모델을 만들 수 있습니다.
 
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**(으)로 이동합니다.
 1. 워크플로 모델 페이지에서 화면 오른쪽 상단의 **만들기**&#x200B;를 누릅니다.
-1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko)를 참조하십시오.
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오.
 1. 목록에서 만든 모델을 선택하고 **편집**&#x200B;을 누릅니다.
 1. 다음 창에서 프로세스 단계를 현재 모델 플로우로 드래그하여 놓습니다.
 
@@ -194,7 +193,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### 복제 API {#replication-api}
 

@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -22,10 +22,15 @@ ht-degree: 4%
 1. 새 제품 슬라이드 구성 요소를 페이지의 기본 레이아웃 컨테이너에 삽입합니다.
    ![제품 회전 메뉴 구성 요소](/help/commerce-cloud/assets/product-carousel-component.png)
 1. 사이드 패널을 확장하고(아직 전환되지 않은 경우) 자산 파인더 드롭다운을 **제품**(으)로 전환합니다.
-     ![회전 메뉴 제품](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![회전 메뉴 제품](/help/commerce-cloud/assets/carousel-products.png)
+
 1. 연결된 Adobe Commerce 인스턴스에서 사용 가능한 제품 목록이 표시됩니다.
+
    ![연결된 인스턴스](/help/commerce-cloud/assets/connected-instance.png)
+
 1. 제품은 기본 속성으로 아래와 같이 표시됩니다.
+
    ![속성이 표시된 제품](/help/commerce-cloud/assets/discount.png)
 
 ## Sling 모델 업데이트 {#update-sling-model}
@@ -50,7 +55,7 @@ Sling 모델에 대한 전달 패턴을 통해 `CustomCarouselImpl`은(는) `Pro
    private ProductCarousel productCarousel;
    ```
 
-1. @PostConstruct 주석은 Sling 모델이 초기화될 때 이 메서드가 호출되도록 합니다. 제품 GraphQL 쿼리는 특성을 검색하기 위해 extendProductQueryWith 메서드를 사용하여 이미 확장되었습니다. 다음을 포함하도록 GraphQL 쿼리 업데이트  partial 쿼리의 속성:
+1. @PostConstruct 주석은 Sling 모델이 초기화될 때 이 메서드가 호출되도록 합니다. 제품 GraphQL 쿼리는 특성을 검색하기 위해 extendProductQueryWith 메서드를 사용하여 이미 확장되었습니다. 부분 쿼리에 속성을 포함하도록 GraphQL 쿼리를 업데이트합니다.
 
    ```
    @PostConstruct

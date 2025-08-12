@@ -4,7 +4,7 @@ description: AEM Forms용 Edge Delivery Services 양식의 테마 및 스타일 
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 ```
 
 - Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
-- 범례 요소 (&lt;legend>)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+- 범례 요소(`<legend>`)는 &quot;로그인 정보&quot; 텍스트와 클래스 필드 레이블을 사용하여 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
 - Fieldset 내부에서 여러 개의 .{Type}-wrapper 요소(이 경우 .text-wrapper 및 .password-wrapper)가 패널 내의 개별 양식 필드를 나타냅니다.
 - 각 래퍼에는 이전 예시와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
 
@@ -637,7 +637,6 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
   margin-bottom: 10px;
 }
 ```
-
 이 선택기는 반복 가능 패널 내의 모든 필드 래퍼 스타일을 지정하여 필드 사이의 간격을 일관되게 유지합니다.
 
 - 특정 필드 타기팅(패널 내):

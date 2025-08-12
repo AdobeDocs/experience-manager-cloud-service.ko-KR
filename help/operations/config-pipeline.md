@@ -4,7 +4,7 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -63,10 +63,10 @@ Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구�
 각 구성 파일은 다음 예제 코드 조각과 유사한 속성으로 시작됩니다.
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | 속성 | 설명 | 기본값 |
@@ -121,7 +121,7 @@ Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경 변수를 사용하면 `${{SPLUNK_TOKEN}}` 참조에 표시된 대로 [암호 속성](#secret-env-vars)이 환경별로 달라질 수 있습니다
+암호 유형 환경 변수를 사용하면 [ 참조에 표시된 대로 ](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다
 
 ```yaml
 kind: "LogForwarding"
@@ -152,7 +152,7 @@ data:
 ```
 
 속성 값에 차이가 있을 수 있는 경우 이 구조를 사용합니다. 예를들어, 파일에서 `envTypes` 배열 값은 접미사와 일치해야 합니다
-값이 `["dev"]`인 `cdn-dev.yaml` 및 `logForwarding-dev.yaml`, 값이 `["stage"]`인 `cdn-stage.yaml` 및 `logForwarding-stage.yaml` 등입니다.
+값이 `cdn-dev.yaml`인 `logForwarding-dev.yaml` 및 `["dev"]`, 값이 `cdn-stage.yaml`인 `logForwarding-stage.yaml` 및 `["stage"]` 등입니다.
 
 ### 환경당 폴더 {#folder-per-env}
 

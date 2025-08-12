@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 암호화 키 관리 방법 알아보기
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 100%
@@ -180,6 +180,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 CMK UI에서 이 정보 제공:
 ![UI에서 정보 입력](./assets/cmk/step3a.png)
 

@@ -4,7 +4,7 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 1. 아래 구문 섹션을 참조하여 이름이 `cdn.yaml`이거나 유사한 파일을 만드십시오.
 
-1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. *구성 파이프라인 사용*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
@@ -93,6 +93,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 튜토리얼
 
-CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
+CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
 
 

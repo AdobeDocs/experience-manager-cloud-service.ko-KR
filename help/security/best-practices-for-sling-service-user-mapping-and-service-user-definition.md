@@ -4,10 +4,10 @@ description: Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 
 1. 아래 설명에 따라 `ServiceUserMapper` => pre-auth 저장소 로그인에서 주체 이름을 가져옵니다.
 1. `ServiceUserMapper`에서 사용자 ID를 가져옵니다.
-1. 현재 사용자 ID에 대해 더 이상 사용되지 않는 1ServiceUserConfiguration`을 확인합니다.
+1. 현재 사용자 ID에 대해 더 이상 사용되지 않는 `1ServiceUserConfiguration`을(를) 확인하십시오.
 1. 사용자 ID를 사용하여 기본 Sling 서비스 로그인을 수행합니다(예: 서비스 사용자 ID의 `createAdministrativeSession` 및 가장 시퀀스).
 
 주체 이름을 사용한 새로운 매핑을 통해 다음과 같은 단순화된 저장소 로그인이 생성됩니다.

@@ -3,10 +3,10 @@ title: 자산 선택기 응용 프로그램 사용자 지정
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 23%
 
 ---
 
@@ -170,18 +170,18 @@ interface SelectedAsset {
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| *repo:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
-| *repo:id* | 문자열 | 자산의 고유 식별자입니다. |
-| *repo:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
-| *repo:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
-| *repo:size* | 숫자 | 자산의 크기입니다(바이트). |
-| *repo:path* | 문자열 | 저장소 내 자산의 위치입니다. |
-| *repo:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
-| *repo:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
-| *repo:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
-| *repo:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
-| *repo:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
-| *repo:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
+| *리포지토리:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
+| *리포지토리:id* | 문자열 | 자산의 고유 식별자입니다. |
+| *리포지토리:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
+| *리포지토리:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
+| *리포지토리:size* | 숫자 | 자산의 크기입니다(바이트). |
+| *리포지토리:path* | 문자열 | 저장소 내 자산의 위치입니다. |
+| *리포지토리:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
+| *리포지토리:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
+| *리포지토리:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
+| *리포지토리:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
+| *리포지토리:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
+| *리포지토리:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
 | *dc:format* | 문자열 | 파일 유형(예: JPEG, PNG 등)과 같은 에셋의 형식입니다. |
 | *tiff:imageWidth* | 숫자 | 자산의 폭입니다. |
 | *tiff:imageLength* | 숫자 | 자산의 높이입니다. |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

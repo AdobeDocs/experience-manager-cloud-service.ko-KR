@@ -4,24 +4,24 @@ description: 적응형 Forms에 대한 사용자 지정 제출 액션을 만들�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 4%
 
 ---
 
-
 # 적응형 Forms(핵심 구성 요소)에 대한 사용자 지정 제출 액션 만들기
 
-제출 액션을 사용하면 양식에서 캡처한 데이터에 대한 대상을 선택하고 양식 제출 시 실행할 추가 기능을 정의할 수 있습니다. AEM form은 전자 메일을 보내거나 SharePoint 또는 OneDrive에 데이터를 저장하는 것과 같은 여러 [OOTB(기본 제공 작업)](/help/forms/configure-submit-actions-core-components.md)을(를) 지원합니다.
+제출 액션을 사용하면 양식에서 캡처한 데이터에 대한 대상을 선택하고 양식 제출 시 실행할 추가 기능을 정의할 수 있습니다. AEM form은 전자 메일을 보내거나 SharePoint 또는 OneDrive에 데이터를 저장하는 것과 같은 여러 [OOTB(즉시 사용 가능한) 제출](/help/forms/configure-submit-actions-core-components.md)을 지원합니다.
 
 사용자 지정 제출 액션을 만들어 [기본 제공 옵션](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action)에 포함되지 않은 기능을 추가할 수도 있습니다. 예를 들어 양식 데이터를 타사 애플리케이션과 통합하거나 사용자 입력을 기반으로 개인화된 SMS 알림을 트리거합니다.
 
 <!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
-## 전제 조건
+## 사전 요구 사항
 
 적응형 Forms에 대한 첫 번째 사용자 지정 제출 액션을 만들기 전에 다음 사항이 있는지 확인하십시오.
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 
    **이 정보를 찾을 수 있는 위치**
 
-   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)&quot;를 참조하십시오.
+   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
 
    **프로젝트가 준비되었습니다!**
 
-   명령이 성공적으로 완료되면 로컬 디렉터리에 새 폴더가 생성됩니다. 이 폴더의 이름은 애플리케이션 이름을 따라 지정합니다(예: app-id). 이 폴더에는 AEM as a Cloud Service Git 저장소에서 다운로드한 모든 파일과 코드가 포함되어 있습니다. `archetype.properties` 파일에서 AEM 프로젝트에 대한 `<appid>`을(를) 찾을 수 있습니다.
+   명령이 성공적으로 완료되면 로컬 디렉터리에 새 폴더가 생성됩니다. 이 폴더의 이름은 애플리케이션 이름을 따라 지정합니다(예: app-id). 이 폴더에는 AEM as a Cloud Service Git 저장소에서 다운로드한 모든 파일과 코드가 포함되어 있습니다. `<appid>` 파일에서 AEM 프로젝트에 대한 `archetype.properties`을(를) 찾을 수 있습니다.
 
    ![Archetype 속성](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ ht-degree: 4%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: 바꾸기 &lt;app-id> (실제 애플리케이션 ID 포함)
+   `Important`: `<app-id>`을(를) 실제 응용 프로그램 ID로 바꿉니다.
 
 1. 새 구성 파일을 만듭니다.
 `customsubmitaction` 폴더 내에서 이름이 `.content.xml`인 새 파일을 만듭니다.
@@ -107,12 +107,12 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   > 양식을 작성하는 동안 `Submit action` 드롭다운 목록에 동일한 이름이 표시되므로 [customsubmitaction]의 이름을 기억하십시오.
+   > 양식을 작성하는 동안 [ 드롭다운 목록에 동일한 이름이 표시되므로 ]customsubmitaction`Submit action`의 이름을 기억하십시오.
 
 
 **새 폴더를`filter.xml`**&#x200B;에 포함
 
-1. [AEMaaCS 프로젝트 디렉터리]에서 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 파일로 이동합니다.
+1. `/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS 프로젝트 디렉터리[에서 ] 파일로 이동합니다.
 
 1. 파일을 열고 끝에 다음 줄을 추가합니다.
 
@@ -120,7 +120,7 @@ ht-degree: 4%
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
 
-   예를 들어 다음 코드 행을 추가하여 `filter.xml` 파일에 `customsubmitaction` 폴더를 추가합니다.
+   예를 들어 다음 코드 행을 추가하여 `customsubmitaction` 파일에 `filter.xml` 폴더를 추가합니다.
 
    ```
    <filter root="/apps/wknd/customsubmitaction"/>
@@ -134,7 +134,7 @@ ht-degree: 4%
 
 1. `[AEMaaCS project directory]`에서 다음 디렉터리로 이동합니다.
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: 바꾸기 &lt;app-id> (실제 애플리케이션 ID 포함)
+   `Important`: `<app-id>`을(를) 실제 응용 프로그램 ID로 바꿉니다.
 1. 새 Java 파일을 만들어 추가된 제출 작업에 대한 서비스를 구현합니다. 예를 들어 새 Java 파일을 `CustomSubmitService.java`(으)로 추가합니다.
 
    ![사용자 지정 제출 액션 폴더](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -206,7 +206,7 @@ ht-degree: 4%
 
 **Cloud Service 환경에 대한 코드를 배포합니다**
 
-* Cloud Service 환경에 AEM as a Cloud Service `[AEMaaCS project directory]`을(를) 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+* AEM as a Cloud Service `[AEMaaCS project directory]`을(를) Cloud Service 환경에 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
 
    1. 변경 내용 커밋:
 
@@ -216,7 +216,7 @@ ht-degree: 4%
 
       [기존 전체 스택 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)을 통해 코드 배포를 트리거합니다. 새로운 사용자 지정 제출 액션 지원을 통해 업데이트된 코드를 자동으로 빌드하고 배포합니다.
 
-      아직 파이프라인을 설정하지 않았다면 [AEM Formsas a Cloud Service 에 대한 파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
+      파이프라인을 아직 설정하지 않았다면 [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
 
       ![클라우드 배포](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -255,7 +255,7 @@ ht-degree: 4%
    양식이 성공적으로 제출되면 **Adobe Experience Manager 웹 콘솔 구성**&#x200B;을 확인하여 로컬 개발 환경에서 사용자 지정 제출 액션의 동작을 확인할 수 있습니다.
 1. `http://<host>:<port>/system/console/configMgr`로 이동합니다.
 
-1. `http://<host>:<port>/system/console/slinglog`의 **Adobe Experience Manager 웹 콘솔 로그 지원**(으)로 이동합니다.
+1. **의** Adobe Experience Manager 웹 콘솔 로그 지원`http://<host>:<port>/system/console/slinglog`(으)로 이동합니다.
 
    ![ConfigMgr](/help/forms/assets/custom-submit-action-sling-log.png)
 

@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 적응형 양식의 시각적 규칙 편집기는 인스턴스에 대해 구성된 양식 데이터 모델(FDM) 목록에서 서비스를 선택할 수 있는 **서비스 호출** 기능을 지원합니다. 양식 필드를 서비스의 입력 매개 변수에 직접 매핑할 수 있습니다. 양식 필드를 출력 매개 변수에 매핑하려면 지정된 양식 데이터 모델 서비스에 대해 이벤트 페이로드 옵션을 사용합니다. 또한 시각적 규칙 편집기를 사용하면 출력 응답을 기반으로 **서비스 호출** 작업의 성공 및 실패 처리기에 대한 규칙을 만들 수 있습니다. 성공 처리기는 **서비스 호출** 작업의 성공적인 실행을 관리하지만 오류 처리기는 발생하는 모든 오류를 해결합니다.
 
-### 양식 규칙 편집기에서 서비스 호출 사용의 이점
+## 양식 규칙 편집기에서 서비스 호출 사용의 이점
 
 다음은 광고 양식의 규칙 편집기에서 서비스 호출 작업을 사용할 때의 몇 가지 장점입니다.
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 | **호출 서비스의 출력을 사용하여 패널 설정** | 서비스 호출 출력의 특정 값을 사용하여 패널의 내용 또는 가시성을 설정합니다. 구현을 보려면 [여기를 클릭하세요](#use-case-3-set-panel-using-output-of-invoke-service). |
 | **Invoke Service의 출력 매개 변수를 사용하여 다른 필드의 유효성을 검사합니다** | 서비스 호출의 특정 출력 매개 변수를 사용하여 양식 필드의 유효성을 검사합니다. 구현을 보려면 [여기를 클릭하세요](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields). |
 
-`Pet ID` 텍스트 상자에 입력한 입력을 기반으로 값을 검색하는 `Get Information` 양식을 만듭니다. 아래 스크린샷은 이러한 사용 사례에 사용된 양식을 보여 줍니다.
+`Get Information` 텍스트 상자에 입력한 입력을 기반으로 값을 검색하는 `Pet ID` 양식을 만듭니다. 아래 스크린샷은 이러한 사용 사례에 사용된 양식을 보여 줍니다.
 
 ![정보 양식 가져오기](/help/forms/assets/get-information-form.png)
 
@@ -106,9 +106,9 @@ ht-degree: 1%
 
 **데이터 원본**
 
-이 예제에서는 [Swagger Petstore](https://petstore.swagger.io/) API를 사용하여 데이터 소스를 구성합니다. 입력한 ID를 기반으로 pet 세부 정보를 검색하는 [getPetById](https://petstore.swagger.io/#/pet/getPetById) 서비스에 대해 [양식 데이터 모델](/help/forms/create-form-data-models.md)이(가) 구성되어 있습니다.
+이 예제에서는 [Swagger Petstore](https://petstore.swagger.io/) API를 사용하여 데이터 소스를 구성합니다. 입력한 ID를 기반으로 pet 세부 정보를 검색하는 [getPetById](/help/forms/create-form-data-models.md) 서비스에 대해 [양식 데이터 모델](https://petstore.swagger.io/#/pet/getPetById)이(가) 구성되어 있습니다.
 
-[Swagger Petstore](https://petstore.swagger.io/) API에서 [addPet](https://petstore.swagger.io/#/pet/addPet) 서비스를 사용하여 다음 JSON을 게시해 보겠습니다.
+[Swagger Petstore](https://petstore.swagger.io/#/pet/addPet) API에서 [addPet](https://petstore.swagger.io/) 서비스를 사용하여 다음 JSON을 게시해 보겠습니다.
 
 ```
 {
@@ -141,7 +141,7 @@ ht-degree: 1%
 ```
 
 
-규칙과 논리는 `Pet ID` 텍스트 상자의 규칙 편집기에서 **서비스 호출** 작업을 사용하여 구현하여 언급된 사용 사례를 보여 줍니다.
+규칙과 논리는 **텍스트 상자의 규칙 편집기에서**&#x200B;서비스 호출`Pet ID` 작업을 사용하여 구현하여 언급된 사용 사례를 보여 줍니다.
 
 이제 각 사용 사례의 구현에 대해 자세히 살펴보겠습니다.
 
@@ -151,13 +151,13 @@ ht-degree: 1%
 
 #### 구현
 
-이렇게 하려면 `Pet ID` 텍스트 상자에 규칙을 만들어 `getPetById` 서비스를 호출하십시오. 규칙에서 **[!UICONTROL 성공 처리기 추가]**&#x200B;에서 `photo-url` 드롭다운의 `enum` 속성을 `photoUrls`(으)로 설정합니다.
+이렇게 하려면 `Pet ID` 텍스트 상자에 규칙을 만들어 `getPetById` 서비스를 호출하십시오. 규칙에서 `enum`성공 처리기 추가`photo-url`에서 `photoUrls` 드롭다운의 **[!UICONTROL 속성을]**(으)로 설정합니다.
 
 ![드롭다운 값 설정](/help/forms/assets/set-dropdownoption.png)
 
 #### 출력
 
-`Pet ID` 텍스트 상자에 `101`을(를) 입력하여 입력한 값에 따라 드롭다운 옵션을 동적으로 채웁니다.
+`101` 텍스트 상자에 `Pet ID`을(를) 입력하여 입력한 값에 따라 드롭다운 옵션을 동적으로 채웁니다.
 
 ![결과](/help/forms/assets/output1.png)
 
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 #### 출력
 
-`Pet ID` 텍스트 상자에 `101`을(를) 입력하여 입력 값을 기반으로 반복 가능한 패널을 동적으로 채웁니다.
+`101` 텍스트 상자에 `Pet ID`을(를) 입력하여 입력 값을 기반으로 반복 가능한 패널을 동적으로 채웁니다.
 
 ![출력](/help/forms/assets/output2.png)
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 #### 출력
 
-`Pet ID` 텍스트 상자에 `101`을(를) 입력하여 입력 값에 따라 패널을 동적으로 채웁니다.
+`101` 텍스트 상자에 `Pet ID`을(를) 입력하여 입력 값에 따라 패널을 동적으로 채웁니다.
 
 ![출력](/help/forms/assets/output3.png)
 
@@ -209,13 +209,13 @@ ht-degree: 1%
 
 #### 구현
 
-`Pet ID` 텍스트 상자에 `getPetById` 서비스를 호출하는 규칙을 만듭니다. **[!UICONTROL 오류 처리기 추가]**&#x200B;에서 오류 처리기 응답을 추가합니다. 잘못된 `Pet ID`을(를) 입력한 경우 **제출** 단추를 숨깁니다.
+`Pet ID` 텍스트 상자에 `getPetById` 서비스를 호출하는 규칙을 만듭니다. **[!UICONTROL 오류 처리기 추가]**&#x200B;에서 오류 처리기 응답을 추가합니다. 잘못된 **을(를) 입력한 경우**&#x200B;제출`Pet ID` 단추를 숨깁니다.
 
 ![실패 처리기](/help/forms/assets/create-rule-failure-handler.png)
 
 #### 출력
 
-`Pet ID` 텍스트 상자에 `102`을(를) 입력하면 **제출** 단추가 숨겨집니다.
+`102` 텍스트 상자에 `Pet ID`을(를) 입력하면 **제출** 단추가 숨겨집니다.
 
 ![출력](/help/forms/assets/output4.png)
 

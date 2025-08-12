@@ -4,7 +4,7 @@ description: WYSIWYG 템플릿 편집기를 사용하여  [!DNL Dynamic Media] �
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 69e6b5a50f4625b9ef868216f6e44381771bf05b
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '3415'
 ht-degree: 1%
@@ -51,7 +51,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 배너 및 전단에 대한 사용자 지정 가능한 실시간 템플릿을 만듭니다. [!DNL Dynamic Media] 템플릿을 게시하고 다운스트림 애플리케이션에서 사용합니다. [!DNL Dynamic Media] 템플릿에는 이미지 및 텍스트 레이어가 포함됩니다. 템플릿의 이미지 및 텍스트 레이어에 매개 변수를 추가하고 [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)을 사용하여 레이어의 위치를 변경하고 크기를 조정하며 해당 내용을 실시간으로 업데이트합니다.
+WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 배너 및 전단에 대한 사용자 지정 가능한 실시간 템플릿을 만듭니다. [!DNL Dynamic Media] 템플릿을 게시하고 다운스트림 애플리케이션에서 사용합니다. [!DNL Dynamic Media] 템플릿에는 이미지 및 텍스트 레이어가 포함됩니다. 템플릿의 이미지 및 텍스트 레이어에 매개 변수를 추가하고 [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)을 사용하여 레이어의 위치를 변경하고 크기를 조정하며 해당 내용을 실시간으로 업데이트합니다.
 
 몇 가지 주요 기능은 다음과 같습니다.
 
@@ -75,6 +75,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 >향상된 보안 SKU를 구독하는 고객은 해당 클라우드 서비스 프로그램에서 [!DNL Dynamic Media] 템플릿을 포함한 [!DNL Dynamic Media] 기능을 사용할 수 없습니다.
 
 이 비디오에서 단계별로 [!DNL Dynamic Media] 템플릿을 만드는 방법을 알아봅니다.
+
 >[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 시작하기에 앞서{#prerequisites-for-dynamic-media-wysiwyg-template}
@@ -82,22 +83,24 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 [!DNL Dynamic Media] 템플릿을 만들고 해당 게재 URL을 생성하려면 다음 요구 사항을 충족하십시오.
 
 1. [!DNL Dynamic Media]에 액세스.
-1. [!DNL Assets View] 홈 페이지의 **[!UICONTROL Dynamic Media Assets]**&#x200B;에 템플릿을 저장할 폴더가 있습니다. [Dynamic Media Assets](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)에서 해당 폴더를 복제하려면 ![폴더를 ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;Assets&#x200B;**[!UICONTROL &#x200B;에서 만듭니다&#x200B;]**.
+1. [!DNL Assets View] 홈 페이지의 **[!UICONTROL Dynamic Media Assets]**&#x200B;에 템플릿을 저장할 폴더가 있습니다. [Dynamic Media Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)에서 해당 폴더를 복제하려면 ![폴더를 ](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**Assets**[!UICONTROL &#x200B;에서 만듭니다&#x200B;]**.
 1. [ [!DNL AEM Assets] 인스턴스에서 사용할 수 있는 이미지를  [!DNL Dynamic Media] 동기화하여 템플릿을 만드는 데 사용](/help/assets/dynamic-media/config-dm.md)합니다.
 1. 템플릿을 만든 후 템플릿의 게재 URL을 생성하는 데 사용할 이미지를 게시합니다. 게재 URL은 다운스트림 애플리케이션에서 사용할 수 있습니다.
-1. 템플릿의 텍스트 레이어에서 기본 [!UICONTROL Adobe Sans F2] 글꼴 이외의 글꼴을 사용하려면 [글꼴 파일을 AEM 및 Dynamic Media에 동시에 업로드하고 게시합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [지원되는 글꼴 파일 형식은 AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)입니다. 또한 기존 글꼴을 사용하려면 [재처리](/help/assets/reprocessing-assets-view.md)해야 합니다. 자세한 내용은 [글꼴](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. 템플릿의 텍스트 레이어에서 기본 [!UICONTROL Adobe Sans F2] 글꼴 이외의 글꼴을 사용하려면 [글꼴 파일을 AEM 및 Dynamic Media에 동시에 업로드하고 게시합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [지원되는 글꼴 파일 형식은 AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)입니다. 또한 기존 글꼴을 사용하려면 [재처리](/help/assets/reprocessing-assets-view.md)해야 합니다. 자세한 내용은 [글꼴](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)을 참조하세요.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. touch UI에서 다음을 확인하십시오.
-   * **[!UICONTROL 구성 편집 페이지[!DNL Dynamic Media]에서]**&#x200B;기본적으로 비활성화됨&#x200B;**[!UICONTROL [!DNL Dynamic Media] (으)로 설정된]** 동기화 모드&#x200B;**[!UICONTROL 이(가) 모든 AEM 폴더에 적용되지 않습니다(]**&#x200B;모든 콘텐츠 동기화&#x200B;**[!UICONTROL 이(가) 선택되지 않음).]** 자세한 내용은 [Dynamic Media Cloud Service 구성](/help/assets/dynamic-media/config-dm.md)을 참조하십시오.
+   * **[!UICONTROL 구성 편집 페이지[!DNL Dynamic Media]에서]**&#x200B;기본적으로 비활성화됨&#x200B;**[!UICONTROL [!DNL Dynamic Media](으)로 설정된]** 동기화 모드&#x200B;**[!UICONTROL 이(가) 모든 AEM 폴더에 적용되지 않습니다(]**&#x200B;모든 콘텐츠 동기화&#x200B;**[!UICONTROL 이(가) 선택되지 않음).]** 자세한 내용은 [Dynamic Media Cloud Service 구성](/help/assets/dynamic-media/config-dm.md)을 참조하십시오.
    * **[!UICONTROL [!DNL Dynamic Media]동기화 모드]**&#x200B;이(가) 생성 후 템플릿을 저장할 대상 폴더 또는 하위 폴더에 대해 **[!UICONTROL 하위 폴더에 대해 사용]**(으)로 설정되어 있습니다. 자세한 내용은 [구성 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)을 참조하십시오.
 
 ## [!DNL Dynamic Media] 템플릿 만들기{#how-to-create-dynamic-media-template}
 
 [!DNL Dynamic Media] 템플릿을 만들려면 다음 단계를 수행하십시오.
+
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
+
 1. [빈 캔버스 만들기](#create-a-canvas)
 1. [캔버스에 이미지 추가](#add-images-to-the-canvas)
 1. [캔버스에 텍스트 레이어 추가](#add-text-to-the-canvas)
@@ -114,12 +117,14 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
    ![Dynamic Media 템플릿](/help/assets/assets/DM-Assets1.png)
 
 1. **[!UICONTROL 템플릿 만들기]**&#x200B;를 선택합니다. **[!UICONTROL 새 템플릿]** 대화 상자가 표시됩니다.
+
    ![실시간으로 사용자 지정할 수 있는 동적 템플릿을 만드는 방법](/help/assets/assets/new-template.png)
+
    >[!NOTE]
    >
    >  템플릿은 사용자가 만드는 위치에 저장됩니다. [!DNL Assets View] 홈 페이지에서 **[!UICONTROL Dynamic Media Assets]**&#x200B;을(를) 선택하고 **[!UICONTROL 템플릿 만들기]**&#x200B;를 클릭하여 **[!UICONTROL Dynamic Media Assets]** 루트 폴더에 템플릿을 저장합니다.
 
-1. 템플릿 이름을 지정하고 캔버스 너비 및 높이를 정의한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 템플릿을 만드는 데 사용할 메뉴 옵션이 양쪽에 있는 빈 캔버스가 표시됩니다. 메뉴 옵션 위로 마우스를 가져가면 해당 도구 설명을 볼 수 있습니다.
+1. 템플릿 이름을 지정하고 캔버스 너비 및 높이를 정의한 다음 **[!UICONTROL 만들기]**를 클릭합니다. 템플릿을 만드는 데 사용할 메뉴 옵션이 양쪽에 있는 빈 캔버스가 표시됩니다. 메뉴 옵션 위로 마우스를 가져가면 해당 도구 설명을 볼 수 있습니다.
    ![실시간 사용자 지정 가능한 템플릿](/help/assets/assets/blank-canvas-page.png)
 
    >[!NOTE]
@@ -135,8 +140,8 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 **왼쪽 창의 메뉴 옵션:** 다음의 일반 편집기 작업에 이 옵션을 사용합니다.
 
 * ![DM 템플릿](/help/assets/assets/layer-selector.svg): ![DM 템플릿](/help/assets/assets/layer-selector.svg)을 선택하고 캔버스에서 레이어를 클릭하여 선택합니다.
-* ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg): ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **&rbrack;**(Windows) 또는 **Cmd** + **&rbrack;**(Mac)을 사용하여 선택한 레이어를 앞으로 가져옵니다.
-* ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg): ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **&lbrack;**(Windows) 또는 **Cmd** + **&lbrack;**(Mac)을 사용하여 선택한 레이어를 뒤로 보냅니다.
+* ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg): ![사용자 지정을 지원하는 템플릿](/help/assets/assets/bring-forward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **`]`**(Windows) 또는 **Cmd** + **`]`**(Mac)을 사용하여 선택한 레이어를 앞으로 가져옵니다.
+* ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg): ![쉽게 사용자 지정할 수 있는 템플릿을 만드는 방법](/help/assets/assets/send-backward.svg)을 클릭하거나 키보드 단축키, **Ctrl** + **`[`**(Windows) 또는 **Cmd** + **`[`**(Mac)를 사용하여 선택한 레이어를 뒤로 보냅니다.
 * ![즉시 사용자 지정할 수 있는 템플릿 만들기](/help/assets/assets/undo.svg): ![즉시 사용자 지정할 수 있는 템플릿 만들기](/help/assets/assets/undo.svg)를 클릭하거나 키보드 단축키, **Ctrl** + **Z**(Windows) 또는 **Cmd** + **Z**(Mac)를 사용하여 마지막 작업을 취소하십시오.
 * ![배너를 빠르게 만드는 템플릿](/help/assets/assets/redo.svg): ![배너를 빠르게 만들려면 템플릿을 클릭](/help/assets/assets/redo.svg)하거나, 키보드 단축키, **Ctrl** + **Y**(Windows) 또는 **Cmd** + **Y**(Mac)를 사용하여 마지막 작업을 다시 실행하십시오.
 * ![전단을 빠르게 만들려면](/help/assets/assets/zoom-in.svg): ![템플릿을 클릭하여 전단을 빠르게 만들거나](/help/assets/assets/zoom-in.svg) 키보드 단축키를 사용하거나 **Ctrl** + **+**(Windows) 또는 **Cmd** + **+**(Mac)을 사용하여 캔버스를 확대하십시오.
@@ -154,7 +159,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 
 다음 단계를 실행하여 캔버스에 이미지를 추가합니다.
 
-1. ![즉시 배너 만들기](/help/assets/assets/add-image.svg)를 클릭하여 [자산 선택기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) 패널을 엽니다. 패널에 [!DNL Dynamic Media]에 동기화된 AEM Assets 인스턴스의 이미지가 표시됩니다.
+1. ![즉시 배너 만들기](/help/assets/assets/add-image.svg)를 클릭하여 [자산 선택기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) 패널을 엽니다. 패널에 [!DNL Dynamic Media]에 동기화된 AEM Assets 인스턴스의 이미지가 표시됩니다.
 1. 패널을 찾아보거나 검색 막대에서 키워드를 사용하여 특정 이미지를 찾습니다.
 1. 캔버스에 이미지를 드래그하여 놓아 사용하십시오. 캔버스에서 레이어 크기 조정 또는 위치 조정은 [**[!UICONTROL 속성 패널]**](#reposition-resize-delete-a-layer)을 참조하세요.
    ![초 내에 배너 만들기](/help/assets/assets/add-image-to-canvas.png)
@@ -167,7 +172,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 
 1. ![새 배너를 빠르게 만들기](/help/assets/assets/add-text.svg)를 클릭하여 텍스트 레이어를 캔버스에 추가하고 속성 패널을 엽니다.
 1. 레이어를 선택하고 텍스트를 클릭하여 업데이트합니다.
-1. [속성] 패널에서 **[!UICONTROL 스마트 텍스트 크기 조정]**&#x200B;을 선택하여 지정된 영역에 맞게 텍스트 길이 및 글꼴 크기를 자동으로 조정합니다.
+1. [속성] 패널에서 **[!UICONTROL 스마트 텍스트 크기 조정]**을 선택하여 지정된 영역에 맞게 텍스트 길이 및 글꼴 크기를 자동으로 조정합니다.
    ![최고의 사용자 지정 배너](/help/assets/assets/add-text-layer.png)
 
 레이어를 위치 변경, 크기 조정, 회전 또는 삭제하려면 [**[!UICONTROL 속성 패널]**](#reposition-resize-delete-a-layer)을 참조하세요. 패널의 **[!UICONTROL 텍스트]** 섹션 아래에 있는 각 필드의 값을 변경하여 텍스트 서식을 필요한 글꼴, 크기, 색상, 스타일, 정렬(레이어)로 지정합니다. **[!UICONTROL 글꼴 모음]** 필드에는 [!UICONTROL Adobe Sans F2] 기본 글꼴, 다시 처리된 기존 글꼴 및 새로 업로드되고 게시된 글꼴이 표시됩니다. 자세한 내용은 위의 [시작하기 전에](#prerequisites-for-dynamic-media-wysiwyg-template) 섹션에서 5점을 참조하십시오.
@@ -214,7 +219,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 #### 텍스트 서식 옵션{#text-formatting-options-on-properties-panel}
 
 패널의 **[!UICONTROL 텍스트]** 섹션 아래에 있는 각 필드의 값을 변경하여 텍스트 서식을 필요한 글꼴, 크기, 색상, 스타일, 맞춤(레이어 내)으로 지정합니다.
-**[!UICONTROL 스마트 텍스트 크기 조정]**&#x200B;을 포함해야 합니다. [!UICONTROL 스마트 텍스트 크기 조정]은(는) [자동 맞춤](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) 알고리즘에서 작동하여 텍스트 영역의 텍스트를 최적으로 채우고 텍스트 오버플로를 방지하고 텍스트 아래쪽에 있는 추가 공간을 최소화합니다.
+**[!UICONTROL 스마트 텍스트 크기 조정]**&#x200B;을 포함해야 합니다. [!UICONTROL 스마트 텍스트 크기 조정]은(는) [자동 맞춤](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) 알고리즘에서 작동하여 텍스트 영역의 텍스트를 최적으로 채우고 텍스트 오버플로를 방지하고 텍스트 아래쪽에 있는 추가 공간을 최소화합니다.
 
 ![시간 내에 콘텐츠 만들기](/help/assets/assets/smart-text-resize.png)
 
@@ -227,7 +232,7 @@ WYSIWYG 템플릿 편집기인 [!DNL Dynamic Media] 템플릿을 사용하여 �
 1. ![즉시 콘텐츠 만들기](/help/assets/assets/show-layers-list.svg)를 클릭하고 레이어를 선택한 다음 **[!UICONTROL 매개 변수]**&#x200B;를 클릭합니다. **[!UICONTROL 매개 변수]** 패널이 표시됩니다.
 1. 속성을 매개 변수화하려면 **[!UICONTROL 매개 변수 포함]**&#x200B;을 전환하십시오. 매개 변수화 후 속성의 동작을 알려면 [매개 변수 패널 옵션](#parameterisation-options-or-allowed-parameters)을 참조하세요.
 1. **선택 사항:** 매개 변수 이름을 변경합니다. 매개 변수 이름에는 레이어 이름 뒤에 접미사가 붙습니다. 선택한 레이어의 경우 매개 변수가 있는 모든 속성은 같은 레이어 이름 다음에 다양한 접미사를 공유합니다. 시맨틱 이름 지정 규칙에 따라 레이어 이름의 이름을 바꾸십시오. 그러면 URL에 매개 변수를 포함할 때 매개 변수 이름 자체가 레이어의 콘텐츠 또는 목적에 대해 설명하도록 할 수 있습니다.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 저장]**을 클릭합니다.
    ![즉시 콘텐츠 만들기](/help/assets/assets/parameterise-a-layer.png)
 이미지의 매개 변수 패널과 텍스트 레이어 사이를 전환하려면 캔버스에서 레이어를 선택하고 **[!UICONTROL 매개 변수]**&#x200B;를 클릭하십시오.
 
@@ -282,7 +287,7 @@ URL에서 매개 변수 값을 업데이트하여 URL에서 텍스트, 글꼴, �
 1. **선택 사항:** **[!UICONTROL Hide]** 매개 변수 값을 0과 1 사이에서 변경하고 **[!UICONTROL 새로 고침]**&#x200B;을 클릭하여 변경 사항을 확인합니다. **[!UICONTROL 숨기기]** 매개 변수가 같은 레이어는 숨기거나 함께 표시됩니다. 마찬가지로 URL에서 레이어의 가시성을 제어할 수 있습니다.
 
    ![즉시 콘텐츠 만들기](/help/assets/assets/dm-templates-publish-status.png)
-**[!UICONTROL 모든 매개 변수 포함]**&#x200B;을 전환하여 표시된 모든 매개 변수 값을 편집하고 템플릿 미리 보기에서 업데이트를 볼 수도 있습니다.
+**[!UICONTROL 모든 매개 변수 포함]**을 전환하여 표시된 모든 매개 변수 값을 편집하고 템플릿 미리 보기에서 업데이트를 볼 수도 있습니다.
    <br>
 1. 미리 보기 페이지에서 템플릿을 게시하려면 **[!UICONTROL 게시]**&#x200B;를 클릭하고 게시를 확인합니다. **[!UICONTROL 게시 완료]** 메시지가 표시되고 게시 상태가 **[!UICONTROL 게시됨]**(으)로 업데이트됩니다.
 

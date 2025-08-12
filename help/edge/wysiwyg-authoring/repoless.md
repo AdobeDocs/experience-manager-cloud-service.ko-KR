@@ -7,8 +7,8 @@ exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 100%
 
@@ -94,6 +94,7 @@ AEM은 GitHub 저장소를 여러 개 만들고 각 사이트를 전용 GitHub �
        }
    }'
    ```
+
 1. 다음과 유사한 cURL 명령을 사용하여 공개 구성이 설정되었고 사용 가능한지 확인합니다.
 
    ```text

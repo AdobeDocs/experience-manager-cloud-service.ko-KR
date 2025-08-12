@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅�
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 1%
@@ -22,19 +22,18 @@ ht-degree: 1%
 
 AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본의 `Cache-Control`, `Surrogate-Control` 또는 `Expires` HTTP 응답 헤더에 의해 제어됩니다.
 
-이러한 캐시 헤더는 일반적으로 mod_headers를 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다([CDN 캐싱을 활성화하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) 참조).
+이러한 캐시 헤더는 일반적으로 mod_headers를 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다([CDN 캐싱을 활성화하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) 참조).
 
 CDN 리소스에 대한 캐시 키에는 쿼리 매개 변수를 포함한 전체 요청 URL이 포함되어 있으므로 서로 다른 모든 쿼리 매개 변수가 다른 캐시 항목을 생성합니다. 원치 않는 쿼리 매개 변수를 제거하는 것이 좋습니다. 캐시 적중률을 개선하려면 [아래 ](#marketing-parameters)을 참조하세요.
 
-`Cache-Control`에 `private`, `no-cache` 또는 `no-store`이(가) 포함된 원본 응답이 AEM as a Cloud Service의 CDN에 의해 캐시되지 않습니다([&#128279;](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)CDN 캐싱을 비활성화하는 방법 참조)
-을(를) 참조하십시오.  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
+`private`에 `no-cache`, `no-store` 또는 `Cache-Control`이(가) 포함된 원본 응답은 AEM as a Cloud Service의 CDN에서 캐시되지 않습니다(자세한 내용은 [CDN 캐싱을 비활성화하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) 참조).  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
 
 ### HTML/텍스트 {#html-text}
 
 Dispatcher 구성은 `text/html` 콘텐츠 형식에 대해 일부 기본 캐싱 헤더를 설정합니다.
 
 * 기본적으로 Apache 계층에서 내보낸 `cache-control` 헤더를 기반으로 5분 동안 브라우저에서 캐시됩니다. CDN도 이 값을 준수합니다.
-* `global.vars`에서 `DISABLE_DEFAULT_CACHING` 변수를 정의하여 기본 HTML/텍스트 캐싱 설정을 비활성화할 수 있습니다.
+* `DISABLE_DEFAULT_CACHING`에서 `global.vars` 변수를 정의하여 기본 HTML/텍스트 캐싱 설정을 비활성화할 수 있습니다.
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -42,7 +41,7 @@ Define DISABLE_DEFAULT_CACHING
 
 이 방법은 예를 들어 비즈니스 로직에서 연령 헤더를 미세 조정해야 하는 경우(역일을 기준으로 한 값 포함) 기본적으로 연령 헤더가 0으로 설정되어 있기 때문에 유용합니다. 즉, **기본 캐싱을 해제할 때 주의하십시오.**
 
-* AEM as a Cloud Service SDK Dispatcher 도구를 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/텍스트 콘텐츠에 대해 재정의할 수 있습니다.
+* AEM as a Cloud Service SDK Dispatcher 도구를 사용하여 `EXPIRATION_TIME`에서 `global.vars` 변수를 정의하여 모든 HTML/텍스트 콘텐츠에 대해 재정의할 수 있습니다.
 * 다음 Apache `mod_headers` 지시문을 사용하여 CDN 및 브라우저 캐시를 독립적으로 제어하는 등 보다 세분화된 수준에서 재정의할 수 있습니다.
 
   ```
@@ -54,7 +53,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko#point-to-point-CDN)을 사용하는 경우 CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
+  >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)을 사용하는 경우 CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
 
   전역 캐시 제어 헤더나 넓은 정규식과 일치하는 유사한 캐시 헤더를 설정할 때 주의해서 사용해야 하는 콘텐츠에 해당 헤더가 적용되지 않도록 합니다. 규칙이 세분화된 방식으로 적용되도록 하려면 여러 지시문을 사용하는 것이 좋습니다. 이를 통해 AEM as a Cloud Service은 Dispatcher 설명서에 설명된 대로 Dispatcher에서 캐시할 수 없다고 감지한 대상에 적용되었음을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하려면 다음과 같이 **`always`** 옵션을 추가할 수 있습니다.
 
@@ -90,7 +89,7 @@ Define DISABLE_DEFAULT_CACHING
   >[Dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 포함한 다른 메서드가 값을 재정의하지 않습니다.
 
   >[!NOTE]
-  >Dispatcher은 자체 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ko)에 따라 콘텐츠를 계속 캐시할 수 있습니다. 컨텐츠가 정말로 비공개가 되도록 하려면 Dispatcher에 의해 캐시되지 않았는지 확인하십시오.
+  >Dispatcher은 자체 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)에 따라 콘텐츠를 계속 캐시할 수 있습니다. 컨텐츠가 정말로 비공개가 되도록 하려면 Dispatcher에 의해 캐시되지 않았는지 확인하십시오.
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
@@ -238,7 +237,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 
 ### CDN 캐시 적중률 분석 중 {#analyze-chr}
 
-대시보드를 사용하여 CDN 로그를 다운로드하고 사이트의 캐시 적중률을 분석하는 방법에 대한 자세한 내용은 [캐시 적중률 분석 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=ko)를 참조하십시오.
+대시보드를 사용하여 CDN 로그를 다운로드하고 사이트의 캐시 적중률을 분석하는 방법에 대한 자세한 내용은 [캐시 적중률 분석 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html)를 참조하십시오.
 
 ### HEAD 요청 동작 {#request-behavior}
 
@@ -254,7 +253,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-이 기능은 [CDN 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)에서 `requestTransformations` 플래그를 사용하여 켜거나 끌 수 있습니다.
+이 기능은 `requestTransformations`CDN 구성[에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) 플래그를 사용하여 켜거나 끌 수 있습니다.
 
 예를 들어 CDN 수준에서 마케팅 매개 변수 제거를 중지하려면 다음 섹션이 포함된 구성을 사용하여 `removeMarketingParams: false`을(를) 배포해야 합니다.
 
@@ -268,7 +267,7 @@ data:
     removeMarketingParams: false
 ```
 
-CDN 수준에서 `removeMarketingParams` 기능이 비활성화된 경우에도 Dispatcher 구성의 `ignoreUrlParams` 속성을 구성하는 것이 좋습니다. [Dispatcher 구성 - URL 매개 변수 무시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#ignoring-url-parameters)를 참조하십시오.
+CDN 수준에서 `removeMarketingParams` 기능이 비활성화된 경우에도 Dispatcher 구성의 `ignoreUrlParams` 속성을 구성하는 것이 좋습니다. [Dispatcher 구성 - URL 매개 변수 무시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)를 참조하십시오.
 
 마케팅 매개 변수를 무시할 수 있는 방법에는 두 가지가 있습니다. (첫 번째 플러그인이 쿼리 매개 변수를 통해 캐시 무효화를 무시하는 것이 좋습니다.)
 
@@ -304,7 +303,7 @@ CDN 수준에서 `removeMarketingParams` 기능이 비활성화된 경우에도 
 >[!NOTE]
 >적절한 Dispatcher 무효화를 위해 요청이 제공될 수 있도록 &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; 및 &quot;\*.adobeaemcloud.net&quot;의 요청이 모두 일치하고 vhost 구성에서 처리되었는지 확인하십시오. 이 작업은 참조 [AEM Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)의 패턴에 따라 catch-all vhost 구성에서 전역 일치 &quot;*&quot;를 통해 수행할 수 있습니다. 또는 vhost 중 하나에서 이전에 언급한 목록을 catch했는지 확인할 수 있습니다.
 
-게시 인스턴스는 작성자로부터 페이지 또는 에셋의 새 버전을 받으면 플러시 에이전트를 사용하여 Dispatcher에서 적절한 경로를 무효화합니다. 업데이트된 경로는 상위 경로와 함께 Dispatcher 캐시에서 최대 수준까지 제거됩니다([statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#invalidating-files-by-folder-level)&#x200B;(으)로 이 수준을 구성할 수 있습니다).
+게시 인스턴스는 작성자로부터 페이지 또는 에셋의 새 버전을 받으면 플러시 에이전트를 사용하여 Dispatcher에서 적절한 경로를 무효화합니다. 업데이트된 경로는 상위 경로와 함께 Dispatcher 캐시에서 최대 수준까지 제거됩니다([statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)&#x200B;(으)로 이 수준을 구성할 수 있습니다).
 
 ## Dispatcher 캐시의 명시적 무효화 {#explicit-invalidation}
 
@@ -515,7 +514,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -527,9 +526,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/kr/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/kr/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## 클라이언트 측 라이브러리 및 버전 일관성 {#content-consistency}
 

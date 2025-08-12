@@ -5,7 +5,7 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -42,9 +42,10 @@ ht-degree: 5%
 
 ## 사용자 정의 함수 만들기
 
-규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ko#developing)을 참조하십시오.
+규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)을 참조하십시오.
 
 사용자 정의 함수를 만드는 단계는 다음과 같습니다.
+
 1. [클라이언트 라이브러리 만들기](#create-client-library)
 1. [적응형 양식에 클라이언트 라이브러리 추가](#use-custom-function)
 
@@ -54,7 +55,7 @@ ht-degree: 5%
 
 **리포지토리 복제**
 
-[AEM Forms as a Cloud Service 리포지토리 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git):
+[AEM Forms as a Cloud Service 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git)를 복제합니다.
 
 1. 명령줄 또는 터미널 창을 엽니다.
 
@@ -64,7 +65,7 @@ ht-degree: 5%
 
    `git clone [Git Repository URL]`
 
-이 명령은 저장소를 다운로드하고 시스템에 복제된 저장소의 로컬 폴더를 만듭니다. 이 안내서에서는 이 폴더를 [AEMaaCS 프로젝트 디렉터리] (으)로 참조합니다.
+이 명령은 저장소를 다운로드하고 시스템에 복제된 저장소의 로컬 폴더를 만듭니다. 이 안내서에서는 이 폴더를 [AEMaaCS 프로젝트 디렉터리]&#x200B;(으)로 참조합니다.
 
 **클라이언트 라이브러리 폴더 추가**
 
@@ -141,7 +142,7 @@ ht-degree: 5%
 
 **filter.xml에 새 폴더 포함**:
 
-1. [AEMaaCS 프로젝트 디렉터리]에서 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 파일로 이동합니다.
+1. `/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS 프로젝트 디렉터리[에서 ] 파일로 이동합니다.
 
 1. 파일을 열고 끝에 다음 줄을 추가합니다.
 
@@ -152,7 +153,7 @@ ht-degree: 5%
 
 **새로 만든 클라이언트 라이브러리 폴더를 AEM 환경에 배포합니다**
 
-Cloud Service 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터리]를 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터리]를 Cloud Service 환경에 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
 
 1. 변경 내용 커밋
 
@@ -168,7 +169,7 @@ Cloud Service 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터�
 
    1. 기존 전체 스택 파이프라인을 통해 코드 배포를 트리거합니다. 이렇게 하면 업데이트된 코드가 자동으로 빌드 및 배포됩니다.
 
-아직 파이프라인을 설정하지 않았다면 [AEM Formsas a Cloud Service 에 대한 파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
+파이프라인을 아직 설정하지 않았다면 [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
 
 파이프라인이 실행되면 클라이언트 라이브러리에 추가된 사용자 지정 함수를 [적응형 양식 규칙 편집기](/help/forms/rule-editor-core-components.md)에서 사용할 수 있게 됩니다.
 
@@ -189,7 +190,7 @@ Cloud Service 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터�
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-[JavaScript 주석](##js-annotations)을 사용하여 [적응형 양식의 규칙 편집기](/help/forms/rule-editor-core-components.md)에서 사용자 지정 함수를 사용할 수 있습니다.
+[JavaScript 주석](/help/forms/rule-editor-core-components.md)을 사용하여 [적응형 양식의 규칙 편집기](##js-annotations)에서 사용자 지정 함수를 사용할 수 있습니다.
 
 ## 적응형 양식에서 사용자 정의 함수 사용
 

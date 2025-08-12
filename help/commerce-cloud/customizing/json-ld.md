@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -23,8 +23,11 @@ ht-degree: 3%
 ## CIF 구성에서 JSON+LD 활성화 {#enabling}
 
 기본적으로 **JSON+LD 사용** 확인란은 CIF 구성에 표시되지 않습니다. 이 기능을 활성화하려면 프로젝트에 확인란을 표시할 수 있는 필요한 OSGi 구성이 포함되어야 합니다. 이 구성을 통해 사용자는 제품 페이지에서 JSON+LD 스크립트 지원을 전환할 수 있습니다.
-CIF 구성에서 **JSON+LD 사용** 확인란을 사용할 수 있도록 하려면 프로젝트에 다음 OSGi 구성을 추가하십시오. &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+
+CIF 구성에서 **JSON+LD 사용** 확인란을 사용할 수 있도록 하려면 프로젝트에 다음 OSGi 구성을 추가하십시오.
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`
+
 이 구성 추가에 대한 자세한 내용은 공용 aem-cif-guides-venia 리포지토리의 [Json-Ld에 대한 구성 추가](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json)를 참조하십시오.
 
 이 구성이 추가되고 배포되면 CIF 구성 설정에 확인란이 표시되며 **JSON+LD**&#x200B;을(를) 활성화하는 단계는 다음과 같습니다.

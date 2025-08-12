@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 3%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 3%
 CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되어 있습니다. 활성화하려면 해당 프로젝트에 다음을 추가해야 합니다.
 
 * `/bin/cif/invalidate-cache`여기`com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`와 같이 프로젝트에서 [ 구성을 추가하여 해당 요청으로 clear-cache API를 트리거하는 데 도움이 되는 서블릿 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)을(를) 활성화합니다.
+
   >[!NOTE]
   >
   > 작성자 인스턴스에 대해서만 구성을 활성화해야 합니다.
@@ -45,11 +46,12 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
 
 모든 것이 올바르게 설정되었는지 확인하려면 다음을 수행하십시오.
 
-* 작성자 인스턴스 AEM에 해당 서블릿을 트리거합니다(예: [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)). 200 HTTP 응답을 가져와야 합니다.
+* 작성자 인스턴스 AEM에 해당 서블릿을 트리거합니다(예: [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)). 그러면 200 HTTP 응답을 받아야 합니다.
 * 작성자 인스턴스의 `/var/cif/cacheinvalidation` 경로에 노드가 만들어졌는지 확인하십시오. 노드 이름은 `cmd_{{timestamp}}` 패턴을 따릅니다.
 * 각 게시 인스턴스에 동일한 노드가 생성되었는지 확인합니다.
 
 이제 캐시가 제대로 지워지고 있는지 확인하려면 다음을 수행하십시오.
+
 1. 해당 PLP 및 PDP 페이지로 이동합니다.
 2. 상거래 엔진에서 제품 또는 카테고리 이름을 업데이트합니다. 캐시 구성에 따라 변경 사항이 AEM에 즉시 반영되지 않습니다.
 3. 다음과 같이 서블릿 API를 트리거합니다.
@@ -57,7 +59,7 @@ CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되�
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -109,7 +111,7 @@ AEM에서 상거래 관련 데이터의 캐시를 지우고자 할 때마다 트
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

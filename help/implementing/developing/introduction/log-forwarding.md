@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 로깅 공급업체에 라이센스가 있거나 로깅 제품을 호스팅하는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상에 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 일부 조직에서는 로깅 대상에 의해 수신될 수 있는 트래픽을 제한하도록 선택하고, 다른 조직에서는 HTTPS(443) 이외의 포트를 사용해야 할 수 있습니다.  이 경우 로그 전달 구성을 배포하기 전에 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성해야 합니다.
 
 아래 표를 사용하여 포트 443을 사용하는지 여부와 고정 IP 주소에서 로그를 표시해야 하는지 여부를 기준으로 고급 네트워킹 및 로깅 구성에 대한 요구 사항을 확인할 수 있습니다.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>예</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >단일 IP 주소에서 로그가 표시되는지 여부는 고급 네트워킹 구성 선택에 따라 결정됩니다.  이 작업을 용이하게 하려면 전용 이그레스를 사용해야 합니다.
@@ -270,6 +247,7 @@ data:
 CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 큰 경우, 알려진 IP에서 로그를 최종 대상으로 전송하도록 논리를 작성할 수 있는 https 서버 또는 (Adobe이 아닌) Azure Blob Store로 트래픽을 보내는 것이 좋습니다.
 
 >[!NOTE]
+>
 >AEM 로그가 표시되는 IP 주소와 동일한 IP 주소에서 CDN 로그가 표시될 수 없습니다. 이는 로그가 AEM Cloud Service가 아닌 Fastly에서 직접 전송되기 때문입니다.
 
 ## 대상 구성 로깅 중 {#logging-destinations}
@@ -304,15 +282,15 @@ S3 로그 전달자를 사용하려면 S3 버킷에 액세스하기 위한 적�
 IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용해야 합니다.  예:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ New Relic으로 로그 전달에서는 수집에 New Relic HTTPS API를 활용�
 ```
 
 >[!NOTE]
+>
 >New Relic에 대한 로그 전달은 고객 소유 New Relic 계정에만 사용할 수 있습니다.
 >
 >액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
@@ -538,6 +517,7 @@ Dynatrace으로 로그 전달에서는 수집에 Dynatrace HTTPS API를 활용�
 ```
 
 >[!NOTE]
+>
 > 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ### 스플렁크 {#splunk}
@@ -630,6 +610,7 @@ Adobe에서 이러한 방식으로 설정했던 고객은 편리하게 셀프서
 구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 구성하지 않은 경우 Adobe에서 구성한 환경과 셀프 서비스 방식으로 구성한 환경을 잊어버릴 수 있습니다.
 
 >[!NOTE]
+>
 >Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 >
 >이전에 Adobe 지원에서 구성한 환경에 로그 전달이 배포되면 최대 몇 시간 동안 중복 로그를 받을 수 있습니다. 이 문제는 결국 자동으로 해결됩니다.

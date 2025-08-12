@@ -5,19 +5,19 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
-
 
 # 적응형 양식 표현식 {#adaptive-form-expressions}
 
 적응형 Forms은 동적 스크립팅 기능을 갖춘 최종 사용자에게 최적화되고 간소화된 양식 작성 환경을 제공합니다. 동적 표시/숨기기 필드 및 패널과 같은 다양한 동작을 추가하는 표현식을 작성할 수 있습니다. 또한 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 논리를 추가하는 등 다양한 작업을 수행할 수 있습니다. 동적 동작은 사용자 입력 또는 미리 채워진 데이터를 기반으로 합니다.
 
-JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript™ 표현식이며 적응형 Forms 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 Forms 클래스, 이벤트, 개체 및 공용 API의 전체 목록에 대해서는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javascript-api/index.html)를 참조하십시오.
+JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript™ 표현식이며 적응형 Forms 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 Forms 클래스, 이벤트, 개체 및 공용 API의 전체 목록에 대해서는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)를 참조하십시오.
 
 ## 표현식 작성 모범 사례 {#best-practices-for-writing-expressions}
 
@@ -32,7 +32,7 @@ JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식�
 * 반복 패널을 만들려면 패널 대화 상자에서 설정을 열고 최대 개수 필드의 값을 1 이상으로 설정합니다.
 * 패널 반복 설정의 최소 개수 값은 하나 이상일 수 있지만 최대 개수 값보다 클 수 없습니다.
 * 표현식이 반복 패널의 필드를 참조하는 경우 표현식의 필드 이름은 가장 가까운 반복 요소로 확인됩니다.
-* 적응형 Forms은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/af.html)를 참조하십시오.
+* 적응형 Forms은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)를 참조하십시오.
 * 반복 패널의 인스턴스를 조작하기 위한 API는 다음과 같습니다.
 
    * 패널 인스턴스를 추가하려면: `panel1.instanceManager.addInstance()`
@@ -73,12 +73,12 @@ JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식�
 
 **반환 형식**: 식이 식 결과가 표시되는 필드(예: 십진수)와 호환되는 값을 반환합니다.
 
-**예**: **field1**&#x200B;에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
+**예**: **field1**에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
 `field2.value + field3.value`
 
 ### 표현식 클릭 {#click-expression}
 
-클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
+클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
 
 **적용 대상**: 단추 필드
 
@@ -133,7 +133,7 @@ JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식�
 
 **적용 대상**: 필드
 
-**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**&#x200B;은(는) 필드가 유효함을 나타냅니다.
+**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**은(는) 필드가 유효함을 나타냅니다.
 **예**: 영국의 우편 번호를 나타내는 필드의 경우 유효성 검사 식은 다음과 같습니다.
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -209,7 +209,7 @@ JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식�
 
 ### GuideBridge - API 및 이벤트 {#guidebridge-apis-and-events}
 
-GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. 가이드 Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/)를 참조하십시오.
+GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. 가이드 Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -217,9 +217,9 @@ GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 
 
 #### 다양한 표현식의 GuideBridge 사용 {#guidebridge-usage-in-various-expressions}
 
-* 양식 필드를 재설정하려면 단추 클릭 식에서 `guideBridge.reset()` API를 트리거할 수 있습니다. 마찬가지로 클릭 식 `guideBridge.submit()`**.**(으)로 호출할 수 있는 제출 API가 있습니다.
+* 양식 필드를 재설정하려면 단추 클릭 식에서 `guideBridge.reset()` API를 트리거할 수 있습니다. 마찬가지로 클릭 식 `guideBridge.submit()`(으)로 호출할 수 있는 제출 API가 있습니다.
 
-* `setFocus()` API를 사용하여 다양한 필드 또는 패널에 포커스를 설정할 수 있습니다(패널 포커스가 첫 번째 필드로 자동 설정됨). `setFocus()`패널 간 탐색, 이전/다음 탐색, 특정 필드에 대한 포커스 설정 등 다양한 탐색 옵션을 제공합니다. 예를 들어 다음 패널로 이동하려면 &#39;guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;) 를 사용할 수 있습니다.
+* `setFocus()` API를 사용하여 다양한 필드 또는 패널에 포커스를 설정할 수 있습니다(패널 포커스가 첫 번째 필드로 자동 설정됨). `setFocus()`은(는) 패널 간 탐색, 이전/다음 순회, 특정 필드에 대한 포커스 설정 등 다양한 탐색 옵션을 제공합니다. 예를 들어 다음 패널로 이동하려면 `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`을(를) 사용할 수 있습니다.
 
 * 적응형 양식 또는 특정 패널의 유효성을 검사하려면 `guideBridge.validate(errorList, somExpression).`을(를) 사용합니다.
 
@@ -227,7 +227,7 @@ GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 
 
 표현식 외부에서 GuideBridge API를 사용할 수도 있습니다. 예를 들어 GuideBridge API를 사용하여 적응형 양식을 호스팅하는 페이지 HTML과 양식 모델 간의 통신을 설정할 수 있습니다. 또한 양식을 호스팅하는 Iframe의 상위 항목에서 오는 값을 설정할 수 있습니다.
 
-위의 예에서 GuideBridge API를 사용하려면 GuideBridge 인스턴스를 캡처합니다. 인스턴스를 캡처하려면 `window`개체의 `bridgeInitializeStart`이벤트를 수신 대기합니다.
+위의 예에서 GuideBridge API를 사용하려면 GuideBridge 인스턴스를 캡처합니다. 인스턴스를 캡처하려면 `bridgeInitializeStart`개체의 `window`이벤트를 수신 대기합니다.
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge 이벤트 {#guidebridge-events}
 
-GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
+GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
 
 다음 코드를 사용하여 처리기를 등록합니다.
 
@@ -279,9 +279,8 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 1. 이 속성의 값은 패턴을 정의하려는 필드에 따라 달라집니다. 숫자 필드의 경우 `guideComponentType` 속성의 값은 *fd/af/components/formatter/guideNumericBox*&#x200B;입니다. Datepicker 필드의 값은 *fd/af/components/formatter/guideDatepicker*입니다.
 &quot;
-1. 속성을 `textboxpatterns` 노드에 할당하여 사용자 지정 패턴을 추가할 수 있습니다. 이름이 있는 속성(예: `pattern1`)을 추가하고 해당 값을 추가하려는 패턴으로 설정합니다. 예를 들어 Fax=text{99-999-9999999} 값을 가진 `pattern1` 속성을 추가하십시오. 패턴은 적응형 Forms에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
+1. 속성을 `textboxpatterns` 노드에 할당하여 사용자 지정 패턴을 추가할 수 있습니다. 이름이 있는 속성(예: `pattern1`)을 추가하고 해당 값을 추가하려는 패턴으로 설정합니다. 예를 들어 Fax=text{99-999-`pattern1` 값을 가진 9999999} 속성을 추가하십시오. 패턴은 적응형 Forms에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
 
    ![CrxDe의 필드에 대한 사용자 지정 패턴을 만드는 중](assets/creating-custom-patterns.png)
 
    사용자 정의 패턴 만들기
-

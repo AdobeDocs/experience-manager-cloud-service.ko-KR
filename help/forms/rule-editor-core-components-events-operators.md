@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 2%
 
 ---
@@ -28,12 +28,12 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 
 * **이(가)**&#x200B;과(와) 같음 - 양식 개체가 지정된 값과 일치하는지 확인합니다.
 * **같지 않음** - 양식 개체가 지정된 값과 일치하지 않는지 확인합니다.
-* **다음으로 시작** – 양식 개체가 지정된 문자열로 시작하는지 확인합니다.
-* **다음으로 끝남** – 양식 개체가 지정된 문자열로 끝나는지 확인합니다.
-* **포함** – 양식 개체에 지정된 하위 문자열이 포함되어 있는지 확인합니다.
-* **포함** 하지 않음 – 양식 개체에 지정된 하위 문자열이 포함되어 있지 않은지 확인합니다.
-* **비어** 있음 – 양식 개체가 비어 있거나 제공되지 않았는지 확인합니다.
-* **Is Not Empty** – 양식 개체가 있고 비어 있지 않은지 확인합니다.
+* **다음으로 시작** - 양식 개체가 지정된 문자열로 시작하는지 확인합니다.
+* **다음으로 끝남** - 양식 개체가 지정된 문자열로 끝나는지 확인합니다.
+* **포함** - 양식 개체에 지정된 하위 문자열이 포함되어 있는지 확인합니다.
+* **포함하지 않음** - 양식 개체에 지정된 하위 문자열이 포함되어 있지 않은지 확인합니다.
+* **비어 있음** - 양식 개체가 비어 있는지 또는 제공되지 않았는지 확인합니다.
+* **비어 있지 않습니다** - 양식 개체가 있고 비어 있지 않은지 확인합니다.
 * **선택함** - 사용자가 특정 확인란, 드롭다운 또는 라디오 버튼 옵션을 선택하면 true를 반환합니다.
 * **초기화됨(이벤트)** - 양식 개체가 브라우저에서 렌더링될 때 true를 반환합니다.
 * **Is Changed (event)** - 사용자가 양식 개체의 값이나 선택을 수정할 때 true를 반환합니다.
@@ -68,12 +68,11 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 
 `Action 2 on Object B;`
 `AND`
-&grave;개체 C에 대한 작업 3;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
@@ -89,9 +88,9 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 >
 > 규칙 유형이 단일 레벨 then-else 문만 지원하는 경우.
 
-##### 경우에 허용되는 여러 필드  {#allowed-multiple-fields}
+##### [!UICONTROL When]에 여러 필드가 허용됨 {#allowed-multiple-fields}
 
-**When** 조건에는 규칙 적용 필드 외에 다른 필드를 추가할 수 있는 옵션이 있습니다.
+**When** 조건에서는 규칙이 적용되는 필드 외에 다른 필드를 추가할 수 있습니다.
 
 예를 들어 When 규칙 유형을 사용하여 서로 다른 양식 객체에 대한 조건을 평가하고 작업을 수행할 수 있습니다.
 
@@ -157,15 +156,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 >[!NOTE]
 >
-> Invoke 서비스에 [대해 자세히 알아보려면 여기를](/help/forms/invoke-service-enhancements-rule-editor.md) 클릭하십시오.
+> Invoke 서비스에 대해 자세히 알아보려면 [여기를 클릭하세요](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-양식 데이터 모델(FDM) 서비스 호출에 대한 규칙 예를 참조하십시오.
+양식 데이터 모델(FDM) 서비스를 호출하는 예제 규칙을 참조하십시오.
 
-양식 데이터 모델 서비스 외에, 직접 WSDL URL 지정을 하여 웹 서비스를 호출할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 것이 좋습니다.
+양식 데이터 모델 서비스 외에 웹 서비스를 호출할 직접 WSDL URL을 지정할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 데 권장되는 방법이 있습니다.
 
-FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 데이터 통합을[&#128279;](data-integration.md) 참조하십시오[!DNL Experience Manager Forms] .
+FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
-**[!UICONTROL Set value of]** 지정된 개체의 값을 계산하고 설정합니다. 개체 값을 문자열, 다른 개체의 값, 수학 식이나 함수를 사용하여 계산된 값, 개체의 속성 값 또는 구성된 양식 데이터 모델 서비스의 출력 값으로 설정할 수 있습니다. 웹 서비스 옵션을 선택하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다.
+**[!UICONTROL 값 설정]** 지정한 개체의 값을 계산하고 설정합니다. 개체 값을 문자열, 다른 개체의 값, 수학 식이나 함수를 사용하여 계산된 값, 개체의 속성 값 또는 구성된 양식 데이터 모델 서비스의 출력 값으로 설정할 수 있습니다. 웹 서비스 옵션을 선택하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다.
 
 FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
@@ -276,9 +275,9 @@ Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사
 
 #### [!UICONTROL 사용] {#enable}
 
-활성화 **&#x200B;**&#x200B;규칙 유형을 사용하면 조건이 충족되는지 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 Enable 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 Disable 작업을 트리거합니다.
+**[!UICONTROL Enable]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 Enable 규칙 유형은 조건이 충족되지 않거나 `False`을 반환하는 경우 Disable 작업을 트리거합니다.
 
-일반적인 Enable 규칙 구조는 다음과 같습니다.
+일반적인 Enable 규칙은 다음과 같이 구성됩니다.
 
 `Enable Object A;`
 
@@ -290,9 +289,9 @@ Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사
 
 `Disable Object A;`
 
-#### [!UICONTROL 비활성화] {#disable}
+#### [!UICONTROL 사용 안 함] {#disable}
 
-활성화 규칙 유형과 유사하게, **[!UICONTROL 비활성화]** 규칙 유형을 사용하면 조건이 충족되는지 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 비활성화 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 활성화 작업을 트리거합니다.
+Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 개체를 활성화하거나 비활성화할 수 있습니다. 또한 Disable 규칙 유형은 조건이 충족되지 않거나 `False`을(를) 반환하는 경우 Enable 작업을 트리거합니다.
 
 일반적인 비활성화 규칙은 다음과 같이 구성됩니다.
 
@@ -352,11 +351,11 @@ Show 규칙 형식과 마찬가지로 **[!UICONTROL Hide]** 규칙 형식을 사
 
 #### [!UICONTROL 비동기 함수 호출]
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
-**[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이를 통해 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
+**[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이 함수를 사용하면 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
 
-비동기 함수를 실행하기 위한 일반적인 비동기 함수 호출 규칙 구조는 다음과 같습니다.
+비동기 함수를 실행하기 위한 일반적인 비동기 함수 호출 규칙은 다음과 같이 구성됩니다.
 
 `When:`
 

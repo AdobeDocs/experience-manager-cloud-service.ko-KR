@@ -4,13 +4,13 @@ description: 보안 연결을 유지할 수 있도록 일반적인 원인을 식
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
+exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 37%
 
 ---
-
 
 # SSL 인증서 문제 해결 {#certificate-problems}
 

@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5357'
 ht-degree: 38%
 
 ---
@@ -129,7 +129,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 다음 예제에서는 Unified Shell에서 [!DNL Adobe] 응용 프로그램을 실행하거나 인증을 위해 이미 `imsToken`을(를) 생성한 경우 자산 선택기를 사용하는 방법을 보여 줍니다.
 
-아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 자산 선택기 [속성](#asset-selector-properties)을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
+아래 예제의 `script`줄 6-15 _에 표시된 대로_ 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. [행 16~23](#asset-selector-properties)에 표시된 대로 자산 선택기 _속성_&#x200B;을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
 
 다음 단계를 따라 [!DNL Adobe] 응용 프로그램에서 자산 선택기를 사용할 수 있습니다.
 
@@ -172,7 +172,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 | `imsClientId` | 인증 용도로 사용되는 IMS 클라이언트 ID를 나타내는 문자열 값입니다. 이 값은 Adobe에서 제공하며 Adobe AEM CS 조직에만 해당됩니다. |
 | `imsScope` | 인증에 사용되는 범위를 설명합니다. 범위는 응용 프로그램이 조직 리소스에 대해 갖는 액세스 수준을 결정합니다. 여러 범위는 쉼표로 구분할 수 있습니다. |
 | `redirectUrl` | 인증 후 사용자가 리디렉션되는 URL을 나타냅니다. 이 값은 일반적으로 애플리케이션의 현재 URL로 설정됩니다. `redirectUrl`이(가) 제공되지 않으면 `ImsAuthService`에서 `imsClientId`을(를) 등록하는 데 사용되는 redirectUrl을 사용합니다. |
-| `modalMode` | 인증 흐름을 모달(팝업)로 표시할지 여부를 나타내는 부울. `true`(으)로 설정하면 인증 흐름이 팝업에 표시됩니다. `false`(으)로 설정하면 전체 페이지를 다시 로드할 때 인증 흐름이 표시됩니다. _참고:_ 더 나은 UX를 위해 사용자에게 브라우저 팝업이 비활성화된 경우 이 값을 동적으로 제어할 수 있습니다. |
+| `modalMode` | 인증 흐름을 모달(팝업)로 표시할지 여부를 나타내는 부울. `true`(으)로 설정하면 인증 흐름이 팝업에 표시됩니다. `false`(으)로 설정하면 전체 페이지를 다시 로드할 때 인증 흐름이 표시됩니다. 향상된 UX를 위해 브라우저 팝업이 비활성화된 경우 이 값을 동적으로 제어할 수 있습니다(_Note :_). |
 | `onImsServiceInitialized` | Adobe IMS 인증 서비스가 초기화될 때 호출되는 콜백 함수입니다. 이 함수는 Adobe IMS 서비스를 나타내는 개체인 `service` 매개 변수 하나를 사용합니다. 자세한 내용은 [`ImsAuthService`](#imsauthservice-ims-auth-service)을(를) 참조하십시오. |
 | `onAccessTokenReceived` | Adobe IMS 인증 서비스에서 `imsToken`을(를) 받을 때 호출되는 콜백 함수입니다. 이 함수는 액세스 토큰을 나타내는 문자열인 `imsToken` 매개 변수 하나를 사용합니다. |
 | `onAccessTokenExpired` | 액세스 토큰이 만료된 경우 호출되는 콜백 함수입니다. 이 함수는 일반적으로 새 액세스 토큰을 얻기 위해 새 인증 흐름을 트리거하는 데 사용됩니다. |
@@ -272,7 +272,7 @@ onErrorReceived: (type, msg) => {
 * imsOrg
 * apikey
 
-자산 선택기는 Identity Management 이외의 응용 프로그램과 통합할 때 `imsScope` 또는 `imsClientID`과(와) 같은 IMS(Adobe System) 속성을 사용하여 [!DNL Experience Manager Assets] 리포지토리에 대한 인증을 지원합니다.
+자산 선택기는 Identity Management 이외의 응용 프로그램과 통합할 때 [!DNL Experience Manager Assets] 또는 `imsScope`과(와) 같은 IMS(Adobe System) 속성을 사용하여 `imsClientID` 리포지토리에 대한 인증을 지원합니다.
 
 +++**Adobe이 아닌 응용 프로그램에 대한 자산 선택기 구성**
 Adobe이 아닌 애플리케이션에 대한 자산 선택기를 구성하려면 먼저 프로비저닝에 대한 지원 티켓을 기록한 후 통합 단계를 수행해야 합니다.
@@ -291,17 +291,17 @@ Admin Console을 통해 지원 티켓을 기록하는 절차:
 +++**통합 단계**
 이 예제 `index.html` 파일을 사용하여 자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증하십시오.
 
-예제 `index.html` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `Script` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
+예제 `Script` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `index.html` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
 
 이 예제의 *줄 14*&#x200B;부터 *줄 38*&#x200B;까지는 `imsClientId`, `imsScope`, `redirectURL`과(와) 같은 IMS 흐름 속성을 설명합니다. 함수에는 `imsClientId` 및 `imsScope` 속성 중 하나 이상을 정의해야 합니다. `redirectURL`에 대한 값을 정의하지 않으면 클라이언트 ID에 대해 등록된 리디렉션 URL이 사용됩니다.
 
-생성된 `imsToken`이(가) 없으므로 예제 `index.html` 파일의 40행~50행에 표시된 대로 `registerAssetsSelectorsAuthService` 및 `renderAssetSelectorWithAuthFlow` 함수를 사용합니다. `renderAssetSelectorWithAuthFlow` 앞에 `registerAssetsSelectorsAuthService` 함수를 사용하여 자산 선택기에 `imsToken`을(를) 등록하십시오. [!DNL Adobe]에서는 구성 요소를 인스턴스화할 때 `registerAssetsSelectorsAuthService`을(를) 호출하는 것이 좋습니다.
+생성된 `imsToken`이(가) 없으므로 예제 `registerAssetsSelectorsAuthService` 파일의 40행~50행에 표시된 대로 `renderAssetSelectorWithAuthFlow` 및 `index.html` 함수를 사용합니다. `registerAssetsSelectorsAuthService` 앞에 `renderAssetSelectorWithAuthFlow` 함수를 사용하여 자산 선택기에 `imsToken`을(를) 등록하십시오. [!DNL Adobe]에서는 구성 요소를 인스턴스화할 때 `registerAssetsSelectorsAuthService`을(를) 호출하는 것이 좋습니다.
 
-예제 `index.html` 파일의 *행 54*&#x200B;부터 *행 60*&#x200B;까지 표시된 대로 `const props` 섹션에서 인증 및 기타 Assets as a Cloud Service 액세스 관련 속성을 정의합니다.
+예제 `const props` 파일의 *행 54*&#x200B;부터 *행 60*&#x200B;까지 표시된 대로 `index.html` 섹션에서 인증 및 기타 Assets as a Cloud Service 액세스 관련 속성을 정의합니다.
 
-*줄 65*&#x200B;에 언급된 `PureJSSelectors` 전역 변수는 웹 브라우저에서 자산 선택기를 렌더링하는 데 사용됩니다.
+`PureJSSelectors`줄 65 *에 언급된* 전역 변수는 웹 브라우저에서 자산 선택기를 렌더링하는 데 사용됩니다.
 
-*줄 74*&#x200B;부터 *줄 81*&#x200B;까지 언급된 대로 자산 선택기가 `<div>` 컨테이너 요소에 렌더링됩니다. 이 예제에서는 대화 상자를 사용하여 에셋 선택기를 표시합니다.
+`<div>`줄 74 *부터*&#x200B;줄 81 *까지 언급된 대로 자산 선택기가* 컨테이너 요소에 렌더링됩니다. 이 예제에서는 대화 상자를 사용하여 에셋 선택기를 표시합니다.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -416,7 +416,7 @@ Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 [자산 선택기 속성](#asset-selector-properties)의 `aemTierType` 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[의 ](#asset-selector-properties) 속성으로 이동하십시오.
 
 +++
 
@@ -565,8 +565,8 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 |---|---|---|---|---|
 | *레일* | 부울 | 아니요 | 거짓 | `true`(으)로 표시된 경우 자산 선택기가 왼쪽 레일 보기에서 렌더링됩니다. `false`(으)로 표시되어 있으면 자산 선택기가 모달 보기에서 렌더링됩니다. |
 | *imsOrg* | 문자열 | 예 | | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 액세스 중인 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 `imsOrg` 키가 필요합니다. |
-| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. 통합을 위해 [!DNL Adobe] 응용 프로그램을 사용하는 경우 `imsToken`이(가) 필요합니다. |
-| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. [!DNL Adobe] 응용 프로그램 통합을 사용하는 경우 `apiKey`이(가) 필요합니다. |
+| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. 통합을 위해 `imsToken` 응용 프로그램을 사용하는 경우 [!DNL Adobe]이(가) 필요합니다. |
+| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` 응용 프로그램 통합을 사용하는 경우 [!DNL Adobe]이(가) 필요합니다. |
 | *filterSchema* | 배열 | 아니요 | | 필터 속성을 구성하는 데 사용되는 모델입니다. 자산 선택기에서 특정 필터 옵션을 제한하려는 경우에 유용합니다. |
 | *filterFormProps* | 오브젝트 | 아니요 | | 검색을 세분화하는 데 사용해야 하는 필터 속성을 지정합니다. 대상! 예: MIME 유형 JPG, PNG, GIF. |
 | *selectedAssets* | 배열 `<Object>` | 아니요 |                 | 자산 선택기가 렌더링될 때 선택된 자산을 지정합니다. 자산의 ID 속성을 포함하는 오브젝트 배열이 필요합니다. 그 예로는 `[{id: 'urn:234}, {id: 'urn:555'}]` 등이 있습니다. 또한 현재 디렉터리에서 자산을 사용할 수 있어야 합니다. 다른 디렉터리를 사용해야 하는 경우 `path` 속성 값도 제공하십시오. |
@@ -591,7 +591,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 | *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
-| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. 또한 함수 값이 `true` 또는 `false`일 수 있는 **allowSelectionAndDrag**&#x200B;을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
+| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. 또한 함수 값이 **또는**&#x200B;일 수 있는 `true`allowSelectionAndDrag`false`을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
 | *showToast* | | 아니요 | | 이를 통해 에셋 선택기에서 만료된 에셋에 대한 사용자 지정 Toast 메시지를 표시할 수 있습니다. |
 
 <!--
@@ -609,7 +609,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 
 ![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. `acvConfig` 속성의 사용을 이해하려면 [드래그 앤 드롭을 사용하거나 사용하지 않도록 설정](#enable-disable-drag-and-drop)하세요.
+AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [ 속성의 사용을 이해하려면 ](#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -790,18 +790,18 @@ interface SelectedAsset {
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| *repo:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
-| *repo:id* | 문자열 | 자산의 고유 식별자입니다. |
-| *repo:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
-| *repo:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
-| *repo:size* | 숫자 | 자산의 크기입니다(바이트). |
-| *repo:path* | 문자열 | 저장소 내 자산의 위치입니다. |
-| *repo:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
-| *repo:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
-| *repo:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
-| *repo:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
-| *repo:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
-| *repo:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
+| *리포지토리:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
+| *리포지토리:id* | 문자열 | 자산의 고유 식별자입니다. |
+| *리포지토리:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
+| *리포지토리:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
+| *리포지토리:size* | 숫자 | 자산의 크기입니다(바이트). |
+| *리포지토리:path* | 문자열 | 저장소 내 자산의 위치입니다. |
+| *리포지토리:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
+| *리포지토리:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
+| *리포지토리:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
+| *리포지토리:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
+| *리포지토리:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
+| *리포지토리:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
 | *dc:format* | 문자열 | 파일 유형(예: JPEG, PNG 등)과 같은 에셋의 형식입니다. |
 | *tiff:imageWidth* | 숫자 | 자산의 폭입니다. |
 | *tiff:imageLength* | 숫자 | 자산의 높이입니다. |
@@ -840,6 +840,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
@@ -878,7 +879,7 @@ const currentData = new Date();
 currentData.getTime(),
 ```
 
-날짜 형식 2024-06-19T06:36:53.959Z에 따른 `1718779013959`을(를) 반환합니다.
+날짜 형식 2024-06-19T06`1718779013959`53.959Z에 따른 :36:을(를) 반환합니다.
 
 #### 만료된 에셋의 Toast 메시지 사용자 지정 {#customize-toast-message}
 

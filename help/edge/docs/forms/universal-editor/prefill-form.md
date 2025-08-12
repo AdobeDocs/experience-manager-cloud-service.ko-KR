@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 에지 전달 서비스, 적응형 양식 자동 채우기
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +250,7 @@ FDM의 양식 요소가 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML으로 미리 보기** 선택
 4. URL에 매개 변수를 추가하여 미리 채우기 테스트:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **예:**
 

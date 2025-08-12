@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
      envTypes: ["dev"]
    ```
 
-1. [Config Pipeline](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
+1. *Config Pipeline*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
 
 1. [구성 파이프라인](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
@@ -474,7 +474,7 @@ data:
 ```
 
 >[!NOTE]
-> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation)를 따라 **관리** 모드에서 푸시 무효화를 구성해야 합니다.
+> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services **푸시 무효화 설정 설명서**&#x200B;를 따라 [관리](https://www.aem.live/docs/byo-dns#setup-push-invalidation) 모드에서 푸시 무효화를 구성해야 합니다.
 
 
 ## 서버측 리디렉션 {#server-side-redirectors}

@@ -4,9 +4,9 @@ description: 범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-애플리케이션에는 페이지 또는 구성 요소 업데이트에 대한 요구 사항이 다를 수 있습니다. 따라서 유니버설 편집기는 정의된 이벤트를 원격 응용 프로그램으로 보냅니다. 원격 응용 프로그램에 보낸 이벤트에 대한 사용자 지정 이벤트 수신기가 없는 경우 `universal-editor-cors` 패키지에서 제공하는 [대체 이벤트 수신기](#fallback-listeners)가 실행됩니다.
+애플리케이션에는 페이지 또는 구성 요소 업데이트에 대한 요구 사항이 다를 수 있습니다. 따라서 유니버설 편집기는 정의된 이벤트를 원격 응용 프로그램으로 보냅니다. 원격 응용 프로그램에 보낸 이벤트에 대한 사용자 지정 이벤트 수신기가 없는 경우 [ 패키지에서 제공하는 ](#fallback-listeners)대체 이벤트 수신기`universal-editor-cors`가 실행됩니다.
 
-모든 이벤트는 원격 페이지의 영향을 받는 DOM 요소에서 호출됩니다. `universal-editor-cors` 패키지에서 제공한 기본 이벤트 수신기가 등록된 `BODY` 요소까지 이벤트가 버블링됩니다. 콘텐츠에는 이벤트가 있고 UI에는 이벤트가 있습니다.
+모든 이벤트는 원격 페이지의 영향을 받는 DOM 요소에서 호출됩니다. `BODY` 패키지에서 제공한 기본 이벤트 수신기가 등록된 `universal-editor-cors` 요소까지 이벤트가 버블링됩니다. 콘텐츠에는 이벤트가 있고 UI에는 이벤트가 있습니다.
 
 모든 이벤트는 명명 규칙을 따릅니다.
 
@@ -182,7 +182,7 @@ ht-degree: 2%
 
 ### aue:ui-preview {#ui-preview}
 
-페이지의 편집 모드가 **미리 보기**(으)로 변경되면 `aue:ui-preview` 이벤트가 트리거됩니다.
+페이지의 편집 모드가 `aue:ui-preview`미리 보기&#x200B;**(으)로 변경되면** 이벤트가 트리거됩니다.
 
 이 이벤트에 대한 페이로드가 비어 있습니다.
 
@@ -194,7 +194,7 @@ ht-degree: 2%
 
 ### aue:ui-edit {#ui-edit}
 
-페이지의 편집 모드가 **편집**(으)로 변경되면 `aue:ui-edit` 이벤트가 트리거됩니다.
+페이지의 편집 모드가 `aue:ui-edit`편집&#x200B;**(으)로 변경되면** 이벤트가 트리거됩니다.
 
 이 이벤트에 대한 페이로드가 비어 있습니다.
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 }
 ```
 
-### aue:초기화됨 {#initialized}
+### aue:initialized {#initialized}
 
 `aue:initialized` 이벤트가 트리거되어 원격 페이지가 유니버설 편집기에서 성공적으로 로드되었음을 알 수 있습니다.
 

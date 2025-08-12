@@ -5,23 +5,21 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
 
 ---
 
-
+# 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 이 문서 |
 
-# 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
-
-[!DNL AEM Forms]개 인스턴스 간에 적응형 Forms 및 적응형 양식 테마, FDM(양식 데이터 모델), 적응형 양식 템플릿, 조각 및 PDF forms과 같은 관련 자산을 이동할 수 있습니다.
+[!DNL AEM Forms]개 인스턴스 간에 적응형 Forms 및 적응형 양식 테마, FDM(양식 데이터 모델), 적응형 양식 템플릿, 단편, PDF forms과 같은 관련 자산을 이동할 수 있습니다.
 
 ## 적응형 Forms, PDF forms 또는 관련 에셋 다운로드 {#download-forms-amp-documents-assets}
 
@@ -183,7 +181,7 @@ ht-degree: 3%
 
    ![자산 검색](/help/forms/assets/search-bar.png)
 
-검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ko)을 참조하세요.
+검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)을 참조하세요.
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

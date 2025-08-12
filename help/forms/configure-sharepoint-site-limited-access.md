@@ -5,16 +5,16 @@ keywords: 제한된 액세스로 SharePoint 사이트를 구성하는 방법. �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 15%
 
 ---
 
-<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
-
 # 인증 범위를 사용하여 제한된 액세스로 SharePoint Site 구성
+
+<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 제한 또는 제한된 액세스의 목적은 관리자가 특정 SharePoint 사이트 또는 SharePoint 사이트 그룹에 대한 사용자 액세스를 제어할 수 있도록 하여 보안 관리를 향상시키는 것입니다. 권한 수준은 허용되지 않는 다른 SharePoint 사이트를 볼 수 있도록 허용하지 않고 특정 사이트에 대한 액세스 권한을 사용자 또는 그룹에 부여해야 할 때 유용합니다.
 

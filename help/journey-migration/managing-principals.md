@@ -2,8 +2,8 @@
 title: 주체 관리
 description: Admin Console을 사용하여 마이그레이션을 위한 주체 관리
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 콘텐츠를 AEM as a Cloud Service 클라우드 환경으로 전송하기 전에 Admin Console에서 수행할 수 있는 몇 가지 작업이 있습니다.  사용자 만들기, 그룹 만들기 및 그룹에 사용자 할당 작업입니다. 이 사용자 및 그룹은 모든 Adobe 클라우드 기반 서비스의 사용자 및 그룹을 관리하는 데 사용되는 Adobe의 Identity Management Service인 IMS에 존재하게 됩니다.
 
-### Admin Console에서 그룹 및 사용자 만들기
+## Admin Console에서 그룹 및 사용자 만들기
 
 [AEM 주체를 위한 Admin Console 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up)에서는 IMS에서 사용자 및 그룹을 만드는 방법과 사용자를 동시에 그룹에 추가하는 방법에 대한 자세한 지침을 제공합니다.  이 문서에는 이를 만들 수 있는 세 가지 옵션인, Admin Console을 통한 수동 방식, Admin Console로 CSV 업로드를 통한 방식, 사용자 동기화 도구를 통한 방식이 포함되어 있습니다.
 
