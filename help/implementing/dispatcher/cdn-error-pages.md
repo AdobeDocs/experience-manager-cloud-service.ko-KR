@@ -93,6 +93,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 튜토리얼
 
-CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
+CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
 
 

@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**(으)로 이동합니다.
 1. 워크플로 모델 페이지에서 화면 오른쪽 상단의 **만들기**&#x200B;를 누릅니다.
-1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오.
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko)를 참조하십시오.
 1. 목록에서 만든 모델을 선택하고 **편집**&#x200B;을 누릅니다.
 1. 다음 창에서 기본적으로 나타나는 단계를 삭제합니다
 1. 프로세스 단계를 현재 모델 플로우로 끌어서 놓습니다.
@@ -134,13 +134,13 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 원래 모델을 호출하지 마십시오. 대신 먼저 모델을 복사하고 해당 복사본을 호출해야 합니다.
 
-모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)을 참조하십시오.
+모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ko#extending-aem)을 참조하십시오.
 
 또는 `Publish Content Tree` 프로세스 단계를 사용하는 워크플로 모델을 만들 수 있습니다.
 
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**(으)로 이동합니다.
 1. 워크플로 모델 페이지에서 화면 오른쪽 상단의 **만들기**&#x200B;를 누릅니다.
-1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오.
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko)를 참조하십시오.
 1. 목록에서 만든 모델을 선택하고 **편집**&#x200B;을 누릅니다.
 1. 다음 창에서 프로세스 단계를 현재 모델 플로우로 드래그하여 놓습니다.
 

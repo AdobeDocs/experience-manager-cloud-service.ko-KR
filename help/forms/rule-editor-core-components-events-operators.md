@@ -351,7 +351,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 #### [!UICONTROL 비동기 함수 호출]
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
 
 **[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이 함수를 사용하면 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
 

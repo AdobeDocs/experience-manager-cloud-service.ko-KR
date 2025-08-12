@@ -111,7 +111,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
    * 컨텍스트 인식 구성 (`/conf` 아래의 모든 항목) (추가, 수정, 제거)
    * 스크립트 (패키지는 패키지 설치의 여러 설치 프로세스 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대한 내용은 [Jackrabbit filevault 설명서](https://jackrabbit.apache.org/filevault/installhooks.html)를 참조하십시오. 현재 AEM CS는 Filevault 버전 3.4.0을 사용합니다. 이 버전은 설치 후크를 관리 사용자, 시스템 사용자 및 관리자 그룹의 멤버로 제한합니다.
 
-`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 임베드하여 변경 가능한 콘텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하기 위한 재구성은 AEM 6.5에서 수행되었으며 권장 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)를 참조하십시오.
+`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 임베드하여 변경 가능한 콘텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하기 위한 재구성은 AEM 6.5에서 수행되었으며 권장 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ko)를 참조하십시오.
 
 >[!NOTE]
 >모든 환경 유형(개발/단계/프로덕션)에 콘텐츠 패키지를 배포합니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동화된 실행의 테스트 실행 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 콘텐츠는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 사용하여 수동으로 설치해야 합니다.
@@ -120,7 +120,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
 
 포함된 모든 서드파티 패키지는 호환 가능한 AEM as a Cloud Service로 유효성을 확인해야 하며, 그렇지 않으면 해당 패키지가 포함되어 결국 배포가 실패할 수 있습니다.
 
-위에서 언급했듯이 기존 코드 베이스를 사용하는 고객은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에 설명된 6.5 저장소 변경 사항에 필요한 저장소 재구성 연습을 따라야 합니다.
+위에서 언급했듯이 기존 코드 베이스를 사용하는 고객은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ko)에 설명된 6.5 저장소 변경 사항에 필요한 저장소 재구성 연습을 따라야 합니다.
 
 ## Repoinit {#repoinit}
 
@@ -176,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 변경 가능한 콘텐츠 패키지 마이그레이션"
 >abstract="콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례에서 패키지 관리자 사용에 대해 알아봅니다. 설치에는 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오고 온프레미스 환경에서 AEM Cloud 환경 등으로 소형 콘텐츠 패키지를 이전하는 등의 작업이 포함됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="콘텐츠 전송 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko" text="콘텐츠 전송 도구"
 
 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례가 있습니다. 예를 들면 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오기 등이 있습니다. 해당 시나리오의 경우, [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 AEM as a Cloud Service의 환경으로 사용할 수 있습니다.
 
@@ -262,7 +262,7 @@ AEM 업데이트와 마찬가지로 적절한 상황에서 작성 클러스터 �
 
 ## 복제 {#replication}
 
-게시 메커니즘은 [AEM 복제 Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)와 역으로 호환됩니다.
+게시 메커니즘은 [AEM 복제 Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)와 역으로 호환됩니다.
 
 클라우드 기반 AEM 빠른 시작으로 복제를 개발하고 테스트하려면 작성자/게시 설정과 함께 클래식 복제 기능을 사용해야 합니다. 클라우드에 대한 AEM 작성자의 사용자 인터페이스 진입점이 제거된 경우, 사용자는 구성을 위해 `http://localhost:4502/etc/replication`으로 이동합니다.
 

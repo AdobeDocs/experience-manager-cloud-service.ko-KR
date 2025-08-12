@@ -18,11 +18,11 @@ ht-degree: 83%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸들러를 제공합니다. 또한 오류 핸들러 함수를 사용자 정의할 수 있는 기능을 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 통해 외부 서비스를 호출할 때 데이터를 유효성 검사를 위해 서버로 전송하면 서버는 제출의 성공 여부 또는 오류 이벤트에 대한 정보가 포함된 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다. 오류 핸들러는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
@@ -180,7 +180,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ## 규칙 편집기를 통해 오류 핸들러 추가 {#add-error-handler-using-rule-editor}
 
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 ### 기본 오류 핸들러 함수 추가 {#add-default-errror-handler}
 
 오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
 1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -224,7 +224,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 언급된 작업 외에도, 사용자 정의 오류 핸들러를 사용하여 특정 사용자 요구 사항을 충족하는 사용자 정의 함수를 실행할 수 있습니다.
 
 사용자 정의 오류 핸들러는 외부 서비스에서 반환된 오류에 응답하고, 최종 사용자에게 사용자 정의된 응답을 게재하도록 설계된 함수(클라이언트 라이브러리)입니다. 주석 `@errorHandler`가 포함된 모든 클라이언트 라이브러리는 사용자 정의 오류 핸들러 함수로 간주됩니다. 이 주석은 `.js` 파일에 지정된 오류 핸들러 함수를 식별하는 데 도움이 됩니다.
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
 
 적응형 양식에서 사용자 정의 오류 핸들러를 추가하고 사용하려면 다음 단계를 수행합니다.
 
@@ -237,7 +237,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -298,7 +298,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#setup-pipeline).
 
 파이프라인이 정상적으로 실행되면 사용자 정의 오류 핸들러를 적응형 양식 규칙 편집기에 사용할 수 있게 됩니다. 이제 AEM Forms에서 규칙 편집기의 호출 서비스를 통해 사용자 정의 오류 핸들러를 구성하고 사용하는 방법을 살펴보겠습니다.
 
