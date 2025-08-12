@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [!DNL AEM Assets as a Cloud Service]에 액세스.
 * 에셋의 상태 속성을 편집할 수 있는 권한입니다.
-* [미리 볼 에셋이 포함된 폴더에 적용된 메타데이터 양식의 [!UICONTROL 기본] 탭[!UICONTROL 에서 사용할 수 있는 ] 상태[!UICONTROL  메타데이터 속성에 ]미리 보기](/help/assets/metadata-assets-view.md#edit-metadata-forms) 값을 추가했습니다.
+* [미리 볼 에셋이 포함된 폴더에 적용된 메타데이터 양식의 [!UICONTROL 기본] 탭[!UICONTROL 에서 사용할 수 있는 &#x200B;] 상태[!UICONTROL &#x200B; 메타데이터 속성에 &#x200B;]미리 보기](/help/assets/metadata-assets-view.md#edit-metadata-forms) 값을 추가했습니다.
   ![미리 보기 옵션 추가](/help/assets/assets/metedata-form-preview.png)
 * 미리 보기 토큰을 생성하기 위한 키입니다. [Adobe 지원에 문의](https://helpx.adobe.com/in/contact.html)하여 키에 대한 요청을 제기하십시오.
 
@@ -42,7 +42,7 @@ ht-degree: 0%
    1. [!DNL Assets View]에서 **[!UICONTROL Assets]**&#x200B;을(를) 선택하고 폴더로 이동합니다.
    1. 미리 볼 자산을 선택합니다.
    1. **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
-   1. [!UICONTROL 정보 패널]에서 **[!UICONTROL 상태]**&#x200B;을(를) **[!UICONTROL 미리 보기]**(으)로 설정한 다음 **[!UICONTROL 저장]**을 클릭하세요.
+   1. [!UICONTROL 정보 패널]에서 **[!UICONTROL 상태]**&#x200B;을(를) **[!UICONTROL 미리 보기]**(으)로 설정한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
       ![미리보기](/help/assets/assets/preview-boat-at-bay.png)
 
 1. 사이트 작성 페이지로 이동합니다. [AEM 페이지 편집기에서 원격 자산 액세스](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) 섹션의 단계를 실행하여 자산 선택기 패널을 사용하여 최근에 미리 보기(상태)로 설정한 자산을 선택합니다.
