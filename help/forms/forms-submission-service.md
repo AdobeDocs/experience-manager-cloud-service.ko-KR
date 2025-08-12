@@ -115,7 +115,7 @@ Forms 제출 서비스를 설정하기 전에 다음을 확인하십시오.
 
 >[!TIP]
 >
->Edge Delivery Services을 처음 사용하십니까?**** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
+>Edge Delivery Services을 처음 사용하십니까?**&#x200B;** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
 
 ## 구성 메서드
 
