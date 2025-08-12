@@ -4,7 +4,8 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델(FDM)에 연결하는 방법
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 47%
@@ -15,7 +16,7 @@ ht-degree: 47%
 
 | 버전 | 문서 링크 |
 |---------|-----------------------------|
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Edge Delivery Services) | 이 문서 |
@@ -23,7 +24,7 @@ ht-degree: 47%
 
 양식 제출은 사용자 여정의 중요한 마지막 단계이며, 수집된 데이터가 처리되고 작업이 수행되는 단계입니다. 이 문서에서는 범용 편집기에서 적응형 양식의 제출 작업을 구성하고 관리하는 방법에 대한 포괄적인 안내서를 제공합니다.
 
-### 학습 내용
+## 학습 내용
 
 이 문서를 끝까지 읽으면 다음을 수행하는 방법에 대해 이해할 수 있습니다.
 
@@ -33,7 +34,7 @@ ht-degree: 47%
 - 특정 비즈니스 요구 사항에 맞게 사용자 정의 제출 작업 구현
 - 제출 중 양식 유효성 검사 및 오류 시나리오 처리
 
-### 타깃 대상자
+## 타깃 대상자
 
 이 안내서는 다음을 위해 설계되었습니다.
 
@@ -77,6 +78,3 @@ ht-degree: 47%
 >
 > - 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
 > - 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
-
-
-

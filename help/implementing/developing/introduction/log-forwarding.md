@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -93,7 +93,6 @@ ht-degree: 3%
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +215,6 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
       <td>예</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >단일 IP 주소에서 로그가 표시되는지 여부는 고급 네트워킹 구성 선택에 따라 결정됩니다.  이 작업을 용이하게 하려면 전용 이그레스를 사용해야 합니다.

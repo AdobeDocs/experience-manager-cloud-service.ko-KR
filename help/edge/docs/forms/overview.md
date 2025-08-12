@@ -4,7 +4,7 @@ description: Adobe Experience Manager Edge Delivery Services에서 범용 편집
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 ### 범용 편집기
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 속도와 엔터프라이즈급 기능을 결합한 마케터 및 디자이너를 위한 시각적 드래그 앤 드롭 작성 도구입니다.
@@ -109,7 +109,6 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 | Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
 | Custom components (JS/CSS) | ✅ | ✅ | Via embed |
 | Localization via Sites | ✅ | Manual | Via embed |
-
 -->
 
 ## 다음 단계
@@ -123,8 +122,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 이제 AEM Edge Delivery Services를 사용하여 첫 번째 고성능 양식을 생성할 준비가 되었습니다.
 
 
-<!-- 
-
+<!--
 ## Start creating forms
 
 - [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -136,9 +134,6 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
--->
-
-<!-- 
 
 ## Start creating forms
 

@@ -4,7 +4,7 @@ description: Edge Delivery Services를 통해 제공되는 AEM Forms의 테마�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ Edge Delivery Services for AEM Forms의 양식 스타일을 사용하려면 CSS 
 
 드롭다운, 라디오 그룹 및 확인란 그룹을 제외한 모든 양식 필드에는 다음과 같은 HTML 구조가 있습니다.
 
-#### 일반 구성 요소의 HTML 구조
+### 일반 구성 요소의 HTML 구조
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 
 CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일을 일관되게 적용할 수 있습니다.
 
-#### HTML 구조
+### HTML 구조
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 
 
 
-#### CSS 선택기의 예
+### CSS 선택기의 예
 
 ```CSS
 /- Primary Pattern: Target all text input fields */
