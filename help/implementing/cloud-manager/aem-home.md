@@ -1,13 +1,13 @@
 ---
 title: Experience Hub 정보
-description: AEM Experience Hub 페이지에 대해 알아봅니다.
+description: Adobe Experience Hub 페이지에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 # Experience Hub 정보 {#aem-experience-hub}
 
-Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub를 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. 명확한 사용자 중심의 레이아웃을 통해 Experience Hub는 필수 도구에 빠르게 액세스하여 모든 AEM 기능에 걸쳐 간소화되고 효과적인 경험을 제공합니다.
+Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub을 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. Experience Hub은 명확한 사용자 중심의 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 하므로 모든 AEM 기능에 걸쳐 간소하고 효과적인 경험을 제공합니다.
 
 다시 상상한 AEM Experience Hub 작업 영역(1분 27초)을 간단히 살펴볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463274?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
