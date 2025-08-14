@@ -4,7 +4,7 @@ description: 양식을 만드는 동안 양식 작성자가 구성할 수 있는
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -91,7 +91,7 @@ ht-degree: 0%
     
     지원을 받고 참조 번호 #REF-2024-001234번을 지정했습니다.
     
-    **다음 단계: &#x200B;**
+    **다음 단계: **
     - 15분 이내에 확인 이메일을 받게 됩니다.
     - 영업일 기준으로 2일 이내에 제출이 검토됩니다.
     - 추가 정보가 필요한 경우 바로 연락드리겠습니다.

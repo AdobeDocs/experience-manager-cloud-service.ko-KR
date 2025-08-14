@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # AEM Forms용 범용 편집기 인터페이스 탐색
 
-[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 Edge Delivery Services을 사용하여 AEM Forms을 만들 수 있는 시각적 인터페이스를 제공합니다. 이 안내서는 양식을 효율적으로 빌드하기 위한 인터페이스를 이해하는 데 도움이 됩니다.
+[유니버설 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 Edge Delivery Services을 사용하여 AEM Forms을 만들 수 있는 시각적 인터페이스를 제공합니다. 양식이 사용자에게 표시되는 방식을 정확하게 표시하는 **What You See Is What You Get(WYSIWYG)** 경험을 제공합니다.
 
 ![유니버설 편집기 인터페이스 개요](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## 개요
-
-유니버설 편집기는 양식이 사용자에게 표시되는 방식을 정확하게 표시하는 **What You See Is What You Get(WYSIWYG)** 경험을 제공합니다. 양식을 처음 작성하는 사용자 또는 숙련된 개발자 모두 이 안내서를 통해 다음 작업을 수행할 수 있습니다.
+이 안내서는 양식을 효율적으로 빌드하기 위한 인터페이스를 이해하는 데 도움이 됩니다. 양식을 처음 작성하는 사용자 또는 숙련된 개발자 모두 이 안내서를 통해 다음 작업을 수행할 수 있습니다.
 
 **필수 스킬 학습:**
 
@@ -37,6 +35,8 @@ ht-degree: 4%
 - 개념에서 발행으로 양식 작성
 - 여러 장치에서 양식 테스트 및 미리 보기
 - 양식 프로젝트에서 팀원과 공동 작업
+
+
 
 ## 빠르게 시작하기
 
