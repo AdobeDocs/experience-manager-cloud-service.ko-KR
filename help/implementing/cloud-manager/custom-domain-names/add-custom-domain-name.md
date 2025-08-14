@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 16%
+source-wordcount: '1089'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager에서 **도메인 설정**&#x200B;을 사용하여 사용자 정�
 
 Cloud Manager에서 사용자 정의 도메인 이름을 추가하기 전에 이러한 요구 사항을 충족하십시오.
 
-* [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 문서에 설명된 대로 *사용자 정의 도메인 이름을 추가하기 전에*&#x200B;추가하려는 도메인에 대해 도메인 SSL 인증서를 추가해야 합니다.
+* *SSL 인증서 추가* 문서에 설명된 대로 [사용자 정의 도메인 이름을 추가하기 전에](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)추가하려는 도메인에 대해 도메인 SSL 인증서를 추가해야 합니다.
 * Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
 * Fastly 또는 기타 CDN(Content Delivery Network)을 사용합니다.
 
@@ -94,13 +94,18 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 >
 >Adobe 관리 CDN의 경우 DV(도메인 유효성 검사) 인증서를 사용할 때는 ACME 유효성 검사가 있는 사이트만 허용됩니다.
 
-#### 요구 사항 {#adobe-managed-cert-dv-requirements}
 
-DNS 레코드를 구성하기 전에 이러한 요구 사항을 충족하십시오.
+### DNS 구성{#config-dns}
+
+>[!WARNING]
+>
+>&quot;광고하기 전에 등록&quot; 원칙은 여기에 적용됩니다. 즉, 도메인 매핑을 성공적으로 추가한 *after*&#x200B;에만 DNS 구성을 수행해야 합니다. 이렇게 하면 Cloud Manager이 자체 구성에 도메인이 있는지 확인하고 인식한 후에 요청에 응답할 수 있습니다. 또한 모든 도메인 인계 시도를 방지합니다.
+
+DNS 레코드를 구성하기 전에 *다음 요구 사항을 충족해야 합니다*.
 
 * 도메인 호스트 또는 등록자를 아직 모르는 경우 이를 확인합니다.
 * 조직의 도메인에 대한 DNS 레코드를 편집하거나, 편집할 수 있는 적절한 담당자에게 문의할 수 있습니다.
-* [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서에 설명된 대로 구성된 사용자 정의 도메인 이름을 이미 확인했어야 합니다.
+* [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서에 설명된 대로 구성된 사용자 정의 도메인 이름을 이미 확인했습니다.
 
 #### CNAME 레코드 {#adobe-managed-cert-cname-record}
 

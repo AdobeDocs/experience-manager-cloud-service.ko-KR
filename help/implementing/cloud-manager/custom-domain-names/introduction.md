@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 41%
@@ -60,7 +60,7 @@ AEM as a Cloud Service은 내장된 CDN(Content Delivery Network) 서비스를 �
 | 1 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | [사용자 지정 도메인 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | [도메인 매핑 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [DNS 구성](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 4 | [DNS 구성](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns) |
 | 5 | [DNS 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
