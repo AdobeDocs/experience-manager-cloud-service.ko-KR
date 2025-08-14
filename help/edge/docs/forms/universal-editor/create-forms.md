@@ -290,8 +290,8 @@ Edge Delivery Services을 구성하고 양식을 게시합니다.
 문제가 지속되는 경우:
 
 1. Adobe Experience Cloud 서비스 상태를 확인합니다.
-2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토하십시오.
-3. [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/)를 방문하십시오.
+2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko)를 검토하십시오.
+3. [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)를 방문하십시오.
 4. Adobe 고객 지원 센터에 문의하십시오.
 
 +++
@@ -302,6 +302,6 @@ Edge Delivery Services을 구성하고 양식을 게시합니다.
 
 - [제출 동작 구성](/help/edge/docs/forms/universal-editor/submit-action.md): 데이터 처리 및 통합을 설정합니다.
 - [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): 양식을 백엔드 데이터 소스에 연결합니다.
-- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): 성능을 최대화합니다.
+- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko): 성능을 최대화합니다.
 - [양식 분석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): 양식 성능 및 사용자 동작을 추적합니다.
 
