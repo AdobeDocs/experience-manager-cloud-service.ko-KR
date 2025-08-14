@@ -4,10 +4,10 @@ description: SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 1%
+source-wordcount: '915'
+ht-degree: 2%
 
 ---
 
@@ -49,9 +49,9 @@ SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않
 
 SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에 따라 다릅니다.
 
-* **[범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)**&#x200B;는 SPA 편집기를 직접 대체하는 것이 가장 좋습니다.
+* **[범용 편집기](https://www.aem.live/docs/aem-authoring)**&#x200B;는 SPA 편집기를 직접 대체하는 데 가장 적합합니다.
    * 또한 범용 편집기는 시각적 편집기이며 SPA 편집기의 모든 Adobe 경험을 통합하여 분리된 구현을 위해 특별히 디자인되었습니다.
-   * 또한 범용 편집기는 AEM 6.5[&#128279;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)용으로 릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
+   * 또한 범용 편집기는 AEM 6.5[용으로 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
 * **[콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;는 양식 기반 편집기를 선호하는 사용자를 위한 대체 요소입니다.
    * 콘텐츠 조각 편집기는 콘텐츠가 페이지가 아닌 콘텐츠 조각으로 구조화될 때 가장 적합합니다.
 

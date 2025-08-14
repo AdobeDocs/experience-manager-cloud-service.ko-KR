@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager 사용자 인터페이스는 [작성 방법](/help/edge
 
 * [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Sidekick](/help/edge/docs/sidekick.md)을 사용한 [문서 기반 작성](/help/edge/docs/authoring.md)
+* [Sidekick](https://www.aem.live/docs/sidekick)을 사용한 [문서 기반 작성](https://www.aem.live/docs/aem-authoring)
 
 모든 브라우저는 기본 플러그인 및 추가 기능 세트에 대한 테스트를 완료했습니다.
 
@@ -64,4 +64,4 @@ Adobe Experience Manager 사용자 인터페이스는 [작성 방법](/help/edge
 
 AEM에서 렌더링한 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 블록, 디자인 및 구성 요소 출력의 구현에 따라 달라집니다. 따라서 궁극적으로 프로젝트를 구현하는 개발자가 사이트의 호환성을 제어하게 됩니다.
 
-AEM [프로젝트 상용구,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [핵심 구성 요소,](/help/implementing/developing/components/overview.md#aem-core-components) [WKND 샘플 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md)는 모든 최신 브라우저와 호환됩니다.
+AEM [프로젝트 상용구,](https://www.aem.live/developer/ue-tutorial#create-github-project) [핵심 구성 요소,](/help/implementing/developing/components/overview.md#aem-core-components) [WKND 샘플 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md)는 모든 최신 브라우저와 호환됩니다.

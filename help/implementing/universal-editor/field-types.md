@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 11%
 
 ---
@@ -166,7 +166,7 @@ AEM 태그 구성 요소 유형을 사용하면 구성 요소에 태그를 첨�
 
 >[!TIP]
 >
->스프레드시트를 사용하여 Edge Delivery Services 프로젝트의 분류 데이터를 관리하는 방법에 대한 자세한 내용은 [분류 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md) 문서를 참조하십시오.
+>스프레드시트를 사용하여 Edge Delivery Services 프로젝트의 분류 데이터를 관리하는 방법에 대한 자세한 내용은 [분류 데이터 관리](https://www.aem.live/docs/authoring-taxonomy) 문서를 참조하십시오.
 
 #### AEM 컨텐츠 {#aem-content}
 

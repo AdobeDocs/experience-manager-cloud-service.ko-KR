@@ -4,9 +4,9 @@ description: 콘텐츠 작성자의 요구 사항을 지원하기 위해 범용 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 
 >[!TIP]
 >
->예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
+>예를 통해 학습하려면 [AEM UI 확장성 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)를 참조하십시오. 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
 
 [AEM Sites에서 Extension Manager 사용](https://developer.adobe.com/uix/docs/extension-manager/)을 통해 인스턴스별로 확장을 활성화하거나 비활성화하고, 범용 편집기용 확장을 포함하여 Adobe의 자사 확장에 액세스할 수 있습니다.
 
@@ -59,6 +59,6 @@ Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 �
 
 UI 확장성 외에도 유니버설 편집기는 사용자 정의 비즈니스 요구 사항을 매끄럽게 통합할 수 있도록 다양한 유연한 확장 지점을 제공합니다.
 
-* **[블록](/help/edge/developer/block-collection.md)**: 간단한 JSON 형식에서 프로젝트는 콘텐츠를 만드는 데 사용할 수 있는 블록 및 UE 기능을 조정할 수 있습니다.
+* **[블록](https://www.aem.live/developer/block-collection)**: 간단한 JSON 형식에서 프로젝트는 콘텐츠 생성에 사용할 수 있는 블록 및 UE 기능을 조정할 수 있습니다.
 * **[사용자 지정 사용자 인터페이스](#extending-ui)**: 확장에서 사이드 패널 또는 모달 대화 상자에 필요한 UI를 표시할 수 있습니다.
 * **[이벤트](/help/implementing/universal-editor/events.md)**: 확장에서는 작성자의 작업 및 선택 사항에 대한 이벤트를 페이지에 수신하여 적절하게 응답합니다.

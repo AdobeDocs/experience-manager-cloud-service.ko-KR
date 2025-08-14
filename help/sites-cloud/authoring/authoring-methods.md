@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '570'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Edge Delivery 서비스를 사용하는 경우 콘텐츠를 [AEM **사이트** �
 
 문서 기반 작성을 통해 작성자는 이미 알고 있는 도구를 사용할 수 있으며, AEM Edge Delivery Services의 속도와 성능을 활용하여 콘텐츠를 게시할 수 있습니다. 문서 기반 작성에는 AEM 콘솔을 사용할 필요가 없습니다.
 
-문서 기반 작성에 대한 자세한 내용은 [콘텐츠 작성 및 게시](/help/edge/docs/authoring.md)를 참조하십시오.
+문서 기반 작성에 대한 자세한 내용은 [콘텐츠 작성 및 게시](https://www.aem.live/docs/aem-authoring)를 참조하십시오.
 
 ## AEM 콘텐츠 조각 편집기 {#cf-editor}
 

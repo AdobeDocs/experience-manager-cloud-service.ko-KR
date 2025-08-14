@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
-workflow-type: ht
-source-wordcount: '172'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -27,6 +27,6 @@ ht-degree: 100%
 | `cdn.prod.host` | `<Production Host>` | 프로덕션 사이트의 호스트 이름입니다. 예: `www.example.com` |
 | `cdn.prod.type` | 관리됨 |   |
 
-구성 시트가 변경되면 사용자는 [사이드 킥 도구](/help/edge/docs/sidekick.md)를 사용하여 변경 사항을 미리 보고 활성화한 다음 업데이트를 적용해야 합니다.
+구성 시트가 변경되면 사용자는 [사이드 킥 도구](https://www.aem.live/docs/sidekick)를 사용하여 변경 사항을 미리 보고 활성화한 다음 업데이트를 적용해야 합니다.
 
 [Cloud Manager에서의 Edge Delivery 할 일 목록 정보](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)도 참조하십시오.

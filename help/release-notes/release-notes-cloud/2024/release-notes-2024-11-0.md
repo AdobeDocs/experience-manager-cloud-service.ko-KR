@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.11.0 �
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 98%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 99%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
 2024년 11월 릴리스 개요 비디오를 통해 2024.11.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ ht-degree: 99%
 
 **[!DNL Edge Delivery Services]CSV 가져오기 도구를 통해 AEM 인스턴스로 게시**
 
-자주 사용하는 스프레드시트 도구에서 Edge Delivery 스프레드시트 데이터(예: 리디렉션)를 효율적으로 관리하고 새로운 CSV 가져오기 도구를 통해 AEM에 업로드합니다. [자세히 보기](/help/edge/wysiwyg-authoring/tabular-data.md#importing)
+자주 사용하는 스프레드시트 도구에서 Edge Delivery 스프레드시트 데이터(예: 리디렉션)를 효율적으로 관리하고 새로운 CSV 가져오기 도구를 통해 AEM에 업로드합니다. [자세히 보기](https://www.aem.live/docs/authoring-tabular-data)
 
 ### AEM Sites의 프리릴리스 기능
 
-[고유 ID 기반 참조를 참조하는 콘텐츠 조각](/help/headless/graphql-api/uuid-reference-upgrade.md)이 개선되었습니다. 자산이나 조각을 이동해도 유효하고 안정적인 링크를 보장하여 업데이트나 재게시가 필요하지 않습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다.
+[고유 ID 기반 참조와 함께 콘텐츠 조각을 참조](/help/headless/graphql-api/uuid-reference-upgrade.md)하여 에셋 또는 조각을 이동할 때에도 유효한 링크를 유지할 수 있으므로 업데이트나 다시 게시할 필요가 없습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 콘텐츠 조각에서 페이지를 참조하는 경우에는 이 기능을 사용하면 안 됩니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
@@ -190,24 +190,24 @@ intuitive and improving the mobile form-filling experience.
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)에서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
-[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
 ## 범용 편집기 {#universal-editor}
 
-[여기](/help/release-notes/universal-editor/current.md)서 범용 편집기의 전체 목록을 찾을 수 있습니다.
+[여기](/help/release-notes/universal-editor/current.md)에서 범용 편집기의 전체 목록을 찾을 수 있습니다.
 
 ## 변형 생성 {#generate-variations}
 
-[여기](/help/generative-ai/release-notes-generate-variations.md)서 변형 생성의 전체 목록을 찾을 수 있습니다.
+[여기](/help/generative-ai/release-notes-generate-variations.md)에서 변형 생성의 전체 목록을 찾을 수 있습니다.
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)서 확인할 수 있습니다.
+기타 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.

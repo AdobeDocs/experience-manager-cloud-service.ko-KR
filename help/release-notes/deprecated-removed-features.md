@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
-workflow-type: ht
-source-wordcount: '3193'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>와 함께 사용하는<br> AEM 콘텐츠 조각 게재 [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 없음 |
-| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/edge/wysiwyg-authoring/authoring.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
+| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](https://www.aem.live/docs/aem-authoring)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 이 기능은 곧 제거될 예정입니다. |
 | Sites | [Experience Cloud 설정 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 없음 |

@@ -4,10 +4,10 @@ description: 구성 요소 정의와 유니버설 편집기 간의 JSON 계약�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!TIP]
 >
->콘텐츠 모델링 프로세스에 대한 개요는 [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 문서를 참조하십시오.
+>콘텐츠 모델링 프로세스에 대한 개요는 [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](https://www.aem.live/developer/component-model-definitions) 문서를 참조하십시오.
 
 >[!TIP]
 >
->`component-definition.json` 파일을 처음부터 직접 만들 필요는 없습니다. [프로젝트를 부트스트랩](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)하는 데 사용하는 프로젝트 빌러플레이트에는 필요에 따라 조정할 수 있는 [정상적으로 작동하는 `component-definition.json` 파일](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)이 포함되어 있습니다.
+>`component-definition.json` 파일을 처음부터 직접 만들 필요는 없습니다. [프로젝트를 부트스트랩](https://www.aem.live/developer/ue-tutorial)하는 데 사용하는 프로젝트 빌러플레이트에는 필요에 따라 조정할 수 있는 [정상적으로 작동하는 `component-definition.json` 파일](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)이 포함되어 있습니다.
 
 ## 구성 요소 정의 예 {#example}
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 * `title`은(는) UI에 표시되는 구성 요소의 텍스트 설명을 정의합니다.
 * `id`은(는) 구성 요소를 고유하게 식별합니다.
-   * 같은 `id`의 [구성 요소 모델](/help/implementing/universal-editor/field-types.md#model-structure)은(는) 구성 요소의 필드를 정의합니다.
+   * 같은 [의 ](/help/implementing/universal-editor/field-types.md#model-structure)구성 요소 모델`id`은(는) 구성 요소의 필드를 정의합니다.
    * 이는 고유하므로 예를 들어 [필터 정의](/help/implementing/universal-editor/filtering.md)에서 컨테이너에 추가할 수 있는 구성 요소를 결정하는 데 사용할 수 있습니다.
 * `model`은(는) 구성 요소와 함께 사용되는 [모델](/help/implementing/universal-editor/field-types.md#model-structure)을(를) 정의합니다.
    * 따라서 모델은 구성 요소 정의에서 중앙에서 유지되므로 계측을 [지정할 필요가 없습니다.](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 이렇게 하면 컨테이너 간에 구성 요소를 이동할 수 있습니다.
+   * 이를 통해 구성 요소를 컨테이너 간에 자유롭게 이동할 수 있습니다.
 * `filter`은(는) 구성 요소와 함께 사용할 [filter](/help/implementing/universal-editor/filtering.md)을(를) 정의합니다.
 
 ## `plugins` {#plugins}
@@ -138,7 +138,7 @@ ht-degree: 1%
 <div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>
 ```
 
-이 경우 `data-aue-prop`이(가) 참조 필드를 가리키므로 `cf`을(를) 가정합니다. `data-aue-prop`이(가) 없으면 구성 요소가 참조 필드를 통해 연결되지 않으므로 유니버설 편집기는 `page`을(를) 가정합니다.
+이 경우 `cf`이(가) 참조 필드를 가리키므로 `data-aue-prop`을(를) 가정합니다. `data-aue-prop`이(가) 없으면 구성 요소가 참조 필드를 통해 연결되지 않으므로 유니버설 편집기는 `page`을(를) 가정합니다.
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container"></div>

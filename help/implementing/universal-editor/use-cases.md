@@ -4,9 +4,9 @@ description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 사용 사례인 경우 바로 다음 단계로, AEM의 범용 편집기를 시작하고 실행하는 방법에 대한 전체 개요는 다음 문서를 참조하십시오.
 
-1. [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEM에서 첫 번째 범용 편집기 프로젝트 시작
-1. [유니버설 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) - 유니버설 편집기에서 콘텐츠를 편집할 수 있도록 블록을 계측하는 방법에 대해 알아봅니다.
-1. [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) - 유니버설 편집기에서 사용할 콘텐츠를 효과적으로 모델링하기 위해 블록을 구성하는 방법에 대한 자세한 내용을 알아봅니다.
+1. [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](https://www.aem.live/developer/ue-tutorial) - AEM에서 첫 번째 범용 편집기 프로젝트 시작
+1. [유니버설 편집기에서 사용하기 위해 계측된 블록 만들기](https://www.aem.live/developer/universal-editor-blocks) - 유니버설 편집기에서 콘텐츠를 편집할 수 있도록 블록을 계측하는 방법에 대해 알아봅니다.
+1. [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](https://www.aem.live/developer/component-model-definitions) - 유니버설 편집기에서 사용할 콘텐츠를 효과적으로 모델링하기 위해 블록을 구성하는 방법에 대한 자세한 내용을 알아봅니다.
 
 이러한 문서를 읽고 나면 이 페이지로 돌아가서 Headless 작성 사용 사례와 범용 편집기가 일반적으로 작동하는 방법에 대해 알아볼 수 있습니다.
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 유니버설 편집기는 다음과 같은 방식으로 작동합니다.
 
 1. 개발자는 범용 편집기를 사용하도록 앱 또는 페이지를 계측합니다. 이 계기는 편집기에 편집 가능한 콘텐츠 및 이를 유지하는 방법을 알려 줍니다.
-   * [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 설명서를 따르는 경우 페이지가 자동으로 계측됩니다.
+   * [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](https://www.aem.live/developer/ue-tutorial) 설명서를 따르는 경우 페이지가 자동으로 계측됩니다.
    * Headless 작성의 경우 앱을 쉽게 계측할 수 있습니다.
 1. 콘텐츠 작성자는 범용 편집기를 로드하고, 이 편집용 페이지를 로드합니다. 계측된 콘텐츠이므로 편집할 수 있는 콘텐츠와 표시 및 지속되는 방법에 대해 알 수 있습니다.
 1. 콘텐츠 작성자는 직관적인 WYSIWYG 인터페이스에서 페이지 콘텐츠를 편집하고 바로 편집합니다.

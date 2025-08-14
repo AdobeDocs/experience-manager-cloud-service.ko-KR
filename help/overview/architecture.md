@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '2712'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '2711'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 아키텍처 소개"
 >abstract="이 탭에서는 AEM as a Cloud Service의 새 아키텍처를 확인하고 변경 내용을 알아볼 수 있습니다. AEM에서 다양한 수의 이미지를 가진 동적 아키텍처를 구축했으므로 클라우드 아키텍처를 이해하는 시간을 가져 보십시오."
->additional-url="https://video.tv.adobe.com/v/346184?captions=kor" text="아키텍처 개요"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="아키텍처 개요"
 
 Adobe Experience Manager(AEM) as a Cloud Service는 영향력이 큰 경험을 만들고 관리할 수 있는 구성 가능한 서비스 세트를 제공합니다.
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service에 사용할 수 있는 [환경](/help/implementing/cloud
 
 * 스테이징 환경:
 
-   * 스테이징 환경은 일반적으로 1:1 관계에서 프로덕션 환경에 연결됩니다.
+   * 스테이지 환경은 일반적으로 1:1 관계에서 프로덕션 환경에 연결됩니다.
    * 스테이징 환경은 주로 애플리케이션 변경 사항이 프로덕션 환경에 푸시되기 전에 자동화된 테스트용으로 설계됩니다.
       * 이는 유지 관리 업데이트의 일부로 Adobe에서 시작하거나 코드 배포에 의해 시작되는 변경 사항과는 별개입니다.
       * 코드 배포의 경우 수동 테스트를 수행할 수도 있습니다.
@@ -238,5 +238,5 @@ AEM as a Cloud Service를 위한 최신 아키텍처에서는 이전 세대(AEM 
    * [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [AEM as a Cloud Service 개요 - Edge Delivery Services 포함](/help/edge/overview.md)
-   * [Edge Delivery Services 사용](/help/edge/using.md)
-   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ko)
+   * [Edge Delivery Services 사용](/help/edge/overview.md)
+   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
