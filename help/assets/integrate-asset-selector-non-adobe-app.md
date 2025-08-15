@@ -3,7 +3,7 @@ title: Adobe 이외의 애플리케이션 또는 타사 애플리케이션과 �
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 9%
@@ -25,7 +25,7 @@ Asset Selector를 사용하면 Adobe이 아닌 다양한 애플리케이션이�
 * imsOrg
 * apikey
 
-자산 선택기는 Identity Management 이외의 응용 프로그램과 통합할 때 `imsScope` 또는 `imsClientID`과(와) 같은 IMS(Adobe System) 속성을 사용하여 [!DNL Experience Manager Assets] 리포지토리에 대한 인증을 지원합니다.
+자산 선택기는 Identity Management 이외의 응용 프로그램과 통합할 때 [!DNL Experience Manager Assets] 또는 `imsScope`과(와) 같은 IMS(Adobe System) 속성을 사용하여 `imsClientID` 리포지토리에 대한 인증을 지원합니다.
 
 ## Adobe이 아닌 애플리케이션에 대한 자산 선택기 구성 {#configure-non-adobe-app}
 
@@ -46,17 +46,17 @@ Admin Console을 통해 지원 티켓을 기록하는 단계:
 
 자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증에 이 예제 `index.html` 파일을 사용하십시오.
 
-예제 `index.html` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `Script` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
+예제 `Script` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `index.html` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
 
 이 예제의 *줄 14*&#x200B;부터 *줄 38*&#x200B;까지는 `imsClientId`, `imsScope`, `redirectURL`과(와) 같은 IMS 흐름 속성을 설명합니다. 함수에는 `imsClientId` 및 `imsScope` 속성 중 하나 이상을 정의해야 합니다. `redirectURL`에 대한 값을 정의하지 않으면 클라이언트 ID에 대해 등록된 리디렉션 URL이 사용됩니다.
 
-생성된 `imsToken`이(가) 없으므로 예제 `index.html` 파일의 40행~50행에 표시된 대로 `registerAssetsSelectorsAuthService` 및 `renderAssetSelectorWithAuthFlow` 함수를 사용합니다. `renderAssetSelectorWithAuthFlow` 앞에 `registerAssetsSelectorsAuthService` 함수를 사용하여 자산 선택기에 `imsToken`을(를) 등록하십시오. [!DNL Adobe]에서는 구성 요소를 인스턴스화할 때 `registerAssetsSelectorsAuthService`을(를) 호출하는 것이 좋습니다.
+생성된 `imsToken`이(가) 없으므로 예제 `registerAssetsSelectorsAuthService` 파일의 40행~50행에 표시된 대로 `renderAssetSelectorWithAuthFlow` 및 `index.html` 함수를 사용합니다. `registerAssetsSelectorsAuthService` 앞에 `renderAssetSelectorWithAuthFlow` 함수를 사용하여 자산 선택기에 `imsToken`을(를) 등록하십시오. [!DNL Adobe]에서는 구성 요소를 인스턴스화할 때 `registerAssetsSelectorsAuthService`을(를) 호출하는 것이 좋습니다.
 
-예제 `index.html` 파일의 *행 54*&#x200B;부터 *행 60*&#x200B;까지 표시된 대로 `const props` 섹션에서 인증 및 기타 Assets as a Cloud Service 액세스 관련 속성을 정의합니다.
+예제 `const props` 파일의 *행 54*&#x200B;부터 *행 60*&#x200B;까지 표시된 대로 `index.html` 섹션에서 인증 및 기타 Assets as a Cloud Service 액세스 관련 속성을 정의합니다.
 
-*줄 65*&#x200B;에 언급된 `PureJSSelectors` 전역 변수는 웹 브라우저에서 자산 선택기를 렌더링하는 데 사용됩니다.
+`PureJSSelectors`줄 65 *에 언급된* 전역 변수는 웹 브라우저에서 자산 선택기를 렌더링하는 데 사용됩니다.
 
-*줄 74*&#x200B;부터 *줄 81*&#x200B;까지 언급된 대로 자산 선택기가 `<div>` 컨테이너 요소에 렌더링됩니다. 이 예제에서는 대화 상자를 사용하여 에셋 선택기를 표시합니다.
+`<div>`줄 74 *부터*&#x200B;줄 81 *까지 언급된 대로 자산 선택기가* 컨테이너 요소에 렌더링됩니다. 이 예제에서는 대화 상자를 사용하여 에셋 선택기를 표시합니다.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -102,6 +102,7 @@ Admin Console을 통해 지원 티켓을 기록하는 단계:
         
 
         //function that will render the asset selector
+        function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -113,7 +114,7 @@ Admin Console을 통해 지원 티켓을 기록하는 단계:
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
