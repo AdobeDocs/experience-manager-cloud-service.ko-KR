@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ## 1 - Adobe Admin Console에서 새 제품 프로필 만들기{#create-profile}
 
-1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
+1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
 
 1. 새 제품 프로필을 만들 때 AI Assistant에 대해 다음과 같이 제안된 값을 사용할 수 있습니다.
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 제품 프로필에 사용자 지정 권한을 할당하는 프로세스는 표준 Adobe Cloud Manager 사용자 지정 권한 워크플로우를 따릅니다.
 
-참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Admin Console에서 새로 만든 제품 프로필의 이름(`AEM AI Assistant`)을 클릭합니다
 
