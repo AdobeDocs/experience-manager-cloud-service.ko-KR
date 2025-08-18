@@ -4,10 +4,10 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
-ht-degree: 92%
+source-wordcount: '5984'
+ht-degree: 91%
 
 ---
 
@@ -109,7 +109,7 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 * **[항목 목록](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [캐시할 수 있는 지속 쿼리](/help/headless/graphql-api/persisted-queries.md)로 변환하는 기능을 제공합니다.
+AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 캐시할 수 있는 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)(으)로 변환하는 기능을 제공합니다.
 
 ### GraphQL 쿼리 모범 사례(Dispatcher 및 CDN) {#graphql-query-best-practices}
 
@@ -169,7 +169,7 @@ GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. �
 
 ## 스키마 생성 {#schema-generation}
 
-GraphQL은 강력한 포맷의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
+GraphQL은 강력한 형식의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
 
 GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 가져와야 합니다.
 
@@ -375,7 +375,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 >[!NOTE]
 >
 >**일반 메타데이터와 배열 메타데이터의 차이점**
->&#x200B;>`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
+>>`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
 >
 >따라서 예를 들어 `stringMetadata` 필드를 호출하면 저장소에 `String`으로 저장된 모든 메타데이터의 배열을 수신하고 `stringArrayMetadata`를 호출하면 저장소에 `String[]`으로 저장된 모든 메타데이터의 배열을 수신하게 됩니다.
 
@@ -1171,7 +1171,7 @@ query allTeams {
 
   >[!NOTE]
   >
-  >그런 다음 [자산 배달 API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)를 기반으로 클라이언트측에서 전체 URL을 구성해야 합니다.
+  >그런 다음 [자산 배달 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)를 기반으로 클라이언트측에서 전체 URL을 구성해야 합니다.
 
 * 원격 저장소에서 *승인됨* 자산만 참조할 수 있습니다.
 * 참조되는 에셋이 원격 저장소에서 제거되면 콘텐츠 조각 에셋 참조가 손상됩니다.

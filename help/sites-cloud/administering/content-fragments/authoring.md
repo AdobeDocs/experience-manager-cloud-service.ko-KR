@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 70%
@@ -35,7 +35,7 @@ ht-degree: 70%
 
 >[!WARNING]
 >
->이 섹션에 설명된 편집기는 [통합 셸](/help/overview/aem-cloud-service-on-unified-shell.md)에서 *전용*&#x200B;이므로 로컬 인스턴스가 아닌 *온라인* Adobe Experience Manager(AEM) as a Cloud Service에서 사용할 수 있습니다.
+>이 섹션에 설명된 편집기는 *통합 셸*&#x200B;에서 [전용](/help/overview/aem-cloud-service-on-unified-shell.md)이므로 로컬 인스턴스가 아닌 *온라인* Adobe Experience Manager(AEM) as a Cloud Service에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 편집기 {#content-fragment-editor}
 
@@ -179,7 +179,6 @@ ht-degree: 70%
     >[!NOTE]
     >
     >**Main**.
-
 을(를) 삭제할 수 없습니다.
 1. 변형을 선택합니다.
 
@@ -268,7 +267,7 @@ ht-degree: 70%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
@@ -355,9 +354,9 @@ ht-degree: 70%
 
 * 관리 API 또는 게재 API를 통해 노출되는 자산 메타데이터가 없습니다. 에셋 메타데이터 API를 사용하여 에셋 메타데이터 세부 사항을 검색해야 합니다.
 
-   * 개별 자산 메타데이터: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * 개별 자산 메타데이터: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * search API를 사용하여 대량 메타데이터 정보 가져오기(실험적 기능): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * search API를 사용하여 대량 메타데이터 정보 가져오기(실험적 기능): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
