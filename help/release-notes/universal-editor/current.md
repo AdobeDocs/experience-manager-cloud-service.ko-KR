@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 
 # 범용 편집기 2025.07.31 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 7월 31일 릴리스 정보입니다.
+다음은 범용 편집기 2025년 7월 31일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,15 +22,15 @@ ht-degree: 56%
 
 ## 새로운 기능 {#what-is-new}
 
-* [인증 헤더 도구 모음 옵션](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)은(는) [릴리스 2025.07.09에 도입된 기능 전환 뒤에 남아 있습니다.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * 그러나 이제 기본적으로 활성화되어 있습니다.
-* [RTE 얼리 어답터용 새로운 기능](#new-rte)
+* [인증 헤더 도구 모음 옵션](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)은 [릴리스 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md)에서 소개된 기능 토글 뒤에 남아 있습니다.
+   * 하지만 이제는 기본적으로 활성화되어 있습니다.
+* [RTE 얼리 어답터](#new-rte)의 새로운 기능
    * 다크 모드 지원이 추가되었습니다.
    * 텍스트 정렬 지원이 추가되었습니다.
-      * 기본적으로 비활성화되며 Headless 프로젝트에만 사용할 수 있음
+      * 기본적으로 비활성화되어 있으며 headless 프로젝트에만 사용 가능합니다.
    * 들여쓰기 지원이 추가되었습니다.
-      * 기본적으로 비활성화되며 Headless 프로젝트에만 사용할 수 있음
-   * 이제 Shift+Enter에 줄바꿈(`<br>`)이 삽입됩니다.
+      * 기본적으로 비활성화되어 있으며 headless 프로젝트에만 사용 가능합니다.
+   * Breaks(`<br>`)는 이제 Shift+Enter로 삽입됩니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -49,12 +49,12 @@ ht-degree: 56%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 얼리어답터 RTE에 대한 수정 사항
-   * 목록 내에 있을 때 Enter 키를 누르면 새 목록 항목(`<li>`)이 만들어집니다.
-* 원격 DAM을 사용할 때 비디오가 올바르게 업데이트됩니다.
+* 얼리 어답터 RTE에 대한 수정 사항
+   * 이제 Enter 키를 누르면 목록 내`<li>`에 새 목록 항목이 생성됩니다.
+* 이제 원격 DAM을 사용할 때 비디오가 제대로 업데이트됩니다.
 * 6.5 LTS에 대한 서비스 지원이 추가되었습니다.
 
 ## 사용 중단 {#deprecations}
 
-* `text-input` 및 `text-area` 구성 요소는 [릴리스 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)에서 공식적으로 사용되지 않습니다.
+* `text-input`및 `text-area`구성 요소는 [릴리스 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md)와 함께 공식적으로 더 이상 사용되지 않습니다.
    * `model-definition.json`에서 텍스트 구성 요소를 사용하여 속성 패널에 대한 텍스트 입력을 만드십시오.
