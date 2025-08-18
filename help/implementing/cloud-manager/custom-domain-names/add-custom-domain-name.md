@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -95,7 +95,7 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 >Adobe 관리 CDN의 경우 DV(도메인 유효성 검사) 인증서를 사용할 때는 ACME 유효성 검사가 있는 사이트만 허용됩니다.
 
 
-### DNS 구성{#config-dns}
+## DNS 구성{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ DNS 레코드를 구성하기 전에 *다음 요구 사항을 충족해야 합�
 * 조직의 도메인에 대한 DNS 레코드를 편집하거나, 편집할 수 있는 적절한 담당자에게 문의할 수 있습니다.
 * [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서에 설명된 대로 구성된 사용자 정의 도메인 이름을 이미 확인했습니다.
 
-#### CNAME 레코드 {#adobe-managed-cert-cname-record}
+### CNAME 레코드 {#adobe-managed-cert-cname-record}
 
 정식 이름 또는 CNAME 레코드는 별칭 이름을 실제 또는 정식 도메인 이름에 매핑하는 DNS 레코드 유형입니다. CNAME 레코드는 일반적으로 `www.example.com`과 같은 하위 도메인을 해당 하위 도메인의 콘텐츠를 호스팅하는 도메인에 매핑하는 데 사용됩니다.
 
@@ -117,7 +117,7 @@ DNS 서비스 공급자에 로그인하고 다음 표와 같이 사용자 지정
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX 레코드 {#adobe-managed-cert-apex-record}
+### APEX 레코드 {#adobe-managed-cert-apex-record}
 
 Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않는 사용자 정의 도메인입니다. DNS 공급자를 통해 Apex 도메인이 `A`, `ALIAS` 또는 `ANAME` 레코드로 구성되어 있습니다. Apex 도메인은 특정 IP 주소를 가리켜야 합니다.
 
