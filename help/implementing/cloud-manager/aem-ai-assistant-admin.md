@@ -1,24 +1,32 @@
 ---
-title: Adobe Experience Manager에서 AI Assistant 구성
+title: AEM에서 AI Assistant 구성
 description: Adobe Experience Manager의 Admin Console을 사용하여 AI Assistant를 설정하고 구성하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: true
+index: false
 hidefromtoc: true
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
-source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
+source-git-commit: 7779f24244cce198e1c6a9b243a616c96f05ac8d
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 3%
+source-wordcount: '1099'
+ht-degree: 2%
 
 ---
 
-# Adobe Experience Manager에서 AI Assistant 구성 {#aem-ai-asst-admin-setup}
+# AEM에서 AI Assistant 구성 {#aem-ai-asst-admin-setup}
 
-조직의 사용자가 AEM(Adobe Experience Manager) AI Assistant의 기능을 사용하려면 관리자가 액세스, 권한 및 설정을 구성해야 합니다.
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
-AEM AI Assistant의 구성 프로세스는 다음 단계로 구성됩니다.
+AEM(Adobe Experience Manager)에서 AI Assistant를 사용하려면 조직이 Admin Console 수준에서 옵트인해야 합니다. 제품 관리자는 사용자 그룹을 생성(또는 선택)하고 새로운 &quot;AI Assistant&quot; 권한을 부여합니다. 해당 그룹에 추가된 모든 사용자는 AEM에서 즉시 AI Assistant를 사용할 수 있습니다. 회사 전체의 가용성이 목표라면, 관리자는 모든 사용자를 해당 그룹에 할당하기만 하면 됩니다.
+
+직원의 관점에서 프로세스는 간단합니다. 조직의 Adobe Experience Manager에 대한 제품 관리자를 식별하고 AI 지원 사용자 그룹에 추가하도록 요청합니다. 해당 그룹에 나타나면 다음에 로그인할 때 Assistant 아이콘이 자동으로 표시됩니다.
+
+관리자는 일반적인 Cloud Manager 거버넌스를 염두에 두어야 합니다. Admin Console에서 제품 관리자 권한을 보유하여 프로필을 만들거나 사용자 그룹을 관리하거나 권한을 편집합니다. 사용자가 도우미의 기본 제공 **지원 티켓 만들기** 기능도 필요한 경우 동일한 개인 또는 그룹에 표준 **지원 관리자** 역할(표준 Admin Console 역할)을 추가하십시오.
+
+AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성됩니다.
 
 1. [Adobe Admin Console에서 새 제품 프로필을 만듭니다](#create-profile).
 1. [AI Assistant 제품 지식 사용 권한](#enable-permission).
@@ -43,15 +51,15 @@ AEM AI Assistant의 구성 프로세스는 다음 단계로 구성됩니다.
 
 ## 1 - Adobe Admin Console에서 새 제품 프로필 만들기{#create-profile}
 
-1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
+1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
 
 1. 새 제품 프로필을 만들 때 AI Assistant에 대해 다음과 같이 제안된 값을 사용할 수 있습니다.
 
    | 텍스트 필드 | 제안 값 |
    | --- | --- |
-   | 제품 프로필 이름 | `AEM AI Assistant`(또는 선호하는 설명 이름) |
+   | 제품 프로필 이름 | `AI Assistant in AEM`(또는 선호하는 설명 이름) |
    | 표시 이름(선택 사항) | `AI Assistant` |
-   | 설명(선택 사항) | `Product profile for managing AEM AI Assistant access` |
+   | 설명(선택 사항) | `Product profile for managing AI Assistant in AEM access` |
    | 알림 | 조직의 기본 설정을 기반으로 구성 |
 
 
@@ -59,9 +67,9 @@ AEM AI Assistant의 구성 프로세스는 다음 단계로 구성됩니다.
 
 제품 프로필에 사용자 지정 권한을 할당하는 프로세스는 표준 Adobe Cloud Manager 사용자 지정 권한 워크플로우를 따릅니다.
 
-참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
-1. Admin Console에서 새로 만든 제품 프로필의 이름(`AEM AI Assistant`)을 클릭합니다
+1. Admin Console에서 새로 만든 제품 프로필의 이름(`AI Assistant in AEM`)을 클릭합니다
 
    ![스크린샷](/help/implementing/cloud-manager/assets/ai-assistant-console.png)
 
@@ -102,8 +110,8 @@ AEM AI Assistant의 구성 프로세스는 다음 단계로 구성됩니다.
 
    | 옵션 | 제안 값 |
    | --- | --- |
-   | 사용자 그룹 이름 | `AEM AI Assistant`(또는 기본 설정 이름) |
-   | 설명(선택 사항) | `User group for managing AEM AI Assistant access` |
+   | 사용자 그룹 이름 | `AI Assistant in AEM`(또는 기본 설정 이름) |
+   | 설명(선택 사항) | `User group for managing AI Assistant in AEM access` |
 
    ![새 사용자 그룹 페이지 만들기](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
@@ -125,18 +133,18 @@ AEM AI Assistant의 구성 프로세스는 다음 단계로 구성됩니다.
 
 1. **사용자 그룹** 페이지의 **그룹 이름** 테이블에서 새로 만든 사용자 그룹 이름이나 기존 사용자 그룹 이름을 클릭합니다.
 
-   ![테이블에 AEM AI Assistant 사용자 그룹 이름을 표시하는 사용자 그룹 페이지](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+   ![테이블의 AEM 사용자 그룹 이름에 AI 도우미를 표시하는 사용자 그룹 페이지](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
-1. **AEM AI Assistant**&#x200B;의 **사용자 그룹** 페이지에서 **사용자** 탭을 클릭한 다음 **사용자 추가**&#x200B;를 클릭합니다.
+1. AEM의 **AI Assistant**&#x200B;에 대한 **사용자 그룹** 페이지에서 **사용자** 탭을 클릭한 다음 **사용자 추가**&#x200B;를 클릭합니다.
 
-   ![AEM AI Assistant 사용자 그룹 페이지에 [사용자] 탭과 [사용자 추가] 단추가 표시됩니다](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+   ![AEM 사용자 그룹 페이지의 AI 도우미에 사용자 탭과 사용자 추가 단추가 표시됩니다](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. **`Add users to this user group`** 페이지에서 AEM AI Assistant에 액세스해야 하는 사용자를 검색하고 선택합니다.
+1. **`Add users to this user group`** 페이지에서 AEM의 AI Assistant에 액세스해야 하는 사용자를 검색하고 선택합니다.
 
    ![이 사용자 그룹 페이지에 사용자 추가](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. 페이지의 오른쪽 아래 모서리에서 **저장**&#x200B;을 클릭합니다.
-1. 이제 사용자 그룹에 제품 프로필을 #assign-product-profile.
+1. 이제 [사용자 그룹에 제품 프로필을 할당](#assign-product-profile)합니다.
 
 >[!TAB 일괄 사용자 추가]
 
@@ -144,7 +152,7 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 
 1. 사용자 정보가 포함된 CSV 파일을 준비합니다.
 1. 대량 추가를 효율적으로 수행하려면 **`Add users by CSV`** 옵션을 사용하십시오.
-1. 이제 사용자 그룹에 제품 프로필을 #assign-product-profile.
+1. 이제 [사용자 그룹에 제품 프로필을 할당](#assign-product-profile)합니다.
 
 >[!ENDTABS]
 
@@ -155,10 +163,10 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 
 참조 문서: [Enterprise 사용자의 제품 프로필 관리](https://helpx.adobe.com/kr/enterprise/using/manage-product-profiles.html)
 
-1. [4 - 사용자 그룹에 사용자 추가](#add-users)에서 AEM AI Assistant 사용자 그룹에 있는 동안 **할당된 제품 프로필** 탭을 클릭하십시오.
+1. [4 - 사용자 그룹에 사용자 추가](#add-users)에서 AEM 사용자 그룹의 AI 도우미에 있는 동안 **할당된 제품 프로필** 탭을 클릭하십시오.
 1. **프로필 할당**&#x200B;을 클릭합니다.
 
-   ![할당된 제품 프로필 탭이 선택된 AEM AI Assistant 사용자 그룹 페이지](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+   ![할당된 제품 프로필 탭이 선택된 AEM 사용자 그룹 페이지의 AI 도우미](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
 
 1. **제품 및 프로필 할당** 페이지의 **제품 프로필 선택** 대화 상자에서 **AI Assistant** 제품 프로필을 검색하여 선택하십시오.
 
@@ -167,7 +175,7 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 1. 대화 상자의 오른쪽 아래 모서리에서 **적용**&#x200B;을 클릭합니다.
 1. **제품 및 프로필 할당** 페이지의 오른쪽 아래 모서리에서 **저장**&#x200B;을 클릭합니다.
 
-   ![표시된 AI Assistant 제품 프로필이 AEM AI Assistant 사용자 그룹에 할당되었습니다](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+   ![표시된 AI Assistant 제품 프로필이 AEM 사용자 그룹의 AI Assistant에 할당되었습니다](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## 구성 확인
@@ -187,7 +195,8 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 
 ## 추가 참조
 
-* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/overview)
+* [AEM의 AI 지원](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager 사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)
 
 
