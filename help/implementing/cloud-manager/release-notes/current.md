@@ -43,7 +43,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
 * **새로운 Forms Add‑on에 대한 자동 프로비저닝**
 
-  사이트 전용 고객은 마케팅 양식을 구축하기 위해 가볍고 저비용 방법이 필요한 경우가 많습니다. 새로운 AEM Forms Sites 추가 기능은 Sites 프로그램에 제한된 Forms 기능을 추가하여 이러한 요구를 충족합니다. 또한 이를 통해 AEM Forms의 전체 제품에 대한 명확한 업그레이드 경로가 생성됩니다. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  사이트 전용 고객은 마케팅 양식을 빌드하기 위해 가볍고 저비용 방법이 필요한 경우가 많습니다. 새로운 AEM Forms Sites 추가 기능은 Sites 프로그램에 제한된 Forms 기능을 추가하여 이러한 요구를 충족합니다. 또한 이를 통해 AEM Forms의 전체 제품에 대한 명확한 업그레이드 경로가 생성됩니다. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   추가 기능:
    * 사이트 프로그램에 연결되어 함께 배포됩니다. 별도의 양식 프로그램이나 권한이 필요하지 않습니다.
@@ -58,7 +58,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
      자세한 내용은 [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)를 참조하십시오.
 
-## 베타 프로그램 {#private-beta-program}
+## Beta 프로그램 {#private-beta-program}
 
 Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
@@ -68,13 +68,13 @@ Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로�
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
@@ -156,7 +156,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
   ![Edge 게재 및 게시 게재의 새로운 게재 유형이 표시되는 필터 패널](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
