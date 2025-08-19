@@ -37,7 +37,7 @@ CIF 추가 기능은 Sling 기능 아카이브로 제공됩니다. 소프트웨�
 >[!TIP]
 >
 >**AEM as a Cloud Service을 처음 사용하십니까?**
->>[AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 자세한 안내서를 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>[AEM as a Cloud Service SDK을 사용하여 로컬 개발 환경을 설정하는 방법에 대한 자세한 안내서를 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### 필수 소프트웨어 {#required-software}
 
