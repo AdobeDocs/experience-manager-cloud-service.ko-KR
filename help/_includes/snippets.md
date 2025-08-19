@@ -220,7 +220,7 @@ ht-degree: 98%
 
 **지원 티켓을 기록하려면 다음 작업을 수행하십시오.**
 
-1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/ko?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
