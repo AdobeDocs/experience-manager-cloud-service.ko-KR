@@ -258,5 +258,5 @@ CIF URL 공급자의 일부 기능은 `url_key` 범주 또는 `url_path` 범주�
 ## 추가 리소스 {#additional}
 
 * [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM 리소스 매핑](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM 리소스 매핑](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
