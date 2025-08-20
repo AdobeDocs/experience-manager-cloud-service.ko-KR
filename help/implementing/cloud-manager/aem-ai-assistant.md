@@ -8,7 +8,7 @@ badge: label="Beta" type="Positive"
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 86281f539656ccdcb267a2de3aa0d40c0c8e637d
+source-git-commit: 99f4e5731d5631981986a783534c820ad8f7088a
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM에 직접 임베드되며 AEM Experience Hub, Cloud Manager 및 Author UI에
 
 다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEM에서 AI Assistant에 액세스하는 방법{#get-access}
 
@@ -121,7 +121,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -217,3 +217,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 * **"Configure this form to submit data to the Customer Relationship Management system"**
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
+-->
