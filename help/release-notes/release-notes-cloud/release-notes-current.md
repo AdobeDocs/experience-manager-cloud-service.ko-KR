@@ -134,7 +134,7 @@ Content Hub에는 이제 필터 내에 **모두 표시** 옵션이 포함되어 
 
 * **제한된 파일 형식에 대한 향상된 오류 처리**
 
-  [제한된 파일 형식에 대한 오류 처리](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)이(가) 지원되며 지원되지 않는 파일 업로드를 차단합니다. 사용자가 지원되지 않는 형식으로 형식을 변경하여 파일을 제출하려고 하면 제출 중에 오류가 발생합니다.
+  [제한된 파일 형식에 대한 오류 처리](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)이(가) 지원되며 지원되지 않는 파일 업로드를 차단합니다. 사용자가 지원되지 않는 형식으로 형식을 변경하여 파일을 제출하려고 하면 제출 중에 오류가 발생합니다.
 
 
 <!--
