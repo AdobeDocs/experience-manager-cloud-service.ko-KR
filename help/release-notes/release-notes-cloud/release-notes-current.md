@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 99%
+source-wordcount: '2350'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -105,32 +105,44 @@ Content Hub에는 이제 필터 내에 **모두 표시** 옵션이 포함되어 
 
 ### AEM Forms의 새로운 기능 {#forms-new-features}
 
-**적응형 양식 및 양식 조각을 위한 범용 편집기**
+* **적응형 양식 및 양식 조각을 위한 범용 편집기**
 
-[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 이제 적응형 양식과 재사용 가능한 양식 조각을 모두 생성할 수 있도록 지원합니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
+  [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 이제 적응형 양식과 재사용 가능한 양식 조각을 모두 생성할 수 있도록 지원합니다. 작성자는 간소화된 WYSIWYG 작성 환경에서 시각적으로 양식을 작성하고, 제출 작업을 구성하고, reCAPTCHA 유효성 검사를 추가할 수 있습니다. 이 기능을 사용하면 양식 생성 속도가 빨라지고, 일관성이 향상되고, 스팸 및 자동화된 남용에 대한 보호 기능이 향상됩니다.
 
-![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![범용 편집기](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Edge Delivery Services 양식 제출 Services 양식**
+* **Edge Delivery Services 양식 제출 Services 양식**
 
-[양식 제출 서비스](/help/forms/forms-submission-service.md)를 참조하십시오. Google Sheets, Microsoft OneDrive, SharePoint와 같은 인기 있는 스프레드시트 플랫폼에 Adaptive Form 제출물의 데이터를 원활하게 직접 저장할 수 있습니다. 이 통합을 통해 선택한 스프레드시트에 양식 데이터를 직접 제출할 수 있어 데이터 관리가 간소화되고, 수동 데이터 전송이 없어지며 오류가 줄어듭니다.
+  [Forms 제출 서비스](/help/forms/forms-submission-service.md)를 사용하면 적응형 양식 제출의 데이터를 Google Sheets, Microsoft OneDrive 또는 SharePoint과 같이 인기 있는 스프레드시트 플랫폼에 바로 저장할 수 있습니다. 이 통합은 양식 데이터를 선택한 스프레드시트로 직접 제출할 수 있게 함으로써 데이터 관리를 간소화하므로 수동 데이터 전송을 방지하고 오류를 줄일 수 있습니다.주요 이점은 다음과 같습니다.
 
-주요 이점은 다음과 같습니다.
+   * **직접 통합:** 지정된 스프레드시트에 데이터를 직접 제출하도록 양식을 구성합니다.
+   * **사용자 정의 데이터 매핑:** 양식 필드를 해당 스프레드시트 열에 매핑하여 구성된 저장 공간을 확보합니다.
+   * **Access 제어:** 기존 스프레드시트 권한을 활용하여 제출된 데이터에 누가 액세스하거나 수정할 수 있는지 관리합니다.
 
-* **직접 통합:** 지정된 스프레드시트에 데이터를 직접 제출하도록 양식을 구성합니다.
-* **사용자 정의 데이터 매핑:** 양식 필드를 해당 스프레드시트 열에 매핑하여 구성된 저장 공간을 확보합니다.
-* **Access 제어:** 기존 스프레드시트 권한을 활용하여 제출된 데이터에 누가 액세스하거나 수정할 수 있는지 관리합니다.
+* **Adaptive Forms에서 AFP 렌디션 생성 및 동기화**
 
-**Adaptive Forms에서 AFP 렌디션 생성 및 동기화**
+  [AFP 출력 동기화 API](/help/forms/document-generation-afp-api.md)를 사용하면 관리자와 사용자가 적응형 양식에서 AFP(Advanced Function Presentation) 출력을 생성하고 외부 시스템이나 저장 위치와 동기화할 수 있습니다. AFP는 인쇄에 최적화된 고성능 문서 형식으로, 대규모 기업 환경에서 자주 사용됩니다.
 
-[AFP 출력 동기화 API](/help/forms/document-generation-afp-api.md)를 사용하면 관리자와 사용자가 적응형 양식에서 AFP(Advanced Function Presentation) 출력을 생성하고 외부 시스템이나 저장 위치와 동기화할 수 있습니다. AFP는 인쇄에 최적화된 고성능 문서 형식으로, 대규모 기업 환경에서 자주 사용됩니다.
+* **적응형 양식 조각에 대한 자동 매핑 지원**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  적응형 Forms은 이제 [적응형 양식 조각의 자동 매핑](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)을 지원합니다. 이 개선 사항을 통해 스키마 객체가 정의된 조각 구조와 일치하면 일치하는 조각이 자동으로 삽입됩니다. 양식 생성을 단순화하고, 조각을 재사용할 수 있도록 개선하며, 데이터가 통합된 양식 전반에 걸쳐 일관성을 보장합니다.
+
+* 기록 문서의 **사용자 정의 양식 제목**
+
+  작성자는 이제 사용자 정의 양식 제목을 편집하여 기록 문서에서 [사용자 정의 양식 제목](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)을 정의할 수 있습니다. 사용자 지정 제목은 PDF 헤더, PDF의 문서 속성에 표시되며, PDF을 열 때 초기 보기 제목으로 표시되어 명확한 식별과 일관된 브랜딩을 보장합니다.
+
+* **제한된 파일 형식에 대한 향상된 오류 처리**
+
+  [제한된 파일 형식에 대한 오류 처리](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)이(가) 지원되며 지원되지 않는 파일 업로드를 차단합니다. 사용자가 지원되지 않는 형식으로 형식을 변경하여 파일을 제출하려고 하면 제출 중에 오류가 발생합니다.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ Content Hub에는 이제 필터 내에 **모두 표시** 옵션이 포함되어 
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다.
-
-이들 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
