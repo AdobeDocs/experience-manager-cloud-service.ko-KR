@@ -4,10 +4,10 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -74,7 +74,7 @@ Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다�
    | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨) |
    | 설명(선택 사항) | 저장소에 대한 자세한 설명. |
 
-1. **저장**&#x200B;을 선택합니다.
+1. **저장**을 선택합니다.
 이제 [개인 저장소의 소유권을 확인](#validate-ownership)할 수 있습니다.
 
 >[!TIP]
@@ -162,3 +162,4 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 * [아티팩트 재사용 기능](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
 * Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
 Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.
+* GitHub 조직에 IP 제한이 있는 경우 지원 사례를 만들어 허용할 IP 주소 목록을 받습니다.
