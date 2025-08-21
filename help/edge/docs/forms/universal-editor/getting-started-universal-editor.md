@@ -186,7 +186,7 @@ AEM Code Sync는 AEM 저작 환경과 GitHub 저장소 간에 콘텐츠 변경 �
 
     >[!NOTE]
     >
->빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
+    >빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
 
 +++
 
