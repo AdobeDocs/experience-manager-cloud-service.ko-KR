@@ -113,7 +113,7 @@ Forms 제출 서비스를 설정하기 전에 다음을 확인하십시오.
 
 >[!TIP]
 >
->Edge Delivery Services을 처음 사용하십니까?**&#x200B;** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
+>Edge Delivery Services을 처음 사용하십니까?**&#x200B;** 프로젝트 기반을 설정하려면 [시작 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)&#x200B;(으)로 시작하십시오.
 
 ## 구성 메서드
 
@@ -133,7 +133,7 @@ Forms 제출 서비스는 두 가지 구성 접근 방식을 제공합니다. �
 
 두 방법 중 하나를 구성하기 전에 AEM 프로젝트 기반이 준비되었는지 확인하십시오.
 
-1. 최신 적응형 Forms 블록(**시작 자습서**)을 사용하여 [AEM 프로젝트 만들기 또는 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
+1. 최신 적응형 Forms 블록(**시작 자습서**)을 사용하여 [AEM 프로젝트 만들기 또는 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
 
 2. **프로젝트 루트에서`fstab.yaml`** 업데이트:
 
@@ -166,7 +166,7 @@ Google Sheets 또는 Microsoft Excel을 사용하여 양식 구조를 만듭니�
 1. **스프레드시트 플랫폼을 엽니다**(Google Sheets 또는 Microsoft Excel)
 2. 양식 프로젝트용 **새 스프레드시트 만들기**
 3. **시트 이름 지정**(`helix-default` 또는 `shared-aem`이어야 함)
-4. **양식 만들기 가이드**&#x200B;를 사용하여 [양식 구조를 정의](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **양식 만들기 가이드**&#x200B;를 사용하여 [양식 구조를 정의](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![양식 정의](/help/forms/assets/form-submission-definition.png)
 *예: 필드 유형, 레이블 및 유효성 검사 규칙을 사용한 양식 정의*
@@ -568,7 +568,7 @@ Solutions:
 
 - **조기 액세스 문제:** 전자 메일 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API 설명서:** [개발자 참조](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **커뮤니티 지원:** [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/)
+- **커뮤니티 지원:** [Adobe Experience League 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)
 
 +++
 
@@ -579,7 +579,7 @@ Forms 제출 서비스를 구성했으므로 이제 다음 관련 항목을 살�
 
 +++ Forms 기능 향상
 
-- **[고급 Forms 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - 유효성 검사, 조건부 논리 및 사용자 지정 스타일 추가
+- **[고급 Forms 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - 유효성 검사, 조건부 논리 및 사용자 지정 스타일 추가
 - **[양식 구성 요소 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - 사용 가능한 양식 필드 형식 살펴보기
 
 +++
