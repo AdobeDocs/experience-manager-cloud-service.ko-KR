@@ -1,101 +1,72 @@
 ---
-title: AEM Forms AI 어시스턴트 - 프롬프트 라이브러리
+title: Forms Experience Builder - 프롬프트 라이브러리
 description: Forms 관리 UI, 적응형 양식 편집기 및 범용 편집기에서 AI 어시스턴트를 활용하여 양식을 작성하기 위한 검증된 프롬프트 패턴과 예제 모음입니다.
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
-workflow-type: ht
-source-wordcount: '1613'
-ht-degree: 100%
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1338'
+ht-degree: 28%
 
 ---
 
-# AEM Forms AI 어시스턴트 - 프롬프트 라이브러리
 
-일반적인 양식 작성 시나리오에 대한 재사용 가능한 프롬프트 패턴과 예제 모음입니다. 이들 모음을 특정 요구 사항에 맞게 조정할 수 있는 템플릿이라고 생각하십시오. 각 섹션에서는 특정 사용 사례를 다루고, 사용 시기에 대한 지침과 검증된 예제를 제공합니다.
+# Forms Experience Builder - 프롬프트 라이브러리
+
+Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴 및 예제의 컬렉션입니다. 이 간소화된 라이브러리는 LLM 기반 스마트 필드 및 브랜드 일관성에 대한 향상된 지원을 통해 처음부터 제작 및 가져오기 및 변환이라는 두 가지 핵심 제작 방법에 중점을 둡니다.
 
 >[!NOTE]
 >
-> AEM Forms용 AI 어시스턴트는 얼리 어답터 프로그램에서 사용할 수 있습니다. 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com로 이메일을 보내시기 바랍니다.
+> Forms Experience Builder는 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 `aem-forms-ea@adobe.com`(으)로 전자 메일을 보내십시오.
 
 >[!IMPORTANT]
 >
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 AEM Forms용 AI 어시스턴트가 계속 발전함에 따라 프롬프트, 예제 및 모범 사례가 변경될 수 있습니다.
+> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. Forms Experience Builder가 얼리어답터 프로그램 동안 계속 발전함에 따라 프롬프트, 예 및 우수 사례가 변경될 수 있습니다.
 
-## 최적의 결과를 위한 모범 사례
+## 이 프롬프트 라이브러리 사용
 
-AI 어시스턴트를 최대한 활용하려면 다음 팁을 염두에 두시기 바랍니다.
+이 라이브러리는 일반적인 양식 작성 시나리오에 재사용 가능한 프롬프트 패턴을 제공합니다. 포괄적인 모범 사례는 [Forms Experience Builder 시작 안내서](forms-ai-assistant-getting-started.md#best-practices)를 참조하십시오.
 
-### 간단하게 시작하고 점진적으로 확장하기
+### 이 라이브러리에 대한 빠른 팁
 
-처음에는 너무 복잡한 여러 단계로 구성된 요청보다는 작고 구체적인 명령(예: ““이름”에 대한 텍스트 입력 추가”)부터 시작하십시오. 이러한 접근 방식은 정확성을 높이는 데 도움이 되며, 예상대로 작동하지 않을 경우 문제를 쉽게 해결할 수 있게 해 줍니다.
+- **예제로 시작** - 제공된 프롬프트를 템플릿으로 사용하고 필요에 맞게 조정하십시오.
+- **두 가지 만들기 방법** - 처음부터 만들기 또는 가져오기 및 변환 접근 방식을 선택합니다.
+- **고유해야 함** - 일반 예제에 사용자 고유의 세부 정보 추가
+- **철저하게 테스트** - 항상 특정 환경에서 결과를 확인합니다.
 
-**간단한 시작 예제:**
+### 브랜드 템플릿 및 스타일
+
+**일관된 양식 생성을 위해 브랜드 자산을 미리 준비합니다.**
+
+- **브랜드 템플릿** - 조직의 색상, 글꼴 및 레이아웃 패턴을 사용하여 표준화된 양식 템플릿을 만듭니다.
+- **스타일 지침** - 일관된 필드 스타일, 단추 디자인 및 간격 표준을 정의합니다.
+- **구성 요소 라이브러리** - 브랜드 ID와 일치하는 재사용 가능한 양식 구성 요소 빌드
+- **시각적 Assets** - 양식 통합을 위해 로고, 아이콘 및 배경 요소 준비
+
+**브랜드 템플릿 프롬프트 예:**
 
 ```
-Add a text input field for "First Name" with placeholder "Enter your first name"
+Create a brand template for financial services forms with:
+- Corporate blue (#003366) and silver (#C0C0C0) color scheme
+- Open Sans font family for all text
+- 16px minimum font size for accessibility
+- Consistent 24px spacing between sections
+- Corporate logo in header with proper sizing
+- Professional button styling with hover effects
 ```
 
-**점진적 확장 예제:**
+>[!NOTE]
+>
+>**사용자 지정 구성 요소**: 사용자 지정 브랜드 요소를 구현하기 전에 조직별 구성 요소 사용 및 Forms Experience Builder와의 호환성에 대해 개발 팀에 문의하십시오.
 
-```
-Make @firstName mandatory and add validation message "First name is mandatory"
-```
+>[!NOTE]
+>
+> 간소화된 Forms Experience Builder 기능을 반영하도록 이 프롬프트 라이브러리가 업데이트되었습니다. 예제에 표시된 일부 고급 통합 및 테스트 기능은 추가 구성이 필요할 수 있습니다.
 
-### AEM Forms 용어 사용
-
-어시스턴트가 더 잘 이해할 수 있도록 “패널”, “텍스트 입력 필드”, “체크박스 그룹”, “제출 액션”, “규칙” 등의 용어를 사용하십시오. 이렇게 하면 AI가 AEM Forms 컨텍스트 내에서 요청을 올바르게 해석할 수 있습니다.
-
-**선호하는 용어:**
-
-- “텍스트 상자” 대신 “텍스트 입력 필드”
-- “체크박스” 대신 “체크박스 그룹”
-- “선택 목록” 대신 “드롭다운”
-- “섹션” 또는 “컨테이너” 대신 “패널”
-- “양식 제출” 대신 “제출 액션”
-- “논리” 또는 “조건” 대신 “규칙”
-
-### 참조 필드를 명확하게
-
-기존 필드를 구성할 때 @fieldName 표기법을 사용하십시오(예: “@firstName을 필수로 지정”). 이렇게 하면 AI가 특히 여러 필드가 포함된 복잡한 양식에서 사용자가 언급하는 필드가 정확히 무엇인지 식별하는 데 도움이 됩니다.
-
-**예제:**
-
-- `Make @email mandatory with real-time validation`
-- `Show @spouseInfo panel when @maritalStatus equals "Married"`
-- `Set @country default value to "United States"`
-
-### 정기적인 계획 검토
-
-“적용”을 클릭하기 전에, 범용 편집기에서 어시스턴트가 제안한 변경 사항에 대한 계획을 항상 주의 깊게 검토하십시오. AI는 수행할 계획을 보여 주며, 그 내용이 기대한 바와 일치하는지 잠시 확인해 보시기 바랍니다.
-
-### 수동으로 유효성 검사
-
-어시스턴트가 변경 사항을 적용한 후에는 항상 양식을 미리 보고 테스트하여 예상대로 동작하고 표시되는지 확인하십시오. AI는 강력한 도구이지만 품질을 보장하려면 최종 확인이 중요합니다.
-
-**유효성 검사 체크리스트:**
-
-- 미리보기 모드에서 양식 기능 테스트
-- 조건 논리가 올바르게 작동하는지 확인
-- 모바일 반응성 확인
-- 양식 제출 테스트
-- 접근성 기능 유효성 검사
-
-### 반복 및 개선
-
-첫 번째 프롬프트에서 원하는 결과가 나오지 않으면 요청을 변경하거나 더 작은 단계로 나누어 보십시오. AI는 맥락을 통해 학습하므로, 보다 구체적인 세부 정보를 제공하면 결과가 향상되는 경우가 많습니다.
-
-**반복 예제:**
-
-1. 첫 번째 시도: “양식을 모바일 친화적으로 만들기”
-2. 개선된 프롬프트: “768px 미만의 모바일 화면에 맞춰 단일 열 레이아웃과 보다 큰 터치 타깃을 사용하여 양식 레이아웃 최적화”
-
-### 피드백 제공
-
-기본 제공되는 피드백 메커니즘을 사용하여 어시스턴트가 학습하고 개선할 수 있도록 도와주십시오. 여러분의 피드백은 AI를 모두에게 더 나은 도구로 만드는 데 기여합니다.
 
 
 ## 점진적 개발 예제
@@ -142,205 +113,307 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 Create a user registration form with personal information panel
 ```
 
-**2단계 - 핵심 필드 추가:**
+**2단계 - 필수 필드 추가:**
 
 ```
-Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
+Add fields for @firstName, @lastName, @email, @phoneNumber with appropriate validation
 ```
 
-**3단계 - 유효성 검사 추가:**
+**3단계 - 비즈니스 논리 추가:**
 
 ```
-Make @firstName, @lastName, and @email mandatory with real-time validation
+Create a rule: if @age is under 18, show parent/guardian information section
 ```
 
-**4단계 - 계정 정보 추가:**
+**4단계 - 기본 설정으로 개선:**
 
 ```
-Create a new panel "Account Information" with @username and @password fields
+Add a preferences panel with @newsletterSubscription, @marketingConsent, @termsAccepted
 ```
 
-**5단계 - 보안 향상:**
+**5단계 - 파일 업로드 추가:**
 
 ```
-Add password confirmation field @confirmPassword with validation to match @password
+Include a file upload field for @profilePicture with size limit of 5MB
 ```
 
-**6단계 - 환경 설정 추가:**
+## 양식 생성 및 관리
+
+**사용 시기:** 새 양식을 만들거나 기존 양식을 수정해야 하는 경우.
+
+**사용 방법:** 두 가지 방법 중 하나를 선택하십시오. 처음부터 만들기 또는 가져오기 및 변환([시작 안내서](forms-ai-assistant-getting-started.md#two-ways-to-create-forms) 참조).
+
+**예제 프롬프트 - 간단한 양식 만들기:**
 
 ```
-Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
+Create a customer feedback form with:
+- Product rating (1-5 stars)
+- Comment field for detailed feedback
+- Customer email (optional)
+- Submit to email notification
 ```
 
-이러한 점진적인 접근 방식은 다음과 같은 데 도움이 됩니다.
-
-- 문제가 악화되기 전에 조기에 발견할 수 있습니다.
-- 각 기능을 철저히 테스트할 수 있습니다.
-- 사용자 피드백을 바탕으로 조정할 수 있습니다.
-- 개발 프로세스를 보다 효과적으로 제어할 수 있습니다.
-
-## 새로운 양식 시작
-
-**사용 시기:** 모든 양식 프로젝트를 시작하는 경우. 이 프롬프트는 AI가 사용자의 요구 사항을 이해하고 기반 구조를 구축하는 데 도움이 됩니다.
-
-**사용 방법:** 기본 구조와 핵심 요구 사항부터 시작합니다. 양식 유형, 타깃 대상자 및 주 목적을 지정합니다. 이후의 프롬프트에 복잡성을 추가합니다.
-
-**프롬프트 예제 - 간단하게 시작하기:**
+**예제 프롬프트 - 복잡한 양식 만들기:**
 
 ```
-Create a **customer onboarding form** for new bank account applications with:
+Create a comprehensive employee onboarding form with:
 
-**Purpose:** Collect personal information for account setup
-**Target Users:** New customers applying for checking/savings accounts
-**Basic Structure:** Single panel with essential fields
-**Core Fields:** Name, email, phone, account type selection
+**Personal Information Section:**
+- Full name (first, middle, last)
+- Date of birth with age validation
+- Contact information (email, phone, address)
+- Emergency contact details
 
-Start with a simple layout that we can enhance step by step.
+**Employment Details:**
+- Position and department selection
+- Start date with business day validation
+- Salary information with confidentiality notice
+- Reporting structure
+
+**Document Upload:**
+- Resume/CV upload (PDF, DOC, DOCX)
+- ID verification documents
+- Tax forms and banking information
+- Signed employment agreement
+
+**Preferences:**
+- Benefits selection with cost calculator
+- Work schedule preferences
+- Training requirements
+- Equipment needs
+
+**Validation Rules:**
+- Email format validation
+- Phone number format validation
+- Age must be 18 or older
+- All required documents must be uploaded
+- Terms and conditions must be accepted
+
+**Submit Actions:**
+- Send confirmation email to new employee
+- Notify HR department
+- Create employee record in HR system
+- Schedule orientation meeting
 ```
 
-**점진적 확장 예제:**
+**양식 관리 프롬프트:**
 
 ```
-Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
-```
-
-```
-Add employment information panel with @employer, @jobTitle, and @annualIncome fields
-```
-
-```
-Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
-```
-
-**대체 간단한 시작 프롬프트:**
-
-```
-Create a basic **event registration form** with name, email, and event selection fields
-```
-
-```
-Build a simple **contact form** with name, email, and message fields
-```
-
-```
-Design a basic **feedback survey** with rating scale and comments field
-```
-
-## 양식 구조 및 레이아웃
-
-**사용 시기:** 복잡한 양식을 구성하거나 더 나은 레이아웃 디자인을 통해 사용자 경험을 개선해야 하는 경우.
-
-**사용 방법:** 사용자 여정과 정보의 논리적인 그룹화에 집중합니다. 레이아웃 환경 설정과 탐색 패턴을 지정합니다.
-
-**예제 프롬프트 - 다단계 양식 구조:**
-
-```
-Convert this single-page form into a **3-step wizard** with:
-
-**Step 1: Personal Information**
-- Name, email, phone, address fields
-- Progress indicator showing "Step 1 of 3"
-- "Next" button (validate mandatory fields before proceeding)
-
-**Step 2: Preferences & Requirements** 
-- Service selection (checkbox group)
-- Budget range (dropdown)
-- Timeline preferences (radio group)
-- Special requirements (text input field)
-
-**Step 3: Review & Submit**
-- Summary of all entered information
-- Edit links to go back to specific steps
-- Terms and conditions checkbox
-- Submit button with confirmation
-
-Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
-```
-
-**레이아웃 최적화 프롬프트:**
-
-```
-Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
+Import this PDF application form and convert it to an adaptive form with enhanced validation
 ```
 
 ```
-Convert this long form into an **accordion layout** where users can expand/collapse sections.
+Update the existing contact form to include social media handles and preferred contact method
 ```
 
 ```
-Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
+Reorganize the registration form into a 3-step wizard: personal info, preferences, confirmation
 ```
 
-## 필드 관리 및 유효성 검사
+## 필드 관리 및 구성
 
-**사용 시기:** 특정 유효성 검사 규칙 및 비헤이비어가 필요한 양식 필드를 추가, 수정 또는 향상해야 하는 경우.
+**사용할 시점:** 양식 필드를 추가, 수정 또는 구성해야 하는 경우.
 
-**사용 방법:** 필드 유형, 유효성 검사 요구 사항 및 사용자 경험 기대 사항을 구체적으로 명시합니다. @fieldName 구문을 사용하여 기존 필드를 참조합니다.
+**사용 방법:** 필드 형식, 유효성 검사 규칙 및 사용자 경험 요구 사항에 대해 구체적으로 지정합니다.
 
-**예제 프롬프트 - 필드 향상:**
-
-```
-Enhance the form fields with these specific requirements:
-
-**Email Field (@email):**
-- Make mandatory with real-time validation
-- Show green checkmark when valid format entered
-- Display helpful error message: "Please enter a valid email address"
-- Add placeholder: "your.email@company.com"
-
-**Phone Number (@phone):**
-- Type: tel for mobile optimization
-- Make mandatory for business customers, optional for personal
-- Add placeholder: "Enter your phone number"
-
-**Date of Birth (@dateOfBirth):**
-- Type: date with date picker
-- Validate age is 18+ for account opening
-- Show error if under 18: "Must be 18 or older to open account"
-
-**File Upload (@documents):**
-- Accept: .pdf,.doc,.docx
-- Multiple: true for multiple document upload
-- Show upload progress and file names after upload
-```
-
-**필드 관련 프롬프트:**
+**예제 프롬프트 - 기본 필드 추가:**
 
 ```
-Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
+Add a text input field for "Company Name" with placeholder "Enter your company name"
+```
+
+**예제 프롬프트 - 고급 필드 구성:**
+
+```
+Add a comprehensive address section with:
+
+**Street Address:**
+- Address line 1 (required, max 100 characters)
+- Address line 2 (optional, max 100 characters)
+- City (required, dropdown with common cities)
+- State/Province (required, dropdown)
+- Postal code (required, format validation)
+- Country (required, default to "United States")
+
+**Validation Rules:**
+- Postal code must match state selection
+- Address line 1 cannot be empty
+- City must be a valid city for selected state
+
+**User Experience:**
+- Auto-complete for address fields
+- Clear labels and help text
+- Mobile-friendly input fields
+- Accessibility compliance
+```
+
+**필드 구성 프롬프트:**
+
+```
+Make @email field required with real-time validation and custom error message
 ```
 
 ```
-Create a **dropdown field** for country selection with all countries listed. Set default value based on user's location if available.
+Add a dropdown for @country with options for USA, Canada, UK, Germany, France, and "Other"
 ```
 
 ```
-Build a **repeatable panel** for work experience where users can add/remove multiple jobs. Each entry needs: company, title, start date, end date, description.
+Configure @phoneNumber field with format (XXX) XXX-XXXX and validation
 ```
 
-## 조건부 논리 및 규칙
+```
+Add a file upload field for @resume with PDF and DOC restrictions, max 5MB
+```
 
-**사용 시기:** 사용자 입력 또는 비즈니스 규칙에 따라 동적인 양식 비헤이비어가 필요한 경우.
+## LLM 향상 스마트 필드
 
-**사용 방법:** 조건과 그에 따른 작업을 명확하게 정의합니다. 특정 필드 참조와 논리 연산자를 사용합니다.
+**사용 시기:** AI의 기술 자료를 활용하는 미리 채워진 옵션이 있는 필드가 필요한 경우.
 
-**예제 프롬프트 - 복잡한 조건부 논리:**
+**사용 방법:** 포괄적인 데이터 집합이 필요한 요청 필드 - AI는 기본 제공 지식을 사용하여 옵션을 자동으로 채울 수 있습니다.
+
+### 지리적 및 위치 필드
+
+**공항 및 교통 수단:**
 
 ```
-Implement these conditional rules for the application form:
+Add a dropdown for departure airports with all major international airports
+Add arrival airport field with IATA codes and full names
+Create a field for nearest airport to user location
+Add a selection of train stations for European cities
+```
 
-**Business vs Personal Account Logic:**
-- If @accountType equals "Business", show:
-  - Business name field (mandatory)
-  - Tax ID field (mandatory)
-  - Business address section
-  - Number of employees dropdown
-- If @accountType equals "Personal", hide all business fields
+**관리 영역:**
 
-**Income-Based Requirements:**
-- If @annualIncome is less than 25000:
-  - Show additional verification section
-  - Make co-signer information mandatory
+```
+Add a complete list of US states with abbreviations
+Create a country dropdown with ISO codes and full names
+Add a field for major world cities with time zones
+Include a dropdown of Canadian provinces and territories
+Add a field for UK counties and postal areas
+```
+
+### 비즈니스 및 업계 데이터
+
+**회사 분류:**
+
+```
+Add a field for industry classification with NAICS codes
+Create a dropdown of business entity types (LLC, Corporation, Partnership, etc.)
+Add a field for company size categories (startup, SME, enterprise)
+Include department selection for large organizations
+Add a field for professional service types
+```
+
+**전문 분류:**
+
+```
+Add a field for job titles with common industry roles
+Create a dropdown of professional certifications by field
+Include education levels with degree types
+Add a field for years of experience ranges
+Create a selection for programming languages and frameworks
+```
+
+### 표준 및 규정
+
+**재무 및 법적 정보:**
+
+```
+Add a field for currency codes with symbols and exchange rates
+Create a dropdown of tax ID types by country
+Include a field for legal document types
+Add payment method options with security features
+Create a selection for banking institutions by country
+```
+
+**기술 표준:**
+
+```
+Add a dropdown of file format types with extensions
+Include network protocol options
+Add a field for database types and versions
+Create a selection for API authentication methods
+```
+
+### 의료 및 의료
+
+**의료 분류:**
+
+```
+Add a field for medical specialties
+Create a dropdown of common medications with generic names
+Include a field for insurance provider types
+Add a selection for medical emergency contact relationships
+Create a field for dietary restrictions and allergies
+```
+
+### 시간 및 일정 인텔리전스
+
+**날짜 및 시간 필드:**
+
+```
+Add a field for business hours with time zone handling
+Create a dropdown of public holidays by country
+Include seasonal options with date ranges
+Add a field for conference room booking with availability
+Create a selection for recurring meeting patterns
+```
+
+### 제품 및 서비스 범주
+
+**전자 상거래 분류:**
+
+```
+Add a field for product categories with subcategories
+Create a dropdown of shipping methods with delivery estimates
+Include a field for return policy options
+Add a selection for customer priority levels
+Create a field for subscription billing cycles
+```
+
+**스마트 필드 프롬프트 예:**
+
+```
+"Add a departure airport field with all major airports worldwide including IATA codes and city names"
+```
+
+```
+"Create a comprehensive industry field using standard NAICS classification with technology subcategories"
+```
+
+```
+"Include a professional certification dropdown that adapts based on the selected job field"
+```
+
+```
+"Add an international phone number field that formats based on the selected country"
+```
+
+```
+"Create a university selection field with major institutions organized by country and ranking"
+```
+
+## 규칙 생성 및 비즈니스 논리
+
+**사용할 시기:** 조건부 논리, 유효성 검사 규칙 또는 비즈니스 프로세스를 구현해야 하는 경우.
+
+**사용 방법:** 조건 및 작업을 지정하여 비즈니스 논리를 명확하게 설명하십시오.
+
+**예제 프롬프트 - 단순 조건부 논리:**
+
+```
+Create a rule that shows @spouseInformation panel only when @maritalStatus equals "Married"
+```
+
+**예제 프롬프트 - 복잡한 비즈니스 규칙:**
+
+```
+Implement comprehensive loan application validation:
+
+**Income Validation:**
+- If @annualIncome is less than 30000:
+  - Show warning message: "Income may be insufficient for requested loan amount"
+  - Require additional income documentation
   - Display message: "Additional documentation may be required"
 - If @annualIncome is greater than 100000:
   - Show premium services options
@@ -359,15 +432,15 @@ Implement these conditional rules for the application form:
 **규칙 관련 프롬프트:**
 
 ```
-Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
+Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership"
 ```
 
 ```
-Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups.
+Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups
 ```
 
 ```
-Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override.
+Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override
 ```
 
 ## 데이터 통합 및 제출
@@ -398,7 +471,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**예제 프롬프트 - 고급 다중 채널 제출:**
+**예제 프롬프트 - 표준 다중 채널 제출:**
 
 ```
 Configure form submission with multiple data destinations:
@@ -430,22 +503,22 @@ Configure form submission with multiple data destinations:
 **통합 관련 프롬프트:**
 
 ```
-Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
+Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New"
 ```
 
 ```
-Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification.
+Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification
 ```
 
 ```
-Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
+Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents
 ```
 
-## 디자인 가져오기 및 변환
+## 기존 Forms 가져오기 및 변환
 
-**사용 시기:** 기존 양식 디자인(PDF, Figma, 이미지)을 기능적인 AEM 양식으로 변환해야 하는 경우.
+**사용 시기:** 기존 양식, 문서 또는 디자인을 최신 AEM 양식으로 변형할 경우.
 
-**사용 방법:** 소스 디자인에 대한 명확한 맥락을 제공하고 필요한 수정이나 개선 사항을 명시합니다.
+**사용 방법:** 소스 파일을 업로드하고 전환 요구 사항을 설명합니다([가져오기 안내서](forms-ai-assistant-getting-started.md#2-import-and-convert) 참조).
 
 **예제 프롬프트 - PDF 양식 변환:**
 
@@ -476,21 +549,21 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 - Ensure consistent spacing and alignment
 - Add subtle animations for better user experience
 
-Preserve all original field labels and help text, but improve the user experience with modern form interactions.
+Preserve all original field labels and help text, but improve the user experience with modern form interactions
 ```
 
 **디자인 가져오기 프롬프트:**
 
 ```
-Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
+Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
 ```
 
 ```
-Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields.
+Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
 ```
 
 ```
-Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
+Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
 ```
 
 ## 모바일 최적화 및 반응성
@@ -542,313 +615,360 @@ Optimize this form for **mobile-first responsive design**:
 - Horizontal form sections for related fields
 - Sidebar navigation for long forms
 - Hover states and advanced interactions
-
-**Touch Optimization:**
-- Larger checkbox and radio button targets
-- Swipe gestures for multi-step navigation
-- Pull-to-refresh for saved drafts
-- Touch-friendly date/time pickers
-
-**Performance:**
-- Lazy load non-critical form sections
-- Optimize images and icons for mobile
-- Minimize JavaScript for faster loading
-- Progressive enhancement approach
 ```
 
-**모바일 전용 간단한 프롬프트:**
+**모바일 전용 프롬프트:**
 
 ```
-Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
+Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
 ```
 
 ```
-Add touch-friendly controls to @surveyForm for tablet users
+Optimize form for **tablet users** with appropriate field sizes and navigation patterns
 ```
 
 ```
-Enable offline functionality for @applicationForm with local data saving
+Add **swipe gestures** for multi-step form navigation on mobile devices
 ```
 
 ## 접근성 및 규정 준수
 
-**사용 시기:** 양식이 접근성 표준(WCAG 2.1 AA) 또는 규정 준수 요구 사항을 충족해야 하는 경우.
+**사용 시기:** 양식이 WCAG(액세스 가능성 표준) 또는 준수 요구 사항을 충족해야 하는 시기.
 
-**사용 방법:** 충족해야 하는 접근성 요구 사항과 준수 표준을 지정합니다.
+**사용 방법:** 필요한 준수 수준과 필요한 특정 접근성 기능을 지정합니다.
 
-**예제 프롬프트 - 접근성 구현:**
+**예제 프롬프트 - 기본 접근성:**
 
 ```
-Make this form **WCAG 2.1 AA compliant** with these accessibility features:
+Make @contactForm accessible with:
 
-**Keyboard Navigation:**
-- Logical tab order through all form elements
-- Skip links to main content and form sections
-- Keyboard shortcuts for common actions
-- Focus indicators clearly visible on all interactive elements
-
-**Screen Reader Support:**
+**Basic Accessibility:**
 - Proper ARIA labels for all form fields
-- Descriptive error messages announced to screen readers
-- Form section headings with proper hierarchy (h1, h2, h3)
-- Progress announcements for multi-step forms
-
-**Visual Accessibility:**
-- Color contrast ratio minimum 4.5:1 for text
-- Don't rely solely on color to convey information
-- Text size minimum 16px for body text
-- Scalable up to 200% without horizontal scrolling
-
-**Motor Accessibility:**
-- Large click targets (minimum 44x44px)
-- Generous spacing between interactive elements
-- No time limits or provide extension options
-- Alternative input methods support
-
-**Cognitive Accessibility:**
-- Clear, simple language in all instructions
-- Consistent navigation and layout patterns
-- Error prevention and clear error recovery
-- Help text and examples for complex fields
-
-**Testing Requirements:**
-- Test with screen readers (NVDA, JAWS, VoiceOver)
-- Verify keyboard-only navigation
-- Check color contrast with automated tools
-- Validate HTML for semantic correctness
+- Keyboard navigation support
+- High contrast color scheme
+- Screen reader compatibility
+- Focus indicators for all interactive elements
 ```
 
-**규정 준수 관련 프롬프트:**
+**예제 프롬프트 - 고급 액세스 가능성:**
 
 ```
-Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
+Implement comprehensive accessibility for @applicationForm:
+
+**WCAG 2.1 AA Compliance:**
+- Semantic HTML structure with proper headings
+- ARIA landmarks and roles for navigation
+- Color contrast ratio of at least 4.5:1
+- Keyboard-only navigation support
+- Screen reader announcements for dynamic content
+
+**Form-Specific Accessibility:**
+- Error messages announced to screen readers
+- Field validation with clear error descriptions
+- Progress indicators for multi-step forms
+- Skip navigation links for keyboard users
+- Alternative text for all images and icons
+
+**User Experience:**
+- Clear focus indicators on all interactive elements
+- Logical tab order through form fields
+- Descriptive link text and button labels
+- Help text available for complex fields
+- Timeout warnings for session expiration
+```
+
+**접근성별 프롬프트:**
+
+```
+Add **screen reader support** to this form with proper ARIA labels and announcements
 ```
 
 ```
-Make this **financial form PCI DSS compliant** with secure payment field handling and data protection measures.
+Implement **keyboard navigation** for all form interactions and navigation elements
 ```
 
 ```
-Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
+Ensure **color contrast** meets WCAG AA standards for all text and interactive elements
+```
+
+## 성능 최적화
+
+**사용할 시기:** 양식을 빠르게 로드하고 다양한 조건에서 잘 수행해야 하는 경우.
+
+**사용 방법:** 성능 요구 사항과 최적화 전략을 지정합니다.
+
+**예제 프롬프트 - 기본 성능:**
+
+```
+Optimize @contactForm for performance:
+
+**Loading Optimization:**
+- Lazy load non-critical form sections
+- Minimize initial bundle size
+- Optimize images and assets
+- Enable caching for static resources
+```
+
+**예제 프롬프트 - 고급 성능:**
+
+```
+Implement comprehensive performance optimization for @applicationForm:
+
+**Loading Performance:**
+- Progressive loading of form sections
+- Optimize images with WebP format
+- Minimize JavaScript bundle size
+- Enable gzip compression for all assets
+
+**Runtime Performance:**
+- Debounce validation calls to reduce API requests
+- Optimize conditional logic execution
+- Cache frequently used data
+- Implement virtual scrolling for long lists
+
+**User Experience:**
+- Show loading indicators for async operations
+- Provide offline capability for form data
+- Auto-save form progress every 30 seconds
+- Optimize form submission with retry logic
+
+**Monitoring:**
+- Track form load times and user interactions
+- Monitor validation performance
+- Measure submission success rates
+- Alert on performance degradation
+```
+
+**성능별 프롬프트:**
+
+```
+Optimize form **loading speed** by implementing progressive loading and asset optimization
+```
+
+```
+Add **auto-save functionality** to prevent data loss during form completion
+```
+
+```
+Implement **offline support** so users can complete forms without internet connection
 ```
 
 ## 테스트 및 품질 보증
 
-**사용 시기:** 양식 기능, 사용자 경험 및 기술 성능을 검증해야 하는 경우.
+**사용할 시기:** 양식에서 안정성 및 사용자 만족도를 보장하기 위해 포괄적인 테스트가 필요한 경우.
 
-**사용 방법:** 검증해야 하는 테스트 시나리오, 예외 사례 및 품질 기준을 지정합니다.
+**사용 방법:** 테스트 시나리오, 유효성 검사 요구 사항 및 품질 지표를 지정합니다.
 
-**예제 프롬프트 - 포괄적인 양식 테스트:**
+**예제 프롬프트 - 기본 테스트:**
 
 ```
-Create a **comprehensive testing plan** for this application form:
+Add comprehensive testing for @contactForm:
 
 **Functional Testing:**
-- Test all field validations with valid and invalid data
-- Verify conditional logic shows/hides fields correctly
-- Test file upload with various file types and sizes
-- Validate calculation fields update correctly
-- Test form submission with complete and incomplete data
+- Test all form field validations
+- Verify submit functionality works correctly
+- Test error handling and user feedback
+- Validate conditional logic and rules
+```
+
+**예제 프롬프트 - 고급 테스트:**
+
+```
+Implement comprehensive testing strategy for @applicationForm:
+
+**Functional Testing:**
+- Unit tests for all validation rules
+- Integration tests for submit actions
+- End-to-end testing for complete user flows
+- Cross-browser compatibility testing
 
 **User Experience Testing:**
-- Test form completion time (target: under 10 minutes)
-- Verify error messages are helpful and actionable
-- Test progress saving and restoration
-- Validate mobile touch interactions
-- Check form accessibility with assistive technologies
+- Usability testing with target user groups
+- Accessibility testing with screen readers
+- Mobile device testing on various screen sizes
+- Performance testing under load conditions
 
-**Edge Case Testing:**
-- Test with extremely long text inputs
-- Verify behavior with special characters and emojis
-- Test with slow internet connections
-- Validate offline functionality if applicable
-- Test browser back/forward button behavior
+**Quality Assurance:**
+- Automated testing for regression prevention
+- Manual testing for edge cases and scenarios
+- Security testing for data protection
+- Compliance testing for regulatory requirements
 
-**Performance Testing:**
-- Measure form load time (target: under 3 seconds)
-- Test with large file uploads
-- Verify memory usage with long form sessions
-- Test concurrent user submissions
-- Validate database performance under load
-
-**Security Testing:**
-- Test input sanitization and XSS prevention
-- Verify CSRF protection is working
-- Test file upload security restrictions
-- Validate data encryption in transit and at rest
-- Check authentication and authorization controls
-
-**Cross-Browser Testing:**
-- Test on Chrome, Firefox, Safari, Edge
-- Verify mobile browsers (iOS Safari, Chrome Mobile)
-- Test on different operating systems
-- Validate older browser fallbacks
-- Check print functionality across browsers
+**Monitoring:**
+- Track form completion rates and abandonment
+- Monitor error rates and user feedback
+- Measure performance metrics and load times
+- Analyze user behavior and interaction patterns
 ```
 
 **테스트 관련 프롬프트:**
 
 ```
-Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
+Add **automated testing** for all form validations and submit functionality
 ```
 
 ```
-Design a **user acceptance testing plan** with realistic scenarios and success criteria for business stakeholders.
+Implement **user acceptance testing** scenarios for complete form workflows
 ```
 
 ```
-Set up **performance monitoring** to track form completion rates, abandonment points, and submission success rates.
+Set up **performance monitoring** to track form load times and user interactions
 ```
 
-## 고급 기능 및 통합
+## 문제 해결
 
-**사용 시기:** AI 지원, 고급 워크플로 또는 복잡한 통합과 같은 정교한 양식 기능이 필요한 경우.
+일반적인 Forms Experience Builder 문제에 대한 빠른 솔루션:
 
-**사용 방법:** 고급 기능과 통합 요구 사항을 명확하게 정의합니다.
+| 문제 | 빠른 수정 |
+|-------|-----------|
+| 양식 제출 안 함 | 제출 액션 구성 및 유효성 검사 규칙 확인 |
+| 유효성 검사 오류가 표시되지 않음 | 필드 유효성 검사 설정 및 오류 메시지 배치 확인 |
+| 모바일 레이아웃 문제 | 반응형 디자인 설정 및 필드 크기 조정 검토 |
+| 필드가 표시되지 않음 | 조건부 논리 및 가시성 규칙 확인 |
+| 가져오기 실패 | 파일 형식 호환성 및 크기 제한 확인 |
+| 통합 오류 | API 끝점 및 인증 자격 증명의 유효성 검사 |
+| 성능 문제 | 필드 카운트 최적화 및 불필요한 유효성 검사 제거 |
+| 접근성 문제 | 필드 레이블, ARIA 속성 및 탭 순서 검토 |
 
-**예제 프롬프트 - AI 강화 양식:**
+**디버그 모드 프롬프트:**
 
 ```
-Add **AI-powered features** to enhance this application form:
+Enable debug mode to identify issues with form submission and field validation
+```
 
-**Smart Auto-Complete:**
-- Use AI to suggest company names as user types
-- Auto-populate address fields from partial input
-- Suggest job titles based on industry selection
-- Provide intelligent form completion suggestions
+**오류 분석 프롬프트:**
 
-**Dynamic Question Generation:**
-- Generate follow-up questions based on previous answers
-- Adapt form complexity to user's experience level
-- Show relevant optional fields based on user profile
-- Personalize form sections for different user types
+```
+Analyze form errors: check validation rules, API responses, and user input patterns
+```
 
-**Intelligent Validation:**
-- Use AI to detect potentially incorrect information
-- Suggest corrections for common data entry errors
-- Validate business information against public databases
-- Flag suspicious or inconsistent responses
+## 고급 분석 및 통찰력
 
-**Content Optimization:**
-- A/B test different form layouts automatically
-- Optimize field order based on completion patterns
-- Adjust form length based on user engagement
-- Personalize help text based on user behavior
+**사용할 시기:** 양식 성능 및 사용자 동작을 이해해야 하는 경우.
+
+**사용 방법:** 필요한 분석 요구 사항 및 통찰력을 지정합니다.
+
+**예제 프롬프트 - 기본 분석:**
+
+```
+Add analytics to @contactForm:
+
+**Basic Metrics:**
+- Form completion rates
+- Field abandonment rates
+- Submit success/failure rates
+- User session duration
+```
+
+**예제 프롬프트 - 고급 분석:**
+
+```
+Implement comprehensive analytics for @applicationForm:
+
+**User Behavior Analytics:**
+- Track field completion rates and abandonment
+- Monitor user session duration and patterns
+- Analyze form navigation and user flow
+- Identify bottlenecks and friction points
+
+**Performance Analytics:**
+- Measure form load times and performance
+- Track API response times and failures
+- Monitor validation rule effectiveness
+- Analyze submission success rates
+
+**Business Intelligence:**
+- Generate reports on form effectiveness
+- Track conversion rates and ROI
+- Monitor user satisfaction and feedback
+- Identify opportunities for optimization
 
 **Predictive Analytics:**
-- Predict likelihood of form completion
-- Identify users who might need assistance
-- Suggest optimal times for form completion reminders
-- Analyze drop-off points and suggest improvements
-
-**Natural Language Processing:**
-- Allow voice input for text fields
-- Convert speech to text for accessibility
-- Analyze open-text responses for sentiment
-- Extract structured data from unstructured input
+- Predict form completion likelihood
+- Identify users likely to abandon
+- Recommend form improvements
+- Optimize user experience based on data
 ```
 
-**고급 통합 프롬프트:**
+**Analytics 관련 프롬프트:**
 
 ```
-Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
+Add **conversion tracking** to measure form completion rates and user behavior
 ```
 
 ```
-Connect to **payment gateway** for secure transaction processing with PCI compliance, fraud detection, and multiple payment methods.
+Implement **A/B testing** to compare different form designs and optimize performance
 ```
 
 ```
-Implement **blockchain verification** for document authenticity, immutable audit trails, and decentralized identity verification.
+Create **analytics dashboard** to monitor form performance and user insights
 ```
 
-## 문제 해결 및 최적화
+## 보안 및 데이터 보호
 
-**사용 시기:** 양식에 성능 문제, 사용자 경험 문제 또는 기술적 어려움이 있는 경우.
+**사용할 시기:** 양식이 중요한 데이터를 처리하고 보안 조치가 필요한 경우.
 
-**사용 방법:** 구체적인 문제와 원하는 결과를 명확하게 설명합니다.
+**사용 방법:** 보안 요구 사항 및 데이터 보호 조치를 지정합니다.
 
-**예제 프롬프트 - 성능 최적화:**
-
-```
-Optimize this form for **better performance and user experience**:
-
-**Current Issues:**
-- Form takes 8+ seconds to load on mobile
-- Users are abandoning at the address section (60% drop-off)
-- File uploads frequently fail or timeout
-- Validation errors are confusing users
-
-**Performance Improvements:**
-- Implement lazy loading for non-critical form sections
-- Optimize images and reduce bundle size
-- Add progressive loading indicators
-- Cache frequently used data (country lists, etc.)
-- Minimize JavaScript execution time
-
-**User Experience Fixes:**
-- Simplify the address section with auto-complete
-- Add inline validation with helpful error messages
-- Implement smart defaults based on user location
-- Add progress saving every 30 seconds
-- Provide clear instructions for each section
-
-**Technical Optimizations:**
-- Implement chunked file uploads with resume capability
-- Add client-side validation before server submission
-- Optimize database queries for faster responses
-- Implement proper error handling and retry logic
-- Add comprehensive logging for debugging
-
-**Monitoring & Analytics:**
-- Set up form analytics to track user behavior
-- Monitor completion rates by section
-- Track error rates and types
-- Measure performance metrics continuously
-- A/B test improvements with real users
-```
-
-**문제 해결 프롬프트:**
+**예제 프롬프트 - 기본 보안:**
 
 ```
-**Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
+Add security measures to @contactForm:
+
+**Basic Security:**
+- HTTPS encryption for all data transmission
+- Input validation and sanitization
+- CSRF protection for form submissions
+- Secure session management
 ```
 
+**예제 프롬프트 - 고급 보안:**
+
 ```
-**Fix mobile layout issues:** Form fields are overlapping on iPhone screens and submit button is not visible. Ensure proper responsive design.
+Implement comprehensive security for @applicationForm:
+
+**Data Protection:**
+- End-to-end encryption for sensitive data
+- PII data masking and anonymization
+- Secure file upload with virus scanning
+- Data retention and deletion policies
+
+**Access Control:**
+- Role-based access control for form data
+- Multi-factor authentication for admin access
+- Audit logging for all data access
+- Secure API authentication and authorization
+
+**Compliance:**
+- GDPR compliance for data handling
+- HIPAA compliance for health information
+- PCI DSS compliance for payment data
+- SOC 2 compliance for data security
+
+**Monitoring:**
+- Real-time security monitoring and alerts
+- Intrusion detection and prevention
+- Data breach notification systems
+- Regular security audits and assessments
+```
+
+**보안별 프롬프트:**
+
+```
+Implement **data encryption** for sensitive form submissions and user information
 ```
 
 ```
-**Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
+Add **access control** to restrict form data access based on user roles and permissions
 ```
 
-## 환경 관련 모범 사례
-
-### Forms 관리 UI
-
-**사용 시기:** 고수준 양식 생성 및 관리 작업 시.
-
 ```
-In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
+Set up **security monitoring** to detect and prevent unauthorized access to form data
 ```
 
-### 적응형 양식 편집기
+## 명령 참조
 
-**사용 시기:** 상세한 양식 구성 및 복잡한 규칙 생성 시.
-
-```
-In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
-```
-
-### 범용 편집기
-
-**사용 시기:** 시각적 편집이 가능한 Edge Delivery Services 양식 사용 시.
-
-```
-In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
-```
-
-## 명령 참조 빠른 안내서
+### 필수 명령
 
 | 명령 | 모범 사용 사례 | 예 |
 |---------|---------------|---------|
@@ -862,81 +982,81 @@ In Universal Editor, create a **responsive contact form** for the company websit
 | `/configure-submit` | 데이터 처리 설정 | `/configure-submit to CRM and send confirmation email` |
 | `/help` | 도움 받기 | `/help how to implement multi-step validation?` |
 
-## 지원되는 구성 요소 속성 참조
+### 필드 참조
 
-### 범용 속성 (모든 구성 요소)
+`@fieldName` 구문을 사용하여 프롬프트의 기존 필드를 참조합니다.
 
-- **유형**: 구성 요소 유형 (텍스트, 이메일, 숫자, 전화번호, 날짜, 체크박스, 라디오, 드롭다운, 파일 등)
+- `@email` - 참조 전자 메일 필드
+- `@firstName` - 참조 이름 필드
+- `@maritalStatus` - 참조 결혼 상태 필드
+
+### 구성 요소 유형
+
+**입력 구성 요소:**
+
+- `text`, `email`, `number`, `tel`, `date`, `checkbox`, `radio`, `dropdown`, `file`, `textarea`
+
+**컨테이너 구성 요소:**
+
+- `fieldset`, `panel`, `repeatable`, `wizard`
+
+### 구성 요소 속성
+
+**유니버설 속성(모든 구성 요소):**
+
+- **유형**: 구성 요소 유형
 - **이름**: 양식 제출을 위한 필드 식별자
 - **레이블**: 필드에 대한 표시 텍스트
 - **설명**: 필드에 대한 도움말 텍스트
 - **표시**: 초기 가시성에 대한 부울 값
 - **필수**: 필수 필드에 대한 부울 값
 
-### 입력 필드 속성
+**입력 필드 속성:**
 
 - **값**: 기본값/초기값
 - **플레이스홀더**: 입력 필드에 대한 힌트 텍스트
 - **최소값**: 최소값 (숫자/날짜의 경우)
 - **최대값**: 최대값 (숫자/날짜의 경우)
 
-### 파일 업로드 속성
+**파일 업로드 속성:**
 
 - **허용**: 파일 유형 (.pdf, .doc, .docx, .jpg, .png 등)
 - **다중**: 여러 파일 선택을 위한 부울 값
 
-### 선택 제어 속성
+**선택 컨트롤 속성:**
 
 - **옵션**: 드롭다운에 대한 선택 사항 (쉼표로 구분된 목록)
 - **선택됨**: 체크박스/라디오에 대한 기본 선택
 
-### 컨테이너 속성
+**컨테이너 속성:**
 
 - **Fieldset**: 관련 필드 그룹화
 - **반복 가능**: 반복 가능한 섹션에 대한 부울 값
 
-### 고급 속성
+**고급 속성:**
 
 - **가시적 표현**: 조건부 가시성을 위한 공식 (=formula)
 - **값 표현식**: 계산된 값에 대한 공식 (=formula)
 
-## 모범 사례 요약
+### 통합 명령
 
-### 기술 지침
+**제출 동작:**
 
-- 공식 AEM Forms 구성 요소 사양에서 **지원되는 속성만 사용**
-- 필드 참조(@fieldName) 및 표현식(=formula)에 대한 **적절한 구문 따르기**
-- 각 변경 후 **점진적으로 테스트**&#x200B;하여 문제를 조기에 포착
-- **접근성을 처음부터 계획**
-- 모든 디자인 결정에 **모바일 사용자 고려**
-- 향후 유지 관리 및 팀 협업을 위해 **복잡한 규칙 문서화**
+- 이메일 알림
+- REST API 제출
+- 클라우드 스토리지(Azure, SharePoint)
+- 워크플로우 자동화(Power Automate, Workfront Fusion)
+- 마케팅 플랫폼(Marketo)
+- CRM 통합
 
-### 전략적 접근 방식
+### 프롬프트 구문 지침
 
-- **사용자 요구 사항부터 시작** - 기술적 기능뿐만 아니라 사용자가 달성해야 하는 것에도 집중합니다.
-- **완성을 위한 디자인** - 양식 디자인에서 마찰과 인지 부하를 최소화합니다.
-- **데이터 흐름을 조기에 계획** - 데이터가 어떻게 처리, 저장 및 사용될지 고려합니다.
-- **규모에 맞춰 구축** - 예상되는 사용자 볼륨과 데이터 증가를 처리할 수 있는 양식을 디자인합니다.
-- **점진적인 개선 구현** - 기본 기능이 작동하는지 확인한 다음 고급 기능을 추가합니다.
+- **필드 참조**: 기존 필드에 `@fieldName`을(를) 사용합니다.
+- **명령**: 특정 작업에 `/command` 사용
+- **자연어**: 요구 사항을 명확하고 구체적으로 설명합니다.
 
-### 피해야 할 일반적인 위험 요소
+### 유효성 검사 목록
 
-- **너무 복잡한 초기 요청** - 큰 작업을 더 작고 관리하기 쉬운 단계로 나누십시오.
-- AEM Forms 사양에 없는 **지원되지 않는 속성 사용**
-- 개발 프로세스 후반까지 **모바일 경험 무시**
-- 실제 시나리오와 예외 사례를 반영한 **사용자 테스트 생략**
-- **AI가 명확하고 구체적인 지침을 제공하지 않고도 맥락을 이해한다고 가정**
-- **접근성 및 규정 준수 요구 사항 무시**
-- 다음 단계로 넘어가기 전에 **변경 사항을 검증하지 않음**
+포괄적인 모범 사례와 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](forms-ai-assistant-getting-started.md#best-practices)를 참조하십시오.
 
-### 품질 보증 접근 방식
-
-1. **자주 미리 보기** - 중요한 변경 사항이 있을 때마다 미리보기 모드에서 작업을 확인합니다.
-2. **예외 사례 테스트** - 비정상적인 입력, 긴 텍스트, 특수 문자를 시도해 봅니다.
-3. **다양한 디바이스에서 검증** - 모바일, 태블릿 및 데스크탑에서 테스트합니다.
-4. **접근성 확인** - 키보드 탐색 및 화면 판독기 호환성을 확인합니다.
-5. **성능 테스트** - 양식이 빠르게 로드되고 원활하게 응답하는지 확인합니다.
-6. **사용자 수용 테스트** - 배포 전에 실제 사용자가 양식을 테스트하도록 합니다.
-
-
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 AI 어시스턴트 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백 및 새로운 Forms Experience Builder 기능에 따라 계속 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*

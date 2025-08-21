@@ -3,22 +3,23 @@ title: AEM Forms용 AI 어시스턴트 (Forms Experience Builder)
 description: 양식 조각을 사용하여 강력한 양식을 더 빠르게 제작
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# AEM Forms용 AI 어시스턴트 (Forms Experience Builder)
+
+# AEM Forms용 AI Assistant 시작하기(Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> AEM Forms용 AI 어시스턴트(Forms Experience Builder) 기능은 **얼리 어답터 프로그램**&#x200B;에서 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 간단한 이메일을 보내 해당 기능에 대한 액세스를 요청하시기 바랍니다.
+> AEM Forms용 AI 어시스턴트(Forms Experience Builder) 기능은 **얼리 어답터 프로그램**&#x200B;에서 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 빠른 전자 메일을 보내 기능에 대한 액세스를 요청하세요.
 
 >[!IMPORTANT]
 >
