@@ -1058,4 +1058,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 포괄적인 모범 사례와 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](forms-ai-assistant-getting-started.md#best-practices)를 참조하십시오.
 
-*이 프롬프트 라이브러리는 사용자 피드백 및 새로운 Forms Experience Builder 기능에 따라 계속 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백 및 새로운 Forms Experience Builder 기능에 따라 계속 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
