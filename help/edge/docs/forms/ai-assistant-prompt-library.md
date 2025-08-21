@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
-
 
 # Forms Experience Builder - 프롬프트 라이브러리
 
@@ -141,7 +140,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **사용 시기:** 새 양식을 만들거나 기존 양식을 수정해야 하는 경우.
 
-**사용 방법:** 두 가지 방법 중 하나를 선택하십시오. 처음부터 만들기 또는 가져오기 및 변환([시작 안내서](forms-ai-assistant-getting-started.md#two-ways-to-create-forms) 참조).
+**사용 방법:** 두 가지 방법 중 하나를 선택하십시오. 처음부터 만들기 또는 가져오기 및 변환([시작 안내서](/help/edge/docs/forms/forms-ai-assistant-getting-started.md) 참조).
 
 **예제 프롬프트 - 간단한 양식 만들기:**
 
@@ -518,7 +517,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **사용 시기:** 기존 양식, 문서 또는 디자인을 최신 AEM 양식으로 변형할 경우.
 
-**사용 방법:** 소스 파일을 업로드하고 전환 요구 사항을 설명합니다([가져오기 안내서](forms-ai-assistant-getting-started.md#2-import-and-convert) 참조).
+**사용 방법:** 소스 파일을 업로드하고 전환 요구 사항을 설명합니다([가져오기 안내서](/help/edge/docs/forms/forms-ai-assistant-getting-started.md) 참조).
 
 **예제 프롬프트 - PDF 양식 변환:**
 
@@ -1059,4 +1058,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 포괄적인 모범 사례와 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](forms-ai-assistant-getting-started.md#best-practices)를 참조하십시오.
 
-*이 프롬프트 라이브러리는 사용자 피드백 및 새로운 Forms Experience Builder 기능에 따라 계속 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백 및 새로운 Forms Experience Builder 기능에 따라 계속 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*

@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 15%
 
 ---
-
 
 # Forms Experience Builder 시작하기
 
@@ -483,4 +482,4 @@ Forms Experience Builder에서 AEM Forms 기능에 대해서도 배울 수 있�
 
 **여전히 도움이 필요하십니까?** `/help`을(를) 입력한 후 특정 질문을 하거나 시스템 관리자에게 문의하십시오.
 
-추가 지원이 필요하면 기본 [Forms Experience Builder 프롬프트 라이브러리](ai-assistant-prompt-library.md)를 참조하거나 시스템 관리자에게 문의하여 기술 지원을 받으십시오.
+추가 지원이 필요하면 기본 [Forms Experience Builder 프롬프트 라이브러리](/help/edge/docs/forms/ai-assistant-prompt-library.md)를 참조하거나 시스템 관리자에게 문의하여 기술 지원을 받으십시오.
