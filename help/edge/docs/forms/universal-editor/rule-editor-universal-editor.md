@@ -1,6 +1,6 @@
 ---
-title: 범용 편집기의 Dynamic Forms용 규칙 편집기
-description: 범용 편집기의 규칙 편집기를 사용하여 동적 지능형 양식을 만듭니다. 코딩하지 않고 조건부 논리, 계산 및 대화형 동작을 추가합니다.
+title: 범용 편집기의 동적 양식에 대한 규칙 편집기
+description: 범용 편집기의 규칙 편집기를 사용하여 동적이고 지능적인 양식을 만듭니다. 코딩 없이 조건 논리, 계산 및 대화형 비헤이비어를 추가합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
@@ -8,12 +8,12 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# 범용 편집기의 Dynamic Forms용 규칙 편집기
+# 범용 편집기의 동적 양식에 대한 규칙 편집기
 
 규칙 편집기를 사용하면 작성자가 코드를 작성하지 않고도 정적 양식을 반응형 지능형 경험으로 전환할 수 있습니다. 조건부로 필드를 표시하고, 계산을 수행하고, 데이터의 유효성을 검사하고, 흐름을 통해 사용자를 안내하고, 사람 유형에 맞게 조정하는 비즈니스 논리를 통합할 수 있습니다.
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 이 안내서를 마치면 다음 작업을 수행할 수 있습니다.
 
-- 규칙의 작동 방식과 다양한 규칙 유형을 사용할 시기를 이해합니다.
-- 범용 편집기에서 규칙 편집기 활성화 및 액세스
+- 규칙이 작동하는 방식과 다양한 규칙 유형을 사용해야 하는 시기
+- 범용 편집기에서 규칙 편집기를 활성화하고 액세스하는 방법
 - 필드를 동적으로 표시하거나 숨기기 위한 조건부 논리 만들기
 - 자동화된 계산 및 데이터 유효성 검사 구현
-- 복잡한 비즈니스 규칙에 대한 사용자 정의 함수 구축
+- 복잡한 비즈니스 규칙을 위한 사용자 정의 함수 빌드
 - 성능, 유지 관리 및 UX에 대한 모범 사례 적용
 
 ## 규칙 편집기를 사용하는 이유
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 +++ 실제 사례
 
-- **조건**: &quot;총 급여가 $50,000를 초과합니다.&quot;
+- **조건**: “총 급여가 50,000달러를 초과합니다”
 - **기본 작업**: &quot;추가 공제&quot; 표시
 - **대체 작업**: &quot;추가 공제&quot; 숨기기
 - **결과**: 사용자에게 적용되는 필드만 표시됨
@@ -269,7 +269,7 @@ ht-degree: 1%
 
 | 필드 이름 | 유형 | 용도 | 비헤이비어 |
 |-------------------------|---------------|--------------------------------|-----------------------------------------|
-| 총 급여 | 숫자 입력 | 사용자의 연간 수입 | 조건부 논리 트리거 |
+| 총 급여 | 숫자 입력 | 사용자의 연간 수입 | 조건 논리를 트리거합니다. |
 | 추가 공제 | 숫자 입력 | 추가 공제(해당되는 경우) | 급여가 $50,000인 경우에만 표시 |
 | 과세 소득 | 숫자 입력 | 계산된 값 | 읽기 전용, 변경 시 업데이트 |
 | 납부세 | 숫자 입력 | 계산된 값 | 읽기 전용, 정액 비율로 계산 |
@@ -308,7 +308,7 @@ ht-degree: 1%
 
 1. **유니버설 편집기 열기**:
    - AEM Sites 콘솔로 이동하여 페이지를 선택하고 **편집**&#x200B;을 클릭합니다.
-   - [유니버설 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)가 제대로 구성되어 있는지 확인하십시오.
+   - [유니버설 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)가 제대로 구성되어 있는지 확인하십시오.
 
 2. **이 순서로 양식 구성 요소 추가**:
    - 제목(H2): &quot;세금 계산 양식&quot;
@@ -612,7 +612,7 @@ export { getFullName, days };
 
 +++
 
-+++ 유니버설 편집기 통합
++++ 범용 편집기 통합
 
 - 규칙 편집기 확장이 활성화되었는지 확인
 - 지원되는 구성 요소 선택
@@ -676,7 +676,7 @@ Forms은 데이터 수집, 잠재 고객 검증 및 사용자 참여를 위한 �
 
 **추가 리소스**:
 
-- 광범위한 컨텍스트를 위한 [유니버설 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)
+- 광범위한 컨텍스트를 위한 [유니버설 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 - 추가 기능을 사용하려면 [Extension Manager 안내서](/help/implementing/developing/extending/extension-manager.md)
 - 포괄적인 양식 개발 지침을 위한 [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md)
 

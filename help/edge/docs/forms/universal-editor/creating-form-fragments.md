@@ -7,7 +7,7 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -91,7 +91,7 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
    ![조각 만들기](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **적응형 양식 조각 만들기** 마법사가 나타납니다.
-1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**을 클릭합니다.
    ![Edge Delivery Services 템플릿 선택](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.
@@ -110,7 +110,7 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
 
    >[!NOTE]
    >
-   > 양식 또는 조각을 유니버설 편집기의 양식 데이터 모델(FDM)과 통합하여 다양한 백엔드 데이터 소스를 사용하는 방법에 대해 알아보려면 [유니버설 편집기에서 양식 데이터 모델과 양식 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)을 참조하십시오.
+   > 범용 편집기에서 양식이나 조각을 양식 데이터 모델(FDM)과 통합하여 다양한 백엔드 데이터 소스를 사용하는 방법을 알아보려면 [범용 편집기에서 양식 데이터 모델과 양식 통합](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)을 참조하십시오.
 
 1. (선택 사항) **고급** 탭에서 조각의 **게시 일자** 또는 **게시 취소 일자**&#x200B;를 지정합니다.
 
@@ -246,7 +246,7 @@ AEM Forms 사용자 인터페이스를 사용하여 양식 조각에 대해 여�
     </tbody>
     </table>
 
-+++
++++ 
 
 ## 모범 사례
 

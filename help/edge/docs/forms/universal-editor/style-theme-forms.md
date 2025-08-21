@@ -7,7 +7,7 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
@@ -252,7 +252,7 @@ Edge Delivery Services for AEM Forms의 양식 스타일을 사용하려면 CSS 
 }
 ```
 
-+++
++++ 
 
 +++ 고급 사용자 정의 패턴
 
@@ -368,10 +368,10 @@ Edge Delivery Services for AEM Forms의 양식 스타일을 사용하려면 CSS 
 }
 ```
 
-- `.form .{Type}-wrapper`: 필드 유형에 따라 필드 래퍼 요소를 타깃팅합니다. 예를 들어 `.form .text-wrapper`은(는) 모든 텍스트 필드 컨테이너를 대상으로 합니다.
-- `.form .{Type}-wrapper input`: 래퍼 내의 실제 입력 요소를 타깃팅합니다. 양식 입력 스타일링에 권장되는 패턴입니다.
-- `.form .field-{Name}`: 특정 필드 이름을 기반으로 요소를 타깃팅합니다. 예를 들어 `.form .field-first-name`은(는) &quot;이름&quot; 필드 컨테이너를 대상으로 합니다. `.form .field-{Name} input`을(를) 사용하여 특별히 입력 요소를 대상으로 지정합니다.
-- **피하십시오**: `main .form form .{Type}-wrapper` - 불필요한 CSS 특수성이 생성되므로 유지 관리가 더 어렵습니다.
+- `.form .{Type}-wrapper`: 필드 유형에 따라 필드 래퍼 요소를 타기팅합니다. 예를 들어 `.form .text-wrapper`는 모든 텍스트 필드 컨테이너를 타기팅합니다.
+- `.form .{Type}-wrapper input`: 래퍼 내의 실제 입력 요소를 타기팅합니다. 이 패턴은 양식 입력 스타일을 정의하는 데 권장됩니다.
+- `.form .field-{Name}`: 특정 필드 이름을 기반으로 요소를 타기팅합니다. 예를 들어 `.form .field-first-name`은 “이름” 텍스트 컨테이너를 타기팅합니다. `.form .field-{Name} input`을 사용하여 입력 요소를 구체적으로 타기팅합니다.
+- **피해야 할 사항**: `main .form form .{Type}-wrapper`는 불필요한 CSS 구체성을 생성하여 유지 관리가 더 어렵습니다.
 
 **일반 구성 요소용 CSS 선택기의 예**
 
@@ -763,7 +763,7 @@ main .form .text-wrapper input {
 ```
 
 - Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
-- 범례 요소(`<legend>`)는 &quot;로그인 정보&quot; 텍스트와 클래스 필드 레이블을 사용하여 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+- 범례 요소(`<legend>`)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
 - Fieldset 내부에서 여러 개의.{Type}-wrapper 요소(이 경우 .text-wrapper 및 .password-wrapper)가 패널 내의 개별 양식 필드를 나타냅니다.
 - 각 래퍼에는 이전 예시와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
 
@@ -1158,7 +1158,7 @@ main .form .field-otp input {
 }
 ```
 
-이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타기팅합니다. Edge Delivery Services 양식 구조는 적응형 Forms 블록 규칙을 따르며, 이 규칙에서 컨테이너는 이름이 &quot;otp&quot;인 필드에 대한 &quot;field-otp&quot;와 같은 필드별 클래스로 표시됩니다.
+이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타기팅합니다. Edge Delivery Services 양식 구조는 적응형 양식 블록 규칙을 따르며, 컨테이너는 “otp”라는 이름의 필드에 대해 “field-otp”와 같은 필드별 클래스로 표시됩니다.
 
 
 ## CSS 파일 구조 및 구현
@@ -1502,7 +1502,7 @@ main .form form .text-wrapper input {
 
 
 
-### **구성 요소별 모범 사례**
+### **구성 요소 관련 모범 사례**
 
 
 +++ 단추 스타일 지정
@@ -1549,12 +1549,12 @@ main .form form .text-wrapper input {
 
 ## 모범 사례 요약
 
-1. **CSS 사용자 지정 속성 사용**: 일관된 설정을 위해 변수 활용
-2. **블록 기반 아키텍처 준수**: `.form`을(를) 기본 블록 선택기로 사용
-3. **특이성 과다 사용 방지**: 필요한 경우가 아니면 `main .form form`을(를) 사용하지 마십시오
-4. **래퍼 타깃팅**: 구성 요소 타깃팅에 `.{Type}-wrapper` 패턴을 사용합니다.
+1. **CSS 사용자 정의 속성 사용**: 일관된 테마를 위해 변수를 활용합니다.
+2. **블록 기반 아키텍처 따르기**: `.form`을 기본 블록 선택기로 사용합니다.
+3. **지나친 구체성 방지**: 필요하지 않으면 `main .form form`을 사용하지 않습니다.
+4. **대상 래퍼**: 구성 요소 타기팅을 위해 `.{Type}-wrapper` 패턴을 사용합니다.
 5. **일관성 유지**: 프로젝트 전체에서 동일한 선택기 패턴을 사용합니다.
-6. **여러 장치에서 테스트**: 모바일, 태블릿 및 데스크톱에서 양식이 제대로 작동하는지 확인
-7. **접근성 확인**: 스타일이 화면 판독기나 키보드 탐색에 방해가 되지 않도록 합니다.
+6. **다양한 디바이스에서 테스트**: 양식이 모바일, 태블릿 및 데스크탑에서 잘 작동하는지 확인합니다.
+7. **접근성 유효성 검사**: 스타일이 화면 판독기나 키보드 탐색을 방해하지 않는지 확인합니다.
 
 

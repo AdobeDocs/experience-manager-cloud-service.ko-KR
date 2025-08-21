@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,8 +92,8 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 - 클래스: div 요소에는 특정 요소 및 스타일을 타기팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이 필요합니다.
    - {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(text-wrapper), 숫자(number-wrapper), 날짜(date-wrapper)가 있습니다.
    - {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(field-first-name field-wrapper)이 있습니다.
-   - {FieldId}: 필드에 대한 고유 식별자로, 자동으로 생성됩니다.
-   - {Required}: 필드가 필요한지 여부를 나타내는 부울입니다.
+   - {FieldId}: 자동으로 생성된 필드의 고유 식별자입니다.
+   - {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
 - 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 속성을 사용하여 이를 입력 요소와 연결합니다.
 - 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예를 들어 문자, 숫자, 이메일 등이 있습니다.
 - 설명(선택 사항): `field-description` 클래스가 있는 `div`는 사용자에게 추가 정보 또는 지침을 제공합니다.
@@ -240,7 +240,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 드롭다운 구성 요소와 유사하게 라디오 그룹에는 고유한 HTML 구조 및 CSS 구조가 있습니다.
 
-+++ 라디오 그룹의 HTML 구조
++++ 라디오 그룹의 HTML 구조 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 }
 ```
 
-+++
++++ 
 
 ### 확인란 그룹
 
-+++ 확인란 그룹의 HTML 구조
++++ 확인란 그룹의 HTML 구조 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
      }
   ```
 
-+++
++++ 
 
 ### 패널/컨테이너 구성 요소
 
@@ -476,11 +476,11 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 ```
 
 - Fieldset 요소는 패널 이름(field-login)을 기반으로 스타일을 지정하기 위한 panel-wrapper 클래스와 추가 클래스가 있는 패널 컨테이너 역할을 합니다.
-- 범례 요소(`<legend>`)는 &quot;로그인 정보&quot; 텍스트와 클래스 필드 레이블을 사용하여 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+- 범례 요소(`<legend>`)는 “로그인 정보”라는 텍스트와 field-label 클래스가 포함된 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
 - Fieldset 내부에서 여러 개의 .{Type}-wrapper 요소(이 경우 .text-wrapper 및 .password-wrapper)가 패널 내의 개별 양식 필드를 나타냅니다.
 - 각 래퍼에는 이전 예시와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
 
-+++
++++ 
 
 +++ 패널/컨테이너 구성 요소용 CSS 선택기 예
 
@@ -608,7 +608,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 - 고유 ID 및 이름: 패널 내의 각 요소에는 고유 ID(예: name-1, email-1)와 패널 색인을 기반으로 하는 이름 속성(예: name=&quot;contacts[0].name&quot;)이 있습니다. 이를 통해 여러 패널이 제출될 때 적절한 데이터 수집이 가능합니다.
 
-+++
++++ 
 
 +++ 반복 가능 패널용 CSS 선택기
 
@@ -698,7 +698,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 - 입력 요소의 id 및 name 속성은 첨부 파일 이름(claim_form)과 일치합니다.
 - files-list 섹션은 처음에는 비어 있습니다. 파일이 업로드되면 JavaScript로 동적으로 채워집니다.
 
-+++
++++ 
 
 +++ 첨부 파일 구성 요소용 CSS 선택기
 
@@ -816,7 +816,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 - 각 필드에는 해당 레이블, 입력 요소 및 플레이스홀더 및 설명과 같은 잠재적인 추가 요소가 포함되어 있습니다.
 
 
-+++
++++ 
 
 
 +++ CSS 선택기의 예
@@ -864,7 +864,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 </div>
 ```
 
-+++
++++ 
 
 +++ CSS 선택기의 예
 
@@ -878,5 +878,5 @@ CSS 선택기를 사용하여 특정 필드 유형을 타기팅하고 스타일�
 
 이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타기팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따릅니다. 이는 “field-otp” 클래스로 표시된 컨테이너에 “otp”라는 이름의 필드가 있음을 의미합니다.
 
-+++
++++ 
 
