@@ -3,9 +3,9 @@ title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Content Hub를 통해 더 광범위한 팀이 직관적인 포털을 사용해 �
 
 Content Hub가 배포된 후 사용자에게 Content Hub를 제공하지 않으려면 Admin Console의 Content Hub 제품 프로필에 사용자를 할당하지 마십시오. 자세한 내용은 [Content Hub 배포](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)를 참조하십시오.
 
-## Content Hub를 프로덕션 프로그램/프로덕션 작성 환경에서만 사용할 수 있는데 조직에서 이를 어떻게 평가할 수 있습니까? {#how-can-i-evaluate-content-hub}
+## Content Hub를 프로덕션 프로그램/프로덕션 저작 환경에서만 사용할 수 있는데 조직에서 이를 어떻게 평가할 수 있습니까? {#how-can-i-evaluate-content-hub}
 
 Content Hub는 Adobe가 제공하고 유지 관리하는 기능으로, 개발/스테이징/프로덕션을 통해 일반적인 검증이 필요한 사용자 정의 코드가 없습니다. 또한 사용자용 기능에 대한 액세스 권한을 관리자가 완전히 제어하므로 모든 사용자에게 공개하지 않고도 평가할 수 있습니다.
 
@@ -84,7 +84,7 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
    >
    >두 개의 Admin Console에서 Express 및 Assets 제품 프로필에 할당된 사용자는 동일한 이메일 주소를 가져야 하고, 비즈니스 **기업 또는 학교** 계정을 사용해야 하며, **개인** 계정을 사용해서는 안 됩니다. 이상적인 구성은 두 Admin Console을 모두 **Federated ID**&#x200B;로 설정하고 두 콘솔 간 트러스트 관계를 설정하여 사용자에게 원활한 SSO(Single Sign-On) 경험을 제공하도록 하는 것입니다. 일부 Express 플랜(예: Express Teams)은 Federated ID/SSO(Single Sign-On)를 지원하지 않습니다.
 
-적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[!UICONTROL # /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
+적절한 제품 권한 외에도 Content Hub에서 Adobe Express를 통합하려면 할당된 사용자에게 적어도 Content Hub를 구동하는 Assets 작성자 환경에서의 [!UICONTROL 편집 가능] 권한이 있어야 하며, 최소한 Content Hub 사용자가 Express를 사용하여 제작한 콘텐츠를 저장할 수 있는 **[#UICONTROL /content/dam/hydrated-assets/]** 폴더 계층 구조가 있어야 합니다. 관리자 보기(터치 UI)에서 [권한 관리](/help/security/touch-ui-principal-view.md)를 확인하거나 [자산 보기에서 간소화된 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)를 확인하십시오.
 
 ## 조직의 브랜드 지침이 홈 페이지에 링크로 표시되도록 Content Hub를 설정할 수 있습니까? {#content-hub-setup-brand-guidelines}
 
@@ -135,28 +135,28 @@ Adobe는 Adobe 지원 티켓을 생성하여 사용할 수 있는 Brand Portal�
 |  | 시멘틱 검색 | ✓ | − |
 |  | 지역화된 검색 및 메타데이터 표시 | ✓ | − |
 
-## 선택한 환경에 대한 에셋만 볼 저장소를 선택하려면 어떻게 해야 합니까? {#select-repository-multiple-environments}
+## 선택한 환경에 대해서만 자산을 보기 위해 저장소를 선택하는 방법은 무엇입니까? {#select-repository-multiple-environments}
 
-동일한 프로그램에 대해 프로덕션용 Content Hub 및 기타 하위 환경을 구성한 경우 저장소를 선택하고 선택한 환경에 대한 에셋을 표시할 수 있습니다. 다음 단계를 실행합니다.
+Content Hub를 프로덕션용으로 구성하고 다른 하위 환경을 동일한 프로그램용으로 구성한 경우 저장소를 선택하고 선택한 환경에 대한 자산을 표시할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 오른쪽 창에서 사용자 아이콘을 클릭합니다.
+1. 오른쪽 창의 사용자 아이콘을 클릭합니다.
 
 1. **[!UICONTROL 제품 설정]** 섹션에서 **[!UICONTROL 저장소 선택]**&#x200B;을 선택합니다.
 
 1. **[!UICONTROL 저장소]** 드롭다운 메뉴에서 저장소를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭하여 확인합니다.
 
-   이제 Content Hub에 선택한 환경에 대한 에셋이 표시됩니다.
+   이제 Content Hub에 선택한 환경에 대한 자산이 표시됩니다.
 
-## Content Hub은 .ZIP 파일 유형에 대한 썸네일 미리보기를 어떻게 표시합니까? {#thumbnail-preview-zip-file}
+## Content Hub가 .ZIP 파일 유형에 대한 썸네일 미리보기를 표시하는 방법은 무엇입니까? {#thumbnail-preview-zip-file}
 
-Content Hub에서 .ZIP과 같은 파일 형식에 대한 썸네일 미리 보기를 제공하기 위해 AEM as a Cloud Service 작성 환경에서 .ZIP을 사용할 수 있는 경로의 루트에 `cq5dam.preview.jpg` 또는 `cq5dam.preview.png` 이름의 렌디션을 추가할 수 있습니다.
+Content Hub에서 .ZIP과 같은 파일 유형에 대한 썸네일 미리보기를 제공하려면 AEM as a Cloud Service 저작 환경에서 .ZIP을 사용할 수 있는 경로의 루트에 `cq5dam.preview.jpg` 또는 `cq5dam.preview.png`라는 렌디션을 추가합니다.
 
 렌디션으로 추가하는 이미지:
 
 * JPG, JPEG 또는 PNG 형식일 수 있습니다.
 
-* 50MB 미만이어야 함
+* 50MB 이하여야 합니다.
 
-사용 가능한 경우 Content Hub은 이미지를 Content Hub에서 .ZIP 파일에 대한 미리보기 썸네일로 표시합니다.
+사용 가능한 경우 Content Hub는 Content Hub에 있는 .ZIP 파일의 미리보기 썸네일로 이미지를 표시합니다.
 
 
