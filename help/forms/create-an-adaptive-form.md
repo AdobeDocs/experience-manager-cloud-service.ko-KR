@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 77%
+source-wordcount: '2679'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 77%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 적응형 양식을 사용하면 멋지고, 반응이 빠르고, 동적이고, 적응력이 뛰어난 양식을 만들 수 있습니다. AEM Forms는 적응형 양식을 신속하게 만들 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다.
@@ -38,7 +38,7 @@ ht-degree: 77%
 
 적응형 양식을 만들려면 다음이 필요합니다.
 
-* **환경에 적응형 Forms 핵심 구성 요소 사용**: 프로그램을 만들 때 환경에 대해 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. Archetype 39 또는 이전 버전을 기반으로 하는 Forms as a Cloud Service 환경을 이용하는 경우, [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
+* **환경에 적응형 Forms 핵심 구성 요소 사용**: 프로그램을 만들 때 환경에 대해 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 blank라는 OOTB 템플릿을 제공합니다.
 
@@ -57,9 +57,9 @@ ht-degree: 77%
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 Forms]**&#x200B;을(를) 선택합니다. 마법사가 열립니다. 소스 탭에서 템플릿을 선택합니다.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 양식]**&#x200B;을 선택합니다. 마법사가 열립니다. 소스 탭에서 템플릿을 선택합니다.
 
    ![핵심 구성 요소 템플릿](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -117,7 +117,7 @@ ht-degree: 77%
 
 * **권한**: 사용자를 [!DNL forms-users]에 추가하여 적응형 양식을 만들 수 있는 권한을 제공합니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 만들거나](themes.md) [기존 테마를 가져올](import-export-forms-templates.md#uploading-a-theme)수 있습니다. 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#create-project)을 배포할 수도 있습니다.
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 만들거나](themes.md) [기존 테마를 가져올](import-export-forms-templates.md#uploading-a-theme)수 있습니다. 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
 
@@ -132,9 +132,9 @@ ht-degree: 77%
 
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다.
 
-   로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
+   로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 Forms]**&#x200B;을(를) 선택합니다. 마법사가 열립니다.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 양식]**&#x200B;을 선택합니다. 마법사가 열립니다.
 1. 소스 탭에서 템플릿을 선택합니다.
 
    * 편집 가능한 템플릿을 선택하면 템플릿에 지정된 테마와 제출 액션이 자동으로 선택되고 **[!UICONTROL 만들기]** 버튼이 활성화됩니다. **[!UICONTROL 스타일]** 또는 **[!UICONTROL 제출]** 탭으로 이동하여 다른 테마를 선택하거나 액션을 제출할 수 있습니다. 선택한 편집 가능한 템플릿이 테마를 지정하지 않으면 만들기 버튼은 비활성화된 상태로 유지됩니다. **[!UICONTROL 스타일]** 탭으로 이동하여 테마를 수동으로 선택할 수 있습니다.

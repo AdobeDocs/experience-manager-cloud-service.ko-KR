@@ -1,13 +1,13 @@
 ---
 title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
-description: 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에서 호스팅되는 웹 페이지에 원활하게 임베드합니다.
+description: 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에 호스팅된 웹 페이지에 원활하게 임베드할 수 있습니다.
 feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3143'
 ht-degree: 5%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
 ## 개요 {#overview}
 
-AEM Forms을 사용하면 양식 개발자가 적응형 Forms을 AEM Sites 페이지나 AEM 외부에 호스팅된 웹 페이지에 원활하게 포함할 수 있습니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용하는 데 도움이 됩니다. 이렇게 하면 사용자가 진행 중인 페이지를 벗어나지 않고도 편리하게 양식을 작성하여 제출할 수 있습니다. 이 통합은 이미 만들어진 적응형 Forms을 재사용하는 편리한 방법을 제공합니다.
+AEM Forms을 사용하면 양식 개발자가 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에 호스팅된 웹 페이지에 원활하게 포함할 수 있습니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용하는 데 도움이 됩니다. 이렇게 하면 사용자가 진행 중인 페이지를 벗어나지 않고도 편리하게 양식을 작성하여 제출할 수 있습니다. 이 통합은 이미 만들어진 적응형 Forms을 재사용하는 편리한 방법을 제공합니다.
 
-AEM 페이지 편집기 를 사용하여 여러 양식을 AEM Sites 페이지에 빠르게 포함할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 Forms 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
+AEM 페이지 편집기 를 사용하여 여러 양식을 AEM Sites 페이지에 빠르게 포함할 수 있습니다. AEM 페이지 편집기를 사용하면 콘텐츠 작성자가 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 Forms 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
 AEM Forms은 **[!UICONTROL 적응형 양식 컨테이너]** 및 **[!UICONTROL 적응형 Forms - 임베드(v2)]** 구성 요소를 제공합니다. **[!UICONTROL 적응형 Forms - 임베드(v2)]** 구성 요소를 사용하여 기존 적응형 양식을 추가하거나 적응형 Forms 편집기를 사용하여 양식을 만들 수 있고, **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;를 사용하여 경험 조각 또는 AEM Sites 페이지 내에서 새 양식을 만들 수 있습니다.
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -60,7 +60,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 * **[사용자 지정 적응형 양식을 만들어 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** **[!UICONTROL 적응형 양식 컨테이너]** 구성 요소를 사용하여 새로운 양식을 처음부터 빌드할 수 있으며, 요구 사항 및 디자인 환경 설정에 맞게 맞춤화할 수 있습니다.
 
-* **[사용자 지정 적응형 양식을 만들어 경험 조각에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** 양식을 AEM Experience Fragments에 추가하여 양식의 범위를 확장하면 여러 페이지 또는 사이트에서 원활하게 재사용할 수 있습니다.
+* **[사용자 지정 적응형 양식을 만들어 경험 조각에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** 사용자 지정 적응형 양식을 AEM 경험 조각에 추가하여 양식의 범위를 확장하면 여러 페이지나 사이트에서 원활하게 재사용할 수 있습니다.
 
 * **AEM Sites 페이지 또는 경험 조각에 여러 양식 추가:** AEM Sites 페이지에 여러 적응형 Forms을 만들거나 추가하여 사용자의 환경 설정 및 요구 사항에 따라 다양한 선택 사항을 제공할 수 있습니다. AEM 페이지 편집기 를 사용하여 여러 양식을 AEM Sites 페이지에 빠르게 포함할 수 있습니다. **[!UICONTROL 적응형 양식 컨테이너]** 구성 요소를 여러 번 사용하여 AEM Sites 페이지에 적응형 Forms을 추가할 수 있습니다. **[!UICONTROL 폼이 프레임의 전체 너비를 포함]** 옵션을 선택한 경우에만 AEM Sites 페이지에서 **[!UICONTROL 적응형 Forms - 포함]** 구성 요소를 여러 번 사용할 수 있습니다. **[!UICONTROL Form이 프레임의 전체 너비를 포함]** 옵션이 선택되어 있지 않은 경우 AEM Sites 페이지에서는 iframe 없이 하나의 적응형 양식만 존재할 수 있습니다. **[!UICONTROL 적응형 Forms - 포함]** 구성 요소를 사용하여 적응형 Forms을 더 추가하려면 **[!UICONTROL 프레임의 전체 너비를 포함하는 양식]** 옵션을 선택하십시오.
 
@@ -75,9 +75,9 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 **[!UICONTROL 적응형 Forms - 임베드(v2)]**&#x200B;를 사용하여 새 적응형 양식 또는 기존 적응형 양식 임베드를 시작하기 전에 **적응형 Forms 핵심 구성 요소**&#x200B;를 활성화하고 **적응형 Forms 클라이언트 라이브러리**&#x200B;를 AEM Sites 페이지에 추가하십시오.
 
-### AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화
+### AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소 활성화
 
-[AEM Forms as a Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되어 있는지](enable-adaptive-forms-core-components.md) 확인합니다.
+AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
 ### AEM Sites 페이지 또는 경험 조각에 적응형 Forms 클라이언트 라이브러리 추가
 
@@ -88,7 +88,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 배포 파이프라인을 사용하여 **Customheaderlibs** 및 **Customfooterlibs** 클라이언트 라이브러리를 AEM Sites 페이지에 추가합니다. 클라이언트 라이브러리를 추가하려면 다음을 수행하십시오.
 
-1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ko)를 사용하고 복제합니다.
+1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)를 사용하고 복제합니다.
 1. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예를 들어 Microsoft® Visual Code가 있습니다.
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 파일을 열고 다음 코드를 파일에 추가합니다.
 
@@ -126,7 +126,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ko)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
+1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
 
 ### AEM Sites 페이지 또는 경험 조각에 대해 적응형 Forms - 임베드(v2) 활성화
 
@@ -134,7 +134,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. 편집할 AEM Sites 페이지 또는 경험 조각을 엽니다. 편집할 페이지를 열려면 페이지를 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭하세요.
 1. 사이트 또는 경험 조각 페이지의 템플릿을 엽니다. 템플릿을 열려면 **[!UICONTROL 페이지 정보]** ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 템플릿 편집]**&#x200B;으로 이동합니다. 템플릿 편집기에서 해당 템플릿이 열립니다.
-1. 구조 보기의 메뉴 막대에서 **[!UICONTROL 정책]** ![정책](/help/forms/assets/Smock_FeedManagement_18_N.svg) 아이콘을 클릭합니다. **[!UICONTROL 허용된 구성 요소]** 목록에서 **[AEM Archetype 프로젝트 이름] - 적응형 양식** 아래의 **[!UICONTROL 적응형 Forms - 포함(v2)]** 확인란을 선택합니다.
+1. 구조 보기의 메뉴 막대에서 **[!UICONTROL 정책]** ![정책](/help/forms/assets/Smock_FeedManagement_18_N.svg) 아이콘을 클릭합니다. **[!UICONTROL 허용된 구성 요소]** 목록에서 **[!UICONTROL AEM Archetype 프로젝트 이름]** - 적응형 양식&#x200B;**[아래의 ]적응형 Forms - 포함(v2)** 확인란을 선택합니다.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -206,7 +206,7 @@ Sites 페이지에 기존 적응형 양식을 포함하려면 다음 작업을 �
 
 ### 경험 조각에 기존 적응형 양식 포함 {#embed-an-adaptive-form-in-experience-fragment}
 
-양식을 AEM 경험 조각에 임베드하여 액세스 가능성을 확장할 수도 있습니다. 경험 조각에 적응형 양식을 임베드하려면 다음 작업을 수행하십시오.
+AEM 경험 조각에 양식을 임베드하여 액세스 가능성을 확장할 수도 있습니다. 경험 조각에 적응형 양식을 임베드하려면 다음 작업을 수행하십시오.
 
 1. 편집 모드에서 경험 조각을 엽니다.
 1. 구성 요소 브라우저에서 **[!UICONTROL 적응형 Forms - 포함(v2)]** 구성 요소를 경험 조각으로 드래그 앤 드롭합니다.
@@ -267,7 +267,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
      >
      > AEM Sites 페이지에 여러 양식을 포함하려면 **[!UICONTROL 양식의 전체 프레임 너비를 포함]** 확인란을 선택합니다.
 
-   * **[!UICONTROL Form이 프레임의 전체 너비를 포함]** 확인란이 선택되어 있지 않으면 적응형 양식이 컨테이너의 전체 너비를 포함하지 않습니다. 대신 iframe을 사용하여 양식을 렌더링하고 특정 너비를 초과하여 확장할 수 없습니다. 이 방법은 적응형 양식에 명확한 경계가 있고 컨테이너 내에서 그 옆에 있는 다른 AEM 구성 요소와 공존해야 하는 경우에 유용합니다. 이 옵션을 선택하지 않으면 AEM Sites 페이지의 적응형 Forms 하나만 iframe 없이 포함할 수 있습니다.
+   * **[!UICONTROL Form이 프레임의 전체 너비를 포함]** 확인란이 선택되어 있지 않으면 적응형 양식이 컨테이너의 전체 너비를 포함하지 않습니다. 대신 iframe을 사용하여 양식을 렌더링하고 특정 너비를 초과하여 확장할 수 없습니다. 이 방법은 적응형 양식에 명확한 경계가 있고 컨테이너 내에 그 옆에 있는 다른 AEM 구성 요소와 함께 공존해야 하는 경우에 유용합니다. 이 옵션을 선택하지 않으면 AEM Sites 페이지의 적응형 Forms 하나만 iframe 없이 포함할 수 있습니다.
 
      >[!NOTE]
      >
@@ -339,11 +339,11 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Publish 임베드된 적응형 양식 {#publishing-embedded-adaptive-form}
+## 포함된 적응형 양식 게시 {#publishing-embedded-adaptive-form}
 
-AEM sites 페이지에 임베드된 적응형 양식을 게시하기 위한 다음 시나리오를 살펴보겠습니다.
+AEM 사이트 페이지에 임베드된 적응형 양식을 게시하기 위한 다음 시나리오를 살펴보겠습니다.
 
-* AEM Sites 페이지를 처음 게시하며 임베드된 적응형 양식이 포함된 경우 사이트 페이지와 임베드된 에셋을 게시합니다.
+* AEM 사이트 페이지를 처음 게시하고 여기에 임베드된 적응형 양식이 포함된 경우 사이트 페이지와 임베드된 에셋을 게시하십시오.
 * 게시된 사이트 페이지에서 임베드된 적응형 양식만 수정한 경우 원래 에셋을 게시하고 변경 사항은 게시된 사이트 페이지에 반영됩니다. 게시된 사이트 페이지에는 자산에 대한 참조가 포함되어 있으며 페이지를 다시 게시할 필요가 없습니다.
 * 사이트 페이지 및 임베드된 적응형 양식을 수정한 경우 사이트 페이지 및 임베드된 자산을 다시 게시하십시오.
 

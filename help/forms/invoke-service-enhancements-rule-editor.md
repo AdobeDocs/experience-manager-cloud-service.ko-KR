@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 * 데이터 소스를 구성했는지 확인하십시오. 데이터 원본 구성에 대한 지침을 보려면 [여기를 클릭](/help/forms/configure-data-sources.md)하세요.
 * 구성된 데이터 소스를 사용하여 양식 데이터 모델을 만듭니다. 양식 데이터 모델을 만드는 방법에 대한 지침을 보려면 [여기를 클릭](/help/forms/create-form-data-models.md)하세요.
-* 사용자 환경에 대해 핵심 구성 요소가 활성화되었는지 확인합니다. 사용자 환경에 대해 핵심 구성 요소를 활성화하는 방법에 대한 자세한 지침을 보려면 [여기를 클릭](/help/forms/enable-adaptive-forms-core-components.md)하십시오.
+* 사용자 환경에 대해 핵심 구성 요소가 활성화되었는지 확인합니다. AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
 ## 다양한 사용 사례를 통한 서비스 호출 탐색
 

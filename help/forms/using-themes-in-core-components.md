@@ -5,10 +5,10 @@ keywords: 적응형 양식 스타일 지정 핵심 구성 요소. 핵심 구성 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2816'
-ht-degree: 5%
+source-wordcount: '2803'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 테마를 만들고 적용하여 적응형 양식의 스타일을 지정할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리되며 여러 적응형 Forms에서 재사용할 수 있습니다.
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 ## 스타일링 핵심 구성 요소에 사용할 수 있는 테마
 
-Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
+Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
@@ -47,7 +47,7 @@ Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요�
 
 ## 테마 만들기
 
-Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대한 적응형 양식 스타일 테마를 아래에 나열했습니다.
+Forms as Cloud Service이 제공하는 아래에 나열된 적응형 Forms 기반 핵심 구성 요소에 대한 적응형 양식 스타일 테마가 있습니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
@@ -63,15 +63,15 @@ Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대한 
 
 ### 사전 요구 사항 {#prerequisites-to-customize}
 
-* [Cloud Manager에서 파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#setup-pipeline)에 대해 잘 알고 있으며 파이프라인 설정 방법에 대한 기본 지식이 있으면 테마 맞춤화를 효율적으로 관리하고 배포하는 데 도움이 됩니다.
-* [기여자 역할로 사용자를 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ko)하는 방법을 알아봅니다. 기여자 역할이 있는 사용자를 구성하는 방법을 이해하면 테마 맞춤화에 필요한 권한을 부여할 수 있습니다.
+* [Cloud Manager에서 파이프라인 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)에 대해 잘 알고 있으며 파이프라인 설정 방법에 대한 기본 지식이 있으면 테마 맞춤화를 효율적으로 관리하고 배포하는 데 도움이 됩니다.
+* [기여자 역할로 사용자를 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)하는 방법을 알아봅니다. 기여자 역할이 있는 사용자를 구성하는 방법을 이해하면 테마 맞춤화에 필요한 권한을 부여할 수 있습니다.
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오. Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 * 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 
 ### 환경 설정
 
-* 로컬 개발 및 Cloud Service 환경에 대해 [적응형 Forms 핵심 구성 요소를 활성화](/help/forms/enable-adaptive-forms-core-components.md).
-* Cloud Service 환경에 대해 [프론트엔드 배포 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ko)을 구성하십시오. 또는 나중에 파이프라인을 구성할 수 있으므로 배포 파이프라인을 설정하기 전에 테스트 및 테마 세분화의 우선 순위를 지정할 수 있습니다.
+* AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
+* Cloud Service 환경에 대해 [프론트엔드 배포 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 구성하십시오. 또는 나중에 파이프라인을 구성할 수 있으므로 배포 파이프라인을 설정하기 전에 테스트 및 테마 세분화의 우선 순위를 지정할 수 있습니다.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -96,7 +96,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 테마를 사용하여 핵심 구성 요소 기반 적응형 Forms에 대한 브랜드 경험을 만드는 프로세스부터 시작하겠습니다.
 
-#### 1. 테마 복제 {#download-a-theme-core-components}
+#### &#x200B;1. 테마 복제 {#download-a-theme-core-components}
 
 적응형 Forms 기반의 핵심 구성 요소에 대한 테마를 복제하려면 다음 테마 중 하나를 선택하십시오.
 
@@ -125,7 +125,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    명령을 성공적으로 실행한 후에는 `aem-forms-theme-canvas` 폴더의 컴퓨터에서 테마의 로컬 복사본을 사용할 수 있습니다.
 
 
-#### 2. 테마 이름 설정 {#set-name-of-theme}
+#### &#x200B;2. 테마 이름 설정 {#set-name-of-theme}
 
 1. IDE에서 테마 폴더를 엽니다. 예를들어 Visual Studio 코드 편집기에서 `aem-forms-theme-canvas` 폴더를 열려면
 
@@ -153,7 +153,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    > * 선택에 따라 테마 이름을 선택할 수 있습니다(예: `mytheme` 또는 `customtheme`). 그러나 이 경우 이름을 `aem-forms-wknd-theme`(으)로 지정했습니다.
 
 1. 편집할 `package-lock.json` 페이지를 엽니다.
-1. `name` 및 `version` 특성에 대한 값을 설정하십시오. `Package-lock`.json 파일의 `name` 및 `version` 특성 값이 `Package.json` 파일의 값과 일치하는지 확인하십시오.
+1. `name` 및 `version` 특성에 대한 값을 설정하십시오. `name`.json 파일의 `version` 및 `Package-lock` 특성 값이 `Package.json` 파일의 값과 일치하는지 확인하십시오.
 
    ![캔버스 테마 이름 변경 이미지](/help/forms/assets/changename_canvastheme-package-lock.png)
 
@@ -165,13 +165,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 **테마 이름을 설정하는 동안 고려 사항**
 
-* `Package.json` 파일 및 `Package-lock.json` 파일의 테마 이름에서 `@aemforms`을(를) 제거해야 합니다. 맞춤화된 테마 이름에서 `@aemforms`을(를) 제거하지 못하면 테마를 배포하는 동안 프론트엔드 파이프라인이 실패합니다.
-* `Package.json` 파일 및 `Package-lock.json` 파일의 `version` 테마를 업데이트하여 테마에 대한 시간 경과에 따른 변경 내용 및 개선 사항을 정확하게 반영하는 것이 좋습니다.
+* `@aemforms` 파일 및 `Package.json` 파일의 테마 이름에서 `Package-lock.json`을(를) 제거해야 합니다. 맞춤화된 테마 이름에서 `@aemforms`을(를) 제거하지 못하면 테마를 배포하는 동안 프론트엔드 파이프라인이 실패합니다.
+* `version` 파일 및 `Package.json` 파일의 `Package-lock.json` 테마를 업데이트하여 테마에 대한 시간 경과에 따른 변경 내용 및 개선 사항을 정확하게 반영하는 것이 좋습니다.
 * 사용 방법, 설치 지침 및 기타 관련 세부 정보를 보려면 `ReadMe` 파일의 테마 이름을 업데이트하는 것이 좋습니다.
 
-#### 3. 테마 맞춤화 {#customize-the-theme}
+#### &#x200B;3. 테마 맞춤화 {#customize-the-theme}
 
-개별 구성 요소를 사용자 지정하거나 테마의 전역 변수를 사용하여 테마 수준을 변경할 수 있습니다. 전역 변수에 대한 변경 사항은 모든 개별 구성 요소에 영향을 줍니다. 예를 들어, 전역 변수를 사용하여 적응형 양식의 모든 구성 요소의 테두리 색상을 변경하고 밝은 채우기 색상을 사용하여 버튼 구성 요소를 사용하여 CTA(콜 투 액션)을 설정할 수 있습니다.
+개별 구성 요소를 사용자 지정하거나 테마의 전역 변수를 사용하여 테마 수준을 변경할 수 있습니다. 전역 변수에 대한 변경 사항은 모든 개별 구성 요소에 영향을 줍니다. 예를 들어, 전역 변수를 사용하여 적응형 양식의 모든 구성 요소의 테두리 색상을 변경하고 밝은 채우기 색상을 사용하여 버튼 구성 요소를 사용하여 CTA(Call to action)를 설정할 수 있습니다.
 
 * [테마 수준 스타일 설정](#theme-customization-global-level)
 
@@ -194,7 +194,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 특정 적응형 양식 핵심 구성 요소의 글꼴, 색상, 크기 및 기타 CSS 속성을 변경할 수도 있습니다. 예를 들어, 단추, 확인란, 컨테이너, 바닥글 등이 있습니다. 특정 구성 요소의 CSS 파일을 편집하여 버튼 또는 확인란의 스타일을 지정하여 조직의 스타일에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 정의하려면 다음을 수행합니다.
 
 1. 편집할 `<your-theme-sources>/src/components/<component>/<component.scss>` 파일을 엽니다. 예를 들어 단추 구성 요소의 글꼴 색을 변경하려면 `<your-theme-sources>/src/components/button/button.scss` 파일을 엽니다.
-1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스로 가리키면 단추 구성 요소의 색상을 `green`(으)로 변경하려면 `cmp-adaptiveform-button__widget:hover` 클래스의 `color: $white` 속성 값을 16진수 코드 `#12B453` 또는 `green`의 다른 음영으로 변경합니다. 최종 코드는 다음과 같습니다.
+1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스로 가리키면 단추 구성 요소의 색상을 `green`(으)로 변경하려면 `color: $white` 클래스의 `cmp-adaptiveform-button__widget:hover` 속성 값을 16진수 코드 `#12B453` 또는 `green`의 다른 음영으로 변경합니다. 최종 코드는 다음과 같습니다.
 
    ```
    .cmp-adaptiveform-button__widget:hover {
@@ -211,9 +211,9 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >
    > 테마 및 구성 요소 수준에서 스타일이 정의되면 구성 요소 수준에서 정의된 스타일이 우선합니다.
 
-#### 4. 맞춤화된 테마 테스트 {#test-the-theme}
+#### &#x200B;4. 맞춤화된 테마 테스트 {#test-the-theme}
 
-로컬 환경에서 변경 사항을 미리 보고 테스트하고, 다른 AEM 구성 요소에 대한 요구 사항에 따라 테마를 사용자 정의하려면 다음 단계를 수행하십시오.
+로컬 환경에서 변경 사항을 미리 보고 테스트하고, 다양한 AEM 구성 요소의 요구 사항에 따라 테마를 사용자 정의하려면 다음 단계를 수행하십시오.
 
 * 4.1 [테스트를 위한 로컬 환경 구성](#rename-env-file-theme-folder)
 * 4.2 [로컬 환경을 사용하여 테마 테스트](#start-a-local-proxy-server)
@@ -275,7 +275,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ###### Cloud Service 환경에서 호스팅되는 양식의 테마 테스트
 
-AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에 대한 테마를 테스트할 수도 있습니다. 클라우드 인스턴스에서 호스팅된 적응형 Forms을 사용하여 테마를 테스트하기 위한 로컬 환경을 구성하고 설정하려면 다음 단계를 수행하십시오.
+AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 대한 테마를 테스트할 수도 있습니다. 클라우드 인스턴스에서 호스팅된 적응형 Forms을 사용하여 테마를 테스트하기 위한 로컬 환경을 구성하고 설정하려면 다음 단계를 수행하십시오.
 
 1. IDE에서 테마 폴더를 엽니다. 예를들어 Visual Studio 코드 편집기에서 `aem-forms-theme-canvas` 폴더를 엽니다.
 1. `env_template` 파일의 이름을 `.env` 파일로 바꾸고 다음 매개 변수를 추가합니다.
@@ -311,9 +311,9 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 적응형 양식에 최신 변경 사항을 미리 볼 수 있습니다. 테마 폴더에서 수정한 사항에 만족하면 프론트엔드 파이프라인을 사용하여 테마를 AEM Cloud Service 환경에 배포합니다.
 
-#### 5. 테마 배포 {#deploy-the-theme}
+#### &#x200B;5. 테마 배포 {#deploy-the-theme}
 
-프론트엔드 파이프라인을 사용하여 테마를 Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+프론트엔드 파이프라인을 사용하여 Cloud Service 환경에 테마를 배포하려면 다음을 수행하십시오.
 
 * 5.1 [테마에 대한 저장소 만들기](#create-a-new-theme-repo)
 * 5.2 [변경 내용을 리포지토리에 푸시](#committing-the-changes)
@@ -321,7 +321,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 ##### 5.1 테마를 위한 저장소 만들기{#create-a-new-theme-repo}
 
-테마를 배포하려면 저장소가 필요합니다. [AEM Cloud Manager 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)에 로그인하고 테마에 대한 새 저장소를 추가하십시오.
+테마를 배포하려면 저장소가 필요합니다. [AEM Cloud Manager 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)에 로그인하고 테마에 대한 새 저장소를 추가하십시오.
 
 1. **[!UICONTROL 저장소]** > **[!UICONTROL 저장소 추가]**&#x200B;를 클릭하여 테마에 대한 새 저장소를 만듭니다.
 
@@ -373,21 +373,21 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 ##### 5.3 프론트엔드 파이프라인 실행 {#run-a-frontend-pipeline}
 
-테마는 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ko)을 사용하여 배포됩니다. 테마를 배포하려면 다음 단계를 수행하십시오.
+테마는 [프론트엔드 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 사용하여 배포됩니다. 테마를 배포하려면 다음 단계를 수행하십시오.
 
 1. AEM Cloud Manager 저장소에 로그인합니다.
 1. **[!UICONTROL 파이프라인]** 섹션에서 **[!UICONTROL 추가]** 단추를 클릭합니다.
-1. Cloud Service 환경에 따라 **[!UICONTROL 비프로덕션 파이프라인 추가]** 또는 **[!UICONTROL 프로덕션 파이프라인 추가]**&#x200B;를 선택합니다. 예를 들어 **[!UICONTROL 프로덕션 파이프라인 추가]** 옵션이 선택되어 있습니다.
+1. Cloud Service 환경을 기반으로 **[!UICONTROL 비프로덕션 파이프라인 추가]** 또는 **[!UICONTROL 프로덕션 파이프라인 추가]**&#x200B;를 선택합니다. 예를 들어 **[!UICONTROL 프로덕션 파이프라인 추가]** 옵션이 선택되어 있습니다.
 1. **[!UICONTROL 구성]** 단계의 일부로 **[!UICONTROL 프로덕션 파이프라인 추가]** 대화 상자에서 파이프라인의 이름을 지정합니다. 예를 들어 파이프라인 이름은 `customcanvastheme`입니다.
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 다음 위치에서 **[!UICONTROL 타깃팅된 배포]** > **[!UICONTROL 프론트엔드 코드]** 옵션을 선택하십시오.
 **[!UICONTROL Source 코드]** 단계.
 1. 최신 변경 사항이 있는 **[!UICONTROL 저장소]** 및 **[!UICONTROL Git 분기]** 값을 선택하십시오. 예를 들어 선택한 저장소 이름은 `custom-canvas-theme-repo`이고 Git 분기는 `main`입니다.
 1. 변경 내용이 루트 폴더에 있는 경우 **[!UICONTROL 코드 위치]**&#x200B;을(를) `/`(으)로 선택합니다.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 저장]**을 클릭합니다.
    ![프론트엔드 파이프라인 만들기](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
-   파이프라인 설정이 완료되면 콜 투 액션 카드가 업데이트됩니다.
+   파이프라인 설정이 완료되면 call-to-action 카드가 업데이트됩니다.
 
 1. 생성된 파이프라인을 마우스 오른쪽 버튼으로 클릭합니다.
 1. **[!UICONTROL 실행]** 을 클릭합니다.
@@ -406,7 +406,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 
 1. AEM Forms 작성자 인스턴스에 로그인합니다.
 
-1. **Adobe Experience Manager** > **Forms** > **Forms 및 문서**&#x200B;를 선택합니다.
+1. **Adobe Experience Manager** > **양식** > **양식 및 문서**&#x200B;를 선택합니다.
 
 1. **만들기** > **적응형 Forms**&#x200B;을 클릭합니다. 적응형 양식 만들기 마법사가 열립니다.
 
@@ -441,12 +441,7 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
-
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -457,5 +452,4 @@ AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [적응형 Forms(핵심 구성 요소)를 위한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [반복 가능한 섹션이 포함된 적응형 Forms 만들기](/help/forms/create-forms-repeatable-sections.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
-* [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

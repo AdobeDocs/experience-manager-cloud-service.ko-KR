@@ -3,17 +3,17 @@ title: Forms 포털 구성 요소를 사용하여 Adobe Experience Manager Sites
 description: AEM Sites 페이지에 양식을 나열하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
 
-
 # 사이트 페이지의 목록 양식
 
-사용자가 계좌 개설 양식을 찾아 은행의 웹 사이트를 방문한다고 상상해 보십시오. 은행은 Forms 포털 구성 요소를 사용하여 사용자가 특정 키워드를 입력하거나 &#39;새 계정&#39; 또는 &#39;개인 뱅킹&#39;과 같은 카테고리별로 필터링하여 양식을 신속하게 찾을 수 있도록 지원하며, 사용자가 긴 목록을 스크롤하지 않고도 원하는 양식을 쉽게 찾을 수 있도록 합니다.
+사용자가 계좌 개설 양식을 찾아 은행 웹사이트를 방문한다고 상상해 보십시오. 은행은 Forms 포털 구성 요소를 사용하여 사용자가 특정 키워드를 입력하거나 &#39;새 계정&#39; 또는 &#39;개인 뱅킹&#39;과 같은 카테고리별로 필터링하여 양식을 신속하게 찾을 수 있도록 지원하며, 사용자가 긴 목록을 스크롤하지 않고도 원하는 양식을 쉽게 찾을 수 있도록 합니다.
 
 Forms 포털의 **검색 및 목록 작성기** 구성 요소를 사용하여 Sites 페이지에 양식을 표시하고 나열할 수 있습니다. 사용자는 조직 요구 사항을 충족하기 위해 특정 기준에 따라 포괄적인 양식 목록을 구성하고 제공할 수 있습니다. 익명의 사용자는 사이트 페이지를 방문하여 사용 가능한 양식을 보고 검색할 수 있습니다. 화면의 오른쪽 상단에 있는 **정렬 기준** 드롭다운 옵션을 사용하여 나열된 양식을 오름차순 또는 내림차순으로 정렬할 수 있습니다.
 
@@ -21,14 +21,14 @@ Forms 포털의 **검색 및 목록 작성기** 구성 요소를 사용하여 Si
 
 ## 전제 조건
 
-Forms 포털 구성 요소의 다양한 기능을 살펴보기 전에 환경에 대해 핵심 구성 요소가 활성화되었는지 확인하십시오. 사용자 환경에 대해 핵심 구성 요소를 활성화하는 방법에 대한 자세한 지침을 보려면 [여기를 클릭](/help/forms/enable-adaptive-forms-core-components.md)하십시오.
+Forms 포털 구성 요소의 다양한 기능을 살펴보기 전에 환경에 대해 핵심 구성 요소가 활성화되었는지 확인하십시오. AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
 <!--
 ## Enable Forms Portal components for your existing environment
 
 To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
 
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=ko).  
+1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
 
 1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
@@ -46,9 +46,9 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
     `mvn -PautoInstallPackage clean install`
 
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#building-and-installing)
+    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ko#embeddeds). -->
+1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
 최신 핵심 구성 요소를 환경에 배포하면 작성 환경에서 Forms 포털 구성 요소에 액세스할 수 있습니다.
 
@@ -60,7 +60,7 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 1. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 템플릿 편집]**(으)로 이동
    ![템플릿 정책 편집](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[AEM Archetype 프로젝트 이름] - Forms 및 통신 포털**&#x200B;에서 **[!UICONTROL 검색 및 목록 작성자]** 확인란을 선택하십시오.
+1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[!UICONTROL AEM Archetype 프로젝트 이름]** - Forms 및 통신 포털&#x200B;**[에서 ]검색 및 목록 작성자** 확인란을 선택합니다.
 
    ![정책 선택](/help/forms/assets/search-lister-enable-policy.png)
 
@@ -139,7 +139,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ko#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 

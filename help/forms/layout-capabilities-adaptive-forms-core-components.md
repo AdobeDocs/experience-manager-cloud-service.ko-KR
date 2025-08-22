@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 전제 조건
 
-레이아웃의 다양한 기능을 살펴보기 전에 환경에 대해 핵심 구성 요소가 활성화되었는지 확인하십시오. 환경에 핵심 구성 요소를 사용하도록 설정하는 방법에 대한 자세한 지침을 보려면 [여기를 클릭](/help/forms/enable-adaptive-forms-core-components.md)하세요.
+레이아웃의 다양한 기능을 살펴보기 전에 환경에 대해 핵심 구성 요소가 활성화되었는지 확인하십시오. AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
 ## 적응형 Forms 레이아웃 유형
 
@@ -42,23 +42,23 @@ ht-degree: 1%
 
 >[!TAB 패널 레이아웃]
 
-패널 레이아웃은 해당 컨텐츠를 더 쉽게 탐색하고 찾을 수 있도록 관련 필드를 구성하는 데 유용합니다. 패널 레이아웃은 적응형 양식의 개별, 섹션 또는 패널 내에 양식 구성 요소를 정렬합니다.
+패널 레이아웃을 사용하면 관련 필드를 함께 그룹화하여 쉽게 탐색하고 원하는 콘텐츠를 빠르게 찾을 수 있습니다. 패널 레이아웃은 적응형 양식의 개별, 섹션 또는 패널 내에 양식 구성 요소를 정렬합니다.
 
 ![패널 레이아웃](/help/forms/assets/panel-layout.png)
 
 패널 레이아웃
 
-[패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)를 사용하여 양식에 패널 레이아웃을 추가할 수 있습니다. 패널 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 문서를 참조하십시오.
+[패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)를 사용하여 양식에 패널 레이아웃을 추가할 수 있습니다. 패널 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 설명서를 참조하십시오.
 
 >[!TAB 마법사 레이아웃]
 
-마법사 레이아웃은 복잡한 양식을 별도의 단계로 나누어 단순화하는 데 도움이 됩니다. 각 단계는 프로세스의 다른 부분을 나타내며 사용자는 **다음** 및 **이전** 단추를 사용하여 단계를 순차적으로 탐색합니다. 마법사 레이아웃을 사용하여 여러 섹션이나 단계가 포함된 양식을 만들 수 있습니다.
+마법사 레이아웃은 복잡한 양식을 별도의 단계로 나누어 단순화하는 데 도움이 됩니다. 각 단계는 프로세스의 다른 부분을 나타내며 사용자는 **다음** 및 **이전** 단추를 사용하여 단계를 순차적으로 탐색합니다. 여러 섹션이나 단계를 포함하는 양식을 만들기 위해 마법사 레이아웃을 사용할 수 있습니다.
 
 ![마법사 레이아웃](/help/forms/assets/wizard-layout-compare.gif)
 
 마법사 레이아웃
 
-[마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)를 사용하여 양식에 마법사 레이아웃을 추가할 수 있습니다. 마법사 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) 문서를 참조하십시오.
+양식에 마법사 레이아웃을 추가하려면 [마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)를 사용하십시오. 마법사 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [마법사 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) 설명서를 참조하십시오.
 
 >[!TAB 세로 탭 레이아웃]
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 세로 탭 레이아웃
 
-[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
+[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 가로 탭 레이아웃]
@@ -80,18 +80,18 @@ ht-degree: 1%
 
 가로 탭 레이아웃
 
-[가로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
+[가로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 아코디언 레이아웃]
 
-아코디언 레이아웃은 적응형 양식의 축소 가능한 섹션이나 패널에 콘텐츠를 표시합니다. 섹션을 확장하면 내의 컨텐츠가 표시되고 다른 섹션은 축소된 상태로 유지됩니다. 이 레이아웃은 대량의 정보를 컴팩트한 형식으로 표시하는 데 이상적입니다.
+아코디언 레이아웃은 적응형 양식에서 접을 수 있는 섹션이나 패널 형식으로 콘텐츠를 표시합니다. 섹션이 확장되면 그 안의 콘텐츠가 표시되고, 다른 섹션은 축소된 상태를 유지합니다. 이 레이아웃은 많은 양의 정보를 압축된 양식으로 표시하는 데 이상적입니다.
 
 ![아코디언 레이아웃](/help/forms/assets/accordion-layout-compare.gif)
 
-어코디언 레이아웃
+아코디언 레이아웃
 
-[아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)를 사용하여 양식에 아코디언 레이아웃을 추가할 수 있습니다. 아코디언 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) 문서를 참조하십시오.
+양식에 아코디언 레이아웃을 추가하려면 [아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)를 사용하십시오. 아코디언 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [아코디언 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) 설명서를 참조하십시오.
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ ht-degree: 1%
 
 사용자 경험과 양식 기능을 최적화하려면 올바른 적응형 양식 레이아웃을 선택하는 것이 중요합니다. 이 표는 사용 가능한 다양한 레이아웃 옵션을 이해하는 데 도움이 되며 특정 요구 사항 및 사용 사례에 따라 가장 적합한 레이아웃을 선택할 수 있도록 안내합니다.
 
-| 기능 | 패널 레이아웃 | 마법사 레이아웃 | 상단/수직 탭 레이아웃의 탭 | 왼쪽/가로 탭 레이아웃의 탭 | 어코디언 레이아웃 |
+| 기능 | 패널 레이아웃 | 마법사 레이아웃 | 상단/수직 탭 레이아웃의 탭 | 왼쪽/가로 탭 레이아웃의 탭 | 아코디언 레이아웃 |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **목적** | 관련 콘텐츠를 개별 섹션으로 그룹화 | 여러 단계 프로세스 또는 양식을 안내합니다. | 동일한 페이지에서 섹션/보기 간 전환 허용 | 상단 탭과 유사하지만 왼쪽에 세로로 정렬됨 | 콘텐츠를 축소 가능한 섹션으로 구성 |
-| **구조** | 개별 섹션 | 순차적 단계/페이지 | 상단의 가로 탭 | 왼쪽의 세로 탭 | 축소 가능한 패널/섹션 |
-| **탐색** | 탐색할 패널 헤더를 클릭합니다 | - 앞으로: &quot;다음&quot; 단추<br>- 뒤로: &quot;뒤로&quot; 단추<br>- 선택적 건너뛸 단계 | 탭을 클릭하여 섹션 전환 | 탭을 클릭하여 섹션 전환 | 섹션을 확장/축소하려면 헤더를 클릭하십시오. |
-| **사용자 환경** | 대량의 컨텐츠를 관리 가능한 방식으로 구성 | 단계별 지침을 통해 과중한 업무 부담 감소 | 보기 간 액세스 가능한 지우기 전환 | 세로 공간을 효율적으로 사용하고 항상 표시되는 탭 | 확장/축소된 단면이 있는 컴팩트한 보기 |
-| **사용 사례** | 분류된 섹션이 있는 복잡한 양식 | 프로세스 설정, 복잡한 양식 | 설정 또는 콘텐츠 범주 구성 | 대시보드, 복잡한 데이터 보기 | FAQ, 설정 메뉴, 세부 콘텐츠 섹션 |
+| **용도** | 관련 콘텐츠를 구분된 섹션으로 그룹화 | 다단계 프로세스 또는 양식을 안내 | 동일한 페이지에서 섹션/보기 간 전환 허용 | 상단 탭과 유사하지만 왼쪽에 세로로 정렬됨 | 콘텐츠를 접을 수 있는 섹션으로 구성 |
+| **구조** | 구분된 섹션 | 순차적 단계/페이지 | 상단의 가로 탭 | 왼쪽의 세로 탭 | 접을 수 있는 패널/섹션 |
+| **탐색** | 패널 헤더를 클릭하여 탐색 | - 앞으로: “다음” 버튼<br>- 뒤로: “뒤로” 버튼<br>- 선택적으로 단계를 건너뛸 수 있음 | 탭을 클릭하여 섹션 전환 | 탭을 클릭하여 섹션 전환 | 헤더를 클릭하여 섹션을 확장하거나 축소 |
+| **사용자 경험** | 관리 가능한 방식으로 많은 콘텐츠를 정리 | 단계별 안내로 부담감 감소 | 보기 간 액세스 가능한 지우기 전환 | 세로 공간을 효율적으로 사용하고 항상 표시되는 탭 | 확장/축소 가능한 섹션을 활용한 압축 보기 |
+| **사용 사례** | 복잡한 양식의 분류된 섹션 | 설정 프로세스, 복잡한 양식 | 설정 또는 콘텐츠 범주 구성 | 대시보드, 복잡한 데이터 보기 | FAQ, 설정 메뉴, 상세 콘텐츠 섹션 |
 
 
 ## 레이아웃을 삽입하고 양식 구성 요소를 추가하는 방법
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 ![레이아웃 및 양식 구성 요소를 추가하는 워크플로](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-[적응형 Forms 레이아웃 유형](#adaptive-forms-layout-types) 섹션에 표시된 **IT 요청 양식**&#x200B;을 고려하십시오. 이 양식은 네트워크 또는 노트북과 관련된 기술 문제를 경험하는 직원으로부터 정보를 수집합니다. 여기에는 세 개의 패널이 포함됩니다.
+**적응형 Forms 레이아웃 유형** 섹션에 표시된 [IT 요청 양식](#adaptive-forms-layout-types)을 고려하십시오. 이 양식은 네트워크 또는 노트북과 관련된 기술 문제를 경험하는 직원으로부터 정보를 수집합니다. 여기에는 세 개의 패널이 포함됩니다.
 
 * **직원 세부 정보**: 패널에서는 직원에 대한 정보를 수집하고 이름, 전자 메일 ID 및 부서라는 텍스트 상자 세 개를 포함합니다.
 
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 레이아웃을 삽입하고 여기에 구성 요소를 추가하는 단계별 프로세스를 살펴보겠습니다. 이 예제에서 가로 탭 레이아웃은 폼에 삽입됩니다.
 
-### 1. 양식에 레이아웃 구성 요소 삽입
+### &#x200B;1. 양식에 레이아웃 구성 요소 삽입
 
 1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
 1. 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
@@ -168,7 +168,7 @@ ht-degree: 1%
 
 레이아웃 구성 요소가 양식에 추가되면 요구 사항에 따라 패널 수를 수정합니다.
 
-### 2. 레이아웃에 패널 추가
+### &#x200B;2. 레이아웃에 패널 추가
 
 가로 탭 구성 요소에 새 패널 추가:
 
@@ -216,7 +216,7 @@ ht-degree: 1%
 
 마찬가지로 다른 두 패널의 제목도 숨길 수 있습니다. 완료되면 각 패널에 양식 구성 요소를 추가할 수 있습니다.
 
-### 3. 패널에 양식 구성 요소 추가
+### &#x200B;3. 패널에 양식 구성 요소 추가
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
@@ -260,7 +260,7 @@ ht-degree: 1%
 
    ![세 번째 패널 구성 요소](/help/forms/assets/panel-3-component.png)
 
-1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
+1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**를 클릭합니다.
    ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.

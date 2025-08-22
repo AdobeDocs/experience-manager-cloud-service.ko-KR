@@ -4,9 +4,9 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1373'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 양식을 초안으로 저장하고 사이트 페이지에 나열
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM은 AEM Sites 페이지에 초안 및 제출을 표시하는 **초안 및 제출** Forms 포털 구성 요소를 즉시 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## 사전 요구 사항
 
-* [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](/help/forms/enable-adaptive-forms-core-components.md).
+* AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
   최신 핵심 구성 요소를 환경에 배포하면 작성 환경에서 Forms 포털 구성 요소에 액세스할 수 있습니다.
 
@@ -41,17 +41,17 @@ ht-degree: 3%
    ![Azure 저장소 구성 폴더 선택](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
-1. **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
+1. [!DNL Azure]Azure 저장소 계정&#x200B;**[!UICONTROL 및]** Azure 액세스 키&#x200B;**[!UICONTROL 필드에]** 저장소 계정의 이름을 지정하십시오.
 
    ![Azure Storage 구성](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
-   `Azure Storage Account` 텍스트 상자에 `Connection String`을(를) 입력하고 `Azure Access key` 텍스트 상자에 `Azure Key`을(를) 입력합니다.
+   `Connection String` 텍스트 상자에 `Azure Storage Account`을(를) 입력하고 `Azure Key` 텍스트 상자에 `Azure Access key`을(를) 입력합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   > [Microsoft Azure 포털](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)에서 **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]**&#x200B;를 검색할 수 있습니다.
+   > **[!UICONTROL Microsoft Azure 포털]**&#x200B;에서 **[!UICONTROL Azure 저장소 계정]** 및 [Azure 액세스 키](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)를 검색할 수 있습니다.
 
    Azure 스토리지 구성을 만들었으면 다음 단계를 사용하여 Forms 포털용 통합 스토리지 커넥터를 구성하십시오.
 
@@ -80,7 +80,7 @@ ht-degree: 3%
 1. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 템플릿 편집]**(으)로 이동
    ![템플릿 정책 편집](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[AEM Archetype 프로젝트 이름] - Forms 및 통신 포털**&#x200B;에서 **[!UICONTROL 초안 및 제출]** 확인란을 선택하십시오.
+1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[!UICONTROL AEM Archetype 프로젝트 이름]** - Forms 및 통신 포털&#x200B;**[에서 ]초안 및 제출** 확인란을 선택하십시오.
 
    ![정책 선택](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -123,7 +123,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> **양식 저장** 규칙을 사용하여 양식을 초안으로 저장하려면 [핵심 구성 요소 버전이 3.0.24 이상](https://github.com/adobe/aem-core-forms-components)&#x200B;(으)로 설정되어 있는지 확인하십시오.
+> [양식 저장](https://github.com/adobe/aem-core-forms-components) 규칙을 사용하여 양식을 초안으로 저장하려면 **핵심 구성 요소 버전이 3.0.24 이상**(으)로 설정되어 있는지 확인하십시오.
 
 양식을 초안으로 저장하려면 단추와 같은 양식 구성 요소에 **양식 저장** 규칙을 만듭니다. 버튼을 클릭하면 규칙이 트리거되고 양식이 초안으로 저장됩니다. 단추 구성 요소에 **양식 저장** 규칙을 만들려면 다음 단계를 수행하십시오.
 
@@ -159,11 +159,11 @@ ht-degree: 3%
 ## 초안 및 제출 구성 요소를 사용하여 사이트 페이지에서 초안/제출된 양식 보기
 
 저장된 초안 또는 제출된 양식을 보려면 **초안 및 제출** Forms 포털 구성 요소를 사용하십시오.
-초안 및 제출 구성 요소의 [구성 대화 상자](#configure-properties-of-the-drafts--submissions-component)에서 **[!UICONTROL 유형 선택]**&#x200B;이(가) **초안 Forms**(으)로 선택되면 초안으로 저장된 양식이 사이트 페이지에 표시됩니다. 생략 부호(...)를 클릭하여 초안을 열어 양식을 완료할 수 있습니다.
+초안 및 제출 구성 요소의 **[!UICONTROL 구성 대화 상자]**&#x200B;에서 **유형 선택**&#x200B;이(가) [초안 Forms](#configure-properties-of-the-drafts--submissions-component)(으)로 선택되면 초안으로 저장된 양식이 사이트 페이지에 표시됩니다. 생략 부호(...)를 클릭하여 초안을 열어 양식을 완료할 수 있습니다.
 
 ![초안 아이콘](assets/drafts-component.png)
 
-초안 및 제출 구성 요소의 [구성 대화 상자](#configure-properties-of-the-drafts--submissions-component)에서 **[!UICONTROL 유형 선택]**&#x200B;이(가) **제출된 Forms**(으)로 선택되면 제출된 양식이 표시됩니다. 제출된 양식을 볼 수 있지만 편집할 수는 없습니다.
+초안 및 제출 구성 요소의 **[!UICONTROL 구성 대화 상자]**&#x200B;에서 **유형 선택**&#x200B;이(가) [제출된 Forms](#configure-properties-of-the-drafts--submissions-component)(으)로 선택되면 제출된 양식이 표시됩니다. 제출된 양식을 볼 수 있지만 편집할 수는 없습니다.
 
 ![제출 아이콘](assets/submission-listing.png)
 

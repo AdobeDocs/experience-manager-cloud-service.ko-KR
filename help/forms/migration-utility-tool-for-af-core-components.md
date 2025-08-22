@@ -1,6 +1,6 @@
 ---
 title: 마이그레이션 유틸리티 도구/AEM 현대화 도구 를 사용하여 기초 구성 요소 기반의 적응형 Forms을 핵심 구성 요소 기반 양식으로 변환
-description: 마이그레이션 유틸리티/AEM 현대화 도구를 설치 및 사용하여 적응형 Forms 기반 구성 요소를 핵심 구성 요소 기반 양식으로 변환하는 방법에 대해 알아봅니다.
+description: 마이그레이션 유틸리티/AEM 현대화 도구를 설치하고 사용하여 적응형 Forms 기반 구성 요소를 핵심 구성 요소 기반 양식으로 변환하는 방법에 대해 알아봅니다.
 Keywords: Migration Utility Tool, Convert Adaptive Forms based on Foundation Components to Core Component based forms, Convert Foundation forms to Core Components forms, Using Modernizer Tool to convert Foundation Components to Core Components in forms.
 role: User, Developer, Admin
 features: core components
@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 6%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 6%
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/) 제품군의 일부인 Forms 변환 유틸리티를 사용하면 레거시 Foundation 구성 요소로 빌드된 적응형 Forms을 핵심 구성 요소의 현대적이고 지원되는 기능을 활용하는 양식으로 쉽게 변환할 수 있습니다.
+[Forms 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/) 제품군의 일부인 AEM 변환 유틸리티를 사용하면 레거시 Foundation 구성 요소로 빌드된 적응형 Forms을 핵심 구성 요소의 현대적이고 지원되는 기능을 활용하는 양식으로 쉽게 변환할 수 있습니다.
 
 ## AEM 현대화 도구란 무엇입니까?
 
-[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)은(는) AEM(Adobe Experience Manager) 프로젝트를 현대화하거나 업데이트하는 프로세스를 용이하게 하기 위해 고안된 유틸리티 또는 소프트웨어 응용 프로그램 집합을 나타냅니다. 이러한 도구는 일반적으로 AEM 내의 이전 구성 요소 또는 기능을 보다 효율적이고 지원되는 최신 대체 요소로 전환하는 데 도움이 됩니다. Forms 전환 유틸리티는 AEM 현대화 도구 아래에 설치되어 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 변환합니다.
+[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)은(는) Adobe Experience Manager(AEM) 프로젝트를 현대화하거나 업데이트하는 프로세스를 용이하게 하기 위해 고안된 유틸리티 또는 소프트웨어 응용 프로그램 집합을 나타냅니다. 이러한 도구는 일반적으로 AEM 내의 이전 구성 요소 또는 기능을 새롭고 보다 효율적이며 지원되는 대체 요소로 전환하는 데 도움이 됩니다. Forms 전환 유틸리티는 AEM 현대화 도구 아래에 설치되며 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 변환합니다.
 
-Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 적응형 Forms을 최신 핵심 구성 요소 기반 양식으로 전환합니다. 이러한 변환 프로세스를 통해 양식이 최신 표준 및 기능에 맞게 조정되므로 AEM 환경 내에서 성능, 호환성 및 유지 관리의 용이성이 잠재적으로 향상될 수 있습니다.
+Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 적응형 Forms을 최신 핵심 구성 요소 기반 양식으로 전환합니다. 이러한 변환 프로세스를 통해 양식이 최신 표준 및 기능과 일치하도록 하고 잠재적으로 AEM 환경 내에서 성능, 호환성 및 유지 관리의 용이성을 개선할 수 있습니다.
 
 ![AEM 현대화 도구](/help/forms/assets/aem-modernize-tools.png)
 
@@ -54,9 +54,9 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 ## AEM 현대화 도구 사용을 위한 전제 조건
 
 * [AEM Forms에 대한 로컬 개발 환경을 설정합니다](/help/forms/setup-local-development-environment.md).
-* [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](/help/forms/enable-adaptive-forms-core-components.md).
+* AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 * 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 구성원은 적응형 양식을 만들 수 있는 권한이 있습니다.
-* 다음 역할이 있는 사용자는 AEM 환경 내에 AEM 현대화 도구 를 설치할 수 있는 권한이 있습니다.
+* 다음 역할을 가진 사용자는 AEM 환경 내에 AEM 현대화 도구 를 설치할 수 있습니다.
 
    * 개발자 역할
    * 책임자 역할
@@ -68,7 +68,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 AEM 현대화 도구 설치 및 구성 방법:
 
 1. [로컬 AEM Forms 환경에 AEM 현대화 도구 설치](#install-aem-modernize-Tools)
-1. [로컬 AEM Forms 환경을 위해 AEM 현대화 도구 활성화](#enable-aem-modernize-Tools)
+1. [로컬 AEM Forms 환경을 위한 AEM 현대화 도구 활성화](#enable-aem-modernize-Tools)
 
 ### 로컬 AEM Forms 환경에 AEM 현대화 도구 설치 {#install-aem-modernize-Tools}
 
@@ -96,22 +96,22 @@ AEM 현대화 도구 설치 및 구성 방법:
 
 ![설치 이미지](/help/forms/assets/aem-modernize-install-steps.png)
 
-성공적으로 설치하면 AEM 현대화 도구 를 해당 환경에서 사용할 수 있게 됩니다.
+설치가 완료되면 사용자 환경에서 AEM 현대화 도구 를 사용할 수 있습니다.
 
 ![AEM 마이그레이션 유틸리티 도구 사용](/help/forms/assets/enable-aem-modernizer-tools.png)
 
 
-### 로컬 AEM Forms 환경을 위해 AEM 현대화 도구 활성화{#enable-aem-modernize-Tools}
+### 로컬 AEM Forms 환경을 위한 AEM 현대화 도구 활성화{#enable-aem-modernize-Tools}
 
-AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Foundation 구성 요소를 핵심 구성 요소로 마이그레이션하기 위한 규칙을 매핑해야 합니다.
+AEM 환경에 AEM 현대화 도구 를 활성화하고 사용하려면 Foundation 구성 요소를 핵심 구성 요소로 마이그레이션하기 위한 규칙을 매핑해야 합니다.
 
 1. 작성자 인스턴스에 로그인합니다.
-1. `http://[host]:[port]/system/console/configMgr`(으)로 이동
+1. 다음으로 이동 `http://[host]:[port]/system/console/configMgr`
 1. `AEM Modernize Tools - Component Rewrite Rule Service`을(를) 찾아 편집합니다.
 1. `Component Rule Paths`을(를) `/apps/forms-modernizer/rules`(으)로 추가합니다.
 1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-![AEM 현대화 구성 요소 규칙](/help/forms/assets/aem-modernize-tools-component-rule.png)
+![AEM 구성 요소 규칙 현대화](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
 ## 양식 변환 유틸리티를 실행하여 기초 구성 요소 기반 양식을 핵심 구성 요소 기반 양식으로 변환
 
@@ -136,8 +136,8 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
    이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. **대상에 복사** 옵션을 선택하면 **[!UICONTROL Source 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
 
-1. **[!UICONTROL Source 경로]**&#x200B;에서 `source folder` 이름을 지정하십시오.
-1. **[!UICONTROL 대상 경로]**&#x200B;에서 `target folder` 이름을 지정하십시오.
+1. `source folder`Source 경로&#x200B;**[!UICONTROL 에서]** 이름을 지정하십시오.
+1. `target folder`대상 경로&#x200B;**[!UICONTROL 에서]** 이름을 지정하십시오.
 1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. **[!UICONTROL Forms 추가]**&#x200B;를 클릭합니다. `source folder`의 모든 양식이 화면에 표시됩니다.
 1. 적응형 Forms 기반 기초 구성 요소 를 선택하여 핵심 구성 요소 기반 양식으로 전환합니다. 여러 양식을 선택할 수도 있습니다.
@@ -148,7 +148,7 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 1. 변환 프로세스를 시작하려면 **[!UICONTROL 작업 예약]**&#x200B;을 클릭하세요.
 1. **[!UICONTROL 페이지 변환]** 대화 상자에서 **[!UICONTROL 변환]**&#x200B;을 클릭합니다.
 
-   ![AEM 현대화 도구 변환 페이지](/help/forms/assets/aem-modernize-tools-convert-form.png)
+   ![AEM 현대화 도구 페이지 변환](/help/forms/assets/aem-modernize-tools-convert-form.png)
 
    프로세스 상태가 `success`(으)로 변경되는 경우. 변환된 양식을 보려면 `target folder`(으)로 이동하십시오.
 
@@ -158,12 +158,12 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
    ![AEM 현대화 도구 대상 폴더](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택하여 변환된 양식의 속성을 다시 저장합니다.
+1. **[!UICONTROL 저장 후 닫기]**를 선택하여 변환된 양식의 속성을 다시 저장합니다.
    ![AEM 현대화 도구 적응형 양식 속성](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 이제 기초 구성 요소에 구축된 적응형 양식이 핵심 구성 요소에 구축된 적응형 양식으로 변환됨을 알 수 있습니다.
 
 ## 모범 사례 {#best-practices}
 
-* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
+* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
 * 기초 구성 요소를 핵심 구성 요소로 변환하는 규칙의 형식이 XML로 지정되어 있는지 확인합니다.

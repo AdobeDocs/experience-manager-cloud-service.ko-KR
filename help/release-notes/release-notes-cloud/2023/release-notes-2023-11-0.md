@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.11.0 �
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 94%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 98%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -31,7 +31,7 @@ ht-degree: 98%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -82,13 +82,13 @@ ht-degree: 98%
 
 ### 의 새로운 기능[!DNL Experience Manager Forms] {#forms-features}
 
-* **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
+* **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
 
-* **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 양식 작성자는 양식 내에 특정 섹션을 도입하여 여기에서 사용자에게 서비스, 제품 또는 플랫폼 사용과 관련된 약관 또는 법적 계약을 표시할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
+* **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 양식 작성자는 양식 내에 특정 섹션을 도입하여 여기에서 사용자에게 서비스, 제품 또는 플랫폼 사용과 관련된 약관 또는 법적 계약을 표시할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
 
   ![확인란, 약관 및 세로 탭 구성 요소](/help/forms/assets/forms-components.png)
 
-* **[세로 탭 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식에서 세로 탭을 사용하면 특히 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 탐색을 단순화하고 양식 콘텐츠 구성을 개선하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
+* **[세로 탭 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식에서 세로 탭을 사용하면 특히 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 탐색을 단순화하고 양식 콘텐츠 구성을 개선하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
 
 
 
@@ -139,14 +139,14 @@ WAF가 포함된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-i
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
-[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
 ## 알려진 문제 {#known-issues}
 
 * 핵심 구성 요소를 기반으로 하는 적응형 양식을 제출할 수 없습니다. 이 문제는 핵심 구성 요소 버전 2.0.38~2.0.60을 사용하여 빌드된 적응형 양식에서 발생합니다.
 
-  문제를 해결하려면 Adaptive Form Core Components 버전 2.0.62 이상으로 이동하면 됩니다. 환경에 맞는 적응형 양식 핵심 구성 요소 버전을 설정하려면 Forms as a Cloud Service 저장소 또는 AEM Archetype 기반 프로젝트에서 [core.forms.components.version, core.forms.components.af.version, core.wcm.components.version 구성 요소의 버전을 설정](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository)하고 [Forms as a Cloud Service 환경으로 변경 사항을 배포](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment)하십시오. 적응형 양식 핵심 구성 요소 종속성의 최신 버전은 [적응형 양식 핵심 구성 요소 Git 저장소](https://github.com/adobe/aem-core-forms-components#system-requirements)에서 확인할 수 있습니다.
+  문제를 해결하려면 Adaptive Form Core Components 버전 2.0.62 이상으로 이동하면 됩니다. 환경에 맞는 적응형 Forms 핵심 구성 요소 버전을 설정하려면 Forms as a Cloud Service 저장소 또는 AEM Archetype 기반 프로젝트에서 `core.forms.components.version`, `core.forms.components.af.version` 및 `core.wcm.components.version component`종속성 버전을 설정하고 변경 사항을 Forms as a Cloud Service 환경에 배포하십시오. 적응형 양식 핵심 구성 요소 종속성의 최신 버전은 [적응형 양식 핵심 구성 요소 Git 저장소](https://github.com/adobe/aem-core-forms-components#system-requirements)에서 확인할 수 있습니다.

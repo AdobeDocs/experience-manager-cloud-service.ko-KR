@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '719'
 ht-degree: 16%
 
 ---
@@ -33,7 +33,7 @@ XFA 양식 템플릿 또는 XDP 파일을 기반으로 양식을 만들 때 얻�
 
 XFA 양식 템플릿 또는 XDP 파일을 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
-* [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](enable-adaptive-forms-core-components.md).
+* AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 * 다음 영역에 익숙해지는 것이 좋습니다.
    * 적응형 양식 만들기
    * XFA(XML Forms 아키텍처)
@@ -62,7 +62,7 @@ XFA 또는 XDP 양식 템플릿을 사용하여 적응형 양식을 만들려면
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 저장할 제목, 이름 및 위치를 지정하는 대화 상자가 나타납니다.
 1. 제목, 이름 및 위치를 지정합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 만들기]**를 선택합니다.
    ![이름 및 제목 제공](/help/forms/assets/create-form.png)
 
    적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 템플릿에서 사용할 수 있는 콘텐츠가 편집기에 표시됩니다.
