@@ -260,7 +260,7 @@ ht-degree: 15%
 
    ![세 번째 패널 구성 요소](/help/forms/assets/panel-3-component.png)
 
-1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**를 클릭합니다.
+1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
    ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.
