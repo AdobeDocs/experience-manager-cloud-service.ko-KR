@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 15%
 
 ---
+
 
 # Forms Experience Builder 시작하기
 
@@ -97,11 +97,10 @@ Forms Experience Builder를 사용하기 전에 [환경에 대해 AEM Forms이 �
 * **도움 요청**: `/help` 입력 후 질문
 * **반복**: 최상의 결과를 얻으려면 한 번에 하나씩 변경하십시오
 
-## 핵심 기능
 
-### Forms을 만드는 두 가지 방법
+## 양식 만들기를 시작하는 방법
 
-#### &#x200B;1. 처음부터 만들기
+### &#x200B;1. 자연어 프롬프트로 시작
 
 양식 요구 사항을 자연어로 설명하면 Forms Experience Builder가 전체 양식 구조를 생성합니다.
 
@@ -111,17 +110,17 @@ Forms Experience Builder를 사용하기 전에 [환경에 대해 AEM Forms이 �
 * &quot;등급, 댓글 및 제품 범주가 포함된 고객 피드백 양식 작성&quot;
 * &quot;결제 처리가 된 전화 회의에 대한 여러 단계 등록 양식이 필요합니다.&quot;
 
-#### &#x200B;2. 가져오기 및 전환
+### &#x200B;2. 가져오기 및 전환
 
 기존 양식 및 문서를 최신 대화형 환경으로 변환:
 
 **지원되는 소스:**
 
-* **PDF forms**: 유효성을 검사한 대화형 디지털 양식→ 정적 PDF 업로드
-* **스크린샷/이미지**: 종이 양식 → 기능 디지털 버전 사진
-* **HTML Forms**: 기본 웹 양식 → 고급 기능이 포함된 향상된 AEM Forms
-* **XFA Forms**: 이전 Adobe 양식 → 최신 반응형 양식
-* **URL**: 기존 웹 양식→ 향상된 UX를 사용하는 네이티브 AEM Forms
+* **PDF forms**: 정적 PDF를 업로드하여 유효성을 검사한 대화형 디지털 양식으로 변환합니다.
+* **스크린샷 또는 이미지**: 용지 양식의 사진을 업로드하여 기능 디지털 버전을 생성합니다.
+* **HTML Forms**: 기본 웹 양식을 가져와 고급 기능이 있는 향상된 AEM Forms으로 변환
+* **XFA Forms**: 이전 XFA 기반 양식을 최신 반응형 양식으로 변환
+* **URL**: 향상된 UX를 사용하여 기존 웹 양식을 네이티브 AEM Forms으로 변환
 
 **가져오는 방법:**
 
@@ -482,4 +481,4 @@ Forms Experience Builder에서 AEM Forms 기능에 대해서도 배울 수 있�
 
 **여전히 도움이 필요하십니까?** `/help`을(를) 입력한 후 특정 질문을 하거나 시스템 관리자에게 문의하십시오.
 
-추가 지원이 필요하면 기본 [Forms Experience Builder 프롬프트 라이브러리](/help/edge/docs/forms/ai-assistant-prompt-library.md)를 참조하거나 시스템 관리자에게 문의하여 기술 지원을 받으십시오.
+추가 지원이 필요하면 기본 [Forms Experience Builder 프롬프트 라이브러리](ai-assistant-prompt-library.md)를 참조하거나 시스템 관리자에게 문의하여 기술 지원을 받으십시오.
