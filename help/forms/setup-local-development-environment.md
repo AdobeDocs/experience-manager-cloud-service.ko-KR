@@ -380,7 +380,7 @@ SDK을 새 버전으로 업그레이드하려면 전체 로컬 개발 환경을 
 
 SDK을 업그레이드하면 새 저장소([AEM 프로젝트 설정](#forms-cloud-service-local-development-environment))를 포함하여 완전히 새로운 작성자 및 게시 인스턴스가 생성됩니다. 즉, 이전 SDK의 저장소에 대한 모든 변경 사항이 손실됩니다. SDK 업그레이드 사이에서 콘텐츠를 유지하는 데 도움이 되는 실행 가능한 전략에 대해서는 [AEM SDK을 업그레이드할 때 콘텐츠 손실을 방지하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#optional-local-aem-runtime-set-up-tasks)을 참조하십시오.
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/32992?quality=9&captions=kor).
 
 ## Upgrade your local development environment {#update-local-setup}
 
