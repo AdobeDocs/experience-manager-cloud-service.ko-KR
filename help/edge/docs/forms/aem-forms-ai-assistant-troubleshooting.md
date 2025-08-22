@@ -532,7 +532,7 @@ ht-degree: 1%
 
 - [Forms Experience Builder 프롬프트 라이브러리](ai-assistant-prompt-library.md)
 - [Forms Experience Builder 모범 사례](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+- [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)
 
 ### 에스컬레이션 및 지원
 
@@ -573,4 +573,4 @@ ht-degree: 1%
 - 교육 및 지식 공유 세션
 - 기능 개선을 위한 제품 팀에 대한 피드백
 
-이 문제 해결 안내서는 사용자 피드백 및 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 정보 및 추가 리소스는 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 참조하세요.
+이 문제 해결 안내서는 사용자 피드백 및 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 정보 및 추가 리소스는 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 참조하세요.
