@@ -53,7 +53,7 @@ Adobe 사용자 지정 통합을 빌드하려면 Edge Delivery Services을 사�
 
 ### 고유한 상점 사용(헤드리스 AEM 통합) {#own-storefront}
 
-기존 상점(예: React JS로 작성)이 있고 콘텐츠 관리 및 전달(콘텐츠 조각), 에셋, 컨텍스트 내 편집(범용 편집기)에 Adobe Experience Manager을 사용하려고 합니다. 통합의 시작 지점은 [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/introduction) 및 [CIF 추가 기능](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)입니다. CIF 추가 기능을 사용하면 제품 데이터를 AEM에 원활하게 통합(AEM UI에서 제품 검색, 탐색 및 찾기)할 수 있습니다. 이러한 기능을 사용하여 상거래별 경험을 구축할 수 있습니다.
+기존 상점(예: React JS로 작성)이 있고 콘텐츠 관리 및 전달(콘텐츠 조각), 에셋, 컨텍스트 내 편집(범용 편집기)에 Adobe Experience Manager을 사용하려고 합니다. 통합의 시작 지점은 [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/introduction) 및 [CIF 추가 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)입니다. CIF 추가 기능을 사용하면 제품 데이터를 AEM에 원활하게 통합(AEM UI에서 제품 검색, 탐색 및 찾기)할 수 있습니다. 이러한 기능을 사용하여 상거래별 경험을 구축할 수 있습니다.
 
 ### AEM CIF 상점 {#cif}
 
