@@ -5,10 +5,10 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 47%
+source-wordcount: '1653'
+ht-degree: 46%
 
 ---
 
@@ -263,3 +263,8 @@ AEM 도구 모음의 맨 오른쪽에 있는 **보기** 아이콘은 선택한 �
 ## 템플릿
 
 [**열 보기**](/help/sites-cloud/authoring/basic-handling.md#column-view) 또는 [**목록 보기**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.
+
+## AEM의 AI 지원
+
+[필수 조건을 완료](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/implementing/cloud-manager/ai-assistant-in-aem.md)를 참조하세요.
+

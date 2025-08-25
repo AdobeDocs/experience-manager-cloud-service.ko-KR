@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.8
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
 ## 새로운 기능 {#what-is-new}
 
-* **Adobe Experience Hub 준비 중**
+* **Adobe Experience Hub 곧 제공 예정**
 
-  2025년 8월 19일부터 Adobe은 모든 Adobe Experience Manager 사용자에게 새 Experience Hub의 단계적 롤아웃을 시작합니다.
+  2025년 8월 19일부터 Adobe는 새로운 Experience Hub를 모든 Adobe Experience Manager 사용자에게 단계적으로 롤아웃합니다.
 
-  Experience Hub은 사용자가 목표를 더 빨리 달성할 수 있도록 개인화된 컨텍스트 기반의 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있습니다. 새 Experience Hub은 [experience.adobe.com](https://experience.adobe.com/)에서 바로 액세스할 수 있습니다. 자세한 내용은 [Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md)를 참조하세요.
+  Experience Hub는 사용자가 목표를 더 빠르게 달성할 수 있도록 개인화되고 상황에 맞는 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있게 됩니다. 새로운 Experience Hub는 [experience.adobe.com](https://experience.adobe.com/)에서 직접 액세스할 수 있습니다. 자세한 내용은 [Adobe Experience Hub](/help/implementing/cloud-manager/experience-hub.md)를 참조하십시오.
 
 * **Edge Delivery Services 라이선스는 셀프서비스 방식으로 HIPAA 프로그램에 포함될 수 있습니다.**
 
@@ -68,13 +68,13 @@ Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로�
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
@@ -99,7 +99,7 @@ Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로�
 
 >[!NOTE]
 >
->Adobe은 충분한 수의 참가자에 도달하여 전문 테스트 환경에 대한 베타 액세스 요청을 마감했습니다. 이 기능은 현재 일반 공급 준비 중입니다.
+>Adobe는 충분한 수의 참가자가 확보되어 전문화된 테스트 환경에 대한 Beta 액세스 요청을 종료했습니다. 해당 기능은 이제 일반 공급을 위해 준비 중입니다.
 
 <!--
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
@@ -156,7 +156,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
   ![Edge 게재 및 게시 게재의 새로운 게재 유형이 표시되는 필터 패널](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 

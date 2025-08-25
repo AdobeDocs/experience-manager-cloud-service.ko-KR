@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ AEM에 직접 임베드되며 AEM Experience Hub, Cloud Manager 및 Author UI에
 
 다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
@@ -44,17 +45,15 @@ AEM의 AI Assistant에 대한 액세스 권한을 사용자에게 부여하려�
 
 AEM의 AI Assistant 요청은 Adobe Identity Management Services(IMS)를 통해 인증됩니다. 자세한 내용은 [Adobe Identity Management 서비스 개요](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)를 참조하십시오.
 
->[!NOTE]
-> 
->고객 조직은 AI Assistant를 사용하려면 추가 법률 조항에 동의해야 합니다. 자세한 내용은 Adobe 계정 담당자에게 문의하십시오.
-
 **AEM에서 AI Assistant에 액세스하려면:**
 
-1. [고객은 Adobe으로 Gen AI 라이더에 서명해야 합니다](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+1. 고객은 Adobe Experience Manager에서 AI가 제공하는 대부분의 아젠틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
-   GenAI 라이더는 고객과 Adobe 간의 법적 계약으로, 대부분의 AI 및 에이전트 기능을 사용해야 합니다. 자세한 내용은 Adobe 고객 지원 센터에 문의하십시오.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. AEM 관리자는 해당 조직에서 사용할 AI Assistant를 구성합니다. [AEM에서 AI Assistant 구성](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)을 참조하십시오.
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. AEM 관리자는 해당 조직에서 사용할 AI Assistant를 구성합니다. [AEM에서 AI Assistant 구성](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)을 참조하십시오.
 
 <!--
 >[!IMPORTANT]
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
    도구 모음의 ![AI 길잡이 아이콘](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. 아래쪽 근처에 있는 **AI Assistant** 패널 텍스트 상자에 질문을 입력한 다음 `Enter`을 누르거나 ![보내기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)을 클릭합니다.
+1. 아래쪽 근처에 있는 **AI Assistant** 패널 텍스트 상자에 질문이나 프롬프트를 입력한 다음 `Enter`을 누르거나 ![보내기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)을 클릭합니다.
+
+   >[!NOTE]
+   >
+   >개인 데이터는 이 도구를 사용하는 데 필요하지 않으므로 입력에 포함되지 않아야 합니다.
 
    ![AI Assistant 패널 아래쪽에 있는 텍스트 상자](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ AEM의 AI 도우미에는 지원되는 주제와 범주를 탐색하는 데 도�
    *AI Assistant에서 프롬프트 범주를 표시하는 패널.*
 
 1. 관련 프롬프트 목록을 보려면 카테고리를 선택하십시오.
-1. AEM AI Assistant가 답할 수 있는 질문 유형의 예를 보려면 프롬프트를 선택합니다.
+1. AI Assistant가 답할 수 있는 질문 유형의 예를 보려면 프롬프트를 선택합니다.
 
 1. 프롬프트 검색 패널을 숨기려면 ![학습 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)을 다시 클릭합니다.
 

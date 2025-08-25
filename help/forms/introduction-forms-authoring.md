@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 94%
+source-wordcount: '2496'
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 94%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -157,7 +157,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
   </tr>
   <tr>
    <td>이메일</td>
-   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>파일 첨부</td>
@@ -363,6 +363,10 @@ J. **기타**: 추가 옵션을 제공하여 선택한 구성 요소로 작업�
 * **도구 모음:** 적응형 양식 컨테이너는 양식 전역의 맞춤형 글로벌 도구 모음과 연결되어 있습니다. 편집 막대의 **[!UICONTROL 도구 모음 추가]** 액션을 사용하여 이 도구 모음을 추가할 수 있습니다. 이를 통해 작성자는 제출, 저장, 재설정 등과 같은 액션을 추가할 수 있습니다.
 
 * **자산:** 이 노드에는 양식 작성에 사용되는 추가 정보가 포함됩니다. 예: 양식 모델 세부 정보, 지역화 세부 정보 등.
+
+## AEM의 AI 지원
+
+[필수 조건을 완료](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/implementing/cloud-manager/ai-assistant-in-aem.md)를 참조하세요.
 
 ## 추가 참조 {#see-also}
 

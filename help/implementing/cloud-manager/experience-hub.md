@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -84,4 +84,4 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ## AEM의 AI 지원
 
-[필수 조건을 완료](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access)한 고객의 경우 해당 조직의 사용자는 AEM의 AEM AI Assistant를 사용할 수 있습니다. AEM의 [AI 길잡이](/help/implementing/cloud-manager/aem-ai-assistant.md)를 참조하세요.
+[필수 조건을 완료](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/implementing/cloud-manager/ai-assistant-in-aem.md)를 참조하세요.
