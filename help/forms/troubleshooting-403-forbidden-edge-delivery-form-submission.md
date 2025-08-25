@@ -3,13 +3,13 @@ title: Edge Delivery Services 양식 제출에서 403 금지된 오류 해결
 description: Edge Delivery Services에서 AEM Publish로 양식을 제출할 때 403 금지된 오류를 진단하고 해결하는 방법을 알아봅니다. 이 안내서에서는 CORS, Dispatcher 규칙 및 레퍼러 필터 문제를 포함한 일반적인 원인을 다룹니다.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # Edge Delivery Services 양식 제출에서 403 금지된 오류 해결 {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ Dispatcher 필터 구성 예:
 
 >[!IMPORTANT]
 >
->**형식을 사용하지 않는 설정:** 각 사이트 도메인을 `allow.hosts` 배열에 개별적으로 추가해야 합니다. 정규 표현식 패턴만 사용해도 모든 시나리오에 충분하지 않을 수 있습니다. 포괄적인 내용을 제공하기 위해 특정 도메인과 정규 표현식 패턴을 모두 포함합니다.
+>**오류 설정의 경우:** 각 사이트 도메인을 `allow.hosts` 배열에 개별적으로 추가해야 합니다. 정규 표현식 패턴만 사용해도 모든 시나리오에 충분하지 않을 수 있습니다. 포괄적인 내용을 제공하기 위해 특정 도메인과 정규 표현식 패턴을 모두 포함합니다.
 
 >[!WARNING]
 >
@@ -243,7 +243,7 @@ Helix-5 및 Repolless 아키텍처를 사용하여 다음 지침을 따르십시
 
 1. **사이트 도메인 식별**(예: `main--newsite--adobe.aem.live`)
 2. 새 도메인을 포함하도록 **CORS 구성 업데이트**
-3. `allow.hosts`에 새 도메인을 포함하도록 **레퍼러 필터 업데이트**
+3. **에 새 도메인을 포함하도록**&#x200B;레퍼러 필터 업데이트`allow.hosts`
 4. 새 사이트에서 **양식 제출 테스트**
 5. 사이트 레지스트리에서 **새 도메인을 문서화**
 

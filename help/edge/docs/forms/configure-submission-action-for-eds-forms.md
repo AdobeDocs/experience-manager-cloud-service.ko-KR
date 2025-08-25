@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 AEM Forms에서 제출 액�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '855'
-ht-degree: 100%
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 79%
 
 ---
 
@@ -98,27 +98,100 @@ Forms 제출 서비스는 간단한 데이터 캡처 시나리오에 이상적�
 
 ### 구성 요구 사항
 
-#### &#x200B;1. AEM Dispatcher 구성
+#### &#x200B;1. Edge Delivery에서 AEM 인스턴스 URL 업데이트
 
-AEM 게시 인스턴스에서 Dispatcher를 구성합니다.
+`constant.js` 아래 `form` 블록의 `submitBaseUrl` 파일에서 AEM Cloud Service 인스턴스 URL을 업데이트합니다. 사용자 환경에 따라 URL을 구성할 수 있습니다.
 
-- **제출 경로 허용**: `filters.any`를 수정하여 `/adobe/forms/af/submit/...`에 대한 POST 요청을 허용합니다.
-- **리디렉션 없음**: Dispatcher 규칙이 양식 제출 경로를 리디렉션하지 않도록 합니다.
+**Cloud Service 인스턴스용**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**로컬 개발용**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. OSGi 레퍼러 필터
 
-AEM OSGi 콘솔(`/system/console/configMgr`)에서:
+특정 Edge Delivery 사이트 도메인을 허용하도록 레퍼러 필터를 구성합니다.
 
-1. “Apache Sling 레퍼러 필터”를 찾습니다.
-2. “허용 호스트” 목록에 Edge Delivery 도메인을 추가합니다.
-3. `https://your-eds-domain.hlx.page`와 같은 도메인을 포함합니다.
+1. OSGi 구성 파일 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`을(를) 만들거나 업데이트합니다.
 
-#### &#x200B;3. CDN 리디렉션 규칙
+2. 특정 사이트 도메인에 다음 구성을 추가합니다.
 
-Edge Delivery CDN을 구성하여 제출을 라우팅합니다.
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- `/adobe/forms/af/submit/...`의 요청을 AEM 게시 인스턴스로 라우팅합니다.
-- 구현은 CDN 공급자(Fastly, Akamai, Cloudflare)에 따라 다릅니다.
+3. Cloud Manager을 통해 구성 배포
+
+자세한 OSGi 레퍼러 필터 구성은 [레퍼러 필터](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) 안내서를 참조하십시오.
+
+#### &#x200B;3. CORS(원본 간 리소스 공유) 문제
+
+특정 Edge Delivery 사이트 도메인의 요청을 허용하도록 AEM에서 CORS 설정을 구성합니다.
+
+**개발자 Localhost**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Edge Delivery 사이트 - 각 사이트 도메인을 개별적으로 추가**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**레거시 Franklin 도메인(사용 중인 경우)**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>`main--abc--adobe.aem.live` 및 `main--abc1--adobe.aem.live`을(를) 실제 사이트 도메인으로 바꾸십시오. 동일한 저장소에서 호스팅되는 각 사이트에는 별도의 CORS 구성 항목이 필요합니다.
+
+자세한 CORS 구성은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
+
+
+로컬 개발 환경에 CORS를 사용하려면 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) 문서를 참조하십시오.
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. 양식 구성
 
@@ -128,54 +201,54 @@ Edge Delivery CDN을 구성하여 제출을 라우팅합니다.
 4. 양식을 Edge Delivery 사이트에 게시합니다.
 
 +++
+<!--
++++ Form Embedding
 
-+++ 양식 임베드 (선택 사항)
+Embed forms created in one location into different web pages or sites.
 
-한 위치에서 생성된 양식을 다른 웹 페이지나 사이트에 임베드합니다.
+### Use Cases
 
-### 사용 사례
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- 여러 랜딩 페이지에서 표준 양식 재사용
-- 문서 작성된 콘텐츠에 전문 양식 포함
-- 여러 EDS 프로젝트에서 단일 양식 유지
+### CORS Configuration
 
-### CORS 구성
+Configure Cross-Origin Resource Sharing on the form source:
 
-양식 소스에서 원본 간 리소스 공유(CORS)를 구성합니다.
-
-1. 양식 소스 응답에 **CORS 헤더 추가**
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **예제 구성**:
+2. **Example Configuration**:
 
-       # 양식을 호스팅하는 사이트 구성
-       headers:
-       - path: /forms/**
-       custom:
-       Access-Control-Allow-Origin: https://host-domain.com
-       Access-Control-Allow-Methods: GET, OPTIONS
-   
-### 임베드 단계
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-1. **양식 만들기 및 게시**
-   - 문서 작성 또는 범용 편집기를 사용하여 양식을 작성합니다.
-   - 제출 방법(FSS 또는 AEM 게시)을 구성합니다.
-   - 독립형 URL에 게시합니다.
+### Embedding Steps
 
-2. **CORS 구성**
-   - 양식 소스 사이트에서 CORS 헤더를 설정합니다.
-   - 호스트 페이지 도메인이 양식을 가져올 수 있도록 허용합니다.
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-3. **호스트 페이지에 임베드**
-   - 호스트 페이지에 양식 임베딩 블록을 추가합니다.
-   - 게시된 양식 URL에 블록을 지정합니다.
-   - 호스트 페이지를 게시합니다.
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-![임베드된 양식 아키텍처](/help/forms/assets/eds-embedded-form.png)
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-+++
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
+
++++-->
 
 +++ 일반 문제
 
