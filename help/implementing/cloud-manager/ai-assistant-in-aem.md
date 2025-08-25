@@ -8,14 +8,14 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 10d1788e222843c0c382ecf021f3c85c6bc09af9
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 1%
 
 ---
 
-# AEM의 AI 지원 {#aem-home}
+# AEM의 AI 지원 {#about-ai-assistant-in-aem}
 
 AEM(Adobe Experience Manager) AI Assistant는 Adobe Experience Manager 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. AEM 제품 관련 질문에 대한 즉각적인 답변을 얻고(*모든 사용자가 사용할 수 있음*) 지원 티켓 생성을 자동화할 수 있습니다(*지원 관리자가 사용할 수 있음*).
 
@@ -34,7 +34,7 @@ AEM에 직접 임베드되며 AEM Experience Hub, Cloud Manager 및 Author UI에
 
 다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
@@ -132,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
