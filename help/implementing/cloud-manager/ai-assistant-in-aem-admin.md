@@ -4,11 +4,11 @@ description: Adobe Experience Manager의 Admin Console을 사용하여 AI Assist
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-index: false
+hide: false
+hidefromtoc: false
+index: true
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: a9fb3838feb17fa9ead35f432e4937ee01f500b7
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 3%
@@ -52,7 +52,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 ## 1 - Adobe Admin Console에서 새 제품 프로필 만들기{#create-profile}
 
-1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
+1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
 
 1. 새 제품 프로필을 만들 때 AI Assistant에 대해 다음과 같이 제안된 값을 사용할 수 있습니다.
 
@@ -68,7 +68,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 제품 프로필에 사용자 지정 권한을 할당하는 프로세스는 표준 Adobe Cloud Manager 사용자 지정 권한 워크플로우를 따릅니다.
 
-참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Admin Console에서 새로 만든 제품 프로필의 이름(`AI Assistant in AEM`)을 클릭합니다
 
@@ -197,5 +197,5 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 ## 추가 참조
 
 * [AEM의 AI 지원](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/overview)
+* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager 사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)
