@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1100'
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,16 @@ ht-degree: 17%
 
 Cloud Manager에서 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는 데 제공하는 셀프서비스 도구에 대해 알아봅니다.
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="SSL 인증서 관리"
->abstract="Cloud Manager가 SSL 인증서를 설치하고 관리하기 위한 셀프서비스 도구로 사용자의 사이트를 보호하는 방법에 대해 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
+>title="Manage SSL certificates"
+>abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
+
+-->
 
 ## SSL 인증서란 무엇입니까? {#overview}
 
@@ -114,7 +118,7 @@ OV 및 EV는 Cloud Manager의 DV 인증서에 대해 이러한 기능을 추가�
 
 * **와일드카드 인증서:**
 
-  와일드카드 인증서(예: `*.example.com`)는 지원되지만 필요한 경우에만 사용해야 합니다. 중복될 경우에는 보다 구체적인 인증서가 우선됩니다. 예를 들어 특정 인증서는 와일드카드(`*.example.com`) 대신 `dev.example.com`을(를) 제공합니다.
+  와일드카드 인증서(예: `*.example.com`)는 지원되지만 필요한 경우에만 사용해야 합니다. 중복될 경우에는 보다 구체적인 인증서가 우선됩니다. 예를 들어 특정 인증서는 와일드카드(`dev.example.com`) 대신 `*.example.com`을(를) 제공합니다.
 
 * **확인 및 문제 해결:**
 Cloud ManagerAdobe 을 사용하여 인증서를 설치하기 전에 `openssl`과 같은 도구를 사용하여 로컬에서 인증서의 무결성을 확인하는 것이 좋습니다. 예:

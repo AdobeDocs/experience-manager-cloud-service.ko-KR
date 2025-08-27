@@ -4,21 +4,25 @@ description: 문제를 모니터링하고 성능을 개선하는 방법에 대�
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 22%
+source-wordcount: '417'
+ht-degree: 14%
 
 ---
 
 # Go-live 후 {#post-go-live}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="AEM 문제 해결"
->abstract="로그의 지속적인 개발 및 관리를 위한 모범 사례를 검토해 보십시오. AEM 관련 문제 해결에 도움이 되는 Developer Console 및 CRXDE Lite와 같은 도구에 대해 알아봅니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="로그 액세스 및 관리"
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
+-->
 
 이 여정은 마지막 부분이므로 마이그레이션이 완료된 후 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리합니다.
 
@@ -34,7 +38,7 @@ ht-degree: 22%
 * **CRXDE Lite**
 * **로그 관리**
 
-## 개발자 콘솔 {#developer-console}
+## Developer Console {#developer-console}
 
 AEM as a Cloud Service 개발자 환경 디버깅은 Developer Console에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
 
@@ -71,7 +75,7 @@ Cloud Service 액세스에 대한 질문이 있는 경우 자세한 내용은 Ad
 
 * 잘 작동한 것과 그렇지 않은 것은 무엇입니까?
 * 주요 통증 사항은 무엇입니까?
-* 향후 마이그레이션이 있는 경우 Recommendations으로 이동합니다.
+* 향후 마이그레이션이 있을 경우 권장 사항.
 
 이러한 마이그레이션 후 학습 내용을 조직 내의 관련자 및 팀과 공유합니다.
 
