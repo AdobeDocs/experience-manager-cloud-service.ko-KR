@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Service용 운영 원격 분석
+title: AEM as a Cloud Service에 대한 운영 원격 측정
 description: 클라이언트측 데이터 수집을 모니터링할 수 있는 자동화된 서비스인 운영 원격 분석에 대해 알아봅니다.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 0%
+source-wordcount: '974'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Operational Telemetry 서비스는 웹 사이트 또는 애플리케이션에서
 
 ## 운영 원격 분석 서비스 데이터 샘플링 {#operational-telemetry-service-data-sampling}
 
-기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. AEM의 Operational Telemetry 서비스는 극히 일부 페이지 보기에서 정보만 캡처합니다. 서비스는 분석을 대체하는 것이 아니라 샘플링되고 익명화되어야 합니다. 기본적으로 페이지는 1:100 샘플링 비율을 가집니다. 사이트 운영자는 현재 샘플링 속도를 높이거나 낮출 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 데이터가 1에서 수집되므로 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.
+기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. AEM의 Operational Telemetry 서비스는 극히 일부 페이지 보기에서 정보만 캡처합니다. 서비스는 분석을 대체하는 것이 아니라 샘플링되고 익명화되어야 합니다. 기본적으로 페이지는 샘플링 비율이 1:100입니다. 사이트 운영자는 현재 샘플링 속도를 높이거나 낮출 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 데이터가 1에서 수집되므로 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.
 
 데이터 수집 여부의 판단으로 페이지 보기 단위로 페이지 보기에서 이루어지며, 여러 페이지 간 상호 작용을 추적하는 것이 사실상 불가능해진다. 기본적으로 Operational Telemetry에는 방문자 또는 세션에 대한 개념이 없으며 페이지 보기 횟수만 있습니다.
 
@@ -42,7 +42,7 @@ Operational Telemetry 서비스는 데이터 수집을 최소화하도록 설계
 * 방문 중인 사이트의 호스트 이름(예: `experienceleague.adobe.com`)
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형 및 운영 체제(예: `desktop:windows` 또는 `mobile:ios`)
 * 데이터 수집 시간(예: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`)
-* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs?lang=ko`)
+* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs`)
 * 레퍼러 URL(사용자가 링크를 따라간 경우, 현재 페이지에 연결된 페이지의 URL)
 * `2Ac6`과(와) 유사한 형식으로 임의로 생성된 페이지 보기의 ID
 * 샘플링 속도의 가중치 또는 역입니다(예: `100`). 즉, 100개 페이지 중 하나만 기록됩니다
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **내 사이트에서 `/.rum` 경로가 차단되어 있습니다. 어떻게 수정해야 합니까?**
 
-   작동 원격 분석 수집이 작동하려면 `/.rum` 경로가 필요합니다. Adobe의 AEM as a Cloud Service 앞에서 CDN을 사용하는 경우 `/.rum` 경로가 다른 AEM 콘텐츠와 동일한 AEM 원본으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오.
+   작동 원격 분석 수집이 작동하려면 `/.rum` 경로가 필요합니다. Adobe의 AEM as a Cloud Service 앞에서 CDN을 사용하는 경우 `/.rum` 경로가 다른 AEM 콘텐츠와 동일한 AEM 원본으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오. 또는 `rum.hlx.page`Cloud Manager의 환경 변수 [을(를) ](/help/implementing/cloud-manager/environment-variables.md#add-variables) 값으로 설정`AEM_OPTEL_EXTERNAL`하여 운영 원격 분석에 사용할 호스트를 `true`(으)로 변경할 수 있습니다. 나중에 동일한 도메인 요청으로 다시 변경하려면 해당 환경 변수를 다시 제거합니다.
 
 1. **계약 목적으로 운영 원격 분석 수집이 콘텐츠 요청에 포함됩니까?**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe은 운영 원격 분석 을 사용할 것을 권장합니다. 그 이유는 운영 원격 분석의 상당한 이점과 Adobe이 웹 사이트 성능을 향상시켜 디지털 경험을 최적화하는 데 도움이 될 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
 
-   옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
+   옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 [Cloud Manager에서 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이)라는 환경 변수를 `AEM_OPTEL_DISABLED` 값으로 설정하여 작동 원격 분석을 사용하지 않도록 설정할 수 있습니다. `true` 나중에 운영 원격 분석을 다시 활성화하려면 해당 환경 변수를 다시 제거하십시오.
