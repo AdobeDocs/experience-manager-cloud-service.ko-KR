@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.8
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8bd6fd4a7abcfbf37ba8aa458a9d2a035cca050e
+source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.8.0 릴리스 일자는 2025년 8�
 
   2025년 8월 19일부터 Adobe는 새로운 Experience Hub를 모든 Adobe Experience Manager 사용자에게 단계적으로 롤아웃합니다.
 
-  Experience Hub는 사용자가 목표를 더 빠르게 달성할 수 있도록 개인화되고 상황에 맞는 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있게 됩니다. 새로운 Experience Hub는 [experience.adobe.com](https://experience.adobe.com/)에서 직접 액세스할 수 있습니다. 자세한 내용은 [Adobe Experience Hub](/help/experience-hub.md)를 참조하십시오.
+  Experience Hub는 사용자가 목표를 더 빠르게 달성할 수 있도록 개인화되고 상황에 맞는 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있게 됩니다. 새로운 Experience Hub는 [experience.adobe.com](https://experience.adobe.com/)에서 직접 액세스할 수 있습니다. 자세한 내용은 [Experience Hub](/help/experience-hub.md)을 참조하세요.
 
 * **Edge Delivery Services 라이선스는 셀프서비스 방식으로 HIPAA 프로그램에 포함될 수 있습니다.**
 
