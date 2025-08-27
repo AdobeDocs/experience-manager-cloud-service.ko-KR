@@ -144,7 +144,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>8/31/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava Core Libraries는 더이상 Cloud Service에서 사용되지 않습니다. <a href="#com.google.common">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>Google Guava Core Libraries는 더 이상 Cloud Service에서 사용되지 않습니다. <a href="#com.google.common">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/15/2023</td>
     <td>8/31/2025</td>
   </tr>
@@ -442,14 +442,14 @@ Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사
 
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
-### 더 이상 사용되지 않는 OSGi 속성(곧 수정 불가능) {#deprecated-unmodifiable-osgi-properties}
+### 더 이상 사용되지 않는 OSGi 속성 (곧 수정 불가능) {#deprecated-unmodifiable-osgi-properties}
 
 다음 OSGi 구성 요소 PID의 속성은 사용이 중단되며 시행일까지 사용이 중단되어야 합니다.
 
 | **OSGI 구성 요소 ID** | **수정할 수 없는 속성** | **사용 중단** | **적용** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 8/31/25(6월에는 구성이 무시됨) |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25(6월에는 구성이 무시됨) |
+| **`org.apache.sling.commons.log.LogManager`** | 모두 | 4/24/25 | 8/31/25 (6월에는 구성이 무시됨) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (6월에는 구성이 무시됨) |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 모두 | 2024 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 모두 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 모두 | 6/3/25 | 8/31/25 |
@@ -478,7 +478,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 
 앞으로 Adobe는 다음과 같은 OSGi 속성 제한을 시행합니다. 언급된 PID의 경우, 해당 나열된 속성만 구성이 허용됩니다.
 
-| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항(해당되는 경우) |
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항 (해당되는 경우) |
 |---|---|---|---|---|
 | `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 문자열 |   |
 |   | `smtp.port` | 예 | 정수 | “465”, “587” 또는 “25” |
@@ -502,7 +502,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 
 이러한 OSGi 속성의 값은 아래에 설명된 규칙으로 제한됩니다.
 
-| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항(해당되는 경우) |
+| OSGi 구성 요소 PID |   | 필수 | 유형 | 제한 사항 (해당되는 경우) |
 |---|---|---|---|---|
 | `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | 예 | 정수 | 2-100 |
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 이중 | -- |
