@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -21,8 +21,8 @@ Cloud Manager에서 SSL(Secure Socket Layer) 인증서를 설치하고 관리하
 >id="aemcloud_golive_sslcert"
 >title="SSL 인증서 관리"
 >abstract="Cloud Manager가 SSL 인증서를 설치하고 관리하기 위한 셀프서비스 도구로 사용자의 사이트를 보호하는 방법에 대해 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
 
 ## SSL 인증서란 무엇입니까? {#overview}
 

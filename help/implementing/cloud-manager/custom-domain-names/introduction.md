@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 41%
@@ -19,8 +19,8 @@ ht-degree: 41%
 >id="aemcloud_golive_domains"
 >title="사용자 정의 도메인 이름 관리"
 >abstract="Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="사용자 정의 도메인 이름 추가"
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="사용자 정의 도메인 이름 보기 및 업데이트"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="사용자 정의 도메인 이름 추가"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="사용자 정의 도메인 이름 보기 및 업데이트"
 
 Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 프로비저닝됩니다. Cloud Manager의 UI를 사용하여 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다. 사용자 지정 도메인 이름을 웹 사이트에 연결한 후에도 기본 `*.adobeaemcloud.com` 도메인 이름이 유지됩니다.
 

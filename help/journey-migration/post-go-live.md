@@ -4,7 +4,7 @@ description: 문제를 모니터링하고 성능을 개선하는 방법에 대�
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 22%
@@ -17,7 +17,7 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
 >abstract="로그의 지속적인 개발 및 관리를 위한 모범 사례를 검토해 보십시오. AEM 관련 문제 해결에 도움이 되는 Developer Console 및 CRXDE Lite와 같은 도구에 대해 알아봅니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="로그 액세스 및 관리"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="로그 액세스 및 관리"
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
 이 여정은 마지막 부분이므로 마이그레이션이 완료된 후 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리합니다.
