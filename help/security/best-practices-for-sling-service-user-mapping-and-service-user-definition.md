@@ -5,9 +5,9 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 또한 `principalNames`는 기본적으로 ID와 동일한 서비스 사용자 주체 이름 목록입니다.
 
 
-**우수 사례**
+**모범 사례**
 
 * 작업별 하위 서비스 이름 - 번들의 서비스가 다른 작업을 수행하는 경우 `subserviceNames`를 식별하여 작업별로 그룹화하는 것이 좋습니다.
 * 특정 서비스가 다양한 작업(예: `/var` 하위 트리 아래의 자산 콘텐츠 읽기 및 정보 업데이트)을 수행하는 경우, 기능별 `assetreport-writer-service`로 공통 `dam-reader-service`를 집계하는 등 개별 작업을 반영하는 다양한 서비스 주체를 집계하여 이를 반영하는 것이 좋습니다.
@@ -77,7 +77,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 
 1. 아래 설명에 따라 `ServiceUserMapper` => pre-auth 저장소 로그인에서 주체 이름을 가져옵니다.
 1. `ServiceUserMapper`에서 사용자 ID를 가져옵니다.
-1. 현재 사용자 ID에 대해 더 이상 사용되지 않는 `1ServiceUserConfiguration`을(를) 확인하십시오.
+1. 현재 사용자 ID에 대해 더 이상 사용되지 않는 `1ServiceUserConfiguration`을 확인합니다.
 1. 사용자 ID를 사용하여 기본 Sling 서비스 로그인을 수행합니다(예: 서비스 사용자 ID의 `createAdministrativeSession` 및 가장 시퀀스).
 
 주체 이름을 사용한 새로운 매핑을 통해 다음과 같은 단순화된 저장소 로그인이 생성됩니다.
@@ -122,7 +122,7 @@ AEM 보안 팀은 서비스 사용자가 새로운 서비스 사용자에게 일
 
 서비스 사용자 이름은 대시(**&#39;-&#39;**)로 구분된 3개의 요소로 구성됩니다.
 
-1. 서비스 작업의 대상이 되는 논리적 엔티티/기능(변경 가능성이 있는 경로 요소 방지)
+1. 서비스 작업의 대상이 되는 논리적 엔티티/기능 (변경 가능성이 있는 경로 요소 방지)
 1. 서비스가 수행할 작업
 1. 사용자가 서비스 사용자인지 ID와 주체 이름으로 쉽게 식별할 수 있도록 하는 후행 **&#39;service&#39;**
 
