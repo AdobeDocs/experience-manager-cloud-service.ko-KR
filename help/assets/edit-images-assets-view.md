@@ -44,7 +44,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 이미지 크기 조정 기능이 표시됩니다.
 1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
-1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -55,7 +55,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 아래 설명된 몇 번의 간단한 단계를 따라 이미지에서 배경을 제거할 수 있습니다.
 
 1. 왼쪽 창에서 **배경 제거**&#x200B;를 클릭합니다. Experience Manager Assets에 배경이 없는 이미지가 표시됩니다.
-1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-remove-background.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -66,7 +66,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 1. 왼쪽 창에서 **[!UICONTROL 이미지 자르기]**&#x200B;를 클릭합니다.
 2. 이미지 모퉁이의 핸들을 드래그하여 원하는 자르기를 만듭니다.
-3. **[!UICONTROL 적용]**을 클릭합니다.
+3. **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
 잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
@@ -74,7 +74,7 @@ Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**를 클릭합니다.
+1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**&#x200B;를 클릭합니다.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
