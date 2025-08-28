@@ -3,9 +3,9 @@ title: Content Hub에서 자산 검색
 description: ' [!DNL Content Hub]에서 자산을 검색하는 방법 알아보기'
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,24 @@ ht-degree: 0%
 
 -->
 
+## 일괄 검색 {#bulk-search}
+
+에셋 대량 검색을 사용하면 식별자 목록(예: 이름, 파일 형식, 색상, 태그 등)을 입력하여 여러 에셋을 동시에 조회할 수 있습니다. 자산을 하나씩 검색하는 대신 [!DNL Content Hub] 일괄 검색을 통해 필요한 자산을 더 빨리 검색할 수 있습니다. 이 기능을 사용하면 구분 기호로 구분된 필터 속성에 여러 값을 입력하고(예: 여러 SKU ID) 단일 검색으로 일치하는 모든 자산을 즉시 검색할 수 있습니다.
+
+여러 자산을 한 번에 검색하려면 단일 쿼리에 구분 기호 ` [ , | \t | \r | \n | \r\n ]`로 구분하여 여러 값을 입력하십시오. 사용 사례에 따라 구분 기호를 더 추가할 수도 있습니다. [일괄 검색 구성](configure-content-hub-ui-options.md#bulk-search-configuration)을 참조하십시오.
+
+[!DNL Content Hub]에서 대량 검색을 수행하려면 다음 단계를 실행하십시오.
+
+1. 일괄 검색이 [구성](configure-content-hub-ui-options.md#bulk-search-configuration)되면 구성한 [!DNL Content Hub] 필터 속성에서 일괄 검색 토글을 볼 수 있습니다. 요구 사항에 따라 활성화하거나 비활성화할 수 있습니다.
+
+1. 구성에 지정된 구분 기호를 포함하는 검색 쿼리를 추가합니다. 검색 쿼리에는 여러 개의 쉼표로 구분된 값이 포함된 문자열이 있어야 합니다.
+
+![대량 검색 UI](assets/bulk-search-ui.png)
+
 ## 검색으로 더 많은 작업 {#do-more-with-search}
 
 [!DNL The Content Hub]은(는) 검색으로 제한되지 않으며, 검색 또는 미리 보기 인터페이스에서 바로 [다운로드](download-assets-content-hub.md), [공유](share-assets-content-hub.md) 및 [컬렉션에 에셋 추가](collections-content-hub.md)와 같은 추가 작업을 수행할 수 있습니다. 검색 결과 페이지에서 자산을 선택하여 이러한 옵션을 확인합니다.
+
+[에서  [!DNL Content Hub]](configure-content-hub-ui-options.md)자산 구성에 대해 자세히 알아보세요.
+
+
