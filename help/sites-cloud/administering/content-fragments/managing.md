@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 72%
+source-wordcount: '2920'
+ht-degree: 71%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 72%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -134,6 +134,18 @@ ht-degree: 72%
    * 카운트를 선택하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
 
      ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cf-managing-console-languages-dialog.png)
+
+* **워크플로**
+
+   * 정보만
+
+   * 특정 조각의 아이콘을 선택합니다.
+
+     ![콘텐츠 조각 콘솔 - 워크플로 아이콘](assets/cf-managing-console-workflows-icon.png)
+
+     조각의 워크플로우(과거 및 현재)에 대한 자세한 정보가 포함된 대화 상자를 엽니다.:
+
+     ![콘텐츠 조각 콘솔 - 워크플로 대화 상자](assets/cf-managing-console-workflows-dialog.png)
 
 ## 액션 {#actions}
 
