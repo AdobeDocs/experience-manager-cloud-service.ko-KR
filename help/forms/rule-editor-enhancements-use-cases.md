@@ -122,7 +122,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 > When 조건에 **변수 값 가져오기** 함수를 추가할 수도 있습니다.
-> > ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
+> &#x200B;> ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
 
 이 접근 방식을 사용하면 양식에 필드를 추가하지 않고 구조를 깔끔하고 사용자 친화적으로 동적으로 실시간 계산을 수행할 수 있습니다.
 
