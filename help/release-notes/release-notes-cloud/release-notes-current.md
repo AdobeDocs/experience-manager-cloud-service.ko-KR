@@ -83,7 +83,7 @@ DM에서 OpenAPI를 사용하여 자산 전달을 위한 별칭 URL을 만들고
 
 ### AEM Forms의 새로운 기능 {#forms-new-features}
 
-* [날짜 및 시간 입력 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): 이제 날짜 및 시간 구성 요소를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
+* [날짜 및 시간 입력 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): 이제 날짜 및 시간 구성 요소를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
 * [파일 업로드에 대한 향상된 오류 처리](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): 이제 첨부 파일 구성 요소가 업로드된 파일 형식을 허용 목록에 대해 자동으로 확인합니다. 사용자가 지원되지 않는 형식으로 파일을 업로드하면 제출 중에 양식에 오류가 표시됩니다. 또한 구성 요소는 파일 내용을 확인하여 파일 형식을 확인하므로 양식의 전반적인 보안을 강화할 수 있습니다.
 * [사용자 지정 제출 액션에 대해 지정된 오류 응답](/help/forms/custom-submit-action-troubleshooting.md): 사용자 지정 제출 액션에 처리되지 않은 오류가 발생하면 오류 코드 502가 반환됩니다. 이렇게 하면 이 문제가 사용자 지정 제출 액션과 관련이 있음을 식별하여 디버깅을 더 쉽게 할 수 있습니다.
 * [기록 문서에서 숨겨진 필드 제외](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): 기록 문서에서 숨겨진 필드를 제외할 수 있도록 새 속성이 추가되었습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 모든 양식 필드에 적용됩니다.
@@ -105,7 +105,7 @@ DM에서 OpenAPI를 사용하여 자산 전달을 위한 별칭 URL을 만들고
 
 ### AEM Forms의 얼리 어답터 기능
 
-* [스크리블 서명 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): 이제 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있도록 스크리블 서명 구성 요소를 사용할 수 있습니다. 이 구성 요소를 사용하면 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 그릴 수 있습니다.
+* [스크리블 서명 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): 이제 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있도록 스크리블 서명 구성 요소를 사용할 수 있습니다. 이 구성 요소를 사용하면 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 그릴 수 있습니다.
 * [규칙 편집기에서 직접 API 통합](/help/forms/api-integration-in-rule-editor.md): 이제 적응형 Forms은 양식 데이터 모델 없이도 시각적 규칙 편집기에서 직접 API 통합을 지원합니다. 작성자는 URL 또는 cURL 가져오기를 사용하여 API를 구성하고, 입력/출력 매개 변수를 매핑하며, 인증을 통해 보안 호출을 수행할 수 있습니다.
 
 <!--
