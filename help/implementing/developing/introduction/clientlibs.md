@@ -4,9 +4,9 @@ description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장�
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2422'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # AEM as a Cloud Service에서 클라이언트측 라이브러리 사용 {#using-client-side-libraries}
 
-디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트 측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트 측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)와 함께 사용하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
+디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)와 함께 사용하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
 
 AEM에서 clientlib을 사용할 때의 장점은 다음과 같습니다.
 
@@ -27,17 +27,17 @@ Clientlib은 AEM에서 CSS 및 JavaScript을 제공하는 기본 제공 솔루�
 
 >[!TIP]
 >
->AEM 프로젝트용 CSS 및 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)를 숙지해야 합니다.
+>AEM 프로젝트용 CSS와 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)를 숙지해야 합니다.
 
 ## 클라이언트측 라이브러리란 무엇입니까? {#what-are-clientlibs}
 
-사이트에서는 클라이언트측에서 처리할 JavaScript 및 CSS와 아이콘 및 웹 글꼴과 같은 정적 리소스가 필요합니다. clientlib은 AEM에서 참조하고(필요한 경우 카테고리별로) 이러한 리소스를 제공하는 메커니즘입니다.
+사이트에서는 클라이언트측에서 처리할 JavaScript 및 CSS와 아이콘 및 웹 글꼴과 같은 정적 리소스가 필요합니다. clientlib은 필요한 경우 범주별로 참조하고 이러한 리소스를 제공하는 AEM의 메커니즘입니다.
 
-AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일로 수집하여 HTML 출력에 모든 리소스의 복사본을 하나만 포함하도록 합니다. 이를 통해 게재 효율성을 극대화하고 프록시를 통해 이러한 리소스를 저장소 중앙에서 유지 관리할 수 있어 액세스 보안을 유지할 수 있습니다.
+AEM은 사이트의 CSS와 JavaScript을 중앙 위치의 단일 파일로 수집하여 HTML 출력에 한 개의 리소스 사본만 포함되도록 합니다. 이를 통해 게재 효율성을 극대화하고 프록시를 통해 이러한 리소스를 저장소 중앙에서 유지 관리할 수 있어 액세스 보안을 유지할 수 있습니다.
 
 ## AEM as a Cloud Service용 프론트엔드 개발 {#fed-for-aemaacs}
 
-모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)의 ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
+모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype[의 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
 
 그런 다음 Archetype은 리소스를 단일 CSS 및 JS 파일로 컴파일하여 리포지토리의 `cq:clientLibraryFolder`에 자동으로 포함할 수 있습니다.
 
@@ -75,7 +75,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 
 클라이언트 라이브러리는 `/apps` 아래에 있어야 합니다. 이 규칙은 콘텐츠 및 구성에서 코드를 더 잘 분리하는 데 필요합니다.
 
-`/apps` 아래의 클라이언트 라이브러리에 액세스하려면 프록시 서블릿을 사용하십시오. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `allowProxy` 속성이 `true`(으)로 설정된 경우 서블릿에서 `/etc.clientlibs/`을(를) 통해 콘텐츠를 읽을 수 있습니다.
+`/apps` 아래의 클라이언트 라이브러리에 액세스하려면 프록시 서블릿을 사용하십시오. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `/etc.clientlibs/` 속성이 `allowProxy`(으)로 설정된 경우 서블릿에서 `true`을(를) 통해 콘텐츠를 읽을 수 있습니다.
 
 1. 웹 브라우저(`https://<host>:<port>/crx/de`)에서 CRXDE Lite을 엽니다.
 1. `/apps` 폴더를 선택하고 **만들기 > 노드 만들기**&#x200B;를 클릭합니다.
@@ -92,7 +92,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치에 있는 단일 파일�
 1. 정적 리소스를 관리해야 하는 경우 클라이언트 라이브러리 폴더 아래에 `resources`(이)라는 하위 폴더를 만듭니다.
    * `resources` 폴더 아래 이외의 위치에 정적 리소스를 저장하는 경우 게시 인스턴스에서 참조할 수 없습니다.
 1. 라이브러리 폴더에 소스 파일을 추가합니다.
-   * 이 작업은 일반적으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)의 프론트엔드 빌드 프로세스에서 수행됩니다.
+   * 이 작업은 일반적으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 프론트엔드 빌드 프로세스에서 수행됩니다.
    * 원하는 경우 하위 폴더에 소스 파일을 구성할 수 있습니다.
 1. 클라이언트 라이브러리 폴더를 선택하고 **만들기 > 파일 만들기**&#x200B;를 클릭합니다.
 1. 파일 이름 상자에 다음 파일 이름 중 하나를 입력하고 확인을 클릭합니다.
@@ -127,7 +127,7 @@ Clientlib을 클라이언트 라이브러리 폴더에 저장하고 관리하면
 
 각 도우미 템플릿에는 원하는 클라이언트 라이브러리를 참조하기 위한 `categories` 옵션이 필요합니다. 해당 옵션은 문자열 값의 배열이거나 쉼표로 구분된 값 목록을 포함하는 문자열일 수 있습니다.
 
-HTL을 통한 clientlib 로드에 대한 자세한 내용은 [HTL 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=ko#loading-client-libraries).
+HTL을 통한 clientlib 로드에 대한 자세한 내용은 [HTL 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries).
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -135,7 +135,7 @@ HTL을 통한 clientlib 로드에 대한 자세한 내용은 [HTL 설명서를 �
 This is possible. Still need detail.
 -->
 
-## 작성자의 클라이언트 라이브러리와 Publish 비교 {#clientlibs-author-publish}
+## 작성자 대 게시의 클라이언트 라이브러리 {#clientlibs-author-publish}
 
 대부분의 clientlib은 AEM 게시 인스턴스에 필요합니다. 즉, 대부분의 clientlib의 목적은 컨텐츠의 최종 사용자 경험을 생성하는 것입니다. 게시 인스턴스에 대한 clientlib의 경우 [프론트엔드 빌드 도구](#fed-for-aemaacs)는 위에서 설명한 대로 [클라이언트 라이브러리 폴더를 통해 사용 및 배포할 수 있습니다](#creating-clientlib-folders).
 
@@ -180,13 +180,13 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 몇 가지 다�
 
 ### Adobe Granite HTML 라이브러리 관리자 {#html-library-manager}
 
-추가 클라이언트 라이브러리 설정은 `https://<host>:<port>/system/console/configMgr`에 있는 시스템 콘솔의 **Adobe Granite HTML 라이브러리 관리자** 패널을 통해 제어할 수 있습니다.
+추가 클라이언트 라이브러리 설정은 시스템 콘솔의 **Adobe Granite HTML 라이브러리 관리자** 패널(`https://<host>:<port>/system/console/configMgr`)을 통해 제어할 수 있습니다.
 
 ### 추가 폴더 속성 {#additional-folder-properties}
 
 추가 폴더 속성에는 종속성 및 임베드를 제어할 수 있는 기능이 포함되어 있지만 일반적으로 더 이상 필요하지 않으며 사용하지 않습니다.
 
-* `dependencies`: 이 라이브러리 폴더가 종속된 다른 클라이언트 라이브러리 범주의 목록입니다. 예를 들어 두 개의 `cq:ClientLibraryFolder` 노드 `F` 및 `G`이(가) 지정된 경우, `F`의 파일이 제대로 작동하려면 `G`의 다른 파일이 필요한 경우 `G`의 `categories` 중 하나 이상이 `F`의 `dependencies`에 속해야 합니다.
+* `dependencies`: 이 라이브러리 폴더가 종속된 다른 클라이언트 라이브러리 범주의 목록입니다. 예를 들어 두 개의 `cq:ClientLibraryFolder` 노드 `F` 및 `G`이(가) 지정된 경우, `F`의 파일이 제대로 작동하려면 `G`의 다른 파일이 필요한 경우 `categories`의 `G` 중 하나 이상이 `dependencies`의 `F`에 속해야 합니다.
 * `embed`: 다른 라이브러리의 코드를 포함하는 데 사용됩니다. `F` 노드가 `G` 및 `H` 노드를 임베드하는 경우 결과 HTML은 `G` 및 `H` 노드의 콘텐츠 연결입니다.
 
 ### 종속성에 연결 {#linking-to-dependencies}
@@ -214,7 +214,7 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 몇 가지 다�
 
 #### 앱별 클라이언트 라이브러리 폴더 {#app-specific-client-library-folders}
 
-모든 응용 프로그램 관련 파일을 응용 프로그램 폴더 `/apps` 아래에 보관하는 것이 좋습니다. 또한 `/apps` 폴더에 대한 웹 사이트 방문자의 액세스를 거부하는 것이 좋습니다. 두 모범 사례를 모두 충족하려면 `/apps` 아래의 클라이언트 라이브러리를 임베드하는 `/etc` 폴더 아래에 클라이언트 라이브러리 폴더를 만드십시오.
+모든 응용 프로그램 관련 파일을 응용 프로그램 폴더 `/apps` 아래에 보관하는 것이 좋습니다. 또한 `/apps` 폴더에 대한 웹 사이트 방문자의 액세스를 거부하는 것이 좋습니다. 두 모범 사례를 모두 충족하려면 `/etc` 아래의 클라이언트 라이브러리를 임베드하는 `/apps` 폴더 아래에 클라이언트 라이브러리 폴더를 만드십시오.
 
 포함할 클라이언트 라이브러리 폴더를 식별하려면 categories 속성을 사용합니다. 라이브러리를 포함하려면 다음 속성 특성을 사용하여 포함 `cq:ClientLibraryFolder` 노드에 속성을 추가하십시오.
 
@@ -226,7 +226,7 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 몇 가지 다�
 
 경우에 따라 게시 인스턴스에 의해 일반 페이지에 대해 생성된 최종 HTML에 비교적 많은 `<script>`개의 요소가 포함되어 있을 수 있습니다.
 
-이러한 경우 페이지 로드 시 앞뒤 요청 수가 줄어들도록 필요한 모든 클라이언트 라이브러리 코드를 단일 파일에 결합하는 것이 유용할 수 있습니다. 이렇게 하려면 `cq:ClientLibraryFolder` 노드의 포함 속성을 사용하여 필요한 라이브러리를 앱별 클라이언트 라이브러리에 `embed`할 수 있습니다.
+이러한 경우 페이지 로드 시 앞뒤 요청 수가 줄어들도록 필요한 모든 클라이언트 라이브러리 코드를 단일 파일에 결합하는 것이 유용할 수 있습니다. 이렇게 하려면 `embed` 노드의 포함 속성을 사용하여 필요한 라이브러리를 앱별 클라이언트 라이브러리에 `cq:ClientLibraryFolder`할 수 있습니다.
 
 #### CSS 파일의 경로 {#paths-in-css-files}
 
@@ -254,7 +254,7 @@ body {
 }
 ```
 
-#### HTML 출력에 포함된 파일 보기 {#see-embedded-files}
+#### HTML 출력에 포함된 파일 을 참조하십시오. {#see-embedded-files}
 
 포함된 코드의 원본을 추적하거나 포함된 클라이언트 라이브러리가 예상 결과를 생성하도록 하려면 런타임 시 포함된 파일의 이름을 볼 수 있습니다. 파일 이름을 보려면 `debugClientLibs=true` 매개 변수를 웹 페이지의 URL에 추가하십시오. 생성된 라이브러리에 포함된 코드 대신 `@import` 문이 포함되어 있습니다.
 
@@ -270,14 +270,14 @@ body {
 @import url("/apps/myapp/clientlib/styles/main.css");
 ```
 
-1. 웹 브라우저의 주소 상자에서 HTML URL에 다음 텍스트를 추가합니다.
+1. 웹 브라우저의 주소 상자에서 HTML의 URL에 다음 텍스트를 추가합니다.
    * `?debugClientLibs=true`
 1. 페이지가 로드되면 페이지 소스를 봅니다.
 1. 링크 요소에 대해 href로 제공된 링크를 클릭하여 파일을 열고 소스 코드를 봅니다.
 
 ### 전처리기 사용 {#using-preprocessors}
 
-AEM에서는 플러그 가능한 전처리기를 허용하며 CSS 및 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 AEM의 기본 전처리기로 설정된 JavaScript용 [Google Closure Compiler(GCC)](https://developers.google.com/closure/compiler/)을(를) 지원합니다.
+AEM에서는 플러그 가능한 전처리가 가능하며 CSS 및 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 YUI가 AEM의 기본 전처리기로 설정된 JavaScript용 [Google Closure Compiler(GCC)](https://developers.google.com/closure/compiler/)을(를) 지원합니다.
 
 플러그 가능한 프리프로세서는 다음을 포함하여 유연하게 사용할 수 있습니다.
 
@@ -288,7 +288,7 @@ AEM에서는 플러그 가능한 전처리기를 허용하며 CSS 및 JavaScript
 
 >[!NOTE]
 >
->기본적으로 AEM은 YUI Compressor를 사용합니다. 알려진 문제 목록은 [YUI 압축기 GitHub 설명서](https://github.com/yui/yuicompressor/issues)를 참조하십시오. 특정 클라이언트 라이브러리에 대해 GCC 압축기로 전환하면 YUI 사용 시 관찰되는 몇 가지 문제를 해결할 수 있습니다.
+>기본적으로 AEM은 Javascript를 축소하기 위해 GCC Compressor를 사용합니다.
 
 >[!CAUTION]
 >
@@ -299,13 +299,12 @@ AEM에서는 플러그 가능한 전처리기를 허용하며 CSS 및 JavaScript
 클라이언트 라이브러리 또는 시스템 전체에 대해 프로세서 구성을 구성할 수 있습니다.
 
 * Clientlibrary 노드에서 다중 값 속성 `cssProcessor` 및 `jsProcessor`을(를) 추가합니다.
-* 또는 **HTML 라이브러리 관리자** OSGi 구성을 통해 시스템 기본 구성을 정의하십시오.
 
-clientlib 노드의 전처리기 구성이 OSGI 구성보다 우선합니다.
+**HTML 라이브러리 관리자** OSGi 구성을 통해 시스템 기본 구성을 정의할 수 없습니다. 로컬 SDK에만 적용되고 전체 스택 파이프라인 실행에는 적용되지 않습니다.
 
 #### 형식 및 예 {#format-and-examples}
 
-##### 형식 {#format}
+##### 포맷 {#format}
 
 ```javascript
 config:= mode ":" processorName options*;
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ GCC 옵션에 대한 자세한 내용은 [GCC 설명서](https://developers.goog
 
 #### 시스템 기본 축소기 설정 {#set-system-default-minifier}
 
-AEM에서 YUI가 기본 축소기로 설정됩니다. GCC로 변경하려면 다음 단계를 따르십시오.
-
-1. (`http://<host>:<port/system/console/configMgr`)의 Apache Felix 구성 관리자로 이동합니다.
-1. **Adobe Granite HTML 라이브러리 관리자**&#x200B;를 찾아 편집합니다.
-1. **축소** 옵션을 활성화합니다(아직 활성화되지 않은 경우).
-1. 값 **JS 프로세서 기본 구성**&#x200B;을(를) `min:gcc`(으)로 설정합니다.
-   * 옵션을 세미콜론으로 구분하면 전달할 수 있습니다(예: `min:gcc;obfuscate=true`).
-1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+AEM as a Cloud Service에서는 시스템 기본 축소기를 설정할 수 없습니다.
