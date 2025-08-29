@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ ht-degree: 1%
 `102` 텍스트 상자에 `Pet ID`을(를) 입력하면 **제출** 단추가 숨겨집니다.
 
 ![출력](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> 미리 정의된 양식 데이터 모델을 사용하지 않고 [규칙 편집기 인터페이스에서 직접 API를 통합](/help/forms/api-integration-in-rule-editor.md)할 수도 있습니다.
 
 ## 자주 묻는 질문
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 4%
 
    **이 정보를 찾을 수 있는 위치**
 
-   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)&quot;를 참조하십시오.
+   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
 
    **프로젝트가 준비되었습니다!**
 
@@ -268,7 +268,14 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   > AEM as a Cloud Service 환경에서 오류 로그를 보려면 Splunk를 사용할 수 있습니다.
+   > * AEM as a Cloud Service 환경에서 오류 로그를 보려면 Splunk를 사용할 수 있습니다.
+   > * 사용자 지정 제출 액션 서비스에 처리되지 않은 오류가 발생하면 AEM as a Cloud Service은 502 오류 페이지 HTML을 반환합니다.
+
+
+## FAQ
+
+**Q: 제출 후 적응형 양식에 5.x.x 오류 페이지가 표시되는 이유는 무엇입니까?**
+처리되지 않은 오류로 사용자 지정 제출 액션 서비스가 실패했습니다. 그런 다음 AEM Cloud Service는 기본 오류 페이지를 반환합니다.
 
 <!--
 ## Best practices

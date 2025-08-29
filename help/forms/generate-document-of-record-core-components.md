@@ -4,9 +4,9 @@ description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3207'
+source-wordcount: '3244'
 ht-degree: 1%
 
 ---
@@ -348,7 +348,7 @@ When you select a form model, configure Document of Record using options availab
       * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 [!UICONTROL 기록 문서]에 확인란 및 라디오 단추의 선택한 값만 표시됩니다.
       * **여러 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
       * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
-      * **수평 정렬을 위한 옵션 수**:수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
+      * **수평 정렬을 위한 옵션 수**:You&#x200B;는 수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
 
 
 
@@ -415,6 +415,7 @@ When you select a form model, configure Document of Record using options availab
 * **패널을 테이블로 표시:** 패널에 필드가 6개 미만인 경우 등록 정보를 설정하면 패널이 기록 문서에서 테이블로 표시됩니다. 패널에만 적용됩니다.
 * **기록 문서에서 제목 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 제목이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
 * **기록 문서에서 설명 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 설명이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
+* **기록 문서에서 숨겨진 필드 제외**: 이 속성을 선택하면 기록 문서에서 숨겨진 필드가 제외됩니다. 모든 양식 필드에 적용됩니다. 기본적으로 **기록 문서에서 숨겨진 필드 제외** 옵션은 선택되어 있지 않습니다.
 
 **양식 수준 설정**
 

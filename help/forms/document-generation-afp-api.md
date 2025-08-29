@@ -4,16 +4,16 @@ description: AFP Output Sync API를 사용하여 출력 표현물을 검색하�
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 11%
+source-wordcount: '237'
+ht-degree: 14%
 
 ---
 
 # AEM Forms API를 사용하여 AFP 출력 생성
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 AFP(Advanced Function Presentation)는 주로 인쇄용으로 설계된 고성능 문서 형식입니다.\
 이 안내서에서는 AEM Forms을 사용하여 AFP 출력을 생성하는 데 필요한 모든 단계 및 구성을 간략하게 설명합니다.
@@ -101,4 +101,4 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 응답을 저장하고 저장된 파일을 AFP 판독기에서 열어 볼 수 있습니다.
 
-<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
+![PDF reader](/help/forms/assets/afp-pdf.png)
