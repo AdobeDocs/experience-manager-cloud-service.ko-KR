@@ -4,7 +4,7 @@ description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 63%
@@ -42,7 +42,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
    시스템 관리자에게 [비즈니스 소유자](assign-profiles-cloud-manager.md) 역할을 할당하는 방법에 대한 자세한 내용을 보려면 이전 단계인 **Cloud Manager 제품 프로필에 팀원 할당**(으)로 돌아가십시오.
 
-1. [experience.adobe.com](https://experience.adobe.com/)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
 1. 빠른 액세스 그룹화에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
 1. 왼쪽 패널에서 **Cloud Manager**&#x200B;을(를) 클릭합니다.
 
@@ -56,7 +56,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 **비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 환영 이메일에서 아래 그림과 같이 **시작하기**&#x200B;를 클릭합니다.
+1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
