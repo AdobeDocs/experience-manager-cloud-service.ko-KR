@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # 규칙 편집기에서 API 통합
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 규칙 편집기의 API 통합은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+> 규칙 편집기의 API 통합은 범용 편집기에서 작성된 [Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)에도 적용됩니다.
 
 ## 비교: API 통합 메서드
 
@@ -76,6 +76,8 @@ ht-degree: 0%
    * **추가/삭제**: 새 매핑을 추가하거나 기존 매핑을 제거합니다.
 
 ## 사용 사례: 비자 신청 양식에서 국가 필드 채우기
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **시나리오**: 정부 기관에서 다음 필드가 포함된 온라인 비자 신청 양식을 제공합니다.
 

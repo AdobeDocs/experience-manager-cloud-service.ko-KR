@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 규칙 편집기 개선 사항 및 사용 사례
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
 
 이 문서에서는 적응형 Forms의 규칙 편집기에 대한 최신 개선 사항을 소개합니다. 이러한 업데이트는 사용자 지정 코드를 작성하지 않고도 양식 동작을 보다 쉽게 정의하고, 보다 역동적이고 반응적이며 개인화된 양식 경험을 만들 수 있도록 설계되었습니다.
 
@@ -105,6 +105,8 @@ ht-degree: 0%
 
 **규칙 편집기에서 변수 값 설정 및 변수 값 가져오기 함수를 사용하는 구현**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 **변수 값 설정** 함수를 사용하여 **Address** 조각에 **extracharge**(이)라는 임시 변수를 할당하는 규칙을 구성했습니다. 이 변수의 값은 선택한 국가를 기준으로 동적으로 변경됩니다. 예:
 
 * 사용자가 미국을 선택하면 **extracharge**&#x200B;이(가) 500으로 설정됩니다.
@@ -122,7 +124,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 > When 조건에 **변수 값 가져오기** 함수를 추가할 수도 있습니다.
-> &#x200B;> ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
+> > ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
 
 이 접근 방식을 사용하면 양식에 필드를 추가하지 않고 구조를 깔끔하고 사용자 친화적으로 동적으로 실시간 계산을 수행할 수 있습니다.
 
@@ -135,6 +137,9 @@ ht-degree: 0%
 양식에 필드에 논리를 직접 바인딩하는 대신 **디스패치 이벤트** 및 **트리거 이벤트 설정**&#x200B;과(와) 함께 이벤트 기반 접근 방식을 사용하여 모듈화와 유지 관리 기능을 개선합니다.
 
 **디스패치 이벤트 및 트리거 시 이벤트를 사용한 구현**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 로그인 조각이 사용자 이름 및 암호에 대해 사전 정의된 필드가 포함된 양식에 추가됩니다. **OTP 가져오기** 단추에 규칙이 구성되어 OTP를 입력하고 확인하는 입력 필드가 포함된 **유효성 검사 패널**&#x200B;을 표시합니다.
 
