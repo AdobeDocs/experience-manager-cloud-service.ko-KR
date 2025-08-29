@@ -4,10 +4,10 @@ description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 75%
+source-wordcount: '909'
+ht-degree: 63%
 
 ---
 
@@ -42,9 +42,13 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
    시스템 관리자에게 [비즈니스 소유자](assign-profiles-cloud-manager.md) 역할을 할당하는 방법에 대한 자세한 내용을 보려면 이전 단계인 **Cloud Manager 제품 프로필에 팀원 할당**(으)로 돌아가십시오.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com/)에서 Cloud Manager에 로그인합니다.
+1. 빠른 액세스 그룹화에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 패널에서 **Cloud Manager**&#x200B;을(를) 클릭합니다.
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로 성공적으로 로그인하여 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager을 초기화합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
+   콘솔의 ![Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+
+**비즈니스 소유자** 역할이 있는 시스템 관리자로 로그인하면 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager을 사용합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
 
 **비즈니스 소유자** 역할을 가진 시스템 관리자로 Cloud Manager에 로그인할 때까지 **비즈니스 소유자** 역할을 가진 다른 사용자는 Cloud Manager에서 프로그램을 만들 수 없습니다. 이 규칙은 올바른 역할이 할당되더라도 true입니다.
 
@@ -52,7 +56,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 **비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 환영 이메일에서 아래 그림과 같이 **시작하기**&#x200B;를 클릭합니다.
+1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
@@ -63,25 +67,26 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 1. Cloud Manager의 랜딩 페이지로 이동합니다.
 
-또는 Adobe Experience Cloud 홈 페이지에서 다음 단계를 사용하여 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다.
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
-1. [Adobe Experience Cloud](https://experience.adobe.com)로 이동한 다음 Adobe ID를 사용하여 로그인합니다.
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;를 선택하여 AEM 홈 페이지를 엽니다.
+1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud 홈 페이지](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. **Cloud Manager** 타일에서 **시작**&#x200B;을 선택합니다.
+1. On the **Cloud Manager** tile, select **Launch**.
 
-   ![AEM 홈 페이지](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. 성공적으로 로그인하면 Cloud Manager 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs)를 참조하십시오.
+1. After successfully logging on, you are directed to the Cloud Manager landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) for more details.
 
-Cloud Manager를 통해 프로그램 및 제품에 액세스하는 방법은 귀하에게 달려 있으며 Cloud Manager를 사용하는 방법이나 프로그램을 관리하는 방법에는 영향을 미치지 않습니다.
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
 >[!NOTE]
 >
->Cloud Manager에서 할당된 역할과 애플리케이션의 상태에 따라 Cloud Manager 사용자 인터페이스를 사용하는 동안 표시되는 화면이 다를 수 있습니다.
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
 ## 프로그램 보기 {#viewing-programs}
 
@@ -91,35 +96,35 @@ Cloud Manager에 성공적으로 액세스하면 다음 섹션에 설명된 대�
 
 조직에 프로그램이 없는 경우 랜딩 페이지에서 첫 번째 프로그램을 만들도록 지시합니다.
 
-![프로그램 없음](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![프로그램 없음](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
 ### 프로그램이 이미 있는 경우 {#programs-exist}
 
 조직에 프로그램이 있는 경우 랜딩 페이지에 기존 프로그램이 표시되고 다른 프로그램을 추가할 수 있는 버튼도 제공됩니다.
 
-![프로그램 있음](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![프로그램 있음](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
 ### 프로그램이 존재하고 시스템 관리자인 경우 {#programs-exist-sysadmin}
 
 조직에 프로그램이 있고 시스템 관리자인 경우 랜딩 페이지에 **프로그램 추가** 옵션과 함께 **액세스 관리** 단추가 표시됩니다.
 
-![시스템 관리자 보기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![시스템 관리자 보기](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
 ## 사용자 역할 확인 {#verify-user-roles}
 
 Cloud Manager에 성공적으로 로그인하면 **비즈니스 소유자** 제품 프로필이 할당되었는지 확인할 수 있습니다.
 
-1. 창의 오른쪽 상단에서 프로필을 선택합니다.
+1. 페이지의 오른쪽 상단 모서리에서 **계정** 아이콘을 클릭합니다.
 
-1. 사용자에게 할당된 역할을 표시하려면 **사용자 역할**&#x200B;을 선택합니다.
+1. **사용자 역할**&#x200B;을 클릭합니다.
 
-   ![사용자 역할](/help/journey-onboarding/assets/setup-resources6.png)
+   ![사용자 역할](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. 대화 상자에서 사용자에게 **비즈니스 소유자** 역할이 있는지 확인해야 합니다.
+1. **사용자 역할** 대화 상자에서 사용자에게 **비즈니스 소유자** 역할이 있는지 확인합니다.
 
-   ![사용자 역할 목록](/help/journey-onboarding/assets/setup-resources7.png)
+   ![사용자 역할 목록](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Cloud Manager에 비즈니스 소유자로 로그인했습니다! **비즈니스 소유자** 역할이 할당되지 않은 경우 시스템 관리자에게 문의하십시오.
+Cloud Manager에 비즈니스 소유자로 로그인했습니다. **비즈니스 소유자** 역할이 할당되지 않은 경우 시스템 관리자에게 문의하십시오.
 
 ## 다음 단계 {#whats-next}
 
