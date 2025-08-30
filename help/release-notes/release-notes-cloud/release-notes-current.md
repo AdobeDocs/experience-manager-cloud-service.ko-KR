@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 827077d8dd39520a74992907134e0466b7beb648
+source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 47%
+source-wordcount: '1961'
+ht-degree: 48%
 
 ---
 
@@ -81,32 +81,59 @@ DM에서 OpenAPI를 사용하여 자산 전달을 위한 별칭 URL을 만들고
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms의 새로운 기능 {#forms-new-features}
+### Experience Manager Forms의 새로운 기능 {#new-features-forms}
 
-* [날짜 및 시간 입력 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): 이제 날짜 및 시간 구성 요소를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
-* [파일 업로드에 대한 향상된 오류 처리](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): 이제 첨부 파일 구성 요소가 업로드된 파일 형식을 허용 목록에 대해 자동으로 확인합니다. 사용자가 지원되지 않는 형식으로 파일을 업로드하면 제출 중에 양식에 오류가 표시됩니다. 또한 구성 요소는 파일 내용을 확인하여 파일 형식을 확인하므로 양식의 전반적인 보안을 강화할 수 있습니다.
-* [사용자 지정 제출 액션에 대해 지정된 오류 응답](/help/forms/custom-submit-action-troubleshooting.md): 사용자 지정 제출 액션에 처리되지 않은 오류가 발생하면 오류 코드 502가 반환됩니다. 이렇게 하면 이 문제가 사용자 지정 제출 액션과 관련이 있음을 식별하여 디버깅을 더 쉽게 할 수 있습니다.
-* [기록 문서에서 숨겨진 필드 제외](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): 기록 문서에서 숨겨진 필드를 제외할 수 있도록 새 속성이 추가되었습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 모든 양식 필드에 적용됩니다.
+**날짜 및 시간 입력 구성 요소**
+
+이제 [날짜 및 시간 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
+
+**파일 업로드에 대한 향상된 오류 처리**
+
+[첨부 파일 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)에서 이제 허용 목록에 대해 업로드된 파일 형식을 자동으로 확인합니다. 사용자가 지원되지 않는 형식으로 파일을 업로드하면 제출 중에 양식에 오류가 표시됩니다. 또한 구성 요소는 파일 내용을 확인하여 파일 형식을 확인하므로 양식의 전반적인 보안을 강화할 수 있습니다.
+
+**사용자 지정 제출 액션에 대해 지정된 오류 응답**
+
+[사용자 지정 제출 액션](/help/forms/custom-submit-action-troubleshooting.md)에서 처리되지 않은 오류가 발생하면 시스템이 오류 코드 502를 반환합니다. 이렇게 하면 이 문제가 사용자 지정 제출 액션과 관련이 있음을 식별하여 디버깅을 더 쉽게 할 수 있습니다.
+
+**기록 문서에서 숨겨진 필드 제외**
+
+새 속성을 사용하면 [기록 문서](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)에서 숨겨진 필드를 제외할 수 있습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 모든 양식 필드에 적용됩니다.
+
 
 ### AEM Forms의 프리릴리스 기능
 
-* [AFP 표현물 생성 및 동기화](/help/forms/document-generation-afp-api.md): 이제 AEM Forms 통신 API를 사용하여 XDP 파일을 AFP 형식으로 변환할 수 있습니다. AFP는 대규모 기업용 인쇄에서 널리 사용되는 고성능 포맷이다.
-* **규칙 편집기의 개선 사항**
-   * [함수 목록의 유효성 검사 메서드](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): 이제 유효성 검사 및 재설정 메서드가 패널, 필드 및 양식 수준에서 실행을 지원합니다. 이전에는 양식 수준에서만 지원되었습니다.
-   * [최신 JavaScript 지원](/help/forms/rule-editor-core-components-difference-tables.md): 사용자 지정 기능에 대해 ECMAScript 2019 이상 기능에 대한 지원을 추가하여 보다 효율적이고 모듈식이며 재사용 가능한 코드를 작성할 수 있습니다
-   * [규칙 편집기의 DoR 옵션 다운로드](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): 기록 문서(DoR)를 다운로드하는 함수가 규칙 편집기에서 기본 제공(OOTB) 옵션으로 추가되었습니다.
-     ![기록 문서](/help/forms/assets/document-of-record-rn.gif)
-   * [규칙 편집기의 동적 변수](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): 이제 규칙 편집기에서 동적(임시) 변수를 사용하여 조건 및 작업을 보다 유연하게 정의할 수 있습니다. 숨겨진 필드는 더 이상 임시 값을 저장하는 데 필요하지 않습니다.
-   * [사용자 지정 이벤트 기반 규칙 지원](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): 이제 사용자 지정 이벤트를 정의하고 해당 이벤트를 기반으로 규칙을 트리거할 수 있습니다.
-   * [컨텍스트 인식 반복 가능 패널 규칙](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): 반복 가능 패널에서 규칙이 마지막 패널 인스턴스에만 적용되지 않고 컨텍스트를 기반으로 실행됩니다.
-   * [매개 변수에 의해 트리거된 규칙](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): 이제 규칙 편집기에서 쿼리 매개 변수, UTM 매개 변수 또는 브라우저 매개 변수를 기반으로 규칙 실행을 지원합니다.
-   * [양식별 사용자 지정 함수](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms은 이제 양식별 사용자 지정 함수 스크립트를 지원하므로 재사용 가능한 논리를 보다 유연하게 관리할 수 있습니다.
-   * [사용자 지정 함수에 대한 정적 가져오기](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): 이제 유니버설 편집기의 규칙 편집기에서 정적 가져오기를 지원하므로 개발자가 여러 양식에서 함수를 구성, 공유 및 다시 사용할 수 있습니다.
+**AFP 표현물 생성 및 동기화**
 
-### AEM Forms의 얼리 어답터 기능
+이제 [AEM Forms 통신 API](/help/forms/document-generation-afp-api.md)를 사용하여 XDP 파일을 AFP 형식으로 변환할 수 있습니다. AFP는 대규모 기업용 인쇄에서 널리 사용되는 고성능 포맷이다.
 
-* [스크리블 서명 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): 이제 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있도록 스크리블 서명 구성 요소를 사용할 수 있습니다. 이 구성 요소를 사용하면 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 그릴 수 있습니다.
-* [규칙 편집기에서 직접 API 통합](/help/forms/api-integration-in-rule-editor.md): 이제 적응형 Forms은 양식 데이터 모델 없이도 시각적 규칙 편집기에서 직접 API 통합을 지원합니다. 작성자는 URL 또는 cURL 가져오기를 사용하여 API를 구성하고, 입력/출력 매개 변수를 매핑하며, 인증을 통해 보안 호출을 수행할 수 있습니다.
+**규칙 편집기의 개선 사항**
+
+* [함수 목록의 유효성 검사 메서드](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): 이제 유효성 검사 및 재설정 메서드가 패널, 필드 및 양식 수준에서 실행을 지원합니다. 이전에는 양식 수준에서만 지원되었습니다.
+* [최신 JavaScript 지원](/help/forms/rule-editor-core-components-difference-tables.md): 사용자 지정 기능에 대해 ECMAScript 2019 이상 기능에 대한 지원을 추가하여 보다 효율적이고 모듈식이며 재사용 가능한 코드를 작성할 수 있습니다.
+* [규칙 편집기의 DoR 옵션 다운로드](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): 기록 문서(DoR)를 다운로드하는 함수가 규칙 편집기에서 기본 제공(OOTB) 옵션으로 추가되었습니다.
+
+  ![기록 문서](/help/forms/assets/document-of-record-rn.gif)
+
+* [규칙 편집기의 동적 변수](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): 이제 규칙 편집기에서 동적(임시) 변수를 사용하여 조건 및 작업을 보다 유연하게 정의할 수 있습니다. 숨겨진 필드는 더 이상 임시 값을 저장하는 데 필요하지 않습니다.
+* [사용자 지정 이벤트 기반 규칙 지원](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): 이제 사용자 지정 이벤트를 정의하고 해당 이벤트를 기반으로 규칙을 트리거할 수 있습니다.
+* [컨텍스트 인식 반복 가능 패널 규칙](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): 반복 가능 패널에서 규칙이 마지막 패널 인스턴스에만 적용되지 않고 컨텍스트를 기반으로 실행됩니다.
+* [매개 변수에 의해 트리거된 규칙](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): 이제 규칙 편집기에서 쿼리 매개 변수, UTM 매개 변수 또는 브라우저 매개 변수를 기반으로 규칙 실행을 지원합니다.
+* [양식별 사용자 지정 함수](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms은 이제 양식별 사용자 지정 함수 스크립트를 지원하므로 재사용 가능한 논리를 보다 유연하게 관리할 수 있습니다.
+* [사용자 지정 함수에 대한 정적 가져오기](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): 이제 유니버설 편집기의 규칙 편집기에서 정적 가져오기를 지원하므로 개발자가 여러 양식에서 함수를 구성, 공유 및 다시 사용할 수 있습니다.
+
+### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
+
+AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다.
+
+이들 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
+
+**스크리블 서명 구성 요소**
+
+이제 [스크리블 서명 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)를 사용하여 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있습니다. 이 구성 요소를 사용하면 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 그릴 수 있습니다.
+
+**규칙 편집기에서 직접 API 통합**
+
+적응형 Forms은 이제 양식 데이터 모델 없이도 시각적 규칙 편집기에서 [직접 API 통합](/help/forms/api-integration-in-rule-editor.md)을(를) 지원합니다. 작성자는 URL 또는 cURL 가져오기를 사용하여 API를 구성하고, 입력/출력 매개 변수를 매핑하며, 인증을 통해 보안 호출을 수행할 수 있습니다.
 
 <!--
 **Forms Optimization opportunities**
@@ -153,6 +180,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--
