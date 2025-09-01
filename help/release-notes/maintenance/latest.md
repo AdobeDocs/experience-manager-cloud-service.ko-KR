@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 35%
+source-wordcount: '632'
+ht-degree: 34%
 
 ---
 
@@ -65,6 +65,8 @@ ht-degree: 35%
 ### 알려진 문제 {#known-issues-21994}
 
 * Apache HTTPD 버전 2.4.65에서는 보안 수정 사항의 일부로 구현된 새로운 제한 사항으로 인해 특정 구성에 영향을 줄 수 있는 변경 사항이 도입되었습니다. 이러한 수정 사항은 Content-Type 헤더를 수정하는 데 사용되는 `RequestHeader set`, `edit` 및 `edit_r`과(와) 같은 지시문이 이제 요청 헤더로 올바르게 제한되도록 함으로써 취약성을 해결합니다. 이 변경 사항은 특히 정적 콘텐츠의 경우 의도하지 않은 응답 헤더 수정을 방지합니다.
+* Apache HTTPD 버전 2.4.65는 ProxyRemote 연결을 사용할 때 mod_proxy에 변경 사항을 도입했습니다. 문제가 발생하는 경우 disablereuse 플래그를 On으로 설정하십시오.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### 사용 중단된 기능 및 API {#deprecated-21994}
 
