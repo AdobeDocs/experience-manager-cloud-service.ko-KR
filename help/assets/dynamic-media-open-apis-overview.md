@@ -3,10 +3,10 @@ title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1062'
-ht-degree: 100%
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 98%
 
 ---
 
@@ -28,9 +28,9 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
 
 * **브랜드 일관성**: [브랜드 승인 자산](/help/assets/approve-assets.md)만 다운스트림 애플리케이션에 노출됩니다. [브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 통제권을 유지합니다](/help/assets/restrict-assets-delivery.md). 승인된 최신 버전의 자산만 사용할 수 있어 모든 채널과 애플리케이션에서 브랜드 일관성을 보장합니다.
 
-* **웹에 최적화된 게재**: 디지털 자산은 웹에 최적화된 형식으로 제공되어 디지털 경험의 핵심 웹 바이탈을 향상시킵니다. 여기에는 이미지에 대한 WebP 렌디션 지원, 비디오에 대한 HLS 또는 DASH 프로토콜을 통한 적응형 스트리밍, 문서에 대한 원본 렌디션이 포함됩니다.
+* **웹에 최적화된 게재**: 디지털 자산은 웹에 최적화된 포맷으로 제공되어 디지털 경험의 핵심 웹 바이탈을 향상시킵니다. 여기에는 이미지에 대한 WebP 렌디션 지원, 비디오에 대한 HLS 또는 DASH 프로토콜을 통한 적응형 스트리밍, 문서에 대한 원본 렌디션이 포함됩니다.
 
-* **동적 자산 변환**: 당사 시스템은 이미지 수정자로 알려진 URL 매개변수를 사용하여 즉석에서 이미지를 변환할 수 있습니다. [예: 폭, 높이, 회전, 뒤집기, 품질, 자르기, 포맷 및 스마트 자르기](/help/assets/deliver-assets-apis.md). 변환된 렌디션은 동적으로 생성되며 CDN을 통해 원활하게 게재됩니다.
+* [동적 자산 변환](https://developer.adobe.com/experience-cloud/experience-manager-apis): 당사 시스템은 이미지 수정자로 알려진 URL 매개변수를 사용하여 즉석에서 이미지를 변환할 수 있습니다. 예: 너비, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 스마트 자르기. 변환된 렌디션은 동적으로 생성되며 CDN을 통해 원활하게 게재됩니다.
 
 * **자산의 안전한 게재**: OpenAPI 기능 포함 Dynamic Media는 디지털 자산에 대한 액세스를 제어할 수 있는 메커니즘을 제공합니다. 보안 대상 자산의 메타데이터로 사용자 역할 또는 그룹을 지정하고 [승인된 사용자만 이러한 자산에 액세스](/help/assets/restrict-assets-delivery.md)할 수 있는 사전 정의 기간을 설정할 수 있습니다. 보안 자산의 게재 URL은 제한된 기간 동안 승인되지 않은 사용자가 접근할 수 없습니다.
 
