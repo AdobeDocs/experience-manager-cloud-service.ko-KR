@@ -4,16 +4,19 @@ description: 콘텐츠 복사 도구를 통해 사용자는 필요할 때 AEM as
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # 콘텐츠 복사 도구 {#content-copy}
 
 콘텐츠 복사 도구를 통해 사용자는 필요할 때 AEM as a Cloud Service의 프로덕션 환경에서 낮은 환경으로 테스트 목적으로 변경 가능한 콘텐츠를 복사할 수 있습니다.
+
+>[!NOTE]
+>기본 콘텐츠 복사 흐름은 상위 환경에서 하위 환경으로 복사되지만 추가 기능(**순방향 흐름**)을 사용하면 하위 비프로덕션 환경에서 상위 비프로덕션 환경(예: 개발 → 단계, RDE → 단계)으로 복사할 수 있습니다. 가용성 요구 사항을 포함한 자세한 내용은 [제한 사항](#limitations)을 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -105,7 +108,7 @@ ht-degree: 34%
 콘텐츠 세트가 만들어지면 이를 사용하여 콘텐츠를 복사할 수 있습니다. 콘텐츠를 복사할 수 있도록 다음 단계를 따르십시오.
 
 >[!NOTE]
-> 해당 환경에서 [콘텐츠 전송](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 작업을 실행하는 동안에는 해당 환경에서 콘텐츠 복사를 사용하지 마십시오.
+> 해당 환경에서 [콘텐츠 전송](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 작업이 실행되는 동안에는 해당 환경에서 콘텐츠 복사를 사용하지 마십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -132,7 +135,7 @@ ht-degree: 34%
    * 콘텐츠는 환경의 계층 구조가 다음과 같은(가장 높은 환경에서 가장 낮은 환경으로) 높은 환경에서 더 낮은 환경으로 또는 개발/RDE 환경 사이에서만 복사할 수 있습니다.
       * 프로덕션
       * 스테이징
-      * 개발 / RDE
+      * 개발/RDE
    * 기본적으로 프로그램 간 콘텐츠 복사는 비활성화되어 있습니다. 그러나 고객 요청 시 활성화할 수 있으므로 추가 **대상 프로그램** 입력 필드를 사용할 수 있습니다.
 
 1. 필요한 경우 복사 프로세스에서 **액세스 제어 목록 포함**&#x200B;을 선택할 수도 있습니다.
@@ -192,7 +195,9 @@ ht-degree: 34%
 
 콘텐츠 복사 도구에는 다음과 같은 제한 사항이 있습니다.
 
-* 낮은 환경에서 더 높은 환경으로 콘텐츠를 복사할 수 없습니다.
+* 콘텐츠 복사 도구는 다음 두 가지 흐름 모드를 지원합니다.
+   1. 하향식 흐름 - 콘텐츠를 상위 환경에서 하위 환경으로 복사할 수 있습니다(예: 프로덕션 → 스테이징, 스테이징 → 개발/RDE).
+   2. 정방향 흐름(새로운 기능) - 낮은 비프로덕션 환경에서 더 높은 비프로덕션 환경(예: 개발 → 단계, RDE → 단계)으로 콘텐츠를 복사할 수도 있습니다. 이 기능은 명시적 요청시에만 사용할 수 있으며, 명시적으로 비활성화하도록 요청될 때까지 활성화된 상태로 유지됩니다. 프로덕션 환경은 전달 흐름에 유효한 대상이 아닙니다.
 * 콘텐츠는 작성 서비스에서만 및 저작 서비스로 복사할 수 있습니다.
 * 동일한 환경에서 동시에 콘텐츠 복사 작업을 실행할 수 없습니다.
 * 콘텐츠 세트당 최대 50개의 경로를 지정할 수 있습니다. 제외된 경로에는 제한이 없습니다.
