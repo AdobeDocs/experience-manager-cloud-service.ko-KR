@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '585'
+ht-degree: 4%
 
 ---
 
-
 # 대화형 통신 만들기
+
+>[!NOTE]
+>
+> 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 `aem-forms-ea@adobe.com`(으)로 전자 메일을 보내십시오.
+
+>[!IMPORTANT]
+>
+> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. Forms Experience Builder가 얼리어답터 프로그램 동안 계속 발전함에 따라 프롬프트, 예 및 우수 사례가 변경될 수 있습니다.
 
 대화형 커뮤니케이션을 사용하면 고객 서비스, 청구, 온보딩 문서, 제안서, 계정 업데이트 등을 포함하여 개인화되고 대화형 커뮤니케이션을 만들고, 관리하고, 제공할 수 있습니다. 동적인 사용자별 컨텐츠가 업계 전반에 걸쳐 통신 경험을 향상시키는 모든 시나리오를 지원하도록 설계되었습니다.
 
