@@ -179,6 +179,7 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
     
     등록 양식을 개인 정보, 환경 설정, 확인
 의 3단계 마법사로 다시 구성합니다.
+
 ## 필드 관리 및 구성
 
 **사용할 시점:** 양식 필드를 추가, 수정 또는 구성해야 하는 경우.
@@ -356,11 +357,11 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **규칙 관련 프롬프트:**
 
-    패널@spouseInformation @maritalStatus &quot;Married** 또는 &quot;Domestic Partnership&quot;인 경우에만 표시하는 **가시성 규칙 을 만듭니다
+    패널@spouseInformation @maritalStatus &quot;Married **&#x200B; 또는 &quot;Domestic Partnership&quot;인 경우에만 표시하는 &#x200B;** 가시성 규칙 을 만듭니다
     
-    **점진적 공개**를 추가합니다. 이때 이전 답변을 기반으로 추가 질문이 표시됩니다. 기본 정보로 시작한 다음 관련 후속 작업을 표시합니다
+    **점진적 공개**&#x200B;를 추가합니다. 이때 이전 답변을 기반으로 추가 질문이 표시됩니다. 기본 정보로 시작한 다음 관련 후속 작업을 표시합니다
     
-    **스마트 기본값**을 구현합니다. 여기서 선택 항목@country 관련 필드를 자동 설정합니다. 수동 재정의 허용
+    **스마트 기본값**&#x200B;을 구현합니다. 여기서 선택 항목@country 관련 필드를 자동 설정합니다. 수동 재정의 허용
 
 ## 데이터 통합 및 제출
 
@@ -413,11 +414,11 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **통합 관련 프롬프트:**
 
-    새 리드를 만들려면 이 양식을 **CRM 시스템**에 연결하십시오. 양식@firstName 제출되면 FirstName에 매핑하고, Email에 @email, LeadSource를 &quot;Web Form&quot;으로 설정하고, Status를 &quot;New&quot;
+    새 리드를 만들려면 이 양식을 **CRM 시스템**&#x200B;에 연결하십시오. 양식@firstName 제출되면 FirstName에 매핑하고, Email에 @email, LeadSource를 &quot;Web Form&quot;으로 설정하고, Status를 &quot;New&quot;
     
-    **워크플로 트리거**로 설정합니다. 관리자 알림을 사용하여 모든 양식 데이터를 전달하고 승인 워크플로우를 트리거합니다
+    **워크플로 트리거**&#x200B;로 설정합니다. 관리자 알림을 사용하여 모든 양식 데이터를 전달하고 승인 워크플로우를 트리거합니다
     
-    **데이터베이스 통합**을 구성하여 양식 제출을 레코드로 저장합니다. 업로드된 문서가 있는 각 제출에 대해 새 폴더를 만듭니다
+    **데이터베이스 통합**&#x200B;을 구성하여 양식 제출을 레코드로 저장합니다. 업로드된 문서가 있는 각 제출에 대해 새 폴더를 만듭니다
 
 <!-- ## Import & Convert Existing Forms
 
