@@ -4,9 +4,9 @@ description: 클라이언트측 데이터 수집을 모니터링할 수 있는 �
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
+source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Operational Telemetry 서비스는 데이터 수집을 최소화하도록 설계
 * 방문 중인 사이트의 호스트 이름(예: `experienceleague.adobe.com`)
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형 및 운영 체제(예: `desktop:windows` 또는 `mobile:ios`)
 * 데이터 수집 시간(예: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`)
-* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs?lang=ko`)
+* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs`)
 * 레퍼러 URL(사용자가 링크를 따라간 경우, 현재 페이지에 연결된 페이지의 URL)
 * `2Ac6`과(와) 유사한 형식으로 임의로 생성된 페이지 보기의 ID
 * 샘플링 속도의 가중치 또는 역입니다(예: `100`). 즉, 100개 페이지 중 하나만 기록됩니다
@@ -104,3 +104,14 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Adobe은 운영 원격 분석 을 사용할 것을 권장합니다. 그 이유는 운영 원격 분석의 상당한 이점과 Adobe이 웹 사이트 성능을 향상시켜 디지털 경험을 최적화하는 데 도움이 될 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
 
    옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 [Cloud Manager에서 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이)라는 환경 변수를 `AEM_OPTEL_DISABLED` 값으로 설정하여 작동 원격 분석을 사용하지 않도록 설정할 수 있습니다. `true` 나중에 운영 원격 분석을 다시 활성화하려면 해당 환경 변수를 다시 제거하십시오.
+
+1. **컨텐츠 보안 정책을 임시 항목으로 사용할 수 있습니까?
+
+   운영 원격 분석 지원에는 임시 항목으로 CSP(콘텐츠 보안 정책)를 지원하는 실험 기능이 포함되어 있습니다. 이 기능은 [Cloud Manager에서 환경 변수 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)을(를) 값 `AEM_OPTEL_NONCE`(으)로 설정하여 활성화할 수 있습니다. `true` 나중에 이 기능을 다시 사용하지 않도록 설정하려면 해당 환경 변수를 다시 제거하면 됩니다.
+
+   이 기능에 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
+
+1. **특정 페이지에 대해서만 작동 원격 분석을 사용하도록 설정하려면 어떻게 해야 합니까?**
+
+   기본적으로 저장소의 `/content` 폴더 아래에 있는 모든 페이지에 대해 작동 원격 분석이 사용됩니다. [Cloud Manager에서 환경 변수 설정](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이름: `AEM_OPTEL_INCLUDED_PATHS`)을 저장소의 쉼표로 구분된 경로 목록으로 설정하면 해당 페이지에만 작동 원격 분석이 사용됩니다. 또한 `AEM_OPTEL_EXCLUDED_PATHS`을(를) 제외할 저장소의 경로 목록으로 설정할 수 있습니다. 이러한 두 가지 설정을 결합하면 요구 사항에 운영 원격 분석 포함을 조정할 수 있습니다.
+

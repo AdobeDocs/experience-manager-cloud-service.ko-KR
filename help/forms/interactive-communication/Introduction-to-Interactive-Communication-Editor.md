@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 8d9ce330caf2693d86a01b80ba23ad7abfaa5cf4
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # 대화형 통신 편집기 소개
+
+>[!NOTE]
+>
+> 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 `aem-forms-ea@adobe.com`(으)로 전자 메일을 보내십시오.
+
+>[!IMPORTANT]
+>
+> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. Forms Experience Builder가 얼리어답터 프로그램 동안 계속 발전함에 따라 프롬프트, 예 및 우수 사례가 변경될 수 있습니다.
 
 ## 대화형 통신 편집기란 무엇입니까?
 
