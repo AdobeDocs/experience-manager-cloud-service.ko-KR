@@ -79,7 +79,7 @@ https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:ae
 작성 페이지에서 이미지 사전 설정을 사용하려면 다음 단계를 수행하십시오.
 1. 사이트 작성 페이지로 이동합니다.
 1. [AEM 페이지 편집기에서 원격 자산 액세스](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) 섹션의 단계를 실행하여 [!DNL Asset Selector] 패널을 사용하여 자산을 선택하십시오.
-1. [!DNL asset selector] 패널에서 아래로 스크롤하여 **[!UICONTROL 사전 설정 유형]**&#x200B;으로 이동하고 `Preset=Preset Name`이미지 수정자&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정한 다음 **[!UICONTROL 완료]**를 클릭합니다.
+1. [!DNL asset selector] 패널에서 아래로 스크롤하여 **[!UICONTROL 사전 설정 유형]**&#x200B;으로 이동하고 `Preset=Preset Name`이미지 수정자&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
    ![사전 설정](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## 스마트 이미징{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
