@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 수천 명의 고객에게 은행 거래 명세서, 보험 증권 또는 공과금 고지서를 보내야 한다고 상상해 보십시오. 각 속성에는 레이아웃은 동일하지만 개인화된 데이터가 있습니다. 대화형 통신(IC)을 통해 이를 효율적으로 수행할 수 있습니다.
 
-![IC 문서 찾기](/help/forms/interactive-communication/assets/Picture1.png)
+![IC 문서 찾기](/help/forms/interactive-communication/assets/introimg.png)
 
 이러한 문서를 수동으로 작성하는 것은 시간이 많이 소요될 수 있으며 특히 개인화 및 데이터 통합이 필요한 경우 종종 불일치가 발생할 수 있습니다. 대화형 통신 편집기를 사용하면 대화형 통신을 만드는 프로세스를 간소화할 수 있습니다.
 
