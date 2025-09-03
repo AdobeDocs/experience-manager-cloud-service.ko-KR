@@ -35,7 +35,7 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 ### Content 및 Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ko/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 
 ### 설명서
 
-+ [Acrobat 학습 및 지원](https://helpx.adobe.com/support/acrobat.html)
-+ [Acrobat Sign 학습 및 지원](https://helpx.adobe.com/support/sign.html)
++ [Acrobat 학습 및 지원](https://helpx.adobe.com/kr/support/acrobat.html)
++ [Acrobat Sign 학습 및 지원](https://helpx.adobe.com/kr/support/sign.html)
 
 ### 개발자
 
@@ -97,8 +97,8 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 
 ### Document Cloud에 유용한 리소스
 
-+ [Document Cloud 학습 및 지원](https://helpx.adobe.com/support/document-cloud.html)
-+ [Document Cloud 엔터프라이즈 튜토리얼](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Document Cloud 학습 및 지원](https://helpx.adobe.com/kr/support/document-cloud.html)
++ [Document Cloud 엔터프라이즈 튜토리얼](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ko#document-cloud-tutorials)
 + [Adobe 상태](https://status.adobe.com/)
 + [관리 안내서](https://helpx.adobe.com/kr/enterprise/admin-guide.html)
 
@@ -106,7 +106,7 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 
 ### 설명서
 
-+ [Creative Cloud 학습 및 지원](https://helpx.adobe.com/support/creative-cloud.html)
++ [Creative Cloud 학습 및 지원](https://helpx.adobe.com/kr/support/creative-cloud.html)
 
 ### Creative Cloud for enterprise에 유용한 리소스
 
@@ -119,7 +119,7 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 
 ### 클라우드 간 리소스
 
-+ [Experience League 이벤트](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Experience League 이벤트](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ko#events)
 + [Adobe 상태](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
 + [관리 안내서](https://helpx.adobe.com/kr/enterprise/admin-guide.html)
@@ -135,10 +135,10 @@ Adobe Enterprise 설명서는 다양한 사용 안내서를 제공합니다. 멋
 
 + [Experience Cloud 릴리스 정보](release-notes#experience-cloud)
 + [튜토리얼](home-tutorials.md)
-+ [재생 목록](https://experienceleague.adobe.com/en/playlists)
++ [재생 목록](https://experienceleague.adobe.com/ko/playlists)
 + [인증](certification#program)
 + [커뮤니티 포럼](https://experienceleaguecommunities.adobe.com)
-+ [지원](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
++ [지원](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)
 
 <!--
 + [Events](events.md)
