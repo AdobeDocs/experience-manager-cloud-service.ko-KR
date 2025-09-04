@@ -125,7 +125,7 @@ ht-degree: 11%
 
 * **스마트 태그:** [!DNL The Content Hub]은(는) Adobe Sensei의 스마트 컨텐츠 서비스를 사용하여 태그 기반 구조의 인식 알고리즘을 사용하여 자산을 교육합니다. 이 콘텐츠 인텔리전스는 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. 스마트 태그는 관련 에셋을 빠르게 찾을 수 있도록 지원하여 프로젝트의 콘텐츠 속도를 높입니다. 스마트 태그는 이미지에 포함되지 않은 에셋 정보의 예입니다. [!DNL Experience Manager Assets]은(는) 기본적으로 스마트 태그를 자산에 자동으로 적용합니다.
 
-* **색상 태그:** [색상 태그](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)를 사용하면 Adobe의 Sensei AI 기능을 사용하여 에셋에서 자동으로 식별되는 색상을 사용하여 에셋을 인식할 수 있습니다.
+* **색상 태그:** [색상 태그](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ko)를 사용하면 Adobe의 Sensei AI 기능을 사용하여 에셋에서 자동으로 식별되는 색상을 사용하여 에셋을 인식할 수 있습니다.
 
 * 업로드 날짜
 
