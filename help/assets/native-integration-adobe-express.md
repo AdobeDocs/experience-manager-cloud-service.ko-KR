@@ -4,14 +4,14 @@ description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Exp
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '702'
 ht-degree: 16%
 
 ---
 
-# Adobe Express과의 기본 통합 {#native-integration-adobe-express}
+# Adobe Express와의 네이티브 통합 {#native-integration-adobe-express}
 
 AEM Assets는 Adobe Express에 기본적으로 통합되므로 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 통합은 다음과 같은 주요 이점을 제공합니다.
 
@@ -22,7 +22,6 @@ AEM Assets는 Adobe Express에 기본적으로 통합되므로 Adobe Express 사
 ## 사전 요구 사항 {#prerequisites}
 
 Adobe Express 및 AEM Assets 내 하나 이상의 환경에 액세스할 수 있는 권한. 환경은 Assets as a Cloud Service 또는 Assets Essentials 내에 있는 저장소 중 하나일 수 있습니다.
-
 
 ## Adobe Express 편집기 내 AEM Assets 사용 {#use-aem-assets-in-express}
 
@@ -52,7 +51,7 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
    ![AEM에 자산 저장](assets/adobe-express-share.png)
 
 2. 오른쪽 창의 저장소 섹션에서 **AEM Assets**&#x200B;을(를) 선택합니다. Adobe Express에 업로드 대화 상자가 표시됩니다.
-3. **현재 페이지** 또는 **모든 페이지**&#x200B;를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
+3. **현재 페이지** 또는 **모든 페이지**를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
 **현재 페이지**&#x200B;을(를) 선택하면 현재 페이지의 자산이 대상 폴더에 저장됩니다. **모든 페이지**&#x200B;를 선택했는데 내보내기 형식이 PDF이 아닌 경우, 모든 캔버스 페이지는 대상 폴더 내의 새 폴더에 별도의 파일로 저장됩니다. 내보내기 형식이 PDF인 경우, 모든 캔버스 페이지는 대상 폴더에 단일 PDF 파일로 저장됩니다.
 
 4. **대상 폴더** 아래의 폴더 아이콘을 클릭하여 위치를 선택하고 에셋을 저장합니다.
@@ -66,19 +65,88 @@ Adobe에서는 업로드한 에셋에 대해 향상된 검색 환경을 만들 �
 
 7. 자산을 AEM Assets에 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 클릭하십시오.
 
+## 지원되는 파일 형식 {#supported-formats}
+
+[!DNL Content Hub]은(는) 기본 [!DNL Assets] 리포지토리가 지원하는 모든 자산 유형과 형식을 지원합니다. 다음 표에는 자산을 시각적으로 미리 볼 수 있도록 추가 지원을 제공하는 [!DNL the Content Hub]의 주요 파일 형식이 나와 있습니다.
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>파일 유형</strong></th>
+      <th><strong>지원되는 형식</strong></th>
+      <th><strong>크기</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> 이미지 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 X 8000픽셀, 최대 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 X 8000픽셀, 최대 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> 최대 250KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 비디오 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840픽셀, 최대 200MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 최대 200MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 문서 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (일반)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> 인쇄 미디어 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## 제한 사항 {#limitations}
 
 1. 가져오기 및 내보내기의 경우 지원되는 비디오 파일 유형은 MP4입니다.
 
-2. MP4 비디오 가져오기의 경우:
+2. **MP4 비디오 가져오기**&#x200B;의 경우 [지원되는 파일 형식](#supported-formats)을 참조하세요. 또한 배경이 투명한 비디오(알파 채널)는 지원되지 않습니다.
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. 지원되는 최대 파일 크기는 200MB입니다. 이 제한이 초과되면 경고 메시지가 표시됩니다.
-   2. 지원되는 최대 해상도는 3840 X 3840픽셀입니다.
-   3. 투명한 배경(알파 채널)이 있는 비디오는 지원되지 않습니다.
-
-3. MP4 비디오 내보내기:
-
-   1. 지원되는 최대 파일 크기는 200MB입니다. 이 제한이 초과되면 경고에 따라 비디오를 200MB 이하로 자르거나, 다운로드한 후 AEM Assets 대상 폴더에 수동으로 업로드해야 합니다.
+3. **MP4 비디오 내보내기**&#x200B;의 경우 지원되는 최대 파일 크기는 200MB입니다. 이 제한이 초과되면 경고에 따라 비디오를 200MB 이하로 자르거나, 다운로드한 후 AEM Assets 대상 폴더에 수동으로 업로드해야 합니다.
 
 
 
