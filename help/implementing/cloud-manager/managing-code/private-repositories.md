@@ -4,10 +4,10 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ Cloud Manager을 설정하여 개인 GitHub Cloud(`github.com`에 호스팅된 �
 >
 >웹후크를 사용하여 다음 저장소 유형을 추가할 수도 있습니다.
 >
->* GitHub Enterprise Server(GitHub의 자체 호스팅 버전) 저장소
->* GitLab(GitLab의 `gitlab.com` 및 자체 호스팅 버전 모두) 저장소
->* Bitbucket 저장소(`bitbucket.org` 및 Bitbucket 서버, 자체 호스팅 버전의 BitBucket)
+>* GitHub Enterprise Server(GitHub의 자체 호스팅 버전) 저장소 .
+>* GitLab(GitLab의 `gitlab.com` 및 자체 호스팅 버전 모두) 저장소.
+>* Bitbucket 저장소(`bitbucket.org` 및 Bitbucket 서버, 자체 호스팅 버전의 BitBucket).
+>* Azure DevOps 저장소([dev.azure.com](http://dev.azure.com) 및 자체 호스팅되는 Azure DevOps 버전).
 >
 >[Cloud Manager의 외부 저장소 추가 - 비공개 베타](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
@@ -74,7 +75,7 @@ Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다�
    | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨) |
    | 설명(선택 사항) | 저장소에 대한 자세한 설명. |
 
-1. **저장**&#x200B;을 선택합니다.
+1. **저장**을 선택합니다.
 이제 [개인 저장소의 소유권을 확인](#validate-ownership)할 수 있습니다.
 
 >[!TIP]
@@ -153,13 +154,13 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 
 
 
-## 사용 정보 {#usage-notes}
+## 제한 사항 {#limitations}
 
-* 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
+Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
+
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
 * GitHub 조직에서 Adobe GitHub 앱을 제거하면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
 * 새 커밋이 선택한 분기에 푸시될 때 개인 GitHub 클라우드 저장소 및 &quot;커밋 중&quot; 빌드 트리거를 사용하는 파이프라인이 자동으로 시작되지 않습니다.
 * [아티팩트 재사용 기능](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
-* Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
-Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.
-* GitHub 조직에 IP 제한이 있는 경우 지원 사례를 만들어 허용할 IP 주소 목록을 받습니다.
+* Cloud Manager의 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 정지할 수 없습니다. Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.
+* GitHub 조직에서 IP 제한을 시행하는 경우 지원 사례를 열어 허용해야 하는 IP 주소 목록을 가져옵니다.

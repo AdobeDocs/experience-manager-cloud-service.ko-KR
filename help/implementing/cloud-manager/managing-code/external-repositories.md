@@ -4,10 +4,10 @@ description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 27%
+source-wordcount: '2452'
+ht-degree: 26%
 
 ---
 
@@ -17,14 +17,15 @@ ht-degree: 27%
 
 Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 
-이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps(Beta) Git 저장소를 Cloud Manager에 온보딩할 수도 있습니다.
+이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps Git 저장소를 Cloud Manager에 온보딩할 수도 있습니다.
 
 * Edge Delivery Services 사용자의 경우 온보딩된 저장소를 사용하여 사이트 코드를 동기화하고 배포할 수 있습니다.
 * AEM as a Cloud Service와 Adobe Managed Services(AMS) 사용자의 경우 저장소를 전체 스택 파이프라인과 프론트엔드 파이프라인 모두에 연결할 수 있습니다.
 
+<!--
 >[!NOTE]
 >
->이 문서에 설명된 Azure DevOps에 대해 추가된 지원은 비공개 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 Beta에 등록하려면 [나만의 Git 가져오기](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)를 참조하세요.
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## 외부 저장소 구성
@@ -121,14 +122,14 @@ Cloud Manager에서 외부 저장소를 구성하는 단계는 다음과 같습�
 
 [액세스 토큰 관리](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)도 참조하세요.
 
->[!TAB Azure DevOps(Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Azure DevOps 설명서](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Azure DevOps Personal Access Token(PAT)에 필요한 권한.<br>이러한 권한을 통해 Cloud Manager은 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Azure DevOps에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)</li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Azure DevOps 설명서](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Azure DevOps Personal Access Token(PAT)에 필요한 권한.<br>이러한 권한을 통해 Cloud Manager은 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Azure DevOps에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.<ul><li>코드(읽기)</li><li>코드(상태)</li><li>끌어오기 요청 Threads(읽기 및 쓰기)</li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
 
 유효성 검사 후에는 외부 저장소를 사용하여 파이프라인에 연결할 준비가 됩니다.
 
@@ -239,13 +240,13 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 | --- |
 | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps(Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 필수 웹후크 이벤트 및 인증 |
 | --- |
-| 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>저장소: 푸시</li></ul>인증 설정:<br>1. **기본 인증 사용자 이름** 필드에 `cloudmanager`을(를) 입력합니다.<br>2. **기본 인증 암호** 필드에 Cloud Manager 사용자 인터페이스에서 생성한 Webhook 암호를 입력합니다. |
+| 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>코드 푸시됨</li><li>끌어오기 요청에 댓글 남김</li><li>끌어오기 요청 생성됨</li><li>끌어오기 요청 업데이트됨</li></ul>인증 설정:<br>1. **기본 인증 사용자 이름** 필드에 `cloudmanager`을(를) 입력합니다.<br>2. **기본 인증 암호** 필드에 Cloud Manager 사용자 인터페이스에서 생성한 Webhook 암호를 입력합니다. |
 
 >[!ENDTABS]
 
@@ -303,6 +304,25 @@ PR 유효성 검사 진행 추적을 위해 커밋 상태를 사용합니다. �
 
 ![Bitbucket에 대한 끌어오기 요청 유효성 검사 상태](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB Azure DevOps]
+
+Azure DevOps는 상태 검사를 통해 끌어오기 요청 유효성 검사를 추적합니다. Cloud Manager에서 끌어오기 요청 유효성 검사를 실행하면 Azure DevOps 끌어오기 요청 인터페이스에 표시되는 상태 검사가 추가됩니다.
+
+코드 품질을 확인하는 동안 상태 확인에 프로세스가 진행 중임을 표시됩니다.
+
+![Webhooks-1을(를) 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+
+코드 품질 유효성 검사가 완료되면 상태 검사가 업데이트되어 결과를 반영합니다.
+
+![Webhooks-2를 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+
+유효성 검사가 실패하면 상태 검사 세부 사항에 자세한 오류 정보가 제공됩니다. 상태 검사를 클릭하여 Cloud Manager에서 전체 유효성 검사 결과를 볼 수 있습니다.
+
+![Webhooks-3을 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+
+끌어오기 요청 주석 및 피드백의 경우 Cloud Manager은 유효성 검사 세부 사항 및 필요한 작업을 포함하여 Azure DevOps의 끌어오기 요청에 주석을 직접 추가합니다.
+
+![Webhooks-4를 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

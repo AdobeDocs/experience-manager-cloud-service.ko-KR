@@ -1,28 +1,28 @@
 ---
-title: 비공개 저장소에 대한 GitHub 검사 구성
+title: 개인 저장소에 대한 가져오기 요청 확인
 description: 비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어 방법에 대해 알아봅니다.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# 비공개 저장소에 대한 GitHub 검사 구성 {#github-check-config}
+# 개인 저장소에 대한 가져오기 요청 확인 {#github-check-config}
 
 비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어 방법에 대해 알아봅니다.
 
-## GitHub 검사 구성 {#configuration}
+## 개인 저장소 확인 구성 {#configuration}
 
 [비공개 저장소](private-repositories.md#using)를 사용할 경우 [전체 스택 코드 품질 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)이 자동으로 생성됩니다. 이 파이프라인은 가져오기 요청이 업데이트될 때마다 시작됩니다.
 
 개인 저장소의 기본 분기에 `.cloudmanager/pr_pipelines.yml` 구성 파일을 만들어 이러한 검사를 제어할 수 있습니다.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
