@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub]에서 에셋 및 해당 속성 미리 보기'
 description: ' [!DNL Content Hub]에서 에셋 및 속성을 미리 보는 방법에 대해 알아봅니다.'
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 8%
+source-wordcount: '661'
+ht-degree: 11%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 * **K:** 미리 보기 화면 닫기
 * **L:** 제목, 형식, 크기, 해상도, 태그, 색상 태그 및 스마트 태그를 포함하는 에셋 정보.
 
-## 지원되는 자산 형식 {#supported-formats}
+## 지원되는 파일 형식 {#supported-formats}
 
 [!DNL Content Hub]은(는) 기본 [!DNL Assets] 리포지토리가 지원하는 모든 자산 유형과 형식을 지원합니다. 다음 표에는 자산을 시각적으로 미리 볼 수 있도록 추가 지원을 제공하는 [!DNL the Content Hub]의 주요 파일 형식이 나와 있습니다.
 
@@ -54,46 +54,66 @@ ht-degree: 8%
      <tr>
       <th><strong>파일 유형</strong></th>
       <th><strong>지원되는 형식</strong></th>
+      <th><strong>크기</strong></th>
      </tr>
      <tr>
-      <td>이미지</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>비디오</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>문서</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt] (일반)</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>인쇄 미디어</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> 이미지 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 X 8000픽셀, 최대 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 X 8000픽셀, 최대 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> 최대 250KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 비디오 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840픽셀, 최대 200MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 최대 200MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 문서 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (일반)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> 인쇄 미디어 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### 파생 속성 {#derived-properties}
 
@@ -103,9 +123,9 @@ ht-degree: 8%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **스마트 태그:** [!DNL The Content Hub]은(는) Adobe Sensei의 스마트 컨텐츠 서비스를 사용하여 태그 기반 구조의 인식 알고리즘을 사용하여 자산을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다. 스마트 태그는 관련 에셋을 빠르게 찾을 수 있도록 지원하여 프로젝트의 콘텐츠 속도를 높입니다. 스마트 태그는 이미지에 포함되지 않은 에셋 정보의 예입니다. [!DNL Experience Manager Assets]은(는) 기본적으로 스마트 태그를 자산에 자동으로 적용합니다.
+* **스마트 태그:** [!DNL The Content Hub]은(는) Adobe Sensei의 스마트 컨텐츠 서비스를 사용하여 태그 기반 구조의 인식 알고리즘을 사용하여 자산을 교육합니다. 이 콘텐츠 인텔리전스는 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. 스마트 태그는 관련 에셋을 빠르게 찾을 수 있도록 지원하여 프로젝트의 콘텐츠 속도를 높입니다. 스마트 태그는 이미지에 포함되지 않은 에셋 정보의 예입니다. [!DNL Experience Manager Assets]은(는) 기본적으로 스마트 태그를 자산에 자동으로 적용합니다.
 
-* **색상 태그:** [색상 태그](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ko)를 사용하면 Adobe의 Sensei AI 기능을 사용하여 에셋에서 자동으로 식별되는 색상을 사용하여 에셋을 인식할 수 있습니다.
+* **색상 태그:** [색상 태그](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)를 사용하면 Adobe의 Sensei AI 기능을 사용하여 에셋에서 자동으로 식별되는 색상을 사용하여 에셋을 인식할 수 있습니다.
 
 * 업로드 날짜
 

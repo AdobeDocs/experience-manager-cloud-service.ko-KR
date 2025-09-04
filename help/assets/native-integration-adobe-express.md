@@ -4,9 +4,9 @@ description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Exp
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '704'
 ht-degree: 16%
 
 ---
@@ -51,7 +51,7 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
    ![AEM에 자산 저장](assets/adobe-express-share.png)
 
 2. 오른쪽 창의 저장소 섹션에서 **AEM Assets**&#x200B;을(를) 선택합니다. Adobe Express에 업로드 대화 상자가 표시됩니다.
-3. **현재 페이지** 또는 **모든 페이지**&#x200B;를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
+3. **현재 페이지** 또는 **모든 페이지**를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
 **현재 페이지**&#x200B;을(를) 선택하면 현재 페이지의 자산이 대상 폴더에 저장됩니다. **모든 페이지**&#x200B;를 선택했는데 내보내기 형식이 PDF이 아닌 경우, 모든 캔버스 페이지는 대상 폴더 내의 새 폴더에 별도의 파일로 저장됩니다. 내보내기 형식이 PDF인 경우, 모든 캔버스 페이지는 대상 폴더에 단일 PDF 파일로 저장됩니다.
 
 4. **대상 폴더** 아래의 폴더 아이콘을 클릭하여 위치를 선택하고 에셋을 저장합니다.
@@ -65,7 +65,7 @@ Adobe에서는 업로드한 에셋에 대해 향상된 검색 환경을 만들 �
 
 7. 자산을 AEM Assets에 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 클릭하십시오.
 
-## 지원되는 파일 형식 {#supported-formats}
+[지원되는 파일 형식](asset-properties-content-hub.md#supported-formats)을 참조하세요.
 
 [!DNL Content Hub]은(는) 기본 [!DNL Assets] 리포지토리가 지원하는 모든 자산 유형과 형식을 지원합니다. 다음 표에는 자산을 시각적으로 미리 볼 수 있도록 추가 지원을 제공하는 [!DNL the Content Hub]의 주요 파일 형식이 나와 있습니다.
 
@@ -133,13 +133,13 @@ Adobe에서는 업로드한 에셋에 대해 향상된 검색 환경을 만들 �
         <td> - </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## 제한 사항 {#limitations}
 
 1. 가져오기 및 내보내기의 경우 지원되는 비디오 파일 유형은 MP4입니다.
 
-2. **MP4 비디오 가져오기**&#x200B;의 경우 [지원되는 파일 형식](#supported-formats)을 참조하세요. 또한 배경이 투명한 비디오(알파 채널)는 지원되지 않습니다.
+2. **MP4 비디오 가져오기**&#x200B;의 경우 [지원되는 파일 형식](asset-properties-content-hub.md#supported-formats)을 참조하세요. 또한 배경이 투명한 비디오(알파 채널)는 지원되지 않습니다.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
