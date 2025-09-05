@@ -85,7 +85,7 @@ OpenAPI를 사용하여 DM에서 자산 전달을 위한 Vanity URL을 생성하
 
 **날짜 및 시간 입력 구성 요소**
 
-이제 [날짜 및 시간 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
+이제 [날짜 및 시간 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
 
 **파일 업로드에 대한 향상된 오류 처리**
 
@@ -129,7 +129,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 **스크리블 서명 구성 요소**
 
-이제 [스크리블 서명 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)를 사용하여 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있습니다. 이 구성 요소를 사용하면 사용자가 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 작성할 수 있습니다.
+이제 [스크리블 서명 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)를 사용하여 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있습니다. 이 구성 요소를 사용하면 사용자가 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 작성할 수 있습니다.
 
 **규칙 편집기에서 직접 API 통합**
 
