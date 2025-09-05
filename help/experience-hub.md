@@ -1,7 +1,7 @@
 ---
 title: Experience Hub 정보
 description: Adobe Experience Hub 페이지에 대해 알아보십시오.
-landing-page-description: 모든 AEM 기능에 액세스하기 위한 중앙 집중식 시작점인 Experience Hub에 대해 알아봅니다.
+landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Experience Hub에 대해 알아보십시오.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -9,7 +9,7 @@ exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
