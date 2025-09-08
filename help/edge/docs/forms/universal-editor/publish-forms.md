@@ -7,9 +7,9 @@ level: Intermediate
 keywords: 양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 89%
 
 ## 게시 프로세스 개요
 
-Edge Delivery Services에 양식을 게시하는 방법은 3단계로 구성됩니다.
+Edge Delivery Services에 양식을 게시하는 과정은 3단계로 진행됩니다.
 
 - **1단계: 양식 게시** - 양식을 CDN에 게시하고 게시 상태를 확인합니다.
-- **2단계: 보안 구성** - 보안 제출을 위한 CORS 정책 및 레퍼러 필터 설정
+- **2단계: 보안 구성** - 보안 제출을 위해 CORS 정책 및 레퍼러 필터를 설정합니다.
 - **3단계: 액세스 및 유효성 검사** - 양식 기능을 테스트하고 전체 워크플로의 유효성을 검사합니다.
 
-각 단계는 이전 단계를 기반으로 빌드하여 안전하고 기능적인 배포를 보장합니다.
+각 단계는 이전 단계를 기반으로 구축되어 안전하고 기능적인 배포를 보장합니다.
 
 ### 1단계: 양식 게시
 

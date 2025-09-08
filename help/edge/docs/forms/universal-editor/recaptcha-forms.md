@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -218,7 +218,7 @@ Edge Delivery Services 양식은 두 가지 Google reCAPTCHA 옵션을 지원합
 
 ## reCAPTCHA 표준 설정
 
-+++1단계: reCAPTCHA API 키 가져오기(세부 정보 참조)
++++1단계: reCAPTCHA API 키 확보 (세부 정보 확인)
 
 >[!IMPORTANT]
 >
@@ -256,7 +256,7 @@ Edge Delivery Services 양식은 두 가지 Google reCAPTCHA 옵션을 지원합
 
 +++
 
-+++2단계: AEM 클라우드 구성 컨테이너 구성(세부 정보 참조)
++++2단계: AEM 클라우드 구성 컨테이너 구성 (세부 정보 확인)
 
 Enterprise 설정과 동일한 프로세스를 따릅니다.
 
@@ -268,7 +268,7 @@ Enterprise 설정과 동일한 프로세스를 따릅니다.
 
 +++
 
-+++3단계: AEM에서 reCAPTCHA 표준 서비스 구성(세부 정보 참조)
++++3단계: AEM에서 reCAPTCHA 표준 서비스 구성 (세부 정보 확인)
 
 ![reCAPTCHA 표준 구성 화면](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *그림: AEM의 reCAPTCHA 표준 구성 인터페이스*
@@ -313,8 +313,8 @@ reCAPTCHA 서비스를 구성한 후 다음과 같이 양식에 보호 기능을
 ![양식에 reCAPTCHA 구성 요소 추가](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *그림: 양식에 보이지 않는 Captcha 구성 요소 추가*
 
-+++&#x200B;1. 유니버설 편집기에서 양식 열기
-AEM Sites에서 양식으로 이동한 다음 편집 을 클릭하여 범용 편집기에서 엽니다. 편집기가 로드될 때까지 기다립니다.
++++&#x200B;1. 범용 편집기에서 양식 열기
+AEM Sites의 양식으로 이동하고 편집을 클릭하여 범용 편집기에서 엽니다. 편집기가 로드될 때까지 기다립니다.
 
 - AEM Sites의 양식으로 이동합니다.
 - 편집을 클릭하여 범용 편집기에서 엽니다.
@@ -322,29 +322,29 @@ AEM Sites에서 양식으로 이동한 다음 편집 을 클릭하여 범용 편
 +++
 
 +++&#x200B;2. 양식 구조 찾기
-콘텐츠 트리(왼쪽 패널)에서 적응형 양식 섹션을 찾아 양식 구조를 확장하여 삽입점을 확인합니다.
+콘텐츠 트리(왼쪽 패널)에서 적응형 양식 섹션을 찾아 양식 구조를 확장하여 삽입 지점을 확인합니다.
 
 - 콘텐츠 트리(왼쪽 패널)에서 적응형 양식 섹션을 찾습니다.
 - 양식 구조를 확장하여 삽입 지점을 확인합니다.
 +++
 
 +++&#x200B;3. reCAPTCHA 구성 요소 추가
-Captcha(보이지 않음) 구성 요소를 양식에 추가합니다.
+양식에 Captcha(보이지 않음) 구성 요소를 추가합니다.
 
 - 양식 섹션에서 추가(+) 아이콘을 클릭합니다.
 - 구성 요소 목록에서 Captcha(보이지 않음)를 선택합니다.
 - 또는 구성 요소 패널에서 구성 요소를 드래그 앤 드롭합니다.
 +++
 
-+++&#x200B;4. 구성 요소 구성(선택 사항)
-새로 추가된 captcha 구성 요소를 선택하고 reCAPTCHA 구성을 사용하는지 확인합니다.
++++&#x200B;4. 구성 요소 구성 (선택 사항)
+새로 추가한 Captcha 구성 요소를 선택하고 reCAPTCHA 구성을 사용하는지 확인합니다.
 
 - 새로 추가된 Captcha 구성 요소를 선택합니다.
 - 속성 패널에서 reCAPTCHA 구성을 사용하는지 확인합니다.
 - 기본 설정에는 추가 구성이 필요하지 않습니다.
 +++
 
-+++&#x200B;5. 변경 내용 게시
++++&#x200B;5. 변경 사항 게시
 변경 사항을 게시하고 오류가 없는지 확인합니다.
 
 - 범용 편집기에서 게시를 클릭합니다.

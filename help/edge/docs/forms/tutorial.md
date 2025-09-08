@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -241,7 +241,7 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제하고 `<owner>`을(를) 저장소 소유자로, `<repo>`을(를) 저장소 이름으로 바꿉니다.
+1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제합니다. 이때 `<owner>`을(를) 저장소 소유자로, `<repo>`을(를) 저장소 이름으로 바꿉니다.
 
    ```
    git clone https://github.com/<owner>/<repo>

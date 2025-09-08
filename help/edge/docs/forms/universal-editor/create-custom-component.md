@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery Services 양식은 사용자 정의 기능을 제공하여 프론�
 
 1. **새 폴더 및 파일 추가**
 
-   AEM 프로젝트에서 새 사용자 지정 구성 요소에 대한 새 폴더 및 파일을 추가합니다.
+   AEM 프로젝트에서 새 사용자 정의 구성 요소에 대한 새 폴더와 파일을 추가합니다.
 
    1. AEM 프로젝트를 열고 `../blocks/form/components/`로 이동합니다.
    1. 사용자 정의 구성 요소를 위한 새 폴더를 `../blocks/form/components/<component_name>`에 추가합니다. 이 예에서는 이름이 `range`인 폴더를 생성합니다.

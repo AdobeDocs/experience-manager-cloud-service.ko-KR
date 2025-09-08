@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '984'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 
 | ![스타일링](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![미리 채우기 서비스](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B 테스트](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**스타일링**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[미리 채우기 양식](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B 테스트**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**스타일링**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[사전 작성 양식](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B 테스트**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | CSS를 사용하여 스타일링하면 개발자는 양식 요소의 외관을 사용자 정의하고 웹 사이트의 미적 기준에 맞는 시각적으로 매력적인 디자인을 만들 수 있습니다. | 미리 채우기 서비스를 사용하면 다양한 소스에서 얻은 관련 사용자 데이터로 양식 필드가 자동으로 채워지므로 수동 입력을 줄이고 사용자 경험을 개선할 수 있습니다. | A/B 테스트를 통해 조직은 다양한 양식 디자인, 레이아웃 및 기능을 실험하여 가장 효과적인 변형을 파악할 수 있습니다. |
 
 | ![분석 및 추적](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![양식 조각](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![데이터 바인딩](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

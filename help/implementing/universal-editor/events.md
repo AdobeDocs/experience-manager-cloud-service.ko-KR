@@ -1,25 +1,25 @@
 ---
-title: 유니버설 편집기 이벤트
-description: 범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사항에 대응하는 데 사용할 수 있도록 보내는 다양한 이벤트에 대해 알아봅니다.
+title: 범용 편집기 이벤트
+description: 원격 앱에서 콘텐츠 또는 UI 변경에 반응하는 데 사용할 수 있는 범용 편집기에서 전송되는 다양한 이벤트에 대해 알아봅니다.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# 유니버설 편집기 이벤트 {#events}
+# 범용 편집기 이벤트 {#events}
 
-범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사항에 대응하는 데 사용할 수 있도록 보내는 다양한 이벤트에 대해 알아봅니다.
+원격 앱에서 콘텐츠 또는 UI 변경에 반응하는 데 사용할 수 있는 범용 편집기에서 전송되는 다양한 이벤트에 대해 알아봅니다.
 
 ## 소개 {#introduction}
 
-애플리케이션에는 페이지 또는 구성 요소 업데이트에 대한 요구 사항이 다를 수 있습니다. 따라서 유니버설 편집기는 정의된 이벤트를 원격 응용 프로그램으로 보냅니다. 원격 응용 프로그램에 보낸 이벤트에 대한 사용자 지정 이벤트 수신기가 없는 경우 [ 패키지에서 제공하는 ](#fallback-listeners)대체 이벤트 수신기`universal-editor-cors`가 실행됩니다.
+애플리케이션마다 페이지 또는 구성 요소 업데이트에 대한 요구 사항이 다를 수 있습니다. 따라서 범용 편집기는 정의된 이벤트를 원격 애플리케이션에 전송합니다. 원격 애플리케이션에 전송된 이벤트에 대한 사용자 정의 이벤트 리스너가 없는 경우 `universal-editor-cors` 패키지에서 제공하는 [대체 이벤트 리스너](#fallback-listeners)가 실행됩니다.
 
-모든 이벤트는 원격 페이지의 영향을 받는 DOM 요소에서 호출됩니다. `BODY` 패키지에서 제공한 기본 이벤트 수신기가 등록된 `universal-editor-cors` 요소까지 이벤트가 버블링됩니다. 콘텐츠에는 이벤트가 있고 UI에는 이벤트가 있습니다.
+모든 이벤트는 원격 페이지의 영향을 받는 DOM 요소에서 호출됩니다. `universal-editor-cors` 패키지에서 제공하는 기본 이벤트 리스너가 등록된 `BODY` 요소로 이벤트가 버블링됩니다. 콘텐츠에 대한 이벤트와 UI에 대한 이벤트가 있습니다.
 
 모든 이벤트는 명명 규칙을 따릅니다.
 
@@ -27,15 +27,15 @@ ht-degree: 2%
 
 예: `aue:content-update` 및 `aue:ui-select`
 
-이벤트에는 요청 및 응답의 페이로드가 포함되며 해당 호출이 성공하면 트리거됩니다. 호출 및 페이로드의 예제에 대한 자세한 내용은 [범용 편집기 호출](/help/implementing/universal-editor/calls.md) 문서를 참조하십시오.
+이벤트에는 요청 및 응답의 페이로드가 포함되며 해당 호출이 성공하면 트리거됩니다. 호출 및 페이로드 예시에 대한 자세한 내용은 [범용 편집기 호출](/help/implementing/universal-editor/calls.md) 설명서를 참조하십시오.
 
-## 컨텐츠 업데이트 이벤트 {#content-events}
+## 콘텐츠 업데이트 이벤트 {#content-events}
 
 ### aue:content-add {#content-add}
 
-새 구성 요소가 컨테이너에 추가되면 `aue:content-add` 이벤트가 트리거됩니다.
+`aue:content-add` 이벤트는 새 구성 요소가 컨테이너에 추가될 때 트리거됩니다.
 
-페이로드는 유니버설 편집기 서비스의 콘텐츠이며, 구성 요소 정의의 대체 콘텐츠는 입니다.
+페이로드는 범용 편집기 서비스의 콘텐츠이며, 구성 요소 정의의 대체 콘텐츠가 포함됩니다.
 
 ```json
 {
@@ -55,9 +55,9 @@ ht-degree: 2%
 
 ### aue:content-details {#content-details}
 
-구성 요소가 속성 패널에 로드되면 `aue:content-details` 이벤트가 트리거됩니다.
+`aue:content-details` 이벤트는 구성 요소가 속성 패널에 로드될 때 트리거됩니다.
 
-페이로드는 구성 요소의 콘텐츠 및 선택적으로 해당 스키마입니다.
+페이로드는 구성 요소의 콘텐츠이며, 선택적으로 스키마입니다.
 
 ```json
 {
@@ -72,9 +72,9 @@ ht-degree: 2%
 
 ### aue:content-move {#content-move}
 
-구성 요소를 이동할 때 `aue:content-move` 이벤트가 트리거됩니다.
+`aue:content-move` 이벤트는 구성 요소가 이동될 때 트리거됩니다.
 
-페이로드는 구성 요소, 소스 컨테이너 및 대상 컨테이너입니다.
+페이로드는 구성 요소의 콘텐츠와 선택적으로 해당 스키마입니다.
 
 ```json
 {
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ### aue:content-patch {#content-patch}
 
-`aue:content-patch` 이벤트는 구성 요소의 데이터가 속성 패널에서 업데이트될 때 트리거됩니다.
+`aue:content-patch` 이벤트는 속성 패널에서 구성 요소의 데이터가 업데이트될 때 트리거됩니다.
 
 페이로드는 업데이트된 속성의 JSON 패치입니다.
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
 ### aue:content-remove {#content-remove}
 
-`aue:content-remove` 이벤트는 구성 요소가 컨테이너에서 제거될 때 트리거됩니다.
+`aue:content-remove` 이벤트는 컨테이너에서 구성 요소가 제거될 때 트리거됩니다.
 
 페이로드는 제거된 구성 요소의 항목 ID입니다.
 
@@ -142,7 +142,7 @@ ht-degree: 2%
 
 ### 페이로드 전달 {#passing-payloads}
 
-모든 콘텐츠 업데이트 이벤트에 대해 요청된 페이로드와 응답 페이로드가 이벤트에 전달됩니다. 예: 업데이트 호출:
+모든 콘텐츠 업데이트 이벤트의 경우 요청된 페이로드와 응답 페이로드가 이벤트로 전달됩니다. 예: 업데이트 호출의 경우:
 
 요청 페이로드:
 
@@ -182,9 +182,9 @@ ht-degree: 2%
 
 ### aue:ui-preview {#ui-preview}
 
-페이지의 편집 모드가 `aue:ui-preview`미리 보기&#x200B;**(으)로 변경되면** 이벤트가 트리거됩니다.
+이 `aue:ui-preview` 이벤트는 페이지의 편집 모드가 **미리보기**&#x200B;로 변경될 때 트리거됩니다.
 
-이 이벤트에 대한 페이로드가 비어 있습니다.
+이 이벤트의 페이로드는 비어 있습니다.
 
 ```json
 {
@@ -194,9 +194,9 @@ ht-degree: 2%
 
 ### aue:ui-edit {#ui-edit}
 
-페이지의 편집 모드가 `aue:ui-edit`편집&#x200B;**(으)로 변경되면** 이벤트가 트리거됩니다.
+이 `aue:ui-edit` 이벤트는 페이지의 편집 모드가 **편집**&#x200B;으로 변경될 때 트리거됩니다.
 
-이 이벤트에 대한 페이로드가 비어 있습니다.
+이 이벤트의 페이로드는 비어 있습니다.
 
 ```json
 {
@@ -206,7 +206,7 @@ ht-degree: 2%
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-뷰포트 크기가 변경되면 `aue:ui-viewport-change` 이벤트가 트리거됩니다.
+`aue:ui-viewport-change` 이벤트는 뷰포트 크기가 변경될 때 트리거됩니다.
 
 페이로드는 뷰포트의 차원입니다.
 
@@ -221,9 +221,9 @@ ht-degree: 2%
 
 ### aue:initialized {#initialized}
 
-`aue:initialized` 이벤트가 트리거되어 원격 페이지가 유니버설 편집기에서 성공적으로 로드되었음을 알 수 있습니다.
+`aue:initialized` 이벤트는 원격 페이지가 범용 편집기에서 성공적으로 로드되었음을 알리기 위해 트리거됩니다.
 
-이 이벤트에 대한 페이로드가 비어 있습니다.
+이 이벤트의 페이로드는 비어 있습니다.
 
 ```json
 {
@@ -238,8 +238,8 @@ ht-degree: 2%
 | 이벤트 | 비헤이비어 |
 |---|---|
 | `aue:content-add` | 페이지 다시 로드 |
-| `aue:content-details` | 아무 작업도 하지 않음 |
-| `aue:content-move` | 구성 요소의 콘텐츠/구조를 대상 영역으로 이동합니다. |
+| `aue:content-details` | 아무 작업도 수행하지 않음 |
+| `aue:content-move` | 구성 요소의 콘텐츠/구조를 대상 영역으로 이동 |
 | `aue:content-patch` | 페이지 다시 로드 |
 | `aue:content-remove` | DOM 요소 제거 |
 | `aue:content-update` | 페이로드로 `innerHTML` 업데이트 |
@@ -251,10 +251,10 @@ ht-degree: 2%
 | `aue:ui-select` | 선택한 요소로 스크롤 |
 | `aue:ui-preview` | HTML 태그에 `class="adobe-ue-preview"` 추가 |
 | `aue:ui-edit` | HTML 태그에 `class=adobe-ue-edit"` 추가 |
-| `aue:ui-viewport-change` | 아무 작업도 하지 않음 |
-| `aue:initialized` | 아무 작업도 하지 않음 |
+| `aue:ui-viewport-change` | 아무 작업도 수행하지 않음 |
+| `aue:initialized` | 아무 작업도 수행하지 않음 |
 
 ## 추가 리소스 {#additional-resources}
 
-* [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
+* [범용 편집기 호출](/help/implementing/universal-editor/calls.md)
 

@@ -3,7 +3,7 @@ title: 주체 관리
 description: Admin Console을 사용하여 마이그레이션을 위한 주체 관리
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
 ht-degree: 100%
 

@@ -1,22 +1,22 @@
 ---
 title: Edge Delivery Services를 사용하여 적응형 양식 만들기 및 게시
-description: 기술적 정확성과 명확성에 초점을 맞춰 AEM에서 Edge Delivery Services 템플릿을 사용하여 적응형 Forms을 만들고, 작성하고, 게시하기 위한 단계별 지침입니다.
-keywords: 적응형 양식, edge delivery 서비스, 범용 편집기, 양식 작성, AEM 양식, 양식 게시
+description: AEM에서 Edge Delivery Services 템플릿을 사용하여 적응형 양식을 생성, 작성 및 게시하는 방법에 대한 단계별 지침을 제공합니다. 이 지침은 기술적 정확성과 명확성에 중점을 둡니다.
+keywords: 적응형 양식, Edge Delivery Services, 범용 편집기, 양식 생성, AEM 양식, 양식 게시
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Edge Delivery Services를 사용하여 적응형 양식 만들기 및 게시
 
-이 문서에서는 AEM에서 Edge Delivery Services 템플릿을 사용하여 적응형 Forms을 만들고, 구성하고, 게시하기 위한 단계별 지침을 제공합니다. 양식 작성에서 프로덕션 배포에 이르는 전체 워크플로우를 다룹니다.
+이 문서는 Edge Delivery Services를 사용하여 AEM에서 적응형 양식을 생성, 구성 및 게시하는 방법에 대한 단계별 지침을 제공합니다. 양식 생성부터 프로덕션 배포까지 전체 워크플로를 다룹니다.
 
 이 안내서를 마치면 다음 방법을 배우게 됩니다.
 
@@ -50,14 +50,14 @@ ht-degree: 87%
 
 프로세스는 세 가지 주요 단계로 구성됩니다.
 
-- **1단계:** [양식 만들기](#step-1-form-creation)
+- **1단계:** [양식 생성](#step-1-form-creation)
 - **2단계:** [양식 작성 및 디자인](#step-2-form-authoring-and-design)
 - **3단계:** [구성 및 게시](#step-3-configuration-and-publishing)
 
 각 단계에는 올바른 설정을 확인하기 위한 유효성 검사 단계가 포함되어 있습니다.
 
 
-### 1단계: 양식 만들기
+### 1단계: 양식 생성
 
 1. **양식 생성 액세스**
    - AEM Forms as a Cloud Service 작성자 인스턴스에 로그인합니다.
@@ -114,7 +114,7 @@ ht-degree: 87%
 1. **양식 디자인**
    - 속성 패널에서 필드 속성을 구성합니다.
    - 유효성 검사 규칙 및 비헤이비어를 설정합니다.
-   - 필요에 따라 스타일 및 레이아웃을 조정합니다.
+   - 필요에 따라 스타일 지정 및 레이아웃을 조정합니다.
 
    ![등록 양식 작성 완료](/help/edge/assets/contact-us.png)
 
@@ -132,7 +132,7 @@ ht-degree: 87%
 
 ### 3단계: 구성 및 게시
 
-Edge Delivery Services을 구성하고 양식을 게시합니다.
+Edge Delivery Services를 구성하고 양식을 게시합니다.
 
 **구성:** 자동입니다(수동 설정이 필요하지 않습니다).
 
@@ -207,7 +207,7 @@ Edge Delivery Services을 구성하고 양식을 게시합니다.
 
 AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방법은 다음과 같습니다.
 
-+++양식 로드 안 됨
++++양식이 로드되지 않음
 
 **문제:** 양식 URL이 404 또는 빈 페이지를 반환합니다.
 
@@ -246,7 +246,7 @@ AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방
 
 +++
 
-+++유니버설 편집기 문제
++++범용 편집기 문제
 
 **문제:** 양식을 편집하거나 구성 요소를 로드할 수 없습니다.
 
@@ -290,8 +290,8 @@ AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방
 문제가 지속되면 다음을 수행합니다.
 
 1. Adobe Experience Cloud 서비스 상태를 확인합니다.
-2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko)를 검토합니다.
-3. [Adobe Experience League Target 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)를 방문합니다.
+2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토합니다.
+3. [Adobe Experience League Target 커뮤니티](https://experienceleaguecommunities.adobe.com/)를 방문합니다.
 4. Adobe 고객 지원 센터에 문의합니다.
 
 +++
@@ -302,6 +302,6 @@ AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방
 
 - [제출 작업 구성](/help/edge/docs/forms/universal-editor/submit-action.md): 데이터 처리 및 통합을 설정합니다.
 - [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): 양식을 백엔드 데이터 소스에 연결합니다.
-- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko): 성능을 극대화합니다.
+- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): 성능을 극대화합니다.
 - [양식 분석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): 양식 성능 및 사용자 비헤이비어를 추적합니다.
 

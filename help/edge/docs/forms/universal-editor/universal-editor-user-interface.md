@@ -7,20 +7,20 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2355'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # AEM Forms용 범용 편집기 인터페이스 탐색
 
-[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 AEM Forms with Edge Delivery Services를 만들기 위한 시각적 인터페이스를 제공합니다. 양식이 사용자에게 표시되는 방식을 정확하게 표시하는 **What You See Is What You Get(WYSIWYG)** 경험을 제공합니다.
+[범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 AEM Forms with Edge Delivery Services를 만들기 위한 시각적 인터페이스를 제공합니다. 사용자에게 양식이 어떻게 표시되는지 정확하게 보여 주는 **WYSIWYG(What You See Is What You Get)** 경험을 제공합니다.
 
 ![범용 편집기 인터페이스 개요](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-이 안내서는 양식을 효율적으로 빌드하기 위한 인터페이스를 이해하는 데 도움이 됩니다. 초보자든 전문가든 이 안내서를 통해 다음과 같은 작업을 수행할 수 있습니다.
+이 안내서는 양식을 효율적으로 작성할 수 있도록 인터페이스를 이해하는 데 도움이 됩니다. 초보자든 전문가든 이 안내서를 통해 다음과 같은 작업을 수행할 수 있습니다.
 
 **필수 기술 학습**
 
@@ -227,11 +227,11 @@ ht-degree: 90%
 
 양식 속성 패널에는 다음 섹션이 포함되어 있습니다.
 
-- **제출**: 사용자가 양식을 제출한 후 수행할 작업을 정의합니다. 이메일을 통해 데이터 보내기, SharePoint에 제출, 양식 데이터 모델 사용 또는 Adobe Experience Platform 또는 Microsoft Power Automate와 같은 서비스와 통합과 같은 여러 제출 작업 중에서 선택합니다. 지원되는 제출 액션의 전체 목록에 대해서는 [제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md) 문서를 참조하십시오.
+- **제출**: 사용자가 양식을 제출한 후 발생하는 작업을 정의합니다. 이메일을 통한 데이터 전송, SharePoint에 제출, 양식 데이터 모델 사용 또는 Adobe Experience Platform 또는 Microsoft Power Automate와 같은 서비스와의 통합과 같은 여러 제출 작업 중에서 선택합니다. 지원되는 제출 작업의 전체 목록은 [제출 작업](/help/edge/docs/forms/universal-editor/submit-action.md) 문서를 참조하십시오.
 
-- **미리 채우기**: 사용자가 양식과 상호 작용하기 전에 양식 필드를 자동으로 채우는 방법을 구성합니다. 양식 데이터 모델(FDM)과 같은 데이터 소스에 연결하거나 URL 매개 변수를 사용하여 필드를 미리 채울 수 있으므로 사용자 경험을 향상하고 수동 입력을 줄일 수 있습니다. 자세한 내용은 [서비스 미리 채우기](/help/edge/docs/forms/universal-editor/prefill-form.md) 문서를 참조하세요.
+- **미리 채우기**: 사용자가 양식과 상호 작용하기 전에 양식 필드가 자동으로 채워지는 방법을 구성합니다. 양식 데이터 모델(FDM)과 같은 데이터 소스에 연결하거나 URL 매개변수를 사용하여 필드를 미리 채워 사용자 경험을 향상하고 수동 입력을 줄일 수 있습니다. 자세한 내용은 [미리 채우기 서비스](/help/edge/docs/forms/universal-editor/prefill-form.md) 문서를 참조하십시오.
 
-- **감사합니다**: 양식을 제출한 후 사용자에게 표시되는 내용을 사용자 지정합니다. 확인 메시지를 표시하거나 다른 웹 페이지로 리디렉션하여 원활하고 전문적인 완료 경험을 보장할 수 있습니다. 양식에 감사 메시지를 구성하는 방법에 대해 알아보려면 [감사 메시지 구성](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) 문서를 참조하십시오.
+- **감사 페이지**: 양식 제출 후 사용자가 보는 내용을 사용자 정의합니다. 확인 메시지를 표시하거나 다른 웹 페이지로 리디렉션하여 원활하고 전문적인 완료 경험을 보장할 수 있습니다. 양식에 대한 감사 메시지를 구성하는 방법에 대해 알아보려면 [감사 메시지 구성](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) 문서를 참조하십시오.
 
 #### **규칙 편집기** (얼리 액세스)
 
@@ -378,7 +378,7 @@ ht-degree: 90%
 
 +++
 
-+++Collaboration 도구
++++공동 작업 도구
 
 #### **작업 관리**
 
