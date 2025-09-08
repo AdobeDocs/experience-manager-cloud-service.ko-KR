@@ -32,7 +32,7 @@ Content Hub 기능 릴리스(2025.8.0)의 릴리스 날짜는 2025년 8월 28일
 
 이제 Content Hub를 사용하면 필요한 자산을 더 빠르게 검색할 수 있습니다. 새로운 대량 검색 기능을 사용하면 구분 기호(예: 여러 SKU ID)로 구분하여 모든 필터 속성에 여러 값을 입력하고 단일 검색을 통해 일치하는 모든 자산을 즉시 검색할 수 있습니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## 7월 릴리스 기능 {#july-release-features}
 
