@@ -4,9 +4,9 @@ description: AEM 구현에 적합한 KPI를 선택하는 방법에 대해 알아
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -17,14 +17,12 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="KPI 정렬"
 >abstract="디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현에 적합한 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=ko" text="KPI 평가"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=ko" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="적합한 팀 선택"
 
 디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현을 위한 세 가지 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다.
 
-
 ## **이 6단계를 따라 측정할 사항과 방법을 결정하십시오.**
-
 
 1. **비즈니스 목표를 시작합니다.** 예를 들어 온라인 매출 성장, 운영 비용 절감 또는 Digital Rights Management(DRM) 위반과 관련된 법적 비용 절감 등의 대략적인 목표를 세울 수 있습니다.
 
@@ -40,6 +38,8 @@ ht-degree: 100%
 
 1. **각 KPI에 대해 대상자를 정의합니다.** 이번 주의 마지막 단계는 각 KPI에 가장 관심이 있는 관련자 그룹을 식별하는 것입니다. 다음 주에는 각 그룹과 협력하여 KPI를 확인하고, 방식을 개선하고, 보고서 형식 및 시기에 대해 합의하겠습니다.
 
+<!--
 >[!TIP]
 >
->[**KPI 방식 템플릿 다운로드**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=ko)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
