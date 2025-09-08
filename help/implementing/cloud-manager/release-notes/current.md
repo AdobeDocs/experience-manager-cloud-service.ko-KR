@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.9
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 89%
+source-wordcount: '1137'
+ht-degree: 88%
 
 ---
 
@@ -33,13 +33,13 @@ AEM as a Cloud Service의 Cloud Manager 2025.9.0 릴리스 일자는 2025년 9�
 
   ![SSL 인증서 갱신](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **이제 개인 저장소에 대한 Azure DevOps 지원이 추가되었습니다**
+* **이제 Azure DevOps(개인 저장소)에 대한 지원이 추가되었습니다**
 
   설명서 업데이트에는 Azure DevOps로 자체 Git 가져오기 및 가져오기 요청 유효성 검사에 대한 구성 단계가 포함됩니다. [Cloud Manager에 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
-* **개인 저장소에 대한 가져오기 요청 확인**
+* **구성 파이프라인(개인 저장소)으로 확장된 Git(BYOG) 지원 가져오기**
 
-  이제 Cloud Manager은 GitHub, Bitbucket, Azure DevOps 및 GitLab에서 개인 저장소를 사용하는 구성 파이프라인을 지원합니다. [개인 저장소에 대한 가져오기 요청 검사](/help/implementing/cloud-manager/managing-code/github-check-config.md)를 참조하십시오.
+  이제 Cloud Manager은 GitHub, Bitbucket, Azure DevOps 및 GitLab에서 개인 저장소를 사용하는 구성 파이프라인을 지원합니다. 이러한 지원은 개발 주기를 더욱 가속화합니다. [개인 저장소에 대한 가져오기 요청 검사](/help/implementing/cloud-manager/managing-code/github-check-config.md)를 참조하십시오.
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
@@ -152,7 +152,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
   ![Edge 게재 및 게시 게재의 새로운 게재 유형이 표시되는 필터 패널](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**&#x200B;페이지,**파이프라인**&#x200B;카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
+![](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png)***프로그램 개요**페이지,**파이프라인**카드에서 Edge Delivery 파이프라인 추가 드롭다운 목록에 Edge Delivery 파이프라인 추가.*
 
 ![Edge Delivery 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Edge Delivery 파이프라인 추가 대화 상자.*
 
