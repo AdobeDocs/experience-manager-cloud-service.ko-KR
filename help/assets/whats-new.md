@@ -1,12 +1,12 @@
 ---
 title: Content Hub의 새로운 기능
-description: 최근에 실행한 일부 Content Hub 기능에 대해 자세히 알아보십시오
+description: 최근 출시된 Content Hub 기능에 대해 자세히 알아봅니다.
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 66%
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공되며, 이를 통해 조직과 비즈니스 파트너는 브랜드 콘텐츠를 더 간편하게 이용할 수 있습니다. 대규모 활성화를 위한 자산을 배포하고 마케팅 민첩성을 개선하기 위한 온브랜드 콘텐츠 변형을 만드는 데 중점을 둡니다.
 
-다음 비디오에서는 Content Hub의 주요 기능을 보여 줍니다.
+다음 비디오는 Content Hub의 주요 기능을 보여줍니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
@@ -30,9 +30,9 @@ Content Hub 기능 릴리스(2025.8.0)의 릴리스 날짜는 2025년 8월 28일
 
 **필터 속성을 통한 대량 검색**
 
-이제 Content Hub을 통해 필요한 에셋을 보다 빠르게 검색할 수 있습니다. 새로운 일괄 검색 기능을 사용하면 구분 기호로 구분된 필터 속성에 대해 여러 값을 입력하고(예: 여러 SKU ID) 단일 검색을 사용하여 일치하는 모든 에셋을 즉시 검색할 수 있습니다.
+이제 Content Hub를 사용하면 필요한 자산을 더 빠르게 검색할 수 있습니다. 새로운 대량 검색 기능을 사용하면 구분 기호(예: 여러 SKU ID)로 구분하여 모든 필터 속성에 여러 값을 입력하고 단일 검색을 통해 일치하는 모든 자산을 즉시 검색할 수 있습니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## 7월 릴리스 기능 {#july-release-features}
 
@@ -80,7 +80,7 @@ Content Hub 5월 릴리스에는 다음 기능이 포함됩니다.
 
 ### 속성 기반 액세스 제어(ABAC) {#attribute-based-access-control}
 
-이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다. 에셋 권한은 거버넌스를 보장하며 사용자가 관련 에셋만 액세스할 수 있도록 합니다.
+이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다. 자산 권한은 거버넌스를 보장하고 관련 자산만 사용자가 접근할 수 있도록 보장합니다.
 
 자산 제한 규칙은 메타데이터를 기반으로 하며, 규칙에 정의된 조건이 자산 메타데이터와 일치하면 자산이 사용자 그룹에 표시됩니다.
 
