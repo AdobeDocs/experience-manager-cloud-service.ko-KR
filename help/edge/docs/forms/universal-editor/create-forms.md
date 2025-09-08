@@ -290,8 +290,8 @@ AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방
 문제가 지속되면 다음을 수행합니다.
 
 1. Adobe Experience Cloud 서비스 상태를 확인합니다.
-2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 검토합니다.
-3. [Adobe Experience League Target 커뮤니티](https://experienceleaguecommunities.adobe.com/)를 방문합니다.
+2. [Edge Delivery Services 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko)를 검토합니다.
+3. [Adobe Experience League Target 커뮤니티](https://experienceleaguecommunities.adobe.com/?profile.language=ko)를 방문합니다.
 4. Adobe 고객 지원 센터에 문의합니다.
 
 +++
@@ -302,6 +302,6 @@ AEM Forms와 Edge Delivery Services에 대한 일반적인 문제 및 해결 방
 
 - [제출 작업 구성](/help/edge/docs/forms/universal-editor/submit-action.md): 데이터 처리 및 통합을 설정합니다.
 - [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): 양식을 백엔드 데이터 소스에 연결합니다.
-- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): 성능을 극대화합니다.
+- [Edge Delivery Services 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ko): 성능을 극대화합니다.
 - [양식 분석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): 양식 성능 및 사용자 비헤이비어를 추적합니다.
 
