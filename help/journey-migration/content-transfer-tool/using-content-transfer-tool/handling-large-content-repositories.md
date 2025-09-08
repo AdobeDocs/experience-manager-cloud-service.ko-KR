@@ -162,7 +162,7 @@ azCopyPath 속성은 azCopy 명령줄 도구가 소스 AEM 인스턴스에 설�
 
 >[!NOTE]
 >AzCopy가 올바르게 구성되지 않으면 로그에 다음 메시지가 표시됩니다.
->>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. CTT UI에서 추출을 시작합니다. 자세한 내용은 [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
 
