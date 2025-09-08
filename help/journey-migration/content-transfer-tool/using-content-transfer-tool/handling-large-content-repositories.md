@@ -4,10 +4,10 @@ description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 8%
+source-wordcount: '1842'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_precopy"
 >title="대형 콘텐츠 저장소 처리"
 >abstract="콘텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하여 콘텐츠를 AEM as a Cloud Service로 이동하기 위해 CTT(콘텐츠 전송 도구)는 선택 사항인 사전 복사 단계로 AzCopy를 사용할 수 있습니다. 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3 또는 Azure Blob 저장소에서 마이그레이션 세트 Blob 저장소로 Blob을 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ko#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
 
 CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며칠이 걸릴 수 있습니다.
 컨텐츠 전송 활동의 추출 및 수집 단계 속도를 높여 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT에서 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)를 선택적 사전 복사 단계로 사용할 수 있습니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.
@@ -32,17 +32,17 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 
 * Source AEM 버전은 6.3 - 6.5여야 합니다.
 
-* Source AEM의 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 [AEM에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ko)을 참조하세요.
+* Source AEM의 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 [AEM에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)을 참조하세요.
 
 * 각 마이그레이션 세트는 전체 데이터 저장소를 복제하므로 단일 마이그레이션 세트만 사용해야 합니다.
 
 * 원본 AEM 인스턴스를 실행하는 인스턴스(또는 VM)에 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)을(를) 설치하려면 액세스 권한이 필요합니다.
 
-* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ko#data-store-garbage-collection)을 참조하십시오.
+* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)을 참조하십시오.
 
 ### 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 자세한 내용은 [Amazon S3](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)를 참조하세요.
+* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 스토리지 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 자세한 내용은 [Amazon S3](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)를 참조하세요.
 
 * 기존 소스 Amazon S3 버킷에 대한 액세스 키 및 비밀 키 쌍 또는 기존 소스 Azure Blob 스토리지 컨테이너에 대한 SAS URI가 필요합니다(읽기 전용 액세스는 가능).
 
@@ -61,7 +61,7 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 
 이 섹션을 따라 수행하여 컨텐츠 전송 도구로 AzCopy를 사전 복사 단계로 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하도록 설정하는 방법을 알아보십시오.
 
-### 0. 데이터 저장소에 있는 모든 컨텐츠의 총 크기 결정 {#determine-total-size}
+### &#x200B;0. 데이터 저장소에 있는 모든 컨텐츠의 총 크기 결정 {#determine-total-size}
 
 다음 두 가지 이유로 데이터 저장소의 총 크기를 결정하는 것이 중요합니다.
 
@@ -88,7 +88,7 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 단
 * Windows의 경우 데이터 저장소 디렉토리에서 dir 명령을 사용하여 해당 크기를 가져옵니다.
   `dir /a/s [location of datastore]`
 
-### 1. AzCopy 설치 {#install-azcopy}
+### &#x200B;1. AzCopy 설치 {#install-azcopy}
 
 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)은(는) Microsoft®에서 제공하는 명령줄 도구이며 이 기능을 사용하려면 원본 인스턴스에서 사용할 수 있어야 합니다.
 
@@ -97,7 +97,7 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 단
 >[!IMPORTANT]
 >나중 단계에서 이진에 대한 전체 경로가 필요하므로 이진의 위치를 기록해 두십시오.
 
-### 2. AzCopy 지원을 통해 CTT(Content Transfer Tool) 릴리스 설치 {#install-ctt-azcopy-support}
+### &#x200B;2. AzCopy 지원을 통해 CTT(Content Transfer Tool) 릴리스 설치 {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >가장 최근에 릴리스된 CTT 버전을 사용해야 합니다.
@@ -106,7 +106,7 @@ Amazon S3, Azure Blob Storage 및 파일 데이터 저장소에 대한 AzCopy �
 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 최신 CTT 릴리스를 다운로드할 수 있습니다.
 버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 
-### 3. azcopy.config 파일 구성 {#configure-azcopy-config-file}
+### &#x200B;3. azcopy.config 파일 구성 {#configure-azcopy-config-file}
 
 원본 AEM 인스턴스의 `crx-quickstart/cloud-migration`에서 `azcopy.config` 파일을 만듭니다.
 
@@ -156,13 +156,13 @@ azCopyPath 속성은 azCopy 명령줄 도구가 소스 AEM 인스턴스에 설�
 
 `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저장소 위치 `/mnt/crx/author/crx-quickstart/repository/datastore`을(를) 사용하여 사전 복사를 수행합니다.
 
-### 4. AzCopy로 추출 {#extracting-azcopy}
+### &#x200B;4. AzCopy로 추출 {#extracting-azcopy}
 
 위의 구성 파일이 있는 경우 AzCopy 사전 복사 단계는 모든 후속 추출의 일부로 실행됩니다. 실행을 방지하기 위해 이 파일의 이름을 바꾸거나 제거할 수 있습니다.
 
 >[!NOTE]
 >AzCopy가 올바르게 구성되지 않으면 로그에 다음 메시지가 표시됩니다.
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. CTT UI에서 추출을 시작합니다. 자세한 내용은 [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
 
@@ -196,16 +196,19 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 >[!TIP]
 >이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 자세한 내용은 [Target으로 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.
 
+>[!TIP]
+>AzCopy를 사용한 Blob 전송이 잠시 동안 진행되었지만 일부 Blob에 대해서만 실패한 경우 PreCopy 및 Overwrite Staging Container 옵션을 모두 선택 취소한 상태로 추출을 다시 실행하십시오. 이렇게 하면 이전에 전송되지 않은 나머지 Blob만 마이그레이션됩니다.
+
 #### 파일 데이터 저장소용 {#file-data-store-extract}
 
 소스 파일 dataStore에 대해 AzCopy가 실행 중이면 다음과 같은 메시지가 로그에 표시되는데, 이는 폴더가 처리 중임을 나타냅니다.
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
-### 5. AzCopy로 수집 {#ingesting-azcopy}
+### &#x200B;5. AzCopy로 수집 {#ingesting-azcopy}
 
 &quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 컨텐츠를 수집하는 방법에 대한 일반 정보는 [Ingesting Content ingesting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.
 
-수집 중에 AzCopy를 활용하려면 Adobe 시 버전 2021.6.5561 이상의 AEM as a Cloud Service 버전을 사용하고 있어야 합니다.
+수집 중에 AzCopy를 이용하려면 Adobe에서 최소 버전 2021.6.5561의 AEM as a Cloud Service 버전을 사용하고 있어야 합니다.
 
 진행 상황을 확인할 수 있도록 Cloud Acceleration Manager의 &quot;수집 작업&quot; 목록 및 수집 로그를 참조하십시오. 와 관련된 로그 항목
 성공한 AzCopy 작업은 다음과 같이 표시됩니다(일부 차이 허용). 로그를 가끔 확인하면 문제가 발생할 수 있습니다.
