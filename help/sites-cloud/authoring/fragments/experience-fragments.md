@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 93%
+source-wordcount: '2142'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -445,6 +445,16 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 경험 조각을 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기를 통해 [페이지를 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md)하는 것과 동일한 절차를 따릅니다.
 
 또는 경험 조각 콘솔 및 편집기를 통해 [미리보기에 게시](/help/sites-cloud/authoring/sites-console/previewing-content.md)할 수도 있습니다.
+
+>[!CAUTION]
+>
+>기본적으로 경험 조각의 루트 폴더 게시(`/content/experience-fragments` 바로 아래 위치):
+>
+>* 컨테이너 폴더 자체만 게시
+>* 하위 항목을 게시하지 않음
+>* 이미 게시된 하위 항목 게시 취소
+>
+>폴더에 있는 모든 경험 조각을 게시하려면 각 경험 조각을 별도로 게시해야 합니다.
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
