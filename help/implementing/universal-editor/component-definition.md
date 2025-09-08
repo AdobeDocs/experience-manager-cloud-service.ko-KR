@@ -4,10 +4,10 @@ description: 구성 요소 정의와 범용 편집기 간의 JSON 계약에 대�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 96%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 100%
 
 `plugins`는 구성 요소를 유지하는 역할을 하는 플러그인을 정의합니다. 일반적인 플러그인은 다음과 같습니다.
 
-* AEM as a Cloud Service용 `aem`
-* AEM 6.5용 `aem5`
-* AEM as a Cloud Service WYSIWYG 작성용 `xwalk`
+* `aem`AEM as a Cloud Service.[의 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service)
+* `aem65`AEM 6.5.[의 ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `xwalk`Edge Delivery Services용 AEM Sites으로 작성[의 ](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` 또는 `cf` {#page-cf}
 
