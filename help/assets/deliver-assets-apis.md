@@ -35,7 +35,7 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 모든
 >[!IMPORTANT]
 >
 >실험 API를 통해 일반적으로 사용할 수 없는 수정자를 테스트할 수 있습니다. 예, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->>[실험 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [전체 수정자 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+>&#x200B;>[실험 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [전체 수정자 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
 
 OpenAPI 기능이 포함된 Dynamic Media도 긴 양식 비디오를 지원합니다. 최대 50GB와 2시간의 비디오를 지원할 수 있습니다.
 
