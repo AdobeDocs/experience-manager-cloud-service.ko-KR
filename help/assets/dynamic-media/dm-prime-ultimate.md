@@ -3,9 +3,9 @@ title: Dynamic Media Prime 및 Ultimate
 description: Dynamic Media Prime 및 Ultimate, 해당 이점 및 둘 간의 차이점에 대해 자세히 알아보십시오.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '421'
 ht-degree: 12%
 
 ---
@@ -30,6 +30,10 @@ Dynamic Media Prime의 다른 주요 이점 중 일부는 다음과 같습니다
 * 웹에 최적화된 이미지 제공
 * 응용 비디오 스트리밍
 
+>[!NOTE]
+>
+>DM Prime 고객은 회전, 자르기, 뒤집기, 높이, 너비 및 품질을 비롯한 기본 이미지 수정자를 사용할 수 있습니다. 스마트 이미징은 DM Prime 고객용 AVIF를 지원하지 않습니다.
+
 ### 사전 요구 사항 {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
@@ -50,8 +54,8 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변환(회전
 * [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md), 다음 주요 기능도 포함됩니다.
 
    * [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [템플릿 기본 사항](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [시각적 구성](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [템플릿 기본 사항](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [시각적 구성](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 사전 요구 사항 {#pre-requisites-dm-ultimate}
 

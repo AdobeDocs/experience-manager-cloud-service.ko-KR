@@ -3,9 +3,9 @@ title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -32,9 +32,18 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 모든
 | 비디오 자산에 대한 [플레이어 컨테이너](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | 비디오 자산에 대한 플레이어 컨테이너를 반환합니다. 플레이어를 iframe HTML 요소에 임베드하고 비디오를 재생할 수 있습니다. |
 | [선택한 출력 형식의 재생 매니페스트](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | 지정된 비디오 자산에 대한 재생 매니페스트 파일을 선택한 출력 형식으로 반환합니다. 재생 매니페스트 파일을 가져와서 비디오를 재생하려면 HLS 또는 DASH 프로토콜을 통해 적응형 스트리밍이 가능한 사용자 지정 플레이어를 빌드해야 합니다. |
 
+>[!IMPORTANT]
+>
+>실험 API를 통해 일반적으로 사용할 수 없는 수정자를 테스트할 수 있습니다. 예, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>>[실험 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [전체 수정자 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+
 OpenAPI 기능이 포함된 Dynamic Media도 긴 양식 비디오를 지원합니다. 최대 50GB와 2시간의 비디오를 지원할 수 있습니다.
 
 사용 가능한 Dynamic Media 서비스 및 기능에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)을(를) 참조하십시오.
+
+>[!NOTE]
+>
+>DM Prime 고객은 회전, 자르기, 뒤집기, 높이, 너비 및 품질을 비롯한 기본 이미지 수정자를 사용할 수 있습니다. 스마트 이미징은 DM Prime 고객용 AVIF를 지원하지 않습니다.
 
 ## 게재 API 엔드포인트 {#delivery-apis-endpoint}
 
@@ -64,7 +73,7 @@ headers: {
     }
 ```
 
-배달 API를 호출하려면 제한된 자산을 배달하려면 `Authorization` 세부 정보에 IMS 토큰이 필요합니다. IMS 토큰을 기술 계정에서 가져옵니다. 새 기술 계정을 만들려면 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)를 참조하십시오. IMS 토큰을 생성하고 배달 API 요청 헤더에서 적절하게 사용하려면 [액세스 토큰 생성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)을 참조하십시오.
+배달 API를 호출하려면 제한된 자산을 배달하려면 `Authorization` 세부 정보에 IMS 토큰이 필요합니다. IMS 토큰을 기술 계정에서 가져옵니다. 새 기술 계정을 만들려면 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)를 참조하십시오. IMS 토큰을 생성하고 배달 API 요청 헤더에서 적절하게 사용하려면 [액세스 토큰 생성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)을 참조하십시오.
 
 
 요청 샘플, 응답 샘플 및 응답 코드를 보려면 [배달 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)를 참조하십시오.

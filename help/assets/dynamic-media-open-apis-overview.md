@@ -3,10 +3,10 @@ title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 98%
+source-wordcount: '1106'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,13 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
 * **정보에 입각한 의사 결정을 내릴 수 있는 데이터 인사이트(향후 예정)**: 자산 관리 및 게재 외에도 CDN의 자산 게재에 대한 배송 데이터 인사이트를 확보하여 브랜드 관리자가 여러 채널에서 게재 지표를 추적할 수 있도록 지원합니다. 이를 통해 자산 거버넌스 및 게재 전략의 지속적인 최적화를 위해 데이터 기반 의사 결정을 내릴 수 있습니다.
 
 ![Dynamic Media Open API 데이터 흐름 다이어그램](assets/dm-openapi-dfd.png)
+
+사용 가능한 Dynamic Media 서비스 및 기능에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)을(를) 참조하십시오.
+
+>[!NOTE]
+>
+>DM Prime 고객은 회전, 자르기, 뒤집기, 높이, 너비 및 품질을 비롯한 기본 이미지 수정자를 사용할 수 있습니다. 스마트 이미징은 DM Prime 고객용 AVIF를 지원하지 않습니다.
+
 
 ## OpenAPI 기능이 포함된 Dynamic Media에 액세스하기 위한 전제 조건 {#prerequisites-dynaminc-media-open-apis}
 
