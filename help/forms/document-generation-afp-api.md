@@ -13,7 +13,7 @@ ht-degree: 14%
 
 # AEM Forms API를 사용하여 AFP 출력 생성
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
 
 AFP(Advanced Function Presentation)는 주로 인쇄용으로 설계된 고성능 문서 형식입니다.\
 이 안내서에서는 AEM Forms을 사용하여 AFP 출력을 생성하는 데 필요한 모든 단계 및 구성을 간략하게 설명합니다.
