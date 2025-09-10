@@ -520,13 +520,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json 업데이트**: `models/_component-definition.json`에서 다음 방식으로 개체가 있는 `id custom-components` 그룹 내의 배열을 업데이트합니다.
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
+    나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
 
 11. **빌드:json 스크립트를 실행**: `npm run build:json`을(를) 실행하여 모든 구성 요소 JSON 정의를 컴파일하고 서버에서 제공할 단일 파일로 병합합니다. 이렇게 하면 새 구성 요소의 스키마가 병합된 출력에 포함됩니다.
 
