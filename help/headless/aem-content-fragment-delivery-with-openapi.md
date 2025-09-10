@@ -4,9 +4,9 @@ description: OpenAPI를 사용한 tAEM 콘텐츠 조각 게재에 대해 알아�
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -81,6 +81,14 @@ Dispatcher 구성 측, 특히 GraphQL에 대해 정의된 CORS 허용 출처는 
 API를 사용하면 환경당 초당 최대 200개의 요청 비율로 새 요청을 허용할 수 있습니다.
 
 이 제한을 초과하면 API에서 [429 오류](https://www.rfc-editor.org/rfc/rfc6585#section-4) 응답을 보내기 시작합니다. 이러한 오류는 모든 클라이언트 애플리케이션에서 처리해야 하며, 기하급수적 백오프 재시도 후 실패한 요청을 다시 시도합니다. HTTP 응답에는 요청을 다시 보내기 전에 클라이언트가 대기해야 하는 시간을 나타내는 특정 헤더 `Retry-After`이(가) 함께 제공됩니다.
+
+## 인증된 요청 {#authenticated-requests}
+
+인증된 요청에 대한 지원은 [AEM CDN Edge 키](/help/implementing/dispatcher/cdn-credentials-authentication.md)를 사용하여 구현할 수 있습니다. AEM CDN Edge 키를 사용하면 AEM CDN을 사용할 수 있으며 특정 요청만 제공된 Edge 키 헤더를 기반으로 API에 액세스할 수 있습니다.
+
+>[!NOTE]
+>
+>저장소별 ACL을 기반으로 하는 권한 부여는 현재 지원되지 않습니다.
 
 <!-- 
 ## Limitations {#limitations}
