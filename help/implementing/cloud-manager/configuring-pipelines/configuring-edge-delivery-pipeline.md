@@ -9,10 +9,10 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 5%
+source-wordcount: '518'
+ht-degree: 4%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 5%
 
 프로덕션 파이프라인을 구성하려면 사용자에게 **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 역할이 있어야 합니다.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >다음과 같은 상황이 발생할 때까지 Edge Delivery 파이프라인을 구성할 수 없습니다.
 >
->* 하나의 Edge Delivery Services 사이트 및 하나의 매핑된 도메인을 포함하는 프로그램이 만들어집니다. 그렇지 않으면 **Edge Delivery 파이프라인 추가** 옵션이 사용자 인터페이스에 비활성화되어 있고 누락된 요구 사항에 대해 설명하는 도구 설명이 표시됩니다.
->* Git 저장소에는 분기가 하나 이상 있습니다.
->* 프로덕션 및 스테이징 환경이 생성됩니다.
+>* 하나의 Edge Delivery Services 사이트 및 하나의 매핑된 도메인을 포함하는 프로그램이 만들어집니다. 그렇지 않으면 **Edge Delivery 파이프라인 추가** 옵션이 사용자 인터페이스에 비활성화되어 있고 누락된 요구 사항에 대해 설명하는 도구 설명이 표시됩니다. [Cloud Manager에서 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하세요.
+>* Git 저장소에는 분기가 하나 이상 있습니다. [Cloud Manager의 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
+>* 프로덕션 및 스테이징 환경이 생성됩니다. [CI/CD 파이프라인 소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)를 참조하십시오.
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ ht-degree: 5%
 
 **Edge Delivery 파이프라인을 추가하려면:**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 원하는 조직을 선택합니다.
+1. [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 왼쪽 패널에서 **Cloud Manager**&#x200B;을(를) 클릭합니다.
+
+1. 원하는 조직을 선택합니다.
 
 1. **내 프로그램** 페이지에서 원하는 프로그램을 선택합니다.
 

@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 1%
 
 ---
@@ -445,8 +445,9 @@ data:
 
 원본 선택기를 사용하여 AEM 게시를 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
 
-* 일부 컨텐츠는 AEM Publish에서 관리하는 도메인에 의해 전달되지만, 동일한 도메인의 다른 컨텐츠는 Edge Delivery Services에 의해 전달됩니다
-* Edge Delivery Services에서 제공하는 컨텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
+* 일부 컨텐츠는 AEM Publish에서 관리하는 도메인에 의해 전달되지만, 동일한 도메인의 다른 컨텐츠는 Edge Delivery Services에 의해 전달됩니다.
+* Edge Delivery Services에서 제공하는 컨텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다.
+* Edge Delivery 구성 파이프라인을 사용하면 `trafficFilters`, `originSelectors`, `redirects` 등의 규칙을 정의하여 Adobe 관리 CDN 설정을 구성할 수 있습니다. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 다음은 이를 수행할 수 있는 원본 선택기 규칙의 예입니다.
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services **푸시 무효화 설정 설명서**&#x200B;를 따라 [관리](https://www.aem.live/docs/byo-dns#setup-push-invalidation) 모드에서 푸시 무효화를 구성해야 합니다.
+>
+>Adobe 관리 CDN이 사용되므로 Edge Delivery Services **푸시 무효화 설정 설명서**&#x200B;를 따라 [관리](https://www.aem.live/docs/byo-dns#setup-push-invalidation) 모드에서 푸시 무효화를 구성해야 합니다.
 
 
 ## 서버측 리디렉션 {#server-side-redirectors}
