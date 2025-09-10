@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: 양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Edge Delivery Services에 양식을 게시하는 과정은 3단계로 진행됩�
 1. **양식에 액세스**: 범용 편집기에서 적응형 양식을 엽니다.
 2. **게시 시작**: 도구 모음에서 **게시** 아이콘을 클릭합니다.
 
-   ![게시 클릭](/help/forms/assets/publish-icon-eds-form.png)
+   ![게시 클릭](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Edge Delivery Services에 양식을 게시하는 과정은 3단계로 진행됩�
 
 1. **게시 자산 검토**: 시스템에 양식을 비롯하여 게시되는 모든 자산이 표시됩니다.
 
-   ![클릭 시 게시](/help/forms/assets/on-click-publish.png)
+   ![클릭 시 게시](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **게시 확인**: 계속 진행하려면 **게시**&#x200B;를 클릭합니다.
 3. **성공 확인**: 확인 메시지를 찾습니다.
 
-   ![게시 성공](/help/forms/assets/publish-success.png)
+   ![게시 성공](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Edge Delivery Services에 양식을 게시하는 과정은 3단계로 진행됩�
 
 **상태 확인**: **게시** 아이콘을 다시 클릭하여 현재 상태를 확인합니다.
 
-![게시 상태](/help/forms/assets/publish-status.png)
+![게시 상태](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **유효성 검사 체크포인트:**
 
@@ -91,7 +91,7 @@ Edge Delivery Services에 양식을 게시하는 과정은 3단계로 진행됩�
 2. 오른쪽 상단에 있는 세 개의 점 메뉴(⋯)를 클릭합니다.
 3. **게시 취소**&#x200B;를 선택합니다.
 
-![양식 게시 취소](/help/forms/assets/unpublish--form.png)
+![양식 게시 취소](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

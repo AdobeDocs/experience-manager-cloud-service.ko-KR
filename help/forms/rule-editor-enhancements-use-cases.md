@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 규칙 편집기 개선 사항 및 사용 사례
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
 
 이 문서에서는 적응형 Forms의 규칙 편집기에 대한 최신 개선 사항을 소개합니다. 이러한 업데이트는 사용자 지정 코드를 작성하지 않고도 양식 동작을 보다 쉽게 정의하고, 보다 역동적이고 반응적이며 개인화된 양식 경험을 만들 수 있도록 설계되었습니다.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 향상된 규칙 편집기 기능은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+> 향상된 기능은 [Edge Delivery 서비스 Forms의 규칙 편집기](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)에도 적용됩니다.
 
 이제 특정 사용 사례와 함께 각 방법을 자세히 살펴보고 이러한 기능을 사용하여 사용자에게 개인화된 경험을 제공하는 방법을 이해하도록 하겠습니다
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 > When 조건에 **변수 값 가져오기** 함수를 추가할 수도 있습니다.
-> &#x200B;> ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
+> > ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
 
 이 접근 방식을 사용하면 양식에 필드를 추가하지 않고 구조를 깔끔하고 사용자 친화적으로 동적으로 실시간 계산을 수행할 수 있습니다.
 

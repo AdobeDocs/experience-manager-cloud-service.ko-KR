@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 Edge Delivery Services, 적응형 양식 자동 채우기
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 99%
 
 ---
 
@@ -156,6 +156,11 @@ ht-degree: 100%
    ![Edge Delivery Services 템플릿](/help/edge/assets/create-eds-forms.png)
 
 1. **만들기**&#x200B;를 클릭하여 **양식 생성** 마법사를 엽니다.
+
+   >
+   >
+   > 양식 속성을 편집하여 **데이터** 탭 이상에서 데이터 원본을 구성할 수 있습니다.
+
 1. 양식 세부 사항을 지정합니다.
 
    - **이름**: 양식에 대한 설명적인 이름을 입력합니다.
@@ -250,7 +255,7 @@ FDM의 양식 요소는 **콘텐츠 브라우저**&#x200B;의 **데이터 소스
 3. **HTML로 미리보기**&#x200B;를 선택합니다.
 4. URL에 매개변수를 추가하여 미리 채우기를 테스트합니다.
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **예:**
 

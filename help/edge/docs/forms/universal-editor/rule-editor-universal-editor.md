@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ ht-degree: 92%
 ![규칙 편집기 사용자 인터페이스](/help/edge/docs/forms/assets/rule-editor-interface.png)
 그림: 번호가 매겨진 구성 요소가 포함된 전체 규칙 편집기 인터페이스
 
-- **구성 요소 제목 및 규칙 유형**: 선택한 구성 요소 및 활성 규칙 유형을 확인합니다.
-- **양식 오브젝트 및 함수 패널**:
+1. **구성 요소 제목 및 규칙 유형**: 선택한 구성 요소 및 활성 규칙 유형을 확인합니다.
+2. **양식 오브젝트 및 함수 패널**:
+
    - 양식 오브젝트: 규칙에서 참조하기 위한 필드 및 컨테이너의 계층적 보기
    - 함수: 기본 제공되는 수학, 문자열, 날짜 및 유효성 검사 도우미
-- **패널 토글**: 작업 영역을 늘리기 위해 오브젝트 및 함수 패널을 표시/숨기기
-- **시각적 규칙 빌더**: 드래그 앤 드롭, 드롭다운 방식의 규칙 작성기
-- **컨트롤**: 완료(저장), 취소(삭제) 저장하기 전에 항상 규칙을 테스트합니다.
+
+3. **패널 토글**: 작업 영역을 늘리기 위해 오브젝트 및 함수 패널을 표시/숨기기
+4. **시각적 규칙 빌더**: 드래그 앤 드롭, 드롭다운 방식의 규칙 작성기
+5. **컨트롤**: 완료(저장), 취소(삭제) 저장하기 전에 항상 규칙을 테스트합니다.
 
 +++
 
@@ -302,13 +304,13 @@ ht-degree: 92%
 
 +++
 
-+++ 1단계: 기초 양식 만들기
++++ 1단계: 양식 만들기
 
 **목표**: 모든 필드 및 초기 설정을 사용하여 기본 양식을 빌드합니다.
 
 1. **범용 편집기 열기**:
    - AEM Sites 콘솔로 이동하여 페이지를 선택한 다음 **편집**&#x200B;을 클릭합니다.
-   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)가 올바르게 구성되었는지 확인합니다.
+   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)가 올바르게 구성되었는지 확인합니다.
 
 2. **다음 순서대로 양식 구성 요소를 추가합니다.**
    - 제목(H2): “세금 계산 양식”
@@ -533,6 +535,9 @@ export { getFullName, days };
 z![규칙 편집기의 사용자 정의 함수](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 그림: 규칙 편집기 인터페이스에서 사용자 정의 함수 선택 및 구성
 
+>
+>
+> 사용자 지정 이벤트 기반 규칙, 동적 변수에 대한 지원 및 API 통합을 포함하여 규칙 편집기에 대한 개선 사항을 Edge Delivery Services Forms에서도 사용할 수 있습니다. 이러한 개선 사항 및 사용 방법에 대한 자세한 내용은 [규칙 편집기 개선 사항 및 사용 사례](/help/forms/rule-editor-enhancements-use-cases.md) 문서를 참조하십시오.
 
 **함수 사용을 위한 모범 사례**:
 
@@ -727,7 +732,7 @@ export { getFullName, days};
 
 **추가 리소스**:
 
-- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)
+- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 - 추가 기능 활성화를 위한 [Extension Manager 안내서](/help/implementing/developing/extending/extension-manager.md)
 - 포괄적인 양식 개발 안내를 위한 [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md)
 

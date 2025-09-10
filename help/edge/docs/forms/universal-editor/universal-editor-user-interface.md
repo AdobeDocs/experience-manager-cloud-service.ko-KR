@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: ht
-source-wordcount: '2355'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2390'
+ht-degree: 98%
 
 ---
 
@@ -112,11 +112,16 @@ ht-degree: 100%
 
 **첫 번째 양식의 경우:**
 
-1. **작성 시작** - `a` 단축키를 사용하여 **추가** 버튼으로 구성 요소를 추가합니다.
-2. **필드 구성** - 구성 요소를 선택하고 `d` 단축키를 사용하여 **속성 모드**&#x200B;를 사용합니다.
-3. **양식 테스트** - `p` 단축키를 사용하여 **미리보기 모드**&#x200B;로 양식과 상호 작용합니다.
-4. **모바일 보기 확인** - 모바일 테스트를 위해 **반응형 모드**&#x200B;로 전환합니다.
-5. **라이브로 전환** - 준비되면 **게시**&#x200B;를 클릭합니다.
+1. **적응형 양식 구성 요소 추가** - `Adaptive Form` 구성 요소를 섹션에 삽입합니다.
+2. **작성 시작** - `a` 단축키를 사용하여 **추가** 버튼으로 구성 요소를 추가합니다.
+3. **필드 구성** - 구성 요소를 선택하고 `d` 단축키를 사용하여 **속성 모드**&#x200B;를 사용합니다.
+4. **양식 테스트** - `p` 단축키를 사용하여 **미리보기 모드**&#x200B;로 양식과 상호 작용합니다.
+5. **모바일 보기 확인** - 모바일 테스트를 위해 **반응형 모드**&#x200B;로 전환합니다.
+6. **라이브로 전환** - 준비되면 **게시**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+> 유니버설 편집기에서 양식을 만드는 자세한 단계에 대해 알아보려면 [Edge Delivery Services을 사용하여 적응형 Forms 만들기 및 게시](/help/edge/docs/forms/universal-editor/create-forms.md)를 참조하십시오.
 
 **유효성 검사 체크포인트:**
 
@@ -218,7 +223,7 @@ ht-degree: 100%
 
 #### **AEM 양식 속성**
 
-**용도:** 양식 데이터 모델(FDM) 및 게시 날짜와 같은 양식 수준 설정을 구성합니다.\
+**목적:** 양식 데이터 모델(FDM)과 같은 양식 수준 설정을 구성하고, 제출 액션 및 게시 날짜를 구성합니다.\
 **사용 시기:** 데이터 통합 설정, 게시 일정 예약
 
 ![양식 속성](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ ht-degree: 100%
 
 **속성 패널**(오른쪽)은 양식을 작성하고 구성하기 위한 제어 센터입니다. 선택하는 항목에 따라 달라지며 다양한 작업에 맞는 다양한 도구를 제공합니다.
 
-![속성 패널](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![속성 패널](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **핵심 양식 작성 도구**
 

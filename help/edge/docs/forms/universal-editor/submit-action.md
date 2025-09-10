@@ -5,9 +5,9 @@ keywords: 적응형 양식에 대한 제출 작업을 선택하는 방법, 적�
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: ht
-source-wordcount: '414'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '413'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 버전 | 문서 링크 |
 |---------|-----------------------------|
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Edge Delivery Services) | 이 문서 |
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 ![양식 속성 아이콘](/help/forms/assets/ue-form-properties-icon.png)
 
-![범용 편집기 양식 속성](/help/forms/assets/ue-form-properties.png)
+![양식 속성 마법사](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 >[!NOTE]
 >

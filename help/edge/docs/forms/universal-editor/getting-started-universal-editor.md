@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ AEM Forms용 Edge Delivery Services는 고성능 웹 게재와 범용 편집기�
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
 
 ## 경로 A: Forms를 사용하여 새 프로젝트 만들기
 
@@ -157,7 +157,10 @@ AEM Code Sync는 AEM 저작 환경과 GitHub 저장소 간에 콘텐츠 변경 �
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **바꾸기:**
@@ -184,9 +187,9 @@ AEM Code Sync는 AEM 저작 환경과 GitHub 저장소 간에 콘텐츠 변경 �
 
 **유효성 검사:** AEM에 대한 GitHub 저장소 연결을 확인합니다.
 
-    >[!참고]
-    >
->빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
+>[!NOTE]
+>
+> 빌드 문제가 있습니까? [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
 
 +++
 
@@ -626,13 +629,13 @@ Edge Delivery Services를 사용하는 기존 AEM 프로젝트가 이미 있는 
    이제 양식이 다음 위치에서 활성화됩니다.
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **예제 URL:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![라이브 양식 페이지](/help/edge/docs/forms/assets/publish-index-page.png)

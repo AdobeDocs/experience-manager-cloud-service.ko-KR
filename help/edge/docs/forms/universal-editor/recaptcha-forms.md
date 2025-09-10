@@ -6,9 +6,9 @@ keywords: 양식의 reCAPTCHA, 범용 편집기에서 reCAPTCHA 사용, 양식�
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,6 @@ Google reCAPTCHA는 사람 사용자와 자동화된 봇을 구분하여 양식�
 
 - AEM as a Cloud Service 작성 액세스
 - 양식 편집 권한이 있는 범용 편집기 액세스
-- reCAPTCHA 기능에 대한 초기 액세스 프로그램에 등록
 
 ### 기술 요구 사항
 

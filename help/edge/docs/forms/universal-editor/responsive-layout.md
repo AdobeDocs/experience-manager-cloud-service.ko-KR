@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 94%
 
 ---
 
 
-# 범용 편집기로 반응형 양식 만들기
+# 범용 편집기를 사용하여 응답형 Forms 만들기 - 전체 안내서
 
 현대 웹 환경에서는 끊임없이 확장되는 다양한 디바이스 및 화면 크기에서 원활하게 작동하는 양식이 필요합니다. 대형 데스크탑 모니터부터 소형 스마트폰 화면에 이르기까지, 사용자는 선택한 디바이스에 관계없이 일관되고 직관적인 경험을 기대합니다. 반응형 양식을 만드는 것은 더 이상 선택 사항이 아닌 전문가 수준의 접근 가능하고 전환에 최적화된 디지털 경험을 제공하기 위한 기본적인 요구 사항입니다.
 
@@ -33,20 +33,21 @@ ht-degree: 100%
 - 일반적인 반응형 양식 문제 해결
 - 모바일 성능을 위한 양식 최적화
 
-## 반응형 양식이 중요한 이유
+<!--
+## Why Responsive Forms Are Important
 
-**사용자 경험 영향:**
+**User Experience Impact:**
 
-- 사용자의 60% 이상이 모바일 디바이스에서 양식에 액세스합니다.
-- 모바일 경험이 좋지 않으면 이탈률이 67% 높아집니다.
-- 반응형 양식을 사용하면 완료율을 최대 25%까지 높일 수 있습니다.
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**비즈니스 이점:**
+**Business Benefits:**
 
-- 더 높은 양식 완료율
-- 향상된 사용자 만족도
-- 향상된 접근성 규정 준수
-- 개발 및 유지 관리 비용 절감
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -299,7 +300,7 @@ ht-degree: 100%
 
 **레이아웃 및 사용성:**
 
-- 관련 필드에 두 개의 열 레이아웃을 활용하면 화면 공간을 더 넓게 활용할 수 있습니다.
+- 관련 필드의 2열 레이아웃을 사용하여 화면 공간이 늘어납니다.
 - 세로 및 가로 방향 모두에서 양식 모양 및 사용성을 테스트합니다.
 - 모든 컨트롤에 쉽게 액세스할 수 있도록 터치 및 마우스 입력을 고려하여 디자인합니다.
 - 명확한 시각적 계층 및 가독성을 유지하면서 콘텐츠 영역 크기를 늘립니다.
@@ -316,6 +317,40 @@ ht-degree: 100%
 - 복잡한 양식에 대한 명확하고 상세한 오류 메시지로 고급 유효성 검사를 제공합니다.
 
 +++
+
+## 미디어 쿼리 중단점을 사용하여 사용자 지정 레이아웃 구성
+
+**범용 편집기**&#x200B;를 사용하여 적응형 Forms에서 구성 요소에 대한 사용자 지정 레이아웃을 작성할 때 **CSS 미디어 쿼리 중단점**&#x200B;을 사용하여 응답형 동작을 정의해야 합니다. 이렇게 하면 양식이 다양한 장치 및 화면 크기에서 올바르게 렌더링됩니다.
+
+**권장 중단점(AEM 핵심 구성 요소 기반)**
+
+| **디바이스 유형** | **권장 중단점** |
+|-----------------|---------------------------|
+| **데스크탑** | `min-width: 1200px` |
+| **태블릿** | `min-width: 768px and max-width: 1199px` |
+| **모바일** | `max-width: 767px` |
+
+**주요 사항**
+
+- 이러한 중단점을 사용하여 구성 요소가 다른 디바이스에서 크기 조정, 스택 또는 숨기는 방법을 제어합니다.
+- 일관된 UX를 위해 조직의 응답형 디자인 지침을 따르십시오.
+- 여러 장치 및 방향에서 레이아웃을 테스트하여 유용성과 접근성을 보장합니다.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> 범용 편집기는 응답형 동작을 정의하기 위한 UI를 제공하지 않습니다. 모든 레이아웃 사용자 지정은 CSS를 통해 처리해야 합니다.
+
+
 
 ## 문제 해결
 

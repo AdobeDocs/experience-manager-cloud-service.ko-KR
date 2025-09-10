@@ -4,10 +4,10 @@ description: 범용 편집기에서 양식 조각을 만들고 양식에 추가�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
 
 범용 편집기에서 Edge Delivery Services 양식 조각을 만들고 생성된 조각을 Edge Delivery Services 양식에 추가할 수 있습니다. Edge Delivery Services 양식 조각을 사용하면 다음 액션을 수행할 수 있습니다.
 
-- [양식 조각 만들기](#creating-form-fragments)
-- [양식에 양식 조각 추가](#adding-form-fragments-to-a-form)
-- [양식 조각 관리](#managing-form-fragments)
+- [범용 편집기에서 양식 조각 만들기](#creating-form-fragments-in-universal-editor)
+   - [양식 조각 이해](#understanding-form-fragments)
+   - [사전 요구 사항](#prerequisites)
+   - [Edge Delivery Services 양식 조각을 사용하여 작업](#working-with-edge-delivery-services-form-fragments)
+   - [모범 사례](#best-practices)
+   - [요약](#summary)
 
 +++ 양식 조각 만들기
 
@@ -174,6 +177,10 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
    양식 조각은 양식에 대한 참조를 통해 추가되며 독립형 양식 조각과 동기화 상태를 유지합니다.
 
    ![범용 편집기 내의 직원 양식에 연락처 세부 정보 조각이 성공적으로 통합된 모습을 보여 주는 스크린샷으로, 조각이 재사용될 때 구조를 유지하는 방법을 보여 줍니다.](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+
+   >[!NOTE]
+   >
+   > **조각 편집** 단추를 사용하면 편집할 양식 조각으로 직접 이동할 수 있습니다.
 
    **미리보기 모드**&#x200B;에서 양식을 미리 보고 양식이 어떻게 나타나는지 확인할 수 있습니다.
 
@@ -285,8 +292,8 @@ Edge Delivery Services에서 양식 조각을 활용하여 개발 효율성을 �
 
 **다음 단계:**
 
-- 조직에 일반적으로 사용되는 조각 라이브러리를 만듭니다.
-- 조각 사용에 대한 명명 규칙 및 거버넌스 정책을 수립합니다
+- 조직에 대해 일반적으로 사용되는 조각의 라이브러리를 만듭니다.
+- 조각 사용에 대한 이름 지정 규칙 및 거버넌스 정책을 설정합니다.
 - 동적 데이터 기반 조각에 대한 [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)과의 고급 통합을 탐색합니다.
 - 일관된 사용자 경험을 위해 조각 기반 양식 템플릿을 구현합니다.
 

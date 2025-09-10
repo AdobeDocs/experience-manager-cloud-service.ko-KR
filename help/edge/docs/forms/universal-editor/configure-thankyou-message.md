@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
-workflow-type: ht
-source-wordcount: '1133'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ ht-degree: 100%
 
 범용 편집기에서 적응형 양식을 열고 도구 모음에서 **양식 속성 편집** 아이콘을 클릭합니다. 이렇게 하면 포괄적인 양식 속성 대화 상자가 열립니다.
 
+![양식 속성 아이콘](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 감사 구성으로 이동**
 
 양식 속성 대화 상자에서 **감사** 탭을 선택하여 제출 후 구성 옵션에 액세스합니다.
 
+![범용 편집기 양식 속성](/help/forms/assets/ue-form-properties.png)
+
 **3. 메시지 표시 구성**
 
-사용 가능한 옵션에서 **메시지 표시** 를 선택합니다. 이렇게 하면 리치 텍스트 기능이 있는 메시지 콘텐츠 편집기가 활성화됩니다.
+사용 가능한 옵션에서 **메시지 표시**&#x200B;를 선택합니다.
+
+![감사합니다](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. 메시지 콘텐츠 만들기**
 
@@ -117,13 +123,19 @@ ht-degree: 100%
 
 범용 편집기에서 적응형 양식을 열고 **양식 속성 편집** 아이콘을 클릭하여 양식 구성 대화 상자를 엽니다.
 
+![양식 속성 아이콘](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 감사 구성으로 이동**
 
 양식 속성 대화 상자에서 **감사** 탭을 선택하여 리디렉션 구성 옵션에 액세스합니다.
 
+![범용 편집기 양식 속성](/help/forms/assets/ue-form-properties.png)
+
 **3. 리디렉션 기능 활성화**
 
 사용 가능한 제출 후 옵션에서 **URL로 리디렉션**&#x200B;을 선택합니다.
+
+![리디렉션](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. 대상 URL 구성**
 
