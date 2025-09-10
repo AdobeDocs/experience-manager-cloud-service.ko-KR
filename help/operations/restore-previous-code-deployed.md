@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -28,17 +28,16 @@ ht-degree: 3%
 >
 >![사용 중인 Source 코드 버전](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-**배포된 이전 코드 복원** 기능은 아래의 **every** 조건이 참인 경우에만 사용할 수 있습니다.
+**배포된 이전 코드 복원**&#x200B;은(는) 다음 조건이 충족되는 경우에만 사용할 수 있습니다.
 
 * 성공한 파이프라인 실행당 하나의 복원만 허용됩니다. 다시 복원하려면 성공한 다른 파이프라인 실행을 완료하십시오.
 * **환경 복원 만들기** 권한이 있습니다. 권한 관리에 대한 자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)을 참조하세요.
 * 조직이 Beta 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
-* `Development` 환경, `Stage` 환경 또는 `Specialized Testng Environment`에서 이전 소스 코드를 복원할 수 있습니다.
 * 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
+* **배포된 이전 코드 복원**&#x200B;은(는) `Development` 환경, `Stage` 환경 또는 `Specialized Testng Environment`에서 수행할 수 있습니다.
 
-선택한 환경은 `Development`, 단계 또는 특수 테스트 환경입니다.
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
 
 ![이전 코드 배포 복원 실패 대화 상자](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
