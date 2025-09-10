@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 26%
+source-wordcount: '1854'
+ht-degree: 22%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -89,15 +89,9 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ![조직 표시기](assets/organization.png)
 
-#### 솔루션 {#solutions}
+#### 도움말 센터 {#help}
 
-솔루션 전환기를 탭하거나 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
-
-![솔루션 전환기](assets/solutions.png)
-
-#### 도움말 {#help}
-
-도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
+도움말 센터 아이콘을 통해 학습 및 지원 리소스에 빠르게 액세스할 수 있습니다.
 
 ![도움말](assets/help.png)
 
@@ -107,9 +101,15 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ![알림](assets/notifications.png)
 
-#### 사용자 속성 {#user-properties}
+#### 앱 {#solutions}
 
-사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
+앱 전환기를 탭하거나 클릭하여 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
+
+![앱 전환기](assets/solutions.png)
+
+#### 계정 {#user-properties}
+
+계정 설정에 액세스할 사용자를 나타내는 아이콘을 선택합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
 
 ![사용자 속성](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 >
 >유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다](/help/implementing/universal-editor/getting-started.md).
 
+**빠른 링크** 섹션은 도움말 리소스를 제공하며 **최근 항목** 섹션은 유니버설 편집기로 최근에 연 페이지에 대한 링크를 제공합니다.
+
 #### 위치 표시줄 {#location-bar}
 
 위치 표시줄에 편집 중인 페이지의 주소가 표시됩니다. 편집할 다른 페이지의 주소를 입력하려면 선택하십시오.
@@ -149,21 +151,32 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 >
 >유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다](/help/implementing/universal-editor/getting-started.md).
 
-#### 인증 헤더 설정 {#authentication-settings}
+#### 실행 취소 및 다시 실행 {#undo-redo}
 
-[로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 설정 아이콘을 선택합니다.
+실행 취소 또는 재실행 버튼을 선택하여 편집기의 마지막 편집을 실행 취소하거나 재실행합니다. 자세한 내용은 [유니버설 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) 문서를 참조하십시오.
+
+![실행 취소 아이콘](assets/undo.png)
+![다시 실행 아이콘](assets/redo.png)
+
+>[!TIP]
+>
+>핫 키 `Command-Z` 또는 `Shift-Command-Z`을(를) 사용하여 각각 실행 취소하거나 다시 실행하십시오.
+
+#### 인증 헤더 {#authentication-settings}
+
+[로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 아이콘을 선택하십시오.
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
 
-#### 에뮬레이터 설정 {#emulator}
+#### 반응형 모드 {#emulator}
 
-에뮬레이션 아이콘을 선택하여 범용 편집기에서 페이지를 렌더링하는 방법을 정의합니다.
+응답형 모드 아이콘을 선택하여 범용 편집기에서 페이지를 렌더링하는 방법을 정의합니다.
 
-![에뮬레이터 아이콘](assets/emulator.png)
+![응답형 모드 아이콘](assets/emulator.png)
 
-에뮬레이션 아이콘을 탭하거나 클릭하면 옵션이 표시됩니다.
+응답형 모드 아이콘을 탭하거나 클릭하면 옵션이 표시됩니다.
 
-![에뮬레이션 옵션](assets/emulation-options.png)
+![응답형 모드 옵션](assets/emulation-options.png)
 
 기본적으로 편집기는 브라우저에서 높이와 너비를 자동으로 정의하는 데스크탑 레이아웃으로 열립니다.
 
@@ -173,7 +186,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 * 폭과 높이 정의
 * 방향 변경
 
-#### 미리보기 모드 {#preview-mode}
+#### 미리보기 {#preview-mode}
 
 미리보기 모드의 페이지는 게시된 서비스에 표시되는 것처럼 편집기에서 렌더링된 페이지입니다. 이렇게 하면 콘텐츠 작성자는 링크 등을 클릭하여 콘텐츠를 탐색할 수 있습니다.
 

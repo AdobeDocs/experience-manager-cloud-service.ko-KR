@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 31%
+source-wordcount: '563'
+ht-degree: 33%
 
 ---
 
@@ -31,7 +31,7 @@ Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐�
 
 1. 유니버설 편집기에서 [유니버설 편집기의 도구 모음에서 **게시** 아이콘을 탭하거나 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. [미리 보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)를 사용할 수 있는 경우 콘텐츠를 게시하는 위치를 **[미리 보기](/help/sites-cloud/authoring/sites-console/previewing-content.md)**(사용 가능한 경우) 또는 **게시**&#x200B;로 선택할 수 있습니다.
-1. **항목** 섹션에는 다음 항목을 포함하여 게시에 포함된 콘텐츠가 나열됩니다.
+1. **항목** 섹션에는 게시에 포함된 콘텐츠가 나열됩니다. 다음을 포함한 세부 정보를 표시하려면 **보기**&#x200B;를 탭하거나 클릭합니다.
    * 아직 게시되지 않은 **새**&#x200B;개 항목.
    * 게시되었지만 마지막 게시 이후에 수정된 **수정됨** 콘텐츠.
    * 게시 이후 수정되지 않고 게시된 **게시** 콘텐츠입니다.
@@ -62,12 +62,12 @@ Sites 콘솔에서 [을(를) 게시](/help/sites-cloud/authoring/sites-console/p
 
 유니버설 편집기로 콘텐츠를 작성하는 방법에 대해 알아보려면 이 문서 를 참조하십시오.
 
-* [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
+* [범용 편집기로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 범용 편집기를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
 
-유니버설 편집기의 기술 세부 정보에 대한 자세한 내용은 다음 개발자 문서를 참조하십시오.
+범용 편집기의 기술적 세부 사항에 대해 자세히 알아보려면 이 개발자 문서를 참조하십시오.
 
-* [Universal Editor 소개](/help/implementing/universal-editor/introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
-* [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
-* [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
-* [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
-* [Universal Editor 인증](/help/implementing/universal-editor/authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
+* [범용 편집기 소개](/help/implementing/universal-editor/introduction.md) - 범용 편집기를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
+* [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md) - 범용 편집기에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
+* [범용 편집기 아키텍처](/help/implementing/universal-editor/architecture.md) - 범용 편집기의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
+* [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
+* [범용 편집기 인증](/help/implementing/universal-editor/authentication.md) - 범용 편집기의 인증 방법에 대해 알아봅니다.

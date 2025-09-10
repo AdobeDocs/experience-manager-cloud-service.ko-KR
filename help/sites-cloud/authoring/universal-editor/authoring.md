@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 19%
+source-wordcount: '2319'
+ht-degree: 21%
 
 ---
 
@@ -116,7 +116,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->유니버설 편집기 [모델에 따라 콘텐츠 조각 필드의 유효성을 검사합니다](/help/assets/content-fragments/content-fragments-models.md#validation). 정규식 패턴 및 고유성 제약 조건과 같은 데이터 무결성 규칙을 적용할 수 있습니다.
+>범용 편집기는 [모델을 기반으로 콘텐츠 조각 필드의 유효성을 검사](/help/assets/content-fragments/content-fragments-models.md#validation)하여 정규식 패턴 및 고유성 제약 조건과 같은 데이터 무결성 규칙을 적용할 수 있습니다.
 >
 >이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족할 수 있습니다.
 
@@ -172,13 +172,27 @@ ht-degree: 19%
 
    ![구성 요소 재정렬](assets/ue-reordering-components.png)
 
-1. 드래그한 구성 요소는 콘텐츠 트리에서 회색으로 바뀌고 삽입 지점은 파란색 선으로 표시됩니다. 구성 요소를 놓아 새 위치에 배치합니다.
+1. 드래그한 구성 요소는 콘텐츠 트리에서 회색으로 표시되고 삽입 지점은 파란색 선으로 표시됩니다. 구성 요소를 놓아 새 위치에 배치합니다.
 
 콘텐츠 트리와 편집기 모두에서 구성 요소의 순서가 변경되었습니다.
 
 >[!NOTE]
 >
 >대상 컨테이너 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)에서 선택한 구성 요소를 허용하는 경우에만 컨테이너 간에 구성 요소를 이동할 수 있습니다.
+
+### 실행 취소 및 다시 실행 {#undo-redo}
+
+실행 취소 또는 재실행 버튼을 선택하여 편집기의 마지막 편집을 실행 취소하거나 재실행합니다.
+
+![실행 취소 아이콘](assets/undo.png)
+![다시 실행 아이콘](assets/redo.png)
+
+* 컨텍스트에서 수행한 편집, 속성 패널을 통해 수행한 편집 및 블록을 추가, 복제, 이동 및 삭제하는 작업에 대해 실행 취소 및 재실행을 수행할 수 있습니다.
+* 실행 취소 및 다시 실행 기능은 현재 브라우저 세션으로 제한됩니다.
+
+>[!TIP]
+>
+>핫 키 `Command-Z` 또는 `Shift-Command-Z`을(를) 사용하여 각각 실행 취소하거나 다시 실행하십시오.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
@@ -305,7 +319,7 @@ ht-degree: 19%
 
 페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-### 변형 생성 {#generate-variations}
+### 베리에이션 생성 {#generate-variations}
 
 **변형 생성** 확장을 사용하면 생성 AI(인공 지능)를 사용하여 속성 패널에서 직접 콘텐츠에 대한 변형을 만들 수 있습니다.
 
@@ -319,12 +333,12 @@ ht-degree: 19%
 
 범용 편집기로 콘텐츠를 게시하는 방법에 대해 알아보려면 이 문서 를 참조하십시오.
 
-* [유니버설 편집기로 콘텐츠 게시](publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+* [범용 편집기로 콘텐츠 게시](publishing.md) - 범용 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 
-유니버설 편집기의 기술 세부 정보에 대한 자세한 내용은 다음 개발자 문서를 참조하십시오.
+범용 편집기의 기술적 세부 사항에 대해 자세히 알아보려면 이 개발자 문서를 참조하십시오.
 
 * [유니버설 편집기 소개](/help/implementing/universal-editor/introduction.md) - 유니버설 편집기를 사용하여 모든 구현에서 콘텐츠의 모든 측면을 편집하여 탁월한 경험을 제공하고 콘텐츠 속도를 높일 수 있는 방법에 대해 알아봅니다.
-* [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
-* [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
-* [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
-* [Universal Editor 인증](/help/implementing/universal-editor/authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
+* [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md) - 범용 편집기에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
+* [범용 편집기 아키텍처](/help/implementing/universal-editor/architecture.md) - 범용 편집기의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
+* [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
+* [범용 편집기 인증](/help/implementing/universal-editor/authentication.md) - 범용 편집기의 인증 방법에 대해 알아봅니다.

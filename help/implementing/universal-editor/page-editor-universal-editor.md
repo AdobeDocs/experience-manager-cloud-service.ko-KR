@@ -4,10 +4,10 @@ description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 �
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '1069'
-ht-degree: 100%
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe는 2024년에 현대적인 JavaScript 기반 개발 접근 방식을 도�
 | 블록 잘라내기/복사-붙여넣기 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용할 수 없음]{type=Negative} | 계획됨 |
 | 스타일 적용 | [!BADGE 사용 가능]{type=Positive} | [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)을 사용하여 구성 요소에 스타일을 적용할 수 있습니다. | [!BADGE 사용 가능]{type=Positive} | 일반 구성 요소(또는 콘텐츠 조각) 속성을 사용하여 스타일을 적용할 수 있습니다. 범용 편집기에서는 동일한 스타일 선택기를 사용할 수 없지만 다중 선택 위젯을 사용하면 매우 유사한 UX를 구현할 수 있습니다. |
 | 레이아웃 적용 | [!BADGE 사용 가능]{type=Positive} | 작성자가 세 가지 미리 정의된 중단점에서 구성 요소 크기를 조정할 수 있도록 하려면 사이트에서 [AEM 반응형 격자](/help/implementing/developing/introduction/responsive-design.md)를 구현해야 합니다. | [!BADGE 사용 가능]{type=Positive} | 일반 구성 요소(또는 콘텐츠 조각) 속성을 사용하여 레이아웃을 적용할 수 있지만 반응형 격자는 지원되지 않습니다. |
-| 실행 취소-다시 실행 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용할 수 없음]{type=Negative} | 계획됨 |
+| 실행 취소-다시 실행 | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} |  |
 | 게시(미리보기 포함) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} |  |
 | [워크플로 시작](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE 사용 가능]{type=Positive} |  | [!BADGE 사용 가능]{type=Positive} | 확장 기능으로 사용 가능 |
 | 댓글 달기 | [!BADGE 사용 가능]{type=Positive} | [주석](/help/sites-cloud/authoring/page-editor/annotations.md) 사용 | [!BADGE 사용할 수 없음]{type=Negative} | 계획됨 |
@@ -87,7 +87,7 @@ Adobe는 2024년에 현대적인 JavaScript 기반 개발 접근 방식을 도�
 범용 편집기는 많은 이점을 제공하므로 새 프로젝트에 적합한 솔루션입니다.
 
 * **시각적 편집:** 페이지 편집기와 마찬가지로 작성자는 미리보기 내에서 직접 콘텐츠를 편집하고 변경 내용이 방문자 경험에 어떤 영향을 미치는지 즉시 확인할 수 있습니다.
-* **미래 지향적:** AEM의 로드맵은 범용 편집기를 시각적 편집기로 우선시합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
+* **향후 교정:** AEM의 로드맵은 비주얼 편집기로 유니버설 편집기의 우선 순위를 지정합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
 * **더욱 간편한 통합:** 범용 편집기를 사용하기 위해 AEM 관련 SDK가 필요하지 않으므로 기술 스택 종속성이 줄어듭니다.
 * **자체 앱 가져오기:** 범용 편집기는 모든 웹 프레임워크 또는 아키텍처를 지원하므로 복잡한 리팩토링 없이도 채택할 수 있습니다.
 * **확장성:** 범용 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크](/help/implementing/universal-editor/extending.md)의 이점을 누릴 수 있습니다.
