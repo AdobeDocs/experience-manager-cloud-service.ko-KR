@@ -4,9 +4,9 @@ description: Git 하위 모듈을 사용하여 빌드 시 Git 저장소에 있�
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 24%
 
 ---
@@ -68,7 +68,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://git-scm.com/book/en/v2/Git-Tools-Submodules)를 참조하십시오.
 
-## 사용 정보 {#usage-notes}
+## Adobe 저장소에 대한 사용 노트 {#usage-notes-recommendations-adobe-repos}
 
 * Git URL은 이전 섹션에서 설명한 구문과 정확히 일치해야 합니다.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
@@ -94,4 +94,4 @@ Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://g
 
 * 하위 모듈 Git URL은 HTTPS 또는 SSH 형식일 수 있지만 GitHub.com 저장소를 가리켜야 합니다. GitHub 집계 저장소에 Adobe 저장소 하위 모듈을 추가하거나 그 반대로 추가할 수 없습니다.
 * GitHub 하위 모듈은 Adobe GitHub 앱에서 액세스할 수 있어야 합니다.
-* [Adobe 관리 저장소의 Git 하위 모듈 사용 시 제한 사항](#limitations-recommendations)도 적용됩니다.
+* [Adobe 관리 저장소의 Git 하위 모듈 사용 시 제한 사항](#usage-notes-recommendations-adobe-repos)도 적용됩니다.
