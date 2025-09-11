@@ -4,7 +4,7 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
+source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 4%
@@ -120,12 +120,14 @@ Forms 블록의 사용자 지정 구성 요소는 **MVC(Model-View-Controller)**
 #### 함수 서명:
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -141,18 +143,20 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ### 함수 서명:
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -249,28 +253,39 @@ blocks/form/
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
 **cards.css의 사용자 지정 구성 요소에 대한 런타임 동작 추가**
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 ```
 
@@ -289,64 +304,49 @@ API가 호출되면 필드 모델을 설정하며 변경 내용을 수신하고 
 이전 단계의 보기 코드를 함수로 변환하고 `cards.js`의 Subscribe 함수 내에서 다음과 같이 호출하겠습니다.
 
 ```javascript
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-    if (enums[index]?.name) {  
+      label.textContent = enums[index]?.name;
+    }
 
-      let label = radioWrapper.querySelector('label');  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      if (!label) {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-        label = document.createElement('label');  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        radioWrapper.appendChild(label);  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      }  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **Subscribe 함수를 사용하여 cards.js에서 이벤트 변경 내용을 수신**
@@ -362,81 +362,58 @@ export default function decorate(element, fieldJson, container, formId) {
 **cards.js에서 필드 모델 API 사용**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 이제 아래와 같이 사용자 지정 카드 구성 요소가 표시됩니다.
@@ -453,7 +430,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 몇 가지 간단한 단계로 복잡한 사용자 정의 카드 선택 구성 요소를 만들었습니다.
 
-+++ ## 사용자 지정 구성 요소를 만드는 수동 또는 이전 방법
++++ **사용자 지정 구성 요소를 만드는 수동 또는 기존 메서드**
 
 이렇게 하는 이전 방법은 아래에 설명된 단계를 수동으로 수행하는 것입니다.
 
@@ -484,23 +461,29 @@ git add . && git commit -m "Add card custom component" && git push
 7. 양식 빌더에서 구성 요소를 변형으로 등록하고 변형 속성을 설정하거나
    JSON의 `fd:viewType/:type`을(를) 구성 요소 이름에 추가합니다. 예를 들어 `fd:viewType`을(를) 사용하여 `definitions[]`의 `id="form` 값을 카드로 개체의 구성 요소 배열에 추가합니다.
 
-   ```javascript
-   {
-   "definitions": [
-   {
-   "title": "Cards",
-   "id": "cards", "plugins": {
-   "xwalk": {
-   "page": {
-   "resourceType":
-   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-   "jcr:title": "Cards",
-   "fieldType": "radio-button", "fd:viewType": "cards",
-   "enabled": true, "visible": true}
+   ```
+       {
+     "definitions": [
+       {
+         "title": "Cards",
+         "id": "cards",
+         "plugins": {
+           "xwalk": {
+             "page": {
+               "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+               "template": {
+                 "jcr:title": "Cards",
+                 "fieldType": "radio-button",
+                 "fd:viewType": "cards",
+                 "enabled": true,
+                 "visible": true
+               }
+             }
+           }
+         }
+       }
+     ]
    }
-   } }
-   }
-   ]}
    ```
 
 8. **mappings.js 업데이트**: **OOTBComponentDecorators**(OOTB 스타일 구성 요소) 또는 **customComponents** 목록에 구성 요소 이름을 추가하여 시스템에서 인식하고 로드하십시오.
@@ -522,19 +505,21 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json 업데이트**: `models/_component-definition.json`에서 다음 방식으로 개체가 있는 `id custom-components` 그룹 내의 배열을 업데이트합니다.
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
+   나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
 
 11. **빌드:json 스크립트를 실행**: `npm run build:json`을(를) 실행하여 모든 구성 요소 JSON 정의를 컴파일하고 서버에서 제공할 단일 파일로 병합합니다. 이렇게 하면 새 구성 요소의 스키마가 병합된 출력에 포함됩니다.
 
 12. 변경 사항을 커밋하고 Git 저장소에 푸시합니다.
 
 이제 사용자 지정 구성 요소를 양식에 추가할 수 있습니다.
+
++++
 
 ## 복합 구성 요소 만들기
 
@@ -548,81 +533,44 @@ git add . && git commit -m "Add card custom component" && git push
 이 구성 구조는 각 구성 요소의 JSON 파일 내에 있는 템플릿으로 정의됩니다. 다음 예에서는 약관 구성 요소에 대한 템플릿을 정의하는 방법을 보여 줍니다.
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
 
 ## 모범 사례
