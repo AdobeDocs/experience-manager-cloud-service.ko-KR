@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 4%
@@ -36,7 +36,7 @@ ht-degree: 4%
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
 * 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
-* **배포된 이전 코드 복원**&#x200B;은(는) `Development` 환경, `Stage` 환경 또는 `Specialized Testng Environment`에서 수행할 수 있습니다.
+* **배포된 이전 코드 복원**&#x200B;은(는) `Development` 환경, `Stage` 환경 또는 `Specialized Testing Environment`에서 수행할 수 있습니다.
 
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
 
