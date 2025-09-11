@@ -4,9 +4,9 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ![카드 사용자 지정 구성 요소](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## 변경 내용 커밋 및 푸시
+### &#x200B;3. 변경 사항 커밋 및 푸시
 
 사용자 지정 구성 요소에 대한 JavaScript 및 CSS를 구현하고 로컬에서 확인했으면 변경 사항을 커밋하고 Git 저장소에 푸시합니다.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 몇 가지 간단한 단계로 복잡한 사용자 정의 카드 선택 구성 요소를 만들었습니다.
 
-## 사용자 지정 구성 요소를 만드는 수동 또는 이전 방법
++++ ## 사용자 지정 구성 요소를 만드는 수동 또는 이전 방법
 
 이렇게 하는 이전 방법은 아래에 설명된 단계를 수동으로 수행하는 것입니다.
 
@@ -522,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json 업데이트**: `models/_component-definition.json`에서 다음 방식으로 개체가 있는 `id custom-components` 그룹 내의 배열을 업데이트합니다.
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
+   나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
 
 11. **빌드:json 스크립트를 실행**: `npm run build:json`을(를) 실행하여 모든 구성 요소 JSON 정의를 컴파일하고 서버에서 제공할 단일 파일로 병합합니다. 이렇게 하면 새 구성 요소의 스키마가 병합된 출력에 포함됩니다.
 
