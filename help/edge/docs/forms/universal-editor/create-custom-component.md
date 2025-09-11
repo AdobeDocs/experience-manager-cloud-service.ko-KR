@@ -4,7 +4,7 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(()
 #### 1.1 파일 및 폴더
 
 첫 번째 단계는 사용자 지정 구성 요소에 필요한 파일을 설정하여 저장소의 코드로 연결하는 것입니다. 이 프로세스는 **AEM Forms Scaffold CLI**&#x200B;에서 자동으로 수행되므로 필요한 파일을 더 빨리 스캐폴드하고 전송하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. 터미널을 열고 양식 프로젝트의 루트로 이동합니다.
 2. 다음 명령을 실행합니다.
@@ -520,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json 업데이트**: `models/_component-definition.json`에서 다음 방식으로 개체가 있는 `id custom-components` 그룹 내의 배열을 업데이트합니다.
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
+   나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
 
 11. **빌드:json 스크립트를 실행**: `npm run build:json`을(를) 실행하여 모든 구성 요소 JSON 정의를 컴파일하고 서버에서 제공할 단일 파일로 병합합니다. 이렇게 하면 새 구성 요소의 스키마가 병합된 출력에 포함됩니다.
 
