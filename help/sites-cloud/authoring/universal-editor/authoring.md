@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 21%
 
 ---
@@ -193,6 +193,24 @@ ht-degree: 21%
 >[!TIP]
 >
 >핫 키 `Command-Z` 또는 `Shift-Command-Z`을(를) 사용하여 각각 실행 취소하거나 다시 실행하십시오.
+
+### 복사 및 붙여넣기 {#copy-paste}
+
+[개의 컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container) 이 작업은 같은 페이지 내에서만 가능하고 [대상 컨테이너에 구성 요소를 붙여넣을 수 있는 경우에만 가능합니다.](/help/implementing/universal-editor/filtering.md)
+
+![복사 아이콘](assets/copy.png)
+![붙여넣기 아이콘](assets/paste.png)
+
+1. 편집기 내에서 또는 콘텐츠 트리에서 구성 요소를 선택합니다.
+1. **복사** 아이콘이 [속성 패널에 나타납니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) 탭하거나 클릭합니다.
+1. **붙여넣기** 아이콘이 속성 패널에 나타납니다.
+1. 복사한 구성 요소를 붙여넣을 구성 요소 _after_&#x200B;를 선택합니다.
+1. 붙여넣기 를 탭하거나 클릭합니다.
+1. 복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
+
+>[!TIP]
+>
+>핫키 `Command-C` 또는 `Command-V`을(를) 사용하여 각각 복사하거나 붙여 넣으십시오.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 

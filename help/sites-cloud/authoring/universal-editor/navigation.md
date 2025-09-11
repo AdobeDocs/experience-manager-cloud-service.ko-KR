@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1894'
 ht-degree: 22%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -338,6 +338,19 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >[!TIP]
 >
 >단축키 `Shift+Backspace`를 사용하여 컨테이너에서 선택한 구성 요소를 삭제합니다.
+
+##### 복사 및 붙여넣기 {#copy-paste}
+
+[컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container)
+
+![복사 아이콘](assets/copy.png)
+![붙여넣기 아이콘](assets/paste.png)
+
+>[!TIP]
+>
+>핫키 `Command-C` 또는 `Command-V`을(를) 사용하여 각각 복사하거나 붙여 넣으십시오.
+
+자세한 내용은 [유니버설 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) 문서를 참조하십시오.
 
 #### 추가 단추 {#additional-properties-panel-buttons}
 

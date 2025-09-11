@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ MSM 및 론치는 상속을 사용하여 콘텐츠를 재사용하는 데 도움
 
 * [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [시작 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-* [페이지 속성 창](/help/sites-cloud/authoring/sites-console/page-properties.md)의 **라이브 카피** 탭에서 **재설정** 단추를 사용합니다.
+* **페이지 속성 창**&#x200B;의 **라이브 카피** 탭에서 [재설정](/help/sites-cloud/authoring/sites-console/page-properties.md) 단추를 사용합니다.
 
 범용 편집기는 상속의 기본 메커니즘에 영향을 주지 않습니다. 상속이 작동하는 방식에 대한 자세한 내용은 다음 설명서를 참조하십시오.
 
@@ -67,4 +67,3 @@ MSM 및 론치는 상속을 사용하여 콘텐츠를 재사용하는 데 도움
 
 * 단일 구성 요소의 상속을 되돌리려면 **AEM MSM(다중 사이트 관리) 확장**&#x200B;을 사용하도록 설정해야 합니다.
 * 상속이 비활성화된 구성 요소와 유지된 구성 요소를 확인하기 위한 시각적 피드백을 보려면 **AEM MSM(다중 사이트 관리) 확장**&#x200B;을(를) 활성화해야 합니다.
-* 이러한 기능은 현재 페이지의 구성 요소로 제한되어 있으며 MSM 및 Launch 기능도 있지만 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)에는 아직 적용되지 않습니다.
