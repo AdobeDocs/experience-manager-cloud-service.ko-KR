@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 86%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -85,37 +85,37 @@ OpenAPI를 사용하여 DM에서 자산 전달을 위한 Vanity URL을 생성하
 
 **날짜 및 시간 입력 구성 요소**
 
-이제 [날짜 및 시간 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)를 사용할 수 있으므로 사용자가 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 수동으로 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
+이제 [날짜 및 시간 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)를 사용할 수 있으며, 이를 통해 사용자는 달력 및 시계 인터페이스를 사용하거나 지원되는 형식으로 값을 직접 입력하여 날짜와 시간을 모두 선택할 수 있습니다.
 
-**파일 업로드에 대한 향상된 오류 처리**
+**파일 업로드에 대한 오류 처리 개선**
 
-[첨부 파일 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)에서 이제 허용 목록에 대해 업로드된 파일 형식을 자동으로 확인합니다. 사용자가 지원되지 않는 형식의 파일을 업로드하면 양식 제출 중에 오류가 표시됩니다. 또한 이 구성 요소는 파일 내용을 검사하여 유형을 검증하고, 이를 통해 양식의 전반적인 보안을 강화합니다.
+이제 [파일 첨부 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)가 업로드된 파일 유형을 허용 목록과 자동으로 비교합니다. 사용자가 지원되지 않는 형식의 파일을 업로드하면 양식 제출 중에 오류가 표시됩니다. 또한 이 구성 요소는 파일 내용을 검사하여 유형을 검증하고, 이를 통해 양식의 전반적인 보안을 강화합니다.
 
-**사용자 지정 제출 액션에 대해 지정된 오류 응답**
+**사용자 정의 제출 액션에 대해 지정된 오류 응답**
 
-[사용자 지정 제출 액션](/help/forms/custom-submit-action-troubleshooting.md)에서 처리되지 않은 오류가 발생하면 시스템이 오류 코드 502를 반환합니다. 이를 통해 문제가 사용자 정의 제출 작업과 관련되어 있음을 식별하여 디버깅을 더 쉽게 수행할 수 있습니다.
+[사용자 정의 제출 액션](/help/forms/custom-submit-action-troubleshooting.md)에서 처리되지 않은 오류가 발생하면 오류 코드 502가 반환됩니다. 이를 통해 문제가 사용자 정의 제출 액션과 관련되어 있음을 식별하여 디버깅을 더 쉽게 수행할 수 있습니다.
 
 **기록 문서에서 숨겨진 필드 제외**
 
-새 속성을 사용하면 [기록 문서](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)에서 숨겨진 필드를 제외할 수 있습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 모든 양식 필드에 적용됩니다.
+새로운 속성을 사용하면 [기록 문서](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)에서 숨겨진 필드를 제외할 수 있습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 모든 양식 필드에 적용됩니다.
 
 
 ### AEM Forms의 프리릴리스 기능
 
-**AFP 표현물 생성 및 동기화**
+**AFP 렌디션 생성 및 동기화**
 
-이제 [AEM Forms 통신 API](/help/forms/document-generation-afp-api.md)를 사용하여 XDP 파일을 AFP 형식으로 변환할 수 있습니다. AFP는 대규모 기업 인쇄에 널리 사용되는 고성능 형식입니다.
+이제 [AEM Forms Communication API](/help/forms/document-generation-afp-api.md)를 사용하여 XDP 파일을 AFP 형식으로 변환할 수 있습니다. AFP는 대규모 기업 인쇄에 널리 사용되는 고성능 형식입니다.
 
 **규칙 편집기 개선 사항**
 
-* [함수 목록의 유효성 검사 메서드](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): 이제 유효성 검사 및 재설정 메서드가 패널, 필드 및 양식 수준에서 실행을 지원합니다. 이전에는 양식 수준에서만 지원되었습니다.
-* [최신 JavaScript 지원](/help/forms/rule-editor-core-components-difference-tables.md): 사용자 지정 기능에 대해 ECMAScript 2019 이상 기능에 대한 지원을 추가하여 보다 효율적이고 모듈식이며 재사용 가능한 코드를 작성할 수 있습니다.
+* [함수 목록에서 메서드 유효성 검사](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): 이제 validate 및 reset 메서드가 패널, 필드 및 양식 수준에서 실행을 지원합니다. 이전에는 양식 수준에서만 지원되었습니다.
+* [최신 JavaScript 지원](/help/forms/rule-editor-core-components-difference-tables.md): 사용자 정의 함수에 ECMAScript 2019 이상 기능에 대한 지원이 추가되어 보다 효율적이고 모듈식이며 재사용 가능한 코드를 작성할 수 있습니다.
 * [규칙 편집기에서 DoR 옵션 다운로드](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): 기록 문서(DoR)를 다운로드하는 기능이 규칙 편집기의 기본 옵션(OOTB)으로 추가되었습니다.
 
   ![기록 문서](/help/forms/assets/document-of-record-rn.gif)
 
 * [규칙 편집기의 동적 변수](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules) : 이제 규칙 편집기에서 동적(임시) 변수를 사용하여 조건과 작업을 정의할 때 더 큰 유연성을 얻을 수 있습니다. 임시 값을 저장할 때 숨겨진 필드가 더 이상 필요하지 않습니다.
-* [사용자 지정 이벤트 기반 규칙 지원](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): 이제 사용자 지정 이벤트를 정의하고 해당 이벤트를 기반으로 규칙을 트리거할 수 있습니다.
+* [사용자 정의 이벤트 기반 규칙 지원](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): 이제 사용자 정의 이벤트를 정의하고 해당 이벤트에 따라 규칙을 트리거할 수 있습니다.
 * [컨텍스트 인식 반복 가능 패널 규칙](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): 이제 규칙이 반복 가능한 패널에서 마지막 패널 인스턴스에만 적용되는 것이 아니라 컨텍스트에 따라 실행됩니다.
 * [매개변수에 의해 트리거되는 규칙](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): 이제 규칙 편집기에서 쿼리 매개변수, UTM 매개변수 또는 브라우저 매개변수를 기반으로 규칙 실행을 지원합니다.
 * [양식별 사용자 정의 함수](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): 이제 Edge Delivery Services Forms가 양식별 사용자 정의 기능 스크립트를 지원하여 재사용 가능한 논리를 관리하는 데 더 큰 유연성을 제공합니다.
@@ -129,11 +129,11 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 **스크리블 서명 구성 요소**
 
-이제 [스크리블 서명 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)를 사용하여 사용자가 계약 양식과 같은 양식에 서명을 추가할 수 있습니다. 이 구성 요소를 사용하면 사용자가 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 작성할 수 있습니다.
+이제 [스크리블 서명 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)를 사용하여 사용자가 계약서 등의 양식에 서명을 추가할 수 있도록 지원할 수 있습니다. 이 구성 요소를 사용하면 사용자가 마우스, 스타일러스 또는 터치스크린을 사용하여 양식 내에서 직접 서명을 작성할 수 있습니다.
 
-**규칙 편집기에서 직접 API 통합**
+**규칙 편집기 내 API 직접 통합**
 
-적응형 Forms은 이제 양식 데이터 모델 없이도 시각적 규칙 편집기에서 [직접 API 통합](/help/forms/api-integration-in-rule-editor.md)을(를) 지원합니다. 작성자는 URL이나 cURL 가져오기를 사용하여 API를 구성하고, 입출력 매개변수를 매핑하고, 인증을 통해 호출을 보호할 수 있습니다.
+이제 적응형 양식이 양식 데이터 모델을 요청하지 않고도 시각적 규칙 편집기에서 [직접 API 통합](/help/forms/api-integration-in-rule-editor.md)을 지원합니다. 작성자는 URL이나 cURL 가져오기를 사용하여 API를 구성하고, 입출력 매개변수를 매핑하고, 인증을 통해 호출을 보호할 수 있습니다.
 
 <!--
 **Forms Optimization opportunities**
@@ -159,7 +159,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### 곧 Java API 지원 중단 예정 {#java-api-deprecation}
 
-사용되지 않는 몇몇 API는 8월 31일에 삭제될 예정이므로 더 이상 참조할 수 없습니다. 9월 초에는 API 사용이 감지되면 작업 센터 알림이 전송되고, 9월 25일 이후에는 Cloud Manager 빌드 시 알림이 표시되어 사용 제거의 중요성을 강화합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
+사용되지 않는 몇몇 API는 8월 31일에 삭제될 예정이므로 더 이상 참조할 수 없습니다. 9월 초에는 API 사용이 감지되면 액션 센터 알림이 전송되고, 9월 25일 이후에는 Cloud Manager 빌드 중에 알림이 나타나 사용 제거의 중요성을 강조합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
 
 <details>
   <summary>확장하여 사용 중단 Java API 보기</summary>

@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 59%
 
 ## 릴리스 22171 {#22171}
 
-다음은 2025년 9월 2일에 공개적으로 릴리스된 유지 보수 릴리스 22171에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 21994.
+2025년 9월 2일에 릴리스된 유지 관리 릴리스 22171의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 21994이었습니다.
 
-2025.9.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스에 대한 2025.9.0 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 새로운 기능  {#new-features-22171}
 
-* ASSETS-53136: OpenAPI를 사용하는 Dynamic Media의 Vanity ID 지원.
+* ASSETS-53136: OpenAPI 기능이 포함된 Dynamic Media에서 Vanity ID 지원.
 
 ### 개선 사항 {#enhancements-22171}
 
@@ -32,15 +32,15 @@ ht-degree: 59%
 
 ### 해결된 문제 {#fixed-issues-22171}
 
-* ASSETS-52510: 유니코드 `U+202F`이(가) 포함된 파일 이름에 대해 중복 파일 이름 검색이 실패합니다.
-* ASSETS-53489: Assets 보기 UI에서 폴더를 삭제해도 포함된 모든 에셋의 승인이 취소되지는 않습니다.
-* ASSETS-54821: Asset Link에 간헐적으로 &quot;서버 오류&quot;가 발생했습니다.
-* ASSETS-55024: AEM Assets &quot;이메일로 다운로드&quot; 템플릿의 손상된 이미지
-* ASSETS-55325: Dynamic Media 정적 URL에서는 에셋 이름 변경 후 파일 확장자가 생략됩니다.
-* ASSETS-55334: 링크 공유 대화 상자가 잠시 깜박이거나 사라지거나 나타나지 않습니다.
-* ASSETS-55382: 비동기 자산 작업이 다시 시작되어 중복 대상 폴더를 만듭니다.
-* ASSETS-55472: 게시 관리 옵션 &quot;이미 게시된 페이지만 포함&quot;이 무시됩니다.
-* SITES-31600: 개인화를 중단하는 동안 Contexthub js 오류가 발생했습니다.
+* ASSETS-52510: 유니코드 `U+202F`를 포함하는 파일 이름에 대한 중복 파일 이름 감지 실패.
+* ASSETS-53489: 자산 보기 UI에서 폴더를 삭제해도 포함된 모든 자산의 승인이 취소되지 않음.
+* ASSETS-54821: 자산 링크에서 간헐적으로 “서버 오류” 발생.
+* ASSETS-55024: AEM Assets “이메일로 다운로드” 템플릿의 이미지 깨짐.
+* ASSETS-55325: 자산 이름 변경 후 Dynamic Media 정적 URL에서 파일 확장자 생략됨.
+* ASSETS-55334: 링크 공유 대화 상자가 잠깐 깜빡이다 사라지거나 나타나지 않음.
+* ASSETS-55382: 비동기 자산 작업을 다시 시작하면 중복된 대상 폴더 생성됨.
+* ASSETS-55472: 게시 관리 옵션 “이미 게시된 페이지만 포함”이 무시됨.
+* SITES-31600: Contexthub js 오류로 인해 개인 설정이 중단됨.
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
