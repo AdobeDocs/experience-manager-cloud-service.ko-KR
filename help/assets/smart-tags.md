@@ -7,7 +7,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -229,7 +229,7 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 ### AI 생성 제목 구성 {#configure-ai-generated-titles}
 
-AEM을 사용하면 [자산 찾아보기] 페이지의 [카드 보기] 또는 [목록 보기]에서 자산 제목의 표시를 구성할 수 있습니다. 사용자가 정의한 에셋 제목, AI를 사용하여 생성된 제목 또는 에셋에 대한 기존 제목이 없는 경우에만 AI 생성 제목을 사용하도록 선택할 수 있습니다.
+AEM을 사용하면 [자산 찾아보기] 페이지의 [카드 보기] 또는 [목록 보기]에서 자산 제목의 표시를 구성할 수 있습니다. 자산에 대한 기존 제목이 없는 경우에만 자신이 정의한 자산 제목을 표시하거나, AI를 사용하여 생성된 제목을 표시하거나, AI로 생성된 제목을 사용하도록 선택할 수 있습니다.
 
 AI 생성 제목을 구성하려면 다음을 수행합니다.
 
@@ -243,7 +243,7 @@ AI 생성 제목을 구성하려면 다음을 수행합니다.
 
    * **DC 제목이 없는 경우에만 AI 생성 제목 표시**: AEM Assets은 에셋에 대한 에셋 제목이 정의되지 않은 경우에만 AI 생성 제목을 표시합니다.
 
-     ![AI 생성 제목 구성](assets/configure-title-ai-generated.png)
+     ![AI로 생성된 제목 구성](assets/configure-title-ai-generated.png)
 
 ### AI가 생성한 메타데이터 사용 {#using-ai-generated-smart-tags}
 
