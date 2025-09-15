@@ -1,19 +1,19 @@
 ---
-title: Experience Hub 정보
+title: Experience Hub 소개
 description: Adobe Experience Hub 페이지에 대해 알아보십시오.
 landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Experience Hub에 대해 알아보십시오.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
+source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
-# Experience Hub 정보 {#aem-experience-hub}
+# Experience Hub 소개 {#aem-experience-hub}
 
 Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub을 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. Experience Hub은 명확한 사용자 중심의 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 하므로 모든 AEM 기능에 걸쳐 간소하고 효과적인 경험을 제공합니다.
 
@@ -82,4 +82,4 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ## AEM 내 AI 어시스턴트
 
-[필수 조건을 완료](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/implementing/cloud-manager/ai-assistant-in-aem.md)를 참조하세요.
+[사전 필수 기준을 완료](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)한 고객의 경우, 조직 사용자는 AEM의 AI 어시스턴트를 이용할 수 있습니다. [AEM 내 AI 어시스턴트](/help/implementing/cloud-manager/ai-assistant-in-aem.md)를 확인합니다.
