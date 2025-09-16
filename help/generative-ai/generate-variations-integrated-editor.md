@@ -1,12 +1,12 @@
 ---
 title: 변형 생성
 description: AEM as a Cloud Service 내 다양한 편집기에서 접근 가능한 변형 생성에 대해 알아보기
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1417'
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
+workflow-type: tm+mt
+source-wordcount: '1418'
 ht-degree: 100%
 
 ---
@@ -334,7 +334,7 @@ Edge Delivery Services의 Sidekick에서 변형 생성에 액세스하려면 몇
 
 * [Experience Cloud의 변형 생성 랜딩 페이지](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [AEM as a Cloud Service의 생성형 기능](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service의 생성형 AI](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## 릴리스 기록 {#release-history}
 
