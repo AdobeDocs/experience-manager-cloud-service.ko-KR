@@ -3,7 +3,7 @@ title: AEM as a Cloud Service의 AI
 description: Adobe Experience Manager as a Cloud Service의 AI에 대해 알아보기
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 81%
@@ -39,6 +39,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
      >[!NOTE]
      >
      >이전 버전은 향후 서비스가 중단될 예정이므로 [AEM 편집기에 통합된 변형 생성](/help/generative-ai/generate-variations-integrated-editor.md)에 액세스하는 것이 좋습니다.
+
    * [변형 생성 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub 개요](/help/assets/product-overview.md)
