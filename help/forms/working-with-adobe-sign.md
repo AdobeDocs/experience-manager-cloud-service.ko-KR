@@ -136,7 +136,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. **[!UICONTROL Adobe Sign]** 필드 ![Adobe Sign](assets/adobesign.png) 아이콘을 선택합니다. [!DNL Adobe Sign] 필드를 선택하고 추가하는 옵션이 표시됩니다.
 
-   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 ![저장](assets/save_icon.svg) 완료 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 받는 사람 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL  지원 필드와 ] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
+   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 ![저장](assets/save_icon.svg) 완료 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 받는 사람 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL &#x200B; 지원 필드와 &#x200B;] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -196,7 +196,7 @@ Adobe Sign 계약에는 한 명 또는 여러 명의 수신자가 있을 수 있
 
 1. 콘텐츠 브라우저에서 **[!UICONTROL 양식 컨테이너]**&#x200B;를 선택하고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘을 선택합니다. 적응형 양식 컨테이너 속성이 있는 속성 브라우저를 엽니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 확장하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 적응형 양식에 [!DNL Adobe Sign]을(를) 사용합니다.
-1. **[!UICONTROL 받는 사람 추가]**를 선택합니다. 적응형 양식에 수신자를 추가합니다. 적응형 양식에 여러 수신자를 추가할 수 있습니다. 모든 수신자는 적응형 양식 제출에 대한 Adobe Sign 동의를 받습니다.
+1. **[!UICONTROL 받는 사람 추가]**&#x200B;를 선택합니다. 적응형 양식에 수신자를 추가합니다. 적응형 양식에 여러 수신자를 추가할 수 있습니다. 모든 수신자는 적응형 양식 제출에 대한 Adobe Sign 동의를 받습니다.
    ![전화 정보](assets/recipient-settings.png)
 
 1. **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘을 클릭하여 받는 사람에 대한 다음 정보를 지정하십시오.
