@@ -20,7 +20,7 @@ ht-degree: 13%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ko) |
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등의 개인 세부 사항을 제공하는 것과 같은 몇 가지 일반적인 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
-> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
+> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
 
 ## 적응형 양식 단편 만들기 {#create-a-fragment}
 

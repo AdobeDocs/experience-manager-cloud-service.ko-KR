@@ -17,7 +17,7 @@ ht-degree: 16%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 
@@ -69,7 +69,7 @@ ht-degree: 16%
 
 세로 탭 레이아웃
 
-[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
+[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 가로 탭 레이아웃]
@@ -81,7 +81,7 @@ ht-degree: 16%
 
 가로 탭 레이아웃
 
-[가로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
+[가로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 아코디언 레이아웃]

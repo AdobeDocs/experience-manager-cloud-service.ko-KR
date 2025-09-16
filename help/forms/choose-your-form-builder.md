@@ -199,6 +199,6 @@ AEM Forms에서는 다양한 유형의 양식 작성자 및 사용 사례를 위
 ## 관련 문서
 
 - [자세한 양식 작성 비교](/help/edge/docs/forms/authoring-a-form.md)
-- [AEM Forms 핵심 구성 요소 개요](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+- [AEM Forms 핵심 구성 요소 개요](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)
 - [Edge Delivery Services for Forms 개요](/help/edge/docs/forms/overview.md)
 - [핵심 구성 요소가 포함된 헤드리스 적응형 Forms](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
