@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2106'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
-| AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
-| AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
+| AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 
 적응형 Forms은 양식을 효과적으로 레이아웃 및 디자인할 수 있는 퍼스트 클래스 구성 요소를 제공합니다. 레이아웃은 양식에 구성 요소가 표시되는 방식을 제어합니다. 적응형 Forms은 패널, 마법사, 아코디언, 상단/수평 탭의 탭, 왼쪽/수직 탭의 탭 등 다양한 레이아웃을 지원합니다.
 
@@ -32,6 +32,7 @@ ht-degree: 15%
 ## 적응형 Forms 레이아웃 유형
 
 핵심 구성 요소를 기반으로 하는 적응형 양식은 다음과 같은 유형의 레이아웃을 지원합니다.
+
 * **패널 레이아웃**
 * **마법사 레이아웃**
 * **세로 레이아웃**
@@ -68,7 +69,7 @@ ht-degree: 15%
 
 세로 탭 레이아웃
 
-[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
+[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 가로 탭 레이아웃]
@@ -80,7 +81,7 @@ ht-degree: 15%
 
 가로 탭 레이아웃
 
-[가로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
+[가로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 아코디언 레이아웃]
@@ -136,9 +137,9 @@ ht-degree: 15%
 
    또는 [새 적응형 양식을 만들](/help/forms/creating-adaptive-form-core-components.md)수도 있습니다.
 
-1. 양식 편집기 내에서 레이아웃을 추가할 수 있는 섹션을 찾습니다.
+1. 양식 빌더에서 레이아웃을 추가할 수 있는 섹션을 찾습니다.
 
-   ![양식 편집기](/help/forms/assets/form-editor.png)
+   ![양식 빌더](/help/forms/assets/form-editor.png)
 1. **추가** 아이콘을 클릭합니다. 아이콘은 새 구성 요소를 추가하는 옵션을 나타내는 더하기 기호(+)입니다.
 
    ![레이아웃 삽입](/help/forms/assets/insert-layout-add-icon.png)
@@ -260,7 +261,7 @@ ht-degree: 15%
 
    ![세 번째 패널 구성 요소](/help/forms/assets/panel-3-component.png)
 
-1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
+1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**를 클릭합니다.
    ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.
@@ -342,7 +343,7 @@ ht-degree: 15%
 
 ## 추가 바이트
 
-구성 요소를 양식 편집기로 드래그 앤 드롭하려면 다음 단계를 수행하십시오.
+구성 요소를 양식 빌더로 드래그 앤 드롭하려면 다음 단계를 수행하십시오.
 
 1. 구성 요소를 추가할 수 있는 섹션을 찾습니다.
 1. 작성 환경의 왼쪽 패널로 이동하여 **구성 요소**&#x200B;를 클릭합니다.

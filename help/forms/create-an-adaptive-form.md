@@ -1,28 +1,28 @@
 ---
 title: 적응형 양식을 만드는 방법은?
-description: 단계별 튜토리얼을 통해 모바일 반응이 좋은 적응형 양식을 만드는 방법에 대해 알아봅니다. 이러한 양식은 여러 디바이스에 매끄럽게 적응하여 원활한 경험을 보장합니다.
-keywords: 적응형 Forms, 반응형 Forms, HTML5 Forms
+description: AEM Forms의 양식 빌더를 사용하여 모바일 반응형 적응형 양식을 만드는 방법에 대해 알아봅니다. 여러 장치에 원활하게 적용되는 양식이 필요한 양식 작성자 및 개발자에게 적합합니다.
+keywords: 양식 빌더, 양식 작성자, 양식 만들기, 양식 작성자, 적응형 양식, 반응형 양식, HTML5 양식, 양식 작성, AEM 양식
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '2679'
-ht-degree: 78%
+source-wordcount: '2703'
+ht-degree: 73%
 
 ---
 
-# 적응형 양식 만들기 {#creating-an-adaptive-form}
+# 양식 빌더 시작 안내서 {#creating-an-adaptive-form}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-적응형 양식을 사용하면 멋지고, 반응이 빠르고, 동적이고, 적응력이 뛰어난 양식을 만들 수 있습니다. AEM Forms는 적응형 양식을 신속하게 만들 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다.
+AEM Forms의 양식 빌더를 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. 전문적인 양식을 작성하는 양식 작성자이든, 반응형 양식을 신속하게 만들어야 하든 상관없이 AEM Forms에서는 사용자에게 친숙한 마법사를 제공합니다. 마법사에는 사전 구성된 템플릿, 스타일, 필드 및 제출 옵션을 쉽게 선택할 수 있는 빠른 탭 탐색 기능이 있습니다.
 
 ![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
@@ -117,7 +117,7 @@ ht-degree: 78%
 
 * **권한**: 사용자를 [!DNL forms-users]에 추가하여 적응형 양식을 만들 수 있는 권한을 제공합니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 만들거나](themes.md) [기존 테마를 가져올](import-export-forms-templates.md#uploading-a-theme)수 있습니다. 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#create-project)을 배포할 수도 있습니다.
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 만들거나](themes.md) [기존 테마를 가져올](import-export-forms-templates.md#uploading-a-theme)수 있습니다. 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
 
@@ -198,7 +198,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -243,7 +243,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 1. 속성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을(를) 선택하십시오.
 
-적응형 양식 편집기나 적응형 양식 템플릿 편집기에서 양식 모델 속성을 수정할 수도 있습니다.
+적응형 양식 빌더 또는 적응형 양식 템플릿 빌더에서 양식 모델 속성을 수정할 수도 있습니다.
 
 1. **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소를 선택합니다.
 1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.

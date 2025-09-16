@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 5%
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [테마 편집기](themes.md)를 사용하여 스타일을 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다. 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 구성 요소에 인라인 스타일을 추가하려면 다음 작업을 수행하십시오.
 
-1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 ![캔버스 드롭다운](assets/Smock_ChevronDown.svg) > **[!UICONTROL 스타일]**&#x200B;을 선택합니다.
+1. 양식 빌더에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 ![캔버스 드롭다운](assets/Smock_ChevronDown.svg) > **[!UICONTROL 스타일]**&#x200B;을 선택합니다.
 1. 페이지에서 구성 요소를 선택하고 편집 단추 ![편집 단추](assets/edit.svg)를 선택합니다. 스타일 속성이 사이드바에서 열립니다.
 
    사이드바의 양식 계층 구조 트리에서 구성 요소를 선택할 수도 있습니다. 양식 계층 구조 트리는 사이드바에서 양식 객체로 사용할 수 있습니다.
@@ -40,12 +40,12 @@ ht-degree: 5%
 
 1. 사이드바에서 탭을 클릭하여 CSS 속성을 지정합니다. 다음과 같은 속성을 지정할 수 있습니다.
 
-   * [!UICONTROL Dimension 및 위치] (표시 설정, 패딩, 높이, 너비, 여백, 위치, z-색인, 부동, 지우기, 오버플로)
-   * [!UICONTROL 텍스트] (글꼴 모음, 두께, 색상, 크기, 줄 높이 및 맞춤)
-   * [!UICONTROL 배경] (이미지 및 그라데이션, 배경색)
-   * [!UICONTROL 테두리] (너비, 스타일, 색상, 반경)
-   * [!UICONTROL 효과] (그림자, 불투명도)
-   * [!UICONTROL 고급] (구성 요소의 사용자 지정 CSS를 쓸 수 있음)
+   * [!UICONTROL 차원 및 위치]&#x200B;(표시 설정, 패딩, 높이, 너비, 여백, 위치, z-색인, 부동, 지우기, 오버플로)
+   * [!UICONTROL 텍스트]&#x200B;(글꼴 모음, 두께, 색상, 크기, 줄 높이 및 맞춤)
+   * [!UICONTROL 배경]&#x200B;(이미지 및 그라데이션, 배경색)
+   * [!UICONTROL 테두리]&#x200B;(너비, 스타일, 색상, 반경)
+   * [!UICONTROL 효과]&#x200B;(그림자, 불투명도)
+   * [!UICONTROL 고급]&#x200B;(구성 요소의 사용자 지정 CSS를 쓸 수 있음)
 
 1. 마찬가지로 [!UICONTROL 위젯], [!UICONTROL 캡션], [!UICONTROL 도움말]과 같은 구성 요소의 다른 부분에 스타일을 적용할 수 있습니다.
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 변경 내용을 확인하거나 **[!UICONTROL 취소]**&#x200B;를 선택하여 변경 내용을 취소합니다.
@@ -82,7 +82,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>레이블</p> </td>
-   <td><p>Dimension 및 위치 &gt; 너비</p> </td>
+   <td><p>치수 및 위치 &gt; 너비</p> </td>
    <td><p>100픽셀</p> </td>
    <td><p>레이블의 너비를 100px로 수정합니다.</p> </td>
   </tr>

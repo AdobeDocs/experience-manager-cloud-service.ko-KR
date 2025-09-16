@@ -1,18 +1,18 @@
 ---
-title: 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드는 방법
-description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐츠를 정의하는 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드십시오.
+title: 핵심 구성 요소를 사용하여 적응형 양식 템플릿을 구축하는 방법
+description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐츠를 정의하는 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 작성하십시오.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 5%
+source-wordcount: '1949'
+ht-degree: 4%
 
 ---
 
-# 핵심 구성 요소 기반 적응형 템플릿 만들기 {#adaptive-form-templates}
+# 핵심 구성 요소를 사용하여 적응형 양식 템플릿 작성 {#adaptive-form-templates}
 
 양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 양식 컨테이너의 `guideRootPanel`에 필드 및 구성 요소를 추가합니다. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
 
@@ -42,7 +42,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 핵심 구성 요소별 폴더에서 편집 가능한 핵심 구성 요소 기반 템플릿을 찾을 수 있습니다.
 
-Experience Manager은 템플릿을 구성할 수 있는 글로벌 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko#editing-templates-template-authors)를 참조하십시오.
+Experience Manager은 템플릿을 구성할 수 있는 글로벌 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)를 참조하십시오.
 
 ## 템플릿 만들기 {#create-template}
 
@@ -51,7 +51,7 @@ Experience Manager은 템플릿을 구성할 수 있는 글로벌 폴더를 제�
 1. 만든 폴더 내에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 템플릿 유형 선택]** 섹션에서 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-1. **[!UICONTROL 템플릿 세부 정보]** 섹션에서 **템플릿 제목**&#x200B;을 제공하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 템플릿 세부 정보]** 섹션에서 **템플릿 제목**&#x200B;을 제공하고 **[!UICONTROL 만들기]**를 선택합니다.
 설명을 입력할 수도 있습니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 콘솔로 돌아가거나 **[!UICONTROL 열기]**&#x200B;를 선택하여 편집기에서 템플릿을 엽니다.
@@ -139,7 +139,7 @@ Header and footer are added in the Initial Content layer.
 
 ![구조 레이어의 레이아웃 컨테이너](/help/forms/assets/layout-template-core-component.png)
 
-자세한 내용은 문서 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=ko)를 참조하십시오.
+자세한 내용은 문서 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)를 참조하십시오.
 
 ## 템플릿 활성화 {#enabling-the-template}
 
@@ -147,16 +147,16 @@ Header and footer are added in the Initial Content layer.
 
 1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]**(으)로 이동하여 템플릿을 만든 폴더를 엽니다.
 생성한 템플릿이 초안으로 표시됩니다.
-1. 템플릿을 선택하고 도구 모음에서 **[!UICONTROL 사용]**&#x200B;을 선택합니다.
+1. 템플릿을 선택하고 도구 모음에서 **[!UICONTROL 사용]**을 선택합니다.
 적응형 양식을 만들 때 템플릿을 선택하라는 메시지가 표시되면 템플릿이 나열된 것을 볼 수 있습니다.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `/conf`의 `https://<server>:<port>/crx/packmgr` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ko#prerequisites)할 수도 있습니다.
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `/conf`의 `https://<server>:<port>/crx/packmgr` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)할 수도 있습니다.
 
 >[!NOTE]
 >
-> * 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 직접 [!UICONTROL 기록 문서] 템플릿을 구성할 수도 있습니다. 자세한 내용은 [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
+> * 적응형 양식 빌더 또는 적응형 양식 템플릿 빌더에서 직접 [!UICONTROL 기록 문서] 템플릿을 구성할 수도 있습니다. 자세한 내용은 [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
 ## 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
 
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 모범 사례 {#best-practices}
 
-* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)하십시오.
+* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)하십시오.
 * 웹 사이트에서 사용할 수 있는 근본적으로 다른 양식 유형과 일치하도록 템플릿 수 제한
 * 템플릿에 사용되는 사용자 지정 구성 요소에 필요한 유연성과 구성 기능을 제공합니다.
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 추가 참조 {#see-also}
 
 {{see-also}}
+
 * [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
 * [적응형 양식 만들기(핵심 구성 요소)](/help/forms/creating-adaptive-form-core-components.md)
 

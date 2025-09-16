@@ -6,10 +6,10 @@ keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 12%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
-| AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ko) |
+| AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
+| AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/adaptive-form-fragments.md) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등의 개인 세부 사항을 제공하는 것과 같은 몇 가지 일반적인 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
+> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
 
 ## 적응형 양식 단편 만들기 {#create-a-fragment}
 
@@ -67,7 +67,7 @@ ht-degree: 12%
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 또한 조각에 대한 양식 모델로 XML 스키마를 선택한 경우 양식 모델 계층을 표시하는 새 탭이 콘텐츠 파인더에 나타납니다. 양식 모델 요소를 조각으로 드래그 앤 드롭할 수 있습니다. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-스키마 또는 양식 데이터 모델(FDM)을 기반으로 하는 적응형 양식 조각이 생성되면 양식 데이터 모델(FDM) 또는 스키마 요소가 적응형 양식 편집기에 있는 콘텐츠 브라우저의 데이터 소스 탭에 나타납니다. 양식 모델 요소를 조각에 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 스키마의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
+스키마 또는 양식 데이터 모델(FDM)을 기반으로 하는 적응형 양식 조각이 생성되면 양식 데이터 모델(FDM) 또는 스키마 요소가 적응형 양식 빌더에 있는 콘텐츠 브라우저의 데이터 소스 탭에 나타납니다. 양식 모델 요소를 조각에 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 스키마의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
 
 
 ## 적응형 양식에 조각 추가 {#insert-a-fragment-in-an-adaptive-form}
