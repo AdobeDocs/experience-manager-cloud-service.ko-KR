@@ -3,14 +3,14 @@ title: Experience Hub 소개
 description: Adobe Experience Hub 페이지에 대해 알아보십시오.
 landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Experience Hub에 대해 알아보십시오.
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 >
 >표시되는 위젯, 도구 및 아티팩트는 사용자 페르소나, 권한 및 AEM 배포 유형(AEM as a Cloud Service 또는 Managed Services 6.5/6.5 LTS)에 따라 다릅니다.
 
-이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 또한 새로운 탐색 요소를 사용하면 Assets, Sites, Forms, Content Fragments, Launches 등과 같이 활성화된 솔루션에 관련된 Adobe Experience Manager 주요 기능에 빠르게 액세스할 수 있습니다.
+이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 새로운 탐색 요소를 사용하면 활성화된 솔루션에 연결된 AEM 기능에 빠르게 액세스할 수 있습니다. Assets, 사이트, Forms, 콘텐츠 조각, 론치 등으로 이동합니다.
 
 ![Experience Hub 환경](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-이러한 기능은 액세스 권한이 있는 기본 프로덕션 환경에서 사용하거나 여러 AEM 인스턴스에 액세스할 수 있는 경우 타깃팅할 특정 환경을 선택할 수 있습니다.
+기본 프로덕션 환경에서 이러한 기능을 사용합니다. 여러 AEM 인스턴스에 액세스할 수 있는 경우 타깃팅할 환경을 선택합니다.
 
 ![프로덕션 및 스테이징 환경](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ![Experience Hub 위젯](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-**작성 환경** 섹션에는 사용자가 액세스할 수 있는 모든 AEM 환경이 표시되며, 솔루션 및 페이지에 대한 특정 단축키를 사용하면 목록의 맨 위에 표시할 특정 환경을 고정할 수 있습니다.
+**작성 환경** 섹션에는 액세스할 수 있는 모든 AEM 환경이 나열되며 솔루션 및 페이지에 대한 바로 가기를 포함합니다. 특정 환경을 고정하여 목록의 맨 위에 유지할 수 있습니다.
 
 아래 이미지에 표시된 **최근 항목** 섹션에는 AEM에서 최근에 방문한 페이지가 나열됩니다. 임차인의 라이선스에 따라 위젯에는 프로그램, 파이프라인 실행, Assets, 페이지 편집기 및 양식 편집기와 같은 항목이 포함될 수 있습니다.
 
