@@ -6,7 +6,7 @@ exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
 source-wordcount: '1106'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
 
 * **웹에 최적화된 게재**: 디지털 자산은 웹에 최적화된 포맷으로 제공되어 디지털 경험의 핵심 웹 바이탈을 향상시킵니다. 여기에는 이미지에 대한 WebP 렌디션 지원, 비디오에 대한 HLS 또는 DASH 프로토콜을 통한 적응형 스트리밍, 문서에 대한 원본 렌디션이 포함됩니다.
 
-* [동적 자산 변환](https://developer.adobe.com/experience-cloud/experience-manager-apis): 당사 시스템은 이미지 수정자로 알려진 URL 매개변수를 사용하여 즉석에서 이미지를 변환할 수 있습니다. 예: 너비, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 스마트 자르기. 변환된 렌디션은 동적으로 생성되며 CDN을 통해 원활하게 게재됩니다.
+* [동적 자산 변환](https://developer.adobe.com/experience-cloud/experience-manager-apis): 당사 시스템은 이미지 수정자로 알려진 URL 매개변수를 사용하여 즉석에서 이미지를 변환할 수 있습니다. 예: 폭, 높이, 회전, 뒤집기, 품질, 자르기, 포맷 및 스마트 자르기. 변환된 렌디션은 동적으로 생성되며 CDN을 통해 원활하게 게재됩니다.
 
 * **자산의 안전한 게재**: OpenAPI 기능 포함 Dynamic Media는 디지털 자산에 대한 액세스를 제어할 수 있는 메커니즘을 제공합니다. 보안 대상 자산의 메타데이터로 사용자 역할 또는 그룹을 지정하고 [승인된 사용자만 이러한 자산에 액세스](/help/assets/restrict-assets-delivery.md)할 수 있는 사전 정의 기간을 설정할 수 있습니다. 보안 자산의 게재 URL은 제한된 기간 동안 승인되지 않은 사용자가 접근할 수 없습니다.
 
@@ -120,7 +120,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
       </a>
    </div>
    <p>
-      <em>AEM Assets 저장소와 상호작용하여 자산을 검색한 다음 애플리케이션 작성 환경에서 사용할 수 있는 사용자 인터페이스입니다.</em>
+      <em>AEM Assets 저장소와 인터랙션하여 자산을 검색한 다음 애플리케이션 작성 환경에서 사용할 수 있는 사용자 인터페이스입니다.</em>
    </p>
 </td>
 </table>
