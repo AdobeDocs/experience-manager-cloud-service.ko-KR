@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -426,6 +426,8 @@ data:
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 정의된 원본 중 하나의 이름입니다. |
 |     | skipCache(선택 사항, 기본값은 false) | 이 규칙과 일치하는 요청에 캐싱을 사용할지 여부를 플래그로 표시합니다. 기본적으로 응답은 응답 캐싱 헤더에 따라 캐시됩니다 (예: Cache-Control 또는 Expires) |
+| **selectAemOrigin** | originName | 미리 정의된 AEM 원본 중 하나의 이름입니다(지원되는 값: `static`). |
+|     | skipCache(선택 사항, 기본값은 false) | 이 규칙과 일치하는 요청에 캐싱을 사용할지 여부를 플래그로 표시합니다. 기본적으로 응답은 응답 캐싱 헤더에 따라 캐시됩니다 (예: Cache-Control 또는 Expires) |
 
 **원본**
 
@@ -441,6 +443,29 @@ data:
 | **forwardAuthorization**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
 | **시간 초과**(선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
 
+### 사용자 정의 도메인을 AEM 정적 계층으로 프록시 지정 {#proxy-custom-domain-static}
+
+원본 선택기를 사용하여 AEM 게시 트래픽을 [프론트엔드 파이프라인](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 사용하여 배포된 AEM 정적 콘텐츠로 라우팅할 수 있습니다. 사용 사례에는 페이지와 동일한 도메인(예: example.com/static) 또는 명시적으로 다른 도메인(예: static.example.com)에서 정적 리소스를 제공하는 것이 포함됩니다.
+
+다음은 이를 수행할 수 있는 원본 선택기 규칙의 예입니다.
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Edge Delivery Services에 프록시 설정 {#proxying-to-edge-delivery}
 
 원본 선택기를 사용하여 AEM 게시를 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
@@ -454,6 +479,8 @@ data:
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
