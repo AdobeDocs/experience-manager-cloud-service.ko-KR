@@ -4,7 +4,7 @@ description: 클라이언트측 데이터 수집을 모니터링할 수 있는 �
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Operational Telemetry 서비스는 데이터 수집을 최소화하도록 설계
 * 방문 중인 사이트의 호스트 이름(예: `experienceleague.adobe.com`)
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형 및 운영 체제(예: `desktop:windows` 또는 `mobile:ios`)
 * 데이터 수집 시간(예: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`)
-* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs?lang=ko`)
+* 방문 중인 페이지의 URL(예: `https://experienceleague.adobe.com/docs`)
 * 레퍼러 URL(사용자가 링크를 따라간 경우, 현재 페이지에 연결된 페이지의 URL)
 * `2Ac6`과(와) 유사한 형식으로 임의로 생성된 페이지 보기의 ID
 * 샘플링 속도의 가중치 또는 역입니다(예: `100`). 즉, 100개 페이지 중 하나만 기록됩니다
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 [Cloud Manager에서 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이)라는 환경 변수를 `AEM_OPTEL_DISABLED` 값으로 설정하여 작동 원격 분석을 사용하지 않도록 설정할 수 있습니다. `true` 나중에 운영 원격 분석을 다시 활성화하려면 해당 환경 변수를 다시 제거하십시오.
 
-1. **컨텐츠 보안 정책을 임시 항목으로 사용할 수 있습니까?
+1. **Nonce로 콘텐츠 보안 정책을 사용할 수 있습니까?**
 
    운영 원격 분석 지원에는 임시 항목으로 CSP(콘텐츠 보안 정책)를 지원하는 실험 기능이 포함되어 있습니다. 이 기능은 [Cloud Manager에서 환경 변수 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)을(를) 값 `AEM_OPTEL_NONCE`(으)로 설정하여 활성화할 수 있습니다. `true` 나중에 이 기능을 다시 사용하지 않도록 설정하려면 해당 환경 변수를 다시 제거하면 됩니다.
 
