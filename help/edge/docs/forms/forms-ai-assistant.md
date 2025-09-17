@@ -7,25 +7,25 @@ index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms용 AI Assistant 시작하기(Forms Experience Builder)
+# AEM Forms용 AI 어시스턴트 시작하기 (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> AEM Forms용 AI 어시스턴트(Forms Experience Builder) 기능은 **얼리 어답터 프로그램**&#x200B;에서 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 빠른 전자 메일을 보내 기능에 대한 액세스를 요청하세요.
+> AEM Forms용 AI 어시스턴트(Forms Experience Builder) 기능은 **얼리 어답터 프로그램**&#x200B;에서 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 간단한 이메일을 보내 해당 기능에 대한 액세스를 요청하시기 바랍니다.
 
 >[!IMPORTANT]
 >
 > **변경될 수 있는 설명서**: 이 설명서는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 AEM Forms용 AI 어시스턴트가 계속 발전함에 따라 기능, 명령 및 예제가 변경될 수 있습니다.
 
-AEM Forms용 AI 어시스턴트는 양식을 만드는 방식을 혁신합니다. 자연어로 필요한 내용을 간단히 설명하면 양식이 실제로 구현됩니다. Forms 관리 UI, 적응형 양식 편집기 및 범용 편집기에서 사용할 수 있으며, 사용자의 의도를 이해하고 사용자가 원하는 것을 정확하게 구축합니다.
+AEM Forms용 AI 어시스턴트는 양식을 만드는 방식을 혁신합니다. 자연어로 필요한 내용을 간단히 설명하면 양식이 실제로 구현됩니다. Forms 관리 UI, 적응형 양식 편집기 및 범용 편집기에서 사용할 수 있으며, 사용자의 의도를 이해하고 사용자가 원하는 것을 정확하게 빌드합니다.
 
 ## 시작하기: 그냥 말하기
 
@@ -194,7 +194,7 @@ AI 어시스턴트를 사용하는 가장 좋은 방법은 자연어를 사용�
 
 ### 지원되는 파일 유형
 
-| 파일 유형 | 가장 적합한 형식 | 사용 예제 |
+| 파일 유형 | 적합한 대상 | 사용 예제 |
 |-----------|----------|-------------|
 | **이미지** (PNG, JPG, GIF) | 양식 레이아웃, UI 모형, 종이 양식 스캔 | “이 레이아웃과 일치하는 양식 만들기” |
 | **PDF 파일** | 변환할 기존 양식, 사양 | “이 PDF 양식을 디지털로 변환” |

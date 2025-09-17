@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -100,15 +100,15 @@ Forms 제출 서비스는 간단한 데이터 캡처 시나리오에 이상적�
 
 #### &#x200B;1. Edge Delivery에서 AEM 인스턴스 URL 업데이트
 
-`constant.js` 아래 `form` 블록의 `submitBaseUrl` 파일에서 AEM Cloud Service 인스턴스 URL을 업데이트합니다. 사용자 환경에 따라 URL을 구성할 수 있습니다.
+`submitBaseUrl`의 `form` 블록 `constant.js` 파일에서 AEM Cloud Service 인스턴스 URL을 업데이트합니다. 사용자 환경에 따라 URL을 구성할 수 있습니다.
 
-**Cloud Service 인스턴스용**
+**클라우드 서비스 인스턴스의 경우**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-**로컬 개발용**
+**로컬 개발의 경우**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. OSGi 레퍼러 필터
 
-특정 Edge Delivery 사이트 도메인을 허용하도록 레퍼러 필터를 구성합니다.
+특정 Edge Delivery 사이트 도메인을 허용하도록 참조자 필터 구성:
 
-1. OSGi 구성 파일 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`을(를) 만들거나 업데이트합니다.
+1. OSGi 구성 파일을 생성하거나 업데이트합니다. `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 특정 사이트 도메인에 다음 구성을 추가합니다.
+2. 특정 사이트 도메인에 다음 구성을 추가:
 
    ```json
    {
@@ -148,13 +148,13 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
    }
    ```
 
-3. Cloud Manager을 통해 구성 배포
+3. Cloud Manager를 통해 구성 배포
 
-자세한 OSGi 레퍼러 필터 구성은 [레퍼러 필터](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) 안내서를 참조하십시오.
+자세한 OSGi 참조자 필터 구성은 [참조자 필터](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) 안내서를 참조하십시오.
 
 #### &#x200B;3. CORS(원본 간 리소스 공유) 문제
 
-특정 Edge Delivery 사이트 도메인의 요청을 허용하도록 AEM에서 CORS 설정을 구성합니다.
+AEM에서 CORS 설정을 구성하여 특정 Edge Delivery 사이트 도메인의 요청 허용:
 
 **개발자 Localhost**
 
@@ -169,7 +169,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**레거시 Franklin 도메인(사용 중인 경우)**
+**이전 Franklin 도메인 (아직 사용 중인 경우)**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->`main--abc--adobe.aem.live` 및 `main--abc1--adobe.aem.live`을(를) 실제 사이트 도메인으로 바꾸십시오. 동일한 저장소에서 호스팅되는 각 사이트에는 별도의 CORS 구성 항목이 필요합니다.
+>`main--abc--adobe.aem.live` 및 `main--abc1--adobe.aem.live`를 귀하의 실제 사이트 도메인으로 바꿉니다. 동일한 저장소에서 호스팅되는 각 사이트에는 별도의 CORS 구성 항목이 필요합니다.
 
-자세한 CORS 구성은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
+CORS 구성에 대한 자세한 내용은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
 
 
-로컬 개발 환경에 CORS를 사용하려면 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) 문서를 참조하십시오.
+로컬 개발 환경에서 CORS를 활성화하려면 [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) 문서를 참조하십시오.
 
 <!--
 #### 4. CDN Redirect Rules

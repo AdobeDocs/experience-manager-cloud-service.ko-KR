@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 84%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단일 진입점 역할을 합니다. Cloud Manager는 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공할 수 있도록 기업 개발 설정 및 특수 목적으로 구축된 CI/CD 파이프라인을 통해 기업 개발 설정을 통해 고객을 지원합니다. Cloud Manager는 클라우드 리소스 및 환경을 생성하는 기능을 포함하여 셀프서비스 방식으로 시작하는 데 필요한 모든 기능을 제공합니다.
+Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단일 진입점 역할을 합니다. Cloud Manager는 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공할 수 있도록 기업 개발 설정 및 특수 목적으로 빌드된 CI/CD 파이프라인을 통해 기업 개발 설정을 통해 고객을 지원합니다. Cloud Manager는 클라우드 리소스 및 환경을 생성하는 기능을 포함하여 셀프서비스 방식으로 시작하는 데 필요한 모든 기능을 제공합니다.
 
 일반적으로 **비즈니스 소유자** 제품 프로필에 할당된 팀원은 프로그램 및 환경과 같은 클라우드 리소스를 추가할 책임이 있습니다. 이 개인은 비즈니스 요구 사항을 이해하며 초기 Cloud Manager 설정을 완료합니다.
 
@@ -42,13 +42,13 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
    이전 단계인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)으로 돌아가서 시스템 관리자에게 **비즈니스 소유자** 역할을 할당하는 방법에 대한 자세한 내용을 참조하십시오.
 
-1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
-1. 빠른 액세스 그룹화에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
-1. 왼쪽 패널에서 **Cloud Manager**&#x200B;을(를) 클릭합니다.
+1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. 바로 가기 그룹에서 **Experience Manager**&#x200B;를 클릭합니다.
+1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
-   콘솔의 ![Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![콘솔의 Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로 로그인하면 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager을 사용합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
+**비즈니스 소유자** 역할이 있는 시스템 관리자로 성공적으로 로그인하여 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager를 사용합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
 
 **비즈니스 소유자** 역할이 있는 시스템 관리자로서 Cloud Manager에 로그인할 때까지 **비즈니스 소유자** 역할을 가진 다른 사용자는 Cloud Manager에서 프로그램을 작성할 수 없습니다. 이 규칙은 올바른 역할이 할당되더라도 true입니다.
 
@@ -56,7 +56,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 **비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 환영 이메일에서 아래 그림과 같이 **시작하기**&#x200B;를 클릭합니다.
+1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
@@ -114,13 +114,13 @@ Cloud Manager에 성공적으로 액세스하면 다음 섹션에 설명된 대�
 
 Cloud Manager에 성공적으로 로그인하면 **비즈니스 소유자** 제품 프로필이 할당되었는지 확인할 수 있습니다.
 
-1. 페이지의 오른쪽 상단 모서리에서 **계정** 아이콘을 클릭합니다.
+1. 페이지의 오른쪽 상단 근처에서 **계정** 아이콘을 클릭합니다.
 
 1. **사용자 역할**&#x200B;을 클릭합니다.
 
    ![사용자 역할](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. **사용자 역할** 대화 상자에서 사용자에게 **비즈니스 소유자** 역할이 있는지 확인합니다.
+1. **사용자 역할** 대화 상자에서 사용자에게 **비즈니스 소유자** 역할이 있는지 확인해야 합니다.
 
    ![사용자 역할 목록](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 

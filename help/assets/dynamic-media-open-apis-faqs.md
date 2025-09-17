@@ -4,9 +4,9 @@ description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 �
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Experience Manager 작성자 환경에 대한 액세스가 필요한 사용자�
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 
-## OpenAPI를 사용하여 에셋 전달을 보호하고 Dynamic Media를 검색하려면 어떻게 합니까? {#secure-asset-delivery}
+## OpenAPI가 포함된 Dynamic Media에 대한 자산 게재 및 검색을 보호하려면 어떻게 해야 합니까? {#secure-asset-delivery}
 
 Experience Manager의 중앙 자산 거버넌스를 통해 DAM 관리자 또는 브랜드 관리자가 자산에 대한 액세스를 관리할 수 있습니다. 작성자 측, 특히 AEM as a Cloud Service 작성자 인스턴스에서 역할을 구성하거나 승인된 자산에 대한 활성화 및 비활성화 시간을 설정하여 액세스를 제한할 수 있습니다.
 
@@ -104,7 +104,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | OpenAPI 기능이 포함된 Dynamic Media | Dynamic Media |
 |---|---|
 | [Assets as a Cloud Service에서만 사용 가능](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 추가 구성 및 프로비저닝 단계와 함께 On-Premise 또는 Adobe Managed Services에서도 사용할 수 있습니다. |
-| [너비, 높이, 회전, 뒤집기, 품질 및 형식 등 지원되는 다양한 이미지 수정자 집합](/help/assets/deliver-assets-apis.md) | 다양한 이미지 수정자 세트 사용 가능 |
+| [다양한 폭, 높이, 회전, 뒤집기, 품질 및 형식과 같이 지원되는 이미지 수정자 세트 사용 가능](/help/assets/deliver-assets-apis.md) | 다양한 이미지 수정자 세트 사용 가능 |
 | [사용자, 역할, 날짜 및 시간에 따라 자산 게재가 제한됨](/help/assets/restrict-assets-delivery.md) | Dynamic Media에 게시된 자산에 모든 사용자가 액세스 가능 |
 | 대부분의 개발자가 OpenAPI 사양에 익숙합니다. AEM Assets 확장성은 [마이크로 프론트엔드 자산 선택기](/help/assets/overview-asset-selector.md)를 사용하면 정말 간단해집니다. | 통합 커스터마이징을 개발하는 동안 장애물이 되는 SOAP 기반 API. |
 | 버전 업데이트 및 메타데이터 수정을 포함하여 DAM에서 승인된 자산에 대한 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통해 OpenAPI 기능이 갖춘 Dynamic Media에 대해 10분이라는 짧은 TTL(Time-to-Live) 값을 구성하면 모든 작성 및 게시 인터페이스에서 10분 이내에 업데이트가 표시됩니다. | 권장 CDN TTL은 10시간입니다. 캐시 무효화 작업을 사용하여 TTL 값을 재정의할 수 있습니다. |
@@ -133,7 +133,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 
 ## 일부 수정자는 제한된 가용성으로 표시됩니다. 어떻게 사용을 시작할 수 있습니까? {#use-limited-availability-modifiers}
 
-계정에서 [제한적으로 사용 가능한 수정자](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)의 프로덕션 목적 사용을 활성화하려면 다음을 수행합니다.
+계정에서 [제한적으로 사용 가능한 수정자](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)의 프로덕션 목적 사용을 활성화하려면 다음 작업을 수행하십시오.
 
 1. [Admin Console을 사용하여 Adobe 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)
 
@@ -144,7 +144,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
    * 활성화할 수정자 목록
 
 
-## 실험 수정자는 어떻게 테스트합니까? {#modifiers-not-generally-available}
+## 실험적 수정자를 어떻게 테스트합니까? {#modifiers-not-generally-available}
 
-실험 API를 통해 일반적으로 사용할 수 없는 수정자를 테스트할 수 있습니다. 예: &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-[실험 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [전체 수정자 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+일반적으로 실험적 API를 통해 사용할 수 없는 수정자는 모두 테스트할 수 있습니다. 예를 들어 &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
+[실험적 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [수정자의 전체 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용은 여기를 클릭하십시오.

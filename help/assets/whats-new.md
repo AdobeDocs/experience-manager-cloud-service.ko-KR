@@ -4,9 +4,9 @@ description: 최근 출시된 Content Hub 기능에 대해 자세히 알아봅�
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공되며, 이를 통해 조직과 비즈니스 파트너는 브랜드 콘텐츠를 더 간편하게 이용할 수 있습니다. 대규모 활성화를 위한 자산을 배포하고 마케팅 민첩성을 개선하기 위한 온브랜드 콘텐츠 변형을 만드는 데 중점을 둡니다.
 
-다음 비디오는 Content Hub의 주요 기능을 보여줍니다.
+다음 비디오는 Content Hub의 주요 기능을 보여 줍니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
@@ -24,7 +24,7 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 ## 릴리스 일자 {#release-date}
 
-Content Hub 기능 릴리스(2025.8.0)의 릴리스 날짜는 2025년 8월 28일(AEM as a Cloud Service 릴리스와 동일)입니다. 다음 기능 릴리스(2025.9.0)는 2025년 9월 25일에 예정되어 있습니다.
+Content Hub 기능 릴리스(2025.8.0)의 릴리스 일자는 2025년 8월 28일입니다(AEM as a Cloud Service 릴리스와 동일). 다음 기능 릴리스(2025.9.0)는 2025년 9월 25일에 예정되어 있습니다.
 
 ## 8월 릴리스 기능 {#august-release-features}
 
@@ -36,7 +36,7 @@ Content Hub 기능 릴리스(2025.8.0)의 릴리스 날짜는 2025년 8월 28일
 
 ## 7월 릴리스 기능 {#july-release-features}
 
-**콘텐츠 허브의 향상된 브랜딩 유연성**
+**Content Hub의 향상된 브랜딩 유연성**
 
 기존의 개인화 기능을 기반으로 Content Hub를 사용하면 관리자가 사용자 정의 로고 이미지를 추가하여 배포를 더욱 세부적으로 조정할 수 있습니다. 배너와 로고 이미지 모두에 TIFF 파일 형식에 대한 지원이 추가되어 디자인의 유연성이 더욱 높아졌습니다.
 
@@ -78,7 +78,7 @@ Content Hub 5월 릴리스에는 다음 기능이 포함됩니다.
 
 * [Content Hub의 Dynamic Media 렌디션](#dynamic-media-renditions)
 
-### 속성 기반 액세스 제어(ABAC) {#attribute-based-access-control}
+### 속성 기반 액세스 제어 (ABAC) {#attribute-based-access-control}
 
 이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다. 자산 권한은 거버넌스를 보장하고 관련 자산만 사용자가 접근할 수 있도록 보장합니다.
 

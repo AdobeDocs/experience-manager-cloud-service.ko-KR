@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -40,14 +40,14 @@ Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 �
 
 <!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-AEM as a Cloud Service에 대한 온보딩 여정은 다음 핵심 요소에 중점을 둡니다.
+AEM as a Cloud Service의 온보딩 여정은 다음과 같은 핵심 요소를 중심으로 진행됩니다.
 
-* **계약** - 온보딩 프로세스의 주요 세부 정보를 이해하려면 Adobe 계약을 검토하십시오.
-* **Experience Hub** - AEM 기능의 중앙 진입점으로 [experience.adobe.com](https://experience.adobe.com/)을(를) 사용합니다. Experience Hub은 사용자 성향과 권한에 맞게 조정되므로 효율적으로 작업할 수 있습니다. 여기에서 다음 위치로 이동합니다.
+* **계약** - Adobe 계약서를 검토해 온보딩 프로세스의 주요 세부 사항을 파악합니다.
+* **Experience Hub** - [experience.adobe.com](https://experience.adobe.com/)을 AEM 기능에 대한 중앙 진입점으로 사용합니다. Experience Hub는 귀하의 페르소나와 권한에 맞춰 조정되므로 효율적으로 작업할 수 있습니다. 여기에서 다음으로 이동합니다.
    * **Admin Console** - 사용자를 관리하고 역할을 할당합니다.
-   * **Cloud Manager** - 프로그램 및 환경을 설정하고, Git에 액세스하고, 파이프라인을 만들어 사용자 지정 코드를 관리하고 배포합니다.
-   * **사이트** - 디지털 환경을 만들고, 관리하고, 전달합니다. (라이선스 기반 권한)
-   * **Assets** - 디지털 에셋을 구성하고, 저장하고, 배포합니다. (라이선스 기반 권한)
+   * **Cloud Manager** - 프로그램과 환경을 설정하고, Git에 액세스하고, 파이프라인을 만들어 사용자 정의 코드를 관리하고 배포합니다.
+   * **Sites** - 디지털 경험을 만들고, 관리하고, 전달합니다. (라이선스 기반 권한)
+   * **Assets** - 디지털 자산을 구성, 저장 및 배포합니다. (라이선스 기반 권한)
    * **Forms** - 적응형 및 반응형 양식을 만들고 관리합니다. (라이선스 기반 권한)
 
 이러한 개념은 이 온보딩 여정에서 자세히 설명됩니다. 이 여정의 목표는 여정이 끝났을 때 다음과 같은 작업을 수행할 수 있도록 하는 것입니다.
@@ -66,10 +66,10 @@ AEM as a Cloud Service에 대한 온보딩 여정은 다음 핵심 요소에 중
 
 | 담당자 | 설명 | 여정에서의 역할 |
 | --- | --- | --- |
-| 시스템 관리자 | 이 여정의 대상은 클라우드 리소스의 초기 프로비저닝과 직무에 따라 적절한 역할에 사용자를 할당합니다. | 역할은 액세스에서 권한에 이르기까지 사용자의 모든 측면을 관리하는 데 도움이 됩니다. |
-| 콘텐츠 작성자 | AEM에서 콘텐츠를 만들고 검토합니다. | 시스템 관리자가 권한을 부여하면 작성자가 콘텐츠를 만들 때 자체 여정을 시작할 수 있습니다. |
-| 개발자 | 다양한 소스의 콘텐츠를 사용하는 AEM 애플리케이션을 개발합니다. | 시스템 관리자가 권한을 부여하면 개발자는 솔루션 개발에서 자체 여정을 시작할 수 있습니다. |
-| 배포 관리자 | 환경을 추가 또는 업데이트하고, 파이프라인을 실행하고, AEM 환경 또는 코드 품질에 코드를 배포합니다. | 시스템 관리자가 권한을 부여하면 배포 관리자는 배포 관리를 위한 자체 여정을 시작할 수 있습니다. |
+| 시스템 관리자 | 이 여정의 대상은 클라우드 리소스의 초기 프로비저닝과 직무에 따라 적절한 역할에 사용자를 할당합니다. | 이 역할은 액세스부터 권한까지 사용자의 모든 측면을 관리하는 데 도움이 됩니다. |
+| 콘텐츠 작성자 | AEM에서 콘텐츠를 만들고 검토합니다. | 시스템 관리자가 권한을 부여하면 작성자가 콘텐츠를 만드는 여정을 시작할 수 있습니다. |
+| 개발자 | 다양한 소스의 콘텐츠를 사용하는 AEM 애플리케이션을 개발합니다 | 시스템 관리자가 권한을 부여하면 개발자는 솔루션 개발 여정을 시작할 수 있습니다. |
+| 배포 관리자 | 환경을 추가 또는 업데이트하고, 파이프라인을 실행하고, AEM 환경 또는 코드 품질에 코드를 배포합니다. | 시스템 관리자가 권한을 부여하면 배포 관리자는 배포 관리 여정을 시작할 수 있습니다. |
 
 이 온보딩 안내서는 시스템 관리자로서 온보딩하는 전체 프로세스를 보여 줍니다. AEM 사용자, 개발자 및 배포 관리자의 역할은 여정의 부가적인 선택 사항으로 간략하게 살펴봅니다.
 
@@ -88,12 +88,12 @@ AEM as a Cloud Service에 대한 온보딩 여정은 다음 핵심 요소에 중
 | 2 | [AEM as a Cloud Service 용어](terminology.md) | AEMaaCS에 처음 로그인하기 전에 시스템 용어와 기본 구조를 이해하는 것이 좋습니다. | 시스템 관리자 |
 | 3 | [Admin Console](admin-console.md) | Admin Console이란 무엇이고, 어떻게 로그인하는지, 그리고 시스템 관리자로서 프로필을 확인하는 방법에 대해 알아봅니다. | 시스템 관리자 |
 | 4 | [Cloud Manager 제품 프로필 할당](assign-profiles-cloud-manager.md) | Cloud Manager 제품 프로필을 검토하고 Cloud Manager 제품 프로필에 팀원을 할당하는 방법을 알아봅니다. | 시스템 관리자 |
-| 5 | [Experience Hub 액세스](/help/experience-hub.md) | AEM 에코시스템에 대한 통합되고 개인화된 진입점 역할을 하는 Experience Hub을 사용하십시오. | AEM 사용자 |
+| 5 | [Experience Hub 액세스](/help/experience-hub.md) | AEM 에코시스템에 대한 통합적이고 개인화된 진입점 역할을 하는 Experience Hub를 활용합니다. | AEM 사용자 |
 | 6 | [Cloud Manager 액세스](cloud-manager.md) | 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법을 알아봅니다. | 시스템 관리자 |
 | 7 | [프로그램 제작](create-program.md) | Cloud Manager를 사용하여 프로그램을 만드는 방법을 배웁니다. | 시스템 관리자 |
 | 8 | [환경 만들기](create-environments.md) | Cloud Manager를 사용하여 환경을 만드는 방법을 배웁니다. | 시스템 관리자 |
-| 9 | [AEM 제품 프로필 할당](assign-profiles-aem.md) | 시스템 관리자가 AEM as a Cloud Service에서 제품 프로필에 팀원을 할당하는 방법을 알아봅니다. | 시스템 관리자 |
-| 10 | [개발자 및 배포 관리자 작업](developers.md) | 선택 사항 - 개발자로서 Cloud Manager Git에 액세스하고 관리하는 방법을 알아봅니다. 배포 관리자로서 Cloud Manager에서 파이프라인을 설정하고 코드를 배포하는 방법을 알아봅니다. | 개발자 및 배포 관리자 |
+| 9 | [AEM 제품 프로필 할당](assign-profiles-aem.md) | 시스템 관리자가 팀원을 AEM as a Cloud Service의 제품 프로필에 할당하는 방법에 대해 알아봅니다. | 시스템 관리자 |
+| 10 | [개발자 및 배포 관리자 작업](developers.md) | 선택 사항 - 개발자로서 Cloud Manager Git에 액세스하고 관리하는 방법을 알아봅니다. 배포 관리자로서 파이프라인을 설정하고 Cloud Manager에서 코드를 배포하는 방법에 대해 알아봅니다. | 개발자 및 배포 관리자 |
 | 11 | [AEM 사용자 작업](aem-users.md) | 선택 사항 - AEM 작성자가 AEM as a Cloud Service 인스턴스에 액세스하고 AEM as a Cloud Service의 콘텐츠 작성에 익숙해지는 방법에 대해 알아봅니다. | AEM 사용자 |
 
 ## 다음 단계 {#what-is-next}

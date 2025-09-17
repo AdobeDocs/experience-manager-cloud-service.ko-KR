@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
 source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
 ht-degree: 100%
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="KPI 정렬"
 >abstract="디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현에 적합한 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=ko" text="KPI 평가"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=ko" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="적합한 팀 선택"
 
 디지털 세계에서는 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현을 위한 세 가지 KPI를 선택하면 팀이 가장 중요한 사항에 집중하는 데 도움이 됩니다.
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 1. **목표에 따라 더욱 구체적인 목표를 파악합니다.** 이 목표는 Experience Manager를 콘텐츠 관리 플랫폼으로 채택하여 달성하고자 하는 구체적인 결과입니다. 온라인 매출 성장이 귀사의 대략적인 목표라면 구체적인 목표는 마케팅 콘텐츠가 포함된 모든 페이지에 대한 변환율 2% 상승 달성이 될 수 있습니다. 운영 비용 절감이 대략적인 목표라면 구체적인 목표는 디지털 콘텐츠 제작 팀의 생산성을 20% 향상시키는 것이 될 수 있습니다.
 
-   이상적으로 각 목표에는 특정 범주 페이지의 현재 변환율과 같은 기준선 수치가 있어야 합니다. 사이트 방문 횟수, 변환율 또는 온라인 매출과 관련된 기준선 수치는 상대적으로 쉽게 찾을 수 있습니다. 생산성 또는 출시 기간과 관련된 목표의 경우, 기준선을 계산하는 데 약간의 작업이 필요할 수 있습니다. 명확한 목표가 있으면 Experience Manager로의 투자로부터 더 많은 가치를 얻는 데 도움이 되므로 노력할 가치가 있습니다.
+   이상적으로 각 목표에는 특정 카테고리 페이지의 현재 변환율과 같은 기준선 수치가 있어야 합니다. 사이트 방문 횟수, 변환율 또는 온라인 매출과 관련된 기준선 수치는 상대적으로 쉽게 찾을 수 있습니다. 생산성 또는 출시 기간과 관련된 목표의 경우, 기준선을 계산하는 데 약간의 작업이 필요할 수 있습니다. 명확한 목표가 있으면 Experience Manager로의 투자로부터 더 많은 가치를 얻는 데 도움이 되므로 노력할 가치가 있습니다.
 
 1. **각 목표에 대하여 성능 지표를 식별합니다.** 예를 들어 DRM 위반과 관련된 법적 비용을 100,000달러 절감하는 것이 목표일 수 있습니다. “만료된 자산의 100%가 만료일 또는 만료일 전에 디지털 속성에서 제거됨”이 적합한 성능 지표가 될 수 있습니다. 각 목표에 대해 여러 지표를 구상해 보십시오. 2~3개의 비즈니스 목표와 3~5개의 구체적인 목표로 시작한다면 15~20개의 성능 지표 목록을 갖고 있을 수 있습니다.
 
