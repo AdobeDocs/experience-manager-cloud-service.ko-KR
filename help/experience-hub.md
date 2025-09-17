@@ -3,10 +3,11 @@ title: Experience Hub 소개
 description: Adobe Experience Hub 페이지에 대해 알아보십시오.
 landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Experience Hub에 대해 알아보십시오.
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
+feature-set: Experience Cloud,Experience Manager Sites
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
+source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 14%
