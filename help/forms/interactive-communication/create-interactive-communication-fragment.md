@@ -4,13 +4,10 @@ description: AEM Forms에서 대화형 통신 조각을 만들어 일관성을 �
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
-> 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 주소에서 `aem-forms-ea@adobe.com`(으)로 전자 메일을 보내십시오.
+> 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
 
 >[!IMPORTANT]
 >
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. Forms Experience Builder가 얼리어답터 프로그램 동안 계속 발전함에 따라 프롬프트, 예 및 우수 사례가 변경될 수 있습니다.
+> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 대화형 통신 조각을 사용하면 여러 통신 문서에서 사용할 수 있는 머리글, 바닥글 또는 표준 면책조항과 같은 재사용 가능한 모듈식 콘텐츠 블록을 만들 수 있습니다. 이러한 조각은 개인화된 데이터 통합 커뮤니케이션을 구축할 때 일관성을 유지하고, 반복적인 작업을 줄이고, 설계 프로세스를 가속화하는 데 도움이 됩니다.
 
@@ -42,7 +39,7 @@ ht-degree: 8%
 
 1. 대화형 통신 조각을 선택하면 제목, 이름, 설명, 데이터 모델(백엔드 데이터의 구조화된 표현) 및 태그와 같은 주요 조각 세부 정보를 정의하는 화면이 나타납니다.
 
-   자세한 내용은 [데이터 모델 구성 가이드](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)를 참조하세요.
+   자세한 내용은 [데이터 모델 구성 가이드](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)를 참조하세요.
 
    ![IC 문서 찾기](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
