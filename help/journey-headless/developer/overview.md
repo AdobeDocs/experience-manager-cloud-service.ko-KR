@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
-workflow-type: ht
-source-wordcount: '1070'
+source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
+workflow-type: tm+mt
+source-wordcount: '1065'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager Headless CMS를 처음 사용하는 개발자용 설명
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless 개발자 리소스 및 고급 설명서"
 >abstract="AEM Headless CMS에 대해 알아보고 더 나은 애플리케이션과 더 빠른 경험을 빌드 및 제공하는 데 필요한 모든 것입니다."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko" text="AEM Headless 개발자 리소스"
+
 
 ## 소개 {#introduction}
 
@@ -41,11 +41,11 @@ AEM의 Headless 구현은 콘텐츠 조각 모델 및 콘텐츠 조각을 사용
 
 ## 대상자 {#audience}
 
-이 여정은 개발자를 위해 설계되어 개발자의 관점에서 AEM Headless 프로젝트에 대한 요구 사항, 단계 및 접근 방식을 제시합니다. 이 여정은 개발자가 프로젝트 성공을 위해 상호 작용해야 하는 추가 담당자를 정의하지만 이 여정은 개발자의 관점에서 전개됩니다.
+이 여정은 개발자 페르소나를 위해 설계되었으며, 개발자의 관점에서 AEM Headless 프로젝트의 요구 사항, 단계 및 접근 방식을 제시합니다. 이 여정은 개발자가 프로젝트 성공을 위해 상호 작용해야 하는 추가 페르소나를 정의하지만, 여정은 개발자의 관점에서 전개됩니다.
 
-다음은 이 여정에서 상호 작용하는 담당자입니다.
+다음은 이 여정에서 상호 작용하는 페르소나입니다.
 
-| 담당자 | 설명 | 이 여정에서의 역할 |
+| 페르소나 | 설명 | 이 여정에서의 역할 |
 |---|---|---|
 | 개발자(타깃 대상자) | 다양한 소스의 콘텐츠를 사용하는 Headless 애플리케이션을 개발한 경험 | 이 여정의 타깃 대상자 |
 | 콘텐츠 작성자 | Headless 방식으로 사이트에 게재되는 콘텐츠 생성 및 관리 | 콘텐츠 작성자는 개발자가 Headless 방식으로 게재하는 콘텐츠를 만듭니다. |
@@ -82,7 +82,7 @@ AEM의 Headless에 대한 기본 지식을 제공하는 다양한 주제는 이 
 원하는 속도로 학습하시겠습니까? 다음 옵션 확인:
 
 * **Headless 개념 및 AEM의 Headless 기술**&#x200B;에 대해 계속 알아보려면 다음 문서인 [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](model-your-content.md)을 검토하여 권장하는 AEM Headless 여정을 계속하는 것이 좋습니다(AEM의 콘텐츠 구조를 모델링하는 방법에 대해 알아보는 경우).
-* **직접 수행하며 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
+* **직접 수행하며 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
 
 ## 추가 리소스 {#additional-resources}
 
@@ -90,10 +90,10 @@ AEM의 Headless에 대한 기본 지식을 제공하는 다양한 주제는 이 
 
 AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 여정을 확인하십시오.
 
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) - 직접 해 보면서 배우는 것을 선호하고 기존 AEM을 알고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 빌드된 애플리케이션을 만들고 사용해 보십시오.
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해 보면서 배우는 것을 선호하고 기존 AEM을 알고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 빌드된 애플리케이션을 만들고 사용해 보십시오.
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
-* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 확인합니다.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 확인합니다.
    * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
