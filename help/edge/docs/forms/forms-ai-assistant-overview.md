@@ -1,14 +1,14 @@
 ---
 title: Forms Experience Builder
-description: 양식 조각을 사용하여 강력한 양식을 더 빠르게 제작
+description: Forms Experience Builder 소개
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,6 @@ Forms Experience Builder는 강력한 디지털 양식을 만드는 데 필요�
 - **플랫 PDF**: 정적 문서를 대화형 양식으로 변환
 - **이미지 및 스크린샷**: JPG, PNG 포맷(크기 제한 사항은 팀에 문의)
 - **손으로 그린 양식**: 스케치와 종이 양식 사진
-
 
 **지능형 변환 프로세스**
 
@@ -206,7 +205,6 @@ Forms Experience Builder는 현재 얼리 액세스(EA) 프로그램의 일부�
 - **프로젝트 세부 정보**: 타임라인, 범위 및 의도된 사용 사례
 - **공식 업무 이메일**: 조직의 Adobe 계정과 연결됨
 
-
 ### IMS 조직 ID 및 프로그램 ID를 얻는 방법
 
 IMS 조직 ID와 프로그램 ID를 찾는 자세한 단계는 다음을 참조하십시오.
@@ -229,7 +227,6 @@ IMS 조직 ID와 프로그램 ID를 찾는 자세한 단계는 다음을 참조�
 > **제한된 가용성 프로그램**: Forms Experience Builder 액세스는 내부 이해 관계자의 승인을 받아야 합니다. Adobe는 프로그램 용량과 얼리 액세스 기준과의 일치성을 기준으로 요청을 검토합니다. 승인 여부는 보장되지 않으며 현재 프로그램 가용성 여부에 따라 달라집니다.
 
 얼리 액세스 프로그램과 그 기능에 대한 자세한 내용은 [AEM Forms 얼리 액세스 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
-
 
 ## 시작하기
 
