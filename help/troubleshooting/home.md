@@ -33,22 +33,22 @@ AEM Assets은 여러 경험에서 디지털 자산을 관리, 구성 및 제공�
     <td><strong>PDF 및 텍스트 추출</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM as a Cloud Service의 대용량 MP4 파일에 대한 자산 처리 실패</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM 표현물이 원본 파일과 일치하지 않음</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM은 10만 개의 토큰 후 큰 PDF에서 추출된 텍스트를 자릅니다</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM as a Cloud Service의 대용량 MP4 파일에 대한 자산 처리 실패</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM 표현물이 원본 파일과 일치하지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM은 10만 개의 토큰 후 큰 PDF에서 추출된 텍스트를 자릅니다</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">ZIP 압축 업로드가 있는 TIFF 파일은 렌디션을 생성하지 않습니다</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">이미지가 AEM as a Cloud Service에서 썸네일 변환을 표시하지 않음</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">AEM as a Cloud Service의 큰 PDF에 대한 텍스트 추출 제한 사항</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23916">ZIP 압축 업로드가 있는 TIFF 파일은 렌디션을 생성하지 않습니다</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26233">이미지가 AEM as a Cloud Service에서 썸네일 변환을 표시하지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25518">AEM as a Cloud Service의 큰 PDF에 대한 텍스트 추출 제한 사항</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">자산 폴더를 AEM Assets 웹 UI로 드래그 앤 드롭하지 못했습니다</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-21865">자산 폴더를 AEM Assets 웹 UI로 드래그 앤 드롭하지 못했습니다</a></td>
     <td></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">자산 회전 문제로 인해 후속 회전이 표시되지 않습니다.</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26528">자산 회전 문제로 인해 후속 회전이 표시되지 않습니다.</a></td>
   </tr>
   <tr>
-  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">Photoshop Firefly API 통합에 대한 단일 파트 자산 업로드 제한 늘리기</a></td>
+  <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26450">Photoshop Firefly API 통합에 대한 단일 파트 자산 업로드 제한 늘리기</a></td>
   <td></td>
   <td></td>
   </tr>
@@ -65,29 +65,29 @@ AEM Assets은 여러 경험에서 디지털 자산을 관리, 구성 및 제공�
     <td><strong>게재 및 설정</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">AEM의 비디오 업로드, 처리 및 렌더링 문제 해결</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">스핀 세트가 처리 상태에서 중단됨</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">자산에 대한 Dynamic Media URL 변경</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26533">AEM의 비디오 업로드, 처리 및 렌더링 문제 해결</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26715">스핀 세트가 처리 상태에서 중단됨</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17628">자산에 대한 Dynamic Media URL 변경</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Dynamic Media와 DAM 카드 보기 간에 비디오 썸네일 불일치</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">AEM as a Cloud Service에서 생성되지 않는 스마트 자르기 렌디션</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">AEM 6.5에서 스마트 자르기와 관련된 손상된 이미지 문제</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26677">Dynamic Media와 DAM 카드 보기 간에 비디오 썸네일 불일치</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26873">AEM as a Cloud Service에서 생성되지 않는 스마트 자르기 렌디션</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26367">AEM 6.5에서 스마트 자르기와 관련된 손상된 이미지 문제</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM Dynamic Media의 에셋 처리 실패</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">TIFF 표현물의 배경색 문제</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">Dynamic Media 일반 설정 페이지가 열리지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM Dynamic Media의 에셋 처리 실패</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26637">TIFF 표현물의 배경색 문제</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25294">Dynamic Media 일반 설정 페이지가 열리지 않음</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">Dynamic Media를 사용하여 비디오 파일의 오디오 문제 해결</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">Dynamic Media의 자산 동기화 실패</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">환경 간 자산 이름 불일치 해결</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26197">Dynamic Media를 사용하여 비디오 파일의 오디오 문제 해결</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25885">Dynamic Media의 자산 동기화 실패</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26461">환경 간 자산 이름 불일치 해결</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">낮은 환경에서 Dynamic Media 비디오 플레이어가 작동하지 않음</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">Dynamic Media 동기화 사용자 권장 사항</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">API를 사용하여 Dynamic Media에서 자산 및 메타데이터 내보내기</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26871">낮은 환경에서 Dynamic Media 비디오 플레이어가 작동하지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25471">Dynamic Media 동기화 사용자 권장 사항</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26902">API를 사용하여 Dynamic Media에서 자산 및 메타데이터 내보내기</a></td>
   </tr>
   </tbody>
 </table>
@@ -102,14 +102,14 @@ AEM Assets은 여러 경험에서 디지털 자산을 관리, 구성 및 제공�
     <td><strong>액세스 및 공유</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">AEM Assets의 이미지 메타데이터 불일치</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">새로 업로드한 자산의 자동 태그 지정</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">읽기 액세스에도 불구하고 Assets 보기에서 댓글 달기가 제한됨</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25828">AEM Assets의 이미지 메타데이터 불일치</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25925">새로 업로드한 자산의 자동 태그 지정</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26928">읽기 액세스에도 불구하고 Assets 보기에서 댓글 달기가 제한됨</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">관리자가 아닌 사용자에 대한 메타데이터 스키마 가시성 문제 해결</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">JWT에서 OAuth로 마이그레이션 후 스마트 태그가 작동하지 않음</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">AEM Managed Services의 공유 링크 문제 해결</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26655">관리자가 아닌 사용자에 대한 메타데이터 스키마 가시성 문제 해결</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25889">JWT에서 OAuth로 마이그레이션 후 스마트 태그가 작동하지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25903">AEM Managed Services의 공유 링크 문제 해결</a></td>
   </tr>
 
 </tbody>
@@ -124,18 +124,18 @@ AEM Assets은 여러 경험에서 디지털 자산을 관리, 구성 및 제공�
       <td><strong>라이선스 및 사용자 지정</strong></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link는 InDesign에서 액세스할 수 없는 링크를 유지합니다.</a></td>
+      <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link는 InDesign에서 액세스할 수 없는 링크를 유지합니다.</a></td>
       <td>
-        <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">콘텐츠 조각이 AEM Assets 라이선스에 포함되지 않음</a><br>
+        <a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26616">콘텐츠 조각이 AEM Assets 라이선스에 포함되지 않음</a><br>
         </td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">InDesign의 AEM Asset Link 연결 문제 해결</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">AEM as a Cloud Service의 자산 처리 문제 해결</a></td>
+      <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25562">InDesign의 AEM Asset Link 연결 문제 해결</a></td>
+      <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25525">AEM as a Cloud Service의 자산 처리 문제 해결</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link 플러그인 네트워크 오류: 서버에 연결할 수 없음</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">AEM as a Cloud Service에서 비디오 자산에 대한 사용자 지정 썸네일 업데이트</a>
+      <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link 플러그인 네트워크 오류: 서버에 연결할 수 없음</a></td>
+      <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25829">AEM as a Cloud Service에서 비디오 자산에 대한 사용자 지정 썸네일 업데이트</a>
       </td>
     </tr>
   </tbody>
@@ -187,17 +187,17 @@ AEM Forms as a Cloud Service은 강력한 양식 생성 및 관리 기능을 제
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md">403 양식 제출에서 금지된 오류</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md">사용자 지정 제출 액션의 502 오류</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML 리디렉션 실패</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML 리디렉션 실패</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#cors-issues">CORS 구성 문제</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md#resolution">처리되지 않은 예외 처리</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27075">AEM Sites에서 제출 버튼이 비활성화됨</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27075">AEM Sites에서 제출 버튼이 비활성화됨</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#referrer-filter-issues">레퍼러 필터 구성</a></td>
     <td><a href="/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md">사용자 지정 작업에 대한 우수 사례</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26532">업그레이드 후 숨겨진 필드 가시성</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26532">업그레이드 후 숨겨진 필드 가시성</a></td>
   </tr>
   </tbody>
 </table>
@@ -212,19 +212,19 @@ AEM Forms as a Cloud Service은 강력한 양식 생성 및 관리 기능을 제
     <td><strong>버전 및 호환성</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26558">업그레이드 후 Designer 6.5가 열리지 않음</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27089">로케이터가 JDK 8/11로 시작하지 못했습니다.</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26862">AEM Forms(AEMFD) 패키지 버전 표시 문제</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26558">업그레이드 후 Designer 6.5가 열리지 않음</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27089">로케이터가 JDK 8/11로 시작하지 못했습니다.</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26862">AEM Forms(AEMFD) 패키지 버전 표시 문제</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000 오류</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-22689">JBoss 로그 경로 구성</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26846">Windows에서 잘못된 버전 번호</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000 오류</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-22689">JBoss 로그 경로 구성</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26846">Windows에서 잘못된 버전 번호</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27406">PDF 출력에 버튼 누락</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18084">Configuration Manager 업그레이드 오류</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17339">색인 손상 해결 방법</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27406">PDF 출력에 버튼 누락</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-18084">Configuration Manager 업그레이드 오류</a></td>
+    <td><a href="https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17339">색인 손상 해결 방법</a></td>
   </tr>
   </tbody>
 </table>
