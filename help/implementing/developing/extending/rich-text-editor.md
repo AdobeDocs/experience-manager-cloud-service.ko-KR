@@ -1,20 +1,21 @@
 ---
-title: as a Cloud Service  [!DNL Adobe Experience Manager] 에서 리치 텍스트 편집기 콘텐츠를 작성합니다.
-description: as a Cloud Service  [!DNL Adobe Experience Manager] 의 콘텐츠를 작성할 리치 텍스트 편집기 구성
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service에서 콘텐츠를 작성하도록 리치 텍스트 편집기를 구성하십시오.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service에서 콘텐츠를 작성하도록 리치 텍스트 편집기를 구성하십시오.'
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
-# 리치 텍스트 편집기 구성 {#configure-the-rich-text-editor}
 
-리치 텍스트 편집기(RTE)는 작성자에게 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위해 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다. 관리자는 작성 구성 요소에서 사용할 수 있는 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성자가 [웹 콘텐츠를 작성하는 데 RTE를 사용](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)하는 방법을 확인하세요.
+# 서식 있는 텍스트 편집기 구성 {#configure-the-rich-text-editor}
+
+리치 텍스트 편집기(RTE)는 작성자에게 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위한 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다. 관리자는 작성 구성 요소에서 사용할 수 있는 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성자가 [웹 콘텐츠를 작성하는 데 RTE를 사용](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)하는 방법을 확인하세요.
 
 이를 구성하는 데 필요한 RTE 개념 및 단계는 아래에 나와 있습니다.
 
@@ -23,6 +24,10 @@ ht-degree: 0%
 | [인터페이스 이해](#understand-rte-ui) | [구성 위치 이해 및 설정](#understand-the-configuration-paths-and-locations) | [플러그인 구성](#enable-rte-functionalities-by-activating-plug-ins) |
 | [편집 모드 유형](#editingmodes) | [플러그인 활성화](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [기능 속성 설정](#aboutplugins) |
 | [플러그 인 정보](#aboutplugins) | [RTE 도구 모음 구성](#dialogfullscreen) | [붙여넣기 모드 구성](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>이 문서에 설명된 RTE는 페이지 편집기에서 사용할 수 있는 RTE에 대해 설명합니다. 최신 유니버설 편집기를 사용하는 경우 자세한 내용은 [유니버설 편집기에 대한 RTE 구성](/help/implementing/universal-editor/configure-rte.md) 문서를 참조하십시오.
 
 ## 작성자가 사용할 수 있는 사용자 인터페이스 이해 {#understand-rte-ui}
 
@@ -137,7 +142,7 @@ RTE의 기본 기능은 해당 플러그인과 관련된 노드의 `features` �
 
 대화 상자 편집 모드에 적용되는 다음 속성을 구성합니다.
 
-* `useFixedInlineToolbar`: RTE 도구 모음을 부동 대신 수정할 수 있습니다. sling:resourceType= `cq/gui/components/authoring/dialog/richtext`인 RTE 노드에 정의된 이 부울 속성을 `True`(으)로 설정합니다. 이 속성을 `True`(으)로 설정하면 `foundation-contentloaded` 이벤트에서 서식 있는 텍스트 편집이 시작됩니다. 이를 방지하려면 속성 `customStart`을(를) `True`(으)로 설정하고 `rte-start` 이벤트를 트리거하여 RTE 편집을 시작합니다. 이 속성이 `true`인 경우 RTE가 클릭을 시작하지 않으며 이것이 기본 동작입니다.
+* `useFixedInlineToolbar`: RTE 도구 모음을 부동 대신 수정할 수 있습니다. sling:resourceType= `cq/gui/components/authoring/dialog/richtext`인 RTE 노드에 정의된 이 부울 속성을 `True`(으)로 설정하십시오. 이 속성을 `True`(으)로 설정하면 `foundation-contentloaded` 이벤트에서 서식 있는 텍스트 편집이 시작됩니다. 이를 방지하려면 속성 `customStart`을(를) `True`(으)로 설정하고 `rte-start` 이벤트를 트리거하여 RTE 편집을 시작합니다. 이 속성이 `true`인 경우 RTE가 클릭을 시작하지 않으며 이것이 기본 동작입니다.
 
 * `customStart`: RTE 노드에 정의된 이 부울 속성을 `True`(으)로 설정하여 이벤트 `rte-start`을(를) 트리거하여 RTE를 시작할 시기를 제어합니다.
 
@@ -154,7 +159,7 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=ko)를 참조하십시오.
+[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >참조용으로 기본 텍스트 구성 요소(표준 설치의 일부로 제공)는 다음에서 찾을 수 있습니다.
 >
@@ -228,13 +233,13 @@ RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 사용할 수 없는 경우 콘텐츠 정책이 항목을 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 콘텐츠 정책에 의해 제공되는 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
+예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
 
 ## 도구 모음 아이콘과 명령 간의 매핑 사용자 정의 {#iconstoolbar}
 
 RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간의 매핑을 사용자 정의할 수 있습니다. 코랄 아이콘 이외의 다른 아이콘은 사용할 수 없습니다.
 
-1. `uiSettings/cui` 아래에 이름이 `icons`인 노드를 만듭니다.
+1. `icons` 아래에 이름이 `uiSettings/cui`인 노드를 만듭니다.
 
 1. 아래에 개별 아이콘에 대한 노드를 만듭니다.
 1. 각 개별 아이콘 노드에서 Coral 아이콘과 해당 아이콘에 매핑할 명령을 지정합니다.

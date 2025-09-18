@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2495'
+ht-degree: 20%
 
 ---
 
@@ -80,6 +80,22 @@ ht-degree: 21%
 ![서식 있는 텍스트 편집 대화 상자](assets/rich-text-canvas.png)
 
 변경 내용을 취소하거나 저장하려면 각각 **취소** 또는 **완료**&#x200B;를 탭하거나 클릭합니다.
+
+#### 리치 텍스트 서식 옵션 {#formatting-options}
+
+범용 편집기의 리치 텍스트 편집기(RTE)를 사용하면 작성자가 표준 텍스트 서식을 적용할 수 있습니다. 기본적으로 다음 옵션을 사용할 수 있습니다.
+
+* (h1, h2, h3 등)
+* 볼드체
+* 이탤릭체
+* 밑줄
+* 위 첨자
+* 아래 첨자
+* 글머리 기호 목록
+* 번호 매기기 목록
+* 링크
+
+작성자의 필요에 따라 옵션을 숨기거나 추가 옵션을 표시하도록 RTE를 구성할 수 있습니다. 자세한 내용은 [유니버설 편집기에 대한 RTE 구성](/help/implementing/universal-editor/configure-rte.md) 문서를 참조하십시오.
 
 ### 미디어 편집 {#edit-media}
 
