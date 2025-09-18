@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
+source-git-commit: 69f17a4abddf025207448caed11f138c275e7b33
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '809'
 ht-degree: 100%
 
 ---
@@ -95,13 +95,14 @@ Forms Experience Builder는 간단한 대화형 접근 방식을 따릅니다.
 
 ## 예시
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">PDF 양식을 디지털 양식으로 변환</p>
-                    <p class="is-size-6">Acroforms, XFA PDF 또는 플랫 PDF 문서를 향상된 기능을 갖춘 반응형의 대화형 디지털 양식으로 변환합니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Transform PDF Forms to Digital Forms</p>
+                    <p class="is-size-6">Convert Acroforms, XFA PDFs, or flat PDF documents into responsive, interactive digital forms with enhanced functionality.</p>
                 </div>
             </div>
         </div>
@@ -110,8 +111,8 @@ Forms Experience Builder는 간단한 대화형 접근 방식을 따릅니다.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">이전 XFA 양식 현대화</p>
-                    <p class="is-size-6">향상된 사용자 워크플로를 통해 복잡한 XFA 애플리케이션을 현대적이고 접근하기 쉬운 디지털 환경으로 변환합니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Modernize Legacy XFA Forms</p>
+                    <p class="is-size-6">Transform complex XFA applications into modern, accessible digital experiences with improved user workflows.</p>
                 </div>
             </div>
         </div>
@@ -120,13 +121,14 @@ Forms Experience Builder는 간단한 대화형 접근 방식을 따릅니다.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">스크린샷을 디지털 양식으로 변환</p>
-                    <p class="is-size-6">이미지, 스크린샷 또는 손으로 그린 양식을 완벽한 기능을 갖춘 디지털 경험으로 전환합니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Convert Screenshots to Digital Forms</p>
+                    <p class="is-size-6">Turn images, screenshots, or hand-drawn forms into fully functional digital experiences.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -151,13 +153,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## 조직의 이점
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">민주화된 양식 생성</p>
-                    <p class="is-size-6">자연어 대화를 통해 프로그래밍 지식이 없는 사용자도 정교한 양식을 만들 수 있도록 지원합니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Democratized Form Creation</p>
+                    <p class="is-size-6">Empower non-technical users to create sophisticated forms without programming knowledge through natural language conversations.</p>
                 </div>
             </div>
         </div>
@@ -166,8 +169,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">가치 창출 시간 단축</p>
-                    <p class="is-size-6">며칠이 걸리던 양식 개발을 단 몇 시간으로 획기적으로 가속화하여 디지털 이니셔티브의 출시 기간을 단축합니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Reduced Time to Value (TTV)</p>
+                    <p class="is-size-6">Dramatically accelerate form development from days to hours, enabling faster go-to-market for digital initiatives.</p>
                 </div>
             </div>
         </div>
@@ -176,8 +179,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">인터페이스 단순성</p>
-                    <p class="is-size-6">직관적인 대화형 인터페이스를 통해 학습 곡선을 없애고, 교육 시간을 단축하며 채택률을 높입니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Interface Simplicity</p>
+                    <p class="is-size-6">Eliminate the learning curve with an intuitive conversational interface, reducing training time and increasing adoption.</p>
                 </div>
             </div>
         </div>
@@ -186,13 +189,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">현대화 노력 확장</p>
-                    <p class="is-size-6">이전 양식 포트폴리오를 효율적으로 현대화하여 비즈니스 로직을 보존하고 전체 양식 에코시스템에서 사용자 경험을 향상시킵니다.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Scaling Modernization Efforts</p>
+                    <p class="is-size-6">Modernize legacy form portfolios efficiently, preserving business logic and enhancing user experience across your entire form ecosystem.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 ## 온보딩
 
