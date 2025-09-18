@@ -54,7 +54,7 @@ AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다
 
 >[!NOTE]
 >
-> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
+> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
 
 ## 업데이트 실패 {#update-failure}
 
