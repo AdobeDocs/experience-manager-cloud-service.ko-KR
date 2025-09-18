@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Sensei] 스마트 서비스로 자산 자동 태그 지정'
-description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스로 자산에 태그를 지정합니다.
+description: 상황에 맞게 설명적인 비즈니스 태그를 적용해 주는 AI 서비스로 자산에 태그를 지정해 줍니다.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -235,7 +235,7 @@ AI 생성 제목을 구성하려면 다음을 수행합니다.
 
 1. **[!UICONTROL 도구 > Assets > Assets 구성 > 스마트 태그 개선 구성으로 이동합니다]**.
 
-1. 다음 옵션 중 하나를 선택합니다.
+1. 다음 옵션 중 하나를 선택하십시오.
 
    * **DC 제목 표시(기본값)**: 자산 속성에서 사용할 수 있는 **[!UICONTROL 제목]** 필드에 제목을 지정하여 카드 보기 또는 목록 보기에서 표시합니다. 에셋 제목이 정의되지 않으면 AEM Assets에 파일 이름이 표시됩니다.
 
