@@ -4,9 +4,9 @@ description: EDS 양식에 대한 사용자 정의 구성 요소 만들기
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ blocks/form/
 
 스타일을 지정하고 각 라디오에 대한 이미지를 추가하려면 구성 요소에 클래스 **card**&#x200B;을(를) 추가해 보겠습니다. 이 경우 아래 코드를 사용하십시오.
 
-**cards.js의 장식 함수를 사용하여 사용자 지정 구성 요소 스타일링**
+**card.js를 사용하여 구성 요소 스타일링**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**cards.css의 사용자 지정 구성 요소에 대한 런타임 동작 추가**
+**cards.css를 사용하여 런타임 동작 추가**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **_component-definition.json 업데이트**: `models/_component-definition.json`에서 다음 방식으로 개체가 있는 `id custom-components` 그룹 내의 배열을 업데이트합니다.
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
+   나머지 구성 요소와 함께 빌드될 새 카드 구성 요소에 대한 참조를 제공합니다
 
 11. **빌드:json 스크립트를 실행**: `npm run build:json`을(를) 실행하여 모든 구성 요소 JSON 정의를 컴파일하고 서버에서 제공할 단일 파일로 병합합니다. 이렇게 하면 새 구성 요소의 스키마가 병합된 출력에 포함됩니다.
 
@@ -587,7 +587,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 ## 참조
 
-- 양식 필드 유형: 모든 필드 유형에 대한 기본 HTML 구조 및 속성입니다. 자세한 양식 필드 구조 및 속성을 보려면 [여기를 클릭하세요](/help/edge/docs/forms/eds-form-field-properties).
+- [양식 필드 형식](/help/edge/docs/forms/eds-form-field-properties.md): 모든 필드 형식에 대한 기본 HTML 구조 및 속성입니다.
 
 - **블록/양식/모델/양식-구성 요소**: OOTB 및 사용자 지정 구성 요소 속성 정의입니다.
 
