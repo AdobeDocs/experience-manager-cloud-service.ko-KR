@@ -3,15 +3,15 @@ title: OpenAPI 기능이 있는 Dynamic Media를 사용하여 가상 URL 만들�
 description: Dynamic Media OpenAPI 기능을 사용하여 긴 에셋 게재 URL을 짧은 브랜드 vanity URL로 변환합니다. 별칭 URL은 복잡한 게재 URL의 짧고, 깨끗하고, 기억하기 쉽고, 읽기 쉬운 버전입니다. vanity URL에 브랜드 이름, 제품 이름 및 관련 키워드를 포함하여 브랜드 가시성과 사용자 참여를 높일 수 있습니다
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 6c730591374b8ee4373a1a584f54386118e518da
+source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
 
-# 단축 URL이란 무엇입니까?{#vanity-urls}
+# 단축 URL을 사용하시겠습니까?{#vanity-urls}
 
 [!DNL Dynamic Media OpenAPI capabilities]을(를) 사용하여 긴 자산 게재 URL을 짧은 브랜드 별칭 URL로 변환합니다. 표준 에셋 배달 URL에는 배달 URL을 복잡하게 만들고 기억하고 공유하기 어려운 시스템 생성 에셋 UUID가 포함됩니다. 이러한 자산 UUID를 단순 식별자(Vanity ID)로 대체하여 vanity URL을 생성합니다. 별칭 URL은 복잡한 게재 URL의 짧고 깨끗하며 읽기 쉬운 버전입니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 표준 게재 URL에는 `aaid` 뒤의 *(*&#x200B;실제 자산 식별자`urn:`)과 `urn:aaid:aem:`에서 `/as/<seoname>.<format>` 사이의 UUID가 포함됩니다.
 
-***예:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
+***예:*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
 
 위의 예에서 `43341ab1-4086-44d2-b7ce-ee546c35613b`은(는) UUID입니다.
 
@@ -47,7 +47,7 @@ vanity URL은 에셋 UUID 대신 vanity 식별자를 포함하며 다음 형식�
 
 별칭 URL에는 `avid` 다음의 *(*&#x200B;실제 별칭 식별자`urn:`)과 `urn:avid:aem:`에서 `/<seoname>.<format>` 사이의 별칭 ID가 포함됩니다.
 
-***예:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
+***예:*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
 
 위의 예에서 `VanityCheck`은(는) UUID를 대체한 vanity ID입니다.
 
@@ -108,7 +108,7 @@ vanity URL을 만들려면 다음 단계를 수행하십시오.
 
 1. [Cloud Manager 환경의 구성 페이지로 이동](/help/implementing/cloud-manager/environment-variables.md)한 후 다음을 수행합니다.
    1. `ASSET_DELIVERY_VANITY_ID` 변수를 추가합니다. 이것이 열쇠입니다.
-   1. 값 필드에서 vanity ID를 보유한 메타데이터 속성에 매핑합니다. 매핑은 메타데이터 매핑 접두사(예: `dc:<your-metadata-property>`dc:*)가 메타데이터 구성 속성에 따라 달라지는* 형식을 따릅니다.
+   1. 값 필드를 사용하여 vanity ID를 보유하는 메타데이터 속성에 매핑합니다. 매핑은 `dc:<your-metadata-property>` 형식을 따릅니다. 여기서 메타데이터 매핑 접두사(예: dc:)는 메타데이터 구성 속성에 따라 달라집니다.
       ![ASSET_DELIVERY_VANITY_ID 변수](/help/assets/assets/environment-config.png)
 1. 변경 사항을 저장하여 환경에서 Pod를 다시 시작합니다.
 
@@ -132,7 +132,7 @@ Cloud Manager 환경의 `ASSET_DELIVERY_VANITY_ID` 변수를 vanity ID가 있는
 
 ## vanity URL을 사용하여 크기 조정{#scale-using-vanity-url}
 
-AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
+AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
 
 다음 vanity URL 및 사용자 지정 가능한 구성 요소를 참조하십시오.
 
@@ -141,27 +141,27 @@ AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름�
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
-  <tr valign="top">
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#customize-dns">이 DNS 사용자 지정</a></div>
-    </td>
-    <td style="padding:0 6px; white-space:nowrap;">/</td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#rewrite-cdn-rules">다시 작성 규칙으로 URL 사용자 지정</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>&lt;vanity-id&gt;</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#create-vanity-urls">가상 ID 만들기</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap; width:1%;">
-      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
-    </td>
-  </tr>
+<tr valign="top">
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#customize-dns">이 DNS 사용자 지정</a></div>
+</td>
+<td style="padding:0 6px; white-space:nowrap; text-align:center;">/</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#rewrite-cdn-rules">다시 작성 규칙으로 URL 사용자 지정</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#create-vanity-urls">가상 ID 만들기</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
+<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+</td>
+</tr>
 </table>
 
 **사용자 지정된 DNS 및 CDN 이름이 있는 별칭 URL 형식:**
@@ -182,7 +182,7 @@ AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름�
 다음 단계를 실행하여 전송할 CDN 규칙을 다시 작성합니다.
 
 1. AEM 저장소로 이동하여 YAML 구성 파일을 생성합니다.
-2. [설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
+2. [설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
 도메인 경로를 만들려면 다음 [모범 사례](#best-practices)를 따르십시오.
    [CDN 재작성 규칙에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
