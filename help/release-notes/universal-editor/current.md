@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # 범용 편집기 2025.09.11 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 9월 11일 릴리스에 대한 릴리스 정보입니다.
+다음은 범용 편집기 2025년 9월 11일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,9 +22,9 @@ ht-degree: 46%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 같은 페이지의 컨테이너 내에 있는 구성 요소에 대해 [복사 및 붙여넣기](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)를 사용할 수 있습니다.
+* [복사 및 붙여넣기](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)를 이제 동일한 페이지의 컨테이너 내 구성 요소에도 사용할 수 있습니다.
 * 이제 6.5 LTS SP1이 지원됩니다.
-* 이제 유니버설 편집기는 Live Copy 콘텐츠 조각을 편집할 때 자동으로 상속을 중단하는 것을 포함하여 콘텐츠 조각에 대해 [다중 사이트 관리 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)을 지원합니다.
+* 이제 Universal Editor에서 Live Copy 콘텐츠 조각이 편집될 때 상속을 자동으로 끊는 기능을 포함하는 콘텐츠 조각용 [다중 사이트 관리 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) 기능을 지원합니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -36,9 +36,9 @@ ht-degree: 46%
 
 ### 페이지 간에 복사 및 붙여넣기 {#copy-paste}
 
-이제 동일한 페이지 내뿐만 아니라 여러 페이지 간에 복사하여 붙여넣을 수 있습니다.
+이제 동일한 페이지 내에서뿐만 아니라 여러 페이지 간에 복사 및 붙여넣기가 가능합니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 범용 편집기가 AEM을 백엔드 시스템으로 사용하여 작동하므로 성능이 약간 개선되었습니다.
-* 이제 콘텐츠 조각이 Open API를 사용하여 게시되므로 성능이 향상되고 콘텐츠 조각 편집기 및 콘솔 게시 방법과 일관됩니다.
+* AEM을 백엔드 시스템으로 사용하는 범용 편집기 실행 시를 위한 여러 작은 성능 개선이 구현되었습니다.
+* 이제 콘텐츠 조각은 Open API를 사용해 게시되며, 콘텐츠 조각 편집기 및 콘솔의 게시 방식에서 성능이 개선되고 더 높은 일관성이 제공됩니다.
