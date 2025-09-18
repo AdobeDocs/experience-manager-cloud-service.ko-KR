@@ -1,10 +1,10 @@
 ---
 title: AEM 버전 업데이트
-description: Adobe Experience Manager(AEM as a Cloud Service)가 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM) as a Cloud Service에서 지속적인 통합 및 제공(CI/CD)을 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # AEM 버전 업데이트 {#aem-version-updates}
 
-Adobe Experience Manager(AEM as a Cloud Service)가 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법에 대해 알아봅니다.
+Adobe Experience Manager(AEM) as a Cloud Service에서 지속적인 통합 및 제공(CI/CD)을 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 
 ## CI/CD {#ci-cd}
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service은 CI/CD(지속적 통합 및 지속적 배포)를 사용
 >[!NOTE]
 > 개발 인스턴스가 이미 자동으로 업데이트되었으므로 프로그램의 _일부_&#x200B;에서 개발 인스턴스에 대한 수동 업데이트를 사용하지 못할 수 있습니다. 이 기능은 자동 업데이트로 전환됩니다.
 
-인스턴스가 자동으로 업데이트되기 전에 3~5일 전에 새 AEM 유지 관리 릴리스가 게시됩니다. 이 기간 동안 개발 인스턴스가 자동으로 업데이트되거나 사용 가능한 경우 선택적으로 [개발 인스턴스에 대한 업데이트를 트리거](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)할 수 있습니다. 버전 업데이트는 먼저 개발 환경에 자동으로 적용됩니다. 업데이트가 성공하면 업데이트 프로세스가 스테이징 및 프로덕션 인스턴스로 진행됩니다. 개발 및 스테이징 인스턴스는 업데이트가 프로덕션 환경에 적용되기 전에 사용자 지정 작성 테스트가 실행되는 자동화된 품질 게이트 역할을 합니다.
+인스턴스가 자동으로 업데이트되기 전에 3~5일 전에 새로운 AEM 유지 관리 릴리스가 게시됩니다. 이 기간 동안 개발 인스턴스가 자동으로 업데이트되거나 사용 가능한 경우 선택적으로 [개발 인스턴스에 대한 업데이트를 트리거](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)할 수 있습니다. 버전 업데이트는 먼저 개발 환경에 자동으로 적용됩니다. 업데이트가 성공하면 업데이트 프로세스가 스테이징 및 프로덕션 인스턴스로 진행됩니다. 개발 및 스테이징 인스턴스는 업데이트가 프로덕션 환경에 적용되기 전에 사용자 지정 작성 테스트가 실행되는 자동화된 품질 게이트 역할을 합니다.
 
 ### NIMU(비간섭 유지 보수 업데이트) {#nimu}
 
@@ -39,7 +39,6 @@ Cloud Manager UI 환경 패널을 사용하여 이전과 마찬가지로 현재 
 >
 > 참고: 비간섭 유지 보수 업데이트는 2024년에 모든 고객에 대해 점진적으로 활성화됩니다.
 
-
 ## 업데이트 유형 {#update-types}
 
 AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다.
@@ -49,17 +48,17 @@ AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다
    * 대부분 유지 관리 목적이며, 최신 버그 수정 및 보안 업데이트가 여기에 포함됩니다.
    * 변경 사항이 정기적으로 적용되므로 최소한의 영향만 미칩니다.
 
-* [AEM 기능 활성화**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM 기능 활성화**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * 예측 가능한 월별 일정에 따라 릴리스됩니다.
 
 >[!NOTE]
 >
-> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
+> [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에서 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
 
 ## 업데이트 실패 {#update-failure}
 
-AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동화된 제품 유효성 검사 파이프라인을 통해 운영상의 모든 시스템에 대한 서비스를 중단하지 않도록 합니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM as a Cloud Service 업데이트 중에 이러한 검사가 실패하면 릴리스는 진행되지 않고 Adobe에서 업데이트에 따라 예기치 않은 동작이 발생하는 이유를 확인합니다.
+AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동화된 제품 유효성 검사 파이프라인을 통해 운영상의 모든 시스템에 대한 서비스를 중단하지 않도록 합니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM as a Cloud Service 업데이트 중에 이러한 검사가 실패하면 릴리스는 진행되지 않고 Adobe에서 업데이트에 따라 이러한 예기치 않은 동작이 발생하는 이유를 확인합니다.
 
 환경에 새 버전의 사용자 지정 코드를 배포할 때 [제품 및 사용자 지정 기능 테스트](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)가 중요한 역할을 합니다. 변경 사항이 적용된 후에도 프로덕션 시스템이 안정적이고 작동합니다. 이러한 테스트는 AEM 버전 업데이트 프로세스에도 적용됩니다.
 
@@ -89,7 +88,7 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 * **자동화된 기능 테스트**
    * 파이프라인에 자동화된 테스트를 포함하여 중요한 기능을 테스트할 수 있습니다.
-   * [고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 및 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)가 실패하는 경우 AEM 릴리스가 롤아웃되지 않습니다.
+   * [고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 및 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)가 차단되고 있습니다. 실패한 경우 AEM 릴리스가 롤아웃되지 않습니다.
 
 ## 회귀 {#regression}
 
@@ -97,9 +96,9 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 ## 복합 노드 저장소 {#composite-node-store}
 
-일반적으로 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 가동 중지 시간 없이 발생합니다. [Oak의 복합 노드 저장소 기능](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)(으)로 인해 연속 업데이트가 가능합니다.
+일반적으로 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 가동 중지 시간 없이 발생합니다. [Oak의 복합 노드 저장소 기능](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)&#x200B;(으)로 인해 연속 업데이트가 가능합니다.
 
-이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. [롤링 배포](/help/implementing/deploying/overview.md#how-rolling-deployments-work)에서 새 AEM 버전에는 고유한 `/libs`(TarMK 기반 변경 불가능한 저장소)이 포함되어 있습니다. 둘 다 `/content` , `/conf` , `/etc` 등과 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능한 리포지토리를 참조하지만, 이전 AEM 버전과 구별됩니다.
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. [연속 배포](/help/implementing/deploying/overview.md#how-rolling-deployments-work)에서 새 AEM 버전에는 고유한 `/libs`(TarMK 기반 변경 불가능한 저장소)이 포함되어 있습니다. 둘 다 `/content` , `/conf` , `/etc` 등과 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능한 리포지토리를 참조하지만, 이는 이전 AEM 버전과 구별됩니다.
 
 이전 버전과 새 버전 모두 자체 버전 `/libs`을(를) 가지고 있으므로 순환 업데이트 중에 모두 활성화할 수 있습니다. 그리고, 둘 다 옛 것이 새 것으로 완전히 대체될 때까지 트래픽을 맡을 수 있습니다.
 
