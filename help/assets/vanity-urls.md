@@ -3,9 +3,9 @@ title: OpenAPI 기능이 있는 Dynamic Media를 사용하여 가상 URL 만들�
 description: Dynamic Media OpenAPI 기능을 사용하여 긴 에셋 게재 URL을 짧은 브랜드 vanity URL로 변환합니다. 별칭 URL은 복잡한 게재 URL의 짧고, 깨끗하고, 기억하기 쉽고, 읽기 쉬운 버전입니다. vanity URL에 브랜드 이름, 제품 이름 및 관련 키워드를 포함하여 브랜드 가시성과 사용자 참여를 높일 수 있습니다
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 별칭 URL 사용{#vanity-urls}
 
-[!DNL Dynamic Media OpenAPI capabilities]을(를) 사용하여 긴 자산 게재 URL을 짧은 브랜드 별칭 URL로 변환합니다. 표준 에셋 배달 URL에는 배달 URL을 복잡하게 만들고 기억하고 공유하기 어려운 시스템 생성 에셋 UUID가 포함됩니다. 이러한 자산 UUID를 단순 식별자(Vanity ID)로 대체하여 vanity URL을 생성합니다. 별칭 URL은 복잡한 게재 URL의 짧고 깨끗하며 읽기 쉬운 버전입니다.
+[!DNL Dynamic Media with OpenAPI capabilities]을(를) 사용하여 긴 자산 게재 URL을 짧은 브랜드 별칭 URL로 변환합니다. 표준 에셋 배달 URL에는 배달 URL을 복잡하게 만들고 기억하고 공유하기 어려운 시스템 생성 에셋 UUID가 포함됩니다. 이러한 자산 UUID를 단순 식별자(Vanity ID)로 대체하여 vanity URL을 생성합니다. 별칭 URL은 복잡한 게재 URL의 짧고 깨끗하며 읽기 쉬운 버전입니다.
 
 차이점을 파악하려면 다음 URL 형식을 참조하십시오.
 * [표준 게재 URL](#standard-urls)
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 표준 게재 URL은 `aaid` 다음에 UUID가 사용되지만 vanity URL은 `avid` 다음에 사용자 지정 식별자(vanity identifier)가 사용됩니다.
 
-짧고 간단한 단축 식별자를 사용하여 게재 URL을 짧고, 깔끔하고, 읽을 수 있고, 기억하기 쉽고, 공유할 수 있도록 합니다. 브랜드 이름, 제품 이름 및 관련 키워드를 단축 ID로 사용하여 브랜드 가시성 및 사용자 참여를 높이십시오.
+짧고 간단한 단축 식별자를 사용하여 단축 URL을 짧고, 깔끔하고, 읽을 수 있으며, 기억하기 쉽고 공유할 수 있습니다. 브랜드 이름, 제품 이름 및 관련 키워드를 단축 ID로 사용하여 브랜드 가시성 및 사용자 참여를 높이십시오.
 
 사용자가 vanity URL을 클릭하면 [!DNL Dynamic Media with OpenAPI]이(가) 수집 시 원본 자산 위치에 자동으로 매핑되고 전달 시 자산을 사용자에게 서버로 보내는 데 올바르게 확인됩니다.
 
@@ -130,11 +130,11 @@ Cloud Manager 환경의 `ASSET_DELIVERY_VANITY_ID` 변수를 vanity ID가 있는
 
 사용자가 vanity URL을 클릭하면 [!DNL Dynamic Media with OpenAPI]이(가) 수집 시 vanity ID를 원래 자산 UUID에 자동으로 매핑하고 배달 시 올바르게 확인하여 지연 없이 사용자에게 자산을 제공합니다. 자산 전달 성능에 영향을 주지 않고 실시간으로 vanity URL을 사용자 지정할 수 있습니다.
 
-[AEM Cloud Service의 고급 사용자 지정 기능을 사용하여 vanity URL의 영향을 개선합니다.](#scale-using-vanity-url)
+[vanity URL과 함께 AEM Cloud Service의 고급 사용자 지정 기능을 사용하여 효과를 높일 수 있습니다](#scale-using-vanity-url).
 
 ## vanity URL을 사용하여 크기 조정{#scale-using-vanity-url}
 
-AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
+AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
 
 다음 vanity URL 및 사용자 지정 가능한 구성 요소를 참조하십시오.
 
@@ -184,7 +184,7 @@ AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름�
 다음 단계를 실행하여 전송할 CDN 규칙을 다시 작성합니다.
 
 1. AEM 저장소로 이동하여 YAML 구성 파일을 생성합니다.
-2. [설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
+2. [설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
 도메인 경로를 만들려면 다음 [모범 사례](#best-practices)를 따르십시오.
    [CDN 재작성 규칙에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
@@ -233,9 +233,9 @@ type: transform
 
 ## 깔끔한 vanity URL을 만들기 위한 모범 사례를 따르십시오{#best-practices}
 
-vanity ID, 사용자 지정 DNS 및 도메인 이름을 만들려면 다음 모범 사례를 따르십시오.
+[vanity ID](#create-vanity-urls), [사용자 지정 DNS](#customize-dns) 및 [CDN 이름](#rewrite-cdn-rules)을 만드는 모범 사례를 따르십시오.
 
 1. vanity ID에는 공백, 슬래시, 하이픈 등과 같은 특수 문자를 사용하지 마십시오. 사전 정의된 매핑을 사용하여 단축 ID의 특수 문자가 바뀝니다.
-1. vanity ID, 사용자 정의 DNS 및 도메인 이름에서 브랜드 이름, 제품 이름 및 관련 키워드를 사용하여 브랜드 가시성 및 사용자 참여를 높이십시오.
+1. 브랜드 가시성과 사용자 참여를 높이려면 [vanity ID](#create-vanity-urls), [사용자 지정 DNS](#customize-dns) 및 [CDN 이름](#rewrite-cdn-rules)에서 브랜드 이름, 제품 이름 및 관련 키워드를 사용하십시오.
 1. 의미를 전달하는 짧고 설명적인 단어나 문자열을 사용합니다.
 1. 클릭에 사용자를 초대하는 텍스트를 사용합니다.
