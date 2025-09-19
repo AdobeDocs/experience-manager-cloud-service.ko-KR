@@ -6,8 +6,8 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
-workflow-type: ht
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
 
@@ -345,4 +345,4 @@ AI 어시스턴트 개선에 도움 주기:
 
 ## 관련 리소스
 
-[AEM Forms AI 어시스턴트 - 프롬프트 라이브러리](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms AI 어시스턴트 - 프롬프트 라이브러리](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
