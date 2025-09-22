@@ -3,7 +3,7 @@ title: 속성 기반 액세스 제어
 description: 속성 기반 액세스 제어를 활성화하여 메타데이터 기반 규칙을 정의하여 Content Hub에서 사용할 수 있는 에셋에 대한 액세스 수준을 정의하는 방법에 대해 알아봅니다
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Content Hub 관리자는 속성 기반 액세스 제어(ABAC)를 사용하여 �
 
 스프레드시트에서 규칙을 다운로드하고 정의하려면 **스프레드시트 다운로드**&#x200B;를 클릭하십시오. Adobe 지원 티켓을 만들고 스프레드시트에 정의된 규칙을 Adobe에 제공합니다.
 
-[!BADGE 스프레드시트 다운로드]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE 스프레드시트 다운로드]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 이 문서에 정의된 지침을 사용하여 스프레드시트에서 규칙을 정의합니다.
