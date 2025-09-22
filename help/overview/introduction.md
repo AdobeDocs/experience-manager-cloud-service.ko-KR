@@ -4,7 +4,7 @@ description: Experience Manager as a Cloud Service의 작동 방식과 소프트
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Adobe Experience Manager as a Cloud Service 소개 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/kr/marketing/experience-manager.html)(AEM)는 이제 클라우드 서비스로 제공됩니다.
+[Adobe Experience Manager](https://www.adobe.com/kr/marketing/experience-manager.html)&#x200B;(AEM)는 이제 클라우드 서비스로 제공됩니다.
 
 Adobe Experience Manager(AEM) as a Cloud Service는 AEM 제품 라인의 최신 제품이며, 이를 통해 고객에게 개인화된 콘텐츠 주도 경험을 계속 제공할 수 있습니다. 클라우드 기반의 민첩성을 제공하여 가치 창출 시간을 단축하고, 고유한 비즈니스 요구 사항을 충족하도록 확장될 수 있습니다. 모든 사용 사례 및 기능을 보존하고 확장하여 이전의 투자와 혁신을 구축할 수 있습니다.
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service를 통해 AEM 애플리케이션을 클라우드 기반 �
 
 * 개발자가 애플리케이션 개발 작업에 자동화를 추가할 수 있습니다.
 
-* 내장된 콘텐츠 전송 네트워크(CDN) 및 기타 네트워크 레이어 모범 사례를 사용하여 콘텐츠를 전역에 빠르고 효율적으로 게재할 수 있습니다.
+* 기본 제공 콘텐츠 전송 네트워크(CDN) 및 기타 네트워크 레이어 모범 사례를 사용하여 콘텐츠를 전역에 빠르고 효율적으로 게재할 수 있습니다.
 
 * 자동 크기 조정 기능을 갖춘 동적 아키텍처를 활용하여 불필요한 인프라 고려 사항을 제거할 수 있습니다.
 
@@ -46,6 +46,7 @@ AEM as a Cloud Service를 사용하면 다음과 같은 이점이 있습니다.
 * 마케팅 전문가는 더 빠른 가치 창출 시간을 달성할 수 있습니다.
 
 >[!NOTE]
+>
 >AEM as a Cloud Service에 도입된 새로운 용어 중 일부는 [용어](terminology.md)를 참조하십시오.
 
 ## 클라우드 서비스로 추가된 가치 {#value-added-as-a-cloud-service}
@@ -76,7 +77,7 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 * [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
