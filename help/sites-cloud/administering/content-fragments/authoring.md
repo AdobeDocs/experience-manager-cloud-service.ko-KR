@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2823'
 ht-degree: 70%
 
 ---
@@ -176,11 +176,10 @@ ht-degree: 70%
 
 콘텐츠 조각의 변형을 삭제하려면
 
-    >[!NOTE]
-    >
-    >**Main**.
+>[!NOTE]
+>
+>**기본**&#x200B;을 삭제할 수 없습니다.
 
-을(를) 삭제할 수 없습니다.
 1. 변형을 선택합니다.
 
 1. **변형** 패널에서 삭제 아이콘(휴지통)을 선택합니다.
@@ -268,7 +267,7 @@ ht-degree: 70%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
