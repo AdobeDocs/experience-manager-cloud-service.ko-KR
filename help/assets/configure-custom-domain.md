@@ -1,26 +1,26 @@
 ---
-title: 게시 계층에 대한 사용자 정의 도메인 구성
-description: Adobe Cloud Manager에서 게시 계층에 대한 사용자 정의 도메인을 구성하는 방법을 알아봅니다.
+title: 게재 계층에 대한 사용자 지정 도메인 구성
+description: Adobe Cloud Manager에서 게재 계층에 대한 사용자 정의 도메인을 구성하는 방법을 알아봅니다.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-# 게시 계층에 대한 사용자 정의 도메인 구성{#configure-custom-domain}
+# 게재 계층에 대한 사용자 지정 도메인 구성{#configure-custom-domain}
 
 Adobe Cloud Manager에서 사용자 정의 도메인을 추가하여 웹 사이트를 돋보이게 할 수 있습니다. AEM as a Cloud Service에는 기본 도메인이 제공되지만 필요에 따라 사용자 정의할 수 있습니다.
 
 ## 시작하기에 앞서
 
 * 다중 SAN(주체 대체 이름) TLS 또는 SSL 인증서가 있어야 합니다.
-* SSL 인증서에는 동일한 도메인 내의 게시 계층에 대해 매핑된 인증서와 구별되는 SAN이 있어야 합니다.
+* SSL 인증서에는 동일한 도메인 내의 게재 계층에 대해 매핑된 인증서와 구별되는 SAN이 있어야 합니다.
 * 인증서 정책은 DV(도메인 유효성 검사) 정책이 아닌 EV(확장 유효성 검사) 또는 OV(조직 유효성 검사) 정책을 준수해야 합니다.
 
 
-## 게시 계층에 대한 사용자 정의 도메인 구성
+## 게재 계층에 대한 사용자 지정 도메인 구성
 
 1. **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL 프로그램 개요]** > **[!UICONTROL SSL 인증서]**(으)로 이동한 다음 SSL 인증서를 추가합니다.
    ![이미지](/help/assets/assets/ssl-certificate.png)
