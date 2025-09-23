@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud 홈 페이지](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. **빠른 액세스** 그룹화에서 [**Experience Manager**](https://experience.adobe.com)을(를) 클릭합니다.
-1. 처음 액세스할 때는 **수행할 작업 설명** 페이지에서 원하는 옵션을 클릭하여 Adobe에서 사용자 환경을 조정할 수 있도록 합니다.
+1. 처음 액세스할 때 시스템에서는 **콘텐츠 작성자** 사전 설정(페이지의 오른쪽 상단 모서리 근처에 표시됨)을 할당합니다. 표시되는 위젯, 탐색 항목 및 콘텐츠를 제어합니다.
 
-   언제든지 이 환경 설정을 변경할 수 있습니다.
+   언제든지 이 사전 설정을 변경할 수 있습니다.
 
-   ![수행할 작업을 알려 주세요](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+   ![콘텐츠 작성자 사전 설정을 표시하는 드롭다운 목록이 선택되었습니다](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 향상된 탐색 및 대화형 위젯으로 Adobe Experience Manager 페이지가 새로 고쳐졌습니다. 이전 솔루션 카드 컬렉션에서는 다음과 같은 도구에 대한 액세스를 제공했습니다.
 
