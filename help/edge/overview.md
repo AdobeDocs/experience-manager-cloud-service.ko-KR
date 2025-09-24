@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 94%
 >**지금 바로 실습해 보시겠습니까?**
 >
 >Edge Delivery Services을 바로 사용해 보려면 두 가지 옵션이 있습니다.
->* [미리 만들어진 자습서 환경을 사용하여 바로 작성을 시작하십시오. 완전히 구성되었으며 바로 사용할 수 있습니다.](https://www.aem.live/developer/ue-trial)
->* [aem.live에서 자습서를 확인하여 30분 이내에 세부 정보를 확인하고 환경을 설정하세요.](https://www.aem.live/developer/ue-tutorial)
+>* [사전 설치된 튜토리얼 환경을 완전히 구성하고 바로 사용할 수 있도록 바로 작성을 시작하십시오.](https://www.aem.live/developer/ue-trial)
+>* 자세한 내용을 자세히 알아보고 30분 이내에 [aem.live에서 튜토리얼을 확인](https://www.aem.live/developer/ue-tutorial)하여 자신만의 환경을 설정하십시오.
 
 ## Edge Delivery Services란 무엇입니까? {#what-is-edge}
 
-Edge Delivery Services란 웹 사이트의 빌드 및 게재 방식을 혁신하여 속도, 단순성, 확장성을 최적화하는 현대적 콘텐츠 게재 프레임워크입니다. 이는 Adobe Experience Manager의 핵심적인 부분으로, 네트워크 에지에서 더 사용자에게 가까운 곳에서 렌더링과 게재를 수행하여 더 빠른 디지털 경험을 제공해 줍니다.
+Edge Delivery Services란 웹 사이트의 빌드 및 게재 방식을 혁신하여 속도, 단순성, 확장성을 최적화하는 현대적 콘텐츠 게재 프레임워크입니다. 이는 Adobe Experience Manager의 핵심적인 부분으로, 네트워크 에지에서 더 사용자에게 가까운 곳에서 렌더링과 게재를 수행하여 더 빠른 디지털 경험을 제공합니다.
 
 이는 콘텐츠 전송 네트워크(CDN)를 대체하지 않지만 자체 CDN 또는 [Adobe에서 관리하는 CDN](/help/implementing/dispatcher/cdn.md)과 완벽하게 통합됩니다.
 
@@ -32,11 +32,11 @@ Edge Delivery Services란 웹 사이트의 빌드 및 게재 방식을 혁신하
 
 ### 검색 가능성 및 트래픽 증가 {#increase-traffic}
 
-Edge Delivery 웹 사이트는 LLM을 위해 검색 엔진 최적화(SEO) 및 생성 엔진 최적화(GEO)되어 있습니다. 이를 통해 모든 기존 및 향후의 유기적 트래픽 소스에서 높은 가시성과 검색 가능성이 보장됩니다. **성능을 최우선으로 하는 엔드투엔드 아키텍처**&#x200B;는 고객 참여도에 긍정적인 영향을 미치는 즐거운 고객 경험을 보장해 줍니다.
+Edge Delivery 웹 사이트는 LLM을 위해 검색 엔진 최적화(SEO) 및 생성 엔진 최적화(GEO)되어 있습니다. 이를 통해 모든 기존 및 향후의 유기적 트래픽 소스에서 높은 가시성과 검색 가능성이 보장됩니다. **성능을 최우선으로 하는 엔드투엔드 아키텍처**&#x200B;는 고객 참여도에 긍정적인 영향을 미치는 즐거운 고객 경험을 보장합니다.
 
 ### 개발자 효율성 {#developer-efficientcy}
 
-몇 달, 몇 년이 아닌, 며칠, 몇 주 만에 출시할 수 있습니다! Edge Delivery는 **현대 웹 개발자**&#x200B;가 선호하는 모든 도구를 제공해 줍니다. GitHub, 자동 다시 로드를 통한 로컬 개발, 성능, 단순성을 모두 갖추었으며, 변환, 번들러, 구성, 오버헤드 등 복잡한 작업이 전혀 없습니다.
+몇 달, 몇 년이 아닌, 며칠, 몇 주 만에 출시할 수 있습니다! Edge Delivery는 **현대 웹 개발자**&#x200B;가 선호하는 모든 도구를 제공합니다. GitHub, 자동 다시 로드를 통한 로컬 개발, 성능, 단순성을 모두 갖추었으며, 변환, 번들러, 구성, 오버헤드 등 복잡한 작업이 전혀 없습니다.
 
 Edge Delivery는 단순성이 높아 복잡한 프레임워크, 툴링 또는 프로세스를 사용할 필요가 없으며 AI 코드 생성에 이상적입니다. 일반 HTML, 최신 CSS, 순수 JavaScript를 사용해 그 어느 때보다 빠르게 뛰어난 경험을 만들어 보십시오. 업무에 집중하고 새로운 도구를 배우고 훈련하는 데 소요되는 시간을 줄이십시오.
 
@@ -48,11 +48,11 @@ Edge Delivery를 사용하면 모든 개발자가 Lighthouse 점수 100점을 �
 
 ### 구성 가능한 아키텍처 {#composable-architeture}
 
-Headless와 Headful 모두에서 적절한 형식으로 적절한 콘텐츠를 제공하고 적절한 장식을 추가하여 모든 채널에서 돋보이는 경험을 제공해 보십시오.
+Headless와 Headful 모두에서 적절한 형식으로 적절한 콘텐츠를 제공하고 적절한 장식을 추가하여 모든 채널에서 돋보이는 경험을 제공할 수 있습니다.
 
 ## 작동 방법 {#how-does-it-work}
 
-Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. AEM Publisher / Dispatcher 및 AEM Core Components를 통한 기존 경험 빌드 방식을 멀티 클라우드 SaaS 솔루션과 순수 프런트엔드 개발 방식으로 대체해 줍니다.
+Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. AEM Publisher / Dispatcher 및 AEM Core Components를 통한 기존 경험 빌드 방식을 멀티 클라우드 SaaS 솔루션과 순수 프런트엔드 개발 방식으로 대체합니다.
 
 ![Edge Delivery 아키텍처](assets/aem-with-eds-architecture.png)
 
