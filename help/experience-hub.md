@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
+source-git-commit: f5f80ffb8524351fa4cdda039671df339fa0742d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 15%
 
 ---
@@ -59,7 +59,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
 ![프로덕션 및 스테이징 환경](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이지는 확장되어 각 사용자 역할에 맞는 추가 위젯과 작업을 제공합니다. 사용자 정의가 가능한 이 페이지에서는 화면에 가장 적합한 레이아웃을 선택할 수 있습니다. 위젯은 선택한 위젯만 기본 페이지에 표시되도록 필터링할 수 있으므로 개인화된 환경을 유지할 수 있습니다.
+Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이지는 확장되어 각 사용자 역할에 맞는 추가 위젯 및 작업(사전 설정)이 포함됩니다. 사용자 정의가 가능한 이 페이지에서는 화면에 가장 적합한 레이아웃을 선택할 수 있습니다. 위젯은 선택한 위젯만 기본 페이지에 표시되도록 필터링할 수 있으므로 개인화된 환경을 유지할 수 있습니다.
 
 ![Experience Hub 사용자 지정](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 

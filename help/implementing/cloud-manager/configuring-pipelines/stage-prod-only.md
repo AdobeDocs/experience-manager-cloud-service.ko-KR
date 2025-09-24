@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -67,7 +68,7 @@ ht-degree: 49%
 
 ### 스테이지 전용 파이프라인 만들기 {#stage-only}
 
-1. **비프로덕션 파이프라인 추가** 대화 상자의 **구성** 탭에서 파이프라인의 **파이프라인 배포** 필드를 선택합니다.
+1. **비프로덕션 파이프라인 추가** 대화 상자의 **구성** 탭에서 파이프라인의 **배포 파이프라인** 필드를 선택합니다.
 1. 비프로덕션 파이프라인 이름 필드에 자유 텍스트 이름을 입력합니다.
 1. 원하는 배포 옵션을 선택한 다음 **계속**&#x200B;을 클릭합니다.
 
@@ -81,7 +82,7 @@ ht-degree: 49%
 
    ![비프로덕션 파이프라인 추가 대화 상자의 Source 코드 탭](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. **경험 감사** 탭에서 지정된 사이트 URL은 Cloud Manager에서 페이지 품질을 감사하는 게시 URL입니다.
+1. **경험 감사** 탭에서 지정된 사이트 URL은 Cloud Manager에서 페이지 품질을 감사하는 게시된 URL입니다.
 
 1. **페이지 경로** 필드에서 감사할 페이지를 지정한 다음 **![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 페이지 추가**&#x200B;를 클릭합니다.
 
@@ -100,7 +101,7 @@ ht-degree: 49%
 
    이 옵션은 프로덕션 단계 바로 앞에 수동 승인 게이트를 삽입합니다. 파이프라인은 승인자(예: 배포 관리자 또는 비즈니스 소유자)가 프로덕션 배포를 승인하거나 취소할 때까지 중지되고 기다립니다.
 
-   변경 제어 또는 마지막 확인 시 사용합니다.
+   변경 제어 또는 마지막 확인 시 를 사용합니다.
 
 1. 이러한 옵션을 사용하여 프로덕션 전용 파이프라인을 만들려면 **저장**&#x200B;을 클릭합니다.
 
@@ -129,7 +130,7 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 ![스테이징 전용 파이프라인 실행](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-**빌드 승격**&#x200B;을 클릭하면 단계 전용 파이프라인이 있는 경우 확인 대화 상자가 열려 시작됩니다. **실행**&#x200B;을 클릭합니다.
+**빌드 홍보**&#x200B;를 클릭하면 관련 프로덕션 전용 파이프라인의 실행을 확인하는 대화 상자가 열립니다. 시작하려면 **실행**&#x200B;을 클릭하세요.
 
 ![빌드 승격 - 파이프라인 실행 대화 상자](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 
 ![아티팩트 세부 정보](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
