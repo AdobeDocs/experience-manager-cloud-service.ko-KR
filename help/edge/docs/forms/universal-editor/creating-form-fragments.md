@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
    ![조각 만들기](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    **적응형 양식 조각 만들기** 마법사가 나타납니다.
-1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **템플릿 선택**&#x200B;탭에서 Edge Delivery Services 기반 템플릿을 선택하고 **[!UICONTROL 다음]**을 클릭합니다.
    ![Edge Delivery Services 템플릿 선택](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.
@@ -180,7 +180,7 @@ Edge Delivery Services의 양식 조각은 모듈식 양식 개발을 위한 강
 
    >[!NOTE]
    >
-   > **조각 편집** 단추를 사용하면 편집할 양식 조각으로 직접 이동할 수 있습니다.
+   > **조각 편집** 버튼을 사용하면 편집할 양식 조각으로 직접 이동할 수 있습니다.
 
    **미리보기 모드**&#x200B;에서 양식을 미리 보고 양식이 어떻게 나타나는지 확인할 수 있습니다.
 
@@ -292,10 +292,10 @@ Edge Delivery Services에서 양식 조각을 활용하여 개발 효율성을 �
 
 **다음 단계:**
 
-- 조직에 대해 일반적으로 사용되는 조각의 라이브러리를 만듭니다.
-- 조각 사용에 대한 이름 지정 규칙 및 거버넌스 정책을 설정합니다.
+- 조직에 일반적으로 사용되는 조각 라이브러리를 만듭니다.
+- 조각 사용에 대한 명명 규칙 및 거버넌스 정책을 수립합니다.
 - 동적 데이터 기반 조각에 대한 [양식 데이터 모델](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)과의 고급 통합을 탐색합니다.
-- 일관된 사용자 경험을 위해 조각 기반 양식 템플릿을 구현합니다.
+- 일관된 사용자 경험을 위해 조각 기반의 양식 템플릿을 구현합니다.
 
 이제 양식은 프로젝트 전반에서 효율적으로 확장되는 동시에 일관된 사용자 경험을 보장하는 모듈식의 유지 관리가 용이한 아키텍처의 이점을 누릴 수 있습니다.
 

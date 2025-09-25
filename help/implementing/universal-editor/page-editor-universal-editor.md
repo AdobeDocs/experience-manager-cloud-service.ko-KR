@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe는 2024년에 현대적인 JavaScript 기반 개발 접근 방식을 도�
 범용 편집기는 많은 이점을 제공하므로 새 프로젝트에 적합한 솔루션입니다.
 
 * **시각적 편집:** 페이지 편집기와 마찬가지로 작성자는 미리보기 내에서 직접 콘텐츠를 편집하고 변경 내용이 방문자 경험에 어떤 영향을 미치는지 즉시 확인할 수 있습니다.
-* **향후 교정:** AEM의 로드맵은 비주얼 편집기로 유니버설 편집기의 우선 순위를 지정합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
+* **미래 지향적:** AEM의 로드맵은 범용 편집기를 시각적 편집기로 우선시합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
 * **더욱 간편한 통합:** 범용 편집기를 사용하기 위해 AEM 관련 SDK가 필요하지 않으므로 기술 스택 종속성이 줄어듭니다.
 * **자체 앱 가져오기:** 범용 편집기는 모든 웹 프레임워크 또는 아키텍처를 지원하므로 복잡한 리팩토링 없이도 채택할 수 있습니다.
 * **확장성:** 범용 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크](/help/implementing/universal-editor/extending.md)의 이점을 누릴 수 있습니다.

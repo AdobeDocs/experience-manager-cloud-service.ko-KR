@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 Edge Delivery Services, 적응형 양식 자동 채우기
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ ht-degree: 99%
 
    >
    >
-   > 양식 속성을 편집하여 **데이터** 탭 이상에서 데이터 원본을 구성할 수 있습니다.
+   > **데이터** 탭에서 또는 나중에 양식 속성을 편집하여 데이터 소스를 구성할 수 있습니다.
 
 1. 양식 세부 사항을 지정합니다.
 

@@ -1,21 +1,21 @@
 ---
-title: Edge Delivery Services Forms용 규칙 편집기
+title: Edge Delivery Services 양식용 규칙 편집기
 description: 범용 편집기의 규칙 편집기를 사용하여 동적이고 지능적인 양식을 만듭니다. 코딩 없이 조건 논리, 계산 및 대화형 비헤이비어를 추가합니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms용 규칙 편집기
+# Edge Delivery Services 양식용 규칙 편집기
 
-규칙 편집기를 사용하면 작성자가 코드를 작성하지 않고도 정적 양식을 반응형 지능형 경험으로 전환할 수 있습니다. 조건부로 필드를 표시하고, 계산을 수행하고, 데이터를 유효성 검사하고, 플로우를 통해 사용자를 안내하고, 사용자가 입력할 때 조정되는 비즈니스 논리를 통합할 수 있습니다.
+규칙 편집기를 사용하면 작성자가 코드를 작성하지 않고도 정적 양식을 반응형의 지능적인 경험으로 바꿀 수 있습니다. 조건부로 필드를 표시하고, 계산을 수행하고, 데이터를 유효성 검사하고, 플로우를 통해 사용자를 안내하고, 사용자가 입력할 때 조정되는 비즈니스 논리를 통합할 수 있습니다.
 
 ## 학습 내용
 
@@ -310,7 +310,7 @@ ht-degree: 97%
 
 1. **범용 편집기 열기**:
    - AEM Sites 콘솔로 이동하여 페이지를 선택한 다음 **편집**&#x200B;을 클릭합니다.
-   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)가 올바르게 구성되었는지 확인합니다.
+   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)가 올바르게 구성되었는지 확인합니다.
 
 2. **다음 순서대로 양식 구성 요소를 추가합니다.**
    - 제목(H2): “세금 계산 양식”
@@ -537,7 +537,7 @@ z![규칙 편집기의 사용자 정의 함수](/help/edge/docs/forms/assets/cus
 
 >
 >
-> 사용자 지정 이벤트 기반 규칙, 동적 변수에 대한 지원 및 API 통합을 포함하여 규칙 편집기에 대한 개선 사항을 Edge Delivery Services Forms에서도 사용할 수 있습니다. 이러한 개선 사항 및 사용 방법에 대한 자세한 내용은 [규칙 편집기 개선 사항 및 사용 사례](/help/forms/rule-editor-enhancements-use-cases.md) 문서를 참조하십시오.
+> 사용자 지정 이벤트 기반 규칙, 동적 변수 지원 및 API 통합을 포함하여 규칙 편집기에 대한 개선 사항을 Edge Delivery Services Forms에서도 사용할 수 있습니다. 이러한 개선 사항 및 사용 방법에 대한 자세한 내용은 [규칙 편집기 개선 사항 및 사용 사례](/help/forms/rule-editor-enhancements-use-cases.md) 문서를 참조하십시오.
 
 **함수 사용을 위한 모범 사례**:
 
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **추가 리소스**:
 
-- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)
+- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 - 추가 기능 활성화를 위한 [Extension Manager 안내서](/help/implementing/developing/extending/extension-manager.md)
 - 포괄적인 양식 개발 안내를 위한 [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md)
 

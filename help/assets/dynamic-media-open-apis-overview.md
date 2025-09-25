@@ -4,9 +4,9 @@ description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 �
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
 
 ![Dynamic Media Open API 데이터 흐름 다이어그램](assets/dm-openapi-dfd.png)
 
-사용 가능한 Dynamic Media 서비스 및 기능에 대한 자세한 내용은 [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)을(를) 참조하십시오.
+사용 가능한 Dynamic Media 서비스 및 그 기능에 대한 정보는 [Dynamic Media Prime 및 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)를 참조하십시오.
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 96%
 
 `plugins`는 구성 요소를 유지하는 역할을 하는 플러그인을 정의합니다. 일반적인 플러그인은 다음과 같습니다.
 
-* `aem`AEM as a Cloud Service.[의 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[ 및 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65)AEM 6.5 LTS[용 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts)
-* `xwalk`Edge Delivery Services용 AEM Sites으로 작성[의 ](https://www.aem.live/developer/ue-tutorial)
+* [AEM as a Cloud Service용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) `aem`
+* [AEM 6.5.](https://experienceleague.adobe.com/ko/docs/experience-manager-65) 및 [AEM 6.5 LTS](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts)용 `aem65`
+* [Edge Delivery Services용 AEM Sites로 작성](https://www.aem.live/developer/ue-tutorial)용 `xwalk`
 
 ## `page` 또는 `cf` {#page-cf}
 

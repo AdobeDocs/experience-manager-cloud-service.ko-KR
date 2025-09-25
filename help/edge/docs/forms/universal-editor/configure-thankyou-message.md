@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
 사용 가능한 옵션에서 **메시지 표시**&#x200B;를 선택합니다.
 
-![감사합니다](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
+![thankyou](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. 메시지 콘텐츠 만들기**
 
@@ -135,7 +135,7 @@ ht-degree: 99%
 
 사용 가능한 제출 후 옵션에서 **URL로 리디렉션**&#x200B;을 선택합니다.
 
-![리디렉션](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
+![redirect](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. 대상 URL 구성**
 

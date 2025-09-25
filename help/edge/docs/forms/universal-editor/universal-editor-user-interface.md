@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> 유니버설 편집기에서 양식을 만드는 자세한 단계에 대해 알아보려면 [Edge Delivery Services을 사용하여 적응형 Forms 만들기 및 게시](/help/edge/docs/forms/universal-editor/create-forms.md)를 참조하십시오.
+> 범용 편집기에서 양식을 만드는 자세한 단계를 알아보려면 [Edge Delivery Services로 적응형 양식 만들기 및 게시](/help/edge/docs/forms/universal-editor/create-forms.md)를 참조하십시오.
 
 **유효성 검사 체크포인트:**
 
@@ -223,7 +223,7 @@ ht-degree: 98%
 
 #### **AEM 양식 속성**
 
-**목적:** 양식 데이터 모델(FDM)과 같은 양식 수준 설정을 구성하고, 제출 액션 및 게시 날짜를 구성합니다.\
+**용도:** 양식 데이터 모델(FDM)과 같은 양식 수준 설정을 구성하여 제출 작업 및 게시 날짜를 설정합니다.\
 **사용 시기:** 데이터 통합 설정, 게시 일정 예약
 
 ![양식 속성](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
