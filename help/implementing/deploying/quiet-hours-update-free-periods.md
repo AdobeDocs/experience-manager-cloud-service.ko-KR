@@ -4,7 +4,8 @@ description: 자동 체류 시간 및 업데이트 불가 기간을 사용하여
 feature: Deploying
 role: Admin
 badge: label="제한된 가용성" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # 업무 중지 시간 및 무료 기간 업데이트 {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->이 기능은 9월 29일부터 **제한된 가용성** 기능으로 사용할 수 있습니다. 프로그램에서 기능을 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
+>이 기능은 9월 25일부터 **제한된 가용성** 기능으로 사용할 수 있습니다. 프로그램에서 기능을 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
 
 AEM as a Cloud Service [자동 유지 관리 업데이트](/help/implementing/deploying/aem-version-updates.md)를 통해 인스턴스가 최신 유지 관리 릴리스를 통해 최신 상태로 안전하게 유지될 수 있습니다. 즉, 일부 경우 (Go-Live 이벤트와 같은) 중요한 작업 시간을 잠재적인 중단으로부터 &quot;보호&quot;해야 할 수도 있습니다. 따라서 AEM as a Cloud Service에서는 진행 중인 프로그램에 대해 자동 업데이트가 수행되지 않는 시간대를 설정할 수 있는 옵션을 제공합니다.
 

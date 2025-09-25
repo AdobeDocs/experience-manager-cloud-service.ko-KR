@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 69%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.8.0) 일자는 2025년 8월 28일 금요일입니다. 다음 기능 릴리스(2025.9.0)는 2025년 9월 25일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.9.0) 일자는 2025년 9월 25일 금요일입니다. 다음 기능 릴리스(2025.10.0)는 2025년 10월 30일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -40,34 +40,23 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Experience Hub {#experience-hub}
-
-[Experience Hub](/help/experience-hub.md)는 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점입니다. 사용자 페르소나와 사용 가능한 라이선스에 따라 개인화되므로 각 사용자가 효율적으로 목표를 달성할 수 있습니다.
-
-## AEM 내 AI 어시스턴트 {#AI-assistant}
-
-AEM용 [AI 어시스턴트](/help/implementing/cloud-manager/ai-assistant-in-aem.md)는 AEM 제품 관련 질문에 대한 즉각적인 답변을 제공하도록 설계된 대화형 인터페이스를 제공(*모든 사용자에게 제공*)하며 지원 티켓 생성을 자동화(*지원 관리자에게 제공*)합니다. AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Author UI에서 액세스할 수 있습니다.
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Experience Manager Sites의 새로운 기능 {#enhancements-sites}
+### Experience Manager Sites 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 콘텐츠 조각 관리자 UI에서 이제 콘텐츠 조각의 워크플로 상태를 확인할 수 있으며, 선택한 조각에 대한 과거 및 현재 실행 중인 워크플로에 대한 자세한 정보를 제공합니다.
-* 새로운 콘텐츠 조각 편집기에서 경로 대신 UUID를 통해 조각을 열기 때문에 일반적인 시나리오에서 콘텐츠 조각을 여는 성능이 25% 향상되었습니다.
-* 참조된 조각이 있는 콘텐츠 조각을 복사할 때, 참조된 조각의 사본이 이제 상위 조각 사본과 같은 위치에 저장됩니다.
-* 이제 폴더 설정에서 사용자 정의 작업 공간을 구성하여 Adobe Target의 구성된 작업 공간으로 콘텐츠 조각을 내보낼 수 있습니다.
+AEM 컨텐츠 조각용 컨텐츠 모델 편집기가 AEM의 다른 React 스펙트럼 기반 인터페이스와 일치하도록 현대화되었습니다. 사용자 인터페이스 구현 및 확장성 모델은 이제 콘텐츠 조각 편집기 및 유니버설 편집기와 일치합니다. 새 콘텐츠 모델 관리 UI에서 열면 새 모델 편집기가 기본적으로 제공됩니다. Touch UI에서 콘텐츠 모델을 열면 Touch UI 편집기가 열리고 새 편집기를 사용해 볼 수 있는 옵션이 제공됩니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Content Hub의 새로운 기능 {#new-features-content-hub}
+### Assets 보기의 새로운 기능 {#new-features-assets-view}
 
-**필터 속성을 통한 대량 검색**
+**Dynamic Media 템플릿의 하위 문자열을 사용하여 텍스트 서식 개선**
 
-이제 Content Hub를 사용하면 필요한 자산을 더 빠르게 검색할 수 있습니다. 새로운 대량 검색 기능을 사용하면 구분 기호(예: 여러 SKU ID)로 구분하여 모든 필터 속성에 여러 값을 입력하고 단일 검색을 통해 일치하는 모든 자산을 즉시 검색할 수 있습니다.
+이제 Dynamic Media 템플릿 텍스트 레이어 내의 하위 문자열에 서식을 적용할 수 있습니다. 선택한 단어 또는 구는 별도의 레이어로 처리되어 글꼴, 글꼴 크기, 색상 등을 조정할 수 있습니다. 하위 문자열 레이어는 매개 변수화되므로 템플릿의 게재 URL을 사용하여 실시간으로 업데이트할 수 있습니다
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
@@ -77,7 +66,25 @@ OpenAPI를 사용하여 DM에서 자산 전달을 위한 Vanity URL을 생성하
 
 >[!NOTE]
 >
->이 기능은 9월 10일부터 한정된 기간 동안에만 제공됩니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
+>이 기능은 제한된 가용성 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
+
+<!--
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!NOTE]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -154,13 +161,29 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript 컴파일 업데이트 {#javascript-compilation}
+### Release Management의 새로운 기능 {#new-features-release-management}
 
-기본 클라이언트 측 라이브러리(clientlibs) JavaScript 컴파일은 이제 ECMASCRIPT5 대신 ECMASCRIPT_2018을 타기팅합니다. 이전에는 재정의가 가능했던 반면, 이 업데이트는 기본적으로 성능 개선, 최신 JavaScript 구문 및 기능을 제공합니다.
+**자동 유지 관리 업데이트 일시 중지**
+
+라이브 기간, 라이브 이벤트, 매출 절정 등 이러한 순간은 결코 중단될 수 없습니다. [새로운 셀프 서비스 기능](/help/implementing/deploying/quiet-hours-update-free-periods.md) 자동 유지 관리 업데이트가 필요할 때 중지되므로 팀이 계속 집중할 수 있습니다.
+
+* 자동 중지 시간: 매일 설정된 시간 동안 자동 유지 관리를 차단합니다. 업무 시간, 야간 운영 또는 아침 휴식에 이상적입니다.
+* 업데이트 불가 기간: 전체 주 동안 자동 유지 관리를 차단합니다. 론치, 프로모션 또는 연간 결빙에 사용합니다.
+
+>[!NOTE]
+>
+>9월 25일에 제한된 가용성 기능으로 제공됩니다.
+>>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
+
+### Eclipse용 AEM 개발자 도구 새 릴리스 {#aem-develeper-tools-for-eclipse}
+
+AEM Developer Tools for Eclipse 버전 1.4.0이 릴리스되었습니다. 이 버전에서는 Eclipse IDE 2022-12 이상에 대한 지원이 추가되었으며 현재 버전(2025-09)의 유효성을 검사했습니다. 이제 이 툴은 최신 버전의 AEM Project Archetype에서 작동하며 Sling IDE 툴 1.3.0의 개선 사항을 통합합니다.
+
+[Eclipse 마켓플레이스](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse)에서 설치하고 [AEM 개발자 도구 페이지](https://eclipse.adobe.com)를 참조하십시오.
 
 ### 곧 Java API 지원 중단 예정 {#java-api-deprecation}
 
-사용되지 않는 몇몇 API는 8월 31일에 삭제될 예정이므로 더 이상 참조할 수 없습니다. 9월 초에는 API 사용이 감지되면 액션 센터 알림이 전송되고, 9월 25일 이후에는 Cloud Manager 빌드 중에 알림이 나타나 사용 제거의 중요성을 강조합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
+더 이상 사용되지 않는 여러 API는 8월 31일에 제거되도록 표시되었으므로 더 이상 참조해서는 안 됩니다. 코드에서 더 이상 사용되지 않는 API 사용이 감지되면 작업 센터 알림을 받게 되며 11월 13일 이후에는 Cloud Manager 빌드 중에 알림이 표시되어 사용 제거의 중요성을 강화합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
 
 +++ 확장하여 사용 중단 Java API 보기
 
@@ -194,17 +217,19 @@ OSGi properties:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-*Java 11 런타임*&#x200B;은 이제 더 이상 사용되지 않으며, 대부분의 환경은 이미 성능이 더 좋은 **Java 21 런타임**&#x200B;으로 업그레이드되었습니다.
+*Java 11 런타임*&#x200B;은(는) 더 이상 사용되지 않으며 대부분의 환경이 이미 고성능 **Java 21 런타임**(으)로 업그레이드되었습니다.
 
-지원되지 않는 종속성으로 인해 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 구체적인 다음 단계가 포함된 이메일을 받았을 것입니다. 모든 필수 업데이트가 **2025년 10월 1일**&#x200B;까지 완료되어 중단 없이 환경을 업그레이드할 수 있도록 해 주시기 바랍니다.
+지원되지 않는 종속성([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조)으로 인해 환경을 업그레이드할 수 없는 경우 다음 단계로 Adobe에서 이메일을 받았어야 합니다. 여기에서 설명한 대로 Adobe에서 **2025년 9월 18일**&#x200B;에 **개발** 및 **RDE** 환경을 업그레이드하여 사이트 및 프로세스를 확인하고 문제를 해결할 수 있습니다. **Stage** 및 **Production**&#x200B;에 대한 업그레이드는 **2025년 10월 14일**&#x200B;에 진행될 예정입니다.
 
-참고: 런타임 버전은 코드의 빌드 버전과 별도입니다. Java 21을 사용한 빌드를 권장하지만 현재로서는 Java 11 빌드도 여전히 지원됩니다. Java 11 빌드에 대한 별도의 사용 중단 공지는 앞으로 공유될 예정입니다.
+>[!NOTE]
+>
+>런타임 버전은 코드의 빌드 버전과 별개입니다. Java 21을 사용하여 빌드하는 것이 좋지만 현재로서는 Java 11 빌드가 계속 허용됩니다. Java 11 빌드에 대한 별도의 사용 중단 공지는 앞으로 공유될 예정입니다.
 
 ### AEM Java 로그 구성 시행 {#logconfig-policy}
 
 4월 릴리스 정보에서 언급된 대로 AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
 
-**9월 25일**&#x200B;부터 지원되지 않는 사용자 정의 로깅 재정의는 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
+**10월 30일**&#x200B;부터 지원되지 않는 사용자 지정 로깅 무시가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
 
 사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
 
@@ -217,7 +242,6 @@ OSGi properties:
 
 일반적인 사용 사례는 다음과 같습니다.
 
-* 콘텐츠 접근 권한을 부여하기 전에 ID 공급자를 통해 사용자 인증
 * 지리적 위치, 디바이스 유형 또는 사용자 속성에 따라 콘텐츠 개인화
 * CDN과 원본 사이의 미들웨어 역할
 * 브라우저에 제공하기 전에 서드파티 API의 응답(및 여러 API 응답 집계)을 다시 포맷
@@ -226,11 +250,22 @@ OSGi properties:
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
 
-### Edge Delivery Services를 위한 CDN 구성 (Beta 프로그램) {#cdn-eds-beta}
+### Edge Delivery Services용 Edge 인증(Beta 프로그램) {#edge-authentication}
 
-Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#configurations)에 설명된 대로 유연한 구성 옵션을 제공합니다.
+Edge 인증을 사용하면 ID 공급자(IdP)로 인증된 사용자만 Edge Delivery Services 페이지에 대한 액세스를 제한할 수 있습니다. 이 작업은 OpenID Connect(OIDC) 구성 YAML 파일을 배포하여 수행됩니다.
 
-이제 Beta 버전에서는 CDN 원본 선택기, 응답 및 요청 변환, CDN 로그 전달 등을 포함한 기능에 대한 구성 파이프라인을 배포할 수 있습니다. 사용 사례에 대한 자세한 내용은 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)에 문의해 주십시오.
+필요한 경우 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 사용 사례에 대한 간단한 설명과 질문이 있는 전자 메일을 보내십시오.
+
+Edge Delivery Services과 별도로 올해 초에 AEM 페이지의 보안을 위해 AEM Cloud Service 게시 계층 프로젝트[에 대해 Open ID Connect ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)을(를) 구성하는 기능이 릴리스되었습니다.
+
+<!--
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
 
 ### RDE용 스냅샷 (Alpha 프로그램) {#rde-snapshot-program}
 
@@ -245,6 +280,11 @@ Adobe 관리 CDN은 [구성 파이프라인 문서](/help/operations/config-pipe
 이제 Beta 버전에서는 AEM 로그를 Amazon S3, Sumo Logic, Dynatrace 및 사용자의 New Relic 계정(Adobe 제공 계정이 아닌 경우)으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)가 이러한 로깅 대상에 대해 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
 
 자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)에서 확인하십시오.
+
+### 확장된 APM(Application Performance Monitoring)(Alpha 프로그램) {#apm-alpha}
+
+AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
+
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
