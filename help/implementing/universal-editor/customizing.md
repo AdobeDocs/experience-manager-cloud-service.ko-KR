@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## 복사 및 붙여넣기 비활성화 {#copy-paste}
+
+특정 작성 워크플로우는 구성 요소를 복사하고 붙여넣는 콘텐츠 작성자의 기능을 제한해야 할 수 있습니다. 다음 메타데이터를 추가하여 [복사 및 붙여넣기 아이콘](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)을 비활성화할 수 있습니다.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## 엔드포인트 변경 {#custom-endpoint}

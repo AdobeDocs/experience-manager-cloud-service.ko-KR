@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2025.09.18 릴리스 정보
-description: 다음은 범용 편집기 2025.09.18 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.09.25 릴리스 정보
+description: 다음은 범용 편집기 2025.09.25 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# 범용 편집기 2025.09.18 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.09.25 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 9월 18일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 9월 25일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ ht-degree: 67%
 
 ## 새로운 기능 {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/)이(가) 이제 서비스를 로컬로 호스팅할 필요 없이 AMS의 서비스 끝점으로 사용됩니다.
-* 이제 AEM 작성을 사용할 때 복합 다중 필드가 지원됩니다.
+* [복사 및 붙여넣기 기능](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)은(는) 이제 메타 태그를 사용하여 [비활성화할 수 있습니다.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [호스팅된 AEM 환경(AMS)에서 유니버설 편집기를 사용할 때](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) 이제 유니버설 편집기가 AEM에서 호스팅된 유니버설 편집기 서비스를 사용하고 더 이상 로컬 AMS 설치에 의존하지 않으므로 항상 최신 유니버설 편집기 서비스를 자동으로 사용할 수 있습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -39,5 +39,5 @@ ht-degree: 67%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* AEM을 백엔드 시스템으로 사용하는 범용 편집기 실행 시를 위한 여러 작은 성능 개선이 구현되었습니다.
-* 이제 콘텐츠 조각은 Open API를 사용해 게시되며, 콘텐츠 조각 편집기 및 콘솔의 게시 방식에서 성능이 개선되고 더 높은 일관성이 제공됩니다.
+* 문서 작성에 속성 레일을 사용할 때 이 레일이 수정되었습니다.
+* MSM을 사용할 때 콘텐츠 조각의 여러 필드를 편집할 때 발생하는 문제가 해결되었습니다.
