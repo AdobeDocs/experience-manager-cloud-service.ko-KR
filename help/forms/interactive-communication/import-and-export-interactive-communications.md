@@ -39,7 +39,7 @@ ht-degree: 14%
 
 +++&#x200B;1. 대화형 통신을 내보내는 방법
 
-1.1. [만든 대화형 통신](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)&#x200B;(IC)을 선택합니다.
+1.1. [만든 대화형 통신](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)&#x200B;(IC)을 선택합니다.
 1.2. **다운로드** 옵션을 클릭하여 ZIP 파일로 내보냅니다.
 1.3. 다운로드한 ZIP 파일에는 선택한 **템플릿**, **조각** 및 **데이터 모델**&#x200B;과 함께 IC가 포함되어 있습니다.
 

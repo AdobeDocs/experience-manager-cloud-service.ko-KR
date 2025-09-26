@@ -44,7 +44,7 @@ ht-degree: 5%
 
 ## 사용자 정의 함수 만들기
 
-규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)을 참조하십시오.
+규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ko#developing)을 참조하십시오.
 
 사용자 정의 함수를 만드는 단계는 다음과 같습니다.
 
