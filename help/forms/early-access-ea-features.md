@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 19%
+source-wordcount: '2940'
+ht-degree: 20%
 
 ---
 
@@ -83,7 +83,7 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 
 데이터 전송 프로세스를 간소화하여 커넥터를 통해 웹 사이트의 전환율을 향상시킬 수 있습니다. 리드 데이터를 Marketo으로 자동으로 보내면 자격을 갖춘 리드가 신속하게 육성 프로그램에 입력되도록 할 수 있습니다.
 
-본질적으로 AEM Forms-Marketo 커넥터는 두 플랫폼의 장점을 활용하여 보다 효율적이고 효과적인 마케팅 단계를 만들 수 있도록 지원합니다.
+기본적으로 AEM Forms to Marketo Connector는 두 플랫폼의 장점을 모두 활용하여 보다 효율적이고 효과적인 마케팅 funnel을 만들 수 있도록 지원합니다.
 
 시작할 준비가 되셨습니까? 다음 문서는 혁신을 사용하기 위한 자세한 지침을 제공합니다.
 
@@ -116,7 +116,12 @@ Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, �
 
 * **형식 유연성**: PDF, HTML, PCL, PostScript® 및 ZPL 형식으로 출력합니다.
 
-* **규칙 편집기**: 직관적인 포인트 앤 클릭 인터페이스를 사용하여 문서 내에서 직접 동적 데이터 기반 작업을 빌드합니다. 코드를 작성하지 않고도 조건부 논리를 쉽게 정의하고, 워크플로우를 자동화하고, 콘텐츠를 개인화할 수 있습니다.
+* **규칙 편집기**: 직관적인 포인트 앤 클릭 인터페이스를 사용하여 문서 내에서 직접 동적 데이터 기반 작업을 빌드합니다. 코드를 작성하지 않고도 조건 논리를 쉽게 정의하고, 워크플로를 자동화하고, 콘텐츠를 개인화할 수 있습니다.
+
+* **PDF 미리 보기:** 유연한 데이터 기반 테스트를 위해 데이터, 로컬 JSON 파일 또는 데이터 모델이 없는 대화형 통신을 미리 봅니다.
+* **사용자 지정 글꼴:** 사용자 지정 또는 조직에서 승인한 글꼴을 포함하여 장치 간에 일관된 브랜드 PDF 렌더링을 보장합니다.
+* **가져오기 및 내보내기:** 인터랙티브 커뮤니케이션을 환경의 조각 및 데이터 모델과 원활하게 마이그레이션하고 다시 사용합니다.
+
 
 #### 사용 사례:
 
@@ -161,7 +166,7 @@ AEM Forms HTML5 Forms을 사용하면 기존 XFA(XML Forms 아키텍처) 양식 
 
 AEM Forms CLI 도구를 사용하여 AEM Forms Edge Delivery Services 개발을 가속화하십시오. 이 명령줄 인터페이스를 사용하면 사용자 지정 구성 요소 개발을 시작하는 데 필요한 코드와 배선을 즉시 생성할 수 있습니다. 번거롭지 않고 번거롭지 않습니다.
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms 사용자 지정 구성 요소-aem-forms 개발 도구)
+>[!VIDEO]&#x200B;(<https://video.tv.adobe.com/v/3470514/aem-forms> 스캐폴딩-aem-custom 구성 요소 생성기-aem-forms cli-aem-forms 사용자 지정 구성 요소-aem-forms 개발 도구)
 
 **주요 기능:**
 
@@ -174,7 +179,7 @@ AEM Forms CLI 도구를 사용하여 AEM Forms Edge Delivery Services 개발을 
 
 ### 동적 양식 데이터를 위한 API 통합 도구
 
-양식 작성자는 API 통합 도구를 통해 사용자 상호 작용을 기반으로 외부 REST API에서 데이터를 자동으로 가져오고 채우는 동적 지능형 양식을 만들 수 있습니다. 이 노 코드 통합 기능은 정적 양식을 반응형 데이터 수집 인터페이스로 변환합니다.
+API 통합 도구를 사용하면 양식 작성자가 사용자 상호 작용을 기반으로 외부 REST API에서 데이터를 자동으로 가져와 채우는 동적이고 지능형 양식을 만들 수 있습니다. 코드가 필요 없는 통합 기능은 정적 양식을 반응형 데이터 수집 인터페이스로 변환합니다.
 
 주요 기능은 다음과 같습니다.
 
@@ -283,6 +288,10 @@ Azure Blob Storage에 PDF를 저장하면 문서를 중앙 집중식으로 관�
 * **향상된 보안**: 저장 시 암호화 및 역할 기반 액세스 제어(RBAC)와 같은 Azure의 기본 제공 보안 기능을 사용하므로 중요한 문서는 저장 중에 보호됩니다.
 
 * **사용자 지정 저장소 경로**: 사용자 지정 디렉터리 경로를 정의하는 기능을 사용하면 생성된 PDF가 조직화된 응용 프로그램별 위치에 저장되므로 파일 관리가 향상됩니다.
+
+### 시각적 규칙 편집기의 개선 사항
+
+* 이제 적응형 Forms의 시각적 규칙 편집기에서 [양식 데이터 모델](/help/forms/api-integration-in-rule-editor.md) 없이 직접 API 통합을 지원합니다. JSON URL을 입력하거나 cURL 명령을 사용하여 구성을 가져와서 API 끝점에 연결할 수 있습니다. 통합 후 `Invoke Service` 작업을 사용하여 API를 호출할 수 있습니다.
 
 ## 추가 참조
 

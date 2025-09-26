@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 생성 단계, 비대화형 PDF 출력 생성
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '7370'
+source-wordcount: '7409'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 비즈니스 논리를 달성하기 위해 [모델에 다양한 AEM 워크플로 단계를 포함할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
@@ -121,7 +121,7 @@ Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관�
     -->
 
 * **[!UICONTROL 피할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
-* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자 지정 Adobe Experience Manager 동적 참가자 만들기 단계](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
+* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자 지정 Adobe Experience Manager 동적 참가자 만들기 단계](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
 
 * **[!UICONTROL 참가자]**: **[!UICONTROL 참가자 선택기]** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 이 필드를 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
@@ -189,7 +189,7 @@ PDF/A로 변환 단계에는 다음 속성이 있습니다.
 
 전자 메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 <!-- , link of an interactive communication-->의 링크 또는 첨부된 PDF 문서)을 보낼 수 있습니다. 이메일 전송 단계는 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)을 지원합니다. HTML 이메일은 응답형이며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
 
-이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
+이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
 
 이메일 단계에는 다음과 같은 속성이 있습니다.
 
@@ -362,7 +362,12 @@ FDM(양식 데이터 모델) 호출 서비스 단계에는 FDM(양식 데이터 
 
    * **[!UICONTROL 페이로드 관련]**: 옵션을 사용하여 페이로드 관련 경로에 저장된 첨부 파일을 검색합니다. 옵션을 선택하고 첨부 파일을 포함하는 폴더 이름을 지정하거나 텍스트 상자에 첨부 파일 이름을 지정합니다.
 
-     예를 들어, CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치에 첨부 파일이 있는 경우 **[!UICONTROL 페이로드 관련]** 옵션을 선택한 후 텍스트 상자에 `attachment\attachment-folder`을(를) 지정합니다.
+     >[!NOTE]
+     >
+     > **양식 데이터 모델 호출** 워크플로 단계는 [SharePoint 목록 기반 양식 데이터 모델](/help/forms/connect-forms-to-sharepoint-list.md)의 Base64 인코딩 첨부 파일 배열에 대한 워크플로 측 메타데이터를 지원하며 워크플로에서 첨부 파일에 대한 파일 이름, MIME 유형 또는 사용자 지정 속성과 같은 메타데이터를 전달, 저장 및 검색할 수 있도록 합니다.
+     > ![SP 목록 첨부 파일](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > 페이로드 관련 폴더에 `attachment` 위치에 첨부 파일이 있습니다. `attachment`페이로드 관련&#x200B;**[!UICONTROL 옵션을 선택한 후 텍스트 상자에]**&#x200B;을(를) 지정하십시오.
 
    * **[!UICONTROL JSON 점 표기법]**: 사용할 값이 JSON 파일에 있는 경우 옵션을 사용합니다. 예: insurance.customerDetails.emailAddress. JSON 점 표기법 옵션은 입력 JSON 옵션의 입력 필드 매핑 을 선택한 경우에만 사용할 수 있습니다.
    * **[!UICONTROL 입력 JSON의 입력 필드 매핑]**: JSON 파일의 경로를 지정하여 JSON 파일에서 일부 서비스 인수의 입력 값을 가져옵니다. JSON 파일의 경로는 페이로드 또는 절대 경로에 상대적이거나 JSON 또는 양식 데이터 모델(FDM) 유형의 변수를 사용하여 입력 JSON 문서를 선택할 수 있습니다.
@@ -390,7 +395,7 @@ FDM(양식 데이터 모델) 호출 서비스 단계에는 FDM(양식 데이터 
 
 * **[!UICONTROL 로케일]**: 전자 메일 및 확인 옵션에 사용할 언어를 지정합니다. String 데이터 형식의 변수에 로케일을 저장하거나 **[!UICONTROL 리터럴]**&#x200B;을 선택하여 사용 가능한 옵션 목록에서 로케일을 선택할 수 있습니다. 로케일의 값을 변수에 저장하는 동안 로케일 코드를 정의해야 합니다. 예를 들어, 영어는 **[!UICONTROL en_US]**, 프랑스어는 **[!UICONTROL fr_FR]**&#x200B;을 지정하십시오.
 
-* **[!UICONTROL Adobe Sign 클라우드 구성]**: [!DNL Adobe Sign] 클라우드 구성을 선택하십시오. [!DNL AEM Forms]에 대해 [!DNL Adobe Sign]을(를) 구성하지 않은 경우 [Adobe Sign과 통합 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)을 참조하세요.
+* **[!UICONTROL Adobe Sign 클라우드 구성]**: [!DNL Adobe Sign] 클라우드 구성을 선택하십시오. [!DNL Adobe Sign]에 대해 [!DNL AEM Forms]을(를) 구성하지 않은 경우 [Adobe Sign과 통합 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)을 참조하세요.
 
 * **[!UICONTROL 서명할 문서 선택]**: 페이로드에 상대적인 위치에서 문서를 선택하거나, 페이로드를 문서로 사용하거나, 문서의 절대 경로를 지정하거나, 문서 데이터 형식의 변수에 저장된 문서를 검색할 수 있습니다.
 * **[!UICONTROL 기한까지]**: **[!UICONTROL 기한까지]** 필드에 지정된 일 수에 대한 작업 활동이 없으면 문서에 기한(기한 지남)으로 표시됩니다. 문서가 사용자에게 서명에 할당된 후 일 수가 계산됩니다.

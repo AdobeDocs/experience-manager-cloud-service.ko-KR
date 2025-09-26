@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 규칙 편집기 개선 사항 및 사용 사례
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
 
 이 문서에서는 적응형 Forms의 규칙 편집기에 대한 최신 개선 사항을 소개합니다. 이러한 업데이트는 사용자 지정 코드를 작성하지 않고도 양식 동작을 보다 쉽게 정의하고, 보다 역동적이고 반응적이며 개인화된 양식 경험을 만들 수 있도록 설계되었습니다.
 
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 | 개선 사항 | 설명 | 장점 |
 |---|----|---|
-| **`validate()` 메서드를 사용하여 유효성 검사** | 함수 목록에서 개별 필드, 패널 또는 전체 양식의 유효성을 검사할 수 있습니다. | - 패널, 필드 또는 양식 수준 <br>에서 세분화된 유효성 검사 - 타깃팅된 오류 메시징으로 사용자 경험 개선 <br> - 불완전한 데이터로 진행 방지 <br> - 양식 제출 오류 감소 |
-| **DOR 다운로드** | 규칙 편집기에서 기록 문서(DoR)를 다운로드할 수 있는 기본 함수. | - DoR <br>을(를) 다운로드하는 데 사용자 지정 개발이 필요하지 않음 - 여러 양식에서 일관된 다운로드 경험 |
-| **동적 변수** | 사용자 입력 또는 기타 조건에 따라 변경되는 변수를 사용하여 규칙을 만듭니다. | - 유연한 규칙 조건 사용 <br> - 중복 논리의 필요성 감소 <br> - 숨겨진 필드를 만들 필요 없음 |
-| **사용자 지정 이벤트 기반 규칙** | 표준 트리거 이외의 사용자 지정 이벤트에 응답하는 규칙을 정의합니다. | - 고급 사용 사례 지원 <br> - 규칙 실행 시기 및 방법에 대한 제어 강화 <br> - 상호 작용 향상 |
-| **컨텍스트 인식 반복 가능 패널 실행** | 이제 규칙이 마지막 인스턴스만 실행되는 대신 반복된 각 패널에 대해 올바른 컨텍스트에서 실행됩니다. | - 각 반복 인스턴스 <br>에 대한 정확한 규칙 적용 - 동적 섹션의 오류 감소 <br> - 반복되는 콘텐츠로 사용자 경험 개선 |
-| **쿼리 문자열, UTM 및 브라우저 매개 변수 지원** | URL 매개 변수 또는 브라우저별 값에 따라 양식 동작을 조정하는 규칙을 만듭니다. | - 소스 또는 환경을 기반으로 개인화를 활성화합니다. <br> - 마케팅 또는 추적별 흐름에 유용함 <br> - 추가적인 스크립팅이나 사용자 지정이 필요 없음 |
+| [validate() 메서드를 사용하여 유효성 검사](#validate-method-in-function-list) | 함수 목록에서 개별 필드, 패널 또는 전체 양식의 유효성을 검사할 수 있습니다. | - 패널, 필드 또는 양식 수준 <br>에서 세분화된 유효성 검사 - 타깃팅된 오류 메시징으로 사용자 경험 개선 <br> - 불완전한 데이터로 진행 방지 <br> - 양식 제출 오류 감소 |
+| [기록 문서 다운로드](#download-document-of-record) | 규칙 편집기에서 기록 문서(DoR)를 다운로드할 수 있는 기본 함수. | - DoR <br>을(를) 다운로드하는 데 사용자 지정 개발이 필요하지 않음 - 여러 양식에서 일관된 다운로드 경험 |
+| [동적 변수](#support-for-dynamic-variables-in-rules) | 사용자 입력 또는 기타 조건에 따라 변경되는 변수를 사용하여 규칙을 만듭니다. | - 유연한 규칙 조건 사용 <br> - 중복 논리의 필요성 감소 <br> - 숨겨진 필드를 만들 필요 없음 |
+| [사용자 지정 이벤트 기반 규칙](#custom-event-based-rules-support) | 표준 트리거 이외의 사용자 지정 이벤트에 응답하는 규칙을 정의합니다. | - 고급 사용 사례 지원 <br> - 규칙 실행 시기 및 방법에 대한 제어 강화 <br> - 상호 작용 향상 |
+| [컨텍스트 인식 반복 가능 패널 실행](#context-based-rule-execution-for-repeatable-panels) | 이제 규칙이 마지막 인스턴스만 실행되는 대신 반복된 각 패널에 대해 올바른 컨텍스트에서 실행됩니다. | - 각 반복 인스턴스 <br>에 대한 정확한 규칙 적용 - 동적 섹션의 오류 감소 <br> - 반복되는 콘텐츠로 사용자 경험 개선 |
+| [쿼리 문자열, UTM 및 브라우저 매개 변수 지원](#url-and-browser-parameter-based-rules-in-adaptive-forms) | URL 매개 변수 또는 브라우저별 값에 따라 양식 동작을 조정하는 규칙을 만듭니다. | - 소스 또는 환경을 기반으로 개인화를 활성화합니다. <br> - 마케팅 또는 추적별 흐름에 유용함 <br> - 추가적인 스크립팅이나 사용자 지정이 필요 없음 |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 0%
 >
 >양식, 조각 또는 개별 필드에 **validate()** 메서드를 사용할 수 있습니다. 조각이 양식에 포함된 경우, 유효성 검사 컨텍스트에서 양식과 조각이 모두 옵션으로 나타납니다. 이 경우 조각은 해당 내의 필드를 참조하고, 양식은 조각이 포함된 상위 양식을 참조합니다.
 
-## 규칙 편집기에서 DownloadDor as OOTB 함수
+## 기록 문서 다운로드
 
 규칙 편집기에서 **DownloadDor()** 기본 제공(OOTB) 함수를 사용하면 양식이 기록 문서 를 생성하도록 구성된 경우 사용자가 기록 문서 를 다운로드할 수 있습니다.
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 > When 조건에 **변수 값 가져오기** 함수를 추가할 수도 있습니다.
-> &#x200B;> ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
+> > ![조건](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}인 경우 변수 값 가져오기 함수
 
 이 접근 방식을 사용하면 양식에 필드를 추가하지 않고 구조를 깔끔하고 사용자 친화적으로 동적으로 실시간 계산을 수행할 수 있습니다.
 

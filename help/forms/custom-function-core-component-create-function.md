@@ -5,9 +5,9 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1360'
 ht-degree: 5%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 5%
    * 기본 매개 변수
    * 나머지 매개 변수
 
+* 최신 ECMAScript 기능은 EA(Early Access)로 사용할 수 있으며, ECMAScript 2019까지는 일반 공급 시 지원됩니다.
+
 ## 사용자 지정 함수를 만들기 위한 사전 요구 사항
 
 적응형 Forms에 사용자 지정 기능을 추가하기 전에 다음을 확인하십시오.
@@ -42,7 +44,7 @@ ht-degree: 5%
 
 ## 사용자 정의 함수 만들기
 
-규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ko#developing)을 참조하십시오.
+규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)을 참조하십시오.
 
 사용자 정의 함수를 만드는 단계는 다음과 같습니다.
 
@@ -144,10 +146,10 @@ ht-degree: 5%
 
 1. `/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS 프로젝트 디렉터리[에서 ] 파일로 이동합니다.
 
-1. 파일을 열고 끝에 다음 줄을 추가합니다.
+2. 파일을 열고 끝에 다음 줄을 추가합니다.
 
    `<filter root="/apps/experience-league" />`
-1. 파일을 저장합니다.
+3. 파일을 저장합니다.
 
 ![사용자 지정 함수 필터 xml](/help/forms/assets/custom-function-filterxml.png)
 

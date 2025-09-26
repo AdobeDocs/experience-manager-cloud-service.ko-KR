@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ ht-degree: 1%
 | **Invoke Service의 출력을 사용하여 반복 가능한 패널 설정** | 서비스 호출 출력의 데이터를 사용하여 반복 가능한 패널을 구성하여 동적 패널을 허용합니다. 구현을 보려면 [여기를 클릭하세요](#use-case-2-set-repeatable-panel-using-output-of-invoke-service). |
 | **호출 서비스의 출력을 사용하여 패널 설정** | 서비스 호출 출력의 특정 값을 사용하여 패널의 내용 또는 가시성을 설정합니다. 구현을 보려면 [여기를 클릭하세요](#use-case-3-set-panel-using-output-of-invoke-service). |
 | **Invoke Service의 출력 매개 변수를 사용하여 다른 필드의 유효성을 검사합니다** | 서비스 호출의 특정 출력 매개 변수를 사용하여 양식 필드의 유효성을 검사합니다. 구현을 보려면 [여기를 클릭하세요](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields). |
+| **Invoke Service의 Navigate To Action에서 이벤트 페이로드를 사용합니다** | 이벤트 페이로드를 사용하여 성공 및 실패 응답을 처리하고 탐색 중 다음으로 이동 작업에 데이터를 전달합니다. 구현을 보려면 [여기를 클릭](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)하세요. |
 
 `Get Information` 텍스트 상자에 입력한 입력을 기반으로 값을 검색하는 `Pet ID` 양식을 만듭니다. 아래 스크린샷은 이러한 사용 사례에 사용된 양식을 보여 줍니다.
 
@@ -142,7 +143,6 @@ ht-degree: 1%
         "status": "available"
     }
 ```
-
 
 규칙과 논리는 **텍스트 상자의 규칙 편집기에서**&#x200B;서비스 호출`Pet ID` 작업을 사용하여 구현하여 언급된 사용 사례를 보여 줍니다.
 
@@ -222,9 +222,38 @@ ht-degree: 1%
 
 ![출력](/help/forms/assets/output4.png)
 
+### 사용 사례 5: 서비스 호출에서 탐색의 동작 이벤트 페이로드 사용
+
+이 사용 사례에서는 **서비스 호출**&#x200B;을 호출한 다음 **다음으로 이동** 작업을 사용하여 사용자를 다른 페이지로 리디렉션하는 **전송** 단추에 규칙을 구성하는 방법을 보여 줍니다.
+
+#### 구현
+
+**제출** 단추에 규칙을 만들어 `redirect-api` API 서비스를 호출합니다. 이 서비스는 사용자를 **연락처** 양식으로 리디렉션하는 역할을 합니다.
+
+아래에 제공된 JSON 데이터를 사용하여 `redirect-api` API 서비스로서의 API를 규칙 편집기에 직접 통합할 수 있습니다.
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> 미리 정의된 양식 데이터 모델을 사용하지 않고 [규칙 편집기 인터페이스에서 직접 API를 통합](/help/forms/api-integration-in-rule-editor.md)할 수도 있습니다.
+> 규칙 편집기 인터페이스에서 직접 API를 통합하는 방법에 대해 알아보려면 미리 정의된 양식 데이터 모델을 사용하지 않고 [여기를 클릭](/help/forms/api-integration-in-rule-editor.md)하십시오.
+
+**[!UICONTROL 성공 처리기 추가]**&#x200B;에서 **다음으로 이동** 작업을 구성하여 **매개 변수를 사용하여 사용자를**&#x200B;문의하기`Event Payload` 페이지로 리디렉션합니다. 여기에서 사용자는 연락처 세부 정보를 제출할 수 있습니다.
+
+![이벤트 페이로드](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+선택적으로 서비스 호출이 실패할 경우 오류 메시지를 표시하도록 오류 핸들러를 구성합니다.
+
+#### 출력
+
+**제출** 단추를 클릭하면 `redirect-api` API 서비스가 호출됩니다. 성공하면 사용자가 **문의하기** 페이지로 리디렉션됩니다.
+
+![이벤트 페이로드 출력](/help/forms/assets/output5.gif)
 
 ## 자주 묻는 질문
 
