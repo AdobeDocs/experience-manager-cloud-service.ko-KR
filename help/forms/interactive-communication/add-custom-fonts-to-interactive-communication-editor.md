@@ -40,4 +40,4 @@ ht-degree: 24%
 >[!NOTE]
 >
 > 자세한 구성 단계는 [사용자 지정 글꼴 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) 안내서를 따라 수행할 수 있습니다
-> >단계를 완료하고 파이프라인을 실행하면 대화형 통신 편집기에서 사용자 지정 글꼴을 직접 사용할 수 있습니다.
+> &#x200B;>단계를 완료하고 파이프라인을 실행하면 대화형 통신 편집기에서 사용자 지정 글꼴을 직접 사용할 수 있습니다.
