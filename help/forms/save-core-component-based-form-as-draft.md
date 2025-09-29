@@ -4,9 +4,9 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
+source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1387'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 양식을 초안으로 저장하고 사이트 페이지에 나열
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM은 AEM Sites 페이지에 초안 및 제출을 표시하는 **초안 및 제출** Forms 포털 구성 요소를 즉시 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Forms 포털의 제출 사항 목록에는 Foundation 기반 양식 제출만 표시됩니다.
+> Forms 포털에서 초안 및 제출 구성 요소는 Foundation 기반 양식의 제출만 지원합니다.
 
 ## 다음 단계
 
