@@ -3,13 +3,13 @@ title: 기록 문서에서 지원되는 HTML 마크업 태그
 description: 렌더링 동작 및 접근성 고려 사항을 포함하여 기록 문서 생성에서 이제 HTML 마크업 태그에 대한 참조 안내서가 지원됩니다
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 7%
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
-
 
 
 # 기록 문서에서 지원되는 HTML 마크업 태그
@@ -132,23 +132,10 @@ Expected:     <LBody>First item
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## 관련 정보
+## 관련 컨텐츠
 
-### AEM Forms 설명서
 
 - [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [핵심 구성 요소에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
 - [기록 문서 템플릿 사용자 정의](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### 기술 참조
-
-- [XFA 사양 - XHTML 및 CSS 특성](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf)&#x200B;(1187페이지)
-- [PDF 접근성 표준](https://www.w3.org/TR/WCAG21/)
-- [핵심 접근성 API 매핑](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### 모범 사례 안내서
-
-- [액세스 가능한 PDF 만들기](https://www.adobe.com/accessibility/pdf.html)
-- [양식의 리치 텍스트 모범 사례](/help/forms/creating-accessible-adaptive-forms.md)
-- [접근성을 위한 문서 구조](/help/forms/creating-accessible-adaptive-forms.md)
 
