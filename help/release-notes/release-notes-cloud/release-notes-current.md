@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
+source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 47%
+source-wordcount: '1875'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한된 가용성 기능으로 제공됩니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
+>>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 새 릴리스 {#aem-develeper-tools-for-eclipse}
 
@@ -240,8 +240,6 @@ Edge 인증을 사용하면 ID 공급자(IdP)로 인증된 사용자만 Edge Del
 
 필요한 경우 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 사용 사례에 대한 간단한 설명과 질문이 있는 전자 메일을 보내십시오.
 
-Edge Delivery Services과 별도로 올해 초에 AEM 페이지의 보안을 위해 AEM Cloud Service 게시 계층 프로젝트[에 대해 Open ID Connect ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)을(를) 구성하는 기능이 릴리스되었습니다.
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
@@ -267,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 확장된 APM(Application Performance Monitoring)(Alpha 프로그램) {#apm-alpha}
 
-AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
+AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
 
 
 ## [!DNL Experience Manager] 안내서 {#guides}
