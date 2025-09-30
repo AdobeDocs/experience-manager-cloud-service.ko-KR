@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한된 가용성 기능으로 제공됩니다.
->>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
+>&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 새 릴리스 {#aem-develeper-tools-for-eclipse}
 
