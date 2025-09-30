@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
+source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 48%
+source-wordcount: '1957'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한된 가용성 기능으로 제공됩니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
+>>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 전자 메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 새 릴리스 {#aem-develeper-tools-for-eclipse}
 
@@ -249,6 +249,14 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
+### 라이브 트래픽을 수락하기 전에 코드를 테스트하는 카나리아 프로덕션 배포(Beta 프로그램) {#canary-beta}
+
+최종 사용자에게 노출하기 전에 내부 전용 테스트 트래픽으로 프로덕션 빌드의 유효성을 검사합니다. 프로덕션으로 배송하고, 카나리아 트래픽만 라우팅하고(특수 헤더 사용), 동작을 모니터링한 다음 라이브 트래픽으로 승격하거나 고객에게 영향을 주지 않고 롤백합니다.
+
+코드 릴리스를 프로덕션에 배포하지만 라이브 트래픽을 수락할지 및 롤백할지 여부를 결정하기 전에 내부 테스트 트래픽으로만 제한합니다.
+
+액세스를 요청하고 피드백을 공유하려면 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)에 전자 메일을 보내십시오.
+
 ### RDE용 스냅샷 (Alpha 프로그램) {#rde-snapshot-program}
 
 알파 버전에서는 신속한 개발 환경(RDEs)에서 현재 코드와 콘텐츠 상태의 스냅샷을 찍는 기능을 지원하며, 이는 나중에 복원할 수 있습니다. 이것은 반환이 필요할 수 있는 코드를 동기화하거나, 서로 다른 기능의 개발을 전환할 때 유용할 수 있습니다. 테스트를 위한 알려진 시작점으로 변경 가능한 콘텐츠만 복원하는 것도 가능합니다.
@@ -265,7 +273,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 확장된 APM(Application Performance Monitoring)(Alpha 프로그램) {#apm-alpha}
 
-AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
+AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
 
 
 ## [!DNL Experience Manager] 안내서 {#guides}
