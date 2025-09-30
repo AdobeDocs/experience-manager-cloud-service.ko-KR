@@ -1,17 +1,19 @@
 ---
-title: 대화형 통신 만들기
+title: 인터랙티브 커뮤니케이션 만들기
 description: 개인화된 데이터 기반 커뮤니케이션을 만듭니다. 안내서와 튜토리얼을 통해 주요 기능, 온보딩 단계 및 실제 사용 사례를 살펴보십시오.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# 대화형 통신 만들기
+
+# 인터랙티브 커뮤니케이션 만들기
 
 >[!NOTE]
 >
@@ -33,7 +35,7 @@ ht-degree: 9%
 
 * [작성자가 forms-users 그룹의 구성원인지 확인합니다.](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-## 대화형 통신 만들기
+## 인터랙티브 커뮤니케이션 만들기
 
 필요한 재사용 및 데이터 통합 수준에 따라 대화형 통신을 만들려면 다양한 시나리오 중에서 선택하십시오.
 

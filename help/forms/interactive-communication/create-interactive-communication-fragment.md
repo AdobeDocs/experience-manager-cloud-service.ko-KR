@@ -4,12 +4,14 @@ description: AEM Forms에서 대화형 통신 조각을 만들어 일관성을 �
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 18%
 
 ---
+
 
 # 대화형 통신 조각 만들기
 
@@ -39,7 +41,7 @@ ht-degree: 18%
 
 1. 대화형 통신 조각을 선택하면 제목, 이름, 설명, 데이터 모델(백엔드 데이터의 구조화된 표현) 및 태그와 같은 주요 조각 세부 정보를 정의하는 화면이 나타납니다.
 
-   자세한 내용은 [데이터 모델 구성 가이드](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)를 참조하세요.
+   자세한 내용은 [데이터 모델 구성 가이드](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)를 참조하세요.
 
    ![IC 문서 찾기](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

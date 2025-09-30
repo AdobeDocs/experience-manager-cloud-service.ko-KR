@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms as a Cloud Service 소개 {#introduction}
 
@@ -95,7 +95,7 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 모바일 장치 및 레거시 브라우저에 대해 XFA 기반 양식을 [HTML5 양식](/help/forms/introductionhtml5.md)(으)로 렌더링합니다. HTML5 Forms은 원래 XDP 템플릿에서 양식 논리 및 유효성 검사를 유지하면서 플러그인 없이 기본 모바일 경험을 제공합니다.
 
 **대화형 통신**
-시각적 편집기를 사용하여 명세서, 청구서 및 공지 등의 문서 중심 통신을 만들 수 있습니다. [대화형 통신](/help/forms/introduction-to-interactive-communication.md) 정적 콘텐츠와 동적 데이터를 결합하여 인쇄 및 디지털 채널 전체에 개인화된 통신을 생성합니다.
+시각적 편집기를 사용하여 명세서, 청구서 및 공지 등의 문서 중심 통신을 만들 수 있습니다. [대화형 통신](/help/forms/interactive-communication/create-interactive-communication.md) 정적 콘텐츠와 동적 데이터를 결합하여 인쇄 및 디지털 채널 전체에 개인화된 통신을 생성합니다.
 
 ### 관리: 검토 및 규정 준수 {#govern}
 
@@ -249,7 +249,7 @@ Adobe Target을 사용하여 다양한 양식 레이아웃, 필드 배열 및 �
 **문서 서비스 및 통신:**
 
 1. 자동화된 문서 생성을 위해 **[통신 API 구현](/help/forms/aem-forms-cloud-service-communications-introduction.md)**
-2. 개인 맞춤화된 문 및 알림을 위한 **[대화형 통신 만들기](/help/forms/introduction-to-interactive-communication.md)**
+2. 개인 맞춤화된 문 및 알림을 위한 **[대화형 통신 만들기](/help/forms/interactive-communication/create-interactive-communication.md)**
 3. 중앙 집중식 양식 관리를 위해 **[Forms 포털 설정](/help/forms/configure-forms-portal.md)**
 
 ### 엔터프라이즈 배포: 확장 및 거버넌스 {#enterprise-deployment}

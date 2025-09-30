@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 1%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 | **수행할 작업:** 인쇄 및 디지털 채널용 동적 데이터와 정적 콘텐츠를 결합하는 개인화된 통신을 디자인합니다. |
 | **사용 시기:** 고객 명세서, 청구서, 알림, 개인화된 커뮤니케이션, 문서 중심의 워크플로 |
 | 📄 시각적 문서 디자인 📄 동적 데이터 통합 📄 다중 채널 출력 📄 Personalization |
-| [대화형 통신 → 시작](/help/forms/introduction-to-interactive-communication.md) |
+| [대화형 통신 → 시작](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 데이터 및 통합 {#data-integration}
 
@@ -304,7 +304,7 @@ ht-degree: 1%
 
 **XFA 현대화의 경우:** [HTML5 Forms](/help/forms/introductionhtml5.md)(으)로 시작
 
-**문서 통신의 경우:** [대화형 통신으로 시작](/help/forms/introduction-to-interactive-communication.md)
+**문서 통신의 경우:** [대화형 통신으로 시작](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### 데이터 통합 빠른 시작 {#integration-start}
 
