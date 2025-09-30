@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -273,7 +273,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 확장된 APM(Application Performance Monitoring)(Alpha 프로그램) {#apm-alpha}
 
-AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
+AEM Cloud Service는 현재 가시성을 위해 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객 관리 [Dynatrace](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)을(를) 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 전자 메일을 보내십시오.
 
 
 ## [!DNL Experience Manager] 안내서 {#guides}
