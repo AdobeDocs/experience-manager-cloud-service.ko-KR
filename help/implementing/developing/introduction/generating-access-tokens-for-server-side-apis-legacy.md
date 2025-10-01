@@ -5,9 +5,9 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -21,23 +21,23 @@ ht-degree: 0%
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
-AEM 작성자의 IMS 조직 관리자 역할과 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 서버에 설치해야 하며, 비밀 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰으로 IMS와 교환되는 서명된 JWT 토큰을 생성하는 데 사용됩니다. 그런 다음 이 액세스 토큰을 전달자 인증 토큰으로 사용하여 AEM as a Cloud Service에 요청할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만 필요한 경우 새로 고칠 수 있습니다. [자격 증명 새로 고침](#refresh-credentials)을 참조하세요.
+IMS 조직 관리자 역할이 있고 AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 서버에 설치해야 하며, 비밀 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰으로 IMS와 교환되는 서명된 JWT 토큰을 생성하는 데 사용됩니다. 그런 다음 이 액세스 토큰을 전달자 인증 토큰으로 사용하여 AEM as a Cloud Service에 요청할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만 필요한 경우 새로 고칠 수 있습니다. [자격 증명 새로 고침](#refresh-credentials)을 참조하세요.
 
 서버 간 흐름에는 다음 단계가 포함됩니다.
 
 * Developer Console에서 AEM as a Cloud Service에 대한 자격 증명 가져오기
-* AEM을 호출하는 비 AEM 서버에 AEM as a Cloud Service에 대한 자격 증명을 설치합니다.
+* AEM을 호출하는 AEM이 아닌 서버에 AEM as a Cloud Service에 대한 자격 증명을 설치합니다.
 * JWT 토큰을 생성하고 Adobe의 IMS API를 사용하여 해당 토큰을 액세스 토큰으로 교환
 * 액세스 토큰을 전달자 인증 토큰으로 사용하여 AEM API 호출
-* AEM 환경에서 기술 계정 사용자에 대한 적절한 권한 설정
+* AEM 환경에서 기술 계정 사용자에 대한 적절한 권한을 설정합니다
 
 ### AEM as a Cloud Service 자격 증명 가져오기 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-AEM as a Cloud Service 개발자 콘솔에 액세스할 수 있는 사용자에게는 주어진 환경에 대한 Developer Console의 통합 탭과 두 개의 버튼이 표시됩니다. AEM as a Cloud Service 환경 관리자 역할이 있는 사용자는 **서비스 자격 증명 생성** 단추를 클릭하여 서비스 자격 증명 json을 생성하고 표시할 수 있습니다. Json에는 Pod 선택에 관계없이 클라이언트 ID, 클라이언트 암호, 개인 키, 인증서 및 환경의 작성자 및 게시 계층에 대한 구성을 포함하여 비 AEM 서버에 필요한 모든 정보가 포함되어 있습니다.
+AEM as a Cloud Service 개발자 콘솔에 액세스할 수 있는 사용자에게는 주어진 환경에 대한 Developer Console의 통합 탭과 두 개의 버튼이 표시됩니다. AEM as a Cloud Service 환경 관리자 역할이 있는 사용자는 **서비스 자격 증명 생성** 단추를 클릭하여 서비스 자격 증명 json을 생성하고 표시할 수 있습니다. JSON에는 Pod 선택에 관계없이 클라이언트 ID, 클라이언트 암호, 개인 키, 인증서 및 환경의 작성자 및 게시 계층에 대한 구성을 포함하여 AEM이 아닌 서버에 필요한 모든 정보가 포함되어 있습니다.
 
 ![JWT 생성](assets/JWTtoken3.png)
 
@@ -67,24 +67,25 @@ AEM as a Cloud Service 개발자 콘솔에 액세스할 수 있는 사용자에�
 
 >[!IMPORTANT]
 >
->IMS 조직 관리자(일반적으로 Cloud Manager을 통해 환경을 프로비저닝한 사용자)는 AEM Author에서 AEM 사용자 또는 AEM 관리자 제품 프로필의 멤버여야 하지만 Developer Console에 액세스합니다. 그런 다음 **서비스 자격 증명 생성** 단추를 클릭해야 자격 증명이 생성되고 나중에 AEM as a Cloud Service 환경에 대한 관리자 권한이 있는 사용자가 자격 증명을 검색할 수 있습니다. IMS 조직 관리자가 이 작업을 수행하지 않은 경우 IMS 조직 관리자 역할이 필요하다는 메시지가 표시됩니다.
+>IMS 조직 관리자(일반적으로 Cloud Manager을 통해 환경을 프로비저닝한 사용자)는 AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 속해야 하며 Developer Console에 액세스합니다. 그런 다음 **서비스 자격 증명 생성** 단추를 클릭해야 자격 증명이 생성되고 나중에 AEM as a Cloud Service 환경에 대한 관리자 권한이 있는 사용자가 자격 증명을 검색할 수 있습니다. IMS 조직 관리자가 이 작업을 수행하지 않은 경우 IMS 조직 관리자 역할이 필요하다는 메시지가 표시됩니다.
 
 ### 비 AEM 서버에 AEM 서비스 자격 증명 설치 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-AEM을 호출하는 비 AEM 애플리케이션은 이를 비밀로 취급하면서 AEM as a Cloud Service의 자격 증명에 액세스할 수 있어야 합니다.
+AEM을 호출하는 AEM 이외의 애플리케이션은 AEM as a Cloud Service의 자격 증명에 액세스하여 이를 비밀로 취급할 수 있어야 합니다.
 
 ### JWT 토큰을 생성하고 액세스 토큰으로 교환 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-자격 증명을 사용하여 24시간 동안 유효한 액세스 토큰을 검색하기 위해 Adobe의 IMS 서비스 호출에 JWT 토큰을 생성합니다.
+자격 증명을 사용하여 Adobe의 IMS 서비스 호출에서 24시간 동안 유효한 액세스 토큰을 검색하는 JWT 토큰을 만듭니다.
 
-AEM CS 서비스 자격 증명은 이를 위해 설계된 클라이언트 라이브러리를 사용하여 액세스 토큰으로 교환될 수 있습니다. 클라이언트 라이브러리는 [Adobe의 공용 GitHub 저장소](https://github.com/adobe/aemcs-api-client-lib)에서 사용할 수 있으며, 여기에는 자세한 지침과 최신 정보가 포함되어 있습니다.
+AEM CS 서비스 자격 증명은 이를 위해 설계된 코드 샘플을 사용하여 액세스 토큰으로 교환될 수 있습니다. 샘플 코드는 [Adobe의 공용 GitHub 저장소](https://github.com/adobe/aemcs-api-client-lib)에서 사용할 수 있으며, 여기에는 자체 프로젝트에 맞게 복사하고 조정할 수 있는 코드 예제가 포함되어 있습니다. 이 저장소에는 참조용 샘플 코드가 포함되어 있으며 프로덕션 준비 라이브러리 종속성으로 유지 관리되지 않습니다.
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
@@ -113,7 +114,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 AEM에서 기술 계정 사용자가 만들어지면(해당 액세스 토큰을 사용하여 첫 번째 요청 후 발생) 기술 계정 사용자에게 **in** AEM의 권한이 올바르게 부여되어야 합니다.
 
-기본적으로 AEM 작성자 서비스에서는 기술 계정 사용자가 읽기 액세스 권한을 제공하는 기여자 사용자 그룹에 추가됩니다. AEM
+기본적으로 AEM 작성자 서비스에서는 기술 계정 사용자가 읽기 액세스 AEM을 제공하는 기여자 사용자 그룹에 추가됩니다.
 
 AEM의 이 기술 계정 사용자에게 일반적인 방법을 사용하여 권한을 추가로 제공할 수 있습니다.
 
@@ -134,15 +135,15 @@ AEM as a Cloud Service 개발자 콘솔을 사용하는 데 필요한 권한에 
 * Developer Console에서 액세스 토큰 생성
 * 액세스 토큰을 사용하여 AEM 애플리케이션을 호출합니다.
 
-개발자는 로컬 컴퓨터에서 실행 중인 AEM 프로젝트에 API를 호출할 수도 있습니다. 이 경우 액세스 토큰이 필요하지 않습니다.
+개발자는 로컬 컴퓨터에서 실행 중인 AEM 프로젝트에 대한 API를 호출할 수도 있습니다. 이 경우 액세스 토큰이 필요하지 않습니다.
 
 ### 액세스 토큰 생성 {#generating-the-access-token}
 
 액세스 토큰을 생성하려면 Developer Console에서 **로컬 개발 토큰 가져오기**&#x200B;를 클릭하십시오.
 
-### 액세스 토큰을 사용하여 AEM Application 호출 {#call-the-aem-application-with-an-access-token}
+### 그런 다음 액세스 토큰을 사용하여 AEM 애플리케이션 호출 {#call-the-aem-application-with-an-access-token}
 
-헤더에 액세스 토큰을 포함하여 비 AEM 애플리케이션에서 AEM as a Cloud Service 환경으로 서버 간 API를 적절하게 호출합니다. 따라서 &quot;Authorization&quot; 헤더에 값 `"Bearer <access_token>"`을(를) 사용합니다.
+헤더에 액세스 토큰을 포함하여 AEM이 아닌 애플리케이션에서 AEM as a Cloud Service 환경으로 적합한 서버 간 API를 호출합니다. 따라서 &quot;Authorization&quot; 헤더에 값 `"Bearer <access_token>"`을(를) 사용합니다.
 
 ## 자격 증명 새로 고침 {#refresh-credentials}
 
