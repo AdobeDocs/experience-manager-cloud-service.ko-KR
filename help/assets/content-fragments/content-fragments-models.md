@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 83%
+source-wordcount: '3588'
+ht-degree: 77%
 
 ---
 
@@ -29,6 +29,14 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 >
 >콘텐츠 조각 및 콘텐츠 조각 모델은 이제 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔을 통해 주로 관리되지만 콘텐츠 조각은 **Assets** 콘솔과 **도구** 콘솔의 콘텐츠 조각 모델에서 계속 관리할 수 있습니다. 이 섹션에서는 **Assets** 및 **도구** 콘솔의 관리에 대해 설명합니다.
 
+>[!NOTE]
+>
+>[새 모델 편집기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)를 사용하여 모델을 만든 경우 항상 해당 편집기를 모델에 사용해야 합니다.
+>
+>그런 다음 이 (원본) 모델 편집기로 모델을 열면 다음 메시지가 표시됩니다.
+>
+>* &quot;이 모델에는 사용자 정의 UI 스키마가 구성되어 있습니다. 이 UI에 표시되는 필드 순서가 UI 스키마와 일치하지 않을 수 있습니다. UI 스키마와 정렬된 필드를 보려면 새 콘텐츠 조각 편집기로 전환해야 합니다.&quot;
+
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
@@ -39,7 +47,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
    >
    >[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/assets/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-1. **모델 제목**&#x200B;을 지정합니다.
+1. **모델 제목**을 지정합니다.
 다양한 속성을 정의할 수도 있습니다. 예를 들어 **태그**, **설명**&#x200B;을 추가하고, 필요한 경우 **모델 활성화**&#x200B;를 선택하여 [모델을 활성화](#enabling-disabling-a-content-fragment-model)할 수 있습니다.
 
    >[!NOTE]
@@ -67,6 +75,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 
    * 왼쪽: 이미 정의된 필드
    * 오른쪽: 필드를 만드는 데 사용할 수 있는 **데이터 유형**(필드가 만들어지면 사용할 **속성**)
+   * top: [새 편집기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)를 사용해 보는 옵션
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 * **태그**
    * 조각 작성자가 태그의 영역에 액세스하고 선택할 수 있습니다.
 
+* **조각 참조**
+   * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
+   * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
+      * 참조된 조각 직접 편집
+      * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
+      * 필드의 새 인스턴스 만들기
+   * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
+
+* **조각 참조 (UUID)**
+   * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
+   * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
+      * 참조된 조각 직접 편집
+      * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
+      * 필드의 새 인스턴스 만들기
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
+      * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 조각을 찾아볼 수 있습니다
+
+  >[!NOTE]
+  >
+  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
+
 * **콘텐츠 참조**
    * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
    * 이미지가 참조되면 썸네일을 표시하도록 선택할 수 있습니다.
    * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
+   * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
 
-* **조각 참조**
-   * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
-   * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 필드를 구성할 수 있습니다.
-      * 참조된 조각 직접 편집
-      * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
-      * 필드의 새 인스턴스 만들기
+* **콘텐츠 참조 (UUID)**
+   * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
+   * 이미지가 참조되면 썸네일을 표시하도록 선택할 수 있습니다.
+   * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
+   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
+      * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 에셋 리소스를 찾아볼 수 있습니다
+
+  >[!NOTE]
+  >
+  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
 
 * **JSON 오브젝트**
    * 콘텐츠 조각 작성자는 조각의 해당 요소에 JSON 구문을 입력할 수 있습니다.
@@ -260,32 +295,43 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 
 콘텐츠 조각은 다음 데이터 유형 중 하나를 사용하여 중첩된 콘텐츠를 형성할 수 있습니다.
 
-* **[콘텐츠 참조](#content-reference)**
+* [콘텐츠 참조](#content-reference)
    * 모든 유형의 다른 콘텐츠에 대한 간단한 참조를 제공합니다.
+   * 데이터 유형에서 제공:
+      * **콘텐츠 참조** - 경로 기반
+      * **UUID(콘텐츠 참조)** - UUID 기반
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
-* **[조각 참조](#fragment-reference-nested-fragments)**(중첩된 조각)
+* [조각 참조](#fragment-reference-nested-fragments)(중첩된 조각)
    * 지정된 특정 모델에 따라 다른 조각을 참조합니다.
+   * 데이터 유형에서 제공:
+      * **조각 참조** - 경로 기반
+      * **조각 참조(UUID)** - UUID 기반
    * 구조화된 데이터를 포함/검색할 수 있습니다.
 
      >[!NOTE]
      >
-     >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+     >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
+
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
+
+>[!NOTE]
+>
+>콘텐츠/조각 참조 및 콘텐츠/조각 참조(UUID)와 UUID 기반 데이터 유형으로 업그레이드하는 방법에 대한 자세한 내용은 [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)를 참조하십시오.
 
 >[!NOTE]
 >
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>  >  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+>  >  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 ### 콘텐츠 참조 {#content-reference}
 
-콘텐츠 참조를 사용하면 다른 소스의 콘텐츠(예: 이미지 또는 콘텐츠 조각)를 렌더링할 수 있습니다.
+**콘텐츠 참조** 및 **콘텐츠 참조(UUID)** 데이터 형식을 사용하면 다른 소스의 콘텐츠를 렌더링할 수 있습니다(예: 이미지, 페이지 또는 경험 조각).
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 
@@ -300,7 +346,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 
 ### 조각 참조(중첩된 조각) {#fragment-reference-nested-fragments}
 
-조각 참조는 하나 이상의 콘텐츠 조각을 참조합니다. 여러 계층으로 구조화된 데이터를 검색할 수 있어 앱에서 사용할 콘텐츠를 검색할 때 특히 유용한 기능입니다.
+**조각 참조** 및 **조각 참조(UUID)** 데이터 형식은 하나 이상의 콘텐츠 조각을 참조할 수 있습니다. 여러 계층으로 구조화된 데이터를 검색할 수 있어 앱에서 사용할 콘텐츠를 검색할 때 특히 유용한 기능입니다.
 
 예:
 
@@ -473,7 +519,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시**&#x200B;를 클릭합니다.
+1. 모델을 선택한 후 도구 모음에서 **게시**를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
    >[!NOTE]
@@ -489,7 +535,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 다음 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
+1. 모델을 선택한 다음 도구 모음에서 **게시 취소**를 선택합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
 하나 이상의 조각에서 현재 사용 중인 모델을 게시 취소하려고 하면 이를 알리는 오류 경고가 표시됩니다.

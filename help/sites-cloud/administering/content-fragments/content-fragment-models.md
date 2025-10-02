@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 66%
+source-wordcount: '2201'
+ht-degree: 59%
 
 ---
 
@@ -16,13 +16,21 @@ ht-degree: 66%
 
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이 조각은 페이지 작성에 사용하거나 Headless 콘텐츠의 기반으로 사용할 수 있습니다.
 
-이 페이지에서는 전용 편집기를 사용하여 콘텐츠 조각 모델을 정의하는 방법을 다룹니다. 콘텐츠 조각 콘솔에서 사용할 수 있는 [작업](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [폴더에서 모델 허용](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) 및 [모델 게시](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)를 포함하여 조각을 만든 후 사용할 수 있는 추가 작업 및 옵션에 대해서는 [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)를 참조하십시오.
+이 페이지에서는 전용 편집기를 사용하여 콘텐츠 조각 모델을 정의하는 방법을 다룹니다. 콘텐츠 조각 콘솔에서 사용할 수 있는 [작업](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md), [폴더에서 모델 허용](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions) 및 [모델 게시](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)를 포함하여 조각을 만든 후 사용할 수 있는 추가 작업 및 옵션에 대해서는 [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)를 참조하십시오.
 
 >[!CAUTION]
 >
 >참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
 >자세한 내용은 [콘텐츠 조각과 함께 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
+
+>[!NOTE]
+>
+>이 새 편집기로 모델을 만드는 경우 항상 해당 모델에 이 편집기를 사용해야 합니다.
+>
+>[원본 모델 편집기](/help/assets/content-fragments/content-fragments-models.md)가 있는 모델을 열면 다음과 같은 메시지가 표시됩니다.
+>
+>* &quot;이 모델에는 사용자 정의 UI 스키마가 구성되어 있습니다. 이 UI에 표시되는 필드 순서가 UI 스키마와 일치하지 않을 수 있습니다. UI 스키마와 정렬된 필드를 보려면 새 콘텐츠 조각 편집기로 전환해야 합니다.&quot;
 
 ## 콘텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
 
@@ -38,26 +46,46 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    >
    >[모델을 만든 후](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)바로 모델을 열 수도 있습니다.
 
-1. **편집**&#x200B;에 필요한 모델을 엽니다. 빠른 작업을 사용하거나, 모델을 선택한 후 도구 모음에서 작업을 선택하십시오.
+1. **편집**&#x200B;에 필요한 모델을 엽니다. 빠른 작업 링크 중 하나를 사용하거나, 모델을 선택한 후 도구 모음에서 작업을 선택하십시오.
 
-   모델 편집기를 열면 다음과 같이 표시됩니다.
-
-   * 왼쪽: 이미 정의된 필드
-   * 오른쪽: 필드를 만드는 데 사용할 수 있는 **데이터 유형**(필드가 만들어지면 사용할 **속성**)
-
-   >[!NOTE]
-   >
-   >필드가 **필수**&#x200B;로 정의되는 경우, 왼쪽 창에 나타나는 **레이블**&#x200B;이 별표(**&#42;**)와 함께 표시됩니다.
 
    ![속성](assets/cf-cfmodels-empty-model.png)
 
+   모델 편집기를 열면 다음과 같이 표시됩니다.
+
+   * top:
+      * **홈** 아이콘
+      * [원본](/help/assets/content-fragments/content-fragments-models.md)과(와) 새 편집기 간을 전환하는 옵션
+      * **취소**
+      * **저장**
+
+   * 왼쪽: 필드를 만드는 데 사용할 수 있는 **데이터 형식**
+
+   * 가운데: **추가** 옵션과 함께 이미 정의된 필드입니다.
+
+   * 오른쪽: 오른쪽 끝에 있는 아이콘을 사용하여 다음 중에서 선택할 수 있습니다.
+
+      * **속성**: 선택한 필드에 대한 속성을 정의하고 봅니다.
+      * **모델 세부 정보**: **사용** 상태, **모델 제목**, **태그**, **설명** 및 **미리 보기 URL** 표시
+
 1. **필드를 추가하려면**
 
-   * 필수 데이터 유형을 필드에 필요한 위치로 드래그합니다.
+   * 다음 중 하나를 선택합니다.
 
-     ![데이터 유형을 드래그하여 필드 만들기](assets/cf-cfmodels-create-field.png)
+      * 왼쪽 패널의 데이터 유형을 가운데 패널의 필드에 필요한 위치로 드래그합니다.
+      * 데이터 유형별로 **+** 아이콘을 선택하여 필드 목록의 맨 아래에 추가합니다.
+      * 중간 패널에서 **추가**&#x200B;를 선택한 다음 결과 드롭다운 목록에서 필요한 데이터 유형을 선택하여 목록 맨 아래에 필드를 추가합니다.
 
-   * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
+     >[!NOTE]
+     >
+     >**탭 자리 표시자** 필드는 항상 기존 필드 위에 표시되어야 합니다.
+
+   * 필드 상자 왼쪽에 점을 형성하여 필드의 위치를 변경할 수 있습니다.
+
+     ![필드 이동](assets/cf-cfmodels-move-field-icon.png)
+
+   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
+필드.
 
       * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.
       * **필드 레이블**&#x200B;을 입력하면 **속성 이름**&#x200B;이 자동으로 채워집니다. 비어 있는 경우 이후에 수동으로 업데이트할 수 있습니다.
@@ -72,15 +100,17 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      ![필드 속성](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >필드가 **필수**(으)로 정의된 경우 가운데 창에 표시된 **레이블**&#x200B;이(가) 별표(**&#42;**)로 표시됩니다.
+
 1. **필드를 제거하려면**
 
-   필수 필드를 선택한 다음 휴지통 아이콘을 선택합니다. 작업을 확인하는 메시지가 표시됩니다.
+   중간 패널에서 해당 필드에 대한 휴지통 아이콘을 선택합니다.
 
    ![제거](assets/cf-cfmodels-remove-icon.png)
 
-1. 모든 필수 필드를 추가하고 필요에 따라 관련 속성을 정의합니다. 예:
-
-   ![저장](assets/cf-cfmodels-save.png)
+1. 모든 필수 필드를 추가하고 필요에 따라 관련 속성을 정의합니다.
 
 1. 정의를 유지하려면 **저장**&#x200B;을 선택합니다.
 
@@ -118,6 +148,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * **태그**
    * 조각 작성자가 태그의 영역에 액세스하고 선택할 수 있습니다.
+
 * **조각 참조**
    * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
    * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
@@ -126,18 +157,16 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
       * 필드의 새 인스턴스 만들기
    * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
 
-* **조각 참조 (UUID)**
-   * 다른 콘텐츠 조각을 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
-   * 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
-      * 참조된 조각 직접 편집
-      * 적절한 모델을 기반으로 새 콘텐츠 조각 만들기
-      * 필드의 새 인스턴스 만들기
-   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
-      * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 조각을 찾아볼 수 있습니다
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **콘텐츠 참조**
    * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
@@ -145,16 +174,16 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
    * 참조는 참조된 리소스에 대한 경로를 지정합니다(예: `/content/dam/path/to/resource`).
 
-* **콘텐츠 참조 (UUID)**
-   * 모든 유형의 다른 콘텐츠를 참조합니다. [중첩된 콘텐츠를 생성](#using-references-to-form-nested-content)하는 데 사용할 수 있습니다.
-   * 이미지가 참조되면 썸네일을 표시하도록 선택할 수 있습니다.
-   * 조각 작성자가 필드의 새 인스턴스를 만들 수 있도록 필드를 구성할 수 있습니다
-   * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
-      * UUID를 알 필요가 없습니다. 조각 편집기에서 필요한 에셋 리소스를 찾아볼 수 있습니다
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID는 저장소별로 다릅니다. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 콘텐츠 조각을 복사하는 경우 대상 환경에서 UUID가 다시 계산됩니다.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON 오브젝트**
    * 콘텐츠 조각 작성자는 조각의 해당 요소에 JSON 구문을 입력할 수 있습니다.
@@ -162,7 +191,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
       * JSON이 전달되고 GraphQL에서 JSON으로 출력됩니다.
       * 콘텐츠 조각 편집기에 JSON 구문 강조, 자동 채우기 및 오류 강조 표시를 포함합니다.
 
-* **탭 플레이스홀더**
+* **탭 자리 표시자**
    * 콘텐츠 조각 콘텐츠를 편집할 때 사용할 탭을 가져올 수 있습니다.
       * 이는 모델 편집기에서 콘텐츠 데이터 유형 목록의 섹션을 구분하는 구분선으로 표시됩니다. 각 인스턴스는 새 탭의 시작을 나타냅니다.
       * 조각 편집기에서 각 인스턴스는 탭으로 표시됩니다.
@@ -170,6 +199,8 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
      >[!NOTE]
      >
      >이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
+     >
+     >**탭 자리 표시자** 필드는 항상 기존 필드 위에 표시되어야 합니다.
 
 ## 속성(데이터 유형) {#properties}
 
@@ -258,16 +289,12 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * [콘텐츠 참조](#content-reference)
    * 모든 유형의 다른 콘텐츠에 대한 간단한 참조를 제공합니다.
-   * 데이터 유형에서 제공:
-      * **콘텐츠 참조** - 경로 기반
-      * **UUID(콘텐츠 참조)** - UUID 기반
+   * **콘텐츠 참조** 데이터 형식에서 제공
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
 * [조각 참조](#fragment-reference-nested-fragments)(중첩된 조각)
    * 지정된 특정 모델에 따라 다른 조각을 참조합니다.
-   * 데이터 유형에서 제공:
-      * **조각 참조** - 경로 기반
-      * **조각 참조(UUID)** - UUID 기반
+   * **조각 참조** 데이터 형식에서 제공
    * 구조화된 데이터를 포함/검색할 수 있습니다.
 
      >[!NOTE]
@@ -275,19 +302,21 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재할 때](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 사용할 수 있습니다.
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
+<!--
 >[!NOTE]
 >
->콘텐츠/조각 참조 및 콘텐츠/조각 참조(UUID)와 UUID 기반 데이터 유형으로 업그레이드하는 방법에 대한 자세한 내용은 [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)를 참조하십시오.
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>  >  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+>  >  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 ### 콘텐츠 참조 {#content-reference}
 
-**콘텐츠 참조** 및 **콘텐츠 참조(UUID)** 데이터 형식을 사용하면 다른 소스의 콘텐츠를 렌더링할 수 있습니다(예: 이미지, 페이지 또는 경험 조각).
+**콘텐츠 참조** 데이터 형식을 사용하면 다른 소스의 콘텐츠를 렌더링할 수 있습니다(예: 이미지, 페이지 또는 경험 조각).
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 
@@ -324,7 +353,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 ### 조각 참조(중첩된 조각) {#fragment-reference-nested-fragments}
 
-**조각 참조** 및 **조각 참조(UUID)** 데이터 형식은 하나 이상의 콘텐츠 조각을 참조할 수 있습니다. 여러 계층으로 구조화된 데이터를 검색할 수 있어 앱에서 사용할 콘텐츠를 검색할 때 특히 유용한 기능입니다.
+**조각 참조** 데이터 형식은 하나 이상의 콘텐츠 조각을 참조할 수 있습니다. 여러 계층으로 구조화된 데이터를 검색할 수 있어 앱에서 사용할 콘텐츠를 검색할 때 특히 유용한 기능입니다.
 
 예:
 

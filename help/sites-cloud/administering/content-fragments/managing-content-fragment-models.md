@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2496'
 ht-degree: 49%
 
 ---
@@ -27,7 +27,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 >[!NOTE]
 >
->콘텐츠 조각은 **자산**&#x200B;으로 저장됩니다. 콘텐츠 조각 모델은 주로 **콘텐츠 조각** 콘솔에서 관리되지만 [Assets](/help/assets/content-fragments/content-fragments-managing.md) 콘솔 및 **도구** - **일반**&#x200B;에서 사용할 수 있는 옵션 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)에서도 관리할 수 있습니다.
+>콘텐츠 조각은 **자산**&#x200B;으로 저장됩니다. 콘텐츠 조각 모델은 주로 **콘텐츠 조각** 콘솔에서 관리되지만 [Assets](/help/assets/content-fragments/content-fragments-managing.md) 콘솔 및 [도구](/help/assets/content-fragments/content-fragments-models.md) - **일반**&#x200B;에서 사용할 수 있는 옵션 **콘텐츠 조각 모델**&#x200B;에서도 관리할 수 있습니다.
 
 ## 콘텐츠 조각 모델을 사용하여 작업하는 방법 {#how-to-work-with-content-fragment-models}
 
@@ -54,8 +54,8 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * 상단 도구 모음
    * 표준 AEM 기능을 제공합니다.
-   * IMS 조직도 표시합니다.
-   * 다양한 [작업](#actions-unselected) 제공
+   * IMS 조직을 표시합니다.
+   * 하나 이상의 모델을 선택할 때 [변경할 수 있는 다양한 ](#actions-unselected)작업[을 제공합니다](#actions-selected-content-fragment-models)
 * 왼쪽 패널
    * 폴더로 나열된 [모든 구성에 대한 경로](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)을(를) 표시합니다.
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
          * 열 크기 조정 - 작업 또는 폭 슬라이더 사용
       * 추가 [작업](#actions-selected-content-fragment-models)에 대해 하나 이상의 모델을 선택하십시오.
    * [필터 패널](#filter-content-fragment-models) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 모델에 대해 제공된 정보 {#information-content-fragment-models}
 
@@ -97,20 +97,29 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 * **상태**
    * 정보만.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
-* **수정됨**
+* **복제 상태**
    * 정보만.
+   * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
+* **미리보기**
+   * 정보만.
+* **수정된 날짜**
+   * 정보만.
+   * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **수정한 사람**
    * 정보만.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **태그**
    * 정보만.
-   * 모델과 관련된 모든 태그를 표시합니다.
+   * 모델과 관련된 모든 태그를 보여 주는 대화 상자를 엽니다.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **게시일**
    * 정보만.
+   * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **게시자**
    * 정보만.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
+* **사용한 사람**
+   * 모델을 기반으로 하는 콘텐츠 조각을 나열하는 대화 상자를 엽니다. 목록에는 조각을 직접 열 수 있는 링크가 있습니다.
 
 ## 모델 속성 {#model-properties}
 
@@ -169,8 +178,9 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 특정 모델을 선택하면 해당 모델에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 모델을 선택할 수도 있습니다. 사용 가능한 작업은 그에 따라 조정됩니다.
 
 * 콘텐츠 조각 모델을 정의하려면 **[편집](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**&#x200B;하십시오.
-* [게시](/help/implementing/cloud-manager/manage-environments.md#environment-types) 또는 [미리 보기](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 계층에 **게시**&#x200B;합니다.
+* **[게시](#publishing-a-content-fragment-model)** 또는 **[미리 보기](#unpublishing-a-content-fragment-model)** 계층에 [게시](/help/implementing/cloud-manager/manage-environments.md#environment-types) 및 [게시 취소](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 * 사용자가 모델을 수정할 수 있는지 여부를 제어하려면 **잠금**/**잠금 해제**&#x200B;하세요.
+* 모델을 **복사**&#x200B;합니다.
 * 사용자가 이 모델을 기반으로 콘텐츠 조각을 만들 수 있는지 여부를 제어하려면 **[사용](#enabling-a-content-fragment-model)**/**[사용 안 함](#disabling-a-content-fragment-model)**&#x200B;을 사용하세요.
 
 단일 모델을 선택하면 오른쪽 패널에 [모델 속성](#properties)도 표시됩니다.
@@ -317,23 +327,21 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 * 상속 체인이 결과를 전달하지 않는 경우 해당 폴더에 대한 **Cloud Services** 구성을 살펴보십시오(처음에는 직접, 그 다음에는 상속을 통해).
 * 어느 것도 결과를 전달하지 않는 경우에는 해당 폴더에 대해 허용되는 모델이 없음을 의미합니다.
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## 콘텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>콘텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
 
-To delete a Content Fragment model:
+콘텐츠 조각 모델을 삭제하려면
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. 콘텐츠 조각 모델로 이동하여 선택합니다. 여러 모델을 선택할 수 있습니다.
 
-1. Select **Delete** from the toolbar.
+1. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >해당 모델이 참조되면 적절한 조치를 취할 수 있도록 경고가 주어진다.
 
 ## 콘텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ To delete a Content Fragment model:
 
 1. 선택한 모델 및 해당 참조를 게시하는 워크플로가 시작됩니다. 그러면 게시된 상태가 콘솔에 표시됩니다.
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## 콘텐츠 조각 모델 게시 취소 {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+조각에서 콘텐츠 모델을 참조하지 않는 경우, 이를 게시 취소할 수 있습니다.
 
-To unpublish a Content Fragment Model:
+콘텐츠 조각 모델을 게시 취소하려면 다음 작업을 수행하십시오.
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. 콘텐츠 조각 모델로 이동하여 선택합니다.
+게시된 상태가 콘솔에 표시됩니다.
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. 게시 취소 대화 상자에서 **대상**&#x200B;을 선택합니다.
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **서비스 게시**
+   * **미리보기 서비스**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. 선택한 모델 및 해당 참조의 게시를 취소하는 워크플로우가 시작됩니다. 그러면 게시 취소 상태가 콘솔에 표시됩니다.
+
+하나 이상의 조각에서 현재 사용 중인 모델을 게시 취소하려고 하면 이를 알리는 오류 경고가 표시됩니다. 이 메시지는 [참조](/help/sites-cloud/authoring/basic-handling.md#references) 패널을 확인하여 자세히 조사하도록 제안합니다.
 
 ## 잠긴 콘텐츠 조각 모델 {#locked-content-fragment-models}
 
