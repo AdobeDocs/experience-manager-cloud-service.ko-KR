@@ -16,7 +16,7 @@ ht-degree: 92%
 >[!IMPORTANT]
 >
 >Edge Delivery Services 사이트를 Cloud Manager에 온보딩해야 하는 이유를 알아보십시오.
->>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
+>&#x200B;>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
 
 **Cloud Manager에 Edge Delivery 사이트를 추가하려면:**
 
@@ -34,7 +34,7 @@ ht-degree: 92%
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
-**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
+**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**&#x200B;를 클릭합니다.
 페이지의 오른쪽 상단 모서리에서 ![링크 아이콘 또는 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Edge Delivery 사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery 사이트 버튼에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
