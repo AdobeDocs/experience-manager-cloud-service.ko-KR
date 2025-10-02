@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 39%
+source-wordcount: '1402'
+ht-degree: 35%
 
 ---
 
@@ -36,13 +36,17 @@ ht-degree: 39%
 
 ## 새 프로덕션 파이프라인 추가 {#adding-production-pipeline}
 
-프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하는 환경이 하나 이상 있는 경우 다음 단계에 따라 비프로덕션 파이프라인을 추가할 준비가 된 것입니다.
+프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하는 환경이 하나 이상 있는 경우 다음 단계에 따라 프로덕션 파이프라인을 추가할 준비가 된 것입니다.
 
 >[!TIP]
 >
->프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 참조하십시오. 이 여정을 사용하면 AEM Site의 프론트엔드 개발을 간소화하여 백엔드 AEM에 대한 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
+>프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 참조하십시오. 이 여정을 사용하면 AEM 사이트의 프론트엔드 개발을 간소화하여 AEM 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
+1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. **빠른 액세스** 섹션에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
+1. 원하는 조직을 선택합니다.
+1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
@@ -106,11 +110,11 @@ ht-degree: 39%
 
 1. 경험 감사에 포함될 경로를 제공합니다.
 
-   * 자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)를 참조하십시오.
+   * 자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration)를 참조하십시오.
 
 1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
-파이프라인이 실행되면 경험 감사를 위해 구성된 경로가 성능, 접근성, SEO, 모범 사례 및 PWA 테스트를 기반으로 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
+파이프라인이 실행되면 경험 감사를 위해 구성된 경로가 성능, 접근성, SEO, 모범 사례 및 PWA 테스트를 기반으로 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/reports/report-experience-audit.md)를 참조하십시오.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
@@ -120,8 +124,9 @@ ht-degree: 39%
 
 * **구성** - AEM 환경의 다양한 기능에 대한 설정을 구성합니다.
    * 로그 전달, 제거 관련 유지 관리 작업 및 다양한 CDN 구성을 포함하여 지원되는 구성 목록을 보고 올바르게 배포되도록 저장소에서 관리하려면 [구성 파이프라인 사용](/help/operations/config-pipeline.md)을 참조하십시오.
-   * 타깃팅된 배포 파이프라인을 실행할 때 파이프라인에 정의된 환경, 저장소 및 분기에 저장된 경우 구성이 배포됩니다.
+   * 타깃팅된 배포 파이프라인을 실행할 때 구성이 파이프라인에 정의된 환경, 저장소 및 분기에 저장되면 배포됩니다.
    * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
+* **Edge Delivery Services 구성 파이프라인 구성** - Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 프로덕션 환경이 없습니다. AEM as a Cloud Service에서 변경 사항은 개발, 단계 및 프로덕션 계층을 통해 이동됩니다. 반면 Edge Delivery 구성 파이프라인은 Cloud Manager에 등록된 모든 Edge Delivery Sites 도메인에 해당 구성을 직접 적용합니다. 자세한 내용은 [Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)를 참조하세요.
 * **프론트엔드 코드** - AEM 애플리케이션의 프론트엔드에 맞게 JavaScript 및 CSS를 구성합니다.
    * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
    * 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.

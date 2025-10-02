@@ -1,17 +1,17 @@
 ---
-title: 구성 파이프라인 사용하기
+title: 구성 파이프라인 사용
 description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 AEM as a Cloud Service의 다양한 구성을 배포하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
-# 구성 파이프라인 사용하기 {#config-pipelines}
+# 구성 파이프라인 사용 {#config-pipelines}
 
 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 AEM as a Cloud Service의 다양한 구성을 배포하는 방법에 대해 알아봅니다.
 
@@ -21,16 +21,16 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 
 **게재** 프로젝트의 경우 구성 파이프라인을 Cloud Manager을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다.
 
-구성 파이프라인은 **Edge Delivery** 프로젝트용 Cloud Manager을 통해 배포할 수도 있습니다.
+**Edge Delivery** 프로젝트용 Cloud Manager을 통해 구성 파이프라인을 배포할 수도 있습니다.
 
 이 문서의 다음 섹션에서는 구성 파이프라인을 사용하는 방법 및 그에 대한 구성을 구성하는 방법에 대한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
 
-* [지원되는 구성](#configurations) - 구성 파이프라인으로 배포할 수 있는 구성 목록
+* [지원되는 구성](#configurations) - 구성 파이프라인으로 배포할 수 있는 구성 목록입니다.
 * [구성 파이프라인 만들기 및 관리](#creating-and-managing) - 구성 파이프라인을 만드는 방법
-* [일반 구문](#common-syntax) - 구성 간에 공유된 구문
+* [일반 구문](#common-syntax) - 구성 간에 공유된 구문.
 * [폴더 구조](#folder-structure) - 구성에 필요한 구조 구성 파이프라인을 설명합니다.
-* [비밀 환경 변수](#secret-env-vars) - 환경 변수를 사용하여 구성에 비밀을 표시하지 않는 예입니다.
-* [비밀 파이프라인 변수](#secret-pipeline-vars) - Edge Delivery Services 프로젝트 전에 환경 변수를 사용하여 구성의 비밀을 공개하지 않는 예입니다.
+* [비밀 환경 변수](#secret-env-vars) - 구성에 비밀을 표시하지 않기 위해 환경 변수를 사용하는 예입니다.
+* [비밀 파이프라인 변수](#secret-pipeline-vars) - Edge Delivery Services 프로젝트 전 구성에 비밀을 공개하지 않기 위해 환경 변수를 사용하는 예입니다.
 
 ## 지원되는 구성 {#configurations}
 
@@ -50,9 +50,9 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 콘텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소 최적화 | X |  |
 | [감사 로그 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 로그를 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 감사 로그를 최적화하여 성능 향상 | X |  |
 | [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 로그를 Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 전달하기 위한 끝점 및 자격 증명을 구성합니다. | X | X |
-| [클라이언트 ID 등록](/help/implementing/developing/open-api-based-apis.md) | `API` | 클라이언트 ID를 등록하여 Adobe Developer Console API 프로젝트를 특정 AEM 환경으로 범위 지정합니다. 인증이 필요한 OpenAPI 기반 API를 사용하기 위해 필요합니다 | X |  |
+| [클라이언트 ID 등록](/help/implementing/developing/open-api-based-apis.md) | `API` | 클라이언트 ID를 등록하여 Adobe Developer Console API 프로젝트의 범위를 특정 AEM 환경으로 지정합니다. 인증이 필요한 OpenAPI 기반 API 사용에 필요 | X |  |
 
-## 구성 파이프라인 생성 및 관리 {#creating-and-managing}
+## 구성 파이프라인 만들기 및 관리 {#creating-and-managing}
 
 **게재 게시** 구성 파이프라인을 만들고 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 참조하십시오. Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구성할 때 **전체 스택 코드**&#x200B;이 아닌 **대상 배포**&#x200B;를 선택해야 합니다. 앞에서 설명한 대로 RDE에 대한 구성은 파이프라인이 아닌 [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 배포됩니다.
 
@@ -73,7 +73,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 |---|---|---|
 | `kind` | 로그 전달, 트래픽 필터 규칙 또는 요청 변환 등 구성 유형을 결정하는 문자열 | 필수, 기본값 없음 |
 | `version` | 스키마 버전을 나타내는 문자열 | 필수, 기본값 없음 |
-| `envTypes` | 이 문자열 배열은 `metadata` 노드의 자식 속성입니다. **게시 게재**&#x200B;의 경우 가능한 값은 dev, stage, prod 또는 모든 조합이며, 구성이 처리될 환경 유형을 결정합니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다. **Edge Delivery**&#x200B;의 경우 `prod` 값만 사용해야 합니다. | Publish 전달을 위한 개발, 스테이지, 프로덕션이거나 Edge Delivery을 위한 프로덕션인 모든 환경 유형 |
+| `envTypes` | 이 문자열 배열은 `metadata` 노드의 자식 속성입니다. **Publish 게재**&#x200B;의 경우 가능한 값은 dev, stage, prod 또는 모든 조합이며, 구성이 처리되는 환경 유형을 결정합니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다. **Edge Delivery**&#x200B;의 경우 `prod`의 값만 사용해야 합니다. | Publish 전달을 위한 개발, 스테이지, 프로덕션이거나 Edge Delivery을 위한 프로덕션인 모든 환경 유형입니다. |
 
 `yq` 유틸리티를 사용하여 구성 파일의 YAML 형식을 로컬로 확인할 수 있습니다(예: `yq cdn.yaml`).
 
@@ -98,7 +98,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 
 `/config` 아래의 폴더 이름 및 파일 이름은 임의의 이름입니다. 그러나 YAML 파일에는 올바른 [`kind` 속성 값](#configurations)이(가) 포함되어야 합니다.
 
-일반적으로 구성은 모든 환경에 배포됩니다. 각 환경에 대해 모든 속성 값이 동일하면 단일 YAML 파일로 충분합니다. 하지만 낮은 환경을 테스트하는 등의 경우에는 환경마다 속성 값이 다른 것이 일반적입니다.
+일반적으로 구성은 모든 환경에 배포됩니다. 모든 속성 값이 각 환경에 대해 동일하면 단일 YAML 파일로 충분합니다. 하지만 낮은 환경을 테스트하는 등의 경우에는 환경마다 속성 값이 다른 것이 일반적입니다.
 
 다음 섹션에서는 파일을 구조화하기 위한 몇 가지 전략을 설명합니다.
 
@@ -121,7 +121,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경(또는 파이프라인) 변수를 사용하면 [&#x200B; 참조에 표시된 대로 &#x200B;](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다
+암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [ 참조에 표시된 대로 ](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
 
 ```yaml
 kind: "LogForwarding"
@@ -151,8 +151,7 @@ data:
   logForwarding-prod.yaml
 ```
 
-속성 값에 차이가 있을 수 있는 경우 이 구조를 사용합니다. 예를들어, 파일에서 `envTypes` 배열 값은 접미사와 일치해야 합니다
-값이 `cdn-dev.yaml`인 `logForwarding-dev.yaml` 및 `["dev"]`, 값이 `cdn-stage.yaml`인 `logForwarding-stage.yaml` 및 `["stage"]` 등입니다.
+속성 값에 차이가 있을 수 있는 경우 이 구조를 사용합니다. 파일에서 `envTypes` 배열 값은 접미사와 일치해야 합니다. 예를 들어 값이 `cdn-dev.yaml`인 `logForwarding-dev.yaml` 및 `["dev"]`, 값이 `cdn-stage.yaml`인 `logForwarding-stage.yaml` 및 `["stage"]` 등입니다.
 
 ### 환경당 폴더 {#folder-per-env}
 
@@ -178,7 +177,8 @@ data:
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 프로덕션 환경이 없습니다. 개발, 스테이지 및 프로덕션 계층을 통해 변경 사항이 진행되는 게시 전달 환경과 달리 Edge Delivery 구성 파이프라인을 통해 배포된 구성은 Cloud Manager에 Edge Delivery 사이트와 함께 등록된 모든 도메인 매핑에 직접 적용됩니다.
+Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 프로덕션 환경이 없습니다. 게시 게재 환경에서 변경 사항은 개발, 스테이지 및 프로덕션 계층을 통해 진행됩니다. 반대로 Edge Delivery 구성 파이프라인은 Edge Delivery 사이트에 대해 Cloud Manager에 등록된 모든 도메인 매핑에 직접 구성을 적용합니다.
+
 
 따라서 다음과 같은 간단한 파일 구조를 배포할 수 있습니다.
 
@@ -209,13 +209,13 @@ data:
 
 *envTypes* 메타데이터 필드를 포함하는 경우 값 **prod**&#x200B;만 사용해야 합니다(envTypes 메타데이터 필드 생략). *tier* reqProperty의 경우 값 **publish**&#x200B;만 사용해야 합니다.
 
-## 보안 환경 변수 {#secret-env-vars}
+## 비밀 환경 변수 {#secret-env-vars}
 
 중요한 정보를 소스 제어에 저장할 필요가 없도록 구성 파일은 **secret** 유형의 Cloud Manager 환경 변수를 지원합니다. 로그 전달을 비롯한 일부 구성의 경우 특정 속성에 대해 보안 환경 변수가 필수입니다.
 
 비밀 환경 변수는 게재 프로젝트 게시에 사용됩니다. Edge Delivery Services 프로젝트의 비밀 파이프라인 변수 섹션을 참조하십시오.
 
-아래 코드 조각은 구성에 보안 환경 변수 `${{SPLUNK_TOKEN}}`이(가) 사용되는 방법의 예입니다.
+다음 코드 조각은 구성에 보안 환경 변수 `${{SPLUNK_TOKEN}}`을(를) 사용하는 방법의 예입니다.
 
 ```
 kind: "LogForwarding"
@@ -231,7 +231,7 @@ data:
       index: "AEMaaCS"
 ```
 
-환경 변수를 사용하는 방법에 대한 자세한 내용은 [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 문서를 참조하십시오.
+환경 변수를 사용하는 방법에 대한 자세한 내용은 [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md)를 참조하십시오.
 
 ## 비밀 파이프라인 변수 {#secret-pipeline-vars}
 
@@ -239,5 +239,4 @@ Edge Delivery Services 프로젝트의 경우 **secret** 유형의 Cloud Manager
 
 구문은 이전 섹션에 표시된 코드 조각과 동일합니다.
 
-파이프라인 변수를 사용하는 방법에 대한 자세한 내용은 [Cloud Manager의 파이프라인 변수](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 문서를 참조하십시오.
-
+파이프라인 변수를 사용하는 방법에 대한 자세한 내용은 [Cloud Manager의 파이프라인 변수](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)를 참조하십시오.

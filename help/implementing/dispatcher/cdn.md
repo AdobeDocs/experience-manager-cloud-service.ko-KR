@@ -4,7 +4,7 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 11%
@@ -28,7 +28,7 @@ Edge Delivery Services 계층에 게시하려는 고객은 Adobe의 관리 CDN�
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe Managed CDN {#aem-managed-cdn}
+## Adobe 관리형 CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -136,7 +136,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 디버깅 구성
 
-BYOCDN 구성을 디버깅하려면 값이 `edge=true`인 `x-aem-debug` 헤더를 사용합니다. 예:
+BYOCDN 구성을 디버깅하려면 값이 `x-aem-debug`인 `edge=true` 헤더를 사용합니다. 예:
 
 Linux®:
 
@@ -212,7 +212,7 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 >
 >고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객의 CDN 프록시 서버의 위치를 반영합니다. 고객이 관리하는 CDN을 사용할 때는 고객이 자체 CDN을 통해 지리적 위치 헤더를 관리해야 합니다.
 
-국가 코드 값은 [ISO 3166-1](https://ko.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
+국가 코드 값은 [ISO 3166-1](https://ko.wikipedia.org/wiki/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
 
 대륙 코드의 값은 다음과 같습니다.
 

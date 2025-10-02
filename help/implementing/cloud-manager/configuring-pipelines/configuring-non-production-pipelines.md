@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 72%
+source-wordcount: '1466'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 72%
 
 비프로덕션 파이프라인에는 두 가지 유형이 있습니다.
 
-* **코드 품질 파이프라인** - git 분기의 코드에 대해 코드 품질 스캔을 실행하고 빌드 및 코드 품질 단계를 실행합니다.
+* **코드 품질 파이프라인** - Git 분기의 코드에 대해 코드 품질 스캔을 실행하고 빌드 및 코드 품질 단계를 실행합니다.
 * **배포 파이프라인** - 이러한 파이프라인은 코드 품질 파이프라인과 같은 빌드 및 코드 품질 단계를 실행하는 것 외에도 코드를 비프로덕션 환경에 배포합니다.
 
 >[!NOTE]
@@ -37,9 +37,11 @@ ht-degree: 72%
 
 프로그램을 설정하고 Cloud Manager UI를 사용하는 환경이 하나 이상 있는 경우 다음 단계에 따라 비프로덕션 파이프라인을 추가할 준비가 된 것입니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
-
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. **빠른 액세스** 섹션에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
+1. 원하는 조직을 선택합니다.
+1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.
 
 1. Cloud Manager 홈 화면에서 **파이프라인** 카드에 액세스합니다. **+추가**&#x200B;를 클릭하고 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 
@@ -57,7 +59,7 @@ ht-degree: 72%
    * **배포 트리거** - 다음과 같은 옵션을 사용하여 배포 트리거를 정의하여 파이프라인을 시작할 수 있습니다.
 
       * **수동** - 파이프라인을 수동으로 시작하려면 이 옵션을 사용합니다.
-      * **Git 변경 시** - 이 옵션은 구성된 git 분기에 커밋이 추가될 때마다 CI/CD 파이프라인을 시작합니다. 이 옵션을 사용하면 필요에 따라 파이프라인을 수동으로 시작할 수 있습니다.
+      * **Git 변경 시** - 이 옵션은 구성된 Git 분기에 커밋이 추가될 때마다 CI/CD 파이프라인을 시작합니다. 이 옵션을 사용하면 필요에 따라 파이프라인을 수동으로 시작할 수 있습니다.
 
 1. **배포 파이프라인**&#x200B;을 만드는 경우, **중요 지표 실패 비헤이비어**&#x200B;도 정의해야 합니다.
 
@@ -103,7 +105,7 @@ ht-degree: 72%
       * **제품 기능 테스트** - 개발 환경에 대해 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)를 실행합니다.
       * **사용자 정의 기능 테스트** - 개발 환경에 대해 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 실행합니다.
       * **사용자 정의 UI 테스트** - 사용자 정의 애플리케이션에 대한 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)를 실행합니다.
-      * **경험 감사** - [경험 감사 실행](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+      * **경험 감사** - [경험 감사 실행](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -117,15 +119,17 @@ ht-degree: 72%
 
 * **구성** - AEM 환경의 다양한 기능에 대한 설정을 구성합니다.
    * 로그 전달, 제거 관련 유지 관리 작업 및 다양한 CDN 구성을 포함하여 지원되는 구성 목록을 보고 올바르게 배포되도록 저장소에서 관리하려면 [구성 파이프라인 사용](/help/operations/config-pipeline.md)을 참조하십시오.
-   * 타깃팅된 배포 파이프라인을 실행할 때 구성이 파이프라인에 정의된 환경, 저장소 및 분기에 저장되면 배포됩니다.
+   * 타깃팅된 배포 파이프라인을 실행할 때 파이프라인에 정의한 환경, 저장소 및 분기에 저장되면 구성이 배포됩니다.
    * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
+* **Edge Delivery Services 구성 파이프라인 구성** - Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 프로덕션 환경이 없습니다. AEM as a Cloud Service에서 변경 사항은 개발, 단계 및 프로덕션 계층을 통해 이동됩니다. 반면 Edge Delivery 구성 파이프라인은 Cloud Manager에 등록된 모든 Edge Delivery Sites 도메인에 해당 구성을 직접 적용합니다. 자세한 내용은 [Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)를 참조하세요.
 * **프론트엔드 코드** - AEM 애플리케이션의 프론트엔드에 맞게 JavaScript 및 CSS를 구성합니다.
    * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
    * 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
-* **웹 계층 구성** - 웹 페이지를 저장, 처리 및 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
+* **웹 계층 구성** - 웹 페이지를 저장하고 처리하고 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
    * 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 문서를 참조하십시오.
    * 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
-   * 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
+   * 전체 스택 파이프라인이 이미 환경에 배포된 경우에도 동일한 환경에 대한 웹 계층 구성 파이프라인을 만들 수 있습니다. 이 경우 Cloud Manager에서는 전체 스택 파이프라인의 웹 계층 구성을 무시합니다.
+
 
 >[!NOTE]
 >
@@ -152,13 +156,13 @@ ht-degree: 72%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
-   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 **[경험 감사](/help/implementing/cloud-manager/experience-audit-dashboard.md)**&#x200B;를 활성화할 수 있습니다.
+   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 **[경험 감사](/help/implementing/cloud-manager/reports/report-experience-audit.md)**&#x200B;를 활성화할 수 있습니다.
 
    ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. 경험 감사를 활성화한 경우 **계속**&#x200B;을 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
 
-   * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/experience-audit-dashboard.md) 문서를 참조하십시오.
+   * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/reports/report-experience-audit.md) 문서를 참조하십시오.
    * 그렇지 않은 경우 이 단계를 건너뜁니다.
 
 1. **저장**&#x200B;을 클릭하여 파이프라인을 저장합니다.
@@ -167,9 +171,9 @@ ht-degree: 72%
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 
-Dispatcher 패키지를 파이프라인의 일부로 빌드하고 싶지만 스토리지를 빌드하기 위해 게시하지 않으려는 경우, 게시를 비활성화하면 파이프라인 실행 기간이 단축될 수 있습니다.
+Dispatcher 패키지를 파이프라인에서 빌드하고 싶지만 스토리지를 빌드하기 위해 업로드하지 않으려면 게시를 비활성화합니다. 이렇게 하면 파이프라인의 실행 시간을 단축할 수 있습니다.
 
-Dispatcher 패키지 게시를 비활성화하려면 프로젝트 `pom.xml` 파일을 통해 다음 구성을 추가해야 합니다. 이는 환경 변수를 기반으로 하며, Cloud Manager 빌드 컨테이너에서 Dispatcher 패키지를 무시해야 하는 시기를 정의할 때 설정할 수 있는 플래그 역할을 합니다.
+Dispatcher 패키지 게시를 비활성화하려면 프로젝트 `pom.xml` 파일을 통해 다음 구성을 추가해야 합니다. Cloud Manager 빌드 컨테이너에서 환경 변수를 설정하여 Dispatcher 패키지를 무시할 때 플래그를 지정합니다. 파이프라인은 이 플래그를 읽고 그에 따라 이를 무시합니다.
 
 ```xml
 <profile>

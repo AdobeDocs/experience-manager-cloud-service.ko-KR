@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
+source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 4%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 4%
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
 * 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
-* **배포된 이전 코드 복원**&#x200B;은(는) `Development` 환경, `Stage` 환경 또는 `Specialized Testing Environment`에서 수행할 수 있습니다.
+
+**배포된 이전 코드 복원**&#x200B;은(는) `Production` 환경, `Development` 환경 및 `Stage` 외에도 `Specialized Testing Environment` 환경에서 작동합니다. 확인을 하면 Cloud Manager이 복원을 시작하고 성공적으로 완료되면 푸시 알림을 전송합니다.
+
+>[!IMPORTANT]
+>
+>Adobe은 위험을 줄이고 안정성을 보장하기 위해 `Stage`의 *before*&#x200B;에서 `Production`에서 이 프로시저를 사용하는 것을 강력히 권장합니다.
+
 
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
 

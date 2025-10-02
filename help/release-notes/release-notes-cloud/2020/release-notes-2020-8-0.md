@@ -1,31 +1,31 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
-description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트.
+description: '[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 35%
 
 ---
 
-# as a Cloud Service [!DNL Adobe Experience Manager] 2.020.0 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.8.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 
-## as a Cloud Service [!DNL Adobe Experience Manager Sites] {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
 * [페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 복원](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)하는 기능.
 
-* AEM [SPA 편집기](/help/implementing/developing/hybrid/introduction.md)에서 [시작 만들기](/help/sites-cloud/authoring/launches/overview.md)를 할 수 있습니다.
+* AEM [SPA 편집기](/help/sites-cloud/authoring/launches/overview.md)에서 [시작 만들기](/help/implementing/developing/hybrid/introduction.md)를 할 수 있습니다.
 
 
-## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
@@ -42,11 +42,11 @@ ht-degree: 35%
 
 * 처리 프로필을 사용하여 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성합니다. [처리 프로필을 사용한 사용자 지정 메타데이터](/help/assets/manage-metadata.md#metadata-compute-service)를 참조하십시오.
 
-* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 다운로드 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko#download-configurations)를 참조하세요.
+* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 다운로드 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)를 참조하세요.
 
-* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko#doc-viewer)를 참조하세요.
+* 이제 Brand Portal에서 기본 및 고품질 PDF 문서 미리보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)를 참조하세요.
 
-* 이제 AEM as a Cloud Service의 [!DNL Dynamic Media]에서 직접 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다([!DNL Dynamic Media Classic] 사용이 아니라). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 에셋을 제공할 수 있습니다. [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)를 참조하십시오.
+* 이제 AEM as a Cloud Service의 [!DNL Dynamic Media]에서 직접 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다([!DNL Dynamic Media Classic] 사용이 아니라). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 에셋을 제공할 수 있습니다. [Dynamic Media를 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)를 참조하십시오.
 
 * 향상된 액세스 가능성 지원이 [!DNL Assets]의 사용자 인터페이스 컨트롤, 탐색, 찾아보기 및 검색 환경에 추가되었습니다.
 
@@ -78,13 +78,13 @@ ht-degree: 35%
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
-* 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 Sites가 있는 프로그램의 프로덕션 파이프라인 구성에 **콘텐츠 감사**&#x200B;라는 세 번째 탭이 포함됩니다. 프로덕션 파이프라인이 실행될 때마다 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)을 포함한 여러 차원에 대해 사이트를 평가하는 사용자 정의 기능 테스트 후 새로운 콘텐츠 감사 단계가 파이프라인에 포함됩니다.
+* 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 Sites가 있는 프로그램의 프로덕션 파이프라인 구성에 **콘텐츠 감사**&#x200B;라는 세 번째 탭이 포함됩니다. 프로덕션 파이프라인이 실행될 때마다 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)를 포함한 여러 차원에 대해 사이트를 평가하는 사용자 정의 기능 테스트 후 새로운 콘텐츠 감사 단계가 파이프라인에 포함됩니다.
 
 
   >[!NOTE]
   >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
 
-  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
+  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/reports/report-experience-audit.md)를 참조하십시오.
 
 * Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 
@@ -134,7 +134,7 @@ ht-degree: 35%
 
 * 이전 버전 UI는 로그에 오류가 표시되었지만 성공한 추출이 표시되는 경우가 있습니다.
 
-## 코드 리팩터링 도구 {#code-refactoring-tools}
+## 코드 리팩토링 도구 {#code-refactoring-tools}
 
 코드 리팩터링 도구의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
 

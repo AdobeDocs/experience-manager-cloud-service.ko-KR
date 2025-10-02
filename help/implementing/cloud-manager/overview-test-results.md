@@ -1,14 +1,14 @@
 ---
 title: Cloud Manager 테스트 개요
-description: Cloud Manager가 사용자 정의 코드의 품질을 보장하기 위해 자동으로 실행하는 세 가지 테스트 유형에 대한 개요를 확인합니다.
+description: Cloud Manager이 사용자 지정 코드의 품질을 보장하기 위해 자동으로 실행하는 세 가지 테스트 유형에 대한 개요를 확인합니다.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 100%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,9 +25,9 @@ Cloud Manager for Cloud Services 파이프라인에서 지원하는 테스트에
 
 1. [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 기능 테스트는 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 단계 테스트 단계의 일부이며, 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 테스트 단계의 일부입니다.
+   * 기능 테스트는 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 스테이징 테스트 단계 동안 실행됩니다. 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)의 테스트 단계 동안 실행될 수도 있습니다.
 
-1. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [경험 감사 테스트](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    * 경험 감사 테스트는 모든 Cloud Manager 프로덕션 파이프라인에서 활성화되며 건너뛸 수 없습니다.
 

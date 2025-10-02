@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 7%
+source-wordcount: '1323'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="기능 테스트"
->abstract="코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아보십시오."
+>abstract="AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다. 테스트는 코드의 품질과 신뢰성을 보장합니다."
 
 [AEM as a Cloud Service 배포 프로세스](/help/implementing/cloud-manager/deploy-code.md)에서 사용할 수 있는 품질 게이트와 다양한 유형의 기본 기능 테스트를 살펴보십시오. 포괄적인 테스트 전략의 프레임워크 내에서 활용을 기여하고 최적화하는 방법에 대해 알아봅니다.
 
@@ -58,7 +58,7 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 
 모든 테스트 전략의 기반이 되는 AEM 애플리케이션에 대한 단위 테스트를 제공하는 것이 좋습니다. 빠르고 자주 실행하고 일찍 빠르게 피드백을 제공하도록 설계되었습니다. 개발자 워크플로우, 고유한 CI/CD 및 AEM 클라우드 서비스 배포 파이프라인에 긴밀하게 통합됩니다.
 
-JUnit을 사용하여 구현되고 Maven로 실행됩니다. AEM 및 시작에 대한 단위 테스트의 예는 AEM Project Archetype의 [코어 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)을 참조하십시오.
+JUnit을 사용하여 구현되고 Maven로 실행됩니다. AEM 및 시작에 대한 단위 테스트의 예는 AEM Project Archetype의 [코어 모듈](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)을 참조하십시오.
 
 ### 코드 품질
 
@@ -111,7 +111,7 @@ JUnit을 사용하여 구현되고 Maven로 실행됩니다. AEM 및 시작에 �
 
 이 품질 게이트는 AEM에서 기본적으로 제공하지만 배포 파이프라인을 차단하지 않습니다. 기본적으로 게시 인스턴스의 루트 페이지(`/`)에 대한 감사가 수행됩니다. 감사에 고려되는 최대 25개의 사용자 지정 경로를 구성하여 기여할 수 있습니다.
 
-자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
+자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/reports/report-experience-audit.md)를 참조하십시오.
 
 ### 고객 유효성 검사
 

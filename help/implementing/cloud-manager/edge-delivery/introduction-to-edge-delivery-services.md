@@ -4,10 +4,10 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '823'
-ht-degree: 100%
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 93%
 
 ---
 
@@ -40,10 +40,10 @@ Cloud Manager를 통해 Edge Delivery Services 라이선스에 액세스하고 �
 
 * [선택한 프로그램에서 라이선스를 사용하거나](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) [다른 프로그램을 업데이트하거나](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md), 두 가지 모두를 수행할 수 있습니다.
 * CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 때 [API 우선](https://developer.adobe.com/experience-cloud/experience-manager-apis/)의 이점을 활용할 수 있습니다.
-* [SLA 보고 액세스](/help/implementing/cloud-manager/sla-reporting.md) (*곧 제공 예정*)
+* [SLA 보고 액세스](/help/implementing/cloud-manager/reports/report-sla.md)
 * 등록된 프로덕션 프로그램에 대한 [Adobe 지원에 액세스합니다.](/help/edge/overview.md#support-ticket)
 
-Edge Delivery Services(EDS) 라이선스가 있는 경우, Edge Delivery Site에 대해 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 셀프서비스 CDN 관리 및 매 3개월 DV 인증서 자동 갱신과 같은 기능을 활용할 수 있습니다(삭제하지 않는 한).
+EDS(Edge Delivery Services) 라이선스가 있는 경우 Edge Delivery 사이트에 대해 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용할 수 있습니다. 이렇게 하면 인증서를 삭제하지 않는 한 3개월마다 자동으로 갱신되는 셀프서비스 CDN 관리 및 DV 인증서가 활성화됩니다.
 
 또는 Edge Delivery Services 라이선스와 관계없이 CDN(즉, Adobe에서 관리하지 않는 CDN)을 사용하려는 경우, `aem.live` 플랫폼에서 이를 구성해야 합니다. [BYO CDN 설정](https://www.aem.live/docs/byo-cdn-setup)을 참조하십시오.
 
@@ -87,7 +87,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 8 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 9 | 실행 | [실행 체크리스트](https://www.aem.live/docs/go-live-checklist)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 
