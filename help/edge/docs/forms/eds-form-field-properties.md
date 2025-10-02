@@ -1,51 +1,51 @@
 ---
-title: 적응형 Forms 블록 필드 속성 마스터링
-description: 스프레드시트 및 적응형 Forms 블록 필드 속성을 사용하여 강력한 양식을 보다 신속하게 제작할 수 있습니다! 이 안내서에는 EDS Forms 블록에서 지원하는 모든 속성이 나열되어 있습니다.
+title: 적응형 양식 블록 필드 속성 마스터하기
+description: 스프레드시트 및 적응형 양식 블록 필드 속성을 사용하여 강력한 양식을 더 빠르게 작성할 수 있습니다. 이 안내서에는 EDS Forms Block에서 지원하는 속성이 모두 나열됩니다.
 feature: Edge Delivery Services
-source-git-commit: ccc6439f68d8199154d4cd664b9cdb6428460a64
-workflow-type: tm+mt
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
+# 적응형 양식 블록 필드 속성
 
-# 적응형 Forms 블록 필드 속성
-
-이 문서에서는 필드를 식별하고 렌더링하는 방법, 일반적인 패턴 및 필드별 차이점을 중심으로 JSON 스키마가 `blocks/form/form.js`에서 렌더링된 HTML에 매핑되는 방법을 요약합니다.
+이 문서는 JSON 스키마가 `blocks/form/form.js`에서 렌더링된 HTML로 매핑되는 방식을 요약하며, 필드가 식별되고 렌더링되는 방식, 일반적인 패턴 및 필드별 차이점에 중점을 둡니다.
 
 ## 필드(`fieldType`)를 식별하는 방법
 
-JSON 스키마의 각 필드에는 렌더링 방법을 결정하는 `fieldType` 속성이 있습니다. `fieldType`은(는) 다음과 같을 수 있습니다.
+JSON 스키마의 각 필드에는 렌더링 방식을 결정하는 `fieldType` 속성이 있습니다. `fieldType`는 다음과 같습니다.
 
-- **특수 형식**\
+- **특수 유형**\
   예: `drop-down`, `radio-group`, `checkbox-group`, `panel`, `plain-text`, `image`, `heading` 등
 - **올바른 HTML 입력 유형**\
   예: `text`, `number`, `email`, `date`, `password`, `tel`, `range`, `file` 등
-- **접미사가 `-input`인 형식**\
-  예: `text-input`, `number-input` 등 (`text`, `number` 등 기본 형식으로 표준화됨).
+- **`-input` 접미사가 있는 유형**\
+  예: `text-input`, `number-input` 등 (이는 `text`, `number`와 같은 기본 유형으로 표준화됩니다.)
 
-`fieldType`이(가) 특수 형식과 일치하는 경우 **사용자 지정 렌더러**&#x200B;가 사용됩니다. 그렇지 않으면 **기본 입력 형식**(으)로 처리됩니다.
+`fieldType`가 특수 유형과 일치하는 경우 **사용자 정의 렌더러**&#x200B;가 사용됩니다. 그렇지 않으면 **기본 입력 유형**&#x200B;으로 처리됩니다.
 
-각 필드 형식에 대한 [전체 HTML 구조 및 속성](#common-html-structure)에 대해서는 아래 섹션을 참조하십시오.
+각 필드 유형에 대한 [전체 HTML 구조 및 속성](#common-html-structure)에 대한 아래 섹션을 참조하십시오.
 
-## 필드에서 사용하는 공통 속성
+## 필드에 사용되는 공통 속성
 
-다음은 대부분의 필드에서 사용하는 속성입니다.
+다음은 대부분의 필드에서 사용되는 속성입니다.
 
-- `id`: 요소 ID를 지정하고 액세스 가능성을 지원합니다.
-- `name`: 입력, 선택 또는 필드 집합 요소에 대한 `name` 특성을 정의합니다.
-- `label.value`, `label.richText`, `label.visible`: 레이블/범례 텍스트, HTML 컨텐츠 및 가시성을 지정합니다.
+- `id`: 요소 ID를 지정하고 접근성을 지원합니다.
+- `name`: 입력, 선택 또는 필드 세트 요소의 `name` 속성을 정의합니다.
+- `label.value`, `label.richText`, `label.visible`: 레이블/범례 텍스트, HTML 콘텐츠 및 가시성을 지정합니다.
 - `value`: 필드의 현재 값을 나타냅니다.
-- `required`: `required` 특성 또는 유효성 검사 데이터를 추가합니다.
-- `readOnly`, `enabled`: 필드를 편집할 수 있는지 여부를 제어합니다.
+- `required`: `required` 속성 또는 유효성 검사 데이터를 추가합니다.
+- `readOnly`, `enabled`: 필드를 편집 또는 비활성화할 수 있는지 여부를 제어합니다.
 - `description`: 필드 아래에 도움말 텍스트를 표시합니다.
-- `tooltip`: 입력에 대한 `title` 특성을 설정합니다.
-- `constraintMessages`: 사용자 지정 오류 메시지를 데이터 특성으로 제공합니다.
+- `tooltip`: 입력에 대한 `title` 속성을 설정합니다.
+- `constraintMessages`: 데이터 속성으로 사용자 정의 오류 메시지를 제공합니다.
 
-## 공통 HTML 구조
+## 일반적인 HTML 구조
 
-대부분의 필드는 레이블과 선택적 도움말 텍스트가 포함된 래퍼 내에서 렌더링됩니다. 다음 코드 조각은 구조를 보여 줍니다.
+대부분의 필드는 레이블 및 선택적 도움말 텍스트를 포함하는 래퍼 내에서 렌더링됩니다. 다음 코드 조각은 구조를 보여 줍니다.
 
 ```html
 <div class="<fieldType>-wrapper field-wrapper field-<name>" data-id="<id>">
@@ -56,59 +56,59 @@ message</div>
 </div>
 ```
 
-그룹(라디오/확인란) 및 패널의 경우 `<fieldset>` 대신 `<legend>`이(가) 있는 `<div>/<label>`이(가) 사용됩니다. 도움말 텍스트 <div> 설명 이 설정된 경우에만 표시됩니다.
+그룹(라디오/확인란) 및 패널의 경우, `<div>/<label>` 대신 `<legend>`가 있는 `<fieldset>`이 사용됩니다. 도움말 텍스트 <div> 설명이 설정된 경우에만 표시됩니다.
 
 ## 오류 메시지 표시
 
-오류 메시지는 도움말 텍스트에 사용되는 것과 동일한 `.field-description` 요소에 표시되며 동적으로 업데이트됩니다.
+오류 메시지는 도움말 텍스트에 사용되는 것과 동일한 `.field-description` 요소에 표시되며, 동적으로 업데이트됩니다.
 
-**필드가 잘못된 경우**:
+**필드가 유효하지 않은 경우**:
 
-- 래퍼(예: `.field-wrapper`)에 `.field-invalid` 클래스가 할당되었습니다.
+- 래퍼(예: `.field-wrapper`)에 클래스 `.field-invalid`가 할당됩니다.
 - `.field-description` 콘텐츠가 해당 오류 메시지로 대체됩니다.
 
 **필드가 유효해지는 경우**:
 
-- `.field-invalid` 클래스가 제거되었습니다.
-- `.field-description`이(가) 원래 도움말 텍스트로 복원되거나(사용 가능한 경우) 존재하지 않는 경우 제거됩니다.
+- `.field-invalid` 클래스가 제거됩니다.
+- `.field-description`은 원래 도움말 텍스트(사용 가능한 경우)로 복원되거나 존재하지 않으면 제거됩니다.
 
-사용자 지정 오류 메시지는 JSON의 `constraintMessages` 속성을 사용하여 정의할 수 있습니다.\
-래퍼에 `data-<constraint>ErrorMessage` 특성으로 추가됩니다(예: `data-requiredErrorMessage`).
+JSON의 `constraintMessages` 속성을 사용하여 사용자 정의 오류 메시지를 정의할 수 있습니다.\
+이러한 메시지는 래퍼에 `data-<constraint>ErrorMessage` 속성(예: `data-requiredErrorMessage`)으로 추가됩니다.
 
 ## 기본 입력 유형(HTML 입력 또는 `*-input`)
 
-`fieldType`이(가) 특수 형식이 아닌 경우 표준 HTML 입력 형식 또는 `<type>-input`(예: `text`, `number`, `email`, `date`, `text-input`, `number-input`)으로 처리됩니다.
+`fieldType`이 특수 유형이 아닌 경우 표준 HTML 입력 형식 또는 `<type>-input`(예: `text`, `number`, `email`, `date`, `text-input`, `number-input`)으로 처리됩니다.
 
-- 접미사 `-input`이(가) 제거되고 기본 형식이 입력의 `type` 특성으로 사용됩니다.
-- 이러한 형식은 기본적으로 `renderField()`에서 처리됩니다.
-일반적인 기본 입력 유형은 `text`, `number`, `email`, `date`, `password`, `tel`, `range`, `file` 등입니다.  또한 기본 형식에 정규화된 `text-input`, `number-input` 등도 허용합니다.
+- 접미사 `-input`은 제거되고, 기본 유형은 입력의 `type` 속성으로 사용됩니다.
+- 이러한 유형은 `renderField()`에서 기본적으로 처리됩니다.
+일반적인 기본 입력 유형은 `text`, `number`, `email`, `date`, `password`, `tel`, `range`, `file` 등입니다. 또한 `text-input`, `number-input` 등과 같이 기본 유형으로 표준화된 유형도 허용됩니다.
 
 ## 기본 입력 유형에 대한 제한
 
-제약 조건은 JSON 속성에 따라 입력 요소에 속성으로 추가됩니다.
+제한은 JSON 속성을 기반으로 입력 요소에 속성으로 추가됩니다.
 
 | JSON 속성 | HTML 속성 | 적용 대상 |
 |--------------|---------------|------------|
-| maxLength | maxlength | 텍스트, 이메일, 암호, 전화 |
-| minLength | minlength | 텍스트, 이메일, 암호, 전화 |
+| maxLength | maxLength | 텍스트, 이메일, 암호, 전화 |
+| minLength | minLength | 텍스트, 이메일, 암호, 전화 |
 | 패턴 | 패턴 | 텍스트, 이메일, 암호, 전화 |
 | 최대 | 최대 | 숫자, 범위, 날짜 |
-| 최소값 | 분 | 숫자, 범위, 날짜 |
+| 최소 | 분 | 숫자, 범위, 날짜 |
 | 단계 | 단계 | 숫자, 범위, 날짜 |
 | 동의 | 동의 | 파일 |
-| 복수 | 복수 | 파일 |
-| maxOccurs | data-max | 패널 |
-| minOccurs | data-min | 패널 |
+| 다중 | 다중 | 파일 |
+| maxOccur | data-max | 패널 |
+| minOccur | data-min | 패널 |
 
 >[!NOTE]
 >
-> `multiple`은(는) 부울 속성입니다. true이면 `multiple` 특성이 추가됩니다.
+> `multiple`은 부울 속성입니다. 참인 경우 `multiple` 속성이 추가됩니다.
 
 이러한 속성은 필드의 JSON 정의를 기반으로 양식 렌더러에 의해 자동으로 설정됩니다.
 
 ## 예: 제약 조건이 있는 HTML 구조
 
-다음 예제에서는 유효성 검사 제약 조건 및 오류 처리 특성을 사용하여 숫자 필드를 렌더링하는 방법을 보여 줍니다.
+다음 예는 유효성 검사 제약 조건 및 오류 처리 속성을 사용하여 숫자 필드가 렌더링되는 방식을 보여 줍니다.
 
 ```html
 <div class="number-wrapper field-wrapper field-age" data-id="age"
@@ -125,7 +125,7 @@ placeholder="Enter your age" />
 </div>
 ```
 
-HTML 구조의 각 부분은 데이터 바인딩, 유효성 검사 및 도움말 또는 오류 메시지 표시에 역할을 합니다.
+HTML 구조의 각 부분은 데이터 바인딩, 유효성 검사, 도움말 또는 오류 메시지 표시에 역할을 합니다.
 
 ## 필드별 속성 및 해당 HTML 구조
 
@@ -133,9 +133,9 @@ HTML 구조의 각 부분은 데이터 바인딩, 유효성 검사 및 도움말
 
 **추가 속성:**
 
-- `enum` / `enumNames`: 드롭다운에 대한 옵션 값과 표시 레이블을 정의합니다.
-- `type`: `array`(으)로 설정된 경우 다중 선택을 활성화합니다.
-- `placeholder`: 선택하기 전에 사용자를 안내하는 비활성화된 자리 표시자 옵션을 추가합니다.
+- `enum` / `enumNames`: 드롭다운의 옵션 값과 표시 레이블을 정의합니다.
+- `type`: `array`로 설정된 경우 다중 선택을 활성화합니다.
+- `placeholder`: 선택 전에 사용자를 안내하는 비활성화된 플레이스홀더 옵션을 추가합니다.
 
 예:
 
@@ -158,7 +158,7 @@ data-requiredErrorMessage="This field is required">
 
 **추가 속성**:
 
-- `richText`: true인 경우 단락에서 HTML을 렌더링합니다.
+- `richText`: 참인 경우 단락에 HTML을 렌더링합니다.
 
 예:
 
@@ -173,8 +173,8 @@ data-requiredErrorMessage="This field is required">
 
 **추가 속성**:
 
-- `enum`: 확인란의 선택된 상태와 선택되지 않은 상태에 대한 값을 정의합니다.
-- `properties.variant / properties.alignment`: 스위치 스타일 확인란의 시각적 스타일과 정렬을 지정합니다.
+- `enum`: 확인란의 선택 및 선택 해제 상태에 대한 값을 정의합니다.
+- `properties.variant / properties.alignment`: 스위치 스타일 확인란의 시각적 스타일 및 정렬을 지정합니다.
 
 예:
 
@@ -197,7 +197,7 @@ data-unchecked-value="off" />
 
 **추가 속성**:
 
-- `buttonType`: 단추 유형(단추, 전송 또는 재설정)을 설정하여 단추의 동작을 지정합니다.
+- `buttonType`: 유형(버튼, 제출, 또는 재설정)을 설정하여 버튼의 비헤이비어를 지정합니다.
 
 예:
 
@@ -214,8 +214,8 @@ data-unchecked-value="off" />
 
 - `minLength`: 텍스트 또는 텍스트 영역 입력에 허용되는 최소 문자 수를 지정합니다.
 - `maxLength`: 텍스트 또는 텍스트 영역 입력에 허용되는 최대 문자 수를 지정합니다.
-- `pattern`: 입력 값이 일치해야 유효한 것으로 간주되는 정규 표현식을 정의합니다.
-- `placeholder`: 값을 입력할 때까지 입력 또는 텍스트 영역 내에 자리 표시자 텍스트를 표시합니다.
+- `pattern`: 입력 값이 유효한 것으로 간주되려면 일치해야 하는 정규 표현식을 정의합니다.
+- `placeholder`: 값이 입력될 때까지 입력 또는 텍스트 영역 내에 플레이스홀더 텍스트를 표시합니다.
 
 예:
 
@@ -239,11 +239,11 @@ placeholder="Type here..."></textarea>
 **추가 속성**:
 
 - `repeatable`: 패널을 동적으로 반복할 수 있는지 여부를 지정합니다.
-- `minOccur`: 필요한 최소 패널 인스턴스 수를 설정합니다.   maxOccur: 허용되는 최대 패널 인스턴스 수를 설정합니다.
+- `minOccur`: 필요한 최소 패널 인스턴스 수를 설정합니다. maxOccur: 허용되는 최대 패널 인스턴스 수를 설정합니다.
 - `properties.variant`: 패널의 시각적 스타일 또는 변형을 정의합니다.
-- `properties.colspan`: 격자 레이아웃에서 패널이 걸쳐 있는 열의 수를 지정합니다.
-- `index`: 부모 컨테이너 내의 패널 위치를 나타냅니다.
-- `fieldset`: `<fieldset>` 요소 아래에 범례 또는 레이블을 사용하여 관련 필드를 그룹화합니다.
+- `properties.colspan`: 격자 레이아웃에서 패널이 차지하는 열 수를 지정합니다.
+- `index`: 상위 컨테이너 내에서 패널의 위치를 나타냅니다.
+- `fieldset`: 범례 또는 레이블이 있는 `<fieldset>` 요소 아래에 관련 필드를 그룹화합니다.
 
 예:
 
@@ -264,7 +264,7 @@ data-repeatable="true" data-index="0">
 
 **추가 속성**:
 
-- `enum`: 각 라디오 단추 옵션에 대한 값 특성으로 사용되는 라디오 필드에 대해 허용되는 값 집합을 정의합니다.
+- `enum`: 라디오 필드에 허용되는 값 세트를 정의하며, 각 라디오 버튼 옵션의 값 속성으로 사용됩니다.
 
 예:
 
@@ -282,8 +282,8 @@ data-required="true">
 
 **추가 속성**:
 
-- `enum`: 각 라디오 단추의 값으로 사용되는 라디오 그룹의 옵션 값 목록을 정의합니다.
-- `enumNames`: 열거형의 순서와 일치하는 라디오 단추의 표시 레이블을 제공합니다.
+- `enum`: 라디오 그룹의 옵션 값 목록을 정의하며, 각 라디오 버튼의 값으로 사용됩니다.
+- `enumNames`: enum의 순서와 일치하는 라디오 버튼의 표시 레이블을 제공합니다.
 
 예:
 
@@ -308,10 +308,10 @@ data-required="true">
 
 **추가 속성**:
 
-- `enum`: 각 확인란의 값으로 사용되는 확인란 그룹의 옵션 값 목록을 정의합니다.
-- `enumNames`: 열거형의 순서와 일치하는 확인란의 표시 레이블을 제공합니다.
+- `enum`: 확인란 그룹의 옵션 값 목록을 정의하며, 각 확인란의 값으로 사용됩니다.
+- `enumNames`: enum의 순서와 일치하는 확인란의 표시 레이블을 제공합니다.
 - `minItems`: 유효성을 위해 선택해야 하는 최소 확인란 수를 설정합니다.
-- `maxItems`: 오류를 트리거하기 전에 선택할 수 있는 최대 확인란 수를 설정합니다.
+- `maxItems`: 오류가 트리거되기 전에 선택할 수 있는 최대 확인란 수를 설정합니다.
 
 예:
 
@@ -337,8 +337,8 @@ data-maxItems="3">
 
 **추가 속성**:
 
-- `value / properties['fd:repoPath']`: 이미지를 렌더링할 이미지 원본 경로 또는 저장소 경로를 정의합니다.
-- `altText`: 접근성을 개선하기 위해 이미지(alt 특성)에 대체 텍스트를 제공합니다.
+- `value / properties['fd:repoPath']`: 이미지를 렌더링하기 위한 이미지 소스 경로 또는 저장소 경로를 정의합니다.
+- `altText`: 이미지의 대체 텍스트(대체 속성)를 제공하여 접근성을 개선합니다.
 
 예:
 
@@ -394,4 +394,3 @@ This table details all the properties you can use to customize your Adaptive For
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
 | **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-
