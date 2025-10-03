@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '433'
 ht-degree: 42%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 42%
 * GRANITE-56026: 권한 API 상태 코드 응답을 개선합니다.
 * GRANITE-61015: 공용 내보내기 목록에 `org.apache.commons.io.channels` 패키지를 추가했습니다.
 * GRANITE-61167: Felix 로그가 최신 OSGI 사양으로 업데이트되었습니다.
-* GRANITE-61167: Felix 종속성을 업데이트합니다.
+* GRANITE-61167: 여러 Apache Felix 종속성을 업데이트합니다.
 * GRANITE-61169: 보호된 문자열에 대한 검사를 개선합니다.
-* GRANITE-61622: 슬링 종속성을 업데이트합니다.
+* GRANITE-61622: 여러 Apache Sling 종속성을 업데이트합니다.
 * GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2`을(를) 빠른 시작에 추가합니다.
 * GRANITE-61811: `com.adobe.granite.repository-2.0.0`을(를) 빠른 시작에 추가합니다.
 * SITES-32014: 외부 이벤트를 수신하여 서비스 등록을 업데이트합니다.
