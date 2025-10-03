@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 22%
+source-wordcount: '1953'
+ht-degree: 21%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -112,6 +112,12 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 계정 설정에 액세스할 사용자를 나타내는 아이콘을 선택합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
 
 ![사용자 속성](assets/user-properties.png)
+
+계정 아이콘을 탭하거나 클릭하면 사용자 설정이 있는 메뉴가 열립니다. 이러한 설정은 일반적으로 Cloud Manager에 적용되며 해당 설명서에서 해당 기능에 대해 자세히 [설명합니다.](/help/implementing/cloud-manager/navigation.md)
+
+![환경 전환기](assets/environment-switcher.png)
+
+유니버설 편집기의 경우 [미리 보기 서비스를 사용할 수 있는 경우](/help/sites-cloud/authoring/sites-console/previewing-content.md) **제품 설정** 제목 아래에서 프로덕션 환경과 미리 보기 환경 간을 전환할 수 있는 옵션도 있습니다.
 
 ### 범용 편집기 도구 모음 {#universal-editor-toolbar}
 
