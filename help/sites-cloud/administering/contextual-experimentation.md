@@ -3,14 +3,14 @@ title: AEM as a Cloud Service의 컨텍스트 기반 실험
 description: 실험 플러그인을 사용하여 사이트에 실험 기능을 추가하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# 개요 {#overview}
+# AEM as a Cloud Service의 컨텍스트 기반 실험 {#contextual-experimentation}
 
 >[!NOTE]
 >현재 상황별 실험 기능은 Beta 프로그램을 통해서만 사용할 수 있습니다. Beta 프로그램에 액세스하려면 Adobe 지원 센터 또는 계정 관리자에게 문의하십시오.
@@ -55,7 +55,7 @@ Adobe Experience Manager에서 실행 중인 사이트의 경우 개발자가 �
 
 ### 실험 식별자 {#experiment-identifier}
 
-시작하기 전에 모든 실험에는 추적 및 분석 목적으로 자체 식별자가 있어야 합니다. 좋은 시작점은 &quot;실험 ID&quot;가 될 실험에 대한 좋고 고유한 식별자를 마련하는 것입니다. 실험에는 종종 문제 추적기 또는 관리 시스템에서 해당 문제 ID에 선형적으로 번호가 매겨지거나 상관 관계가 있습니다. 실험 ID는 종종 프로젝트 접두사를 사용합니다(예: OPT-0134, EXP0004 또는 CCX0076).
+시작하기 전에 모든 실험에는 추적 및 분석 목적으로 자체 식별자가 있어야 합니다. 좋은 시작점은 &quot;실험 ID&quot;가 될 실험에 대한 좋고 고유한 식별자를 마련하는 것입니다. 실험에는 종종 문제 추적기 또는 관리 시스템에서 해당 문제 ID에 선형적으로 번호가 매겨지거나 상관 관계가 있습니다. 실험 ID는 종종 프로젝트 접두사를 사용합니다(예: `OPT-0134`, `EXP0004` 또는 `CCX0076`).
 
 ### 챌린저 페이지 만들기 {#create-challenger-page}
 
@@ -91,7 +91,7 @@ Adobe Experience Manager에서 실행 중인 사이트의 경우 개발자가 �
 
 각 실험에 대해 트래픽은 모든 변형(제어와 챌린저) 간에 분할되고 자동으로 균등 분포로 설정됩니다. 이와 같이 도전자가 한 명일 경우 자동으로 제어와 도전자 간에 50/50씩 분할이 이루어집니다. 도전자가 두 명일 경우 제어 및 각 도전자에게 할당된 트래픽의 1/3을 자동으로 볼 수 있습니다.
 
-메타데이터를 구성하여 트래픽 분할을 재정의할 수 있습니다. 실험에 사용되는 메타데이터를 사용자 지정하는 방법에 대한 자세한 내용은 다음 [페이지](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)를 참조하십시오
+메타데이터를 구성하여 트래픽 분할을 재정의할 수 있습니다. 실험에 사용되는 메타데이터를 사용자 지정하는 방법에 대한 자세한 내용은 다음 [페이지](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)를 참조하십시오.
 
 ### 실험 변형 미리 보기 및 스테이징 {#preview-stage-experiment}
 
