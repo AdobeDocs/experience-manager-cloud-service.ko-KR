@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 32%
+source-wordcount: '563'
+ht-degree: 33%
 
 ---
 
@@ -44,10 +44,6 @@ ht-degree: 32%
 
 1. 게시하려면 **게시**, 중단하려면 **취소**&#x200B;를 탭하거나 클릭합니다.
 
->[!TIP]
->
->미리 보기 환경에 게시하는 경우 [Experience Manager 헤더 도구 모음의 **계정** 메뉴](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)에 있는 옵션을 사용하여 미리 보기와 프로덕션 환경 간을 전환할 수 있습니다.
-
 >[!NOTE]
 >
 >미리 보기 [에 게시하는 옵션을 사용하지 않도록 설정](/help/implementing/universal-editor/customizing.md#publish-preview)할 수 있으므로 편집기에 나타나지 않을 수 있습니다.
@@ -56,7 +52,7 @@ ht-degree: 32%
 
 콘텐츠 게시 취소는 콘텐츠 게시와 유사한 방식으로 작동합니다. 콘텐츠 작성자가 게시에서 콘텐츠를 제거할 준비가 되면 범용 편집기의 도구 모음에서 줄임표 아이콘을 탭하거나 클릭한 다음 **게시 취소**&#x200B;를 탭하거나 클릭합니다.
 
-[콘텐츠를 게시할 때와 동일한 방법으로 콘텐츠 게시를 취소할 수 있습니다.미리 보기 인스턴스에서 게시 취소(사용 가능한 경우) 및 게시 취소에 포함할 항목을 포함하는 &#x200B;](#publishing-content).
+[콘텐츠를 게시할 때와 동일한 방법으로 콘텐츠 게시를 취소할 수 있습니다.미리 보기 인스턴스에서 게시 취소(사용 가능한 경우) 및 게시 취소에 포함할 항목을 포함하는 ](#publishing-content).
 
 ## 사이트 콘솔에서 게시 및 게시 취소 {#publishing-sites-console}
 

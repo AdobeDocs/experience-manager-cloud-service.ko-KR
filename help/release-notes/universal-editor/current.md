@@ -4,10 +4,10 @@ description: 다음은 범용 편집기 2025.10.02 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 72%
+source-wordcount: '188'
+ht-degree: 68%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 72%
 
 ## 새로운 기능 {#what-is-new}
 
-* [미리 보기와 프로덕션 환경 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
+* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
 
 ## 얼리 어답터 기능 {#early-adopter}
 

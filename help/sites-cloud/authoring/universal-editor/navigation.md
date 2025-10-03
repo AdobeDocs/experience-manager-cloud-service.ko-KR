@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 21%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### Experience Manager {#experience-manager}
 
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
+헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)와 같은 도구에 액세스합니다.
 
 ![전역 탐색 버튼](assets/global-navigation.png)
 
@@ -117,7 +117,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ![환경 전환기](assets/environment-switcher.png)
 
-유니버설 편집기의 경우 [미리 보기 서비스를 사용할 수 있는 경우](/help/sites-cloud/authoring/sites-console/previewing-content.md) **제품 설정** 제목 아래에서 프로덕션 환경과 미리 보기 환경 간을 전환할 수 있는 옵션도 있습니다.
+유니버설 편집기의 경우 제목 **제품 설정** 아래에 유니버설 편집기의 현재 프로덕션 버전과 예정된 미리 보기 버전 간을 전환하는 옵션이 있습니다.
 
 ### 범용 편집기 도구 모음 {#universal-editor-toolbar}
 
