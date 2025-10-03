@@ -4,10 +4,10 @@ description: 다양한 방법으로 콘텐츠 조각을 미리 보는 방법을 
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 37%
+source-wordcount: '394'
+ht-degree: 36%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 37%
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+물론 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 조각을 볼 수도 있습니다.
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ URL을 정의하면 편집기의 상단 도구 모음에서 **[미리 보기](/h
 
 ## 인스턴스 미리 보기 {#preview-instance}
 
-미리 보기 인스턴스(및 게시 인스턴스)에 조각을 **게시** 및 **게시 취소**&#x200B;할 수 있습니다.
+**게시** 및 **게시 취소**, 조각을 **[미리보기 서비스](/help/headless/deployment/architecture.md)**(및 게시 인스턴스)에 게시할 수 있습니다.
 
 편집기 또는 콘솔에서 조각을 게시할 수 있습니다.
 

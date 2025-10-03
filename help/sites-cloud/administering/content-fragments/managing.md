@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 71%
@@ -84,7 +84,7 @@ ht-degree: 71%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -433,7 +433,7 @@ FolderC
 
 * **[게시 서비스](/help/headless/deployment/architecture.md)** - 전체 공개 액세스용
 
-* **[미리보기 서비스](/help/headless/deployment/architecture.md)** - 정식 출시 전 콘텐츠 미리보기용
+* **[미리 보기 서비스](/help/headless/deployment/architecture.md)** - 전체 가용성 전에 콘텐츠를 [미리 보기](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)합니다.
 
   >[!CAUTION]
   >
