@@ -3,13 +3,12 @@ title: AEM as a Cloud Service의 컨텍스트 기반 실험
 description: 실험 플러그인을 사용하여 사이트에 실험 기능을 추가하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # 개요 {#overview}
 
