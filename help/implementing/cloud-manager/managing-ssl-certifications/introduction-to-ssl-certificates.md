@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어
 
 ## 설치된 SSL 인증서 수 제한 {#limitations}
 
-Cloud Manager은 설치된 인증서를 최대 50개까지 지원합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
+Cloud Manager은 설치된 인증서를 최대 70개까지 지원합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
 
 한도에 도달한 경우 인증서를 검토하고 만료된 인증서를 삭제하는 것을 고려하십시오. 또는 인증서에 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에서 여러 도메인을 그룹화합니다.
 
