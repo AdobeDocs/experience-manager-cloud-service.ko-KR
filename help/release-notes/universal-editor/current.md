@@ -4,10 +4,10 @@ description: 다음은 범용 편집기 2025.10.02 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 68%
+source-wordcount: '209'
+ht-degree: 61%
 
 ---
 
@@ -18,11 +18,15 @@ ht-degree: 68%
 
 >[!TIP]
 >
+>릴리스하기 전에 **예정된** 유니버설 편집기 기능을 테스트하려면 [유니버설 편집기 미리 보기 릴리스 노트를 참조하세요.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
 >Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 ## 새로운 기능 {#what-is-new}
 
-* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
+* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
