@@ -26,7 +26,7 @@ ht-degree: 61%
 
 ## 새로운 기능 {#what-is-new}
 
-* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
+* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
