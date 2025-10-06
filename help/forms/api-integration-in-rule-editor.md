@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 3%
 
 ---
 
 # 규칙 편집기에서 API 통합
 
-<span>규칙 편집기에서 API 통합이 얼리어답터 프로그램 중입니다. 공식 전자 메일 ID로 `aem-forms-ea@adobe.com`에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.</span>
+<span>규칙 편집기에서 API 통합이 얼리어답터 프로그램 중입니다. 공식 이메일 ID에서 “`aem-forms-ea@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.</span>
+
+>[!NOTE]
+>
+> 시각적 규칙 편집기는 핵심 구성 요소 및 Edge Delivery Services Forms을 기반으로 하는 적응형 Forms에서 API 통합을 지원합니다.
 
 적응형 Forms의 시각적 규칙 편집기는 양식 데이터 모델을 만들지 않고 직접 API 통합을 지원합니다. API URL(JSON 형식)을 입력하거나 cURL 명령을 통해 구성을 가져와서 API 끝점에 연결할 수 있습니다. 통합되면 **서비스 호출** 액션을 사용하여 API를 호출할 수 있습니다.
 
