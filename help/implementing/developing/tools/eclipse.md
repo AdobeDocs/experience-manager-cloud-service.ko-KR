@@ -32,7 +32,7 @@ AEM 개발을 보다 쉽게 만드는 몇 가지 기능을 제공합니다.
 AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java™ 개발자용 [Eclipse IDE를 다운로드하여 설치합니다](https://www.eclipse.org/downloads/packages/).
-* `eclipse.ini`Eclipse FAQ[에 설명된 대로 ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
+* `eclipse.ini`Eclipse FAQ[에 설명된 대로 &#x200B;](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
 
 >[!NOTE]
 >
