@@ -4,7 +4,7 @@ description: Apache Sling용 Eclipse 플러그인 기반의 Eclipse 플러그인
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -32,7 +32,7 @@ AEM 개발을 보다 쉽게 만드는 몇 가지 기능을 제공합니다.
 AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java™ 개발자용 [Eclipse IDE를 다운로드하여 설치합니다](https://www.eclipse.org/downloads/packages/).
-* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)에 설명된 대로 `eclipse.ini` 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
+* `eclipse.ini`Eclipse FAQ[에 설명된 대로 ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
 
 >[!NOTE]
 >
@@ -42,7 +42,10 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 위의 [요구 사항](#requirements)을 충족하면 다음과 같이 플러그인을 설치할 수 있습니다.
 
-1. [AEM 개발자 도구 웹 사이트](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)를 엽니다. <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. [AEM 개발자 도구 웹 사이트](https://eclipse.adobe.com/)를 엽니다.
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. **설치 링크**&#x200B;를 복사합니다.
 
@@ -126,8 +129,8 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
 
 1. 지침에 따라 [샘플 다중 모듈 프로젝트](#sample-multi-module-project)를 만드십시오. 문제를 건강하게 분리할 수 있는 다음 프로젝트가 자동으로 만들어집니다.
 
-   * `/apps` 및 `/etc` 콘텐츠에 대한 `PROJECT.ui.apps`
-   * 작성된 `/content`에 대한 `PROJECT.ui.content`
+   * `PROJECT.ui.apps` 및 `/apps` 콘텐츠에 대한 `/etc`
+   * 작성된 `PROJECT.ui.content`에 대한 `/content`
    * Java™ 번들에 대한 `PROJECT.core`(Java™ 코드를 추가하려는 경우 흥미로워집니다.)
    * 통합 테스트용 `PROJECT.it.launcher` 및 `PROJECT.it.tests`
 
