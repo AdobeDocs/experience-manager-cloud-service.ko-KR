@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1027'
 ht-degree: 3%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 시각적 규칙 편집기는 핵심 구성 요소 및 Edge Delivery Services Forms을 기반으로 하는 적응형 Forms에서 API 통합을 지원합니다.
+> 시각적 규칙 편집기는 핵심 구성 요소를 기반으로 하는 적응형 Forms 및 범용 편집기에서 작성된 [Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)에서 API 통합을 지원합니다.
 
 적응형 Forms의 시각적 규칙 편집기는 양식 데이터 모델을 만들지 않고 직접 API 통합을 지원합니다. API URL(JSON 형식)을 입력하거나 cURL 명령을 통해 구성을 가져와서 API 끝점에 연결할 수 있습니다. 통합되면 **서비스 호출** 액션을 사용하여 API를 호출할 수 있습니다.
 
 양식 필드를 API 구성에 정의된 입력 매개 변수에 직접 매핑할 수 있습니다. 마찬가지로 해당 API 응답에 대한 **이벤트 페이로드** 옵션을 사용하여 출력 매개 변수를 양식 필드에 매핑할 수 있습니다.
 
 또한 서비스를 호출할 때 시각적 규칙 편집기를 사용하여 **성공** 및 **실패 처리기**&#x200B;를 정의할 수 있습니다. 성공 처리기는 성공적인 API 호출 후 실행할 작업을 지정하는 반면, 실패 처리기는 오류가 발생할 때 양식이 응답하는 방식을 정의합니다.
-
->[!NOTE]
->
-> 규칙 편집기의 API 통합은 범용 편집기에서 작성된 [Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)에도 적용됩니다.
 
 ## 비교: API 통합 메서드
 
