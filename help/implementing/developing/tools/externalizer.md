@@ -4,10 +4,10 @@ description: 외부화는 프로그래밍 방식으로 리소스 경로를 외�
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,11 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 >
 >이러한 기본 도메인 매핑을 생략하는 사용자 지정 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 파일을 AEM as a Cloud Service에 배포하면 예기치 않은 응용 프로그램 동작이 발생할 수 있습니다.
 
-`preview` 및 `publish` 값을 재정의하려면 문서 [AEM as a Cloud Service에 대한 OSGi 구성](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)에 설명된 대로 Cloud Manager 환경 변수를 사용하고 사전 정의된 `AEM_CDN_DOMAIN_PUBLISH` 및 `AEM_CDN_DOMAIN_PREVIEW` 변수를 설정합니다.
+Cloud Manager에서 `EXTERNALIZER` 환경 변수(예: `AEM_EXTERNALIZER_AUTHOR`)를 정의하거나 재정의하지 마십시오. 대신 `publish` 또는 `preview` 도메인 값을 재정의해야 하는 경우 `AEM_CDN_DOMAIN_PUBLISH` 및 `AEM_CDN_DOMAIN_PREVIEW` 환경 변수를 정의하고 사용하십시오. 이러한 변수는 시작 중에 외부화 구성의 해당 필드에 자동으로 할당됩니다.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 
@@ -50,7 +54,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 >[!NOTE]
 >
->AEM as a Cloud Service[&#128279;](/help/implementing/deploying/overview.md#osgi-configuration)에 대해 OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
+>AEM as a Cloud Service[에 대해 ](/help/implementing/deploying/overview.md#osgi-configuration)OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
 
 외부화 서비스에 대한 도메인 매핑을 정의하려면
 
@@ -74,7 +78,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
    * **`scheme`**&#x200B;은(는) 일반적으로 http 또는 https이지만 다른 프로토콜일 수 있습니다.
 
-      * Adobe은 https를 사용하여 https 링크를 적용할 것을 권장합니다.
+      * Adobe에서는 https를 사용하여 https 링크를 적용할 것을 권장합니다.
       * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
 
    * **`server`**&#x200B;은(는) 호스트 이름(도메인 이름 또는 ip 주소)입니다.
@@ -83,7 +87,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
    예를 들어`production https://my.production.instance`
 
-   다음 매핑 이름은 사전 정의되어 있으며 AEM이 사용함에 따라 항상 설정해야 합니다.
+   다음 매핑 이름은 사전 정의되어 있으며 AEM이 사용하는 대로 항상 설정해야 합니다.
 
    * `local` - 로컬 인스턴스
    * `author` - 제작 시스템 DNS
@@ -101,7 +105,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 >[!NOTE]
 >
->절대 링크는 HTML 컨텍스트에서 작성해서는 안 됩니다. 따라서 이러한 경우에는 이 유틸리티를 사용하지 마십시오.
+>HTML 컨텍스트에서는 절대 링크를 만들 수 없습니다. 따라서 이러한 경우에는 이 유틸리티를 사용하지 마십시오.
 
 * **&#39;게시&#39; 도메인을 사용하여 경로를 외부화하려면:**
 
