@@ -5,10 +5,10 @@ keywords: '적응형 Forms에서 Marketo Engage 데이터 소스 사용, Marketo
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 7%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 7%
 Marketo Engage을 기존 AEM Forms과 통합하기 위한 클라우드 서비스 구성을 만든 후 양식에 대한 데이터 소스를 구성할 수 있습니다.
 
 데이터 통합을 구성하면 사용자가 다양한 데이터 소스 또는 스키마에 연결할 수 있습니다. Marketo Engage 데이터 소스와 통합하여 다양한 양식에서 이를 사용하면 해당 데이터에 대한 작업이 용이해집니다. 적응형 양식에 대해 지원되는 기본 데이터 원본을 살펴보려면 [데이터 원본 구성](/help/forms/configure-data-sources.md) 문서를 참조하십시오.
-
-## 양식용 Marketo Engage 데이터 소스 구성을 위한 고려 사항
-
-양식에 대해 Marketo Engage 데이터 소스를 구성하는 동안 고려해야 할 사항은 다음과 같습니다.
-
-* Edge Delivery Services Forms을 Marketo Engage과 연결할 수 없습니다.
 
 ## 양식에 Marketo Engage 데이터 소스를 사용하기 위한 사전 요구 사항
 

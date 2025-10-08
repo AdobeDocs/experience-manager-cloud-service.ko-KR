@@ -5,10 +5,10 @@ keywords: Marketo 인스턴스를 양식과 연결하는 방법 , 양식을 Mark
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 7%
+source-wordcount: '1048'
+ht-degree: 8%
 
 ---
 
@@ -18,15 +18,9 @@ ht-degree: 7%
 
 ![워크플로](/help/forms/assets/workflow-marketo-4.png)
 
-Marketo Engage을 AEM Forms과 통합하기 위한 클라우드 서비스 구성을 만든 후 [Adobe Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo/using/home)과 통합하도록 적응형 양식을 구성할 수 있습니다.
+Marketo Engage을 AEM Forms과 통합하기 위한 클라우드 서비스 구성을 만든 후 [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)과 통합하도록 적응형 양식을 구성할 수 있습니다.
 
 각 단계를 안내하여 구성 프로세스를 단순화하는 양식 마법사를 사용하여 Marketo Engage을 적응형 양식에 연결할 수 있습니다. 여기에는 템플릿, 스타일 및 데이터 필드 선택뿐만 아니라 데이터 매핑 설정을 통해 양식이 만들어지면 Marketo Engage과 통신할 수 있도록 하는 작업도 포함됩니다. 양식 마법사를 사용하여 제출 시 Adobe Marketo Engage에 직접 데이터를 제출하도록 적응형 양식을 구성할 수도 있습니다.
-
-## 양식용 Marketo Engage 데이터 소스 구성을 위한 고려 사항
-
-양식에 대해 Marketo Engage 데이터 소스를 구성하는 동안 고려해야 할 사항은 다음과 같습니다.
-
-* Edge Delivery Services Forms을 Marketo Engage과 연결할 수 없습니다.
 
 ## Marketo Engage을 양식과 연결하기 위한 사전 요구 사항
 
@@ -62,7 +56,7 @@ Marketo Engage과 통합하도록 기초 구성 요소 기반의 새 적응형 �
 
    ![테마 선택](/help/forms/assets/select-form-theme-af1.png)
 1. **[!UICONTROL 데이터]** 탭에서 데이터 모델을 **Marketo Engage**(으)로 선택합니다.
-1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**&#x200B;을(를) 선택합니다.
+1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**을(를) 선택합니다.
 기본적으로 연관된 구성의 모든 필드가 나타납니다. 마법사를 사용하면 확인란을 사용하여 적응형 양식에 포함할 필드를 선택할 수 있습니다.
 
    ![데이터 모델 선택](/help/forms/assets/select-marketo-data-af1.png)
@@ -104,7 +98,7 @@ Marketo Engage과 통합하도록 핵심 구성 요소를 기반으로 새 적�
 
 1. **[!UICONTROL 데이터]** 탭에서 데이터 모델을 **Marketo Engage**(으)로 선택합니다.
 
-1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**&#x200B;을(를) 선택합니다.
+1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**을(를) 선택합니다.
 기본적으로 연관된 구성의 모든 필드가 나타납니다. 마법사를 사용하면 확인란을 사용하여 적응형 양식에 포함할 필드를 선택할 수 있습니다.
 
    ![데이터 모델 선택](/help/forms/assets/select-marketo-data.png)
@@ -141,7 +135,7 @@ Marketo Engage과 통합하도록 범용 편집기에서 작성된 새 적응형
 
 1. **[!UICONTROL 데이터]** 탭에서 데이터 모델을 **Marketo Engage**(으)로 선택합니다.
 
-1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**&#x200B;을(를) 선택합니다.
+1. 화면 오른쪽 창에 나타나는 드롭다운 목록에서 **[!UICONTROL 클라우드 구성]**을(를) 선택합니다.
 기본적으로 연관된 구성의 모든 필드가 나타납니다. 마법사를 사용하면 확인란을 사용하여 적응형 양식에 포함할 필드를 선택할 수 있습니다.
 
    ![데이터 모델 선택](/help/forms/assets/select-marketo-data-ue.png)
@@ -180,7 +174,7 @@ Marketo Engage과 통합하도록 범용 편집기에서 작성된 새 적응형
 
 ## 다음 단계
 
-[Munchkin 라이브러리](https://experienceleague.adobe.com/ko/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
+[Munchkin 라이브러리](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)와(과) 적응형 양식을 연결하여 방문 횟수, 클릭 수, 양식 제출 횟수를 추적할 수도 있습니다.
 
 ## 관련 문서
 
