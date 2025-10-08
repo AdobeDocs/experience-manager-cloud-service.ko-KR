@@ -4,10 +4,10 @@ description: 다음은 범용 편집기 2025.10.02 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 61%
+source-wordcount: '189'
+ht-degree: 57%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 61%
 
 ## 새로운 기능 {#what-is-new}
 
-* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
+* [현재 프로덕션 버전의 유니버설 편집기와 예정된 미리 보기 버전 간을 전환하는 옵션이 Experience Manager 헤더 도구 모음의 ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)계정&#x200B;**메뉴에 추가되었습니다**.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -35,10 +35,6 @@ ht-degree: 61%
 ### 새 RTE {#new-rte}
 
 링크 대화 상자에 페이지 선택기가 있는 새로운 ProseMirror RTE를 이제 오른쪽 패널에서 사용할 수 있습니다. [이 RTE는 유연한 구성 옵션을 제공합니다.](/help/implementing/universal-editor/configure-rte.md)
-
-### 페이지 간에 복사 및 붙여넣기 {#copy-paste}
-
-이제 동일한 페이지 내에서뿐만 아니라 여러 페이지 간에 복사 및 붙여넣기가 가능합니다.
 
 ## 기타 개선 사항 {#other-improvements}
 

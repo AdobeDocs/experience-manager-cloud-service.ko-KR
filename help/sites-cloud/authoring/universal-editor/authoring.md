@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 20%
 ![실행 취소 아이콘](assets/undo.png)
 ![다시 실행 아이콘](assets/redo.png)
 
-* 컨텍스트에서 수행한 편집, 속성 패널을 통해 수행한 편집 및 블록을 추가, 복제, 이동 및 삭제하는 작업에 대해 실행 취소 및 재실행을 수행할 수 있습니다.
+* 실행 취소 및 다시 실행 기능은 컨텍스트에서 수행된 편집, 속성 패널을 통한 편집, 블록 추가, 복제, 이동 및 삭제 등의 작업을 위해 수행할 수 있습니다.
 * 실행 취소 및 다시 실행 기능은 현재 브라우저 세션으로 제한됩니다.
 
 >[!TIP]
@@ -212,7 +212,7 @@ ht-degree: 20%
 
 ### 복사 및 붙여넣기 {#copy-paste}
 
-[개의 컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container) 이 작업은 같은 페이지 내에서만 가능하고 [대상 컨테이너에 구성 요소를 붙여넣을 수 있는 경우에만 가능합니다.](/help/implementing/universal-editor/filtering.md)
+동일한 브라우저 탭에서 [컨테이너](/help/implementing/universal-editor/field-types.md#container) 내에 있는 구성 요소를 복사하여 붙여넣을 수 있습니다. [대상 컨테이너에 설정된 필터가 없는 경우에만 가능합니다.](/help/implementing/universal-editor/filtering.md)
 
 ![복사 아이콘](assets/copy.png)
 ![붙여넣기 아이콘](assets/paste.png)
