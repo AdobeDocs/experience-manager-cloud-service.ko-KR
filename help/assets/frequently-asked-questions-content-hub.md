@@ -2,8 +2,8 @@
 title: Content Hub 자주 묻는 질문 (FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: ht
+source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 
