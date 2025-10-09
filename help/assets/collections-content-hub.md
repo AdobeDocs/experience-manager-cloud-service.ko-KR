@@ -3,7 +3,7 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -199,5 +199,5 @@ Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성
 
 >[!NOTE]
 >
->[컬렉션 고정 또는 고정 해제](#pin-unpin-collection) 및 [컬렉션을 즐겨찾기로 표시](#favorite-collection)은(는) 제한된 가용성 기능입니다. Adobe 고객 지원 사례를 만들어 제출하여 배포에 활성화할 수 있습니다.
+>[컬렉션 고정 또는 고정 해제](#pin-unpin-collection) 및 [컬렉션을 즐겨찾기로 표시](#favorite-collection)은(는) 제한된 가용성 기능입니다. Adobe 고객 지원 사례를 [만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하여 배포에 사용하도록 설정할 수 있습니다.
 
