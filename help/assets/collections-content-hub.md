@@ -3,10 +3,10 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 3%
 * **다운로드**: 에셋을 다운로드합니다.
 * **제거**: 컬렉션에서 특정 자산을 제거합니다.
 * **삭제**: 전체 컬렉션을 삭제합니다.
+* **고정/고정 해제**: 컬렉션을 고정하거나 고정 해제합니다.
+* **즐겨찾기**: 컬렉션을 즐겨찾기로 표시합니다.
 
 사용자가 [!DNL Content Hub] 내에서 사용할 수 있는 다양한 자산에 쉽게 액세스하고 관리할 수 있도록 도와줍니다.
 
@@ -134,13 +136,13 @@ Content Hub을 사용하면 컬렉션 보기를 필터링하여 환경 설정에
 
 ## 컬렉션 내에서 사용 가능한 자산 공유 {#share-assets-available-within-collection}
 
-컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다.  [!DNL Content Hub][&#128279;](share-assets-content-hub.md)에서 에셋 공유에 대해 자세히 알아보세요.
+컬렉션 내에서 사용할 수 있는 에셋을 공유할 수도 있습니다. [Content Hub에서 공개 링크 공유를 사용하도록 설정](configure-content-hub-ui-options.md#enable-public-link-sharing)합니다. **[!UICONTROL 컬렉션]** 탭으로 이동합니다. 컬렉션 카드에서 ![공유 아이콘](assets/share.svg) 아이콘을 선택합니다. 공유 링크가 복사됩니다. 복사한 링크를 수신자와 공유할 수 있습니다. [에서  [!DNL Content Hub]](share-assets-content-hub.md)에셋 공유에 대해 자세히 알아보세요.
 
 Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 작업 기능을 포함하여 효과적인 에셋 관리를 위한 포괄적인 거버넌스 도구를 제공합니다. 읽기 전용 액세스에서 전체 관리 제어에 이르기까지 이러한 설정은 자산 배포에 대한 미세 거버넌스를 지원합니다. 에셋을 개별적으로 또는 컬렉션의 일부로 공유할 때 액세스 범위는 사용자에게 할당된 컬렉션의 현재 액세스 수준에 따라 결정됩니다. 또는 개인 컬렉션을 공유할 수 없습니다.
 
 ## 컬렉션 세부 정보 편집 {#edit-details-of-collection}
 
-컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집하려면 컬렉션 이름을 클릭한 다음 ![정보 아이콘](assets/info-icon.svg) 아이콘을 클릭합니다. 컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집할 수 있는 [!UICONTROL 컬렉션 세부 정보] 화면이 나타납니다. **[!UICONTROL 변경 내용 저장]**&#x200B;을 클릭하여 수정 내용을 확인합니다. 또한 구성에 따라 컬렉션 편집 대화 상자를 통해 컬렉션에 대한 액세스를 업데이트할 수 있습니다.
+컬렉션의 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 편집하려면 컬렉션 이름을 클릭한 다음 ![정보 아이콘](assets/info-icon.svg) 아이콘을 클릭합니다. 컬렉션의 [!UICONTROL 제목] 및 **[!UICONTROL 설명]**&#x200B;을 편집할 수 있는 **[!UICONTROL 컬렉션 세부 정보]** 화면이 나타납니다. **[!UICONTROL 변경 내용 저장]**&#x200B;을 클릭하여 수정 내용을 확인합니다. 또한 구성에 따라 컬렉션 편집 대화 상자를 통해 컬렉션에 대한 액세스를 업데이트할 수 있습니다.
 
 ![컬렉션 세부 정보](assets/collection-details.png)
 
@@ -163,5 +165,39 @@ Content Hub Collections는 사용자 정의 가능한 공유 권한 및 공동 �
 
 관리자와 작성자만 컬렉션을 삭제할 수 있습니다. 컬렉션을 삭제하려면 **[!UICONTROL 컬렉션]** 탭으로 이동하여 삭제해야 하는 컬렉션을 클릭합니다. 컬렉션을 삭제하려면 ![삭제 아이콘](assets/delete-icon.svg) 아이콘을 클릭하십시오.
 
+## 컬렉션 고정 또는 고정 해제 {#pin-unpin-collection}
 
+Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 고정된 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달 범위에 유지할 수 있습니다. 빠른 액세스를 위해 아래 단계를 실행하여 컬렉션을 고정하거나 고정 해제할 수 있습니다.
+
+1. 고정하거나 고정 해제할 컬렉션을 찾습니다.
+
+1. **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 빠른 액세스에 고정]**&#x200B;을 선택합니다. 확인 상자가 나타납니다.
+
+   ![컬렉션 고정](assets/pin-collection.png)
+
+1. 확인하려면 **[!UICONTROL 고정]**&#x200B;을 클릭하세요. 개인 컬렉션을 고정하면 경고 메시지가 나타납니다.
+
+   ![핀 컬렉션 확인](assets/confirm-pin-collection.png)
+
+   빠른 액세스를 위해 고정된 컬렉션이 맨 위에 나타납니다. 또는 컬렉션을 고정 해제하려면 **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 고정 해제]**&#x200B;를 선택합니다.
+
+   ![고정된 컬렉션 보기](assets/pinned-collections.png)
+
+## 컬렉션을 즐겨찾기로 표시 {#favorite-collection}
+
+Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성하고 검색할 수 있습니다. 즐겨찾는 컬렉션이 추가되면 Content Hub 홈 페이지의 즐겨찾기 탭에서 편리하게 사용할 수 있습니다. 또한 즐겨 찾는 컬렉션 내에서 에셋을 검색할 수 있습니다. 컬렉션을 즐겨찾기로 표시하려면 다음 단계를 수행합니다.
+
+1. 고정하거나 고정 해제할 컬렉션을 찾습니다.
+
+1. **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에 추가]**&#x200B;를 선택하여 컬렉션을 즐겨찾기로 표시합니다.
+
+   ![컬렉션을 즐겨찾기로 표시](assets/mark-favorite-collection.png)
+
+   즐겨찾기로 표시된 컬렉션이 **[!UICONTROL 내 즐겨찾기]** 탭에 나타납니다. 또는 **[!UICONTROL 내 즐겨찾기]**&#x200B;에서 컬렉션을 제거할 수 있습니다. 이렇게 하려면 **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에서 제거]**&#x200B;를 선택합니다.
+
+   ![즐겨찾기로 컬렉션 제거](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[컬렉션 고정 또는 고정 해제](#pin-unpin-collection) 및 [컬렉션을 즐겨찾기로 표시](#favorite-collection)은(는) 제한된 가용성 기능입니다. Adobe 고객 지원 사례를 만들어 제출하여 배포에 활성화할 수 있습니다.
 
