@@ -3,9 +3,9 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -187,13 +187,13 @@ Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션�
 
 Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성하고 검색할 수 있습니다. 즐겨찾는 컬렉션이 추가되면 Content Hub 홈 페이지의 즐겨찾기 탭에서 편리하게 사용할 수 있습니다. 또한 즐겨 찾는 컬렉션 내에서 에셋을 검색할 수 있습니다. 컬렉션을 즐겨찾기로 표시하려면 다음 단계를 수행합니다.
 
-1. 고정하거나 고정 해제할 컬렉션을 찾습니다.
+1. 즐겨찾기로 표시할 컬렉션을 찾아봅니다.
 
 1. **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에 추가]**&#x200B;를 선택하여 컬렉션을 즐겨찾기로 표시합니다.
 
    ![컬렉션을 즐겨찾기로 표시](assets/mark-favorite-collection.png)
 
-   즐겨찾기로 표시된 컬렉션이 **[!UICONTROL 내 즐겨찾기]** 탭에 나타납니다. 또는 **[!UICONTROL 내 즐겨찾기]**&#x200B;에서 컬렉션을 제거할 수 있습니다. 이렇게 하려면 **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에서 제거]**&#x200B;를 선택합니다.
+   즐겨찾기로 표시된 컬렉션이 **[!UICONTROL 내 즐겨찾기]** 탭에 표시됩니다. 또는 **[!UICONTROL 내 즐겨찾기]**&#x200B;에서 컬렉션을 제거할 수 있습니다. 이렇게 하려면 **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에서 제거]**&#x200B;를 선택합니다.
 
    ![즐겨찾기로 컬렉션 제거](assets/remove-favorite-collection.png)
 
