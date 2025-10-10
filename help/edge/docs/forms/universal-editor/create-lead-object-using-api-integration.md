@@ -5,8 +5,12 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
-workflow-type: ht
+exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 3a09a3fa9b8fb3dacef4c900979c4cc256551941
+workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
 
