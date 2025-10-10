@@ -4,10 +4,10 @@ description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Exp
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 17%
+source-wordcount: '777'
+ht-degree: 14%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
 
 3. 왼쪽 탐색 창에서 사용할 수 있는 **[!UICONTROL Assets]**&#x200B;을(를) 클릭합니다. Adobe Express은 루트 수준에서 사용할 수 있는 에셋 및 폴더 목록과 함께 액세스할 수 있는 저장소 목록을 표시합니다.
 
-4. 저장소에서 에셋을 찾아보거나 검색하여 캔버스로 드래그 앤 드롭합니다. 파일 유형, MIME 유형 및 차원과 같은 다양한 사용 가능한 필터를 사용하여 에셋을 필터링할 수 있습니다.
+4. 저장소에서 에셋을 찾아보거나 검색한 다음 캔버스로 드래그하여 놓습니다. 또는 에셋을 클릭하여 캔버스에 배치합니다. 파일 유형, MIME 유형 및 차원과 같은 다양한 기준으로 자산을 필터링할 수도 있습니다.
 
    >[!NOTE]
    >
@@ -41,6 +41,21 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
 
    ![Assets 추가 기능에서 자산 포함](assets/adobe-express-native-integration.png)
 
+### AEM 업로드를 사용하여 이미지 바꾸기 {#replace-image-using-aem-upload}
+
+또한 **[!UICONTROL AEM 업로드]**&#x200B;를 사용하여 추가된 이미지를 바꿀 수 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
+
+1. 에셋을 찾아보거나 검색하고 캔버스로 드래그 앤 드롭합니다.
+
+1. 바꿀 이미지를 선택합니다. **[!UICONTROL 바꾸기]**&#x200B;를 클릭하고 다양한 옵션 중 **[!UICONTROL AEM Assets]**&#x200B;을(를) 선택합니다.
+
+   ![AEM 바꾸기](assets/aem-replace.png)
+
+1. 왼쪽 탐색 창에서 **[!UICONTROL AEM 업로드]** 패널이 열립니다. Adobe Express은 루트 수준에서 사용할 수 있는 에셋 및 폴더 목록과 함께 액세스할 수 있는 저장소 목록을 표시합니다. 캔버스에서 대체 항목을 미리 보려면 에셋을 선택한 다음 **[!UICONTROL 바꾸기]**&#x200B;를 클릭하여 확인합니다.
+
+   >[!NOTE]
+   >
+   > SVG 파일 유형은 지원되지 않습니다.
 
 ## AEM Assets에 Adobe Express 프로젝트 저장 {#save-express-projects-in-assets}
 
@@ -54,7 +69,7 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
 
    ![AEM에 자산 저장](assets/adobe-express-aem.png)
 
-3. **현재 페이지** 또는 **모든 페이지**&#x200B;를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
+3. **현재 페이지** 또는 **모든 페이지**를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
 **현재 페이지**&#x200B;을(를) 선택하면 현재 페이지의 자산이 대상 폴더에 저장됩니다. **모든 페이지**&#x200B;를 선택했는데 내보내기 형식이 PDF이 아닌 경우, 모든 캔버스 페이지는 대상 폴더 내의 새 폴더에 별도의 파일로 저장됩니다. 내보내기 형식이 PDF인 경우, 모든 캔버스 페이지는 대상 폴더에 단일 PDF 파일로 저장됩니다.
 
 4. **대상 폴더** 아래의 폴더 아이콘을 클릭하여 위치를 선택하고 에셋을 저장합니다.
@@ -77,18 +92,15 @@ Adobe에서는 업로드한 에셋에 대해 향상된 검색 환경을 만들 �
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000픽셀, 최대 40MB</td>
+        <td> 65MP(예: 8K x 8K 또는 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000픽셀, 최대 40MB</td>
+        <td> 65MP(예: 8K x 8K 또는 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> 최대 250KB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
