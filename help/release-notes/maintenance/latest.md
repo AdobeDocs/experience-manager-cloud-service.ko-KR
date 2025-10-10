@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -18,39 +18,39 @@ ht-degree: 42%
 
 ## 릴리스 22758 {#22758}
 
-다음은 2025년 10월 1일에 공개적으로 릴리스된 유지 보수 릴리스 22758에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 22450.
+2025년 10월 1일에 릴리스된 유지 관리 릴리스 22758의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 22450이었습니다.
 
 이 유지 관리 릴리스에 대한 2025.10.0 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-22758}
 
 * ASSETS-56227: adobe-countdown-timer 수정자의 이름을 바꿉니다.
-* CNTBF-493: 컨텐츠 역류 번들 버전을 2.0.28로 범프.
-* CQ-4361110: Granite 번역.
-* CQ-4361112: 최신 AEM 번역.
+* CNTBF-493: 콘텐츠 백플로 번들 버전을 2.0.28로 높입니다.
+* CQ-4361110: Granite 번역
+* CQ-4361112: 최신 AEM 번역
 * GRANITE-56026: 권한 API 상태 코드 응답을 개선합니다.
-* GRANITE-61015: 공용 내보내기 목록에 `org.apache.commons.io.channels` 패키지를 추가했습니다.
+* GRANITE-61015: 공개 내보낸 목록에 `org.apache.commons.io.channels` 패키지를 추가했습니다.
 * GRANITE-61167: Felix 로그가 최신 OSGI 사양으로 업데이트되었습니다.
 * GRANITE-61167: 여러 Apache Felix 종속성을 업데이트합니다.
 * GRANITE-61169: 보호된 문자열에 대한 검사를 개선합니다.
 * GRANITE-61622: 여러 Apache Sling 종속성을 업데이트합니다.
-* GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2`을(를) 빠른 시작에 추가합니다.
-* GRANITE-61811: `com.adobe.granite.repository-2.0.0`을(를) 빠른 시작에 추가합니다.
+* GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2`를 빠른 시작에 추가합니다.
+* GRANITE-61811: `com.adobe.granite.repository-2.0.0`를 빠른 시작에 추가합니다.
 * SITES-32014: 외부 이벤트를 수신하여 서비스 등록을 업데이트합니다.
 * SITES-34277: 페이지 번역 워크플로에서 발생하는 차단 오류를 수정했습니다.
-* SKYOPS-108706: 업그레이드된 릴리스는 번들을 최신 버전으로 전환합니다(태그 캐싱).
+* SKYOPS-108706: 릴리스 전환 번들을 최신 버전으로 업그레이드했습니다(etag 캐싱).
 * SKYOPS-114210: 최신 버전의 aem.pss.service 번들로 업데이트합니다.
-* SKYOPS-116171: Sling ResourceResolver 1.12.12로 업데이트합니다.
-* SKYOPS-119811: Dispatcher-publish 2.0.258이 릴리스되었습니다.
+* SKYOPS-116171: Sling ResourceResolver를 1.12.12로 업데이트합니다.
+* SKYOPS-119811: Dispatcher-publish 2.0.258을 릴리스했습니다.
 
 ### 해결된 문제 {#fixed-issues-22758}
 
-* GRANITE-61875: &quot;잘못된 표현식 평가&quot;에 대한 트리거 수정 - 작성자가 콘텐츠 조각을 저장할 수 없으며 에셋이 다운로드되지 않습니다.
-* SITES-22059: PDF 뷰어 구성 요소에서 JS 오류를 수정합니다. 핵심 구성 요소 사이트 > PDF 뷰어에서 현지화되지 않은 &quot;파일 미리보기를 사용할 수 없음&quot; 문자열
-* GRANITE-59704: 편집 모드가 실패하는 htmllibmanager.debug를 수정합니다.
+* GRANITE-61875: &#39;잘못된 표현식 평가&#39;에 대한 트리거 수정 - 작성자가 콘텐츠 조각을 저장할 수 없으며 자산이 다운로드되지 않습니다.
+* SITES-22059: PDF 뷰어 구성 요소에서 JS 오류를 수정합니다. 핵심 구성 요소 사이트 > PDF 뷰어에서 현지화되지 않은 “파일 미리보기를 사용할 수 없음” 문자열
+* GRANITE-59704: 편집 모드가 작동하지 않는 htmllibmanager.debug를 수정합니다.
 * GRANITE-61042: FELIX-6796(ServiceTracker NPE 수정)을 AEM Felix 웹 콘솔 번들에 통합합니다.
-* GRANITE-61165: Workspace.copy() 가 RepositoryException을 발생시킵니다.
-* GRANITE-61875: ui.commons를 5.10.50으로 업데이트합니다.
+* GRANITE-61165: Workspace.copy()가 RepositoryException을 발생시킵니다.
+* GRANITE-61875: ui.commons를 5.10.50로 업데이트합니다.
 
 ### 알려진 문제 {#known-issues-22758}
 
@@ -62,7 +62,7 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [�
 
 ### 보안 수정 {#security-22758}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스는 13개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 노력을 강화합니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 13개가 해결되었습니다.
 
 ### 임베드된 기술 {#embedded-tech-22758}
 

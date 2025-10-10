@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service는 클라우드 기반 AEM as a Cloud Service 플�
 >* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko)
+>* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 AEM Sites as a Cloud Service에 대한 변경 내용 및 추가 사항은 다음과 같습니다.
 
@@ -52,15 +52,15 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 ## 새로운 참조 사이트 및 튜토리얼 {#new-reference-site-and-tutorial}
 
-새로운 AEM 참조 사이트인 [WKND](https://wknd.site/)는 AEM을 통해 웹 사이트를 빌드하기 위한 모범 사례를 반영하고 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델의 세트를 갖추도록 업데이트 및 게시되었습니다. 새로운 참조 사이트 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
+새로운 AEM 참조 사이트인 [WKND](https://wknd.site/)는 AEM을 통해 웹 사이트를 빌드하기 위한 모범 사례를 반영하고 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델의 세트를 갖추도록 업데이트 및 게시되었습니다. 새로운 참조 사이트 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
 
-이전에는 We.Retail이 기본적으로 AEM을 통해 설치되었습니다(프로덕션 모드로 시작하는 경우 제외). AEM as a Cloud Service에서는 기본적으로 참조 사이트가 설치되지 않습니다. 대신 [git 저장소](https://github.com/adobe/aem-guides-wknd/) 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)이 업데이트된 WKND 참조 사이트 코드와 함께 제공됩니다.
+이전에는 We.Retail이 기본적으로 AEM을 통해 설치되었습니다(프로덕션 모드로 시작하는 경우 제외). AEM as a Cloud Service에서는 기본적으로 참조 사이트가 설치되지 않습니다. 대신 [git 저장소](https://github.com/adobe/aem-guides-wknd/) 및 [함께 제공되는 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)이 업데이트된 WKND 참조 사이트 코드와 함께 제공됩니다.
 
 ## 런타임 시 사용할 수 없는 기능 {#capabilities-not-available-at-runtime}
 
 AEM as a Cloud Service는 항상 활성화되어 있으며 최신 상태로 유지됩니다. 이를 위해서는 AEM 저장소를 변경 불가능한 콘텐츠와 변경 가능한 콘텐츠로 분리하고 런타임 시 변경 불가능한 콘텐츠에 대한 액세스를 금지해야 합니다. 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠에 대한 자세한 내용은 [저장소의 변경 가능한 영역 및 변경 불가능한 영역](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)을 참조하십시오.
 
-런타임 시 변경 불가능한 콘텐츠에 액세스할 수 없으므로, 다음 AEM Sites 작업도 런타임 시 사용할 수 없게 됩니다.
+런타임 시 변경 불가능한 콘텐츠에 액세스할 수 없으므로, 다음 AEM Sites 작업도 런타임 시 사용할 수 없습니다.
 
 * i18n 사전 번역
 * AEM Sites 페이지 편집기의 개발자 모드
