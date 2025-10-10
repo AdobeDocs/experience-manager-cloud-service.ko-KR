@@ -38,7 +38,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.10.0 릴리스 일자는 2025년 10
   이 서비스는 다음을 수행합니다.
 
    * 환경을 스캔하여 성능 병목 현상, 비효율성 및 잠재적 위험을 표시합니다.
-   * 콘텐츠 구조(블루프린트, 라이브 카피) 및 사용자 정의 구성을 분석합니다.
+   * 콘텐츠 구조(블루프린트, Live Copy) 및 사용자 정의 구성을 분석합니다.
    * 오래된 종속성(AEM SDK, 서드파티 라이브러리)을 식별합니다.
    * 코드 품질 문제에 플래그를 지정합니다(잘못된 주석, 비효율적인 패턴).
    * **액션 센터**&#x200B;와 같은 대시보드를 통해 실행 가능한 지침을 제공합니다.
@@ -67,7 +67,7 @@ AEM as a Cloud Service의 Cloud Manager 2025.10.0 릴리스 일자는 2025년 10
   대화 상자에는 다음과 같은 지침 콘텐츠에 중점을 둔 **기타 CDN 공급자** 카드에 대한 간결한 단일 체크리스트도 표시됩니다.
 
    * CDN 원본을 `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`으로 지정합니다.
-   * 원래 호스트를 전달하려면 **호스트/SNI**&#x200B;를 설정하십시오.
+   * 원래 호스트를 전달하려면 **호스트/SNI**&#x200B;를 설정합니다.
    * `X-AEM-Edge-Key`를 추가합니다(Cloud Manager에서 키를 배포한 후).
    * `X-Forwarded-Host`를 고객용 도메인으로 설정합니다.
    * AEM에 도달하기 전에 다른 `X-Forwarded-*` 헤더를 지웁니다.
@@ -120,13 +120,13 @@ Beta에 관심이 있으신가요? Adobe OrgID 및 만들고자 하는 사용자
 
 최신 고객 소스 코드가 예상대로 작동하지 않는 경우 전체 파이프라인을 다시 실행하거나 커밋을 수동으로 되돌릴 필요 없이 이전 배포로 빠르게 되돌릴 수 있습니다.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**&#x200B;옵션을 보여 줍니다.*
+![환경 카드에서 고객 소스 코드 복원](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *위의 환경 카드는 선택한 환경에 대한&#x200B;**복원**>**이전에 배포된 코드**옵션을 보여 줍니다.*
 
 ![이전에 배포된 코드 복원 대화 상자](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-***이전에 배포된 코드 복원**&#x200B;대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
+***이전에 배포된 코드 복원**대화 상자에서 현재 배포된 버전과 복원하려는 버전을 검토한 다음&#x200B;**확인***을 클릭합니다.
 
 ![활성화 복원](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**&#x200B;을 표시합니다.*
+*Cloud Manager는 환경을 이전 빌드로 롤백하고 콘텐츠와 구성을 그대로 유지하며 배포가 완료될 때까지 환경&#x200B;**복원**을 표시합니다.*
 
 ![사용 중인 소스 코드 버전](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *위에서 볼 수 있는 환경 세부 정보 보기에는 이제 사용 중인 활성 소스 코드 버전도 표시됩니다.*
 
