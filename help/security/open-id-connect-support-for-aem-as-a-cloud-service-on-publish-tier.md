@@ -4,8 +4,8 @@ description: 게시 계층에서 AEM as a Cloud Service에 대한 Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
-workflow-type: ht
+source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ IdP 구성의 정보:
 
 이제 OIDC 인증 핸들러를 구성합니다. 여러 OIDC 연결을 구성할 수 있습니다. 각 연결은 서로 다른 이름을 가져야 합니다. 동일한 [OAK 외부 ID 공급자](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)를 공유하는 경우 사용자를 공유할 수 있습니다.
 
-1. 구성 파일을 생성합니다. 이 예시에서는 `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`을 사용합니다. `azure` 접미사는 고유 식별자여야 합니다. 아래 구성 파일의 예제를 확인해 보십시오.
+1. 구성 파일을 생성합니다. 이 예시에서는 `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json`을 사용합니다. `azure` 접미사는 고유 식별자여야 합니다. 아래 구성 파일의 예제를 확인해 보십시오.
 
    ```
    {
