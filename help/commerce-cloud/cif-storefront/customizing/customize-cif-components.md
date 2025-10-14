@@ -56,7 +56,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결할 수 있도록 필요한 OSGi 구성을 추가하거나 생성된 프로젝트에 구성을 추가합니다.
 
-1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. `US`http://localhost`Home`/editor.html/content/venia/us/en.html[에서 :4502 > ](http://localhost:4502/editor.html/content/venia/us/en.html) 페이지로 이동합니다.
+1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. `US`http://localhost`Home`/editor.html/content/venia/us/en.html[에서 :4502 > &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html) 페이지로 이동합니다.
 
    당신은 상점이 현재 베니아 테마를 사용하고 있다는 것을 볼 수 있습니다. 상점 첫 화면의 메인 메뉴를 확장하면 Adobe Commerce에 대한 연결이 작동하고 있음을 나타내는 다양한 카테고리가 표시됩니다.
 
@@ -349,7 +349,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    위의 구성 요소 정의는 프로젝트의 제품 티저 구성 요소에 대한 것입니다. `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` 속성을 확인합니다. 이 속성은 [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ko#create-proxy-components)를 만드는 예제입니다. AEM CIF 핵심 구성 요소에서 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType`을(를) 사용하여 모든 기능을 상속할 수 있습니다.
 
-1. `productteaser.html` 파일을 엽니다. 이 파일은 `productteaser.html`CIF 제품 티저의 [ 파일의 복사본입니다.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
+1. `productteaser.html` 파일을 엽니다. 이 파일은 `productteaser.html`CIF 제품 티저의 [&#x200B; 파일의 복사본입니다.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
    ```html
    <!--/* productteaser.html */-->

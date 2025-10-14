@@ -44,7 +44,7 @@ AEM Forms의 양식 빌더를 사용하면 매력적인 반응형, 동적 및 �
 
    * `blank` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
    * 패키지 관리자를 통해 참조 패키지를 설치하여 `blank` 템플릿을 AEM Forms as a Cloud Service 프로그램에 추가할 수 있습니다.
-   * [적응형 Forms 템플릿(핵심 구성 요소)을 ](template-editor.md)할 수도 있습니다.
+   * [적응형 Forms 템플릿(핵심 구성 요소)을 &#x200B;](template-editor.md)할 수도 있습니다.
 
 * **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  `Canvas` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -141,7 +141,7 @@ AEM Forms의 양식 빌더를 사용하면 매력적인 반응형, 동적 및 �
 
      >[!NOTE]
      >
-     > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [ 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
+     > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [&#x200B; 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
    * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 만들 때에는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 
@@ -257,7 +257,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
-> 또한 적응형 양식을 템플릿으로 저장할 수 있습니다. 자세한 내용은 [ 적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)를 참조하십시오.
+> 또한 적응형 양식을 템플릿으로 저장할 수 있습니다. 자세한 내용은 [&#x200B; 적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)를 참조하십시오.
 
 >[!ENDTABS]
 

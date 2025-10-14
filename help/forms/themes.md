@@ -24,7 +24,7 @@ ht-degree: 2%
 
 테마를 만들고 적용하여 적응형 양식<!-- or an interactive communication-->을(를) 양식화할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식<!-- or interactive communication -->에 대한 참조 없이 독립적으로 관리됩니다.
 
-[!DNL AEM Forms]소프트웨어 배포[ 포털에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
+[!DNL AEM Forms]소프트웨어 배포[&#x200B; 포털에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
 
 ## 테마 만들기, 다운로드 또는 업로드 {#creating-downloading-or-uploading-a-theme}
 

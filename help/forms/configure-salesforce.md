@@ -30,7 +30,7 @@ ht-degree: 0%
 
 [!DNL Salesforce] 클라우드 서비스를 구성하기 전에 다음 작업을 수행하는지 확인하십시오.
 
-* [연결된 OAuth 사용 가능 [!DNL Salesforce] 응용 프로그램](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)을 만듭니다. 연결된 [!DNL Salesforce] 응용 프로그램을 만드는 경우 다음 형식으로 콜백 URL을 지정하십시오.
+* [연결된 OAuth 사용 가능 [!DNL Salesforce] 응용 프로그램](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5)을 만듭니다. 연결된 [!DNL Salesforce] 응용 프로그램을 만드는 경우 다음 형식으로 콜백 URL을 지정하십시오.
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

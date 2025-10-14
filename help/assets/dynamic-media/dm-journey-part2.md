@@ -49,7 +49,7 @@ _Dynamic Media URL의 구조._
 
 마지막으로 이미지 처리 매개 변수 `?wid=1000&fmt=jpeg&qlt=85`이(가) 끝에 노란색으로 표시됩니다.
 
-전체 URL 경로는 라이브입니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
+전체 URL 경로는 라이브입니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}.
 
 브라우저 창에서 Dynamic Media URL과 시계 이미지를 볼 수 있지만 URL을 변경하는 것만으로 이미지 렌디션을 만드는 방법에 대해 자세히 살펴보겠습니다.
 
@@ -66,9 +66,9 @@ _Dynamic Media URL의 구조._
 
 Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko).
 
-이제 시계 이미지에 회전 매개 변수를 추가해 보십시오. `wid=1000` 바로 다음에 오는 URL 경로의 끝에 `&rotate=90`을(를) 입력한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
+이제 시계 이미지에 회전 매개 변수를 추가해 보십시오. `wid=1000` 바로 다음에 오는 URL 경로의 끝에 `&rotate=90`을(를) 입력한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
-그 시계는 아직도 약간 왼쪽으로 기울어져 있다. 회전 값 `90`을(를) `92`(으)로 변경한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
+그 시계는 아직도 약간 왼쪽으로 기울어져 있다. 회전 값 `90`을(를) `92`(으)로 변경한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}.
 
 다시 **[!UICONTROL Enter]**&#x200B;를 누르는 순간 시계의 새 렌디션이 거의 즉시 생성됩니다. 성능이 어느 정도인지 확인할 수 있습니다. 이렇게 하면 Dynamic Media가 바쁜 주말 또는 주요 휴일에 초당 _개_&#x200B;의 800,000개 이상의 이미지 요청을 제공할 수 있습니다.
 
@@ -163,7 +163,7 @@ _이미지 집합 만들기를 시작합니다._
 
 이미지 집합을 만들려면 **[!UICONTROL 만들기]** 풀다운 메뉴에서 **[!UICONTROL 이미지 집합]**&#x200B;을(를) 선택합니다. **[!UICONTROL 혼합 미디어 집합]**, **[!UICONTROL 회전 집합]** 및 **[!UICONTROL 회전 메뉴 집합]**&#x200B;을 만드는 옵션도 있습니다. 이러한 세트는 이미지 세트와 매우 동일한 방식으로 만듭니다.
 
-혼합 미디어 세트에는 이미지, 견본 세트, 스핀 세트, 비디오 및 응용 비디오 세트가 포함될 수 있습니다. [사용해 보기](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 스핀 세트는 물체를 돌아보고 검토하는 실세계 행위를 시뮬레이션한다. 스핀 세트를 사용하면 모든 각도에서 주요 시각적 세부 사항을 볼 수 있습니다. [사용해 보기](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
+혼합 미디어 세트에는 이미지, 견본 세트, 스핀 세트, 비디오 및 응용 비디오 세트가 포함될 수 있습니다. [사용해 보기](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). 스핀 세트는 물체를 돌아보고 검토하는 실세계 행위를 시뮬레이션한다. 스핀 세트를 사용하면 모든 각도에서 주요 시각적 세부 사항을 볼 수 있습니다. [사용해 보기](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
 이미지 세트를 만드는 것은 간단합니다. 세트에 포함할 이미지 에셋을 추가하면 됩니다.
 
@@ -189,13 +189,13 @@ _Viewers 옵션을 선택한 미리 보기에서 설정된 `Running` 이미지._
 ![플라이아웃 뷰어가 적용된 실행 중인 이미지 집합](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 
-이 경우 `Flyout` 뷰어가 선택되었습니다. 이 시점에서 뷰어에 설정된 이미지를 미리 볼 수 있습니다. 그러나 고객이 보는 방식대로 브라우저에서 보는 것이 가장 좋습니다. 왼쪽 아래에서 **[!UICONTROL URL]**&#x200B;을(를) 선택한 다음 URL을 복사하여 브라우저에 붙여넣습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
+이 경우 `Flyout` 뷰어가 선택되었습니다. 이 시점에서 뷰어에 설정된 이미지를 미리 볼 수 있습니다. 그러나 고객이 보는 방식대로 브라우저에서 보는 것이 가장 좋습니다. 왼쪽 아래에서 **[!UICONTROL URL]**&#x200B;을(를) 선택한 다음 URL을 복사하여 브라우저에 붙여넣습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
 단일 URL을 사용하면 웹 사이트에서 필요한 이미지 세트와 뷰어를 사용할 수 있습니다. 앞의 예제에서 **[!UICONTROL Embed]**&#x200B;이(가) URL 단추 오른쪽에 있음을 알 수 있습니다. **[!UICONTROL 포함]**&#x200B;을 선택하면 이 이미지 집합/뷰어의 코드를 복사하여 웹 페이지나 Experience Manager Sites 구성 요소에 추가할 수 있습니다.
 
 플라이아웃 뷰어는 속성을 편집할 수 있는 기본 기본 뷰어입니다. 또는 이미지 사전 설정을 만드는 것처럼 자신만의 사용자 지정 뷰어를 만들 수 있습니다.
 
-판매 및 마케팅 팀이 플라이아웃 뷰어를 좋아하지 않는다고 가정합니다. 그들은 줌 기능을 좋아하지만 고객들이 신발 위로 바로 줌 효과를 보기를 원합니다. 이러한 경우 이미지 세트에 InlineZoom 뷰어를 적용하고 브라우저에 해당 URL을 복사하여 붙여넣어 작동 방식을 확인하면 됩니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+판매 및 마케팅 팀이 플라이아웃 뷰어를 좋아하지 않는다고 가정합니다. 그들은 줌 기능을 좋아하지만 고객들이 신발 위로 바로 줌 효과를 보기를 원합니다. 이러한 경우 이미지 세트에 InlineZoom 뷰어를 적용하고 브라우저에 해당 URL을 복사하여 붙여넣어 작동 방식을 확인하면 됩니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 마우스 포인터를 신발 위로 이동하면 해당 이미지를 확대하여 포인터가 움직일 때 더 자세한 내용을 볼 수 있습니다. 그 이유는 단순히 처음에 Dynamic Media에 업로드된 이미지의 크기입니다.
 
@@ -205,8 +205,8 @@ _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* 이미지 자산에 `ZoomVertical_dark` 뷰어가 적용되었습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
-* 이미지에 `Zoom_light` 뷰어가 적용되었습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
+* 이미지 자산에 `ZoomVertical_dark` 뷰어가 적용되었습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* 이미지에 `Zoom_light` 뷰어가 적용되었습니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## 선택 사항 - 자세히 알아보기
 

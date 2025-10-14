@@ -89,7 +89,7 @@ AEM Forms 6.5에서 AEM as a Cloud Service 환경으로 원활하게 전환하�
 
 1. 관리자 권한으로 복제된 환경에 로그인합니다.
 
-1. 복제된 환경에서 [콘텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko&#cloud-migration) 및 [ 소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)의 [!DNL AEM Forms] as a Cloud Service 마이그레이션 유틸리티를 다운로드하여 설치하십시오. AEM 패키지 관리자를 사용하여 도구 및 유틸리티를 설치할 수 있습니다.
+1. 복제된 환경에서 [콘텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko&#cloud-migration) 및 [&#x200B; 소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)의 [!DNL AEM Forms] as a Cloud Service 마이그레이션 유틸리티를 다운로드하여 설치하십시오. AEM 패키지 관리자를 사용하여 도구 및 유틸리티를 설치할 수 있습니다.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 콘텐츠 마이그레이션]**&#x200B;으로 이동합니다.
 

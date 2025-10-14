@@ -708,7 +708,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. [!DNL Adobe Analytics]에 대해 적응형 양식을 사용할 수 있습니다.
 1. 양식을 게시합니다.
 
-적응형 양식에 대해 [!DNL Adobe Analytics]을(를) 사용하도록 설정한 후 AEM Forms과 [ 사이에 적절한 데이터 이벤트 흐름이 있으면 ](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ko#validate-the-page-view-beacon)유효성 검사[!DNL Adobe Analytics]할 수 있습니다. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 [Adobe Analytics에서 보고서를 구성하고 볼 수 있습니다](#view-reports-adobe-analytics).
+적응형 양식에 대해 [!DNL Adobe Analytics]을(를) 사용하도록 설정한 후 AEM Forms과 [&#x200B; 사이에 적절한 데이터 이벤트 흐름이 있으면 &#x200B;](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ko#validate-the-page-view-beacon)유효성 검사[!DNL Adobe Analytics]할 수 있습니다. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 [Adobe Analytics에서 보고서를 구성하고 볼 수 있습니다](#view-reports-adobe-analytics).
 
 ### 사용자 지정 이벤트 캡처를 위한 규칙 만들기(선택 사항) {#capture-custom-events}
 

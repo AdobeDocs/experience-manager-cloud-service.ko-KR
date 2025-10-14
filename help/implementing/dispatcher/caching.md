@@ -24,7 +24,7 @@ AEM as a Cloud Service의 CDN에서 HTTP 응답 캐싱은 원본의 `Cache-Contr
 
 이러한 캐시 헤더는 일반적으로 mod_headers를 사용하여 AEM Dispatcher vhost 구성에서 설정되지만 AEM 게시 자체에서 실행되는 사용자 지정 Java™ 코드에서도 설정할 수 있습니다([CDN 캐싱을 활성화하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching) 참조).
 
-CDN 리소스에 대한 캐시 키에는 쿼리 매개 변수를 포함한 전체 요청 URL이 포함되어 있으므로 서로 다른 모든 쿼리 매개 변수가 다른 캐시 항목을 생성합니다. 원치 않는 쿼리 매개 변수를 제거하는 것이 좋습니다. 캐시 적중률을 개선하려면 [아래 ](#marketing-parameters)을 참조하세요.
+CDN 리소스에 대한 캐시 키에는 쿼리 매개 변수를 포함한 전체 요청 URL이 포함되어 있으므로 서로 다른 모든 쿼리 매개 변수가 다른 캐시 항목을 생성합니다. 원치 않는 쿼리 매개 변수를 제거하는 것이 좋습니다. 캐시 적중률을 개선하려면 [아래 &#x200B;](#marketing-parameters)을 참조하세요.
 
 `private`에 `no-cache`, `no-store` 또는 `Cache-Control`이(가) 포함된 원본 응답은 AEM as a Cloud Service의 CDN에서 캐시되지 않습니다(자세한 내용은 [CDN 캐싱을 비활성화하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) 참조).  또한 쿠키를 설정하는 응답, 즉 `Set-Cookie` 응답 헤더가 있는 응답은 CDN에서 캐시되지 않습니다.
 
@@ -253,7 +253,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-이 기능은 `requestTransformations`CDN 구성[에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) 플래그를 사용하여 켜거나 끌 수 있습니다.
+이 기능은 `requestTransformations`CDN 구성[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations) 플래그를 사용하여 켜거나 끌 수 있습니다.
 
 예를 들어 CDN 수준에서 마케팅 매개 변수 제거를 중지하려면 다음 섹션이 포함된 구성을 사용하여 `removeMarketingParams: false`을(를) 배포해야 합니다.
 

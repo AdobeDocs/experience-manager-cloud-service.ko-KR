@@ -40,7 +40,7 @@ AEM Forms as a Cloud Service은 DocuSign에 대한 사용자 정의 제출 액�
 
 기본 제공 사용자 지정 제출 작업과 DocuSign Cloud Service을 구성하려면 다음 단계를 수행하십시오.
 
-1. [AEM Forms as a Cloud Service 프로젝트를 복제](setup-local-development-environment.md#forms-cloud-service-local-development-environment)하거나 [!DNL Experience Manager Forms]AEM Archetype 27[!DNL Cloud Service] 이상을 기반으로 [을(를) ](https://github.com/adobe/aem-project-archetype) 프로젝트로 만듭니다. AEM Archetype을 기반으로 [!DNL Experience Manager Forms]을(를) [!DNL Cloud Service] 프로젝트로 만들려면:
+1. [AEM Forms as a Cloud Service 프로젝트를 복제](setup-local-development-environment.md#forms-cloud-service-local-development-environment)하거나 [!DNL Experience Manager Forms]AEM Archetype 27[!DNL Cloud Service] 이상을 기반으로 [을(를) &#x200B;](https://github.com/adobe/aem-project-archetype) 프로젝트로 만듭니다. AEM Archetype을 기반으로 [!DNL Experience Manager Forms]을(를) [!DNL Cloud Service] 프로젝트로 만들려면:
    </br> 명령 프롬프트를 열고 아래 명령을 실행하여 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트를 만듭니다.
 
    ```shell
@@ -162,7 +162,7 @@ AEM Forms as a Cloud Service은 DocuSign에 대한 사용자 정의 제출 액�
 
 기존 적응형 양식에 대해 [!DNL DocuSign]을(를) 활성화하거나 [!DNL DocuSign]이(가) 활성화된 적응형 양식을 만들 수 있습니다. 다음 중 하나를 선택합니다.
 
-- [ [!DNL DocuSign] 활성화된 적응형 양식 만들기](#create-an-adaptive-form-for-docusign)
+- [&#x200B; [!DNL DocuSign] 활성화된 적응형 양식 만들기](#create-an-adaptive-form-for-docusign)
 - 기존 적응형 양식에 대해 [사용 [!DNL DocuSign] 합니다](#editafsign).
 
 #### DocuSign용 적응형 양식 만들기 {#create-an-adaptive-form-for-docusign}
@@ -202,7 +202,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;로 이동합니다.
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 기본]** 탭에서 [을(를) ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)과(와) 통합하는 동안 만든 [!DNL DocuSign]구성 컨테이너[!DNL AEM Forms]을(를) 선택합니다.
+1. **[!UICONTROL 기본]** 탭에서 [을(를) &#x200B;](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)과(와) 통합하는 동안 만든 [!DNL DocuSign]구성 컨테이너[!DNL AEM Forms]을(를) 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
    - 사용자 지정 양식 서식 파일이 있고 양식 서식 파일을 기반으로 기록 문서가 필요한 경우 **[!UICONTROL 양식 서식 파일을 기록 문서 서식 파일로 연결]** 옵션을 선택하고 기록 문서 서식 파일을 선택하십시오. 옵션을 사용하면 서명을 위해 전송된 문서에 관련 양식 템플릿을 기반으로 하는 필드만 표시됩니다. 적응형 양식의 모든 필드가 표시되지는 않습니다.

@@ -24,7 +24,7 @@ ht-degree: 24%
 
 AEM의 여러 위치에서 페이지 속성을 편집할 수 있습니다.
 
-* [다음에서 ](#from-the-sites-console)
+* [다음에서 &#x200B;](#from-the-sites-console)
 * [페이지 편집기에서](#from-the-page-editor)
 * [유니버설 편집기에서](#from-the-universal-editor)
 

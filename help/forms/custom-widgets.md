@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### XFA 스크립팅 엔진을 사용하여 사용자 정의 위젯 등록  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-사용자 지정 위젯 코드가 준비되면 `registerConfig`Form Bridge[용 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API를 사용하여 스크립팅 엔진에 위젯을 등록합니다. widgetConfigObject를 입력으로 사용합니다.
+사용자 지정 위젯 코드가 준비되면 `registerConfig`Form Bridge[용 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API를 사용하여 스크립팅 엔진에 위젯을 등록합니다. widgetConfigObject를 입력으로 사용합니다.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

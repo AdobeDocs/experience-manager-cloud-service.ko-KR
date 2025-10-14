@@ -31,7 +31,7 @@ ht-degree: 97%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[&#x200B; 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 

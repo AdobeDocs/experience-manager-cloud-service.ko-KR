@@ -30,7 +30,7 @@ ht-degree: 2%
 * 양식에 대한 초기 콘텐츠를 제공합니다.
 * 테마를 지정하고 작업을 제출합니다.
 
-[!DNL AEM Forms]소프트웨어 배포[ 포털에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
+[!DNL AEM Forms]소프트웨어 배포[&#x200B; 포털에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
 
 ## 템플릿 작업 {#working-with-templates}
 

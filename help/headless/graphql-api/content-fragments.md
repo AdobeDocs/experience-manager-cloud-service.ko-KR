@@ -1332,7 +1332,7 @@ AEM Cloud Manager에서 배포 파이프라인을 실행하면 파이프라인 �
 
 정확한 결과를 제공하려면 AEM as a Cloud Service **단계** 환경이 **프로덕션** 환경을 최대한 반영해야 합니다. 이는 특히 콘텐츠의 경우 중요합니다.
 
-AEM as a Cloud Service [ 콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경으로 복사함으로써 이를 달성할 수 있습니다.
+AEM as a Cloud Service [&#x200B; 콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경으로 복사함으로써 이를 달성할 수 있습니다.
 
 ## 제한 사항 {#limitations}
 

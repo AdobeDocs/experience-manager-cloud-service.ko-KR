@@ -42,7 +42,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
      >[!NOTE]
      >
-     > Microsoft의 Graph API에서 [ 권한 범위를 사용하여 ](/help/forms/configure-sharepoint-site-limited-access.md)액세스가 제한된 SharePoint 사이트를 구성`Sites.Selected`할 수도 있습니다. `Sites.Selected`은(는) Microsoft 사이트에 대한 보다 세분화되고 제한된 액세스를 허용하는 SharePoint Graph API의 권한 범위입니다.
+     > Microsoft의 Graph API에서 [&#x200B; 권한 범위를 사용하여 &#x200B;](/help/forms/configure-sharepoint-site-limited-access.md)액세스가 제한된 SharePoint 사이트를 구성`Sites.Selected`할 수도 있습니다. `Sites.Selected`은(는) Microsoft 사이트에 대한 보다 세분화되고 제한된 액세스를 허용하는 SharePoint Graph API의 권한 범위입니다.
 
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 

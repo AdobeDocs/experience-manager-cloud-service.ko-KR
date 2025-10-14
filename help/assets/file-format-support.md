@@ -20,7 +20,7 @@ ht-degree: 9%
 
 에셋 마이크로서비스를 사용한 에셋 전환에 대한 주요 내용은 다음과 같습니다.
 
-* [, ](#adobe-formats), [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD] 또는 PDF 등 Adobe 응용 프로그램 및 서비스에서 생성한 키 [!DNL Adobe Dimension]Adobe 파일 형식[!DNL Adobe Acrobat].
+* [, &#x200B;](#adobe-formats), [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD] 또는 PDF 등 Adobe 응용 프로그램 및 서비스에서 생성한 키 [!DNL Adobe Dimension]Adobe 파일 형식[!DNL Adobe Acrobat].
 * 주요 [이미징 파일 형식](#image-formats).
 * 캐논, 니콘, 후지 필름, 올림푸스 및 기타 제조업체(Adobe Camera Raw 제공)를 포함한 다양한 카메라용 [Camera Raw 파일 형식](#camera-raw-formats).
 * Microsoft® Office 및 Open Document 형식을 포함한 일반적인 [문서 형식](#document-formats)

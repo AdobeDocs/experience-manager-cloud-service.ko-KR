@@ -66,4 +66,4 @@ Cloud Manager을 사용하면 **파이프라인** 카드에서 **저장소 정�
 
 액세스 암호는 언제든지 취소할 수 있습니다.
 
-이렇게 하려면 [이 요청에 대한 지원 티켓을 만듭니다](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&amp;support-tab=home#support). 이 티켓은 높은 우선 순위로 처리되며 보통 하루 안에 취소됩니다.
+이렇게 하려면 [이 요청에 대한 지원 티켓을 만듭니다](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&support-tab=home#support). 이 티켓은 높은 우선 순위로 처리되며 보통 하루 안에 취소됩니다.

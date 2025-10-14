@@ -262,7 +262,7 @@ _선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌
 ![확대/축소 세로 조명 뷰어 사전 설정을 기반으로 에셋 미리 보기](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 에셋을 미리 봅니다. 확대하기 위해 마우스 포인터(`+`)를 시계 위로 이동했습니다. URL 및 포함 단추를 확인합니다._
 
-위의 렌디션은 라이브입니다! [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+위의 렌디션은 라이브입니다! [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## 선택 사항 - 자세히 알아보기
 

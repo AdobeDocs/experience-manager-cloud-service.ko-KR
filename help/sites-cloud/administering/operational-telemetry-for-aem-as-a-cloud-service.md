@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **내 사이트에서 `/.rum` 경로가 차단되어 있습니다. 어떻게 수정해야 합니까?**
 
-   작동 원격 분석 수집이 작동하려면 `/.rum` 경로가 필요합니다. Adobe의 AEM as a Cloud Service 앞에서 CDN을 사용하는 경우 `/.rum` 경로가 다른 AEM 콘텐츠와 동일한 AEM 원본으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오. 또는 `rum.hlx.page`Cloud Manager의 환경 변수 [을(를) ](/help/implementing/cloud-manager/environment-variables.md#add-variables) 값으로 설정`AEM_OPTEL_EXTERNAL`하여 운영 원격 분석에 사용할 호스트를 `true`(으)로 변경할 수 있습니다. 나중에 동일한 도메인 요청으로 다시 변경하려면 해당 환경 변수를 다시 제거합니다.
+   작동 원격 분석 수집이 작동하려면 `/.rum` 경로가 필요합니다. Adobe의 AEM as a Cloud Service 앞에서 CDN을 사용하는 경우 `/.rum` 경로가 다른 AEM 콘텐츠와 동일한 AEM 원본으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오. 또는 `rum.hlx.page`Cloud Manager의 환경 변수 [을(를) &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables) 값으로 설정`AEM_OPTEL_EXTERNAL`하여 운영 원격 분석에 사용할 호스트를 `true`(으)로 변경할 수 있습니다. 나중에 동일한 도메인 요청으로 다시 변경하려면 해당 환경 변수를 다시 제거합니다.
 
 1. **계약 목적으로 운영 원격 분석 수집이 콘텐츠 요청에 포함됩니까?**
 
@@ -103,11 +103,11 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe은 운영 원격 분석 을 사용할 것을 권장합니다. 그 이유는 운영 원격 분석의 상당한 이점과 Adobe이 웹 사이트 성능을 향상시켜 디지털 경험을 최적화하는 데 도움이 될 것입니다. 이 서비스는 원활하도록 설계되었으며 웹 사이트의 성능에 영향을 주지 않습니다.
 
-   옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 [Cloud Manager에서 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이)라는 환경 변수를 `AEM_OPTEL_DISABLED` 값으로 설정하여 작동 원격 분석을 사용하지 않도록 설정할 수 있습니다. `true` 나중에 운영 원격 분석을 다시 활성화하려면 해당 환경 변수를 다시 제거하십시오.
+   옵트아웃은 웹 사이트의 트래픽 참여를 개선할 기회를 놓치는 것을 의미할 수 있습니다. 그러나 문제가 발생하면 [Cloud Manager에서 &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables)(이)라는 환경 변수를 `AEM_OPTEL_DISABLED` 값으로 설정하여 작동 원격 분석을 사용하지 않도록 설정할 수 있습니다. `true` 나중에 운영 원격 분석을 다시 활성화하려면 해당 환경 변수를 다시 제거하십시오.
 
 1. **Nonce로 콘텐츠 보안 정책을 사용할 수 있습니까?**
 
-   운영 원격 분석 지원에는 임시 항목으로 CSP(콘텐츠 보안 정책)를 지원하는 실험 기능이 포함되어 있습니다. 이 기능은 [Cloud Manager에서 환경 변수 ](/help/implementing/cloud-manager/environment-variables.md#add-variables)을(를) 값 `AEM_OPTEL_NONCE`(으)로 설정하여 활성화할 수 있습니다. `true` 나중에 이 기능을 다시 사용하지 않도록 설정하려면 해당 환경 변수를 다시 제거하면 됩니다.
+   운영 원격 분석 지원에는 임시 항목으로 CSP(콘텐츠 보안 정책)를 지원하는 실험 기능이 포함되어 있습니다. 이 기능은 [Cloud Manager에서 환경 변수 &#x200B;](/help/implementing/cloud-manager/environment-variables.md#add-variables)을(를) 값 `AEM_OPTEL_NONCE`(으)로 설정하여 활성화할 수 있습니다. `true` 나중에 이 기능을 다시 사용하지 않도록 설정하려면 해당 환경 변수를 다시 제거하면 됩니다.
 
    이 기능에 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
 

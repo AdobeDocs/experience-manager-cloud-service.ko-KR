@@ -69,7 +69,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 링크 공유 기능을 사용하여 에셋을 공유하는 방법에는 두 가지가 있습니다.
 
-1. 공유 링크 [복사 및 자산 링크 ](#copy-and-share-assets-link)를 다른 사용자와 공유합니다.
+1. 공유 링크 [복사 및 자산 링크 &#x200B;](#copy-and-share-assets-link)를 다른 사용자와 공유합니다.
 1. 공유 링크를 생성하고 [이메일을 통해 자산 링크를 공유](#share-assets-link-through-email)합니다. 만료 날짜 및 시간과 같은 기본값을 수정하고 원본 에셋과 렌디션을 다운로드할 수 있습니다. 이메일 주소를 추가하여 여러 사용자에게 이메일을 보낼 수 있습니다.
 
    ![링크 공유 대화 상자](assets/share-link.png)

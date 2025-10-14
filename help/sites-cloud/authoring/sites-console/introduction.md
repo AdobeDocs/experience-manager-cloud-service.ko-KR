@@ -71,7 +71,7 @@ ht-degree: 46%
 * 카운트 옆에 있는 **X**&#x200B;을(를) 클릭하거나 탭합니다.
 * **Esc** 키를 사용합니다.
 
-![전체 선택 해제 ](assets/sites-console-deselect-all.png)
+![전체 선택 해제 &#x200B;](assets/sites-console-deselect-all.png)
 
 ### 만들기 버튼 {#create-button}
 

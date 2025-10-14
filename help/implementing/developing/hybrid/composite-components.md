@@ -40,7 +40,7 @@ ht-degree: 1%
 AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 가지 모델이 있습니다.
 
 * [구성 요소가 AEM 프로젝트에 없습니다](#component-does-not-exist).
-* [구성 요소가 AEM 프로젝트에 있지만 필수 콘텐츠는 ](#content-does-not-exist)이(가) 아닙니다.
+* [구성 요소가 AEM 프로젝트에 있지만 필수 콘텐츠는 &#x200B;](#content-does-not-exist)이(가) 아닙니다.
 * [구성 요소와 필수 콘텐츠가 모두 AEM 프로젝트에 있습니다](#both-exist).
 
 다음 섹션에서는 카드 구성 요소를 예로 사용하여 각 사례를 구현하는 예를 제공합니다.

@@ -197,7 +197,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
 #### 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결합니다.
 
-1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[ 섹션의 마지막 단계에서 ](#create-a-redirect-url-for-your-aem-instance)을(를) 만들고 기록했습니다.
+1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[&#x200B; 섹션의 마지막 단계에서 &#x200B;](#create-a-redirect-url-for-your-aem-instance)을(를) 만들고 기록했습니다.
 
 1. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지의 **[!UICONTROL 일반]** 탭에서 구성에 대한 **[!UICONTROL 이름]**&#x200B;을 지정하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다. 필요에 따라 **[!UICONTROL 제목]**&#x200B;을 지정하고 구성에 대한 **[!UICONTROL 썸네일]**&#x200B;을 찾아 선택할 수 있습니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 

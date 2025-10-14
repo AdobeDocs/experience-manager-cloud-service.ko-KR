@@ -15,7 +15,7 @@ ht-degree: 37%
 
 콘텐츠 조각 관리 API의 현대화된 OpenAPI 구현을 통해 개발자는 AEM 작성자에서 프로그래밍 방식으로 만들기, 읽기, 업데이트 및 삭제 작업을 수행하여 AEM에 저장된 콘텐츠 조각 모델 및 콘텐츠 조각을 관리할 수 있습니다. 이러한 API는 다양한 사용 사례를 지원합니다.
 
-전체 문서는 [ 콘텐츠 조각 관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)를 참조하십시오.
+전체 문서는 [&#x200B; 콘텐츠 조각 관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)를 참조하십시오.
 
 >[!NOTE]
 >

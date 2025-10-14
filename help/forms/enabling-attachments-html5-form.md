@@ -23,7 +23,7 @@ ht-degree: 1%
 
 HTML5 양식을 사용하여 첨부 파일을 업로드하고 미리 보고 제출할 수 있습니다. 첨부 파일 지원은 기본적으로 비활성화되어 있습니다. 첨부 파일 지원을 활성화하려면
 
-1. [ 다중 선택 문자열 속성을 사용하여 ](/help/forms/custom-profile.md)사용자 지정 프로필`mfAttachmentOptions`을(를) 만듭니다. 첨부 파일 위젯의 옵션을 구성하려면 `mfAttachmentOptions` 속성의 각 문자열에 `property=value` 형식이 있어야 합니다. `property` 및 `value`은(는) 다음 값 중 하나를 가질 수 있습니다.
+1. [&#x200B; 다중 선택 문자열 속성을 사용하여 &#x200B;](/help/forms/custom-profile.md)사용자 지정 프로필`mfAttachmentOptions`을(를) 만듭니다. 첨부 파일 위젯의 옵션을 구성하려면 `mfAttachmentOptions` 속성의 각 문자열에 `property=value` 형식이 있어야 합니다. `property` 및 `value`은(는) 다음 값 중 하나를 가질 수 있습니다.
 
    | 속성 | 값 |
    |--- |---|

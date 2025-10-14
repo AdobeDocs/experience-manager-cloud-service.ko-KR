@@ -119,7 +119,7 @@ input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려
 
 다음 그림은 규칙 편집기에서 `OptionalParameterFunction` 사용자 지정 함수를 사용하여 표시됩니다.
 
-![선택적 매개 변수 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png)
+![선택적 매개 변수 또는 필수 매개 변수 &#x200B;](/help/forms/assets/optional-default-params.png)
 
 필요한 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
 

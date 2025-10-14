@@ -23,7 +23,7 @@ ht-degree: 1%
 
 1. [활성화 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [구성 [!DNL Dynamic Media] 솔루션](#configure-dynamic-media-solutions)
-1. [ [!DNL Dynamic Media] 회사 만들기 및 나열](#create-and-list-dynamic-media-companies)
+1. [&#x200B; [!DNL Dynamic Media] 회사 만들기 및 나열](#create-and-list-dynamic-media-companies)
 1. [게재 계층에서 사용자 지정 도메인 구성](#configure-custom-domain-in-delivery-tier)
 
 <!--

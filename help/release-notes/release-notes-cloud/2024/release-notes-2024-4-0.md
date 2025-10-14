@@ -31,7 +31,7 @@ ht-degree: 95%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[&#x200B; 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -249,7 +249,7 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 관련 파일에 대한 더 빠른 액세스, 더 직관적인 사용자 인터페이스 등의 이점을 활용하여 검색 환경을 더욱 원활하고 효율적으로 만들어 보십시오.
 
-![빠른 검색 필터 ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
+![빠른 검색 필터 &#x200B;](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *빠른 필터를 사용하여 DITA 및 비 DITA 파일을 검색합니다.*
 

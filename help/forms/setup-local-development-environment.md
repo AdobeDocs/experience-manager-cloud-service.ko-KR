@@ -119,7 +119,7 @@ QuickStart는 로컬 개발 환경을 제공하지만 [!DNL Adobe Experience Man
 
 로컬 Experience Manager 환경을 설치하고 구성하려면 다음 단계를 수행하십시오.
 
-* [ as a Cloud Service SDK ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)다운로드 및 추출[!DNL Adobe Experience Manager]
+* [&#x200B; as a Cloud Service SDK &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)다운로드 및 추출[!DNL Adobe Experience Manager]
 * [작성자 인스턴스 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#set-up-local-aem-author-service)
 * [게시 인스턴스 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#set-up-local-aem-publish-service)
 
@@ -131,7 +131,7 @@ QuickStart는 로컬 개발 환경을 제공하지만 [!DNL Adobe Experience Man
 
 Adobe Experience Manager Forms as a Cloud Service 기능 아카이브는 로컬 개발 환경에서 적응형 Forms을 만들고, 스타일을 지정하고, 최적화하는 도구를 제공합니다. 패키지를 설치하여 적응형 양식을 만들고 [!DNL AEM Forms]의 다양한 다른 기능을 사용하십시오. 패키지를 설치하려면:
 
-1. [!DNL AEM Forms]소프트웨어 배포[에서 운영 체제에 대한 최신 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 보관 파일을 다운로드하고 추출하십시오.
+1. [!DNL AEM Forms]소프트웨어 배포[에서 운영 체제에 대한 최신 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 보관 파일을 다운로드하고 추출하십시오.
 
 1. crx-quickstart/install 디렉토리로 이동합니다. 폴더가 없으면 만듭니다.
 
