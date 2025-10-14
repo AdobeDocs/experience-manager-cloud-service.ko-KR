@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2698'
-ht-degree: 74%
+source-wordcount: '2601'
+ht-degree: 56%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 테스트"
->abstract="사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다."
+>abstract="사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 언어 및 프레임워크에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다. Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술 등."
 
 사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 
@@ -28,11 +28,11 @@ AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 �
 
 UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을(를) 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
-Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
+Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 사용하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 
-UI 테스트는 [**프로덕션 파이프라인**&#x200B;의 ](/help/implementing/cloud-manager/deploy-code.md)사용자 정의 UI 테스트[ 단계](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)를 통해 또는 선택적으로 [비프로덕션 파이프라인의 같은 단계를 통해 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지 및 보고할 수 있습니다.
+UI 테스트는 [**사용자 지정 UI 테스트**](/help/implementing/cloud-manager/deploy-code.md) 단계에서 품질 게이트로 실행됩니다. [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)에서 필요하며 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)에서 선택 사항입니다. 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지 및 보고할 수 있습니다.
 
-Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 UI 테스트는 [UI 테스트 빌드](#building-ui-tests) 섹션에 정의된 컨벤션을 따르는 한 어떤 언어로든 작성할 수 있는 테스트가 담긴 Docker 이미지입니다.
+Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 UI 테스트는 도커 이미지가 될 수 있습니다. 테스트는 [UI 테스트 빌드](#building-ui-tests) 섹션에 정의된 규칙을 따르는 한 모든 언어로 작성할 수 있습니다.
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ Docker 빌드 컨텍스트를 생성하려면 다음 작업을 수행하는 Mave
 * 테스트로 Docker 이미지를 빌드하는 데 필요한 `Dockerfile` 및 기타 모든 파일을 포함하는 아카이브를 생성합니다.
 * 아카이브에 `ui-test-docker-context` 분류자로 태그를 지정합니다.
 
-이를 수행하는 가장 간단한 방법은 Docker 빌드 컨텍스트 아카이브를 만들고 여기에 올바른 분류자를 할당하도록 [Maven 어셈블리 플러그인](https://maven.apache.org/plugins/maven-assembly-plugin/)을 구성하는 것입니다.
+가장 간단한 방법은 도커 빌드 컨텍스트 아카이브를 만들고 여기에 올바른 분류자를 할당하도록 [Maven 어셈블리 플러그인](https://maven.apache.org/plugins/maven-assembly-plugin/)을 구성하는 것입니다.
 
 다양한 기술과 프레임워크를 사용하여 UI 테스트를 빌드할 수 있지만 이 섹션에서는 프로젝트가 다음과 유사한 방식으로 배치되어 있다고 가정합니다.
 
@@ -155,7 +155,7 @@ Docker 빌드 컨텍스트를 생성하려면 다음 작업을 수행하는 Mave
 
 어셈블리 설명자는 UI 테스트를 로컬에서 실행하는 동안 생성될 수 있는 일부 파일도 제외합니다. 이를 통해 아카이브 크기는 작아지고 빌드 속도는 빨라집니다.
 
-Docker 빌드 컨텍스트가 포함된 아카이브는 Cloud Manager에 의해 자동으로 선택되며, Cloud Manager는 배포 파이프라인 중에 테스트가 포함된 Docker 이미지를 빌드합니다. 결국 Cloud Manager는 Docker 이미지를 실행하여 애플리케이션에 대한 UI 테스트를 실행합니다.
+Cloud Manager은 배포 파이프라인 동안 도커 빌드 컨텍스트 아카이브를 자동으로 선택하고 테스트 이미지를 빌드합니다. 결국 Cloud Manager은 도커 이미지를 실행하여 애플리케이션에 대한 UI 테스트를 실행합니다.
 
 빌드는 0개 또는 1개의 아카이브를 생성해야 합니다. 아카이브가 생성되지 않으면 테스트 단계가 기본적으로 통과합니다. 빌드가 둘 이상의 아카이브를 생성하는 경우 선택되는 아카이브는 비결정적입니다.
 
@@ -186,7 +186,7 @@ Cloud Manager가 UI 테스트를 빌드하고 실행하려면 저장소에 파�
 >
 >프로젝트에 이 줄이 포함되지 않은 경우 UI 테스트를 선택하도록 파일을 편집합니다.
 >
->파일에 편집하지 말라는 내용의 줄이 포함될 수 있습니다. 이는 옵트인 UI 테스트가 도입되기 전에 프로젝트에 도입되었고 클라이언트가 파일을 편집할 의도가 없었기 때문입니다. 이 경고는 간단히 무시할 수 있습니다.
+>파일에 편집하지 말라는 내용의 줄이 포함될 수 있습니다. 그 이유는 옵트인 UI 테스트가 도입되기 전에 프로젝트에 도입되고 있으며 클라이언트가 파일을 편집할 의도가 없었기 때문입니다. 권고 사항을 무시해도 됩니다.
 
 Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시오.
 
@@ -212,25 +212,25 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 >[!NOTE]
 >
-> 이러한 값은 파이프라인 실행 중에 자동으로 설정됩니다. 파이프라인 변수로 수동으로 설정할 필요가 없습니다.
+> 이러한 값은 파이프라인 실행 중에 자동으로 설정되므로 파이프라인 변수로 수동으로 설정할 필요가 없습니다.
 
 | 변수 | 예 | 설명 | 테스트 프레임워크 |
 |----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL | Selenium 전용 |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 | Selenium 전용 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 작성자 인스턴스의 URL | 모두 |
-| `AEM_AUTHOR_USERNAME` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 사용자 이름 | 모두 |
+| `AEM_AUTHOR_USERNAME` | `admin` | AEM 작성자 인스턴스에 로그인할 사용자 이름 | 모두 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 암호 | 모두 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 게시 인스턴스의 URL | 모두 * |
-| `AEM_PUBLISH_USERNAME` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 사용자 이름 | 모두 * |
+| `AEM_PUBLISH_USERNAME` | `admin` | AEM 게시 인스턴스에 로그인할 사용자 이름 | 모두 * |
 | `AEM_PUBLISH_PASSWORD` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 암호 | 모두 * |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 테스트 결과의 XML 보고서를 저장해야 하는 경로 | 모두 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에 액세스할 수 있도록 파일을 업로드해야 하는 URL | 모두 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에서 액세스할 수 있도록 파일을 업로드해야 하는 URL | 모두 |
 | `PROXY_HOST` | `proxy-host` | 테스트 프레임워크에서 사용할 내부 HTTP 프록시의 호스트 이름 | Selenium을 제외한 모든 항목 |
 | `PROXY_HTTPS_PORT` | `8071` | HTTPS 연결을 위한 프록시 서버 수신 포트(비어 있을 수 있음) | Selenium을 제외한 모든 항목 |
 | `PROXY_HTTP_PORT` | `8070` | HTTP 연결을 위한 프록시 서버 수신 포트(비어 있을 수 있음) | Selenium을 제외한 모든 항목 |
 | `PROXY_CA_PATH` | `/path/to/root_ca.pem` | 테스트 프레임워크에서 사용할 CA 인증서 경로 | Selenium을 제외한 모든 항목 |
-| `PROXY_OBSERVABILITY_PORT` | `8081` | 프록시 서버의 HTTP 상태 검사 포트 | Selenium을 제외한 모든 항목 |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | 프록시 서버의 HTTP `healthcheck` 포트 | Selenium을 제외한 모든 항목 |
 | `PROXY_RETRY_ATTEMPTS` | `12` | 프록시 서버 준비 대기 중 권장 재시도 횟수 | Selenium을 제외한 모든 항목 |
 | `PROXY_RETRY_DELAY` | `5` | 프록시 서버 준비 대기 중 재시도 사이의 제안된 지연 시간 | Selenium을 제외한 모든 항목 |
 
@@ -238,9 +238,9 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우미 기능을 제공합니다.
 
-* Cypress: 표준 기능 `Cypress.env('VARIABLE_NAME')` 사용
-* JavaScript: [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 모듈 보기
-* Java: [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스 보기
+Cypress: 표준 기능 `Cypress.env('VARIABLE_NAME')` 사용
+<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
 
 ### 테스트 보고서 생성 {#generate-test-reports}
 
@@ -268,14 +268,14 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 
 | 유형 | 값 | 설명 |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | 테스트 실행당 예약된 CPU-time 양입니다. |
-| 메모리 | 1Gi | 테스트에 할당된 메모리 양, 값(GB). |
-| 시간 초과 | 30m | 테스트가 종료되는 기간입니다. |
-| 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
+| CPU | 2.0 | 테스트 실행당 예약된 CPU 시간입니다. |
+| 메모리 | 1Gi | 테스트에 할당된 메모리 양입니다. 값은 GB입니다. |
+| 시간 초과 | 30m | 테스트가 실행되는 시간입니다. |
+| 권장 기간 | 15m | Adobe은 테스트를 이 시간 제한 미만으로 유지하는 것을 권장합니다. |
 
 >[!NOTE]
 >
-> 더 많은 리소스가 필요한 경우, 고객 지원 사례를 만들고 사용 사례를 설명하십시오. Adobe에서 귀하의 요청을 검토하고 적절한 지원을 제공할 것입니다.
+> 추가 리소스가 필요한 경우 고객 지원 사례를 만들고 사용 사례를 설명합니다. Adobe은 요청을 검토하고 적절한 지원을 제공합니다.
 
 ## Selenium 관련 세부 정보
 
@@ -292,7 +292,8 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 
 Selenium의 상태 엔드포인트가 긍정 응답을 보내면 테스트를 시작할 수 있습니다.
 
-Adobe UI 테스트 샘플은 `wait-for-grid.sh` 스크립트로 이를 처리하며, 해당 스크립트는 Docker 시작 시 실행되어 그리드가 준비된 후에만 실제 테스트 실행을 시작합니다.
+Adobe의 UI 테스트 샘플은 `wait-for-grid.sh`을(를) 사용합니다. 도커 시작 시 실행되고 그리드가 준비된 후에만 테스트를 실행합니다.
+
 
 ### 스크린샷 및 비디오 캡처 {#capture-screenshots}
 
@@ -302,23 +303,27 @@ Docker 이미지는 추가 테스트 출력(예: 스크린샷 또는 비디오)�
 
 도우미 기능을 사용하여 테스트를 통해 스크린샷을 만들 수 있습니다.
 
-* JavaScript: [takeScreenshot 명령](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [명령](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+<!-- BOTH URLS ARE 404
+* JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud Manager에서 [**사용자 정의 UI 테스트** 단계 아래의 `Download Details` 버튼을 사용해 아카이브를 다운로드할 수 있습니다](/help/implementing/cloud-manager/deploy-code.md).
+UI 테스트 실행 중에 테스트 결과 아카이브가 만들어지면 `Download Details`사용자 지정 UI 테스트&#x200B;[**단계** 아래의 ](/help/implementing/cloud-manager/deploy-code.md) 버튼을 클릭하여 Cloud Manager에서 다운로드할 수 있습니다.
 
 ### 파일 업로드 {#upload-files}
 
-경우에 따라 테스트 중인 애플리케이션에 파일을 업로드해야 합니다. 테스트에 비해 Selenium을 유연하게 배치하기 위해 자산을 Selenium에 직접 업로드할 수 없습니다. 대신 파일을 업로드하려면 다음 단계가 필요합니다.
+경우에 따라 테스트 중인 애플리케이션에 파일을 업로드해야 합니다. 테스트에 비해 Selenium을 유연하게 배치하기 위해 에셋을 Selenium에 직접 업로드할 수 없습니다. 대신 파일을 업로드하려면 다음 단계가 필요합니다.
 
 1. `UPLOAD_URL` 환경 변수로 지정된 URL에서 파일을 업로드합니다.
    * 업로드는 다중 부분 양식으로 된 하나의 POST 요청으로 수행되어야 합니다.
    * 다중 부분 양식에는 단일 파일 필드가 있어야 합니다.
-   * 이는 `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`에 해당합니다.
-   * 이러한 HTTP 요청을 수행하는 방법을 알아보려면 Docker 이미지에 사용된 프로그래밍 언어의 문서 및 라이브러리를 참조하십시오.
-   * Adobe 테스트 샘플은 파일 업로드를 위한 도우미 기능을 제공합니다.
-      * JavaScript: [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 명령을 참조하십시오.
-      * Java: [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 클래스를 참조하십시오.
+   * `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`과(와) 동일합니다.
+   * 이러한 HTTP 요청을 수행하는 방법을 알아보려면 도커 이미지에 사용된 프로그래밍 언어의 문서 및 라이브러리를 참조하십시오.
+
+   <!-- BOTH URLS ARE 404
+   * The Adobe test samples provide helper functions for uploading files:
+     * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+
 1. 업로드가 성공하면 요청은 `text/plain` 유형의 `200 OK` 응답을 반환합니다.
    * 응답의 내용은 불투명한 파일 핸들입니다.
    * `<input>` 요소의 파일 경로 대신 이 핸들을 사용하여 애플리케이션에서 파일 업로드를 테스트할 수 있습니다.
@@ -337,11 +342,11 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 비어 있지 않으면 진입점 스크립트는 다음을 수행해야 합니다.
 
-1. UI 테스트 실행을 위한 HTTP 프록시 연결을 구성합니다. 다음 값을 사용하여 빌드된 `HTTP_PROXY` 환경 변수를 내보내면 이를 수행할 수 있습니다.
+1. 다음 값을 사용하여 빌드된 `HTTP_PROXY` 환경 변수를 내보내어 UI 테스트 실행을 위한 HTTP 프록시 연결을 구성합니다.
    * `PROXY_HOST` 변수가 제공하는 프록시 호스트
    * `PROXY_HTTPS_PORT` 또는 `PROXY_HTTP_PORT` 변수가 제공하는 프록시 포트(값이 비어 있지 않은 변수가 사용됨)
 2. HTTP 프록시에 연결할 때 사용할 CA 인증서를 설정합니다. 해당 위치는 `PROXY_CA_PATH` 변수에 의해 제공됩니다.
-   * `NODE_EXTRA_CA_CERTS` 환경 변수를 내보내면 이를 수행할 수 있습니다.
+   * `NODE_EXTRA_CA_CERTS` 환경 변수를 내보냅니다.
 3. HTTP 프록시가 준비될 때까지 기다립니다.
    * 준비 상태를 확인하기 위해 `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` 및 `PROXY_RETRY_DELAY` 환경 변수를 사용할 수 있습니다.
    * cURL 요청을 사용하여 `Dockerfile`에 cURL을 설치했는지 확인할 수 있습니다.
@@ -352,17 +357,17 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 >[!NOTE]
 >
-> 이 섹션은 극작가가 선택한 테스트 인프라인 경우에만 적용됩니다.
+> 이 섹션은 `Playwright`이(가) 선택한 테스트 인프라인 경우에만 적용됩니다.
 
 ### HTTP 프록시 설정
 
 >[!NOTE]
 >
-> 제시된 예에서 Chrome이 프로젝트 브라우저로 사용되고 있다고 가정합니다.
+> 제시된 예에서 Adobe은 Chrome이 프로젝트 브라우저로 사용 중이라고 가정합니다.
 
 비어 있지 않은 `PROXY_HOST` 환경 변수가 제공된 경우 Cypress와 마찬가지로 테스트에서 HTTP 프록시를 사용해야 합니다.
 
-이를 위해서는 다음과 같이 수정해야 합니다.
+이 경우 다음과 같이 편집해야 합니다.
 
 #### Dockerfile
 
@@ -379,7 +384,7 @@ RUN apt -y update \
 `PROXY_HOST` 환경 변수가 제공된 경우 다음을 수행하는 bash 스크립트를 포함합니다.
 
 1. `HTTP_PROXY` 및 `NODE_EXTRA_CA_CERTS`과(와) 같은 프록시 관련 변수 내보내기
-2. `certutil`을(를) 사용하여 chromium에 대한 프록시 CA 인증서를 설치합니다.
+2. `certutil`을(를) 사용하여 Chromium™용 프록시 CA 인증서를 설치합니다.
 3. HTTP 프록시가 준비될 때까지(또는 실패 시 종료) 기다립니다.
 
 예제 구현:
@@ -413,7 +418,7 @@ fi
 
 #### 극작가 구성
 
-`HTTP_PROXY` 환경 변수가 설정된 경우 프록시를 사용하도록 극작가 구성(예: `playwright.config.js`에서)을 수정하십시오.
+`playwright.config.js` 환경 변수가 설정된 경우 프록시를 사용하도록 극작가 구성(예: `HTTP_PROXY`에서)을 수정하십시오.
 
 예제 구현:
 
@@ -432,12 +437,12 @@ if (proxyServer !== '') {
 
 >[!NOTE]
 >
-> 예제 구현은 [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/)의 극작가 샘플 테스트 모듈에서 찾을 수 있습니다.
+> 예제 구현은 [GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)의 극작가 샘플 테스트 모듈에서 찾을 수 있습니다.
 
 
 ## 로컬에서 UI 테스트 실행 {#run-ui-tests-locally}
 
-Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 또는 실제 AEM as a Cloud Service 인스턴스에 대해 로컬에서 UI 테스트를 실행하는 것이 좋습니다.
+Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 Adobe에서는 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)에 대해 로컬로 UI 테스트를 실행하는 것이 좋습니다. 또는 실제 AEM as a Cloud Service 인스턴스에 대해 를 실행합니다.
 
 ### Cypress 테스트 샘플 {#cypress-sample}
 
@@ -473,13 +478,13 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >로그 파일은 저장소의 `target/` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)를 참고하십시오.
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)를 참조하십시오.
 
 ### JavaScript WebdriverIO 테스트 샘플 {#javascript-sample}
 
 1. 셸을 열고 저장소의 `ui.tests` 폴더로 이동합니다.
 
-1. 아래 명령을 실행하여 Maven을 사용해 테스트를 시작합니다.
+1. 다음 명령을 실행하여 Maven을 사용하여 테스트를 시작합니다.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -493,11 +498,11 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 
 >[!NOTE]
 >
->* 독립 실행형 Selenium 인스턴스가 시작되고 그에 대한 테스트가 실행됩니다.
+>* 이 명령은 독립형 Selenium 인스턴스를 시작하고 그에 대한 테스트를 실행합니다.
 >* 로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >* 테스트에서 테스트를 위해 ChromeDriver의 최신 릴리스를 자동으로 다운로드하므로 최신 크롬 버전이 실행 중인지 확인해야 합니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)를 참고하십시오.
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)를 참조하십시오.
 
 ### 극작가 테스트 샘플 {#playwright-sample}
 
@@ -525,7 +530,7 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >로그 파일은 저장소의 `target/` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)를 참고하십시오.
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)를 참조하십시오.
 
 
 ### Java Selenium WebDriver 테스트 샘플 {#java-sample}
@@ -547,4 +552,4 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)를 참고하십시오.
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)를 참조하십시오.

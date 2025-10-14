@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 78%
 
 ---
@@ -34,7 +34,7 @@ Cloud Manager에서 새 코드 저장소를 만들면 `it.tests` 폴더와 샘�
 
 Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일한 도구를 사용하여 사용자 정의 기능 테스트를 작성할 수 있습니다. 테스트 작성 방법의 예로 GitHub의 [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)를 사용하십시오.
 
-사용자 정의 기능 테스트를 위한 코드는 프로젝트의 `it.tests` 폴더에 있는 Java™ 코드입니다. 모든 기능 테스트와 함께 단일 JAR을 생성해야 합니다. 빌드가 둘 이상의 테스트 JAR을 생성하는 경우 선택되는 JAR은 비결정적입니다. 테스트 JAR이 0이면 테스트 단계가 기본적으로 통과합니다. 샘플 테스트는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)을(를) 참조하십시오.
+사용자 정의 기능 테스트를 위한 코드는 프로젝트의 `it.tests` 폴더에 있는 Java™ 코드입니다. 모든 기능 테스트와 함께 단일 JAR을 생성해야 합니다. 빌드가 둘 이상의 테스트 JAR을 생성하는 경우 선택되는 JAR은 비결정적입니다. 테스트 JAR이 0이면 테스트 단계가 기본적으로 통과합니다. 샘플 테스트는 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)을 참조하세요.
 
 테스트는 최소 두 개의 작성자 인스턴스, 두 개의 게시 인스턴스 및 Dispatcher 구성을 포함하여 Adobe에서 유지 관리하는 테스트 인프라에서 실행됩니다. 이렇게 설정하면 사용자 정의 기능 테스트가 전체 AEM 스택에 대해 실행됩니다.
 
@@ -108,7 +108,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 | CPU | 0.5 | 테스트 실행당 예약된 CPU 시간 |
 | 메모리 | 0.5Gi | 테스트에 할당된 메모리 양(기비바이트 값) |
 | 시간 초과 | 30m | 테스트가 중지되는 시간 제한입니다. |
-| 권장 기간 | 15m | Adobe은 이 시간보다 오래 걸리지 않도록 테스트를 작성할 것을 권장합니다. |
+| 권장 기간 | 15m | Adobe에서는 테스트를 작성할 때 이 시간보다 오래 걸리지 않도록 권장합니다. |
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 >[!NOTE]
 >
 >이 변경 사항은 2024년 4월 6일 이전에 수행되어야 합니다.
->종속성 라이브러리를 업데이트하지 않으면 &quot;사용자 정의 기능 테스트&quot; 단계에서 파이프라인 오류가 발생할 수 있습니다.
+>>종속성 라이브러리를 업데이트하지 않으면 &quot;사용자 정의 기능 테스트&quot; 단계에서 파이프라인 오류가 발생할 수 있습니다.
 
 ### 로컬 테스트 실행 {#local-test-execution}
 

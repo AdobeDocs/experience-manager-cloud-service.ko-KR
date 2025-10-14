@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 이 과정은 문서화되어 있습니다. [프로젝트 생성 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)를 참조하십시오.
 
-예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
+예를 들어 [lWKND 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
 ## Java™ 8에서 Java™ 11로 전환한 후 maven-scr-plugin에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-이 오류는 Cloud Manager가 다른 버전의 Java™를 사용하여 maven 명령을 실행하고 코드를 컴파일하기 때문에 알려진 문제입니다. `maven-enforcer-plugin` 구성에서 `requireJavaVersion`을 생략하기만 하면 됩니다.
+이 오류는 Cloud Manager이 다른 버전의 Java™을 사용하여 Maven 명령을 실행하고 코드를 컴파일하기 때문에 알려진 문제입니다. `maven-enforcer-plugin` 구성에서 `requireJavaVersion`을 생략하기만 하면 됩니다.
 
 ## 코드 품질 검사에 실패하여 배포가 중단되었습니다. 이 검사를 우회하는 방법이 있습니까? {#deployment-stuck}
 
-예. 보안 등급을 제외한 모든 코드 품질 검사 실패는 중요하지 않은 지표이므로 결과 UI의 항목을 확장하여 배포 파이프라인의 일부로 우회할 수 있습니다.
+예. 보안 등급을 제외한 모든 코드 품질 검사 실패는 중요하지 않은 지표입니다. 따라서 결과 UI의 항목을 확장하여 배포 파이프라인의 일부로 우회할 수 있습니다.
 
-[배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) 역할을 가진 사용자는 문제를 재정의할 수 있습니다. 이 경우 파이프라인이 진행되거나 문제를 수락할 수 있으며 파이프라인이 실패와 함께 중지됩니다.
+[배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) 역할을 가진 사용자는 문제를 재정의할 수 있습니다. 이 경우 파이프라인이 진행되거나 문제를 수락할 수 있으며 이 경우 파이프라인이 실패와 함께 중지됩니다.
 
 자세한 내용은 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) 문서를 참조하십시오.
 
@@ -57,7 +57,7 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한
 
 예. 개발자 배포의 경우 git 분기 `pom.xml` 파일의 `<version>` 값 끝에 `-SNAPSHOT`이 포함되어야 합니다.
 
-버전이 변경되지 않은 경우에도 이 값을 사용하여 후속 배포를 계속 설치할 수 있습니다. 개발자 배포에서는 Maven 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
+이 값을 사용하면 버전이 변경되지 않은 경우에도 후속 배포를 계속 설치할 수 있습니다. 개발자 배포에서는 Maven 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
 
 단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager는 자동으로 적절한 버전 번호를 설정하고 git에 태그를 생성합니다. 필요한 경우 이 태그를 나중에 참조할 수 있습니다.
 
@@ -94,7 +94,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 이전 예의 오류에서 `myapp-base.ui.content-*.zip` 패키지에는 `/conf` 및 `/var/workflow` 아래에 콘텐츠가 포함되어 있습니다. 배포가 성공하려면 해당 경로 아래의 `sling-distribution-importer`에 대한 권한이 필요합니다.
 
-다음은 `sling-distribution-importer` 사용자에 대한 추가 권한을 추가하는 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 구성의 예입니다. 이 구성은 `/var` 아래에 권한을 추가합니다. 이러한 구성은 `/apps/myapp/config` 아래의 애플리케이션 패키지에 추가되어야 합니다(여기서 myapp은 애플리케이션 코드가 저장된 폴더임).
+다음은 `sling-distribution-importer` 사용자에 대한 추가 권한을 추가하는 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 구성의 예입니다. 이 구성은 `/var` 아래에 권한을 추가합니다. 이러한 구성은 `/apps/myapp/config` 아래의 응용 프로그램 패키지에 추가되어야 합니다. 여기서 `myapp`은(는) 응용 프로그램 코드가 저장된 폴더입니다.
 
 ## Cloud Manager 배포는 AEM as a Cloud Service의 배포 단계에서 실패하고 RepositoryInitializer OSGi 구성은 이미 추가했습니다. 그 밖에 어떤 작업을 할 수 있습니까? {#build-failures}
 
