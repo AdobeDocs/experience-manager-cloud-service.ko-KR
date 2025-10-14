@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
-workflow-type: ht
-source-wordcount: '433'
-ht-degree: 100%
+source-git-commit: 1a1eeb3b9aec839677baadf9bea67993a22f9519
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 39%
 
 ---
 
@@ -16,55 +16,58 @@ ht-degree: 100%
 
 다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 정보를 간략히 소개합니다.
 
-## 릴리스 22758 {#22758}
+## 릴리스 22943 {#22943}
 
-2025년 10월 1일에 릴리스된 유지 관리 릴리스 22758의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 22450이었습니다.
+다음은 2025년 10월 14일에 공개적으로 릴리스된 유지 보수 릴리스 22943에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 22758.
 
 이 유지 관리 릴리스에 대한 2025.10.0 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-22758}
+### 개선 사항 {#enhancements-22943}
 
-* ASSETS-56227: adobe-countdown-timer 수정자의 이름을 바꿉니다.
-* CNTBF-493: 콘텐츠 백플로 번들 버전을 2.0.28로 높입니다.
-* CQ-4361110: Granite 번역
-* CQ-4361112: 최신 AEM 번역
-* GRANITE-56026: 권한 API 상태 코드 응답을 개선합니다.
-* GRANITE-61015: 공개 내보낸 목록에 `org.apache.commons.io.channels` 패키지를 추가했습니다.
-* GRANITE-61167: Felix 로그가 최신 OSGI 사양으로 업데이트되었습니다.
-* GRANITE-61167: 여러 Apache Felix 종속성을 업데이트합니다.
-* GRANITE-61169: 보호된 문자열에 대한 검사를 개선합니다.
-* GRANITE-61622: 여러 Apache Sling 종속성을 업데이트합니다.
-* GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2`를 빠른 시작에 추가합니다.
-* GRANITE-61811: `com.adobe.granite.repository-2.0.0`를 빠른 시작에 추가합니다.
-* SITES-32014: 외부 이벤트를 수신하여 서비스 등록을 업데이트합니다.
-* SITES-34277: 페이지 번역 워크플로에서 발생하는 차단 오류를 수정했습니다.
-* SKYOPS-108706: 릴리스 전환 번들을 최신 버전으로 업그레이드했습니다(etag 캐싱).
-* SKYOPS-114210: 최신 버전의 aem.pss.service 번들로 업데이트합니다.
-* SKYOPS-116171: Sling ResourceResolver를 1.12.12로 업데이트합니다.
-* SKYOPS-119811: Dispatcher-publish 2.0.258을 릴리스했습니다.
+* ASSETS-57809: damAssetLucene-13의 색인 정의 업데이트입니다.
+* ASSETS-36521: 일관된 후처리를 위해 DM 재업로드 워크플로우가 개선되었습니다.
+* ASSETS-56400: 투명도가 있는 에셋에 대한 새 OOTB 확대/축소 PNG 렌디션이 추가되었습니다.
+* ASSETS-55326: HTTP 이벤트를 통해 AI 메타데이터 폴더 구성 보기를 사용할 수 있습니다.
+* ASSETS-56905: 프록시를 통해 Indesign에 연결할 수 있습니다.
+* ASSETS-48286: GenStudio용 Algolia에 CAI 속성을 추가합니다.
+* ASSETS-48653: 전처리 단계에서 보이지 않는 워터마크를 적용합니다.
+* ASSETS-55874: 이미지 사전 설정을 scene7에서 DMWithOpenapi로 마이그레이션하는 중입니다.
+* SITES-30452: /content/definition 끝점의 ASO에 대한 콘텐츠 API 개선 사항.
 
-### 해결된 문제 {#fixed-issues-22758}
+### 해결된 문제 {#fixed-issues-22943}
 
-* GRANITE-61875: &#39;잘못된 표현식 평가&#39;에 대한 트리거 수정 - 작성자가 콘텐츠 조각을 저장할 수 없으며 자산이 다운로드되지 않습니다.
-* SITES-22059: PDF 뷰어 구성 요소에서 JS 오류를 수정합니다. 핵심 구성 요소 사이트 > PDF 뷰어에서 현지화되지 않은 “파일 미리보기를 사용할 수 없음” 문자열
-* GRANITE-59704: 편집 모드가 작동하지 않는 htmllibmanager.debug를 수정합니다.
-* GRANITE-61042: FELIX-6796(ServiceTracker NPE 수정)을 AEM Felix 웹 콘솔 번들에 통합합니다.
-* GRANITE-61165: Workspace.copy()가 RepositoryException을 발생시킵니다.
-* GRANITE-61875: ui.commons를 5.10.50로 업데이트합니다.
+* ASSETS-56301: CSV에 PredictedTags를 포함하도록 선택적 메타데이터 내보내기가 수정되었습니다.
+* ASSETS-55543: 비동기 처리 논리를 재사용 가능한 번들로 리팩터링했습니다.
+* ASSETS-54789: DM ACL이 활성화되면 ACLPermissionsValidator에서 NPE가 수정되었습니다.
+* ASSETS-55888: UI 렌디션 패널에 표시되는 맬웨어 렌디션을 수정했습니다.
+* GRANITE-62236: 스마트 컬렉션에 대한 저장된 검색에서 키워드 현지화 문제가 수정되었습니다.
+* GRANITE-61875: 콘텐츠 조각 및 자산 다운로드를 저장하지 못하는 &quot;잘못된 표현식 평가&quot; 핫픽스 문제를 수정했습니다.
+* SITES-24074: 키보드 탭 탐색 중 포커스를 받는 숨겨진 모바일 탐색이 수정되었습니다.
+* SITES-33611: 대량 시장을 위한 라이브 카피 개요 문제가 수정되었습니다.
 
-### 알려진 문제 {#known-issues-22758}
+#### AEM Guides {#guides-22943}
 
-없음.
+* GUIDES-31421: 여러 DITA 맵 또는 주제가 열려 있고 주제 중 하나가 닫혀 있으면 열려 있는 모든 탭이 탭 막대의 열려 있는 나머지 탭과 겹치는 **>>** 단추가 표시됩니다.
+* GUIDES-33229: PDF를 생성할 때 속성 이름에 마침표가 포함된 경우 DITAVAL 파일의 필터링 규칙이 무시됩니다.
+* 안내서-33720: 번역 UI의 화면을 확대할 때 번역용으로 보내기 버튼이 줄임표 아래로 이동하며 에셋을 선택하지 않아도 활성화됩니다.
+* GUIDES-33590: 검토자가 검토 작업을 완료하거나 개시자가 주석을 입력하지 않고 검토 작업을 업데이트하면 전송된 알림 이메일에 가장 최근의 이전 주석이 표시됩니다.
 
-### 사용 중단된 기능 및 API {#deprecated-22758}
+릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
+
+### 사용 중단된 기능 및 API {#deprecated-22943}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-22758}
+### 보안 수정 {#security-22943}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 13개가 해결되었습니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스는 14개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 노력을 강화합니다.
 
-### 임베드된 기술 {#embedded-tech-22758}
+### 변경 사항 공지
+
+* 이 릴리스에는 다음과 같은 새로운 제품 인덱스 버전이 포함되어 있습니다.
+* **damAssetLucene-13**
+
+### 임베드된 기술 {#embedded-tech-22943}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
@@ -72,5 +75,5 @@ AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | Apache HTTP 서버 | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM 핵심 구성 요소 | 2.30.1 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 핵심 구성 요소 | 2.30.2 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (기본값) | [지원되는 Node.js 버전](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
