@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ ht-degree: 3%
   <tbody>
     <tr>
       <th>로그 기술</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon</td>
-      <td style="background-color: #ffb3b3;">예</td>
       <td>예</td>
       <td>예</td>
-      <td style="background-color: #ffb3b3;">아니요</td>
+      <td style="background-color: #ffb3b3;">미래</td>
     </tr>
     <tr>
       <td>Azure Blob 저장소</td>
-      <td>아니요</td>
       <td>예</td>
       <td>예</td>
       <td>예</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>아니요</td>
       <td>예</td>
       <td>예</td>
       <td>예</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">예</td>
       <td>예</td>
       <td>예</td>
-      <td style="background-color: #ffb3b3;">아니요</td>
+      <td style="background-color: #ffb3b3;">미래</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>아니요</td>
       <td>예</td>
       <td>예</td>
       <td>예</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>아니요</td>
       <td>예</td>
       <td>예</td>
       <td>예</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">예</td>
       <td>예</td>
       <td>예</td>
-      <td style="background-color: #ffb3b3;">아니요</td>
+      <td style="background-color: #ffb3b3;">미래</td>
     </tr>
     <tr>
       <td>스플렁크</td>
-      <td>아니요</td>
       <td>예</td>
       <td>예</td>
       <td>예</td>
     </tr>
     <tr>
       <td>스모 논리</td>
-      <td style="background-color: #ffb3b3;">예</td>
       <td>예</td>
       <td>예</td>
-      <td style="background-color: #ffb3b3;">아니요</td>
+      <td style="background-color: #ffb3b3;">미래</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Private Beta의 기술에 대한 액세스 권한을 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+> 향후 예정된 CDN 로그 기술에 대해서는 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내 관심 영역을 등록하십시오.
 
 로그 전달은 Git에서 구성을 선언하여 셀프서비스 방식으로 구성되며 Cloud Manager 구성 파이프라인을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
@@ -116,7 +106,7 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 
 ## 설정 {#setup}
 
-1. 이름이 `logForwarding.yaml`인 파일을 만듭니다. [구성 파이프라인](/help/operations/config-pipeline.md#common-syntax) 문서에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
+1. 이름이 `logForwarding.yaml`인 파일을 생성합니다. [구성 파이프라인](/help/operations/config-pipeline.md#common-syntax) 문서에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
 
    ```yaml
    kind: "LogForwarding"
@@ -247,6 +237,8 @@ CDN 로그의 경우 [Fastly 설명서 - 공개 IP 목록](https://www.fastly.co
 >[!NOTE]
 >
 >AEM 로그가 표시되는 IP 주소와 동일한 IP 주소에서 CDN 로그가 표시될 수 없습니다. 이는 로그가 AEM Cloud Service가 아닌 Fastly에서 직접 전송되기 때문입니다.
+>
+>이러한 이유로 고급 네트워킹 VPN 구성과 함께 로그 전달을 사용할 수 없습니다.
 
 ## 대상 구성 로깅 중 {#logging-destinations}
 
@@ -293,6 +285,9 @@ IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용
 ```
 
 구현 방법에 대한 자세한 내용은 [AWS 버킷 정책 설명서](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)를 참조하십시오.
+
+>[!NOTE]
+>AWS S3에 대한 CDN 로그 지원은 향후에 제공될 예정입니다. 관심 영역을 등록하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ### Azure Blob 저장소 {#azureblob}
 
@@ -445,7 +440,7 @@ data:
 #### 고려 사항
 
 * URL 문자열에 **https://**&#x200B;이(가) 포함되어야 합니다. 그렇지 않으면 유효성 검사가 실패합니다.
-* URL은 포트를 포함할 수 있습니다. 예, `https://example.com:8443/aem_logs/aem`. URL 문자열에 포트가 포함되지 않으면 포트 443(기본 HTTPS 포트)이 가정됩니다.
+* URL은 포트를 포함할 수 있습니다. 예를 들어, `https://example.com:8443/aem_logs/aem`과 같이 입력합니다. URL 문자열에 포트가 포함되지 않으면 포트 443(기본 HTTPS 포트)이 가정됩니다.
 
 #### HTTPS CDN 로그 {#https-cdn}
 
@@ -491,7 +486,7 @@ New Relic으로 로그 전달에서는 수집에 New Relic HTTPS API를 활용�
 >
 >New Relic에 대한 로그 전달은 고객 소유 New Relic 계정에만 사용할 수 있습니다.
 >
->액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>New Relic 로그 API에 대한 CDN 로그 지원이 향후 예정되어 있습니다. 관심 영역을 등록하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 >
 >New Relic은 New Relic 계정이 프로비저닝된 위치를 기반으로 지역별 엔드포인트를 제공합니다.  자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)를 참조하세요.
 
@@ -515,8 +510,7 @@ Dynatrace으로 로그 전달에서는 수집에 Dynatrace HTTPS API를 활용�
 ```
 
 >[!NOTE]
->
-> 액세스를 요청하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>Dynatrace 로그 API에 대한 CDN 로그 지원이 향후 예정되어 있습니다. 관심 영역을 등록하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
 
 ### 스플렁크 {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>SumoLogic에 대한 CDN 로그 지원이 향후 예정되어 있습니다. 관심 영역을 등록하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>
 > &quot;색인&quot; 필드 기능을 사용하려면 Sumo Logic Enterprise 구독이 필요합니다.  Enterprise가 아닌 구독의 로그는 기본적으로 `sumologic_default` 파티션으로 라우팅됩니다.  자세한 내용은 [Sumo 논리 분할 설명서](https://help.sumologic.com/docs/search/optimize-search-partitions/)를 참조하십시오.
 
 ## 로그 항목 형식 {#log-formats}
