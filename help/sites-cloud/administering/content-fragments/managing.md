@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 71%
@@ -84,7 +84,7 @@ ht-degree: 71%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -151,7 +151,7 @@ ht-degree: 71%
 
 콘솔에는 직접 또는 특정 조각을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
 
-* 다양한 작업이 [&#x200B; 콘솔에서 사용 가능](#actions-unselected)합니다.
+* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
 * [하나 이상의 콘텐츠 조각을 선택하여 적합한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
 
 ### 작업 (선택되지 않음) {#actions-unselected}
@@ -257,53 +257,6 @@ ht-degree: 71%
    ![조각 편집기](assets/cf-managing-editor.png)
 
 ## 컨텐츠 조각 복사 {#copy-a-content-fragment}
-
-<!--
-**Copy** creates a copy of the selected fragment at its location.
-
-* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
--->
-
-<!-- CQDOC-22785 - will replace above text -->
 
 **복사**&#x200B;는 해당 위치에 선택한 조각의 복사본을 만듭니다.
 
