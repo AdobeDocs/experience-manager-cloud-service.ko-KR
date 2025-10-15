@@ -48,7 +48,7 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스.](https://business.adobe.com/products/magento/open-source.html)
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스.](https://business.adobe.com/kr/products/magento/open-source.html)
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험 {#aem-rendering}
 

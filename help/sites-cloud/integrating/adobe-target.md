@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Experience Cloud의 일부인 [Adobe Target](https://business.adobe.com/products/target/adobe-target.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM as a Cloud Service는 Adobe Target Standard에서 사용하는 타겟팅 워크플로를 채택했습니다. Target을 사용하면 AEM as a Cloud Service의 편집 환경 타겟팅에 잘 알게 될 수 있습니다.
+Adobe Experience Cloud의 일부인 [Adobe Target](https://business.adobe.com/kr/products/target/adobe-target.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM as a Cloud Service는 Adobe Target Standard에서 사용하는 타겟팅 워크플로를 채택했습니다. Target을 사용하면 AEM as a Cloud Service의 편집 환경 타겟팅에 잘 알게 될 수 있습니다.
 
 AEM 사이트와 Adobe Target을 통합함으로써 페이지 콘텐츠를 개인화하여 다음과 같은 작업을 수행할 수 있습니다.
 

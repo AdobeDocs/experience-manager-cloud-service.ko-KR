@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 스마트 태그 교육
 
-스마트 태그 교육을 사용하면 관련 태그가 없는 경우 세부 사항을 지정할 수 있도록 태그를 교육할 수 있습니다. [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)의 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다. [!DNL Experience Manager Assets]은(는) 기본적으로 업로드된 자산에 스마트 태그를 자동으로 적용합니다.
+스마트 태그 교육을 사용하면 관련 태그가 없는 경우 세부 사항을 지정할 수 있도록 태그를 교육할 수 있습니다. [Adobe Sensei](https://business.adobe.com/kr/why-adobe/experience-cloud-artificial-intelligence.html)의 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다. [!DNL Experience Manager Assets]은(는) 기본적으로 업로드된 자산에 스마트 태그를 자동으로 적용합니다.
 
 ## 스마트 태그 교육 요구 사항 확인 {#smart-tag-training-requirement}
 

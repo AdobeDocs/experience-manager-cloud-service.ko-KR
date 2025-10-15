@@ -33,7 +33,7 @@ Adobe Experience Manager에서 실행 중인 사이트의 경우 개발자가 �
 
 실험 플러그인이 [Edge Delivery Services](/help/edge/overview.md)의 컨텍스트 내에서 사용되므로 Github 계정이나 SharePoint 또는 Google 드라이브와 같은 콘텐츠 저장소가 필요하고 [AEM Sidekick](https://www.aem.live/docs/sidekick)도 필요합니다. [시작하기 - 유니버설 편집기 개발자 자습서 페이지](https://www.aem.live/developer/tutorial) 및 [시작하기 - 개발자 자습서](https://www.aem.live/developer/tutorial)를 참조하십시오.
 
-설정이 모두 완료되면 **이 비디오를 시청하십시오** 제목 [즉시 실험](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)을 통해 실험 플러그인의 작동 방식에 대한 간단한 데모를 살펴보십시오.
+설정이 모두 완료되면 **이 비디오를 시청하십시오** 제목 [즉시 실험](https://business.adobe.com/kr/products/experience-manager/sites/testing-optimization.html)을 통해 실험 플러그인의 작동 방식에 대한 간단한 데모를 살펴보십시오.
 
 ## 자주 사용하는 용어 {#frequently-used-terms}
 
