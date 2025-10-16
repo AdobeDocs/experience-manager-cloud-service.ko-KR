@@ -4,8 +4,8 @@ description: AEM GraphQL 설정 및 사용에 대한 권장 모범 사례와 콘
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ CORS는 일반적으로 다음에 대해 구성됩니다.
 
 ### 권한 {#permissions}
 
-Headless 구현으로 여러 보안 및 권한 영역을 다뤄야 합니다. AEM 환경 **Author** 또는 **Publish**&#x200B;에 따라 권한 및 가상 사용자를 광범위하게 고려할 수 있습니다. 각 환경에는 다양한 가상 사용자가 포함되어 있으며 다양한 요구 사항을 가지고 있습니다.
+Headless 구현으로 여러 보안 및 권한 영역을 다뤄야 합니다. AEM 환경 **Author** 또는 **Publish**&#x200B;에 따라 권한 및 페르소나를 광범위하게 고려할 수 있습니다. 각 환경에는 다양한 페르소나가 포함되어 있으며 다양한 요구 사항을 가지고 있습니다.
 
 #### 세부 사항 {#details-permissions}
 

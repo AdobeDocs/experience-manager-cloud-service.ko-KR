@@ -4,14 +4,14 @@ description: AEM as a Cloud Service에서 Headless를 시작하기 위한 첫 �
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 82%
+source-wordcount: '250'
+ht-degree: 68%
 
 ---
 
-# 구성 만들기 - Headless 설정 {#creating-configuration}
+# 구성 만들기 - Headless 설정 {#create-configuration}
 
 AEM as a Cloud Service에서 Headless를 시작하는 첫 번째 단계로 구성을 만들어야 합니다.
 
@@ -27,21 +27,7 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 관리자는 구성을 한 번만 만들면 되며, 매우 드물게 콘텐츠 모델을 구성하기 위해 새 작업 영역이 필요한 경우에 만들어야 합니다. 이 시작 안내서에서는 구성을 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **도구 - 일반 - 구성 브라우저**&#x200B;를 선택합니다.
-1. 구성의 **제목** 및 **이름**&#x200B;을 입력합니다.
-   * **제목**&#x200B;은 설명적이어야 합니다.
-   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
-      * 필요한 경우 조정할 수 있습니다.
-1. 다음 옵션을 확인하십시오.
-   * **콘텐츠 조각 모델**
-   * **GraphQL 지속 쿼리**
-
-   ![구성 만들기](../assets/create-configuration.png)
-
-1. **만들기**&#x200B;를 선택합니다.
-
-필요한 경우 여러 구성을 만들 수 있습니다. 구성은 중첩될 수도 있습니다.
+단계별 세부 정보는 [구성 브라우저에서 콘텐츠 조각 기능 사용](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)을 참조하십시오.
 
 >[!NOTE]
 >

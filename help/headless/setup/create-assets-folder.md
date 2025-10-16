@@ -4,10 +4,10 @@ description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 �
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 97%
+source-wordcount: '268'
+ht-degree: 86%
 
 ---
 
@@ -23,27 +23,11 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 자산 폴더는 콘텐츠 조각 외에도 이미지 및 비디오와 같은 [기존 콘텐츠 자산](/help/assets/manage-digital-assets.md)을 구성하는 데 사용됩니다.
 
-## 자산 폴더를 만드는 방법 {#how-to-create-an-assets-folder}
+## Assets 폴더 만들기 및 구성 {#create-and-configure-an-assets-folder}
 
-관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. 이 시작 안내서에서는 폴더를 하나만 만들면 됩니다.
+관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. Assets 콘솔을 사용하여 새 폴더를 만듭니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 - 자산 - 파일**&#x200B;을 선택합니다.
-1. **만들기 > 폴더**&#x200B;를 선택합니다.
-1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
-   * **제목**&#x200B;은 설명적이어야 합니다.
-   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
-      * 필요한 경우 조정할 수 있습니다.
-
-   ![폴더 만들기](../assets/assets-folder-create.png)
-1. 마우스를 가져가서 확인 표시를 눌러 만든 폴더를 선택합니다. 그런 다음 도구 모음에서&#x200B;**속성**&#x200B;을 선택합니다(또는 `p` [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)사용).
-1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
-1. **클라우드 구성**&#x200B;에 대해 이전에 만든 [구성을 선택하십시오](create-configuration.md).
-   ![자산 폴더 구성](../assets/assets-folder-configure.png)
-1. **저장 후 닫기**&#x200B;를 선택합니다.
-1. 확인 창에서 **확인**&#x200B;을 선택합니다.
-
-   ![확인 창](../assets/assets-folder-confirmation.png)
+만든 후에는 폴더에 [구성](/help/headless/setup/create-configuration.md)을 적용해야 합니다. 자세한 내용은 [폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)을 참조하세요.
 
 만든 폴더 내에 추가 하위 폴더를 만들 수 있습니다. 하위 폴더는 상위 폴더의 **클라우드 구성**&#x200B;을 상속합니다. 그러나 다른 구성의 모델을 사용하려는 경우 재정의할 수 있습니다.
 

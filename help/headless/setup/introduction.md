@@ -4,22 +4,22 @@ description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 �
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 94%
+source-wordcount: '284'
+ht-degree: 81%
 
 ---
 
 # Headless 설정 {#introduction}
 
-다음은 AEM 및 Headless 기술에 이미 익숙한 사용자를 위해 AEM as a Cloud Service를 사용하여 5단계로 경험을 만들고 관리하고 전달하기 위한 간단한 경로입니다. 각 안내서는 이전 안내서를 기반으로 하므로 처음부터 끝까지 순서대로 살펴보는 것이 좋습니다
+다음은 AEM 및 Headless 기술에 이미 익숙한 사용자를 위해 AEM as a Cloud Service을 사용하여 5단계로 경험을 만들고 관리하고 전달하기 위한 간단한 경로입니다(따라서 자세한 설명서를 상호 참조). 각 안내서는 이전 안내서를 기반으로 하므로 처음부터 끝까지 순서대로 살펴보는 것이 좋습니다
 
-1. [구성 만들기](create-configuration.md)
-1. [콘텐츠 조각 모델 만들기](create-content-model.md)
-1. [Assets 폴더 만들기](create-assets-folder.md)
-1. [콘텐츠 조각 만들기](create-content-fragment.md)
-1. [API 요청 만들기](create-api-request.md)
+1. [구성 만들기](/help/headless/setup/create-configuration.md)
+1. [콘텐츠 조각 모델 만들기](/help/headless/setup/create-content-model.md)
+1. [Assets 폴더 만들기](/help/headless/setup/create-assets-folder.md)
+1. [콘텐츠 조각 만들기](/help/headless/setup/create-content-fragment.md)
+1. [API 요청 만들기](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ ht-degree: 94%
 
 설명된 작업은 AEM의 Headless 기능에 대한 기본적인 엔드투엔드 데모에 필요합니다. 테스트 AEM 인스턴스에 대한 관리자 액세스 권한이 있는 사람은 누구나 AEM의 Headless 게재를 이해하기 위해 이 안내서를 따를 수 있지만, 그중에서도 개발자 경험이 있는 사람이 이상적입니다.
 
-그러나 프로덕션 상황에서는 여러 가상 사용자에 의해 여러 번 작업이 수행됩니다. 예:
+그러나 프로덕션 상황에서는 여러 페르소나가 작업을 각기 다른 횟수로 수행하게 됩니다. 예:
 
 * **관리자**&#x200B;는 콘텐츠에 대한 초기 구성 및 폴더 구조를 일반적으로 한 번만 또는 가끔 설정해야 합니다.
 * **정보 아키텍트**&#x200B;는 일반적으로 조직의 요구 사항이 발전함에 따라 새로운 모델을 추가합니다.
