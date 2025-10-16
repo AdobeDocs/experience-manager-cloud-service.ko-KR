@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -63,16 +63,10 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 왼쪽 상단의 Adobe 아이콘과 작은 나침반 아이콘을 차례로 선택하여 탐색 패널을 열 수 있습니다.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >콘텐츠 조각은 AEM **Sites**&#x200B;의 일부 기능이지만 **자산**&#x200B;으로 저장됩니다. 이는 영향을 미치지 않지만 알아두면 유용한 기술 세부 사항입니다.
 
-콘솔 내 왼쪽 패널에서 폴더를 선택하여 콘텐츠 조각으로 이동할 수 있습니다. 필터링 및/또는 검색할 수도 있습니다.
+콘텐츠 조각 콘솔 내에서 왼쪽 패널의 폴더를 선택하여 콘텐츠 조각으로 이동할 수 있습니다. 필터링 및/또는 검색할 수도 있습니다.
 
 ![콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 **콘텐츠 조각** 콘솔에서는 도구 모음에서 콘텐츠 조각에 대해 다양한 작업을 사용할 수 있습니다.
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **자산에서 열기**
 * **만들기**
 * **참조자** 열은 해당 조각의 모든 상위 참조를 표시하는 직접 링크도 제공합니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다.
 * 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
 
-조각 선택 후 모든 적절한 작업을 사용할 수 있습니다.
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+조각을 선택한 후 필요에 따라 추가 작업을 사용할 수 있습니다.
 
 * **열기**
 * **게시**(및 **게시 취소**)
+* **태그 관리**
 * **복사**
+* **바꾸기**
 * **이동**
 * **이름 바꾸기**
 * **삭제**
@@ -101,26 +93,6 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 >[!NOTE]
 >
 >게시, 게시 취소, 삭제, 이동, 이름 바꾸기, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## 콘텐츠 조각 작성 {#authoring-content-fragments}
 
@@ -244,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 * **콘텐츠 조각 모델**
 
   편집기의 오른쪽 패널에 콘텐츠 조각 모델의 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
-콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 조각을 만들고 편집하는 것은 (일반적으로) 다른 담당자인 콘텐츠 설계자가 해야 하는 일입니다.
+콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 이를 생성하고 편집하는 책임은 (일반적으로) 또 다른 페르소나인 콘텐츠 아키텍트에게 있습니다.
 
   >[!NOTE]
   >

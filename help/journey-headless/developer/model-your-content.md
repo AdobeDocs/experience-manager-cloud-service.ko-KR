@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: ht
-source-wordcount: '1830'
-ht-degree: 100%
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -218,7 +218,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 모델을 만든 후 편집할 수 있습니다. 예:
 
-![콘텐츠 조각 모델](assets/cfm-model.png)
+![콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -256,12 +256,6 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 ## 몇 가지 사례 시작하기 {#getting-started-examples}
 
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
-
 샘플의 기본 구조는 샘플 콘텐츠 조각 구조를 참조하십시오.
 
 ## 다음 단계 {#whats-next}
@@ -276,5 +270,5 @@ tbc...
    * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md) - 콘텐츠 조각을 만들고 작성하면 이 페이지를 통해 다른 세부 섹션으로 이동합니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL이 모델을 실현하는 방법
 * [샘플 콘텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈
-   * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=ko) - GraphQL에 사용되는 Adobe Experience Manager(AEM)에서 콘텐츠 조각을 정의 및 사용하는 방법에 대해 알아봅니다.
+* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈
+   * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - GraphQL에 사용되는 Adobe Experience Manager(AEM)에서 콘텐츠 조각을 정의 및 사용하는 방법에 대해 알아봅니다.

@@ -5,8 +5,8 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 
@@ -89,10 +89,6 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
    * 참조된 리소스에 대한 경로를 지정
 * **조각 참조 (UUID)**
    * 편집기에서 참조는 참조된 리소스의 경로를 지정합니다. 내부적으로 이 참조는 리소스를 참조하는 UUID(Universally Unique ID)로 보관됩니다.
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
 
 ### 중첩된 조각을 작성하는 방법 {#author-nested-fragment}
 
