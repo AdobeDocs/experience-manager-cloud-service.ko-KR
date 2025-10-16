@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
-workflow-type: ht
-source-wordcount: '1957'
-ht-degree: 100%
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+workflow-type: tm+mt
+source-wordcount: '1981'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,9 +60,9 @@ AEM 콘텐츠 조각용 콘텐츠 모델 편집기는 AEM의 다른 React Spectr
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
-**OpenAPI URL을 사용하는 SEO 친화적 DM**
+**브랜딩되고 읽을 수 있는 자산 배달 URL**
 
-OpenAPI를 사용하여 DM에서 자산 전달을 위한 Vanity URL을 생성하고, 긴 시스템 생성 UUID를 짧고 읽기 쉬운 식별자로 대체합니다. 이렇게 하면 링크의 SEO 친화도가 향상되고 브랜드 또는 캠페인에 더 잘 부합하게 됩니다. Vanity URL은 기존 워크플로를 방해하지 않고 런타임에 원래 자산의 UUID에 자동으로 매핑됩니다.
+OpenAPI를 사용하는 Dynamic Media에서 Vanity URL을 활용하여 OpenAPI URL을 사용하는 Dynamic Media를 사람이 읽을 수 있도록 합니다. 단축 URL을 사용하면 자산 전달 URL의 길고 시스템이 생성한 UUID를 기억하기 어려운 상태로 짧은 브랜드 제어 식별자로 바꿀 수 있습니다. 이렇게 하면 Vanity URL이 짧아지고, 읽기 쉬워지고, 공유가 가능해지며, 브랜드 또는 캠페인과의 일치도가 향상됩니다. Vanity URL은 기존 워크플로를 방해하지 않고 런타임에 원래 자산의 UUID에 자동으로 매핑됩니다.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
