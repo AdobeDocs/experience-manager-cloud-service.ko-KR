@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
+source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -84,11 +84,13 @@ Headless 콘텐츠를 채널, 지역 및 언어에 일관되게 게재하려면 
 1. 콘텐츠 조각 콘솔로 이동하고 콘텐츠 조각 모델 탭을 선택합니다.
 1. 콘텐츠 조각 모델은 일반적으로 폴더 구조에 저장됩니다. 프로젝트의 폴더를 선택합니다.
 1. 모델이 제공됩니다. 모델을 선택하고 편집기를 엽니다.
-1. **콘텐츠 조각 모델 편집기**&#x200B;가 열립니다.
+1. **콘텐츠 조각 모델 편집기**가 열립니다.
    ![콘텐츠 조각 모델 편집기](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
-   1. 왼쪽 패널에 가능한 데이터 유형이 나열됩니다.
-   1. 오른쪽 패널에는 선택한 필드에 적합한 속성이 표시됩니다.
+
+   * 왼쪽 패널에 가능한 데이터 유형이 나열됩니다.
+   * 오른쪽 패널에는 선택한 필드에 적합한 속성이 표시됩니다.
    * 가운데 패널에는 사용자가 만들고 정의한 필드가 표시됩니다.
+
 1. 모델의 필드 중 하나를 선택합니다. AEM이 이를 표시하고 해당 필드의 세부 사항이 오른쪽 패널에 표시됩니다.
 1. 콘텐츠 설계자는 번역해야 하는 모든 콘텐츠 모델 필드에서 **번역 가능한** 필드를 활성화합니다.
 
@@ -191,4 +193,4 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
 * [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
