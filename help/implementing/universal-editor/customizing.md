@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 85%
 
 ---
 
@@ -38,6 +38,26 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Live에 게시 비활성화 {#publish-live}
+
+특정 작성 워크플로우는 라이브 서비스에 대한 게시를 금지할 수 있습니다.
+
+따라서 게시 창의 **Live** 옵션은 다음 메타데이터를 추가하여 앱에서 완전히 제외할 수 있습니다.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## 게시 취소 비활성화 {#unpublish}
+
+특정 작성 워크플로의 경우 콘텐츠 게시가 취소되기 전에 승인 프로세스가 필요합니다. 이러한 경우 작성자는 게시 취소 옵션을 사용할 수 없습니다.
+
+따라서 다음 메타데이터를 추가하여 **게시 취소** 단추를 앱에서 완전히 표시하지 않을 수 있습니다.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## 페이지 열기 비활성화 {#open-page}
