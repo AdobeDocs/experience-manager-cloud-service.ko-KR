@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
+source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 69%
@@ -68,7 +68,7 @@ ht-degree: 69%
 
   >[!NOTE]
   >
-  >기본 모델의 정의에 따라 특정 형식의 [유효성 검사](/help/assets/content-fragments/content-fragments-models.md#validation)가 필드에 적용될 수 있습니다.
+  >기본 모델의 정의에 따라 특정 형식의 [유효성 검사](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation)가 필드에 적용될 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
 
@@ -267,7 +267,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
