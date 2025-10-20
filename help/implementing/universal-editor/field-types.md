@@ -4,9 +4,9 @@ description: 예제와 함께 범용 편집기가 속성 패널에서 편집할 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 98%
 
 ---
@@ -94,7 +94,6 @@ ht-degree: 98%
 | `name` | `string` | 데이터가 유지되어야 하는 속성 [또는 경로](#nesting) | 예 |
 | `label` | `FieldLabel` | 필드의 레이블 | 예 |
 | `description` | `FieldDescription` | 필드 설명 | 아니요 |
-| `placeholder` | `string` | 필드에 대한 플레이스홀더 | 아니요 |
 | `value` | `FieldValue` | 자리 표시자 역할을 하는 기본값입니다. 이 값에 따라 변경되는 콘텐츠 업데이트가 없습니다. 이는 UI의 표시일 뿐입니다. | 아니요 |
 | `valueType` | `ValueType` | 표준 유효성 검사이며, `string`, `string[]`, `number`, `date`, `boolean`이 될 수 있습니다. | 아니요 |
 | `required` | `boolean` | 필드가 필수입니까? | 아니요 |
