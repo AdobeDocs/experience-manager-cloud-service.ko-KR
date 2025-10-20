@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 85%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ ht-degree: 85%
 >
 >범용 편집기는 또한 프로젝트 요구 사항을 충족하도록 기능을 확장할 수 있는 여러 [확장 지점](/help/implementing/universal-editor/extending.md)을 제공합니다.
 
-## 게시 비활성화 {#disable-publish}
+## Meta 구성 태그 사용 {#meta-tags}
 
-특정 작성 워크플로에서는 콘텐츠를 게시하기 전에 검토해야 합니다. 이러한 상황에서는 게시 옵션을 어떤 작성자도 사용할 수 없어야 합니다.
+특정 작성 워크플로에서는 유니버설 편집기의 일부 기능을 사용해야 할 수 있으며 다른 기능은 사용해야 하지 않을 수 있습니다. 이러한 다양한 경우를 지원하기 위해 편집기의 특정 기능이나 버튼을 구성하거나 비활성화하는 데 메타 태그를 사용할 수 있습니다.
 
-따라서 다음 메타데이터를 추가하여 앱에서 **게시** 버튼을 완전히 억제할 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## 미리보기에 게시 비활성화 {#publish-preview}
-
-특정 작성 워크플로에서는 [미리보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)로의 게시(사용 가능한 경우)를 막을 수 있습니다.
-
-따라서 다음 메타데이터를 추가하여 애플리케이션에서 게시 창의 **미리보기** 옵션을 완전히 억제할 수 있습니다.
+페이지의 `<head>` 섹션에서 이 태그를 사용하여 하나 이상의 기능을 비활성화하십시오.
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Live에 게시 비활성화 {#publish-live}
+여러 기능을 비활성화하려면 쉼표로 구분된 값 목록을 제공합니다.
 
-특정 작성 워크플로우는 라이브 서비스에 대한 게시를 금지할 수 있습니다.
+다음은 `content`에 대해 지원되는 값, 즉 메타 태그를 사용하여 비활성화할 수 있는 기능입니다.
 
-따라서 게시 창의 **Live** 옵션은 다음 메타데이터를 추가하여 앱에서 완전히 제외할 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## 게시 취소 비활성화 {#unpublish}
-
-특정 작성 워크플로의 경우 콘텐츠 게시가 취소되기 전에 승인 프로세스가 필요합니다. 이러한 경우 작성자는 게시 취소 옵션을 사용할 수 없습니다.
-
-따라서 다음 메타데이터를 추가하여 **게시 취소** 단추를 앱에서 완전히 표시하지 않을 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## 페이지 열기 비활성화 {#open-page}
-
-다음 메타데이터를 추가하여 앱에서 **페이지 열기** 버튼을 완전히 억제할 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## 복제 버튼 비활성화 {#duplicate-button}
-
-특정 작성 워크플로는 콘텐츠 작성자가 구성 요소를 복제하는 기능을 제한해야 할 수 있습니다. 다음 메타데이터를 추가하여 [복제 아이콘](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)을 비활성화할 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## 복사 및 붙여넣기 비활성화 {#copy-paste}
-
-특정 작성 워크플로는 콘텐츠 작성자가 구성 요소를 복사 및 붙여넣기하는 기능을 제한해야 할 수 있습니다. 다음 메타데이터를 추가하여 [복사 및 붙여넣기 아이콘](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)을 비활성화할 수 있습니다.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| 컨텐츠 값 | 설명 |
+|---|---|
+| `publish` | [게시 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) 사용 안 함 |
+| `publish-live` | 라이브 [게시](/help/sites-cloud/authoring/universal-editor/publishing.md) 사용 안 함 |
+| `publish-preview` | 미리 보기 게시 비활성화([미리 보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)를 사용할 수 있는 경우) |
+| `unpublish` | [게시 취소 단추](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content)를 사용하지 않습니다. |
+| `copy` | [복사 및 붙여넣기 단추](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)를 사용하지 않도록 설정합니다. |
+| `duplicate` | [중복 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)를 사용하지 않도록 설정합니다. |
+| `header-open-page` | [페이지 열기 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)를 사용하지 않도록 설정합니다. |
 
 ## 엔드포인트 변경 {#custom-endpoint}
 
