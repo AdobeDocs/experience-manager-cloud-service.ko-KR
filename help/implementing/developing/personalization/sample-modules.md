@@ -58,7 +58,7 @@ JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 �
 
 ### 예 {#example}
 
-다음 예제에서는 `ontexthub.base`contexthub.emulators[ 저장소의 정보를 표시하도록 c](sample-stores.md#granite-emulators-sample-store-candidate) UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
+다음 예제에서는 `ontexthub.base`contexthub.emulators[&#x200B; 저장소의 정보를 표시하도록 c](sample-stores.md#granite-emulators-sample-store-candidate) UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
 
 ```javascript
 {
