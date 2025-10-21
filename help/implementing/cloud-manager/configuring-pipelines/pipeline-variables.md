@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
+source-git-commit: fb180685152a00d520530d21a44337381febba7f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
    | --- | --- |
    | 이름 | 구성 변수의 고유 이름입니다. 파이프라인에서 사용되는 특정 변수를 식별합니다. 다음 명명 규칙을 준수해야 합니다.<ul><li>변수에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.</li><li>이름은 모두 대문자로 해야 합니다.</li><li>파이프라인당 200개의 변수 제한이 있습니다.</li><li>각 이름은 100자 이하여야 합니다.</li><li>각 `string` 변수 값은 2048자 미만이어야 합니다.</li><li>각 `secretString` 형식 변수 값은 500자 이하여야 합니다.</li></ul> |
    | 값 | 변수가 보유한 값입니다. |
-   | 적용된 단계 | 필수. 변수가 적용되는 파이프라인의 단계:<ul><li>**빌드** - 변수는 빌드 프로세스 중에 적용됩니다.</li><li>**기능 테스트** - 변수는 기능 테스트 단계에서 사용됩니다.</li><li>**UI 테스트** - 변수는 UI 테스트 단계 동안 사용됩니다.</li>&lt;li **배포** - 변수는 배포 단계 동안 사용됩니다. 예를 들어 Edge Delivery Services 파이프라인에 이 변수를 사용합니다.</li></ul> |
+   | 적용된 단계 | 필수. 변수가 적용되는 파이프라인의 단계:<ul><li>**빌드** - 변수는 빌드 프로세스 중에 적용됩니다.</li><li>**기능 테스트** - 변수는 기능 테스트 단계에서 사용됩니다.</li><li>**UI 테스트** - 변수는 UI 테스트 단계 동안 사용됩니다.</li><li>**배포** - 이 변수는 배포 단계에서 사용됩니다. 예를 들어 Edge Delivery Services 파이프라인에 이 변수를 사용합니다.</li></ul> |
    | 유형 | 변수가 일반 텍스트이거나 암호로 암호화되어 있는지 선택합니다. |
 
    ![변수 추가](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
