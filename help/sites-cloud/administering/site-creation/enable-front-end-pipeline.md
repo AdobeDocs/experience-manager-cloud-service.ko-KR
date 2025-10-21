@@ -5,7 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -47,7 +48,7 @@ AEM은 기존 클라이언트 라이브러리 위에 사이트를 계층화하�
 
 ## 요구 사항 {#requirements}
 
-AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
+AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 
@@ -72,13 +73,13 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 
 ## 프론트엔드 파이프라인 및 사용자 정의 도메인 {#custom-domains}
 
-프론트엔드 파이프라인은 [Cloud Manager의 사용자 지정 도메인 기능 &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md)과(와) 함께 사용할 수 있지만 두 기능을 함께 사용할 때는 다음 요구 사항을 염두에 두십시오.
+프론트엔드 파이프라인은 [Cloud Manager의 사용자 지정 도메인 기능 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)과(와) 함께 사용할 수 있지만 두 기능을 함께 사용할 때는 다음 요구 사항을 염두에 두십시오.
 
 ### 정적 프론트엔드 파일 {#static-files}
 
 프론트엔드 파이프라인을 통해 배포된 정적 프론트엔드 자산은 기본적으로 Adobe의 사전 정의된 정적 도메인에서 제공됩니다.
 
-프론트엔드 자산에 대한 사용자 지정 도메인이 필요한 경우 게시 계층에 사용자 지정 도메인을 설치하고 Dispatcher의 정적 호스팅 위치로 특정 경로(예: `/static/`)를 라우팅하도록 Adobe을 구성할 수 있습니다. 이 메서드를 사용하려면 정적 자산에 대한 요청을 올바르게 전달하고 캐시하도록 [Dispatcher 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)을 업데이트해야 합니다.
+프론트엔드 자산에 사용자 지정 도메인이 필요한 경우 게시 계층에 사용자 지정 도메인을 설치하고 Dispatcher의 정적 호스팅 위치로 특정 경로(예: `/static/`)를 라우팅하도록 Adobe을 구성할 수 있습니다. 이 메서드를 사용하려면 정적 자산에 대한 요청을 올바르게 전달하고 캐시하도록 [Dispatcher 규칙](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)을 업데이트해야 합니다.
 
 사용자 정의 도메인 및 Dispatcher를 구성하면 정적 도메인에서 프론트엔드 에셋을 제공하도록 AEM을 구성할 수 있습니다.
 

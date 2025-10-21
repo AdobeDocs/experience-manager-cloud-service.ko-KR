@@ -5,12 +5,13 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
 
 ---
+
 
 # AEM 페이지 편집기 {#editing-page-content}
 
@@ -18,7 +19,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 페이지 편집기 또는 [범용 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다.
+>[**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)에서 페이지를 편집할 때 콘솔에서는 이 문서에 설명된 페이지 편집기 또는 [범용 편집기](/help/sites-cloud/authoring/page-editor/templates.md)를 사용하여 페이지의 [템플릿](/help/sites-cloud/authoring/universal-editor/authoring.md)에 적합한 편집기를 엽니다.
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 >* 페이지의 특성에 따라 일부 모드를 사용할 수 없습니다.
 >* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 디바이스에서 사용할 수 없습니다.
->* **미리 보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환할 수 있는 [바로 가기](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)(`Ctrl-Shift-M`)가 있습니다.
+>* [미리 보기](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)와 현재 선택한 모드(예: `Ctrl-Shift-M`편집&#x200B;**,**&#x200B;레이아웃&#x200B;**등) 간에 전환할 수 있는**&#x200B;바로 가기&#x200B;**(**)가 있습니다.
 
 #### 미리보기 {#preview}
 

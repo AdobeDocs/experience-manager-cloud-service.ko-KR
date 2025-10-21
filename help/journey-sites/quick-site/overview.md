@@ -5,12 +5,14 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
+
 
 # AEM 빠른 사이트 생성 여정 {#quick-site-creation-journey}
 
@@ -44,7 +46,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 이 여정은 AEM Sites 테마를 맞춤화하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다. 이에 대한 주요 대상자는 프론트엔드 개발자이며 AEM에 대한 지식이 필요하지 않습니다. 그러나 여정에서 전체 프로세스를 설명하기 위해서는 기본적인 AEM Sites 및 Cloud Manager 지식을 갖추고 있을 것으로 간주되는 관리자가 필요합니다. 따라서 여러 사람이 여러 역할을 수행할 수 있으며, 이 여정은 관리자 및 프론트엔드 개발자 모두의 관점을 지원합니다.
 
-| 담당자 | 설명 | 여정에서의 역할 |
+| 페르소나 | 설명 | 여정에서의 역할 |
 |---|---|---|
 | 프론트엔드 개발자 | 사이트 테마 맞춤화 | AEM 관리자가 제공한 테마를 사용하여 작업을 수행하고 이를 AEM 사이트에 배포할 수 있도록 맞춤화합니다. |
 | 콘텐츠 작성자 | 사이트로 제공되는 콘텐츠 생성 및 관리 | 콘텐츠 작성자는 AEM에서 프론트엔드 개발자가 맞춤화한 테마로 렌더링된 콘텐츠를 작성합니다. |
@@ -78,5 +80,5 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 리소스를 확인하십시오.
 
-* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.

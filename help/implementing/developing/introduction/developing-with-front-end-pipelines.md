@@ -4,7 +4,8 @@ description: 프론트엔드 파이프라인은 개발자의 독립성을 높이
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -39,7 +40,7 @@ ht-degree: 3%
 * 20
 * 18
 * 16
-* 14(기본값)
+* 14 (기본값)
 * 12
 
 `NODE_VERSION` [환경 변수](/help/implementing/cloud-manager/environment-variables.md)를 사용하여 원하는 버전을 설정할 수 있습니다.
@@ -50,7 +51,7 @@ AEM 배포의 모범 사례는 신뢰할 수 있는 단일 소스를 유지 관�
 
 이러한 이유, 특히 여러 프론트엔드 파이프라인이 만들어지는 경우 Adobe에서는 체계적인 명명 규칙을 유지하는 것이 좋습니다. 다음 권장 사항을 사용할 수 있습니다.
 
-* `package.json` 파일의 `name` 속성으로 정의된 프런트 엔드 모듈 이름에는 이 파일이 적용되는 사이트의 이름이 포함되어야 합니다. 예를 들어, `/content/wknd`에 있는 사이트의 경우 프런트 엔드 모듈의 이름은 `wknd-theme`과(와) 같습니다.
+* `name` 파일의 `package.json` 속성으로 정의된 프런트 엔드 모듈 이름에는 이 파일이 적용되는 사이트의 이름이 포함되어야 합니다. 예를 들어, `/content/wknd`에 있는 사이트의 경우 프런트 엔드 모듈의 이름은 `wknd-theme`과(와) 같습니다.
 * 프론트엔드 모듈이 동일한 Git 저장소를 다른 모듈과 공유하는 경우, 해당 폴더의 이름은 프론트엔드 모듈과 동일하거나 동일한 이름을 포함해야 합니다. 예를 들어, 프론트엔드 모듈의 이름이 `wknd-theme`인 경우 바깥쪽 폴더 이름은 `wknd-theme-sources`과(와) 같습니다.
 * Cloud Manager 프론트엔드 파이프라인의 이름에는 프론트엔드 모듈의 이름도 포함되어야 하며 배포(프로덕션 또는 개발)할 환경도 추가해야 합니다. 예를 들어, 이름이 `wknd-theme`인 프론트엔드 모듈의 경우 파이프라인의 이름을 `wknd-theme-prod`과(와) 같이 지정할 수 있습니다.
 
@@ -81,7 +82,7 @@ HTML 또는 JSON 출력을 변경할 때, 특히 두 영역이 모두 영향을 
 1. 그러면 프론트엔드 팀은 CSS 및 JS 코드가 이전 출력과 새 출력 모두에서 작동하도록 합니다.
    1. 평소대로 로컬에서 개발하려면 다음을 수행합니다.
       1. `npx aem-site-theme-builder proxy` 명령은 AEM 환경에서 콘텐츠를 검색하는 프록시 서버를 시작합니다. 프론트엔드 모듈의 CSS 및 JS 파일을 로컬 `dist` 폴더의 파일로 대체합니다.
-      1. 숨겨진 `.env` 파일에서 `AEM_URL` 변수를 구성하면 로컬 프록시 서버에서 콘텐츠를 사용하는 AEM 환경을 제어할 수 있습니다.
+      1. 숨겨진 `AEM_URL` 파일에서 `.env` 변수를 구성하면 로컬 프록시 서버에서 콘텐츠를 사용하는 AEM 환경을 제어할 수 있습니다.
       1. 따라서 `AEM_URL`의 값을 변경하면 프로덕션 환경과 개발 환경 간을 전환하여 두 환경에 모두 맞도록 CSS와 JS를 조정할 수 있습니다.
       1. 새 출력을 렌더링하는 개발 환경과 이전 출력을 렌더링하는 프로덕션 환경에서 작업해야 합니다.
    1. 업데이트된 프론트엔드 모듈이 두 환경 모두에서 작동하고 두 환경에 배포되면 프론트엔드 작업이 완료됩니다.
