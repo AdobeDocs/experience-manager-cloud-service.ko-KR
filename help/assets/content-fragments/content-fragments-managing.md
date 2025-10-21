@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 70%
@@ -39,7 +39,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
 >
 >콘텐츠 조각은 **Sites** 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->**[Assets](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔로 관리됩니다.
+>**[Assets](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔로 관리됩니다.
 >
 >콘텐츠 조각 작성을 위한 두 개의 편집기 (새 편집기와 원본 편집기)가 있습니다. 새 편집기가 기본값입니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다.
 >
@@ -136,7 +136,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
 
 >[!NOTE]
 >
->이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)입니다.
+>이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)입니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 
@@ -206,7 +206,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
    * **수정됨**: 주황색
    * **비활성화됨**: 빨간색
 
-* 버튼을 사용하면 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)을 통해 액세스할 수 있는 *신규* [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)를 직접 열어 **새 편집기를 사용해 보기**&#x200B;할 수 있습니다.
+* 버튼을 사용하면 **콘텐츠 조각 콘솔**&#x200B;을 통해 액세스할 수 있는 *신규* [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)를 직접 열어 [새 편집기를 사용해 보기](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)할 수 있습니다.
 
   >[!WARNING]
   >

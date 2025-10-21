@@ -4,7 +4,7 @@ description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 �
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -39,7 +39,7 @@ UI 모드는 도구 모음의 왼쪽에 일련의 아이콘으로 표시됩니�
 
 ![ContextHub 도구 모음](assets/contexthub-toolbar.png)
 
-아이콘은 [Coral UI 아이콘 라이브러리](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)의 참조입니다.
+아이콘은 [Coral UI 아이콘 라이브러리](https://opensource.adobe.com/coral-spectrum/examples/#icon)의 참조입니다.
 
 ### UI 모드 추가 {#adding-a-ui-mode}
 
@@ -55,7 +55,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
 1. 다음 속성에 대한 값을 제공합니다.
 
    * UI 모드 제목: UI 모드를 식별하는 제목
-   * 모드 아이콘: [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)에 대한 선택기(예: `coral-Icon--user`)
+   * 모드 아이콘: [Coral UI 아이콘](https://opensource.adobe.com/coral-spectrum/examples/#icon)에 대한 선택기(예: `coral-Icon--user`)
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
 1. 저장을 선택합니다.
@@ -101,13 +101,13 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 
 ### 세부 저장소 구성 {#detailed-store-configuration}
 
-저장소를 구성할 때 세부 사항 구성 속성을 사용하여 저장소별 속성에 대한 값을 제공할 수 있습니다. 이 값은 저장소의 `init` 함수의 `config` 매개 변수를 기반으로 합니다. 따라서 이 값을 제공해야 하는지 여부와 값의 형식은 저장소에 따라 다릅니다.
+저장소를 구성할 때 세부 사항 구성 속성을 사용하여 저장소별 속성에 대한 값을 제공할 수 있습니다. 이 값은 저장소의 `config` 함수의 `init` 매개 변수를 기반으로 합니다. 따라서 이 값을 제공해야 하는지 여부와 값의 형식은 저장소에 따라 다릅니다.
 
 Detail Configuration 속성 값은 JSON 형식의 `config` 개체입니다.
 
 ### 샘플 스토어 후보 {#sample-store-candidates}
 
-AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 제공합니다.
+AEM은 스토어의 기반이 될 수 있는 다음과 같은 샘플 스토어 후보를 제공합니다.
 
 | 저장소 유형 | 설명 |
 |---|---|
@@ -151,7 +151,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
 
 contexthub.generic-jsonp 샘플 저장소 후보를 사용하면 JSON 데이터를 반환하는 웹 서비스 또는 JSONP 서비스에서 데이터를 검색할 수 있습니다. 이 저장소 후보의 경우 저장소 구성을 사용하여 사용할 JSONP 서비스에 대한 세부 정보를 제공합니다.
 
-`ContextHub.Store.JSONPStore` JavaScript 클래스의 [init](contexthub-api.md#init-name-config) 함수는 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. `config` 개체에 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 있습니다. 저장소를 구성하려면 JSON 형식의 `service` 개체를 Detail Configuration 속성에 대한 값으로 제공합니다.
+[ JavaScript 클래스의 ](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore` 함수는 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. `config` 개체에 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 있습니다. 저장소를 구성하려면 JSON 형식의 `service` 개체를 Detail Configuration 속성에 대한 값으로 제공합니다.
 
 jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다음 속성을 사용하여 [ContextHub 저장소 만들기](#creating-a-contexthub-store)의 절차를 사용하십시오.
 
@@ -214,14 +214,14 @@ ContextHub의 구성을 편집하고 **Debug** 옵션을 확인하십시오.
 
 ### CRXDE를 통해 {#via-crxde}
 
-CRXDE Lite을 사용하여 다음 속성에서 `debug` 속성을 **true**(으)로 설정합니다.
+CRXDE Lite을 사용하여 다음 아래에 `debug` 속성을 **true**(으)로 설정합니다.
 
 * `/conf/global/settings/cloudsettings` 또는
 * `/conf/<site>/settings/cloudsettings`
 
 ### ContextHub에 대한 디버그 메시지 로깅 {#logging-debug-messages-for-contexthub}
 
-개발 시 유용한 자세한 디버그 메시지를 기록하도록 Adobe Granite ContextHub OSGi 서비스(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)를 구성합니다.
+Adobe Granite ContextHub OSGi 서비스(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)를 구성하여 개발 시 유용한 세부 디버그 메시지를 기록합니다.
 
 서비스를 구성하려면 [웹 콘솔](/help/implementing/deploying/configuring-osgi.md)을 사용하거나 저장소의 JCR 노드를 사용할 수 있습니다.
 
@@ -234,9 +234,9 @@ CRXDE Lite을 사용하여 다음 속성에서 `debug` 속성을 **true**(으)�
 
 이 기능은 디버그 정보를 전혀 원하지 않는 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
 
-1. `http://<host>:<port>/system/console/configMgr`에서 **Adobe Experience Manager 웹 콘솔 구성**&#x200B;을 엽니다.
-1. **Granite ContextHub Adobe** 검색
-1. 속성을 편집하려면 **Granite ContextHub Adobe** 구성을 클릭하십시오.
+1. **에서** Adobe Experience Manager 웹 콘솔 구성`http://<host>:<port>/system/console/configMgr`을 엽니다.
+1. **Adobe Granite ContextHub** 검색
+1. 속성을 편집하려면 **Adobe Granite ContextHub** 구성을 클릭하십시오.
 1. **자동 모드** 옵션을 선택하고 **저장**&#x200B;을 클릭합니다.
 
 ## ContextHub 비활성화 {#disabling-contexthub}
@@ -252,4 +252,4 @@ ContextHub를 비활성화하여 js/css를 로드하고 초기화하지 못하�
 
 또는
 
-* `/conf/global/settings/cloudsettings/<configName>/contexthub`에서 `disabled` 속성을 **true**(으)로 설정하려면 CRXDE Lite을 사용하십시오.
+* CRXDE Lite을 사용하여 `disabled`에서 **속성을** true`/conf/global/settings/cloudsettings/<configName>/contexthub`(으)로 설정합니다.

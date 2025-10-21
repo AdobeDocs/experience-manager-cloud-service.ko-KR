@@ -4,10 +4,10 @@ description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘�
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ contexthub.base UI 모듈 유형은 다른 모든 UI 모듈 유형의 기본 유
 JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 구성합니다. 다음 속성 중 하나를 포함하여 UI 모듈 기능을 구성합니다.
 
 * **이미지:** 아이콘으로 표시할 이미지의 URL입니다.
-* **아이콘:** [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 클래스의 이름입니다. 아이콘과 이미지 속성 모두에 대한 값을 지정하면 이미지가 사용됩니다.
+* **아이콘:** [Coral UI 아이콘](https://opensource.adobe.com/coral-spectrum/examples/#icon) 클래스의 이름입니다. 아이콘과 이미지 속성 모두에 대한 값을 지정하면 이미지가 사용됩니다.
 * **제목:** UI 모듈의 제목입니다. UI 모듈 아이콘 위에 포인터가 일시 중지되면 제목이 표시됩니다.
 * **fullscreen:** UI 모듈에서 전체 화면 모드를 지원하는지 여부를 나타내는 부울 값입니다. 전체 화면 모드를 지원하려면 `true`을(를) 사용하고, 전체 화면 모드를 방지하려면 `false`을(를) 사용하십시오.
 * **템플릿:** ContextHub 도구 모음에서 렌더링할 콘텐츠를 지정하는 [Handlebars](https://handlebarsjs.com/) 템플릿입니다. 최대 두 개의 `<p>` 태그를 사용합니다.
@@ -58,7 +58,7 @@ JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 �
 
 ### 예 {#example}
 
-다음 예제에서는 [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate) 저장소의 정보를 표시하도록 c`ontexthub.base` UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
+다음 예제에서는 `ontexthub.base`contexthub.emulators[ 저장소의 정보를 표시하도록 c](sample-stores.md#granite-emulators-sample-store-candidate) UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
 
 ```javascript
 {
