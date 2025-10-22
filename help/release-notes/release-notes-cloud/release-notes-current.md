@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 96%
+source-wordcount: '2081'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -56,7 +56,21 @@ AEM 콘텐츠 조각용 콘텐츠 모델 편집기는 AEM의 다른 React Spectr
 
 **Dynamic Media 템플릿의 하위 문자열을 사용하여 텍스트 서식 개선**
 
-이제 Dynamic Media 템플릿 텍스트 레이어 내의 하위 문자열에 서식을 적용할 수 있습니다. 선택한 단어 또는 구는 별도의 레이어로 처리되어 글꼴, 글꼴 크기, 색상 등을 조정할 수 있습니다. 하위 문자열 레이어는 매개변수화되므로 템플릿의 게재 URL을 사용하여 실시간으로 업데이트할 수 있습니다
+이제 Dynamic Media 템플릿 텍스트 레이어 내의 하위 문자열에 서식을 적용할 수 있습니다. 선택한 단어 또는 구는 별도의 레이어로 처리되어 글꼴, 글꼴 크기, 색상 등을 조정할 수 있습니다. 하위 문자열 레이어는 매개 변수화되므로 템플릿의 게재 URL을 사용하여 실시간으로 업데이트할 수 있습니다.
+
+### Content Hub의 새로운 기능 {#new-features-content-hub}
+
+**컬렉션을 즐겨찾기로 표시**
+
+이제 Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성하고 검색할 수 있습니다. 추가한 즐겨찾는 컬렉션은 Content Hub 홈 페이지의 **[!UICONTROL 즐겨찾기]** 탭에서 편리하게 사용할 수 있습니다.
+
+**빠른 액세스를 위해 컬렉션 고정**
+
+이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 **[!UICONTROL 고정된]** 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>이러한 기능은 제한된 가용성 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
 
 ### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +80,7 @@ OpenAPI를 사용하는 Dynamic Media에서 Vanity URL을 활용하여 OpenAPI U
 
 >[!NOTE]
 >
->이 기능은 제한적으로 사용 가능한 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
+>이 기능은 제한적으로 사용 가능한 기능으로 사용할 수 있습니다. 시작하려면 [이 문서](/help/assets/vanity-urls.md)를 참조하세요.
 
 <!--
 
@@ -82,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +171,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한 공개 기능으로 사용 가능합니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
+>>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 신규 릴리스 {#aem-develeper-tools-for-eclipse}
 

@@ -3,10 +3,10 @@ title: Content Hub의 새로운 기능
 description: 최근 출시된 Content Hub 기능에 대해 자세히 알아봅니다.
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,21 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 ## 릴리스 일자 {#release-date}
 
-Content Hub 기능 릴리스(2025.8.0)의 릴리스 일자는 2025년 8월 28일입니다(AEM as a Cloud Service 릴리스와 동일). 다음 기능 릴리스(2025.9.0)는 2025년 9월 25일에 예정되어 있습니다.
+Content Hub 기능 릴리스(2025.9.0)의 릴리스 날짜는 2025년 9월 25일(AEM as a Cloud Service 릴리스와 동일)입니다. 다음 기능 릴리스(2025.10.0)는 2025년 10월 30일에 예정되어 있습니다.
+
+## 9월 릴리스 기능 {#september-release-features}
+
+**컬렉션을 즐겨찾기로 표시**
+
+이제 Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성하고 검색할 수 있습니다. 추가한 즐겨찾는 컬렉션은 Content Hub 홈 페이지의 **[!UICONTROL 즐겨찾기]** 탭에서 편리하게 사용할 수 있습니다.
+
+**빠른 액세스를 위해 컬렉션 고정**
+
+이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 **[!UICONTROL 고정된]** 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>이러한 기능은 제한된 가용성 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
 
 ## 8월 릴리스 기능 {#august-release-features}
 

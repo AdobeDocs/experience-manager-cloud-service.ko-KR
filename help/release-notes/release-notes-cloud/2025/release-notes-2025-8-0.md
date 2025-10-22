@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.8.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.8.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1919'
 ht-degree: 96%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 96%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,7 +75,7 @@ OpenAPI를 사용하는 Dynamic Media에서 Vanity URL을 활용하여 OpenAPI U
 
 >[!NOTE]
 >
->이 기능은 9월 10일부터 한정된 기간 동안에만 제공됩니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
+>이 기능은 제한적으로 사용 가능한 기능으로 사용할 수 있습니다. 시작하려면 [이 문서](/help/assets/vanity-urls.md)를 참조하세요.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
