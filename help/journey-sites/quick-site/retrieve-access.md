@@ -5,8 +5,8 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 100%
@@ -124,4 +124,4 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 
 다음 문서인 [사이트 테마 맞춤화](customize-theme.md)를 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
-* [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.
+* [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.

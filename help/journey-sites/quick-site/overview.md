@@ -5,8 +5,8 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
@@ -80,5 +80,5 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 리소스를 확인하십시오.
 
-* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.

@@ -5,8 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -48,7 +48,7 @@ AEM은 기존 클라이언트 라이브러리 위에 사이트를 계층화하�
 
 ## 요구 사항 {#requirements}
 
-AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
+AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사용하도록 조정할 수 있습니다. 이 워크플로를 수행하려면 사이트에서 [v2 이상의 핵심 구성 요소 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)의 페이지 구성 요소를 사용해야 합니다.
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 
@@ -73,7 +73,7 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 
 ## 프론트엔드 파이프라인 및 사용자 정의 도메인 {#custom-domains}
 
-프론트엔드 파이프라인은 [Cloud Manager의 사용자 지정 도메인 기능 &#x200B;](/help/implementing/cloud-manager/custom-domain-names/introduction.md)과(와) 함께 사용할 수 있지만 두 기능을 함께 사용할 때는 다음 요구 사항을 염두에 두십시오.
+프론트엔드 파이프라인은 [Cloud Manager의 사용자 지정 도메인 기능 ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)과(와) 함께 사용할 수 있지만 두 기능을 함께 사용할 때는 다음 요구 사항을 염두에 두십시오.
 
 ### 정적 프론트엔드 파일 {#static-files}
 
