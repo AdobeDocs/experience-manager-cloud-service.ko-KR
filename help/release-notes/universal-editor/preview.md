@@ -3,10 +3,10 @@ title: 범용 편집기 미리보기 릴리스 정보
 description: 다음은 범용 편집기 미리보기 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '190'
+ht-degree: 59%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 67%
 ## 예정된 새로운 기능 {#what-is-new}
 
 * 이제 브라우저 탭 간 복사 및 붙여넣기가 지원됩니다.
+   * 동시에 열려 있는 탭 사이로 제한됩니다.
+   * 콘텐츠를 복사한 다음 새 탭을 여는 기능은 지원되지 않습니다.
 * 이제 메타 태그가 있는 게시 취소 버튼을 비활성화할 수 있습니다.
 
 ## 예정된 개선 사항 {#other-improvements}
