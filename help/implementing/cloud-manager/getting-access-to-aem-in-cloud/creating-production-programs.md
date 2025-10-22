@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -91,7 +91,7 @@ ht-degree: 11%
 
 Adobe HIPAA 규정 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of Service)는 취약점으로부터 보호하기 위한 다층적 접근 방식의 일부로서 클라우드 기반 보안을 용이하게 합니다.
 
-* **HIPAA** - 이 옵션은 Adobe의 HIPPA 지원 솔루션 구현을 활성화합니다.
+* **HIPAA** - 이 옵션을 사용하면 Adobe의 HIPAA 지원 솔루션을 구현할 수 있습니다.
    * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/trust/compliance/hipaa-ready.html).
    * 프로그램 생성 후에는 HIPAA를 활성화하거나 비활성화할 수 없습니다.
 * **WAF-DDOS 보호** - 이 옵션을 사용하면 규칙을 통해 응용 프로그램을 보호하는 웹 응용 프로그램 방화벽을 사용할 수 있습니다.
@@ -139,7 +139,7 @@ Edge Delivery Services의 경우 프로그램에서 99.99% SLA 라이선스를 �
 
 >[!TIP]
 >
->Cloud Manager 탐색 방법 및 **내 프로그램** 콘솔 이해에 대한 자세한 내용은 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md)을 참조하십시오.
+>Cloud Manager 탐색 방법 및 [내 프로그램](/help/implementing/cloud-manager/navigation.md) 콘솔 이해에 대한 자세한 내용은 **Cloud Manager UI 탐색**&#x200B;을 참조하십시오.
 
 >[!NOTE]
 >
