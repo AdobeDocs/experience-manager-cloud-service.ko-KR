@@ -17,7 +17,7 @@ ht-degree: 17%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | 이 문서 |
 
 <span class="preview"> GovCloud를 사용하고 있고 GCC(정부 클라우드 컴퓨팅) 테넌트에 연결해야 하는 경우, 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램을 통한 액세스를 요청하십시오. </span>
@@ -43,7 +43,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 적응형 양식과 Microsoft® Power Automate를 연결하려면 다음이 필요합니다.
 
 * Microsoft® Power Automate Premium 라이센스.
-* 적응형 양식 제출 데이터를 수락하기 위한 [&#x200B; 트리거를 사용하는 Microsoft® &#x200B;](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
+* 적응형 양식 제출 데이터를 수락하기 위한 [ 트리거를 사용하는 Microsoft® ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
 * [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
