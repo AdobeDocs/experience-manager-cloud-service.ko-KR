@@ -4,10 +4,10 @@ description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 94%
 
 ---
 
@@ -42,30 +42,41 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
    이전 단계인 [Cloud Manager 제품 프로필에 팀원 할당](assign-profiles-cloud-manager.md)으로 돌아가서 시스템 관리자에게 **비즈니스 소유자** 역할을 할당하는 방법에 대한 자세한 내용을 참조하십시오.
 
-1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
 1. 바로 가기 그룹에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
    ![콘솔의 Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로 성공적으로 로그인하여 **비즈니스 소유자** 역할이 있는 다른 사용자가 사용할 수 있도록 Cloud Manager를 사용합니다. 이 경우 어떠한 메시지도 나타나지 않습니다. 로그인하기만 하면 됩니다.
+**비즈니스 소유자** 역할을 가진 시스템 관리자는 먼저 Cloud Manager에 로그인해야 합니다. 이 초기 로그인을 사용하면 **비즈니스 소유자** 역할을 가진 다른 사용자가 프로그램을 만들 수 있습니다. 확인 표시가 나타나지 않습니다.
 
-**비즈니스 소유자** 역할이 있는 시스템 관리자로서 Cloud Manager에 로그인할 때까지 **비즈니스 소유자** 역할을 가진 다른 사용자는 Cloud Manager에서 프로그램을 작성할 수 없습니다. 이 규칙은 올바른 역할이 할당되더라도 true입니다.
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-**비즈니스 소유자** 역할이 있는 사용자는 시작하기 위한 링크가 포함된 환영 이메일을 받습니다. 이 환영 이메일을 사용하여 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
+1. [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager)&#x200B;(으)로 이동합니다.
+1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
-1. 환영 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
-   ![이메일 예](/help/journey-onboarding/assets/get-started-email.png)
+>[!NOTE]
+>
+>Cloud Manager에서 할당된 역할과 애플리케이션의 상태에 따라 Cloud Manager 사용자 인터페이스를 사용하는 동안 표시되는 화면이 다를 수 있습니다.
 
-1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
+<!--
+Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
+
+1. From your welcome email, click **Get started**, as shown in the figure below.
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
+
+1. Navigate to Cloud Manager's **Programs & Products** page.
 
    >[!TIP]
    >
-   >`[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 참조할 수 있도록 이 페이지에 책갈피를 표시합니다.
+   >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. Cloud Manager의 랜딩 페이지로 이동합니다.
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.

@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: ht
-source-wordcount: '1348'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ AEM as a Cloud Service를 선택해 주셔서 감사합니다. 이 문서는 온
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [Edge Delivery Services 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 참조하여 Edge Delivery Services를 시작하는 방법을 알아보십시오. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.aem.live/developer/tutorial) 페이지를 참조하십시오.
+Adobe Experience Manager(AEM)는 콘텐츠 전달 및 작성 접근 방식 모두에 걸쳐 유연성을 제공하므로 팀이 요구 사항에 가장 적합한 모델을 선택할 수 있습니다.
+
+[Edge Delivery Services](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)을(를) 사용하여 빠르고 반복적인 작성과 빠른 컨텐츠 속도를 구현하거나, 기존의 게시 제공 서비스를 사용하여 강력한 엔터프라이즈 게시 모델을 구현하십시오. 두 방법 모두 조직에서 가장 적합한 방식으로 탁월한 디지털 경험을 제공할 수 있습니다. Edge Delivery Services을 시작하려면 [Edge Delivery Services 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 살펴보고 최신 작성 옵션에 대한 자세한 내용은 [작성 가이드](https://www.aem.live/docs/authoring-guide)를 참조하십시오.
 
 온보딩은 지정된 시스템 관리자가 조직에 대해 AEM as a Cloud Service을 설정하는 프로세스입니다. 이 프로세스에는 클라우드 리소스의 초기 프로비저닝과 직무에 따라 사용자를 역할에 할당하는 것이 포함됩니다. 결과적으로 각 멤버는 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있습니다.
 
@@ -62,9 +64,9 @@ AEM as a Cloud Service의 온보딩 여정은 다음과 같은 핵심 요소를 
 
 일반적으로 온보딩 여정은 AEM as a Cloud Service 및 AEM을 처음 시작하는 고객의 **시스템 관리자**&#x200B;를 위해 특별히 작성되었습니다. 시스템 관리자는 AEM as a Cloud Service 약정에 서명한 후 Adobe에서 처음으로 연락하는 개인입니다. 일반적으로 AEM as a Cloud Service 리소스를 처음 액세스하고 설정하는 사람입니다. 이 주제를 읽고 있다면 시스템 관리자일 가능성이 높습니다.
 
-시스템 관리자는 액세스에서 권한에 이르기까지 조직의 AEMaaCS 사용자의 모든 측면을 관리합니다. 그러나 시스템 관리자는 그 과정에서 다른 담당자와 상호 작용해야 합니다.
+시스템 관리자는 액세스에서 권한에 이르기까지 조직의 AEMaaCS 사용자의 모든 측면을 관리합니다. 그러나 시스템 관리자는 그 과정에서 다른 페르소나와 상호 작용해야 합니다.
 
-| 담당자 | 설명 | 여정에서의 역할 |
+| 페르소나 | 설명 | 여정에서의 역할 |
 | --- | --- | --- |
 | 시스템 관리자 | 이 여정의 대상은 클라우드 리소스의 초기 프로비저닝과 직무에 따라 적절한 역할에 사용자를 할당합니다. | 이 역할은 액세스부터 권한까지 사용자의 모든 측면을 관리하는 데 도움이 됩니다. |
 | 콘텐츠 작성자 | AEM에서 콘텐츠를 만들고 검토합니다. | 시스템 관리자가 권한을 부여하면 작성자가 콘텐츠를 만드는 여정을 시작할 수 있습니다. |
