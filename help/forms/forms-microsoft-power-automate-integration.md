@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: power automate에 AEM forms 연결, Power Automate AEM Forms, Adaptive Forms에 power automate 통합, Adaptive Forms에서 Power Automate로 데이터 전송
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 13%
+source-wordcount: '1546'
+ht-degree: 17%
 
 ---
 
 
 # Microsoft® Power Automate와 적응형 양식 연결 {#connect-adaptive-form-with-power-automate}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | 이 문서 |
 
 <span class="preview"> GovCloud를 사용하고 있고 GCC(정부 클라우드 컴퓨팅) 테넌트에 연결해야 하는 경우, 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램을 통한 액세스를 요청하십시오. </span>
 
@@ -38,7 +43,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 적응형 양식과 Microsoft® Power Automate를 연결하려면 다음이 필요합니다.
 
 * Microsoft® Power Automate Premium 라이센스.
-* 적응형 양식 제출 데이터를 수락하기 위한 [&#x200B; 트리거를 사용하는 Microsoft® &#x200B;](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
+* 적응형 양식 제출 데이터를 수락하기 위한 [ 트리거를 사용하는 Microsoft® ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
 * [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
@@ -302,8 +307,8 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
    >[!NOTE]
    >
-   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
-   > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 표시되지 않으면 Extension Manager에서 **양식 속성 편집** 확장 기능을 활성화합니다.
+   > * 범용 편집기에서 확장 기능을 활성화하거나 비활성화하는 방법을 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
 
 
 1. **제출** 탭을 클릭하고 **[!UICONTROL Power Automate 흐름 호출]** 제출 액션을 선택합니다. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.

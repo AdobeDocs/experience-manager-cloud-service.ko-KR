@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2534'
 ht-degree: 21%
 
 ---
@@ -212,7 +212,9 @@ ht-degree: 21%
 
 ### 복사 및 붙여넣기 {#copy-paste}
 
-동일한 브라우저 탭에서 [컨테이너](/help/implementing/universal-editor/field-types.md#container) 내에 있는 구성 요소를 복사하여 붙여넣을 수 있습니다. 대상 컨테이너에 [구성된 필터](/help/implementing/universal-editor/filtering.md)가 없거나 구성 요소를 붙여넣을 수 있는 필터가 있는 경우에만 가능합니다.
+[개의 컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container) 대상 컨테이너에 [구성된 필터](/help/implementing/universal-editor/filtering.md)가 없거나 구성 요소를 붙여넣을 수 있는 필터가 있는 경우에만 가능합니다.
+
+탭이 이미 열려 있는 경우 복사하여 붙여넣기는 동일한 브라우저 탭에 있거나 브라우저 탭 사이에 있을 수 있습니다. 항목을 복사한 다음 새 브라우저 탭을 열어 붙여넣을 수 없습니다.
 
 ![복사 아이콘](assets/copy.png)
 ![붙여넣기 아이콘](assets/paste.png)
@@ -227,6 +229,8 @@ ht-degree: 21%
 >[!TIP]
 >
 >핫키 `Command-C` 또는 `Command-V`을(를) 사용하여 각각 복사하거나 붙여 넣으십시오.
+
+
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
@@ -351,7 +355,7 @@ ht-degree: 21%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

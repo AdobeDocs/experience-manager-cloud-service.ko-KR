@@ -4,10 +4,10 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 67%
+source-wordcount: '410'
+ht-degree: 68%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 67%
 | `publish` | 모든 [게시](/help/sites-cloud/authoring/universal-editor/publishing.md) 기능, 즉 [게시 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) 및 [게시 취소 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) 사용 안 함 |
 | `publish-live` | 라이브 [게시](/help/sites-cloud/authoring/universal-editor/publishing.md) 사용 안 함 |
 | `publish-preview` | 미리 보기 게시 비활성화([미리 보기 서비스](/help/sites-cloud/authoring/sites-console/previewing-content.md)를 사용할 수 있는 경우) |
-| `unpublish` | [게시 취소 단추](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) 사용 안 함([미리 보기 기능](/help/release-notes/universal-editor/preview.md)) |
+| `unpublish` | [게시 취소 단추](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) 사용 안 함 |
 | `copy` | [복사 및 붙여넣기 단추](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)를 사용하지 않도록 설정합니다. |
 | `duplicate` | [중복 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)를 사용하지 않도록 설정합니다. |
 | `header-open-page` | [페이지 열기 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)를 사용하지 않도록 설정합니다. |

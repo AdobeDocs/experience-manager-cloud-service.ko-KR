@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3339'
 ht-degree: 18%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -41,7 +41,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 * **태그 지정:** AEM Sites 페이지를 사용하면 [페이지, 에셋 또는 기타 콘텐츠에 태그나 레이블을 할당](/help/implementing/developing/introduction/tagging-framework.md)할 수 있습니다. 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
 * **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 사용하면 사용자가 AEM Sites 환경에서 [페이지에 대한 액세스 및 수정 사항을 제어](/help/sites-cloud/authoring/page-editor/edit-content.md)할 수 있습니다. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
-또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features)를 사용합니다. 이러한 핵심 구성 요소는 [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)와(과) 동일하게 구성 요소의 스타일을 지정하고 사용자 지정하는 보다 쉬운 표준 방법을 제공합니다.
+또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)를 사용합니다. 이러한 핵심 구성 요소는 [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)와(과) 동일하게 구성 요소의 스타일을 지정하고 사용자 지정하는 보다 쉬운 표준 방법을 제공합니다.
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하는 방법 {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -76,11 +76,13 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
 
-### AEM Sites 페이지 또는 경험 조각에 적응형 Forms 클라이언트 라이브러리 추가
+### AEM Sites 페이지 또는 경험에 적응형 Forms 클라이언트 라이브러리 추가
+
+**사례 1: 별도의 사이트 페이지 구성 요소 사용**
 
 적응형 양식 컨테이너 구성 요소의 전체 기능을 활성화하려면 배포 파이프라인을 사용하여 AEM Sites 페이지에 Customheaderlibs 및 Customfooterlibs 클라이언트 라이브러리를 추가합니다. 라이브러리를 추가하려면:
 
-1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ko)를 사용하고 복제합니다.
+1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)를 사용하고 복제합니다.
 1. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예: Microsoft Visual 코드.
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 파일을 열고 다음 코드를 파일에 추가합니다.
 
@@ -119,7 +121,23 @@ AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활�
        </sly> 
    ```
 
-1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ko)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
+1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
+
+>[!NOTE]
+>
+> 모든 양식에 필요한 경우에만 사용자 지정 함수 클라이언트 라이브러리를 하드코딩하십시오. 양식 유형에 따라 다른 라이브러리의 경우 다음 섹션에 설명된 대로 템플릿 페이지 정책을 통해 추가합니다.
+
+**사례 2: 동일한 사이트 페이지 구성 요소 사용**
+
+양식으로 페이지를 작성하는 데 사용되는 템플릿의 페이지 정책에 런타임 클라이언트 라이브러리 또는 사용자 정의 함수 라이브러리를 포함합니다.
+
+1. 편집할 AEM Sites 페이지 또는 경험 조각을 엽니다. 편집할 페이지를 열려면 페이지를 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭하세요.
+2. 사이트 또는 경험 조각 페이지의 템플릿을 엽니다. 템플릿을 열려면 **[!UICONTROL 페이지 정보]** ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 템플릿 편집]**&#x200B;으로 이동합니다. 템플릿 편집기에서 해당 템플릿이 열립니다.
+3. 템플릿의 **[!UICONTROL 페이지 정보]** ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) 섹션으로 이동하여 **[!UICONTROL 페이지 정책]** 옵션을 선택하십시오. 이렇게 하면 사용자 지정 함수 또는 런타임 클라이언트 라이브러리를 정의할 수 있는 AEM Sites 템플릿의 속성이 열립니다.
+4. 새 사용자 지정 함수 라이브러리 또는 런타임 라이브러리를 추가하려면 **[!UICONTROL 속성]** 탭에서 **[!UICONTROL 추가]** 단추를 클릭하십시오.
+5. **[완료]**&#x200B;를 클릭합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### AEM Sites 페이지 또는 경험 조각에 대해 적응형 Forms 컨테이너 활성화
 
@@ -131,8 +149,6 @@ AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활�
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
-
-+++
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
