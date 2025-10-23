@@ -43,7 +43,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 적응형 양식과 Microsoft® Power Automate를 연결하려면 다음이 필요합니다.
 
 * Microsoft® Power Automate Premium 라이센스.
-* 적응형 양식 제출 데이터를 수락하기 위한 [ 트리거를 사용하는 Microsoft® ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
+* 적응형 양식 제출 데이터를 수락하기 위한 [&#x200B; 트리거를 사용하는 Microsoft® &#x200B;](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`.
 * [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
