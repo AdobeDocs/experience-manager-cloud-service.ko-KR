@@ -17,7 +17,7 @@ ht-degree: 17%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | 이 문서 |
 
 <span class="preview"> GovCloud를 사용하고 있고 GCC(정부 클라우드 컴퓨팅) 테넌트에 연결해야 하는 경우, 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램을 통한 액세스를 요청하십시오. </span>
