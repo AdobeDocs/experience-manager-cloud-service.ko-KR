@@ -1,10 +1,10 @@
 ---
-title: 범용 편집기 2025.10.23 릴리스 정보
-description: 다음은 범용 편집기 2025.10.23 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.10.24 릴리스 정보
+description: 다음은 범용 편집기 2025.10.24 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 63%
@@ -12,9 +12,9 @@ ht-degree: 63%
 ---
 
 
-# 범용 편집기 2025.10.23 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.10.24 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 10월 23일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 10월 24일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
