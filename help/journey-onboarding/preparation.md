@@ -33,7 +33,7 @@ AEM as a Cloud Service는 다양한 솔루션, 추가 기능 및 배포 모델�
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431508/?captions=kor&quality=12&learn=on)
 
 -->
 
