@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 76%
+source-wordcount: '1027'
+ht-degree: 73%
 
 ---
 
@@ -18,13 +18,11 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
 *Launch*&#x200B;을(를) 만들어 현재 콘텐츠를 유지 관리하는 동시에 나중에 게시할 준비를 변경할 수 있도록 합니다. AEM 페이지의 경우 현재 게시된 페이지와 향후 한 번에 게시될 해당 페이지의 버전, 이렇게 두 버전을 동시에 효과적으로 편집하는 것입니다. 해당 시간이 되면 원래 페이지를 바꾸고 새 버전을 게시할 수 있습니다.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>콘텐츠 조각에 론치를 사용할 수도 있습니다. 기본 개념은 같지만 AEM에서 관리하는 방법에 차이가 있다.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>자세한 내용은 [콘텐츠 조각용 시작](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)을 참조하세요.
 
 *시작*&#x200B;을(를) 만든 다음 *시작* 페이지를 편집하고 업데이트한 후 *홍보*&#x200B;를 *Source*(으)로 되돌립니다. 그런 다음 이 *Source* 페이지를 활성화할 수 있습니다(최상위). 홍보를 하면 론치 콘텐츠가 소스 페이지에 다시 복제되며, 홍보는 수동 또는 자동으로 수행할 수 있습니다(론치를 생성 및 편집할 때 설정된 필드에 따라 다름).
 
@@ -115,13 +113,11 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
 ## 론치 콘솔 {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>이 콘솔은 페이지 론치용으로만 사용됩니다.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>콘텐츠 조각을 관리하려면 [콘텐츠 조각 실행](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)을 참조하십시오.
 
 론치 콘솔은 론치에 대한 개요를 제공하며 나열된 론치에 대해 조치를 취할 수 있도록 해줍니다.
 

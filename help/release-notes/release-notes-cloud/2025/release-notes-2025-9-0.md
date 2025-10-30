@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 69%
+source-wordcount: '2088'
+ht-degree: 92%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2025.9.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 69%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.10.0) 일자는 2025년 10월 30일 금요일입니다. 다음 기능 릴리스(2025.10.0)는 2025년 11월 20일 금요일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.9.0) 일자는 2025년 9월 25일입니다. 다음 기능 릴리스(2025.10.0)는 2025년 10월 30일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -46,11 +44,42 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Experience Manager Sites의 새로운 기능 {#new-sites}
+### Experience Manager Sites 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* AEM 콘텐츠 조각용 [콘텐츠 모델 편집기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)가 AEM의 다른 React Spectrum 기반 인터페이스와 일치하도록 현대화되었습니다. 이제 사용자 인터페이스 구현 및 확장성 모델은 콘텐츠 조각 편집기 및 범용 편집기와 일치합니다. 새 모델 편집기는 새 콘텐츠 모델 관리 UI에서 열면 기본적으로 제공됩니다. Touch UI에서 콘텐츠 모델을 열면 Touch UI 편집기가 열리고 새 편집기를 사용할 수 있습니다.
+AEM 콘텐츠 조각용 콘텐츠 모델 편집기는 AEM의 다른 React Spectrum 기반 인터페이스와 일치하도록 현대화되었습니다. 이제 사용자 인터페이스 구현 및 확장성 모델은 콘텐츠 조각 편집기 및 범용 편집기와 일치합니다. 새 모델 편집기는 새 콘텐츠 모델 관리 UI에서 열면 기본적으로 제공됩니다. Touch UI에서 콘텐츠 모델을 열면 Touch UI 편집기가 열리고 새 편집기를 사용할 수 있습니다.
 
-* [콘텐츠 조각에 대한 실행](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): 콘텐츠 조각 콘솔의 실행 탭에서 실행을 만들고, 기존 실행을 모두 나열하고, 주요 속성을 확인하고, 이러한 속성에 대해 작업을 수행할 수 있습니다.
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### Assets 보기의 새로운 기능 {#new-features-assets-view}
+
+**Dynamic Media 템플릿의 하위 문자열을 사용하여 텍스트 서식 개선**
+
+이제 Dynamic Media 템플릿 텍스트 레이어 내의 하위 문자열에 서식을 적용할 수 있습니다. 선택한 단어 또는 구는 별도의 레이어로 처리되어 글꼴, 글꼴 크기, 색상 등을 조정할 수 있습니다. 하위 문자열 레이어는 매개변수화되므로 템플릿의 게재 URL을 사용하여 실시간으로 업데이트할 수 있습니다
+
+### OpenAPI 기능을 갖춘 Dynamic Media의 새로운 기능 {#new-features-dynamic-media-with-openapi}
+
+**브랜딩되고 읽을 수 있는 자산 배달 URL**
+
+OpenAPI를 사용하는 Dynamic Media에서 Vanity URL을 활용하여 OpenAPI URL을 사용하는 Dynamic Media를 사람이 읽을 수 있도록 합니다. 단축 URL을 사용하면 자산 전달 URL의 길고 시스템이 생성한 UUID를 기억하기 어려운 상태로 짧은 브랜드 제어 식별자로 바꿀 수 있습니다. 이렇게 하면 Vanity URL이 짧아지고, 읽기 쉬워지고, 공유가 가능해지며, 브랜드 또는 캠페인과의 일치도가 향상됩니다. Vanity URL은 기존 워크플로를 방해하지 않고 런타임에 원래 자산의 UUID에 자동으로 매핑됩니다.
+
+>[!NOTE]
+>
+>이 기능은 제한적으로 사용 가능한 기능으로 사용할 수 있습니다. 시작하려면 이 [문서](/help/assets/vanity-urls.md)를 참조하세요.
+
+### Content Hub의 새로운 기능 {#new-features-content-hub}
+
+**컬렉션을 즐겨찾기로 표시**
+
+이제 Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성하고 검색할 수 있습니다. 즐겨찾는 컬렉션이 추가되면 Content Hub 홈 페이지의 즐겨찾기 탭에서 편리하게 사용할 수 있습니다.
+
+
+**빠른 액세스를 위해 컬렉션 고정**
+
+이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 고정된 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달 범위에 유지할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>이러한 기능은 제한된 가용성 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
 
 <!--
 
@@ -74,23 +103,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms의 새로운 기능 {#new-features-forms}
 
-**적응형 양식 및 양식 조각을 위한 범용 편집기**
+**SharePoint 목록 첨부 파일에 대한 양식 데이터 모델 호출 워크플로 단계**
 
-이제 범용 편집기는 적응형 Forms 및 재사용 가능한 양식 조각을 만들기 위한 통합 작성 환경을 제공합니다. 작성자는 직관적인 WYSIWYG 환경 내에서 양식을 시각적으로 디자인하고, 제출 액션을 구성하고, reCAPTCHA 유효성 검사를 통합할 수 있습니다.
+이제 양식 데이터 모델 호출 워크플로 단계에서는 SharePoint 목록 기반 양식 데이터 모델의 Base64 인코딩 첨부 파일 배열에 대한 워크플로측 메타데이터 처리를 지원합니다. 이 향상된 기능을 통해 워크플로 단계는 파일 이름, MIME 유형 및 각 첨부 파일에 대한 사용자 지정 속성과 같은 메타데이터를 전달, 저장, 검색할 수 있습니다. 이 기능은 보다 포괄적인 데이터 관리를 가능하게 하며 원활한 다운스트림 통합을 지원합니다. 자세한 내용은 [SharePoint 목록 첨부 파일에 대한 양식 데이터 모델 호출 워크플로 단계 지원 개선](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)을 참조하십시오.
 
-<!-- ### Pre-Release features in AEM Forms 
+### AEM Forms의 프리릴리스 기능
 
-**Rule Editor Enhancements**
+**규칙 편집기 개선 사항**
 
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
+이제 규칙 편집기는 향상된 탐색 기능을 지원하며 입력 매개변수에 함수 및 수학 표현식을 사용할 수 있습니다.
 
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+**이벤트 페이로드 지원으로 탐색 기능 향상**
 
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+액션이제 호출 서비스 핸들러의 `Navigate To` 작업이 `EVENT_PAYLOAD`를 지원하므로 양식 작성자는 이벤트 응답에 따라 후속 작업을 구성할 수 있습니다. 이 향상된 기능을 통해 제출 후 워크플로를 더욱 유연하게 디자인할 수 있으므로 보다 원활한 전환과 보다 개인화된 사용자 경험을 보장할 수 있습니다. 자세한 내용은 [이벤트 페이로드 지원으로 탐색 기능 향상](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)을 참조하십시오.
+
+**입력 매개변수에서 함수 및 수학 표현식 지원**
+
+이제 입력 매개변수가 함수 호출과 수학 표현식을 모두 지원하므로 양식 작성자는 동적으로 계산된 값을 직접 전달할 수 있습니다. 이 향상된 기능은 규칙 구성을 간소화하고, 추가 필드의 필요성을 없애며, 양식을 복잡한 논리 및 계산 기반 시나리오에 보다 유연하게 맞춥니다. 자세한 내용은 [입력 매개변수에서 함수 및 수학 표현식 지원](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)을 참조하십시오.
 
 ### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -98,23 +127,17 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이들 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### 향상된 대화형 통신 기능
+**인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기**
 
-##### 템플릿 잠금
+사용자는 데이터 없는, 로컬 JSON 데이터 파일이 있는 또는 데이터 모델의 데이터가 있는 인터랙티브 커뮤니케이션 PDF를 미리 볼 수 있으므로 데이터 기반의 유연한 테스트가 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)를 참조하십시오.
 
-템플릿 내의 콘텐츠 및 레이아웃 요소를 잠궈 브랜드 무결성을 유지하고 무단 수정을 방지합니다. 이를 통해 모든 커뮤니케이션에서 디자인 일관성을 유지할 수 있습니다.
+**인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원**
 
-##### 컨텐츠 오버플로 지원
+사용자 정의 글꼴 기능을 사용하면 인터랙티브 커뮤니케이션에 사용자 정의 글꼴 또는 조직에서 승인한 글꼴을 포함할 수 있으므로 디바이스 및 플랫폼 전반에서 일관적이고 브랜드화된 PDF 렌더링이 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)을 참조하십시오.
 
-플로우 레이아웃에 대한 &quot;컨텐츠 내에서 페이지 나누기 허용&quot; 옵션을 소개합니다. 이 향상된 기능을 통해 여러 페이지를 매끄럽게 편집하고 복잡한 문서에 대해 더 나은 텍스트 관리를 할 수 있습니다.
+**인터랙티브 커뮤니케이션 가져오기 및 내보내기**
 
-##### XDP 파일 편집
-
-대화형 통신 편집기는 이제 조각 통합을 포함하여 XDP 편집을 지원합니다. 이제 Microsoft Windows 데스크톱에서만 실행되는 Forms Designer 대신 브라우저에서 XDP 파일을 편집할 수 있습니다.
-
-##### 동적 페이지 번호 매기기
-
-여러 페이지 문서 간에 명확하고 일관된 페이지 매김을 위해 마스터 페이지에 &quot;##의 페이지 번호&quot;를 자동으로 표시합니다.
+이 기능을 사용하면 다양한 환경에서 인터랙티브 커뮤니케이션을 마이그레이션하고 재사용할 수 있습니다. 이제 인터랙티브 커뮤니케이션을 연관된 조각 및 데이터 모델과 함께 한 환경에서 내보내고 다른 환경으로 가져올 수 있습니다. 자세한 내용은 [인터랙티브 커뮤니케이션 가져오기 및 내보내기](/help/forms/interactive-communication/import-and-export-interactive-communications.md)를 참조하십시오.
 
 <!--
 **Forms Optimization opportunities**
@@ -149,19 +172,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >9월 25일에 제한 공개 기능으로 사용 가능합니다.
 >>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 
-### 더 많은 대상으로 AEM 로그 전달 {#log-forwarding}
+### Eclipse용 AEM 개발자 도구 신규 릴리스 {#aem-develeper-tools-for-eclipse}
 
-이제 AEM 로그를 Amazon S3, Sumo Logic, Dynatrace 및 고유한 New Relic 계정(Adobe 제공 계정이 아님)에 전달할 수 있습니다. 이러한 로깅 대상에 대해 AEM 로그(Apache/Dispatcher 포함)가 지원되지만 CDN 로그는 지원되지 않습니다.
+Eclipse용 AEM 개발자 도구 버전 1.4.0이 릴리스되었습니다. 이 버전에는 Eclipse IDE 2022-12 이상에 대한 지원이 추가되었으며 현재 버전(2025-09)의 유효성에 대한 검사가 이루어졌습니다. 이제 이 툴은 최신 버전의 AEM Project Archetype에서 작동하며 Sling IDE Tooling 1.3.0의 개선된 기능이 통합되었습니다.
 
-[지원되는 로그 전달 대상](/help/implementing/developing/introduction/log-forwarding.md)의 전체 집합을 확인하세요.
-
-### Edge Delivery Services용 파이프라인 구성 {#config-pipeline-eds}
-
-이제 구성 파이프라인이 Edge Delivery Services으로 빌드된 사이트에 대해 지원되므로 이 기능은 AEM Author 및 AEM Publish 게재 이상으로 확장됩니다. 구성 파이프라인 을 사용하여 트래픽 필터 규칙 및 원본 선택기를 포함하여 CDN 구성과 같은 설정을 관리할 수 있습니다. [지원되는 구성](/help/operations/config-pipeline.md#configurations)을 참조하십시오.
-
-Edge Delivery 구성 파이프라인은 Cloud Manager 파이프라인 변수를 통해 비밀 또한 지원합니다.
-
-[Edge Delivery 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)를 참조하십시오.
+[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse)에서 설치하고, 자세한 내용은 [AEM 개발자 도구 페이지](https://eclipse.adobe.com)를 참조하십시오.
 
 ### 곧 Java API 지원 중단 예정 {#java-api-deprecation}
 
@@ -199,18 +214,19 @@ OSGi properties:
 
 ### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
 
-Adobe은 2025년 10월 14일에 **Stage** 및 **Production** 환경을 더 높은 성능의 **Java 21 런타임**(으)로 업그레이드했습니다. 1월 말부터 AEM Cloud Service SDK 및 클라우드 환경은 모두 Java 11 런타임과 작동하지 않습니다.
+*Java 11 런타임*&#x200B;은 지원이 중단되었으며, 대부분의 환경은 이미 성능이 더 좋은 **Java 21 런타임**&#x200B;으로 업그레이드되었습니다.
+
+지원되지 않는 종속성으로 인해 사용 환경을 업그레이드할 수 없는 경우([Java 21 런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 참조), Adobe로부터 다음 단계가 포함된 이메일을 받았을 것입니다. 이메일에 나오는 설명대로 Adobe에서 **2025년 9월 18일**&#x200B;에 **개발** 및 **RDE** 환경을 업그레이드했으므로, 사용자는 사이트와 프로세스를 검증하고 어떤 문제든 해결할 수 있습니다. **스테이지** 및 **프로덕션**&#x200B;에 대한 업그레이드는 **2025년 10월 14일**&#x200B;에 진행될 예정입니다.
 
 >[!NOTE]
 >
-> 최신 성능 최적화 및 언어 개선 사항을 활용하려면 Java 17 또는 Java 21(권장)로 빌드하는 것이 좋습니다. Java 8 및 Java 11을 사용한 빌드는 현재 지원되지만 향후 릴리스에서는 더 이상 사용되지 않을 예정입니다. 사용 중단에 앞서 별도의 커뮤니케이션이 이루어집니다. *이 문서*&#x200B;의 [빌드 시간 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 섹션을 참조하십시오.
->
+>런타임 버전은 코드의 빌드 버전과 별도입니다. Java 21을 사용한 빌드를 권장하지만 현재로서는 Java 11 빌드도 여전히 허용됩니다. Java 11 빌드에 대한 별도의 사용 중단 공지는 앞으로 공유될 예정입니다.
 
 ### AEM Java 로그 구성 시행 {#logconfig-policy}
 
 4월 릴리스 정보에서 언급된 대로 AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
 
-**11월 20일**&#x200B;부터 지원되지 않는 사용자 지정 로깅 무시가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
+**10월 30일**&#x200B;부터는 지원되지 않는 사용자 정의 로깅 재정의가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
 
 사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
 
@@ -254,25 +270,24 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 액세스를 요청하고 피드백을 공유하려면 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)에 이메일을 보내십시오.
 
-
-### AI 답변 - AEM Sites(Beta 프로그램)에 대한 스마트하고 컨텍스트 인식 응답 {#ai-answers-beta}
-
-AI 답변에서는 방문자가 콘텐츠와 상호 작용할 수 있는 새로운 방법을 소개합니다. RAG(Retrieval-Augmented Generation) 기술을 기반으로 하는 이 솔루션은 AEM 관리 데이터를 사용하여 디지털 환경 내에서 정확하고 일관된 답변을 직접 제공합니다.
-
-이 베타의 일부로서, AEM Cloud Service 환경에서 AI 답변을 안전하게 살펴볼 수 있습니다. 이 접근 방식을 사용하면 라이브 대상자가 사용하기 전에 성능, 정확성 및 전체 경험을 확인할 수 있습니다. 인증이 완료되면 AI 답변 환경을 전체 프로덕션으로 승격시킬 수 있습니다.
-
-Beta 액세스를 요청하거나 피드백을 공유하려면 [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)에 문의하십시오.
-
-
 ### RDE용 스냅샷 (Alpha 프로그램) {#rde-snapshot-program}
 
 알파 버전에서는 신속한 개발 환경(RDEs)에서 현재 코드와 콘텐츠 상태의 스냅샷을 찍는 기능을 지원하며, 이는 나중에 복원할 수 있습니다. 이것은 반환이 필요할 수 있는 코드를 동기화하거나, 서로 다른 기능의 개발을 전환할 때 유용할 수 있습니다. 테스트를 위한 알려진 시작점으로 변경 가능한 콘텐츠만 복원하는 것도 가능합니다.
 
 이 기능에 대한 피드백을 제공하는 데 관심이 있으시면 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)으로 이메일을 보내주십시오.
 
+### 더 많은 대상으로 AEM 로그 전달 (Beta 프로그램) {#log-forwarding-beta}
+
+로그는 Cloud Manager에서 다운로드할 수 있지만 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM은 이미 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 AEM 및 CDN 로그 전달을 지원합니다. 이 기능은 셀프서비스 방식으로 구성하고 구성 파이프라인을 사용하여 배포합니다.
+
+이제 Beta 버전에서는 AEM 로그를 Amazon S3, Sumo Logic, Dynatrace 및 사용자의 New Relic 계정(Adobe 제공 계정이 아닌 경우)으로 전달할 수 있습니다. AEM 로그(Apache/Dispatcher 포함)가 이러한 로깅 대상에 대해 지원되지만 CDN 로그는 지원되지 않습니다. 액세스하려면 이메일 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)으로 문의하십시오.
+
+자세한 내용은 [로그 전달 설명서](/help/implementing/developing/introduction/log-forwarding.md)에서 확인하십시오.
+
 ### 애플리케이션 성능 모니터링(APM) 기능 확장(Alpha 프로그램) {#apm-alpha}
 
 AEM Cloud Service는 가시성 확보를 위해 현재 Adobe에서 제공하는 [New Relic One](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 및 고객이 관리하는 [Dynatrace](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)를 지원합니다. 추가 APM 옵션에 대한 지원을 살펴볼 때 사용 사례와 함께 선호하는 공급업체 또는 기술을 명시한 이메일을 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)에 보내십시오.
+
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 

@@ -1,21 +1,18 @@
 ---
-title: 콘텐츠 조각 론치
+title: 콘텐츠 조각용 론치
 description: Adobe Experience Manager as a Cloud Service에서 컨텐츠 조각용 런치를 사용하는 방법을 알아봅니다. 론치를 사용하면 현재 콘텐츠 조각을 유지하면서 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: true
-hidefromtoc: true
-index: false
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 231ce792429347882c93804d370e7a99111ec916
+source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 콘텐츠 조각 론치 {#launches-for-content-fragments}
+# 콘텐츠 조각용 론치 {#launches-for-content-fragments}
 
 Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 향후 릴리스를 위한 콘텐츠를 효율적으로 개발할 수 있습니다.
 
@@ -133,7 +130,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
       * **새 Launch를 만들고, AEM에서 진행 상황을 모니터링하고, 완료되면 페이지를 다시 로드하기 위해 작업이 시작되었습니다.**
 
-1. [백그라운드 작업](/help/operations/asynchronous-jobs.md)에 대한 AEM 콘솔에서 자세한 내용을 보려면 메시지 상자에서 **보기**&#x200B;를 선택하십시오.
+1. **백그라운드 작업**&#x200B;에 대한 AEM 콘솔에서 자세한 내용을 보려면 메시지 상자에서 [보기](/help/operations/asynchronous-jobs.md)를 선택하십시오.
 
    ![콘솔의 새 실행](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
@@ -235,7 +232,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
 >[!NOTE]
 >
->**[Launch와 Source 비교](#compare-launch-to-source)**&#x200B;에서 시작을 **다시 설정**&#x200B;할 수도 있습니다.
+>**Launch와 Source 비교**&#x200B;에서 시작을 **[다시 설정](#compare-launch-to-source)**&#x200B;할 수도 있습니다.
 
 ## 론치 홍보(Source) {#promote-a-launch-to-source}
 
@@ -261,9 +258,9 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
 론치를 지정된 날짜 및 시간에 자동으로 홍보하려면 다음을 수행해야 합니다.
 
-1. [시작 탭](#launches-in-the-content-fragment-console)의 오른쪽 패널에서 **승격 날짜** 및 시간을 정의합니다.
+1. **시작 탭**&#x200B;의 오른쪽 패널에서 [승격 날짜](#launches-in-the-content-fragment-console) 및 시간을 정의합니다.
 
-1. 콘텐츠가 홍보될 때 게시될 수 있는 경우 [시작을 만들 때](#create-a-launch) 또는 [시작 탭](#launches-in-the-content-fragment-console)의 오른쪽 패널에서 **게시 준비**&#x200B;를 설정하십시오.
+1. 콘텐츠가 홍보될 때 게시될 수 있는 경우 **시작을 만들 때** 또는 [시작 탭](#create-a-launch)의 오른쪽 패널에서 [게시 준비](#launches-in-the-content-fragment-console)를 설정하십시오.
 
 ## 론치 삭제 {#delete-a-launch}
 

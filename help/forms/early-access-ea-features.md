@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 20%
 
 ---
@@ -121,6 +121,17 @@ Interactive Communications on Cloud는 비즈니스 서신, 문서, 명세서, �
 * **PDF 미리 보기:** 유연한 데이터 기반 테스트를 위해 데이터, 로컬 JSON 파일 또는 데이터 모델이 없는 대화형 통신을 미리 봅니다.
 * **사용자 지정 글꼴:** 사용자 지정 또는 조직에서 승인한 글꼴을 포함하여 장치 간에 일관된 브랜드 PDF 렌더링을 보장합니다.
 * **가져오기 및 내보내기:** 인터랙티브 커뮤니케이션을 환경의 조각 및 데이터 모델과 원활하게 마이그레이션하고 다시 사용합니다.
+
+* **템플릿 잠금**: 템플릿 내의 콘텐츠 및 레이아웃 요소를 잠가 브랜드 무결성을 유지하고 무단 수정을 방지합니다.
+
+* **컨텐츠 오버플로**: 다중 페이지를 매끄럽게 편집하고 복잡한 문서를 더 잘 관리할 수 있도록 레이아웃에 &quot;컨텐츠 내에서 페이지 나누기 허용&quot; 옵션입니다.
+
+* **XDP 파일 편집**: 이제 Microsoft Windows 데스크톱에서만 실행되는 Forms Designer 대신 브라우저에서 XDP 파일을 편집할 수 있습니다.
+
+##### 동적 페이지 번호 매기기
+
+여러 페이지 문서 간에 명확하고 일관된 페이지 매김을 위해 마스터 페이지에 &quot;##의 페이지 번호&quot;를 자동으로 표시합니다.
+
 
 
 #### 사용 사례:
