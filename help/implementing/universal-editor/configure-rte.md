@@ -3,13 +3,13 @@ title: 범용 편집기에 대한 RTE 구성
 description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하는 방법을 이해합니다.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # 범용 편집기에 대한 RTE 구성 {#configure-rte}
 
@@ -32,7 +32,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [
@@ -73,7 +73,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * `hideTarget`: `true` - 링크에서 대상 특성을 완전히 제외
 
 `unlink` 동작은 기존 링크 내에 커서가 있는 경우에만 나타납니다. 텍스트 콘텐츠를 유지하면서 링크 서식을 제거합니다.
+
+### 이미지 작업 {#image}
+
+이미지 작업은 응답형 이미지 마크업을 생성하기 위해 그림 요소 래핑을 지원합니다. 다음 섹션을 사용할 수 있습니다.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### 이미지 구성 옵션 {#image-options}
+
+* `wrapInPicture`: `false`(기본값) - 단순 `<img>` 요소 생성
+* `wrapInPicture`: `true` - 반응형 디자인을 위해 `<picture>` 요소에서 이미지 줄바꿈
 
 ### 기타 작업 {#other}
 
