@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 92%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 이제 양식 데이터 모델 호출 워크플로 단계에서는 SharePoint 목록 기반 양식 데이터 모델의 Base64 인코딩 첨부 파일 배열에 대한 워크플로측 메타데이터 처리를 지원합니다. 이 향상된 기능을 통해 워크플로 단계는 파일 이름, MIME 유형 및 각 첨부 파일에 대한 사용자 지정 속성과 같은 메타데이터를 전달, 저장, 검색할 수 있습니다. 이 기능은 보다 포괄적인 데이터 관리를 가능하게 하며 원활한 다운스트림 통합을 지원합니다. 자세한 내용은 [SharePoint 목록 첨부 파일에 대한 양식 데이터 모델 호출 워크플로 단계 지원 개선](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)을 참조하십시오.
 
-### AEM Forms의 프리릴리스 기능
-
-**규칙 편집기 개선 사항**
-
-이제 규칙 편집기는 향상된 탐색 기능을 지원하며 입력 매개변수에 함수 및 수학 표현식을 사용할 수 있습니다.
-
-**이벤트 페이로드 지원으로 탐색 기능 향상**
-
-액션이제 호출 서비스 핸들러의 `Navigate To` 작업이 `EVENT_PAYLOAD`를 지원하므로 양식 작성자는 이벤트 응답에 따라 후속 작업을 구성할 수 있습니다. 이 향상된 기능을 통해 제출 후 워크플로를 더욱 유연하게 디자인할 수 있으므로 보다 원활한 전환과 보다 개인화된 사용자 경험을 보장할 수 있습니다. 자세한 내용은 [이벤트 페이로드 지원으로 탐색 기능 향상](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)을 참조하십시오.
-
-**입력 매개변수에서 함수 및 수학 표현식 지원**
-
-이제 입력 매개변수가 함수 호출과 수학 표현식을 모두 지원하므로 양식 작성자는 동적으로 계산된 값을 직접 전달할 수 있습니다. 이 향상된 기능은 규칙 구성을 간소화하고, 추가 필드의 필요성을 없애며, 양식을 복잡한 논리 및 계산 기반 시나리오에 보다 유연하게 맞춥니다. 자세한 내용은 [입력 매개변수에서 함수 및 수학 표현식 지원](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)을 참조하십시오.
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 이들 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-**인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기**
+* **인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기**
 
-사용자는 데이터 없는, 로컬 JSON 데이터 파일이 있는 또는 데이터 모델의 데이터가 있는 인터랙티브 커뮤니케이션 PDF를 미리 볼 수 있으므로 데이터 기반의 유연한 테스트가 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)를 참조하십시오.
+  사용자는 데이터 없는, 로컬 JSON 데이터 파일이 있는 또는 데이터 모델의 데이터가 있는 인터랙티브 커뮤니케이션 PDF를 미리 볼 수 있으므로 데이터 기반의 유연한 테스트가 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)를 참조하십시오.
 
-**인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원**
+* **인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원**
 
-사용자 정의 글꼴 기능을 사용하면 인터랙티브 커뮤니케이션에 사용자 정의 글꼴 또는 조직에서 승인한 글꼴을 포함할 수 있으므로 디바이스 및 플랫폼 전반에서 일관적이고 브랜드화된 PDF 렌더링이 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)을 참조하십시오.
+  사용자 정의 글꼴 기능을 사용하면 인터랙티브 커뮤니케이션에 사용자 정의 글꼴 또는 조직에서 승인한 글꼴을 포함할 수 있으므로 디바이스 및 플랫폼 전반에서 일관적이고 브랜드화된 PDF 렌더링이 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)을 참조하십시오.
 
-**인터랙티브 커뮤니케이션 가져오기 및 내보내기**
+* **인터랙티브 커뮤니케이션 가져오기 및 내보내기**
 
-이 기능을 사용하면 다양한 환경에서 인터랙티브 커뮤니케이션을 마이그레이션하고 재사용할 수 있습니다. 이제 인터랙티브 커뮤니케이션을 연관된 조각 및 데이터 모델과 함께 한 환경에서 내보내고 다른 환경으로 가져올 수 있습니다. 자세한 내용은 [인터랙티브 커뮤니케이션 가져오기 및 내보내기](/help/forms/interactive-communication/import-and-export-interactive-communications.md)를 참조하십시오.
+  이 기능을 사용하면 다양한 환경에서 인터랙티브 커뮤니케이션을 마이그레이션하고 재사용할 수 있습니다. 이제 인터랙티브 커뮤니케이션을 연관된 조각 및 데이터 모델과 함께 한 환경에서 내보내고 다른 환경으로 가져올 수 있습니다. 자세한 내용은 [인터랙티브 커뮤니케이션 가져오기 및 내보내기](/help/forms/interactive-communication/import-and-export-interactive-communications.md)를 참조하십시오.
+
+* **규칙 편집기 개선 사항**
+
+  이제 규칙 편집기는 향상된 탐색 기능을 지원하며 입력 매개변수에 함수 및 수학 표현식을 사용할 수 있습니다.
+
+   * **이벤트 페이로드 지원을 통해 탐색 기능 향상**: 이제 서비스 호출 처리기의 `Navigate To` 작업이 `EVENT_PAYLOAD`을(를) 지원하므로 양식 작성자는 이벤트 응답을 기반으로 후속 작업을 구성할 수 있습니다. 이 향상된 기능을 통해 제출 후 워크플로를 더욱 유연하게 디자인할 수 있으므로 보다 원활한 전환과 보다 개인화된 사용자 경험을 보장할 수 있습니다. 자세한 내용은 [이벤트 페이로드 지원으로 탐색 기능 향상](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)을 참조하십시오.
+
+   * **입력 매개 변수에서 함수 및 수학 표현식 지원**: 이제 입력 매개 변수가 함수 호출과 수학 표현식을 모두 지원하므로 양식 작성자가 동적으로 계산된 값을 직접 전달할 수 있습니다. 이 향상된 기능은 규칙 구성을 간소화하고, 추가 필드의 필요성을 없애며, 양식을 복잡한 논리 및 계산 기반 시나리오에 보다 유연하게 맞춥니다. 자세한 내용은 [입력 매개변수에서 함수 및 수학 표현식 지원](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)을 참조하십시오.
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한 공개 기능으로 사용 가능합니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
+>>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 신규 릴리스 {#aem-develeper-tools-for-eclipse}
 

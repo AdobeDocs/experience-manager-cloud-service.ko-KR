@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 20%
+source-wordcount: '3076'
+ht-degree: 19%
 
 ---
 
@@ -302,7 +302,11 @@ Azure Blob Storage에 PDF를 저장하면 문서를 중앙 집중식으로 관�
 
 ### 시각적 규칙 편집기의 개선 사항
 
-* 이제 적응형 Forms의 시각적 규칙 편집기에서 [양식 데이터 모델](/help/forms/api-integration-in-rule-editor.md) 없이 직접 API 통합을 지원합니다. JSON URL을 입력하거나 cURL 명령을 사용하여 구성을 가져와서 API 끝점에 연결할 수 있습니다. 통합 후 `Invoke Service` 작업을 사용하여 API를 호출할 수 있습니다.
+* [직접 API 통합](/help/forms/api-integration-in-rule-editor.md): 이제 적응형 Forms의 시각적 규칙 편집기에서 양식 데이터 모델 없이도 직접 API 통합을 지원합니다. JSON URL을 입력하거나 cURL 명령을 사용하여 구성을 가져와서 API 끝점에 연결할 수 있습니다. 통합 후 `Invoke Service` 작업을 사용하여 API를 호출할 수 있습니다.
+
+* [이벤트 페이로드 지원을 통해 향상된 탐색](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): 서비스 호출 처리기의 **다음 위치로 이동** 작업은 `EVENT_PAYLOAD`을(를) 지원하므로 양식 작성자는 이벤트 응답을 기반으로 후속 작업을 구성할 수 있습니다.
+
+* [입력 매개 변수에서 함수 및 수학 표현식 지원](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): 이제 입력 매개 변수가 함수 호출과 수학 표현식을 모두 지원하므로 양식 작성자가 동적으로 계산된 값을 직접 전달할 수 있습니다.
 
 ## 추가 참조
 
