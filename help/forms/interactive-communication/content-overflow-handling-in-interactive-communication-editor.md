@@ -4,10 +4,7 @@ description: 대화형 통신 편집기의 컨텐츠 오버플로 처리는 플�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 16%
@@ -27,8 +24,7 @@ ht-degree: 16%
 
 ## 소개
 
-대화형 통신 편집기의 컨텐츠 오버플로 처리 기능은 텍스트가 흐름 및 배치된 레이아웃 내에서 작동하는 방식을 향상시킵니다.
-플로우 레이아웃에 대해 부드러운 컨텐츠 연속성을 보장하고 위치 레이아웃에 대해 시각적 경고를 제공하여 작성자가 커뮤니케이션을 디자인할 때 더 나은 제어력과 유연성을 제공합니다.
+대화형 통신 편집기의 컨텐츠 오버플로 처리 기능은 텍스트가 흐름 및 배치된 레이아웃 내에서 작동하는 방식을 향상시킵니다. 플로우 레이아웃에 대해 부드러운 컨텐츠 연속성을 보장하고 위치 레이아웃에 대해 시각적 경고를 제공하여 작성자가 커뮤니케이션을 디자인할 때 더 나은 제어력과 유연성을 제공합니다.
 
 ## 주요 기능
 

@@ -4,18 +4,15 @@ description: 다양한 데이터 옵션을 사용하여 대화형 통신 편집�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# 대화형 통신 편집기에서 PDF 미리 보기
+# 인터랙티브 커뮤니케이션 편집기에서 PDF 미리보기
 
 >[!NOTE]
 >
@@ -53,7 +50,7 @@ PDF 미리보기 기능을 사용하면 데이터 없이, 로컬 JSON 기반 데
 
 +++&#x200B;2. 로컬 JSON 데이터로 미리 보기
 
-2.1. 구조화된 JSON 파일을 준비합니다. 참조용으로 통신에 사용되는 JSON 스키마 [(FDM)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)에서 샘플 데이터를 복사할 수 있습니다.
+2.1. 구조화된 JSON 파일을 준비합니다. 참조용으로 통신에 사용되는 JSON 스키마 [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)에서 샘플 데이터를 복사할 수 있습니다.
 
 2.2. IC 편집기에서 **PDF 미리 보기** > 로컬 데이터 사용으로 이동합니다.
 

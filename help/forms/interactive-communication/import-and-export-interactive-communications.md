@@ -1,21 +1,18 @@
 ---
-title: 대화형 통신 가져오기 및 내보내기
+title: 인터랙티브 커뮤니케이션 가져오기 및 내보내기
 description: 대화형 통신 가져오기 및 내보내기를 통해 사용자는 여러 환경의 통신을 원활하게 마이그레이션, 재사용 및 관리할 수 있습니다.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
 
-# 대화형 통신 가져오기 및 내보내기
+# 인터랙티브 커뮤니케이션 가져오기 및 내보내기
 
 >[!NOTE]
 >
@@ -33,13 +30,13 @@ ht-degree: 14%
 - 조각, 데이터 모델 및 종속성을 유지합니다.
 - 프로젝트 간 IC를 다시 만드는 데 드는 노력을 줄입니다.
 
-## 대화형 통신 가져오기 및 내보내기
+## 인터랙티브 커뮤니케이션 가져오기 및 내보내기
 
 한 환경에서 대화형 통신(IC)을 만들고 아래 단계를 수행하여 IC를 내보내고 가져와서 다른 환경에서 재사용합니다.
 
 +++&#x200B;1. 대화형 통신을 내보내는 방법
 
-1.1. [만든 대화형 통신](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)&#x200B;(IC)을 선택합니다.
+1.1. [만든 대화형 통신](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)&#x200B;(IC)을 선택합니다.
 1.2. **다운로드** 옵션을 클릭하여 ZIP 파일로 내보냅니다.
 1.3. 다운로드한 ZIP 파일에는 선택한 **템플릿**, **조각** 및 **데이터 모델**&#x200B;과 함께 IC가 포함되어 있습니다.
 

@@ -1,21 +1,18 @@
 ---
-title: 대화형 통신 편집기에 사용자 정의 글꼴 추가
+title: 인터랙티브 커뮤니케이션 편집기에 사용자 정의 글꼴 추가
 description: 대화형 통신 편집기에서 사용자 정의 글꼴을 추가하여 사용자 정의 또는 조직에서 승인한 글꼴을 사용할 수 있도록 합니다.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 24%
+ht-degree: 31%
 
 ---
 
 
-# 대화형 통신 편집기에 사용자 정의 글꼴 추가
+# 인터랙티브 커뮤니케이션 편집기에 사용자 정의 글꼴 추가
 
 >[!NOTE]
 >
@@ -39,5 +36,5 @@ ht-degree: 24%
 
 >[!NOTE]
 >
-> 자세한 구성 단계는 [사용자 지정 글꼴 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) 안내서를 따라 수행할 수 있습니다
-> &#x200B;>단계를 완료하고 파이프라인을 실행하면 대화형 통신 편집기에서 사용자 지정 글꼴을 직접 사용할 수 있습니다.
+> 자세한 구성 단계는 [사용자 지정 글꼴 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) 안내서를 따라 수행할 수 있습니다
+> >단계를 완료하고 파이프라인을 실행하면 대화형 통신 편집기에서 사용자 지정 글꼴을 직접 사용할 수 있습니다.
