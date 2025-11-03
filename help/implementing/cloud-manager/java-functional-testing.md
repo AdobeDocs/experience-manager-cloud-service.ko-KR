@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 78%
+source-wordcount: '832'
+ht-degree: 77%
 
 ---
 
@@ -110,10 +110,6 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 | 시간 초과 | 30m | 테스트가 중지되는 시간 제한입니다. |
 | 권장 기간 | 15m | Adobe에서는 테스트를 작성할 때 이 시간보다 오래 걸리지 않도록 권장합니다. |
 
->[!NOTE]
->
-> 더 많은 리소스가 필요한 경우, 고객 지원 사례를 만들고 사용 사례를 설명하십시오. Adobe 팀에서 귀하의 요청을 검토하고 적절한 지원을 제공할 것입니다.
-
 #### 종속성
 
 * aem-cloud-testing-clients:
@@ -131,7 +127,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 >[!NOTE]
 >
 >이 변경 사항은 2024년 4월 6일 이전에 수행되어야 합니다.
->&#x200B;>종속성 라이브러리를 업데이트하지 않으면 &quot;사용자 정의 기능 테스트&quot; 단계에서 파이프라인 오류가 발생할 수 있습니다.
+>종속성 라이브러리를 업데이트하지 않으면 &quot;사용자 정의 기능 테스트&quot; 단계에서 파이프라인 오류가 발생할 수 있습니다.
 
 ### 로컬 테스트 실행 {#local-test-execution}
 
