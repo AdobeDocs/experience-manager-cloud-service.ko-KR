@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
 
 ---
+
 
 # Java™ 기능 테스트
 
@@ -102,7 +103,6 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 
 1. 기능 테스트 범위가 지정된 컨테이너화된 인프라는 다음 경계로 제한됩니다.
 
-
 | 유형 | 값 | 설명 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 테스트 실행당 예약된 CPU 시간 |
@@ -153,8 +153,6 @@ Cloud Manager 파이프라인에서 기능 테스트를 활성화하기 전에 [
 | `sling.it.instance.adminUser.2` | 게시 관리자 로 설정합니다. | `admin` |
 | `sling.it.instance.adminPassword.2` | 관리자 암호를 게시하도록 설정합니다. |                         |
 
-
-
 #### Maven을 사용하여 모든 테스트 실행 {#using-maven}
 
 1. 셸을 열고 저장소의 `it.tests` 폴더로 이동합니다.
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
