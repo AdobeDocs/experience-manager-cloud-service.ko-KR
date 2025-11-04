@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 69%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.10.0) 일자는 2025년 10월 30일 금요일입니다. 다음 기능 릴리스(2025.10.0)는 2025년 11월 20일 금요일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.10.0) 일자는 2025년 10월 30일 금요일입니다. 다음 기능 릴리스(2025.11.0)는 2025년 11월 20일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 69%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -147,7 +147,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한 공개 기능으로 사용 가능합니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
+>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 
 ### 더 많은 대상으로 AEM 로그 전달 {#log-forwarding}
 
