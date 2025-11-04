@@ -3,10 +3,10 @@ title: Content Hub의 새로운 기능
 description: 최근 출시된 Content Hub 기능에 대해 자세히 알아봅니다.
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 85%
+source-wordcount: '883'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,15 @@ Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공�
 
 ## 릴리스 일자 {#release-date}
 
-Content Hub 기능 릴리스(2025.9.0)의 릴리스 날짜는 2025년 9월 25일(AEM as a Cloud Service 릴리스와 동일)입니다. 다음 기능 릴리스(2025.10.0)는 2025년 10월 30일에 예정되어 있습니다.
+Content Hub 기능 릴리스(2025.10.0)의 릴리스 날짜는 2025년 10월 30일(AEM as a Cloud Service 릴리스와 동일)입니다. 다음 기능 릴리스(2025.11.0)는 2025년 11월 20일에 예정되어 있습니다.
+
+## 10월 릴리스 기능 {#october-release-features}
+
+**Content Hub 다운로드 환경의 개선 사항**
+
+이제 Content Hub은 플랫 계층에서 여러 에셋 렌디션의 다운로드를 지원하므로 여러 폴더를 탐색할 필요가 없습니다. 이제 다운로드 동작에 대한 사용자 환경 설정이 세션 간 일관된 환경을 위해 유지됩니다. 새로운 에셋 다운로드 경험은 다운로드한 파일을 쉽게 찾고 구성할 수 있도록 하여 에셋 관리를 간소화하고 효율성을 향상시킵니다.
+
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## 9월 릴리스 기능 {#september-release-features}
 
@@ -35,6 +43,8 @@ Content Hub 기능 릴리스(2025.9.0)의 릴리스 날짜는 2025년 9월 25일
 **빠른 액세스를 위해 컬렉션 고정**
 
 이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 **[!UICONTROL 고정된]** 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달할 수 있습니다.
+
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
