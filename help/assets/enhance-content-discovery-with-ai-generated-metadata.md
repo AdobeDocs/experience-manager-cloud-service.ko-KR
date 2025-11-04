@@ -3,15 +3,20 @@ title: 관리 보기에서 AI 생성 메타데이터를 통해 콘텐츠 검색 
 description: 관리 보기에서 AI 생성 메타데이터를 사용하여 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '646'
+ht-degree: 9%
 
 ---
 
 
 # AI 생성 메타데이터를 통해 콘텐츠 검색 향상 {#ai-smart-tags}
+
+| UI | 문서 링크 |
+| -------- | ---------------------------- |
+| 자산 보기 | [여기 클릭](/help/assets/ai-generated-metadata-assets-view.md) |
+| 관리자 보기 | 이 문서 |
 
 AI는 수동 입력에 의존하는 대신 디지털 에셋에 설명 태그를 자동으로 할당합니다. 이러한 AI 생성 태그는 메타데이터의 품질을 높여 자산을 검색, 분류 및 추천하기 쉽게 만들어 줍니다. 이러한 접근 방식은 수동 태깅을 제거함으로써 효율성을 향상시킬 뿐만 아니라 대량의 디지털 컨텐츠 전반에 걸쳐 일관성과 확장성을 보장합니다. 예를 들어, 자산이 이미지인 경우 AI는 객체, 장면, 감정 또는 브랜드 로고까지 식별하고 &quot;일몰&quot;, &quot;해변&quot;, &quot;휴가&quot; 또는 &quot;스마일&quot;과 같은 관련 태그를 생성할 수 있습니다. AI가 생성한 콘텐츠는 의미론적 검색과 어휘 검색 기술을 모두 활용해 자산 검색을 강화할 수 있다. 더 보기 [Assets 검색](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
