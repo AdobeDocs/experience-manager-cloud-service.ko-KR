@@ -44,7 +44,7 @@ Content Hub 기능 릴리스(2025.10.0)의 릴리스 날짜는 2025년 10월 30�
 
 이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 **[!UICONTROL 고정된]** 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달할 수 있습니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
