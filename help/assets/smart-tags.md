@@ -19,7 +19,7 @@ ht-degree: 1%
 
 예를 들어, 사전에 알파벳순으로 배열된 단어들은 무작위로 흩어져 있는 단어들보다 더 쉽게 발견된다. 태깅도 유사한 용도로 사용됩니다. 비즈니스 분류법에 따라 에셋을 구성하여 가장 관련성이 높은 에셋이 검색 결과에 나타나도록 합니다. 예를 들어 자동차 제조업체는 모델 이름으로 자동차 이미지에 태그를 지정할 수 있으므로 판촉 캠페인을 디자인할 때 관련 이미지만 표시됩니다. &quot;러너&quot; 또는 &quot;러닝 슈즈&quot;에 태그를 지정하든, 사용자는 오타, 철자 변형 또는 대체 검색어에 대해 걱정할 필요가 없습니다. 스마트 태그가 이를 모두 인식합니다.
 
-배경에서 이 기능은 [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html)의 인위적인 지능형 프레임워크를 사용하여 비즈니스 분류법에 정렬된 텍스트와 함께 업로드된 자산에 기본적으로 스마트 태그를 자동으로 적용합니다.
+배경에서 이 기능은 [Adobe Sensei](https://business.adobe.com/kr/products/sensei/adobe-sensei.html)의 인위적인 지능형 프레임워크를 사용하여 비즈니스 분류법에 정렬된 텍스트와 함께 업로드된 자산에 기본적으로 스마트 태그를 자동으로 적용합니다.
 
 ## 사전 요구 사항 및 구성 {#smart-tags-prereqs-config}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
