@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 31%
+source-wordcount: '2042'
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 31%
 
 >[!CAUTION]
 >
->Adobe은 성능 저하와 같은 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 재정의할 권한을 보유합니다.
+>Adobe은 성능 저하 등의 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 오버라이드할 수 있는 권한을 보유합니다.
 
 다음 표는 사용 가능한 유지 관리 작업을 보여 줍니다.
 
@@ -47,14 +47,14 @@ ht-degree: 31%
   <tr>
     <td>버전 삭제</td>
     <td>고객</td>
-    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>고객</td>
-    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
    </td>
   </tr>
@@ -68,24 +68,24 @@ ht-degree: 31%
     <td>애드혹 작업 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
-    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>sling:resourceType</code> 특성이 <code>granite/operations/components/maintenance/task</code>(으)로 설정되고 <code>granite.maintenance.name</code> 특성이 <code>TaskPurge</code>(으)로 설정된 <code>granite_TaskPurgeTask</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
+    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>granite_TaskPurgeTask</code> 특성이 <code>sling:resourceType</code>(으)로 설정되고 <code>granite/operations/components/maintenance/task</code> 특성이 <code>granite.maintenance.name</code>(으)로 설정된 <code>TaskPurge</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
   </td>
   </tr>
     <tr>
     <td>워크플로 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다. <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=ko#regular-purging-of-workflow-instances">AEM 6.5 유지 관리 작업 문서</a>를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성하십시오. <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">워크플로 인스턴스 정기적 제거</a>를 참조하십시오.</p>
   </td>
   </tr>
   <tr>
     <td>프로젝트 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <b>Adobe 프로젝트 제거 구성</b>에 대한 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi 속성</a> 목록을 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe 프로젝트 제거 구성</a>에 대한 <b>OSGi 속성</b> 목록을 참조하십시오.</p>
   </td>
   </tr>
   </tbody>
@@ -222,7 +222,7 @@ ht-degree: 31%
 
 **1** 이름이 `mt.yaml`이거나 유사한 파일을 만듭니다.
 
-**2** [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 `config` 또는 유사한 최상위 폴더 아래에 배치합니다.
+**2** `config`구성 파이프라인 사용[에 설명된 대로 파일을 ](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 **3** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
 
@@ -303,7 +303,7 @@ data:
 
 | 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| 경로 | [&quot;/content&quot;] | [&quot;/content&quot;] | 예 | 문자열 배열 | 새 버전을 만들 때 버전을 제거할 경로를 지정합니다.  고객은 이 속성을 선언해야 하지만 허용되는 값은 &quot;/content&quot;뿐입니다. |
+| 경로 | [&quot;/content&quot;] | [&quot;/content&quot;] | 예 | 문자열의 배열 | 새 버전을 만들 때 버전을 제거할 경로를 지정합니다.  고객은 이 속성을 선언해야 하지만 허용되는 값은 &quot;/content&quot;뿐입니다. |
 | maximumAgeDays | 30 | 2557 (7년 + 2윤일) | 예 | 정수 | 구성된 값보다 오래된 버전은 제거됩니다. 값이 0이면 버전 연령을 기준으로 퍼지가 수행되지 않습니다. |
 | maximumVersion | 5 | 0(제한 없음) | 예 | 정수 | n번째 최신 버전보다 오래된 버전은 모두 제거됩니다. 값이 0이면 버전 수에 따라 제거가 수행되지 않습니다. |
 | 최소 버전 | 1 | 1 | 예 | 정수 | 나이에 상관없이 유지되는 최소 버전 수. 최소 1개의 버전은 항상 유지되며 값은 1 이상이어야 합니다. |
