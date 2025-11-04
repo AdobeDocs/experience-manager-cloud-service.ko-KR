@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 21%
+source-wordcount: '1818'
+ht-degree: 19%
 
 ---
+
 
 # 범용 편집기 액세스 및 탐색 {#navigating}
 
@@ -71,49 +72,17 @@ UI는 이러한 기본 영역으로 나뉩니다.
 >
 >유니버설 편집기는 편집기의 기능을 수정하고 추가할 수 있는 [사용자 지정 옵션](/help/implementing/universal-editor/customizing.md) 및 [확장 지점](/help/implementing/universal-editor/extending.md)을 제공합니다. 따라서 여기에 설명된 표준 옵션과 다른 옵션이 표시될 수 있습니다.
 
-### Experience Cloud 헤더 {#experience-cloud-header}
+### Experience Platform 상단 탐색 막대 {#experience-cloud-header}
 
-Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Cloud 내의 위치를 알려 주고 다른 Experience Cloud 앱으로 이동할 수 있도록 도와주는 앵커입니다.
+Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니다. Experience Cloud 내의 위치를 알려 주고 다른 Experience Cloud 앱으로 이동할 수 있도록 도와주는 앵커입니다.
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-헤더 왼쪽에 있는 Adobe Experience Cloud 링크를 선택하여 Experience Manager 솔루션의 루트로 이동하여 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 및 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)와 같은 도구에 액세스합니다.
-
-![전역 탐색 버튼](assets/global-navigation.png)
-
-#### 조직 {#organization}
-
-현재 로그인되어 있는 조직이 표시됩니다. Adobe ID이 여러 조직과 연결되어 있는 경우 다른 조직으로 전환하려면 선택합니다.
-
-![조직 표시기](assets/organization.png)
-
-#### 도움말 센터 {#help}
-
-도움말 센터 아이콘을 통해 학습 및 지원 리소스에 빠르게 액세스할 수 있습니다.
-
-![도움말](assets/help.png)
-
-#### 알림 {#notifications}
-
-이 아이콘에는 현재 할당된 불완전 [알림](/help/implementing/cloud-manager/notifications.md) 수가 배지로 지정됩니다.
-
-![알림](assets/notifications.png)
-
-#### 앱 {#solutions}
-
-앱 전환기를 탭하거나 클릭하여 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
-
-![앱 전환기](assets/solutions.png)
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
-계정 설정에 액세스할 사용자를 나타내는 아이콘을 선택합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
-
-![사용자 속성](assets/user-properties.png)
-
-계정 아이콘을 탭하거나 클릭하면 사용자 설정이 있는 메뉴가 열립니다. 이러한 설정은 일반적으로 Cloud Manager에 적용되며 해당 설명서에서 해당 기능에 대해 자세히 [설명합니다.](/help/implementing/cloud-manager/navigation.md)
+계정 아이콘을 탭하거나 클릭하면 사용자 설정이 있는 메뉴가 열립니다.
 
 ![환경 전환기](assets/environment-switcher.png)
 

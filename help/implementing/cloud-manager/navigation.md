@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 39%
+source-wordcount: '1595'
+ht-degree: 37%
 
 ---
 
@@ -58,20 +58,16 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 두 개의 도구 모음이 서로 겹쳐져 있습니다.
 
-#### Cloud Manager 헤더 {#cloud-manager-header}
+#### Experience Platform 상단 탐색 막대 {#cloud-manager-header}
 
-첫 번째는 Cloud Manager를 탐색할 때 유지되는 Cloud Manager 헤더입니다. 이는 Cloud Manager 프로그램 전체에 적용되는 설정 및 정보에 대한 액세스를 제공하는 앵커입니다.
+첫 번째는 Experience Platform 상단 탐색 모음으로 Cloud Manager을 탐색할 때 지속됩니다. 이는 Cloud Manager 프로그램 전체에 적용되는 설정 및 정보에 대한 액세스를 제공하는 앵커입니다.
 
-![Experience Cloud 헤더](assets/experience-cloud-header.png)
+![Experience Platform 위쪽 탐색 모음](assets/experience-cloud-header.png)
 
-1. 개별 프로그램의 특정 부분으로 이동할 수 있는 다양한 탭에 액세스하려면 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)&#x200B;(사이드 메뉴 표시 또는 숨기기)를 클릭하십시오. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
-1. Adobe Cloud Manager 버튼을 클릭하면 Cloud Manager 내 위치와 관계없이 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 **피드백**&#x200B;을 클릭합니다.
-1. 조직 선택기를 클릭하면 현재 로그인한 조직이 표시됩니다(이 예에서는 Foundation Internal). Adobe ID가 여러 조직과 연결된 경우 클릭하여 다른 조직으로 전환합니다.
-1. ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)&#x200B;(솔루션 전환기)을 클릭하여 다른 Experience Cloud 솔루션으로 빠르게 이동합니다.
-1. 학습 및 지원 리소스에 빠르게 액세스하려면 ![도움말 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)을 클릭하세요.
-1. 특히 알림과 알림을 보려면 ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)&#x200B;([알림](/help/implementing/cloud-manager/notifications.md))을 클릭하세요.
-1. 사용자 설정에 대한 사용자 액세스를 나타내는 아이콘을 클릭합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
+* ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)&#x200B;(사이드 메뉴 표시 또는 숨기기)을 사용하면 개별 프로그램의 특정 부분으로 이동할 수 있는 다양한 탭에 액세스할 수 있습니다. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
+* ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)&#x200B;([알림](/help/implementing/cloud-manager/notifications.md))을 사용하면 알림 및 공지 등에 액세스할 수 있습니다.
+
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 프로그램 도구 모음 {#program-toolbar}
 
@@ -126,7 +122,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 * 프로그램에 할당된 이름. 위의 이미지는 프로그램 이름으로 &quot;SecurBank 샘플&quot;을 보여 줍니다.
 * 서비스 유형:
    * **Experience Manager Cloud** — AEM as a Cloud Service 프로그램용
-   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [프로그램 형식](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * 샌드박스
    * 프로덕션
@@ -153,7 +149,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 * 프로그램의 특정 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [환경](/help/implementing/cloud-manager/manage-environments.md)(으)로 이동
 * ![프로그램 개요 아이콘](/help/implementing/cloud-manager/assets/program-overview.svg) [프로그램 개요](#program-overview) 열기
 * ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
