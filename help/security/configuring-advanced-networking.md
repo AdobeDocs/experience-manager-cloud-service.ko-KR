@@ -59,7 +59,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 >[!CAUTION]
 >
->이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)하십시오.
+>이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#home)하십시오.
 >
 >이전 이그레스 기술을 사용하여 고급 네트워킹을 구성하려고 하면 사이트 연결에 영향을 미칠 수 있습니다.
 
