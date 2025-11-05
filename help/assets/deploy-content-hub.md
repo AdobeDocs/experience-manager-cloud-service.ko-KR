@@ -3,9 +3,9 @@ title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
+source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1874'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ Experience Manager Assets용 Content Hub을 활성화하려면 다음을 수행�
 
 1. [!UICONTROL 프로그램 편집] 대화 상자에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭을 선택합니다.
 
-1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL Content Hub]**을(를) 선택합니다.
    ![Cloud Manager에서 Content Hub 선택](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
@@ -86,10 +86,38 @@ Experience Manager Assets용 Content Hub을 활성화하려면 다음을 수행�
 
 >[!NOTE]
 >
->최대 250명의 Content Hub 사용자와 Content Hub에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
+>Content Hub Ultimate의 경우 최대 250명의 Content Hub 제한 사용자 및 Assets Assets의 경우 50명의 Content Hub 사용자와 함께 Prime에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
 
 Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그램 추가]**&#x200B;를 클릭한 다음 프로그램 세부 정보(프로그램 이름, 프로덕션 설정)를 입력하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다. **[!UICONTROL 솔루션 및 추가 기능]** 탭에서 **[!UICONTROL Assets]** 및 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택할 수 있습니다.
+
+### 낮은 환경에 Content Hub 활성화 {#enable-content-hub-lower-environments}
+
+AEM Assets 라이센스를 기반으로 다음과 같은 Content Hub 크레딧을 사용할 수 있습니다.
+
+* Assets Ultimate: 3 Content Hub 크레딧
+
+* Assets Prime: 1 Content Hub 크레딧
+
+* 기존 Assets as a Cloud Service 고객: 1 Content Hub 크레딧
+
+프로덕션, 개발 또는 스테이지와 같은 각 환경에서 Content Hub을 활성화하기 위해 하나의 크레딧을 사용합니다.
+
+하위 환경에 대해 Content Hub을 활성화하려면 다음을 수행하십시오.
+
+1. [Cloud Manager를 사용하여 Experience Manager Assets에 대해 Content Hub를 활성화합니다.](#enable-content-hub)
+
+1. 프로그램 카드를 클릭하여 사용 가능한 환경 목록(프로덕션, 개발 또는 단계)을 확인합니다.
+
+1. 활성화해야 하는 환경을 클릭합니다. **[!UICONTROL Content Hub]** 섹션에 `Content Hub is available for activation`이(가) 표시됩니다.
+
+   ![하위 환경에 Content Hub 사용](assets/enable-content-hub-lower-environments.png)
+
+1. **[!UICONTROL 활성화하려면 클릭]**&#x200B;합니다. 확인하려면 **[!UICONTROL 활성화]**&#x200B;를 다시 클릭하세요.
+
+   Content Hub이 선택한 환경에 대해 활성화됩니다.
+
+
 
 ### Admin Console의 Content Hub 인스턴스 및 제품 프로필{#content-hub-instance-product-profile}
 
@@ -129,7 +157,7 @@ Content Hub 관리자를 온보딩하려면:
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![관리자 제품 프로필](assets/aem-cs-admin-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -160,10 +188,10 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* `experience.adobe com`에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**&#x200B;을(를) 클릭합니다.
+* `experience.adobe com`에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
   ![Content Hub 액세스](assets/access-content-hub.png)
 
-* `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**&#x200B;을(를) 클릭합니다.
+* `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
   ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
 
 ### 사용자에게 이메일 알림 비활성화 {#disable-email-notifications}
@@ -187,7 +215,7 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -204,7 +232,7 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -221,7 +249,7 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console에는 AEM as a Cloud Service에 대한 두 가지 제품 프로필인 관리자와 사용자가 표시됩니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -229,3 +257,17 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
    >[!NOTE]
    >
    > Experience Manager Assets 사용자를 위해 [Content Hub 제품 프로필](#onboard-content-hub-users)에 추가할 필요는 없습니다.
+
+## 기존 Assets as a Cloud Service 고객을 위해 Content Hub 활성화 {#enable-content-hub-exisitng-cs-customers}
+
+기존 Assets as a Cloud Service 고객은 라이선스에 포함된 250명의 Content Hub 제한 사용자를 보유하고 있습니다. Content Hub을 활성화하려면 다음 단계를 수행하십시오.
+
+1. [Cloud Manager를 사용하여 Experience Manager Assets에 대해 Content Hub를 활성화합니다.](#enable-content-hub)
+
+1. [Content Hub 제한 사용자 온보딩](#onboard-content-hub-users). 이러한 사용자는 포털에서 사용할 수 있는 에셋에 액세스할 수 있지만 새 에셋을 추가하거나 기존 에셋을 수정할 수는 없습니다.
+
+1. 사용자가 Content Hub 포털에 자산을 추가해야 하는 경우 해당 자산을 `AEM Users` 제품 프로필에 추가하십시오. 자세한 내용은 [에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자 온보딩](#onboard-content-hub-users-add-assets)을 참조하십시오.
+
+1. 사용자가 Content Hub 구성 사용자 인터페이스에 액세스해야 하는 경우 해당 사용자를 `AEM Administrators` 제품 프로필에 추가하십시오. 자세한 내용은 [Content Hub 관리자 온보딩](#onboard-content-hub-administrator)을 참조하십시오.
+
+관련 제품 프로필에 사용자를 추가해도 적절한 권한을 받지 못하는 경우 Adobe 담당자에게 문의하십시오.
