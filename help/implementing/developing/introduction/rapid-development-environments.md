@@ -1164,7 +1164,7 @@ AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 �
 
 #### 기존 RDE에 대한 최신 AEM 버전을 얻는 방법 {#get-latest-aem-version}
 
-생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 [ 명령을 사용하여 수행할 수 있는 ](#reset-rde)RDE 재설정`aio aem:rde:reset`은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 [&#x200B; 명령을 사용하여 수행할 수 있는 &#x200B;](#reset-rde)RDE 재설정`aio aem:rde:reset`은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 ### aio RDE 플러그인 문제 해결 {#aio-rde-plugin-troubleshooting}
 
