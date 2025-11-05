@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
 workflow-type: tm+mt
-source-wordcount: '5391'
+source-wordcount: '5446'
 ht-degree: 3%
 
 ---
@@ -19,13 +19,18 @@ RDE를 사용하면 개발자가 변경 사항을 신속하게 배포하고 검�
 
 RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통해 일반 클라우드 개발 환경에 배포할 수 있습니다.
 
+개발 환경 및 신속한 개발 환경은 개발, 오류 분석 및 기능 테스트로 제한되어야 하며 높은 워크로드 또는 대량의 콘텐츠를 처리하도록 설계되지 않았습니다.
+
+>[!NOTE]
+> 신속한 개발 환경은 개발, 오류 분석 및 기능 테스트로 제한되어야 하며 많은 워크로드 또는 대량의 콘텐츠를 처리하도록 설계되지 않았습니다.
+
 >[!NOTE]
 > Adobe의 [디스코드 채널](https://discord.com/channels/1131492224371277874/1245304281184079872)에서 RDE 개발자에게 문의하십시오. RDE 주제에 대해 자유롭게 질문하거나 피드백을 제공해 주십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
+RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -57,7 +62,7 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
    * 사용 권한이 없거나 사용 허가된 리소스에 따라 **환경 추가** 옵션이 비활성화될 수 있습니다.
 
-1. **환경 추가** 대화 상자에서 다음을 수행합니다.
+1. **환경 추가** 대화 상자에서 다음 작업을 수행합니다.
 
    * **환경 유형 선택** 제목에서 **신속한 개발**&#x200B;을 선택합니다.
       * 사용 가능한/사용된 환경 수는 환경 유형 뒤의 괄호 안에 표시됩니다.
@@ -114,7 +119,7 @@ Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음
    >[!NOTE]
    > `--no-open` 옵션이 있는 login 명령은 기본 브라우저를 여는 대신 터미널에서 URL을 출력합니다. 브라우저의 **시크릿** 창을 사용하여 복사하고 열 수 있습니다. 이 기능을 사용하면 기본 브라우저 창의 현재 세션에 영향을 주지 않고 작업에 필요한 특정 계정 및 조직에 로그인할 수 있습니다.
 
-   첫 번째 명령은 로컬 `.aio` 구성 파일에 `mycontext`이라는 새 로그인 컨텍스트 구성을 만듭니다(필요한 경우 파일이 만들어집니다). 두 번째 명령은 컨텍스트 `mycontext`을(를) &quot;현재&quot; 컨텍스트(기본값)로 설정합니다.
+   첫 번째 명령은 로컬 `mycontext` 구성 파일에 `.aio`이라는 새 로그인 컨텍스트 구성을 만듭니다(필요한 경우 파일이 만들어집니다). 두 번째 명령은 컨텍스트 `mycontext`을(를) &quot;현재&quot; 컨텍스트(기본값)로 설정합니다.
 
    이 구성이 적용되면 login 명령은 컨텍스트 `mycontext`에 로그인 토큰을 자동으로 저장하므로 로컬로 유지합니다.
 
@@ -179,7 +184,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * [조직 ID 보기](https://experienceleague.adobe.com/ko/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
+   * [조직 ID 보기](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -195,7 +200,7 @@ retrieving programs of your organization ...
 
    이 단계를 수행하려면 Cloud Manager **Developer - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당 - 개발자 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)을 참조하십시오.
 
-자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
+자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
 </details>
 
 ## 새 기능을 개발하는 동안 RDE 사용 {#using-rde-while-developing-a-new-feature}
@@ -357,7 +362,7 @@ AEM 프로젝트의 `dispatcher` 모듈에서 아래 maven 명령을 실행하�
 
 `mvn clean package`
 
-또는 `dispatcher` 모듈의 `src` 디렉터리에서 아래 zip 명령을 사용합니다.
+또는 `src` 모듈의 `dispatcher` 디렉터리에서 아래 zip 명령을 사용합니다.
 
 `zip -y -r dispatcher.zip .`
 
@@ -429,7 +434,7 @@ RDE는 [사이트 테마](/help/sites-cloud/administering/site-creation/site-the
 
 `npm run build`
 
-프런트 엔드 패키지 폴더에 `package.json` 파일과 `dist` 폴더가 포함되도록 `dist/` 폴더를 생성합니다.
+프런트 엔드 패키지 폴더에 `dist/` 파일과 `package.json` 폴더가 포함되도록 `dist` 폴더를 생성합니다.
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -512,7 +517,7 @@ Environment: Ready
 
 CLI 도구를 사용하여 이전에 RDE에 배포한 구성 및 번들을 삭제할 수 있습니다. 삭제할 수 있는 항목 목록에 `status` 명령을 사용하십시오. 이 목록에는 번들의 경우 `bsn`, delete 명령에서 참조할 구성의 경우 `pid`이(가) 포함됩니다.
 
-예를 들어 `com.adobe.granite.demo.MyServlet.cfg.json`이(가) 설치된 경우 `bsn`은(는) **cfg.json** 접미사가 없는 `com.adobe.granite.demo.MyServlet`입니다.
+예를 들어 `com.adobe.granite.demo.MyServlet.cfg.json`이(가) 설치된 경우 `bsn`은(는) `com.adobe.granite.demo.MyServlet`cfg.json **접미사가 없는**&#x200B;입니다.
 
 컨텐츠 패키지 또는 컨텐츠 파일 삭제는 지원되지 않습니다. 이를 제거하려면 RDE를 재설정하여 기본 상태로 되돌립니다.
 
@@ -524,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
+자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
 
 
 ## 외부 Git 공급자의 RDE에 배포 {#deploy-to-rde}
@@ -1096,7 +1101,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
 >
 >RDE OSGI 구성은 번들의 `dev` 실행 모드에서 선언된 모든 OSGI 속성 값을 상속한다는 점에서 고유합니다.
 
-RDE는 콘텐츠를 `/apps`의 `install.rde` 폴더(또는 `install.author.rde` 또는 `install.publish.rde`)에 설치할 수 있다는 점에서 다른 환경과 구별됩니다. 이 기능을 사용하면 콘텐츠를 Git에 커밋하고 명령줄 도구를 사용하여 RDE에 전달할 수 있습니다.
+RDE는 콘텐츠를 `install.rde`의 `install.author.rde` 폴더(또는 `install.publish.rde` 또는 `/apps`)에 설치할 수 있다는 점에서 다른 환경과 구별됩니다. 이 기능을 사용하면 콘텐츠를 Git에 커밋하고 명령줄 도구를 사용하여 RDE에 전달할 수 있습니다.
 
 ## 콘텐츠로 채우기 {#populating-content}
 
@@ -1104,7 +1109,7 @@ RDE가 재설정되면 모든 컨텐츠가 제거되므로 원할 경우 컨텐�
 
 1. 명령줄 도구를 사용하여 콘텐츠 패키지를 RDE에 명시적으로 동기화
 
-1. `/apps` 아래의 `install.rde` 폴더 내의 git에 샘플 콘텐츠를 배치하고 커밋한 다음 명령줄 도구를 사용하여 중요한 콘텐츠 패키지를 RDE에 동기화합니다.
+1. `install.rde` 아래의 `/apps` 폴더 내의 git에 샘플 콘텐츠를 배치하고 커밋한 다음 명령줄 도구를 사용하여 중요한 콘텐츠 패키지를 RDE에 동기화합니다.
 
 1. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션, 스테이징, 개발 환경 또는 다른 RDE에서 정의된 콘텐츠 세트를 복사합니다.
 
@@ -1151,7 +1156,7 @@ Forms 개발자는 AEM Forms Cloud Service 빠른 개발 환경을 사용하여 
 
 ## RDE 자습서
 
-AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
+AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
 
 ## 문제 해결 {#troubleshooting}
 
@@ -1159,7 +1164,7 @@ AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 �
 
 #### 기존 RDE에 대한 최신 AEM 버전을 얻는 방법 {#get-latest-aem-version}
 
-생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 `aio aem:rde:reset` 명령을 사용하여 수행할 수 있는 [RDE 재설정](#reset-rde)은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 [ 명령을 사용하여 수행할 수 있는 ](#reset-rde)RDE 재설정`aio aem:rde:reset`은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 ### aio RDE 플러그인 문제 해결 {#aio-rde-plugin-troubleshooting}
 
@@ -1197,4 +1202,4 @@ RDE 플러그인을 사용하려면 Cloud Manager **개발자 - Cloud Service** 
 
 ##### Cloud Manager 플러그인에도 다른 컨텍스트 이름 사용
 
-Cloud Manager 플러그인은 사용할 컨텍스트를 정의하는 매개 변수를 제공합니다. 아직 IMS 기본 컨텍스트 구성을 지원하지 않습니다. 이렇게 하려면 [로컬 컨텍스트를 설정하는 예제](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)를 사용하여 RDE 플러그인을 구성하고 모든 호출에서 ```--imsContextName=myContext```과(와) 같은 `myContext`을(를) 사용하도록 Cloud Manager 플러그인에 지시합니다.
+Cloud Manager 플러그인은 사용할 컨텍스트를 정의하는 매개 변수를 제공합니다. 아직 IMS 기본 컨텍스트 구성을 지원하지 않습니다. 이렇게 하려면 [로컬 컨텍스트를 설정하는 예제](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)를 사용하여 RDE 플러그인을 구성하고 모든 호출에서 `myContext`과(와) 같은 ```--imsContextName=myContext```을(를) 사용하도록 Cloud Manager 플러그인에 지시합니다.
