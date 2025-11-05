@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+source-git-commit: 20bb86d83a1afeda760e7c8d88e4257b8cb65860
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 3%
+source-wordcount: '1918'
+ht-degree: 2%
 
 ---
 
@@ -65,7 +65,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ## 서버측 컬렉션 규칙 {#serverside-collection}
 
-AEM as a Cloud Service은 콘텐츠 요청을 카운트하기 위해 서버측 규칙을 적용합니다. 이러한 규칙에는 잘 알려진 보트(예: 검색 엔진 크롤러)와 사이트를 정기적으로 ping하는 모니터링 서비스와 같은 비사용자 트래픽을 제외하는 논리가 포함됩니다.
+AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수집 규칙을 적용합니다. 이러한 규칙은 잘 알려진 보트 (예: 검색 엔진 크롤러)와 사이트를 정기적으로 ping하는 모니터링 서비스 세트를 제외합니다. 이 제외 목록에 없는 기타 가상 또는 모니터링 유형 트래픽은 청구 가능한 콘텐츠 요청으로 계산됩니다.
 
 다음 표는 포함된 콘텐츠 요청과 제외된 콘텐츠 요청의 유형을 나열하며 각각에 대한 간단한 설명을 제공합니다.
 
@@ -101,4 +101,33 @@ AEM as a Cloud Service은 콘텐츠 요청을 카운트하기 위해 서버측 �
 | Commerce integration framework 호출 제외 | 제외됨 | AEM에 수행된 요청이 Commerce integration framework(URL은 `/api/graphql`(으)로 시작)로 전달되므로 두 번 계산되지 않습니다. Cloud Service에 대해서는 청구할 수 없습니다. |
 | `manifest.json` 제외 | 제외됨 | 매니페스트가 API 호출이 아닙니다. 데스크탑 또는 휴대 전화에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 `/etc.clientlibs/*/manifest.json`에 대한 JSON 요청을 계산해서는 안 됩니다. |
 | `favicon.ico` 제외 | 제외됨 | 반환된 콘텐츠가 HTML 또는 JSON이 아니어야 하지만 SAML 인증 흐름과 같은 특정 시나리오에서는 favicons를 HTML으로 반환하는 것으로 관찰되었습니다. 따라서 favicons는 카운트에서 명시적으로 제외됩니다. |
-| XF(경험 조각) - 동일한 도메인 재사용 | 제외됨 | 동일한 도메인에 호스팅된 페이지의 XF 경로(예: `/content/experience-fragments/...`)에 대한 요청(요청 호스트와 일치하는 Referrer 헤더로 식별됨).<br><br> 예: 동일한 도메인에서 배너 또는 카드에 대한 XF를 가져오는 `aem.customer.com`의 홈 페이지.<br><br>· URL이 /content/experience-fragments/...<br>· 레퍼러 도메인이 `request_x_forwarded_host`<br><br>**와(과) 일치합니다. 참고:** 경험 조각 경로를 사용자 지정하는 경우(예: `/XFrags/...` 또는 `/content/experience-fragments/` 외부의 경로를 사용하는 경우) 요청이 제외되지 않고 카운트될 수 있습니다. 이 결과는 동일한 도메인이라고 해도 마찬가지입니다. Adobe에서는 제외 로직이 올바르게 적용되도록 Adobe의 표준 XF 경로 구조를 사용하는 것이 좋습니다. |
+| XF(경험 조각) - 동일한 도메인 재사용 | 제외됨 | 동일한 도메인에 호스팅된 페이지의 XF 경로(예: `/content/experience-fragments/...`)에 대한 요청(요청 호스트와 일치하는 Referer 헤더로 식별됨).<br><br> 예: 동일한 도메인에서 배너 또는 카드에 대한 XF를 가져오는 `aem.customer.com`의 홈 페이지.<br><br>· URL이 /content/experience-fragments/...<br>· Referer 도메인이 `request_x_forwarded_host`<br><br>**와(과) 일치합니다. 참고:** 경험 조각 경로를 사용자 지정하는 경우(예: `/XFrags/...` 또는 `/content/experience-fragments/` 외부의 경로를 사용하는 경우) 요청은 제외되지 않으며 동일한 도메인인 경우에도 카운트될 수 있습니다. 제외 논리가 올바르게 적용되도록 Adobe의 표준 XF 경로 구조를 사용하는 것이 좋습니다. |
+
+## 콘텐츠 요청 관리 {#managing-content-requests}
+
+위의 섹션 [Cloud Service 콘텐츠 요청의 분산](#content-requests-variances)에서 언급했듯이 콘텐츠 요청은 여러 가지 이유로 인해 예상보다 높을 수 있습니다. 공통 스레드는 CDN에 도달하는 트래픽입니다.  라이선스 예산에 맞게 콘텐츠 요청을 모니터링하고 관리하는 것은 AEM 고객으로서 유용할 수 있습니다.  콘텐츠 요청 관리는 일반적으로 구현 기술과 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)의 조합입니다.
+
+### 콘텐츠 요청을 관리하는 구현 기술 {#implementation-techniques-to-manage-crs}
+
+* 페이지를 찾을 수 없음 응답이 HTTP 상태 404로 전달되는지 확인합니다.  상태 200으로 반환되면 콘텐츠 요청에 포함됩니다.
+* 상태 검사 또는 모니터링 도구를 /systems/probes/health URL로 라우팅하거나 컨텐츠 요청이 발생하지 않도록 GET 대신 HEAD 메서드를 사용하십시오.
+* 사이트와 통합한 모든 사용자 정의 검색 크롤러에 대한 AEM 라이선스 비용과 콘텐츠의 신선도에 대한 요구 사항의 균형을 맞추십시오.  지나치게 공격적인 크롤러는 많은 콘텐츠 요청을 소비할 수 있습니다.
+* 리디렉션을 클라이언트측(JavaScript 리디렉션을 사용하는 상태 200)이 아닌 서버측(상태 301 또는 302)으로 처리하여 두 개의 별도 콘텐츠 요청을 방지합니다.
+* 페이지를 렌더링하기 위해 로드될 수 있는 AEM의 JSON 응답인 API 호출을 결합하거나 줄입니다.
+
+### 콘텐츠 요청을 관리하는 트래픽 필터 규칙 {#traffic-filter-rules-to-manage-crs}
+
+* 일반적인 봇 패턴은 빈 사용자 에이전트를 사용하는 것입니다.  구현 및 트래픽 패턴을 검토하여 빈 사용자 에이전트가 유용한지 여부를 확인해야 합니다.  이 트래픽을 차단하려면 [구문](/help/security/traffic-filter-rules-including-waf.md#rules-syntax)을(를) 사용하는 것이 좋습니다.
+
+```
+trafficFilters:
+  rules:
+    - name: block-missing-user-agent
+      when:
+        anyOf:
+          - { reqHeader: user-agent, exists: false }
+          - { reqHeader: user-agent, equals: '' }
+      action: block
+```
+
+* 어떤 봇들은 어느 날 사이트를 매우 심하게 강타하고 그 다음 날 사라집니다.  이렇게 하면 특정 IP 주소 또는 사용자 에이전트를 차단하려는 시도가 좌절될 수 있습니다.  일반적인 접근 방식 중 하나는 [비율 제한 규칙](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules)을 도입하는 것입니다.  [예제](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples)를 검토하고 빠른 요청 속도를 위해 허용 한도와 일치하는 규칙을 만드십시오.  일반 속도 제한으로 허용할 수 있는 예외를 보려면 [조건 구조](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 구문을 검토하십시오.
