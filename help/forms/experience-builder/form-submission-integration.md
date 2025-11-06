@@ -121,6 +121,7 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
     - 부서가 &quot;Sales&quot;인 경우 sales-hr@company.com
     - 기본값을 hr@company.com
 으로 보냅니다.
+
 ### 3단계: API 통합 설정
 
 **REST API 구성:**
