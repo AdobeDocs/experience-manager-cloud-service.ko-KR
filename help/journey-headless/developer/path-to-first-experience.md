@@ -140,14 +140,14 @@ AEM Headless의 힘과 유연성을 완전히 이해하여 자체 프로젝트�
 
 다음 문서인 [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](model-your-content.md)을 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
-**직접 수행하며 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
+**직접 수행하며 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
 
 추가 리소스:
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [AEM Sites as a Cloud Service용 Headless 개발](/help/headless/introduction.md) - AEM Headless 개발자가 필요한 기능을 파악할 수 있는 간략한 소개
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/ko?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM 아키텍처에 대한 전체 개요
 * [Headless 설정](/help/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자가 AEM의 Headless 기능을 파악할 수 있는 간략한 소개.

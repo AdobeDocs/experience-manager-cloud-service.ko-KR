@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
 
 콘텐츠 조각을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -89,7 +89,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 
 >[!NOTE]
 >
->[핵심 구성 요소, 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)도 참조하십시오.
+>[핵심 구성 요소, 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)도 참조하십시오.
 
 적절한 구성 대화 상자에서 다음을 포함하여 사용 가능한 매개변수를 선택할 수 있습니다.
 

@@ -310,7 +310,7 @@ ht-degree: 100%
 
 1. **범용 편집기 열기**:
    - AEM Sites 콘솔로 이동하여 페이지를 선택한 다음 **편집**&#x200B;을 클릭합니다.
-   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)가 올바르게 구성되었는지 확인합니다.
+   - [범용 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)가 올바르게 구성되었는지 확인합니다.
 
 2. **다음 순서대로 양식 구성 요소를 추가합니다.**
    - 제목(H2): “세금 계산 양식”
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **추가 리소스**:
 
-- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+- 더 넓은 컨텍스트를 위한 [범용 편집기 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=ko)
 - 추가 기능 활성화를 위한 [Extension Manager 안내서](/help/implementing/developing/extending/extension-manager.md)
 - 포괄적인 양식 개발 안내를 위한 [Edge Delivery Services 양식](/help/edge/docs/forms/overview.md)
 

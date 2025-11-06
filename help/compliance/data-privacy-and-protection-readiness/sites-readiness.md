@@ -78,13 +78,13 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스의 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics 관련 데이터 주제 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)를 참조하십시오.
+Adobe Analytics 관련 데이터 주제 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ko)를 참조하십시오.
 
 ## Target을 통한 개인 맞춤화 기초 {#personalization-foundation-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스의 기능을 사용하는 Target을 통한 개인 맞춤화 기초와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
+Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ko)을 참조하십시오.
 
 ## ContextHub {#contexthub}
 

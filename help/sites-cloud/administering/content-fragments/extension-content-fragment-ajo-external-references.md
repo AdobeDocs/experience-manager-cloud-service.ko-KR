@@ -30,7 +30,7 @@ AJO 외부 참조 확장은 사전 정의된 태그와 연결된 모든 조직 �
 
 >[!NOTE]
 >
->[AJO 통합](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)도 참조하세요.
+>[AJO 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/integrations/aem-fragments)도 참조하세요.
 
 1. [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)을 엽니다.
 

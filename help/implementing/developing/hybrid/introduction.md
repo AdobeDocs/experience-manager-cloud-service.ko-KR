@@ -48,7 +48,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!TIP]
 >
->AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 

@@ -59,7 +59,7 @@ AEM에서 API를 제공하는 경우 Sling, JCR 및 OSGi보다 선호합니다. 
 
 >[!TIP]
 >
->이 지침에 대한 자세한 내용은 [Java API 모범 사례 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html) 문서를 참조하십시오.
+>이 지침에 대한 자세한 내용은 [Java API 모범 사례 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ko) 문서를 참조하십시오.
 
 ## AEM Delivery 및 Content Management Services 및 API {#delivery-apis}
 
@@ -67,7 +67,7 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 
 | 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 표준화된 웹 컨텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | AEM용 표준화된 웹 컨텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 콘텐츠의 JSON 내보내기 생성 |
 | [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) | 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI |
@@ -76,7 +76,7 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 |  |  |
 | [Assets API](/help/assets/mac-api-assets.md) | 바이너리, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. AEM Assets HTTP API 를 참조하십시오 |
 | [콘텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 작업을 통해 HTTP API로 콘텐츠 조각 콘텐츠에 직접 액세스 |
-| [콘텐츠 조각 Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
+| [콘텐츠 조각 Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ko) | 지원되는 HTTP 자산 요청의 정확한 형식 |
 
 >[!NOTE]
 >

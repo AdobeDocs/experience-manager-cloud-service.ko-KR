@@ -106,5 +106,5 @@ There are multiple ways of accessing it:
 
 프로덕션 프로그램의 경우 Adobe Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;은 AEM as a Cloud Service Developer Console에 대한 액세스를 제어합니다. 샌드박스 프로그램의 경우 AEM 액세스 권한을 부여하는 제품 프로필을 가진 모든 사용자는 Developer Console을 사용할 수 있습니다. 모든 프로그램의 경우 상태 덤프 및 저장소 브라우저 액세스에 &quot;Cloud Manager - 개발자 역할&quot;이 필요합니다. 작성자 및 게시 서비스 모두에서 데이터를 보려면 두 서비스의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자를 할당해야 합니다.
 
-사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)를 참조하세요.
+사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)를 참조하세요.
 

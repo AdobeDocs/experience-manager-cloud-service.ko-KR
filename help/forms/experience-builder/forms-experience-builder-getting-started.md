@@ -75,7 +75,7 @@ Forms 마법사를 사용하여 [핵심 구성 요소 템플릿](/help/forms/cre
 
 기존 문서를 대화형 디지털 양식으로 변환합니다.
 
-이 옵션을 사용하기 전에 PDF 파일 또는 양식 이미지를 업로드하십시오. PDF은 AcroForm 또는 XFA 기반 PDF 양식일 수 있습니다. [다른 유형의 PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)의 경우 Adobe Acrobat의 [양식 준비](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) 옵션을 사용하여 AcroForm으로 변환합니다
+이 옵션을 사용하기 전에 PDF 파일 또는 양식 이미지를 업로드하십시오. PDF은 AcroForm 또는 XFA 기반 PDF 양식일 수 있습니다. [다른 유형의 PDF forms](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)의 경우 Adobe Acrobat의 [양식 준비](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) 옵션을 사용하여 AcroForm으로 변환합니다
 
 **사용 시기:**
 

@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계 프로세스�
 
 첫 번째 온보딩 단계는 Adobe에서 수행합니다. 가격 책정 및 프로비저닝에 대한 자세한 내용은 영업 담당자에게 문의해야 합니다.
 
-CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)을 참조하세요.
+CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ko)을 참조하세요.
 
 두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
@@ -77,7 +77,7 @@ Adobe I/O CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단
 
 1. Cloud Manager 플러그인으로 Adobe I/O CLI를 다운로드하십시오.
 
-   * [Adobe CLI 플러그인과 함께 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 &#x200B;](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI 플러그인과 함께 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 &#x200B;](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. AEM as a Cloud Service 프로그램을 사용하여 Adobe I/O CLI를 인증합니다.
 

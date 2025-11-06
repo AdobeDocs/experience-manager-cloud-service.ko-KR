@@ -491,4 +491,4 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 포괄적인 모범 사례 및 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](/help/forms/experience-builder/forms-experience-builder-getting-started.md)를 참조하십시오.
 
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*

@@ -16,7 +16,7 @@ ht-degree: 22%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=ko#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Acrobat Sign]은(는) 적응형 Forms 및 AEM 워크플로우에 전자 서명 워크플로우를 사용합니다. 전자 서명은 법무, 판매, 임금, 인적 자원 관리 등의 다양한 분야에서 문서를 처리하는 워크플로를 개선합니다.
@@ -37,7 +37,7 @@ ht-degree: 22%
 1. 활성 [Adobe Acrobat Sign 개발자 계정.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. [Adobe Acrobat Sign API 응용 프로그램](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. [!DNL Adobe Acrobat Sign] API 애플리케이션의 자격 증명(클라이언트 ID 및 클라이언트 보안).
-1. (정부 ID 기반 인증만 해당) 정부 ID 인증에 대해 [인증 방법을 사용](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport)합니다.
+1. (정부 ID 기반 인증만 해당) 정부 ID 인증에 대해 [인증 방법을 사용](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html#AuditReport)합니다.
 
 ### AEM Forms 작성자 및 게시 인스턴스와 Adobe Acrobat Sign 연결 {#configure-adobe-sign-with-aem-forms}
 
@@ -84,7 +84,7 @@ ht-degree: 22%
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ AEM Forms as a Cloud Service은 정의된 간격으로 서명자 상태를 확�
 }
 ```
 
-구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)합니다.
+구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
 ## 자주 묻는 질문
 

@@ -97,7 +97,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 >[!NOTE]
 >
->[디지털 에셋의 메타데이터를 관리하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)을 알아보세요.
+>[디지털 에셋의 메타데이터를 관리하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ko)을 알아보세요.
 
 ### 메타데이터 전략과 일관성 유지
 
@@ -138,7 +138,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
    1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 추가한 키워드를 사용하여 에셋을 검색합니다. 에셋이 상위 검색 결과에 나타납니다.
 
-  Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 알아보세요.
+  Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)을 알아보세요.
 
 * **사용자 지정 메타데이터 필드:** 에셋에 대한 추가 정보를 캡처하도록 메타데이터 필드를 사용자 지정합니다. 예를 들어 프로젝트 세부 사항, 저작권 정보 또는 검색 기능을 향상시키는 기타 관련 데이터에 대한 특정 필드를 추가합니다. Experience Manager Assets에서 [사용자 지정 메타데이터를 편집하거나 추가하는 방법](meta-edit.md)을 알아보세요.
 
@@ -168,4 +168,4 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 목표, 진행 상황, 이정표 및 과제를 조기에 전달하여 모든 이해 당사자의 의견을 수렴하고 협조하십시오. 조직 전체의 협업을 장려하여 효율적인 프로세스와 중요한 메타데이터를 만들 수 있습니다.
 
-Experience Manager 메타데이터를 효과적으로 관리하기 위해 [메타데이터 및 관련 개념](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)에 대해 자세히 알아보세요.
+Experience Manager 메타데이터를 효과적으로 관리하기 위해 [메타데이터 및 관련 개념](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=ko)에 대해 자세히 알아보세요.

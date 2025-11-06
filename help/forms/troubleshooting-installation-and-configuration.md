@@ -31,7 +31,7 @@ Cloud Service 환경을 구성하는 동안 다음 문제 중 일부가 발생�
 
    ![Forms 옵션 선택](assets/installation-configuration-select-forms-option.png)
 
-1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)합니다.
+1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko)합니다.
 
 파이프라인이 빌드되고 배포되면 **[!UICONTROL 탐색]** 페이지의 **[!UICONTROL Forms]** 옵션이 표시됩니다.
 

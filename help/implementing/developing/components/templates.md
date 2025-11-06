@@ -128,7 +128,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하는 것이 좋습니다.
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >

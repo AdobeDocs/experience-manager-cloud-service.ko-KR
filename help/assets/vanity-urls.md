@@ -140,7 +140,7 @@ Cloud Manager 환경의 `ASSET_DELIVERY_VANITY_ID` 변수를 vanity ID가 있는
 
 ## vanity URL을 사용하여 크기 조정{#scale-using-vanity-url}
 
-AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
+AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름을 사용자 지정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)할 수 있습니다. 이러한 AEMCS 기능을 단축 URL과 함께 사용하면 AEMCS를 깔끔하고 설명적이며 브랜드가 지정되고 직관적이며 [위에서 언급한 이점](#key-benefits)을 제공하는 고유한 웹 주소로 변환할 수 있습니다.
 
 다음 vanity URL 및 사용자 지정 가능한 구성 요소를 참조하십시오.
 
@@ -190,7 +190,7 @@ AEM as a Cloud Service을 사용하면 웹 주소 내에서 [DNS 및 CDN 이름�
 다음 단계를 실행하여 전송할 CDN 규칙을 다시 작성합니다.
 
 1. AEM 저장소로 이동하여 YAML 구성 파일을 생성합니다.
-2. [설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
+2. [설정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) 섹션의 단계를 실행하여 CDN 규칙을 구성하고 Cloud Manager 구성 파이프라인을 통해 구성을 배포합니다.
 도메인 경로를 만들려면 다음 [모범 사례](#best-practices)를 따르십시오.
    [CDN 재작성 규칙에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

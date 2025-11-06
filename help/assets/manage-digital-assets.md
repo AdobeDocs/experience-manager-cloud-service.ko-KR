@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는 [!DNL Adobe Experience Manager Assets]에서 자산을 관리하고 편집하는 방법에 대해 설명합니다. [!DNL Content Fragments]을(를) 관리하려면 [[!DNL Content Fragments]](content-fragments/content-fragments.md)개의 자산을 참조하십시오.
@@ -657,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
 
 **추가 참조**
 

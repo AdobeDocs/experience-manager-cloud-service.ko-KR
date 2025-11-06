@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
@@ -535,6 +535,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+>* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ko)
+>* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/kr/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock FAQ](https://helpx.adobe.com/kr/stock/faq.html)

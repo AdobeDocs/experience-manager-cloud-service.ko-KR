@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->이 문서가 이러한 학습 및 개념을 기반으로 빌드됨에 따라 기본 [AEM Project Archetype 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)을 숙지하십시오.
+>이 문서가 이러한 학습 및 개념을 기반으로 빌드됨에 따라 기본 [AEM Project Archetype 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)을 숙지하십시오.
 
 이 문서에서는 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠의 분할을 준수하도록 하여 Adobe Experience Manager Maven 프로젝트가 AEM as a Cloud Service과 호환되도록 하는 데 필요한 변경 사항에 대해 간략하게 설명합니다. 또한 종속성이 설정되어 충돌하지 않고 결정론적 배포를 만들고 배포 가능한 구조로 패키지됩니다.
 
@@ -62,7 +62,7 @@ Oak 인덱스(`/oak:index`)는 AEM as a Cloud Service 배포 프로세스에서 
 + OSGi 번들 Jar 파일이 생성되며 모든 프로젝트에 직접 포함됩니다.
 
 + `ui.apps` 패키지에는 배포할 모든 코드가 포함되어 있으며 `/apps`에만 배포됩니다. `ui.apps` 패키지의 일반적인 요소는 다음을 포함하지만 이에 국한되지 않습니다.
-   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트
+   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 스크립트
       + `/apps/my-app/components`
    + JavaScript 및 CSS([클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)를 통해)
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ Oak 인덱스(`/oak:index`)는 AEM as a Cloud Service 배포 프로세스에서 
       + `/apps/settings`
    + ACL(권한)
       + `rep:policy` 아래의 모든 경로에 대한 모든 `/apps`
-   + [미리 컴파일된 번들형 스크립트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [미리 컴파일된 번들형 스크립트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=ko)
 
 >[!NOTE]
 >

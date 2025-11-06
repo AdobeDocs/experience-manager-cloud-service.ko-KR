@@ -26,7 +26,7 @@ ht-degree: 100%
 * 표준화된 사용자 인터페이스가 있습니다.
 * 구성할 수 있는 편집 비헤이비어가 있습니다.
 * Granite UI 구성 요소 기반의 하위 요소를 사용하여 빌드한 대화 상자를 사용합니다.
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용하여 개발되었습니다.
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용하여 개발되었습니다.
 * 기본 기능을 확장하는 사용자 정의된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소가 모듈식이므로 다음과 같은 작업을 수행할 수 있습니다.
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ## AEM 핵심 구성 요소 {#aem-core-components}
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
 
 AEM as a Cloud Service와 함께 핵심 구성 요소를 제공하고, [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은 구성 요소를 구현하고 사용하는 방법을 보여 줍니다. 구성 요소는 모든 소스 코드와 함께 제공되고, 그대로 사용하거나 수정 또는 확장된 구성 요소의 시작점으로 사용할 수 있습니다.
 
