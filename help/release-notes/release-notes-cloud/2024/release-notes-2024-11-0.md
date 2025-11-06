@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2024년 11월 릴리스 개요 비디오를 통해 2024.11.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

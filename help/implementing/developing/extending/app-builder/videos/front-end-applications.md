@@ -22,10 +22,10 @@ ht-degree: 0%
 
 프로젝트 초기화 옵션 및 Adobe Spectrum을 비롯한 프론트엔드 App Builder 애플리케이션에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346318/?captions=kor&quality=12&learn=on)
 
 ## 프론트엔드 App Builder 애플리케이션 구축
 
 React를 사용하고 애플리케이션 내에서 Adobe Runtime 작업을 사용하여 프론트엔드 App Builder 애플리케이션을 빌드하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409740/?captions=kor&quality=12&learn=on)

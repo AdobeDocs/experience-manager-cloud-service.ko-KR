@@ -20,4 +20,4 @@ ht-degree: 0%
 
 검토 및 승인을 위해 App Builder 애플리케이션을 제출하는 방법과 새로 게시된 애플리케이션을 실행하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343286/?captions=kor&quality=12&learn=on)

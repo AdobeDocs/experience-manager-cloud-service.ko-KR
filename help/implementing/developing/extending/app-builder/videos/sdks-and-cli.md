@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Adobe I/O SDK과 이를 사용하여 App Builder 애플리케이션을 개발하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343414/?captions=kor&quality=12&learn=on)
 
 ## CLI
 
 Adobe I/O CLI와 App Builder 개발에 사용하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343409/?captions=kor&quality=12&learn=on)

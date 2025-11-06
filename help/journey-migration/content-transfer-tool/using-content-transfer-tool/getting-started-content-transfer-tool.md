@@ -65,7 +65,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_demo"
 >title="콘텐츠 전송 도구 실행"
 >abstract="콘텐츠 전송 도구를 사용하여 콘텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" 데모 보기"
+>additional-url="https://video.tv.adobe.com/v/327072/?captions=kor&quality=12&learn=on" text=" 데모 보기"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ko#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
 
 다음 섹션은 새 버전의 콘텐츠 전송 도구에 적용됩니다. 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아보십시오.

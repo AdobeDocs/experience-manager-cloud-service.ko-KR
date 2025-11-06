@@ -20,4 +20,4 @@ ht-degree: 0%
 
 배포가 App Builder에 어떤 의미가 있는지, Adobe I/O CLI를 사용하여 App Builder 애플리케이션을 배포하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343293/?captions=kor&quality=12&learn=on)

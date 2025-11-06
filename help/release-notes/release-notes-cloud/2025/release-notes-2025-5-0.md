@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2025년 5월 릴리스 개요 비디오를 통해 2025.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464357?captions=kor&quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 [Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 네이티브 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 자산(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 여러 채널에서 실시간 업데이트 및 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463789/?captions=kor&learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
