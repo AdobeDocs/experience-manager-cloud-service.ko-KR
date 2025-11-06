@@ -3,8 +3,8 @@ title: 쿼리 빌더 조건자 참조
 description: AEM as a Cloud Service의 Query Builder API에 대한 설명 참조.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -61,7 +61,7 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-`/content/wknd/ch/de`의 페이지 또는 `/content/dam/wknd`의 자산에서 **관리**&#x200B;라는 용어를 검색합니다.
+**의 페이지 또는**&#x200B;의 자산에서 `/content/wknd/ch/de`관리`/content/dam/wknd`라는 용어를 검색합니다.
 
 개념상 `fulltext AND ( (path AND type) OR (path AND type) )`입니다. 이러한 OR 조인은 성능상의 이유로 좋은 색인이 필요합니다.
 
@@ -121,8 +121,8 @@ group.2_group.type=dam:Asset
 * **`operation`**
    * 정확히 일치시키기 위한 `=`(기본값)
    * 같지 않음 비교에 대한 `!=`
-   * `property1`의 `>`이(가) `property2`보다 큼
-   * `property1`의 `>=`이(가) `property2`보다 크거나 같음
+   * `>`의 `property1`이(가) `property2`보다 큼
+   * `>=`의 `property1`이(가) `property2`보다 크거나 같음
 
 ### 다터랑주 {#daterange}
 
@@ -265,12 +265,12 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 
 * **`property`** - 속성에 대한 상대 경로(예: `jcr:title`).
 * **`value`** - 속성을 확인할 값입니다. 문자열 변환에 대한 JCR 속성 형식을 따릅니다.
-* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 값을 확인합니다(기본적으로 `OR`과(와) 결합, `and=true`인 경우 `AND` 포함).
-* **`and`** - 여러 값(`N_value`)을 `AND`과(와) 결합하려면 `true`(으)로 설정합니다.
+* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 값을 확인합니다(기본적으로 `OR`과(와) 결합, `AND`인 경우 `and=true` 포함).
+* **`and`** - 여러 값(`true`)을 `N_value`과(와) 결합하려면 `AND`(으)로 설정합니다.
 * **`operation`**
    * `equals`을(를) 정확하게 일치시킵니다(기본값).
    * `unequals`(같지 않음 비교)
-   * `jcr:like` xpath 함수를 사용하는 경우 `like`(선택 사항).
+   * `like` xpath 함수를 사용하는 경우 `jcr:like`(선택 사항).
    * 일치 항목 없는 `not`(예: xpath의 `not(@prop)`, 값 매개 변수는 무시됨).
    * `exists`의 존재 여부를 확인합니다.
       * `true` 속성이 있어야 합니다.
@@ -296,7 +296,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 
 ### 상대 날짜 범위 {#relativedaterange}
 
-이 조건자는 현재 서버 시간에 상대적인 시간 오프셋을 사용하여 날짜/시간 간격에 대해 `JCR DATE` 속성을 일치시킵니다. 밀리초 값 또는 Bugzilla 구문 `1s 2m 3h 4d 5w 6M 7y`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)을 사용하여 `lowerBound` 및 `upperBound`을(를) 지정할 수 있습니다. 현재 시간 이전의 음수 오프셋을 나타내려면 `-`을(를) 접두사로 사용하십시오. `lowerBound` 또는 `upperBound`만 지정하면 나머지 하나는 기본적으로 현재 시간을 나타내는 `0`로 설정됩니다.
+이 조건자는 현재 서버 시간에 상대적인 시간 오프셋을 사용하여 날짜/시간 간격에 대해 `JCR DATE` 속성을 일치시킵니다. 밀리초 값 또는 Bugzilla 구문 `lowerBound`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)을 사용하여 `upperBound` 및 `1s 2m 3h 4d 5w 6M 7y`을(를) 지정할 수 있습니다. 현재 시간 이전의 음수 오프셋을 나타내려면 `-`을(를) 접두사로 사용하십시오. `lowerBound` 또는 `upperBound`만 지정하면 나머지 하나는 기본적으로 현재 시간을 나타내는 `0`로 설정됩니다.
 
 예:
 
@@ -351,7 +351,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 #### 속성 {#properties-21}
 
 * **`tag`** - 찾을 태그 제목 경로(예: `properties:orientation/landscape`)
-* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 태그(기본적으로 `OR`과(와) 결합됨, `and=true`인 경우 `AND` 포함) 확인
+* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 태그(기본적으로 `OR`과(와) 결합됨, `AND`인 경우 `and=true` 포함) 확인
 * **`property`** - 확인할 속성(또는 속성에 대한 상대 경로)(기본값 `cq:tags`)
 
 ### 태그 {#tagid}
@@ -363,7 +363,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 #### 속성 {#properties-22}
 
 * **`tagid`** - 찾을 태그 ID(예: `properties:orientation/landscape`)
-* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 태그 ID(기본적으로 `OR`과(와) 결합됨, `and=true`인 경우 `AND` 포함) 확인
+* **`N_value`** - `1_value`, `2_value`, ...을(를) 사용하여 여러 태그 ID(기본적으로 `OR`과(와) 결합됨, `AND`인 경우 `and=true` 포함) 확인
 * **`property`** - 확인할 속성(또는 속성에 대한 상대 경로)(기본값 `cq:tags`)
 
 ### tagsearch {#tagsearch}

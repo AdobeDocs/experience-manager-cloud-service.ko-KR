@@ -4,10 +4,10 @@ description: 모범 사례 분석기를 사용하여 업그레이드 준비 상�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* BPA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ko)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
+* BPA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
 * BPA는 **관리자** 사용자 또는 **관리자** 그룹의 사용자만 실행할 수 있습니다.
 
@@ -166,8 +166,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="모범 사례 분석기 보고서 해석"
 >abstract="UI와 CSV와 같이 BPA 보고서 출력을 볼 수 있는 두 가지 옵션이 있습니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ko#analysis-report" text="Best Practices Analysis 보고서 검토"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ko" text="모범 사례 분석기 보고서 카테고리 이해"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Best Practices Analysis 보고서 검토"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="모범 사례 분석기 보고서 카테고리 이해"
 
 AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서가 도구 창의 결과로 표시됩니다.
 
@@ -184,7 +184,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
 
 >[!NOTE]
->각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ko)를 참조하세요.
+>각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)를 참조하세요.
 
 아래 테이블에 따라 중요도 수준을 파악하십시오.
 
@@ -222,6 +222,7 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
 
 다음 URL은 `<host>`이(가) 호스트 이름인 HTTP 액세스와 BPA가 설치된 서버의 포트(필요한 경우) 액세스에 사용할 수 있습니다.
+
 * JSON 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.json`
 * CSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.csv`
 * TSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`
@@ -286,8 +287,8 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 BPA는 패턴 탐지기를 실행하기 위해 이름이 `repository-reader-service`인 시스템 서비스 사용자 계정을 사용합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 다음 단계를 수행하여 BPA를 *설치하기 전에*&#x200B;이 계정을 만들어야 합니다.
 
-1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=ko#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
+1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
-2. [사용자 및 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
+2. [사용자 및 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
 
 3. 소스 AEM 인스턴스의 패키지 관리자를 통해 BPA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)

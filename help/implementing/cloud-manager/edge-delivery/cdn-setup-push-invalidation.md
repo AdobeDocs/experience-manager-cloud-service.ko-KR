@@ -3,10 +3,10 @@ title: Edge Delivery 사이트에 대한 푸시 무효화 설정
 description: Edge Delivery 사이트에 대한 푸시 무효화를 구성하여 효율적으로 콘텐츠를 업데이트하고 캐싱을 제어하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 

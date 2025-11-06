@@ -4,8 +4,8 @@ description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Cloud Manager에서 SSL 인증서를 업데이트하고 관리하는 방법에 �
 ## 사전 요구 사항 {#prerequisites}
 
 * SSL 인증서를 추가하려면 사용자는 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
-* 자체 인증서를 설치하는 경우 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)에서 **인증서 요구 사항**&#x200B;을 참조하십시오.
+* 자체 인증서를 설치하는 경우 **SSL 인증서 관리 소개**&#x200B;에서 [인증서 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)을 참조하십시오.
 
 ## 추가할 SSL 인증서 선택 {#which-ssl-to-add}
 
@@ -46,7 +46,7 @@ Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인�
 * **고객 관리(OV/EV) SSL 인증서:**
 
    * 인증 기관에서 OV/EV SSL 인증서를 받습니다. 자세한 내용은 [고객 관리 OV/EV SSL 인증서에 대한 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)을 검토하십시오.
-   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 &#x200B;](#add-customer-managed-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
+   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 ](#add-customer-managed-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
    * 추가되면 사용자 정의 도메인 이름이 확인된 것으로 표시되고 SSL 인증서가 적용됩니다.
 
 두 경우 모두 인증서를 확인하고 설치한 후 사용자 정의 도메인을 환경에서 안전하게 사용할 수 있습니다. 모든 것이 예상대로 작동하는지 확인하려면 Cloud Manager 인터페이스에서 [정기적으로 도메인의 상태를 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)하십시오.
@@ -126,7 +126,7 @@ Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인�
 
    >[!NOTE]
    >
-   >* [사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)하는 동안 **고객 관리 인증서**&#x200B;을(를) 선택한 경우 ***이후***&#x200B;에 고객 관리(OV/EV) SSL 인증서가 추가 및 저장되며 도메인이 확인됩니다. [사용자 지정 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)도 참조하세요.
+   >* **사용자 지정 도메인 이름을 추가**&#x200B;하는 동안 [고객 관리 인증서](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)을(를) 선택한 경우 ***이후***&#x200B;에 고객 관리(OV/EV) SSL 인증서가 추가 및 저장되며 도메인이 확인됩니다. [사용자 지정 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)도 참조하세요.
 
    SSL 인증서가 발급되면 **SSL 인증서** 표에 녹색 확인 확인 확인 표시가 나타납니다.
 

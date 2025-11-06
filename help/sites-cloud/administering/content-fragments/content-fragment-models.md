@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 모델 정의
 description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각을 위한 기반 역할을 하여 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만드는 방법에 대해 알아봅니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 59%
@@ -84,7 +84,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      ![필드 이동](assets/cf-cfmodels-move-field-icon.png)
 
-   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
+   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
 필드.
 
       * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.
@@ -313,10 +313,10 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->  &#x200B;>  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->  &#x200B;>  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+>  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 표준 속성 외에 다음을 지정할 수 있습니다.
 
 * 참조된 콘텐츠를 저장할 위치를 지정하거나 나타내는 **루트 경로**
+
   >[!NOTE]
   >
   >이 경로는 콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 필수입니다.
@@ -338,6 +339,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
   >자세한 내용은 [이미지 참조](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)를 참조하십시오.
 
 * 참조할 수 있는 콘텐츠 유형
+
   >[!NOTE]
   >
   >콘텐츠 조각 편집기를 사용할 때 이 필드에 이미지를 직접 업로드하고 참조하려는 경우 이에 **이미지**&#x200B;가 포함되어야 합니다.
@@ -346,6 +348,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * 파일 크기 제한
 * 이미지를 참조한 경우:
+
    * 썸네일 표시
    * 높이 및 폭의 이미지 제한
 

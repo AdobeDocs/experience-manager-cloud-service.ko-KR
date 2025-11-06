@@ -6,13 +6,13 @@ version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Architect, Developer
+role: Developer, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 # AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합 {#aem-cif-aep-integration}
 
-[Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 [장바구니에 추가](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=ko)와 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터를 전달하기 위해 __Adobe Experience Platform__&#x200B;과(와) 매끄럽게 통합됩니다.
+[Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 [장바구니에 추가](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html)와 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터를 전달하기 위해 __Adobe Experience Platform__&#x200B;과(와) 매끄럽게 통합됩니다.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 Adobe Commerce 상점 첫 화면에서 이벤트 데이터를 수집할 수 있도록 [Commerce용 Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)라는 JavaScript 라이브러리를 제공합니다. 해당 이벤트 데이터는 Experience Platform으로 전송되어 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 고객 여정을 다루는 360도 프로필을 빌드하는 데 사용됩니다. Commerce 데이터를 Adobe Experience Cloud의 다른 제품에 연결하면 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
-클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=ko) 기술 제품군에 대해 자세히 알아보십시오.
+클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 기술 제품군에 대해 자세히 알아보십시오.
 
 ## `addToCart` 이벤트 데이터를 Experience Platform에 보내기 {#send-addtocart-to-aep}
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 로컬 개발 환경을 사용하여 이 데모를 완료합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. [AEM as a Cloud Service SDK을 사용하여 로컬 개발을 설정하는 데 필요한 요구 사항과 단계를 검토하십시오.](/help/commerce-cloud/cif-storefront/develop.md)
 
-또한 데이터 수집을 위한 스키마, 데이터 세트 및 데이터 스트림을 만들려면 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=ko)에 대한 액세스 권한과 사용 권한이 필요합니다. 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=ko)를 참조하십시오.
+또한 데이터 수집을 위한 스키마, 데이터 세트 및 데이터 스트림을 만들려면 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html)에 대한 액세스 권한과 사용 권한이 필요합니다. 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)를 참조하십시오.
 
 ## AEM Commerce as a Cloud Service 설정 {#aem-setup}
 
@@ -88,7 +88,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!IMPORTANT]
 >
->`--force`PWA Studio[이(가) 지원되는 피어 종속으로 제한되어 있으므로 &#x200B;](https://developer.adobe.com/commerce/pwa-studio/) 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
+>`--force`PWA Studio[이(가) 지원되는 피어 종속으로 제한되어 있으므로 ](https://developer.adobe.com/commerce/pwa-studio/) 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
 
 
 ### `--force` 인수를 사용하도록 Maven 구성
@@ -366,7 +366,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 >[!TIP]
 >
->자세한 내용은 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko)을 참조하십시오.
+>자세한 내용은 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)을 참조하십시오.
 
 ### 데이터 세트 만들기 {#create-dataset}
 
@@ -392,7 +392,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
 
 >[!TIP]
 >
->자세한 내용은 [데이터 세트 개요](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=ko)를 참조하십시오.
+>자세한 내용은 [데이터 세트 개요](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)를 참조하십시오.
 
 
 ### 데이터 스트림 만들기 {#create-datastream}
@@ -419,7 +419,7 @@ Experience Platform에서 데이터 스트림을 만들 수 있도록 다음 단
 
 >[!TIP]
 >
->자세한 내용은 [데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko)를 참조하세요.
+>자세한 내용은 [데이터스트림 개요](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)를 참조하세요.
 
 ## AEM Commerce 구성에 데이터스트림 값 추가 {#add-aep-values-to-aem}
 
@@ -494,6 +494,6 @@ __프로필 XDM 이벤트&#x200B;:__
 자세한 내용은 다음 리소스를 참조하십시오.
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=ko)
-- [[!DNL Data Connection] 이벤트](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=ko)
-- [Adobe Experience Platform 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ko)
+- [[!DNL Data Connection] 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] 이벤트](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [Adobe Experience Platform 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 85%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 >
 >콘텐츠 조각은 **Sites** 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->**[Assets](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔로 관리됩니다.
+>**[Assets](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔로 관리됩니다.
 >
 >[콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)에 대한 기본 편집기는 새 편집기이며, **콘텐츠 조각** 콘솔과 **Assets** 콘솔 모두에서 액세스할 수 있습니다.
 >
@@ -33,12 +33,13 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 >[!NOTE]
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
+>
 >* **콘텐츠 조각**&#x200B;은 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 에디토리얼 콘텐츠입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 콘텐츠 조각을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -88,7 +89,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 
 >[!NOTE]
 >
->[핵심 구성 요소, 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)도 참조하십시오.
+>[핵심 구성 요소, 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)도 참조하십시오.
 
 적절한 구성 대화 상자에서 다음을 포함하여 사용 가능한 매개변수를 선택할 수 있습니다.
 
@@ -153,6 +154,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각은 [페이�
 >* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 콘텐츠가 변경되더라도 이 위치는 변경되지 않습니다.
 >
 >  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
+>
 >* 두 단락 구조가 충돌하지 않는 경우에는 중간 콘텐츠가 내부에 여전히 있어도 표시되지 않습니다.
 
 ### 관련 콘텐츠 사용 {#using-associated-content}

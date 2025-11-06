@@ -3,8 +3,8 @@ title: AEM as a Cloud Service에 대한 로깅
 description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 10%
@@ -158,6 +158,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 다른 LogManager OSGi 구성 속성을 변경하면 AEM as a Cloud Service에서 가용성 문제가 발생할 수 있습니다.
 
 이전 섹션에서 설명한 대로 고객 환경을 효과적으로 모니터링하려면 다음을 수행합니다.
+
 * AEM의 기본 로그 구성(Apache Sling 로깅 구성)의 로그 수준은 기본값인 &quot;INFO&quot;에서 수정해서는 안 됩니다.
 * 제품 코드의 개별 패키지에 대해 로그 수준을 DEBUG로 설정하는 것이 허용되지만(&quot;Apache Sling Logger 구성&quot; OSGi 구성 팩토리의 인스턴스 사용), 성능 저하를 방지하고 더 이상 필요하지 않을 때 INFO로 복원하기 위해 제한적으로 사용합니다.
 * 고객이 개발한 코드에 대해 로그 수준을 조정하는 것은 허용됩니다.
@@ -165,8 +166,10 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 * 로그 출력은 기본 파일 &quot;logs/error.log&quot;로 향해야 합니다.
 
 이를 위해 다음 OSGi 속성을 변경하지 말아야 합니다.
+
 * **Apache Sling 로그 구성** (PID: `org.apache.sling.commons.log.LogManager`) — *모든 속성*
 * **Apache Sling 로깅 로거 구성** (공장 PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -557,7 +560,7 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
-| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://ko.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
+| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://ko.wikipedia.org/wiki/ISO_3166-1) Alpha-2 국가 코드입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
 | *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |

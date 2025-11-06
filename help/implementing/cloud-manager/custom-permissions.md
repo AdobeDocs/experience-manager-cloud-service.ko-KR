@@ -4,8 +4,8 @@ description: 사용자 지정 권한을 사용하여 구성 가능한 권한으�
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 40%

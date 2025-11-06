@@ -3,9 +3,9 @@ title: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 URL 또�
 description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포함되며, 이후 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 

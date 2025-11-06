@@ -4,15 +4,14 @@ description: Forms 관리 UI, 적응형 양식 편집기 및 범용 편집기에
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 99%
 
 ---
-
 
 # Forms Experience Builder - 프롬프트 라이브러리
 
@@ -392,7 +391,7 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **통합 관련 프롬프트:**
 
-    이 양식을 **CRM 시스템**&#x200B;에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
+    이 양식을 **CRM 시스템**에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
     
     양식이 제출될 때 **워크플로 트리거** 설정. 모든 양식 데이터를 전달하고 관리자 알림을 통해 승인 워크플로 트리거
     
@@ -492,4 +491,4 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 포괄적인 모범 사례 및 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](/help/forms/experience-builder/forms-experience-builder-getting-started.md)를 참조하십시오.
 
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*

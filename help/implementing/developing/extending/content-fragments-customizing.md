@@ -3,11 +3,11 @@ title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다. 이를 맞춤화하는 방법에 대해 알아봅니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,14 +63,13 @@ CFM(콘텐츠 조각 관리)은 다음과 같이 Adobe Experience Manager(AEM) A
 * 모든 콘텐츠는 자산의 `jcr:content/data` 노드 아래에 저장됩니다.
 
    * 요소 데이터는 마스터 하위 노드 아래에 저장됩니다.
-
      `jcr:content/data/master`
 
    * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다.
 예: `jcr:content/data/myvariation`
 
    * 각 요소의 데이터는 각 하위 노드에 요소 이름을 갖는 속성으로 저장됩니다.
-예를 들어 요소 `text`의 내용은 `jcr:content/data/master`의 속성 `text`(으)로 저장됩니다
+예를 들어 요소 `text`의 내용은 `text`의 속성 `jcr:content/data/master`(으)로 저장됩니다
 
 * 메타데이터 및 관련 콘텐츠는 `jcr:content/metadata` 아래에 저장됩니다.
 제목 및 설명을 제외하고, 기존 메타데이터로 간주되지 않고 `jcr:content`에 저장됩니다.
@@ -99,9 +98,9 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 
 >[!CAUTION]
 >
->[콘텐츠 조각 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)의 일부입니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)을 참조하십시오.
+>[콘텐츠 조각 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)의 일부입니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)을 참조하십시오.
 
-다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 [&#128279;](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)구성 요소인 **[콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)**&#x200B;를 제공합니다. 이 **[콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)** 핵심 구성 요소를 확장할 수도 있습니다.
+다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 **[구성 요소인 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)콘텐츠 조각 핵심 구성 요소**[를 제공합니다](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 이 **[콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 핵심 구성 요소를 확장할 수도 있습니다.
 
 * 구성 요소는 `fragmentPath` 속성을 사용하여 실제 콘텐츠 조각을 참조합니다. `fragmentPath` 속성은 다른 에셋 유형의 유사한 속성과 동일한 방식으로 처리됩니다. 예를 들어 콘텐츠 조각을 다른 위치로 이동할 때 사용됩니다.
 
@@ -133,7 +132,7 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 
 * **번역**
 
-  콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-cloud/administering/translation/overview.md)와(과) 완전히 통합됩니다. 아키텍처 수준에서 이는 다음을 의미합니다.
+  콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-cloud/administering/translation/overview.md)와 완전히 통합됩니다. 아키텍처 수준에서 이는 다음을 의미합니다.
 
    * 컨텐츠 조각의 개별 번역은 개별 조각입니다. 예를 들면 다음과 같습니다.
 
@@ -173,7 +172,7 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 
 >[!CAUTION]
 >
->Adobe은 콘텐츠 구조에 직접 액세스하는 대신 서버측 API를 사용하는 것을 권장합니다.
+>Adobe에서는 콘텐츠 구조에 직접 액세스하는 대신 서버측 API를 사용하는 것이 좋습니다.
 
 ### 주요 인터페이스 {#key-interfaces}
 
@@ -255,13 +254,13 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 
 ### 주의 사항 {#caveats}
 
-주의해야 할 사항은 다음과 같습니다.
+다음 사항에 유의해야 합니다.
 
 * 전체 API는 API JavaDoc에 별도로 명시되지 않는 한 변경 내용을 자동으로 **유지하지**&#x200B;하도록 설계되었습니다. 따라서 항상 해당 요청의 리소스 확인자(또는 실제로 사용 중인 확인자)를 커밋하십시오.
 
 * 추가 작업이 필요할 수 있는 작업:
 
-   * Adobe은 `ContentFragment`에서 변형을 만들 것을 권장합니다. 이렇게 하면 모든 요소가 이 변형을 공유하고, 콘텐츠 구조의 새로운 변형을 반영하기 위해 필요에 따라 적절한 전역 데이터 구조가 업데이트됩니다.
+   * Adobe에서는 `ContentFragment`에서 변형을 만들 것을 권장합니다. 이렇게 하면 모든 요소가 이 변형을 공유하고, 콘텐츠 구조의 새로운 변형을 반영하기 위해 필요에 따라 적절한 전역 데이터 구조가 업데이트됩니다.
 
    * 요소를 통해 기존 변형을 제거하고 `ContentElement.removeVariation()`을(를) 사용하면 변형에 할당된 전역 데이터 구조가 업데이트되지 않습니다. 이러한 데이터 구조가 계속 동기화되도록 하려면 `ContentFragment.removeVariation()`을(를) 대신 사용하십시오.
 
@@ -285,7 +284,7 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 >
 >이 배경 정보를 고려하십시오. 리포지토리에 *비공개 영역*(으)로 표시되어 있으므로 여기에서 변경할 수 없지만, 경우에 따라 변경 내용이 제대로 작동하는지 이해하는 데 도움이 될 수 있습니다.
 
-여러 보기(= HTML 페이지)에 걸쳐 있을 수 있는 컨텐츠 조각 편집은 원자적입니다. 이러한 원자 형식의 다중 보기 편집 기능은 일반적인 AEM 개념이 아니므로 콘텐츠 조각은 *편집 세션*&#x200B;이라는 것을 사용합니다.
+여러 보기(= HTML 페이지)에 걸쳐 있을 수 있는 컨텐츠 조각 편집은 원자적입니다. 이러한 원자 형식의 다중 보기 편집 기능은 일반적인 AEM 개념이 아니므로 콘텐츠 조각은 *편집 세션*&#x200B;이라는 항목을 사용합니다.
 
 편집 세션은 사용자가 편집기에서 콘텐츠 조각을 열 때 시작됩니다. 사용자가 **저장** 또는 **취소**&#x200B;를 선택하여 편집기를 떠나면 편집 세션이 종료됩니다.
 
@@ -347,8 +346,8 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 값: `300`(5분은 300초와 같음)
 
-## 페이지 작성을 위한 구성 요소 {#components-for-page-authoring}
+## 페이지 작성 구성 요소 {#components-for-page-authoring}
 
 자세한 내용은
 
-* [핵심 구성 요소 - 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)(권장)
+* [핵심 구성 요소 - 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)&#x200B;(권장)

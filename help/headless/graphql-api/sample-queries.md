@@ -4,10 +4,10 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 94%
+source-wordcount: '1927'
+ht-degree: 93%
 
 ---
 

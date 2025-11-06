@@ -3,9 +3,9 @@ title: AEM Forms용 Edge Delivery Services 개요
 description: Adobe Experience Manager Edge Delivery Services에서 범용 편집기 작성 방식을 중점적으로 활용하여 고성능 양식을 만들고 전달합니다.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우
 ### 범용 편집기
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [범용 편집기](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)는 속도와 엔터프라이즈급 기능을 결합한 마케터 및 디자이너를 위한 시각적 드래그 앤 드롭 작성 도구입니다.

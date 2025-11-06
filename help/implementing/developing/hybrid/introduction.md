@@ -3,9 +3,9 @@ title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -48,7 +48,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!TIP]
 >
->AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용해야 합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
@@ -94,10 +94,12 @@ SPA의 기본 아이디어는 서버 대기 시간으로 인한 지연을 최소
 >[!TIP]
 >
 >AEM에서 SPA가 작동하는 방식에 대한 기술적인 세부 정보는 다음 문서를 참조하십시오.
+>
 >* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md)
 >* [Angular를 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md)
 >
 >SPA 편집기의 디자인, 아키텍처 및 기술 워크플로에 대한 자세한 내용은 다음 문서를 참조하십시오.
+>
 >* [SPA 편집기 개요](editor-overview.md).
 
 ## SPA를 통한 콘텐츠 편집 경험 {#content-editing-experience-with-spa}

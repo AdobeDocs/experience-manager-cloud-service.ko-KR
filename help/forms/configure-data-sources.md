@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](do-not-localize/data-integeration.png)
@@ -32,22 +32,23 @@ ht-degree: 3%
 * Salesforce
 * Microsoft® Azure Blob 저장소
 
-데이터 통합은 OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 및 API 키 인증 유형을 즉시 사용할 수 있도록 지원하며, 이를 통해 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP as a Cloud Service 기반 및 OData 서비스가 [!DNL Experience Manager]에 구성되어 있지만 [!DNL Experience Manager] 사용자 프로필에 대한 관계형 데이터베이스의 JDBC 및 커넥터는 [!DNL Experience Manager] 웹 콘솔에 구성되어 있습니다.
+데이터 통합은 OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 및 API 키 인증 유형을 즉시 사용할 수 있도록 지원하며, 이를 통해 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스가 [!DNL Experience Manager] as a Cloud Service에 구성되어 있는 동안 관계형 데이터베이스에 대한 JDBC와 [!DNL Experience Manager] 사용자 프로필에 대한 커넥터가 [!DNL Experience Manager] 웹 콘솔에 구성되어 있습니다.
 
 ## 관계형 데이터베이스 구성 {#configure-relational-database}
 
 ### 사전 요구 사항
 
 [!DNL Experience Manager] 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성하기 전에 다음을 수행해야 합니다.
-* 포트가 기본적으로 비활성화되어 있으므로 [Cloud Manager API를 통해 고급 네트워킹을 활성화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ko)하십시오.
-* [Maven에 JDBC 드라이버 종속성을 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ko#mysql-driver-dependencies).
+
+* 포트가 기본적으로 비활성화되어 있으므로 [Cloud Manager API를 통해 고급 네트워킹을 활성화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)하십시오.
+* [Maven에 JDBC 드라이버 종속성을 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
 ### 관계형 데이터베이스를 구성하는 단계
 
 [!DNL Experience Manager] 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 수 있습니다. 다음 작업을 수행합니다.
 
-1. `https://server:host/system/console/configMgr`의 [!DNL Experience Manager] 웹 콘솔로 이동합니다.
+1. [!DNL Experience Manager]의 `https://server:host/system/console/configMgr` 웹 콘솔로 이동합니다.
 1. **[!UICONTROL Day Commons JDBC 연결 풀]** 구성을 찾습니다. 을(를) 선택하여 편집 모드로 구성을 엽니다.
 
    ![JDBC 커넥터 풀](/help/forms/assets/jdbc_connector.png)
@@ -72,7 +73,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 자세한 내용은 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ko)을 참조하십시오.
+   > 자세한 내용은 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)을 참조하십시오.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택하여 구성을 저장합니다.
 
@@ -103,19 +104,19 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더에 대한 구성이 필요합니다.
 
-[!DNL Experience Manager]의 모든 클라우드 서비스 구성이 [!DNL Experience Manager] 저장소의 `/conf` 폴더에 통합되었습니다. 기본적으로 `conf` 폴더에는 클라우드 서비스 구성을 만들 수 있는 `global` 폴더가 있습니다. 그러나 클라우드 구성에 대해서는 수동으로 활성화해야 합니다. `conf`에서 추가 폴더를 만들어 클라우드 서비스 구성을 만들고 구성할 수도 있습니다.
+[!DNL Experience Manager]의 모든 클라우드 서비스 구성이 `/conf` 저장소의 [!DNL Experience Manager] 폴더에 통합되었습니다. 기본적으로 `conf` 폴더에는 클라우드 서비스 구성을 만들 수 있는 `global` 폴더가 있습니다. 그러나 클라우드 구성에 대해서는 수동으로 활성화해야 합니다. `conf`에서 추가 폴더를 만들어 클라우드 서비스 구성을 만들고 구성할 수도 있습니다.
 
 클라우드 서비스 구성에 대한 폴더를 구성하려면 다음을 수행합니다.
 
 1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
-   * 자세한 내용은 [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ko) 설명서를 참조하십시오.
+   * 자세한 내용은 [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 설명서를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
    1. **[!UICONTROL 구성 브라우저]**&#x200B;에서 `global` 폴더를 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 
-   1. **[!UICONTROL 구성 속성]** 대화 상자에서 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
+   1. **[!UICONTROL 구성 속성]** 대화 상자에서 **[!UICONTROL 클라우드 구성]**&#x200B;을 활성화합니다.
 
-   1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
+   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. **[!UICONTROL 구성 브라우저]**&#x200B;에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 폴더의 제목을 지정하고 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
@@ -123,22 +124,22 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에서 JSON 또는 YAML 형식의 [Swagger 사양](https://swagger.io/specification/v2/)을 사용하여 설명할 수 있습니다.
+RESTful 웹 서비스는 [ 정의 파일 또는 서비스 끝점에서 JSON 또는 YAML 형식의 ](https://swagger.io/specification/v2/)Swagger 사양[!DNL Swagger]을 사용하여 설명할 수 있습니다.
 
 >[!NOTE]
-> as a Cloud Service [!DNL Experience Manager]에서 RESTful 웹 서비스를 구성하려면 [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))이 파일 시스템 또는 파일이 호스팅된 URL에 있는지 확인하십시오.
+> [!DNL Experience Manager] as a Cloud Service에서 RESTful 웹 서비스를 구성하려면 파일 시스템 또는 파일이 호스팅되는 URL에 [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))이 있는지 확인하십시오.
 
 ### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-2.0}
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder)을 참조하십시오.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL RESTful 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 검색하여 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL &#x200B; Swagger] 정의 파일에 [!DNL Swagger URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
-   * [!DNL &#x200B; Swagger] Source 입력을 기반으로 다음 필드가 값으로 미리 채워집니다.
+   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL Swagger URL] 정의 파일에 [!DNL  Swagger]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
+   * [!DNL  Swagger] Source 입력을 기반으로 다음 필드가 값으로 미리 채워집니다.
 
       * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 [!DNL Swagger] 소스에 정의된 구성표에 따라 다릅니다.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
@@ -155,15 +156,15 @@ RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에
 
 ### Open API 사양 버전 3.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-3.0}
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder)을 참조하십시오.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL RESTful 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 검색하여 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL &#x200B; Swagger] 정의 파일에 [!DNL Swagger 3.0 URL]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
-   * [!DNL &#x200B; Swagger] Source 입력을 기반으로 대상 서버와의 연결 정보가 표시됩니다.
+   * [!UICONTROL Swagger Source] 드롭다운에서 URL 또는 파일을 선택한 다음 [!DNL Swagger 3.0 URL] 정의 파일에 [!DNL  Swagger]을(를) 지정하거나 로컬 파일 시스템에서 [!DNL Swagger] 파일을 업로드하십시오.
+   * [!DNL  Swagger] Source 입력을 기반으로 대상 서버와의 연결 정보가 표시됩니다.
    * RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공하려면 인증 유형 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, API 키 또는 사용자 지정 인증을 선택하십시오.
 
    인증 유형으로 **[!UICONTROL API 키]**&#x200B;을(를) 선택한 경우 API 키 값을 지정하십시오. API 키는 요청 헤더 또는 쿼리 매개 변수로 전송될 수 있습니다. **[!UICONTROL 위치]** 드롭다운 목록에서 이러한 옵션 중 하나를 선택하고 **[!UICONTROL 매개 변수 이름]** 필드에 헤더 이름 또는 쿼리 매개 변수를 적절하게 지정합니다.
@@ -173,6 +174,7 @@ RESTful 웹 서비스는 [!DNL Swagger] 정의 파일 또는 서비스 끝점에
 1. RESTful 서비스에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
 RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 작업은 다음과 같습니다.
+
 * 콜백
 * oneof/anyof
 * 원격 참조
@@ -185,7 +187,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 
 <span class="preview"> 서비스 끝점 기능은 얼리어답터 프로그램 아래에 있으며 핵심 구성 요소에만 적용됩니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder)을 참조하십시오.
 
@@ -200,11 +202,11 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 1. **[!UICONTROL 서비스 끝점 URL]**&#x200B;을 지정하십시오.
 
    >[!NOTE]
-   > 기본적으로 메서드 유형은 POST 입니다.
+   > 기본적으로 메서드 유형은 POST입니다.
 1. 드롭다운 목록에서 선택하려는 컨텐츠 유형 중 하나를 선택합니다. 콘텐츠 유형은 다중 부분 양식 데이터, JSON 및 URL로 인코딩된(키-값 쌍)입니다.
 1. 이제 드롭다운 목록에서 OAuth 2.0, 기본 인증, API 키, 사용자 지정 인증과 같은 인증 유형 중 하나를 선택합니다.
    ![서비스 끝점 인증 형식](/help/forms/assets/service-endpoint-authtype.png)
-1. 만들기 를 클릭합니다.
+1. 만들기를 클릭합니다.
 
 ### 성능을 최적화하기 위한 양식 데이터 모델(FDM) HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
@@ -246,7 +248,7 @@ REST 데이터 원본에 대한 **[!UICONTROL 양식 데이터 모델 HTTP 클�
 
    * **[!UICONTROL 활성 상태 유지]** 필드에 영구 HTTP 연결이 활성 상태로 유지되는 기간을 지정하십시오. 기본값은 15초입니다.
 
-   * **[!UICONTROL 연결 시간 초과]** 필드에 [!DNL Experience Manager Forms] 서버가 연결을 설정할 때까지 기다리는 기간을 지정합니다. 기본값은 10초입니다.
+   * [!DNL Experience Manager Forms]연결 시간 초과&#x200B;**[!UICONTROL 필드에]** 서버가 연결을 설정할 때까지 기다리는 기간을 지정합니다. 기본값은 10초입니다.
 
    * **[!UICONTROL 소켓 시간 제한]** 필드에 두 데이터 패킷 간 비활성 최대 기간을 지정합니다. 기본값은 30초입니다.
 
@@ -254,9 +256,9 @@ REST 데이터 원본에 대한 **[!UICONTROL 양식 데이터 모델 HTTP 클�
 
 SOAP 기반 웹 서비스는 [WSDL(Web Services Description Language) 사양](https://www.w3.org/TR/wsdl)을 사용하여 설명합니다. [!DNL Experience Manager Forms]은(는) RPC 스타일의 WSDL 모델을 지원하지 않습니다.
 
-[!DNL Experience Manager]에서 SOAP as a Cloud Service 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행합니다.
+[!DNL Experience Manager] as a Cloud Service에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder)을 참조하십시오.
 
@@ -274,11 +276,11 @@ SOAP 기반 웹 서비스는 [WSDL(Web Services Description Language) 사양](ht
 
 1. SOAP 웹 서비스에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
-### SOAP 웹 서비스 WSDL에서 가져오기 문 사용 활성화 {#enable-import-statements}
+### SOAP 웹 서비스 WSDL에서 가져오기 구문 사용 활성화 {#enable-import-statements}
 
 SOAP 웹 서비스 WSDL에서 가져오기 문으로 허용되는 절대 URL에 대한 필터 역할을 하는 정규 표현식을 지정할 수 있습니다. 기본적으로 이 필드에는 값이 없습니다. 따라서 [!DNL Experience Manager]은(는) WSDL에서 사용할 수 있는 모든 가져오기 문을 차단합니다. `.*`을(를) 이 필드의 값으로 지정하면 [!DNL Experience Manager]에서 모든 가져오기 문을 허용합니다.
 
-**[!UICONTROL 양식 데이터 모델 웹 서비스 가져오기 SOAP 허용 목록에 추가하다]** 구성의 `importAllowlistPattern` 속성을 설정하여 정규 표현식을 지정하십시오. 다음 JSON 파일에는 샘플이 표시됩니다.
+`importAllowlistPattern`양식 데이터 모델 SOAP 허용 목록에 추가하다 웹 서비스 가져오기&#x200B;**[!UICONTROL 구성의]** 속성을 설정하여 정규 표현식을 지정하십시오. 다음 JSON 파일에는 샘플이 표시됩니다.
 
 ```json
 {
@@ -290,14 +292,14 @@ SOAP 웹 서비스 WSDL에서 가져오기 문으로 허용되는 절대 URL에 
 
 ## OData 서비스 구성 {#config-odata}
 
-OData 서비스는 서비스 루트 URL로 식별됩니다. as a Cloud Service [!DNL Experience Manager] OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
+OData 서비스는 서비스 루트 URL로 식별됩니다. [!DNL Experience Manager] as a Cloud Service에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
 
 >[!NOTE]
 >
 > 양식 데이터 모델(FDM)은 [OData 버전 4](https://www.odata.org/documentation/)을 지원합니다.
 >온라인 또는 온-프레미스에서 [!DNL Microsoft®® Dynamics 365]을(를) 구성하기 위한 단계별 안내서는 [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md)을 참조하십시오.
 
-1. **[!UICONTROL 도구 > Cloud Service > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
+1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder)을 참조하십시오.
 
@@ -316,19 +318,19 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. as a Cloud Service [
 1. OData 서비스에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
 <!--
-## Configure Microsoft® SharePoint List {#config-sharepoint-list}
+## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
+To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
       >[!NOTE]
@@ -337,7 +339,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 -->
 

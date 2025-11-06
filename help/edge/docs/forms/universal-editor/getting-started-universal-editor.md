@@ -2,11 +2,11 @@
 title: 범용 편집기를 사용하여 AEM Forms용 Edge Delivery Services 시작하기
 description: 범용 편집기의 WYSIWYG 작성 기능을 갖춘 Edge Delivery Services를 사용하여 고성능 양식을 만들고 게시하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ AEM Forms용 Edge Delivery Services는 고성능 웹 게재와 범용 편집기�
 
 >[!TIP]
 >
-> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ko)로 시작합니다.
+> AEM을 처음 사용하십니까? [AEM Sites 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)로 시작합니다.
 
 ## 경로 A: Forms를 사용하여 새 프로젝트 만들기
 

@@ -5,10 +5,10 @@ keywords: AEM Forms REST 끝점, REST 끝점에 제출, REST URL에 데이터 �
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -42,7 +42,7 @@ Foundation 구성 요소를 기반으로 적응형 양식에 대해 Swagger Open
 
    ![Rest 끝점에 제출의 작업 구성](/help/forms/assets/submit-action-restendpoint.png)
 
-   데이터를 내부 서버에 게시하려면 리소스 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예, `/content/restEndPoint`. 이러한 POST 요청의 경우 제출 요청의 인증 정보가 사용됩니다.
+   데이터를 내부 서버에 게시하려면 리소스 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예를 들어, `/content/restEndPoint`과 같이 입력합니다. 이러한 POST 요청의 경우 제출 요청의 인증 정보가 사용됩니다.
 이 옵션을 사용하면 타겟 REST 엔드포인트를 직접 입력할 수 있습니다.
 데이터를 외부 서버에 게시하려면 URL을 제공합니다. URL 형식은 `https://host:port/path_to_rest_end_point`입니다. POST 요청을 익명으로 처리하는 경로를 구성해야 합니다.
    ![감사 페이지 매개변수로 전달된 필드 값 매핑](assets/post-enabled-actionconfig.png)
@@ -85,7 +85,7 @@ Foundation 구성 요소를 기반으로 적응형 양식에 대해 Swagger Open
 
    REST 끝점을 지정하는 두 가지 옵션이 있습니다.
 
-   +++ URL
+   +++URL
 
    이 옵션을 사용하면 타겟 REST 엔드포인트를 직접 입력할 수 있습니다.
 데이터를 외부 서버에 게시하려면 URL을 제공합니다. URL 형식은 `https://host:port/path_to_rest_end_point`입니다. POST 요청을 익명으로 처리하는 경로를 구성해야 합니다.
@@ -131,18 +131,21 @@ Foundation 구성 요소를 기반으로 적응형 양식에 대해 Swagger Open
 
 1. 편집할 적응형 양식을 엽니다.
 1. 편집기에서 **양식 속성 편집** 확장을 클릭합니다.
-**양식 속성** 대화 상자가 나타납니다.
+
+   **양식 속성** 대화 상자가 나타납니다.
+
    >[!NOTE]
    >
-   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
-   > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 표시되지 않으면 Extension Manager에서 **양식 속성 편집** 확장 기능을 활성화합니다.
+   > * 범용 편집기에서 확장 기능을 활성화하거나 비활성화하는 방법을 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+
 1. **제출** 탭을 클릭하고 **[!UICONTROL 나머지 끝점에 제출]** 제출 액션을 선택합니다.
 
    데이터를 내부 서버에 게시하려면 리소스 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예, `/content/restEndPoint`. 해당 게시 요청이 있는 경우 제출 요청에 대한 인증 정보가 사용됩니다.
 
    REST 끝점을 지정하는 두 가지 옵션이 있습니다.
 
-   +++ URL
+   +++URL
 
    이 옵션을 사용하면 타겟 REST 엔드포인트를 직접 입력할 수 있습니다.
 데이터를 외부 서버에 게시하려면 URL을 제공합니다. URL 형식은 `https://host:port/path_to_rest_end_point`입니다. POST 요청을 익명으로 처리하는 경로를 구성해야 합니다.

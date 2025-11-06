@@ -3,8 +3,8 @@ title: URL 표면화
 description: 외부화는 프로그래밍 방식으로 리소스 경로를 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 1%
@@ -54,7 +54,7 @@ To override the `preview` and `publish` values, use Cloud Manager environment va
 
 >[!NOTE]
 >
->AEM as a Cloud Service[에 대해 &#x200B;](/help/implementing/deploying/overview.md#osgi-configuration)OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
+>AEM as a Cloud Service[에 대해 ](/help/implementing/deploying/overview.md#osgi-configuration)OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
 
 외부화 서비스에 대한 도메인 매핑을 정의하려면
 

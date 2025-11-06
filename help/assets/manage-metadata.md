@@ -4,9 +4,9 @@ description: 메타데이터 유형에 대해 알아보고 자산의 메타데�
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 9%
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 사용하면 메타데이터 관리가 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
@@ -69,7 +69,7 @@ ht-degree: 9%
 * 파일 크기
 * 포맷
 * 해결 방법
-* 차원
+* 해상도
 * 색상 모드
 
 이러한 유형의 메타데이터는 사용자가 디지털 에셋을 이해하고 효율적으로 사용하는 데 도움이 됩니다.
@@ -238,7 +238,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DAM - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DEX - [Optima SC 설명 탐색기](https://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/kr/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 및 MP - Microsoft 사진.

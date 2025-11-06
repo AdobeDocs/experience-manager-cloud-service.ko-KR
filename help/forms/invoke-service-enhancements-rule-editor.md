@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
@@ -87,6 +87,7 @@ ht-degree: 1%
 **양식 필드**
 
 양식에 다음 필드를 추가합니다.
+
 * **Pet ID 입력**: 텍스트 상자
 * **사진 URL 선택**: 드롭다운
 * **태그**: 패널
@@ -103,6 +104,7 @@ ht-degree: 1%
 **패널 구성**
 
 다음 제약 조건을 사용하여 패널을 반복으로 설정합니다.
+
 * 최소값: 1
 * 최대값: 4
 

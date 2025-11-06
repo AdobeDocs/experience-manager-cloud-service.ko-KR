@@ -2,10 +2,10 @@
 title: 범용 편집기 확장
 description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 기능을 확장하는 다양한 옵션에 대해 알아봅니다.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 

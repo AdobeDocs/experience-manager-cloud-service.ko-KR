@@ -4,8 +4,8 @@ description: Cloud Manager를 사용하여 SSL 인증서의 상태를 확인하�
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 13%
@@ -32,7 +32,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 | --- | --- |
 | 녹색 | 인증서는 현재 날짜로부터 최소 14일 동안 유효합니다. |
 | 주황색 | 인증서는 14일 이내에 만료됩니다.<br>· 가능한 사이트 액세스 또는 중단을 방지하기 위해 인증서를 갱신하고 Cloud Manager 사용자 인터페이스를 통해 인증서를 교체할 계획이 있는지 확인하십시오.<br>· Cloud Manager에서 인증서 만료가 임박했음을 알리기 위해 UI에 일반 알림을 보냅니다. |
-| 빨간색 | SSL 인증서가 만료되었습니다.<br>만료된 고객 관리 SSL 인증서 업데이트[&#128279;](#update-ssl-certificate) 또는 [SSL 인증서 삭제](#deleting-an-ssl-certificate)를 참조하십시오. |
+| 빨간색 | SSL 인증서가 만료되었습니다.<br>만료된 고객 관리 SSL 인증서 업데이트[ 또는 ](#update-ssl-certificate)SSL 인증서 삭제[를 참조하십시오.](#deleting-an-ssl-certificate) |
 
 ## 만료된 고객 관리 SSL 인증서 업데이트 {#update-ssl-certificate}
 
@@ -92,7 +92,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
 
-1. **SSL 인증서** 페이지에서 이름을 바꿀 **Adobe 관리** SSL 인증서가 있는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. **SSL 인증서** 페이지에서 이름을 바꿀 ![Adobe 관리](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) SSL 인증서가 있는 행의 끝에 있는 **추가 아이콘**&#x200B;을 클릭합니다.
 
 1. 드롭다운 메뉴에서 **이름 바꾸기**&#x200B;를 클릭합니다.
 

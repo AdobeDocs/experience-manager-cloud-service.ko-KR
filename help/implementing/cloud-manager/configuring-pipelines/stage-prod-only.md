@@ -3,12 +3,12 @@ title: 스테이지 전용 및 프로덕션 전용 파이프라인 분할
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 49%

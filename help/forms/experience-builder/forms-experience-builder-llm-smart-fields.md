@@ -4,14 +4,14 @@ description: 지리적 데이터, 비즈니스 분류 및 업계 표준에 대�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 24%
 
 ---
-
 
 # Forms Experience Builder의 LLM 향상 스마트 필드 {#llm-enhanced-smart-fields}
 
@@ -227,7 +227,7 @@ LLM 강화 스마트 필드는 AI의 기본 제공 지식 베이스를 사용하
 스마트 필드는 조건부 규칙에서 매우 잘 작동합니다.
 
     선택한 업종에 따라 관련 옵션을 표시하는 전문 인증 필드를 만드십시오
-    선택한 국가를 기준으로 필터링하는 도시 필드를 추가하십시오.2&rbrace;선택한 연구 분야를 기준으로 적응하는 대학 필드를 포함하십시오
+    선택한 국가를 기준으로 필터링하는 도시 필드를 추가하십시오.2}선택한 연구 분야를 기준으로 적응하는 대학 필드를 포함하십시오
     
 
 ### 유효성 검사 및 사용자 지정
@@ -296,4 +296,3 @@ LLM 지식을 조직의 데이터와 결합:
 * [AI 기반 양식 만들기](forms-experience-builder-prompt-examples-library.md)
 * [규칙 생성 및 비즈니스 논리](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [양식 제출 및 통합](form-submission-integration.md)
-

@@ -3,9 +3,9 @@ title: 적응형 양식 블록 구성 요소 및 해당 속성
 description: 이 문서는 AEM Forms용 Edge Delivery Services에서 사용 가능한 양식 구성 요소와 해당 속성에 대한 개요를 제공합니다.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 

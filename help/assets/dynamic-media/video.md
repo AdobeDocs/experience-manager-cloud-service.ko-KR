@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
+source-wordcount: '10063'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 >
 >Dynamic Media에서 비디오로 작업하기 전에 Adobe Experience Manager 관리자가 Dynamic Media Cloud Services를 이미 활성화하고 구성했는지 확인하십시오.
 >
->* Dynamic Media 구성 및 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)에서 [Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)을(를) 참조하십시오.
+>* Dynamic Media 구성 및 [Dynamic Media 문제 해결](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)에서 [Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/troubleshoot-dm.md)을(를) 참조하십시오.
 >
 
 1. 다음을 수행하여 **Dynamic Media 비디오 업로드**:
@@ -60,7 +60,6 @@ ht-degree: 2%
    * 비디오 자산 미리 보기 및 게시
 
       * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
-
         [비디오 미리 보기](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리 보기](/help/assets/dynamic-media/previewing-assets.md)
         [비디오 표현물 관리](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ ht-degree: 2%
    * 비디오 메타데이터 작업
 
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
-
         [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [디지털 에셋용 메타데이터 관리](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ ht-degree: 2%
    * 서드파티 WCM 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-
         [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-
         [웹 페이지에 비디오 뷰어를 포함합니다](/help/assets/dynamic-media/embed-code.md).
 
    * [비디오 보고서 생성](#viewing-video-reports).
@@ -135,7 +131,7 @@ Dynamic Media의 비디오는 데스크톱, 태블릿 및 모바일 장치를 �
 * 전체 메타데이터 지원을 통해 비디오를 구성, 탐색 및 검색하여 비디오 자산을 효율적으로 관리할 수 있습니다.
 * 웹 및 데스크탑, 태블릿 및 모바일 장치에 응용 비디오 세트를 제공합니다.
 
-응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)를 참조하세요.
+응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)를 참조하세요.
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources)에서 [Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) 및 [Experience Manager Assets용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)에서 [Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) 및 [Experience Manager Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)도 참조하세요.
 
 ## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 단일 플레이어에 결합할 수 있습니다. 임베드된 재생이 있을 수 있으며, 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용할 수 있습니다. 이 모든 기능을 사용하면 리치 미디어 콘텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확장하고 간소화된 비디오 경험을 보장할 수 있습니다.
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources)에서 [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)에서 [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)도 참조하세요.
 
 
 ### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH는 국제 표준이고 HLS은 Apple 표준입니다. 둘 다 응용 비디�
 
 점진적 비디오는 사용자의 데스크탑 시스템 또는 모바일 디바이스에 로컬로 비디오를 다운로드 및 저장하여 전달됩니다.
 
-다음 표에서는 [Dynamic Media HTML5 비디오 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)를 사용하여 데스크톱 컴퓨터 및 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법을 설명합니다.
+다음 표에서는 [Dynamic Media HTML5 비디오 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)를 사용하여 데스크톱 컴퓨터 및 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법을 설명합니다.
 
 <table>
  <tbody>
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ko).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -540,7 +536,7 @@ Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여�
 |  | 주석 트랙 |
 |  | 설명 오디오 |
 
-Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media [&#128279;](/help/assets/file-format-support.md)에서 지원되는 모든 비디오 형식 은(는) 여러 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+Dynamic Media [Video_360](/help/assets/file-format-support.md) 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media *에서 지원되는 모든*&#x200B;비디오 형식 은(는) 여러 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
 
 ### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
@@ -584,8 +580,8 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
       |--- |--- |
       | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 오디오 트랙 파일 또는 캡션 파일에 같은 파일 이름을 사용할 수 없습니다. |
       | 언어 | 오디오 트랙의 올바른 언어를 선택합니다. |
-      | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 `English` 언어가 선택된 레이블에 `[Original]`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
-      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예, `English [Original]`. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
+      | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 `[Original]` 언어가 선택된 레이블에 `English`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
+      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예를 들어, `English [Original]`과 같이 입력합니다. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
 
       필요한 경우 나중에 이 오디오 트랙 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
 
@@ -605,7 +601,7 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
    ![캡션 만들기 옵션](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *캡션 만들기 드롭다운 메뉴에는 파일 업로드, 오디오 트랙 변환 및 캡션 번역의 세 가지 옵션이 있습니다.*
 
-+++**옵션 1:** *사용하려는 언어로 된 기존 캡션 파일이 있습니다.*(**[!UICONTROL 파일 업로드]** 옵션)
+   +++**옵션 1:** *사용하려는 언어로 된 기존 캡션 파일이 있습니다.*(**[!UICONTROL 파일 업로드]** 옵션)
 
    1. 페이지 오른쪽 상단 근처에 있는 **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
    1. 기존 `.vtt`개 파일 중 하나 이상으로 이동하여 선택한 다음 엽니다.
@@ -629,9 +625,9 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
    1. 이전 단계에서 **[!UICONTROL 저장]**&#x200B;을 선택하는 대신 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택한 경우에도 업로드된 파일의 처리 상태를 볼 수 있습니다. [업로드된 캡션 및 오디오 추적 파일의 주기 상태 보기](#lifecycle-status-video)를 참조하세요.
    1. 8단계로 진행합니다.
 
-+++
+   +++
 
-+++**옵션 2:** *AI가 여러 언어로 캡션 파일을 생성하기를 원합니다*(**[!UICONTROL 오디오 트랙 변환]** 옵션)
+   +++**옵션 2:** *AI가 여러 언어로 캡션 파일을 생성하기를 원합니다*(**[!UICONTROL 오디오 트랙 변환]** 옵션)
 
    1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 오디오 트랙 변환]**&#x200B;을 클릭합니다.
 
@@ -663,9 +659,9 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
       필요한 경우 나중에 특정 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 메타데이터 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
    1. 8단계로 진행합니다.
 
-+++
+   +++
 
-+++**옵션 3:** *캡션 파일(`.vtt`)의 텍스트를 수정하고, 다시 업로드하여 이전 `.vtt` 파일을 바꾼 다음 AI가 수정된 파일을 번역하도록 해야 함*(**[!UICONTROL 캡션 번역]** 옵션)
+   +++**옵션 3:** *캡션 파일(`.vtt`)의 텍스트를 수정하고, 다시 업로드하여 이전 `.vtt` 파일을 바꾼 다음 AI가 수정된 파일을 번역하도록 해야 함*(**[!UICONTROL 캡션 번역]** 옵션)
 
    1. **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 캡션 번역]**&#x200B;을 클릭합니다. 이 옵션은 하나 이상의 캡션 파일이 이미 추가되고 처리된 경우에 사용할 수 있습니다.
 
@@ -698,7 +694,7 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
 
    1. 8단계로 진행합니다.
 
-+++
+   +++
 
 1. (선택 사항) 게시 전에 비디오를 미리 보고 캡션 및 오디오가 예상대로 작동하는지 확인합니다. [여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기](#preview-video-audio-subtitle)를 참조하세요.
 1. 비디오를 게시합니다. [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
@@ -920,7 +916,7 @@ Dynamic Media의 [접근성](/help/assets/dynamic-media/accessibility-dm.md)도 
 
 Dynamic Media는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환할 수 있습니다. 이 전환은 JSON 텍스트를 웹 페이지에 숨김이나 비디오의 전체 트랜스크립트로 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 콘텐츠를 크롤링/색인화하여 비디오를 보다 쉽게 검색하고 고객에게 비디오 콘텐츠에 대한 자세한 내용을 제공할 수 있습니다.
 
-URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
+URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
 
 **비디오에 캡션을 추가하려면:**
 
@@ -1220,7 +1216,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
    * Dynamic Media의 응용 비디오 세트를 사용하여 비디오가 수집되지 않았습니다.
 
 * Dynamic Media에 연결하는 데 문제가 있으면 `IOException`이(가) 기록됩니다.
-* 비디오가 DASH 형식을 사용하여 처리되지 않은 동안 전달된 `manifestType` 매개 변수가 `ManifestType.DASH`이면 `UnsupportedOperationException`이(가) 기록됩니다.
+* 비디오가 DASH 형식을 사용하여 처리되지 않은 동안 전달된 `UnsupportedOperationException` 매개 변수가 `manifestType`이면 `ManifestType.DASH`이(가) 기록됩니다.
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

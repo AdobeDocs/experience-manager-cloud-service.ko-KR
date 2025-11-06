@@ -3,8 +3,8 @@ title: Adobe Developer App Builder을 사용하여  [!DNL Adobe Experience Manag
 description: Adobe Developer App Builder을 사용하여  [!DNL Adobe Experience Manager] as a Cloud Service 확장.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -27,7 +27,7 @@ App Builder은 고객이 다양한 사용 사례에서 Adobe Experience Manager�
 
 >[!NOTE]
 >
-> App Builder을 사용하려는 AEM 6.5 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager 6.5 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=ko)을 참조하십시오.
+> App Builder을 사용하려는 AEM 6.5 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager 6.5 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)을 참조하십시오.
 
 ## 아키텍처 {#architecture}
 

@@ -3,9 +3,9 @@ title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA를 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,17 +28,17 @@ ht-degree: 1%
 사전 요구 사항은 간단합니다.
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
    * Forms은 외부 SPA를 포함하도록 업데이트된 AEM 프로젝트의 기반입니다.
-   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
+   * 이 문서의 샘플에 대해 Adobe은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)의 시작점을 사용합니다.
 * 즉시 통합하려는 작동하고 외부 React SPA가 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
 
 먼저 외부 SPA를 AEM 프로젝트에 업로드해야 합니다.
 
-1. `/ui.frontend` 프로젝트 폴더의 `src`을(를) React 응용 프로그램의 `src` 폴더로 바꾸십시오.
-1. `/ui.frontend/package.json` 파일에 있는 앱의 `package.json`에 추가 종속성을 포함하십시오.
+1. `src` 프로젝트 폴더의 `/ui.frontend`을(를) React 응용 프로그램의 `src` 폴더로 바꾸십시오.
+1. `package.json` 파일에 있는 앱의 `/ui.frontend/package.json`에 추가 종속성을 포함하십시오.
    * SPA SDK 종속성이 [권장 버전](/help/implementing/developing/hybrid/getting-started-react.md#dependencies)인지 확인하십시오.
 1. `/public` 폴더에 모든 사용자 지정을 포함합니다.
 1. `/public/index.html` 파일에 추가된 모든 인라인 스크립트나 스타일을 포함합니다.
@@ -67,13 +67,13 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### ModelManager 초기화 {#model-manager-initialization}
 
-앱이 렌더링되기 전에 AEM `ModelStore`의 생성을 처리하려면 [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)을(를) 초기화해야 합니다.
+앱이 렌더링되기 전에 AEM [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)의 생성을 처리하려면 `ModelStore`을(를) 초기화해야 합니다.
 
 응용 프로그램의 `src/index.js` 파일 내에서 또는 응용 프로그램의 루트가 렌더링되는 모든 위치에서 이 초기화를 수행해야 합니다.
 
-이 초기화를 수행하려면 `ModelManager`에서 제공한 `initializationAsync` API를 사용할 수 있습니다.
+이 초기화를 수행하려면 `initializationAsync`에서 제공한 `ModelManager` API를 사용할 수 있습니다.
 
-다음 스크린샷은 간단한 React 애플리케이션에서 `ModelManager`의 초기화를 활성화하는 방법을 보여 줍니다. 유일한 제약 조건은 `ReactDOM.render()` 전에 `initializationAsync`을(를) 호출해야 한다는 것입니다.
+다음 스크린샷은 간단한 React 애플리케이션에서 `ModelManager`의 초기화를 활성화하는 방법을 보여 줍니다. 유일한 제약 조건은 `initializationAsync` 전에 `ReactDOM.render()`을(를) 호출해야 한다는 것입니다.
 
 ![ModelManager 초기화](assets/external-spa-initialize-modelmanager.png)
 
@@ -173,7 +173,7 @@ WKND SPA 프로젝트에서 텍스트를 추가해야 하는 예제 페이지를
 
    ![페이지에 구성 요소 추가](assets/external-spa-add-component.png)
 
-   `pagePath` 및 `itemPath` 값이 속성으로 설정된 페이지 내에서 필요한 위치에 `AEMText` 구성 요소를 추가할 수 있습니다. `pagePath`은(는) 필수 속성입니다.
+   `AEMText` 및 `pagePath` 값이 속성으로 설정된 페이지 내에서 필요한 위치에 `itemPath` 구성 요소를 추가할 수 있습니다. `pagePath`은(는) 필수 속성입니다.
 
 #### AEM에서 텍스트 컨텐츠 편집 확인 {#verify-text-edit}
 
@@ -247,7 +247,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![aem의 text_20 노드](assets/external-spa-text20-aem.png)
 
-콘텐츠 작성자가 이 구성 요소를 업데이트하면 `/content/wknd-spa-react/us/en/home`의 `root/responsivegrid/text_20`에 새 `text_20` 노드가 만들어집니다.
+콘텐츠 작성자가 이 구성 요소를 업데이트하면 `text_20`의 `root/responsivegrid/text_20`에 새 `/content/wknd-spa-react/us/en/home` 노드가 만들어집니다.
 
 ![text20 노드](assets/external-spa-text20-node.png)
 
@@ -261,7 +261,7 @@ mvn clean install -PautoInstallSinglePackage
 * 구성 요소는 모든 수준에서 만들 수 있습니다.
    * 이전 예에서 `itemPath='text_20'`을(를) 제공하면 새 노드가 페이지 바로 아래에 만들어집니다. 즉, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * 새 노드가 만들어지는 노드의 경로는 `itemPath`을(를) 통해 제공된 경우 유효해야 합니다.
-   * 이 예제에서는 새 노드 `text_20`을(를) 만들려면 `root/responsivegrid`이(가) 있어야 합니다.
+   * 이 예제에서는 새 노드 `root/responsivegrid`을(를) 만들려면 `text_20`이(가) 있어야 합니다.
 * 리프 구성 요소 생성만 지원됩니다. 가상 컨테이너 및 페이지는 이후 버전에서 지원됩니다.
 
 ### 가상 컨테이너 {#virtual-containers}
@@ -306,9 +306,9 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ### 루트 노드 ID {#root-node-id}
 
-기본적으로 React 응용 프로그램이 요소 ID `spa-root`의 `div` 내에서 렌더링된다고 가정할 수 있습니다. 필요한 경우 이 구문을 사용자 지정할 수 있습니다.
+기본적으로 React 응용 프로그램이 요소 ID `div`의 `spa-root` 내에서 렌더링된다고 가정할 수 있습니다. 필요한 경우 이 구문을 사용자 지정할 수 있습니다.
 
-예를 들어 요소 ID `root`의 `div` 내에서 응용 프로그램이 렌더링되는 SPA가 있다고 가정해 보겠습니다. 이 구문은 세 개의 파일에 반영되어야 합니다.
+예를 들어 요소 ID `div`의 `root` 내에서 응용 프로그램이 렌더링되는 SPA가 있다고 가정해 보겠습니다. 이 구문은 세 개의 파일에 반영되어야 합니다.
 
 1. React 응용 프로그램의 `index.js`(또는 `ReactDOM.render()`이(가) 호출된 경우)에서
 
@@ -353,7 +353,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 
-   * `@adobe/cq-spa-page-model-manager`에서 제공한 `toAEMPath` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
+   * `toAEMPath`에서 제공한 `@adobe/cq-spa-page-model-manager` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
       * 라우팅에 필요한 경로
       * SPA가 편집되는 AEM 인스턴스의 원본 URL
       * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
@@ -372,8 +372,8 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 
 다음 참조 자료는 AEM의 컨텍스트에서 SPA를 이해하는 데 도움이 될 수 있습니다.
 
-* [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+* [AEM의 헤드풀 및 헤드리스](/help/implementing/developing/headful-headless.md)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)

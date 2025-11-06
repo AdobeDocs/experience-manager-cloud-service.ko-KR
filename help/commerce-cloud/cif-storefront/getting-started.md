@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계 프로세스�
 
 첫 번째 온보딩 단계는 Adobe에서 수행합니다. 가격 책정 및 프로비저닝에 대한 자세한 내용은 영업 담당자에게 문의해야 합니다.
 
-CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ko)을 참조하세요.
+CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)을 참조하세요.
 
 두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
@@ -57,7 +57,7 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 
 ### Cloud Manager 사용자 인터페이스(기본값) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343273?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 이 구성은 환경 세부 정보 페이지의 대화 상자를 사용하여 수행할 수 있습니다. Commerce 지원 프로그램에 대해 이 페이지를 볼 때 엔드포인트가 현재 구성되지 않은 경우 버튼이 표시됩니다.
 
@@ -77,7 +77,7 @@ Adobe I/O CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단
 
 1. Cloud Manager 플러그인으로 Adobe I/O CLI를 다운로드하십시오.
 
-   * [Adobe CLI 플러그인과 함께 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 &#x200B;](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI 플러그인과 함께 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 ](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. AEM as a Cloud Service 프로그램을 사용하여 Adobe I/O CLI를 인증합니다.
 
@@ -128,14 +128,19 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 * GraphQL 클라이언트 - commerce 백엔드 통신용으로 구성된 GraphQL 클라이언트를 선택합니다. 이 클라이언트는 일반적으로 기본 상태를 유지해야 합니다.
 * 스토어 뷰 - 스토어 뷰 식별자. 비어 있는 경우 기본 스토어 보기가 사용됩니다.
 * GraphQL 프록시 경로 - AEM의 GraphQL 프록시가 상거래 백엔드 GraphQL 엔드포인트에 대한 요청을 프록시하는 데 사용하는 URL 경로.
+
   >[!NOTE]
   >
   > 대부분의 설정에서 기본값 `/api/graphql`을(를) 변경할 수 없습니다. 제공된 GraphQL 프록시를 사용하지 않는 고급 설정만 이 설정을 변경해야 합니다.
+
 * 카탈로그 UID 지원 활성화 - 상거래 백엔드 GraphQL 호출에서 ID 대신 UID에 대한 지원을 활성화합니다.
+
   >[!NOTE]
   >
   > UID에 대한 지원은 Adobe Commerce 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 UID를 활성화합니다.
+
 * 카탈로그 루트 범주 식별자 - 스토어 카탈로그 루트의 식별자(UID 또는 ID)
+
   >[!CAUTION]
   >
   > CIF 핵심 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid`(으)로 대체되었습니다. 프로젝트에서 CIF 핵심 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 범주 UID을 &quot;카탈로그 루트 범주 식별자&quot;로 사용해야 합니다.

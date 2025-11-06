@@ -3,15 +3,15 @@ title: Edge Delivery 파이프라인 추가
 description: Edge Delivery 파이프라인을 추가하여 코드를 빌드하고 프로덕션 환경에 배포하는 방법을 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 10%
 **Edge Delivery 파이프라인을 추가하려면:**
 
 1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
-1. **빠른 액세스** 섹션에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
 1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.

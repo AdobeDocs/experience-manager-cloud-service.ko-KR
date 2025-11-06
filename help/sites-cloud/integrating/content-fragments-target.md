@@ -5,9 +5,9 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '1994'
 ht-degree: 92%
 
 ---
@@ -112,7 +112,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 다음 절차를 통해 AEM에서 Target 클라우드 구성을 만드십시오.
 
-1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**&#x200B;로 이동합니다.
+1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**로 이동합니다.
 예: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Experience Cloud** 개요 페이지가 열립니다.
@@ -130,18 +130,18 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    ![Target-설정-구성-대화 상자](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+<!-- 
+Can this still occur?
 
-   >[!NOTE]
-   >
-   >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   >
-   >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Set the property **disable** to **false**.
-   >1. Select **Save All**.
-
-   -->
+>[!NOTE]
+>
+>When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
+>
+>1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
+>1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+>1. Set the property **disable** to **false**.
+>1. Select **Save All**.
+-->
 
 1. **Adobe Target 설정** 대화 상자에서 다음 속성들의 값을 입력합니다.
 
@@ -157,46 +157,46 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    * **A4T Analytics 클라우드 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 이는 콘텐츠를 타겟팅할 때 보고 소스로서의 Adobe Analytics를 사용하는 경우 필요합니다.
 
-     <!-- Is this needed?
-     If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
-     -->
+<!-- Is this needed?
+If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+-->
 
-   * **정확한 타겟팅 사용:** 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
+* **정확한 타겟팅 사용:** 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
-   * **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않고 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
+* **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않고 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
 
-   * **클라이언트 라이브러리:** 기본값은 AT.js입니다(mbox.js는 더 이상 사용되지 않음).
+* **클라이언트 라이브러리:** 기본값은 AT.js입니다(mbox.js는 더 이상 사용되지 않음).
 
-     >[!NOTE]
-     >
-     >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=ko)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
-     >
-     >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
-     >
-     >mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
-     >
-     >AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
-     >
-     >* 웹 구현에 대한 페이지 로드 시간 개선
-     >* 보안 개선
-     >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
-     >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
-     >
-     >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
+  >[!NOTE]
+  >
+  >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+  >
+  >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
+  >
+  >mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
+  >
+  >AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
+  >
+  >* 웹 구현에 대한 페이지 로드 시간 개선
+  >* 보안 개선
+  >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
+  >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+  >
+  >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
-   * **태그 관리 시스템을 사용하여 클라이언트 라이브러리 전송** - Adobe Launch 또는 다른 태그 관리 시스템(또는 더 이상 사용되지 않는 DTM)의 클라이언트 라이브러리를 사용하려면 이 옵션을 선택하십시오.
+* **태그 관리 시스템을 사용하여 클라이언트 라이브러리 전송** - Adobe Launch 또는 다른 태그 관리 시스템(또는 더 이상 사용되지 않는 DTM)의 클라이언트 라이브러리를 사용하려면 이 옵션을 선택하십시오.
 
-   * **사용자 정의 AT.js**: 사용자 정의 AT.js를 찾아 업로드합니다. 기본 라이브러리를 사용하려면 비워 둡니다.
+* **사용자 정의 AT.js**: 사용자 정의 AT.js를 찾아 업로드합니다. 기본 라이브러리를 사용하려면 비워 둡니다.
 
-     >[!NOTE]
-     >
-     >Adobe Target 구성 마법사에 옵트인하면 정확한 타겟팅은 기본적으로 활성화되어 있습니다.
-     >
-     >정확한 타겟팅은 클라우드 서비스 구성이 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기함을 의미합니다. 결과적으로 성능 측면에서 정확한 타겟팅을 사용하면 콘텐츠를 로드하기 전에 몇 밀리초의 지연이 발생할 수 있습니다.
-     >
-     >작성자 인스턴스에서는 정확한 타겟팅이 항상 활성화되어 있습니다. 그러나 게시 인스턴스에서는 클라우드 서비스 구성에서 정확한 타겟팅 옆에 있는 확인 표시를 지움으로써 정확한 타겟팅을 전역적으로 끌 수도 있습니다(**http://localhost:4502/etc/cloudservices.html**). 또한 클라우드 서비스 구성의 설정에 관계없이 개별 구성 요소에 대해 정확한 타겟팅을 켜거나 끌 수 있습니다.
-     >
-     >타겟팅된 구성 요소를 ***이미*** 만든 다음 이 설정을 변경하는 경우, 해당 변경 내용은 이들 구성 요소에 영향을 미치지 않습니다. 이들 구성 요소는 직접 변경해야 합니다.
+  >[!NOTE]
+  >
+  >Adobe Target 구성 마법사에 옵트인하면 정확한 타겟팅은 기본적으로 활성화되어 있습니다.
+  >
+  >정확한 타겟팅은 클라우드 서비스 구성이 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기함을 의미합니다. 결과적으로 성능 측면에서 정확한 타겟팅을 사용하면 콘텐츠를 로드하기 전에 몇 밀리초의 지연이 발생할 수 있습니다.
+  >
+  >작성자 인스턴스에서는 정확한 타겟팅이 항상 활성화되어 있습니다. 그러나 게시 인스턴스에서는 클라우드 서비스 구성(**`http://localhost:4502/etc/cloudservices.html`**)에서 정확한 타겟팅 옆에 있는 확인 표시를 지움으로써 정확한 타겟팅을 전역적으로 끌 수도 있습니다. 또한 클라우드 서비스 구성의 설정에 관계없이 개별 구성 요소에 대해 정확한 타겟팅을 켜거나 끌 수 있습니다.
+  >
+  >타겟팅된 구성 요소를 ***이미*** 만든 다음 이 설정을 변경하는 경우, 해당 변경 내용은 이들 구성 요소에 영향을 미치지 않습니다. 이들 구성 요소는 직접 변경해야 합니다.
 
 1. Target에 연결하려면 **Adobe Target에 연결**&#x200B;을 클릭하십시오. 정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다. 메시지에서 **확인**&#x200B;을 클릭한 다음 대화 상자에서 **확인**&#x200B;을 클릭합니다.
 
@@ -241,7 +241,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ko).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 
 ## Adobe Target에서 콘텐츠 조각 사용 {#using-your-content-fragments-in-adobe-target}
 
-앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ko)를 참조하십시오.
+앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -378,10 +378,10 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [핵심 구성 요소 - 콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)
+* [핵심 구성 요소 - 콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 개발](https://developers.adobetarget.com/)
 
-* [Adobe Target - 최적화 또는 개인화를 지원하기 위해 Target 활동에서 AEM 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ko)
+* [Adobe Target - 최적화 또는 개인화를 지원하기 위해 Target 활동에서 AEM 콘텐츠 조각 사용](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target - AEM 경험 조각 및 콘텐츠 조각 개요](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=ko)
+* [Adobe Target - AEM 경험 조각 및 콘텐츠 조각 개요](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)

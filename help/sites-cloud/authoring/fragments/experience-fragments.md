@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 91%
@@ -46,12 +46,13 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 >[!NOTE]
 >
 >**[콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)** 및 **경험 조각**&#x200B;은 AEM 내의 다양한 기능입니다.
+>
 >* **콘텐츠 조각**&#x200B;은 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 에디토리얼 콘텐츠입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -79,8 +80,8 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 ## 경험 조각 구성 {#organizing-your-experience-fragments}
 
 권장 사항:
-* 폴더를 사용하여 경험 조각 구성하는 것이 좋습니다,
 
+* 폴더를 사용하여 경험 조각 구성하는 것이 좋습니다,
 * [이러한 폴더에 허용된 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
 폴더를 만들면 다음과 같은 작업을 수행할 수 있습니다.

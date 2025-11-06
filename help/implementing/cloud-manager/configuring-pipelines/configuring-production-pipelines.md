@@ -5,11 +5,11 @@ index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 35%
 >프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 참조하십시오. 이 여정을 사용하면 AEM 사이트의 프론트엔드 개발을 간소화하여 AEM 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
 
 1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
-1. **빠른 액세스** 섹션에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
 1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.

@@ -4,9 +4,9 @@ description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조�
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ AEM SDK를 사용하여 사용자 정의 코드를 빌드하고 배포합니다.
 
 AEM SDK와 달리 AEM **Headless SDK**&#x200B;는 라이브러리 세트입니다. 이를 사용하여 클라이언트는 HTTP를 통해 빠르고 쉽게 AEM Headless API와 상호 작용할 수 있습니다.
 
-자세한 내용은 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=ko)를 참조하십시오.
+자세한 내용은 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)를 참조하십시오.
 
 ## 추가 개발 도구 {#additional-development-tools}
 
@@ -113,10 +113,10 @@ AEM Headless 프로젝트를 실제로 실행할 수 있는 다음 문서인 [He
 ## 추가 리소스 {#additional-resources}
 
 * [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko)
+* [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [서버측/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [Java™용 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

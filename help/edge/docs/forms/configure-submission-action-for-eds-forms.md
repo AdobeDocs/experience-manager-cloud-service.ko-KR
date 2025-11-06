@@ -2,10 +2,10 @@
 title: Edge Delivery Services를 사용하여 AEM Forms에 제출 액션 구성
 description: Edge Delivery Services를 사용하여 AEM Forms에서 제출 액션을 구성하는 방법을 알아봅니다. 안전하고 효율적으로 양식 데이터를 처리하려면 Forms 제출 서비스와 AEM Publish 제출 액션 중에서 선택합니다.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 

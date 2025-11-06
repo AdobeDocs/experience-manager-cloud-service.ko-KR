@@ -2,9 +2,9 @@
 title: Cloud Manager에서 외부 저장소의 액세스 토큰 관리
 description: AEM Cloud Manager에서 나만의 Git 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 3%

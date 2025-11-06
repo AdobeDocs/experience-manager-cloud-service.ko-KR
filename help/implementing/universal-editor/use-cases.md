@@ -3,9 +3,9 @@ title: 범용 편집기 사용 사례 및 학습 경로
 description: 범용 편집기의 주요 사용 사례와 이를 사용하는 가장 좋은 방법을 알아보고, 자신의 프로젝트에 이를 구현하는 방법에 대해 알아봅니다.
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 

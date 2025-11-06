@@ -5,7 +5,7 @@ keywords: 적응형 양식에 대해 SharePoint 목록을 연결하는 방법? S
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 30%
@@ -59,6 +59,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 >[!NOTE]
 >
 > Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
+>
 > * 이미지 열
 > * 메타데이터 열
 > * 개인 열

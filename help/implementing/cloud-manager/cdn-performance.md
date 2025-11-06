@@ -4,8 +4,8 @@ description: Cloud Manager이 컨텐츠 전달 네트워크(CDN) 성능을 평�
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
@@ -48,7 +48,7 @@ CDN 성능에 대한 자세한 내용 및 개선 방법에 대한 제안을 보�
 
 차트의 시간 범위를 변경하려면 차트 아래의 **보기**&#x200B;를 클릭하십시오.
 
-CDN 성능을 향상시키는 방법에 대한 제안 사항은 **Recommendations** 탭을 선택하십시오.
+CDN 성능을 개선하는 방법에 대한 제안 사항은 **권장 사항** 탭을 선택하십시오.
 
 ![CDN 권장 사항](assets/cdn-performance-recommendations.png)
 

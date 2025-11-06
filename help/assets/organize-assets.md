@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
@@ -75,7 +75,7 @@ Date24/08/2021
    * **날짜 기반 폴더**: 만든 날짜 또는 마지막으로 수정한 날짜를 기준으로 디지털 에셋을 포함합니다.
 
 * 사용자 지정 또는 자동화가 계속 작동하도록 변경되지 않는 폴더의 디렉토리를 만듭니다. 예를 들어 할당된 처리 프로필이 계속 작동합니다.
-* 에셋이 이미 게시되어 있는 경우 [!DNL Experience Manager]을(를) 사용하여 에셋을 다른 폴더로 이동하고 새 위치에서 다시 게시합니다. 원래 게시된 에셋 위치는 새로 다시 게시된 에셋과 함께 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 [!DNL Experience Manager]에 대해 *손실됨*&#x200B;이며 게시를 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 에셋의 게시를 취소한 다음 다른 폴더로 이동하는 것입니다.
+* 에셋이 이미 게시되어 있는 경우 [!DNL Experience Manager]을(를) 사용하여 에셋을 다른 폴더로 이동하고 새 위치에서 다시 게시합니다. 원래 게시된 에셋 위치는 새로 다시 게시된 에셋과 함께 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 *에 대해*&#x200B;손실됨[!DNL Experience Manager]이며 게시를 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 에셋의 게시를 취소한 다음 다른 폴더로 이동하는 것입니다.
 
 ## 태그를 사용하여 에셋 구성 {#use-tags-to-organize-assets}
 
@@ -100,7 +100,7 @@ Date24/08/2021
 
 * [에셋 메타데이터 편집](meta-edit.md)
 * [Assets의 스마트 태그](smart-tags.md)
-* [검색 패널에 태그 술어 추가](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [검색 패널에 태그 술어 추가](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## 컬렉션으로 구성 {#organize-as-collections}
 

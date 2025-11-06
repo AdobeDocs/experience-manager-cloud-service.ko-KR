@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 양식 제출 및 통합
 
@@ -121,7 +121,6 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
     - 부서가 &quot;Sales&quot;인 경우 sales-hr@company.com
     - 기본값을 hr@company.com
 으로 보냅니다.
-
 ### 3단계: API 통합 설정
 
 **REST API 구성:**

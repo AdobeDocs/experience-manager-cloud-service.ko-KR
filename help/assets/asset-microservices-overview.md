@@ -3,9 +3,9 @@ title: 자산 마이크로서비스를 사용하여 자산 처리
 description: 클라우드 기반 및 확장 가능한 자산 처리 마이크로서비스를 사용하여 디지털 자산을 처리합니다.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -97,5 +97,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >* [자산 마이크로서비스 사용 시작](asset-microservices-configure-and-use.md)
 >* [지원되는 파일 형식](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)
+>* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [다이렉트 바이너리 액세스에 대한 Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

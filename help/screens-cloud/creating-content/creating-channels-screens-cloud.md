@@ -1,17 +1,17 @@
 ---
-title: Screensas a Cloud Service 에서 채널 만들기 및 관리
-description: 이 페이지에서는 Screensas a Cloud Service 에서 채널을 만들고 관리하는 방법을 설명합니다.
+title: Screens as a Cloud Service에서 채널 만들기 및 관리
+description: 이 페이지에서는 Screens as a Cloud Service에서 채널을 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
 
 ---
 
-# Screensas a Cloud Service 에서 채널 만들기 및 관리 {#creating-channels-screens-cloud}
+# Screens as a Cloud Service에서 채널 만들기 및 관리 {#creating-channels-screens-cloud}
 
 AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 ***채널***&#x200B;은(는) 콘텐츠 시퀀스(이미지 및 비디오), 웹 사이트 또는 단일 페이지 응용 프로그램을 표시합니다.
@@ -24,13 +24,13 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 * 채널에서 콘텐츠 관리 및 편집
 * [Screens 서비스 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ko-KR)에서 채널의 할당 및 활성화 일정을 관리합니다.
 
-## Screensas a Cloud Service 에서 새 시퀀스 채널을 만드는 절차 {#create-new-channel}
+## Screens as a Cloud Service에서 새 시퀀스 채널을 만드는 절차 {#create-new-channel}
 
 >[!NOTE]
->**전제 조건**
->안내서의 섹션을 시작하기 전에 [이 Screensas a Cloud Service 에서 프로젝트 만들기 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)를 검토하십시오.
+>**사전 요구 사항**
+>안내서의 이 섹션을 시작하기 전에 [Screens as a Cloud Service에서 프로젝트 만들기 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)를 검토하십시오.
 
-아래 단계에 따라 Screensas a Cloud Service 에서 시퀀스 채널을 만듭니다.
+Screens as a Cloud Service에서 시퀀스 채널을 만들려면 아래 단계를 따르십시오.
 
 1. Screens 컨텐츠 공급자로 이동합니다.
 
@@ -78,7 +78,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >채널의 내용을 미리 보려면 **미리 보기**&#x200B;를 클릭하십시오.
+   >채널의 내용을 미리 보려면 **미리 보기**를 클릭하십시오.
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 만들기 마법사에서 사용할 수 있는 템플릿 {#available-templates}
@@ -95,7 +95,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 이 기능을 사용하면 채널에 대한 기본 활성화 일정을 정의하고 표시에 대한 모든 할당에 대해 기본적으로 사용할 수 있습니다. 이는 번거로운 스케줄 정의를 반복할 필요가 없도록 하는 방법을 제공한다.
 
-1. [Screens 서비스 공급자](https://experience.adobe.com/screens)(으)로 이동합니다.
+1. [Screens 서비스 공급자](https://experience.adobe.com/screens)&#x200B;(으)로 이동합니다.
 
 ### 채널에 대한 기본 할당 세부 정보 만들기 {#create-default}
 
@@ -114,6 +114,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
    ![이미지](/help/screens-cloud/assets/display/Assignments3.png)
 
 이 타일에는 다음 정보가 표시됩니다.
+
 * 디스플레이에서 채널의 기본 우선 순위입니다.
 * 채널 재생이 예정된 활성화 시작 및 종료 날짜입니다.
 * 반복에 대한 합성 보기(시간별/일별/주별/월별/연간 및 해당 반복에 제공된 이름).
@@ -122,7 +123,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 기본 할당 세부 정보가 있는 채널을에 할당하면 일반 채널과 동일한 방식으로 표시할 수 있으며, 매번 사용자 지정 세부 정보를 수동으로 정의하는 대신 기본 할당 세부 정보를 사용하는 옵션이 추가되었습니다.
 
-1. 채널을 할당할 디스플레이 세부 정보 페이지로 이동하여 **채널 할당**&#x200B;을 클릭합니다.
+1. 채널을 할당할 디스플레이 세부 정보 페이지로 이동하여 **채널 할당**을 클릭합니다.
 또는 [인벤토리](https://experience.adobe.com/screens/displays) 보기에서 원하는 표시를 선택하고 **채널 할당**&#x200B;을 클릭합니다.
 1. 채널 할당 대화 상자가 열립니다.
 
@@ -179,4 +180,4 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. 플레이어를 관리하기 전에 Screensas a Cloud Service Screens 에서 [채널 게시](manage-publish.md)를 참조하십시오.
+이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. Screens Services Provider에서 플레이어를 관리하기 전에 [Screens as a Cloud Service에서 채널 게시](manage-publish.md)를 참조하십시오.

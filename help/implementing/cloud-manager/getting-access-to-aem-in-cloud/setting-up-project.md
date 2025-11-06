@@ -1,11 +1,11 @@
 ---
 title: 프로젝트 설정
-description: AEM 프로젝트를 Maven로 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
+description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 68%
@@ -14,17 +14,17 @@ ht-degree: 68%
 
 # 프로젝트 설정 {#project-setup}
 
-AEM 프로젝트를 Maven로 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
+Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 
 ## 프로젝트 설정 세부 정보 {#project-setup-details}
 
-Cloud Manager을 사용하여 성공적으로 빌드하고 배포하려면 AEM Projects가 다음 지침을 준수해야 합니다.
+Cloud Manager을 사용하여 성공적으로 빌드하고 배포하려면 AEM 프로젝트가 다음 지침을 준수해야 합니다.
 
 * 프로젝트는 [Apache Maven](https://maven.apache.org)을 사용하여 빌드해야 합니다.
 * git 저장소의 루트에 `pom.xml` 파일이 있어야 합니다. 이 `pom.xml` 파일은 여러 하위 모듈을 참조할 수 있습니다(다른 하위 모듈 등이 있을 수 있음).
 * `pom.xml` 파일에 추가 Maven 아티팩트 저장소에 대한 참조를 추가할 수 있습니다. 구성된 경우 [암호로 보호된 아티팩트 저장소](#password-protected-maven-repositories)에 대한 액세스가 지원됩니다. 그러나 네트워크로 보호된 아티팩트 저장소에 대한 액세스는 지원되지 않습니다.
-* 배포 가능한 콘텐츠 패키지가 `target` 디렉터리에 포함된 콘텐츠 패키지 `.zip` 파일에서 검색되었습니다. 여러 하위 모듈에서 콘텐츠 패키지를 생성할 수 있습니다.
-* 배포 가능한 Dispatcher 아티팩트는 `conf` 및 `conf.d` 디렉터리가 있는 `.zip` 파일(`target` 디렉터리에도 포함됨)을 스캔하여 검색됩니다.
+* 배포 가능한 콘텐츠 패키지가 `.zip` 디렉터리에 포함된 콘텐츠 패키지 `target` 파일에서 검색되었습니다. 여러 하위 모듈에서 콘텐츠 패키지를 생성할 수 있습니다.
+* 배포 가능한 Dispatcher 아티팩트는 `.zip` 및 `target` 디렉터리가 있는 `conf` 파일(`conf.d` 디렉터리에도 포함됨)을 스캔하여 검색됩니다.
 * 콘텐츠 패키지가 두 개 이상인 경우 패키지 배포 순서가 보장되지 않습니다. 특정 순서가 필요한 경우 콘텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
 * 배포 중 패키지를 [건너뛸](#skipping-content-packages) 수 있습니다.
 
@@ -110,7 +110,7 @@ Cloud Manager을 사용하여 성공적으로 빌드하고 배포하려면 AEM P
 
 >[!NOTE]
 >
->Cloud Manager에서 해당 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)과 함께 이 코드를 평가하지 않으므로 암호로 보호된 Maven 저장소에서 아티팩트를 신중하게 배포하십시오. 이 메서드는 드문 경우에만 예약해야 하며 AEM과 관련이 없는 코드에만 적용되어야 합니다. Adobe은 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드를 모두 포함하는 것을 권장합니다. 이렇게 하면 배포 프로세스 전반에 걸쳐 투명성과 유지 관리성이 향상됩니다.
+>Cloud Manager에서 해당 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)과 함께 이 코드를 평가하지 않으므로 암호로 보호된 Maven 저장소에서 아티팩트를 신중하게 배포하십시오. 이 메서드는 드문 경우에만 예약해야 하며 AEM과 관련이 없는 코드에만 적용되어야 합니다. Adobe에서는 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드를 모두 포함하는 것이 좋습니다. 이렇게 하면 배포 프로세스 전반에 걸쳐 투명성과 유지 관리성이 향상됩니다.
 
 **Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면:**
 

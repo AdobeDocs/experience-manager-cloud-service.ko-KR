@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 40%
 
 ---
@@ -69,7 +69,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 * 이 도구는 이미 실행된 쿼리를 그 관련 성능 특성 및 쿼리 계획과 함께 표시합니다.
 * 이 도구를 사용하면 단순히 쿼리 플랜을 표시하는 것부터 전체 쿼리를 실행하는 것까지 다양한 수준에서 애드혹 쿼리를 수행할 수 있습니다.
 
-쿼리 성능 도구는 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko#queries)을 통해 연결할 수 있습니다. AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
+쿼리 성능 도구는 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)을 통해 연결할 수 있습니다. AEM as a Cloud Service의 쿼리 성능 도구는 AEM 6.x 이상 버전에서의 쿼리 실행에 관한 세부 정보를 제공합니다.
 
 이 차트는 쿼리 최적화를 위해 쿼리 성능 도구를 사용하는 일반적인 흐름을 설명합니다.
 
@@ -111,7 +111,8 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 
 ## 쿼리 성능 도구 {#query-performance-tool}
 
-쿼리 성능 도구(`/libs/granite/operations/content/diagnosistools/queryPerformance.html`에 있으며 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko#queries)를 통해 사용 가능)는 다음을 제공합니다.
+쿼리 성능 도구(`/libs/granite/operations/content/diagnosistools/queryPerformance.html`에 있으며 Cloud Manager의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)를 통해 사용 가능)는 다음을 제공합니다.
+
 * 현재 5000개 이상의 행을 읽기/스캔하는 쿼리로 정의된 &#39;느린 쿼리&#39; 목록입니다.
 * &#39;자주 사용하는 쿼리&#39; 목록
 * Oak에서 특정 쿼리를 실행하는 방법을 이해하는 &#39;쿼리 설명&#39; 도구입니다.
@@ -119,6 +120,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 ![쿼리 성능 도구](assets/query-performance-tool.png)
 
 &quot;느린 쿼리&quot; 및 &quot;자주 찾는 쿼리&quot; 테이블에는 다음이 포함됩니다.
+
 * 쿼리 문 자체입니다.
 * 쿼리를 실행하는 페이지 또는 애플리케이션 기능을 식별할 수 있도록 쿼리를 실행한 마지막 스레드의 세부 정보입니다.
 * 쿼리에 대한 &#39;읽기 최적화&#39; 점수.
@@ -155,6 +157,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 
 `Explain`을(를) 선택하면 쿼리 설명(및 선택한 경우 실행) 결과를 설명하는 팝업이 사용자에게 표시됩니다.
 이 팝업에는 -에 대한 세부 사항이 포함됩니다.
+
 * 쿼리를 실행할 때 사용되는 색인입니다(또는 [저장소 순회](#repository-traversal)을 사용하여 쿼리를 실행할 경우 색인이 없음).
 * 실행 시간(`Include Execution Time` 확인란이 선택된 경우) 및 읽은 결과 수(`Read first page of results` 또는 `Include Node Count` 확인란이 선택된 경우).
 * 실행 계획을 통해 쿼리 실행 방법을 자세히 분석할 수 있습니다. 해석 방법은 [쿼리 실행 계획 읽기](#reading-query-execution-plan)를 참조하십시오.
@@ -172,6 +175,7 @@ AEM as a Cloud Service은 효율적인 쿼리 구현을 지원하도록 설계�
 ```
 
 ...다음 포함: -
+
 * 3개 제한 사항
    * Nodetype(`dam:Asset`)
    * 경로(`/content/dam`의 하위 항목)
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 플랜의 이 섹션에서는 다음을 명시합니다. -
+
 * 색인은 이 쿼리를 실행하는 데 사용됩니다.
    * 이 경우 Lucene 인덱스 `/oak:index/damAssetLucene-9`이(가) 사용되므로 나머지 정보는 Lucene 쿼리 구문에 있습니다.
 * 3가지 제한 사항은 모두 색인에 의해 처리됩니다.
    * 노드 유형 제한
-      * `damAssetLucene-9`은(는) dam:Asset 유형의 노드만 인덱싱하므로 암시적입니다.
+      * `damAssetLucene-9`은(는) dam:Asset 형식의 노드만 인덱싱하므로 암시적입니다.
    * 경로 제한
       * `+:ancestors:/content/dam`이(가) Lucene 쿼리에 표시되기 때문입니다.
    * 속성 제한
@@ -212,6 +217,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 ...다음 포함: -
+
 * 3개 제한 사항
    * Nodetype(`dam:Asset`)
    * 경로(`/content/dam`의 하위 항목)
@@ -231,13 +237,14 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 플랜의 이 섹션에서는 다음을 명시합니다. -
+
 * 3개 중 2개의 제한만 색인에 의해 처리됩니다.
    * 노드 유형 제한
-      * `damAssetLucene-9`은(는) dam:Asset 유형의 노드만 인덱싱하므로 암시적입니다.
+      * `damAssetLucene-9`은(는) dam:Asset 형식의 노드만 인덱싱하므로 암시적입니다.
    * 경로 제한
       * `+:ancestors:/content/dam`이(가) Lucene 쿼리에 표시되기 때문입니다.
 * 속성 제한 `jcr:content/metadata/myProperty = "My Property Value"`이(가) 인덱스에서 실행되지 않고 기본 Lucene 쿼리 결과에 대한 쿼리 엔진 필터링으로 적용됩니다.
-   * 이 속성은 이 쿼리에 사용된 `damAssetLucene-9` 인덱스에서 인덱싱되지 않으므로 `+jcr:content/metadata/myProperty:My Property Value`이(가) Lucene 쿼리에 표시되지 않기 때문입니다.
+   * 이 속성은 이 쿼리에 사용된 `+jcr:content/metadata/myProperty:My Property Value` 인덱스에서 인덱싱되지 않으므로 `damAssetLucene-9`이(가) Lucene 쿼리에 표시되지 않기 때문입니다.
 
 이 쿼리 실행 계획을 수행하면 인덱스에서 `/content/dam` 아래의 모든 에셋을 읽은 다음 쿼리 엔진에 의해 추가로 필터링됩니다(결과 집합에 인덱싱되지 않은 속성 제한과 일치하는 에셋만 포함됨).
 
@@ -255,9 +262,9 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ## JCR 쿼리 치트 시트 {#jcr-query-cheatsheet}
 
-효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ko#jcrquerycheatsheet)를 다운로드하여 개발 중 참조할 수 있습니다.
+효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)를 다운로드하여 개발 중 참조할 수 있습니다.
 
-여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트시트의 콘텐츠는 AEM as a Cloud Service 및 AEM 6.5에 적용됩니다.
+여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트 시트의 콘텐츠는 AEM as a Cloud Service 및 AEM 6.5에 적용됩니다.
 
 ## 색인 정의 우수 사례 {#index-definition-best-practices}
 
@@ -304,7 +311,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ### 색인 순회 {#index-traversal}
 
-인덱스를 사용하지만 여전히 많은 노드를 읽는 쿼리는 다음과 유사한 메시지로 기록됩니다(`Traversed`이(가) 아닌 `Index-Traversed` 용어 참고).
+인덱스를 사용하지만 여전히 많은 노드를 읽는 쿼리는 다음과 유사한 메시지로 기록됩니다(`Index-Traversed`이(가) 아닌 `Traversed` 용어 참고).
 
 ```text
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)

@@ -3,23 +3,23 @@ title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자가 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
+구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자에게 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
 
 >[!TIP]
 >
->이 문서를 참조하기 전에 [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)을(를) 완료하여 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에 익숙한지 확인하십시오.
+>이 문서를 참조하기 전에 [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)을(를) 완료하여 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)에 익숙한지 확인하십시오.
 
-WKND 튜토리얼은 대부분의 사용 사례를 다루므로, 이 문서는 이러한 리소스를 보완하기 위한 목적으로만 제공됩니다. 시작 안내서는 구성 요소가 AEM에서 구성되고 구성되는 방식에 대한 기술적인 세부 사항을 심층적으로 설명합니다.
+WKND 튜토리얼은 대부분의 사용 사례를 다루므로, 이 문서는 이러한 리소스를 보완하기 위한 목적으로만 제공됩니다. AEM에서 구성 요소를 구조화하고 구성하는 방법에 대한 기술적인 세부 정보를 심층적으로 제공하며 시작 안내서로 사용하지 않습니다.
 
 ## 개요 {#overview}
 
@@ -39,11 +39,11 @@ WKND 튜토리얼은 대부분의 사용 사례를 다루므로, 이 문서는 �
 
 ### 기존 구성 요소 재사용 {#reusing-components}
 
-완전히 새로운 구성 요소를 만드는 데 시간을 투자하기 전에 기존 구성 요소를 사용자 정의하거나 확장하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 유연하고 강력하며 테스트를 마친 프로덕션 준비 구성 요소 제품군을 제공합니다.
+완전히 새로운 구성 요소를 만드는 데 시간을 투자하기 전에 기존 구성 요소를 사용자 정의하거나 확장하는 것이 좋습니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 유연하고 강력하며 테스트를 마친 프로덕션 준비 구성 요소 제품군을 제공합니다.
 
 #### 코어 구성 요소 확장 {#extending-core-components}
 
-또한 핵심 구성 요소는 [명확한 사용자 지정 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)을 제공하여 이를 프로젝트에 맞게 조정할 수 있습니다.
+또한 핵심 구성 요소는 [명확한 사용자 지정 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)을 제공하여 이를 프로젝트에 맞게 조정할 수 있습니다.
 
 #### 구성 요소 오버레이 {#overlying-components}
 
@@ -57,16 +57,16 @@ Sling 리소스 병합을 사용하고 `sling:resourceSuperType` 속성을 정�
 
 ### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
-구성 요소가 [HTML](https://www.w3schools.com/htmL/html_intro.asp)(으)로 렌더링됩니다. 구성 요소는 작성자와 게시 환경 모두에서 필요한 콘텐츠를 가져온 다음 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
+구성 요소가 [HTML](https://www.w3schools.com/htmL/html_intro.asp)&#x200B;(으)로 렌더링됩니다. 구성 요소는 작성자와 게시 환경 모두에서 필요한 콘텐츠를 가져온 다음 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
 
 마크업 및 렌더링을 담당하는 코드는 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 실제 프로그래밍 언어를 사용하여 기본 비즈니스 논리를 정의하는 데 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 실제 프로그래밍 언어를 사용하여 기본 비즈니스 논리를 정의하는 데 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 이 (선택 사항) 논리는 다양한 방식으로 구현할 수 있으며 특정 명령으로 HTL에서 호출됩니다.
 
-* Java를 사용하여 [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ko)를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
-* JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ko)를 사용하면 HTL 파일이 JavaScript에 작성된 도우미 코드에 액세스할 수 있습니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
+* Java를 사용하여 [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
+* JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)를 사용하면 HTL 파일이 JavaScript에 작성된 도우미 코드에 액세스할 수 있습니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
 * 클라이언트측 라이브러리 사용 - 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md) 문서를 참조하십시오.
 
 ## 구성 요소 구조 {#structure}
@@ -110,7 +110,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
    * 자세한 내용은 [구성 요소 아이콘](#component-icon) 섹션을 참조하십시오.
 * **중요한 하위 노드**:
    * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소를 구성 요소 브라우저에 표시할 수 있도록 합니다.
-      * 구성 요소에 대화 상자가 있으면 cq:editConfig가 없어도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
+      * 구성 요소에 대화 상자가 있으면 cq:editConfig이(가) 없는 경우에도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
    * `cq:childEditConfig (cq:EditConfig)` - 자체 `cq:editConfig`을(를) 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다.
    * `cq:dialog (nt:unstructured)` - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성 및/또는 콘텐츠를 편집할 수 있는 인터페이스를 정의합니다.
    * `cq:design_dialog (nt:unstructured)` - 이 구성 요소에 대한 디자인 편집 중
@@ -207,13 +207,13 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 AEM 구성 요소에 대한 대화 상자:
 
-* `nt:unstructured` 유형의 `cq:dialog`개 노드입니다.
+* `cq:dialog` 유형의 `nt:unstructured`개 노드입니다.
 * `cq:Component` 노드 아래와 구성 요소 정의 옆에 있습니다.
 * 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자를 정의합니다.
 * Granite UI 구성 요소를 사용하여 정의됩니다.
 * 콘텐츠 구조 및 `sling:resourceType` 속성에 따라 Sling 구성 요소로 서버측을 렌더링합니다.
 * 대화 상자 내의 필드를 설명하는 노드 구조를 포함합니다
-   * 이 노드는 필수 `sling:resourceType` 속성이 있는 `nt:unstructured`입니다.
+   * 이 노드는 필수 `nt:unstructured` 속성이 있는 `sling:resourceType`입니다.
 
 ![제목 구성 요소의 대화 상자 정의](assets/components-title-dialog.png)
 
@@ -301,7 +301,7 @@ Content not found
 
 ## 구성 요소 계층 및 상속 {#component-hierarchy-and-inheritance}
 
-AEM 내의 구성 요소는 **리소스 유형 계층 구조**&#x200B;에 속합니다. 속성 `sling:resourceSuperType`을(를) 사용하여 구성 요소를 확장하는 데 사용됩니다. 이렇게 하면 구성 요소가 다른 구성 요소에서 상속될 수 있습니다.
+AEM 내의 구성 요소는 **리소스 유형 계층 구조**&#x200B;에 종속됩니다. 속성 `sling:resourceSuperType`을(를) 사용하여 구성 요소를 확장하는 데 사용됩니다. 이렇게 하면 구성 요소가 다른 구성 요소에서 상속될 수 있습니다.
 
 자세한 내용은 [구성 요소 재사용](#reusing-components) 섹션을 참조하십시오.
 
@@ -309,7 +309,7 @@ AEM 내의 구성 요소는 **리소스 유형 계층 구조**&#x200B;에 속합
 
 이 섹션에서는 구성 요소의 편집 동작을 구성하는 방법을 설명합니다. 여기에는 구성 요소에 사용할 수 있는 작업, in.place 편집기의 특성 및 구성 요소의 이벤트와 관련된 리스너와 같은 속성이 포함됩니다.
 
-구성 요소의 편집 동작은 구성 요소 노드(유형 `cq:Component`) 아래에 유형 `cq:EditConfig`의 `cq:editConfig` 노드를 추가하고 특정 속성 및 하위 노드를 추가하여 구성되었습니다. 다음 속성 및 하위 노드를 사용할 수 있습니다.
+구성 요소의 편집 동작은 구성 요소 노드(유형 `cq:editConfig`) 아래에 유형 `cq:EditConfig`의 `cq:Component` 노드를 추가하고 특정 속성 및 하위 노드를 추가하여 구성되었습니다. 다음 속성 및 하위 노드를 사용할 수 있습니다.
 
 * `cq:editConfig` 노드 속성
 * [`cq:editConfig`개의 하위 노드](#configuring-with-cq-editconfig-child-nodes):
@@ -321,7 +321,7 @@ AEM에는 많은 기존 구성이 있습니다. **CRXDE Lite**&#x200B;에서 쿼
 
 ### 구성 요소 자리 표시자 {#component-placeholders}
 
-구성 요소에 콘텐츠가 없는 경우에도 구성 요소는 항상 작성자가 볼 수 있는 일부 HTML을 렌더링해야 합니다. 그렇지 않으면 편집기의 인터페이스에서 시각적으로 사라져 페이지와 편집기에서 기술적으로 표시되지만 보이지 않을 수 있습니다. 이러한 경우 작성자는 빈 구성 요소를 선택하고 상호 작용할 수 없습니다.
+구성 요소는 구성 요소에 콘텐츠가 없는 경우에도 항상 작성자가 볼 수 있는 일부 HTML을 렌더링해야 합니다. 그렇지 않으면 편집기의 인터페이스에서 시각적으로 사라져 페이지와 편집기에서 기술적으로 표시되지만 보이지 않을 수 있습니다. 이러한 경우 작성자는 빈 구성 요소를 선택하고 상호 작용할 수 없습니다.
 
 따라서 구성 요소는 페이지가 페이지 편집기에서 렌더링될 때(WCM 모드가 `edit` 또는 `preview`일 때) 표시되는 출력을 렌더링하지 않는 한 자리 표시자를 렌더링해야 합니다.
 자리 표시자에 대한 일반적인 HTML 마크업은 다음과 같습니다.
@@ -339,7 +339,7 @@ AEM에는 많은 기존 구성이 있습니다. **CRXDE Lite**&#x200B;에서 쿼
 
 앞의 예에서 `isEmpty`은(는) 구성 요소에 콘텐츠가 없고 작성자에게 보이지 않는 경우에만 true인 변수입니다.
 
-Adobe 반복을 방지하기 위해 구성 요소 구현자는 [핵심 구성 요소에서 제공하는 것과 같은 자리 표시자에 HTL 템플릿을 사용하는 것이 좋습니다](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
+Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 이러한 자리 표시자에 대해 HTL 템플릿을 사용할 것을 권장합니다. [핵심 구성 요소에서 제공하는 것과 같은 것](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 그런 다음 이전 링크에서 템플릿 사용은 다음 HTL 행을 통해 수행됩니다.
 
@@ -350,7 +350,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 [핵심 구성 �
 
 앞의 예에서 `model.text`은(는) 콘텐츠에 콘텐츠가 있고 표시되는 경우에만 true인 변수입니다.
 
-이 템플릿의 사용 예는 제목 구성 요소 [&#128279;](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)에서와 같이 핵심 구성 요소 에서 볼 수 있습니다.
+이 템플릿의 사용 예는 제목 구성 요소 [에서와 같이 핵심 구성 요소 ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)에서 볼 수 있습니다.
 
 ### cq:EditConfig 하위 노드로 구성 {#configuring-with-cq-editconfig-child-nodes}
 
@@ -360,7 +360,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 [핵심 구성 �
 
 `cq:DropTargetConfig` 유형의 자식 노드가 구성 요소에서 드롭 대상을 정의합니다.
 
-### 즉석 편집 - cq:inplaceEditing {#cq-inplaceediting}
+### 바로 편집 - cq:inplaceEditing {#cq-inplaceediting}
 
 즉석 편집기를 사용하면 대화 상자를 열지 않고도 컨텐츠 플로우에서 직접 컨텐츠를 편집할 수 있습니다. 예를 들어 표준 **Text** 및 **Title** 구성 요소에는 모두 원본 위치 편집기가 있습니다.
 
@@ -372,7 +372,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 [핵심 구성 �
 |---|---|---|
 | `active` | `Boolean` | `true`을(를) 통해 구성 요소를 바로 편집할 수 있습니다. |
 | `configPath` | `String` | 구성 노드에 의해 지정될 수 있는 편집기 구성의 경로 |
-| `editorType` | `String` | 사용 가능한 형식은 다음과 같습니다. `plaintext`(HTML 컨텐츠가 아닌 경우), `title`(이)는 편집을 시작하기 전에 그래픽 제목을 일반 텍스트로 변환하고 `text`(이)는 서식 있는 텍스트 편집기를 사용합니다. |
+| `editorType` | `String` | 사용 가능한 형식은 다음과 같습니다. `plaintext`(HTML 이외의 콘텐츠), `title`(은)는 편집을 시작하기 전에 그래픽 제목을 일반 텍스트로 변환하고 `text`(은)는 리치 텍스트 편집기를 사용합니다. |
 
 다음 구성은 구성 요소를 바로 편집할 수 있도록 설정하고 `plaintext`을(를) 편집기 유형으로 정의합니다.
 

@@ -3,9 +3,9 @@ title: 범용 편집기 이벤트
 description: 원격 앱에서 콘텐츠 또는 UI 변경에 반응하는 데 사용할 수 있는 범용 편집기에서 전송되는 다양한 이벤트에 대해 알아봅니다.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 100%
 

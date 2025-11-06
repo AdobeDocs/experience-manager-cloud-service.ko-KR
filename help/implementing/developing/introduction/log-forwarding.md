@@ -3,8 +3,8 @@ title: AEM as a Cloud Service에 대한 로그 전달
 description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달하는 방법에 대해 알아봅니다.
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 3%
@@ -547,7 +547,7 @@ Sumo Logic으로의 로그 전달은 AEM 및 Dispatcher 로그를 지원합니�
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-위의 `/`설정[&#x200B; 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
+위의 `/`설정[ 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
 
 ```yaml
 kind: "LogForwarding"

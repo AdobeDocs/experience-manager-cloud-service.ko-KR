@@ -2,10 +2,10 @@
 title: 범용 편집기가 콘텐츠를 게시하는 방법
 description: 범용 편집기가 콘텐츠를 게시하는 방법, Sites 콘솔의 프로세스와 다른 점, 그리고 범용 편집기와 함께 작동하는 자체 앱을 개발할 때 고려할 사항에 대해 알아봅니다.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
-source-git-commit: b967a09df7c2e0f5094a6836fcf5311008081dc0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 100%
 

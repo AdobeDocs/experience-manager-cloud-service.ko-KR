@@ -4,8 +4,8 @@ description: 프로덕션 프로그램을 만든 후 프로젝트를 빠르게 �
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # 프로젝트 제작 마법사 {#project-creation-wizard}
 
-Cloud Manger는 프로덕션 프로그램을 만든 후 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 기반으로 최소 AEM 프로젝트를 생성하여 빠르게 시작할 수 있는 마법사를 제공합니다.
+Cloud Manger는 프로덕션 프로그램을 만든 후 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 기반으로 최소 AEM 프로젝트를 생성하여 빠르게 시작할 수 있는 마법사를 제공합니다.
 
 마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 다음 단계를 따르십시오.
 

@@ -4,8 +4,8 @@ description: Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AE
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Cloud Manager은 조직 또는 테넌트가 사용할 수 있는 Adobe Experienc
 
 >[!IMPORTANT]
 >
->라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
 >
 >프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards)을 참조하십시오.
 
@@ -59,7 +59,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 

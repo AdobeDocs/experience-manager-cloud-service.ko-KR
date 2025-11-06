@@ -4,14 +4,14 @@ description: Forms Experience Builder의 지능적인 가져오기 및 변환 �
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 지능적인 가져오기 및 전환
 

@@ -4,8 +4,8 @@ description: 프로젝트 콘텐츠를 모델링하는 Adobe Experience Manager 
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -87,6 +87,6 @@ Adobe Experience Manager(AEM) as a Cloud Service는 AEM GraphQL API를 통해 �
 
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

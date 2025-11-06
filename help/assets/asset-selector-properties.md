@@ -3,7 +3,7 @@ title: 사용자 지정에 대한 자산 선택기 속성
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 37%
@@ -42,7 +42,7 @@ ht-degree: 37%
 | *aemTierType* | 문자열 | 아니요 |  | 게재 계층, 작성자 계층 또는 둘 다의 자산을 표시할지 여부를 선택할 수 있습니다. <br><br> 구문: `aemTierType:[0]: "author" 1: "delivery"` <br><br> 예를 들어 `["author","delivery"]`을(를) 모두 사용하는 경우 저장소 전환기에 작성자와 게재 모두에 대한 옵션이 표시됩니다. |
 | *handleNavigateToAsset* | 함수 | 아니요 | | 에셋 선택을 처리하는 콜백 함수입니다. |
 | *noWrap* | 부울 | 아니요 | | *noWrap* 속성은 측면 레일 패널에서 자산 선택기를 렌더링하는 데 도움이 됩니다. 이 속성이 언급되지 않으면 기본적으로 *대화 상자 보기*&#x200B;가 렌더링됩니다. |
-| *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
+| *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 선택 사항 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
 | *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](/help/assets/asset-selector-customization.md#customize-expired-assets)을 참조하십시오. 또한 함수 값이 **또는**&#x200B;일 수 있는 `true`allowSelectionAndDrag`false`을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |

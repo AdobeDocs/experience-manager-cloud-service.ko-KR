@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -86,11 +86,11 @@ ht-degree: 0%
 
 이 예제에서는 단추를 클릭하면 `personaldetails` 패널의 유효성 검사가 수행됩니다. 패널에서 오류가 감지되지 않으면 버튼을 클릭할 때 다른 패널인 `feedback` 패널이 표시됩니다.
 
-`Next` 단추에 대한 규칙을 만들어 `personaldetails` 패널의 유효성을 검사하고 사용자가 `Next` 단추를 클릭할 때 `feedback` 패널이 표시되도록 하겠습니다.
+`Next` 단추에 대한 규칙을 만들어 `personaldetails` 패널의 유효성을 검사하고 사용자가 `feedback` 단추를 클릭할 때 `Next` 패널이 표시되도록 하겠습니다.
 
 ![속성 설정](/help/forms/assets/custom-function-set-property.png)
 
-`Next` 단추를 클릭할 때 `personaldetails` 패널의 유효성을 검사한 위치를 보여 주는 아래 그림을 참조하십시오. `personaldetails` 내의 모든 필드의 유효성을 검사하면 `feedback` 패널이 표시됩니다.
+`personaldetails` 단추를 클릭할 때 `Next` 패널의 유효성을 검사한 위치를 보여 주는 아래 그림을 참조하십시오. `personaldetails` 내의 모든 필드의 유효성을 검사하면 `feedback` 패널이 표시됩니다.
 
 ![속성 양식 미리 보기 설정](/help/forms/assets/set-property-form-preview.png)
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ![전자 메일 주소 유효성 검사 패턴](/help/forms/assets/custom-function-validation-pattern.png)
 
-이제 다음 단계는 단추 클릭에서 `contact` 필드의 유효성을 검사하는 `Next` 단추에 대한 규칙을 만드는 것입니다.
+이제 다음 단계는 단추 클릭에서 `Next` 필드의 유효성을 검사하는 `contact` 단추에 대한 규칙을 만드는 것입니다.
 
 ![유효성 검사 패턴](/help/forms/assets/custom-function-validate.png)
 
@@ -165,7 +165,7 @@ ht-degree: 0%
 >
 > `reset()` 함수에서 인수가 전달되지 않으면 폼의 유효성을 검사합니다.
 
-이 예제에서는 `Clear` 단추를 클릭하면 `personaldetails` 패널이 재설정됩니다. 다음 단계는 단추 클릭 시 패널을 재설정하는 `Clear` 단추에 대한 규칙을 만드는 것입니다.
+이 예제에서는 `personaldetails` 단추를 클릭하면 `Clear` 패널이 재설정됩니다. 다음 단계는 단추 클릭 시 패널을 재설정하는 `Clear` 단추에 대한 규칙을 만드는 것입니다.
 
 ![지우기 단추](/help/forms/assets/custom-function-reset-field.png)
 
@@ -222,6 +222,7 @@ ht-degree: 0%
 
 다음 코드 줄:
 `globals.functions.submitForm(globals.functions.exportData(), false);`은(는) 조작 후 양식 데이터를 제출하는 데 사용됩니다.
+
 * 첫 번째 인수는 제출할 데이터입니다.
 * 두 번째 인수는 제출 전에 양식의 유효성을 검사할지 여부를 나타냅니다. `optional`이며 기본적으로 `true`(으)로 설정됩니다.
 * 세 번째 인수는 제출 서류의 `contentType`이며, 기본값인 `multipart/form-data`과(와) 함께 선택 사항입니다. 다른 값은 `application/json` 및 `application/x-www-form-urlencoded`일 수 있습니다.
@@ -253,7 +254,7 @@ ht-degree: 0%
 
 ![데이터 제출](/help/forms/assets/custom-function-submit-data.png)
 
-사용자가 `comments` 텍스트 상자를 비워 두면 `NA` 값이 서버에 제출된다는 것을 증명하려면 아래 `console window` 그림을 참조하십시오.
+사용자가 `console window` 텍스트 상자를 비워 두면 `comments` 값이 서버에 제출된다는 것을 증명하려면 아래 `NA` 그림을 참조하십시오.
 
 ![콘솔 창에서 데이터 제출](/help/forms/assets/custom-function-submit-data-form.png)
 
@@ -451,7 +452,7 @@ function testImportData(globals)
     }
 ```
 
-`Email ID` 텍스트 상자 필드를 클릭할 때 포커스를 설정하기 위해 `Submit` 단추에 규칙을 추가하겠습니다.
+`Submit` 텍스트 상자 필드를 클릭할 때 포커스를 설정하기 위해 `Email ID` 단추에 규칙을 추가하겠습니다.
 
 ![포커스 규칙 설정](/help/forms/assets/custom-function-set-focus.png)
 
@@ -461,13 +462,13 @@ function testImportData(globals)
 
 >[!NOTE]
 >
-> `email` 필드를 기준으로 다음 또는 이전 필드에 초점을 맞추려면 선택적 `$focusOption` 매개 변수를 사용할 수 있습니다.
+> `$focusOption` 필드를 기준으로 다음 또는 이전 필드에 초점을 맞추려면 선택적 `email` 매개 변수를 사용할 수 있습니다.
 
 ## `dispatchEvent` 속성을 사용하여 반복 가능한 패널 추가 또는 삭제
 
-사용자 지정 함수에서 필드 및 전역 개체를 사용하여 `Booking Form`의 도움을 받아 `dispatchEvent` 속성을 사용하여 반복 가능한 패널을 추가하거나 삭제하는 방법에 대해 알아보겠습니다.
+사용자 지정 함수에서 필드 및 전역 개체를 사용하여 `dispatchEvent`의 도움을 받아 `Booking Form` 속성을 사용하여 반복 가능한 패널을 추가하거나 삭제하는 방법에 대해 알아보겠습니다.
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) 섹션에서 설명한 대로 다음 코드 행을 추가하여 `dispatchEvent` 속성을 사용하여 `Add Traveler` 단추를 클릭할 때 패널을 추가합니다.
+[create-custom-function](/help/forms/custom-function-core-component-create-function.md) 섹션에서 설명한 대로 다음 코드 행을 추가하여 `Add Traveler` 속성을 사용하여 `dispatchEvent` 단추를 클릭할 때 패널을 추가합니다.
 
 ```javascript
 /**
@@ -490,7 +491,7 @@ function testAddInstance(globals)
 
 ![패널 추가](/help/forms/assets/custom-function-add-panel.gif)
 
-마찬가지로 [create-custom-function](#create-custom-function) 섹션에서 설명한 대로 다음 코드 행을 추가하여 `dispatchEvent` 속성을 사용하여 `Delete Traveler` 단추를 클릭할 때 패널을 삭제합니다.
+마찬가지로 [create-custom-function](#create-custom-function) 섹션에서 설명한 대로 다음 코드 행을 추가하여 `Delete Traveler` 속성을 사용하여 `dispatchEvent` 단추를 클릭할 때 패널을 삭제합니다.
 
 ```javascript
 /**
@@ -530,7 +531,7 @@ function testRemoveInstance(globals)
 
    * AEM 프로젝트의 경우 사용자는 `submitForm('custom:submitSuccess', 'custom:submitError')`의 모든 인스턴스를 `submitForm()`(으)로 바꾸고 Cloud Manager 파이프라인을 통해 프로젝트를 배포해야 합니다.
 
-   * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 **제출** 단추에서 `submitForm` 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
+   * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 `submitForm`제출&#x200B;**단추에서** 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
 
 ## 추가 참조
 

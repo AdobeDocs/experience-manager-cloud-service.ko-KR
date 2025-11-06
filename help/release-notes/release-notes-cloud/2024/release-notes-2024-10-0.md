@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.10.0 �
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1663'
 ht-degree: 98%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 98%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[&#x200B; 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -44,6 +44,7 @@ ht-degree: 98%
 **현대화된 페이지 이벤트**
 
 이제 다음 AEM Sites 페이지 이벤트를 AEM as a Cloud Service 이벤트 플랫폼으로서의 외부에서 사용할 수 있는 이벤트로 제공됩니다. 해당 이벤트는 Adobe I/O를 통해 처리되어 외부 프로세스와 상호 작용할 수 있습니다.
+
 * 페이지 게시됨
 * 페이지 게시 취소됨
 * 페이지 삭제됨
@@ -156,7 +157,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 1. **허용된 경로 추가**: 양식 액션이 허용되는 경로를 지정합니다.
 1. **동작 제한**: 제한된 경로(허용 목록에 포함되지 않은 경로)에 대한 동작을 결정합니다. 두 가지 옵션 중에서 선택할 수 있습니다.
    * **팝업**(기본값): 팝업 알림을 표시합니다.
-   * **방지**: 양식 제출을 차단합니다.
+   * 양식 제출을 **금지**:Blocks&#x200B;합니다.
 
 >[!NOTE]
 >
@@ -194,24 +195,24 @@ AEM(Apache/Dispatcher 포함) 및 CDN 로그는 Cloud Manager에서 다운로드
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)에서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
-[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
 ## 범용 편집기 {#universal-editor}
 
-[여기](/help/release-notes/universal-editor/current.md)서 범용 편집기의 전체 목록을 찾을 수 있습니다.
+[여기](/help/release-notes/universal-editor/current.md)에서 범용 편집기의 전체 목록을 찾을 수 있습니다.
 
 ## 변형 생성 {#generate-variations}
 
-[여기](/help/generative-ai/release-notes-generate-variations.md)서 변형 생성의 전체 목록을 찾을 수 있습니다.
+[여기](/help/generative-ai/release-notes-generate-variations.md)에서 변형 생성의 전체 목록을 찾을 수 있습니다.
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)서 확인할 수 있습니다.
+기타 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.

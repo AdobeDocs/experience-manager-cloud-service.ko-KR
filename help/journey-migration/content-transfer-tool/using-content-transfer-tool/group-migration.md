@@ -2,9 +2,9 @@
 title: 그룹 마이그레이션
 description: AEM as a Cloud Service의 그룹 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM 시스템에서 AEM as a Cloud Service으로 그룹을 마이그레이션해야 합니다. 이 작업은 콘텐츠 전송 도구에서 수행합니다.
 
-AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID의 완전히 통합된 사용입니다. 이 프로세스에서는 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 Adobe Identity Management System(IMS)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ko#identity-management)을 참조하세요. 이러한 변경 사항으로 인해 사용자가 IMS를 통해 처음 로그인할 때 AEM에 자동으로 생성됩니다.  따라서 CTT는 사용자를 클라우드 시스템으로 마이그레이션하지 않습니다.  IMS 사용자는 IMS 그룹에 넣어야 합니다. IMS 그룹은 마이그레이션되는 그룹 또는 마이그레이션되는 AEM 콘텐츠에 액세스할 수 있는 권한이 주어진 AEM 그룹에 있는 새 그룹으로 이동할 수 있습니다.  이 방법으로 클라우드 시스템의 사용자는 소스 AEM 시스템에서 보유했던 동일한 액세스 권한을 갖게 됩니다.
+AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID의 완전히 통합된 사용입니다. 이 프로세스에서는 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 Adobe Identity Management System(IMS)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)을 참조하세요. 이러한 변경 사항으로 인해 사용자가 IMS를 통해 처음 로그인할 때 AEM에 자동으로 생성됩니다.  따라서 CTT는 사용자를 클라우드 시스템으로 마이그레이션하지 않습니다.  IMS 사용자는 IMS 그룹에 넣어야 합니다. IMS 그룹은 마이그레이션되는 그룹 또는 마이그레이션되는 AEM 콘텐츠에 액세스할 수 있는 권한이 주어진 AEM 그룹에 있는 새 그룹으로 이동할 수 있습니다.  이 방법으로 클라우드 시스템의 사용자는 소스 AEM 시스템에서 보유했던 동일한 액세스 권한을 갖게 됩니다.
 
 ## 그룹 마이그레이션 세부 정보 {#group-migration-detail}
 
@@ -65,12 +65,14 @@ CTT 버전 3.0.20 이상에는 그룹 마이그레이션을 비활성화하는 �
 ## 사용자 마이그레이션 보고서 및 사용자 보고서 {#principal-migration-report}
 
 마이그레이션 도중 그룹이 포함된 경우(기본값), 마이그레이션 도중 각 그룹에 발생하는 상황을 요약한 사용자 마이그레이션 보고서가 저장됩니다.  수집 성공 후 이 보고서를 다운로드하려면 다음 작업을 수행하십시오.
+
 * CAM에서 컨텐츠 전송으로 이동한 다음 수집 작업을 선택합니다.
 * 해당 수집 라인의 생략 부호(...)를 클릭하고 &quot;사용자 요약 보기&quot;를 선택합니다.
 * 표시되는 대화 상자에서 &quot;파일 다운로드...&quot; 아래의 드롭다운 목록에서 &quot;사용자 마이그레이션 보고서&quot;를 선택하고 다운로드 버튼을 클릭합니다.
 * 결과 CSV 파일을 저장합니다.
 
 그룹별로 기록되는 정보의 일부는 다음과 같습니다.
+
 * 마이그레이션된 경우 그룹을 마이그레이션한 첫 번째 ACL 또는 CUG에 대한 경로입니다.
 * 그룹이 이전에 마이그레이션되었는지 여부. 현재 수집이 삭제되지 않는 수집이었다면 일부 그룹은 이전 수집 중에 마이그레이션되었을 수 있습니다.
 * 그룹이 기본 제공 그룹인지 여부. 이러한 그룹은 항상 대상 AEMaaCS 환경에 있으므로 마이그레이션되지 않습니다.
@@ -109,7 +111,7 @@ CTT 버전 3.0.20 이상에는 그룹 마이그레이션을 비활성화하는 �
 
 * **수집 전에 클라우드 인스턴스에서 기존 콘텐츠 지우기** 설정이 설정되어 있으면 이전에 Cloud Service 인스턴스로 전송된 그룹이 전체 기존 리포지토리와 함께 삭제됩니다. 콘텐츠가 수집되는 새 리포지토리가 만들어집니다. 또한 이 프로세스는 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정하며 **관리자** 그룹에 추가된 모든 사용자에 대해 true입니다. CTT/CAM 수집에 대한 액세스 토큰을 검색하려면 관리자 사용자를 **관리자** 그룹에 다시 추가해야 합니다.
 * 지우지 않음 수집을 수행할 때(**기존 콘텐츠 지우기**&#x200B;가 설정되지 않음) 이전 전송 이후 콘텐츠가 변경되지 않아 콘텐츠가 전송되지 않으면 해당 콘텐츠와 연결된 그룹도 전송되지 않습니다. 이 규칙은 그룹이 소스 시스템에서 변경된 경우에도 적용됩니다. 이는 그룹이 연결된 콘텐츠와 함께 마이그레이션될 뿐이기 때문입니다. 이러한 이유로, 이 경우 소스 시스템의 그룹 멤버인 모든 그룹은 마이그레이션되고 있는 다른 그룹이나 마이그레이션되고 있는 다른 컨텐츠의 ACL에 포함되지 않는 한 마이그레이션되지 않습니다. 이후에 이러한 그룹을 마이그레이션하려면 패키지를 사용하거나, 대상에서 그룹을 삭제하고, 관련 콘텐츠를 다시 마이그레이션하거나, 지우기 수집을 사용하여 다시 마이그레이션하는 것이 좋습니다.
-* 지우지 않는 수집 중에 소스 AEM 인스턴스와 대상 AEM Cloud Service 인스턴스 모두에서 동일한 고유성 제약 데이터(rep:principalName, rep:authorizableId, jcr:uuid 또는 rep:externalId)가 있는 그룹이 존재하는 경우 해당 그룹이 _마이그레이션되지 않음_&#x200B;이고 클라우드 시스템의 이전 기존 그룹은 변경되지 않은 상태로 유지됩니다. 주도자 마이그레이션 보고서에 기록됩니다.
+* 지우지 않는 수집 중에 소스 AEM 인스턴스와 대상 AEM Cloud Service 인스턴스 모두에서 동일한 고유성 제한 데이터(rep:principalName, rep:authorizableId, jcr:uuid 또는 rep:externalId)를 사용하는 그룹이 존재하는 경우 해당 그룹은 _마이그레이션되지 않음_&#x200B;이며 클라우드 시스템의 이전에 존재하는 그룹은 변경되지 않은 상태로 유지됩니다. 주도자 마이그레이션 보고서에 기록됩니다.
 * CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항은 [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)을 참조하십시오.
 
 ## 최종 요약 및 보고서

@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침
 description: Adobe Experience Manager as a Cloud Service 및 웹 액세서빌러티 지침 소개
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Adobe Experience Manager as a Cloud Service는 [World Wide Web Consortium](#worl
 
 >[!NOTE]
 >
->자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html)를 참조하십시오.
+>자세한 내용은 [Adobe 솔루션에 대한 접근성 준수 보고서](https://www.adobe.com/kr/accessibility/compliance.html)를 참조하십시오.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 

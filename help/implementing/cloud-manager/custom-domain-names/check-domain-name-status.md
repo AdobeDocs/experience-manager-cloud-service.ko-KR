@@ -4,8 +4,8 @@ description: Cloud Manager이 사용자 정의 도메인 이름을 성공적으�
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -37,9 +37,9 @@ Cloud Manager에서 도메인 이름 상태를 확인하기 전에 [고객 관�
 
 >[!NOTE]
 >
->도메인과 함께 *DV(Adobe 관리) SSL 인증서*&#x200B;를 사용하는 경우 [사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)할 때 [도메인 확인] 대화 상자에서 **확인**&#x200B;을 클릭하면 Cloud Manager에서 자동으로 확인을 트리거합니다.
+>도메인과 함께 *DV(Adobe 관리) SSL 인증서*&#x200B;를 사용하는 경우 **사용자 지정 도메인 이름을 추가**&#x200B;할 때 [도메인 확인] 대화 상자에서 [확인](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)을 클릭하면 Cloud Manager에서 자동으로 확인을 트리거합니다.
 >
->**OV/EV(고객 관리) SSL 인증서**&#x200B;를 사용할 계획이라면 [OV/EV SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)한 후에&#x200B;*도메인이 확인됩니다.*
+>**OV/EV(고객 관리) SSL 인증서**&#x200B;를 사용할 계획이라면 *OV/EV SSL 인증서를 추가*&#x200B;한 후에[도메인이 확인됩니다.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 
 
 ## 확인 상태 {#statuses}

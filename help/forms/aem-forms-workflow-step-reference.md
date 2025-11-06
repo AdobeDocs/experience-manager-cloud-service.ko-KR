@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 생성 단계, 비대화형 PDF 출력 생성
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 비즈니스 논리를 달성하기 위해 [모델에 다양한 AEM 워크플로 단계를 포함할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
@@ -121,7 +121,7 @@ Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관�
     -->
 
 * **[!UICONTROL 피할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
-* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자 지정 Adobe Experience Manager 동적 참가자 만들기 단계](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
+* **[!UICONTROL 참가자 선택기]**: 옵션 할당 필드에서 **[!UICONTROL 사용자 또는 그룹에 동적으로]** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자 지정 Adobe Experience Manager 동적 참가자 만들기 단계](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
 
 * **[!UICONTROL 참가자]**: **[!UICONTROL 참가자 선택기]** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 이 필드를 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
@@ -177,6 +177,7 @@ PDF/A로 변환 단계에는 다음 속성이 있습니다.
 **[!UICONTROL 입력 문서]**: 입력 문서는 페이로드에 상대적이거나 절대 경로를 가질 수 있으며 페이로드로 제공되거나 문서 데이터 형식의 변수에 저장될 수 있습니다.
 
 **[!UICONTROL 변환 옵션]**: 이 속성을 사용하여 PDF 문서를 PDF/A 문서로 변환하는 설정이 지정됩니다. 이 탭에서 사용할 수 있는 다양한 옵션은 다음과 같습니다.
+
 * **[!UICONTROL 준수]**: 출력 PDF/A 문서가 준수해야 하는 표준을 지정합니다. PDF/A-1b, PDF/A-2b 또는 PDF/A-3b와 같은 다양한 PDF 표준을 지원합니다.
 * **[!UICONTROL 결과 수준]**: 전환 출력의 결과 수준을 PassFail, Summary 또는 Detailed로 지정합니다.
 * **[!UICONTROL 색상 공간]**: 미리 정의된 색상 공간을 출력 PDF/A 파일에 사용할 수 있는 S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED 또는 SWOP로 지정합니다.
@@ -189,7 +190,7 @@ PDF/A로 변환 단계에는 다음 속성이 있습니다.
 
 전자 메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 <!-- , link of an interactive communication-->의 링크 또는 첨부된 PDF 문서)을 보낼 수 있습니다. 이메일 전송 단계는 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)을 지원합니다. HTML 이메일은 응답형이며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
 
-이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
+이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)하여 포트를 통해 전자 메일을 보내고 환경에 SMTP 프로토콜을 사용하도록 설정하십시오. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
 
 이메일 단계에는 다음과 같은 속성이 있습니다.
 
@@ -255,11 +256,13 @@ DDX(Document Description XML)는 문서의 구성 요소를 나타내는 선언�
 DDX 호출 단계에는 다음 속성이 있습니다.
 
 **[!UICONTROL 입력 문서]**: 입력 문서의 속성을 설정하는 데 사용됩니다. 이 탭에서 사용할 수 있는 다양한 옵션은 다음과 같습니다.
+
 * **[!UICONTROL DDX 지정 사용]**: 페이로드에 상대적인 입력 문서를 지정하거나, 절대 경로를 가지거나, 페이로드로 제공하거나, 문서 데이터 형식의 변수에 저장할 수 있습니다.
 * **[!UICONTROL 페이로드에서 맵 만들기]**: 페이로드 폴더 아래의 모든 문서를 어셈블러에서 호출 API에 대한 입력 문서 맵에 추가하십시오. 각 문서의 노드 이름은 맵에서 키로 사용됩니다.
 * **[!UICONTROL 입력 문서 맵]**: 옵션은 **[!UICONTROL 추가]** 단추를 사용하여 여러 항목을 추가하는 데 사용됩니다. 각 항목은 맵에서 문서의 키와 문서의 소스를 나타냅니다.
 
 **[!UICONTROL 환경 옵션]**: 이 옵션은 API 호출에 대한 처리 설정을 설정하는 데 사용됩니다. 이 탭에서 사용할 수 있는 다양한 옵션은 다음과 같습니다.
+
 * **[!UICONTROL 만 확인]**: 입력 DDX 문서의 유효성을 검사합니다.
 * **[!UICONTROL 오류 시 실패]**: 오류가 있는 경우 API 호출 서비스 실패 여부를 나타내는 부울 값입니다. 기본적으로 이 값은 False로 설정됩니다.
 * **[!UICONTROL 첫 번째 베이츠 수]**: 자동으로 증가하는 수를 지정합니다. 이 자가 증분 숫자는 각 연속 페이지에 자동으로 표시됩니다.
@@ -270,6 +273,7 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 >환경 옵션은 HTTP API와 계속 동기화됩니다.
 
 **[!UICONTROL 출력 문서]**: 출력 파일을 저장할 위치를 지정합니다. 이 탭에서 사용할 수 있는 다양한 옵션은 다음과 같습니다.
+
 * **[!UICONTROL 페이로드에 출력 저장]**: 페이로드가 파일인 경우 페이로드 폴더 아래에 출력 문서를 저장하거나 페이로드를 덮어씁니다.
 * **[!UICONTROL 출력 문서의 맵]**: 문서당 하나의 항목을 추가하여 각 문서 파일을 명시적으로 저장할 위치를 지정합니다. 각 항목은 문서와 문서를 저장할 위치를 나타냅니다. 출력 문서가 여러 개 있는 경우 이 옵션이 사용됩니다.
 

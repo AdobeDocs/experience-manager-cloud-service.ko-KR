@@ -3,9 +3,9 @@ title: AEM Forms용 Edge Delivery Services 양식 게시
 description: AEM Forms용 Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ ht-degree: 100%
 
 1. AEM Sidekick을 사용하여 양식을 게시합니다. 이제 고객은 양식을 작성하여 제출할 수 있습니다.
 
-+++
++++ 
 
 ## 문제 해결
 

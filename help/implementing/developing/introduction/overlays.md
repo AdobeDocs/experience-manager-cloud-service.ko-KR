@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service용 오버레이
 description: AEM as a Cloud Service은 오버레이 원리를 사용하여 콘솔 및 기타 기능을 확장하고 사용자 정의할 수 있습니다
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -23,9 +23,9 @@ Adobe Experience Manager as a Cloud Service은 오버레이 원리를 사용하�
 
    * 메서드
 
-      * `/apps`에서 적절한 `/libs` 구조를 다시 구성합니다.
+      * `/libs`에서 적절한 `/apps` 구조를 다시 구성합니다.
 
-        [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)을(를) 사용하여 필요한 원래 정의를 상호 참조하므로 이 재구조화에는 1:1 사본이 필요하지 않습니다. Sling 리소스 병합은 리소스를 액세스하고 차등(차이점 보관용) 메커니즘과 병합하는 서비스를 제공합니다.
+        :1Sling 리소스 병합[이(가) 필요한 원래 정의를 상호 참조하는 데 사용되므로 이 재구조화에는 1](/help/implementing/developing/introduction/sling-resource-merger.md) 복사본이 필요하지 않습니다. Sling 리소스 병합은 리소스를 액세스하고 차등(차이점 보관용) 메커니즘과 병합하는 서비스를 제공합니다.
 
       * `/apps`에서 변경합니다.
 
@@ -47,6 +47,6 @@ Adobe Experience Manager as a Cloud Service은 오버레이 원리를 사용하�
 
 ## 경로 검색 {#search-paths}
 
-AEM에서는 검색 경로를 사용하여 리소스를 찾고, 기본적으로 `/apps` 분기를 검색한 다음 `/libs` 분기를 검색합니다. 이 메커니즘은 `/apps`의 오버레이(및 여기에 정의된 사용자 지정)에 우선 순위가 있음을 의미합니다.
+AEM은 검색 경로를 사용하여 리소스를 찾고, 기본적으로 `/apps` 분기를 검색한 다음 `/libs` 분기를 검색합니다. 이 메커니즘은 `/apps`의 오버레이(및 여기에 정의된 사용자 지정)에 우선 순위가 있음을 의미합니다.
 
 오버레이의 경우 전달된 리소스는 OSGi 구성에 정의된 검색 경로에 따라 검색된 리소스 및 속성의 집계입니다.

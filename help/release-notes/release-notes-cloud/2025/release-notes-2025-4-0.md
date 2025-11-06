@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.4.0 �
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 96%
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 2025년 4월 릴리스 개요 비디오를 통해 2025.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464009?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -164,12 +164,14 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 고객 환경을 효과적으로 모니터링하려면 AEM Java 로그가 일관된 형식을 유지해야 하며 사용자 정의 구성으로 재정의되어서는 안 됩니다. 로그 출력은 기본 파일로 계속 전달되어야 합니다. AEM 제품 코드의 경우 기본 로그 수준을 유지해야 합니다. 단, 고객이 개발한 코드에 대한 로그 수준을 조정하는 것은 허용됩니다.
 
 이를 위해 다음 OSGi 속성을 변경해서는 안 됩니다.
+
 * **Apache Sling 로그 구성** (PID: `org.apache.sling.commons.log.LogManager`) — *모든 속성*
 * **Apache Sling 로깅 로거 구성** (공장 PID: `org.apache.sling.commons.log.LogManager.factory.config`):
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 5월 중순부터 AEM에서는 이러한 속성에 대한 사용자 정의 수정 사항이 무시되는 정책을 시행할 예정입니다. 다운스트림 프로세스를 검토하고 그에 따라 조정하십시오. 예를 들어 로그 전달 기능을 사용하는 경우:
+
 * 로깅 대상이 사용자 정의(기본이 아닌) 로그 형식을 기대하는 경우 수집 규칙을 업데이트해야 할 수 있습니다.
 * 로그 수준을 변경하여 로그의 자세한 정보가 줄어든 경우, 기본 로그 수준을 적용하면 로그 볼륨이 상당히 증가할 수 있다는 점을 알아 두십시오.
 

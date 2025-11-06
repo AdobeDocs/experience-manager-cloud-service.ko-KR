@@ -3,12 +3,12 @@ title: ' [!DNL Experience Manager Assets]에서의 접근성'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 장애가 있는 사용자를 돕기 위한 의 접근성 기능에 대해 알아봅니다.'
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Cloud Service]&#x200B;(으)로 [!DNL Adobe Experience Manager Assets]의 접근성 기능 {#accessibility-in-aem-assets}
+# [!DNL Adobe Experience Manager Assets]&#x200B;(으)로 [!DNL Cloud Service]의 접근성 기능 {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager]을(를) 사용하면 콘텐츠 작성자 및 게시자가 웹에서 놀라운 경험을 제공할 수 있습니다. Adobe은 [!DNL Experience Manager]의 접근성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 이 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각적, 청각적, 이동성 또는 기타 장애가 있는 개인을 포함한 전 세계 표준을 준수합니다.
 
@@ -41,7 +41,7 @@ Possible topics to cover in this article are below.
 * [접근성 이니셔티브 - W3C에서 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/accessibility/compliance.html)&#x200B;(ACR) 페이지를 참조하십시오.
+준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/kr/accessibility/compliance.html)&#x200B;(ACR) 페이지를 참조하십시오.
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
@@ -148,7 +148,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * `Esc` 키를 사용하여 썸네일 보기에서 빠른 작업 아이콘을 제거해도 마지막 포커스 항목에서 키보드 포커스가 제거되지 않습니다.
 * 자산을 선택한 상태에서 `Alt + 4` 바로 가기 키를 선택하면 왼쪽 레일에서 [!UICONTROL 참조] 목록이 열립니다. `Tab` 키를 사용하면 0이 아닌 참조 항목을 탐색할 수 있습니다. 0이 아닌 참조 항목만 탐색하면 작업량과 키 입력도 절약됩니다.
 * 에셋에 대한 댓글은 에셋 타임라인에서 사용할 수 있습니다. 키보드 또는 키보드 단축키를 사용하여 왼쪽 레일에 액세스하는 경우 액세스할 수 있습니다.
-* 키보드를 사용하여 [!DNL Experience Manager]의 [!UICONTROL 보기 설정]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
+* 키보드를 사용하여 [!UICONTROL 의 ]보기 설정[!DNL Experience Manager]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
@@ -244,4 +244,4 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 >
 >* [각 릴리스에서 수행된 개선 사항의 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] 접근성 지침](/help/compliance/accessibility/web-accessibility.md).
->* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).
+>* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.1.0 �
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -31,13 +31,13 @@ ht-degree: 90%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[&#x200B; 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
 2024년 1월 릴리스 개요 비디오를 통해 2024.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448936?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -95,7 +95,7 @@ Experience Manager Assets는 이제 처리 프로필 구성 없이 기본적으�
 
   공식 이메일 ID에서 “`aem-forms-early-adopter-program@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.
 
-* **[작동 원격 분석 서비스를 사용하여](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
+* **[작동 원격 분석 서비스를 사용하여](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**AEM as a Cloud Service에 대해 클라이언트측 수집을 사용하도록 설정할 수 있습니다.
 운영 원격 분석 서비스는 사용자 상호 작용을 보다 정밀하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
 
   이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 운영 원격 분석을 사용할 각 환경의 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`에게 전자 메일을 보내십시오. 그런 다음 Adobe 제품 팀이 Operational Telemetry Service를 활성화합니다.
@@ -112,7 +112,8 @@ Dynatrace 고객은 자신의 AEM 사용 현황을 모니터링할 수 있습니
 
 ### 도메인 매핑 얼리 어답터 프로그램 {#cdn-config-early-adopter}
 
-선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 [다른 유형의 CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)을 선언하고 배포할 수 있습니다. 다음 항목에 액세스하려면 **aemcs-cdn-config-adopter@adobe.com**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여합니다.
+선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 [다른 유형의 CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)을 선언하고 배포할 수 있습니다. 다음에 대한 액세스 권한을 얻으려면 **`aemcs-cdn-config-adopter@adobe.com`**&#x200B;에 전자 메일을 보내 얼리어답터 프로그램에 참여하십시오.
+
 * 301/302 클라이언트측 리디렉션
 * 에지의 요청을 임의의 출처로 프록시 처리
 * URL 변환
@@ -121,7 +122,7 @@ Dynatrace 고객은 자신의 AEM 사용 현황을 모니터링할 수 있습니
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 

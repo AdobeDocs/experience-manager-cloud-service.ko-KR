@@ -3,7 +3,7 @@ title: 자산 선택기 응용 프로그램 사용자 지정
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -357,7 +357,7 @@ const showToast = {
 
 자산 선택기를 사용하여 태그 선택기 필터를 추가할 수 있습니다. 모든 관련 태그를 특정 태그 그룹에 결합하는 태그 그룹을 지원합니다. 또한 찾고 있는 자산에 해당하는 추가 태그를 선택할 수 있습니다. 또한 사용자가 주로 사용하는 상황별 호출 필터 아래에 기본 태그 그룹을 설정하여 이동 중에 액세스할 수도 있습니다.
 
->
+>[!NOTE]
 >
 > * 검색에서 태그 지정 필터를 활성화하려면 상황별 호출 코드 조각을 추가해야 합니다.
 > * 태그 그룹 형식 `(property=xcm:keywords.id=)`에 해당하는 이름 속성을 사용해야 합니다.

@@ -2,10 +2,10 @@
 title: 외부 Git 저장소를 사용하도록 Edge Delivery 사이트 구성
 description: Edge Delivery 사이트를 개인 또는 엔터프라이즈 Git 저장소에 연결하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%
 

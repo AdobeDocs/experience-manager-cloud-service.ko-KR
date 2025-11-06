@@ -2,10 +2,10 @@
 title: Cloud Manager에 Edge Delivery 사이트 추가
 description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법을 알아보십시오.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Edge Delivery Services 사이트를 Cloud Manager에 온보딩해야 하는 이유를 알아보십시오.
->>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
+>[Edge Delivery Services에 대한 Adobe 권장 경로 사용의 이점](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)을 참조하십시오.
 
 **Cloud Manager에 Edge Delivery 사이트를 추가하려면:**
 

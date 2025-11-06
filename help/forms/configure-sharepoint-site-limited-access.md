@@ -5,7 +5,7 @@ keywords: 제한된 액세스로 SharePoint 사이트를 구성하는 방법. �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 15%
@@ -36,23 +36,24 @@ SharePoint 사이트에 대한 제한된 액세스를 제공하는 이점:
 
 인증 범위를 사용하여 제한된 액세스로 SharePoint 사이트를 구성하려면 아래 단계를 따르십시오.
 
-1. [을(를) 사용하여 애플리케이션 만들기 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [을(를) 사용하여 애플리케이션 만들기 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [AEM 인스턴스에서 인증 범위 설정](#set-the-authorization-scope-at-aem-instance)
 
 ### Azure 포털에서 제한된 권한으로 응용 프로그램 만들기
 
-Microsoft의 Graph API에서 [&#x200B; 권한 범위를 사용하여 &#x200B;](https://portal.azure.com/#home)Microsoft Azure 포털`Sites.Selected`에 응용 프로그램을 만듭니다.
+Microsoft의 Graph API에서 [ 권한 범위를 사용하여 ](https://portal.azure.com/#home)Microsoft Azure 포털`Sites.Selected`에 응용 프로그램을 만듭니다.
 
 ![SharePoint 선택 사이트](/help/forms/assets/sharepoint-selected-site.png)
 
 `Client ID`의 `Client Secret`, `Tenant ID` 및 `OAuth URL`을(를) 검색하는 방법에 대한 자세한 내용은 [Microsoft® 설명서](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)를 참조하십시오.
+
 * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
 * 제한된 사이트 액세스를 제공하기 위해 Microsoft의 Graph API에 `offline_access` 및 `Sites.Selected` 권한 범위를 추가하십시오.
 * OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
 `Sites.Selected` API 권한을 사용하려면 SharePoint Online Sites에 대해 적절한 권한이 설정된 Azure 포털에 등록된 응용 프로그램이 필요합니다. 이 설정을 사용하면 정의된 범위 내에서 SharePoint 사이트와 상호 작용하는 데 필요한 권한이 애플리케이션에 부여되므로 필요한 제한된 액세스를 제공할 수 있습니다.
 
-SharePoint Online Sites에 대해 [&#x200B; 권한을 사용하는 응용 프로그램을 개발하는 방법에 대한 지침은 &#x200B;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)블로그 문서 - SPO Sites에 대해 Sites.Selected 권한을 사용하는 응용 프로그램 개발`Sites.Selected`을(를) 참조하십시오.
+SharePoint Online Sites에 대해 [ 권한을 사용하는 응용 프로그램을 개발하는 방법에 대한 지침은 ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)블로그 문서 - SPO Sites에 대해 Sites.Selected 권한을 사용하는 응용 프로그램 개발`Sites.Selected`을(를) 참조하십시오.
 
 ### AEM 인스턴스에서 인증 범위 설정
 
@@ -91,6 +92,7 @@ Microsoft SharePoint 사이트에 대한 제한된 액세스를 제공하려면 
 ## 추가 바이트
 
 `SharePoint Site ID`의 값을 검색하려면 다음을 수행하십시오.
+
 1. [Microsoft Graph Explorer API](https://developer.microsoft.com/en-us/graph/graph-explorer)&#x200B;(으)로 이동합니다.
 1. 왼쪽 창의 `SharePoint Sites` API에서 `Search for a SharePoint site by keyword`을(를) 클릭합니다.
 1. 자리 표시자 `contoso`을(를) SharePoint 사이트의 실제 이름으로 바꾸면 해당 사이트 ID를 가져올 수 있습니다.

@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Dynamic Media 여정에 오신 것을 환영합니다.
 
 이 여정은 Dynamic Media의 기본 사항, 작동 방식, 사용자에게 제공할 수 있는 기능 및 작업 및 고객에게 제공하는 가치를 다룹니다.
 
-**_전제 조건_**
+**_사전 요구 사항_**
 
 * 이미지 및 비디오 형식에 대한 기본 이해
 * HTML 및 CSS에 대한 기본 이해
@@ -65,7 +65,7 @@ _파트 II_
 
 ## Dynamic Media란 무엇이며 어떤 도움을 줄 수 있습니까? {#dm-journey-a}
 
-Dynamic Media를 사용하면 다양한 시각적 머천다이징 및 마케팅 자산을 온디맨드로 제공할 수 있습니다. 또한 확대/축소, 360도 회전 및 비디오를 비롯한 대화형 보기 환경을 만들고 제공하는 데 도움이 됩니다. 자산은 웹, 모바일 및 소셜 사이트에서 사용할 수 있도록 동적으로 크기가 조정됩니다. 이미지, 비디오 및 3D와 같은 기본 소스 자산 세트를 사용하는 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 CDN(Content Delivery Network)을 통해 실시간으로 이 풍부한 컨텐츠의 여러 변형을 생성하고 전달합니다.
+Dynamic Media는 풍부한 비주얼 머천다이징 및 마케팅 자산을 온디맨드로 게재할 수 있게 합니다. 또한 확대/축소, 360도 회전, 비디오 등 대화형 시청 환경을 만들고 제공하는 데 도움이 됩니다. 자산을 웹, 모바일 및 소셜 사이트에서 소비할 수 있도록 동적으로 확정합니다. 이미지, 비디오, 3D 등 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 CDN(콘텐츠 전송 네트워크)을 통해 실시간으로 다양한 유형의 풍부한 콘텐츠를 생성하고 전달합니다
 
 Dynamic Media는 Adobe Experience Manager Assets 디지털 자산 관리 솔루션의 워크플로우를 통합하여 디지털 캠페인 관리 프로세스를 간소화하고 간소화합니다.
 
@@ -125,7 +125,7 @@ _스마트 이미징은 고객의 브라우저 기능과 네트워크 속도에 
 
 응용 비디오 세트는 다른 비트율 및 형식으로 인코딩된 동일한 비디오 버전을 그룹화합니다.
 
-시스템에 업로드하는 원본 기본 비디오부터 시작합니다. Dynamic Media는 자동으로 해당 비디오의 크기를 지정하거나 _코드 변환_&#x200B;합니다. 그런 다음, 배송 시 어떤 비디오 화면, 어떤 품질, 어떤 포맷을 사용할 것인지 지능적으로 결정하여 전화, 태블릿, 데스크탑 컴퓨터 중 하나로 전달한다.
+먼저 시스템에 업로드한 원본 기본 비디오부터 시작합니다. Dynamic Media는 자동으로 해당 비디오의 크기를 지정하거나 _코드 변환_&#x200B;합니다. 그런 다음 게재 시 어떤 비디오 화면, 어떤 품질, 어떤 포맷을 사용할지 지능적으로 결정하여 휴대폰, 태블릿 또는 데스크탑 컴퓨터에 전달합니다.
 
 예를 들어 iOS 모바일 장치에서 4G, 5G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음, 그것은 응용 비디오 세트 내의 다양한 비디오 비트 레이트 중에서 올바른 인코딩된 비디오를 자동으로 선택한다. 비디오는 모바일 장치, 태블릿 또는 데스크탑 컴퓨터로 스트리밍됩니다.
 
@@ -246,7 +246,7 @@ Adobe에서는 자산을 무손실 형식으로 업로드하는 것을 권장합
 
 ### 에셋 게시 및 미리보기
 
-Dynamic Media에 에셋을 업로드한 후 에셋을 선택한 다음 Dynamic Media에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭하여 _게시_&#x200B;하는 것이 좋습니다. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 자산이 게시된 후 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
+Dynamic Media에 에셋을 업로드한 후 에셋을 선택한 다음 Dynamic Media에서 _게시_ 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭하여 **[!UICONTROL 게시]**&#x200B;하는 것이 좋습니다. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 자산이 게시된 후 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 
 자산을 수동으로 게시하는 것 외에도 업로드 시 사용자 개입 없이 자산을 즉시 게시하도록 Dynamic Media를 구성할 수 있습니다.
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 

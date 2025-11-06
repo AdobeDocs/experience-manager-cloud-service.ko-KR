@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.2.0 �
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 95%
@@ -31,7 +31,7 @@ ht-degree: 95%
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
-[&#x200B; 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
+[여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -57,7 +57,7 @@ ht-degree: 95%
 
 **콘텐츠 조각 편집기 롤아웃**
 
-[통합 셸](/help/overview/aem-cloud-service-on-unified-shell.md)(Spectrum-UI 사용)을 사용하여 AEM as a Cloud Service에서 새 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)를 계속 활성화합니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
+[통합 셸](/help/sites-cloud/administering/content-fragments/authoring.md)(Spectrum-UI 사용)을 사용하여 AEM as a Cloud Service에서 새 [콘텐츠 조각 편집기](/help/overview/aem-cloud-service-on-unified-shell.md)를 계속 활성화합니다. 2024년 11월에 모든 클라우드 서비스 개발자 환경의 기본값이 된 후 2025년 4월 1일에 모든 스테이징 환경의 기본값으로 설정되고, 2025년 5월 1일에 모든 프로덕션 환경의 기본값으로 설정됩니다. 어떠한 경우에도 사용자는 AEM Touch UI에서 기존 콘텐츠 조각 편집기로 돌아갈 수 있습니다.
 
 **번역 HTTP API**
 
@@ -128,6 +128,7 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. Adobe는 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지에 대한 귀하의 의견을 듣고자 합니다. 또한 제품 로드맵에 반영할 수 있도록 이 기술을 어떻게 활용할 계획인지 알려 주십시오.
 
 가능한 일부 사용 사례는 다음과 같습니다.
+
 * 콘텐츠에 대한 액세스를 제어하기 위해 IdP를 통한 인증
 * 지리적 위치, 디바이스 유형, 사용자 속성 등을 기반으로 동적(개인화, 지역화) 콘텐츠 렌더링
 * 고급 이미지 조작
@@ -158,24 +159,24 @@ Java 17 또는 21 빌드가 감지되면 성능이 더 뛰어난 Java 21 **런�
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)에서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes/current.md)서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+[여기](/help/implementing/cloud-manager/release-notes/current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 마이그레이션 도구 {#migration-tools}
 
-[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+[여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
 
 ## 범용 편집기 {#universal-editor}
 
-[여기](/help/release-notes/universal-editor/current.md)서 범용 편집기의 전체 목록을 찾을 수 있습니다.
+[여기](/help/release-notes/universal-editor/current.md)에서 범용 편집기의 전체 목록을 찾을 수 있습니다.
 
 ## 변형 생성 {#generate-variations}
 
-[여기](/help/generative-ai/release-notes-generate-variations.md)서 변형 생성의 전체 목록을 찾을 수 있습니다.
+[여기](/help/generative-ai/release-notes-generate-variations.md)에서 변형 생성의 전체 목록을 찾을 수 있습니다.
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)서 확인할 수 있습니다.
+기타 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.

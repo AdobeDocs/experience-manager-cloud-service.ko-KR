@@ -4,8 +4,8 @@ description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 �
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 69%
@@ -101,5 +101,5 @@ Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 
 
 AEM as a Cloud Service의 로그 파일에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
-* [클라우드 5 AEM 로그 파일](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [로그를 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [클라우드 5 AEM 로그 파일](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [로그를 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

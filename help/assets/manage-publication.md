@@ -3,9 +3,9 @@ title: 게시 관리
 description: Experience Manager Assets, Dynamic Media 및 Brand Portal에 자산 게시 또는 게시 취소
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 4%
@@ -14,9 +14,9 @@ ht-degree: 4%
 
 # Experience Manager Assets에서 게시 관리 {#manage-publication-in-aem}
 
-[!DNL Adobe Experience Manager Assets] 관리자는 작성자 인스턴스의 자산 및 자산을 포함하는 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media] 및 [!DNL Brand Portal]에 게시할 수 있습니다. 나중에 에셋 또는 폴더를 게시하도록 예약할 수도 있습니다. 게시되면 사용자는 에셋에 액세스하고 다른 사용자에게 에셋을 추가로 배포할 수 있습니다. 기본적으로 에셋 및 폴더를 [!DNL Experience Manager Assets]에 게시할 수 있습니다. 그러나 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ko) 및 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko)에 게시하도록 [!DNL Experience Manager Assets]을(를) 구성할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 관리자는 작성자 인스턴스의 자산 및 자산을 포함하는 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media] 및 [!DNL Brand Portal]에 게시할 수 있습니다. 나중에 에셋 또는 폴더를 게시하도록 예약할 수도 있습니다. 게시되면 사용자는 에셋에 액세스하고 다른 사용자에게 에셋을 추가로 배포할 수 있습니다. 기본적으로 에셋 및 폴더를 [!DNL Experience Manager Assets]에 게시할 수 있습니다. 그러나 [!DNL Experience Manager Assets][[!DNL Dynamic Media] 및 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html)[[!DNL Brand Portal]에 게시하도록 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)을(를) 구성할 수 있습니다.
 
-[!DNL Experience Manager Assets] 인터페이스에서 사용할 수 있는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 옵션을 사용하여 에셋 또는 폴더 수준에서 에셋을 게시하거나 게시를 취소할 수 있습니다. [!DNL Experience Manager Assets]에서 원본 에셋 또는 폴더를 추가로 수정하는 경우 [!DNL Experience Manager Assets]에서 다시 게시하기 전까지 변경 내용이 게시 인스턴스에 반영되지 않습니다. 진행 중인 작업 변경 사항을 게시 인스턴스에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 게시 인스턴스에서 사용할 수 있습니다.
+**[!UICONTROL 인터페이스에서 사용할 수 있는]**&#x200B;빠른 게시&#x200B;**[!UICONTROL 또는]**&#x200B;게시 관리[!DNL Experience Manager Assets] 옵션을 사용하여 에셋 또는 폴더 수준에서 에셋을 게시하거나 게시를 취소할 수 있습니다. [!DNL Experience Manager Assets]에서 원본 에셋 또는 폴더를 추가로 수정하는 경우 [!DNL Experience Manager Assets]에서 다시 게시하기 전까지 변경 내용이 게시 인스턴스에 반영되지 않습니다. 진행 중인 작업 변경 사항을 게시 인스턴스에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 게시 인스턴스에서 사용할 수 있습니다.
 
 * [빠른 게시를 사용하여 자산 게시](#quick-publish)
 * [게시 관리를 사용하여 자산 게시](#manage-publication)
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 게시 관리를 사용하면 선택한 대상에 콘텐츠를 게시하거나 게시를 취소할 수 있고, DAM 저장소의 게시 목록에 콘텐츠를 [추가](#add-content)할 수 있으며, [폴더 설정을 포함하여](#include-folder-settings)선택한 폴더의 콘텐츠를 게시하고 필터를 적용할 수 있고, 나중에 게시할 날짜 또는 시간에 [게시 일정](#publish-assets-later)할 수 있습니다.
 
-[!DNL Experience Manager Assets] 콘솔에서 상위 폴더로 이동하여 게시할 모든 자산 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리]** 옵션을 클릭합니다. [!DNL Experience Manager Assets] 인스턴스에 구성된 [!DNL Dynamic Media] 및 [!DNL Brand Portal]이(가) 없는 경우 [!DNL Experience Manager Assets]에만 에셋 및 폴더를 게시할 수 있습니다.
+[!DNL Experience Manager Assets] 콘솔에서 상위 폴더로 이동하여 게시할 모든 자산 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리]** 옵션을 클릭합니다. [!DNL Dynamic Media] 인스턴스에 구성된 [!DNL Brand Portal] 및 [!DNL Experience Manager Assets]이(가) 없는 경우 [!DNL Experience Manager Assets]에만 에셋 및 폴더를 게시할 수 있습니다.
 
 ![게시 관리](assets/manage-publication-aem.png)
 
@@ -161,20 +161,20 @@ Only the selected folder content and references are published.
 * `Immediate`
 * `Upon Activation`
 
-**[!UICONTROL 즉시]** 및 **[!UICONTROL 활성화 시]** 모드의 게시 프로세스는 일관되지만 **[!UICONTROL 선택적 게시]**&#x200B;에는 다릅니다. [Dynamic Media의 폴더 수준에서 선택적 게시 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ko)을 참조하십시오. 폴더에서 선택적 게시를 구성한 후 다음 중 하나를 수행할 수 있습니다.
+**[!UICONTROL 즉시]** 및 **[!UICONTROL 활성화 시]** 모드의 게시 프로세스는 일관되지만 **[!UICONTROL 선택적 게시]**&#x200B;에는 다릅니다. [Dynamic Media의 폴더 수준에서 선택적 게시 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html)을 참조하십시오. 폴더에서 선택적 게시를 구성한 후 다음 중 하나를 수행할 수 있습니다.
 
-* [게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ko#selective-publish-manage-publication)
-* [게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에서 자산 게시를 선택적으로 취소합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ko#selective-unpublish-manage-publication)
-* [빠른 게시를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ko#quick-publish-aem-dm)
-* [검색 결과를 통해 자산을 선택적으로 게시하거나 게시를 취소합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ko#selective-publish-unpublish-search-results)
+* [게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
+* [게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에서 자산 게시를 선택적으로 취소합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
+* [빠른 게시를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
+* [검색 결과를 통해 자산을 선택적으로 게시하거나 게시를 취소합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
 
 ## Brand Portal에 자산 게시 {#publish-assets-to-brand-portal}
 
 자산, 폴더 및 컬렉션을 [!DNL Experience Manager Assets Brand Portal] 인스턴스에 게시할 수 있습니다.
 
-* [자산을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko#publish-assets-to-bp)
-* [폴더를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko#publish-folders-to-brand-portal)
-* [컬렉션을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko#publish-collections-to-brand-portal)
+* [자산을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
+* [폴더를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
+* [컬렉션을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
 ## 게시 요청 {#request-publication}
 

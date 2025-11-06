@@ -3,11 +3,11 @@ title: 개발 및 페이지 비교
 description: 페이지 비교 기능의 작동 방식과 개발자에게 영향을 미치는 방식을 이해합니다
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 12%
 
 ## 작업 세부 정보 {#operation-details}
 
-페이지의 버전을 비교할 때 쉽게 비교할 수 있도록 사용자가 비교하려는 이전 버전이 백그라운드에 AEM에 의해 다시 생성됩니다. 이 이전 버전은 [병렬 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)를 위해 콘텐츠를 렌더링하는 데 필요합니다.
+페이지의 버전을 비교할 때 쉽게 비교할 수 있도록 사용자가 비교하려는 이전 버전이 AEM에 의해 백그라운드에 다시 생성됩니다. 이 이전 버전은 [병렬 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)를 위해 콘텐츠를 렌더링하는 데 필요합니다.
 
-이 레크리에이션 작업은 내부적으로 AEM에 의해 수행되며 사용자에게 투명하며 개입이 필요하지 않습니다. 그러나 저장소를 보는 관리자(예: CRXDE Lite)는 콘텐츠 구조 내에서 이러한 재생성된 버전을 보게 됩니다.
+이 레크리에이션 작업은 AEM에서 내부적으로 수행되며 사용자에게 투명하며 개입이 필요하지 않습니다. 그러나 예를 들어 CRXDE Lite에서 저장소를 보는 관리자는 콘텐츠 구조 내에서 이러한 재생성된 버전을 보게 됩니다.
 
 콘텐츠를 비교할 때 비교할 페이지까지의 전체 트리가 다음 위치에 다시 만들어집니다.
 
@@ -46,6 +46,6 @@ DOM 비교를 통해 클라이언트측에서 차이가 발생하므로 비교 �
 
 * diff는 클라이언트측이며 페이지 로드 시 실행되므로, 클라이언트측 diff 서비스가 실행된 후 DOM에 대한 모든 조정은 계산되지 않습니다. 이 프로세스는 다음 사항에 영향을 줄 수 있습니다.
 
-   * AJAX을 사용하여 컨텐츠를 포함하는 구성 요소
+   * AJAX을 사용하여 콘텐츠를 포함하는 구성 요소
    * SPA (Single Page Applications)
    * 사용자 상호 작용 시 DOM을 조작하는 JavaScript 기반 구성 요소입니다.

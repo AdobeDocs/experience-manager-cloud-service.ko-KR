@@ -2,10 +2,10 @@
 title: 페이지 편집기 및 범용 편집기
 description: 페이지 편집기는 Adobe에서 계속 지원되지만, 범용 편집기는 새로운 프로젝트에 흥미로운 가능성을 제공합니다.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 

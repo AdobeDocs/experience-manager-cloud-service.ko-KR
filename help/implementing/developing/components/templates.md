@@ -3,10 +3,10 @@ title: 편집 가능한 템플릿
 description: 페이지를 만들고, 초기 컨텐츠, 구조화된 컨텐츠, 작성 정책 및 레이아웃을 정의할 때 편집 가능한 템플릿을 사용하는 방법에 대해 알아봅니다.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 4%
 * 편집 가능한 템플릿 만들기에 대한 개요를 제공합니다.
 * 편집 가능한 템플릿을 만드는 데 필요한 관리/개발자 작업에 대해 설명합니다.
 * 편집 가능한 템플릿의 기술 정보를 설명합니다
-* AEM이 템플릿의 가용성을 평가하는 방법을 설명합니다.
+* AEM에서 템플릿의 가용성을 평가하는 방법을 설명합니다.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용하는 것이 좋습니다.
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ ht-degree: 4%
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래에)를 만들 수 있습니다.
+1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더( /conf 아래에)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -370,9 +370,9 @@ When creating an editable template, the value is copied from the template type t
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
 1. 임의의 페이지 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)을 참조하세요. 이 작업은 템플릿 유형의 기반으로 사용됩니다.
-1. CRXDE Lite을 사용하여 `templates` 노드에서 [템플릿 폴더](#template-folders) 아래의 `template-types` 노드로 만든 템플릿을 복사합니다.
-1. [템플릿 폴더](#template-folders) 아래의 `templates` 노드에서 템플릿을 삭제하십시오.
-1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `jcr:content` 노드에서 모든 `cq:template` 및 `cq:templateType` 속성을 삭제합니다.
+1. CRXDE Lite을 사용하여 `templates` 노드에서 `template-types`템플릿 폴더[ 아래의 ](#template-folders) 노드로 만든 템플릿을 복사합니다.
+1. `templates`템플릿 폴더[ 아래의 ](#template-folders) 노드에서 템플릿을 삭제하십시오.
+1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `cq:template` 노드에서 모든 `cq:templateType` 및 `jcr:content` 속성을 삭제합니다.
 
 GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 자체 템플릿 유형을 개발할 수도 있습니다.
 
@@ -381,7 +381,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-sites-example-custom-template-type 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)(으)로 다운로드
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)&#x200B;(으)로 다운로드
 
 ## 템플릿 정의 {#template-definitions}
 
@@ -473,11 +473,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
-* `root` 노드의 속성 `cq:policy`
+* `cq:policy` 노드의 속성 `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 페이지의 단락 시스템에 대한 콘텐츠 정책에 대한 상대 참조를 제공합니다.
 
-* `root` 아래의 구성 요소 명시적 노드의 `cq:policy` 속성은 개별 구성 요소의 정책에 대한 링크를 제공합니다.
+* `cq:policy` 아래의 구성 요소 명시적 노드의 `root` 속성은 개별 구성 요소의 정책에 대한 링크를 제공합니다.
 
 * 실제 정책 정의는 아래에 저장됩니다.
   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
@@ -496,12 +496,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    템플릿을 사용하려면 다음 방법 중 하나로 템플릿을 활성화해야 합니다.
 
-   * **템플릿** 콘솔에서 [템플릿을 사용](/help/sites-cloud/authoring/page-editor/templates.md)합니다.
+   * [템플릿](/help/sites-cloud/authoring/page-editor/templates.md) 콘솔에서 **템플릿을 사용**&#x200B;합니다.
 
    * `jcr:content` 노드에서 상태 속성을 설정하는 중입니다.
 
       * 예를 들어,
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 속성을 정의합니다.
@@ -514,7 +513,6 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * [하위 분기의 해당 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)&#x200B;에서 허용되는 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
-
      `cq:allowedTemplates`
 필요한 분기의 `jcr:content` 노드에서.
 
@@ -547,7 +545,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **템플릿**:
 
-   * 해당 `jcr:content` 노드의 `cq:template` 속성이 해당 페이지에 해당하는 템플릿에 액세스하기 위해 참조됩니다.
+   * 해당 `cq:template` 노드의 `jcr:content` 속성이 해당 페이지에 해당하는 템플릿에 액세스하기 위해 참조됩니다.
 
 * **구성 요소**:
 
@@ -563,17 +561,17 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 다음 속성은 템플릿 `T`을(를) 사용하여 새 페이지를 `P` 페이지의 하위 페이지로 배치할 수 있는지 여부를 결정합니다. 이러한 각 속성은 경로와의 일치에 사용되는 0개 이상의 정규 표현식을 포함하는 다중 값 문자열입니다.
 
-* `P`의 `jcr:content` 하위 노드 또는 `P`의 상위 노드의 `cq:allowedTemplates` 속성입니다.
+* `cq:allowedTemplates`의 `jcr:content` 하위 노드 또는 `P`의 상위 노드의 `P` 속성입니다.
 
-* `T`의 `allowedPaths` 속성입니다.
+* `allowedPaths`의 `T` 속성입니다.
 
-* `T`의 `allowedParents` 속성입니다.
+* `allowedParents`의 `T` 속성입니다.
 
-* `P` 템플릿의 `allowedChildren` 속성입니다.
+* `allowedChildren` 템플릿의 `P` 속성입니다.
 
 평가는 다음과 같이 작동합니다.
 
-* `P`(으)로 시작하는 페이지 계층 구조를 오름차순으로 계산하는 동안 비어 있지 않은 첫 번째 `cq:allowedTemplates` 속성이 `T`의 경로에 대해 일치합니다. 일치하는 값이 없으면 `T`이(가) 거부됩니다.
+* `cq:allowedTemplates`(으)로 시작하는 페이지 계층 구조를 오름차순으로 계산하는 동안 비어 있지 않은 첫 번째 `P` 속성이 `T`의 경로에 대해 일치합니다. 일치하는 값이 없으면 `T`이(가) 거부됩니다.
 
 * `T`에 비어 있지 않은 `allowedPaths` 속성이 있지만 `P`의 경로와 일치하는 값이 없으면 `T`이(가) 거부됩니다.
 
@@ -591,9 +589,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 >[!CAUTION]
 >
->AEM은 **Sites**&#x200B;에서 허용되는 템플릿을 제어할 수 있는 여러 속성을 제공합니다. 하지만 이를 결합하면 추적 및 관리가 어려운 매우 복잡한 규칙이 발생할 수 있습니다.
+>AEM에서는 **사이트**&#x200B;에서 허용되는 템플릿을 제어할 수 있는 여러 속성을 제공합니다. 하지만 이를 결합하면 추적 및 관리가 어려운 매우 복잡한 규칙이 발생할 수 있습니다.
 >
->따라서 Adobe은 다음을 정의하여 단순하게 시작하는 것을 권장합니다.
+>따라서 Adobe에서는 다음을 정의하여 간단하게 시작하는 것이 좋습니다.
 >
 >* `cq:allowedTemplates` 속성만
 >
@@ -601,14 +599,14 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 >
 >예를 들어 [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 내용: `/content/wknd/jcr:content`을(를) 참조하십시오.
 >
->`allowedPaths`, `allowedParents` 및 `allowedChildren` 속성을 템플릿에 배치하여 보다 정교한 규칙을 정의할 수도 있습니다. 그러나 허용된 템플릿을 추가로 제한해야 하는 경우 가능한 경우 사이트의 하위 섹션에서 `cq:allowedTemplates` 속성을 추가로 정의하는 것이 *훨씬*&#x200B;입니다.
+>`allowedPaths`, `allowedParents` 및 `allowedChildren` 속성을 템플릿에 배치하여 보다 정교한 규칙을 정의할 수도 있습니다. 그러나 허용된 템플릿을 추가로 제한해야 하는 경우 가능한 경우 사이트의 하위 섹션에서 *속성을 추가로 정의하는 것이*&#x200B;훨씬`cq:allowedTemplates`입니다.
 >
->**페이지 속성**&#x200B;의 **고급** 탭에서 작성자가 `cq:allowedTemplates` 속성을 업데이트할 수 있는 추가적인 이점이 있습니다. 다른 템플릿 속성은 (표준) UI를 사용하여 업데이트할 수 없으므로 개발자는 모든 변경 사항에 대한 규칙 및 코드 배포를 유지 관리해야 합니다.
+>`cq:allowedTemplates`페이지 속성&#x200B;**의**&#x200B;고급&#x200B;**탭에서 작성자가** 속성을 업데이트할 수 있는 추가적인 이점이 있습니다. 다른 템플릿 속성은 (표준) UI를 사용하여 업데이트할 수 없으므로 개발자는 모든 변경 사항에 대한 규칙 및 코드 배포를 유지 관리해야 합니다.
 
 #### 하위 페이지에 사용되는 템플릿 제한 {#limiting-templates-used-in-child-pages}
 
-지정된 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 페이지의 `jcr:content` 노드의 `cq:allowedTemplates` 속성을 사용하여 하위 페이지로 허용할 템플릿 목록을 지정하십시오. 목록의 각 값은 허용된 하위 페이지(예: `/apps/wknd/templates/page-content`)에 대한 템플릿의 절대 경로여야 합니다.
+지정된 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 페이지의 `cq:allowedTemplates` 노드의 `jcr:content` 속성을 사용하여 하위 페이지로 허용할 템플릿 목록을 지정하십시오. 목록의 각 값은 허용된 하위 페이지(예: `/apps/wknd/templates/page-content`)에 대한 템플릿의 절대 경로여야 합니다.
 
-템플릿의 `jcr:content` 노드에서 `cq:allowedTemplates` 속성을 사용하여 이 템플릿을 사용하는 만들어진 모든 페이지에 이 구성을 적용할 수 있습니다.
+템플릿의 `cq:allowedTemplates` 노드에서 `jcr:content` 속성을 사용하여 이 템플릿을 사용하는 만들어진 모든 페이지에 이 구성을 적용할 수 있습니다.
 
 템플릿 계층 구조와 관련하여 제한을 더 추가하려면 템플릿의 `allowedParents/allowedChildren` 속성을 사용할 수 있습니다. 그런 다음 템플릿 T에서 만든 페이지가 템플릿 T에서 만든 페이지의 상위/하위 페이지가 되도록 명시적으로 지정할 수 있습니다.

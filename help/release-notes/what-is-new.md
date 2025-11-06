@@ -4,8 +4,8 @@ description: Adobe Experience Manager (AEM) as a Cloud Service의 새로운 기�
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
 feature: Release Information
 role: Admin
-source-git-commit: d2d45a7889b94d3886c6fd539231b72c5b796755
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 Adobe Experience Manager (AEM) as a Cloud Service는 웹 콘텐츠 및 디지털 자산 관리 기능을 포함하여 전체 콘텐츠 수명 주기에 대한 마케터 및 개발자 워크플로를 최적화하는 클라우드 기반의 플랫폼입니다. 클라우드 기반의 이 플랫폼은 확장 가능한 성능과 안전한 인프라를 제공하며, 최신 상태를 유지할 수 있도록 신속히 업데이트되고, 간편한 배포 및 관리를 가능하게 해 줍니다.
 
 Adobe Experience Manager as a Cloud Service에 대한 개요는 다음을 참조하십시오.
+
 * [AEM as a Cloud Service 소개](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
 * [AEM as a Cloud Service에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)

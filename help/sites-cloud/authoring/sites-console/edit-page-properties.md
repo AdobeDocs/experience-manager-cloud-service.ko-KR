@@ -4,13 +4,13 @@ description: 페이지 속성을 편집하고 페이지 동작을 변경하는 �
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 24%
 
 ---
-
 
 # 페이지 속성 편집 {#page-properties}
 
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 AEM의 여러 위치에서 페이지 속성을 편집할 수 있습니다.
 
-* [다음에서 &#x200B;](#from-the-sites-console)
+* [다음에서 ](#from-the-sites-console)
 * [페이지 편집기에서](#from-the-page-editor)
 * [유니버설 편집기에서](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ AEM의 여러 위치에서 페이지 속성을 편집할 수 있습니다.
 벌크 편집 창은 세로로 반으로 나눠집니다.
 
 * 왼쪽은 벌크 편집을 위해 선택한 페이지 목록입니다.
+
    * 필요에 따라 페이지를 선택/선택 해제할 수 있습니다.
    * 기본적으로 모두 선택되어 있습니다.
+
 * 오른쪽은 대량 편집에 사용할 수 있는 [속성 목록입니다.](/help/implementing/developing/extending/bulk-editor.md)
+
    * 단일 페이지의 속성을 볼 때처럼 탭 아래에 속성이 정렬됩니다.
    * 선택한 모든 페이지에서 사용할 수 있고 일괄 편집에서 사용할 수 있다고 명시적으로 정의된 속성이 표시됩니다.
    * 페이지 선택을 한 페이지로 제한하면 모든 속성이 보입니다.
    * 공통 값이 있는 속성만 표시됩니다.
    * 필드가 다중 값이면(예: 태그) *모두*&#x200B;가 일반적인 경우에만 값이 표시됩니다. 일부만 공통되는 경우 편집할 때만 표시됩니다.
+
 * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다.
 
 선택한 페이지에서 사용할 수 있는 필드의 값을 업데이트할 수 있습니다. **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다. 필드가 다중 값이면(예: 태그) 새 값을 추가하거나 공통 값을 제거할 수 있습니다.

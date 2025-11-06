@@ -1,10 +1,10 @@
 ---
 title: 이미지 편집기
-description: 이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
+description: 이미지 편집기는 AEM의 핵심 조각으로, 구성 요소에서 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 사용할 수 있습니다.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 이미지 편집기 {#image-editor}
 
-이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
+이미지 편집기는 AEM의 핵심 조각으로, 구성 요소에서 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 사용할 수 있습니다.
 
 ## 이미지 맵의 상대 단위 {#relative-units-for-image-map}
 
@@ -38,7 +38,7 @@ ht-degree: 10%
 
 ## SVG 이미지 지원 {#support-for-svg-images}
 
-이미지 편집기에서 확장 가능한 벡터 그래픽(SVG)을 지원합니다.
+이미지 편집기에서 지원하는 확장 가능한 벡터 그래픽(SVG)
 
 * DAM에서의 SVG 자산 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
 
@@ -50,7 +50,7 @@ ht-degree: 10%
 
 ### 예 {#example}
 
-예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에 대해서만 허용되어야 한다고 가정해 보겠습니다.
+예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에만 허용되어야 한다고 가정해 보겠습니다.
 
 그런 다음 `supportedMimeTypes` 속성을 이미지 구성 요소의 `cq:editConfig` 노드에 있는 플러그인의 구성 노드에서 허용된 MIME 형식의 문자열로 설정해야 합니다.
 

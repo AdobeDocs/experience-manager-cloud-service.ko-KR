@@ -2,10 +2,10 @@
 title: Forms용 Edge Delivery Services용 범용 편집기
 description: Forms용 Edge Delivery Services용 범용 편집기를 사용하여 적응형 양식을 만듭니다.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 100%
 

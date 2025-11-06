@@ -3,8 +3,8 @@ title: AEM as a Cloud Service에서 클라이언트측 라이브러리 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # AEM as a Cloud Service에서 클라이언트측 라이브러리 사용 {#using-client-side-libraries}
 
-디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)와 함께 사용하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
+디지털 경험은 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. AEM 클라이언트측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트측 라이브러리를 구성하고 저장소 내에 중앙에서 저장할 수 있습니다. AEM Project Archetype의 [프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)와 함께 사용하면 AEM 프로젝트에 대한 프론트엔드 코드를 간편하게 관리할 수 있습니다.
 
 AEM에서 clientlib을 사용할 때의 장점은 다음과 같습니다.
 
@@ -27,7 +27,7 @@ Clientlib은 AEM에서 CSS 및 JavaScript을 제공하는 기본 제공 솔루�
 
 >[!TIP]
 >
->AEM 프로젝트용 CSS와 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)를 숙지해야 합니다.
+>AEM 프로젝트용 CSS와 JavaScript을 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)를 숙지해야 합니다.
 
 ## 클라이언트측 라이브러리란 무엇입니까? {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치의 단일 파일로 수�
 
 ## AEM as a Cloud Service용 프론트엔드 개발 {#fed-for-aemaacs}
 
-모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype[의 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
+모든 JavaScript, CSS 및 기타 프론트엔드 자산은 AEM Project Archetype[의 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)ui.frontend 모듈에서 유지 관리되어야 합니다. Archetype의 유연성으로 원하는 최신 웹 도구를 사용하여 이러한 리소스를 만들고 관리할 수 있습니다.
 
 그런 다음 Archetype은 리소스를 단일 CSS 및 JS 파일로 컴파일하여 리포지토리의 `cq:clientLibraryFolder`에 자동으로 포함할 수 있습니다.
 
@@ -92,7 +92,7 @@ AEM은 사이트의 CSS와 JavaScript을 중앙 위치의 단일 파일로 수�
 1. 정적 리소스를 관리해야 하는 경우 클라이언트 라이브러리 폴더 아래에 `resources`(이)라는 하위 폴더를 만듭니다.
    * `resources` 폴더 아래 이외의 위치에 정적 리소스를 저장하는 경우 게시 인스턴스에서 참조할 수 없습니다.
 1. 라이브러리 폴더에 소스 파일을 추가합니다.
-   * 이 작업은 일반적으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ko)의 프론트엔드 빌드 프로세스에서 수행됩니다.
+   * 이 작업은 일반적으로 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)의 프론트엔드 빌드 프로세스에서 수행됩니다.
    * 원하는 경우 하위 폴더에 소스 파일을 구성할 수 있습니다.
 1. 클라이언트 라이브러리 폴더를 선택하고 **만들기 > 파일 만들기**&#x200B;를 클릭합니다.
 1. 파일 이름 상자에 다음 파일 이름 중 하나를 입력하고 확인을 클릭합니다.
@@ -127,7 +127,7 @@ Clientlib을 클라이언트 라이브러리 폴더에 저장하고 관리하면
 
 각 도우미 템플릿에는 원하는 클라이언트 라이브러리를 참조하기 위한 `categories` 옵션이 필요합니다. 해당 옵션은 문자열 값의 배열이거나 쉼표로 구분된 값 목록을 포함하는 문자열일 수 있습니다.
 
-HTL을 통한 clientlib 로드에 대한 자세한 내용은 [HTL 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=ko#loading-client-libraries).
+HTL을 통한 clientlib 로드에 대한 자세한 내용은 [HTL 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries).
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}

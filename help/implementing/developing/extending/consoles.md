@@ -3,11 +3,11 @@ title: 콘솔 사용자 정의
 description: 작성 인스턴스의 콘솔을 사용자 정의할 수 있도록 AEM이 제공하는 다양한 옵션에 대해 알아봅니다.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 제
 
 ## 오버레이 {#overlays}
 
-오버레이는 노드 정의를 기반으로 하며 이를 통해 `/apps`아래의 사용자 정의 기능으로 `/libs`에서 확인 가능한 표준 기능을 오버레이할 수 있습니다. 오버레이를 만들 때 원본의 1:1 사본은 필요하지 않습니다. [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)을 통해 상속되기 때문입니다.
+오버레이는 노드 정의를 기반으로 하며 이를 통해 `/apps`아래의 사용자 정의 기능으로 `/libs`에서 확인 가능한 표준 기능을 오버레이할 수 있습니다. 오버레이를 만들 때 :1Sling 리소스 병합[에서 상속을 허용하므로 원본의 1](/help/implementing/developing/introduction/sling-resource-merger.md) 복사본은 필요하지 않습니다.
 
 오버레이는 AEM 콘솔을 확장하는 데 여러 가지 방법으로 사용할 수 있습니다. 다음 섹션에서 몇 가지 예를 제공합니다.
 

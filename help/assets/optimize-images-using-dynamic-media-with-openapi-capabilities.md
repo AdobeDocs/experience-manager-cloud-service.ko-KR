@@ -3,13 +3,13 @@ title: OpenAPI 기능과 Dynamic Media를 사용하여 이미지 최적화
 description: OpenAPI 기능이 포함된 Dynamic Media의 이미지 최적화 기능을 사용하여 공개 게재 전에 신속하게 이미지를 최적화하는 방법에 대해 알아봅니다
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
+exl-id: 7822732b-e2b9-4b35-b92b-cb7b31d84489
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1268'
 ht-degree: 0%
 
 ---
-
 
 # OpenAPI 기능과 Dynamic Media를 사용하여 이미지 최적화{#Optimize-images-using-Dynamic-Media-with-OpenAPI-Capabilities}
 
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 [스마트 자르기](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)은(는) [!DNL Dynamic Media with OpenAPI capabilities]의 동적 크기 조정 기능입니다. [!DNL Smart Crop]은(는) AI 기반 콘텐츠 인식 자르기를 사용하여 자른 버전의 시각적 컨텍스트를 유지하면서 다양한 화면 크기에 대한 이미지를 지능적으로 자르는 고급 이미지 처리 기술입니다. AI가 이미지를 분석해 초점이나 원하는 관심 지점을 파악한 뒤 자른 모든 버전에서 초점을 유지하도록 이미지를 자동으로 자른다. 반응형 디자인의 핵심 요소인 [!DNL Smart Crop]은(는) 비용 효율적이고 시간 효율적인 이미지 자르기 방법을 제공합니다.
 
-[에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)스마트 자르기 렌디션을 만들기[, &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)폴더에 적용[!DNL Admin View] 또는 [렌디션을 편집](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)하는 방법에 대해 알아보려면 [Dynamic Media 이미지 프로필](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) 문서를 참조하세요. 이 [!DNL Smart Crop]비디오[에서 단계별로 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을(를) 만드는 방법을 알아봅니다.
+[에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)스마트 자르기 렌디션을 만들기[, ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)폴더에 적용[!DNL Admin View] 또는 [렌디션을 편집](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)하는 방법에 대해 알아보려면 [Dynamic Media 이미지 프로필](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) 문서를 참조하세요. 이 [!DNL Smart Crop]비디오[에서 단계별로 ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을(를) 만드는 방법을 알아봅니다.
 
-[!DNL Smart Crop] 매개 변수에는 명명된-smartcrop-profiles가 있고 자산에 적용되어야 합니다. [&#x200B; 매개 변수 및 이름이 &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)인 프로필이 적용되는 방법에 대한 자세한 내용은 [!DNL Smart Crop]스마트 자르기 프로필[!DNL Smart Crop]을 참조하세요.
+[!DNL Smart Crop] 매개 변수에는 명명된-smartcrop-profiles가 있고 자산에 적용되어야 합니다. [ 매개 변수 및 이름이 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)인 프로필이 적용되는 방법에 대한 자세한 내용은 [!DNL Smart Crop]스마트 자르기 프로필[!DNL Smart Crop]을 참조하세요.
 
 >[!IMPORTANT]
 >
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 ## 이미지 사전 설정{#image-presets-using-dynamic-media-with-openapi-capabilities}
 
-[의 &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=preset&t=request)이미지 사전 설정[!DNL Dynamic Media with OpenAPI capabilities] 기능을 사용하여 즉석으로 이미지를 변형하십시오. [!DNL image preset]은(는) 출력 이미지에 대해 미리 정의된 크기 조정 및 서식 규칙 집합입니다.
+[의 ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=preset&t=request)이미지 사전 설정[!DNL Dynamic Media with OpenAPI capabilities] 기능을 사용하여 즉석으로 이미지를 변형하십시오. [!DNL image preset]은(는) 출력 이미지에 대해 미리 정의된 크기 조정 및 서식 규칙 집합입니다.
 
 [!DNL Dynamic Media with OpenAPI capabilities]은(는) 사전 설정 이름을 사용하여 즉시 이미지를 변형하고 해당 렌디션을 즉시 생성합니다. 사전 설정 매개 변수가 포함된 [!DNL Dynamic Media with OpenAPI] 배달 URL을 통해 이미지를 요청하면 [!DNL DM with OpenAPI]에서 사전 설정의 변형을 적용하고 필요 시 렌디션을 만들어 사용자에게 전달합니다.
 
 [!DNL Dynamic Media with OpenAPI] 게재 URL을 통해 여러 이미지에 하나의 사전 설정을 적용할 수 있습니다. 이렇게 하면 각 에셋을 수동으로 편집하지 않고도 에셋 간에 일관된 서식이 유지됩니다.
 
-[이미지 사전 설정 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) 문서를 참조하여 [관리자 보기에서 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)과 다른 화면 크기에 맞게 자산을 자동으로 조정하는 [응답형 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)에 대해 알아보십시오.
+[이미지 사전 설정 관리](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) 문서를 참조하여 [관리자 보기에서 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)과 다른 화면 크기에 맞게 자산을 자동으로 조정하는 [응답형 이미지 사전 설정을 만드는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)에 대해 알아보십시오.
 
 ### 이미지 사전 설정 사용의 이점{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 #### 이미지 게재 URL에서 사전 설정 사용{#use-presets-in-delivery-urls}
 
-사전 설정을 사용하면 게재 URL을 더 짧고 쉽게 사용할 수 있습니다.  각 사전 설정 이름은 게재 URL에서 고유 식별자 역할을 합니다. 에셋의 게재 URL에 여러 수정자를 추가하는 대신 사전 설정 이름을 참조하여 렌디션을 즉시 생성합니다. [Dynamic Media 이미지 사전 설정을 이미지에 적용하는 방법에 대해 알아봅니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+사전 설정을 사용하면 게재 URL을 더 짧고 쉽게 사용할 수 있습니다.  각 사전 설정 이름은 게재 URL에서 고유 식별자 역할을 합니다. 에셋의 게재 URL에 여러 수정자를 추가하는 대신 사전 설정 이름을 참조하여 렌디션을 즉시 생성합니다. [Dynamic Media 이미지 사전 설정을 이미지에 적용하는 방법에 대해 알아봅니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
 다음 예제에서는 사전 설정이 있는 URL과 사전 설정이 없는 URL을 비교합니다.
 
 **사전 설정이 없는 URL(긴 URL)**:
@@ -77,9 +77,10 @@ https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:ae
 
 [!DNL Image Presets] 지원이 활성화된 경우 작성자가 [!DNL AEM Sites] 작성 페이지에서 페이지를 편집하는 동안 [!DNL Dynamic Media]을(를) 선택할 수 있습니다.
 작성 페이지에서 이미지 사전 설정을 사용하려면 다음 단계를 수행하십시오.
+
 1. 사이트 작성 페이지로 이동합니다.
 1. [AEM 페이지 편집기에서 원격 자산 액세스](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) 섹션의 단계를 실행하여 [!DNL Asset Selector] 패널을 사용하여 자산을 선택하십시오.
-1. [!DNL asset selector] 패널에서 아래로 스크롤하여 **[!UICONTROL 사전 설정 유형]**&#x200B;으로 이동하고 `Preset=Preset Name`이미지 수정자&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. [!DNL asset selector] 패널에서 아래로 스크롤하여 **[!UICONTROL 사전 설정 유형]**&#x200B;으로 이동하고 `Preset=Preset Name`이미지 수정자&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정한 다음 **[!UICONTROL 완료]**를 클릭합니다.
    ![사전 설정](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## 스마트 이미징{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
@@ -114,7 +115,7 @@ AVIF 및 WEBP 형식은 더 나은 압축을 제공하여 이미지를 더 작�
 
 이미지는 클라이언트의 네트워크 상태에 따라 자동으로 최적화되므로 더 빠른 게재와 원활한 로드를 보장합니다. [Quality](#quality-parameter) 및 [Max-Quality](#max-quality-parameter) 매개 변수는 이미지 압축 수준을 제어하여 품질을 자동으로 조정합니다. 값은 1에서 100 사이입니다.
 
-`quality` 및 `max-quality ` 매개 변수의 다음 주요 동작을 참조하십시오.
+`quality` 및 `max-quality` 매개 변수의 다음 주요 동작을 참조하십시오.
 
 * [!DNL quality]과(와) [!DNL max-quality]을(를) 모두 지정하면 [!DNL quality]이(가) 우선합니다.
 * [!DNL quality]만 지정하면 네트워크 속도에 따라 로드 시간과 관계없이 품질이 제공됩니다.

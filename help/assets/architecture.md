@@ -3,9 +3,9 @@ title: ' [!DNL Assets]의 아키텍처'
 description: Adobe Experience Manager Assets as a [!DNL Cloud Service] 아키텍처
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
-role: Architect
+role: Developer
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 36%
@@ -14,7 +14,7 @@ ht-degree: 36%
 
 # Assets as a [!DNL Cloud Service] 솔루션의 아키텍처 {#assets-architecture}
 
-[!DNL Cloud Service]&#x200B;(으)로 [!DNL Experience Manager Assets]은(는) [!DNL Adobe Experience Manager]을(를) 기반으로 하며 최신 제공 [!DNL Experience Manager] 6.5와 비교됩니다. [!DNL Cloud Service] 서비스에는 클라우드 네이티브 서비스가 되도록 조정된 아키텍처 및 기능이 있습니다. 기본 아키텍처를 변경해도 모든 Experience Manager 6.5 기능이 [!DNL Cloud Service]에 포함되지 않습니다.
+[!DNL Experience Manager Assets]&#x200B;(으)로 [!DNL Cloud Service]은(는) [!DNL Adobe Experience Manager]을(를) 기반으로 하며 최신 제공 [!DNL Experience Manager] 6.5와 비교됩니다. [!DNL Cloud Service] 서비스에는 클라우드 네이티브 서비스가 되도록 조정된 아키텍처 및 기능이 있습니다. 기본 아키텍처를 변경해도 모든 Experience Manager 6.5 기능이 [!DNL Cloud Service]에 포함되지 않습니다.
 
 자산 마이크로서비스의 아키텍처 개요를 보려면 이 [자산 마이크로서비스 개요](asset-microservices-overview.md#asset-microservices-architecture)를 참조하세요.
 

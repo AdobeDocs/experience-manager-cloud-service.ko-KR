@@ -3,9 +3,9 @@ title: AEM Edge Delivery Services의 Forms 시작하기
 description: Adobe Experience Manager Edge Delivery Services에서 범용 편집기 작성 접근 방식에 중점을 두고 고성능 양식을 생성하고 전달하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 # AEM Edge Delivery Services의 Forms 시작하기
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 Adobe Experience Manager(AEM) Edge Delivery Services(EDS)는 에지에서 매우 빠르고 확장성이 뛰어난 웹 경험을 제공합니다. 이 안내서에서는 **해당 경험을 위한 양식을 빌드하고 게시하는 방법**&#x200B;을 명확한 권장 계층과 함께 설명합니다.

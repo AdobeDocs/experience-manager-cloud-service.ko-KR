@@ -2,15 +2,15 @@
 title: 컨텐츠 조각 AJO 외부 참조 확장 사용
 description: 콘텐츠 조각 AJO 외부 참조 확장에 대해 알아보기
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
 
 ---
-
 
 # 컨텐츠 조각 AJO 외부 참조 확장 {#content-fragment-external-references-extension}
 
@@ -30,7 +30,7 @@ AJO 외부 참조 확장은 사전 정의된 태그와 연결된 모든 조직 �
 
 >[!NOTE]
 >
->[AJO 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/integrations/aem-fragments)도 참조하세요.
+>[AJO 통합](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)도 참조하세요.
 
 1. [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)을 엽니다.
 

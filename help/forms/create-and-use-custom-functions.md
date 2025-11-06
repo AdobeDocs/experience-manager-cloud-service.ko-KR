@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 비즈니스 규칙을 구현하기 위한 JavaScript 함수를 정의할 수 있습니다. 이러한 사용자 지정 기능은 지정된 요구 사항을 충족하도록 입력된 데이터의 조작 및 처리를 용이하게 하여 양식의 기능을 확장합니다. 사전 정의된 기준에 따라 양식 동작을 동적으로 변경할 수 있습니다. 사용자 지정 기능을 사용하면 개발자가 복잡한 유효성 검사 논리를 적용하고, 동적 계산을 수행하고, 사용자 상호 작용이나 사전 정의된 기준에 따라 양식 요소의 표시나 동작을 제어할 수 있습니다.
@@ -31,6 +31,7 @@ AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 �
 ## 사용자 정의 함수 사용 {#uses-of-custom-function}
 
 적응형 Forms에서 사용자 정의 함수를 사용할 때의 장점은 다음과 같습니다.
+
 * **데이터 처리**: 사용자 지정 함수를 사용하면 양식 필드에 입력한 데이터를 처리할 수 있습니다.
 * **데이터 유효성 검사**: 사용자 지정 기능을 사용하면 양식 입력에 대한 사용자 지정 검사를 수행하고 지정된 오류 메시지를 제공할 수 있습니다.
 * **동적 동작**: 사용자 지정 함수를 사용하면 특정 조건에 따라 양식의 동적 동작을 제어할 수 있습니다. 예를 들어 필드를 표시/숨기거나, 필드 값을 수정하거나, 양식 논리를 동적으로 조정할 수 있습니다.
@@ -119,7 +120,7 @@ input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려
 
 다음 그림은 규칙 편집기에서 `OptionalParameterFunction` 사용자 지정 함수를 사용하여 표시됩니다.
 
-![선택적 매개 변수 또는 필수 매개 변수 &#x200B;](/help/forms/assets/optional-default-params.png)
+![선택적 매개 변수 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png)
 
 필요한 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
 

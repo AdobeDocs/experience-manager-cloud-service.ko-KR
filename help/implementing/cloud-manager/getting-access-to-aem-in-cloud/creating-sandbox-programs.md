@@ -4,8 +4,8 @@ description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -77,4 +77,4 @@ ht-degree: 15%
 
 >[!TIP]
 >
->Cloud Manager 탐색 방법 및 **내 프로그램** 콘솔 이해에 대한 자세한 내용은 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md)을 참조하십시오.
+>Cloud Manager 탐색 방법 및 [내 프로그램](/help/implementing/cloud-manager/navigation.md) 콘솔 이해에 대한 자세한 내용은 **Cloud Manager UI 탐색**&#x200B;을 참조하십시오.

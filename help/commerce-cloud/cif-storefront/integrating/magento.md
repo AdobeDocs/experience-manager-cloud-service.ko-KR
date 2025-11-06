@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 5%
@@ -54,6 +54,6 @@ AEM CIF 핵심 구성 요소를 위한 Adobe Commerce과의 비즈니스 로직 
 
 프로젝트 내에서 AEM CIF 핵심 구성 요소 및 사용자 지정 프로젝트 구성 요소는 Sling 컨텍스트 인식 구성을 통해 AEM 페이지와 연결된 Adobe Commerce 저장소에 대해 구성된 클라이언트를 쉽게 검색할 수 있습니다.
 
-## 검색 {#search}
+## 검색
 
-CIF은 [Commerce GraphQL API를 기반으로 서버측에서 렌더링된 검색 경험인 &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)검색 핵심 구성 요소[를 즉시 제공합니다.](https://developer.adobe.com/commerce/webapi/graphql/) Commerce 고객은 대신 [실시간 검색](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=ko)을 사용할 수 있습니다. 이 [링크](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)를 따라 CIF - Live Search 통합에 대해 자세히 알아보십시오.
+CIF은 [Commerce GraphQL API를 기반으로 서버측에서 렌더링된 검색 경험인 ](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)검색 핵심 구성 요소[를 즉시 제공합니다.](https://developer.adobe.com/commerce/webapi/graphql/) Commerce 고객은 대신 [실시간 검색](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)을 사용할 수 있습니다. 이 [링크](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)를 따라 CIF - Live Search 통합에 대해 자세히 알아보십시오.

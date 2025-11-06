@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.5.0 �
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 98%
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 2025년 5월 릴리스 개요 비디오를 통해 2025.5.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464357?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 **속성 기반 액세스 제어(ABAC)**
 
-[이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다](/help/assets/attribute-based-access-control.md). 에셋 권한은 거버넌스를 보장하며 사용자가 관련 에셋만 액세스할 수 있도록 합니다.
+[이제 Content Hub를 사용하면 자산에 접근하기 위해 규칙 기반 제한을 적용할 수 있습니다](/help/assets/attribute-based-access-control.md). 자산 권한은 거버넌스를 보장하고 관련 자산만 사용자가 접근할 수 있도록 보장합니다.
 
 자산 제한 규칙은 메타데이터를 기반으로 하며, 규칙에 정의된 조건이 자산 메타데이터와 일치하면 자산이 사용자 그룹에 표시됩니다.
 
@@ -108,7 +108,7 @@ AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사
 
 [Experience Manager(AEM) Dynamic Media와 Journey Optimizer(AJO) B2C의 네이티브 통합](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/aem-dynamic)을 통해 마케터는 AEM Dynamic Media 자산(렌디션 및 DM 템플릿)을 AJO 콘텐츠에 쉽게 포함하고 여러 채널에서 실시간 업데이트 및 초개인화된 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463789/?learn=on&enablevpops=&autoplay=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,6 +150,7 @@ Adobe는 정기적으로 기능, 라이브러리, API 및 구성을 검토하여
   <summary>사용 중단 항목을 보려면 확장하십시오.</summary>
 
 Java API:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`

@@ -3,10 +3,10 @@ title: Cloud Manager의 Adobe Managed CDN과 Edge Delivery Services 통합
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Edge Delivery Services은 다음 두 옵션 중 하나를 사용하여 설정할
 |  | 배포 옵션 | 키 문서 | 기능 | 적합한 대상 |
 | --- | --- | --- | --- | --- |
 | 옵션 1 | *기존 AEM as a Cloud Service(AEMaaCS) 환경 사용* | [기존 환경에서 프록시 설정](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | 구성 파이프라인은 일반적으로 AEMaaCS 환경에서 사용할 수 있습니다. | Cloud Manager에서 이미 사이트를 실행하고 빠르고 위험도가 낮은 성능 향상을 원하는 팀 |
-| 옵션 2 | *독립 실행형 &quot;Edge 환경&quot;으로 알려진 기존 AEMaaCS 환경이 없습니다*. | [기존 환경 없이 Edge Delivery 사이트 설정](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 구성 파이프라인은 현재 제한된 Beta 프로그램을 통해 Edge 환경에만 사용할 수 있습니다.<br>Edge Delivery 구성 파이프라인 추가[를 참조하십시오.](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline) | 전체 Edge Delivery 아키텍처 및 세분화된 라우팅을 수용하려는 새로운 빌드 또는 마이그레이션입니다. |
+| 옵션 2 | *독립 실행형 &quot;Edge 환경&quot;으로 알려진 기존 AEMaaCS 환경이 없습니다*. | [기존 환경 없이 Edge Delivery 사이트 설정](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 구성 파이프라인은 현재 제한된 Beta 프로그램을 통해 Edge 환경에만 사용할 수 있습니다.<br>Edge Delivery 구성 파이프라인 추가[를 참조하십시오.](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline) | 전체 Edge Delivery 아키텍처 및 세분화된 라우팅을 수용하려는 새로운 빌드 또는 마이그레이션입니다. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

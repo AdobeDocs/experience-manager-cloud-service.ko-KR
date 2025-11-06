@@ -1,13 +1,13 @@
 ---
 title: AEM Screens에 대한 타임라인 보기 구성
-description: 이 페이지에서는 Screensas a Cloud Service 에서 타임라인 보기를 구성하는 방법을 설명합니다.
+description: 이 페이지에서는 Screens as a Cloud Service에서 타임라인 보기를 구성하는 방법에 대해 설명합니다.
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -52,6 +52,7 @@ AEM Screens에 대한 타임라인 보기를 만들려면 다음 단계를 완�
 ### 버전 저장 {#saveversion}
 
 버전 관리는 특정 시점에 채널의 &quot;스냅샷&quot;을 만듭니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
+
 * 채널의 버전을 만듭니다.
 * 채널을 이전 버전으로 복원합니다. 예:
    * 을 눌러 페이지에 적용한 변경 내용을 실행 취소할 수 있습니다.
@@ -123,7 +124,7 @@ AEM Screens에 대한 타임라인 보기를 만들려면 다음 단계를 완�
 워크플로를 적용할 때에는 다음 정보를 지정합니다.
 
 * 적용할 워크플로.
-* 원할 경우, 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목입니다.
+* 원할 경우, 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목.
 * 워크플로 페이로드.
 
 #### 워크플로우 시작
@@ -133,13 +134,13 @@ AEM Screens에 대한 타임라인 보기를 만들려면 다음 단계를 완�
 1. **타임라인** 열을 엽니다.
 1. 하단의 댓글 필드 옆에 있는 단추(세 점)를 클릭합니다.
 
-   ![워크플로우 시작](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
+   ![워크플로 시작](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
 1. **워크플로 시작**&#x200B;을 선택합니다.
 1. 워크플로 만들기 마법사가 열리고 워크플로 세부 사항을 지정합니다.
 1. 드롭다운 목록에서 **워크플로 모델**&#x200B;을(를) 선택하고 워크플로 제목을 입력합니다.
 
-   ![워크플로우 시작](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
+   ![워크플로 시작](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
 1. **다음**&#x200B;을 클릭하여 계속합니다.
 1. 범위 단계에서 다음을 수행할 수 있습니다.
@@ -147,9 +148,9 @@ AEM Screens에 대한 타임라인 보기를 만들려면 다음 단계를 완�
    * 해당 리소스의 하위 항목이 워크플로에 포함되도록 지정하려면 **하위 항목을 포함**&#x200B;합니다.
    * **선택 제거** - 워크플로에서 해당 리소스를 제거합니다.
 
-   ![워크플로우 시작](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![워크플로 시작](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
 1. 마법사를 닫고 워크플로 인스턴스를 만들려면 **만들기**&#x200B;를 선택하십시오.
 1. 선택한 워크플로우 모델에 따라 워크플로우를 완료하기 위해 몇 가지 추가 작업을 수행해야 할 수 있습니다.
 
-   ![워크플로우 시작](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![워크플로 시작](/help/screens-cloud/assets/configure/screens-timeline13.jpg)

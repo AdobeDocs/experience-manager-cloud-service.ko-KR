@@ -3,8 +3,8 @@ title: 샘플 ContextHub UI 모듈 유형
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%
@@ -58,7 +58,7 @@ JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 �
 
 ### 예 {#example}
 
-다음 예제에서는 `ontexthub.base`contexthub.emulators[&#x200B; 저장소의 정보를 표시하도록 c](sample-stores.md#granite-emulators-sample-store-candidate) UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
+다음 예제에서는 `ontexthub.base`contexthub.emulators[ 저장소의 정보를 표시하도록 c](sample-stores.md#granite-emulators-sample-store-candidate) UI 모듈을 구성합니다. `template` 항목은 `storeMapping` 항목이 설정한 키를 사용하여 저장소에서 데이터를 가져오는 방법을 보여 줍니다.
 
 ```javascript
 {

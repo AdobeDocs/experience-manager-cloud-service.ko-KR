@@ -4,7 +4,7 @@ description: 콘텐츠 게재 데이터 흐름과 콘텐츠 게시 방법에 대
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -32,6 +32,7 @@ ht-degree: 93%
 기본적으로 콘텐츠 유형 HTML/텍스트는 Dispatcher 계층에서 Dispatcher 캐시와 CDN이 모두 적용하는 임계값인 300초(5분) 후에 만료되도록 설정합니다. 게시 서비스를 다시 배포하는 동안 새 게시 노드가 트래픽을 허용하기 전에 Dispatcher 캐시를 지우고 난 다음 준비합니다.
 
 다음 섹션에서는 콘텐츠 게재에 대해 자세히 설명합니다.
+
 * [CDN 구성](/help/implementing/dispatcher/cdn.md)
 * [캐싱](/help/implementing/dispatcher/caching.md)
 

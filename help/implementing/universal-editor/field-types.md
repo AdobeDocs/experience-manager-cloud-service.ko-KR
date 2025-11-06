@@ -3,8 +3,8 @@ title: 모델 정의, 필드 및 구성 요소 유형
 description: 예제와 함께 범용 편집기가 속성 패널에서 편집할 수 있는 필드와 구성 요소 유형에 대해 알아봅니다. 모델 정의를 생성하고 구성 요소에 연결하여 자체 앱을 계측하는 방법에 대해 알아봅니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 98%

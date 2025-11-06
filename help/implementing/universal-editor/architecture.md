@@ -3,9 +3,9 @@ title: 범용 편집기 아키텍처
 description: 범용 편집기의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 

@@ -4,10 +4,10 @@ description: 성능을 최적화하기 위해 Adobe Experience Manager as a Clou
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -280,8 +280,10 @@ query getAdventuresByActivity($activity: String!) {
 이렇게 하면 Dispatcher가 원래 URL을 AEM으로 전달하도록 지시하여 인코딩 중복을 방지할 수 있습니다.
 그러나 이 설정은 현재 `vhost` 레벨에서만 작동하므로 URL을 다시 작성하는 Dispatcher 구성이 이미 있는 경우(예: 단축 URL을 사용하는 경우) 지속 쿼리 URL에 대한 별도의 `vhost`가 필요할 수 있습니다.
 
-   * `/` 또는 인코딩되지 않은 `\` 문자를 보냅니다.
-지속형 쿼리 URL을 호출할 때 지속형 쿼리 변수의 값에 있는 모든 `/` 또는 `\` 문자가 인코딩되지 않은 상태로 유지되도록 합니다.
+   * `/` 또는 `\`자를 인코딩하지 않은 상태로 보냅니다.
+
+     지속형 쿼리 URL을 호출할 때 지속형 쿼리 변수의 값에 있는 모든 `/` 또는 `\` 문자가 인코딩되지 않은 상태로 유지되도록 합니다.
+
      >[!NOTE]
      >
      >이 옵션은 어떠한 이유에서든 `DispatcherNoCanonURL` 솔루션을 구현할 수 없는 경우에만 권장됩니다.

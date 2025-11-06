@@ -2,10 +2,10 @@
 title: 콘텐츠 조각용 론치
 description: Adobe Experience Manager as a Cloud Service에서 컨텐츠 조각용 런치를 사용하는 방법을 알아봅니다. 론치를 사용하면 현재 콘텐츠 조각을 유지하면서 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 2%

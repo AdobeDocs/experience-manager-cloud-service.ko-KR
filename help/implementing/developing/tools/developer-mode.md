@@ -5,8 +5,8 @@ description: 개발자 모드에서는 현재 페이지에 대한 정보를 개�
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -31,8 +31,7 @@ AEM에서 페이지를 편집할 때 개발자 모드를 포함한 여러 [모�
 >
 >개발자 모드:
 >
->* 공간 제약으로 인해 데스크톱의 작은 창이나 모바일 장치에서는 사용할 수 없습니다.
->  * 이 문제는 너비가 1024px 미만일 때 발생합니다.
+>* 공간 제약으로 인해 데스크톱의 작은 창이나 모바일 장치에서는 사용할 수 없습니다. 이 문제는 너비가 1024px 미만일 때 발생합니다.
 >* `administrators` 그룹의 멤버인 사용자만 사용할 수 있습니다.
 
 ## 개발자 모드 열기 {#opening-developer-mode}

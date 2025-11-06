@@ -1,11 +1,11 @@
 ---
 title: Assets 보기에서 메타데이터를 관리하는 방법
 description: Assets 보기에서 메타데이터를 관리하는 방법에 대해 알아봅니다. 메타데이터 관리 기능이 향상되어 에셋의 액세스 가능성, 관리 용이성 및 완성도가 향상됩니다.
-role: User, Leader, Admin, Architect, Developer
+role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 81%
@@ -33,7 +33,7 @@ ht-degree: 81%
 
 ![자산의 메타데이터 보기](assets/metadata-view.png)
 
-*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 [!UICONTROL 기본] 탭에서 제목, 설명 및 업로드 날짜와 같은 기본 메타데이터를 사용할 수 있습니다. [!UICONTROL 고급] 탭에는 카메라 모델, 렌즈 세부 정보 및 위치 정보 태그와 같은 고급 메타데이터가 포함되어 있습니다. [!UICONTROL 태그] 탭에는 이미지 내용에 따라 자동으로 적용된 태그가 포함되어 있습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 81%
 
 ![자산의 스마트 태그 보기](assets/metadata-view-tags.png)
 
-*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 스마트 태그에는 신뢰도 점수도 백분율로 포함됩니다. 이는 적용된 태그와 관련된 신뢰도를 나타냅니다. 자동으로 적용되는 스마트 태그를 조정할 수 있습니다.
 
@@ -227,13 +227,13 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

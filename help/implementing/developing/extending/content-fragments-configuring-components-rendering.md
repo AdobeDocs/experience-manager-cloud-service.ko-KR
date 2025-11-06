@@ -3,8 +3,8 @@ title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 * 고유한 콘텐츠 조각 기반 구성 요소 를 구현해야 합니다.
 * 또한 고급 서비스를 사용해야 합니다.
 
-Adobe은 핵심 구성 요소 사용을 권장합니다.
+Adobe에서는 핵심 구성 요소를 사용하는 것이 좋습니다.
 
 >[!CAUTION]
 >
@@ -136,7 +136,7 @@ OSGi 구성은 다음과 같습니다.
 
 ## 예 {#example}
 
-예를 들어 다음을 참조하십시오(기본 AEM 인스턴스에서).
+예를 들어, 다음을 참조하십시오(기본 제공 AEM 인스턴스).
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

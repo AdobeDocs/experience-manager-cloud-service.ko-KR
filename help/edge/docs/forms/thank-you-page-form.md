@@ -3,9 +3,9 @@ title: 양식 제출 후 사용자 정의 감사 메시지 표시
 description: 양식 블록에 대한 감사 페이지와 리디렉션을 구성하여 사용자 경험을 최적화하고 사용자 여정을 간소화하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 100%
 

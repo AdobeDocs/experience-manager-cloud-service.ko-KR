@@ -3,9 +3,9 @@ title: 프론트엔드 파이프라인으로 사이트 개발
 description: 프론트엔드 파이프라인은 개발자의 독립성을 높이고 개발 프로세스를 가속화합니다. 최적의 성능과 효율성을 보장하기 위한 프론트엔드 빌드 프로세스의 주요 고려 사항을 간략하게 설명합니다(영문).
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%

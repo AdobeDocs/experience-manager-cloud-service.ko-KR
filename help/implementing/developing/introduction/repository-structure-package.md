@@ -3,8 +3,8 @@ title: AEM 프로젝트 저장소 구조 패키지
 description: Adobe Experience Manager as a Cloud Service의 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # AEM 프로젝트 저장소 구조 패키지
 
-Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manageras a Cloud Service 의 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
+Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manager as a Cloud Service의 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
 코드 패키지가 코드 패키지에서 다루지 않는 **위치**&#x200B;에 배포되는 경우 모든 상위 리소스(JCR 루트에 더 가까운 JCR 리소스)를 저장소 구조 패키지에 열거해야 합니다. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
 
@@ -24,7 +24,7 @@ Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로�
 저장소 구조 패키지에 포함할 가장 일반적인 경로는 다음과 같습니다.
 
 + 시스템 제공 노드인 `/apps`
-+ `/libs`에 대한 일반 오버레이를 제공하는 `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...` 및 `/apps/sling/...`.
++ `/apps/cq/...`에 대한 일반 오버레이를 제공하는 `/apps/dam/...`, `/apps/wcm/...`, `/apps/sling/...` 및 `/libs`.
 + 공유 컨텍스트 인식 구성 루트 경로인 `/apps/settings`
 
 이 하위 패키지 **에는**&#x200B;의 콘텐츠가 없으며 필터 루트를 정의하는 `pom.xml`로만 구성됩니다.
@@ -118,7 +118,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `
 
 ## 저장소 구조 패키지 참조
 
-저장소 구조 패키지를 사용하려면 FileVault 콘텐츠 패키지 Maven 플러그인 `<repositoryStructurePackage>` 구성을 통해 모든 코드 패키지(`/apps`에 배포되는 하위 패키지)를 통해 Maven 프로젝트를 참조합니다.
+저장소 구조 패키지를 사용하려면 FileVault 콘텐츠 패키지 Maven 플러그인 `/apps` 구성을 통해 모든 코드 패키지(`<repositoryStructurePackage>`에 배포되는 하위 패키지)를 통해 Maven 프로젝트를 참조합니다.
 
 `ui.apps/pom.xml` 및 기타 코드 패키지 `pom.xml`에서 프로젝트의 저장소 구조 패키지(#repository-structure-package) 구성에 대한 참조를 FileVault 패키지 Maven 플러그인에 추가합니다.
 
@@ -180,7 +180,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-이 오류는 구분 코드 패키지에 필터 목록에 `/apps/some/path`을(를) 나열하는 `<repositoryStructurePackage>`이(가) 없음을 나타냅니다.
+이 오류는 구분 코드 패키지에 필터 목록에 `<repositoryStructurePackage>`을(를) 나열하는 `/apps/some/path`이(가) 없음을 나타냅니다.
 
 ## 추가 리소스
 

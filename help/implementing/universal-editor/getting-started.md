@@ -3,9 +3,9 @@ title: AEM에서 범용 편집기 시작하기
 description: 범용 편집기에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 100%
 
@@ -131,11 +131,11 @@ Adobe에서 호스팅하는 범용 편집기 서비스를 사용하지 않고 �
 1. 범용 편집기를 여는 콘텐츠 경로 또는 `sling:resourceType`을 정의합니다.
 
    * **범용 편집기 열기 매핑** 필드에서 범용 편집기를 여는 경로를 제공합니다.
-   * **Universal Editor에서 직접 열리는 Sling:resourceTypes 필드**&#x200B;에 리소스 목록을 제공합니다.
+   * **범용 편집기로 열리는 Sling:resourceTypes** 필드에 리소스 목록을 제공합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
-1. [externalizer 구성](/help/implementing/developing/tools/externalizer.md)을 확인하고 최소한 다음 예와 같이 로컬, 작성자 및 게시 환경이 설정되었는지 확인합니다.
+1. [externalizer 구성](/help/implementing/developing/tools/externalizer.md)을 확인하고 최소한 다음 예와 같이 로컬, 작성자 및 게시 환경이 설정되어 있는지 확인합니다.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
@@ -143,10 +143,10 @@ Adobe에서 호스팅하는 범용 편집기 서비스를 사용하지 않고 �
    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
    ```
 
-이러한 구성 단계가 완료되면 AEM에서 다음 순서대로 페이지에 대한 Universal Editor가 열립니다.
+이러한 구성 단계가 완료되면 AEM에서 다음 순서대로 페이지에 대한 범용 편집기가 열립니다.
 
-1. AEM은 `Universal Editor Opening Mapping` 아래의 매핑을 확인하고, 콘텐츠가 해당 매핑에 정의된 경로 아래에 있으면 해당 콘텐츠에 대한 Universal Editor가 열립니다.
-1. `Universal Editor Opening Mapping`에 정의된 경로 아래에 없는 콘텐츠의 경우 AEM은 콘텐츠의 `resourceType`이 **Universal Editor로 열리는 Sling:resourceTypes**&#x200B;에 정의된 항목과 일치하는지 확인하고, 콘텐츠가 이러한 유형 중 하나와 일치하면 `${author}${path}.html`에서 Universal Editor가 열립니다.
+1. AEM은 `Universal Editor Opening Mapping` 아래의 매핑을 확인하고, 콘텐츠가 해당 매핑에 정의된 경로 아래에 있으면 해당 콘텐츠에 대한 범용 편집기가 열립니다.
+1. `Universal Editor Opening Mapping`에 정의된 경로 아래에 없는 콘텐츠의 경우 AEM은 콘텐츠의 `resourceType`이 **범용 편집기로 열리는 Sling:resourceTypes**&#x200B;에 정의된 항목과 일치하는지 확인하고, 콘텐츠가 이러한 유형 중 하나와 일치하면 `${author}${path}.html`에서 범용 편집기가 열립니다.
 1. 그렇지 않으면 AEM에서 페이지 편집기가 열립니다.
 
 **범용 편집기 열기 매핑** 필드에서 매핑을 정의하는 데 다음 변수를 사용할 수 있습니다.

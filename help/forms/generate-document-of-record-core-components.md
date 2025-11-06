@@ -4,7 +4,7 @@ description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -338,13 +338,14 @@ When you select a form model, configure Document of Record using options availab
 
       * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다.
 
-      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+        <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **패널에 대한 설명 숨기기**: 속성을 설정하면 기록 문서에서 패널/테이블에 대한 설명이 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
 
 
 
    1. **양식 필드 속성**:
+
       * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 [!UICONTROL 기록 문서]에 확인란 및 라디오 단추의 선택한 값만 표시됩니다.
       * **여러 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
       * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
@@ -353,6 +354,7 @@ When you select a form model, configure Document of Record using options availab
 
 
    1. **기본 페이지 속성**:
+
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
       * **양식 제목**: DoR의 제목입니다.
       * **머리글 텍스트**: 기록 문서의 머리글 섹션에 나타나는 텍스트입니다.
@@ -362,21 +364,21 @@ When you select a form model, configure Document of Record using options availab
 
       ![기본 페이지 속성](/help/forms/assets/dorpropertiesimg.png)
 
-   >[!NOTE]
-   >
-   >6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
+      >[!NOTE]
+      >
+      >6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
 
 1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
 

@@ -5,11 +5,11 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 58%
 프로그램을 설정하고 Cloud Manager UI를 사용하는 환경이 하나 이상 있는 경우 다음 단계에 따라 비프로덕션 파이프라인을 추가할 준비가 된 것입니다.
 
 1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
-1. **빠른 액세스** 섹션에서 **Experience Manager**&#x200B;을(를) 클릭합니다.
+1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
 1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.

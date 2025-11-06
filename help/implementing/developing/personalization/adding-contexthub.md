@@ -3,11 +3,11 @@ title: 페이지에 ContextHub 추가 및 저장소 액세스
 description: 페이지에 ContextHub를 추가하여 ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결합니다
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ContextHub JavaScript API는 ContextHub에서 관리하는 컨텍스트 데이�
 
 ## 페이지 구성 요소에 ContextHub 추가 {#adding-contexthub-to-a-page-component}
 
-ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결하려면 페이지의 `head` 섹션에 `contexthub` 구성 요소를 포함하십시오. 페이지 구성 요소에 대한 HTL 코드는 다음 예제와 유사해야 합니다.
+ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결하려면 페이지의 `contexthub` 섹션에 `head` 구성 요소를 포함하십시오. 페이지 구성 요소에 대한 HTL 코드는 다음 예제와 유사해야 합니다.
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -48,7 +48,7 @@ Context Hub 저장소는 다음 지속성 모드 중 하나를 사용합니다.
 * **Window.name:** window.name 속성을 사용하여 데이터를 유지합니다.
 * **메모리:** JavaScript 개체를 사용하여 데이터를 유지합니다.
 
-기본적으로 Context Hub는 로컬 지속성 모드를 사용합니다. 브라우저가 localStorage를 지원하지 않거나 허용하지 않으면 HTML 지속성이 사용됩니다. 브라우저에서 HTML5 sessionStorage를 지원하지 않거나 허용하지 않는 경우 Window.name 지속성이 사용됩니다.
+기본적으로 Context Hub는 로컬 지속성 모드를 사용합니다. 브라우저가 HTML5 localStorage를 지원하지 않거나 허용하지 않으면 세션 지속성이 사용됩니다. 브라우저에서 HTML5 sessionStorage를 지원하지 않거나 허용하지 않는 경우 Window.name 지속성이 사용됩니다.
 
 ### 데이터 저장 {#store-data}
 
@@ -115,7 +115,7 @@ ContextHub에서는 JavaScript 개체를 조작하기 위한 [`ContextHub.Utils.
 
 ### ContextHub 이벤트 {#contexthub-eventing}
 
-ContextHub에는 이벤트를 저장하기 위해 자동으로 반응할 수 있는 이벤트 프레임워크가 포함되어 있습니다. 각 저장소 개체에는 저장소의 [`eventing`](contexthub-api.md#eventing) 속성으로 사용할 수 있는 [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) 개체가 있습니다. [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) 또는 [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) 함수를 사용하여 JavaScript 함수를 저장소 이벤트에 바인딩하십시오.
+ContextHub에는 이벤트를 저장하기 위해 자동으로 반응할 수 있는 이벤트 프레임워크가 포함되어 있습니다. 각 저장소 개체에는 저장소의 [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) 속성으로 사용할 수 있는 [`eventing`](contexthub-api.md#eventing) 개체가 있습니다. [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) 또는 [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) 함수를 사용하여 JavaScript 함수를 저장소 이벤트에 바인딩하십시오.
 
 ## Context Hub를 사용하여 쿠키 조작 {#using-context-hub-to-manipulate-cookies}
 
@@ -123,7 +123,7 @@ Context Hub JavaScript API는 브라우저 쿠키를 처리하기 위한 브라�
 
 ## 해결된 ContextHub 세그먼트 확인 {#determining-resolved-contexthub-segments}
 
-ContextHub 세그먼트 엔진을 사용하면 등록된 세그먼트 중 현재 컨텍스트에서 해결되는 세그먼트를 결정할 수 있습니다. [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) 클래스의 getResolvedSegments 함수를 사용하여 확인된 세그먼트를 검색합니다. 그런 다음 [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) 클래스의 `getName` 또는 `getPath` 함수를 사용하여 세그먼트를 테스트하십시오.
+ContextHub 세그먼트 엔진을 사용하면 등록된 세그먼트 중 현재 컨텍스트에서 해결되는 세그먼트를 결정할 수 있습니다. [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) 클래스의 getResolvedSegments 함수를 사용하여 확인된 세그먼트를 검색합니다. 그런 다음 `getName` 클래스의 `getPath` 또는 [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) 함수를 사용하여 세그먼트를 테스트하십시오.
 
 ### ContextHub 선분 {#contexthub-segments}
 

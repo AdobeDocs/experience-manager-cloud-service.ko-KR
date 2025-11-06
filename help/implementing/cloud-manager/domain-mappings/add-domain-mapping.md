@@ -3,9 +3,9 @@ title: 도메인 매핑 추가
 description: Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 도메인 매핑을 추가하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 7%

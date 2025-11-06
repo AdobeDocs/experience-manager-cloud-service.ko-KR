@@ -4,7 +4,7 @@ description: 디지털 자산을 효과적으로 관리하기 위한 메타데�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -34,7 +34,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 * 파일 크기
 * 포맷
 * 해결 방법
-* 차원
+* 해상도
 * 색상 모드
 
 ### 정보 메타데이터
@@ -97,7 +97,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 >[!NOTE]
 >
->[디지털 에셋의 메타데이터를 관리하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ko)을 알아보세요.
+>[디지털 에셋의 메타데이터를 관리하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)을 알아보세요.
 
 ### 메타데이터 전략과 일관성 유지
 
@@ -107,11 +107,13 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 다음은 따라야 할 몇 가지 모범 사례입니다.
 
-* **중복 값 방지:** 마케팅 캠페인의 이미지 컬렉션이 있는 경우 일관된 이름을 사용하고 중복을 방지하십시오.<br>
-예를 들어, *campaign_image_001* 및 *campaign_image_002*&#x200B;과(와) 같은 중복 이름을 사용하는 대신 *event_promotion* 및 *product_launch*&#x200B;과(와) 같은 체계적인 명명 규칙을 구현하여 명확하고 순서가 지정된 식별을 보장합니다.
+* **중복 값 방지:** 마케팅 캠페인의 이미지 컬렉션이 있는 경우 일관된 이름을 사용하고 중복을 방지하십시오.
 
-* **통제 어휘를 효과적으로 사용:** 태그에 표준화된 용어를 사용하여 통제 어휘를 구현합니다. [AEM 태그 지정 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)를 효과적으로 구현하는 방법에 대해 알아봅니다.  <br>
-예를 들어 체계적인 시퀀스를 유지하기 위해 테마가 있는 이미지에 태그를 지정할 때 *product_launch* 또는 *event_promotion*&#x200B;과 같은 용어를 일관되게 사용합니다.
+  예를 들어, *campaign_image_001* 및 *campaign_image_002*&#x200B;과(와) 같은 중복 이름을 사용하는 대신 *event_promotion* 및 *product_launch*&#x200B;과(와) 같은 체계적인 명명 규칙을 구현하여 명확하고 순서가 지정된 식별을 보장합니다.
+
+* **통제 어휘를 효과적으로 사용:** 태그에 표준화된 용어를 사용하여 통제 어휘를 구현합니다. [AEM 태그 지정 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)를 효과적으로 구현하는 방법에 대해 알아봅니다.
+
+  예를 들어 체계적인 시퀀스를 유지하기 위해 테마가 있는 이미지에 태그를 지정할 때 *product_launch* 또는 *event_promotion*&#x200B;과 같은 용어를 일관되게 사용합니다.
 
 * **정확성 및 완전성 유지:** 메타데이터의 일관성을 유지하려면 다양한 소스 간의 정확성, 완전성 및 정렬이 중요합니다.
 예를 들어, PDF 문서에 메타데이터를 추가할 때 작성자 이름 및 키워드와 같은 세부 사항이 정확하고 완전한지 확인합니다.
@@ -133,10 +135,10 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
    1. **[!UICONTROL 고급]** 탭으로 이동한 다음 **[!UICONTROL 검색 키워드에 대한 개선]**&#x200B;에서 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. <br>기본 메타데이터 스키마를 사용하여 검색 키워드를 높여야 합니다.
    1. 검색을 강화할 키워드를 입력한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.<br>
 여러 키워드를 추가하고 우선 순위에 따라 정렬할 수 있습니다.
-   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
 추가한 키워드를 사용하여 에셋을 검색합니다. 에셋이 상위 검색 결과에 나타납니다.
 
-  Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)을 알아보세요.
+  Experience Manager에서 [검색 성능을 높이는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 알아보세요.
 
 * **사용자 지정 메타데이터 필드:** 에셋에 대한 추가 정보를 캡처하도록 메타데이터 필드를 사용자 지정합니다. 예를 들어 프로젝트 세부 사항, 저작권 정보 또는 검색 기능을 향상시키는 기타 관련 데이터에 대한 특정 필드를 추가합니다. Experience Manager Assets에서 [사용자 지정 메타데이터를 편집하거나 추가하는 방법](meta-edit.md)을 알아보세요.
 
@@ -162,8 +164,8 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 
 ### 콘텐츠 분석 여정
 
-콘텐츠 공급망을 검사하여 메타데이터 소스를 찾고 맨 위부터 시작하여 모든 관련자를 참여시켜 철저한 모범 사례 접근 방식을 구현합니다. 조직 전반에서 완벽한 지원을 보장하기 위해 다양한 직원을 참여시킵니다. <br>업로드 중에 에셋 세부 정보를 제공하는 책임을 공유하려면 다양한 단계에 메타데이터를 통합하십시오. 예를 들어 [!DNL Experience Manager Assets]과(와) [!DNL Workfront]을(를) 통합하면 메타데이터 관리 측면에서 상당한 이점을 얻을 수 있으므로 콘텐츠 생성 및 관리에 대한 효율성과 공동 작업이 향상됩니다. 이 통합을 통해 연결된 에셋에 대한 메타데이터 동기화를 효과적으로 수행하여 [!DNL Workfront]에 변경 사항이 있을 때 프로젝트 세부 정보를 자동으로 업데이트합니다.
+컨텐츠 supply chain을 검사하여 메타데이터 소스를 찾고 맨 위부터 모든 관련자를 참여시켜 빈틈없는 모범 사례 접근 방법을 확인하십시오. 조직 전반에서 완벽한 지원을 보장하기 위해 다양한 직원을 참여시킵니다. <br>업로드 중에 에셋 세부 정보를 제공하는 책임을 공유하려면 다양한 단계에 메타데이터를 통합하십시오. 예를 들어 [!DNL Experience Manager Assets]과(와) [!DNL Workfront]을(를) 통합하면 메타데이터 관리 측면에서 상당한 이점을 얻을 수 있으므로 콘텐츠 생성 및 관리에 대한 효율성과 공동 작업이 향상됩니다. 이 통합을 통해 연결된 에셋에 대한 메타데이터 동기화를 효과적으로 수행하여 [!DNL Workfront]에 변경 사항이 있을 때 프로젝트 세부 정보를 자동으로 업데이트합니다.
 
 목표, 진행 상황, 이정표 및 과제를 조기에 전달하여 모든 이해 당사자의 의견을 수렴하고 협조하십시오. 조직 전체의 협업을 장려하여 효율적인 프로세스와 중요한 메타데이터를 만들 수 있습니다.
 
-Experience Manager 메타데이터를 효과적으로 관리하기 위해 [메타데이터 및 관련 개념](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=ko)에 대해 자세히 알아보세요.
+Experience Manager 메타데이터를 효과적으로 관리하기 위해 [메타데이터 및 관련 개념](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)에 대해 자세히 알아보세요.

@@ -3,8 +3,8 @@ title: Eclipse용 AEM 개발자 도구
 description: Apache Sling용 Eclipse 플러그인 기반의 Eclipse 플러그인인 Eclipse용 AEM 개발자 도구를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 2%
@@ -34,7 +34,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java 및 웹 개발자용 [Eclipse IDE를 다운로드하여 설치합니다.](https://www.eclipse.org/downloads/packages/)
    * AEM Developer Tools for Eclipse 버전 1.4.0은 Eclipse 2022-12(4.26) 이상과 호환되며, 실행하려면 Java 17 이상이 필요합니다.
-* `eclipse.ini`Eclipse FAQ[에 설명된 대로 &#x200B;](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
+* `eclipse.ini`Eclipse FAQ[에 설명된 대로 ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
 
    >[!TIP]
    >
-   >로컬 AEM SDK에서 실행 중인 프로젝트를 디버깅하는 방법에 대한 자세한 내용은 문서 [AEM SDK 원격 디버깅](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)을 참조하십시오.
+   >로컬 AEM SDK에서 실행 중인 프로젝트를 디버깅하는 방법에 대한 자세한 내용은 문서 [AEM SDK 원격 디버깅](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)을 참조하십시오.
 
 1. **마침**&#x200B;을 클릭합니다.
 

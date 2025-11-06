@@ -3,9 +3,9 @@ title: 범용 편집기 호출
 description: 디버깅에 도움이 되도록 범용 편집기에서 앱에 수행되는 다양한 유형의 호출에 대해 알아봅니다.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
 

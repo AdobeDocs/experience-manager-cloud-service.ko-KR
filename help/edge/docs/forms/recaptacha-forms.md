@@ -3,9 +3,9 @@ title: AEM Forms as a Cloud Service용 Edge Delivery Services와 함께 reCAPTCH
 description: AEM Forms용 Edge Delivery Services 양식에서 Google reCAPTCHA 사용
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -29,6 +29,7 @@ Edge Delivery Services는 적응형 양식 블록에 대해 **점수 기반(v3)-
 
 
 이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
+
 - [단일 양식에 맞게 Google reCAPTCHA 활성화](#enable-google-recaptchas-for-a-single-form)
 - [사이트의 모든 양식에 맞게 reCAPTCHA 활성화](#enable-recaptcha-for-all-the-forms)
 

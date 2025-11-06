@@ -7,19 +7,20 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Experience Manager Forms&#x200B;에서 게시 관리
+# &#x200B;Experience Manager Forms에서 게시 관리
 
 Adobe Experience Manager(AEM) Forms 관리자는 작성자 인스턴스의 양식을 Experience Manager Forms에 게시할 수 있습니다. 양식 또는 폴더 게시를 나중 날짜 또는 시간으로 예약하는 옵션도 있습니다. 게시되면 사용자는 양식에 액세스하고 양식을 작성할 수 있습니다.
 
 Experience Manager Forms에서는 다음 방법 중 하나를 사용하여 양식을 게시할 수 있습니다.
+
 * [게시 옵션](#publish-forms-using-the-publish-option)
 * [게시 관리 옵션](#publish-forms-using-the-manage-publication-option)
 
@@ -32,7 +33,7 @@ Experience Manager Forms에서는 다음 방법 중 하나를 사용하여 양�
 
 **게시** 옵션을 사용하면 양식을 즉시 게시할 수 있습니다. 도구 모음의 **게시** 단추를 사용하여 Experience Manager 양식을 게시하려면 다음을 수행하십시오. 게시 옵션을 사용하여 양식을 게시하려면 다음 작업을 수행하십시오.
 
-1. Experience Manager Forms 콘솔에서 상위 폴더로 이동하여 게시할 양식을 선택합니다.
+1. Experience Manager Forms 콘솔에서 상위 폴더로 이동하여 게시하려는 양식을 선택합니다.
 1. 도구 모음에서 **게시** 옵션을 클릭하여 양식과 함께 게시되는 모든 참조 자산을 살펴보십시오.
 1. **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
 
@@ -63,7 +64,7 @@ Experience Manager Forms에서는 다음 방법 중 하나를 사용하여 양�
 
 게시 관리를 사용하면 선택한 대상에 콘텐츠를 게시하거나 게시를 취소하고, `forms&documents` 폴더의 게시 목록에 콘텐츠를 추가하고, 게시할 참조를 선택하고, 나중에 게시할 날짜 또는 시간에 게시를 예약할 수 있습니다.  **게시 관리** 옵션을 사용하여 양식을 게시하려면 다음 작업을 수행하십시오.
 
-1. Experience Manager Forms 콘솔에서 상위 폴더로 이동하여 게시할 양식을 선택합니다.
+1. Experience Manager Forms 콘솔에서 상위 폴더로 이동하여 게시하려는 양식을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 게시 관리]** 옵션을 클릭합니다.
 
    ![게시 관리 옵션](/help/forms/assets/manage-publication-option.png)
@@ -92,7 +93,7 @@ Experience Manager Forms에서는 다음 방법 중 하나를 사용하여 양�
 1. 계속하려면 **다음**&#x200B;을 클릭하세요.
 1. (선택 사항) **범위** 탭에서 [콘텐츠 추가](#add-content) 옵션을 사용하여 게시할 콘텐츠를 더 추가합니다. 예를 들어 Forms 또는 기록 문서 파일을 더 추가할 수 있습니다.
    ![범위 탭](/help/forms/assets/scope-tab.png)
-1. **[!UICONTROL 게시]**&#x200B;를 클릭하여 양식 및 관련 자산을 게시하고 성공적인 메시지가 나타납니다.
+1. **[!UICONTROL 게시]**를 클릭하여 양식 및 관련 자산을 게시하고 성공적인 메시지가 나타납니다.
    ![성공한 메시지 게시](/help/forms/assets/publish-successful.png)
 
 ### 콘텐츠 추가
@@ -116,7 +117,7 @@ Experience Manager Forms에 게시하면 게시 목록에 더 많은 컨텐츠(�
 
    ![게시된 참조](/help/forms/assets/published-references.png)
 
-4. **게시된 참조** 대화 상자에서 게시하지 않을 자산을 선택 취소하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+4. **게시된 참조** 대화 상자에서 게시하지 않을 자산을 선택 취소하고 **[!UICONTROL 완료]**를 클릭합니다.
    ![게시된 참조 대화 상자](/help/forms/assets/published-references-dialog.png)
 
 <!--
@@ -155,12 +156,12 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
    ![게시 관리](/help/forms/assets/manage-publication.png)
 
-1. **[!UICONTROL 작업]**&#x200B;에서 **게시** 또는 **게시 취소**&#x200B;를 클릭합니다.
+1. **작업**&#x200B;에서 **게시** 또는 **[!UICONTROL 게시 취소]**&#x200B;를 클릭합니다.
 1. 콘텐츠를 게시하거나 게시를 취소할 **[!UICONTROL 대상]**&#x200B;을(를) 선택하십시오.
    * **미리 보기**: **미리 보기** 옵션을 사용하여 Experience Manager Forms 미리 보기 환경에 게시하거나 게시를 취소하세요. Experience Manager Forms 미리보기 환경은 개발 양식에서 테스트하는 데 사용됩니다.
    * **게시**: 프로덕션 환경에서 양식을 사용할 준비가 되면 Experience Manager Forms **게시** 옵션을 사용하여 양식을 Experience Manager Forms 게시 환경에 보냅니다.
 
-1. **예약**&#x200B;에서 **[!UICONTROL 나중에]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL 예약]**&#x200B;에서 **나중에**&#x200B;을(를) 선택하십시오.
 
    ![나중에 게시 관리](/help/forms/assets/manage-publication-later.png)
 

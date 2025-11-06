@@ -4,8 +4,8 @@ description: Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭�
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -26,7 +26,7 @@ Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭제하고, 상�
 1. **개요** 페이지의 왼쪽 메뉴에서 **서비스** 아래의 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
 1. 보거나 업데이트할 IP 허용 목록의 행을 식별합니다.
 1. 행의 오른쪽 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
-1. 드롭다운 메뉴에서 **보기 및 업데이트**&#x200B;를 클릭합니다.
+1. 드롭다운 메뉴에서 **보기 및 업데이트**를 클릭합니다.
 **IP 허용 목록 보기 및 업데이트** 대화 상자에는 규칙이 적용되는 환경 및 서비스와 함께 규칙을 정의하는 이름, IP 주소(또는 범위)가 표시됩니다.
 1. 원하는 대로 이름 또는 IP 주소를 변경합니다.
 

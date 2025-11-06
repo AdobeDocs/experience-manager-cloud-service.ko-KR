@@ -3,9 +3,9 @@ title: 컨텐츠 조각 모델(Assets - 컨텐츠 조각)
 description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 역할을 하여 구조화된 콘텐츠로 콘텐츠 조각을 만들 수 있는 방법에 대해 알아봅니다.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin, Architect
+role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 77%
@@ -47,7 +47,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
    >
    >[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/assets/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-1. **모델 제목**&#x200B;을 지정합니다.
+1. **모델 제목**을 지정합니다.
 다양한 속성을 정의할 수도 있습니다. 예를 들어 **태그**, **설명**&#x200B;을 추가하고, 필요한 경우 **모델 활성화**&#x200B;를 선택하여 [모델을 활성화](#enabling-disabling-a-content-fragment-model)할 수 있습니다.
 
    >[!NOTE]
@@ -324,10 +324,10 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->  &#x200B;>  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+>  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->  &#x200B;>  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+>  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 ### 콘텐츠 참조 {#content-reference}
 
@@ -519,7 +519,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시**&#x200B;를 클릭합니다.
+1. 모델을 선택한 후 도구 모음에서 **게시**를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
    >[!NOTE]
@@ -535,7 +535,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 다음 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
+1. 모델을 선택한 다음 도구 모음에서 **게시 취소**를 선택합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
 하나 이상의 조각에서 현재 사용 중인 모델을 게시 취소하려고 하면 이를 알리는 오류 경고가 표시됩니다.

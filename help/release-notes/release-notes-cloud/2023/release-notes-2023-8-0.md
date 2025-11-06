@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 �
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 100%
@@ -29,13 +29,14 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
+* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
 
   ![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
 * 이제 AEM as a Cloud Service에서 새 콘텐츠 조각 편집기를 사용할 수 있습니다. 이를 통해 콘텐츠 작성자는 콘텐츠를 편집하는 동안 작성 작업을 간소화하고 다른 앱 간 전환의 필요성을 줄여 생산성을 높일 수 있습니다.
   ![새 콘텐츠 조각 편집기](/help/release-notes/assets/newCFEditor.png)
 
 새 콘텐츠 조각 편집기는 원본 편집기에서 사용할 수 없는 다음과 같은 이점을 제공합니다.
+
 * 자동 저장을 통해 작성 효율성을 개선하고 실수로 편집된 내용이 손실되는 일이 없도록 합니다.
 * 구조 트리를 사용하는 콘텐츠 조각 및 참조의 계층적 보기를 통해 심층적으로 구조화된 조각 내에서 빠르게 탐색합니다.
   ![콘텐츠 조각 편집기의 구조 트리](/help/release-notes/assets/newCFEditor_StructureTree.png)
@@ -134,7 +135,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 
-[Headless 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ko)을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고, 게시하고, 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
+[Headless 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고, 게시하고, 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
 
 * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
 * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합

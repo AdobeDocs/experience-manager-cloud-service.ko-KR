@@ -3,10 +3,10 @@ title: 다중 사이트 관리자 확장
 description: 다중 사이트 관리자의 기능을 확장하는 방법에 대해 알아봅니다.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 92%
 
 ---
@@ -183,17 +183,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 이 노드에 다음 속성을 추가합니다.
 
    * **이름**: `jcr:title`
-
      **유형**: `String`
      **값**: UI에 표시되는 식별 제목입니다.
 
    * **이름**: `jcr:description`
-
      **유형**: `String`
      **값**: 선택적 설명입니다.
 
    * **이름**: `cq:trigger`
-
      **유형**: `String`
      **값**: 사용할 [롤아웃 트리거](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)입니다.
       * `rollout`
@@ -639,7 +636,6 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
       * **유형**: `String`
       * **값**: 고려 중인 속성의 이름을 보유하며, `name` 속성의 값과 비교할 수 있습니다.
          * 예:
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable`이 정의된 경우 체인을 끊거나 닫으면 다음과 같은 방식으로 MSM과 상호 작용합니다.

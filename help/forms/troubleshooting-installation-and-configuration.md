@@ -1,14 +1,14 @@
 ---
 title: AEM Forms as a Cloud Service 환경의 설치 및 구성 문제를 해결하는 방법
-description: AEM Forms as a Cloud Service 환경 설치 및 구성 문제 해결.
+description: AEM Forms as a Cloud Service 환경의 설치 및 구성 문제 해결.
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,8 @@ Cloud Service 환경을 구성하는 동안 다음 문제 중 일부가 발생�
 1. **[!UICONTROL Forms]** 옵션을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    ![Forms 옵션 선택](assets/installation-configuration-select-forms-option.png)
-1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko)합니다.
+
+1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)합니다.
 
 파이프라인이 빌드되고 배포되면 **[!UICONTROL 탐색]** 페이지의 **[!UICONTROL Forms]** 옵션이 표시됩니다.
 
@@ -60,6 +61,6 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 이 문제를 해결하려면 다음 단계를 수행하십시오.
 
 1. AEM을 시작하고 모든 번들이 시작될 때까지 완전히 시작될 때까지 기다립니다.
-1. AEM 중지(Ctrl + C).
+1. AEM을 중지합니다(Ctrl + C).
 1. Forms `.far` 파일을 설치 폴더에 넣습니다.
 1. AEM 서버를 다시 시작합니다.

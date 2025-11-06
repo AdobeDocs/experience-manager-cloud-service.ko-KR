@@ -1,25 +1,25 @@
 ---
 title: CRXDE Lite 사용
-description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
+description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 이를 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 1%
 
 ---
 
 # CRXDE Lite 사용 {#using-crxde-lite}
 
-CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다. CRXDE Lite을 사용하면 파일, 폴더, 노드 및 등록 정보를 편집할 수 있습니다. 사용하기 쉬운 이 인터페이스에서 전체 저장소에 액세스할 수 있습니다.
+CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 이를 수정할 수 있습니다. CRXDE Lite을 사용하면 파일, 폴더, 노드 및 속성을 편집할 수 있습니다. 사용하기 쉬운 이 인터페이스에서 전체 저장소에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
 >CRXDE Lite은 로컬 개발 환경에서만 사용할 수 있습니다. AEM as a Cloud Service에서는 사용할 수 없습니다.
 
-## CRXDE Lite 시작 {#getting-started-with-crxde-lite}
+## CRXDE Lite 시작하기 {#getting-started-with-crxde-lite}
 
 CRXDE Lite을 시작하려면:
 
@@ -28,7 +28,7 @@ CRXDE Lite을 시작하려면:
 1. **사용자 이름** 및 **암호**&#x200B;를 입력하세요.
 1. **확인**&#x200B;을 클릭합니다.
 
-CRXDE Lite 사용자 인터페이스가 브라우저에 다음과 같이 표시됩니다.
+브라우저에 CRXDE Lite 사용자 인터페이스가 다음과 같이 표시됩니다.
 
 ![CRXDE Lite 인터페이스](assets/crxde-lite.png)
 
@@ -169,7 +169,7 @@ CRXDE Lite의 사용자 인터페이스는 많은 부분을 가지고 있고 많
 
 ## 폴더 만들기 {#creating-a-folder}
 
-CRXDE Lite으로 폴더를 만들려면:
+CRXDE Lite으로 폴더를 만들려면 다음 작업을 수행하십시오.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 폴더를 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기..**&#x200B;를 선택한 다음 **폴더 만들기...**&#x200B;를 선택합니다.
@@ -198,7 +198,7 @@ CRXDE Lite으로 노드를 만들려면 다음 작업을 수행하십시오.
 
 ## 속성 만들기 {#creating-a-property}
 
-CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십시오.
+CRXDE Lite으로 속성을 만들려면 다음 작업을 수행하십시오.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. [**탐색기 창**](#explorer-pane)&#x200B;에서 새 속성을 추가할 노드를 선택합니다.
@@ -222,7 +222,7 @@ CRXDE Lite으로 파일을 만들려면:
 
 CRXDE Lite을 사용하면 [CND(Compact Namespace and Node Type Definition) 표기법](https://jackrabbit.apache.org/jcr/node-type-notation.html)에서 노드 유형 정의를 가져오거나 내보낼 수 있습니다.
 
-CRXDE Lite에서 노드 유형 정의를 내보내려면
+CRXDE Lite에서 노드 유형 정의를 내보내려면 다음을 수행합니다.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 필요한 노드를 선택합니다.
@@ -241,7 +241,7 @@ CRXDE Lite에서 노드 유형 정의를 내보내려면
 
 ## 로깅 {#logging}
 
-CRXDE Lite을 사용하면 `<aem-install-dir>/crx-quickstart/logs`의 파일 시스템에 있는 `error.log` 파일을 표시하고 적절한 로그 수준으로 필터링할 수 있습니다. 다음과 같이 진행합니다.
+CRXDE Lite을 사용하면 `error.log`의 파일 시스템에 있는 `<aem-install-dir>/crx-quickstart/logs` 파일을 표시하고 적절한 로그 수준으로 필터링할 수 있습니다. 다음과 같이 진행합니다.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 창 하단의 [**콘솔 탭**](#console-tab) 오른쪽에 있는 드롭다운 메뉴에서 **서버 로그**&#x200B;를 선택합니다.

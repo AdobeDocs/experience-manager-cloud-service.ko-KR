@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5357'
 ht-degree: 38%
@@ -289,7 +289,7 @@ Admin Console을 통해 지원 티켓을 기록하는 절차:
 +++
 
 +++**통합 단계**
-이 예제 `index.html` 파일을 사용하여 자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증하십시오.
+자산 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 동안 인증에 이 예제 `index.html` 파일을 사용하십시오.
 
 예제 `Script` 파일의 *행 9*&#x200B;부터 *행 11*&#x200B;까지와 같이 `index.html` 태그를 사용하여 자산 선택기 패키지에 액세스합니다.
 
@@ -416,7 +416,7 @@ Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[의 &#x200B;](#asset-selector-properties) 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[의 ](#asset-selector-properties) 속성으로 이동하십시오.
 
 +++
 
@@ -434,7 +434,7 @@ aemTierType:[1: "delivery"]
 }
 ```
 
-선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예, `JsonObj`. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
+선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예를 들어, `JsonObj`과 같이 입력합니다. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
 
 | 오브젝트 | JSON |
 |---|---|
@@ -473,7 +473,7 @@ URL 형식:
 +++
 
 +++**동적 게재 URL을 선택할 준비가 되었습니다**
-선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예, `JsonObj`. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
+선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예를 들어, `JsonObj`과 같이 입력합니다. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
 
 | 오브젝트 | JSON |
 |---|---|
@@ -588,7 +588,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 | *aemTierType* | 문자열 | 아니요 |  | 게재 계층, 작성자 계층 또는 둘 다의 자산을 표시할지 여부를 선택할 수 있습니다. <br><br> 구문: `aemTierType:[0]: "author" 1: "delivery"` <br><br> 예를 들어 `["author","delivery"]`을(를) 모두 사용하는 경우 저장소 전환기에 작성자와 게재 모두에 대한 옵션이 표시됩니다. |
 | *handleNavigateToAsset* | 함수 | 아니요 | | 에셋 선택을 처리하는 콜백 함수입니다. |
 | *noWrap* | 부울 | 아니요 | | *noWrap* 속성은 측면 레일 패널에서 자산 선택기를 렌더링하는 데 도움이 됩니다. 이 속성이 언급되지 않으면 기본적으로 *대화 상자 보기*&#x200B;가 렌더링됩니다. |
-| *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
+| *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 선택 사항 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
 | *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. 또한 함수 값이 **또는**&#x200B;일 수 있는 `true`allowSelectionAndDrag`false`을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
@@ -609,7 +609,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 
 ![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [&#x200B; 속성의 사용을 이해하려면 &#x200B;](#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
+AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [ 속성의 사용을 이해하려면 ](#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -915,7 +915,7 @@ const showToast = {
 
 자산 선택기를 사용하여 태그 선택기 필터를 추가할 수 있습니다. 모든 관련 태그를 특정 태그 그룹에 결합하는 태그 그룹을 지원합니다. 또한 찾고 있는 자산에 해당하는 추가 태그를 선택할 수 있습니다. 또한 사용자가 주로 사용하는 상황별 호출 필터 아래에 기본 태그 그룹을 설정하여 이동 중에 액세스할 수도 있습니다.
 
->
+>[!NOTE]
 >
 > * 검색에서 태그 지정 필터를 활성화하려면 상황별 호출 코드 조각을 추가해야 합니다.
 > * 태그 그룹 형식 `(property=xcm:keywords.id=)`에 해당하는 이름 속성을 사용해야 합니다.

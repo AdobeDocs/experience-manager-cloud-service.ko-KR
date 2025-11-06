@@ -2,10 +2,10 @@
 title: 콘텐츠 소스 구성
 description: Edge Delivery Site에 대해 콘텐츠 소스를 구성하는 방법을 알아봅니다. Helix 4 아키텍처에서는 `fstab.yaml`을 사용하고, Helix 5 아키텍처에서는 Cloud Manager(또는 구성 서비스 API)의 가이드 마법사를 사용합니다.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 

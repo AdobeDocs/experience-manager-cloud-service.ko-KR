@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
 
@@ -345,4 +345,4 @@ AI 어시스턴트 개선에 도움 주기:
 
 ## 관련 리소스
 
-[AEM Forms AI 어시스턴트 - 프롬프트 라이브러리](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+[AEM Forms AI 어시스턴트 - 프롬프트 라이브러리](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

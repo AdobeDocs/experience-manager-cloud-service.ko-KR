@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 미리 보기
 description: 다양한 방법으로 콘텐츠 조각을 미리 보는 방법을 이해합니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 36%

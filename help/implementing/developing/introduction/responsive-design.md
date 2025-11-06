@@ -3,8 +3,8 @@ title: 반응형 디자인
 description: 반응형 설계를 통해 동일한 경험을 여러 방향의 여러 디바이스에서 효과적으로 표시할 수 있습니다.
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 1%
@@ -85,7 +85,7 @@ CSS 파일에서 타겟팅하는 장치의 속성을 기반으로 미디어 쿼�
 
 ### AEM 페이지에서 미디어 쿼리 사용 {#using-media-queries-with-aem-pages}
 
-[WKND 샘플 프로젝트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)은(는) 페이지 정책을 통해 clientlib을 포함하는 [페이지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ko)를 사용합니다.
+[WKND 샘플 프로젝트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)은(는) 페이지 정책을 통해 clientlib을 포함하는 [페이지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)를 사용합니다.
 
 자체 페이지 구성 요소가 페이지 핵심 구성 요소를 기반으로 하지 않는 경우 해당 구성 요소의 HTL 또는 JSP 스크립트에 클라이언트 라이브러리 폴더를 포함할 수도 있습니다. 이렇게 하면 반응형 그리드가 작동하는 데 필요한 미디어 쿼리가 있는 CSS 파일이 생성되고 참조됩니다.
 
@@ -135,9 +135,9 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 반응형 페이지는 렌더링되는 장치에 동적으로 적응하여 사용자에게 더 나은 경험을 제공합니다. 하지만 페이지 로드 시간을 최소화하기 위해 자산을 중단점 및 장치에 최적화하는 것도 중요합니다.
 
-[핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko) 기능(예: 응용 이미지 선택)입니다.
+[핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) 기능(예: 응용 이미지 선택)입니다.
 
-* 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=ko)을(를) 사용하여 적절한 렌디션을 전달합니다.
+* 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)을(를) 사용하여 적절한 렌디션을 전달합니다.
 * [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko-KR)은(는) DAM의 이미지 에셋을 WebP 형식으로 제공하고 이미지의 다운로드 크기를 평균적으로 약 25% 줄일 수 있는 정책의 간단한 확인란을 통해서도 사용할 수 있습니다.
 
 ## 레이아웃 컨테이너 {#layout-container}

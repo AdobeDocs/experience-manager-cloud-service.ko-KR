@@ -1,13 +1,13 @@
 ---
 title: Query Builder의 사용자 지정 설명 평가기 구현
-description: AEM의 Query Builder는 사용자 정의가 가능한 간편한 방법으로 콘텐츠 저장소를 쿼리합니다
+description: AEM의 Query Builder는 손쉽게 사용자 지정할 수 있는 콘텐츠 저장소 쿼리 방법을 제공합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 >GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 >
 >* [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
->* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)(으)로 다운로드
+>* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)&#x200B;(으)로 다운로드
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 술어 평가기는 쿼리의 정의 제약 조건인 특정 술어의 평가를 처리합니다.
 
-실제 콘텐츠 모델(예: `metadata/@width > 200`)에 맞는 특정 JCR 쿼리에 더 높은 수준의 검색 제약 조건(예: `width>200`)을 매핑합니다. 또는 수동으로 노드를 필터링하고 제약 조건을 확인할 수 있습니다.
+실제 콘텐츠 모델(예: `width>200`)에 맞는 특정 JCR 쿼리에 더 높은 수준의 검색 제약 조건(예: `metadata/@width > 200`)을 매핑합니다. 또는 수동으로 노드를 필터링하고 제약 조건을 확인할 수 있습니다.
 
 >[!TIP]
 >
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 #### 기본 술어 평가자를 사용하여 복제 메타데이터 쿼리 {#querying-replication-metadata-with-default-predicate-evaluators}
 
-다음 쿼리는 `admin`이(가) 연도 시작 이후 활성화한 `/content` 분기의 노드 목록을 가져옵니다.
+다음 쿼리는 `/content`이(가) 연도 시작 이후 활성화한 `admin` 분기의 노드 목록을 가져옵니다.
 
 ```xml
 path=/content
@@ -101,13 +101,13 @@ replic.action=Activate
 
 >[!TIP]
 >
->Maven 사용을 포함한 새 AEM 프로젝트 설정에 대해서는 [WKND 자습서](develop-wknd-tutorial.md)에서 자세히 설명합니다.
+>Maven 사용을 포함한 새 AEM 프로젝트 설정은 [WKND 자습서](develop-wknd-tutorial.md)에서 자세히 설명합니다.
 
 먼저 프로젝트의 Maven 종속성을 업데이트해야 합니다. `PredicateEvaluator`은(는) `cq-search` 아티팩트의 일부이므로 Maven pom 파일에 추가해야 합니다.
 
 >[!NOTE]
 >
->`cq-search`이(가) `OSGi` 컨테이너에서 제공되므로 `cq-search` 종속성의 범위가 `provided`(으)로 설정됩니다.
+>`cq-search`이(가) `provided` 컨테이너에서 제공되므로 `cq-search` 종속성의 범위가 `OSGi`(으)로 설정됩니다.
 
 다음 코드 조각은 `pom.xml` 파일의 차이점을 [통합 차이점 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)으로 보여줍니다
 
@@ -135,7 +135,7 @@ replic.action=Activate
 >다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 식을 만드는 방법을 설명합니다. 행 단위로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하세요.
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을(를) 확장하는 새 Java 클래스 만들기
-1. [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)으로 표시되는 코드 조각과 같은 `@Component`(으)로 클래스에 주석을 답니다.
+1. `@Component`통합 비교 형식[으로 표시되는 코드 조각과 같은 ](https://en.wikipedia.org/wiki/Diff#Unified_format)&#x200B;(으)로 클래스에 주석을 답니다.
 
    ```text
    @@ -19,8 +19,11 @@
@@ -165,7 +165,7 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   재정의 메서드에서 인수에 지정된 `Predicate`을(를) 기반으로 `Xpath` 식을 만듭니다.
+   재정의 메서드에서 인수에 지정된 `Xpath`을(를) 기반으로 `Predicate` 식을 만듭니다.
 
 ### 복제 메타데이터에 대한 사용자 지정 설명 평가기의 예 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 

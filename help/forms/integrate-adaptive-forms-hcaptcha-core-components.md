@@ -6,10 +6,10 @@ keywords: Captcha&reg; 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 25%
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
 AEM Forms as a Cloud Service은 다음 CAPTCHA 솔루션을 지원합니다.
+
 * [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google recaptcha](/help/forms/captcha-adaptive-forms-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
@@ -53,25 +54,23 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
       * 기존 폴더에 대해 클라우드 구성 옵션을 활성화하려면 다음을 수행하십시오.
          1. 구성 브라우저에서 폴더를 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
          1. 구성 속성 대화 상자에서 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
-         1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
+         1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**&#x200B;을(를) 선택합니다.
-
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**을(를) 선택합니다.
       ui의 ![hCaptcha®](assets/hcaptcha-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
-
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
       ![구성 hCaptcha®](assets/config-hcaptcha.png)
-   1. 필수 구성 요소에서 구한 [hCaptcha® 서비스 &#x200B;](#prerequisite)에 대해 **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL 사이트 키]** 및 **[!UICONTROL 비밀 키]**&#x200B;를 지정하십시오. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+   1. 필수 구성 요소에서 구한 **[!UICONTROL hCaptcha® 서비스]**&#x200B;에 대해 **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL 사이트 키]** 및 [비밀 키](#prerequisite)를 지정하십시오. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
       ![AEM Forms 환경을 hCaptcha®와 연결하도록 Cloud Service 구성](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
    > [클라이언트측 JavaScript 유효성 검사 URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) 및 [서버측 유효성 검사 URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side)은(는) hCaptcha® 유효성 검사를 위해 이미 미리 채워져 있으므로 사용자가 수정할 필요가 없습니다.
 
-   hCAPTCHA 서비스가 구성되면 [핵심 구성 요소를 기반으로 하는 적응형 양식](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)에서 사용할 수 있습니다.
+   hCAPTCHA 서비스가 구성되면 [핵심 구성 요소를 기반으로 하는 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)에서 사용할 수 있습니다.
 
-## 적응형 Forms 핵심 구성 요소에서 hCaptcha® 사용 {#using-hCaptcha®-core-components}
+## 적응형 Forms 핵심 구성 요소에서 hCaptcha® 사용 {#using-hCaptcha&reg;-core-components}
 
 1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
 1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;로 이동합니다.

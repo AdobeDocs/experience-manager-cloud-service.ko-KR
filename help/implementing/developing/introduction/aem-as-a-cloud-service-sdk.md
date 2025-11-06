@@ -3,8 +3,8 @@ title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service 소프트웨어 개발 키트에 대한 개요입니다.
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 82f5078740b2cf6ac481d83df40bbbc4fb3c1a77
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM as a Cloud Service SDK은 다음 아티팩트로 구성됩니다.
 
 ## SDK을 위한 빌드 {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK을 사용하여 사용자 지정 코드를 빌드하고 배포합니다. [AEM Project Archetype 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using)를 참조하세요. 높은 수준에서 다음 단계가 수행됩니다.
+AEM as a Cloud Service SDK을 사용하여 사용자 지정 코드를 빌드하고 배포합니다. [AEM Project Archetype 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)를 참조하세요. 높은 수준에서 다음 단계가 수행됩니다.
 
 * **컴파일 코드** - Source 코드가 컴파일되어 결과 콘텐츠 패키지가 생성됩니다.
 * **아티팩트 빌드** - 아티팩트는 이 프로세스 동안 빌드됩니다.

@@ -2,12 +2,12 @@
 title: Edge Delivery Services로 적응형 양식 게시
 description: Edge Delivery Services를 사용하여 프로덕션 환경에서 Adaptive Forms를 게시, 구성 및 액세스하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 keywords: 양식 게시, Edge Delivery Services, 양식 구성, CORS, 레퍼러 필터
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 

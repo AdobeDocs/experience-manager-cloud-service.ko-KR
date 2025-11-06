@@ -4,7 +4,7 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 11%
@@ -68,7 +68,7 @@ CDN 오류 페이지를 구성하여 기본 브랜드가 지정되지 않은 페
 
 HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 게재 성능과 콘텐츠 신선도의 균형을 맞추는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
 
-[제거 API 토큰 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) 및 [캐시된 CDN 콘텐츠 제거](/help/implementing/dispatcher/cdn-cache-purge.md)에 대해 읽어 보십시오.
+[제거 API 토큰 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) 및 [캐시된 CDN 콘텐츠 제거](/help/implementing/dispatcher/cdn-cache-purge.md)에 대해 읽어 보십시오.
 
 ### CDN에서의 기본 인증 {#basic-auth}
 

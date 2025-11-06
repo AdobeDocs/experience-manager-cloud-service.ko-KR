@@ -3,8 +3,8 @@ title: 구성 및 구성 브라우저
 description: Adobe Experience Manager(AEM) 구성과 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -109,7 +109,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
    * **사용자 또는 그룹 선택** 필드는 기존 사용자 및 역할을 기반으로 자동 완성을 제공합니다.
 1. 자동 완성 결과에서 적절한 사용자 또는 역할을 선택합니다.
    * 사용자 또는 역할을 두 개 이상 선택할 수 있습니다.
-1. 하나 이상의 선택한 사용자 또는 역할에 필요한 액세스 옵션을 확인하고 **추가**&#x200B;를 클릭합니다.
+1. 하나 이상의 선택한 사용자 또는 역할에 필요한 액세스 옵션을 확인하고 **추가**를 클릭합니다.
    ![구성에 액세스 권한 추가](assets/configuration-edit.png)
 1. 단계를 반복하여 사용자 또는 역할을 선택하고 필요에 따라 추가 액세스 권한을 할당할 수 있습니다.
 1. 완료되면 **저장 및 닫기**&#x200B;를 선택합니다.
@@ -139,7 +139,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 모든 구성 조회의 시작점은 `/content` 아래에 있는 콘텐츠 리소스입니다. 페이지, 페이지 내의 구성 요소, 에셋 또는 DAM 폴더일 수 있습니다. 이 컨텍스트에서 적용되는 올바른 구성을 찾고 있는 실제 콘텐츠입니다.
 
-이제 `Conf` 개체를 통해 관심 있는 특정 구성 항목을 검색할 수 있습니다. 이 경우 `imageserver`과(와) 관련된 설정의 컬렉션인 `dam/imageserver`입니다. `getItem` 호출이 `ValueMap`을(를) 반환합니다. 그런 다음 `bgkcolor` 문자열 속성을 읽고 속성(또는 전체 구성 항목)이 없는 경우 &quot;FFFFFF&quot;의 기본값을 제공합니다.
+이제 `Conf` 개체를 통해 관심 있는 특정 구성 항목을 검색할 수 있습니다. 이 경우 `dam/imageserver`과(와) 관련된 설정의 컬렉션인 `imageserver`입니다. `getItem` 호출이 `ValueMap`을(를) 반환합니다. 그런 다음 `bgkcolor` 문자열 속성을 읽고 속성(또는 전체 구성 항목)이 없는 경우 &quot;FFFFFF&quot;의 기본값을 제공합니다.
 
 이제 해당 JCR 콘텐츠를 살펴보겠습니다.
 
@@ -161,9 +161,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 `/conf` 내에서 건너뛰고 참조를 따라 `/conf/wknd` 노드가 있는지 확인합니다. 이는 구성입니다. 조회는 애플리케이션 코드를 통과시킵니다. 예제 코드에는 전용 참조가 없습니다. `Conf` 개체 뒤에 숨겨져 있습니다. 적용되는 구성은 JCR 콘텐츠를 통해 제어됩니다.
 
-구성에 이 경우에 필요한 `dam/imageserver`을(를) 포함하여 실제 항목을 포함하는 고정 이름의 `settings` 노드가 포함되어 있습니다. 이러한 항목은 &quot;설정 문서&quot;로 생각할 수 있으며 실제 콘텐츠를 포함하는 `jcr:content`을(를) 포함하는 `cq:Page`로 표시됩니다.
+구성에 이 경우에 필요한 `settings`을(를) 포함하여 실제 항목을 포함하는 고정 이름의 `dam/imageserver` 노드가 포함되어 있습니다. 이러한 항목은 &quot;설정 문서&quot;로 생각할 수 있으며 실제 콘텐츠를 포함하는 `cq:Page`을(를) 포함하는 `jcr:content`로 표시됩니다.
 
-마지막으로 이 샘플 코드에 필요한 속성 `bgkcolor`이(가) 표시됩니다. `getItem`에서 다시 가져온 `ValueMap`은(는) 페이지의 `jcr:content` 노드를 기반으로 합니다.
+마지막으로 이 샘플 코드에 필요한 속성 `bgkcolor`이(가) 표시됩니다. `ValueMap`에서 다시 가져온 `getItem`은(는) 페이지의 `jcr:content` 노드를 기반으로 합니다.
 
 ### 구성 해결 방법 {#configuration-resolution}
 
@@ -204,7 +204,7 @@ AEM의 구성은 슬링 컨텍스트 인식 구성을 기반으로 합니다. Sl
 
 ### ConfMgr 웹 콘솔 {#confmgr-web-console}
 
-디버깅 및 테스트 목적으로 `https://<host>:<port>/system/console/conf`에 지정된 경로/항목에 대한 구성을 표시할 수 있는 **ConfMgr** 웹 콘솔이 있습니다.
+디버깅 및 테스트 목적으로 **에 지정된 경로/항목에 대한 구성을 표시할 수 있는** ConfMgr`https://<host>:<port>/system/console/conf` 웹 콘솔이 있습니다.
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
@@ -218,7 +218,7 @@ AEM의 구성은 슬링 컨텍스트 인식 구성을 기반으로 합니다. Sl
 
 ### 컨텍스트 인식 구성 웹 콘솔 {#context-aware-web-console}
 
-디버깅 및 테스트 목적으로 `https://<host>:<port>/system/console/slingcaconfig`에 **컨텍스트 인식 구성** 웹 콘솔이 있으며, 이를 통해 저장소의 컨텍스트 인식 구성을 쿼리하고 해당 속성을 볼 수 있습니다.
+디버깅 및 테스트 목적으로 **에**&#x200B;컨텍스트 인식 구성`https://<host>:<port>/system/console/slingcaconfig` 웹 콘솔이 있으며, 이를 통해 저장소의 컨텍스트 인식 구성을 쿼리하고 해당 속성을 볼 수 있습니다.
 
 ![컨텍스트 인식 구성 웹 콘솔](assets/configuration-context-aware-console.png)
 

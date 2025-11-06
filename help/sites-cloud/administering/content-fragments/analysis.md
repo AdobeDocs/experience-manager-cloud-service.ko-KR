@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 분석
 description: 콘텐츠 조각의 구조를 이해합니다. Headless 게재 및 페이지 작성과 관련된 정보를 제공합니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 79%

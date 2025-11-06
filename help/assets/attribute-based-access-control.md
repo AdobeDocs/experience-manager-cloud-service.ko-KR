@@ -3,7 +3,7 @@ title: 속성 기반 액세스 제어
 description: 속성 기반 액세스 제어를 활성화하여 메타데이터 기반 규칙을 정의하여 Content Hub에서 사용할 수 있는 에셋에 대한 액세스 수준을 정의하는 방법에 대해 알아봅니다
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -51,7 +51,7 @@ Content Hub 관리자는 속성 기반 액세스 제어(ABAC)를 사용하여 �
 
 대규모 마케팅 롤아웃을 지원하려면 지역 및 브랜드의 다양한 팀원이 디지털 에셋에 액세스해야 합니다. 각 담당자는 지역 및 브랜드를 기반으로 특정 범위를 갖습니다. ABAC는 에셋 메타데이터를 통해 이러한 규칙을 자동으로 적용합니다. 다음 표는 이 사용 사례에 대한 다양한 유형의 가상 사용자와 적용되는 규칙을 보여 줍니다.
 
-| 담당자 | 역할 | 역할 설명 | 그룹 ID | 규칙 |
+| 페르소나 | 역할 | 역할 설명 | 그룹 ID | 규칙 |
 |---------------------|----------------|-----------------|------------|------------|
 | John | EMEA 마케팅 리드 | EMEA의 모든 브랜드에서 마케팅 실행을 감독합니다. EMEA 시장을 겨냥한 모든 브랜드의 승인된 자산에 액세스해야 합니다. | group-emea-marketing | region = &quot;EMEA&quot; |
 | 마이크 | APAC 마케팅 리드 | APAC의 모든 브랜드에서 마케팅 실행을 감독합니다. APAC 시장을 겨냥한 모든 브랜드의 승인된 자산에 액세스해야 합니다. | group-apac-marketing | region = &quot;APAC&quot; |

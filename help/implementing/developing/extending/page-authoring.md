@@ -3,11 +3,11 @@ title: 페이지 작성 사용자 정의
 description: AEM as a Cloud Service가 페이지 작성 기능을 사용자 정의하기 위해 제공하는 메커니즘에 대해 알아봅니다.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 88%
+source-wordcount: '936'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 
 오버레이는 노드 정의를 기반으로 하며 이를 통해 `/apps`의 사용자 정의 기능으로 `/libs`의 표준 기능을 오버레이할 수 있습니다.
 
-오버레이를 만들 때 원본의 1:1 사본은 필요하지 않습니다. [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)을 통해 상속되기 때문입니다.
+오버레이를 만들 때 :1sling 리소스 병합[에서 상속을 허용하므로 원본의 1](/help/implementing/developing/introduction/sling-resource-merger.md) 복사본은 필요하지 않습니다.
 
 자세한 내용은 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
 

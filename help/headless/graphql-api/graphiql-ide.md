@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1136'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1135'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 100%
 >GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)에서 [엔드포인트를 구성](/help/headless/graphql-api/graphql-endpoint.md)해야 합니다.
 
 **GraphiQL** 도구를 통해 다음 작업을 수행하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
+
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
 * **[지속 쿼리](/help/headless/graphql-api/persisted-queries.md)** 제작 및 액세스
@@ -141,7 +142,7 @@ max-age와 동일하지만 특히 프록시 캐시에 적용됩니다.
 
 >[!NOTE]
 >
->지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 기본값은 2시간(7,200초)입니다.
+>지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value}에 대한 기본값은 2시간(7,200초)입니다.
 
 ## 지속 쿼리 게시 취소 {#unpublishing-persisted-queries}
 

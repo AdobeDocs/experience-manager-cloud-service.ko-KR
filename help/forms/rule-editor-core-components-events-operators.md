@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 2%
@@ -52,7 +52,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 
 규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](/help/forms/rule-editor-core-components-user-interface.md#write-rules)을 참조하십시오.
 
-#### [!UICONTROL When] {#whenruletype}
+#### [!UICONTROL 언제] {#whenruletype}
 
 **[!UICONTROL When]** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정한 다음 조건이 충족되면 트리거할 작업(`True`)을 지정합니다. When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 [중첩 식](/help/forms/rule-editor-core-components-usecases.md#nested-expressions)을 만들 수 있습니다.
 
@@ -169,6 +169,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
 **[!UICONTROL 속성 설정]** 규칙 유형을 사용하면 조건 작업을 기반으로 지정된 개체의 속성 값을 설정할 수 있습니다. 속성을 다음 중 하나로 설정할 수 있습니다.
+
 * 표시(부울)
 * label.value (문자열)
 * label.visible (부울)
@@ -351,7 +352,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 #### [!UICONTROL 비동기 함수 호출]
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 **[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이 함수를 사용하면 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
 

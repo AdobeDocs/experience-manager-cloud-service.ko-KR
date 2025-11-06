@@ -3,12 +3,12 @@ title: SPA에 대한 동적 모델과 구성 요소 간 매핑
 description: 이 문서에서는 AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법을 설명합니다.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ npm 패키지 [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@
 AEM용 JavaScript SPA SDK을 사용하는 단일 페이지 애플리케이션은 모델 기반으로 합니다.
 
 1. 프론트엔드 구성 요소가 [구성 요소 매핑 저장소](#componentmapping-module)에 등록됩니다.
-1. [모델 공급자](blueprint.md#the-model-provider)에서 모델을 제공하면 [컨테이너](blueprint.md#container)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.
+1. [모델 공급자](blueprint.md#container)에서 모델을 제공하면 [컨테이너](blueprint.md#the-model-provider)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.
 
 1. 페이지가 있으면 자식(`:children`)이 먼저 [구성 요소 매핑](blueprint.md#componentmapping)에서 구성 요소 클래스를 가져온 다음 인스턴스화합니다.
 

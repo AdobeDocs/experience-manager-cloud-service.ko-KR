@@ -5,8 +5,8 @@ description: 저장소 브라우저는 작성자, 게시 및 미리보기 계층
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->또한 [이 클립](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ko)을 통해 저장소 브라우저를 사용하여 AEM as a Cloud Service을 디버깅하는 방법에 대한 간단한 비디오 소개도 볼 수 있습니다.
+>또한 [이 클립](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)을 통해 저장소 브라우저를 사용하여 AEM as a Cloud Service을 디버깅하는 방법에 대한 간단한 비디오 소개도 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -29,19 +29,19 @@ ht-degree: 1%
 
 [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)에서 액세스할 수 있으며 선택한 환경에 대한 작성자 또는 게시 인스턴스의 저장소를 탐색하는 데 사용할 수 있습니다.
 
-### 사전 요구 사항 액세스 {#access-prerequisites}
+### 액세스 사전 요구 사항 {#access-prerequisites}
 
 AEM as a Cloud Service Developer Console 또는 저장소 브라우저에 액세스하려면 다음 조건을 충족해야 합니다
 
-AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Console 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)를 참조하십시오.
+AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Console 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)를 참조하십시오.
 
 저장소 브라우저에 액세스하려면 요구 사항은 AEM as a Cloud Service Developer Console(위에 지정됨)와 동일합니다. 특정 인스턴스에 대한 저장소 브라우저 컨텐츠를 보려면 다음과 같이 하십시오.
 
 * 작성자 인스턴스: **작성자 인스턴스**&#x200B;에 대한 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 저장소를 검색할 때는 사용자의 권한이 유지됩니다. AEM 관리자 제품 프로필이 있는 사용자는 전체 읽기 액세스 권한이 있는 저장소 브라우저를 볼 수 있습니다.
 
-* Publish 인스턴스: **Publish 인스턴스**&#x200B;에 대한 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 해당 제품 프로필 세트가 없으면 사용자는 익명 사용자로 탐색하고 제한된 권한으로 인해 일부 경로가 표시되지 않습니다.
+* 게시 인스턴스: **게시 인스턴스**&#x200B;에 대한 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 해당 제품 프로필 세트가 없으면 사용자는 익명 사용자로 탐색하고 제한된 권한으로 인해 일부 경로가 표시되지 않습니다.
 
-사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko)를 참조하세요.
+사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)를 참조하세요.
 
 ### 저장소 브라우저 실행 {#launching-the-repository-browser}
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Consol
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 게시 관리자용 제품 프로필을 만듭니다. 아래 예제에서는 **DEV - AEM 관리자 Publish**&#x200B;이라고 합니다.
+1. 게시 관리자용 제품 프로필을 만듭니다. 아래 예제에서는 **DEV - AEM Administrators Publish**&#x200B;라고 합니다
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -99,11 +99,11 @@ AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Consol
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. **관리자** 및 새 **개발 - AEM 관리자 Publish** 그룹을 활성화하여 게시할 때 사용할 수 있도록 합니다.
+1. **관리자** 및 새 **개발 - AEM 관리자 게시** 그룹을 활성화하여 게시할 때 사용할 수 있도록 합니다.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. **작성자**&#x200B;의 관리자 그룹에서 새 **DEV - AEM 관리자 Publish** 그룹을 제거하여 새 그룹을 게시하도록 격리합니다
+1. **작성자**&#x200B;의 관리자 그룹에서 새 **개발 - AEM 관리자 게시** 그룹을 제거하여 새 그룹을 격리하여 게시하는 것이 좋습니다
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 

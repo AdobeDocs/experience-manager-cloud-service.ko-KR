@@ -4,8 +4,8 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 ### 2024년 1월 릴리스 {#january-2024-release}
 
-* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#linked-folders) 방법에 대해 자세히 알아보십시오.
+* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
-* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ko#metadata-schema-mapping)에 대해 자세히 알아보십시오.
+* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)에 대해 자세히 알아보십시오.
 
 * 강화 커넥터에서 연결 구성을 삭제하면 이벤트 구독 및 기타 저장된 구성에 큰 영향을 미치며, 이전 URL을 가리키게 됩니다.
 
@@ -201,13 +201,13 @@ ht-degree: 100%
          `"objId": "",`와 `"url"` 간의 콘텐츠는 JSON 응답과 일치해야 합니다. 이를 위해 권장되는 메서드는 `objId`이 있는 이벤트 구독에서 복사한 다음 번호를 삭제하는 것입니다.
 
       1. 이벤트 구독 ID을 참고하십시오.
-
       1. 잘못된 이벤트 구독을 삭제하십시오. `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`에 대해 삭제 API 호출을 수행하십시오.
 
          응답 코드로서 `200`은 잘못된 이벤트 구독이 성공적으로 삭제되었음을 의미합니다.
-  >[!NOTE]
-  >
-  >이 절차의 설명에 따라 단계를 실행하기 전에 잘못된 이벤트 구독을 이미 삭제한 경우 이 절차의 마지막 단계를 건너뛸 수 있습니다.
+
+         >[!NOTE]
+         >
+         >이 절차의 설명에 따라 단계를 실행하기 전에 잘못된 이벤트 구독을 이미 삭제한 경우 이 절차의 마지막 단계를 건너뛸 수 있습니다.
 
 ### 2022년 10월 릴리스 {#october-2022-release}
 

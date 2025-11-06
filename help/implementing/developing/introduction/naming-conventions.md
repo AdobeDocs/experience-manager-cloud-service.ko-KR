@@ -1,19 +1,19 @@
 ---
-title: 이름 지정 규칙
+title: 명명 규칙
 description: 저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
 
 ---
 
-# 이름 지정 규칙{#naming-conventions}
+# 명명 규칙{#naming-conventions}
 
-저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다. 그러나 AEM은 페이지 노드 이름에 대한 추가 규칙을 지정합니다.
+저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다. 하지만 AEM은 페이지 노드 이름에 대한 추가 규칙을 지정합니다.
 
 ## 페이지 이름 지정 규칙 {#naming-conventions-for-pages}
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 * JcrUtil: [JCR 유틸리티](#jcr-utilities)의 AEM 구현입니다.
 * PageManager: [페이지 관리자](#page-manager)에서 페이지 수준 작업을 위한 메서드를 제공합니다.
-* AEM UI {#ui-behavior} 내
+* AEM UI 내 {#ui-behavior}
 
 ### JCR 유틸리티 {#jcr-utilities}
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### AEM UI 동작 {#ui-behavior}
 
-컨텐츠를 관리할 때 AEM UI는
+콘텐츠를 관리할 때 AEM UI는
 
 * 다음 경우 PageManager에서 지정한 제한에 따라 이름의 유효성을 검사합니다.
    * 노드 이름으로 변환하기 위한 페이지 제목이 제공됩니다.

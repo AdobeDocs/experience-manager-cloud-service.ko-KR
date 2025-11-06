@@ -3,9 +3,9 @@ title: SPA 블루프린트
 description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현할 수 있도록 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -71,7 +71,7 @@ AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발
 
 SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라 콘텐츠에 대한 변경 사항을 업데이트해야 합니다. 동적 구성 요소를 사용하는 패턴은 제공된 페이지 모델 구조에 따라 구성 요소를 즉시 인스턴스화하는 데 사용해야 합니다.
 
-### 메타 필드 {#meta-fields}
+### Meta 필드 {#meta-fields}
 
 페이지 모델은 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API를 기반으로 하는 JSON 모델 내보내기를 사용합니다. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
 
@@ -83,7 +83,7 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 * `:itemsOrder`: 정렬된 자식 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
 * `:path`: 항목의 콘텐츠 경로(페이지를 나타내는 항목에 있음)
 
-[AEM 콘텐츠 서비스 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)도 참조하세요.
+[AEM 콘텐츠 서비스 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)도 참조하세요.
 
 ### 프레임워크별 모듈 {#framework-specific-module}
 

@@ -3,8 +3,8 @@ title: 쿼리 빌더 API
 description: Asset Share 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 쿼리 빌더 API {#query-builder-api}
 
-Query Builder를 사용하면 AEM의 콘텐츠 저장소를 쉽게 쿼리할 수 있습니다. 기능은 Java™ API 및 REST API를 통해 노출됩니다. 이 문서에서는 이러한 API에 대해 설명합니다.
+쿼리 빌더는 AEM의 콘텐츠 저장소를 쉽게 쿼리할 수 있는 방법을 제공합니다. 기능은 Java™ API 및 REST API를 통해 노출됩니다. 이 문서에서는 이러한 API에 대해 설명합니다.
 
 서버측 쿼리 빌더([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))가 쿼리 설명을 수락하고 XPath 쿼리를 만들고 실행하며 선택적으로 결과 집합을 필터링하고 필요한 경우 패싯을 추출합니다.
 
@@ -25,19 +25,19 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 >[!NOTE]
 >
->QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 AEM JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=ko)를 참조하십시오.
+>QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 AEM JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)를 참조하십시오.
 
 ## Gem 세션 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=ko)은(는) Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)은(는) Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다.
 
-[쿼리 빌더 전용 세션을 검토](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=ko)하여 도구의 개요 및 사용을 확인할 수 있습니다.
+[쿼리 빌더 전용 세션을 검토](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html)하여 도구의 개요 및 사용을 확인할 수 있습니다.
 
 ## 샘플 쿼리 {#sample-queries}
 
 이러한 샘플은 Java™ 속성 스타일 표기법으로 제공됩니다. Java™ API와 함께 사용하려면 다음 API 샘플과 같이 Java™ `HashMap`을(를) 사용하십시오.
 
-`QueryBuilder` JSON 서블릿의 경우 각 예제는 AEM 설치(기본 위치: `http://<host>:<port>`)에 대한 샘플 링크를 포함합니다. 이러한 링크를 사용하기 전에 AEM 인스턴스에 로그온합니다.
+`QueryBuilder` JSON 서블릿의 경우 각 예제는 AEM 설치(기본 위치: `http://<host>:<port>`)에 대한 샘플 링크를 포함합니다. 이 링크를 사용하기 전에 AEM 인스턴스에 로그온합니다.
 
 >[!CAUTION]
 >
@@ -97,7 +97,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-쿼리에서 `0` 오프셋이 있는 `10`개 결과의 `p.limit` 기본값을 반환합니다.
+쿼리에서 `p.limit` 오프셋이 있는 `10`개 결과의 `0` 기본값을 반환합니다.
 
 ```xml
 "success": true,
@@ -210,7 +210,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 이 예제의 그룹 내에서 `path` 조건자가 여러 번 사용됩니다. 술어의 두 인스턴스를 구분하고 순서를 지정하려면(일부 술어에 순서 지정 필요) 술어 앞에 `N_`을 붙여야 합니다. 여기서 `N`은(는) 순서 지정 색인입니다. 앞의 예제에서 결과 조건자는 `1_path`과(와) `2_path`입니다.
 
-`p.or`의 `p`은(는) `1_path`과(와) 같은 그룹의 하위 조건자가 아니라 뒤에 오는 것(이 경우 `or`)이 그룹의 *매개 변수*&#x200B;임을 나타내는 특수 구분 기호입니다.
+`p`의 `p.or`은(는) `or`과(와) 같은 그룹의 하위 조건자가 아니라 뒤에 오는 것(이 경우 *)이 그룹의*&#x200B;매개 변수`1_path`임을 나타내는 특수 구분 기호입니다.
 
 `p.or`을(를) 지정하지 않으면 모든 조건자가 함께 AND됩니다. 즉, 각 결과는 모든 조건자를 만족해야 합니다.
 
@@ -349,11 +349,11 @@ p.nodedepth=5
 
 자세한 조건자는 [Query Builder 조건자 참조 페이지](query-builder-predicates.md)를 참조하십시오.
 
-`PredicateEvaluator` 클래스[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)에 대한 Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+[ 클래스`PredicateEvaluator`에 대한 ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
-클래스 이름의 접두사(예: [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)의 `similar`)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
+클래스 이름의 접두사(예: `similar`[`SimilarityPredicateEvaluator`의 ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html))는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
 
-이러한 주 속성의 경우 쿼리를 줄이고 정규화된 변형 `similar.similar=/content/en` 대신 `similar=/content/en`을(를) 사용할 수 있습니다. 클래스의 모든 비주요 속성에 대해 정규화된 양식을 사용해야 합니다.
+이러한 주 속성의 경우 쿼리를 줄이고 정규화된 변형 `similar=/content/en` 대신 `similar.similar=/content/en`을(를) 사용할 수 있습니다. 클래스의 모든 비주요 속성에 대해 정규화된 양식을 사용해야 합니다.
 
 ## Query Builder API 사용 예 {#example-query-builder-api-usage}
 
@@ -435,7 +435,7 @@ builder.storeQuery(query, "/mypath/getfiles", true, session);
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-예를 들어 `/mypath/getfiles` 경로에 저장된 `Query`은(는) 다음 코드 조각으로 로드할 수 있습니다.
+예를 들어 `Query` 경로에 저장된 `/mypath/getfiles`은(는) 다음 코드 조각으로 로드할 수 있습니다.
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
@@ -453,14 +453,14 @@ Query Builder 쿼리를 재생하고 디버깅하기 위해에서 Query Builder 
 
 `path=/tmp`은(는) 예제입니다.
 
-### 일반 디버깅 Recommendations {#general-debugging-recommendations}
+### 일반 디버깅 권장 사항 {#general-debugging-recommendations}
 
 ### 로깅을 통해 설명 가능한 XPath 얻기 {#obtain-explain-able-xpath-via-logging}
 
 대상 인덱스 집합에 대해 개발 주기 동안 **모든** 쿼리를 설명합니다.
 
 1. QueryBuilder에 대해 DEBUG 로그를 활성화하여 기본 설명 가능한 XPath 쿼리를 얻습니다.
-   * `https://<host>:<port>/system/console/slinglog`(으)로 이동합니다. **DEBUG**&#x200B;에서 `com.day.cq.search.impl.builder.QueryImpl`에 대한 로거를 만듭니다.
+   * `https://<host>:<port>/system/console/slinglog`(으)로 이동합니다. `com.day.cq.search.impl.builder.QueryImpl`DEBUG **에서**&#x200B;에 대한 로거를 만듭니다.
 1. 위의 클래스에 대해 DEBUG가 활성화되면 로그에 쿼리 빌더에서 생성한 XPath가 표시됩니다.
 1. 연관된 Query Builder 쿼리에 대한 로그 항목에서 XPath 쿼리를 복사합니다. 예를 들면 다음과 같습니다.
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

@@ -3,8 +3,8 @@ title: 페이지 편집기 제한 사항
 description: 페이지 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 4%

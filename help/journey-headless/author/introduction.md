@@ -4,9 +4,9 @@ description: 프로젝트 콘텐츠를 작성하는 Adobe Experience Manager as 
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
 
@@ -80,13 +80,13 @@ AEM의 경우 콘텐츠 설계자 역할(종종 다른 개인)이 데이터 모�
 
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 * AEM Headless 개발자 여정
    * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
    * [콘텐츠를 모델링하는 방법에 대해 알아보기](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

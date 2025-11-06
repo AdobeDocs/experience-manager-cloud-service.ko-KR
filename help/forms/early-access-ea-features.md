@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3068'
 ht-degree: 19%
 
 ---
@@ -177,7 +177,12 @@ AEM Forms HTML5 Forms을 사용하면 기존 XFA(XML Forms 아키텍처) 양식 
 
 AEM Forms CLI 도구를 사용하여 AEM Forms Edge Delivery Services 개발을 가속화하십시오. 이 명령줄 인터페이스를 사용하면 사용자 지정 구성 요소 개발을 시작하는 데 필요한 코드와 배선을 즉시 생성할 수 있습니다. 번거롭지 않고 번거롭지 않습니다.
 
->[!VIDEO]&#x200B;(<https://video.tv.adobe.com/v/3470514/aem-forms> 스캐폴딩-aem-custom 구성 요소 생성기-aem-forms cli-aem-forms 사용자 지정 구성 요소-aem-forms 개발 도구)
+<!--
+not sure what's going on with this video link. cleaned up version below
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+-->
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/)
 
 **주요 기능:**
 

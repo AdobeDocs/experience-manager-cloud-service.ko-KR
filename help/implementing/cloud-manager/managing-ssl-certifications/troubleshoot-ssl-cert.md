@@ -3,9 +3,9 @@ title: SSL 인증서 문제 해결
 description: 보안 연결을 유지할 수 있도록 일반적인 원인을 식별하여 SSL 인증서 문제를 해결하는 방법에 대해 알아봅니다.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 37%
@@ -60,7 +60,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >이 두 명령의 출력은 정확히 동일해야 합니다. `main/server` 인증서에 대해 일치하는 개인 키를 찾을 수 없는 경우, 새 CSR을 생성하거나 SSL 공급업체에 업데이트된 인증서를 요청하여 인증서 키를 다시 지정해야 합니다.
 
-+++
++++ 
 
 +++**클라이언트 인증서 제거**
 

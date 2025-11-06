@@ -4,9 +4,9 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는 [!DNL Adobe Experience Manager Assets]에서 자산을 관리하고 편집하는 방법에 대해 설명합니다. [!DNL Content Fragments]을(를) 관리하려면 [[!DNL Content Fragments]](content-fragments/content-fragments.md)개의 자산을 참조하십시오.
@@ -59,10 +59,10 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
    ![zip 추출](assets/zip-extraction.png)
 
->[!NOTE]
->
->* 지원되는 최대 ZIP 파일 크기는 15GB입니다.
->* 한 번에 최대 3개의 ZIP 파일을 추출할 수 있습니다.
+   >[!NOTE]
+   >
+   >* 지원되는 최대 ZIP 파일 크기는 15GB입니다.
+   >* 한 번에 최대 3개의 ZIP 파일을 추출할 수 있습니다.
 
 ## 자산 미리보기 {#previewing-assets}
 
@@ -70,7 +70,6 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
 1. Assets 사용자 인터페이스에서 미리 보려는 에셋의 위치로 이동합니다.
 1. 원하는 자산을 선택하여 엽니다.
-
 1. 미리 보기 모드에서 [지원되는 이미지 형식](/help/assets/file-format-support.md)에 대해 확대/축소 옵션을 사용할 수 있습니다(대화형 편집 사용).
 
    자산을 확대하려면 `+`을(를) 선택하거나 자산의 돋보기를 선택하십시오. 축소하려면 `-`을(를) 선택합니다. 확대하면 패닝으로 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 사용하면 원래 보기로 돌아갑니다.
@@ -80,7 +79,6 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 ## 속성 편집 {#editing-properties}
 
 1. 편집할 메타데이터가 있는 에셋의 위치로 이동합니다.
-
 1. 에셋을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택하여 에셋 속성을 확인합니다. 또는 에셋 카드에서 **[!UICONTROL 속성]** 빠른 작업을 선택하십시오.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
 1. 특정 기간 후에 자산을 비활성화하려면 **[!UICONTROL 해제 시간]** 필드 옆의 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. 비활성화 날짜는 에셋의 활성화 날짜 이후여야 합니다. [!UICONTROL 해제 시간] 이후에는 Assets 웹 인터페이스 또는 HTTP API를 통해 에셋 및 해당 표현물을 사용할 수 없습니다.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. **[!UICONTROL 태그]** 필드에서 태그를 하나 이상 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter` 키를 선택합니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다.
 
    YouTube을 게시하려면 태그가 필요하고 YouTube에 대한 링크가 있어야 합니다(적절한 링크가 있는 경우).
 
    >[!NOTE]
    >
-   > 태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
+   >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
 
 1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
-
 1. Assets 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -248,7 +246,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
-   비디오 에셋에 대한 렌디션 차원을 구성하려면 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` 위치의 CRX 저장소의 `videopicker` 노드로 이동하여 노드를 오버레이한 다음 해당 속성을 편집합니다.
+   비디오 에셋에 대한 렌디션 차원을 구성하려면 `videopicker` 위치의 CRX 저장소의 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` 노드로 이동하여 노드를 오버레이한 다음 해당 속성을 편집합니다.
 
    >[!NOTE]
    >
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
 
 **추가 참조**
 

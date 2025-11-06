@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 적응형 양식 미리 채우기, 적응형 양식 Edge Delivery Services, 적응형 양식 자동 채우기
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ ht-degree: 100%
 
 1. **만들기**&#x200B;를 클릭하여 **양식 생성** 마법사를 엽니다.
 
-   >
+   >[!NOTE]
    >
    > **데이터** 탭에서 또는 나중에 양식 속성을 편집하여 데이터 소스를 구성할 수 있습니다.
 

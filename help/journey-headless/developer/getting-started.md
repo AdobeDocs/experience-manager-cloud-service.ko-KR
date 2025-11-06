@@ -4,8 +4,8 @@ description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless �
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -148,7 +148,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 프로젝트의 범위를 명확히 정의해야 합니다. 범위는 허용 기준을 알려 주고 완료에 대한 정의를 설정할 수 있도록 합니다.
 
-첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
+첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
 
 ### 역할 및 책임 {#roles-responsibilities}
 
@@ -161,7 +161,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 관리자 {#administrator}
 
-관리자는 시스템의 기본 설정 및 구성을 담당합니다. 예를 들어 관리자는 Identity Management System(IMS)이라는 Adobe 사용자 관리 시스템 내에서 조직을 설정합니다. 관리자는 조직이 IMS 내의 Adobe에 의해 생성되면 Adobe로부터 이메일 초대를 수신하는 조직의 첫 번째 사용자입니다. 관리자는 IMS에 로그인하여 다른 담당자의 사용자를 추가할 수 있습니다.
+관리자는 시스템의 기본 설정 및 구성을 담당합니다. 예를 들어 관리자는 Identity Management System(IMS)이라는 Adobe 사용자 관리 시스템 내에서 조직을 설정합니다. 관리자는 조직이 IMS 내의 Adobe에 의해 생성되면 Adobe로부터 이메일 초대를 수신하는 조직의 첫 번째 사용자입니다. 관리자는 IMS에 로그인하여 다른 페르소나의 사용자를 추가할 수 있습니다.
 
 사용자가 관리자에 의해 구성되면 AEM Headless를 통해 경험 애플리케이션을 제공하는 기여자로서 작업을 수행하는 데 모든 AEM 리소스에 대한 액세스 권한이 부여됩니다.
 
@@ -175,7 +175,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 번역을 위한 계획 {#translation}
 
-프로젝트의 시작 부분부터 번역을 위한 계획을 수립합니다. “번역 전문가”를 번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당할 별도의 담당자로서 간주합니다.
+프로젝트의 시작 부분부터 번역을 위한 계획을 수립합니다. “번역 전문가”를 번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고, 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당하는 별도의 페르소나로 간주합니다.
 
 필요한 콘텐츠 번역에 대한 계획을 수립합니다.
 
@@ -256,13 +256,13 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 * 시간/일/월 기준 예상되는 API 호출 개수는 얼마이고 개수가 증가하고 계절성이 발생할 가능성이 있습니까?
 * 몇 명의 콘텐츠 작성자가 있습니까?
 * 몇 명의 콘텐츠 작성자가 동시에 작업할 것으로 예상합니까?
-* 콘텐츠 업데이트 주기란 무엇입니까?
+* 콘텐츠 업데이트 빈도란 무엇입니까?
 * 몇 개의 콘텐츠 모델이 필요합니까?
 * 몇 개의 모델 인스턴스가 필요합니까?
 
-#### 업데이트 주기 {#update-frequency}
+#### 업데이트 빈도 {#update-frequency}
 
-경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
+경험 섹션이 다르면 콘텐츠 업데이트 빈도가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
 
 * 특정 기간이 경과하면 특정 유형의 콘텐츠는 만료되어야 합니까?
 * 사용자별로 지정되어 캐시될 수 없는 요소가 있습니까?
@@ -285,9 +285,9 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM as a Cloud Service의 아키텍처 이해
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
-* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/ko?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
+* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
 * [작성 개념](/help/sites-cloud/authoring/author-publish.md) - 작성-게시 설정의 세부 정보가 포함된 AEM의 작성 환경을 대한 기술 설명서
 * [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - AEM에서 콘텐츠 게시에 대한 기술 설명서

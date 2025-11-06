@@ -3,9 +3,9 @@ title: 빠른 사이트 생성 및 프론트엔드 맞춤화
 description: 빠른 사이트 생성 도구가 사이트 템플릿, 테마 및 프론트엔드 파이프라인을 사용하여 새로운 사이트를 빠르게 배포하고 프론트엔드 개발을 분리하는 방법을 알아봅니다.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%

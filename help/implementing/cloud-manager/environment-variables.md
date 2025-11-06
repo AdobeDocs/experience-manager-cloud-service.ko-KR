@@ -4,11 +4,11 @@ description: 표준 환경 변수는 OSGi 구성에서 사용할 수 있도록 C
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 28%
 
 ## 환경 변수 추가 {#add-variables}
 
-Adobe 여러 변수를 추가하려면 첫 번째 변수를 추가한 다음 **환경 구성** 대화 상자에서 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **추가**&#x200B;을 사용하여 변수를 추가하는 것이 좋습니다. 이 메서드는 한 번의 업데이트로 환경에 추가할 수 있음을 의미합니다.
+여러 변수를 추가하려면 Adobe에서는 첫 번째 변수를 추가한 다음 ![환경 구성](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 대화 상자에서 **추가 아이콘** **추가**&#x200B;을 사용하여 변수를 추가하는 것이 좋습니다. 이 메서드는 한 번의 업데이트로 환경에 추가할 수 있음을 의미합니다.
 
 환경 변수를 추가, 업데이트 또는 삭제하려면 [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)의 구성원이어야 합니다.
 
@@ -48,7 +48,7 @@ Adobe 여러 변수를 추가하려면 첫 번째 변수를 추가한 다음 **�
 1. 사이드 메뉴에서 **환경**&#x200B;을 클릭합니다.
 1. **환경** 페이지에서 환경 변수를 추가할 환경이 있는 테이블의 행을 선택합니다.
 1. 환경의 세부 정보 페이지에서 **구성** 탭을 클릭합니다.
-1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**&#x200B;를 클릭합니다.
+1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**를 클릭합니다.
 환경 변수를 처음 추가하는 경우 페이지 중앙에 있는 **구성 추가**&#x200B;를 클릭합니다.
 
    ![구성 탭](assets/configuration-tab.png)
@@ -59,7 +59,7 @@ Adobe 여러 변수를 추가하려면 첫 번째 변수를 추가한 다음 **�
    | --- | --- |
    | 이름 | 구성 변수의 고유 이름입니다. 환경에서 사용되는 특정 변수를 식별합니다. 다음 명명 규칙을 준수해야 합니다.<ul><li>변수에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.</li><li>환경당 200개의 변수 제한이 있습니다.</li><li>각 이름은 100자 이하여야 합니다.</li></ul> |
    | 값 | 변수가 보유한 값입니다. |
-   | 적용된 단계 | 변수가 적용되는 서비스를 선택합니다. 모든 서비스에 변수를 적용하려면 **모두**&#x200B;를 선택하십시오.<ul><li>**모두**</li><li>**작성자**</li><li>**Publish**</li><li>**미리보기**</li></ul> |
+   | 적용된 단계 | 변수가 적용되는 서비스를 선택합니다. 모든 서비스에 변수를 적용하려면 **모두**&#x200B;를 선택하십시오.<ul><li>**모두**</li><li>**작성**</li><li>**게시**</li><li>**미리보기**</li></ul> |
    | 유형 | 변수가 일반인지 비밀인지 선택합니다. |
 
    ![변수 추가](assets/add-variable.png)
@@ -70,7 +70,7 @@ Adobe 여러 변수를 추가하려면 첫 번째 변수를 추가한 다음 **�
 
 1. **저장**&#x200B;을 클릭합니다.
 
-   **업데이트 중** 상태의 회전기가 표의 오른쪽 위 모서리에 표시됩니다. 새로 추가된 변수의 왼쪽에는 회전기가 표시됩니다. 이러한 상태는 구성이 적용되어 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 새 환경 변수가 표에 표시됩니다.
+   **업데이트 중** 상태의 회전기가 표의 오른쪽 위 모서리에 표시됩니다. 새로 추가된 변수의 왼쪽에는 회전기가 표시됩니다. 이러한 상태는 구성이 적용되어 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 새 환경 변수가 테이블에 표시됩니다.
 
 ![변수 업데이트](assets/updating-variables.png)
 
@@ -127,7 +127,7 @@ Adobe 여러 변수를 업데이트하려면 **저장**&#x200B;을 클릭하기 
 
 `${env.VARIABLE_NAME}`
 
-`pom.xml` 파일에서 두 가지 유형의 변수를 모두 사용하는 방법에 대한 예는 [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)을 참조하십시오.
+[ 파일에서 두 가지 유형의 변수를 모두 사용하는 방법에 대한 예는 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)프로젝트 설정`pom.xml`을 참조하십시오.
 
 자세한 내용은 [공식 Maven 설명서](https://maven.apache.org/settings.html#quick-overview)를 참조하십시오.
 

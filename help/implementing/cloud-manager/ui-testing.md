@@ -4,8 +4,8 @@ description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이�
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 56%
@@ -307,7 +307,7 @@ Docker 이미지는 추가 테스트 출력(예: 스크린샷 또는 비디오)�
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-UI 테스트 실행 중에 테스트 결과 아카이브가 만들어지면 `Download Details`사용자 지정 UI 테스트&#x200B;[**단계** 아래의 &#x200B;](/help/implementing/cloud-manager/deploy-code.md) 버튼을 클릭하여 Cloud Manager에서 다운로드할 수 있습니다.
+UI 테스트 실행 중에 테스트 결과 아카이브가 만들어지면 `Download Details`사용자 지정 UI 테스트&#x200B;[**단계** 아래의 ](/help/implementing/cloud-manager/deploy-code.md) 버튼을 클릭하여 Cloud Manager에서 다운로드할 수 있습니다.
 
 ### 파일 업로드 {#upload-files}
 

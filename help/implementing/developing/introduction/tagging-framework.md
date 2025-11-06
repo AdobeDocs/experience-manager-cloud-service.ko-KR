@@ -1,12 +1,12 @@
 ---
 title: AEM 태그 지정 프레임워크
-description: 콘텐츠에 태그를 지정하고 AEM 태깅 인프라를 사용하여 분류 및 구성합니다.
+description: 컨텐츠에 태그를 지정하고 AEM 태깅 인프라를 사용하여 분류하고 구성합니다.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,17 @@ ht-degree: 0%
 * 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md)을 참조하세요.
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 관리자 관점의 태그 관리를 참조하십시오.
 
-이 문서에서는 AEM에서 태그 지정을 지원하는 기본 프레임워크와 개발자로 사용하는 방법에 대해 중점적으로 다룹니다.
+이 문서에서는 AEM에서 태그 지정을 지원하는 기본 프레임워크와 개발자로 사용하는 방법에 중점을 둡니다.
 
 ## 소개 {#introduction}
 
 콘텐츠에 태그를 지정하고 AEM 태그 지정 인프라를 사용하려면 다음을 수행하십시오.
 
-* 태그는 [분류 루트 노드](#taxonomy-root-node) 아래에 [`cq:Tag`](#cq-tag-node-type) 유형의 노드로 있어야 합니다.
+* 태그는 [`cq:Tag`](#cq-tag-node-type)분류 루트 노드[ 아래에 ](#taxonomy-root-node) 유형의 노드로 있어야 합니다.
 * 태그가 지정된 콘텐츠 노드 `NodeType`에 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin이 포함되어야 합니다.
 * [`TagID`](#tagid)이(가) 콘텐츠 노드의 [`cq:tags`](#cq-tags-property) 속성에 추가되고 [`cq:Tag`](#cq-tag-node-type) 유형의 노드로 확인됩니다.
 
-## cq:태그 노드 유형 {#cq-tag-node-type}
+## cq:Tag 노드 유형 {#cq-tag-node-type}
 
 태그의 선언은 `cq:Tag.` 유형의 노드에서 리포지토리에 캡처됩니다.
 
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 `TagID`은(는) 저장소의 태그 노드로 확인되는 경로를 식별합니다.
 
-일반적으로 `TagID`은(는) 네임스페이스로 시작하는 축약 `TagID`이거나 [분류 루트 노드](#taxonomy-root-node)에서 시작하는 절대 `TagID`일 수 있습니다.
+일반적으로 `TagID`은(는) 네임스페이스로 시작하는 축약 `TagID`이거나 `TagID`분류 루트 노드[에서 시작하는 절대 ](#taxonomy-root-node)일 수 있습니다.
 
 컨텐츠에 태그를 지정할 때 아직 없으면 [`cq:tags`](#cq-tags-property) 속성이 컨텐츠 노드에 추가되고 `TagID`이(가) 속성의 `String` 배열 값에 추가됩니다.
 
-`TagID`은(는) [네임스페이스](#tag-namespace) 다음에 로컬 `TagID`이(가) 옵니다. [컨테이너 태그](#container-tags)에는 분류법의 계층 순서를 나타내는 하위 태그가 있습니다. 하위 태그를 사용하여 모든 로컬 `TagID`과(와) 동일한 태그를 참조할 수 있습니다. 예를 들어 `fruit/apple` 및 `fruit/banana`과(와) 같은 하위 태그가 있는 컨테이너 태그인 경우에도 콘텐츠에 `fruit`을(를) 사용하여 태그를 지정할 수 있습니다.
+`TagID`은(는) [네임스페이스](#tag-namespace) 다음에 로컬 `TagID`이(가) 옵니다. [컨테이너 태그](#container-tags)에는 분류법의 계층 순서를 나타내는 하위 태그가 있습니다. 하위 태그를 사용하여 모든 로컬 `TagID`과(와) 동일한 태그를 참조할 수 있습니다. 예를 들어 `fruit` 및 `fruit/apple`과(와) 같은 하위 태그가 있는 컨테이너 태그인 경우에도 콘텐츠에 `fruit/banana`을(를) 사용하여 태그를 지정할 수 있습니다.
 
 ### 분류 루트 노드 {#taxonomy-root-node}
 
@@ -115,20 +115,20 @@ AEM에서 기본 경로는 `/content/cq:tags`이고 루트 노드는 `cq:Folder`
 
 * `tag-administrators` 그룹/역할에 모든 네임스페이스에 대한 쓰기 액세스 권한을 허용합니다(`/content/cq:tags` 아래 추가/수정). 이 그룹은 AEM과 함께 제공됩니다.
 * 사용자/작성자가 읽을 수 있어야 하는 모든 네임스페이스(대부분 모든 네임스페이스)에 대한 읽기 액세스를 허용합니다.
-* 사용자/작성자가 태그를 사용자/작성자가 자유롭게 정의할 수 있는 네임스페이스에 대한 쓰기 액세스 권한을 사용자/작성자(`/content/cq:tags/some_namespace`의 `add_node`)에게 부여합니다.
+* 사용자/작성자가 태그를 사용자/작성자가 자유롭게 정의할 수 있는 네임스페이스에 대한 쓰기 액세스 권한을 사용자/작성자(`add_node`의 `/content/cq:tags/some_namespace`)에게 부여합니다.
 
-## 태그 지정 가능 콘텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 태그 지정 가능한 콘텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 응용 프로그램 개발자가 콘텐츠 형식에 태깅을 첨부하려면 노드의 등록([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))에 `cq:Taggable` mixin 또는 `cq:OwnerTaggable` mixin이 포함되어야 합니다.
 
-`cq:Taggable`에서 상속되는 `cq:OwnerTaggable` mixin은 소유자/작성자가 콘텐츠를 분류할 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 특성만 사용합니다. 태그 지정 프레임워크에 `cq:OwnerTaggable` mixin이 필요하지 않습니다.
+`cq:OwnerTaggable`에서 상속되는 `cq:Taggable` mixin은 소유자/작성자가 콘텐츠를 분류할 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 특성만 사용합니다. 태그 지정 프레임워크에 `cq:OwnerTaggable` mixin이 필요하지 않습니다.
 
 >[!NOTE]
 >
->집계된 콘텐츠 항목의 최상위 노드(또는 `jcr:content` 노드)에서만 태그를 활성화하는 것이 좋습니다. 예를 들면 다음과 같습니다.
+>집계된 콘텐츠 항목의 최상위 노드(또는 `jcr:content` 노드)에서만 태그를 활성화하는 것이 좋습니다. 해당 예는 다음과 같습니다.
 >
->* `jcr:content`노드가 `cq:Taggable` mixin을 포함하는 유형 `cq:PageContent`인 페이지(`cq:Page`)입니다.
->* `jcr:content/metadata` 노드에 항상 `cq:Taggable` mixin이 있는 Assets(`cq:Asset`).
+>* `cq:Page`노드가 `jcr:content` mixin을 포함하는 유형 `cq:PageContent`인 페이지(`cq:Taggable`)입니다.
+>* `cq:Asset` 노드에 항상 `jcr:content/metadata` mixin이 있는 Assets(`cq:Taggable`).
 
 ### 노드 유형 표기법(CND) {#node-type-notation-cnd}
 
@@ -153,7 +153,7 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
 
 ## cq:tags 속성 {#cq-tags-property}
 
-`cq:tags` 속성은 작성자 또는 사이트 방문자가 콘텐츠에 적용할 때 하나 이상의 `TagID`을(를) 저장하는 데 사용되는 `String` 배열입니다. 속성은 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin으로 정의된 노드에 추가되는 경우에만 의미가 있습니다.
+`cq:tags` 속성은 작성자 또는 사이트 방문자가 콘텐츠에 적용할 때 하나 이상의 `String`을(를) 저장하는 데 사용되는 `TagID` 배열입니다. 속성은 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin으로 정의된 노드에 추가되는 경우에만 의미가 있습니다.
 
 >[!NOTE]
 >

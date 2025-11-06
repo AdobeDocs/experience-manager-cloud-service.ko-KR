@@ -3,8 +3,8 @@ title: ContextHub 확장
 description: 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사항을 충족하지 못할 경우 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.Persisted
 
 ### ContextHub 저장소 후보 등록 {#registering-a-contexthub-store-candidate}
 
-ContextHub 프레임워크와 통합할 저장소 후보를 등록하고 이를 통해 저장소를 만들 수 있습니다. 저장소 후보를 등록하려면 `ContextHub.Utils.storeCandidates` 클래스의 [`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 함수를 사용합니다.
+ContextHub 프레임워크와 통합할 저장소 후보를 등록하고 이를 통해 저장소를 만들 수 있습니다. 저장소 후보를 등록하려면 [`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 클래스의 `ContextHub.Utils.storeCandidates` 함수를 사용합니다.
 
 스토어 후보를 등록할 때 스토어 유형의 이름을 입력합니다. 후보에서 스토어를 생성할 때 스토어 유형을 사용하여 기준이 되는 후보를 식별합니다.
 
@@ -71,7 +71,7 @@ UI 모듈 렌더러를 만들려면 UI 모듈을 렌더링하는 논리를 포�
 * `ContextHub.UI.BaseModuleRenderer` 클래스를 확장합니다. 이 클래스는 모든 UI 모듈 렌더러에 대한 기본 구현입니다. `Class` 개체는 이 클래스의 이름을 확장 중인 클래스로 지정하는 데 사용하는 `extend` 속성을 정의합니다.
 * 기본 구성을 제공합니다. `defaultConfig` 속성을 만듭니다. 이 속성은 [`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) UI 모듈에 대해 정의된 속성과 필요한 기타 속성을 포함하는 개체입니다.
 
-`ContextHub.UI.BaseModuleRenderer`의 원본이 `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`에 있습니다.  렌더러를 등록하려면 `ContextHub.UI` 클래스의 [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) 메서드를 사용합니다. 모듈 유형의 이름을 제공해야 합니다. 관리자는 이 렌더러를 기반으로 UI 모듈을 만들 때 이 이름을 지정합니다.
+`ContextHub.UI.BaseModuleRenderer`의 원본이 `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`에 있습니다.  렌더러를 등록하려면 [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) 클래스의 `ContextHub.UI` 메서드를 사용합니다. 모듈 유형의 이름을 제공해야 합니다. 관리자는 이 렌더러를 기반으로 UI 모듈을 만들 때 이 이름을 지정합니다.
 
 자체 실행 익명 함수에서 렌더러 클래스를 만들고 등록합니다. 다음 예제는 `contexthub.browserinfo` UI 모듈에 대한 소스 코드를 기반으로 합니다. 이 UI 모듈은 `ContextHub.UI.BaseModuleRenderer` 클래스의 간단한 확장입니다.
 
@@ -106,4 +106,4 @@ UI 모듈 렌더러를 만들려면 UI 모듈을 렌더링하는 논리를 포�
 contexthub.module.[moduleType]
 ```
 
-범주의 `[moduleType]` 부분은 모듈 렌더러가 등록된 `moduleType`입니다. 예를 들어 `contexthub.browserinfo`의 `moduleType`에 대해 클라이언트 라이브러리 폴더의 범주는 `contexthub.module.contexthub.browserinfo`이어야 합니다.
+범주의 `[moduleType]` 부분은 모듈 렌더러가 등록된 `moduleType`입니다. 예를 들어 `moduleType`의 `contexthub.browserinfo`에 대해 클라이언트 라이브러리 폴더의 범주는 `contexthub.module.contexthub.browserinfo`이어야 합니다.

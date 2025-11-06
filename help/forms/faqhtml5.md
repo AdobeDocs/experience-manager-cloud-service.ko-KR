@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에 대한 FAQ
+title: HTML5 양식에 대해 자주 묻는 질문 (FAQ)
 description: 레이아웃, 스크립팅 지원 및 HTML5 양식 범위에 대한 FAQ.
 contentOwner: robhagat
 content-type: reference
@@ -10,15 +10,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
 
 
-# HTML5 양식에 대한 FAQ{#frequently-asked-questions-faq-for-html-forms}
+# HTML5 양식에 대해 자주 묻는 질문 (FAQ){#frequently-asked-questions-faq-for-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
@@ -216,7 +216,7 @@ ht-degree: 0%
 
 1. HTML5 Forms는 초기화 스크립트 및 양식 준비 이벤트를 여러 번 실행합니까?
 
-   답변: 예. 초기화 스크립트 및 양식 준비 이벤트는 서버에서 한 번 이상, 클라이언트측에서 한 번 이상 여러 번 실행됩니다. 데이터 및 idempotent(데이터가 동일한 경우)의 상태에 따라 작업이 수행되도록 일부 비즈니스 논리(양식 또는 필드 데이터)를 기반으로 초기화 또는 양식:준비 이벤트와 같은 스크립트를 작성하는 것이 좋습니다.
+   답변: 예. 초기화 스크립트 및 양식 준비 이벤트는 서버에서 한 번 이상, 클라이언트측에서 한 번 이상 여러 번 실행됩니다. 데이터의 상태와 idempotent(데이터가 동일한 경우)를 기반으로 작업을 수행하도록 일부 비즈니스 논리(양식 또는 필드 데이터)를 기반으로 초기화 또는 양식:ready 이벤트와 같은 스크립트를 작성하는 것이 좋습니다.
 
 ### XDP 디자인 {#designing-xdp}
 

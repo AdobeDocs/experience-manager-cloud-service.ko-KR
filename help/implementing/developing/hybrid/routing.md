@@ -3,12 +3,12 @@ title: SPA 모델 라우팅
 description: AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당합니다. 이 문서에서는 경로지정 메커니즘, 계약 및 사용 가능한 옵션에 대해 설명합니다.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 
 ## 수동 및 자동 모델 라우팅 {#manual-vs-automatic-model-routing}
 
-`ModelRouter`은(는) 모델 조각의 가져오기를 자동화합니다. 그러나 모든 자동화된 툴은 제한 사항이 있습니다. 필요한 경우 메타 속성을 사용하여 경로를 무시하도록 `ModelRouter`을(를) 비활성화하거나 구성할 수 있습니다([SPA 페이지 구성 요소](page-component.md) 문서의 메타 속성 섹션 참조). 그러면 프론트엔드 개발자는 `getData()` 함수를 사용하여 지정된 모델의 조각을 로드하도록 `PageModelManager`에 요청하여 자체 모델 라우팅 계층을 구현할 수 있습니다.
+`ModelRouter`은(는) 모델 조각의 가져오기를 자동화합니다. 그러나 모든 자동화된 툴은 제한 사항이 있습니다. 필요한 경우 메타 속성을 사용하여 경로를 무시하도록 `ModelRouter`을(를) 비활성화하거나 구성할 수 있습니다([SPA 페이지 구성 요소](page-component.md) 문서의 Meta 속성 섹션 참조). 그러면 프론트엔드 개발자는 `PageModelManager` 함수를 사용하여 지정된 모델의 조각을 로드하도록 `getData()`에 요청하여 자체 모델 라우팅 계층을 구현할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-경로를 선택하면 `PageModelManager`이(가) 자동으로 해당 페이지 모델을 로드하려고 하므로 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `/content/mysite/mypage"`)에 해당해야 합니다. 그러나 필요한 경우 SPA는 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
+경로를 선택하면 `/content/mysite/mypage"`이(가) 자동으로 해당 페이지 모델을 로드하려고 하므로 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `PageModelManager`)에 해당해야 합니다. 그러나 필요한 경우 SPA는 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

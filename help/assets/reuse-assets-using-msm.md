@@ -3,10 +3,10 @@ title: MSM을 사용하여 자산 재사용
 description: 상위 에셋에서 파생되고 연결된 여러 페이지/폴더에서 에셋을 사용합니다. 자산은 기본 복사본과 동기화 상태를 유지하며, 몇 번의 클릭만으로 상위 자산으로부터 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3407'
 ht-degree: 11%
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager]의 MSM(다중 사이트 관리자) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. [!DNL Assets]에 대해 MSM이라는 이름의 디지털 에셋에 동일한 기능을 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하여 다음을 수행할 수 있습니다.
@@ -34,7 +34,7 @@ ht-degree: 11%
 >
 >콘텐츠 조각용 MSM은 **[!UICONTROL Assets]** 콘솔을 통해 콘텐츠 조각을 사용하는 경우에만 사용할 수 있습니다.
 >
->MSM 기능은 **[!UICONTROL 콘텐츠 조각]** 콘솔을 사용할 때 *사용할 수 없습니다*.
+>MSM 기능은 *콘텐츠 조각* 콘솔을 사용할 때 **[!UICONTROL 사용할 수 없습니다]**.
 
 ## MSM의 이점 및 개념 이해 {#concepts}
 

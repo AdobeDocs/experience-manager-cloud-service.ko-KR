@@ -1,11 +1,11 @@
 ---
 title: 콘텐츠 조각 - 설정
-description: AEM Headless 게재 기능 및 페이지 작성에 사용할 기능인 콘텐츠 조각 및 GraphQL을 활성화하는 방법을 알아봅니다.
+description: AEM Headless 전달 기능 및 페이지 작성에 사용할 기능인 컨텐츠 조각 및 GraphQL을 활성화하는 방법을 알아봅니다.
 feature: Content Fragments
-role: Developer, Architect
+role: Developer
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 95%
@@ -59,7 +59,7 @@ Adobe Experience Manager(AEM) as a Cloud Service 내의 콘텐츠 조각을 통�
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
-   1. 생성 시 **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+   1. 생성 시 **이름**은 저장소의 노드 이름이 됩니다.
 이름을 입력할 수 있습니다. 필드를 비워두면 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다. 필요한 경우 결과를 조정할 수 있습니다.
    1. 사용을 활성화하려면 다음을 선택합니다.
       * **콘텐츠 조각 모델**

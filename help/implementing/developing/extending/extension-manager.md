@@ -2,16 +2,16 @@
 title: Adobe Experience Manager as a Cloud Service의 Extension Manager에 대해 알아보기
 description: AEM의 Extension Manager을 사용하면 개발자와 실무자가 App Builder으로 빌드된 확장을 사용하여 AEM의 기능을 향상시킬 수 있습니다.
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d69112c5a1dd2256ed38b2cd01c84583f587912
+role: Admin, Developer
+exl-id: 8bc58d13-3c0f-4b09-a95a-f745114ceda1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
-
-# 확장 및 Extension Manager {#extensions-and-the-extension-manager}
+# 확장 기능 및 Extension Manager {#extensions-and-the-extension-manager}
 
 Adobe Experience Manager(AEM) as a Cloud Service의 Extension Manager을 사용하면 개발자와 실무자가 Adobe App Builder으로 빌드된 UI 확장을 사용하여 AEM의 기능을 향상시킬 수 있습니다.
 

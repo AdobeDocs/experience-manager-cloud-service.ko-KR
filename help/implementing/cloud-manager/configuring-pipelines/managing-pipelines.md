@@ -5,8 +5,8 @@ index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 42%
@@ -51,7 +51,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. **파이프라인** 페이지에서 **파이프라인 카드**&#x200B;에서와 같이 프로그램에 대한 모든 파이프라인 목록을 보고 파이프라인 실행을 시작 및 중지할 수 있습니다.
 
-파이프라인이 실행 중인 경우 **상태** 열의 ![정보 - 보통 아이콘](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)을 클릭하여 실행에 대한 세부 정보가 포함된 팝업을 표시합니다. 팝업에서 **세부 정보 보기**&#x200B;를 클릭하여 [파이프라인 실행에 대한 세부 정보를 봅니다](#view-details).
+파이프라인이 실행 중인 경우 ![상태](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) 열의 **정보 - 보통 아이콘**&#x200B;을 클릭하여 실행에 대한 세부 정보가 포함된 팝업을 표시합니다. 팝업에서 **세부 정보 보기**&#x200B;를 클릭하여 [파이프라인 실행에 대한 세부 정보를 봅니다](#view-details).
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
@@ -83,7 +83,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. **활동** 페이지에서 현재 및 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
-파이프라인이 실행 중인 경우 **상태** 열에서 ![정보 - 보통 아이콘](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)을 클릭하여 실행 정보를 보여주는 팝업을 표시할 수 있습니다.
+파이프라인이 실행 중인 경우 ![상태](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) 열에서 **정보 - 보통 아이콘**&#x200B;을 클릭하여 실행 정보를 보여주는 팝업을 표시할 수 있습니다.
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
@@ -116,7 +116,7 @@ Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 
 **여러 파이프라인을 실행하는 방법은 다음과 같습니다.**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
-1. 왼쪽 메뉴에서 ![워크플로 아이콘 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 ![워크플로 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인**&#x200B;을 클릭합니다.
 1. **파이프라인** 페이지의 테이블에서 실행하려는 파이프라인 옆에 있는 확인란을 선택합니다.
 필요한 경우 ![필터 아이콘(깔때기)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **필터**&#x200B;를 클릭하여 파이프라인을 이름, 환경, 배포된 코드 유형 또는 이 세 가지의 조합에 따라 정렬합니다.
 1. 페이지의 오른쪽 상단에서 **선택 항목 실행(x)**&#x200B;을 클릭합니다.
@@ -205,7 +205,7 @@ Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 프로그램 개요 페이지에서 **파이프라인** 카드에서 취소할 파이프라인의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. 프로그램 개요 페이지에서 ![파이프라인](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 카드에서 취소할 파이프라인의 **줄임표 - 자세히 아이콘**&#x200B;을 클릭합니다.
 
    ![파이프라인 취소](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
@@ -215,7 +215,7 @@ Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 ![파이프라인 탭 - 워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인** 탭으로 이동하여 취소할 파이프라인을 선택합니다.
+1. ![프로그램 개요](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) 페이지에서 **파이프라인 탭 - 워크플로 아이콘** **파이프라인** 탭으로 이동하여 취소할 파이프라인을 선택합니다.
 
    실행 중인 파이프라인의 세부 정보 페이지로 이동합니다.
 

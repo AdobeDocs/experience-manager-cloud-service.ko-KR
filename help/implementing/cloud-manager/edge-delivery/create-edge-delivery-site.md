@@ -2,10 +2,10 @@
 title: 클릭 한 번으로 첫 Edge Delivery Site 만들기
 description: 버튼 클릭만으로 Cloud Manager에서 Edge Delivery Site를 빠르게 만드는 방법에 대해 알아보십시오.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 100%
 

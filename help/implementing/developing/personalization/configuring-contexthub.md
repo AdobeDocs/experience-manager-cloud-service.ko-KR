@@ -3,8 +3,8 @@ title: ContextHub 구성
 description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크인 Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -151,7 +151,7 @@ AEM은 스토어의 기반이 될 수 있는 다음과 같은 샘플 스토어 �
 
 contexthub.generic-jsonp 샘플 저장소 후보를 사용하면 JSON 데이터를 반환하는 웹 서비스 또는 JSONP 서비스에서 데이터를 검색할 수 있습니다. 이 저장소 후보의 경우 저장소 구성을 사용하여 사용할 JSONP 서비스에 대한 세부 정보를 제공합니다.
 
-[&#x200B; JavaScript 클래스의 &#x200B;](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore` 함수는 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. `config` 개체에 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 있습니다. 저장소를 구성하려면 JSON 형식의 `service` 개체를 Detail Configuration 속성에 대한 값으로 제공합니다.
+[ JavaScript 클래스의 ](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore` 함수는 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. `config` 개체에 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 있습니다. 저장소를 구성하려면 JSON 형식의 `service` 개체를 Detail Configuration 속성에 대한 값으로 제공합니다.
 
 jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다음 속성을 사용하여 [ContextHub 저장소 만들기](#creating-a-contexthub-store)의 절차를 사용하십시오.
 

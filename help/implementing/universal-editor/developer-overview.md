@@ -3,9 +3,9 @@ title: AEM 개발자를 위한 범용 편집기 개요
 description: 범용 편집기의 작동 방식과 프로젝트에서의 사용 방법에 관심이 있는 AEM 개발자를 위해, 이 문서는 WKND 프로젝트를 범용 편집기에서 작동하도록 계측하는 과정을 안내하여 포괄적인 소개를 제공합니다.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 이 개요를 따라가려면 다음 사항을 사용할 수 있어야 합니다.
 
-* [AEM as a Cloud Service의 로컬 개발 인스턴스](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)
-   * 로컬 개발 인스턴스는 [`localhost`에서 개발 목적으로 HTTPS로 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ko)되어야 합니다.
+* [AEM as a Cloud Service의 로컬 개발 인스턴스](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+   * 로컬 개발 인스턴스는 [`localhost`에서 개발 목적으로 HTTPS로 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)되어야 합니다.
    * [WKND 데모 사이트가 설치되어 있어야 합니다](https://github.com/adobe/aem-guides-wknd).
 * [범용 편집기에 대한 액세스 권한](/help/implementing/universal-editor/getting-started.md#onboarding)
 * 개발 목적으로 실행되는 [로컬 범용 편집기 서비스](/help/implementing/universal-editor/local-dev.md)

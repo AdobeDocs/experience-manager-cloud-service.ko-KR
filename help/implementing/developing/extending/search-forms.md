@@ -3,8 +3,8 @@ title: 검색 양식 구성
 description: Adobe Experience Manager as a Cloud Service에 대해 Forms 검색을 구성하는 중입니다.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites-cloud/authoring/search.md) 메커니즘이 포함되어 있습니다.
 
-이와 함께 콘텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 여기에는 필요한 리소스로 빠르게 드릴다운할 수 있도록 **수정된 날짜**, **Publish 상태** 또는 **라이브 카피 상태**&#x200B;와 같은 미리 정의된 패싯이 있습니다.
+이와 함께 콘텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 여기에는 필요한 리소스로 빠르게 드릴다운할 수 있도록 **수정된 날짜**, **게시 상태** 또는 **라이브 카피 상태**&#x200B;와 같은 미리 정의된 패싯이 있습니다.
 
 ![검색 및 필터 사용](assets/csf-usage.png)
 
@@ -79,7 +79,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
  <tbody>
   <tr>
    <th>조건자</th>
-   <th>용도</th>
+   <th>목적</th>
    <th>설정</th>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
     <ul>
      <li>그룹</li>
      <li>범위</li>
-     <li>옵션</li>
+     <li>선택 사항</li>
     </ul> 
    </td>
   </tr>
@@ -288,7 +288,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>Publish 속성 이름*</li>
+     <li>게시 속성 이름*</li>
      <li>잠긴 페이지 속성 이름*</li>
      <li>설명</li>
     </ul> </td>
@@ -339,7 +339,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    </td>
   </tr>
   <tr>
-   <td>Publish 상태</td>
+   <td>게시 상태</td>
    <td>게시 상태에 따라 리소스를 필터링합니다.</td>
    <td>
     <ul>
@@ -511,7 +511,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
   검색할 속성입니다. 상대 경로를 사용하며 와일드카드 `*/*/*`은(는) `jcr:content` 노드에 상대적인 속성의 깊이를 지정합니다(각 별표는 하나의 노드 수준을 나타냄).
 
-  `jcr:content` 노드에 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`을(를) 사용하십시오.
+  `x` 노드에 `jcr:content` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`을(를) 사용하십시오.
 
 * **속성 깊이**
 
@@ -544,7 +544,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 * **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
-* **설정** 탭의 필드 레이블에 있는 &ast;는 필드가 필수임을 의미하며 비워 두면 오류 메시지가 나타납니다.
+* **설정** 탭의 필드 레이블에 있는 &amp;ast;는 필드가 필수임을 의미하며 비워 두면 오류 메시지가 나타납니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 
@@ -647,13 +647,13 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    >[!NOTE]
    >
-   >***은(는) `/libs` 경로에서 아무 것도 변경하지 말아야***&#x200B;합니다.
+   >***은(는)*** 경로에서 아무 것도 변경하지 말아야`/libs`합니다.
    >
    >이는 다음에 인스턴스를 업그레이드할 때 `/libs`의 콘텐츠가 덮어쓰기되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수도 있음).
    >
    >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   >1. 필요한 항목이 `/apps` 아래 `/libs`에 존재하므로 다시 만드십시오. 이 경우 다음에서:
+   >1. 필요한 항목이 `/libs` 아래 `/apps`에 존재하므로 다시 만드십시오. 이 경우 다음에서:
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. `/apps.` 내에서 변경
 

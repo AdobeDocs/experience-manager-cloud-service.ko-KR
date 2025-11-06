@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 9%
@@ -190,7 +190,7 @@ ht-degree: 9%
 
 1. From search, you can Select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 집합의 경우 검색 쿼리는 `Contains` 검색 조건을 사용하는 Experience Manager 검색과 다른 `Starts with` 검색 조건을 사용하여 수행됩니다. 필터를 **[!UICONTROL 집합]**(으)로 설정하는 것만이 자동화된 집합을 검색하는 유일한 방법입니다.
+   UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 집합의 경우 검색 쿼리는 `Starts with` 검색 조건을 사용하는 Experience Manager 검색과 다른 `Contains` 검색 조건을 사용하여 수행됩니다. 필터를 **[!UICONTROL 집합]**(으)로 설정하는 것만이 자동화된 집합을 검색하는 유일한 방법입니다.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -217,7 +217,7 @@ ht-degree: 9%
 
    * 이미지 순서를 조정하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 조정 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 선택합니다.
-   * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 자산으로 이동하여 선택한 다음 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+   * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 자산으로 이동하여 선택한 다음 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**을 선택합니다.
 Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 [사전 설정] 아이콘을 선택하고 사전 설정을 선택합니다.

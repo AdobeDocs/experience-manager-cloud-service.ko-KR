@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 - 삭제 고려 사항
 description: AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 콘텐츠 조각은 Headless 콘텐츠를 제공하기 위한 강력한 도구이며 콘텐츠 조각 삭제가 가져오는 영향을 신중하게 고려해야 합니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 92%

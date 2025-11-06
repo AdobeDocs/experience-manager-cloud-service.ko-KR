@@ -5,15 +5,15 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 2%
 
 ---
 
-# 리치 텍스트 편집기 플러그인 구성 {#configure-the-rich-text-editor-plug-ins}
+# 서식 있는 텍스트 편집기 플러그인 구성 {#configure-the-rich-text-editor-plug-ins}
 
 RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 사용할 수 있습니다. 하나 이상의 RTE 기능을 활성화하거나 비활성화하도록 기능 속성을 구성할 수 있습니다. 이 문서에서는 RTE 플러그인을 구체적으로 구성하는 방법에 대해 설명합니다.
 
@@ -21,7 +21,7 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 사용할
 
 >[!NOTE]
 >
->CRXDE Lite 작업을 할 때는 [!UICONTROL 모두 저장] 옵션을 사용하여 변경 사항을 정기적으로 저장하는 것이 좋습니다.
+>CRXDE Lite으로 작업할 때는 [!UICONTROL 모두 저장] 옵션을 사용하여 변경 사항을 정기적으로 저장하는 것이 좋습니다.
 
 ## 플러그인 활성화 및 기능 속성 구성 {#activateplugin}
 
@@ -33,7 +33,7 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 사용할
 >
 >이 문서에서 중복을 방지하기 위해 각 `rtePlugins` 노드를 `<rtePlugins-node>`(으)로 참조합니다.
 
-1. CRXDE Lite을 사용하여 프로젝트의 텍스트 구성 요소를 찾습니다.
+1. CRXDE Lite에서 프로젝트의 텍스트 구성 요소를 찾습니다.
 1. RTE 플러그인을 구성하기 전에 `<rtePlugins-node>`의 부모 노드가 없는 경우 만듭니다.
 
    * 구성 요소에 따라 상위 노드는 다음과 같습니다.
@@ -64,7 +64,7 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 사용할
 | | 모든 기능 활성화 | 몇 가지 특정 기능을 활성화합니다. | 모든 기능을 비활성화합니다. |
 |---|---|---|---|
 | 이름 | 기능 | 기능 | 기능 |
-| 유형 | 문자열 | `String`(다중 문자열. Type을 `String`(으)로 설정하고 CRXDE Lite에서 `Multi` 클릭) | 문자열 |
+| 유형 | 문자열 | `String`(다중 문자열. CRXDE Lite에서 Type을 `String`(으)로 설정하고 `Multi` 클릭) | 문자열 |
 | 값 | `*`(별표) | 하나 이상의 피쳐 값으로 설정합니다. | - |
 
 ## findreplace 플러그인 이해 {#findreplace}
@@ -99,7 +99,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
 1. 구성 요소로 이동합니다(예: `/apps/<myProject>/components/text`).
 1. `rtePlugins/edit` 노드로 이동합니다. 노드가 없으면 [플러그 인 활성화](#activateplugin)를 참조하십시오.
-1. `edit` 노드에 `features` 속성을 만들고 하나 이상의 기능을 추가합니다. 모든 변경 사항을 저장합니다.
+1. `features` 노드에 `edit` 속성을 만들고 하나 이상의 기능을 추가합니다. 모든 변경 사항을 저장합니다.
 
 ### 붙여넣기(Ctrl+V) 아이콘과 바로 가기의 비헤이비어 구성 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
@@ -122,7 +122,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
 ### 콘텐츠를 붙여넣을 때 허용되는 형식 구성 {#pasteformats}
 
-[!DNL Microsoft Word]과(와) 같은 다른 프로그램에서 [!DNL Experience Manager]에 붙여넣을 때 몇 가지 스타일을 명시적으로 허용하도록 Microsoft-Word로 붙여넣기(`paste-wordhtml`) 모드를 추가로 구성할 수 있습니다.
+`paste-wordhtml`과(와) 같은 다른 프로그램에서 [!DNL Experience Manager]에 붙여넣을 때 몇 가지 스타일을 명시적으로 허용하도록 Microsoft-Word로 붙여넣기([!DNL Microsoft Word]) 모드를 추가로 구성할 수 있습니다.
 
 예를 들어 [!DNL Experience Manager]에서 붙여넣을 때 굵은 서식과 목록만 허용해야 하는 경우 다른 서식을 필터링할 수 있습니다. 이를 구성 가능한 붙여넣기 필터링이라고 하며, 두 작업 모두에 대해 수행할 수 있습니다.
 
@@ -134,7 +134,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 다른 프로그램에서 텍스트를 [!DNL Experience Manager]에 붙여넣을 때 허용되는 형식을 구성하려면 다음 작업을 수행하십시오.
 
 1. 구성 요소에서 `<rtePlugins-node>/edit` 노드로 이동합니다. 노드가 없는 경우 노드를 만듭니다. 자세한 내용은 [플러그 인 활성화](#activateplugin)를 참조하세요.
-1. `edit` 노드 아래에 노드를 만들어 HTML 붙여넣기 규칙을 유지합니다.
+1. `edit` 노드 아래에 HTML 붙여넣기 규칙을 보관할 노드를 만드십시오.
 
    * **이름** `htmlPasteRules`
    * **유형** `nt:unstructured`
@@ -193,7 +193,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
 ## 텍스트 스타일 구성 {#textstyles}
 
-작성자는 스타일을 적용하여 텍스트 부분의 모양을 변경할 수 있습니다. 스타일은 CSS 스타일 시트에서 사전 정의한 CSS 클래스를 기반으로 합니다. CSS 클래스를 참조할 수 있도록 `class` 특성을 사용하여 `span` 태그로 스타일이 지정된 콘텐츠가 묶여 있습니다. 예:
+작성자는 스타일을 적용하여 텍스트 부분의 모양을 변경할 수 있습니다. 스타일은 CSS 스타일 시트에서 사전 정의한 CSS 클래스를 기반으로 합니다. CSS 클래스를 참조할 수 있도록 `span` 특성을 사용하여 `class` 태그로 스타일이 지정된 콘텐츠가 묶여 있습니다. 예:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -214,7 +214,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 이 작업은 스타일 플러그인을 활성화하여 수행됩니다.
 
 1. 구성 요소에서 `<rtePlugins-node>/styles` 노드로 이동합니다. 노드가 없는 경우 노드를 만듭니다. 자세한 내용은 [플러그 인 활성화](#activateplugin)를 참조하세요.
-1. `styles` 노드에서 `features` 속성을 만듭니다.
+1. `features` 노드에서 `styles` 속성을 만듭니다.
 
    * **이름** `features`
    * **유형** `String`
@@ -231,7 +231,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 그런 다음 참조할 스타일 시트의 위치를 지정합니다.
 
 1. 텍스트 구성 요소의 루트 노드(예: `/apps/<myProject>/components/text`)로 이동합니다.
-1. `<rtePlugins-node>`의 부모 노드에 `externalStyleSheets` 속성을 추가하십시오.
+1. `externalStyleSheets`의 부모 노드에 `<rtePlugins-node>` 속성을 추가하십시오.
 
    * **이름** `externalStyleSheets`
    * **유형** `String[]`(다중 문자열; CRXDE에서 **다중** 클릭)
@@ -261,7 +261,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
 ### 팝업 목록에서 사용 가능한 스타일 지정 {#stylesindropdown}
 
-1. [스타일 드롭다운 선택기 사용](#styleselectorlist)에서 만든 대로 구성 요소 정의에서 `<rtePlugins-node>/styles` 노드로 이동합니다.
+1. `<rtePlugins-node>/styles`스타일 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 ](#styleselectorlist) 노드로 이동합니다.
 1. `styles` 노드 아래에서 사용 가능한 목록을 보유할 노드(`styles`)를 만듭니다.
 
    * **이름** `styles`
@@ -276,7 +276,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
    * **이름** `cssName`
    * **유형** `String`
-   * **값** CSS 클래스의 이름(앞에 &#39;.&#39;가 없음); 예: `.cssClass` 대신 `cssClass`)
+   * **값** CSS 클래스의 이름(앞에 &#39;.&#39;가 없음); 예: `cssClass` 대신 `.cssClass`)
 
 1. 속성 `text`을(를) 같은 노드에 추가합니다. 이렇게 하면 선택 상자에 표시되는 텍스트가 정의됩니다.
 
@@ -345,7 +345,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치됩니다. 기�
 `paraformat` 플러그인을 활성화하려면 다음 단계를 수행합니다.
 
 1. 구성 요소에서 `<rtePlugins-node>/paraformat` 노드로 이동합니다. 노드가 없는 경우 노드를 만듭니다. 자세한 내용은 [플러그 인 활성화](#activateplugin)를 참조하세요.
-1. `paraformat` 노드에서 `features` 속성을 만듭니다.
+1. `features` 노드에서 `paraformat` 속성을 만듭니다.
 
    * **이름** `features`
    * **유형** `String`
@@ -363,7 +363,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치됩니다. 기�
 
 단락 형식은 다음 방법으로 선택할 수 있습니다.
 
-1. [형식 드롭다운 선택기 사용](#styleselectorlist)에서 만든 대로 구성 요소 정의에서 `<rtePlugins-node>/paraformat` 노드로 이동합니다.
+1. `<rtePlugins-node>/paraformat`형식 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 ](#styleselectorlist) 노드로 이동합니다.
 1. `paraformat` 노드 아래에서 형식 목록을 보관할 노드를 만듭니다.
 
    * **이름** `formats`
@@ -398,7 +398,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치됩니다. 기�
 
 ## 특수 문자 구성 {#spchar}
 
-표준 [!DNL Experience Manager] 설치에서 특수 문자(`specialchars`)에 대해 `misctools` 플러그인을 활성화하면 저작권 및 상표 기호와 같은 기본 선택을 즉시 사용할 수 있습니다.
+표준 [!DNL Experience Manager] 설치에서 특수 문자(`misctools`)에 대해 `specialchars` 플러그인을 활성화하면 저작권 및 상표 기호와 같은 기본 선택을 즉시 사용할 수 있습니다.
 
 고유한 문자 또는 전체 시퀀스를 정의하여 문자 선택을 사용할 수 있도록 RTE를 구성할 수 있습니다.
 
@@ -409,7 +409,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치됩니다. 기�
 ### 단일 문자 정의 {#definesinglechar}
 
 1. 구성 요소에서 `<rtePlugins-node>/misctools` 노드로 이동합니다. 노드가 없는 경우 노드를 만듭니다. 자세한 내용은 [플러그 인 활성화](#activateplugin)를 참조하세요.
-1. `misctools` 노드에서 `features` 속성을 만듭니다.
+1. `features` 노드에서 `misctools` 속성을 만듭니다.
 
    * **이름** `features`
    * **유형** `String[]`
@@ -455,12 +455,10 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
 1. 이 노드(특수 문자 범위에 따라 이름이 지정됨) 아래에 다음 두 속성을 추가합니다.
 
    * **이름** `rangeStart`
-
      **유형** `Long`
      **값** 범위에 있는 첫 번째 문자의 [유니코드](https://unicode.org/) 표시(십진수)
 
    * **이름** `rangeEnd`
-
      **유형** `Long`
      **값** 범위에 있는 마지막 문자의 [유니코드](https://unicode.org/) 표시(십진수)
 
@@ -487,7 +485,7 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
 >RTE 구성 요소에서 표를 복사하고 붙여넣는 작업은 브라우저에 따라 다릅니다. 모든 브라우저에 대해 기본적으로 지원되지 않습니다. 표 구조 및 브라우저에 따라 다양한 결과를 얻을 수 있습니다. 예를 들어 클래식 UI 및 Touch UI의 Mozilla Firefox에서 RTE 구성 요소로 표를 복사하여 붙여넣으면 표의 레이아웃이 유지되지 않습니다.
 
 1. 구성 요소 내에서 `<rtePlugins-node>/table` 노드로 이동합니다. 노드가 없는 경우 노드를 만듭니다. 자세한 내용은 [플러그 인 활성화](#activateplugin)를 참조하세요.
-1. `table` 노드에서 `features` 속성을 만듭니다.
+1. `features` 노드에서 `table` 속성을 만듭니다.
 
    * **이름** `features`
    * **유형** `String`
@@ -500,8 +498,8 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
    >* **유형** `String[]`
    >
    >* 필요에 따라 다음 값 중 하나 또는 둘 다 **값**&#x200B;입니다.
-   >* 스타일을 포함하여 표 속성을 편집할 수 있도록 `table`합니다.
-   >* 스타일을 포함한 셀 속성을 편집할 수 있도록 `cellprops`.
+   >   * 스타일을 포함하여 표 속성을 편집할 수 있도록 `table`합니다.
+   >   * 스타일을 포함한 셀 속성을 편집할 수 있도록 `cellprops`.
 
 1. CSS 스타일 시트의 위치를 정의하여 해당 위치를 참조합니다. [스타일시트의 위치 지정](#locationofstylesheet)을 참조하십시오. 이는 [텍스트에 대한 스타일을 정의할 때와 동일합니다](#textstyles). 다른 스타일을 정의한 경우 위치를 정의할 수 있습니다.
 1. `table` 노드 아래에서 필요에 따라 다음 노드를 만듭니다.
@@ -527,7 +525,7 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
 
       * **이름** `cssName`
       * **유형** `String`
-      * **값** CSS 클래스 이름(앞에 `.`이 없음, 예: `.cssClass` 대신 `cssClass`)
+      * **값** CSS 클래스 이름(앞에 `.`이 없음, 예: `cssClass` 대신 `.cssClass`)
 
    * 팝업 선택기에 표시할 설명 텍스트를 정의하려면
 
@@ -653,7 +651,7 @@ RTE를 사용하면 작성자가 몇 가지 마지막 편집 내용을 실행 �
 
 [!DNL Experience Manager]에 링크를 추가할 때 사용할 CSS 스타일과 프로토콜을 자동으로 적용할 수 있습니다. 다른 프로그램의 [!DNL Experience Manager]에 링크를 추가하는 방법을 구성하려면 HTML 규칙을 정의합니다.
 
-1. CRXDE Lite을 사용하여 프로젝트의 텍스트 구성 요소를 찾습니다.
+1. CRXDE Lite에서 프로젝트의 텍스트 구성 요소를 찾습니다.
 1. `<rtePlugins-node>`과(와) 동일한 수준에 노드를 만듭니다. 즉, `<rtePlugins-node>`의 상위 노드 아래에 노드를 만듭니다.
 
    * **이름** `htmlRules`
@@ -680,15 +678,15 @@ RTE를 사용하면 작성자가 몇 가지 마지막 편집 내용을 실행 �
 
       * **이름** `cssInternal`
       * **유형** `String`
-      * **값** 앞에 &#39;.&#39;가 없는 CSS 클래스의 이름입니다.; 예: `.cssClass` 대신 `cssClass`)
+      * **값** 앞에 &#39;.&#39;가 없는 CSS 클래스의 이름입니다.; 예: `cssClass` 대신 `.cssClass`)
 
    * 외부 링크에 대한 CSS 스타일
 
       * **이름** `cssExternal`
       * **유형** `String`
-      * **값** 앞에 &#39;.&#39;가 없는 CSS 클래스의 이름입니다.; 예: `.cssClass` 대신 `cssClass`)
+      * **값** 앞에 &#39;.&#39;가 없는 CSS 클래스의 이름입니다.; 예: `cssClass` 대신 `.cssClass`)
 
-   * `https://`, `https://`, `file://`, `mailto:` 등을 포함한 올바른 **[!UICONTROL 프로토콜]** 배열,
+   * **[!UICONTROL ,]**, `https://`, `https://` 등을 포함한 올바른 `file://`프로토콜`mailto:` 배열,
 
       * **이름** `protocols`
       * **유형** `String[]`

@@ -2,12 +2,12 @@
 title: SPA 편집기 서비스 중단
 description: SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프로젝트에 어떤 의미가 있는지, 그리고 향후 프로젝트를 위해 어떤 옵션이 있는지 알아보십시오.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
@@ -51,7 +51,7 @@ SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에
 
 * **[범용 편집기](https://www.aem.live/docs/aem-authoring)**&#x200B;는 SPA 편집기를 직접 대체하는 데 가장 적합합니다.
    * 또한 범용 편집기는 시각적 편집기이며 SPA 편집기의 모든 Adobe 경험을 통합하여 분리된 구현을 위해 특별히 디자인되었습니다.
-   * 또한 범용 편집기는 AEM 6.5[용으로 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
+   * 또한 범용 편집기는 AEM 6.5[용으로 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)릴리스되었으며(AEM 6.5의 릴리스 2024.11.05 포함), 따라서 Cloud Services와 더불어 AMS 및 온프레미스 사용 사례를 지원합니다.
 * **[콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;는 양식 기반 편집기를 선호하는 사용자를 위한 대체 요소입니다.
    * 콘텐츠 조각 편집기는 콘텐츠가 페이지가 아닌 콘텐츠 조각으로 구조화될 때 가장 적합합니다.
 
@@ -62,18 +62,18 @@ SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에
 유니버설 편집기는 많은 이점을 제공하므로 이 편집기로 마이그레이션하는 것이 새로운 프로젝트에 적합한 솔루션입니다.
 
 * **시각적 편집:** SPA 편집기와 마찬가지로 작성자가 미리 보기 내에서 직접 콘텐츠를 편집하여 변경 내용이 방문자 경험에 미치는 영향을 즉시 확인할 수 있습니다.
-* **향후 교정:** AEM의 로드맵은 비주얼 편집기로 유니버설 편집기의 우선 순위를 지정합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
-* **간단한 통합:** 범용 편집기를 사용하는 데 AEM 관련 SDK이 필요하지 않으므로 기술 스택 잠금이 줄어듭니다.
-* **나만의 앱 만들기:** 유니버설 편집기는 모든 웹 프레임워크나 아키텍처를 지원하므로 복잡한 리팩터링을 수행하지 않아도 됩니다.
-* **확장성:** 유니버설 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크,](/help/implementing/universal-editor/extending.md)의 이점을 제공합니다.
+* **미래 지향적:** AEM의 로드맵은 범용 편집기를 시각적 편집기로 우선시합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
+* **더욱 간편한 통합:** 범용 편집기를 사용하기 위해 AEM 관련 SDK가 필요하지 않으므로 기술 스택 종속성이 줄어듭니다.
+* **자체 앱 가져오기:** 범용 편집기는 모든 웹 프레임워크 또는 아키텍처를 지원하므로 복잡한 리팩토링 없이도 채택할 수 있습니다.
+* **확장성:** 범용 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크](/help/implementing/universal-editor/extending.md)의 이점을 누릴 수 있습니다.
 
-SPA 편집기에서 범용 편집기로의 직접 마이그레이션 경로는 없습니다. 이는 두 기술의 근본적인 차이에서 기인한다.
+SPA 편집기에서 범용 편집기로의 직접 마이그레이션 경로는 없습니다. 이는 두 기술의 근본적인 차이 때문입니다.
 
-* 범용 편집기는 템플릿 편집기, 스타일 시스템 또는 반응형 그리드 같은 기능을 다시 도입하지 않습니다.
+* 범용 편집기는 템플릿 편집기, 스타일 시스템 또는 반응형 격자와 같은 기능을 다시 도입하지 않습니다.
    * 이제 Edge Delivery Services 또는 Headless 프로젝트의 린 프론트엔드 CSS 및 JS를 사용하여 이러한 사용 사례를 보다 효율적으로 처리할 수 있습니다.
 * 범용 편집기는 Editor-as-a-Service이므로 구현자가 CSS 또는 JS를 구성 요소 대화 상자에 삽입하는 것을 허용하지 않습니다.
-   * 이렇게 하면 페이지 편집기에서 구성 요소 대화 상자가 자동으로 변환되지 않습니다.
-   * 이 기능은 사용자 정의 위젯, 필드 유효성 검사, 규칙 표시/숨기기 및 템플릿 기반 사용자 지정과 같은 대화 상자의 많은 영역에 영향을 줍니다.
+   * 이렇게 하면 페이지 편집기에서 구성 요소 대화 상자가 자동으로 변환되는 것을 방지합니다.
+   * 이는 사용자 정의 위젯, 필드 유효성 검사, 표시/숨기기 규칙 및 템플릿 기반 사용자 정의와 같은 대화 상자의 여러 영역에 영향을 미칩니다.
 
 이러한 기술적 차이점을 염두에 두고 Adobe의 권장 사항은 다음과 같습니다.
 

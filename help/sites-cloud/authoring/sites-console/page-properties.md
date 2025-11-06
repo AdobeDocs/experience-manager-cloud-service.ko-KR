@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 34%
@@ -35,27 +35,37 @@ ht-degree: 34%
 ### 제목 및 태그 {#title-tags}
 
 * **제목** - SEO 목적으로 페이지 메타 제목과 페이지 콘텐츠에 표시되는 제목을 정의합니다(재정의되지 않은 경우).
-   * 페이지 제목은 [사이트 콘솔에서 **사이트** 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+
+   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[ 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 필수 필드입니다.
+
 * **태그** - SEO 용도로 페이지 메타 태그를 정의합니다.
+
    * 선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
    * 드롭다운을 사용하여 기존 태그에서 선택합니다.
    * 태그를 선택하면 선택 상자 아래에 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 완전히 새로운 태그를 입력할 수 있습니다.
+
       * Enter 키를 누르면 새 태그가 생성됩니다.
       * 그러면 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 가리키는 작은 별이 표시됩니다.
+
    * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
    * 태그에 대한 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md)을 참조하세요.
+
 * **탐색 숨기기** - 최종 사이트의 페이지 탐색에서 페이지를 표시할지 또는 숨길지 여부를 나타냅니다.
 
 ### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **브랜드 슬러그**
+
    * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
+
       * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
+
    * **재정의 값** - 페이지 제목에 추가될 브랜드 슬러그의 텍스트입니다.
+
       * 값이 `Cycling Tuscany | Always ready for the WKND`과(와) 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다.
 
 ### HTML ID {#html-id}
@@ -65,10 +75,14 @@ ht-degree: 34%
 ### 기타 제목 및 설명 {#more-titles}
 
 * **페이지 제목** - 페이지에서 사용할 제목
+
    * 일반적으로 제목 구성 요소에서 사용됩니다.
    * 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
+
 * **탐색 제목** - 탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우).
+
    * 비워 두면 **페이지 제목**&#x200B;이 사용됩니다.
+
 * **부제목** - 페이지에서 사용할 부제목
 * **설명** - 페이지, 페이지 용도 또는 추가하려는 기타 세부 정보에 대한 설명입니다.
 

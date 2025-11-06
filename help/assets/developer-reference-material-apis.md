@@ -3,12 +3,12 @@ title: ' [!DNL Assets]에 대한 개발자 참조'
 description: '[!DNL Assets] API 및 개발자 참조 콘텐츠를 사용하여 이진 파일, 메타데이터, 렌디션, 주석 및 [!DNL Content Fragments]을 포함한 에셋을 관리할 수 있습니다.'
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 | × | 지원되지 않습니다. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [자산 계산 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ko) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ko#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 슬링 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko) |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [자산 계산 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 슬링 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -64,7 +64,7 @@ ht-degree: 4%
 | 폴더 복사 | ✓ | ✓ | - | ✓ | - | - |
 | 폴더 이동 | ✓ | ✓ | - | ✓ | - | - |
 
-## 에셋 업로드 {#asset-upload}
+## 자산 업로드 {#asset-upload}
 
 [!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 HTTP API를 사용하여 클라우드 저장소에 자산을 직접 업로드할 수 있습니다. 바이너리 파일을 업로드하는 단계는 아래에 나와 있습니다. [!DNL Experience Manager] JVM 내부가 아닌 외부 응용 프로그램에서 이 단계를 실행하십시오.
 
@@ -170,12 +170,12 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 | `fileName` | 문자열 | 필수 | 시작 데이터에서 제공된 에셋의 이름입니다. |
 | `mimeType` | 문자열 | 필수 | 시작 데이터에서 제공한 바이너리의 HTTP 콘텐츠 유형입니다. |
 | `uploadToken` | 문자열 | 필수 | 시작 데이터에서 제공한 대로 바이너리에 대한 업로드 토큰입니다. |
-| `createVersion` | 부울 | 옵션 | `True`과(와) 지정한 이름의 자산이 있으면 [!DNL Experience Manager]에서 자산의 새 버전을 만듭니다. |
-| `versionLabel` | 문자열 | 옵션 | 새 버전이 만들어지면 에셋의 새 버전과 관련된 레이블입니다. |
-| `versionComment` | 문자열 | 옵션 | 새 버전을 만드는 경우 버전과 관련된 주석입니다. |
-| `replace` | 부울 | 옵션 | `True`에 지정된 이름의 자산이 있으면 [!DNL Experience Manager]에서 해당 자산을 삭제한 다음 다시 만듭니다. |
-| `uploadDuration` | 숫자 | 옵션 | 파일이 전부 업로드되는 총 시간(밀리초)입니다. 이 옵션을 지정하면 업로드 기간이 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
-| `fileSize` | 숫자 | 옵션 | 파일의 크기(바이트)입니다. 지정하면 파일 크기가 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
+| `createVersion` | 부울 | 선택 사항 | `True`과(와) 지정한 이름의 자산이 있으면 [!DNL Experience Manager]에서 자산의 새 버전을 만듭니다. |
+| `versionLabel` | 문자열 | 선택 사항 | 새 버전이 만들어지면 에셋의 새 버전과 관련된 레이블입니다. |
+| `versionComment` | 문자열 | 선택 사항 | 새 버전을 만드는 경우 버전과 관련된 주석입니다. |
+| `replace` | 부울 | 선택 사항 | `True`에 지정된 이름의 자산이 있으면 [!DNL Experience Manager]에서 해당 자산을 삭제한 다음 다시 만듭니다. |
+| `uploadDuration` | 숫자 | 선택 사항 | 파일이 전부 업로드되는 총 시간(밀리초)입니다. 이 옵션을 지정하면 업로드 기간이 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
+| `fileSize` | 숫자 | 선택 사항 | 파일의 크기(바이트)입니다. 지정하면 파일 크기가 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
 
 >[!NOTE]
 >
@@ -450,7 +450,7 @@ Adobe은 업로드 알고리즘에 대해 자세히 알아보거나 자체 업�
 
 ## 에셋 처리 및 사후 처리 워크플로 {#post-processing-workflows}
 
-[!DNL Experience Manager]에서 에셋 처리는 [에셋 마이크로서비스](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)를 사용하는 **[!UICONTROL 처리 프로필]** 구성을 기반으로 합니다. 처리 시 개발자 확장이 필요하지 않습니다.
+[!DNL Experience Manager]에서 에셋 처리는 **[!UICONTROL 에셋 마이크로서비스]**&#x200B;를 사용하는 [처리 프로필](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) 구성을 기반으로 합니다. 처리 시 개발자 확장이 필요하지 않습니다.
 
 사후 처리 워크플로 구성의 경우, 사용자 지정 단계와 함께 확장이 있는 표준 워크플로를 사용하십시오.
 

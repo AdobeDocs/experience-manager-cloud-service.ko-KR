@@ -3,8 +3,8 @@ title: ContextHub JavaScript API 참조
 description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -169,7 +169,7 @@ ContextHub 저장소의 기본 클래스입니다.
 ##### 매개변수 {#parameters-addallitems}
 
 * **`tree`:**(개체 또는 배열) 저장소에 추가할 데이터입니다.
-* **`options`:**(개체) setItem 함수에 전달되는 옵션 개체. 자세한 내용은 [`setItem(key,value,options)`](#setitem-key-value-options)의 `options` 매개 변수를 참조하십시오.
+* **`options`:**(개체) setItem 함수에 전달되는 옵션 개체. 자세한 내용은 `options`의 [`setItem(key,value,options)`](#setitem-key-value-options) 매개 변수를 참조하십시오.
 
 ##### 반환 {#returns-addallitems}
 
@@ -235,8 +235,8 @@ ContextHub 저장소의 기본 클래스입니다.
 
 참조 키를 참조된 키의 인덱스로 사용하는 배열입니다.
 
-* 참조 키는 `addReference` 함수의 `key` 매개 변수와 일치합니다.
-* 참조된 키는 `addReference` 함수의 `anotherKey` 매개 변수에 해당합니다.
+* 참조 키는 `key` 함수의 `addReference` 매개 변수와 일치합니다.
+* 참조된 키는 `anotherKey` 함수의 `addReference` 매개 변수에 해당합니다.
 
 #### getTree(includeInternal) {#gettree-includeinternals}
 
@@ -309,7 +309,7 @@ ContextHub 저장소의 기본 클래스입니다.
 
 ##### 매개변수 {#parameters-removereference}
 
-* **`key`:** 제거할 키 참조입니다. 이 매개 변수는 `addReference` 함수의 `key` 매개 변수에 해당합니다.
+* **`key`:** 제거할 키 참조입니다. 이 매개 변수는 `key` 함수의 `addReference` 매개 변수에 해당합니다.
 
 ##### 반환 {#returns-removereference}
 
@@ -334,7 +334,7 @@ ContextHub 저장소의 기본 클래스입니다.
 
 ##### 매개변수 {#parameters-resolvereference}
 
-* **`key`:**(문자열) 참조를 확인할 키입니다. 이 `key` 매개 변수는 `addReference` 함수의 `key` 매개 변수와 일치합니다.
+* **`key`:**(문자열) 참조를 확인할 키입니다. 이 `key` 매개 변수는 `key` 함수의 `addReference` 매개 변수와 일치합니다.
 * **`retry`:**(숫자) 사용할 반복 횟수입니다.
 
 ##### 반환 {#returns-resolvereference}
@@ -459,7 +459,7 @@ JSONP 서비스의 URL을 검색합니다.
 
 #### queryService(다시 로드) {#queryservice-reload}
 
-원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 `config.service.ttl` 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. 선택적으로 서비스를 강제로 호출할 수 있습니다. 저장소를 초기화하기 위해 [init](#init-name-config) 함수를 호출할 때 `config.service.ttl`속성이 설정됩니다.
+원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 `config.service.ttl` 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. 선택적으로 서비스를 강제로 호출할 수 있습니다. 저장소를 초기화하기 위해 `config.service.ttl`init[ 함수를 호출할 때 ](#init-name-config)속성이 설정됩니다.
 
 쿼리가 완료되면 준비 이벤트를 트리거합니다. JSONP 서비스 URL이 설정되지 않은 경우 함수는 아무 작업도 하지 않습니다.
 
@@ -634,8 +634,8 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 * **`value`:** 쿠키 값을 포함하는 문자열입니다.
 * **`options`:**(선택 사항) 쿠키 특성을 구성하는 다음 속성을 포함하는 개체입니다.
    * `expires`: 쿠키가 만료되는 시기를 지정하는 `date` 또는 `number` 값입니다. 날짜 값은 절대 만료 시간을 지정합니다. 숫자(일)는 만료 시간을 현재 시간과 숫자를 더한 값으로 설정합니다. 기본값은 `undefined`입니다.
-   * `secure`: 쿠키의 `Secure` 특성을 지정하는 `boolean` 값입니다. 기본값은 `false`입니다.
-   * `path`: 쿠키의 `Path` 특성으로 사용할 `String` 값입니다. 기본값은 `undefined`입니다.
+   * `secure`: 쿠키의 `boolean` 특성을 지정하는 `Secure` 값입니다. 기본값은 `false`입니다.
+   * `path`: 쿠키의 `String` 특성으로 사용할 `Path` 값입니다. 기본값은 `undefined`입니다.
 
 ##### 반환 {#returns-setitem-1}
 
@@ -658,8 +658,8 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 매개변수 {#parameters-vanish}
 
-* **`filter`:** [`getKeys`](#getkeys-filter) 함수 호출에 사용할 `filter` 인수입니다.
-* **`options`:** [`removeItem`](#removeitem-key-options) 함수 호출에 사용할 `options` 인수입니다.
+* **`filter`:** `filter` 함수 호출에 사용할 [`getKeys`](#getkeys-filter) 인수입니다.
+* **`options`:** `options` 함수 호출에 사용할 [`removeItem`](#removeitem-key-options) 인수입니다.
 
 ##### 반환 {#returns-vanish}
 
@@ -667,7 +667,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-ContextHub 저장소 이벤트에 함수를 바인딩 및 바인딩 해제할 수 있습니다. 저장소의 [eventing](#eventing) 속성을 사용하여 저장소의 `ContextHub.Utils.Eventing` 개체에 액세스합니다.
+ContextHub 저장소 이벤트에 함수를 바인딩 및 바인딩 해제할 수 있습니다. 저장소의 `ContextHub.Utils.Eventing`eventing[ 속성을 사용하여 저장소의 ](#eventing) 개체에 액세스합니다.
 
 ### 함수(ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
@@ -678,7 +678,7 @@ ContextHub 저장소 이벤트에 함수를 바인딩 및 바인딩 해제할 �
 ##### 매개변수 {#parameters-off}
 
 * **`name`:** 함수를 바인딩 해제하는 이벤트의 [이름](#contexthub-utils-eventing)입니다.
-* **`selector`:** 바인딩을 식별하는 선택기입니다. ([`on`](#on-name-handler-selector-triggerforpastevents) 및 [`once`](#once-name-handler-selector-triggerforpastevents) 함수에 대한 `selector` 매개 변수 참조).
+* **`selector`:** 바인딩을 식별하는 선택기입니다. (`selector` 및 [`on`](#on-name-handler-selector-triggerforpastevents) 함수에 대한 [`once`](#once-name-handler-selector-triggerforpastevents) 매개 변수 참조).
 
 ##### 반환 {#returns-off}
 
@@ -1019,7 +1019,7 @@ myObject {
 
 ##### 반환 {#returns-sanitizekey}
 
-각 문자열이 슬래시로 구분된 `key`의 일부인 `string` 값의 배열입니다. 정리된 키를 나타냅니다. 정리된 배열의 길이가 0이면 이 함수는 `null`을(를) 반환합니다.
+각 문자열이 슬래시로 구분된 `string`의 일부인 `key` 값의 배열입니다. 정리된 키를 나타냅니다. 정리된 배열의 길이가 0이면 이 함수는 `null`을(를) 반환합니다.
 
 ##### 예 {#example-sanitizekey}
 
@@ -1043,7 +1043,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 반환 {#returns-setitem-2}
 
-`key`/ `value` 쌍을 포함하는 `tree` 개체의 복사본입니다.
+`tree`/ `key` 쌍을 포함하는 `value` 개체의 복사본입니다.
 
 ##### 예 {#example-setitem-2}
 
@@ -1080,7 +1080,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 매개변수 {#parameters-getregisteredcandidates}
 
-* **`storeType`:**(문자열) 저장소 유형의 이름입니다. [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) 함수의 `storeType` 매개 변수를 참조하십시오.
+* **`storeType`:**(문자열) 저장소 유형의 이름입니다. `storeType` 함수의 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) 매개 변수를 참조하십시오.
 
 ##### 반환 {#returns-getregisteredcandidates}
 
@@ -1092,7 +1092,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 매개변수 {#parameters-getstorefromcandidates}
 
-* `storeType`: (문자열) 저장소 후보의 이름입니다. [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) 함수의 `storeType` 매개 변수를 참조하십시오.
+* `storeType`: (문자열) 저장소 후보의 이름입니다. `storeType` 함수의 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) 매개 변수를 참조하십시오.
 
 ##### 반환 {#returns-getstorefromcandidates}
 
@@ -1104,7 +1104,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 반환 {#returns-getsupportedstoretypes}
 
-각 문자열이 저장소 후보가 등록된 storetype인 문자열 값의 배열입니다. [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) 함수의 `storeType` 매개 변수를 참조하십시오.
+각 문자열이 저장소 후보가 등록된 storetype인 문자열 값의 배열입니다. `storeType` 함수의 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) 매개 변수를 참조하십시오.
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 

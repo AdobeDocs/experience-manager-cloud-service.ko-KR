@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 작성
 description: 콘텐츠 조각용 콘텐츠를 작성하고 목적에 따라 해당 콘텐츠의 변형을 만드는 방법을 이해합니다. 콘텐츠 조각 은 Headless 게재 및 페이지 작성을 위한 유연성을 제공합니다.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 69%
@@ -267,7 +267,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 

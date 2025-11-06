@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
-role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # 양식 필드에 유효성 검사 추가
 
-적응형 양식 블록에는 유효성 검사 기능이 내장되어 있습니다. 이러한 유효성 검사는 선택한 필드 유형과 입력한 추가 속성을 기반으로 최신 브라우저에 자동으로 적용됩니다.
+적응형 양식 블록에는 유효성 검사 기능이 기본 제공됩니다. 이러한 유효성 검사는 선택한 필드 유형과 입력한 추가 속성을 기반으로 최신 브라우저에 자동으로 적용됩니다.
 
 ## 필드 유형 및 유효성 검사 이해
 

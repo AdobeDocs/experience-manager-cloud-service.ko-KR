@@ -3,8 +3,8 @@ title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 번역할 수 있습니다
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Sling 어댑터 사용 {#using-sling-adapters}
 
-[Sling](https://sling.apache.org)은(는) [적응성](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 인터페이스를 구현하는 개체를 편리하게 번역할 수 있는 [어댑터 패턴](https://sling.apache.org/documentation/the-sling-engine/adapters.html)을(를) 제공합니다. 이 인터페이스는 개체를 인수로 전달되는 클래스 형식으로 변환하는 일반 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 메서드를 제공합니다.
+[Sling](https://sling.apache.org)은(는) [적응성](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 인터페이스를 구현하는 개체를 편리하게 번역할 수 있는 [어댑터 패턴](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)을(를) 제공합니다. 이 인터페이스는 개체를 인수로 전달되는 클래스 형식으로 변환하는 일반 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 메서드를 제공합니다.
 
 예를 들어 리소스 객체를 해당 노드 객체로 변환하려면 다음과 같이 하면 됩니다.
 
@@ -67,15 +67,15 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/adapter/SlingAdaptable.html)을(를) 확장해야 합니다(`adaptTo` 호출을 중앙 어댑터 관리자에 전달).
 
-  이 메서드를 사용하면 `Resource`과 같은 기존 클래스에 대해 `adaptTo` 메커니즘에 후크를 연결할 수 있습니다.
+  이 메서드를 사용하면 `adaptTo`과 같은 기존 클래스에 대해 `Resource` 메커니즘에 후크를 연결할 수 있습니다.
 
 * 둘의 조합.
 
-첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이 문이 불가능한 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되지 않으며 Java™ 문서에 나열되지 않습니다. 이론적으로 [OSGi](/help/implementing/deploying/configuring-osgi.md) 서비스 런타임에서 모든 `AdapterFactory` 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 이 참조입니다.
+첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이 문이 불가능한 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되지 않으며 Java™ 문서에 나열되지 않습니다. 이론적으로 `AdapterFactory`OSGi[ 서비스 런타임에서 모든 ](/help/implementing/deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 이 참조입니다.
 
 ## 참조 {#reference}
 
-### 슬링 {#sling}
+### Sling {#sling}
 
 [**리소스**](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html)은(는) 다음 항목에 적응합니다.
 
@@ -359,4 +359,4 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 기타 {#other}
 
-또한 Sling/JCR/OCM은 사용자 지정 OCM([개체 콘텐츠 매핑](https://jackrabbit.apache.org/jcr/object-content-mapping.html)) 개체에 대해 [`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)을(를) 제공합니다.
+또한 Sling/JCR/OCM은 사용자 지정 OCM([`AdapterFactory`개체 콘텐츠 매핑](https://sling.apache.org/documentation/the-sling-engine/adapters.html)) 개체에 대해 [](https://jackrabbit.apache.org/jcr/object-content-mapping.html)을(를) 제공합니다.

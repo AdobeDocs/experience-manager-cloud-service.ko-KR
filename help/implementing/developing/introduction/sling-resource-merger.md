@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service에서 Sling 리소스 병합 
 description: Sling 리소스 병합은 리소스에 액세스하고 리소스를 병합하는 서비스를 제공합니다
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
@@ -13,13 +13,13 @@ ht-degree: 1%
 
 # AEM as a Cloud Service에서 Sling 리소스 병합 사용 {#using-the-sling-resource-merger-in-aem}
 
-## 용도 {#purpose}
+## 목적 {#purpose}
 
 Sling 리소스 병합은 리소스에 액세스하고 리소스를 병합하는 서비스를 제공합니다. 두 가지 모두에 대해 비교(차이점 보관) 메커니즘을 제공합니다.
 
-* [검색 경로](/help/implementing/developing/introduction/overlays.md#search-paths)을(를) 사용하여 리소스의 **[오버레이](/help/implementing/developing/introduction/overlays.md)**&#x200B;합니다.
+* **[검색 경로](/help/implementing/developing/introduction/overlays.md)**&#x200B;을(를) 사용하여 리소스의 [오버레이](/help/implementing/developing/introduction/overlays.md#search-paths)합니다.
 
-* 리소스 유형 계층 구조(`sling:resourceSuperType` 속성 사용)를 사용하여 터치 사용 UI(`cq:dialog`)에 대한 구성 요소 대화 상자의 **재정의**.
+* 리소스 유형 계층 구조(**속성 사용)를 사용하여 터치 사용 UI(**)에 대한 구성 요소 대화 상자의 `cq:dialog`재정의`sling:resourceSuperType`.
 
 Sling 리소스 병합을 사용하면 오버레이/재정의 리소스 및/또는 속성이 원래 리소스/속성과 병합됩니다.
 
@@ -42,7 +42,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 >[!CAUTION]
 >
->***은(는) `/libs` 경로에서 아무 것도 변경하지 말아야***&#x200B;합니다.
+>***은(는)*** 경로에서 아무 것도 변경하지 말아야`/libs`합니다.
 >
 >인스턴스에 업그레이드가 적용될 때마다 `/libs`의 콘텐츠를 덮어쓸 수 있기 때문입니다.
 >
@@ -119,7 +119,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 >[!NOTE]
 >
->Sling 리소스 병합을 사용할 때(즉, 표준 터치 사용 UI를 다룰 때) `/apps`에 너무 많은 정보가 보관될 수 있으므로 `/libs`에서 전체 구조를 복사하지 않는 것이 좋습니다. 이렇게 하면 어떤 방식으로든 시스템을 업그레이드할 때 문제가 발생할 수 있습니다.
+>Sling 리소스 병합을 사용할 때(즉, 표준 터치 사용 UI를 다룰 때) `/libs`에 너무 많은 정보가 보관될 수 있으므로 `/apps`에서 전체 구조를 복사하지 않는 것이 좋습니다. 이렇게 하면 어떤 방식으로든 시스템을 업그레이드할 때 문제가 발생할 수 있습니다.
 
 ### 사용 사례 {#use-cases}
 
@@ -152,7 +152,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
   기본적으로 자동 생성된 속성(예: `jcr:primaryType`)은 현재 `/libs` 아래에 있는 노드 유형이 준수되는지 확인하기 위한 오버레이/재정의 대상이 아닙니다. 오버레이/재정의를 적용하려면 `/apps`에서 노드를 다시 만들어야 합니다. 속성을 명시적으로 숨기고 다시 정의하십시오.
 
-   1. 원하는 `jcr:primaryType`을(를) 사용하여 `/apps`에 해당 노드를 만드십시오.
+   1. 원하는 `/apps`을(를) 사용하여 `jcr:primaryType`에 해당 노드를 만드십시오.
    1. 값이 자동으로 만들어진 속성의 값으로 설정된 해당 노드에 `sling:hideProperties` 속성을 만듭니다(예: `jcr:primaryType`).
 
       `/apps`에 정의된 이 속성은 이제 `/libs`에 정의된 속성보다 우선합니다.
@@ -171,7 +171,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
   속성이 `/libs`에 정의되어 있지만 `/apps` 오버레이/재정의에는 필요하지 않습니다.
 
    1. `/apps` 내에 해당 노드 만들기
-   1. `String` 또는 `String[]` 형식의 `sling:hideProperties` 속성을 만듭니다. 이 옵션을 사용하여 숨기거나 무시할 속성을 지정합니다. 와일드카드를 사용할 수도 있습니다. 예:
+   1. `sling:hideProperties` 또는 `String` 형식의 `String[]` 속성을 만듭니다. 이 옵션을 사용하여 숨기거나 무시할 속성을 지정합니다. 와일드카드를 사용할 수도 있습니다. 예:
 
       * `*`
       * `["*"]`
@@ -198,7 +198,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
       * 유형: `String[]`
       * 값: 숨기기/무시할 하위 노드 목록(`/libs`에서 정의됨)
 
-      와일드카드 &ast;를 사용하여 모든 하위 노드를 숨기고 무시할 수 있습니다.
+      와일드카드 &amp;ast;를 사용하여 모든 하위 노드를 숨기고 무시할 수 있습니다.
 
 * **노드 순서 바꾸기**
 

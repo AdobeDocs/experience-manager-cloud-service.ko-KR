@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 51%
+ht-degree: 56%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 51%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -33,16 +33,15 @@ ht-degree: 51%
 ## 서명 창에서 사용할 수 있는 다양한 옵션
 
 * **A:** 캔버스에 서명을 그리려면 **페인트 브러시** 아이콘을 클릭하세요.
-* **B:** 캔버스에서 서명을 지우려면 **지우기** 아이콘을 클릭하십시오.
-* **C:** **지리적 위치** 아이콘을 클릭하여 서명과 함께 지리적 위치를 추가하십시오.
-* **D:** 캔버스에 이름을 입력하려면 **키보드** 아이콘을 클릭하십시오.
+* **B:** 캔버스의 서명을 지우려면 **지우기** 아이콘을 클릭합니다.
+* **C:** 서명과 함께 지리적 위치를 추가하려면 **지리적 위치** 아이콘을 클릭합니다.
+* **D:** 키보드 **아이콘을 클릭하여 캔버스에 이름을 입력합니다.**
 
-스크리블 서명 창에서 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하려면 현재 서명을 무시하고 위의 [페인트 브러쉬/키보드] 옵션을 사용하여 다시 서명해야 합니다.
+스크리블 서명 창에서 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하고 싶은 경우, 현재 서명을 무시하고 위의 페인트 브러시/키보드 옵션을 사용하여 다시 서명해야 합니다.
 
 **구성** ![구성 아이콘](assets/configure.png) 아이콘을 선택하여 스크리블 서명 캔버스의 종횡비를 설정할 수 있습니다.
+
 * 스크리블 서명 캔버스의 종횡비가 1보다 작은 경우 지리적 위치 정보가 스크리블 서명 캔버스의 맨 아래에 추가됩니다.
-
-
 * 스크리블 서명 캔버스의 종횡비가 1보다 큰 경우 지리적 위치 정보가 스크리블 서명 캔버스의 오른쪽에 추가됩니다.
 
 
@@ -53,7 +52,6 @@ ht-degree: 51%
 >[!NOTE]
 >
 >서명은 항상 PNG 형식으로 저장됩니다.
->
 
 ## 스크리블 서명을 사용하도록 적응형 양식 구성 {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -108,7 +106,7 @@ ht-degree: 51%
 
 **접근성** 탭에는 구성 요소에 대한 [ARIA 접근성](https://www.w3.org/WAI/standards-guidelines/aria/) 레이블에 값이 설정되어 있습니다. 다양한 옵션을 통해 화면 판독기용 텍스트를 사용할 수 있습니다.
 
-* **화면 Reader 우선 순위** - 화면 Reader 우선 순위는 화면 판독기와 같은 보조 기술에 의해 읽히기 위해 특별히 고안된 시각 장애가 있는 사용자가 사용하는 추가 텍스트를 나타냅니다. 이 텍스트는 양식 필드의 용도에 대한 오디오 설명을 제공하며, 여기에는 필드의 제목, 설명, 이름 및 관련 메시지(사용자 정의 텍스트)에 대한 정보가 포함될 수 있습니다. 화면 판독기 텍스트는 시각 장애가 있는 사용자를 포함한 모든 사용자가 양식에 액세스할 수 있도록 돕고 양식 필드 및 해당 요구 사항을 완전히 이해할 수 있도록 합니다.
+* **화면 Reader 우선 순위** - 화면 Reader 우선 순위는 화면 판독기와 같은 보조 기술을 통해 읽을 수 있도록 특별히 고안된 시각 장애인이 사용하는 추가 텍스트를 나타냅니다. 이 텍스트는 양식 필드의 용도에 대한 오디오 설명을 제공하며, 여기에는 필드의 제목, 설명, 이름 및 관련 메시지(사용자 정의 텍스트)에 대한 정보가 포함될 수 있습니다. 화면 판독기 텍스트는 시각 장애가 있는 사용자를 포함한 모든 사용자가 양식에 액세스할 수 있도록 돕고 양식 필드 및 해당 요구 사항을 완전히 이해할 수 있도록 합니다.
 
    * **사용자 정의 텍스트**: ARIA 접근성 레이블에 사용자 정의 텍스트를 사용하려면 이 옵션을 선택합니다. 이 옵션을 선택하면 사용자 정의 텍스트 대화 상자가 표시됩니다. 사용자 정의 텍스트 대화 상자에서 관련 정보를 추가할 수 있습니다.
    * **간단한 설명**: ARIA 액세스 가능성 레이블에 대한 설명을 사용하려면 이 옵션을 선택하십시오.

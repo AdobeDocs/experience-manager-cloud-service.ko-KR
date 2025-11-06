@@ -3,9 +3,9 @@ title: Cloud Manager에서의 Edge Delivery Services 소개
 description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트를 게재하는 방법을 알아보십시오.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 8 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 9 | 실행 | [실행 체크리스트](https://www.aem.live/docs/go-live-checklist)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 

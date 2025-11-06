@@ -5,7 +5,7 @@ keywords: '적응형 Forms에서 Marketo Engage 데이터 소스 사용, Marketo
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 8%
@@ -109,8 +109,10 @@ Marketo Engage 데이터 소스를 사용하여 범용 편집기에서 작성된
 **Q: 양식의 커넥터를 변경하면 어떻게 됩니까?**\
 **A:** 양식의 커넥터를 변경하면 기존 바인딩이 유효하지 않게 됩니다.
 
-**Q: Marketo Engage과 통합된 양식에 대해 규칙 편집기의 호출 서비스에서 사용할 수 있는 세 가지 작업은 무엇입니까?**\
+**Q: Marketo Engage과 통합된 양식에 대해 규칙 편집기의 호출 서비스에서 사용할 수 있는 세 가지 작업은 무엇입니까?**
+
 **A:** Marketo Engage과 통합된 양식의 **서비스 호출**&#x200B;에서 사용할 수 있는 기본 작업 세 가지는 다음과 같습니다.
+
 * 동기화 리드
 * ID로 리드 가져오기
 * 필터 유형별 리드 가져오기

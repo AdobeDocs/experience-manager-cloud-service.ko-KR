@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4049'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Dynamic Media의 주요 개념 중 일부는 다음과 같습니다.
 * **경험 뷰어 라이브러리:** 이미지 및 비디오에 대한 경험 뷰어를 사용자 지정하고 브랜드화합니다. 이러한 뷰어는 디지털 경험에 원활하게 통합됩니다.
 * **새로운 형식 지원:** Dynamic Media를 사용하면 3D 및 파노라마 경험을 제공할 수 있습니다.
 
-[Dynamic Media 여정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)을 살펴보면서 아래 통합 모범 사례 목록을 검토하면 해당 기능을 최대한 활용하는 데 도움이 될 수 있습니다. 이러한 Dynamic Media 모범 사례를 특정 컨텍스트 및 프로젝트 요구 사항에 맞게 조정하여 채널 및 디바이스 전반에서 경험을 최적화할 수 있습니다.
+[Dynamic Media 여정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)을 살펴보면서 아래 통합 모범 사례 목록을 검토하면 해당 기능을 최대한 활용하는 데 도움이 될 수 있습니다. 이러한 Dynamic Media 모범 사례를 특정 컨텍스트 및 프로젝트 요구 사항에 맞게 조정하여 채널 및 디바이스 전반에서 경험을 최적화할 수 있습니다.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -91,12 +91,12 @@ Dynamic Media 뷰어 우수 사례는 AEM에서 Dynamic Media 에셋의 성능, 
 * **스마트 자르기:**
 스마트 자르기에 이미지 v3 구성 요소를 사용하여 이미지 에셋 프레젠테이션을 향상시킵니다.
 * **JavaScript 파일 포함:**
-기본 뷰어 JavaScript 파일만 페이지에 포함하십시오. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `/s7viewers` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `Utils.js` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
+기본 뷰어 JavaScript 파일만 페이지에 포함하십시오. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `Utils.js` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `/s7viewers` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
 * **포함 지침:**
 각 뷰어에 고유한 포함 지침을 보려면 설명서를 사용하십시오.
-자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)&#x200B;(으)로 이동합니다.
+자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)&#x200B;(으)로 이동합니다.
 * **SDK 자습서 및 예제:**
-SDK 구성 요소 API에 대한 자세한 내용은 [뷰어 SDK 자습서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
+SDK 구성 요소 API에 대한 자세한 내용은 [뷰어 SDK 자습서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
 
 
 ## 게재를 위한 자산 준비
@@ -200,7 +200,7 @@ Dynamic Media는 여러 정적 에셋을 사용할 필요 없이 이미지를 �
 | --- | --- |
 | **원본 이미지 업로드 및 게시** | <ul><li> Dynamic Media에 원본 이미지를 업로드하여 시작합니다.</li><li> URL을 통해 게시되고 액세스할 수 있는지 확인하십시오.</li><li> 이 예에서는 흰색 배경의 시계 스톡 이미지(&quot;Image X&quot;라고 함)가 Dynamic Media에 업로드됩니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **마스크 만들기** | <ul><li> 제목(효과를 적용할 영역)과 배경(변경할 영역)을 정의하는 마스크를 개발합니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> 마스크는 일반적으로 회색 음영 이미지이며, 흰색은 피사체를 나타내고 검정은 배경을 나타냅니다. Adobe Photoshop과 같은 도구를 사용하여 마스크를 만들 수 있습니다.<br>자세히 알아보시겠습니까? [Photoshop에서 빠른 마스크 만들기 및 편집](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)&#x200B;(으)로 이동합니다.</li><li> &quot;이미지 X&quot;의 경우 강화하려는 제목의 윤곽을 정확하게 나타내는 마스크를 만듭니다. 예를 들어, 사람, 객체 등이 있습니다.</li></ul> |
-| **효과에 Dynamic Media URL 명령 적용** | 마스크가 있으면 URL 명령을 사용하여 외부 광선 같은 효과를 적용하거나 배경색을 &quot;이미지 X&quot;로 변경합니다. 다음은 두 가지 예입니다.<ul><li> **외부 광선 효과:**<br>&#x200B;주체의 경계를 따라 외부 광선 효과를 추가하려면 다음과 같이 URL을 편집하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>이 URL에서 `op_blur`, `op_grow` 및 `opac` 매개 변수가 외부 광선 효과를 만듭니다.</li><li> **배경색 변경:**<br>&#x200B;배경색을 변경하려면 다른 배경색 값이 있는 URL을 사용하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> 이 예제에서는 `color=255,255,0`이(가) 배경색을 노란색으로 설정합니다. 시각적 효과를 위해 배경을 특정 색상으로 편집합니다.</li></ul> |
+| **효과에 Dynamic Media URL 명령 적용** | 마스크가 있으면 URL 명령을 사용하여 외부 광선 같은 효과를 적용하거나 배경색을 &quot;이미지 X&quot;로 변경합니다. 다음은 두 가지 예입니다.<ul><li> **외부 광선 효과:**<br>&#x200B;주체의 경계를 따라 외부 광선 효과를 추가하려면 다음과 같이 URL을 편집하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>이 URL에서 `op_blur`, `op_grow` 및 `opac` 매개 변수가 외부 광선 효과를 만듭니다.</li><li> **배경색 변경:**<br>&#x200B;배경색을 변경하려면 다른 배경색 값이 있는 URL을 사용하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> 이 예제에서는 `color=255,255,0`이(가) 배경색을 노란색으로 설정합니다. 시각적 효과를 위해 배경을 특정 색상으로 편집합니다.</li></ul> |
 
 #### 이미지 테두리 추가
 
@@ -208,9 +208,9 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
 
 | 작업 | 할 일 |
 | --- | --- |
-| **흰색 테두리** | 흰색 테두리를 추가하려면 다음 URL을 사용하십시오.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>이 URL에서 `extend=10,10,10,10` 매개 변수는 모든 측면의 테두리 크기를 10픽셀로 지정합니다. |
-| **흰색 테두리를 따라 흐림 효과** | 흰색 테두리를 따라 흐림 효과를 추가하려면 다음과 같이 URL을 편집할 수 있습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>이 URL에서 `effect=-1` 매개 변수는 흐림 효과를 적용하고 `op_blur=60`은(는) 흐림 강도를 제어합니다. |
-| **외부 경계에 그림자 효과 적용** | 외부 경계에 그림자 효과를 추가하려면 다음 URL을 사용합니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0)<br>`$shadow$` 매개 변수는 그림자 효과를 만들고 `color=0,0,0`은(는) 그림자 색상을 검정색으로 설정합니다. |
+| **흰색 테두리** | 흰색 테두리를 추가하려면 다음 URL을 사용하십시오.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>이 URL에서 `extend=10,10,10,10` 매개 변수는 모든 측면의 테두리 크기를 10픽셀로 지정합니다. |
+| **흰색 테두리를 따라 흐림 효과** | 흰색 테두리를 따라 흐림 효과를 추가하려면 다음과 같이 URL을 편집할 수 있습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>이 URL에서 `effect=-1` 매개 변수는 흐림 효과를 적용하고 `op_blur=60`은(는) 흐림 강도를 제어합니다. |
+| **외부 경계에 그림자 효과 적용** | 외부 경계에 그림자 효과를 추가하려면 다음 URL을 사용합니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>`$shadow$` 매개 변수는 그림자 효과를 만들고 `color=0,0,0`은(는) 그림자 색상을 검정색으로 설정합니다. |
 
 원하는 시각적 효과를 얻기 위해 이러한 URL을 자유롭게 실험해 보십시오.
 
@@ -222,9 +222,9 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
 | --- | --- |
 | **기본 이미지 업로드 및 게시** | 먼저 로고나 아이콘을 겹칠 기본 이미지를 업로드하고 게시합니다. 모든 이미지를 기반으로 사용할 수 있습니다.<br>예를 들어 기본 이미지는 <br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)입니다. |
 | **로고 또는 아이콘 이미지를 업로드 및 게시합니다** | 그런 다음 기본 이미지 위에 겹칠 이미지를 업로드하고 게시합니다. 이 이미지는 오버레이할 로고 또는 아이콘이 있는 투명 PNG여야 합니다.<br>투명 효과가 있는 별 개체의 투명 PNG 이미지는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>여기서 에셋은<ul><li> `hotspotRetailBaseImage`은(는) 기본 이미지입니다.</li><li> `starxp`은(는) 로고/아이콘 이미지입니다.</li><li> `layer=1`은(는) 로고 또는 아이콘이 기본 이미지 위에 겹치도록 지정합니다.</li><li> `scale=1.25`은(는) 로고/아이콘의 크기를 조정합니다.</li><li> `posN=0.33,-.25`은(는) 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.</li><li> `fmt=png`은(는) 출력이 PNG 형식인지 확인합니다.</li></ul> |
+| **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>여기서 에셋은<ul><li> `hotspotRetailBaseImage`은(는) 기본 이미지입니다.</li><li> `starxp`은(는) 로고/아이콘 이미지입니다.</li><li> `layer=1`은(는) 로고 또는 아이콘이 기본 이미지 위에 겹치도록 지정합니다.</li><li> `scale=1.25`은(는) 로고/아이콘의 크기를 조정합니다.</li><li> `posN=0.33,-.25`은(는) 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.</li><li> `fmt=png`은(는) 출력이 PNG 형식인지 확인합니다.</li></ul> |
 
-자세한 내용 `src` 명령 및 기타 Dynamic Media URL 명령에 대한 자세한 내용을 보려면 [src](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)&#x200B;(으)로 이동하십시오.
+자세한 내용 [ 명령 및 기타 Dynamic Media URL 명령에 대한 자세한 내용을 보려면 ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)src`src`(으)로 이동하십시오.
 
 
 #### 홍보 텍스트 오버레이
@@ -234,7 +234,7 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
 | 단계 | 할 일 |
 | --- | --- |
 | **기본 이미지 업로드 및 게시** | 먼저 텍스트를 겹칠 기본 이미지를 업로드하고 게시합니다. 원하는 이미지를 사용할 수 있습니다. 예를 들어 샘플 기본 이미지는 다음과 같습니다. <br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Dynamic Media 텍스트 연산자 적용** | Dynamic Media를 사용하여 텍스트 연산자를 적용하여 다이내믹 텍스트를 이미지에 직접 오버레이할 수 있습니다. 다음 샘플 URL은 이 기능을 보여 줍니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fontbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
+| **Dynamic Media 텍스트 연산자 적용** | Dynamic Media를 사용하여 텍스트 연산자를 적용하여 다이내믹 텍스트를 이미지에 직접 오버레이할 수 있습니다. 다음 샘플 URL은 이 기능을 보여 줍니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fontbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF333&wid=600&hei=600) |
 
 #### 다양한 사용 사례를 위한 크기 조정 및 자르기
 
@@ -264,19 +264,19 @@ Dynamic Media를 사용하면 URL을 통해 이미지를 직접 조작할 수 �
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
 * **썸네일(200px x 200px):**
 빠른 로드 또는 표시에 적합한 더 작은 버전.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
 * **자르기 썸네일(200px x 200px):**
 소파 구역에 집중하기 위해 짧게 깎았다.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
 * **제품 표시 이미지(800px x 600px):**
 소파를 표시하기 위해 자르고 크기를 조정합니다.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **배너(1720px x 820px):**
 공간을 강조하는 원본 이미지에서 파생됩니다.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 특정 요구 사항에 맞게 이러한 변형을 자유롭게 탐색할 수 있습니다.
-URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습니까? [명령 참조](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)&#x200B;(으)로 이동합니다.
+URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습니까? [명령 참조](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)&#x200B;(으)로 이동합니다.
 
 ### GIF 이미지 게재
 
@@ -320,7 +320,7 @@ Dynamic Media를 통해 GIF를 업로드하고 게재할 수 있습니다. 애�
    * **비디오 포함:**
 제공된 임베드된 코드를 복사하여 비디오를 표시할 웹 페이지의 HTML에 붙여넣습니다. 이렇게 하면 사이트에서 비디오를 직접 재생할 수 있습니다.
 
-자세히 알아보시겠습니까? [비디오](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)&#x200B;(으)로 이동합니다.
+자세히 알아보시겠습니까? [비디오](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)&#x200B;(으)로 이동합니다.
 
 ### 최적의 품질과 참여를 위한 비디오 구성
 

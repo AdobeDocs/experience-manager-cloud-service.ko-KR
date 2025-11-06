@@ -4,7 +4,7 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 91%
@@ -375,7 +375,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 >[!NOTE]
 >
 >**일반 메타데이터와 배열 메타데이터의 차이점**
->&#x200B;>`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
+>`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
 >
 >따라서 예를 들어 `stringMetadata` 필드를 호출하면 저장소에 `String`으로 저장된 모든 메타데이터의 배열을 수신하고 `stringArrayMetadata`를 호출하면 저장소에 `String[]`으로 저장된 모든 메타데이터의 배열을 수신하게 됩니다.
 
@@ -770,6 +770,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 >[!NOTE]
 >
 >**콘텐츠 참조**&#x200B;는 DAM 자산과 Dynamic Media 자산 모두에 사용할 수 있습니다. 적절한 URL을 검색하려면 다양한 매개변수를 사용합니다.
+>
 >* `_dynamicUrl` : DAM 자산
 >* `_dmS7Url` : Dynamic Media 자산
 > 
@@ -784,13 +785,17 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 * `format`: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL, WEBPLY와 같이 확장자가 지원하는 모든 형식이 포함된 열거형
 * `seoName`: 노드 이름 대신 파일 이름으로 사용할 문자열
 * `crop`: 프레임 하위 구조(폭 또는 높이가 생략되면 높이 또는 폭이 동일한 값으로 사용됨)
+
    * `xOrigin`: 프레임의 x 원점(필수)
    * `yOrigin`: 프레임의 y 원점(필수)
    * `width`: 프레임의 폭
    * `height`: 프레임의 높이
+
 * `size`: 차원 하위 구조(폭 또는 높이가 생략되면 높이 또는 폭이 동일한 값으로 사용됨)
+
    * `width`: 차원의 폭
    * `height`: 차원의 높이
+
 * `rotation`: 지원되는 모든 회전의 열거형: R90, R180, R270
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
 * `quality`: 이미지 품질의 백분율을 나타내는 1~100의 정수
@@ -980,6 +985,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 ### URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 이미지 참조{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 다음은 샘플 쿼리입니다.
+
 * `team` 및 `person` 유형의 여러 가지 콘텐츠 조각의 경우, `ImageRef`를 반환
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 다중 참조{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 다음은 샘플 쿼리입니다.
+
 * `team` 및 `person` 유형의 여러 가지 콘텐츠 조각의 경우, `ImageRef`, `MultimediaRef` 및 `DocumentRef`를 반환:
 
 ```graphql
@@ -1209,10 +1216,11 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * [주어진 모델의 복수 콘텐츠 조각과 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model) 참조
 
   >[!CAUTION]
+  >
   >필터 `includeVariations` 및 시스템 생성 필드 `_variation`은 동일한 쿼리 정의에서 함께 사용할 수 없습니다.
 
 * 논리적 OR을 사용하려는 경우:
-   * ` _logOp: OR` 사용
+   * `_logOp: OR` 사용
    * [샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)을 참조하십시오
 
 * 논리적 AND도 존재하지만 (흔히) 암시적
@@ -1332,7 +1340,7 @@ AEM Cloud Manager에서 배포 파이프라인을 실행하면 파이프라인 �
 
 정확한 결과를 제공하려면 AEM as a Cloud Service **단계** 환경이 **프로덕션** 환경을 최대한 반영해야 합니다. 이는 특히 콘텐츠의 경우 중요합니다.
 
-AEM as a Cloud Service [&#x200B; 콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경으로 복사함으로써 이를 달성할 수 있습니다.
+AEM as a Cloud Service [ 콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경으로 복사함으로써 이를 달성할 수 있습니다.
 
 ## 제한 사항 {#limitations}
 

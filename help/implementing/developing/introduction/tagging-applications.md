@@ -3,8 +3,8 @@ title: AEM 애플리케이션에 태그 지정 빌드
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # AEM 애플리케이션에 태그 지정 빌드 {#building-tagging-into-aem-applications}
 
-사용자 지정 AEM 응용 프로그램 내에서 태그를 프로그래밍 방식으로 작업하거나 태그를 확장하기 위해 이 문서에서는
+사용자 지정 AEM 애플리케이션 내에서 태그를 프로그래밍 방식으로 작업하거나 태그를 확장하기 위해 이 문서에서는
 
 * [API 태그 지정](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -45,7 +45,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-일반적인 Sling 컨텍스트에서는 `ResourceResolver`의 `TagManager`에 적용할 수도 있습니다.
+일반적인 Sling 컨텍스트에서는 `TagManager`의 `ResourceResolver`에 적용할 수도 있습니다.
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -53,7 +53,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Tag 개체 검색 {#retrieving-a-tag-object}
 
-기존 태그를 확인하거나 태그를 만들어 `TagManager`을(를) 통해 `Tag`을(를) 검색할 수 있습니다.
+기존 태그를 확인하거나 태그를 만들어 `Tag`을(를) 통해 `TagManager`을(를) 검색할 수 있습니다.
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -61,7 +61,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-`Tags`을(를) JCR `Nodes`에 매핑하는 JCR 기반 구현의 경우 리소스가 있는 경우(예: `/content/cq:tags/default/my/tag`) Sling의 `adaptTo` 메커니즘을 직접 사용할 수 있습니다.
+`Tags`을(를) JCR `Nodes`에 매핑하는 JCR 기반 구현의 경우 리소스가 있는 경우(예: `adaptTo`) Sling의 `/content/cq:tags/default/my/tag` 메커니즘을 직접 사용할 수 있습니다.
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -76,7 +76,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->`Node`에서 Sling `Adaptable.adaptTo(Class)` 메서드를 구현하지 않으므로 `Node`에서 `Tag`(으)로 직접 조정할 수 없습니다.
+>`Node`에서 Sling `Tag` 메서드를 구현하지 않으므로 `Node`에서 `Adaptable.adaptTo(Class)`(으)로 직접 조정할 수 없습니다.
 
 ### 태그 가져오기 및 설정 {#getting-and-setting-tags}
 
@@ -115,7 +115,7 @@ tagManager.deleteTag(tag);
 
 ### 태그 복제 {#replicating-tags}
 
-태그가 `nt:hierarchyNode` 형식이므로 태그에 복제 서비스(`Replicator`)를 사용할 수 있습니다.
+태그가 `Replicator` 형식이므로 태그에 복제 서비스(`nt:hierarchyNode`)를 사용할 수 있습니다.
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -138,9 +138,9 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 다른 언어로 된 태그 {#tags-in-different-languages}
 
-`title` 태그는 다른 언어로 정의할 수 있습니다. 그런 다음 언어 구분 속성이 태그 노드에 추가됩니다. 이 속성은 프랑스어 번역의 경우 `jcr:title.<locale>` 형식(예: `jcr:title.fr`)을 갖습니다. `<locale>`은(는) 소문자 ISO 로케일 문자열이어야 하며 하이픈/대시(`-`) 대신 밑줄(`_`)을 사용해야 합니다(예: `de_ch`).
+`title` 태그는 다른 언어로 정의할 수 있습니다. 그런 다음 언어 구분 속성이 태그 노드에 추가됩니다. 이 속성은 프랑스어 번역의 경우 `jcr:title.<locale>` 형식(예: `jcr:title.fr`)을 갖습니다. `<locale>`은(는) 소문자 ISO 로케일 문자열이어야 하며 하이픈/대시(`_`) 대신 밑줄(`-`)을 사용해야 합니다(예: `de_ch`).
 
-예를 들어 **Animals** 태그가 **Products** 페이지에 추가되면 `stockphotography:animals` 값이 `/content/wknd/en/products/jcr:content` 노드의 `cq:tags` 속성에 추가됩니다. 번역은 태그 노드에서 참조됩니다.
+예를 들어 **Animals** 태그가 **Products** 페이지에 추가되면 `stockphotography:animals` 값이 `cq:tags` 노드의 `/content/wknd/en/products/jcr:content` 속성에 추가됩니다. 번역은 태그 노드에서 참조됩니다.
 
 서버측 API에 지역화된 `title` 관련 메서드가 있습니다.
 
@@ -163,7 +163,7 @@ AEM에서 언어는 페이지 언어 또는 사용자 언어에서 가져올 수
 
 다음 절차에서는 **태그 편집** 대화 상자에 새로운 언어(예: 핀란드어)를 추가하는 방법을 설명합니다.
 
-1. **CRXDE**&#x200B;에서 `/content/cq:tags` 노드의 다중 값 속성 `languages`을(를) 편집합니다.
+1. **CRXDE**&#x200B;에서 `languages` 노드의 다중 값 속성 `/content/cq:tags`을(를) 편집합니다.
 1. 핀란드어 로케일을 나타내는 `fi_fi`을(를) 추가하고 변경 내용을 저장합니다.
 
 핀란드어는 이제 **태그 지정** 콘솔에서 태그를 편집할 때 페이지 속성의 태그 대화 상자와 **태그 편집** 대화 상자에서 사용할 수 있습니다.

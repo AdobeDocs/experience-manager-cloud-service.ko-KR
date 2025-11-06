@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2145'
 ht-degree: 4%
@@ -247,6 +247,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
      >[!NOTE]
      >
      >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
+
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 사전 설정]**&#x200B;을 선택한 다음 뷰어 사전 설정을 선택합니다.
    * 썸네일을 추가하거나 변경하려면 에셋 오른쪽 옆에 있는 썸네일 아이콘을 선택합니다. 새 썸네일 또는 견본 자산으로 이동하여 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.

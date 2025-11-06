@@ -1,21 +1,21 @@
 ---
-title: Adobe 컨텐츠 패키지 Maven 플러그인
+title: Adobe 콘텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 애플리케이션 배포
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
 
 ---
 
-# Adobe 컨텐츠 패키지 Maven 플러그인 {#adobe-content-package-maven-plugin}
+# Adobe 콘텐츠 패키지 Maven 플러그인 {#adobe-content-package-maven-plugin}
 
 Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 관리 작업을 Maven 프로젝트에 통합합니다.
 
-빌드된 패키지를 AEM에 배포하는 작업은 Adobe Content Package Maven 플러그인에 의해 수행되며, AEM [Package Manager](/help/implementing/developing/tools/package-manager.md)을(를) 사용하여 일반적으로 수행되는 작업을 자동화할 수 있습니다.
+구성된 패키지를 AEM에 배포하는 작업은 Adobe Content Package Maven 플러그인으로 수행되며, AEM [Package Manager](/help/implementing/developing/tools/package-manager.md)을(를) 사용하여 일반적으로 수행되는 작업을 자동화할 수 있습니다.
 
 * 파일 시스템의 파일에서 새 패키지를 만듭니다.
 * AEM에서 패키지를 설치 및 제거합니다.
@@ -23,7 +23,7 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 * AEM에 설치된 패키지 목록을 가져옵니다.
 * AEM에서 패키지를 제거합니다.
 
-이 문서에서는 Maven을 사용하여 이러한 작업을 관리하는 방법을 자세히 설명합니다. 그러나 [AEM 프로젝트와 패키지의 구성 방식](#aem-project-structure)을 이해하는 것도 중요합니다.
+이 문서에서는 Maven을 사용하여 이러한 작업을 관리하는 방법을 자세히 설명합니다. 그러나 [AEM 프로젝트 및 패키지의 구성 방식](#aem-project-structure)을 이해하는 것도 중요합니다.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 >
 >**만들기** 패키지는 이제 [Apache Jackrabbit FileVault 패키지 Maven 플러그인](https://jackrabbit.apache.org/filevault-package-maven-plugin/)에서 소유합니다.
 >
->이 문서에서는 Adobe Content Package Maven 플러그인이 수행한 AEM에 대한 구성된 패키지의 **deployment**&#x200B;에 대해 설명합니다.
+>이 문서에서는 Adobe Content Package Maven 플러그인이 수행하는 AEM에 대한 구성된 패키지의 **deployment**&#x200B;에 대해 설명합니다.
 
 ## 패키지 및 AEM 프로젝트 구조 {#aem-project-structure}
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service은 최신 AEM Project Archetype에 의해 구현된 패�
 
 >[!TIP]
 >
->AEM as a Cloud Service 설명서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko) 문서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### 프록시 {#proxies}
 
-AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. [일반 매개 변수](#common-parameters) 섹션에서 `useProxy` 매개 변수를 참조하십시오.
+AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. `useProxy`일반 매개 변수[ 섹션에서 ](#common-parameters) 매개 변수를 참조하십시오.
 
 ### 일반 매개 변수 {#common-parameters}
 
@@ -106,7 +106,7 @@ AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유
 
 ### 빌드 {#build}
 
-AEM 인스턴스에 이미 정의된 콘텐츠 패키지를 빌드합니다.
+AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 빌드합니다.
 
 >[!NOTE]
 >
@@ -215,4 +215,4 @@ rm 목표의 모든 매개 변수는 [일반 매개 변수](#common-parameters) 
 
 >[!TIP]
 >
->AEM as a Cloud Service 설명서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko) 문서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.
