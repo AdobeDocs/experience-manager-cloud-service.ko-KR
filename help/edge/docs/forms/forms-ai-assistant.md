@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ AI 어시스턴트를 사용하는 가장 좋은 방법은 자연어를 사용�
 "Update the layout to match the attached wireframe"
 ```
 
-### 제출 및 통합
+<!-- 
 
-**기본 제출:**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ AI 어시스턴트를 사용하는 가장 좋은 방법은 자연어를 사용�
 "Redirect to a thank you page"
 ```
 
-**고급 통합:**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## 첨부 파일 작업
 
@@ -281,8 +285,11 @@ AI 어시스턴트는 AEM Forms 기능에 대해서도 알려 줄 수 있습니�
 | `/update-field` | 필드 속성 수정 | `/update-field @email to be required` |
 | `/create-rule` | 동적 비헤이비어 추가 | `/create-rule show @spouse if married` |
 | `/create-panel` | 필드 컨테이너 추가 | `/create-panel Personal Information` |
-| `/configure-submit` | 양식 제출 설정 | `/configure-submit to email support` |
 | `/help` | 도움 받기 | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### 필드 참조 구문
 

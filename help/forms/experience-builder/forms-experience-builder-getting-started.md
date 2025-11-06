@@ -6,10 +6,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 9%
+source-wordcount: '1048'
+ht-degree: 5%
 
 ---
 
@@ -61,12 +61,11 @@ Forms 마법사를 사용하여 [핵심 구성 요소 템플릿](/help/forms/cre
 
 **예:**
 
-    다음을 사용하여 고객 피드백 양식 만들기:
-    &#x200B;- 상품평 (별점 1~5점)
-    &#x200B;- 자세한 피드백을 위한 댓글 필드
-    &#x200B;- 고객 이메일 (선택 사항)
-    &#x200B;- 이메일 알림으로 제출
-
+    
+    - 제품 등급(별 1~5개)
+    - 자세한 피드백에 대한 댓글 필드
+    - 고객 이메일(선택 사항)
+을 사용하여 고객 피드백 양식을 만듭니다.
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
 
@@ -75,7 +74,7 @@ Forms 마법사를 사용하여 [핵심 구성 요소 템플릿](/help/forms/cre
 
 기존 문서를 대화형 디지털 양식으로 변환합니다.
 
-이 옵션을 사용하기 전에 PDF 파일 또는 양식 이미지를 업로드하십시오. PDF은 AcroForm 또는 XFA 기반 PDF 양식일 수 있습니다. [다른 유형의 PDF forms](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)의 경우 Adobe Acrobat의 [양식 준비](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) 옵션을 사용하여 AcroForm으로 변환합니다
+이 옵션을 사용하기 전에 PDF 파일 또는 양식 이미지를 업로드하십시오. PDF은 AcroForm 또는 XFA 기반 PDF 양식일 수 있습니다. [다른 유형의 PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)의 경우 Adobe Acrobat의 [양식 준비](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) 옵션을 사용하여 AcroForm으로 변환합니다
 
 **사용 시기:**
 
@@ -131,9 +130,9 @@ Forms 마법사를 사용하여 [핵심 구성 요소 템플릿](/help/forms/cre
 
     두 개의 드롭다운을 추가
     
-    &#x200B;- 옵션이 있는 inquiryType: &quot;일반 질문&quot;, &quot;지원 요청&quot;, &quot;판매 문의&quot;, &quot;파트너 관계&quot;
+    - 옵션이 있는 inquiryType: &quot;일반 질문&quot;, &quot;지원 요청&quot;, &quot;판매 문의&quot;, &quot;파트너 관계&quot;
     
-    &#x200B;- 옵션이 있는 긴급도 수준(낮음, Medium, 높음)
+    - 옵션이 있는 긴급도 수준(낮음, Medium, 높음)
 
 
 ![Forms Experience Builder에서 자연어 프롬프트를 사용하여 드롭다운 구성 요소를 추가했습니다.](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +166,9 @@ Forms Experience Builder는 다음과 같은 작업을 수행할 수 있는 대�
 
 원하는 내용을 쉬운 영어로 설명:
 
-    &#x200B;- 회사 정보에 대한 섹션 추가
-    &#x200B;- 부서 선택에 대한 드롭다운 만들기
-    &#x200B;- 다시 시작에 대한 파일 업로드 포함
-    &#x200B;- 양식 제출 시 이메일 알림 설정
+    - 회사 정보에 대한 섹션 추가
+    - 부서 선택에 대한 드롭다운 만들기
+    - 다시 시작에 대한 파일 업로드 포함
 
 ### 점진적 구축 {#build-incrementally}
 
@@ -190,57 +188,54 @@ Forms Experience Builder는 다음과 같은 작업을 수행할 수 있는 대�
 **기본 연락처 양식:**
 
     다음 주소로 연락처 양식 만들기:
-    &#x200B;- 이름(필수)
-    &#x200B;- 전자 메일(필수, 유효성 검사)
-    &#x200B;- 제목 드롭다운(일반, 지원, 판매, 파트너 관계)
-    &#x200B;- 메시지(필수, 여러 줄)
-    &#x200B;- 제출 단추
+    - 이름(필수)
+    - 전자 메일(필수, 유효성 검사)
+    - 제목 드롭다운(일반, 지원, 판매, 파트너 관계)
+    - 메시지(필수, 여러 줄)
 
 **고객 피드백 양식:**
 
-    다음을 사용하여 고객 피드백 양식 만들기:
-    &#x200B;- 상품평 (별점 1~5점)
-    &#x200B;- 자세한 피드백을 위한 댓글 필드
-    &#x200B;- 고객 이메일 (선택 사항)
-    &#x200B;- 이메일 알림으로 제출
-
+    
+    - 제품 등급(별 1~5개)
+    - 자세한 피드백에 대한 댓글 필드
+    - 고객 이메일(선택 사항)
+을 사용하여 고객 피드백 양식을 만듭니다.
 ### 등록 및 온보딩 양식 {#registration-onboarding-forms}
 
 **사용자 등록:**
 
     개인 정보(이름, 전자 메일, 전화)를 사용하여 사용자 등록 양식을 만듭니다.
     
-    &#x200B;- 계정 환경 설정(뉴스레터, 알림)
-    &#x200B;- 약관 수락
-    &#x200B;- 보안 강화를 통해 암호 만들기
+    - 계정 환경 설정(뉴스레터, 알림)
+    - 약관 수락
+    - 보안 강화를 통해 암호 만들기
 
 **직원 온보딩:**
 
     다음을 사용하여 직원 온보딩 양식 만들기:
-    &#x200B;- 개인 세부 정보 및 연락처 정보
-    &#x200B;- 취업 정보 및 시작 날짜
-    &#x200B;- 문서 업로드(다시 시작, ID, 세금 양식)
-    &#x200B;- 혜택 선택 및 환경 설정
+    - 개인 세부 정보 및 연락처 정보
+    - 취업 정보 및 시작 날짜
+    - 문서 업로드(다시 시작, ID, 세금 양식)
+    - 혜택 선택 및 환경 설정
 
 ### 설문 조사 및 평가 양식 {#survey-assessment-forms}
 
 **고객 만족도 조사:**
 
     다음 내용으로 고객 만족도 설문 조사 만들기:
-    &#x200B;- 전체 등급(1~10단계)
-    &#x200B;- 카테고리 등급(제품, 서비스, 지원)
-    &#x200B;- 개방형 피드백 섹션
-    &#x200B;- 인구 통계 정보(선택 사항)
+    - 전체 등급(1~10단계)
+    - 카테고리 등급(제품, 서비스, 지원)
+    - 개방형 피드백 섹션
+    - 인구 통계 정보(선택 사항)
 
 **기술 평가:**
 
     
-    &#x200B;- 숙련도 수준이 있는 기술 범주
-    &#x200B;- 각 기술에 대한 경험 기간
-    &#x200B;- 인증 및 교육 정보
-    &#x200B;- 자체 평가 및 목표
+    - 숙련도 수준이 있는 기술 범주
+    - 각 기술에 대한 경험 기간
+    - 인증 및 교육 정보
+    - 자체 평가 및 목표
 (으)로 기술 평가 양식을 만듭니다.
-
 ## 테스트 및 유효성 검사 {#testing-validation}
 
 ### 항상 양식 테스트 {#always-test-forms}
@@ -276,21 +271,29 @@ Forms Experience Builder는 다음과 같은 작업을 수행할 수 있는 대�
     파일 형식 유효성 검사 추가: PDF, DOC, DOCX만 @resume
     파일 크기 제한 추가: @resume 최대 5MB
 
-## 다음 단계 {#next-steps}
+<!-- 
 
-기본 사항을 이해했으므로 다음 고급 항목을 살펴보십시오.
+## Next steps {#next-steps}
 
-* **[LLM 강화 스마트 필드](forms-experience-builder-llm-smart-fields.md)** - AI 지식을 사용하여 미리 채워진 옵션을 사용하여 필드를 만듭니다.
-* **[AI 기반 양식 만들기](forms-experience-builder-prompt-examples-library.md)** - 고급 프롬프트 패턴 및 예제
-* **[지능적인 가져오기 및 변환](intelligent-import-conversion.md)** - 기존 문서를 양식으로 변환
-* **[양식 제출 및 통합](form-submission-integration.md)** - 양식을 비즈니스 시스템에 연결
+Now that you understand the basics, explore these advanced topics:
+
+* **[LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)** - Create fields with pre-populated options using AI knowledge
+* **[AI-powered form creation](forms-experience-builder-prompt-examples-library.md)** - Advanced prompt patterns and examples
+* **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
+* **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
+
+-->
 
 
 ## 관련 문서
 
 * [Forms Experience Builder 개요](product-overview.md)
-* [LLM 향상 스마트 필드](forms-experience-builder-llm-smart-fields.md)
-* [AI 기반 양식 만들기](forms-experience-builder-prompt-examples-library.md)
-* [지능적인 가져오기 및 전환](intelligent-import-conversion.md)
-* [양식 제출 및 통합](form-submission-integration.md)
-* [자주 묻는 질문](forms-experience-builder-frequently-asked-questions.md)
+
+<!-- 
+* [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
+* [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
+* [Intelligent import and conversion](intelligent-import-conversion.md)
+* [Form submission and integration](form-submission-integration.md)
+* [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->

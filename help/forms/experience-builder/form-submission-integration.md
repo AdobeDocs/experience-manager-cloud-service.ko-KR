@@ -7,10 +7,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 2%
+source-wordcount: '890'
+ht-degree: 0%
 
 ---
 
@@ -121,7 +121,6 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
     - 부서가 &quot;Sales&quot;인 경우 sales-hr@company.com
     - 기본값을 hr@company.com
 으로 보냅니다.
-
 ### 3단계: API 통합 설정
 
 **REST API 구성:**
@@ -317,10 +316,15 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
 - 기술 지원이 필요한 경우 시스템 관리자에게 문의하십시오
 - 외부 서비스에 대한 API 설명서 참조
 
-## 관련 문서
+<!-- 
+## Related articles
 
-- [Forms Experience Builder 개요](product-overview.md)
-- [Forms Experience Builder 시작하기](forms-experience-builder-getting-started.md)
-- [Forms Experience Builder 배포 및 구성](deploy-forms-experience-builder.md)
-- [지능적인 가져오기 및 전환](intelligent-import-conversion.md)
-- [자주 묻는 질문](forms-experience-builder-frequently-asked-questions.md)
+- [Forms Experience Builder Overview](product-overview.md)
+- [Getting started with Forms Experience Builder](forms-experience-builder-getting-started.md)
+- [Deploy and configure Forms Experience Builder](deploy-forms-experience-builder.md)
+- [Intelligent import and conversion](intelligent-import-conversion.md)
+- [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->
+
+
