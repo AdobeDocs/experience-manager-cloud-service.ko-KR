@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 68%
+source-wordcount: '1666'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 68%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites의 새로운 기능 {#new-sites}
 
-* AEM 콘텐츠 조각용 [콘텐츠 모델 편집기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)가 AEM의 다른 React Spectrum 기반 인터페이스와 일치하도록 현대화되었습니다. 이제 사용자 인터페이스 구현 및 확장성 모델은 콘텐츠 조각 편집기 및 범용 편집기와 일치합니다. 새 모델 편집기는 새 콘텐츠 모델 관리 UI에서 열면 기본적으로 제공됩니다. Touch UI에서 콘텐츠 모델을 열면 Touch UI 편집기가 열리고 새 편집기를 사용할 수 있습니다.
+* [콘텐츠 조각용 시작](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): 콘텐츠 작성자는 이제 콘텐츠 조각용 시작을 사용하여 구조화된 콘텐츠의 향후 변형을 만들고 예약할 수 있습니다. 새로운 콘텐츠 조각 콘솔을 사용하면 소스 분기와 동기화할 수 있는 향후 콘텐츠를 위한 분기로 콘텐츠 조각 시작을 생성, 편집, 관리 및 예약할 수 있습니다. 새로운 비교 보기는 향후 게시를 위해 Launch를 커밋하기 전에 모든 콘텐츠 변경 사항에 대한 명확한 개요를 제공합니다.
 
-* [콘텐츠 조각에 대한 실행](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): 콘텐츠 조각 콘솔의 실행 탭에서 실행을 만들고, 기존 실행을 모두 나열하고, 주요 속성을 확인하고, 이러한 속성에 대해 작업을 수행할 수 있습니다.
+* AEM 콘텐츠 조각용 [콘텐츠 모델 편집기](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)가 AEM의 다른 React Spectrum 기반 인터페이스와 일치하도록 현대화되었습니다. 이제 사용자 인터페이스 구현 및 확장성 모델은 콘텐츠 조각 편집기 및 범용 편집기와 일치합니다. 새 모델 편집기는 새 콘텐츠 모델 관리 UI에서 열면 기본적으로 제공됩니다. Touch UI에서 콘텐츠 모델을 열면 Touch UI 편집기가 열리고 새 편집기를 사용할 수 있습니다.
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
