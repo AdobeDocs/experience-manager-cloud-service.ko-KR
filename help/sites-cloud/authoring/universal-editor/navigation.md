@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
+source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1820'
 ht-degree: 19%
 
 ---
@@ -61,7 +61,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 UI는 이러한 기본 영역으로 나뉩니다.
 
-* [Experience Cloud 헤더](#experience-cloud-header)
+* [Experience Platform 상단 탐색 막대](#experience-cloud-header)
 * [범용 편집기 도구 모음](#universal-editor-toolbar)
 * [편집기](#editor)
 * [속성 패널](#properties-rail)
@@ -78,7 +78,7 @@ Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
