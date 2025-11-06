@@ -77,7 +77,7 @@ Adobe I/O CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단
 
 1. Cloud Manager 플러그인으로 Adobe I/O CLI를 다운로드하십시오.
 
-   * [Adobe CLI 플러그인과 함께 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 ](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * [Adobe CLI 플러그인과 함께 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)Adobe I/O CLI[를 다운로드, 설정 및 사용하는 방법은 &#x200B;](https://github.com/adobe/aio-cli)Cloud Manager Cloud Manager 설명서[를 참조하십시오.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. AEM as a Cloud Service 프로그램을 사용하여 Adobe I/O CLI를 인증합니다.
 

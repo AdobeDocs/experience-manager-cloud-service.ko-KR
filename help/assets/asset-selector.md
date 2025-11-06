@@ -416,7 +416,7 @@ Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[의 ](#asset-selector-properties) 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[의 &#x200B;](#asset-selector-properties) 속성으로 이동하십시오.
 
 +++
 
@@ -609,7 +609,7 @@ OpenAPI 기능이 있는 Dynamic Media용 에셋 선택기를 사용하면 사�
 
 ![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [ 속성의 사용을 이해하려면 ](#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
+AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [&#x200B; 속성의 사용을 이해하려면 &#x200B;](#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property

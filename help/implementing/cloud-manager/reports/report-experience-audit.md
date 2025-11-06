@@ -119,7 +119,7 @@ Cloud Manager은 **성능**, **접근성**, **모범 사례**, **SEO**&#x200B;�
 다음을 수행하여 전체 경험 감사 보고서를 볼 수 있습니다.
 
 * **`View full report`**&#x200B;가장 느린 5페이지&#x200B;**[대화 상자에서](#view-slowest-pages)**&#x200B;을(를) 클릭합니다.
-* **`View full report`**&#x200B;파이프라인 실행[을 볼 때 ](#results)을(를) 클릭합니다.
+* **`View full report`**&#x200B;파이프라인 실행[을 볼 때 &#x200B;](#results)을(를) 클릭합니다.
 * Cloud Manager에서 **보고서** 탭을 클릭합니다.
 
 Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시합니다.

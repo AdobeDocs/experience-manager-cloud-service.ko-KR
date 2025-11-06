@@ -48,7 +48,7 @@ ht-degree: 29%
 1. 사이드 메뉴에서 **환경**&#x200B;을 클릭합니다.
 1. **환경** 페이지에서 환경 변수를 추가할 환경이 있는 테이블의 행을 선택합니다.
 1. 환경의 세부 정보 페이지에서 **구성** 탭을 클릭합니다.
-1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**를 클릭합니다.
+1. ![추가/업데이트 - 원 아이콘 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가/업데이트**&#x200B;를 클릭합니다.
 환경 변수를 처음 추가하는 경우 페이지 중앙에 있는 **구성 추가**&#x200B;를 클릭합니다.
 
    ![구성 탭](assets/configuration-tab.png)
@@ -127,7 +127,7 @@ Adobe 여러 변수를 업데이트하려면 **저장**&#x200B;을 클릭하기 
 
 `${env.VARIABLE_NAME}`
 
-[ 파일에서 두 가지 유형의 변수를 모두 사용하는 방법에 대한 예는 ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)프로젝트 설정`pom.xml`을 참조하십시오.
+[&#x200B; 파일에서 두 가지 유형의 변수를 모두 사용하는 방법에 대한 예는 &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)프로젝트 설정`pom.xml`을 참조하십시오.
 
 자세한 내용은 [공식 Maven 설명서](https://maven.apache.org/settings.html#quick-overview)를 참조하십시오.
 

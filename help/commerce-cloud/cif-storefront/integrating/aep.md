@@ -88,7 +88,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!IMPORTANT]
 >
->`--force`PWA Studio[이(가) 지원되는 피어 종속으로 제한되어 있으므로 ](https://developer.adobe.com/commerce/pwa-studio/) 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
+>`--force`PWA Studio[이(가) 지원되는 피어 종속으로 제한되어 있으므로 &#x200B;](https://developer.adobe.com/commerce/pwa-studio/) 인수가 필요한 경우가 있습니다. 일반적으로 이로 인해 문제가 발생하지 않습니다.
 
 
 ### `--force` 인수를 사용하도록 Maven 구성

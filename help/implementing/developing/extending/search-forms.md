@@ -544,7 +544,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 * **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
-* **설정** 탭의 필드 레이블에 있는 &amp;ast;는 필드가 필수임을 의미하며 비워 두면 오류 메시지가 나타납니다.
+* **설정** 탭의 필드 레이블에 있는 &ast;는 필드가 필수임을 의미하며 비워 두면 오류 메시지가 나타납니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 

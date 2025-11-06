@@ -36,7 +36,7 @@ ht-degree: 34%
 
 * **제목** - SEO 목적으로 페이지 메타 제목과 페이지 콘텐츠에 표시되는 제목을 정의합니다(재정의되지 않은 경우).
 
-   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[ 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[&#x200B; 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 필수 필드입니다.
 
 * **태그** - SEO 용도로 페이지 메타 태그를 정의합니다.

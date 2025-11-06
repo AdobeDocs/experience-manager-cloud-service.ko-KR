@@ -459,7 +459,7 @@ JSONP 서비스의 URL을 검색합니다.
 
 #### queryService(다시 로드) {#queryservice-reload}
 
-원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 `config.service.ttl` 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. 선택적으로 서비스를 강제로 호출할 수 있습니다. 저장소를 초기화하기 위해 `config.service.ttl`init[ 함수를 호출할 때 ](#init-name-config)속성이 설정됩니다.
+원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 `config.service.ttl` 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. 선택적으로 서비스를 강제로 호출할 수 있습니다. 저장소를 초기화하기 위해 `config.service.ttl`init[&#x200B; 함수를 호출할 때 &#x200B;](#init-name-config)속성이 설정됩니다.
 
 쿼리가 완료되면 준비 이벤트를 트리거합니다. JSONP 서비스 URL이 설정되지 않은 경우 함수는 아무 작업도 하지 않습니다.
 
@@ -667,7 +667,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-ContextHub 저장소 이벤트에 함수를 바인딩 및 바인딩 해제할 수 있습니다. 저장소의 `ContextHub.Utils.Eventing`eventing[ 속성을 사용하여 저장소의 ](#eventing) 개체에 액세스합니다.
+ContextHub 저장소 이벤트에 함수를 바인딩 및 바인딩 해제할 수 있습니다. 저장소의 `ContextHub.Utils.Eventing`eventing[&#x200B; 속성을 사용하여 저장소의 &#x200B;](#eventing) 개체에 액세스합니다.
 
 ### 함수(ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 

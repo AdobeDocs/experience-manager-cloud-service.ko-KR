@@ -90,7 +90,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
      >[!NOTE]
      >
-     > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [ 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
+     > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [&#x200B; 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
    * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하십시오.
 
@@ -206,7 +206,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
-> 관리 양식을 템플릿으로 저장할 수도 있습니다. 자세한 내용은 [ 적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)를 참조하십시오.
+> 관리 양식을 템플릿으로 저장할 수도 있습니다. 자세한 내용은 [&#x200B; 적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)를 참조하십시오.
 
 ## AEM 적응형 양식의 이름을 변경하는 방법 {#rename-an-AEM-Adaptive-Form}
 

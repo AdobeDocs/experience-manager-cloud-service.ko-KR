@@ -135,7 +135,7 @@ replic.action=Activate
 >다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 식을 만드는 방법을 설명합니다. 행 단위로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하세요.
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을(를) 확장하는 새 Java 클래스 만들기
-1. `@Component`통합 비교 형식[으로 표시되는 코드 조각과 같은 ](https://en.wikipedia.org/wiki/Diff#Unified_format)&#x200B;(으)로 클래스에 주석을 답니다.
+1. `@Component`통합 비교 형식[으로 표시되는 코드 조각과 같은 &#x200B;](https://en.wikipedia.org/wiki/Diff#Unified_format)&#x200B;(으)로 클래스에 주석을 답니다.
 
    ```text
    @@ -19,8 +19,11 @@

@@ -57,9 +57,9 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
          1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**을(를) 선택합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL hCaptcha®]**&#x200B;을(를) 선택합니다.
       ui의 ![hCaptcha®](assets/hcaptcha-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
       ![구성 hCaptcha®](assets/config-hcaptcha.png)
    1. 필수 구성 요소에서 구한 **[!UICONTROL hCaptcha® 서비스]**&#x200B;에 대해 **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL 사이트 키]** 및 [비밀 키](#prerequisite)를 지정하십시오. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 

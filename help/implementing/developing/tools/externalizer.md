@@ -54,7 +54,7 @@ To override the `preview` and `publish` values, use Cloud Manager environment va
 
 >[!NOTE]
 >
->AEM as a Cloud Service[에 대해 ](/help/implementing/deploying/overview.md#osgi-configuration)OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
+>AEM as a Cloud Service[에 대해 &#x200B;](/help/implementing/deploying/overview.md#osgi-configuration)OSGi 구성을 적용할 때와 마찬가지로 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
 
 외부화 서비스에 대한 도메인 매핑을 정의하려면
 

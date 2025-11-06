@@ -350,7 +350,7 @@ Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 이러�
 
 앞의 예에서 `model.text`은(는) 콘텐츠에 콘텐츠가 있고 표시되는 경우에만 true인 변수입니다.
 
-이 템플릿의 사용 예는 제목 구성 요소 [에서와 같이 핵심 구성 요소 ](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)에서 볼 수 있습니다.
+이 템플릿의 사용 예는 제목 구성 요소 [에서와 같이 핵심 구성 요소 &#x200B;](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)에서 볼 수 있습니다.
 
 ### cq:EditConfig 하위 노드로 구성 {#configuring-with-cq-editconfig-child-nodes}
 

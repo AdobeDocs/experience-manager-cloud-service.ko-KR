@@ -43,7 +43,7 @@ AEM의 편집 가능한 외부 SPA에 대한 자세한 내용은 [AEM에서 외�
 
 ## 제한 사항 {#limitations}
 
-* RemotePage 구성 요소에서는 구현이 [여기에 있는 ](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
+* RemotePage 구성 요소에서는 구현이 [여기에 있는 &#x200B;](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
 * 애플리케이션의 루트 HTML 파일에 정의된 내부 CSS 및 루트 DOM 노드의 인라인 CSS는 AEM에서 원격 렌더링을 수행할 때 사용할 수 없습니다.
 
 ## 기술 세부 정보 {#technical-details}

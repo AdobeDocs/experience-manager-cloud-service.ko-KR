@@ -231,7 +231,7 @@ Adobe은 애플리케이션 성능을 모니터링하고 성능 저하가 관찰
 
 ### 아웃바운드 이메일 활성화 {#enabling-outbound-email}
 
-기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화되어 있습니다. 포트를 활성화하려면 필요한 각 환경에 대해 원하는 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 [ 끝점의 포트 전달 규칙을 설정하도록 ](/help/security/configuring-advanced-networking.md)고급 네트워킹`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`을 구성하십시오.
+기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화되어 있습니다. 포트를 활성화하려면 필요한 각 환경에 대해 원하는 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 [&#x200B; 끝점의 포트 전달 규칙을 설정하도록 &#x200B;](/help/security/configuring-advanced-networking.md)고급 네트워킹`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`을 구성하십시오.
 
 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 `kind` 매개 변수가 `flexiblePortEgress`(으)로 설정된 고급 네트워킹을 구성하는 것이 좋습니다. 고유한 이그레스 IP 주소가 필요한 경우 `kind`의 `dedicatedEgressIp` 매개 변수를 선택하십시오. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유 IP 주소를 사용할 수도 있습니다.
 
@@ -247,7 +247,7 @@ AEM의 전자 메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experie
 
 전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)를 참조하세요. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스에 대해 다음과 같은 필요한 조정을 참고하십시오.
 
-* SMTP 서버 호스트 이름을 $[env:AEM_PROXY_HOST;default=proxy.tunnel](으)로 설정해야 합니다.
+* SMTP 서버 호스트 이름을 $[env:AEM_PROXY_HOST;default=proxy.tunnel] (으)로 설정해야 합니다.
 * SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용되는 portForwards 매개변수에 설정된 원래 프록시 포트의 값으로 설정되어야 합니다. 예를 들어 30465(465가 아님)
 
 SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용되는 portForwards 매개 변수에 설정된 `portDest` 값으로 설정되어야 하며 `portOrig` 값은 필요한 30000 - 30999 범위 내에 있는 의미 있는 값이어야 합니다. 예를 들어 SMTP 서버 포트가 465이면 포트 30465을 `portOrig` 값으로 사용해야 합니다.

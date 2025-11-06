@@ -370,8 +370,8 @@ When creating an editable template, the value is copied from the template type t
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
 1. 임의의 페이지 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)을 참조하세요. 이 작업은 템플릿 유형의 기반으로 사용됩니다.
-1. CRXDE Lite을 사용하여 `templates` 노드에서 `template-types`템플릿 폴더[ 아래의 ](#template-folders) 노드로 만든 템플릿을 복사합니다.
-1. `templates`템플릿 폴더[ 아래의 ](#template-folders) 노드에서 템플릿을 삭제하십시오.
+1. CRXDE Lite을 사용하여 `templates` 노드에서 `template-types`템플릿 폴더[&#x200B; 아래의 &#x200B;](#template-folders) 노드로 만든 템플릿을 복사합니다.
+1. `templates`템플릿 폴더[&#x200B; 아래의 &#x200B;](#template-folders) 노드에서 템플릿을 삭제하십시오.
 1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `cq:template` 노드에서 모든 `cq:templateType` 및 `jcr:content` 속성을 삭제합니다.
 
 GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 자체 템플릿 유형을 개발할 수도 있습니다.

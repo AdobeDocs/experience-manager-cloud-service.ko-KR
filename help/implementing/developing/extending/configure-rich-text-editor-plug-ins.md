@@ -261,7 +261,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 
 ### 팝업 목록에서 사용 가능한 스타일 지정 {#stylesindropdown}
 
-1. `<rtePlugins-node>/styles`스타일 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 ](#styleselectorlist) 노드로 이동합니다.
+1. `<rtePlugins-node>/styles`스타일 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 &#x200B;](#styleselectorlist) 노드로 이동합니다.
 1. `styles` 노드 아래에서 사용 가능한 목록을 보유할 노드(`styles`)를 만듭니다.
 
    * **이름** `styles`
@@ -363,7 +363,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치됩니다. 기�
 
 단락 형식은 다음 방법으로 선택할 수 있습니다.
 
-1. `<rtePlugins-node>/paraformat`형식 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 ](#styleselectorlist) 노드로 이동합니다.
+1. `<rtePlugins-node>/paraformat`형식 드롭다운 선택기 사용[에서 만든 대로 구성 요소 정의에서 &#x200B;](#styleselectorlist) 노드로 이동합니다.
 1. `paraformat` 노드 아래에서 형식 목록을 보관할 노드를 만듭니다.
 
    * **이름** `formats`

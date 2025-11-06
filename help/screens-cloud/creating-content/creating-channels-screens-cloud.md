@@ -78,7 +78,7 @@ Screens as a Cloud Service에서 시퀀스 채널을 만들려면 아래 단계�
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >채널의 내용을 미리 보려면 **미리 보기**를 클릭하십시오.
+   >채널의 내용을 미리 보려면 **미리 보기**&#x200B;를 클릭하십시오.
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 만들기 마법사에서 사용할 수 있는 템플릿 {#available-templates}
@@ -123,7 +123,7 @@ Screens as a Cloud Service에서 시퀀스 채널을 만들려면 아래 단계�
 
 기본 할당 세부 정보가 있는 채널을에 할당하면 일반 채널과 동일한 방식으로 표시할 수 있으며, 매번 사용자 지정 세부 정보를 수동으로 정의하는 대신 기본 할당 세부 정보를 사용하는 옵션이 추가되었습니다.
 
-1. 채널을 할당할 디스플레이 세부 정보 페이지로 이동하여 **채널 할당**을 클릭합니다.
+1. 채널을 할당할 디스플레이 세부 정보 페이지로 이동하여 **채널 할당**&#x200B;을 클릭합니다.
 또는 [인벤토리](https://experience.adobe.com/screens/displays) 보기에서 원하는 표시를 선택하고 **채널 할당**&#x200B;을 클릭합니다.
 1. 채널 할당 대화 상자가 열립니다.
 

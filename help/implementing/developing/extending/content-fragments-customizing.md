@@ -100,7 +100,7 @@ Assets 코어와 통합하려면 다음을 수행하십시오.
 >
 >[콘텐츠 조각 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)의 일부입니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)을 참조하십시오.
 
-다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 **[구성 요소인 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)콘텐츠 조각 핵심 구성 요소**[를 제공합니다](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 이 **[콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 핵심 구성 요소를 확장할 수도 있습니다.
+다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 **[구성 요소인 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)콘텐츠 조각 핵심 구성 요소**&#x200B;[를 제공합니다](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 이 **[콘텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 핵심 구성 요소를 확장할 수도 있습니다.
 
 * 구성 요소는 `fragmentPath` 속성을 사용하여 실제 콘텐츠 조각을 참조합니다. `fragmentPath` 속성은 다른 에셋 유형의 유사한 속성과 동일한 방식으로 처리됩니다. 예를 들어 콘텐츠 조각을 다른 위치로 이동할 때 사용됩니다.
 

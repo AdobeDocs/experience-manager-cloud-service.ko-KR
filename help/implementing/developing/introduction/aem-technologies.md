@@ -245,7 +245,7 @@ Sling 내에서 스크립트는 REST 서버의 엄격한 개념을 손상시킬 
 
 Sling API 패키지, `org.apache.sling.*` 및 태그 라이브러리를 사용합니다.
 
-### sling:include {#referencing-existing-elements-using-sling-include}을(를) 사용하여 기존 요소 참조
+### sling:include을(를) 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
 
 마지막으로 스크립트 내의 기존 요소를 참조해야 한다는 점을 고려해야 합니다.
 

@@ -112,7 +112,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 다음 절차를 통해 AEM에서 Target 클라우드 구성을 만드십시오.
 
-1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**로 이동합니다.
+1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **레거시 클라우드 서비스**&#x200B;로 이동합니다.
 예: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Experience Cloud** 개요 페이지가 열립니다.

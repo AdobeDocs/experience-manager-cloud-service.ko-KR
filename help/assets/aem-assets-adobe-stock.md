@@ -199,15 +199,15 @@ To configure the IMS account:
    ![health-check](assets/aem-stock-healthcheck.png)
 -->
 
-1. [ [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
-1. [ [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
+1. [&#x200B; [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
+1. [&#x200B; [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console]에서 프로그램 설정 {#set-up-a-program-in-developer-console}
 
 [!DNL Developer Console]에서 프로그램을 설정하려면 다음 단계를 수행하십시오.
 
 1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)&#x200B;(으)로 이동하여 조직에 로그인합니다.
-1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**를 선택하십시오.
+1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 선택하십시오.
    ![aem assets와 adobe stock 통합](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -216,7 +216,7 @@ To configure the IMS account:
 
    ![aem assets와 adobe stock 통합](/help/assets/assets/adc-project-name.png)
 
-1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. [!DNL OAuth Server-to-Server]클라이언트 ID **[!UICONTROL ,]**&#x200B;클라이언트 암호&#x200B;**[!UICONTROL ,]**&#x200B;범위&#x200B;**[!UICONTROL ,]**&#x200B;자격 증명 이름&#x200B;**[!UICONTROL ,]**&#x200B;기술 계정 ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 부터]** AEM 작성자 인스턴스에 구성을 추가[까지 프로젝트의 이러한 ](#add-configuration-in-the-aem-author-instance) 자격 증명 세부 정보를 사용하십시오.
+1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. [!DNL OAuth Server-to-Server]클라이언트 ID **[!UICONTROL ,]**&#x200B;클라이언트 암호&#x200B;**[!UICONTROL ,]**&#x200B;범위&#x200B;**[!UICONTROL ,]**&#x200B;자격 증명 이름&#x200B;**[!UICONTROL ,]**&#x200B;기술 계정 ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 부터]** AEM 작성자 인스턴스에 구성을 추가[까지 프로젝트의 이러한 &#x200B;](#add-configuration-in-the-aem-author-instance) 자격 증명 세부 정보를 사용하십시오.
 
    ![aem assets 및 adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
@@ -224,8 +224,8 @@ To configure the IMS account:
 
 다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에 구성을 추가합니다.
 
-1. [ [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새  [!DNL AEM] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [ [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
+1. [&#x200B; [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새  [!DNL AEM] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [&#x200B; [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### [!DNL Adobe Stock IMS configuration] 인스턴스에서 새 [!DNL AEM author] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
@@ -405,7 +405,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!NOTE]
 >
->[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [!DNL Adobe Stock]자산을 저장[!DNL Experience Manager] 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets)한 후에만 [자산을 가져와서 ](/help/assets/aem-assets-adobe-stock.md#licenseassets) 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
+>[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [!DNL Adobe Stock]자산을 저장[!DNL Experience Manager] 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets)한 후에만 [자산을 가져와서 &#x200B;](/help/assets/aem-assets-adobe-stock.md#licenseassets) 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
 
 ![검색 필터 [!DNL Experience Manager] 및 강조 표시된 [!DNL Adobe Stock]개 자산을 검색 결과에서](assets/aem-search-filters2.jpg)
 

@@ -71,7 +71,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 * 둘의 조합.
 
-첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이 문이 불가능한 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되지 않으며 Java™ 문서에 나열되지 않습니다. 이론적으로 `AdapterFactory`OSGi[ 서비스 런타임에서 모든 ](/help/implementing/deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 이 참조입니다.
+첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이 문이 불가능한 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되지 않으며 Java™ 문서에 나열되지 않습니다. 이론적으로 `AdapterFactory`OSGi[&#x200B; 서비스 런타임에서 모든 &#x200B;](/help/implementing/deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 이 참조입니다.
 
 ## 참조 {#reference}
 
@@ -359,4 +359,4 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 기타 {#other}
 
-또한 Sling/JCR/OCM은 사용자 지정 OCM([`AdapterFactory`개체 콘텐츠 매핑](https://sling.apache.org/documentation/the-sling-engine/adapters.html)) 개체에 대해 [](https://jackrabbit.apache.org/jcr/object-content-mapping.html)을(를) 제공합니다.
+또한 Sling/JCR/OCM은 사용자 지정 OCM([`AdapterFactory`개체 콘텐츠 매핑](https://sling.apache.org/documentation/the-sling-engine/adapters.html)) 개체에 대해 [&#128279;](https://jackrabbit.apache.org/jcr/object-content-mapping.html)을(를) 제공합니다.

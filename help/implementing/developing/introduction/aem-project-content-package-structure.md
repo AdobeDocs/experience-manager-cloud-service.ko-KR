@@ -21,7 +21,7 @@ ht-degree: 4%
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 이 패키지에는 코드, 구성 및 지원하는 모든 기본 콘텐츠를 포함하여 애플리케이션이 기능하는 데 필요한 모든 것을 구성하는 하위 패키지가 포함되어야 합니다.
 
-AEM은 **content**&#x200B;과(와) **code**&#x200B;을(를) 분리해야 합니다. 이는 단일 콘텐츠 패키지가 저장소의 **7}** 및 런타임 쓰기 가능 영역(예: **,**, `/apps` 또는 `/content`이(가) 아닌 모든 영역)에 배포될 수 `/conf`없습니다`/home`. `/apps` Instead, the application must separate code and content into discrete packages for deployment into AEM.
+AEM은 **content**&#x200B;과(와) **code**&#x200B;을(를) 분리해야 합니다. 이는 단일 콘텐츠 패키지가 저장소의 **7&rbrace;** 및 런타임 쓰기 가능 영역(예: **,**, `/apps` 또는 `/content`이(가) 아닌 모든 영역)에 배포될 수 `/conf`없습니다`/home`. `/apps` Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
 The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 
@@ -43,7 +43,7 @@ AEM의 `/apps` 및 `/libs` 영역은 AEM이 시작된 후(즉, 런타임 시) �
 
 Oak 인덱스(`/oak:index`)는 AEM as a Cloud Service 배포 프로세스에서 관리됩니다. Cloud Manager은 새 코드 이미지로 전환하기 전에 새 색인이 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
 
-이러한 이유로 Oak 색인은 런타임 시 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 아래에 설명된 대로 [ 콘텐츠 패키지의 일부가 아닙니다](#recommended-package-structure).
+이러한 이유로 Oak 색인은 런타임 시 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 아래에 설명된 대로 [&#x200B; 콘텐츠 패키지의 일부가 아닙니다](#recommended-package-structure).
 
 >[!TIP]
 >
@@ -95,7 +95,7 @@ Oak 인덱스(`/oak:index`)는 AEM as a Cloud Service 배포 프로세스에서 
 
 + `all` 패키지는 배포 가능한 아티팩트, OSGI 번들 Jar 파일, `ui.apps`, `ui.config` 및 `ui.content` 패키지만 포함된 컨테이너 패키지입니다. `all` 패키지에는 자체 **콘텐츠 또는 코드**&#x200B;가 없어야 하며, 대신 모든 배포를 저장소에 하위 패키지 또는 OSGi 번들 Jar 파일로 위임해야 합니다.
 
-  이제 패키지가 [ 구성이 아닌 Maven ](#embeddeds)FileVault 패키지 Maven 플러그인의 임베드된 구성`<subPackages>`을 사용하여 포함됩니다.
+  이제 패키지가 [&#x200B; 구성이 아닌 Maven &#x200B;](#embeddeds)FileVault 패키지 Maven 플러그인의 임베드된 구성`<subPackages>`을 사용하여 포함됩니다.
 
   복잡한 Experience Manager 배포의 경우 AEM의 특정 사이트 또는 테넌트를 나타내는 `ui.apps`, `ui.config` 및 `ui.content`개의 프로젝트/패키지를 여러 개 만드는 것이 좋습니다. 이 방법을 사용하는 경우 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할이 준수되는지, 필요한 콘텐츠 패키지와 OSGi 번들 Jar 파일이 `all` 컨테이너 콘텐츠 패키지에 하위 패키지로 포함되는지 확인하십시오.
 
@@ -246,7 +246,7 @@ AEM 작성자, AEM 게시 또는 두 가지 모두를 타겟팅하기 위해 패
 + 네 번째 수준 폴더는 하위 패키지를 포함하며 다음 중 하나여야 합니다.
    + `install` 따라서 **모두** AEM 작성자 및 AEM 게시에 설치합니다.
    + `install.author` 따라서 AEM 작성자에 **only**&#x200B;을(를) 설치합니다.
-   + `install.publish`을(를) 통해 AEM 게시에서 **only**을(를) 설치했습니다.
+   + `install.publish`을(를) 통해 AEM 게시에서 **only**&#x200B;을(를) 설치했습니다.
 `install.author` 및 `install.publish`만 지원되는 대상입니다. Other run modes **are not** supported.
 
 예를 들어 AEM 작성자 및 게시 특정 패키지를 포함하는 배포는 다음과 같을 수 있습니다.

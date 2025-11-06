@@ -349,9 +349,9 @@ p.nodedepth=5
 
 자세한 조건자는 [Query Builder 조건자 참조 페이지](query-builder-predicates.md)를 참조하십시오.
 
-[ 클래스`PredicateEvaluator`에 대한 ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+[&#x200B; 클래스`PredicateEvaluator`에 대한 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
-클래스 이름의 접두사(예: `similar`[`SimilarityPredicateEvaluator`의 ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html))는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
+클래스 이름의 접두사(예: `similar`[`SimilarityPredicateEvaluator`의 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html))는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
 
 이러한 주 속성의 경우 쿼리를 줄이고 정규화된 변형 `similar=/content/en` 대신 `similar.similar=/content/en`을(를) 사용할 수 있습니다. 클래스의 모든 비주요 속성에 대해 정규화된 양식을 사용해야 합니다.
 

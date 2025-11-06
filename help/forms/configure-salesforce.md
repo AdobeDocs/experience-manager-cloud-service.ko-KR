@@ -20,11 +20,11 @@ ht-degree: 0%
 * [!DNL Salesforce] 서버에 데이터를 쿼리하고 적응형 Forms을 미리 채웁니다.
 * [!DNL Salesforce] 서버에서 데이터를 읽습니다.
 
-[!DNL Salesforce]Experience Manager archetype을 기반으로 Forms용 개발 프로젝트를 설정[!DNL AEM Forms]한 후 [ 서버에서 ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 클라우드 서비스 및 양식 데이터 모델(FDM)을 즉시 사용할 수 있습니다.
+[!DNL Salesforce]Experience Manager archetype을 기반으로 Forms용 개발 프로젝트를 설정[!DNL AEM Forms]한 후 [&#x200B; 서버에서 &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 클라우드 서비스 및 양식 데이터 모델(FDM)을 즉시 사용할 수 있습니다.
 
 >[!NOTE]
 >
->[!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델(FDM)은 [!DNL Experience Manager Forms]AEM Archetype 30[!DNL Cloud Service] 이상을 기반으로 [을(를) ](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 프로젝트로 설정하는 경우에만 즉시 사용할 수 있습니다.
+>[!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델(FDM)은 [!DNL Experience Manager Forms]AEM Archetype 30[!DNL Cloud Service] 이상을 기반으로 [을(를) &#x200B;](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 프로젝트로 설정하는 경우에만 즉시 사용할 수 있습니다.
 
 ## [!DNL Salesforce] 클라우드 서비스 구성 {#configure-salesforce-cloud-service}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 기본 [!DNL Salesforce] 양식 데이터 모델(FDM) 액세스
 
-[!DNL Salesforce]Experience Manager Archetype을 기반으로 Forms용 개발 프로젝트를 설정[!DNL AEM Forms]한 후 [ 서버에서 ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 양식 데이터 모델(FDM)을 즉시 사용할 수 있습니다.
+[!DNL Salesforce]Experience Manager Archetype을 기반으로 Forms용 개발 프로젝트를 설정[!DNL AEM Forms]한 후 [&#x200B; 서버에서 &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 양식 데이터 모델(FDM)을 즉시 사용할 수 있습니다.
 
 양식 데이터 모델(FDM)에 액세스하려면 다음을 수행합니다.
 
