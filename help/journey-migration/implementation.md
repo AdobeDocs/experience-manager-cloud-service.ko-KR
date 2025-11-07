@@ -85,7 +85,7 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 * Dispatcher SDK을 구성하는 방법을 이해하려면 이 비디오를 시청하십시오.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/32984?captions=kor)
 
 ### 마음가짐의 변화 {#a-change-in-mindset}
 
