@@ -4,10 +4,10 @@ description: 대화형 통신 편집기의 템플릿 잠금 기능을 사용하�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 대화형 통신(IC) 편집기의 템플릿 잠금 기능을 사용하면 템플릿 작성자가 수정 사항을 통신 템플릿의 특정 요소로 제한할 수 있습니다. 이를 통해 디자인 일관성을 보장하고, 중요한 컨텐츠를 보호하며, 템플릿을 재사용하여 개인화된 커뮤니케이션을 생성하는 팀 간의 거버넌스를 강화할 수 있습니다.
 
 잠겨진 구성 요소를 적용하면 시각적으로 구분되어 표시되고 잠금 유형 세트에 따라 다운스트림 작성자 또는 기여자가 수정할 수 없습니다. 이 기능은 파생된 모든 커뮤니케이션에서 브랜드 표준, 데이터 무결성 및 레이아웃 균일성을 유지하는 데 도움이 됩니다.
+
+![IC 문서 찾기](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. 잠금 유형
 
@@ -56,15 +58,29 @@ ht-degree: 11%
 
 - 요소의 폭 또는 높이 크기 조정
 
-## &#x200B;3. 파생 통신에서의 행동
+## &#x200B;3. 대화형 통신 편집기에서 템플릿 잠금을 사용하는 방법
 
-- 잠긴 템플릿에서 통신을 만들면 잠긴 요소가 통신 작성자를 위한 IC 편집기에 읽기 전용으로 표시됩니다.
+대화형 통신(IC) 템플릿에 컨텐츠 또는 레이아웃 잠금을 적용하려면 아래 단계를 따르십시오.
 
-- 컨텐츠 잠금이 있는 구성 요소의 내부 속성이나 바인딩을 변경할 수 없습니다.
+1. 템플릿 열기
+템플릿을 열거나 만들려면 [대화형 통신 템플릿 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) 안내서를 따르십시오.
 
-- 레이아웃 잠금이 있는 구성 요소는 이동하거나 크기를 조정할 수 없습니다.
+1. 구성 요소 선택
+제한할 구성 요소(텍스트 상자, 이미지 또는 하위 양식)를 클릭합니다.
 
-이를 통해 템플릿 작성자는 디자인과 구조에 대한 제어를 유지하는 동시에 다른 사용자는 가변 콘텐츠 및 데이터 기반 맞춤화에 집중할 수 있습니다.
+1. 액세스 잠금 옵션
+[속성] 패널에서 [잠금] 섹션으로 이동합니다.
+
+1. 잠금 적용
+
+   1. 컨텐츠 잠금: 텍스트, 스타일 및 데이터 편집을 방지합니다.
+
+   1. 레이아웃 잠금: 이동 및 크기 조정을 제한합니다.
+
+   1. 전체 보호를 위해 두 옵션을 모두 활성화할 수 있습니다.
+
+1. 저장 및 확인
+템플릿을 저장하고 이 템플릿을 기반으로 새 IC를 만들어 잠긴 요소를 수정할 수 없음을 확인합니다.
 
 ## &#x200B;4. 우수 사례
 

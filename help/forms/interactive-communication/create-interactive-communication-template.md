@@ -1,19 +1,19 @@
 ---
-title: 대화형 통신 템플릿 만들기
+title: 인터랙티브 커뮤니케이션 템플릿 만들기
 description: AEM Forms에서 대화형 통신 템플릿을 만들어 재사용 가능한 레이아웃을 정의하고, 브랜드 일관성을 보장하고, 개인화된 데이터 기반 커뮤니케이션의 생성을 간소화합니다.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 18%
+ht-degree: 23%
 
 ---
 
 
-# 대화형 통신 템플릿 만들기
+# 인터랙티브 커뮤니케이션 템플릿 만들기
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ AEM의 대화형 통신 템플릿을 사용하면 머리글, 바닥글, 로고 �
 
 * [AEM Archetype 버전 55](https://github.com/adobe/aem-project-archetype) 이상이 설치되어 있는지 확인하십시오.
 
-## 대화형 통신 템플릿 만들기
+## 인터랙티브 커뮤니케이션 템플릿 만들기
 
-대화형 통신 조각을 만들려면 다음 단계를 수행하십시오.
+대화형 통신 템플릿을 만들려면 다음 단계를 수행하십시오.
 
 1. **Adobe Experience Manager(AEM) Forms as a Cloud Service 인스턴스를 엽니다**.
 

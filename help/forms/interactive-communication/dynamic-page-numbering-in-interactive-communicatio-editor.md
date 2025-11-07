@@ -4,10 +4,10 @@ description: 대화형 통신 편집기의 동적 페이지 번호 매기기를 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '404'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,25 @@ ht-degree: 18%
 ## 소개
 
 IC(대화형 통신)의 동적 페이지 번호 매기기 기능을 사용하면 작성자가 PDF 출력에 페이지 번호를 자동으로 표시할 수 있습니다. 마스터 페이지 수준에서 페이지 번호 매기기를 활성화할 수 있으므로, 연결된 모든 디자인 페이지에서 일관된 번호 매기기가 보장됩니다. 이렇게 하면 다중 페이지 통신 전반에 걸쳐 명확한 페이지 추적 및 전문 레이아웃을 유지할 수 있습니다.
+
+![IC 문서 찾기](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## 대화형 통신 편집기에서 동적 페이지 번호 매기기를 사용하는 방법
+
+1. 대화형 통신 편집기 열기
+IC 편집기에서 대화형 통신 프로젝트를 엽니다.
+
+1. 기본 페이지로 이동
+기본 페이지에서만 페이지 번호 매기기를 활성화할 수 있습니다. 커뮤니케이션의 마스터 페이지로 이동합니다.
+
+1. 페이지 번호 매기기 활성화
+속성 패널에서 페이지 번호 활성화 토글을 켭니다. 이렇게 하면 연결된 모든 페이지에 페이지 번호가 자동으로 추가됩니다.
+
+1. 배치 사용자 정의
+페이지 번호 구성 요소는 표준 텍스트 속성을 사용하여 자유롭게 삭제하고 맞춤화한 후 캔버스의 아무 곳에나 배치할 수 있습니다.
+
+1. PDF에서 미리 보기
+페이지 번호는 PDF 미리보기 중에만 표시되며 모든 페이지에서 동적 번호 매기기를 표시합니다.
 
 ## 주요 기능
 
