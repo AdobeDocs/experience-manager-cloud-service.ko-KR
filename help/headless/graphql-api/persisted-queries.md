@@ -4,7 +4,7 @@ description: 성능을 최적화하기 위해 Adobe Experience Manager as a Clou
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 99%
@@ -301,7 +301,7 @@ query getAdventuresByActivity($activity: String!) {
 | 캐시 유형 | [HTTP 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 구성  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | 브라우저 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 

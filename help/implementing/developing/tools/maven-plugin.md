@@ -4,7 +4,7 @@ description: Content Package Maven 플러그인을 사용하여 AEM 애플리케
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -41,7 +41,7 @@ AEM as a Cloud Service은 최신 AEM Project Archetype에 의해 구현된 패�
 
 >[!TIP]
 >
->AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.
+>AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### 프록시 {#proxies}
 
-AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. `useProxy`일반 매개 변수[&#x200B; 섹션에서 &#x200B;](#common-parameters) 매개 변수를 참조하십시오.
+AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. `useProxy`일반 매개 변수[ 섹션에서 ](#common-parameters) 매개 변수를 참조하십시오.
 
 ### 일반 매개 변수 {#common-parameters}
 
@@ -97,7 +97,7 @@ AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유
 | `failOnError` | `boolean` | 아니요 | `false` | 값이 `true`이면 오류가 발생할 때 빌드가 실패합니다. 값이 `false`이면 빌드가 오류를 무시합니다. | `package`을(를) 제외한 모든 목표 |
 | `name` | `String` | `build`: 예, `install`: 아니요, `rm`: 예 | `build`: 기본값 없음, `install`: Maven 프로젝트의 `artifactId` 속성 값 | 작업할 패키지의 이름 | `ls`을(를) 제외한 모든 목표 |
 | `password` | `String` | 예 | `admin` | AEM 인증에 사용되는 암호 | `package`을(를) 제외한 모든 목표 |
-| `serverId` | `String` | 아니요 | 인증을 위해 사용자 이름과 암호를 검색할 서버 ID | `package`을(를) 제외한 모든 목표 |
+| `serverId` | `String` | 아니요 | 인증을 위해 사용자 이름과 암호를 검색할 서버 ID | `package`을(를) 제외한 모든 목표 |  |
 | `targetURL` | `String` | 예 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM 패키지 관리자의 HTTP 서비스 API의 URL | `package`을(를) 제외한 모든 목표 |
 | `timeout` | `int` | 아니요 | `5` | 패키지 관리자 서비스와 통신하기 위한 연결 시간 제한(초) | `package`을(를) 제외한 모든 목표 |
 | `useProxy` | `boolean` | 아니요 | `true` | 값이 `true`이면 Maven이 패키지 관리자에 대한 요청을 프록시하기 위해 찾은 첫 번째 활성 프록시 구성을 사용합니다. | `package`을(를) 제외한 모든 목표 |
@@ -215,4 +215,4 @@ rm 목표의 모든 매개 변수는 [일반 매개 변수](#common-parameters) 
 
 >[!TIP]
 >
->AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ko) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.
+>AEM as a Cloud Service 설명서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 설명서에서 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 문서를 참조하십시오. 두 기능 모두 AEM 6.5에서 완전히 지원됩니다.

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 92%
+source-wordcount: '2719'
+ht-degree: 91%
 
 ---
 
@@ -197,20 +197,20 @@ MSM Live Copy는 원본 소스와의 라이브 관계가 유지되는 특정 사
 * 작성자가 `/content/wknd/language-masters/en` 아래의 페이지를 변경합니다.
 * 트리거되면 MSM은 이러한 변경 내용을 Live Copy에 동기화합니다.
 
-### Live Copy - 구성 {#live-copies-composition}
+### Live Copy - 컴포지션 {#live-copies-composition}
 
 >[!NOTE]
 >
 >이 섹션의 다이어그램 및 설명은 잠재적 Live Copy의 스냅샷을 나타냅니다. 이 스냅샷은 포괄적이지는 않지만 특정 특성을 강조하는 개요를 제공합니다.
 
-처음 Live Copy를 만들 때 선택한 소스 페이지는 Live Copy에 1:1 기준으로 반영됩니다. 이후 Live Copy 내에서 직접 새 리소스(페이지 및/또는 단락)를 작성할 수 있으므로, 이러한 변형이 동기화에 미치는 영향을 알아두는 것이 좋습니다. 가능한 구성은 다음과 같습니다.
+처음 라이브 카피를 만들 때 선택한 소스 페이지는 라이브 카피에 1:1 기준으로 반영됩니다. 이후 Live Copy 내에서 직접 새 리소스(페이지 및/또는 단락)를 작성할 수 있으므로, 이러한 변형이 동기화에 미치는 영향을 알아두는 것이 좋습니다. 가능한 컴포지션은 다음과 같습니다.
 
 * [Live Copy가 아닌 페이지를 포함하는 Live Copy](#live-copy-with-non-live-copy-pages)
 * [중첩 Live Copy](#nested-live-copies)
 
 Live Copy의 기본 형식은 다음으로 구성됩니다.
 
-* 선택한 소스 페이지는 Live Copy에 1:1 기준으로 반영하는 Live Copy 페이지
+* 선택한 소스 페이지를 1:1 기준으로 반영하는 라이브 카피 페이지.
 * 1개의 구성 정의
 * 모든 리소스에 대해 정의된 라이브 관계:
    * Live Copy 리소스를 해당 블루프린트/소스와 연결합니다.
@@ -218,7 +218,7 @@ Live Copy의 기본 형식은 다음으로 구성됩니다.
 
 변경 내용은 요구 사항에 따라 [동기화](creating-live-copies.md#synchronizing-your-live-copy)될 수 있습니다.
 
-![Live Copy 구성 개요](../assets/live-copy-composition.png)
+![Live Copy 컴포지션 개요](../assets/live-copy-composition.png)
 
 #### Live Copy가 아닌 페이지를 포함하는 Live Copy {#live-copy-with-non-live-copy-pages}
 

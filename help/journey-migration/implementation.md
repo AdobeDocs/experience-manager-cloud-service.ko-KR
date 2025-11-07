@@ -4,7 +4,7 @@ description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준�
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 9%
@@ -19,13 +19,13 @@ ht-degree: 9%
 
 여정의 이전 부분에서는 [AEM as a Cloud Service의 변경 내용에 익숙해지고](/help/journey-migration/getting-started.md) [준비 단계](/help/journey-migration/readiness.md)를 통해 배포를 클라우드로 이동할 준비가 되었는지 확인했습니다.
 
-이 문서는 코드 및 콘텐츠를 클라우드로 이동할 준비가 되었는지 확인하기 위해 Adobe 제공 도구를 사용하는 방법에 대한 조언을 계속 제공합니다.
+이 문서는 코드 및 콘텐츠를 클라우드로 이동할 준비가 되었는지 확인하기 위해 Adobe에서 제공하는 도구를 사용하는 방법에 대한 조언을 계속 제공합니다.
 
 ## 목표 {#objective}
 
 이 문서의 목적은 다음과 같습니다.
 
-* Cloud Manager에 코드를 배포하는 데 사용되는 AEM의 지속적인 통합 및 게재 프레임워크인 AEM as a Cloud Service을 소개합니다
+* AEM as a Cloud Service에 코드를 배포하는 데 사용되는 AEM의 지속적인 통합 및 게재 프레임워크인 Cloud Manager을 소개합니다
 * 콘텐츠 전송 도구를 통해 최신 정보 제공
 * AEM as a Cloud Service의 코드를 현대화할 수 있도록 사용해야 하는 코드 리팩터링 도구에 대해 설명합니다
 
@@ -37,13 +37,13 @@ ht-degree: 9%
 
 아래 리소스를 참조하여 Cloud Manager 사용에 익숙해질 수 있습니다.
 
-* [Experience Manager as a Cloud Service 여정](/help/journey-onboarding/overview.md) 자체 도움말 리소스에 대한 온보딩을 이해합니다.
+* Experience Manager as a Cloud Service에 대한 온보딩에 대한 자체 도움말 리소스를 이해하려면 [온보딩 여정](/help/journey-onboarding/overview.md).
 
 * [Git와 Adobe Cloud Manager 통합](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): 단일 Git 저장소를 사용하여 코드 배포에 대해 자세히 알아봅니다.
 
 * [Adobe Experience as a Cloud Service 구성](/help/security/ims-support.md#aem-configuration): Admin Console에서 제품 및 사용자 액세스 관리에 대해 알아봅니다.
 
-## Adobe 제공 도구를 사용하여 콘텐츠 및 코드 클라우드를 준비하십시오. {#use-tools-to-make-code-and-content-cloud-ready}
+## Adobe 제공 도구를 사용하여 콘텐츠 및 코드 클라우드를 준비하십시오 {#use-tools-to-make-code-and-content-cloud-ready}
 
 Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사용자가 따르는 소프트웨어 개발 수명 주기 방침에 따라 다릅니다.
 
@@ -61,39 +61,39 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 콘텐츠 마이그레이션은 여러 팀 간의 계획, 추적 및 협업이 필요한 여러 단계로 진행되는 프로세스입니다.
 
-Adobe 이 도구의 작동 방식과 사용 권장 방법에 대한 자세한 내용은 [컨텐츠 전송 도구 설명서](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)를 참조하십시오.
+이 도구의 작동 방식과 Adobe에서 이 도구를 사용하는 것을 권장하는 방법에 대한 자세한 내용은 [콘텐츠 전송 도구 설명서](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)를 참조하십시오.
 
 ## 코드 리팩터링 {#code-refactor}
 
 ### 개발을 위한 설정 {#set-up-for-development}
 
-이제 Cloud Service과 호환될 수 있도록 기존 기능을 리팩터링할 때입니다.
+이제 클라우드 서비스와 호환될 수 있도록 기존 기능을 리팩터링할 때입니다.
 
 먼저 기본 도구에 대해 자세히 설명하는 설명서를 살펴보고 코드 리팩터링을 시작합니다.
 
 
-* 계획 중에 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. Cloud Service을 위해 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용은 [개발 지침](/help/implementing/developing/introduction/development-guidelines.md)을 검토할 수 있습니다.
-* AEM as a Cloud Service에서 [구성을 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=ko#what-is-a-configuration)하는 방법에 대해 읽어 보십시오.
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ko)를 다운로드하여 로컬 개발 환경을 설정하는 방법을 알아봅니다
+* 계획 중에 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. Cloud Service용 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용은 [개발 지침](/help/implementing/developing/introduction/development-guidelines.md)을 검토할 수 있습니다.
+* AEM as a Cloud Service에서 [구성을 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration)하는 방법에 대해 읽어 보십시오.
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)을(를) 다운로드하여 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다.
 * 마지막으로 [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)를 숙지하십시오.
 
 또한 다음을 수행할 수도 있습니다.
 
-* 이 비디오를 통해 Dispatcher SDK를 로컬에 설치하는 방법을 알아보십시오.
+* 이 비디오를 통해 로컬에 Dispatcher SDK을 설치하는 방법을 알아보십시오.
 
   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* Dispatcher SDK를 구성하는 방법을 이해하려면 이 비디오 를 시청하십시오.
+* Dispatcher SDK을 구성하는 방법을 이해하려면 이 비디오를 시청하십시오.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32984?captions=kor)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 마음가짐의 변화 {#a-change-in-mindset}
 
 AEM as a Cloud Service에서 코드를 개발하고 실행하려면 사고방식을 변경해야 합니다. 특히 인스턴스가 언제든지 중지될 수 있으므로 코드가 복원력이 있어야 합니다. 클라우드 서비스에서 실행 중인 코드는 항상 클러스터에서 실행되고 있다는 것을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다.
 
-AEM Maven 프로젝트가 클라우드와 호환되려면 특정 변경 사항이 필요합니다. AEM as a Cloud Service을 AEM에 배포하려면 *content*&#x200B;과(와) *code*&#x200B;을(를) 개별 패키지로 분리해야 합니다.
+AEM Maven 프로젝트가 클라우드와 호환되도록 하려면 특정 변경 사항이 필요합니다. AEM as a Cloud Service에 배포하려면 *content* 및 *code*&#x200B;을(를) 개별 패키지로 분리해야 합니다. AEM:
 
-* `/apps` 및 `/libs`은(는) AEM 시작 후(즉, 런타임 시) 변경할 수 없으므로 AEM에서 변경할 수 없는 영역으로 간주됩니다. 여기에는 만들기, 업데이트 또는 삭제 작업이 포함됩니다. 런타임 시 변경할 수 없는 영역을 변경하려고 하면 오류가 발생합니다.
+* `/apps` 및 `/libs`은(는) AEM이 시작된 후에는 변경할 수 없으므로(즉, 런타임 시) AEM에서 변경할 수 없는 영역으로 간주됩니다. 여기에는 만들기, 업데이트 또는 삭제 작업이 포함됩니다. 런타임 시 변경할 수 없는 영역을 변경하려고 하면 오류가 발생합니다.
 
 * 저장소의 다른 모든 항목(예: `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp`)은 모두 변경할 수 있는 영역입니다. 즉, 런타임 시 변경할 수 있습니다.
 
@@ -106,15 +106,15 @@ Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되�
 
 * 자산 처리 워크플로우를 자동으로 마이그레이션하는 데 사용되는 도구인 [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
 * 기존 Dispatcher 구성을 AEM as a Cloud Service에 맞는 형식으로 변환하는 도구인 [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md).
-* AEM 다중 모드 프로젝트를 입력으로 받아 AEM as a Cloud Service 프로젝트로 변환하는 도구인 [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=ko)
-* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=ko), 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구
-* [현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), 레거시 AEM 기능을 AEM as a Cloud Service의 최신 지원 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트입니다.
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), AEM 다중 모드 프로젝트를 입력으로 취하여 AEM as a Cloud Service 프로젝트로 변환하는 도구
+* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구
+* [현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md): 기존 AEM 기능을 AEM as a Cloud Service의 최신 지원 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트입니다.
 
 로컬 개발 환경을 설정한 후에는 [설명서](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)를 참조하여 AEM as a Cloud Service SDK에 익숙해지십시오.
 
 ### 코드 고정 예약 {#schedule-a-code-freeze}
 
-전환 여정Adobe 의 일부로 코드 리팩터링 작업과 함께 활성 AEM에서 진행 중인 코드 개발을 관리하려면, Maven 프로젝트 재구성을 AEM as a Cloud Service과 호환되도록 완료할 때까지 코드 동결 기간을 예약하는 것이 좋습니다.
+전환 여정의 일부로 코드 리팩터링 작업과 함께 활성 AEM에서 진행 중인 코드 개발을 관리하려면, Adobe에서 AEM as a Cloud Service과 호환되도록 Maven 프로젝트 재구성을 완료할 때까지 코드 동결 기간을 예약하는 것이 좋습니다.
 
 프로젝트 재구성이 완료되면 이 새 구조를 기반으로 새 코드 개발을 재개할 수 있습니다. 이렇게 하면 코드 배포 및 테스트 중 Cloud Manager 파이프라인 오류가 줄어듭니다.
 
@@ -128,13 +128,13 @@ Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테�
 코드 품질 테스트에 대한 아래 문서의 모범 사례를 따르십시오.
 
 * [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md). 테스트 스크립트를 작성하는 프로세스를 설명하고 최소 50%의 권장 적용 범위를 설명하는 문서입니다.
-* [사용자 지정 코드 품질 규칙 이해](/help/implementing/cloud-manager/custom-code-quality-rules.md) AEM Engineering의 모범 사례를 기반으로 만들어진 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙을 설명하는 것입니다.
+* [사용자 지정 코드 품질 규칙 이해](/help/implementing/cloud-manager/custom-code-quality-rules.md) - AEM 엔지니어링의 모범 사례를 기반으로 만들어진 Cloud Manager에서 실행하는 사용자 지정 코드 품질 규칙을 설명하는 것을 목표로 합니다.
 
 ## Go-Live 준비 {#preparing-for-go-live}
 
-마이그레이션을 위한 소스 시스템을 준비하려면 시스템 및 AEM 관리자 수준 작업이 필요합니다. 먼저 [수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ko) 및 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=ko) 작업 상태를 확인하여 콘텐츠 리포지토리가 잘 유지 관리되고 있는지 확인할 수 있습니다. 컨텐츠 전송 도구가 버전 6.3부터 호환되므로 AEM 버전 6.3을 실행 중인 경우 오프라인 압축을 수행한 다음 데이터 저장소 가비지 수집을 수행하는 것이 좋습니다.
+마이그레이션을 위한 소스 시스템을 준비하려면 시스템 및 AEM 관리자 수준의 작업이 필요합니다. 먼저 [수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) 작업 상태를 확인하여 콘텐츠 리포지토리가 잘 유지 관리되고 있는지 확인할 수 있습니다. 컨텐츠 전송 도구가 버전 6.3부터 호환되므로 AEM 버전 6.3을 실행 중인 경우 오프라인 압축을 수행한 다음 데이터 저장소 가비지 수집을 수행하는 것이 좋습니다.
 
-[데이터 일관성 검사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=ko)를 모든 AEM 버전에서 권장하므로 콘텐츠 리포지토리가 마이그레이션 활동을 시작하는 데 좋은 상태가 됩니다.
+[데이터 일관성 검사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html)를 모든 AEM 버전에서 권장하므로 콘텐츠 리포지토리가 마이그레이션 활동을 시작하는 데 좋은 상태가 됩니다.
 
 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)를 설치하고 구성하려면 시스템 관리자 수준 액세스 권한이 필요합니다.
 
@@ -144,7 +144,7 @@ Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테�
 
 [프로덕션 복제](#proof-of-migration)에 대한 액세스가 설정되면 계속 진행하여 저장소의 상태를 확인합니다. 이전 섹션에서 언급했듯이 마이그레이션이 시작되기 전에 소스에서 저장소를 정리하고 압축하는 것이 목표입니다. 이 단계를 수행하면 마이그레이션이 시작된 후 문제를 해결하는 데 드는 시간을 절약할 수 있습니다.
 
-| 작업 항목 | 주요 개선 사항 |
+| 작업 항목 | 핵심 사항 |
 |---------|----------|
 | 사용자, 그룹 및 권한 | 사용자, 그룹 및 멤버십의 복잡성에 대해 이해해야 합니다. 마이그레이션 전에 소스에서 사용하지 않는 사용자, 그룹을 정리할 수 있는 기회를 찾습니다. |
 | 불완전한 자산 처리 | 마이그레이션을 시작하기 전에 소스 시스템에서 자산 처리를 완료하여 AEM as a Cloud Service 마이그레이션 후 발생할 수 있는 문제를 방지하십시오. |
@@ -188,14 +188,14 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 **필요한 총 추출 수**
 
-* 특정 환경의 작성자 및 Publish 추출은 서로 독립적이므로 두 개의 병렬 추출로 간주됩니다.
+* 특정 환경의 작성자 및 게시 추출은 서로 독립적이므로 두 개의 병렬 추출로 간주됩니다.
 * 특정 기간의 저장소 증가를 기반으로 하는 추가 추출 수입니다.
 
 **필요한 총 수집 수**
 
 * 추출된 세트는 여러 Cloud Service 환경으로 수집할 수 있으므로 이 항목을 플랜에 캡처하는 것이 중요합니다.
 * 추가 수집 수.
-* Source 작성자에서 클라우드 서비스 작성자 인스턴스로, Source Publish에서 Cloud Service Publish으로 콘텐츠를 마이그레이션하는 것은 모든 작성자 콘텐츠를 Cloud Service Publish에 수집하지 않는 모범 사례입니다.
+* Source 작성자에서 Cloud Service Author 인스턴스로 그리고 Source 게시에서 Cloud Service Publish로 콘텐츠를 마이그레이션하는 것은 모든 작성자 콘텐츠를 Cloud Service Publish에 수집하지 않는 가장 좋은 방법입니다.
 
 ### 마이그레이션 추적기 {#migration-tracker}
 
@@ -222,13 +222,13 @@ One more important datapoint is the amount of time it takes to complete the [use
 ### 장비 {#fitment}
 
 * 개정 정리, 데이터 저장소 가비지 수집 및 데이터 일관성 검사를 수행합니다. [Go-Live 준비 중](#preparing-for-go-live)도 참조하세요.
-* AEM 원본 저장소에 대한 [통계 수집](#gathering-data):
+* AEM 소스 저장소에 대한 [통계 수집](#gathering-data):
    * 세그먼트 저장소 크기
    * 인덱스 저장소 크기
    * 페이지 수
    * 에셋 수
    * 사용자 및 그룹 수
-* AEM 소스에서 다음 기능을 활성화할지(AEM as a Cloud Service에서도 필요) 확인합니다.
+* AEM 소스에서 다음 기능을 활성화할지(AEM as a Cloud Service에서도 필요함) 확인합니다.
    * 스마트 태그 지정
    * 유사성 검색
    * Word 및 PDF 문서에서 포함 텍스트 검색

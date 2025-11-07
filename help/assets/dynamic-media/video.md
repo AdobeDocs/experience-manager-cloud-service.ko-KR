@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '10063'
 ht-degree: 2%
@@ -131,7 +131,7 @@ Dynamic Media의 비디오는 데스크톱, 태블릿 및 모바일 장치를 �
 * 전체 메타데이터 지원을 통해 비디오를 구성, 탐색 및 검색하여 비디오 자산을 효율적으로 관리할 수 있습니다.
 * 웹 및 데스크탑, 태블릿 및 모바일 장치에 응용 비디오 세트를 제공합니다.
 
-응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)를 참조하세요.
+응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)를 참조하세요.
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -147,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)에서 [Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) 및 [Experience Manager Assets용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources)도 참조하세요.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)에서 [Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) 및 [Experience Manager Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)도 참조하세요.
 
 ## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -159,7 +159,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 단일 플레이어에 결합할 수 있습니다. 임베드된 재생이 있을 수 있으며, 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용할 수 있습니다. 이 모든 기능을 사용하면 리치 미디어 콘텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확장하고 간소화된 비디오 경험을 보장할 수 있습니다.
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)에서 [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources)도 참조하세요.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)에서 [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)도 참조하세요.
 
 
 ### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -179,7 +179,7 @@ DASH는 국제 표준이고 HLS은 Apple 표준입니다. 둘 다 응용 비디�
 
 점진적 비디오는 사용자의 데스크탑 시스템 또는 모바일 디바이스에 로컬로 비디오를 다운로드 및 저장하여 전달됩니다.
 
-다음 표에서는 [Dynamic Media HTML5 비디오 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)를 사용하여 데스크톱 컴퓨터 및 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법을 설명합니다.
+다음 표에서는 [Dynamic Media HTML5 비디오 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)를 사용하여 데스크톱 컴퓨터 및 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법을 설명합니다.
 
 <table>
  <tbody>
@@ -456,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ko).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -916,7 +916,7 @@ Dynamic Media의 [접근성](/help/assets/dynamic-media/accessibility-dm.md)도 
 
 Dynamic Media는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환할 수 있습니다. 이 전환은 JSON 텍스트를 웹 페이지에 숨김이나 비디오의 전체 트랜스크립트로 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 콘텐츠를 크롤링/색인화하여 비디오를 보다 쉽게 검색하고 고객에게 비디오 콘텐츠에 대한 자세한 내용을 제공할 수 있습니다.
 
-URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
+URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
 
 **비디오에 캡션을 추가하려면:**
 
@@ -1535,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

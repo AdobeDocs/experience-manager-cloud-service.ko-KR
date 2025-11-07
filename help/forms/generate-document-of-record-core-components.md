@@ -4,7 +4,7 @@ description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -262,7 +262,7 @@ When you select a form model, configure Document of Record using options availab
 | 적응형 양식 구성 요소 | 해당 XFA 구성 요소 | 메모 |
 |---|---|---|
 | 이미지 | 이미지 | 바운드 컨트롤이든 언바운드 컨트롤이든 TextDraw 및 Image 구성 요소는 기록 문서 설정을 사용하여 제외하지 않는 한 항상 XSD 기반 적응형 양식에 대한 기록 문서에 나타납니다. |
-| 텍스트 | 텍스트 |
+| 텍스트 | 텍스트 |  |
 
 ### 표 {#tables}
 

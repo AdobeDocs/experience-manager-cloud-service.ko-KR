@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -95,8 +95,7 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 | DDOS 공격의 트래픽 | 제외됨 | DDOS 보호. AEM은 일부 DDOS 공격을 자동으로 감지하여 차단합니다. 감지된 경우 DDOS 공격은 청구할 수 없습니다. |
 | AEM as a Cloud Service New Relic 모니터링 | 제외됨 | AEM as a Cloud Service 글로벌 모니터링. |
 | 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | Adobe은 URL을 사용하여 외부에서 가용성 또는 상태 검사를 모니터링할 것을 권장합니다.<br><br>`/system/probes/health` |
-| AEM as a Cloud Service Pod 준비 서비스 | 제외됨 |
-| 요원: 스카이라인-서비스-웜업/1* |
+| AEM as a Cloud Service Pod 준비 서비스 | 제외됨 | 요원: 스카이라인-서비스-웜업/1* |
 | 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· <br>· Pinterest`MJ12bot`<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot<br> |
 | Commerce integration framework 호출 제외 | 제외됨 | AEM에 수행된 요청이 Commerce integration framework(URL은 `/api/graphql`(으)로 시작)로 전달되므로 두 번 계산되지 않습니다. Cloud Service에 대해서는 청구할 수 없습니다. |
 | `manifest.json` 제외 | 제외됨 | 매니페스트가 API 호출이 아닙니다. 데스크탑 또는 휴대 전화에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 `/etc.clientlibs/*/manifest.json`에 대한 JSON 요청을 계산해서는 안 됩니다. |

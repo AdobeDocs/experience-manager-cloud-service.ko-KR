@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 10%
@@ -32,7 +32,7 @@ Adobe Experience Manager Assets을 사용하면 CSV 파일을 사용하여 에�
    | ---------------------- | ------- |
    | 일괄 처리 크기 | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
    | 필드 구분자 | 기본값은 `,`(쉼표)입니다. 다른 문자를 지정할 수 있습니다. |
-   | 다중 값 구분 기호 | 메타데이터 값에 대한 구분 기호입니다. 기본값은 `|`입니다. |
+   | 다중 값 구분 기호 | 메타데이터 값에 대한 구분 기호입니다. 기본값은 `\|`입니다. |
    | 워크플로우 실행 | 기본적으로 False입니다. `true`(으)로 설정된 경우 기본 설정이 DAM 메타데이터 WriteBack 워크플로(이진 XMP 데이터에 메타데이터를 기록함)에 적용됩니다. 워크플로우를 활성화하면 시스템 속도가 느려집니다. |
    | 자산 경로 열 이름 | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 

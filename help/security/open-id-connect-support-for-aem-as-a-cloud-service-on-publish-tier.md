@@ -4,7 +4,7 @@ description: 게시 계층에서 AEM as a Cloud Service에 대한 Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 | `user.dynamicMembership` | 동적 그룹 멤버십을 활성화하는 것이 좋습니다. | true |
 | `user.enforceDynamicMembership` | 동적 그룹 멤버십을 활성화하는 것이 좋습니다. | true |
 | `group.dynamicGroups` | 동적 그룹을 활성화하는 것이 좋습니다. | true |
-| user.propertyMapping | 제공된 `UserInfoProcessor` 구현은 일부 속성만 동기화합니다. 수정 및 사용자 정의할 수 있습니다. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | 제공된 `UserInfoProcessor` 구현은 일부 속성만 동기화합니다. 수정 및 사용자 정의할 수 있습니다. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | 멤버십 관계가 동기화될 때 그룹 중첩의 최대 깊이를 반환합니다. 값이 0이면 그룹 멤버십 조회가 효과적으로 비활성화됩니다. 값이 1이면 사용자의 직접 그룹만 추가됩니다. 이 값은 사용자의 멤버십 계보를 동기화할 때만 영향을 미치고 개별 그룹을 동기화할 때는 영향을 미치지 않습니다. | 1 |
 
 ### 외부 로그인 모듈 구성 {#configure-the-external-login-module}

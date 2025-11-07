@@ -2,9 +2,9 @@
 title: ' [!DNL AEM and Dynamic Media]에 빠른 게시'
 description: ' [!DNL Assets view] 의 빠른 게시를 사용하면 자산을  [!DNL AEM and Dynamic Media] 동시에 또는 별도로 게시할 수 있습니다. 에셋 및 폴더를 선택하고  [!DNL Dynamic Media] 또는 [!DNL AEM]에 게시하도록 선택할 수 있습니다.'
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-feature: Publishing, [!DNL Dynamic Media]
+feature: Publishing
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
