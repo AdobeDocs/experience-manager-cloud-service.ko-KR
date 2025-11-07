@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **적응형 양식 및 양식 조각을 위한 범용 편집기**
 
-이제 범용 편집기는 적응형 Forms 및 재사용 가능한 양식 조각을 만들기 위한 통합 작성 환경을 제공합니다. 작성자는 직관적인 WYSIWYG 환경 내에서 양식을 시각적으로 디자인하고, 제출 액션을 구성하고, reCAPTCHA 유효성 검사를 통합할 수 있습니다.
+이제 범용 편집기는 적응형 Forms 및 재사용 가능한 양식 조각을 만들기 위한 통합 작성 환경을 제공합니다. 작성자는 강력한 확장 기능 및 포괄적인 제출 기능을 활용하여 직관적인 WYSIWYG 환경 내에서 양식을 시각적으로 디자인할 수 있습니다. 편집기는 보안 강화를 위해 reCAPTCHA 유효성 검사를 통합하고, 사전 채우기 서비스를 제공하여 수동 입력을 줄이고, 모든 장치에서 반응형 디자인을 지원합니다.
+
+**사용 가능한 확장:**
+
+* **규칙 편집기**: 시각적 규칙 편집기를 사용하면 양식 작성자가 코딩, 이벤트 기반 규칙 지원, 즉각적인 유효성 검사 및 오류 처리 없이 양식 필드에 동적 동작을 추가할 수 있습니다.
+* **양식 속성**: 사용자가 편집기 내에서 직접 제출 작업, 미리 채우기 서비스, 감사 메시지 및 기타 양식 관련 동작을 구성할 수 있도록 도와주는 마법사입니다.
+* **양식 데이터 Source 및 바인드 참조**: 데이터 소스 확장을 사용하면 양식 작성자가 데이터 모델과 연결된 구성 요소를 적응형 양식에 직접 추가하고 모든 구성 요소에 대한 트리 선택에서 바인드 참조를 선택할 수 있습니다.
+
+**지원되는 제출 액션:**
+
+유니버설 편집기는 사용자 지정 제출 동작, Microsoft SharePoint에 제출, Microsoft OneDrive에 제출, Azure Blob Storage에 제출, REST 끝점에 제출, AEM 워크플로 호출, Power Automate 흐름 호출, Marketo Engage에 제출, Adobe Experience Platform(AEP)에 제출, 스프레드시트에 제출, 양식 데이터 모델(FDM)을 사용하여 제출, Workfront Fusion에 제출 및 이메일 보내기 등 광범위한 제출 워크플로를 지원합니다.
+
+자세한 내용은 [Forms용 Edge Delivery Services 유니버설 편집기 설명서](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)를 참조하세요. 제출 액션을 구성하는 방법에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/edge/docs/forms/universal-editor/submit-action.md)을 참조하십시오.
 
 <!-- ### Pre-Release features in AEM Forms 
 
