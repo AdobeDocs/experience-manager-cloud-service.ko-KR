@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### 프록시 {#proxies}
 
-AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. `useProxy`일반 매개 변수[ 섹션에서 ](#common-parameters) 매개 변수를 참조하십시오.
+AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. `useProxy`일반 매개 변수[&#x200B; 섹션에서 &#x200B;](#common-parameters) 매개 변수를 참조하십시오.
 
 ### 일반 매개 변수 {#common-parameters}
 

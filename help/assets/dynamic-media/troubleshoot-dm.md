@@ -37,7 +37,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Adobe Experience Manager�
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 자세한 정보를 수집하기 위해 Sling 콘솔(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)을 통해 ](https://localhost:4502/system/console/slinglog) 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
+동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 자세한 정보를 수집하기 위해 Sling 콘솔(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)을 통해 &#x200B;](https://localhost:4502/system/console/slinglog) 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
 
 ### 버전 제어 {#version-control}
 
@@ -217,7 +217,7 @@ CRXDE Lite에서 다음을 수행합니다.
 1. 목록에서 뷰어 패키지를 검색합니다. `cq-dam-scene7-viewers-content`(으)로 시작합니다.
 1. **다시 설치**&#x200B;를 선택합니다.
 1. 클라우드 서비스에서 Dynamic Media 구성 페이지로 이동한 다음 Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
-1. 변경하지 말고 **저장**을 선택하세요.
+1. 변경하지 말고 **저장**&#x200B;을 선택하세요.
 이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
 
 ### 문제: 뷰어 사전 설정 작성에서 이미지 미리 보기를 로드할 수 없음 {#image-preview-not-loading}

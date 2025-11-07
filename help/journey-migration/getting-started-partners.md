@@ -186,7 +186,7 @@ Cloud Manager을 통해 조직은 클라우드에서 Experience Manager을 자�
 1. [Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html) git
 2. [Cloud Manager 품질 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)을 통해 고객 코드 실행
 3. [개발 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html#debugging)
-4. 패키지 또는 **콘텐츠 전송 도구를 사용하여**&#x200B;마이그레이션만[ 콘텐츠 전송](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
+4. 패키지 또는 **콘텐츠 전송 도구를 사용하여**&#x200B;마이그레이션만[&#x200B; 콘텐츠 전송](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
 5. 권장 테스트 주기 수행(연기, QA 등)
 6. Cloud Manager 프로덕션 파이프라인으로 홍보
 7. 스모크 테스트 유효성 검사
