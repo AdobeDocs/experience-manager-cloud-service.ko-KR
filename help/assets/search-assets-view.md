@@ -4,10 +4,10 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 83%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -33,22 +33,19 @@ ht-degree: 83%
 
 ## 검색 결과 필터링 {#refine-search-results}
 
+여러 필터를 적용하여 검색 결과를 구체화하여 관련 에셋을 찾을 수 있습니다. 관리자가 구성한 이러한 필터는 파일, 폴더 및 컬렉션을 기반으로 합니다. [검색 필터 사용자 지정](custom-search-filters.md)을 참조하세요.
+
+![검색 필터](assets/filters-panel.gif)
+
 다음 매개변수를 기반으로 검색 결과를 필터링할 수 있습니다.
 
-![검색 필터](assets/filters1.png)
-
-*그림: 다양한 매개변수를 기반으로 검색된 자산을 필터링합니다.*
-
 * 자산 상태: `Approved`, `Rejected` 또는 `No Status` 자산 상태를 사용하여 검색 결과를 필터링합니다.
-
 * 파일 형식: 지원되는 파일 형식(`Images`, `Documents` 및 `Videos`)으로 검색 결과를 필터링합니다.
 * MIME 유형: 지원되는 파일 형식 중 하나 이상을 필터링합니다. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 이미지 크기: 이미지를 필터링할 최소 및 최대 크기 중 하나 이상을 제공합니다. 크기는 픽셀 단위의 치수로 제공되며 이는 이미지의 파일 크기가 아닙니다.
 * 생성 날짜: 메타데이터에 입력된 자산 생성 날짜입니다. 사용되는 표준 날짜 형식은 `yyyy-mm-dd`입니다.
 * 수정 날짜: 자산이 마지막으로 수정된 날짜입니다. 사용되는 표준 날짜 형식은 `yyyy-mm-dd`입니다.
-
 * 만료 날짜: `Expired` 자산 상태를 기반으로 검색 결과를 필터링합니다. 또한 자산의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
-
 * 사용자 지정 필터: [Assets 보기 사용자 인터페이스에 사용자 지정 필터를 추가](#custom-filters)합니다. 표준 필터 외에 사용자 정의 필터를 적용하여 검색 결과를 구체화합니다.
 
 검색된 자산을 `Name`, `Relevance`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다. 기본적으로 검색된 자산은 `Relevance`를 기준으로 정렬됩니다.
@@ -192,7 +189,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 생성된 자산을 자산 저장소에 업로드하려면 다음 작업을 수행하십시오.
 
 1. **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
-1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**&#x200B;을 클릭합니다.
+1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**을 클릭합니다.
    ![자산 업로드](assets/upload-asset-firefly.jpg)
 
 ## 저장된 검색 {#saved-search}
@@ -369,12 +366,13 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
+
 
 

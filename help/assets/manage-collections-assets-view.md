@@ -4,10 +4,10 @@ description: 컬렉션은 Experience Manager Assets 보기 내의 에셋 세트�
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 90%
+source-wordcount: '1084'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >title="컬렉션 관리"
 >abstract="컬렉션은 Assets 보기 내의 자산, 폴더 또는 기타 컬렉션 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다. 폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다. 사용자와 여러 컬렉션을 공유할 수 있습니다. 각 컬렉션에는 자산에 대한 참조가 포함되어 있습니다. 자산의 참조 무결성은 컬렉션에 간에 유지됩니다."
 
-컬렉션은 Adobe Experience Manager Assets 보기 내의 에셋, 폴더 또는 기타 컬렉션 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
+컬렉션은 Adobe Experience Manager Assets 보기 내의 자산, 폴더 또는 기타 컬렉션 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
 
 폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다.
 
@@ -37,6 +37,8 @@ You can share collections with various users that are assigned different levels 
 * [컬렉션에 자산 추가](#add-assets-to-collection)
 
 * [컬렉션에서 자산 제거](#remove-assets-from-collection)
+
+* [컬렉션 내 검색](#search-collection)
 
 * [스마트 컬렉션 만들기](#create-smart-collection)
 
@@ -93,6 +95,32 @@ You can share collections with various users that are assigned different levels 
 1. 컬렉션을 클릭하고 컬렉션에서 제거해야 하는 항목을 선택합니다.
 
 1. **[!UICONTROL 제거]**&#x200B;를 클릭합니다.
+
+## 컬렉션 내 검색 {#search-collection}
+
+컬렉션 내에서 검색하여 관련 에셋을 쉽게 찾을 수 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
+
+* **[!DNL Collections]**(으)로 이동합니다. 검색 창에서 키워드를 입력하여 원하는 컬렉션을 찾습니다. 검색 창에는 선택한 컬렉션의 위치가 표시됩니다.
+
+* 검색 결과를 구체화하려면 **[!DNL Filters]**&#x200B;을(를) 열고 **[!DNL Collections]**&#x200B;에서 **[!DNL Asset Type]**&#x200B;이(가) 선택되었는지 확인하십시오.
+
+* **[!DNL Collection Visibility]** 드롭다운에서 다음 옵션 중 하나를 선택합니다.
+
+   * **[!DNL All]:** 표시 유형에 관계없이 모든 컬렉션을 표시합니다.
+   * **[!DNL Public Collection]:** 모든 사용자가 볼 수 있는 컬렉션만 표시합니다.
+   * **[!DNL Private Collection]:** 특정 사용자 또는 그룹에 대해 제한되거나 표시되는 컬렉션만 표시합니다.
+
+* [!DNL Collection Type] 드롭다운에서 다음 옵션 중 하나를 선택합니다.
+
+   * **[!DNL All]:** 일반 컬렉션과 스마트 컬렉션을 모두 표시합니다.
+   * **[!DNL Collection]:** 자산이 개별적으로 추가되는 수동으로 만든 컬렉션을 표시합니다.
+   * **[!DNL Smart Collection]:** [스마트 컬렉션](#manage-smart-collection)에 저장된 자산을 자동으로 포함하는 컬렉션을 표시합니다.
+
+* **[!DNL Created Date]** 드롭다운을 사용하면 컬렉션이 만들어진 시기를 기준으로 컬렉션을 필터링할 수 있습니다. 최근 생성 또는 이전 컬렉션을 찾을 날짜 범위를 지정할 수 있습니다.
+
+  ![검색 컬렉션](assets/search-collection.png)
+
+자세한 내용은 [자산 검색](search-assets-view.md), [검색 결과 필터링](search-assets-view.md#refine-search-results) 또는 [저장된 검색 관리](search-assets-view.md##saved-search)를 참조하십시오.
 
 ## 스마트 컬렉션 관리 {#manage-smart-collection}
 
@@ -208,4 +236,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의

@@ -3,10 +3,10 @@ title: 사용자 정의 검색 필터
 description: 검색 필터 양식 사용자 지정에 대해 알아보기
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -18,18 +18,41 @@ ht-degree: 13%
 
 검색 필터 사용자 지정 AEM Assets은 검색 가능한 속성 인덱스의 항목에만 매핑될 수 있습니다. 사용자 지정 필터 경험을 구성하기 전에 모든 사용자 지정 메타데이터가 포함되어 있는지 확인하십시오. [!DNL Assets view]은(는) 검색 필터를 사용자 지정하여 검색 프로세스를 간소화하는 데 도움이 됩니다. AEM Assets 사용자 지정 검색 필터를 사용자 지정하려면 다음 단계를 수행하십시오.
 
-1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL 검색]** 탭으로 이동합니다. 검색 양식을 구성하려면 **[!UICONTROL 사용자 지정]**&#x200B;을 클릭하십시오.
+1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]** > **[!UICONTROL 검색]**&#x200B;으로 이동합니다.
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![사용자 지정 검색 필터 설정](assets/custom-search-filter.png)
 
-1. [!UICONTROL 필터 구성] 양식이 나타납니다. 템플릿에서 수정할 수 있도록 편집 모드에 있는지 확인합니다. 기존 검색 양식의 미리 보기를 보려면 [!UICONTROL 미리 보기 모드]&#x200B;(으)로 전환할 수 있습니다.
-1. 캔버스의 [사용자 지정 필터](#available-custom-filters)에서 필터 요소를 삭제합니다. 필요한 경우 구성 요소를 드래그하여 놓아 순서를 변경할 수 있습니다.
+1. **[!UICONTROL 필터]** 섹션에서 다음을 구성할 수 있습니다.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL 파일]:** 파일 구성에는 파일 형식, 파일 형식, 에셋 상태, 파일 크기, 이미지 차원, 만든 날짜, 수정한 날짜 등이 포함됩니다.
+   * **[!UICONTROL 폴더]:** 폴더 구성에는 만든 날짜, 삭제된 날짜, 삭제된 날짜 등이 포함됩니다.
+   * **[!UICONTROL 컬렉션]:** 컬렉션 구성에는 컬렉션 표시, 컬렉션 유형, 만든 날짜 등이 포함됩니다.
 
-1. 변경 내용을 검토하려면 **[!UICONTROL 미리 보기 모드]**&#x200B;를 클릭하세요.
-1. 저장하려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요.
+1. 파일, 폴더 또는 컬렉션에 사용할 수 있는 기본 **[!UICONTROL 사전 설정 필터]** 양식을 미리 볼 수 있습니다. 그러나 이 기존 양식은 사용자 정의하거나 삭제할 수 없습니다. 또는 사용자 지정된 필터 양식을 만들려면 **[!UICONTROL 새 양식 추가]**&#x200B;를 클릭합니다.
+
+   >[!NOTE]
+   >
+   >사용자 지정된 필터 양식은 범주(파일, 폴더 또는 컬렉션)당 하나만 만들 수 있습니다.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+
+## 구성된 양식에 대한 작업 {#Actions-on-configured-form}
+
+구성된 필터 양식에서 다음 작업을 사용할 수 있습니다.
+
+* **[!UICONTROL 사용자 지정]:** 양식을 추가하거나 수정하려면 클릭하세요. 캔버스의 [사용자 지정 필터](#available-custom-filters)에서 필터 요소를 끌어 놓거나 필요한 경우 순서를 변경할 수 있습니다.
+
+* **[!UICONTROL 미리 보기]:** 변경 내용을 검토하려면 클릭하세요.
+
+* **[!UICONTROL 기본값으로 설정]:** 선택한 양식을 기본값으로 설정하려면 클릭합니다.
+
+* **[!UICONTROL 양식 삭제]:** 추가 옵션 ![추가 옵션](assets/do-not-localize/more-icon.svg)을 클릭하고 **[!UICONTROL 양식 삭제]**&#x200B;를 선택하여 선택한 필터 양식을 삭제합니다.
+
+* **[!UICONTROL 양식 레이블 편집]:** 추가 옵션 클릭 ![추가 옵션](assets/do-not-localize/more-icon.svg) 및 사용자 지정된 필터 양식에 새 레이블과 설명을 추가합니다.
+
+  ![양식 레이블 편집](assets/edit-form-labels.png)
 
 ## 사용 가능한 맞춤형 필터 {#available-custom-filters}
 
@@ -68,7 +91,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
                 <li>레이블
                 <li>메타데이터
                 <li>값
-                <li>옵션
+                <li>선택 사항
                 <li>설명
             </ul>
         </td>
@@ -105,7 +128,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
             <ul>
                 <li>레이블
                 <li>메타데이터
-                <li>옵션
+                <li>선택 사항
                 <li>값
                 <li>설명
             </ul>
@@ -178,7 +201,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
                 <li>레이블
                 <li>메타데이터
                 <li>선택 유형
-                <li>옵션
+                <li>선택 사항
                 <li>값
                 <li>설명
             </ul>
@@ -295,7 +318,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
                 <li>레이블
                 <li>메타데이터
                 <li>선택 유형
-                <li>옵션
+                <li>선택 사항
                 <li>값
                 <li>설명
             </ul>
@@ -360,7 +383,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
         </td>   
     </tr>
     <tr>
-        <td>옵션</td>
+        <td>선택 사항</td>
         <td>수동, JSON 경로 또는 CSV 업로드</td>
         <td>
             <ul>
@@ -404,6 +427,7 @@ Assets 보기는 요구 사항에 따라 재구성할 수 있는 다음과 같�
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## 필터 요소 삭제 {#delete-a-filter-element}
 
