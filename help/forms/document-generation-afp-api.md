@@ -4,16 +4,16 @@ description: AFP Output Sync API를 사용하여 출력 표현물을 검색하�
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
 # AEM Forms API를 사용하여 AFP 출력 생성
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 AFP(Advanced Function Presentation)는 주로 인쇄용으로 설계된 고성능 문서 형식입니다.\
 이 안내서에서는 AEM Forms을 사용하여 AFP 출력을 생성하는 데 필요한 모든 단계 및 구성을 간략하게 설명합니다.
@@ -39,12 +39,12 @@ XDP 템플릿과 입력 데이터를 사용하여 AFP(Advanced Function Presenta
 
 ### 승인
 
-로컬 환경에 대해 **BasicAuth**(관리자 자격 증명)를 사용하거나 AEM Cloud 인스턴스에 대해 **BearerAuth** 인증을 사용할 수 있습니다.
+로컬 환경에 대해 **BasicAuth**(관리자 자격 증명)를 사용하거나 AEM Cloud 인스턴스에 대해 **OAuth 서버 간** 인증을 사용할 수 있습니다.
 
 ### 요청
 
 **끝점:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### 헤더
 

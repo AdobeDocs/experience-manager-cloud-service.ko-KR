@@ -4,9 +4,9 @@ description: Adobe Experience Manager Forms as a Cloud Service용 Interactive Co
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Communications API 구성을 시작하기 전에 필요한 액세스 권한 및 
 
 >[!NOTE]
 >
-> 역할을 할당하고 사용자에게 액세스 권한을 부여하는 방법에 대한 자세한 내용은 [사용자 및 역할 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) 문서를 참조하십시오.
+> 역할을 할당하고 사용자에게 액세스 권한을 부여하는 방법에 대한 자세한 내용은 [사용자 및 역할 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) 문서를 참조하십시오.
 
 **Cloud Manager 액세스**
 
@@ -118,7 +118,7 @@ Cloud Manager Git 저장소를 복제하여 API 구성 파일을 관리합니다
       ![Git 리포지토리 복제](/help/forms/assets/repo-clone.png)
 
 
-### Git 저장소 통합 옵션
+**Git 저장소 통합 옵션**
 
 Adobe Cloud Manager은 다음 두 가지 저장소 옵션을 모두 지원합니다.
 
@@ -163,7 +163,7 @@ AEM Cloud Service 환경 세부 정보에 액세스하여 API 구성에 필요�
       1. 프로그램 개요 페이지에서
       2. **환경** 섹션을 찾습니다.
       3. 모든 환경을 보려면 **&quot;모두 표시&quot;**&#x200B;를 클릭하십시오.
-      4. 환경 옆에 있는 **줄임표 메뉴(...)**&#x200B;를 클릭합니다
+      4. 환경 옆에 있는 **줄임표 메뉴(...)**를 클릭합니다
          ![Option1-환경 세부 정보](/help/forms/assets/option2-env-details.png)
       5. **&quot;세부 정보 보기&quot;** 선택
 
@@ -187,7 +187,7 @@ AEM Cloud Service 환경 세부 정보에 액세스하여 API 구성에 필요�
 
 >[!NOTE]
 >
-> AEM 클라우드 서비스 환경 및 AEM Forms 끝점에 액세스하는 방법을 보려면 [환경 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)를 참조하십시오.
+> AEM 클라우드 서비스 환경 및 AEM Forms 끝점에 액세스하는 방법을 보려면 [환경 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)를 참조하십시오.
 
 ### 4단계: API 액세스 구성
 
