@@ -38,7 +38,7 @@ Communications API 구성을 시작하기 전에 필요한 액세스 권한 및 
 
 >[!NOTE]
 >
-> 역할을 할당하고 사용자에게 액세스 권한을 부여하는 방법에 대한 자세한 내용은 [사용자 및 역할 추가](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) 문서를 참조하십시오.
+> 역할을 할당하고 사용자에게 액세스 권한을 부여하는 방법에 대한 자세한 내용은 [사용자 및 역할 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) 문서를 참조하십시오.
 
 **Cloud Manager 액세스**
 
@@ -187,7 +187,7 @@ AEM Cloud Service 환경 세부 정보에 액세스하여 API 구성에 필요�
 
 >[!NOTE]
 >
-> AEM 클라우드 서비스 환경 및 AEM Forms 끝점에 액세스하는 방법을 보려면 [환경 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)를 참조하십시오.
+> AEM 클라우드 서비스 환경 및 AEM Forms 끝점에 액세스하는 방법을 보려면 [환경 관리 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko)를 참조하십시오.
 
 ### 4단계: API 액세스 구성
 
