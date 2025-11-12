@@ -116,7 +116,7 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
 
 >[!NOTE]
 >
-> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
+> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
