@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
 
 4. 액세스 토큰 생성
 
-   Adobe IMS API를 사용하여 프로그래밍 방식으로 토큰 생성:
+   cURL 명령을 사용하여 프로그래밍 방식으로 토큰을 생성합니다.
 
    **필요한 자격 증명:**
 
@@ -92,7 +92,7 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **샘플 요청(curl):**
+   **샘플 요청(cURL):**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
