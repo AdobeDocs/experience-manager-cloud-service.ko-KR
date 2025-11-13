@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
+source-git-commit: 95bebfd554aee90d0066e1d7dea5d5c7e43100e6
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1887'
 ht-degree: 59%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 59%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -271,9 +271,9 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 AI 답변에서는 방문자가 콘텐츠와 상호 작용할 수 있는 새로운 방법을 소개합니다. RAG(Retrieval-Augmented Generation) 기술을 기반으로 하는 이 솔루션은 AEM 관리 데이터를 사용하여 디지털 환경 내에서 정확하고 일관된 답변을 직접 제공합니다.
 
-이 베타의 일부로서, AEM Cloud Service 환경에서 AI 답변을 안전하게 살펴볼 수 있습니다. 이 접근 방식을 사용하면 라이브 대상자가 사용하기 전에 성능, 정확성 및 전체 경험을 확인할 수 있습니다. 인증이 완료되면 AI 답변 환경을 전체 프로덕션으로 승격시킬 수 있습니다.
+AI Answers Beta 프로그램 출시를 준비하고 있으며, 이제 고객을 초대하여 관심 사항을 등록하고자 합니다. 베타는 용량이 매우 제한적이기 때문에 조기 가입이 우선적 고려를 받게 된다. Beta에 참여하면 AEM 클라우드 서비스 환경에서 AI 답변을 탐색하고, 성능과 정확성을 검증하며, 향후 사용 환경을 미리 구체화할 수 있습니다.
 
-Beta 액세스를 요청하거나 피드백을 공유하려면 [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)에 문의하십시오.
+참여를 요청하거나 업데이트를 받으려면 [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)에 문의하세요.
 
 
 ### RDE용 스냅샷 (Alpha 프로그램) {#rde-snapshot-program}
