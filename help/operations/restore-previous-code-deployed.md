@@ -85,7 +85,7 @@ ht-degree: 3%
 
    ![활성화 복원](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. 페이지 오른쪽 상단 모서리에서 ![벨 아이콘 또는 알림 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **알림**&#x200B;을 클릭하여 복원이 시작되고 종료되는 시기를 확인합니다.
+1. 페이지 오른쪽 상단 모서리에서 ![벨 아이콘 또는 알림 아이콘 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **알림**&#x200B;을 클릭하여 복원이 시작되고 종료되는 시기를 확인합니다.
 
    ![복원을 시작할 때와 복원이 완료될 때 이전 코드 알림 복원](/help/operations/assets/restore-previous-code-notifications.png)
    *이전 코드 복원 작업에 대한 알림입니다.*
