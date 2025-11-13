@@ -3,24 +3,27 @@ title: 배포된 이전 Source 코드 복원
 description: 파이프라인 실행이 필요 없는 마지막 빌드 &ndash;(으)로 환경을 복원하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # AEM as a Cloud Service에 배포된 이전 소스 코드 복원 {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->이 문서에 설명된 기능은 Beta 프로그램을 통해서만 사용할 수 있습니다. Beta에 등록하려면 [파이프라인 배포에 대한 원클릭 롤백](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)을 참조하십시오.
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
 선택한 환경의 ![추가 아이콘 또는 줄임표 메뉴 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 메뉴를 열고 **복원** > **배포된 이전 코드**&#x200B;를 선택하여 가장 최근에 배포된 소스 코드를 초 단위로 롤백하면 됩니다.
+
+[AEM as a Cloud Service에서 콘텐츠 복원](/help/operations/restore.md)도 참조하세요.
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ ht-degree: 3%
 
 * 성공한 파이프라인 실행당 하나의 복원만 허용됩니다. 다시 복원하려면 성공한 다른 파이프라인 실행을 완료하십시오.
 * **환경 복원 만들기** 권한이 있습니다. 권한 관리에 대한 자세한 내용은 [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)을 참조하세요.
-* 조직이 Beta 프로그램에 등록되고 기능 플래그가 켜져 있습니다.
+* 이 기능을 보호하는 기능 플래그가 활성화됩니다(켜짐).
 * 프로그램은 AEM as a Cloud Service에서 실행됩니다.
 * 해당 환경에 대한 마지막 파이프라인이 정상적으로 완료되었으며 **30일 미만** 전에 실행되었습니다.
 * 환경 상태가 *실행 중*&#x200B;이고 진행 중인 파이프라인이 없습니다.
@@ -41,7 +44,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobe은 위험을 줄이고 안정성을 보장하기 위해 `Stage`의 *before*&#x200B;에서 `Production`에서 이 프로시저를 사용하는 것을 강력히 권장합니다.
+>Adobe에서는 위험을 줄이고 안정성을 보장하기 위해 `Stage`에서 *before*&#x200B;의 프로시저를 `Production`에서 사용하여 확인하는 것이 좋습니다.
 
 
 확인이 실패하면 Cloud Manager에서 하나 이상의 충족되지 않은 조건을 나열하는 다음 대화 상자를 열어 **확인**&#x200B;을 비활성화하여 복원을 방지합니다.
@@ -81,3 +84,8 @@ ht-degree: 3%
 1. Cloud Manager은 환경을 이전 빌드로 되돌리고, 콘텐츠와 구성을 그대로 유지하며, 배포가 완료될 때까지 환경 페이지에서 환경을 **복원**&#x200B;합니다.
 
    ![활성화 복원](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. 페이지 오른쪽 상단 모서리에서 ![벨 아이콘 또는 알림 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **알림**&#x200B;을 클릭하여 복원이 시작되고 종료되는 시기를 확인합니다.
+
+   ![복원을 시작할 때와 복원이 완료될 때 이전 코드 알림 복원](/help/operations/assets/restore-previous-code-notifications.png)
+   *이전 코드 복원 작업에 대한 알림입니다.*

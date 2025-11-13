@@ -4,10 +4,10 @@ description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service �
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 29%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 29%
 
 Cloud Manager을 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원할 수 있습니다.
 
-## 개요 {#overview}
+
 
 Cloud Manager의 셀프서비스 복원 프로세스는 Adobe 시스템 백업에서 데이터를 복사하고 원래 환경으로 복원합니다. 복원 작업은 손실, 손상 또는 실수로 삭제된 데이터를 원래 상태로 반환하기 위해 수행됩니다.
 
-복원 프로세스는 콘텐츠에만 영향을 미치며 코드 및 AEM 버전은 변경되지 않습니다. 언제든지 개별 환경의 복원 작업을 시작할 수 있습니다. (새 파이프라인 실행을 시작하지 않고도 이전에 배포된 소스 코드를 쉽고 빠르게 복원해야 하는 경우 [배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 사용할 수 있습니다.)
+복원 프로세스는 콘텐츠에만 영향을 미치며 코드 및 AEM 버전은 변경되지 않습니다. 언제든지 개별 환경의 복원 작업을 시작할 수 있습니다.
+
+새 파이프라인 실행을 시작하지 않고도 이전에 배포된 소스 코드를 쉽고 빠르게 복원해야 하는 경우 [배포된 이전 코드 복원](/help/operations/restore-previous-code-deployed.md)을 사용할 수 있습니다.
 
 Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업을 제공합니다.
 
