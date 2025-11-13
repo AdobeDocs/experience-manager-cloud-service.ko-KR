@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2025.11.06 릴리스 정보
-description: 다음은 범용 편집기 2025.11.06 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.11.13 릴리스 정보
+description: 다음은 범용 편집기 2025.11.13 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '219'
+ht-degree: 59%
 
 ---
 
 
-# 범용 편집기 2025.11.06 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.11.13 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 11월 6일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 11월 13일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -23,6 +23,14 @@ ht-degree: 50%
 >[!TIP]
 >
 >Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
+
+## 새로운 기능 {#what-is-new}
+
+* 상황별 작업이 드롭다운 메뉴로 이동되었습니다.
+* 이제 json 스키마가 유효성 검사를 위해 전달됩니다.
+* [로컬 개발자 로그인](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)은(는) 이제 유니버설 편집기의 핵심 부분이며 더 이상 확장이 필요하지 않습니다.
+* 오른쪽 레일이 새 UI로 마이그레이션되었습니다.
+* 이제 콘텐츠 트리의 항목이 자동으로 확장됩니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -34,12 +42,5 @@ ht-degree: 50%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 이제 `og:title` 메타데이터 필드를 제대로 삭제할 수 있습니다.
-* 사용자가 편집기에서 위치 표시줄을 편집하여 해당 변경 사항이 적절히 반영되도록 할 때 편집기 및/또는 앱이 요청된 URL로 이동할 때 탐색 문제가 수정되었습니다.
-* 필드 모델 해상도가 수정되었으며 편집기에서 구성 요소의 모델을 사용합니다(있는 경우).
-* 이제 구성 요소 ID가 /add 작업에 포함됩니다.
-* 이전에는 제거할 수 없었던 일부 메타데이터 속성을 삭제하는 기능이 수정되었습니다.
-* 이제 AEM 플러그인으로 설정되지 않은 경우 xwalk에 대해 원시 가져오기가 조건부로 수행됩니다.
-* RTE를 사용한 콘텐츠 조각 MSM 처리가 수정되었습니다.
-* 이제 사진의 이미지 강조 표시가 지원됩니다.
-
+* 상황별 메뉴에 대한 의 특정 너비가 추가되었습니다.
+* 특정 `null` 값으로 인한 유니버설 편집기 서비스 오류가 수정되었습니다.

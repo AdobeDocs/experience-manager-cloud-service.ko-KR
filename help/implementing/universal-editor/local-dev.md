@@ -4,10 +4,10 @@ description: 로컬 개발 또는 자체 인프라의 일부로 자체 범용 �
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 
-제공되는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법에 대한 자세한 내용은 [이 문서를 참조](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ko)하십시오.
+제공되는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법에 대한 자세한 내용은 [이 문서를 참조](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)하십시오.
 
 ## 범용 편집기 서비스 설치 {#install-ue-service}
 
@@ -53,7 +53,7 @@ HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로
 
 [NodeJS 버전 20](https://nodejs.org/en/download/releases)은 범용 편집기 서비스의 로컬 사본을 실행하는 데 필요합니다.
 
-범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)를 참조하십시오.
+범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)를 참조하십시오.
 
 `universal-editor-service.cjs` 파일을 소프트웨어 배포에서 로컬 개발 환경으로 저장합니다.
 
@@ -160,5 +160,7 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 1. 브라우저를 열고 `https://localhost:8000/ping`으로 이동합니다.
 1. [자체 서명된 인증서](#ue-https)를 허용하도록 브라우저를 내보냅니다.
-1. 자체 서명된 인증서를 신뢰하는 경우 로컬 범용 편집기 서비스를 사용하여 페이지를 편집할 수 있습니다.
+1. 자체 서명된 인증서를 신뢰할 수 있으면 로컬 유니버설 편집기 서비스를 사용하여 페이지가 로드됩니다.
+1. 도구 모음에서 [로컬 개발자 로그인](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)을 클릭하고 로컬 AEM 인스턴스를 인증합니다.
 
+이제 로컬 범용 편집기 서비스를 사용하여 로컬 AEM 테스트 인스턴스의 페이지를 편집할 수 있습니다.

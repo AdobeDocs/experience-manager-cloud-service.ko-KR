@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1847'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
@@ -142,6 +142,12 @@ Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Ex
 [로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 아이콘을 선택하십시오.
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
+
+#### 로컬 개발자 로그인 {#local-developer-login}
+
+로컬로 개발할 때 로컬 AEM SDK [에 쉽게 인증해야 하는 경우 로컬 개발자 로그인 아이콘을 선택합니다.](/help/implementing/universal-editor/local-dev.md)
+
+![로컬 개발자 로그인 단추](assets/local-developer-login.png)
 
 #### 반응형 모드 {#emulator}
 

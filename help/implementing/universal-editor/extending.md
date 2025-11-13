@@ -4,9 +4,9 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Adobe Experience Cloud 서비스인 범용 편집기의 UI는 App Builder 및 Ex
 * **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: 범용 편집기에서 해당 페이지 위치로 Sites Console을 엽니다.
 * **[AEM 페이지 잠금 확장 기능](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: 범용 편집기에서 페이지 잠금 상태를 보고 변경합니다.
 * **[AEM 워크플로 확장 기능](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: 범용 편집기에서 페이지 및 페이지 콘텐츠에 대한 워크플로를 시작합니다.
-* **[AEM 범용 편집기 개발 로그인 확장 기능](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: 로컬에서 개발할 때 로컬 AEM SDK에 쉽게 인증합니다.
 * **[베리에이션 생성](/help/generative-ai/generate-variations-integrated-editor.md)**: 속성 패널에서 직접 생성형 AI를 사용하여 콘텐츠에 대한 베리에이션을 만듭니다.
 * **[범용 편집기용 AEM 제품 선택기](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: 편집기에서 제품 데이터를 선택하거나 제거하여 Adobe Commerce 데이터를 통합합니다.
 * **[범용 편집기 콘텐츠 초안](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: 여러 콘텐츠 초안을 만들고, 편집하고, 관리합니다.
