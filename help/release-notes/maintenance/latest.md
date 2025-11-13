@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 17%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 17%
 
 ### 알려진 문제 {#known-issues-23320}
 
-없음.
+* FORMS-22633: GuideBridge API(`getData` 또는 `getDataXML`)에 의존하는 사용자 지정 코드를 사용하는 경우 양식 제출이 실패할 수 있습니다. 이 문제가 발생하는 경우 Adobe 지원 센터에 문의하십시오.
 
 ### 사용 중단된 기능 및 API {#deprecated-23320}
 
