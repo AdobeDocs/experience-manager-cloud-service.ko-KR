@@ -4,10 +4,10 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '1887'
+ht-degree: 79%
 
 ---
 
@@ -118,33 +118,29 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에서 필터를 제거합니다.
 
-## 시맨틱 검색 {#semantic-search}
+## AI 검색 {#ai-search}
 
-시맨틱 검색은 정확한 키워드 일치에 의존하지 않고 사용자 쿼리 뒤에 있는 의미와 의도를 이해하는 고급 검색 기능입니다. 인공지능(AI), 자연어 처리(NLP), 머신러닝 등을 활용해 보다 정확하고 상황 인식 결과를 전달한다.
+AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 쿼리 뒤에 있는 의미와 의도를 이해하는 고급 검색 기능입니다. 인공지능(AI)과 머신러닝을 활용해 보다 정확하고 상황에 맞는 결과를 전달한다.
 
-시맨틱 검색은 정확한 용어를 찾는 기존 키워드 기반 검색과 달리 단어, 개념, 사용자 의도 간의 관계를 해석한다. 이렇게 하면 쿼리가 다르게 표현되거나, 오타가 있거나, 다른 언어로 되어 있더라도 사용자가 찾고 있는 항목을 찾을 수 있습니다.
+정확한 용어를 찾는 기존 키워드 기반 검색과 달리 AI 검색은 단어, 개념, 사용자 의도 간 관계를 해석한다. 이렇게 하면 쿼리가 다르게 표현되거나, 오타가 있거나, 다른 언어로 되어 있더라도 사용자가 찾고 있는 항목을 찾을 수 있습니다.
 
 몇 가지 주요 이점은 다음과 같습니다.
 
 * **다국어 지원**: 정확한 번역이 필요 없이 여러 언어를 검색합니다. 사용자는 쿼리 언어에 관계없이 관련 콘텐츠를 찾을 수 있습니다.
 
-* **철자 오류를 처리합니다**: 오타 및 맞춤법 오류를 자동으로 수정하거나 해석하여 입력이 불완전한 경우에도 정확한 결과를 보장합니다.
+* **철자 오류를 처리합니다**: 오타 및 맞춤법 오류를 해석하여 입력이 불완전한 경우에도 정확한 결과를 보장합니다.
 
 * **동의어 이해**: 관련 용어와 구에 대한 결과를 제공하므로 사용자가 올바른 키워드를 추측할 필요가 없습니다.
 
-* **컨텍스트 인식 검색**: 단어뿐만 아니라 쿼리 뒤에 있는 의도를 인식합니다.
+* **컨텍스트 인식 검색**: 정확한 단어뿐만 아니라 쿼리 뒤에 있는 의도를 인식합니다.
 
->[!IMPORTANT]
->
-> 의미 체계 검색에 대해 3개 이상의 단어를 지정하여 적절한 결과를 표시하십시오.
-
-### 의미 체계 검색 예제 {#examples-semantic-search}
+### AI 검색 예 {#examples-ai-search}
 
 **메시지 예제**: *커피를 마시는 여성*
 
-기존 키워드 기반 검색은 Woman, Coffee 등과 같은 자산 메타데이터의 정확한 일치 항목을 찾고 이 키워드를 포함하는 자산을 반환합니다.
+기존 키워드 기반 검색은 `Woman`, `drinking`, `Coffee`과(와) 같은 자산 메타데이터의 정확한 일치 항목을 찾고 메타데이터에 이러한 모든 용어를 포함하는 자산을 반환합니다.
 
-그러나 의미 체계 검색은 `Girl`의 경우 `Lady`, `Woman`과(와) 같은 유사한 단어를 찾고 `Cappuccino`의 경우 `Latte` 및 `Coffee`과(와) 같은 커피 옵션을 찾습니다.
+그러나 AI 검색은 `Girl`의 경우 `Lady`, `Woman`, `Cappuccino`의 경우 `Latte` 및 `Coffee`과(와) 같은 유사한 단어와 일치합니다.
 
 마찬가지로 이 프롬프트를 스페인어로 지정하거나 `Woman`을(를) `Wman`(으)로 잘못 입력해도 동일한 결과를 얻을 수 있습니다.
 
@@ -189,7 +185,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 생성된 자산을 자산 저장소에 업로드하려면 다음 작업을 수행하십시오.
 
 1. **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
-1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**&#x200B;을 클릭합니다.
+1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**을 클릭합니다.
    ![자산 업로드](assets/upload-asset-firefly.jpg)
 
 ## 저장된 검색 {#saved-search}
@@ -280,99 +276,104 @@ Assets 보기를 사용하면 조직의 기본 랜딩 페이지를 선택할 수
 
    ![검색 우선 홈 페이지 미리보기](/help/assets/assets/search-first-preview.gif)
 
-## 상황별 검색 {#contextual-search}
 
-텍스트 프롬프트를 정의하여 저장소에서 사용 가능한 자산을 검색할 수도 있습니다. Experience Manager Assets는 해당 텍스트 프롬프트를 검색 필터로 자동 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 확인하여 수정하고 검색 결과의 범위를 더 좁힐 수 있습니다.
+<!--
 
-### 상황별 검색 액세스 {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. 왼쪽 창에서 **[!UICONTROL 검색]**&#x200B;을 클릭합니다.
+### Access Contextual Search {#access-contextual-search}
 
-   ![상황별 검색](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. 검색 텍스트 상자에서 텍스트 프롬프트를 정의하고 **[!UICONTROL 상황별 검색]**&#x200B;을 클릭합니다.
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![상황별 검색 텍스트 프롬프트](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   [!DNL Experience Manager Assets]는 검색 결과를 표시합니다.
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### 지원되는 필터 {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-상황별 검색은 기본적으로 다음 필터를 지원합니다. 이러한 필터를 기반으로 텍스트 프롬프트를 사용하여 적절한 검색 결과를 확인할 수 있습니다.
+   [!DNL Experience Manager Assets] displays the search results.
 
-* 이미지 높이
+### Supported filters {#supported-filters}
 
-* 이미지 폭
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* 파일 유형: 이미지, 문서, 비디오 또는 폴더.
+* Image height
 
-* MIME 유형: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX 또는 XLSX
+* Image width
 
-* 생성된 일자
+* File type: image, document, video, or folder.
 
-* 수정일
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* 만료일
+* Created date
 
-* 자산 상태: 승인됨, 거부됨 또는 모두
+* Modified date
 
-* 만료된 자산
+* Expiration date
 
-### 텍스트 프롬프트의 예 {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**예 1**
+* Expired assets
 
-**텍스트 프롬프트**: 이번 달에 생성된 이미지입니다.
+### Examples for the text prompts {#text-prompts-examples}
 
-[!DNL Experience Manager Assets]는 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+**Example 1**
 
-![상황별 검색 예 1](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**예 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**텍스트 프롬프트**: 해변과 맑은 하늘이 포함된 높이가 200px 이상, 너비가 100px 이상인 이미지입니다.
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-[!DNL Experience Manager Assets]는 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+**Example 2**
 
-![상황별 검색 예 2](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**예 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**텍스트 프롬프트**: 높이가 1500 및 2500픽셀이고 지난 달에 생성되었으며 만료 및 승인되지 않은 푸른 하늘 이미지가 필요합니다.
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-[!DNL Experience Manager Assets]는 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+**Example 3**
 
-![상황별 검색 예 3](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-다음 비디오는 상황별 검색 사용자 인터페이스에 액세스하는 것부터 텍스트 프롬프트를 정의하고 검색 결과를 보는 것까지의 전체 프로세스를 보여 줍니다.
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### 상황별 검색 비활성화 {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-관리자는 조직 내 사용자에 대해 상황별 검색을 비활성화할 수도 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. [!UICONTROL 상황별 검색] 섹션에서 **[!UICONTROL 조직에 대한 상황별 검색 활성화]** 토글을 꺼서 조직의 모든 사용자에 대한 상황별 검색 기능을 비활성화합니다.
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### 상황별 검색 피드백 {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-상황별 검색 기능에 대한 피드백을 제공해야 하는 경우, ![상황별 검색 아이콘](assets/do-not-localize/Smock_Help_18_N.svg)을 클릭하고 피드백 아이콘을 클릭합니다. 피드백 유형을 선택하고 제목과 설명을 지정한 후에 **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![상황별 검색 피드백](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
 
