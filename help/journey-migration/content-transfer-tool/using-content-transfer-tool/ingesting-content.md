@@ -237,7 +237,7 @@ MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. �
 
 MongoDB 제한 사항입니다.
 
-자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크는 `Node property value in MongoDB`콘텐츠 전송 도구를 위한 필수 구성 요소[의 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 메모를 참조하십시오. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
+자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크는 `Node property value in MongoDB`콘텐츠 전송 도구를 위한 필수 구성 요소[의 &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 메모를 참조하십시오. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
 
 이러한 제한을 방지하려면 소스 AEM 인스턴스에서 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)를 실행하고 표시되는 결과, 특히 [&quot;지원되지 않는 저장소 구조&quot;(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) 패턴을 검토하십시오.
 
