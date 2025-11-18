@@ -26,7 +26,7 @@ Assets 보기 UI UI에 통합된 Adobe Systems Express로 구동되는 기본 �
 ## 이미지 편집 {#edit-image}
 
 Assets 보기 UI 이동하여 링크 - [Assets 보기 사용하고](https://experience.adobe.com/#/assets) 올바른 저장소 선택합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
-추가 참조 정보는 Adobe Experience Manager Assets 보기[ 사용하여 시작, ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)Assets 보기 사용자 인터페이스[ 이해 및 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)Assets 보기 사용 사례를[ 참조하십시오](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+추가 참조 정보는 Adobe Experience Manager Assets 보기[&#x200B; 사용하여 시작, &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)Assets 보기 사용자 인터페이스[&#x200B; 이해 및 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)Assets 보기 사용 사례를[&#x200B; 참조하십시오](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -44,7 +44,7 @@ Assets 보기로 이동한 후 Assets **클릭하고**&#x200B;이미지를 선�
 1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 이미지 크기 조정 기능이 표시됩니다.
 1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
-1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -55,7 +55,7 @@ Assets 보기로 이동한 후 Assets **클릭하고**&#x200B;이미지를 선�
 아래 설명된 몇 번의 간단한 단계를 따라 이미지에서 배경을 제거할 수 있습니다.
 
 1. 왼쪽 창에서 **배경 제거**&#x200B;를 클릭합니다. Experience Manager Assets에 배경이 없는 이미지가 표시됩니다.
-1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
+1. **[!UICONTROL 적용]**&#x200B;을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-remove-background.png)
 
    편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
@@ -66,7 +66,7 @@ Assets 보기로 이동한 후 Assets **클릭하고**&#x200B;이미지를 선�
 
 1. 왼쪽 창에서 **[!UICONTROL 이미지 자르기]**&#x200B;를 클릭합니다.
 2. 이미지 모퉁이의 핸들을 드래그하여 원하는 자르기를 만듭니다.
-3. **[!UICONTROL 적용]**을 클릭합니다.
+3. **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
 잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
@@ -74,7 +74,7 @@ Assets 보기로 이동한 후 Assets **클릭하고**&#x200B;이미지를 선�
 
 Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**를 클릭합니다.
+1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**&#x200B;를 클릭합니다.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
@@ -121,7 +121,7 @@ Express 권한이 있는 사용자는 Assets 보기 내에서 내장된 Express 
 
 [!DNL Assets view]를 사용하여 [!DNL Adobe Express] 임베드된 편집기로 처음부터 새 템플릿을 만들 수 있습니다. [!DNL Adobe Express]를 사용하여 새 자산을 만들려면 아래 단계를 실행하십시오.
 
-1. 내 작업 영역 **** 로 이동하고 맨 위에 표시되는 Adobe Systems Express 배너 내에서 만들기&#x200B;**[!UICONTROL 클릭합니다]**. [!DNL Adobe Express] 빈 캔버스는 [!DNL Assets view] 사용자 인터페이스 내에 표시됩니다.
+1. 내 작업 영역 **&#x200B;**&#x200B;로 이동하고 맨 위에 표시되는 Adobe Systems Express 배너 내에서 만들기&#x200B;**[!UICONTROL 클릭합니다]**. [!DNL Adobe Express] 빈 캔버스는 [!DNL Assets view] 사용자 인터페이스 내에 표시됩니다.
 1. [템플릿](https://helpx.adobe.com/kr/express/using/work-with-templates.html)을 사용하여 콘텐츠를 만듭니다. 그렇지 않은 경우 **[!UICONTROL 내 항목]**&#x200B;으로 이동하여 기존의 콘텐츠를 수정합니다.
 1. 편집이 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 만든 자산의 대상 경로를 지정하고 새 자산&#x200B;**[!UICONTROL 로 저장 클릭합니다]**.
@@ -193,7 +193,7 @@ TBD: Insert a video of the available social media options.
 
 ### 다음 단계 {#next-steps}
 
-* Assets 보기 사용자 인터페이스에서 사용할 수 있는 Feedback[!UICONTROL  옵션을 사용하여 ]제품 피드백을 제공합니다.
+* Assets 보기 사용자 인터페이스에서 사용할 수 있는 Feedback[!UICONTROL &#x200B; 옵션을 사용하여 &#x200B;]제품 피드백을 제공합니다.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
