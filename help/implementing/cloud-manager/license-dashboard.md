@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 23%
+source-wordcount: '1026'
+ht-degree: 21%
 
 ---
 
@@ -19,13 +19,13 @@ Cloud Manager은 조직 또는 테넌트가 사용할 수 있는 Adobe Experienc
 
 >[!IMPORTANT]
 >
->라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
 >
 >프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards)을 참조하십시오.
 
 ## 개요 {#overview}
 
-Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 및 사용 가능한 항목을 포함하여 모든 프로그램에서 사용할 수 있는 솔루션 권한에 쉽게 액세스할 수 있습니다. Sites 솔루션에 대한 월별 트렌드가 있는 콘텐츠 요청 사용량 지표.
+Cloud Manager 라이선스 대시보드를 사용하면 사용 금액 및 사용 가능한 금액 등 모든 프로그램에서 사용할 수 있는 솔루션 권한에 쉽게 액세스할 수 있습니다. Sites 솔루션에 대한 월별 트렌드가 있는 콘텐츠 요청 사용량 지표.
 
 ## 라이선스 대시보드 액세스 {#using-dashboard}
 
@@ -59,7 +59,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 
@@ -67,6 +67,15 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Cloud Manager의 라이선스 영역에 있는 **사용 세부 정보 보기** 단추는 현재 리소스 사용에 대한 자세한 분석을 제공합니다. 클릭하면 라이선스와 관련된 중요한 지표를 보여 주는 보고서나 대시보드가 열립니다. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> 이 기능을 사용하면 더 나은 리소스 계획 및 최적화를 위한 통찰력을 제공하는 동시에 계약 한도 내에서 모니터링하고 유지할 수 있습니다.
+
+다음과 같은 경우 **사용 세부 정보 보기** 단추가 *비활성화됨*(꺼짐)입니다.
+
+* 솔루션은 계약에 포함되지 않으며 크레딧이 없습니다. 모든 크레딧이 소비된 경우에도 크레딧이 있는 경우 버튼은 계속 사용할 수 있습니다.
+* 해당 솔루션에 대해 구성된 Cloud Manager 프로그램이 없습니다.
+* 사용 세부 사항을 제어하는 기능 플래그가 비활성화됩니다. 이 단추를 사용하려면 조직에 대해 *enabled*(켜짐)여야 합니다.
+* 솔루션에 대한 사용이 명시적으로 비활성화되어 있습니다. 현재 이 상황은 Edge Delivery Services에만 적용됩니다.
+
+
 
 ### Sites 사용량 세부 정보 {#sites-usage-details}
 
