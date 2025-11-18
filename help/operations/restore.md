@@ -22,7 +22,7 @@ Cloud Manager의 셀프서비스 복원 프로세스는 Adobe 시스템 백업�
 
 복원 프로세스는 콘텐츠에만 영향을 미치며 코드 및 AEM 버전은 변경되지 않습니다. 언제든지 개별 환경의 복원 작업을 시작할 수 있습니다.
 
-새 파이프라인 실행을 시작할 필요 없이 이전에 배포된 소스 코드를 쉽고 빠르게 복원해야 하는 경우 배포된[ 이전 Code 복원을 사용할 ](/help/operations/restore-previous-code-deployed.md)수 있습니다.
+새 파이프라인 실행을 시작할 필요 없이 이전에 배포된 소스 코드를 쉽고 빠르게 복원해야 하는 경우 배포된[&#x200B; 이전 Code 복원을 사용할 &#x200B;](/help/operations/restore-previous-code-deployed.md)수 있습니다.
 
 Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업을 제공합니다.
 
@@ -45,10 +45,10 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 전체 컨텐츠 복원으로 복원하기 전에 이러한 옵션을 고려하여 컨텐츠를 보다 쉽게 복원하십시오.
 
-* 삭제된 경로에 대한 패키지를 사용할 수 있는 경우 패키지 관리자[ 를 ](/help/implementing/developing/tools/package-manager.md)사용하여 패키지를 다시 설치합니다.
-* 삭제된 경로가 Sites의 페이지 인 경우 트리 복원 기능을[ 사용하십시오](/help/sites-cloud/authoring/sites-console/page-versions.md).
-* 삭제 된 경로가 자산 폴더이고 원본 파일을 사용할 수있는 경우 Assets 콘솔[을 통해 ](/help/assets/add-assets.md)다시 업로드 하십시오.
-* 컨텐츠 삭제가 자산인 경우 이전 버전의 자산을[ 복원하는 것이 좋습니다](/help/assets/manage-digital-assets.md).
+* 삭제된 경로에 대한 패키지를 사용할 수 있는 경우 패키지 관리자[&#x200B; 를 &#x200B;](/help/implementing/developing/tools/package-manager.md)사용하여 패키지를 다시 설치합니다.
+* 삭제된 경로가 Sites의 페이지 인 경우 트리 복원 기능을[&#x200B; 사용하십시오](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* 삭제 된 경로가 자산 폴더이고 원본 파일을 사용할 수있는 경우 Assets 콘솔[을 통해 &#x200B;](/help/assets/add-assets.md)다시 업로드 하십시오.
+* 컨텐츠 삭제가 자산인 경우 이전 버전의 자산을[&#x200B; 복원하는 것이 좋습니다](/help/assets/manage-digital-assets.md).
 
 위의 옵션 중 어느 것도 작동하지 않고 삭제된 경로의 내용이 중요한 경우 다음 섹션에 설명된 대로 컨텐츠 복원을 수행합니다.
 
@@ -61,13 +61,13 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 1. 사용 사례에 **따라 필요한 환경 또는 프로그램의 모든 환경에 대한 환경 복원 만들기** 권한 제공합니다.
 1. 해당 프로필에 사용자를 할당합니다.
 
-사용 권한 관리에 대한 자세한 내용은 사용자 지정 사용 권한을[ 참조하십시오](/help/implementing/cloud-manager/custom-permissions.md).
+사용 권한 관리에 대한 자세한 내용은 사용자 지정 사용 권한을[&#x200B; 참조하십시오](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## 환경의 컨텐츠 복원 {#restoring-content}
 
 >[!NOTE]
 >
->사용자 복원 작업을 시작할 수 있는 적절한 권한이[ 있어야 합니다](#user-role).
+>사용자 복원 작업을 시작할 수 있는 적절한 권한이[&#x200B; 있어야 합니다](#user-role).
 
 **환경의 컨텐츠 복원하기:**
 
@@ -77,7 +77,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 1. 다음 중 하나를 수행하여 프로그램의 모든 환경을 나열합니다.
 
-   * 왼쪽 메뉴의 **Services(서비스**)에서 Data(데이터) 아이콘![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Environments(환경&#x200B;**)를 클릭합니다**.
+   * 왼쪽 메뉴의 **Services(서비스**)에서 Data(데이터) 아이콘![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Environments(환경&#x200B;**)를 클릭합니다**.
 
      ![환경 탭](assets/environments-1.png)
 
@@ -108,7 +108,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
    복원 옵션에 대해 표시되는 타임스탬프는 컴퓨터의 사용자 표준 시간대를 기준으로 합니다.
 
-1. 복원할 백업 행의 오른쪽 끝에서 CCW 굵게 회전 또는 복원![을 클릭하여 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg)복원 프로세스를 시작합니다.
+1. 복원할 백업 행의 오른쪽 끝에서 CCW 굵게 회전 또는 복원![을 클릭하여 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg)복원 프로세스를 시작합니다.
 
 1. Restore Content(콘텐츠 복원) **대화 상자에서 세부 사항을 검토한 다음 Restore(복원**)를 클릭합니다&#x200B;**.**
 
@@ -141,7 +141,7 @@ Cloud Manager의 셀프서비스 복원 프로세스는 콘텐츠를 AEM으로�
 
 ![활동 복원](assets/backup-activity.png)
 
-백업에 대한 정보 아이콘을![ 클릭하면 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)해당 백업에 대한 로그를 다운로드하고 복원이 시작된 시점의 스냅샷과 데이터 간의 차이점을 포함하여 코드 세부 정보를 검사할 수 있습니다.
+백업에 대한 정보 아이콘을![&#x200B; 클릭하면 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)해당 백업에 대한 로그를 다운로드하고 복원이 시작된 시점의 스냅샷과 데이터 간의 차이점을 포함하여 코드 세부 정보를 검사할 수 있습니다.
 
 ## 오프사이트 백업 {#offsite-backup}
 
@@ -165,7 +165,7 @@ Adobe Systems는 자세한 지역-지역 매핑 정보를 공개하지 않습니
 적합한 데이터 지역 매핑을 결정할 때 Adobe Systems 에서는 다음과 같이 우선 순위가 지정된 몇 가지 기준을 적용합니다.
 
 1. **글로벌 지역 나가기 말 것**\
-   배포는 주요 글로벌 지역인 **APAC,****EMEA** 및 **미주 중 하나에 남아 있습니다**.
+   배포는 주요 글로벌 지역인 **APAC,**&#x200B;**EMEA** 및 **미주 중 하나에 남아 있습니다**.
 
 2. **대륙을 떠나지 마라**\
    가능한 경우 데이터 복제 및 장애 조치는 동일한 대륙에 유지됩니다.
