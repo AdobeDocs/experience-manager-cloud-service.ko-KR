@@ -4,7 +4,7 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ ht-degree: 1%
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 튜토리얼
 
-CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
+CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
 
 
