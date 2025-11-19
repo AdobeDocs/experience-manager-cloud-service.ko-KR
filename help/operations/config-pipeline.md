@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
+source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -63,21 +63,32 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 각 구성 파일은 다음 예제 코드 조각과 유사한 속성으로 시작됩니다.
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | 속성 | 설명 | 기본값 |
 |---|---|---|
 | `kind` | 로그 전달, 트래픽 필터 규칙 또는 요청 변환 등 구성 유형을 결정하는 문자열 | 필수, 기본값 없음 |
 | `version` | 스키마 버전을 나타내는 문자열 | 필수, 기본값 없음 |
-| `envTypes` | 이 문자열 배열은 `metadata` 노드의 자식 속성입니다. **Publish 게재**&#x200B;의 경우 가능한 값은 dev, stage, prod 또는 모든 조합이며, 구성이 처리되는 환경 유형을 결정합니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다. **Edge Delivery**&#x200B;의 경우 `prod`의 값만 사용해야 합니다. | Publish 전달을 위한 개발, 스테이지, 프로덕션이거나 Edge Delivery을 위한 프로덕션인 모든 환경 유형입니다. |
+| `metadata` | (선택 사항) 구성이 처리되는 환경 유형을 결정하는 문자열 `envTypes` 배열이 포함되어 있습니다. **게재 게시**&#x200B;의 경우 가능한 값은 `dev`, `stage` 및 `prod`입니다. **Edge Delivery**&#x200B;의 경우 `prod`의 값만 사용해야 합니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다. | Publish 전달을 위한 개발, 스테이지, 프로덕션이거나 Edge Delivery을 위한 프로덕션인 모든 환경 유형입니다. |
 
 `yq` 유틸리티를 사용하여 구성 파일의 YAML 형식을 로컬로 확인할 수 있습니다(예: `yq cdn.yaml`).
 
-## 폴더 구조 {#folder-structure}
+## 게재 게시 {#yamls-for-aem}
+
+**게시 게재** 구성이 대상 환경에 배포됩니다. 여러 환경을 타깃팅할 때 다양한 파일을 다양한 방식으로 구성할 수 있습니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다.
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### 폴더 구조 {#folder-structure}
 
 `/config` 또는 유사한 이름의 폴더는 트리의 맨 위에 있어야 하며 그 아래 트리 어딘가에 YAML 파일이 하나 더 있어야 합니다.
 
@@ -115,13 +126,13 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 모든 환경 및 모든 구성 유형(CDN, 로그 전달 등)에 대해 동일한 구성으로 충분한 경우 이 구조를 사용합니다. 이 시나리오에서는 `envTypes` 배열 속성에 모든 환경 유형이 포함됩니다.
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [&#x200B; 참조에 표시된 대로 &#x200B;](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
+암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [ 참조에 표시된 대로 ](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
 
 ```yaml
 kind: "LogForwarding"
@@ -175,7 +186,7 @@ data:
 
 이 방법의 변형은 환경당 별도의 분기를 유지 관리하는 것입니다.
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 프로덕션 환경이 없습니다. 게시 게재 환경에서 변경 사항은 개발, 스테이지 및 프로덕션 계층을 통해 진행됩니다. 반대로 Edge Delivery 구성 파이프라인은 Edge Delivery 사이트에 대해 Cloud Manager에 등록된 모든 도메인 매핑에 직접 구성을 적용합니다.
 
@@ -188,7 +199,7 @@ Edge Delivery 구성 파이프라인에는 별도의 개발, 스테이징 및 �
   logForwarding.yaml
 ```
 
-규칙이 Edge Delivery 사이트마다 달라야 하는 경우 *when* 구문을 사용하여 규칙을 서로 구별합니다. 예를 들어 도메인이 아래 코드 조각에서 dev.example.com 와 일치하며 www.example.com 도메인과 구별될 수 있습니다.
+규칙이 Edge Delivery 사이트마다 달라야 하는 경우 *when* 구문을 사용하여 규칙을 서로 구별합니다. 예를 들어 도메인이 아래 코드 조각의 dev.example.com과 일치하며 도메인 `www.example.com`과(와) 구별될 수 있습니다.
 
 ```
 kind: "CDN"
@@ -220,8 +231,6 @@ data:
 ```
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
