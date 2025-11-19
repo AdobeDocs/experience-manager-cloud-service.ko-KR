@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 3%
@@ -111,8 +111,6 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -135,8 +133,6 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -155,8 +151,6 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -218,8 +212,6 @@ AEM 로그(Apache/Dispatcher 포함)의 경우 [고급 네트워킹](/help/secur
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -254,9 +246,7 @@ Amazon S3에 대한 로그 전달은 AEM 및 Dispatcher 로그를 지원하며 C
 
 ```yaml
 kind: "LogForwarding"
-version: "1.0"
-metadata:
-  envTypes: ["dev"]
+version: "1"
 data:
   awsS3:
     default:
@@ -294,8 +284,6 @@ IAM 정책은 사용자가 `s3:putObject`을(를) 사용할 수 있도록 허용
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   azureBlob:
     default:
@@ -364,8 +352,6 @@ AEM 로그(Apache/Dispatcher 포함)는 다음 명명 규칙을 사용하여 폴
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   datadog:
     default:
@@ -392,8 +378,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   elasticsearch:
     default:
@@ -426,8 +410,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   https:
     default:
@@ -472,8 +454,6 @@ New Relic으로 로그 전달에서는 수집에 New Relic HTTPS API를 활용�
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     newRelic:
       default:
@@ -499,8 +479,6 @@ Dynatrace으로 로그 전달에서는 수집에 Dynatrace HTTPS API를 활용�
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     dynatrace:
       default:
@@ -517,8 +495,6 @@ Dynatrace으로 로그 전달에서는 수집에 Dynatrace HTTPS API를 활용�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -547,13 +523,11 @@ Sumo Logic으로의 로그 전달은 AEM 및 Dispatcher 로그를 지원합니�
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-위의 `/`설정[&#x200B; 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
+위의 `/`설정[ 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
 
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   sumoLogic:
     default:
