@@ -4,7 +4,7 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%
@@ -44,8 +44,6 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
 1. *Config Pipeline*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
@@ -79,8 +77,6 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -227,8 +223,6 @@ actions:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ responseTransformations:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ AEM CDN을 활용하여 Adobe이 아닌 애플리케이션을 비롯한 다양�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -456,8 +446,6 @@ data:
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ data:
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -523,8 +509,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
