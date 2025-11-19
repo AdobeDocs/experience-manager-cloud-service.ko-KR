@@ -4,8 +4,8 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 *WAF 규칙*)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
-트래픽 필터 규칙은 Cloud Manager Config Pipeline을 통해 개발, 스테이징, 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
+트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이징, 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
 [튜토리얼을 따라](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
@@ -82,8 +82,6 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -302,8 +298,6 @@ when:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ WAF에 라이선스가 있으면 알려진 많은 CVE(일반적인 취약점 및
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -538,8 +518,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -578,8 +556,6 @@ CDN 로그는 최대 5분까지 지연될 수 있습니다.
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ Adobe에서는 아래의 트래픽 필터 규칙부터 시작하여 시간이 �
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
@@ -809,7 +783,7 @@ Adobe는 2025년 7월 이전까지 악성 트래픽을 방어하는 데 여전�
 
 * 표준 및 WAF 트래픽 필터 규칙 개요
 * 서비스 거부(DoS) 및 기타 위협을 포함한 공격을 차단하기 위해 권장되는 표준 및 WAF 트래픽 필터 규칙 구성
-* Cloud Manager Config Pipeline을 사용하여 규칙 배포
+* Cloud Manager 구성 파이프라인을 사용하여 규칙 배포
 * 악성 트래픽을 시뮬레이션하는 도구를 사용하여 규칙 테스트
 * 로그 분석 도구를 사용하여 결과 분석
 * 모범 사례
