@@ -26,7 +26,7 @@ Assets 보기 UI를 통해 UI에 통합된 Adobe Express에서 제공하는 기�
 ## 이미지 편집 {#edit-image}
 
 [Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하고 올바른 저장소를 선택하여 Assets 보기 UI로 이동합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
-추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
+추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/kr/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
 
 >[!MORELIKETHIS]
 >
