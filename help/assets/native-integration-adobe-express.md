@@ -4,9 +4,9 @@ description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Exp
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
+source-git-commit: 3046da6d16b2494f6a3f18c60df7a4600afcd7ba
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '793'
 ht-degree: 14%
 
 ---
@@ -69,7 +69,7 @@ Adobe Express 편집기에서 AEM Assets을 사용하려면 다음 단계를 수
 
    ![AEM에 자산 저장](assets/adobe-express-aem.png)
 
-3. **현재 페이지** 또는 **모든 페이지**&#x200B;를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
+3. **현재 페이지** 또는 **모든 페이지**를 선택하십시오. 내보낼 자산의 이름과 형식을 지정합니다. 캔버스 컨텐츠를 PNG, JPEG, PDF, MP4, MP4+PNG 또는 MP4+JPEG 형식으로 내보낼 수 있습니다. 캔버스 페이지의 자산에 따라 형식이 자동으로 조정됩니다.
 **현재 페이지**&#x200B;을(를) 선택하면 현재 페이지의 자산이 대상 폴더에 저장됩니다. **모든 페이지**&#x200B;를 선택했는데 내보내기 형식이 PDF이 아닌 경우, 모든 캔버스 페이지는 대상 폴더 내의 새 폴더에 별도의 파일로 저장됩니다. 내보내기 형식이 PDF인 경우, 모든 캔버스 페이지는 대상 폴더에 단일 PDF 파일로 저장됩니다.
 
 4. **대상 폴더** 아래의 폴더 아이콘을 클릭하여 위치를 선택하고 에셋을 저장합니다.
@@ -106,6 +106,9 @@ Adobe에서는 업로드한 에셋에 대해 향상된 검색 환경을 만들 �
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840픽셀, 최대 200MB</td>
     </tr>
+    <tr>
+      <td colspan="2"> <i> 자산 크기는 데스크톱 장치의 경우 80MB 미만이어야 하며 모바일 장치의 경우 40MB여야 합니다. </i></td>
+   </tr>
     </tbody>
 </table>
 
