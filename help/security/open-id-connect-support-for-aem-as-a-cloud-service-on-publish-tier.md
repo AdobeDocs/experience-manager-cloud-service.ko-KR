@@ -4,10 +4,10 @@ description: 게시 계층에서 AEM as a Cloud Service에 대한 Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 100%
+source-wordcount: '1986'
+ht-degree: 71%
 
 ---
 
@@ -68,11 +68,22 @@ IdP 구성의 정보:
     "scopes":[
       "openid"
     ],
-    "baseUrl":"<https://login.microsoftonline.com/53279d7a-438f-41cd-a6a0-fdb09efc8891/v2.0>",
-    "clientId":"5199fc45-8000-473e-ac63-989f1a78759f",
+    "baseUrl":"<https://login.microsoftonline.com/tenant-id/v2.0>",
+    "clientId":"client-id-from-idp",
     "clientSecret":"xxxxxx"
    }
    ```
+
+일부 환경에서 IdP(ID 공급자)가 올바른 `.well-known` 끝점을 노출하지 않을 수 있습니다.
+이 경우 구성 파일에서 다음 속성을 지정하여 필요한 끝점을 수동으로 정의할 수 있습니다.
+이 구성 모드에서는 `baseUrl` 속성을 설정하지 않아야 합니다.
+
+```
+"authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
+"tokenEndpoint": "https://idp-url/oauth2/v1/token",
+"jwkSetURL":"https://idp-url/oauth2/v1/keys",
+"issuer": "https://idp-url"
+```
 
 1. 해당 속성을 다음과 같이 구성합니다.
    * **“name”**&#x200B;은 사용자가 정의할 수 있습니다.
@@ -97,12 +108,12 @@ IdP 구성의 정보:
 
 1. 그런 다음 해당 속성을 다음과 같이 구성합니다.
    * `path`: 보호할 경로
-   * `callbackUri`: 보호할 경로에 `/j_security_check` 접미사를 추가합니다.
+   * `callbackUri`: 보호될 경로. 접미사 `/j_security_check`을(를) 추가합니다. 원격 IdP에서도 동일한 callbackUri를 리디렉션 URL로 구성해야 합니다.
    * `defaultConnectionName`: 이전 단계에서 OIDC 연결에 대해 정의된 것과 동일한 이름으로 구성합니다.
    * `pkceEnabled`: 권한 부여 코드 플로우에서 PKCE(Proof Key for Code Exchange)가 `true`입니다.
    * `idp`: [OAK 외부 ID 공급자](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)의 이름입니다. 서로 다른 OAK IdP는 사용자 또는 그룹을 공유할 수 없습니다.
 
-### SlingUserInfoProcessor 구성
+### SlingUserInfoProcessor 구성 {#configure-slinguserinfoprocessor}
 
 1. 구성 파일을 생성합니다. 이 예시에서는 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`을 사용합니다. `azure` 접미사는 고유 식별자여야 합니다. 아래 구성 파일의 예제를 확인해 보십시오.
 
@@ -112,7 +123,8 @@ IdP 구성의 정보:
       "groupsClaimName": "groups",
       "connection":"azure",
       "storeAccessToken": false,
-      "storeRefreshToken": false
+      "storeRefreshToken": false,
+      "idpNameInPrincipals": true
    }
    ```
 
@@ -121,7 +133,8 @@ IdP 구성의 정보:
    * `groupsClaimName`: AEM에 동기화할 그룹을 포함하는 클레임의 이름입니다.
    * `connection`: 이전 단계에서 OIDC 연결에 대해 정의된 것과 동일한 이름으로 구성합니다.
    * `storeAccessToken`: 액세스 토큰을 저장소에 저장해야 하는 경우 true입니다. 기본적으로 false입니다. AEM이 동일한 IdP로 보호되는 외부 서버에 저장된 사용자를 대신하여 리소스에 액세스해야 하는 경우에만 true로 설정합니다.
-   * `storeRefreshToken`: 새로 고침 토큰을 저장소에 저장해야 하는 경우 true입니다. 기본적으로 false입니다. AEM이 동일한 IdP로 보호되는 외부 서버에 저장된 사용자를 대신하여 리소스에 액세스하고 IdP에서 토큰을 새로 고쳐야 하는 경우에만 true로 설정합니다.
+   * `storeRefreshToken`: 새로 고침 토큰을 저장소에 저장해야 하는 경우 true입니다. 기본적으로 false입니다. AEM이 동일한 IdP로 보호되는 외부 서버에 저장된 사용자 대신 리소스에 액세스해야 하고 IdP에서 토큰을 새로 고쳐야 하는 경우에만 true로 설정합니다.
+   * `idpNameInPrincipals`: true로 설정하면 IdP의 이름이 &#39;;&#39;로 구분된 사용자 및 그룹 주체에 접미사로 추가됩니다. 예를 들어 IdP 이름이 `azure-idp`이고 사용자 이름이 `john.doe`인 경우 oak에 저장된 보안 주체는 `john.doe;azure-idp`이(가) 됩니다. 이 기능은 여러 IdP가 oak에 구성되어 다른 IdP에서 오는 동일한 이름의 사용자 또는 그룹 간의 충돌을 방지할 때 유용합니다. Saml과 같은 다른 인증 처리기에서 만든 사용자 또는 그룹과의 충돌을 방지하기 위해 설정할 수도 있습니다.
 액세스 토큰 및 새로 고침 토큰은 AEM 마스터 키로 암호화되어 저장됩니다.
 
 
@@ -133,20 +146,23 @@ Oak에서 인증된 사용자를 동기화하려면 하나 이상의 동기화 �
 
 ```
 {
-  "user.expirationTime":"300s",
-  "user.membershipExpTime":"300s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
-    "profile/familyName=profile/familyName",
-    "profile/givenName=profile/givenName",
-    "rep:fullname=cn",
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
     "profile/email=profile/email",
-    "oauth-tokens"
+    "access_token=access_token",
+    "refresh_token=refresh_token"
   ],
   "user.pathPrefix":"azure",
   "handler.name":"azure"
 }
 ```
 
+개발 중에 만료 시간을 낮은 값(예: 1초)으로 줄여 oak에서 사용자 및 그룹 동기화 테스트 속도를 높일 수 있습니다.
 DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 다음과 같습니다. Cloud Service에서는 항상 동적 그룹 멤버십을 활성화해야 합니다.
 
 | 속성 이름 | 메모 | 제안 값 |
@@ -181,6 +197,37 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 
 사용자는 ID 토큰으로 인증되며, 추가 속성은 IdP에 대해 정의된 `userInfo` 엔드포인트에서 가져옵니다. 추가 비표준 작업을 수행해야 하는 경우 [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java)의 사용자 정의 구현이 Sling의 기본 구현입니다.
 
+### 외부 그룹에 대한 ACL 구성 {#configure-acl-for-external-groups}
+
+사용자가 OIDC를 통해 인증되면 해당 그룹 멤버십은 일반적으로 외부 ID 공급자로부터 동기화됩니다.
+이러한 외부 그룹은 AEM 저장소에서 동적으로 생성되지만 액세스 제어 항목과 자동으로 연결되지는 않습니다.
+사용자에게 적절한 권한이 있는지 확인하려면 이러한 그룹에 대해 ACL(액세스 제어 목록)을 명시적으로 정의해야 합니다.
+
+두 가지 기본 접근 방식을 사용할 수 있습니다.
+
+### 옵션 1 - 로컬 그룹
+
+외부 그룹은 이미 필요한 ACL이 있는 로컬 그룹의 멤버로 추가할 수 있습니다.
+* 외부 그룹은 저장소에 있어야 합니다. 이 그룹은 해당 그룹에 속한 사용자가 처음으로 로그인할 때 자동으로 발생합니다.
+* 로컬 그룹이 작성자 및 게시 환경 모두에 존재하므로 CUG(폐쇄형 사용자 그룹)를 사용 중인 경우 이 옵션이 일반적으로 선호됩니다.
+
+### 옵션 2 - RepoInit를 통해 외부 그룹에 직접 ACL 사용
+
+ACL은 RepoInit 스크립트를 사용하여 외부 그룹에 직접 적용할 수 있습니다.
+* 이러한 접근법은 더욱 효율적이며 CUG들이 사용되지 않을 때 선호된다.
+* 다음 예제에서는 외부 그룹에 읽기 권한을 할당하는 RepoInit 구성을 보여 줍니다. `ignoreMissingPrincipal` 옵션을 사용하면 그룹이 저장소에 아직 없는 경우에도 ACL을 만들 수 있습니다.
+
+  ```
+  {
+    "scripts":[
+      "set ACL for \"my-group;my-idp\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/magazine\r\nend"
+    ]
+  }    
+  ```
+
+>[!NOTE]
+>AEM 권한 UI를 사용하여 그룹 주도자에게 할당된 ACL을 검사할 수 있습니다
+
 ## 예: Azure Active Directory를 사용하여 OIDC 인증 구성
 
 ### Azure Active Directory에서 새 애플리케이션 구성 {#configure-a-new-application-in-azure-ad}
@@ -196,19 +243,19 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 1. 이전에 문서화된 단계를 따라 필수 구성 파일을 생성합니다. Azure AD에 대한 구체적인 예는 다음과 같습니다.
    * Oidc 연결, 인증 핸들러 및 DefaultSyncHandler의 이름을 `azure`로 정의합니다.
    * 웹 사이트 url은 `www.mywebsite.com`입니다.
-   * `/content/wknd/us/en/adventures` 경로를 보호합니다.
+   * `/content/wknd/us/en/adventures` 그룹의 인증된 사용자만 액세스할 수 있는 `adventures` 경로를 보호합니다.
    * 테넌트는 `tennat-id`입니다.
    * 클라이언트 ID는 `client-id`입니다.
    * 암호는 `secret`입니다.
    * 그룹은 `groups`라는 클레임의 ID 토큰으로 전송됩니다.
 
-#### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
 
 ```
 {
   "name":"azure",
   "scopes":[
-    openid", "User.Read", "profile", "email
+    openid", "User.Read", "profile", "email"
   ],
   "baseUrl":"https://login.microsoftonline.com/tenant-id/v2.0",
   "clientId":"client-id",
@@ -216,7 +263,7 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
 
 ```
 {
@@ -229,7 +276,7 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
 
 ```
 {
@@ -238,12 +285,13 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
 
 ```
 {
-  "user.expirationTime":"1s",
-  "user.membershipExpTime":"1s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
     "profile/givenName=profile/given_name",
     "profile/familyName=profile/family_name",
@@ -259,7 +307,17 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
+### org.apache.sling.jcr.repoinit.RepositoryInitializer~azure.cfg.json
+
+```
+{
+  "scripts":[
+    "set ACL for \"adventures;azure\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/adventures\r\nend"
+  ]
+}
+```
+
+### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
 
 ```
 {
@@ -293,3 +351,15 @@ ID 토큰에서 그룹 클레임을 활성화하려면 Microsoft Azure Portal의
   "storeRefreshToken": "false"
 }
 ```
+
+## Saml Authentication Handler에서 Oidc Authentication Handler로 마이그레이션하는 방법
+
+AEM이 이미 SAML 인증 핸들러로 구성되어 있고 사용자가 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화된 저장소에 있는 경우 원래 SAML 사용자와 새 OIDC 사용자 간에 충돌이 발생할 수 있습니다.
+
+1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)를 구성하고 `idpNameInPrincipals`SlingUserInfoProcessor[ 구성에서 ](#configure-slinguserinfoprocessor)을(를) 사용하도록 설정하십시오.
+1. 외부 그룹에 대해 [ACL을 설정](#configure-acl-for-external-groups)합니다.
+1. 사용자로부터 로그인하면 saml 인증 핸들러로 만든 이전 사용자를 삭제할 수 있습니다.
+
+>[!NOTE]
+>SAML 인증 처리기가 비활성화되고 OIDC 인증 처리기가 활성화되면 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화되지 않으면 기존 세션이 유효하지 않게 됩니다. 사용자를 다시 인증해야 하므로 저장소에 새 OIDC 사용자 노드가 생성됩니다.
+
