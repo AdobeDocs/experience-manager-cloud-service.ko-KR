@@ -132,7 +132,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [ 참조에 표시된 대로 ](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
+암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [&#x200B; 참조에 표시된 대로 &#x200B;](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
 
 ```yaml
 kind: "LogForwarding"

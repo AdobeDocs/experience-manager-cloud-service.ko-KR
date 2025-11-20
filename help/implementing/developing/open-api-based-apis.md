@@ -69,6 +69,6 @@ ht-degree: 1%
          - "<client_id>"
    ```
 
-1. `config`파이프라인 구성[에 설명된 대로 파일을 ](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. `config`파이프라인 구성[에 설명된 대로 파일을 &#x200B;](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 1. RDE 이외의 환경 유형(명령줄 도구 사용)의 경우 Config Pipeline 문서의 [이 섹션](/help/operations/config-pipeline.md#creating-and-managing)에서 참조한 대로 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만드십시오. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
 1. 구성 배포.
