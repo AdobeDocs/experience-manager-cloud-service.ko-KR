@@ -3,9 +3,9 @@ title: 양식 작성 스킬
 description: Experience Production Agent의 양식 작성 기술과 자연어를 사용하여 양식을 처음부터 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 ## 기능 {#capabilitiess}
 
-* **일반 텍스트 프롬프트를 사용하여 새 양식을 만듭니다**: 일반 언어로 요구 사항을 제출하여 브랜드 내 양식 경험을 만들 수 있습니다.
+* **일반 텍스트 프롬프트를 사용하여 새 양식을 만듭니다**: 일반 언어로 요구 사항을 제출하여 양식을 만들 수 있습니다. 에이전트는 자연어 설명 및 지정된 템플릿을 기반으로 적절한 양식 구조, 필드 유형 및 브랜드 내 경험을 자동으로 생성합니다. 이 기능은 브랜드 및 규정 준수 표준이 유지되도록 하면서 양식 생성을 가속화합니다.
 
-* **PDF 또는 이미지를 가져와 양식으로 변환**: 기존 이미지 또는 PDF 문서를 가져와 양식으로 변환할 수 있습니다. 에이전트는 업로드된 콘텐츠를 분석하여 필드 유형을 감지하고 레이아웃을 보존하며 반응형 디자인 및 유효성 검사 논리를 통해 양식을 향상합니다. 지원되는 형식에는 Acroforms, XFA PDF, 플랫 PDF, 이미지(JPG, PNG) 및 손으로 그린 양식 사진이 포함됩니다.
+* **PDF 또는 이미지를 가져와 양식으로 변환**: 기존 이미지 또는 PDF 문서를 가져와 양식으로 변환할 수 있습니다. 에이전트는 업로드된 콘텐츠를 분석하여 브랜드 및 규정 준수 표준이 유지되도록 하면서 반응형 디자인 및 유효성 검사 논리를 통해 필드 유형을 감지하고 레이아웃을 보존하며 양식을 향상시킵니다. 지원되는 형식에는 PDF 문서, 이미지(JPG, PNG) 및 손으로 그린 양식 사진이 포함됩니다.
 
   위의 기능 중 하나를 사용하는 경우 만들 양식 유형을 선택하고, 핵심 구성 요소 기반 적응형 양식 템플릿 또는 Edge Delivery Services 기반 적응형 양식 템플릿을 지정하고, 양식을 저장할 기본 경로를 표시하라는 메시지가 표시됩니다. Edge Delivery Services을 기반으로 양식을 만드는 경우 저장소의 GitHub URL을 지정할 수도 있습니다.
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 다음 단계 {#refine-with-forms-experience-builder}
 
-AI Assistant를 사용하여 초기 양식 구조를 생성한 후 Forms 생성 확장 기능을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+AI Assistant를 사용하여 초기 양식 구조를 만든 후 Forms Experience Builder 를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * **양식 업데이트**: 필드를 추가 또는 수정하고, 필드 유형을 조정하고, 필요에 따라 비주얼 편집기를 통해 스타일을 업데이트합니다.
 
