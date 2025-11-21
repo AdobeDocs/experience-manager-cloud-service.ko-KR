@@ -3,9 +3,9 @@ title: 양식 작성 스킬
 description: Experience Production Agent의 양식 작성 기술과 자연어를 사용하여 양식을 처음부터 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * **일반 텍스트 프롬프트를 사용하여 새 양식을 만듭니다**: 일반 언어로 요구 사항을 제출하여 양식을 만들 수 있습니다. 에이전트는 자연어 설명 및 지정된 템플릿을 기반으로 적절한 양식 구조, 필드 유형 및 브랜드 내 경험을 자동으로 생성합니다. 이 기능은 브랜드 및 규정 준수 표준이 유지되도록 하면서 양식 생성을 가속화합니다.
 
-* **PDF 또는 이미지를 가져와 양식으로 변환**: 기존 이미지 또는 PDF 문서를 가져와 양식으로 변환할 수 있습니다. 에이전트는 업로드된 콘텐츠를 분석하여 브랜드 및 규정 준수 표준이 유지되도록 하면서 반응형 디자인 및 유효성 검사 논리를 통해 필드 유형을 감지하고 레이아웃을 보존하며 양식을 향상시킵니다. 지원되는 형식에는 PDF 문서, 이미지(JPG, PNG) 및 손으로 그린 양식 사진이 포함됩니다.
+* **PDF 문서를 가져와서 양식으로 변환**: 기존 PDF 문서를 가져와서 양식으로 변환할 수 있습니다. 에이전트는 업로드된 콘텐츠를 분석하여 브랜드 및 규정 준수 표준이 유지되도록 하면서 반응형 디자인 및 유효성 검사 논리를 통해 필드 유형을 감지하고 레이아웃을 보존하며 양식을 향상시킵니다.
 
   위의 기능 중 하나를 사용하는 경우 만들 양식 유형을 선택하고, 핵심 구성 요소 기반 적응형 양식 템플릿 또는 Edge Delivery Services 기반 적응형 양식 템플릿을 지정하고, 양식을 저장할 기본 경로를 표시하라는 메시지가 표시됩니다. Edge Delivery Services을 기반으로 양식을 만드는 경우 저장소의 GitHub URL을 지정할 수도 있습니다.
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 * *PDF 파일(&#39;https://[aem-author-url]/path/to/pdf/file*)을 가져와서 신용 카드 응용 프로그램 양식을 만듭니다.
 * *&#39;<https://github.com/wkndforms/wesecure>&#39;에서 상용구를 사용하여 피드백 양식 만들기*
 
-## 다음 단계 {#refine-with-forms-experience-builder}
+## 양식 세분화 {#refine-with-forms-experience-builder}
 
 AI Assistant를 사용하여 초기 양식 구조를 만든 후 Forms Experience Builder 를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
