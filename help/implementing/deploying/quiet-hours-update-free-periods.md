@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="제한된 가용성" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service [자동 유지 관리 업데이트](/help/implementing/de
 * **방해 금지 시간** - 업데이트가 발생하지 않는 일별 시간 간격(최대 8시간)을 정의할 수 있습니다.
 * **무료 기간 업데이트** - 업데이트가 발생하지 않는 7일 기간을 정의할 수 있습니다. 12개월 기간 내에 최대 3개의 무료 업데이트 기간을 가질 수 있습니다.
 
-무료 기간 및 자동 시간 업데이트 기능은 &quot;프로그램별&quot;로 구성됩니다.
+무료 기간 및 자동 시간 업데이트 기능은 &quot;프로그램별&quot;로 구성됩니다. **비즈니스 소유자** 및 **배포 관리자**&#x200B;의 &quot;사용자 역할&quot;을 가진 사용자만 이러한 기능을 보고 사용할 수 있습니다.
 
 또한 예약된 AEM as a Cloud Service 자동 유지 관리 기간에 대한 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) 페이지를 참조하십시오.
 
@@ -76,3 +76,13 @@ AEM Cloud Manager 인터페이스를 사용하여 자동 시간 간격을 다음
 ![사용 가능 기간 구성 업데이트](assets/update-free-periods.png)
 
 **활성** 아이콘은 현재 활성 업데이트 사용 가능 기간 근처에 표시되고 **완료** 아이콘은 완료된 업데이트 사용 가능 기간 근처에 표시됩니다.
+
+## 계획된 유지 관리 제외 기간 {#planned-maintenance}
+
+Adobe에는 많은 계획된 유지 관리 제외 기간이 있습니다. 이 기간은 Adobe에서 중요한 이벤트 관련 위험을 최소화하기 위해 정의하며, 일반적으로 1년에 두 번 또는 세 번 발생합니다. [유지 관리 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) 페이지에서 유지 관리 제외 기간에 대한 정확한 일정을 볼 수 있습니다.
+
+업데이트 금지 기간을 정확하게 구성할 수 있도록 유지 관리 제외 기간은 방해 금지 시간 및 업데이트 금지 기간 사용자 인터페이스에도 표시됩니다.
+
+![계획된 유지 관리 제외 기간](assets/planned-maintenance.png)
+
+제외 기간 중에는 업데이트 사용 가능 기간을 만들 수 없습니다.
