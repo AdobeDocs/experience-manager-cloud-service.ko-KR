@@ -3,10 +3,10 @@ title: 콘텐츠 업데이트 스킬
 description: Experience Production Agent의 콘텐츠 업데이트 스킬이 무엇이며 이를 통해 어떤 작업을 수행할 수 있는지 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ experience.adobe.com에서 AI Assistant를 연 다음 `Ask AI Assistant anything
 
 ![검색 에이전트 액세스](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### 샘플 프롬프트 {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+콘텐츠 업데이트를 시작하려면 다양한 자연어 프롬프트를 제공할 수 있습니다. 업데이트할 페이지의 공개 URL도 지정해야 합니다. 예:
 
-* Change your headlines
+* 다음 페이지를 수정 https://www.your-url.com/sale 블랙 프라이데이 메가 세일 - 최대 70% 할인&quot;으로 향하는 주요 영웅을 업데이트하고, 카운트다운 타이머를 &quot;48시간 후에 끝남&quot;으로 변경하고, &quot;업데이트에 등록&quot;을 제거하고, &quot;지금 쇼핑&quot; 단추를 모두 &quot;Grab the Deal&quot;으로 변경합니다.
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model 배너 사본을 "오늘 하루에만 미화 300달러를 절약하십시오"로 업데이트하고, 가격을 1,299 USD에서 999 USD로 업데이트하며, 금융 옵션 배너를 제거하십시오.
+
+* https://www.your-url.com/your-sneaker 재고 상태를 "재고 부족"에서 "재고 부족 - 제한된 수량"으로 업데이트하고, 크기 선택기를 변경하여 사용 가능한 크기를 녹색으로 강조 표시하고, "곧 제공될" 배지를 제거합니다.
+
+* https://www.your-url.com/your-sneaker 새로운 컬러웨이를 표시하도록 제품 이미지를 업데이트합니다.
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ Jira를 사용하여 콘텐츠 업데이트 스킬을 사용하면 편집을 자
 
 ### 활성화 {#activation}
 
-Jira를 사용하여 프로덕션 에이전트를 활성화하고 액세스 권한을 얻으려면 Adobe에 이메일을 보내야 합니다. 시작하려면 다음으로 문의할 수 있습니다.
+Jira를 사용하여 Experience Production Agent를 활성화하고 액세스 권한을 얻으려면 Adobe에 이메일을 보내야 합니다. 시작하려면 다음으로 문의할 수 있습니다.
 
 * `experience-production-agent@adobe.com`
 * 또는 계정 팀에 문의하십시오.
