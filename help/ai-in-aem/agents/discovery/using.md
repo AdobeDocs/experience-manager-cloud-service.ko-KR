@@ -3,9 +3,9 @@ title: 검색 에이전트 개요
 description: 검색 에이전트를 사용하여 간소화되고 클릭되지 않는 검색 환경을 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Discovery Agent는 파일 형식이나 최소 해상도와 같은 특정 품질 
 
 ### 자산 {#discovery-agent-search-results-assets}
 
-검색 에이전트는 정확한 일치가 먼저 나타나도록 각 쿼리에 대해 관련성을 기준으로 정렬된 상위 20개의 결과를 반환합니다. 에이전트는 메타데이터 기반 쿼리를 시맨틱 검색과 결합하여 일치할 가능성이 있는 집중 세트를 조합한 다음 LLM을 사용하여 사용자 의도에 따라 등급을 매깁니다. 이 혼합 접근 방식은 직접 키워드 일치에 전적으로 의존하지 않고 정확하고 컨텍스트 인식 결과를 제공합니다.
+검색 에이전트는 정확한 일치 항목이 먼저 표시되도록 관련성을 기준으로 정렬된 각 쿼리에 대한 상위 결과를 반환합니다. 에이전트는 메타데이터 기반 쿼리를 시맨틱 검색과 결합하여 일치할 가능성이 있는 집중 세트를 조합한 다음 LLM을 사용하여 사용자 의도에 따라 등급을 매깁니다. 이 혼합 접근 방식은 직접 키워드 일치에 전적으로 의존하지 않고 정확하고 컨텍스트 인식 결과를 제공합니다.
 
 각 결과에는 자산 경로, 작성자, 생성 날짜, 제목, 설명, 형식, 마지막 수정자, 마지막 수정 날짜, 파일 크기, 차원, [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) 및 관련 태그와 같은 주요 자산 메타데이터와 함께 자산 이름이 포함됩니다. 에셋이 승인됨 상태인 경우 결과에 OpenAPI URL이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)도 포함됩니다.
 
@@ -156,7 +156,7 @@ Discovery Agent는 파일 형식이나 최소 해상도와 같은 특정 품질 
 
 ### 콘텐츠 조각 {#discovery-agent-search-results-content-fragments}
 
-검색 에이전트는 콘텐츠 조각에 대한 전체 텍스트 검색 기능을 제공하여 지정된 프롬프트와 가장 일치하는 상위 20개 결과를 반환합니다. 각 결과에는 콘텐츠 조각 경로, 작성자, 생성 날짜, 변형, 마지막 수정자 및 마지막 수정 날짜 필드와 같은 주요 메타데이터 필드와 함께 콘텐츠 조각 이름이 포함됩니다.
+검색 에이전트는 콘텐츠 조각에 대한 전체 텍스트 검색 기능을 제공하여 지정된 프롬프트와 가장 일치하는 상위 결과를 반환합니다. 각 결과에는 콘텐츠 조각 경로, 작성자, 생성 날짜, 변형, 마지막 수정자 및 마지막 수정 날짜 필드와 같은 주요 메타데이터 필드와 함께 콘텐츠 조각 이름이 포함됩니다.
 
 ![검색 에이전트를 사용하여 콘텐츠 조각 검색](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
