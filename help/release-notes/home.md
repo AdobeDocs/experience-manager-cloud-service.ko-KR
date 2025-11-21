@@ -38,7 +38,7 @@ ht-degree: 99%
 
 이 주기는 출시 예정 기능이 프로젝트 및 사용자 정의에 미치는 영향을 평가하고 이러한 기능, 테스트 및 사용자 교육의 계획을 수립할 수 있는 롤링 기간을 제공합니다.
 
-곧 출시될 릴리스에 대한 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)을 확인하십시오.
+곧 출시될 릴리스에 대한 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)을 확인하십시오.
 
 ## 릴리스 준비 방법 {#how-to-prepare}
 
@@ -51,7 +51,7 @@ ht-degree: 99%
 
 ## 캘린더 표시 {#mark-calendars}
 
-기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko#aem-as-cloud-service)에 게시됩니다.
+기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
 
 출시 예정 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 일자를 기록해 두십시오.
 
@@ -81,8 +81,8 @@ ht-degree: 99%
 
 Adobe Experience League는 AEMaaCS에 대해 알아볼 수 있는 많은 리소스를 제공합니다.
 
-* [AEMaaCS 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko)
-* [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=ko)
+* [AEMaaCS 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * 릴리스 정보 [월별 릴리스 개요 비디오](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 주요 릴리스 정보 {#key-articles}

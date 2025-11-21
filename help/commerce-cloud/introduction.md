@@ -33,13 +33,13 @@ AEM은 상황과 환경 설정에 따라 지원을 제공할 수 있습니다. �
 
 #### &#x200B;1. Adobe Commerce as a Cloud Service과의 통합 {#acaacs}
 
-Adobe에서는 Edge Delivery 및 [Adobe Commerce 상점](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ko)을 시작점으로 사용하는 것이 좋습니다. Storefront에는 Adobe Commerce 서비스, API와 사전 통합된 보일러판이 포함되어 있으며 Commerce 드롭인 구성 요소를 다양하게 제공하여 매장을 신속하게 구축할 수 있습니다.
+Adobe에서는 Edge Delivery 및 [Adobe Commerce 상점](https://experienceleague.adobe.com/developer/commerce/storefront/)을 시작점으로 사용하는 것이 좋습니다. Storefront에는 Adobe Commerce 서비스, API와 사전 통합된 보일러판이 포함되어 있으며 Commerce 드롭인 구성 요소를 다양하게 제공하여 매장을 신속하게 구축할 수 있습니다.
 
 적합: Adobe Commerce as a Cloud Service의 일반적인 상점 환경
 
 #### &#x200B;2. Adobe Commerce Optimizer과의 통합(타사 솔루션의 경우) {#aco}
 
-기존 상거래 솔루션을 통합하고 카탈로그 성능을 높이려면 [Adobe Commerce Optimizer](https://experienceleague.adobe.com/ko/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)을(를) 최신 통합 레이어로 사용하는 것이 Adobe의 좋습니다. Commerce Optimizer은 카탈로그 및 머천다이징을 위한 고성능 SaaS 서비스로 상거래 솔루션을 개선합니다. Adobe Commerce as a Cloud Service과 마찬가지로 [Adobe Commerce 상점](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ko)도 즉시 사용할 수 있습니다.
+기존 상거래 솔루션을 통합하고 카탈로그 성능을 높이려면 [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)을(를) 최신 통합 레이어로 사용하는 것이 Adobe의 좋습니다. Commerce Optimizer은 카탈로그 및 머천다이징을 위한 고성능 SaaS 서비스로 상거래 솔루션을 개선합니다. Adobe Commerce as a Cloud Service과 마찬가지로 [Adobe Commerce 상점](https://experienceleague.adobe.com/developer/commerce/storefront/)도 즉시 사용할 수 있습니다.
 
 Salesforce Commerce과 같은 상거래 솔루션에 대한 통합을 사용할 수 있습니다. Adobe 담당자에게 문의하십시오.
 
@@ -53,7 +53,7 @@ Adobe 사용자 지정 통합을 빌드하려면 Edge Delivery Services을 사�
 
 ### 고유한 상점 사용(헤드리스 AEM 통합) {#own-storefront}
 
-기존 상점(예: React JS로 작성)이 있고 콘텐츠 관리 및 전달(콘텐츠 조각), 에셋, 컨텍스트 내 편집(범용 편집기)에 Adobe Experience Manager을 사용하려고 합니다. 통합의 시작 지점은 [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/headless/introduction) 및 [CIF 추가 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)입니다. CIF 추가 기능을 사용하면 제품 데이터를 AEM에 원활하게 통합(AEM UI에서 제품 검색, 탐색 및 찾기)할 수 있습니다. 이러한 기능을 사용하여 상거래별 경험을 구축할 수 있습니다.
+기존 상점(예: React JS로 작성)이 있고 콘텐츠 관리 및 전달(콘텐츠 조각), 에셋, 컨텍스트 내 편집(범용 편집기)에 Adobe Experience Manager을 사용하려고 합니다. 통합의 시작 지점은 [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) 및 [CIF 추가 기능](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)입니다. CIF 추가 기능을 사용하면 제품 데이터를 AEM에 원활하게 통합(AEM UI에서 제품 검색, 탐색 및 찾기)할 수 있습니다. 이러한 기능을 사용하여 상거래별 경험을 구축할 수 있습니다.
 
 ### AEM CIF 상점 {#cif}
 
@@ -61,4 +61,4 @@ Adobe의 권장 사항 및 참조 아키텍처는 Edge Delivery Services을 사�
 
 >[!NOTE]
 >
->새로운 AEM/Commerce 기능을 활용하려는 기존 고객은 웹 사이트를 Edge Delivery으로 이동해야 합니다. 일반적인 패턴은 페이지의 하위 집합만 Edge Delivery으로 이동하고 Edge Deliery 및 CIF 페이지를 나란히 실행하는 것입니다. 또한 AEM CIF 구성 요소를 새 [Commerce 드롭인 구성 요소](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ko)&#x200B;(으)로 교체하여 새로운 Commerce 기능을 활용할 수 있습니다.
+>새로운 AEM/Commerce 기능을 활용하려는 기존 고객은 웹 사이트를 Edge Delivery으로 이동해야 합니다. 일반적인 패턴은 페이지의 하위 집합만 Edge Delivery으로 이동하고 Edge Deliery 및 CIF 페이지를 나란히 실행하는 것입니다. 또한 AEM CIF 구성 요소를 새 [Commerce 드롭인 구성 요소](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)&#x200B;(으)로 교체하여 새로운 Commerce 기능을 활용할 수 있습니다.

@@ -18,4 +18,4 @@ ht-degree: 100%
 
 AEM as a Cloud Service의 사전 예방적 보안 접근 방식 및 엄격한 절차는 AEM as a Cloud Service 솔루션 및 고객 기밀 데이터 보안을 보호하는 데 도움이 됩니다. 디지털 환경의 보안은 지속적으로 모니터링되어 악의적인 활동을 방지하고 고객 데이터 보안을 보장합니다.
 
-AEM as a Cloud Service 보안에 대한 자세한 내용은 [Adobe Experience Manager Cloud Service 보안](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) 백서를 참조하십시오.
+AEM as a Cloud Service 보안에 대한 전반적인 개요는 [Adobe Experience Manager Cloud Service 보안](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) 백서를 참조하십시오.

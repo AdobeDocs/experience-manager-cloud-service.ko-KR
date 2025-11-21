@@ -17,15 +17,15 @@ AEM 커넥터 구현
 
 다음은 AEM 커넥터 구축에 유용한 참고 자료이며 [제출](submit.md) 및 [유지](maintain.md) 커넥터에 대한 지침과 함께 읽어야 합니다.
 
-[Adobe Exchange 프로그램](https://partners.adobe.com/technologyprogram/experiencecloud.html)을 통해 AEM에 대한 개발자 라이선스를 얻을 수 있습니다.
+[AEM 프로그램](https://partners.adobe.com/technologyprogram/experiencecloud.html)을 통해 Adobe Exchange에 대한 개발자 라이선스를 얻을 수 있습니다.
 
 일반적인 통합 패턴
 ---------------------------
 
 AEM은 혁신적인 웹 경험 관리 솔루션으로, 다양한 잠재적 통합 영역을 제공합니다. 일반적인 통합 패턴은 다음과 같습니다.
 
-* 외부 시스템에서 AEM으로 데이터 가져오기 예: CRM에서 연락처 정보를 가져와 AEM 기반 웹 사이트를 방문하는 더 많은 대상자가 이를 사용할 수 있도록 지원  구현은 컨테이너가 다운되더라도 작업이 실행될 수 있도록 하는 Sling의 [예정된 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)을 사용해야 합니다. 코드는 작업이 잠재적으로 한 번 이상 트리거될 수 있음을 가정하고 설계되어야 합니다.
-* AEM에서 외부 시스템으로 데이터 가져오기 예를 들어 뉴스레터 구독 설정이 AEM 기반 웹 사이트에서 CRM에 제출됩니다.
+* 외부 시스템에서 AEM으로 데이터 가져오기 예: CRM에서 연락처 정보를 내보내 AEM 기반 웹 사이트를 방문하는 더 많은 대상자가 이를 사용할 수 있도록 지원  구현은 컨테이너가 다운되더라도 작업이 실행될 수 있도록 하는 Sling의 [예정된 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)을 사용해야 합니다. 코드는 작업이 잠재적으로 한 번 이상 트리거될 수 있음을 가정하고 설계되어야 합니다.
+* AEM에서 외부 시스템으로 데이터 내보내기 예를 들어 뉴스레터 구독 설정은 AEM 기반의 웹 사이트에서 CRM에 제출됩니다.
 * AEM에서 자산 검색 예: AEM Assets에 저장된 자산을 참조하는 외부 콘텐츠 관리 시스템 (CMS) 또 다른 예로 AEM Assets의 이미지에 연결된 PIM 시스템을 들 수 있습니다.
 * AEM 인프라에 자산 저장 예: AEM Assets에 승인된 자산을 저장하는 마케팅 리소스 관리(MRM) 시스템
 * 사용자 정의 UI 구성 요소 구성 및 렌더링 예: 작성자가 비디오 구성 요소를 드래그하여 놓고 특정 비디오를 라이브 사이트에서 재생하도록 구성할 수 있도록 허용
@@ -38,7 +38,7 @@ AEM은 혁신적인 웹 경험 관리 솔루션으로, 다양한 잠재적 통�
 유용한 설명서
 --------------------
 
-Experience Manager as a Cloud Service [설명서](../overview/introduction.md)는 AEM에서의 개발 작업에 관련하여 중요한 통찰력을 제공합니다. 아래는 AEM 커넥터 구현 시 유용하게 사용할 수 있는 몇 가지 특정 기술 주제 및 참고 자료입니다.
+Experience Manager as a Cloud Service [설명서](../overview/introduction.md)는 AEM에서의 개발 작업에 관련하여 중요한 인사이트를 제공합니다. 아래는 AEM 커넥터 구현 시 유용하게 사용할 수 있는 몇 가지 특정 기술 주제 및 참고 자료입니다.
 
 * AEM 개발자를 교육할 때 도움이 되도록 작성된 코드에 대한 Adobe 컨설팅 서비스(ACS) [AEM 샘플](https://adobe-consulting-services.github.io/acs-aem-samples/)
 * 이 문서의 [일반적인 통합 패턴] 섹션에 있는 다양한 설명서 링크
@@ -66,7 +66,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 
 기존 커넥터는 이전에 한 번 `/etc`로 배치되었을 수 있는 구성을 `/conf`와 같은 상위 수준 폴더로 이동하도록 리팩터링해야 할 수도 있습니다. 이러한 재구성은 AEM 6.5의 일부로 수행되며 이는 [AEM 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/restructuring/repository-restructuring)에 기재되어 있습니다.
 
-Adobe 특히 여러 커넥터를 사용하는 고객의 경우 깔끔한 저장소 구조를 유지하려면 `/apps/connectors/<vendor>` 아래에 대부분의 커넥터 코드를 배치하는 것이 좋습니다.
+Adobe에서는 특히 여러 커넥터를 사용하는 고객의 경우 깔끔한 저장소 구조를 유지하려면 `/apps/connectors/<vendor>` 아래에 대부분의 커넥터 코드를 배치하는 것이 좋습니다.
 
 클라우드 서비스 구성
 -----------------------------
@@ -77,7 +77,7 @@ Adobe 특히 여러 커넥터를 사용하는 고객의 경우 깔끔한 저장�
 컨텍스트 인식 구성
 -----------------------------
 
-[컨텍스트 인식 구성](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)을 사용하면 `/libs`, `/apps`, `/conf` 및 `/conf` 아래의 하위 폴더 등 서로 다른 폴더 간 구성에 레이어를 적용할 수 있습니다. 상속이 지원되므로 고객은 각 마이크로사이트의 특정 내용을 변경하는 동시에 전역 구성을 구성할 수 있습니다. Cloud Service 구성에 이 기능을 사용할 수 있으므로, 커넥터 코드는 특정 구성 노드를 참조하는 대신 컨텍스트 인식 구성 API를 사용하는 구성을 참조해야 합니다.
+[컨텍스트 인식 구성](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)을 사용하면 `/libs`, `/apps`, `/conf` 및 `/conf` 아래의 하위 폴더 등 서로 다른 폴더 간 구성에 레이어를 적용할 수 있습니다. 상속이 지원되므로 고객은 각 마이크로사이트의 특정 내용을 변경하는 동시에 전역 구성을 구성할 수 있습니다. 클라우드 서비스 구성에 이 기능을 사용할 수 있으므로, 커넥터 코드는 특정 구성 노드를 참조하는 대신 컨텍스트 인식 구성 API를 사용하는 구성을 참조해야 합니다.
 
 수정된 구성을 커넥터에 사용하는 경우 커넥터를 커넥터 제공 기본 구성에 대한 향후 업데이트 및 고객 구성의 포함/병합을 처리할 수 있도록 설계하십시오. 사전 통지 및 동의 없이 고객 맞춤화된 콘텐츠 또는 구성을 수정하면 커넥터에서 예기치 않은 동작이 중단되거나 발생할 수 있습니다.
 
