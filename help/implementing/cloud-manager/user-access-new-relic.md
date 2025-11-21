@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1817'
 ht-degree: 39%
 
 ---
@@ -43,7 +43,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 >[!NOTE]
 >
->New Relic One 하위 계정을 관리하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할의 사용자가 로그인해야 합니다.
+>New Relic One 하위 계정을 관리하려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 

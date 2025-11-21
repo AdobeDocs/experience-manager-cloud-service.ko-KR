@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 68%
 
 ---
 
@@ -22,8 +22,6 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 로그는 7일 동안 유지됩니다.
 
 ## 로그 다운로드 {#download-logs}
-
-로그를 다운로드하려면 다음을 수행하십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -101,5 +99,5 @@ Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 
 
 AEM as a Cloud Service의 로그 파일에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
-* [클라우드 5 AEM 로그 파일](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [로그를 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [클라우드 5 AEM 로그 파일](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [로그를 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

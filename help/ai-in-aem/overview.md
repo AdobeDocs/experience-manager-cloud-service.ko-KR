@@ -1,40 +1,51 @@
 ---
 title: AEM as a Cloud Service의 AI
 description: Adobe Experience Manager as a Cloud Service의 AI에 대해 알아보기
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 79%
+source-wordcount: '440'
+ht-degree: 48%
 
 ---
 
+
 # AEM as a Cloud Service의 AI {#ai-in-aem-as-a-cloud-service}
 
-AI는 Adobe Experience Manager as a Cloud Service의 필수적인 부분이며, 사용자가 정보를 찾도록 지원하거나 경험을 생성하는 데 사용됩니다.
+AI(인공 지능)는 Adobe Experience Manager as a Cloud Service의 필수적인 부분으로 사용자가 정보를 찾거나 경험을 생성할 수 있도록 지원합니다.
 
 ## AI 어시스턴트 {#ai-assistant}
 
 [Adobe Experience Manager의 AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md)는 AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다.
 
+## AEM의 아젠틱 AI {#agentic-ai-in-aem}
+
+AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션하기 위해 다양한 [비즈니스 에이전트](/help/ai-in-aem/agents/overview.md)를 제공합니다.
+
+* [프로덕션 에이전트](/help/ai-in-aem/agents/production/overview.md)
+* [콘텐츠 최적화 에이전트](/help/ai-in-aem/agents/content-optimization/using.md)
+* [검색 에이전트](/help/ai-in-aem/agents/discovery/using.md)
+* [개발 에이전트](/help/ai-in-aem/agents/development/overview.md)
+* [거버넌스 에이전트](/help/ai-in-aem/agents/governance/overview.md)
+
 ## AEM의 생성 AI {#generative-ai-in-aem}
 
 Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용하면 브랜드가 편집 인터페이스 내에서 복사와 이미지 생성을 모두 수행하여 고성능 경험을 만들 수 있습니다. 생성형 AI를 사용하면 다음과 같은 콘텐츠를 자체적으로 생성할 수 있습니다.
 
-* 브랜드 인지 - 브랜드 어조, 스타일 가이드라인 및 기타 특정 요구 사항을 통합하는 콘텐츠를 제작합니다.
-* 대상자별 개인화 - 세부적인 콘텐츠 성과 인사이트를 활용하여 모든 채널에서 모든 페르소나에 맞게 콘텐츠를 맞춤화합니다.
-* 지역별 맞춤화 - 번역을 넘어 지역 선호도와 행동 패턴에 맞춰 콘텐츠를 조정합니다.
-* 지속적인 최적화 - 어떤 변형이 가장 성과가 좋은지 확인하기 위해 실험을 실행하고, 이를 통해 얻은 인사이트를 활용하여 향후 AI가 생성하는 콘텐츠를 개선합니다.
+* **브랜드 인식** - 브랜드 톤의 음성, 스타일 지침 및 기타 특정 요구 사항을 통합하는 콘텐츠를 만듭니다.
+* **대상자에 의해 개인화됨** - 세분화된 콘텐츠 성능 통찰력을 활용하여 모든 채널에서 모든 성향에 맞게 콘텐츠를 조정할 수 있습니다.
+* **지역별** - 번역을 넘어 지역 환경 설정 및 동작 패턴에 따라 콘텐츠를 조정할 수 있습니다.
+* **지속적으로 최적화** - 실험을 실행하여 성과가 가장 좋은 변형을 결정하고 인사이트를 사용하여 향후 AI 생성 콘텐츠를 개선합니다.
 
 생성형 AI는 다음과 같이 AEM 전반에 걸쳐 사용됩니다.
 
 * [변형 생성 - AEM 편집기에 통합](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  변형 생성은 생성형 AI를 활용하여 사용자의 입력을 기반으로 콘텐츠 변형을 생성합니다. 변형을 만든 후 웹 사이트에서 콘텐츠를 사용할 수 있으며, Edge Delivery Services의 실험 기능을 사용하여 성공 여부를 측정할 수도 있습니다.
+  변형 생성 은 생성 AI를 사용하여 입력을 기반으로 콘텐츠 변형을 생성합니다. 변형을 만든 후에는 웹 사이트의 콘텐츠를 사용하고 Edge Delivery Services의 실험 기능을 사용하여 성공을 측정할 수도 있습니다.
 
-   * 이전 버전 [변형 생성](/help/generative-ai/generate-variations.md)
+   * [편집기 외부의 이전 버전 ](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
 
      >[!NOTE]
      >
