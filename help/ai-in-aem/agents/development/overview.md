@@ -1,19 +1,19 @@
 ---
-title: Experience Development 에이전트 개요
-description: AEM의 Experience Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법을 알아봅니다.
-feature: Edge Delivery Services, Agentic AI
+title: 개발 에이전트 개요
+description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Experience Development 에이전트 개요 {#development-agent-overview}
+# 개발 에이전트 개요 {#development-agent-overview}
 
-Experience Development Agent는 AEM 개발자와 관리자가 코드를 보다 효율적으로 생성, 디버그, 배포 및 최적화할 수 있도록 지원합니다.
+개발 에이전트를 사용하면 AEM 개발자와 관리자가 코드를 보다 효율적으로 만들고, 디버깅하고, 배포하고, 최적화할 수 있습니다.
 
 현재 에이전트는 파이프라인 상태를 검색하고 수정 사항을 제안하여 빌드 단계의 오류를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
 
@@ -27,11 +27,11 @@ Experience Development Agent는 AEM 개발자와 관리자가 코드를 보다 �
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Cloud Manager을 통해 Experience Development Agent에 액세스 {#how-to-access-the-agent}
+## Cloud Manager을 통해 개발 에이전트에 액세스 {#how-to-access-the-agent}
 
-Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 AI Assistant를 통해 Experience Development Agent에 액세스합니다.
+Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 AI Assistant를 통해 개발 에이전트에 액세스합니다.
 
-**Cloud Manager을 통해 Experience Development Agent에 액세스하려면:**
+**Cloud Manager을 통해 개발 에이전트에 액세스하려면:**
 
 1. 시작하려면 [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)을 클릭하여 홈 페이지를 엽니다.
 
@@ -73,7 +73,7 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 
 ## 권한 {#permissions}
 
-Experience Development Agent의 파이프라인 문제 해결 작업을 수행하려면 Cloud Manager - 개발자 역할 또는 Cloud Manager - 프로그램 관리자 역할이 필요합니다.
+개발 에이전트의 파이프라인 문제 해결 작업을 수행하려면 Cloud Manager - 개발자 역할 또는 Cloud Manager - 프로그램 관리자 역할이 필요합니다.
 
 
 
