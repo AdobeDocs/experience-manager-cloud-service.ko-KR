@@ -3,15 +3,19 @@ title: 커뮤니케이션 제작 스킬
 description: Experience Production Agent의 커뮤니케이션 생성 기술과 자연어를 사용하여 대화형 커뮤니케이션을 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # 커뮤니케이션 제작 스킬 {#ic-creation-skill}
+
+>[!NOTE]
+>
+> 커뮤니케이션 제작 기술은 현재 알파에 있습니다. 참가하려면 공식 이메일 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 요청을 보내십시오.
 
 대화형 커뮤니케이션은 계정 명세서, 정책 문서, 청구서, 환영 키트 및 혜택 알림과 같은 비즈니스 서신에 맞게 설계된 개인화된 데이터 기반 문서입니다. 사용자의 입력을 수집하는 양식과 달리 대화형 커뮤니케이션은 동적이고 수신자별 컨텐츠가 포함된 출력 문서를 생성합니다.
 
@@ -39,7 +43,9 @@ ht-degree: 0%
 * *https://의 이미지 파일에서 통신 만들기[aem-author-url]/path/to/image/file*
 * https://[aem-author-url]/path/to/pdf/file에서 PDF 파일을 사용하여 편지 만들기
 
+
 ## 커뮤니케이션 세분화 {#refine-with-ic-editor}
+
 
 AI Assistant를 사용하여 초기 통신 구조를 작성한 후 대화형 통신 편집기를 사용하여 문서를 구체화하고 향상시킬 수 있습니다. 대화형 통신 편집기에서 다음 작업을 수행하는 데 자연어로 프롬프트를 제공할 수 있습니다.
 
@@ -65,4 +71,3 @@ AI Assistant를 사용하여 초기 통신 구조를 작성한 후 대화형 통
 * *약관 섹션의 줄 간격을 1.5로 변경합니다*
 
 대화형 통신 편집기의 기능에 대한 자세한 내용은 [대화형 통신 문서](/help/forms/introduction-to-interactive-communication.md)를 참조하십시오.
-
