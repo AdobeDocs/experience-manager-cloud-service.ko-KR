@@ -4,10 +4,10 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 79%
+source-wordcount: '1938'
+ht-degree: 77%
 
 ---
 
@@ -146,6 +146,19 @@ AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 
 
 ![Assets 보기에서 의미 체계 검색](assets/semantic-search.png)
 
+### Assets 보기에서 AI 검색 활성화 또는 비활성화 {#enable-disable-ai-search}
+
+다음 단계를 실행하여 AI 검색을 활성화하거나 비활성화합니다.
+
+1. **[!UICONTROL 설정]** >> **[!UICONTROL 일반 설정]**(으)로 이동한 다음 **[!UICONTROL 검색]** 탭을 선택합니다.
+
+1. **[!UICONTROL 검색]** 섹션에서 **[!UICONTROL AI 검색]**&#x200B;을 선택하여 AI 검색을 활성화하거나 **[!UICONTROL 키워드]**&#x200B;를 선택하여 비활성화합니다.
+
+   ![Assets 보기에서 의미 체계 검색](/help/assets/assets/enable-disable-ai-search.png)
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+
 ## [!DNL Adobe Firefly]를 사용하여 자산 검색 {#search-firefly}
 
 [!DNL Experience Manager Assets] 내에서 [!DNL Adobe Firefly] 자산 검색 기능을 활용하면 어떤 자산 폴더에서도 사용할 수 없는 자산을 검색할 수 있습니다. 이를 통해 자산 폴더에 저장되지 않은 자산을 실시간으로 효율적으로 생성할 수 있습니다.
@@ -185,7 +198,7 @@ AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 
 생성된 자산을 자산 저장소에 업로드하려면 다음 작업을 수행하십시오.
 
 1. **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
-1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**&#x200B;을 클릭합니다.
+1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**을 클릭합니다.
    ![자산 업로드](assets/upload-asset-firefly.jpg)
 
 ## 저장된 검색 {#saved-search}
@@ -367,13 +380,13 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
 

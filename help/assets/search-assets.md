@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
+source-wordcount: '5969'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 충족시키는 데 도움이 됩니다.
@@ -86,7 +86,7 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 `damAssetLucene-9`은(는) 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 계산 동작을 변경하므로 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
 
-이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ko)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe에서는 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
+이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe에서는 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
 
 이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 [Facet - Oak 설명서 - Lucene 색인](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)을 참조하십시오.
 
@@ -147,9 +147,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
-타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)을 참조하세요.
+타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410339/?captions=kor&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *비디오: 검색 결과의 등급과 등급에 영향을 줄 수 있는 방법을 이해합니다.*
 
@@ -184,7 +184,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 유사 이미지 찾기 {#visualsearch}
 
-To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager]은(는) 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다.
+사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면, 이미지 카드 보기 또는 도구 모음에서 유사 **[!UICONTROL 이미지 찾기]** 옵션을 클릭하세요. [!DNL Experience Manager]은(는) 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다.
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지 찾기](assets/search_find_similar.png)
 
@@ -196,7 +196,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ### Dynamic Media 자산 {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
+**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
 
 ### 메타데이터 필드의 특정 값을 사용하는 GQL 검색 {#gql-search}
 
@@ -253,11 +253,11 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ### [!DNL Experience Manager] 데스크톱 앱에서 자산 검색 {#desktop-app}
 
-Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets)를 참조하세요.
+Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
 
 ### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
-LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ko)을 참조하세요.
+LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)을 참조하세요.
 
 ### [!DNL Adobe Stock]개 이미지 검색 {#adobe-stock1}
 
@@ -265,7 +265,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ### [!DNL Dynamic Media]개 자산 검색 {#search-dynamic-media-assets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
+**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이 필터는 이미지 세트, 슬라이드, Mixed Media 세트, Spin 세트 등의 에셋만 표시합니다. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
 
 ### 웹 페이지 작성 시 콘텐츠 파인더에서 자산 검색 {#content-finder}
 
@@ -400,44 +400,23 @@ AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 
 마찬가지로 이 프롬프트를 스페인어로 지정하거나 `Woman`을(를) `Wman`(으)로 잘못 입력해도 동일한 결과를 얻을 수 있습니다.
 
 
+### 관리자 보기에서 AI 검색 활성화 또는 비활성화 {#enable-disable-ai-search}
+
+다음 단계를 실행하여 관리자 보기에서 AI 검색을 활성화하거나 비활성화합니다.
+
+1. **[!UICONTROL 도구]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Assets 구성]** >> **[!UICONTROL Assets Omnisearch 구성]**&#x200B;으로 이동합니다.
+
+1. **[!UICONTROL 검색]** 섹션에서 **[!UICONTROL AI 검색]**&#x200B;을 선택하여 AI 검색을 활성화하거나 **[!UICONTROL 키워드]**&#x200B;를 선택하여 비활성화합니다.
+
+   ![AI 검색 사용 또는 사용 안 함](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
 ## 검색 기능과 관련된 구성 및 관리 작업 {#configadmin}
 
 ### 색인 구성 검색 {#searchindex}
 
 에셋 검색은 메타데이터를 포함한 DAM 콘텐츠 인덱싱에 의존합니다. 보다 빠르고 정확한 에셋 검색은 최적화된 인덱싱과 적절한 구성에 의존합니다. [인덱싱](/help/operations/indexing.md)을 참조하십시오.
-
-### 시각적 또는 유사성 검색 {#configvisualsearch}
-
-시각적 검색은 스마트 태그를 사용합니다. 스마트 태그 지정 기능을 구성한 후 다음 단계를 수행합니다.
-
-1. [!DNL Experience Manager] CRXDE의 `/oak:index/lucene` 노드에서 다음 속성 및 값을 추가하고 변경 내용을 저장합니다.
-
-   * 값이 `costPerEntry`인 `Double` 형식의 `10` 속성입니다.
-
-   * 값이 `costPerExecution`인 `Double` 형식의 `2` 속성입니다.
-
-   * 값이 `refresh`인 `Boolean` 형식의 `true` 속성입니다.
-
-   이 구성을 사용하면 적절한 색인에서 검색할 수 있습니다.
-
-1. Lucene 인덱스를 만들려면 CRXDE의 `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`에서 `imageFeatures` 유형의 `nt-unstructured`(이)라는 노드를 만듭니다. `imageFeatures` 노드에서
-
-   * 값이 `name`인 `String` 형식의 `jcr:content/metadata/imageFeatures/haystack0` 속성을 추가하십시오.
-
-   * 값이 `nodeScopeIndex`인 `Boolean` 형식의 `true` 속성을 추가하십시오.
-
-   * 값이 `propertyIndex`인 `Boolean` 형식의 `true` 속성을 추가하십시오.
-
-   * 값이 `useInSimilarity`인 `Boolean` 형식의 `true` 속성을 추가하십시오.
-
-   변경 사항을 저장합니다.
-
-1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`에 액세스하고 값이 `similarityTags`인 `Boolean` 형식의 `true` 속성을 추가하십시오.
-1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=ko#configuring)을 참조하세요.
-1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 `reindex` 속성을 `true`(으)로 설정합니다. 변경 사항을 저장합니다.
-1. (선택 사항) 검색 양식을 사용자 지정한 경우 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 노드를 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`에 복사합니다. 변경 사항을 저장합니다.
-
-관련 정보는 [Experience Manager의 스마트 태그 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko) 및 [스마트 태그를 관리하는 방법](/help/assets/smart-tags.md)을 참조하십시오.
 
 ### 필수 메타데이터 {#mandatorymetadata}
 
@@ -578,5 +557,5 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=ko)
->* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)
+>* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
