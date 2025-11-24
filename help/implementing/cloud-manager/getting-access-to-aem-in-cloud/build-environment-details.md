@@ -212,7 +212,7 @@ AEM Cloud Service 고객은 새로운 언어 기능을 활용할 수 있도록 �
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-일부 빌드가 완전히 작동하려면 추가 시스템 패키지가 필요합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. APT를 호출하기 위해 [`exec-maven-plugin`에서 ](https://www.mojohaus.org/exec-maven-plugin/)`pom.xml`을(를) 호출하여 이 설치 프로세스를 관리할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
+일부 빌드가 완전히 작동하려면 추가 시스템 패키지가 필요합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. APT를 호출하기 위해 [`exec-maven-plugin`에서 &#x200B;](https://www.mojohaus.org/exec-maven-plugin/)`pom.xml`을(를) 호출하여 이 설치 프로세스를 관리할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>
