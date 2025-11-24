@@ -3,10 +3,10 @@ title: 범용 편집기 미리보기 릴리스 정보
 description: 다음은 범용 편집기 미리보기 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 64%
+source-wordcount: '186'
+ht-degree: 60%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 64%
 
 ## 예정된 새로운 기능 {#what-is-new}
 
+* 인증 헤더가 [로컬 개발자 로그인을 위해 비활성화되었습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * 이제 마우스 오른쪽 단추를 클릭하여 구조화된 트리에서 상황별 메뉴를 사용할 수 있습니다.
 * 중복 구성 요소에 핫키가 추가되었습니다.
 
