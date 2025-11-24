@@ -3,9 +3,9 @@ title: Experience 프로덕션 에이전트 개요
 description: AEM의 Experience Production Agent를 사용하여 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a8f1adf7972decf1c8dbd060192c0e7d8b76051f
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -55,3 +55,35 @@ Experience Production Agent는 많은 노력과 대량의 작업을 자동화합
 ## 다른 에이전트와 함께 사용 {#use-with-other-agents}
 
 * Experience Advisory Agent에서 소스 에셋 가져오기
+
+## 활성화 {#activation}
+
+Experience Production Agent를 활성화하고 액세스 권한을 얻으려면 Adobe에 문의해야 합니다. 시작하려면 다음으로 문의할 수 있습니다.
+
+* `experience-production-agent@adobe.com`
+* 또는 계정 팀에 문의하십시오.
+
+프로세스 속도를 높이기 위해 다음 정보를 제공하는 데 도움이 됩니다.
+
+* AEM as a Cloud Service용
+   * 다음을 제공해야 합니다.
+      * 조직 ID
+      * `product_id`
+      * `profile_id`
+
+   * 이러한 값은 다음 단계를 사용하여 찾을 수 있습니다.
+      * 관리자가 <https://adminconsole.adobe.com/>을(를) 방문해야 합니다
+      * **Adobe Experience Manager as a Cloud Service** 선택
+      * 적절한 AEM 인스턴스 선택
+      * 해당 콘텐츠에 대한 읽기 및 쓰기 작업을 허용하는 프로필을 선택하십시오.
+      * 브라우저 URL 확인
+      * URL에서 `product_id` 및 `profile_id`을(를) 추출합니다.
+예, <https://adminconsole.adobe.com/products/profiles/users>
+
+* Edge Delivery 문서 작성
+   * Adobe 팀에 다음 정보를 제공합니다.
+      * 관련 도메인
+      * 관련 Github 정보:
+         * 조직
+         * 레포
+         * 분기

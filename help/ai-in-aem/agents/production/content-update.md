@@ -3,9 +3,9 @@ title: 콘텐츠 업데이트 스킬
 description: Experience Production Agent의 콘텐츠 업데이트 스킬이 무엇이며 이를 통해 어떤 작업을 수행할 수 있는지 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -109,9 +109,9 @@ Jira를 사용하여 콘텐츠 업데이트 스킬을 사용하면 편집을 자
 
   ![Experience Production Agent의 콘텐츠 업데이트 기술을 사용한 Jira 예제](assets/content-update-jira-example.png)
 
-### 활성화 {#activation}
+## 활성화 {#activation}
 
-Jira를 사용하여 Experience Production Agent를 활성화하고 액세스 권한을 얻으려면 Adobe에 이메일을 보내야 합니다. 시작하려면 다음으로 문의할 수 있습니다.
+Experience Production Agent를 활성화하고 액세스 권한을 얻으려면 Adobe에 문의해야 합니다. 시작하려면 다음으로 문의할 수 있습니다.
 
 * `experience-production-agent@adobe.com`
 * 또는 계정 팀에 문의하십시오.
