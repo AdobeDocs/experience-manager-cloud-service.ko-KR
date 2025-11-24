@@ -4,7 +4,7 @@ description: Edge Delivery Services를 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 100%
@@ -73,7 +73,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 
 **Cloud Manager에서의 Edge Delivery 할 일 목록**&#x200B;은 온보딩 작업 체크리스트로, Edge Delivery 사이트를 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩하고 관리할 수 있도록 안내합니다.
 
-![Cloud Manager의 Edge Delivery 사이트에서 할 일 목록.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager의 Edge Delivery 사이트에서 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Edge Delivery Services는 프로젝트를 시작한 방식 또는 사이트를 �
 | 8 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 9 | 실행 | [실행 체크리스트](https://www.aem.live/docs/go-live-checklist)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441568?captions=kor&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 지원 티켓 로그 {#eds-support-ticket}
 

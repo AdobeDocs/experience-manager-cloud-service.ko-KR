@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1594'
 ht-degree: 37%
 
 ---
@@ -67,7 +67,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 * ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)&#x200B;(사이드 메뉴 표시 또는 숨기기)을 사용하면 개별 프로그램의 특정 부분으로 이동할 수 있는 다양한 탭에 액세스할 수 있습니다. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
 * ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)&#x200B;([알림](/help/implementing/cloud-manager/notifications.md))을 사용하면 알림 및 공지 등에 액세스할 수 있습니다.
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 프로그램 도구 모음 {#program-toolbar}
 
@@ -122,7 +122,7 @@ Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Ex
 * 프로그램에 할당된 이름. 위의 이미지는 프로그램 이름으로 &quot;SecurBank 샘플&quot;을 보여 줍니다.
 * 서비스 유형:
    * **Experience Manager Cloud** — AEM as a Cloud Service 프로그램용
-   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — [AMS(Adobe Managed Services) 프로그램용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [프로그램 형식](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * 샌드박스
    * 프로덕션
@@ -149,7 +149,7 @@ Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Ex
 * 프로그램의 특정 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [환경](/help/implementing/cloud-manager/manage-environments.md)(으)로 이동
 * ![프로그램 개요 아이콘](/help/implementing/cloud-manager/assets/program-overview.svg) [프로그램 개요](#program-overview) 열기
 * ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

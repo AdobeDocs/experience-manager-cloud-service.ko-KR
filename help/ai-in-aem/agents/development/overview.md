@@ -1,11 +1,11 @@
 ---
 title: 개발 에이전트 개요
 description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 
 | 프롬프트 | 결과 |
 | --- | --- |
-| *기본 프로그램에 대해 실패한 파이프라인을 나열합니다.* | 결과가 달라질 수 있지만 이 프롬프트는 분석할 특정 파이프라인을 참조하기 위한 후속 제안과 함께 실패한 파이프라인 테이블을 출력해야 합니다. |
-| *실패한 내 파이프라인을 &quot;개발 파이프라인&quot;이라고 분석합니다.* | 이 프롬프트를 통해 실패한 파이프라인을 분석하고 수정 사항을 제시해야 합니다. |
+| *기본 프로그램에 대해 실패한 파이프라인을 나열합니다.* | 결과가 달라질 수 있지만 이 프롬프트는 분석할 특정 파이프라인을 참조하라는 후속 제안과 함께 실패한 파이프라인 테이블을 출력합니다. |
+| *실패한 내 파이프라인을 &quot;개발 파이프라인&quot;이라고 분석합니다.* | 이 프롬프트는 실패한 파이프라인을 분석하고 수정 사항을 제안합니다. |
 
 ## 범위를 벗어난 기능 {#out-of-scope-features}
 

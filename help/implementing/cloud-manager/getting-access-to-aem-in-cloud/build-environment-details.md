@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 29%
 
 ---
@@ -19,7 +19,7 @@ Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 �
 
 >[!TIP]
 >
->이 문서에서는 AEM as a Cloud Service 프로젝트 개발을 위한 Cloud Manager의 빌드 환경에 대해 설명합니다. AEM as a Cloud Service에서 콘텐츠 작성을 위해 지원하는 클라이언트 플랫폼에 대한 자세한 내용은 문서 [지원되는 클라이언트 플랫폼](/help/overview/supported-platforms.md)을 참조하십시오.
+>이 문서에서는 AEM as a Cloud Service 프로젝트 개발을 위한 Cloud Manager의 빌드 환경에 대해 설명합니다. AEM as a Cloud Service에서 콘텐츠 작성을 위해 지원하는 클라이언트 플랫폼에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/overview/supported-platforms.md)을 참조하십시오.
 
 ## 빌드 환경 세부 정보 {#build-environment-details}
 
@@ -212,7 +212,7 @@ AEM Cloud Service 고객은 새로운 언어 기능을 활용할 수 있도록 �
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-일부 빌드가 완전히 작동하려면 추가 시스템 패키지가 필요합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. APT를 호출하기 위해 [`exec-maven-plugin`에서 &#x200B;](https://www.mojohaus.org/exec-maven-plugin/)`pom.xml`을(를) 호출하여 이 설치 프로세스를 관리할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
+일부 빌드가 완전히 작동하려면 추가 시스템 패키지가 필요합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. APT를 호출하기 위해 [`exec-maven-plugin`에서 ](https://www.mojohaus.org/exec-maven-plugin/)`pom.xml`을(를) 호출하여 이 설치 프로세스를 관리할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>
