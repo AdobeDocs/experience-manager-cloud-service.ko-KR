@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1263'
+ht-degree: 16%
 
 ---
 
@@ -154,11 +154,17 @@ Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## 설치된 SSL 인증서 수 제한 {#limitations}
+## 제한 사항 {#limitations}
+
+### 설치된 SSL 인증서 수 {#number-installed-ssl-certs}
 
 Cloud Manager은 설치된 인증서를 최대 70개까지 지원합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
 
 한도에 도달한 경우 인증서를 검토하고 만료된 인증서를 삭제하는 것을 고려하십시오. 또는 인증서에 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에서 여러 도메인을 그룹화합니다.
+
+### Adobe 관리 DV 인증서에 대한 속도 제한을 암호화하겠습니다
+
+Adobe 관리 DV 인증서는 Let&#39;s Encrypt에 의존합니다. 설치된 인증서에 대한 Cloud Manager 제한 외에도 Let&#39;s Encrypt는 자체 비율 제한을 적용합니다. 하나의 키 제한은 **정확한 식별자 집합당 새 인증서**&#x200B;입니다. 7일 이내에 동일한 호스트 이름 집합에 대해 최대 5개의 인증서를 발급할 수 있습니다. 이 한도에 도달하면 Cloud Manager은 해당 Let&#39;s Encrypt 오류를 표시하며 속도 제한 창이 다시 설정될 때까지 해당 호스트 이름 집합에 대한 추가 인증서를 만들 수 없습니다. 최신 값 및 기타 관련 제한에 대한 자세한 내용은 [속도 제한 암호화하기](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)를 참조하십시오.
 
 ## 자세히 알아보기 {#learn-more}
 
