@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2778'
-ht-degree: 69%
+source-wordcount: '2819'
+ht-degree: 68%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 69%
    * [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment) 작업
    * **상위 참조**&#x200B;를 모두 표시하는 옵션(링크 아이콘)
    * 조각 **[상태](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** 및 마지막으로 저장한 정보
-   * 원본(자산 기반) 편집기로 전환할 수 있는 기능
+   * 원본(자산 기반) 편집기로 전환할 수 있는 토글
 
      >[!WARNING]
      >
@@ -78,7 +78,7 @@ ht-degree: 69%
 
 * 다음 두 가지 수준으로 구성됩니다.
 
-   * 조각 콘텐츠의 **[변형](#variations)**
+   * 콘텐츠 조각의 **[변형](#variations)**
    * **필드** - 콘텐츠 조각 모델에 의해 정의되고 모든 변형에서 사용됨
 
 * 다양한 참고를 포함할 수 있습니다.
@@ -135,6 +135,12 @@ ht-degree: 69%
 * [변형 삭제](#delete-variation)
 
 ### 변형 만들기 {#create-variation}
+
+>[!NOTE]
+>
+>변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
+>
+>가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
 
 콘텐츠 조각의 변형을 만들려면
 
@@ -267,7 +273,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
