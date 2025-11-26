@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service의 AI에 대해 알아�
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 34469549451106c28fc3f95c90a8759b356bdd16
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 48%
@@ -25,8 +25,8 @@ AI(인공 지능)는 Adobe Experience Manager as a Cloud Service의 필수적인
 AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 [에이전트](/help/ai-in-aem/agents/overview.md)를 제공합니다.
 
 * [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md)
-* [콘텐츠 최적화 에이전트](/help/ai-in-aem/agents/content-optimization/using.md)
-* [검색 에이전트](/help/ai-in-aem/agents/discovery/using.md)
+* [콘텐츠 최적화 에이전트](/help/ai-in-aem/agents/content-optimization/overview.md)
+* [검색 에이전트](/help/ai-in-aem/agents/discovery/overview.md)
 * [개발 에이전트](/help/ai-in-aem/agents/development/overview.md)
 * [거버넌스 에이전트](/help/ai-in-aem/agents/governance/overview.md)
 
@@ -45,7 +45,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
   변형 생성 은 생성 AI를 사용하여 입력을 기반으로 콘텐츠 변형을 생성합니다. 변형을 만든 후에는 웹 사이트의 콘텐츠를 사용하고 Edge Delivery Services의 실험 기능을 사용하여 성공을 측정할 수도 있습니다.
 
-   * [편집기 외부의 이전 버전 &#x200B;](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
+   * [편집기 외부의 이전 버전 ](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
 
      >[!NOTE]
      >

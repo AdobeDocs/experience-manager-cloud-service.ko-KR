@@ -3,7 +3,7 @@ title: AEM의 에이전트 개요
 description: 컨텐츠 생성 속도를 높이고 변경 사항을 자동으로 오케스트레이션하기 위해 AEM에서 사용할 수 있는 에이전트에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ## 콘텐츠 최적화 에이전트 {#content-optimization-agent}
 
-[콘텐츠 최적화 에이전트](/help/ai-in-aem/agents/content-optimization/using.md)은(는) 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 자산을 구체화하고 조정하는 방법을 변환합니다. 에이전트는 사용자 의도를 해석하고 복잡한 편집 작업을 자동으로 수행하여 새 렌디션 생성, 시각적 속성 조정, 배경 변경 또는 특정 디지털 채널을 위한 에셋 준비 등의 작업을 수행합니다.
+[콘텐츠 최적화 에이전트](/help/ai-in-aem/agents/content-optimization/overview.md)은(는) 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 자산을 구체화하고 조정하는 방법을 변환합니다. 에이전트는 사용자 의도를 해석하고 복잡한 편집 작업을 자동으로 수행하여 새 렌디션 생성, 시각적 속성 조정, 배경 변경 또는 특정 디지털 채널을 위한 에셋 준비 등의 작업을 수행합니다.
 
 ## 검색 에이전트 {#discovery-agent}
 
-[검색 에이전트](/help/ai-in-aem/agents/discovery/using.md)은(는) 간소화되고 클릭 없는 검색 환경을 위해 AEM 콘텐츠를 제공합니다. Assets, 컨텐츠 조각 및 적응형 Forms 전반에서 지능적으로 검색하여 이미지, 비디오, PDF 문서, 문서 및 양식 템플릿과 같은 관련 자료를 제공합니다.
+[검색 에이전트](/help/ai-in-aem/agents/discovery/overview.md)은(는) 간소화되고 클릭 없는 검색 환경을 위해 AEM 콘텐츠를 제공합니다. Assets, 컨텐츠 조각 및 적응형 Forms 전반에서 지능적으로 검색하여 이미지, 비디오, PDF 문서, 문서 및 양식 템플릿과 같은 관련 자료를 제공합니다.
 
 ## 개발 에이전트 {#development-agent}
 
