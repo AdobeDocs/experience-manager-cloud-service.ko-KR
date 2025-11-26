@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603106282e513ea20b3fb6a022381087cc8491d3
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 67%
@@ -40,13 +40,13 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM 비즈니스 에이전트 {#aem-business-agents}
+## AEM의 에이전트 {#agents-in-aem}
 
-AEM은 컨텐츠 생성 시간을 단축하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 비즈니스 에이전트를 제공합니다. 자세한 내용은 [AEM 비즈니스 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
+AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 에이전트를 제공합니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

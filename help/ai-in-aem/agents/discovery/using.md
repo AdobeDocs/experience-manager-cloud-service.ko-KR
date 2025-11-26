@@ -3,9 +3,9 @@ title: 검색 에이전트 개요
 description: 검색 에이전트를 사용하여 간소화되고 클릭되지 않는 검색 환경을 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ DAM Librarians는 조직에서 설정한 메타데이터 표준이 누락된 에
 
 ## 검색 에이전트에 액세스하는 방법 {#access-discovery-agent}
 
-AI Assistant를 통해 AEM 비즈니스 에이전트에 액세스할 수 있습니다. experience.adobe.com에 로그온하면 검색 상자를 사용하여 프롬프트를 자연어로 지정하여 AI Assistant와 상호 작용을 시작할 수 있습니다.
+AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다. experience.adobe.com에 로그온하면 검색 상자를 사용하여 프롬프트를 자연어로 지정하여 AI Assistant와 상호 작용을 시작할 수 있습니다.
 
 ![검색 에이전트 액세스](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 

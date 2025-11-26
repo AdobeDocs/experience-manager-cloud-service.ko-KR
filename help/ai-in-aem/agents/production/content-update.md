@@ -3,9 +3,9 @@ title: 콘텐츠 업데이트 스킬
 description: Experience Production Agent의 콘텐츠 업데이트 스킬이 무엇이며 이를 통해 어떤 작업을 수행할 수 있는지 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Experience Production Agent의 콘텐츠 업데이트 기술은 콘텐츠 프로
 
 ## AI 어시스턴트 {#ai-assistant}
 
-AI Assistant를 통해 AEM 비즈니스 에이전트에 액세스할 수 있습니다.
+AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다.
 
 experience.adobe.com에서 AI Assistant를 연 다음 `Ask AI Assistant anything` 필드를 사용하여 자연어로 프롬프트를 지정하여 상호 작용을 시작하십시오.
 

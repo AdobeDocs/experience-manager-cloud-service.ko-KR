@@ -3,9 +3,9 @@ title: 콘텐츠 최적화 에이전트
 description: 콘텐츠 최적화 에이전트를 사용하여 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변형하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -68,10 +68,9 @@ ht-degree: 0%
 
 지역 마케터와 에이전시 작업자는 콘텐츠 최적화 에이전트를 사용하여 보다 빠르고 일관된 콘텐츠 제작을 지원하는 채널 준비가 완료된 이미지 변형을 신속하게 생성할 수도 있습니다.
 
-
 ## 콘텐츠 최적화 에이전트에 액세스하는 방법 {#access-content-optimization-agent}
 
-AI Assistant를 통해 AEM 비즈니스 에이전트에 액세스할 수 있습니다. experience.adobe.com에 로그온하면 `Ask AI Assistant anything` 필드를 사용하여 자연어로 프롬프트를 지정하여 AI Assistant와 상호 작용할 수 있습니다.
+AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다. experience.adobe.com에 로그온하면 `Ask AI Assistant anything` 필드를 사용하여 자연어로 프롬프트를 지정하여 AI Assistant와 상호 작용할 수 있습니다.
 
 ![검색 에이전트 액세스](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 

@@ -1,19 +1,19 @@
 ---
-title: 비즈니스 에이전트 개요
-description: 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션하기 위해 AEM에서 사용할 수 있는 비즈니스 에이전트에 대해 알아봅니다.
+title: AEM의 에이전트 개요
+description: 컨텐츠 생성 속도를 높이고 변경 사항을 자동으로 오케스트레이션하기 위해 AEM에서 사용할 수 있는 에이전트에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 
-# AEM 비즈니스 에이전트 개요 {#business-agents-overview}
+# AEM의 에이전트 개요 {#overview-of-agents-in-aem}
 
-이러한 비즈니스 에이전트는 Adobe Experience Manager(AEM) as a Cloud Service에서 컨텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있습니다.
+이러한 에이전트는 Adobe Experience Manager(AEM) as a Cloud Service에서 컨텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있습니다.
 
 >[!IMPORTANT]
 >
