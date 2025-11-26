@@ -3,9 +3,9 @@ title: 양식 작성 스킬
 description: Experience Production Agent의 양식 작성 기술과 자연어를 사용하여 양식을 처음부터 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,42 @@ AI Assistant를 사용하여 초기 양식 구조를 만든 후 Forms Experience
 * **제출 구성**: 전자 메일 알림 설정, 워크플로우와의 통합 또는 외부 시스템에 대한 연결을 포함하여 양식 데이터를 제출하는 위치를 구성합니다.
 
 자세한 내용은 [Forms Experience Builder 설명서](/help/forms/experience-builder/product-overview.md)를 참조하십시오.
+
+
+## 활성화 {#activation}
+
+조직에 대해 Experience Production Agent를 활성화하려면 Adobe을 통해 활성화를 시작해야 합니다. 다음을 통해 연락하여 프로세스를 시작합니다.
+
+* 전자 메일: `experience-production-agent@adobe.com`
+* 또는 지정된 Adobe 계정 팀에 문의하십시오.
+
+효율적인 온보딩 경험을 위해 다음 세부 정보를 준비하고 제공합니다.
+
+**AEM as a Cloud Service**&#x200B;의 경우 다음 식별자를 공유하십시오.
+
+* 조직 ID
+* `product_id`
+* `profile_id`
+
+AEM 관리자는 다음 방법으로 찾을 수 있습니다.
+
+1. <https://adminconsole.adobe.com/>로 이동 중
+1. **Adobe Experience Manager as a Cloud Service** 선택 중
+1. 환경에서 적절한 AEM 인스턴스 선택
+1. 관련 컨텐츠에 대한 읽기/쓰기 권한이 있는 프로필 선택
+1. 이 페이지에서 전체 브라우저 URL 복사
+1. URL에서 `product_id` 및 `profile_id` 값 추출\
+   (예: `https://adminconsole.adobe.com/products/profiles/users`과(와) 같은 URL에 이러한 매개 변수가 포함되어 있습니다).
+
+**Edge Delivery 문서 작성**&#x200B;의 경우 Adobe 팀에 다음 사항을 제공하십시오.
+
+* Edge Delivery Services 환경을 위한 도메인
+* 해당 GitHub 세부 사항:
+   * 조직(조직)
+   * 저장소(저장소)
+   * 분기
+
+완전하고 정확한 정보를 제공하면 활성화 프로세스가 빨라지고 Experience Production Agent가 적시에 프로비저닝될 수 있습니다.
 
 <!-- 
 #### Import and convert {#import-and-convert}
