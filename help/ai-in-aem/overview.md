@@ -45,7 +45,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
   변형 생성 은 생성 AI를 사용하여 입력을 기반으로 콘텐츠 변형을 생성합니다. 변형을 만든 후에는 웹 사이트의 콘텐츠를 사용하고 Edge Delivery Services의 실험 기능을 사용하여 성공을 측정할 수도 있습니다.
 
-   * [편집기 외부의 이전 버전 ](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
+   * [편집기 외부의 이전 버전 &#x200B;](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
 
      >[!NOTE]
      >
