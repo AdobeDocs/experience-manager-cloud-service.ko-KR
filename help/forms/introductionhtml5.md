@@ -1,28 +1,26 @@
 ---
-title: HTML 5 양식 소개
-description: HTML5 forms는 HTML5 형식으로 XFA 양식 템플릿을 렌더링할 수 있는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능입니다.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: HTML5 양식 소개
+description: HTML5 forms는 HTML5 형식으로 XFA 양식 템플릿을 렌더링할 수 있는 Adobe Experience Manager 소프트웨어의 새로운 기능입니다.
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 0%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# HTML 5 양식 소개{#introduction-to-html-forms}
+# HTML5 양식 소개{#introduction-to-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
 
-HTML5 forms는 HTML5 형식으로 XFA 양식 템플릿을 렌더링할 수 있는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능입니다. 이 기능을 사용하면 XFA 기반 PDF이 지원되지 않는 모바일 장치 및 데스크탑 브라우저에서 양식을 렌더링할 수 있습니다. HTML5 forms는 XFA 양식 템플릿의 기존 기능을 지원할 뿐만 아니라 모바일 장치용 스크리블 서명과 같은 새로운 기능을 추가합니다.
+HTML5 forms는 HTML5 형식으로 XFA 양식 템플릿을 렌더링할 수 있는 Adobe Experience Manager 소프트웨어의 새로운 기능입니다. 이 기능을 사용하면 XFA 기반 PDF이 지원되지 않는 모바일 장치 및 데스크탑 브라우저에서 양식을 렌더링할 수 있습니다. HTML5 forms는 XFA 양식 템플릿의 기존 기능을 지원할 뿐만 아니라 모바일 장치용 스크리블 서명과 같은 새로운 기능을 추가합니다.
 
-HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5 양식을 HTML5를 지원하는 모든 최신 브라우저에서 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. 지원되는 브라우저에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_63)을 참조하십시오.
+HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5 양식을 HTML5를 지원하는 모든 최신 브라우저에서 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5 양식 미리 보기](assets/mobile_form_on_an_ipad_date_14.png)
 

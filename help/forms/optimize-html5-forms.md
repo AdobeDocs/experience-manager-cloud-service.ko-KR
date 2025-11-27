@@ -2,17 +2,16 @@
 title: HTML5 양식 최적화
 description: HTML5 양식의 출력 크기를 최적화할 수 있습니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 0%
+source-wordcount: '310'
+ht-degree: 1%
 
 ---
 
@@ -86,4 +85,4 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
    </Location>
    ```
 
-1. AEM 서버에 액세스하려면 https://[Apache_server]:80을 사용하십시오.
+1. AEM 서버에 액세스하려면 https://[Apache_server]:80을(를) 사용하십시오.

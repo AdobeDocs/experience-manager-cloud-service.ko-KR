@@ -1,25 +1,23 @@
 ---
-title: HTML 양식의 건축
+title: HTML5 양식 아키텍처
 description: HTML5 forms는 임베드된 AEM 인스턴스 내에 패키지로 배포되고 RESTful Apache Sling 아키텍처를 사용하여 HTTP/S에 대해 REST 끝점으로 기능을 노출합니다.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 0%
+source-wordcount: '1991'
+ht-degree: 1%
 
 ---
 
-# HTML 양식의 건축{#architecture-of-html-forms}
+# HTML5 양식 아키텍처{#architecture-of-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
@@ -36,7 +34,7 @@ HTML5 forms 기능은 임베드된 AEM 인스턴스 내에 패키지로 배포�
 
 REST 끝점 및 지원되는 요청 매개 변수에 대한 자세한 내용은 [양식 템플릿 렌더링](/help/forms/rendering-form-template.md)을 참조하십시오.
 
-사용자가 iOS 또는 Android™ 브라우저와 같은 클라이언트 디바이스에서 요청을 수행하면 Sling은 먼저 요청 URL을 기반으로 프로필 노드를 확인합니다. 이 프로필 노드에서 **sling:resourceSuperType** 및 **sling:resourceType**&#x200B;을(를) 읽어서 이 양식 렌더링 요청을 처리할 수 있는 사용 가능한 모든 스크립트를 결정합니다. 그런 다음 요청 메서드와 함께 Sling 요청 선택기를 사용하여 이 요청을 처리하는 데 가장 적합한 스크립트를 식별합니다. 요청이 프로필 렌더러 JSP에 도달하면 JSP는 Forms OSGi 서비스를 호출합니다.
+사용자가 iOS 또는 Android™ 브라우저와 같은 클라이언트 디바이스에서 요청을 수행하면 Sling은 먼저 요청 URL을 기반으로 프로필 노드를 확인합니다. 이 프로필 노드에서 **sling:resourceSuperType** 및 **sling:resourceType**&#x200B;을(를) 읽고 이 양식 렌더링 요청을 처리할 수 있는 사용 가능한 모든 스크립트를 결정합니다. 그런 다음 요청 메서드와 함께 Sling 요청 선택기를 사용하여 이 요청을 처리하는 데 가장 적합한 스크립트를 식별합니다. 요청이 프로필 렌더러 JSP에 도달하면 JSP는 Forms OSGi 서비스를 호출합니다.
 
 Sling 스크립트 해상도에 대한 자세한 내용은 [AEM Sling 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 또는 [Apache Sling Url 분해](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)를 참조하십시오.
 
@@ -177,7 +175,7 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 콘텐츠�
 
 #### 프로필 렌더러 {#profile-renderers}
 
-프로필 노드에 값이 **xfaforms/profile**&#x200B;인 속성 **sling:resourceSuperType**&#x200B;이(가) 있습니다. 이 속성은 내부적으로 **/libs/xfaforms/profile** 폴더의 프로필 노드에 대한 sling 스크립트로 전달 요청을 보냅니다. 이러한 스크립트는 HTML 양식 및 필수 JS/CSS 아티팩트를 결합하기 위한 컨테이너인 JSP 페이지입니다. 이 페이지에는 다음에 대한 참조가 포함되어 있습니다.
+프로필 노드에 값이 **xfaforms/profile:resourceSuperType**&#x200B;인 속성 **sling**&#x200B;이(가) 있습니다. 이 속성은 내부적으로 **/libs/xfaforms/profile** 폴더의 프로필 노드에 대한 sling 스크립트로 전달 요청을 보냅니다. 이러한 스크립트는 HTML 양식 및 필수 JS/CSS 아티팩트를 결합하기 위한 컨테이너인 JSP 페이지입니다. 이 페이지에는 다음에 대한 참조가 포함되어 있습니다.
 
 * **xfaforms.I18N.&lt;locale>**: 이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
 * **xfaforms.profile**: 이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.

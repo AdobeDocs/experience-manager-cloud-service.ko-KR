@@ -3,17 +3,15 @@ title: HTML5 양식에 대한 로깅 활성화
 description: 로거 유틸리티는 양식에 대한 로깅을 활성화하고 양식 관련 문제를 디버깅하는 데 도움이 됩니다.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +28,7 @@ HTML5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 �
 
 1. `https://'[server]:[port]'/system/console/configMgr`(으)로 이동합니다. *Apace Sling 로깅 로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
 
-   ![&#x200B; Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
+   ![ Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
    Api Sling 로깅 로거 구성 옵션
 
@@ -172,9 +170,9 @@ HTML5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 �
 >[!NOTE]
 >
 >각 로그 범주 a(xfa), b(xfaView) 및 c(xfaPerf)의 기본 로그 수준은 2(ERROR)입니다. 따라서 로그 구성: 2-b6의 경우 다른 범주에 대한 로그 수준은 다음과 같습니다.
->&#x200B;>a(xfa): 2(기본 수준 오류)
->&#x200B;>b(xfaView): 6(사용자가 지정한 TRACE)
->&#x200B;>a(xfaPerf): 2(기본 수준 오류)
+>a(xfa): 2(기본 수준 오류)
+>b(xfaView): 6(사용자가 지정한 TRACE)
+>a(xfaPerf): 2(기본 수준 오류)
 
 ### Configuration Manager를 사용하여 로깅 활성화 {#enabling-logging-using-configuration-manager}
 

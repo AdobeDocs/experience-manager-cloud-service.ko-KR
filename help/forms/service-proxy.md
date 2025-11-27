@@ -1,22 +1,20 @@
 ---
-title: HTML5 forms 서비스 프록시
+title: HTML5 양식 서비스 프록시
 description: HTML5 forms 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수 submissionServiceProxy를 통해 제출 서비스의 URL을 지정합니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# HTML5 forms 서비스 프록시{#html-forms-service-proxy}
+# HTML5 양식 서비스 프록시{#html-forms-service-proxy}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>

@@ -2,17 +2,15 @@
 title: HTML5 양식용 양식 템플릿 디자인
 description: AEM Forms은 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 Designer을 사용하여 양식 템플릿을 디자인하고 HTML5 렌디션 기능을 사용할 수 있습니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 0%
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
 
-AEM의 HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)를 사용하여 양식 템플릿을 디자인하고 HTML5 렌디션 기능을 사용할 수 있습니다. 이러한 양식 템플릿은 자산과 함께 AEM 저장소, 파일 시스템에 있거나 http를 통해 노출될 수 있습니다. 하지만 Forms Manager를 사용하여 양식을 관리하려는 경우 템플릿과 에셋이 AEM 저장소에 있어야 합니다.
+AEM의 HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 Forms Designer을 사용하여 양식 템플릿을 디자인하고 HTML5 렌디션 기능을 사용할 수 있습니다. 이러한 양식 템플릿은 자산과 함께 AEM 저장소, 파일 시스템에 있거나 http를 통해 노출될 수 있습니다. 하지만 Forms Manager를 사용하여 양식을 관리하려는 경우 템플릿과 에셋이 AEM 저장소에 있어야 합니다.
 
 HTML5 Forms는 PDF forms의 동작과 거의 일치하지만 두 형식 모두에는 다른 형식에는 적용할 수 없는 몇 가지 기능이 있습니다. 예를 들어 Adobe Reader의 PDF 양식에 바코드를 적용하는 방법은 모바일 양식이나 양식에 디지털 서명을 하는 방법도 형식마다 다릅니다. 이러한 변형에 대한 자세한 내용은 [HTML5 양식과 PDF forms 간의 기능 차이](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)를 참조하십시오.
 

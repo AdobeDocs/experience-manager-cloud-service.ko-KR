@@ -1,20 +1,19 @@
 ---
-title: HTML5 양식에 대한 오류 메시지 사용자 지정
+title: HTML5 양식에 대한 오류 메시지 사용자 정의
 description: 위치 및 모양을 변경하는 방법을 포함하여 HTML5 양식에 대한 오류 메시지 표시를 사용자 지정하는 방법을 알아봅니다.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# HTML5 양식에 대한 오류 메시지 사용자 지정 {#customizing-error-messages-for-html-forms}
+# HTML5 양식에 대한 오류 메시지 사용자 정의 {#customizing-error-messages-for-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>

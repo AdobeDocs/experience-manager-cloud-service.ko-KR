@@ -1,23 +1,21 @@
 ---
-title: HTML5 forms와 PDF forms의 차별화된 기능
+title: HTML5 양식과 PDF 양식 간의 기능 차별화
 description: HTML5 Forms와 PDF forms 간의 기능 차이점에 대해 알아봅니다.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
-# HTML5 forms와 PDF forms의 차별화된 기능 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5 양식과 PDF 양식 간의 기능 차별화 {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>

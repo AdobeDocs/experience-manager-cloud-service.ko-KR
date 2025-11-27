@@ -1,22 +1,21 @@
 ---
-title: HTML5 Forms에서 액세스 가능한 복잡한 표 만들기
+title: HTML5 양식에서 접근성 높은 복잡한 테이블 만들기
 description: HTML5 Forms에서 액세스 가능한 테이블을 만드는 방법을 알아봅니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# HTML5 Forms에서 액세스 가능한 복잡한 표 만들기 {#create-accessible-complex-tables-in-html-forms}
+# HTML5 양식에서 접근성 높은 복잡한 테이블 만들기 {#create-accessible-complex-tables-in-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>

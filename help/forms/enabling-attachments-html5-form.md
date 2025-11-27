@@ -2,17 +2,16 @@
 title: HTML5 양식에 대한 첨부 파일 활성화
 description: 기본적으로 HTML5 양식에 대한 첨부 파일 지원이 비활성화되어 있습니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -23,14 +22,14 @@ ht-degree: 1%
 
 HTML5 양식을 사용하여 첨부 파일을 업로드하고 미리 보고 제출할 수 있습니다. 첨부 파일 지원은 기본적으로 비활성화되어 있습니다. 첨부 파일 지원을 활성화하려면
 
-1. [&#x200B; 다중 선택 문자열 속성을 사용하여 &#x200B;](/help/forms/custom-profile.md)사용자 지정 프로필`mfAttachmentOptions`을(를) 만듭니다. 첨부 파일 위젯의 옵션을 구성하려면 `mfAttachmentOptions` 속성의 각 문자열에 `property=value` 형식이 있어야 합니다. `property` 및 `value`은(는) 다음 값 중 하나를 가질 수 있습니다.
+1. [ 다중 선택 문자열 속성을 사용하여 ](/help/forms/custom-profile.md)사용자 지정 프로필`mfAttachmentOptions`을(를) 만듭니다. 첨부 파일 위젯의 옵션을 구성하려면 `mfAttachmentOptions` 속성의 각 문자열에 `property=value` 형식이 있어야 합니다. `property` 및 `value`은(는) 다음 값 중 하나를 가질 수 있습니다.
 
    | 속성 | 값 |
    |--- |---|
    | 다중 선택 | true 또는 false(기본적으로 true) |
    | fileSizeLimit | MB 단위(기본적으로 2MB). 예를 들어, 5입니다. |
    | buttonText | 팝업 창의 단추 텍스트(기본적으로 &quot;첨부&quot;) |
-   | 동의 | 수락할 파일 유형을 쉼표로 구분한 목록(&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot;) |
+   | 동의 | 수락할 파일 유형을 쉼표로 구분한 목록(&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot;) |
 
    예:
 

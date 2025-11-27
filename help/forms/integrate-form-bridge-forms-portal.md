@@ -1,27 +1,25 @@
 ---
-title: HTML5 Forms용 사용자 정의 포털과 양식 Bridge 통합
+title: HTML5 양식을 위한 사용자 정의 포털과 Form Bridge 통합
 description: FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 4%
 
 ---
 
-# HTML5 Forms용 사용자 정의 포털과 양식 Bridge 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# HTML5 양식을 위한 사용자 정의 포털과 Form Bridge 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
 
-FormBridge는 양식과 상호 작용할 수 있는 HTML5 forms bridge API입니다. FormBridge API 참조에 대해서는 [FormBridge API 참조](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)를 참조하십시오.
+FormBridge는 양식과 상호 작용할 수 있는 HTML5 forms bridge API입니다. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다. 예를 들어 API를 사용하여 마법사와 같은 경험을 빌드할 수 있습니다.
 

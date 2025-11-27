@@ -2,7 +2,6 @@
 title: HTML5 양식을 초안으로 저장
 description: HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 채우기를 재개합니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
@@ -11,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -78,4 +77,4 @@ HTML5 양식을 초안으로 저장하고 나중에 양식 채우기를 다시 �
  </tbody>
 </table>
 
-기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)를 참조하십시오.
+기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)를 참조하십시오.

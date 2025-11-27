@@ -1,22 +1,21 @@
 ---
-title: HTML5 양식에 대한 사용자 지정 프로필 만들기
+title: HTML5 양식용 사용자 정의 프로필 만들기
 description: HTML5 forms 프로필은 Apache Sling의 리소스 노드입니다. 이는 HTML5 forms 렌더링 서비스의 사용자 지정 버전을 나타냅니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
-# HTML5 양식에 대한 사용자 지정 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
+# HTML5 양식용 사용자 정의 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
@@ -67,7 +66,7 @@ footer.jsp 모듈이 비어 있습니다. 사용자 상호 작용에만 사용�
 
 1. 노드 기본값을 복사하고 다른 폴더(*/content/profiles*)에 *hraform* 이름을 사용하여 노드를 붙여넣습니다.
 
-1. 새 노드 *hrform*&#x200B;을(를) 선택하고 문자열 속성 *sling:resourceType*(값: *hrform/demo*)을(를) 추가합니다.
+1. 새 노드 *hrform*&#x200B;을(를) 선택하고 *hrform/demo:resourceType* 값을 가진 문자열 속성 *sling*&#x200B;을(를) 추가합니다.
 
 1. 도구 모음 메뉴에서 모두 저장 을 클릭하여 변경 사항을 저장합니다.
 

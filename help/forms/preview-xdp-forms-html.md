@@ -1,17 +1,15 @@
 ---
 title: XDP 양식의 HTML5 미리보기 생성
 description: LiveCycle Designer의 HTML 미리 보기 탭을 사용하여 브라우저에 표시될 양식을 미리 볼 수 있습니다.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -90,7 +88,7 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
    >
    >AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성*&#x200B;합니다.
 
-   ![AEM Forms Designer 옵션 &#x200B;](assets/server_options.png)
+   ![AEM Forms Designer 옵션 ](assets/server_options.png)
 
    AEM Forms Designer 옵션
 
@@ -120,9 +118,9 @@ Designer을 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 
 1. **파일 > 양식 속성**&#x200B;을 선택합니다.
 
-1. **미리 보기** 탭을 클릭하고 데이터 파일 상자에 테스트 데이터 파일의 전체 경로를 입력합니다. 찾아보기 단추를 사용하여 파일을 탐색할 수도 있습니다.
+2. **미리 보기** 탭을 클릭하고 데이터 파일 상자에 테스트 데이터 파일의 전체 경로를 입력합니다. 찾아보기 단추를 사용하여 파일을 탐색할 수도 있습니다.
 
-1. **확인**&#x200B;을 클릭합니다. 다음에 **HTML 미리 보기** 탭에서 양식을 미리 보면 샘플 XML 파일의 데이터 값이 각 개체에 나타납니다.
+3. **확인**&#x200B;을 클릭합니다. 다음에 **HTML 미리 보기** 탭에서 양식을 미리 보면 샘플 XML 파일의 데이터 값이 각 개체에 나타납니다.
 
 ## 저장소에서 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 
