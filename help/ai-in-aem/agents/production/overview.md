@@ -3,9 +3,9 @@ title: Experience 프로덕션 에이전트 개요
 description: AEM의 Experience Production Agent를 사용하여 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
+source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Experience Production Agent는 많은 노력과 대량의 작업을 자동화합
 
 ### 컨텐츠 업데이트 {#content-update}
 
-[콘텐츠 업데이트](/help/ai-in-aem/agents/production/content-update.md)는 콘텐츠 조각, 페이지, 양식 및 에셋을 포함한 CMS의 기존 콘텐츠를 쉽게 업데이트합니다. 에이전트는 경험을 정확하고 최신 상태로 유지하기 위해 콘텐츠 요소를 업데이트, 제거, 대체 또는 추가하는 등의 작업을 수행할 수 있습니다. 입력은 자연어 설명이 될 수 있으며, Jira PDF 및 스크린샷과 함께 사용할 경우 입력도 제공할 수 있습니다.
+[콘텐츠 업데이트](/help/ai-in-aem/agents/production/content-update.md)는 콘텐츠 조각, 페이지, 양식 및 자산을 포함한 기존 콘텐츠를 쉽게 업데이트합니다. 에이전트는 경험을 정확하고 최신 상태로 유지하기 위해 콘텐츠 요소를 업데이트, 제거, 대체 또는 추가하는 등의 작업을 수행할 수 있습니다. 입력은 자연어 설명이 될 수 있으며, Jira PDF 및 스크린샷과 함께 사용할 경우 입력도 제공할 수 있습니다.
 
 ### 양식 생성 {#form-creation}
 
