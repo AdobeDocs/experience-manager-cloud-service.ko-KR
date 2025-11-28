@@ -3,9 +3,9 @@ title: 콘텐츠 업데이트 스킬
 description: Experience Production Agent의 콘텐츠 업데이트 스킬이 무엇이며 이를 통해 어떤 작업을 수행할 수 있는지 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Experience Production Agent의 콘텐츠 업데이트 기술은 콘텐츠 프로덕션을 자동화하여 Adobe Experience Manager(AEM) as a Cloud Service 및 Edge Delivery Services의 일상적인 작업을 가속화합니다.
 
-콘텐츠 업데이트 스킬은 콘텐츠 조각, 페이지, 양식 및 에셋을 포함하여 CMS 전체의 기존 콘텐츠를 업데이트합니다. 에이전트는 경험을 정확하고 최신 상태로 유지하기 위해 콘텐츠 요소를 업데이트, 제거, 대체 또는 추가하는 등의 작업을 수행할 수 있습니다. 입력은 자연어 설명이 될 수 있으며, Jira PDF 및 스크린샷과 함께 사용할 경우 입력도 제공할 수 있습니다.
+콘텐츠 업데이트 스킬은 콘텐츠 조각, 페이지, 양식 및 에셋을 포함한 기존 콘텐츠를 업데이트합니다. 에이전트는 경험을 정확하고 최신 상태로 유지하기 위해 콘텐츠 요소를 업데이트, 제거, 대체 또는 추가하는 등의 작업을 수행할 수 있습니다. 입력은 자연어 설명이 될 수 있으며, Jira PDF 및 스크린샷과 함께 사용할 경우 입력도 제공할 수 있습니다.
 
 ## 개요 {#overview}
 
