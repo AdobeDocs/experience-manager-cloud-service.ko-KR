@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
+source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1976'
 ht-degree: 2%
 
 ---
@@ -113,6 +113,7 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 * 사이트와 통합한 모든 사용자 정의 검색 크롤러에 대한 AEM 라이선스 비용과 콘텐츠의 신선도에 대한 요구 사항의 균형을 맞추십시오.  지나치게 공격적인 크롤러는 많은 콘텐츠 요청을 소비할 수 있습니다.
 * 리디렉션을 클라이언트측(JavaScript 리디렉션을 사용하는 상태 200)이 아닌 서버측(상태 301 또는 302)으로 처리하여 두 개의 별도 콘텐츠 요청을 방지합니다.
 * 페이지를 렌더링하기 위해 로드될 수 있는 AEM의 JSON 응답인 API 호출을 결합하거나 줄입니다.
+* 위에 설명된 &quot;잘 알려진 검색 엔진&quot; 콘텐츠 요청 제외 규칙을 활용하기 위해 브라우저의 사용자 에이전트가 AEM에 올바르게 전달되는지 확인하십시오.  제외를 방지하고 사용자 에이전트가 전달된 경우보다 더 높은 콘텐츠 요청을 초래할 수 있는 특정 Headless 구현 또는 CDN 구성과 함께 원래 사용자 에이전트가 유실되는 경우가 있습니다.
 
 ### 콘텐츠 요청을 관리하는 트래픽 필터 규칙 {#traffic-filter-rules-to-manage-crs}
 

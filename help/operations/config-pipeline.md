@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [기본 인증](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 특정 URL을 보호하는 기본 인증 대화 상자의 사용자 이름 및 암호를 선언합니다. | X | X |
 | [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 콘텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소 최적화 | X |  |
 | [감사 로그 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 로그를 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 감사 로그를 최적화하여 성능 향상 | X |  |
+| [워크플로 제거 유지 관리 작업](/help/operations/maintenance.md) | `MaintenanceTasks` | 워크플로 인스턴스의 수를 최소화하여 워크플로 엔진의 성능을 향상시킵니다.<br><br>또한 [워크플로 인스턴스 정기적 제거](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances)를 참조하십시오. | X |  |
 | [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 로그를 Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 전달하기 위한 끝점 및 자격 증명을 구성합니다. | X | X |
 | [클라이언트 ID 등록](/help/implementing/developing/open-api-based-apis.md) | `API` | 클라이언트 ID를 등록하여 Adobe Developer Console API 프로젝트의 범위를 특정 AEM 환경으로 지정합니다. 인증이 필요한 OpenAPI 기반 API 사용에 필요 | X |  |
 
@@ -132,7 +133,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [&#x200B; 참조에 표시된 대로 &#x200B;](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
+암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [ 참조에 표시된 대로 ](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
 
 ```yaml
 kind: "LogForwarding"
