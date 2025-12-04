@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2025.11.20 릴리스 정보
-description: 다음은 범용 편집기 2025.11.20 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2025.12.04 릴리스 정보
+description: 다음은 범용 편집기 2025.12.04 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# 범용 편집기 2025.11.20 릴리스 정보 {#release-notes}
+# 범용 편집기 2025.12.04 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2025년 11월 20일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2025년 12월 4일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ ht-degree: 73%
 
 ## 새로운 기능 {#what-is-new}
 
-* 토스트가 새 UI로 마이그레이션되었습니다.
-
-## 얼리 어답터 기능 {#early-adopter}
-
-이들 출시 예정인 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 Adobe 고객 성공 관리자에 이메일을 보내 주십시오.
+* 인증 헤더가 [로컬 개발자 로그인을 위해 비활성화되었습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* 이제 마우스 오른쪽 단추를 클릭하여 [구조화된 트리에서 상황별 메뉴를 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* 핫키가 [중복된 구성 요소에 추가되었습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### 새 RTE {#new-rte}
 
@@ -38,7 +36,6 @@ ht-degree: 73%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* RTE 값의 처리가 단순해졌습니다.
-* 드문 도구 모음 경합 조건이 해결되었습니다.
-* 사용되지 않는 기능 전환이 제거되었습니다.
-* 종속성이 업데이트되었습니다.
+* 캔버스에 RTE가 제대로 저장되지 않는 문제가 해결되었습니다.
+* 콘텐츠 선택기 폴더 트리 클리핑이 수정되었습니다.
+* 이제 추가 작업 중에 `componentId`이(가) 제공됩니다.

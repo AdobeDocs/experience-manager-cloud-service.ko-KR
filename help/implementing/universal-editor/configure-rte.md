@@ -4,9 +4,9 @@ description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 범용 편집기에 대한 RTE 구성 {#configure-rte}
 
 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하는 방법을 이해합니다.
-
->[!NOTE]
->
->이 설명서는 얼리어답터 기능으로 사용할 수 있는 유니버설 편집기용 새 RTE에 적용됩니다. 이 새로운 기능을 테스트하려면 [자세한 내용은 릴리스 정보를 참조하십시오.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## 개요 {#overview}
 
@@ -32,7 +28,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [

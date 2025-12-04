@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
@@ -136,12 +136,6 @@ Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Ex
 >[!TIP]
 >
 >핫 키 `Command-Z` 또는 `Shift-Command-Z`을(를) 사용하여 각각 실행 취소하거나 다시 실행하십시오.
-
-#### 인증 헤더 {#authentication-settings}
-
-[로컬 개발 목적으로 사용자 지정 인증 헤더를 설정](/help/implementing/universal-editor/developer-overview.md#auth-header)해야 하는 경우 인증 헤더 아이콘을 선택하십시오.
-
-![인증 헤더 설정 단추](assets/authentication-header-settings.png)
 
 #### 로컬 개발자 로그인 {#local-developer-login}
 
@@ -265,6 +259,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 * 콘텐츠 트리의 항목을 선택하면 편집기는 해당 콘텐츠를 스크롤하여 선택합니다.
 * 콘텐츠 트리에서 항목을 두 번 클릭하면 편집기가 해당 콘텐츠로 스크롤하여 선택하고 관련 속성도 [속성 모드에서 엽니다.](#properties-mode)
+* 트리에서 항목을 마우스 오른쪽 버튼으로 클릭하면 해당 항목에 대한 적절한 작업이 포함된 컨텍스트 메뉴가 열립니다.
 
 ![콘텐츠 트리](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 ![중복 아이콘](assets/duplicate.png)
 
 복제 단추 [을(를) 탭하거나 클릭하면 선택한 구성 요소가 복제됩니다](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+
+>[!TIP]
+>
+>단축키 `Command+d`를 사용하여 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
 ##### 삭제 {#delete}
 
