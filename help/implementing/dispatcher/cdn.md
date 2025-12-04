@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1768'
 ht-degree: 11%
 
 ---
@@ -157,6 +157,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 ```
 
 이 프로세스에서는 호스트 값, 에지 인증 구성 및 x-forwarded-host 헤더 값과 같은 세부 정보를 확인할 수 있습니다. 또한 일치 항목이 존재하는 경우 에지 키가 설정되었는지 여부와 사용되는 키도 식별합니다.
+
+>[!NOTE]
+>
+>RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
+>
+>* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 

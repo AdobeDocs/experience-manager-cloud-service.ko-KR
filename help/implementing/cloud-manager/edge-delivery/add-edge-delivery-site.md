@@ -4,10 +4,10 @@ description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 95%
 
 ---
 
@@ -58,6 +58,12 @@ ht-degree: 100%
    | **3** | 방금 만든 변경 사항의 가져오기 요청을 Git 저장소에 만든 다음 `main`에 병합하여 코드를 커밋합니다. |
 
 1. **확인**&#x200B;을 클릭합니다.
+
+   >[!NOTE]
+   >
+   >Edge Delivery Services 사이트에서 Helix 인증을 사용하는 경우 확인 문제에 액세스할 수 없습니다. 인증을 일시적으로 비활성화하고 사이트 확인을 완료한 다음 인증을 다시 켭니다.
+
+
 
 저장소가 검증되면 Edge Delivery 사이트 테이블의 상태가 업데이트됩니다. 내부에 흰색 확인 표시가 있는 녹색 원은 상태를 나타냅니다.
 

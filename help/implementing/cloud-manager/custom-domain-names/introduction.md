@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 41%
+source-wordcount: '749'
+ht-degree: 38%
 
 ---
 
@@ -29,6 +29,10 @@ Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝�
 각 웹 사이트에는 `184.33.123.64`와 같이 기계가 읽을 수 있는 고유한 숫자 주소가 연결되어 있습니다. DNS(도메인 이름 시스템)를 사용하면 숫자 주소를 `wknd.com`과 같은 기억할 수 있는 주소로 변환하여 웹 사이트에 사용자 정의 브랜드 도메인을 연결할 수 있습니다.
 
 고객의 기억에 남고 브랜드를 잘 나타내는 도메인 이름을 사이트에 사용하는 것이 좋습니다.
+
+>[!IMPORTANT]
+>
+> adobeaemcloud.com **의 기본 도메인은 SEO 용도로 중요한 콘텐츠를 제공하는 데 사용해서는 안 됩니다**. adobeaemcloud.com 도메인 및 하위 도메인은 크롤링과 인덱싱을 방지하는 [기본 robots.txt](https://cdn.adobeaemcloud.com/robots.txt)를 제공하므로 검색 엔진에서 인덱싱할 수 없습니다. 대신 자체 사용자 정의 도메인을 사용하여 사용자 정의 robots.txt를 제공합니다.
 
 도메인 이름 등록자, 도메인 이름을 관리 및 판매하는 회사 또는 조직에서 도메인 이름을 구입할 수 있습니다. 도메인 이름 등록자는 DNS 서버의 도메인 이름을 관리합니다.
 
