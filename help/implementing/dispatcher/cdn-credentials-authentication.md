@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '2028'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,38 @@ Adobe에서 제공하는 CDN에는 몇 가지 기능과 서비스가 있으며, 
 
 구성 구문을 포함한 이러한 각 요소에 대해서는 아래 해당 섹션에 설명되어 있습니다.
 
-[키를 회전](#rotating-secrets)하는 방법에 대한 섹션이 있습니다. 이는 올바른 보안 방법입니다.
+환경 또는 파이프라인(배포 단계) 암호는 `${{..}}` 구문을 사용하여 참조할 수 있으며, 리터럴 값을 사용할 수 있는 모든 조건 또는 설정에서 사용할 수 있습니다.
 
->[!NOTE]
-> 환경 변수로 정의된 암호는 변경할 수 없는 것으로 간주해야 합니다. 값을 변경하는 대신 새 이름으로 새 암호를 만들고 구성에서 해당 암호를 참조해야 합니다. 그렇게 하지 않으면 신뢰할 수 없는 기밀 업데이트가 발생할 수 있습니다.
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->CDN 구성에서 참조하는 환경 변수는 제거하지 마십시오. 이렇게 하면 CDN 구성 업데이트(예: 규칙 또는 사용자 정의 도메인 및 인증서 업데이트)에 오류가 발생할 수 있습니다.
+다음은 비밀을 사용하여 작업할 때 염두에 두어야 할 몇 가지 지침입니다.
+
+* 환경 암호는 [Cloud Manager 암호 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 배포되어야 합니다. 서비스 적용 필드에서 모두를 선택합니다.
+* 암호 참조는 문자열 내에 보간되지 않습니다(예: `"Token ${{AUTH_TOKEN}}"`이(가) 작동하지 않습니다.
+* 참조된 환경 암호는 구성에서 계속 참조되는 경우 제거해서는 안 됩니다.
+
+  >[!WARNING]
+  >CDN 구성에서 참조하는 환경 변수는 제거하지 마십시오. 이렇게 하면 CDN 구성 업데이트(예: 규칙 또는 사용자 정의 도메인 및 인증서 업데이트)에 오류가 발생할 수 있습니다.
+
+* 비밀은 주기적으로 회전해야 합니다. [키를 회전](#rotating-secrets)하는 방법에 대한 섹션이 있습니다. 이는 올바른 보안 방법입니다.
+
+  >[!NOTE]
+  > 환경 변수로 정의된 암호는 변경할 수 없는 것으로 간주해야 합니다. 값을 변경하는 대신 새 이름으로 새 암호를 만들고 구성에서 해당 암호를 참조해야 합니다. 그렇게 하지 않으면 신뢰할 수 없는 기밀 업데이트가 발생할 수 있습니다.
+
 
 ## 고객 관리 CDN HTTP 헤더 값 {#CDN-HTTP-value}
 
@@ -63,7 +88,7 @@ data:
 
 `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
-자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
+자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
 
 추가 속성은 다음과 같습니다.
 
@@ -183,7 +208,7 @@ data:
 >[!NOTE]
 >제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 openssl rand -hex 32 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
-제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 기본 인증 {#basic-auth}
 
