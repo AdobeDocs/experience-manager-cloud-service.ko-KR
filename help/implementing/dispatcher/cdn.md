@@ -163,7 +163,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
 >
 >* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
