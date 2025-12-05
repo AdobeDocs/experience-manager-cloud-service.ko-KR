@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->또한 [이 클립](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)을 통해 저장소 브라우저를 사용하여 AEM as a Cloud Service을 디버깅하는 방법에 대한 간단한 비디오 소개도 볼 수 있습니다.
+>또한 [이 클립](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ko)을 통해 저장소 브라우저를 사용하여 AEM as a Cloud Service을 디버깅하는 방법에 대한 간단한 비디오 소개도 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 AEM as a Cloud Service Developer Console 또는 저장소 브라우저에 액세스하려면 다음 조건을 충족해야 합니다
 
-AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Console 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)를 참조하십시오.
+AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Console 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)를 참조하십시오.
 
 저장소 브라우저에 액세스하려면 요구 사항은 AEM as a Cloud Service Developer Console(위에 지정됨)와 동일합니다. 특정 인스턴스에 대한 저장소 브라우저 컨텐츠를 보려면 다음과 같이 하십시오.
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service Developer Console에 액세스하려면 [Developer Consol
 
 * 게시 인스턴스: **게시 인스턴스**&#x200B;에 대한 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 해당 제품 프로필 세트가 없으면 사용자는 익명 사용자로 탐색하고 제한된 권한으로 인해 일부 경로가 표시되지 않습니다.
 
-사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)를 참조하세요.
+사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ko)를 참조하세요.
 
 ### 저장소 브라우저 실행 {#launching-the-repository-browser}
 
