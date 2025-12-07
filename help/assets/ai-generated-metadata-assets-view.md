@@ -1,9 +1,9 @@
 ---
 title: AI가 생성한 메타데이터를 통해 콘텐츠 검색 향상
 description: AI가 생성한 메타데이터를 통해 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 * 필요한 최소 AEM 릴리스 버전은 `20626`입니다.
 
-* GenAI 라이더 계약에 서명해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
 ## AI가 생성한 메타데이터 사용 {#using-ai-generated-smart-tags}
 

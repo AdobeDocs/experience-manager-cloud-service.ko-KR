@@ -3,9 +3,9 @@ title: 검색 에이전트 개요
 description: 검색 에이전트를 사용하여 간소화되고 클릭되지 않는 검색 환경을 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다. exp
 * `Nov 1 2025` 폴더에 `WKND` 이후에 수정된 자산을 표시합니다.
 * `lifestyle` 폴더에 `WKND`개의 이미지를 나열합니다.
 
-**해결 방법 및 형식 기반 에셋 검색**
+**형식 기반 자산 검색**
 
-Discovery Agent는 파일 형식이나 최소 해상도와 같은 특정 품질 요구 사항을 충족하는 에셋을 식별할 수 있으므로, 채널 간에 고품질 서비스를 제공하고 재사용할 수 있는 제품 비주얼을 신속하게 찾을 수 있습니다.
+검색 에이전트는 파일 형식과 같은 특정 품질 요구 사항을 충족하는 에셋을 식별하여 사용자가 채널 간에 고품질 게재 및 재사용이 가능한 제품 비주얼을 신속하게 찾을 수 있도록 합니다.
 
 샘플 프롬프트:
 
-최소 2000 픽셀 너비의 제품 포장 PNG 이미지를 찾으십시오.
+제품 패키징 PNG 이미지를 찾아보십시오.
 
 **방향 기반 콘텐츠 검색**
 

@@ -4,10 +4,10 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 77%
+source-wordcount: '1621'
+ht-degree: 74%
 
 ---
 
@@ -50,73 +50,77 @@ ht-degree: 77%
 
 검색된 자산을 `Name`, `Relevance`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다. 기본적으로 검색된 자산은 `Relevance`를 기준으로 정렬됩니다.
 
-## 사용자 정의 필터 관리 {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**필요한 권한:**  `Can Edit`, `Owner` 또는 관리자.
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Assets 보기를 사용하면 사용자 인터페이스에 사용자 지정 필터를 추가할 수도 있습니다. 그런 다음 [표준 필터](#refine-search-results) 외에 이러한 사용자 정의 필터를 적용하여 검색 결과를 구체화할 수 있습니다.
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>사용자 정의 필터 이름</strong></th>
-      <th><strong>설명</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>제목</td>
-      <td>자산 제목을 사용하여 자산을 필터링합니다. 대/소문자 구분 검색 기준에 지정하는 제목은 결과에 표시할 자산의 정확한 제목과 일치해야 합니다.</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>이름</td>
-      <td>자산 필터 이름을 사용하여 자산을 필터링합니다. 대/소문자 구분 검색 기준에 지정하는 이름은 결과에 표시할 자산의 정확한 파일 이름과 일치해야 합니다.</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>자산 크기</td>
-      <td>결과에 표시할 자산의 검색 기준에서 크기 범위를 바이트 단위로 정의하여 자산을 필터링합니다.</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>예측된 태그</td>
-      <td>자산 스마트 태그를 사용하여 자산을 필터링합니다. 대/소문자 구분 검색 기준에 지정하는 스마트 태그 이름은 결과에 표시할 자산의 정확한 스마트 태그 이름과 일치해야 합니다. 검색 기준에 여러 스마트 태그를 지정할 수 없습니다.</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### 사용자 정의 필터 추가 {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-사용자 정의 필터를 추가하려면:
+To add custom filters:
 
-1. **[!UICONTROL 필터]**&#x200B;를 클릭합니다.
+1. Click **[!UICONTROL Filters]**. 
 
-1. **[!UICONTROL 사용자 정의 필터]** 섹션에서 **[!UICONTROL 편집]** 또는 **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![사용자 정의 필터 추가](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. **[!UICONTROL 사용자 정의 필터 관리]** 대화 상자의 기존 필터 목록에서 추가해야 하는 필터를 선택합니다. **[!UICONTROL 사용자 정의 필터]**&#x200B;를 선택하여 모든 필터를 선택합니다.
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에 필터를 추가합니다.
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### 사용자 정의 필터 제거 {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-사용자 정의 필터를 제거하려면:
+To remove custom filters:
 
-1. **[!UICONTROL 필터]**&#x200B;를 클릭합니다.
+1. Click **[!UICONTROL Filters]**. 
 
-1. **[!UICONTROL 사용자 정의 필터]** 섹션에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. **[!UICONTROL 사용자 정의 필터 관리]** 대화 상자의 기존 필터 목록에서 제거해야 하는 필터를 선택 취소합니다.
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에서 필터를 제거합니다.
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## AI 검색 {#ai-search}
 
@@ -193,13 +197,17 @@ AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 
 
 1. **새 자산으로 저장**&#x200B;을 클릭하여 자산을 저장합니다.
 
-### 자산 업로드 {#upload-assets-firefly}
+<!--
 
-생성된 자산을 자산 저장소에 업로드하려면 다음 작업을 수행하십시오.
+### Upload assets {#upload-assets-firefly}
 
-1. **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
-1. 자산을 업로드해야 하는 자산 폴더를 선택하고 **[!UICONTROL 폴더 선택]**&#x200B;을 클릭합니다.
-   ![자산 업로드](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## 저장된 검색 {#saved-search}
 
@@ -380,13 +388,13 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
 

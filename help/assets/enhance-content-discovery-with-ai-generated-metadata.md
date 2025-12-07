@@ -3,10 +3,10 @@ title: 관리 보기에서 AI 생성 메타데이터를 통해 콘텐츠 검색 
 description: 관리 보기에서 AI 생성 메타데이터를 사용하여 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 9%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
@@ -27,8 +27,6 @@ AI는 수동 입력에 의존하는 대신 디지털 에셋에 설명 태그를 
 AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 * 필요한 최소 AEM 릴리스 버전은 `20626`입니다.
-
-* GenAI 라이더 계약에 서명해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
 ## AI 생성 제목 구성 {#configure-ai-generated-titles}
 
@@ -71,20 +69,12 @@ AI 생성 제목을 구성하려면 다음을 수행합니다.
 
 ## AI 생성 메타데이터 비활성화 {#disable-ai-generated-metadata}
 
-폴더 수준에서 AI 생성 메타데이터를 비활성화할 수 있습니다. 모든 하위 폴더는 상위 폴더에서 속성을 상속합니다.
+AI 생성 메타데이터를 비활성화하려면
 
-폴더 수준에서 AI 생성 메타데이터를 비활성화하려면 다음을 수행합니다.
+1. **[!UICONTROL 도구 > Assets > Assets 구성 > 스마트 태그 개선 구성으로 이동합니다]**.
 
-1. **[!UICONTROL Adobe Experience Manager > Assets > 파일]**(으)로 이동합니다.
+1. **[!UICONTROL 스마트 태그 개선 사용 안 함]**&#x200B;을 선택합니다.
 
-1. 폴더를 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 저장]** 을 클릭합니다.
 
-1. **[!UICONTROL 자산 처리]** 탭에서 **[!UICONTROL 이미지에 대한 스마트 태그 개선]** 폴더로 이동합니다. 드롭다운 목록에서 다음 값 중 하나를 선택합니다.
-
-   * 상속 - 폴더는 상위 폴더에서 활성화 또는 비활성화 옵션을 상속합니다.
-
-   * 활성화 - 선택한 폴더에 대해 AI가 생성한 메타데이터를 활성화합니다.
-
-   * 비활성화 - 선택한 폴더에 대해 AI 생성 메타데이터를 비활성화합니다.
-
-     ![AI 생성 메타데이터 비활성화](assets/disable-ai-generated-metadata.png)
+AEM Assets에 업로드하는 새 에셋 또는 폴더에 대해 AI 생성 메타데이터가 비활성화됩니다. 이미 AI가 생성한 메타데이터 필드가 있는 기존 에셋 또는 폴더에는 이러한 필드가 계속 표시됩니다.
