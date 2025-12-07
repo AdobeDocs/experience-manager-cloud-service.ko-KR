@@ -44,9 +44,9 @@ ht-degree: 0%
 
 ## [!DNL Assets View]에 UI 확장성 구성 요소 추가 {#ui-extensibility-in-assets-view}
 
-1. UI 확장 및 [ 프레임워크에 대한 필수 정보는 ](https://developer.adobe.com/uix/docs/getting-started/)시작하기[!DNL Adobe App Builder]를 참조하십시오. UI 확장성을 통해 [!DNL Adobe Experience Cloud services] 내에서 사용자 지정 논리와 UI를 통합하는 방법을 알아보고 UI 확장을 구현하기 위한 아키텍처 및 워크플로를 이해합니다.
+1. UI 확장 및 [&#x200B; 프레임워크에 대한 필수 정보는 &#x200B;](https://developer.adobe.com/uix/docs/getting-started/)시작하기[!DNL Adobe App Builder]를 참조하십시오. UI 확장성을 통해 [!DNL Adobe Experience Cloud services] 내에서 사용자 지정 논리와 UI를 통합하는 방법을 알아보고 UI 확장을 구현하기 위한 아키텍처 및 워크플로를 이해합니다.
 1. 로컬 환경 설정, 로컬 미리 보기, 게시 및 관리를 포함하여 UI 확장성에 대한 일반 정보는 [안내서](https://developer.adobe.com/uix/docs/guides/)를 참조하십시오.
-1. [의 UI 확장을 개발하는 데 필요한 기본 사항을 이해하려면 ](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)확장을 만드는 일반적인 개념[!DNL AEM Assets View]을 참조하십시오.
+1. [의 UI 확장을 개발하는 데 필요한 기본 사항을 이해하려면 &#x200B;](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)확장을 만드는 일반적인 개념[!DNL AEM Assets View]을 참조하십시오.
 1. 사용자 지정 사이드 패널을 [!DNL Assets View] 인터페이스에 추가합니다. 호스트 응용 프로그램([!DNL Assets View])은 이러한 패널을 관리하여 전환 및 딥링크와 같은 UI 상호 작용을 처리합니다. 확장은 `aem/assets/details/1` 확장 지점을 사용하여 패널 ID, 제목 및 콘텐츠 URL과 같은 속성을 지정하는 사용자 지정 패널을 통합합니다. 개발자는 `getPanels()` 메서드로 사용자 지정 패널을 등록하고 사용자 지정 콘텐츠를 표시하도록 빌드 경로를 설정합니다. API 참조 및 코드 예제를 포함한 자세한 구현은 [자세히 보기](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/)를 참조하십시오.
 1. 로컬 환경을 설정하고 첫 번째 UI 확장을 만들어 [!DNL Assets View]에서 UI 확장을 개발하는 과정을 직접 경험하십시오. 자세한 내용은 [단계별 AEM Assets 보기 확장 개발](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)을 참조하십시오.
 1. AIO CLI를 사용하여 애플리케이션을 설정하여 기본 확장 구조 및 필수 코드를 생성합니다. 자세한 내용은 [코드 생성 대상 [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)을 참조하십시오.
