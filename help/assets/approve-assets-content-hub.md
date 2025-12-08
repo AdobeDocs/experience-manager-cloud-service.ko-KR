@@ -2,10 +2,10 @@
 title: Content Hub에 대한 자산 승인
 description: Assets as a Cloud Service에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 16%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Assets as a Cloud Service을 사용하여 에셋을 승인하여 에셋 관�
 
 * AEM Assets as a Cloud Service 액세스
 
-* 에셋에 대한 [에셋 속성](/help/assets/manage-organize-assets-view.md##manage-asset-status)에서 사용할 수 있는 **[!UICONTROL 상태]** 필드를 편집할 수 있도록 에셋 메타데이터를 편집할 수 있는 쓰기 권한입니다.
+* 에셋에 대한 **[!UICONTROL 에셋 속성]**&#x200B;에서 사용할 수 있는 [상태](/help/assets/manage-organize-assets-view.md##manage-asset-status) 필드를 편집할 수 있도록 에셋 메타데이터를 편집할 수 있는 쓰기 권한입니다.
 
 ## Content Hub에 대한 자산 승인{#approve-assets-for-content-hub}
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service 내의 Assets 보기를 사용하여 에셋 상태를 `ap
 
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 자산 상태를 `approved`(으)로 선택합니다.
+1. **[!UICONTROL 기본]** 탭의 `approved`상태&#x200B;**[!UICONTROL 드롭다운 목록에서 자산 상태를]**(으)로 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3433172)
@@ -83,10 +83,6 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
    사용 가능한 옵션에 대한 자세한 내용은 [승인된 자산의 기본 승인 대상 및 게시 대상](#default-approval-target-options-publish-destinations)을 참조하십시오.
 
-   >[!NOTE]
-   >
-   >승인 대상을 설정하는 것은 제한된 가용성 기능입니다. 지원 티켓을 생성하여 활성화하거나 비활성화할 수 있습니다. OpenAPI가 활성화된 Dynamic Media가 있는 경우 기본적으로 활성화됩니다.
-
    ![승인 상태](/help/assets/assets/approval-status-delivery.png)
 
 1. 다른 자산 속성을 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -103,9 +99,9 @@ Assets 보기를 사용하면 자산 세부 사항 페이지에서 사용할 수
 
 | OpenAPI를 사용하는 Dynamic Media | Content Hub | 승인 대상 드롭다운 목록이 표시됩니까? | 승인된 자산의 기본 승인 대상 | 대상 게시 |
 | --- | --- | --- | --- |---|
-| 활성화됨 | 활성화됨 | 예 | 제공 | OpenAPI 및 Content Hub을 사용하는 Dynamic Media |
+| 활성화됨 | 활성화됨 | 예 | 게재 | OpenAPI 및 Content Hub을 사용하는 Dynamic Media |
 | 활성화되지 않음 | 활성화됨 | 예 | Content Hub | Content Hub |
-| 활성화됨 | 활성화되지 않음 | 예 | 제공 | OpenAPI를 사용하는 Dynamic Media |
+| 활성화됨 | 활성화되지 않음 | 예 | 게재 | OpenAPI를 사용하는 Dynamic Media |
 | 활성화되지 않음 | 활성화되지 않음 | 아니요 | N/A | N/A |
 
 ## 관리자 보기에서 새로 수집된 자산에 대한 승인 자동화 {#automate-approval-newly-ingested-assets}
@@ -121,23 +117,23 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;로 이동합니다.
 1. 페이지 오른쪽 상단의 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 프로필 제목을 추가하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 메타데이터 프로필이 정상적으로 생성되었습니다.
-1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**&#x200B;을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;**양식이 열리고**&#x200B;[!UICONTROL 기본&#x200B;]&#x200B;**탭이 강조 표시됩니다.**
+1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;**[!UICONTROL 양식이 열리고]**기본&#x200B;**[!UICONTROL 탭이 강조 표시됩니다.]**
 1. 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 한 줄 텍스트 필드]**&#x200B;를 양식의 메타데이터 섹션으로 끌어다 놓습니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
    1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) _승인된 Assets_(으)로 변경합니다.
-   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다./jcr:content/metadata/dam:status_.
+   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _로 업데이트하십시오./jcr:content/metadata/dam :status_
    1. 기본값을 _승인됨_(으)로 변경합니다.
 
 1. 6단계와 마찬가지로 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 한 줄 텍스트 필드]**&#x200B;를 양식의 메타데이터 섹션으로 끌어옵니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
    1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) _활성화 대상_(으)로 변경합니다.
-   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다./jcr:content/metadata/dam:activationTarget_.
+   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _로 업데이트하십시오./jcr:content/metadata/dam :activationTarget_
    1. 기본값을 _contenthub_(으)로 변경합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 새로 만든 메타데이터 프로필을 선택합니다.
 1. 맨 위의 작업 표시줄에서 **[!UICONTROL 폴더에 메타데이터 프로필 적용]**&#x200B;을 클릭합니다.
-1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
+1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**을 클릭합니다.
    <br> 전체 폴더에 대한 권한이 승인을 위해 설정되었으며 이 폴더에 업로드된 모든 자산이 자동으로 승인됩니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)
