@@ -63,7 +63,7 @@ ht-degree: 10%
 대화형 통신(IC) 템플릿에 컨텐츠 또는 레이아웃 잠금을 적용하려면 아래 단계를 따르십시오.
 
 1. 템플릿 열기
-템플릿을 열거나 만들려면 [대화형 통신 템플릿 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) 안내서를 따르십시오.
+템플릿을 열거나 만들려면 [대화형 통신 템플릿 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template) 안내서를 따르십시오.
 
 1. 구성 요소 선택
 제한할 구성 요소(텍스트 상자, 이미지 또는 하위 양식)를 클릭합니다.

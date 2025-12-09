@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM) Forms의 **대화형 통신(IC) 편집기**&#x200B
 
 ### 브라우저 확인
 
-지원되는 브라우저 및 클라이언트 플랫폼을 확인하려면 연결된 문서 [지원되는 클라이언트 플랫폼](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)을 참조하세요.
+지원되는 브라우저 및 클라이언트 플랫폼을 확인하려면 연결된 문서 [지원되는 클라이언트 플랫폼](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/supported-platforms)을 참조하세요.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ IC 편집기 기능에 대한 액세스는 [AEM 내의 사용자 역할](https:/
 | **양식 작성자** | 대화형 통신을 만들고 편집합니다. | IC 만들기, 편집, 미리 보기 및 게시 |
 | **템플릿 작성자** | 대화형 커뮤니케이션용 재사용 가능한 템플릿을 디자인합니다. | 템플릿을 만들고 잠그고 레이아웃을 정의합니다. |
 | **관리자** | 사용자 액세스, 권한 및 구성을 관리합니다. | 역할 할당, 템플릿 관리, IC 게시 |
-| **FDM 작성자** | 데이터 통합을 위해 [FDM(양식 데이터 모델)을 만들고 관리합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models). | 데이터 소스 및 모델을 생성, 편집 및 구성합니다. |
+| **FDM 작성자** | 데이터 통합을 위해 [FDM(양식 데이터 모델)을 만들고 관리합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models). | 데이터 소스 및 모델을 생성, 편집 및 구성합니다. |
 
 >[!NOTE]
 >
