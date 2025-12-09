@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '2390'
+source-git-commit: 0f372f4ddc0ff323a3beedacc84a8a59de8e6d2a
+workflow-type: tm+mt
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---
@@ -246,8 +246,6 @@ ht-degree: 100%
 ![규칙 편집기](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
 >[!IMPORTANT]
->
-> **얼리 액세스 기능:** 규칙 편집기는 특별 액세스 권한이 필요합니다. 이 기능을 활성화하려면 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 문의하십시오.
 >
 > **자세히 알아보기:** 자세한 지침은 [규칙 편집기 안내서](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)를 참조하십시오.
 
