@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 11%
@@ -27,7 +27,7 @@ ht-degree: 11%
 
 수천 명의 고객에게 은행 거래 명세서, 보험 증권 또는 공과금 고지서를 보내야 한다고 상상해 보십시오. 각 속성에는 레이아웃은 동일하지만 개인화된 데이터가 있습니다. 대화형 통신(IC)을 통해 이를 효율적으로 수행할 수 있습니다.
 
-![IC 문서 찾기](/help/forms/interactive-communication/assets/introimg.png)
+![IC 문서 찾기](/help/forms/interactive-communication/assets/introduction.png)
 
 이러한 문서를 수동으로 작성하는 것은 시간이 많이 소요될 수 있으며 특히 개인화 및 데이터 통합이 필요한 경우 종종 불일치가 발생할 수 있습니다. 대화형 통신 편집기를 사용하면 대화형 통신을 만드는 프로세스를 간소화할 수 있습니다.
 

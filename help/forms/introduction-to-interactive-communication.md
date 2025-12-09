@@ -1,5 +1,5 @@
 ---
-title: 대화형 통신 소개
+title: 인터랙티브 커뮤니케이션 소개
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
@@ -7,12 +7,13 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
+
 
 # 대화형 통신
 
@@ -26,7 +27,6 @@ Windows 컴퓨터에만 설치할 수 있는 AEM Forms 데스크톱 Designer과 
 
 금융 기관에서 계좌 명세서를 생성하고 정부 기관에 통보하는 절차를 간소화하는 Interactive Communications는 간편하고 효율성이 높은 고품질, 보안 및 법적 규정을 준수하는 서신을 작성하는 데 유용한 도구입니다.
 
-
 ## 핵심 기능
 
 대화형 통신 편집기의 핵심 기능은 다음과 같습니다.
@@ -39,7 +39,7 @@ Windows 컴퓨터에만 설치할 수 있는 AEM Forms 데스크톱 Designer과 
 | 버전 제어 | 변경 내용 추적 및 문서 기록 유지 | ✅ 사용 가능 |
 | 템플릿 지원 | 효율적인 문서 생성을 위해 처음부터 새로 만들거나 템플릿을 사용합니다. | ✅ 사용 가능 |
 | 클라우드 통합 | AEM Forms as a Cloud Service에서 직접 문서 편집 | ✅ 사용 가능 |
-| 문서 단편 | 여러 문서에서 모듈식 콘텐츠 블록을 재사용하여 일관성과 효율성 향상 | ✅ 사용 가능 |
+| 문서 조각 | 여러 문서에서 모듈식 콘텐츠 블록을 재사용하여 일관성과 효율성 향상 | ✅ 사용 가능 |
 | 인라인 데이터 바인딩 | 외부 구성 없이 실시간 개인화를 위해 콘텐츠 내에서 직접 데이터 바인딩 | ✅ 사용 가능 |
 | 여러 구성 요소 | 다양한 구성 요소를 활용하여 복잡하고 매력적인 문서 생성 | ✅ 사용 가능 |
 | 다중 채널 디자인 | 규정 준수를 통해 인쇄 및 디지털 형식 전반에 통합 환경 구축 | 🌓 부분적으로 사용 가능 |

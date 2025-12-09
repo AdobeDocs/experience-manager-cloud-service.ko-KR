@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.9.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 89%
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -117,15 +117,15 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 * **인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기**
 
-  사용자는 데이터 없는, 로컬 JSON 데이터 파일이 있는 또는 데이터 모델의 데이터가 있는 인터랙티브 커뮤니케이션 PDF를 미리 볼 수 있으므로 데이터 기반의 유연한 테스트가 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)를 참조하십시오.
+  사용자는 데이터 없는, 로컬 JSON 데이터 파일이 있는 또는 데이터 모델의 데이터가 있는 인터랙티브 커뮤니케이션 PDF를 미리 볼 수 있으므로 데이터 기반의 유연한 테스트가 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션 편집기에서 PDF 미리 보기](/help/forms/interactive-communication/generate-pdf-preview.md)를 참조하십시오.
 
 * **인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원**
 
-  사용자 정의 글꼴 기능을 사용하면 인터랙티브 커뮤니케이션에 사용자 정의 글꼴 또는 조직에서 승인한 글꼴을 포함할 수 있으므로 디바이스 및 플랫폼 전반에서 일관적이고 브랜드화된 PDF 렌더링이 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)을 참조하십시오.
+  사용자 정의 글꼴 기능을 사용하면 인터랙티브 커뮤니케이션에 사용자 정의 글꼴 또는 조직에서 승인한 글꼴을 포함할 수 있으므로 디바이스 및 플랫폼 전반에서 일관적이고 브랜드화된 PDF 렌더링이 가능합니다. 자세한 내용은 [인터랙티브 커뮤니케이션에서 사용자 정의 글꼴 지원](/help/forms/interactive-communication/add-custom-fonts.md)을 참조하십시오.
 
 * **인터랙티브 커뮤니케이션 가져오기 및 내보내기**
 
-  이 기능을 사용하면 다양한 환경에서 인터랙티브 커뮤니케이션을 마이그레이션하고 재사용할 수 있습니다. 이제 인터랙티브 커뮤니케이션을 연관된 조각 및 데이터 모델과 함께 한 환경에서 내보내고 다른 환경으로 가져올 수 있습니다. 자세한 내용은 [인터랙티브 커뮤니케이션 가져오기 및 내보내기](/help/forms/interactive-communication/import-and-export-interactive-communications.md)를 참조하십시오.
+  이 기능을 사용하면 다양한 환경에서 인터랙티브 커뮤니케이션을 마이그레이션하고 재사용할 수 있습니다. 이제 인터랙티브 커뮤니케이션을 연관된 조각 및 데이터 모델과 함께 한 환경에서 내보내고 다른 환경으로 가져올 수 있습니다. 자세한 내용은 [인터랙티브 커뮤니케이션 가져오기 및 내보내기](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)를 참조하십시오.
 
 * **규칙 편집기 개선 사항**
 
@@ -166,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9월 25일에 제한 공개 기능으로 사용 가능합니다.
->&#x200B;>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
+>프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 
 ### Eclipse용 AEM 개발자 도구 신규 릴리스 {#aem-develeper-tools-for-eclipse}
 
