@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 
 | 요청 유형 | 콘텐츠 요청 | 설명 |
 | --- | --- | --- |
-| HTTP 코드 100-299 | 포함됨 | HTML 또는 JSON 콘텐츠의 전체 또는 일부를 반환하는 성공적인 요청을 포함합니다.<br>HTTP 코드 206: 이러한 요청은 전체 콘텐츠의 일부만 전달합니다. 예를 들어, 비디오 또는 큰 이미지가 여기에 해당합니다. 부분 콘텐츠 요청은 페이지 콘텐츠를 렌더링하는 데 사용되는 HTML 또는 JSON 응답의 일부를 전달할 때 포함됩니다. |
+| HTTP 코드 100-299 | 포함됨 | HTML 또는 JSON 콘텐츠의 전체 또는 일부를 반환하는 성공적인 요청을 포함합니다.<br>HTTP 코드 206: 이러한 요청은 전체 콘텐츠의 일부만 전달합니다. 부분 요청은 페이지 콘텐츠를 렌더링하는 데 사용되는 HTML 또는 JSON 응답의 일부를 전달할 때 포함됩니다. |
 | 자동화를 위한 HTTP 라이브러리 | 포함됨 | 페이지 콘텐츠를 검색하는 도구 또는 라이브러리에서 만든 요청입니다. 예: <br>· Amazon CloudFront<br>· Apache Http 클라이언트<br>· 비동기 HTTP 클라이언트<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub 노드 가져오기<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ 클라이언트<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Python 요청<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br> gitHub 노드 가져오기<br>· Reactor Netty |
 | 모니터링 및 상태 확인 도구 | 포함됨 | 페이지의 상태 또는 가용성을 모니터링하는 데 사용되는 요청입니다.<br>제외된 콘텐츠 요청의 [유형](#excluded-content-request)을 참조하세요.<br>예:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(호환 가능; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`개 요청 | 포함됨 | 고객이 콘텐츠를 미리 로드하거나 미리 가져오면(예: `<link rel="prefetch">` 사용) 시스템에서 해당 서버측 요청을 계산합니다. 미리 가져온 페이지 수에 따라 이 접근 방식으로 트래픽이 증가할 수 있습니다. |
