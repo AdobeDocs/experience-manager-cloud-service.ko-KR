@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ ht-degree: 98%
 1. **실행 중인 워크플로**&#x200B;는 실행 중인 워크플로의 수와 상태를 보여 줍니다. 예를 들어 주어진 이미지에 **실행 중인 워크플로**&#x200B;의 수와 AEM 인스턴스의 **상태**&#x200B;가 표시됩니다.
 
    * **상태: 정상**
-
      ![상태-정상](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **상태: 비정상**
-
      ![상태-비정상](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. 워크플로 인스턴스의 **상태 세부 정보**&#x200B;를 알아보려면 **세부 정보**&#x200B;를 클릭하여 **실행 중인 워크플로 인스턴스**&#x200B;의 수, **완료된 워크플로 인스턴스**, **중단된 워크플로 인스턴스**, **실패한 워크플로 인스턴스** 등을 표시합니다. 예를 들어 다음은 **상태 세부 정보**
+1. 워크플로 인스턴스의 **상태 세부 정보**&#x200B;를 알아보려면 **세부 정보**&#x200B;를 클릭하여 **실행 중인 워크플로 인스턴스**&#x200B;의 수, **완료된 워크플로 인스턴스**, **중단된 워크플로 인스턴스**, **실패한 워크플로 인스턴스** 등을 표시합니다. 예를 들어, 아래는 **상태 세부 정보**&#x200B;를 보여주는 이미지들입니다.
 
    * (**상태 세부 정보: 정상**
-
      ![상태-세부 정보-정상](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **상태 세부 정보: 비정상**)를 보여 주는 해당 이미지입니다.
-
      ![상태-세부 정보-비정상](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
@@ -116,7 +112,7 @@ ht-degree: 98%
 워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
 
 * **실패 세부 정보**
-**실패 메시지**, **단계 및 &#x200B;** 실패 스택**&#x200B;을 표시하는 창을 엽니다.
+**실패 메시지**, **단계 및 **실패 스택**&#x200B;을 표시하는 창을 엽니다.
 
 * **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
 
@@ -141,7 +137,7 @@ ht-degree: 98%
 
 여러 서비스 구성을 생성하여 서로 다른 기준을 충족하는 워크플로 인스턴스를 제거할 수도 있습니다. 예를 들어 특정 워크플로 모델의 인스턴스가 예상 시간보다 오래 실행될 때 해당 인스턴스를 제거하는 구성을 생성할 수 있습니다. 저장소 크기를 최소화하기 위해 일부 날이 지난 후 완료된 모든 워크플로를 제거하는 다른 구성을 생성할 수도 있습니다.
 
-서비스를 구성하려면 [OSGi 구성 파일](/help/implementing/deploying/configuring-osgi.md)을 참고하여 OSGi 구성 파일을 구성할 수 있습니다. 다음 표에서는 두 가지 방법에 필요한 속성을 설명합니다.
+서비스를 구성하려면 [OSGi 구성 파일](/help/implementing/deploying/configuring-osgi.md)을 참고하여 OSGi 구성 파일을 구성할 수 있습니다. 다음 테이블에서는 두 가지 방법에 필요한 속성을 설명합니다.
 
 >[!NOTE]
 >저장소에 구성을 추가하는 경우 서비스 PID는 다음과 같습니다.
@@ -149,43 +145,18 @@ ht-degree: 98%
 >이 서비스는 공장 서비스이므로 `sling:OsgiConfig` 노드의 이름에는 다음과 같은 식별자 접미사가 필요합니다.
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>속성 이름 (웹 콘솔)</th>
-   <th>OSGi 속성 이름</th>
-   <th>설명</th>
-  </tr>
-  <tr>
-   <td>작업 이름</td>
-   <td>scheduledpurge.name</td>
-   <td>예약된 제거의 설명적인 이름입니다.</td>
-  </tr>
-  <tr>
-   <td>워크플로 상태</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>제거할 워크플로 인스턴스의 상태입니다. 다음은 유효한 값입니다.</p>
-    <ul>
-     <li>완료됨: 완료된 워크플로 인스턴스가 제거됩니다.</li>
-     <li>실행 중: 실행 중인 워크플로 인스턴스가 제거됩니다.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>제거 모델</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>제거할 워크플로 모델의 ID입니다. 이 ID는 모델 노드로의 경로입니다(예:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br />). 값을 지정하지 않으면 모든 워크플로 모델의 인스턴스가 제거됩니다.</p> <p>여러 모델을 지정하려면 웹 콘솔에서 “+” 버튼을 클릭하십시오. </p> </td>
-  </tr>
-  <tr>
-   <td>워크플로 수명</td>
-   <td>scheduledpurge.daysold</td>
-   <td>제거할 워크플로 인스턴스의 수명(일)입니다.</td>
-  </tr>
- </tbody>
-</table>
+| 속성 이름 (웹 콘솔) | OSGi 속성 이름 | 설명 |
+|--- |--- |--- |
+| 작업 이름  | `scheduledpurge.name` | 예약된 제거의 설명적인 이름입니다. |
+| 워크플로 상태 | `scheduledpurge.workflowStatus` | 제거할 워크플로 인스턴스의 상태입니다. 다음 값이 유효합니다.<br><br>- 완료: 완료된 워크플로 인스턴스가 제거됩니다.<br>- 실행 중: 실행 중인 워크플로 인스턴스가 제거됩니다. |
+| 제거 모델 | `scheduledpurge.modelIds` | 제거할 워크플로 모델의 ID입니다.<br>ID는 모델 노드의 경로입니다(예:<br>). `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> 값을 지정하지 않으면 모든 워크플로 모델의 인스턴스가 제거됩니다.<br>여러 모델을 지정하려면 웹 콘솔에서 `+` 단추를 클릭하십시오. |
+| 워크플로 수명 | `scheduledpurge.daysold` | 제거할 워크플로 인스턴스의 수명(일)입니다. |
+| 워크플로 페이로드 패키지 | `scheduledpurge.purgePackagePayload` | 페이로드 패키지를 제거할지 여부를 나타냅니다. `true` 또는 `false`. |
+
 
 ## 받은 편지함의 최대 크기 설정 {#setting-the-maximum-size-of-the-inbox}
 
-**Adobe Granite 워크플로 서비스**&#x200B;를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. [저장소에 OSGi 구성 추가](/help/implementing/deploying/configuring-osgi.md)를 참조하십시오. 다음 표는 구성할 속성을 설명합니다.
+**Adobe Granite 워크플로 서비스**&#x200B;를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. [저장소에 OSGi 구성 추가](/help/implementing/deploying/configuring-osgi.md)를 참조하십시오. 다음 테이블은 구성할 속성을 설명합니다.
 
 >[!NOTE]
 >저장소에 구성을 추가하는 경우 서비스 PID는 다음과 같습니다.
@@ -203,7 +174,7 @@ ht-degree: 98%
 
 워크플로 모델 수준에서는 모델(및 런타임 인스턴스)에 메타데이터의 외부 스토리지가 있음을 나타내는 플래그가 제공됩니다. 워크플로 변수는 외부 스토리지로 표시된 모델의 워크플로 인스턴스에 대해 JCR에서 유지되지 않습니다.
 
-*userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
+*userMetadataPersistenceEnabled* 속성이 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*(으)로 유지됩니다.
 
 아래 일러스트레이션에서는 워크플로에 플래그를 설정하는 방법을 보여 줍니다.
 
