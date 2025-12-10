@@ -48,7 +48,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
