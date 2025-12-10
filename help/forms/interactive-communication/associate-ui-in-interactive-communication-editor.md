@@ -4,9 +4,9 @@ description: 고객용 에이전트가 개인화된 호환 통신을 생성할 �
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 56e4195016c06177822ea31aa87ed4dfa24dc748
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ Associate UI는 각각 고유한 책임이 있는 세 개의 핵심 역할로 �
 
 >[!NOTE]
 >
-> 연결에 지원되는 구성 요소.
+> 연결에 지원되는 구성 요소: 날짜 필드, 숫자 필드, 텍스트 필드.
 
 ### IC 만들기
 
