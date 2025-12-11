@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 30%
+source-wordcount: '2054'
+ht-degree: 29%
 
 ---
 
@@ -29,6 +29,8 @@ ht-degree: 30%
 >
 >Adobe은 성능 저하 등의 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 오버라이드할 수 있는 권한을 보유합니다.
 
+### 유지 관리 작업 {#maintenance-tasks}
+
 다음 표는 사용 가능한 유지 관리 작업을 보여 줍니다.
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ ht-degree: 30%
   <tr>
     <td>버전 삭제</td>
     <td>고객</td>
-    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>고객</td>
-    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ ht-degree: 30%
     <td>고객</td>
     <td>
     <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe 프로젝트 제거 구성</a>에 대한 <b>OSGi 속성</b> 목록을 참조하십시오.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe 프로젝트 제거 구성</a>에 대한 <b>OSGi 속성</b> 목록을 참조하십시오.</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### 유지 관리 창 구성 {#maintenance-window-configurations}
+
+다음 표는 사용 가능한 유지 관리 창 구성을 보여 줍니다.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ ht-degree: 30%
     </tbody>
 </table>
 
-**위치**:
+### 위치 {#locations}
 
 * 일별 - /apps/settings/granite/operations/maintenance/granite_daily
 * 주별 - /apps/settings/granite/operations/maintenance/granite_weekly
 * 월별 - /apps/settings/granite/operations/maintenance/granite_monthly
 
-**코드 샘플**:
+### 코드 샘플 {#code-samples}
 
-코드 샘플 1 (일별)
+**코드 샘플 1(매일)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ ht-degree: 30%
  />
 ```
 
-코드 샘플 2 (주별)
+**코드 샘플 2(주별)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ ht-degree: 30%
    windowStartTime="14:30"/>
 ```
 
-코드 샘플 3 (월별)
+**코드 샘플 3(월별)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ ht-degree: 30%
 > 
 >마찬가지로, 구성 파일에 감사 로그 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 않아야 합니다.
 
-**1** 이름이 `mt.yaml`이거나 유사한 파일을 만듭니다.
+1. `mt.yaml` 또는 유사한 파일을 만듭니다.
 
-**2** `config`구성 파이프라인 사용[에 설명된 대로 파일을 &#x200B;](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. `config`구성 파이프라인 사용[에 설명된 대로 파일을 ](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
-**3** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
+1. 다음을 포함하는 구성 파일에서 속성을 선언합니다.
 
-* 데이터 노드 위의 몇 가지 속성 — 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *MaintenanceTasks*&#x200B;이고 버전은 *1*(으)로 설정해야 합니다.
+   * 데이터 노드 위의 몇 가지 속성 — 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *MaintenanceTasks*&#x200B;이고 버전은 *1*(으)로 설정해야 합니다.
 
-* `versionPurge` 및 `auditLogPurge` 개체가 모두 있는 데이터 개체입니다.
+   * `versionPurge` 및 `auditLogPurge` 개체가 모두 있는 데이터 개체입니다.
 
-아래 `versionPurge` 및 `auditLogPurge` 개체의 정의 및 구문을 참조하십시오.
+   아래 `versionPurge` 및 `auditLogPurge` 개체의 정의 및 구문을 참조하십시오.
 
-구성을 다음 예제와 유사하게 구성합니다.
+   구성을 다음 예제와 유사하게 구성합니다.
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-구성이 유효하려면 다음 사항에 유의하십시오.
+   구성이 유효하려면 다음 사항에 유의하십시오.
 
-* 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
-* 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
+   * 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
+   * 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
 
-**4** - [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
+1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
 ### 버전 삭제 {#version-purge}
 
@@ -308,7 +314,6 @@ data:
 | maximumVersion | 5 | 0(제한 없음) | 예 | 정수 | n번째 최신 버전보다 오래된 버전은 모두 제거됩니다. 값이 0이면 버전 수에 따라 제거가 수행되지 않습니다. |
 | 최소 버전 | 1 | 1 | 예 | 정수 | 나이에 상관없이 유지되는 최소 버전 수. 최소 1개의 버전은 항상 유지되며 값은 1 이상이어야 합니다. |
 | retainLabelledVersioned | false | false | 예 | 부울 | 명시적으로 레이블이 지정된 버전을 제거에서 제외할지 여부를 결정합니다. 더 나은 저장소 최적화를 위해 이 값을 false로 설정하는 것이 좋습니다. |
-
 
 **속성 상호 작용**
 
@@ -366,7 +371,6 @@ minimumVersions = 1
 허용되는 속성은 다음과 같습니다.
 
 *default*&#x200B;을(를) 나타내는 열은 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD*&#x200B;은(는) 아직 결정되지 않은 환경 ID를 반영합니다.
-
 
 | 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
