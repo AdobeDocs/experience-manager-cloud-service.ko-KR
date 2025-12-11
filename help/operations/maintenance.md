@@ -228,7 +228,7 @@ ht-degree: 29%
 
 1. `mt.yaml` 또는 유사한 파일을 만듭니다.
 
-1. `config`구성 파이프라인 사용[에 설명된 대로 파일을 ](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. `config`구성 파이프라인 사용[에 설명된 대로 파일을 &#x200B;](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 1. 다음을 포함하는 구성 파일에서 속성을 선언합니다.
 
