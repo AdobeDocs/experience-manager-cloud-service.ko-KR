@@ -55,7 +55,7 @@ ht-degree: 12%
 
 1. 다음 중 하나를 수행하십시오.
 
-   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**를 클릭합니다.
+   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**&#x200B;를 클릭합니다.
 **환경 추가** 옵션이 흐리게 표시(사용 안 함)되면 사용 권한이 없거나 사용 허가된 리소스에 종속되어 있을 수 있습니다.
 
      ![환경 카드](assets/no-environments.png)
