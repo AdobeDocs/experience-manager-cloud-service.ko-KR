@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.11.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.11.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 63%
+source-wordcount: '1461'
+ht-degree: 67%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.11.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2025.11.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 63%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.12.0) 일자는 2025년 12월 11일 금요일입니다. 다음 기능 릴리스(2026.1.0)는 2026년 1월 29일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2025.11.0) 날짜는 2025년 11월 20일 금요일입니다. 다음 기능 릴리스(2025.12.0)는 2025년 12월 11일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## AEM의 에이전트 {#agents-in-aem}
 
-AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 에이전트를 제공합니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
+AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 에이전트를 제공합니다. 자세한 내용은 [에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### 곧 Java API 지원 중단 예정 {#java-api-deprecation}
 
-사용되지 않는 몇몇 API는 8월 31일에 삭제될 예정이라고 공지되었으므로 더 이상 참조할 수 없습니다. 코드에서 더 이상 사용되지 않는 API 사용이 감지되면 작업 센터 알림을 받게 되며 1월 29일 이후에는 Cloud Manager 빌드 중에 알림이 표시되어 사용 제거의 중요성을 강화합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
+사용되지 않는 몇몇 API는 8월 31일에 삭제될 예정이라고 공지되었으므로 더 이상 참조할 수 없습니다. 코드에서 더 이상 사용되지 않는 API 사용이 감지되면 작업 센터 알림을 받게 되며 12월 3일 이후에는 Cloud Manager 빌드 중에 알림이 표시되어 사용 제거의 중요성을 강화합니다. [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
 
 +++ 확장하여 사용 중단 Java API 보기
 
@@ -156,7 +154,7 @@ Adobe은 2025년 10월 14일에 **Stage** 및 **Production** 환경을 더 높�
 
 4월 릴리스 정보에서 언급된 대로 AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하기 위해 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
 
-**1월 29일**&#x200B;부터 지원되지 않는 사용자 지정 로깅 무시가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
+**12월 10일**&#x200B;부터 지원되지 않는 사용자 지정 로깅 무시가 무시됩니다. 분석에 따르면 대부분의 고객은 영향을 받지 않으며 현재 구성에 영향을 받을 수 있는 고객에게는 Adobe에서 개별적으로 안내를 드렸습니다.
 
 사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
 
@@ -198,6 +196,15 @@ Edge 인증을 사용하면 ID 공급자(IdP)로 인증된 사용자만 Edge Del
 
 원하는 경우 사용 사례에 대한 간단한 설명과 질문을 담은 이메일을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 보내십시오.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### 라이브 트래픽을 수락하기 전에 코드 테스트를 위한 카나리아 프로덕션 배포(Beta 프로그램) {#canary-beta}
 
 최종 사용자에게 노출하기 전에 내부용 테스트 트래픽으로 프로덕션 빌드의 유효성을 검사합니다. 프로덕션으로 배송하고, 카나리아 트래픽만 라우팅하고(특수 헤더 사용), 동작을 모니터링한 다음 라이브 트래픽으로 승격하거나 고객에게 영향을 주지 않고 롤백합니다.
@@ -215,17 +222,17 @@ AI Answers Beta 프로그램 출시를 준비하고 있으며, 이제 고객을 
 
 참여를 요청하거나 업데이트를 받으려면 [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)에 문의하세요.
 
-#### RDE용 스냅샷(Beta 프로그램) {#rde-snapshot-program}
-
-Beta에서 RDE(빠른 개발 환경)는 이제 코드 및 컨텐츠의 현재 상태에 대한 스냅샷을 생성하는 기능을 지원하며 나중에 복원할 수 있습니다. 이것은 반환이 필요할 수 있는 코드를 동기화하거나, 서로 다른 기능의 개발을 전환할 때 유용할 수 있습니다. 테스트를 위한 알려진 시작점으로 변경 가능한 콘텐츠만 복원하는 것도 가능합니다.
-
-이 기능에 대한 사용 및 피드백 제공에 관심이 있는 경우 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)에 전자 메일을 보내십시오.
-
-#### AI를 통한 AEM 개발 가속화(Alpha 프로그램) {#ai-dev-alpha}
+#### AI를 통한 AEM 개발 가속화(Alpha 프로그램)  {#ai-dev-alpha}
 
 AEM Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하기 위해 Cursor, Claude Code, Visual Studio 및 IntelliJ와 같은 도구에서 AI 지원 개발을 사용하는 경우가 늘고 있습니다. 미래의 Adobe 지원 AI 기능을 구축하는 데 도움이 되는 실제 경험을 모으고 있습니다.
 
 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에 이메일을 보내 팀의 작업과 Adobe에서 제공할 내용을 공유하십시오.
+
+#### RDE용 스냅샷 (Alpha 프로그램) {#rde-snapshot-program}
+
+알파 버전에서는 신속한 개발 환경(RDEs)에서 현재 코드와 콘텐츠 상태의 스냅샷을 찍는 기능을 지원하며, 이는 나중에 복원할 수 있습니다. 이것은 반환이 필요할 수 있는 코드를 동기화하거나, 서로 다른 기능의 개발을 전환할 때 유용할 수 있습니다. 테스트를 위한 알려진 시작점으로 변경 가능한 콘텐츠만 복원하는 것도 가능합니다.
+
+이 기능에 대한 피드백을 제공하는 데 관심이 있으시면 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)으로 이메일을 보내주십시오.
 
 #### 애플리케이션 성능 모니터링(APM) 기능 확장(Alpha 프로그램) {#apm-alpha}
 
