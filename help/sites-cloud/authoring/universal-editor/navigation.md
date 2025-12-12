@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1871'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
@@ -224,6 +224,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
 
 ![편집기](assets/editor.png)
+
+기본적으로 편집기는 열려 [콘텐츠를 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)하거나 [속성 패널을 사용할 수 있습니다.](#properties-rail)
 
 편집기가 [미리 보기 모드](#preview-mode)에 있으면 콘텐츠를 탐색할 수 있고 링크를 따라갈 수 있지만 콘텐츠를 편집할 수는 없습니다.
 

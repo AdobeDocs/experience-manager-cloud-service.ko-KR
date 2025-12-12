@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 21%
+source-wordcount: '2625'
+ht-degree: 20%
 
 ---
 
@@ -75,11 +75,15 @@ ht-degree: 21%
 
 #### 속성 패널 {#properties-rail}
 
-[속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 선택한 텍스트에 대한 항목이 표시됩니다. 텍스트를 편집하려면 더 큰 캔버스를 표시하는 대화 상자를 열려면 항목을 탭하십시오.
+[속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 선택한 서식 있는 텍스트 구성 요소에 대한 항목이 표시됩니다.
+
+![속성 패널의 서식 있는 텍스트 구성 요소](assets/rich-text-properties-panel.png)
+
+더 큰 캔버스를 표시하는 대화 상자를 열어 서식 있는 텍스트를 편집하려면 항목을 탭합니다.
 
 ![서식 있는 텍스트 편집 대화 상자](assets/rich-text-canvas.png)
 
-변경 내용을 취소하거나 저장하려면 각각 **취소** 또는 **완료**&#x200B;를 탭하거나 클릭합니다.
+변경 내용을 취소하거나 저장하려면 각각 **취소** 또는 **완료**&#x200B;를 탭하거나 클릭합니다. Esc 키를 눌러 변경 내용을 저장하고 대화 상자를 닫을 수도 있습니다.
 
 #### 리치 텍스트 서식 옵션 {#formatting-options}
 
@@ -92,8 +96,15 @@ ht-degree: 21%
 * 위 첨자
 * 아래 첨자
 * 글머리 기호 목록
-* 번호 매기기 목록
+   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어쓰기
+* 순차 목록
+   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어쓰기
 * 링크
+* 연결 해제
+* 이미지
+* 모든 서식 제거
+
+기존 테이블은 RTE를 사용하여 편집할 수 있지만 새 테이블은 생성할 수 없습니다.
 
 작성자의 필요에 따라 옵션을 숨기거나 추가 옵션을 표시하도록 RTE를 구성할 수 있습니다. 자세한 내용은 [유니버설 편집기에 대한 RTE 구성](/help/implementing/universal-editor/configure-rte.md) 문서를 참조하십시오.
 
@@ -230,7 +241,11 @@ ht-degree: 21%
 >
 >핫키 `Command-C` 또는 `Command-V`을(를) 사용하여 각각 복사하거나 붙여 넣으십시오.
 
+## 컨텍스트 옵션 {#context-options}
 
+적절히 편집할 때 편집기는 마우스 오른쪽 단추를 클릭하여 구성 요소 복제, 삭제 또는 복사와 같은 컨텍스트 관련 옵션을 제공합니다.
+
+![상황에 맞는 옵션 메뉴](assets/context-options-menu.png)
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
@@ -355,7 +370,7 @@ ht-degree: 21%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

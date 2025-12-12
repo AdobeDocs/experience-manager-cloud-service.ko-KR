@@ -4,9 +4,9 @@ description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [
@@ -176,6 +176,44 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * `wrapInPicture`: `false`(기본값) - 단순 `<img>` 요소 생성
 * `wrapInPicture`: `true` - 반응형 디자인을 위해 `<picture>` 요소에서 이미지 줄바꿈
 
+### 들여쓰기 구성 {#indentation}
+
+들여쓰기에는 들여쓰기 동작의 범위를 제어하는 기능 수준 구성과 바로 가기 및 레이블에 대한 개별 작업 구성이 있습니다.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### 들여쓰기 범위 옵션 {#indentation-options}
+
+* `scope`: `all`(기본값) - 들여쓰기/내어쓰기가 모든 콘텐츠에 적용됩니다.
+   * 목록: 목록 항목 중첩/중첩 해제
+   * 단락 및 제목: 일반 들여쓰기 수준 증가/감소
+* `scope`: `lists` - 들여쓰기/내어쓰기는 목록 항목에만 적용됩니다.
+   * 목록: 목록 항목 중첩/중첩 해제
+   * 단락 및 머리글: 들여쓰기 없음(이들에 대해 비활성화된 단추)
+
+>[!NOTE]
+>
+>Tab/Shift+Tab 키를 통한 목록 중첩은 일반 들여쓰기 설정과 독립적으로 작동합니다.
+
 ### 기타 작업 {#other}
 
 다른 모든 작업은 기본 사용자 지정을 지원합니다. 다음 섹션을 사용할 수 있습니다.
@@ -307,6 +345,35 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * 목록 항목당 여러 단락
 * 일관된 블록 수준 스타일
 
+### `wrapInPicture`{#wrapinpicture}
+
+이미지에 대한 `wrapInPicture` 옵션은 이미지 콘텐츠에 대해 생성된 HTML 구조를 제어합니다.
+
+#### wrapInPicture: false(기본값) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+필요한 경우 `wrapInPicture: true`을(를) 사용합니다.
+
+* `<source>`개 요소로 반응형 이미지를 지원합니다.
+* 미술 감독 기능.
+* 고급 이미지 기능에 대한 향후 교정.
+* 일관된 그림 요소 구조.
+
+>[!NOTE]
+>
+>`wrapInPicture: true`이(가) 활성화되면 다양한 미디어 쿼리 및 형식에 대한 추가 `<source>` 요소로 이미지를 개선할 수 있으므로 반응형 디자인에 보다 유연하게 사용할 수 있습니다.
+
 ### 링크 대상 옵션 {#link-target}
 
 링크에 대한 `hideTarget` 옵션은 생성된 링크에 `target` 특성이 포함되어 있는지 여부와 링크 생성을 위한 대화 상자에 대상 선택을 위한 필드가 포함되어 있는지 여부를 제어합니다.
@@ -318,11 +385,60 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### 이미지에 링크 비활성화 {#disableforimages}
+
+링크에 대한 `disableForImages` 옵션은 사용자가 이미지 및 그림 요소에 링크를 만들 수 있는지 여부를 제어합니다. 이는 인라인 `<img>` 요소와 블록 수준 `<picture>` 요소 모두에 적용됩니다.
+
+#### `disableForImages: false` (기본값) {#disableforimages-false}
+
+사용자는 이미지를 선택하여 링크로 래핑할 수 있습니다.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+이미지 또는 그림을 선택하면 링크 버튼이 비활성화됩니다. 사용자는 텍스트 콘텐츠에만 링크를 만들 수 있습니다.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+다음을 원할 때 `disableForImages: true`을(를) 사용합니다.
+
+* 연결된 이미지를 방지하여 시각적 일관성을 유지합니다.
+* 탐색에서 이미지를 분리하여 콘텐츠 구조를 간소화합니다.
+* 이미지 연결을 제한하는 컨텐츠 정책을 적용합니다.
+* 콘텐츠의 접근성 복잡성을 줄입니다.
+
+>[!NOTE]
+>
+>이 설정은 이미지에 새 링크를 만드는 기능에만 영향을 줍니다. 콘텐츠의 이미지에서 기존 링크가 제거되지는 않습니다.
 
 ### 태그 옵션 {#tag}
 
