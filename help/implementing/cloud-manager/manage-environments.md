@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 41%
 
 ---
@@ -28,9 +28,11 @@ ht-degree: 41%
 | **신속한 개발** | RDE(신속한 개발 환경)를 통해 개발자는 변경 사항을 신속하게 배포하고 검토할 수 있습니다. 이 기능을 사용하면 로컬 개발 환경에서 이미 검증된 기능을 테스트하는 데 필요한 시간이 줄어듭니다. RDE 사용 방법에 대한 자세한 내용은 [신속한 개발 환경 설명서](/help/implementing/developing/introduction/rapid-development-environments.md)를 참조하십시오. |
 | **특수 테스트 환경** | 특수 테스트 환경은 부하 테스트 및 고급 배포 전 검사에 이상적인 프로덕션 환경에 가까운 조건에서 기능을 검증하기 위한 전용 공간을 제공합니다. [특수 테스트 환경 추가](/help/implementing/cloud-manager/specialized-test-environment.md)를 참조하십시오. |
 
+<!-- 
 >[!NOTE]
 >
->**전문 테스트 환경** 기능은 현재 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 개인 Beta에 등록하려면 [전문 테스트 환경](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)을 참조하세요.
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 개별 환경의 기능은 환경의 [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 활성화된 솔루션에 따라 다릅니다.
 
@@ -308,7 +310,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포된 버전�
 
 **개발자** 역할을 가진 사용자만 **Developer Console**&#x200B;에 액세스할 수 있습니다. 단, 샌드박스 프로그램의 경우 샌드박스 프로그램에 대한 액세스 권한이 있는 모든 사용자가 **Developer Console**&#x200B;에 액세스할 수 있습니다.
 
-자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
+자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) 문서를 참조하십시오.
 
 이 옵션은 개별 환경의 **자세히 아이콘**&#x200B;을 클릭할 때 **개요** 창의 ![환경](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 탭에서도 사용할 수 있습니다.
 
