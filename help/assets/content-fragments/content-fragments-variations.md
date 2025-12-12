@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 51%
+source-wordcount: '2530'
+ht-degree: 52%
 
 ---
 
@@ -444,12 +444,6 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 변형을 사용하면 **기본** 콘텐츠를 표시하고 목적에 따라 변경할 수 있습니다(필요한 경우).
 
 **변형을 만들려면:**
-
->[!NOTE]
->
->변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
->
->가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
 
 1. 조각을 열고 사이드 패널이 표시되는지 확인합니다.
 1. 사이드 패널의 아이콘 막대에서 **변형**&#x200B;을 선택합니다.

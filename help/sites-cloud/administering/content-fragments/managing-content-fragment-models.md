@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 49%
+source-wordcount: '2475'
+ht-degree: 48%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 49%
 콘텐츠 조각 콘솔에서 콘텐츠 조각 모델을 관리한 다음 [편집기를 열고](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 구조를 정의할 수 있습니다.
 
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이러한 조각을 Headless 콘텐츠 또는 페이지 작성의 기반으로 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md)에 유의하십시오.
 
 >[!NOTE]
 >
@@ -55,7 +59,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 * 상단 도구 모음
    * 표준 AEM 기능을 제공합니다.
    * IMS 조직을 표시합니다.
-   * 하나 이상의 모델을 선택할 때 [변경할 수 있는 다양한 &#x200B;](#actions-unselected)작업[을 제공합니다](#actions-selected-content-fragment-models)
+   * 하나 이상의 모델을 선택할 때 [변경할 수 있는 다양한 ](#actions-unselected)작업[을 제공합니다](#actions-selected-content-fragment-models)
 * 왼쪽 패널
    * 폴더로 나열된 [모든 구성에 대한 경로](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)을(를) 표시합니다.
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
@@ -81,7 +85,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
          * 열 크기 조정 - 작업 또는 폭 슬라이더 사용
       * 추가 [작업](#actions-selected-content-fragment-models)에 대해 하나 이상의 모델을 선택하십시오.
    * [필터 패널](#filter-content-fragment-models) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각 모델에 대해 제공된 정보 {#information-content-fragment-models}
 
@@ -151,7 +155,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 왼쪽 패널에서 폴더를 선택하면 바로 또는 특정 모델을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
 
-* 다양한 작업이 [&#x200B; 콘솔에서 사용 가능](#actions-unselected)합니다.
+* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
 * [하나 이상의 콘텐츠 조각 모델을 선택하여 적절한 작업을 표시할 수 있습니다](#actions-selected-content-fragment)
 
 ### 작업 (선택되지 않음) {#actions-unselected}
@@ -349,7 +353,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 ## 콘텐츠 조각 모델 게시 취소 {#unpublishing-a-content-fragment-model}
 
-조각에서 콘텐츠 모델을 참조하지 않는 경우, 이를 게시 취소할 수 있습니다.
+조각에서 콘텐츠 조각을 참조하지 않는 경우, 이를 게시 취소할 수 있습니다.
 
 콘텐츠 조각 모델을 게시 취소하려면 다음 작업을 수행하십시오.
 

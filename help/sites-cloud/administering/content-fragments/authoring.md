@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 68%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 68%
 * 편집기에서 [버전 세부 정보를 보기](#view-version-history)하는 기능. 선택한 버전으로 되돌릴 수도 있습니다.
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
+
+>[!NOTE]
+>
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md)에 유의하십시오.
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ ht-degree: 68%
 
 * 이 조각에 맞게 만들어진 **[변형](#variations)** 목록:
    * **기본**&#x200B;은 콘텐츠 조각을 처음 만들 때 존재하는 변형으로 나중에 다른 조각을 추가할 수 있습니다.
-   * 변형 생성(#generate-variations)을 사용하여 Adobe이 특정 사용 사례에서 만든 프롬프트 기반 템플릿을 사용할 수 있습니다.
+   * [변형 생성](#generate-variations-ai)을 사용하여 Adobe에서 특정 사용 사례에 맞게 만든 프롬프트 기반 템플릿을 사용할 수 있습니다.
    * [변형을 만들](#create-variation) 수도 있습니다.
 * 조각 및 변형 내 **필드**:
    * 아이콘은 [데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)을 표시합니다.
@@ -135,12 +139,6 @@ ht-degree: 68%
 * [변형 삭제](#delete-variation)
 
 ### 변형 만들기 {#create-variation}
-
->[!NOTE]
->
->변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
->
->가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
 
 콘텐츠 조각의 변형을 만들려면
 
@@ -273,7 +271,7 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 

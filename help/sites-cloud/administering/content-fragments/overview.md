@@ -1,18 +1,18 @@
 ---
-title: 콘텐츠 조각 작업 개요
+title: 콘텐츠 조각 작업의 개념 및 모범 사례에 대한 개요
 description: Adobe Experience Manager(AEM) as a Cloud Service의 컨텐츠 조각을 사용하여 Headless 게재 및 페이지 작성에 이상적인 구조화된 컨텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 85%
+source-wordcount: '2357'
+ht-degree: 72%
 
 ---
 
-# 콘텐츠 조각 작업 개요 {#overview-working-with-content-fragments}
+# 콘텐츠 조각을 사용한 작업 - 개념 및 모범 사례 {#working-with-content-fragments-concepts-and-best-practices}
 
 Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 [Headless 게재](/help/headless/what-is-headless.md) 및 [페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조�
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 포맷으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
-* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 추가하여 벌크 게재를 수행할 수 있습니다.
+* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 추가하여 벌크 게재를 수행할 수 있습니다.
 
 커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
@@ -86,7 +86,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 이 페이지와 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -111,7 +111,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >이 페이지는 다음과 함께 읽을 수 있습니다.
 >
->* [콘텐츠 조각 사용자 정의 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [콘텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [콘텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
@@ -187,7 +187,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * [콘텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fragments/content-fragments.md)에서 사용 가능합니다.
 
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
 
 콘텐츠 조각은 다음과 같은 콘텐츠 구조입니다.
 
@@ -274,7 +274,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)을 참조하십시오.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)을 참조하십시오.
 
 ## 콘텐츠 조각 콘솔 {#content-fragments-console}
 
@@ -294,7 +294,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -325,3 +325,47 @@ WKND 프로젝트에는 다음이 포함되어 있습니다.
 * 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
 
    * `.../assets.html/content/dam/wknd/en`
+
+## 모범 사례 {#best-practices}
+
+콘텐츠 조각을 사용하여 복잡한 구조를 형성할 수 있습니다. Adobe에서는 모델과 조각을 모두 정의하고 사용할 때 모범 사례에 대한 권장 사항을 제공합니다.
+
+### 단순하게 유지 {#keep-it-simple}
+
+AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능과 간소화된 거버넌스를 보장하기 위해 콘텐츠 구조를 최대한 단순하게 유지합니다.
+
+### 모델 수 {#number-of-models}
+
+필요한 수만큼 콘텐츠 모델을 생성하지만 더 이상 생성하지 않습니다.
+
+모델이 너무 많으면 거버넌스가 복잡해지고 GraphQL 쿼리가 느려질 수 있습니다. 보통 10달러 이하의 작은 모델 세트만으로도 충분합니다. 높은 수십 개 이상에 접근하는 경우 모델링 전략을 재고하십시오.
+
+### 모델 및 조각 중첩(매우 중요) {#nesting-models-and-fragments}
+
+조각이 여러 수준에서 다른 조각을 참조할 수 있도록 해 주는 콘텐츠 조각 참조 를 사용하여 콘텐츠 조각의 깊이 또는 과도한 중첩을 방지합니다.
+
+콘텐츠 조각 참조를 많이 사용하면 시스템 성능, UI 응답성 및 GraphQL 쿼리 실행에 상당한 영향을 줄 수 있습니다. 10개 수준 이하로 중첩을 유지하는 것을 목표로 합니다.
+
+### 모델당 데이터 필드 및 형식 수 {#number-of-data-fields-and-types-per-model}
+
+모델에 실제로 필요한 데이터 필드와 유형만 포함합니다.
+
+너무 복잡한 모델은 너무 복잡한 조각으로 이어져 작성을 어렵게 하고 편집기 성능을 저하시킬 수 있습니다.
+
+### 서식 있는 텍스트 필드 {#rich-text-fields}
+
+서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식)를 고려하십시오.
+
+모델당 리치 텍스트 필드 수를 제한합니다. 각 조각에 저장된 텍스트의 양 및 HTML 서식의 양이기도 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
+
+### 변형의 수 {#number-of-variations}
+
+필요한 만큼 조각 변형을 만들되 더 이상 만들지 않습니다.
+
+변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
+
+가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
+
+### 프로덕션 전 테스트 {#test-before-production}
+
+확실하지 않은 경우 제작으로 롤아웃하기 전에 의도한 콘텐츠 구조를 프로토타이핑하십시오. 적절한 테스트와 함께 기술 및 사용자 동의 없이 초기 개념 증명을 사용하면 생산 마감일에 직면할 때 나중에 문제를 방지할 수 있습니다.

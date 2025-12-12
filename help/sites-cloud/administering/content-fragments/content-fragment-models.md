@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 59%
+source-wordcount: '2217'
+ht-degree: 58%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 59%
 Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)의 콘텐츠 구조를 정의합니다. 그런 다음 이 조각은 페이지 작성에 사용하거나 Headless 콘텐츠의 기반으로 사용할 수 있습니다.
 
 이 페이지에서는 전용 편집기를 사용하여 콘텐츠 조각 모델을 정의하는 방법을 다룹니다. 콘텐츠 조각 콘솔에서 사용할 수 있는 [작업](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md), [폴더에서 모델 허용](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions) 및 [모델 게시](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)를 포함하여 조각을 만든 후 사용할 수 있는 추가 작업 및 옵션에 대해서는 [콘텐츠 조각 모델 관리](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)를 참조하십시오.
+
+>[!NOTE]
+>
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md)에 유의하십시오.
 
 >[!CAUTION]
 >
@@ -84,7 +88,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      ![필드 이동](assets/cf-cfmodels-move-field-icon.png)
 
-   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
+   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
 필드.
 
       * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.
