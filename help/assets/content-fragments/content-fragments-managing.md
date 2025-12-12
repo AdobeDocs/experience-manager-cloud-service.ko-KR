@@ -139,7 +139,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
 
 >[!NOTE]
 >
->이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)입니다.
+>이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=ko)입니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 
