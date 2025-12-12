@@ -79,6 +79,6 @@ ht-degree: 12%
 
 ## 추가 리소스 {#additional-resources}
 
-* 비디오: [AEM Cloud Manager의 환경 유형 이해](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* 비디오: [AEM Cloud Manager의 환경 유형 이해](https://experienceleague.adobe.com/ko/perspectives/cloud-manager-environment-types)
 * [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
 
