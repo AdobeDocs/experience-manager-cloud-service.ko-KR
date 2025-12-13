@@ -354,7 +354,7 @@ prefill-page component.zip
 
 프리필 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징된다. OSGi 번들을 만들고 업로드한 후 [!DNL AEM Forms] 번들에 설치합니다. 번들 만들기를 시작하기 전에 다음을 수행하십시오.
 
-- [클라이언트 SDK 다운로드 [!DNL AEM Forms] 2}](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+- [클라이언트 SDK 다운로드 [!DNL AEM Forms] 2&rbrace;](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
 - 보일러 플레이트 패키지 다운로드
 
 - crx-repository에 데이터(데이터 미리 채우기) 파일을 넣습니다. crx-repository의 \contents 폴더에 있는 임의의 위치에 파일을 배치할 수 있습니다.

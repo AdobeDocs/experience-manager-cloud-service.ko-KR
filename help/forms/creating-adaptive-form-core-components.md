@@ -58,7 +58,7 @@ AEM Forms의 양식 빌더를 사용하면 매력적인 반응형, 동적 및 �
 
    * `blank` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
    * 패키지 관리자를 통해 참조 패키지를 설치하여 `blank` 템플릿을 AEM Forms as a Cloud Service 프로그램에 추가할 수 있습니다.
-   * [적응형 Forms 템플릿(핵심 구성 요소)을 ](/help/forms/template-editor-core-components.md)할 수도 있습니다.
+   * [적응형 Forms 템플릿(핵심 구성 요소)을 &#x200B;](/help/forms/template-editor-core-components.md)할 수도 있습니다.
    * [샘플 템플릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)을 환경에 배포할 수도 있습니다. 이렇게 하면 양식을 신속하게 만들 수 있습니다.
 
 * **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  `Canvas` 템플릿은 모든 최신 AEM Forms as a Cloud Service 프로그램에 포함되어 있습니다. [샘플 테마](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)를 환경에 배포할 수도 있습니다. 이를 통해 양식의 스타일을 시작하고 비즈니스 요구 사항에 따라 테마를 만들거나 맞춤화할 수 있는 기본 구조를 제공할 수 있습니다.
