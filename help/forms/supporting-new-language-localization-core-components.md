@@ -125,7 +125,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
 
    **이 정보를 찾을 수 있는 위치**
 
-   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
+   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)&quot;를 참조하십시오.
 
    **프로젝트가 준비되었습니다!**
 
@@ -402,7 +402,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
 * Adobe에서는 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다. 현지화 프로세스를 간소화합니다.
-* 숫자 상자 및 날짜 선택기 구성 요소가 특정 로케일로 변환되면 형식 문제가 발생할 수 있습니다. 이를 완화하기 위해 **언어** 옵션이 [날짜 선택기 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 및 [숫자 상자 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)의 구성 대화 상자에 통합되었습니다.
+* 숫자 상자 및 날짜 선택기 구성 요소가 특정 로케일로 변환되면 형식 문제가 발생할 수 있습니다. 이를 완화하기 위해 **언어** 옵션이 [날짜 선택기 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 및 [숫자 상자 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)의 구성 대화 상자에 통합되었습니다.
 
 
 * 새 필드 처리:

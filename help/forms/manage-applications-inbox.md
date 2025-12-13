@@ -23,7 +23,7 @@ Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 �
 
 또한 AEM 받은 편지함은 Forms 워크플로를 비롯한 다양한 AEM 구성 요소의 알림과 작업을 통합합니다. 작업 할당 단계가 포함된 Forms Workflow이 트리거되면 연결된 애플리케이션이 피할당자의 받은 편지함에 작업으로 나열됩니다. 피할당자가 그룹인 경우 개별 사용자가 작업을 요청하거나 위임할 때까지 모든 그룹 구성원의 받은 편지함에 작업이 표시됩니다.
 
-받은 편지함 사용자 인터페이스에서는 작업을 볼 수 있는 목록 및 달력 보기를 제공합니다. 보기 설정을 구성할 수도 있습니다. 다양한 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 보기 및 필터에 대한 자세한 내용은 [받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header)을 참조하세요.
+받은 편지함 사용자 인터페이스에서는 작업을 볼 수 있는 목록 및 달력 보기를 제공합니다. 보기 설정을 구성할 수도 있습니다. 다양한 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 보기 및 필터에 대한 자세한 내용은 [받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ko#inbox-in-the-header)을 참조하세요.
 
 요약하면 받은 편지함에서 응용 프로그램을 만들고 할당된 작업을 관리할 수 있습니다.
 
@@ -97,7 +97,7 @@ Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그�
 
 #### 작업 세부 정보 {#task-details}
 
-[작업 세부 정보] 섹션에는 작업에 대한 정보가 표시됩니다. 표시되는 정보는 워크플로우에서 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)의 구성 설정에 따라 다릅니다. 위의 예에는 작업에 사용된 설명, 상태, 시작 날짜 및 워크플로가 표시됩니다. 또한 파일을 작업에 첨부할 수도 있습니다.
+[작업 세부 정보] 섹션에는 작업에 대한 정보가 표시됩니다. 표시되는 정보는 워크플로우에서 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem)의 구성 설정에 따라 다릅니다. 위의 예에는 작업에 사용된 설명, 상태, 시작 날짜 및 워크플로가 표시됩니다. 또한 파일을 작업에 첨부할 수도 있습니다.
 
 #### 양식 {#form}
 
@@ -105,7 +105,7 @@ Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그�
 
 #### 워크플로 세부 정보 {#workflow-details}
 
-맨 위에 있는 워크플로 세부 사항 탭에는 워크플로의 다양한 단계를 통한 작업 진행 상황이 표시됩니다. 작업에 대해 완료된 단계, 현재 단계 및 보류 단계가 표시됩니다. 워크플로의 단계는 연결된 워크플로의 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)에 정의되어 있습니다.
+맨 위에 있는 워크플로 세부 사항 탭에는 워크플로의 다양한 단계를 통한 작업 진행 상황이 표시됩니다. 작업에 대해 완료된 단계, 현재 단계 및 보류 단계가 표시됩니다. 워크플로의 단계는 연결된 워크플로의 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem)에 정의되어 있습니다.
 
 또한 탭에는 워크플로우에서 완료된 각 단계에 대한 작업 내역이 표시됩니다. 완료된 단계에 대해 **[!UICONTROL 세부 정보 보기]**&#x200B;를 선택하여 해당 단계에 대한 세부 정보를 알 수 있습니다. 작업에 대한 설명, 양식 및 작업 첨부 파일, 상태, 시작 및 종료 날짜 등이 표시됩니다.
 
@@ -113,7 +113,7 @@ Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그�
 
 #### 작업 도구 모음 {#actions-toolbar}
 
-작업 도구 모음에는 작업에 사용 가능한 모든 옵션이 표시됩니다. 저장, 재설정 및 위임은 기본 작업이지만 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)에서 사용 가능한 다른 작업이 구성되어 있습니다. 위의 예에서 승인 및 거부는 워크플로우에 구성됩니다.
+작업 도구 모음에는 작업에 사용 가능한 모든 옵션이 표시됩니다. 저장, 재설정 및 위임은 기본 작업이지만 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem)에서 사용 가능한 다른 작업이 구성되어 있습니다. 위의 예에서 승인 및 거부는 워크플로우에 구성됩니다.
 
 작업을 수행하면 워크플로우에서 더 진행됩니다.
 
@@ -128,7 +128,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
 
 1. 작업을 선택하려면 선택하고 **[!UICONTROL 열기]**&#x200B;를 클릭하세요.
 
-작업이 열리고 작업과 연결된 문서 또는 적응형 양식이 표시됩니다. 적응형 양식의 경우 작업은 [작업 워크플로 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)의 양식/문서 탭에 구성된 대로 읽기 전용 적응형 양식 또는 PDF 기록 문서를 표시합니다.
+작업이 열리고 작업과 연결된 문서 또는 적응형 양식이 표시됩니다. 적응형 양식의 경우 작업은 [작업 워크플로 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem)의 양식/문서 탭에 구성된 대로 읽기 전용 적응형 양식 또는 PDF 기록 문서를 표시합니다.
 
 작업 세부 정보 섹션에는 수행한 작업, 작업 상태, 시작 날짜 및 종료 날짜 등의 정보가 표시됩니다.
 
@@ -167,6 +167,6 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [속성 인덱스를 만들고 true로 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index).
+1. [속성 인덱스를 만들고 true로 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=ko#the-property-index).
 
 1. CRX DE에서 인덱스를 구성하거나 패키지를 통해 배포한 후 저장소를 다시 인덱싱합니다.
