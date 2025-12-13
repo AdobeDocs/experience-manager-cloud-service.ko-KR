@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2720'
 ht-degree: 28%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 > **버전 가용성**
 >
-> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ko)
+> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: 이 문서
 
 ## 소개
@@ -41,6 +41,18 @@ AEM Forms as a Cloud Service의 커뮤니케이션 API를 통해 비즈니스 �
 | 템플릿을 PDF 및 인쇄 형식을 비롯한 다양한 형식의 데이터와 병합하여 개인화된 문서를 생성합니다. | PDF 문서를 프로그래밍 방식으로 결합, 재배열 및 확인하여 새 문서 패키지를 만듭니다. | 추가 처리를 위해 PDF 문서에서 속성, 메타데이터 및 컨텐츠를 추출합니다. | 아카이브 요구 사항에 대한 PDF/A 규정 준수 검증을 포함하여 문서를 형식 간에 변환할 수 있습니다. | 디지털 서명, 인증 및 암호화를 적용하여 문서를 보호하고 보호합니다. |
 
 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)에서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms에서 보험 증서 문서를 생성할 수 있습니까?
+
+예. AEM Forms은 양식을 통해 캡처한 템플릿 및 구조화된 데이터를 사용하여 정책 관련 문서를 생성할 수 있습니다.
+
+## AEM Forms이 규모에 맞게 보험 업무를 처리할 수 있습니까?
+
+예. Adobe Managed Services 또는 프라이빗 클라우드에서 권장 아키텍처를 사용하여 배포하면 AEM Forms에서 대량 양식 제출 및 엔터프라이즈급 워크로드를 지원합니다.
 
 ## 문서 생성
 
@@ -165,7 +177,7 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 ### 암호화 API
 
-암호화 API를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 인가된 사용자는 문서의 암호를 해독하여 콘텐츠에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 Adobe Reader 또는 Adobe Acrobat에서 문서를 보려면 먼저 사용자가 열기 암호를 지정해야 합니다. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+암호화 API를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 콘텐츠를 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서의 암호를 해독하여 해당 콘텐츠에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 Adobe Reader 또는 Adobe Acrobat에서 문서를 보려면 먼저 사용자가 열기 암호를 지정해야 합니다. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 암호화 API를 사용하여 다음 작업을 수행할 수 있습니다.
 

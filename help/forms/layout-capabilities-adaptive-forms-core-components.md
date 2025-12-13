@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 16%
+source-wordcount: '2176'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,25 @@ ht-degree: 16%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 
 적응형 Forms은 양식을 효과적으로 레이아웃 및 디자인할 수 있는 퍼스트 클래스 구성 요소를 제공합니다. 레이아웃은 양식에 구성 요소가 표시되는 방식을 제어합니다. 적응형 Forms은 패널, 마법사, 아코디언, 상단/수평 탭의 탭, 왼쪽/수직 탭의 탭 등 다양한 레이아웃을 지원합니다.
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms에서 다단계 보험 청구 양식을 지원합니까?
+
+예. AEM Forms은 조건부 논리를 통해 안내식 다단계 적응형 양식을 지원하므로, 보험사가 청구 유형 및 컨텍스트에 따라 점진적으로 청구 정보를 수집할 수 있습니다.
+
+## 고객이 AEM Forms을 사용하여 클레임 문서를 안전하게 업로드할 수 있습니까?
+
+예. AEM Forms은 엔터프라이즈 보안 요구 사항에 맞는 액세스 제어 및 보안 데이터 처리를 통해 양식 제출의 일부로 보안 문서 업로드를 지원합니다.
 
 ## 전제 조건
 
@@ -69,7 +81,7 @@ ht-degree: 16%
 
 세로 탭 레이아웃
 
-[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
+[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 가로 탭 레이아웃]
@@ -81,7 +93,7 @@ ht-degree: 16%
 
 가로 탭 레이아웃
 
-[가로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
+[가로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 아코디언 레이아웃]
@@ -261,7 +273,7 @@ ht-degree: 16%
 
    ![세 번째 패널 구성 요소](/help/forms/assets/panel-3-component.png)
 
-1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
+1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**를 클릭합니다.
    ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.

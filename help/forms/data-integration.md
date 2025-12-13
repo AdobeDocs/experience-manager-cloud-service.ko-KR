@@ -1,13 +1,13 @@
 ---
-title: as a Cloud Service 데이터베이스를  [!DNL AEM Forms] 에 연결하는 방법
-description: 적응형 양식 또는 AEM Workflow에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장합니다.
+title: ' [!DNL AEM Forms] as a Cloud Service에 데이터베이스를 연결하는 방법'
+description: 적응형 양식 또는 AEM 워크플로우에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장합니다.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -45,6 +45,26 @@ ht-degree: 3%
 * 구성된 데이터 소스에서 적응형 Forms 미리 채우기
 * 적응형 양식 규칙을 사용하여 데이터 소스 서비스/작업 호출
 * 제출된 적응형 양식 데이터를 데이터 소스에 쓰기
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms을 보험 증권 애플리케이션에 사용할 수 있습니까?
+
+예. AEM Forms을 사용하여 지원자 정보를 수집하고, 입력을 검증하고, 백엔드 언더라이팅 시스템과 통합하는 디지털 보험 애플리케이션 양식을 작성할 수 있습니다.
+
+## AEM Forms에서 언더라이팅 워크플로우를 지원합니까?
+
+예. 워크플로우 및 통합 사용. AEM Forms은 애플리케이션 데이터가 언더라이팅 및 의사 결정 시스템으로 유입될 수 있도록 워크플로우 기반의 프로세스와 백엔드 통합을 지원합니다.
+
+## AEM Forms을 보험 핵심 시스템과 통합할 수 있습니까?
+
+예. AEM Forms은 REST 및 SOAP API를 사용한 통합을 지원하므로 정책 관리 시스템, 클레임 관리 시스템 및 CRM과 연결할 수 있습니다.
+
+## AEM Forms이 양식 데이터를 보험 시스템에 다시 쓸 수 있습니까?
+
+예. AEM Forms은 양식 제출 및 워크플로우 실행의 일부로 백엔드 시스템에 대한 데이터 쓰기 되돌림을 지원합니다.
 
 ## 데이터 통합 시작 {#get-started-with-data-integration}
 

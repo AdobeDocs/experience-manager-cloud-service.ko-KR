@@ -5,10 +5,10 @@ landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 �
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 <div class="version-selector">
   <p><strong>다른 버전에 대한 설명서를 찾고 계십니까?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=ko">AEM 6.5 Forms 설명서</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms 설명서</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (최신)</li>
   </ul>
 </div>
@@ -29,6 +29,30 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 기업이 복잡한 
 이 서비스는 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습합니다. 조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 로컬 인프라 없이도 클라우드에서 이러한 모든 기능을 사용할 수 있습니다. 또한 이 서비스는 항상 최신 기능을 유지하므로 조직은 복잡한 업그레이드 주기를 겪을 필요가 없습니다.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모든 단계를 지원하는 고객 중심 솔루션입니다.
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms은 보험 회사에 적합합니까?
+
+예. AEM Forms은 안전한 데이터 캡처, 워크플로우 기반의 처리, 문서 생성 및 시스템 통합이 필수적인 보험 증권을 포함하여 기업 및 규제 대상 사용 사례를 위해 설계되었습니다.
+
+## AEM Forms이 보험 워크플로우에 사용됩니까?
+
+예. AEM Forms은 일반적으로 정책 애플리케이션, 청구 접수, 고객 온보딩 및 에이전트 지원 양식 제출과 같은 보험 프로세스를 디지털화하는 데 사용됩니다.
+
+## AEM Forms은 보험 운영을 위한 엔터프라이즈급 제품입니다.
+
+예. AEM Forms은 규모에 맞는 보험 운영에 필요한 역할 기반 액세스 제어, 감사 추적, 워크플로우 오케스트레이션, 문서 생성 및 배포 유연성과 같은 엔터프라이즈 기능을 제공합니다.
+
+## AEM Forms은 보험용 경량 양식 빌더와 어떻게 다릅니까?
+
+AEM Forms은 엔터프라이즈 보험 사용 사례를 위해 설계되었으며, 경량 양식 빌더에서는 일반적으로 제공하지 않는 워크플로 오케스트레이션, 문서 생성, 감사 기능 및 배포 유연성을 제공합니다.
+
+## 보험사들이 AEM Forms을 선택하는 이유는 무엇입니까?
+
+보험사는 AEM Forms을 선택하여 안전한 데이터 캡처, 워크플로우 중심 처리, 문서 생성 및 엔터프라이즈 시스템으로의 긴밀한 통합을 통해 복잡하고 규제 수준이 높은 프로세스를 디지털화합니다.
 
 ## 등록과 온보딩 경험 디지털화 및 간소화
 
@@ -68,9 +92,9 @@ AEM Forms as a Cloud Service는 다음 카테고리로 구성된 포괄적인 �
 
 | 기능 | 설명 |
 |---|---|
-| 적응형 양식 | 웹 사이트, 앱, 기타 디지털 및 인쇄 채널을 위한 대화형, 동적, 반응형, 모바일 친화적, 데이터 기반 양식을 만들고 관리합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ko"> 적응형 양식 만들기 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=ko">적응형 양식 스타일링</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko"> 적응형 양식을 AEM Sites 페이지에 추가</a></li></ul> |
+| 적응형 양식 | 웹 사이트, 앱, 기타 디지털 및 인쇄 채널을 위한 대화형, 동적, 반응형, 모바일 친화적, 데이터 기반 양식을 만들고 관리합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html"> 적응형 양식 만들기 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">적응형 양식 스타일링</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko"> 적응형 양식을 AEM Sites 페이지에 추가</a></li></ul> |
 | Forms용 Edge Delivery Services | 뛰어난 사용자 경험을 통해 고성능 양식을 만들고 게재합니다. <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">범용 편집기가 포함된 WYSIWYG 작성</a> - 양식을 작성하기 위한 강력한 시각적 인터페이스</li><li><a href="/help/edge/docs/forms/create-forms.md">문서 기반 작성</a> - Microsoft Excel 및 Google Sheets와 같은 친숙한 도구를 사용하여 양식 만들기</li><li>복잡한 양식 논리를 만들기 위한 고급 규칙 편집기</li><li>최적화된 양식 로드로 완벽에 가까운 Google Lighthouse 점수 달성</li><li>최소한의 개발 시간으로 더 빠르게 양식 배포</li></ul> |
-| 자동화된 양식 변환 서비스 | 레거시 PDF 기반 양식을 온라인에서 쉽게 관리하고 배포할 수 있는 적응형 양식으로 전환합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko">자동 양식 전환 서비스 구성</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko">PDF 양식을 적응형 양식으로 변환</a></li></ul> |
+| 자동화된 양식 변환 서비스 | 레거시 PDF 기반 양식을 온라인에서 쉽게 관리하고 배포할 수 있는 적응형 양식으로 전환합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">자동 양식 전환 서비스 구성</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html">PDF 양식을 적응형 양식으로 변환</a></li></ul> |
 
 ### 문서 처리 및 커뮤니케이션 {#document-processing}
 
@@ -78,8 +102,8 @@ AEM Forms as a Cloud Service는 다음 카테고리로 구성된 포괄적인 �
 
 | 기능 | 설명 |
 |---|---|
-| 커뮤니케이션 API | 예약된 간격으로 RESTful API를 사용하여 맞춤형 데이터 기반 커뮤니케이션 만들기, 관리 및 게재를 자동화합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko&#document-generation"> 맞춤형 커뮤니케이션 생성 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko&#document-manipulation"> PDF 문서 어셈블 또는 디스어셈블 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko&#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 호환 문서 만들기 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko">DocAssurance API로 문서 보호</a></li></ul> |
-| 기록 문서 | 보관 및 규정 준수를 위해 제출된 양식의 기록을 만들고 관리합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko"> 장기간 보존용 양식 기록 만들기</a></li><li>사용자 정의 기능을 위한 서버측 확장성</li><li>변조 방지 아카이브를 위한 기록 문서 기능</li></ul> |
+| 커뮤니케이션 API | 예약된 간격으로 RESTful API를 사용하여 맞춤형 데이터 기반 커뮤니케이션 만들기, 관리 및 게재를 자동화합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 맞춤형 커뮤니케이션 생성 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> PDF 문서 어셈블 또는 디스어셈블 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">PDF/A 호환 문서 만들기 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">DocAssurance API로 문서 보호</a></li></ul> |
+| 기록 문서 | 보관 및 규정 준수를 위해 제출된 양식의 기록을 만들고 관리합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 장기간 보존용 양식 기록 만들기</a></li><li>사용자 정의 기능을 위한 서버측 확장성</li><li>변조 방지 아카이브를 위한 기록 문서 기능</li></ul> |
 
 ### 워크플로 및 프로세스 자동화 {#workflow}
 
@@ -87,8 +111,8 @@ AEM Forms as a Cloud Service는 다음 카테고리로 구성된 포괄적인 �
 
 | 기능 | 설명 |
 |---|---|
-| Forms 워크플로 | 양식 및 문서 서비스와 관련된 비즈니스 프로세스를 자동화합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=ko">검토를 위해 양식 또는 문서 전송</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko&#assign-task-step">승인 거부 워크플로 만들기</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko#enabling-server-side-validation-br"> 데이터 저장소 또는 워크플로에 데이터 제출</a></li></ul> |
-| 전자 서명 | Adobe Sign 및 공공기관용 Adobe Sign Solutions와 통합하여 전자 서명을 위한 양식 및 문서를 사용자에게 전송할 수 있습니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ko">Adobe Sign을 통해 적응형 양식에 전자 서명 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko&#generate-document-of-record-step">비즈니스 워크플로 기록 문서 </a> 또는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko&#sign-document-step"> 전자 서명 </a> 단계 추가</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko#sign-document-step">Adobe Sign 및 AEM 워크플로를 사용하여 문서에 전자 서명</a></li></ul> |
+| Forms 워크플로 | 양식 및 문서 서비스와 관련된 비즈니스 프로세스를 자동화합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">검토를 위해 양식 또는 문서 전송</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">승인 거부 워크플로 만들기</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 데이터 저장소 또는 워크플로에 데이터 제출</a></li></ul> |
+| 전자 서명 | Adobe Sign 및 공공기관용 Adobe Sign Solutions와 통합하여 전자 서명을 위한 양식 및 문서를 사용자에게 전송할 수 있습니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">Adobe Sign을 통해 적응형 양식에 전자 서명 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">비즈니스 워크플로 기록 문서 </a> 또는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step"> 전자 서명 </a> 단계 추가</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko#sign-document-step">Adobe Sign 및 AEM 워크플로를 사용하여 문서에 전자 서명</a></li></ul> |
 
 ### 데이터 통합 및 분석 {#data-integration}
 
@@ -96,10 +120,10 @@ AEM Forms as a Cloud Service는 다음 카테고리로 구성된 포괄적인 �
 
 | 기능 | 설명 |
 |---|---|
-| 양식 분석 | Adobe Analytics를 사용하여 사용자 행동 및 선호도에 대한 귀중한 인사이트를 얻습니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=ko">Adobe Analytics를 통해 적응형 양식 연결</a></li></ul> |
+| 양식 분석 | Adobe Analytics를 사용하여 사용자 행동 및 선호도에 대한 귀중한 인사이트를 얻습니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">Adobe Analytics를 통해 적응형 양식 연결</a></li></ul> |
 | Adobe 통합 | 다른 Adobe 솔루션에 양식을 연결합니다. <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Adobe Workfront Fusion에 연결</a> 및 Workfront 시나리오에 데이터 제출</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">Adobe Marketo Engage에 연결</a> 및 <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">Marketo에 데이터 제출</a></li></ul> |
 | Microsoft 통합 | Microsoft 서비스에 양식을 연결합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ko">Microsoft® Dynamics 365에 연결</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko">Microsoft® Azure Blob Storage에 연결</a> 및 <a href="/help/forms/configure-submit-action-azure-blob-storage.md">Azure Blob Storage에 데이터 제출</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Microsoft® SharePoint 문서 라이브러리에 연결</a> 및 <a href="/help/forms/configure-submit-action-sharepoint.md">SharePoint에 데이터 제출</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">Microsoft® OneDrive에 연결</a> 및 OneDrive에 데이터 제출</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Microsoft® Power Automate 연결</a> 및 양식 제출 시 흐름 트리거</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">Microsoft® Dynamics OData에 연결</a></li></ul> |
-| 기타 데이터 소스 | 추가 데이터 소스 및 엔드포인트에 연결합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko">RDBMS 또는 Rest 엔드포인트에 연결</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Salesforce에 연결</a> 및 Salesforce에 데이터 제출</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko#submit-to-rest-endpoint">REST 엔드포인트에 제출</a></li></ul> |
+| 기타 데이터 소스 | 추가 데이터 소스 및 엔드포인트에 연결합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko">RDBMS 또는 Rest 엔드포인트에 연결</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Salesforce에 연결</a> 및 Salesforce에 데이터 제출</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">REST 엔드포인트에 제출</a></li></ul> |
 
 ## AEM 내 AI 어시스턴트
 

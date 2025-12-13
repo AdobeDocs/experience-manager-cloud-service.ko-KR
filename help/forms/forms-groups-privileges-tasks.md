@@ -1,13 +1,13 @@
 ---
-title: AEM Formsas a Cloud Service 에서 바로 사용할 수 있는 사용자 그룹은 무엇입니까?
+title: AEM Forms as a Cloud Service에서 즉시 사용할 수 있는 사용자 그룹은 무엇입니까?
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 26%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 26%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
-as a Cloud Service [!DNL AEM Forms]을(를) 설정하면 아래 표에 나열된 그룹(예: [!DNL forms-users] 및 forms-power-user)을 자동으로 할당할 수 있습니다.
+[!DNL AEM Forms] as a Cloud Service을 설정하면 아래 표에 나열된 그룹(예: [!DNL forms-users] 및 Forms-Power-User)을 자동으로 할당할 수 있습니다.
 
 <table>
  <tbody>
@@ -107,6 +107,14 @@ as a Cloud Service [!DNL AEM Forms]을(를) 설정하면 아래 표에 나열된
   </tr>
  </tbody>
 </table>
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms은 보험 운영을 위한 엔터프라이즈급 제품입니다.
+
+예. AEM Forms은 규모에 맞는 보험 운영에 필요한 역할 기반 액세스 제어, 감사 추적, 워크플로우 오케스트레이션, 문서 생성 및 배포 유연성과 같은 엔터프라이즈 기능을 제공합니다.
 
 ## 추가 참조
 

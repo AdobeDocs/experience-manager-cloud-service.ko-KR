@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2154'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,14 @@ ht-degree: 3%
 AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다. 이러한 로케일을 추가하여 적응형 Forms을 아랍어, 페르시아어, 우르두어 등과 같은 RTL(오른쪽에서 왼쪽으로 쓰기) 언어로 표시할 수도 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms에서 다국어 보험 사용 사례를 지원합니까?
+
+예. AEM Forms은 다국어 양식 경험을 지원하며, 이는 지역 및 언어에 걸쳐 운영되는 보험사에 중요합니다.
 
 ## AEM Forms은 적응형 양식에 대한 로케일을 어떻게 결정합니까?
 
@@ -117,7 +125,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
 
    **이 정보를 찾을 수 있는 위치**
 
-   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)&quot;를 참조하십시오.
+   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
 
    **프로젝트가 준비되었습니다!**
 
@@ -140,7 +148,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     `<appid>`을(를) 프로젝트별 앱 ID로 바꾸십시오. `archetype.properties` 파일에서 AEM 프로젝트에 대한 `<appid>`을(를) 찾을 수 있습니다.
+     `<appid>`을(를) 프로젝트별 앱 ID로 바꾸십시오. `<appid>` 파일에서 AEM 프로젝트에 대한 `archetype.properties`을(를) 찾을 수 있습니다.
 
      ![Archetype 속성](/help/forms/assets/archetype-properties.png)
 
@@ -228,7 +236,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![clientlib-it-custom-locale 붙여넣기](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. `languageinit.js`에서 `aemLangUrl` 경로 업데이트
+1. `aemLangUrl`에서 `languageinit.js` 경로 업데이트
 
    1. [AEMaaCS 프로젝트 디렉터리] 내에서 다음 디렉터리로 이동합니다.
 
@@ -335,7 +343,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. filter.xml에 새 폴더 포함:
 
-   [AEMaaCS 프로젝트 디렉터리]에서 `/ui.content/src/main/content/meta-inf/vault/filter.xml` 파일로 이동합니다.
+   `/ui.content/src/main/content/meta-inf/vault/filter.xml`AEMaaCS 프로젝트 디렉터리[에서 ] 파일로 이동합니다.
 
    파일을 열고 끝에 다음 줄을 추가합니다.
 
@@ -347,9 +355,9 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 파일을 저장합니다.
 
-### 새로 생성된 로케일을 AEM 환경에 배포
+### 새로 만든 로케일을 AEM 환경에 배포합니다
 
-이제 적응형 Forms에 새 로케일을 사용하도록 모두 설정되었습니다. 다음을 수행할 수 있습니다.
+이제 적응형 Forms에 새 로케일을 사용하도록 모두 설정되었습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
 * 로컬 개발 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터리]를 배포하여 로컬 컴퓨터에서 새 로케일 구성을 시도합니다. 로컬 개발 환경에 배포하려면 다음을 수행하십시오.
 
@@ -357,7 +365,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    1. 터미널 창이나 명령 프롬프트를 엽니다.
 
-   1. [AEMaaCS 프로젝트 디렉터리] (으)로 이동
+   1. [AEMaaCS 프로젝트 디렉터리]&#x200B;(으)로 이동
 
    1. 다음 명령을 실행합니다.
 
@@ -365,7 +373,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
       mvn -PautoInstallPackage clean install
       ```
 
-* Cloud Service 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터리]를 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+* AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터리]를 Cloud Service 환경에 배포합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
 
    1. 변경 내용 커밋:
 
@@ -375,7 +383,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       [기존 전체 스택 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)을 통해 코드 배포를 트리거합니다. 이렇게 하면 새 로케일 지원을 통해 업데이트된 코드를 자동으로 빌드하고 배포합니다.
 
-      아직 파이프라인을 설정하지 않았다면 [AEM Formsas a Cloud Service 에 대한 파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
+      파이프라인을 아직 설정하지 않았다면 [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)에 대한 안내서를 참조하십시오.
 
 
 ## 새로 추가된 로케일이 있는 적응형 양식 미리 보기
@@ -388,13 +396,13 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. **프로젝트 제목**&#x200B;을 지정하고 **번역 프로젝트에 사전 추가** 마법사의 드롭다운 메뉴에서 **타겟 언어**&#x200B;를 선택합니다.
 1. **완료**&#x200B;를 클릭하고 만든 번역 프로젝트를 실행하십시오.
 1. **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
-1. 적응형 양식을 선택하고 **HTML으로 미리 보기** 옵션을 선택하십시오.
+1. 적응형 양식을 선택하고 **HTML으로 미리 보기** 옵션을 선택합니다.
 1. 미리 보기 URL에 `&afAcceptLang=<locale-name>`을(를) 추가하고 반환 키를 누릅니다. `<locale-name>`을(를) 실제 로케일 코드로 바꾸십시오. 적응형 양식이 지정된 로케일에 표시됩니다.
 
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
-* Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다. 현지화 프로세스를 간소화합니다.
-* 숫자 상자 및 날짜 선택기 구성 요소가 특정 로케일로 변환되면 형식 문제가 발생할 수 있습니다. 이를 완화하기 위해 **언어** 옵션이 [날짜 선택기 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 및 [숫자 상자 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)의 구성 대화 상자에 통합되었습니다.
+* Adobe에서는 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다. 현지화 프로세스를 간소화합니다.
+* 숫자 상자 및 날짜 선택기 구성 요소가 특정 로케일로 변환되면 형식 문제가 발생할 수 있습니다. 이를 완화하기 위해 **언어** 옵션이 [날짜 선택기 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 및 [숫자 상자 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)의 구성 대화 상자에 통합되었습니다.
 
 
 * 새 필드 처리:

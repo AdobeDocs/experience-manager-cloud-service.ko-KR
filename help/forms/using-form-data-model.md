@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1417'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -37,6 +37,22 @@ FDM(양식 데이터 모델)은 다음과 같은 작업을 수행하는 데 사�
 * [양식 데이터 모델 서비스 사용](#prefill)
 * [제출된 적응형 양식 데이터를 데이터 소스에 다시 쓰기](#write-af)
 * [적응형 양식 규칙을 사용하여 서비스 호출](#invoke-services)
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms을 보험 핵심 시스템과 통합할 수 있습니까?
+
+예. AEM Forms은 REST 및 SOAP API를 사용한 통합을 지원하므로 정책 관리 시스템, 클레임 관리 시스템 및 CRM과 연결할 수 있습니다.
+
+## AEM Forms이 양식 데이터를 보험 시스템에 다시 쓸 수 있습니까?
+
+예. AEM Forms은 양식 제출 및 워크플로우 실행의 일부로 백엔드 시스템에 대한 데이터 쓰기 되돌림을 지원합니다.
+
+## 고객이 AEM Forms을 사용하여 클레임 문서를 안전하게 업로드할 수 있습니까?
+
+예. AEM Forms은 엔터프라이즈 보안 요구 사항에 맞는 액세스 제어 및 보안 데이터 처리를 통해 양식 제출의 일부로 보안 문서 업로드를 지원합니다.
 
 ## 적응형 Forms 및 조각 만들기 {#create-af}
 

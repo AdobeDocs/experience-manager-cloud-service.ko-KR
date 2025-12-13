@@ -4,9 +4,9 @@ description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 양식을 작성하거나 제출할 때 인쇄 또는 문서 형식으로 양식을 기록할 수 있습니다. 이 레코드를 DoR(기록 문서)이라고 합니다. 제출된 양식의 인쇄용 사본입니다. 고객이 나중에 작성한 정보에 대한 기록 문서를 참조하거나 기록 문서를 사용하여 양식과 콘텐츠를 PDF 형식으로 함께 보관할 수도 있습니다.
 
 ![기록 문서](assets/document-of-record.png)
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms에서 보험 청구 문서를 생성할 수 있습니까?
+
+예. AEM Forms은 DoR(Document of Record) 생성을 지원하여 보험사가 제출된 양식 데이터를 기반으로 PDF와 레코드를 생성할 수 있도록 합니다.
+
+## AEM Forms에서 생성한 문서가 감사에 적합합니까?
+
+예. AEM Forms은 감사 및 규정 준수 요구 사항에 중요한 일관된 문서 생성, 액세스 제어 및 추적 기능을 지원합니다.
 
 기록 문서를 만들기 위해 XFA 또는 Acroform 기반 템플릿을 적응형 양식을 통해 수집된 데이터와 병합합니다. 자동으로 또는 온디맨드로 기록 문서를 생성할 수 있습니다. 온디맨드 옵션을 사용하면 사용자 지정 XFA 또는 Acroform 기반 템플릿을 지정하여 기록 문서에 사용자 지정 모양을 제공할 수 있습니다.
 

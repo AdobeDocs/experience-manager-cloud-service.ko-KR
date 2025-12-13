@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 1%
+source-wordcount: '2044'
+ht-degree: 2%
 
 ---
 
@@ -16,16 +16,24 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 소개 {#introduction}
 
 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 적응형 양식에서 데이터를 미리 채우려면 적응형 Forms의 미리 채우기 데이터 구조를 준수하는 형식으로 사용자 데이터를 미리 채우기 XML/JSON으로 사용할 수 있습니다.
+
+## 적용 가능성 및 사용 사례
+
+### 보험
+
+## AEM Forms에서 보험 신청 데이터를 미리 채울 수 있습니까?
+
+예. AEM Forms은 백엔드 데이터 소스를 사용하여 양식 필드 미리 채우기를 지원하므로 보험사가 기존 고객 또는 정책 데이터를 재사용하고 수동 입력을 줄일 수 있습니다.
 
 ## 미리 채우기 데이터 구조 {#the-prefill-structure}
 
@@ -212,7 +220,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 
 ### 양식 모델이 없는 적응형 양식 {#adaptive-form-with-no-form-model}
 
-양식 모델이 없는 적응형 Forms의 경우 모든 필드의 데이터는 `<afUnboundData> tag`의 `<data>` 태그 아래에 있습니다.
+양식 모델이 없는 적응형 Forms의 경우 모든 필드의 데이터는 `<data>`의 `<afUnboundData> tag` 태그 아래에 있습니다.
 
 또한 다음 사항에 유의하십시오.
 
@@ -239,7 +247,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 
 ## 미리 채우기 서비스 구성 중 {#configuring-prefill-service-using-configuration-manager}
 
-**기본 미리 채우기 서비스 구성**&#x200B;의 `alloweddataFileLocations` 속성을 사용하여 데이터 파일의 위치 또는 데이터 파일 위치에 대한 정규 표현식(정규 표현식)을 설정합니다.
+`alloweddataFileLocations`기본 미리 채우기 서비스 구성&#x200B;**의** 속성을 사용하여 데이터 파일의 위치 또는 데이터 파일 위치에 대한 정규 표현식(정규 표현식)을 설정합니다.
 
 다음 JSON 파일에는 샘플이 표시됩니다.
 
@@ -309,7 +317,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### slingRequest에서 데이터 속성 설정 {#setting-data-attribute-in-slingrequest}
 
-`slingRequest`에서 `data` 특성을 설정할 수도 있습니다. 여기서 `data` 특성은 아래 샘플 코드(예: XML용)에 표시된 대로 XML 또는 JSON이 포함된 문자열입니다.
+`data`에서 `slingRequest` 특성을 설정할 수도 있습니다. 여기서 `data` 특성은 아래 샘플 코드(예: XML용)에 표시된 대로 XML 또는 JSON이 포함된 문자열입니다.
 
 ```javascript
 <%
@@ -329,7 +337,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 모든 데이터가 포함된 간단한 XML 또는 JSON 문자열을 작성하여 slingRequest에서 설정할 수 있습니다. 이 작업은 slingRequest 데이터 속성을 설정할 수 있는 페이지에 포함하려는 모든 구성 요소에 대해 렌더러 JSP에서 쉽게 수행할 수 있습니다.
 
-예를 들어 특정 유형의 헤더가 있는 페이지에 특정 디자인을 사용하려는 경우. 이를 위해 페이지 구성 요소에 포함하고 `data` 특성을 설정할 수 있는 자신의 `header.jsp`을(를) 작성할 수 있습니다.
+예를 들어 특정 유형의 헤더가 있는 페이지에 특정 디자인을 사용하려는 경우. 이를 위해 페이지 구성 요소에 포함하고 `header.jsp` 특성을 설정할 수 있는 자신의 `data`을(를) 작성할 수 있습니다.
 
 또 다른 좋은 예는 Facebook, Twitter 또는 LinkedIn과 같은 소셜 계정을 통해 로그인할 때 데이터를 미리 채우는 사용 사례입니다. 이 경우 사용자 계정에서 데이터를 가져오고 데이터 매개 변수를 설정하는 간단한 JSP를 `header.jsp`에 포함할 수 있습니다.
 
@@ -346,7 +354,7 @@ prefill-page component.zip
 
 프리필 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징된다. OSGi 번들을 만들고 업로드한 후 [!DNL AEM Forms] 번들에 설치합니다. 번들 만들기를 시작하기 전에 다음을 수행하십시오.
 
-- [클라이언트 SDK 다운로드 [!DNL AEM Forms] 2&rbrace;](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+- [클라이언트 SDK 다운로드 [!DNL AEM Forms] 2}](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
 - 보일러 플레이트 패키지 다운로드
 
 - crx-repository에 데이터(데이터 미리 채우기) 파일을 넣습니다. crx-repository의 \contents 폴더에 있는 임의의 위치에 파일을 배치할 수 있습니다.
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
