@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 58%
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md)에 유의하십시오.
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md#best-practices)에 유의하십시오.
 
 >[!CAUTION]
 >
@@ -88,7 +88,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      ![필드 이동](assets/cf-cfmodels-move-field-icon.png)
 
-   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
+   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
 필드.
 
       * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.

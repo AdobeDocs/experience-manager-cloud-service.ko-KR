@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 70%
@@ -29,7 +29,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/assets/content-fragments/content-fragments.md)에 유의하십시오.
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/assets/content-fragments/content-fragments.md#best-practices)에 유의하십시오.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반으로 또는 페이�
 
 >[!NOTE]
 >
->이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=ko)입니다.
+>이러한 작업 중 대부분은 [자산](/help/assets/manage-digital-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)입니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 

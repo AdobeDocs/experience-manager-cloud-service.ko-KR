@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '3604'
 ht-degree: 77%
@@ -25,7 +25,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/assets/content-fragments/content-fragments.md)에 유의하십시오.
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/assets/content-fragments/content-fragments.md#best-practices)에 유의하십시오.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/assets/content-fragme
    >
    >[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/assets/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-1. **모델 제목**&#x200B;을 지정합니다.
+1. **모델 제목**을 지정합니다.
 다양한 속성을 정의할 수도 있습니다. 예를 들어 **태그**, **설명**&#x200B;을 추가하고, 필요한 경우 **모델 활성화**&#x200B;를 선택하여 [모델을 활성화](#enabling-disabling-a-content-fragment-model)할 수 있습니다.
 
    >[!NOTE]
@@ -523,7 +523,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시**&#x200B;를 클릭합니다.
+1. 모델을 선택한 후 도구 모음에서 **게시**를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
    >[!NOTE]
@@ -539,7 +539,7 @@ type CompanyModel {
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 다음 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
+1. 모델을 선택한 다음 도구 모음에서 **게시 취소**를 선택합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
 하나 이상의 조각에서 현재 사용 중인 모델을 게시 취소하려고 하면 이를 알리는 오류 경고가 표시됩니다.

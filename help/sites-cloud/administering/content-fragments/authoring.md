@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 68%
@@ -35,7 +35,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md)에 유의하십시오.
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/sites-cloud/administering/content-fragments/overview.md#best-practices)에 유의하십시오.
 
 >[!WARNING]
 >
@@ -271,7 +271,7 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
