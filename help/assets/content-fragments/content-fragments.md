@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 52%
+source-wordcount: '2610'
+ht-degree: 51%
 
 ---
 
@@ -93,7 +93,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 ## 콘텐츠 조각 및 콘텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 콘텐츠 조각(및 그 변형)은 **에셋** 콘솔에서 만들고 유지 관리할 수 있습니다.
    * 콘텐츠 조각 편집기에서 작성 및 편집됩니다.
 
-* 콘텐츠 조각 구성 요소[(참조 구성 요소)가 &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md)페이지 편집기에서 사용합니다.
+* 콘텐츠 조각 구성 요소[(참조 구성 요소)가 ](/help/sites-cloud/authoring/fragments/content-fragments.md)페이지 편집기에서 사용합니다.
 
    * **콘텐츠 조각** 구성 요소는 페이지 작성자가 사용할 수 있습니다. 따라서 페이지 작성자가 HTML 또는 JSON 형식으로 필요한 콘텐츠 조각을 참조하고 게재할 수 있습니다.
 
@@ -352,9 +352,15 @@ AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능�
 
 ### 서식 있는 텍스트 필드 {#rich-text-fields}
 
-서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식)를 고려하십시오.
+서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식) 사용:
 
-모델당 리치 텍스트 필드 수를 제한합니다. 각 조각에 저장된 텍스트의 양 및 HTML 서식의 양이기도 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
+* 필드
+
+  모델당 리치 텍스트 필드 수를 제한합니다. 성능상의 이유로 한 모델에 10개 이상의 리치 텍스트 필드를 포함하는 것은 권장되지 않습니다. 필요한 경우 [중첩된 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content)을 사용하는 것이 좋습니다.
+
+* 콘텐츠
+
+  각 조각에 저장되는 텍스트 양과 HTML 서식의 양도 제한해야 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
 
 ### 변형의 수 {#number-of-variations}
 

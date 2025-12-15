@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 72%
+source-wordcount: '2391'
+ht-degree: 71%
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM) as a Cloud Service을 사용하면 컨텐츠 조�
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 포맷으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
-* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 추가하여 벌크 게재를 수행할 수 있습니다.
+* API 게재에 사용되는 페이지에서 여러 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 추가하여 벌크 게재를 수행할 수 있습니다.
 
 커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
@@ -86,7 +86,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 이 페이지와 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -187,7 +187,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * [콘텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fragments/content-fragments.md)에서 사용 가능합니다.
 
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
 
 콘텐츠 조각은 다음과 같은 콘텐츠 구조입니다.
 
@@ -274,7 +274,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
-   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)을 참조하십시오.
+   * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)을 참조하십시오.
 
 ## 콘텐츠 조각 콘솔 {#content-fragments-console}
 
@@ -294,7 +294,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
-* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -346,7 +346,7 @@ AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능�
 
 콘텐츠 조각 참조를 많이 사용하면 시스템 성능, UI 응답성 및 GraphQL 쿼리 실행에 상당한 영향을 줄 수 있습니다. 10개 수준 이하로 중첩을 유지하는 것을 목표로 합니다.
 
-### 모델당 데이터 필드 및 형식 수 {#number-of-data-fields-and-types-per-model}
+### 모델당 데이터 필드 및 유형 수 {#number-of-data-fields-and-types-per-model}
 
 모델에 실제로 필요한 데이터 필드와 유형만 포함합니다.
 
@@ -354,9 +354,15 @@ AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능�
 
 ### 서식 있는 텍스트 필드 {#rich-text-fields}
 
-서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식)를 고려하십시오.
+서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식) 사용:
 
-모델당 리치 텍스트 필드 수를 제한합니다. 각 조각에 저장된 텍스트의 양 및 HTML 서식의 양이기도 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
+* 필드
+
+  모델당 리치 텍스트 필드 수를 제한합니다. 성능상의 이유로 한 모델에 10개 이상의 리치 텍스트 필드를 포함하는 것은 권장되지 않습니다. 필요한 경우 [중첩된 콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)을 사용하는 것이 좋습니다.
+
+* 콘텐츠
+
+  각 조각에 저장되는 텍스트 양과 HTML 서식의 양도 제한해야 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
 
 ### 변형의 수 {#number-of-variations}
 
