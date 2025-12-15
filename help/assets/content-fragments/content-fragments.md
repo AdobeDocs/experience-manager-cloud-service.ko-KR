@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 51%
@@ -93,7 +93,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 ## 콘텐츠 조각 및 콘텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 콘텐츠 조각(및 그 변형)은 **에셋** 콘솔에서 만들고 유지 관리할 수 있습니다.
    * 콘텐츠 조각 편집기에서 작성 및 편집됩니다.
 
-* 콘텐츠 조각 구성 요소[(참조 구성 요소)가 &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md)페이지 편집기에서 사용합니다.
+* 콘텐츠 조각 구성 요소[(참조 구성 요소)가 ](/help/sites-cloud/authoring/fragments/content-fragments.md)페이지 편집기에서 사용합니다.
 
    * **콘텐츠 조각** 구성 요소는 페이지 작성자가 사용할 수 있습니다. 따라서 페이지 작성자가 HTML 또는 JSON 형식으로 필요한 콘텐츠 조각을 참조하고 게재할 수 있습니다.
 
@@ -344,7 +344,7 @@ AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능�
 
 콘텐츠 조각 참조를 많이 사용하면 시스템 성능, UI 응답성 및 GraphQL 쿼리 실행에 상당한 영향을 줄 수 있습니다. 10개 수준 이하로 중첩을 유지하는 것을 목표로 합니다.
 
-### 모델당 데이터 필드 및 형식 수 {#number-of-data-fields-and-types-per-model}
+### 모델당 데이터 필드 및 유형 수 {#number-of-data-fields-and-types-per-model}
 
 모델에 실제로 필요한 데이터 필드와 유형만 포함합니다.
 
