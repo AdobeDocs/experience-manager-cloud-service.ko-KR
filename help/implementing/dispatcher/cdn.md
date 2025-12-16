@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
+source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1772'
 ht-degree: 11%
 
 ---
@@ -132,7 +132,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 고객 CDN과 AEM CDN 간의 추가 홉은 캐시 누락이 있는 경우에만 필요합니다. 이 문서에 설명된 캐시 최적화 전략을 사용하면 고객 CDN을 추가하면 무시할 수 있는 지연만 발생합니다.
 
-이 고객 CDN 구성은 게시 계층에 대해 지원되지만 작성자 계층 앞에서는 지원되지 않습니다.
+이 고객 CDN 구성은 게시 계층 및 미리보기 계층에 대해 지원되지만 작성자 계층 앞에서는 지원되지 않습니다.
 
 ### 디버깅 구성
 
@@ -163,7 +163,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
 >
 >* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
