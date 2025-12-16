@@ -4,7 +4,7 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 67%
@@ -43,7 +43,7 @@ ht-degree: 67%
 | `copy` | [복사 및 붙여넣기 단추](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)를 사용하지 않도록 설정합니다. |
 | `duplicate` | [중복 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)를 사용하지 않도록 설정합니다. |
 | `header-open-page` | [페이지 열기 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)를 사용하지 않도록 설정합니다. |
-| `dev-login` | [개발자 로그인 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)를 사용하지 않도록 설정합니다. |
+| `aem-dev-login` | [개발자 로그인 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)를 사용하지 않도록 설정합니다. |
 
 ## 엔드포인트 변경 {#custom-endpoint}
 

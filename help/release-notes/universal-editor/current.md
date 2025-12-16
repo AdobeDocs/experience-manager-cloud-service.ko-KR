@@ -4,7 +4,7 @@ description: 다음은 범용 편집기 2025.12.11 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 21%
@@ -28,7 +28,7 @@ ht-degree: 21%
 
 * [리치 텍스트 편집기의 기존 표에 지원이 추가되었습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * [서식 있는 텍스트 편집기의 중첩 목록에 대해 Tab 키를 사용하도록 설정했습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 이제 [meta 태그 `dev-login`을(를) 통해 개발자 로그인 기능을 사용하지 않도록 설정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* 이제 [meta 태그 `aem-dev-login`을(를) 통해 개발자 로그인 기능을 사용하지 않도록 설정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * 이제 오버레이 섹션을 마우스 오른쪽 단추로 클릭하면 [상황에 맞는 옵션 메뉴가 표시됩니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [범위 들여쓰기](/help/implementing/universal-editor/configure-rte.md#indentation)가 이제 [서식 있는 텍스트 편집기에서 지원됩니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
