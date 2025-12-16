@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 37%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**인증서 유효성
++++인증서 유효성
 
 ## 인증서 유효성 {#validity}
 
@@ -138,16 +138,16 @@ Cloud Manager는 SSL 인증서가 현재 날짜로부터 최소 90일 동안 유
 
 +++
 
-+++**잘못된 SAN 인증서가 내 도메인에 적용됨
++++잘못된 SAN 인증서가 내 도메인에 적용됨
 
 ## 잘못된 SAN 인증서가 내 도메인에 적용됨 {#wrong-san-cert}
 
 `dev.yoursite.com` 및 `stage.yoursite.com`을(를) 비프로덕션 환경에 연결하고 `prod.yoursite.com`을(를) 프로덕션 환경에 연결합니다.
 
-이러한 도메인에 대해 CDN을 구성하려면 각 도메인에 대해 인증서가 설치되어 있어야 하므로 비프로덕션 도메인에는 `*.yoursite.com`을(를) 포함하는 인증서를 설치하고 프로덕션 도메인에는 `*.yoursite.com`을(를) 포함하는 인증서를 설치합니다.
+이러한 도메인에 대해 CDN을 구성하려면 각 도메인에 대해 인증서가 설치되어 있어야 하므로 비프로덕션 도메인에 대해 `*.yoursite.com`을(를) 포함하는 인증서 하나와 프로덕션 도메인에 대해 `*.yoursite.com`을(를) 포함하는 인증서 하나를 설치합니다.
 
-이 구성은 유효합니다. 그러나 인증서 중 하나를 업데이트할 때에는 두 인증서가 동일한 SAN 항목을 포함하므로 CDN이 적용 가능한 모든 도메인에 최신 인증서를 설치하게 되며, 이는 예기치 않게 나타날 수 있습니다.
+이 구성은 유효합니다. 그러나 인증서 중 하나를 업데이트해도 두 인증서는 동일한 SAN 항목을 처리합니다. 그 결과 CDN은 적용 가능한 모든 도메인에 가장 최근 인증서를 설치하는데, 이는 예기치 않은 것처럼 보일 수 있습니다.
 
-예기치 않은 오류일 수 있지만 이는 기본 CDN의 표준 동작입니다. 동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우, 해당 도메인에 한 개의 인증서가 포함되고 다른 인증서가 업데이트되면 이제 도메인에 대해 후자가 설치됩니다.
+이 시나리오는 예기치 않을 수 있지만 오류가 아니며 기본 CDN의 표준 동작입니다. 동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우 CDN은 해당 도메인에 대해 가장 최근에 업데이트된 인증서를 설치합니다. 이 상황은 다른 인증서가 이미 동일한 도메인 항목을 다루고 있는 경우에도 발생합니다.
 
 +++
