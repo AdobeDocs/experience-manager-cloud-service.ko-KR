@@ -274,7 +274,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 | 권장 기간 | 15m | Adobe은 테스트를 이 시간 제한 미만으로 유지하는 것을 권장합니다. |
 
 * Target 작성자/게시가 IP 허용 목록에 추가으로 보호되는 경우 파이프라인 UI 테스트 인프라가 허용 목록에추가된여야 합니다. 또는 UI 테스트가 실패하고 403 금지됩니다.
-[IP 허용 목록에 추가으로 인한 AEMaaCS의 UI 테스트 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) 및 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 참조하세요.
+[IP 허용 목록에 추가으로 인한 AEMaaCS의 UI 테스트 실패](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26654#) 및 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 참조하세요.
 
 >[!NOTE]
 >
