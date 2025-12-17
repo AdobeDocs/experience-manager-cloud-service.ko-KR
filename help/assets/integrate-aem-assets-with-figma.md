@@ -35,16 +35,16 @@ ht-degree: 1%
 1. [!DNL Figma] 홈 페이지의 캔버스 아래쪽에 있는 도구 모음에서 **[!UICONTROL 작업]**&#x200B;을 클릭하고 대화 상자에서 사용할 수 있는 검색 막대에서 [!DNL Adobe Experience Manager (AEM) Assets Connector]을(를) 검색합니다.
 1. [!DNL Adobe Experience Manager (AEM) Assets Connector] 패널을 표시하려면 [!DNL Adobe Experience Manager (AEM) Assets Connector]을(를) 선택하십시오. 이 패널을 사용하여 [에셋을  [!DNL AEM] 캔버스 [!DNL Figma] (으)로 가져오기](#import-aem-assets-into-figma-workflow)합니다.
    ![작업](/help/assets/assets/actions-on-figma.png)
-또는 [[!DNL Adobe Experience Manager (AEM) Assets Connector] 커뮤니티에서 사용 가능한 ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)[!DNL Figma]에 액세스하여 **[!UICONTROL 여는 위치...]**&#x200B;를 클릭하고, 최근 파일을 선택하거나 새 파일을 만든 다음 **[!UICONTROL 실행]**&#x200B;을 클릭하여 [!DNL Adobe Experience Manager (AEM) Assets Connector] 패널에 액세스합니다.
+또는 [[!DNL Adobe Experience Manager (AEM) Assets Connector] 커뮤니티에서 사용 가능한 &#x200B;](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) [!DNL Figma]에 액세스하여 **[!UICONTROL 여는 위치...]**&#x200B;를 클릭하고, 최근 파일을 선택하거나 새 파일을 만든 다음 **[!UICONTROL 실행]**&#x200B;을 클릭하여 [!DNL Adobe Experience Manager (AEM) Assets Connector] 패널에 액세스합니다.
    ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
 >
-> [ 환경에 로그인한 후 ](https://helpx.adobe.com/contact.html)네트워크 오류&#x200B;**[!UICONTROL 메시지가 표시되면]** Adobe 지원에 문의[!DNL AEM]하십시오.
+> [&#x200B; 환경에 로그인한 후 &#x200B;](https://helpx.adobe.com/contact.html)네트워크 오류&#x200B;**[!UICONTROL 메시지가 표시되면]** Adobe 지원에 문의[!DNL AEM]하십시오.
 
 ## [!DNL AEM]개의 자산을 [!DNL Figma] 캔버스로 가져오기{#import-aem-assets-into-figma-workflow}
 
-[ 디자인 인터페이스에서 [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음을 수행합니다.[!DNL Figma]
+[&#x200B; 디자인 인터페이스에서 [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음을 수행합니다.[!DNL Figma]
 
 1. [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널에서 자산을 검색합니다. 자세한 내용은 [자산 선택기 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)을 참조하세요.
 
@@ -59,7 +59,7 @@ Figma 디자인이 준비되면 [자산을 AEM Assets 저장소로 내보내기]
 
 ## 자산을 [!DNL AEM Assets] 리포지토리로 내보내기{#export-figma-design-to-aem-assets-folder}
 
-[ 디자인 인터페이스에서 [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음 단계를 실행하여 디자인을 [!DNL Figma] 리포지토리로 내보냅니다.[!DNL AEM Assets]
+[&#x200B; 디자인 인터페이스에서 [!UICONTROL Adobe Experience Manager(AEM) Assets 커넥터] 패널](#access-aem-assets-connector)에 액세스하고 다음 단계를 실행하여 디자인을 [!DNL Figma] 리포지토리로 내보냅니다.[!DNL AEM Assets]
 
 1. [!DNL Figma] 디자인을 저장할 대상 폴더로 이동합니다. 이미 폴더에 있는 경우 폴더 경로에서 추가 옵션(![점 세 개](/help/assets/assets/three-dots.svg))을 클릭하여 다른 대상 폴더를 선택합니다.
 1. 선택 사항: 캔버스에서 에셋을 그룹화하여 폴더에서 업로드할 단일 단위로 선택합니다.
