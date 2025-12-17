@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 63%
+source-wordcount: '1704'
+ht-degree: 53%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service의 최신 릴리스 정보 {#release-notes}
 
 다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
 
@@ -40,13 +40,41 @@ ht-degree: 63%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM의 에이전트 {#agents-in-aem}
+## AEM 베타 프로그램 {#aem-beta-programs}
 
-AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 에이전트를 제공합니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
+Adobe Experience Manager(AEM) 베타 프로그램은 고객이 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, AEM의 미래를 안내할 수 있는 방법입니다.
+
+>[!IMPORTANT]
+>
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 방식으로)할 의무가 없습니다. Adobe은 고객에게 베타 릴리스의 올바른 기능이나 성능 또는 관련 설명서나 자료에 의존하지 말고 주의할 것을 권장합니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
+
+**참여의 이점**
+Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 피드백을 제공하고 제품 개발을 구체화할 수 있습니다. 또한 GA 전에 새로운 기능을 채택할 준비를 하는 데 도움이 됩니다.
+
+**현재 베타 프로그램**
+다음 섹션에는 활성 Beta 프로그램이 나와 있습니다.
+
+### AEM의 에이전트(Beta 프로그램)
+
+프로덕션, 거버넌스, 최적화, 검색 및 개발 전반에 걸쳐 강력하고 새로운 AEM 에이전트 기능에 신속하게 액세스할 수 있습니다. 귀하의 피드백은 Adobe의 로드맵과 최종 기능을 직접 만듭니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
+
+이 프로그램에 참여하도록 옵트인하려면 [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)에 전자 메일을 보내고 가능한 범위 내에서 다음 세부 정보를 포함하십시오.
+
+    * 에이전트를 적극적으로 사용할 팀원의 이름과 Adobe ID.
+    * 사용자 또는 팀이 사용할 특정 에이전트를 나열합니다. 또는 &quot;모든 에이전트&quot;라고 말하기만 하면 됩니다.
+
+### AEM Foundation(Beta 프로그램)
+
+    [AEM Foundation 베타 프로그램](#foundation-early-adopter)을 참조하십시오.
+
+### Cloud Manager (Beta 프로그램)
+
+    Cloud Manager 베타 프로그램(/help/implementing/cloud-manager/release-notes/current.md)을 참조하십시오.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -225,7 +253,7 @@ Beta에서 RDE(빠른 개발 환경)는 이제 코드 및 컨텐츠의 현재 �
 
 AEM Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하기 위해 Cursor, Claude Code, Visual Studio 및 IntelliJ와 같은 도구에서 AI 지원 개발을 사용하는 경우가 늘고 있습니다. 미래의 Adobe 지원 AI 기능을 구축하는 데 도움이 되는 실제 경험을 모으고 있습니다.
 
-[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에 이메일을 보내 팀의 작업과 Adobe에서 제공할 내용을 공유하십시오.
+[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)에 전자 메일을 보내 팀의 작업과 Adobe에서 제공할 내용을 공유하십시오.
 
 #### 애플리케이션 성능 모니터링(APM) 기능 확장(Alpha 프로그램) {#apm-alpha}
 
