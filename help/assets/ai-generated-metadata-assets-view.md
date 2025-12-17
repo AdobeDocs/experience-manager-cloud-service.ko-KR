@@ -1,7 +1,7 @@
 ---
 title: AI가 생성한 메타데이터를 통해 콘텐츠 검색 향상
 description: AI가 생성한 메타데이터를 통해 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 1. [선택 사항] 관련 태그가 누락된 경우 태그를 추가하거나 직접 만들 수 있습니다. 이렇게 하려면 **[!UICONTROL 생성된 키워드]** 필드에 태그를 쓰고 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-AI 생성 메타데이터를 비활성화하는 방법에 대한 자세한 내용은 [AI 생성 메타데이터 비활성화](/help/assets/smart-tags.md#disable-ai-generated-metadata)를 참조하십시오.
+AI 생성 메타데이터를 비활성화하는 방법에 대한 자세한 내용은 [AI 생성 메타데이터 비활성화](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)를 참조하십시오.
