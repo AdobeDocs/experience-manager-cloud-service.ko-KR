@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.7.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2025.7.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -241,18 +242,20 @@ OSGi 속성:
 
 ### 이전 버전 및 감사 로그의 기본 삭제 {#mt-defaults}
 
-현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 삭제 유지 관리 작업이 비활성화되어 있으므로 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
+현재 콘텐츠 버전과 감사 로그는 기본적으로 해당 *삭제 유지 관리 작업*&#x200B;이 비활성화되어 있으므로 명시적으로 구성하지 않는 한 데이터가 제거되지 않습니다.
 
-그러나 저장소 성능을 최적화하기 위해 다음 지침에 따라 향후 발표된 날짜에 기본적으로 삭제가 활성화됩니다.
+그러나 저장소 성능을 최적화하기 위해 나중에 발표되는 날짜에 기본적으로 제거가 활성화됩니다.
+
+자세한 내용은[유지 관리 작업 문서](/help/operations/maintenance.md#defaults)를 참조하십시오.
 
 #### 콘텐츠 버전 {#mt-content}
 
-* *새로운 환경* (향후 날짜 이후에 생성됨(나중에 전달))
-   * *30일* 이전 버전은 주기적으로 삭제됩니다.
+* **새 환경**(나중에 통신하도록 예정된 날짜 이후에 생성됨):
+   * 30일 넘는 버전은 정기적으로 삭제됩니다.
    * 지난 30일 이내의 최신 버전 5개는 보관 기간에 관계없이 가장 최신 버전 및 현재 버전도 함께 유지됩니다.
 
-* *기존 환경*(향후 날짜 이전에 생성됨):
-   * *7년* 이전 버전은 주기적으로 삭제됩니다.
+* **기존 환경**(향후 날짜 이전에 생성됨):
+   * 7년 이상 버전은 정기적으로 삭제됩니다.
    * 지난 7년 이내의 모든 버전이 보존됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
@@ -260,18 +263,16 @@ OSGi 속성:
 
 #### 감사 로그 {#mt-auditlogs}
 
-* *새로운 환경*(향후 날짜가 정해지면 별도 공지 예정):
-   * 복제, DAM 및 페이지 감사 로그는 *7일* 이상 주기적으로 삭제됩니다.
+* **새로운 환경**(향후 날짜가 정해지면 별도 공지 예정):
+   * 7일 넘는 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
    * 모든 이벤트는 기본적으로 기록됩니다.
 
-* *기존 환경*(향후 날짜 이전에 생성됨):
-   * 복제, DAM 및 페이지 감사 로그는 *7년* 이상 주기적으로 삭제됩니다.
+* **기존 환경**(향후 날짜 이전에 생성됨):
+   * 7년 이상 된 복제, DAM 및 페이지 감사 로그는 정기적으로 삭제됩니다.
    * 모든 이벤트는 기본적으로 기록됩니다.
    * 이 높은 기본 임계값은 최근 데이터가 의도치 않게 제거되는 것을 방지합니다. 그러나 저장소 성능을 최적화하려면 더 낮은 값을 구성하는 것이 좋습니다.
 
 * 해당 기본값은 구성 파이프라인을 사용해 배포된 YAML 구성으로 수정할 수 있습니다.
-
-자세한 내용은[유지 관리 작업 문서](/help/operations/maintenance.md#defaults)를 참조하십시오.
 
 ### 에지 컴퓨팅 (Alpha 프로그램) {#edge-computing}
 
