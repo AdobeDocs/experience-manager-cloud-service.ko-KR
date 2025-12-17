@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 29%
+source-wordcount: '2057'
+ht-degree: 28%
 
 ---
 
@@ -49,14 +49,14 @@ ht-degree: 29%
   <tr>
     <td>버전 삭제</td>
     <td>고객</td>
-    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>고객</td>
-    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
+    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
    </td>
   </tr>
@@ -70,7 +70,7 @@ ht-degree: 29%
     <td>애드혹 작업 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
     <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>granite_TaskPurgeTask</code> 특성이 <code>sling:resourceType</code>(으)로 설정되고 <code>granite/operations/components/maintenance/task</code> 특성이 <code>granite.maintenance.name</code>(으)로 설정된 <code>TaskPurge</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ ht-degree: 29%
     <td>워크플로 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성하십시오. <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">워크플로 인스턴스 정기적 제거</a>를 참조하십시오.</p>
   </td>
   </tr>
@@ -86,8 +86,8 @@ ht-degree: 29%
     <td>프로젝트 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe 프로젝트 제거 구성</a>에 대한 <b>OSGi 속성</b> 목록을 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/libs</code>, <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에 속성을 만들어 <code>granite_monthly</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 테이블을 참조하십시오.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe 프로젝트 제거 구성</a>에 대한 <b>OSGi 속성</b> 목록을 참조하십시오.</p>
   </td>
   </tr>
   </tbody>
@@ -146,9 +146,9 @@ ht-degree: 29%
 
 ### 위치 {#locations}
 
-* 일별 - /apps/settings/granite/operations/maintenance/granite_daily
-* 주별 - /apps/settings/granite/operations/maintenance/granite_weekly
-* 월별 - /apps/settings/granite/operations/maintenance/granite_monthly
+* 일별 - /conf/global/settings/granite/operations/maintenance/granite_daily
+* 주별 - /conf/global/settings/granite/operations/maintenance/granite_weekly
+* 월별 - /conf/global/settings/granite/operations/maintenance/granite_monthly
 
 ### 코드 샘플 {#code-samples}
 
@@ -228,7 +228,7 @@ ht-degree: 29%
 
 1. `mt.yaml` 또는 유사한 파일을 만듭니다.
 
-1. `config`구성 파이프라인 사용[에 설명된 대로 파일을 &#x200B;](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. `config`구성 파이프라인 사용[에 설명된 대로 파일을 ](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 1. 다음을 포함하는 구성 파일에서 속성을 선언합니다.
 
