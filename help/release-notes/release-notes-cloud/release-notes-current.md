@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
+source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1698'
 ht-degree: 53%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,16 +64,16 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 이 프로그램에 참여하도록 옵트인하려면 [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)에 전자 메일을 보내고 가능한 범위 내에서 다음 세부 정보를 포함하십시오.
 
-    * 에이전트를 적극적으로 사용할 팀원의 이름과 Adobe ID.
-    * 사용자 또는 팀이 사용할 특정 에이전트를 나열합니다. 또는 &quot;모든 에이전트&quot;라고 말하기만 하면 됩니다.
+* 에이전트를 적극적으로 사용할 팀원의 이름과 Adobe ID.
+* 사용자 또는 팀이 사용할 특정 에이전트를 나열합니다. 아니면 그냥 &quot;모든 요원&quot;이라고 해
 
 ### AEM Foundation(Beta 프로그램)
 
-    [AEM Foundation 베타 프로그램](#foundation-early-adopter)을 참조하십시오.
+[AEM Foundation Beta 프로그램](#foundation-early-adopter)을 참조하세요.
 
 ### Cloud Manager (Beta 프로그램)
 
-    Cloud Manager 베타 프로그램(/help/implementing/cloud-manager/release-notes/current.md)을 참조하십시오.
+[Cloud Manager 베타 프로그램](/help/implementing/cloud-manager/release-notes/current.md)을 참조하세요.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
