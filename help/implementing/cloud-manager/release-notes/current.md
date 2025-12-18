@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2025.1
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 431c3060b59dca852bdce14b6793dcb5c352139b
+source-git-commit: 7c1f1f1022fd63c190a493d312ab1f355859d15a
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 66%
+source-wordcount: '1149'
+ht-degree: 61%
 
 ---
 
@@ -88,11 +88,15 @@ If you are interested in testing this new feature and sharing your feedback, sen
   [한 번의 클릭으로 첫 번째 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오.
 
 
-
-
 ## Beta 프로그램 {#private-beta-program}
 
 Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
+
+>[!IMPORTANT]
+>
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 방식으로)할 의무가 없습니다. Adobe은 고객에게 베타 릴리스의 올바른 기능이나 성능 또는 관련 설명서나 자료에 의존하지 말고 주의할 것을 권장합니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
+
+[AEM Beta 프로그램](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)도 참조하세요.
 
 현재 제공되는 기회는 다음과 같습니다.
 <!--

@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
+source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 53%
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,7 +58,7 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 **현재 베타 프로그램**
 다음 섹션에는 활성 Beta 프로그램이 나와 있습니다.
 
-### AEM의 에이전트(Beta 프로그램)
+### AEM의 에이전트(Beta 프로그램) {#agents-in-aem-beta-program}
 
 프로덕션, 거버넌스, 최적화, 검색 및 개발 전반에 걸쳐 강력하고 새로운 AEM 에이전트 기능에 신속하게 액세스할 수 있습니다. 귀하의 피드백은 Adobe의 로드맵과 최종 기능을 직접 만듭니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
 
@@ -67,11 +67,11 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 * 에이전트를 적극적으로 사용할 팀원의 이름과 Adobe ID.
 * 사용자 또는 팀이 사용할 특정 에이전트를 나열합니다. 아니면 그냥 &quot;모든 요원&quot;이라고 해
 
-### AEM Foundation(Beta 프로그램)
+### AEM Foundation(Beta 프로그램) {#aem-foundation-beta-programs}
 
 [AEM Foundation Beta 프로그램](#foundation-early-adopter)을 참조하세요.
 
-### Cloud Manager (Beta 프로그램)
+### Cloud Manager (Beta 프로그램) {#cloud-manager-beta-programs}
 
 [Cloud Manager 베타 프로그램](/help/implementing/cloud-manager/release-notes/current.md)을 참조하세요.
 
@@ -206,7 +206,7 @@ Adobe은 2025년 10월 14일에 **Stage** 및 **Production** 환경을 더 높�
 >프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
 >
 
-#### 에지 컴퓨팅 (Beta 프로그램) {#edge-computing}
+#### 에지 컴퓨팅 (Beta 프로그램)
 
 에지 컴퓨팅을 사용하면 CDN 계층에서 JavaScript를 실행할 수 있어 데이터 처리가 최종 사용자에게 더 가까워집니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
 
