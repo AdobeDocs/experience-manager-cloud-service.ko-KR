@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
+source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1718'
 ht-degree: 53%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -61,6 +61,8 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 ### AEM의 에이전트(Beta 프로그램) {#agents-in-aem-beta-program}
 
 프로덕션, 거버넌스, 최적화, 검색 및 개발 전반에 걸쳐 강력하고 새로운 AEM 에이전트 기능에 신속하게 액세스할 수 있습니다. 귀하의 피드백은 Adobe의 로드맵과 최종 기능을 직접 만듭니다. 자세한 내용은 [AEM의 에이전트 개요](/help/ai-in-aem/agents/overview.md)를 참조하십시오.
+
+이 프로그램은 일반적으로 4~6주 동안 진행되지만 능동적으로 참여할 수 있는 능력을 중심으로 유연하게 조정할 수 있습니다.
 
 이 프로그램에 참여하도록 옵트인하려면 [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)에 전자 메일을 보내고 가능한 범위 내에서 다음 세부 정보를 포함하십시오.
 
