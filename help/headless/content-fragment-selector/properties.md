@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service에 대한 마이크로 프론
 description: 애플리케이션에서 콘텐츠 조각을 검색, 찾기 및 검색하도록 마이크로 프론트엔드 콘텐츠 조각 선택기를 구성하는 속성입니다.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '1073'
+ht-degree: 4%
 
 ---
 
@@ -20,22 +20,28 @@ ht-degree: 3%
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |--- |--- |--- |--- |--- |
-| `imsToken` | 문자열 | 아니요 | | 인증에 사용되는 IMS 토큰입니다. |
-| `repoId` | 문자열 | 아니요 | | 인증에 사용되는 저장소 ID. |
-| `orgId` | 문자열 | 예 | | 인증에 사용되는 조직 ID입니다. |
-| `locale` | 문자열 | 아니요 | | 로케일 데이터. |
-| `env` | 환경 | 아니요 | | 콘텐츠 조각 선택기 배포 환경. |
-| `filters` | 조각 필터 | 아니요 | | 콘텐츠 조각 목록에 적용할 필터. 기본적으로 `/content/dam` 아래의 조각이 표시됩니다. 기본값: `{ folder: "/content/dam" }` |
-| `isOpen` | 부울 | 예 | `false` | 선택기 열기 또는 닫기를 트리거하는 플래그입니다. |
-| `onDismiss` | () => void | 예 | | **취소**&#x200B;를 선택하면 호출할 함수입니다. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | 예 | | 하나 이상의 콘텐츠 조각을 선택한 후 **Select**&#x200B;을(를) 사용하면 호출할 함수입니다. <br><br>함수가 받게 되는 값:<br><ul><li> `id` 및 `path` 필드가 있는 선택된 콘텐츠 조각</li><li>및 저장소의 프로그램 id 및 환경 id와 관련된 도메인 이름으로, 상태가 `ready`이고 게시가 `tier`입니다.</li></ul><br>도메인 이름이 없으면 게시 인스턴스를 대체 도메인으로 사용합니다. |
-| `theme` | &quot;light&quot; 또는 &quot;dark&quot; | 아니요 | | 콘텐츠 조각 선택기의 테마입니다. 기본 테마는 UnifiedShell 환경의 테마로 설정됩니다. |
-| `selectionType` | &quot;single&quot; 또는 &quot;multiple&quot; | 아니요 | `single` | FragmentSelector에 대한 선택을 제한하는 데 사용할 수 있는 선택 유형입니다. |
-| `dialogSize` | &quot;fullscreen&quot; 또는 &quot;fullscreenTakeover&quot; | 아니요 | `fullscreen` | 대화 상자 크기를 제어하는 선택적 속성입니다. |
-| `waitForImsToken` | 부울 | 아니요 | `false` | 콘텐츠 조각 선택기가 SUSI 흐름 컨텍스트에서 렌더링되는지 여부를 나타내며 `imsToken`이(가) 준비될 때까지 기다려야 합니다. |
-| `imsAuthInfo` | ImsAuthInfo | 아니요 | | 로그인한 사용자의 IMS 인증 정보가 포함된 개체입니다. |
-| `runningInUnifiedShell` | 부울 | 아니요 | | 콘텐츠 조각 선택기가 UnifiedShell에서 실행 중인지 또는 독립 실행형인지 여부를 나타냅니다. |
-| `readonlyFilters` | 리소스 읽기 전용 필터 필드 | 아니요 | | 콘텐츠 목록에 적용할 수 있고 제거할 수 없는 읽기 전용 필터. |
+| `ref` | 조각 선택기 참조 | | | `ContentFragmentSelector` 인스턴스를 참조하여 `reload`과(와) 같이 제공된 기능에 액세스할 수 있습니다. |
+| `imsToken` | 문자열 | 아니요 | | 인증에 사용되는 IMS 토큰입니다. 제공하지 않으면 IMS 로그인 플로우가 시작됩니다. |
+| `repoId` | 문자열 | 아니요 | | 조각 선택기에 사용되는 저장소 ID입니다. 제공된 경우 선택기가 지정된 저장소에 자동으로 연결되고 저장소 드롭다운이 숨겨집니다. 제공되지 않은 경우 사용자는 액세스 권한이 있는 사용 가능한 저장소 목록에서 저장소를 선택할 수 있습니다. |
+| `defaultRepoId` | 문자열 | 아니요 | | 저장소 선택기가 표시되면 기본적으로 선택되는 저장소 ID입니다. `repoId`이(가) 제공되지 않은 경우에만 사용됩니다. `repoId`이(가) 설정되면 저장소 선택기가 숨겨지며 이 값은 무시됩니다. |
+| `orgId` | 문자열 | 아니요 | | 인증에 사용되는 조직 ID입니다. 제공하지 않은 경우 사용자는 액세스 권한이 있는 다른 조직의 저장소를 선택할 수 있습니다. 사용자에게 저장소나 조직에 대한 액세스 권한이 없는 경우 콘텐츠가 로드되지 않습니다. |
+| `locale` | 문자열 | 아니요 | &quot;en-US&quot; | 로케일. |
+| `env` | 문자열 | 아니요 | | 배포 환경. 허용되는 환경 이름은 `Env` 형식을 참조하십시오. |
+| `filters` | 조각 필터 | 아니요 | `{ folder: "/content/dam" }` | 콘텐츠 조각 목록에 적용할 필터. 기본적으로 `/content/dam` 아래의 조각이 표시됩니다. |
+| `isOpen` | 부울 | 아니요 | `false` | 선택기의 열기 또는 닫기 여부를 제어하는 플래그. |
+| `noWrap` | 부울 | 아니요 | `false` | 래핑 대화 상자 없이 조각 선택기를 렌더링할지 여부를 결정합니다. `true`(으)로 설정하면 조각 선택기가 상위 컨테이너에 직접 포함됩니다. 선택기를 사용자 지정 레이아웃 또는 워크플로우에 통합하는 데 유용합니다. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | 아니요 | | 콘텐츠 조각 선택이 변경될 때마다 트리거되는 콜백 함수입니다. 현재 선택한 조각, 도메인 이름, 테넌트 정보, 저장소 ID 및 게재 저장소를 제공합니다. |
+| `onDismiss` | () => void | 아니요 | | 닫기 작업이 수행될 때(예: 선택기를 닫는 경우) 트리거되는 콜백 함수입니다. |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | 아니요 | | 사용자가 선택을 확인할 때 트리거되는 콜백 함수입니다. 선택한 콘텐츠 조각, 도메인 이름, 테넌트 정보, 저장소 ID 및 게재 저장소를 수신합니다. |
+| `theme` | &quot;light&quot; 또는 &quot;dark&quot; | 아니요 | | 조각 선택기에 대한 테마입니다. 기본적으로 unifiedShell 환경 테마로 설정됩니다. |
+| `selectionType` | &quot;single&quot; 또는 &quot;multiple&quot; | 아니요 | `single` | 선택 유형을 사용하여 조각 선택기에 대한 선택을 제한할 수 있습니다. |
+| `dialogSize` | &quot;fullscreen&quot; 또는 &quot;fullscreenTakeover&quot; | 아니요 | `fullscreen` | 대화 상자 크기를 제어하는 선택적 prop입니다. |
+| `runningInUnifiedShell` | 부울 | 아니요 | | DestinationSelector가 UnifiedShell에서 실행되는지 또는 독립 실행형에서 실행되는지 여부. |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | 아니요 | | 콘텐츠 조각 목록에 적용된 읽기 전용 필터. 사용자가 이러한 필터를 제거할 수 없습니다. |
+| `selectedFragments` | ContentFragmentIdentifier[] | 아니요 | `[]` | 선택기가 열릴 때 사전 선택될 콘텐츠 조각의 초기 선택. |
+| `hipaaEnabled` | 부울 | 아니요 | `false` | HIPAA 규정 준수 여부를 나타냅니다. |
+| `inventoryView` | 재고 보기 유형 | 아니요 | `table` | 선택기에서 사용할 재고 기본 보기 유형입니다. |
+| `inventoryViewToggleEnabled` | 부울 | 아니요 | `false` | 사용자가 테이블 및 그리드 보기 간을 전환할 수 있도록 인벤토리 보기 토글을 활성화할지 여부를 나타냅니다. |
 
 ## ImsAuthProps 속성 {#imsauthprops-properties}
 
