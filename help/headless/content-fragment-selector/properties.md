@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 마이크로 프론
 description: 애플리케이션에서 콘텐츠 조각을 검색, 찾기 및 검색하도록 마이크로 프론트엔드 콘텐츠 조각 선택기를 구성하는 속성입니다.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 4%
 | `repoId` | 문자열 | 아니요 | | 조각 선택기에 사용되는 저장소 ID입니다. 제공된 경우 선택기가 지정된 저장소에 자동으로 연결되고 저장소 드롭다운이 숨겨집니다. 제공되지 않은 경우 사용자는 액세스 권한이 있는 사용 가능한 저장소 목록에서 저장소를 선택할 수 있습니다. |
 | `defaultRepoId` | 문자열 | 아니요 | | 저장소 선택기가 표시되면 기본적으로 선택되는 저장소 ID입니다. `repoId`이(가) 제공되지 않은 경우에만 사용됩니다. `repoId`이(가) 설정되면 저장소 선택기가 숨겨지며 이 값은 무시됩니다. |
 | `orgId` | 문자열 | 아니요 | | 인증에 사용되는 조직 ID입니다. 제공하지 않은 경우 사용자는 액세스 권한이 있는 다른 조직의 저장소를 선택할 수 있습니다. 사용자에게 저장소나 조직에 대한 액세스 권한이 없는 경우 콘텐츠가 로드되지 않습니다. |
-| `locale` | 문자열 | 아니요 | &quot;en-US&quot; | 로케일. |
+| `locale` | 문자열 | 아니요 | `en-US` | 로케일. |
 | `env` | 문자열 | 아니요 | | 배포 환경. 허용되는 환경 이름은 `Env` 형식을 참조하십시오. |
 | `filters` | 조각 필터 | 아니요 | `{ folder: "/content/dam" }` | 콘텐츠 조각 목록에 적용할 필터. 기본적으로 `/content/dam` 아래의 조각이 표시됩니다. |
 | `isOpen` | 부울 | 아니요 | `false` | 선택기의 열기 또는 닫기 여부를 제어하는 플래그. |
 | `noWrap` | 부울 | 아니요 | `false` | 래핑 대화 상자 없이 조각 선택기를 렌더링할지 여부를 결정합니다. `true`(으)로 설정하면 조각 선택기가 상위 컨테이너에 직접 포함됩니다. 선택기를 사용자 지정 레이아웃 또는 워크플로우에 통합하는 데 유용합니다. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | 아니요 | | 콘텐츠 조각 선택이 변경될 때마다 트리거되는 콜백 함수입니다. 현재 선택한 조각, 도메인 이름, 테넌트 정보, 저장소 ID 및 게재 저장소를 제공합니다. |
-| `onDismiss` | () => void | 아니요 | | 닫기 작업이 수행될 때(예: 선택기를 닫는 경우) 트리거되는 콜백 함수입니다. |
+| `onDismiss` | () => void | 아니요 | | 닫기 작업을 수행할 때 트리거되는 콜백 함수(예: 선택기를 닫는 경우)입니다. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | 아니요 | | 사용자가 선택을 확인할 때 트리거되는 콜백 함수입니다. 선택한 콘텐츠 조각, 도메인 이름, 테넌트 정보, 저장소 ID 및 게재 저장소를 수신합니다. |
 | `theme` | &quot;light&quot; 또는 &quot;dark&quot; | 아니요 | | 조각 선택기에 대한 테마입니다. 기본적으로 unifiedShell 환경 테마로 설정됩니다. |
 | `selectionType` | &quot;single&quot; 또는 &quot;multiple&quot; | 아니요 | `single` | 선택 유형을 사용하여 조각 선택기에 대한 선택을 제한할 수 있습니다. |
