@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 53%
+source-wordcount: '1857'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 ### Cloud Manager (Beta 프로그램) {#cloud-manager-beta-programs}
 
 [Cloud Manager 베타 프로그램](/help/implementing/cloud-manager/release-notes/current.md)을 참조하세요.
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**AEM Assets과의 통합을 위한 새 버전의 Figma 플러그인을 사용할 수 있습니다**
+
+* AEM 저장소에서 Figma 문서로 에셋을 가져오는 동안 비디오 파일(MP4, MOV, WebM), 애니메이션 파일(GIF) 및 벡터 파일(SVG)을 지원합니다.
+
+* AEM 저장소에 있는 에셋과 비교하여 Figure 문서에 사용된 에셋에 대한 업데이트가 있는지 확인하고 업데이트가 있는 경우 최신 버전의 에셋을 가져올 수 있습니다.
+
+* PNG(크기 조절) 및 JPG(이미지 크기 조절 및 품질) 파일 형식을 내보내는 동안 내보내기 구성을 지원합니다.
+
+  ![Figma 플러그인](/help/assets/assets/figma-v2-plugin.png)
+
+**업로드된 자산에 대한 맬웨어 검색**
+
+이제 AEM Assets에는 업로드된 파일에 대한 자동 맬웨어 검사가 포함되어 있으므로, 위험으로부터 저장소를 보호하기 위해 DAM에 들어가기 전에 의심스러운 자산이 격리되도록 합니다. 관리자는 스캔 설정 및 격리 보존 정책을 구성하여 보안 제어를 간소화할 수 있습니다.
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
