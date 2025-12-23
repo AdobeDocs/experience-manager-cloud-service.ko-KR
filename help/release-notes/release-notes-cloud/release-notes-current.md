@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 49%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service의 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
 다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 기능 릴리스 정보에 대해 간략히 소개합니다.
 
@@ -40,11 +40,11 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM 베타 프로그램 {#aem-beta-programs}
+## AEM Beta 프로그램 {#aem-beta-programs}
 
 Adobe Experience Manager(AEM) 베타 프로그램은 고객이 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, AEM의 미래를 안내할 수 있는 방법입니다.
 
@@ -93,7 +93,6 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 **업로드된 자산에 대한 맬웨어 검색**
 
 이제 AEM Assets에는 업로드된 파일에 대한 자동 맬웨어 검사가 포함되어 있으므로, 위험으로부터 저장소를 보호하기 위해 DAM에 들어가기 전에 의심스러운 자산이 격리되도록 합니다. 관리자는 스캔 설정 및 격리 보존 정책을 구성하여 보안 제어를 간소화할 수 있습니다.
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
