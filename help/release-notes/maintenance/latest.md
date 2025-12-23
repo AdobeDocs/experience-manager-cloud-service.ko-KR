@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 16%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 16%
 * SITES-36570: 청크된 라이브 카피 만들기 토글이 활성화된 후 라이브 카피를 만들 수 없습니다.
 * SITES-36158: 예외로 인해 작업이 실패하여 롤아웃이 실패합니다.
 * SITES-35655: 새 CF 편집기에서 상속이 끊긴 후 활성 상속을 표시합니다.
-* SITES-31425: 사이트의 워크플로 시작에 지역화되지 않은 오류 메시지 &quot;오류: {} 필드가 필요합니다.&quot;가 표시됩니다.
+* SITES-31425: 사이트의 시작 워크플로우에 지역화되지 않은 오류 메시지 `Error: {} field is required`이(가) 표시됩니다.
 * SITES-19802: 툴팁이 핵심 구성 요소 사이트 > 목차에서 현지화되지 않았습니다.
 * SITES-36543: 관리자가 체크아웃된 콘텐츠 조각을 편집할 수 있는 문제를 해결했습니다.
 * SITES-36967: 끊어진 콘텐츠 조각에 대한 썸네일 데이터를 생성하려고 할 때 발생하는 NullPointerExceptions가 수정되었습니다.
