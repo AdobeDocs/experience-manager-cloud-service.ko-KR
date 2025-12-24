@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
 workflow-type: tm+mt
-source-wordcount: '4582'
-ht-degree: 100%
+source-wordcount: '4610'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 대부분의 트래픽 필터 규칙은 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. *표준 트래픽 필터 규칙*&#x200B;이라고도 하며 주로 IP, 호스트 이름, 경로, 사용자 에이전트를 포함한 요청 속성과 요청 헤더에서 작동합니다. 표준 트래픽 필터 규칙에는 트래픽 스파이크를 방지하기 위한 속도 제한 규칙이 포함되어 있습니다.
 
-트래픽 필터 규칙의 하위 카테고리는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 *WAF 규칙*)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
+트래픽 필터 규칙의 하위 범주를 사용하려면 확장 보안(이전 명칭: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 명칭: Enhanced Security) 라이센스가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 *WAF 규칙*)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
 트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 개발, 스테이징, 프로덕션 환경 유형에 배포할 수 있습니다. 구성 파일은 명령줄 도구를 사용하여 신속한 개발 환경(RDE)에 배포될 수 있습니다.
 
@@ -111,7 +111,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
 
-향상된 보안 또는 WAF-DDoS 보호 보안 제품에 라이선스를 부여한 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(이하 *WAF 규칙*)의 특수 카테고리를 구성할 수도 있습니다.
+확장 보안(이전 이름: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 이름: 강화 보안) 제품의 라이선스를 부여하는 고객은 하나 이상의 *WAF 플래그*&#x200B;를 참조하는 *WAF 트래픽 필터 규칙*(또는 [WAF 규칙](#waf-flags-list))이라는 특별한 트래픽 필터 규칙 범주를 구성할 수도 있습니다.
 
 다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
@@ -430,7 +430,7 @@ data:
 
 **예 1**
 
-이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하면 5밀리초간 클라이언트를 차단합니다.
+이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하는 경우 5분 동안 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
@@ -641,7 +641,7 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 ## 권장 스타터 규칙 {#recommended-starter-rules}
 
-Adobe에서는 아래의 트래픽 필터 규칙부터 시작하여 시간이 지남에 따라 정제화하는 것을 제안합니다. *표준 규칙은* 사이트 또는 양식 라이선스와 함께 사용할 수 있지만 *WAF 규칙은* 향상된 보안 또는 WAF-DDoS 보호 라이선스가 필요합니다.
+Adobe에서는 아래의 트래픽 필터 규칙부터 시작하여 시간이 지남에 따라 정제화하는 것을 제안합니다. *표준 규칙*&#x200B;은(는) Sites 또는 Forms 라이선스에서 사용할 수 있으며, *WAF 규칙*&#x200B;에는 확장 보안(이전의 WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전의 향상된 보안) 라이선스가 필요합니다.
 
 ### 권장 표준 규칙 {#recommended-nonwaf-starter-rules}
 
