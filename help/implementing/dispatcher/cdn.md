@@ -4,7 +4,7 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
+source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 11%
@@ -163,23 +163,23 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
 >
 >* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
 다음은 여러 주요 CDN 공급업체의 몇 가지 구성 예입니다.
 
-**Akamai**
+#### **Akamai** {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### **Amazon CloudFront** {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### **Cloudflare** {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
