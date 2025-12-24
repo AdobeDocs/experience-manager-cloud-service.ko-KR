@@ -4,7 +4,7 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 11%
@@ -39,7 +39,7 @@ Cloud Manager의 셀프서비스 UI를 통해 AEM의 내장된 CDN을 사용하�
 * [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [CDN 구성](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**트래픽 제한**
+### 트래픽 제한 {#restricting-traffic}
 
 기본적으로 AEM 관리 CDN 설정의 경우 모든 공개 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이징) 환경 모두에 대해 게시 서비스로 이동할 수 있습니다. Cloud Manager 사용자 인터페이스를 통해 특정 환경에 대한 게시 서비스로 트래픽을 제한할 수 있습니다(예: IP 주소 범위별로 스테이징 제한).
 
@@ -74,7 +74,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 
 비즈니스 이해 관계자가 콘텐츠를 검토하는 등 가벼운 인증 사용 사례의 경우, 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## 고객 관리 CDN은 AEM 관리 CDN에 지정 {#point-to-point-CDN}
+## 고객 관리 CDN은 AEM 관리 CDN에 지정 {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 
 `X-AEM-Edge-Key`을(를) 설정한 후 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
 
-Linux®:
+Linux에서:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -138,7 +138,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 BYOCDN 구성을 디버깅하려면 값이 `x-aem-debug`인 `edge=true` 헤더를 사용합니다. 예:
 
-Linux®:
+Linux에서:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -163,23 +163,23 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
 >
 >* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
 다음은 여러 주요 CDN 공급업체의 몇 가지 구성 예입니다.
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 제공된 샘플 구성은 필요한 기본 설정을 보여 줍니다. 하지만 고객 구성에는 AEM as a Cloud Service이 트래픽을 처리하는 데 필요한 헤더를 제거, 편집 또는 다시 정렬하는 다른 영향을 주는 규칙이 있을 수 있습니다. 다음은 AEM as a Cloud Service을 가리키도록 고객 관리 CDN을 구성할 때 발생하는 일반적인 오류입니다.
 
-**게시 서비스 끝점으로 리디렉션**
+#### 게시 서비스 끝점으로 리디렉션 {#redirect-publish}
 
 요청이 403 금지된 응답을 수신하면 요청에 일부 필수 헤더가 누락되었음을 의미합니다. CDN이 Apex 및 `www` 도메인 트래픽을 모두 관리하고 있지만 `www` 도메인에 대한 올바른 헤더를 추가하지 않는 것이 일반적인 원인입니다. 이 문제는 AEM as a Cloud Service CDN 로그를 확인하고 필요한 요청 헤더를 확인하여 트리거할 수 있습니다.
 
-**잘못된 리디렉션 오류 421**
+#### 오류 421 잘못된 리디렉션 {#error-421}
 
 `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` 메시지와 함께 421 오류가 발생하면 HTTP `Host`이(가) 인증서에 나열된 호스트와 일치하지 않습니다. 이 문제는 일반적으로 `Host` 또는 SNI 설정이 잘못되었음을 나타냅니다. `Host`과(와) SNI 설정이 모두 publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com 호스트를 가리켜야 합니다.
 
-**리디렉션 루프가 너무 많음**
+#### 리디렉션 루프가 너무 많음 {#redirect-loop}
 
 페이지에 &quot;너무 많은 리디렉션&quot; 루프가 발생하면 일부 요청 헤더가 강제로 자신에게 다시 돌아가는 리디렉션과 일치하는 CDN에 추가됩니다. 예:
 
