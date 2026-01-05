@@ -3,7 +3,7 @@ title: 개발 에이전트 개요
 description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -16,6 +16,8 @@ ht-degree: 1%
 개발 에이전트를 사용하면 AEM 개발자와 관리자가 코드를 보다 효율적으로 만들고, 디버깅하고, 배포하고, 최적화할 수 있습니다.
 
 현재 에이전트는 파이프라인 상태를 검색하고 수정 사항을 제안하여 빌드 단계의 오류를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
