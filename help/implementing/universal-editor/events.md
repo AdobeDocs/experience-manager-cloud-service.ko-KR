@@ -4,10 +4,10 @@ description: 원격 앱에서 콘텐츠 또는 UI 변경에 반응하는 데 사
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 콘텐츠 업데이트 이벤트 {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;콜론;콘텐츠 추가 {#content-add}
 
 `aue:content-add` 이벤트는 새 구성 요소가 컨테이너에 추가될 때 트리거됩니다.
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;콜론;content-details {#content-details}
 
 `aue:content-details` 이벤트는 구성 요소가 속성 패널에 로드될 때 트리거됩니다.
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;콜론;컨텐츠 이동 {#content-move}
 
 `aue:content-move` 이벤트는 구성 요소가 이동될 때 트리거됩니다.
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;콜론;콘텐츠 패치 {#content-patch}
 
 `aue:content-patch` 이벤트는 속성 패널에서 구성 요소의 데이터가 업데이트될 때 트리거됩니다.
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;콜론;콘텐츠 제거 {#content-remove}
 
 `aue:content-remove` 이벤트는 컨테이너에서 구성 요소가 제거될 때 트리거됩니다.
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;콜론;콘텐츠 업데이트 {#content-update}
 
 `aue:content-update` 이벤트는 구성 요소의 속성이 컨텍스트 내에서 업데이트될 때 트리거됩니다.
 
@@ -180,7 +180,7 @@ ht-degree: 100%
 
 ## UI 이벤트 {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&amp;콜론;ui-미리보기 {#ui-preview}
 
 이 `aue:ui-preview` 이벤트는 페이지의 편집 모드가 **미리보기**&#x200B;로 변경될 때 트리거됩니다.
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;콜론;ui-edit {#ui-edit}
 
 이 `aue:ui-edit` 이벤트는 페이지의 편집 모드가 **편집**&#x200B;으로 변경될 때 트리거됩니다.
 
@@ -204,7 +204,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;콜론;ui-뷰포트-변경 {#ui-viewport-change}
 
 `aue:ui-viewport-change` 이벤트는 뷰포트 크기가 변경될 때 트리거됩니다.
 
@@ -219,7 +219,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;콜론;초기화됨 {#initialized}
 
 `aue:initialized` 이벤트는 원격 페이지가 범용 편집기에서 성공적으로 로드되었음을 알리기 위해 트리거됩니다.
 
@@ -257,4 +257,3 @@ ht-degree: 100%
 ## 추가 리소스 {#additional-resources}
 
 * [범용 편집기 호출](/help/implementing/universal-editor/calls.md)
-
