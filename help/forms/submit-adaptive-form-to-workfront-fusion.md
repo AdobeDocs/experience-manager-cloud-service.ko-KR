@@ -156,7 +156,7 @@ Webhook를 추가하려면:
 Workfront Fusion의 기초 구성 요소를 기반으로 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 편집할 적응형 양식을 열고 적응형 양식 컨테이너 속성의 **[!UICONTROL 제출]** 섹션으로 이동합니다.
-1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오 호출]**을 선택합니다.
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오 호출]**&#x200B;을 선택합니다.
    ![Workfront Fusion용 제출 액션](/help/forms/assets/workfront-fusion-fc.png)
 
 1. 드롭다운 목록에서 **[!UICONTROL Workfront Fusion 시나리오]**&#x200B;를 선택합니다.
