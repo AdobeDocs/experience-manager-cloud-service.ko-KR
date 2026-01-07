@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ ht-degree: 1%
 시각적 규칙 편집기를 사용하면 출력 응답을 기반으로 **서비스 호출** 작업의 성공 및 실패 처리기에 대한 규칙을 만들 수 있습니다. 아래 이미지는 적응형 양식에 대한 시각적 규칙 편집기의 **서비스 호출**&#x200B;을 보여 줍니다.
 
 ![서비스 처리기 호출](/help/forms/assets/invoke-service-rule-editor.png)
+
+### 성공 핸들러 및 실패 핸들러 추가
 
 성공 또는 실패 처리기를 추가하려면 각각 **[!UICONTROL 성공 처리기 추가]** 또는 **[!UICONTROL 실패 처리기 추가]**&#x200B;를 클릭합니다.
 
@@ -160,6 +162,10 @@ ht-degree: 1%
 
 ![드롭다운 값 설정](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> 성공 및 실패 처리기를 설정하는 방법은 [성공 처리기 및 실패 처리기 추가](#adding-success-handler-and-failure-handler) 섹션을 참조하십시오.
+
 #### 출력
 
 `101` 텍스트 상자에 `Pet ID`을(를) 입력하여 입력한 값에 따라 드롭다운 옵션을 동적으로 채웁니다.
@@ -181,6 +187,10 @@ ht-degree: 1%
 
 ![반복 가능한 패널에 대한 규칙 만들기](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> 성공 및 실패 처리기를 설정하는 방법은 [성공 처리기 및 실패 처리기 추가](#adding-success-handler-and-failure-handler) 섹션을 참조하십시오.
+
 #### 출력
 
 `101` 텍스트 상자에 `Pet ID`을(를) 입력하여 입력 값을 기반으로 반복 가능한 패널을 동적으로 채웁니다.
@@ -199,6 +209,10 @@ ht-degree: 1%
 #### 구현
 
 `Pet ID` 텍스트 상자에 `getPetById` 서비스를 호출하는 규칙을 만듭니다. **[!UICONTROL 성공 처리기 추가]**&#x200B;에서 다른 성공 처리기 응답을 추가합니다. 규칙에서 `categoryname` 텍스트 상자의 값을 `category.name`(으)로 설정합니다.
+
+>[!NOTE]
+>
+> 성공 및 실패 처리기를 설정하는 방법은 [성공 처리기 및 실패 처리기 추가](#adding-success-handler-and-failure-handler) 섹션을 참조하십시오.
 
 ![반복 가능한 패널에 대한 규칙 만들기](/help/forms/assets/set-panel-values.png)
 
