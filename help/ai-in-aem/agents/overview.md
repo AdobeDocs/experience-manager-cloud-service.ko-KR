@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->에이전트를 사용하려면 Beta 프로그램에 등록해야 합니다. AEM 에이전트 Beta 프로그램 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)에서 자세한 정보를 찾을 수 있습니다.
+>에이전트를 사용하려면 Beta 프로그램에 등록해야 합니다. AEM 에이전트 Beta 프로그램 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)에서 자세한 정보를 찾을 수 있습니다.
 
 ## Experience 프로덕션 에이전트 {#experience-production-agent}
 
