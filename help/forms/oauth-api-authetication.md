@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '817'
 ht-degree: 3%
 
 ---
@@ -22,14 +22,14 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
-* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
+* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
 * [Adobe Admin Console에서 시스템 관리자 또는 개발자 역할을 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)하여 Adobe Developer Console에 액세스할 수 있도록 설정합니다.
 
 ## OAuth 서버 간 인증을 사용하여 액세스 토큰을 생성하는 방법
 
 아래 단계에 따라 Adobe Developer 콘솔에서 액세스 토큰을 생성하고 OAuth 서버 간 인증을 통해 첫 번째 API 호출을 수행하십시오.
 
-### Adobe Developer Console 프로젝트 설정
+### &#x200B;1. Adobe Developer Console 프로젝트 설정
 
 1. [Adobe Developer Console](https://developer.adobe.com/console)&#x200B;(으)로 이동
 2. Adobe ID으로 로그인
@@ -66,7 +66,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
 >[!ENDTABS]
 
-### Forms API 추가
+### &#x200B;2. Forms API 추가
 
 원하는 작업을 기반으로 Forms API를 추가합니다.
 
@@ -109,12 +109,10 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
 >[!ENDTABS]
 
->[!NOTE]
->
-> **프로젝트에 추가** > **API**&#x200B;를 클릭하여 API 및 인증 방법을 기존 프로젝트에 추가할 수도 있습니다.\
-> ![기존 프로젝트에 API 추가](/help/forms/assets/add-api-existing-project.png)
+**프로젝트에 추가** > **API**&#x200B;를 클릭하여 API 및 인증 방법을 기존 프로젝트에 추가할 수도 있습니다.\
+![기존 프로젝트에 API 추가](/help/forms/assets/add-api-existing-project.png)
 
-### 제품 프로필 추가
+### &#x200B;3. 제품 프로필 추가
 
 제품 프로필은 AEM 리소스에 액세스할 수 있는 자격 증명에 대한 권한(또는 인증)을 제공합니다.
 
@@ -128,7 +126,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
    * **환경 XXX** - 해당 프로그램 내의 특정 환경 ID를 식별합니다.
 
-   >
+   >[!NOTE]
    >
    > 제품 프로필은 특정 AEM 인스턴스(프로그램 + 환경)에 연결되어 있습니다. 항상 인스턴스 URL과 일치하는 프로필을 선택합니다.
 
@@ -136,7 +134,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
    ![프로젝트 구성 선택](/help/forms/assets/adc-add-product-profile.png)
 
-### 자격 증명 생성 및 저장
+### &#x200B;4. 자격 증명 생성 및 저장
 
 1. Adobe Developer Console에서 프로젝트로 이동
 2. **OAuth 서버 간** 자격 증명을 클릭합니다.
@@ -156,7 +154,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### 액세스 토큰 생성
+### &#x200B;5. 액세스 토큰 생성
 
 Access 토큰을 수동 또는 프로그래밍 방식으로 생성합니다.
 
@@ -182,7 +180,7 @@ Adobe Developer Console에서 액세스 토큰을 수동으로 생성합니다.
 
 >[!TAB 프로덕션용]
 
-[Adobe IMS](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
+[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
 
 **필요한 자격 증명:**
 
@@ -221,7 +219,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
->[!NOTE]
+>
 >
 > 액세스 토큰을 생성하고 API를 호출하기 위한 OAuth 서버 간 구현에 대해 자세히 알아보려면 [여기를 클릭](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)하십시오.
 
