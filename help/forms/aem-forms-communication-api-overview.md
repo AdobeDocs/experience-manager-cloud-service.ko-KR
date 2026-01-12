@@ -3,18 +3,15 @@ title: AEM Forms Communications API - 개요
 description: 인증 방법 및 전체 API 참조를 포함한 AEM Forms Communications API 개요
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
 
 
-# AEM Forms API - 개요
+# AEM Forms Communications API - 개요
 
 AEM Forms API는 기업이 문서 워크플로를 자동화할 수 있도록 설계된 포괄적인 클라우드 기반 API 제품군을 제공합니다.
 
@@ -22,7 +19,7 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 
 * [Adobe Developer Console(ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console은 Adobe API, 이벤트, 런타임 및 App Builder의 게이트웨이입니다.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
 
 서로 다른 API가 서로 다른 [인증 방법](#authentication-methods)을 지원합니다.
 
@@ -35,9 +32,10 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 
 이전 API는 AEM Developer Console을 통해 구성 및 관리되는 JWT 기반 서버 간 인증을 지원합니다. 최신 API는 OAuth 서버 간 인증을 사용하며 Adobe Developer Console을 통해 구성됩니다.
 
+<!--
 >[!NOTE]
 >
-> Adobe은 모든 API에 대해 인증 방법을 표준화하고 있으며, OAuth 서버 간 인증 방법을 지원하는 Adobe Developer Console에 대해 API를 점진적으로 온보딩하고 있습니다.
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
 
 ## API 분류 개요
 
@@ -70,9 +68,9 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | 구성을 사용하여 일괄 출력 생성 실행을 시작합니다. | 비동기/일괄 처리 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | 일괄 처리 작업의 실행 상태를 검색합니다. | 비동기/일괄 처리 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 특정 일괄 처리 구성에 대해 실행 중인 모든 인스턴스를 나열합니다. | 비동기/일괄 처리 | [JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 템플릿 및 데이터를 기반으로 동기적으로 PDF 출력을 생성합니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 인쇄가 가능한 출력 형식(예: PCL, PostScript)을 생성합니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 대용량 인쇄를 위해 AFP 출력을 생성합니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 템플릿 및 데이터를 기반으로 동기적으로 PDF 출력을 생성합니다. | 동기 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 인쇄가 가능한 출력 형식(예: PCL, PostScript)을 생성합니다. | 동기 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 대용량 인쇄를 위해 AFP 출력을 생성합니다. | 동기 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | 병합된 데이터로 PDF 양식(XFA/XDP)을 렌더링합니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | PDF 양식 생성 작업의 상태를 검색합니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | 완료된 PDF 양식 작업의 출력/결과를 가져옵니다. | 동기 | [OAuth](/help/forms/oauth-api-authetication.md) |

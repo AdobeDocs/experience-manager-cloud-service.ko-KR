@@ -3,12 +3,9 @@ title: OAuth 서버 간 인증을 설정하는 방법
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 OAuth 서버 간 인증을 구성하는 방법에 대해 알아봅니다.
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '799'
 ht-degree: 3%
 
 ---
@@ -22,7 +19,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
-* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
+* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
 * [Adobe Admin Console에서 시스템 관리자 또는 개발자 역할을 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)하여 Adobe Developer Console에 액세스할 수 있도록 설정합니다.
 
 ## OAuth 서버 간 인증을 사용하여 액세스 토큰을 생성하는 방법
@@ -180,7 +177,7 @@ Adobe Developer Console에서 액세스 토큰을 수동으로 생성합니다.
 
 >[!TAB 프로덕션용]
 
-[Adobe IMS](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
+[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
 
 **필요한 자격 증명:**
 
@@ -218,10 +215,6 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 >[!ENDTABS]
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
-
->
->
-> 액세스 토큰을 생성하고 API를 호출하기 위한 OAuth 서버 간 구현에 대해 자세히 알아보려면 [여기를 클릭](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)하십시오.
 
 ## 우수 사례: 개발, 스테이징 및 프로덕션을 위한 자격 증명 관리
 

@@ -3,10 +3,7 @@ title: JWT(JSON 웹 토큰) 인증을 설정하는 방법
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 JWT(JSON 웹 토큰) 인증을 구성하는 방법에 대해 알아봅니다
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 3%
@@ -23,7 +20,7 @@ ht-degree: 3%
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
 * 사용하는 환경에 맞는 [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)에 액세스할 수 있는지 확인하십시오.
-* Adobe Cloud Manager에 액세스하려면 [시스템 관리자 또는 개발자 역할을 할당하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Adobe Cloud Manager에 액세스하려면 [시스템 관리자 또는 개발자 역할을 할당하십시오](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## JWT 자격 증명을 사용하여 액세스 토큰을 생성하는 방법
 
@@ -109,7 +106,7 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
 
 >[!NOTE]
 >
-> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
+> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
