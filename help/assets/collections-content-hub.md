@@ -3,16 +3,16 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
+source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
+
 # [!DNL Content Hub]에서 컬렉션 관리 {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![컬렉션 관리](assets/manage-collection.png)
 
 컬렉션은 사용자 간에 공유할 수 있는 자산 집합을 나타냅니다. 컬렉션에는 참조 무결성을 유지하면서 다른 위치의 에셋이 포함될 수 있습니다.
@@ -196,8 +196,3 @@ Content Hub에서 컬렉션을 즐겨찾기로 표시하여 보다 쉽게 구성
    즐겨찾기로 표시된 컬렉션이 **[!UICONTROL 내 즐겨찾기]** 탭에 표시됩니다. 또는 **[!UICONTROL 내 즐겨찾기]**&#x200B;에서 컬렉션을 제거할 수 있습니다. 이렇게 하려면 **[!UICONTROL 추가 작업]** ![추가 작업 아이콘](assets/do-not-localize/more-actions.png)을 클릭하고 **[!UICONTROL 즐겨찾기에서 제거]**&#x200B;를 선택합니다.
 
    ![즐겨찾기로 컬렉션 제거](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[컬렉션 고정 또는 고정 해제](#pin-unpin-collection) 및 [컬렉션을 즐겨찾기로 표시](#favorite-collection)은(는) 제한된 가용성 기능입니다. Adobe 고객 지원 사례를 [만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하여 배포에 사용하도록 설정할 수 있습니다.
-
