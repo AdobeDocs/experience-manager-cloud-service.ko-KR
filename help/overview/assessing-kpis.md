@@ -1,13 +1,13 @@
 ---
-title: KPI 액세스
-description: KPI에 액세스하고 보고 프로세스를 정의하는 방법에 대해 알아보기
+title: KPI 평가
+description: KPI를 평가하고 보고 프로세스를 정의하는 방법을 알아봅니다
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="KPI 평가"
 >abstract="Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ko" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="적합한 팀 선택"
 
 Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다.
 
@@ -29,7 +29,7 @@ Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련
 
 동일한 극적인 성과를 실현하려면 귀사는 Experience Manager 구현에 대해 명확한 목표를 세워야 합니다. 또한 모든 사용자가 그러한 목표에 집중하는 데 도움이 되는 KPI를 확보해야 합니다.
 
-## KPI 액세스
+## KPI 평가
 
 KPI를 평가할 때 다음 사항을 확인하십시오.
 
