@@ -3,7 +3,7 @@ title: 개발 에이전트 개요
 description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 현재 에이전트는 파이프라인 상태를 검색하고 수정 사항을 제안하여 빌드 단계의 오류를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478014?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 
 개발 에이전트의 파이프라인 문제 해결 작업을 수행하려면 Cloud Manager - 개발자 역할 또는 Cloud Manager - 프로그램 관리자 역할이 필요합니다.
 
-
-
 ## 샘플 프롬프트 {#sample-prompts}
 
 | 프롬프트 | 결과 |
@@ -93,4 +91,3 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 [로그 액세스 및 다운로드](/help/implementing/cloud-manager/manage-logs.md)를 참조하세요.
 
 BYOGIT(Bring Your Own Git)을 사용하는 프로그램에서는 파이프라인 문제 해결이 지원되지 않습니다.
-
