@@ -1,10 +1,10 @@
 ---
 title: 비디오 자산에 스마트 태그 지정
-description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상황에 맞는 설명 스마트 태그를 비디오에 자동으로 추가합니다.
+description: Experience Manager은  [!DNL Adobe AI]을(를) 사용하여 상황에 맞는 설명 스마트 태그를 비디오에 자동으로 추가합니다.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # 비디오 자산에 스마트 태그 지정 {#video-smart-tags}
 
-새로운 콘텐츠에 대한 필요성이 증가함에 따라 매력적인 디지털 경험을 즉시 제공하기 위한 수작업 노력이 감소해야 합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) 인공 지능을 사용하여 비디오 자산의 자동 태깅을 지원합니다. 비디오를 수동으로 태깅하는 데에는 시간이 많이 걸릴 수 있습니다. 그러나 [!DNL Adobe Sensei] 기반 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 콘텐츠를 분석하고 태그를 비디오 자산에 추가합니다. 이를 통해 DAM 사용자가 고객에게 풍부한 경험을 전달하는 시간을 단축할 수 있습니다. Adobe의 머신 러닝 서비스는 비디오에 대해 두 세트의 태그를 생성합니다. 반면, 한 세트는 해당 비디오에 있는 객체, 장면 및 속성에 해당되며, 다른 세트는 음주, 달리기, 조깅 등의 작업에 관한 것입니다.
+새로운 콘텐츠에 대한 필요성이 증가함에 따라 매력적인 디지털 경험을 즉시 제공하기 위한 수작업 노력이 감소해야 합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) 인공 지능을 사용하여 비디오 자산의 자동 태깅을 지원합니다. 비디오를 수동으로 태깅하는 데에는 시간이 많이 걸릴 수 있습니다. 그러나 [!DNL Adobe AI] 기반 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 콘텐츠를 분석하고 태그를 비디오 자산에 추가합니다. 이를 통해 DAM 사용자가 고객에게 풍부한 경험을 전달하는 시간을 단축할 수 있습니다. Adobe의 머신 러닝 서비스는 비디오에 대해 두 세트의 태그를 생성합니다. 반면, 한 세트는 해당 비디오에 있는 객체, 장면 및 속성에 해당되며, 다른 세트는 음주, 달리기, 조깅 등의 작업에 관한 것입니다.
 
-비디오 태깅은 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 기본적으로 사용됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정을 옵트아웃](#opt-out-video-smart-tagging)할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오가 자동으로 태그됩니다. [!DNL Experience Manager]은(는) 또한 비디오 파일의 썸네일을 만들고 메타데이터를 추출합니다. 스마트 태그가 자산 [!UICONTROL 속성]에서 [신뢰도 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다.
+비디오 태깅은 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 기본적으로 사용됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정을 옵트아웃](#opt-out-video-smart-tagging)할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오가 자동으로 태그됩니다. [!DNL Experience Manager]은(는) 또한 비디오 파일의 썸네일을 만들고 메타데이터를 추출합니다. 스마트 태그가 자산 [속성](#confidence-score-video-tag)에서 [!UICONTROL 신뢰도 점수]의 내림차순으로 표시됩니다.
 
 ## 업로드 시 스마트 태깅 비디오 {#smart-tag-assets-on-ingestion}
 
-[비디오 자산을 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service]&#x200B;(으)로 업로드](add-assets.md#upload-assets)하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe Sensei]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
+[비디오 자산을 ](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됨](assets/smart-tags-added-to-videos.png)
 
-적용된 스마트 태그는 [!UICONTROL 스마트 태그] 내에서 개체 및 작업 태그에 대해 결합된 [신뢰도 점수](#confidence-score-video-tag)의 내림차순으로 정렬됩니다.
+적용된 스마트 태그는 [스마트 태그](#confidence-score-video-tag) 내에서 개체 및 작업 태그에 대해 결합된 [!UICONTROL 신뢰도 점수]의 내림차순으로 정렬됩니다.
 
 >[!IMPORTANT]
 >
@@ -101,7 +101,7 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 
 >[!IMPORTANT]
 >
->업로드 시 폴더에 있는 비디오에 태그를 지정하도록 선택하고 업로드 후 비디오에 스마트 태그를 지정하려면 [!UICONTROL 속성] 폴더의 [!UICONTROL 자산 처리] 탭에서 **[!UICONTROL 비디오에 스마트 태그를 사용]**&#x200B;하고 [[!UICONTROL 자산 재처리] 옵션](#smart-tag-existing-videos)을 사용하여 비디오에 스마트 태그를 추가하십시오.
+>업로드 시 폴더에 있는 비디오에 태그를 지정하도록 선택하고 업로드 후 비디오에 스마트 태그를 지정하려면 **[!UICONTROL 속성]** 폴더의 [!UICONTROL 자산 처리] 탭에서 [!UICONTROL 비디오에 스마트 태그를 사용]하고 [[!UICONTROL 자산 재처리] 옵션](#smart-tag-existing-videos)을 사용하여 비디오에 스마트 태그를 추가하십시오.
 
 ## 신뢰도 점수 {#confidence-score-video-tag}
 
@@ -111,7 +111,7 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 
 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] - [!DNL Cloud Manager]&#x200B;(으)로 배포된 프로젝트에 신뢰도 점수 OSGI 구성을 추가하려면 다음을 수행하십시오.
 
-* [!DNL Adobe Experience Manager] 프로젝트( Archetype 24 이후 `ui.config` 또는 이전 `ui.apps`)에서 `config.author` OSGi 구성에 다음 내용이 포함된 구성 파일 `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json`을(를) 포함하십시오.
+* [!DNL Adobe Experience Manager] 프로젝트( Archetype 24 이후 `ui.config` 또는 이전 `ui.apps`)에서 `config.author` OSGi 구성에 다음 내용이 포함된 구성 파일 `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json`을(를) 포함하십시오.
 
 ```json
 {
@@ -126,11 +126,11 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 
 ## 제한 사항 {#video-smart-tagging-limitations}
 
-* 특정 비디오를 사용하여 비디오에 스마트 태그를 적용하는 서비스를 교육할 수 없습니다. 기본 [!DNL Adobe Sensei] 설정에서 작동합니다.
+* 특정 비디오를 사용하여 비디오에 스마트 태그를 적용하는 서비스를 교육할 수 없습니다. 기본 [!DNL Adobe AI] 설정에서 작동합니다.
 
 * 태그 지정 진행률이 표시되지 않습니다.
 
-* 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. [!DNL Adobe Sensei] 서비스는 크기가 더 큰 비디오 파일을 건너뜁니다.
+* 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. [!DNL Adobe AI] 서비스는 크기가 더 큰 비디오 파일을 건너뜁니다.
 
 * [스마트 태그](/help/assets/smart-tags.md#smart-tags-supported-file-formats)에 언급된 파일 형식의 비디오와 지원되는 코덱에만 태그가 지정됩니다.
 

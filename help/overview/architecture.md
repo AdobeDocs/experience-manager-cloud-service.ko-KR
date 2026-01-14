@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '2711'
-ht-degree: 100%
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
+source-wordcount: '2710'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 아키텍처 소개"
 >abstract="이 탭에서는 AEM as a Cloud Service의 새 아키텍처를 확인하고 변경 내용을 알아볼 수 있습니다. AEM에서 다양한 수의 이미지를 가진 동적 아키텍처를 구축했으므로 클라우드 아키텍처를 이해하는 시간을 가져 보십시오."
->additional-url="https://video.tv.adobe.com/v/346184?captions=kor" text="아키텍처 개요"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="아키텍처 개요"
 
 Adobe Experience Manager(AEM) as a Cloud Service는 영향력이 큰 경험을 만들고 관리할 수 있는 구성 가능한 서비스 세트를 제공합니다.
 
@@ -141,7 +141,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
 * 운영 원격 측정 서비스:
    * 고객 경험(예: 페이지 조회수, 핵심 웹 바이탈 및 전환 이벤트)에서 주요 지표를 수집하고 관련 쿼리(예: 지난 7일 동안 특정 도메인에 대한 상위 페이지 조회수)에 응답하는 일을 담당합니다.
 * 자산 컴퓨팅 서비스:
-   * 업로드된 이미지, 비디오, 문서(예: PDF 및 Adobe Photoshop 파일) 처리를 담당합니다. 처리에서는 Adobe Sensei를 사용하여 이미지 및 비디오 메타데이터(예: 설명 태그 또는 주 색상 톤)를 추출한 다음 Adobe Photoshop 및 Adobe Lightroom API와 같은 API에 액세스하여 렌디션(예: 다양한 크기 또는 형식)을 생성할 수 있습니다.
+   * 업로드된 이미지, 비디오, 문서(예: PDF 및 Adobe Photoshop 파일) 처리를 담당합니다. 처리는 Adobe AI를 사용하여 이미지 및 비디오 메타데이터(예: 설명 태그 또는 기본 색상 톤)를 추출한 다음 Adobe Photoshop 및 Adobe Lightroom API와 같은 API에 액세스하여 변환(예: 다양한 크기 또는 형식)을 생성할 수 있습니다.
 * Identity Management Service(IMS):
    * 특정 Adobe Experience Cloud 애플리케이션(예: Cloud Manager 또는 AEM 작성 계층)에 대한 사용자 및 사용자 그룹을 관리하고 인증하는 역할을 담당하는 중앙 위치입니다.
    * Adobe Admin Console을 통해 액세스됩니다.
@@ -239,4 +239,4 @@ AEM as a Cloud Service를 위한 최신 아키텍처에서는 이전 세대(AEM 
 * Edge Delivery Services:
    * [AEM as a Cloud Service 개요 - Edge Delivery Services 포함](/help/edge/overview.md)
    * [Edge Delivery Services 사용](/help/edge/overview.md)
-   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ko)
+   * [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

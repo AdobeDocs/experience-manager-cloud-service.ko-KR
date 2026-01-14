@@ -1,10 +1,10 @@
 ---
-title: ' [!DNL Adobe Sensei] 스마트 서비스로 자산 자동 태그 지정'
+title: ' [!DNL Adobe AI] 스마트 서비스로 자산 자동 태그 지정'
 description: 상황에 맞게 설명적인 비즈니스 태그를 적용해 주는 AI 서비스로 자산에 태그를 지정해 줍니다.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 예를 들어, 사전에 알파벳순으로 배열된 단어들은 무작위로 흩어져 있는 단어들보다 더 쉽게 발견된다. 태깅도 유사한 용도로 사용됩니다. 비즈니스 분류법에 따라 에셋을 구성하여 가장 관련성이 높은 에셋이 검색 결과에 나타나도록 합니다. 예를 들어 자동차 제조업체는 모델 이름으로 자동차 이미지에 태그를 지정할 수 있으므로 판촉 캠페인을 디자인할 때 관련 이미지만 표시됩니다. &quot;러너&quot; 또는 &quot;러닝 슈즈&quot;에 태그를 지정하든, 사용자는 오타, 철자 변형 또는 대체 검색어에 대해 걱정할 필요가 없습니다. 스마트 태그가 이를 모두 인식합니다.
 
-배경에서 이 기능은 [Adobe Sensei](https://business.adobe.com/kr/products/sensei/adobe-sensei.html)의 인위적인 지능형 프레임워크를 사용하여 비즈니스 분류법에 정렬된 텍스트와 함께 업로드된 자산에 기본적으로 스마트 태그를 자동으로 적용합니다.
+배경에서 이 기능은 [Adobe AI](https://business.adobe.com/ai/adobe-genai.html)의 인위적인 지능형 프레임워크를 사용하여 비즈니스 분류법에 정렬된 텍스트와 함께 업로드된 자산에 기본적으로 스마트 태그를 자동으로 적용합니다.
 
 ## 사전 요구 사항 및 구성 {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 스마트 태그 워크플로 {#smart-tags-workflow}
 
-[!DNL Adobe Sensei] 기반 스마트 태깅은 인공 지능 모델을 사용하여 콘텐츠를 분석하고 태그를 자산에 추가합니다. 따라서 DAM 사용자가 고객에게 풍부한 경험을 제공하는 데 드는 시간을 줄일 수 있습니다. 스마트 태그는 자산 속성에서 [신뢰도 점수](#confidence-score)의 내림차순으로 표시됩니다.
+[!DNL Adobe AI] 기반 스마트 태깅은 인공 지능 모델을 사용하여 콘텐츠를 분석하고 태그를 자산에 추가합니다. 따라서 DAM 사용자가 고객에게 풍부한 경험을 제공하는 데 드는 시간을 줄일 수 있습니다. 스마트 태그는 자산 속성에서 [신뢰도 점수](#confidence-score)의 내림차순으로 표시됩니다.
 
 * **이미지 기반 자산**
 이미지의 경우 스마트 태그는 일부 시각적 측면을 기반으로 합니다. 스마트 컨텐츠 서비스를 사용하여 다양한 형식의 이미지에 태그를 지정합니다. 스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 [지원되는 파일 형식](#supported-file-formats)에 적용됩니다.
@@ -35,7 +35,7 @@ ht-degree: 1%
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **비디오 기반 자산**
-비디오 기반 자산의 경우 태깅은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 활성화됩니다. 마찬가지로 이미지 및 텍스트 기반 태그와 마찬가지로 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오도 자동 태그가 지정됩니다. [!DNL Adobe Sensei]은(는) 비디오에 대해 두 개의 태그 집합을 생성합니다. 한 집합은 해당 비디오의 개체, 장면 및 특성에 해당하는 반면, 다른 집합은 음주, 실행 및 조깅과 같은 작업에 해당합니다. [비디오 스마트 태그 지정 옵트아웃](#opt-out-video-smart-tagging)도 확인하세요.
+비디오 기반 자산의 경우 태깅은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 활성화됩니다. 마찬가지로 이미지 및 텍스트 기반 태그와 마찬가지로 새 비디오를 업로드하거나 기존 비디오를 재처리할 때 비디오도 자동 태그가 지정됩니다. [!DNL Adobe AI]은(는) 비디오에 대해 두 개의 태그 집합을 생성합니다. 한 집합은 해당 비디오의 개체, 장면 및 특성에 해당하는 반면, 다른 집합은 음주, 실행 및 조깅과 같은 작업에 해당합니다. [비디오 스마트 태그 지정 옵트아웃](#opt-out-video-smart-tagging)도 확인하세요.
 
 * **텍스트 기반 에셋**
 지원되는 에셋의 경우 [!DNL Experience Manager]에서 이미 텍스트를 추출하여 인덱싱하고 에셋 검색에 사용합니다. 그러나 텍스트의 키워드를 기반으로 하는 스마트 태그는 전용, 구조화된 우선순위가 높은 검색 패싯을 제공합니다. 후자는 검색 색인에 비해 에셋 발견을 개선하는 데 도움이 됩니다.
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ## 즉시 사용 가능한 스마트 태그 지정을 위한 자산 준비
 
-[자산을 &#x200B;](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 업로드된 자산이 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 자산에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe Sensei]을(를) 사용하여 이러한 스마트 태그를 만듭니다.
+[자산을 ](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 업로드된 자산이 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 자산에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 사용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됨](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM에서 태그가 지정되지 않은 Assets {#smart-tag-existing-assets}
 
-DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ko#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
+DAM의 기존 또는 이전 에셋은 자동으로 스마트 태그가 지정되지 않습니다. 스마트 태그를 생성하려면 Assets을 수동으로 [재처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)해야 합니다. 프로세스가 완료되면 폴더 내 에셋의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 스마트 태그는 [신뢰도 점수](#confidence-score)의 내림차순으로 정렬됩니다.
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -224,7 +224,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
    * 비시각적, 추상적인 측면. 예를 들어 제품의 출시 연도 또는 시즌, 이미지에 의해 유발되는 기분 또는 감정, 비디오의 주관적 함축 등이 있습니다.
    * 색상 또는 작은 제품 로고가 제품에 임베드되어 있는 셔츠와 같은 제품의 미세한 시각적 차이.
 
-* 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. [!DNL Adobe Sensei] 서비스는 크기가 더 큰 비디오 파일을 건너뜁니다.
+* 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. [!DNL Adobe AI] 서비스는 크기가 더 큰 비디오 파일을 건너뜁니다.
 * 스마트 태그가 있는 파일(일반 또는 고급)을 검색하려면 [!DNL Assets] 검색(전체 텍스트 검색)을 사용하십시오. 스마트 태그에 대한 별도의 검색 조건자는 없습니다.
 * 일반 태그를 비교하면 비즈니스 분류법을 사용하여 태그가 지정된 에셋은 태그 기반 검색으로 더 쉽게 식별하고 검색할 수 있습니다.
 
@@ -232,7 +232,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**스마트 태그가 에셋의 검색 환경을 어떻게 개선합니까?**
 
-업로드하면 [!DNL Adobe] Sensei에서 에셋에 자동으로 태그를 지정합니다. 자동화된 프로세스는 백엔드에서 매우 빠르게 실행되므로 업로드가 완료되면 몇 초 후에 에셋에 추가된 태그를 볼 수 있습니다.
+업로드하면 [!DNL Adobe] AI가 자동으로 에셋에 태그를 지정합니다. 자동화된 프로세스는 백엔드에서 매우 빠르게 실행되므로 업로드가 완료되면 몇 초 후에 에셋에 추가된 태그를 볼 수 있습니다.
 
 +++
 

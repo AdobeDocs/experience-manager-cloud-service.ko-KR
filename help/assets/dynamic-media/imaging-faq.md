@@ -1,26 +1,26 @@
 ---
 title: 스마트 이미징
-description: Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공함으로써 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
+description: Adobe AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공함으로써 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3218'
 ht-degree: 1%
 
 ---
 
 # 스마트 이미징 {#smart-imaging}
 
-Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공함으로써 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
+Adobe AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공함으로써 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
 
 
 ## 스마트 이미징 기본 정보 {#about-smart-imaging}
 
-스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
+스마트 이미징 기술은 Adobe AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
 이제 AVIF 및 WebP가 모두 지원되는 향상된 스마트 이미징을 통해 LCP(최대 콘텐츠풀 페인트)에 대한 더 나은 Google 코어 웹 바이탈 점수를 얻으십시오.
 
@@ -86,7 +86,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율 최적화 정보 {#dpr}
 
@@ -129,7 +129,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 * 최신 스마트 이미징을 사용하는 웹 페이지에 대한 Google SEO 등급이 개선되었습니다.
 * 최적화된 컨텐츠를 즉시 제공합니다(런타임 시).
-* Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
+* Adobe AI 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
 * TTL(Time To Live) 독립적. 이전에는 스마트 이미징이 작동하려면 최소 TTL이 12시간 이상이어야 했습니다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다.
@@ -279,7 +279,7 @@ Smart Imaging을 활성화하려면 Experience Manager 계정의 회사 Dynamic 
 
       * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
       * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
          1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
          1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.

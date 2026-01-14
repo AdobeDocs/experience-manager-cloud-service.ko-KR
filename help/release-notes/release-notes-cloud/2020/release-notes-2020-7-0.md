@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
-description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트
+description: '[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 73%
 
 ---
 
-# as a Cloud Service [!DNL Adobe Experience Manager] 2.020.0 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
@@ -27,23 +27,23 @@ ht-degree: 73%
 
 * 새 사용자 인터페이스 구현으로 클래식 UI 기반의 구현을 대체합니다.
 
-* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=ko) 및 [Adobe Target 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=ko)을 참조하십시오.
+* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 및 [Adobe Target 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)을 참조하십시오.
 
 * 이제 구성이 Experience Manager 저장소의 `/etc/cloudsettings`가 아닌 `/conf`에 저장됩니다.
 
-## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Asset Compute Service]을(를) 사용하여 만든 사용자 지정 응용 프로그램을 호출하도록 [!DNL Experience Manager]을(를) 구성할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 사용자 정의 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 썸네일 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 [!DNL Sensei] 서비스를 통한 자산 실행 등의 작업을 수행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하세요.
+* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Experience Manager]을(를) 사용하여 만든 사용자 지정 응용 프로그램을 호출하도록 [!DNL Asset Compute Service]을(를) 구성할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 사용자 정의 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 썸네일 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 [!DNL AI] 서비스를 통한 자산 실행 등의 작업을 수행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하세요.
 
 * [!DNL Experience Manager] as a Cloud Service에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
-* 자산 마이크로서비스를 사용하고 일괄 게시 벡엔드를 향상하여 자산 게시를 전체 자산 처리 파이프라인에 필수 요소로 통합함으로서 [!DNL Dynamic Media]의 자산 게시가 더 단순화되고 더 강력해졌습니다.
+* 에셋 마이크로서비스를 활용하고 배치 게시 백엔드를 개선하여, 에셋 게시가 전체 자산 처리 파이프라인의 필수 요소로 통합되면서 [!DNL Dynamic Media]로의 에셋 게시가 더 단순해지고 안정성이 강화되었습니다.
 
 * 클라우드 서비스 배포와 호환되지 않는 워크플로 단계에는 이제 [!UICONTROL 워크플로 모델] 편집기에서 경고가 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
-* 고객이 만든 워크플로 모델 중 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 모델은 `/var`에 자동으로 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로 모델은 자동으로 `/var`에 배포되지 않습니다.
+* 고객이 만든 워크플로 모델 중 `/conf/global`의 환경과 연결된 Git 프로젝트의 [!DNL Cloud Manager]에 배포되는 모델은 `/var`에 자동으로 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로 모델은 자동으로 `/var`에 배포되지 않습니다.
 
 ### 수정된 버그 {#assets-bugs-fixed}
 
@@ -55,22 +55,22 @@ ht-degree: 73%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-이제 Cloud Service에서 AEM Commerce을 사용할 수 있습니다.
+이제 AEM Commerce을 Cloud Service에서 사용할 수 있습니다.
 
-자세한 내용은 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ko)를 참조하십시오.
+자세한 내용은 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
-자세한 내용은 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ko)을 참조하십시오.
+자세한 내용은 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
 
-* [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ko) 버전 1.0.2와의 호환성.
+* [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
 
 * 버그 수정 및 코드 품질 개선
 
@@ -139,7 +139,7 @@ ht-degree: 73%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ko#installing-on-aem61)를 참조하십시오.
+  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 
