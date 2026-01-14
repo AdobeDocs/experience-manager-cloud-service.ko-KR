@@ -3,7 +3,7 @@ title: AEM Forms Communications API - 개요
 description: 인증 방법 및 전체 API 참조를 포함한 AEM Forms Communications API 개요
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 4%
@@ -19,7 +19,7 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 
 * [Adobe Developer Console(ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console은 Adobe API, 이벤트, 런타임 및 App Builder의 게이트웨이입니다.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
 
 서로 다른 API가 서로 다른 [인증 방법](#authentication-methods)을 지원합니다.
 
@@ -185,4 +185,4 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 >* 적응형 Forms 및 통신 API를 위한 [AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [통신 처리 - 온디맨드 API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Forms Communications API - 자습서](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

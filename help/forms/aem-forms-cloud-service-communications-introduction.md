@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2789'
 ht-degree: 27%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 > **버전 가용성**
 >
-> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=ko)
+> * **AEM 6.5**: [AEM 문서 서비스 개요](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: 이 문서
 
 ## 소개
@@ -298,10 +298,12 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## 추가 리소스 {#see-also}
-
-* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
-* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [얼리 어답터 프로그램 기능](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service Communications 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 적응형 Forms 및 통신 API를 위한 [AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - 자습서](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [얼리 어답터 프로그램 기능](/help/forms/early-access-ea-features.md)
