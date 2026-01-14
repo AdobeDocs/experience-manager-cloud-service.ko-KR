@@ -24,7 +24,7 @@ Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-rendi
 
 * 단일 에셋 및 해당 렌디션을 다운로드하려면 다음 작업을 수행하십시오.
    1. 에셋 카드에서 사용 가능한 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 에셋 및 사용 가능한 렌디션을 미리 봅니다.
-   1. 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**를 클릭하십시오.
+   1. 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하십시오.
       ![에셋 다운로드](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 또는 에셋 썸네일을 클릭한 다음 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭하여 대화 상자에서 사용 가능한 렌디션을 선택하고 확인한 후에 다운로드합니다.
 
@@ -38,12 +38,12 @@ Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-rendi
       > * Content Hub은 선택 항목을 기본 설정으로 저장하고(**[!UICONTROL 각 에셋에 대해 별도의 폴더 만들기]**) 나중에 다운로드할 수 있도록 유지합니다.
       > * **[!UICONTROL 각 에셋에 대해 별도의 폴더 만들기]** 옵션은 인증된 [!DNL Content Hub] 사용자만 사용할 수 있습니다. [!DNL Content Hub]을(를) 사용하면 공용 사용자가 자산을 개별 자산으로 다운로드할 수 있습니다.
 
-   1. **[!UICONTROL 다운로드]**를 클릭하여 선택한 에셋과 해당 표현물을 다운로드합니다.
+   1. **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 선택한 에셋과 해당 표현물을 다운로드합니다.
       ![여러 에셋 다운로드](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 다운로드가 진행되는 동안 [!DNL Content Hub]을(를) 계속 사용할 수 있습니다. Content Hub은 다운로드 프로세스 중에 워크플로우를 중단하지 않습니다.
 ![여러 에셋 다운로드](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**를 선택하여 다운로드합니다.
+**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택하여 다운로드합니다.
 ![여러 에셋 다운로드](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]

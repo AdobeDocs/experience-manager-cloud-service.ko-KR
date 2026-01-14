@@ -41,7 +41,7 @@ ht-degree: 24%
    * 사용자는 이제 [특정 표현물을 선택하고 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)할 수 있습니다. 새 렌디션 다운로드 옵션이 에셋 세부 사항 페이지의 렌디션 패널에 제공됩니다.
    * 게스트 사용자 세션에 15분의 시간 제한을 적용하여 모든 동시 사용자에게 더 나은 경험을 제공할 수 있습니다.
 
-* **[!DNL Adobe Asset Link]버전 2.1**: [, ](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 및 [!DNL Adobe Photoshop]에 대한 [!DNL Adobe Illustrator]Adobe Asset Link[!DNL Adobe InDesign] 확장의 새 버전을 사용할 수 있습니다. 2020년 10월에 릴리스된 버전 2021의 최신 [!DNL Adobe Creative Cloud] 응용 프로그램과의 호환성을 추가합니다.
+* **[!DNL Adobe Asset Link]버전 2.1**: [, &#x200B;](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 및 [!DNL Adobe Photoshop]에 대한 [!DNL Adobe Illustrator]Adobe Asset Link[!DNL Adobe InDesign] 확장의 새 버전을 사용할 수 있습니다. 2020년 10월에 릴리스된 버전 2021의 최신 [!DNL Adobe Creative Cloud] 응용 프로그램과의 호환성을 추가합니다.
 
 * **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] as a Cloud Service에서 이제 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별되지 않으며 파일이 훨씬 작습니다. 에셋의 파일 크기를 줄이면 페이지 로드 시간이 향상되고 콘텐츠 작성자가 더 빠른 웹 경험을 제공할 수 있습니다. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)에서 WebP를 사용하는 방법을 확인하세요.
 

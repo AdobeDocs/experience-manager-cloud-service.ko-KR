@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 업로드 시 스마트 태깅 비디오 {#smart-tag-assets-on-ingestion}
 
-[비디오 자산을 ](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
+[비디오 자산을 &#x200B;](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됨](assets/smart-tags-added-to-videos.png)
 
