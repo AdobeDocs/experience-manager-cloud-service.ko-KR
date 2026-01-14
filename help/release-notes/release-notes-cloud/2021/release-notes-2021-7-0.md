@@ -21,7 +21,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -85,7 +85,7 @@ API `com.day.cq.dam.api.collection.SmartCollection`은(는) [!DNL Experience Man
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* 이제 자동 양식 전환 서비스를 사용하여 [프랑스어, 독일어 및 스페인어로 된 PDF forms을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)할 수 있습니다.
+* 이제 자동 양식 전환 서비스를 사용하여 [프랑스어, 독일어 및 스페인어로 된 PDF forms을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ko&#language-specific-meta-model)할 수 있습니다.
 * 템플릿 편집기에 별도의 패널을 추가하여 적응형 양식 구성 요소와 관련된 오류를 표시합니다. 모든 적응형 양식 오류를 한 위치에서 통합하고 해결 시간을 단축하는 데 도움이 됩니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
@@ -97,9 +97,9 @@ API `com.day.cq.dam.api.collection.SmartCollection`은(는) [!DNL Experience Man
 
 * **변수 데이터 외부화**: 조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수 데이터를 저장할 수 있습니다.
 
-* **Acroform 기반 기록 문서**: XFA 기반 양식 템플릿 외에 [기록 문서의 템플릿으로도 Adobe Acrobat Form PDF(Acroform PDF)를 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)할 수 있습니다.
+* **Acroform 기반 기록 문서**: XFA 기반 양식 템플릿 외에 [기록 문서의 템플릿으로도 Adobe Acrobat Form PDF(Acroform PDF)를 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko)할 수 있습니다.
 
-* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
+* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
@@ -191,7 +191,7 @@ Cloud Acceleration Manager의 릴리스 날짜는 2021년 7월 15일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-Cloud Acceleration Manager는 계획 수립에서 Cloud Service로의 이행까지의 전환 과정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반의 애플리케이션입니다. AEM as Cloud Service으로의 여정의 모든 단계에서 도움이 되는 Adobe 권장 모범 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 구성하십시오. [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)에서 자세히 알아보세요.
+Cloud Acceleration Manager는 계획 수립에서 Cloud Service로의 이행까지의 전환 과정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반의 애플리케이션입니다. AEM as Cloud Service으로의 여정의 모든 단계에서 도움이 되는 Adobe 권장 모범 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 구성하십시오. [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ko)에서 자세히 알아보세요.
 
 >[!NOTE]
 >

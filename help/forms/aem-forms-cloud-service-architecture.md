@@ -15,10 +15,10 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service은 기업이 복잡한 디지털 양식 및 통신을 만들고, 관리하고, 게시하고, 업데이트하는 동시에 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙과 통합하고, 외부 데이터 저장소에 데이터를 저장할 수 있는 클라우드 기반 솔루션입니다. [!DNL Adobe Experience Manager as a Cloud Service]을(를) 확장합니다. 확장, 배포, 환경 및 기타 인프라에 대한 자세한 내용은 [아키텍처 소개 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html)를 참조하십시오.
+[!DNL Adobe Experience Manager Forms] as a Cloud Service은 기업이 복잡한 디지털 양식 및 통신을 만들고, 관리하고, 게시하고, 업데이트하는 동시에 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙과 통합하고, 외부 데이터 저장소에 데이터를 저장할 수 있는 클라우드 기반 솔루션입니다. [!DNL Adobe Experience Manager as a Cloud Service]을(를) 확장합니다. 확장, 배포, 환경 및 기타 인프라에 대한 자세한 내용은 [아키텍처 소개 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ko)를 참조하십시오.
 
 AEM Forms as a Cloud Service은 두 가지 주요 사용 사례인 디지털 등록 및 고객 커뮤니케이션을 지원합니다. 다음 그림은 두 사용 사례의 아키텍처를 나타냅니다.
 
@@ -48,7 +48,7 @@ Forms as a Cloud Service은 여러 구성 요소로 구성됩니다.
 
 ### CDN(Content Delivery Network)
 
-모든 AEM Forms as a Cloud Service 프로그램은 [기본 제공 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)에 액세스할 수 있습니다. Forms as a Cloud Services 라이선스에 포함되어 있습니다.
+모든 AEM Forms as a Cloud Service 프로그램은 [기본 제공 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko)에 액세스할 수 있습니다. Forms as a Cloud Services 라이선스에 포함되어 있습니다.
 
 ### 작성자
 
@@ -77,13 +77,13 @@ AEM as a Cloud Service에서는 컨텐츠/데이터를 게시 서비스에서 �
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)은(는) 엔터프라이즈급 웹 서버에서 사용할 수 있는 Adobe Experience Manager의 캐싱 및/또는 부하 분산 도구입니다.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ko)은(는) 엔터프라이즈급 웹 서버에서 사용할 수 있는 Adobe Experience Manager의 캐싱 및/또는 부하 분산 도구입니다.
 
 ### Adobe 서비스
 
 **자동 양식 전환 서비스**
 
-[자동 양식 전환 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)는 PDF 및 XFA 양식을 장치 친화적이고 반응형 및 HTML5 기반 적응형 양식으로 자동 전환합니다.
+[자동 양식 전환 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)는 PDF 및 XFA 양식을 장치 친화적이고 반응형 및 HTML5 기반 적응형 양식으로 자동 전환합니다.
 
 **Adobe Sign**
 
@@ -110,17 +110,17 @@ Forms as a Cloud Service은 Blob Store, Database 또는 스토리지 서비스�
 
 ### Cloud Manager
 
-Cloud Manager은 [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)의 필수 구성 요소입니다. 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 위치입니다. Cloud Manager은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
+Cloud Manager은 [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ko)의 필수 구성 요소입니다. 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 위치입니다. Cloud Manager은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
 
 * 프로그램 만들기 및 관리
 * 프로그램 내에서 AEM 환경 만들기 및 관리
 * 고객 코드 및 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리
 * 이러한 구성 요소에 대한 중요 라이프사이클 이벤트 알림(예: 제품 업데이트)
-Cloud Manager에 대한 자세한 내용은 [Adobe Cloud Manager 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 및 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 참조하십시오.
+Cloud Manager에 대한 자세한 내용은 [Adobe Cloud Manager 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=ko) 및 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko)를 참조하십시오.
 
 ### Developer Console
 
-Developer Console은 실행 중인 각 Forms as a Cloud Service 환경에 대한 다양한 세부 정보를 제공합니다. 이러한 세부 사항은 환경을 디버깅하는 데 유용합니다. 자세한 내용은 [Developer Console을 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)을 참조하십시오.
+Developer Console은 실행 중인 각 Forms as a Cloud Service 환경에 대한 다양한 세부 정보를 제공합니다. 이러한 세부 사항은 환경을 디버깅하는 데 유용합니다. 자세한 내용은 [Developer Console을 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko)을 참조하십시오.
 
 <!--
 
@@ -164,19 +164,19 @@ A Document of Record is a PDF version of a form. It provides an ability to keep 
 
 <!-- ## Cloud Manager{#cloud-manager}
 
-Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
+Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ko). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
 
 * Creating and managing programs
 * Creating and managing the AEM environments within the programs
 * Creating and managing the pipelines for deploying the customer code and configuration to a particular environment
 * Getting notified of important lifecycle events for these components (for example, product updates)
-For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+For more information about Cloud Manager, see [Understand Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=ko) and [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko).
 
 ## Users and Authentication {#users-and-authentication}
 
-AEM as a Cloud Service includes Admin Console support for AEM instances and Adobe Identity Management System (IMS) based authentication. The Admin Console allows administrators to centrally manage all Experience Cloud users. Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance. For more information about users, authentication, and, and accessing an instance of AEM as a Cloud Service, see [IMS Support for [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction).
+AEM as a Cloud Service includes Admin Console support for AEM instances and Adobe Identity Management System (IMS) based authentication. The Admin Console allows administrators to centrally manage all Experience Cloud users. Users and Groups can be assigned to product profiles associated with AEM as a Cloud Service instances, allowing them to log in to that instance. For more information about users, authentication, and, and accessing an instance of AEM as a Cloud Service, see [IMS Support for [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#introduction).
 
-Various personas are involved in a typical [!DNL AEM Forms] project. After you log in to your [!DNL AEM Forms] as a Cloud Service instance, you can [add users in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) for personas applicable to your organization or project and [assign users to built-in groups](forms-groups-privileges-tasks.md) to provide them required privileges.
+Various personas are involved in a typical [!DNL AEM Forms] project. After you log in to your [!DNL AEM Forms] as a Cloud Service instance, you can [add users in admin console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko) for personas applicable to your organization or project and [assign users to built-in groups](forms-groups-privileges-tasks.md) to provide them required privileges.
 
 To learn various in-built [!DNL AEM Forms] specific user groups and privileges available on [!DNL AEM Forms] as a Cloud Services instance, see [Configure, user, roles and groups](forms-groups-privileges-tasks.md). 
 
@@ -199,7 +199,7 @@ Also, one of the most common requirements for developers is quick access to the 
 * Search index definitions
 * ACLs and permissions
 * Service users and user groups
-Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment. -->
+Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko) on the environment. -->
 
 ### 적응형 양식 작성 {#local-development}
 
@@ -207,7 +207,7 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 ## 디버깅 {#debugging}
 
-AEM as a Cloud Service은 셀프서비스, 확장 가능한 클라우드 인프라에서 실행됩니다. 이를 위해서는 AEM 개발자가 AEM as a Cloud Service의 다양한 측면을 이해하고 디버깅해야 하며, 빌드 및 배포부터 AEM 애플리케이션 실행에 대한 세부 정보를 얻어야 합니다. 자세한 내용은 [AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html)을 참조하십시오.
+AEM as a Cloud Service은 셀프서비스, 확장 가능한 클라우드 인프라에서 실행됩니다. 이를 위해서는 AEM 개발자가 AEM as a Cloud Service의 다양한 측면을 이해하고 디버깅해야 하며, 빌드 및 배포부터 AEM 애플리케이션 실행에 대한 세부 정보를 얻어야 합니다. 자세한 내용은 [AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ko)을 참조하십시오.
 
 
 >[!MORELIKETHIS]
