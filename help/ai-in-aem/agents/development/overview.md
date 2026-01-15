@@ -3,9 +3,9 @@ title: 개발 에이전트 개요
 description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 현재 에이전트는 파이프라인 상태를 검색하고 수정 사항을 제안하여 빌드 단계의 오류를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478014?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ ht-degree: 1%
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+이 에이전트에 대한 액세스 요청 또는 피드백이 포함된 [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)을(를) 전자 메일로 보냅니다.
 
 ## Cloud Manager을 통해 개발 에이전트에 액세스 {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 
 | 프롬프트 | 결과 |
 | --- | --- |
+| *실패한 파이프라인 문제 해결* | 파이프라인이 실패한 이유에 대한 분석을 수행합니다. 참조되는 파이프라인이 명확하지 않은 경우 사용자에게 추가 질문이 표시됩니다. |
 | *기본 프로그램에 대해 실패한 파이프라인을 나열합니다.* | 결과가 달라질 수 있지만 이 프롬프트는 분석할 특정 파이프라인을 참조하라는 후속 제안과 함께 실패한 파이프라인 테이블을 출력합니다. |
-| *실패한 내 파이프라인을 &quot;개발 파이프라인&quot;이라고 분석합니다.* | 이 프롬프트는 실패한 파이프라인을 분석하고 수정 사항을 제안합니다. |
+| *실패한 내 파이프라인을 &quot;개발 파이프라인&quot;이라고 분석합니다.* | 이 프롬프트는 실패한 파이프라인을 분석하고 수정 사항을 제안합니다. 여러 개의 오류가 있는 경우 사용자에게 추가 질문이 표시됩니다. |
+| *파이프라인 실행 문제 해결 1234567* | 정확한 파이프라인 실행 ID를 제공하여 파이프라인 분석이 수행됩니다. |
 
 ## 범위를 벗어난 기능 {#out-of-scope-features}
 
 파이프라인 문제 해결은 전체 스택 파이프라인의 빌드 단계에서 작동합니다. 다른 파이프라인 유형 및 단계의 경우 로그를 다운로드하고 검사하여 오류를 디버그합니다.
 
 [로그 액세스 및 다운로드](/help/implementing/cloud-manager/manage-logs.md)를 참조하세요.
-
-BYOGIT(Bring Your Own Git)을 사용하는 프로그램에서는 파이프라인 문제 해결이 지원되지 않습니다.
