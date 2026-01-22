@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.01.15 릴리스 정보
-description: 다음은 범용 편집기 2026.01.15 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.01.22 릴리스 정보
+description: 다음은 범용 편집기 2026.01.22 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 34%
+source-wordcount: '243'
+ht-degree: 29%
 
 ---
 
 
-# 범용 편집기 2026.01.15 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.01.22 릴리스 정보 {#release-notes}
 
-유니버설 편집기 2026년 1월 15일 릴리스의 릴리스 정보입니다.
+유니버설 편집기 2026년 1월 22일 릴리스의 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ ht-degree: 34%
 
 ## 새로운 기능 {#what-is-new}
 
-* [모델 필드의 기본값을 설정하고 유지하는 지원이 추가되었습니다.](/help/implementing/universal-editor/field-types.md)
-   * 값을 설정하지 않으면 유니버설 편집기는 모델 정의에서 `value`(으)로 정의된 모든 항목을 유지합니다.
-   * 이렇게 하면 표시되는 항목이 백엔드에 지속되는 항목과 일치합니다.
-   * 이것은 엄청난 변화입니다.
+* 레이블(짧은 텍스트 미리 보기로)이 [콘텐츠 트리의 텍스트 블록에 추가되었습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* 이제 일반 텍스트 필드에 대해 TextArea가 지원됩니다.
+* 이제 구성 끝점이 UI 기능에 사용됩니다.
+* 이제 콘텐츠 조각의 TextArea가 지원됩니다.
+* 이제 Toast API가 확장에 노출됩니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -39,6 +40,12 @@ ht-degree: 34%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 이제 콘텐츠 스위치에서 데이터 정리가 올바르게 수행됩니다.
-* 이제 확장 업데이트의 여러 작업이 지원됩니다.
-* 이제 개발자 로그인을 위한 닫기 버튼이 예상대로 작동합니다.
+* 위치 표시줄을 통해 탐색할 때 캔버스 레이아웃에 문제가 해결되었습니다.
+* 선행 공백은 RTE에서 정리되지 않았습니다.
+* 인라인 편집이 Enter에서 복원되었습니다.
+* 드래그 레이블이 전체 컨텐츠를 표시하지 않도록 복구되었습니다.
+* 브라우저 접근성 문제가 해결되었습니다.
+* `selectEditables([])`은(는) 이제 확장성을 통해 모든 구성 요소의 선택을 해제하는 데 사용됩니다.
+* 이제 메타데이터 테이블이 올바른 위치에 만들어집니다.
+* 복사된 콘텐츠 조각 리소스가 `/data/undefined`을(를) 가리키던 문제를 해결했습니다.
+

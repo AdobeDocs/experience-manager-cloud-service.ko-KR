@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2657'
 ht-degree: 20%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이미 유니버설 편집기에 액세스하고 탐색하는 방법을 잘 알고 있다고 가정합니다. 그렇지 않은 경우 [범용 편집기 액세스 및 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)을 참조하십시오.
+>이 문서에서는 사용자가 이미 유니버설 편집기에 액세스하고 탐색하는 방법을 잘 알고 있다고 가정합니다. 그렇지 않은 경우 [유니버설 편집기 액세스 및 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)을 참조하십시오.
 
 >[!TIP]
 >
@@ -39,9 +39,13 @@ ht-degree: 20%
 
 >[!TIP]
 >
->기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)(으)로 전환하세요.
+>기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드로 전환하세요.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 콘텐츠에 대한 추가 정보 및 옵션을 사용할 수 있습니다.
+선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+편집 가능한 모든 콘텐츠에는 콘텐츠 유형이 배지로 지정됩니다. 콘텐츠에 따라 이 배지를 클릭하여 작업을 편집할 수 있습니다.
+
+![편집 가능한 배지 옵션](assets/editable-badge.png)
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
@@ -51,7 +55,7 @@ ht-degree: 20%
 
 얇은 파란색 윤곽선이 짙은 파란색 윤곽선으로 바뀌면 선택 표시가 나타나고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
-텍스트 구성 요소를 선택하면 자세한 정보가 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 표시됩니다. 패널에서 텍스트를 편집할 수도 있습니다.
+텍스트 구성 요소를 선택하면 자세한 정보가 [속성 패널에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 패널에서 텍스트를 편집할 수도 있습니다.
 
 ![속성 패널에서 텍스트 편집](assets/ue-editing-text-component-rail.png)
 
@@ -110,7 +114,7 @@ ht-degree: 20%
 
 ### 미디어 편집 {#edit-media}
 
-[속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 자세한 내용을 볼 수 있습니다.
+[속성 패널에서 자세한 내용을 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![미디어 편집](assets/ue-edit-media.png)
 
@@ -123,7 +127,7 @@ ht-degree: 20%
 
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택하면 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에서 세부 정보를 편집할 수 있습니다.
+[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택하면 [속성 패널에서 세부 정보를 편집할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
@@ -251,7 +255,7 @@ ht-degree: 20%
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)에서 나가십시오.
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드에서 전환하십시오.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## 구성 요소 상속 편집 {#inheritance}
 
@@ -370,7 +374,7 @@ ht-degree: 20%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 
