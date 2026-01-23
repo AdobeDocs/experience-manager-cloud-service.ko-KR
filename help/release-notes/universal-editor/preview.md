@@ -3,10 +3,10 @@ title: 범용 편집기 미리보기 릴리스 정보
 description: 다음은 범용 편집기 미리보기 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 57%
+source-wordcount: '200'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 57%
 * 정의가 확장성에 노출되었습니다.
 * 구성 요소 이동 메서드가 `editorActions`에 노출되었습니다.
 * 구성 요소 추가 메서드가 `editorActions`에 노출되었습니다.
-* V2에 대해 구현된 블록 세부 사항.
+* 문서 작성 API 버전 2.0이 릴리스되었습니다.
 
 ## 예정된 개선 사항 {#other-improvements}
 
