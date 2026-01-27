@@ -94,9 +94,9 @@ ht-degree: 97%
 
 `plugins`는 구성 요소를 유지하는 역할을 하는 플러그인을 정의합니다. 일반적인 플러그인은 다음과 같습니다.
 
-* `aem`AEM as a Cloud Service,[ ](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service)AEM 6.5.,[ 및 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65)AEM 6.5 LTS[용 ](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts)
+* `aem`AEM as a Cloud Service,[&#x200B; &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service)AEM 6.5.,[&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-65)AEM 6.5 LTS[용 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts)
 * [Edge Delivery Services용 AEM Sites로 작성](https://www.aem.live/developer/ue-tutorial)용 `xwalk`
-* `da`문서 작성[에 대한 ](https://docs.da.live/developers/reference/universal-editor)
+* `da`문서 작성[에 대한 &#x200B;](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` 또는 `cf` {#page-cf}
 
