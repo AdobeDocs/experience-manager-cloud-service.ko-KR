@@ -4,10 +4,10 @@ description: 예제와 함께 범용 편집기가 속성 패널에서 편집할 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ ht-degree: 97%
 | `multi` | `boolean` | 필드가 다중 필드입니까?<br/>속성 패널의 다중 필드에 컨테이너 중첩이 허용되지 않습니다. | 아니요 |
 | `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
 | `raw` | `unknown` | 구성 요소가 사용할 수 있는 원시 데이터 | 아니요 |
+
+>[!NOTE]
+>
+>`_` 또는 [`aem` 플러그인을 사용할 때 필드 이름에 밑줄(`xwalk`)을 사용할 수 없습니다.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### 이름 필드 및 중첩 {#nesting}
 
