@@ -25,13 +25,13 @@ ht-degree: 3%
 
 CIF 구성에서는 기본적으로 캐시 지우기 기능이 비활성화되어 있습니다. 활성화하려면 해당 프로젝트에 다음을 추가해야 합니다.
 
-* `/bin/cif/invalidate-cache`여기`com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`와 같이 프로젝트에서 [ 구성을 추가하여 해당 요청으로 clear-cache API를 트리거하는 데 도움이 되는 서블릿 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)을(를) 활성화합니다.
+* `/bin/cif/invalidate-cache`여기`com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`와 같이 프로젝트에서 [&#x200B; 구성을 추가하여 해당 요청으로 clear-cache API를 트리거하는 데 도움이 되는 서블릿 &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)을(를) 활성화합니다.
 
   >[!NOTE]
   >
   > 작성자 인스턴스에 대해서만 구성을 활성화해야 합니다.
 
-* `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`여기[와 같이 프로젝트에서 ](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
+* `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`여기[와 같이 프로젝트에서 &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) 구성을 추가하여 리스너가 AEM의 각 인스턴스(게시 및 작성자)에서 캐시를 지울 수 있도록 합니다.
    * 작성자 및 게시 인스턴스 모두에 대해 구성을 활성화해야 합니다.
    * Dispatcher 캐시 활성화(선택 사항): 위의 구성에서 `enableDispatcherCacheInvalidation` 속성을 true로 설정하여 Dispatcher 캐시 지우기 설정을 활성화할 수 있습니다. 이렇게 하면 Dispatcher에서 캐시를 지우는 기능이 제공됩니다.
 
