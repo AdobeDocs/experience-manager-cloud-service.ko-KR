@@ -45,7 +45,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 가치 창출 시간 (TTV) {#ttv}
 
-CIF은 [AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA(Headless 콘텐츠 및 상거래)용 통합 패턴을 통해 프로젝트 개발을 가속화합니다.
+CIF은 [AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 PWA(Headless 콘텐츠 및 상거래)용 통합 패턴을 통해 프로젝트 개발을 가속화합니다.
 
 CIF은 항상 최신의 추가 기능을 통해 새롭고 개선된 기능에 액세스할 수 있도록 지속적인 혁신을 위해 빌드되었습니다.
 
