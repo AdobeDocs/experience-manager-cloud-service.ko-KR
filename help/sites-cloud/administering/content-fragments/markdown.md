@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 96%
+source-wordcount: '559'
+ht-degree: 84%
 
 ---
 
 # Markdown {#markdown}
 
-콘텐츠 조각을 [작성](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)하는 경우, **Markdown**&#x200B;의 **기본 유형**&#x200B;으로 [여러 줄 텍스트 필드](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)를 정의할 수 있습니다. 콘텐츠 조각 편집기에서 *Markdown* 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 작성할 수 있습니다.
+콘텐츠 조각을 [작성](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)하는 경우 [Markdown](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)의 **기본 형식**&#x200B;으로 **여러 줄 텍스트 필드**&#x200B;을(를) 정의할 수 있습니다. 콘텐츠 조각 편집기에서 *Markdown* 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 작성할 수 있습니다.
 
 ![편집기의 Markdown 여러 줄 텍스트 필드](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 ## 제목 표기법 {#heading-notation}
 
-제목 앞에 해시 태그(#)를 배치하여 제목을 만듭니다. H1에는 하나의 해시 태그(#)가 사용되고 H2에는 두 개의 해시 태그(##)가 사용되는 방식입니다. 최대 6개의 해시 태그를 사용할 수 있습니다. 예:
+제목 앞에 해시 태그(#)를 배치하여 제목을 만듭니다. 하나의 해시 태그(#)는 H1을 나타내고, 두 개의 해시 태그(##)는 H2를 나타냅니다. 최대 6개의 해시 태그를 사용할 수 있습니다. 예:
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ ht-degree: 96%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -130,7 +130,7 @@ ht-degree: 96%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &ast; 기호를 사용하십시오. 예:
+순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast; 기호를 사용하십시오. 예:
 
     `* item in list`
 
@@ -182,7 +182,7 @@ ht-degree: 96%
 
 ## 백슬래시 이스케이프 {#backslash-escapes}
 
-백슬래시 이스케이프를 사용하여 형식 지정 구문에서 특별한 의미가 있는 리터럴 문자를 생성할 수 있습니다. 예를 들어 리터럴 별표(HTML &lt;em> 태그 대신)로 단어를 둘러싸려면 다음과 같이 별표 앞에 백슬래시를 사용할 수 있습니다.
+백슬래시 이스케이프를 사용하여 형식 지정 구문에 특별한 의미가 있는 리터럴 문자를 생성할 수 있습니다. 예를 들어 리터럴 별표(HTML &lt;em> 태그 대신)로 단어를 둘러싸려면 다음과 같이 별표 앞에 백슬래시를 사용할 수 있습니다.
 
     `\\*literal asterisks\\*`
 
