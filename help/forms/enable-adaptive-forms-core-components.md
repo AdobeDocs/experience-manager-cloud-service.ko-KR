@@ -19,7 +19,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 적응형 Forms 핵심 구성 요소 가용성
@@ -32,8 +32,8 @@ ht-degree: 8%
 
 관련 안내서를 따르십시오.
 
-- AEM 6.5 Forms의 경우: [AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html).
-- AEM 6.5 LTS Forms의 경우: [AEM 6.5 LTS Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- AEM 6.5 Forms의 경우: [AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko).
+- AEM 6.5 LTS Forms의 경우: [AEM 6.5 LTS Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **참고:** 이전 AEM 6.5 환경에서 적응형 Forms 핵심 구성 요소를 활성화하는 단계가 명확하지 않거나 환경별 사전 요구 사항이 있는 경우 활성화를 시도하기 전에 이러한 요구 사항을 명확히 하십시오.
 
