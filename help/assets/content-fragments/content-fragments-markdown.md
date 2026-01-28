@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
+source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
 
     `### This is an H3`
 
-    `###### This is a H6`
+    `###### This is an H6`
 
 원할 경우 등호 기호로 텍스트에 밑줄을 그어 H1을 만들고 마이너스 기호로 텍스트에 밑줄을 그어 H2를 만들 수 있습니다. 예:
 
@@ -72,7 +72,7 @@ ht-degree: 77%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -136,7 +136,7 @@ ht-degree: 77%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &ast; 기호를 사용하십시오. 예:
+순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast; 기호를 사용하십시오. 예:
 
     `* item in list`
 
