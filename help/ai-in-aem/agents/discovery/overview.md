@@ -3,9 +3,9 @@ title: 검색 에이전트 개요
 description: 검색 에이전트를 사용하여 간소화되고 클릭되지 않는 검색 환경을 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -170,3 +170,6 @@ AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다. exp
 
 * 카테고리(운동화, 전자 제품), 시즌(가을, 봄), 이벤트(블랙 프라이데이, 제품 출시) 및 채널(웹, 이메일, 인쇄)과 같은 조직별 메타데이터를 사용하여 콘텐츠를 추가로 필터링합니다.
 
+## 제한 사항 {#limitations-discovery-agent}
+
+검색 에이전트는 이미지 및 SVG 형식 유형에 대해서만 차원 기반 프롬프트를 지원합니다. 예: `Find images wider than 1080px`
