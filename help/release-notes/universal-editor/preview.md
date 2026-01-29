@@ -3,17 +3,17 @@ title: 범용 편집기 미리보기 릴리스 정보
 description: 다음은 범용 편집기 미리보기 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
-source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 56%
+source-wordcount: '152'
+ht-degree: 74%
 
 ---
 
 
 # 범용 편집기 미리보기 릴리스 정보 {#preview}
 
-다음은 범용 편집기 **미리보기 버전**&#x200B;에 대한 릴리스 정보입니다. 이러한 기능은 현재 범용 편집기의 **미리보기 환경**&#x200B;에서 사용할 수 있습니다. 이러한 기능은 2026년 1월 29일에 일반 출시될 예정입니다.
+다음은 범용 편집기 **미리보기 버전**&#x200B;에 대한 릴리스 정보입니다. 이러한 기능은 현재 범용 편집기의 **미리보기 환경**&#x200B;에서 사용할 수 있습니다. 이러한 기능은 2026년 2월 5일에 일반 출시될 예정입니다.
 
 이 **미리보기** 릴리스 정보는 범용 편집기에 대한 예정된 변경 사항을 알 수 있도록 편의를 위해 제공되며, [미리보기 환경으로 전환](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)하여 테스트할 수 있습니다.
 
@@ -27,15 +27,8 @@ ht-degree: 56%
 
 ## 예정된 새로운 기능 {#what-is-new}
 
-* 구성 요소 제거 메서드가 `editorActions`에 노출되었습니다.
-* 구성 요소 복사 메서드가 `editorActions`에 노출되었습니다.
-* 정의가 확장성에 노출되었습니다.
-* 구성 요소 이동 메서드가 `editorActions`에 노출되었습니다.
-* 구성 요소 추가 메서드가 `editorActions`에 노출되었습니다.
-* 문서 작성 API 버전 2.0이 릴리스되었습니다.
+* 이제 이동 작업을 [상황에 맞는 메뉴에서 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
 
 ## 예정된 개선 사항 {#other-improvements}
 
-* API 스키마를 따르도록 `content` 확장성이 `details`(으)로 이름이 변경되었습니다.
-* 상황별 메뉴 동작이 개선되었습니다.
-* 편집 가능한 항목의 배지를 클릭할 때 컨텍스트 메뉴가 제대로 열리도록 하는 버그를 수정했습니다.
+* [`xwalk` 플러그인을 사용할 때 AEM 6.5에 대해 미리 보기에 게시가 활성화되었습니다.](/help/implementing/universal-editor/component-definition.md#plugins)

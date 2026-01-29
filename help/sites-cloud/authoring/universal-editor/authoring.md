@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 20%
+source-wordcount: '2710'
+ht-degree: 19%
 
 ---
 
@@ -33,17 +33,25 @@ ht-degree: 20%
 
 ## 콘텐츠 편집 {#editing-content}
 
-콘텐츠 편집은 간단하고 직관적입니다. 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 가는 파란색 윤곽선으로 강조 표시됩니다.
+콘텐츠 편집은 간단하고 직관적입니다. 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 가는 파란색 윤곽선과 배지로 강조 표시됩니다.
 
-![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
+![편집 가능한 콘텐츠가 연한 파란색 상자로 강조 표시됨](assets/editable-content.png)
+
+강조 표시된 콘텐츠를 탭하거나 클릭하면 얇고 연한 파란색 윤곽선이 배지가 있는 진한 파란색 윤곽선이 됩니다.
+
+![선택한 콘텐츠가 진한 파란색 상자로 강조 표시됨](assets/selected-content.png)
 
 >[!TIP]
 >
 >기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드로 전환하세요.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+선택한 콘텐츠에 따라 [속성 패널에서 다른 바로 편집 옵션과 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-편집 가능한 모든 콘텐츠에는 콘텐츠 유형이 배지로 지정됩니다. 콘텐츠에 따라 이 배지를 클릭하여 작업을 편집할 수 있습니다.
+### 상황에 맞는 메뉴 {#context-menu}
+
+편집 가능한 모든 콘텐츠에는 콘텐츠 유형이 배지로 지정됩니다.
+
+이 배지를 클릭하면 편집 작업으로 컨텍스트 메뉴에 빠르게 액세스할 수 있습니다. 편집할 수 없는 항목을 마우스 오른쪽 버튼으로 클릭하면 해당 항목이 자동으로 선택되고 컨텍스트 메뉴도 열립니다.
 
 ![편집 가능한 배지 옵션](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ ht-degree: 20%
 
 ![콘텐츠 편집](assets/editing-content.png)
 
-얇은 파란색 윤곽선이 짙은 파란색 윤곽선으로 바뀌면 선택 표시가 나타나고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
+얇고 연한 파란색 윤곽선이 어두운 파란색 윤곽선으로 바뀌면 선택 내용이 표시되고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
 텍스트 구성 요소를 선택하면 자세한 정보가 [속성 패널에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 패널에서 텍스트를 편집할 수도 있습니다.
 
@@ -69,9 +77,9 @@ ht-degree: 20%
 
 사용자의 편의를 위해 서식 옵션 및 텍스트에 대한 세부 사항을 두 곳에서 사용할 수 있습니다.
 
-#### 컨텍스트 메뉴 {#context-menu}
+#### 서식 있는 텍스트 상황에 맞는 메뉴 {#rich-text-context-menu}
 
-상황에 맞는 메뉴가 서식 있는 텍스트 블록 위에 열리고 상황에 맞는 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
+서식 있는 텍스트 블록 위에 컨텍스트 메뉴가 열리고 컨텍스트에서 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
 
 ![서식 있는 텍스트 상황에 맞는 메뉴](assets/rich-text-context-menu.png)
 
@@ -374,7 +382,7 @@ ht-degree: 20%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

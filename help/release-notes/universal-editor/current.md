@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.01.22 릴리스 정보
-description: 다음은 범용 편집기 2026.01.22 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.01.29 릴리스 정보
+description: 다음은 범용 편집기 2026.01.29 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
+source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 29%
+source-wordcount: '198'
+ht-degree: 35%
 
 ---
 
 
-# 범용 편집기 2026.01.22 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.01.29 릴리스 정보 {#release-notes}
 
-유니버설 편집기 2026년 1월 22일 릴리스의 릴리스 정보입니다.
+유니버설 편집기 2026년 1월 29일 릴리스의 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,11 +26,12 @@ ht-degree: 29%
 
 ## 새로운 기능 {#what-is-new}
 
-* 레이블(짧은 텍스트 미리 보기로)이 [콘텐츠 트리의 텍스트 블록에 추가되었습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* 이제 일반 텍스트 필드에 대해 TextArea가 지원됩니다.
-* 이제 구성 끝점이 UI 기능에 사용됩니다.
-* 이제 콘텐츠 조각의 TextArea가 지원됩니다.
-* 이제 Toast API가 확장에 노출됩니다.
+* 구성 요소 제거 메서드가 `editorActions`에 노출되었습니다.
+* 구성 요소 복사 메서드가 `editorActions`에 노출되었습니다.
+* 구성 요소 이동 메서드가 `editorActions`에 노출되었습니다.
+* 구성 요소 추가 메서드가 `editorActions`에 노출되었습니다.
+* 정의가 [확장성에 노출되었습니다.](/help/implementing/universal-editor/extending.md)
+* 문서 작성 API 버전 2.0이 릴리스되었습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -40,12 +41,6 @@ ht-degree: 29%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 위치 표시줄을 통해 탐색할 때 캔버스 레이아웃에 문제가 해결되었습니다.
-* 선행 공백은 RTE에서 정리되지 않았습니다.
-* 인라인 편집이 Enter에서 복원되었습니다.
-* 드래그 레이블이 전체 컨텐츠를 표시하지 않도록 복구되었습니다.
-* 브라우저 접근성 문제가 해결되었습니다.
-* `selectEditables([])`은(는) 이제 확장성을 통해 모든 구성 요소의 선택을 해제하는 데 사용됩니다.
-* 이제 메타데이터 테이블이 올바른 위치에 만들어집니다.
-* 복사된 콘텐츠 조각 리소스가 `/data/undefined`을(를) 가리키던 문제를 해결했습니다.
-
+* API 스키마를 따르도록 `content` 확장성이 `details`(으)로 이름이 변경되었습니다.
+* 상황별 메뉴 동작이 개선되었습니다.
+* 편집 가능한 항목의 배지를 클릭할 때 컨텍스트 메뉴가 제대로 열리도록 하는 버그를 수정했습니다.
