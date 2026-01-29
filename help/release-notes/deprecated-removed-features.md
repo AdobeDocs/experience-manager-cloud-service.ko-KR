@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
 workflow-type: tm+mt
-source-wordcount: '3194'
-ht-degree: 100%
+source-wordcount: '3434'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +28,16 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 >[!WARNING]
 >
 >경우에 따라 새로운 Cloud Manager 빌드를 배포하거나 최신 버전의 AEM as a Cloud Service로 업그레이드하기 전에 기능을 제거해야 할 수도 있습니다.
+
+>[!IMPORTANT]
+>  여러 [더 이상 사용되지 않는 API](#aem-apis)이(가) **2026년 2월 26일**&#x200B;에 제거 대상으로 지정되었습니다. 다음 주요 날짜 및 영향을 검토하십시오.
+>
+> * **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
+> * **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
+> * **2026년 3월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
+> * **2026년 4월 30일**: 이러한 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
+>
+> 배포 블록을 방지하려면 2026년 3월 26일 이전에 API 사용을 제거하십시오.
 
 ## 사용하지 않는 기능 {#deprecated-features}
 
@@ -74,6 +84,17 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 아래 표의 API(클릭하여 확장)는 더 이상 지원되지 않는다고 발표되었지만 아직 제거되지 않았습니다.  이 API 사용은 목표 제거일 이전에 중단되어야 하며, 그렇지 않으면 성능, 가용성 및 보안과 관련된 문제가 발생할 수 있습니다. 일부 API는 아래 API 제거 안내 섹션을 참조합니다.
 
+>[!IMPORTANT]
+> 여러 API가 **2026년 2월 26일**&#x200B;에 제거될 예정입니다. 다음 주요 날짜 및 영향을 검토하십시오.
+>
+> * **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
+> * **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
+> * **2026년 3월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
+> * **2026년 4월 30일**: 이러한 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
+>
+> 배포 블록을 방지하려면 2026년 3월 26일 이전에 API 사용을 제거하십시오.
+
+
 <details>
   <summary>더 이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
 <table style="table-layout:auto">
@@ -88,100 +109,100 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>대안으로 Sling의 인증 코어/인증 코어 SPI 인터페이스를 사용하십시오. <a href="#org.apache.sling.commons.auth">아래의 제거 노트를 참조하십시오.</a></td>
     <td>2015</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다. <a href="#org.eclipse.jetty">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/27/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다. <a href="#com.mongodb">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/27/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
     <td>7/29/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/8/2019</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다. <a href="#org.apache.felix.http.whiteboard">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>이 API는 더 이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션하십시오.</td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service는 이 내부 로그백 API를 지원되지 않습니다. <a href="#ch.qos.logback">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service는 이 내부 log4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1은 2015년에 서비스가 종료되었으며 더 이상 지원되지 않습니다. <a href="#org.apache.log4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Google Guava Core Libraries는 더 이상 Cloud Service에서 사용되지 않습니다. <a href="#com.google.common">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/15/2023</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service는 이 내부 slf4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/11/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr> 
     <tr>
     <td>com.drew.*</td>
     <td>이미지와 비디오에서 메타데이터를 추출하려면 Cloud Service의 Asset Compute, Apache POI 또는 Apache Tika를 통해 수행해야 합니다.</td>
     <td>9/17/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
     <td>9/23/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
     <td>9/23/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>Felix 웹 콘솔은 클라우드 환경에서 지원되지 않습니다. <a href="#org.apache.felix.webconsole">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/30/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>10/31/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>  
   <tr>
     <td>org.apache.sling.runmode</td>
