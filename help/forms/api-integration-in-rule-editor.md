@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1034'
 ht-degree: 3%
 
 ---
@@ -123,6 +123,10 @@ ht-degree: 3%
 
 마찬가지로 **Country of Passport Issuance** 및 **Destination Country**&#x200B;에서 동일한 API 호출을 사용하여 세 필드 모두에서 일관되고 최신 데이터를 유지합니다.
 
+>
+>
+> API를 호출하고 사용자 지정 함수를 사용하여 [JSON 배열에서 속성 값을 검색할 수 있습니다](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). 이 접근 방식을 사용하면 값을 추출하고 양식 필드에 직접 바인딩할 수 있습니다.
+
 ## API 실패에 대한 재시도 메커니즘 구현
 
 API 요청이 실패하면 사용자에게 오류를 보고하기 전에 요청을 다시 시도하는 것이 유용한 경우가 많습니다. **function.js** 파일에 사용자 지정 코드를 작성하여 폴링 및 다시 시도 메커니즘을 구현할 수 있습니다.
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 위의 코드에서 **retryHandler** 함수는 오류가 발생한 경우 자동으로 다시 시도하여 API 요청을 관리합니다. 이 메서드는 요청 함수(requestFn)를 사용하여 최대 2회까지 요청을 시도하고 다시 시도할 때마다 메타데이터를 추가합니다.
-
->[!NOTE]
->
-> 사용자 지정 기능을 추가하는 방법에 대한 자세한 단계는 [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 사용자 지정 기능 소개](/help/forms/create-and-use-custom-functions.md) 문서를 참조하십시오.
 
 ## 자주 묻는 질문
 

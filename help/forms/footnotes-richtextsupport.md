@@ -4,18 +4,16 @@ description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
 
 # 각주 구성 요소 {#footnotecomponent}
 
->[!NOTE]
->
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 **[!UICONTROL 각주]**&#x200B;은(는) 페이지의 끝에 표시되는 추가 정보나 참고 사항입니다. [!UICONTROL 각주]은(는) 숫자와 함께 텍스트에 위 첨자로 표시된 각주를 포함합니다.
 
@@ -30,7 +28,7 @@ ht-degree: 3%
 * 기본 정보의 정상적인 흐름을 방해할 수 있는 추가 정보를 제공합니다.
 * 괄호 정보 또는 저작권 권한을 제공합니다.
 
-적응형 Forms에서 [!UICONTROL 각주]는 양식을 완성하거나 사용하는 방법에 대한 정보를 표시하는 데 사용됩니다. 적응형 Forms을 만드는 방법에 대한 자세한 내용은 [적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ko)를 참조하십시오.
+적응형 Forms에서 [!UICONTROL 각주]는 양식을 완성하거나 사용하는 방법에 대한 정보를 표시하는 데 사용됩니다. 적응형 Forms을 만드는 방법에 대한 자세한 내용은 [적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)를 참조하십시오.
 
 ## 적응형 Forms 각주 {#using-footnote-adaptiveforms}
 
@@ -53,14 +51,15 @@ ht-degree: 3%
 
 1. 구성 요소 브라우저에서 **[!UICONTROL 각주 자리 표시자]** 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
 
-   >[!NOTE]
-   >
-   >* 게시 인스턴스에서 각주는 **[!UICONTROL 각주 자리 표시자]** 구성 요소가 적응형 양식에 배치된 위치에 표시됩니다.
-   >* 다른 패널 사이를 탐색할 때 탐색 패널 내에 있는 **[!UICONTROL 각주 자리 표시자]**&#x200B;에는 보이는 각주만 표시됩니다.
-
 1. 속성을 저장합니다.
 
 런타임 시 숫자는 텍스트에 위 첨자로 표시되며 해당 설명은 적응형 양식에 **[!UICONTROL 각주 자리 표시자]**&#x200B;가 있는 위치의 [!UICONTROL 각주] 구성 요소에 표시됩니다. [!UICONTROL 각주]에서 해당 번호를 클릭하여 각주 설명으로 바로 이동할 수 있습니다.
+
+## 적응형 Forms의 각주 자리 표시자 비헤이비어
+
+* 게시 인스턴스에서 각주는 **[!UICONTROL 각주 자리 표시자]** 구성 요소가 적응형 양식에 배치된 위치에 표시됩니다.
+* 각주는 줄 바꿈을 지원하므로 양식 작성자는 **[!UICONTROL 각주 자리 표시자]** 구성 요소 내의 여러 줄에 걸쳐 콘텐츠 서식을 지정할 수 있습니다.
+* 각주는 연결된 패널의 가시성과 관계없이 **[!UICONTROL 각주 자리 표시자]**&#x200B;에 항상 표시됩니다.
 
 
 ## 추가 참조 {#see-also}

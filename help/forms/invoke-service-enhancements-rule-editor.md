@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,10 @@ ht-degree: 1%
 
 ![결과](/help/forms/assets/output1.png)
 
+> 
+>
+> 서비스를 호출하고, JSON 응답을 구문 분석하고, 사용자 지정 함수를 적용하여 드롭다운 옵션을 동적으로 채울 수도 있습니다. 자세한 내용은 [이 섹션](#retrieve-property-values-from-a-json-array)을 참조하세요.
+
 ### 사용 사례 2: 호출 서비스의 출력을 사용하여 반복 가능한 패널 설정
 
 이 사용 사례에서는 **Invoke 서비스**&#x200B;의 출력을 기반으로 반복 가능한 패널을 동적으로 채우는 방법을 보여 줍니다.
@@ -269,6 +273,123 @@ ht-degree: 1%
 **제출** 단추를 클릭하면 `redirect-api` API 서비스가 호출됩니다. 성공하면 사용자가 **문의하기** 페이지로 리디렉션됩니다.
 
 ![이벤트 페이로드 출력](/help/forms/assets/output5.gif)
+
+## JSON 배열에서 속성 값 검색
+
+적응형 Forms은 서비스 호출, JSON 응답 처리 및 양식 필드 동적 채우기를 지원합니다. 이 섹션에서는 JSON 배열에서 속성 값을 추출하고 양식 필드에 바인딩하는 방법을 설명합니다.
+
+### 샘플 JSON 응답
+
+다음 예는 미국 영업 지역 및 영업 사원 목록을 나타냅니다.
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### 속성 값을 추출하는 사용자 지정 함수
+
+<span class="preview"> 얼리어답터 기능입니다. 관심이 있는 경우, 기능 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 빠른 전자 메일을 보내세요</a>. </span>
+
+다음 사용자 지정 함수를 사용하여 JSON 배열에서 속성 값을 추출하십시오.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+사용자 지정 함수는 다음을 허용합니다.
+
+* **jsonArray**: 서비스에서 JSON 배열을 반환했습니다.
+* **propertyName**: 값을 추출할 속성
+
+사용자 지정 함수는 간단한 값 배열을 반환합니다.
+
+>[!NOTE]
+>
+> 사용자 지정 기능을 추가하는 방법에 대한 자세한 단계는 [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 사용자 지정 기능 소개](/help/forms/create-and-use-custom-functions.md) 문서를 참조하십시오.
+
+
+### 규칙 편집기에서 함수 사용
+
+JSON 배열에서 특정 값을 검색하려면 다음을 수행하십시오.
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+다음 예제에서는 이 응답을 사용하여 `Sales Department` 양식을 채우는 방법을 보여 줍니다.
+
+예를 들어 `Sales Department` 및 `Select Region` 드롭다운을 포함하는 `Select Sales Representative` 양식을 만들어 보겠습니다.
+
+**1단계: 양식 초기화 시 서비스 호출**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> 시각적 규칙 편집기에서 양식 데이터 모델을 만들지 않고 API를 통합하는 방법에 대해 알아보려면 [여기를 클릭](/help/forms/api-integration-in-rule-editor.md)하세요.
+
+**2단계: 지역 채우기 드롭다운**
+
+서비스 호출에 대한 성공 핸들러를 추가하고 다음 작업을 구성합니다.
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+이 규칙은 JSON 배열을 읽고 `region` 속성 값을 추출하여 `Select Region` 드롭다운에 값을 할당합니다.
+
+마찬가지로 Success Handler에서 `Select Sales Representative` 드롭다운에 대한 작업을 구성합니다.
+
+![JSON 배열에 대한 이벤트 페이로드](/help/forms/assets/event-payload.png)
+
+양식에서 JSON 데이터를 로드하면 사용자 지정 함수가 속성 값을 추출하고 드롭다운이 자동으로 채워집니다.
+
+![이벤트 페이로드 양식](/help/forms/assets/event-payload-form.png)
 
 ## 자주 묻는 질문
 
