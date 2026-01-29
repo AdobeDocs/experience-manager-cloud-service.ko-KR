@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 39%
+source-wordcount: '1789'
+ht-degree: 37%
 
 ---
 
@@ -31,11 +31,9 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 * 전용 New Relic One 계정에 직접 액세스
 
-* 외부 종속성 및 데이터베이스를 포함하여 행 번호와 함께 정확한 메서드 호출을 표시하는 계측된 New Relic One APM 에이전트
+* 외부 종속성 및 데이터베이스를 포함하여 행 번호와 함께 정확한 메서드 호출을 표시하는 계측된 New Relic One APM 에이전트입니다.
 
-* 인프라 수준 모니터링 및 애플리케이션(Adobe Experience Manager) 모니터링의 주요 지표를 결합하여 전체적인 성능 최적화
-
-* AEM as a Cloud Service은 JMX(Java Management Extensions) MBean 및 상태 검사를 New Relic Insights 내에 직접 노출하므로 애플리케이션 성능 및 상태 지표에 대한 심층적인 검사가 가능합니다.
+* 인프라 수준 모니터링과 애플리케이션(Adobe Experience Manager) 모니터링의 주요 지표를 결합하여 전체적인 성능 최적화.
 
 ## New Relic One 하위 계정 활성화 {#activate-sub-account}
 
