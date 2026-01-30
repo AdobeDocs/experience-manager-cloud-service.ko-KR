@@ -3,9 +3,9 @@ title: Experience 프로덕션 에이전트 개요
 description: AEM의 Experience Production Agent를 사용하여 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,12 @@ Experience Production Agent는 많은 노력과 대량의 작업을 자동화합
 * [컨텐츠 업데이트](#content-update)
 * [양식 생성](#form-creation)
 * [커뮤니케이션 제작](#communications-creation)
-* [사이트 마이그레이션](#site-migration)
 
 >[!IMPORTANT]
 >
 >AI가 생성한 응답은 정확하지 않거나 오해의 소지가 있을 수 있습니다. 제안된 수정 사항과 응답을 다시 확인하십시오.
 >
->[Adobe Experience Cloud Generative AI 사용 지침](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)도 참조하세요.
+>[Adobe Experience Cloud 생성 AI 사용자 지침](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)도 참조하세요.
 
 ### 컨텐츠 업데이트 {#content-update}
 
@@ -44,15 +43,11 @@ Experience Production Agent는 많은 노력과 대량의 작업을 자동화합
 
 >[!NOTE]
 >
-> 커뮤니케이션 제작 기술은 현재 알파에 있습니다. 참가하려면 공식 이메일 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 요청을 보내십시오.
-
-### 사이트 마이그레이션 {#site-migration}
-
-[사이트 마이그레이션](/help/ai-in-aem/agents/production/site-migration.md)은(는) AEM이 아닌 사이트를 AEM(Experience Delivery Services) 환경으로 원활하게 마이그레이션하므로 성능이 향상되고 규정을 준수하며 에이전트용으로 사용할 수 있습니다. 상담원은 설정 및 변환을 간소화하여 수작업과 가치 실현 시간을 단축합니다.
-
-에이전트는 다른 에이전트 기술과 함께 작업할 수 있어야 합니다. 예를 들면 다음과 같습니다.
+> 커뮤니케이션 제작 기술은 현재 알파에 있습니다. 참가하려면 공식 이메일 주소에서 [aem-forms-ea@adobe.com으로 요청을 보내십시오.](mailto:aem-forms-ea@adobe.com)
 
 ## 다른 에이전트와 함께 사용 {#use-with-other-agents}
+
+에이전트는 다른 에이전트 스킬로 작업할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * Experience Advisory Agent에서 소스 에셋 가져오기
 
