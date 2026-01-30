@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 MCP 사용
 description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜을 사용하는 방법 알아보기
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
+source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,8 @@ AEM의 MCP 서버는 정의된 MCP 호환 애플리케이션 세트와 호환되
 
 ## 설정 개요 {#setup-overview}
 
-AEM용 MCP 구성은 다음 세 가지 주요 부분으로 이루어집니다.
+AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
-1. **관리자가 AEM에서 일회성 구성**&#x200B;하여 특정 MCP 클라이언트 응용 프로그램이 AEM의 MCP 서버에 액세스할 수 있도록 합니다.
 1. **각 MCP 클라이언트 응용 프로그램에서 구성** 응용 프로그램에서 AEM MCP 서버에 연결하고 OAuth 로그인을 수행하는 방법을 알 수 있도록
 1. **MCP 서버 선택** 프롬프트를 시작하기 전에 MCP 클라이언트가 MCP 서버를 사용할 것을 알 수 있도록 합니다.
 
