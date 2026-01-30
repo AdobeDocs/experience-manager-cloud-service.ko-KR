@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
+source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 92%
+source-wordcount: '3548'
+ht-degree: 89%
 
 ---
 
@@ -341,6 +341,12 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 ## API 제거 안내 {#api-removal-guidance}
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
+
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다.
+
+시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
+
+코드를 업데이트한 후 코드 품질 단계의 결과를 확인하여 더 이상 사용되지 않는 API 사용이 Cloud Manager에 남아 있지 않은지 확인하십시오.
 
 ### `org.apache.sling.commons.auth*` 제거 {#org.apache.sling.commons.auth}
 
