@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 MCP 사용
 description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜을 사용하는 방법 알아보기
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 96ce03c86d0406320223f3fae87beed3552d479f
+source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ AEM의 MCP 통합을 통해 다양한 가상 사용자가 동일한 콘텐츠를
 
 * **개발자**&#x200B;는 IDE 또는 채팅 응용 프로그램에서 콘텐츠 작업 및 워크플로를 오케스트레이션할 수 있습니다
 * **실무자** 및 콘텐츠 설계자는 AEM의 기존 권한 모델 내에 있는 동안 AI 지원을 통해 사이트, 콘텐츠 조각 및 에셋을 관리할 수 있습니다.
+
+>[!IMPORTANT]
+>
+> 콘텐츠를 수정하거나 삭제하는 시나리오의 경우, AI Assistant에서 실행하는 AEM 에이전트에는 내장된 안전 장치가 포함되어 있으므로, 실무자는 MCP 도구를 직접 호출하기 보다는 AI Assistant 인터페이스를 사용해야 합니다.
+>
 
 이 문서에서는 AEM의 MCP 기능이 제공하는 기능, 지원되는 MCP 애플리케이션, 구성 방법 및 실제로 사용하는 방법에 대해 설명합니다.
 
