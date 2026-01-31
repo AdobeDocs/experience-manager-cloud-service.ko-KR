@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 38%
+source-wordcount: '2145'
+ht-degree: 36%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 38%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,43 +115,16 @@ AI 검색은 사용자 쿼리 뒤의 의미와 의도를 파악하여 기존의 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+* [적응형 Forms(Foundation 구성 요소)의 각주 자리 표시자 개선 사항](/help/forms/footnotes-richtextsupport.md):
+   * 각주 렌더링은 줄바꿈을 통해 여러 줄 서식을 지원하도록 더욱 개선되어 각주 콘텐츠를 보다 명료하고 표현적으로 표시할 수 있습니다.
+   * 이제 각주는 연결된 패널의 가시성에 관계없이 각주 플레이스홀더 내에서 지속적으로 볼 수 있으므로 중요한 정보에 일관되게 액세스할 수 있습니다.
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
 
-AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다.
+* [JSON 배열에서 값 검색](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): 이제 확장된 데이터 통합 기능을 통해 API를 호출하여 JSON 배열에서 값을 효율적으로 추출하고 적응형 양식 필드에 직접 바인딩할 수 있습니다. 이러한 향상된 기능을 통해 데이터 소비를 간소화하고 수동 매핑을 최소화하며 보다 동적인 데이터 기반 양식 경험을 지원할 수 있습니다.
 
-이들 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
-
-#### 향상된 대화형 통신 기능
-
-##### 템플릿 잠금
-
-템플릿 내의 콘텐츠 및 레이아웃 요소를 잠궈 브랜드 무결성을 유지하고 무단 수정을 방지합니다. 이를 통해 모든 커뮤니케이션에서 디자인 일관성을 유지할 수 있습니다.
-
-##### 컨텐츠 오버플로 지원
-
-플로우 레이아웃에 대한 &quot;컨텐츠 내에서 페이지 나누기 허용&quot; 옵션을 소개합니다. 이 향상된 기능을 통해 여러 페이지를 매끄럽게 편집하고 복잡한 문서에 대해 더 나은 텍스트 관리를 할 수 있습니다.
-
-##### XDP 파일 편집
-
-대화형 통신 편집기는 이제 조각 통합을 포함하여 XDP 편집을 지원합니다. 이제 Microsoft Windows 데스크톱에서만 실행되는 Forms Designer 대신 브라우저에서 XDP 파일을 편집할 수 있습니다.
-
-##### 동적 페이지 번호 매기기
-
-여러 페이지 문서 간에 명확하고 일관된 페이지 매김을 위해 마스터 페이지에 &quot;##의 페이지 번호&quot;를 자동으로 표시합니다.
+* **게시 인스턴스에서 연결 UI 호출**: 이제 게시 인스턴스에서 직접 연결 UI를 호출하는 데 확장된 지원을 사용할 수 있습니다. 이 기능은 필요한 구성, 페이로드 구조 및 호출 플로우를 정의하여 환경 전반의 통합을 단순화하고 배포를 가속화합니다.
 
 <!--
 **Forms Optimization opportunities**
