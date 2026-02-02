@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ ht-degree: 1%
 
 ## JSON 배열에서 속성 값 검색
 
+<span class="preview"> 얼리어답터 기능입니다. 관심이 있는 경우, 기능 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 빠른 전자 메일을 보내세요</a>. </span>
+
 적응형 Forms은 서비스 호출, JSON 응답 처리 및 양식 필드 동적 채우기를 지원합니다. 이 섹션에서는 JSON 배열에서 속성 값을 추출하고 양식 필드에 바인딩하는 방법을 설명합니다.
 
 ### 샘플 JSON 응답
@@ -309,8 +311,6 @@ ht-degree: 1%
 ```
 
 ### 속성 값을 추출하는 사용자 지정 함수
-
-<span class="preview"> 얼리어답터 기능입니다. 관심이 있는 경우, 기능 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 빠른 전자 메일을 보내세요</a>. </span>
 
 다음 사용자 지정 함수를 사용하여 JSON 배열에서 속성 값을 추출하십시오.
 
