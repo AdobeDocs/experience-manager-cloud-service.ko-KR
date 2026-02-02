@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 36%
+source-wordcount: '2126'
+ht-degree: 37%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 36%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,16 +115,20 @@ AI 검색은 사용자 쿼리 뒤의 의미와 의도를 파악하여 기존의 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [적응형 Forms(Foundation 구성 요소)의 각주 자리 표시자 개선 사항](/help/forms/footnotes-richtextsupport.md):
-   * 각주 렌더링은 줄바꿈을 통해 여러 줄 서식을 지원하도록 더욱 개선되어 각주 콘텐츠를 보다 명료하고 표현적으로 표시할 수 있습니다.
-   * 이제 각주는 연결된 패널의 가시성에 관계없이 각주 플레이스홀더 내에서 지속적으로 볼 수 있으므로 중요한 정보에 일관되게 액세스할 수 있습니다.
+**적응형 Forms(Foundation 구성 요소)의 각주 자리 표시자 개선 사항**
 
+* 줄 바꿈이 있는 [여러 줄 지원을 추가했습니다](/help/forms/footnotes-richtextsupport.md). 따라서 각주 콘텐츠를 보다 명확하고 표현적으로 표시할 수 있습니다.
+* 이제 각주는 연결된 패널의 가시성에 관계없이 각주 플레이스홀더 내에서 지속적으로 볼 수 있으므로 중요한 정보에 일관되게 액세스할 수 있습니다.
 
 ### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
 
-* [JSON 배열에서 값 검색](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): 이제 확장된 데이터 통합 기능을 통해 API를 호출하여 JSON 배열에서 값을 효율적으로 추출하고 적응형 양식 필드에 직접 바인딩할 수 있습니다. 이러한 향상된 기능을 통해 데이터 소비를 간소화하고 수동 매핑을 최소화하며 보다 동적인 데이터 기반 양식 경험을 지원할 수 있습니다.
+**JSON 배열에서 값 검색**
 
-* **게시 인스턴스에서 연결 UI 호출**: 이제 게시 인스턴스에서 직접 연결 UI를 호출하는 데 확장된 지원을 사용할 수 있습니다. 이 기능은 필요한 구성, 페이로드 구조 및 호출 플로우를 정의하여 환경 전반의 통합을 단순화하고 배포를 가속화합니다.
+사용자 지정 함수 기능을 [JSON 배열에서 값을 추출](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)(API 호출을 통해 수신)하는 것으로 확장했으며 적응형 양식 필드에 직접 바인딩했습니다. 이제 최소한의 수동 데이터 매핑으로 비즈니스 논리 및 규칙을 개발할 수 있습니다.
+
+**게시 인스턴스에서 연결 UI 실행**
+
+이제 게시 인스턴스에서 직접 [UI 연결](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)을 실행할 수 있습니다. 이를 통해 에이전트는 연결 UI에 액세스하고 고객을 위한 커뮤니케이션을 쉽게 개인화할 수 있습니다.
 
 <!--
 **Forms Optimization opportunities**
