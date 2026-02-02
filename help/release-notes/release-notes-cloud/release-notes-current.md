@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
+source-git-commit: f7fc0b6c65677217461c71aea2c6213489558d9c
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2128'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 37%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -119,6 +119,7 @@ AI 검색은 사용자 쿼리 뒤의 의미와 의도를 파악하여 기존의 
 
 * 줄 바꿈이 있는 [여러 줄 지원을 추가했습니다](/help/forms/footnotes-richtextsupport.md). 따라서 각주 콘텐츠를 보다 명확하고 표현적으로 표시할 수 있습니다.
 * 이제 각주는 연결된 패널의 가시성에 관계없이 각주 플레이스홀더 내에서 지속적으로 볼 수 있으므로 중요한 정보에 일관되게 액세스할 수 있습니다.
+  ![각주 설명](/help/forms/assets/footnote-description.png)
 
 ### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
 
