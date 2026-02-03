@@ -37,11 +37,11 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
 - AEM에서 만들고 게시한 대화형 통신
 - 팝업 지원이 활성화된 브라우저
 - 연결 사용자는 **forms-associates** 그룹의 일부여야 합니다.
-- 인증 구성됨 - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 인증 구성됨 - [SAML 2.0](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
+> 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
 
 ### 연결 UI에 대한 추가 SAML 구성
 
