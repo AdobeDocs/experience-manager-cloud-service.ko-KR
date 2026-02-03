@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 47e77f65a997b93ed71f58f873d8fcfa17c88382
+source-git-commit: 5d9d9455f47145f190bfba01c52478b2a302c439
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 37%
+source-wordcount: '2009'
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 37%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -255,14 +255,6 @@ Edge 인증을 사용하면 ID 공급자(IdP)로 인증된 사용자만 Edge Del
 코드 릴리스를 프로덕션에 배포하되, 라이브 트래픽을 수락할지 아니면 롤백할지 여부를 결정하기 전에 내부 테스트 트래픽으로만 이를 제한합니다.
 
 액세스를 요청하고 피드백을 공유하려면 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)에 이메일을 보내십시오.
-
-#### AI 답변 - AEM Sites(Beta 프로그램)에 대한 스마트하고 컨텍스트 인식 응답 {#ai-answers-beta}
-
-AI 답변에서는 방문자가 콘텐츠와 상호 작용할 수 있는 새로운 방법을 소개합니다. RAG(Retrieval-Augmented Generation) 기술을 기반으로 하는 이 솔루션은 AEM 관리 데이터를 사용하여 디지털 환경 내에서 정확하고 일관된 답변을 직접 제공합니다.
-
-AI Answers Beta 프로그램 출시를 준비하고 있으며, 이제 고객을 초대하여 관심 사항을 등록하고자 합니다. 베타는 용량이 매우 제한적이기 때문에 조기 가입이 우선적 고려를 받게 된다. Beta에 참여하면 AEM 클라우드 서비스 환경에서 AI 답변을 탐색하고, 성능과 정확성을 검증하며, 향후 사용 환경을 미리 구체화할 수 있습니다.
-
-참여를 요청하거나 업데이트를 받으려면 [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)에 문의하세요.
 
 #### RDE용 스냅샷(Beta 프로그램) {#rde-snapshot-program}
 
