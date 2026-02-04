@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
+source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '905'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,13 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
 
 - 만들어진 대화형 통신 및 게시됨
 - 팝업 지원이 활성화된 브라우저
-- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 인증 구성됨 - [SAML 2.0](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- AEM[에서 지원하는 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
 
 >[!NOTE]
 >
-> 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
+>- 이 문서에서는 [Microsoft AD(Azure AD) ID가 있는 SAML 2.0을 ID 공급자](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)로 사용하는 인증 구성을 보여 줍니다.
+>- 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
 
 ### 연결 UI에 대한 추가 SAML 구성
 
@@ -54,7 +55,7 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -122,6 +123,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 `{program-id}` 및 `{env-id}`을(를) 실제 환경 값으로 바꾸십시오.
+
+보안상의 이유로 대화형 통신 ID, 미리 채우기 서비스 및 서비스 매개 변수와 같은 매개 변수는 URL을 통해 전달되지 않습니다. 대신 이러한 매개 변수는 브라우저의 postMessage API를 통해 연결 UI와 통신하는 JavaScript 함수를 사용하여 안전하게 전달됩니다.
 
 ### 2단계: 데이터 페이로드 준비
 
@@ -204,13 +207,13 @@ function launchAssociateUI(icId, prefillService, prefillParams, options) {
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## 샘플 HTML 페이지와 통합 테스트
