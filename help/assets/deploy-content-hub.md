@@ -20,7 +20,7 @@ Experience Manager Assets as a Cloud Service에서 승인됨으로 표시된 자
 
 Experience Manager Assets용 Content Hub을 활성화하는 방법을 알아보려면 이 비디오 를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472942/?captions=kor&learn=on){transcript=true}
 
 Content Hub에 대한 권한의 변형은 다음과 같습니다.
 

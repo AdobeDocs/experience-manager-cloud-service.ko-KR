@@ -14,7 +14,7 @@ ht-degree: 3%
 
 선택한 에셋에 대한 링크를 만들어 다른 사용자와 쉽게 공유할 수 있습니다. 승인된 [!DNL Content Hub] 사용자로서 [!DNL Content Hub] 환경에서 사용 가능한 자산을 하나 이상 선택하고 링크를 생성한 후 다른 개인 또는 공용 사용자에게 보냅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474926/?captions=kor&learn=on&enablevpops=on){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites}
 
