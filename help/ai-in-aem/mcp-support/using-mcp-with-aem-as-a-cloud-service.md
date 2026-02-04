@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 MCP 사용
 description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜을 사용하는 방법 알아보기
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
+source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-현재 많은 AEM 팀이 Cursor, ChatGPT, Anthropic Claude 및 Microsoft Copilot Studio와 같은 IDE 및 채팅 기반 애플리케이션에서 작업하고 있습니다. 이러한 애플리케이션은 MCP(Model Context Protocol)를 지원하므로 애플리케이션이 백엔드 도구를 대형 언어 모델(LLM)에 표준화된 방식으로 노출할 수 있습니다.
+이제 많은 Adobe Experience Manager(AEM) 팀이 Cursor, ChatGPT, Anthropic Claude 및 Microsoft Copilot Studio와 같은 IDE(통합 개발 환경) 및 채팅 기반 애플리케이션에서 작업합니다. 이러한 애플리케이션은 MCP(Model Context Protocol)를 지원하므로 애플리케이션이 백엔드 도구를 대형 언어 모델(LLM)에 표준화된 방식으로 노출할 수 있습니다.
 
 AEM의 MCP 통합을 통해 다양한 가상 사용자가 동일한 콘텐츠를 공동 작업할 수 있습니다.
 
@@ -119,19 +119,19 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 **ChatGPT**
 
-![ChatGPT 구성 단계 1](assets/chatgpt-1.png)
+![ChatGPT 구성 - 설정](assets/chatgpt-1.png)
 
-![ChatGPT 2단계 구성](assets/chatgpt-2.png)
+![ChatGPT 구성 - 앱 및 커넥터 - 고급 설정](assets/chatgpt-2.png)
 
-![ChatGPT 3단계 구성](assets/chatgpt-3.png)
+![ChatGPT 구성 - 앱 및 커넥터 - 개발자 모드](assets/chatgpt-3.png)
 
-![ChatGPT 4단계 구성](assets/chatgpt-4.png)
+![ChatGPT 구성 - 앱 및 커넥터 - 앱 만들기](assets/chatgpt-4.png)
 
-![ChatGPT 5단계 구성](assets/chatgpt-5.png)
+![ChatGPT 구성 - 앱 및 커넥터 - 새 앱](assets/chatgpt-5.png)
 
-![ChatGPT 구성 단계 6](assets/chatgpt-6.png)
+![ChatGPT 구성 - 앱 및 커넥터 - AEM 콘텐츠 MCP 서비스](assets/chatgpt-6.png)
 
-![ChatGPT 7단계 구성](assets/chatgpt-7.png)
+![ChatGPT 구성 - AEM 콘텐츠 MCP 서비스에 문의](assets/chatgpt-7.png)
 
 * MCP 연결 또는 도구가 구성된 영역에 AEM MCP 서버 URL을 추가합니다
 * 연결을 트리거하고 리디렉션될 때 Adobe ID으로 로그인
@@ -141,19 +141,19 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 **클라우드**
 
-![클라우드 단계 구성](assets/claude-1.png)
+![클라우드 구성 - 설정](assets/claude-1.png)
 
-![클라우드 단계 구성 2](assets/claude-2.png)
+![클라우드 구성 - 커넥터](assets/claude-2.png)
 
-![클라우드 3단계 구성](assets/claude-3.png)
+![클라우드 구성 - 커넥터 - 사용자 지정 커넥터 추가](assets/claude-3.png)
 
-![클라우드 단계 구성](assets/claude-4.png)
+![클라우드 구성 - 커넥터 - 사용자 지정 커넥터 연결](assets/claude-4.png)
 
-![클라우드 단계 구성](assets/claude-5.png)
+![클라우드 구성 - 커넥터 - 사용자 지정 커넥터 구성](assets/claude-5.png)
 
-![클라우드 단계 구성](assets/claude-6.png)
+![클라우드 구성 - 커넥터 - 사용자 지정 커넥터 도구 권한](assets/claude-6.png)
 
-![클라우드 단계 구성](assets/claude-7.png)
+![클라우드 구성 - AEM 콘텐츠 MCP 서비스에 문의](assets/claude-7.png)
 
 * Claude의 MCP 구성에서 AEM MCP 서버 URL을 등록합니다
 * Adobe 로그인 흐름 완료
@@ -163,15 +163,15 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 **커서**
 
-![커서 구성 단계 1](assets/cursor-1.png)
+![커서 구성 - 설정](assets/cursor-1.png)
 
-![커서 구성 단계 2](assets/cursor-2.png)
+![커서 구성 - 도구 및 MCP - 사용자 지정 MCP 추가](assets/cursor-2.png)
 
-![커서 구성 단계 3](assets/cursor-3.png)
+![커서 구성 - 사용자 지정 MCP 설정 추가](assets/cursor-3.png)
 
-![커서 구성 단계 4](assets/cursor-4.png)
+![커서 구성 - 연결](assets/cursor-4.png)
 
-![커서 구성 단계 5](assets/cursor-5.png)
+![커서 구성 - 새 서비스에 문의](assets/cursor-5.png)
 
 * 커서의 MCP 설정에서 AEM MCP URL을 사용하는 새 MCP 서버 항목을 만듭니다
 * 메시지가 표시되면 Adobe ID으로 인증
@@ -180,25 +180,25 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 **Microsoft Copilot Studio**
 
-![Copilot 구성 단계 1](assets/copilot-1.png)
+![Copilot 구성 - 에이전트](assets/copilot-1.png)
 
-![Copilot 구성 2단계](assets/copilot-2.png)
+![Copilot 구성 - 도구 추가](assets/copilot-2.png)
 
-![Copilot 구성 3단계](assets/copilot-3.png)
+![Copilot 구성 - 도구 추가 - 모델 컨텍스트 프로토콜](assets/copilot-3.png)
 
-![Copilot 구성 4단계](assets/copilot-4.png)
+![Copilot 구성 - 모델 컨텍스트 프로토콜 서버 추가(미리 보기)](assets/copilot-4.png)
 
-![Copilot 구성 5단계](assets/copilot-5.png)
+![Copilot 구성 - 도구 추가 - 새 연결 만들기](assets/copilot-5.png)
 
-![Copilot 구성 단계 6](assets/copilot-6.png)
+![Copilot 구성 - 도구 추가 - 추가 및 구성](assets/copilot-6.png)
 
-![Copilot 구성 7단계](assets/copilot-7.png)
+![Copilot 구성 - 도구 추가 - 구성](assets/copilot-7.png)
 
-![Copilot 구성 단계 8](assets/copilot-8.png)
+![Copilot 구성 - 연결 테스트](assets/copilot-8.png)
 
-![Copilot 구성 9](assets/copilot-9.png)
+![Copilot 구성 - 연결 관리](assets/copilot-9.png)
 
-![Copilot 10단계 구성](assets/copilot-10.png)
+![Copilot 구성 - 테스트 에이전트](assets/copilot-10.png)
 
 * 새 에이전트 만들기
 * 도구 섹션으로 이동한 다음 **도구 추가**&#x200B;를 클릭합니다.
