@@ -3,7 +3,7 @@ title: Content Hub에서 에셋 다운로드
 description: Content Hub 포털에서 하나 이상의 에셋과 렌디션을 다운로드하는 방법을 알아봅니다.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 # Content Hub에서 에셋 다운로드 {#download-assets}
 
 [!DNL Content Hub]을(를) 통해 에셋을 다운로드하고 공유할 수 있습니다. [!DNL Content Hub] 사용자 인터페이스에는 승인된 자산만 표시됩니다. 이러한 에셋에는 이미지, 비디오 또는 기타 디지털 콘텐츠가 포함될 수 있습니다. [!DNL Content Hub]은(는) 효과적인 자산 배포를 위해 접근성과 적응성을 향상시킵니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
 [!DNL Content Hub]을(를) 사용하여 하나 또는 여러 에셋과 사용 가능한 렌디션을 다운로드할 수 있습니다.
 
@@ -24,7 +26,7 @@ Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-rendi
 
 * 단일 에셋 및 해당 렌디션을 다운로드하려면 다음 작업을 수행하십시오.
    1. 에셋 카드에서 사용 가능한 ![다운로드](/help/assets/assets/download-icon.svg)를 선택하여 에셋 및 사용 가능한 렌디션을 미리 봅니다.
-   1. 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭하십시오.
+   1. 사용 가능한 렌디션을 선택하고 대화 상자에서 **[!UICONTROL 다운로드]** 옵션을 클릭하여 선택한 렌디션을 ZIP 파일로 다운로드합니다. 대화 상자에 라이선스 자산에 대한 자산 라이선스가 표시되면 라이선스 사용 약관에 동의하고 **[!UICONTROL 다운로드]**를 클릭하십시오.
       ![에셋 다운로드](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 또는 에셋 썸네일을 클릭한 다음 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭하여 대화 상자에서 사용 가능한 렌디션을 선택하고 확인한 후에 다운로드합니다.
 
@@ -38,12 +40,12 @@ Content Hub에서 사용할 수 있는 [가지 표현물 유형](#types-of-rendi
       > * Content Hub은 선택 항목을 기본 설정으로 저장하고(**[!UICONTROL 각 에셋에 대해 별도의 폴더 만들기]**) 나중에 다운로드할 수 있도록 유지합니다.
       > * **[!UICONTROL 각 에셋에 대해 별도의 폴더 만들기]** 옵션은 인증된 [!DNL Content Hub] 사용자만 사용할 수 있습니다. [!DNL Content Hub]을(를) 사용하면 공용 사용자가 자산을 개별 자산으로 다운로드할 수 있습니다.
 
-   1. **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 선택한 에셋과 해당 표현물을 다운로드합니다.
+   1. **[!UICONTROL 다운로드]**를 클릭하여 선택한 에셋과 해당 표현물을 다운로드합니다.
       ![여러 에셋 다운로드](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 다운로드가 진행되는 동안 [!DNL Content Hub]을(를) 계속 사용할 수 있습니다. Content Hub은 다운로드 프로세스 중에 워크플로우를 중단하지 않습니다.
 ![여러 에셋 다운로드](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택하여 다운로드합니다.
+**[!UICONTROL 에셋 다운로드]** 대화 상자에 에셋 라이선스가 표시되면 왼쪽 창([!UICONTROL T&amp;C 문서] 섹션)에서 각 라이선스를 선택하여 라이선스를 미리 보고 대화 상자의 가운데 창에 라이선스와 연결된 선택한 에셋을 표시합니다. 각 라이선스를 검토한 후 렌디션을 선택하고 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 클릭한 다음 **[!UICONTROL 다운로드]**를 선택하여 다운로드합니다.
 ![여러 에셋 다운로드](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -145,7 +147,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [동적 변환](/help/assets/renditions.md#dynamic-renditions): 동적 변환은 다양한 장치 해상도에 대한 이미지 크기 조정 또는 다양한 종횡비에 맞는 자르기 등 다양한 작업을 수행하는 자산의 실시간 사용자 지정 버전입니다. 이러한 렌디션을 사용하면 더 넓은 요구 사항에 맞게 개인화되고 최적화된 경험을 제공할 수 있습니다. 자산의 동적 변환이 [!DNL Adobe Experience Manager Assets] 작성 환경에서 만들어집니다. 동적 변환을 활성화하는 데 필요한 단계에 대한 자세한 내용은 [동적 변환 활성화](#enable-dynamic-media-renditions)를 참조하십시오.
 
-* [스마트 자르기](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): 스마트 자르기 프로세스는 자르기 프로세스 중 에셋의 필수 부분에만 중점을 둡니다. Dynamic Media 스마트 자르기는 Adobe AI가 제공하는 인공 지능을 활용하여 관심 영역을 추적하므로, 모든 화면 크기에서 에셋이 가장 잘 보이도록 할 수 있습니다. [!DNL Adobe Experience Manager] 스마트 자르기에 제목과 함께 에셋 표현물의 너비와 높이가 표시됩니다. 자세한 내용은 [AEM Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을 참조하세요.
+* [스마트 자르기](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): 스마트 자르기 프로세스는 자르기 프로세스 중 에셋의 필수 부분에만 중점을 둡니다. Dynamic Media 스마트 자르기는 Adobe AI에서 제공하는 인공 지능을 활용하여 관심 영역을 추적하므로 모든 화면 크기에서 에셋이 가장 잘 보이는지 확인할 수 있습니다. [!DNL Adobe Experience Manager] 스마트 자르기에 제목과 함께 에셋 표현물의 너비와 높이가 표시됩니다. 자세한 내용은 [AEM Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)을 참조하세요.
 
   스마트 자르기 렌디션이 표시되고 OpenAPI 기능이 있는 [Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)에 액세스할 수 있는 경우에만 다운로드할 수 있습니다. 스마트 자르기 렌디션은 이미지 에셋에만 사용할 수 있습니다.
 

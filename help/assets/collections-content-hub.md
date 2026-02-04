@@ -3,7 +3,7 @@ title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -29,6 +29,8 @@ ht-degree: 2%
 * **즐겨찾기**: 컬렉션을 즐겨찾기로 표시합니다.
 
 사용자가 [!DNL Content Hub] 내에서 사용할 수 있는 다양한 자산에 쉽게 액세스하고 관리할 수 있도록 도와줍니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites}
 
