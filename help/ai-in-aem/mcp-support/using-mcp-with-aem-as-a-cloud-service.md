@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 MCP 사용
 description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜을 사용하는 방법 알아보기
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 다음은 지원되는 각 애플리케이션에서 이러한 기능이 어떻게 보이는지에 대한 높은 수준의 예입니다.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![ChatGPT 구성 - 설정](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
   *&quot;구성된 AEM MCP 도구를 사용하여 작성자 환경의 모든 사이트를 나열합니다.&quot;*
 
-**클라우드**
+### 클로드 {#claude}
 
 ![클라우드 구성 - 설정](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 * 대화를 시작하기 전에 MCP 서버를 선택해야 합니다.
 * Claude에게 AEM 관련 작업을 수행하도록 요청하십시오. Claude는 귀하의 프롬프트에 따라 MCP 서버에 의해 노출된 AEM 도구를 선택합니다.
 
-**커서**
+### 커서 {#cursor}
 
 ![커서 구성 - 설정](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 * 필요한 경우 도구 이름을 클릭하여 개별 도구를 활성화하거나 비활성화합니다. 모든 도구는 기본적으로 활성화되어 있습니다.
 * 커서 편집기 또는 채팅을 사용하여 개발 또는 콘텐츠 워크플로의 일부로 AEM 도구를 호출합니다.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Copilot 구성 - 에이전트](assets/copilot-1.png)
 
