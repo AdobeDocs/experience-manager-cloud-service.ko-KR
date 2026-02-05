@@ -78,7 +78,7 @@ Experience Platform 상단 탐색 막대는 항상 화면 맨 위에 있습니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
+Experience Platform 상단 탐색 모음에 대한 자세한 내용은 [Adobe Experience Platform UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)를 참조하십시오.
 
 #### 계정 {#user-properties}
 
