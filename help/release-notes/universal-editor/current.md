@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.01.29 릴리스 정보
-description: 다음은 범용 편집기 2026.01.29 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.02.05 릴리스 정보
+description: 다음은 범용 편집기 2026.02.05 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 35%
+source-wordcount: '157'
+ht-degree: 45%
 
 ---
 
 
-# 범용 편집기 2026.01.29 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.02.05 릴리스 정보 {#release-notes}
 
-유니버설 편집기 2026년 1월 29일 릴리스의 릴리스 정보입니다.
+유니버설 편집기의 2026년 2월 5일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ ht-degree: 35%
 
 ## 새로운 기능 {#what-is-new}
 
-* 구성 요소 제거 메서드가 `editorActions`에 노출되었습니다.
-* 구성 요소 복사 메서드가 `editorActions`에 노출되었습니다.
-* 구성 요소 이동 메서드가 `editorActions`에 노출되었습니다.
-* 구성 요소 추가 메서드가 `editorActions`에 노출되었습니다.
-* 정의가 [확장성에 노출되었습니다.](/help/implementing/universal-editor/extending.md)
-* 문서 작성 API 버전 2.0이 릴리스되었습니다.
+* 이제 이동 작업을 [상황에 맞는 메뉴에서 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* 이제 RTE에서 [텍스트로 붙여넣기](/help/implementing/universal-editor/configure-rte.md#paste-as-text)를 지원합니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -41,6 +37,4 @@ ht-degree: 35%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* API 스키마를 따르도록 `content` 확장성이 `details`(으)로 이름이 변경되었습니다.
-* 상황별 메뉴 동작이 개선되었습니다.
-* 편집 가능한 항목의 배지를 클릭할 때 컨텍스트 메뉴가 제대로 열리도록 하는 버그를 수정했습니다.
+* [`xwalk` 플러그인을 사용할 때 AEM 6.5에 대해 미리 보기에 게시가 활성화되었습니다.](/help/implementing/universal-editor/component-definition.md#plugins)

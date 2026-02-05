@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2835'
 ht-degree: 19%
 
 ---
@@ -202,7 +202,32 @@ ht-degree: 19%
 >
 >단축키 `Shift+Backspace`를 사용하여 해당 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
-### 구성 요소 재정렬 {#reordering-components}
+### 구성 요소 재정렬 및 이동 {#reordering-components}
+
+컨텍스트 메뉴나 콘텐츠 트리를 사용하여 구성 요소를 이동하고 순서를 변경할 수 있습니다.
+
+#### 컨텍스트 메뉴로 구성 요소 이동 {#move-context-menu}
+
+1. 구성 요소를 마우스 오른쪽 단추로 클릭하거나 선택한 구성 요소의 배지를 클릭하여 [컨텍스트 메뉴를 엽니다.](#context-menu)
+1. 원하는 이동 옵션을 선택합니다.
+   * 맨 위로 이동
+   * 위로 이동
+   * 아래로 이동
+   * 맨 아래로 이동
+     ![상황에 맞는 메뉴에서 옵션 이동](assets/move-options-in-conext-menu.png)
+
+구성 요소는 편집기와 콘텐츠 트리 모두에서 이동합니다.
+
+>[!TIP]
+>
+>핫키 `Command-U` 또는 `Shift-Command-U`을(를) 사용하여 각각 위로 또는 위로 이동합니다.
+>핫키 `Command-J` 또는 `Shift-Command-J`을(를) 사용하여 아래로 이동하거나 아래로 이동합니다.
+
+>[!NOTE]
+>
+>컨텍스트 메뉴 옵션은 컨테이너 내의 구성 요소만 이동할 수 있습니다. 컨테이너 간에 구성 요소를 이동하려면 [콘텐츠 트리를 사용하십시오.](#reorder-content-tree)
+
+#### 콘텐츠 트리를 사용하여 구성 요소 순서 바꾸기 {#reorder-content-tree}
 
 1. [콘텐츠 트리 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 있지 않은 경우 전환하십시오.
 1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
@@ -382,7 +407,7 @@ ht-degree: 19%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

@@ -4,10 +4,10 @@ description: 예제와 함께 범용 편집기가 속성 패널에서 편집할 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ ht-degree: 96%
 | [선택](#select) | `select` |
 | [탭](#tab) | `tab` |
 | [텍스트](#text) | `text` |
+| [텍스트 영역](#textarea) | `textarea` |
 
 #### AEM 태그 {#aem-tag}
 
@@ -906,5 +907,33 @@ AEM 콘텐츠 구성 요소 유형은 AEM 콘텐츠 선택기를 활성화하여
 >[!TAB 스크린샷]
 
 ![텍스트 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### 텍스트 영역 {#textarea}
+
+텍스트 영역에서는 여러 줄의 텍스트를 입력할 수 있습니다.
+
+>[!BEGINTABS]
+
+>[!TAB 샘플]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB 스크린샷]
+
+![textarea 구성 요소 형식의 스크린샷](assets/component-types/textarea.png)
 
 >[!ENDTABS]

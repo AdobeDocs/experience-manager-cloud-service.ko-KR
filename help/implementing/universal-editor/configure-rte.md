@@ -4,9 +4,9 @@ description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [
@@ -220,6 +220,28 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 >[!NOTE]
 >
 >Tab/Shift+Tab 키를 통한 목록 중첩은 일반 들여쓰기 설정과 독립적으로 작동합니다.
+
+### 텍스트로 붙여넣기 {#paste-as-text}
+
+`paste_text` 편집기 작업을 사용하면 표준 일반 텍스트로 붙여넣기 워크플로를 사용할 수 있습니다.
+
+* **기본 바로 가기:** Mod-Shift-v(macOS의 경우 Cmd+Shift+V, Windows/Linux의 경우 Ctrl+Shift+V)
+* **동작:** 텍스트/일반 붙여넣기(원본 서식 무시)
+   * 목록에서 새 행은 새 목록 항목을 만듭니다.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### 기타 작업 {#other}
 
