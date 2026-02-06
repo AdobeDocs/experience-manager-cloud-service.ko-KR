@@ -3,13 +3,13 @@ title: 콘텐츠 최적화 에이전트
 description: 콘텐츠 최적화 에이전트를 사용하여 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변형하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
+source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
-
 
 # 콘텐츠 최적화 에이전트 {#content-optimization-agent}
 
@@ -157,8 +157,6 @@ AI Assistant를 통해 AEM의 에이전트에 액세스할 수 있습니다. exp
 
 
 ## 제한 사항 {#limitations-content-optimization}
-
-* 컨텐츠 최적화 에이전트는 현재 PNG 자산을 지원하지 않습니다.
 
 * 배경색 설정은 지원되지 않습니다.
 
