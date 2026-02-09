@@ -4,9 +4,9 @@ description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud S
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ko#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
@@ -224,7 +224,6 @@ AEM as a Cloud Service의 자격 증명은 기본적으로 1년 후에 만료됩
 
 * 버튼을 누르면 새 인증서를 포함하는 자격 증명 세트가 생성됩니다. AEM 외부 서버에 새 자격 증명을 설치하고 이전 자격 증명을 제거하지 않고 연결이 예상대로 이루어지도록 하십시오.
 * 액세스 토큰을 생성할 때 이전 자격 증명 대신 새 자격 증명을 사용해야 합니다.
-* 필요한 경우 AEM as a Cloud Service을 인증하는 데 더 이상 사용할 수 없도록 이전 인증서를 취소(및 삭제)합니다.
 
 ## 자격 증명 해지 {#credentials-revocation}
 
@@ -252,3 +251,15 @@ AEM as a Cloud Service의 자격 증명은 기본적으로 1년 후에 만료됩
    ![인증서 확인 취소](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. 마지막으로 손상된 인증서를 삭제합니다.
+
+### 개별 인증서 취소에 대한 참고 사항 {#note-on-recovacting-individual-certificates}
+
+JWT 핸드셰이크 (전달자 토큰을 검색하는 데 사용됨)의 경우 충족해야 하는 모든 사항은 다음과 같습니다.
+
+1. 개인 키가 있습니다.
+1. Developer Console의 각 개인 키 아래에 하나 이상의 활성 인증서가 있습니다
+1. 토큰을 검색하는 동안(JWT 핸드셰이크), IMS는 JWT 서명이 콘솔에 표시되는 시스템의 레코드에 있는 바인딩된 활성(만료되지 않은) 인증서와 일치하는지 확인합니다.
+
+PK로 새 인증서를 추가하면 해지된 인증서가 여전히 사용 가능한 것처럼 보일 수 있습니다. 실제로 PK가 있는 모든 인증서는 동일합니다. 하나 이상의 활성화된 경우 모두 활성화된 것으로 간주됩니다.
+
+이를 보안 문제로 간주하는 경우 별도의 개인 키를 만들고 이전 개인 키의 모든 인증서를 취소해야 합니다.
