@@ -787,6 +787,6 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 ## 추가 리소스 {#additional-resources}
 
 * [게시 계층에 대한 사용자 및 그룹 동기화](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [SAML 2.0 인증 처리기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
+* [SAML 2.0 인증 처리기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ko)
 * [외부 Id 공급자](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [동적 그룹 구성원](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
