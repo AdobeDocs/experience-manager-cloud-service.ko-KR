@@ -4,7 +4,7 @@ description: AEM as a Cloud Service에서 로컬 사용자 및 그룹을 동적 
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### 마이그레이션 전 검사 목록 {#pre-migration-checklist}
 
-* [ ] **서비스 사용자 구성**: 적절한 사용 권한을 가진 서비스 사용자(예: `group-provisioner`)를 만들고 구성합니다
-* [ ] **ExternalPrincipal 구성 확인**: 서비스 사용자가 `rep:externalId` 및 `rep:externalPrincipalNames`에서 보호를 무시하도록 구성되었는지 확인하십시오.
-* [ ] **서비스 사용자 권한 테스트**: 서비스 사용자가 개발에서 외부 ID 속성을 설정할 수 있는지 확인하십시오.
-* [ ] 사용자 또는 그룹을 만드는 모든 사용자 지정 코드를 식별합니다
-* [ ] 외부 ID 모델을 사용하도록 사용자 지정 코드를 검토하고 업데이트합니다.
-* [ ] 테스트 업데이트 코드를 개발 환경에서
-* [ ] 마이그레이션할 기존의 모든 로컬 사용자 및 그룹 인벤토리
-* [ 하위 환경의 ] 마이그레이션 프로세스 테스트
+* **서비스 사용자 구성**: 적절한 사용 권한을 가진 서비스 사용자(예: `group-provisioner`)를 만들고 구성합니다
+* **ExternalPrincipal 구성 확인**: 서비스 사용자가 `rep:externalId` 및 `rep:externalPrincipalNames`에서 보호를 무시하도록 구성되었는지 확인
+* **서비스 사용자 권한 테스트**: 서비스 사용자가 개발에서 외부 ID 속성을 설정할 수 있는지 확인
+* 사용자 또는 그룹을 만드는 모든 사용자 지정 코드를 식별합니다
+* 외부 ID 모델을 사용하도록 사용자 지정 코드 검토 및 업데이트
+* 개발 환경에서 업데이트된 코드 테스트
+* 마이그레이션할 모든 기존 로컬 사용자 및 그룹 인벤토리 작성
+* 낮은 환경에서의 마이그레이션 프로세스 테스트
 
 ### 실행 단계 {#execution-steps}
 
@@ -773,12 +773,12 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 
 프로덕션에 마이그레이션 서블릿을 배포하기 전:
 
-* [ ] AEM Developer Console에서 IMS 통합 만들기
-* [ ] 기술 계정 ID의 유효성을 검사하도록 서블릿 구성
-* [ ] 개발/스테이징 환경에서 인증 흐름 테스트
-* [ ] CDN 수준에서 추가 IP 기반 제한 고려
-* [ ] 마이그레이션이 완료된 후 마이그레이션 서블릿을 비활성화하거나 제거할 계획입니다.
-* [ ] 마이그레이션 끝점에 대한 모든 액세스 감사 및 로그
+* AEM Developer Console에서 IMS 통합 만들기
+* 기술 계정 ID의 유효성을 검사하도록 서블릿 구성
+* 개발/스테이징 환경에서 인증 흐름 테스트
+* CDN 수준에서 추가적인 IP 기반 제한 사항 고려
+* 마이그레이션이 완료된 후 마이그레이션 서블릿을 비활성화하거나 제거할 계획
+* 마이그레이션 끝점에 대한 모든 액세스 감사 및 로그
 
 >[!IMPORTANT]
 >
@@ -787,6 +787,6 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 ## 추가 리소스 {#additional-resources}
 
 * [게시 계층에 대한 사용자 및 그룹 동기화](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [SAML 2.0 인증 처리기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ko)
+* [SAML 2.0 인증 처리기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
 * [외부 Id 공급자](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [동적 그룹 구성원](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
