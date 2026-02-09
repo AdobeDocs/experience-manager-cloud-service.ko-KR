@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
+source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3695'
 ht-degree: 85%
 
 ---
@@ -61,6 +61,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일부터 Adobe Developer Console에서는 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 구성된 통합에 사용할 수 있으며, 그 이후에는 작동이 중단되므로 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)합니다. |
 | [!DNL Foundation] | 콘텐츠 계층 구조 복제에 사용된 콘텐츠 트리 게시 워크플로 및 관련 콘텐츠 트리 게시 워크플로 단계. | 성능이 더 뛰어난 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)를 사용하십시오. |
 | [!DNL Foundation] | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/최소화. Adobe는 YUI 라이브러리를 추가로 업데이트할 계획이 없습니다. | Adobe는 고객에게 구현을 위해 Google Closure Compiler(GCC)로 전환할 것을 권장합니다. |
+| [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 |
 
 ## 제거된 기능 {#removed-features}
 
@@ -76,7 +77,6 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | [!DNL Foundation] | Apache Sling 데이터 소스 지원 (OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원 (OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
-| [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 | [!DNL Foundation] | [서비스 사용자 ID 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)를 위한 org.apache.sling.serviceusermapping 기능 지원 | 해당 사항 없음 | 8/30/24 |
 | [!DNL Foundation] | Java 11 런타임은 더 이상 사용되지 않으며 Adobe에서 Java 21 런타임으로 대체되었습니다. Java 11에서는 여전히 코드를 빌드하는 것이 허용됩니다(Java 17과 21은 다른 옵션입니다) | Java 21 런타임이 적용됩니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 명시된 라이브러리 버전을 업데이트해야 합니다. | 3월 5/29/25 |
 
@@ -352,7 +352,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 현재 더 이상 사용되지 않는 API가 필요한 타사 라이브러리를 사용하는 경우 해당 타사 라이브러리의 최신 버전으로 업데이트해 보십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
