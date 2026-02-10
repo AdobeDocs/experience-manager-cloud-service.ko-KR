@@ -31,7 +31,7 @@ ht-degree: 1%
 
 이 에이전트에 액세스하려면 Beta 프로그램 등록 방법에 대한 지침은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)를 참조하세요. 그리고 개발 에이전트에 관심을 나타내세요. 개발 에이전트별 피드백을 [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)에 전자 메일로 보낼 수도 있습니다.
 
-[튜토리얼을 따라](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) Development Agent를 사용하여 파이프라인 오류를 해결하는 방법을 알아봅니다.
+[튜토리얼을 따라](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) Development Agent를 사용하여 파이프라인 오류를 해결하는 방법을 알아봅니다.
 
 ## Cloud Manager을 통해 개발 에이전트에 액세스 {#how-to-access-the-agent}
 
