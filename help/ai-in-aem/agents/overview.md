@@ -3,13 +3,13 @@ title: AEM의 에이전트 개요
 description: 컨텐츠 생성 속도를 높이고 변경 사항을 자동으로 오케스트레이션하기 위해 AEM에서 사용할 수 있는 에이전트에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a68f4d38e698ce500ea556b334f46f848e9f7f7d
+exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
+source-git-commit: 5e1ae1de0bdeada01f03f3549ab9295ddef139ea
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # AEM의 에이전트 개요 {#overview-of-agents-in-aem}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->에이전트를 사용하려면 Beta 프로그램에 등록해야 합니다. AEM 에이전트 Beta 프로그램 [여기](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)에서 자세한 정보를 찾을 수 있습니다.
+>에이전트를 사용하려면 Explorer 프로그램에 등록해야 합니다. AEM 에이전트 탐색기 프로그램 [여기](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)에서 자세한 내용을 확인할 수 있습니다.
 
 ## Experience 프로덕션 에이전트 {#experience-production-agent}
 
@@ -55,4 +55,3 @@ ht-degree: 0%
    * 현재 AEM 온프레미스 및 Managed Services에서 사용할 수 없습니다.
 
 에이전트별 제한 사항에 대해서는 개별 페이지를 참조하십시오.
-
