@@ -3,14 +3,15 @@ title: 얼리어답터 및 프리릴리스 기능 통합을 위한 기능 전환
 description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기능을 활성화할 수 있는 AEM의 기능입니다.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '404'
+ht-degree: 5%
 
 ---
 
-# Adobe Experience Software Development Kit(AEM SDK)의 기능 전환
+# AEM SDK(Adobe Experience Software Development Kit)에서 기능 토글 활성화
 
 AEM의 기능 전환을 사용하면 관리자가 런타임 시 코드를 변경하지 않고 얼리어답터 및 프리릴리스 기능을 관리하는 데 적합한 기능을 활성화하거나 비활성화할 수 있습니다. 점진적인 롤아웃, A/B 테스트 및 불안정한 기능의 빠른 비활성화를 지원합니다.
 
@@ -34,11 +35,11 @@ AEM SDK 설정에서 기능 전환을 활성화하기 전에 다음을 확인하
 
 * 사용자가 `forms-users` 그룹의 구성원입니다.
 
-* `http://<author-instance-url>:portnumber/system/console/bundles`(으)로 이동하여 **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** 번들이 있는지 확인합니다. 없는 경우 [링크에서 번들을 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)합니다.
+* `http://<author-instance-url>:portnumber/system/console/bundles`(으)로 이동하여 **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** 번들이 있는지 확인합니다. 없는 경우 [링크에서 번들을 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar)합니다.
 
   ![기능 전환](/help/forms/assets/aem-web-console-bundle.png)
 
-### 기능 활성화 전환
+### 기능 토글 활성화
 
 AEM SDK 인스턴스에서 기능 전환을 활성화하려면 다음 단계를 따르십시오.
 
@@ -82,4 +83,3 @@ AEM SDK 인스턴스에서 기능 전환을 활성화하려면 다음 단계를 
 >[!NOTE]
 >
 > 프로덕션 환경에 대해 기능 토글을 활성화하려면 Adobe 지원 팀에 문의하십시오.
-
