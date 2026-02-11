@@ -93,7 +93,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
-> AEM Guides에 다음과 같은 중요한 변경 사항이 있습니다. [읽기 전용 파일에 대한 처리 개선](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+> AEM Guides에 다음과 같은 중요한 변경 사항이 있습니다. [읽기 전용 파일에 대한 처리 개선](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
