@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '586'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 11%
 
 1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
 1. **Forms > Forms 및 문서**(으)로 이동하여 **만들기 > 대화형 통신**&#x200B;을 클릭합니다.
-1. 만들기 양식의 드롭다운에서 활성화된 템플릿을 **선택**&#x200B;합니다.
+1. 만들기 양식에서 템플릿 선택기에서 활성화된 템플릿을 **선택**&#x200B;합니다.
 1. 제목, 이름, 작성자 등 기타 세부 정보를 입력합니다.
 1. 선택한 템플릿 구조와의 통신을 디자인하려면 **만들기**&#x200B;를 클릭하세요.
 1. IC 편집기가 열리고 여기서 통신 디자인을 시작할 수 있습니다.
