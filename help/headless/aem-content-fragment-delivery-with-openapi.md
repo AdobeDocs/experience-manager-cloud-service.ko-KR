@@ -1,10 +1,10 @@
 ---
 title: OpenAPI와 함께 사용하는 AEM 콘텐츠 조각 게재
-description: OpenAPI를 사용한 tAEM 콘텐츠 조각 게재에 대해 알아보기
+description: OpenAPI를 사용한 AEM 콘텐츠 조각 게재에 대해 알아보기
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
+source-git-commit: 73bfeb19eebe104a772d1c420fe6471fea3e1225
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
