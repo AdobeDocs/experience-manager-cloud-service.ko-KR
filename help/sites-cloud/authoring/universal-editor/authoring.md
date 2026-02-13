@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2838'
 ht-degree: 19%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 19%
 * 링크
 * 연결 해제
 * 이미지
+* 텍스트로 붙여넣기
 * 모든 서식 제거
 
 기존 테이블은 RTE를 사용하여 편집할 수 있지만 새 테이블은 생성할 수 없습니다.
@@ -407,7 +408,7 @@ ht-degree: 19%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

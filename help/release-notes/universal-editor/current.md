@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.02.05 릴리스 정보
-description: 다음은 범용 편집기 2026.02.05 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.02.13 릴리스 정보
+description: 다음은 범용 편집기 2026.02.13 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
+source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 45%
+source-wordcount: '182'
+ht-degree: 39%
 
 ---
 
 
-# 범용 편집기 2026.02.05 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.02.13 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 2월 5일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2026년 2월 13일 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,8 +26,8 @@ ht-degree: 45%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 이동 작업을 [상황에 맞는 메뉴에서 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* 이제 RTE에서 [텍스트로 붙여넣기](/help/implementing/universal-editor/configure-rte.md#paste-as-text)를 지원합니다.
+* 이제 Dynamic Media 링크가 지원됩니다.
+* [문서 작성](https://docs.da.live/developers/reference/universal-editor)을 사용하여 블록을 만드는 데 사용할 수 있는 스키마 및 데이터 형식을 사용할 수 있습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -37,4 +37,6 @@ ht-degree: 45%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* [`xwalk` 플러그인을 사용할 때 AEM 6.5에 대해 미리 보기에 게시가 활성화되었습니다.](/help/implementing/universal-editor/component-definition.md#plugins)
+* 비디오의 잘못된 URL 문제가 수정되었습니다.
+* 동일한 이름의 여러 구성 요소를 만드는 경우 더 이상 409가 반환되지 않습니다.
+* 이제 Headless 캔버스는 컨테이너의 필드에 대한 후속 업데이트를 지속합니다.
