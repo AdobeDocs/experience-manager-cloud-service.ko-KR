@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1c5cbed1ea9e8beda14ed3c66f14a446941cd9cf
+source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 39%
+source-wordcount: '2035'
+ht-degree: 38%
 
 ---
 
@@ -34,15 +34,12 @@ ht-degree: 39%
 
 [여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- 
+## 릴리스 비디오 {#release-video}
 
-## Release Video {#release-video}
+2026년 1월 릴리스 개요 비디오를 통해 2026.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
-Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
->[!VIDEO](https://video.tv.adobe.com/v/3440927?captions=kor&quality=12)
-
--->
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
 
