@@ -3,13 +3,13 @@ title: 검색 에이전트 개요
 description: 검색 에이전트를 사용하여 간소화되고 클릭되지 않는 검색 환경을 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
+exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
+source-git-commit: 5488fdb1ffc9c65ef2b569627f9a2ef414181290
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
-
 
 # 검색 에이전트 {#discovery-agent}
 
@@ -30,6 +30,8 @@ ht-degree: 1%
 >AI가 생성한 응답은 정확하지 않거나 오해의 소지가 있을 수 있습니다. 제안된 수정 사항과 응답을 다시 확인하십시오.
 >
 >[Adobe Experience Cloud Generative AI 사용 지침](https://www.adobe.com/kr/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)도 참조하세요.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
 
 ## 기술 {#skills-discovery-agent}
 
