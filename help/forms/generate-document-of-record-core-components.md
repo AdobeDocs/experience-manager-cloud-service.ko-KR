@@ -4,9 +4,9 @@ description: 적응형 Forms 핵심 구성 요소에 대한 양식 제출에서 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
+source-wordcount: '3208'
 ht-degree: 1%
 
 ---
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ When you select a form model, configure Document of Record using options availab
 
       * **패널에 대한 설명 숨기기**: 속성을 설정하면 제출 PDF에서 패널/테이블에 대한 설명이 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
 
-
-
    1. **양식 필드 속성**:
 
       * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 [!UICONTROL 기록 문서]에 확인란 및 라디오 단추의 선택한 값만 표시됩니다.
@@ -363,35 +359,33 @@ When you select a form model, configure Document of Record using options availab
       * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
       * **수평 정렬을 위한 옵션 수**:You&#x200B;는 수평 정렬을 위해 제출 PDF에 표시할 옵션 수를 설정할 수 있습니다.
 
-
-
    1. **기본 페이지 속성**:
 
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
       * **양식 제목**: DoR의 제목입니다.
-* **머리글 텍스트**: 제출 PDF의 머리글 섹션에 나타나는 텍스트입니다.
-* **면책조항 레이블**: 면책조항의 레이블입니다.
-* **면책조항**: 제출 PDF의 권한 및 의무 범위를 지정하는 텍스트입니다.
-* **면책조항 텍스트**: 면책조항 텍스트.
+      * **머리글 텍스트**: 제출 PDF의 머리글 섹션에 나타나는 텍스트입니다.
+      * **면책조항 레이블**: 면책조항 레이블입니다.
+      * **면책조항**: 제출 PDF의 권한 및 의무 범위를 지정하는 텍스트입니다.
+      * **면책조항 텍스트**: 면책조항 텍스트.
 
-      &lt;!—![기본 페이지 속성](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[!NOTE]
-     >
-     >Accent Color 및 Font Family 속성이 작동하려면 6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 루트 하위 양식 아래에 다음 항목이 있는지 확인하십시오.
-     
-     &quot;xml
-     &lt;proto>
-     &lt;font typeface=&quot;Arial&quot;/>
-     &lt;fill>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/fill>
-     &lt;edge>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/edge>
-     &lt;/proto>
-     &quot;
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ When you select a form model, configure Document of Record using options availab
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
