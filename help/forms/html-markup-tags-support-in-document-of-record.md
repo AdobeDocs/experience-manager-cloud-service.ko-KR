@@ -1,24 +1,24 @@
 ---
-title: 기록 문서에서 지원되는 HTML 마크업 태그
-description: 렌더링 동작 및 접근성 고려 사항을 포함하여 기록 문서 생성에서 이제 HTML 마크업 태그에 대한 참조 안내서가 지원됩니다
+title: Submission PDF(이전 기록 문서)에서 지원되는 HTML 마크업 태그
+description: 렌더링 동작 및 접근성 고려 사항을 포함하여 제출 PDF(이전 기록 문서)를 생성할 때 지원되는 HTML 마크업 태그에 대한 참조 안내서입니다.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 8%
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# 기록 문서에서 지원되는 HTML 마크업 태그
+# Submission PDF(이전 기록 문서)에서 지원되는 HTML 마크업 태그
 
 ## 이 참조가 다루는 내용은 무엇입니까?
 
-이제 AEM Forms은 DoR(문서 기록) PDF를 생성할 때 서식 있는 텍스트 필드의 HTML 마크업 태그를 지원합니다. 이 안내서에서는 적응형 Forms에서 안전하게 사용할 수 있는 HTML 마크업 태그와 생성된 문서에서 이들 태그를 렌더링하는 방법에 대해 설명합니다.
+이제 AEM Forms은 제출 서류 PDF(이전의 기록 문서) PDF을 생성할 때 서식 있는 텍스트 필드의 HTML 마크업 태그를 지원합니다. 이 안내서에서는 응용 HTML에서 안전하게 사용할 수 있는 Forms 마크업 태그와 생성된 제출 PDF에서 태그가 렌더링되는 방법을 설명합니다.
 
-양식에 서식 있는 텍스트 콘텐츠(예: 굵은 서식, 목록 또는 링크)를 추가하는 경우 지원되는 태그와 제한 사항을 이해하는 것이 중요합니다. 이 참조는 콘텐츠가 올바르게 표시되고 기록 문서에서 액세스할 수 있는 상태를 유지하기 위해 적절한 태그를 선택하는 데 도움이 됩니다.
+양식에 서식 있는 텍스트 콘텐츠(예: 굵은 서식, 목록 또는 링크)를 추가하는 경우 지원되는 태그와 제한 사항을 이해하는 것이 중요합니다. 이 참조는 콘텐츠가 올바르게 표시되고 제출 PDF에서 액세스할 수 있는 상태를 유지하기 위해 적절한 태그를 선택하는 데 도움이 됩니다.
 
 ## 시작하기 전
 
@@ -27,18 +27,18 @@ ht-degree: 8%
 다음 사항을 숙지해야 합니다.
 
 - 기본 HTML 마크업 구문
-- [기록 문서 기본 사항](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [제출 PDF(이전 Document of Record) 기본 사항](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - 접근성 원칙 및 WCAG 지침
 - PDF 접근성 요구 사항
 - HTML 마크업을 수락하는 적응형 양식 구성 요소
 
 ### 고려 사항
 
-기록 문서(DoR)는 태그가 지정된 PDF일 수 있으므로 보조 기술에 대한 접근성과 적절한 구조를 유지하는 데 도움이 됩니다. 태그가 지정된 PDF 출력을 사용하려면 [XCI 속성 `config/present/pdf/tagged`을(를) `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file)(으)로 설정합니다. PDF을 생성한 후에는 접근성 태그가 올바르게 적용되었는지 확인해야 합니다. [Adobe Acrobat을 사용하여 접근성 태그](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html)를 확인하고 문서가 접근성 표준을 충족하는지 확인할 수 있습니다.
+Submission PDF(이전 Document of Record)는 태그가 지정된 PDF이 될 수 있으며, 이를 통해 보조 기술에 대한 접근성과 적절한 구조를 확보할 수 있습니다. 태그가 지정된 PDF 출력을 사용하려면 [XCI 속성 `config/present/pdf/tagged`을(를) `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file)(으)로 설정합니다. PDF을 생성한 후에는 접근성 태그가 올바르게 적용되었는지 확인해야 합니다. [Adobe Acrobat을 사용하여 접근성 태그](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html)를 확인하고 문서가 접근성 표준을 충족하는지 확인할 수 있습니다.
 
 ### 새로운 기능
 
-기록 문서의 리치 텍스트 지원은 최근 향상된 기능입니다. 이전에는 생성된 문서에서 서식 있는 텍스트 콘텐츠가 일반 텍스트로 표시되었습니다. 이 새로운 기능을 사용하면 형식이 지정된 콘텐츠를 PDF 출력에서 제대로 렌더링할 수 있습니다.
+제출 PDF의 리치 텍스트 지원은 최근 향상된 기능입니다. 이전에는 생성된 문서에서 서식 있는 텍스트 콘텐츠가 일반 텍스트로 표시되었습니다. 이 새로운 기능을 사용하면 형식이 지정된 콘텐츠를 PDF 출력에서 제대로 렌더링할 수 있습니다.
 
 ## HTML 태그 지원 참조
 
@@ -46,7 +46,7 @@ ht-degree: 8%
 
 이러한 태그는 적절한 접근성 노드 생성으로 완벽하게 지원됩니다.
 
-| HTML 태그 | 설명 | 기록 문서 지원 | 접근성 | 예 |
+| HTML 태그 | 설명 | 제출 PDF 지원 | 접근성 | 예 |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | 단락 | 예 | 완전히 지원됨 - `<P>` 노드 수정 | `<p>This is a paragraph.</p>` |
 | `<br/>` | 줄 바꿈 | 예 | 완전히 지원됨 - `<P>` 노드 내 | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Expected:     <LBody>First item
 ## 관련 컨텐츠
 
 
-- [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [핵심 구성 요소에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
-- [기록 문서 템플릿 사용자 정의](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [적응형 Forms에 대한 제출 PDF(이전 기록 문서) 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [핵심 구성 요소에 대한 제출 PDF 생성](/help/forms/generate-document-of-record-core-components.md)
+- [제출 PDF 템플릿 사용자 지정](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
