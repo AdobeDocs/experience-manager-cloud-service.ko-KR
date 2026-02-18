@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 76%
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 76%
 
 ## 제목 표기법 {#heading-notation}
 
-제목 앞에 해시 태그(#)를 배치하여 제목을 만듭니다. H1에는 하나의 해시 태그(#)가 사용되고 H2에는 두 개의 해시 태그(##)가 사용되는 방식입니다. 최대 6개의 해시 태그를 사용할 수 있습니다. 예:
+머리글을 만들려면 머리글 앞에 해시 기호(#)를 놓습니다. H1에는 하나의 해시 기호(#)가 사용되고 H2에는 두 개의 해시 기호(##)가 사용되는 식입니다. 최대 6개의 해시 기호를 사용할 수 있습니다. 예:
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ ht-degree: 76%
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 블록 인용을 중첩시킬 수 있습니다. 예:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ ht-degree: 76%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &ast; 기호를 사용하십시오. 예:
+순서가 없는 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast;(별표) 기호를 사용하십시오. 예:
 
     `* item in list`
 
