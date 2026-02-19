@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 19%
+source-wordcount: '2902'
+ht-degree: 18%
 
 ---
 
@@ -101,23 +101,30 @@ ht-degree: 19%
 
 범용 편집기의 리치 텍스트 편집기(RTE)를 사용하면 작성자가 표준 텍스트 서식을 적용할 수 있습니다. 기본적으로 다음 옵션을 사용할 수 있습니다.
 
-* (h1, h2, h3 등)
-* 볼드체
-* 이탤릭체
-* 밑줄
-* 위 첨자
-* 아래 첨자
-* 글머리 기호 목록
-   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어쓰기
-* 순차 목록
-   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어쓰기
-* 링크
-* 연결 해제
-* 이미지
-* 텍스트로 붙여넣기
-* 모든 서식 제거
-
-기존 테이블은 RTE를 사용하여 편집할 수 있지만 새 테이블은 생성할 수 없습니다.
+* **단락 스타일**
+   * 단락, h1-h6, 코드
+* **굵게**
+* **기울임꼴**
+* **밑줄**
+* **취소선**
+* **위 첨자**
+* **아래 첨자**
+* **글머리 기호 목록**
+   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어씁니다.
+* **정렬된 목록**
+   * Tab 키를 사용하여 들여쓰고 Shift+Tab을 사용하여 내어씁니다.
+* **링크**
+   * URL을 지정하거나 컨텐츠 브라우저를 사용하여 AEM 내의 경로를 선택합니다.
+* **연결 해제**
+   * 선택한 텍스트에서 링크를 제거합니다.
+* **이미지**
+   * URL을 지정하거나 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector)를 사용하여 AEM에서 자산을 선택하십시오.
+* **테이블**
+   * 드롭다운을 사용하여 선택한 열 및 행 수의 새 표를 삽입하거나 새 열/행을 삽입 및 제거합니다.
+* **텍스트로 붙여넣기**
+   * 범용 편집기에 붙여넣기 전에 클립보드의 텍스트에서 서식을 제거합니다.
+* **모든 서식 제거**
+   * 선택한 텍스트에서 서식 옵션을 모두 제거합니다.
 
 작성자의 필요에 따라 옵션을 숨기거나 추가 옵션을 표시하도록 RTE를 구성할 수 있습니다. 자세한 내용은 [유니버설 편집기에 대한 RTE 구성](/help/implementing/universal-editor/configure-rte.md) 문서를 참조하십시오.
 
@@ -408,7 +415,7 @@ ht-degree: 19%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

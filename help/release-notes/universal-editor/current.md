@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.02.13 릴리스 정보
-description: 다음은 범용 편집기 2026.02.13 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.02.19 릴리스 정보
+description: 다음은 범용 편집기 2026.02.19 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 39%
+source-wordcount: '251'
+ht-degree: 28%
 
 ---
 
 
-# 범용 편집기 2026.02.13 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.02.19 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 2월 13일 릴리스 정보입니다.
+유니버설 편집기 2026년 2월 19일 릴리스의 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,8 +26,14 @@ ht-degree: 39%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 Dynamic Media 링크가 지원됩니다.
-* [문서 작성](https://docs.da.live/developers/reference/universal-editor)을 사용하여 블록을 만드는 데 사용할 수 있는 스키마 및 데이터 형식을 사용할 수 있습니다.
+* RTE가 개선되었습니다.
+   * [컨텍스트 RTE의 ](/help/implementing/universal-editor/configure-rte.md#common-action-options)에서 도구 모음 항목을 숨길 수 있습니다.
+   * [테이블 내부의 텍스트를 단락](/help/implementing/universal-editor/configure-rte.md#table-actions)과(와) 함께 줄 바꿈할 수 있습니다.
+   * 이제 [지원되지 않는 HTML 태그](/help/implementing/universal-editor/configure-rte.md#unsupported-html) 태그를 RTE에서 유지할 수 있습니다.
+   * 이제 RTE 논리가 별도의 파일에서 제공됩니다.
+   * 이제 RTE를 사용하여 [테이블을 만들 수 있습니다](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
+* 레이블이 설정되지 않은 경우 이제 구성 요소 정의의 구성 요소 제목이 사용됩니다.
+* `setEditorMode`은(는) 이제 확장을 통해 사용할 수 있습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -37,6 +43,7 @@ ht-degree: 39%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 비디오의 잘못된 URL 문제가 수정되었습니다.
-* 동일한 이름의 여러 구성 요소를 만드는 경우 더 이상 409가 반환되지 않습니다.
-* 이제 Headless 캔버스는 컨테이너의 필드에 대한 후속 업데이트를 지속합니다.
+* 이제 RTE 종단점이 바로 편집기에 제공됩니다.
+* 중첩된 필드를 편집해도 해당 구조의 피어 항목이 더 이상 덮어쓰이지 않습니다.
+* 필수 RTE 필드는 더 이상 비워 둘 수 없습니다.
+* 서식 지정 후 링크를 추가할 때 원본 위치 서식이 더 이상 잘못 적용되지 않습니다.

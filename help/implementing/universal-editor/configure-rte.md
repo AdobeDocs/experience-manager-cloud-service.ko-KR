@@ -4,9 +4,9 @@ description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [
@@ -87,9 +87,29 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 }
 ```
 
-## 작업 구성 {#actions}
+## 액션 구성 {#action}
 
 작업 구성을 사용하면 개별 편집 작업의 비헤이비어와 모양을 사용자 지정할 수 있습니다. 사용 가능한 섹션입니다.
+
+### 일반 작업 옵션 {#common-action-options}
+
+대부분의 작업은 다음과 같은 공통 옵션을 지원합니다.
+
+* `shortcut?`: 문자열 - 작업의 기본 키보드 단축키를 무시합니다(있는 경우).
+* `label?`: 문자열 - UI에서 작업에 사용되는 레이블을 재정의합니다.
+* `hideInline?`: 부울 - `true`일 때 은 컨텍스트 내(인라인) RTE 편집기 도구 모음에서 이 작업을 숨깁니다.
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### 액션 포맷 {#format}
 
@@ -134,6 +154,56 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
   }
 }
 ```
+
+### 테이블 작업 {#table-actions}
+
+표 작업은 표 셀에서 HTML 구조를 제어하는 컨텐츠 줄바꿈을 지원합니다.
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### 테이블 구성 옵션 {#table-configuration-options}
+
+* `wrapInParagraphs`: `false`(기본값) - 테이블 셀에 래핑되지 않은 텍스트 콘텐츠가 포함되어 있습니다.
+* `wrapInParagraphs`: `true` - 테이블 셀이 단락 태그의 콘텐츠를 래핑합니다.
+
+샘플:
+
+`wrapInParagraphs`: `false`일 때:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+`wrapInParagraphs`: `true`일 때:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>단락(`wrapInParagraphs`: `false`)의 줄바꿈을 해제할 때 삭제기가 여러 단락 사이에 `<br>` 태그를 자동으로 삽입하여 시각적 줄 바꿈을 유지합니다. 이는 주요 리치 텍스트 편집기의 HTML 표준 및 일반적인 관행을 따릅니다.
 
 ### 링크 작업 {#link}
 
@@ -487,3 +557,20 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 
 * `Mod` = `Cmd`(Mac), `Ctrl`(Windows/Linux)
 * 예: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## 지원되지 않는 HTML {#unsupported-html}
+
+기본적으로 알 수 없는 HTML 태그는 편집기에서 구문 분석하면 제거됩니다. 이를 유지하려면 `unsupportedHtml` 구성 옵션을 통해 옵트인하십시오.
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| 값 | 비헤이비어 |
+|---|---|
+| `false` (기본값) | 구문 분석 중에 알 수 없는 HTML 태그가 삭제됩니다. |
+| `true` | 알 수 없는 HTML 태그는 콘텐츠가 안전하게 왕복할 수 있도록 사용자 지정 지원되지 않는 블록 노드에 래핑됩니다. |
+
+활성화되면 편집기는 `rte-unsupported-block` 클래스로 지원되지 않는 노드를 렌더링합니다. 소비자 앱은 이 클래스에 대한 스타일을 제공해야 합니다(예: 테두리, 패딩, 배경). 블록 내의 태그 레이블은 `rte-unsupported-label`을(를) 사용하며, 이 값은 사용자 지정할 수도 있습니다.
