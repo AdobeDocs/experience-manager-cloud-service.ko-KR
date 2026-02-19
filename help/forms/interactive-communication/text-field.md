@@ -4,23 +4,19 @@ description: AEM Forms의 대화형 통신 편집기의 텍스트 필드 구성 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 7%
+source-wordcount: '671'
+ht-degree: 1%
 
 ---
-
 
 # 대화형 통신 편집기의 텍스트 필드 구성 요소
 
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 ## &#x200B;1. 소개
 
@@ -133,5 +129,3 @@ ht-degree: 7%
 - 가능하면 데이터 모델에 직접 바인딩하여 유지 관리를 간소화합니다.
 
 IC 편집기의 텍스트 필드 구성 요소는 데이터 캡처를 간소화하는 다용도 빌딩 블록입니다. 잘 선택된 타이포그래피, 명확한 라벨, 적절한 유효성 검사 및 견고한 데이터 바인딩으로 신중하게 구성되면 다운스트림 처리를 위한 원활하고 사용자 친화적인 경험과 신뢰할 수 있는 데이터를 제공합니다.
-
-

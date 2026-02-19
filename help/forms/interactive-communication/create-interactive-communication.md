@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: f587a30da747ae3d53848ef5bb30c32a9b5d78e1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 11%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 11%
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 대화형 커뮤니케이션을 사용하면 고객 서비스, 청구, 온보딩 문서, 제안서, 계정 업데이트 등을 포함하여 개인화되고 대화형 커뮤니케이션을 만들고, 관리하고, 제공할 수 있습니다. 동적인 사용자별 컨텐츠가 업계 전반에 걸쳐 통신 경험을 향상시키는 모든 시나리오를 지원하도록 설계되었습니다.
 

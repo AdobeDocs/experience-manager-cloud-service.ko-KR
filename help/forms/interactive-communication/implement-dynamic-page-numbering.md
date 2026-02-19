@@ -4,23 +4,19 @@ description: 대화형 통신 편집기의 동적 페이지 번호 매기기를 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 13%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
-
 
 # 대화형 통신 편집기의 동적 페이지 번호 매기기
 
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 ## 소개
 

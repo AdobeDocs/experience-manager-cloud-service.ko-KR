@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 8%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
-
 
 # 대화형 통신 편집기에서 버전 관리 및 주석 달기
 
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 IC(대화형 통신)를 사용하면 개인화된 고객 커뮤니케이션을 위해 동적인 데이터 기반 문서를 만들 수 있습니다. 더 나은 공동 작업, 거버넌스 및 제어 게시 워크플로를 지원하기 위해 대화형 통신 편집기는 버전 관리, 검토 및 주석 달기 기능을 제공합니다.
 

@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 23%
+source-wordcount: '277'
+ht-degree: 12%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 23%
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 AEM의 대화형 통신 템플릿을 사용하면 머리글, 바닥글, 로고 및 기본 스타일과 같은 재사용 가능한 레이아웃 구조를 정의할 수 있습니다. 이러한 템플릿은 일관되고 브랜딩되고 효율적인 커뮤니케이션을 만드는 토대 역할을 합니다.
 

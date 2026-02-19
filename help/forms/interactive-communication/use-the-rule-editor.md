@@ -4,13 +4,13 @@ description: 대화형 통신 편집기에서 규칙 만들기 를 사용하면 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
-
 
 # 대화형 통신 편집기의 규칙 편집기
 
@@ -18,11 +18,6 @@ ht-degree: 10%
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 
 ## &#x200B;1. 소개
@@ -110,6 +105,3 @@ ht-degree: 10%
 
 
 작성자는 신중하게 규칙을 구성하여 데이터 및 사용자 작업에 지능적으로 대응하는 커뮤니케이션을 구축하여 프로세스를 간소화하고 오류를 줄이며 개인화된 환경을 원활하게 제공할 수 있습니다.
-
-
-

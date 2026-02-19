@@ -4,23 +4,19 @@ description: AEM Forms에 있는 대화형 통신 편집기의 날짜/시간 필
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 9%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
-
 
 # 인터랙티브 커뮤니케이션 편집기의 날짜/시간 필드 구성 요소
 
 >[!NOTE]
 >
 > 대화형 통신 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 액세스 권한을 요청하려면 회사 이메일 주소를 통해 `aem-forms-ea@adobe.com`으로 이메일을 보내시기 바랍니다.
-
->[!IMPORTANT]
->
-> **변경될 수 있는 설명서**: 이 프롬프트 라이브러리는 현재 제품과의 일치 여부를 테스트 중이며 업데이트 및 개정이 이루어질 수 있습니다. 얼리 어답터 프로그램이 진행되는 동안 Forms Experience Builder가 계속 발전함에 따라 프롬프트. 예시 및 모범 사례가 변경될 수 있습니다.
 
 ## &#x200B;1. 소개
 
@@ -141,4 +137,3 @@ ht-degree: 9%
 - 필드를 유효한 스키마 경로에 바인딩하여 적절한 데이터 캡처 및 처리를 보장합니다.
 
 대화형 통신 편집기의 날짜/시간 필드 구성 요소는 시간 기반 입력을 간소화하는 강력하고 사용자 친화적인 구성 요소입니다. 스타일, 데이터 처리 및 레이아웃 컨트롤의 올바른 구성을 통해 사용자와 백엔드 시스템 모두에서 깔끔하고 안정적이며 직관적인 양식 경험을 사용할 수 있습니다.
-
