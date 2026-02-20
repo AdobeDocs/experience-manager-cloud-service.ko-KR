@@ -4,9 +4,9 @@ description: 컨텐츠 생성 속도를 높이고 변경 사항을 자동으로 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 5e1ae1de0bdeada01f03f3549ab9295ddef139ea
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 0%
 >
 >* 현재 AEM 6.5 및 AEM 6.5 LTS에서는 사용할 수 없습니다.
 >* AEM 온프레미스 및 Managed Services에서는 사용할 수 없습니다.
-
->[!IMPORTANT]
->
->에이전트를 사용하려면 Explorer 프로그램에 등록해야 합니다. AEM 에이전트 탐색기 프로그램 [여기](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)에서 자세한 내용을 확인할 수 있습니다.
 
 ## Experience 프로덕션 에이전트 {#experience-production-agent}
 
