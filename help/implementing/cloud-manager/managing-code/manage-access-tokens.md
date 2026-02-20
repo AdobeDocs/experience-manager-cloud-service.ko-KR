@@ -4,9 +4,9 @@ description: AEM Cloud Manager에서 나만의 Git 가져오기에 사용되는 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,9 @@ ht-degree: 3%
 
 Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호스팅되는 저장소를 관리합니다. 이전에는 토큰이 만료되면 연결된 저장소를 다시 온보딩하여 계속 작동해야 했습니다.
 
-이제 **액세스 토큰 관리** 기능을 사용하여 토큰을 보다 효율적으로 관리할 수 있습니다. GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps를 포함하여 지원되는 외부 Git 공급자에 연결된 토큰을 보고, 이름을 바꾸거나, 제거할 수 있습니다.
+이제 **`Manage Access Tokens`** 기능을 사용하여 토큰을 보다 효율적으로 관리할 수 있습니다. GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps를 포함하여 지원되는 외부 Git 공급자에 연결된 토큰을 보거나 이름을 변경하거나 제거할 수 있습니다.
 
 [Cloud Manager에 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)도 참조하세요.
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
--->
 
 ## 액세스 토큰 보기 {#view-access-tokens}
 
@@ -60,4 +54,4 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 
    현재 사용 중인 토큰에 대해 아이콘이 비활성화되었습니다(![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)).
 
-1. **액세스 토큰 삭제** 대화 상자에서 **삭제**&#x200B;을 클릭하여 토큰을 영구적으로 제거하십시오.
+1. **`Delete Access Token`** 대화 상자에서 **삭제**&#x200B;를 클릭하여 토큰을 영구적으로 제거합니다.

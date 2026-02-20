@@ -4,9 +4,9 @@ description: Edge Delivery 사이트를 개인 또는 엔터프라이즈 Git 저
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '282'
 ht-degree: 100%
 
 ---
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 Cloud Manager에 이미 온보딩된 모든 프라이빗 Git 저장소에서 코드를 가져오도록 Edge Delivery 사이트를 구성할 수 있습니다.
 
-**지원되는 Git 공급업체**
+<!--
+**Supported Git Vendors**
 
-| 지원 수준 | 공급업체 | 메모 |
+| Support level | Vendors | Notes |
 | --- | --- | --- |
-| 일반 가용성 | • GitHub Enterprise(자체 호스팅 버전)<br>• Bitbucket(클라우드 버전)<br>• GitLab(클라우드 및 자체 호스팅 버전) | 활성화 요청 없이 연결 |
-| Alpha 프로그램 | Azure DevOps(클라우드 버전) | [액세스 요청](mailto:grp-cloudmanager_byog@adobe.com) |
-| Beta 프로그램 | Adobe 호스팅 저장소(Cloud Manager에서 생성됨) | [액세스 요청](mailto:grp-cloudmanager_byog@adobe.com) |
+| General availability | &bull; GitHub Enterprise (self-hosted version)<br>&bull; Bitbucket (Cloud version)<br>&bull; GitLab (Cloud and self-hosted version) | Connect without enablement requests |
+| Alpha program | Azure DevOps (Cloud version) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+| Beta program | Adobe-hosted repository (created in Cloud Manager) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+-->
 
 **외부 Git 저장소를 사용하도록 Edge Delivery 사이트 구성하려면 다음 작업을 수행합니다.**
 
