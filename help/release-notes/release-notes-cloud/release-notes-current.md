@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cf45f9e6d89e0a166c09989b0fc8e793a54ce9ff
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 41%
@@ -38,7 +38,7 @@ ht-degree: 41%
 
 2026년 1월 릴리스 개요 비디오를 통해 2026.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479796/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -153,12 +153,12 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API 사용 중단 {#java-api-deprecation}
 
-2026/2/26/2026 제거를 대상으로 하는 더 이상 사용되지 않는 API는 코드에서 더 이상 사용되지 않아야 합니다. 배포 블록을 방지하려면 2026년 3월 26일 이전에 API 사용을 제거하십시오. 중요 날짜:
+2/30/2026 제거를 대상으로 하는 더 이상 사용되지 않는 API는 코드에서 더 이상 사용되지 않아야 합니다. 배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오. 중요 날짜:
 
 * **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 * **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
-* **2026년 3월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
-* **2026년 4월 30일**: 이러한 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
+* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
+* **2026년 5월 4일**: 이 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
 
 [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
 

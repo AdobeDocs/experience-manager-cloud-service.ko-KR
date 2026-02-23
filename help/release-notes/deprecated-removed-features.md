@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 80%
@@ -35,10 +35,10 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 >
 >* **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 >* **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
->* **2026년 3월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
+>* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
 >* **2026년 4월 30일**: 이러한 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
 >
->배포 블록을 방지하려면 2026년 3월 26일 이전에 API 사용을 제거하십시오.
+>배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오.
 
 ## 사용하지 않는 기능 {#deprecated-features}
 
@@ -90,10 +90,10 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 >
 > * **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 > * **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
-> * **2026년 3월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
-> * **2026년 4월 30일**: 이러한 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
+> * **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
+> * **2026년 5월 4일**: 이 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
 >
-> 배포 블록을 방지하려면 2026년 3월 26일 이전에 API 사용을 제거하십시오.
+> 배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오.
 
 
 <details>
@@ -343,7 +343,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
-사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
 
 시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
 
@@ -353,7 +353,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 현재 더 이상 사용되지 않는 API가 필요한 타사 라이브러리를 사용하는 경우 해당 타사 라이브러리의 최신 버전으로 업데이트해 보십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
