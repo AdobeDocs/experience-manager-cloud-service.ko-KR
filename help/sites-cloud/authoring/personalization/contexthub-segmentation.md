@@ -1,14 +1,15 @@
 ---
 title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 89%
+source-wordcount: '1659'
+ht-degree: 88%
 
 ---
 
@@ -215,7 +216,6 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더가 세그먼트 목록에 나타납니다.
    * 열 정렬 방식은 목록 내에 새 폴더가 나타나는 위치에 영향을 미칩니다.
    * 열 머리글을 선택하여 정렬을 조정할 수 있습니다.
-
      ![새 폴더](../assets/contexthub-folder.png)
 
 ### 기존 폴더 수정 {#modify-folders}
@@ -266,10 +266,10 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. 페이지 미리보기
 1. ContextHub 아이콘을 클릭하여 ContextHub 도구 모음을 표시합니다.
-1. 작성한 세그먼트와 일치하는 담당자를 선택합니다.
-1. ContextHub는 선택한 담당자에게 적합한 세그먼트를 결정합니다.
+1. 작성한 세그먼트와 일치하는 페르소나를 선택합니다.
+1. ContextHub는 선택한 페르소나에게 적합한 세그먼트를 결정합니다.
 
-예를 들어 바젤의 사용자를 식별하기 위해 고안된 당사의 간단한 세그먼트 정의는 사용자의 위치를 기반으로 합니다. 이러한 기준에 부합하는 특정 담당자를 로드하면 해당 세그먼트가 정상적으로 배정된 경우 다음과 같이 표시됩니다.
+예를 들어 바젤의 사용자를 식별하기 위해 고안된 당사의 간단한 세그먼트 정의는 사용자의 위치를 기반으로 합니다. 이러한 기준에 부합하는 특정 페르소나를 로드하면 해당 세그먼트가 정상적으로 배정된 경우 다음과 같이 표시됩니다.
 
 ![세그먼트가 배정됨](../assets/contexthub-segment-resolve.png)
 
@@ -286,8 +286,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 활동 및 경험을 설정했다면 활동을 사용하여 세그먼트를 손쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성에 대한 관련 설명서](targeted-content.md)를 참조하십시오.
 
 1. 타겟팅된 콘텐츠를 설정한 페이지의 편집 모드에서 콘텐츠의 화살표 아이콘을 통해 해당 콘텐츠가 타겟팅되었음을 확인할 수 있습니다.
-1. 미리보기 모드로 전환하고 ContextHub를 사용하여 경험에 대해 구성된 세그먼테이션과 일치하지 않는 담당자로 전환합니다.
-1. 경험에 대해 구성된 세그먼테이션과 일치하는 담당자로 전환한 다음 그에 따라 경험이 변경되는지 확인합니다.
+1. 미리보기 모드로 전환하고 ContextHub를 사용하여 경험에 대해 구성된 세그먼테이션과 일치하지 않는 페르소나로 전환합니다.
+1. 경험에 대해 구성된 세그먼테이션과 일치하는 페르소나로 전환한 다음 그에 따라 경험이 변경되는지 확인합니다.
 
 ## 세그먼트 사용 {#using-your-segment}
 

@@ -3,11 +3,12 @@ title: 번역할 콘텐츠 식별
 description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 ## 콘텐츠 조각 및 번역 규칙 {#content-fragments}
 
@@ -215,7 +216,7 @@ UI에서 **속성** 탭에서 **번역**&#x200B;을 선택/선택 취소할 수 
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-`jcr:language`과(와) 같이 텍스트가 아닌 언어 코드가 있는 속성에는 **`updateDestinationLanguage`**&#x200B;을(를) 사용합니다. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
+**`updateDestinationLanguage`**&#x200B;과(와) 같이 텍스트가 아닌 언어 코드가 있는 속성에는 `jcr:language`을(를) 사용합니다. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
 
 UI에서 **속성** 탭에서 **번역**&#x200B;을 선택/선택 해제하여 이 값을 수정할 수 있지만, 여기에는 언어 코드를 값으로 하는 특정 속성만 해당됩니다.
 

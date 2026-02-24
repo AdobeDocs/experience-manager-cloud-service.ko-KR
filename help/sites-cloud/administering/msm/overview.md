@@ -3,11 +3,12 @@ title: 콘텐츠 재사용 - 다중 사이트 관리자 및 Live Copy
 description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을 사용하여 콘텐츠를 재사용하는 방법에 대해 알아봅니다.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2725'
 ht-degree: 91%
 
 ---

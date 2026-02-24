@@ -3,12 +3,13 @@ title: Live Copy 개요 콘솔
 description: 콘텐츠 동기화를 위해 Live Copy 상태를 신속하게 이해할 수 있도록 Live Copy 개요 콘솔의 기본 사항에 대해 알아봅니다.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 99%
 
 ---
 

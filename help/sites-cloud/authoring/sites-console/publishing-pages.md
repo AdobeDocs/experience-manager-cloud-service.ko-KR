@@ -1,14 +1,15 @@
 ---
 title: 사이트 콘솔에서 페이지 게시
 description: 사이트 콘솔을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 74%
+source-wordcount: '1641'
+ht-degree: 73%
 
 ---
 

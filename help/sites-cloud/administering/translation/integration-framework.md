@@ -3,11 +3,12 @@ title: 번역 통합 프레임워크 구성
 description: 서드파티 번역 서비스와 통합한 번역 통합 프레임워크를 구성하는 방법에 대해 알아봅니다.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1453'
 ht-degree: 69%
 
 ---
@@ -24,13 +25,13 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 ## 번역 서비스 공급업체에 연결 {#connecting-to-a-translation-service-provider}
 
 AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만듭니다.
 
-AEM에는 기본적으로 [Microsoft® Translator에 연결](connect-ms-translator.md)하는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)에서 찾을 수 있습니다.
+AEM에는 기본적으로 [Microsoft® Translator에 연결](connect-ms-translator.md)할 수 있는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)에서 찾을 수 있습니다.
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft® Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft® Translator와 통합](connect-ms-translator.md)을 참조하십시오.
 
@@ -58,7 +59,7 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](connect-ms-translat
 
 프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 번역 구성을 만들려면:
 
-1. [전역 탐색 메뉴](/help/sites-cloud/authoring/basic-handling.md#global-navigation)에서 **도구 > Cloud Service 및 번역 Cloud Service**&#x200B;을 선택합니다.
+1. [전역 탐색 메뉴](/help/sites-cloud/authoring/basic-handling.md#global-navigation)에서 **도구 > 클라우드 서비스 및 번역 클라우드 서비스**&#x200B;를 선택합니다.
 1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.
 1. 필드에 다음 정보를 입력한 다음 **만들기**&#x200B;를 선택합니다.
    1. 드롭다운 메뉴에서 **구성 유형**&#x200B;을 선택합니다.
@@ -98,7 +99,7 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](connect-ms-translat
 | 태그 번역 | 자산과 연결된 태그를 번역할 수 있도록 이 속성을 활성화합니다. |
 | 자동 실행 번역 | 번역 프로젝트가 생성된 후 자동으로 번역 작업을 실행할 수 있도록 이 속성을 선택합니다. 이 옵션을 선택하면 번역 작업을 검토하거나 살필 수 없습니다. |
 | 업데이트 전용 번역 사용 중지 | 이 옵션을 선택하면 번역 프로젝트를 업데이트하면 마지막 번역 이후 변경된 필드뿐만 아니라 번역할 수 있는 모든 필드가 번역으로 제출됩니다. |
-| 번역을 위해 콘텐츠 모델 필드 활성화 | 이 옵션을 활성화하면 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)의 **변환 가능** 필드를 사용하여 필드의 변환 여부를 결정하고 그에 따라 [변환 규칙](rules.md)을(를) 자동으로 만듭니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체됩니다. |
+| 번역을 위해 콘텐츠 모델 필드 활성화 | 이 옵션을 활성화하면 **콘텐츠 조각 모델**&#x200B;의 [변환 가능](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) 필드를 사용하여 필드의 변환 여부를 결정하고 그에 따라 [변환 규칙](rules.md)을(를) 자동으로 만듭니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체됩니다. |
 
 ## 번역을 위한 페이지 구성 {#configuring-pages-for-translation}
 

@@ -1,13 +1,14 @@
 ---
 title: 페이지 버전을 사용하여 작업
 description: AEM에서 페이지 버전을 만들고, 비교하고, 복원하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1626'
 ht-degree: 91%
 
 ---

@@ -1,14 +1,15 @@
 ---
 title: 실행 취소 및 재실행 제한 사항
-description: AEM 페이지 편집기의 실행 취소 및 다시 실행 옵션의 제한 사항에 대해 알아봅니다.
+description: AEM 페이지 편집기에서 실행 취소 및 다시 실행 옵션의 제한 사항에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 92%
+source-wordcount: '313'
+ht-degree: 91%
 
 ---
 

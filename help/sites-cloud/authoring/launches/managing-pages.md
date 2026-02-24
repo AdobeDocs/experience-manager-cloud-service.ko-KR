@@ -1,14 +1,15 @@
 ---
 title: 론치에서 페이지 관리
 description: 론치에서 새 페이지를 만들 수 있습니다. 원하지 않는 페이지를 삭제할 수도 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 89%
+source-wordcount: '294'
+ht-degree: 88%
 
 ---
 
@@ -27,8 +28,7 @@ ht-degree: 89%
 
 * 페이지 편집기:
 
-   * **탐색**&#x200B;을 선택하여 콘솔에서 론치 구조를 엽니다.
-
+   * **탐색**을 선택하여 콘솔에서 론치 구조를 엽니다.
      ![페이지 편집기에서 론치 탐색](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -37,7 +37,7 @@ ht-degree: 89%
      >
      >* 론치를 **나가고** 소스 페이지 편집으로 돌아가기
 
-* **론치** 콘솔: 특정 론치를 선택한 다음 **콘텐츠 관리**&#x200B;를 선택할 수 있습니다.
+* **론치** 콘솔: 특정 론치를 선택한 다음 **콘텐츠 관리**를 선택할 수 있습니다.
   ![론치 콘솔 - 콘텐츠 관리](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * **사이트** 콘솔: 특정 소스 페이지를 선택하고 **참조**&#x200B;를 선택하면 **론치**&#x200B;에 이어 **콘텐츠 관리**&#x200B;를 선택할 수 있습니다.

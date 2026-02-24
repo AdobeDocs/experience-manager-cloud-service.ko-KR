@@ -1,13 +1,14 @@
 ---
 title: 페이지 만들기
 description: 사이트 콘솔을 사용하여 웹 사이트의 새 페이지를 만드는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 27%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 27%
 
 >[!TIP]
 >
->새 페이지를 만들기 전에 [페이지가 AEM에서 어떻게 구성되는지](/help/sites-cloud/authoring/sites-console/organizing-pages.md)에 대해 알아보세요.
+>새 페이지를 만들기 전에 [AEM에서 페이지를 구성하는 방법](/help/sites-cloud/authoring/sites-console/organizing-pages.md)을 숙지하십시오.
 
 ## 액세스 권한 {#access-privileges}
 
@@ -84,7 +85,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->동일한 위치에 이미 존재하는 이름을 사용하여 페이지를 만드는 경우 AEM에서는 숫자를 추가하여 지정된 이름의 변형 페이지를 만듭니다. 예를 들어 `beach`이(가) 이미 있으면 새 페이지는 `beach1`이(가) 됩니다.
+>동일한 위치에 이미 존재하는 이름을 사용하여 페이지를 만드는 경우 AEM은 숫자를 추가하여 지정된 이름의 변형을 사용하여 페이지를 만듭니다. 예를 들어 `beach`이(가) 이미 있으면 새 페이지는 `beach1`이(가) 됩니다.
 
 >[!CAUTION]
 >

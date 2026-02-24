@@ -1,14 +1,15 @@
 ---
 title: 경로 브라우저를 사용하여 경로 선택
 description: 경로 브라우저를 사용하여 AEM에서 리소스를 선택하는 방법을 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 47%
+source-wordcount: '328'
+ht-degree: 46%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 47%
 
 ## 경로 브라우저 {#path-browser}
 
-경로 브라우저는 [**사이트** 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)의 [열 보기](/help/sites-cloud/authoring/basic-handling.md#column-view)와 같이 구성되어 리소스에 대한 상세한 선택을 가능하게 합니다.
+경로 브라우저는 [사이트](/help/sites-cloud/authoring/basic-handling.md#column-view) 콘솔&#x200B;[**의**&#x200B;열 보기](/help/sites-cloud/authoring/sites-console/introduction.md)와 같이 구성되어 리소스에 대한 상세한 선택을 가능하게 합니다.
 
 ![경로 브라우저](/help/sites-cloud/authoring/assets/path-browser.png)
 

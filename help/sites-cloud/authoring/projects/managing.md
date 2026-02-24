@@ -1,13 +1,14 @@
 ---
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 81%
 
 ---
@@ -122,11 +123,11 @@ ht-degree: 81%
 
 활성 및 비활성 프로젝트 간 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트를 표시 중입니다.
 
-![활성 프로젝트 전환 버튼](/help/sites-cloud/authoring/assets/projects-active.png)
+![활성 프로젝트 토글 버튼](/help/sites-cloud/authoring/assets/projects-active.png)
 
 아이콘 옆에 확인 x가 있으면 비활성 프로젝트를 표시 중입니다.
 
-![비활성 프로젝트 전환 버튼](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![비활성 프로젝트 토글 버튼](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## 프로젝트 비활성화 또는 활성화 {#making-projects-inactive-or-active}
 

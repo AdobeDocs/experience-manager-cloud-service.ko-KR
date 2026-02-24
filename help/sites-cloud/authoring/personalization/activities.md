@@ -1,13 +1,14 @@
 ---
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1964'
 ht-degree: 85%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 85%
 
 >[!TIP]
 >
->타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 &#x200B;](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
+>타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 ](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
 
 활동 콘솔에서 활동은 브랜드별로 구성됩니다. 브랜드 및 폴더를 사용하여 활동 조직을 체계화할 수 있습니다. **개인화**&#x200B;를 탭/클릭하고 **활동**&#x200B;을 탭/클릭하여 활동 콘솔로 이동합니다.
 
@@ -108,7 +109,7 @@ ht-degree: 85%
 1. AEM 타겟팅 또는 Adobe Target 경험 타겟팅을 사용하는 경우:
    1. **대상 선택**&#x200B;을 선택하고 경험이 타겟팅하는 세그먼트를 선택합니다.
    1. **경험 추가**&#x200B;를 선택하고 이름을 입력한 다음 **확인**&#x200B;을 선택합니다.
-   1. **다음**&#x200B;을 선택합니다.
+   1. **다음**을 선택합니다.
 Adobe Target A/B 테스트를 사용하는 경우:
    1. 대상자 상자에서 연필을 선택하여 대상자를 선택합니다.
    1. **경험 추가**&#x200B;를 선택하고 이름을 입력한 다음 **확인**&#x200B;을 선택합니다.
@@ -143,7 +144,7 @@ Adobe Target A/B 테스트를 사용하는 경우:
 
    ![활동 콘솔에서 게시](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. 게시하려면 **Publish**&#x200B;을(를) 선택하십시오. 게시를 취소하려면 **게시 취소**&#x200B;를 선택하십시오. 활동이 게시되거나 게시 취소되고, 활동 콘솔에서 활동 상태가 변합니다(새로 고침이 필요할 수 있음).
+1. 게시하려면 **게시**&#x200B;를 선택하십시오. 게시를 취소하려면 **게시 취소**&#x200B;를 선택하십시오. 활동이 게시되거나 게시 취소되고, 활동 콘솔에서 활동 상태가 변합니다(새로 고침이 필요할 수 있음).
 
 ## 작성 및 게시 인스턴스에서의 활동 {#activities-on-author-and-publish-instances}
 

@@ -1,13 +1,14 @@
 ---
 title: AEM 페이지 편집기
 description: AEM 페이지 편집기는 콘텐츠를 작성하는 데 유용한 도구입니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1437'
 ht-degree: 39%
 
 ---
@@ -49,7 +50,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 자산 브라우저, 구성 요소 브라우저 및 콘텐츠 트리를 보유하는 [사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)을 여닫습니다.
 
-![사이드 패널 전환](assets/page-editor-side-panel-toggle.png)
+![사이드 패널 토글](assets/page-editor-side-panel-toggle.png)
 
 #### 페이지 정보 {#page-information}
 

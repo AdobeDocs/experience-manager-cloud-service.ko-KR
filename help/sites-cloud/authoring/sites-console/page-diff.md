@@ -1,13 +1,14 @@
 ---
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 둘 사이의 차이점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '641'
 ht-degree: 91%
 
 ---
@@ -31,9 +32,9 @@ ht-degree: 91%
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
 * [버전](/help/sites-cloud/authoring/sites-console/page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
-* [&#128279;](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
 * [론치](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
-* [&#128279;](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 

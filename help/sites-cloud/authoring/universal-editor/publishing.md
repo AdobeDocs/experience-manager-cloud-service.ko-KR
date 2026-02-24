@@ -1,13 +1,14 @@
 ---
 title: 범용 편집기로 콘텐츠 게시
 description: 범용 편집기가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐츠를 처리하는 방법에 대해 살펴보세요.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '569'
 ht-degree: 33%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 33%
 
 콘텐츠 게시 취소는 콘텐츠 게시와 유사한 방식으로 작동합니다. 콘텐츠 작성자가 게시에서 콘텐츠를 제거할 준비가 되면 범용 편집기의 도구 모음에서 줄임표 아이콘을 탭하거나 클릭한 다음 **게시 취소**&#x200B;를 탭하거나 클릭합니다.
 
-[콘텐츠를 게시할 때와 동일한 방법으로 콘텐츠 게시를 취소할 수 있습니다.미리 보기 인스턴스에서 게시 취소(사용 가능한 경우) 및 게시 취소에 포함할 항목을 포함하는 &#x200B;](#publishing-content).
+[콘텐츠를 게시할 때와 동일한 방법으로 콘텐츠 게시를 취소할 수 있습니다.미리 보기 인스턴스에서 게시 취소(사용 가능한 경우) 및 게시 취소에 포함할 항목을 포함하는 ](#publishing-content).
 
 ## 사이트 콘솔에서 게시 및 게시 취소 {#publishing-sites-console}
 

@@ -1,14 +1,15 @@
 ---
 title: 론치를 사용하여 향후 상태 미리보기
 description: 타임워프를 사용하여 론치를 기반으로 하는 콘텐츠를 볼 수 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 96%
 
 ---
 

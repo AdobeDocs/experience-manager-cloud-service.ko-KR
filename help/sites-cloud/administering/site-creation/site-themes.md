@@ -3,12 +3,13 @@ title: 사이트 테마
 description: AEM 사이트 테마를 사용하여 게시 게재를 사용한 기존 AEM 작성 프로젝트의 사이트 스타일 및 디자인을 맞춤화하는 방법에 대해 알아봅니다.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 72%
+source-wordcount: '394'
+ht-degree: 71%
 
 ---
 

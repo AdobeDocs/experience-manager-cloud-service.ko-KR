@@ -3,11 +3,12 @@ title: 콘텐츠 조각 콘솔에서 Assets 보기 및 관리
 description: Adobe Experience Manager as a Cloud Service의 콘텐츠 조각 콘솔에서 Assets을 보고 관리하는 방법을 알아봅니다.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -49,7 +50,7 @@ ht-degree: 11%
 * [폴더 만들기](/help/assets/manage-digital-assets.md#creating-folders)
 * [자산 업로드](/help/assets/add-delete-assets-view.md)
 * 보기 유형(목록, 격자, 갤러리, 폭포)을 구성하고 적절한 경우 열을 표시합니다
-* 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 하나 이상의 선택한 Assets에 대해 다음 작업을 수행할 수도 있습니다.
 

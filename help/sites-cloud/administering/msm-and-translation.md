@@ -3,18 +3,19 @@ title: 다중 사이트 관리자 및 번역
 description: 프로젝트 간 콘텐츠를 재사용하고 AEM의 다국어 웹 사이트를 관리하는 방법에 대해 알아봅니다.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 99%
 
 ---
 
 # 다중 사이트 관리자 및 번역 {#msm-and-translation}
 
-Adobe Experience Manager의 내장 다중 사이트 관리자 및 번역 도구는 콘텐츠 현지화를 간소화합니다.
+Adobe Experience Manager의 기본 제공 다중 사이트 관리자 및 번역 도구는 콘텐츠 현지화를 간소화합니다.
 
 * 다중 사이트 관리자(MSM) 및 Live Copy 기능을 사용하면 다양한 변형을 활용함과 동시에 여러 지역에서 동일한 사이트 콘텐츠를 사용할 수 있습니다.
    * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm/overview.md)

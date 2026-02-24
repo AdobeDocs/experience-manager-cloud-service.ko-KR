@@ -1,13 +1,14 @@
 ---
 title: AEM 페이지 편집기를 사용하여 페이지 컨텐츠 편집
 description: AEM 페이지 편집기는 콘텐츠를 작성하는 데 유용한 도구입니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 34%
 
 ---

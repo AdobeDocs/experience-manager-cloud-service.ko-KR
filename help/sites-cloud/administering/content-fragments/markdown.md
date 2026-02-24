@@ -3,11 +3,12 @@ title: Markdown
 description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 만들 수 있도록 하는 방법을 이해합니다.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 77%
 
 ---
@@ -126,7 +127,7 @@ ht-degree: 77%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 목록을 만들려면 목록에 있는 항목 앞에 &ast;(별표) 기호를 사용하십시오. 예:
+순서가 없는 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast;(별표) 기호를 사용하십시오. 예:
 
     `* item in list`
 

@@ -1,14 +1,15 @@
 ---
 title: 페이지 속성
 description: 페이지가 가질 수 있는 다양한 속성과 페이지 동작을 제어하는 방법 및 페이지 관리 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2144'
 ht-degree: 34%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 34%
 
 * **제목** - SEO 목적으로 페이지 메타 제목과 페이지 콘텐츠에 표시되는 제목을 정의합니다(재정의되지 않은 경우).
 
-   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[&#x200B; 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[ 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 필수 필드입니다.
 
 * **태그** - SEO 용도로 페이지 메타 태그를 정의합니다.
@@ -56,7 +57,7 @@ ht-degree: 34%
 
 ### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **브랜드 슬러그**
 
@@ -175,7 +176,7 @@ ht-degree: 34%
 * **표준 URL** - 페이지의 표준 URL을 덮어쓰는 데 사용됨
    * 을 비워 두면 페이지의 URL은 표준 URL입니다.
 
-* **로봇 태그** - 드롭다운을 사용하여 검색 엔진 크롤러의 동작을 제어할 로봇 태그를 선택합니다.
+* **로봇 태그** - 드롭다운을 사용하여 검색 엔진 웹 크롤러의 동작을 제어할 로봇 태그를 선택합니다.
    * 일부 옵션은 서로 충돌하며, 이 경우 보다 허용 가능한 옵션이 우선합니다.
 
 * **사이트 맵 생성** - 선택되면 이 페이지와 하위 항목에 대한 `sitemap.xml`이(가) 생성됩니다.
@@ -212,7 +213,7 @@ ht-degree: 34%
 * **ContextHub 경로** - [ContextHub 구성](/help/sites-cloud/authoring/personalization/contexthub.md)을 정의합니다.
 * **세그먼트 경로** - [세그먼트 경로](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)를 정의합니다.
 
-### 타깃팅 구성 {#targeting-config}
+### 타기팅 구성 {#targeting-config}
 
 * **브랜드** - [브랜드를 정의하여 타깃팅할 범위를 지정](/help/sites-cloud/authoring/personalization/targeted-content.md)
    * 이 옵션을 사용하려면 사용자 계정이 `Target Administrators` 그룹에 있어야 합니다.

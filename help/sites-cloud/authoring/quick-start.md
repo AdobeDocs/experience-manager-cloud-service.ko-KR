@@ -1,13 +1,14 @@
 ---
 title: 작성에 대한 빠른 시작 안내서
 description: 사이트 콘솔을 사용하여 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서를 보려면 여기에서 시작하십시오.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -96,11 +97,11 @@ AEM의 다른 위치에서 전역 탐색에 액세스하려면 AEM 화면의 왼
 
 ## 컨텐츠 게시 {#publishing}
 
-**Sites** 콘솔을 사용하여 콘텐츠를 변경했으면 콘텐츠를 게시할 수 있습니다. 게시하려는 콘텐츠를 선택하고 도구 모음에서 **빠른 Publish** 아이콘을 탭하거나 클릭합니다.
+**Sites** 콘솔을 사용하여 콘텐츠를 변경했으면 콘텐츠를 게시할 수 있습니다. 게시하려는 콘텐츠를 선택하고 도구 모음에서 **빠른 게시** 아이콘을 탭하거나 클릭합니다.
 
 ![빠른 게시](assets/getting-started-quick-publish.png)
 
-대화 상자에서 **Publish**&#x200B;을 다시 탭하거나 클릭하여 게시를 확인합니다.
+대화 상자에서 **게시**&#x200B;를 다시 탭하거나 클릭하여 게시를 확인합니다.
 
 ## 추가 리소스 {#additional-resources}
 

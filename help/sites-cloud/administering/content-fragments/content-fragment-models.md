@@ -3,11 +3,12 @@ title: 콘텐츠 조각 모델 정의
 description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각을 위한 기반 역할을 하여 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만드는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2223'
 ht-degree: 58%
 
 ---
@@ -88,7 +89,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
      ![필드 이동](assets/cf-cfmodels-move-field-icon.png)
 
-   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
+   * 모델에 필드를 추가하고(및 선택) 오른쪽 패널에 해당 특정 데이터 형식에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 특정 항목에 필요한 사항을 정의할 수 있습니다
 필드.
 
       * 설명이 따로 필요하지 않은 속성도 많습니다. 자세한 내용은 [속성(데이터 형식)](#properties)을 참조하세요.

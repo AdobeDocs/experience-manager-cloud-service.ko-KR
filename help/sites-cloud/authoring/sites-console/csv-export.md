@@ -1,14 +1,15 @@
 ---
 title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 94%
+source-wordcount: '203'
+ht-degree: 92%
 
 ---
 
@@ -60,5 +61,5 @@ CSV 내보내기를 만들려면:
    ![CSV 내보내기 옵션](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. 내보낼 필수 속성을 선택합니다.
-1. **만들기**&#x200B;를 선택합니다.
+1. **만들기**를 선택합니다.
    ![Excel에서 결과 CSV 내보내기](/help/sites-cloud/authoring/assets/csv-example.png)

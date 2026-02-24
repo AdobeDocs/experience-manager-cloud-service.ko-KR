@@ -3,11 +3,12 @@ title: 사이트 템플릿
 description: AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘텐츠를 미리 정의하여 사이트를 빠르게 생성할 수 있는 방법에 대해 알아봅니다.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 86%
 
 ---

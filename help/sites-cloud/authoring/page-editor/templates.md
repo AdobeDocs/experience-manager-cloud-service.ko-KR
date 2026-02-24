@@ -1,14 +1,15 @@
 ---
 title: 페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿
 description: 템플릿 편집기 를 사용하여 콘텐츠 작성자가 페이지 편집기로 편집할 수 있는 페이지를 만드는 데 사용할 수 있는 템플릿을 만들 수 있습니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
-ht-degree: 80%
+source-wordcount: '4421'
+ht-degree: 79%
 
 ---
 
@@ -95,7 +96,7 @@ ht-degree: 80%
 >
 >[국제화](/help/implementing/developing/extending/i18n/dev.md)되어야 하는 정보는 템플릿에 입력하지 마십시오.
 >
->로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용하십시오.
+>로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하십시오.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -210,7 +211,7 @@ ht-degree: 80%
 
 페이지가 렌더링될 때 템플릿이 참조되면 게시 환경에서 사용할 수 있도록 완전히 구성된 템플릿을 게시해야 합니다.
 
-**[템플릿 콘솔](/help/sites-cloud/administering/templates-console.md)**&#x200B;을 사용하는 Publish 템플릿입니다.
+**[템플릿 콘솔](/help/sites-cloud/administering/templates-console.md)**&#x200B;을 사용하여 템플릿을 게시합니다.
 
 ## 템플릿 편집 - 템플릿 작성자 {#editing-templates-template-authors}
 
@@ -518,7 +519,7 @@ ht-degree: 80%
 >
 >초기 콘텐츠는 콘텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 콘텐츠용이 아닙니다. 따라서 초기 콘텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
@@ -647,4 +648,4 @@ ht-degree: 80%
    >AEM은 더 이상 초안이 아닌 템플릿에서 구성 요소의 잠금 상태를 변경할 때 명시적인 경고를 제공합니다.
 
 1. 사이트 특정 템플릿에 대한 [자체 폴더 생성](#creating-a-template-folder-admin)
-1. **[템플릿 콘솔]**(/help/sites-cloud/administering/templates-console.md)에서 [템플릿을 Publish](#publishing-a-template-template-author)합니다.
+1. [템플릿 콘솔](#publishing-a-template-template-author)(/help/sites-cloud/administering/templates-console.md)에서 **[템플릿을 게시]**&#x200B;합니다.

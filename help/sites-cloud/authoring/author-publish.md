@@ -1,14 +1,15 @@
 ---
 title: 작성 및 게시 개념
-description: 작성자, 미리보기 및 게시 환경을 사용하여 AEM에서 작성하는 개념을 알아봅니다.
+description: 작성자, 미리보기 및 게시 환경을 사용하여 AEM에서 작성하는 개념에 대해 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 29%
+source-wordcount: '444'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 29%
 
 * 작성자 계층
 * 계층 미리 보기
-* Publish 계층
+* 계층 게시
 
 이러한 계층은 상호 작용하여 방문자가 액세스할 수 있도록 웹 사이트에서 컨텐츠를 사용할 수 있도록 합니다. 기본 워크플로우는 다음과 같습니다.
 

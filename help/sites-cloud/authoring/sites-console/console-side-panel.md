@@ -1,13 +1,14 @@
 ---
 title: 사이트 콘솔 사이드 패널
 description: AEM 사이트 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더 잘 이해하고 탐색하는 방법을 알아봅니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '834'
 ht-degree: 23%
 
 ---
@@ -112,7 +113,7 @@ ht-degree: 23%
 
 ![사이트 패널](assets/console-side-panel-site-paenl.png)
 
-패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 &#x200B;](/help/sites-cloud/administering/site-creation/site-rail.md)사이트 패널을 사용하여 사이트 테마 관리[를 참조하십시오](/help/sites-cloud/administering/site-creation/site-themes.md).
+패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 ](/help/sites-cloud/administering/site-creation/site-rail.md)사이트 패널을 사용하여 사이트 테마 관리[를 참조하십시오](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 테마 기반 사이트 생성을 활성화하도록 프론트엔드 파이프라인을 아직 설정하지 않은 경우 사이드 패널에서 해당 옵션을 제공합니다.
 

@@ -3,11 +3,12 @@ title: MSM 모범 사례
 description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다중 사이트 관리자 시작 및 운영에 도움이 되는 모범 사례에 대해 알아봅니다.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1420'
 ht-degree: 94%
 
 ---

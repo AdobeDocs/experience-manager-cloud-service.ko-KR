@@ -3,12 +3,13 @@ title: 사이트 패널을 사용하여 사이트 테마 관리
 description: 게시 게재를 사용한 기존 AEM 작성 프로젝트의 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 패널의 강력한 기능에 대해 알아봅니다.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '613'
 ht-degree: 36%
 
 ---

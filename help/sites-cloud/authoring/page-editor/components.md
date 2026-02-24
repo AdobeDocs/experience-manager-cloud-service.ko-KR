@@ -1,14 +1,15 @@
 ---
 title: 구성 요소
 description: 구성 요소는 AEM에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 89%
+source-wordcount: '341'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +43,11 @@ ht-degree: 89%
 
 ## 핵심 구성 요소 {#core-components}
 
-[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 이 구성 요소는 AEM 모범 사례를 사용하여 빌드되었으며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
-WCM 핵심 구성 요소와 함께 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features)를 사용할 수도 있습니다. 이러한 핵심 구성 요소는 [AEM Sites 페이지에 양식을 작성하거나 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)할 수 있는 손쉬운 표준 방법을 제공합니다
+WCM 핵심 구성 요소와 함께 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)를 사용할 수도 있습니다. 이러한 핵심 구성 요소는 [AEM Sites 페이지에 양식을 작성하거나 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)할 수 있는 손쉬운 표준 방법을 제공합니다
 
 ### 템플릿 구성 {#configuring-templates}
 
