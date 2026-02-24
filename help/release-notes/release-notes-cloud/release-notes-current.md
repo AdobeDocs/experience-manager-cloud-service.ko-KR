@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 94207e0c93106cf2b0b9d4fdbbb22af05b8f5ed1
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 41%
@@ -38,7 +38,7 @@ ht-degree: 41%
 
 2026년 1월 릴리스 개요 비디오를 통해 2026.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479796/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -153,7 +153,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API 사용 중단 {#java-api-deprecation}
 
-2/30/2026 제거를 대상으로 하는 더 이상 사용되지 않는 API는 코드에서 더 이상 사용되지 않아야 합니다. 배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오. 중요 날짜:
+2026/2/26/2026 제거를 대상으로 하는 더 이상 사용되지 않는 API는 코드에서 더 이상 사용되지 않아야 합니다. 배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오. 중요 날짜:
 
 * **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 * **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
