@@ -15,10 +15,10 @@ ht-degree: 87%
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Experience Cloud의 일부인 [Adobe Target](https://experienceleague.adobe.com/en/docs/target)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service를 통합하려면 다음 작업을 수행하십시오.
+Adobe Experience Cloud의 일부인 [Adobe Target](https://experienceleague.adobe.com/ko/docs/target)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service를 통합하려면 다음 작업을 수행하십시오.
 
 * Touch UI를 사용하여 AEM as a Cloud Service에 Target 구성을 만듭니다(IMS 구성 필요).
-* Adobe Target을 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)에 확장 기능으로 추가하고 구성합니다.
+* Adobe Target을 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ko)에 확장 기능으로 추가하고 구성합니다.
 
 Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, “경험 타겟팅”을 위해서는 Launch와의 통합이 필요합니다.
 
@@ -30,7 +30,7 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 >[!NOTE]
 >
->Adobe Target 설명서를 참조하십시오. [Target과 Adobe Experience Manager AEM 통합](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
+>Adobe Target 설명서를 참조하십시오. [Target과 Adobe Experience Manager AEM 통합](https://experienceleague.adobe.com/ko/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Adobe Target 구성 만들기 {#create-configuration}
 
@@ -44,7 +44,7 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 ### IMS 구성 {#ims-configuration}
 
-Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(ID 관리 시스템) 구성이 필요합니다. Target IMS 구성은 Target이 프로비저닝된 후에 만들어야 합니다. Target IMS 구성을 만드는 방법에 대해 알아보려면 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 및 비디오 [Experience Platform Launch와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)을 참조하십시오.
+Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(ID 관리 시스템) 구성이 필요합니다. Target IMS 구성은 Target이 프로비저닝된 후에 만들어야 합니다. Target IMS 구성을 만드는 방법에 대해 알아보려면 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 및 비디오 [Experience Platform Launch와 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ko)을 참조하십시오.
 
 >[!NOTE]
 >
