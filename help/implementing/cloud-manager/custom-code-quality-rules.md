@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
+source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4427'
+source-wordcount: '4441'
 ht-degree: 63%
 
 ---
@@ -522,6 +522,8 @@ public void doThis(Resource resource) {
 Experience Manager API 영역은 사용을 중지해야 하는 API를 식별하기 위해 지속적으로 수정되고 있습니다. 이러한 API는 더 이상 사용되지 않으며 제거 날짜로 표시됩니다.
 
 제거 날짜가 가까워질수록 이 규칙 위반의 심각도는 높아진다. 이러한 API 사용은 안전한 대체 요소로 대체해야 합니다.
+
+더 이상 사용되지 않는 API 사용을 제거하는 방법에 대한 지침은 [이 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)을(를) 참조하십시오.
 
 ### 더 이상 사용되지 않는 Experience Manager API를 사용하지 않음 {#sonarqube-aem-deprecated}
 
