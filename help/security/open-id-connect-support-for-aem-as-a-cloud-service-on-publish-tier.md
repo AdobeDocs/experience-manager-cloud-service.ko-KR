@@ -4,10 +4,10 @@ description: 게시 계층에서 AEM as a Cloud Service에 대한 Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 71%
+source-wordcount: '2153'
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ IdP 구성의 정보:
 
 ### SlingUserInfoProcessor 구성 {#configure-slinguserinfoprocessor}
 
-1. 구성 파일을 생성합니다. 이 예시에서는 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`을 사용합니다. `azure` 접미사는 고유 식별자여야 합니다. 아래 구성 파일의 예제를 확인해 보십시오.
+1. 구성 파일을 생성합니다. 이 예시에서는 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`을 사용합니다. `azure` 접미사는 고유 식별자여야 합니다. 아래 구성 파일의 예제를 확인해 보십시오.
 
    ```
    {
@@ -208,12 +208,14 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 ### 옵션 1 - 로컬 그룹
 
 외부 그룹은 이미 필요한 ACL이 있는 로컬 그룹의 멤버로 추가할 수 있습니다.
+
 * 외부 그룹은 저장소에 있어야 합니다. 이 그룹은 해당 그룹에 속한 사용자가 처음으로 로그인할 때 자동으로 발생합니다.
 * 로컬 그룹이 작성자 및 게시 환경 모두에 존재하므로 CUG(폐쇄형 사용자 그룹)를 사용 중인 경우 이 옵션이 일반적으로 선호됩니다.
 
 ### 옵션 2 - RepoInit를 통해 외부 그룹에 직접 ACL 사용
 
 ACL은 RepoInit 스크립트를 사용하여 외부 그룹에 직접 적용할 수 있습니다.
+
 * 이러한 접근법은 더욱 효율적이며 CUG들이 사용되지 않을 때 선호된다.
 * 다음 예제에서는 외부 그룹에 읽기 권한을 할당하는 RepoInit 구성을 보여 줍니다. `ignoreMissingPrincipal` 옵션을 사용하면 그룹이 저장소에 아직 없는 경우에도 ACL을 만들 수 있습니다.
 
@@ -352,14 +354,58 @@ ID 토큰에서 그룹 클레임을 활성화하려면 Microsoft Azure Portal의
 }
 ```
 
+## 인증 후 사용자 지정 리디렉션 {#custom-redirect-after-authentication}
+
+기본적으로 OIDC 인증에 성공하면 사용자가 원래 요청한 URL로 다시 리디렉션됩니다. 그러나 `redirect` 쿼리 매개 변수를 사용하여 이 동작을 사용자 지정할 수 있습니다.
+
+### 리디렉션 매개 변수 사용
+
+인증을 시작할 때 인증 요청에 `redirect` 매개 변수를 추가하여 사용자 지정 리디렉션 URL을 지정할 수 있습니다.
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+이 예제에서는 인증에 성공하면 사용자가 원래 요청된 페이지가 아닌 `/content/wknd/us/en/welcome`(으)로 리디렉션됩니다.
+
+### 보안 제한
+
+보안상의 이유로 `redirect` 매개 변수에는 다음과 같은 제한이 있습니다.
+
+* **상대 경로여야 함**: 리디렉션 URL은 `/`(예: `/content/mysite/dashboard`)로 시작해야 합니다.
+* **사이트 간 리디렉션 없음**: 절대 URL(예: `https://external-site.com`)은 허용되지 않습니다.
+* **프로토콜 관련 URL 없음**: 프로토콜 관련 리디렉션을 방지하기 위해 `//`(으)로 시작하는 URL이 거부되었습니다.
+
+잘못된 리디렉션 URL이 제공되면 인증이 실패하고 오류가 발생합니다.
+
+### 예시 사용 사례
+
+1. **로그인 후 시작 페이지**: 첫 로그인 후 사용자를 개인 설정된 시작 페이지로 리디렉션합니다.
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **대시보드 리디렉션**: 인증 후 사용자를 특정 대시보드로 보냅니다.
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **딥링크**: 사용자가 인증한 후 특정 리소스에 액세스할 수 있도록 허용합니다.
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## Saml Authentication Handler에서 Oidc Authentication Handler로 마이그레이션하는 방법
 
-AEM이 이미 SAML 인증 핸들러로 구성되어 있고 사용자가 [데이터 동기화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화된 저장소에 있는 경우 원래 SAML 사용자와 새 OIDC 사용자 간에 충돌이 발생할 수 있습니다.
+AEM이 이미 SAML 인증 핸들러로 구성되어 있고 사용자가 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화된 저장소에 있는 경우 원래 SAML 사용자와 새 OIDC 사용자 간에 충돌이 발생할 수 있습니다.
 
-1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)를 구성하고 `idpNameInPrincipals`SlingUserInfoProcessor[&#x200B; 구성에서 &#x200B;](#configure-slinguserinfoprocessor)을(를) 사용하도록 설정하십시오.
+1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)를 구성하고 `idpNameInPrincipals`SlingUserInfoProcessor[ 구성에서 ](#configure-slinguserinfoprocessor)을(를) 사용하도록 설정하십시오.
 1. 외부 그룹에 대해 [ACL을 설정](#configure-acl-for-external-groups)합니다.
 1. 사용자로부터 로그인하면 saml 인증 핸들러로 만든 이전 사용자를 삭제할 수 있습니다.
 
 >[!NOTE]
->SAML 인증 처리기가 비활성화되고 OIDC 인증 처리기가 활성화되면 [데이터 동기화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화되지 않으면 기존 세션이 유효하지 않게 됩니다. 사용자를 다시 인증해야 하므로 저장소에 새 OIDC 사용자 노드가 생성됩니다.
+>SAML 인증 처리기가 비활성화되고 OIDC 인증 처리기가 활성화되면 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화되지 않으면 기존 세션이 유효하지 않게 됩니다. 사용자를 다시 인증해야 하므로 저장소에 새 OIDC 사용자 노드가 생성됩니다.
 
