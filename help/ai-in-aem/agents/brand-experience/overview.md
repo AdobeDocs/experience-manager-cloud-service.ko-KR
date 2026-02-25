@@ -3,13 +3,13 @@ title: 브랜드 경험 에이전트
 description: Brand Experience Agent가 업데이트, 통신 생성 및 문제 해결에 숨겨진 중요한 운영 작업을 흡수하여 진화하는 디지털 경험에서 발생하는 마찰을 제거하고 팀이 오늘날의 AI 시대에 보다 빠르고 더 높은 신뢰도로 변경 사항을 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 722be0dda9eebe7337eee6b01a428e788fd5a0a7
+exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
+source-git-commit: 4ad099edc7d580148a401f9a61c9536c1cb88346
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
-
 
 # 브랜드 경험 에이전트 {#brand-experience-agent}
 
@@ -60,7 +60,5 @@ assets — 와 함께 사용할 수 있습니다. 이 기능 에이전트는 경
 
 ## 활성화 {#activation}
 
-Brand Experience Agent를 활성화하고 액세스 권한을 얻으려면 다음 방법 중 하나를 통해 Adobe에 문의해야 합니다.
+[플레이그라운드](https://www.aem.live/developer/aem-playground)를 통해 AEM 에이전트를 탐색하거나 CSM 또는 TAM과 연결하여 Agentic SKU를 통한 액세스에 대해 논의할 수 있습니다.
 
-* `experience-production-agent@adobe.com`에게 전자 메일 전송 중
-* 또는 계정 팀에 연락하는 중
