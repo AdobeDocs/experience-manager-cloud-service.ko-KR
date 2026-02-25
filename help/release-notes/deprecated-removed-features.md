@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 80%
+source-wordcount: '3912'
+ht-degree: 79%
 
 ---
 
@@ -160,6 +160,12 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>2/26/2026</td>
   </tr>
   <tr>
+    <td>org.slf4j.event</td>
+    <td>AEM as a Cloud Service는 이 내부 slf4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/11/2022</td>
+    <td>2/26/2026</td>
+  </tr>
+  <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1은 2015년에 서비스가 종료되었으며 더 이상 지원되지 않습니다. <a href="#org.apache.log4j">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
@@ -170,22 +176,10 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>5/15/2023</td>
     <td>2/26/2026</td>
   </tr>
-  <tr>
-    <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service는 이 내부 slf4j API를 지원되지 않습니다. <a href="#org.slf4j">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/11/2022</td>
-    <td>2/26/2026</td>
-  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>이미지와 비디오에서 메타데이터를 추출하려면 Cloud Service의 Asset Compute, Apache POI 또는 Apache Tika를 통해 수행해야 합니다.</td>
     <td>9/17/2024</td>
-    <td>2/26/2026</td>
-  </tr>
-  <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
-    <td>9/23/2024</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
@@ -200,10 +194,17 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>4/30/2021</td>
     <td>2/26/2026</td>
   </tr>
-<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
+    <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
+    <td>9/23/2024</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>10/31/2022</td>
-    <td>2/26/2026</td>
+    <td>TBD</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -247,9 +248,39 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>TBD</td>
   </tr>
   <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>com.adobe.granite.xss</td>
     <td>대신 org.apache.sling.xss를 사용하십시오.</td>
     <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
+    <td>이 API는 더 이상 사용되지 않습니다.</td>
+    <td>2024/07/10</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.mailer.commons</td>
+    <td>이 API는 commons-lang(2021년 이후 더 이상 사용되지 않음)에 따라 더 이상 사용되지 않습니다.</td>
+    <td>11/30/2025</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.httpcache.api</td>
+    <td>이 API는 더 이상 지원되지 않습니다.</td>
+    <td>2026년 1월 1일</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.webdav.client.methods</td>
+    <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
+    <td>2/13/2026</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.osgi.service.http</td>
+    <td>OSGi 서비스 HTTP API는 더 이상 사용되지 않습니다. 대신 OSGi 서블릿 화이트보드를 사용하십시오.</td>
+    <td>2024년 5월 1일</td>
     <td>TBD</td>
   </tr>
   </tbody>
@@ -343,7 +374,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
-사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
 
 시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
 
@@ -353,7 +384,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 현재 더 이상 사용되지 않는 API가 필요한 타사 라이브러리를 사용하는 경우 해당 타사 라이브러리의 최신 버전으로 업데이트해 보십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
