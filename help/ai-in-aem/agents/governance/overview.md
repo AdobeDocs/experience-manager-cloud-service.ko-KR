@@ -3,7 +3,8 @@ title: 거버넌스 에이전트 개요
 description: AEM Governance Agent가 AEM 전반에서 브랜드 무결성 및 규정 준수를 보호하는 방법을 알아봅니다
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ Content Hub에서 거버넌스 에이전트는 적절한 사람만 적절한 시
 * *어떤 자산이 최근에 만료되었습니까?*
 * *만료 날짜가 없는 자산 찾기*
 * *앞으로 14일 후에 만료될 예정인 /content/dam/products의 모든 에셋 표시*
-

@@ -4,7 +4,7 @@ description: Experience 현대화 에이전트가 AI의 도움을 받아 Edge De
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
+source-git-commit: f286215d7094bffbec732c9ba6149d6bab168fc7
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Experience 현대화 에이전트가 AI의 도움을 받아 Edge Delivery Servic
 
 >[!NOTE]
 >
->경험 현대화 에이전트가 [경험 프로덕션 에이전트의 이전 마이그레이션 기술을 대체합니다.](/help/ai-in-aem/agents/production/overview.md)
+>경험 현대화 에이전트가 [Brand Experience Agent의 이전 마이그레이션 기술을 대체합니다.](/help/ai-in-aem/agents/brand-experience/overview.md)
 
 ## 소개 {#introduction}
 
