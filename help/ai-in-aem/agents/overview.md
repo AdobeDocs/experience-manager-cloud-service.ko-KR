@@ -4,9 +4,9 @@ description: 컨텐츠 생성 속도를 높이고 변경 사항을 자동으로 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,15 @@ ht-degree: 0%
 >* 현재 AEM 6.5 및 AEM 6.5 LTS에서는 사용할 수 없습니다.
 >* AEM 온프레미스 및 Managed Services에서는 사용할 수 없습니다.
 
->[!IMPORTANT]
->
->에이전트를 사용하려면 Explorer 프로그램에 등록해야 합니다. AEM 에이전트 탐색기 프로그램 [여기](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)에서 자세한 내용을 볼 수 있습니다.
+## 에이전트 액세스 {#accessing-agents}
+
+에이전트에 액세스할 수 있는 세 가지 옵션이 있습니다.
+
+1. 단계적으로 출시되는 [구매 전 시도 프로그램](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)을 통해 AEM 에이전트에 액세스하는 옵션이 있을 수 있습니다. CSM 또는 TAM은 조직의 가용성을 확인하는 데 도움이 될 수 있습니다.
+1. 평가판을 통해 AEM 에이전트 [을(를) 살펴봅니다.](https://www.aem.live/developer/aem-playground)
+1. CSM 또는 TAM과 연결하여 Agentic SKU를 통한 액세스가 로드맵 및 평가 계획에 적합한지 논의하십시오.
+
+초기 릴리스 시 새로운 기술을 사용할 수 있게 되면 추가로 참여하여 피드백을 공유할 수 있는 기회를 제공할 예정입니다. 업데이트를 위해 [이 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)를 시청하는 것이 좋습니다.
 
 ## 브랜드 경험 에이전트 {#brand-experience-agent}
 
