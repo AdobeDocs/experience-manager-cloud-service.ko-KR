@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.02.19 릴리스 정보
-description: 다음은 범용 편집기 2026.02.19 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.02.26 릴리스 정보
+description: 다음은 범용 편집기 2026.02.26 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 28%
+source-wordcount: '221'
+ht-degree: 32%
 
 ---
 
 
-# 범용 편집기 2026.02.19 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.02.26 릴리스 정보 {#release-notes}
 
-유니버설 편집기 2026년 2월 19일 릴리스의 릴리스 정보입니다.
+유니버설 편집기의 2026년 2월 26일 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ ht-degree: 28%
 
 ## 새로운 기능 {#what-is-new}
 
-* RTE가 개선되었습니다.
-   * [컨텍스트 RTE의 &#x200B;](/help/implementing/universal-editor/configure-rte.md#common-action-options)에서 도구 모음 항목을 숨길 수 있습니다.
-   * [테이블 내부의 텍스트를 단락](/help/implementing/universal-editor/configure-rte.md#table-actions)과(와) 함께 줄 바꿈할 수 있습니다.
-   * 이제 [지원되지 않는 HTML 태그](/help/implementing/universal-editor/configure-rte.md#unsupported-html) 태그를 RTE에서 유지할 수 있습니다.
-   * 이제 RTE 논리가 별도의 파일에서 제공됩니다.
-   * 이제 RTE를 사용하여 [테이블을 만들 수 있습니다](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
-* 레이블이 설정되지 않은 경우 이제 구성 요소 정의의 구성 요소 제목이 사용됩니다.
-* `setEditorMode`은(는) 이제 확장을 통해 사용할 수 있습니다.
+* 개발자가 모델/필터/구성 요소 정의 파일을 생성하는 데 도움이 되도록 모든 스키마 필드에 설명이 추가되었습니다.
+* 이제 콘텐츠 조각에 대한 다중 필드 업데이트가 컨텍스트 내 편집에서 지원됩니다.
+
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -43,7 +38,7 @@ ht-degree: 28%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 이제 RTE 종단점이 바로 편집기에 제공됩니다.
-* 중첩된 필드를 편집해도 해당 구조의 피어 항목이 더 이상 덮어쓰이지 않습니다.
-* 필수 RTE 필드는 더 이상 비워 둘 수 없습니다.
-* 서식 지정 후 링크를 추가할 때 원본 위치 서식이 더 이상 잘못 적용되지 않습니다.
+* 편집기에서 더 이상 콘텐츠가 도착하기 전에 콘텐츠를 `{}`(으)로 설정하지 않으므로 특정 상황에서 데이터 손실을 방지합니다.
+* 필드가 포커스에 있을 때 데이터의 지속성이 더 강력해졌습니다.
+* 왼쪽 패널에서 편집한 다음 편집기 창에서 다른 항목을 선택할 때 특정 상황에서 변경 사항이 더 이상 손실되지 않습니다.
+* OpenAPI 끝점을 사용할 때 콘텐츠 조각의 RTE 필드에 대한 지속성 문제가 수정되었습니다.
