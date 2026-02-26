@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
+source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3918'
 ht-degree: 79%
 
 ---
@@ -198,90 +198,90 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
     <td>9/23/2024</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td><a href="https://johnzon.apache.org/index.html">javax.json</a>의 Apache Johnzon 구현이 권장되며 사용해야 합니다. </td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2는 유지 관리 모드입니다. 대신 Commons Lang 3을 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3은 유지 관리 모드입니다. 대신 Commons Collections 4를 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service는 이 API를 지원하지 않습니다.</td>
-    <td>5/15/2023</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
-    <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>대신 org.apache.sling.xss를 사용하십시오.</td>
     <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>이 API는 더 이상 사용되지 않습니다.</td>
     <td>2024/07/10</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>이 API는 commons-lang(2021년 이후 더 이상 사용되지 않음)에 따라 더 이상 사용되지 않습니다.</td>
     <td>11/30/2025</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>이 API는 더 이상 지원되지 않습니다.</td>
     <td>2026년 1월 1일</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>2/13/2026</td>
-    <td>TBD</td>
+    <td>2026년 9월 30일</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
+    <td>12/12/2023</td>
+    <td>2026년 9월 30일</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2는 유지 관리 모드입니다. 대신 Commons Lang 3을 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/30/2021</td>
+    <td>2027년 3월 31일(임시)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3은 유지 관리 모드입니다. 대신 Commons Collections 4를 사용해야 합니다. <a href="#apache.commons">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>4/30/2021</td>
+    <td>2027년 3월 31일(임시)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td><a href="https://johnzon.apache.org/index.html">javax.json</a>의 Apache Johnzon 구현이 권장되며 사용해야 합니다. </td>
+    <td>4/30/2021</td>
+    <td>2027년 3월 31일(임시)</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>2027년 12월 31일(잠정)</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service는 이 API를 지원하지 않습니다.</td>
+    <td>5/15/2023</td>
+    <td>2027년 12월 31일(잠정)</td>
   </tr>
   <tr>
     <td>org.osgi.service.http</td>
     <td>OSGi 서비스 HTTP API는 더 이상 사용되지 않습니다. 대신 OSGi 서블릿 화이트보드를 사용하십시오.</td>
     <td>2024년 5월 1일</td>
-    <td>TBD</td>
+    <td>2027년 12월 31일(잠정)</td>
   </tr>
   </tbody>
 </table>
@@ -374,7 +374,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
-사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
 
 시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
 
@@ -384,7 +384,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 현재 더 이상 사용되지 않는 API가 필요한 타사 라이브러리를 사용하는 경우 해당 타사 라이브러리의 최신 버전으로 업데이트해 보십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
