@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
+source-git-commit: f360c1b99c3d057c9b5f96cc2680248be4a296e3
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 41%
@@ -28,7 +28,7 @@ ht-degree: 41%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2026.1.0) 일자는 2026년 1월 29일 금요일입니다. 다음 기능 릴리스(2026.2.0)는 2026년 2월 26일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2026.1.0) 일자는 2026년 1월 29일 금요일입니다. 다음 기능 릴리스(2026.2.0)는 2026년 3월 3일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -38,7 +38,7 @@ ht-degree: 41%
 
 2026년 1월 릴리스 개요 비디오를 통해 2026.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479796/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
