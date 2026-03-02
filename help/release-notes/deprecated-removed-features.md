@@ -386,7 +386,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 더 이상 사용되지 않는 API의 자체 버전(예: Guava의 자체 버전)을 배포하기로 결정한 경우 이 API를 사용하는 모든 번들이 해당 버전에 연결되는지 확인하십시오. 현재 Cloud Service에 포함된 것과 동일한 주요 버전을 배포하기로 결정하는 경우 추가 작업이 필요하지 않습니다. 그러나 권장 사항을 따르고 최신 버전을 배포하는 경우 Maven 프로젝트를 조정해야 합니다. `aem-sdk-api` 전에 해당 라이브러리를 새 종속성으로 포함하십시오. 이렇게 하면 코드가 새 버전에 배선됩니다. 변경한 후에는 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 통해 더 이상 사용되지 않는 API 사용에 더 이상 플래그가 지정되지 않는지 확인하십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 ](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
