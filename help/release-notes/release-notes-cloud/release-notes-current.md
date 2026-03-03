@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f360c1b99c3d057c9b5f96cc2680248be4a296e3
+source-git-commit: 0ddc7c0b1dc7dd3350dd91576011dc26f57afa51
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 41%
+source-wordcount: '1944'
+ht-degree: 34%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 41%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2026.1.0) 일자는 2026년 1월 29일 금요일입니다. 다음 기능 릴리스(2026.2.0)는 2026년 3월 3일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 기능 릴리스(2026.2.0) 일자는 2026년 3월 3일 수요일입니다. 다음 기능 릴리스(2026.3.0)는 2026년 3월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -36,9 +36,9 @@ ht-degree: 41%
 
 ## 릴리스 비디오 {#release-video}
 
-2026년 1월 릴리스 개요 비디오를 통해 2026.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2026년 2월 릴리스 개요 비디오를 통해 2026.2.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479796/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -82,76 +82,52 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 [Cloud Manager 베타 프로그램](/help/implementing/cloud-manager/release-notes/current.md)을 참조하세요.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### 컨텐츠 MCP 서버 {#content-MCP}
-
-AEM Cloud Service에는 이제 **콘텐츠 MCP 서버**&#x200B;가 포함되어 있으며, MCP 호환 도구를 통해 AI 기반 경험이 AEM 콘텐츠와 작동하는 표준화된 방법을 제공합니다.
-
-채팅 앱 및 에이전트 플랫폼에서 작업하는 개발자 및 고급 사용자는 AEM을 사용자 정의 지표 및 자동화에 연결할 수 있으므로 콘텐츠 작업은 전체적인 비즈니스 워크플로의 일부가 됩니다.
-
-AEM은 두 개의 서버를 제공합니다.
-
-1. **읽기 전용 콘텐츠 MCP 서버** - 콘텐츠를 안전하게 검색하기 위한
-1. **콘텐츠 읽기/쓰기 MCP 서버** - 콘텐츠 변경
-
-이러한 MCP 서버에는 **페이지**, **콘텐츠 조각** 및 **Assets** 작업 도구가 포함되어 있으며 **ChatGPT**, **클라우드**, **커서** 및 **Microsoft Copilot Studio** MCP 클라이언트에서 사용할 수 있습니다.
-
-자세한 내용은 [AEM Cloud Service와 MCP 사용](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)을 참조하세요. 질문이나 피드백이 필요하면 [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)로 전자 메일을 보내세요.
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI 검색**
+**Adobe Express의 AEM Assets에 액세스할 수 있는 콘텐츠 관리자**
 
-AI 검색은 사용자 쿼리 뒤의 의미와 의도를 파악하여 기존의 키워드 일치를 넘어서는 지능적인 컨텍스트 인식 검색 경험을 제공합니다. AI와 머신 러닝을 기반으로, 쿼리가 다르게 표현되거나, 철자가 틀리거나, 동의어를 사용하거나, 다른 언어로 제출되는 경우에도 보다 정확한 결과를 제공하여 사용자가 적은 노력으로 관련 콘텐츠를 더 빨리 찾을 수 있도록 지원합니다.
+[이제 Adobe Express에서 컨텐츠 관리자를 사용할 수 있습니다](/help/assets/native-integration-adobe-express.md). Express 인터페이스에서 직접 AEM Assets의 지능형 자산 검색을 소개합니다. Content Advisor는 캔버스 콘텐츠 및 캠페인 브리핑을 기반으로 컨텍스트 인식 권장 사항을 제공하고, AI 기반 검색을 지원하며, Dynamic Media에서 제공하는 즉석 렌디션 등 다양한 기능을 기본적으로 지원합니다. Content Advisor는 승인된 에셋을 검색하고 사용하는 방법을 전환하여 적합한 콘텐츠를 보다 빠르게 찾아 크리에이티브 워크플로를 간소화할 수 있도록 지원합니다.
 
-자세한 내용은 [Assets 보기](/help/assets/search-assets-view.md#ai-search) 및 [관리자 보기](/help/assets/search-assets.md#ai-search)의 AI 검색을 참조하십시오.
+### OpenAPI를 사용하는 Dynamic Media의 새로운 기능 {#dynamic-media-openAPI-new-features}
 
-**데스크톱 앱 3.0.1 릴리스**
+OpenAPI를 사용하는 Dynamic Media에 대한 **특성 기반 액세스 제어(ABAC)**
 
-[데스크톱 앱 3.0.1(2025년 12월 20일)](https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/release-notes)은(는) 주요 워크플로에서 안정성, 성능 및 안정성을 향상시킵니다. 이 릴리스는 AEM 작성자의 동기화 문제를 수정하여 일관된 폴더 이름 지정을 보장하고, 활성 전송 중 앱을 중단 없이 사용할 수 있으며, 비동기 처리를 통해 UI 응답성을 향상하고, 페이지 매김으로 대규모 파일 전송을 최적화하며, 대규모 폴더 업로드 및 다운로드 중 작성자 서버 다시 시작 및 충돌을 비롯한 안정성 문제를 해결합니다.
+속성 기반 액세스 제어(ABAC)를 사용하면 관리자가 메타데이터 기반 규칙을 사용하여 OpenAPI 에셋을 사용하는 Dynamic Media에 대한 액세스를 제어할 수 있습니다. 관리자는 에셋 메타데이터를 기반으로 사용자 그룹에 대한 규칙을 정의하여 특정 그룹에 표시되는 에셋을 결정할 수 있습니다. 에셋의 메타데이터가 정의된 조건과 일치하면 액세스 권한이 자동으로 부여됩니다. 이 기능을 사용하면 조직에서 더 나은 거버넌스를 적용하여 사용자가 자신의 역할 또는 권한과 관련된 OpenAPI 에셋만 사용하여 Dynamic Media를 보고 작업할 수 있습니다.
 
-**Adobe Asset Link CEP 2026.01.0 릴리스**
-
-[Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)에서는 동일한 AEM 폴더에서 누락된 다른 자산을 자동으로 다시 연결하는 새로운 InDesign 누락 링크 다시 연결 옵션을 도입했습니다. 이 기능은 파일 이름을 기반으로 하는 에셋과 일치하므로 끊어진 링크를 복원할 때 수작업이 크게 줄어듭니다.
-
+>[!NOTE]
+>
+>OpenAPI를 사용하는 Dynamic Media에 대한 속성 기반 액세스 제어(ABAC)는 제한된 가용성 기능입니다. [지원 티켓](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 만들어 활성화할 수 있습니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-**적응형 Forms(Foundation 구성 요소)의 각주 자리 표시자 개선 사항**
+### AEM Forms의 얼리 액세스 기능 {#forms-early-access-features}
 
-* 줄 바꿈이 있는 [여러 줄 지원을 추가했습니다](/help/forms/footnotes-richtextsupport.md). 따라서 각주 콘텐츠를 보다 명확하고 표현적으로 표시할 수 있습니다.
-* 이제 각주는 연결된 패널의 가시성에 관계없이 각주 플레이스홀더 내에서 지속적으로 볼 수 있으므로 중요한 정보에 일관되게 액세스할 수 있습니다.
-  ![각주 설명](/help/forms/assets/footnote-description.png){height=50%}
+* **제출 PDF에서 다중 선택 드롭다운에 대한 레이블 표시**: 이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
 
-### AEM Forms의 새로운 얼리 액세스 기능 {#forms-new-early-access-features}
+* **확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 향상**: 적응형 Forms 핵심 구성 요소는 [확인란 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대해 WCAG 2.2 호환 의미 체계 마크업을 도입합니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
 
-**JSON 배열에서 값 검색**
-
-사용자 지정 함수 기능을 [JSON 배열에서 값을 추출](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)(API 호출을 통해 수신)하는 것으로 확장했으며 적응형 양식 필드에 직접 바인딩했습니다. 이제 최소한의 수동 데이터 매핑으로 비즈니스 논리 및 규칙을 개발할 수 있습니다.
-
-**게시 인스턴스에서 연결 UI 실행**
-
-이제 게시 인스턴스에서 직접 [UI 연결](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)을 실행할 수 있습니다. 이를 통해 에이전트는 연결 UI에 액세스하고 고객을 위한 커뮤니케이션을 쉽게 개인화할 수 있습니다.
-
-<!--
-**Forms Optimization opportunities**
-
-Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
-
->[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
-
-Key optimization opportunities include:
-
-* Increasing visibility for forms with low views
-* Improving completion rates for forms with low conversions
-* Addressing accessibility compliance issues
-* Streamlining navigation to enhance user experience
-
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
--->
+* **Forms Manager에서 버전 관리 지원**: 이제 Forms Manager에서 적응형 Forms(핵심 구성 요소 및 기초 구성 요소), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation 새 기능 {#foundation-new}
+
+#### 자동 유지 관리 업데이트 일시 중지 {#pause-updates}
+
+라이브 기간, 라이브 이벤트, 최대 매출 등의 순간은 중단되어서는 안 됩니다. [새로운 셀프 서비스 기능](/help/implementing/deploying/quiet-hours-update-free-periods.md)은 중요한 순간에 자동 유지 관리 업데이트를 중지하므로 팀은 집중 상태를 유지할 수 있습니다.
+
+* 사용 중지 시간: 매일 설정된 시간 동안 자동 유지 관리를 차단합니다. 업무 시간, 야간 작동 또는 오전 컷오버에 이상적입니다.
+* 업데이트 불가 기간: 일주일 내내 자동 유지 관리를 차단합니다. 출시, 프로모션 또는 연례 중지 기간에 사용합니다.
+
+#### 개발 에이전트를 사용한 코드 품질 파이프라인 문제 해결 {#devagent-codequality}
+
+개발 에이전트의 파이프라인 문제 해결 기능을 사용하면 개발자가 AEM as a Cloud Service 배포에서 문제를 보다 효율적으로 진단하고 해결할 수 있습니다.
+
+이전에는 **빌드 및 단위 테스트** 단계에 초점을 맞췄지만 이제 파이프라인 문제 해결은 전체 스택 배포 및 코드 품질 파이프라인에서 **코드 스캔** 단계도 지원합니다.
+
+코드 스캔 단계에서는 품질 규칙에 대해 코드를 평가하고 보안 취약점을 감지하고 세부 품질 보고서를 생성합니다. 이 단계가 실패하면 AI Assistant를 사용하여 권장 교정 지침과 함께 개발 에이전트에 근본 원인 분석을 묻는 메시지를 표시할 수 있습니다.
+
+[개발 에이전트](/help/ai-in-aem/agents/brand-experience/development/development.md) 및 파이프라인 문제 해결에 대해 자세히 알아보세요.
 
 ### [!DNL Experience Manager] Foundation 중요 알림으로서의 [!DNL Cloud Service] {#foundation-notices}
 
@@ -159,10 +135,10 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 2026/2/26/2026 제거를 대상으로 하는 더 이상 사용되지 않는 API는 코드에서 더 이상 사용되지 않아야 합니다. 배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오. 중요 날짜:
 
-* **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 **환경당 매주**&#x200B;에 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
-* **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다.
-* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;되며, 사용이 제거될 때까지 새 코드의 **배포를 차단**&#x200B;합니다.
-* **2026년 5월 4일**: 이 API를 계속 사용하는 환경은 **더 이상 중요한 Adobe 릴리스 업데이트를 받지 못할 수 있습니다**.
+* **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
+* **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다. *이로 인해 코드 변경 내용의 유효성을 검사하고 해제하는 기능이 느려질 수 있습니다.*
+* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;됩니다. 더 이상 사용되지 않는 API 사용이 제거될 때까지 배포가 차단됩니다. *시간이 중요한 업데이트를 릴리스할 수 없으며 비즈니스 운영에 영향을 줄 수 있습니다.*
+* **2026년 5월 4일**: 더 이상 사용되지 않는 API를 사용하는 환경은 중요한 Adobe 릴리스 업데이트를 받지 않습니다&#x200B;**. 따라서 성능 및 가용성에 대한 Adobe의 표준 약정이 적용되지 않습니다.** 그 결과, 새로운 기능이나 버그 수정을 받지 않고, 애플리케이션 안정성과 가동 시간에 부정적인 영향을 미치고, 보안 위험 노출이 더 증가할 수 있습니다.
 
 [사용 중단 문서](/help/release-notes/deprecated-removed-features.md#aem-apis)에서 자세한 내용을 확인할 수 있으며, 편의를 위해 아래에 해당 API 목록을 제공합니다.
 
@@ -181,8 +157,6 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 * `org.apache.log4j`
 * `com.google.common`
 * `com.drew`
-* `org.bson`
-* `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
@@ -196,44 +170,11 @@ OSGi properties:
 
 -->
 
-#### Java 11 런타임 사용 중단 {#java11-runtime-deprecation}
-
-Adobe은 2025년 10월 14일에 **Stage** 및 **Production** 환경을 더 높은 성능의 **Java 21 런타임**(으)로 업그레이드했습니다. **2월 9일**(2월 11일까지 점진적 롤아웃)부터 AEM Cloud Service SDK과 클라우드 환경 모두 Java 11 런타임과 작동하지 않습니다.
-
->[!NOTE]
->
-> 최신 성능 최적화 및 언어 개선 사항을 활용하려면 Java 17 또는 Java 21(권장)로 빌드하는 것이 좋습니다. Java 8 및 Java 11을 사용한 빌드는 현재 지원되지만 향후 릴리스에서는 더 이상 사용되지 않을 예정입니다. 사용 중단에 앞서 별도의 커뮤니케이션이 이루어집니다. *이 문서*&#x200B;의 [빌드 시간 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) 섹션을 참조하십시오.
->
-
-#### AEM Java 로그 구성 시행 {#logconfig-policy}
-
-AEM Java 로그는 모든 고객 환경에서 안정적인 모니터링을 보장하려면 표준 형식을 따라야 합니다. 로그 형식 변경, 출력 파일 또는 기본 로그 수준과 같은 사용자 정의 로그 구성은 더 이상 지원되지 않습니다. 로그는 기본 파일로 전달되어야 하며, AEM 제품 코드의 기본 로그 수준은 유지되어야 합니다. 자세한 내용은 [로깅 문서](/help/implementing/developing/introduction/logging.md#configuration-loggers)를 참조하십시오.
-
-지원되지 않는 사용자 지정 로깅 재정의 *이(가) 이제 무시됩니다*. 대부분의 고객은 영향을 받지 않았으며 Adobe은 현재 구성이 영향을 받을 수 있는 고객에게 연락했습니다.
-
-사용자 정의 로깅 동작에 의존하는 모든 다운스트림 프로세스를 검토하고 업데이트해 주시기 바랍니다. 예:
-
-* 로그 전달 시스템이 사용자 정의 로그 형식을 기대하는 경우, 수집 규칙을 조정해야 할 수도 있습니다.
-* 이전에 로그 수준을 변경하여 로그의 세부 정보를 줄인 적이 있는 경우 기본 수준으로 되돌리면 로그 볼륨이 증가할 수 있습니다.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation 얼리 어답터 기능 {#foundation-early-adopter}
-
-#### 자동 유지 관리 업데이트 일시 중지 {#pause-updates}
-
-라이브 기간, 라이브 이벤트, 최대 매출 등의 순간은 중단되어서는 안 됩니다. [새로운 셀프 서비스 기능](/help/implementing/deploying/quiet-hours-update-free-periods.md)은 중요한 순간에 자동 유지 관리 업데이트를 중지하므로 팀은 집중 상태를 유지할 수 있습니다.
-
-* 사용 중지 시간: 매일 설정된 시간 동안 자동 유지 관리를 차단합니다. 업무 시간, 야간 작동 또는 오전 컷오버에 이상적입니다.
-* 업데이트 불가 기간: 일주일 내내 자동 유지 관리를 차단합니다. 출시, 프로모션 또는 연례 중지 기간에 사용합니다.
-
->[!NOTE]
->
->9월 25일에 제한 공개 기능으로 사용 가능합니다.
->프로그램에서 활성화하려면 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)에 이메일을 보내십시오.
->
 
 #### AEM Edge 기능(Beta 프로그램) {#edge-functions}
 
-AEM Edge 기능(*Edge 컴퓨팅*)을 사용하면 CDN 계층에서 JavaScript을 실행하여 데이터 처리를 최종 사용자에게 더 가깝게 할 수 있습니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
+AEM Edge 함수를 사용하면 CDN 계층에서 JavaScript을 실행할 수 있으므로 데이터 처리가 최종 사용자에게 더 가까워집니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
 
 일반적인 사용 사례는 다음과 같습니다.
 
@@ -244,6 +185,37 @@ AEM Edge 기능(*Edge 컴퓨팅*)을 사용하면 CDN 계층에서 JavaScript을
 * ChatGPT 및 Claude와 같은 LLM을 위한 MCP 서버를 사용자 정의 도구에 액세스하도록 노출
 
 라이브 프로덕션 사이트를 위한 AEM Publish Delivery 또는 Edge Delivery Services 프로젝트에 사용할 수 있는 기회는 제한적입니다. 참여에 관심이 있거나 보다 자세히 알아보려면 사용 사례에 대한 간략한 설명과 함께 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)으로 이메일을 보내 주시기 바랍니다.
+
+#### Cloud Manager MCP 서버(Beta 프로그램) {#cm-mcp-server}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+
+최신 IDE는 MCP(Model Context Protocol)를 사용하여 대형 언어 모델(LLM)이 MCP 서버에 의해 노출된 도구를 호출할 수 있도록 합니다. 개발자는 낮은 수준의 API 사양과 직접 통합하는 대신 단순히 의도를 자연어로 설명할 수 있습니다.
+
+이제 베타 버전에서 사용할 수 있는 Cloud Manager MCP Server를 사용하면 프롬프트를 사용하여 IDE에서 직접 Cloud Manager API와 상호 작용할 수 있습니다. 지원되는 시나리오에는 파이프라인 실행, 환경 상태 확인 등이 포함됩니다.
+
+[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)에 대해 자세히 알아보세요. Cloud Manager MCP Server Beta에 대한 액세스를 요청하려면 [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)에 전자 메일을 보내고 사용 사례에 대한 설명을 포함하십시오.
+
+#### 개발 에이전트를 사용한 웹 계층 구성 파이프라인 문제 해결(Beta 프로그램) {#devagent-webtier}
+
+개발 에이전트의 [파이프라인 문제 해결](/help/ai-in-aem/agents/brand-experience/development/development.md) 기능을 사용하면 개발자가 AEM as a Cloud Service 배포에서 문제를 효율적으로 진단하고 해결할 수 있습니다. 개발 에이전트는 이제 전체 스택 파이프라인(배포 및 코드 품질)을 지원하는 것 외에도 Beta 프로그램의 일부로 **웹 계층 구성 파이프라인**&#x200B;에 대한 문제 해결을 지원합니다.
+
+Beta에 대한 액세스를 요청하려면 [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)에 전자 메일을 보내십시오. AEM의 에이전트에 대한 기존 액세스 권한이 필요합니다.
+
+#### AEM Java 및 Dispatcher 개발을 위한 IDE AI 도구(Beta 프로그램) {#ai-dev-beta}
+
+Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하기 위해 Cursor, Claude Code, Visual Studio 및 IntelliJ와 같은 도구에서 AI 지원 개발을 점점 더 많이 사용하고 있습니다. Beta에 참여하여 다음을 수행할 수 있습니다.
+
+* 실제 경험을 공유하여 미래의 Adobe 지원 AI 기능을 구체화합니다.
+* AI 에이전트가 AEM 코드 및 Dispatcher 구성을 생성하고 디버깅하는 데 사용할 수 있는 IDE 도구를 사용해 보십시오
+
+자세한 내용은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)(으)로 전자 메일을 보내십시오.
+
+#### AEM 6.5에서 AEM Cloud Service로 마이그레이션하기 위한 IDE AI 도구(Alpha 프로그램) {#cm-ide-migration}
+
+IDE AI 도구를 사용하여 [모범 사례 분석기 보고서](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)의 권장 사항에 따라 활동하여 AEM 6.5에서 AEM as a Cloud Service(Java 스택)으로 마이그레이션을 가속화하십시오.
+
+자세한 내용은 [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)(으)로 전자 메일을 보내십시오.
 
 #### Edge Delivery Services에 대한 Edge 인증(Beta 프로그램) {#edge-authentication}
 
@@ -264,15 +236,6 @@ Edge 인증을 사용하면 ID 공급자(IdP)로 인증된 사용자만 Edge Del
 Beta에서 RDE(빠른 개발 환경)는 이제 코드 및 컨텐츠의 현재 상태에 대한 스냅샷을 생성하는 기능을 지원하며 나중에 복원할 수 있습니다. 이것은 반환이 필요할 수 있는 코드를 동기화하거나, 서로 다른 기능의 개발을 전환할 때 유용할 수 있습니다. 테스트를 위한 알려진 시작점으로 변경 가능한 콘텐츠만 복원하는 것도 가능합니다.
 
 이 기능에 대한 사용 및 피드백 제공에 관심이 있는 경우 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)에 전자 메일을 보내십시오.
-
-#### AEM Java 및 Dispatcher 개발용 IDE에 대한 AI 도구(Beta 프로그램) {#ai-dev-beta}
-
-Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하기 위해 Cursor, Claude Code, Visual Studio 및 IntelliJ와 같은 도구에서 AI 지원 개발을 점점 더 많이 사용하고 있습니다. Beta에 참여하여 다음을 수행할 수 있습니다.
-
-* 실제 경험을 공유하여 미래의 Adobe 지원 AI 기능을 구체화합니다.
-* AI 에이전트가 AEM 코드 및 Dispatcher 구성을 생성하고 디버깅하는 데 사용할 수 있는 IDE 도구를 사용해 보십시오
-
-자세한 내용은 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)(으)로 전자 메일을 보내십시오.
 
 #### 애플리케이션 성능 모니터링(APM) 기능 확장(Alpha 프로그램) {#apm-alpha}
 
