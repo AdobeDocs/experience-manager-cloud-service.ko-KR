@@ -4,14 +4,14 @@ description: 적응형 Forms 핵심 구성 요소에 대한 양식 제출에서 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3314'
 ht-degree: 1%
 
 ---
 
-# 적응형 Forms(핵심 구성 요소)을 위한 제출 PDF(이전 기록 문서) 생성
+# 적응형 Forms(핵심 구성 요소)을 위한 제출 PDF(기록 문서) 생성
 
 ## 개요 {#overview}
 
@@ -359,6 +359,12 @@ When you select a form model, configure Document of Record using options availab
       * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
       * **수평 정렬을 위한 옵션 수**:You&#x200B;는 수평 정렬을 위해 제출 PDF에 표시할 옵션 수를 설정할 수 있습니다.
 
+      **다중 선택 드롭다운에 대한 레이블 표시**
+
+      <span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 이메일을 보내십시오. </span>
+
+      이제 제출 PDF에 내부 저장 값 대신 다중 선택 드롭다운 구성 요소에 대해 선택한 표시 레이블이 표시됩니다. 예를 들어 사용자가 드롭다운에서 &quot;California&quot; 및 &quot;New York&quot;을 선택하면 제출 PDF에 `CA` 및 `NY`과(와) 같은 내부 값 대신 선택한 레이블이 표시됩니다. 선택한 각 옵션은 쉼표로 구분된 값 대신 별도의 줄에 표시되어 [기초 구성 요소 기반 응용 Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)의 동작과 일치합니다.
+
    1. **기본 페이지 속성**:
 
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
@@ -367,24 +373,6 @@ When you select a form model, configure Document of Record using options availab
       * **면책조항 레이블**: 면책조항 레이블입니다.
       * **면책조항**: 제출 PDF의 권한 및 의무 범위를 지정하는 텍스트입니다.
       * **면책조항 텍스트**: 면책조항 텍스트.
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
 
@@ -428,6 +416,11 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 제출 PDF의 스키마 기반 적응형 양식에서 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
+
+## 자주 묻는 질문 {#faq}
+
+**Q: 변경 내용이 제출 PDF에 표시되지 않습니다.**
+**관리자:** 적응형 Forms 편집기에서 양식을 열고 약간 편집한 후(예: 필드 레이블을 조정하거나 필드 순서 변경) 양식을 저장합니다. 이렇게 하면 제출 서류 PDF 템플릿이 재생성되고 변경 사항이 다음에 생성된 PDF에 표시됩니다.
 
 ## 추가 참조 {#see-also}
 

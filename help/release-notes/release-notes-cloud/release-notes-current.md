@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ddc7c0b1dc7dd3350dd91576011dc26f57afa51
+source-git-commit: 49d29c468a2047e3026948030c3663db0beada53
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 34%
@@ -38,7 +38,7 @@ ht-degree: 34%
 
 2026년 2월 릴리스 개요 비디오를 통해 2026.2.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480406/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -102,11 +102,14 @@ OpenAPI를 사용하는 Dynamic Media에 대한 **특성 기반 액세스 제어
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-early-access-features}
 
-* **제출 PDF에서 다중 선택 드롭다운에 대한 레이블 표시**: 이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
+**제출 PDF에서 다중 선택 드롭다운에 대한 레이블 표시**
+이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
 
-* **확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 향상**: 적응형 Forms 핵심 구성 요소는 [확인란 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대해 WCAG 2.2 호환 의미 체계 마크업을 도입합니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
+**확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 향상**
+적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
 
-* **Forms Manager에서 버전 관리 지원**: 이제 Forms Manager에서 적응형 Forms(핵심 구성 요소 및 기초 구성 요소), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
+**Forms Manager에서 버전 관리 지원**
+이제 Forms Manager [적응형 Forms(핵심 구성 요소 및 기초 구성 요소)](/help/forms/manage-form-versions-forms-manager.md), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -188,7 +191,7 @@ AEM Edge 함수를 사용하면 CDN 계층에서 JavaScript을 실행할 수 있
 
 #### Cloud Manager MCP 서버(Beta 프로그램) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 최신 IDE는 MCP(Model Context Protocol)를 사용하여 대형 언어 모델(LLM)이 MCP 서버에 의해 노출된 도구를 호출할 수 있도록 합니다. 개발자는 낮은 수준의 API 사양과 직접 통합하는 대신 단순히 의도를 자연어로 설명할 수 있습니다.
 
