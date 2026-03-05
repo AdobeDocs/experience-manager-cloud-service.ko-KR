@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.02.26 릴리스 정보
-description: 다음은 범용 편집기 2026.02.26 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.03.05 릴리스 정보
+description: 다음은 범용 편집기 2026.03.05 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# 범용 편집기 2026.02.26 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.03.05 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 2월 26일 릴리스 정보입니다.
+유니버설 편집기의 2026년 3월 5일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ ht-degree: 32%
 
 ## 새로운 기능 {#what-is-new}
 
-* 개발자가 모델/필터/구성 요소 정의 파일을 생성하는 데 도움이 되도록 모든 스키마 필드에 설명이 추가되었습니다.
-* 이제 콘텐츠 조각에 대한 다중 필드 업데이트가 컨텍스트 내 편집에서 지원됩니다.
-
+* [구성 요소 선택기](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)에 새 디자인이 있습니다.
+* 이제 RTE의 [색상 선택기](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)를 사용할 수 있습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -38,7 +37,5 @@ ht-degree: 32%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 편집기에서 더 이상 콘텐츠가 도착하기 전에 콘텐츠를 `{}`(으)로 설정하지 않으므로 특정 상황에서 데이터 손실을 방지합니다.
-* 필드가 포커스에 있을 때 데이터의 지속성이 더 강력해졌습니다.
-* 왼쪽 패널에서 편집한 다음 편집기 창에서 다른 항목을 선택할 때 특정 상황에서 변경 사항이 더 이상 손실되지 않습니다.
-* OpenAPI 끝점을 사용할 때 콘텐츠 조각의 RTE 필드에 대한 지속성 문제가 수정되었습니다.
+* 이제 백엔드에서 지원하는 경우 정렬, 텍스트 방향 및 들여쓰기 옵션이 RTE에서 기본적으로 [활성화됩니다](/help/implementing/universal-editor/configure-rte.md).
+* 이제 Open API 및 UI 스키마와 함께 콘텐츠 조각을 사용할 때 탭이 렌더링됩니다.
