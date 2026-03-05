@@ -1,18 +1,18 @@
 ---
 title: 통신 만들기 작업
-description: Brand Experience Agent의 통신 만들기 작업과 자연어를 사용하여 대화형 커뮤니케이션을 만드는 방법에 대해 알아봅니다.
+description: Experience Production Agent의 통신 생성 작업과 자연어를 사용하여 대화형 커뮤니케이션을 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# 커뮤니케이션 제작 스킬 {#ic-creation-skill}
+# 통신 만들기 작업 {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [대화형 커뮤니케이션](/help/forms/introduction-to-interactive-communication.md)은(는) 계정 설명, 정책 문서, 청구서, 시작 키트 및 혜택 알림과 같은 비즈니스 서신에 맞게 설계된 개인화된 데이터 기반 문서입니다. 사용자의 입력을 수집하는 양식과 달리 대화형 커뮤니케이션은 동적이고 수신자별 컨텐츠가 포함된 출력 문서를 생성합니다.
 
-통신 만들기 작업은 [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)에서 자연어 프롬프트를 사용하여 대화형 통신을 개발하도록 설계된 기능입니다. 이 작업은 인쇄에 대한 개인화된 데이터 기반 서신을 자동으로 생성합니다(PDF 형식). 그 일은 AI 비서를 통해 드러난다.
+통신 만들기 작업은 자연어 프롬프트를 사용하여 대화형 통신을 개발하도록 설계된 [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)의 일부입니다. 이 작업은 인쇄에 대한 개인화된 데이터 기반 서신을 자동으로 생성합니다(PDF 형식). 그 일은 AI 비서를 통해 드러난다.
 
 커뮤니케이션 생성 작업의 주요 이점은 다음과 같습니다.
 

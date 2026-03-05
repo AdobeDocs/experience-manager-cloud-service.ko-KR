@@ -1,10 +1,10 @@
 ---
-title: 콘텐츠 최적화 작업
-description: 콘텐츠 최적화 작업을 사용하여 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변형하는 방법을 알아봅니다.
+title: 콘텐츠 최적화 에이전트
+description: 콘텐츠 최적화 에이전트를 사용하여 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변형하는 방법을 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a31cd8ea0ae02a51efb748097c195d68dc8b554d
+source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 ---
 
 
-# 콘텐츠 최적화 작업 {#content-optimization-job}
+# 콘텐츠 최적화 에이전트 {#content-optimization-agent}
 
-[AEM의 Content Advisor 에이전트의 일부로](/help/ai-in-aem/agents/content-advisor/overview.md) 콘텐츠 최적화 작업은 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변환합니다. 새 렌디션 생성, 시각적 속성 조정, 배경 변경 또는 특정 디지털 채널용 에셋 준비 작업 중 어느 것이든 이 작업은 사용자 의도를 해석하고 복잡한 편집 작업을 자동으로 수행합니다. [콘텐츠 검색 작업](/help/ai-in-aem/agents/content-advisor/discovery.md)에서 찾은 에셋을 가져오고[OpenAPI 기능이 포함된 다이내믹 미디어](/help/assets/dynamic-media-open-apis-overview.md)를 사용하여 최적화된 변형을 만들어 수동 디자인 작업 없이 브랜드, 채널 및 캠페인 요구 사항을 충족하도록 합니다.
+[AEM의 Content Advisor 에이전트의 일부로](/help/ai-in-aem/agents/content-advisor/overview.md) 콘텐츠 최적화 에이전트는 자연어 지침을 적용하여 채널 준비가 가능한 변형을 만들어 사용자가 에셋을 다듬고 조정하는 방법을 변환합니다. 새 렌디션 생성, 시각적 속성 조정, 배경 변경 또는 특정 디지털 채널용 에셋 준비 여부에 관계없이 에이전트는 사용자 의도를 해석하고 복잡한 편집 작업을 자동으로 수행합니다. [콘텐츠 검색 에이전트](/help/ai-in-aem/agents/content-advisor/discovery.md)에서 찾은 자산을 가져와서 수동으로 디자인하지 않고도 브랜드, 채널 및 캠페인 요구 사항을 충족하는 핵심 [OpenAPI 기능이 포함된 다이내믹 미디어](/help/assets/dynamic-media-open-apis-overview.md)를 사용하여 최적화된 변형을 만들 수 있습니다.
 
-콘텐츠 최적화 작업의 주요 이점 중 일부는 다음과 같습니다.
+콘텐츠 최적화 에이전트의 몇 가지 주요 이점은 다음과 같습니다.
 
 * **간편한 에셋 변환**: 간단한 대화형 프롬프트를 크기 조정, 선명하게 하기, 미러링 또는 다시 색칠과 같은 정밀한 이미지 작업으로 변환하므로 특수 편집 도구가 필요하지 않습니다.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * **규모에 맞게 Creative 개선 사항**: 배경 변경 사항이나 그래픽 오버레이와 같은 시각적 조정 및 개선 사항을 적용하여 팀을 느리게 하지 않고 대량의 크리에이티브 워크플로우를 지원합니다.
 
-* **[콘텐츠 검색 작업과 매끄러운 공동 작업](/help/ai-in-aem/agents/content-advisor/discovery.md)**: 콘텐츠 검색 작업에서 식별된 에셋을 기반으로 빌드되므로 자연스러운 대화를 통해 엔드 투 엔드 에셋 검색 및 최적화가 가능합니다.
+* **[콘텐츠 검색 에이전트와 매끄러운 공동 작업](/help/ai-in-aem/agents/content-advisor/discovery.md)**: 콘텐츠 검색 에이전트가 식별한 에셋을 기반으로 빌드되므로 자연스러운 대화를 통해 전체적인 에셋 검색 및 최적화를 가능하게 합니다.
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
-## 사전 요구 사항 {#prerequisites-content-optimization-job}
+## 사전 요구 사항 {#prerequisites-content-optimization-agent}
 
 이미지 에셋에 대한 변형 또는 최적화를 생성하려면 다음을 수행합니다. 다음을 보유해야 합니다.
 
@@ -44,52 +44,52 @@ ht-degree: 0%
 
 * AEM as a Cloud Service 환경에서 [승인된 상태](/help/assets/manage-organize-assets-view.md#manage-asset-status)의 자산입니다.
 
-## 기술 {#skills-content-optimization-job}
+## 기술 {#skills-content-optimization-agent}
 
-콘텐츠 최적화 작업은 다음과 같은 기술을 제공합니다.
+콘텐츠 최적화 에이전트는 다음 기술을 제공합니다.
 
 * **자연어를 통해 의도 이해**
 
-  콘텐츠 최적화 작업은 자연어 프롬프트에서 사용자 의도를 해석하여 채널, 캠페인 및 대상 컨텍스트를 고려하여 가장 관련성이 높은 최적화 작업을 결정합니다.
+  콘텐츠 최적화 에이전트는 자연어 프롬프트에서 사용자 의도를 해석하여 채널, 캠페인 및 대상 컨텍스트를 고려하여 가장 관련성이 높은 최적화 작업을 결정합니다.
 
 * **동적 콘텐츠 변형을 생성합니다**
 
-  콘텐츠 최적화 작업은 다양한 채널 및 형식 유형에 맞게 조정된 동적 URL로 최적화된 변형을 만듭니다.
+  콘텐츠 최적화 에이전트는 다양한 채널 및 형식 유형에 맞게 조정된 동적 URL로 최적화된 변형을 만듭니다.
 
 * **이미지 콘텐츠 최적화**
 
-  콘텐츠 최적화 작업은 이미지 품질을 개선하기 위해 형식 변환, 해상도 조정, 자르기 및 선명하게 하기 와 같은 개선 사항을 적용합니다.
+  콘텐츠 최적화 에이전트는 이미지 품질을 개선하기 위해 형식 변환, 해상도 조정, 자르기 및 선명하게 하기 등의 개선 사항을 적용합니다.
 
 * **다중 변형 에셋 최적화**
 
-  콘텐츠 최적화 작업은 단일 자연어 프롬프트를 사용하여 콘텐츠 검색 작업에서 반환된 에셋으로부터 여러 개의 최적화된 이미지 변형을 생성할 수 있으므로 사용자가 채널 준비가 된 렌디션을 빠르고 효율적으로 생성할 수 있습니다.
+  컨텐츠 최적화 에이전트는 컨텐츠 검색 에이전트가 반환한 자산으로부터 단일 자연어 프롬프트를 사용하여 최적화된 여러 이미지 변형을 생성할 수 있으므로 사용자가 채널 준비가 된 렌디션을 빠르고 효율적으로 생성할 수 있습니다.
 
-## 가상 사용자 {#personas-content-optimization-job}
+## 가상 사용자 {#personas-content-optimization-agent}
 
-콘텐츠 최적화 작업의 주요 담당자인 채널 마케터는 적합한 고해상도 소스 콘텐츠를 선택하고 채널 및 대상 세그먼트에 맞는 최적화된 형식을 요청할 수 있습니다.
+콘텐츠 최적화 에이전트의 주요 담당자인 채널 마케터는 올바른 고해상도 소스 콘텐츠를 선택하고 채널 및 대상 세그먼트에 맞는 최적화된 형식을 요청할 수 있습니다.
 
-지역 마케터와 에이전시 작업자는 콘텐츠 최적화 작업을 사용하여 보다 빠르고 일관된 콘텐츠 제작을 지원하는 채널 준비가 된 이미지 변형을 신속하게 생성할 수도 있습니다.
+지역 마케터와 에이전시 작업자는 콘텐츠 최적화 에이전트를 사용하여 보다 빠르고 일관된 콘텐츠 제작을 지원하는 채널 준비가 완료된 이미지 변형을 신속하게 생성할 수도 있습니다.
 
-## 액세스 방법 {#access-content-optimization-job}
+## 액세스 방법 {#access-content-optimization-agent}
 
-AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 있습니다. [`experience.adobe.com`](https://experience.adobe.com)에 로그온하면 `Ask AI Assistant anything` 필드를 사용하여 자연어로 프롬프트를 지정하여 AI Assistant와 상호 작용할 수 있습니다.
+AI Assistant를 통해 AEM의 콘텐츠 최적화 에이전트에 액세스할 수 있습니다. [`experience.adobe.com`](https://experience.adobe.com)에 로그온하면 `Ask AI Assistant anything` 필드를 사용하여 자연어로 프롬프트를 지정하여 AI Assistant와 상호 작용할 수 있습니다.
 
-![콘텐츠 최적화 작업 액세스](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
+![콘텐츠 최적화 에이전트에 액세스](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 ## 일반적인 사용 사례 및 샘플 프롬프트 {#use-cases-prompts}
 
-[콘텐츠 검색 작업을 통해 올바른 자산을 검색하여 콘텐츠 최적화 작업을 사용하십시오.](/help/ai-in-aem/agents/content-advisor/discovery.md) 관련 이미지가 표시되면 사용자는 검색 결과에서 직접 하나 이상의 에셋에 대해 최적화된 또는 채널별 변형을 생성할 수 있습니다. 이 워크플로우는 고품질의 입력을 보장하며 일관되게 더 나은 최적화 결과를 제공합니다. 자세한 내용은 [사용 가능한 최적화의 전체 목록을 참조하십시오](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+[콘텐츠 검색 에이전트를 통해 올바른 자산을 검색하여 콘텐츠 최적화 에이전트를 사용하십시오.](/help/ai-in-aem/agents/content-advisor/discovery.md) 관련 이미지가 표시되면 사용자는 검색 결과에서 직접 하나 이상의 에셋에 대해 최적화된 또는 채널별 변형을 생성할 수 있습니다. 이 워크플로우는 고품질의 입력을 보장하며 일관되게 더 나은 최적화 결과를 제공합니다. 자세한 내용은 [사용 가능한 최적화의 전체 목록을 참조하십시오](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **고해상도 렌디션 만들기**
 
-  작업은 지정된 해상도 및 품질 수준에서 에셋의 새 렌디션을 생성할 수 있으므로 수동으로 편집하지 않고도 채널 준비가 가능한 변형을 쉽게 준비할 수 있습니다.
+  에이전트는 지정된 해상도 및 품질 수준에서 에셋의 새 렌디션을 생성할 수 있으므로 수동 편집 없이 채널 준비가 가능한 변형을 쉽게 준비할 수 있습니다.
 
 
   샘플 프롬프트:
 
   `2000px` 품질의 `JPEG` 렌디션을 `80%`(으)로 만듭니다.
 
-  [콘텐츠 검색 작업](/help/ai-in-aem/agents/content-advisor/discovery.md)을(를) 사용하여 올바른 에셋을 검색한 다음 검색 결과가 여러 개인 경우 다음 메시지를 사용하십시오.
+  [콘텐츠 검색 에이전트](/help/ai-in-aem/agents/content-advisor/discovery.md)를 사용하여 올바른 에셋을 검색한 다음 검색 결과가 여러 개인 경우 다음 메시지를 사용하십시오.
 
   세 번째 검색 결과에 대해 `2000px` 품질의 `JPEG` 렌디션을 `80%`(으)로 만듭니다.
 
@@ -99,7 +99,7 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 
 * **이미지 개선**
 
-  작업은 선명하게 하기 와 같은 시각적 개선 사항을 적용하여 여러 캠페인에서 에셋을 사용하기 전에 선명하고 잘 정의되도록 할 수 있습니다.
+  에이전트는 선명하게 하기가 처럼 시각적으로 개선되어 캠페인 간에 에셋을 사용하기 전에 선명하게 보이고 잘 정의되도록 할 수 있습니다.
 
   샘플 프롬프트:
 
@@ -108,7 +108,7 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 
 * **배경색 조정**
 
-  작업은 투명 에셋의 배경색을 업데이트하거나 교체하여 브랜드별 색상 구성표 또는 캠페인 중심의 시각적 테마를 지원할 수 있습니다.
+  에이전트는 투명 에셋의 배경색을 업데이트하거나 교체하여 브랜드별 색상 구성표 또는 캠페인 중심의 시각적 테마를 지원할 수 있습니다.
 
   샘플 프롬프트:
 
@@ -116,7 +116,7 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 
 * **방향 변형**
 
-  작업은 외부 편집 도구를 사용하지 않고도 시각적 개체를 뒤집거나 미러링하여 레이아웃 요구 사항이나 크리에이티브 방향에 맞출 수 있습니다.
+  에이전트는 외부 편집 도구 없이 시각적 개체를 뒤집거나 미러링하여 레이아웃 요구 사항이나 크리에이티브 방향에 맞출 수 있습니다.
 
   샘플 프롬프트:
 
@@ -124,7 +124,7 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 
 * **채널에 최적화된 렌디션**
 
-  이 작업은 Instagram 스토리 등 플랫폼별 요구 사항에 맞는 렌디션을 만들어 에셋이 형식, 비율 및 품질 지침을 자동으로 충족하도록 할 수 있습니다.
+  에이전트는 Instagram 스토리와 같은 플랫폼별 요구 사항에 맞는 렌디션을 제작하여 자산이 형식, 비율 및 품질 지침을 자동으로 충족하도록 할 수 있습니다.
 
   샘플 프롬프트:
 
@@ -132,7 +132,7 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 
 * **브랜드 오버레이 및 복합 생성**
 
-  이 작업은 정확한 배치로 기존 에셋에 홍보 그래픽, 오버레이 또는 배지를 적용할 수 있으므로 캠페인 준비 합성물을 신속하게 만들 수 있습니다.
+  에이전트는 정확한 배치로 기존 에셋에 홍보 그래픽, 오버레이 또는 배지를 적용하여 캠페인 준비 조합을 신속하게 만들 수 있습니다.
 
   샘플 프롬프트:
 
@@ -143,9 +143,9 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
   >오버레이 위치가 정확하지 않을 수 있습니다.
 
 
-## 최적화 결과 {#content-optimization-job-results}
+## 최적화 결과 {#content-optimization-agent-results}
 
-최적화 프롬프트를 지정할 때 콘텐츠 최적화 작업은 에셋 유형에 따른 편리한 액세스 옵션과 함께 향상된 에셋을 반환합니다.
+최적화 프롬프트를 지정할 때 콘텐츠 최적화 에이전트는 에셋 유형에 따른 편리한 액세스 옵션과 함께 향상된 에셋을 반환합니다.
 
 * **이미지**: 응답에는 Dynamic Media URL을 열거나 최적화된 이미지를 다운로드하는 썸네일 미리 보기 및 옵션이 포함됩니다.
 
@@ -165,11 +165,11 @@ AI Assistant를 통해 AEM에서 콘텐츠 최적화 작업에 액세스할 수 
 <!--
 
 
-## Prompting best Practices {#prompting-best-practices-content-optimization-job}
+## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
 The following are some prompting best practices:
 
-* Be explicit about the enhancement you want the content optimization job to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
+* Be explicit about the enhancement you want the content optimization agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
 

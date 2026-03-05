@@ -1,10 +1,10 @@
 ---
-title: 개발 작업 개요
-description: AEM의 개발 작업이 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
+title: 개발 에이전트 개요
+description: AEM의 Development Agent가 Cloud Manager에서 실패한 파이프라인을 분석하고 로그를 빌드하여 코드 수정을 제안하고 디버깅 속도를 높이는 방법에 대해 알아봅니다.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
+source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# 개발 작업 개요 {#development-job-overview}
+# 개발 에이전트 개요 {#development-agent-overview}
 
-[Brand Experience Agent의 일부로](/help/ai-in-aem/agents/brand-experience/overview.md) 개발 작업은 AEM 개발자와 관리자가 코드를 보다 효율적으로 만들고, 디버깅하고, 배포하고, 최적화할 수 있도록 지원합니다.
+[Brand Experience Agent의 일부로 ](/help/ai-in-aem/agents/brand-experience/overview.md) 개발 에이전트를 사용하면 AEM 개발자와 관리자가 코드를 보다 효율적으로 만들고, 디버깅하고, 배포하고, 최적화할 수 있습니다.
 
-이 작업은 파이프라인 상태를 검색하고 수정 사항을 제안하여 실패한 빌드 단계를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
+에이전트는 파이프라인 상태를 검색하고 수정 사항을 제안하여 빌드 단계의 오류를 해결하는 데 도움이 되며 개발, 스테이지 및 프로덕션 환경에 대한 AEM as a Cloud Service 배포를 디버깅할 때 시간을 절약할 수 있습니다. 빌드 로그 및 관련 코드를 검사하여 수동으로 적용할 수 있는 수정 사항을 권장합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478014?captions=kor&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ ht-degree: 0%
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-이 작업에 액세스하려면 Beta 프로그램 등록 방법에 대한 지침은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)를 참조하여 개발 작업에 관심을 나타내십시오. [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)에 개발 작업별 피드백을 전자 메일로 보낼 수도 있습니다.
+이 에이전트에 액세스하려면 Beta 프로그램 등록 방법에 대한 지침은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)를 참조하여 개발 에이전트에 대한 관심을 표시하십시오. 개발 에이전트별 피드백을 [aem-devagent@adobe.com으로 전자 메일로 보낼 수도 있습니다.](mailto:aem-devagent@adobe.com)
 
-[튜토리얼을 따라](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) Development Agent를 사용하여 파이프라인 오류를 해결하는 방법을 알아봅니다.
+[튜토리얼을 따라](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) Development Agent를 사용하여 파이프라인 오류를 해결하는 방법을 알아봅니다.
 
-## Cloud Manager을 통해 개발 작업에 액세스 {#how-to-access-the-job}
+## Cloud Manager을 통해 개발 에이전트에 액세스 {#how-to-access-the-agent}
 
-Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 AI Assistant를 통해 개발 작업에 액세스합니다.
+Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 AI Assistant를 통해 개발 에이전트에 액세스합니다.
 
 1. 시작하려면 [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)을 클릭하여 홈 페이지를 엽니다.
 
@@ -79,10 +79,9 @@ Cloud Manager 또는 Experience Hub 등의 사용자 인터페이스에 있는 A
 
    ![AI Assistant 프롬프트 및 결과 응답](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-
 ## 권한 {#permissions}
 
-개발 작업에는 Cloud Manager - 개발자 역할 또는 Cloud Manager - 프로그램 관리자 역할이 필요합니다.
+개발 에이전트에는 Cloud Manager - 개발자 역할 또는 Cloud Manager - 프로그램 관리자 역할이 필요합니다.
 
 ## 샘플 프롬프트 {#sample-prompts}
 
