@@ -2,10 +2,10 @@
 title: Content Hub 개요
 description: Content Hub에 대한 자세한 내용, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백 제공 방법에 대해 알아봅니다.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
+source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 68%
 
 ---
 
@@ -82,6 +82,36 @@ Content Hub에는 Experience Manager as a Cloud Service(2024.6 릴리스 이상)
 1. [Content Hub 포털에 액세스합니다](#access-content-hub).
 
 1. [Content Hub 피드백을 제공합니다](#provide-content-hub-feedback).
+
+## 자주 묻는 질문 {#faqs-content-hub-overview}
+
+### Content Hub란 무엇입니까? {#what-is-content-hub}
+
+Content Hub은 광범위한 팀이 직관적인 포털을 통해 관련성이 있고 승인된 자산을 쉽게 검색하고 이러한 자산을 빠르게 요구 사항에 맞게 조정할 수 있도록 하는 Adobe Experience Manager as a Cloud Service 기능입니다. 규모에 맞게 에셋을 배포할 수 있고 온브랜드 콘텐츠 변형을 만들어 마케팅 민첩성을 향상시킵니다.
+
+### Content Hub에 액세스하기 위한 사전 요구 사항은 무엇입니까? {#prerequisites-for-content-hub}
+
+Content Hub에는 Experience Manager as a Cloud Service의 프로덕션 작성 환경, 특히 2024.6 릴리스 이상(최소 버전 2024.6.16799)이 필요합니다.
+
+### Content Hub은 어떻게 브랜드 승인 에셋에 대한 검색 경험을 개선합니까? {#content-hub-improves-search-experience}
+
+Content Hub은 모든 승인된 에셋을 단일 계층 구조로 표시하므로, 직관적인 포털을 통해 브랜드에서 승인한 에셋을 보다 쉽게 찾고 공유할 수 있습니다. 이 설정을 통해 검색 프로세스를 간소화하고 사용자가 필요한 에셋을 효율적으로 찾을 수 있습니다.
+
+### Content Hub 사용자 인터페이스를 구성할 수 있는 사용자는 누구이며 어떤 측면을 구성할 수 있습니까? {#content-hub-configuration}
+
+관리자는 검색을 위한 필터, 에셋을 추가하거나 가져오기 위한 필드, 에셋 속성 및 브랜딩을 위한 배너 콘텐츠를 포함하여 Content Hub 사용자 인터페이스를 구성할 수 있습니다. 이를 통해 조직 요구 사항을 기반으로 맞춤화를 수행할 수 있습니다.
+
+### Content Hub은 크리에이티브가 아닌 사용자에게 콘텐츠를 편집하고 재혼합하는 권한을 어떻게 부여합니까? {#content-hub-edit-remix-content}
+
+Content Hub을 사용하면 크리에이티브 사용자가 사용하기 쉬운 도구, 템플릿 및 브랜드 요소를 사용하여 기존 콘텐츠를 편집하고 새로운 브랜드 내 변형을 만들 수 있습니다. 사용자에게 Adobe Express 권한이 있는 경우 Adobe Firefly GenAI 기능을 활용하여 고급 콘텐츠를 만들 수도 있습니다.
+
+### 사용자가 Content Hub에 액세스하려면 어떻게 합니까? {#content-hub-access}
+
+사용자는 직접 링크(https://experience.adobe.com/#/assets/contenthub)를 통해 Content Hub에 액세스하거나 experience.adobe.com에 로그인하고 빠른 액세스 섹션에서 Experience Manager Assets Content Hub을 선택하여 액세스할 수 있습니다.
+
+### AEM Assets에 포함된 Content Hub Limited 사용자는 몇 명입니까? {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) 및 Assets as a Cloud Service에는 각각 250명의 Content Hub 제한 사용자가 포함되어 있으며 [Assets Prime](/help/assets/assets-prime.md)에는 50명의 Content Hub 제한 사용자가 포함되어 있습니다.
 
 
 ## 주요 기능에 대해 자세히 알아보기 {#key-capabilities-content-module}

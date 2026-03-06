@@ -3,10 +3,10 @@ title: Content Hub에서 자산 검색
 description: ' [!DNL Content Hub]에서 자산을 검색하는 방법 알아보기'
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
@@ -167,5 +167,20 @@ ht-degree: 0%
 [!DNL The Content Hub]은(는) 검색으로 제한되지 않으며, 검색 또는 미리 보기 인터페이스에서 바로 [다운로드](download-assets-content-hub.md), [공유](share-assets-content-hub.md) 및 [컬렉션에 에셋 추가](collections-content-hub.md)와 같은 추가 작업을 수행할 수 있습니다. 검색 결과 페이지에서 자산을 선택하여 이러한 옵션을 확인합니다.
 
 [에서  [!DNL Content Hub]](configure-content-hub-ui-options.md)자산 구성에 대해 자세히 알아보세요.
+
+## 자주 묻는 질문 {#faqs-deploy-content-hub}
+
+### AEM Assets Content Hub에서 검색 결과의 범위를 좁히려면 어떻게 해야 합니까?
+
+텍스트 기반 검색을 사용하고, 다양한 필터(예: 파일 형식, 승인 상태, 수정 날짜 등)를 적용하고, 태그나 스마트 태그로 검색하고, 필터 패널을 사용하여 Content Hub에서 검색 결과의 범위를 좁힐 수 있습니다. 여러 술어 또는 필터 옵션을 결합하면 필요한 에셋을 정확하게 타깃팅하는 데 도움이 됩니다.
+
+### AEM Assets Content Hub에서 여러 자산을 한 번에 일괄 검색할 수 있습니까?
+
+예. 지정된 구분 기호로 구분된 여러 값(예: 이름, 파일 형식, 태그)을 입력하여 Content Hub에서 대량 검색을 수행할 수 있습니다. 일괄 검색 기능을 사용하면 단일 쿼리에서 여러 에셋을 빠르게 찾을 수 있으므로 에셋을 하나씩 검색하는 것보다 효율적입니다.
+
+
+### 관리자가 AEM Assets Content Hub 검색에서 사용할 수 있는 필터를 사용자 지정할 수 있습니까?
+
+예. 관리자는 AEM Assets Content Hub 구성 사용자 인터페이스를 사용하여 검색 인터페이스에서 사용할 수 있는 필터를 구성할 수 있습니다. 기본 필터에는 파일 형식, 승인 상태, 만료 날짜 등이 포함되어 있지만 관리자는 조직의 요구 사항에 맞게 이러한 옵션을 조정할 수 있습니다.
 
 
