@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1123'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # 사용자 정의 도메인 이름 추가 {#adding-custom-domain-name}
 
-Cloud Manager에서 **도메인 설정**&#x200B;을 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
+Cloud Manager에서 **도메인 설정**&#x200B;을 사용하여 사용자 지정 도메인 이름을 추가할 수 있습니다.
 
 ## 요구 사항 {#requirements}
 
@@ -35,9 +35,13 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
 사용자 정의 도메인 이름을 추가하면 도메인이 가장 구체적이고 유효한 인증서를 사용하여 제공됩니다. 여러 인증서에 동일한 도메인이 있으면 가장 최근에 업데이트된 이 선택됩니다. Adobe에서는 도메인이 겹치지 않도록 인증서를 관리하는 것이 좋습니다.
 
-이 문서에 설명된 두 메서드의 단계는 Fastly를 기반으로 합니다. 다른 CDN(Content Delivery Network)을 사용한 경우 사용하기로 선택한 CDN으로 도메인을 구성합니다.
+이 문서에 설명된 두 방법 중 하나에 대한 단계는 Fastly를 기반으로 합니다. 다른 CDN(Content Delivery Network)을 사용한 경우 사용하기로 선택한 CDN으로 도메인을 구성합니다.
 
 ## 사용자 정의 도메인 이름 추가 {#adding-custom-domain-name-settings}
+
+[Adobe](https://www.aem.live/docs/byo-cdn-adobe-managed)에 대한 *Edge Delivery Services 관리 CDN*&#x200B;도 참조하세요.
+
+**사용자 지정 도메인 이름을 추가하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -59,9 +63,11 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
 1. **만들기**&#x200B;를 클릭합니다.
 
+1. **도메인 설정** 페이지에서 도메인 이름 오른쪽에 있는 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **확인**&#x200B;을 클릭합니다.
+
 1. **도메인 확인** 대화 상자의 **이 도메인에 사용할 인증서 종류를 선택하십시오.** 드롭다운 목록에서 다음 옵션 중 하나를 선택하십시오.
 
-   | 인증서 유형 옵션 | 설명 |
+   | 인증서 유형 | 설명 |
    | --- | --- |
    | Adobe 관리(DV) SSL 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe은 인증서를 자동으로 관리하고 갱신합니다. |
    | 고객 관리(OV/EV) SSL 인증서 | EV/OV SSL 인증서를 사용하여 도메인을 보호하려면 이 인증서 유형을 선택합니다. 이 옵션은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사)를 통해 향상된 보안을 제공합니다. 더 엄격한 인증, 더 높은 신뢰 수준 또는 인증서에 대한 사용자 지정 제어가 필요한 경우 사용합니다. |
