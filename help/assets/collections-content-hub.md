@@ -30,7 +30,7 @@ ht-degree: 1%
 
 사용자가 [!DNL Content Hub] 내에서 사용할 수 있는 다양한 자산에 쉽게 액세스하고 관리할 수 있도록 도와줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445307/?captions=kor&learn=on){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites}
 
