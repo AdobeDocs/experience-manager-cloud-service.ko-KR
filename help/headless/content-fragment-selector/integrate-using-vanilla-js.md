@@ -21,5 +21,5 @@ Adobe 또는 Adobe이 아닌 애플리케이션을 Adobe Experience Manager(AEM)
 
 다음과 같은 경우 IMS 속성 중 일부를 정의하지 않고 인증을 수행할 수 있습니다.
 
-* [통합 셸](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)에서 Adobe 응용 프로그램을 통합 중입니다.
+* [통합 셸](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)에서 Adobe 응용 프로그램을 통합 중입니다.
 * 이미 인증을 위해 생성된 IMS 토큰이 있습니다.
