@@ -4,9 +4,9 @@ description: Experience 현대화 에이전트가 AI의 도움을 받아 Edge De
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -101,3 +101,7 @@ Experience Modernation Agent는 [`aemcoder.adobe.io`.](https://aemcoder.adobe.io
 * 다중 사이트 상속(MSM)
 * 사용자 정의 기능(예: 계산기, 구성자)
 * 사용자 정의 비즈니스 논리
+
+## 다음 단계 {#next-steps}
+
+[Experience Modernation Agent 시작하기](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md) 문서를 사용하여 사이트를 마이그레이션하여 시작하십시오.

@@ -4,9 +4,9 @@ description: 경험 현대화 콘솔 인터페이스 및 기능에 대한 참조
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,14 @@ Experience Modernation Console은 [`aemcoder.adobe.io`에서 웹 인터페이스
 
 ![설정 보기](assets/settings-view.png)
 
-* **자격 증명**&#x200B;을(를) 사용하면 콘솔이 프로젝트의 디자인 블록에 액세스할 수 있도록 Figma에 대한 개인 액세스 토큰을 지정할 수 있습니다.
+* **자격 증명**&#x200B;을(를) 사용하면 [콘솔에서 프로젝트의 디자인 블록에 액세스할 수 있도록 Figma에 대한 개인 액세스 토큰을 지정할 수 있습니다.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * 토큰에는 다음과 같은 읽기 전용 범위가 필요합니다.
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * 개인 액세스 토큰 설정에 대한 자세한 내용은 [Figma 설명서를 참조하십시오](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens).
 * **작업 영역을 다시 설정**&#x200B;하면 콘솔이 시작 상태로 되돌아가며 푸시되지 않거나 업로드되지 않은 모든 변경 내용이 손실됩니다.
