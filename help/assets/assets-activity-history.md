@@ -30,7 +30,7 @@ ht-degree: 37%
 * 거부
 * 이동
 
-The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 [!DNL Experience Manager]Adobe 자산 링크[ 또는 ](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)데스크톱 앱[[!DNL Experience Manager] 을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)에 체크 인하면 타임라인 활동이 기록됩니다.
+The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 [!DNL Experience Manager]Adobe 자산 링크[&#x200B; 또는 &#x200B;](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)데스크톱 앱[[!DNL Experience Manager] 을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)에 체크 인하면 타임라인 활동이 기록됩니다.
 
 >[!NOTE]
 >

@@ -20,7 +20,7 @@ ht-degree: 54%
 
 ![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [ 속성의 사용을 이해하려면 ](asset-selector-customization.md#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
+AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [&#x200B; 속성의 사용을 이해하려면 &#x200B;](asset-selector-customization.md#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property

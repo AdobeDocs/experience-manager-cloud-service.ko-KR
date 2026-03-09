@@ -37,7 +37,7 @@ Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[ 아래의 ](/help/assets/asset-selector-properties.md) 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[&#x200B; 아래의 &#x200B;](/help/assets/asset-selector-properties.md) 속성으로 이동하십시오.
 
 
 ### 승인된 자산에서 동적 게재 URL 만들기 {#create-dynamic-media-url}

@@ -91,7 +91,7 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
 
    1. `Project Name`필드 레이블&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정하십시오.
 
-   1. `./jcr:content/metadata/wm:projectName`속성에 매핑&#x200B;**[!UICONTROL 필드에]**을(를) 지정합니다. 지침으로, 다음 템플릿을 사용하여 Experience Manager Assets에서 필드 매핑을 정의합니다.
+   1. `./jcr:content/metadata/wm:projectName`속성에 매핑&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정합니다. 지침으로, 다음 템플릿을 사용하여 Experience Manager Assets에서 필드 매핑을 정의합니다.
       `./jcr:content/metadata/<mapping defined for the field in workfront>`
 
       Workfront에서 매핑을 구성하는 동안 `wm:projectName` Experience Manager Assets 필드를 프로젝트 > 이름 Workfront 필드에 매핑했습니다.
@@ -104,14 +104,14 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
 
    1. `Document Name`필드 레이블&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정하십시오.
 
-   1. `./jcr:content/metadata/wm:documentName`속성에 매핑&#x200B;**[!UICONTROL 필드에]**을(를) 지정합니다.
+   1. `./jcr:content/metadata/wm:documentName`속성에 매핑&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정합니다.
 Workfront에서 매핑을 구성하는 동안 `wm:documentName` Experience Manager Assets 필드를 Document > Name Workfront 필드에 매핑했습니다.
 
 1. **[!UICONTROL 양식 작성]** 탭을 클릭하고 **[!UICONTROL 여러 줄 텍스트]** 구성 요소를 양식으로 끌어 옵니다. 양식에서 구성 요소를 클릭합니다. **[!UICONTROL 양식 작성]** 탭에서:
 
    1. `Document Description`필드 레이블&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정하십시오.
 
-   1. `./jcr:content/metadata/dc:description`속성에 매핑&#x200B;**[!UICONTROL 필드에]**을(를) 지정합니다.
+   1. `./jcr:content/metadata/dc:description`속성에 매핑&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정합니다.
 Workfront에서 매핑을 구성하는 동안 `dc:description` Experience Manager Assets 필드를 문서 > 설명 Workfront 필드에 매핑했습니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
