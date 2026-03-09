@@ -1,13 +1,14 @@
 ---
 title: 변형 - 조각 컨텐츠 작성(Assets - 컨텐츠 조각)
 description: 콘텐츠 조각 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들어 유연성을 높이는 방법을 이해합니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 52%
 
 ---

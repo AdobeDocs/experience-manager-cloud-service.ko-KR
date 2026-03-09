@@ -1,12 +1,13 @@
 ---
 title: Experience Manager Assets에서 렌디션 보기 및 관리
 description: AEM Assets 및 Dynamic Media가 정적 및 동적 이미지 렌디션을 사용하여 효과적인 이미지 관리를 간소화하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -49,7 +50,7 @@ Experience Manager Assets에서 [정적 표현물을 보고 다운로드](#view-
    * [이미지 사전 설정](/help/assets/dynamic-media/managing-image-presets.md)
 
   나중에 [보기를 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view)하여 Assets 보기에서 동적 변환을 미리 볼 수 있습니다.
-* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
+* 자산을 Dynamic Media에 게시하여 Assets 보기에서 Dynamic Media 변환을 사용할 수 있도록 합니다. 자세한 내용은 [AEM 및 Dynamic Media에 Assets 게시](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)를 참조하십시오.
 
 
 ### Dynamic Media 렌디션 보기 및 다운로드 {#view-download-dm-renditions}

@@ -1,12 +1,13 @@
 ---
 title: 컬렉션 관리
 description: 컬렉션은 Experience Manager Assets 보기 내의 에셋 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1090'
 ht-degree: 78%
 
 ---
@@ -236,4 +237,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의

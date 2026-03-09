@@ -2,10 +2,11 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 자산 선택기를 사용하여 요구 사항에 따라 사용자 지정하는 예제.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 54%
 
 ---
@@ -13,13 +14,13 @@ ht-degree: 54%
 
 # 자산 선택기 속성 사용 예 {#usage-examples}
 
-**index.html** 파일에서 자산 선택기 [속성](/help/assets/asset-selector-properties.md)을(를) 정의하여 응용 프로그램 내의 자산 선택기 표시를 사용자 지정할 수 있습니다.
+[index.html](/help/assets/asset-selector-properties.md) 파일에서 자산 선택기 **속성**&#x200B;을(를) 정의하여 응용 프로그램 내의 자산 선택기 표시를 사용자 지정할 수 있습니다.
 
 ## 예 1: 레일 보기의 자산 선택기
 
 ![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. `acvConfig` 속성의 사용을 이해하려면 [드래그 앤 드롭을 사용하거나 사용하지 않도록 설정](asset-selector-customization.md#enable-disable-drag-and-drop)하세요.
+AssetSelector `rail`의 값이 `false`(으)로 설정되어 있거나 속성에 언급되지 않은 경우 기본적으로 자산 선택기가 모달 보기에 표시됩니다. `acvConfig` 속성은 끌어서 놓기와 같은 일부 심층적인 구성을 허용합니다. [ 속성의 사용을 이해하려면 ](asset-selector-customization.md#enable-disable-drag-and-drop)드래그 앤 드롭을 사용하거나 사용하지 않도록 설정`acvConfig`하세요.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property

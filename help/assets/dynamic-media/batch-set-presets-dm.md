@@ -1,13 +1,14 @@
 ---
-title: 일괄 처리 집합 사전 설정
+title: 배치 세트 사전 설정
 description: Dynamic Media에서 일괄처리 집합 사전 설정을 사용하여 이미지 세트 및 스핀 세트 생성을 자동화하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 0%
 가장 좋은 방법은 회사에서 에셋을 세트에 그룹화하는 방법에 대한 이름 지정 규칙을 이미 정의했다는 것입니다.
 명명 규칙 사용의 중요성을 이해할 수 있도록 회사에서 정의한 명명 규칙이 `<style>-<color>-<view>`이라고 가정합니다. 집합의 기본 이름은 항상 `<style>-<color>`이어야 하며 집합 이름 확장명은 `-SET`이어야 합니다. 이름이 `0123-RED-01`인 이미지를 업로드하면 이름이 `0123-RED-SET`인 집합이 만들어집니다. 나중에 `0123-RED-03` 및 `0123-BLUE-01` 이미지를 업로드하면 `RED-03` 이미지가 `01`보다 낮게 정렬되므로 두 번째 위치의 집합에 추가됩니다. 그러나 `BLUE-01` 이미지는 `0123-BLUE-SET`(이)라는 새 집합의 일부입니다. 다음 자산 업로드를 위해 `0123-RED-02` 및 `0123-BLUE-02` 파일을 추가합니다. 각 자산은 해당 세트에 추가됩니다. 정렬 순서 때문에 `RED-02` 이미지가 기존 `01` 및 `03` 이미지 사이에 자동으로 정렬됩니다.
 
-[!DNL Dynamic Media]의 **[!UICONTROL 일괄처리 집합 사전 설정]** 페이지에서 일괄처리 집합 사전 설정을 생성, 편집 또는 삭제하고 자산 폴더에 일괄처리 집합 사전 설정을 적용하거나 자산 폴더에서 제거할 수 있습니다. 양식 필드 드롭다운 목록을 사용하여 일괄처리 집합 사전 설정을 정의하거나 정규식 구문을 입력할 수 있는 **[!UICONTROL 원시 코드]** 필드를 사용할 수 있습니다.
+**[!UICONTROL 의]**&#x200B;일괄처리 집합 사전 설정[!DNL Dynamic Media] 페이지에서 일괄처리 집합 사전 설정을 생성, 편집 또는 삭제하고 자산 폴더에 일괄처리 집합 사전 설정을 적용하거나 자산 폴더에서 제거할 수 있습니다. 양식 필드 드롭다운 목록을 사용하여 일괄처리 집합 사전 설정을 정의하거나 정규식 구문을 입력할 수 있는 **[!UICONTROL 원시 코드]** 필드를 사용할 수 있습니다.
 
 필요한 모든 에셋 수집 작업을 처리할 수 있도록 여러 일괄처리 집합 사전 설정을 만들 수 있습니다.
 

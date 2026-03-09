@@ -3,13 +3,14 @@ title: 관리 보기에서 AI 생성 메타데이터를 통해 콘텐츠 검색 
 description: 관리 보기에서 AI 생성 메타데이터를 사용하여 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
+exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '675'
 ht-degree: 9%
 
 ---
-
 
 # AI 생성 메타데이터를 통해 콘텐츠 검색 향상 {#ai-smart-tags}
 

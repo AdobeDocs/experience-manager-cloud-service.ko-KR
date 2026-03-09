@@ -2,11 +2,12 @@
 title: Vanilla JS를 사용하여 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 59%
+source-wordcount: '185'
+ht-degree: 58%
 
 ---
 

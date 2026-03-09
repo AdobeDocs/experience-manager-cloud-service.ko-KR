@@ -3,10 +3,11 @@ title: AEM Assets 공동 작업자 사용자
 description: AEM Assets Collaborator 사용자 및 해당 권한을 관리하는 방법을 알아봅니다.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: b0be28b8-821c-46a0-9437-2b2fccee95ee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '149'
 ht-degree: 35%
 
 ---

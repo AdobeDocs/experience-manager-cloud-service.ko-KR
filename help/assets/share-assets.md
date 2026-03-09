@@ -3,10 +3,11 @@ title: 자산, 폴더 및 컬렉션 배포 및 공유
 description: ' [!DNL Brand Portal], [!DNL desktop app] 및  [!DNL Asset Link]을(를) 통해 링크, 다운로드 및 공유와 같은 방법을 사용하여 디지털 에셋을 배포합니다.'
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1835'
 ht-degree: 3%
 
 ---
@@ -15,16 +16,16 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 조직 구성원 및 외부 엔터티(파트너 및 공급업체 포함)와 자산, 폴더 및 컬렉션을 공유할 수 있습니다. [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service]&#x200B;(으)로 공유하려면 다음 메서드를 사용하십시오.
 
 * [링크로 공유](#sharelink).
 * [자산을 다운로드](/help/assets/download-assets-from-aem.md)하고 별도로 공유합니다.
-* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)을 사용하여 공유하세요.
+* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 사용하여 공유하세요.
 * [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)을(를) 사용하여 공유합니다.
-* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ko)을(를) 사용하여 공유합니다.
+* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)을(를) 사용하여 공유합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -39,18 +40,18 @@ ht-degree: 3%
 
    * **원본 포함:**
 
-      * 링크 공유 대화 상자에서 기본적으로 `Include Originals` 옵션을 선택하려면 `Select Include Originals`을(를) 선택하십시오.
+      * 링크 공유 대화 상자에서 기본적으로 `Select Include Originals` 옵션을 선택하려면 `Include Originals`을(를) 선택하십시오.
       * 링크 공유 대화 상자에서 `Include Originals` 옵션이 표시되는 방식을 선택하십시오. [!UICONTROL 편집 가능]을(를) 사용하면 초기 설정에서 정의된 설정을 변경할 수 있습니다. `Read-only`을(를) 사용하면 설정이 표시되지만 수정할 수 없습니다. `Hidden`은(는) 설정을 숨기고 초기 설정에서 여기에 구성된 값을 사용합니다.
    * **렌디션 포함:**
-      * 링크 공유 대화 상자에서 기본적으로 `Include Renditions` 옵션을 선택하려면 `Select Include Renditions` 옵션을 선택하십시오.
+      * 링크 공유 대화 상자에서 기본적으로 `Select Include Renditions` 옵션을 선택하려면 `Include Renditions` 옵션을 선택하십시오.
       * 링크 공유 대화 상자에서 `Include Renditions` 옵션이 표시되는 방식을 선택하십시오. [!UICONTROL 편집 가능]을(를) 사용하면 초기 설정에서 정의된 설정을 변경할 수 있습니다. `Read-only`을(를) 사용하면 설정이 표시되지만 수정할 수 없습니다. `Hidden`은(는) 설정을 숨기고 초기 설정에서 여기에 구성된 값을 사용합니다.
 
-1. `Expiration date` 섹션의 `Validity Period` 필드에 있는 링크에 대한 기본 유효 기간을 지정하십시오.
+1. `Validity Period` 섹션의 `Expiration date` 필드에 있는 링크에 대한 기본 유효 기간을 지정하십시오.
 
 1. 작업 표시줄의 **[!UICONTROL 공유 연결]** 단추:
-   * `jcr:modifyAccessControl` 권한이 있는 모든 사용자는 [!UICONTROL 공유 링크] 옵션을 볼 수 있습니다. 기본적으로 모든 관리자가 볼 수 있습니다. 기본적으로 [!UICONTROL 공유 연결] 단추가 모든 사람에게 표시됩니다. 정의된 그룹에 대해서만 이 옵션을 표시하도록 구성하거나 특정 그룹에서 이 옵션을 거부할 수도 있습니다. 특정 그룹에서 `Share Link` 옵션을 볼 수 있도록 하려면 `Allow only for groups`을(를) 선택하십시오. 특정 그룹의 `Share Link` 옵션을 거부하려면 `Deny from groups`을(를) 선택하십시오. 이러한 옵션 중 하나를 선택하면 `Select Groups` 필드를 사용하여 그룹 이름을 지정하여 허용하거나 거부해야 하는 그룹 이름을 추가합니다.
+   * `jcr:modifyAccessControl` 권한이 있는 모든 사용자는 [!UICONTROL 공유 링크] 옵션을 볼 수 있습니다. 기본적으로 모든 관리자가 볼 수 있습니다. 기본적으로 [!UICONTROL 공유 연결] 단추가 모든 사람에게 표시됩니다. 정의된 그룹에 대해서만 이 옵션을 표시하도록 구성하거나 특정 그룹에서 이 옵션을 거부할 수도 있습니다. 특정 그룹에서 `Allow only for groups` 옵션을 볼 수 있도록 하려면 `Share Link`을(를) 선택하십시오. 특정 그룹의 `Deny from groups` 옵션을 거부하려면 `Share Link`을(를) 선택하십시오. 이러한 옵션 중 하나를 선택하면 `Select Groups` 필드를 사용하여 그룹 이름을 지정하여 허용하거나 거부해야 하는 그룹 이름을 추가합니다.
 
-전자 메일 구성 관련 설정은 [전자 메일 서비스 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko)를 참조하세요.
+전자 메일 구성 관련 설정은 [전자 메일 서비스 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)를 참조하세요.
 
 ![이메일 서비스 구성](/help/assets/assets/config-email-service.png)
 
@@ -69,7 +70,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 링크 공유 기능을 사용하여 에셋을 공유하는 방법에는 두 가지가 있습니다.
 
-1. 공유 링크 [복사 및 자산 링크 &#x200B;](#copy-and-share-assets-link)를 다른 사용자와 공유합니다.
+1. 공유 링크 [복사 및 자산 링크 ](#copy-and-share-assets-link)를 다른 사용자와 공유합니다.
 1. 공유 링크를 생성하고 [이메일을 통해 자산 링크를 공유](#share-assets-link-through-email)합니다. 만료 날짜 및 시간과 같은 기본값을 수정하고 원본 에셋과 렌디션을 다운로드할 수 있습니다. 이메일 주소를 추가하여 여러 사용자에게 이메일을 보낼 수 있습니다.
 
    ![링크 공유 대화 상자](assets/share-link.png)
@@ -247,7 +248,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 마케터와 사업 부문 사용자는 다음을 사용하여 승인된 자산을 크리에이티브 전문가와 쉽게 공유할 수 있습니다.
 
-* **Experience Manager 데스크톱 앱**: 이 앱은 Windows 및 Mac에서 작동합니다. [데스크톱 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)를 참조하세요. 권한이 있는 데스크톱 사용자가 공유 자산에 쉽게 액세스할 수 있는 방법을 알아보려면 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets)를 참조하세요. 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 에셋을 만들고 Experience Manager 사용자인 상대 사용자와 다시 공유할 수 있습니다. [데스크톱 앱을 사용하여 에셋 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#upload-and-add-new-assets-to-aem)를 참조하십시오.
+* **Experience Manager 데스크톱 앱**: 이 앱은 Windows 및 Mac에서 작동합니다. [데스크톱 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)를 참조하세요. 권한이 있는 데스크톱 사용자가 공유 자산에 쉽게 액세스할 수 있는 방법을 알아보려면 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요. 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 에셋을 만들고 Experience Manager 사용자인 상대 사용자와 다시 공유할 수 있습니다. [데스크톱 앱을 사용하여 에셋 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)를 참조하십시오.
 
 * **Adobe Asset Link**: 크리에이티브 전문가는 [!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 직접 자산을 검색하고 사용할 수 있습니다.
 
@@ -296,7 +297,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 데스크탑 앱에서 사용할 데스크탑 작업 활성화 {#desktop-actions}
 
-브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 데스크탑 애플리케이션에서 편집할 자산을 체크아웃하고 열 수 있습니다. 이러한 옵션을 데스크톱 작업이라고 하며 사용하려면 [웹 인터페이스에서 데스크톱 작업 사용 [!DNL Assets] 2&rbrace;을 참조하세요.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#desktopactions-v2)
+브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 데스크탑 애플리케이션에서 편집할 자산을 체크아웃하고 열 수 있습니다. 이러한 옵션을 데스크톱 작업이라고 하며 사용하려면 [웹 인터페이스에서 데스크톱 작업 사용 [!DNL Assets] 2}을 참조하세요.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 
 ![데스크톱 앱으로 작업할 때 바로 가기로 사용할 데스크톱 작업 사용](assets/enable_desktop_actions.png)
 

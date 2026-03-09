@@ -4,10 +4,11 @@ description: 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로
 contentOwner: AG
 feature: Collections, Collaboration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '826'
 ht-degree: 10%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets을 사용하여 폴더 또는 컬렉션에 있는 에셋에 대한 임시 검토 워크플로를 설정할 수 있습니다. 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 구할 수 있습니다. 검토 워크플로를 프로젝트와 연결하거나 독립 검토 작업을 만들 수 있습니다.

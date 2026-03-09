@@ -2,10 +2,11 @@
 title: 사용자 지정에 대한 자산 선택기 속성
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1426'
 ht-degree: 37%
 
 ---

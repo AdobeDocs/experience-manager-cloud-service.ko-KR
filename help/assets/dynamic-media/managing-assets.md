@@ -4,11 +4,12 @@ description: 미리 보기, 다운로드 또는 게시와 같은 워크플로우
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 18%
+source-wordcount: '134'
+ht-degree: 19%
 
 ---
 

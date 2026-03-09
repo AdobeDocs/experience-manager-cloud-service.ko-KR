@@ -3,10 +3,11 @@ title: 계단식 메타데이터
 description: 이 문서에서는 에셋의 계단식 메타데이터를 정의하는 방법에 대해 설명합니다.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '974'
 ht-degree: 8%
 
 ---

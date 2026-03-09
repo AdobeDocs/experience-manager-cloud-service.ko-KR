@@ -2,10 +2,11 @@
 title: 자산 선택기에서 자산 업로드
 description: 업로드 기능을 사용하여 자산 선택기 MFE에서 자산 업로드
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 2%
 
 ## 메타데이터를 사용하여 에셋 업로드 {#upload-assets-with-metadata}
 
-애플리케이션에 즉시 업로드하면서 에셋에 메타데이터를 추가할 수 있습니다. 메타데이터에는 비즈니스 제목 줄, 제품 세부 사항, 캠페인 등과 같은 다양한 필드가 포함됩니다. 이를 위해 `metadataSchema` 속성이 사용됩니다. `metadataSchema` 속성에 대해 자세히 알아보려면 [자산 선택기 속성](/help/assets/asset-selector-properties.md)(으)로 이동하십시오.
+애플리케이션에 즉시 업로드하면서 에셋에 메타데이터를 추가할 수 있습니다. 메타데이터에는 비즈니스 제목 줄, 제품 세부 사항, 캠페인 등과 같은 다양한 필드가 포함됩니다. 이를 위해 `metadataSchema` 속성이 사용됩니다. [ 속성에 대해 자세히 알아보려면 ](/help/assets/asset-selector-properties.md)자산 선택기 속성`metadataSchema`(으)로 이동하십시오.
 
 구성에 필요한 코드 조각에 대해서는 [메타데이터로 업로드](/help/assets/asset-selector-customization.md#upload-with-metadata)를 참조하십시오.
 

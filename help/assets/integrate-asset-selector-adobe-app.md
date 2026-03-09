@@ -2,10 +2,11 @@
 title: 자산 선택기와  [!DNL Adobe] 응용 프로그램 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '773'
 ht-degree: 10%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 10%
 
 다음 예제에서는 Unified Shell에서 [!DNL Adobe] 응용 프로그램을 실행하거나 인증을 위해 이미 `imsToken`을(를) 생성한 경우 자산 선택기를 사용하는 방법을 보여 줍니다.
 
-아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 자산 선택기 [속성](/help/assets/asset-selector-properties.md)을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
+아래 예제의 `script`줄 6-15 _에 표시된 대로_ 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. [행 16~23](/help/assets/asset-selector-properties.md)에 표시된 대로 자산 선택기 _속성_&#x200B;을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
 
 다음 단계를 따라 [!DNL Adobe] 응용 프로그램에서 자산 선택기를 사용할 수 있습니다.
 
@@ -71,7 +72,7 @@ ht-degree: 10%
 | `imsClientId` | 인증 용도로 사용되는 IMS 클라이언트 ID를 나타내는 문자열 값입니다. 이 값은 Adobe에서 제공하며 Adobe AEM CS 조직에만 해당됩니다. |
 | `imsScope` | 인증에 사용되는 범위를 설명합니다. 범위는 응용 프로그램이 조직 리소스에 대해 갖는 액세스 수준을 결정합니다. 여러 범위는 쉼표로 구분할 수 있습니다. |
 | `redirectUrl` | 인증 후 사용자가 리디렉션되는 URL을 나타냅니다. 이 값은 일반적으로 애플리케이션의 현재 URL로 설정됩니다. `redirectUrl`이(가) 제공되지 않으면 `ImsAuthService`에서 `imsClientId`을(를) 등록하는 데 사용되는 redirectUrl을 사용합니다. |
-| `modalMode` | 인증 흐름을 모달(팝업)로 표시할지 여부를 나타내는 부울. `true`(으)로 설정하면 인증 흐름이 팝업에 표시됩니다. `false`(으)로 설정하면 전체 페이지를 다시 로드할 때 인증 흐름이 표시됩니다. _참고:_ 더 나은 UX를 위해 사용자에게 브라우저 팝업이 비활성화된 경우 이 값을 동적으로 제어할 수 있습니다. |
+| `modalMode` | 인증 흐름을 모달(팝업)로 표시할지 여부를 나타내는 부울. `true`(으)로 설정하면 인증 흐름이 팝업에 표시됩니다. `false`(으)로 설정하면 전체 페이지를 다시 로드할 때 인증 흐름이 표시됩니다. 향상된 UX를 위해 브라우저 팝업이 비활성화된 경우 이 값을 동적으로 제어할 수 있습니다(_Note :_). |
 | `onImsServiceInitialized` | Adobe IMS 인증 서비스가 초기화될 때 호출되는 콜백 함수입니다. 이 함수는 Adobe IMS 서비스를 나타내는 개체인 `service` 매개 변수 하나를 사용합니다. 자세한 내용은 [`ImsAuthService`](#imsauthservice-ims-auth-service)을(를) 참조하십시오. |
 | `onAccessTokenReceived` | Adobe IMS 인증 서비스에서 `imsToken`을(를) 받을 때 호출되는 콜백 함수입니다. 이 함수는 액세스 토큰을 나타내는 문자열인 `imsToken` 매개 변수 하나를 사용합니다. |
 | `onAccessTokenExpired` | 액세스 토큰이 만료된 경우 호출되는 콜백 함수입니다. 이 함수는 일반적으로 새 액세스 토큰을 얻기 위해 새 인증 흐름을 트리거하는 데 사용됩니다. |

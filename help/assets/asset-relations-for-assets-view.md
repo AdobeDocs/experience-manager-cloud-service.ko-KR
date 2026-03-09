@@ -4,10 +4,12 @@ description: 몇 가지 일반적인 특성을 공유하는 디지털 에셋의 
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 9%
+source-wordcount: '538'
+ht-degree: 10%
 
 ---
 
@@ -40,9 +42,9 @@ ht-degree: 9%
 
 1. **[!UICONTROL 선택]**&#x200B;을 클릭합니다. 3단계에서 선택한 관계에 따라 관련 에셋이 **[!UICONTROL 에셋 관계]** 섹션의 해당 범주 아래에 나열됩니다. 예를 들어 관련된 에셋이 현재 에셋의 원본 파일인 경우 **[!UICONTROL Source]** 아래에 나열됩니다.
 
-   ![Assets 관계 예](assets/asset-relations-example.png)
+   ![자산 관계 예시](assets/asset-relations-example.png)
 
-1. 각 섹션의 모든 관련 에셋([!UICONTROL Source], [!UICONTROL 파생] 및 [!UICONTROL 기타])에 사용할 수 있는 **[!UICONTROL 관계 해제]** ![에셋 관계 해제](assets/do-not-localize/link-unrelate-icon.png)을 클릭하여 에셋의 관계를 해제합니다.
+1. 각 섹션의 모든 관련 에셋(**[!UICONTROL Source]**, ![파생](assets/do-not-localize/link-unrelate-icon.png) 및 [!UICONTROL 기타])에 사용할 수 있는 [!UICONTROL 관계 해제] [!UICONTROL 에셋 관계 해제]을 클릭하여 에셋의 관계를 해제합니다.
 
 ## 관련 에셋 번역 {#translating-related-assets}
 
@@ -56,7 +58,7 @@ ht-degree: 9%
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 >[!MORELIKETHIS]
 >

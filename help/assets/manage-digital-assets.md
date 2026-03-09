@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4283'
 ht-degree: 10%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는 [!DNL Adobe Experience Manager Assets]에서 자산을 관리하고 편집하는 방법에 대해 설명합니다. [!DNL Content Fragments]을(를) 관리하려면 [[!DNL Content Fragments]](content-fragments/content-fragments.md)개의 자산을 참조하십시오.
@@ -240,7 +241,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    * cq5dam
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
+   T에셋 상세 화면에서 이미지 렌디션의 크기를 설정하려면 해당 `renditionpicker`노드(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)를 오버레이하고 폭 속성 값을 구성하세요. 에셋 상세 페이지에서 이미지 크기에 따라 렌디션을 사용자 정의하려면, 폭 대신 **[!UICONTROL 사이즈(Long) 속성(KB 단위)]**&#x200B;을(를) 구성하세요. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
    마찬가지로 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`을(를) 오버레이하여 주석 페이지 이미지를 사용자 지정할 수 있습니다.
 
@@ -430,7 +431,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
-1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
+1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. 또는 이미지에서 영역을 표시한 후, **[!UICONTROL 주석 추가]** 대화 상자에서 주석을 추가합니다.
 
 <!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
@@ -657,7 +658,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
 
 **추가 참조**
 

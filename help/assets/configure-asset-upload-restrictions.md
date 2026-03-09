@@ -1,13 +1,14 @@
 ---
 title: 자산 업로드 제한 사항 구성
 description: 사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한하도록 Adobe Experience Manager Assets을 구성합니다. 원하지 않는 형식 및 악성 파일이 실수로 업로드되는 것을 방지하는 데 도움이 됩니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 13%
+source-wordcount: '378'
+ht-degree: 14%
 
 ---
 

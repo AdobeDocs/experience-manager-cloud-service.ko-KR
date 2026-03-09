@@ -3,12 +3,13 @@ title: AEM as a Cloud Service 대상 선택기
 description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을 원본 자산의 사본으로 표시하고 선택합니다.
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 85%
+source-wordcount: '1880'
+ht-degree: 84%
 
 ---
 
@@ -128,18 +129,18 @@ interface SelectedDestination {
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| *repo:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
-| *repo:id* | 문자열 | 자산의 고유 식별자입니다. |
-| *repo:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
-| *repo:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
-| *repo:size* | 숫자 | 자산의 크기입니다(바이트). |
-| *repo:path* | 문자열 | 저장소 내 자산의 위치입니다. |
-| *repo:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
-| *repo:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
-| *repo:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
-| *repo:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
-| *repo:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
-| *repo:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
+| *리포지토리:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
+| *리포지토리:id* | 문자열 | 자산의 고유 식별자입니다. |
+| *리포지토리:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
+| *리포지토리:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
+| *리포지토리:size* | 숫자 | 자산의 크기입니다(바이트). |
+| *리포지토리:path* | 문자열 | 저장소 내 자산의 위치입니다. |
+| *리포지토리:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
+| *리포지토리:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
+| *리포지토리:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
+| *리포지토리:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
+| *리포지토리:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
+| *리포지토리:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
 | *dc:format* | 문자열 | 자산의 형식입니다. |
 | *_페이지* | 항목별 순서: 문자열, 카운트: 숫자, | 문서의 페이지 번호가 포함됩니다. |
 
@@ -149,7 +150,7 @@ interface SelectedDestination {
 
 이 예는 통합 셸에서 [!DNL Adobe] 애플리케이션을 실행할 때 SUSI 외 흐름을 통해 대상 선택기를 사용하는 방법과 인증용으로 생성된 `imsToken`을 이미 보유한 경우에 대해 설명합니다.
 
-아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 대상 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 대상 선택기 [속성](#destination-selector-properties)을(를) 정의합니다. SUSI 외 흐름 인증에는 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 대상 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderDestinationSelector` 기능을 호출합니다. `<div>`21~22행&#x200B;_에 표시된 대로_ 컨테이너 요소에 대상 선택기가 표시됩니다.
+아래 예제의 `script`줄 6-15 _에 표시된 대로_ 태그를 사용하여 코드에 대상 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. [행 16~23](#destination-selector-properties)에 표시된 대로 대상 선택기 _속성_&#x200B;을(를) 정의합니다. SUSI 외 흐름 인증에는 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 대상 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderDestinationSelector` 기능을 호출합니다. `<div>`21~22행&#x200B;_에 표시된 대로_ 컨테이너 요소에 대상 선택기가 표시됩니다.
 
 다음 단계를 따르면 [!DNL Adobe] 애플리케이션에서 SUSI 외 흐름과 함께 대상 선택기를 사용할 수 있습니다.
 

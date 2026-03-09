@@ -1,12 +1,13 @@
 ---
 title: 자산 보기에서 태그를 관리하는 방법은 무엇입니까?
 description: 자산 보기에서 태그를 관리하는 방법을 알아보십시오. 태그는 보다 효율적으로 찾아보고 검색할 수 있는 자산을 분류하는 데 유용합니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---
@@ -130,7 +131,7 @@ ht-degree: 98%
 
 ## 메타데이터 양식에 태그 구성 요소 추가 {#add-tags-to-metadata-form}
 
-태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=ko#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. [!DNL Assets as a Cloud Service] 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
+태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. [!DNL Assets as a Cloud Service] 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
 
 메타데이터 양식에 태그 구성 요소를 추가하는 방법을 보려면 이 빠른 비디오를 시청하십시오.
 

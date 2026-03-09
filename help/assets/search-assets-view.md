@@ -2,11 +2,12 @@
 title: ' [!DNL Assets view]에서 자산을 검색하고 검색하는 방법을 알아보세요.'
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,7 +125,7 @@ To remove custom filters:
 
 ## AI 검색 {#ai-search}
 
-AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 쿼리 뒤에 있는 의미와 의도를 이해하는 고급 검색 기능입니다. 인공지능(AI)과 머신러닝을 활용해 보다 정확하고 상황에 맞는 결과를 전달한다.
+AI 검색은 정확한 키워드 일치에 의존하지 않고 사용자의 쿼리 뒤에 있는 의미와 의도를 이해하는 고급 검색 기능입니다. 인공지능(AI)과 머신러닝을 활용해 보다 정확하고 상황에 맞는 결과를 전달한다.
 
 정확한 용어를 찾는 기존 키워드 기반 검색과 달리 AI 검색은 단어, 개념, 사용자 의도 간 관계를 해석한다. 이렇게 하면 쿼리가 다르게 표현되거나, 오타가 있거나, 다른 언어로 되어 있더라도 사용자가 찾고 있는 항목을 찾을 수 있습니다.
 
@@ -152,11 +153,11 @@ AI 검색은 정확한 키워드 일치 여부에 의존하지 않고 사용자 
 
 ### Assets 보기에서 AI 검색 활성화 또는 비활성화 {#enable-disable-ai-search}
 
-다음 단계를 실행하여 AI 검색을 활성화하거나 비활성화합니다.
+AI 검색을 활성화하거나 비활성화하려면 다음 단계를 수행하십시오.
 
 1. **[!UICONTROL 설정]** >> **[!UICONTROL 일반 설정]**(으)로 이동한 다음 **[!UICONTROL 검색]** 탭을 선택합니다.
 
-1. **[!UICONTROL 검색]** 섹션에서 **[!UICONTROL AI 검색]**&#x200B;을 선택하여 AI 검색을 활성화하거나 **[!UICONTROL 키워드]**&#x200B;를 선택하여 비활성화합니다.
+1. **[!UICONTROL 검색]** 섹션에서 **[!UICONTROL AI 검색]**&#x200B;을(를) 선택하여 AI 검색을 활성화하거나 **[!UICONTROL 키워드]**&#x200B;을(를) 선택하여 비활성화합니다.
 
    ![Assets 보기에서 의미 체계 검색](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -388,13 +389,13 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ko)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 
 

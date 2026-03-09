@@ -3,10 +3,11 @@ title: Assets Prime
 description: 주요 이점, 사용자 유형 및 해당 권한 등 Assets Prime의 주요 측면에 대해 자세히 알아보십시오.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1106'
 ht-degree: 15%
 
 ---
@@ -123,7 +124,7 @@ Collaborator 사용자를 온보딩하려면 다음을 수행합니다.
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-1. Collaborators 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. Collaborators 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-assets-collaborator-user-permissions.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
@@ -145,7 +146,7 @@ Power 사용자를 온보딩하려면:
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
-1. 고급 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하여 사용자를 제품 프로필에 추가합니다.
+1. 고급 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-assets-power-user-permissions.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장합니다.

@@ -4,17 +4,18 @@ description: Adobe Experience Manager as a Cloud Service의 페이지에 Dynamic
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3170'
 ht-degree: 13%
 
 ---
 
 # 페이지에 Dynamic Media Assets 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 에셋을 구성 요소에 추가합니다. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 에셋을 구성 요소에 추가합니다. Dynamic Media 구성 요소는 스마트하게 동작하여, 이미지를 추가하는지 비디오를 추가하는지 자동으로 감지하고 그에 따라 설정 옵션을 조정합니다.
 
 [!DNL Adobe Experience Manager]을(를) WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)을 참조하십시오.
 
@@ -99,7 +100,7 @@ ht-degree: 13%
 
 사용 가능한 Dynamic Media 구성 요소에는 다음이 포함됩니다.
 
-* **[!UICONTROL Dynamic Media]** - Use for such assets as images, video, eCatalogs, and spin sets.
+* **[!UICONTROL Dynamic Media]**&#x200B;는 이미지, 비디오, e카탈로그, 스핀 세트 등의 에셋에 사용됩니다.
 * **[!UICONTROL 대화형 미디어]** - 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 사용합니다.
 * **[!UICONTROL 파노라마 미디어]** - 파노라마 이미지 또는 파노라마 VR 이미지 에셋에 사용합니다.
 * **[!UICONTROL Video 360 Media]** - 360 비디오 및 360 VR 비디오 자산에 사용합니다.
@@ -202,12 +203,12 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 * **[!UICONTROL 뷰어 사전 설정]** - 드롭다운 목록에서 기존 비디오 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 뷰어 사전 설정 관리를 참조하십시오.
 
-* **[!UICONTROL 뷰어 수정자]** - 뷰어 수정자는 `&` 구분 기호가 있는 `name=value` 쌍 형식입니다. Adobe 뷰어 참조 안내서에 설명된 대로 뷰어를 변경할 수 있습니다. 뷰어 한정자의 예는 `posterimage=img.jpg&caption=text.vtt,1`입니다.
+* **[!UICONTROL 뷰어 수정자]** - 뷰어 수정자는 `name=value` 구분 기호가 있는 `&` 쌍 형식입니다. Adobe 뷰어 참조 안내서에 설명된 대로 뷰어를 변경할 수 있습니다. 뷰어 한정자의 예는 `posterimage=img.jpg&caption=text.vtt,1`입니다.
 
   예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ko)
-   * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ko)
+   * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
      구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
@@ -221,7 +222,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기 이미지 자산을 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
-[Experience Manager Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html?lang=ko)을 참조하세요.
+[Experience Manager Assets Dynamic Media와 함께 스마트 자르기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)을 참조하세요.
 
 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md)도 참조하세요.
 
@@ -356,9 +357,9 @@ Dynamic Media 계정으로 HTTP/2를 사용하는 방법에 대한 자세한 내
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Dynamic Media에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html?lang=ko)
->* [Experience Manager Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html?lang=ko)
->* [Experience Manager Dynamic Media를 사용하여 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html?lang=ko)
->* [Experience Manager Dynamic Media에서 사용자 지정 비디오 썸네일 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=ko)
->* [Experience Manager Dynamic Media를 통한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=ko#dynamic-media)
->* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=ko)
+>* [Experience Manager Dynamic Media에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
+>* [Experience Manager Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
+>* [Experience Manager Dynamic Media를 사용하여 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
+>* [Experience Manager Dynamic Media에서 사용자 지정 비디오 썸네일 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Experience Manager Dynamic Media를 통한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)

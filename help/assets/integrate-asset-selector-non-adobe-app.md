@@ -2,10 +2,11 @@
 title: Adobe 이외의 애플리케이션 또는 타사 애플리케이션과 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '434'
 ht-degree: 9%
 
 ---

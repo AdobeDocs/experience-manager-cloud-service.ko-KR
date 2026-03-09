@@ -2,10 +2,11 @@
 title: 사용자 정의 검색 필터
 description: 검색 필터 양식 사용자 지정에 대해 알아보기
 role: User, Leader, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1431'
 ht-degree: 12%
 
 ---

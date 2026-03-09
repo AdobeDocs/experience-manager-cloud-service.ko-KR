@@ -4,11 +4,12 @@ description: 서드파티 웹 사이트, 마케팅 캠페인 및 Adobe의 크리
 contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 13%
+source-wordcount: '907'
+ht-degree: 20%
 
 ---
 
@@ -16,12 +17,12 @@ ht-degree: 13%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 Assets Insights 기능을 사용하면 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 광고 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다. 이는 이미지의 성능 및 인기에 대한 통찰력을 제공하는 데 도움이 됩니다.
 
-Assets Insights는 이미지에 대한 등급, 클릭 횟수 및 노출 횟수(이미지가 웹 사이트에 로드되는 횟수) 등 사용자 활동 세부 정보를 캡처합니다. 이러한 통계를 기반으로 이미지에 점수를 할당합니다. 점수 및 성과 통계를 사용하여 카탈로그, 마케팅 캠페인 등에 포함할 인기 있는 이미지를 선택할 수 있습니다. 이러한 통계를 기반으로 아카이브 및 라이선스 갱신 정책을 수립할 수도 있습니다.
+Assets Insights는 이미지가 평가된 횟수, 클릭된 횟수, 노출 횟수(웹 사이트에 이미지가 로드된 횟수) 등 사용자 활동 세부 정보를 수집합니다. 이 통계를 바탕으로 이미지에 점수를 부여합니다. 점수와 성과 통계를 활용해 카탈로그, 마케팅 캠페인 등에 포함할 인기 있는 이미지를 선택할 수 있습니다. 이러한 통계를 기반으로 아카이브 및 라이선스 갱신 정책을 수립할 수도 있습니다.
 
 Assets Insights가 웹 사이트의 이미지에 대한 사용 통계를 캡처하도록 하려면 웹 사이트 코드에 이미지에 대한 포함 코드를 포함해야 합니다.
 
@@ -110,7 +111,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    **[!UICONTROL 인증]**&#x200B;을 클릭합니다.
 
-   [!DNL Experience Manager]![&#128279;](assets/analytics-insight-config.png)에서 Assets Insights용 Adobe Analytics  구성
+   ![에서 Assets Insights용 Adobe Analytics [!DNL Experience Manager]](assets/analytics-insight-config.png) 구성
 
    *그림:[!DNL Experience Manager]*&#x200B;에서 Assets Insights용 Adobe Analytics 구성
 
@@ -118,7 +119,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. [!DNL Experience Manager]이(가) 보고서 세트를 설정한 후 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-자세한 내용은 [Adobe Analytics 웹 서비스](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=ko#api-access-information)를 참조하십시오.
+자세한 내용은 [Adobe Analytics 웹 서비스](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information)를 참조하십시오.
 
 ### 페이지 추적기 {#page-tracker}
 

@@ -2,10 +2,11 @@
 title: Content Hub에서 자산 검색
 description: ' [!DNL Content Hub]에서 자산을 검색하는 방법 알아보기'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---

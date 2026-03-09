@@ -2,12 +2,13 @@
 title: AEM의 Assets 보기가 어떤 도움이 됩니까?
 description: AEM에서 Assets 보기를 통해 얻을 수 있는 주요 이점에 대해 자세히 알아보십시오. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '972'
 ht-degree: 69%
 
 ---

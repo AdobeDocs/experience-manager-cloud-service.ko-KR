@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 12%
+source-wordcount: '314'
+ht-degree: 14%
 
 ---
 
@@ -31,8 +32,8 @@ ht-degree: 12%
 | 에셋 - 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
-| **모든 집합** - 집합당 중복 에셋 수 | 중복 항목 없음 | 20 |
-| **모든 집합** - 집합당 최대 자산 수 | 세트당 5-10개 이미지 | 1000년 |
+| **모든 집합** - 집합당 중복 에셋 수 | 중복 요소 없음 | 20 |
+| **모든 집합** - 집합당 최대 자산 수 | 세트당 5-10개 이미지 | 1000 |
 | **회전 집합** - 2D 집합당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
 | **PDF** - 추출할 PDF의 최대 페이지 수 |  | 100(모든 PDF의 경우) |
 

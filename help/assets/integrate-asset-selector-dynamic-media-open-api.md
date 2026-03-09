@@ -2,10 +2,11 @@
 title: Dynamic Media Open API와 자산 선택기 통합
 description: 에셋 선택기를 다양한 Adobe, 비 Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '942'
 ht-degree: 3%
 
 ---
@@ -36,7 +37,7 @@ Dynamic Media OpenAPI 프로세스와 자산 선택기의 통합에는 사용자
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 [자산 선택기 속성](/help/assets/asset-selector-properties.md) 아래의 `aemTierType` 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 `aemTierType`자산 선택기 속성[ 아래의 ](/help/assets/asset-selector-properties.md) 속성으로 이동하십시오.
 
 
 ### 승인된 자산에서 동적 게재 URL 만들기 {#create-dynamic-media-url}
@@ -54,7 +55,7 @@ aemTierType:[1: "delivery"]
 }
 ```
 
-선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예, `JsonObj`. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
+선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예를 들어, `JsonObj`과 같이 입력합니다. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
 
 | 오브젝트 | JSON |
 |---|---|
@@ -92,7 +93,7 @@ URL 형식:
 
 ### 동적 게재 URL 선택 준비 완료 {#ready-to-pick-dynamic-delivery-url}
 
-선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예, `JsonObj`. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
+선택한 모든 자산은 JSON 개체 역할을 하는 `handleSelection` 함수에 의해 전달됩니다. 예를 들어, `JsonObj`과 같이 입력합니다. 동적 게재 URL은 아래 캐리어를 결합하여 만들어집니다.
 
 | 오브젝트 | JSON |
 |---|---|

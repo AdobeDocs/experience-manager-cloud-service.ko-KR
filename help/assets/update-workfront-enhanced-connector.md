@@ -1,13 +1,14 @@
 ---
 title: ' [!DNL Workfront for Experience Manager enhanced connector]업데이트'
 description: ' [!DNL Workfront for Experience Manager enhanced connector]업데이트'
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 1%
 
 ---
 
@@ -17,14 +18,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->AEM 6.5에 대한 [!DNL Workfront for Experience Manager enhanced connector] 업데이트 설명서를 검색하고 있습니까? [여기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ko##update-enhanced-connector-for-workfront)를 클릭하세요.
+>AEM 6.5에 대한 [!DNL Workfront for Experience Manager enhanced connector] 업데이트 설명서를 검색하고 있습니까? [여기](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront)를 클릭하세요.
 
 
 [!DNL Workfront for Experience Manager enhanced connector]을(를) 최신 버전으로 업데이트하려면:
 
 1. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)에서 향상된 커넥터의 최신 버전을 다운로드하십시오.
 
-1. Cloud Manager에서 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=ko)하고 AEM as a Cloud Service 저장소를 복제합니다.
+1. Cloud Manager에서 [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)하고 AEM as a Cloud Service 저장소를 복제합니다.
 
 1. 원하는 IDE를 사용하여 복제된 Experience Manager as a Cloud Service 저장소를 엽니다.
 
@@ -67,7 +68,7 @@ ht-degree: 0%
    >
    >5단계와 6단계의 종속성에 `<scope>` 및 `<systemPath>`을(를) 추가해야 합니다.
 
-1. `pom.xml` 임베드를 업데이트합니다. 모든 하위 프로젝트의 `pom.xml`에 있는 `embeddeds` 섹션에 [!DNL Workfront for Experience Manager enhanced connector] 패키지를 추가합니다. 모든 모듈 `pom.xml`에 업데이트를 통합합니다.
+1. `pom.xml` 임베드를 업데이트합니다. 모든 하위 프로젝트의 [!DNL Workfront for Experience Manager enhanced connector]에 있는 `embeddeds` 섹션에 `pom.xml` 패키지를 추가합니다. 모든 모듈 `pom.xml`에 업데이트를 통합합니다.
 
    ```XML
    <!-- Workfront Tools -->
@@ -85,4 +86,4 @@ ht-degree: 0%
 
 1. 변경 사항을 저장소에 푸시합니다.
 
-1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ko)합니다.
+1. 파이프라인을 실행하여 [변경 내용을 Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)합니다.

@@ -4,10 +4,11 @@ description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 자산을
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 21%
 
 ---
@@ -36,7 +37,7 @@ Adobe Experience Manager을 WCM으로 사용하여 _not_&#x200B;하는 경우에
 
 1. 포함 코드를 복사할 *게시된* 비디오 또는 이미지 자산으로 이동합니다.
 
-   Remember that the embed code is only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
+   Remember that the embed code is only available to copy *after* you have first *published* the assets. 또한 뷰어 프리셋 또는 이미지 프리셋도 게시되어 있어야 합니다.
 
    [Assets 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 

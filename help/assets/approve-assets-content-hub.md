@@ -1,10 +1,11 @@
 ---
 title: Content Hub에 대한 자산 승인
 description: Assets as a Cloud Service에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1704'
 ht-degree: 12%
 
 ---
@@ -117,7 +118,7 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;로 이동합니다.
 1. 페이지 오른쪽 상단의 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 프로필 제목을 추가하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 메타데이터 프로필이 정상적으로 생성되었습니다.
-1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**&#x200B;을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;**[!UICONTROL 양식이 열리고]**&#x200B;기본&#x200B;**[!UICONTROL 탭이 강조 표시됩니다.]**
+1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 __]**을(를) 클릭합니다. <br>메타데이터 프로필 편집&#x200B;**[!UICONTROL 양식이 열리고]**기본&#x200B;**[!UICONTROL 탭이 강조 표시됩니다.]**
 1. 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 한 줄 텍스트 필드]**&#x200B;를 양식의 메타데이터 섹션으로 끌어다 놓습니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
    1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) _승인된 Assets_(으)로 변경합니다.
@@ -133,7 +134,7 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 새로 만든 메타데이터 프로필을 선택합니다.
 1. 맨 위의 작업 표시줄에서 **[!UICONTROL 폴더에 메타데이터 프로필 적용]**&#x200B;을 클릭합니다.
-1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
+1. 승인해야 하는 폴더를 선택하고 **[!UICONTROL 적용]**을 클릭합니다.
    <br> 전체 폴더에 대한 권한이 승인을 위해 설정되었으며 이 폴더에 업로드된 모든 자산이 자동으로 승인됩니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)

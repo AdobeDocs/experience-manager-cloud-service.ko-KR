@@ -3,11 +3,12 @@ title: 비디오 자산에 스마트 태그 지정
 description: Experience Manager은  [!DNL Adobe AI]을(를) 사용하여 상황에 맞는 설명 스마트 태그를 비디오에 자동으로 추가합니다.
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 ## 업로드 시 스마트 태깅 비디오 {#smart-tag-assets-on-ingestion}
 
-[비디오 자산을 &#x200B;](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
+[비디오 자산을 ](add-assets.md#upload-assets)에 [!DNL Adobe Experience Manager]&#x200B;(으)로 업로드[!DNL Cloud Service]하면 비디오가 처리됩니다. 처리가 완료되면 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그]의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스 [!DNL Adobe AI]을(를) 활용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됨](assets/smart-tags-added-to-videos.png)
 

@@ -6,10 +6,11 @@ topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 4a09e74ae62dba40deb192b1dfe38860bdb43921
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
@@ -55,12 +56,12 @@ Dynamic Media 사용자 인터페이스 요소는 화면 판독기와 같은 보
 
 모든 Dynamic Media 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#)을 참조하십시오.
 
 ## Dynamic Media 뷰어의 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
 
 모든 Dynamic Media 뷰어 구성 요소는 ARIA(Accessible Rich Internet Applications) 역할 및 속성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only)을 참조하십시오.
 
 ## [!DNL Dynamic Media]에서 폐쇄 캡션 지원 {#closed-caption-support}
 

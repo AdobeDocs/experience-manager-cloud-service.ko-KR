@@ -1,32 +1,33 @@
 ---
 title: 메타데이터 - 조각 속성(Assets - 콘텐츠 조각)
 description: 콘텐츠 조각의 메타데이터 속성을 보고 편집하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '291'
 ht-degree: 65%
 
 ---
 
 # 메타데이터 - 조각 속성 {#metadata-fragment-properties}
 
-AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 Headless 콘텐츠를 조정하는 방법을 참조하십시오.
+AEM에서 콘텐츠 조각의 메타데이터 속성을 보고 편집하여 Headless 콘텐츠를 조정하는 방법을 참조하십시오.
 
 >[!NOTE]
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
+>콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기([콘텐츠 조각](/help/sites-cloud/administering/content-fragments/authoring.md) 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 **콘텐츠 조각 - 작성**&#x200B;을 참조하십시오.
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 
 콘텐츠 조각에 대한 메타데이터(속성)를 보고 편집할 수 있습니다.
 
-1. **자산** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
+1. **에셋** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
 2. 다음 중 하나를 선택합니다.
 
    * [**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다](/help/assets/manage-digital-assets.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.

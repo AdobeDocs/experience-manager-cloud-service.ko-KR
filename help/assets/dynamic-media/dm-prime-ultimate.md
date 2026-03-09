@@ -2,11 +2,12 @@
 title: Dynamic Media Prime 및 Ultimate
 description: Dynamic Media Prime 및 Ultimate, 해당 이점 및 둘 간의 차이점에 대해 자세히 알아보십시오.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 12%
+source-wordcount: '427'
+ht-degree: 18%
 
 ---
 
@@ -54,8 +55,8 @@ Adobe 또는 비 Adobe 애플리케이션과의 AEM Assets 통합, 변환(회전
 * [AEM as a Cloud Service의 Dynamic Media 솔루션](/help/assets/dynamic-media/dynamic-media.md), 다음 주요 기능도 포함됩니다.
 
    * [Dynamic Media 템플릿](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [템플릿 기본 사항](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [시각적 구성](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [템플릿 기본 사항](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [시각적 구성](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 사전 요구 사항 {#pre-requisites-dm-ultimate}
 

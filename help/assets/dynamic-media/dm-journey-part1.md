@@ -10,10 +10,11 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3620'
 ht-degree: 3%
 
 ---
@@ -201,7 +202,7 @@ Dynamic Media의 솔루션은 하나의 기본 비디오 파일을 가져와 Dyn
 
 | **문제** | **Dynamic Media 솔루션** |
 |---|---|
-| 이미지 또는 비디오를 수동으로 그리기, 측정 및 잘라내어 초점을 강조 표시하고 모든 화면 크기 및 장치에서 적절히 표시하는 데 시간이 많이 소요되고 많은 시간이 소요됩니다. | Adobe AI 기능인 Dynamic Media에서 스마트 자르기 를 사용하여 모든 이미지 또는 비디오에서 초점을 자동으로 감지하고 자르기 를 사용하여 유지합니다. |
+| 이미지 또는 비디오를 수동으로 그리기, 측정 및 잘라내어 초점을 강조 표시하고 모든 화면 크기 및 장치에서 적절히 표시하는 데 시간이 많이 소요되고 많은 시간이 소요됩니다. | Adobe AI 기능인 Dynamic Media에서 스마트 자르기 를 사용하여 이미지 또는 비디오에서 초점을 자동으로 감지하고 자르기 를 수행하여 유지합니다. |
 | 영향력이 큰 경험을 만드는 데 더 잘 소요될 수 있는 손실 시간입니다. | 화면 크기에 관계없이 의도한 관심 영역을 캡처합니다. |
 | 모든 경험 및 장치에 대해 생성된 단일 사용 에셋. | 번거로운 수작업을 없애고 어떤 장치나 화면에서도 보기 좋은 고품질의 빠른 로딩 이미지 및 비디오를 제공합니다. |
 
@@ -284,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 

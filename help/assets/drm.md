@@ -4,10 +4,11 @@ description: ' [!DNL Experience Manager] as a [!DNL Cloud Service]에서 사용 
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1374'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 디지털 에셋은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. [!DNL Experience Manager] 플랫폼을 사용하면 자산 만료 정보 및 라이선스 정보를 효율적으로 관리할 수 있습니다.
@@ -54,7 +55,7 @@ ht-degree: 6%
 
 또한 오류가 발생하여 스케줄러가 현재 주기에서 만료된 에셋을 감지할 수 없는 경우 스케줄러는 다음 주기에서 이러한 에셋을 다시 검사하고 만료된 상태를 감지합니다.
 
-[!DNL Assets] 콘솔에서 만료된 하위 자산과 함께 참조 복합 자산을 표시할 수 있도록 하려면 [!DNL Experience Manager]에서 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우를 구성하십시오. 시간 기반 스케줄러는 자산이 하위 자산으로 만료되었는지 여부를 특정 시간에 확인하기 위해 작업을 예약합니다. 작업이 완료되면 만료된 하위 에셋 및 참조된 에셋이 검색 결과에 만료된 것으로 표시됩니다.
+[!DNL Assets] 콘솔에서 만료된 하위 자산과 함께 참조 복합 자산을 표시할 수 있도록 하려면 **[!UICONTROL 에서]** Adobe CQ DAM 만료 알림[!DNL Experience Manager] 워크플로우를 구성하십시오. 시간 기반 스케줄러는 자산이 하위 자산으로 만료되었는지 여부를 특정 시간에 확인하기 위해 작업을 예약합니다. 작업이 완료되면 만료된 하위 에셋 및 참조된 에셋이 검색 결과에 만료된 것으로 표시됩니다.
 
 1. 환경과 연결된 [!DNL Cloud Manager] Git 저장소에 액세스합니다.
 1. 다음 내용이 포함된 `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` 파일을 리포지토리에 커밋합니다.
@@ -65,11 +66,11 @@ ht-degree: 6%
    }
    ```
 
-1. [!DNL Experience Manager] as a [!DNL Cloud Service][&#128279;](/help/implementing/deploying/configuring-osgi.md)에서 OSGi 구성을 수행하는 방법 지침을 따르십시오.
+1. [as a [!DNL Experience Manager] 에서  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)OSGi 구성을 수행하는 방법 지침을 따르십시오.
 
 다음 속성을 사용하여 스케줄러를 구성할 수 있습니다.
 
-* `cq.dam.expiry.notification.scheduler.istimebased` 속성의 `true` 값이 스케줄러를 시작합니다. * 속성 `cq.dam.expiry.notification.scheduler.timebased.rule`의 값은 시간을 정의하는 정규식입니다. 위의 예에서는 00시간에 스케줄러 작업을 시작합니다.
+* `true` 속성의 `cq.dam.expiry.notification.scheduler.istimebased` 값이 스케줄러를 시작합니다. * 속성 `cq.dam.expiry.notification.scheduler.timebased.rule`의 값은 시간을 정의하는 정규식입니다. 위의 예에서는 00시간에 스케줄러 작업을 시작합니다.
 * `send_email`이(가) `true`(으)로 설정된 경우 에셋이 만료되면 에셋 생성자(특정 에셋을 [!DNL Assets]에 업로드하는 사람)에게 전자 메일이 전송됩니다.
 * 스케줄러의 한 반복에서 만료된 최대 자산 수는 `asset_expired_limit` 속성의 값입니다.
 * 작업을 주기적으로 실행하려면 `cq.dam.expiry.notification.scheduler.istimebased` 속성의 값을 `false`(으)로 설정하고 `cq.dam.expiry.notification.scheduler.period.rule` 속성의 값을 초 단위로 설정합니다.

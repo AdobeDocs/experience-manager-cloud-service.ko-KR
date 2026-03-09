@@ -2,10 +2,11 @@
 title: ' [!DNL the Content Hub]에서 Assets 공유'
 description: ' [!DNL the Content Hub]에서 Assets 공유'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 2%
 
 선택한 에셋에 대한 링크를 만들어 다른 사용자와 쉽게 공유할 수 있습니다. 승인된 [!DNL Content Hub] 사용자로서 [!DNL Content Hub] 환경에서 사용 가능한 자산을 하나 이상 선택하고 링크를 생성한 후 다른 개인 또는 공용 사용자에게 보냅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474926/?captions=kor&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites}
 

@@ -3,13 +3,14 @@ title: 계단식 메타데이터
 description: 이 문서에서는 에셋 보기에서 에셋의 계단식 메타데이터를 정의하는 방법에 대해 설명합니다.
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 5%
 
 ---
-
 
 # 계단식 메타데이터 Assets 보기{#cascading-metadata-assets-view}
 
@@ -150,11 +151,10 @@ ht-degree: 5%
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
-
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의

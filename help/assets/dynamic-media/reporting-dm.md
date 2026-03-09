@@ -6,11 +6,12 @@ feature: Asset Management
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '266'
+ht-degree: 1%
 
 ---
 
@@ -30,6 +31,6 @@ ht-degree: 0%
 
 1. [Dynamic Media 계정과 연결된 회사 이름으로 reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com)에 전자 메일을 보냅니다.
 
-   회사 이름을 모르는 경우 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL 다이내믹 미디어 구성]**&#x200B;에서 [다이내믹 미디어 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ko#configuring-dynamic-media-cloud-services) 페이지를 참조하십시오. Dynamic Media 구성 브라우저 페이지에서 **[!UICONTROL 전역]**&#x200B;을 클릭하고 *[Dynamic_Media_folder_icon]* 확인란을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다. Dynamic Media 구성 페이지에 액세스하려면 AEM에 관리자 권한이 있어야 합니다.
+   회사 이름을 모르는 경우 [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ko#configuring-dynamic-media-cloud-services) > **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL 다이내믹 미디어 구성]**&#x200B;에서 **[!UICONTROL 다이내믹 미디어 구성]** 페이지를 참조하십시오. Dynamic Media 구성 브라우저 페이지에서 **[!UICONTROL 전역]**&#x200B;을 클릭하고 *[Dynamic_Media_folder_icon]* 확인란을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다. Dynamic Media 구성 페이지에 액세스하려면 AEM에 관리자 권한이 있어야 합니다.
 
    ![Dynamic Media 구성 페이지에 액세스합니다.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

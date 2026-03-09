@@ -8,11 +8,12 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 84%
+source-wordcount: '1674'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 84%
 
 트랜스크립트는 음성 콘텐츠의 텍스트 버전입니다. 예를 들어, 종종 접근성을 향상시키거나 다른 언어로 된 콘텐츠를 소비하기 위한 캡션을 포함하는 OTT 플랫폼에서 시청 중인 영화가 있습니다. 마케팅, 학습이나 엔터테인먼트용으로 사용되는 모든 오디오 또는 비디오 파일입니다. 이들 경험은 필요한 경우 서식이 지정되거나 변환되는 트랜스크립션으로 시작됩니다. 수동으로 수행하는 경우 오디오 또는 비디오 기록 프로세스는 시간이 많이 들고 오류를 발생시킵니다. 오디오-비디오 콘텐츠에 대한 요구 사항이 계속 증가하면서 수동 프로세스 조정이 어려워질 수도 있습니다. [!DNL Experience Manager Assets]은(는) 대규모 오디오 및 비디오 에셋을 처리하고 타임스탬프 세부 정보와 함께 텍스트 트랜스크립트(.vtt 파일)을 생성하는 Azure의 AI 기반 트랜스크립션을 사용합니다. 에셋과 함께 트랜스크립션 기능도 Dynamic Media에서 지원됩니다.
 
-트랜스크립션 기능은 [!DNL Experience Manager Assets]에서 무상으로 제공됩니다. 그러나 [!DNL Experience Manager Assets]에서 트랜스크립션 서비스를 구성하려면 관리자는 사용자의 Azure 자격 증명이 필요합니다. Microsoft®에서 직접 [체험판 자격 증명을 획득](https://azure.microsoft.com/en-us/pricing/details/media-services/)하여 에셋의 오디오 또는 비디오 트랜스크립션 기능을 체험할 수도 있습니다.
+트랜스크립션 기능은 [!DNL Experience Manager Assets]에서 무상으로 제공됩니다. 그러나 관리자가 [!DNL Experience Manager Assets]에서 트랜스크립션 서비스를 구성하려면 사용자의 Azure 자격 증명이 필요합니다. Microsoft®에서 직접 [체험판 자격 증명을 획득](https://azure.microsoft.com/en-us/pricing/details/media-services/)하여 에셋의 오디오 또는 비디오 트랜스크립션 기능을 체험할 수도 있습니다.
 
 ## 트랜스크립션 사전 요구 사항 {#prerequisites}
 
@@ -124,7 +125,7 @@ Experience Manager Assets 인스턴스에 [Dynamic Media가 구성](/help/assets
 
 추가 참조:
 
-* [Dynamic Media 비디오에 CC 자막을 추가하는 방법에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko#add-cc-closed-captioning-to-dynamic-media-video)
+* [Dynamic Media 비디오에 CC 자막을 추가하는 방법에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [YouTube에 Dynamic Media 비디오 게시](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 다음 일러스트레이션에서 URL은 트랜스크립션(.vtt 파일)을 참조하는 캡션 부분을 반영합니다. 비디오는 특정 비디오 타임스탬프에서 음성 언어(기록된 텍스트)를 **[!UICONTROL 자막]**&#x200B;으로 반영합니다. 사용자는 **[!UICONTROL CC]** 버튼을 사용하여 캡션을 활성화하거나 비활성화할 수 있습니다.

@@ -4,10 +4,11 @@ description: 자산 관리를 위한 [!DNL Experience Manager Assets] 및 미디
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Developer, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '591'
 ht-degree: 9%
 
 ---
@@ -117,4 +118,4 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >[!MORELIKETHIS]
 >
 >* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ko-KR)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

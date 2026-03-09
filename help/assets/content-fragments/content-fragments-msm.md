@@ -1,14 +1,15 @@
 ---
 title: MSM 및 라이브 카피를 사용하여 콘텐츠 조각 재사용
 description: 소스 콘텐츠와 동기화하면서 여러 위치에서 동일하거나 유사한 콘텐츠 조각 콘텐츠를 사용하기 위해 MSM의 라이브 카피 기능을 사용하는 방법에 대해 알아봅니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 10%
+source-wordcount: '438'
+ht-degree: 12%
 
 ---
 
@@ -41,7 +42,7 @@ MSM 개념에 대한 자세한 개요는 [콘텐츠 재사용: 다중 사이트 
 >
 >콘텐츠 조각용 MSM은 **Assets** 콘솔을 통해 콘텐츠 조각을 사용하는 경우에만 사용할 수 있습니다.
 >
->MSM 기능은 **콘텐츠 조각** 콘솔을 사용할 때 *사용할 수 없습니다*.
+>MSM 기능은 *콘텐츠 조각* 콘솔을 사용할 때 **사용할 수 없습니다**.
 
 ## 방법 {#how-to}
 
@@ -49,11 +50,11 @@ MSM 개념에 대한 자세한 개요는 [콘텐츠 재사용: 다중 사이트 
 
 * 콘텐츠 조각(및 Assets)용 [MSM을 사용하는 방법](/help/assets/reuse-assets-using-msm.md)
 
-* [라이브 카피 만들기](/help/assets/reuse-assets-using-msm.md)
+* [Live Copy 만들기](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >MSM을 사용하여 콘텐츠 조각의 복사본을 만들려면 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)에서 사용되는 모든 데이터 형식에서 **고유** 제약 조건을 제거해야 합니다.
+  >MSM을 사용하여 콘텐츠 조각의 복사본을 만들려면 **콘텐츠 조각 모델**&#x200B;에서 사용되는 모든 데이터 형식에서 [고유](/help/assets/content-fragments/content-fragments-models.md) 제약 조건을 제거해야 합니다.
 
 * [소스 및 라이브 카피의 속성 및 상태 보기](/help/assets/reuse-assets-using-msm.md#properties)
 * [소스에서 라이브 카피로 수정 사항 전파](/help/assets/reuse-assets-using-msm.md#rollout-sync)

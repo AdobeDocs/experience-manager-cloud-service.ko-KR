@@ -4,10 +4,11 @@ description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3700'
 ht-degree: 6%
 
 ---
@@ -94,7 +95,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 ## 비디오 프로필에서 스마트 자르기 사용 정보 {#about-smart-crop-video}
 
-비디오용 스마트 자르기는 비디오 프로필에서 사용할 수 있는 선택적 기능입니다. Adobe AI를 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다.
+비디오용 스마트 자르기는 비디오 프로필에서 사용할 수 있는 선택적 기능입니다. Adobe AI을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다.
 
 스마트 자르기에 지원되는 비디오 형식에는 MP4, MKV, MOV, AVI, FLV 및 WMV가 포함됩니다.
 
@@ -104,7 +105,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * 초당 30프레임(FPS).
 * 파일 크기: 300MB
 
-Adobe AI는 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe AI와 스마트 자르기를 지원하려면 60FPS 비디오가 2분 30초여야 합니다.
+Adobe AI은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe AI 및 스마트 자르기에서 지원되려면 2분 30초 정도 있어야 합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -379,7 +380,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**&#x200B;에서 폴더 이름 바로 아래에 프로필 이름이 표시됩니다.
+1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**에서 폴더 이름 바로 아래에 프로필 이름이 표시됩니다.
 [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
 
 #### 속성에서 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}

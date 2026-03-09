@@ -1,12 +1,13 @@
 ---
 title: 알림 관리
 description: Assets 보기 알림을 사용하여 저장소에서 사용할 수 있는 에셋 또는 폴더에서 수행된 작업을 모니터링합니다.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '780'
 ht-degree: 46%
 
 ---
@@ -72,7 +73,7 @@ Assets 보기 알림을 사용하면 저장소에서 사용할 수 있는 에셋
 
    ![Assets 보기의 알림](assets/enable-notifications.png)
 
-1. 알림 범주를 보려면 **[!UICONTROL 맞춤화]**&#x200B;를 클릭합니다.
+1. 알림 범주를 보려면 **[!UICONTROL 맞춤화]**를 클릭합니다.
    ![Assets 보기의 알림](assets/enable-notification-categories.png)
 
 1. 알림을 받아야 하는 알림 범주를 선택합니다.

@@ -3,17 +3,18 @@ title: ' [!DNL Adobe AI] 스마트 서비스로 자산 자동 태그 지정'
 description: 상황에 맞게 설명적인 비즈니스 태그를 적용해 주는 AI 서비스로 자산에 태그를 지정해 줍니다.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1516'
 ht-degree: 7%
 
 ---
 
-
 # 스마트 태그 교육
 
-스마트 태그 교육을 사용하면 관련 태그가 없는 경우 세부 사항을 지정할 수 있도록 태그를 교육할 수 있습니다. [Adobe AI](https://business.adobe.com/ai/adobe-genai.html)의 인공 지능형 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 이 콘텐츠 인텔리전스는 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. [!DNL Experience Manager Assets]은(는) 기본적으로 업로드된 자산에 스마트 태그를 자동으로 적용합니다.
+스마트 태그 교육을 사용하면 관련 태그가 없는 경우 세부 사항을 지정할 수 있도록 태그를 교육할 수 있습니다. [Adobe AI](https://business.adobe.com/ai/adobe-genai.html)의 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 이 콘텐츠 인텔리전스는 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. [!DNL Experience Manager Assets]은(는) 기본적으로 업로드된 자산에 스마트 태그를 자동으로 적용합니다.
 
 ## 스마트 태그 교육 요구 사항 확인 {#smart-tag-training-requirement}
 

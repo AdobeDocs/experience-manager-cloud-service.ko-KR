@@ -10,10 +10,11 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2629'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ _Dynamic Media URL의 구조._
 
 계정 이름은 자주색으로 된 부분입니다. 이 경우 계정을 `jpearldemo`이라고 합니다.
 
-자산 ID 또는 이름 `AdobeStock_28563982`이(가) 녹색으로 표시되어 있습니다. 자산에 `.png` 또는 `.jpg`과(와) 같은 _no_ 파일 확장명이 있습니다. 에셋을 Dynamic Media에 수집하면 파일 확장자가 제거되고 다른 종류의 파일이 생성됩니다. 피라미드 TIFF 파일입니다. Pyramic-TIFF을 사용하면 Dynamic Media가 신속하게 표현물을 즉석에서 만들 수 있습니다.
+자산 ID 또는 이름 `AdobeStock_28563982`이(가) 녹색으로 표시되어 있습니다. 자산에 _또는_&#x200B;과(와) 같은 `.png`no`.jpg` 파일 확장명이 있습니다. 에셋을 Dynamic Media에 수집하면 파일 확장자가 제거되고 다른 종류의 파일이 생성됩니다. 피라미드 TIFF 파일입니다. Pyramic-TIFF을 사용하면 Dynamic Media가 신속하게 표현물을 즉석에서 만들 수 있습니다.
 
 마지막으로 이미지 처리 매개 변수 `?wid=1000&fmt=jpeg&qlt=85`이(가) 끝에 노란색으로 표시됩니다.
 
@@ -61,10 +62,10 @@ _Dynamic Media URL의 구조._
 
 시계의 새 렌디션이 생성됩니다. 이미지의 폭을 변경하는 이러한 간단한 연습에서 이해하는 핵심은 표시되는 이미지가 100% 동적으로 생성된다는 것입니다.
 
-이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 **[!UICONTROL Enter]**&#x200B;를 누른 후 브라우저가 Dynamic Media 이미지 서버로 돌아갑니다. 방금 입력한 새 너비 값을 기반으로 시계의 새 렌디션을 생성한 다음 새 이미지를 브라우저에 다시 전달하고 캐시합니다.
 
-Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko).
+Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 이제 시계 이미지에 회전 매개 변수를 추가해 보십시오. `wid=1000` 바로 다음에 오는 URL 경로의 끝에 `&rotate=90`을(를) 입력한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
@@ -216,7 +217,7 @@ _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -225,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 
