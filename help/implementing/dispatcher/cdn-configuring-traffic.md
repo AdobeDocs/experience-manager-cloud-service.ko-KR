@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1932'
 ht-degree: 1%
 
 ---
@@ -437,6 +437,10 @@ data:
 | **forwardAuthorization**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
 | **시간 초과**(선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
 
+>[!IMPORTANT]
+>
+>**도메인** 값은 `.adobeaemcloud.com`을(를) 포함할 수 없습니다. adobeaemcloud.com 도메인에는 직접 프록시를 지정할 수 없습니다. 이 제한은 원치 않는 요청 루프로부터 보호합니다. AEM as a Cloud Service 환경에 트래픽을 프록시하려면 AEMaaCS 환경에 설치된 [사용자 지정 도메인](#proxying-to-aemaacs)을(를) 원본 백엔드로 대신 사용하십시오.
+
 ### 사용자 정의 도메인을 AEM 정적 계층으로 프록시 지정 {#proxy-custom-domain-static}
 
 원본 선택기를 사용하여 AEM 게시 트래픽을 [프론트엔드 파이프라인](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 사용하여 배포된 AEM 정적 콘텐츠로 라우팅할 수 있습니다. 사용 사례에는 페이지와 동일한 도메인(예: example.com/static) 또는 명시적으로 다른 도메인(예: static.example.com)에서 정적 리소스를 제공하는 것이 포함됩니다.
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >Adobe 관리 CDN이 사용되므로 Edge Delivery Services **푸시 무효화 설정 설명서**&#x200B;를 따라 [관리](https://www.aem.live/docs/byo-dns#setup-push-invalidation) 모드에서 푸시 무효화를 구성해야 합니다.
+
+
+### AEMaaCS 환경으로 프록시 설정 {#proxying-to-aemaacs}
+
+CDN 구성에서 `adobeaemcloud.com` 도메인을 원본으로 직접 사용할 수 없습니다. 원치 않는 요청 루프로부터 보호하기 위해 거부됩니다(도메인에 `.adobeaemcloud.com`이(가) 없어야 함). 이는 Edge Delivery 사이트용으로 설치된 도메인에서 라우팅할 때도 적용됩니다.
+
+사용자 지정 도메인(`www.example.com`)이 이미 AEMaaCS 환경에 설치된 경우 기본 라우팅은 CDN 규칙 없이 AEM 백엔드로 라우팅됩니다. 교차 환경(예: `pXXXX-eYYYY`에서 `pXXXX-eZZZZ`(으)로 또는 Edge Delivery 사이트에서 AEMaaCS 환경으로 라우팅해야 하는 경우 원본 선택기를 사용하십시오.
+
+이러한 경우 트래픽을 AEM as a Cloud Service 환경으로 프록시 처리하려면(예: `/graphql`과(와) 같은 특정 경로를 백엔드로 라우팅하려면) AEMaaCS 환경에 사용자 지정 도메인을 설치하고 해당 사용자 지정 도메인을 CDN 구성의 원본으로 사용합니다.
+
+**예:** `publish-pXXXXX-eYYYYY.adobeaemcloud.com`에서 AEM 게시 계층에 연결할 수 있는 경우 `originSelectors`에서 해당 도메인을 사용하지 마십시오. 대신:
+
+1. 게시 서비스를 가리키는 사용자 지정 도메인을 AEMaaCS 환경(예: `aem-publish-origin.example.com`)에 설치합니다.
+2. CDN 구성에서 해당 사용자 정의 도메인으로 원본을 정의하고 원하는 경로(예: `/graphql`)를 해당 도메인으로 라우팅합니다.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## 서버측 리디렉션 {#server-side-redirectors}
