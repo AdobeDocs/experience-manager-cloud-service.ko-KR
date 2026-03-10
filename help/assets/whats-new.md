@@ -35,7 +35,7 @@ Content Hub에서 AEM 거버넌스 에이전트는 적절한 사람만 적절한
 
 ![권한 관리 개요](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## 10월 릴리스 기능 {#october-release-features}
@@ -56,7 +56,7 @@ Content Hub에서 AEM 거버넌스 에이전트는 적절한 사람만 적절한
 
 이제 Content Hub 관리자는 빠른 액세스를 위해 Content Hub에서 컬렉션을 고정할 수 있습니다. 고정된 컬렉션은 컬렉션 홈 페이지의 전용 **[!UICONTROL 고정된]** 섹션에 표시되므로 중요한 컬렉션을 쉽게 도달할 수 있습니다.
 
-[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 이 기능에 대해 자세히 알아보기]{type=Informative url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
