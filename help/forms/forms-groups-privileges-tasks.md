@@ -3,10 +3,11 @@ title: AEM Forms as a Cloud Service에서 즉시 사용할 수 있는 사용자 
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '213'
 ht-degree: 22%
 
 ---
@@ -15,10 +16,10 @@ ht-degree: 22%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
 [!DNL AEM Forms] as a Cloud Service을 설정하면 아래 표에 나열된 그룹(예: [!DNL forms-users] 및 Forms-Power-User)을 자동으로 할당할 수 있습니다.
 

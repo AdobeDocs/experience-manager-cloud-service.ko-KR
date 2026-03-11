@@ -1,5 +1,5 @@
 ---
-title: HTML 5 양식 디버깅
+title: HTML5 양식 디버깅
 description: 이 문서에는 알려진 다양한 문제를 해결하는 단계가 나열되어 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
-# HTML 5 양식 디버깅 {#debugging-html-forms}
+# HTML5 양식 디버깅 {#debugging-html-forms}
 
 이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하기 위한 몇 가지 단계가 제공됩니다. 다음 단계를 수행하고 문제가 지속되면 로그를 가져오고 오류/경고를 검토하도록 로거를 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 [HTML5 양식에 대한 로그 생성](/help/forms/enable-logs.md)을 참조하십시오.
 
@@ -62,7 +63,7 @@ ht-degree: 0%
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. https://&lt;server>:&lt;port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
+1. https://<server>:<port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
 
    다음 번들의 상태가 &quot;활성&quot;인지 확인하십시오.
 

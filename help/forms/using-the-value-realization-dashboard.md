@@ -1,21 +1,23 @@
 ---
-title: 값 실현 대시보드를 사용하여 양식 및 문서 사용 트렌드 분석
+title: 가치 실현 대시보드를 사용하여 양식 및 문서 사용 추세 분석
 description: Forms 사용 인사이트 대시보드를 사용하여 양식 및 양식 조각의 성능을 모니터링하고 이해하는 방법에 대해 알아봅니다.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 6%
 
 ---
 
-# 값 실현 대시보드를 사용하여 양식 및 문서 사용 트렌드 분석
+# 가치 실현 대시보드를 사용하여 양식 및 문서 사용 추세 분석
 
-<span class="preview"> 이 기능은 조기 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오. <span>
+<span class="preview"> 이 기능은 얼리 액세스 프로그램을 통해 사용할 수 있습니다. 액세스 권한을 요청하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오. <span>
 
 ![값 실현 대시보드](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -116,7 +118,7 @@ Forms 사용 통찰력 대시보드에 액세스하려면:
 - **추출할 정보:**
    - **조각 재사용 비율:** 기존 조각이 새 양식에서 재사용되는 비율을 모니터링합니다. 이 수치가 높을수록 재사용 가능한 구성 요소의 활용도가 높아지고 효율성이 향상됩니다.
 
-## 예제 시나리오
+## 예시
 
 - **시나리오:** &quot;양식 제출&quot;이 갑자기 줄어든 것을 발견했습니다.
    - **작업:** 양식 다운타임, 사용 가능성 문제 또는 양식의 랜딩 페이지 트래픽 감소와 같은 잠재적 원인을 조사합니다.

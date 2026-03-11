@@ -4,11 +4,12 @@ description: 이 문서에서는 핵심 구성 요소를 기반으로 하는 적
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e10451553692b6ad957421783e176409b36b642b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 0%
+source-wordcount: '1567'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +20,11 @@ ht-degree: 0%
 
 ## 첫 번째 패널이 유효한 경우 단추 클릭 시 포커스를 다른 패널로 설정
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko-KR#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 규칙 편집기를 사용하면 가로 탭, 세로 탭, 아코디언 또는 단추 클릭 시 마법사와 같은 패널 레이아웃의 유효성을 검사하고 포커스를 다른 패널의 양식 객체로 설정할 수 있습니다. 이 기능을 사용하여 양식 탐색 및 사용자 경험을 개선할 수 있습니다.
 
-마법사 레이아웃을 사용하는 여러 단계 애플리케이션 양식을 상상해 보십시오. `Employment Details`(으)로 이동하려면 `Personal Information` 패널을 완료해야 합니다. `Next` 단추를 클릭하면 규칙 편집기가 `Personal Information` 패널의 유효성을 검사합니다. 모든 필수 필드를 올바르게 채우면 양식에서 자동으로 포커스를 `Employment Details` 패널로 이동합니다. 그렇지 않으면 누락 필드를 완료하라는 오류 메시지가 표시됩니다.
+마법사 레이아웃을 사용하는 여러 단계 애플리케이션 양식을 상상해 보십시오. `Personal Information`(으)로 이동하려면 `Employment Details` 패널을 완료해야 합니다. `Next` 단추를 클릭하면 규칙 편집기가 `Personal Information` 패널의 유효성을 검사합니다. 모든 필수 필드를 올바르게 채우면 양식에서 자동으로 포커스를 `Employment Details` 패널로 이동합니다. 그렇지 않으면 누락 필드를 완료하라는 오류 메시지가 표시됩니다.
 
 `Next` 단추에 규칙을 만들어 첫 번째 패널의 유효성을 검사할 수 있습니다.
 

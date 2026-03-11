@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에서 사용자 정의 표시 만들기
+title: HTML5 양식에서 사용자 정의 모양 만들기
 description: 모바일 Forms에 사용자 정의 위젯을 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 사용자 정의 위젯을 개발할 수 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
-# HTML5 양식에서 사용자 정의 표시 만들기{#create-custom-appearances-in-html-forms}
+# HTML5 양식에서 사용자 정의 모양 만들기{#create-custom-appearances-in-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### XFA 스크립팅 엔진을 사용하여 사용자 정의 위젯 등록  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-사용자 지정 위젯 코드가 준비되면 `registerConfig`Form Bridge[용 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API를 사용하여 스크립팅 엔진에 위젯을 등록합니다. widgetConfigObject를 입력으로 사용합니다.
+사용자 지정 위젯 코드가 준비되면 `registerConfig`Form Bridge[용 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API를 사용하여 스크립팅 엔진에 위젯을 등록합니다. widgetConfigObject를 입력으로 사용합니다.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

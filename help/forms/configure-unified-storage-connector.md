@@ -3,10 +3,11 @@ title: AEM Forms용 통합 스토리지 커넥터(USC)를 구성하는 방법
 description: AEM Forms용 USC(Unified Storage Connector)를 관리하는 방법을 알아봅니다. USC(통합 스토리지 커넥터)를 사용하여 AEM Forms을 외부 데이터 스토리지에 연결합니다.
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ ht-degree: 0%
 
 USC(통합 스토리지 커넥터)를 사용하여 AEM Forms을 외부 데이터 스토리지에 연결할 수 있습니다.
 
-예를 들어 적응형 양식의 필드 값을 채워 AEM 워크플로우에 제출할 수 있습니다. 또한 AEM Azure 스토리지 서버와 같은 외부 스토리지에 데이터를 저장하도록 Microsoft Workflow를 구성할 수 있습니다. USC(통합 스토리지 커넥터)를 사용하여 AEM 워크플로우와 외부 스토리지 간의 연결을 만듭니다.
+예를 들어 적응형 양식의 필드 값을 채워 AEM 워크플로우에 제출할 수 있습니다. 또한 AEM Workflow를 구성하여 Microsoft Azure 스토리지 서버와 같은 외부 스토리지에 데이터를 저장할 수 있습니다. USC(통합 스토리지 커넥터)를 사용하여 AEM 워크플로우와 외부 스토리지 간의 연결을 만듭니다.
 
-## Microsoft Azure 스토리지 서버와 AEM 워크플로 연결 {#connect-workflows-with-azure}
+## AEM 워크플로우와 Microsoft Azure 스토리지 서버 연결 {#connect-workflows-with-azure}
 
-Azure 스토리지 구성을 만들고 USC(통합 스토리지 커넥터)를 사용하여 해당 구성을 참조합니다. 그런 다음 AEM 워크플로 모델을 구성하여 데이터 저장소를 외부화하여 Azure 스토리지 서버에 연결할 수 있습니다.
+Azure 스토리지 구성을 만들고 USC(통합 스토리지 커넥터)를 사용하여 해당 구성을 참조하십시오. 그런 다음 AEM 워크플로 모델을 구성하여 데이터 저장소를 외부화하여 Azure 스토리지 서버에 연결할 수 있습니다.
 
 ### [!DNL Azure] 저장소 구성 만들기 {#create-azure-storage-configuration}
 
@@ -30,7 +31,7 @@ Azure 스토리지 구성을 만들고 USC(통합 스토리지 커넥터)를 사
 1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
 1. 구성을 만들 폴더를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
-1. **[!UICONTROL Azure 저장소 계정]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
+1. [!DNL Azure]Azure 저장소 계정&#x200B;**[!UICONTROL 필드에]** 저장소 계정의 이름을 지정하십시오.
 1. **[!UICONTROL Azure 액세스 키]** 필드에서 Azure 저장소 계정에 액세스할 키를 지정하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ### AEM 워크플로우에 대한 통합 스토리지 커넥터(USC) 구성 {#configure-unified-storage-connector-workflows}
@@ -40,7 +41,7 @@ AEM 워크플로우용 통합 스토리지 커넥터(USC)를 구성하려면 다
 1. **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 저장소 커넥터]**&#x200B;로 이동합니다.
 
 1. **[!UICONTROL 워크플로]** 섹션의 저장소 드롭다운 목록에서 **[!UICONTROL Azure]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL 저장소 구성 경로]** 필드에 Azure 저장소 구성에 대한 [구성 경로](#create-azure-storage-configuration)를 지정하십시오.
+1. [저장소 구성 경로](#create-azure-storage-configuration) 필드에 Azure 저장소 구성에 대한 **[!UICONTROL 구성 경로]**&#x200B;를 지정하십시오.
 1. **[!UICONTROL 게시]**&#x200B;를 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택하여 구성을 저장합니다.
 
 ### 외부 데이터 스토리지에 대한 AEM 워크플로 모델 구성 {#configure-workflow-external-data-storage}
@@ -59,11 +60,11 @@ AEM 워크플로우용 통합 스토리지 커넥터(USC)를 구성하려면 다
 
 ### 외부 데이터 저장소용 AEM 워크플로 지침 {#guidelines-workflows-external-data-storage}
 
-다음은 AEM Workflow를 사용하고 Microsoft Azure 스토리지 서버와 같은 외부 데이터 저장소에 데이터를 저장하는 경우의 지침입니다.
+다음은 AEM 워크플로우를 사용하고 데이터를 Microsoft Azure 스토리지 서버와 같은 외부 데이터 스토리지에 저장하는 경우의 지침입니다.
 
-* 워크플로우 모델 단계에서 입력 및 출력 데이터 파일과 첨부 파일을 정의하는 동안 변수를 사용하여 데이터를 저장합니다. **[!UICONTROL 페이로드 관련]** 및 **[!UICONTROL 절대 경로에서 사용 가능]** 옵션을 선택하지 마십시오. [외부 데이터 저장소에 대한 AEM Workflow 모델을 구성](#configure-workflow-external-data-storage)한 후에는 **[!UICONTROL 페이로드에 따라]** 및 **[!UICONTROL 절대 경로에서 사용 가능]** 옵션이 자동으로 표시되지 않습니다.
+* 워크플로우 모델 단계에서 입력 및 출력 데이터 파일과 첨부 파일을 정의하는 동안 변수를 사용하여 데이터를 저장합니다. **[!UICONTROL 페이로드 관련]** 및 **[!UICONTROL 절대 경로에서 사용 가능]** 옵션을 선택하지 마십시오. **[!UICONTROL 외부 데이터 저장소에 대한 AEM Workflow 모델을 구성]**&#x200B;한 후에는 **[!UICONTROL 페이로드에 따라]** 및 [절대 경로에서 사용 가능](#configure-workflow-external-data-storage) 옵션이 자동으로 표시되지 않습니다.
 
-* 적응형 양식을 AEM Workflow에 제출하는 동안 변수를 사용하여 데이터 파일 및 첨부 파일을 저장합니다. 적응형 양식을 AEM 워크플로에 제출하는 동안 **[!UICONTROL 페이로드에 비례]** 옵션을 선택하지 마십시오. [외부 데이터 저장소에 대한 AEM Workflow 모델을 구성](#configure-workflow-external-data-storage)한 후에는 **[!UICONTROL 페이로드에 상대적인]** 옵션이 자동으로 표시되지 않습니다.
+* 적응형 양식을 AEM Workflow에 제출하는 동안 변수를 사용하여 데이터 파일 및 첨부 파일을 저장합니다. 적응형 양식을 AEM 워크플로에 제출하는 동안 **[!UICONTROL 페이로드에 비례]** 옵션을 선택하지 마십시오. **[!UICONTROL 외부 데이터 저장소에 대한 AEM Workflow 모델을 구성]**&#x200B;한 후에는 [페이로드에 상대적인](#configure-workflow-external-data-storage) 옵션이 자동으로 표시되지 않습니다.
 
 * 워크플로 모델에서 사용자 지정 AEM 워크플로 단계를 사용하여 CRX DE 저장소에 데이터를 저장하지 마십시오.
 

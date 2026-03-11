@@ -1,33 +1,34 @@
 ---
 title: ' [!DNL AEM Forms] 을(를) 클라우드 서비스 환경으로 설정하려면 어떻게 해야 합니까?'
-description: as a Cloud Service  [!DNL AEM Forms] 환경을 설정하고 구성하는 방법에 대해 알아봅니다.
+description: ' [!DNL AEM Forms] as a Cloud Service 환경을 설정하고 구성하는 방법에 대해 알아봅니다.'
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '616'
 ht-degree: 7%
 
 ---
 
-# as a Cloud Service [!DNL AEM Forms] (으)로 온보드 {#overview}
+# [!DNL AEM Forms] as a Cloud Service에 온보드 {#overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
 ## 성향 결정 {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> AEM(Adobe Experience Manager) Forms as a Cloud Service 환경에 온보딩하기 전에 프로젝트에 대한 담당자를 결정하고 팀을 구성하십시오. 일반적인 [!DNL AEM Forms] 프로젝트 팀에는 다음과 같은 가상 사용자가 있습니다.
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Adobe Experience Manager(AEM) Forms as a Cloud Service 환경에 온보딩하기 전에 프로젝트의 담당자를 결정하고 팀을 구성합니다. 일반적인 [!DNL AEM Forms] 프로젝트 팀에는 다음과 같은 가상 사용자가 있습니다.
 
 * **사용자 환경(UX) Designer**: 사용자 환경(UX) Designer은 [!DNL AEM Forms]개 에셋의 스타일, 레이아웃 및 브랜딩을 정의합니다.
 
-* **Forms 실무자**: Forms 실무자는 UX Designer에서 제공하는 스타일, 레이아웃 및 브랜딩에 따라 적응형 Forms, 테마 및 템플릿을 만듭니다. 또한 전문가는 적응형 양식을 만들고 양식 데이터 모델(FDM) 및 AEM 워크플로우와 통합합니다. Forms 전문가는 일반적으로 프론트엔드 관련 작업을 수행합니다.
+* **Forms 실무자**: Forms 실무자는 UX Designer에서 제공하는 스타일, 레이아웃 및 브랜딩에 따라 적응형 Forms, 테마 및 템플릿을 만듭니다. 또한 전문가는 적응형 양식을 만들어 양식 데이터 모델(FDM) 및 AEM 워크플로우와 통합합니다. Forms 전문가는 일반적으로 프론트엔드 관련 작업을 수행합니다.
 
-* **Forms 개발자**: Forms 개발자는 사용자 지정 양식 솔루션을 개발합니다. Forms 개발자는 일반적으로 사용자 지정 구성 요소 개발, AEM 워크플로, 미리 채우기 서비스 등과 같은 백엔드 개발을 수행합니다.
+* **Forms 개발자**: Forms 개발자는 사용자 지정 양식 솔루션을 개발합니다. Forms 개발자는 일반적으로 사용자 지정 구성 요소 개발, AEM 워크플로, 사전 채우기 서비스 등과 같은 백엔드 개발을 수행합니다.
 
 * **AEM 관리자**: AEM 관리자는 사용자 설정, 환경 강화, 데이터 소스 구성, 이메일 구성 및 타사 소프트웨어 등 전반적인 구성을 지원합니다. AEM 관리자는 Adobe Analytics, Adobe Target 및 Adobe Sign과 통합하는 것과 같은 통합도 지원합니다.
 
@@ -43,11 +44,11 @@ ht-degree: 7%
 
 ## 서비스 온보드 {#onboarding}
 
-* as a Cloud Service [!DNL Adobe Experience Manager]에 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ko-KR).
+* [ as a Cloud Service에 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager].
 
-* (샌드박스만 해당) 서비스를 온보딩한 후 프로덕션 및 비프로덕션 파이프라인을 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=ko) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko)합니다. as a Cloud Service 이를 통해 [!DNL AEM Forms]의 최신 기능을 사용할 수 있으며 환경에 도입할 수 있습니다.
+* (샌드박스만 해당) 서비스를 온보딩한 후 프로덕션 및 비프로덕션 파이프라인을 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)합니다. [!DNL AEM Forms] as a Cloud Service의 최신 기능을 활성화하고 환경에 제공합니다.
 
-Forms as a Cloud Service 를 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. as a Cloud Service [!DNL Adobe Experience Manager] [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ko-KR)에 대한 온보딩을 완료한 후 다음 작업을 수행하여 Forms - 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화하십시오. <!--You can also enable both the features-->:
+Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. [ as a Cloud Service에 대한 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager]을 완료한 후 다음 작업을 수행하여 Forms - 디지털 등록 또는 고객 커뮤니케이션 기능을 사용하도록 설정하십시오. <!--You can also enable both the features-->:
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동합니다.
@@ -75,22 +76,22 @@ Forms as a Cloud Service 를 사용하여 적응형 양식(디지털 등록)을 
 
 ## 사용자 구성 {#config-users}
 
-as a Cloud Service 서비스에 대한 온보딩을 완료한 후 [!DNL AEM Forms] 환경에 로그인하고 작성자 및 Publish 인스턴스를 열고 성향에 따라 Forms 관련 [AEM 그룹](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing)에 사용자를 추가하십시오. 다음 표에는 즉시 사용 가능한 Forms 관련 AEM 그룹 및 해당 사용자 유형이 나열되어 있습니다. 이 표에서는 각 사용자 유형에 대한 AEM 인스턴스 유형도 제공합니다.
+서비스에 대한 온보딩을 완료한 후 [!DNL AEM Forms] as a Cloud Service 환경에 로그인하고 작성자 및 게시 인스턴스를 열고 사용자에 따라 Forms 관련 [AEM 그룹](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)에 사용자를 추가하십시오. 다음 표에는 즉시 사용 가능한 Forms 관련 AEM 그룹 및 해당 사용자 유형이 나열되어 있습니다. 이 표에서는 각 사용자 유형에 대한 AEM 인스턴스 유형도 제공합니다.
 
 | 사용자 유형(가상 사용자) | 사용자 그룹 | AEM 인스턴스 |
 |---|---|---|
 | 양식 전문가 /Forms 개발자 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | 작성자 인스턴스 |
 | 사용자 경험(UX) Designer | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | 작성자 인스턴스 |
-| AEM 관리자 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 작성자 및 Publish 인스턴스 |
-| 최종 사용자 | <ul> <li>사용자가 로그인하여 적응형 양식을 보고 제출해야 하는 경우 해당 사용자를 [!DNL forms-users] 그룹에 추가하십시오. </li> <li>적응형 Forms에 액세스하는 데 사용자 인증이 필요하지 않은 경우 해당 사용자에게 그룹을 할당하지 마십시오. </li> </ul> | 작성자 및 Publish 인스턴스 |
+| AEM 관리자 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 작성자 및 게시 인스턴스 |
+| 최종 사용자 | <ul> <li>사용자가 로그인하여 적응형 양식을 보고 제출해야 하는 경우 해당 사용자를 [!DNL forms-users] 그룹에 추가하십시오. </li> <li>적응형 Forms에 액세스하는 데 사용자 인증이 필요하지 않은 경우 해당 사용자에게 그룹을 할당하지 마십시오. </li> </ul> | 작성자 및 게시 인스턴스 |
 
 Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하세요.
 
-<!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
+<!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 
 ## 다음 단계 {#next-steps}
 
-[로컬 개발 환경을 설정합니다](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들 수 있습니다. 또한 클라우드 개발 환경에 로그인하지 않고 [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)할 수 있습니다.
+[로컬 개발 환경을 설정합니다](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들 수 있습니다. 또한 클라우드 개발 환경에 로그인하지 않고 [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)할 수 있습니다.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 
@@ -116,11 +117,11 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 <!-- ## Onboard to the service {#onboarding}
 
-[Onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko) to the [!DNL Adobe Experience Manager] as a Cloud Service. 
+[Onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) to the [!DNL Adobe Experience Manager] as a Cloud Service. 
 
 After you onboard the service, configure a [local development environment](setup-local-development-environment.md). 
 
-Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
+Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
 ## Next step {#next-steps} -->
 
@@ -133,17 +134,17 @@ If you are new to AEM as a cloud service, contact your Adobe representative to c
 Log in to Cloud Manager and create a program. After the program is ready, create environments, add developers or users to environments, and run the pipeline to get the latest version of [!DNL AEM Forms] as a Cloud Service and start developing for your environment. The detailed steps are:
 
 1. Contact your Adobe representative to create an organization identifier for your company in the Adobe Identity Management System (IMS) and provide access to an administrator in your organization.
-1. Configure [Automated Forms Conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko). After a configuration is complete, a profile for Automated Forms Conversion Service is available in [Admin Console](https://adminconsole.adobe.com/).
+1. Configure [Automated Forms Conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=en). After a configuration is complete, a profile for Automated Forms Conversion Service is available in [Admin Console](https://adminconsole.adobe.com/).
 
     If the service is not available, log in to [Admin Console](https://adminconsole.adobe.com/). Use Adobe ID of administrator provisioned to use Automated Forms Conversion Service to login. Do not use any other ID or Federated ID to login.
     1. Click **[!UICONTROL Automated Forms Conversion Service]** option.
     1. Click **[!UICONTROL New Profile]** in the Products tab.
     1. Specify **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, and **[!UICONTROL Description]** for the profile. Click **[!UICONTROL Done]**. A profile is created. 
-1. Log in to [Cloud Manager](https://experience.adobe.com/#/@marketinghub/experiencemanager) and [create a program](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for your organization.
-1. [Create environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko#adding-environments) within your program.
+1. Log in to [Cloud Manager](https://experience.adobe.com/#/@marketinghub/experiencemanager) and [create a program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) for your organization.
+1. [Create environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments) within your program.
 1. Log in to [Admin console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html) and add developers or users to your organization.
-1. Run the [build pipeline](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). It brings latest [!DNL Experience Manager Forms] as a Cloud Service features to your environment.
-1. [Start developing](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and creating Adaptive Forms on [!DNL Experience Manager Forms] as a Cloud Service environment.
+1. Run the [build pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). It brings latest [!DNL Experience Manager Forms] as a Cloud Service features to your environment.
+1. [Start developing](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and creating Adaptive Forms on [!DNL Experience Manager Forms] as a Cloud Service environment.
 1. Configure the [local development environment](setup-local-development-environment.md) for rapid development
 
 ## Configure dispatcher caching {#caching}

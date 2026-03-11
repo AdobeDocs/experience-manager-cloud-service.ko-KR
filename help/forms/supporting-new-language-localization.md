@@ -2,11 +2,12 @@
 title: 기초 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 어떻게 합니까?
 description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많은 언어에 대한 로케일을 추가할 수 있습니다.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1226'
 ht-degree: 3%
 
 ---
@@ -15,12 +16,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | 핵심 구성 요소 | [여기 클릭](supporting-new-language-localization-core-components.md) |
 | 기초 구성 요소 | 이 문서 |
 
@@ -53,14 +54,14 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. [사전에 대한 로케일 지원 추가](#add-locale-support-for-the-dictionary)
 1. [저장소에서 변경 사항을 커밋하고 파이프라인을 배포합니다.](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. 저장소 복제 {#clone-the-repository}
+#### &#x200B;1. 저장소 복제 {#clone-the-repository}
 
 1. 명령줄에서 Forms Cloud Service 저장소를 복제하려는 위치로 이동합니다.
-1. [Cloud Manager에서 가져온](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git) 명령을 실행합니다. `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과(와) 비슷합니다.
+1. [Cloud Manager에서 가져온](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 명령을 실행합니다. `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`과(와) 비슷합니다.
 1. git 사용자 이름 및 암호를 사용하여 저장소를 복제합니다.
 1. 원하는 편집기에서 복제된 Forms Cloud Service 저장소 폴더를 엽니다.
 
-#### 2. 가이드 현지화 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. 가이드 현지화 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
 
 1. `Guide Localization Service.cfg.json` 파일을 찾은 다음 추가할 로케일을 지원되는 로케일 목록에 추가하십시오.
 
@@ -68,16 +69,16 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
    >
    > 이름이 `Guide Localization Service.cfg.json` 파일인 파일을 만듭니다(아직 없는 경우).
 
-#### 3. 로케일 이름별 폴더 클라이언트 라이브러리 추가 {#add-locale-name-specific-folder}
+#### &#x200B;3. 로케일 이름별 폴더 클라이언트 라이브러리 추가 {#add-locale-name-specific-folder}
 
 1. UI.content 폴더에서 `etc/clientlibs` 폴더를 만듭니다.
-1. `etc/clientlibs` 아래에 `locale-name`(이)라는 폴더를 추가로 만들어 xfa 및 af clientlib의 컨테이너 역할을 합니다.
+1. `locale-name` 아래에 `etc/clientlibs`(이)라는 폴더를 추가로 만들어 xfa 및 af clientlib의 컨테이너 역할을 합니다.
 
 ##### 3.1 locale-name 폴더에 로케일에 대한 XFA 클라이언트 라이브러리 추가
 
-`etc/clientlibs/locale_name` 아래에 `[locale-name]_xfa`(으)로 명명된 노드를 만들고 `xfaforms.I18N.<locale>` 범주로 `cq:ClientLibraryFolder`(으)로 입력한 후 다음 파일을 추가하십시오.
+`[locale-name]_xfa` 아래에 `cq:ClientLibraryFolder`(으)로 명명된 노드를 만들고 `etc/clientlibs/locale_name` 범주로 `xfaforms.I18N.<locale>`(으)로 입력한 후 다음 파일을 추가하십시오.
 
-* `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`에 정의된 대로 `<locale>`에 대해 `xfalib.locale.Strings`을(를) 정의하는 **I18N.js**.
+* **에 정의된 대로**&#x200B;에 대해 `xfalib.locale.Strings`을(를) 정의하는 `<locale>`I18N.js`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * 다음을 포함하는 **js.txt**:
   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
@@ -85,11 +86,11 @@ I18N.js
 
 ##### 3.2. locale-name 폴더에 대한 적응형 양식 클라이언트 라이브러리 추가
 
-1. `etc/clientlibs/locale_name`에서 이름이 `[locale-name]_af`이고 유형이 `cq:ClientLibraryFolder`인 노드를 만드십시오. 카테고리는 `guides.I18N.<locale>`이고 종속성은 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`입니다.
+1. `[locale-name]_af`에서 이름이 `cq:ClientLibraryFolder`이고 유형이 `etc/clientlibs/locale_name`인 노드를 만드십시오. 카테고리는 `guides.I18N.<locale>`이고 종속성은 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`입니다.
 1. 이름이 `javascript`인 폴더를 만들고 다음 파일을 추가합니다.
 
-   * [로케일 집합 지정](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)에 설명된 XFA 사양에 따라 `<locale>`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `guidelib.i18n`을(를) 정의하는 **i18n.js**.
-   * `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`에 정의된 대로 `<locale>`에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 **LogMessages.js**.
+   * **로케일 집합 지정**&#x200B;에 설명된 XFA 사양에 따라 `guidelib.i18n`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `<locale>`을(를) 정의하는 [i18n.js](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
+   * **에 정의된 대로**&#x200B;에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 `<locale>`LogMessages.js`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 
 1. 다음을 포함하는 **js.txt** 추가:
 
@@ -98,17 +99,17 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary}
 
 추가하려는 `<locale>`이(가) `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`에 없는 경우에만 이 단계를 수행하십시오.
 
-1. `etc`에 `languages` 폴더를 만듭니다. 아직 만들지 않았습니다.
+1. `languages`에 `etc` 폴더를 만듭니다. 아직 만들지 않았습니다.
 
 1. 다중 값 문자열 속성 `languages`이(가) 아직 없는 경우 노드에 추가하십시오.
 1. `<locale-name>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`을(를) 추가합니다(아직 없는 경우).
 
-1. `/etc/languages`의 `languages` 속성 값에 `<locale>`을(를) 추가합니다.
-1. 다음과 같이 etc/META-INF/[폴더 계층 구조]의 `filter.xml`에 생성된 폴더를 추가합니다.
+1. `<locale>`의 `languages` 속성 값에 `/etc/languages`을(를) 추가합니다.
+1. 다음과 같이 etc/META-INF/`filter.xml`폴더 계층 구조[ 아래의 ]에 만든 폴더를 추가합니다.
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -117,7 +118,7 @@ I18N.js
 
 변경 내용을 AEM Git 저장소에 커밋하기 전에 [Git 저장소 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git)에 액세스해야 합니다.
 
-#### 5. 저장소의 변경 사항을 커밋하고 파이프라인을 배포합니다 {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. 저장소의 변경 사항을 커밋하고 파이프라인을 배포합니다 {#commit-changes-in-repo-deploy-pipeline}
 
 로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 새 로케일 지원을 추가하려면 [파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)을 알아보세요.
 파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
@@ -158,7 +159,7 @@ I18N.js
 
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
-* Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
+* Adobe에서는 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
 
 * 기존 적응형 양식에 새 필드를 추가하는 경우:
    * **기계 번역의 경우**: 사전을 다시 만들고 번역 프로젝트를 실행합니다. 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.

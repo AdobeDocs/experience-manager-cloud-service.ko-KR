@@ -1,12 +1,13 @@
 ---
-title: Azure 스토리지를 구성하는 방법
+title: Azure 스토리지 구성 방법
 description: 양식을 Azure 스토리지 서버와 통합하는 방법을 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -27,15 +28,15 @@ ht-degree: 1%
 
 이 단계를 실행하기 전에 [!DNL Azure] 저장소 계정과 [!DNL Azure] 저장소 계정에 대한 액세스를 승인할 액세스 키가 있는지 확인하십시오.
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
 1. 구성을 만들 폴더를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
-1. **[!UICONTROL Azure 저장소 계정]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
+1. [!DNL Azure]Azure 저장소 계정&#x200B;**[!UICONTROL 필드에]** 저장소 계정의 이름을 지정하십시오.
 1. **[!UICONTROL Azure 액세스 키]** 필드에서 Azure 저장소 계정에 액세스할 키를 지정하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ## 양식 데이터 모델 만들기 {#create-azure-form-data-model}
 
-[!DNL Azure] 저장소 구성을 만든 후 [양식 데이터 모델을 만들 수 있습니다](create-form-data-models.md). FDM(양식 데이터 모델)을 만드는 동안 **[!UICONTROL 데이터 Source 구성]** 필드에 [!DNL Azure] 구성을 포함하는 폴더를 지정하십시오. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
+[!DNL Azure] 저장소 구성을 만든 후 [양식 데이터 모델을 만들 수 있습니다](create-form-data-models.md). FDM(양식 데이터 모델)을 만드는 동안 [!DNL Azure]데이터 Source 구성&#x200B;**[!UICONTROL 필드에]** 구성을 포함하는 폴더를 지정하십시오. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
 
 ### 양식 데이터 모델에 [!DNL Azure] 서비스 추가 {#add-azure-services}
 
@@ -61,11 +62,11 @@ ht-degree: 1%
      </tr>
      <tr>
       <td>Azure에서 Blob 가져오기</td>
-      <td>ID 또는 이름을 사용하여 Azure 저장소에서 Blob으로 저장된 데이터를 검색합니다.</td>
+      <td>ID 또는 이름을 사용하여 Azure 저장소에서 Blob로 저장된 데이터를 검색합니다</td>
      </tr>
      <tr>
       <td>Azure에서 바이너리 URL이 있는 Blob 가져오기</td>
-      <td>ID 또는 이름을 사용하여 Azure 스토리지의 바이너리에 대한 URL이 있는 Blob로 저장된 데이터를 검색합니다.</td>
+      <td>ID 또는 이름을 사용하여 Azure 저장소의 바이너리에 대해 URL이 있는 Blob로 저장된 데이터를 검색합니다</td>
      </tr>
      <tr>
       <td>Azure에서 Blob 저장</td>
@@ -81,11 +82,11 @@ ht-degree: 1%
      </tr>
      <tr>
       <td>Azure에서 Blob용 SAS URL 검색</td>
-      <td>입력 요청의 Blob ID를 기반으로 Azure에서 Blob에 대한 SAS URL을 검색합니다.</td>
+      <td>입력 요청의 Blob ID를 기반으로 Azure의 Blob에 대한 SAS URL을 검색합니다.</td>
      </tr>
      <tr>
       <td>Azure에서 Blob 삭제</td>
-      <td>Blob ID를 사용하여 Azure 저장소에서 데이터를 삭제합니다.</td>
+      <td>Blob ID를 사용하여 Azure 스토리지에서 데이터를 삭제합니다.</td>
      </tr>
     </tbody>
    </table>
@@ -102,7 +103,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Azure는 Blob당 10개의 태그만 허용하므로 Azure 엔터티당 10개의 검색 키만 허용되며 검색 키로 표시된 속성 값은 해싱 후 Azure 인덱스 태그에 저장됩니다.
+>Azure은 Blob당 10개의 태그만 허용하므로 Azure 엔티티당 10개의 검색 키만 허용되며 검색 키로 표시된 속성 값은 해시 후 Azure 인덱스 태그에 저장됩니다.
 
 <!--
 

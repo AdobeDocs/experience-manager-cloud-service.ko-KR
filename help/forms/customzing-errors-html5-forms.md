@@ -3,13 +3,14 @@ title: HTML5 양식에 대한 오류 메시지 사용자 정의
 description: 위치 및 모양을 변경하는 방법을 포함하여 HTML5 양식에 대한 오류 메시지 표시를 사용자 지정하는 방법을 알아봅니다.
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 5%
+source-wordcount: '529'
+ht-degree: 6%
 
 ---
 

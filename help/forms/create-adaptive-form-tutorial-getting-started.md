@@ -7,11 +7,12 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 2%
+source-wordcount: '924'
+ht-degree: 3%
 
 ---
 
@@ -28,18 +29,18 @@ ht-degree: 2%
 * 적응형 양식 규칙 편집기를 사용하여 비즈니스 규칙 작성
 * 적응형 양식 필드 미리 채우기
 * 양식에 전자 서명 추가
-* Google reCAPTCHA를 사용하여 봇에서 양식 Protect
+* Google reCAPTCHA를 사용하여 보트로부터 양식 보호
 * 다양한 언어를 위한 적응형 양식 현지화
 * 구조화된 데이터를 생성하도록 양식 구성
 * REST 끝점에 데이터를 전송하도록 양식 설정
-* 적응형 양식 Publish
+* 적응형 양식 게시
 
 
 ## 핵심 구성 요소 기반 양식을 만드는 이유는 무엇입니까?
 
 AEM Forms은 양식 경험을 만들 수 있는 기초 구성 요소 및 핵심 구성 요소를 제공합니다. 핵심 구성 요소는 새로운 양식 경험을 만드는 현대적이고 권장되는 방법입니다. 핵심 구성 요소를 사용하는 이유 이러한 구성 요소는 가벼운 오픈 소스(github에서 사용 가능)이며, 뛰어난 Google 등대 및 웹 바이탈 점수를 제공하고, 접근성을 준수하며, AEM Sites의 모든 친숙한 기능(버전 관리 및 현지화 등)을 제공합니다. 또한 이러한 구성 요소는 스타일링이 더 쉬우므로 조직의 브랜딩 지침에 따라 모양을 쉽게 사용자 지정할 수 있습니다. 여기에는 서드파티 종속성이 없으며 JavaScript 및 CSS에 대한 지식을 가진 개발자가 이러한 구성 요소를 쉽게 사용자 지정할 수 있습니다.
 
-![적응형 Forms 기반의 핵심 구성 요소를 만드는 이유는 무엇입니까? 이러한 구성 요소는 가볍고, 스타일을 쉽게 지정하고, 높은 등대 점수를 제공하고, 접근성 표준을 지원하고, 쉽게 사용자 지정할 수 있고, 오픈 소스를 제공하고, github에서 사용할 수 있으며, 타사 라이브러리에 종속되지 않으며, AEM 개발자와 AEM 작성자를 위한 학습 곡선이 거의 없습니다. AEM Forms 핵심 구성 요소에는 AEM WCM 핵심 구성 요소의 모든 기능이 있습니다.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![적응형 Forms 기반의 핵심 구성 요소를 만드는 이유는 무엇입니까? 이러한 구성 요소는 가볍고, 스타일을 쉽게 지정하고, 높은 등대 점수를 제공하고, 접근성 표준을 지원하고, 쉽게 사용자 지정할 수 있고, 오픈 소스를 제공하고, github에서 사용할 수 있으며, 타사 라이브러리에 종속되지 않으며, AEM 개발자 및 AEM 작성자를 위한 학습 곡선이 거의 없습니다. 그 외에도 AEM Forms 핵심 구성 요소에는 AEM WCM 핵심 구성 요소의 모든 기능이 있습니다.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## 사용 사례: 적응형 Forms으로 간소화된 주택 대출 사전 자격
 
@@ -57,20 +58,20 @@ AEM Forms은 양식 경험을 만들 수 있는 기초 구성 요소 및 핵심 
 
 ## 개발 환경 설정
 
-적응형 양식을 Cloud Service 환경에 배포하기 전에 로컬 컴퓨터에서 직접 빌드하고 테스트할 수 있습니다. Adobe은에 로컬 개발을 위한 AEM SDK를 제공하여 다음을 수행할 수 있습니다.
+적응형 양식을 Cloud Service 환경에 배포하기 전에 로컬 컴퓨터에서 직접 빌드하고 테스트할 수 있습니다. Adobe은 로컬 개발을위한에 AEM SDK을 제공합니다. 이를 통해 다음과 같은 작업을 수행할 수 있습니다.
 
 * 로컬에서 양식을 만들고, 사용자 지정하고, 테스트합니다.
 * 양식 테마 디자인 및 로컬에서 구성 빌드,
 * 완료된 자산을 클라우드에 쉽게 배포할 수 있습니다.
 
-AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스를 간소화합니다
+AEM SDK을 사용한 로컬 개발을 통해 시간을 절약하고 개발 프로세스를 간소화합니다
 
 
 **시작할 준비가 되셨습니까?**
 
-1. [AEM 프로젝트에 대한 개발 도구 설정](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#install-git), [Node.js(npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#node-js) 및 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#install-maven)의 최신 릴리스를 다운로드하여 설치합니다. 또한 일반 텍스트 편집기를 설치하십시오. 이 자습서의 예제는 Visual Studio 코드를 기반으로 합니다.
+1. [AEM 프로젝트에 대한 개발 도구 설정](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git), [Node.js(npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js) 및 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)의 최신 릴리스를 다운로드하여 설치합니다. 또한 일반 텍스트 편집기를 설치하십시오. 이 자습서의 예제는 Visual Studio 코드를 기반으로 합니다.
 
-1. [AEM SDK 설치](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): 최신 버전의 AEM SDK를 다운로드하여 설치합니다. AEM 개발에 필수적인 도구를 제공합니다. AEM SDK 버전을 기록해 두십시오.
+1. [AEM SDK 설치](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): 최신 버전의 AEM SDK을 다운로드하여 설치합니다. AEM 개발에 필수적인 도구를 제공합니다. AEM SDK의 버전을 적어 두십시오.
 
    ![소프트웨어 배포](/help/forms/assets/software-distribution.png)
 
@@ -83,16 +84,16 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
 
    AEM Forms 추가 기능을 설치하려면:
 
-   1. AEM SDK를 중지합니다.
+   1. AEM SDK을 중지합니다.
    1. `AEM SDK/crx-quickstart/install` 폴더에 AEM Forms 추가 기능(.far) 파일 추가,
-   1. AEM SDK를 다시 시작합니다.
+   1. AEM SDK을 다시 시작합니다.
 
    +++
 
 1. [사용자 권한 구성](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): 개발, 작성 및 기타 권한을 가진 사용자를 만들고 이러한 사용자를 사전 정의된 양식 그룹에 추가합니다.
 
 
-1. [적응형 Forms 템플릿 추가](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): AEM Archetype 48 이상을 사용하여 새 AEM 프로젝트를 만들고 AEM SDK에 배포합니다. 프로젝트는 적응형 Forms 템플릿을 AEM SDK에 추가합니다.
+1. [적응형 Forms 템플릿 추가](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): AEM Archetype 48 이상을 사용하여 새 AEM 프로젝트를 만들고 AEM SDK에 배포합니다. 프로젝트는 AEM SDK에 적응형 Forms 템플릿을 추가합니다.
 
    ![적응형 양식 템플릿](/help/forms/assets/adaptive-forms-templates.png)
 

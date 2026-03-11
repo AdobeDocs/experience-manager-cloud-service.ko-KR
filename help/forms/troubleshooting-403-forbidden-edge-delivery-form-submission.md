@@ -1,17 +1,18 @@
 ---
-title: Edge Delivery Services 양식 제출에서 403 금지된 오류 해결
+title: Edge Delivery Services 양식 제출 시 발생하는 403 금지됨 오류 문제 해결
 description: Edge Delivery Services에서 AEM Publish로 양식을 제출할 때 403 금지된 오류를 진단하고 해결하는 방법을 알아봅니다. 이 안내서에서는 CORS, Dispatcher 규칙 및 레퍼러 필터 문제를 포함한 일반적인 원인을 다룹니다.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 11%
 
 ---
 
-# Edge Delivery Services 양식 제출에서 403 금지된 오류 해결 {#troubleshooting-403-forbidden-edge-delivery}
+# Edge Delivery Services 양식 제출 시 발생하는 403 금지됨 오류 문제 해결 {#troubleshooting-403-forbidden-edge-delivery}
 
 Edge Delivery Services에서 AEM Publish로 양식을 제출할 때 **403 사용할 수 없음** 오류가 발생할 수 있습니다. 이 오류는 일반적으로 보안 구성으로 인해 서버가 요청 처리를 거부하고 있음을 나타냅니다. 이 문서는 이 문제의 가장 일반적인 원인을 식별하고 해결하는 데 도움이 됩니다.
 
@@ -73,9 +74,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->`main--abc--adobe.aem.live` 및 `main--abc1--adobe.aem.live`을(를) 실제 사이트 도메인으로 바꾸십시오. 동일한 저장소에서 호스팅되는 각 사이트에는 별도의 CORS 구성 항목이 필요합니다.
+>`main--abc--adobe.aem.live` 및 `main--abc1--adobe.aem.live`를 귀하의 실제 사이트 도메인으로 바꿉니다. 동일한 저장소에서 호스팅되는 각 사이트에는 별도의 CORS 구성 항목이 필요합니다.
 
-자세한 CORS 구성은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
+CORS 구성에 대한 자세한 내용은 [CORS 구성 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)를 참조하십시오.
 
 ### &#x200B;2. Dispatcher 규칙
 
@@ -135,9 +136,9 @@ Dispatcher 필터 구성 예:
 **솔루션:**
 특정 Edge Delivery 사이트 도메인을 허용하도록 레퍼러 필터를 구성합니다.
 
-1. OSGi 구성 파일 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`을(를) 만들거나 업데이트합니다.
+1. OSGi 구성 파일을 생성하거나 업데이트합니다. `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 특정 사이트 도메인에 다음 구성을 추가합니다.
+2. 특정 사이트 도메인에 다음 구성을 추가:
 
    ```json
    {
@@ -165,7 +166,7 @@ Dispatcher 필터 구성 예:
    }
    ```
 
-3. Cloud Manager을 통해 구성 배포
+3. Cloud Manager를 통해 구성 배포
 
 >[!IMPORTANT]
 >

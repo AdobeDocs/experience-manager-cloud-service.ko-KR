@@ -3,13 +3,14 @@ title: HTML5 양식 소개
 description: HTML5 forms는 HTML5 형식으로 XFA 양식 템플릿을 렌더링할 수 있는 Adobe Experience Manager 소프트웨어의 새로운 기능입니다.
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 2%
 
 ---
 

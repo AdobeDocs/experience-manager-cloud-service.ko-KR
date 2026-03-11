@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에 대한 그림 절 지원
+title: HTML5 양식에 대한 그림 구절 지원
 description: HTML5 forms에서는 날짜, 텍스트 및 숫자 기호에 대한 표시 값 및 서식 있는 값에 대한 XFA Picture 절을 지원합니다.
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 1%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
-# HTML5 양식에 대한 그림 절 지원 {#picture-clause-support-for-html-forms}
+# HTML5 양식에 대한 그림 구절 지원 {#picture-clause-support-for-html-forms}
 
 <span class="preview"> HTML5 Forms 기능은 조기 액세스 프로그램의 일부로 제공됩니다. 액세스 권한을 요청하려면 공식(회사) 이메일 ID에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
 </span>

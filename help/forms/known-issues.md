@@ -1,15 +1,16 @@
 ---
-title: AEM Forms as a Cloud Service 환경의 알려진 문제와 제한 사항은 무엇입니까?
+title: AEM Forms as a Cloud Service 환경의 알려진 문제 및 제한 사항은 무엇입니까?
 description: ' [!DNL AEM Forms] as a Cloud Service 환경의 알려진 문제 및 제한 사항.'
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
 topic: Administration
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 95%
+source-wordcount: '373'
+ht-degree: 94%
 
 ---
 

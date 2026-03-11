@@ -3,11 +3,12 @@ title: AEM SDK을 다시 시작하는 방법
 description: AEM SDK을 다시 시작하는 우수 사례
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 16%
 
 ---
 
@@ -23,7 +24,7 @@ Java™ 프로세스를 중지한 후 AEM SDK을 다시 시작하면 가 AEM 개
 
 AEM SDK을 다시 시작하려면 활성 명령 창으로 이동하여 `Ctrl + C` 명령을 눌러 SDK을 다시 시작합니다.
 
-SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. 대체 방법(예: Java™ 프로세스 중지)을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 대체 방법(예: Java™ 프로세스 중지)을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## 추가 참조
 

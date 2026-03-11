@@ -1,13 +1,14 @@
 ---
 title: AEM Forms에서 부재 중 설정을 구성하는 방법
 description: 원활한 워크플로우 실행을 위해 부재 중 또는 부재 중 작업을 위임할 수 있습니다.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 4%
+source-wordcount: '879'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
@@ -40,7 +41,7 @@ ht-degree: 4%
 다음 단계를 수행하여 계정에 대해 부재 중 설정을 활성화하고 받은 편지함 항목을 다른 사용자에게 위임합니다.
 
 1. AEM 인스턴스에 로그인. ![받은 편지함](assets/bell.svg) 아이콘을 선택하고 **[!UICONTROL 모두 보기]**&#x200B;를 선택합니다. 받은 편지함 항목 목록이 나타납니다.
-1. **[!UICONTROL 만들기]** 단추 옆에 있는 ![보기 선택기](assets/viewlist.svg) 또는 ![보기 선택기](assets/calendar.svg) 아이콘을 선택하고 **[!UICONTROL 설정]**&#x200B;을 선택합니다. 설정 대화 상자가 나타납니다.
+1. ![만들기](assets/viewlist.svg) 단추 옆에 있는 ![보기 선택기](assets/calendar.svg) 또는 **[!UICONTROL 보기 선택기]** 아이콘을 선택하고 **[!UICONTROL 설정]**&#x200B;을 선택합니다. 설정 대화 상자가 나타납니다.
 1. 설정 대화 상자에서 **[!UICONTROL 부재 중]** 탭을 엽니다.
 1. 부재 설정을 사용하려면 **[!UICONTROL 사용/사용 안 함]** 단추를 선택하세요.
 1. 설정에 **[!UICONTROL 시작 시간]** 및 **[!UICONTROL 종료 시간]**&#x200B;을 지정하십시오. 지정된 기간 동안에만 항목이 위임됩니다. **[!UICONTROL 종료 시간]** 필드를 비워 두면 무제한 기간 동안 항목을 위임할 수 있습니다.
@@ -49,7 +50,7 @@ ht-degree: 4%
 
    또한 워크플로 모델에 관계 없이 모든 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하십시오. <br>
 
-   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**&#x200B;를 선택한 다음 제외할 워크플로 모델을 지정합니다.
+   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**를 선택한 다음 제외할 워크플로 모델을 지정합니다.
    <br>
 
    피할당자를 더 추가하려면 단계를 반복합니다. <br>
@@ -66,8 +67,8 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->(Forms 중심의 워크플로 항목만 해당) 워크플로에서 **[!UICONTROL 작업 할당]** 단계의 &#39;부재 중&#39; 설정&#x200B;**옵션을 사용하여**&#x200B;피할당자가 위임하도록 허용을(를) 활성화합니다. 위에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
->(Forms 중심의 워크플로 항목만 해당) 워크플로에서 **[!UICONTROL 작업 할당]** 단계의 &#39;부재 중&#39; 설정&#x200B;**옵션을 사용하여**&#x200B;피할당자가 위임하도록 허용합니다. 앞에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
+>(Forms 중심의 워크플로 항목만 해당) 워크플로에서 **[!UICONTROL 작업 할당]** 단계의 &#39;부재 중&#39; 설정&#x200B;**[!UICONTROL 옵션을 사용하여]**피할당자가 위임하도록 허용을(를) 활성화합니다. 위에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
+>(Forms 중심의 워크플로 항목만 해당) 워크플로에서 **[!UICONTROL 작업 할당]** 단계의 &#39;부재 중&#39; 설정&#x200B;**[!UICONTROL 옵션을 사용하여]**&#x200B;피할당자가 위임하도록 허용합니다. 앞에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
 
 ## 제한 사항 {#limitations}
 

@@ -1,19 +1,20 @@
 ---
-title: 첫 번째 대화형 통신 만들기
+title: 첫 번째 인터랙티브 커뮤니케이션 만들기
 description: AEM Forms Interactive Communications를 사용하여 쉽게 동적 데이터 기반 커뮤니케이션을 디자인합니다.
 feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 3%
+source-wordcount: '767'
+ht-degree: 5%
 
 ---
 
-
-# 첫 번째 대화형 통신 만들기
+# 첫 번째 인터랙티브 커뮤니케이션 만들기
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444094/)

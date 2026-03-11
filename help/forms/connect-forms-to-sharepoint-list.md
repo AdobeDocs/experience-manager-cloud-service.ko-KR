@@ -4,10 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: 적응형 양식에 대해 SharePoint 목록을 연결하는 방법? SharePoint에 제출, SharePoint 목록 구성 만들기, 적응형 양식의 SharePoint 제출 액션을 사용, Microsoft&reg; SharePoint 목록에 적응형 양식 연결.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '466'
 ht-degree: 30%
 
 ---

@@ -3,17 +3,18 @@ title: AFP 출력 동기화 API를 사용하는 방법
 description: AFP Output Sync API를 사용하여 출력 표현물을 검색하고 동기화하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '259'
 ht-degree: 13%
 
 ---
 
 # AEM Forms API를 사용하여 AFP 출력 생성
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 AFP(Advanced Function Presentation)는 주로 인쇄용으로 설계된 고성능 문서 형식입니다.\
 이 안내서에서는 AEM Forms을 사용하여 AFP 출력을 생성하는 데 필요한 모든 단계 및 구성을 간략하게 설명합니다.

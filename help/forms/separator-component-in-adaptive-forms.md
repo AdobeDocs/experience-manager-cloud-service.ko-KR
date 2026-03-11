@@ -3,13 +3,14 @@ title: 적응형 Forms의 분리자 구성 요소란 무엇입니까?
 description: 적응형 Forms의 분리자 구성 요소를 사용하여 양식 섹션을 시각적으로 분리합니다.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 4%
+source-wordcount: '319'
+ht-degree: 5%
 
 ---
-
 
 # 적응형 Forms의 분리자 구성 요소{#separator-component-in-adaptive-forms}
 
@@ -35,4 +36,3 @@ ht-degree: 4%
 1. 다음 중 하나를 수행하십시오.
    * **확인**&#x200B;을 클릭하여 변경 내용을 확인합니다.
    * **취소**&#x200B;를 클릭하여 대화 상자를 변경하지 않고 종료합니다.
-

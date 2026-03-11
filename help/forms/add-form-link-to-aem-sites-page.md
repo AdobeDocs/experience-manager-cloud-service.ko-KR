@@ -3,10 +3,11 @@ title: Forms 포털 연결 구성 요소를 사용하여 AEM Sites 페이지에 
 description: AEM Sites 페이지에 양식 링크를 추가하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---

@@ -4,17 +4,18 @@ description: 적응형 양식에 대한 XML 스키마를 만들고 스키마를 
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 6%
+source-wordcount: '962'
+ht-degree: 7%
 
 ---
 
-# 적응형 양식을 위한 XML 스키마 디자인 {#creating-adaptive-forms-using-xml-schema}
+# 적응형 양식에 대한 XML 스키마 디자인 {#creating-adaptive-forms-using-xml-schema}
 
 ## 사전 요구 사항 {#prerequisites}
 

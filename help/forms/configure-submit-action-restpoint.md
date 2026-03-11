@@ -4,10 +4,11 @@ description: 적응형 양식을 제출할 때 REST 끝점을 설정하는 단�
 keywords: AEM Forms REST 끝점, REST 끝점에 제출, REST URL에 데이터 게시, REST 끝점 작업 구성
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1477'
 ht-degree: 60%
 
 ---

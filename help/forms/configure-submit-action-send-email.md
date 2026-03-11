@@ -3,11 +3,12 @@ title: 적응형 양식 제출 시 이메일을 보내는 방법
 description: 적응형 양식을 제출할 때 이메일 알림을 설정하는 프로세스를 살펴보십시오.
 keywords: 적응형 양식에 대한 이메일 보내기 방법, 이메일 제출 액션, 적응형 양식 이메일, 양식 제출 이메일, 이메일 보내기 안내서
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '959'
 ht-degree: 22%
 
 ---

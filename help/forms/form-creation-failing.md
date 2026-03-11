@@ -1,13 +1,14 @@
 ---
 title: 양식 생성 오류를 해결하는 방법
-description: AEM Forms as a Cloud Service 환경에서 양식 생성 문제 해결.
+description: AEM Forms as a Cloud Service 환경에서 양식 작성 실패 문제 해결.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
@@ -27,10 +28,10 @@ ht-degree: 0%
 
 이 문제를 해결하려면 다음 단계를 수행하십시오.
 
-1. 양식에서 사용하는 템플릿에 `<template-path>/initial/jcr:content node` 경로에 `jcr:uuid` 및 다른 시스템에서 생성한 보호된 속성이 없는지 확인합니다.
-1. 템플릿 콘솔을 사용하여 템플릿을 명시적으로 Publish 합니다.
+1. 양식에서 사용하는 템플릿에 `jcr:uuid` 경로에 `<template-path>/initial/jcr:content node` 및 다른 시스템에서 생성한 보호된 속성이 없는지 확인합니다.
+1. 템플릿 콘솔을 사용하여 템플릿을 명시적으로 게시합니다.
 1. 이제 템플릿이 게시되면 템플릿을 사용하여 새 양식을 만들어 보십시오.
-1. 사용한 템플릿이 향후 릴리스에서 업데이트되는 경우 양식 작성 실패 문제를 방지하기 위해 템플릿을 다시 Publish(2단계에서 설명)합니다.
+1. 사용한 템플릿이 향후 릴리스에서 업데이트되는 경우 템플릿을 다시 게시(2단계에서 설명)하여 양식 작성 실패 문제를 방지합니다.
 
 
 <!--

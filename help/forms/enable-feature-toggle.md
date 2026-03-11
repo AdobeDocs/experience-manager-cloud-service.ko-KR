@@ -3,10 +3,11 @@ title: 얼리어답터 및 프리릴리스 기능 통합을 위한 기능 전환
 description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기능을 활성화할 수 있는 AEM의 기능입니다.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
-source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '410'
 ht-degree: 5%
 
 ---

@@ -6,12 +6,13 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 6%
+source-wordcount: '1074'
+ht-degree: 7%
 
 ---
 
@@ -47,7 +48,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
    * 이미지 선택
    * 다음 버튼
    * 이전 단추
-   * 낙서 서명
+   * 스크리블 서명
    * 요약 단계
    * 도구 모음
 
@@ -158,12 +159,12 @@ AEM 환경에 AEM 현대화 도구 를 활성화하고 사용하려면 Foundatio
 
    ![AEM 현대화 도구 대상 폴더](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택하여 변환된 양식의 속성을 다시 저장합니다.
+1. **[!UICONTROL 저장 후 닫기]**를 선택하여 변환된 양식의 속성을 다시 저장합니다.
    ![AEM 현대화 도구 적응형 양식 속성](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 이제 기초 구성 요소에 구축된 적응형 양식이 핵심 구성 요소에 구축된 적응형 양식으로 변환됨을 알 수 있습니다.
 
 ## 모범 사례 {#best-practices}
 
-* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
+* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
 * 기초 구성 요소를 핵심 구성 요소로 변환하는 규칙의 형식이 XML로 지정되어 있는지 확인합니다.

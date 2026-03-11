@@ -5,12 +5,13 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '206'
 ht-degree: 8%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 적응형 Forms 핵심 구성 요소 가용성
@@ -32,8 +33,8 @@ ht-degree: 8%
 
 관련 안내서를 따르십시오.
 
-- AEM 6.5 Forms의 경우: [AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko).
-- AEM 6.5 LTS Forms의 경우: [AEM 6.5 LTS Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- AEM 6.5 Forms의 경우: [AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html).
+- AEM 6.5 LTS Forms의 경우: [AEM 6.5 LTS Forms에서 적응형 Forms 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **참고:** 이전 AEM 6.5 환경에서 적응형 Forms 핵심 구성 요소를 활성화하는 단계가 명확하지 않거나 환경별 사전 요구 사항이 있는 경우 활성화를 시도하기 전에 이러한 요구 사항을 명확히 하십시오.
 

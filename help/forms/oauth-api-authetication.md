@@ -3,13 +3,14 @@ title: OAuth 서버 간 인증을 설정하는 방법
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 OAuth 서버 간 인증을 구성하는 방법에 대해 알아봅니다.
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 3%
 
 ---
-
 
 # OAuth 서버 간 인증
 
@@ -19,7 +20,7 @@ OAuth 서버 간 인증을 사용하면 사용자 상호 작용 없이 AEM Forms
 
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
-* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
+* 사용하는 환경에 맞는 [Adobe Developer Console에 대한 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)가 있는지 확인하십시오.
 * [Adobe Admin Console에서 시스템 관리자 또는 개발자 역할을 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)하여 Adobe Developer Console에 액세스할 수 있도록 설정합니다.
 
 ## OAuth 서버 간 인증을 사용하여 액세스 토큰을 생성하는 방법
@@ -177,7 +178,7 @@ Adobe Developer Console에서 액세스 토큰을 수동으로 생성합니다.
 
 >[!TAB 프로덕션용]
 
-[Adobe IMS](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
+[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API를 사용하여 프로그래밍 방식으로 토큰 생성:
 
 **필요한 자격 증명:**
 

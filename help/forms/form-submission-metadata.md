@@ -6,13 +6,14 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
-
 
 # 양식 제출 메타데이터에 사용자 데이터의 정보 추가 {#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 ![확인란에서 여러 값을 저장하는 중](assets/checkbox-metadata.png)
 
-적응형 양식 컨테이너를 선택하고 양식 속성에서 `checkbox1.value`을(를) 저장하는 메타데이터 키 `cb1`을(를) 추가하고 양식을 게시합니다. 고객이 양식을 작성할 때 고객은 확인란 필드에서 Passport 및 사회 보장 번호 옵션을 선택합니다. 값 1과 2는 제출 메타데이터의 cb1 필드에 1, 2로 저장됩니다.
+적응형 양식 컨테이너를 선택하고 양식 속성에서 `cb1`을(를) 저장하는 메타데이터 키 `checkbox1.value`을(를) 추가하고 양식을 게시합니다. 고객이 양식을 작성할 때 고객은 확인란 필드에서 Passport 및 사회 보장 번호 옵션을 선택합니다. 값 1과 2는 제출 메타데이터의 cb1 필드에 1, 2로 저장됩니다.
 
 ![확인란 필드에서 선택한 여러 값에 대한 메타데이터 항목](assets/metadata-entry.png)
 

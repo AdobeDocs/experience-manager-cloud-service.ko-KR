@@ -2,12 +2,13 @@
 title: 적응형 Forms을 위한 제출 PDF(이전 기록 문서) 생성
 description: 적응형 Forms 핵심 구성 요소에 대한 양식 제출에서 제출 PDF을 생성하는 방법을 알아봅니다. 보관 또는 참조를 위해 제출된 양식의 PDF을 만듭니다.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
-ht-degree: 1%
+source-wordcount: '3320'
+ht-degree: 2%
 
 ---
 

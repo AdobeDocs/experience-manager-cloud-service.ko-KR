@@ -1,23 +1,24 @@
 ---
-title: AEM Adaptive Forms에 대한 비동기 제출을 구성하는 방법
+title: AEM 적응형 Forms에 대한 비동기 제출을 구성하는 방법
 description: 적응형 Forms에 대한 비동기 제출을 구성하는 방법을 알아봅니다. 적응형 Forms에 대해 비동기 제출이 작동하는 방식에 대해 자세히 알아보십시오.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 3%
+source-wordcount: '752'
+ht-degree: 4%
 
 ---
 
-# AEM Adaptive Forms의 비동기 제출 구성 {#asynchronous-submission-of-adaptive-forms}
+# AEM 적응형 Forms의 비동기 제출 구성 {#asynchronous-submission-of-adaptive-forms}
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 

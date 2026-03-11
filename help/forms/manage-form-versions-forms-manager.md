@@ -3,13 +3,14 @@ title: Forms Manager에서 양식 버전 관리
 description: Forms Manager UI에서 적응형 Forms, 양식 단편, 테마 및 기타 에셋의 버전을 만들고 관리하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-source-git-commit: 52d6e8163ef24d362287cbedf54c2977fff9c87b
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 4%
+source-wordcount: '433'
+ht-degree: 5%
 
 ---
-
 
 # Forms Manager UI에서 양식 Assets 버전 관리
 
@@ -37,10 +38,10 @@ Forms Manager는 이제 양식 에셋에 대한 버전 관리를 지원합니다
 1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;로 이동합니다.
 1. 양식 또는 자산을 선택합니다.
 1. 왼쪽 패널에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
-1. 타임라인 도구 모음에서 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.
+1. 타임라인 도구 모음에서 **[!UICONTROL 다른 버전으로 저장]**을 클릭합니다.
    ![다른 버전으로 저장](/help/forms/assets/create-version.png)
 1. **[!UICONTROL 레이블]**&#x200B;과(와) 선택적 **[!UICONTROL 댓글]**&#x200B;을 입력하여 변경 내용을 설명합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 만들기]**를 클릭합니다.
    ![다른 버전으로 저장2](/help/forms/assets/create-version1.png)
 
 버전은 레이블, 주석 및 타임스탬프와 함께 [타임라인] 패널에 표시됩니다.
@@ -58,7 +59,7 @@ Forms Manager는 이제 양식 에셋에 대한 버전 관리를 지원합니다
 에셋의 버전 내역을 보려면 다음과 같이 하십시오.
 
 1. Forms Manager에서 자산을 선택합니다.
-1. 왼쪽 패널에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. 왼쪽 패널에서 **[!UICONTROL 타임라인]**을 선택합니다.
    ![버전 기록](/help/forms/assets/version-history.png)
 
 타임라인에는 모든 버전 항목이 활동 이벤트와 함께 표시됩니다. 각 항목에는 레이블, 댓글, 작성자 및 타임스탬프가 표시됩니다.
@@ -70,7 +71,7 @@ Forms Manager는 이제 양식 에셋에 대한 버전 관리를 지원합니다
 1. Forms Manager에서 자산을 선택합니다.
 1. 왼쪽 패널에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
 1. 복원할 버전을 선택합니다.
-1. **[!UICONTROL 이 버전으로 되돌리기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 이 버전으로 되돌리기]**를 클릭합니다.
    ![버전 되돌리기](/help/forms/assets/revert-version.png)
 
 >[!NOTE]

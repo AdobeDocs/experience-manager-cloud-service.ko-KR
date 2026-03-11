@@ -2,12 +2,13 @@
 title: 적응형 양식 기반의 핵심 구성 요소를 번역하려면 어떻게 해야 합니까?
 description: AEM Forms에서 양식 데이터 모델(FDM)을 만들고, 샘플 데이터 및 서비스로 모델을 테스트하며, 모델에 대해 다양한 옵션을 구성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 ## 기계 번역을 사용하여 적응형 양식 및 기록 문서 번역 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-기계 번역 서비스는 적응형 양식 및 [기록 문서](/help/forms/generate-document-of-record-core-components.md)에서 콘텐츠를 즉시 번역합니다. Microsoft Translator 버전을 사용하도록 AEM Forms as a Cloud Service 평가판이 사전 구성되어 있습니다. 다음 단계를 수행하여 적응형 Forms 및 기록 문서에 대한 기계 번역을 활성화합니다.
+기계 번역 서비스는 적응형 양식 및 [기록 문서](/help/forms/generate-document-of-record-core-components.md)에서 콘텐츠를 즉시 번역합니다. AEM Forms as a Cloud Service은 기계 번역을 위해 Microsoft Translator 체험판을 사용하도록 사전 구성되어 있습니다. 다음 단계를 수행하여 적응형 Forms 및 기록 문서에 대한 기계 번역을 활성화합니다.
 
 1. AEM Forms UI에서 양식을 선택하고 **[!UICONTROL 사전 추가]** 옵션을 선택합니다.
 1. 번역 프로젝트에 사전 추가 화면에서 **[!UICONTROL 프로젝트]** 옵션을 사용합니다.
@@ -71,8 +72,8 @@ ht-degree: 4%
 1. [사전 추가] 대화 상자에서 **프로젝트 열기**&#x200B;를 클릭합니다.
 1. 프로젝트 화면에서 생성된 프로젝트를 클릭합니다. 예를들어 **정부 참조 사이트 - 독일어 로케일** 타일을 클릭합니다.
 1. **요약** 타일 하단에서 **줄임표**&#x200B;를 클릭합니다. 번역 프로젝트 속성 화면이 열립니다.
-1. **번역 프로젝트 속성** 화면 맨 위에서 **[!UICONTROL 고급]** 탭을 엽니다. **[!UICONTROL 번역 필드]**&#x200B;에 대해 **[!UICONTROL 사람 번역]**&#x200B;을 선택하세요. 화면 상단의 **저장 및 닫기**&#x200B;를 클릭합니다.
-1. **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘을 클릭하고 **내보내기**&#x200B;를 클릭합니다. 내보내기 대화 상자에서 내보낸 파일 다운로드 옵션을 클릭합니다. .zip 파일을 다운로드합니다.
+1. **[!UICONTROL 번역 프로젝트 속성]** 화면 맨 위에서 **고급** 탭을 엽니다. **[!UICONTROL 번역 필드]**&#x200B;에 대해 **[!UICONTROL 사람 번역]**&#x200B;을 선택하세요. 화면 상단의 **저장 및 닫기**&#x200B;를 클릭합니다.
+1. **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘을 클릭하고 **내보내기**를 클릭합니다. 내보내기 대화 상자에서 내보낸 파일 다운로드 옵션을 클릭합니다. .zip 파일을 다운로드합니다.
    ![번역 파일 내보내기](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 다운로드한 .zip 파일의 압축을 풉니다. 추출된 폴더에는 두 개의 파일이 있습니다.
    * translation_export_summary.xml

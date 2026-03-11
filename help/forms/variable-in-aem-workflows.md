@@ -1,12 +1,13 @@
 ---
-title: AEM Workflow 단계에 변수를 추가하려면 어떻게 해야 합니까?
+title: AEM 워크플로우 단계에 변수를 추가하려면 어떻게 해야 합니까?
 description: 변수를 만들고 변수 값을 설정하여  [!DNL AEM Forms] 워크플로 단계에서 사용하는 방법을 알아봅니다.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1936'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다. 모든 워크플로우 단계에서 변수의 이름을 사용하여 변수에 저장된 값을 검색할 수 있습니다. 변수 이름을 사용하여 라우팅 의사 결정을 위한 표현식을 정의할 수도 있습니다.
@@ -24,9 +25,9 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 
 * 저장할 정보 형식을 기반으로 데이터 형식의 [변수를 만듭니다](variable-in-aem-workflows.md#create-a-variable).
 * 변수 설정 워크플로 단계를 사용하여 [변수에 대한 값을 설정](variable-in-aem-workflows.md#set-a-variable)합니다.
-* [모든 [!DNL AEM Forms] 워크플로 단계에서 변수를 사용](variable-in-aem-workflows.md#use-a-variable)하여 저장된 값을 검색하고 OR 분할 및 이동 단계에서 라우팅 식을 정의합니다.
+* [모든 ](variable-in-aem-workflows.md#use-a-variable) 워크플로 단계에서 변수를 사용[!DNL AEM Forms]하여 저장된 값을 검색하고 OR 분할 및 이동 단계에서 라우팅 식을 정의합니다.
 
-다음 비디오에서는 AEM Workflow 모델에서 변수를 생성, 설정 및 사용하는 방법을 보여 줍니다.
+다음 비디오에서는 AEM 워크플로 모델에서 변수를 만들고, 설정하고, 사용하는 방법을 보여 줍니다.
 
 >[!VIDEO](assets/variables_introduction_1_1.mp4)
 
@@ -37,7 +38,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 섹션을 사용하여 변수를 만듭니다. AEM Workflow 변수는 다음 데이터 유형을 지원합니다.
 
 * **기본 데이터 형식**: Long, Double, Boolean, Date 및 String
-* **복잡한 데이터 형식**: [문서](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) 및 양식 데이터 모델 인스턴스.
+* **복잡한 데이터 형식**: [문서](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) 및 양식 데이터 모델 인스턴스.
 
 >[!NOTE]
 >
@@ -157,7 +158,7 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 규칙 정의, ECMA 스크립트 또는 외부 스크립트를 사용하여 분기에 대한 라우팅 표현식을 정의할 수 있습니다.
 
-변수를 사용하여 표현식 편집기를 사용하여 라우팅 표현식을 정의할 수 있습니다. OR 분할 단계의 라우팅 식을 사용하는 방법에 대한 자세한 내용은 [OR 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem?lang=ko#or-split)를 참조하십시오.
+변수를 사용하여 표현식 편집기를 사용하여 라우팅 표현식을 정의할 수 있습니다. OR 분할 단계의 라우팅 식을 사용하는 방법에 대한 자세한 내용은 [OR 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split)를 참조하십시오.
 
 이 예제에서는 라우팅 식을 정의하기 전에 [예제 2](variable-in-aem-workflows.md#example2)를 사용하여 **totalvalue** 변수에 대한 값을 설정하십시오. **totalvalue** 변수의 값이 50000보다 큰 경우 분기 1이 활성 상태입니다. 마찬가지로 **totalvalue** 변수의 값이 50000보다 작은 경우 분기 2를 활성화하도록 규칙을 정의할 수 있습니다.
 
@@ -173,13 +174,13 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 OR 분할 단계와 마찬가지로 규칙 정의, ECMA 스크립트 또는 외부 스크립트를 사용하여 이동 단계에 대한 라우팅 표현식을 정의할 수 있습니다.
 
-변수를 사용하여 표현식 편집기를 사용하여 라우팅 표현식을 정의할 수 있습니다. 이동 단계의 라우팅 표현식 사용에 대한 자세한 내용은 [이동 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem?lang=ko#goto-step)를 참조하십시오.
+변수를 사용하여 표현식 편집기를 사용하여 라우팅 표현식을 정의할 수 있습니다. 이동 단계의 라우팅 표현식 사용에 대한 자세한 내용은 [이동 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step)를 참조하십시오.
 
 ![규칙으로 이동](assets/variables_goto_rule1_new.png)
 
 이 예에서 이동 단계는 **actiontaken** 변수 값이 **추가 정보 필요**&#x200B;와 같은 경우 신용 카드 응용 프로그램 검토를 다음 단계로 지정합니다.
 
-이동 단계에서 규칙 정의를 사용하는 방법에 대한 자세한 예제는 [For 루프 시뮬레이션](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem?lang=ko#simulateforloop)을 참조하십시오.
+이동 단계에서 규칙 정의를 사용하는 방법에 대한 자세한 예제는 [For 루프 시뮬레이션](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop)을 참조하십시오.
 
 #### Forms 중심 워크플로우 단계 {#forms-workflow-centric-workflow-steps}
 

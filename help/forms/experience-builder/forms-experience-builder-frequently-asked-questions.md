@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 2%
 
 ---
@@ -111,7 +112,6 @@ AI가 단계 간 탐색을 통해 양식 구조를 자동으로 설정합니다.
     미국 전화 번호 형식 유효성 검사를 @phoneNumber에 추가
     연령 유효성 검사 설정: @dateOfBirth
 의 경우 18 이상이어야 합니다.
-
 ## 고급 기능
 
 ### LLM 강화 스마트 필드란 무엇입니까?

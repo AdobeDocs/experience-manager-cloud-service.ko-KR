@@ -4,10 +4,11 @@ description: 적응형 Forms, PDF forms, 테마 및 기타 지원 자산을 AEM 
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1079'
 ht-degree: 3%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL AEM Forms]개 인스턴스 간에 적응형 Forms 및 적응형 양식 테마, FDM(양식 데이터 모델), 적응형 양식 템플릿, 단편, PDF forms과 같은 관련 자산을 이동할 수 있습니다.
@@ -181,7 +182,7 @@ ht-degree: 3%
 
    ![자산 검색](/help/forms/assets/search-bar.png)
 
-검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ko)을 참조하세요.
+검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)을 참조하세요.
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

@@ -1,21 +1,22 @@
 ---
 title: Designer에서 Page Zero 콘텐츠를 변경하는 방법
-description: Adobe PDF 뷰어가 아닌 뷰어에 대해 XFA PDF의 페이지 0에 표시되는 메시지를 변경합니다.
+description: Adobe PDF 뷰어가 아닌 뷰어를 위해 XFA PDF의 Page Zero에 표시되는 메시지를 변경합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 0%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
-
 # Designer에서 Page Zero 콘텐츠 변경 {#changing-page-zero-content-in-designer}
 
-[!DNL Chrome] 또는 [!DNL Firefox]의 기본 PDF 뷰어와 같이 Adobe PDF이 아닌 뷰어가 PDF/XFA 양식의 콘텐츠를 읽을 수 없는 경우 기본적으로 페이지 제로 콘텐츠가 표시됩니다. 기본 Page Zero 메시지가 아래에 표시됩니다.
+[!DNL Chrome] 또는 [!DNL Firefox]의 기본 PDF 뷰어와 같이 Adobe PDF이 아닌 뷰어가 PDF/XFA 양식의 콘텐츠를 읽을 수 없는 경우 기본적으로 Page Zero 콘텐츠가 표시됩니다. 기본 Page Zero 메시지가 아래에 표시됩니다.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예:
 
 
-   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download_kr.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader_kr.</p></body>`
+   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
 
 1. 양식을 PDF으로 저장합니다.
 

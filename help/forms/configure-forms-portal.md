@@ -2,12 +2,13 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 4%
+source-wordcount: '365'
+ht-degree: 6%
 
 ---
 
@@ -16,8 +17,8 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=ko) |
-| AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 
 Forms 포털은 AEM Sites 페이지에 적응형 Forms을 표시하고 나열하는 효율적인 방법을 제공합니다. 다양한 양식을 체계적으로 사용자에게 제시하기 위해 플랫폼이 필요한 조직에 유용합니다.
 

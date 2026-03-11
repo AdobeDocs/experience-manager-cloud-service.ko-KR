@@ -3,13 +3,14 @@ title: 적응형 Forms에 대해 자동 생성된 기록 문서 템플릿을 사
 description: Adobe Forms Designer을 사용하여 적응형 Forms용 자동 생성된 기록 문서(DoR) 템플릿을 다운로드하고, 사용자 지정하고, 다시 업로드하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
-
 
 # 자동 생성된 기록 문서 템플릿 사용자 지정
 
@@ -126,4 +127,3 @@ Adobe Forms Designer에서 다운로드한 XDP 템플릿을 열고 조직의 요
 * [적응형 Forms(Foundation 구성 요소)에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [기록 문서의 기본 템플릿](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [기록 문서의 브랜딩 정보 사용자 정의](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

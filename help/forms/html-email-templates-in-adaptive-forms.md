@@ -1,26 +1,28 @@
 ---
-title: Formsas a Cloud Service 에서 적응형 Forms 템플릿 HTML
+title: Forms as a Cloud Service의 적응형 Forms에서 HTML 이메일 템플릿
 description: 적응형 양식과 함께 이메일 템플릿을 사용하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 0%
+source-wordcount: '759'
+ht-degree: 9%
 
 ---
 
-# 적응형 Forms의 이메일 템플릿
+# 적응형 양식의 이메일 템플릿
 
-적응형 Forms을 사용하면 HTML 및 일반 텍스트 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식 제출 시 풍부하고 개인화된 시각적으로 매력적인 이메일을 보낼 수 있습니다. 양식 데이터로 이러한 이메일을 사용자 정의하고 이미지 및 링크와 같은 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 Forms을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
+적응형 Forms을 사용하면 HTML 및 일반 텍스트 이메일 템플릿을 사용할 수 있습니다. HTML 이메일 템플릿을 사용하면 양식을 제출할 때 내용이 풍부하고 개인화되고 시각적으로 매력적인 이메일을 보낼 수 있습니다. 이러한 이메일은 양식 데이터로 사용자 정의할 수 있으며, 이미지와 링크 등 다양한 이메일 태그를 사용하여 개선할 수 있습니다. 적응형 양식을 사용하면 HTML 템플릿이 포함된 파일을 업로드하거나 일반 텍스트 편집기를 사용하여 이러한 템플릿을 만들 수 있습니다.
 
-![HTML 전자 메일 템플릿](/help/forms/assets/html-email.png)
+![HTML 이메일 템플릿](/help/forms/assets/html-email.png)
 
 이 문서는 적응형 Forms에서 이메일 템플릿을 구성하고 사용하는 데 도움이 됩니다. 이를 통해 다음과 같은 작업을 수행할 수 있습니다.
 
-* [적응형 양식에 대한 HTML 템플릿 구성](#configure-an-html-template-for-an-adaptive-form)
+* [적응형 양식을 위한 HTML 템플릿 구성](#configure-an-html-template-for-an-adaptive-form)
 * [적응형 양식에 대한 일반 텍스트 이메일 템플릿 구성](#configure-a-plain-text-template-for-an-adaptive-form)
 * [전자 메일 템플릿에서 양식 데이터 사용](#use-form-data-in-your-email-templates)
 
@@ -32,11 +34,11 @@ ht-degree: 0%
 1. HTML 템플릿을 선택 또는 업로드하거나, 이메일 템플릿을 수동으로 입력합니다.
 1. 이메일 구성을 테스트합니다.
 
-## 적응형 양식에 대한 HTML 템플릿 구성
+## 적응형 양식을 위한 HTML 템플릿 구성
 
 [**전자 메일 보내기** 제출 액션](/help/forms/configure-submit-action-send-email.md)을 사용하여 제출 시 전자 메일을 보내도록 적응형 양식을 설정할 수 있습니다. 이 작업은 HTML 템플릿을 구성하는 두 가지 방법을 제공합니다.
 
-### 옵션 1: HTML 템플릿이 들어 있는 파일 선택
+### 옵션 1: HTML 템플릿이 포함된 파일 선택
 
 계속하기 전에 HTML 템플릿을 AEM Forms 환경에 업로드했는지 확인하십시오.
 
@@ -59,7 +61,7 @@ ht-degree: 0%
 1. **콘텐츠 브라우저**(으)로 이동하여 **안내서 컨테이너**&#x200B;를 선택하고 속성 아이콘을 탭합니다. 제목이 `Adaptive Form Container`인 대화 상자가 나타납니다.
 1. **제출** 탭으로 이동하여 **전자 메일 보내기** 제출 액션을 선택하십시오.
 1. **HTML 템플릿 사용** 옵션을 사용하도록 설정합니다.
-1. 입력한 **전자 메일 서식 파일** 상자에 HTML 코드를 직접 입력하거나 붙여 넣으십시오.
+1. 제공된 **전자 메일 템플릿** 상자에 직접 HTML 코드를 입력하거나 붙여 넣으십시오.
 
 
 ## 적응형 양식에 대한 일반 텍스트 템플릿 구성
@@ -152,7 +154,7 @@ ht-degree: 0%
     Your Team
 ```
 
-## 이메일 템플릿 HTML 우수 사례
+## HTML 이메일 템플릿에 대한 우수 사례
 
 * 이메일 클라이언트와의 호환성을 위해 스타일이 인라인인지 확인하십시오.
 * 모바일 디바이스에서 더 나은 경험을 위해 템플릿을 반응형으로 만듭니다.

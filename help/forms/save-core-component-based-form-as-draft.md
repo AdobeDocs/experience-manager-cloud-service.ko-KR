@@ -3,10 +3,11 @@ title: 핵심 구성 요소 기반 적응형 양식을 초안으로 저장하고
 description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저장하는 방법에 대해 알아봅니다. 또한 초안 및 제출 구성 요소를 사용하여 로그인한 사용자의 초안 및 제출을 나열하는 방법을 이해하시겠습니까?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 3%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 # 양식을 초안으로 저장하고 사이트 페이지에 나열
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM은 AEM Sites 페이지에 초안 및 제출을 표시하는 **초안 및 제출** Forms 포털 구성 요소를 즉시 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
@@ -22,11 +23,11 @@ ht-degree: 3%
 
 ## 사전 요구 사항
 
-* [초안 및 제출 Forms 포털 구성 요소에 대한 Azure Storage 및 통합 스토리지 커넥터 구성](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
+* [초안 및 제출 Forms 포털 구성 요소에 대한 Azure 저장소 및 통합 저장소 커넥터 구성](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-### 초안 및 제출 Forms 포털 구성 요소에 대한 Azure Storage 및 통합 스토리지 커넥터 구성
+### 초안 및 제출용 Azure 포털 구성 요소에 대한 Forms 스토리지 및 통합 스토리지 커넥터 구성
 
-**초안 및 제출** 구성 요소에는 AEM Sites 페이지에 초안을 저장하고 나열하기 위한 저장소 설정이 필요합니다. 통합 스토리지 커넥터는 AEM을 외부 스토리지와 연결하는 프레임워크를 제공합니다. 양식을 초안으로 저장하려면 Azure 저장소 계정 및 [!DNL Azure] 저장소 계정에 대한 액세스 권한을 부여하는 액세스 키가 있는지 확인하세요. Azure 스토리지 계정과 액세스 키가 있으면 다음 단계를 수행하여 Azure 스토리지 구성을 만듭니다.
+**초안 및 제출** 구성 요소에는 AEM Sites 페이지에 초안을 저장하고 나열하기 위한 저장소 설정이 필요합니다. 통합 스토리지 커넥터는 AEM을 외부 스토리지와 연결하는 프레임워크를 제공합니다. 양식을 초안으로 저장하려면 [!DNL Azure] 저장소 계정에 대한 액세스를 승인할 Azure 저장소 계정과 액세스 키가 있는지 확인하십시오. Azure 스토리지 계정과 액세스 키가 있으면 다음 단계를 수행하여 Azure 스토리지 구성을 만듭니다.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
 
@@ -47,9 +48,9 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > **[!UICONTROL Microsoft Azure 포털]**&#x200B;에서 **[!UICONTROL Azure 저장소 계정]** 및 [Azure 액세스 키](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)를 검색할 수 있습니다.
+   > **[!UICONTROL Azure Azure 포털]**&#x200B;에서 **[!UICONTROL Microsoft 저장소 계정]** 및 [Azure 액세스 키](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)를 검색할 수 있습니다.
 
-   Azure 스토리지 구성을 만들었으면 다음 단계를 사용하여 Forms 포털용 통합 스토리지 커넥터를 구성하십시오.
+   그런 다음 Azure 스토리지 구성을 성공적으로 생성한 후 다음 단계를 사용하여 Forms 포털용 통합 스토리지 커넥터를 구성합니다.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 저장소 커넥터]**&#x200B;로 이동합니다.
 
@@ -64,9 +65,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Azure 이외의 저장소 옵션을 구성해야 하는 경우 자세한 요구 사항을 포함하여 공식 전자 메일 주소에서 <aem-forms-ea@adobe.com>에 문의하세요.
+> Azure 이외의 저장소 옵션을 구성해야 하는 경우 자세한 요구 사항을 포함하여 공식 전자 메일 주소에서 <aem-forms-ea@adobe.com>에게 전자 메일을 보내십시오.
 
-초안 및 제출된 양식을 저장하기 위해 Azure Storage 및 통합 스토리지 커넥터를 구성했으면 AEM Sites 페이지에서 **초안 및 제출** 구성 요소를 추가하십시오.
+초안 및 제출된 양식을 저장하기 위해 Azure 저장소 및 통합 저장소 커넥터를 구성했으면 AEM Sites 페이지에서 **초안 및 제출** 구성 요소를 추가하십시오.
 
 ## 초안 및 제출 구성 요소를 AEM Sites 페이지에 추가하는 방법
 

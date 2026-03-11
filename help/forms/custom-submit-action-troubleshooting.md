@@ -4,13 +4,14 @@ description: 적응형 Forms(핵심 구성 요소)에서 사용자 지정 제출
 feature: Adaptive Forms, Core Components
 role: Developer
 level: Intermediate
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
+exl-id: a7469926-7059-4aca-90ff-2554d14c3944
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 1%
+source-wordcount: '152'
+ht-degree: 2%
 
 ---
-
 
 # 문제 해결: 사용자 지정 제출 액션의 502 오류 페이지
 

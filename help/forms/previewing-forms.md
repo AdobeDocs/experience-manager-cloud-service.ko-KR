@@ -4,11 +4,12 @@ description: 사용자는 게시 또는 활성화 전에 양식을 미리 보고
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 4%
+source-wordcount: '342'
+ht-degree: 5%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>적응형 양식</td>
-   <td>데이터를 사용하여 HTML 미리 보기 및 HTML 미리 보기</td>
+   <td>HTML 미리 보기 및 데이터를 사용한 HTML 미리 보기</td>
   </tr>
   <!--<tr>
    <td>Form Template</td>

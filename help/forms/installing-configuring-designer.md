@@ -4,10 +4,11 @@ description: Forms Designer을 사용하여 기록 문서의 템플릿 역할을
 keywords: Designer 설치, Forms 디자이너 설치, Forms Designer 설치 요구 사항
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 9%
 
 ---
@@ -17,11 +18,11 @@ ht-degree: 9%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 이 문서 |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer은 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. XDP 및 PDF 양식은 적응형 양식에서 기록 문서 템플릿 역할을 합니다. 이러한 양식 서식 파일은 [적응형 양식 서식 파일](template-editor.md)과 다릅니다.
 
-## 전제 조건 {#pre-requisites}
+## 사전 요구 사항 {#pre-requisites}
 
 최신 버전의 AEM Forms Designer 64비트 또는 32비트를 설치하려면 Designer을 설치하고 구성하려면 다음 소프트웨어와 최소 하드웨어가 필요합니다.
 
@@ -36,7 +37,7 @@ Designer은 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC.
 * Designer을 설치할 수 있는 관리 권한입니다.
-* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 이상) 64비트 런타임
+* [!DNL Microsoft® Visual C++ 2019]&#x200B;(VC 14.28 이상) 64비트 런타임
 
 +++
 

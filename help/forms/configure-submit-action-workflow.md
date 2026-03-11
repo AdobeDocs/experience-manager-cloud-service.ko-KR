@@ -3,12 +3,13 @@ title: AEM 워크플로우를 적응형 양식과 통합하는 방법
 description: AEM Forms 제출 액션을 사용하여 자동화된 워크플로우 시작 프로세스를 살펴봅니다.
 keywords: AEM 워크플로, 적응형 양식과 AEM 워크플로 통합, AEM 워크플로 호출 제출 액션
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 61%
+source-wordcount: '1440'
+ht-degree: 64%
 
 ---
 
@@ -110,8 +111,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
    >[!NOTE]
    >
-   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 보이지 않는 경우 Extension Manager에서 **양식 속성 편집** 확장을 사용하도록 설정하십시오.
-   > * 범용 편집기에서 확장을 활성화하거나 비활성화하는 방법에 대해 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
+   > * 범용 편집기 인터페이스에 **양식 속성 편집** 아이콘이 표시되지 않으면 Extension Manager에서 **양식 속성 편집** 확장 기능을 활성화합니다.
+   > * 범용 편집기에서 확장 기능을 활성화하거나 비활성화하는 방법을 알아보려면 [Extension Manager 기능 하이라이트](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) 문서를 참조하십시오.
 
 1. **제출** 탭을 클릭하고 **[!UICONTROL AEM 워크플로 호출]** 제출 액션을 선택합니다.
 

@@ -3,10 +3,11 @@ title: 간편한 벌크 PDF 만들기 - 일괄 처리를 통한 기본 아트 - 
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 2%
 
 ![데이터 병합 테이블](assets/communications-batch-structure.png)
 
-**저장소**: 통신 API는 고객이 소유한 Microsoft Azure 클라우드 저장소를 사용하여 고객 레코드를 가져오고 생성된 문서를 저장합니다. Experience Manager Cloud Service 구성에서 Microsoft Azure Storage를 구성합니다.
+**저장소**: 통신 API는 고객 소유의 Microsoft Azure 클라우드 저장소를 사용하여 고객 레코드를 가져오고 생성된 문서를 저장합니다. Experience Manager Cloud Service 구성에서 Microsoft Azure 스토리지 를 구성합니다.
 
 **앱**: 일괄 처리 API를 사용하여 문서를 생성하고 사용하는 사용자 지정 응용 프로그램입니다.
 
@@ -73,12 +74,12 @@ ht-degree: 2%
 
 배치 작업을 사용하기 전에:
 
-* 고객 데이터(XML 파일)를 Microsoft Azure Blob 스토리지에 업로드
+* Microsoft Azure Blob 스토리지에 고객 데이터(XML 파일) 업로드
 * 클라우드 구성 만들기
 * 일괄 처리 데이터 저장소 구성 만들기
 * Experience Manager Forms Cloud Service 인스턴스에 템플릿 및 기타 에셋 업로드
 
-### 고객 데이터(XML 파일)를 Azure Storage에 업로드
+### 고객 데이터(XML 파일)를 Azure 스토리지에 업로드
 
 Microsoft Azure 저장소에서 [컨테이너를 만들고](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) 컨테이너 내의 [폴더](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)에 [고객 데이터(XML)를 업로드](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)합니다.
 
@@ -88,14 +89,14 @@ Microsoft Azure 저장소에서 [컨테이너를 만들고](https://docs.microso
 
 ### 클라우드 구성 만들기 {#create-a-cloud-configuration}
 
-클라우드 구성은 Experience Manager 인스턴스를 Microsoft Azure Storage에 연결합니다. 클라우드 구성을 만들려면 다음 작업을 수행하십시오.
+클라우드 구성은 Experience Manager 인스턴스를 Microsoft Azure 스토리지에 연결합니다. 클라우드 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. 도구 > 클라우드 서비스 > Azure Storage로 이동합니다.
+1. 도구 > 클라우드 서비스 > Azure 스토리지로 이동합니다.
 1. 구성을 호스팅할 폴더를 열고 [만들기]를 클릭합니다. 전역 폴더를 사용하거나 폴더를 만듭니다.
-1. 서비스에 연결할 구성 및 자격 증명의 이름을 지정합니다. [Microsoft Azure Storage 포털에서 이러한 자격 증명을 검색](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)할 수 있습니다.
+1. 서비스에 연결할 구성 및 자격 증명의 이름을 지정합니다. [Microsoft Azure 저장소 포털에서 이러한 자격 증명을 검색](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)할 수 있습니다.
 1. 만들기를 클릭합니다.
 
-이제 Experience Manager 인스턴스를 Microsoft Azure Storage에 연결하고 필요한 경우 이를 사용하여 콘텐츠를 저장하고 읽을 수 있습니다.
+이제 Experience Manager 인스턴스를 Microsoft Azure 스토리지에 연결하고 필요한 경우 이를 사용하여 콘텐츠를 저장하고 읽을 수 있습니다.
 
 ### 일괄 처리 데이터 저장소 구성 만들기 {#create-batch-data-store-configuration}
 
@@ -105,13 +106,13 @@ Microsoft Azure 저장소에서 [컨테이너를 만들고](https://docs.microso
 
 1. 도구 > Forms > 통합 스토리지 커넥터로 이동합니다.
 1. 구성을 호스팅할 폴더를 열고 [만들기]를 클릭합니다. 전역 폴더를 사용하거나 폴더를 만듭니다.
-1. 구성의 제목 및 이름 을 지정합니다. 스토리지에서 Microsoft Azure 스토리지를 선택합니다.
-1. 스토리지 구성 경로에서 고객 소유 Azure 스토리지 계정의 자격 증명이 포함된 클라우드 구성을 검색하여 선택합니다.
+1. 구성의 제목 및 이름 을 지정합니다. 스토리지에서 Microsoft Azure 스토리지 를 선택합니다.
+1. 스토리지 구성 경로에서 고객 소유 Azure 스토리지 계정의 자격 증명이 포함된 클라우드 구성을 찾아 선택합니다.
 1. Source 폴더에서 Azure 저장소 컨테이너의 이름과 레코드가 포함된 폴더를 지정합니다.
 1. 대상 폴더에서 생성된 문서를 저장할 Azure 스토리지 컨테이너 및 폴더의 경로를 지정합니다.
 1. 만들기를 클릭합니다.
 
-이제 Experience Manager 인스턴스가 Microsoft Azure Storage에 연결되고 데이터를 검색하여 Microsoft Azure Storage의 특정 위치로 보내도록 구성되었습니다.
+이제 Experience Manager 인스턴스가 Microsoft Azure 스토리지에 연결되어 Microsoft Azure 스토리지의 특정 위치로 데이터를 검색하고 전송하도록 구성됩니다.
 
 ### Experience Manager 인스턴스에 템플릿 및 기타 에셋 업로드 {#upload-templates-and-other-assets-to-your-AEM-instance}
 
@@ -148,7 +149,7 @@ Microsoft Azure 저장소에서 [컨테이너를 만들고](https://docs.microso
 
 >[!NOTE]
 >
->일괄 처리가 실행되는 동안에는 해당 소스 및 대상 폴더, 데이터 소스 구성 및 Microsoft Azure 클라우드 구성을 변경하지 마십시오.
+>일괄 처리가 실행되는 동안 해당 소스 및 대상 폴더, 데이터 소스 구성 및 Microsoft Azure 클라우드 구성을 변경하지 마십시오.
 
 ### 배치 상태 확인 {#status-of-a-batch}
 

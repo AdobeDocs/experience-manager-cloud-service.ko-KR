@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2156'
 ht-degree: 1%
 
 ---
