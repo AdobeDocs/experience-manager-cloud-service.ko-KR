@@ -52,11 +52,11 @@ AEM Forms에 대해 Turnstile을 구성하려면 Turnstile 웹 사이트에서 [
          1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동하여 **[!UICONTROL 회전식]**을(를) 선택합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동하여 **[!UICONTROL 회전식]**&#x200B;을(를) 선택합니다.
       ui의 ![턴스타일](assets/turnstile-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 선택합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
       ![구성 Turnstile](assets/config-hcaptcha.png)
-   1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리되는 위젯 유형으로 지정하십시오. 위젯 유형은 필수 구성 요소에서 얻은 턴스타일 서비스 **[!UICONTROL 에 대해 필수 구성 요소에서 얻은 키,]**&#x200B;제목&#x200B;**[!UICONTROL ,]**&#x200B;이름&#x200B;**[!UICONTROL ,]**&#x200B;사이트 키&#x200B;**[!UICONTROL 및]**&#x200B;비밀 키[에 따라 변경될 수 있습니다. ](#prerequisite) **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리되는 위젯 유형으로 지정하십시오. 위젯 유형은 필수 구성 요소에서 얻은 턴스타일 서비스 **[!UICONTROL 에 대해 필수 구성 요소에서 얻은 키,]**&#x200B;제목&#x200B;**[!UICONTROL ,]**&#x200B;이름&#x200B;**[!UICONTROL ,]**&#x200B;사이트 키&#x200B;**[!UICONTROL 및]**&#x200B;비밀 키[에 따라 변경될 수 있습니다. &#x200B;](#prerequisite) **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
       ![AEM Forms 환경을 Turnstile과 연결하도록 Cloud Service 구성](assets/config-turntstile.png)
 

@@ -63,7 +63,7 @@ ht-degree: 1%
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. https://<server>:<port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
+1. https://&lt;server>:&lt;port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
 
    다음 번들의 상태가 &quot;활성&quot;인지 확인하십시오.
 

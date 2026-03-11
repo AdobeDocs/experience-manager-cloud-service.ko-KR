@@ -26,7 +26,7 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
 - 만들어진 대화형 통신 및 게시됨
 - 팝업 지원이 활성화된 브라우저
 - [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- AEM[에서 지원하는 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
+- AEM[에서 지원하는 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
 
 >[!NOTE]
 >

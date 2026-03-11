@@ -22,7 +22,7 @@ ht-degree: 1%
 
 대규모 조직에서는 프로세스에 사용할 사용자를 동적으로 선택해야 하는 요구 사항이 있습니다. 예를 들어, 고객에 대한 에이전트의 근접도를 기반으로 고객을 지원할 현장 에이전트를 선택합니다. 이러한 시나리오에서는 에이전트가 동적으로 선택됩니다.
 
-OSGi에서 [!DNL Adobe Sign]Forms 중심 워크플로[의 작업 및 ](aem-forms-workflow.md) 단계는 사용자를 동적으로 선택하는 옵션을 제공합니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계의 할당자를 동적으로 선택하거나 문서 서명 단계의 서명자를 선택할 수 있습니다.
+OSGi에서 [!DNL Adobe Sign]Forms 중심 워크플로[의 작업 및 &#x200B;](aem-forms-workflow.md) 단계는 사용자를 동적으로 선택하는 옵션을 제공합니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계의 할당자를 동적으로 선택하거나 문서 서명 단계의 서명자를 선택할 수 있습니다.
 
 ## ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 

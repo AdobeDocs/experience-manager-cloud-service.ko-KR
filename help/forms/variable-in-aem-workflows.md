@@ -25,7 +25,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 
 * 저장할 정보 형식을 기반으로 데이터 형식의 [변수를 만듭니다](variable-in-aem-workflows.md#create-a-variable).
 * 변수 설정 워크플로 단계를 사용하여 [변수에 대한 값을 설정](variable-in-aem-workflows.md#set-a-variable)합니다.
-* [모든 ](variable-in-aem-workflows.md#use-a-variable) 워크플로 단계에서 변수를 사용[!DNL AEM Forms]하여 저장된 값을 검색하고 OR 분할 및 이동 단계에서 라우팅 식을 정의합니다.
+* [모든 &#x200B;](variable-in-aem-workflows.md#use-a-variable) 워크플로 단계에서 변수를 사용[!DNL AEM Forms]하여 저장된 값을 검색하고 OR 분할 및 이동 단계에서 라우팅 식을 정의합니다.
 
 다음 비디오에서는 AEM 워크플로 모델에서 변수를 만들고, 설정하고, 사용하는 방법을 보여 줍니다.
 

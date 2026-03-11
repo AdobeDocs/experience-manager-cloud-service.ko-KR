@@ -25,7 +25,7 @@ ht-degree: 2%
 
 테마를 만들고 적용하여 적응형 양식<!-- or an interactive communication-->을(를) 양식화할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식<!-- or interactive communication -->에 대한 참조 없이 독립적으로 관리됩니다.
 
-[!DNL AEM Forms]소프트웨어 배포[ 포털에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
+[!DNL AEM Forms]소프트웨어 배포[&#x200B; 포털에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
 
 ## 테마 만들기, 다운로드 또는 업로드 {#creating-downloading-or-uploading-a-theme}
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL Adobe Experience Manager]**, **[!UICONTROL Forms]**, **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**를 클릭합니다.
+1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 테마를 만드는 마법사가 실행됩니다.
 
 1. 테마의 **[!UICONTROL 이름]**&#x200B;을(를) 지정하십시오.
@@ -87,7 +87,7 @@ Cloud Service 인스턴스에서 만든 테마:
 1. **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하고 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
 1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
-1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **[!UICONTROL 업로드]**를 클릭합니다.
+1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
 
 ## 테마의 메타데이터 {#metadata-of-a-theme}
@@ -528,7 +528,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 #### 테마 편집기에서 글꼴 선택 {#selecting-fonts-in-theme-editor}
 
-+ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
+&#x200B;+ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
 
 ![테마 편집기에 나열된 새 글꼴](assets/theme-font.png)
 

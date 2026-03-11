@@ -44,11 +44,11 @@ ht-degree: 7%
 
 ## 서비스 온보드 {#onboarding}
 
-* [ as a Cloud Service에 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager].
+* [&#x200B; as a Cloud Service에 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager].
 
 * (샌드박스만 해당) 서비스를 온보딩한 후 프로덕션 및 비프로덕션 파이프라인을 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)합니다. [!DNL AEM Forms] as a Cloud Service의 최신 기능을 활성화하고 환경에 제공합니다.
 
-Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. [ as a Cloud Service에 대한 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager]을 완료한 후 다음 작업을 수행하여 Forms - 디지털 등록 또는 고객 커뮤니케이션 기능을 사용하도록 설정하십시오. <!--You can also enable both the features-->:
+Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. [&#x200B; as a Cloud Service에 대한 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)온보딩[!DNL Adobe Experience Manager]을 완료한 후 다음 작업을 수행하여 Forms - 디지털 등록 또는 고객 커뮤니케이션 기능을 사용하도록 설정하십시오. <!--You can also enable both the features-->:
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동합니다.

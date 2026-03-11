@@ -40,7 +40,7 @@ ht-degree: 99%
    1. API 참조 설명서를 보려면 index.html 파일을 엽니다.
 
 * **적응형 양식에 대한 [!DNL JavaScript™] API 참조는 어디에서 얻을 수 있습니까?**
-[!DNL  Maven Central Repository]에서 [!DNL JavaScript™] API 참조 설명서를 다운로드할 수 있습니다. 다운로드 방법:
+[!DNL &#x200B; Maven Central Repository]에서 [!DNL JavaScript™] API 참조 설명서를 다운로드할 수 있습니다. 다운로드 방법:
    1. [[!DNL Maven Central Repository]를 엽니다](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. 최신 버전의 [!DNL Experience Manager Forms] SDK가 포함된 페이지를 찾아 엽니다.
    1. 모든 파일을 보려면 모두 보기 옵션을 클릭합니다.
