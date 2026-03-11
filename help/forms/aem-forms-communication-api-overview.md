@@ -20,7 +20,7 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 
 * [Adobe Developer Console(ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console은 Adobe API, 이벤트, 런타임 및 App Builder의 게이트웨이입니다.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
+* [AEM Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
 
 서로 다른 API가 서로 다른 [인증 방법](#authentication-methods)을 지원합니다.
 

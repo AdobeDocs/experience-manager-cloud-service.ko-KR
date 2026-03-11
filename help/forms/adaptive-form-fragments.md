@@ -23,7 +23,7 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service(기초 구성 요소) | 이 문서 |
 | AEM as a Cloud Service(핵심 구성 요소) | [여기 클릭](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ko) |
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등과 같은 개인 세부 사항을 제공하기 위한 일부 공통 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다. 적응형 Forms은 패널 또는 필드 그룹과 같은 양식 세그먼트를 한 번만 만들어 적응형 Forms 간에 재사용할 수 있는 편리한 메커니즘을 제공합니다. 이러한 재사용 가능한 독립 세그먼트를 적응형 양식 조각이라고 합니다.
 

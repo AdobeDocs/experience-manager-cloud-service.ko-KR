@@ -29,7 +29,7 @@ Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.co
 * 기본 정보의 정상적인 흐름을 방해할 수 있는 추가 정보를 제공합니다.
 * 괄호 정보 또는 저작권 권한을 제공합니다.
 
-적응형 Forms에서 [!UICONTROL 각주]는 양식을 완성하거나 사용하는 방법에 대한 정보를 표시하는 데 사용됩니다. 적응형 Forms을 만드는 방법에 대한 자세한 내용은 [적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)를 참조하십시오.
+적응형 Forms에서 [!UICONTROL 각주]는 양식을 완성하거나 사용하는 방법에 대한 정보를 표시하는 데 사용됩니다. 적응형 Forms을 만드는 방법에 대한 자세한 내용은 [적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ko)를 참조하십시오.
 
 ## 적응형 Forms 각주 {#using-footnote-adaptiveforms}
 
