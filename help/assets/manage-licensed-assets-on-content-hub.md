@@ -3,9 +3,9 @@ title: Content Hub에서 라이선스가 부여된 자산 관리
 description: 에셋 메타데이터 양식에 라이선스 필드를 추가하고, 라이선스 메타데이터 속성을 에셋 폴더에 적용하고, 라이선스가 있는 에셋을 사용할 수 있도록 승인하는 방법에 대해 알아봅니다.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -28,21 +28,21 @@ ht-degree: 3%
 
 ### AEM Assets Content Hub에서 라이선스가 있는 에셋을 관리하는 목적은 무엇입니까?
 
-Content Hub에서 라이센스가 부여된 에셋을 관리하면 관리자는 유효한 라이센스가 있는 승인된 에셋만 사용할 수 있도록 하여 AEM 작성 환경 내에서 규정 준수 및 적절한 메타데이터 추적을 유지할 수 있습니다.
+AEM Assets Content Hub에서 라이센스가 부여된 에셋을 관리하면 관리자는 유효한 라이센스가 있는 승인된 에셋만 사용할 수 있도록 하여 AEM 작성 환경 내에서 규정 준수 및 적절한 메타데이터 추적을 유지할 수 있습니다.
 
 ### Experience Manager as a Cloud Service의 에셋 속성에 라이선스 필드를 추가하려면 어떻게 해야 합니까?
 
-`dc:license` 속성에 매핑된 새 텍스트 필드를 포함하도록 메타데이터 양식을 편집하여 자산 속성에 라이선스 필드를 추가할 수 있습니다. 그러면 이 필드가 AEM Assets 작성 환경의 에셋 속성에 표시됩니다.
+AEM Assets 보기에서 `dc:license` 속성에 매핑된 새 텍스트 필드를 포함하도록 메타데이터 양식을 편집하여 자산 속성에 라이선스 필드를 추가할 수 있습니다. 그러면 이 필드가 AEM Assets 작성 환경의 에셋 속성에 표시됩니다.
 
-### 메타데이터 양식을 에셋 폴더에 적용하여 에셋 속성에 라이선스 필드를 포함시키는 방법
+### AEM Assets의 에셋 속성에 라이선스 필드를 포함하도록 에셋 폴더에 메타데이터 양식을 적용하는 방법
 
-라이선스 필드를 포함하도록 메타데이터 양식을 편집합니다. 이 메타데이터 양식을 원하는 에셋 폴더에 적용하여 해당 폴더 내의 모든 에셋에 대해 새 설정이 통합되도록 합니다.
+AEM Assets 보기에서 라이선스 필드를 포함하도록 메타데이터 양식을 편집합니다. 이 메타데이터 양식을 원하는 에셋 폴더에 적용하여 해당 폴더 내의 모든 에셋에 대해 새 설정이 통합되도록 합니다.
 
-### 에셋에 대한 라이선스 세부 사항을 지정하는 방법
+### AEM Assets 보기에서 에셋에 대한 라이선스 세부 사항을 지정하는 방법
 
 라이선스 세부 정보를 지정하려면 에셋을 선택하고 **세부 정보**&#x200B;를 클릭하여 해당 속성을 확인하고 메타데이터 양식에 추가된 라이선스 필드에 승인된 에셋 라이선스의 절대 경로를 입력하십시오.
 
-### 에셋 라이선스에 대한 Content Hub 절대 경로에 필요한 형식은 무엇입니까?
+### 에셋 라이선스에 대한 AEM Assets Content Hub 절대 경로에 필요한 형식은 무엇입니까?
 
 Content Hub 절대 경로는 /content/dam/(DAM 저장소 내의 에셋의 폴더 계층)/(asset_name) 패턴을 따라야 합니다.(file_extension). 예: `/content/dam/teamA/projects/documents/file1.pdf`
 
@@ -54,6 +54,6 @@ Content Hub 절대 경로는 /content/dam/(DAM 저장소 내의 에셋의 폴더
 
 에셋의 속성에서 라이선스 경로를 정의한 후 에셋을 승인하고 저장 을 클릭합니다. 이 작업을 수행하면 라이센스가 부여된 에셋을 AEM Assets Content Hub에서 사용할 수 있습니다.
 
-### Content Hub에서 라이선스가 있는 에셋을 관리하는 사람은 누구입니까?
+### AEM Assets Content Hub에서 라이선스가 있는 에셋을 관리하는 사람은 누구입니까?
 
-관리자는 Content Hub에서 메타데이터 양식을 편집하고, 자산 폴더에 할당하고, 자산과 라이센스를 모두 승인할 책임이 있습니다.
+관리자는 AEM Assets Content Hub에서 메타데이터 양식을 편집하고, 자산 폴더에 할당하고, 자산과 라이센스를 모두 승인할 책임이 있습니다.
