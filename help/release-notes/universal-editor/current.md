@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.03.05 릴리스 정보
-description: 다음은 범용 편집기 2026.03.05 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.03.12 릴리스 정보
+description: 다음은 범용 편집기 2026.03.12 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 39%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
 
-# 범용 편집기 2026.03.05 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.03.12 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 3월 5일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2026년 3월 12일 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ ht-degree: 39%
 
 ## 새로운 기능 {#what-is-new}
 
-* [구성 요소 선택기](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)에 새 디자인이 있습니다.
-* 이제 RTE의 [색상 선택기](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)를 사용할 수 있습니다.
+* 이제 컨테이너의 [컨텍스트 메뉴](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)를 통해 구성 요소를 추가할 수 있습니다.
 
 ## 얼리 어답터 기능 {#early-adopter}
 
@@ -37,5 +36,4 @@ ht-degree: 39%
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 이제 백엔드에서 지원하는 경우 정렬, 텍스트 방향 및 들여쓰기 옵션이 RTE에서 기본적으로 [활성화됩니다](/help/implementing/universal-editor/configure-rte.md).
-* 이제 Open API 및 UI 스키마와 함께 콘텐츠 조각을 사용할 때 탭이 렌더링됩니다.
+* 문서 작성 하위 요소가 nthChild 규칙을 준수하지 않는 문제가 해결되었습니다.
