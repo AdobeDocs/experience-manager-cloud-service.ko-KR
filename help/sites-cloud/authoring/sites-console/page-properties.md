@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 34%
+source-wordcount: '2211'
+ht-degree: 33%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 34%
 
 * **제목** - SEO 목적으로 페이지 메타 제목과 페이지 콘텐츠에 표시되는 제목을 정의합니다(재정의되지 않은 경우).
 
-   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[&#x200B; 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
+   * 페이지 제목은 **사이트 콘솔에서**&#x200B;사이트[ 카드/목록 보기를 포함하여 AEM UI의 다양한 위치에 표시됩니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 필수 필드입니다.
 
 * **태그** - SEO 용도로 페이지 메타 태그를 정의합니다.
@@ -57,7 +57,7 @@ ht-degree: 34%
 
 ### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **브랜드 슬러그**
 
@@ -161,11 +161,17 @@ ht-degree: 34%
 
 * **사용** - 페이지 액세스를 위한 인증 사용 활성화
 
->[!NOTE]
->
->페이지의 닫힌 사용자 그룹은 **[권한](#permissions)** 탭에 정의됩니다.
+  >[!NOTE]
+  >
+  >페이지의 닫힌 사용자 그룹은 **[권한](#permissions)** 탭에 정의됩니다.
 
 * **로그인 페이지** - 로그인에 사용할 페이지
+
+  >[!WARNING]
+  >
+  >지정한 로그인 페이지 **은(는)**&#x200B;인증 요구 사항&#x200B;**에 의해 보호되는 페이지를 가리켜서는 안 됩니다**. 로그인 페이지가 보호되지 않은 공개 페이지인지 확인해야 합니다. 예를 들어 `/content/<mysite>/en/login`인증 요구 사항&#x200B;**이 활성화되지 않은**&#x200B;과(와) 같은 전용 페이지가 있습니다.
+  >
+  >구성된 로그인 페이지에 **사용**&#x200B;이 있는 경우 시작 시 해당 페이지의 인증 요구 사항이 자동으로 제거되어 공개적으로 액세스할 수 있게 됩니다.
 
 ### 내보내기 {#export}
 
