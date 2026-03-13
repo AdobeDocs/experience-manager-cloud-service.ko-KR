@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 18%
+source-wordcount: '3002'
+ht-degree: 17%
 
 ---
 
@@ -186,9 +186,15 @@ ht-degree: 18%
 
    ![컨테이너에 추가할 구성 요소 선택](assets/ue-add-component.png)
 
-1. 그런 다음 속성 패널에서 추가 아이콘을 선택합니다.
+1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
 
-   ![추가 아이콘 선택](assets/add-icon.png)
+   * 속성 패널에서 **추가** 아이콘을 선택합니다.
+
+     ![추가 아이콘 선택](assets/add-icon.png)
+
+   * 상황에 맞는 메뉴에서 **추가** 옵션을 선택하십시오.
+
+     ![상황에 맞는 메뉴에서 추가](assets/add-from-context-menu.png)
 
 1. 구성 요소 선택기 대화 상자가 열립니다.
    * 왼쪽 열을 사용하여 구성 요소를 범주별로 필터링하거나 검색을 사용하여 이름별로 필터링합니다.
@@ -207,21 +213,28 @@ ht-degree: 18%
 ### 컨테이너의 구성 요소 복제 {#duplicating-components}
 
 1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기를 사용하여 컨테이너에서 구성 요소를 선택합니다.
-1. 그런 다음 속성 패널에서 **복제** 아이콘을 선택합니다.
 
-   ![컨테이너에 추가할 구성 요소 선택](assets/ue-duplicate-component.png)
-1. 구성 요소가 복제되고 선택한 구성 요소 아래에 삽입됩니다.
+1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
 
-구성 요소가 컨테이너에 삽입되며 편집기에서 편집할 수 있습니다.
+   * 속성 패널에서 **복제** 아이콘을 선택합니다.
+
+     ![컨테이너에 추가할 구성 요소 선택](assets/ue-duplicate-component.png)
+
+   * 컨텍스트 메뉴에서 **복제** 옵션을 선택합니다.
+
+     ![상황에 맞는 메뉴에서 복제](assets/duplicate-from-context-menu.png)
+
+구성 요소가 복제되고 선택한 구성 요소 아래에 삽입됩니다.
 
 ### 컨테이너에서 구성 요소 삭제 {#deleting-components}
 
-1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기에서 컨테이너 구성 요소를 선택하십시오.
-1. 컨테이너의 V자형 아이콘을 선택하여 콘텐츠 트리에서 해당 콘텐츠를 확장합니다.
-1. 그런 다음 콘텐츠 트리에서 컨테이너 내의 구성 요소를 선택합니다.
-1. 속성 패널에서 삭제 아이콘을 선택합니다.
+1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)의 컨테이너 또는 편집기에서 구성 요소를 선택하십시오.
+1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
+   * 속성 패널에서 **삭제** 아이콘을 선택합니다.
 
-   ![구성 요소 삭제](assets/ue-delete-component.png)
+     ![구성 요소 삭제](assets/ue-delete-component.png)
+   * 상황에 맞는 메뉴에서 **삭제** 옵션을 선택하십시오.
+     ![상황에 맞는 메뉴에서 삭제](assets/delete-from-context-menu.png)
 
 선택한 구성 요소가 삭제되었습니다.
 
@@ -295,21 +308,23 @@ ht-degree: 18%
 ![붙여넣기 아이콘](assets/paste.png)
 
 1. 편집기 내에서 또는 콘텐츠 트리에서 구성 요소를 선택합니다.
-1. **복사** 아이콘이 [속성 패널에 나타납니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) 탭하거나 클릭합니다.
-1. **붙여넣기** 아이콘이 속성 패널에 나타납니다.
+1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
+   * **속성 패널에서**&#x200B;복사[ 아이콘을 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![패널에서 복사](assets/copy-from-panel.png)
+   * 상황에 맞는 메뉴에서 **복사** 옵션을 선택합니다.
+     ![상황에 맞는 메뉴에서 복사](assets/copy-from-context-menu.png)
 1. 복사한 구성 요소를 붙여넣을 구성 요소 _after_&#x200B;를 선택합니다.
-1. 붙여넣기 를 탭하거나 클릭합니다.
-1. 복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
+1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
+   * 속성 패널에서 **붙여넣기**를 탭하거나 클릭합니다.
+     ![패널에서 붙여넣기](assets/paste-from-panel.png)
+   * 상황에 맞는 메뉴에서 **붙여넣기**를 선택합니다.
+     ![상황에 맞는 메뉴에서 붙여넣기](assets/paste-from-context-menu.png)
+
+복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
 
 >[!TIP]
 >
 >핫키 `Command-C` 또는 `Command-V`을(를) 사용하여 각각 복사하거나 붙여 넣으십시오.
-
-## 컨텍스트 옵션 {#context-options}
-
-적절히 편집할 때 편집기는 마우스 오른쪽 단추를 클릭하여 구성 요소 복제, 삭제 또는 복사와 같은 컨텍스트 관련 옵션을 제공합니다.
-
-![상황에 맞는 옵션 메뉴](assets/context-options-menu.png)
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
@@ -434,7 +449,7 @@ ht-degree: 18%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 
