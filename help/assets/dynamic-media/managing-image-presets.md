@@ -327,7 +327,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
     </ul>
     <div>
       선명하게 하기는에 설명되어 있습니다.
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용</a> 비디오, <a href="https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">이미지 선명하게 하기</a> 온라인 도움말 항목 및 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ko">Dynamic Media Classic에서 이미지 선명하게 하기 모범 사례</a> 다운로드 가능한 PDF.
+     <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용</a> 비디오, <a href="https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">이미지 선명하게 하기</a> 온라인 도움말 항목 및 <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ko">Dynamic Media Classic에서 이미지 선명하게 하기 모범 사례</a> 다운로드 가능한 PDF.
     </div> </td>
   </tr>
   <tr>
@@ -372,7 +372,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >
 >일부 이미지 수정자 [은(는) Experience Manager](#advanced-tab-options)에서 사용할 수 없습니다.
 
-* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
+* [op_invert](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -380,7 +380,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - 이미지에 흐림 효과 필터를 적용합니다.
+* [op_blur](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - 이미지에 흐림 효과 필터를 적용합니다.
 
   ```xml {.line-numbers}
   &op_blur=7

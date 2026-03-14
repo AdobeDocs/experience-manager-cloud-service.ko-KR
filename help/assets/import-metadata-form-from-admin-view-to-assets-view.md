@@ -48,7 +48,7 @@ ht-degree: 0%
    * [!UICONTROL 이름], [!UICONTROL 수정됨] 또는 [!UICONTROL 작성자]별로 테이블을 정렬하려면 열 헤더를 클릭하십시오.
    * 가져온 양식을 선택하고 **[!UICONTROL 폴더에서 제거]**&#x200B;를 클릭한 다음 폴더 경로에서 폴더 이름을 확인하여 폴더가 올바르게 포팅되었는지 확인하십시오.
      ![메타데이터 양식 페이지 확인](/help/assets/assets/confirm-ported-folder.png)
-   * 가져온 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 메타데이터 양식의 지원되는 모든 구성을 봅니다. 메타데이터 양식, 구성 요소 및 필드에 대한 자세한 내용은 [메타데이터 Forms 설정](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)을 참조하십시오.
+   * 가져온 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 메타데이터 양식의 지원되는 모든 구성을 봅니다. 메타데이터 양식, 구성 요소 및 필드에 대한 자세한 내용은 [메타데이터 Forms 설정](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)을 참조하십시오.
 
    ![메타데이터 양식 페이지 확인](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -61,4 +61,4 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > [[!DNL Assets View] 세부 정보 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) 또는 [[!DNL Admin View] 속성 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas)에서 메타데이터 속성 값에 대한 변경 내용은 두 인터페이스 간에 자동으로 동기화됩니다. 그러나 필드를 추가 또는 제거하거나 기타 수정 사항과 같은 양식의 구조적 변경 사항은 동기화되지 않습니다.
+   > [[!DNL Assets View] 세부 정보 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) 또는 [[!DNL Admin View] 속성 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/administer/metadata-schemas)에서 메타데이터 속성 값에 대한 변경 내용은 두 인터페이스 간에 자동으로 동기화됩니다. 그러나 필드를 추가 또는 제거하거나 기타 수정 사항과 같은 양식의 구조적 변경 사항은 동기화되지 않습니다.

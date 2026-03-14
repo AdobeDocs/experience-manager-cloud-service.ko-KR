@@ -508,7 +508,7 @@ Experience Platform 태그를 구성하면 다음 항목이 통합에 대해 설
 
 Experience Platform Tags의 속성은 모든 설정을 함께 유지하는 명명된 구성입니다. 구성 설정 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-[선택 속성 구성](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags)도 참조하세요.
+[선택 속성 구성](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags)도 참조하세요.
 
 **Experience Platform 태그에서 속성을 만들려면:**
 
@@ -535,7 +535,7 @@ Experience Platform 태그에서 사용 가능한 모든 확장은 **[!UICONTROL
 
 제안된 값을 제외하고 추가 구성이 필요하지 않습니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-[Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview)을 참조하십시오.
+[Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/id-service/overview)을 참조하십시오.
 
 * (필수) *Adobe Analytics* 확장
 
@@ -651,7 +651,7 @@ Experience Platform 태그 환경에 대한 자세한 내용은 [환경](https:/
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Experience Platform Tags의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)를 참조하십시오.
+   Experience Platform Tags의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/publish/overview)를 참조하십시오.
 
 ## 통합을 위한 Adobe Experience Manager 구성 {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -846,4 +846,4 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 이 제한을 해결할 수 있습니다. 위의 Experience Manager 게시용 Experience Platform 태그 클라우드 구성에서 Experience Platform 태그 라이브러리의 개발 또는 스테이징 URL을 지정하십시오. 이렇게 하면 Experience Manager 게시 노드가 Experience Platform 태그 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
 
-Experience Platform 태그 클라우드 구성 설정에 대한 자세한 내용은 [Experience Platform 태그와 Experience Manager 통합](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview#integrations)을 참조하십시오.
+Experience Platform 태그 클라우드 구성 설정에 대한 자세한 내용은 [Experience Platform 태그와 Experience Manager 통합](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview#integrations)을 참조하십시오.

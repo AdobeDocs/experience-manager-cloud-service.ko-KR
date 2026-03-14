@@ -88,7 +88,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 뉴스레터를 동료와 공유하여 팀 전문 지식을 구축합니다.
    * `Apoorva Gupta`, Dynamic Media의 수석 제품 관리자를 만나보십시오.
 
-* **[2019년 10월, 문제 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[2019년 10월, 문제 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html?lang=ko)**
 
   이 문제에서:
 
@@ -99,7 +99,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * `Nick Peters`, 관리자, 사이트 안정성 엔지니어링, Adobe Experience Manager을 만나보십시오.
    * Experience League의 Dynamic Media 및 Dynamic Media Classic에 대한 최신 정보를 얻으십시오.
 
-* **[2019년 9월, 문제 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[2019년 9월, 문제 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html?lang=ko)**
 
   이 문제에서:
 

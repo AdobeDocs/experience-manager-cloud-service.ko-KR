@@ -56,7 +56,7 @@ Dynamic Media 사용자 인터페이스 요소는 화면 판독기와 같은 보
 
 모든 Dynamic Media 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#)을 참조하십시오.
 
 ## Dynamic Media 뷰어의 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
 
