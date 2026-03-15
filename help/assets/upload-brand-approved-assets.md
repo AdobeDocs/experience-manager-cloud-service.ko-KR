@@ -20,7 +20,7 @@ ht-degree: 12%
 
 자산을 추가할 권한이 있는 [Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)는 로컬 파일 시스템에서 Content Hub에 자산을 추가하거나 OneDrive 또는 Dropbox 데이터 원본에서 자산을 가져올 수 있습니다. 검색 기능을 개선하기 위해 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 모든 에셋이 Content Hub의 최상위 수준에 표시됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445384/?captions=kor&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Assets as a Cloud Service에서 `Approved`(으)로 표시된 자산은 Content Hub에서 자동으로 사용할 수 있습니다. 자세한 내용은 [Content Hub에 대한 자산 승인](/help/assets/approve-assets-content-hub.md)을 참조하십시오.
 
