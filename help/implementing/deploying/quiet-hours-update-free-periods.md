@@ -4,7 +4,7 @@ description: 자동 체류 시간 및 업데이트 불가 기간을 사용하여
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM as a Cloud Service [자동 유지 관리 업데이트](/help/implementing/de
 다음 두 가지 예약 옵션을 사용하여 이러한 시간대를 구성할 수 있습니다.
 
 * **방해 금지 시간** - 업데이트가 발생하지 않는 일별 시간 간격(최대 8시간)을 정의할 수 있습니다.
-* **무료 기간 업데이트** - 업데이트가 발생하지 않는 7일 기간을 정의할 수 있습니다. 12개월 기간 내에 최대 3개의 무료 업데이트 기간을 가질 수 있습니다.
+* **무료 기간 업데이트** - 업데이트가 발생하지 않는 7일 기간을 정의할 수 있습니다. 부동 365일 기간 내에 최대 3개의 업데이트 사용 가능 기간을 가질 수 있습니다.
 
 무료 기간 및 자동 시간 업데이트 기능은 &quot;프로그램별&quot;로 구성됩니다. **비즈니스 소유자** 및 **배포 관리자**&#x200B;의 &quot;사용자 역할&quot;을 가진 사용자만 이러한 기능을 보고 사용할 수 있습니다.
 
