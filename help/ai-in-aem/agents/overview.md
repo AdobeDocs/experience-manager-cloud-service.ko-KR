@@ -27,11 +27,11 @@ ht-degree: 3%
 
 에이전트에 액세스할 수 있는 세 가지 옵션이 있습니다.
 
-1. 단계적으로 출시되는 [구매 전 시도 프로그램](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)을 통해 AEM 에이전트에 액세스하는 옵션이 있을 수 있습니다. CSM 또는 TAM은 조직의 가용성을 확인하는 데 도움이 될 수 있습니다.
+1. 단계적으로 출시되는 [구매 전 시도 프로그램](http://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)을 통해 AEM 에이전트에 액세스하는 옵션이 있을 수 있습니다. CSM 또는 TAM은 조직의 가용성을 확인하는 데 도움이 될 수 있습니다.
 1. 평가판을 통해 AEM 에이전트 [을(를) 살펴봅니다.](https://www.aem.live/developer/aem-playground)
 1. CSM 또는 TAM과 연결하여 Agentic SKU를 통한 액세스가 로드맵 및 평가 계획에 적합한지 논의하십시오.
 
-초기 릴리스 시 새로운 기술을 사용할 수 있게 되면 추가로 참여하여 피드백을 공유할 수 있는 기회를 제공할 예정입니다. 업데이트를 위해 [이 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)를 시청하는 것이 좋습니다.
+초기 릴리스 시 새로운 기술을 사용할 수 있게 되면 추가로 참여하여 피드백을 공유할 수 있는 기회를 제공할 예정입니다. 업데이트를 위해 [이 페이지](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)를 시청하는 것이 좋습니다.
 
 ## 브랜드 경험 에이전트 {#brand-experience-agent}
 
