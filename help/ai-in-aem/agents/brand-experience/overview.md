@@ -4,7 +4,7 @@ description: Brand Experience Agent가 콘텐츠 업데이트, 사이트 변환 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Brand Experience Agent는 콘텐츠 업데이트, 사이트 변환 및 기술 문제 해결을 자동화하여 디지털 경험의 현대화와 진화를 가속화하므로 브랜드가 AI의 속도에 맞게 지속적으로 개선하고 적응할 수 있습니다.
 
-## Jobs {#jobs}
+## 에이전트 {#agents}
 
 Brand Experience Agent는 각각 특정 작업 세트를 전문으로 하는 다음 에이전트를 통해 결과를 제공합니다.
 
