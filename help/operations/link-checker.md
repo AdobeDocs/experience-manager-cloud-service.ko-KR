@@ -3,13 +3,13 @@ title: 링크 확인
 description: 링크 검사기는 작성자가 콘텐츠에 추가되는 링크의 유효성을 검사하여 작성자를 지원하는 방법 및 구성 옵션에 대해 알아봅니다.
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
 
 ---
-
 
 # 링크 확인 {#link-checker}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 내부 링크는 AEM 저장소의 다른 콘텐츠에 대한 링크입니다. 내부 링크는 경로 선택기, 리치 텍스트 편집기 또는 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * `/content/wknd/us/en/adventures/ski-touring` 페이지를 만듭니다.
-* 해당 페이지에는 [텍스트 구성 요소의 `/content/wknd/us/en/adventures/extreme-ironing`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text)
+* 해당 페이지에는 `/content/wknd/us/en/adventures/extreme-ironing`텍스트 구성 요소의 [에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 내부 링크는 콘텐츠 작성자가 그러한 링크를 페이지에 추가하는 즉시 검증됩니다. 링크가 잘못된 경우:
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 외부 링크는 AEM 저장소 외부의 콘텐츠에 대한 링크입니다. 외부 링크는 리치 텍스트 편집기나 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * `/content/wknd/us/en/adventures/ski-touring` 페이지를 만듭니다.
-* 해당 페이지에는 [텍스트 구성 요소의 `https://bunwarmerthermalunderwear.com`에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text)
+* 해당 페이지에는 `https://bunwarmerthermalunderwear.com`텍스트 구성 요소의 [에 대한 링크가 포함되어 있습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 외부 링크는 구문을 확인하고 가용성을 확인합니다. 이 검사는 구성 가능한 간격으로 비동기적으로 수행됩니다. 링크 검사기에서 잘못된 외부 링크를 찾은 경우:
 
@@ -69,10 +69,10 @@ ht-degree: 0%
 
 1. 콘텐츠 작성자가 페이지에 대한 링크를 저장할 때마다 이벤트 처리기가 트리거됩니다.
 1. 이벤트 처리기는 `/content` 아래의 모든 콘텐츠를 통과하고 새 링크 또는 업데이트된 링크를 확인한 후 링크 검사기의 캐시에 추가합니다.
-1. 그런 다음 **일 CQ 링크 검사기 서비스**&#x200B;가 정기적으로 실행되어 캐시의 항목에 올바른 구문이 있는지 확인합니다.
+1. 그런 다음 **Adobe AEM 링크 검사기 서비스**&#x200B;를 정기적으로 실행하여 캐시의 항목에 올바른 구문이 있는지 확인합니다.
 1. 구문이 유효성을 검사한 링크가 [외부 링크 검사기 창에 나타납니다.](#external-using) 그러나 **보류 중** 상태가 됩니다.
-1. 그런 다음 **일 CQ 링크 검사기 작업**&#x200B;이 정기적으로 실행되어 GET 호출을 통해 링크의 유효성을 검사합니다.
-1. 그런 다음 **일 CQ 링크 검사기 작업**&#x200B;은(는) [외부 링크 검사기 창](#external-using)의 항목을 GET 호출 결과로 업데이트합니다.
+1. 그런 다음 **Adobe AEM 링크 검사기 작업**&#x200B;이 정기적으로 실행되어 GET 호출을 통해 링크의 유효성을 검사합니다.
+1. 그런 다음 **Adobe AEM 링크 검사기 작업**&#x200B;은(는) [외부 링크 검사기 창](#external-using)의 항목을 GET 호출 결과로 업데이트합니다.
 
 ### 외부 링크 확인 사용 {#external-using}
 
@@ -109,12 +109,12 @@ ht-degree: 0%
 
 링크 검사기는 AEM에서 즉시 자동으로 사용할 수 있습니다. 그러나 동작을 변경하기 위해 수정할 수 있는 몇 가지 OSGi 구성이 있습니다.
 
-* **일 CQ 링크 검사기 정보 저장소 서비스** - 이 서비스는 저장소에 있는 링크 검사기 캐시의 크기를 정의합니다.
-* **일 CQ 링크 검사기 서비스** - 이 서비스는 외부 링크 구문의 비동기 검사를 수행합니다.
+* **Adobe AEM 링크 검사기 정보 저장소 서비스** - 이 서비스는 저장소의 링크 검사기 캐시 크기를 정의합니다.
+* **Adobe AEM 링크 검사기 서비스** - 이 서비스는 외부 링크 구문의 비동기 검사를 수행합니다.
    * 확인 기간과 다른 옵션 중에서 검사기가 건너뛴 링크 유형을 정의할 수 있습니다.
-* **일 CQ 링크 검사기 작업** - 이 서비스는 외부 링크에 대한 GET 유효성 검사를 수행합니다.
+* **Adobe AEM 링크 검사기 작업** - 이 서비스는 외부 링크에 대한 GET 유효성 검사를 수행합니다.
    * 이 옵션을 사용하면 다른 옵션 간의 불량 링크와 우수 링크를 확인하기 위해 간격을 별도로 정의할 수 있습니다.
-* **일 CQ 링크 검사기 변환기** - 이 서비스는 사용자 정의 규칙 집합을 기반으로 링크를 변환합니다.
+* **Adobe AEM 링크 검사기 변환기** - 이 서비스는 사용자 정의 규칙 집합을 기반으로 링크를 변환합니다.
 
 OSGi 설정을 변경하는 방법에 대한 자세한 내용은 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md) 문서를 참조하십시오.
 
@@ -123,7 +123,7 @@ OSGi 설정을 변경하는 방법에 대한 자세한 내용은 [OSGi 구성](/
 링크 검사기를 완전히 비활성화하도록 선택할 수 있습니다. 방법은 다음과 같습니다.
 
 1. OSGi 콘솔을 엽니다.
-1. **일 CQ 링크 검사기 변환기 편집**
+1. **Adobe AEM 링크 검사기 변환기 편집**
 1. 비활성화하려는 옵션을 선택합니다.
    * **확인 비활성화** - 링크 유효성 검사를 비활성화합니다.
    * **다시 쓰기 사용 안 함** - 링크 변환을 사용하지 않습니다.
