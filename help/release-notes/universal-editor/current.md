@@ -4,9 +4,9 @@ description: 다음은 범용 편집기 2026.03.19 릴리스에 대한 릴리스
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 34%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 34%
 
 * [홈 화면](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)(으)로 다시 이동할 때 속성의 항목이 축소됩니다.
 * [자산 선택기](/help/implementing/universal-editor/configure-assets-selector.md)에서 이제 [필터 정의를 지원합니다.](/help/implementing/universal-editor/filtering.md)
-* 선택한 항목에 사용할 수 있는 작업이 없으면 [상황에 맞는 메뉴](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)에 작업에 액세스할 수 있는 V자형 화살표가 더 이상 표시되지 않습니다.
+* 선택한 항목에 사용할 수 있는 작업이 없으면 [상황에 맞는 메뉴](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)에 이를 나타내는 메시지가 표시됩니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
