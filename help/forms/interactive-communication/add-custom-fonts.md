@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 15%
 
 ---
@@ -33,5 +33,5 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-> 자세한 구성 단계는 [사용자 지정 글꼴 사용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts) 안내서를 따라 수행할 수 있습니다
+> 자세한 구성 단계는 [사용자 지정 글꼴 사용](/help/forms/use-custom-fonts.md) 안내서를 따라 수행할 수 있습니다
 >단계를 완료하고 파이프라인을 실행하면 대화형 통신 편집기에서 사용자 지정 글꼴을 직접 사용할 수 있습니다.
