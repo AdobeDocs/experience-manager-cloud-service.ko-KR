@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2026.3
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -95,7 +95,9 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 * **전체 빌드** — 실행할 때마다 저장소의 모든 모듈을 빌드합니다.
 * **스마트 빌드** — 마지막 커밋 이후에 변경된 모듈만 빌드하므로 전체 빌드 시간이 단축됩니다.
 
-**스마트 빌드**&#x200B;를 사용하는 파이프라인을 제어합니다. Beta를 실행하는 동안 이 옵션은 **코드 품질** 및 **개발 배포** 파이프라인에만 나타납니다.
+**스마트 빌드**&#x200B;를 사용하는 파이프라인을 제어합니다. Beta를 실행하는 동안 이 옵션은 **코드 품질** 및 **개발 전체 스택 배포** 파이프라인에만 나타납니다.
+
+[비프로덕션 파이프라인에서 스마트 빌드 사용 정보](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) 및 [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)를 참조하십시오.
 
 관심이 있으신가요? Adobe OrgID 및 프로그램 ID를 첨부한 이메일을 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)으로 보내 주시기 바랍니다.
 
