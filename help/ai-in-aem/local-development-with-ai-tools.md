@@ -52,7 +52,7 @@ AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한
 
 스킬은 여러 단계 개발 워크플로우를 인코딩하는 지침 세트입니다. 호출되면 AI가 일반적인 지식에만 의존하지 않고 스킬의 절차를 따르며 일관되고 규칙을 준수하는 결과를 생성합니다.
 
-Adobe은 이 기능을 아직 일반적으로 사용할 수 없으므로 **[분기의 ](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)adobe/skills**`beta` 리포지토리에서 AEM as a Cloud Service 기술을 게시합니다.
+Adobe은 이 기능을 아직 일반적으로 사용할 수 없으므로 **[분기의 &#x200B;](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)adobe/skills**`beta` 리포지토리에서 AEM as a Cloud Service 기술을 게시합니다.
 
 | 스킬 | 목적 |
 |---|---|
