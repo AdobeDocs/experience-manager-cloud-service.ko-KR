@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
+source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 62%
@@ -87,7 +87,7 @@ ht-degree: 62%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -157,7 +157,7 @@ ht-degree: 62%
 
 콘솔에는 직접 또는 특정 조각을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
 
-* 다양한 작업이 [&#x200B; 콘솔에서 사용 가능](#actions-unselected)합니다.
+* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
 * [하나 이상의 콘텐츠 조각을 선택하여 적합한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
 
 ### 작업 (선택되지 않음) {#actions-unselected}
@@ -533,7 +533,7 @@ AEM을 사용하면 다음 작업을 수행할 수 있습니다.
 1. 도구 모음에서 **체크 인**&#x200B;을 선택합니다.
 1. **체크 인** 작업을 확인합니다.
 
-## 강제(관리자) 체크 인 {#forced-adminstrator-check-in}
+### 강제(관리자) 체크 인 {#forced-adminstrator-check-in}
 
 콘텐츠 조각을 체크아웃한 사용자가 조각을 체크인할 수 없을 수도 있습니다.
 
