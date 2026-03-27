@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1097'
 ht-degree: 2%
 
 ---
@@ -25,13 +25,13 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
 
 - 만들어진 대화형 통신 및 게시됨
 - 팝업 지원이 활성화된 브라우저
-- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- AEM[에서 지원하는 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
+- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- AEM[에서 지원하는 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
 
 >[!NOTE]
 >
 >- 이 문서에서는 [Microsoft Entra ID(Azure AD)가 있는 SAML 2.0을 ID 공급자](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)로 사용하는 인증 구성을 보여 줍니다.
->- 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
+>- 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
 
 ### 연결 UI에 대한 추가 SAML 구성
 
@@ -517,5 +517,7 @@ When implementing the Associate UI integration, follow these best practices:
 ## 추가 참조
 
 - [대화형 통신 편집기에서 UI 연결](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+- [대화형 커뮤니케이션용 연결 UI 활성화 및 구성](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [UI 연결에 대한 제출 워크플로우 — IC PDF 출력 생성](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
 - [클라우드의 대화형 통신](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
 - [조기 액세스 기능](/help/forms/early-access-ea-features.md)
