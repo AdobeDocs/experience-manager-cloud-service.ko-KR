@@ -38,7 +38,7 @@ ht-degree: 28%
 
 Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480406/?captions=kor&quality=12)
 
 -->
 
@@ -165,7 +165,7 @@ Content Advisor는 캠페인 개요 기반 제안, 상황별 제안, Dynamic Med
 
 #### Cloud Manager 서버 {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&quality=12)
 
 최신 IDE는 MCP(Model Context Protocol)를 사용하여 대형 언어 모델(LLM)이 MCP 서버에 의해 노출된 도구를 호출할 수 있도록 합니다. 개발자는 낮은 수준의 API 사양과 직접 통합하는 대신 단순히 의도를 자연어로 설명할 수 있습니다.
 
