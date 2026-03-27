@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 70%
+source-wordcount: '3342'
+ht-degree: 62%
 
 ---
 
@@ -87,12 +87,15 @@ ht-degree: 70%
       * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
    * [검색](#searching-fragments) 상자 사용
    * [필터 패널](#filtering-fragments) 열기
-   * 몇 가지 [&#128279;](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
+   * 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
 콘솔의 기본/오른쪽 패널(테이블 보기)에 콘텐츠 조각에 대한 다양한 정보가 표시됩니다. 일부 항목에서는 추가 작업 및/또는 정보로 직접 연결될 수도 있습니다.
 
+* **제목**
+   * 자물쇠 아이콘은 조각이 [체크 아웃](#check-out-and-check-in)되어 있으며 한 사용자가 잠갔음을 나타냅니다. 자물쇠 아이콘을 선택하면 조각을 체크 아웃한 계정의 세부 정보가 표시됩니다.
+   * 정보(i) 아이콘을 사용하면 오른쪽 패널에서 추가 조각별 정보에 빠르게 액세스할 수 있습니다.
 * **이름**
    * 편집기에서 조각 열기 링크 제공.
 * **모델**
@@ -154,7 +157,7 @@ ht-degree: 70%
 
 콘솔에는 직접 또는 특정 조각을 선택한 후에 사용할 수 있는 다양한 작업이 있습니다.
 
-* 다양한 작업이 [&#x200B; 콘솔에서 사용 가능](#actions-unselected)합니다.
+* 다양한 작업이 [ 콘솔에서 사용 가능](#actions-unselected)합니다.
 * [하나 이상의 콘텐츠 조각을 선택하여 적합한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
 
 ### 작업 (선택되지 않음) {#actions-unselected}
@@ -186,9 +189,9 @@ ht-degree: 70%
 * **[복사](#copy-a-content-fragment)**
 * **[바꾸기](#find-and-replace)**
 * **이동**
-* **이름 바꾸기**
+* **이름 변경**
+* **[체크아웃 및 체크인](#check-out-and-check-in)**
 * **[삭제](#deleting-a-fragment)**(게시되지 않은 조각에만 사용 가능)
-
 
 >[!NOTE]
 >
@@ -481,6 +484,64 @@ FolderC
 >콘텐츠 조각을 20개 이상 선택하면 **찾아 바꿀 수 없음** 메시지가 표시됩니다.
 
 ![바꾸기 확인](assets/cf-managing-confirm-replace.png)
+
+## 체크아웃 및 체크인 {#check-out-and-check-in}
+
+AEM을 사용하면 다음 작업을 수행할 수 있습니다.
+
+* [콘텐츠 조각을 체크 아웃](#check-out-a-content-fragment)하여 다른 사용자가 해당 조각에서 작업할 수 없도록 합니다.
+* [콘텐츠 조각 체크 인](#check-in-a-content-fragment)하여 다른 사용자가 조각 작업을 다시 시작할 수 있도록 허용
+
+조각을 체크 아웃하면 잠겨 있습니다(`jcr:lock`). **제목** 열의 자물쇠 아이콘은 잠긴 조각을 나타냅니다. 자물쇠 아이콘을 선택하면 조각을 체크아웃한 계정에 대한 세부 정보가 제공됩니다.
+
+잠긴 조각을 편집, 게시, 게시 취소, 이동 또는 삭제할 수 있습니다. 다른 사용자는 조각을 체크인할 때까지 조각에 대해 이러한 작업을 수행할 수 없지만, 잠긴 조각의 메타데이터는 계속 변경할 수 있습니다.
+
+이 기능은 여러 사용자가 조각 편집에 대해 공동 작업을 수행할 때 충돌을 방지하는 데 도움이 됩니다.
+
+>[!NOTE]
+>
+>콘텐츠 조각을 체크아웃/체크인하려면 쓰기 액세스 권한이 있어야 합니다.
+
+>[!CAUTION]
+>
+>체크 아웃된 콘텐츠 조각이 포함된 폴더를 삭제할 수 있습니다.
+>
+>폴더를 삭제하기 전에 사용자가 체크 아웃한 콘텐츠 조각(또는 기타 디지털 에셋)이 폴더에 포함되어 있지 않은지 확인하십시오.
+
+>[!NOTE]
+>
+>컨텐츠 조각이 내부적으로 Assets으로 저장되므로 이 기능은 [Experience Manager DAM의 체크 인 및 체크 아웃 파일](/help/assets/check-out-and-submit-assets.md)과(와) 밀접하게 관련되어 있습니다.
+
+### 컨텐츠 조각 체크 아웃 {#check-out-a-content-fragment}
+
+조각을 체크 아웃하려면 다음 작업을 수행하십시오.
+
+1. **콘텐츠 조각** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
+1. 조각을 선택합니다.
+1. 도구 모음에서 **체크 아웃**&#x200B;을 선택합니다.
+1. **체크 아웃** 작업을 확인합니다.
+
+   * **제목** 열의 자물쇠 아이콘은 조각이 잠겨 있으며 사용자가 편집할 수만 있음을 나타냅니다.
+   * 다른 사용자가 편집할 조각을 열면 읽기 전용 모드임을 알리는 메시지가 표시됩니다.
+
+### 콘텐츠 조각 체크인 {#check-in-a-content-fragment}
+
+에서 조각을 확인하려면:
+
+1. **콘텐츠 조각** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
+1. 조각을 선택합니다.
+1. 도구 모음에서 **체크 인**&#x200B;을 선택합니다.
+1. **체크 인** 작업을 확인합니다.
+
+## 강제(관리자) 체크 인 {#forced-adminstrator-check-in}
+
+콘텐츠 조각을 체크아웃한 사용자가 조각을 체크인할 수 없을 수도 있습니다.
+
+이러한 경우 관리자는 **체크 인** 작업을 수행할 수 있습니다.
+
+>[!NOTE]
+>
+>Assets [강제 체크 인](/help/assets/check-out-and-submit-assets.md#forced-check-in)도 참조하세요.
 
 ## 조각 삭제 {#deleting-a-fragment}
 

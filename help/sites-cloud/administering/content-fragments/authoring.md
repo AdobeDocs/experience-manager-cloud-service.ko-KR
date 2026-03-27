@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
 workflow-type: tm+mt
-source-wordcount: '2799'
-ht-degree: 68%
+source-wordcount: '2839'
+ht-degree: 67%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 68%
      >[!WARNING]
      >
      >원본 편집기가 동일한 탭에서 열립니다. 두 편집기는 동시에 여는 것이 좋습니다.
+   * 조각 및 계정에 유효한 모든 경고. 예를 들어 조각을 편집할 수 있는 올바른 권한이 없거나 다른 사용자가 [체크 아웃](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in)한 경우 조각은 읽기 권한만 갖게 됩니다.
 
 * 왼쪽 패널: 콘텐츠 조각 및 해당 **필드**&#x200B;의 **[변형](#variations)** 표시:
    * 이 링크를 사용하여 [콘텐츠 조각 구조 탐색](#navigate-structure)
@@ -272,7 +273,7 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
