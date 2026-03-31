@@ -4,9 +4,9 @@ description: 자동 체류 시간 및 업데이트 불가 기간을 사용하여
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >[자동 유지 관리 업데이트](/help/implementing/deploying/aem-version-updates.md)에 온보딩된 후에만 방해 금지 시간 및 자유 기간 업데이트 기능을 사용할 수 있습니다.
 
-AEM as a Cloud Service [자동 유지 관리 업데이트](/help/implementing/deploying/aem-version-updates.md)를 통해 인스턴스가 최신 유지 관리 릴리스를 통해 최신 상태로 안전하게 유지될 수 있습니다. 즉, 일부 경우 (Go-Live 이벤트와 같은) 중요한 작업 시간을 잠재적인 중단으로부터 &quot;보호&quot;해야 할 수도 있습니다. 따라서 AEM as a Cloud Service에서는 진행 중인 프로그램에 대해 자동 업데이트가 수행되지 않는 시간대를 설정할 수 있는 옵션을 제공합니다.
+AEM as a Cloud Service [자동 유지 관리 업데이트](/help/implementing/deploying/aem-version-updates.md)를 통해 인스턴스가 최신 유지 관리 릴리스를 통해 최신 상태로 안전하게 유지될 수 있습니다. 즉, 일부 경우 (Go-Live 이벤트와 같은) 중요한 작업 시간을 잠재적인 중단으로부터 &quot;보호&quot;해야 할 수도 있습니다. AEM as a Cloud Service은 프로그램에서 자동 유지 관리 업데이트를 일시 중지하는 기간을 선택하는 옵션을 제공합니다. 이렇게 해도 모든 인프라 활동을 막을 수는 없습니다. 유지 보수 업데이트 이외의 하위 수준 플랫폼 변경은 계속 발생할 수 있습니다(예: IMS).
 
 다음 두 가지 예약 옵션을 사용하여 이러한 시간대를 구성할 수 있습니다.
 
