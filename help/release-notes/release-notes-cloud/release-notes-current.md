@@ -148,7 +148,7 @@ Content Advisor는 캠페인 개요 기반 제안, 상황별 제안, Dynamic Med
 이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
 
 **확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 향상**
-적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
+적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
 
 **Forms Manager에서 버전 관리 지원**
 이제 Forms Manager [적응형 Forms(핵심 구성 요소 및 기초 구성 요소)](/help/forms/manage-form-versions-forms-manager.md), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
