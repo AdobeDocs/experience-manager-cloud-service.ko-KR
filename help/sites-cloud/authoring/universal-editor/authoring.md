@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '3020'
 ht-degree: 17%
 
 ---
@@ -92,7 +92,9 @@ ht-degree: 17%
 
 ![속성 패널의 서식 있는 텍스트 구성 요소](assets/rich-text-properties-panel.png)
 
-더 큰 캔버스를 표시하는 대화 상자를 열어 서식 있는 텍스트를 편집하려면 항목을 탭합니다.
+#### 모달 편집기 {#modal-editor}
+
+[속성 패널](#properties-rail)의 항목을 탭하여 서식 있는 텍스트를 편집할 수 있는 더 큰 캔버스를 제공하는 모달 편집기를 엽니다.
 
 ![서식 있는 텍스트 편집 대화 상자](assets/rich-text-canvas.png)
 
@@ -136,6 +138,8 @@ ht-degree: 17%
 * **내어쓰기**
 * **텍스트로 붙여넣기**
    * 범용 편집기에 붙여넣기 전에 클립보드의 텍스트에서 서식을 제거합니다.
+* **특수 문자**
+   * 텍스트에 특수 문자를 삽입합니다.
 * **모든 서식 제거**
    * 선택한 텍스트에서 서식 옵션을 모두 제거합니다.
 
@@ -309,15 +313,15 @@ ht-degree: 17%
 
 1. 편집기 내에서 또는 콘텐츠 트리에서 구성 요소를 선택합니다.
 1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
-   * **속성 패널에서**&#x200B;복사[&#x200B; 아이콘을 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * **속성 패널에서**&#x200B;복사[ 아이콘을 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![패널에서 복사](assets/copy-from-panel.png)
    * 상황에 맞는 메뉴에서 **복사** 옵션을 선택합니다.
      ![상황에 맞는 메뉴에서 복사](assets/copy-from-context-menu.png)
 1. 복사한 구성 요소를 붙여넣을 구성 요소 _after_&#x200B;를 선택합니다.
 1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
-   * 속성 패널에서 **붙여넣기**&#x200B;를 탭하거나 클릭합니다.
+   * 속성 패널에서 **붙여넣기**를 탭하거나 클릭합니다.
      ![패널에서 붙여넣기](assets/paste-from-panel.png)
-   * 상황에 맞는 메뉴에서 **붙여넣기**&#x200B;를 선택합니다.
+   * 상황에 맞는 메뉴에서 **붙여넣기**를 선택합니다.
      ![상황에 맞는 메뉴에서 붙여넣기](assets/paste-from-context-menu.png)
 
 복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
@@ -449,7 +453,7 @@ ht-degree: 17%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 ](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

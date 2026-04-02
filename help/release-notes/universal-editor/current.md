@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.03.26 릴리스 정보
-description: 다음은 범용 편집기 2026.03.26 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.04.02 릴리스 정보
+description: 다음은 범용 편집기 2026.04.02 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 46%
+source-wordcount: '113'
+ht-degree: 60%
 
 ---
 
 
-# 범용 편집기 2026.03.26 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.04.02 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 3월 26일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2026년 4월 2일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ ht-degree: 46%
 
 ## 새로운 기능 {#what-is-new}
 
-* [Document Authoring Assets 구성](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)이(가) 이제 구성 끝점을 통해 노출됩니다.
-* [확장 지점](/help/implementing/universal-editor/extending.md#extending-ui)이 상황별 메뉴에 추가되었습니다.
-* UI에 딥/약식 취소 상태를 표시하기 위해 새로운 사용자 지정 워크플로 아이콘이 확장성 DynamicIcon 시스템에 추가되었습니다.
+* [구성 가능한 옵션](/help/implementing/universal-editor/configure-rte.md#special-characters)을(를) [특수 문자 추가](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)하여 RTE(리치 텍스트 편집기) 도구 모음에 추가했습니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* 문자열이 필요하므로 문서 작성 클래스가 다중 필드에서 작동하지 않는 문제가 해결되었습니다.
+* 태그 필드가 더 이상 OpenAPI 어댑터에 의해 다중 필드로 잘못 반환되지 않습니다.

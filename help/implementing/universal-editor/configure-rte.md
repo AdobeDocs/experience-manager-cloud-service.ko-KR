@@ -4,9 +4,9 @@ description: 범용 편집기에서 리치 텍스트 편집기(RTE)를 구성하
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->유니버설 편집기 프로젝트를 시작하면 백엔드가 지원하는 모든 리치 텍스트 기능(Edge Delivery이 포함된 AEM 또는 Headless 구현)이 자동으로 활성화됩니다.
+>유니버설 편집기 프로젝트를 시작하면 백엔드가 지원하는 모든 서식 있는 텍스트 기능(Edge Delivery이 포함된 AEM 또는 Headless 구현)이 자동으로 활성화되고 [RTE의 모달 편집기 창에서 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* 필요하지 않은 옵션을 비활성화할 수 있습니다.
 >* 프로젝트 유형과 호환되지 않는 옵션 활성화는 지원되지 않습니다.
@@ -36,7 +36,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 * [`toolbar`](#toolbar): 도구 모음 구성은 UI에서 사용할 수 있는 편집 옵션과 구성 방법을 제어합니다.
 * [`actions`](#actions): 작업 구성을 사용하면 개별 편집 작업의 동작 및 모양을 사용자 지정할 수 있습니다.
 
-이러한 구성은 속성이 [인 &#x200B;](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
+이러한 구성은 속성이 [인 ](/help/implementing/universal-editor/filtering.md)구성 요소 필터`rte`의 일부로 정의할 수 있습니다.
 
 ```json
 [
@@ -77,7 +77,7 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -292,6 +292,82 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
 >
 >Tab/Shift+Tab 키를 통한 목록 중첩은 일반 들여쓰기 설정과 독립적으로 작동합니다.
 
+### 특수 문자 {#special-characters}
+
+`special_characters` 삽입 작업을 수행하면 커서 위치에 특수 문자(기호, 수학 연산자, 통화 기호, 구두점, 화살표 등)를 삽입할 수 있는 문자 선택 팝오버가 열립니다.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+일반적으로 사용되는 44개의 기본 문자 세트가 즉시 포함됩니다. 다음 두 가지 구성 옵션을 통해 문자 목록을 사용자 지정할 수 있습니다.
+
+* `appendCharacters` - 기본 집합에 문자 추가
+* `characters` - 기본 집합을 완전히 바꿉니다.
+
+각 문자 항목에는 `character`(유니코드 문자)과 `title`(도구 설명/액세스 가능한 이름)이 있습니다.
+
+#### 기본값에 문자 추가 {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### 기본 특수 문자 바꾸기 {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### 두 옵션을 함께 사용 {#both-special-character-options}
+
+이 예제에서는 `characters`을(를) 기본으로 사용한 다음 `appendCharacters`을(를) 사용하여 추가 문자를 추가합니다.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### 텍스트로 붙여넣기 {#paste-as-text}
 
 `paste_text` 편집기 작업을 사용하면 표준 일반 텍스트로 붙여넣기 워크플로를 사용할 수 있습니다.
@@ -364,7 +440,9 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ RTE 구성은 다음 두 부분으로 구성됩니다.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {
