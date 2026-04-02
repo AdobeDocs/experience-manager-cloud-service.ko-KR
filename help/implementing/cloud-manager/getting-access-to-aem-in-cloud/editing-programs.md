@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 42%
+source-wordcount: '438'
+ht-degree: 40%
 
 ---
 
@@ -47,6 +47,7 @@ ht-degree: 42%
    ![일반 탭](assets/edit-program-prod1.png)
 
 1. 프로그램 편집에 사용할 수 있는 옵션은 프로그램 만들기에 사용할 수 있는 옵션과 동일합니다.
+   * 게시 계층이 새 환경(Beta)에 대해 프로비저닝되는지 여부를 구성할 수 있습니다. [유연한 게시 계층(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)을 참조하십시오.
    * 개별 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 및 [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)를 참조하십시오.
    * 조직의 권한에 따라 프로덕션 프로그램에 [추가 옵션](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)을 사용할 수 있습니다.
 

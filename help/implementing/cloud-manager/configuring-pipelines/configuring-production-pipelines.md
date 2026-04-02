@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 37%
+source-wordcount: '1903'
+ht-degree: 27%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 37%
 >
 >프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 참조하십시오. 이 여정을 사용하면 AEM 사이트의 프론트엔드 개발을 간소화하여 AEM 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
 
-1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
 1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
@@ -71,14 +71,14 @@ ht-degree: 37%
 
 1. **Source 코드** 탭에서 파이프라인이 처리해야 하는 코드 유형을 선택합니다.
 
-   * **[전체 스택 코드 파이프라인 구성](#full-stack-code)**
+   * **[전체 스택 코드를 사용하고 있습니다](#full-stack-code)**
    * **[타깃팅된 배포 파이프라인 구성](#targeted-deployment)**
 
 파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
 
 프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
 
-### 전체 스택 코드 파이프라인 구성 {#full-stack-code}
+### 전체 스택 코드를 사용하고 있습니다. {#full-stack-code}
 
 전체 스택 코드 파이프라인은 HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
 
@@ -96,8 +96,14 @@ ht-degree: 37%
    > 
    >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
 
-   * **Git 분기** - 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
-분기 이름의 처음 몇 문자를 입력하면 이 필드의 자동 완성 기능이 일치하는 분기를 찾아 선택하는 데 도움이 됩니다.
+   * **Git 분기** - 드롭다운 목록에서 선택한 저장소에서 파이프라인을 빌드할 분기를 선택합니다. 기본값은 `main`입니다. 파이프라인은 선택한 분기를 빌드 및 배포의 소스로 사용합니다. 필요한 경우 **새로 고침**&#x200B;을 클릭하여 선택한 저장소에 대해 사용 가능한 분기 목록을 업데이트합니다. 최근에 만든 분기가 목록에 표시되지 않는 경우 이 옵션을 사용합니다.
+   * **전략 작성**
+      * **전체 빌드** - 매번 저장소의 모든 모듈을 빌드합니다.
+      * BETA **스마트 빌드** - 마지막 커밋 이후 변경된 모듈만 빌드합니다.<br>비프로덕션 파이프라인에서 [스마트 빌드를 사용하는 방법에 대해 자세히 알아보세요](#about-smart-build-non-production-pipeline).
+
+        >[!IMPORTANT]
+        >
+        >스마트 빌드는 코드 품질 파이프라인 및 개발 전체 스택 코드 배포 파이프라인에만 사용할 수 있습니다.
    * **웹 계층 구성 무시** - 이 옵션을 선택하면 파이프라인이 웹 계층 구성을 배포하지 않습니다.
    * **프로덕션에 배포하기 전에 일시 중지** - 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 사용자가 예약된 프로덕션 배포를 사용하도록 설정할 수 있습니다.
@@ -118,7 +124,7 @@ ht-degree: 37%
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
-### 타깃팅된 배포 파이프라인 구성 {#targeted-deployment}
+### 타깃팅된 배포를 사용 중입니다. {#targeted-deployment}
 
 타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음 코드 유형 중 하나를 **포함**&#x200B;하도록 선택할 수 있습니다.
 
@@ -168,6 +174,80 @@ ht-degree: 37%
 1. **저장**&#x200B;을 클릭합니다.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
+
+## BETA: 프로덕션 파이프라인에서의 Smart Build 사용 정보{#about-smart-build-production-pipeline}
+
+Cloud Manager의 **스마트 빌드**&#x200B;는 프로덕션 파이프라인에 최적화된 빌드 전략입니다. 스마트 빌드는 모듈을 캐시하고 마지막으로 성공한 실행 이후 변경된 모듈만 다시 빌드하여 빌드 시간을 줄입니다. 변경되지 않은 모듈은 캐시에서 재사용되는 반면 수정된 모듈 및 그 의존성만 재구축되므로 반복적인 개발 워크플로의 효율성을 향상시킵니다.
+
+>[!NOTE]
+>
+>이 베타에 관심이 있으세요? Adobe OrgID 및 프로그램 ID를 첨부한 이메일을 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)으로 보내 주시기 바랍니다.
+
+>[!IMPORTANT]
+>
+>Smart Build를 활성화한 후 첫 번째 실행은 캐시가 비어 있으므로 전체 빌드와 같이 작동합니다.
+
+다음과 같은 경우에는 스마트 빌드를 사용하는 것이 좋습니다.
+
+* 빈번한 증분 변경을 적극적으로 개발하고 커밋하고 있습니다.
+* 프로젝트에 여러 Maven 모듈이 포함되어 있습니다.
+* 전체 빌드는 시간이 오래 걸립니다.
+
+다음과 같은 경우에는 스마트 빌드가 항상 이상적이지 않습니다.
+
+* 빌드는 Maven의 종속성 그래프 외부에서 작업을 수행하는 플러그인에 크게 의존합니다.
+* 모든 실행 시 전체 재구축 유효성 검사가 필요합니다.
+
+### 빌드 성능 이해{#smart-build-performance}
+
+Smart Build를 사용하여 얻을 수 있는 성능 이익은 다음을 포함한 몇 가지 요인에 따라 달라집니다.
+
+* 프로젝트의 모듈 수입니다.
+* 코드 변경 빈도 및 범위입니다.
+* 모듈 간 종속성 분포.
+
+일반적으로 많은 독립 모듈이 있는 프로젝트는 가장 큰 개선 효과를 볼 수 있습니다.
+
+### 모듈별 캐시 옵트아웃{#smart-build-cache-optout}
+
+Smart Build에서는 특정 모듈에 대한 캐싱을 비활성화할 수 있는 세분화된 제어를 제공합니다. 이 기능은 특정 모듈이 다음과 같은 경우 유용합니다.
+
+* `exec-maven-plugin` 또는 `maven-antrun-plugin`과(와) 같은 플러그인을 사용합니다.
+* Maven 종속성으로 추적되지 않는 파일 작업을 수행합니다.
+* 캐시된 콘텐츠는 일관되지 않은 결과를 생성합니다.
+
+### 모듈에 대한 캐싱 비활성화{#smart-build-disable-caching}
+
+영향을 받는 모듈의 `pom.xml`에 다음 속성을 추가할 수 있습니다.
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+이 구문은 모듈이 모든 파이프라인 실행에 대해 다시 빌드되도록 하는 반면 다른 모듈은 캐싱의 이점을 계속 사용합니다.
+
+### Smart Build 사용 시 제한 사항 및 고려 사항{#smart-build-limitations}
+
+Smart Build를 사용할 때는 다음 사항에 유의하십시오.
+
+* Smart Build는 Maven 종속성 분석을 사용합니다.
+* 종속성 그래프 외부의 변경 사항은 재빌드를 트리거하지 않을 수 있습니다.
+* 일부 플러그인은 캐싱과 완전히 호환되지 않을 수 있습니다.
+* 프로덕션 파이프라인을 편집하여 언제든지 **전체 빌드**(으)로 다시 전환할 수 있습니다.
+
+예기치 않은 빌드 동작이 발생하면 특정 모듈에 대해 캐싱을 사용하지 않도록 설정하거나 빌드 전략을 **전체 빌드**(으)로 일시적으로 전환해 보십시오.
+
+### 스마트 빌드 문제 해결{#smart-build-troubleshoot}
+
+| 문제 | 제안된 해결 방법 |
+| --- | --- |
+| 빌드 결과가 일관되지 않음 | · 영향을 받는 모듈에 대한 캐싱을 비활성화합니다.<br>· 플러그 인 동작(특히 `exec`/`antrun` 플러그 인)을 확인합니다. |
+| 성능 향상 없음 | · 여러 번의 실행이 발생했는지 확인합니다(캐시 준비).<br>· 대부분의 모듈이 자주 변경되는지 확인합니다. |
+| 예기치 않은 아티팩트 또는 누락된 변경 사항 | · 변경 사항이 Maven 종속성 추적을 벗어나는지 여부를 검토합니다.<br>· 확인에 **전체 빌드**&#x200B;를 사용합니다. |
+
+스마트 빌드를 사용하려면 [프로덕션 파이프라인 추가](#adding-production-pipeline)를 참조하십시오.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 

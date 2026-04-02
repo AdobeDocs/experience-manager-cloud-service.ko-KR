@@ -4,10 +4,10 @@ description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Deliv
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
+source-wordcount: '1103'
+ht-degree: 64%
 
 ---
 
@@ -39,8 +39,53 @@ Adobe Cloud Manager에서 다음의 이유로 Edge Delivery 사이트 이름을 
 Edge Delivery 사이트 테이블에서 이름을 바꾸려는 사이트의 행 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. **이름 변경**&#x200B;을 클릭합니다.
 
 1. **Edge Delivery 사이트 편집** 대화 상자에서 **사이트 이름** 텍스트 필드에 사이트의 새 이름을 입력합니다.
-
 1. **편집**&#x200B;을 클릭합니다.
+
+
+## Edge Delivery 사이트(Beta)에 대한 게시 계층 활성화 {#activate-publish-tier-for-eds}
+
+>[!NOTE]
+>
+>여기에 설명된 게시 기능은 Beta에 있습니다. Beta에 가입하려면 Adobe 조직 ID와 프로그램 ID로 [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)에 전자 메일을 보내십시오.
+
+이 기능은 유연한 게시 계층 기능이 활성화된 프로그램에서 **AEM 작성** 옵션을 사용하여 만든 Edge Delivery 사이트에만 적용됩니다.
+
+Edge Delivery 사이트에서 AEM 작성을 사용하는 경우 Edge Delivery이 컨텐츠 전달을 처리하므로 게시 계층은 기본적으로 프로비저닝되지 않습니다. 그러나 사이트에서 필요로 하는 경우 언제든지 게시 계층을 활성화할 수 있습니다. 예를 들어 Edge Delivery과 함께 기존 AEM 게시를 지원해야 하는 경우.
+
+Edge Delivery 사이트가 만들어지고 Cloud Manager에서 해당 상태가 **확인됨**&#x200B;을(를) 표시하면 AEM 유니버설 편집기를 사용하여 콘텐츠를 작성하고 게시할 수 있습니다.
+
+**Cloud Manager에서 유니버설 편집기에 액세스하려면:**
+
+1. Edge Delivery 탭의 Edge Delivery 사이트 목록에서 사이트를 찾습니다.
+
+   ![AEM 작성자의 콘텐츠를 Edge Delivery에 게시하는 중.](/help/implementing/cloud-manager/edge-delivery/assets/eds-content-source-link.png)
+
+1. 사이트 행에서 **컨텐츠 Source** 링크를 클릭합니다. 이 링크를 클릭하면 사이트의 컨텐츠를 작성하고 편집할 수 있는 AEM 범용 편집기 페이지가 열립니다.—>
+
+**Edge Delivery 사이트에 대한 게시 계층을 활성화하려면:**
+
+1. **프로그램 개요** 페이지의 **게재 게시** 탭 아래의 **환경** 카드에서 정보 아이콘을 클릭합니다.
+
+1. 정보 팝업의 **게시 URL**&#x200B;에서 **활성화하려면 클릭**&#x200B;을 선택하여 Cloud Manager 사용자 인터페이스에서 게시 계층 프로비저닝을 사용하도록 설정합니다.
+
+   ![게시 계층 프로비저닝을 활성화하려면 클릭](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+
+1. 게시 계층 활성화 대화 상자에서 **활성화**&#x200B;를 클릭합니다.
+
+   ![게시 계층 활성화 대화 상자](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+
+   활성화되면 게시 계층이 자동으로 프로비저닝됩니다. 또는 작성자가 AEM 사용자 인터페이스에서 직접 콘텐츠를 게시하려고 하는 경우 게시 계층을 자동으로 프로비저닝할 수 있습니다.
+
+   게시 계층이 정상적으로 활성화되고 프로비저닝되면 **활성화하려면 클릭** 링크가 흐리게 표시되거나 사용할 수 없게 됩니다.
+
+* **AEM 작성자로부터** — AEM 작성 인터페이스에서 **빠른 게시**&#x200B;를 클릭하여 콘텐츠를 Edge Delivery 사이트에 직접 게시합니다. Edge Delivery이 게재를 처리할 때 이 작업에는 게시 계층이 필요하지 않습니다.
+
+게시 후 사이트의 `.page` URL에서 콘텐츠를 미리 보거나 `.live` URL에서 실시간으로 볼 수 있습니다.
+
+>[!NOTE]
+>
+>게시 계층을 활성화하면 환경에 게시 인프라가 추가됩니다. 이 기능은 프로그램의 리소스 사용량에 영향을 줄 수 있습니다. 프로그램 수준에서 게시 계층이 필요한지 여부를 구성하려면 [유연한 게시 계층(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)을 참조하십시오.
+
 
 ## Edge Delivery 사이트를 삭제 {#delete-edge-delivery-site}
 

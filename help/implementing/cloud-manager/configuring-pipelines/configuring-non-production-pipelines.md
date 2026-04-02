@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -92,7 +92,7 @@ ht-degree: 21%
    * **Git 분기** - 드롭다운 목록에서 선택한 저장소에서 파이프라인을 빌드할 분기를 선택합니다. 기본값은 `main`입니다. 파이프라인은 선택한 분기를 빌드 및 배포의 소스로 사용합니다. 필요한 경우 **새로 고침**&#x200B;을 클릭하여 선택한 저장소에 대해 사용 가능한 분기 목록을 업데이트합니다. 최근에 만든 분기가 목록에 표시되지 않는 경우 이 옵션을 사용합니다.
    * **전략 작성**
       * **전체 빌드** - 매번 저장소의 모든 모듈을 빌드합니다.
-      * BETA **스마트 빌드** - 마지막 커밋 이후 변경된 모듈만 빌드합니다.<br>비프로덕션 파이프라인에서 [스마트 빌드를 사용하는 방법에 대해 자세히 알아보세요](#about-smart-build).
+      * BETA **스마트 빌드** - 마지막 커밋 이후 변경된 모듈만 빌드합니다.<br>비프로덕션 파이프라인에서 [스마트 빌드를 사용하는 방법에 대해 자세히 알아보세요](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
 
-## 비프로덕션 파이프라인에서의 Smart Build 사용 정보{#about-smart-build}
+## 비프로덕션 파이프라인에서의 Smart Build 사용 정보{#about-smart-build-non-production-pipeline}
 
 Cloud Manager의 **스마트 빌드**&#x200B;는 비프로덕션 파이프라인에 최적화된 빌드 전략입니다. 스마트 빌드는 모듈을 캐시하고 마지막으로 성공한 실행 이후 변경된 모듈만 다시 빌드하여 빌드 시간을 줄입니다. 변경되지 않은 모듈은 캐시에서 재사용되는 반면 수정된 모듈 및 그 의존성만 재구축되므로 반복적인 개발 워크플로의 효율성을 향상시킵니다.
 
@@ -194,11 +194,13 @@ Cloud Manager의 **스마트 빌드**&#x200B;는 비프로덕션 파이프라인
 >Smart Build를 활성화한 후 첫 번째 실행은 캐시가 비어 있으므로 전체 빌드와 같이 작동합니다.
 
 다음과 같은 경우에는 스마트 빌드를 사용하는 것이 좋습니다.
+
 * 빈번한 증분 변경을 적극적으로 개발하고 커밋하고 있습니다.
 * 프로젝트에 여러 Maven 모듈이 포함되어 있습니다.
 * 전체 빌드는 시간이 오래 걸립니다.
 
 다음과 같은 경우에는 스마트 빌드가 항상 이상적이지 않습니다.
+
 * 빌드는 Maven의 종속성 그래프 외부에서 작업을 수행하는 플러그인에 크게 의존합니다.
 * 모든 실행 시 전체 재구축 유효성 검사가 필요합니다.
 

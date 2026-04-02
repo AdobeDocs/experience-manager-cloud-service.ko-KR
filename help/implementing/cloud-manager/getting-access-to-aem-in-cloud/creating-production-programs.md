@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 11%
+source-wordcount: '1510'
+ht-degree: 9%
 
 ---
 
@@ -46,36 +46,56 @@ ht-degree: 11%
 
 1. **계속**&#x200B;을 클릭합니다.
 
+1. **보안** 탭에서 사용할 보안 옵션을 선택합니다. [보안](#security)을 참조하세요.
+
+   ![프로덕션 설정 마법사의 보안 탭](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+
+1. **계속**&#x200B;을 클릭합니다.
+
 1. **솔루션 및 추가 기능** 목록 상자에서 프로그램에 포함할 하나 이상의 솔루션을 선택합니다.
 
    * 사용 허가된 여러 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심이 있는 프로그램을 선택합니다. 나중에 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 추가 솔루션을 활성화할 수 있습니다. 프로그램 설정 권장 사항에 대한 자세한 내용은 [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
    * 프로그램 생성을 위해 솔루션을 하나 이상 선택해야 합니다. 예를 들어 디지털 환경을 최적화하는 완전 관리 CDN 솔루션에 대해 **Edge Delivery Services**&#x200B;을(를) 선택하도록 선택할 수 있습니다. [Edge Delivery Services을 사용하여 Cloud Manager 프로젝트 게재 정보](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)를 참조하세요.
 
-   ![솔루션 선택](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
+   * 옵션 추가 기능을 표시하려면 솔루션 이름 왼쪽의 ![V자 크기 300 아이콘](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)을 클릭합니다. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
+<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
+    >[!NOTE]
+    >
+    >프로그램에서 Edge Delivery Services을 게재에 사용하는 경우 게시 계층이 필요하지 않을 수 있습니다. 유연한 게시 계층 기능(Beta)을 사용하여 솔루션 및 추가 기능 탭에서 게시 계층을 프로비저닝할지 여부를 구성할 수 있습니다. [유연한 게시 계층(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)을 참조하십시오.
+    
+    ![솔루션 선택](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+
+1. **계속**&#x200B;을 클릭합니다.
+
+1. **게재 유형** 탭에서 이전 단계에서 선택한 솔루션 및 추가 기능을 기반으로 미리 채워집니다. **AEM 게시**&#x200B;를 선택하면 나중에 필요에 따라 프로비전할 수 있습니다.
+
+   ![배달 유형 탭](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
 
+1. **계속**&#x200B;을 클릭합니다.
 
+1. 필요한 권한이 있는 경우 **SLA** 탭이 **`Set up for production`** 대화 상자에 두 번째 또는 세 번째 탭으로 표시됩니다. [SLA](#sla)을(를) 참조하세요.
 
-   * 옵션 추가 기능을 표시하려면 솔루션 이름 왼쪽의 ![V자 크기 300 아이콘](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)을 클릭합니다. <!-- such as the **Commerce** add-on option under **Sites**. -->
+   ![SLA 옵션](assets/create-production-program-sla.png)
 
-   ![추가 기능 선택](assets/setup-prod-commerce.png)
+   Sites 및 Forms은 표준 99.9% service level agreement(SLA)를 제공합니다.
 
-1. 솔루션 및 추가 기능을 모두 선택했으면 **계속**&#x200B;을 클릭합니다.
+1. **계속**&#x200B;을 클릭합니다.
 
 1. **Go-Live 날짜** 탭에서 프로덕션 프로그램을 실행하기로 계획한 날짜를 입력합니다.
 
-   ![계획된 Go-Live 날짜 정의](assets/set-up-go-live.png)
+   ![계획된 Go-Live 날짜 정의](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-go-live-date.png)
 
    * 언제든지 이 날짜를 편집할 수 있습니다.
    * 날짜는 정보 제공 목적으로 [**프로그램 개요** 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)에서 Go Live 위젯을 트리거합니다. 이 기능은 원활한 Go-Live 경험을 지원하기 위해 AEM as a Cloud Service 모범 사례에 대한 제품 내 링크를 적시에 제공합니다.
 
 1. **만들기**&#x200B;를 클릭합니다. Cloud Manager은 프로그램을 만들고 선택 항목을 위한 랜딩 페이지에 표시합니다.
 
-   ![Cloud Manager 개요](assets/navigate-cm.png)
+   ![Cloud Manager 개요](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
 ## 추가 프로덕션 프로그램 옵션 {#options}
 
@@ -85,18 +105,57 @@ ht-degree: 11%
 
 필요한 권한이 있는 경우 **보안** 탭이 **`Set up for production`** 대화 상자의 첫 번째 탭으로 표시됩니다.
 
-![보안 옵션](assets/create-production-program-security.png)
+![보안 옵션](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
 
 **보안** 탭은 프로덕션 프로그램에 대해 **HIPAA** 또는 **WAF-DDOS 보호** 또는 두 가지 모두를 활성화하는 옵션을 제공합니다.
 
 Adobe HIPAA 규정 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of Service)는 취약점으로부터 보호하기 위한 다층적 접근 방식의 일부로서 클라우드 기반 보안을 용이하게 합니다.
 
 * **HIPAA** - 이 옵션을 사용하면 Adobe의 HIPAA 지원 솔루션을 구현할 수 있습니다.
-   * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/trust/compliance/hipaa-ready.html).
+   * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html).
    * 프로그램 생성 후에는 HIPAA를 활성화하거나 비활성화할 수 없습니다.
 * **WAF-DDOS 보호** - 이 옵션을 사용하면 규칙을 통해 응용 프로그램을 보호하는 웹 응용 프로그램 방화벽을 사용할 수 있습니다.
    * 활성화되면 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 설정하여 WAF-DDOS 보호를 구성할 수 있습니다.
    * [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을(를) 참조하여 제대로 배포되도록 저장소에서 트래픽 필터 규칙을 관리하는 방법을 알아보십시오.
+
+### 유연한 게시 계층(Beta) {#flexible-publish-tier}
+
+>[!NOTE]
+>
+>여기에 설명된 유연한 게시 계층은 Beta에 있습니다. Beta에 가입하려면 Adobe 조직 ID와 프로그램 ID로 [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)에 전자 메일을 보내십시오.
+
+조직에서 유연한 게시 계층 기능을 활성화한 경우 프로그램 환경에 게시 계층이 필요한지 여부를 구성할 수 있습니다. 이 옵션은 **프로덕션 설정** 대화 상자의 **게재 유형** 탭에 나타납니다([프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 중).
+
+![프로덕션 설정 마법사의 배달 유형 탭](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+
+**프로그램 편집** 대화 상자도 표시됩니다([프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)할 때).
+
+![배달 유형 옵션이 표시된 프로그램 대화 상자 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
+
+모든 아키텍처에 게시 계층이 필요한 것은 아닙니다. 다음 표는 게시 계층이 필요한 아키텍처와 그렇지 않은 아키텍처를 보여 줍니다.
+
+| 아키텍처 | 계층 게시 |
+| --- | --- |
+| 기존 AEM Sites | 필수 |
+| 헤드리스 / API 우선 | 필수 |
+| Edge Delivery Services | 불필요 |
+
+필요한 경우에만 게시 계층을 활성화하여 팀은 다음을 수행할 수 있습니다.
+
+* 보다 신속하게 환경을 프로비저닝할 수 있습니다.
+* 인프라 단순화.
+* 불필요한 구성 요소를 줄입니다.
+
+**작동 방식**
+조직에 대해 유연한 게시 계층 기능이 활성화된 경우:
+
+* 프로그램의 모든 새 환경은 기본적으로 **작성자 계층만**&#x200B;을 사용하여 프로비저닝됩니다. 사용자 인터페이스에 표시되는 정보 메시지에서 이 동작을 확인합니다.
+* 사용자가 프로그램을 만드는 동안 **AEM 게시**&#x200B;를 선택하면 게시 계층이 활성화되고 *새 환경*&#x200B;으로 프로비저닝됩니다.
+* 나중에 프로그램을 편집하여 게시 계층을 활성화할 수도 있습니다. [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)을 참조하십시오.
+
+>[!NOTE]
+>
+>프로그램에서 컨텐츠 전달에 Edge Delivery Services을 사용하고 컨텐츠 작성에 AEM 작성자를 사용하는 경우 게시 계층이 필요하지 않습니다. 콘텐츠는 Edge Delivery을 통해 전달되며 AEM 게시 계층을 통과하지 않습니다. AEM 작성을 통한 Edge Delivery Services 정보(Beta)를 참조하십시오.
 
 ### SLA {#sla}
 
