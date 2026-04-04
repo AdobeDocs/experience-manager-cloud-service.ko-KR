@@ -143,7 +143,7 @@ AEM Assets 보기 환경은 보고서 대시보드를 통해 포괄적인 보고
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 사전 요구 사항 {#prereqs-dynamic-media-delivery-reports}

@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 사용하면 메타데이터 관리가 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
@@ -137,7 +137,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하세요.
+[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/kr/products/xmp.html)을 참조하세요.
 
 ### ID3 {#id}
 
@@ -242,7 +242,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DAM - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DEX - [Optima SC 설명 탐색기](https://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/kr/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 및 MP - Microsoft 사진.

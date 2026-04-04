@@ -85,11 +85,11 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
 ![대화형 통신 설정 - 연결 UI에 대한 워크플로 구성](/help/forms/assets/associate-ui-configure-workflow.png)
 
-**워크플로 데이터 저장소 외부화**&#x200B;을 사용하도록 설정하면 워크플로 데이터가 외부 저장소(예: Azure)에 저장되도록 외부화를 구성합니다. [워크플로 데이터 외부화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)를 참조하십시오.
+**워크플로 데이터 저장소 외부화**&#x200B;을 사용하도록 설정하면 워크플로 데이터가 외부 저장소(예: Azure)에 저장되도록 외부화를 구성합니다. [워크플로 데이터 외부화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ko)를 참조하십시오.
 
 ## 추가 참조
 
 - [대화형 통신 편집기에서 UI 연결](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [대화형 커뮤니케이션용 연결 UI 활성화 및 구성](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [애플리케이션에 UI 연결 통합](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [워크플로 데이터 외부화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [워크플로 데이터 외부화](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ko)

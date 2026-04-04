@@ -21,7 +21,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.

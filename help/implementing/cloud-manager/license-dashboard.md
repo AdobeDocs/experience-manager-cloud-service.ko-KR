@@ -59,7 +59,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 금액 및 사용
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 

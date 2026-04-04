@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager(AEM) Forms의 테마 편집기는 수동으로 코드를 작성하지 않고도 적응형 Forms에 대한 테마를 만들고 맞춤화할 수 있는 시각적 인터페이스입니다. 테마는 배경색, 글꼴 스타일, 테두리, 치수 및 간격 등 양식 구성 요소와 패널의 모양과 느낌을 정의합니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소를 반영하므로 여러 적응형 Forms에서 동일한 테마를 다시 사용할 수 있습니다.
@@ -212,7 +212,7 @@ The styles you define apply only when the component is in the selected state. Fo
 
    ![테마 편집기의 장치 에뮬레이터 - 눈금자 및 장치 옵션(데스크톱, 태블릿, iPad, 작은 화면)](/help/forms/assets/custom-theme-emulator.png)
 
-따라서 동일한 테마는 장치마다 다른 간격, 글꼴 크기 또는 레이아웃 관련 스타일을 가질 수 있으며, 이는 응답형 스타일에 대한 [AEM 6.5 테마 편집기 동작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)과(와) 일치합니다.
+따라서 동일한 테마는 장치마다 다른 간격, 글꼴 크기 또는 레이아웃 관련 스타일을 가질 수 있으며, 이는 응답형 스타일에 대한 [AEM 6.5 테마 편집기 동작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=ko)과(와) 일치합니다.
 
 ## 고급 CSS 무시 사용 {#use-advanced-css-overrides}
 

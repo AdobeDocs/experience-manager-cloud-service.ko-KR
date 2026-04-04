@@ -137,7 +137,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. **[!UICONTROL Adobe Sign]** 필드 ![Adobe Sign](assets/adobesign.png) 아이콘을 선택합니다. [!DNL Adobe Sign] 필드를 선택하고 추가하는 옵션이 표시됩니다.
 
-   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 ![저장](assets/save_icon.svg) 완료 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 받는 사람 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL &#x200B; 지원 필드와 &#x200B;] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
+   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 ![저장](assets/save_icon.svg) 완료 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 받는 사람 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL &#x200B; 지원 필드와 &#x200B;] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/kr/sign/help/field-types.html)를 참조하십시오.
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -145,7 +145,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    드롭다운 목록에서 **[!UICONTROL 디지털 서명]**&#x200B;을(를) 선택하면 적응형 양식에 디지털 서명을 적용할 수 있습니다.
 
-   * 클라우드 서명을 사용하여 트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)&#x200B;(으)로 서명하는 온라인
+   * 클라우드 서명을 사용하여 트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/kr/sign/kb/digital-certificate-providers.html)&#x200B;(으)로 서명하는 온라인
    * 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 Adobe Acrobat 또는 Reader으로 문서를 로컬로 다운로드합니다.
 
 ### 적응형 양식에 [!DNL Adobe Sign] 사용 {#enableadobsignforanadaptiveform}
@@ -329,7 +329,7 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 
    다음을 사용하여 적응형 양식에 디지털 서명 적용:
 
-   * 클라우드 서명: 트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)로 서명합니다.
+   * 클라우드 서명: 트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/kr/sign/kb/digital-certificate-providers.html)로 서명합니다.
    * Adobe Acrobat 또는 Reader: Adobe Acrobat 또는 Reader으로 문서를 다운로드하여 열고 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 서명합니다.
 
      >[!NOTE]
