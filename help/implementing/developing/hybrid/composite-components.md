@@ -33,14 +33,14 @@ ht-degree: 1%
 
 * AEM 개발 인스턴스는 샘플 프로젝트로 포트 4502에서 로컬로 실행됩니다.
 * 작업 중인 외부 React 앱 [AEM에서 편집할 수 있도록 설정](editing-external-spa.md)되었습니다.
-* React 앱이 RemotePage 구성 요소 [을(를) 사용하여 AEM 편집기 ](remote-page.md)에 로드되었습니다.
+* React 앱이 RemotePage 구성 요소 [을(를) 사용하여 AEM 편집기 &#x200B;](remote-page.md)에 로드되었습니다.
 
 ## SPA에 복합 구성 요소 추가 {#adding-composite-components}
 
 AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 가지 모델이 있습니다.
 
 * [구성 요소가 AEM 프로젝트에 없습니다](#component-does-not-exist).
-* [구성 요소가 AEM 프로젝트에 있지만 필수 콘텐츠는 ](#content-does-not-exist)이(가) 아닙니다.
+* [구성 요소가 AEM 프로젝트에 있지만 필수 콘텐츠는 &#x200B;](#content-does-not-exist)이(가) 아닙니다.
 * [구성 요소와 필수 콘텐츠가 모두 AEM 프로젝트에 있습니다](#both-exist).
 
 다음 섹션에서는 카드 구성 요소를 예로 사용하여 각 사례를 구현하는 예를 제공합니다.
@@ -136,7 +136,7 @@ function Home() {
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 `AEMText`과(와) 동일한 `AEMImage` 및 [ 구성 요소를 사용합니다](#component-does-not-exist).
+1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 `AEMText`과(와) 동일한 `AEMImage` 및 [&#x200B; 구성 요소를 사용합니다](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -162,7 +162,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿[의 컨테이너 구성 요소 ](/help/sites-cloud/authoring/page-editor/templates.md)에 대해 허용되는 구성 요소에 추가하십시오.
+1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿[의 컨테이너 구성 요소 &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md)에 대해 허용되는 구성 요소에 추가하십시오.
 
 이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 바로 추가할 수 있습니다.
 
@@ -180,4 +180,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례[에서 정의된 ](#content-does-not-exist)과(와) 동일합니다. 여기서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.
+`AEMCard` 구성 요소는 이전 사용 사례[에서 정의된 &#x200B;](#content-does-not-exist)과(와) 동일합니다. 여기서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.

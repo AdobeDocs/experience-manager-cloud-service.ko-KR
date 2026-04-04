@@ -245,7 +245,7 @@ CIF URL 공급자의 일부 기능은 `url_key` 범주 또는 `url_path` 범주�
 
 반면 검색 엔진은 새 URL 형식으로 모든 카탈로그 페이지를 다시 캡처하는 데 시간이 필요합니다. 이 프로세스를 지원하고 최종 사용자 경험을 개선하기 위해 사용자를 이전 URL에서 새 URL로 전달하는 리디렉션을 제공하는 것이 좋습니다.
 
-이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 그런 다음 스테이지와 프로덕션 환경 모두에 대해 CIF 제품 사이트 맵 생성기[에서 생성된 ](/help/overview/seo-and-url-management.md)제품 사이트 맵을 가져오고 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)을(를) 만듭니다. 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
+이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 그런 다음 스테이지와 프로덕션 환경 모두에 대해 CIF 제품 사이트 맵 생성기[에서 생성된 &#x200B;](/help/overview/seo-and-url-management.md)제품 사이트 맵을 가져오고 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)을(를) 만듭니다. 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
 
 ## 예 {#example}
 

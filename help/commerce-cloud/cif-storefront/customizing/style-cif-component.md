@@ -62,7 +62,7 @@ ht-degree: 1%
 
 1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 생성된 프로젝트에 구성을 추가할 수 있도록 필요한 OSGi 구성을 추가합니다.
 
-1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. `US`http://localhost`Home`/editor.html/content/venia/us/en.html.[에서 :4502 > ](http://localhost:4502/editor.html/content/venia/us/en.html) 페이지로 이동합니다.
+1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. `US`http://localhost`Home`/editor.html/content/venia/us/en.html.[에서 :4502 > &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html) 페이지로 이동합니다.
 
    당신은 상점이 현재 베니아 테마를 사용하고 있다는 것을 볼 수 있습니다. 상점 첫 화면의 메인 메뉴를 확장하면 Adobe Commerce에 대한 연결이 작동하고 있음을 나타내는 다양한 카테고리가 표시됩니다.
 
@@ -252,13 +252,13 @@ ui.apps 아키텍처에 대한 ![ui.frontend](../assets/style-cif-component/ui-f
    </html>
    ```
 
-   클라이언트 라이브러리는 페이지에 전달될 때 접두사가 `/etc.clientlibs`이고 [ 또는 ](/help/implementing/developing/introduction/clientlibs.md)에서 중요한 내용이 노출되지 않도록 `/apps`프록시`/libs`를 통해 제공됩니다.
+   클라이언트 라이브러리는 페이지에 전달될 때 접두사가 `/etc.clientlibs`이고 [&#x200B; 또는 &#x200B;](/help/implementing/developing/introduction/clientlibs.md)에서 중요한 내용이 노출되지 않도록 `/apps`프록시`/libs`를 통해 제공됩니다.
 
    알림 `venia/clientlibs/clientlib-site.min.css` 및 `venia/clientlibs/clientlib-site.min.js`. 이러한 파일은 `ui.frontend` 모듈에서 파생된 컴파일된 CSS 및 JavaScript 파일입니다.
 
 ## 페이지 템플릿과 함께 클라이언트 라이브러리 포함 {#client-library-inclusion-pagetemplates}
 
-클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 다음으로 `clientlib-site`페이지 템플릿[을 통해 생성된 프로젝트에 ](/help/implementing/developing/components/templates.md) 라이브러리가 어떻게 포함되어 있는지 검사합니다.
+클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 다음으로 `clientlib-site`페이지 템플릿[을 통해 생성된 프로젝트에 &#x200B;](/help/implementing/developing/components/templates.md) 라이브러리가 어떻게 포함되어 있는지 검사합니다.
 
 1. AEM 편집기 내에서 사이트의 **홈 페이지**(으)로 이동: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 

@@ -82,7 +82,7 @@ XMP에서는 텍스트 속성에 `xml:lang` 속성을 추가하여 텍스트의 
 [!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 원본 자산의 렌디션에 복제합니다.
 [!DNL Assets] 내에서 에셋의 메타데이터를 변경하거나 에셋을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 내용이 에셋 계층의 메타데이터 노드에 처음 저장됩니다. 쓰기 저장(writeback) 기능을 사용하면 메타데이터 변경 내용을 에셋의 모든 또는 특정 렌디션에 전파할 수 있습니다. `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 씁니다. 즉, `dc:title` 속성은 다시 기록되지만 `mytitle` 속성은 다시 기록되지 않습니다.
 
-예를 들어 제목이 [!UICONTROL 인 자산의 ]Title`Classic Leather` 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
+예를 들어 제목이 [!UICONTROL 인 자산의 &#x200B;]Title`Classic Leather` 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
 
 ![메타데이터](assets/metadata.png)
 

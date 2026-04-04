@@ -46,7 +46,7 @@ Cloud Manager에 추가되면 Adobe에서 사용자를 대신하여 DV SSL 인�
 * **고객 관리(OV/EV) SSL 인증서:**
 
    * 인증 기관에서 OV/EV SSL 인증서를 받습니다. 자세한 내용은 [고객 관리 OV/EV SSL 인증서에 대한 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)을 검토하십시오.
-   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 ](#add-customer-managed-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
+   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 &#x200B;](#add-customer-managed-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
    * 추가되면 사용자 정의 도메인 이름이 확인된 것으로 표시되고 SSL 인증서가 적용됩니다.
 
 두 경우 모두 인증서를 확인하고 설치한 후 사용자 정의 도메인을 환경에서 안전하게 사용할 수 있습니다. 모든 것이 예상대로 작동하는지 확인하려면 Cloud Manager 인터페이스에서 [정기적으로 도메인의 상태를 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)하십시오.

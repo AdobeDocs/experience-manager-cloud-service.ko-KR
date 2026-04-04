@@ -62,7 +62,7 @@ _Dynamic Media URL의 구조._
 
 시계의 새 렌디션이 생성됩니다. 이미지의 폭을 변경하는 이러한 간단한 연습에서 이해하는 핵심은 표시되는 이미지가 100% 동적으로 생성된다는 것입니다.
 
-이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
 **[!UICONTROL Enter]**&#x200B;를 누른 후 브라우저가 Dynamic Media 이미지 서버로 돌아갑니다. 방금 입력한 새 너비 값을 기반으로 시계의 새 렌디션을 생성한 다음 새 이미지를 브라우저에 다시 전달하고 캐시합니다.
 
 Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).

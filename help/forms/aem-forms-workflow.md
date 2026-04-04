@@ -139,7 +139,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
    ![또는 분할 예](assets/orsplit_branch2_active_new.png)
 
-   변수를 사용하여 라우팅 식을 만드는 방법에 대한 자세한 내용은 [워크플로 [!DNL AEM Forms] 의 ](variable-in-aem-workflows.md)변수를 참조하십시오.
+   변수를 사용하여 라우팅 식을 만드는 방법에 대한 자세한 내용은 [워크플로 [!DNL AEM Forms] 의 &#x200B;](variable-in-aem-workflows.md)변수를 참조하십시오.
 
 1. 비즈니스 논리를 구축하기 위한 다른 워크플로우 단계를 추가합니다.
 
@@ -216,7 +216,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 다음을 수행하여 Forms 중심 워크플로우를 시작하거나 트리거할 수 있습니다.
 
 * [AEM 받은 편지함에서 애플리케이션 제출](#inbox)
-* [ [!DNL AEM Forms] 앱에서 응용 프로그램 제출 중](#afa)
+* [&#x200B; [!DNL AEM Forms] 앱에서 응용 프로그램 제출 중](#afa)
 
 * [적응형 양식 제출](#af)
 * [감시 폴더 사용](#watched)
