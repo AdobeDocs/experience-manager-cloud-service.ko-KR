@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 4%
@@ -19,7 +19,8 @@ ht-degree: 4%
 
 사용자 지정 제출 액션을 만들어 [기본 제공 옵션](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action)에 포함되지 않은 기능을 추가할 수도 있습니다. 예를 들어 양식 데이터를 타사 애플리케이션과 통합하거나 사용자 입력을 기반으로 개인화된 SMS 알림을 트리거합니다.
 
-<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!--
+ ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
 ## 사전 요구 사항
@@ -48,7 +49,7 @@ ht-degree: 4%
 
    **이 정보를 찾을 수 있는 위치**
 
-   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko#accessing-git)&quot;를 참조하십시오.
+   이러한 세부 정보를 찾는 방법에 대한 단계별 지침은 Adobe Experience League 문서 &quot;[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;를 참조하십시오.
 
    **프로젝트가 준비되었습니다!**
 
@@ -173,7 +174,9 @@ ht-degree: 4%
        @Override
        public Map<String, Object> submit(FormSubmitInfo formSubmitInfo) {
        String data = formSubmitInfo.getData();
-       log.info("Using custom submit action service, [data] --> " + data);
+       log.info("Using custom submit action service, [data]
+       -->
+       " + data);
        Map<String, Object> result = new HashMap<>();
        result.put("status", "OK");
        return result;

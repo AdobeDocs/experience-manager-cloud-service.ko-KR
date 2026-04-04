@@ -2,15 +2,14 @@
 title: AEM 제작 프로젝트용 Experience Modernation Agent 시작하기
 description: Experience Modernation Console을 사용하여 Experience Modernation Agent를 시작할 때 AEM 작성 프로젝트에 필요한 특정 설정 단계에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # AEM 제작 프로젝트용 Experience Modernation Agent 시작하기 {#getting-started-aem-authoring}
 

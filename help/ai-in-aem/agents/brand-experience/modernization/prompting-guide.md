@@ -2,14 +2,14 @@
 title: 경험 현대화 에이전트에 대한 안내 메시지 표시
 description: 이 안내서에서는 Experience Modernation Agent를 효과적으로 확인하는 팁을 제공하고 해당 기술이 수행하는 작업에 대해 설명합니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # 경험 현대화 에이전트에 대한 안내 메시지 표시 {#prompting-guide}
 

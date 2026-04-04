@@ -4,7 +4,7 @@ description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 사용자가 [!DNL Content Hub] 내에서 사용할 수 있는 다양한 자산에 쉽게 액세스하고 관리할 수 있도록 도와줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445307/?captions=kor&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -70,9 +70,11 @@ ht-degree: 1%
 <!--
 >[!NOTE]
 >
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+-->
 
-<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+<!--
+To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
 -->
 

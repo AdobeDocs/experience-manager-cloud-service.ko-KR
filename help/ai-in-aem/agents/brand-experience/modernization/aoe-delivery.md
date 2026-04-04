@@ -2,9 +2,9 @@
 title: 경험 현대화 에이전트의 AOE 제공
 description: Adobe AOE(Agentic Outcome Engineers)에 대해 알아보고 이들이 Experience Modernation Agent의 성공에 어떻게 도움이 되는지에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
-source-git-commit: 8c3d14fd29b289bbd8538fd5d81b75bddbfa9082
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%

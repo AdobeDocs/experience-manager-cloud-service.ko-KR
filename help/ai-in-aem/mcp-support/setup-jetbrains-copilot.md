@@ -2,8 +2,9 @@
 title: GitHub Copilot 및 AEM MCP를 사용하여 JetBrains 설정
 description: AEM MCP 서버에 연결하도록 JetBrains IDE에서 GitHub Copilot을 구성하는 방법에 대해 알아봅니다
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: c5b46aff5b4ccffa60e8bebf7341935b435079e3
+role: User, Admin, Developer
+exl-id: e153da42-51e0-49ea-8457-10bb5e77e2de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 1%

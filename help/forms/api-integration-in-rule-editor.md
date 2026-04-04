@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: 규칙 편집기에서 API 통합, 서비스 개선 사항 호출
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -107,7 +107,7 @@ ht-degree: 4%
 ![API 나머지 끝점 구성](/help/forms/assets/api-restendpoint.png)
 
 * **API 끝점 URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
-* GET→ **HTTP 메서드**
+* → **HTTP 메서드**
 * **콘텐츠 형식** → JSON
 * **입력** → `username`이(가) 쿼리 매개 변수(`aemforms`)(으)로 전달되었습니다.
 * **,**, `continent`, `capital` 및 `countrynames`과(와) 같은 `isoAlpha3`출력`languages` → 응답 필드가 양식 필드에 매핑됩니다.
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 마찬가지로 **Country of Passport Issuance** 및 **Destination Country**&#x200B;에서 동일한 API 호출을 사용하여 세 필드 모두에서 일관되고 최신 데이터를 유지합니다.
 
->
+>[!NOTE]
 >
 > API를 호출하고 사용자 지정 함수를 사용하여 [JSON 배열에서 속성 값을 검색할 수 있습니다](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). 이 접근 방식을 사용하면 값을 추출하고 양식 필드에 직접 바인딩할 수 있습니다.
 

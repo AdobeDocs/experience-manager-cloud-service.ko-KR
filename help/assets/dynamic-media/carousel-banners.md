@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4498'
 ht-degree: 1%
@@ -49,7 +49,8 @@ ht-degree: 1%
 
    기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 이렇게 하면 Experience Manager Assets에서 회전 배너 만들기 프로세스 중에 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있습니다.
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -100,7 +101,8 @@ ht-degree: 1%
 
 배너 이미지에 핫스팟 또는 이미지 맵을 추가하면 SKU(Stock Keeping Unit)를 할당합니다. 각 핫스팟 또는 이미지 맵에 선택적 추가 변수를 할당할 수도 있습니다. 이러한 변수는 나중에 핫스팟 또는 이미지 맵과 빠른 보기 콘텐츠를 일치시키는 데 사용됩니다.
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -148,10 +150,10 @@ ht-degree: 1%
    <td>쿼리 문자열에 있는 단일 SKU.</td>
    <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL의 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서 핫스팟 또는 이미지 맵에는 다음과 같은 값으로 채워진 SKU 필드만 필요합니다. <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -167,9 +169,9 @@ ht-degree: 1%
    <td>쿼리 문자열의 SKU 및 카테고리 ID.</td>
    <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID는 <code>category=</code> 매개 변수에 저장됩니다.</p> <p>따라서 핫스팟/이미지 맵 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
      <li><p>SKU는 <strong><code>305466</code></strong>이고 <code>categoryId</code>은(는) <code>1100004</code>입니다.</p> </li>
@@ -313,7 +315,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 조각을 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 조각을 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**을 선택합니다.
 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)을 참조하세요.
 
       * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.

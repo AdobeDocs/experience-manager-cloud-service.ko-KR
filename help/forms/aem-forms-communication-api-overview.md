@@ -5,7 +5,7 @@ role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 4%
@@ -20,7 +20,7 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 
 * [Adobe Developer Console(ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console은 Adobe API, 이벤트, 런타임 및 App Builder의 게이트웨이입니다.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console은 운영 및 통합 작업을 지원하기 위해 환경 수준의 세부 정보, 구성, 기술 계정 및 서비스 자격 증명에 대한 액세스를 제공합니다.
 
 서로 다른 API가 서로 다른 [인증 방법](#authentication-methods)을 지원합니다.
 
@@ -36,7 +36,8 @@ AEM Forms API는 두 개의 기본 콘솔을 통해 구조화되고 액세스됩
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## API 분류 개요
 

@@ -2,9 +2,9 @@
 title: 거버넌스 에이전트 개요
 description: AEM Governance Agent가 AEM 전반에서 브랜드 무결성 및 규정 준수를 보호하는 방법을 알아봅니다
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 07bdd1add0129e0bccd7a67ccb4bbae18d1df607
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%

@@ -2,14 +2,14 @@
 title: 브랜드 정책을 가져오는 방법
 description: Adobe 거버넌스 에이전트를 사용하여 브랜드 정책 가져오기
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # 브랜드 정책을 가져오는 방법 {#how-to-import-a-brand-policy}
 
@@ -114,4 +114,3 @@ ht-degree: 0%
    ![검사 세부 정보를 구성하는 중](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. 마지막으로 도메인 및 연결된 브랜드 목록을 보려면 **도메인** 탭을 누르십시오. 이 섹션에서는 목록에서 도메인을 추가, 삭제 또는 수정할 수 있습니다.
-

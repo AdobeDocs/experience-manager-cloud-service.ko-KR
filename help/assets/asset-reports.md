@@ -6,7 +6,7 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 9%
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 자산 보고를 통해 [!DNL Adobe Experience Manager Assets] 배포의 유틸리티를 평가할 수 있습니다. [!DNL Assets]을(를) 사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 보고서는 시스템의 사용, 사용자가 에셋과 상호 작용하는 방법, <!-- downloaded and -->에서 공유하는 에셋에 대한 유용한 정보를 제공합니다.
@@ -44,7 +44,8 @@ ht-degree: 9%
 * 파일
 * 공유 링크
 
-<!-- Removed download report.
+<!--
+ Removed download report.
 * Upload
 * Download
 * Expiration
@@ -67,7 +68,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >**다운로드** 보고서를 만들 수 있는 **AEM 관리자 제품 프로필** 권한을 부여합니다. AEM 관리자 제품 프로필에 대한 권한을 얻으려면 [AEM 제품 프로필 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)을 참조하십시오.
+   >**다운로드** 보고서를 만들 수 있는 **AEM 관리자 제품 프로필** 권한을 부여합니다. AEM 관리자 제품 프로필에 대한 권한을 얻으려면 [AEM 제품 프로필 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)을 참조하십시오.
 
    ![보고서 유형 선택](assets/choose_report.png)
 
@@ -125,7 +126,8 @@ ht-degree: 9%
 
 다음 보고서에 사용자 정의 열을 추가하여 사용자 정의 요구 사항에 더 많은 데이터를 표시할 수 있습니다.
 
-<!-- Remove download report.
+<!--
+ Remove download report.
 * Upload
 * Download
 * Expiration
@@ -163,7 +165,8 @@ ht-degree: 9%
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
-<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+<!--
+ TBD: How to configure purge now? Is it using OSGi configurations?
 
 ## Configure purging service {#configure-purging-service}
 
@@ -179,7 +182,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 * [!UICONTROL 디스크 사용 보고서]가 생성되지 않고 [!DNL Dynamic Media]을(를) 사용 중인 경우 모든 자산이 올바르게 처리되었는지 확인하십시오. 해결하려면 에셋을 재처리하고 보고서를 다시 생성합니다.
 
-<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+<!--
+ These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
 TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
@@ -187,7 +191,8 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
 -->
 
-<!-- Removed download report.
+<!--
+ Removed download report.
    >[!NOTE]
    >
    >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.

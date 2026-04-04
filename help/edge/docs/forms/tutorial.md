@@ -4,7 +4,7 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
@@ -72,9 +72,11 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 ### 자체 콘텐츠 소스 연결
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 샘플 콘텐츠를 자체 콘텐츠 폴더에 복사하고 GitHub 저장소를 자체 콘텐츠 폴더로 지정하는 방법은 다음과 같습니다.
 
@@ -266,7 +268,8 @@ URL: `https://main--wefinance--wkndform.aem.live/enquiry`
 ## 기존 AEM 프로젝트에 적응형 양식 블록 추가
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 기존 AEM 프로젝트가 있는 경우 적응형 양식 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다.
 

@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 66%
@@ -17,7 +17,7 @@ ht-degree: 66%
 
 | 버전 | 문서 링크 |
 |---------|-----------------------------|
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Edge Delivery Services) | 이 문서 |
@@ -43,19 +43,23 @@ ht-degree: 66%
 * [Adobe Experience Platform(AEP)에 제출](/help/forms/aem-forms-aep-connector.md)
 * [스프레드시트에 제출](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 **양식 속성 편집** 확장 기능의 **제출** 탭을 사용하여 범용 편집기에서 만든 양식에 대한 제출 작업을 구성할 수 있습니다.
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >

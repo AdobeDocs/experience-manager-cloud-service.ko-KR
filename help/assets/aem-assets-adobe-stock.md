@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
@@ -200,15 +200,15 @@ To configure the IMS account:
    ![health-check](assets/aem-stock-healthcheck.png)
 -->
 
-1. [&#x200B; [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
-1. [&#x200B; [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
+1. [ [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
+1. [ [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console]에서 프로그램 설정 {#set-up-a-program-in-developer-console}
 
 [!DNL Developer Console]에서 프로그램을 설정하려면 다음 단계를 수행하십시오.
 
 1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)&#x200B;(으)로 이동하여 조직에 로그인합니다.
-1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 선택하십시오.
+1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**를 선택하십시오.
    ![aem assets와 adobe stock 통합](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -217,7 +217,7 @@ To configure the IMS account:
 
    ![aem assets와 adobe stock 통합](/help/assets/assets/adc-project-name.png)
 
-1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. [!DNL OAuth Server-to-Server]클라이언트 ID **[!UICONTROL ,]**&#x200B;클라이언트 암호&#x200B;**[!UICONTROL ,]**&#x200B;범위&#x200B;**[!UICONTROL ,]**&#x200B;자격 증명 이름&#x200B;**[!UICONTROL ,]**&#x200B;기술 계정 ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 부터]** AEM 작성자 인스턴스에 구성을 추가[까지 프로젝트의 이러한 &#x200B;](#add-configuration-in-the-aem-author-instance) 자격 증명 세부 정보를 사용하십시오.
+1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. [!DNL OAuth Server-to-Server]클라이언트 ID **[!UICONTROL ,]**&#x200B;클라이언트 암호&#x200B;**[!UICONTROL ,]**&#x200B;범위&#x200B;**[!UICONTROL ,]**&#x200B;자격 증명 이름&#x200B;**[!UICONTROL ,]**&#x200B;기술 계정 ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 부터]** AEM 작성자 인스턴스에 구성을 추가[까지 프로젝트의 이러한 ](#add-configuration-in-the-aem-author-instance) 자격 증명 세부 정보를 사용하십시오.
 
    ![aem assets 및 adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
@@ -225,8 +225,8 @@ To configure the IMS account:
 
 다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에 구성을 추가합니다.
 
-1. [&#x200B; [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새  [!DNL AEM] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [&#x200B; [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
+1. [ [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새  [!DNL AEM] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [ [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### [!DNL Adobe Stock IMS configuration] 인스턴스에서 새 [!DNL AEM author] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
@@ -406,7 +406,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!NOTE]
 >
->[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [!DNL Adobe Stock]자산을 저장[!DNL Experience Manager] 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets)한 후에만 [자산을 가져와서 &#x200B;](/help/assets/aem-assets-adobe-stock.md#licenseassets) 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
+>[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [!DNL Adobe Stock]자산을 저장[!DNL Experience Manager] 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets)한 후에만 [자산을 가져와서 ](/help/assets/aem-assets-adobe-stock.md#licenseassets) 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
 
 ![검색 필터 [!DNL Experience Manager] 및 강조 표시된 [!DNL Adobe Stock]개 자산을 검색 결과에서](assets/aem-search-filters2.jpg)
 
@@ -456,11 +456,13 @@ Using this capability, organizations users can work using [!DNL Adobe Stock] ass
 Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets via [!DNL Experience Manager] desktop app; and so on.
 -->
 
-<!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
+<!--
+  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
 *Figure: Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Experience Manager] interface.*
 
-**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
+**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
+-->
 
 <!--
 ### Find assets {#find-assets}
@@ -536,6 +538,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ko)
->* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/kr/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock FAQ](https://helpx.adobe.com/kr/stock/faq.html)
+>* [Experience Manager Assets에서 Adobe Stock 에셋 사용에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)

@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 1%
@@ -49,7 +49,7 @@ ht-degree: 1%
 - **🔗직접 API 통합** - 양식 데이터 모델 설정 없이 API에 연결
 - **📊Forms 최적화** - AI 기반 성능 분석 및 전환 개선 사항
 
-[액세스 요청 →](mailto:aem-forms-ea@adobe.com) | [자세히 →](/help/forms/early-access-ea-features.md)
+[액세스 요청 →](mailto:aem-forms-ea@adobe.com) | [자세히 알아보기 →](/help/forms/early-access-ea-features.md)
 
 ## 📋 양식 만들기 및 작성 {#form-creation}
 

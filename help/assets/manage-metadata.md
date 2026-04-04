@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 사용하면 메타데이터 관리가 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
@@ -96,7 +96,8 @@ ht-degree: 9%
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
-<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+<!--
+ The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -107,7 +108,8 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+-->
 
 ## 메타데이터 및 마지막 수정 {#last-modification}
 
@@ -135,7 +137,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/kr/products/xmp.html)을 참조하세요.
+[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하세요.
 
 ### ID3 {#id}
 
@@ -202,7 +204,8 @@ Assets as a [!DNL Cloud Service]은(는) 클라우드 네이티브 서비스를 
 >
 >한 개의 처리 프로필만 폴더에 적용할 수 있습니다. 폴더의 에셋에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가합니다. 예를 들어 단일 프로필은 렌디션을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 수행할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Configure limit for bulk metadata update {#configlimit}
 
@@ -239,7 +242,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DAM - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DEX - [Optima SC 설명 탐색기](https://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/kr/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 및 MP - Microsoft 사진.

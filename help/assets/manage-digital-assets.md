@@ -7,7 +7,7 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4283'
 ht-degree: 10%
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는 [!DNL Adobe Experience Manager Assets]에서 자산을 관리하고 편집하는 방법에 대해 설명합니다. [!DNL Content Fragments]을(를) 관리하려면 [[!DNL Content Fragments]](content-fragments/content-fragments.md)개의 자산을 참조하십시오.
@@ -109,7 +109,8 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
 1. Assets 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
-<!-- TBD: Uncomment after verification for Dec release.
+<!--
+ TBD: Uncomment after verification for Dec release.
 
 ## View asset usage and references {#usage-and-references}
 
@@ -342,7 +343,8 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 터치 장치: 터치 및 홀드. 예를 들어 iPad에서 빠른 작업이 표시되도록 자산을 선택하고 유지할 수 있습니다.
 * 비-터치 장치: 마우스 포인터. 예를 들어 데스크탑 디바이스에서 포인터를 자산 썸네일 위에 두면 빠른 작업 표시줄이 표시됩니다.
 
-<!-- Hiding this topic via cqdoc-18707
+<!--
+ Hiding this topic via cqdoc-18707
 
 ## Edit images {#editing-images}
 
@@ -658,7 +660,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 참조하십시오.
 
 **추가 참조**
 

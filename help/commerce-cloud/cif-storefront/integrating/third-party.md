@@ -6,7 +6,7 @@ exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Experience Manager은 온디맨드로 데이터를 검색하므로 제품 카탈
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Adobe Commerce Open Source](https://business.adobe.com/kr/products/magento/open-source.html)
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Adobe Commerce Open Source](https://business.adobe.com/products/magento/open-source.html)
 
 원하는 사용 사례를 활성화하기 위해 전체 GraphQL 스키마를 구현할 필요가 없이 스키마 객체만 구현합니다.
 

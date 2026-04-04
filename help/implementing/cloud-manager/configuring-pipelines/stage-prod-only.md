@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 49%
@@ -17,8 +17,10 @@ ht-degree: 49%
 
 # 스테이지 전용 및 프로덕션 전용 파이프라인 분할 {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할할 수 있습니다.
 
@@ -113,7 +115,8 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 [다른 파이프라인과 같이](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 새 파이프라인을 시작할 수 있습니다. 스테이지 전용 파이프라인의 실행 세부 정보에서 직접 프로덕션 전용 파이프라인을 트리거할 수도 있습니다.
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### 스테이지 전용 파이프라인 실행 {#stage-only-run}
 

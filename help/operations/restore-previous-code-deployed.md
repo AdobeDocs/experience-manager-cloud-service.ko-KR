@@ -4,7 +4,7 @@ description: 파이프라인 실행이 필요 없는 마지막 빌드 &ndash;(�
 feature: Operations
 role: Admin
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 3%
@@ -13,11 +13,13 @@ ht-degree: 3%
 
 # AEM as a Cloud Service에 배포된 이전 소스 코드 복원 {#restore-previous-code-deployed}
 
-<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+-->
 
 **배포된 이전 코드 복원**&#x200B;을 사용하여 환경을 마지막으로 성공한 빌드로 즉시 롤백합니다. 파이프라인을 실행할 필요가 없습니다.
 
@@ -85,7 +87,7 @@ ht-degree: 3%
 
    ![활성화 복원](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. 페이지 오른쪽 상단 모서리에서 ![벨 아이콘 또는 알림 아이콘 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **알림**&#x200B;을 클릭하여 복원이 시작되고 종료되는 시기를 확인합니다.
+1. 페이지 오른쪽 상단 모서리에서 ![벨 아이콘 또는 알림 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **알림**&#x200B;을 클릭하여 복원이 시작되고 종료되는 시기를 확인합니다.
 
    ![복원을 시작할 때와 복원이 완료될 때 이전 코드 알림 복원](/help/operations/assets/restore-previous-code-notifications.png)
    *이전 코드 복원 작업에 대한 알림입니다.*

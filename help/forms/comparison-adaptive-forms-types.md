@@ -2,12 +2,12 @@
 title: 적응형 Forms 핵심 구성 요소와 Edge Delivery Services Forms 및 기초 구성 요소
 description: AEM Forms 작성 접근 방식(핵심 구성 요소, Edge Delivery Services Forms 및 기초 구성 요소)의 기술 비교. 아키텍처, 렌더링, 기능 및 사용 사례.
 keywords: 적응형 양식 비교, 핵심 구성 요소, 기초 구성 요소, edge delivery services 양식, AEM 양식 비교, 양식 빌더 비교
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 8%

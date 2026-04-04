@@ -4,7 +4,7 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 35%
@@ -26,7 +26,8 @@ Cloud Manager을 설정하여 개인 GitHub Cloud(`github.com`에 호스팅된 �
 >
 >[Cloud Manager에서 외부 저장소 추가](/help/implementing/cloud-manager/managing-code/external-repositories.md)를 참조하십시오.
 
-<!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
+<!--
+ CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
 * **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
 
@@ -40,7 +41,8 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 >[!NOTE]
 >
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+-->
 
 ## 구성 {#configuration}
 
@@ -75,7 +77,7 @@ Cloud Manager에서 개인 GitHub Cloud 저장소를 구성하는 단계는 다�
    | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨) |
    | 설명(선택 사항) | 저장소에 대한 자세한 설명. |
 
-1. **저장**&#x200B;을 선택합니다.
+1. **저장**을 선택합니다.
 이제 [개인 저장소의 소유권을 확인](#validate-ownership)할 수 있습니다.
 
 >[!TIP]

@@ -4,7 +4,7 @@ description: Cloud Manager의 전문 테스트 환경이 스트레스 테스트 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 12%
@@ -13,7 +13,8 @@ ht-degree: 12%
 
 # 특수 테스트 환경 추가{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]
@@ -55,7 +56,7 @@ ht-degree: 12%
 
 1. 다음 중 하나를 수행하십시오.
 
-   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**&#x200B;를 클릭합니다.
+   * **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔의 **환경** 카드에서 **환경 추가**를 클릭합니다.
 **환경 추가** 옵션이 흐리게 표시(사용 안 함)되면 사용 권한이 없거나 사용 허가된 리소스에 종속되어 있을 수 있습니다.
 
      ![환경 카드](assets/no-environments.png)
@@ -79,6 +80,6 @@ ht-degree: 12%
 
 ## 추가 리소스 {#additional-resources}
 
-* 비디오: [AEM Cloud Manager의 환경 유형 이해](https://experienceleague.adobe.com/ko/perspectives/cloud-manager-environment-types)
+* 비디오: [AEM Cloud Manager의 환경 유형 이해](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
 

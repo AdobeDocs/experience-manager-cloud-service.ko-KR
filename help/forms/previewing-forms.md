@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -29,10 +29,12 @@ ht-degree: 5%
    <td><strong>자산 유형</strong><br /> </td>
    <td><strong>사용 가능한 미리 보기 옵션</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>PDF 양식</td>
    <td>PDF 미리 보기 및 데이터 미리 보기<br /> </td>
@@ -41,10 +43,12 @@ ht-degree: 5%
    <td>적응형 양식</td>
    <td>HTML 미리 보기 및 데이터를 사용한 HTML 미리 보기</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

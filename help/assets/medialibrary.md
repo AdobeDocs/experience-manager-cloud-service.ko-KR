@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 9%
@@ -56,7 +56,8 @@ Experience Manager Assets은 엔터프라이즈급 DAM 기능을 제공합니다
 * [!DNL Adobe Experience Manager Screens]을(를) 사용하여 만든 디지털 화면 경험입니다.
 * Headless 작업용 HTTP REST API [!DNL Assets]개.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
 
@@ -86,7 +87,8 @@ Experience Manager Assets은 엔터프라이즈급 DAM 기능을 제공합니다
 * 활동 스트림(타임라인).
 * 주석 및 주석.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+ TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -118,4 +120,4 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >[!MORELIKETHIS]
 >
 >* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ko-KR)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

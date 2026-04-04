@@ -3,7 +3,7 @@ title: AI가 생성한 메타데이터를 통해 콘텐츠 검색 향상
 description: AI가 생성한 메타데이터를 통해 콘텐츠 검색을 향상시키는 방법에 대해 알아봅니다
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -25,7 +25,8 @@ AI 생성 메타데이터를 활성화하려면 다음을 수행합니다.
 
 ## AI가 생성한 메타데이터 사용 {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

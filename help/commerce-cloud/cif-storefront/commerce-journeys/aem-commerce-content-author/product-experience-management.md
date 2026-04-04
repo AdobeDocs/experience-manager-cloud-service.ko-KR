@@ -1,11 +1,11 @@
 ---
-title: 제품 경험 구축
+title: 제품 경험 빌드
 description: 다양한 채널에서 사용할 수 있는 제품 콘텐츠를 빌드하여 몰입형 쇼핑 경험을 만드는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 ---
 
 
-# 제품 경험 구축 {#building-experiences}
+# 제품 경험 빌드 {#building-experiences}
 
 제품 경험을 관리하는 방법을 알아봅니다.
 

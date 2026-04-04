@@ -7,7 +7,7 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3413'
 ht-degree: 11%
@@ -18,7 +18,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager]의 MSM(다중 사이트 관리자) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. [!DNL Assets]에 대해 MSM이라는 이름의 디지털 에셋에 동일한 기능을 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하여 다음을 수행할 수 있습니다.
@@ -326,7 +326,8 @@ However, you have the flexibility to make local modifications to a live copy to 
 
    *그림: [!UICONTROL Live Copy 개요] 콘솔에서 Live Copy 폴더의 많은 자산을 쉽게 업데이트할 수 있습니다.*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS?
+<!--
+ TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 

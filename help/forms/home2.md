@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Adobe Experience Manager Forms as a Cloud Service은 디지털 양식 환경을 
 **프로그램에 참여:**
 혁신적인 기술에 먼저 액세스하고 AEM Forms의 미래를 형성하는 데 도움을 받으십시오.
 
-[액세스 요청 →](mailto:aem-forms-ea@adobe.com) | [자세히 →](/help/forms/early-access-ea-features.md)
+[액세스 요청 →](mailto:aem-forms-ea@adobe.com) | [자세히 알아보기 →](/help/forms/early-access-ea-features.md)
 
 
 ## 핵심 기능 {#core-capabilities}

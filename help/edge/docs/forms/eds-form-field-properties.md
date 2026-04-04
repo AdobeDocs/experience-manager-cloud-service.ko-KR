@@ -3,8 +3,8 @@ title: 적응형 양식 블록 필드 속성 마스터하기
 description: 스프레드시트 및 적응형 양식 블록 필드 속성을 사용하여 강력한 양식을 더 빠르게 작성할 수 있습니다. 이 안내서에는 EDS Forms Block에서 지원하는 속성이 모두 나열됩니다.
 feature: Edge Delivery Services
 exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
-source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -368,7 +368,8 @@ data-maxItems="3">
 자세한 내용은 `blocks/form/form.js` 및 `blocks/form/util.js`의 구현을 참조하십시오.
 
 
-<!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+<!--
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
@@ -393,4 +394,5 @@ This table details all the properties you can use to customize your Adaptive For
 | **Multiple** | Allow multiple file selections | `true`, `false` |
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
-| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+-->

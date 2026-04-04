@@ -1,11 +1,11 @@
 ---
-title: AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션
-description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법
+title: AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션
+description: 이전 버전에서 AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션하는 방법
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 ## CIF 추가 기능 {#cif-add-on}
 
-Experience Manager as a Cloud Service의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작](/help/commerce-cloud/cif-storefront/getting-started.md)을 참조하세요.
+Experience Manager as a Cloud Service의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](/help/commerce-cloud/cif-storefront/getting-started.md)를 참조하세요.
 
 CIF Adobe을 배포하는 프로젝트를 지원하려면 [AEM CIF 핵심 구성 요소를 제공합니다.](https://github.com/adobe/aem-core-cif-components)
 
@@ -48,7 +48,7 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스.](https://business.adobe.com/kr/products/magento/open-source.html)
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스.](https://business.adobe.com/products/magento/open-source.html)
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험 {#aem-rendering}
 

@@ -4,7 +4,7 @@ description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 94%
@@ -53,7 +53,8 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 <!--
 By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
 
-Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles.
+-->
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
@@ -76,9 +77,11 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
    >
    >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. You are directed to Cloud Manager's landing page. -->
+1. You are directed to Cloud Manager's landing page.
+-->
 
-<!-- OLD
+<!--
+ OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
@@ -97,7 +100,8 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 >[!NOTE]
 >
->Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+-->
 
 ## 프로그램 보기 {#viewing-programs}
 

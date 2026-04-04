@@ -4,7 +4,7 @@ description: Edge Delivery Services를 사용하여 AEM Forms에서 제출 액�
 feature: Edge Delivery Services
 role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
@@ -191,7 +191,8 @@ CORS 구성에 대한 자세한 내용은 [CORS 구성 안내서](https://experi
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+-->
 
 #### &#x200B;4. 양식 구성
 
@@ -248,7 +249,8 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++-->
++++
+-->
 
 +++ 일반 문제
 

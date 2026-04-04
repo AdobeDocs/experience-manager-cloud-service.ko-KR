@@ -6,7 +6,7 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 20%
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 Assets Insights 기능을 사용하면 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 광고 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다. 이는 이미지의 성능 및 인기에 대한 통찰력을 제공하는 데 도움이 됩니다.
@@ -77,7 +77,8 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 1. 도구 모음에서 **[!UICONTROL 레이아웃]** 옵션을 클릭한 다음 **[!UICONTROL 인사이트 보기]**&#x200B;를 선택합니다.
 1. 페이지에 에셋에 대한 사용 점수가 표시됩니다. 다양한 에셋의 등급을 비교하고 통찰력을 도출합니다.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 
@@ -119,7 +120,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. [!DNL Experience Manager]이(가) 보고서 세트를 설정한 후 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-자세한 내용은 [Adobe Analytics 웹 서비스](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=ko#api-access-information)를 참조하십시오.
+자세한 내용은 [Adobe Analytics 웹 서비스](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information)를 참조하십시오.
 
 ### 페이지 추적기 {#page-tracker}
 

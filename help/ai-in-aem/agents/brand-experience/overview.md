@@ -1,10 +1,10 @@
 ---
-title: 브랜드 경험 에이전트
-description: Brand Experience Agent가 콘텐츠 업데이트, 사이트 변환 및 기술 문제 해결을 자동화하여 디지털 경험의 현대화와 진화를 가속화하고 브랜드가 AI의 속도에 맞게 지속적으로 개선하고 적응하는 방법에 대해 알아봅니다.
+title: Brand Experience Agent
+description: Brand Experience Agent이 콘텐츠 업데이트, 사이트 변환 및 기술 문제 해결을 자동화하여 브랜드가 AI의 속도에 맞게 지속적으로 개선하고 적응할 수 있도록 함으로써 디지털 경험의 현대화와 진화를 가속화하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -12,19 +12,19 @@ ht-degree: 0%
 ---
 
 
-# 브랜드 경험 에이전트 {#brand-experience-agent}
+# Brand Experience Agent {#brand-experience-agent}
 
-Brand Experience Agent는 콘텐츠 업데이트, 사이트 변환 및 기술 문제 해결을 자동화하여 디지털 경험의 현대화와 진화를 가속화하므로 브랜드가 AI의 속도에 맞게 지속적으로 개선하고 적응할 수 있습니다.
+Brand Experience Agent은 콘텐츠 업데이트, 사이트 변환 및 기술 문제 해결을 자동화하여 디지털 경험의 현대화와 진화를 가속화함으로써 브랜드가 AI의 속도에 맞게 지속적으로 개선하고 적응할 수 있도록 지원합니다.
 
 ## 에이전트 {#agents}
 
-Brand Experience Agent는 각각 특정 작업 세트를 전문으로 하는 다음 에이전트를 통해 결과를 제공합니다.
+Brand Experience Agent은 각각 특정 작업 세트를 전문으로 하는 다음 에이전트를 통해 결과를 제공합니다.
 
 * [경험 현대화 에이전트](#experience-modernization) - 웹 사이트를 클라우드 지원 형식으로 마이그레이션합니다.
 * [Experience Production Agent](#experience-production) - 콘텐츠 업데이트, 양식 만들기 및 통신을 통해 마켓 출시 시간 단축
 * [개발 에이전트](#development) - AI 지원 문제 해결 및 빌드 자동화 제공
 
-Brand Experience Agent는 이러한 에이전트를 통해 업데이트 및 현대화에 숨겨진 묵직한 운영 작업을 흡수하여 팀이 오늘날의 AI 시대에 보다 빠르고 안정적으로 변경 사항을 제공할 수 있도록 지원합니다.
+Brand Experience Agent은 이러한 에이전트를 통해 업데이트 및 현대화의 무거운 운영 작업을 흡수함으로써 팀이 오늘날의 AI 시대에 보다 빠르고 안정적으로 변경 사항을 제공할 수 있도록 지원합니다.
 
 >[!IMPORTANT]
 >

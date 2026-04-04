@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3620'
 ht-degree: 3%
@@ -281,12 +281,13 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+-->
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 

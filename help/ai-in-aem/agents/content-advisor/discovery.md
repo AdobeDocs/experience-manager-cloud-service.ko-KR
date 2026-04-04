@@ -2,9 +2,9 @@
 title: 컨텐츠 검색 에이전트
 description: 콘텐츠 검색 에이전트를 사용하여 간소화되고 클릭이 필요 없는 검색 환경을 제공하기 위해 자연스럽고 대화식 프롬프트를 통해 온디맨드로 관련 AEM 콘텐츠를 제공하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 0%

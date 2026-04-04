@@ -2,9 +2,9 @@
 title: 콘텐츠 관리자 에이전트
 description: Content Advisor 에이전트가 콘텐츠 검색 및 최적화에 수반되는 방대한 운영 작업을 흡수하여 진화하는 콘텐츠에서 발생하는 마찰을 제거하고 팀이 오늘날 AI 시대에 보다 빠르고 안정적으로 변경 사항을 제공할 수 있도록 지원하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

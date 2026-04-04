@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
@@ -126,7 +126,7 @@ AEM의 콘텐츠는 구조에 따라 좌우됩니다. AEM이 제공하는 콘텐
 >
 >AEM 프로젝트의 시작 부분부터 번역을 위한 계획을 수립하십시오. 프로젝트 관리자 및 콘텐츠 설계자와 조기부터 긴밀히 협력하십시오.
 >
->번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당할 별도의 담당자로서 국제화 프로젝트 관리자가 필요할 수 있습니다.
+>번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당할 별도의 페르소나로서 국제화 프로젝트 관리자가 필요할 수 있습니다.
 
 ## 권장 콘텐츠 구조 {#recommended-structure}
 

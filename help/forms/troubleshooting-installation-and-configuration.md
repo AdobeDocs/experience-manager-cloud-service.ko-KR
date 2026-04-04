@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Cloud Service 환경을 구성하는 동안 다음 문제 중 일부가 발생�
 
    ![Forms 옵션 선택](assets/installation-configuration-select-forms-option.png)
 
-1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ko#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko)합니다.
+1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)합니다.
 
 파이프라인이 빌드되고 배포되면 **[!UICONTROL 탐색]** 페이지의 **[!UICONTROL Forms]** 옵션이 표시됩니다.
 
@@ -48,7 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 1. Click **[!UICONTROL New Profile]** in the Products tab.
 1. Specify Name, Display Name, and Description for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-If the profile exists and issues still persist, contact Adobe Support. -->
+If the profile exists and issues still persist, contact Adobe Support.
+-->
 
 ## 파이프라인 빌드 실패 {#build-pipeline-fails}
 

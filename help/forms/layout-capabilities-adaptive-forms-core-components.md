@@ -6,7 +6,7 @@ keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2148'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 
@@ -79,7 +79,7 @@ ht-degree: 16%
 
 세로 탭 레이아웃
 
-[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
+[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)를 사용하여 양식에 세로 탭 레이아웃을 추가할 수 있습니다. 세로 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 가로 탭 레이아웃]
@@ -91,7 +91,7 @@ ht-degree: 16%
 
 가로 탭 레이아웃
 
-[가로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
+[가로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)를 사용하여 양식에 가로 탭 레이아웃을 추가할 수 있습니다. 수평 탭 구성 요소의 다양한 속성을 구성하는 방법에 대한 자세한 지침은 [수평 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) 문서를 참조하십시오.
 
 
 >[!TAB 아코디언 레이아웃]
@@ -229,9 +229,11 @@ ht-degree: 16%
 
 ### &#x200B;3. 패널에 양식 구성 요소 추가
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. 패널 내에서 구성 요소를 추가할 수 있는 섹션을 찾습니다.
 1. **추가** 아이콘을 클릭합니다. 아이콘은 새 구성 요소를 추가하는 옵션을 나타내는 더하기 기호(+)입니다.
@@ -271,13 +273,14 @@ ht-degree: 16%
 
    ![세 번째 패널 구성 요소](/help/forms/assets/panel-3-component.png)
 
-1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
+1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**를 클릭합니다.
    ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

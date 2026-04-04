@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 98%
@@ -37,7 +37,8 @@ ht-degree: 98%
 
 ## 에셋 추가, 업로드 및 보기 {#support-to-upload-view}
 
-<!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
+<!--
+ TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
 | 에셋 유형 | [찾아보기](/help/assets/navigate-assets-view.md) | 복사 | [업로드](/help/assets/add-delete-assets-view.md) | 만들기 | [삭제](/help/assets/add-delete-assets-view.md#delete-assets) | 세부 사항 | 이미지 확대/축소 | [최근에 본 항목](/help/assets/navigate-assets-view.md) |
@@ -50,7 +51,8 @@ ht-degree: 98%
 | PSD, PSB, AI 및 INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | 기타 바이너리 파일 | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
-<!-- Hiding CC Libraries (considered beta) as per PM feedback.
+<!--
+ Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
 -->
 
@@ -108,7 +110,8 @@ ht-degree: 98%
 
 [!DNL Adobe Asset Link] 사용자는 지원되는 [!DNL Adobe Creative Cloud] 데스크탑 애플리케이션에서 [!DNL Assets view] 저장소에 파일을 업로드하고 체크인(새 버전 업로드)할 수 있습니다.
 
-<!-- TBD: Saving the template table separately for later use.
+<!--
+ TBD: Saving the template table separately for later use.
 | Asset type    | Features |
 |---------------|----------|
 | Raster images |          |
@@ -131,4 +134,4 @@ ht-degree: 98%
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의

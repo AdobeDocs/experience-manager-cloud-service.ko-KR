@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 21%
@@ -20,7 +20,8 @@ ht-degree: 21%
 >
 >이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
-<!-- Alexandru: drafting this for now
+<!--
+ Alexandru: drafting this for now
 
 NOTE: "LEGACY" for user mapping includes everything before (that is, not including) 2.0.16 of CTT.
 
@@ -28,16 +29,16 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 >id="aemcloud_ctt_usermapping"
 >title="User Mapping Tool"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ko#important-considerations" text="Important Considerations for using User Mapping Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ko#using-user-mapping-tool" text="Using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#important-considerations" text="Important Considerations for using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#using-user-mapping-tool" text="Using User Mapping Tool"
 
 -->
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM AEM as a Cloud Service 시스템에서 사용자와 그룹을 이동해야 합니다. 이 마이그레이션은 콘텐츠 전송 도구에 의해 수행됩니다.
+Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM 시스템에서 사용자와 그룹을 이동해야 합니다. 이 마이그레이션은 콘텐츠 전송 도구에 의해 수행됩니다.
 
-AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID의 완전히 통합된 사용입니다. 이 통합을 사용하려면 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 Adobe Identity Management System(IMS)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ko#identity-management)을 참조하세요. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 기존 사용자 및 그룹을 중복하지 않도록 기존 사용자 및 그룹을 해당 IMS ID에 매핑해야 합니다.
+AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID의 완전히 통합된 사용입니다. 이 통합을 사용하려면 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 Adobe Identity Management System(IMS)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)을 참조하세요. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 기존 사용자 및 그룹을 중복하지 않도록 기존 사용자 및 그룹을 해당 IMS ID에 매핑해야 합니다.
 
 ## 사용자 매핑 도구 {#mapping-tool}
 

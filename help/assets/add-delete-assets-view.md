@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -21,8 +21,10 @@ ht-degree: 90%
 * 사용자 인터페이스에서 에셋 또는 폴더를 드래그하고 화면에 표시되는 안내를 따릅니다.
 * 도구 모음에서 **[!UICONTROL 에셋 추가]** 옵션을 클릭하고 업로드 대화 상자에 일부 파일을 추가하십시오.
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 폴더를 만든 후 이러한 방법을 사용하여 에셋을 업로드할 수 있습니다. 빈 폴더를 만들려면 도구 모음에서 **[!UICONTROL 폴더 만들기]**&#x200B;를 클릭합니다. [!DNL Assets view]는 강력한 전체 텍스트 검색 기능을 제공하며 폴더를 사용하여 에셋을 보다 효율적으로 구성할 수도 있습니다.
 
@@ -85,7 +87,8 @@ ht-degree: 90%
 >[!TIP]
 >
 >[!DNL Creative Cloud] 데스크톱 응용 프로그램 내에서 직접 DAM 리포지토리에 에셋을 업로드할 수 있습니다.
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -103,10 +106,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 업로드하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ko)
+* [Assets 보기에서 에셋을 업로드하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의

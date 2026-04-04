@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 2%
@@ -22,13 +22,15 @@ ht-degree: 2%
 
 * 배치 API(비동기 API)는 예약된 높은 처리량의 여러 문서 생성 사용 사례에 적합합니다. 해당 API는 배치 문서를 생성합니다. 예: 매월 생성되는 전화요금 청구서, 신용카드 명세서와 혜택 명세서.
 
-<!-- The following skills are required to create templates and use HTTP APIs: 
+<!--
+ The following skills are required to create templates and use HTTP APIs: 
 
 * Understanding of Adobe Forms Designer or Acrobat Forms to create templates
 
 * Understanding of HTTP APIs and experience of using HTTP APIs
 
-* Basic understanding of Adobe Experience Manager -->
+* Basic understanding of Adobe Experience Manager
+-->
 
 
 ## 일괄 처리 작업 {#batch-operations}

@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: VRE에서 서비스 개선 사항 호출, 호출 서비스를 사용하여 드롭다운 옵션 채우기, 호출 서비스의 출력을 사용하여 반복 가능 패널 설정, 호출 서비스의 출력을 사용하여 패널 설정, 다른 필드의 유효성을 검사하기 위해 호출 서비스의 출력 매개 변수 사용.
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '2156'
 ht-degree: 1%
@@ -172,7 +172,7 @@ ht-degree: 1%
 
 ![결과](/help/forms/assets/output1.png)
 
-> 
+>[!NOTE]
 >
 > 서비스를 호출하고, JSON 응답을 구문 분석하고, 사용자 지정 함수를 적용하여 드롭다운 옵션을 동적으로 채울 수도 있습니다. 자세한 내용은 [이 섹션](#retrieve-property-values-from-a-json-array)을 참조하세요.
 

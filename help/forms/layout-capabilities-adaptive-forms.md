@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 5%
@@ -16,20 +16,22 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service(핵심 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
 | AEM as a Cloud Service(기초 구성 요소) | 이 문서 |
 
 [!DNL Adobe Experience Manager]을(를) 사용하면 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 적응형 Forms을 만들 수 있습니다. 양식 레이아웃은 적응형 양식에 항목 또는 구성 요소가 표시되는 방식을 제어합니다.
 
-<!-- ## Prerequisite knowledge {#prerequisite-knowledge}
+<!--
+ ## Prerequisite knowledge {#prerequisite-knowledge}
 
-Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
+Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms.
+-->
 
 ## 레이아웃 유형 {#types-of-layouts}
 
@@ -99,7 +101,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 모바일 레이아웃은 상대적으로 더 작은 화면들로 모바일 디바이스들 상에서 사용자 친화적인 탐색을 허용한다. 모바일 레이아웃에서는 양식 탐색에 탭 스타일이나 마법사 스타일을 사용합니다. 모바일 레이아웃을 적용하면 전체 양식에 대해 단일 레이아웃이 제공됩니다.
 
-이 레이아웃은 탐색 모음과 탐색 메뉴를 사용하여 탐색을 제어합니다. 탐색 표시줄에 양식의 **next** 및 **previous** 탐색 단계를 나타내는 **[!UICONTROL &lt;]** 및 **[!UICONTROL >]** 아이콘이 표시됩니다.
+이 레이아웃은 탐색 모음과 탐색 메뉴를 사용하여 탐색을 제어합니다. 탐색 표시줄에 양식에 **다음** 및 **이전** 탐색 단계를 나타내는 **[!UICONTROL &lt;]** 및 **[!UICONTROL >]** 아이콘이 표시됩니다.
 
 모바일 레이아웃은 `/libs/fd/af/layouts/mobile/` 위치에서 사용할 수 있습니다. 적응형 Forms에서는 기본적으로 다음 모바일 레이아웃을 사용할 수 있습니다.
 
@@ -126,7 +128,8 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 {{see-also}}
 
 
-<!-- ## Toolbar layouts {#toolbar-layouts}
+<!--
+ ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
 
@@ -156,6 +159,7 @@ For the Mobile layout, you can add action buttons using icons.
 
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
-Mobile fixed layout for toolbar-->
+Mobile fixed layout for toolbar
+-->
 
 

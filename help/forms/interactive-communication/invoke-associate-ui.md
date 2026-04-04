@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -25,13 +25,13 @@ UI와 응용 프로그램을 통합하기 전에 다음을 확인하십시오.
 
 - 만들어진 대화형 통신 및 게시됨
 - 팝업 지원이 활성화된 브라우저
-- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- AEM[에서 지원하는 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
+- [사용자 연결은 forms-associates 그룹의 일부여야 합니다](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- AEM[에서 지원하는 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)인증 메커니즘을 사용하여 구성된 인증(예: SAML 2.0, OAuth 또는 사용자 지정 인증 처리기)
 
 >[!NOTE]
 >
 >- 이 문서에서는 [Microsoft Entra ID(Azure AD)가 있는 SAML 2.0을 ID 공급자](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)로 사용하는 인증 구성을 보여 줍니다.
->- 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
+>- 연결 UI의 경우 [SAML 2.0 인증](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 문서에 설명된 표준 설정 이상의 추가 SAML 구성이 필요합니다. 자세한 내용은 [UI 연결에 대한 추가 SAML 구성](#additional-saml-configurations-for-associate-ui) 섹션을 참조하십시오.
 
 ### 연결 UI에 대한 추가 SAML 구성
 
@@ -456,13 +456,15 @@ const data = {
 > 창이 열리지 않으면 브라우저에서 이 사이트에 대한 팝업을 허용하는지 확인하십시오.
 
 
-<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+<!--
+  **Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.
+  -->
 
 ## 문제 해결
 
@@ -503,7 +505,8 @@ const data = {
 - 프로덕션의 경우: 애플리케이션의 정확한 원본 URL을 지정합니다
 - 게시 인스턴스 CORS 설정이 응용 프로그램 도메인을 허용하는지 확인합니다.
 
-<!--## Best Practices
+<!--
+## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -512,7 +515,8 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+-->
 
 ## 추가 참조
 

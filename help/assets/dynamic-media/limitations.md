@@ -9,7 +9,7 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 14%
@@ -55,8 +55,10 @@ Dynamic Media는 다음 웹 브라우저 및 운영 체제 조합을 지원하�
 
 ## Secure Socket Layer 2.0 및 3.0 과 Transport Layer Security 1.0 및 1.1 지원 종료 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+ CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 2024년 4월 30일 수요일부터 Adobe Dynamic Media는 다음에 대한 지원을 종료합니다.
 

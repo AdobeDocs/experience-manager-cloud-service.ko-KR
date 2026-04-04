@@ -2,9 +2,9 @@
 title: 양식 생성 작업
 description: Brand Experience Agent의 양식 작성 작업과 자연어를 사용하여 양식을 처음부터 만드는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%

@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service(핵심 구성 요소) | 이 문서 |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등의 개인 세부 사항을 제공하는 것과 같은 몇 가지 일반적인 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
-> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
+> [양식 조각 구성 요소의 구성 대화 상자 및 디자인 대화 상자](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)를 통해 사용자의 조각 환경을 손쉽게 사용자 지정할 수 있습니다.
 
 ## 적응형 양식 단편 만들기 {#create-a-fragment}
 
@@ -66,7 +66,8 @@ ht-degree: 13%
 
 1. **만들기**&#x200B;를 클릭한 다음 **열기**&#x200B;를 클릭하여 기본 템플릿으로 편집 모드에서 조각을 엽니다. 편집 모드에서 모든 적응형 양식 구성 요소를 조각에 추가할 수 있습니다.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 또한 조각에 대한 양식 모델로 XML 스키마를 선택한 경우 양식 모델 계층을 표시하는 새 탭이 콘텐츠 파인더에 나타납니다. 양식 모델 요소를 조각으로 드래그 앤 드롭할 수 있습니다. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 또한 조각에 대한 양식 모델로 XML 스키마를 선택한 경우 양식 모델 계층을 표시하는 새 탭이 콘텐츠 파인더에 나타납니다. 양식 모델 요소를 조각으로 드래그 앤 드롭할 수 있습니다.
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 스키마 또는 양식 데이터 모델(FDM)을 기반으로 하는 적응형 양식 조각이 생성되면 양식 데이터 모델(FDM) 또는 스키마 요소가 적응형 양식 빌더에 있는 콘텐츠 브라우저의 데이터 소스 탭에 나타납니다. 양식 모델 요소를 조각에 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 스키마의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
 
@@ -92,11 +93,13 @@ ht-degree: 13%
 
 적응형 양식 조각은 적응형 양식을 참조하여 추가되고 독립형 적응형 양식 조각과 동기화된 상태로 유지됩니다. 이는 적응형 양식 조각에 대한 모든 수정 사항이 조각이 적응형 Forms 내에 통합된 모든 인스턴스에 미러링됨을 의미합니다.
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

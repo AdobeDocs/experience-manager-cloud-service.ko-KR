@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2274'
 ht-degree: 77%
@@ -34,7 +34,7 @@ ht-degree: 77%
 
 ![자산의 메타데이터 보기](assets/metadata-view.png)
 
-*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산과 해당 메타데이터를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 [!UICONTROL 기본] 탭에서 제목, 설명 및 업로드 날짜와 같은 기본 메타데이터를 사용할 수 있습니다. [!UICONTROL 고급] 탭에는 카메라 모델, 렌즈 세부 정보 및 위치 정보 태그와 같은 고급 메타데이터가 포함되어 있습니다. [!UICONTROL 태그] 탭에는 이미지 내용에 따라 자동으로 적용된 태그가 포함되어 있습니다.
 
@@ -50,7 +50,7 @@ ht-degree: 77%
 
 ![자산의 스마트 태그 보기](assets/metadata-view-tags.png)
 
-*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**&#x200B;를 클릭하거나 자산을 더블 클릭합니다.*
+*그림: 자산의 스마트 태그를 보려면&#x200B;**[!UICONTROL 세부 정보]**를 클릭하거나 자산을 더블 클릭합니다.*
 
 스마트 태그에는 신뢰도 점수도 백분율로 포함됩니다. 이는 적용된 태그와 관련된 신뢰도를 나타냅니다. 자동으로 적용되는 스마트 태그를 조정할 수 있습니다.
 
@@ -237,15 +237,16 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
-<!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
+<!--
+ TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
@@ -253,7 +254,8 @@ To reuse an existing form to create a form, do one of these:
 * Click **[!UICONTROL Create]**, select **[!UICONTROL Use existing form structure as template]** option, and select an existing form. 
 -->
 
-<!-- TBD: Queries for PM and engg.
+<!--
+ TBD: Queries for PM and engg.
 
 Can we edit the existing metadata in any form?
 
@@ -268,7 +270,8 @@ Is there a detailed metadata tab. Where do the other details of an asset go?
 How can one search based strictly on the metadata. Similar to AEM Assets GQL queries.
 -->
 
-<!-- TBD: Link to related articles if any.
+<!--
+ TBD: Link to related articles if any.
 
 >[!MORELIKETHIS]
 >

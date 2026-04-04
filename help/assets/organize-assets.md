@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 6%
@@ -17,14 +17,15 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
-Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
+® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
 
 [!DNL Experience Manager Assets]은(는) 다양한 콘텐츠 구성 방법을 지원합니다. 폴더를 사용하여 계층적 방법으로 구성하거나 태그 등의 비순차적 방법으로 구성할 수 있습니다. 사용자는 DAM 자산 편집기에서 하위 자산, 렌디션 및 메타데이터가 표시되는 태그를 편집할 수 있습니다.
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

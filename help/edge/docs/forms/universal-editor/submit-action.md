@@ -5,8 +5,8 @@ keywords: 적응형 양식에 대한 제출 작업을 선택하는 방법, 적�
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 버전 | 문서 링크 |
 |---------|-----------------------------|
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service(기초 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service(핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service(Edge Delivery Services) | 이 문서 |
@@ -60,10 +60,12 @@ ht-degree: 100%
 - [Adobe Experience Platform(AEP)에 제출](/help/forms/aem-forms-aep-connector.md)
 - [스프레드시트에 제출](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 **양식 속성 편집** 확장 기능의 **제출** 탭을 사용하여 범용 편집기에서 만든 양식에 대한 제출 작업을 구성할 수 있습니다.
 

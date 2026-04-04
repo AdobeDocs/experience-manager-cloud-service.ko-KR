@@ -6,7 +6,7 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -31,7 +31,8 @@ AEM Forms은 **[!UICONTROL 적응형 양식 컨테이너]** 및 **[!UICONTROL �
 
 ![AEM Sites 페이지의 적응형 양식의 예](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-<!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
+<!--
+ For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
@@ -45,7 +46,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -87,8 +88,8 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 배포 파이프라인을 사용하여 **Customheaderlibs** 및 **Customfooterlibs** 클라이언트 라이브러리를 AEM Sites 페이지에 추가합니다. 클라이언트 라이브러리를 추가하려면 다음을 수행하십시오.
 
-1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ko)를 사용하고 복제합니다.
-2. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예를 들어 Microsoft® Visual Code가 있습니다.
+1. [AEM Cloud Service Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)를 사용하고 복제합니다.
+2. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예를 들어 ® Visual Code가 있습니다.
 3. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 파일을 열고 다음 코드를 파일에 추가합니다.
 
    ```
@@ -125,7 +126,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-7. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ko)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
+7. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
 
 >[!NOTE]
 >

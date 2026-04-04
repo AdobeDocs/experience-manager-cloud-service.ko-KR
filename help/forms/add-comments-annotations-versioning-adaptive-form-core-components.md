@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -15,8 +15,10 @@ ht-degree: 0%
 
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
-<!--Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
-https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
+<!--
+Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
+-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
@@ -33,7 +35,7 @@ https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/cont
 
 1. 양식을 만들거나 기존 양식을 사용합니다.
 1. AEM UI에서 **[!UICONTROL 양식]**>>**[!UICONTROL Forms 및 문서]**&#x200B;로 이동하고 **양식**&#x200B;을 선택합니다.
-1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**&#x200B;을 선택합니다.
+1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**을 선택합니다.
    ![양식 선택](select-a-form.png)
 1. 왼쪽 하단 패널에 있는 **세 점**&#x200B;을 클릭하고 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.
 1. 이제 양식 버전에 레이블을 제공하며 주석을 통해 양식에 대한 정보를 제공할 수 있습니다.
@@ -73,10 +75,10 @@ https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/cont
 
 1. **[!UICONTROL 편집]** 모드에서 양식을 엽니다.
 
-1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭합니다.
+1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**을 클릭합니다.
    ![주석](annotation.png)
 
-1. 이미지에 표시된 대로 왼쪽 위에 있는 **추가 아이콘**&#x200B;을 클릭하여 주석을 추가합니다.
+1. 이미지에 표시된 대로 왼쪽 위에 있는 **추가 아이콘**을 클릭하여 주석을 추가합니다.
    ![주석 추가](add-annotation.png)
 
 1. 이제 주석을 추가하고 여러 색상으로 스케치를 그려 구성 요소를 형성할 수 있습니다.

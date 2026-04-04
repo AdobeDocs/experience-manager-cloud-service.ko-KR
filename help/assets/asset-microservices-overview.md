@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 99%
@@ -32,7 +32,8 @@ Adobe Experience Manager as a [!DNL Cloud Service]는 클라우드 기반의 Exp
 
 고차원의 아키텍처 다이어그램은 자산 수집 및 처리의 핵심 요소와 시스템 전체의 자산 흐름을 나타냅니다.
 
-<!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -74,7 +75,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 자산 처리가 완료되면 Adobe Experience Manager를 구성하여 사후 처리 워크플로를 자동으로 트리거할 수 있습니다.
 
-<!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
+<!--
+ TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
 
 **추가 참조**
@@ -98,5 +100,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >* [자산 마이크로서비스 사용 시작](asset-microservices-configure-and-use.md)
 >* [지원되는 파일 형식](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ko)
+>* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [다이렉트 바이너리 액세스에 대한 Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

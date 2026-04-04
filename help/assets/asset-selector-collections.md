@@ -4,7 +4,7 @@ description: 자산 선택기 컬렉션 작업.
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,7 +28,8 @@ ht-degree: 7%
 ![레일 보기의 컬렉션](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 또한 컬렉션 탭에서 에셋 선택을 사용자 지정할 수도 있습니다. 이렇게 하려면 `handleSelection`을(를) 사용하여 사용자 지정할 수 있습니다. [개체 스키마를 사용하여 Assets 선택 처리](/help/assets/asset-selector-customization.md#handling-selection)를 참조하십시오.
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
 ht-degree: 2%
@@ -16,16 +16,16 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-테마를 만들고 적용하여 적응형 양식<!-- or an interactive communication-->을(를) 양식화할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식<!-- or interactive communication -->에 대한 참조 없이 독립적으로 관리됩니다.
+테마를 만들고 적용하여 적응형 양식<!-- or an interactive communication-->을(를) 양식화할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리됩니다.
 
-[!DNL AEM Forms]소프트웨어 배포[&#x200B; 포털에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
+[!DNL AEM Forms]소프트웨어 배포[ 포털에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
 
 ## 테마 만들기, 다운로드 또는 업로드 {#creating-downloading-or-uploading-a-theme}
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL Adobe Experience Manager]**, **[!UICONTROL Forms]**, **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
+1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**를 클릭합니다.
 테마를 만드는 마법사가 실행됩니다.
 
 1. 테마의 **[!UICONTROL 이름]**&#x200B;을(를) 지정하십시오.
@@ -87,7 +87,7 @@ Cloud Service 인스턴스에서 만든 테마:
 1. **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하고 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
 1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
-1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
+1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **[!UICONTROL 업로드]**를 클릭합니다.
 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
 
 ## 테마의 메타데이터 {#metadata-of-a-theme}
@@ -166,7 +166,8 @@ Cloud Service 인스턴스에서 만든 테마:
    <td>예</td>
    <td>검색을 개선하는 데 사용되는 식별을 위해 테마에 첨부된 레이블입니다.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Cloud Service 인스턴스에서 만든 테마:
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## 테마 편집기 정보 {#about-the-theme-editor}
 
-테마 편집기는 다양한 적응형 양식 <!-- and interactive communication --> 요소의 스타일을 쉽게 지정하는 데 필요한 기능을 제공하는 비즈니스 사용자 및 웹 디자이너/개발자에게 친숙한 인터페이스입니다. 테마를 만들면 <!--  , interactive communications, letters, document fragments, and data dictionaries--> 양식처럼 별도의 엔터티로 저장됩니다.
+테마 편집기는 다양한 적응형 양식 <!-- and interactive communication --> 요소의 스타일을 쉽게 지정하는 데 필요한 기능을 제공하는 비즈니스 사용자 및 웹 디자이너/개발자에게 친숙한 인터페이스입니다. 테마를 만들면 폼과 같은 별도의 엔티티로 저장됩니다.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 테마 편집기 를 사용하여 테마에서 스타일링된 구성 요소의 스타일을 맞춤화할 수 있습니다. 장치에서 양식 <!-- or interactive communication -->의 모양을 사용자 지정할 수 있습니다.
 
 테마 편집기는 다음 두 개의 패널로 나뉘어 있습니다.
 
-* **캔버스** - 오른쪽에 나타납니다. 모든 스타일 변경 내용이 즉시 반영되는 샘플 적응형 양식 <!--  or interactive communication -->을(를) 표시합니다. 캔버스에서 직접 오브젝트를 선택하여 해당 오브젝트와 연관된 스타일을 조회하고 해당 스타일을 편집할 수도 있습니다. 맨 위에 있는 장치 해상도 눈금자가 캔버스를 제어합니다. 눈금자에서 해상도 중단점을 선택하면 각 해상도에 대한 샘플 양식 <!--  or interactive communication -->의 미리 보기가 표시됩니다. 캔버스는 [아래](themes.md#using-canvas)에 자세히 설명되어 있습니다.
+* **캔버스** - 오른쪽에 나타납니다. 모든 스타일 변경 내용이 즉시 반영되는 샘플 적응형 양식 <!--  or interactive communication -->을(를) 표시합니다. 캔버스에서 직접 오브젝트를 선택하여 해당 오브젝트와 연관된 스타일을 조회하고 해당 스타일을 편집할 수도 있습니다. 맨 위에 있는 장치 해상도 눈금자가 캔버스를 제어합니다. 눈금자에서 해상도 중단점을 선택하면 각 해상도에 대한 샘플 양식의 미리 보기가 표시됩니다. 캔버스는 [아래](themes.md#using-canvas)에 자세히 설명되어 있습니다.
 
 * **사이드바***가 왼쪽에 나타납니다. 여기에는 다음 항목이 있습니다.
 
@@ -282,7 +285,9 @@ Cloud Service 인스턴스에서 만든 테마:
 
 >[!NOTE]
 >
->테마는 먼저 <!-- or interactive communication--> 양식을 사용하여 만든 다음 다른 <!-- or interactive communications-->에 적용됩니다. 테마 만들기에 사용된 중단점은 테마가 적용되는 양식 <!-- or interactive communication -->과(와) 다를 수 있습니다. CSS 미디어 쿼리는 테마가 적용되는 <!-- or interactive communication --> 형식이 아니라 테마 만들기에 사용된 <!-- or interactive communication --> 형식을 기반으로 합니다.
+>테마는 먼저 양식을 사용하여 만든 다음 다른 양식에 적용됩니다. 테마 만들기에 사용된 중단점은 테마가 적용되는 양식과 다를 수 있습니다. CSS 미디어 쿼리는 테마가 적용되는 양식이 아니라 테마 만들기에 사용된 양식을 기반으로 합니다.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### 개체 선택 시 사이드바의 스타일 속성 컨텍스트 변경 사항 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -350,7 +355,7 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ### 캔버스 사용 {#using-canvas}
 
-기본 제공 양식을 사용하거나 선택한 <!-- or interactive communication --> 양식을 사용하여 테마를 만듭니다. 캔버스에는 테마에 지정된 사용자 지정으로 테마를 만드는 데 사용되는 양식 또는 <!-- interactive communication -->의 미리 보기가 표시됩니다. 양식 위의 눈금자는 장치의 디스플레이 크기에 따라 레이아웃을 결정하는 데 사용됩니다.
+기본 제공 양식을 사용하거나 선택한 <!-- or interactive communication --> 양식을 사용하여 테마를 만듭니다. 캔버스는 양식의 미리 보기를 보여주거나 테마에 지정된 맞춤화로 테마를 만드는 데 사용됩니다. 양식 위의 눈금자는 장치의 디스플레이 크기에 따라 레이아웃을 결정하는 데 사용됩니다.
 
 캔버스 도구 모음에는 다음이 표시됩니다.
 
@@ -488,7 +493,7 @@ Cloud Service 인스턴스에서 만든 테마:
 1. 사이드바를 사용하여 선택한 표시 크기에 맞게 테마에서 <!-- or interactive communication --> 양식 구성 요소의 스타일을 맞춤화하세요.
 1. 사용자 지정이 저장되었는지 확인합니다.
 
-여러 장치에 대해 양식 <!-- or interactive communication --> 구성 요소의 스타일을 지정할 수 있습니다. 데스크톱 및 모바일 장치용 양식 <!-- and interactive communication --> 구성 요소는 완전히 다른 스타일을 가질 수 있습니다.
+여러 장치에 대해 양식 <!-- or interactive communication --> 구성 요소의 스타일을 지정할 수 있습니다. 데스크탑 및 모바일 장치용 양식 구성 요소는 완전히 다른 스타일을 가질 수 있습니다.
 
 ### 테마에서 Web Fonts 사용 {#using-web-fonts-in-a-theme}
 
@@ -528,7 +533,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 #### 테마 편집기에서 글꼴 선택 {#selecting-fonts-in-theme-editor}
 
-&#x200B;+ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
++ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
 
 ![테마 편집기에 나열된 새 글꼴](assets/theme-font.png)
 
@@ -568,14 +573,16 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 적응형 양식을 만들 때 사용할 테마를 정의할 수도 있습니다.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### 런타임 시 양식의 테마 변경 {#change-theme-of-a-form-at-runtime}
 
@@ -642,7 +649,8 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
 
 * 자산이 다른 테마에서 추가되고 다른 테마가 이동 또는 삭제되는 경우 현재 테마와 관련된 문제에 직면할 수 있습니다. 다른 테마에서 에셋을 찾아보거나 추가하지 않는 것이 좋습니다.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -654,7 +662,8 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     테마를 만들고, 테마의 복사본을 만든 다음 유사한 사용 사례에 대해 복사된 테마에 제공된 스타일을 수정할 수도 있습니다.
     참조[테마를 사용하여 특정 모양 만들기](#specific-af-appearance)
     
@@ -666,9 +675,11 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
     
     양식 &lt;!의 스타일 모드를 사용하여 구성 요소의 스타일을 지정할 수 있습니다.— 또는 대화형 통신 —> 다중 채널 편집기 를 사용할 수 있습니다. 스타일 모드를 사용하여 양식 구성 요소 스타일을 변경하면 테마에 지정된 스타일이 무시됩니다. 특정 양식의 특정 구성 요소에 대한 스타일을 변경하려면 [구성 요소의 인라인 스타일](inline-style-adaptive-forms.md)을 참조하십시오.
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **컨테이너 패널 레이아웃 너비 변경**
 

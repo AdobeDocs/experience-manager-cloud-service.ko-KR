@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 90%
@@ -49,7 +49,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
@@ -113,7 +113,7 @@ ht-degree: 90%
 워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
 
 * **실패 세부 정보**
-**실패 메시지**, **단계 및 &#x200B;** 실패 스택**&#x200B;을 표시하는 창을 엽니다.
+**실패 메시지**, **단계 및 **실패 스택**&#x200B;을 표시하는 창을 엽니다.
 
 * **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
 

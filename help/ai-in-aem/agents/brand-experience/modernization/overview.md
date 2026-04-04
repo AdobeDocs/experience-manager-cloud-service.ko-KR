@@ -2,9 +2,9 @@
 title: Experience 현대화 에이전트 개요
 description: Experience 현대화 에이전트가 AI의 도움을 받아 Edge Delivery Services에 새 웹 사이트를 온보딩하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Experience 현대화 에이전트가 AI의 도움을 받아 Edge Delivery Servic
 
 ## 소개 {#introduction}
 
-[Brand Experience Agent의 일부로 &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernation Agent는 웹 사이트 마이그레이션 및 기본 사이트 설정을 자동화하여 Edge Delivery Services에 대한 온보딩을 가속화합니다.
+[Brand Experience Agent의 일부로 ](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernation Agent는 웹 사이트 마이그레이션 및 기본 사이트 설정을 자동화하여 Edge Delivery Services에 대한 온보딩을 가속화합니다.
 
 초기 웹 사이트 온보딩을 위한 [사이트 생성 및 마이그레이션 기술](#creation-migration)과 사이트 생성 및 마이그레이션 워크플로를 지원하기 위한 [개발 기능 차단](#block-development)을 결합합니다. 또한 웹 기반 AI 지원 개발 환경으로 [경험 현대화 콘솔](#console)을 직접 사용할 수 있습니다. 사용자는 해당 콘솔을 통해 직접 에이전트를 작동할 수 있지만, 개발자는 어떤 선박에 대한 모든 권한을 유지합니다.
 

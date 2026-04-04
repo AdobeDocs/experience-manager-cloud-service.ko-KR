@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 73%
@@ -46,11 +46,13 @@ ht-degree: 73%
 * **휴지통**: 루트 **[!UICONTROL Assets]** 폴더에서 삭제된 자산을 나열합니다. 휴지통 폴더에서 자산을 선택하여 원래 위치로 복원하거나 영구적으로 삭제할 수 있습니다. 키워드를 지정하거나 자산 상태, 파일 유형, MIME 유형, 이미지 크기, 자산 생성, 수정 및 만료 일자와 같은 필터를 적용할 수 있을 뿐만 아니라 현재 사용자가 폐기한 자산을 기준으로 필터링할 수도 있습니다. 또한 사용자 정의 필터를 적용하여 휴지통 폴더 내에서 적절한 자산을 검색할 수도 있습니다. 표준 및 사용자 지정 필터를 사용하는 방법에 대한 자세한 내용은 [Assets 보기에서 에셋을 검색하는 방법](/help/assets/search-assets-view.md)을 참조하세요.
 * **설정**: 메타데이터 양식, 보고서, 분류 관리 등의 **설정**&#x200B;을 사용하여 Assets 보기의 다양한 옵션을 구성할 수 있습니다.
 
-<!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
+<!--
+ TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
 -->
 
-<!-- TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
+<!--
+ TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
 -->
 
 왼쪽 사이드바를 펼치거나 접고 사용 가능한 자산 보기 영역을 늘릴 수 있습니다.
@@ -86,7 +88,8 @@ ht-degree: 73%
 
 자산을 명시적으로 미리 보는 경우 [!DNL Assets view]는 해당 자산을 최근에 본 자산으로 표시합니다.
 
-<!-- TBD: Describe the options.
+<!--
+ TBD: Describe the options.
 
 Explicitly previewed assets are displayed as recently viewed assets. Give screenshot of this.
 Other use cases after previewing.
@@ -98,7 +101,7 @@ Other use cases after previewing.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 >[!MORELIKETHIS]
 >

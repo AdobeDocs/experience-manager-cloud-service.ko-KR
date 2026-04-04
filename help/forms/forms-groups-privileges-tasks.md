@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 22%
@@ -16,10 +16,10 @@ ht-degree: 22%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
 [!DNL AEM Forms] as a Cloud Service을 설정하면 아래 표에 나열된 그룹(예: [!DNL forms-users] 및 Forms-Power-User)을 자동으로 할당할 수 있습니다.
 
@@ -39,7 +39,8 @@ ht-degree: 22%
      <li>테마 만들기</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
@@ -58,7 +59,8 @@ ht-degree: 22%
      <li>Review submissions</li> 
      <li>Approve or reject submissions</li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr>
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
@@ -73,28 +75,35 @@ ht-degree: 22%
      <li>양식 데이터 모델 만들기 및 수정</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
-  </tr> --> 
-  <!-- <tr>
+  </tr>
+  -->
+  <!--
+   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
-    <ul> -->
+    <ul>
+    -->
     <!-- <li>Create an inbox application</li>  -->
-    <!-- <li>Create a workflow model</li> 
+    <!--
+     <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> -->
+     <li>Use AEM inbox applications<br />
+     -->
      <!-- 
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>  -->
+     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     -->
     </ul> </td> 
   </tr>
   <tr>

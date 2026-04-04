@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 
 1. 요구 사항에 따라 정보를 입력한 다음, **등록**&#x200B;을 클릭합니다.
 1. 새로 만든 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. 아래의 앱에 대한 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
 
    >[!NOTE]

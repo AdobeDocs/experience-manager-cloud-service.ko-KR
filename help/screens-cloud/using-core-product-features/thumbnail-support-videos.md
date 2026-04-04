@@ -1,11 +1,11 @@
 ---
-title: Screensas a Cloud Service 에서 비디오에 대한 썸네일 지원
-description: 이 페이지에서는 Screensas a Cloud Service 에서 비디오에 대한 썸네일 지원을 추가하는 방법에 대해 설명합니다.
+title: Screens as a Cloud Service의 비디오에 대한 썸네일 지원
+description: 이 페이지에서는 Screens as a Cloud Service에서 비디오에 대한 썸네일 지원을 추가하는 방법을 설명합니다.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
@@ -32,15 +32,15 @@ ht-degree: 1%
 ## 비디오에서 썸네일 사용 {#using-thumbnails}
 
 >[!IMPORTANT]
->**전제 조건**
->비디오에 대한 썸네일을 사용하는 방법을 배우기 전에 Screens as a Cloud Service 프로젝트에서 채널에 대한 렌디션을 만드는 방법을 알아보십시오. [Screensas a Cloud Service 에서 비디오 렌디션 만들기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)를 참조하십시오.
+>**사전 요구 사항**
+>비디오에 대한 썸네일을 사용하는 방법을 배우기 전에 Screens as a Cloud Service 프로젝트에서 채널에 대한 비디오 렌디션을 만드는 방법을 알아보십시오. [Screens as a Cloud Service에서 비디오 표현물 만들기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)를 참조하십시오.
 
 비디오에서 썸네일을 사용하려면 아래 단계를 따르십시오.
 
 1. 기존 Screens 채널로 이동하거나 채널을 만듭니다.
 
    >[!NOTE]
-   >채널을 만들고 채널에 콘텐츠를 추가하는 방법은 [Screensas a Cloud Service 에서 채널 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=ko)를 참조하십시오.
+   >채널을 만들고 채널에 콘텐츠를 추가하는 방법은 [Screens as a Cloud Service에서 채널 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)를 참조하십시오.
 
 1. 채널을 선택합니다. 작업 표시줄에서 **편집**&#x200B;을 클릭하여 편집기를 엽니다.
 

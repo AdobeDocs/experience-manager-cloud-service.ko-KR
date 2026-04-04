@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 2%
@@ -39,9 +39,11 @@ JavaScript 파일, CSS 스타일 시트 및 이미지와 같은 정적 자산에
 
 응답이 CDN 캐시에서 제공되었는지 또는 원본 AEM 환경으로 전달되었는지 여부에 관계없이 컨텐츠 요청이 측정됩니다.
 
-<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+<!--
+ REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement.
+-->
 
 ### Cloud Service 콘텐츠 요청 분산 {#content-requests-variances}
 
@@ -49,7 +51,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 | 차이가 나는 이유 | 설명 |
 |---|---|
-| 최종 사용자 동의 | 클라이언트측 계기에 의존하는 Analytics 도구는 종종 트리거되는 사용자 동의에 따라 다릅니다. 이 워크플로우는 추적되지 않는 트래픽의 대부분을 나타낼 수 있습니다. Adobe 컨텐츠 요청을 자체적으로 측정하려는 고객의 경우 Analytics 도구를 사용하여 서버측 또는 CDN 보고서에서 데이터를 수집하는 것이 좋습니다. |
+| 최종 사용자 동의 | 클라이언트측 계기에 의존하는 Analytics 도구는 종종 트리거되는 사용자 동의에 따라 다릅니다. 이 워크플로우는 추적되지 않는 트래픽의 대부분을 나타낼 수 있습니다. 컨텐츠 요청을 자체적으로 측정하려는 고객의 경우 Analytics 도구를 사용하여 서버측 또는 CDN 보고서에서 데이터를 수집하는 것이 좋습니다. |
 | 태그 지정 | Adobe Experience Manager 콘텐츠 요청으로 추적되는 모든 페이지 또는 API 호출에 Analytics 추적 태그가 지정되지 않을 수 있습니다. |
 | 태그 관리 규칙 | 태그 관리 규칙 설정으로 인해 페이지에 다양한 데이터 수집 구성이 발생할 수 있으며, 이로 인해 콘텐츠 요청 추적과 일부 불일치가 발생할 수 있습니다. |
 | 봇 | AEM에서 사전 식별 및 제거하지 않은 알 수 없는 봇으로 인해 추적 불일치가 발생할 수 있습니다. |

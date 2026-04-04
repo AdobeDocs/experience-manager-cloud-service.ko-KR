@@ -8,8 +8,8 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ AEM Sites 번역 여정의 이전 문서인 [번역 규칙 구성](translation-r
 1. 콘텐츠의 언어 루트를 선택하여 AEM이 콘텐츠 경로를 기반으로 번역 프로젝트를 자동으로 생성하도록 합니다.
 1. 빈 프로젝트를 만들어 번역 프로젝트에 추가할 콘텐츠를 수동으로 선택합니다.
 
-두 방법 모두 유용한 접근 방식이며 일반적으로 번역을 수행하는 담당자에 따라 달라집니다.
+두 방법 모두 유용한 접근 방식이며 일반적으로 번역을 수행하는 페르소나에 따라 달라집니다.
 
 * 번역 프로젝트 관리자(TPM)는 번역 프로젝트에 대한 콘텐츠를 수동으로 선택할 수 있는 유연성이 필요한 경우가 많습니다.
 * 또한 콘텐츠 소유자가 번역을 담당하는 경우에도 AEM이 선택한 콘텐츠 경로를 기반으로 프로젝트를 자동으로 생성하도록 하는 것이 더 간편한 방법입니다.
