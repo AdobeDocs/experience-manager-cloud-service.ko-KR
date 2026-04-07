@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -32,7 +32,7 @@ ht-degree: 90%
 
 모든 파일이 대기열에 추가되면 **[!UICONTROL 업로드]**&#x200B;를 클릭합니다.
 
-![파일 및 폴더 업로드](assets/upload-browse-files-folders.png)
+![파일 및 폴더 업로드](assets/upload-files.png)
 
 *그림: 선택한 에셋을 업로드하기 전에 대기열에서 에셋을 추가하거나 제거할 수 있습니다.*
 
@@ -48,13 +48,13 @@ ht-degree: 90%
 
 업로드 진행 상황 또는 상태에 따라 에셋의 하위 집합을 보려면 **[!UICONTROL 업로드 진행 상황]** 사이드바에서 필터를 사용하십시오. 다양한 필터에는 모든 에셋, 완료된 업로드, 진행 중인 업로드, 업로드 대기 중인 에셋, 일시 중지된 업로드, 중복 에셋 및 업로드에 실패한 에셋이 표시됩니다.
 
-![업로드 상태에 따라 업로드 진행 상황 필터링](assets/filter-upload-progress.png)
+![업로드 상태에 따라 업로드 진행 상황 필터링](assets/filter-progress.png)
 
 *그림: 업로드 상태 또는 업로드 진행 상황에 따라 업로드를 시도한 에셋을 필터링합니다.*
 
 에셋이 업로드된 직후 [!DNL Assets view]는 에셋을 처리하여 썸네일을 생성하고 메타데이터를 처리합니다. 대부분의 에셋은 처리에 시간이 소요됩니다. 썸네일이 보이지 않고 플레이스홀더 썸네일에 처리 중 메시지가 표시되는 경우 몇 분 후에 폴더를 다시 확인하십시오. 처리 중에 [!DNL Assets view]는 렌디션을 생성하고 스마트 태그를 추가하며 검색을 위해 에셋 세부 정보를 조정합니다.
 
-![에셋은 업로드 시 처리되며 타일은 처리 과정을 표시합니다.](assets/upload-processing.png)
+![에셋은 업로드 시 처리되며 타일은 처리 과정을 표시합니다.](assets/upload-process.png)
 
 *그림: 업로드된 에셋은 타일에 표시 처리됩니다.*
 
@@ -70,17 +70,17 @@ ht-degree: 90%
 
 지원되는 에셋의 업로드가 어떤 이유로 실패한 경우 [!UICONTROL 업로드 진행률] 창에서 **[!UICONTROL 다시 시도]**&#x200B;를 클릭하십시오.
 
-![실패한 업로드 다시 시도](assets/upload-retry.png)
+![실패한 업로드 다시 시도](assets/upload-failed.png)
 
 *그림: 지원되는 파일이 어떤 이유로 업로드되지 않으면 다시 시도하십시오.*
 
 중복 에셋을 업로드하려고 하면 업로드를 명시적으로 확인할 때까지 에셋이 업로드되지 않습니다. 처음에는 중복 에셋이 업로드 실패로 표시됩니다. 이 문제를 해결하려면 버전을 생성하거나, 기존 에셋을 삭제 및 교체하거나, 에셋 이름을 변경하여 복제본을 생성하면 됩니다. 이러한 실패는 한 번에 에셋 하나씩 해결하거나 실패한 모든 중복 에셋에 대해 일괄적으로 해결할 수 있습니다.
 
-![중복 에셋을 한 번에 하나씩 관리](assets/uploads-manage-duplicates.png)
+![중복 에셋을 한 번에 하나씩 관리](assets/duplicate-new.png)
 
 *그림: 기본 업로드에 실패한 중복 에셋의 경우 한 번에 하나씩 문제를 해결합니다.*
 
-![실패한 모든 업로드 일괄 관리](assets/upload-progress-manage-failed-uploads.png)
+![실패한 모든 업로드 일괄 관리](assets/manage-duplicate.png)
 
 *그림: 기본 업로드에 실패한 중복 에셋의 경우 모든 에셋에 대한 문제를 한 번에 해결합니다.*
 
@@ -98,7 +98,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * 에셋 또는 폴더의 썸네일에서 사용할 수 있는 옵션을 사용합니다.
 
-  ![에셋 관리를 위한 에셋 썸네일 옵션](assets/options-on-thumbnail.png)
+  ![에셋 관리를 위한 에셋 썸네일 옵션](assets/delete-new.png)
 
   *그림: 파일 및 폴더에 대한 작업은 에셋 또는 폴더 타일에서 사용할 수 있습니다.*
 
@@ -106,10 +106,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 에셋을 업로드하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ko)
+* [Assets 보기에서 에셋을 업로드하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
