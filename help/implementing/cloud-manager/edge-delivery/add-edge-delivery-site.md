@@ -4,10 +4,10 @@ description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 87%
    >
    >기존 사이트를 등록하는 대신 범용 편집기로 AEM 작성을 사용하는 새 Edge Delivery 사이트를 만들려면 [한 번의 클릭으로 첫 번째 Edge Delivery 사이트 만들기](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)를 참조하십시오. 게재에 Edge Delivery을 사용하는 프로그램의 경우 게시 계층이 필요하지 않을 수 있습니다. [유연한 게시 계층(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)을 참조하십시오.
 
-1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
 1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
@@ -39,7 +39,7 @@ ht-degree: 87%
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
-**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**&#x200B;를 클릭합니다.
+**서비스** 제목 아래 ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
 페이지의 오른쪽 상단에서 ![링크 아이콘 또는 추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Edge Delivery 사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery 사이트 버튼에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add2.png)

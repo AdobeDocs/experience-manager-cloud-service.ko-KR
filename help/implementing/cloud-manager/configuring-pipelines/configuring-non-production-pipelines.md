@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
+source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -30,7 +30,7 @@ ht-degree: 21%
 
 **새 비프로덕션 파이프라인을 추가하려면:**
 
-1. [experiece.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
+1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
 1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 1. 원하는 조직을 선택합니다.
@@ -270,7 +270,7 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.
