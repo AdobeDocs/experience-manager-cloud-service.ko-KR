@@ -27,5 +27,5 @@ ht-degree: 48%
 ## 새로운 기능 {#what-is-new}
 
 * [리치 텍스트 편집기(RTE) 도구 모음의 이미지 추가 옵션](/help/implementing/universal-editor/configure-rte.md#image)이(가) 이제 [AEM as a Cloud Service에서 콘텐츠를 작성 및 유지하는 프로젝트에 대해 지원됩니다.](https://www.aem.live/docs/aem-authoring)
-* 편집기에서 [홈 화면으로 다시 이동하면 ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)속성 패널[을 축소할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+* 편집기에서 [홈 화면으로 다시 이동하면 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)속성 패널[을 축소할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
    * 이 기능을 사용하려면 Adobe 고객 지원 센터에 문의하십시오.
