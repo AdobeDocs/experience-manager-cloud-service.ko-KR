@@ -126,9 +126,9 @@ ht-degree: 9%
 | 패턴 이름 | 범주 | 유형 | 설명 | 영향 | 자동 수정하시겠습니까? |
 | --- | --- | --- | --- | --- | --- |
 | 직접 사용자가 추가된 사용자 정의 AEM 그룹 | 보안 | 콘텐츠 분석 | 사용자가 IMS 그룹을 구성원으로 추가하는 대신 AEM 그룹에 직접 추가되었습니다. | 권한 관리 및 보안 거버넌스가 복잡해질 수 있습니다. [IMS 지원](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/ims-support) | 아니요 |
-| 페이지에 JCR 콘텐츠 노드 누락 | 저장소 구조 | 콘텐츠 분석 | 페이지에 `jcr:content` 노드가 없습니다. | Experience Manager as a Cloud Service의 기능 제한 사항. [패턴 감지 - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 아니요 |
-| 페이지에 Sling 리소스 유형 누락 | 저장소 구조 | 콘텐츠 분석 | 페이지에 `sling:resourceType`이(가) 없습니다. | Experience Manager as a Cloud Service의 기능 제한 사항. [패턴 감지 - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 아니요 |
-| 노드 수가 너무 많은 페이지 | 성능 | 콘텐츠 분석 | 페이지에는 구조에 대량의 노드가 포함되어 있습니다. | 페이지 로드 시간이 느리고 사용자 경험이 부족합니다. [패턴 감지 - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 아니요 |
+| 페이지에 JCR 콘텐츠 노드 누락 | 저장소 구조 | 콘텐츠 분석 | 페이지에 `jcr:content` 노드가 없습니다. | Experience Manager as a Cloud Service의 기능 제한 사항. [패턴 감지 - ACV](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/acv) | 아니요 |
+| 페이지에 Sling 리소스 유형 누락 | 저장소 구조 | 콘텐츠 분석 | 페이지에 `sling:resourceType`이(가) 없습니다. | Experience Manager as a Cloud Service의 기능 제한 사항. [패턴 감지 - ACV](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/acv) | 아니요 |
+| 노드 수가 너무 많은 페이지 | 성능 | 콘텐츠 분석 | 페이지에는 구조에 대량의 노드가 포함되어 있습니다. | 페이지 로드 시간이 느리고 사용자 경험이 부족합니다. [패턴 감지 - PCX](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 아니요 |
 | 과도하게 실행 중인 워크플로 인스턴스 | 성능 | 콘텐츠 분석 | 실행 중인 워크플로 인스턴스가 너무 많습니다. | 전반적인 시스템 성능 저하. [유지 관리 작업](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) | 아니요 |
 | 삭제되지 않은 완료된 워크플로 인스턴스 | 성능 | 콘텐츠 분석 | 이전에 완료된 워크플로 인스턴스가 삭제되지 않습니다. | 시스템 효율성 감소 및 스토리지 비용 증가 [유지 관리 작업](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) | 아니요 |
 | 콘텐츠 조각 사용 통계 | 통계 | 콘텐츠 분석 | 사용 중인 콘텐츠 조각의 수를 추적합니다. | N/A | N/A |
