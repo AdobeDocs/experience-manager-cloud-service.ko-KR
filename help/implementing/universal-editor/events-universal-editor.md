@@ -4,10 +4,10 @@ description: 원격 앱에서 콘텐츠 또는 UI 변경에 반응하는 데 사
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -229,6 +229,39 @@ ht-degree: 94%
 {
     details: {}
 }
+```
+
+### aue&amp;콜론;탐색 {#navigate}
+
+유니버설 편집기 CORS 라이브러리(`@aem-sites/universal-editor-cors`)가 탐색을 유니버설 편집기 셸로 중계하기 전에 취소 가능한 `aue:navigate` 이벤트를 전달합니다.
+
+페이로드는 탐색 대상의 URL입니다.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+이 이벤트를 통해 페이지 스크립트는 다음 작업을 수행할 수 있습니다.
+
+* **을(를) 변경하여 탐색 URL을**&#x200B;수정`.html`합니다(예: `event.detail.href` 확장 추가).
+* **을(를) 통해 탐색을 완전히**&#x200B;취소`event.preventDefault()`합니다.
+
+사용 예:
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## 대체 이벤트 리스너 {#fallback-listeners}
