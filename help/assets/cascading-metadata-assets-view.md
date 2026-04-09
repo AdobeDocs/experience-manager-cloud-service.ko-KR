@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 5%
+source-wordcount: '1171'
+ht-degree: 4%
 
 ---
 
@@ -26,10 +26,6 @@ ht-degree: 5%
 * 다른 필드에 지정된 값을 기준으로 필드를 필수 항목으로 지정합니다.
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 표시되는 옵션을 변경합니다.
 * 다른 필드에 지정된 값을 기반으로 특정 필드의 기본 메타데이터 값을 설정합니다.
-
->[!IMPORTANT]
->
->계단식 메타데이터 기능은 제한된 가용성 기능으로 사용할 수 있습니다. 기능을 배포에 사용할 수 있도록 [Adobe 고객 지원 사례를 만들고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)할 수 있습니다.
 
 ## [!DNL Experience Manager]에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
 
@@ -148,10 +144,10 @@ ht-degree: 5%
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ko)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
