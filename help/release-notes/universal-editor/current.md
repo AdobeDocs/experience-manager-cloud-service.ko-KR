@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2026.04.02 릴리스 정보
-description: 다음은 범용 편집기 2026.04.02 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2026.04.09 릴리스 정보
+description: 다음은 범용 편집기 2026.04.09 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 60%
+source-wordcount: '138'
+ht-degree: 48%
 
 ---
 
 
-# 범용 편집기 2026.04.02 릴리스 정보 {#release-notes}
+# 범용 편집기 2026.04.09 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2026년 4월 2일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2026년 4월 9일 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -26,8 +26,6 @@ ht-degree: 60%
 
 ## 새로운 기능 {#what-is-new}
 
-* [구성 가능한 옵션](/help/implementing/universal-editor/configure-rte.md#special-characters)을(를) [특수 문자 추가](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)하여 RTE(리치 텍스트 편집기) 도구 모음에 추가했습니다.
-
-## 기타 개선 사항 {#other-improvements}
-
-* 태그 필드가 더 이상 OpenAPI 어댑터에 의해 다중 필드로 잘못 반환되지 않습니다.
+* [리치 텍스트 편집기(RTE) 도구 모음의 이미지 추가 옵션](/help/implementing/universal-editor/configure-rte.md#image)이(가) 이제 [AEM as a Cloud Service에서 콘텐츠를 작성 및 유지하는 프로젝트에 대해 지원됩니다.](https://www.aem.live/docs/aem-authoring)
+* 편집기에서 [홈 화면으로 다시 이동하면 ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)속성 패널[을 축소할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+   * 이 기능을 사용하려면 Adobe 고객 지원 센터에 문의하십시오.

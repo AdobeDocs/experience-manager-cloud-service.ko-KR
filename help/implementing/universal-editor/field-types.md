@@ -4,10 +4,10 @@ description: 예제와 함께 범용 편집기가 속성 패널에서 편집할 
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -623,7 +623,13 @@ AEM 콘텐츠 구성 요소 유형은 AEM 콘텐츠 선택기를 활성화하여
 
 #### 숫자 {#number}
 
-숫자 구성 요소 유형을 사용하면 숫자를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+숫자 구성 요소 유형을 사용하면 숫자를 입력할 수 있습니다. 추가 구성을 제공합니다.
+
+| 구성 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `valueFormat` | `string` | 저장할 숫자 형식은 `long`(기본값) 또는 `double`일 수 있습니다. | 아니요 |
+
+또한 추가적인 유효성 검사 유형을 제공합니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
