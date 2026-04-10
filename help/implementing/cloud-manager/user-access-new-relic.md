@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 24%
@@ -86,7 +86,7 @@ AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정의 
    * 추가할 사용자의 이름과 성을 입력합니다
    * 연결된 전자 메일 주소 입력
    * ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **추가**&#x200B;를 클릭합니다. 추가할 각 사용자에 대해 이 단계를 반복합니다.
-   * 사용자를 제거하려면 ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)을 클릭하세요.
+   * 사용자를 제거하려면 ![닫기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)을 클릭하세요.
 
    ![사용자 추가](assets/newrelic-add-users.png)
 
