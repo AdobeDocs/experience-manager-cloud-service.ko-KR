@@ -49,7 +49,7 @@ Forms as a Cloud Service은 여러 구성 요소로 구성됩니다.
 
 ### CDN(Content Delivery Network)
 
-모든 AEM Forms as a Cloud Service 프로그램은 [기본 제공 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)에 액세스할 수 있습니다. Forms as a Cloud Services 라이선스에 포함되어 있습니다.
+모든 AEM Forms as a Cloud Service 프로그램은 [기본 제공 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ko)에 액세스할 수 있습니다. Forms as a Cloud Services 라이선스에 포함되어 있습니다.
 
 ### 작성자
 
@@ -168,7 +168,7 @@ A Document of Record is a PDF version of a form. It provides an ability to keep 
 <!--
  ## Cloud Manager{#cloud-manager}
 
-Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
+Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ko). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
 
 * Creating and managing programs
 * Creating and managing the AEM environments within the programs

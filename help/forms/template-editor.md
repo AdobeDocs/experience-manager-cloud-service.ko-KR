@@ -37,7 +37,7 @@ ht-degree: 2%
 
 도구 메뉴에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**&#x200B;으로 이동하여 템플릿 편집기에 액세스할 수 있습니다. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다.
 
-Experience Manager은 템플릿을 구성할 수 있는 글로벌 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)를 참조하십시오.
+Experience Manager은 템플릿을 구성할 수 있는 글로벌 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=ko#editing-templates-template-authors)를 참조하십시오.
 
 ### 템플릿 만들기 {#create-template}
 
@@ -228,7 +228,7 @@ Perform the following steps to show and hide templates:
 
 * 템플릿 편집기에서 양식 속성을 수정할 때는 BindReference 속성을 사용하지 마십시오.
 * 중단점을 추가하려면 적응형 양식 템플릿을 작성할 때 중단점을 만듭니다.
-중단점에 대한 자세한 내용은 [응답형 레이아웃](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)을 참조하세요.
+중단점에 대한 자세한 내용은 [응답형 레이아웃](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=ko#authoring)을 참조하세요.
 
 
 ## 추가 참조 {#see-also}

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 첫 번째 패널이 유효한 경우 단추 클릭 시 포커스를 다른 패널로 설정
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)을 통해 액세스할 수 있습니다. </span>
 
 규칙 편집기를 사용하면 가로 탭, 세로 탭, 아코디언 또는 단추 클릭 시 마법사와 같은 패널 레이아웃의 유효성을 검사하고 포커스를 다른 패널의 양식 객체로 설정할 수 있습니다. 이 기능을 사용하여 양식 탐색 및 사용자 경험을 개선할 수 있습니다.
 

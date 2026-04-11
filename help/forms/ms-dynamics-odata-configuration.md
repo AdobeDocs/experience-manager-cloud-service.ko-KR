@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](assets/data-integeration.png)
