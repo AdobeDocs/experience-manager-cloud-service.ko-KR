@@ -4,9 +4,9 @@ description: Experience 현대화 에이전트가 AI의 도움을 받아 Edge De
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Experience 현대화 에이전트가 AI의 도움을 받아 Edge Delivery Servic
 
 ## 소개 {#introduction}
 
-[Brand Experience Agent의 일부로 &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernation Agent는 웹 사이트 마이그레이션 및 기본 사이트 설정을 자동화하여 Edge Delivery Services에 대한 온보딩을 가속화합니다.
+[Brand Experience Agent의 일부로 ](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernation Agent는 웹 사이트 마이그레이션 및 기본 사이트 설정을 자동화하여 Edge Delivery Services에 대한 온보딩을 가속화합니다.
 
 초기 웹 사이트 온보딩을 위한 [사이트 생성 및 마이그레이션 기술](#creation-migration)과 사이트 생성 및 마이그레이션 워크플로를 지원하기 위한 [개발 기능 차단](#block-development)을 결합합니다. 또한 웹 기반 AI 지원 개발 환경으로 [경험 현대화 콘솔](#console)을 직접 사용할 수 있습니다. 사용자는 해당 콘솔을 통해 직접 에이전트를 작동할 수 있지만, 개발자는 어떤 선박에 대한 모든 권한을 유지합니다.
 
@@ -68,6 +68,10 @@ Experience Modernation Console을 시작합니다!
 
 * 문서 작성을 타깃팅하여 사이트를 현대화하는 경우 [여기에서 시작하십시오.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * AEM 작성을 타깃팅하여 사이트를 현대화하는 경우 [여기에서 시작하십시오.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+
+## 프로젝트 설명서 스킬 {#project-documentation}
+
+프로젝트 진행자의 시간이 많이 소요되는 특성을 인식하므로 작성 및 개발 작업이 완료되면 [프로젝트 설명서 기술](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)이 포괄적인 설명서를 자동으로 생성할 수 있습니다.
 
 ## AOE(Agentic Outcome Engineer) 게재 {#aoe-delivery}
 

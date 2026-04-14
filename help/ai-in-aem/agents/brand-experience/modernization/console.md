@@ -4,9 +4,9 @@ description: 경험 현대화 콘솔 인터페이스 및 기능에 대한 참조
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,12 +157,18 @@ Experience Modernation Console은 [`aemcoder.adobe.io`에서 웹 인터페이스
 
 ## 설정 보기 {#settings-view}
 
-설정 보기를 사용하면 콘솔의 기본 설정을 관리할 수 있습니다.
+설정 보기를 통해 콘솔의 기본 설정을 관리할 수 있으며 다음 섹션으로 분류됩니다.
 
 ![설정 보기](assets/settings-view.png)
 
+섹션의 값을 변경하는 경우 **저장**&#x200B;을 클릭하여 해당 변경 사항을 개별 섹션에 저장합니다.
+
 * **프로젝트**&#x200B;를 사용하면 라이브러리 URL 사용자 지정과 같은 프로젝트 설정을 보고 편집할 수 있습니다.
-* **지원**&#x200B;을 통해 AEM 지원 팀에 도움을 요청할 수 있습니다.
+   * **라이브러리 URL** - 이 URL은 사용 가능한 블록, 해당 변형 및 예제 콘텐츠를 정의하는 library.json 파일을 가리킵니다.
+   * **사이트 기본 URL** - 마이그레이션 중인 웹 사이트의 원본 URL
+* **에이전트 권한** - 에이전트가 구성 옵션에 액세스하도록 허용
+   * **LLM에서 나를 대신하여 admin.hlx.page에 액세스하도록 허용** - 활성화되면 AI 도우미가 IMS 자격 증명을 사용하여 Adobe Experience Manager에서 사이트 구성 및 메타데이터를 가져올 수 있습니다.
+   * **사용자 지정 IMS 토큰** - 기본 세션 토큰 대신 사용할 사용자 지정 IMS 토큰을 제공할 수 있습니다.
 * **자격 증명**&#x200B;을(를) 사용하면 [콘솔에서 프로젝트의 디자인 블록에 액세스할 수 있도록 Figma에 대한 개인 액세스 토큰을 지정할 수 있습니다.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * 토큰에는 다음과 같은 읽기 전용 범위가 필요합니다.
       * `file_content:read`
@@ -173,4 +179,7 @@ Experience Modernation Console은 [`aemcoder.adobe.io`에서 웹 인터페이스
       * `file_dev_resources:read`
       * `projects:read`
    * 개인 액세스 토큰 설정에 대한 자세한 내용은 [Figma 설명서를 참조하십시오](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens).
-* **작업 영역을 다시 설정**&#x200B;하면 콘솔이 시작 상태로 되돌아가며 푸시되지 않거나 업로드되지 않은 모든 변경 내용이 손실됩니다.
+* **지원**&#x200B;은(는) 지원 요청을 할 때 Adobe 지원 팀과 공유한 정보를 요약합니다.
+   * **지원 요청** - 콘솔을 종료하지 않고 Adobe의 지원 요청을 시작하려면 클릭하세요.
+* **위험 영역**&#x200B;에 작업 영역을 되돌릴 수 있는 설정이 있습니다.
+   * **작업 영역 재설정** - 작업 영역을 초기 상태로 재설정하려면 클릭하세요. 이 작업은 취소할 수 없습니다.
