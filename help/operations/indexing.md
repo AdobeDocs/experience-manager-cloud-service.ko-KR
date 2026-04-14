@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 콘텐츠 검색 및 색인화에 대해 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 54168b195bd234b0ca7932ca52c11056558dc53d
 workflow-type: tm+mt
-source-wordcount: '2906'
-ht-degree: 16%
+source-wordcount: '3321'
+ht-degree: 14%
 
 ---
 
@@ -20,14 +20,14 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 다음은 AEM 6.5 및 이전 버전과 비교한 주요 변경 사항 목록입니다.
 
 1. 사용자는 색인화를 디버그, 구성 또는 유지하기 위해 단일 AEM 인스턴스의 색인 관리자에 액세스할 권한이 더 이상 없습니다. 로컬 개발 및 온프레미스 배포에 대해서만 사용됩니다.
-1. 사용자는 단일 AEM 인스턴스의 색인을 변경하지 못하거나 일관성 검사 또는 색인 재지정에 대해 더 이상 걱정하지 않아도 됩니다.
-1. 일반적으로 프로덕션 진행 전에 색인 변경을 시작하여 Cloud Manager CI/CD 파이프라인의 품질 게이트웨이를 피하지 않고 프로덕션의 비즈니스 KPI에 영향을 주지 않습니다.
+1. 사용자는 단일 AEM 인스턴스의 색인을 변경하지 않아도 되고, 일관성 검사 또는 색인 재지정에 대해 더 이상 걱정하지 않아도 됩니다.
+1. 일반적으로 프로덕션 진행 전에 색인 변경을 초기화하여 Cloud Manager CI/CD 파이프라인의 품질 게이트웨이를 피하지 않도록 하고 프로덕션의 비즈니스 KPI에 영향을 주지 않습니다.
 1. 런타임 시 고객이 프로덕션의 검색 성능 등 모든 관련 지표를 사용하여 검색 및 색인화의 주제에 대한 거시적인 보기를 제공할 수 있습니다.
 1. 고객은 필요에 따라 경고를 설정할 수 있습니다.
 1. SRE는 시스템 상태를 연중무휴 모니터링하고 가능한 한 빨리 조치를 취합니다.
 1. 색인 구성은 배포를 통해 변경됩니다. 색인 정의 변경은 다른 콘텐츠 변경과 같은 방식으로 구성됩니다.
 1. [순환 배포 모델](#index-management-using-rolling-deployments)이(가) 도입되면서 AEM as a Cloud Service의 높은 수준에서 두 세트의 색인이 존재합니다. 한 세트는 이전 버전이고 다른 한 세트는 새 버전입니다.
-1. 고객은 Cloud Manager 빌드 페이지에서 인덱싱 작업이 완료되었는지 여부를 확인할 수 있으며 새 버전이 트래픽을 가져올 수 있게 되면 알림을 받습니다.
+1. 고객은 Cloud Manager 빌드 페이지에서 색인화 작업이 완료되었는지 여부를 확인하고 새 버전이 트래픽을 가져올 준비가 되면 알림을 받을 수 있습니다.
 
 제한 사항:
 
@@ -40,7 +40,6 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 >
 >고급 검색 및 인덱싱 기능에 대한 자세한 설명을 포함하여 Oak 인덱싱 및 쿼리에 대한 자세한 내용은 [Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/query.html)를 참조하십시오.
 
-
 ## 사용 방법 {#how-to-use}
 
 색인 정의는 다음과 같이 세 가지 주요 사용 사례로 분류할 수 있습니다.
@@ -50,6 +49,202 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 3. 더 이상 필요하지 않은 인덱스 정의를 **제거**&#x200B;합니다.
 
 위의 1번과 2번은 각각 Cloud Manager 릴리스 일정에서 사용자 지정 코드 기반의 일부로 색인 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service에 배포](/help/implementing/deploying/overview.md) 설명서를 참조하십시오.
+
+인덱스 구성을 변경해야 하는 경우 구성이 [프로젝트 구성](#project-configuration) 섹션에 제공된 지침을 준수하는지 확인하십시오. 그에 따라 필요한 적응을 수행합니다.
+
+## 프로젝트 구성
+
+이를 프로젝트에 통합하는 단계는 다음과 같습니다.
+
+1. Jackrabbit `1.3.2`의 버전 >= `filevault-package-maven-plugin`을(를) 사용하는 것이 좋습니다. 필요한 경우 최상위 `pom.xml`에서 버전을 업데이트하십시오.
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
+
+2. 최상위 `pom.xml`에 다음 내용을 추가하십시오.
+
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
+
+   다음은 위에서 설명한 구성이 포함된 프로젝트의 최상위 `pom.xml` 파일 샘플입니다.
+
+   파일 이름: `pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
+
+3. `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`에서는 `allowIndexDefinitions`에서 `noIntermediateSaves` 및 `filevault-package-maven-plugin` 옵션을 활성화해야 합니다. `allowIndexDefinitions`을(를) 사용하면 사용자 지정 인덱스 정의를 사용할 수 있지만, `noIntermediateSaves`을(를) 사용하면 구성이 올바르게 추가됩니다.
+
+   파일 이름: `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
+
+4. `/oak:index`에 `ui.apps.structure/pom.xml`에 대한 필터 추가:
+
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
+
+>[!TIP]
+>
+>AEM as a Cloud Service의 필수 패키지 구조에 대한 자세한 내용은 [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)를 참조하십시오.
+
+## Diff Index를 사용하여 색인 관리 간소화
+
+대부분의 AEM 색인은 간소화된 색인 관리를 사용하여 구성할 수 있습니다.
+이렇게 하면 기본 제공(OOTB) 인덱스를 맞춤화하고 하나의 JSON 파일을 사용하여 사용자 지정 인덱스를 정의하는 간단한 방법을 제공합니다.
+
+>[!TIP]
+>
+>AEM 인덱스를 구성하는 데 도움이 되는 온라인 도구가 있습니다. [Oak 인덱싱 도구](https://oak-indexing.github.io/oakTools/index.html). 사용자 지정 색인을 새로운 형식으로 변환하는 데 도움이 되는 단계별 안내서와 추가 도구를 갖춘 [간소화된 색인 관리에 대한 섹션](https://oak-indexing.github.io/oakTools/simplified.html)이 있습니다.
+
+제한 사항: 현재 `/apps`, `/libs`을(를) 포함하는 인덱스에 대해 간소화된 인덱스 관리를 사용할 수 없습니다.
+`includedPaths`과(와) 같은 `/content` 속성이 있는 모든 인덱스에 사용할 수 있습니다.
+`includedPaths` 속성이 없거나 `includedPaths`에 `/apps` 또는 `/libs`이(가) 포함된 인덱스의 경우,
+쿼리를 변경하거나 아래의 기존 인덱스 구성 모드를 사용하는 것이 좋습니다.
+
+간소화된 색인 관리를 통해 기존 OOTB(기본 제공) 색인을 사용자 정의하고 완전히 맞춤화된 색인을 추가할 수 있습니다.
+간소화된 색인 관리를 사용하면 정의를 복사하거나 버전을 명시적으로 정의할 필요가 없습니다.
+인덱스 정의 사용자 지정은 최신 기본 제공 인덱스와 자동으로 병합됩니다.
+필요한 경우 새 색인 버전이 만들어집니다.
+
+대부분의 인덱스의 경우 `diff.index` 패키지를 사용하여 사용자 지정 인덱스 및 기존 인덱스에 대한 사용자 지정을 만들 수 있습니다.
+이러한 색인을 구성하려면 다음 단계별 안내서를 사용하십시오.
+다음 예제에서는 `damAssetLucene` 인덱스를 사용자 지정합니다
+완전히 맞춤화된 색인을 동시에 제공합니다.
+프로세스는 다음과 같습니다.
+
+1. `ui.apps` 디렉터리(이름: `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`)에 새 폴더를 만듭니다.
+
+2. 다음 내용이 포함된 구성 파일 `.content.xml`(일반 색인 정의가 아닌 필수 자리 표시자 구성임)을 추가하십시오. `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?><jcr:root
+       xmlns:jcr="http://www.jcp.org/jcr/1.0"
+       xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+       jcr:primaryType="nt:unstructured"
+       type="lucene" includedPaths="/same" queryPaths="/same" async="async">
+   <diff.json jcr:primaryType="nt:file"/></jcr:root>
+   ```
+
+3. 다음 내용이 포함된 텍스트 파일 `diff.json`을(를) 만듭니다.
+이 예제에서는 기본 제공 색인 `damAssetLucene`을(를) 사용자 지정합니다
+`test` 속성을 추가로 인덱싱할 수 있습니다. 또한 다음을 정의합니다
+`acme.testIndex` 노드에서 `testing` 속성을 인덱싱하는 `nt:unstructured`(이)라는 이름의 완전히 맞춤화된 인덱스:
+
+   `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
+
+   ```json
+   {
+       "damAssetLucene": {
+           "indexRules": {
+               "dam:Asset": {
+                   "properties": {
+                       "test": {
+                           "name": "test",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       },
+       "acme.testIndex": {
+           "async": [ "async" ],
+           "compatVersion": 2,
+           "evaluatePathRestrictions": true,
+           "includedPaths": [ "/content" ],
+           "queryPaths": [ "/content" ],
+           "selectionPolicy": "tag",
+           "tags": [ "testing" ],
+           "type": "lucene",
+           "indexRules": {
+               "nt:unstructured": {
+                   "properties": {
+                       "testing": {
+                           "name": "testing",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       }
+   }
+   ```
+
+4. `ui.apps/src/main/content/META-INF/vault/filter.xml`의 FileVault 필터에 항목 추가:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/diff.index"/> 
+   </workspaceFilter>
+   ```
+
+변경 사항을 적용한 후 Cloud Manager을 사용하여 새 애플리케이션을 배포합니다.
+이 배포는 추가(및 필요한 경우 병합)하는 두 가지 작업을 시작합니다.
+작성자 및 게시에 대한 색인 정의.
+전환 전에 기본 저장소는 업데이트된 색인 정의를 사용하여 다시 색인화됩니다.
+
+## 기존 인덱스 구성
+
+간소화된 색인 관리를 사용하여 구성할 수 없는 색인
+기존 구성 모드를 사용해야 합니다.
+
+기존 인덱스 구성은 `includedPaths` 속성을 가질 수 없는 인덱스에만 적용됩니다
+또는 `/apps`, `/libs` 또는 `/`을(를) 포함하는 속성이 있습니다.
+일부 기본 제공 색인은 다음 경로를 다룹니다.
+
+* `cqPageLucene`: 이 인덱스를 사용자 지정해야 하는 경우
+대신 `cqPageContent`을(를) 사용하도록 쿼리를 마이그레이션하는 것이 좋습니다.
+`includedPaths` 값이 `/content`이고 태그가 있습니다.
+* `ntBaseLucene`: 가장 좋은 방법은 이 인덱스를 변경하지 않는 것입니다.
+대신 `acme.`과(와) 같은 접두사가 있는 완전히 맞춤화된 색인을 사용합니다.
+필요한 경로만 포함합니다.
+자세한 내용은 간소화된 색인 관리 섹션을 참조하십시오.
 
 ## 색인 이름 {#index-names}
 
@@ -168,88 +363,6 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 5. 구성이 [프로젝트 구성](#project-configuration) 섹션에 제공된 지침을 준수하는지 확인하십시오. 그에 따라 필요한 적응을 수행합니다.
 
-## 프로젝트 구성
-
-Jackrabbit `1.3.2`의 버전 >= `filevault-package-maven-plugin`을(를) 사용하는 것이 좋습니다. 이를 프로젝트에 통합하는 단계는 다음과 같습니다.
-
-1. 최상위 `pom.xml`에서 버전을 업데이트합니다.
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-       ...
-   </plugin>
-   ```
-
-2. 최상위 `pom.xml`에 다음 내용을 추가하십시오.
-
-   ```xml
-   <jackrabbit-packagetype>
-       <options>   
-           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-       </options>
-   </jackrabbit-packagetype>
-   ```
-
-   다음은 위에서 설명한 구성이 포함된 프로젝트의 최상위 `pom.xml` 파일 샘플입니다.
-
-   파일 이름: `pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-           <configuration>
-               ...
-               <validatorsSettings>
-                   <jackrabbit-packagetype>
-                       <options>
-                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-                       </options>
-                   </jackrabbit-packagetype>
-                   ...
-               ...
-   </plugin>
-   ```
-
-3. `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`에서는 `allowIndexDefinitions`에서 `noIntermediateSaves` 및 `filevault-package-maven-plugin` 옵션을 활성화해야 합니다. `allowIndexDefinitions`을(를) 사용하면 사용자 지정 인덱스 정의를 사용할 수 있지만, `noIntermediateSaves`을(를) 사용하면 구성이 올바르게 추가됩니다.
-
-   파일 이름: `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           <configuration>
-               <allowIndexDefinitions>true</allowIndexDefinitions>
-               <properties>
-                   <cloudManagerTarget>none</cloudManagerTarget>
-                   <noIntermediateSaves>true</noIntermediateSaves>
-               </properties>
-       ...
-   </plugin>
-   ```
-
-4. `/oak:index`에 `ui.apps.structure/pom.xml`에 대한 필터 추가:
-
-   ```xml
-   <filters>
-       ...
-       <filter><root>/oak:index</root></filter>
-   </filters>
-   ```
-
-새 색인 정의를 추가한 후 Cloud Manager을 사용하여 새 애플리케이션을 배포합니다. 이 배포는 두 개의 작업을 시작하고, 각각 작성 및 게시를 위해 MongoDB 및 Azure 세그먼트 저장소에 색인 정의를 추가(및 필요한 경우 병합)합니다. 전환 전에 기본 저장소는 업데이트된 색인 정의로 리인덱싱됩니다.
-
->[!TIP]
->
->AEM as a Cloud Service의 필수 패키지 구조에 대한 자세한 내용은 [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)를 참조하십시오.
-
 ## 순환 배포를 사용한 색인 관리 {#index-management-using-rolling-deployments}
 
 ### 색인 관리 개요 {#what-is-index-management}
@@ -360,7 +473,7 @@ Adobe에서 `damAssetLucene` 또는 `cqPageLucene`과(와) 같은 기본 제공 
 
 ### 변경 실행 취소 {#undoing-a-change}
 
-경우에 따라 오류 또는 더 이상 수정할 필요가 없기 때문에 색인 정의에서 수정을 실행 취소해야 할 수도 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3`에 오류가 있는 경우 이전 정의 `damAssetLucene-8-custom-2`(으)로 되돌릴 수 있습니다. 이렇게 하려면 이전 색인 `damAssetLucene-8-custom-4`의 복사본인 `damAssetLucene-8-custom-2.`(이)라는 새 색인을 만듭니다
+경우에 따라 오류 또는 더 이상 수정할 필요가 없기 때문에 색인 정의에서 수정을 실행 취소해야 할 수도 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3`에 오류가 있는 경우 이전 정의 `damAssetLucene-8-custom-2`(으)로 되돌릴 수 있습니다. 이를 수행하려면 이전 색인 `damAssetLucene-8-custom-4`의 복사본인 `damAssetLucene-8-custom-2`(이)라는 새 색인을 만드십시오.
 
 ### 색인 삭제 {#removing-an-index}
 
