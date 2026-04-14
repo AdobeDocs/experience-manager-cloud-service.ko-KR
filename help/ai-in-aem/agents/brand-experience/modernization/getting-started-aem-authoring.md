@@ -4,9 +4,9 @@ description: Experience Modernation Console을 사용하여 Experience Modernati
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 1%
 ## Edge Delivery Services 프로젝트 보고서 만들기 {#create-repo}
 
 1. [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) 리포지토리를 템플릿으로 사용합니다(표준 Edge Delivery Services 표준 템플릿이 아님).
+1. GitHub 앱을 연결하기 전에 `fstab.yaml`이(가) AEM 호스트, git 소유자 및 git 리포지토리를 가리키는지 확인하고 변경 내용을 `main`에 커밋하십시오.
+   * 지침은 [콘텐츠 원본 구성](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)을 참조하세요.
 1. 저장소를 설정하려면 [유니버설 편집기 튜토리얼](https://www.aem.live/developer/ue-tutorial)을(를) 따르십시오.
    * AEM에서 사이트를 만들라는 메시지가 표시되면 중지합니다.
 1. `paths.json`을(를) 삭제하고 이 변경 내용을 `main`에 커밋하세요.
@@ -35,8 +37,6 @@ ht-degree: 1%
 1. **만들기**&#x200B;를 클릭합니다.
    * 사이트 페이지로 리디렉션됩니다.
    * 새 사이트가 즉시 표시되지 않는 경우 페이지를 새로 고칩니다.
-1. [리포지토리를 설정할 때 아직 수행하지 않았다면](#create-repo)은(는) `fstab.yaml`을(를) 업데이트하여 AEM 호스트, git 소유자 및 git 리포지토리를 가리키도록 만들고 이러한 변경 내용을 `main`에 커밋합니다.
-   * 지침은 [콘텐츠 원본 구성](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)을 참조하세요.
 
 ## 표준 시작 단계 계속 {#continue}
 
