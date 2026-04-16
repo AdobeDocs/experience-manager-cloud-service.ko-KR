@@ -6,9 +6,9 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3175'
 ht-degree: 5%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 5%
 >2025년 4월 AEM as a Cloud Service 릴리스부터 기술 제한 사항으로 인해 보안이 강화된 환경에서는 Dynamic Media(Scene7)를 구성할 수 없습니다. 결과적으로, **도구** > **클라우드 서비스** 아래의 **Dynamic Media 구성** 카드는 이러한 환경에서 더 이상 표시되지 않습니다.
 >
 >또한 AEM 6.5를 사용하는 고객은 Dynamic Media (Scene7) 스택이 HIPAA를 지원하지 않는다는 점을 인지하고 있어야 합니다.
+
+>[!NOTE]
+>
+>HIPAA 준비 상태를 이해하고 규정을 준수하는 데 도움이 되는 Adobe에서 제공하는 설명서는 [Adobe Experience Manager as a Cloud Service용 HIPAA 준비](/help/compliance/hipaa/hipaa-readiness.md)를 참조하십시오.
 
 ## Dynamic Media의 아키텍처 다이어그램 {#architecture-diagram-of-dynamic-media}
 
@@ -77,7 +81,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 클라우드 서비스에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 **[!UICONTROL 클라우드 서비스 > Dynamic Media 구성]**(으)로 이동합니다.
@@ -111,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | Assets 게시 | 다음 세 가지 옵션 중 하나를 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 에셋이 업로드되면 시스템이 에셋을 수집하고 URL/임베드를 즉시 제공합니다. 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- Assets은 보안 미리 보기용으로만 자동으로 게시됩니다. 또한 공중영역에서 전달하기 위해 DMS7에 게시하지 않고 Experience Manager as a Cloud Service에 명시적으로 게시할 수 있습니다. 향후에 이 옵션은 자산을 Experience Manager as a Cloud Service에 게시하고 자산을 Dynamic Media에 게시하며 서로 상호 배타적입니다. 즉, 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 미리보기를 위해 Experience Manager as a Cloud Service에서만 에셋을 게시할 수 있습니다. 이러한 동일한 자산은 공개 도메인에 전달하기 위해 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 렌디션이 생성되면 AEM as a Cloud Service은 원격 Dynamic Media 렌디션에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사 서버나 특수 서버를 사용할 수 있는 특별한 방법이 없는 경우, Adobe에서는 이 설정을 지정된 대로 두는 것이 좋습니다. |
-   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션의 선택을 해제합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 사용&#x200B;]**- 제외를 위해 폴더를 표시하지 않는 한 구성은 기본적으로 모든 폴더에 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]** - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성이 폴더에 적용되지 않습니다.<br>선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택하십시오. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. _다음 세 가지 옵션은 이전에&#x200B;**모든 콘텐츠 동기화**&#x200B;를 선택한 경우 사용할 수 없습니다._ [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/dynamic-media/selective-publishing.md)도 참조하세요.<br>**[!UICONTROL 상속됨&#x200B;]**- 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 의 자세한 상태는 도구 설명을 통해 표시됩니다.<br>**[!UICONTROL 하위 폴더에 대해 사용]** - Dynamic Media와의 동기화를 위해 이 하위 트리의 모든 항목을 포함합니다. 폴더별 설정은 클라우드 구성의 기본 모드를 재정의합니다.<br>**[!UICONTROL 하위 폴더에 대해 사용 안 함&#x200B;]**- 이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 못하도록 제외합니다. |
+   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션의 선택을 해제합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 사용&#x200B;]**- 제외를 위해 폴더를 표시하지 않는 한 구성은 기본적으로 모든 폴더에 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]** - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성이 폴더에 적용되지 않습니다.<br>선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택하십시오. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. _다음 세 가지 옵션은 이전에&#x200B;**모든 콘텐츠 동기화**를 선택한 경우 사용할 수 없습니다._ [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/dynamic-media/selective-publishing.md)도 참조하세요.<br>**[!UICONTROL 상속됨&#x200B;]**- 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 의 자세한 상태는 도구 설명을 통해 표시됩니다.<br>**[!UICONTROL 하위 폴더에 대해 사용]** - Dynamic Media와의 동기화를 위해 이 하위 트리의 모든 항목을 포함합니다. 폴더별 설정은 클라우드 구성의 기본 모드를 재정의합니다.<br>**[!UICONTROL 하위 폴더에 대해 사용 안 함&#x200B;]**- 이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 못하도록 제외합니다. |
 
    >[!NOTE]
    >
@@ -135,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manager as a Cloud Service은 토큰 기반 유효성 검사를 사용하여 Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 볼 수 있으므로 Experience Manager 작성자는 기본적으로 Dynamic Media 콘텐츠를 미리 봅니다. 그러나 사용자가 안전하게 미리보기 콘텐츠에 액세스할 수 있도록 IP를 *허용 목록*&#x200B;할 수 있습니다. Experience Manager as a Cloud Service에서 이 작업을 설정하려면 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dynamic-media/dm-publish-settings.md#security-tab) 항목을 참조하십시오. <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -248,7 +252,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 설정 및 구성 작업에는 다음이 포함됩니다.
 
@@ -279,7 +283,7 @@ Dynamic Media 색상 관리를 사용하면 올바른 에셋에 색상을 지정
 
 이미지 요청 시 색상 교정을 활성화하기 위한 기본 색상 속성을 구성하려면 다음과 같이 하십시오.
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 연 다음 프로비전하는 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 연 다음 프로비전하는 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
 1. **[!UICONTROL 설정 > 응용 프로그램 설정]**(으)로 이동합니다.
 1. **[!UICONTROL `Publish Setup`]** 영역을 확장하고 **[!UICONTROL 이미지 서버]**&#x200B;를 선택합니다. 게시 인스턴스의 기본값을 설정할 때&#x200B;**[!UICONTROL 컨텍스트 게시]**&#x200B;를 **[!UICONTROL 이미지 서버]**&#x200B;로 설정하세요.
 1. 변경해야 하는 속성(예: **[!UICONTROL 색상 관리 특성]** 영역의 속성)으로 스크롤합니다.

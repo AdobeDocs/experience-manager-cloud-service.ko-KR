@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 9%
+source-wordcount: '1521'
+ht-degree: 8%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 9%
 Adobe HIPAA 규정 준수 및 WAF-DDOS(Web Application Firewall - Distributed Denial of Service)는 취약점으로부터 보호하기 위한 다층적 접근 방식의 일부로서 클라우드 기반 보안을 용이하게 합니다.
 
 * **HIPAA** - 이 옵션을 사용하면 Adobe의 HIPAA 지원 솔루션을 구현할 수 있습니다.
-   * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html).
+   * [Adobe Experience Manager as a Cloud Service용 HIPAA 준비](/help/compliance/hipaa/hipaa-readiness.md) 및 [Adobe의 HIPAA 준비 솔루션 구현](https://www.adobe.com/trust/compliance/hipaa-ready.html)에 대해 자세히 알아보십시오.
    * 프로그램 생성 후에는 HIPAA를 활성화하거나 비활성화할 수 없습니다.
 * **WAF-DDOS 보호** - 이 옵션을 사용하면 규칙을 통해 응용 프로그램을 보호하는 웹 응용 프로그램 방화벽을 사용할 수 있습니다.
    * 활성화되면 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 설정하여 WAF-DDOS 보호를 구성할 수 있습니다.
