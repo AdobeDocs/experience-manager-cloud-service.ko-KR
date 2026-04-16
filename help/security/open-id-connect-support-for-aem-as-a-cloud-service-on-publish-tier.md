@@ -4,10 +4,10 @@ description: 게시 계층에서 AEM as a Cloud Service에 대한 Open ID Connec
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
+source-git-commit: 70687e4f2ea0df923e44237bc20635745c46323a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 66%
+source-wordcount: '2610'
+ht-degree: 53%
 
 ---
 
@@ -195,7 +195,303 @@ DefaultSyncHandler에서 구성할 수 있는 가장 관련성 있는 속성은 
 
 ### 선택 사항: 사용자 정의 UserInfoProcessor 구현 {#implement-a-custom-userinfoprocessor}
 
-사용자는 ID 토큰으로 인증되며, 추가 속성은 IdP에 대해 정의된 `userInfo` 엔드포인트에서 가져옵니다. 추가 비표준 작업을 수행해야 하는 경우 [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java)의 사용자 정의 구현이 Sling의 기본 구현입니다.
+사용자는 ID 토큰으로 인증되고 추가 특성은 IdP에 대해 정의된 `userInfo` 끝점에서 가져옵니다. `UserInfoProcessor`은(는) ID 공급자로부터 받은 데이터를 AEM이 사용자 동기화에 사용할 수 있는 자격 증명 및 특성으로 변환하는 역할을 합니다.
+
+#### 사용자 지정 UserInfoProcessor를 만들 때 {#when-to-create-custom-userinfoprocessor}
+
+기본 [SlingUserInfoProcessorImpl](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java)은(는) 표준 OIDC 클레임 및 그룹 동기화를 처리합니다. 다음을 수행해야 하는 경우 사용자 지정 구현이 필요할 수 있습니다.
+
+* ID 토큰 또는 UserInfo 응답에서 사용자 지정 클레임 추출 및 처리
+* 클레임을 다른 특성 이름으로 변환 또는 매핑
+* 중첩된 클레임에서 그룹 추출을 위한 사용자 지정 논리 구현
+* 표준 OIDC 프로필의 일부가 아닌 사용자 속성을 더 추가합니다.
+* 특정 사용 사례에 대한 액세스 토큰 처리 또는 토큰 새로 고침
+* 외부 시스템과 통합하여 인증 중 사용자 데이터 보강
+
+#### UserInfoProcessor 인터페이스 이해 {#understanding-userinfoprocessor-interface}
+
+`UserInfoProcessor` 패키지의 `org.apache.sling.auth.oauth_client.spi` 인터페이스는 다음 두 가지 메서드를 정의합니다.
+
+```java
+public interface UserInfoProcessor {
+    /**
+     * Process the UserInfo and token response to create OIDC credentials
+     *
+     * @param userInfo - JSON response from the UserInfo endpoint (may be null)
+     * @param tokenResponse - JSON response from the token endpoint
+     * @param oidcSubject - The subject claim from the ID token
+     * @param idp - The configured IDP name
+     * @return OidcAuthCredentials containing user attributes and group memberships
+     */
+    @NotNull OidcAuthCredentials process(
+        @Nullable String userInfo,
+        @NotNull String tokenResponse,
+        @NotNull String oidcSubject,
+        @NotNull String idp
+    );
+
+    /**
+     * @return The name of the OIDC connection this processor is associated with
+     */
+    @NotNull String connection();
+}
+```
+
+반환된 `OidcAuthCredentials` 개체를 사용하면 다음을 수행할 수 있습니다.
+* `setAttribute(key, value)`을(를) 통해 사용자 특성을 설정합니다. `DefaultSyncHandler` 속성 매핑을 기반으로 동기화됩니다.
+* `addGroup(groupName)`을(를) 통해 그룹 멤버십을 추가하십시오. 이러한 그룹은 AEM에서 생성/동기화됩니다.
+
+#### 예: 사용자 지정 UserInfoProcessor 구현 {#custom-userinfoprocessor-implementation}
+
+다음은 사용자 지정 `UserInfoProcessor`을(를) 구현하는 방법을 보여 주는 전체 예입니다.
+
+```java
+package com.mycompany.aem.auth;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
+import org.apache.sling.auth.oauth_client.spi.OidcAuthCredentials;
+import org.apache.sling.auth.oauth_client.spi.UserInfoProcessor;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+/**
+ * Custom UserInfoProcessor that extracts additional claims from the ID token
+ * and adds custom user attributes and group memberships.
+ */
+@Component(service = UserInfoProcessor.class, property = {"service.ranking:Integer=50"})
+@Designate(ocd = CustomUserInfoProcessor.Config.class, factory = true)
+public class CustomUserInfoProcessor implements UserInfoProcessor {
+
+    private static final Logger logger = LoggerFactory.getLogger(CustomUserInfoProcessor.class);
+
+    @ObjectClassDefinition(name = "Custom UserInfo Processor")
+    @interface Config {
+        @AttributeDefinition(name = "Connection Name", description = "OIDC Connection Name")
+        String connection();
+    }
+
+    private final String connection;
+
+    @Activate
+    public CustomUserInfoProcessor(Config config) {
+        this.connection = config.connection();
+        logger.info("CustomUserInfoProcessor activated for connection: {}", connection);
+    }
+
+    @Override
+    public @NotNull OidcAuthCredentials process(
+            @Nullable String userInfo,
+            @NotNull String tokenResponse,
+            @NotNull String oidcSubject,
+            @NotNull String idp) {
+
+        // Parse the token response to extract tokens
+        JsonObject tokenJson = JsonParser.parseString(tokenResponse).getAsJsonObject();
+        String accessToken = tokenJson.has("access_token") ?
+            tokenJson.get("access_token").getAsString() : null;
+        String idToken = tokenJson.has("id_token") ?
+            tokenJson.get("id_token").getAsString() : null;
+
+        logger.debug("Processing authentication for subject: {}", oidcSubject);
+
+        // Decode and extract claims from ID Token
+        JsonObject claims = null;
+        if (idToken != null) {
+            claims = decodeJwtPayload(idToken);
+            logger.debug("Extracted claims from ID token: {}", claims);
+        }
+
+        // Create credentials object
+        OidcAuthCredentials credentials = new OidcAuthCredentials(oidcSubject, idp);
+        credentials.setAttribute(".token", "");
+
+        // Extract standard profile attributes
+        if (claims != null) {
+            // Standard OIDC claims
+            setAttributeIfPresent(credentials, claims, "given_name", "profile/given_name");
+            setAttributeIfPresent(credentials, claims, "family_name", "profile/family_name");
+            setAttributeIfPresent(credentials, claims, "email", "profile/email");
+            setAttributeIfPresent(credentials, claims, "name", "profile/name");
+
+            // Custom claims from your IdP
+            setAttributeIfPresent(credentials, claims, "department", "profile/department");
+            setAttributeIfPresent(credentials, claims, "employee_id", "profile/employeeId");
+            setAttributeIfPresent(credentials, claims, "job_title", "profile/jobTitle");
+        }
+
+        // Extract group memberships from claims
+        if (claims != null && claims.has("groups")) {
+            if (claims.get("groups").isJsonArray()) {
+                claims.get("groups").getAsJsonArray().forEach(group -> {
+                    credentials.addGroup(group.getAsString());
+                });
+            }
+        }
+
+        // Optionally store tokens if needed for later API calls
+        // Note: Only store tokens if your application needs to call external APIs
+        // on behalf of the user. Tokens are encrypted before storage.
+        if (accessToken != null) {
+            credentials.setAttribute("access_token", accessToken);
+        }
+
+        return credentials;
+    }
+
+    @Override
+    public @NotNull String connection() {
+        return connection;
+    }
+
+    /**
+     * Helper method to set attribute if present in claims
+     */
+    private void setAttributeIfPresent(OidcAuthCredentials credentials,
+                                      JsonObject claims,
+                                      String claimName,
+                                      String attributeName) {
+        if (claims.has(claimName) && !claims.get(claimName).isJsonNull()) {
+            String value = claims.get(claimName).getAsString();
+            if (value != null && !value.isEmpty()) {
+                credentials.setAttribute(attributeName, value);
+            }
+        }
+    }
+
+    /**
+     * Decode JWT payload (middle part) to extract claims
+     */
+    private JsonObject decodeJwtPayload(String jwt) {
+        try {
+            String[] parts = jwt.split("\\.");
+            if (parts.length != 3) {
+                logger.warn("Invalid JWT format");
+                return null;
+            }
+
+            // Decode the payload (second part)
+            String payload = parts[1];
+            // Add padding if needed
+            payload = payload + "====".substring(0, (4 - payload.length() % 4) % 4);
+            // Replace URL-safe characters
+            payload = payload.replace('-', '+').replace('_', '/');
+
+            byte[] decoded = Base64.getDecoder().decode(payload);
+            String json = new String(decoded, StandardCharsets.UTF_8);
+            return JsonParser.parseString(json).getAsJsonObject();
+        } catch (Exception e) {
+            logger.error("Failed to decode JWT payload", e);
+            return null;
+        }
+    }
+}
+```
+
+#### 구성 {#custom-userinfoprocessor-configuration}
+
+`UserInfoProcessor` 아래 AEM 프로젝트에서 사용자 지정 `ui.config/src/main/content/jcr_root/apps/myapp/osgiconfig/config.publish/`에 대한 구성 파일을 만듭니다.
+
+**com.mycompany.aem.auth.CustomUserInfoProcessor~azure.cfg.json**
+
+```json
+{
+  "connection": "azure"
+}
+```
+
+구성은 `OidcConnectionImpl` 구성에 정의된 연결 이름과 일치해야 합니다. `service.ranking` 주석의 `@Component` 속성(예제에서 `50`(으)로 설정됨)은 동일한 연결에 대해 여러 프로세서가 등록되어 있는 경우 우선 순위를 결정합니다. 순위가 `SlingUserInfoProcessorImpl`인 기본 `0`보다 높은 순위가 우선합니다.
+
+#### 종속성 {#custom-userinfoprocessor-dependencies}
+
+핵심 모듈의 `pom.xml`에 다음 종속성을 추가하십시오.
+
+```xml
+<dependency>
+    <groupId>org.apache.sling</groupId>
+    <artifactId>org.apache.sling.auth.oauth-client</artifactId>
+    <version>0.1.7</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.9</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+#### 속성을 DefaultSyncHandler와 동기화 {#synchronizing-custom-attributes}
+
+사용자 지정 특성이 JCR의 사용자 노드에 유지되도록 하려면 속성 매핑을 포함하도록 `DefaultSyncHandler` 구성을 업데이트하십시오.
+
+**org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json**
+
+```json
+{
+  "user.expirationTime": "1h",
+  "user.membershipExpTime": "1h",
+  "user.propertyMapping": [
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
+    "profile/email=profile/email",
+    "profile/department=profile/department",
+    "profile/employeeId=profile/employeeId",
+    "profile/jobTitle=profile/jobTitle",
+    "access_token=access_token"
+  ],
+  "user.pathPrefix": "azure",
+  "handler.name": "azure"
+}
+```
+
+형식은 `jcrPropertyPath=credentialAttributeName`입니다. 왼쪽은 속성이 `/home/users` 아래의 사용자 노드에 저장되는 위치이고 오른쪽은 `UserInfoProcessor`을(를) 사용하여 `credentials.setAttribute()`에서 설정한 특성 이름과 일치합니다.
+
+#### 배포 및 테스트 {#custom-userinfoprocessor-deployment}
+
+1. 사용자 지정 **이(가) 포함된 AEM 프로젝트를**&#x200B;빌드 및 배포`UserInfoProcessor`:
+
+   ```bash
+   mvn clean install -PautoInstallPackage
+   ```
+
+2. **의 OSGi 콘솔에서**&#x200B;등록 확인`/system/console/components`:
+   * 사용자 정의 프로세서 클래스 이름 검색
+   * 구성 요소가 활성 상태이고 연결 구성이 올바른지 확인합니다.
+
+3. **인증 흐름 테스트**:
+   * `OidcAuthenticationHandler`에 구성된 보호된 경로에 액세스
+   * 인증에 성공하면 `/home/users/<prefix>/<username>`의 CRXDE에서 사용자 노드를 확인하십시오.
+   * 사용자 지정 특성이 동기화되었는지 확인
+   * `/home/groups`의 그룹 멤버십 확인
+
+4. 문제를 해결하려면 **디버그 로깅을 사용**&#x200B;합니다.
+
+   ```
+   Logger: com.mycompany.aem.auth
+   Log Level: DEBUG
+   ```
+
+#### 모범 사례 {#custom-userinfoprocessor-best-practices}
+
+* **토큰 저장소 최소화**: 응용 프로그램에서 사용자를 대신하여 외부 서비스에 API를 호출해야 하는 경우에만 액세스 토큰을 저장하거나 토큰을 새로 고치십시오. 토큰은 암호화되지만 여전히 오버헤드가 추가됩니다.
+* **클레임 유효성 검사**: 처리하기 전에 클레임이 존재하고 null이 아닌지 항상 확인하십시오.
+* **오류 처리**: 오류를 적절하게 기록하지만 선택적 클레임이 누락된 경우에도 인증 흐름이 완료될 수 있는지 확인하십시오.
+* **성능**: 모든 인증에서 실행되므로 처리 논리를 단순하게 유지합니다.
+* **보안**: 전체 토큰 또는 사용자 암호와 같은 중요한 정보를 기록하지 마십시오. 디버깅을 위해 토큰을 로깅할 경우 `substring()`을(를) 사용합니다.
+* **테스트**: 모든 클레임 변형이 올바르게 처리되도록 IdP의 다양한 사용자 프로필을 사용하여 테스트합니다.
 
 ### 외부 그룹에 대한 ACL 구성 {#configure-acl-for-external-groups}
 
@@ -400,12 +696,12 @@ ID 토큰에서 그룹 클레임을 활성화하려면 Microsoft Azure Portal의
 
 ## Saml Authentication Handler에서 Oidc Authentication Handler로 마이그레이션하는 방법
 
-AEM이 이미 SAML 인증 핸들러로 구성되어 있고 사용자가 [데이터 동기화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화된 저장소에 있는 경우 원래 SAML 사용자와 새 OIDC 사용자 간에 충돌이 발생할 수 있습니다.
+AEM이 이미 SAML 인증 핸들러로 구성되어 있고 사용자가 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화된 저장소에 있는 경우 원래 SAML 사용자와 새 OIDC 사용자 간에 충돌이 발생할 수 있습니다.
 
-1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)를 구성하고 `idpNameInPrincipals`SlingUserInfoProcessor[&#x200B; 구성에서 &#x200B;](#configure-slinguserinfoprocessor)을(를) 사용하도록 설정하십시오.
+1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)를 구성하고 `idpNameInPrincipals`SlingUserInfoProcessor[ 구성에서 ](#configure-slinguserinfoprocessor)을(를) 사용하도록 설정하십시오.
 1. 외부 그룹에 대해 [ACL을 설정](#configure-acl-for-external-groups)합니다.
 1. 사용자로부터 로그인하면 saml 인증 핸들러로 만든 이전 사용자를 삭제할 수 있습니다.
 
 >[!NOTE]
->SAML 인증 처리기가 비활성화되고 OIDC 인증 처리기가 활성화되면 [데이터 동기화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화되지 않으면 기존 세션이 유효하지 않게 됩니다. 사용자를 다시 인증해야 하므로 저장소에 새 OIDC 사용자 노드가 생성됩니다.
+>SAML 인증 처리기가 비활성화되고 OIDC 인증 처리기가 활성화되면 [데이터 동기화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)가 활성화되지 않으면 기존 세션이 유효하지 않게 됩니다. 사용자를 다시 인증해야 하므로 저장소에 새 OIDC 사용자 노드가 생성됩니다.
 
