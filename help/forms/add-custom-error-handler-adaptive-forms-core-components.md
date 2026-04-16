@@ -8,10 +8,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: adab3053853551b10a6f808782acf8f75ba7c1f7
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 93%
+source-wordcount: '2433'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 이 문서 |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
 
 AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸들러를 제공합니다. 또한 오류 핸들러 함수를 사용자 정의할 수 있는 기능을 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 통해 외부 서비스를 호출할 때 데이터를 유효성 검사를 위해 서버로 전송하면 서버는 제출의 성공 여부 또는 오류 이벤트에 대한 정보가 포함된 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다. 오류 핸들러는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
 
@@ -177,7 +177,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ## 규칙 편집기를 통해 오류 핸들러 추가 {#add-error-handler-using-rule-editor}
 
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
 
 >[!NOTE]
 >
@@ -200,9 +200,13 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **펫 ID 필드의 날짜[ 이름]**&#x200B;이 변경되었습니다. 선택이 **상태 선택** 드롭다운 목록에서 변경되었습니다.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
 1. **입력** 섹션에서 **사후 서비스**&#x200B;와 해당 데이터 바인딩을 선택합니다. 예를 들어 **Pet ID**&#x200B;의 유효성을 검사하려면 **Post 서비스**&#x200B;을(를) **GET /pet/{petId}**(으)로 선택하고 **입력** 섹션에서 **Pet ID**&#x200B;을(를) 선택합니다.
-1. **출력** 섹션에서 데이터 바인딩을 선택합니다. **출력** 섹션에서 **펫 이름**&#x200B;을 선택합니다.
-1. **오류 핸들러** 섹션에서 **[!UICONTROL 기본 오류 핸들러]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 성공 처리기 추가]**&#x200B;를 클릭합니다. **[!UICONTROL 서비스 성공 처리기 호출]** 규칙 편집기가 열립니다.
+1. **[!UICONTROL Then]** 섹션에서 eventpayload 데이터를 사용하여 **[!UICONTROL Pet 이름]** 값을 **`name`**(으)로 설정하는 규칙을 추가합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 **[!UICONTROL 서비스 성공 처리기 호출]** 편집기를 닫습니다.
+1. **[!UICONTROL 오류 처리기 추가]**&#x200B;를 클릭합니다. **[!UICONTROL 서비스 오류 처리기 호출]** 규칙 편집기가 열립니다.
+1. **[!UICONTROL Then]** 섹션에서 **[!UICONTROL 함수 출력]**&#x200B;을 선택하고 **[!UICONTROL 기본 오류 처리기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 **[!UICONTROL 서비스 오류 처리기 호출]** 편집기를 닫습니다.
+1. 규칙을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하십시오.
 
 ![기본 오류 핸들러 추가하여 양식의 필드 유효성 검사](/help/forms/assets/default-error-handler.png)
 
@@ -310,12 +314,15 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **[펫 ID 필드 이름]**&#x200B;이 변경되면 **상태 선택** 드롭다운 목록에서 선택이 **변경됩니다**.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
 1. **입력** 섹션에서 **사후 서비스**&#x200B;와 해당 데이터 바인딩을 선택합니다. 예를 들어 **Pet ID**&#x200B;의 유효성을 검사하려면 **Post 서비스**&#x200B;을(를) **GET /pet/{petId}**(으)로 선택하고 **입력** 섹션에서 **Pet ID**&#x200B;을(를) 선택합니다.
-1. **출력** 섹션에서 데이터 바인딩을 선택합니다. 예: **출력** 섹션에서 **펫 이름**&#x200B;을 선택합니다.
-1. **[!UICONTROL 오류 핸들러]** 섹션에서 **[!UICONTROL 사용자 정의 오류 핸들러]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 성공 처리기 추가]**&#x200B;를 클릭합니다. **[!UICONTROL 서비스 성공 처리기 호출]** 규칙 편집기가 열립니다.
+1. **[!UICONTROL Then]** 섹션에서 eventpayload 데이터를 사용하여 **[!UICONTROL Pet 이름]** 값을 **`name`**(으)로 설정하는 규칙을 추가합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 **[!UICONTROL 서비스 성공 처리기 호출]** 편집기를 닫습니다.
+1. **[!UICONTROL 오류 처리기 추가]**&#x200B;를 클릭합니다. **[!UICONTROL 서비스 오류 처리기 호출]** 규칙 편집기가 열립니다.
+1. **[!UICONTROL Then]** 섹션에서 **[!UICONTROL 함수 출력]**&#x200B;을 선택하고 **[!UICONTROL 사용자 지정 오류 처리기 함수]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 **[!UICONTROL 서비스 오류 처리기 호출]** 편집기를 닫습니다.
+1. 규칙을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하십시오.
 
-![양식에서 사용자 정의 오류 핸들러를 추가하여 오류 응답 처리](/help/forms/assets/custom-error-handler.png)
-
+![오류 응답을 처리할 양식에 사용자 지정 오류 처리기를 추가](/help/forms/assets/custom-error-handler.png)
 
 이 규칙의 결과로 얻은 **펫 ID**&#x200B;에 대한 입력 값을 사용하여 REST 엔드포인트에서 호출한 외부 서비스를 통해 **펫 이름**&#x200B;의 유효성 검사를 확인합니다. 데이터 소스 기반의 유효성 검사 기준이 실패할 경우, 오류 메시지가 필드 수준에 표시됩니다.
 
