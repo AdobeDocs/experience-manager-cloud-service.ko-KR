@@ -380,7 +380,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
-사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
 
 시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
 
