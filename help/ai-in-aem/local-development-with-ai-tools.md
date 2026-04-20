@@ -4,20 +4,14 @@ description: AEM as a Cloud Service 개발을 가속화하기 위해 프로젝�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
 
 # AI 도구를 사용한 로컬 개발 {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->이 문서에 설명된 기능은 **베타**&#x200B;입니다. Adobe에서 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 피드백을 제공하고([aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)(으)로 전자 메일을 보내) 제품 개발을 구체화할 수 있습니다. 또한 GA 전에 새로운 기능을 채택할 준비를 하는 데 도움이 됩니다.
->
->Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 방식으로)할 의무가 없습니다. Adobe은 고객에게 베타 릴리스의 올바른 기능이나 성능 또는 관련 설명서나 자료에 의존하지 말고 주의할 것을 권장합니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한
 
 스킬은 여러 단계 개발 워크플로우를 인코딩하는 지침 세트입니다. 호출되면 AI가 일반적인 지식에만 의존하지 않고 스킬의 절차를 따르며 일관되고 규칙을 준수하는 결과를 생성합니다.
 
-Adobe은 이 기능을 아직 일반적으로 사용할 수 없으므로 **[분기의 &#x200B;](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)adobe/skills**`beta` 리포지토리에서 AEM as a Cloud Service 기술을 게시합니다.
+Adobe은 **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** 리포지토리에서 AEM as a Cloud Service 기술을 게시합니다.
 
 | 스킬 | 목적 |
 |---|---|
@@ -202,6 +196,12 @@ Dispatcher 기술은 오케스트레이션 및 자문 지침을 처리합니다.
 >값 `Basic YWRtaW46YWRtaW4=`은(는) 로컬 빠른 시작에 대한 기본 자격 증명인 `admin:admin`의 Base64 인코딩입니다. 비로컬 환경에서는 사용하지 마십시오.
 
 ## Dispatcher 서버 {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>이 기능은 **베타**&#x200B;입니다. Adobe에서 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 피드백을 제공하고([aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)(으)로 전자 메일을 보내) 제품 개발을 구체화할 수 있습니다. 또한 GA 전에 새로운 기능을 채택할 준비를 하는 데 도움이 됩니다.
+>
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 방식으로)할 의무가 없습니다. Adobe은 고객에게 베타 릴리스의 올바른 기능이나 성능 또는 관련 설명서나 자료에 의존하지 말고 주의할 것을 권장합니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
 
 Dispatcher MCP 서버는 AEM Dispatcher SDK과 번들로 제공됩니다. AI 도구를 통해 Dispatcher 및 Apache HTTPD 구성의 유효성을 검사하고, 요청 처리를 추적하고, Docker에서 로컬로 실행되는 Dispatcher 인스턴스에 대해 캐시 동작을 검사할 수 있습니다.
 
