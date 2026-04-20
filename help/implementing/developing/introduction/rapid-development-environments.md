@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 161d6be186a6124840d93672470de91399481f20
 workflow-type: tm+mt
-source-wordcount: '5446'
+source-wordcount: '5835'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
+RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [사용 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) 및 [개발 수명 주기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)를 보여 주는 추가 비디오를 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -184,7 +184,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * [조직 ID 보기](https://experienceleague.adobe.com/ko/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
+   * [조직 ID 보기](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -200,7 +200,7 @@ retrieving programs of your organization ...
 
    이 단계를 수행하려면 Cloud Manager **Developer - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당 - 개발자 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)을 참조하십시오.
 
-자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
+자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)을 시청하십시오.
 </details>
 
 ## 새 기능을 개발하는 동안 RDE 사용 {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
+자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)을 참조하세요.
 
 
 ## 외부 Git 공급자의 RDE에 배포 {#deploy-to-rde}
@@ -707,6 +707,74 @@ RDE 재설정이 시작되면 일반적으로 환경을 완료하고 기본 상�
 ![환경 카드에서 RDE 재설정](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [Cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md)를 참조하세요.
+
+## 스냅샷 {#snapshots}
+
+>[!NOTE]
+>
+>이 기능은 Beta에 있습니다. 이 새로운 기능을 사용하고 피드백을 공유하려면 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)에 사용 사례를 설명하는 전자 메일을 보내십시오.
+
+RDE는 나중에 복원할 수 있는 현재 코드 및 컨텐츠 상태의 스냅샷을 만들 수 있도록 지원합니다. 스냅샷은 되돌려야 할 코드를 동기화하거나 다른 기능의 개발 간에 전환할 때 유용합니다. 테스트를 위해 알려진 시작점으로 스냅샷에서 변경 가능한 콘텐츠만 복원할 수도 있습니다.
+
+각 RDE 환경에는 최대 7개의 스냅샷이 있습니다. 삭제로 표시되지만 보존 기간 7일 이내인 스냅샷은 완전히 제거될 때까지 해당 제한에 계속 포함됩니다. 한도에 도달하여 새 스냅숏에 대한 용량이 바로 필요한 경우 표준 삭제 대신 [스냅숏 삭제](#delete-snapshot)에 설명된 대로 강제 삭제를 사용하십시오.
+
+지원되는 명령은 아래에 설명되어 있습니다. 플래그 및 옵션의 전체 목록을 보려면 `aio aem rde snapshot --help`을(를) 사용하거나 특정 하위 명령에 대한 도움말을 보려면 `aio aem rde snapshot <subcommand> --help`을(를) 사용하십시오.
+
+### 스냅샷 나열 {#list-snapshots}
+
+다음을 실행하여 조직의 모든 스냅샷을 나열할 수 있습니다.
+
+`aio aem rde snapshot`
+
+`-s` 플래그를 사용하여 정렬할 수 있는 사용 가능한 스냅숏 테이블을 반환합니다.
+
+`aio aem rde snapshot -s <column-header>`
+
+역정렬을 위해 열 머리글에 빼기 기호 접두사를 사용합니다. `--json` 전역 플래그도 지원됩니다.
+
+### 스냅샷 만들기 {#create-snapshot}
+
+콘텐츠와 배포를 모두 포함하여 RDE의 현재 상태에 대한 스냅샷을 만들려면 다음을 실행합니다.
+
+`aio aem rde snapshot create <name>`
+
+여기서 `<name>`은(는) 환경 내의 스냅숏에 대한 고유한 이름입니다. 필요한 경우 `-d` 플래그와 함께 간단한 설명을 포함합니다.
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### 스냅샷 복원 {#restore-snapshot}
+
+스냅샷을 현재 RDE로 복원하려면 다음을 실행합니다.
+
+`aio aem rde snapshot restore <name>`
+
+배포를 복원하지 않고 스냅숏에서 변경 가능한 콘텐츠만 복원하려면 `--only-mutable-content` 플래그를 사용합니다.
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### 스냅샷 삭제 {#delete-snapshot}
+
+스냅샷을 삭제하도록 표시해도 즉시 제거되지는 않습니다. 스냅샷은 7일 후에 삭제되므로 필요한 경우 삭제를 취소할 수 있습니다.
+
+스냅샷을 삭제하도록 표시하려면 다음을 실행합니다.
+
+`aio aem rde snapshot delete <name>`
+
+모든 스냅숏을 한 번에 삭제된 것으로 표시하려면 `-a` 플래그를 사용하십시오.
+
+`aio aem rde snapshot delete -a`
+
+스냅숏을 즉시 삭제하려면(보존 기간을 건너뛰어 더 이상 환경 스냅숏 제한에 계산되지 않도록) `-f` 플래그(또는 `--force`)를 추가하십시오.
+
+`aio aem rde snapshot delete <name> -f`
+
+강제 삭제는 `undelete`(으)로 실행 취소할 수 없습니다. 플래그를 조합할 때(예: 모든 스냅숏을 강제로 삭제) 전체 옵션 집합에 `aio aem rde snapshot delete --help`을(를) 사용하십시오.
+
+### 스냅샷 삭제 취소 {#undelete-snapshot}
+
+보류 중인 삭제를 취소하고 스냅샷을 보존하려면 다음을 실행합니다.
+
+`aio aem rde snapshot undelete <name>`
 
 ## JSON 출력을 지원하는 명령 {#json-commands}
 
@@ -1156,7 +1224,7 @@ Forms 개발자는 AEM Forms Cloud Service 빠른 개발 환경을 사용하여 
 
 ## RDE 자습서
 
-AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
+AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)를 보여 주는 비디오 튜토리얼을 참조하십시오.
 
 ## 문제 해결 {#troubleshooting}
 
@@ -1164,7 +1232,7 @@ AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 �
 
 #### 기존 RDE에 대한 최신 AEM 버전을 얻는 방법 {#get-latest-aem-version}
 
-생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 [&#x200B; 명령을 사용하여 수행할 수 있는 &#x200B;](#reset-rde)RDE 재설정`aio aem:rde:reset`은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용할 수 있는 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 [ 명령을 사용하여 수행할 수 있는 ](#reset-rde)RDE 재설정`aio aem:rde:reset`은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 ### aio RDE 플러그인 문제 해결 {#aio-rde-plugin-troubleshooting}
 
