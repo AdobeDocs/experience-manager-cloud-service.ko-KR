@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 2%
 
 ---
 
 # 콘텐츠 조각용 론치 {#launches-for-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 향후 릴리스를 위한 콘텐츠를 효율적으로 개발할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service에서 Launch를 사용하면 향후 릴리스를 위해 콘텐츠를 효율적으로 개발할 수 있습니다.
 
 *Launch*&#x200B;을(를) 만들어 현재 콘텐츠를 유지 관리하는 동시에 나중에 게시할 준비를 변경할 수 있도록 합니다. 콘텐츠 조각의 경우 현재 게시된 콘텐츠와 향후 한 번에 게시될 해당 콘텐츠의 버전, 이렇게 두 버전을 동시에 효과적으로 편집하는 것입니다. 해당 시간이 되면 원래 콘텐츠 조각의 콘텐츠를 대체하고 새 버전을 게시할 수 있습니다.
 
