@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 >
 >자세한 내용은 [페이지 시작](/help/sites-cloud/authoring/launches/overview.md)을 참조하세요.
 
-*Launch*&#x200B;을(를) 만든 다음 *Launch*&#x200B;에서 콘텐츠 조각을 편집하고 업데이트합니다. 이 단계에서 *Source* 조각이 변경되면 *Rebase* 작업을 사용하여 *Launch*&#x200B;에 복사할 수 있습니다. 준비가 되면 *홍보*&#x200B;에서 시작 콘텐츠를 다시 소스로 복제합니다. 그런 다음 론치를 만들고 편집할 때 설정된 필드에 따라 소스 조각을 수동 또는 자동으로 활성화할 수 있습니다. 참조된 조각을 이 프로세스에 포함할지 여부를 지정할 수도 있습니다.
+*Launch*&#x200B;을(를) 만든 다음 *Launch*&#x200B;에서 콘텐츠 조각을 편집하고 업데이트합니다. 이 단계에서 *Source* 조각이 변경되면 *Rebase* 작업을 사용하여 *Source*(변경 사항 포함)을 **[Launch](#rebase-a-launch-from-source)**&#x200B;에 복사할 수 있습니다. 준비가 되면 *홍보*&#x200B;에서 시작 콘텐츠를 다시 소스로 복제합니다. 그런 다음 론치를 만들고 편집할 때 설정된 필드에 따라 소스 조각을 수동 또는 자동으로 활성화할 수 있습니다. 참조된 조각을 이 프로세스에 포함할지 여부를 지정할 수도 있습니다.
 
 예를 들어 온라인 스토어의 계절별 제품 조각은 주력 제품이 현재 계절과 일치하도록 분기별로 업데이트됩니다. 다음 분기별 업데이트를 준비하기 위해 적절한 조각의 시작을 만들 수 있습니다. 분기 내내, 론치 사본에 다음 변경 사항이 누적되었습니다.
 
@@ -88,9 +88,9 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
    * **게시 준비**; 이 토글을 활성화하면 시작이 소스로 승격될 때 조각이 자동으로 게시됩니다.
 
-* 또한 다음을 정의합니다.
+* **홍보 날짜** 및 시간 정의: [출시를 자동으로 홍보하는 경우](#promote-automatically)
 
-   * **홍보 날짜** 및 시간: [출시를 자동으로 홍보하는 경우](#promote-automatically)
+* 실행된 **[작업](#jobs-history)**&#x200B;을(를) 보고 추가 작업을 수행합니다(**Source과 시작 비교**).
 
 ## 론치 만들기 {#create-a-launch}
 
@@ -203,7 +203,6 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
          * Source: 파란색
          * 시작: 분홍색
          * 충돌: 노란색
-   * [Promote](#promote-a-launch-to-source) 및 [Rebase](#rebase-a-launch-from-source) 작업은 오른쪽 상단에서 사용할 수 있습니다.
    * **업데이트를 찾았습니다**: 왼쪽 위에 모든 업데이트에 대한 요약이 표시됩니다. 소스 업데이트 수는 파란색, 론치 업데이트 수는 분홍색, 두 업데이트(충돌) 수는 노란색으로 표시됩니다.
       * 눈 모양 아이콘을 사용하면 더 명확한 개요를 위해 실제 콘텐츠 업데이트를 표시하거나 숨길 수 있습니다.
    * **포함** 슬라이더를 사용하면 후속 승격 또는 기준 재지정 작업에 포함할 콘텐츠 조각을 정의할 수 있습니다.
@@ -217,11 +216,38 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
    * 조각 컨텐츠는 필드 수준(컨텐츠 조각 요소/데이터 유형 수준)에 표시되며, 변경 사항을 나타내는 강조 표시가 있습니다.
    * **보기**&#x200B;를 선택하여 차이점을 다시 계산합니다.
 
+1. [Promote](#promote-a-launch-to-source) 및 [Rebase](#rebase-a-launch-from-source) 작업은 오른쪽 상단에서 사용할 수 있습니다.
+
+1. **뒤로**&#x200B;에서 콘솔로 돌아갑니다. 이러한 특정 차이점을 다시 검토하려면 **[작업](#jobs-history)** 항목을 볼 수 있습니다.
+
    ![Source과 Launch 비교](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## 작업 내역 {#jobs-history}
+
+실행된 지난 **Source과 비교**&#x200B;작업에 대한 세부 정보를 보려면 다음을 수행하십시오.
+
+1. 콘텐츠 조각 콘솔로 이동합니다.
+
+1. **시작** 탭을 엽니다.
+
+1. 론치를 선택하면 오른쪽에 정보 패널이 열립니다.
+
+1. **작업** 섹션에서 실행된 각 **Source과 비교** 작업에 대한 **launchDifferences** 항목이 표시됩니다.
+
+   ![작업 내역](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. 선택:
+
+   * 특정 작업에 대한 전체 세부 정보를 여는 돋보기 아이콘.
+사용 가능한 작업이 포함된 **[Launch와 Source 비교](#compare-launch-to-source)** 보기가 반환됩니다.
+   * 모든 작업에 대한 세부 정보 개요를 보려면 **로그를 봅니다**.
+여기에서 특정 작업을 선택한 다음 **결과**&#x200B;를 표시할 수도 있습니다. 이렇게 하면 사용 가능한 작업을 사용하여 **[Launch와 Source 비교](#compare-launch-to-source)** 보기로 돌아갑니다.
+
+   이 두 작업을 수행하면 해당 **Launch와 Source 비교** 작업으로 이동합니다. 여기에서 그 시점과 마찬가지로 출시를 **[다시 보고](#rebase-a-launch-from-source)** 또는 **[승격](#promote-a-launch-to-source)**&#x200B;할 수 있습니다.
 
 ## 론치 기준 재지정(Source) {#rebase-a-launch-from-source}
 
-소스 조각이 업데이트되고 이러한 변경 사항을 론치에 복사하려는 경우:
+소스 조각이 업데이트되면 **Rebase** 작업으로 소스(변경 사항 포함)를 론치에 복사할 수 있습니다.
 
 1. 콘텐츠 조각 콘솔로 이동합니다.
 
