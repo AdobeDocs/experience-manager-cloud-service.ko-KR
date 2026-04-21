@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 4%
+source-wordcount: '1087'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 정적 및 동적 변환을 포함한 에셋을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 에셋에 대한 링크가 포함된 전자 메일을 보낼 수 있습니다. 다운로드한 에셋은 ZIP 파일에 번들로 제공됩니다. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -36,8 +36,8 @@ ht-degree: 4%
 
 * [Experience Manager 사용자 인터페이스](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ko)
-* [데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## [!DNL Experience Manager] 인터페이스를 사용하여 에셋 다운로드 {#download-assets}
 
@@ -56,7 +56,7 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
 * 다운로드 크기가 100MB를 초과하는 경우
 * 다운로드가 준비되는 데 30초 이상 걸리는 경우
 
-비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알림을 보낼 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
+비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알림을 보낼 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
 
 이메일 서비스가 구성되면 관리자 및 사용자는 Experience Manager 인터페이스에서 이메일 알림을 활성화할 수 있습니다.
 
@@ -107,32 +107,6 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
 
 ![받은 편지함 다운로드](assets/link-sharing-download-inbox.png)
 
-## 에셋 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
-
-[!DNL Experience Manager]의 기본 서블릿을 사용하면 인증된 사용자가 임의로 큰 동시 다운로드 요청을 발행하여 자산의 ZIP 파일을 만들 수 있습니다. 다운로드 준비는 성능에 영향을 주거나 서버와 네트워크에 과부하를 줄 수도 있습니다. 이 기능으로 인해 발생할 수 있는 DoS 유사 위험을 완화하기 위해 게시 인스턴스에 대해 `AssetDownloadServlet` OSGi 구성 요소를 사용할 수 없습니다. 작성자 인스턴스에서 다운로드 기능이 필요하지 않은 경우 작성자에서 서블릿을 비활성화합니다.
-
-DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화하십시오. Adobe에서는 일상적인 다운로드 요구 사항에 영향을 주지 않고 허용되는 다운로드 크기를 가능한 한 낮게 설정하는 것이 좋습니다. 값이 높으면 성능에 영향을 줄 수 있습니다.
-
-1. 게시 실행 모드를 대상으로 하는 명명 규칙을 사용하여 폴더 만들기(즉, `config.publish`):
-
-   `/apps/<your-app-name>/config.publish`
-
-1. 구성 폴더에서 이름이 `nt:file`인 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 형식의 파일을 만듭니다.
-1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`을(를) 다음으로 채웁니다. 다운로드의 최대 크기(바이트)를 `asset.download.prezip.maxcontentsize` 값으로 설정합니다. 아래 샘플은 ZIP 다운로드의 최대 크기를 100KB 이하로 구성합니다.
-
-   ```java
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## 에셋 다운로드 서블릿 비활성화 {#disable-asset-download-servlet}
-
-다운로드 기능이 필요하지 않은 경우 서블릿을 비활성화하여 DoS와 유사한 위험을 방지하십시오. 자산 다운로드 요청을 차단하도록 Dispatcher 구성을 업데이트하여 `Asset Download Servlet` 작성자 및 게시 인스턴스에서 [!DNL Experience Manager]을(를) 비활성화할 수 있습니다. OSGi 콘솔을 통해 서블릿을 수동으로 비활성화할 수도 있습니다.
-
-1. Dispatcher 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring)에 새 규칙을 추가하십시오.
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
 ## OnTime 또는 OffTime 렌디션 {#on-off-time-rendition}
 
 `OnOffTimeAssetAccessFilter` 서비스를 사용하려면 OSGi 구성을 만들어야 합니다. 이 서비스를 사용하면 설정/해제 시간 설정에 따라 에셋 자체 외에도 렌디션 및 메타데이터에 대한 액세스를 차단할 수 있습니다. OSGi 구성은 `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`에 대한 구성이어야 합니다. 아래 단계를 따르십시오.
@@ -140,7 +114,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 1. Git의 프로젝트 코드에서 `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`에 구성 파일을 만듭니다. 파일에는 해당 OSGi 구성 요소에 대한 빈 OSGi 구성을 의미하는 `{}`이(가) 포함되어야 합니다. 이 작업을 수행하면 서비스가 활성화됩니다.
 1. [!DNL Cloud Manager]을(를) 통해 이 새 구성을 포함한 코드를 배포합니다.
 1. 배포되면 에셋의 설정/해제 시간 설정에 따라 렌디션 및 메타데이터에 액세스할 수 있습니다. 현재 날짜 또는 시간이 설정 시간 이전이나 해제 시간 이후인 경우 오류 메시지가 표시됩니다.
-빈 OSGi 구성을 추가하는 방법에 대한 자세한 내용은 이 [안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko)를 참조하십시오.
+빈 OSGi 구성을 추가하는 방법에 대한 자세한 내용은 이 [안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en)를 참조하십시오.
 
 ## 팁 및 제한 사항 {#tips-limitations}
 
@@ -164,5 +138,5 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 >[!MORELIKETHIS]
 >
 >* [DRM 보호 에셋 다운로드](drm.md)
->* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)
+>* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [지원되는 Adobe Creative Cloud 앱 내에서 Adobe Assets 링크를 사용하여 에셋을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)

@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1916'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
 | × | 지원되지 않습니다. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [자산 계산 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ko) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ko#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 슬링 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko) |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [자산 계산 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 슬링 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -64,6 +64,10 @@ ht-degree: 5%
 | 폴더 삭제 | ✓ | ✓ | - | ✓ | - | - |
 | 폴더 복사 | ✓ | ✓ | - | ✓ | - | - |
 | 폴더 이동 | ✓ | ✓ | - | ✓ | - | - |
+
+>[!NOTE]
+>
+> Adobe에서는 AEM에서의 바이너리 처리를 피하는 것과 관련된 모범 사례를 위반하므로 자산 패키지를 업로드하지 않는 것이 좋습니다. JCR 패키지를 통해 에셋을 업로드하면 AEM as a Cloud Service의 해당 에셋에서 처리가 트리거되지 않습니다.
 
 ## 자산 업로드 {#asset-upload}
 
