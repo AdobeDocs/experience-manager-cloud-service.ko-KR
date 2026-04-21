@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -187,7 +187,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 
 ## 론치를 소스와 비교 {#compare-launch-to-source}
 
-재설정 또는 홍보 작업을 수행하기 전에 항상 소스와 론치를 비교하여 변경 사항과 콘텐츠에 미치는 영향을 확인하는 것이 좋습니다(두 작업 모두 타겟 콘텐츠를 덮어씀).
+**[Rebase](#rebase-a-launch-from-source)** 또는 **[Promote](#promote-a-launch-to-source)** 작업을 수행하기 전에 항상 소스와 Launch를 비교하여 변경 사항과 콘텐츠에 미치는 영향을 확인하는 것이 좋습니다(두 작업 모두 대상 콘텐츠를 덮어쓰기).
 
 1. 콘텐츠 조각 콘솔로 이동합니다.
 
@@ -261,9 +261,17 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 론치를 사용하면 �
 >
 >**Launch와 Source 비교**&#x200B;에서 시작을 **[다시 설정](#compare-launch-to-source)**&#x200B;할 수도 있습니다.
 
+>[!NOTE]
+>
+>**Rebase** 또는 **Promote** 동작 전에는 항상 [소스와 론치를 비교](#compare-launch-to-source)하여 변경 내용과 콘텐츠에 미치는 영향을 확인하는 것이 좋습니다. 두 동작 모두 대상 콘텐츠를 덮어쓰기 때문입니다.
+
 ## 론치 홍보(Source) {#promote-a-launch-to-source}
 
 론치를 게시할 준비가 되면 소스에 복사해야 합니다. 콘솔에서 이 작업을 수행하거나 특정 날짜 및 시간에 자동으로 수행되도록 설정을 구성할 수 있습니다.
+
+>[!NOTE]
+>
+>**Rebase** 또는 **Promote** 동작 전에는 항상 [소스와 론치를 비교](#compare-launch-to-source)하여 변경 내용과 콘텐츠에 미치는 영향을 확인하는 것이 좋습니다. 두 동작 모두 대상 콘텐츠를 덮어쓰기 때문입니다.
 
 ### 수동으로 승격 {#promote-manually}
 
