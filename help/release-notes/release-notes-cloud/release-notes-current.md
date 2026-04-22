@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c9ab1fefa8170a1397eb5801f26128e82e7cd4ca
+source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
 workflow-type: tm+mt
 source-wordcount: '2180'
 ht-degree: 27%
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 2026년 3월 릴리스 개요 비디오를 통해 2026.3.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3483067/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
 
@@ -148,7 +148,7 @@ Content Advisor는 캠페인 개요 기반 제안, 상황별 제안, Dynamic Med
 이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
 
 **확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 향상**
-적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
+적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
 
 **Forms Manager에서 버전 관리 지원**
 이제 Forms Manager [적응형 Forms(핵심 구성 요소 및 기초 구성 요소)](/help/forms/manage-form-versions-forms-manager.md), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
@@ -163,7 +163,7 @@ Content Advisor는 캠페인 개요 기반 제안, 상황별 제안, Dynamic Med
 
 #### Cloud Manager 서버 {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 최신 IDE는 MCP(Model Context Protocol)를 사용하여 대형 언어 모델(LLM)이 MCP 서버에 의해 노출된 도구를 호출할 수 있도록 합니다. 개발자는 낮은 수준의 API 사양과 직접 통합하는 대신 단순히 의도를 자연어로 설명할 수 있습니다.
 
@@ -215,7 +215,7 @@ Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하�
 
 #### AEM Edge 기능(Beta 프로그램) {#edge-functions}
 
-AEM Edge 함수를 사용하면 CDN 계층에서 JavaScript을 실행할 수 있으므로 데이터 처리가 최종 사용자에게 더 가까워집니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
+[AEM Edge 함수](/help/implementing/developing/introduction/edge-functions.md)를 사용하면 CDN 계층에서 JavaScript을 실행하여 최종 사용자에게 더 가까운 데이터 처리를 제공할 수 있습니다. 이렇게 하면 지연 시간이 줄어들고 에지에서 반응성이 뛰어나고 역동적인 경험을 할 수 있습니다.
 
 일반적인 사용 사례는 다음과 같습니다.
 
