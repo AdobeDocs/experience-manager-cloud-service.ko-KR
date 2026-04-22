@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ IC(대화형 통신) 편집기는 Adobe Experience Manager Forms 내의 직관�
 
 | **기능** | **주요 기능** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG 편집기** | - 정확한 렌더링을 위한 픽셀 완벽함 <br> - 글꼴 스타일 컨트롤 <br> - 전문적인 디자인을 위한 유연한 레이아웃 |
-| **레이아웃 컨트롤** | - 위치 지정(절대 및 흐름) <br> - 드래그 앤 드롭 기능이 간단함 <br> - 마스터 페이지를 사용하여 일관된 레이아웃을 정의합니다. |
-| **구성 요소** | - 표, 차트 및 바코드를 포함하여 새로 도입된 구성 요소에 액세스 <br> - 더 빠른 디자인을 위해 사용할 준비가 된 구성 요소 |
-| **데이터 바인딩** | - 구성 요소를 데이터 원본 <br>에 직접 연결 - 개인화된 통신을 위해 필드를 자동으로 미리 채웁니다. |
-| **규칙 편집기** | - 동적 유효성 검사 구성 <br> - 인터랙티브에 대한 계산 및 조건부 논리 추가 |
-| **조각 라이브러리** | - 모듈식 기본 구성 요소(머리글, 바닥글, 면책조항, 아이콘) <br> - 여러 통신 간의 일관성 유지 |
-| **템플릿** | - 커뮤니케이션 전반에 걸쳐 일관된 브랜딩 및 구조 유지 |
+| **WYSIWYG 편집기** | - 정확한 렌더링을 위한 픽셀 완벽함 <br> - [글꼴 스타일 컨트롤](/help/forms/interactive-communication/add-custom-fonts.md) <br> - 전문적인 디자인을 위한 유연한 레이아웃 |
+| [**레이아웃 컨트롤**](/help/forms/interactive-communication/handle-content-overflow.md) | - 위치 지정(절대 및 흐름) <br> - 드래그 앤 드롭 기능이 간단함 <br> - 마스터 페이지를 사용하여 일관된 레이아웃을 정의합니다. |
+| **구성 요소** | - [테이블](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), 차트 및 [바코드](/help/forms/interactive-communication/barcode.md) <br>를 포함하여 새로 도입된 구성 요소에 액세스할 수 있습니다. - 더 빠른 디자인을 위해 사용할 준비가 된 구성 요소 |
+| [**데이터 바인딩**](/help/forms/interactive-communication/configure-data-binding.md) | - 구성 요소를 데이터 원본 <br>에 직접 연결 - 개인화된 통신을 위해 필드를 자동으로 미리 채웁니다. |
+| [**규칙 편집기**](/help/forms/interactive-communication/use-the-rule-editor.md) | - 동적 유효성 검사 구성 <br> - 인터랙티브에 대한 계산 및 조건부 논리 추가 |
+| [**조각 라이브러리**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - 모듈식 기본 구성 요소(머리글, 바닥글, 면책조항, 아이콘) <br> - 여러 통신 간의 일관성 유지 |
+| [**템플릿**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - 커뮤니케이션 전반에 걸쳐 일관된 브랜딩 및 구조 유지 |
 
 ## 온보딩
 
 대화형 통신(IC) 기능은 조기 액세스(EA) 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 전자 메일 ID에서 환경 ID 및 조직 ID로 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)을(를) 전자 메일로 보내십시오. Adobe에서 등록을 확인하면 [서비스 온보드](/help/forms/setup-forms-cloud-service.md) 설명서에 따라 AEM Forms 환경에서 대화형 통신을 사용하도록 설정하십시오.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 다음 단계
 
