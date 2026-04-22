@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 93%
@@ -85,7 +85,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
    * **론치 제목**: 론치의 이름입니다. 작성자에게 의미가 있는 이름이어야 합니다.
    * **기존 콘텐츠 사용**: 론치를 만드는 데 원래 콘텐츠가 사용됩니다.
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
-   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 [Live Copy](/help/sites-cloud/administering/msm/overview.md)로 만들어 이 작업을 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다.-->
+   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 [Live Copy](/help/sites-cloud/administering/msm/overview.md)로 만들어 이 작업을 수행합니다. 기본적으로 이 옵션이 선택되어 있습니다.
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름). [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
 
    ![론치 속성](/help/sites-cloud/authoring/assets/launches-properties.png)
