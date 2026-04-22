@@ -57,7 +57,7 @@ IC(대화형 통신) 편집기는 Adobe Experience Manager Forms 내의 직관�
 
 대화형 통신(IC) 기능은 조기 액세스(EA) 프로그램을 통해 사용할 수 있습니다. 액세스를 요청하려면 공식 전자 메일 ID에서 환경 ID 및 조직 ID로 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)을(를) 전자 메일로 보내십시오. Adobe에서 등록을 확인하면 [서비스 온보드](/help/forms/setup-forms-cloud-service.md) 설명서에 따라 AEM Forms 환경에서 대화형 통신을 사용하도록 설정하십시오.
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 다음 단계
 
