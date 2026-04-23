@@ -6,7 +6,7 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 12%
@@ -38,11 +38,21 @@ MSM 개념에 대한 자세한 개요는 [콘텐츠 재사용: 다중 사이트 
 
 콘텐츠 조각 편집기 내의 기능과 결합된 콘텐츠 조각용 MSM을 사용하면 필드 수준에서 상속을 중단하거나 복원할 수 있습니다.
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >콘텐츠 조각용 MSM은 **Assets** 콘솔을 통해 콘텐츠 조각을 사용하는 경우에만 사용할 수 있습니다.
 >
 >MSM 기능은 *콘텐츠 조각* 콘솔을 사용할 때 **사용할 수 없습니다**.
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## 방법 {#how-to}
 

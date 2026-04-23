@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 67%
@@ -33,6 +33,11 @@ ht-degree: 67%
 * 편집기에서 [버전 세부 정보를 보기](#view-version-history)하는 기능. 선택한 버전으로 되돌릴 수도 있습니다.
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+-->
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ ht-degree: 67%
   >
   >기본 모델의 정의에 따라 특정 형식의 [유효성 검사](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation)가 필드에 적용될 수 있습니다.
 
-![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
+![콘텐츠 조각 편집기 - 개요](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 콘텐츠 조각 구조 탐색 {#navigate-structure}
 
@@ -107,13 +112,13 @@ ht-degree: 67%
 
 편집기의 여러 부분에서 링크 아이콘을 볼 수 있습니다. 이 아이콘은 표시된 항목(예: 콘텐츠 조각 모델, 상위 참조 또는 참조된 조각)을 여는 데 사용할 수 있습니다.
 
-![콘텐츠 조각 편집기 - 링크 아이콘](assets/cf-authoring-link-icon.png)
+![콘텐츠 조각 편집기 - 링크 아이콘](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### 구조 트리 {#structure-tree}
 
 편집기 도구 모음에서 **구조 트리** 탭을 열어 콘텐츠 조각의 계층 구조와 해당 참조를 표시합니다. 링크 아이콘을 사용하여 참고를 탐색합니다.
 
-![콘텐츠 조각 편집기 - 구조 트리](assets/cf-authoring-structure-tree.png)
+![콘텐츠 조각 편집기 - 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -151,11 +156,11 @@ ht-degree: 67%
    >
    >첫 번째 변형을 만든 후에는 기존 변형이 동일한 패널에 표시됩니다.
 
-   ![콘텐츠 조각 편집기 - 첫 번째 변형 만들기](assets/cf-authoring-create-variation-01.png)
+   ![콘텐츠 조각 편집기 - 첫 번째 변형 만들기](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. 원하는 경우 대화 상자에서 변형에 대한 **제목**&#x200B;과 **설명**&#x200B;을 입력합니다.
 
-   ![콘텐츠 조각 편집기 - 변형 만들기 대화 상자](assets/cf-authoring-create-variation-02.png)
+   ![콘텐츠 조각 편집기 - 변형 만들기 대화 상자](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. 변형 **만들기**. 목록에 표시됩니다.
 
@@ -191,7 +196,7 @@ ht-degree: 67%
 
 1. **변형** 패널에서 삭제 아이콘(휴지통)을 선택합니다.
 
-   ![콘텐츠 조각 편집기 - 변형 삭제 아이콘](assets/cf-authoring-delete-variation.png)
+   ![콘텐츠 조각 편집기 - 변형 삭제 아이콘](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. 대화 상자가 열립니다. **삭제**&#x200B;를 선택하여 작업을 확인합니다.
 
@@ -205,7 +210,7 @@ ht-degree: 67%
 
 일반 텍스트 또는 Markdown으로 정의된 필드에는 (화면에) 서식 지정 옵션이 없는 간단한 텍스트 상자가 있습니다.
 
-![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## 여러 줄 텍스트 필드 편집 - 리치 텍스트 {#edit-multi-line-text-fields-rich-text}
 
@@ -231,7 +236,7 @@ ht-degree: 67%
 
 예:
 
-![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면 전환](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면 전환](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -243,7 +248,7 @@ ht-degree: 67%
 
 예:
 
-![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면](assets/cf-authoring-multilinetext-fullscreen.png)
+![콘텐츠 조각 편집기 - 여러 줄 텍스트 - 전체 화면](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### 통계 - 리치 텍스트 {#statistics-rich-text}
 
@@ -251,7 +256,7 @@ ht-degree: 67%
 
 예:
 
-![콘텐츠 조각 편집기 - 통계](assets/cf-authoring-multilinetext-statistics.png)
+![콘텐츠 조각 편집기 - 통계](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### 비교 및 동기화 - 리치 텍스트 {#compare-and-synchronize-rich-text}
 
@@ -274,13 +279,13 @@ ht-degree: 67%
 
   >[!CAUTION]
   >
-  >*동기화는&#x200B;**기본**&#x200B;의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
+  >*동기화는&#x200B;**기본**의 변경 내용을 변형*&#x200B;에 복사하는 데에만 사용할 수 있습니다.
   >
   >*변형의 변경 내용을&#x200B;**기본***에 전송하는 선택은 할 수 없습니다.
 
 예: 변형 콘텐츠를 완전히 다시 작성하여 동기화를 통해 새 콘텐츠를 **기본** 콘텐츠로 대체할 수 있는 시나리오:
 
-![콘텐츠 조각 편집기 - 비교 및 &#x200B;&#x200B;동기화](assets/cf-authoring-multilinetext-compare.png)
+![콘텐츠 조각 편집기 - 비교 및 &#x200B;&#x200B;동기화](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## 참조 관리 {#manage-references}
 
@@ -333,7 +338,7 @@ ht-degree: 67%
 * 새 자산 파일을 직접(예: 파일 시스템에서) **콘텐츠 참조** 필드에 드래그 앤 드롭합니다.
 * **자산 추가** 작업을 사용한 다음 **자산 검색**&#x200B;을 선택하거나 **업로드**&#x200B;하여 사용할 적절한 선택기를 엽니다.
 
-  ![콘텐츠 조각 편집기 - 자산 추가 옵션](assets/cf-authoring-add-asset-options.png)
+  ![콘텐츠 조각 편집기 - 자산 추가 옵션](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### 참조 원격 Assets {#reference-remote-assets}
 
@@ -341,11 +346,11 @@ ht-degree: 67%
 
 1. 자산을 검색할 때 원격 **저장소**&#x200B;를 지정하십시오.
 
-   ![콘텐츠 조각 편집기 - 원격에서 에셋 선택](assets/cf-authoring-remote-asset-01.png)
+   ![콘텐츠 조각 편집기 - 원격에서 에셋 선택](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. 선택 후 위치는 에셋 정보에서 볼 수 있습니다.
 
-   ![콘텐츠 조각 편집기 - 원격 저장소의 자산](assets/cf-authoring-remote-asset-02.png)
+   ![콘텐츠 조각 편집기 - 원격 저장소의 자산](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### 원격 Assets - 제한 사항 {#remote-assets-limitations}
 
@@ -392,13 +397,32 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 예:
 
-![콘텐츠 조각 편집기 - 참조 표시](assets/cf-authoring-show-references-link.png)
+![콘텐츠 조각 편집기 - 참조 표시](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 모든 관련 참조를 표시하는 창이 열립니다. 참조를 열려면 이름이나 제목 또는 링크 아이콘을 선택합니다.
 
 예:
 
-![콘텐츠 조각 편집기 - 참조 표시](assets/cf-authoring-show-references.png)
+![콘텐츠 조각 편집기 - 참조 표시](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## 속성 및 태그 보기 {#view-properties-tags}
 
@@ -407,7 +431,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 * **콘텐츠 조각**&#x200B;용 - **기본**&#x200B;이 현재 선택되는 경우
 * 특정 **변형**&#x200B;용
 
-![콘텐츠 조각 편집기 - 속성](assets/cf-authoring-properties.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 속성](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png)
 
 ### 속성 및 태그 편집 {#edit-properties-tags}
 
@@ -417,7 +443,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 * **설명**
 * **태그**: 드롭다운 목록 또는 선택 대화 상자 사용
 
-  ![콘텐츠 조각 편집기 - 태그 관리](assets/cf-authoring-edit-tags.png)
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![콘텐츠 조각 편집기 - 태그 관리](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png)
 
 ### 콘텐츠 조각 모델 열기 {#open-content-fragment-model}
 
@@ -425,7 +453,7 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 예:
 
-![콘텐츠 조각 편집기 - 콘텐츠 조각 모델 열기](assets/cf-authoring-open-model.png)
+![콘텐츠 조각 편집기 - 콘텐츠 조각 모델 열기](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## 버전 내역 보기 {#view-version-history}
 
@@ -435,7 +463,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 >
 >콘텐츠 조각이 게시되면 새 버전이 생성됩니다.
 
-![콘텐츠 조각 편집기 - 버전 내력 개요](assets/cf-authoring-version-history-overview.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 버전 내력 개요](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### 버전 비교 {#compare-version}
 
@@ -447,7 +477,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 1. **비교**&#x200B;를 선택합니다.
 
-![콘텐츠 조각 편집기 - 버전 기록 비교](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 버전 기록 비교](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 이렇게 하면 현재 버전의 컨텐츠와 선택한 이전 버전의 컨텐츠 조각 간의 차이점을 표시하는 보기가 열립니다. **변경 내용이 있는 변형** 드롭다운에서 기본 콘텐츠 및/또는 변형 콘텐츠의 차이점을 표시하도록 선택할 수 있습니다.
 
@@ -456,7 +488,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 * 녹색: (현재 버전에) 추가된 콘텐츠를 나타냅니다.
 * 빨간색: (현재 버전에서) 제거된 콘텐츠를 나타냅니다.
 
-![콘텐츠 조각 편집기 - 버전 기록 비교](assets/cf-authoring-version-history-compare-versions.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 버전 기록 비교](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### 버전으로 되돌리기 {#revert-version}
 
@@ -468,7 +502,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 1. **되돌리기**&#x200B;를 선택합니다.
 
-![콘텐츠 조각 편집기 - 버전 내력 되돌리기](assets/cf-authoring-version-history-revert.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 버전 내력 되돌리기](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## 언어 사본 보기 {#view-language-copies}
 
@@ -476,7 +512,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 예:
 
-![콘텐츠 조각 편집기 - 언어 열기 복사](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 언어 열기 복사](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -496,7 +534,9 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 * 기존 주석 편집
 * 댓글 삭제
 
-![콘텐츠 조각 편집기 - 댓글 탭](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![콘텐츠 조각 편집기 - 댓글 탭](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >

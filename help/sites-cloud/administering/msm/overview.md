@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2725'
 ht-degree: 91%
@@ -21,7 +21,7 @@ ht-degree: 91%
    * 콘텐츠를 한 번 만든 다음
    * 이 콘텐츠를 동일한 사이트의 다른 영역([Live Copy](#live-copies)를 통해) 또는 다른 사이트에서 사용할 수 있습니다.
 * 그런 다음 MSM은 소스 콘텐츠와 해당 Live Copy 간의 라이브 관계를 유지하여 다음 작업을 수행합니다.
-   * 소스 콘텐츠를 변경하면 소스 및 라이브 카피가 동기화됩니다.
+   * When you change the source content, the source and Live Copies are synchronized.
    * 개별 하위 페이지 및/또는 구성 요소에 대한 라이브 관계의 연결 해제하여 Live Copy의 콘텐츠만 조정할 수 있습니다.
 
 이 페이지는 MSM을 통한 콘텐츠 재사용에 대한 개요를 제공합니다. 다음 페이지는 관련 문제를 자세히 다룹니다.
@@ -32,9 +32,20 @@ ht-degree: 91%
 * [MSM 롤아웃 충돌](rollout-conflicts.md)
 * [MSM 모범 사례](best-practices.md)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!NOTE]
 >
->MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. [Assets용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md)(Assets 콘솔을 통해서만 사용 가능)을 참조하십시오.
+>MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+
+<!--
+>[!NOTE]
+>
+>MSM can also be used for Assets, and Content Fragments. See:
+>
+>* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+>* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
+-->
 
 ## 가능한 시나리오 {#possible-scenarios}
 
@@ -108,7 +119,7 @@ MSM 및 Live Copy에 대한 다양한 사용 사례가 있습니다. 다음과 �
   >
   >및
   >
-  >* 조정해야 하는 개별 사본 수입니다.
+  >* How much of the individual copies must be adjusted.
 
 ## UI의 MSM {#msm-from-the-ui}
 
@@ -123,7 +134,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 * **Live Copy 만들기** (**Sites**)
 
-   * MSM을 사용하면 [웹 사이트의 개별 페이지 또는 하위 분기에 대한 애드혹(일회성) 라이브 카피를 만들 수 있습니다](creating-live-copies.md#creating-a-live-copy-of-a-page). 예를 들어 하위 분기를 복제하여 제품의 새/업데이트 버전에 대한 정보를 제공할 수 있습니다. 이러한 방식으로 Live Copy를 만들면:
+   * MSM lets you [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website](creating-live-copies.md#creating-a-live-copy-of-a-page). For example, duplicating a sub-branch to provide information about a new/updated version of a product. 이러한 방식으로 Live Copy를 만들면:
       * 애드혹 Live Copy가 생성됩니다(블루프린트 구성은 필요하지 않음).
       * 페이지/분기의 Live Copy를 만드는 데 (즉시) 사용할 수 있습니다.
       * **동기화**&#x200B;가 필요합니다(**롤아웃** 버튼은 제공되지 않음).
@@ -138,15 +149,15 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 * **Live Copy 개요** (**Sites**)
 
-   * 이 콘솔을 통해 [블루프린트 및 해당 라이브 카피를 보고 관리](live-copy-overview.md)할 수 있습니다.
+   * This console lets you [view and manage your blueprint and its Live Copies](live-copy-overview.md).
 
 * **블루프린트** (**도구** - **Sites**)
 
-   * 이 콘솔을 통해 [블루프린트 구성을 만들고 관리](creating-live-copies.md#creating-a-blueprint-configuration)할 수 있습니다.
+   * This console lets you [create and manage your blueprint configurations](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
->MSM은 경험(페이지)의 일부이므로 페이지와 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 모두에서 사용할 수 있습니다.
+>MSM can be used with both pages and [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) as these fragments are part of an experience (page).
 
 >[!NOTE]
 >
@@ -178,7 +189,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!TIP]
 >
->개체 이름은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)을 참조하십시오.
+>See [Extending the Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) for the object names.
 
 ## Live Copy {#live-copies}
 
@@ -195,7 +206,7 @@ MSM Live Copy는 원본 소스와의 라이브 관계가 유지되는 특정 사
 
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 소스입니다.
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 `/content/wknd/us/en/` 및 `/content/wknd/ca/en` 노드 아래에 복사됩니다. 이를 Live Copy라고 합니다.
-* 작성자가 `/content/wknd/language-masters/en` 아래의 페이지를 변경합니다.
+* Authors change pages below `/content/wknd/language-masters/en`.
 * 트리거되면 MSM은 이러한 변경 내용을 Live Copy에 동기화합니다.
 
 ### Live Copy - 컴포지션 {#live-copies-composition}
@@ -204,14 +215,14 @@ MSM Live Copy는 원본 소스와의 라이브 관계가 유지되는 특정 사
 >
 >이 섹션의 다이어그램 및 설명은 잠재적 Live Copy의 스냅샷을 나타냅니다. 이 스냅샷은 포괄적이지는 않지만 특정 특성을 강조하는 개요를 제공합니다.
 
-처음 라이브 카피를 만들 때 선택한 소스 페이지는 라이브 카피에 1:1 기준으로 반영됩니다. 이후 Live Copy 내에서 직접 새 리소스(페이지 및/또는 단락)를 작성할 수 있으므로, 이러한 변형이 동기화에 미치는 영향을 알아두는 것이 좋습니다. 가능한 컴포지션은 다음과 같습니다.
+When you initially create a Live Copy, the selected source pages are reflected on a 1:1 basis in the Live Copy. 이후 Live Copy 내에서 직접 새 리소스(페이지 및/또는 단락)를 작성할 수 있으므로, 이러한 변형이 동기화에 미치는 영향을 알아두는 것이 좋습니다. 가능한 컴포지션은 다음과 같습니다.
 
 * [Live Copy가 아닌 페이지를 포함하는 Live Copy](#live-copy-with-non-live-copy-pages)
 * [중첩 Live Copy](#nested-live-copies)
 
 Live Copy의 기본 형식은 다음으로 구성됩니다.
 
-* 선택한 소스 페이지를 1:1 기준으로 반영하는 라이브 카피 페이지.
+* Live Copy pages that reflect the selected source pages on a 1:1 basis.
 * 1개의 구성 정의
 * 모든 리소스에 대해 정의된 라이브 관계:
    * Live Copy 리소스를 해당 블루프린트/소스와 연결합니다.
@@ -284,7 +295,7 @@ Live Copy의 소스는 일반 페이지이거나 블루프린트 구성으로 �
 롤아웃 구성은 Live Copy가 소스 콘텐츠와 동기화되는 시기와 방법을 정의합니다. 롤아웃 구성은 트리거와 하나 이상의 동기화 작업으로 구성됩니다.
 
 * **트리거** - 트리거는 소스 페이지 활성화와 같이 라이브 작업 동기화를 발생시키는 이벤트입니다. MSM은 사용할 수 있는 트리거를 정의합니다.
-* **동기화 작업** - 동기화 작업은 Live Copy에서 수행되어 이를 소스와 동기화합니다. 콘텐츠 복사, 하위 노드 순서 지정, Live Copy 페이지 활성화 등의 작업을 예로 들 수 있습니다. MSM은 몇 가지 동기화 작업을 제공합니다.
+* **동기화 작업** - 동기화 작업은 Live Copy에서 수행되어 이를 소스와 동기화합니다. 콘텐츠 복사, 하위 노드 순서 지정, Live Copy 페이지 활성화 등의 작업을 예로 들 수 있습니다. MSM provides several synchronization actions.
 
 >[!NOTE]
 >
@@ -294,7 +305,7 @@ Live Copy의 소스는 일반 페이지이거나 블루프린트 구성으로 �
 
 ### 롤아웃 충돌 {#rollout-conflicts}
 
-특히 작성자가 소스와 Live Copy의 콘텐츠를 모두 편집할 경우 롤아웃이 복잡해질 수 있습니다. 따라서 AEM에서 롤아웃 중에 발생할 수 있는 [충돌을 처리하는 방법](rollout-conflicts.md)을 알아두는 것이 유용합니다.
+특히 작성자가 소스와 Live Copy의 콘텐츠를 모두 편집할 경우 롤아웃이 복잡해질 수 있습니다. So it is useful to be aware of how AEM handles any [conflicts that might occur during rollout](rollout-conflicts.md).
 
 ### 상속 및 동기화 일시 중단 및 취소 {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -302,7 +313,7 @@ Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소�
 
 Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하여 페이지 속성 및 구성 요소를 변경할 수 있습니다. 상속을 일시 중단하면 페이지 속성 및 구성 요소는 더 이상 소스와 동기화되지 않습니다.
 
-개별 페이지 편집 시 작성자는 구성 요소에 대한 **상속을 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 수행되지 않습니다. 상속 및 동기화 취소는 콘텐츠의 하위 섹션을 사용자 정의해야 할 때 유용합니다.
+개별 페이지 편집 시 작성자는 구성 요소에 대한 **상속을 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 수행되지 않습니다. Cancelling inheritance and synchronization is useful when sub-sections of the content must be customized.
 
 ### Live Copy 분리 {#detaching-a-live-copy}
 
@@ -325,12 +336,12 @@ Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하�
 1. 소스 사이트의 콘텐츠를 개발합니다.
 1. 사용할 롤아웃 구성을 결정합니다.
 
-   1. MSM [여러 사용 사례를 충족할 수 있는 여러 롤아웃 구성을 설치](live-copy-sync-config.md#installed-rollout-configurations)합니다.
-   1. 필요한 경우 [롤아웃 구성을 만들](live-copy-sync-config.md#creating-a-rollout-configuration)수 있습니다.
+   1. MSM [installs several rollout configurations](live-copy-sync-config.md#installed-rollout-configurations) that can satisfy several use cases.
+   1. Optionally you can [create a rollout configuration](live-copy-sync-config.md#creating-a-rollout-configuration) if necessary.
 
 1. [사용할 롤아웃 구성을 지정](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)해야 하는 위치를 결정하고 필요에 따라 구성합니다.
-1. 필요한 경우 Live Copy의 소스 콘텐츠를 식별하는 [블루프린트 구성을 만듭니다](creating-live-copies.md#creating-a-blueprint-configuration).
-1. [Live Copy 만들기](creating-live-copies.md#creating-a-live-copy).
+1. If necessary, [create a blueprint configuration](creating-live-copies.md#creating-a-blueprint-configuration) that identifies the source content of the Live Copy.
+1. [Create a Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. 필요에 따라 소스 콘텐츠를 변경합니다. 귀사에서 수립한 일반 콘텐츠 검토 및 승인 프로세스를 사용해야 합니다.
 1. 블루프린트를 [롤아웃](creating-live-copies.md#rolling-out-a-blueprint)하거나 변경 내용으로 [Live Copy를 동기화](creating-live-copies.md#synchronizing-a-live-copy)합니다.
 
