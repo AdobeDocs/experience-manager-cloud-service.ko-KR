@@ -24,7 +24,7 @@ JWT server-to-server authentication in AEM Forms, particularly for server-side i
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
 * Ensure that you have access to the [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specific to the environment you use.
-* Assign the [System Administrator or Developer role to access Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Assign the [System Administrator or Developer role to access Adobe Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## How to Generate an Access Token Using JWT Credentials?
 
@@ -110,7 +110,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
 >[!NOTE]
 >
-> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
+> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
