@@ -4,9 +4,9 @@ description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM의 MCP 통합을 통해 다양한 가상 사용자가 동일한 콘텐츠를
 
 * **API 배관 대신 자연어 상호 작용**
 MCP 도구는 사용 가능한 작업과 호출 방법을 설명합니다. LLM은 이러한 스키마를 사용하여 호출할 도구와 매개 변수를 결정합니다.
-* **응용 프로그램 간 일관된 경험**
+* **애플리케이션 전반에 걸쳐 일관된 경험 제공**
 여러 MCP 호환 애플리케이션에서 동일한 AEM MCP 도구를 사용할 수 있으므로 팀은 동일한 기본 AEM 기능을 호출하면서 가장 생산적인 위치에서 작업할 수 있습니다.
 * **보안 및 거버넌스 유지**
 AEM MCP 도구에 대한 요청은 인증된 사용자의 ID에서 실행되며, 각 도구는 사용자의 기존 AEM 권한을 시행합니다. AI 지원 작업은 AEM의 수동 작업과 동일한 액세스 규칙을 따릅니다.
@@ -52,10 +52,10 @@ AEM은 MCP 서버를 HTTP 끝점으로 노출합니다. 아래 나열된 엔드�
 
 | **MCP 서버** | **끝점** | **설명** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **콘텐츠** | `/content` | 페이지, 조각 및 에셋의 만들기, 읽기, 업데이트 및 삭제(CRUD)를 포함한 모든 하위 수준 콘텐츠 작업. |
-| **컨텐츠(읽기 전용)** | `/content-readonly` | 페이지, 조각 및 에셋에 대한 읽기 전용 콘텐츠 작업(가져오기, 목록/검색). |
+| **콘텐츠** | `/content` | 페이지 및 콘텐츠 조각에 대한 만들기, 읽기, 업데이트 및 삭제(CRUD), 에셋 가져오기 등 콘텐츠 작업. |
+| **컨텐츠(읽기 전용)** | `/content-readonly` | 페이지 및 콘텐츠 조각에 대한 읽기 전용 콘텐츠 작업(가져오기, 목록/검색). |
 | **Cloud Manager** | `/cloudmanager` | 프로그램, 환경, 저장소 및 파이프라인을 포함하여 트리거될 수도 있는 Cloud Manager 엔티티를 관리합니다. |
-| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
+| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
 
 각각의 MCP 서버에 의해 노출된 특정 툴들은 시간이 지남에 따라 진화할 수 있다. 실제로 MCP 지원 응용 프로그램에 다음과 같은 프롬프트를 통해 도구를 검색하도록 요청할 수 있습니다.
 
@@ -65,7 +65,7 @@ AEM은 MCP 서버를 HTTP 끝점으로 노출합니다. 아래 나열된 엔드�
 
 MCP 클라이언트는 MCP 프로토콜을 사용하여 툴 리스트 및 스키마를 검색하고, 이는 LLM이 사용할 수 있다.
 
-기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
+기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
 
 ## 지원되는 MCP 애플리케이션 {#supported-mcp-applications}
 
@@ -131,7 +131,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 각 사용자는 이 단계를 수행하거나 MCP 클라이언트 애플리케이션의 관리자는 지원되는 경우 이를 수행할 수 있습니다. 구성 세부 정보는 애플리케이션마다 조금씩 다릅니다. MCP 클라이언트는 빠르게 발전하고 있으며, 원격 MCP 서버에 대한 지원이 활발히 개발되고 있다. 원격 서버를 추가하기 위한 기능에 액세스하려면 개발자 모드를 활성화해야 할 수 있지만 일반적인 프로세스는 다음과 같습니다.
 
 1. 하나 이상의 AEM MCP 서버 URL 추가
-   * 위의 표에서 하나 이상의 MCP 끝점을 구성합니다. 예:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
+   * 위의 표에서 하나 이상의 MCP 끝점을 구성합니다. 예: `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. 연결 트리거
    * MCP 클라이언트 애플리케이션이 AEM MCP 서버에 연결을 시도하도록 구성을 저장하거나 활성화합니다
 1. Adobe ID으로 로그인
@@ -220,7 +220,7 @@ LLM 모델은 지속적으로 개선되고 있습니다. 시간이 지나면서 
 * **사람의 감독이 필요합니다.**
 LLM을 감독이 필요한 지식을 갖춘 조수로 생각하십시오. 광범위한 지식을 가지고 있으며 창의적인 해결책을 고안할 수 있지만, 지도와 검토를 통해 이점을 얻을 수 있습니다. 특히 중요한 작업의 결과를 확인하고 결과가 예상과 일치하지 않을 때 피드백을 제공합니다.
 
-* **도구 실행 자동 확인**
+* **도구 실행 자동 확인 시 주의하십시오.**
 Claude와 같은 일부 MCP 클라이언트 응용 프로그램은 LLM에 의해 요청된 도구 실행을 자동 승인하는 옵션을 제공합니다. 이 옵션은 콘텐츠 검색 또는 검색과 같은 읽기 전용 작업에는 편리할 수 있지만, 콘텐츠를 업데이트하거나 삭제하는 도구에는 주의하십시오. AEM 환경을 수정하는 작업을 확인하기 전에 각 도구 실행 요청을 검토하십시오.
 
 ## 제한 사항 {#limitations}
