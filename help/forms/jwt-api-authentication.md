@@ -1,52 +1,55 @@
 ---
-title: JWT(JSON 웹 토큰) 인증을 설정하는 방법
-description: Adobe Experience Manager Forms as a Cloud Service에 대한 JWT(JSON 웹 토큰) 인증을 구성하는 방법에 대해 알아봅니다
+title: How to set up JWT (JSON Web Token) Authentication?
+description: Learn how to configure JWT (JSON Web Token) authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
-# JWT(JSON 웹 토큰) 서버 간 인증
+# JWT (JSON Web Token) Server-to-Server Authentication
 
-특히 AEM Forms과의 서버측 통합을 위한 AEM as a Cloud Service의 JWT 서버 간 인증에는 AEM 서비스와 안전하게 상호 작용하기 위한 특정 프로세스가 포함됩니다. JWT 서버 간 인증은 AEM Developer Console에서 지원됩니다.
+JWT server-to-server authentication in AEM Forms, particularly for server-side integrations with AEM as a Cloud Service, involves a specific process to securely interact with AEM services. JWT server-to-server authentication is supported by AEM Developer Console.
 
 ## 사전 요구 사항
 
 시작하기 전에 다음 전제 조건이 충족되는지 확인하십시오.
 
-* 사용하는 환경에 맞는 [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)에 액세스할 수 있는지 확인하십시오.
-* Adobe Cloud Manager에 액세스하려면 [시스템 관리자 또는 개발자 역할을 할당하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Ensure that you have access to the [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specific to the environment you use.
+* Assign the [System Administrator or Developer role to access Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
-## JWT 자격 증명을 사용하여 액세스 토큰을 생성하는 방법
+## How to Generate an Access Token Using JWT Credentials?
 
-JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 아래 단계를 따르십시오.
+Follow the steps below which shows you how to generate an access token from the JWT credentials.
 
 1. **Adobe Cloud Manager**
 
-   1. [Cloud Manager 계정](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)에 로그인합니다.
-   2. 선택한 프로그램에서 **[!UICONTROL 프로그램 개요]**&#x200B;를 클릭합니다.
+   1. Log in to your [Cloud Manager account](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
+   2. On your selected program, click **[!UICONTROL Program Overview]**.
 
-      ![Cloud Manager 계정](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![Cloud Manager Account](/help/forms/assets/jwt-cloud-manager-landing.png)
 
-   3. 프로그램에서 세 점 메뉴를 클릭하고 **[!UICONTROL Developer Console]**&#x200B;을(를) 선택합니다.
+   3. On your program, click three-dots menu and select **[!UICONTROL Developer Console]**.
 
       ![개발자 콘솔](/help/forms/assets/jwt-developer-console.png)
 
 2. **AEM Developer Console**
-   1. AEM Developer Console에 로그인
-   2. 상단 메뉴 모음에 있는 **[!UICONTROL 통합]**&#x200B;을 클릭합니다.
+   1. Login in AEM Developer Console
+   2. Click **[!UICONTROL Integrations]** located on the upper menu bar.
 
       ![통합](/help/forms/assets/jwt-integrations.png)
 
-   3. **[!UICONTROL 새 기술 계정을 만듭니다]** 옵션을 클릭합니다.
+   3. Click the option to **[!UICONTROL Create new technical account]**.
 
-      ![새 기술 계정 만들기](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![Create new technical account](/help/forms/assets/jwt-creae-new-tech-account.png)
 
    새 기술 계정 만들기를 클릭하면 개인 키, 공개 키, 만료 날짜를 포함한 기타 기술 계정 정보와 함께 클라이언트 ID 및 클라이언트 암호와 같은 액세스 토큰을 생성하는 데 필요한 정보가 생성됩니다.
 
@@ -107,7 +110,7 @@ JWT 자격 증명에서 액세스 토큰을 생성하는 방법을 보여주는 
 
 >[!NOTE]
 >
-> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
+> 서비스 자격 증명과 Adobe IMS API를 사용하여 액세스 토큰을 생성하는 방법에 대해 자세히 알아보려면 [여기를 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)하십시오.
 
 이제 생성된 액세스 토큰을 사용하여 개발, 스테이지 또는 프로덕션 환경에 대한 API를 호출할 수 있습니다.
 
