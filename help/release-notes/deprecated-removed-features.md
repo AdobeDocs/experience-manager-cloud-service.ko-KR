@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: a536fc6203a589bef76387d5afbe6a8460630163
+source-git-commit: 3b1afd0b917a49e44f90969841d8c7d09a5158c0
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 72%
+source-wordcount: '4141'
+ht-degree: 70%
 
 ---
 
@@ -33,12 +33,11 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 >
 >[더 이상 사용되지 않는 API](#aem-apis)가 **2026년 5월 4일**&#x200B;에 제거됩니다. 다음 주요 날짜 및 영향을 검토하십시오.
 >
->* **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
+>* **2026년 1월 26일부터**: 최근에 파이프라인이 실행된 경우 작업 센터 알림 이메일이 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 >* **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다. *이로 인해 코드 변경 내용의 유효성을 검사하고 해제하는 기능이 느려질 수 있습니다.*
 >* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;됩니다. 더 이상 사용되지 않는 API 사용이 제거될 때까지 배포가 차단됩니다. *시간이 중요한 업데이트를 릴리스할 수 없으며 비즈니스 운영에 영향을 줄 수 있습니다.*
->* **2026년 5월 4일**: 더 이상 사용되지 않는 API를 사용하는 환경은 중요한 Adobe 릴리스 업데이트를 받지 않습니다&#x200B;**. 따라서 성능 및 가용성에 대한 Adobe의 표준 약정이 적용되지 않습니다.** 그 결과, 새로운 기능이나 버그 수정을 받지 않고, 애플리케이션 안정성과 가동 시간에 부정적인 영향을 미치고, 보안 위험 노출이 더 증가할 수 있습니다.
+>* **2026년 5월 4일**: 더 이상 사용되지 않는 API를 사용하는 환경은 중요한 Adobe 릴리스 업데이트를 받지 않습니다&#x200B;**. 따라서 성능 및 가용성에 대한 Adobe의 표준 약정이 적용되지 않습니다.**&#x200B;그 결과, 새로운 기능이나 버그 수정을 받지 않고, 애플리케이션 안정성과 가동 시간에 부정적인 영향을 미치고, 보안 위험 노출이 더 증가할 수 있습니다. Adobe 릴리스 업데이트를 다시 받으려면 전체 스택 파이프라인을 성공적으로 실행해야 합니다. 그러면 며칠 내에 업데이트가 적용됩니다.
 >
->배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오.
 
 ## 사용하지 않는 기능 {#deprecated-features}
 
@@ -48,7 +47,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>와 함께 사용하는<br> AEM 콘텐츠 조각 게재 [콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 기능](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 없음 |
-| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](https://www.aem.live/docs/aem-authoring)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) |
+| Sites | [SPA 편집기](/help/implementing/developing/hybrid/introduction.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 기본 편집기는 다음과 같습니다. <br>- [시각적 편집을 위한 범용 편집기](https://www.aem.live/docs/aem-authoring).<br>- [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md). |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 이 기능은 곧 제거될 예정입니다. |
 | Sites | [Experience Cloud 설정 자동화](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 없음 |
@@ -92,7 +91,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 >* **2026년 1월 26일부터**: 작업 센터 알림 전자 메일이 이러한 API 사용을 제거하기 위한 미리 알림으로 전송됩니다.
 >* **2026년 2월 26일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **일시 중지**&#x200B;됩니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인을 진행할 수 있도록 문제를 재정의할 수 있습니다. *이로 인해 코드 변경 내용의 유효성을 검사하고 해제하는 기능이 느려질 수 있습니다.*
 >* **2026년 3월 30일**: 이러한 API를 사용하는 코드가 포함된 Cloud Manager 파이프라인은 **코드 품질** 단계 동안 **실패**&#x200B;됩니다. 더 이상 사용되지 않는 API 사용이 제거될 때까지 배포가 차단됩니다. *시간이 중요한 업데이트를 릴리스할 수 없으며 비즈니스 운영에 영향을 줄 수 있습니다.*
->* **2026년 5월 4일**: 더 이상 사용되지 않는 API를 사용하는 환경은 중요한 Adobe 릴리스 업데이트를 받지 않습니다&#x200B;**. 따라서 성능 및 가용성에 대한 Adobe의 표준 약정이 적용되지 않습니다.** 그 결과, 새로운 기능이나 버그 수정을 받지 않고, 애플리케이션 안정성과 가동 시간에 부정적인 영향을 미치고, 보안 위험 노출이 더 증가할 수 있습니다.
+>* **2026년 5월 4일**: 더 이상 사용되지 않는 API를 사용하는 환경은 중요한 Adobe 릴리스 업데이트를 받지 않습니다&#x200B;**. 따라서 성능 및 가용성에 대한 Adobe의 표준 약정이 적용되지 않습니다.**&#x200B;그 결과, 새로운 기능이나 버그 수정을 받지 않고, 애플리케이션 안정성과 가동 시간에 부정적인 영향을 미치고, 보안 위험 노출이 더 증가할 수 있습니다.
 >
 >배포 블록을 방지하려면 2026년 3월 30일 이전에 API 사용을 제거하십시오.
 
@@ -198,61 +197,61 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>이 API는 내부적으로만 사용할 수 있습니다.</td>
     <td>9/23/2024</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>10/31/2022</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
     <td>10/31/2022</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>대신 org.apache.sling.xss를 사용하십시오.</td>
     <td>12/12/2023</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>이 API는 더 이상 사용되지 않습니다.</td>
-    <td>2024/07/10</td>
-    <td>2026년 9월 30일</td>
+    <td>07/10/2024</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>이 API는 commons-lang(2021년 이후 더 이상 사용되지 않음)에 따라 더 이상 사용되지 않습니다.</td>
     <td>11/30/2025</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>이 API는 더 이상 지원되지 않습니다.</td>
-    <td>2026년 1월 1일</td>
-    <td>2026년 9월 30일</td>
+    <td>01/01/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>2/13/2026</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>대신 org.apache.sling.xss를 사용하십시오.</td>
     <td>12/12/2023</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.parser<br>org.apache.apache.apache.apache.apache.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.parser.chm.assertion<br>org.apache.tika.parser.core<br>org.apache.tika.parser.chm.chm.parser.chm.exception<br>org.apache.tika.parser.crypto{27.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.geo.topic{4 0}org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.jdbc.iwana<br>org.tika 2}org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.oooxml<br>org.apache.tika.parser.microsoft.oooxml.xslf<br>org.apache.tika.parser.microsoft.ika.xml.xml206<br>org.apache.tika.microsoft.parser.microsoft <br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.apache.apache.parser ka.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.감정<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.oxml.xps<br><br><br><br><br><br><br><br><br><br><br></td>
     <td>이 Apache Tika 버전은 오래되었으므로 Cloud Service에서 제거됩니다. 최신 버전의 Apache Tika로 전환합니다.</td>
     <td>4/30/2026</td>
-    <td>2026년 9월 30일</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -286,7 +285,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
   <tr>
     <td>org.osgi.service.http</td>
     <td>OSGi 서비스 HTTP API는 더 이상 사용되지 않습니다. 대신 OSGi 서블릿 화이트보드를 사용하십시오.</td>
-    <td>2024년 5월 1일</td>
+    <td>5/1/2024</td>
     <td>2027년 12월 31일(잠정)</td>
   </tr>
   </tbody>
@@ -380,11 +379,13 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 이 섹션은 위 표의 다양한 API에 대한 API 제거 안내를 반영합니다.
 
-사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
+사용 중인 코드에서 더 이상 사용되지 않는 Java API를 식별하려면 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 Maven 프로젝트에 통합하고 로컬로 실행합니다. 이 보고서는 더 이상 사용되지 않는 모든 API 사용을 나열하고 각 API를 참조하는 OSGi 번들을 나타냅니다. Maven 플러그인을 사용하는 방법에 대해 알아보려면 [이 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)를 참조하십시오.
 
 시간이 지남에 따라 더 이상 사용되지 않는 모든 API를 수정해야 하지만, 더 이상 사용되지 않는 API 표에 나열된 모든 API에 우선 순위를 두십시오. Target 제거 날짜는 2026년 2월 26일(또는 그 이전 버전)입니다. AEM Analyzer 보고서에서 이러한 API는 유효한 제거 날짜가 2025년 8월 31일로 표시될 수 있습니다.
 
 코드를 업데이트한 후 코드 품질 단계의 결과를 확인하여 더 이상 사용되지 않는 API 사용이 Cloud Manager에 남아 있지 않은지 확인하십시오.
+
+5월 4일까지 업데이트되지 않으면 더 이상 AEM 버전 업데이트를 받지 않습니다. Adobe 릴리스 업데이트를 다시 받으려면 전체 스택 파이프라인을 성공적으로 실행해야 합니다. 그러면 며칠 내에 업데이트가 적용됩니다.
 
 ### 일반 지침
 
@@ -392,7 +393,7 @@ Adobe는 API 및 구성을 포함한 기능을 정기적으로 검토하여 AEM 
 
 더 이상 사용되지 않는 API의 자체 버전(예: Guava의 자체 버전)을 배포하기로 결정한 경우 이 API를 사용하는 모든 번들이 해당 버전에 연결되는지 확인하십시오. 현재 Cloud Service에 포함된 것과 동일한 주요 버전을 배포하기로 결정하는 경우 추가 작업이 필요하지 않습니다. 그러나 권장 사항을 따르고 최신 버전을 배포하는 경우 Maven 프로젝트를 조정해야 합니다. `aem-sdk-api` 전에 해당 라이브러리를 새 종속성으로 포함하십시오. 이렇게 하면 코드가 새 버전에 배선됩니다. 변경한 후에는 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 통해 더 이상 사용되지 않는 API 사용에 더 이상 플래그가 지정되지 않는지 확인하십시오.
 
-ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 [을(를) 지정하여 &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Service의 버전을 포함`cloud`해야 합니다.
+ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 권장됨)을 사용하고, 콘텐츠 패키지에 대해 분류자 `cloud`을(를) 지정하여 [Cloud Service의 버전을 포함](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)해야 합니다.
 
 더 이상 사용되지 않는 API 가져오기가 `optional`(으)로 표시된 경우에도 이 API를 제거해야 합니다. 그러나 이러한 선택적 사용은 배포를 차단하지 않습니다. 하지만 선택적 가져오기가 더 이상 충족되지 않으면 배포가 영향을 받을 수 있습니다.
 
@@ -403,7 +404,7 @@ ACS AEM Commons를 사용하는 경우, 최소 버전 6.11.0(최신 버전이 �
 액션 목록:
 
 * ACS AEM Commons 최신 버전(최소 6.11.0)으로 업데이트하고 `cloud` 분류자를 사용해야 하는 경우.
-* `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 응답으로 마이그레이션합니다. `org.apache.sling.auth.spi`.
+* `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 다시 전송으로 마이그레이션합니다. `org.apache.sling.auth.spi`.
 
 ### `org.apache.felix.webconsole*` 제거 {#org.apache.felix.webconsole}
 
