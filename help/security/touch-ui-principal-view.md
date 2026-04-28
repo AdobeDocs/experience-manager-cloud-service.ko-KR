@@ -3,13 +3,13 @@ title: 권한 관리를 위한 주요 보기
 description: 권한 관리를 용이하게 하는 새로운 Touch UI 인터페이스에 대해 알아봅니다.
 feature: Security
 role: Admin
-source-git-commit: 66ec051a2412fdbfb18dec5b79c6d5d5ca496216
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 86%
 
 ---
-
 
 # 권한 관리를 위한 주요 보기 {#principal-view-for-permissions-management}
 
@@ -65,7 +65,7 @@ CRXDE로 이동할 필요가 없습니다. 모든 기능이 동일한 보기에 
 >
 >권한 및 설명의 전체 목록은 [사용자, 그룹 및 액세스 권한 관리](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)를 참조하십시오.
 
-![지정된 경로에 대한 검색 권한.](assets/image2019-3-21_0-5-47.png) ![세로 열에 선택된 경로에 표시된 대로 &#39;dam-users&#39;에 대한 새 항목을 추가합니다.](assets/image2019-3-21_0-6-53.png)
+![지정된 경로에 대한 검색 권한입니다.](assets/image2019-3-21_0-5-47.png) ![수직 열에서 선택한 경로에 표시된 대로 &#39;dam-users&#39;에 대한 새 항목을 추가하십시오.](assets/image2019-3-21_0-6-53.png)
 
 권한 목록을 선택한 후 사용자는 아래에 표시된 대로 ‘거부’ 또는 ‘허용’ 중 권한 유형을 지정할 수 있습니다.
 
@@ -126,7 +126,7 @@ CRXDE로 이동할 필요가 없습니다. 모든 기능이 동일한 보기에 
 
 권한 보기를 실행한 후 화면 오른쪽 상단에서 **노드 보기** 또는 **필터링된 보기**&#x200B;를 클릭하여 원하는 보기를 선택할 수 있습니다.
 
-#### 노드 보기
+#### 노드 보기 {#node-view}
 
 이 보기에서는 각 개별 노드(경로)에 대한 ACL이 표시됩니다. 다음에 대한 정보가 제공됩니다.
 
@@ -136,14 +136,17 @@ CRXDE로 이동할 필요가 없습니다. 모든 기능이 동일한 보기에 
 
 ![노드 보기](assets/image-2025-2-5_15-26-2.png)
 
-#### 필터링된 보기
+#### 감사 보기 {#audit-view}
 
-이 보기를 통해 사용자는 지정된 경로 및 주체에 대한 권한을 효율적으로 검색할 수 있습니다. 이 보기에서는 사용자가 선택된 경로에 대해 주체 그룹에 부여된 권한 유형을 손쉽게 확인할 수 있습니다.
-또한, 필터링된 보기는 효과적인 ACL에 대한 인사이트를 제공합니다. 이 보기에서는 선택한 주체 및 공통 주체를 고려하여, 선택한 경로의 상위 노드에 연결된 ACL을 표시합니다.
+이 보기를 통해 사용자는 지정된 경로 및 선택한 주도자에 대해 적용된 권한을 효율적으로 검색할 수 있습니다. 이 보기에서 사용자는 선택한 경로에 대해 하나 이상의 주도자에게 부여된 권한 유형을 명확하게 식별할 수 있습니다.
 
-![필터 보기](assets/FilteredView.png)
+전용 확인란을 선택하여 그룹 구성원을 선택적으로 표시할 수 있습니다. 이 옵션이 활성화되면 권한 평가는 선택한 주도자뿐만 아니라 주도자의 모든 그룹을 고려합니다.
 
-### 저장소 브라우저 권한 보기 {#the-repository-browser-permissions-view}
+또한 감사 보기는 효과적인 ACL에 대한 통찰력을 제공합니다. 선택된 주도자와 공통 주도자를 고려하여 선택된 경로의 상위 노드와 연관된 ACL이 표시됩니다.
+
+![필터 보기](assets/audit-view.png)
+
+### 저장소 브라우저 권한 및 감사 보기 {#the-repository-browser-permissions-and-audit-view}
 
 권한 보기는 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)를 통해서도 액세스할 수 있습니다.
 
@@ -155,7 +158,11 @@ CRXDE로 이동할 필요가 없습니다. 모든 기능이 동일한 보기에 
 
 1. 저장소 브라우저에 진입한 후, **권한** 탭을 클릭합니다.
 
-   ![권한 탭](assets/image-2025-2-5_15-29-33.png)
+   ![권한 탭](/help/security/assets/permissions-tab.png)
+
+1. 감사 보기를 통해 사용자는 지정된 경로 및 선택한 주도자에 대해 적용된 권한을 효율적으로 검색할 수 있습니다. 전용 확인란을 선택하여 그룹 구성원을 선택적으로 표시할 수 있습니다.
+
+   ![감사 탭](/help/security/assets/audit-tab.png)
 
 **참고**: 권한을 보기 위해서는 관리자 권한이 필요합니다. [여기](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy)에 언급된 단계를 따라 권한에 액세스할 수 있습니다.
 
