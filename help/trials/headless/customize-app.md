@@ -8,8 +8,8 @@ feature: Headless
 role: Admin, User, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 1. 구매 가능한 순간에 **텍스트** 필드에 `Yellow shorts`와 같은 이름을 지정합니다.
 
-1. **X** 및 **Y**&#x200B;에 대한 값을 설정합니다. 이 콜아웃이 패널에 오버레이되어야 하는 위치입니다. 조각에 대한 변경 사항은 편집기에서 자동으로 저장됩니다.
+1. **X** 및 **Y**&#x200B;에 대한 값을 설정하십시오. 이 콜아웃이 패널에 오버레이되어야 하는 위치입니다. 조각에 대한 변경 사항은 편집기에서 자동으로 저장됩니다.
 
    * **X**: `-5`
    * **Y**: `-10`
