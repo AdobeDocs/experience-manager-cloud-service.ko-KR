@@ -4,42 +4,28 @@ description: 버튼 클릭만으로 Cloud Manager에서 Edge Delivery Site를 �
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
+source-git-commit: d3d956e9342fe6bb507b0efd952dfbecdda269c2
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 64%
+source-wordcount: '1477'
+ht-degree: 56%
 
 ---
 
 # 클릭 한 번으로 첫 Edge Delivery Site 만들기{#about-one-click-edge-delivery-site}
 
-원클릭 Edge Delivery Site 만들기 기능은 Cloud Manager 내에서 Edge Delivery Sites의 온보딩 및 배포를 자동화하는 데 도움이 되도록 설계되었습니다. 버튼 하나만 클릭하면 되므로 과정이 크게 간소화됩니다. 클릭 한 번으로 필요한 인프라를 프로비저닝하고, GitHub와 통합하여 버전을 제어하며, Google Drive에서 문서 및 자산 저장소를 구성할 수 있습니다.
+원클릭 Edge Delivery Site 만들기 기능은 Cloud Manager 내에서 Edge Delivery Sites의 온보딩 및 배포를 자동화하는 데 도움이 되도록 설계되었습니다. 버튼 하나만 클릭하면 되므로 과정이 크게 간소화됩니다. 한 번의 클릭으로 필요한 인프라를 프로비저닝하고, 버전 제어를 위해 GitHub와 통합하며, Google 드라이브에서 문서 및 에셋 스토리지를 구성합니다.
 
 이러한 자동화는 초기 사이트를 설정하는 데 필요한 수작업을 줄이는 데 도움이 됩니다. 원활한 워크플로와 확장성을 보장하고 에지에서 콘텐츠를 관리할 때 팀의 성과를 향상시킵니다.
+
+>[!IMPORTANT]
+>
+>원클릭 Edge Delivery 사이트 프로비저닝은 개념 증명 사이트 및 빠른 프로토타입에 최적화되었습니다. 프로덕션 워크로드의 경우 Adobe에서 전용 Edge Delivery Services 조직으로 사이트를 마이그레이션할 것을 권장합니다.
 
 <!--
  Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
 -->
-
-
-
-<!--
-## Practical use cases {#use-cases}
-
-| Use case | Description |
-| --- | --- |
-| Website and application deployment | <ul><li>Automate the hosting and delivery of static or dynamic sites.</li><li>Ensure fast performance through edge caching. </li></ul> |
-| API gateway and content delivery | <ul><li>Optimize API responses by caching data at the edge.</li><li>Reduce backend load and improved response times. </li></ul> |
-| Real-time content updates | <ul><li>Instant deployment of new content across edge locations.</li><li>Support integration with automated content pipelines. </li></ul> |
-| Edge computing workloads | <ul><li>Support serverless computing to process workloads closer to users.</li><li>Reduce latency and enhance performance. </li></ul> |
-| Security and governance | <ul><li>Security is provided with integrated DDoS (Distributed Denial of Service) protection and WAF (Web Application Firewall) integration.</li><li>Ensure that content is delivered securely through TLS (Transport Security Layer) encryption. </li></ul> |
--->
-
-
-
-
 
 ## 클릭 한 번으로 Cloud Manager에서 Edge Delivery 사이트 만들기 {#one-click-edge-delivery-site}
 
@@ -56,7 +42,7 @@ ht-degree: 64%
 1. [experience.adobe.com](https://experience.adobe.com)에서 Cloud Manager에 로그인합니다.
    1. **바로 가기** 섹션에서 **Experience Manager**&#x200B;를 클릭합니다.
    1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
-   1. 원하는 조직을 선택합니다.
+   1. 조직을 선택합니다.
 1. **내 프로그램** 콘솔에서 프로그램을 클릭합니다.
 1. 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
 1. 왼쪽 메뉴에서 **프로그램** 제목 아래에 있는 **개요**&#x200B;를 클릭합니다.
@@ -75,7 +61,7 @@ ht-degree: 64%
 
    화면 상단 중앙에 알림이 나타나 Edge Delivery 사이트 프로비저닝이 시작되었음을 알려 줍니다.
 
-Cloud Manager에서 사이트 프로비저닝 및 검증이 완료되면 **사이트 이름**(이전에 입력한 프로젝트 이름)이 Edge Delivery 페이지의 **Edge Delivery 사이트** 목록 상자에 표시됩니다. 또한 Verified status 열 왼쪽에 녹색 점이 나타납니다.
+   Cloud Manager이 사이트 프로비저닝 및 유효성 검사를 완료하면 Edge Delivery 페이지의 **Edge Delivery 사이트** 목록 상자에 **사이트 이름**(이전에 입력한 프로젝트 이름)이 나타납니다. **확인** 상태 열의 왼쪽에도 녹색 점이 나타납니다.
 
 [AEM 작성자의 콘텐츠를 Edge Delivery에 게시](#publish-from-aem-author)도 참조하십시오.
 
@@ -90,9 +76,9 @@ Cloud Manager에서 사이트 프로비저닝 및 검증이 완료되면 **사�
    | 탐색할 항목 | 단계 |
    | --- | --- |
    | 사이트의 GitHub 저장소 | <ul><li>**Edge Delivery 사이트** 목록 상자에서 **저장소** 열 제목 아래에 있는, 방금 생성한 사이트의 URL을 클릭합니다.<br>사용자 이름 또는 이메일 주소와 암호로 GitHub에 로그인해야 할 수 있습니다.</li> |
-   | 사이트 게시 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![더 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![게시 확인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)을 클릭하여 **사이트 게시**&#x200B;를 선택합니다.<br>사이트 게시가 성공적으로 시작되었음을 알려 주는 확인 메시지가 표시됩니다.</li></ul> |
+   | 사이트 게시 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![더 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![게시 확인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **사이트 게시**&#x200B;를 클릭합니다.<br>사이트 게시가 성공적으로 시작되었음을 알리는 알림 메시지가 표시됩니다.</li></ul> |
    | 게시된 사이트 미리보기 | <ul><li>**Edge Delivery 사이트** 목록 상자에서 **사이트 이름** 열 제목 아래에 있는, 방금 생성 및 게시한 사이트의 URL을 클릭합니다.<br>브라우저의 URL 주소 표시줄에서 사이트 URL이 `.page`로 끝나는 것을 확인하십시오. 이는 사이트 미리보기를 보고 있다는 것을 의미합니다.</li><li>사이트를 라이브로 보려면 URL 주소 표시줄에서 `.page`를 `.live`로 수동으로 변경하십시오.</li></ul> |
-   | Google Drive의 콘텐츠 저장소에 대한 사용자 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![더 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![사용자 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)을 클릭하여 **콘텐츠 저장소에 대한 액세스 권한 받기**&#x200B;를 선택합니다.</li><li>**`Add collaborators to your site`** 대화 상자에서 기여자의 전자 메일 주소를 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요에 따라 참여자 이메일을 계속 추가합니다.</li><li>작업을 완료하면 **공동 작업자 추가**&#x200B;를 클릭합니다.</li><li>콘텐츠 공동 작업자와 링크를 공유하려면 **공동 작업자가 정상적으로 추가됨** 대화 상자에서 **확인**&#x200B;을 클릭합니다.</li><li>공동 작업자가 정상적으로 추가됨 대화 상자에서 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭하여 링크를 복사한 후 공동 작업자와 공유합니다.<br>링크를 공유하기 전에 공동 작업자가 IMS 계정과 연결된 이메일 주소로 로그인되어 있는지 확인하십시오. IMS 이메일 계정이 사용 불가능한 경우, 공동 작업자로 추가된 이메일 주소를 사용해야 합니다. 이렇게 하면 공동 작업자가 링크에 액세스하여 Google Drive에서 콘텐츠를 편집하거나 업데이트할 수 있습니다.</li><li>편집이 완료되면 위에서 설명한 대로 Cloud Manager에서 **사이트 게시**&#x200B;를 클릭합니다.<br>또는 위에서 설명한 대로 변경 사항을 미리 봅니다.</li></ul> |
+   | Google Drive의 콘텐츠 저장소에 대한 사용자 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![더 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![사용자 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)을 클릭하여 **콘텐츠 저장소에 대한 액세스 권한 받기**&#x200B;를 선택합니다.</li><li>**`Add collaborators to your site`** 대화 상자에서 기여자의 전자 메일 주소를 입력한 다음 ![확인 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요에 따라 참여자 이메일을 계속 추가합니다.</li><li>작업을 완료하면 **공동 작업자 추가**&#x200B;를 클릭합니다.</li><li>콘텐츠 공동 작업자와 링크를 공유하려면 **공동 작업자가 정상적으로 추가됨** 대화 상자에서 **확인**&#x200B;을 클릭합니다.</li><li>공동 작업자가 정상적으로 추가됨 대화 상자에서 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭하여 링크를 복사한 후 공동 작업자와 공유합니다.<br>링크를 공유하기 전에 공동 작업자가 IMS 계정과 연결된 이메일 주소로 로그인되어 있는지 확인하십시오. IMS 이메일 계정이 사용 불가능한 경우, 공동 작업자로 추가된 이메일 주소를 사용해야 합니다. 이렇게 하면 공동 작업자가 링크에 액세스하여 Google Drive에서 콘텐츠를 편집하거나 업데이트할 수 있습니다.</li><li>편집을 마쳤으면 위에서 설명한 대로 Cloud Manager에서 **사이트 게시**&#x200B;를 클릭합니다.<br>또는 위에서 설명한 대로 변경 내용을 미리 봅니다.</li></ul> |
    | GitHub의 기본 저장소에 대한 사용자 액세스 권한 부여 | <ul><li> **Edge Delivery 사이트** 목록 상자에서 사이트 이름의 맨 오른쪽에 있는 ![더 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하여 드롭다운 메뉴를 엽니다.</li><li>드롭다운 메뉴에서 ![코드 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)을 클릭하여 **기본 저장소에 대한 액세스 권한 받기**&#x200B;를 선택합니다.</li><li>**사이트의 기본 저장소에 액세스** 대화 상자에서 공동 작업자의 GitHub 사용자 이름을 입력한 후 ![체크 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)을 클릭합니다.</li><li>필요에 따라 GitHub 사용자 이름을 계속 추가합니다.</li><li>작업을 완료하면 **공동 작업자 추가**&#x200B;를 클릭합니다.</li>사용자는 저장소를 보려면 GitHub 사용자 이름에 대한 액세스를 허용해야 합니다. |
 
 ## AEM 작성자의 콘텐츠를 Edge Delivery(Beta)에 게시 {#publish-from-aem-author}
@@ -117,7 +103,7 @@ Edge Delivery 사이트가 만들어지고 Cloud Manager에서 **확인**&#x200B
 
 * **Cloud Manager에서** -
 
-   1. **개요** 페이지의 **게재** 탭의 **환경** 카드에서 강조 표시된 ![정보 또는 정보 아이콘](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)을 클릭합니다.
+   1. **개요** 페이지의 **게재** 탭에서 **환경** 카드에서 강조 표시된 ![정보 또는 정보 아이콘](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)을 클릭합니다.
 
    1. 정보 팝업에서 **활성화하려면 클릭**&#x200B;을 선택하여 Cloud Manager 사용자 인터페이스에서 게시 계층 프로비저닝을 활성화합니다.
 
