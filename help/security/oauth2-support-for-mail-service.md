@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 7af84f36ab8629c6cf016b10534413f8890a9c95
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 100%
+source-wordcount: '964'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,11 @@ ht-degree: 100%
 AEM as a Cloud Service는 조직의 이메일 요구 사항 보호 준수를 위해 통합 메일 서비스에 대한 OAuth2 지원을 제공합니다.
 
 여러 이메일 공급자에 대해 OAuth를 구성할 수 있습니다. 다음은 Microsoft® Office 365 Outlook과 함께 OAuth2를 통해 인증할 AEM 메일 서비스를 구성하는 방법에 대한 단계별 지침입니다. 다른 공급업체가 유사한 방식으로 구성될 수 있습니다.
+
+AEM은 Microsoft® 365에 대해 두 가지 OAuth2 기반 전송 옵션을 지원합니다.
+
+* **SMTP + OAuth2** - OAuth2 인증이 있는 SMTP를 사용하는 표준 경로입니다.
+* **Microsoft Graph API** - 조직에서 SMTP 기반 전송을 허용하지 않는 경우(예: Microsoft® 365에서 SMTP AUTH가 테넌트 전체에서 비활성화된 경우) Microsoft Graph를 통해 메일을 보내는 대체 경로로, SMTP 및 OAuth2를 사용할 수 없습니다.
 
 AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일 보내기](/help/implementing/developing/introduction/development-guidelines.md#sending-email)를 참조하십시오.
 
@@ -152,7 +157,8 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    * `offline_access`
    * `email`
    * `profile`
-1. 아래 구문을 사용하여 `/apps/<my-project>/osgiconfig/config` 아래에 `called com.day.cq.mailer.DefaultMailService.cfg.json`이라는 OSGI 속성 파일을 만듭니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/examples/email-service)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
+1. OSGI 속성 파일 만들기 `called com.day.cq.mailer.DefaultMailService.cfg.json`
+아래 구문이 있는 `/apps/<my-project>/osgiconfig/config` 아래에 있습니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/networking/examples/email-service)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
 
    ```
    {
@@ -172,6 +178,81 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 1. Outlook의 경우 `smtp.host` 구성 값은 `smtp.office365.com`입니다.
 1. 런타임 시 [Cloud Manager 변수 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)를 사용하거나 [변수를 추가하는 Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)를 사용하여 `refreshToken values` 및 `clientSecret` 보안을 전달합니다. 변수 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 및 `SECRET_SMTP_OAUTH_CLIENT_SECRET`의 값을 정의해야 합니다.
 
+SMTP 및 OAuth2를 사용해도 메일이 여전히 작동하지 않는 경우 [문제 해결](#troubleshooting)을 참조하십시오.
+
+## ® Outlook용 Microsoft Graph API {#microsoft-graph-api}
+
+[Microsoft Outlook](#microsoft-outlook)에 설명된 것과 동일한 Azure 앱 등록 단계를 따르며 6단계(API 권한)에서 다음과 같은 차이점을 갖습니다. Outlook SMTP 범위 대신 Microsoft 그래프 `Mail.Send` 위임된 권한 사용:
+
+>[!NOTE]
+>
+>권한 구성은 시간이 지나면서 발전할 수 있습니다. 권한 구성이 예상대로 작동하지 않으면 Microsoft®로 작업합니다.
+
+* `https://graph.microsoft.com/Mail.Send`
+* `openid`
+* `offline_access`
+* `email`
+* `profile`
+
+### 새로 고침 토큰 생성 {#graph-generating-the-refresh-token}
+
+인증 URL 및 cURL 요청에서 Microsoft 그래프 범위를 사용하여 [SMTP + OAuth2](#generating-the-refresh-token)과 동일한 토큰 생성 단계를 따릅니다.
+
+**인증 URL**(`clientID` 및 `tenantID`을(를) 값으로 바꾸기):
+
+```
+https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/Mail.Send%20email%20openid%20profile%20offline_access&state=12345
+```
+
+cURL 토큰 요청에서 범위를 다음으로 바꿉니다.
+
+```
+--data-urlencode 'scope=https://graph.microsoft.com/Mail.Send email openid profile offline_access'
+```
+
+### AEM as a Cloud Service와 통합 {#graph-integration-with-aem-as-a-cloud-service}
+
+1. Microsoft 그래프 범위를 사용하여 `/apps/<my-project>/osgiconfig/config` 아래에 `com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json`(이)라는 OSGI 속성 파일을 만듭니다.
+
+   ```
+   {
+       "authUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize",
+       "tokenUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "clientId": "<clientID>",
+       "clientSecret": "$[secret:SECRET_SMTP_OAUTH_CLIENT_SECRET]",
+       "scopes": [
+          "https://graph.microsoft.com/Mail.Send",
+          "openid",
+          "offline_access",
+          "email",
+          "profile"
+       ],
+       "authCodeRedirectUrl": "http://localhost",
+       "refreshUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "refreshToken": "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
+   }
+   ```
+
+1. `oauth.flow` 및 `graph.flow`이(가) 모두 `true`(으)로 설정된 `/apps/<my-project>/osgiconfig/config`에서 OSGI 속성 파일 `com.day.cq.mailer.DefaultMailService.cfg.json`을(를) 만듭니다.
+
+   ```
+   {
+    "smtp.host": "smtp.office365.com",
+    "smtp.user": "<mailbox account used as the sender>",
+    "smtp.password": "value not used",
+    "smtp.port": 587,
+    "from.address": "<from address used for sending>",
+    "smtp.ssl": false,
+    "smtp.starttls": false,
+    "smtp.requiretls": false,
+    "debug.email": false,
+    "oauth.flow": true,
+    "graph.flow": true
+   }
+   ```
+
+1. 런타임 시 [Cloud Manager 변수 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)를 사용하거나 [변수를 추가하는 Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)를 사용하여 `refreshToken` 및 `clientSecret` 보안을 전달합니다. 변수 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 및 `SECRET_SMTP_OAUTH_CLIENT_SECRET`의 값을 정의해야 합니다.
+
 ### 문제 해결 {#troubleshooting}
 
-메일 서비스가 제대로 작동하지 않는 경우, 위에 설명된 바와 같이 Cloud Manager API를 통해 새 값을 전달하여 `refreshToken` 을 다시 생성해야 합니다. 새 값을 배포하는 데 몇 분 정도 소요됩니다.
+메일 서비스가 제대로 작동하지 않으면 `refreshToken`을(를) 다시 생성합니다. SMTP 및 OAuth2를 사용하는 경우 [새로 고침 토큰 생성](#generating-the-refresh-token)을 사용하고, Microsoft 그래프를 사용하는 경우 [새로 고침 토큰 생성](#graph-generating-the-refresh-token)을 사용하십시오. Cloud Manager API를 통해 새 값을 전달합니다. 배포는 몇 분 정도 걸릴 수 있습니다.
