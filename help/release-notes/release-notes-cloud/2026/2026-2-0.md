@@ -38,7 +38,7 @@ ht-degree: 34%
 
 2026년 2월 릴리스 개요 비디오를 통해 2026.2.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480406/?captions=kor&quality=12)
 
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -191,7 +191,7 @@ AEM Edge 함수를 사용하면 CDN 계층에서 JavaScript을 실행할 수 있
 
 #### Cloud Manager MCP 서버(Beta 프로그램) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&quality=12)
 
 최신 IDE는 MCP(Model Context Protocol)를 사용하여 대형 언어 모델(LLM)이 MCP 서버에 의해 노출된 도구를 호출할 수 있도록 합니다. 개발자는 낮은 수준의 API 사양과 직접 통합하는 대신 단순히 의도를 자연어로 설명할 수 있습니다.
 
