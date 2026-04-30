@@ -126,7 +126,7 @@ Dynamic Media 탭을 보려면 유효한 AEM Dynamic Media 라이센스가 있�
 
 ![Dynamic Media 렌디션 미리 보기](assets/content-advisor-dm-preview.png)
 
-**[!UICONTROL 수정자 추가]**&#x200B;를 클릭하고 텍스트 상자에 수정자를 지정한 다음 Enter 키를 눌러 변형을 모든 에셋 변환에 실시간으로 적용합니다. 마찬가지로 변환에 여러 수정자를 추가하고 이러한 변형을 미리 볼 수 있습니다. 렌디션 이름을 클릭하고 **[!UICONTROL 선택]**&#x200B;을 클릭하여 호스트 응용 프로그램에서 렌디션을 사용할 수 있도록 합니다. 이러한 수정자를 적용한 후의 렌디션은 저장되지 않습니다. [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) 및 [OpenAPI를 사용하는 Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)에 대해 지원되는 수정자 목록을 참조하십시오.
+**[!UICONTROL 수정자 추가]**&#x200B;를 클릭하고 텍스트 상자에 수정자를 지정한 다음 Enter 키를 눌러 변형을 모든 에셋 변환에 실시간으로 적용합니다. 마찬가지로 변환에 여러 수정자를 추가하고 이러한 변형을 미리 볼 수 있습니다. 렌디션 이름을 클릭하고 **[!UICONTROL 선택]**&#x200B;을 클릭하여 호스트 응용 프로그램에서 렌디션을 사용할 수 있도록 합니다. 이러한 수정자를 적용한 후의 렌디션은 저장되지 않습니다. [Dynamic Media Scene7](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) 및 [OpenAPI를 사용하는 Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)에 대해 지원되는 수정자 목록을 참조하십시오.
 
 ### 콘텐츠 조각 검색 {#content-fragments-discovery-content-advisor}
 
