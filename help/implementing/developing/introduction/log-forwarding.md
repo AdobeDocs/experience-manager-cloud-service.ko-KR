@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: e3785c9d8c5f1a8576c93d566d332cd718820bd7
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 3%
+source-wordcount: '2576'
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 3%
       <td>스모 논리</td>
       <td>예</td>
       <td>예</td>
-      <td style="background-color: #ffb3b3;">미래</td>
+      <td>예</td>
     </tr>
   </tbody>
 </table>
@@ -120,7 +120,7 @@ AEM 및 Apache/Dispatcher 로그가 전용 이그레스 IP와 같은 AEM의 고�
          index: "AEMaaCS"
    ```
 
-1. *구성 파이프라인 사용*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 1. RDE(명령줄 도구 사용) 이외의 환경 유형의 경우 [이 섹션](/help/operations/config-pipeline.md#creating-and-managing)에서 참조한 대로 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
 
@@ -428,7 +428,7 @@ data:
 
 웹 요청(POST)은 로그 항목의 배열인 json 페이로드와 함께 지속적으로 전송되며, 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md#cdn-log)에 설명되어 있습니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
 
-`sourcetype` 값으로 설정된 `aemcdn` 속성도 있습니다.
+`aemcdn` 값으로 설정된 `sourcetype` 속성도 있습니다.
 
 >[!NOTE]
 >
@@ -523,7 +523,7 @@ Sumo Logic으로의 로그 전달은 AEM 및 Dispatcher 로그를 지원합니�
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
-위의 `/`설정[&#x200B; 섹션에 설명된 대로 URL의 마지막 섹션(](/help/operations/config-pipeline.md#secret-env-vars) 없이)을 복사한 다음 [CloudManager 보안 환경 변수](#setup)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
+위의 [설정](#setup) 섹션에 설명된 대로 URL의 마지막 섹션(`/` 없이)을 복사한 다음 [CloudManager 보안 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 추가한 다음 구성에서 해당 변수를 참조해야 합니다.  예가 아래에 제공됩니다.
 
 ```yaml
 kind: "LogForwarding"
@@ -538,9 +538,12 @@ data:
 ```
 
 >[!NOTE]
->SumoLogic에 대한 CDN 로그 지원이 향후 예정되어 있습니다. 관심 영역을 등록하려면 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)에 전자 메일을 보내십시오.
+>`index` 필드 동작은 로그 유형에 따라 다릅니다.
 >
-> &quot;색인&quot; 필드 기능을 사용하려면 Sumo Logic Enterprise 구독이 필요합니다.  Enterprise가 아닌 구독의 로그는 기본적으로 `sumologic_default` 파티션으로 라우팅됩니다.  자세한 내용은 [Sumo 논리 분할 설명서](https://help.sumologic.com/docs/search/optimize-search-partitions/)를 참조하십시오.
+>* **AEM 로그(Apache/Dispatcher 포함)**: Sumo Logic Enterprise 구독이 있는 경우 `index`에서 지정한 파티션으로 라우팅됩니다. Enterprise 이외의 구독은 대신 `sumologic_default` 파티션으로 라우팅됩니다.
+>* **CDN 로그**: 인덱싱이 Sumo 논리에 전달된 CDN 로그에 대해 기술적으로 지원되지 않으므로 `index` 필드가 무시됩니다. CDN 로그는 항상 `sumologic_default` 파티션으로 라우팅됩니다.
+>
+>자세한 내용은 [Sumo 논리 분할 설명서](https://help.sumologic.com/docs/search/optimize-search-partitions/)를 참조하십시오.
 
 ## 로그 항목 형식 {#log-formats}
 
