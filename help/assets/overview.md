@@ -519,7 +519,7 @@ Content Advisor를 Adobe 또는 Adobe 이외 애플리케이션과 통합할 수
 
 * **Adobe Workfront와 통합**: [!DNL Adobe Workfront]는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]와 [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 자산 관리를 본질적으로 연결하여 콘텐츠 제작과 시장 출시 기간을 개선할 수 있습니다. Workfront 작업 관리의 맥락에서 사용자는 필수 문서와 이미지에 액세스할 수 있습니다.
 
-  Adobe는 [ [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 네이티브 통합](https://experienceleague.adobe.com/ko/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)을 제공합니다.
+  Adobe는 [&#x200B; [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 네이티브 통합](https://experienceleague.adobe.com/ko/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)을 제공합니다.
 
 * **Figma와의 통합**: AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Figma 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. Figma 커뮤니티 페이지에서 제공되는 AEM Assets Connector에 액세스하려면 [여기](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)를 클릭하십시오.
 
@@ -580,7 +580,7 @@ Content Advisor를 Adobe 또는 Adobe 이외 애플리케이션과 통합할 수
 
 * **[!DNL Edge Delivery Services]**&#x200B;를 위한 [!DNL Universal Editor] 기반 작성 흐름과 [!DNL AEM Assets] 통합: [!DNL Universal Editor]를 설정하여 [!DNL AEM Assets]와 통합합니다. 이 통합으로 [!DNL Dynamic Media with OpenAPI capabilities]를 사용하여 자산을 게재할 수 있습니다.
 
-   * [!DNL Universal Editor]의 사용자 정의 자산 선택기 기능을 추가하는 방법을 알아보려면 [ [!DNL Edge Delivery] 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 정의 자산 선택기를 사용하면 자산을 [!DNL Universal Editor] 콘텐츠에 직접 삽입할 수 있습니다.
+   * [!DNL Universal Editor]의 사용자 정의 자산 선택기 기능을 추가하는 방법을 알아보려면 [&#x200B; [!DNL Edge Delivery] 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 정의 자산 선택기를 사용하면 자산을 [!DNL Universal Editor] 콘텐츠에 직접 삽입할 수 있습니다.
    * [!DNL Universal Editor]에서 작성 중에 [!DNL AEM Assets]에 액세스하고 자산을 삽입하는 방법을 알아보려면 [확장 개요](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
 
 <table>
