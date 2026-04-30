@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 17%
+source-wordcount: '3101'
+ht-degree: 18%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 17%
 * **연결 해제**
    * 선택한 텍스트에서 링크를 제거합니다.
 * **이미지**
-   * URL을 지정하거나 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector)를 사용하여 AEM에서 자산을 선택하십시오.
+   * URL을 지정하거나 [콘텐츠 관리자](/help/assets/integrate-adobe-non-adobe-applications.md)를 사용하여 AEM에서 에셋을 선택하세요.
 * **테이블**
    * 드롭다운을 사용하여 선택한 열 및 행 수의 새 표를 삽입하거나 새 열/행을 삽입 및 제거합니다.
 * **정렬**
@@ -152,7 +152,7 @@ ht-degree: 17%
 ![미디어 편집](assets/ue-edit-media.png)
 
 1. [속성] 패널에서 선택한 이미지의 미리 보기를 탭하거나 클릭합니다.
-1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector) 창이 열립니다.
+1. 자산을 선택할 수 있는 [콘텐츠 관리자](/help/assets/integrate-adobe-non-adobe-applications.md) 창이 열립니다.
 1. 새 자산을 선택하려면 를 선택합니다.
 1. 자산을 바꾼 속성 패널로 돌아가려면 **Select**&#x200B;을(를) 선택하십시오.
 
@@ -304,7 +304,7 @@ ht-degree: 17%
 
 ### 복사 및 붙여넣기 {#copy-paste}
 
-[개의 컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container) 대상 컨테이너에 [구성된 필터](/help/implementing/universal-editor/filtering.md)가 없거나 구성 요소를 붙여넣을 수 있는 필터가 있는 경우에만 가능합니다.
+[컨테이너 내에 있는 구성 요소를 복사하여 붙여 넣을 수 있습니다.](/help/implementing/universal-editor/field-types.md#container) 대상 컨테이너에 [구성된 필터](/help/implementing/universal-editor/filtering.md)가 없거나 구성 요소를 붙여넣을 수 있는 필터가 있는 경우에만 가능합니다.
 
 탭이 이미 열려 있는 경우 복사하여 붙여넣기는 동일한 브라우저 탭에 있거나 브라우저 탭 사이에 있을 수 있습니다. 항목을 복사한 다음 새 브라우저 탭을 열어 붙여넣을 수 없습니다.
 
@@ -313,15 +313,15 @@ ht-degree: 17%
 
 1. 편집기 내에서 또는 콘텐츠 트리에서 구성 요소를 선택합니다.
 1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
-   * **속성 패널에서**&#x200B;복사[&#x200B; 아이콘을 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * [속성 패널에서 **복사** 아이콘을 클릭합니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![패널에서 복사](assets/copy-from-panel.png)
    * 상황에 맞는 메뉴에서 **복사** 옵션을 선택합니다.
      ![상황에 맞는 메뉴에서 복사](assets/copy-from-context-menu.png)
 1. 복사한 구성 요소를 붙여넣을 구성 요소 _after_&#x200B;를 선택합니다.
 1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
-   * 속성 패널에서 **붙여넣기**&#x200B;를 탭하거나 클릭합니다.
+   * 속성 패널에서 **붙여넣기**를 탭하거나 클릭합니다.
      ![패널에서 붙여넣기](assets/paste-from-panel.png)
-   * 상황에 맞는 메뉴에서 **붙여넣기**&#x200B;를 선택합니다.
+   * 상황에 맞는 메뉴에서 **붙여넣기**를 선택합니다.
      ![상황에 맞는 메뉴에서 붙여넣기](assets/paste-from-context-menu.png)
 
 복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
@@ -453,7 +453,7 @@ ht-degree: 17%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 &#x200B;](/help/implementing/universal-editor/extending.md)유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다[.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 

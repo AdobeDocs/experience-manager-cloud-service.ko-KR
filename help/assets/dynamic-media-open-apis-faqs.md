@@ -4,10 +4,10 @@ description: OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 �
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 99%
+source-wordcount: '1673'
+ht-degree: 96%
 
 ---
 
@@ -107,7 +107,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | [Assets as a Cloud Service에서만 사용 가능](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 추가 구성 및 프로비저닝 단계와 함께 On-Premise 또는 Adobe Managed Services에서도 사용할 수 있습니다. |
 | [다양한 폭, 높이, 회전, 뒤집기, 품질 및 형식과 같이 지원되는 이미지 수정자 세트 사용 가능](/help/assets/deliver-assets-apis.md) | 다양한 이미지 수정자 세트 사용 가능 |
 | [사용자, 역할, 날짜 및 시간에 따라 자산 게재가 제한됨](/help/assets/restrict-assets-delivery.md) | Dynamic Media에 게시된 자산에 모든 사용자가 액세스 가능 |
-| 대부분의 개발자가 OpenAPI 사양에 익숙합니다. AEM Assets 확장성은 [마이크로 프론트엔드 자산 선택기](/help/assets/overview-asset-selector.md)를 사용하면 정말 간단해집니다. | 통합 커스터마이징을 개발하는 동안 장애물이 되는 SOAP 기반 API. |
+| 대부분의 개발자가 OpenAPI 사양에 익숙합니다. [콘텐츠 관리자](/help/assets/integrate-adobe-non-adobe-applications.md)를 사용하면 AEM Assets 확장성이 매우 간단해집니다. | 통합 커스터마이징을 개발하는 동안 장애물이 되는 SOAP 기반 API. |
 | 버전 업데이트 및 메타데이터 수정을 포함하여 DAM에서 승인된 자산에 대한 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통해 OpenAPI 기능이 갖춘 Dynamic Media에 대해 10분이라는 짧은 TTL(Time-to-Live) 값을 구성하면 모든 작성 및 게시 인터페이스에서 10분 이내에 업데이트가 표시됩니다. | 권장 CDN TTL은 10시간입니다. 캐시 무효화 작업을 사용하여 TTL 값을 재정의할 수 있습니다. |
 | 다운스트림 애플리케이션에 대한 자산 게재에는 승인된 자산만 사용할 수 있으며, 디지털 환경에서 브랜드 승인 자산을 사용할 수 있습니다. | Dynamic Media에 게시된 자산에 대한 업데이트는 승인 워크플로 없이 자동으로 게시되므로 디지털 환경에서 브랜드 승인 자산을 보장할 수 없습니다. |
 | 게재된 자산 수를 기준으로 한 사용량 보고서. 이 기능은 곧 제공될 예정입니다. | 사용 보고서를 사용할 수 없습니다. 이 기능은 곧 제공될 예정입니다. |
@@ -128,7 +128,7 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 | AEM Assets에서 지원하는 모든 자산 형식 유형을 지원합니다. | 비디오는 지원되지 않습니다. |
 | 원격 DAM 배포에서 자산을 가져오는 동안 로컬 Sites 배포에서 Dynamic Media를 사용할 수 있습니다. | 로컬 Sites 배포의 Dynamic Media는 읽기 전용입니다. |
 | 원격 DAM 배포에 연결된 AEM Sites 인스턴스 수에는 제한이 없습니다. 원격 DAM에서 승인된 자산의 [역할을 구성하여 Sites 인스턴스의 자산에 대한 액세스를 제한](/help/assets/restrict-assets-delivery.md)할 수 있습니다. | 원격 DAM 배포에는 최대 4개의 AEM Sites 인스턴스를 연결할 수 있도록 제한됩니다. 이 한도를 늘리려면 추가적인 테스트가 요구됩니다. |
-| 자산 선택기와 OpenAPI 기능 포함 Dynamic Media는 모두 사용자 정의 통합이 가능하도록 확장할 수 있습니다. | 연결된 자산 API는 사용자 정의 통합이 가능하도록 확장할 수 없습니다. |
+| Content Advisor와 Dynamic Media(OpenAPI 기능 포함)는 모두 사용자 정의 통합이 가능하도록 확장 가능합니다. | 연결된 자산 API는 사용자 정의 통합이 가능하도록 확장할 수 없습니다. |
 | 버전 업데이트 및 메타데이터 수정을 포함하여 원격 DAM 배포에서 사용 가능한 승인된 자산에 대한 변경 사항은 10분의 짧은 TTL(수명) 값 내에 Sites 인스턴스로 자동 반영됩니다. | 원격 DAM 배포에 대한 자산 업데이트는 라이프사이클 이벤트를 통해 자동으로 처리되지만 OpenAPI 기능 포함 Dynamic Media에 비해 훨씬 더 많은 시간이 걸립니다. |
 | 원격 DAM의 자산 메타데이터도 AEM Sites 인스턴스에서 사용할 수 있습니다. | 원격 DAM의 자산 메타데이터를 AEM Sites 인스턴스에서 사용할 수 없습니다. |
 
@@ -147,5 +147,5 @@ OpenAPI 기능이 포함된 Dynamic Media와 Dynamic Media의 주요 차이점�
 
 ## 실험적 수정자를 어떻게 테스트합니까? {#modifiers-not-generally-available}
 
-일반적으로 실험적 API를 통해 사용할 수 없는 수정자는 모두 테스트할 수 있습니다. 예를 들어 &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-[실험적 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [수정자의 전체 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용은 여기를 클릭하십시오.
+일반적으로 실험적 API를 통해 사용할 수 없는 수정자는 모두 테스트할 수 있습니다. 예: &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
+[실험 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) 및 [전체 수정자 목록](https://developer.adobe.com/experience-cloud/experience-manager-apis/)을 사용하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.

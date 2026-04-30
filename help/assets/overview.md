@@ -3,10 +3,10 @@ title: AEM에서의 디지털 자산 관리를 위한 Assets as a Cloud Service 
 description: AEM에서의 디지털 자산 관리를 위한 Assets as a Cloud Service 소개
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5648'
-ht-degree: 87%
+source-wordcount: '6014'
+ht-degree: 81%
 
 ---
 
@@ -63,7 +63,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/get-started">
-      <strong>AEM 데스크탑 앱 사용</strong>
+      <strong>AEM 데스크톱 앱 사용</strong>
       </a>
    </div>
    <p>
@@ -76,7 +76,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
    </a>
    <div>
       <a href="https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html">
-      <strong>Adobe Asset Link 사용</strong>
+      <strong>Adobe 자산 링크 사용</strong>
       </a>
    </div>
    <p>
@@ -93,7 +93,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
 
 **AI 생성 메타데이터**: AEM Assets는 AI를 사용하여 제목, 설명, 키워드를 포함한 메타데이터를 자동으로 생성합니다. 이러한 AI 생성 필드는 메타데이터의 정확도를 높여 자산을 검색, 분류 및 추천하기 쉽게 만듭니다. 이 접근 방식은 수동 태그 지정을 제거하여 효율성을 향상시킬 뿐만 아니라 방대한 양의 디지털 콘텐츠에 대한 일관성과 확장성을 보장합니다.
 
-**AI 기반 자산 일괄 이름 바꾸기**: [Assets 보기에서 인공 지능을 사용하여 여러 자산의 이름을 한 번에 바꿀 수 있습니다](/help/assets/bulk-rename-assets-view.md). 여러 파일을 한 번에 선택하여 모두 이름을 바꿀 수 있습니다. 대화형 이름 바꾸기 프롬프트 예시에는 *모든 파일을 “my-file”로 변경하고 증가하는 숫자 추가*&#x200B;와 *001, 002 등으로 파일에 접두사 삽입하고 영어로 번역합니다*&#x200B;가 있습니다.
+**AI 기반 자산 일괄 이름 바꾸기**: [Assets 보기에서 인공 지능을 사용하여 여러 자산의 이름을 한 번에 바꿀 수 있습니다](/help/assets/bulk-rename-assets-view.md). 여러 파일을 한 번에 선택하여 모두 이름을 바꿀 수 있습니다. 일부 대화 이름 바꾸기 프롬프트에는 *모든 파일을 &#39;my-file&#39;로 변경하고 증분 번호를 추가합니다* 및 *001, 002 등으로 파일 접두사를 지정하고 영어로 번역합니다*&#x200B;가 포함됩니다.
 
 <table>
 <td>
@@ -102,7 +102,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
    </a>
    <div>
       <a href="/help/assets/smart-tags.md">
-      <strong>자산에 AI 스마트 태그 추가</strong>
+      <strong>에셋에 AI 스마트 태그 추가</strong>
       </a>
    </div>
    <p>
@@ -169,7 +169,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md#search-firefly">
-      <strong>Adobe Firefly를 사용하여 자산 생성</strong>
+      <strong>Adobe Firefly을 사용하여 에셋 생성</strong>
       </a>
    </div>
    <p>
@@ -182,7 +182,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에 다른 �
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>Adobe Express와 통합</strong>
+      <strong>Adobe Express과 통합</strong>
       </a>
    </div>
    <p>
@@ -270,11 +270,11 @@ AEM Assets는 적절한 자산을 신속하게 찾을 수 있도록 도와주는
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ko">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="메타데이터 관리 모범 사례" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=ko">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>메타데이터 관리 모범 사례</strong>
       </a>
    </div>
@@ -288,7 +288,7 @@ AEM Assets는 적절한 자산을 신속하게 찾을 수 있도록 도와주는
    </a>
    <div>
       <a href="/help/assets/manage-metadata.md">
-      <strong>Admin 보기에서 메타데이터 관리</strong>
+      <strong>관리자 보기에서 메타데이터 관리</strong>
       </a>
    </div>
    <p>
@@ -338,7 +338,7 @@ AEM Assets는 적절한 자산을 신속하게 찾을 수 있도록 도와주는
    </a>
    <div>
       <a href="/help/assets/search-best-practices.md">
-      <strong>모범 사례 검색</strong>
+      <strong>검색 모범 사례</strong>
       </a>
    </div>
    <p>
@@ -382,7 +382,7 @@ AEM Assets는 적절한 자산을 신속하게 찾을 수 있도록 도와주는
    </a>
    <div>
       <a href="/help/assets/my-workspace-assets-view.md">
-      <strong>내 작업 영역</strong>
+      <strong>내 Workspace</strong>
       </a>
    </div>
    <p>
@@ -447,7 +447,7 @@ AEM Assets는 적절한 자산을 신속하게 찾을 수 있도록 도와주는
    </a>
    <div>
       <a href="/help/assets/detect-duplicate-assets.md">
-      <strong>중복 자산 감지</strong>
+      <strong>중복 에셋 감지</strong>
       </a>
    </div>
    <p>
@@ -466,8 +466,8 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
 
 * **OpenAPI 기능이 포함된 Dynamic Media**: [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)는 포괄적인 [검색](/help/assets/search-assets-api.md) 및 [게재](/help/assets/deliver-assets-apis.md) API 세트를 제공합니다. 이를 통해 개발자가 자산 게재를 애플리케이션과 쉽게 통합할 수 있습니다. 이러한 애플리케이션에는 Adobe 및 서드파티 애플리케이션이 포함됩니다. 승인된 자산을 검색하고 선택할 수 있는 마이크로 프론트엔드 자산 선택기 사용자 인터페이스를 제공합니다. 선택기는 React JS, Angular JS, Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 쉽게 통합할 수 있습니다.
 
-* **마이크로 프론트엔드 자산 선택기**: 마이크로 프론트엔드 자산 선택기는 Experience Manager Assets 저장소와 간편하게 통합하는 사용자 인터페이스를 제공하므로 사용자는 해당 저장소에서 사용 가능한 디지털 자산을 탐색 또는 검색할 수 있습니다. 그런 다음 애플리케이션 작성 경험에 사용할 수 있습니다.
-자산 선택기를 Adobe 또는 비 Adobe 애플리케이션과 통합할 수 있습니다.
+* **콘텐츠 관리자**: 콘텐츠 관리자는 저장소에서 사용 가능한 디지털 에셋을 찾아보거나 검색할 수 있도록 Experience Manager Assets 저장소와 통합된 사용자 인터페이스를 제공합니다. 그런 다음 애플리케이션 작성 경험에 사용할 수 있습니다.
+Content Advisor를 Adobe 또는 Adobe 이외 애플리케이션과 통합할 수 있습니다.
 
 <table>
 <td>
@@ -476,7 +476,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>OpenAPI 기능이 포함된 Dynamic Media 개요</strong>
+      <strong>OpenAPI 기능을 사용하는 Dynamic Media 개요</strong>
       </a>
    </div>
    <p>
@@ -491,7 +491,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Experience Manager에서 자산에 대한 액세스 제한</strong>
+      <strong>Experience Manager의 자산에 대한 액세스 제한</strong>
       </a>
    </div>
    <p>
@@ -499,16 +499,16 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="자산 선택기" src="./assets/integration-asset-selector.jpeg" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="콘텐츠 어드바이저" src="./assets/integration-asset-selector.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>마이크로 프론트엔드 자산 선택기</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>콘텐츠 관리자</strong>
       </a>
    </div>
    <p>
-      <em>마이크로 프론트엔드 자산 선택기를 Adobe 또는 비 Adobe 애플리케이션과 통합하는 방법을 알아봅니다.</em>
+      <em>Content Advisor를 Adobe 또는 Adobe 이외의 애플리케이션과 통합하는 방법을 알아봅니다.</em>
    </p>
 </td>
 </table>
@@ -519,7 +519,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
 
 * **Adobe Workfront와 통합**: [!DNL Adobe Workfront]는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]와 [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 자산 관리를 본질적으로 연결하여 콘텐츠 제작과 시장 출시 기간을 개선할 수 있습니다. Workfront 작업 관리의 맥락에서 사용자는 필수 문서와 이미지에 액세스할 수 있습니다.
 
-  Adobe는 [&#x200B; [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 네이티브 통합](https://experienceleague.adobe.com/ko/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)을 제공합니다.
+  Adobe는 [ [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 네이티브 통합](https://experienceleague.adobe.com/ko/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)을 제공합니다.
 
 * **Figma와의 통합**: AEM Assets는 Figma에 기본적으로 통합되므로 디자이너는 Figma 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Figma 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. Figma 커뮤니티 페이지에서 제공되는 AEM Assets Connector에 액세스하려면 [여기](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)를 클릭하십시오.
 
@@ -534,7 +534,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/workfront-integrations.md">
-      <strong>Adobe Workfront와 통합</strong>
+      <strong>Adobe Workfront과 통합</strong>
       </a>
    </div>
    <p>
@@ -547,7 +547,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
-      <strong>Figma와의 통합</strong>
+      <strong>Figma와 통합</strong>
       </a>
    </div>
    <p>
@@ -560,7 +560,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>Adobe Express와의 네이티브 통합</strong>
+      <strong>Adobe Express과 네이티브 통합</strong>
       </a>
    </div>
    <p>
@@ -575,12 +575,12 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
 * **Adobe Journey Optimizer와의 통합**: Adobe Experience Manager Assets를 사용하여 마케팅과 크리에이티브 워크플로를 통합합니다. Adobe Journey Optimizer와 기본적으로 통합되어 Assets as a Cloud Service에 액세스하여 디지털 자산을 저장, 관리, 검색 및 배포할 수 있습니다. 이 통합은 메시지의 내용을 채우는 데 사용할 수 있는 단일 중앙 집중식 자산 저장소 역할을 합니다.
 
 * **Commerce와의 통합**: Adobe Experience Manager(AEM) Assets 통합은 AEM as a Digital Asset Management(DAM) 시스템의 강력한 기능과 Adobe Commerce를 결합하여 전자 상거래 경험을 향상시킵니다. 이러한 기능은 Commerce 프로젝트를 AEM의 강력한 자산 관리 환경에 연결하여 상거래 상점 전반에 걸쳐 자산을 원활하고 확장 가능하며 효율적으로 관리합니다.
-* **Edge Delivery Services를 위한 문서 기반 작성 흐름과 AEM 자산 통합**: [!DNL AEM Assets]가 [!DNL Microsoft Word] 또는 [!DNL Google Docs] 등의 문서 기반 작성 도구와 통합하는 경우 작성 도구에서 자산 선택기를 제공합니다. 이 자산 선택기를 사용하여 [!DNL AEM Assets]에 액세스하고 승인된 자산을 콘텐츠에 삽입합니다.
+* **Edge Delivery Services의 문서 기반 작성 흐름과 AEM Assets 통합**: [!DNL AEM Assets]이(가) [!DNL Microsoft Word] 또는 [!DNL Google Docs]과(와) 같은 문서 기반 작성 도구와 통합되면 작성 도구에 콘텐츠 관리자가 제공됩니다. 콘텐츠 관리자를 사용하여 [!DNL AEM Assets]에 액세스하고 승인된 에셋을 콘텐츠에 삽입합니다.
 이미 [!DNL Edge Delivery Services] 웹 사이트가 있는 경우 [[!DNL AEM Assets] 플러그인](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) 문서를 참조하여 기존 [!DNL AEM] 프로젝트와 [!DNL AEM Assets]를 통합하는 방법을 알아보십시오.
 
 * **[!DNL Edge Delivery Services]**&#x200B;를 위한 [!DNL Universal Editor] 기반 작성 흐름과 [!DNL AEM Assets] 통합: [!DNL Universal Editor]를 설정하여 [!DNL AEM Assets]와 통합합니다. 이 통합으로 [!DNL Dynamic Media with OpenAPI capabilities]를 사용하여 자산을 게재할 수 있습니다.
 
-   * [!DNL Universal Editor]의 사용자 정의 자산 선택기 기능을 추가하는 방법을 알아보려면 [&#x200B; [!DNL Edge Delivery] 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 정의 자산 선택기를 사용하면 자산을 [!DNL Universal Editor] 콘텐츠에 직접 삽입할 수 있습니다.
+   * [!DNL Universal Editor]의 사용자 정의 자산 선택기 기능을 추가하는 방법을 알아보려면 [ [!DNL Edge Delivery] 사이트의 구성](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)을 참조하십시오. 사용자 정의 자산 선택기를 사용하면 자산을 [!DNL Universal Editor] 콘텐츠에 직접 삽입할 수 있습니다.
    * [!DNL Universal Editor]에서 작성 중에 [!DNL AEM Assets]에 액세스하고 자산을 삽입하는 방법을 알아보려면 [확장 개요](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)를 참조하십시오.
 
 <table>
@@ -590,7 +590,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/combine/assets">
-      <strong>Adobe Journey Optimizer와 통합</strong>
+      <strong>Adobe Journey Optimizer과 통합</strong>
       </a>
    </div>
    <p>
@@ -603,7 +603,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/overview">
-      <strong>Commerce와의 통합</strong>
+      <strong>Commerce과 통합</strong>
       </a>
    </div>
    <p>
@@ -616,7 +616,7 @@ AEM Assets는 다양한 Adobe 및 비 Adobe 애플리케이션과 원활하게 �
    </a>
    <div>
       <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
-      <strong>AEM Assets를 EDS와 통합</strong>
+      <strong>EDS와 AEM Assets 통합</strong>
       </a>
    </div>
    <p>
@@ -698,11 +698,11 @@ AEM AI Assistant를 통해 **액세스:**
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="검색 에이전트 개요" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>검색 에이전트 개요</strong>
       </a>
    </div>
@@ -712,11 +712,11 @@ AEM AI Assistant를 통해 **액세스:**
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="콘텐츠 최적화 개요" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>콘텐츠 최적화 에이전트 개요</strong>
       </a>
    </div>
@@ -726,11 +726,11 @@ AEM AI Assistant를 통해 **액세스:**
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="거버넌스 에이전트 개요" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>거버넌스 에이전트 개요</strong>
       </a>
    </div>
@@ -799,7 +799,7 @@ Content Hub는 다음과 같은 주요 이점을 제공합니다.
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Adobe Express를 사용하여 편집</strong>
+      <strong>Adobe Express을 사용하여 편집</strong>
       </a>
    </div>
    <p>
@@ -841,7 +841,7 @@ Dynamic Media는 다음과 같은 주요 기능을 제공합니다.
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dynamic-media.md">
-      <strong>Dynamic Media를 사용하여 작업</strong>
+      <strong>Dynamic Media 작업</strong>
       </a>
    </div>
    <p>
@@ -888,7 +888,7 @@ OpenAPI 기능 포함 Dynamic Media는 민첩하고 효율적인 콘텐츠 공�
 
 OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 제공합니다.
 
-* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media는 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자가 [자산 게재를 애플리케이션과 쉽게 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 이러한 애플리케이션에는 Adobe 및 서드파티 애플리케이션이 포함됩니다. 승인된 자산을 검색하고 선택할 수 있는 [마이크로 프론트엔드 자산 선택기 사용자 인터페이스](/help/assets/overview-asset-selector.md)를 제공합니다. 선택기는 React JS, Angular JS, Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 쉽게 통합할 수 있습니다.
+* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media는 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자가 [자산 게재를 애플리케이션과 쉽게 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 이러한 애플리케이션에는 Adobe 및 서드파티 애플리케이션이 포함됩니다. 승인된 자산을 검색하고 선택할 수 있는 [콘텐츠 관리자 사용자 인터페이스](/help/assets/integrate-adobe-non-adobe-applications.md)를 제공합니다. 선택기는 React JS, Angular JS, Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 쉽게 통합할 수 있습니다.
 
 * **디지털 자산의 중앙 관리**: DAM은 모든 디지털 자산에 대한 단일 정보 소스입니다. 디지털 자산은 AEM Assets에서 중앙 집중식으로 관리되며, 자산 바이너리를 복사하지 않고 게재 URL을 사용한 참조를 통해 소비 애플리케이션에 전달됩니다.
 
@@ -911,7 +911,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>OpenAPI 기능이 포함된 Dynamic Media 개요</strong>
+      <strong>OpenAPI 기능을 사용하는 Dynamic Media 개요</strong>
       </a>
    </div>
    <p>
@@ -926,7 +926,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Experience Manager에서 자산에 대한 액세스 제한</strong>
+      <strong>Experience Manager의 자산에 대한 액세스 제한</strong>
       </a>
    </div>
    <p>
@@ -939,7 +939,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>원격 AEM Assets를 AEM Sites와 통합</strong>
+      <strong>AEM Sites과 원격 AEM Assets 통합</strong>
       </a>
    </div>
    <p>
@@ -971,7 +971,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/manage-reports-assets-view.md">
-      <strong>Assets 보기에서 태그 관리</strong>
+      <strong>Assets 보기에서 보고서 관리</strong>
       </a>
    </div>
    <p>
@@ -986,7 +986,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/asset-reports.md">
-      <strong>Admin 보기에서 태그 관리</strong>
+      <strong>관리자 보기에서 보고서 관리</strong>
       </a>
    </div>
    <p>
@@ -999,7 +999,7 @@ OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 �
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>Content Hub의 Assets Insights</strong>
+      Content Hub의 <strong>Assets 인사이트</strong>
       </a>
    </div>
    <p>

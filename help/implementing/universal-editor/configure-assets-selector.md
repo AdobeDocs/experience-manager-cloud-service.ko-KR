@@ -3,13 +3,13 @@ title: 범용 편집기를 위한 Assets 선택기 구성
 description: 범용 편집기에서 사용하도록 자산 선택기를 구성하는 방법을 이해합니다.
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # 범용 편집기를 위한 Assets 선택기 구성 {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-유니버설 편집기는 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector)를 사용하여 작성자가 콘텐츠에 삽입할 자산을 검색하고 선택할 수 있도록 합니다.
+유니버설 편집기는 에셋 선택기를 사용하여 작성자가 콘텐츠에 삽입할 에셋을 찾아보고 선택할 수 있도록 합니다.
 
-자산 선택기는 [구성 요소 필터를 사용하여 유니버설 편집기 내에서 구성할 수 있습니다.](/help/implementing/universal-editor/filtering.md) 이 문서에서는 사용 가능한 구성 옵션에 대해 설명합니다.
+자산 선택기는 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)를 사용하여 유니버설 편집기 내에서 구성할 수 있습니다. 이 문서에서는 사용 가능한 구성 옵션에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ ht-degree: 1%
 ]
 ```
 
-## 추가 리소스 {#additional-resources}
+<!--
 
-자산 선택기에 대한 자세한 내용은 자산 설명서의 [Micro-Frontend 자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector) 문서를 참조하십시오.
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

@@ -7,10 +7,10 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5973'
-ht-degree: 6%
+source-wordcount: '6103'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 충족시키는 데 도움이 됩니다.
@@ -35,11 +35,11 @@ AEM의 에셋 검색은 다음 사용 사례를 지원하며, 이 문서에서�
 | [검색 순위 및 상승](#searchrank) | [사용자 지정 조건자](#custompredicates) | [스마트 컬렉션](#collections) |
 | [고급 검색: 필터링 및 검색 범위](#scope) | | [예기치 않은 결과 이해 및 문제 해결](#unexpected-results) |
 | [다른 솔루션 및 앱에서 검색](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크톱 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media 자산](#search-dynamic-media-assets)</li></ul> | | |
-| [자산 선택기](#asset-picker) | | |
+| [콘텐츠 관리자](#asset-picker) | | |
 | [제한 사항](#limitations) 및 [팁](#tips) | | |
 | [예시](#samples) | | |
 
-[!DNL Experience Manager] 웹 인터페이스 상단의 Omnisearch 필드를 사용하여 자산을 검색합니다. **[!UICONTROL 의]** Assets **[!UICONTROL >]**&#x200B;파일[!DNL Experience Manager]&#x200B;(으)로 이동하고 상단 막대에서 ![search_icon](assets/do-not-localize/search_icon.png)을(를) 클릭하고 검색 키워드를 입력한 다음 `Return`을(를) 선택합니다. 또는 키워드 바로 가기 `/`(슬래시)를 사용하여 Omnisearch 필드를 엽니다. 검색을 DAM 자산으로 제한하기 위해 `Location:Assets`을(를) 미리 선택했습니다. `Path:/content/dam`Files **[!UICONTROL 폴더의 루트 수준에서 검색을 수행하는 경우에도]**&#x200B;이(가) 표시됩니다. 다른 폴더로 이동하면 `Path:/content/dam/<folder name>`이(가) Omnisearch 필드에 표시되어 검색 범위를 현재 폴더로 제한합니다. [!DNL Experience Manager]에서 검색 키워드를 입력할 때 제안 사항을 제공합니다.
+[!DNL Experience Manager] 웹 인터페이스 상단의 Omnisearch 필드를 사용하여 자산을 검색합니다. [!DNL Experience Manager]의 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**(으)로 이동하고 상단 막대에서 ![search_icon](assets/do-not-localize/search_icon.png)을(를) 클릭하고 검색 키워드를 입력한 다음 `Return`을(를) 선택합니다. 또는 키워드 바로 가기 `/`(슬래시)를 사용하여 Omnisearch 필드를 엽니다. 검색을 DAM 자산으로 제한하기 위해 `Location:Assets`을(를) 미리 선택했습니다. **[!UICONTROL Files]** 폴더의 루트 수준에서 검색을 수행하는 경우에도 `Path:/content/dam`이(가) 표시됩니다. 다른 폴더로 이동하면 `Path:/content/dam/<folder name>`이(가) Omnisearch 필드에 표시되어 검색 범위를 현재 폴더로 제한합니다. [!DNL Experience Manager]에서 검색 키워드를 입력할 때 제안 사항을 제공합니다.
 
 **[!UICONTROL 필터]** 패널을 사용하여 자산, 폴더, 태그 및 메타데이터를 검색합니다. 파일 유형, 파일 크기, 마지막 수정 날짜, 에셋 상태, 인사이트 데이터 및 Adobe Stock 라이선싱과 같은 다양한 옵션(술어)을 기반으로 검색 결과를 필터링할 수 있습니다. 필터 패널을 사용자 지정하고 [검색 패싯](/help/assets/search-facets.md)을 사용하여 검색 조건자를 추가하거나 제거할 수 있습니다. [!UICONTROL 필터] 패널의 [!UICONTROL 파일 형식] 필터에 혼합 상태 확인란이 있습니다. 따라서 중첩된 술어(또는 형식)를 모두 선택하지 않으면 첫 번째 수준의 확인란이 부분적으로 선택됩니다.
 
@@ -87,7 +87,7 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 `damAssetLucene-9`은(는) 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 계산 동작을 변경하므로 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
 
-이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ko)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe에서는 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
+이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe에서는 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
 
 이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 [Facet - Oak 설명서 - Lucene 색인](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)을 참조하십시오.
 
@@ -148,9 +148,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
-타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)을 참조하세요.
+타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)을 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410339/?captions=kor&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *비디오: 검색 결과의 등급과 등급에 영향을 줄 수 있는 방법을 이해합니다.*
 
@@ -185,7 +185,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 유사 이미지 찾기 {#visualsearch}
 
-사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면, 이미지 카드 보기 또는 도구 모음에서 유사 **[!UICONTROL 이미지 찾기]** 옵션을 클릭하세요. [!DNL Experience Manager]은(는) 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다.
+사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면, 이미지 카드 보기 또는 도구 모음에서 유사 **[!UICONTROL 이미지 찾기]** 옵션을 클릭하세요. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다.
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지 찾기](assets/search_find_similar.png)
 
@@ -197,7 +197,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Dynamic Media 자산 {#dmassets}
 
-**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
+**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이 필터는 이미지 세트, 슬라이드, Mixed Media 세트, Spin 세트 등의 에셋만 표시합니다.
 
 ### 메타데이터 필드의 특정 값을 사용하는 GQL 검색 {#gql-search}
 
@@ -217,14 +217,14 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 만료 날짜 | 만료:YYYY-MM-DDTHH |
 | 정시 | ontime:YYYY-MM-DDTHH |
 | 해제 시간 | offtime:YYYY-MM-DDTHH |
-| 시간 범위(expires dateontime,offtime) | 패싯 필드: 하한..우세하 |
+| 시간 범위(expires dateontime,offtime) | facet 필드 : lowerbound..upperbound |
 | 경로 | /content/dam/&lt;폴더 이름> |
 | PDF 제목 | pdftitle:&quot;Adobe 문서&quot; |
 | 제목 | 제목:&quot;교육&quot; |
 | 태그 | 태그:&quot;위치 및 여행&quot; |
 | 유형 | type:&quot;image\png&quot; |
-| 이미지 폭 | 너비:lowerbound..우세하 |
-| 이미지 높이 | 높이:lowerbound..우세하 |
+| 이미지 폭 | width:lowerbound..upperbound |
+| 이미지 높이 | 높이:lowerbound..uperbound |
 | 개인 | 개인:John |
 
 `path`, `limit`, `size` 및 `orderby` 속성은 다른 속성과 함께 `OR` 연산자를 사용하여 결합할 수 없습니다.
@@ -255,11 +255,11 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### [!DNL Experience Manager] 데스크톱 앱에서 자산 검색 {#desktop-app}
 
-Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets)를 참조하세요.
+Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
 
 ### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
-LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ko)을 참조하세요.
+LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)을 참조하세요.
 
 ### [!DNL Adobe Stock]개 이미지 검색 {#adobe-stock1}
 
@@ -277,31 +277,25 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 [!DNL Experience Manager] 검색 기능은 컬렉션 검색과 컬렉션 내의 자산 검색을 지원합니다. [컬렉션 검색](/help/assets/manage-collections.md)을 참조하세요.
 
-## 자산 선택기 {#asset-picker}
+## 콘텐츠 어드바이저 {#asset-picker}
 
-[AEM 자산 선택기](/help/assets/overview-asset-selector.md)([!DNL Adobe Experience Manager] 이전 버전에서는 자산 선택기라고 함)을 사용하면 특별한 방식으로 DAM 자산을 검색, 필터링 및 검색할 수 있습니다. 자산 선택기를 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수 있습니다. 에셋 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수로 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 에셋 선택기의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
+[콘텐츠 관리자](/help/assets/integrate-adobe-non-adobe-applications.md)([!DNL Adobe Experience Manager] 이전 버전에서는 자산 선택기라고 함)을 사용하면 DAM 자산을 특별한 방식으로 검색하고 필터링하고 검색할 수 있습니다. 콘텐츠 관리자를 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 콘텐츠 관리자를 사용하여 선택한 에셋의 메타데이터를 가져올 수 있습니다. 에셋 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수로 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 콘텐츠 권고자의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
 
-에셋 선택기는 HTML5 `Window.postMessage` 메시지를 사용하여 선택한 에셋에 대한 데이터를 받는 사람에게 보냅니다. 찾아보기 모드에서만 작동하며 Omnisearch 결과 페이지에서만 작동합니다.
+콘텐츠 관리자는 HTML5 `Window.postMessage` 메시지를 사용하여 선택한 에셋에 대한 데이터를 받는 사람에게 보냅니다. 찾아보기 모드에서만 작동하며 Omnisearch 결과 페이지에서만 작동합니다.
 
-URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자산 선택기를 실행합니다.
+URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 콘텐츠 관리자를 시작합니다.
 
 | 이름 | 값 | 예 | 목적 |
 |---|---|---|---|
-| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더가 선택된 상태로 에셋 선택기를 시작하려면(예: `/content/dam/we-retail/en/activities` 폴더가 선택된 상태로) URL의 형식이 `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images`이어야 합니다. | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
-| `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 다중 모드에서는 에셋 선택기를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
-| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 에셋 선택기를 사용하면 루트 폴더 아래에서 하위 에셋(직접/간접)만 선택할 수 있습니다. |
-| `viewmode` | 검색 | | `assettype` 및 `mimetype` 매개 변수를 사용하여 검색 모드에서 자산 선택기를 실행하려면 |
+| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더가 선택된 상태로 콘텐츠 관리자를 실행하려면(예: 폴더 `/content/dam/we-retail/en/activities`이(가) 선택된 상태로) URL의 형식이 `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images`이어야 합니다. | 콘텐츠 관리자를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
+| `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 다중 모드에서는 콘텐츠 관리자를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 콘텐츠 관리자를 Granite 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 콘텐츠 관리자를 시작하고 pickerSrc URL로 구성한 경우에만 적용할 수 있습니다. |
+| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 콘텐츠 관리자의 루트 폴더를 지정합니다. 이 경우 컨텐츠 권고자를 사용하면 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
+| `viewmode` | 검색 | | 검색 모드에서 콘텐츠 관리자를 시작하려면 `assettype` 및 `mimetype` 매개 변수를 사용합니다. |
 | `assettype` | 이미지, 문서, 멀티미디어, 아카이브. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 제공된 값을 기반으로 자산 유형을 필터링하려면 옵션을 사용합니다. |
 | `mimetype` | 자산(와일드카드도 지원됨)의 MIME 유형(`/jcr:content/metadata/dc:format`)입니다. | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | MIME 유형을 기반으로 자산을 필터링하는 데 사용합니다. |
 
-자산 선택기 인터페이스에 액세스하려면 `https://[aem_server]:[port]/aem/assetpicker`(으)로 이동하십시오. 원하는 폴더로 이동하고 하나 이상의 에셋을 선택합니다. 또는 Omnisearch 상자에서 원하는 에셋을 검색하고 필요에 따라 필터를 적용한 다음 선택합니다.
-
-![에셋 선택기에서 에셋을 찾아 선택](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*그림: 에셋 선택기에서 에셋을 찾아 선택합니다.*
+콘텐츠 관리자 인터페이스에 액세스하려면 `https://[aem_server]:[port]/aem/assetpicker`(으)로 이동하십시오. 원하는 폴더로 이동하고 하나 이상의 에셋을 선택합니다. 또는 Omnisearch 상자에서 원하는 에셋을 검색하고 필요에 따라 필터를 적용한 다음 선택합니다.
 
 ## 제한 사항 {#limitations}
 
@@ -329,10 +323,10 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * **[!UICONTROL 모두 선택]** 확인란을 사용하여 검색된 자산을 선택합니다. [!DNL Experience Manager]은(는) 처음에 카드 보기에 100개의 자산을 표시하고 목록 보기에 200개의 자산을 표시합니다. 검색 결과를 스크롤하면 더 많은 에셋이 로드됩니다. 로드된 에셋보다 더 많은 에셋을 선택할 수 있습니다. 선택한 에셋의 수가 검색 결과 페이지의 오른쪽 위 모서리에 표시됩니다. 예를 들어 선택한 에셋을 다운로드하거나, 선택한 에셋에 대해 메타데이터 속성을 일괄적으로 업데이트하거나, 선택한 에셋을 컬렉션에 추가할 수 있습니다. 표시된 에셋보다 더 많은 에셋을 선택한 경우 선택한 모든 에셋에 작업이 적용되거나 적용된 에셋 수가 대화 상자에 표시됩니다. 로드되지 않은 에셋에 작업을 적용하려면 모든 에셋을 명시적으로 선택해야 합니다.
 * 필수 메타데이터가 포함되지 않은 에셋을 검색하려면 [필수 메타데이터](#mandatorymetadata)를 참조하십시오.
 * 검색은 모든 메타데이터 필드를 사용합니다. 12에 대한 검색과 같은 일반 검색은 일반적으로 많은 결과를 반환합니다. 더 나은 결과를 얻으려면 큰따옴표(작은 따옴표 아님)를 사용하거나 숫자가 특수 문자 없이 단어에 인접한지 확인하십시오(예: `shoe12`).
-* 전체 텍스트 검색은 `-` 및 `^`과(와) 같은 연산자를 지원합니다. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어 `"Notebook - Beauty"` 대신 `Notebook - Beauty`을(를) 사용합니다.
+* 전체 텍스트 검색은 `-` 및 `^`과(와) 같은 연산자를 지원합니다. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어 `Notebook - Beauty` 대신 `"Notebook - Beauty"`을(를) 사용합니다.
 * 검색 결과가 너무 많으면 원하는 에셋에서 [검색 범위](#scope)를 0으로 제한하십시오. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같은 원하는 에셋을 더 잘 찾는 방법에 대한 아이디어가 있을 때 가장 잘 작동합니다.
 
-* **태그 지정**: 태그를 사용하면 더 효율적으로 검색 및 검색할 수 있는 자산을 분류할 수 있습니다. 태깅은 적절한 분류법을 다른 사용자 및 워크플로우에 전달하는 데 도움이 됩니다. [!DNL Experience Manager]은(는) 사용 및 교육으로 에셋에 태그를 지정하는 데 더 능숙해지는 Adobe AI 서비스를 사용하여 에셋에 자동으로 태그를 지정하는 방법을 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하세요. 검색 결과가 표시되는 순서를 최적화하기 위해 선택한 몇 개 에셋의 [검색 순위를 높임](#searchrank)할 수 있습니다.
+* **태그 지정**: 태그를 사용하면 더 효율적으로 검색 및 검색할 수 있는 자산을 분류할 수 있습니다. 태그 지정은 적절한 분류 체계를 다른 사용자 및 워크플로에 전파하는 데 도움이 됩니다. [!DNL Experience Manager]은(는) 사용 및 교육으로 에셋에 태그를 지정하는 데 더 능숙해지는 Adobe AI 서비스를 사용하여 에셋에 자동으로 태그를 지정하는 방법을 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하세요. 검색 결과가 표시되는 순서를 최적화하기 위해 선택한 몇 개 에셋의 [검색 순위를 높임](#searchrank)할 수 있습니다.
 
 * **인덱싱**: 인덱싱된 메타데이터와 자산만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. [인덱싱](#searchindex)을 참조하십시오.
 
@@ -357,13 +351,13 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 *그림: 예를 들어 자산 검색에서 별표 와일드카드를 사용하는 방법을 보여 줍니다.*
 
-**물음표 와일드카드로 검색**: 검색 범위를 넓히려면 하나 이상의 &#39;?&#39;를 사용하십시오. 문자 수를 정확히 일치시킵니다. 예를 들어 다음 그림에서는
+**물음표 와일드카드로 검색하십시오**: 검색 범위를 넓히려면 &#39;?&#39; 문자를 하나 이상 사용하여 정확한 문자 수를 일치시키십시오. 예를 들어 다음 그림에서는
 
 * `run???` 쿼리가 어떤 에셋과도 일치하지 않습니다.
 
-* `run????` 쿼리가 `running` 뒤에 4자의 `run` 단어와 일치합니다.
+* `run????` 쿼리가 `run` 뒤에 4자의 `running` 단어와 일치합니다.
 
-* `??run` 쿼리가 `rerun` 앞에 두 문자가 있는 단어 `run`과(와) 일치합니다.
+* `??run` 쿼리가 `run` 앞에 두 문자가 있는 단어 `rerun`과(와) 일치합니다.
 
 ![예제를 사용하여 자산 검색에서 물음표 와일드카드 사용 설명](assets/search_with_questionmark_run.gif)
 
@@ -397,7 +391,7 @@ AI 검색은 정확한 키워드 일치에 의존하지 않고 사용자의 쿼�
 
 기존 키워드 기반 검색은 `Woman`, `drinking`, `Coffee`과(와) 같은 자산 메타데이터의 정확한 일치 항목을 찾고 메타데이터에 이러한 모든 용어를 포함하는 자산을 반환합니다.
 
-그러나 AI 검색은 `Girl`의 경우 `Lady`, `Woman`, `Cappuccino`의 경우 `Latte` 및 `Coffee`과(와) 같은 유사한 단어와 일치합니다.
+그러나 AI 검색은 `Woman`의 경우 `Girl`, `Lady`, `Coffee`의 경우 `Cappuccino` 및 `Latte`과(와) 같은 유사한 단어와 일치합니다.
 
 마찬가지로 이 프롬프트를 스페인어로 지정하거나 `Woman`을(를) `Wman`(으)로 잘못 입력해도 동일한 결과를 얻을 수 있습니다.
 
@@ -471,7 +465,7 @@ AI 검색은 정확한 키워드 일치에 의존하지 않고 사용자의 쿼�
 
 ### 검색 결과 정렬 {#sort}
 
-필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. **[[!UICONTROL 필터]](#searchui)** 패널에서 **[!UICONTROL 파일]**&#x200B;을(를) 선택한 경우에만 목록 보기에서 검색 결과를 정렬할 수 있습니다. [!DNL Assets]은(는) 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
+필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. **[!UICONTROL 필터]** 패널에서 **[[!UICONTROL 파일]](#searchui)**&#x200B;을(를) 선택한 경우에만 목록 보기에서 검색 결과를 정렬할 수 있습니다. [!DNL Assets]은(는) 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, 차원, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
 
@@ -559,5 +553,5 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=ko)
->* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ko)
+>* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)

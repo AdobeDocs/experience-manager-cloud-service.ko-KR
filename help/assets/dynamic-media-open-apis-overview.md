@@ -4,10 +4,10 @@ description: OpenAPI 기능이 포함된 Dynamic Media를 사용하는 이유 �
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 99%
+source-wordcount: '1127'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ OpenAPI 기능 포함 Dynamic Media는 민첩하고 효율적인 콘텐츠 공�
 
 OpenAPI 기능이 포함된 Dynamic Media는 다음과 같은 주요 이점을 제공합니다.
 
-* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media는 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자가 [자산 게재를 애플리케이션과 쉽게 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 이러한 애플리케이션에는 Adobe 및 서드파티 애플리케이션이 포함됩니다. 승인된 자산을 검색하고 선택할 수 있는 [마이크로 프론트엔드 자산 선택기 사용자 인터페이스](/help/assets/overview-asset-selector.md)를 제공합니다. 선택기는 React JS, Angular JS, Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 쉽게 통합할 수 있습니다.
+* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media는 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자가 [자산 게재를 애플리케이션과 쉽게 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 이러한 애플리케이션에는 Adobe 및 서드파티 애플리케이션이 포함됩니다. 승인된 자산을 검색 및 선택할 수 있는 [콘텐츠 관리자 인터페이스](/help/assets/integrate-adobe-non-adobe-applications.md)를 제공합니다. 선택기는 React JS, Angular JS, Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 쉽게 통합할 수 있습니다.
 
 * **디지털 자산의 중앙 관리**: DAM은 모든 디지털 자산에 대한 단일 정보 소스입니다. 디지털 자산은 AEM Assets에서 중앙 집중식으로 관리되며, 자산 바이너리를 복사하지 않고 게재 URL을 사용한 참조를 통해 소비 애플리케이션에 전달됩니다.
 
@@ -108,16 +108,16 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
       </a>
    </div>
    <p>
-      <em>검색 및 게재 API를 사용하여 사용자 정의 사용자 인터페이스를 Experience Manager Assets 저장소와 통합하거나 Adobe의 마이크로 프론트엔드 자산 선택기를 사용합니다.</em>
+      <em>검색 및 배달 API를 사용하여 Experience Manager Assets 리포지토리와 사용자 지정 사용자 인터페이스를 통합하거나 Adobe의 콘텐츠 관리자를 사용합니다.</em>
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Adobe의 자산 선택기" src="./assets/asset-selector-prereqs.png" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Adobe 콘텐츠 관리자" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Adobe의 마이크로 프론트엔드 자산 선택기</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Adobe의 콘텐츠 관리자</strong>
       </a>
    </div>
    <p>
@@ -149,7 +149,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
    </a>
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
-      <strong>다운스트림 애플리케이션에 자산 게재</strong>
+      <strong>다운스트림 애플리케이션에 자산 전달</strong>
       </a>
    </div>
    <p>
@@ -162,7 +162,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Experience Manager에서 자산에 대한 액세스 제한</strong>
+      <strong>Experience Manager의 자산에 대한 액세스 제한</strong>
       </a>
    </div>
    <p>
@@ -178,7 +178,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>원격 AEM Assets를 AEM Sites와 통합</strong>
+      <strong>AEM Sites과 원격 AEM Assets 통합</strong>
       </a>
    </div>
    <p>
@@ -191,7 +191,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-      <strong>OpenAPI 기능이 포함된 Dynamic Media에 대해 자주 묻는 질문</strong>
+      <strong>OpenAPI 기능이 포함된 Dynamic Media FAQ</strong>
       </a>
    </div>
    <p>
@@ -204,7 +204,7 @@ AEM as a Cloud Service에서 OpenAPI 기능 포함 Dynamic Media를 활성화하
    </a>
    <div>
       <a href="/help/assets/configure-custom-domain.md">
-      <strong>사용자 정의 도메인 구성</strong>
+      <strong>사용자 지정 도메인 구성</strong>
       </a>
    </div>
    <p>
