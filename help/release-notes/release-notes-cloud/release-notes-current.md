@@ -137,7 +137,7 @@ Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하�
 
 Experience Governance MCP Server는 이제 GA(일반적으로 사용 가능)되었습니다. MCP(Model Context Protocol)를 지원하는 AI 개발자 도구 및 챗봇과 통합되어 챗봇 또는 IDE에서 자연어 프롬프트를 사용하여 브랜드 무결성 및 규정 준수를 보호할 수 있습니다. 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 사용 가능한 거버넌스 검사를 검색할 수 있습니다.
 
-[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
+[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
 
 #### 클라우드 커넥터 {#aem-claude-connector}
 
