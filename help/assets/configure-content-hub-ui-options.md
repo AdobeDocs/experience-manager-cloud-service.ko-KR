@@ -35,7 +35,7 @@ Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페
 
 * 에셋, 컬렉션 및 인사이트 외에 Content Hub에 포함해야 하는 모든 사용자 지정 링크입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472953/?captions=kor&learn=on&enablevpops){transcript=true}
 
 ## 사전 요구 사항 {#prerequisites-configuration-ui}
 
