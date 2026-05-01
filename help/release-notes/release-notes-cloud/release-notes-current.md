@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
+source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 31%
+source-wordcount: '2054'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483067/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -91,6 +91,10 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 이제 AEM 사용자는 콘텐츠 번역을 위해 LLM(Large Language Model)을 활용하여 사람 번역 품질을 기계 번역 속도로 제공할 수 있습니다. 기존 타사 번역 서비스와 유사하게, Azure OpenAI는 AEM에서 번역 공급업체로 구성할 수 있으며 향후 릴리스에 예정된 추가 LLM에 대한 지원을 제공합니다. 고객은 이 기능을 위해 자체 LLM 라이센스를 사용합니다. 또한 기업 번역 스타일 가이드를 AEM에 업로드하여 번역 규칙을 추출하여 브랜드와 스타일의 일관성을 보장할 수 있습니다. 자세한 내용은 [AI 번역 통합 구성](/help/sites-cloud/administering/translation/ai-translation-integration.md)을 참조하십시오.
 
+### 콘텐츠 조각 편집기 {#cf-editor}
+
+이제 새로운 콘텐츠 조각 편집기를 사용하여 콘텐츠 조각의 JSON 표현식을 미리 볼 수 있습니다. 이렇게 하면 렌더링과 관계없이 콘텐츠 구조를 확인하고 이 기능에 대해 AEM Touch UI의 이전 콘텐츠 조각 편집기와의 패리티를 복원하는 데 도움이 됩니다.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **이제 Adobe Workfront 및 Adobe 이외의 애플리케이션에 콘텐츠 관리자를 사용할 수 있습니다**
@@ -112,7 +116,7 @@ Microsoft SharePoint 목록에 제출하는 적응형 Forms은 이제 OAuth URL 
 * **규칙 편집기 개선 사항**
 
    * 이제 적응형 Forms 규칙 편집기는 [기본 제공(OOTB) 트리거와 사용자 지정 이벤트](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)에 대한 발송 이벤트 및 트리거 시 이벤트 규칙에 대한 간소화된 문법을 지원하므로 작성자는 사용자 지정 트리거에 대한 문법으로만 국한되지 않습니다.
-   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리[&#128279;](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
+   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 [파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -133,7 +137,7 @@ Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하�
 
 Experience Governance MCP Server는 이제 GA(일반적으로 사용 가능)되었습니다. MCP(Model Context Protocol)를 지원하는 AI 개발자 도구 및 챗봇과 통합되어 챗봇 또는 IDE에서 자연어 프롬프트를 사용하여 브랜드 무결성 및 규정 준수를 보호할 수 있습니다. 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 사용 가능한 거버넌스 검사를 검색할 수 있습니다.
 
-[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
+[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
 
 #### 클라우드 커넥터 {#aem-claude-connector}
 
