@@ -6,16 +6,16 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 0%
+source-wordcount: '2396'
+ht-degree: 1%
 
 ---
 
 # 규칙 편집기 개선 사항 및 사용 사례
 
-<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
+<span class="preview"> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">시험판 채널</a>에서 사용할 수 있는 시험판 기능입니다. 이러한 개선 사항은 Edge Delivery Services Forms에도 적용할 수 있습니다.
 
 이 문서에서는 적응형 Forms의 규칙 편집기에 대한 최신 개선 사항을 소개합니다. 이러한 업데이트는 사용자 지정 코드를 작성하지 않고도 양식 동작을 보다 쉽게 정의하고, 보다 역동적이고 반응적이며 개인화된 양식 경험을 만들 수 있도록 설계되었습니다.
 
@@ -28,6 +28,7 @@ ht-degree: 0%
 | [동적 변수](#support-for-dynamic-variables-in-rules) | 사용자 입력 또는 기타 조건에 따라 변경되는 변수를 사용하여 규칙을 만듭니다. | - 유연한 규칙 조건 사용 <br> - 중복 논리의 필요성 감소 <br> - 숨겨진 필드를 만들 필요 없음 |
 | [사용자 지정 이벤트 기반 규칙](#custom-event-based-rules-support) | 표준 트리거 이외의 사용자 지정 이벤트에 응답하는 규칙을 정의합니다. | - 고급 사용 사례 지원 <br> - 규칙 실행 시기 및 방법에 대한 제어 강화 <br> - 상호 작용 향상 |
 | [컨텍스트 인식 반복 가능 패널 실행](#context-based-rule-execution-for-repeatable-panels) | 이제 규칙이 마지막 인스턴스만 실행되는 대신 반복된 각 패널에 대해 올바른 컨텍스트에서 실행됩니다. | - 각 반복 인스턴스 <br>에 대한 정확한 규칙 적용 - 동적 섹션의 오류 감소 <br> - 반복되는 콘텐츠로 사용자 경험 개선 |
+| [첨부 파일 구성 요소가 있는 경우 결합됨](#combined-when-conditions-with-the-file-attachment-component) | 조건 추가 및 AND 또는 OR 논리를 사용하여 첨부 파일 구성 요소에 대한 When 규칙을 만들어 다른 유효성 검사와 함께 첨부 파일을 평가합니다. | - 첨부 파일 상태 및 기타 검사가 의도한 대로 평가될 때만 작업이 실행됨 <br> - 업로드 시나리오에 대한 체인 규칙 감소 <br> - 파일 및 유효성이 확인된 입력이 함께 필요한 양식의 명확한 작성 |
 | [쿼리 문자열, UTM 및 브라우저 매개 변수 지원](#url-and-browser-parameter-based-rules-in-adaptive-forms) | URL 매개 변수 또는 브라우저별 값에 따라 양식 동작을 조정하는 규칙을 만듭니다. | - 소스 또는 환경을 기반으로 개인화를 활성화합니다. <br> - 마케팅 또는 추적별 흐름에 유용함 <br> - 추가적인 스크립팅이나 사용자 지정이 필요 없음 |
 
 >[!NOTE]
@@ -139,7 +140,6 @@ ht-degree: 0%
 
 **디스패치 이벤트 및 트리거 시 이벤트를 사용한 구현**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 로그인 조각이 사용자 이름 및 암호에 대해 사전 정의된 필드가 포함된 양식에 추가됩니다. **OTP 가져오기** 단추에 규칙이 구성되어 OTP를 입력하고 확인하는 입력 필드가 포함된 **유효성 검사 패널**&#x200B;을 표시합니다.
@@ -158,6 +158,10 @@ ht-degree: 0%
 
 개발자가 규칙 편집기의 조건으로 사용할 수 있는 사용자 지정 이벤트를 만들고 트리거할 수 있는 사용자 지정 이벤트 지원.
 
+### OOTB 및 사용자 지정 이벤트에 대한 문법 단순화 {#simplified-grammar-for-ootb-and-custom-events}
+
+향상된 규칙 편집기에는 **이벤트 발송** 및 **트리거 이벤트 시**&#x200B;를 사용하는 이벤트 기반 규칙에 대한 **간소화된 문법**&#x200B;이 포함되어 있습니다. 이전에는 이 문법이 **사용자 지정** 이벤트에만 적용되었습니다. 기본 제공(OOTB) 이벤트는 지원되지 않았으며, 이러한 이벤트에는 OOTB 트리거에 대한 **When** 규칙과 사용자 지정 이벤트에 대한 **트리거 이벤트 설정** 규칙이 필요한 경우가 많습니다. 이제 OOTB 이벤트가 동일한 간소화된 문법으로 지원되므로 트리거가 OOTB인지 또는 사용자 지정인지 여부에 따라 **When**&#x200B;과(와) **트리거 이벤트 설정** 간을 전환하지 않고 일관된 작성 패턴을 사용할 수 있습니다.
+
 ## 반복 가능한 패널에 대한 컨텍스트 기반 규칙 실행
 
 적응형 Forms은 반복 가능한 패널에 대한 컨텍스트 인식 규칙 실행을 지원합니다. 이렇게 하면 모든 인스턴스에 영향을 주거나 마지막 인스턴스의 기본값을 설정하는 대신 사용자가 상호 작용하는 패널 인스턴스에 특별히 규칙을 적용할 수 있습니다.
@@ -175,6 +179,26 @@ ht-degree: 0%
 수량이 변경되면 규칙은 선택한 제품의 단가를 가져오고 해당 패널에 대한 총 비용만 계산합니다.
 
 ![컨텍스트 인식 규칙 출력](/help/forms/assets/context-aware-rule-output.png)
+
+## 파일 첨부 구성 요소가 있는 When 조건 결합 {#combined-when-conditions-with-the-file-attachment-component}
+
+향상된 규칙 편집기는 **AND** 또는 **OR** 논리를 사용하여 **첨부 파일** 구성 요소와 다른 조건을 결합하는 **When** 규칙을 지원합니다. **When** 절의 **조건 추가**&#x200B;에 첨부 파일 상태와 함께 다른 필드에 대한 확인 또는 패널 유효성 검사를 포함할 수 있으므로 선택한 모든 조건이 충족될 때만 작업이 실행됩니다.
+
+**시나리오**: pet 등록 양식은 **Pet ID**, **Pet 이름** 및 **Pet 범주**&#x200B;를 수집하고 **사진 추가** 첨부 파일을 포함합니다. 첨부 파일이 **및** 변경되어 다른 필드(해당 값)에 구성된 조건이 충족되면 양식에서 작업을 실행합니다(예: **사진 추가** 지우기 또는 새로 고침).
+
+**규칙 편집기에서 첨부 파일 구성 요소를 사용하는 경우 조건을 사용하는 구현**
+
+대상 개체에 규칙이 구성되어 있습니다(예: **사진 추가**). **When** 섹션은 **조건 추가**&#x200B;를 사용하여 첨부 파일 트리거를 하나 이상의 다른 필드에 있는 조건과 결합하므로, 첨부 파일과 해당 필드 값에 따라 작업이 달라집니다.
+
+아래 스크린샷에는 여러 조건을 포함하는 **When** 조건과 **조건 추가** 옵션이 표시됩니다.
+
+![여러 조건을 가진 규칙과 조건 추가](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+**When** 절이 구성된 **AND** 또는 **OR** 논리에 대해 true로 평가되면 규칙이 구성된 작업을 실행합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+**Pet ID**&#x200B;에 `101`이(가) 포함되어 있으면 **사진 추가** 첨부 파일이 지워집니다. 마찬가지로 **Pet 이름**&#x200B;에 `a`이(가) 포함되어 있으면 첨부 파일이 지워집니다.
 
 ## 적응형 Forms의 URL 및 브라우저 매개 변수 기반 규칙
 

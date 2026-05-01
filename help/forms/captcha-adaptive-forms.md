@@ -9,10 +9,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 11%
+source-wordcount: '2147'
+ht-degree: 12%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 11%
 
 >[!NOTE]
 >
-> Adobe은 [새로운 적응형 Forms 만들기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/creating-adaptive-form-core-components.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
+> Adobe은 [새로운 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)를 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다.
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
-| 적용 대상 | 기초 구성 요소를 기반으로 하는 적응형 양식입니다. <br> 핵심 구성 요소를 기반으로 하는 적응형 양식에 대해 [여기를 클릭하세요](/help/forms/captcha-adaptive-forms-core-components.md). |
+| 적용 대상 | 기초 구성 요소를 기반으로 하는 적응형 양식입니다. <br> 핵심 구성 요소를 기반으로 하는 적응형 양식을 보려면 [여기를 클릭하세요](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
@@ -120,7 +120,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 1. 추가한 Captcha 구성 요소를 선택하고 ![cmppr](assets/cmppr.png)을(를) 선택하여 해당 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 **Captcha**&#x200B;입니다. 제목을 표시하지 않으려면 **제목 숨기기**&#x200B;를 선택하십시오.
-1. Google의 **reCAPTCHA 서비스**&#x200B;에 설명된 대로 구성한 경우 **Captcha 서비스** 드롭다운에서 [reCAPTCHA](#google-reCAPTCHA)을(를) 선택하여 reCAPTCHA 서비스를 활성화하십시오.
+1. Google의 [reCAPTCHA 서비스](#google-reCAPTCHA)에 설명된 대로 구성한 경우 **Captcha 서비스** 드롭다운에서 **reCAPTCHA**&#x200B;을(를) 선택하여 reCAPTCHA 서비스를 활성화하십시오.
 1. 설정 드롭다운에서 **reCAPTCHA Enterprise** 또는 **reCAPTCHA v2**&#x200B;에 대한 구성을 선택하십시오.
    1. **reCAPTCHA Enterprise** 버전을 선택하는 경우 키 유형은 **확인란** 또는 **점수 기반**&#x200B;일 수 있습니다. [웹 사이트에 대한 사이트 키](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)를 구성할 때 선택한 항목에 따라 다릅니다.
 
@@ -347,6 +347,64 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을(를) 기본 도메인으�
 ```
 
 구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+
+## OSGi로 reCAPTCHA 클라우드 구성 재정의 {#override-recaptcha-osgi}
+
+환경별로 다른 프로젝트 ID, 사이트 키 또는 암호를 사용하려면 **[!UICONTROL Apache Sling 컨텍스트 인식 구성 재정의 공급자: OSGi 구성]**&#x200B;에 대한 OSGi 구성을 추가하십시오.
+
+### 프로젝트에 OSGi 재정의 추가 {#override-recaptcha-steps}
+
+1. AEM 프로젝트에 대한 Cloud Manager Git 저장소를 복제합니다.
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. 텍스트 편집기에서 복제된 저장소를 엽니다.
+
+1. 응용 프로그램의 `ui.config` 폴더로 이동(`<your-application-folder>`을(를) 프로젝트의 `/apps`에 있는 폴더 이름으로 바꾸기):
+
+   * 작성자용 **:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **게시용:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > `osgiconfig`, `config.author` 및 `config.publish` 폴더가 아직 없는 경우 만듭니다.
+
+1. 두 실행 모드 폴더에서 각각 동일한 파일 이름을 사용하여 OSGi 재정의 파일을 생성합니다.
+
+   * **작성자:**&#x200B;의 경우 `config.author` 폴더에서 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`을(를) 만듭니다.
+   * `config.publish` 폴더의 **게시:**&#x200B;에 대해 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`을(를) 만듭니다.
+
+1. 다음 JSON을 각 파일에 붙여넣기(또는 필요한 경우 작성자 및 게시 콘텐츠를 별도로 조정)합니다. `overrides`의 모든 경로에서 `<environment-name>`을(를) reCAPTCHA 엔터프라이즈 클라우드 구성 이름으로 바꾸십시오. [Sling 재정의 구문](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)을 사용하십시오.
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >`projectId`, `siteKey` 및 `secretKey`을(를) Cloud Manager에서 환경 변수 및 비밀로 추가하여 **작성자**, **미리 보기** 및 **게시**&#x200B;에 적용합니다(**환경 구성** 대화 상자에서 **단계 적용됨** 사용). [Cloud Manager의 환경 변수](/help/implementing/cloud-manager/environment-variables.md)를 참조하십시오.
+
+   ![Recaptcha 재정의](/help/forms/assets/recaptcha-override.png)
+
+1. 변경 사항을 커밋하고 푸시합니다.
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. 이 저장소를 배포하는 Cloud Manager 파이프라인을 실행합니다. 배포 후 재정의는 해당 환경에 대해 정의된 변수 및 비밀의 `projectId`, `siteKey` 및 `secretKey`을(를) 제공합니다.
 
 ## 추가 참조 {#see-also}
 

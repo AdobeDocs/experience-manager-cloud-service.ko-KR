@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483067/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -101,16 +101,18 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms의 얼리 액세스 기능 {#forms-early-access-features}
+### AEM Forms의 새로운 기능
 
-**제출 PDF에서 다중 선택 드롭다운에 대한 레이블 표시**
-이제 적응형 Forms의 다중 선택 드롭다운 구성 요소가 [생성된 제출 PDF](/help/forms/generate-document-of-record-core-components.md)에서 선택한 표시 레이블을 렌더링하여 문서가 양식에 표시되는 내용을 정확하게 반영하도록 합니다.
+* **OSGi로 reCAPTCHA 클라우드 구성 재정의** 
+소스 파일과 함께 보관하는 reCAPTCHA Enterprise 프로젝트 ID, 사이트 키 및 비밀은 [컨텍스트 인식 구성 재정의를 추가하고 Cloud Manager을 통해 배포](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi)한 후 각 Cloud Service 환경에서 다른 값으로 확인할 수 있습니다.
 
-**확인란, 라디오 단추 및 패널 구성 요소에 대한 액세스 가능성 개선**
-적응형 Forms 핵심 구성 요소에는 [확인란 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [라디오 단추 그룹(v2)](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) 및 [패널 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)에 대한 WCAG 2.2 호환 의미 체계 마크업이 도입됩니다. 이러한 구성 요소는 `<fieldset>` 및 `<legend>` HTML 요소를 활용하여 그룹 레이블과 해당 옵션 간에 의미 있는 관계를 설정하므로 화면 판독기와 기타 보조 기술이 정확하게 해석할 수 있습니다.
+* **인증서 기반 인증** 
+Microsoft SharePoint 목록에 제출하는 적응형 Forms은 이제 OAuth URL 인증과 함께 [인증서 기반 인증](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication)을 지원합니다. 인증서 기반 로그인의 경우 AEM 및 Microsoft Azure에서 인증서 별칭 및 테넌트 세부 정보를 등록합니다.
 
-Forms Manager에서 **버전 관리 지원**
-이제 Forms Manager [적응형 Forms(핵심 구성 요소 및 기초 구성 요소)](/help/forms/manage-form-versions-forms-manager.md), 양식 단편, 테마, XDP 템플릿 및 이진 자산에 대한 버전 관리를 지원합니다. Forms 및 문서 콘솔에서 직접 버전을 만들고, 전체 버전 기록을 보고, 양식 에셋의 이전 상태를 복원할 수 있습니다.
+* **규칙 편집기 개선 사항**
+
+   * 이제 적응형 Forms 규칙 편집기는 [기본 제공(OOTB) 트리거와 사용자 지정 이벤트](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)에 대한 발송 이벤트 및 트리거 시 이벤트 규칙에 대한 간소화된 문법을 지원하므로 작성자는 사용자 지정 트리거에 대한 문법으로만 국한되지 않습니다.
+   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 [파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -131,7 +133,7 @@ Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하�
 
 Experience Governance MCP Server는 이제 GA(일반적으로 사용 가능)되었습니다. MCP(Model Context Protocol)를 지원하는 AI 개발자 도구 및 챗봇과 통합되어 챗봇 또는 IDE에서 자연어 프롬프트를 사용하여 브랜드 무결성 및 규정 준수를 보호할 수 있습니다. 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 사용 가능한 거버넌스 검사를 검색할 수 있습니다.
 
-[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
+[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
 
 #### 클라우드 커넥터 {#aem-claude-connector}
 
