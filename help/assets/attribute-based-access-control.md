@@ -38,7 +38,7 @@ Content Hub의 AI Assistant를 통해 관리자는 메타데이터와 자연어�
 * 브랜드 및 지역 전반에 걸쳐 확장 가능한 거버넌스 지원
 * 에셋 관리 개선
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475421/?captions=kor&learn=on&enablevpops){transcript=true}
 
 ## 속성 기반 액세스 제어를 활성화하는 방법 {#enable-attribute-based-access-control}
 
