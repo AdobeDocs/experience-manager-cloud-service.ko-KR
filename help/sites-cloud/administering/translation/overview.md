@@ -6,10 +6,10 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sites에 적용됩니다)."
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 81%
+source-wordcount: '340'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 81%
 
 * **인간 번역:** 콘텐츠를 전문 번역사가 번역할 수 있도록 번역 공급업체로 보냅니다. 번역이 완료되면 번역된 콘텐츠는 반환되어 AEM으로 가져와집니다. 번역 공급업체를 AEM과 통합하면 콘텐츠는 자동으로 AEM과 번역 공급업체 간 전송됩니다.
 * **기계 번역:** 콘텐츠가 기계 번역 서비스를 통해 즉시 번역됩니다.
+* **아젠틱 번역(AI 번역 통합):** 번역 클라우드 서비스를 통해 AEM을 대규모 언어 모델에 연결하고 다른 공급업체와 동일한 번역 프로젝트 및 워크플로를 사용합니다. AEM에서 로케일별로 번역 규칙을 생성하도록 스타일 안내서를 업로드할 수 있습니다. [AI 번역 통합 구성](ai-translation-integration.md)을 참조하십시오.
 
 >[!TIP]
 >

@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service의 AI에 대해 알아�
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 50%
 
 ---
 
@@ -18,13 +18,13 @@ AI(인공 지능)는 Adobe Experience Manager as a Cloud Service의 필수적인
 
 ## AI 어시스턴트 {#ai-assistant}
 
-[Adobe Experience Manager의 AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md)는 AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다.
+[Adobe Experience Manager의 AI 어시스턴트](/help/implementing/cloud-manager/ai-assistant-in-aem.md)는 AEM 관련 쿼리에 대한 답변을 간소화하도록 설계된 대화형 인터페이스를 제공합니다.
 
 ## AEM의 아젠틱 AI {#agentic-ai-in-aem}
 
 AEM은 콘텐츠 생성을 가속화하고 변경 사항을 자동으로 오케스트레이션할 수 있는 다양한 [에이전트](/help/ai-in-aem/agents/overview.md)를 제공합니다.
 
-* [브랜드 경험 에이전트](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [콘텐츠 관리자 에이전트](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [거버넌스 에이전트](/help/ai-in-aem/agents/governance/overview.md)
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
   변형 생성 은 생성 AI를 사용하여 입력을 기반으로 콘텐츠 변형을 생성합니다. 변형을 만든 후에는 웹 사이트의 콘텐츠를 사용하고 Edge Delivery Services의 실험 기능을 사용하여 성공을 측정할 수도 있습니다.
 
-   * [편집기 외부의 이전 버전 &#x200B;](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
+   * [편집기 외부의 이전 버전 ](/help/generative-ai/generate-variations.md)을(를) 사용할 수 있습니다.
 
      >[!NOTE]
      >
@@ -59,6 +59,10 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
   디지털 자산의 경우 수동 입력에 의존하지 않고도 AI를 사용하여 설명 태그를 자동으로 할당할 수 있습니다. 이러한 AI 생성 태그는 메타데이터의 품질을 높여 자산을 검색, 분류 및 추천하기 쉽게 만들어 줍니다. 이 접근 방식은 수동 태그 지정을 제거하여 효율성을 향상시킬 뿐만 아니라 방대한 양의 디지털 콘텐츠에 대한 일관성과 확장성을 보장합니다.
 
+* [AI 번역 통합](/help/sites-cloud/administering/translation/ai-translation-integration.md)
+
+  AI 번역 통합을 통해 Adobe Experience Manager에서 작성하는 콘텐츠의 번역 서비스로 대형 언어 모델(LLM)을 사용할 수 있습니다. AEM을 LLM 공급자에 연결하고(Microsoft Azure OpenAI부터), 다른 커넥터와 동일한 번역 워크플로를 재사용하고, 원할 경우 번역 스타일 안내서를 업로드하여 AEM에서 로케일 전반에서 톤, 용어 및 브랜드 언어를 일관되게 유지하는 규칙을 생성할 수 있습니다.
+
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
@@ -69,7 +73,7 @@ Adobe Experience Manager(AEM) as a Cloud Service용 Adobe 생성형 AI를 사용
 
 * [Adobe AI 개요](https://www.adobe.com/kr/ai/overview.html)
 
-* [Adobe의 담당 AI](https://www.adobe.com/trust/responsible-ai.html)
+* [Adobe의 책임 있는 AI](https://www.adobe.com/trust/responsible-ai.html)
 
 * [Experience Cloud 제품의 생성형 AI](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/generative-ai)
 
