@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: e3785c9d8c5f1a8576c93d566d332cd718820bd7
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 2%
+source-wordcount: '2560'
+ht-degree: 3%
 
 ---
 
@@ -516,8 +516,6 @@ data:
 > [이전 로그 전달에서 이 셀프 서비스 모델로 마이그레이션](#legacy-migration)하는 경우 Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 
 ### 스모 논리 {#sumologic}
-
-Sumo Logic으로의 로그 전달은 AEM 및 Dispatcher 로그를 지원합니다. CDN 로그는 아직 지원되지 않습니다.
 
 데이터 수집을 위해 Sumo 논리를 구성할 때 단일 문자열에 호스트, receiverURI 및 개인 키를 제공하는 &quot;HTTP Source 주소&quot;가 표시됩니다.  예:
 
