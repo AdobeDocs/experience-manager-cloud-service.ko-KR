@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
+source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 30%
@@ -39,7 +39,7 @@ ht-degree: 30%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483067/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta 프로그램 {#aem-beta-programs}
@@ -116,7 +116,7 @@ Microsoft SharePoint 목록에 제출하는 적응형 Forms은 이제 OAuth URL 
 * **규칙 편집기 개선 사항**
 
    * 이제 적응형 Forms 규칙 편집기는 [기본 제공(OOTB) 트리거와 사용자 지정 이벤트](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)에 대한 발송 이벤트 및 트리거 시 이벤트 규칙에 대한 간소화된 문법을 지원하므로 작성자는 사용자 지정 트리거에 대한 문법으로만 국한되지 않습니다.
-   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리[&#128279;](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
+   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 [파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -137,7 +137,10 @@ Java 스택 팀은 기능 전달 속도를 높이고 코드 품질을 개선하�
 
 Experience Governance MCP Server는 이제 GA(일반적으로 사용 가능)되었습니다. MCP(Model Context Protocol)를 지원하는 AI 개발자 도구 및 챗봇과 통합되어 챗봇 또는 IDE에서 자연어 프롬프트를 사용하여 브랜드 무결성 및 규정 준수를 보호할 수 있습니다. 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 사용 가능한 거버넌스 검사를 검색할 수 있습니다.
 
-[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
+[AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### 클라우드 커넥터 {#aem-claude-connector}
 
