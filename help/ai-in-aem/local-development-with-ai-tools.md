@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 개발을 가속화하기 위해 프로젝�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한
 | **에이전트 기술** | 구성 요소 생성 및 Dispatcher 구성과 같은 반복되는 개발 작업에 재사용 가능한 지침 세트 |
 | **AEM 빠른 시작 로컬 MCP 서버** | 문제 해결을 지원하기 위해 로컬 AEM SDK 인스턴스의 실시간 런타임 데이터를 노출합니다 |
 | **Dispatcher 로컬 MCP 서버** | 로컬 Dispatcher 인스턴스의 런타임 유효성 검사 및 검사 활성화 |
+
+추가적인 실습 지침은 [AI 지원 개발 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)를 검토하십시오.
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ Adobe은 **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/
 
 ### 스킬 설치 {#install-skills}
 
-AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다.
+AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다. 자세한 설명은 [AEM 에이전트 기술 설정 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)를 참조하십시오.
 
 #### 클로드 코드 {#claude-code}
 
@@ -92,7 +94,7 @@ gh upskill adobe/skills --path skills/aem/cloud-service --all
 
 ### 구성 요소 만들기 스킬 사용 {#use-the-create-component-skill}
 
-처음 사용 시 스킬은 `project` 및 기존 구성 요소에서 `package`, `group` 및 `pom.xml`을(를) 자동으로 감지하고 감지된 값을 확인하도록 요청한 다음 프로젝트 루트에서 `.aem-skills-config.yaml`을(를) 만듭니다. 처음 사용하기 전에 수동 구성이 필요하지 않습니다.
+처음 사용 시 스킬은 `pom.xml` 및 기존 구성 요소에서 `project`, `package` 및 `group`을(를) 자동으로 감지하고 감지된 값을 확인하도록 요청한 다음 프로젝트 루트에서 `.aem-skills-config.yaml`을(를) 만듭니다. 처음 사용하기 전에 수동 구성이 필요하지 않습니다.
 
 파일을 미리 만들려면 프로젝트 루트에 다음 구조로 `.aem-skills-config.yaml`을(를) 배치하십시오.
 
@@ -121,6 +123,8 @@ CTA Link (ctaLink) - Pathfield
 
 에이전트는 확인을 위해 필드 사양을 되풀이한 다음 모든 구성 요소 파일을 생성합니다. 지원되는 패턴에는 복합 중첩 항목이 있는 다중 필드, 조건부 표시/숨기기 논리, Sling 리소스 병합을 통한 핵심 구성 요소 확장 및 AEM Mocks를 사용하는 JUnit 5 테스트가 포함됩니다.
 
+[AEM 에이전트 기술을 사용한 구성 요소 개발 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)를 따라 자세히 알아보십시오.
+
 ### Dispatcher 스킬 사용 {#use-the-dispatcher-skill}
 
 Dispatcher 또는 Apache HTTPD 구성 작업에 대한 Dispatcher 기술을 호출합니다. 이 스킬은 요청의 성격에 따라 6개의 전문가 하위 스킬 중 하나로 요청을 라우팅합니다.
@@ -144,7 +148,7 @@ Dispatcher 기술은 오케스트레이션 및 자문 지침을 처리합니다.
 
 ### 콘텐츠 패키지 설치 {#install-the-content-package}
 
-[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)에서 콘텐츠 패키지를 다운로드하고 `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`의 패키지 관리자를 사용하여 `/crx/packmgr`을(를) 로컬 빠른 시작에 설치합니다.
+[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)에서 콘텐츠 패키지를 다운로드하고 `/crx/packmgr`의 패키지 관리자를 사용하여 `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`을(를) 로컬 빠른 시작에 설치합니다.
 
 **호환성:**&#x200B;이(가) AEM SDK `2026.2.24678.20260226T154829Z-260200` 이상에서 확인되었습니다.
 
@@ -189,7 +193,7 @@ Dispatcher 기술은 오케스트레이션 및 자문 지침을 처리합니다.
 
 #### 기타 IDE {#other-ides}
 
-모든 MCP 클라이언트는 `http://localhost:4502/bin/mcp` 헤더가 있는 `Authorization: Basic YWRtaW46YWRtaW4=`을(를) 지정하여 연결할 수 있습니다. IDE의 MCP 설정을 사용하여 사용자 지정 헤더를 구성합니다.
+모든 MCP 클라이언트는 `Authorization: Basic YWRtaW46YWRtaW4=` 헤더가 있는 `http://localhost:4502/bin/mcp`을(를) 지정하여 연결할 수 있습니다. IDE의 MCP 설정을 사용하여 사용자 지정 헤더를 구성합니다.
 
 >[!NOTE]
 >
@@ -210,11 +214,11 @@ Dispatcher 스킬과 달리 Dispatcher MCP 서버는 7개의 MCP 도구만 노�
 ### 사전 요구 사항 {#prerequisites}
 
 - Docker Desktop 4.x 이상(설치 및 실행 중)
-- AEM Dispatcher SDK은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)에서 다운로드되었습니다.
+- AEM Dispatcher SDK은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)에서 다운로드되었습니다.
 
 >[!NOTE]
 >
->`client version 1.43 is too new`이(가) 표시되면 셸 또는 `DOCKER_API_VERSION=1.41`에서 `mcp.json`을(를) 설정하십시오.
+>`client version 1.43 is too new`이(가) 표시되면 셸 또는 `mcp.json`에서 `DOCKER_API_VERSION=1.41`을(를) 설정하십시오.
 
 ### Dispatcher SDK 설치 {#install-the-dispatcher-sdk}
 
@@ -238,7 +242,7 @@ Expand-Archive aem-sdk-dispatcher-tools-<version>-windows.zip
 
 ### 커서 구성 {#configure-cursor}
 
-`aem-dispatcher-mcp`에 `~/.cursor/mcp.json` 항목 추가:
+`~/.cursor/mcp.json`에 `aem-dispatcher-mcp` 항목 추가:
 
 ```json
 {
@@ -257,7 +261,7 @@ Expand-Archive aem-sdk-dispatcher-tools-<version>-windows.zip
 }
 ```
 
-`<path_to_dispatcher_sdk>`을(를) 추출된 Dispatcher SDK 위치로 바꾸고 `<path_to_dispatcher_src>`을(를) 프로젝트의 Dispatcher `src` 디렉터리로 바꿉니다. `DISPATCHER_CONFIG_PATH`이(가) 정의된 파일을 포함하는 구성 루트로 `/docroot`을(를) 설정합니다. `MCP_LOG_LEVEL` 및 `MCP_LOG_FILE`은(는) 선택적 디버깅 설정입니다. `client version 1.43 is too new`이(가) 표시되면 `DOCKER_API_VERSION`을(를) `1.41`(으)로 설정하십시오. 다른 MCP 서버가 이미 구성된 경우 `aem-dispatcher-mcp` 항목을 바꾸지 않고 추가하십시오. 저장한 후 Cursor를 다시 시작합니다.
+`<path_to_dispatcher_sdk>`을(를) 추출된 Dispatcher SDK 위치로 바꾸고 `<path_to_dispatcher_src>`을(를) 프로젝트의 Dispatcher `src` 디렉터리로 바꿉니다. `/docroot`이(가) 정의된 파일을 포함하는 구성 루트로 `DISPATCHER_CONFIG_PATH`을(를) 설정합니다. `MCP_LOG_LEVEL` 및 `MCP_LOG_FILE`은(는) 선택적 디버깅 설정입니다. `client version 1.43 is too new`이(가) 표시되면 `DOCKER_API_VERSION`을(를) `1.41`(으)로 설정하십시오. 다른 MCP 서버가 이미 구성된 경우 `aem-dispatcher-mcp` 항목을 바꾸지 않고 추가하십시오. 저장한 후 Cursor를 다시 시작합니다.
 
 다른 IDE도 유사한 방식으로 구성할 수 있습니다. SDK `docs/DispatcherMCP.md`에는 클라우드 데스크톱 및 VS 코드에 대한 전체 예제가 포함되어 있습니다.
 
