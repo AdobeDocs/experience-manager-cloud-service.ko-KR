@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2276'
 ht-degree: 2%
 
 ---
@@ -78,7 +78,7 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 
 | 요청 유형 | 콘텐츠 요청 | 설명 |
 | --- | --- | --- |
-| HTTP 코드 100-299 | 포함됨 | HTML 또는 JSON 콘텐츠의 전체 또는 일부를 반환하는 성공적인 요청을 포함합니다.<br>HTTP 코드 206: 이러한 요청은 전체 콘텐츠의 일부만 전달합니다. 부분 요청은 페이지 콘텐츠를 렌더링하는 데 사용되는 HTML 또는 JSON 응답의 일부를 전달할 때 포함됩니다. |
+| HTTP 코드 100-299 | 포함됨 | 전체 또는 부분 HTML 또는 JSON 콘텐츠를 반환하는 성공적인 요청을 포함합니다.<br>HTTP 코드 206: 이러한 요청은 전체 콘텐츠의 일부만 전달합니다. 부분 요청은 페이지 콘텐츠를 렌더링하는 데 사용되는 HTML 또는 JSON 응답의 일부를 전달할 때 포함됩니다. |
 | 자동화를 위한 HTTP 라이브러리 | 포함됨 | 페이지 콘텐츠를 검색하는 도구 또는 라이브러리에서 만든 요청입니다. 예: <br>· Amazon CloudFront<br>· Apache Http 클라이언트<br>· 비동기 HTTP 클라이언트<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub 노드 가져오기<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ 클라이언트<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Python 요청<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br> gitHub 노드 가져오기<br>· Reactor Netty<br><br>트래픽이 잘 알려진 봇으로 분류되지 않는 경우 사용자 지정 에이전트 또는 AI 기반 자동화도 포함할 수 있습니다. |
 | 모니터링 및 상태 확인 도구 | 포함됨 | 페이지의 상태 또는 가용성을 모니터링하는 데 사용되는 요청입니다.<br>제외된 콘텐츠 요청의 [유형](#excluded-content-request)을 참조하세요.<br>예:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(호환 가능; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`개 요청 | 포함됨 | 고객이 콘텐츠를 미리 로드하거나 미리 가져오면(예: `<link rel="prefetch">` 사용) 시스템에서 해당 서버측 요청을 계산합니다. 미리 가져온 페이지 수에 따라 이 접근 방식으로 트래픽이 증가할 수 있습니다. |
@@ -97,13 +97,13 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 | DDOS 공격의 트래픽 | 제외됨 | DDOS 보호. AEM은 일부 DDOS 공격을 자동으로 감지하여 차단합니다. 감지된 경우 DDOS 공격은 청구할 수 없습니다. |
 | AEM as a Cloud Service New Relic 모니터링 | 제외됨 | AEM as a Cloud Service 글로벌 모니터링. |
 | 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | Adobe은 URL을 사용하여 외부에서 가용성 또는 상태 검사를 모니터링할 것을 권장합니다.<br><br>`/system/probes/health` |
-| AEM as a Cloud Service Pod 준비 서비스 | 제외됨 | 요원: 스카이라인-서비스-웜업/1* |
-| 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· <br>· Pinterest`MJ12bot`<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot<br> |
-| 잘 알려진 AI/LLM 웹 크롤러 (Fastly에 의해 태그됨) | 제외됨 | 알려진 AI/LLM 웹 크롤러의 요청으로, 잘 알려진 보트로 식별됩니다(예: `User-Agent` 또는 기타 보트 분류 신호). 이러한 요청은 청구할 수 없습니다.<br><br>제외된 봇의 예로는 ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! 등이 있습니다. 메일 프록시, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector 및 Yahoo Gemini.<br><br>AI 에이전트가 잘 알려진 봇으로 식별되지 않은 경우(예: 일반 브라우저 `User-Agent`을(를) 사용하는 경우) 해당 요청은 청구 가능한 콘텐츠 요청으로 카운트될 수 있습니다. |
+| AEM as a Cloud Service Pod 준비 서비스 | 제외됨 | 에이전트: skyline-service-warmup/1.* |
+| 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot<br> |
+| 잘 알려진 AI/LLM 웹 크롤러 (Fastly에 의해 태그됨) | 제외됨 | 알려진 AI/LLM 웹 크롤러의 요청으로, 잘 알려진 보트로 식별됩니다(예: `User-Agent` 또는 기타 보트 분류 신호). 이러한 요청은 청구할 수 없습니다.<br><br>제외된 봇의 예로는 ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! 등이 있습니다. Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector 및 Yahoo Gemini.<br><br>AI 에이전트가 잘 알려진 봇으로 식별되지 않은 경우(예: 일반 브라우저 `User-Agent`을(를) 해당 요청은 청구 가능한 콘텐츠 요청으로 카운트될 수 있습니다. |
 | Commerce integration framework 호출 제외 | 제외됨 | AEM에 수행된 요청이 Commerce integration framework(URL은 `/api/graphql`(으)로 시작)로 전달되므로 두 번 계산되지 않습니다. Cloud Service에 대해서는 청구할 수 없습니다. |
 | 클라이언트 라이브러리(/etc.clientlibs/*) — 제외됨 | 제외됨 | /etc.clientlibs/* 아래의 요청은 AEM에서 사용하는 플랫폼 수준 클라이언트 라이브러리 에셋 및 런타임 구성 파일입니다. 이러한 요청은 고객이 작성한 콘텐츠 또는 비즈니스 데이터를 전달하지 않으므로 콘텐츠 요청으로 간주되지 않습니다. |
 | `favicon.ico` 제외 | 제외됨 | 반환된 콘텐츠가 HTML 또는 JSON이 아니어야 하지만 SAML 인증 흐름과 같은 특정 시나리오에서는 favicons를 HTML으로 반환하는 것으로 관찰되었습니다. 따라서 favicons는 카운트에서 명시적으로 제외됩니다. |
-| XF(경험 조각) - 동일한 도메인 재사용 | 제외됨 | 동일한 도메인에 호스팅된 페이지의 XF 경로(예: `/content/experience-fragments/...`)에 대한 요청(요청 호스트와 일치하는 Referrer 헤더로 식별됨).<br><br> 예: 동일한 도메인에서 배너 또는 카드에 대한 XF를 가져오는 `aem.customer.com`의 홈 페이지.<br><br>· URL이 /content/experience-fragments/...<br>· 레퍼러 도메인이 `request_x_forwarded_host`<br><br>**와(과) 일치합니다. 참고:** 경험 조각 경로를 사용자 지정하는 경우(예: `/XFrags/...` 또는 `/content/experience-fragments/`의 외부 경로를 사용하는 경우) 요청은 제외되지 않으며 동일한 도메인인 경우에도 카운트될 수 있습니다. Adobe에서는 제외 로직이 올바르게 적용되도록 Adobe의 표준 XF 경로 구조를 사용하는 것이 좋습니다. |
+| XF(경험 조각) - 동일한 도메인 재사용 | 제외됨 | 동일한 도메인에 호스팅된 페이지의 XF 경로(예: `/content/experience-fragments/...`)에 대한 요청(요청 호스트와 일치하는 Referrer 헤더로 식별됨).<br><br> 예: 같은 도메인에서 배너 또는 카드에 대한 XF를 가져오는 `aem.customer.com`의 홈 페이지.<br><br>· URL이 /content/experience-fragments/...<br>· 레퍼러 도메인이 `request_x_forwarded_host`<br><br>**와(과) 일치합니다. 참고:** 경험 조각 경로를 사용자 지정하는 경우(예: `/XFrags/...` 또는 `/content/experience-fragments/`의 외부 경로를 사용하는 경우) 요청은 제외되지 않으며, 같은 도메인이라도 카운트될 수 있습니다. Adobe에서는 제외 로직이 올바르게 적용되도록 Adobe의 표준 XF 경로 구조를 사용하는 것이 좋습니다. |
 
 ## 콘텐츠 요청 관리 {#managing-content-requests}
 
@@ -120,17 +120,47 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 
 ### 콘텐츠 요청을 관리하는 트래픽 필터 규칙 {#traffic-filter-rules-to-manage-crs}
 
-* 일반적인 봇 패턴은 빈 사용자 에이전트를 사용하는 것입니다.  구현 및 트래픽 패턴을 검토하여 빈 사용자 에이전트가 유용한지 여부를 확인합니다.  이 트래픽을 차단하려면 [구문](/help/security/traffic-filter-rules-including-waf.md#rules-syntax)을(를) 사용하는 것이 좋습니다.
+콘텐츠 요청을 더 잘 제어하려면 필터 규칙을 정의하기 전에 CDN 트래픽을 분석하십시오. [CDN 로그 분석 도구](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)를 사용하면 CDN 성능 및 요청 패턴에 대한 통찰력을 얻을 수 있습니다. 먼저 트래픽이 발생하는 위치와 예기치 않은 시그널링 패턴이 있는지 파악합니다(일반적인 봇 패턴은 빈 사용자 에이전트를 사용하는 것입니다).
 
+**보고 기록할 항목:**
+
+* 고객 국가
+* 클라이언트 네트워크(자율 시스템/AS)
+* 클라이언트 IP
+* 사용자 에이전트 및 봇 범주
+
+요청 변환을 사용하여 CDN 로그 및 대시보드에 표시되도록 요청 로그에 속성을 추가할 수 있습니다. 예를 들어, 분석을 위해 보트 이름과 클라이언트 네트워크(AS 이름)를 기록하려면 다음을 수행합니다.
+
+```yaml
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: bot_name
+          value: { reqProperty: botName }
+        - type: set
+          logProperty: cli_network
+          value: { reqProperty: clientAsName }
 ```
+
+원하지 않는 트래픽(국가, 네트워크, 보트 또는 기타 신호)을 식별한 후 트래픽 필터 규칙으로 차단할 수 있습니다. 클라이언트 국가, 네트워크 또는 보트 이름별로 차단하는 규칙 예:
+
+```yaml
 trafficFilters:
   rules:
-    - name: block-missing-user-agent
+    - name: block-bad-client-traffic
       when:
         anyOf:
+          - { reqProperty: clientCountry, equals: "XX" }
+          - { reqProperty: clientAsName, equals: "UnwantedClientNetwork" }
+          - { reqProperty: botName, equals: "UnwantedBot" }
           - { reqHeader: user-agent, exists: false }
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
+
+예제 값을 차단할 국가 코드, 네트워크 또는 보트 이름으로 바꿉니다. 추가 옵션은 [트래픽 필터 규칙 구문](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) 및 [조건 구조](/help/security/traffic-filter-rules-including-waf.md#condition-structure)를 참조하십시오.
 
 * 어떤 봇들은 어느 날 사이트를 매우 심하게 강타하고 그 다음 날 사라집니다. 이러한 기능은 특정 IP 주소 또는 사용자 에이전트를 차단하려는 시도를 좌절시킬 수 있습니다.  일반적인 접근 방식 중 하나는 [비율 제한 규칙](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules)을 도입하는 것입니다.  [예제](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples)를 검토하고 빠른 요청 속도를 위해 허용 한도와 일치하는 규칙을 만드십시오.  일반 속도 제한으로 허용할 수 있는 예외를 보려면 [조건 구조](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 구문을 검토하십시오.
