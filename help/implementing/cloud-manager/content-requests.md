@@ -120,7 +120,7 @@ AEM as a Cloud Service은 콘텐츠 요청을 계산하기 위해 서버측 수�
 
 ### 콘텐츠 요청을 관리하는 트래픽 필터 규칙 {#traffic-filter-rules-to-manage-crs}
 
-콘텐츠 요청을 더 잘 제어하려면 필터 규칙을 정의하기 전에 CDN 트래픽을 분석하십시오. [CDN 로그 분석 도구](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)를 사용하면 CDN 성능 및 요청 패턴에 대한 통찰력을 얻을 수 있습니다. 먼저 트래픽이 발생하는 위치와 예기치 않은 시그널링 패턴이 있는지 파악합니다(일반적인 봇 패턴은 빈 사용자 에이전트를 사용하는 것입니다).
+콘텐츠 요청을 더 잘 제어하려면 필터 규칙을 정의하기 전에 CDN 트래픽을 분석하십시오. [CDN 로그 분석 도구](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)를 사용하면 CDN 성능 및 요청 패턴에 대한 통찰력을 얻을 수 있습니다. 먼저 트래픽이 발생하는 위치와 예기치 않은 시그널링 패턴이 있는지 파악합니다(일반적인 봇 패턴은 빈 사용자 에이전트를 사용하는 것입니다).
 
 **보고 기록할 항목:**
 
