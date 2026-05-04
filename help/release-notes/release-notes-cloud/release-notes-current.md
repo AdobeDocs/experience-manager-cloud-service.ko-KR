@@ -116,7 +116,7 @@ Microsoft SharePoint 목록에 제출하는 적응형 Forms은 이제 OAuth URL 
 * **규칙 편집기 개선 사항**
 
    * 이제 적응형 Forms 규칙 편집기는 [기본 제공(OOTB) 트리거와 사용자 지정 이벤트](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)에 대한 발송 이벤트 및 트리거 시 이벤트 규칙에 대한 간소화된 문법을 지원하므로 작성자는 사용자 지정 트리거에 대한 문법으로만 국한되지 않습니다.
-   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 [파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
+   * 이제 핵심 구성 요소를 기반으로 하는 적응형 Forms에 대한 규칙에 AND 또는 OR 논리[&#128279;](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)를 사용하는 다른 조건과 함께 파일 첨부 구성 요소가 포함되면, 규칙은 첨부 파일 상태와 다른 검사가 모두 의도한 대로 평가될 때만 해당 작업을 실행합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
