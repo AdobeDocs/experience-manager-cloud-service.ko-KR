@@ -4,9 +4,9 @@ description: Brand Experience Agent의 양식 작성 작업과 자연어를 사�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 0%
 * **PDF 문서를 가져와서 양식으로 변환**: 기존 PDF 문서를 가져와서 양식으로 변환할 수 있습니다. 이 기술은 업로드된 콘텐츠를 분석하여 브랜드 및 규정 준수 표준이 유지되도록 하면서도 반응형 디자인 및 유효성 검사 논리를 통해 필드 유형을 감지하고 레이아웃을 보존하며 양식을 향상시킵니다.
 
 이러한 기능 중 하나를 사용하면 작성할 양식 유형을 선택하라는 메시지가 표시됩니다. 핵심 구성 요소 기반 적응형 양식 템플릿 또는 Edge Delivery Services 기반 적응형 양식 템플릿을 지정하고 양식을 저장할 기본 경로를 지정합니다. Edge Delivery Services을 기반으로 양식을 만드는 경우 저장소의 GitHub URL을 지정할 수도 있습니다.
-
 
 ### 샘플 프롬프트 {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## 추가 리소스 {#additional-resources}
+
+다음 리소스는 Experience Production Agent를 계속 탐색할 때 유용할 수 있습니다.
+
+* 지침이 있는 실습 지침에는 [Experience Production Agent 통합 문서](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)를 사용할 수도 있습니다.

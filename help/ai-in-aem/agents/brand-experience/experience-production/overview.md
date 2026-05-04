@@ -4,10 +4,10 @@ description: AEM의 Experience Production Agent를 사용하여 콘텐츠 생성
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 2%
+source-wordcount: '345'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,9 @@ Experience Production Agent는 많은 노력과 대량의 작업을 자동화합
 에이전트는 다른 에이전트 스킬로 작업할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * Experience Advisory Agent에서 소스 에셋 가져오기
+
+## 추가 리소스 {#additional-resources}
+
+다음 리소스는 Experience Production Agent를 계속 탐색할 때 유용할 수 있습니다.
+
+* 지침이 있는 실습 지침에는 [Experience Production Agent 통합 문서](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)를 사용할 수도 있습니다.
