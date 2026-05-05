@@ -58,7 +58,7 @@ Developer Console은 특정 프로그램에서 특정 역할을 가진 사용자
 
 작성자 및 게시 서비스 모두에서 데이터를 보려면 두 서비스의 &quot;AEM 사용자&quot; 또는 &quot;AEM 관리자 제품 프로필&quot;에도 사용자를 할당해야 합니다.
 
-사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## OSGi 번들 탭 {#osgi-bundles}
 
