@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 
 **게재** 프로젝트의 경우 구성 파이프라인을 Cloud Manager을 통해 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다. 게시 게재 환경에 첨부된 도메인에 대한 트래픽을 구성해야 하는 경우 타깃팅된 배포 [**게재 파이프라인**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)([프로덕션](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) 또는 [비프로덕션](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment))을(를) 사용하십시오.
 
-**Edge Delivery** 프로젝트용 Cloud Manager을 통해 구성 파이프라인을 배포할 수도 있습니다. 도메인이 [**Edge Delivery 사이트**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)&#x200B;에 연결되어 있는 경우 **Edge Delivery 파이프라인**&#x200B;을(를) 사용하십시오.
+**Edge Delivery** 프로젝트용 Cloud Manager을 통해 구성 파이프라인을 배포할 수도 있습니다. 도메인이 **Edge Delivery 사이트**&#x200B;에 연결되어 있는 경우 [**Edge Delivery 파이프라인**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)&#x200B;을(를) 사용하십시오.
 
 이 문서의 다음 섹션에서는 구성 파이프라인을 사용하는 방법 및 그에 대한 구성을 구성하는 방법에 대한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
 
@@ -35,6 +35,8 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 ## 지원되는 구성 {#configurations}
 
 다음 표는 이러한 구성의 포괄적인 목록을 제공하며, 개별 구성 구문 및 기타 정보를 설명하는 전용 설명서에 대한 링크를 제공합니다.
+
+CDN과 관련된 구성에 대해서는 표에 나와 있는 연결된 문서 외에 [일반적인 시나리오에 대한 CDN 구성 조각](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) 문서도 참조하십시오.
 
 | 유형 | YAML `kind` 값 | 설명 | 게재 게시 | Edge Delivery |
 |---|---|---|---|---|
@@ -133,7 +135,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
      envTypes: ["dev", "stage", "prod"]
 ```
 
-암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 [&#x200B; 참조에 표시된 대로 &#x200B;](#secret-env-vars)암호 속성`${{SPLUNK_TOKEN}}`이 환경별로 달라질 수 있습니다.
+암호 유형 환경(또는 파이프라인) 변수를 사용하면 다음 `${{SPLUNK_TOKEN}}` 참조에 표시된 대로 [암호 속성](#secret-env-vars)이 환경별로 달라질 수 있습니다.
 
 ```yaml
 kind: "LogForwarding"
@@ -163,7 +165,7 @@ data:
   logForwarding-prod.yaml
 ```
 
-속성 값에 차이가 있을 수 있는 경우 이 구조를 사용합니다. 파일에서 `envTypes` 배열 값은 접미사와 일치해야 합니다. 예를 들어 값이 `cdn-dev.yaml`인 `logForwarding-dev.yaml` 및 `["dev"]`, 값이 `cdn-stage.yaml`인 `logForwarding-stage.yaml` 및 `["stage"]` 등입니다.
+속성 값에 차이가 있을 수 있는 경우 이 구조를 사용합니다. 파일에서 `envTypes` 배열 값은 접미사와 일치해야 합니다. 예를 들어 값이 `["dev"]`인 `cdn-dev.yaml` 및 `logForwarding-dev.yaml`, 값이 `["stage"]`인 `cdn-stage.yaml` 및 `logForwarding-stage.yaml` 등입니다.
 
 ### 환경당 폴더 {#folder-per-env}
 

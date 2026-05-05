@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2051'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ AEM as a Cloud Service에서는 수신 요청 또는 발신 응답의 특성을 
 
 소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 Cloud Manager [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포됩니다. 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
 
+일반적인 시나리오에 대한 추가 코드 조각은 [일반적인 시나리오에 대한 CDN 구성 조각](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) 문서를 참조하십시오.
+
 ## 평가 순서 {#order-of-evaluation}
 
 기능적으로 앞에서 언급한 다양한 기능들은 다음 순서로 평가됩니다.
@@ -46,7 +48,7 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
    version: "1"
    ```
 
-1. *Config Pipeline*&#x200B;에 설명된 대로 파일을 [config](/help/operations/config-pipeline.md#folder-structure) 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
+1. [Config Pipeline](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
 
 1. [구성 파이프라인](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
@@ -384,6 +386,8 @@ data:
 
 AEM CDN을 활용하여 Adobe이 아닌 애플리케이션을 비롯한 다양한 백엔드로 트래픽을 라우팅할 수 있습니다(경로당 또는 하위 도메인별로).
 
+요청 속성 `originalPath` 및 `originalUrl`은(는) 각각 변경할 수 없는 원본 경로(쿼리 매개 변수 없음)와 전체 URL(쿼리 매개 변수 포함)이며, 각 경로는 CDN [요청 변환](#request-transformations) 전에 수행됩니다. 평가 시퀀스에서 이전에 다시 작성되었을 수 있는 값이 아니라 클라이언트가 처음 보낸 값에 규칙을 연결해야 하는 경우 `when` 조건에 이 규칙을 사용합니다. 경로 전용 일치에 `originalPath`을(를) 사용합니다. 쿼리 문자열이 조건(예: 특정 초기 요청 URL에 대한 라우팅 또는 필터링)의 일부여야 하는 경우 `originalUrl`을(를) 사용합니다.
+
 구성 예:
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -497,7 +501,7 @@ data:
 
 >[!NOTE]
 >
->Adobe 관리 CDN이 사용되므로 Edge Delivery Services **푸시 무효화 설정 설명서**&#x200B;를 따라 [관리](https://www.aem.live/docs/byo-dns#setup-push-invalidation) 모드에서 푸시 무효화를 구성해야 합니다.
+>Adobe 관리 CDN이 사용되므로 Edge Delivery Services [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation)를 따라 **관리** 모드에서 푸시 무효화를 구성해야 합니다.
 
 
 ### AEMaaCS 환경으로 프록시 설정 {#proxying-to-aemaacs}
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage

@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2282'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,9 @@ data:
 
 CDN 구성에 사용되는 비밀은 다음 두 가지 방법으로 배포할 수 있습니다.
 
-* **파이프라인 비밀 변수** - Cloud Manager에서 [비밀](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 유형의 **파이프라인 변수**(으)로 구성되었으며 **단계 적용**&#x200B;이 **배포**(으)로 설정되어 있습니다. 파이프라인 수준 구성 구성으로 사용할 수 있습니다.
+* **파이프라인 비밀 변수** - Cloud Manager에서 **비밀** 유형의 [파이프라인 변수](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)(으)로 구성되었으며 **단계 적용**&#x200B;이 **배포**(으)로 설정되어 있습니다. 파이프라인 수준 구성 구성으로 사용할 수 있습니다.
 
-* **환경 암호 변수** - Cloud Manager에서 [암호](/help/implementing/cloud-manager/environment-variables.md) 형식의 **환경 변수**(으)로 구성되며 **모두**(으)로 설정된 **서비스 적용**. 이러한 기능은 환경 수준 구성으로 사용할 수 있습니다.
+* **환경 암호 변수** - Cloud Manager에서 **암호** 형식의 [환경 변수](/help/implementing/cloud-manager/environment-variables.md)(으)로 구성되며 **모두**(으)로 설정된 **서비스 적용**. 이러한 기능은 환경 수준 구성으로 사용할 수 있습니다.
 
 **기본 설정: 파이프라인 비밀 변수.** 동일한 파이프라인 실행에서 구성과 함께 배포되므로 가능한 경우 파이프라인 비밀 변수를 사용합니다. 이렇게 하면 비밀과 구성이 동기화되고 롤아웃이 간단해집니다.
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service의 [CDN](/help/implementing/dispatcher/cdn.md#point-to-po
 
 설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 Adobe CDN으로 라우팅되기 전에 고객 CDN의 각 요청에 대해 설정되고, 이 값은 값이 예상대로 맞는지 검증하므로 요청을 적절한 AEM 원본으로 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
 
-*X-AEM-Edge-Key* 값은 `edgeKey1` 또는 유사한 파일의 `edgeKey2` 및 `cdn.yaml` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.  구문은 아래 예에 설명되어 있습니다.
+*X-AEM-Edge-Key* 값은 `cdn.yaml` 또는 유사한 파일의 `edgeKey1` 및 `edgeKey2` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.  구문은 아래 예에 설명되어 있습니다.
 
 추가 디버깅 정보와 일반적인 오류에 대해서는 [일반적인 오류](/help/implementing/dispatcher/cdn.md#common-errors)를 확인하십시오.
 
@@ -105,18 +105,20 @@ data:
           authenticator: edge-auth
 ```
 
+일반적인 시나리오에 대한 추가 코드 조각은 [일반적인 시나리오에 대한 CDN 구성 조각](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) 문서를 참조하십시오.
+
 `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
-자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
+자세한 내용은 [HTTP 헤더 유효성 검사 CDN 규칙 구성 및 배포](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) 자습서 단계를 참조하십시오.
 
 추가 속성은 다음과 같습니다.
 
-* 하위 `Data` 노드가 포함된 `authentication` 노드.
+* 하위 `authentication` 노드가 포함된 `Data` 노드.
 * `authentication`에서 하나의 `authenticators` 노드와 하나의 `rules` 노드가 배열입니다.
 * 인증자: 토큰 또는 자격 증명의 유형을 선언할 수 있습니다. 이 경우 토큰은 에지 키입니다. 여기에는 다음 속성이 포함됩니다.
    * name - 설명 문자열입니다.
    * 형식 - `edge`이어야 합니다.
-   * edgeKey1 - *Cloud Manager 비밀 유형 환경 변수*&#x200B;을(를) 참조해야 하는 [X-AEM-Edge-Key](/help/operations/config-pipeline.md#secret-env-vars)의 값. 서비스 적용 필드에서 모두를 선택합니다. 값(예: `${{CDN_EDGEKEY_052824}}`)은 추가된 날짜를 반영하는 것이 좋습니다.
+   * edgeKey1 - [Cloud Manager 비밀 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)을(를) 참조해야 하는 *X-AEM-Edge-Key*&#x200B;의 값. 서비스 적용 필드에서 모두를 선택합니다. 값(예: `${{CDN_EDGEKEY_052824}}`)은 추가된 날짜를 반영하는 것이 좋습니다.
    * edgeKey2 - 아래 [암호 회전 섹션](#rotating-secrets)에 설명된 대로 암호 회전에 사용됩니다. edgeKey1과 유사하게 정의합니다. `edgeKey1` 및 `edgeKey2` 중 하나 이상을 선언해야 합니다.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * 규칙: 사용해야 하는 인증자와 게시 및/또는 미리보기 계층 여부를 선언할 수 있습니다.  여기에는 다음이 포함됩니다.
@@ -186,7 +188,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 ## API 토큰 제거 {#purge-API-token}
 
-고객은 선언된 제거 API 토큰을 사용하여 [CDN 캐시를 제거](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다. 토큰이 최상위 `cdn.yaml` 폴더 아래에 있는 `config` 또는 유사한 파일에 선언되었습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.
+고객은 선언된 제거 API 토큰을 사용하여 [CDN 캐시를 제거](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다. 토큰이 최상위 `config` 폴더 아래에 있는 `cdn.yaml` 또는 유사한 파일에 선언되었습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.
 
 구문은 아래에 설명되어 있습니다.
 
@@ -212,7 +214,7 @@ data:
 
 추가 속성은 다음과 같습니다.
 
-* 하위 `data` 노드가 포함된 `authentication` 노드.
+* 하위 `authentication` 노드가 포함된 `data` 노드.
 * `authentication`에서 하나의 `authenticators` 노드와 하나의 `rules` 노드가 배열입니다.
 * 인증자: 토큰 또는 자격 증명의 유형을 선언할 수 있습니다. 이 경우 삭제 키입니다. 여기에는 다음 속성이 포함됩니다.
    * name - 설명 문자열입니다.
@@ -227,7 +229,7 @@ data:
 >[!NOTE]
 >제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 openssl rand -hex 32 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
-제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 기본 인증 {#basic-auth}
 
@@ -265,14 +267,14 @@ data:
 
 또한 구문에는 다음이 포함됩니다.
 
-* `data` 노드가 포함된 `authentication` 노드.
+* `authentication` 노드가 포함된 `data` 노드.
 * `authentication`에서 하나의 `authenticators` 노드와 하나의 `rules` 노드가 배열입니다.
 * 인증자: 이 시나리오에서는 다음 구조를 갖는 기본 인증자를 선언합니다.
    * name - 설명 문자열
    * 형식은 `basic`이어야 합니다.
    * 최종 사용자가 기본 인증 대화 상자에 입력할 수 있는 다음 이름/값 쌍을 각각 포함하는 최대 10개의 자격 증명 배열입니다.
       * user - 사용자의 이름입니다.
-      * 암호 - 해당 값은 [모두](/help/operations/config-pipeline.md#secret-env-vars)이(가) 서비스 필드로 선택된 **Cloud Manager 비밀 유형 환경 변수**&#x200B;을(를) 참조해야 합니다.
+      * 암호 - 해당 값은 **모두**&#x200B;이(가) 서비스 필드로 선택된 [Cloud Manager 비밀 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)을(를) 참조해야 합니다.
 * 규칙: 사용해야 하는 인증자와 보호해야 하는 리소스를 선언할 수 있습니다. 각 규칙에는 다음이 포함됩니다.
    * name - 설명 문자열
    * when - [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 문서의 구문에 따라 규칙을 평가할 시기를 결정하는 조건입니다. 일반적으로 게시 계층 또는 특정 경로의 비교가 포함됩니다.
@@ -322,7 +324,7 @@ data:
 
 1. Cloud Manager에서 이전 비밀 참조(`${{CDN_EDGEKEY_052824}}`)를 삭제하고 배포합니다.
 
-1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `edgeKey1`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `${{CDN_EDGEKEY_031426}}`을(를) 추가합니다.
+1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `${{CDN_EDGEKEY_031426}}`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `edgeKey1`을(를) 추가합니다.
 
    ```
    authentication:

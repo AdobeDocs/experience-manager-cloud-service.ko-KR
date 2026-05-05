@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4610'
-ht-degree: 97%
+source-wordcount: '4819'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
 
-확장 보안(이전 이름: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 이름: 강화 보안) 제품의 라이선스를 부여하는 고객은 하나 이상의 *WAF 플래그*&#x200B;를 참조하는 *WAF 트래픽 필터 규칙*(또는 [WAF 규칙](#waf-flags-list))이라는 특별한 트래픽 필터 규칙 범주를 구성할 수도 있습니다.
+확장 보안(이전 이름: WAF-DDoS Protection) 또는 확장 보안 for Healthcare(이전 이름: 강화 보안) 제품의 라이선스를 부여하는 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(또는 *WAF 규칙*)이라는 특별한 트래픽 필터 규칙 범주를 구성할 수도 있습니다.
 
 다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
@@ -178,7 +178,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다. (이스케이프되지 않은 변형의 경우 `pathRaw` 사용)</li><li>`url`: 쿼리 매개변수를 포함한 전체 URL을 반환합니다. (이스케이프되지 않은 변형의 경우 `urlRaw` 사용)</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인 속성을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더에 첫 번째 IP를 반환합니다.</li><li>`clientRegion`: [ISO 3166-2](https://ko.wikipedia.org/wiki/ISO_3166-2)에 설명된 대로 클라이언트가 위치한 지역을 식별하는 국가 하위 구분 코드를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/Regional_indicator_symbol)).</li><li>`clientContinent`: 클라이언트가 어느 대륙에 있는지 식별하는 두 자리 코드(AF, AN, AS, EU, NA, OC, SA)를 반환합니다.</li><li>`clientAsNumber`: 클라이언트 IP에 연관된 [자율 시스템](https://ko.wikipedia.org/wiki/Autonomous_system_(인터넷)) 번호를 반환합니다.</li><li>`clientAsName`: 자율 시스템 번호와 연관된 이름을 반환합니다.</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다. (이스케이프되지 않은 변형의 경우 `pathRaw` 사용)</li><li>`originalPath`: 쿼리 매개 변수 없이 요청의 변경할 수 없는 원래 경로(CDN 요청 변환 전 경로)를 반환합니다.</li><li>`url`: 쿼리 매개변수를 포함한 전체 URL을 반환합니다. (이스케이프되지 않은 변형의 경우 `urlRaw` 사용)</li><li>`originalUrl`: 쿼리 매개 변수를 포함하여 변경 불가능한 요청의 원래 전체 URL(CDN 요청 변환 전 URL)을 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`forwardedDomain`: `X-Forwarded-Host` 헤더에 정의된 첫 번째 도메인 속성을 소문자로 반환</li><li>`forwardedIp`: `X-Forwarded-For` 헤더에 첫 번째 IP를 반환합니다.</li><li>`clientRegion`: [ISO 3166-2](https://ko.wikipedia.org/wiki/ISO_3166-2)에 설명된 대로 클라이언트가 위치한 지역을 식별하는 국가 하위 구분 코드를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/Regional_indicator_symbol)).</li><li>`clientContinent`: 클라이언트가 어느 대륙에 있는지 식별하는 두 자리 코드(AF, AN, AS, EU, NA, OC, SA)를 반환합니다.</li><li>`clientAsNumber`: 클라이언트 IP에 연관된 [자율 시스템](https://ko.wikipedia.org/wiki/Autonomous_system_(인터넷)) 번호를 반환합니다.</li><li>`clientAsName`: 자율 시스템 번호와 연관된 이름을 반환합니다.</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
@@ -471,6 +471,8 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+고급 시나리오에 대한 추가 코드 조각은 [일반적인 시나리오에 대한 CDN 구성 조각](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) 문서를 참조하십시오.
 
 ## CVE 규칙 {#cve-rules}
 
