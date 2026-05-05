@@ -4,19 +4,19 @@ description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
 workflow-type: tm+mt
-source-wordcount: '3321'
-ht-degree: 1%
+source-wordcount: '3437'
+ht-degree: 2%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/)은(는) AEM(Adobe Experience Manager)의 기술 스택에 있는 기본 요소입니다. AEM 및 해당 구성의 합성 번들을 제어하는 데 사용됩니다.
+[OSGi](https://www.osgi.org/)은(는) Adobe Experience Manager(AEM)의 기술 스택에 있는 기본 요소입니다. AEM 및 해당 구성의 합성 번들을 제어하는 데 사용됩니다.
 
-OSGi는 애플리케이션을 작고 재사용 가능한 공동 작업 구성 요소에서 구성할 수 있는 표준화된 기본 요소를 제공합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할 수 있습니다. 이렇게 하면 개별적으로 중지, 설치 및 시작할 수 있으므로 OSGi 번들을 손쉽게 관리할 수 있습니다. 상호 종속성이 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함됩니다. 자세한 내용은 [OSGi 사양](https://help.eclipse.org/latest/index.jsp)을 참조하십시오.
+OSGi는 애플리케이션을 작고 재사용 가능한 공동 작업 구성 요소에서 구성할 수 있는 표준화된 기본 요소를 제공합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할 수 있습니다. 이렇게 하면 개별적으로 중지, 설치 및 시작할 수 있으므로 OSGi 번들을 손쉽게 관리할 수 있습니다. 상호 종속성이 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함됩니다. 자세한 내용은 [OSGi 사양을 참조하십시오.](https://help.eclipse.org/latest/index.jsp)
 
 AEM 코드 프로젝트의 일부인 구성 파일을 통해 OSGi 구성 요소에 대한 구성 설정을 관리할 수 있습니다.
 
@@ -26,13 +26,13 @@ AEM 코드 프로젝트의 일부인 구성 파일을 통해 OSGi 구성 요소�
 
 ## OSGi 구성 파일 {#osgi-configuration-files}
 
-구성 변경 사항은 AEM Project의 코드 패키지(`ui.config`)에서 실행 모드별 구성 폴더의 구성 파일(`.cfg.json`)로 정의됩니다.
+구성 변경 사항은 AEM 프로젝트의 코드 패키지(`ui.config`)에서 실행 모드별 구성 폴더의 구성 파일(`.cfg.json`)로 정의됩니다.
 
 `/apps/example/config.<runmode>`
 
 OSGi 구성 파일의 형식은 Apache Sling 프로젝트에서 정의한 `.cfg.json` 형식을 사용하여 JSON 기반입니다.
 
-OSGi 구성은 OSGi 구성 요소의 Java™ 클래스 이름으로 기본 설정되는 영구 ID(PID)를 통해 OSGi 구성 요소를 타깃팅합니다. 예를 들어 다음과 같이 구현된 OSGi 서비스에 대한 OSGi 구성을 제공하려면 다음을 수행하십시오.
+OSGi 구성은 OSGi 구성 요소의 Java 클래스 이름으로 기본 설정되는 영구 ID(PID)를 통해 OSGi 구성 요소를 타깃팅합니다. 예를 들어 다음과 같이 구현된 OSGi 서비스에 대한 OSGi 구성을 제공하려면 다음을 수행하십시오.
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -44,17 +44,19 @@ osgi 구성 파일이 다음에서 정의됩니다.
 
 >[!NOTE]
 >
->이전 버전의 AEM에서 `.cfg`, `.config` 및 XML `sling:OsgiConfig` 리소스 정의와 같은 다양한 파일 형식을 사용하는 OSGi 구성 파일을 지원했습니다. 이러한 형식은 `.cfg.json` OSGi 구성 형식으로 대체됩니다.
+>이전 버전의 AEM에서는 `.cfg`, `.config` 및 XML `sling:OsgiConfig` 리소스 정의와 같은 다양한 파일 형식을 사용하는 OSGi 구성 파일을 지원했습니다. 이러한 형식은 `.cfg.json` OSGi 구성 형식으로 대체됩니다.
 
 >[!NOTE]
 >
->OSGi 구성은 외부 위치에 저장되는 클라우드의 일반적인 AEM 인스턴스처럼 /apps 아래에 저장되지 않습니다. OSGi 구성을 보려면 Cloud Manager [Developer Console](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)을(를) 확인하십시오.
+>AEM as a Cloud Service에서 OSGi 구성은 `/apps`에 저장되지 않습니다. OSGi 구성을 보려면 Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)을(를) 확인하십시오.
 
 ## 실행 모드 확인 {#runmode-resolution}
 
->[!TIP]
+AEM as a Cloud Service은 [정확한 실행 모드 집합을 지원합니다.](./overview.md#runmodes) AEM as a Cloud Service 환경 간의 OSGi 구성의 모든 변형은 [OSGi 구성 환경 변수를 사용하여 처리해야 합니다.](#environment-specific-configuration-values)
+
+>[!NOTE]
 >
->AEM 6.x는 사용자 지정 실행 모드를 지원하지만 AEM as a Cloud Service은 지원하지 않습니다. AEM as a Cloud Service은 [정확한 실행 모드 집합](./overview.md#runmodes)을 지원합니다. AEM as a Cloud Service 환경 간의 OSGi 구성의 모든 변형은 [OSGi 구성 환경 변수](#environment-specific-configuration-values)를 사용하여 처리해야 합니다.
+>AEM 6.x는 사용자 지정 실행 모드를 지원하지만 AEM as a Cloud Service은 지원하지 않습니다.
 
 실행 모드를 사용하여 특정 OSGi 구성을 특정 AEM 인스턴스에 타깃팅할 수 있습니다. 실행 모드를 사용하려면 `/apps/example`(이 예제는 프로젝트 이름) 아래에 다음 형식의 구성 폴더를 만드십시오.
 
@@ -62,7 +64,7 @@ osgi 구성 파일이 다음에서 정의됩니다.
 
 구성 폴더 이름에 정의된 실행 모드가 AEM에서 사용하는 실행 모드와 일치하는 경우 이러한 폴더의 모든 OSGi 구성이 사용됩니다.
 
-예를 들어 AEM에서 실행 모드 작성자 및 개발을 사용하는 경우 `/apps/example/config.author/` 및 `/apps/example/config.author.dev/`의 구성 노드가 적용되는 반면 `/apps/example/config.publish/` 및 `/apps/example/config.author.stage/`의 구성 노드는 적용되지 않습니다.
+예를 들어 AEM에서 실행 모드 작성자 및 개발 기능을 사용하는 경우 `/apps/example/config.author/` 및 `/apps/example/config.author.dev/`의 구성 노드가 적용되는 반면 `/apps/example/config.publish/` 및 `/apps/example/config.author.stage/`의 구성 노드는 적용되지 않습니다.
 
 동일한 PID에 대해 여러 구성을 적용할 수 있는 경우 일치하는 실행 모드 수가 가장 많은 구성이 적용됩니다.
 
@@ -72,7 +74,7 @@ osgi 구성 파일이 다음에서 정의됩니다.
 >
 >`config.preview` OSGi 구성 폴더 **은(는) `config.publish`을(를) 폴더로 선언할 수 있는 것과 같은 방식으로 선언할 수 없습니다**. 대신 미리보기 계층은 게시 계층의 값에서 OSGi 구성을 상속합니다.
 
-로컬에서 개발할 때 실행 모드 시작 매개변수 `-r`를 사용하여 실행 모드 OSGI 구성을 지정합니다.
+로컬로 개발할 때 실행 모드 시작 매개 변수 `-r`을(를) 사용하여 실행 모드 OSGi 구성을 지정합니다.
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -80,11 +82,11 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### 실행 모드 확인
 
-AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으로 잘 정의됩니다. [사용 가능한 AEM as a Cloud Service 실행 모드 전체 목록](./overview.md#runmodes)을 검토하십시오.
+AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으로 잘 정의됩니다. 사용 가능한 AEM as a Cloud Service 실행 모드의 [전체 목록을 검토하십시오.](./overview.md#runmodes)
 
 실행 모드에서 지정한 OSGi 구성 값은 다음 방법으로 확인할 수 있습니다.
 
-1. Cloud Service 환경의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ko)(으)로 AEM 열기
+1. AEM as a Cloud Services 환경의 [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html) 열기
 1. __Pod__ 드롭다운 목록을 사용하여 검사할 서비스 계층을 선택합니다.
 1. __상태__ 탭 선택 중
 1. __상태 덤프__ 드롭다운 목록에서 __구성__ 선택
@@ -92,12 +94,11 @@ AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으
 
 결과 보기에는 해당 OSGi 구성 값과 함께 선택한 계층에 대한 모든 OSGi 구성 요소 구성이 표시됩니다. 이러한 값은 `/apps/example/osgiconfig/config.<runmode(s)>` 아래 AEM 프로젝트의 소스 코드에 있는 OSGi 구성 값과 상호 참조할 수 있습니다.
 
-
 적절한 OSGi 구성 값이 적용되었는지 확인하려면 다음을 수행하십시오.
 
 1. Developer Console 구성 출력
 1. 확인할 OSGi 구성을 나타내는 `pid`을(를) 찾습니다. 이는 AEM 프로젝트의 소스 코드에 있는 OSGi 구성 파일의 이름입니다.
-1. `pid`에 대한 `properties` 목록을 Inspect하고 키 및 값이 확인되는 실행 모드에 대한 AEM 프로젝트 소스 코드의 OSGi 구성 파일과 일치하는지 확인합니다.=
+1. `properties` 목록에서 `pid`을(를) 검사하고 키 및 값이 AEM 프로젝트 소스 코드의 OSGi 구성 파일과 일치하는지 확인하여 실행 모드를 확인합니다.=
 
 
 ## OSGi 구성 값 유형 {#types-of-osgi-configuration-values}
@@ -152,9 +153,9 @@ OSGi에 대한 일반적인 사례는 인라인 OSGi 구성 값을 사용합니�
 
 인라인 구성 값은 표준 접근 방식으로 간주되며 가능한 경우 사용해야 합니다. 인라인 구성은 다음과 같은 이점을 제공합니다.
 
-* Git의 거버넌스 및 버전 내역과 함께 유지됩니다
+* Git의 거버넌스 및 버전 내역과 함께 유지됩니다.
 * 값은 코드 배포에 암시적으로 연결되어 있습니다.
-* 추가적인 배포 고려 사항이나 조정이 필요하지 않습니다
+* 추가적인 배포 고려 사항이나 조정이 필요하지 않습니다.
 
 OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하여 사용 사례에 필요한 경우에만 비밀 또는 환경별 구성을 선택하십시오.
 
@@ -173,7 +174,7 @@ Adobe Experience Manager as a Cloud Service에서는 암호, 개인 API 키 또�
 
 ## OSGi 구성 생성 {#creating-osgi-configurations}
 
-아래 설명된 대로 OSGi 구성을 만드는 두 가지 방법이 있습니다. 전자의 접근 방식은 일반적으로 개발자에 의해 잘 알려진 OSGi 속성 및 값이 있는 사용자 정의 OSGi 구성 요소를 구성하는 데 사용되며, 후자의 접근 방식은 AEM에서 제공하는 OSGi 구성 요소에 대해 사용됩니다.
+아래 설명된 대로 OSGi 구성을 만드는 두 가지 방법이 있습니다. 전자의 접근 방식은 일반적으로 개발자에 의해 잘 알려진 OSGi 속성 및 값이 있는 사용자 지정 OSGi 구성 요소를 구성하는 데 사용되며, 후자의 접근 방식은 AEM에서 제공한 OSGi 구성 요소에 사용됩니다.
 
 ### OSGi 구성 작성 {#writing-osgi-configurations}
 
@@ -187,15 +188,11 @@ OSGi 구성 팩토리 파일 이름은 `<factoryPID>-<name>.cfg.json` 명명 규
 1. 변경 내용을 새 `.cfg.json` 파일에 저장
 1. 새 OSGi 구성 파일을 Git에 추가 및 커밋
 
-### AEM SDK 빠른 시작을 사용하여 OSGi 구성 생성 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### 웹 콘솔을 사용하여 OSGi 구성 생성 {#generating-osgi-configurations-using-the-web-console}
 
-AEM SDK Quickstart Jar의 AEM 웹 콘솔 을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 개발자가 AEM 프로젝트에서 OSGi 구성을 정의하는 경우 OSGi 속성 및 값 형식을 잘 이해하지 못하는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다.
+AEM SDK [웹 콘솔](/help/implementing/developing/tools/web-console.md)을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 개발자가 AEM 프로젝트에서 OSGi 구성을 정의하는 경우 OSGi 속성 및 값 형식을 잘 이해하지 못하는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다.
 
->[!NOTE]
->
->AEM 웹 콘솔의 구성 UI가 저장소에 `.cfg.json`개의 파일을 기록합니다. 따라서 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 발생할 수 있는 예기치 않은 동작을 방지하기 위해 이 워크플로우를 알고 있어야 합니다.
-
-1. `https://<host>:<port>/system/console`의 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자로 로그인합니다.
+1. `https://<host>:<port>/system/console`의 AEM SDK 웹 콘솔에 관리자로 로그인합니다.
 1. **OSGi** > **구성**(으)로 이동
 1. 구성하려면 OSGi 구성 요소를 찾아 편집할 제목을 선택합니다
    ![OSGi 구성](./assets/configuring-osgi/configuration.png)
@@ -213,6 +210,9 @@ AEM SDK Quickstart Jar의 AEM 웹 콘솔 을 사용하여 OSGi 구성 요소를 
 1. 변경 내용을 새 `.cfg.json` 파일에 저장합니다.
 1. 새 OSGi 구성 파일을 추가하고 Git에 커밋합니다.
 
+>[!WARNING]
+>
+>웹 콘솔의 구성 UI가 저장소에 `.cfg.json`개의 파일을 씁니다. AEM 프로젝트에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우, 로컬 개발 중에 예기치 않은 동작이 발생할 수 있으니 주의하십시오.
 
 ## OSGi 구성 속성 형식 {#osgi-configuration-property-formats}
 
@@ -295,7 +295,7 @@ $[env:ENV_VAR_NAME;default=<value>]
 export ENV_VAR_NAME=my_value
 ```
 
-구성에 사용되는 환경 변수를 설정하고 AEM을 시작하기 전에 이 변수를 실행하는 간단한 bash 스크립트를 작성하는 것이 좋습니다. [https://direnv.net/](https://direnv.net/)과(와) 같은 도구는 이 방법을 단순화하는 데 도움이 됩니다. 값 유형에 따라 소스 코드 관리로 체크 인될 수 있습니다(모든 사용자가 공유할 수 있는 경우).
+구성에 사용되는 환경 변수를 설정하고 AEM을 시작하기 전에 이를 실행하는 간단한 bash 스크립트를 작성하는 것이 좋습니다. [https://direnv.net/](https://direnv.net/)과(와) 같은 도구는 이 방법을 단순화하는 데 도움이 됩니다. 값 유형에 따라 소스 코드 관리로 체크 인될 수 있습니다(모든 사용자가 공유할 수 있는 경우).
 
 비밀의 값은 파일에서 읽습니다. 따라서 비밀을 사용하는 각 자리 표시자에 대해 비밀 값이 포함된 텍스트 파일을 만들어야 합니다.
 
@@ -315,18 +315,17 @@ export ENV_VAR_NAME=my_value
 org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
 ```
 
-### 작성자 및 Publish 구성 {#author-vs-publish-configuration}
+### 작성자 및 게시 구성 {#author-vs-publish-configuration}
 
 OSGi 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 
 * [실행 모드 해결 방법 섹션](#runmode-resolution)에 설명된 대로 별도의 `config.author` 및 `config.publish` OSGi 폴더를 사용해야 합니다.
 * 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
    * 첫 번째 옵션인 것이 좋습니다. 다른 값을 정의하도록 선언된 모든 OSGi 폴더(`config.author` 및 `config.publish` 등)에서 동일한 변수 이름을 사용하십시오. 예
-
      `$[env:ENV_VAR_NAME;default=<value>]`. 여기서 기본값은 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해 환경 변수를 설정할 때는 [Cloud Manager API 참조 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)에 설명된 대로 &quot;서비스&quot; 매개 변수를 사용하여 계층을 구분하십시오. &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;author&quot; 또는 &quot;publish&quot; 또는 &quot;미리보기&quot;가 될 수 있습니다.
    * 두 번째 옵션은 `author_<samevariablename>` 및 `publish_<samevariablename>` 같은 접두사를 사용하여 개별 변수를 선언하는 것입니다.
 
-### 구성 예 {#configuration-examples}
+### 구성 예시 {#configuration-examples}
 
 아래 예에는 스테이징 및 프로덕션 환경 외에 세 개의 개발 환경이 있다고 가정합니다.
 
@@ -349,11 +348,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -363,11 +362,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -392,11 +391,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -406,11 +405,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -420,11 +419,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -449,11 +448,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -463,11 +462,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -490,11 +489,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -504,11 +503,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -516,7 +515,7 @@ config.dev
 
 ## 속성 설정을 위한 Cloud Manager API 형식 {#cloud-manager-api-format-for-setting-properties}
 
-Cloud Manager API 및 구성 방법에 대한 자세한 내용은 [Adobe Developer 웹 사이트에서 Cloud Manager Adobe](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)를 참조하십시오.
+Cloud Manager API 및 구성 방법에 대한 자세한 내용은 Adobe Developer 웹 사이트의 [Adobe Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -596,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Adobe I/O CLI에 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [GitHub의 aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)를 참조하십시오.
+>Adobe I/O CLI용 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [GitHub의 aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)를 참조하십시오.
 
 ### 변수 수 {#number-of-variables}
 
@@ -612,7 +611,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->파이프라인이 사용 중일 때 AEM 업데이트 또는 고객 배포 시 해당 시간에 실행되는 종단간 파이프라인의 부분에 따라 API가 성공하지 못할 수 있습니다. 오류 응답은 특정 이유를 나타내지는 않지만 요청이 실패했음을 나타냅니다.
+>파이프라인이 사용 중일 때(AEM 업데이트 또는 고객 배포) API가 성공하지 못할 수 있습니다. 이는 해당 시점에 종단간 파이프라인이 실행되는 부분에 따라 달라집니다. 오류 응답은 특정 이유를 나타내지는 않지만 요청이 실패했음을 나타냅니다.
 
 예약된 고객 코드 배포가 기존 변수를 사용하여 새 값을 가지는 시나리오가 있을 수 있으며, 이는 현재 코드에는 적절하지 않습니다. 이것이 우려되는 경우 가산 방식으로 변수를 수정하는 것이 좋습니다. 이렇게 하려면 이전 코드가 새 값을 참조하지 않도록 이전 변수의 값을 변경하는 대신 새 변수 이름을 만듭니다. 그런 다음 새 고객 릴리스가 안정적일 때 이전 값을 제거하도록 선택할 수 있습니다.
 

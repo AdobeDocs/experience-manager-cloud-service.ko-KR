@@ -4,9 +4,9 @@ description: AEM as a Cloud Service Developer Console 및 클라우드 환경 �
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
+source-git-commit: 4d8131d6734baeb8c0c50af911cbf9d636c38e1f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ AEM as a Cloud Service Developer Console에는 클라우드 환경을 디버깅�
 >Developer Console은 읽기 전용입니다. SDK을 사용하여 로컬 개발 작업을 수행하는 중에 OSGi 설정이나 저장소 콘텐츠를 수정해야 하는 경우 다음을 사용할 수 있습니다.
 >
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+>* [웹 콘솔](/help/implementing/developing/tools/web-console.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -57,7 +58,7 @@ Developer Console은 특정 프로그램에서 특정 역할을 가진 사용자
 
 작성자 및 게시 서비스 모두에서 데이터를 보려면 두 서비스의 &quot;AEM 사용자&quot; 또는 &quot;AEM 관리자 제품 프로필&quot;에도 사용자를 할당해야 합니다.
 
-사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## OSGi 번들 탭 {#osgi-bundles}
 
