@@ -4,9 +4,9 @@ description: Brand Experience Agent의 콘텐츠 업데이트 작업이 무엇�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 83657ae78fb376f3f55b9f8922deac19b01329a7
+source-git-commit: 5745156078fe3e3e72e293938c065a1340228b9a
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 콘텐츠 업데이트 작업은 콘텐츠 조각, 페이지, 양식 및 에셋을 포함한 기존 콘텐츠를 업데이트합니다. 작업은 경험을 정확하고 최신 상태로 유지하기 위해 콘텐츠 요소를 업데이트, 제거, 바꾸기 또는 추가하는 등의 작업을 수행할 수 있습니다. 입력은 자연어 설명이 될 수 있으며, Jira PDF 및 스크린샷과 함께 사용할 경우 입력도 제공할 수 있습니다.
 
-콘텐츠 업데이트 작업은 자연어 또는 시각화를 통해 제공하는 세부 정보를 페이지의 콘텐츠 업데이트로 변환합니다. 업데이트가 필요한 페이지의 URL과 업데이트가 필요한 세부 정보를 입력하면 에이전트 스킬이 작업을 완료합니다. AEM as a Cloud Service에서 사용하는 경우 작업은 새 [launch](/help/sites-cloud/authoring/launches/overview.md)을(를) 만들어 적용하기 전에 업데이트를 검토할 수 있습니다. 문서 작성에 사용하면 작업은 새 [버전](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)을(를) 만듭니다.
+콘텐츠 업데이트 작업은 자연어 또는 시각화를 통해 제공하는 세부 정보를 페이지의 콘텐츠 업데이트로 변환합니다. 업데이트가 필요한 페이지의 URL과 업데이트가 필요한 세부 정보를 입력하면 에이전트 스킬이 작업을 완료합니다. AEM as a Cloud Service에서 사용하는 경우 작업은 새 [launch](/help/sites-cloud/authoring/launches/overview.md)을(를) 만들어 적용하기 전에 업데이트를 검토할 수 있습니다. 문서 작성에 사용하면 작업은 새 [버전](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)을(를) 만듭니다.
 
 ## 기능 {#capabilities}
 
@@ -134,4 +134,4 @@ Jira에서 콘텐츠 업데이트 작업을 사용하면 편집을 자동화하�
 
 다음 리소스는 Experience Production Agent를 계속 탐색할 때 유용할 수 있습니다.
 
-* 지침이 있는 실습 지침에는 [Experience Production Agent 통합 문서](https://bit.ly/4ndjsJ0)를 사용할 수도 있습니다.
+* 지침이 있는 실습 지침에는 [Experience Production Agent 통합 문서](https://www.adobe.com/go/aem-epa-workbook)를 사용할 수도 있습니다.
