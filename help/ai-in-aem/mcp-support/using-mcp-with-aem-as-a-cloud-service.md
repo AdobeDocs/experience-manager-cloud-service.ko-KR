@@ -4,9 +4,9 @@ description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,10 @@ AEM은 MCP 서버를 HTTP 끝점으로 노출합니다. 아래 나열된 엔드�
 
 | **MCP 서버** | **끝점** | **설명** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **콘텐츠** | `/content` | 페이지 및 콘텐츠 조각에 대한 만들기, 읽기, 업데이트 및 삭제(CRUD)와 에셋 가져오기 및 에셋 검색 등 콘텐츠 작업                                                                          <br>aemagentsteam@adobe.com으로 전자 메일을 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
-| **컨텐츠(읽기 전용)** | `/content-readonly` | 페이지 및 콘텐츠 조각에 대한 읽기 전용 콘텐츠 작업(가져오기, 목록/검색) 및 에셋 검색.                                                                             <br>aemagentsteam@adobe.com으로 전자 메일을 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
+| **콘텐츠** | `/content` | 페이지 및 콘텐츠 조각에 대한 만들기, 읽기, 업데이트 및 삭제(CRUD)와 에셋 가져오기 및 에셋 검색 등 콘텐츠 작업                                                                          <br>전자 메일을 `aemagentsteam@adobe.com`에게 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
+| **컨텐츠(읽기 전용)** | `/content-readonly` | 페이지 및 콘텐츠 조각에 대한 읽기 전용 콘텐츠 작업(가져오기, 목록/검색) 및 에셋 검색.                                                                             <br>전자 메일을 `aemagentsteam@adobe.com`에게 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
 | **Cloud Manager** | `/cloudmanager` | 프로그램, 환경, 저장소 및 파이프라인을 포함하여 트리거될 수도 있는 Cloud Manager 엔티티를 관리합니다. |
-| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
+| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
 
 각각의 MCP 서버에 의해 노출된 특정 툴들은 시간이 지남에 따라 진화할 수 있다. 실제로 MCP 지원 응용 프로그램에 다음과 같은 프롬프트를 통해 도구를 검색하도록 요청할 수 있습니다.
 
@@ -65,7 +65,7 @@ AEM은 MCP 서버를 HTTP 끝점으로 노출합니다. 아래 나열된 엔드�
 
 MCP 클라이언트는 MCP 프로토콜을 사용하여 툴 리스트 및 스키마를 검색하고, 이는 LLM이 사용할 수 있다.
 
-기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
+기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
 
 ## 지원되는 MCP 애플리케이션 {#supported-mcp-applications}
 
@@ -186,7 +186,7 @@ AEM 및 MCP 클라이언트 애플리케이션이 구성되면 선택한 애플�
 
   >[!NOTE]
   >
-  >aemagentsteam@adobe.com으로 이메일을 보내 에셋 검색을 활성화하십시오. 이메일에 사용 사례와 함께 조직 이름을 포함합니다.
+  >자산 검색을 사용하도록 설정하려면 `aemagentsteam@adobe.com`에게 전자 메일을 보내세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다.
 
 ### 예제 워크플로우 {#example-workflows}
 
