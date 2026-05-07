@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ Cloud Manager를 사용하면 **파이프라인** 카드의 **저장소 정보 �
 * Cloud Manager Git 저장소의 URL
 * 사전 설치 Git 명령을 사용하여 Git 저장소 및 푸시 코드에 대한 연결을 빠르게 추가할 수 있습니다.
 
-![저장소 정보 창](assets/repository-info.png)
+  ![저장소 정보 창](assets/repository-info.png)
 
 [비공개 저장소](private-repositories.md)에 대한 액세스 정보는 Cloud Manager에서 사용할 수 없습니다.
 
@@ -66,4 +66,4 @@ Cloud Manager를 사용하면 **파이프라인** 카드의 **저장소 정보 �
 
 언제든지 액세스 암호를 취소할 수 있습니다.
 
-암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&support-tab=home#support). 티켓이 우선적으로 처리되며 보통 1일 이내에 취소됩니다.
+암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). 티켓이 우선적으로 처리되며 보통 1일 이내에 취소됩니다.
