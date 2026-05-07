@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 정보를 간략히 소개합니다.
 
-## 릴리스 25821 {#release-25821}
+## 릴리스 25892 {#release-25892}
 
-다음은 2026년 5월 5일에 공개적으로 릴리스된 유지 보수 릴리스 25821에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 25520.
+다음은 2026년 5월 7일에 공개적으로 릴리스된 유지 보수 릴리스 25892에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 25520.
 
 2026.5.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-25821}
+>[!NOTE]
+>
+>릴리스 25821이 비공개로 설정되었습니다.
+
+### 개선 사항 {#enhancements-25892}
 
 * CQ-4362304: 지침 프론트엔드를 만들고 LLM 구성 UI를 업데이트합니다.
 * GRANITE-39546: Apache Tika를 3.x로 업그레이드합니다.
@@ -52,7 +56,7 @@ ht-degree: 30%
 * SKYOPS-138356: `com.adobe.granite.oauth.server`을(를) 1.1.36으로 업데이트합니다.
 * SKYOPS-138739: SnakeYAML을 2.6으로 업데이트합니다.
 
-### 해결된 문제 {#fixed-issues-25821}
+### 해결된 문제 {#fixed-issues-25892}
 
 * ASSETS-59546: 더 이상 사용되지 않는 commons-lang 라이브러리에 대한 종속성을 제거합니다.
 * ASSETS-64831: AssetProcessorProcess 재설정 처리 시도 횟수로 인해 자산이 멈춥니다.
@@ -67,7 +71,7 @@ ht-degree: 30%
 * SITES-39267: 관계 체인 항목의 pagePath를 복원합니다.
 * SITES-43715: 리소스 상태를 읽는 동안 권한 유효성 검사에 실패했습니다.
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110: 편집기에서 **파일 선택** 대화 상자를 사용하여 이미지를 선택하면 래스터 형식(예: JPG, PNG 및 GIF)만 표시됩니다. 벡터 파일(`.ai` 및 `.eps` 등)은 표시되지 않으며 선택할 수 없습니다.
 * GUIDES-41938: 이름에 공백이 있는 폴더에 주제를 만들면 하이픈으로 공백을 대체하는 중복 폴더가 잘못 생성되고 주제가 원래 폴더 대신 여기에 저장됩니다.
@@ -77,19 +81,19 @@ ht-degree: 30%
 
 릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
-### 알려진 문제 {#known-issues-25821}
+### 알려진 문제 {#known-issues-25892}
 
 없음.
 
-### 사용 중단된 기능 및 API {#deprecated-25821}
+### 사용 중단된 기능 및 API {#deprecated-25892}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-25821}
+### 보안 수정 {#security-25892}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능 최적화에 중점을 둡니다. 이 유지 관리 릴리스는 19개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 노력을 강화합니다.
 
-### 임베드된 기술 {#embedded-tech-25821}
+### 임베드된 기술 {#embedded-tech-25892}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
