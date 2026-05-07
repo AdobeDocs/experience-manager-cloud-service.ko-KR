@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3159'
 ht-degree: 18%
 
 ---
@@ -248,7 +248,18 @@ ht-degree: 18%
 
 ### 구성 요소 재정렬 및 이동 {#reordering-components}
 
-컨텍스트 메뉴나 콘텐츠 트리를 사용하여 구성 요소를 이동하고 순서를 변경할 수 있습니다.
+드래그 앤 드롭, 컨텍스트 메뉴 또는 콘텐츠 트리를 사용하여 구성 요소를 이동하고 순서를 변경할 수 있습니다.
+
+>[!NOTE]
+>
+>대상 컨테이너 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)에서 선택한 구성 요소를 허용하는 경우에만 컨테이너 간에 구성 요소를 이동할 수 있습니다.
+
+#### 드래그 앤 드롭으로 구성 요소 이동 {#drag-and-drop-move}
+
+1. 이동할 구성 요소를 클릭하고 드래그합니다.
+   * 대상 위로 마우스를 가져가면 파란색 가로선으로 구성 요소를 놓은 경우 편집기에 구성 요소가 배치될 위치가 표시됩니다.
+     ![구성 요소를 드래그 앤 드롭하여 이동](assets/drag-and-drop-component-move.png)
+1. 구성 요소를 드롭하여 재배치합니다.
 
 #### 컨텍스트 메뉴로 구성 요소 이동 {#move-context-menu}
 
@@ -271,7 +282,7 @@ ht-degree: 18%
 >
 >컨텍스트 메뉴 옵션은 컨테이너 내의 구성 요소만 이동할 수 있습니다. 컨테이너 간에 구성 요소를 이동하려면 [콘텐츠 트리를 사용하십시오.](#reorder-content-tree)
 
-#### 콘텐츠 트리를 사용하여 구성 요소 순서 바꾸기 {#reorder-content-tree}
+#### 콘텐츠 트리를 사용하여 구성 요소 이동 {#reorder-content-tree}
 
 1. [콘텐츠 트리 모드](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 있지 않은 경우 전환하십시오.
 1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
@@ -283,10 +294,6 @@ ht-degree: 18%
 1. 드래그한 구성 요소는 콘텐츠 트리에서 회색으로 표시되고 삽입 지점은 파란색 선으로 표시됩니다. 구성 요소를 놓아 새 위치에 배치합니다.
 
 콘텐츠 트리와 편집기 모두에서 구성 요소의 순서가 변경되었습니다.
-
->[!NOTE]
->
->대상 컨테이너 [구성 요소 필터](/help/implementing/universal-editor/filtering.md)에서 선택한 구성 요소를 허용하는 경우에만 컨테이너 간에 구성 요소를 이동할 수 있습니다.
 
 ### 실행 취소 및 다시 실행 {#undo-redo}
 
@@ -319,9 +326,9 @@ ht-degree: 18%
      ![상황에 맞는 메뉴에서 복사](assets/copy-from-context-menu.png)
 1. 복사한 구성 요소를 붙여넣을 구성 요소 _after_&#x200B;를 선택합니다.
 1. 그런 다음 다음 다음 중 하나를 수행할 수 있습니다.
-   * 속성 패널에서 **붙여넣기**&#x200B;를 탭하거나 클릭합니다.
+   * 속성 패널에서 **붙여넣기**를 탭하거나 클릭합니다.
      ![패널에서 붙여넣기](assets/paste-from-panel.png)
-   * 상황에 맞는 메뉴에서 **붙여넣기**&#x200B;를 선택합니다.
+   * 상황에 맞는 메뉴에서 **붙여넣기**를 선택합니다.
      ![상황에 맞는 메뉴에서 붙여넣기](assets/paste-from-context-menu.png)
 
 복사된 구성 요소를 선택한 구성 요소 _after_&#x200B;에 붙여넣습니다.
@@ -453,7 +460,7 @@ ht-degree: 18%
 
 ## 옵션 속성 패널 기능 {#properties-panel-options}
 
-페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).
+페이지 콘텐츠를 추가로 관리하는 데 도움이 되는 추가 기능을 유니버설 편집기의 확장으로 사용할 수 있습니다. [이러한 확장을 [유니버설 편집기 속성 패널에서 콘텐츠 작성자로 표시하려면 관리자가 프로그램에서 활성화해야 합니다](/help/implementing/universal-editor/extending.md).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 베리에이션 생성 {#generate-variations}
 
