@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
+source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
 workflow-type: tm+mt
-source-wordcount: '5549'
-ht-degree: 99%
+source-wordcount: '5860'
+ht-degree: 90%
 
 ---
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 >[!CAUTION]
 >
->이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#home)하십시오.
+>이전 전용 이그레스 기술이 이미 프로비저닝되어 있고 이러한 고급 네트워킹 옵션 중 하나를 구성하려면 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)하십시오.
 >
 >이전 이그레스 기술을 사용하여 고급 네트워킹을 구성하려고 하면 사이트 연결에 영향을 미칠 수 있습니다.
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동하여 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -123,7 +123,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 측면 패널의 **네트워크 인프라** 제목 아래에 새 레코드가 나타납니다. 여기에는 인프라 유형, 상태, 지역 및 활성화 환경과 같은 세부 사항이 포함됩니다.
 
-![네트워크 인프라 아래의 새 항목](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![네트워크 인프라의 새 항목](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 비표준 Java™ 네트워킹 라이브러리를 사용하는 경우 모든 트래픽에 대해 위의 속성을 사용하여 프록시를 구성할 수 있습니다.
 
-`portForwards` 매개변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
+`portForwards` 매개 변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST` 속성을 참조해야 합니다. 예:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -248,7 +248,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 전용 IP 주소 기능을 활성화하지 않으면 AEM as a Cloud Service의 트래픽이 공유된 IP 집합을 통해 흐릅니다. 이 IP는 AEM as a Cloud Service의 다른 고객이 사용하고 있습니다.
 
-전용 이그레스 IP 주소의 구성은 [유연한 포트 이그레스](#flexible-port-egress)와 유사합니다. 주요 차이점은 구성한 후에 트래픽이 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만 변경해야 하는 경우 고급 알림이 제공됩니다.
+전용 이그레스 IP 주소의 구성은 [유연한 포트 이그레스](#flexible-port-egress)와 유사합니다. 주요 차이점은 구성 후 트래픽은 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만 변경해야 하는 경우 고급 알림이 제공됩니다.
 
 >[!TIP]
 >
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동하여 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -283,9 +283,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
    ![유연한 포트 이그레스의 구성 확인](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-측면 패널의 **네트워크 인프라** 제목 아래에 새 레코드가 나타납니다. 여기에는 인프라 유형, 상태, 지역 및 활성화 환경과 같은 세부 사항이 포함됩니다.
+새 레코드가 사이드 패널의 **네트워크 인프라** 머리글 아래에 나타납니다. 여기에는 인프라 유형, 상태, 지역 및 활성화 환경과 같은 세부 사항이 포함됩니다.
 
-![네트워크 인프라 아래의 새 항목](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![네트워크 인프라의 새 항목](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -303,7 +303,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 트래픽 라우팅 {#dedicated-egress-ip-traffic-routing}
 
-프록시 구성에 표준 Java™ 시스템 속성을 사용하는 경우 http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다.
+프록시 구성에 표준 Java™ 시스템 속성을 사용하는 경우 HTTP 또는 HTTPS 트래픽은 사전 구성된 프록시를 통해 전달됩니다.
 
 `portForwards` 매개변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
 
@@ -403,7 +403,9 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 일부 라이브러리는 프록시 구성에 표준 Java™ 시스템 속성을 사용하려면 명시적인 구성이 필요합니다.
 
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)에 대한 명시적인 호출이 필요하거나 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem())을 사용하는 Apache HttpClient를 사용하는 예는 다음과 같습니다.
+에 대한 명시적 호출이 필요한 Apache HttpClient를 사용하는 예제
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 또는 사용
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -442,7 +444,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
+1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동하여 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
    ![네트워크 인프라 추가](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -482,7 +484,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
    ![유연한 포트 이그레스의 구성 확인](assets/advanced-networking-ui-vpn-confirm.png)
 
-측면 패널의 **네트워크 인프라** 제목 아래에 새 레코드가 나타납니다. 여기에는 인프라 유형, 상태, 지역 및 활성화 환경과 같은 세부 사항이 포함됩니다.
+새 레코드가 사이드 패널의 **네트워크 인프라** 머리글 아래에 나타납니다. 여기에는 인프라 유형, 상태, 지역 및 활성화 환경과 같은 세부 사항이 포함됩니다.
 
 ### API 구성 {#configuring-vpn-api}
 
@@ -620,8 +622,8 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
    * 각 대상 호스트에 대해 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
    * 포트 전달 규칙은 모든 고급 네트워킹 유형에 사용할 수 있습니다.
 
-* **비프록시 호스트** - 비프록시 호스트를 사용하면 전용 IP가 아닌 공유 IPS 주소 범위를 통해 라우팅해야 하는 호스트 세트를 선언할 수 있습니다.
-   * 이 접근 방식은 공유 IPS를 통해 이그레스되는 트래픽이 더욱 최적화될 수 있으므로 유용할 수 있습니다.
+* **프록시가 아닌 호스트** - 프록시가 아닌 호스트를 사용하면 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다.
+   * 공유된 IP 주소들을 통해 이그레스되는 트래픽이 추가로 최적화될 수 있기 때문에 이 접근법은 유용할 수 있다.
    * 비프록시 호스트는 전용 이그레스 IP 주소 및 VPN 고급 네트워킹 유형에만 사용할 수 있습니다.
 
 >[!NOTE]
@@ -640,11 +642,11 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 1. **고급 네트워킹 구성** 대화 상자가 열립니다.
 
-1. 전용 이그레스 IP 주소 및 VPN의 경우 **비프록시 호스트** 탭에서 필요에 따라 호스트 세트를 정의할 수 있습니다. 이렇게 정의된 호스트는 **비프록시 호스트** 필드에 호스트 이름을 입력하고 **추가**&#x200B;를 클릭하여 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅되어야 합니다.
+1. 전용 이그레스 IP 주소 및 VPN의 경우 **비프록시 호스트** 탭에서 필요에 따라 호스트 세트를 정의할 수 있습니다. 이러한 정의된 호스트는 **비프록시 호스트** 필드에 호스트 이름을 제공하고 **추가**&#x200B;를 클릭하여 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅되어야 합니다.
 
    * 호스트가 탭의 호스트 목록에 추가됩니다.
    * 여러 호스트를 추가하려면 이 단계를 반복합니다.
-   * 호스트를 제거하려면 행 오른쪽에 있는 X를 클릭합니다.
+   * 호스트를 제거하려면 행 오른쪽에 있는 X 를 클릭합니다.
    * 유연한 포트 이그레스 구성에는 이 탭을 사용할 수 없습니다.
 
    ![비프록시 호스트 추가](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
@@ -671,7 +673,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 환경당 포트 전달 규칙은 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 엔드포인트를 호출하고 하위 집합이 아닌 전체 구성 매개변수 세트를 포함하여 업데이트할 수 있습니다.
 
-전용 이그레스 IP 주소와 VPN 고급 네트워킹 유형은 `nonProxyHosts` 매개변수를 지원합니다. 이러한 지원을 통해 전용 IP가 아닌 공유 IP 주소 범위로 라우팅해야 하는 호스트 세트를 선언할 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
+전용 이그레스 IP 주소와 VPN 고급 네트워킹 유형은 `nonProxyHosts` 매개변수를 지원합니다. 이 지원을 통해 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
 
 환경 트래픽 라우팅 규칙(호스트 또는 우회)이 없더라도 빈 페이로드와 함께 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`을 호출해야 합니다.
 
@@ -725,7 +727,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 >* 일단 생성되면 VPN 고급 네트워킹 인프라 유형만 편집할 수 있으며 이후에는 제한된 필드만 편집할 수 있습니다.
 >* 보안상의 이유로 고급 VPN 네트워킹 인프라를 편집할 때는 키 자체를 편집하지 않더라도 **공유 키**&#x200B;를 항상 제공해야 합니다.
 
-### UI를 사용한 편집 및 삭제 {#delete-ui}
+### UI로 편집, 테스트 또는 삭제 {#delete-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -733,21 +735,25 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동합니다.
 1. 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 클릭합니다.
-1. 그런 다음 삭제하려는 인프라 옆의 ![더 보기 아이콘(줄임표)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. 편집, 테스트 또는 삭제할 인프라 옆에 있는 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭합니다.
 
    ![프로그램 수준에서 고급 네트워킹 편집 또는 삭제 선택](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. **편집** 또는 **삭제**&#x200B;를 클릭합니다.
+1. **편집**, **테스트** 또는 **삭제**&#x200B;를 클릭합니다.
 
 1. 다음 중 하나를 수행하십시오.
 
    * **편집**&#x200B;을 선택하면 **네트워크 인프라 편집** 마법사가 열립니다. 인프라를 만들 때 설명된 단계대로 필요에 따라 편집합니다.
 
+   * **최근 테스트** 드롭다운 메뉴에서 연결을 활성화하기 전에 연결을 자체 테스트하기 위해 **테스트**&#x200B;를 선택한 경우 구성을 다시 로드할 항목을 선택한 다음 **테스트**&#x200B;를 클릭합니다. 테스트를 실행하지 않은 경우 메뉴에 *최근 테스트 없음*&#x200B;이 표시됩니다.
+
+     또는 **호스트** 텍스트 필드에 필요한 대상 호스트 이름을 입력합니다. 그런 다음 **포트** 드롭다운 메뉴에서 필요한 해당 포트를 선택합니다. **테스트**&#x200B;를 클릭합니다. 대화 상자의 **테스트 결과** 섹션에 결과가 표시됩니다.
+
    * **삭제**&#x200B;를 선택한 경우 **삭제**&#x200B;로 **네트워크 구성 삭제** 대화 상자에서 삭제를 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
 
 이러한 변경 사항은 **환경** 탭에 반영됩니다.
 
-### API를 사용한 편집 및 삭제 {#delete-api}
+### API를 사용하여 편집 및 삭제 {#delete-api}
 
 프로그램의 네트워크 인프라를 **삭제**&#x200B;하려면 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`를 호출하십시오.
 
@@ -755,7 +761,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 프로그램에 대해 한 번에 한 가지 유형의 고급 네트워킹 인프라만 구성할 수 있습니다. 고급 네트워킹 인프라는 유연한 포트 이그레스, 전용 이그레스 IP 주소 또는 VPN이어야 합니다.
 
-이미 구성한 유형이 아닌 다른 고급 네트워킹 인프라 유형이 필요하다고 판단되면 기존 유형을 삭제하고 다른 유형을 만듭니다. 다음 작업을 수행합니다.
+이미 구성한 것과 다른 고급 네트워킹 인프라 유형이 필요하다고 판단되는 경우 기존 네트워킹 인프라 유형을 삭제하고 다른 네트워킹 인프라 유형을 만듭니다. 다음 작업을 수행합니다.
 
 1. [모든 환경에서 고급 네트워킹을 삭제합니다](#editing-deleting-environments).
 1. [고급 네트워킹 인프라를 삭제합니다](#editing-deleting-program).
@@ -767,7 +773,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 > 이 절차를 사용하면 삭제와 재생성 사이에 고급 네트워킹 서비스의 가동이 중단될 수 있습니다.
 > 가동 중단으로 인해 심각한 비즈니스 영향이 발생하는 경우 고객 지원 센터에 문의하여 이미 생성된 내용과 변경 이유를 설명하십시오.
 
-## 다른 게시 지역에 대한 고급 네트워킹 구성 {#advanced-networking-configuration-for-additional-publish-regions}
+## 다른 게시 영역에 대한 고급 네트워킹 구성 {#advanced-networking-configuration-for-additional-publish-regions}
 
 고급 네트워킹이 이미 구성된 환경에 추가 지역을 추가하면 추가 게시 지역의 트래픽이 기존 규칙을 따릅니다. 기본적으로 일치하는 트래픽은 기본 지역을 통해 라우팅됩니다. 단, 기본 지역을 사용할 수 없을 경우 고급 네트워킹이 추가 지역에서 활성화되지 않으면 고급 네트워킹 트래픽이 삭제됩니다. 지역 중 하나가 작동이 중단된 경우 지연 시간을 최적화하고 가용성을 높이려면 추가 게시 지역의 고급 네트워킹을 활성화해야 합니다. 다음 섹션에서 서로 다른 두 가지 시나리오를 설명합니다.
 
@@ -783,7 +789,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 1. 전용 AEM IP 주소가 허용 목록에 추가되도록 인프라를 잠갔다면 해당 인프라에서 거부 규칙을 일시적으로 비활성화합니다. 이 단계를 건너뛰면 인프라가 새 지역의 IP 주소 요청을 일시적으로 거부합니다. 이 단계는 `p1234.external.adobeaemcloud.com`과 같은 FQDN(Fully Qualified Domain Name)을 사용하여 인프라를 잠그는 경우에는 필요하지 않습니다. 모든 AEM 지역은 동일한 FQDN에서 고급 네트워킹 트래픽을 전송합니다.
 1. 고급 네트워킹 설명서에 따라 Cloud Manager Create Network Infrastructure API에 대한 POST 호출을 통해 이차 지역의 프로그램에서 설정한 네트워킹 인프라를 만듭니다. 기본 지역과 비교하여 페이로드 JSON 구성의 유일한 차이점은 지역 속성입니다.
-1. AEM 트래픽을 허용하기 위해 인프라를 IP로 잠가야 하는 경우 `p1234.external.adobeaemcloud.com`과 일치하는 IPS를 추가합니다. 지역별로 하나의 IPS가 있어야 합니다.
+1. AEM 트래픽을 허용하도록 IP별로 인프라를 잠가야 하는 경우 `p1234.external.adobeaemcloud.com`에 해당하는 IP 주소를 추가하십시오. 지역별로 하나의 IPS가 있어야 합니다.
 
 #### 모든 지역에서 아직 구성되지 않은 고급 네트워킹 {#not-yet-configured}
 
@@ -800,7 +806,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 
 ## 문제 해결
 
-다음은 문제 해결을 위한 유용한 지침으로, 모범 사례가 포함되어 있습니다. 이러한 권장 사항은 문제를 효과적으로 진단하고 해결하는 데 도움이 되도록 하기 위한 것입니다.
+다음 사항은 유용한 지침으로 제공되며 문제 해결에 대한 우수 사례를 포함합니다. 이러한 권장 사항은 문제를 효과적으로 진단하고 해결하는 데 도움이 되도록 하기 위한 것입니다.
 
 ### 연결 풀링 {#connection-pooling-advanced-networking}
 
@@ -830,7 +836,7 @@ Adobe에서는 이러한 정보를 바탕으로 현재 AEM 구성을 검토할 �
 
 ##### 최대 한도에 도달하면 어떻게 됩니까?
 
-엄격한 제한에 도달하면 DoS 공격으로부터 보호하기 위해 고급 네트워킹(전용 이그레스 IP 또는 VPN을 사용하는 비표준 포트의 이그레스)을 통한 AEM의 새로운 이그레스 연결이 삭제됩니다.
+하드 제한에 도달하면 고급 네트워킹(비표준 포트의 이그레스, 전용 이그레스 IP 또는 VPN 사용)을 통한 AEM의 새 이그레스 연결이 DoS 공격으로부터 보호하기 위해 삭제됩니다.
 
 ##### 제한을 높일 수 있습니까?
 
@@ -852,6 +858,6 @@ Adobe에서는 이러한 정보를 바탕으로 현재 AEM 구성을 검토할 �
 
 예, VPN을 포함하여 고급 네트워킹을 사용하는 연결에는 해당 제한이 적용됩니다.
 
-##### 전용 이그레스 IP를 사용할 때도 제한이 적용됩니까?
+##### 전용 이그레스 IP를 사용하는 경우에도 제한이 적용됩니까?
 
 예, 전용 이그레스 IP를 사용하는 경우에도 제한이 적용됩니다.
