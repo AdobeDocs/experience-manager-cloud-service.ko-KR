@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '406'
 ht-degree: 96%
 
 ---
@@ -66,4 +66,4 @@ Cloud Manager를 사용하면 **파이프라인** 카드의 **저장소 정보 �
 
 언제든지 액세스 암호를 취소할 수 있습니다.
 
-암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&support-tab=home#support). 티켓이 우선적으로 처리되며 보통 1일 이내에 취소됩니다.
+암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). 티켓이 우선적으로 처리되며 보통 1일 이내에 취소됩니다.
