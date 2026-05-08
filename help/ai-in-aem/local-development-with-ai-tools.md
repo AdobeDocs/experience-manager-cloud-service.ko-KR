@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 개발을 가속화하기 위해 프로젝�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
+source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한
 | **AEM 빠른 시작 로컬 MCP 서버** | 문제 해결을 지원하기 위해 로컬 AEM SDK 인스턴스의 실시간 런타임 데이터를 노출합니다 |
 | **Dispatcher 로컬 MCP 서버** | 로컬 Dispatcher 인스턴스의 런타임 유효성 검사 및 검사 활성화 |
 
-추가적인 실습 지침은 [AI 지원 개발 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)를 검토하십시오.
+추가적인 실습 지침은 [AI 지원 개발 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)를 검토하십시오.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Adobe은 **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/
 
 ### 스킬 설치 {#install-skills}
 
-AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다. 자세한 설명은 [AEM 에이전트 기술 설정 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)를 참조하십시오.
+AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다. 자세한 설명은 [AEM 에이전트 기술 설정 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)를 참조하십시오.
 
 #### 클로드 코드 {#claude-code}
 
@@ -121,9 +121,9 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-에이전트는 확인을 위해 필드 사양을 되풀이한 다음 모든 구성 요소 파일을 생성합니다. 지원되는 패턴에는 복합 중첩 항목이 있는 다중 필드, 조건부 표시/숨기기 논리, Sling 리소스 병합을 통한 핵심 구성 요소 확장 및 AEM Mocks를 사용하는 JUnit 5 테스트가 포함됩니다.
+에이전트는 확인을 위해 필드 사양을 되풀이한 다음 모든 구성 요소 파일을 생성합니다. 지원되는 패턴에는 복합 중첩 항목이 있는 다중 필드, 조건부 표시/숨기기 논리, Sling 리소스 병합을 통한 핵심 구성 요소 확장 및 AEM Mocks를 사용하는 JUnit 5 테스트가 포함됩니다. 디자인은 텍스트 설명, 이미지 또는 Figma의 MCP 서버를 사용하는 Figma 디자인 URL을 포함한 다양한 소스에서 가져올 수 있습니다.
 
-[AEM 에이전트 기술을 사용한 구성 요소 개발 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)를 따라 자세히 알아보십시오.
+[AEM 에이전트 기술을 사용한 구성 요소 개발 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)를 따라 자세히 알아보십시오.
 
 ### Dispatcher 스킬 사용 {#use-the-dispatcher-skill}
 
