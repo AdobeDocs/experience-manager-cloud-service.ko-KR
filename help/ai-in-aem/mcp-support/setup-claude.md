@@ -1,27 +1,28 @@
 ---
 title: AEM MCP로 Anthropic Claude 설정
-description: AEM MCP 서버에 연결하도록 Anthropic Cloud를 구성하는 방법에 대해 알아봅니다
+description: AEM의 MCP 서버에 연결하도록 Anthropic Cloud를 구성하는 방법에 대해 알아봅니다
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
-source-git-commit: fede808fcd8b082a71273bf9ffceb48b5332f45d
+source-git-commit: 07a7aa5f02d7bfa992df825f3b8a19e18d569d5b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
 # AEM MCP로 Anthropic Claude 설정 {#setup-claude}
 
-다음 단계에 따라 Anthropic Claude를 AEM의 MCP 서버에 연결합니다.
+이 문서에서는 AEM과 함께 Anthropic Claude를 사용하는 두 가지 방법을 다룹니다.
 
-* Claude의 MCP 구성에서 하나 이상의 AEM MCP 서버 URL을 등록합니다.
-* Adobe 로그인 플로우를 완료합니다.
-* 필요한 경우 구성 영역의 특정 도구에 대해 자동 확인 을 활성화합니다. 이 옵션은 검색 또는 읽기 전용 작업에 권장됩니다.
-* 대화를 시작하기 전에 MCP 서버를 선택해야 합니다.
-* Claude에게 AEM 관련 작업을 수행하도록 요청합니다. Claude 귀하의 프롬프트에 따라 MCP 서버에 의해 노출 된 AEM 도구를 선택합니다.
+- 클라우드에 있는 AEM의 MCP 서버 중 하나 이상을 수동으로 구성합니다([AEM as a Cloud Service과 함께 MCP 사용 - MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)에 설명된 서버).
+- Anthropic의 커넥터 마켓플레이스에서 Adobe Experience Manager 커넥터를 설치합니다. 현재 컨텐츠 MCP 서버와의 기능 패리티가 있으며 AEM의 MCP 서버에서 사용할 수 있는 도구의 증가하는 부분 집합을 노출시킵니다.
 
-AEM MCP용 Cloud를 구성하려면 아래 단계를 따르십시오.
+
+
+## 클라우드에서 AEM의 MCP 서버 수동 구성 {#manual-configure-aems-mcp-servers-in-claude}
+
+이 섹션에서는 하나 이상의 AEM MCP 서버를 Cloud에 사용자 정의 커넥터로 추가하는 **수동 구성** 방법에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -35,7 +36,7 @@ AEM MCP용 Cloud를 구성하려면 아래 단계를 따르십시오.
 
    사용자 지정 커넥터 추가 설정의 ![커넥터 페이지.](assets/claude-2.png)
 
-1. **사용자 지정 커넥터 추가** 대화 상자에서 디스플레이 이름(예: **AEM Content MCP Service**)과 AEM MCP 서버 URL을 입력한 다음 **추가**&#x200B;를 선택합니다. 배포에 추가 옵션이 필요한 경우에만 **고급 설정**&#x200B;을 사용하십시오.
+1. **사용자 지정 커넥터 추가** 대화 상자에서 디스플레이 이름(예: **AEM Content MCP Service**)과 MCP 서버 URL을 입력한 다음 **추가**&#x200B;를 선택합니다. 배포에 추가 옵션이 필요한 경우에만 **고급 설정**&#x200B;을 사용하십시오.
 
    ![이름 및 MCP URL이 포함된 사용자 지정 커넥터 대화 상자를 추가합니다.](assets/claude-3.png)
 
@@ -55,8 +56,10 @@ AEM MCP용 Cloud를 구성하려면 아래 단계를 따르십시오.
 
    ![도구 메뉴에서 AEM 콘텐츠 MCP 서비스를 사용하는 채팅 작성기입니다.](assets/claude-7.png)
 
-## Adobe Experience Manager 클라우드 커넥터 {#aem-claude-connector}
+## Adobe Experience Manager 커넥터 설치(Anthropic 커넥터 마켓플레이스) {#install-adobe-experience-manager-connector}
 
-**Adobe Experience Manager 클라우드 커넥터**&#x200B;를 설치하려면 클라우드에서 **설정** > **커넥터**&#x200B;를 여십시오. [https://claude.ai/settings/connectors](https://claude.ai/settings/connectors)에서 바로 Connectors 페이지를 열 수도 있습니다. 커넥터는 AEM 워크플로우에 대한 늘어나는 도구 세트를 노출하는 MCP 서버를 등록합니다.
+이 섹션에서는 Anthropic의 커넥터 마켓플레이스에서 가져온 **설치 가능한 커넥터**&#x200B;에 대해 설명합니다(사용자 지정 커넥터 URL 추가와 반대). 여기에는 AEM의 MCP 서버에서 사용할 수 있는 도구의 하위 집합이 포함됩니다.
+
+**Adobe Experience Manager 커넥터**&#x200B;를 설치하려면 클라우드에서 **설정** > **커넥터**&#x200B;를 여십시오. [https://claude.ai/settings/connectors](https://claude.ai/settings/connectors)에서 바로 Connectors 페이지를 열 수도 있습니다. 커넥터는 AEM 워크플로우에 대한 늘어나는 도구 세트를 노출하는 MCP 서버를 등록합니다.
 
 ![connectors 디렉터리에서 Adobe Experience Manager 클라우드 커넥터를 설치합니다.](assets/claude-connector.png)

@@ -4,9 +4,9 @@ description: AEM as a Cloud Service과 함께 모델 컨텍스트 프로토콜�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -55,17 +55,17 @@ AEM은 MCP 서버를 HTTP 끝점으로 노출합니다. 아래 나열된 엔드�
 | **콘텐츠** | `/content` | 페이지 및 콘텐츠 조각에 대한 만들기, 읽기, 업데이트 및 삭제(CRUD)와 에셋 가져오기 및 에셋 검색 등 콘텐츠 작업                                                                          <br>전자 메일을 `aemagentsteam@adobe.com`에게 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
 | **컨텐츠(읽기 전용)** | `/content-readonly` | 페이지 및 콘텐츠 조각에 대한 읽기 전용 콘텐츠 작업(가져오기, 목록/검색) 및 에셋 검색.                                                                             <br>전자 메일을 `aemagentsteam@adobe.com`에게 보내 **자산 검색**&#x200B;을 활성화하세요. 이메일에 사용 사례와 함께 조직 이름을 포함합니다. |
 | **Cloud Manager** | `/cloudmanager` | 프로그램, 환경, 저장소 및 파이프라인을 포함하여 트리거될 수도 있는 Cloud Manager 엔티티를 관리합니다. |
-| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
+| **경험 거버넌스** | `/experience-governance` | 브랜드 거버넌스 규칙에 대해 콘텐츠(텍스트, 이미지, 페이지)를 평가하고 브랜드 구성 및 검사를 나열합니다.<br/>Experience Governance MCP에 액세스하려면 고객이 [에이전트 평가판에 등록하거나 유료 라이선스를 보유하고 있어야 합니다](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en). |
 
 각각의 MCP 서버에 의해 노출된 특정 툴들은 시간이 지남에 따라 진화할 수 있다. 실제로 MCP 지원 응용 프로그램에 다음과 같은 프롬프트를 통해 도구를 검색하도록 요청할 수 있습니다.
 
 ```
-"List all AEM MCP tools available from this server and describe what they do."
+"List all AEM tools available from this server and describe what they do."
 ```
 
 MCP 클라이언트는 MCP 프로토콜을 사용하여 툴 리스트 및 스키마를 검색하고, 이는 LLM이 사용할 수 있다.
 
-기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
+기능 및 사용 방법에 대한 자세한 내용은 [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) 및 [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)를 참조하십시오.
 
 ## 지원되는 MCP 애플리케이션 {#supported-mcp-applications}
 
@@ -97,12 +97,12 @@ AEM의 MCP 서버는 정의된 MCP 호환 애플리케이션 세트와 호환되
 
 AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
-1. **각 MCP 클라이언트 응용 프로그램에서 구성** 응용 프로그램에서 AEM MCP 서버에 연결하고 OAuth 로그인을 수행하는 방법을 알 수 있도록
+1. **각 MCP 클라이언트 응용 프로그램에서 구성** 응용 프로그램에서 AEM의 MCP 서버에 연결하고 OAuth 로그인을 수행하는 방법을 알 수 있도록
 1. **MCP 서버 선택** 프롬프트를 시작하기 전에 MCP 클라이언트가 MCP 서버를 사용할 것을 알 수 있도록 합니다.
 
 두 단계를 다루는 단계별 안내서는 다음 경우에 사용할 수 있습니다.
 
-* [인류 클로드](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [Anthropic Claude(MCP 서버 수동 구성 및 AEM Claude 커넥터 설치 모두)](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI 채팅GPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [커서](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [GitHub Copilot을 사용한 JetBrains](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
@@ -130,10 +130,10 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 각 사용자는 이 단계를 수행하거나 MCP 클라이언트 애플리케이션의 관리자는 지원되는 경우 이를 수행할 수 있습니다. 구성 세부 정보는 애플리케이션마다 조금씩 다릅니다. MCP 클라이언트는 빠르게 발전하고 있으며, 원격 MCP 서버에 대한 지원이 활발히 개발되고 있다. 원격 서버를 추가하기 위한 기능에 액세스하려면 개발자 모드를 활성화해야 할 수 있지만 일반적인 프로세스는 다음과 같습니다.
 
-1. 하나 이상의 AEM MCP 서버 URL 추가
+1. 하나 이상의 MCP 서버 URL 추가
    * 위의 표에서 하나 이상의 MCP 끝점을 구성합니다. 예: `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. 연결 트리거
-   * MCP 클라이언트 애플리케이션이 AEM MCP 서버에 연결을 시도하도록 구성을 저장하거나 활성화합니다
+   * MCP 클라이언트 애플리케이션이 MCP 서버에 연결을 시도하도록 구성을 저장하거나 활성화합니다
 1. Adobe ID으로 로그인
    * 메시지가 표시되면 Adobe 로그인 플로우를 완료하여 애플리케이션이 Adobe ID에 연결된 OAuth 토큰을 얻을 수 있습니다
 1. 검색된 도구 확인
@@ -145,7 +145,7 @@ AEM용 MCP 구성에는 다음 두 가지 주요 부분이 포함됩니다.
 
 Adobe에서 호스팅하는 MCP 서버는 OAuth를 구현하고 Adobe의 ID 시스템과 통합됩니다.
 
-* MCP 클라이언트 응용 프로그램이 AEM MCP 서버에 연결되면 사용자는 Adobe 로그인 대화 상자를 보고 **Adobe ID**&#x200B;로 인증합니다
+* MCP 클라이언트 응용 프로그램이 MCP 서버에 연결되면 사용자는 Adobe 로그인 대화 상자를 보고 **Adobe ID**(으)로 인증합니다.
 * 성공적인 로그인 후 시스템은 MCP 클라이언트 애플리케이션이 조직에서 허용되고 요청된 MCP 서버가 허용되는지 확인합니다. 둘 중 하나가 실패하면 오류 메시지가 표시됩니다.
 
 ![MCP 클라이언트가 허용되지 않는 오류](assets/MCP-Client-not-permitted.png)
