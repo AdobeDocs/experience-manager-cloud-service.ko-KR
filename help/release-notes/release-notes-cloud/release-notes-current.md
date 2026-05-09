@@ -140,7 +140,7 @@ Experience Governance MCP Server는 이제 GA(일반적으로 사용 가능)되�
 [AEM MCP 서버](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) 및 [거버넌스 에이전트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)에 대해 자세히 알아보세요.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486265/?captions=kor&learn=on&enablevpops)
 
 #### 클라우드 커넥터 {#aem-claude-connector}
 
