@@ -4,12 +4,13 @@ description: AEM as a Cloud Service 개발을 가속화하기 위해 프로젝�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
+source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
+
 
 # AI 도구를 사용한 로컬 개발 {#local-development-with-ai-tools}
 
@@ -17,32 +18,32 @@ ht-degree: 0%
 >
 >이 문서에서는 **AEM Java 스택 개발**&#x200B;을 위한 AI 도구를 사용한 로컬 개발에 중점을 둡니다. Edge Delivery Services의 경우 [AI 도구를 사용하여 개발](https://www.aem.live/developer/ai-coding-agents)을 참조하십시오.
 
-AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한 도구)는 AEM의 기본 기술(Java, OSGi, Sling, JCR, HTL)에 대한 광범위한 지식을 가지고 있지만 코드 및 구성을 생성하기 위한 모범 사례나 일반적인 AEM 개발 문제를 디버깅하는 방법을 반드시 알고 있지는 않습니다.
+AI 코딩 에이전트(클라우드 코드, 커서, GitHub Copilot 및 유사한 도구)는 AEM의 기본 기술(Java, OSGi, Sling, JCR, HTL)에 대한 광범위한 지식을 가지고 있지만, 코드 및 구성을 생성하기 위한 모범 사례나 일반적인 AEM 개발 문제를 디버깅하는 방법을 반드시 알고 있지는 않습니다.
 
 네 가지 보완 구성 요소는 다음과 같은 문제를 해결합니다.
 
 | 구성 요소 | 목적 |
 |---|---|
-| **AGENTS.md** | 모든 세션에 대한 AEM Cloud Service 프로젝트의 AI를 기반으로 하는 프로젝트별 컨텍스트 파일 |
+| **AGENTS.md** | 모든 세션에 대해 AEM as a Cloud Service 프로젝트에서 AI를 유도하는 프로젝트별 컨텍스트 파일 |
 | **에이전트 기술** | 구성 요소 생성 및 Dispatcher 구성과 같은 반복되는 개발 작업에 재사용 가능한 지침 세트 |
 | **AEM 빠른 시작 로컬 MCP 서버** | 문제 해결을 지원하기 위해 로컬 AEM SDK 인스턴스의 실시간 런타임 데이터를 노출합니다 |
 | **Dispatcher 로컬 MCP 서버** | 로컬 Dispatcher 인스턴스의 런타임 유효성 검사 및 검사 활성화 |
 
-추가적인 실습 지침은 [AI 지원 개발 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)를 검토하십시오.
+추가적인 실습 지침은 [AI 지원 개발 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)를 검토하십시오.
 
->[!NOTE]
+>[!TIP]
 >
-> 또한 로컬 개발에 유용하지만 이 문서에서는 다루지 않는 것이 AEM Cloud Service의 원격 MCP 서버입니다. 자세한 내용은 [Cloud Service과 함께 MCP 사용](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)을 참조하세요.
+>AEM Cloud Service의 원격 MCP 서버는 로컬 개발에도 유용합니다. 자세한 내용은 [Cloud Service과 함께 MCP 사용]을 참조하세요.(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
-`AGENTS.md`은(는) AEM 6.5 또는 Edge Delivery Services과 같은 다른 AEM 솔루션이 아닌 필수 AEM Cloud Service Java 스택 도메인 전문 지식을 기반으로 하기 위해 AI 코딩 도구가 모든 세션이 시작될 때 자동으로 로드하는 AEM 프로젝트 루트에 있는 Markdown 파일입니다.
+`AGENTS.md`은(는) AEM 프로젝트의 루트에 있는 Markdown 파일입니다. AI 코딩 도구는 모든 세션이 시작될 때 이 파일을 자동으로 로드하여 필수 AEM Cloud Service Java 스택 도메인 전문 지식(AEM 6.5 또는 Edge Delivery Services과 같은 다른 AEM 솔루션은 제외)을 기반으로 합니다.
 
-`AGENTS.md`은(는) 복사하는 정적 파일이 아닙니다. 다음 섹션에서 설명한 `ensure-agents-md` 스킬에 의해 생성됩니다. 이 스킬은 `pom.xml`을(를) 읽어 프로젝트 이름을 해결하고 모듈을 검색하며 설치된 추가 기능을 감지하여 특정 프로젝트에 맞는 파일을 생성합니다.
+`AGENTS.md`은(는) 복사한 정적 파일이 아닙니다. 이 문서의 다음 섹션에 설명된 `ensure-agents-md` 스킬에 의해 생성됩니다. 이 스킬은 `pom.xml`을(를) 읽어 프로젝트 이름을 해결하고 모듈을 검색하며 설치된 추가 기능을 감지하여 특정 프로젝트에 맞는 파일을 생성합니다.
 
 >[!NOTE]
 >
->프로젝트 루트에 `AGENTS.md`이(가) 있으면 `ensure-agents-md` 스킬이 더 이상 실행되지 않습니다. 프로젝트 구조가 변경되는 경우 파일을 직접 편집합니다.
+>`AGENTS.md`이(가) 프로젝트 루트에 있으면 `ensure-agents-md` 스킬이 더 이상 실행되지 않습니다. 프로젝트 구조가 변경되는 경우 파일을 직접 편집합니다.
 
 ## 에이전트 스킬 {#agent-skills}
 
@@ -55,11 +56,11 @@ Adobe은 **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/
 | `ensure-agents-md` | 프로젝트의 실제 모듈 구조에 맞게 조정된 부트스트랩 `AGENTS.md` 및 `CLAUDE.md` |
 | `create-component` | 구성 요소 정의, 대화 상자 XML, HTL 템플릿, 슬링 모델, 단위 테스트 및 clientlib과 같은 전체 AEM 구성 요소의 스캐폴드 |
 | `dispatcher` | 구성 작성, 기술 자문, 사고 대응, 성능 조정 및 보안 강화를 다루는 AI 기반 Dispatcher 및 Apache HTTPD 구성 지원 |
-| `workflow` | 모든 AEM as a Cloud Service 워크플로 기술을 위한 단일 진입점입니다. 워크플로 모델 디자인, 사용자 지정 프로세스 단계 및 참가자 선택기 개발, 런처 구성, 워크플로 트리거 및 디버깅 중단/실패 워크플로, Cloud Manager 로그를 사용한 문제 트리징, 스레드 풀 분석 및 Granite 워크플로 엔진을 위한 Sling 작업 진단을 포함한 프로덕션 지원에 대해 다룹니다. |
+| `workflow` | 모든 AEM as a Cloud Service 워크플로 기술의 단일 진입점입니다. 워크플로 모델 디자인, 사용자 지정 프로세스 단계 및 참가자 선택기 개발, 런처 구성, 워크플로 트리거 및 디버깅 중단/실패 워크플로, Cloud Manager 로그를 사용한 문제 트리징, 스레드 풀 분석 및 Granite Workflow Engine용 Sling 작업 진단을 비롯한 프로덕션 지원을 다룹니다. |
 
 ### 스킬 설치 {#install-skills}
 
-AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다. 자세한 설명은 [AEM 에이전트 기술 설정 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)를 참조하십시오.
+AI 코딩 도구와 일치하는 방법을 선택합니다. 기술을 한 번 설치하면 해당 컴퓨터의 모든 프로젝트에 사용할 수 있습니다. 자세한 설명은 [AEM 에이전트 기술 설정 자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)를 참조하십시오.
 
 #### 클로드 코드 {#claude-code}
 
@@ -85,16 +86,16 @@ npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-servic
 gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
 ### ensure-agents-md 스킬 사용 {#use-the-ensure-agents-md-skill}
 
-기술을 설치한 후 아직 `AGENTS.md`이(가) 없는 AEM Cloud Service 프로젝트에서 AI 도우미를 엽니다. 스킬은 첫 번째 요청을 처리하기 전에 자동으로 실행되어 명시적인 호출이 필요 없이 프로젝트 루트에서 두 파일을 모두 만듭니다.
+기술을 설치한 후 아직 `AGENTS.md`이(가) 없는 AEM as a Cloud Service 프로젝트에서 AI 도우미를 엽니다. 스킬은 첫 번째 요청을 처리하기 전에 자동으로 실행되어 명시적인 호출이 필요 없이 프로젝트 루트에서 두 파일을 모두 만듭니다.
 
 ### 구성 요소 만들기 스킬 사용 {#use-the-create-component-skill}
 
-처음 사용 시 스킬은 `pom.xml` 및 기존 구성 요소에서 `project`, `package` 및 `group`을(를) 자동으로 감지하고 감지된 값을 확인하도록 요청한 다음 프로젝트 루트에서 `.aem-skills-config.yaml`을(를) 만듭니다. 처음 사용하기 전에 수동 구성이 필요하지 않습니다.
+처음 사용 시 스킬은 `pom.xml` 및 기존 구성 요소에서 `project`, `package` 및 `group`을(를) 자동으로 감지하고 감지된 값을 확인하도록 요청합니다. 그런 다음 프로젝트 루트에 `.aem-skills-config.yaml`을(를) 만듭니다. 처음 사용하기 전에 수동 구성이 필요하지 않습니다.
 
 파일을 미리 만들려면 프로젝트 루트에 다음 구조로 `.aem-skills-config.yaml`을(를) 배치하십시오.
 
@@ -123,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 에이전트는 확인을 위해 필드 사양을 되풀이한 다음 모든 구성 요소 파일을 생성합니다. 지원되는 패턴에는 복합 중첩 항목이 있는 다중 필드, 조건부 표시/숨기기 논리, Sling 리소스 병합을 통한 핵심 구성 요소 확장 및 AEM Mocks를 사용하는 JUnit 5 테스트가 포함됩니다. 디자인은 텍스트 설명, 이미지 또는 Figma의 MCP 서버를 사용하는 Figma 디자인 URL을 포함한 다양한 소스에서 가져올 수 있습니다.
 
-[AEM 에이전트 기술을 사용한 구성 요소 개발 자습서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)를 따라 자세히 알아보십시오.
+[AEM 에이전트 기술을 사용한 구성 요소 개발 자습서를 따라 자세히 알아보십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Dispatcher 스킬 사용 {#use-the-dispatcher-skill}
 
@@ -140,11 +141,11 @@ Dispatcher 또는 Apache HTTPD 구성 작업에 대한 Dispatcher 기술을 호�
 
 광범위한 요청 또는 처음 요청의 경우 `workflow-orchestrator` 하위 스킬로 시작합니다. 대상 작업의 경우, 특정 관심사와 해당 전문가에게 기술 경로를 설명하십시오.
 
-Dispatcher 기술은 오케스트레이션 및 자문 지침을 처리합니다. 아래에 설명된 Dispatcher MCP 서버는 로컬 증거가 필요할 때 이 기술이 사용하는 7가지 유효성 검사 및 런타임 도구를 제공합니다.
+Dispatcher 기술은 오케스트레이션 및 자문 지침을 처리합니다. 다음 섹션에 설명된 Dispatcher MCP 서버는 로컬 증거가 필요할 때 기술이 사용하는 7가지 유효성 검사 및 런타임 도구를 제공합니다.
 
 ## AEM Quickstart MCP 서버 {#aem-quickstart-mcp-server}
 
-모델컨텍스트 프로토콜(MCP)은 AI 코딩 도구가 외부 데이터 소스와 서비스에 연결할 수 있도록 하는 개방형 표준이다. AEM 빠른 시작 MCP 서버는 로컬 AEM SDK 인스턴스에 설치되면 연결된 AI 도구에 런타임 데이터를 직접 노출하는 컨텐츠 패키지로서 에이전트가 로그를 검색하고 OSGi 오류를 진단하며 IDE를 종료하지 않고 요청 처리를 검사할 수 있습니다.
+모델컨텍스트 프로토콜(MCP)은 AI 코딩 도구가 외부 데이터 소스와 서비스에 연결할 수 있도록 하는 개방형 표준이다. AEM 빠른 시작 MCP 서버는 로컬 AEM SDK 인스턴스에 설치되면 연결된 AI 도구에 런타임 데이터를 직접 노출하여 에이전트가 로그를 검색하고 OSGi 오류를 진단하며 IDE를 종료하지 않고 요청 처리를 검사할 수 있는 컨텐츠 패키지입니다.
 
 ### 콘텐츠 패키지 설치 {#install-the-content-package}
 
