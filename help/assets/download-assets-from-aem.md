@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 정적 및 동적 변환을 포함한 에셋을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 에셋에 대한 링크가 포함된 전자 메일을 보낼 수 있습니다. 다운로드한 에셋은 ZIP 파일에 번들로 제공됩니다. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -36,8 +36,8 @@ ht-degree: 6%
 
 * [Experience Manager 사용자 인터페이스](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ko)
+* [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#download-assets)
 
 ## [!DNL Experience Manager] 인터페이스를 사용하여 에셋 다운로드 {#download-assets}
 
@@ -49,7 +49,7 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
 
 사용자가 폴더 또는 컬렉션이 포함된 다운로드를 요청하면 AEM은 요청된 다운로드가 지원되는 한도 내에 있는지 확인하기 위해 다운로드된 폴더 또는 컬렉션 아래의 항목 수(Assets, 폴더 또는 렌디션)를 빠르게 예측합니다. 기본적으로 50,000개가 넘는 항목을 포함하는 다운로드는 차단되며 AEM은 `The selected items are larger than the configured maximum download limit` 메시지를 표시합니다.
 
-아래에 표시된 OSGI 구성을 응용 프로그램 코드에 추가하고 [Cloud Manager 파이프라인을 통해 배포](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi)하여 다운로드 크기 제한을 늘릴 수 있습니다.
+아래에 표시된 OSGI 구성을 응용 프로그램 코드에 추가하고 [Cloud Manager 파이프라인을 통해 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi)하여 다운로드 크기 제한을 늘릴 수 있습니다.
 
 ```
 com.adobe.cq.dam.download.impl.DownloadConfiguration   
@@ -65,7 +65,7 @@ downloadMaxItems = 100000
 * 다운로드 크기가 100MB를 초과하는 경우
 * 다운로드가 준비되는 데 30초 이상 걸리는 경우
 
-비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알림을 보낼 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
+비동기 다운로드가 백엔드에서 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. Experience Manager 받은 편지함 알림 외에도 Experience Manager은 다운로드 프로세스가 완료되면 사용자에게 알림을 보낼 이메일을 보낼 수 있습니다. 이 기능을 사용하려면 관리자는 [SMTP 서버 연결을 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko#sending-email)하여 전자 메일 서비스를 구성할 수 있습니다.
 
 이메일 서비스가 구성되면 관리자 및 사용자는 Experience Manager 인터페이스에서 이메일 알림을 활성화할 수 있습니다.
 
@@ -123,7 +123,7 @@ downloadMaxItems = 100000
 1. Git의 프로젝트 코드에서 `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`에 구성 파일을 만듭니다. 파일에는 해당 OSGi 구성 요소에 대한 빈 OSGi 구성을 의미하는 `{}`이(가) 포함되어야 합니다. 이 작업을 수행하면 서비스가 활성화됩니다.
 1. [!DNL Cloud Manager]을(를) 통해 이 새 구성을 포함한 코드를 배포합니다.
 1. 배포되면 에셋의 설정/해제 시간 설정에 따라 렌디션 및 메타데이터에 액세스할 수 있습니다. 현재 날짜 또는 시간이 설정 시간 이전이나 해제 시간 이후인 경우 오류 메시지가 표시됩니다.
-빈 OSGi 구성을 추가하는 방법에 대한 자세한 내용은 이 [안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en)를 참조하십시오.
+빈 OSGi 구성을 추가하는 방법에 대한 자세한 내용은 이 [안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ko)를 참조하십시오.
 
 ## 팁 및 제한 사항 {#tips-limitations}
 
@@ -147,5 +147,5 @@ downloadMaxItems = 100000
 >[!MORELIKETHIS]
 >
 >* [DRM 보호 에셋 다운로드](drm.md)
->* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)
 >* [지원되는 Adobe Creative Cloud 앱 내에서 Adobe Assets 링크를 사용하여 에셋을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
