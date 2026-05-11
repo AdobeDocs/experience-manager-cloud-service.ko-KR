@@ -83,7 +83,7 @@ downloadMaxItems = 100000
 1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을(를) 클릭합니다.
 1. 다운로드할 자산으로 이동합니다. 폴더를 선택하거나 폴더 내의 에셋을 하나 이상 선택합니다. 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
-   [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)에서 에셋을 다운로드할 때 ![사용 가능한 옵션
+   [!DNL Experience Manager Assets]![&#128279;](/help/assets/assets/asset-download1.png)에서 에셋을 다운로드할 때 사용 가능한 옵션
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
