@@ -392,7 +392,7 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **통합 관련 프롬프트:**
 
-    이 양식을 **CRM 시스템**에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
+    이 양식을 **CRM 시스템**&#x200B;에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
     
     양식이 제출될 때 **워크플로 트리거** 설정. 모든 양식 데이터를 전달하고 관리자 알림을 통해 승인 워크플로 트리거
     

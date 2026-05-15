@@ -57,7 +57,7 @@ XFA 양식 템플릿(`*.XDP` 파일)을 기반으로 적응형 양식을 만들 
 
 ### 적응형 양식에 콘텐츠 추가 {#add-content-to-adaptive-form-br}
 
-1. https://<server>:<port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
+1. https://&lt;server>:&lt;port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
 1. 작성자 모드에서 편집할 sample-af-xfa를 엽니다.
 1. 사이드바의 컨텐트 브라우저에서 데이터 모델 개체 탭을 선택합니다. NumericField1 및 TextField1을 적응형 양식으로 드래그합니다.
 1. NumericField1의 제목을 **숫자 필드**&#x200B;에서 **AF 숫자 필드로 변경합니다.**
