@@ -3,10 +3,9 @@ title: AEM as a Cloud Service의 컨텍스트 기반 실험
 description: 실험 레일을 사용하여 사이트에 실험 기능을 추가하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Edge Delivery Services 프로젝트 내의 실험 레일 기능에 액세스하�
 1. A/B 아이콘을 클릭하여 실험 확장을 엽니다.
 
 >[!NOTE]
->프로젝트에 대한 실험을 설정하는 데 문제가 있는 경우 [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com)에 문의하십시오.
+>프로젝트에 대한 실험을 설정하는 데 문제가 있는 경우 `aem-contextual-experimentation@adobe.com`에 문의하세요.
 
 >[!NOTE]
 >실험 엔진 설정 및 구성 방법에 대한 자세한 내용은 다음 [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui)의 설명서 섹션을 참조하십시오.
