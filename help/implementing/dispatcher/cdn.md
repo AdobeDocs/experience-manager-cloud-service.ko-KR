@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
+source-git-commit: 5f81fd54e28ce2636960ad66d1ae9317b9653e61
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1907'
 ht-degree: 11%
 
 ---
@@ -97,7 +97,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 1. AEM에서 호스트 헤더를 확인할 수 있도록 `X-Forwarded-Host` 헤더를 도메인 이름으로 설정합니다. 예: `X-Forwarded-Host:example.com`.
 1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)에 설명된 대로 먼저 Cloud Manager 구성 파이프라인을 사용하여 값을 구성한 다음 고객 CDN에서 동일한 Edge 키를 구성해야 합니다.
 
-   * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조).
+   * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조). `x-aem-debug`](#test-forwarded-headers)을(를) 사용하여 전달된 헤더를 테스트하는 [방법도 참조하십시오.
    * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에 알립니다(차단 예정).
 
 주요 CDN 공급업체의 구성 예는 [샘플 CDN 공급업체 구성](#sample-configurations) 섹션을 참조하십시오.
@@ -118,6 +118,7 @@ Windows에서는:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
+
 >[!NOTE]
 >
 >자체 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을(를) 사용하여 수행되며, 이는 요청 `Host` 헤더에서 전송되어야 합니다. 요청 `Host` 헤더를 사용자 지정 도메인 이름으로 덮어쓰면 Adobe CDN을 통해 요청이 잘못 라우팅되거나 421 오류가 발생할 수 있습니다.
@@ -136,15 +137,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 디버깅 구성
 
-BYOCDN 구성을 디버깅하려면 값이 `x-aem-debug`인 `edge=true` 헤더를 사용합니다. 예:
+BYOCDN 구성을 디버깅하려면 값이 `edge=true`인 `x-aem-debug` 헤더를 사용합니다. 예:
 
-Linux에서:
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-```
-
-Windows에서는:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -153,17 +147,37 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 이 프로세스는 `x-aem-debug` 응답 헤더의 요청에 사용된 특정 속성을 반영합니다. 예:
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 이 프로세스에서는 호스트 값, 에지 인증 구성 및 x-forwarded-host 헤더 값과 같은 세부 정보를 확인할 수 있습니다. 또한 일치 항목이 존재하는 경우 에지 키가 설정되었는지 여부와 사용되는 키도 식별합니다.
+
+#### x-aem-debug로 전달된 헤더 테스트 {#test-forwarded-headers}
+
+AEM 관리 CDN은 방문자가 전달된 헤더(`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`)를 제어할 수 없는지 테스트하기 위해 방문자가 제공한 값을 지우고 신뢰할 수 있는 값을 설정합니다. 임의의 값으로 사이트를 호출하고 `x-aem-debug` 응답 헤더를 검사합니다.
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+`www.example.com`을(를) 사이트의 도메인으로 바꾸십시오. `x-aem-debug` 응답 헤더에는 사이트의 호스트 및 클라이언트 IP가 반영되어야 합니다. 보낸 값은 표시되지 않아야 합니다. 예:
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >
 >RDE(Rapid Development Environment)를 사용하여 구성을 배포하고 테스트할 수 있습니다.
 >
 >* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [신속한 개발 환경을 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 샘플 CDN 공급업체 구성 {#sample-configurations}
 
