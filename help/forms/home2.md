@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -67,11 +67,11 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 
 **AEM Forms 워크플로 여정:**
 
-    →을 만들고 → 게시 → 캡처 → 프로세스→ 만들고 → 추적 → 보관 →을 통합합니다
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    디자인   리뷰   배포   수집   핸들   연결   저장소 모니터링   최적화
-    ↑                                                                              ↓
-    ←←←←←←←←←←←←←←← 지속적인 개선 루프 ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+    만들기 → 관리 → 게시 → 캡처 → 프로세스 → 통합 → 트랙 → 아카이브 → 개선
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↑
+    디자인 검토 배포 수집 핸들 연결 모니터 저장소 최적화
+    ↓ ←←←←←←←←←←←←←←←
+    ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← 지속적인 개선 루프
 
 ### 만들기: 양식 디자인 및 개발 {#create}
 
@@ -84,7 +84,7 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 [Edge Delivery Services](/help/edge/docs/forms/overview.md)을 통해 Microsoft Excel과 같은 익숙한 도구를 사용하여 양식을 만듭니다. 이 접근 방식을 통해 콘텐츠 작성자는 기술적 전문 지식 없이도 고성능 양식을 구축할 수 있을 뿐만 아니라 Google Lighthouse의 탁월한 점수를 달성할 수 있습니다.
 
 **템플릿 및 테마**
-구조 및 초기 콘텐츠를 정의하는 미리 작성된 [템플릿](/help/forms/template-editor-core-components.md)을(를) 사용하여 양식 만들기를 가속화하십시오. 여러 양식의 시각적 스타일을 제어하는 [테마](/help/forms/using-themes-in-core-components.md)를 사용하여 일관된 브랜딩을 적용하여 디자인 일관성을 보장하고 개발 시간을 단축합니다.
+구조 및 초기 콘텐츠를 정의하는 미리 작성된 [템플릿](/help/forms/template-editor-core-components.md)을(를) 사용하여 양식 만들기 속도를 높이십시오. 여러 양식의 시각적 스타일을 제어하는 [테마](/help/forms/using-themes-in-core-components.md)를 사용하여 일관된 브랜딩을 적용하여 디자인 일관성을 보장하고 개발 시간을 단축합니다.
 
 **데이터 통합**
 디자인 단계에서 양식을 백엔드 시스템에 연결합니다. [양식 데이터 모델](/help/forms/create-form-data-models.md)은(는) 여러 데이터 원본에 대한 통합 인터페이스를 제공하여 [미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md), [유효성 검사 규칙](/help/forms/rule-editor-core-components.md)을(를) 가능하게 하고 양식과 비즈니스 시스템 간의 원활한 데이터 흐름을 가능하게 합니다.
@@ -108,7 +108,7 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 **버전 관리**
 규정 준수를 위해 양식 버전을 추적하고 감사 추적을 유지 관리합니다. 기본 제공 [버전 관리](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)를 통해 변경 내용을 롤백하고, 반복을 비교하고, 준수 감사를 위해 기록 레코드를 유지 관리할 수 있습니다.
 
-**액세스 제어 및 권한**
+**액세스 제어 및 사용 권한**
 양식 작성, 편집 및 게시에 대한 세분화된 권한을 정의합니다. [역할 기반 액세스](/help/forms/forms-groups-privileges-tasks.md)를 통해 권한이 있는 사용자만 양식을 수정할 수 있으며 중요한 비즈니스 프로세스에 대한 업무 분리는 유지됩니다.
 
 ### 게시: 다중 채널 배포 {#publish}
@@ -119,7 +119,7 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md), 독립 실행형 웹 페이지, 모바일 응용 프로그램 또는 [서드파티 시스템에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)에 양식을 게시합니다. 단일 소스 게시는 서로 다른 채널 요구 사항에 맞게 조정하면서 일관성을 보장합니다.
 
 **로컬라이제이션 및 Personalization**
-[왼쪽에서 오른쪽 및 오른쪽에서 왼쪽 언어](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)를 모두 지원하고 [AEM의 번역 워크플로](/help/forms/right-left-languages.md)를 사용하여 여러 언어로 양식을 전달합니다. Adobe Target과 통합하여 사용자 세그먼트, 동작 또는 컨텍스트 데이터를 기반으로 양식 경험을 개인화할 수 있습니다.
+[왼쪽에서 오른쪽 및 오른쪽에서 왼쪽 언어](/help/forms/right-left-languages.md)를 모두 지원하고 [AEM의 번역 워크플로](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)를 사용하여 여러 언어로 양식을 전달합니다. Adobe Target과 통합하여 사용자 세그먼트, 동작 또는 컨텍스트 데이터를 기반으로 양식 경험을 개인화할 수 있습니다.
 
 **성능 최적화**
 번개처럼 빠른 양식 로드와 최적의 SEO 성능을 위해 Edge Delivery Services을 활용하십시오. 컨텐츠 전달 네트워크는 지연 시간을 최소화하면서 글로벌 접근성을 보장합니다.
@@ -131,11 +131,11 @@ AEM Forms은 초기 생성에서 지속적인 최적화에 이르기까지 전�
 
 양식 채우기 환경을 최적화하여 완료율 및 데이터 품질을 극대화하십시오.
 
-**응답형 디자인**
+**반응형 디자인**
 Forms은 자동으로 다양한 화면 크기와 입력 방식에 맞게 조정됩니다. 터치에 적합한 컨트롤, 키보드 탐색 및 화면 판독기 호환성으로 모든 사용자 유형에서 [접근성](/help/forms/creating-accessible-adaptive-forms.md)을 보장합니다.
 
 **디지털 서명**
-양식 환경에서 전자 서명을 법적으로 구속하려면 [Adobe Sign](/help/forms/working-with-adobe-sign.md)을(를) 통합하십시오. 사용자는 양식을 종료하지 않고 문서에 서명할 수 있으므로 승인 프로세스를 간소화하고 포기를 줄일 수 있습니다.
+양식 환경 내에서 전자 서명을 법적으로 구속하려면 [Adobe Sign](/help/forms/working-with-adobe-sign.md)을(를) 통합하십시오. 사용자는 양식을 종료하지 않고 문서에 서명할 수 있으므로 승인 프로세스를 간소화하고 포기를 줄일 수 있습니다.
 
 **작업 제출**
 [제출 액션](/help/forms/configure-submit-actions-core-components.md)을 구성하여 사용자가 양식을 작성 및 제출할 때 발생할 작업을 정의합니다. 사용자에게 즉각적인 피드백과 확인을 제공하면서 데이터를 이메일, 데이터베이스, 워크플로우 또는 외부 시스템으로 라우팅합니다.
@@ -144,7 +144,7 @@ Forms은 자동으로 다양한 화면 크기와 입력 방식에 맞게 조정�
 
 강력한 처리, 유효성 검사 및 라우팅 기능을 사용하여 양식 제출을 처리합니다.
 
-**데이터 유효성 검사 및 처리**
+**데이터 유효성 검사 및 처리 중**
 서버 측 유효성 검사 및 자동화된 처리 규칙을 통해 데이터 무결성을 보장합니다. 제출된 데이터를 변환, 검증 및 라우팅하는 동시에 사용자를 위한 영수증, 확인 또는 후속 자료를 생성할 수 있습니다.
 
 **통신 API**
@@ -177,7 +177,7 @@ Forms은 자동으로 다양한 화면 크기와 입력 방식에 맞게 조정�
 포괄적인 분석 및 모니터링을 통해 양식 성능 및 사용자 행동을 이해합니다.
 
 **양식 분석**
-[Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)을 통해 완료율, 포기 패턴 및 필드 수준 상호 작용을 추적합니다. 마찰점을 식별하고, 전환 단계를 측정하고, 다양한 세그먼트 간의 사용자 행동을 이해합니다.
+[Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)을 통해 완료율, 중단 패턴 및 필드 수준 상호 작용을 추적합니다. 마찰점을 식별하고, 전환 단계를 측정하고, 다양한 세그먼트 간의 사용자 행동을 이해합니다.
 
 **성능 모니터링**
 양식 로드 시간, 제출 성공률 및 시스템 성능 모니터링 실시간 대시보드는 기술 상태 및 사용자 경험 지표에 대한 통찰력을 제공합니다.
@@ -211,7 +211,7 @@ Adobe Target을 사용하여 다양한 양식 레이아웃, 필드 배열 및 �
 **Analytics 기반 최적화**
 사용자 행동 데이터를 분석하여 개선 기회를 파악합니다. 반복 설계 개선 사항을 알리기 위한 열 매핑, 필드 상호 작용 분석 및 포기 패턴 인식에 대한 [분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md).
 
-**반복적 개선**
+**반복적 개선 사항**
 사용자 피드백, 성능 지표 및 비즈니스 요구 사항을 기반으로 지속적인 개선 프로세스를 구현합니다. [버전 제어](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) 및 롤백 기능을 통해 안전한 실험과 빠른 반복이 가능합니다.
 
 ## 시작하기 {#getting-started}

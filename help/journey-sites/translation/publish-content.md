@@ -2,15 +2,14 @@
 title: 번역된 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---

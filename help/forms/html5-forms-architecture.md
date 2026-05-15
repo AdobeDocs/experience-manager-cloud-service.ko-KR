@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '2069'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ HTML5 forms는 캐싱을 사용하여 처리량과 응답 시간을 최적화합
   </tr>
   <tr>
    <td>공격적</td>
-   <td>Cache Rendered HTML 콘텐츠<br /> Conservative 수준에서 캐시된 모든 아티팩트를 캐시합니다.<br /> <strong>참고</strong>: 이 전략은 최상의 성능을 제공하지만 캐시된 아티팩트를 저장하기 위해 더 많은 메모리를 사용합니다.</td>
+   <td>렌더링된 HTML 콘텐츠 캐시하기<br /> Conservative 수준에서 캐시된 모든 아티팩트를 캐시합니다.<br /> <strong>참고</strong>: 이 전략은 최상의 성능을 제공하지만 캐시된 아티팩트를 저장하기 위해 더 많은 메모리를 사용합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -175,7 +175,7 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 콘텐츠�
 
 #### 프로필 렌더러 {#profile-renderers}
 
-프로필 노드에 값이 **xfaforms/profile:resourceSuperType**&#x200B;인 속성 **sling**&#x200B;이(가) 있습니다. 이 속성은 내부적으로 **/libs/xfaforms/profile** 폴더의 프로필 노드에 대한 sling 스크립트로 전달 요청을 보냅니다. 이러한 스크립트는 HTML 양식 및 필수 JS/CSS 아티팩트를 결합하기 위한 컨테이너인 JSP 페이지입니다. 이 페이지에는 다음에 대한 참조가 포함되어 있습니다.
+프로필 노드에 값이 **xfaforms/profile**&#x200B;인 속성 **sling:resourceSuperType**&#x200B;이(가) 있습니다. 이 속성은 내부적으로 **/libs/xfaforms/profile** 폴더의 프로필 노드에 대한 sling 스크립트로 전달 요청을 보냅니다. 이러한 스크립트는 HTML 양식 및 필수 JS/CSS 아티팩트를 결합하기 위한 컨테이너인 JSP 페이지입니다. 이 페이지에는 다음에 대한 참조가 포함되어 있습니다.
 
 * **xfaforms.I18N.&lt;locale>**: 이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
 * **xfaforms.profile**: 이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.

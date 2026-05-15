@@ -9,10 +9,10 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 7%
+source-wordcount: '1109'
+ht-degree: 8%
 
 ---
 
@@ -56,7 +56,7 @@ Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 
 
 * [AEM Forms에 대한 로컬 개발 환경을 설정합니다](/help/forms/setup-local-development-environment.md).
 * AEM Cloud Service 환경에 대한 적응형 Forms 핵심 구성 요소를 활성화하려면 최신 파트를 설치하십시오.
-* 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 구성원은 적응형 양식을 만들 수 있는 권한이 있습니다.
+* 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다.
 * 다음 역할을 가진 사용자는 AEM 환경 내에 AEM 현대화 도구 를 설치할 수 있습니다.
 
    * 개발자 역할
@@ -137,8 +137,8 @@ AEM 환경에 AEM 현대화 도구 를 활성화하고 사용하려면 Foundatio
 
    이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. **대상에 복사** 옵션을 선택하면 **[!UICONTROL Source 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
 
-1. `source folder`Source 경로&#x200B;**[!UICONTROL 에서]** 이름을 지정하십시오.
-1. `target folder`대상 경로&#x200B;**[!UICONTROL 에서]** 이름을 지정하십시오.
+1. **[!UICONTROL Source 경로]**&#x200B;에서 `source folder` 이름을 지정하십시오.
+1. **[!UICONTROL 대상 경로]**&#x200B;에서 `target folder` 이름을 지정하십시오.
 1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. **[!UICONTROL Forms 추가]**&#x200B;를 클릭합니다. `source folder`의 모든 양식이 화면에 표시됩니다.
 1. 적응형 Forms 기반 기초 구성 요소 를 선택하여 핵심 구성 요소 기반 양식으로 전환합니다. 여러 양식을 선택할 수도 있습니다.
@@ -159,12 +159,12 @@ AEM 환경에 AEM 현대화 도구 를 활성화하고 사용하려면 Foundatio
 
    ![AEM 현대화 도구 대상 폴더](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택하여 변환된 양식의 속성을 다시 저장합니다.
+1. **[!UICONTROL 저장 후 닫기]**를 선택하여 변환된 양식의 속성을 다시 저장합니다.
    ![AEM 현대화 도구 적응형 양식 속성](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 이제 기초 구성 요소에 구축된 적응형 양식이 핵심 구성 요소에 구축된 적응형 양식으로 변환됨을 알 수 있습니다.
 
 ## 모범 사례 {#best-practices}
 
-* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
+* Foundation 구성 요소 기반 양식인지 확인하고, 동등한 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)를 사용할 수 있는 구성 요소만 사용하십시오. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
 * 기초 구성 요소를 핵심 구성 요소로 변환하는 규칙의 형식이 XML로 지정되어 있는지 확인합니다.

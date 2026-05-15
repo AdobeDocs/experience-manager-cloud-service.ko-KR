@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 1%
+source-wordcount: '2589'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ OSGi의 Forms 중심 워크플로우를 사용하면 JEE 스택에 완전한 프
 
 설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식을 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi의 Forms 중심 워크플로우는 [AEM 받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ko#authoring)을 확장하고 AEM 워크플로 편집기에서 [!DNL AEM Forms] 중심 워크플로에 대한 지원을 추가할 수 있는 추가 구성 요소(단계)를 제공합니다. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi의 Forms 중심 워크플로우는 [AEM 받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring)을 확장하고 AEM 워크플로 편집기에서 [!DNL AEM Forms] 중심 워크플로에 대한 지원을 추가할 수 있는 추가 구성 요소(단계)를 제공합니다. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 모든 [!DNL AEM Forms] 워크플로 단계는 변수 사용을 지원합니다. 변수를 사용하면 런타임 시 워크플로우 단계에서 여러 단계에 걸쳐 메타데이터를 보관하고 전달할 수 있습니다. 다양한 유형의 데이터를 저장하기 위해 다양한 유형의 변수를 만들 수 있습니다. 관련된 동일한 형식의 데이터의 여러 인스턴스를 저장하는 변수 컬렉션(배열)을 만들 수도 있습니다. 일반적으로 변수 또는 변수 컬렉션은 보유하고 있는 값을 기반으로 결정을 내려야 하거나 나중에 프로세스에서 필요한 정보를 저장해야 할 때 사용합니다. 이러한 Forms 중심 워크플로 구성 요소(단계)에서 변수를 사용하는 방법에 대한 자세한 내용은 [OSGi의 Forms 중심 워크플로 - 단계 참조](aem-forms-workflow-step-reference.md)를 참조하십시오. 변수 만들기 및 관리에 대한 자세한 내용은 AEM 워크플로의 [변수](variable-in-aem-workflows.md)를 참조하십시오.
 
@@ -73,9 +73,9 @@ OSGi의 Forms 중심 워크플로우는 [AEM 받은 편지함](https://experienc
 
 ## 워크플로우 모델 만들기 {#create-a-workflow-model}
 
-워크플로우 모델은 비즈니스 프로세스의 로직과 플로우로 구성됩니다. 일련의 단계로 구성됩니다. 이러한 단계는 AEM 구성 요소입니다. 필요에 따라 매개 변수 및 스크립트를 사용하여 워크플로우 단계를 확장하여 더 많은 기능과 제어를 제공할 수 있습니다. [!DNL AEM Forms]은(는) 기본 제공되는 AEM 단계 외에 몇 가지 단계를 제공합니다. AEM 및 [!DNL AEM Forms] 단계의 자세한 목록은 [AEM 워크플로 단계 참조](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ko#extending-aem) 및 [OSGi의 Forms 중심 워크플로 - 단계 참조](aem-forms-workflow.md)를 참조하십시오.
+워크플로우 모델은 비즈니스 프로세스의 로직과 플로우로 구성됩니다. 일련의 단계로 구성됩니다. 이러한 단계는 AEM 구성 요소입니다. 필요에 따라 매개 변수 및 스크립트를 사용하여 워크플로우 단계를 확장하여 더 많은 기능과 제어를 제공할 수 있습니다. [!DNL AEM Forms]은(는) 기본 제공되는 AEM 단계 외에 몇 가지 단계를 제공합니다. AEM 및 [!DNL AEM Forms] 단계의 자세한 목록은 [AEM 워크플로 단계 참조](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) 및 [OSGi의 Forms 중심 워크플로 - 단계 참조](aem-forms-workflow.md)를 참조하십시오.
 
-AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 워크플로 모델을 만드는 단계별 지침은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=ko#workflows)를 참조하십시오. 다음 예제에서는 승인 및 검토 워크플로우에 대한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
+AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 워크플로 모델을 만드는 단계별 지침은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows)를 참조하십시오. 다음 예제에서는 승인 및 검토 워크플로우에 대한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
    ![또는 분할 예](assets/orsplit_branch2_active_new.png)
 
-   변수를 사용하여 라우팅 식을 만드는 방법에 대한 자세한 내용은 [워크플로 [!DNL AEM Forms] 의 &#x200B;](variable-in-aem-workflows.md)변수를 참조하십시오.
+   변수를 사용하여 라우팅 식을 만드는 방법에 대한 자세한 내용은  [!DNL AEM Forms] 워크플로](variable-in-aem-workflows.md)의 [변수를 참조하십시오.
 
 1. 비즈니스 논리를 구축하기 위한 다른 워크플로우 단계를 추가합니다.
 
@@ -216,7 +216,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 다음을 수행하여 Forms 중심 워크플로우를 시작하거나 트리거할 수 있습니다.
 
 * [AEM 받은 편지함에서 애플리케이션 제출](#inbox)
-* [&#x200B; [!DNL AEM Forms] 앱에서 응용 프로그램 제출 중](#afa)
+* [ [!DNL AEM Forms] 앱에서 응용 프로그램 제출 중](#afa)
 
 * [적응형 양식 제출](#af)
 * [감시 폴더 사용](#watched)

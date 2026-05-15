@@ -2,15 +2,14 @@
 title: AEM Sites 콘텐츠 및 AEM에서의 AEM Sites 콘텐츠 번역 방법에 대해 알아보기
 description: AEM Sites 개념 및 AEM 번역 이론에 대해 알아봅니다.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 100%
 
 ---

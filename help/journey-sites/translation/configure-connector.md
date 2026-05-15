@@ -2,15 +2,14 @@
 title: 번역 커넥터 구성 (AEM Sites)
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1162'
 ht-degree: 100%
 
 ---

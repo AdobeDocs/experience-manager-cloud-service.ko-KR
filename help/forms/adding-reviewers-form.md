@@ -11,10 +11,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '514'
+ht-degree: 4%
 
 ---
 
@@ -61,13 +61,13 @@ ht-degree: 3%
 다음 단계를 수행하기 전에 [필수 구성 요소](adding-reviewers-form.md#prerequisite)를 참조하십시오.
 
 그룹을 만들고 구성원을 추가하려면 **도구** > **작업** > **보안** > **그룹**(으)로 이동합니다.
-자세한 내용은 [사용자 관리 및 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)를 참조하십시오.
+자세한 내용은 [사용자 관리 및 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)를 참조하십시오.
 만든 그룹을 기본 제공 사용자 그룹 **forms-submission-reviewers**&#x200B;의 구성원으로 추가했는지 확인하십시오. 이 사용자 그룹은 [!DNL AEM Forms]과(와) 함께 제공되며 사용자가 제출 검토자로 추가되었는지 확인합니다.
 
 사용자 그룹을 적응형 양식에 연결하려면 다음 작업을 수행하십시오.
 
 1. 작성 모드에서 **Forms** > **Forms 및 문서**(으)로 이동합니다.
-1. **선택**&#x200B;옵션을 사용하여 적응형 양식을 선택하고 **속성 보기**&#x200B;를 클릭하세요.
+1. **선택**&#x200B;옵션을 사용하여 적응형 양식을 선택하고 **속성 보기**를 클릭하세요.
 1. 양식의 속성 창에서 **편집**&#x200B;을 클릭한 다음 **고급**&#x200B;을 클릭합니다.
 1. 제출 검토자 그룹 필드에 그룹을 입력하고 **완료**&#x200B;를 클릭합니다.
 

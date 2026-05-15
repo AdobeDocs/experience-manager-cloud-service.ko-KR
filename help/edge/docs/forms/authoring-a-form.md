@@ -7,10 +7,10 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 99%
 
 ---
 
@@ -110,6 +110,6 @@ AEM은 다양한 사용자 요구 사항, 기술 수준 및 게시 대상에 적
 ## 관련 문서
 
 - [Microsoft Excel 또는 Google Sheets를 사용하여 문서 기반 작성](/help/edge/docs/forms/create-forms.md)
-- [WYSIWYG 작성용 Universal Editor](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [WYSIWYG 작성용 유니버설 편집기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 - [적응형 양식(기초 구성 요소) 만들기](/help/forms/creating-adaptive-form.md)
 - [적응형 양식(핵심 구성 요소) 만들기](/help/forms/create-an-adaptive-form.md)

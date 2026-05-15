@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 사이드바의 속성 탭에 있는 도움말 콘텐츠 섹션에서 다음 옵션을 사용하여 상황별 도움말을 지정할 수 있습니다.
 
 * [간단한 설명](authoring-in-field-help.md#p-short-description-p)
-* [긴 설명](authoring-in-field-help.md#p-long-description-p)
+* [자세한 설명](authoring-in-field-help.md#p-long-description-p)
 
 ![양식 필드에 대한 상황별 도움말](assets/descriptions.png)
 
@@ -49,13 +49,13 @@ ht-degree: 2%
 
 ![필드 아래의 컨텍스트에 맞는 도움말에 영구적 추가](assets/short1.png)
 
-### 긴 설명 {#long-description}
+### 자세한 설명 {#long-description}
 
 긴 설명 필드를 사용하여 긴 텍스트를 지정하거나 비디오 등 리치 미디어 콘텐츠를 컨텍스트 내 도움말로 포함할 수 있습니다. 예를 들어 다음 이미지는 컨텍스트 내 도움말로서 비디오를 포함할 수 있는 방법을 보여 줍니다.
 
 ![양식 필드에 대한 컨텍스트 내 도움말로 리치 미디어 추가](assets/long-descriptions.png)
 
-긴 설명을 추가하면 **이(가) 표시됩니까?필드 옆의** 아이콘. 아이콘을 클릭하면 긴 설명 섹션에 추가된 콘텐츠가 표시됩니다.
+긴 설명을 추가하면 **?**&#x200B;이(가) 표시됩니다. 필드 옆에 있는 아이콘. 아이콘을 클릭하면 긴 설명 섹션에 추가된 콘텐츠가 표시됩니다.
 
 ![상황에 맞는 리치 미디어 도움말의 예](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ ht-degree: 2%
 
 ![양식 패널에 대한 상황에 맞는 도움말 추가](assets/panel-level-help.png)
 
-패널에 대한 도움말을 추가하면 **이(가) 표시됩니까?패널 설명 옆의** 아이콘. 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 콘텐츠 섹션에 추가된 콘텐츠가 표시됩니다.
+패널에 대한 도움말을 추가하면 **?**&#x200B;이(가) 표시됩니다. 패널 설명 옆에 있는 아이콘 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 콘텐츠 섹션에 추가된 콘텐츠가 표시됩니다.
 
 ![양식 패널 수준의 상황에 맞는 도움말 예제](assets/photoshop-1.png)

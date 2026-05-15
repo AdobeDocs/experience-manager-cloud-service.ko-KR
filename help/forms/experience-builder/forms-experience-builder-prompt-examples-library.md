@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2192'
+ht-degree: 97%
 
 ---
 
@@ -228,11 +228,11 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **회사 분류:**
 
-    NAICS 코드를 사용하여 산업 분류에 대한 필드 추가
-    사업체 유형(LLC, 법인, 파트너십 등) 드롭다운 만들기
-    회사 규모 카테고리(스타트업, 중소기업, 대기업)에 대한 필드 추가
-    대규모 조직에 대한 부서 선택 항목 포함
-    전문 서비스 유형에 대한 필드 추가
+    NAICS 코드가 있는 업계 분류를 위한 필드 추가
+    비즈니스 엔터티 형식(LLC, Corporation, Partnership 등)의 드롭다운 만들기
+    회사 규모 범주(시작, SME, Enterprise)에 대한 필드 추가
+    대규모 조직에 대한 부서 선택 포함
+    전문 서비스 형식에 대한 필드 추가
 
 **전문 분류:**
 
@@ -392,7 +392,7 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 **통합 관련 프롬프트:**
 
-    이 양식을 **CRM 시스템**&#x200B;에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
+    이 양식을 **CRM 시스템**에 연결하여 새로운 리드를 생성합니다. @firstName을 FirstName에, @email을 Email에 매핑하고, LeadSource를 “웹 양식”으로, 상태를 “신규”로 설정
     
     양식이 제출될 때 **워크플로 트리거** 설정. 모든 양식 데이터를 전달하고 관리자 알림을 통해 승인 워크플로 트리거
     
@@ -492,4 +492,4 @@ Forms Experience Builder에 최적화된 재사용 가능한 프롬프트 패턴
 
 포괄적인 모범 사례 및 유효성 검사 지침은 [Forms Experience Builder 시작 안내서](/help/forms/experience-builder/forms-experience-builder-getting-started.md)를 참조하십시오.
 
-*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=ko)를 확인하십시오.*
+*이 프롬프트 라이브러리는 사용자 피드백과 새로운 Forms Experience Builder 기능을 기반으로 지속적으로 업데이트됩니다. 최신 기능과 예제를 보려면 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)를 확인하십시오.*

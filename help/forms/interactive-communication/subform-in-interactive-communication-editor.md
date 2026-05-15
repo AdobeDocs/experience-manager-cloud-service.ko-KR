@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 작성자는 개체 라이브러리의 하위 양식을 캔버스로 드래그하고 속성 패널에서 해당 레이아웃, 위치 및 바인딩을 조정할 수 있습니다.
 
-## &#x200B;4. 우수 사례
+## &#x200B;4. 모범 사례
 
 - **레이아웃을 현명하게 선택:** 정확한 배치가 필요한 양식에는 고정 레이아웃을 사용하고, 동적 데이터 기반 커뮤니케이션에는 유동성 레이아웃을 사용합니다.
 

@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 >이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
-사용자 매핑 도구는 이메일로 Adobe Identity Management System(IMS) 사용자를 조회하고 IMS ID를 반환할 수 있는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직에 대한 클라이언트 ID, 클라이언트 암호 및 액세스 또는 전달자 토큰을 만들어야 합니다.
+사용자 매핑 도구는 API를 사용하여 이메일로 Adobe Identity Management IMS(System) 사용자를 조회하고 IMS ID를 반환할 수 있습니다. 이 API를 사용하려면 사용자가 조직에 대한 클라이언트 ID, 클라이언트 암호 및 액세스 또는 전달자 토큰을 만들어야 합니다.
 
 ## 사용자 매핑 도구 설정 {#setting-up-user-mapping}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 아래 단계에 따라 설정하십시오.
 
-1. Adobe ID을 사용하여 [Adobe Developer Console](https://developer.adobe.com/console/)(으)로 이동합니다.
+1. Adobe ID을 사용하여 [Adobe Developer Console](https://developer.adobe.com/console/)&#x200B;(으)로 이동합니다.
 1. 프로젝트를 만들거나 기존 프로젝트를 엽니다.
 1. API 추가 - **프로젝트에 추가**&#x200B;를 클릭하고 **API**&#x200B;를 선택합니다.
 1. 사용자 관리 API를 선택합니다. 이 옵션을 사용하려면 시스템 관리자 권한이 있어야 합니다.
@@ -72,7 +72,7 @@ ht-degree: 1%
    * **액세스 토큰**: 설정 단계에서 저장한 액세스 토큰을 입력하십시오.
 
      >[!NOTE]
-     >액세스 토큰은 24시간마다 만료되며 새 액세스 토큰을 만들어야 합니다. 토큰을 만들려면 [Adobe Developer Console](https://developer.adobe.com/console/)(으)로 돌아가서 프로젝트를 선택하고 **사용자 관리 API**&#x200B;를 클릭하고 상자에 동일한 개인 키를 붙여 넣으십시오.
+     >액세스 토큰은 24시간마다 만료되며 새 액세스 토큰을 만들어야 합니다. 토큰을 만들려면 [Adobe Developer Console](https://developer.adobe.com/console/)&#x200B;(으)로 돌아가서 프로젝트를 선택하고 **사용자 관리 API**&#x200B;를 클릭하고 상자에 동일한 개인 키를 붙여 넣으십시오.
 
 1. 필드를 채운 후 **구성 테스트**&#x200B;를 클릭하여 사용자 관리 API 서비스에 대한 연결을 테스트합니다. 연결에 성공하면 **저장**&#x200B;을 클릭하여 구성을 저장할 수 있습니다.
 
@@ -97,7 +97,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 사용자 매핑이 완료되면 이동 경로를 사용하여 콘텐츠 마이그레이션 페이지로 다시 이동할 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. **콘텐츠 전송**&#x200B;을 클릭하여 마이그레이션 세트를 만들어 추출을 실행할 수 있습니다. 자세한 내용은 [콘텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#running-tool)을 참조하십시오.
+   >* 사용자 매핑이 완료되면 이동 경로를 사용하여 콘텐츠 마이그레이션 페이지로 다시 이동할 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. **콘텐츠 전송**&#x200B;을 클릭하여 마이그레이션 세트를 만들어 추출을 실행할 수 있습니다. 자세한 내용은 [콘텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)을 참조하십시오.
 
 ### 사용자 매핑 프로세스 다시 시작 {#resume-user-mapping-process}
 

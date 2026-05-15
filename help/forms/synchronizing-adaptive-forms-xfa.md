@@ -9,15 +9,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
-
-# 적응형 Forms과 XFA 양식 템플릿 동기화{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# 적응형 양식과 XFA Forms 템플릿 동기화{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## 소개 {#introduction}
 
@@ -57,7 +57,7 @@ XFA 양식 템플릿(`*.XDP` 파일)을 기반으로 적응형 양식을 만들 
 
 ### 적응형 양식에 콘텐츠 추가 {#add-content-to-adaptive-form-br}
 
-1. https://&lt;server>:&lt;port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
+1. https://<server>:<port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
 1. 작성자 모드에서 편집할 sample-af-xfa를 엽니다.
 1. 사이드바의 컨텐트 브라우저에서 데이터 모델 개체 탭을 선택합니다. NumericField1 및 TextField1을 적응형 양식으로 드래그합니다.
 1. NumericField1의 제목을 **숫자 필드**&#x200B;에서 **AF 숫자 필드로 변경합니다.**

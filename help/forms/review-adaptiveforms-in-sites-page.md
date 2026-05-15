@@ -5,17 +5,17 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '394'
+ht-degree: 5%
 
 ---
 
-
 # 적응형 양식에 대한 검토 만들기 및 관리 {#review-step-forms-aem-sites-page}
 
-검토자는 AEM 워크플로의 [할당 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko#assign-task-step)를 사용하여 제출된 양식을 검토하고 그에 대한 작업을 수행합니다. 작업 할당 단계를 사용하여 제출된 양식을 검토하려면 다음 단계를 수행합니다.
+검토자는 AEM 워크플로의 [할당 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step)를 사용하여 제출된 양식을 검토하고 그에 대한 작업을 수행합니다. 작업 할당 단계를 사용하여 제출된 양식을 검토하려면 다음 단계를 수행합니다.
 
 1. [AEM 워크플로우 만들기](#create-an-aem-workflow)
 1. [적응형 양식 컨테이너의 제출 액션 구성](#configure-submit-action)
@@ -46,7 +46,7 @@ ht-degree: 4%
 
 1. 사이트의 페이지로 이동합니다.
 1. 적응형 양식 컨테이너의 ![settings_icon](assets/settings_icon.png)을(를) 선택하십시오. **[!UICONTROL 적응형 양식 컨테이너]** 대화 상자가 열립니다.
-1. **[!UICONTROL 제출]** 탭을 열고 [AEM 워크플로우 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko#invoke-an-aem-workflow)에 **[!UICONTROL 제출 액션]**&#x200B;을(를) 지정합니다.
+1. **[!UICONTROL 제출]** 탭을 열고 [AEM 워크플로우 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)에 **[!UICONTROL 제출 액션]**&#x200B;을(를) 지정합니다.
 
 1. 설정을 저장하려면 [완료]를 클릭하세요.
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 제출된 적응형 양식을 검토하고 확인하려면:
 
-1. [!UICONTROL 도구] > [!UICONTROL 워크플로] > [!UICONTROL 인스턴스] (으)로 이동
+1. [!UICONTROL 도구] > [!UICONTROL 워크플로] > [!UICONTROL 인스턴스]&#x200B;(으)로 이동
 1. 받은 편지함에서 인스턴스가 생성 중임을 확인할 수 있습니다.
 1. 인스턴스를 선택하고 [!UICONTROL 열기]를 클릭합니다.
 1. 이제 제출된 양식을 볼 수 있습니다.

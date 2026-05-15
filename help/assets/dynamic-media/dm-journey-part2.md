@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -39,14 +38,14 @@ Dynamic Media 여정 시작: 다음을 배울 수 있는 기본 사항, 2부
 
 Dynamic Media 에셋이 업로드되고 게시된 후 에셋에서 생성된 URL을 복사하여 브라우저에 붙여넣어 에셋이 고객에게 어떻게 표시되는지 확인할 수 있습니다. 시계 이미지에 대해 다음과 같이 복사된 URL은 읽고 이해하기 쉽도록 색상별로 분류됩니다.
 
-![Dynamic Media URL의 구조](/help/assets/dynamic-media/assets/dm-colored-url.png)
+Dynamic Media URL의 ![구조](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Dynamic Media URL의 구조._
 
 빨간색으로 표시된 URL의 첫 번째 부분은 서버 도메인 자체를 참조합니다. 이 경우 Dynamic Media는 일반 서버 도메인(`https://s7d1.scene7.com/is/image/`)에서 실행되고 있습니다. 서버 도메인만 보면 이미지 집합을 보고 Dynamic Media에서 이 이미지를 제공하는지 여부를 쉽게 이해할 수 있습니다. URL은 일관되게 유지됩니다. 그러나 일부 Dynamic Media 고객이 전용 서버 도메인으로 전환하여 `name-of-your-company.scene7.com`이(가) 될 수 있습니다. 스마트 이미징에는 전용 서버 도메인이 필요합니다.
 
 계정 이름은 자주색으로 된 부분입니다. 이 경우 계정을 `jpearldemo`이라고 합니다.
 
-자산 ID 또는 이름 `AdobeStock_28563982`이(가) 녹색으로 표시되어 있습니다. 자산에 _또는_&#x200B;과(와) 같은 `.png`no`.jpg` 파일 확장명이 있습니다. 에셋을 Dynamic Media에 수집하면 파일 확장자가 제거되고 다른 종류의 파일이 생성됩니다. 피라미드 TIFF 파일입니다. Pyramic-TIFF을 사용하면 Dynamic Media가 신속하게 표현물을 즉석에서 만들 수 있습니다.
+자산 ID 또는 이름 `AdobeStock_28563982`이(가) 녹색으로 표시되어 있습니다. 자산에 `.png` 또는 `.jpg`과(와) 같은 _no_ 파일 확장명이 있습니다. 에셋을 Dynamic Media에 수집하면 파일 확장자가 제거되고 다른 종류의 파일이 생성됩니다. 피라미드 TIFF 파일입니다. Pyramic-TIFF을 사용하면 Dynamic Media가 신속하게 표현물을 즉석에서 만들 수 있습니다.
 
 마지막으로 이미지 처리 매개 변수 `?wid=1000&fmt=jpeg&qlt=85`이(가) 끝에 노란색으로 표시됩니다.
 
@@ -62,10 +61,10 @@ _Dynamic Media URL의 구조._
 
 시계의 새 렌디션이 생성됩니다. 이미지의 폭을 변경하는 이러한 간단한 연습에서 이해하는 핵심은 표시되는 이미지가 100% 동적으로 생성된다는 것입니다.
 
-이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
+이제 너비 값 `500`픽셀을 `1000`픽셀로 변경한 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 **[!UICONTROL Enter]**&#x200B;를 누른 후 브라우저가 Dynamic Media 이미지 서버로 돌아갑니다. 방금 입력한 새 너비 값을 기반으로 시계의 새 렌디션을 생성한 다음 새 이미지를 브라우저에 다시 전달하고 캐시합니다.
 
-Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko).
+Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. [목록을 여기에서 볼 수 있습니다](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 이제 시계 이미지에 회전 매개 변수를 추가해 보십시오. `wid=1000` 바로 다음에 오는 URL 경로의 끝에 `&rotate=90`을(를) 입력한 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다. [사용해 보기](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
@@ -80,7 +79,7 @@ Dynamic Media에는 웹 페이지에서 이미지 자산을 미세 조정하는 
 이미지를 만들거나 이미지를 사용할 수 있는 다양한 방법과 위치가 있습니다. 일반적으로 Creative은 Adobe Photoshop으로 이동하여 이러한 다양한 렌디션을 각각 정적 이미지로 저장합니다.
 
 ![정적 이미지](/help/assets/dynamic-media/assets/dm-static-images.png)
-_좋음: 정적 이미지, 각 이미지를 수동으로 만들었습니다._
+_좋음: 각각 수동으로 만든 정적 이미지입니다._
 
 이제 Creative 감독이 이미지를 보고 이렇게 말하는 것을 상상해 보십시오.
 
@@ -128,7 +127,7 @@ _고급 탭에서 옵션을 선택하여 이미지 사전 설정을 만듭니다
 
 완료되면 사전 설정을 저장하면 이제 보유한 모든 이미지에 사용할 수 있습니다. 이 경우 _Medium_ 이미지 사전 설정을 액체 초콜릿 그릇의 이미지에 적용하려고 합니다.
 
-![이미지 사전 설정 *Medium*&#x200B;을(를) 적용하여 이미지 렌디션 생성](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
+![이미지 사전 설정 적용 *Medium* 이미지의 렌디션 생성](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _이미지 사전 설정 Medium을 적용하여 이미지 렌디션을 생성합니다._
 
 URL을 복사한 다음 브라우저에 붙여넣어 이미지의 모양을 확인합니다. [사용해 보기](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
@@ -146,7 +145,7 @@ _정적 및 동적 이미지 사전 설정. 시계 이미지가 `PDP-page` 이�
 
 하지만 만약 웹사이트의 이미지를 변경해야 한다면? 예를 들어 일부 테스트를 수행했으며 120 x 120의 이미지(`Cart` 이미지 사전 설정)가 생각대로 수신되지 않고 있다고 가정합니다. 너비를 175픽셀로 늘리고 높이를 175픽셀로 늘려 이미지를 더 크게 만들어야 합니다. 일반적으로 Adobe Photoshop으로 이동하여 이러한 모든 장바구니 이미지를 다시 만들어야 합니다. 하지만 Dynamic Media를 사용하면 아래 예와 같이 [폭] 및 [높이] 값을 175로 업데이트하여 이미지 사전 설정을 편집하고 사전 설정을 저장하면 됩니다.
 
-![이미지 사전 설정 편집](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
+![이미지 사전 설정 편집 중](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _`Cart` 이미지 사전 설정의 너비와 높이를 편집하는 중입니다._
 
 이미지 사전 설정을 변경하고 캐시를 플러시하면 모든 이미지가 업데이트되고, 해당 사전 설정과 함께 사용 중인 모든 URL은 아무 곳에서도 변경하지 _마십시오_. 즉, 링크가 끊기지 않고 웹 페이지 리디렉션이 필요하지 않습니다.
@@ -182,7 +181,7 @@ _Experience Manager Assets, 카드 보기에서 설정된 `Running` 이미지_
 
 다음 예제와 같이 미리보기에서 열려면 먼저 빌드된 이미지 세트를 선택합니다.
 
-![뷰어 옵션이 선택된 미리 보기에서 실행 중인 이미지 설정](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
+![뷰어 옵션을 선택한 미리 보기에서 실행 중인 이미지 설정](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
 _Viewers 옵션을 선택한 미리 보기에서 설정된 `Running` 이미지._
 
 미리 보기에서 실행 중인 신발 견본을 선택하고 신발을 확대하거나 축소할 수 있습니다. 세트에 뷰어를 적용하려면 풀다운 메뉴에서 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
@@ -217,7 +216,7 @@ _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 

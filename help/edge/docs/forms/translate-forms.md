@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Google 시트의 `GOOGLETRANSLATE` 함수는 기본 제공 번역 도구를 활�
 
 ![문의 번역 양식](/help/forms/assets/translate-form-french.png)
 
-프랑스어로 번역된 양식을 볼 수 있는 아래 URL을 참조하십시오.
+프랑스어 번역이 포함된 양식을 볼 수 있는 아래 URL을 참조하십시오.
 https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## SharePoint Site 내 양식 번역{#translate-form-sharepoint}
@@ -63,7 +63,7 @@ Microsoft® SharePoint 사이트의 양식을 번역하려면 번역 서비스�
 
 ![문의 번역 양식](/help/forms/assets/translate-form-french.png)
 
-프랑스어로 번역된 양식을 볼 수 있는 아래 URL을 참조하십시오.
+프랑스어 번역이 포함된 양식을 볼 수 있는 아래 URL을 참조하십시오.
 https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## 알려진 문제 {#known-issues}
@@ -83,7 +83,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **A**: 현지화된 특정 언어로 텍스트를 입력하려면 디바이스의 키보드 설정을 조정합니다. 수행 방법에 대한 지침은 다음 링크를 참조하십시오.
 
-- [다른 언어로 입력하도록 Mac 설정](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [다른 언어로 입력을 받도록 Mac 설정](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
 - [다른 언어로 입력하도록 Windows 설정](https://support.microsoft.com/ko/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
 - [다른 언어로 입력하도록 Android 또는 iPhone/iPad 설정](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 

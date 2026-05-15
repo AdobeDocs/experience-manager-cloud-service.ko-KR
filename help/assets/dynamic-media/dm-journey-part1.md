@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 3%
+source-wordcount: '3692'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +47,7 @@ _파트 II_
 * 자산 렌더링용 이미지 사전 설정 만들기의 기본 사항
 * 이미지 세트, 스핀 세트 및 혼합 미디어 세트
 
-**_대상자_**
+**_대상_**
 이 여정의 독자에게 가장 적합한 대상자는 Experience Manager에서 Dynamic Media를 처음 사용하는 다음과 같습니다.
 
 * 관리자
@@ -82,7 +81,7 @@ Dynamic Media에 대해 이해할 수 있는 주요 사항 중 하나는 _가능
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media는 서로 다른 크기 및 형식의 다른 미디어에 동일한 기본 이미지를 제공합니다](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media는 서로 다른 크기 및 형식으로 동일한 기본 이미지를 다른 미디어에 제공합니다](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media는 크기 또는 대역폭에 관계없이 모든 화면에 일관된 품질 환경을 제공합니다._
 
 계속해서 읽으면서 &quot;하나의 기본 에셋 파일, 무궁한 가능성&quot;이라는 개념이 중요한 이유에 대해 자세히 알아볼 것입니다.
@@ -105,7 +104,7 @@ Dynamic Media는 이미 CDN을 통해 자산을 최적화하고 각 자산이 �
 
 스마트 이미징은 고객의 브라우저 기능에 따라 이미지의 형식 및 파일 크기를 자동으로 최적화하여 더 나은 이미지 자산 전달 성능을 제공합니다. 기존 이미지 사전 설정에서 작동하며(이미지 사전 설정은 이 여정의 II부에서 논의됨) 게재 시 인텔리전스를 사용합니다.
 
-이 인텔리전스는 브라우저 및 네트워크 연결 속도에 따라 이미지 파일 크기를 더 줄입니다. 이미지 자산은 페이지의 로드 시간 대부분을 차지하기 때문에 성능 향상은 다음과 같은 주요 비즈니스 지표에 철저한 영향을 줄 수 있습니다.
+이 인텔리전스는 브라우저와 네트워크 연결 속도에 따라 이미지 파일 크기를 더욱 줄여 줍니다. 이미지 자산은 페이지의 로드 시간 대부분을 차지하기 때문에 성능 향상은 다음과 같은 주요 비즈니스 지표에 철저한 영향을 줄 수 있습니다.
 
 * 높은 전환
 * 사이트에서 보낸 시간
@@ -247,13 +246,13 @@ Adobe에서는 자산을 무손실 형식으로 업로드하는 것을 권장합
 
 ### 에셋 게시 및 미리보기
 
-Dynamic Media에 에셋을 업로드한 후 에셋을 선택한 다음 Dynamic Media에서 _게시_ 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭하여 **[!UICONTROL 게시]**&#x200B;하는 것이 좋습니다. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 자산이 게시된 후 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
+Dynamic Media에 에셋을 업로드한 후 에셋을 선택한 다음 Dynamic Media에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭하여 _게시_&#x200B;하는 것이 좋습니다. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 자산이 게시된 후 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 
 자산을 수동으로 게시하는 것 외에도 업로드 시 사용자 개입 없이 자산을 즉시 게시하도록 Dynamic Media를 구성할 수 있습니다.
 
 업로드 후 Dynamic Media에서 에셋의 렌디션을 미리 보는 다양한 방법이 있습니다. 렌디션 미리 보기를 통해 고객이 보는 내용에 대한 아이디어를 얻을 수 있습니다. 일반적인 미리 보기 방법은 에셋을 선택한 다음 다음에 보이는 대로 _이미지 사전 설정_&#x200B;을 선택하여 해당 렌디션을 보는 것입니다.
 
-![큰 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 보는 중](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+![큰 이미지 사전 설정을 기반으로 자산의 렌디션 미리 보기](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 봅니다. URL 버튼을 클릭했습니다. 결과 URL 경로에 &quot;큰&quot; 이미지 사전 설정 이름이 포함되어 있으며 웹 페이지에서 사용할 수 있습니다._
 
 위의 URL은 live입니다! [사용해 보기](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media 튜토리얼_
 
-* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ko)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/ko?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)&#x200B;(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 

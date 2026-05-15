@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -186,7 +186,7 @@ Cloud Manager가 UI 테스트를 빌드하고 실행하려면 저장소에 파�
 >
 >프로젝트에 이 줄이 포함되지 않은 경우 UI 테스트를 선택하도록 파일을 편집합니다.
 >
->파일에 *수정하지 않음*&#x200B;이라는 줄이 포함되어 있을 수 있습니다. 이는 단순히 이전 템플릿/샘플의 레거시 경고이며, Cloud Manager UI 테스트에 필요한 옵트인 편집을 하지 못하도록 *차단하지*&#x200B;합니다. 권고 사항을 무시해도 됩니다. 옵트인 단계를 따르는 경우(예: `assembly-ui-test-docker-context.xml`을(를) `pom.xml`프로젝트&#x200B;*에서* 및 `testing.properties`을(를) 편집할 수 있습니다.
+>파일에 *수정하지 않음*&#x200B;이라는 줄이 포함되어 있을 수 있습니다. 이는 단순히 이전 템플릿/샘플의 레거시 경고이며, Cloud Manager UI 테스트에 필요한 옵트인 편집을 하지 못하도록 *차단하지*&#x200B;합니다. 권고 사항을 무시해도 됩니다. 옵트인 단계를 따르는 경우(예: `testing.properties`을(를) *프로젝트*&#x200B;에서 `assembly-ui-test-docker-context.xml` 및 `pom.xml`을(를) 편집할 수 있습니다.
 
 Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시오.
 
@@ -276,7 +276,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 | 권장 기간 | 15m | Adobe은 테스트를 이 시간 제한 미만으로 유지하는 것을 권장합니다. |
 
 * Target 작성자/게시가 IP 허용 목록에 추가으로 보호되는 경우 파이프라인 UI 테스트 인프라가 허용 목록에추가된여야 합니다. 또는 UI 테스트가 실패하고 403 금지됩니다.
-[IP 허용 목록에 추가으로 인한 AEMaaCS의 UI 테스트 실패](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26654#) 및 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 참조하세요.
+[IP 허용 목록에 추가으로 인한 AEMaaCS의 UI 테스트 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) 및 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)도 참조하세요.
 
 >[!NOTE]
 >
@@ -314,7 +314,7 @@ Docker 이미지는 추가 테스트 출력(예: 스크린샷 또는 비디오)�
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 -->
 
-UI 테스트 실행 중에 테스트 결과 아카이브가 만들어지면 `Download Details`사용자 지정 UI 테스트&#x200B;[**단계** 아래의 &#x200B;](/help/implementing/cloud-manager/deploy-code.md) 버튼을 클릭하여 Cloud Manager에서 다운로드할 수 있습니다.
+UI 테스트 실행 중에 테스트 결과 아카이브가 만들어지면 [**사용자 지정 UI 테스트** 단계](/help/implementing/cloud-manager/deploy-code.md) 아래의 `Download Details` 버튼을 클릭하여 Cloud Manager에서 다운로드할 수 있습니다.
 
 ### 파일 업로드 {#upload-files}
 
@@ -427,7 +427,7 @@ fi
 
 #### 극작가 구성
 
-`playwright.config.js` 환경 변수가 설정된 경우 프록시를 사용하도록 극작가 구성(예: `HTTP_PROXY`에서)을 수정하십시오.
+`HTTP_PROXY` 환경 변수가 설정된 경우 프록시를 사용하도록 극작가 구성(예: `playwright.config.js`에서)을 수정하십시오.
 
 예제 구현:
 

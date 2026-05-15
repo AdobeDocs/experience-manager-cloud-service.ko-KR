@@ -2,11 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 HIPAA 준비
 description: HIPAA 규정에 대한 Experience Manager as a Cloud Service 지원 및 새 AEM as a Cloud Service 프로젝트를 구현할 때 준수하는 방법에 대해 알아봅니다.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 >* Adobe Trust Center의 [HIPAA 및 Adobe 제품 및 서비스](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
 >* [Adobe 개인 정보 보호 센터](https://www.adobe.com/kr/privacy.html)
 
-Adobe Experience Manager(AEM) as a Cloud Service의 경우 Adobe에서 HIPAA 준비 상태를 이해하는 데 도움이 되는 설명서를 제공하고 있습니다. 이러한 규정을 준수하는 데 도움이 될 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service의 경우 Adobe에서 HIPAA 준비 상태를 이해하는 데 도움이 되는 설명서를 제공하고 있습니다. 이러한 문서는 해당 규정을 준수하는 데 도움이 됩니다.
 
 ## 건강 보험 이동성 및 책임에 관한 법률(HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -33,7 +34,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 경우 Adobe에서 HIPAA 준
 
 HIPAA 개인 정보, 보안 및 위반 알림 규칙은 PHI(Protected Health Information)로 알려진 개인 식별 가능한 건강 정보에 대한 중요한 보호를 설정합니다.
 
-HIPAA에서 적용 엔티티는 의료 공급자, 의료 계획 또는 의료 정보 교환소입니다. 비즈니스 연관자는 PHI에 대한 액세스를 포함하는 적용 엔티티에 서비스를 제공하는 엔티티입니다. HIPAA 개인 정보 보호 및 보안 규칙은 적용 기업이 비즈니스 관계자에게 적용 기업의 PHI의 개인 정보 보호 및 보안을 보호하도록 요구하는 비즈니스 관련 계약(BAA) 형식으로 서면 보증을 받도록 요구합니다.
+HIPAA에서 적용 엔티티는 의료 공급자, 의료 계획 또는 의료 정보 교환소입니다. 비즈니스 연관자는 PHI에 대한 액세스를 포함하는 적용 엔티티에 서비스를 제공하는 엔티티입니다. HIPAA 개인 정보 보호 및 보안 규칙은 피복 기업이 비즈니스 관계자에게 피복 기업의 PHI의 개인 정보 보호 및 보안을 보호할 것을 요구하는 비즈니스 관련 계약(BAA) 형식으로 서면 보증을 받도록 요구합니다.
 
 ### Adobe에 PHI 제공 {#providing-phi-to-adobe}
 
@@ -132,7 +133,7 @@ PHI는 이러한 환경에서 허용되지 않으므로 *HIPAA 지원*&#x200B;�
 
 다음 표는 환경 유형을 HIPAA 준비로 지원할 수 있는 위치를 보여 줍니다.
 
-| | RDE | 개발 | 단계  | Prod |
+| | RDE | 개발 | 스테이지  | Prod |
 | --- | --- | --- | --- | --- |
 | 환경 유형  | 아니요  | 아니요  | 아니요  | 예  |
 

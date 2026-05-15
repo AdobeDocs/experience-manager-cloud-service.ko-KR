@@ -8,9 +8,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니�
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1083'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](assets/data-integeration.png)
@@ -39,7 +39,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service(OData 서비스)는 모든 실행 모드에서 사용할 수 있습니다. [!DNL Experience Manager] 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko#runmodes)를 참조하십시오.
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service(OData 서비스)는 모든 실행 모드에서 사용할 수 있습니다. [!DNL Experience Manager] 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)를 참조하십시오.
 
 AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
    * [!DNL Microsoft Dynamics] 365 온-프레미스
    * [!DNL Microsoft Dynamics] 2016 온-프레미스
 
-* [Active Directory [!DNL Microsoft Dynamics] 에  [!DNL Microsoft Azure] 온라인 서비스에 대한 응용 프로그램을 등록했습니다. &#x200B;](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함) 및 클라이언트 암호의 값을 기록해 두십시오. 이 값은 [서비스에 대한 클라우드 서비스를 구성하는 동안 [!DNL Microsoft Dynamics] 서비스](#configure-cloud-service-for-your-microsoft-dynamics-service)에 사용됩니다.
+* [Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory)에  [!DNL Microsoft Dynamics] 온라인 서비스에 대한 응용 프로그램을 등록했습니다.  [!DNL Microsoft Azure] 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함) 및 클라이언트 암호의 값을 기록해 두십시오. 이 값은 [서비스에 대한 클라우드 서비스를 구성하는 동안 [!DNL Microsoft Dynamics] 서비스](#configure-cloud-service-for-your-microsoft-dynamics-service)에 사용됩니다.
 
 ## 등록된 [!DNL Microsoft Dynamics] 응용 프로그램에 대한 회신 URL 설정 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 >
 > [!DNL Experience Manager Forms]을(를) 온-프레미스 [!DNL Microsoft Dynamics] 서버와 통합하는 동안에만 이 절차를 사용하십시오.
 
-1. [!DNL Microsoft Dynamics]IFD 구성[&#x200B; [!DNL Microsoft Dynamics]에 설명된 대로 IFD에 대한 &#x200B;](https://technet.microsoft.com/en-us/library/dn609803.aspx) 온-프레미스 인스턴스를 구성합니다.
+1. [IFD 구성 [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx)에 설명된 대로 IFD에 대한 [!DNL Microsoft Dynamics] 온-프레미스 인스턴스를 구성합니다.
 1. Windows PowerShell을 사용하여 다음 명령을 실행하여 IFD 사용 [!DNL Microsoft Dynamics]에 대한 클레임 설정을 구성하십시오.
 
    ```shell
@@ -107,7 +107,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
    위치:
 
    * `Client-ID`은(는) GUID 생성기를 사용하여 생성할 수 있는 클라이언트 ID입니다.
-   * `redirect-uri`은(는) [!DNL Microsoft Dynamics]의 [!DNL Experience Manager Forms] OData 클라우드 서비스에 대한 URL입니다. [!DNL Experience Manager Forms]과(와) 함께 설치된 기본 클라우드 서비스는 다음 URL에 배포됩니다.
+   * `redirect-uri`은(는) [!DNL Experience Manager Forms]의 [!DNL Microsoft Dynamics] OData 클라우드 서비스에 대한 URL입니다. [!DNL Experience Manager Forms]과(와) 함께 설치된 기본 클라우드 서비스는 다음 URL에 배포됩니다.
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 다음 명령을 실행하여 AD FS 컴퓨터에 대한 액세스 권한을 부여합니다.
@@ -118,7 +118,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    * `resource`은(는) [!DNL Microsoft Dynamics] 조직 URL입니다.
 
-1. [!DNL Microsoft Dynamics]이(가) HTTPS 프로토콜을 사용합니다. [!DNL Forms] 서버에서 AD FS 끝점을 호출하려면 [!DNL Microsoft Dynamics]을(를) 실행하는 컴퓨터에서 `keytool` 명령을 사용하여 Java 인증서 저장소에 [!DNL Experience Manager Forms] 사이트 인증서를 설치하십시오.
+1. [!DNL Microsoft Dynamics]이(가) HTTPS 프로토콜을 사용합니다. [!DNL Forms] 서버에서 AD FS 끝점을 호출하려면 [!DNL Experience Manager Forms]을(를) 실행하는 컴퓨터에서 `keytool` 명령을 사용하여 Java 인증서 저장소에 [!DNL Microsoft Dynamics] 사이트 인증서를 설치하십시오.
 
 ## [!DNL Microsoft Dynamics] 서비스에 대한 클라우드 서비스 구성 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
@@ -134,16 +134,16 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. [!DNL Experience Man
 
    클라우드 서비스 구성을 위한 폴더를 만들고 구성하는 방법에 대한 자세한 내용은 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder)을 참조하십시오.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL 데이터 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 찾아 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 **[!UICONTROL 데이터 Source 구성 만들기 마법사]**&#x200B;를 엽니다. 구성의 이름 및 제목(선택 사항)을 지정하고, **[!UICONTROL 서비스 유형]** 드롭다운에서 **[!UICONTROL 데이터 서비스]**&#x200B;를 선택하고, 선택 사항으로 구성의 썸네일 이미지를 찾아 선택한 후 **[!UICONTROL 다음]**을 선택합니다.
 **[!UICONTROL 인증 설정]** 탭에서:
 
    1. **[!UICONTROL 서비스 루트]** 필드에 대한 값을 입력하십시오. Dynamics 인스턴스로 이동하여 **[!UICONTROL 개발자 리소스]**(으)로 이동하여 서비스 루트 필드에 대한 값을 확인합니다. 예: https://&lt;tenant-name>/api/data/v9.1/
 
    1. 인증 유형으로 **[!UICONTROL OAuth 2.0]**&#x200B;을(를) 선택합니다.
 
-   1. **[!UICONTROL 클라이언트 ID]**(**응용 프로그램 ID**&#x200B;이라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL 새로 고침 토큰 URL]**, **[!UICONTROL 액세스 토큰 URL]** 및 **[!UICONTROL 리소스]** 필드의 기본값을 [!DNL Microsoft Dynamics] 서비스 구성의 값으로 바꿉니다. 양식 데이터 모델(FDM)을 사용하여 **[!UICONTROL 을 구성하려면]**&#x200B;리소스[!DNL Microsoft Dynamics] 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 dynamics 인스턴스 URL을 파생시킵니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. **[!UICONTROL 클라이언트 ID]**(**응용 프로그램 ID**&#x200B;이라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL 새로 고침 토큰 URL]**, **[!UICONTROL 액세스 토큰 URL]** 및 **[!UICONTROL 리소스]** 필드의 기본값을 [!DNL Microsoft Dynamics] 서비스 구성의 값으로 바꿉니다. 양식 데이터 모델(FDM)을 사용하여 [!DNL Microsoft Dynamics]을 구성하려면 **[!UICONTROL 리소스]** 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 dynamics 인스턴스 URL을 파생시킵니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
-   1. **[!UICONTROL 의 권한 부여 프로세스를 위해]**&#x200B;권한 부여 범위&#x200B;**[!UICONTROL 필드에]** openid[!DNL Microsoft Dynamics]을(를) 지정하십시오.
+   1. [!DNL Microsoft Dynamics]의 권한 부여 프로세스를 위해 **[!UICONTROL 권한 부여 범위]** 필드에 **[!UICONTROL openid]**&#x200B;을(를) 지정하십시오.
 
       ![인증 설정](assets/dynamics_authentication_settings_new.png)
 양식 데이터 모델(FDM)

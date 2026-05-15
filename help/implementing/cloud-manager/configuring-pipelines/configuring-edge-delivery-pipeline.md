@@ -4,14 +4,13 @@ description: Edge Delivery 파이프라인을 추가하여 코드를 빌드하�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 14%
+source-wordcount: '636'
+ht-degree: 15%
 
 ---
 
@@ -105,7 +104,7 @@ ht-degree: 14%
 
 1. **저장**&#x200B;을 클릭합니다.
 
-이제 [프로그램 개요](managing-pipelines.md) 페이지의 **파이프라인** 카드 또는 **파이프라인** 페이지에서 파이프라인을 **관리**&#x200B;할 수 있습니다.
+이제 **프로그램 개요** 페이지의 **파이프라인** 카드 또는 **파이프라인** 페이지에서 파이프라인을 [관리](managing-pipelines.md)할 수 있습니다.
 
 
 ![파이프라인 이름, 상태, 저장소 및 분기를 표시하는 Edge Delivery 파이프라인 위젯](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)

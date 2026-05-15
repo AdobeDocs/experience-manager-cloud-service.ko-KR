@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 1%
 
 ---
 
@@ -122,7 +122,6 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
     - 부서가 &quot;Sales&quot;인 경우 sales-hr@company.com
     - 기본값을 hr@company.com
 으로 보냅니다.
-
 ### 3단계: API 통합 설정
 
 **REST API 구성:**
@@ -164,7 +163,7 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
 
 **구현:**
 고객 피드백 양식 제출 대상:
-1. 양식 세부 정보가 포함된 이메일 <support@company.com>
+1. 양식 세부 정보가 포함된 전자 메일 <support@company.com>
 2. CRM API에 게시하여 고객 레코드 만들기
 3. 지원 티켓 만들기 워크플로우 트리거
 4. 고객에게 감사 이메일 보내기
@@ -180,7 +179,7 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
 
 **구현:**
 직원 온보딩 처리:
-1. 직원 세부 정보가 포함된 이메일(<hr@company.com>)
+1. 직원 세부 정보가 포함된 전자 메일 <hr@company.com>
 2. SharePoint 직원 폴더에 문서 업로드
 3. Power Automate에서 온보딩 워크플로 시작
 4. HR 시스템, 이메일 및 기타 도구에서 계정 생성
@@ -198,7 +197,7 @@ Forms Experience Builder는 양식을 외부 시스템, API 및 비즈니스 워
 프로세스 리드 생성:
 1. Marketo API로 리드 데이터 게시
 2. Salesforce에서 리드 레코드 만들기
-3. 잠재 고객 세부 정보가 포함된 이메일 영업팀
+3. 잠재 고객 세부 정보가 포함된 이메일 영업 팀
 4. 자동화된 이메일 육성 시퀀스 시작
 
 ## 고급 통합 시나리오

@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ LLM 강화 스마트 필드는 AI의 기본 제공 지식 베이스를 사용하
 
 **업계 및 비즈니스 엔터티 형식:**
 
-    NAICS 코드를 사용하여 산업 분류에 대한 필드 추가
-    사업체 유형(LLC, 법인, 파트너십 등) 드롭다운 만들기
-    회사 규모 카테고리(스타트업, 중소기업, 대기업)에 대한 필드 추가
-    대규모 조직에 대한 부서 선택 항목 포함
-    전문 서비스 유형에 대한 필드 추가
+    NAICS 코드가 있는 업계 분류를 위한 필드 추가
+    비즈니스 엔터티 형식(LLC, Corporation, Partnership 등)의 드롭다운 만들기
+    회사 규모 범주(시작, SME, Enterprise)에 대한 필드 추가
+    대규모 조직에 대한 부서 선택 포함
+    전문 서비스 형식에 대한 필드 추가
 
 **예제 프롬프트:**
 
@@ -228,9 +228,9 @@ LLM 강화 스마트 필드는 AI의 기본 제공 지식 베이스를 사용하
 스마트 필드는 조건부 규칙에서 매우 잘 작동합니다.
 
     선택한 업종에 따라 관련 옵션을 표시하는 전문 인증 필드를 만드십시오
-    선택한 국가를 기준으로 필터링하는 도시 필드를 추가하십시오.2&rbrace;선택한 연구 분야를 기준으로 적응하는 대학 필드를 포함하십시오
-    
+    선택한 국가를 기준으로 필터링하는 도시 필드를 추가하십시오.2}선택한 연구 분야를 기준으로 적응하는 대학 필드를 포함하십시오
 
+    
 ### 유효성 검사 및 사용자 지정
 
 LLM이 향상된 필드는 포괄적인 데이터를 제공하지만 항상

@@ -4,9 +4,9 @@ description: OpenAPI 기능이 있는 Dynamic Media를 사용하면 Adobe Experi
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩니다)."
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,10 @@ ht-degree: 2%
 
 이제 비디오 자산 메타데이터 양식에서 **비디오 스마트 자르기 만들기** 옵션을 사용할 수 있습니다.
 
-![비디오 Smartcrops 필드 만들기](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## 승인된 비디오에 비디오 스마트 자르기 적용 {#apply-video-smart-crops}
 

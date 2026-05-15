@@ -6,13 +6,13 @@ role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
-
 
 # 사용자 그룹을 선택하는 규칙 편집기 액세스 부여 {#grant-rule-editor-access-to-select-user-groups}
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    ![사용자 만들기](assets/create_user_new.png)
 
-   이제 지정된 사용자 그룹에 속하지 않는 사용자일 경우    `RuleEditorsUserGroup`) 필드를 탭합니다. 구성 요소 도구 모음에서 규칙 편집 아이콘(![edit-rules1](assets/edit-rules1.png))을 사용할 수 없습니다.
+   이제 지정된 사용자 그룹에 속하지 않는 사용자(여기서는 `RuleEditorsUserGroup`)가 필드를 탭하면 구성 요소 도구 모음에서 규칙 편집 아이콘(![edit-rules1](assets/edit-rules1.png))을 사용할 수 없습니다.
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -54,5 +54,4 @@ ht-degree: 2%
 
    규칙 편집기 액세스 권한 없이 사용자가 볼 수 있는 구성 요소 도구 모음
 
-   그룹에 사용자를 추가하는 방법에 대한 지침은 [사용자 관리 및 보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)을 참조하세요.
-
+   그룹에 사용자를 추가하는 방법에 대한 지침은 [사용자 관리 및 보안](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)을 참조하세요.

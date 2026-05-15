@@ -8,10 +8,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assets에 적용됩�
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: true
 hidefromtoc: true
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 37%
+source-wordcount: '260'
+ht-degree: 38%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 37%
 * 거부
 * 이동
 
-The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 [!DNL Experience Manager]Adobe 자산 링크[&#x200B; 또는 &#x200B;](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)데스크톱 앱[[!DNL Experience Manager] 을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ko)에 체크 인하면 타임라인 활동이 기록됩니다.
+The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 [!DNL Experience Manager]에 체크 인하면 타임라인 활동이 기록됩니다.
 
 >[!NOTE]
 >

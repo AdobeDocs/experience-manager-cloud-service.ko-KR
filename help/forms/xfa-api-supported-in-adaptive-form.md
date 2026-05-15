@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 7%
 
 ---
@@ -48,8 +48,8 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>버튼</p> </td>
   </tr>
   <tr>
-   <td><p>확인란 </p> </td>
-   <td><p>확인란</p> </td>
+   <td><p>체크 상자 </p> </td>
+   <td><p>체크 상자</p> </td>
   </tr>
   <tr>
    <td><p>목록 상자 </p> </td>
@@ -57,11 +57,11 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>날짜/시간 필드 </p> </td>
-   <td><p>날짜 선택기</p> </td>
+   <td><p>날짜 선택</p> </td>
   </tr>
   <tr>
    <td><p>서명 낙서</p> </td>
-   <td><p>스크리블 서명</p> </td>
+   <td><p>낙서 서명</p> </td>
   </tr>
   <tr>
    <td><p>숫자 필드 </p> </td>

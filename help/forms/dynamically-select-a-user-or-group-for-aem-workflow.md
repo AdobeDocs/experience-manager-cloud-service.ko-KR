@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 1%
+source-wordcount: '932'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 대규모 조직에서는 프로세스에 사용할 사용자를 동적으로 선택해야 하는 요구 사항이 있습니다. 예를 들어, 고객에 대한 에이전트의 근접도를 기반으로 고객을 지원할 현장 에이전트를 선택합니다. 이러한 시나리오에서는 에이전트가 동적으로 선택됩니다.
 
-OSGi에서 [!DNL Adobe Sign]Forms 중심 워크플로[의 작업 및 &#x200B;](aem-forms-workflow.md) 단계는 사용자를 동적으로 선택하는 옵션을 제공합니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계의 할당자를 동적으로 선택하거나 문서 서명 단계의 서명자를 선택할 수 있습니다.
+OSGi에서 [Forms 중심 워크플로](aem-forms-workflow.md)의 작업 및 [!DNL Adobe Sign] 단계는 사용자를 동적으로 선택하는 옵션을 제공합니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계의 할당자를 동적으로 선택하거나 문서 서명 단계의 서명자를 선택할 수 있습니다.
 
 ## ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite을 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`입니다.
+1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`입니다.
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
 
    * (작업 할당 단계 경로) `/apps/fd/dashboard/scripts/participantChooser`
@@ -119,7 +119,7 @@ function getAdobeSignRecipients() {
 
 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 [!DNL Adobe Sign]에 대한 사용자 또는 그룹을 동적으로 선택하고 작업 단계를 할당할 수 있습니다. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하는 OSGi 번들을 만들어 [!DNL AEM Forms] 서버에 배포할 수 있습니다. 이 옵션을 AEM Workflow의 작업 할당 및 [!DNL Adobe Sign] 구성 요소에서 선택할 수 있습니다.
 
-아래 나열된 코드 샘플을 컴파일하려면 [[!DNL AEM Forms] 클라이언트 SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일이 필요합니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
+아래 나열된 코드 샘플을 컴파일하려면 [[!DNL AEM Forms] 클라이언트 SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일이 필요합니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
 1. Eclipse IDE를 엽니다. **[!UICONTROL 파일]**> **[!UICONTROL 새 프로젝트]**(으)로 이동합니다.
 1. 마법사 선택 화면에서 **[!UICONTROL Maven 프로젝트]**&#x200B;를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.

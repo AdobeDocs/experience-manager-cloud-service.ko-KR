@@ -8,9 +8,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니�
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 7%
 
 ---
@@ -179,7 +179,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
  <tbody>
   <tr>
    <td><p><strong> 스키마 속성</strong></p> </td>
-   <td><p><strong>데이터 형식</strong></p> </td>
+   <td><p><strong>데이터 유형</strong></p> </td>
    <td><p><strong>설명</strong></p> </td>
    <td><p><strong>구성 요소</strong></p> </td>
   </tr>
@@ -201,7 +201,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
     <ul>
      <li>숫자 상자</li>
      <li>숫자 스텝퍼<br /> </li>
-     <li>날짜 선택기</li>
+     <li>날짜 선택</li>
     </ul> </td>
   </tr>
   <tr>

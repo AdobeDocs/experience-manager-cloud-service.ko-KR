@@ -9,10 +9,10 @@ exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 89%
 
 ---
 
@@ -61,11 +61,11 @@ API 호출에 해당하는 입력 매개변수를 정의하고 다음 json을 �
 
 ## 양식 만들기
 
-범용 편집기를 사용하여 간단한 적응형 양식을 만들어 아래와 같이 리드 개체 세부 정보를 캡처합니다. 
+범용 편집기를 사용하여 간단한 적응형 양식을 만들어 아래와 같이 잠재 고객 개체 세부 정보를 캡처합니다
 ![lead-object-form](assets/create-lead.png)
 
-규칙 편집기를 사용하여 리드 생성 확인란의 클릭 이벤트를 처리합니다. 아래와 같이 입력 매개변수를 적절한 양식 개체의 값에 매핑합니다. 새로 만든 리드 개체의 ID를 `leadid` TextField 개체에 표시합니다.
-![rule-editor](assets/create-leade-rule-editor.png)
+규칙 편집기를 사용하여 리드 생성 확인란의 클릭 이벤트를 처리합니다. 아래와 같이 입력 매개변수를 적절한 양식 개체의 값에 매핑합니다. `leadid` TextField 개체에 새로 만든 Lead 개체의 ID를 표시합니다.
+![규칙 편집기](assets/create-leade-rule-editor.png)
 
 ## 통합 테스트
 

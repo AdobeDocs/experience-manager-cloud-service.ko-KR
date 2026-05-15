@@ -2,14 +2,14 @@
 title: 프로젝트 설명서 스킬
 description: Experience 현대화 에이전트의 설명서 기술을 통해 프로젝트 이행을 가속화하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # 프로젝트 설명서 스킬 {#project-documentation}
 
@@ -55,7 +55,7 @@ PDF을 직접 저장하여 팀에 제공하거나 나머지 DA 콘텐츠의 일�
 
 >[!NOTE]
 >
->Edge Delivery Services 관리 API에 액세스할 권한이 없는 경우 또는 콘솔 설정에서 **LLM이 나를 대신하여 admin.hlx.page에 액세스하도록 허용** [옵션을 선택하십시오.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)을(를) 사용할 수 없습니다. 에이전트가 액세스할 수 있는 코드 베이스를 기반으로 설명서를 생성합니다.
+>Edge Delivery Services 관리 API에 액세스할 권한이 없는 경우 또는 **LLM에서 나를 대신하여 admin.hlx.page에 액세스하도록 허용** [콘솔의 설정에서.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) 이 활성화되어 있지 않으면 에이전트는 액세스할 수 있는 코드 베이스를 기반으로 설명서를 생성합니다.
 
 ## 문제 해결 {#troubleshooting}
 

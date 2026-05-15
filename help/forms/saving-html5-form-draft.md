@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '351'
 ht-degree: 9%
 
 ---
@@ -78,4 +78,4 @@ HTML5 양식을 초안으로 저장하고 나중에 양식 채우기를 다시 �
  </tbody>
 </table>
 
-기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)를 참조하십시오.
+기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)를 참조하십시오.

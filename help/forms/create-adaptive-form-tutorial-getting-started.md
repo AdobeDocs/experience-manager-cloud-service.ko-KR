@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Forms에 적용됩니다)."
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ AEM SDK을 사용한 로컬 개발을 통해 시간을 절약하고 개발 프�
 
 **시작할 준비가 되셨습니까?**
 
-1. [AEM 프로젝트에 대한 개발 도구 설정](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#install-git), [Node.js(npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#node-js) 및 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ko#install-maven)의 최신 릴리스를 다운로드하여 설치합니다. 또한 일반 텍스트 편집기를 설치하십시오. 이 자습서의 예제는 Visual Studio 코드를 기반으로 합니다.
+1. [AEM 프로젝트에 대한 개발 도구 설정](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git), [Node.js(npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js) 및 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)의 최신 릴리스를 다운로드하여 설치합니다. 또한 일반 텍스트 편집기를 설치하십시오. 이 자습서의 예제는 Visual Studio 코드를 기반으로 합니다.
 
 1. [AEM SDK 설치](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): 최신 버전의 AEM SDK을 다운로드하여 설치합니다. AEM 개발에 필수적인 도구를 제공합니다. AEM SDK의 버전을 적어 두십시오.
 
