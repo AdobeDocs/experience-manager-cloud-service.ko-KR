@@ -97,7 +97,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 1. AEM에서 호스트 헤더를 확인할 수 있도록 `X-Forwarded-Host` 헤더를 도메인 이름으로 설정합니다. 예: `X-Forwarded-Host:example.com`.
 1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)에 설명된 대로 먼저 Cloud Manager 구성 파이프라인을 사용하여 값을 구성한 다음 고객 CDN에서 동일한 Edge 키를 구성해야 합니다.
 
-   * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조). `x-aem-debug`](#test-forwarded-headers)을(를) 사용하여 전달된 헤더를 테스트하는 [방법도 참조하십시오.
+   * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조). `x-aem-debug`[&#128279;](#test-forwarded-headers)을(를) 사용하여 전달된 헤더를 테스트하는 방법도 참조하십시오.
    * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에 알립니다(차단 예정).
 
 주요 CDN 공급업체의 구성 예는 [샘플 CDN 공급업체 구성](#sample-configurations) 섹션을 참조하십시오.
