@@ -33,7 +33,7 @@ ht-degree: 1%
 * 반복 패널을 만들려면 패널 대화 상자에서 설정을 열고 최대 개수 필드의 값을 1 이상으로 설정합니다.
 * 패널 반복 설정의 최소 개수 값은 하나 이상일 수 있지만 최대 개수 값보다 클 수 없습니다.
 * 표현식이 반복 패널의 필드를 참조하는 경우 표현식의 필드 이름은 가장 가까운 반복 요소로 확인됩니다.
-* 적응형 Forms은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)를 참조하십시오.
+* 적응형 Forms은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/af.html)를 참조하십시오.
 * 반복 패널의 인스턴스를 조작하기 위한 API는 다음과 같습니다.
 
    * 패널 인스턴스를 추가하려면: `panel1.instanceManager.addInstance()`
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 ### 표현식 클릭 {#click-expression}
 
-클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
+클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
 
 **적용 대상**: 단추 필드
 
@@ -210,7 +210,7 @@ ht-degree: 1%
 
 ### GuideBridge - API 및 이벤트 {#guidebridge-apis-and-events}
 
-GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. 가이드 Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/)를 참조하십시오.
+GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. 가이드 Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge 이벤트 {#guidebridge-events}
 
-GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
+GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 적응형 Forms에 대한 [JavaScript™ 라이브러리 API 참조](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)를 참조하십시오.
 
 다음 코드를 사용하여 처리기를 등록합니다.
 

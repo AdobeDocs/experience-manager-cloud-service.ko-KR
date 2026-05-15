@@ -46,7 +46,7 @@ ht-degree: 5%
 
 1. 사이트의 페이지로 이동합니다.
 1. 적응형 양식 컨테이너의 ![settings_icon](assets/settings_icon.png)을(를) 선택하십시오. **[!UICONTROL 적응형 양식 컨테이너]** 대화 상자가 열립니다.
-1. **[!UICONTROL 제출]** 탭을 열고 [AEM 워크플로우 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)에 **[!UICONTROL 제출 액션]**&#x200B;을(를) 지정합니다.
+1. **[!UICONTROL 제출]** 탭을 열고 [AEM 워크플로우 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko#invoke-an-aem-workflow)에 **[!UICONTROL 제출 액션]**&#x200B;을(를) 지정합니다.
 
 1. 설정을 저장하려면 [완료]를 클릭하세요.
 
